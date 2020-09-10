@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 Bus drivers for buses with configuration space must handle this request for their child devices (child PDOs). Function and filter drivers do not handle this request.
 
+## Value
+
+0x10
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -69,15 +74,15 @@ Operation
 
 A bus driver handles this IRP for its child devices (child PDOs).
 
-Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus.Status** and do not set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine.
+Function and filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus.Status** and do not set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine.
 
-See [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
 Typically, a function driver sends this IRP to the device stack to which it is attached and the IRP is handled by the parent bus driver.
 
-See [Handling IRPs](https://msdn.microsoft.com/library/windows/hardware/ff546847) for information about sending IRPs. The following steps apply specifically to this IRP:
+See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The following steps apply specifically to this IRP:
 
 -   Allocate a buffer from paged pool and initialize it with the data to be written.
 
@@ -91,7 +96,7 @@ Drivers must send this IRP from IRQL &lt; DISPATCH\_LEVEL.
 
 A driver can access a bus's configuration space at DISPATCH\_LEVEL through a bus interface routine, if the parent bus driver exports such an interface. To get a bus interface, a driver sends an [**IRP\_MN\_QUERY\_INTERFACE**](irp-mn-query-interface.md) request to its parent bus driver. The driver then calls the appropriate routine returned in the interface.
 
-For example, to write configuration space from DISPATCH\_LEVEL a driver can call **IRP\_MN\_QUERY\_INTERFACE** during driver initialization to get the [**BUS\_INTERFACE\_STANDARD**](https://msdn.microsoft.com/library/windows/hardware/ff540707) interface from the parent bus driver. The driver sends the query IRP from IRQL PASSIVE\_LEVEL. Later, from code at IRQL DISPATCH\_LEVEL, the driver calls the appropriate routine returned in the interface, such as the **Interface.SetBusData** routine.
+For example, to write configuration space from DISPATCH\_LEVEL a driver can call **IRP\_MN\_QUERY\_INTERFACE** during driver initialization to get the [**BUS\_INTERFACE\_STANDARD**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard) interface from the parent bus driver. The driver sends the query IRP from IRQL PASSIVE\_LEVEL. Later, from code at IRQL DISPATCH\_LEVEL, the driver calls the appropriate routine returned in the interface, such as the **Interface.SetBusData** routine.
 
 Requirements
 ------------
@@ -117,9 +122,4 @@ Requirements
 [**IRP\_MN\_READ\_CONFIG**](irp-mn-read-config.md)
 
  
-
- 
-
-
-
 

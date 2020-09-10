@@ -57,9 +57,9 @@ The DMus port driver is able to achieve a much higher timing accuracy than the M
 
 If the DMusic synth does not have a hardware sequencer, it must rely on the DMus port driver's software sequencer, which, like the MIDI port driver's, has a timer resolution of one millisecond.
 
-An adapter driver creates a MIDI or DMus port driver by calling [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) with a GUID value of **CLSID\_PortMidi** or **CLSID\_PortDMus**, respectively. In Windows XP and later, the MIDI and DMus port drivers share the same software implementation.
+An adapter driver creates a MIDI or DMus port driver by calling [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) with a GUID value of **CLSID\_PortMidi** or **CLSID\_PortDMus**, respectively. In Windows XP and later, the MIDI and DMus port drivers share the same software implementation.
 
-Appearing at the bottom of the preceding figure are the names of the system-supplied miniport drivers FMSynth, UART, and DMusUART, which are included in Portcls.sys. An adapter driver creates one of these miniport drivers by calling [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714). FMSynth and UART provide [IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703) interfaces, and DMusUART provides an [IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699) interface. Note that UART is now obsolete (after Windows 98 Gold) and is supported only for existing drivers. New adapter drivers should instead use DMusUART (in Windows 98 SE and later, and in Windows 2000 and later), which implements a superset of UART's functionality. DMusUART is an example of a DMus miniport driver that supports neither DLS downloads nor hardware sequencing. The source code for the FMSynth and DMusUART miniport drivers is available in the sample audio drivers in the Windows Driver Kit (WDK).
+Appearing at the bottom of the preceding figure are the names of the system-supplied miniport drivers FMSynth, UART, and DMusUART, which are included in Portcls.sys. An adapter driver creates one of these miniport drivers by calling [**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport). FMSynth and UART provide [IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi) interfaces, and DMusUART provides an [IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus) interface. Note that UART is now obsolete (after Windows 98 Gold) and is supported only for existing drivers. New adapter drivers should instead use DMusUART (in Windows 98 SE and later, and in Windows 2000 and later), which implements a superset of UART's functionality. DMusUART is an example of a DMus miniport driver that supports neither DLS downloads nor hardware sequencing. The source code for the FMSynth and DMusUART miniport drivers is available in the sample audio drivers in the Windows Driver Kit (WDK).
 
 The following figure shows the user-mode and kernel-mode components that a MIDI application program uses to *capture* MIDI data. This application interfaces to the WDM audio drivers through the **midiIn***Xxx* functions.
 
@@ -94,9 +94,4 @@ An adapter driver can use the system-supplied DMusUARTCapture miniport driver to
 A DirectMusic application can also run through a **midiOut***Xxx* device such as SWMidi (Swmidi.sys) if it chooses to. For simplicity, this path is omitted from the preceding figure. The DMusic driver (Dmusic.sys) requires an initial DLS download in order to operate correctly; using SWMidi avoids this requirement.
 
  
-
- 
-
-
-
 

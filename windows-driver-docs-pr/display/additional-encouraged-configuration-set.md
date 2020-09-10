@@ -14,13 +14,7 @@ ms.localizationpriority: medium
 
 Implementation of additional configurations for software decoders is encouraged. These configurations may exist in hardware and can provide a significant performance benefit relative to those in the [minimal interoperability configuration sets](minimal-interoperability-configuration-sets.md).
 
-This additional configuration set is defined in terms of the members of the [**DXVA\_ConfigPictureDecode**](https://msdn.microsoft.com/library/windows/hardware/ff563133) structure.
+This additional configuration set is defined in terms of the members of the [**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure.
 
  
-
- 
-
-
-
-
 

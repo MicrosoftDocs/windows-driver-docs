@@ -16,9 +16,9 @@ ms.date: 10/17/2018
 # suppressAddRemovePrograms XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
-The **suppressAddRemovePrograms** XML element is an empty element that sets the **suppressAddRemovePrograms** flag to ON, which configures DPInst to suppress the addition of entries to **Programs and Features** in Control Panel. These entries represent the [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840) and driver package groups that DPInst installs.
+The **suppressAddRemovePrograms** XML element is an empty element that sets the **suppressAddRemovePrograms** flag to ON, which configures DPInst to suppress the addition of entries to **Programs and Features** in Control Panel. These entries represent the [driver packages](./driver-packages.md) and driver package groups that DPInst installs.
 
 **Note**  In versions of Windows earlier than Windows Vista, DPInst added the entry for the driver package to **Add or Remove Programs** in Control Panel.
 
@@ -65,7 +65,7 @@ None
 
 ### <a href="" id="comments"></a>Remarks
 
-By default, the **suppressAddRemovePrograms** flag is set to OFF. To set the **suppressAddRemovePrograms** flag to ON for all of the drivers that DPInst installs, including all of the drivers in [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) groups, include a **suppressAddRemovePrograms** element as a child element of a **dpinst** XML element in a DPInst descriptor file, or use the **/sa** command-line switch. To set the **suppressAddRemoverPrograms** flag only for a specific driver package group, include a **suppressAddRemovePrograms** element as a child element of the corresponding **group** XML element in a DPInst descriptor file.
+By default, the **suppressAddRemovePrograms** flag is set to OFF. To set the **suppressAddRemovePrograms** flag to ON for all of the drivers that DPInst installs, including all of the drivers in [driver package](./driver-packages.md) groups, include a **suppressAddRemovePrograms** element as a child element of a **dpinst** XML element in a DPInst descriptor file, or use the **/sa** command-line switch. To set the **suppressAddRemoverPrograms** flag only for a specific driver package group, include a **suppressAddRemovePrograms** element as a child element of the corresponding **group** XML element in a DPInst descriptor file.
 
 The following code example demonstrates a **suppressAddRemovePrograms** element that is child element of a **dpinst** element.
 
@@ -99,11 +99,4 @@ The following code example demonstrates a **suppressAddRemovePrograms** element 
 [**group**](group-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

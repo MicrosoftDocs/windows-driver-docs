@@ -24,7 +24,7 @@ Connection-oriented NDIS supports using a NIC's local time for scheduling the tr
 
  
 
-A connection-oriented protocol driver can call [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711) to query the local timing capabilities of a connection-oriented miniport driver or an MCM driver with [OID\_GEN\_CO\_GET\_TIME\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569451). In response to such a query, the miniport driver or MCM driver returns information about:
+A connection-oriented protocol driver can call [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) to query the local timing capabilities of a connection-oriented miniport driver or an MCM driver with [OID\_GEN\_CO\_GET\_TIME\_CAPS](./oid-gen-co-get-time-caps.md). In response to such a query, the miniport driver or MCM driver returns information about:
 
 -   Whether there is a readable clock on the NIC.
 
@@ -38,15 +38,9 @@ A connection-oriented protocol driver can call [**NdisCoOidRequest**](https://ms
 
 -   Whether the NIC can timestamp transmitted packets with its local time.
 
-To obtain a NIC's local time, a connection-oriented protocol can call **NdisCoOidRequest** to query a connection-oriented miniport driver or MCM driver with [OID\_GEN\_CO\_GET\_NETCARD\_TIME](https://msdn.microsoft.com/library/windows/hardware/ff569450). The connection-oriented miniport driver or MCM driver synchronously returns its local time, which the connection-oriented protocol can then use to schedule the transmission of packets.
+To obtain a NIC's local time, a connection-oriented protocol can call **NdisCoOidRequest** to query a connection-oriented miniport driver or MCM driver with [OID\_GEN\_CO\_GET\_NETCARD\_TIME](./oid-gen-co-get-netcard-time.md). The connection-oriented miniport driver or MCM driver synchronously returns its local time, which the connection-oriented protocol can then use to schedule the transmission of packets.
 
-Timing information for a send or receive packet is contained in the packet's out-of-band (OOB) data. For more information, see [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388).
-
- 
+Timing information for a send or receive packet is contained in the packet's out-of-band (OOB) data. For more information, see [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list).
 
  
-
-
-
-
 

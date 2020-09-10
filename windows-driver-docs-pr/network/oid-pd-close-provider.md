@@ -44,18 +44,13 @@ Requirements
 ## See also
 
 
-[*MiniportOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff559416)
+[*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request)
 
-[**NDIS\_PD\_CLOSE\_PROVIDER\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn931834)
+[**NDIS\_PD\_CLOSE\_PROVIDER\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_close_provider_parameters)
 
-[NDIS\_STATUS\_PD\_CURRENT\_CONFIG](https://msdn.microsoft.com/library/windows/hardware/dn931850)
+[NDIS\_STATUS\_PD\_CURRENT\_CONFIG](./ndis-status-pd-current-config.md)
 
 [OID\_PD\_OPEN\_PROVIDER](oid-pd-open-provider.md)
 
  
-
- 
-
-
-
 

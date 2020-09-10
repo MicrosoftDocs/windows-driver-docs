@@ -25,13 +25,13 @@ The port number that is passed to send and receive functions identifies the targ
 
 To help manage NDIS ports, the following structures include the port number:
 
-<a href="" id="ndis-oid-request"></a>[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)  
+<a href="" id="ndis-oid-request"></a>[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)  
 Describes OID requests.
 
-<a href="" id="ndis-status-indication"></a>[**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)  
+<a href="" id="ndis-status-indication"></a>[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)  
 Describes NDIS status indications.
 
-<a href="" id="net-pnp-event-notification"></a>[**NET\_PNP\_EVENT\_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff568752)  
+<a href="" id="net-pnp-event-notification"></a>[**NET\_PNP\_EVENT\_NOTIFICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification)  
 Describes PnP event notifications.
 
 This section includes:
@@ -45,10 +45,4 @@ This section includes:
 [Handling NDIS Ports PnP Event Notifications](handling-ndis-ports-pnp-event-notifications.md)
 
  
-
- 
-
-
-
-
 

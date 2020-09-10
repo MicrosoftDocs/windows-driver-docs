@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *LoadBalancePolicy*   
-A [**DsmSetLoadBalancePolicy\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff552680) structure.
+A [**DsmSetLoadBalancePolicy\_OUT**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicy_out) structure.
 
 *Status*   
 The status of the operation.
@@ -70,10 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

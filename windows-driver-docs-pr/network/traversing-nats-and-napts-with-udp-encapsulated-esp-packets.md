@@ -40,14 +40,8 @@ To support UDP-ESP encapsulation, a miniport driver or the NIC (or both) must:
 -   Maintain a list of SAs that the transport has offloaded to the NIC.
 
 -   Support the following OIDs:
-    -   [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569809)
-    -   [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569811)
+    -   [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](./oid-tcp-task-ipsec-add-udpesp-sa.md)
+    -   [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](./oid-tcp-task-ipsec-delete-udpesp-sa.md)
 
  
-
- 
-
-
-
-
 

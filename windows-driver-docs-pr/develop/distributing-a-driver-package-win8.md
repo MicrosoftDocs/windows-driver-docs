@@ -16,13 +16,13 @@ This topic describes how to securely distribute your driver package. This inform
 ## <span id="ddk_windows_update_pg"></span><span id="DDK_WINDOWS_UPDATE_PG"></span>Windows Update
 
 
-* [Driver packages](https://msdn.microsoft.com/Library/Windows/Hardware/Ff544840) that pass [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
+* [Driver packages](../install/driver-packages.md) that pass [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893) testing can be digitally-signed by WHQL. If your driver package is digitally-signed by WHQL, it can be distributed through the Windows Update program or other Microsoft-supported distribution mechanisms.
 
-Obtaining a WHQL release signature is part of the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893). A WHQL release signature consists of a digitally-signed [catalog file](https://msdn.microsoft.com/Library/Windows/Hardware/Ff537872). The digital signature does not change the driver binary files or the INF file that you submit for testing.
+Obtaining a WHQL release signature is part of the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893). A WHQL release signature consists of a digitally-signed [catalog file](../install/catalog-files.md). The digital signature does not change the driver binary files or the INF file that you submit for testing.
 
 You can distribute a driver package through the Windows Update program if the driver package:
 
--   Passes the WHQL test program and receives a [WHQL release signature](https://msdn.microsoft.com/Library/Windows/Hardware/Ff553976).
+-   Passes the WHQL test program and receives a [WHQL release signature](../install/whql-release-signature.md).
 
 -   Qualifies for the Windows Certification Program.
 
@@ -39,15 +39,9 @@ WFP prevents programs from replacing critical Windows system files. Programs mus
 
 The types of system files that WFP protects include .sys, .exe, .ocx, and .dll files that ship "in the box" with the operating system.
 
-During WHQL testing, the [**Signability**](https://msdn.microsoft.com/Library/Windows/Hardware/Ff547089) program checks a driver's INF file to ensure that it does not attempt to replace system files. A driver package that attempts to replace system files cannot receive a digital signature. A driver package can, however, contain updated versions of files that the vendor supplied to Microsoft to ship with Windows 2000 or later versions of the operating system.
+During WHQL testing, the [**Signability**](../devtest/inf2cat.md) program checks a driver's INF file to ensure that it does not attempt to replace system files. A driver package that attempts to replace system files cannot receive a digital signature. A driver package can, however, contain updated versions of files that the vendor supplied to Microsoft to ship with Windows 2000 or later versions of the operating system.
 
 For additional information about Windows File Protection, see the Windows SDK documentation.
 
  
-
- 
-
-
-
-
 

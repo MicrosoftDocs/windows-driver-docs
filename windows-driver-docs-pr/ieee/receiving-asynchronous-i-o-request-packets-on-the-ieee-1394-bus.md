@@ -13,20 +13,18 @@ ms.localizationpriority: medium
 
 # Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
 
-
 The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests. Drivers can allocate ranges of addresses in the computer's IEEE 1394 address space, and receive requests from external nodes, by submitting the REQUEST\_ALLOCATE\_ADDRESS\_RANGE request to the bus driver.
 
 When the driver allocates the address range, it can specify which types of transactions a device may send to the allocated addresses, by specifying one or more of ACCESS\_FLAGS\_TYPE\_READ, ACCESS\_FLAGS\_TYPE\_WRITE, or ACCESS\_FLAGS\_TYPE\_LOCK in the **u.AllocateAddressRange.fulAccessType** member of the request's IRB. Requests that are not one of the specified types automatically fail.
 
 Two different drivers may allocate the same address range. By default, the bus driver automatically demultiplexes the requests, and the driver only sees the requests on the allocated addresses that come from the driver's device. Drivers can request that they receive all packets sent to the addresses by all nodes on the bus, by specifying the ACCESS\_FLAGS\_TYPE\_BROADCAST flag in **u.AllocateAddressRange.fulAccessType**.
 
--   [Which addresses are allocated?](#ddk-receiving-asynchronous-i-o-request-packets-on-the-ieee-1394-bus-kg)
--   [Allocation and backing store](#allocation-and-backing-store)
--   [Client driver's notification routine for receive asynchronous I/O requests](#client-drivers-notification-routine-for-receive-asynchronous-io-requests)
--   [Asynchronous receive in the pre-notification case](#asynchronous-receive-in-the-pre-notification-case)
+* [Allocated addresses](#allocated-addresses)
+* [Allocation and backing store](#allocation-and-backing-store)
+* [Client driver's notification routine for receive asynchronous I/O requests](#client-drivers-notification-routine-for-receive-asynchronous-io-requests)
+* [Asynchronous receive in the pre-notification case](#asynchronous-receive-in-the-pre-notification-case)
 
-## Which addresses are allocated?
-
+## Allocated addresses
 
 The bus driver supports two different strategies for allocating address ranges. If the driver requires a specific range of addresses, beginning at a hard-coded address, it can specify the hard-coded address in the **u.AllocateAddressRange.Required1394Offset** member of the request's IRB, and the length of the address range in **u.AllocateAddressRange.nLength**. The bus driver will allow two different drivers to allocate the same address twice. If the same driver tries to allocate an address range beginning at the same address twice, the bus driver returns the request with a status code of STATUS\_SUCCESS, but the request itself is ignored.
 
@@ -42,10 +40,9 @@ When the bus driver returns the allocated addresses, it records the actual numbe
 
 ## Allocation and backing store
 
-
 The bus driver receives all asynchronous packet requests on behalf of the driver. At the driver's behest, it can transparently handle the request, or it can dispatch the request to the driver. By setting options when it allocates the addresses, the driver can choose how the bus driver handles each request.
 
-1.  The driver provides backing store for the address range, and the bus driver transparently handles all read, write, and lock requests by using the backing store.
+1. The driver provides backing store for the address range, and the bus driver transparently handles all read, write, and lock requests by using the backing store.
 
     When the driver allocates addresses, it can supply an MDL in **u.AllocateAddressRange.Mdl** to serve as backing store. The bus driver maps the MDL onto the range of addresses it allocates for the driver, and handles all requests by reading or writing from the MDL. If the host controller supports it, the transaction is handled entirely by the host controller's DMA hardware. When possible, the device driver should allow the bus driver to choose the range of addresses allocated: the bus driver will choose 1394 addresses that support automatic DMA for each transaction.
 
@@ -56,7 +53,6 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
     ```cpp
     pIRB->u.AllocateAddressRange.Mdl = an MDL previously allocated by the driver.
     pIRB->u.AllocateAddressRange.fulNotificationOptions = NOTIFY_FLAGS_NEVER
-     
     ```
 
     For this option alone, the driver can also allocate address ranges while at raised IRQL. The driver can submit the request directly to the port driver, bypassing the usual IRP method of communication, by calling the port driver's physical mapping routine. The device driver passes the IRB to the port driver's physical mapping routine. The port driver will then allocate the address range asynchronously; when the port driver finishes, it calls the device driver's notification routine, passed in **u.AllocateAddressRange.Callback**, and passes **u.AllocateAddressRange.Context** as the parameter. The notification routine is called at DISPATCH\_LEVEL.
@@ -69,9 +65,8 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
     GET_LOCAL_HOST_INFO5 PhysMapInfo;
     pGetInfoIRB->FunctionNumber = GET_LOCAL_HOST_INFO;
     pGetInfoIRB->GET_PHYS_ADDR_ROUTINE;
-     
+
     /* Driver submits the request. */
-     
     ```
 
     Continuing the example, here is how the driver can use the physical mapping routine to submit the request at an elevated IRQL.
@@ -83,17 +78,16 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
     pIRB->u.AllocateAddressRange.fulNotificationOptions = NOTIFY_FLAGS_NEVER
     pIRB->Callback = AllocationCompletionRoutine;
     pIRB->Context = information specific to this allocation the driver wants passed to its callback.
-     
+
     /* Driver submits the request to the physical mapping routine. */
     PhysMapInfo.PhysAddrMappingRoutine(PhysMapInfo.Context, pIRB);
-     
-    /* 
-    The bus driver does the allocation asynchronously. When it&#39;s done, it will signal the driver by executing AllocationCompletionRoutine(pIRB->u.AllocateAddressRange.Context);
+
+    /*
+    The bus driver does the allocation asynchronously. When it's done, it will signal the driver by executing AllocationCompletionRoutine(pIRB->u.AllocateAddressRange.Context);
     */
-     
     ```
 
-2.  The driver provides backing store for the address range. The bus driver notifies the driver after it completes each I/O transaction.
+2. The driver provides backing store for the address range. The bus driver notifies the driver after it completes each I/O transaction.
 
     The driver can provide either a single MDL, or a linked list of MDLs, as backing store. If the driver provides a single MDL, the bus driver pumps data into or out of the MDL in response to the asynchronous request. Once it completes the transaction, it signals the device driver by calling the driver-supplied notification callback.
 
@@ -108,17 +102,16 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
     ```cpp
     PSLIST_HEADER FifoSListHead;
     KSPIN_LOCK FifoSpinLock;
-     
+
     ExInitializeSListHead(FifoSListHead);
     KeInitializeSpinLock(FifoSpinLock);
-     
     ```
 
     When the driver submits the request, it can set up the relevant IRB members as follows:
 
     ```cpp
     VOID DriverNotificationRoutine(PNOTIFICATION_INFO NotificationInfo);
-     
+
     pIRB->u.AllocateAddressRange.Mdl = NULL;
     pIRB->u.AllocateAddressRange.fulAccessType = ACCESS_FLAGS_READ;
     pIRB->u.AllocateAddressRange.fulNotificationOptions = NOTIFY_FLAGS_AFTER_WRITE;
@@ -126,19 +119,17 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
     pIRB->u.AllocateAddressRange.FifoSpinLock = FifoSpinLock;
     pIRB->u.AllocateAddressRange.Callback = DriverNotificationRoutine;
     pIRB->u.AllocateAddressRange.Context = context information specific to this request -- the bus driver will pass this as the Context member of the NOTIFICATION_INFO it passes to NotificationRoutine.
-     
     ```
 
     In the callback, the driver either needs to allocate a new MDL and push it onto the list, or push the original MDL back on the list. For the latter, the bus driver passes the original ADDRESS\_FIFO for the current MDL. Here is an example of the driver pushing the current MDL back on the list:
 
     ```cpp
     ExInterlockedPushEntrySList(FifoSListHead, NotificationInfo->Fifo->FifoList, FifoSpinLock);
-     
     ```
 
     If the driver specifies a single MDL as backing store in the original allocation request, the driver may return one or more address ranges.
 
-3.  The bus driver signals the driver each time a request arrives, and hands off the packet to the driver.
+3. The bus driver signals the driver each time a request arrives, and hands off the packet to the driver.
 
     The driver provides a callback in the **u.AllocateAddressRange.Callback** member of the IRB. The NOTIFY\_FLAGS\_AFTER\_XXX flags are ignored, and all packets are handed to the driver to handle.
 
@@ -146,13 +137,12 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
 
     ```cpp
     VOID DriverNotificationRoutine( IN PNOTIFICATION_INFO NotificationInfo );
-     
+
     pIRB->u.AllocateAddressRange.Callback = DriverNotificationRoutine;
     pIRB->u.AllocateAddressRange.Context = information specific to this address range.
     pIRB->u.AllocateAddressRange.Mdl = NULL;
     pIRB->u.AllocateAddressRange.FifoSListHead = NULL;
     pIRB->u.AllocateAddressRange.FifoSpinLock = NULL;
-     
     ```
 
     The bus driver allocates a single contiguous range of addresses.
@@ -170,42 +160,39 @@ The bus driver receives all asynchronous packet requests on behalf of the driver
     *(NotificationInfo->ResponsePacket) = ResponsePacket.
     *(NotificationInfo->ResponseLength) = ResponseLength;
     *(NotificationInfo)->ResponseEvent = Event;
-     
     ```
 
 ## Client driver's notification routine for receive asynchronous I/O requests
 
-
 The client driver must perform the following tasks in the driver's asynchronous receive notification routine:
 
--   Verify the members of the [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) structure that is passed to the client driver.
--   For successful read/lock requests (where you return data through the response packet), the client driver must:
-    -   Allocate memory by calling [**WdfMemoryCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548706) ([**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) for WDM-based client drivers) for the response packet data.
-    -   Fill that buffer with the data to be returned.
-    -   Initialize the **ResponseMdl** member and reference the buffer. You can call [**MmInitializeMdl**](https://msdn.microsoft.com/library/windows/hardware/ff554568) and [**MmBuildMdlForNonPagedPool**](https://msdn.microsoft.com/library/windows/hardware/ff554498).
-    -   Set **\*NotificationInfo-&gt;ResponsePacket** to point to the buffer.
-    -   Set **\*NotificationInfo-&gt;ResponseLength** to the size of the response data being returned, that is 4 for a quadlet read request).
-    -   Allocate memory by calling [**WdfMemoryCreate**](https://msdn.microsoft.com/library/windows/hardware/ff548706) ([**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) for WDM-based client drivers) for the response event.
-    -   Set **\*NotificationInfo-&gt;ResponseEvent** to point to the event buffer.
-    -   Schedule a work item to wait on the event, and free the response packet and event data buffers after the response event is signaled.
-    -   Set **NotificationInfo-&gt;ResponseCode** to RCODE\_RESPONSE\_COMPLETE.
+* Verify the members of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure that is passed to the client driver.
+* For successful read/lock requests (where you return data through the response packet), the client driver must:
+  * Allocate memory by calling [**WdfMemoryCreate**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response packet data.
+  * Fill that buffer with the data to be returned.
+  * Initialize the **ResponseMdl** member and reference the buffer. You can call [**MmInitializeMdl**](../kernel/mm-bad-pointer.md) and [**MmBuildMdlForNonPagedPool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool).
+  * Set **\*NotificationInfo-&gt;ResponsePacket** to point to the buffer.
+  * Set **\*NotificationInfo-&gt;ResponseLength** to the size of the response data being returned, that is 4 for a quadlet read request).
+  * Allocate memory by calling [**WdfMemoryCreate**](/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreate) ([**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) for WDM-based client drivers) for the response event.
+  * Set **\*NotificationInfo-&gt;ResponseEvent** to point to the event buffer.
+  * Schedule a work item to wait on the event, and free the response packet and event data buffers after the response event is signaled.
+  * Set **NotificationInfo-&gt;ResponseCode** to RCODE\_RESPONSE\_COMPLETE.
 
 ## Asynchronous receive in the pre-notification case
 
-
-The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism. For more information, see [Knowledge Base: IEEE 1394 Async Receive Response not sent using Pre-Notification (2635883)](http://support.microsoft.com/kb/2635883).
+The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism. For more information, see [Knowledge Base: IEEE 1394 Async Receive Response not sent using Pre-Notification (2635883)](https://support.microsoft.com/help/2635883/ieee-1394-async-receive-response-not-sent-using-pre-notification).
 
 For the new 1394 bus driver, the expected behavior of the client driver's notification callback routine in the pre-notification case is as follows:
 
--   If **Mdl** and **Fifo** members of the [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) structure are NULL, then pre-notification is being performed.
--   The **ResponseMdl**, **ResponsePacket**, **ResponseLength**, and **ResponseEvent** members of the [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) structure must not be NULL.
--   The **fulNotificationOptions** member of the [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) structure must indicate the action (read, write, lock) that triggered the notification. Only one flag (NOTIFY\_FLAGS\_AFTER\_READ , NOTIFY\_FLAGS\_AFTER\_WRITE , or NOTIFY\_FLAGS\_AFTER\_LOCK) can be set each time your notification routine is invoked.
--   You can identify the type of request by inspecting the **RequestPacket-&gt;AP\_tCode** member of the ASYNC\_PACKET structure. The member indicates the TCODE that specifies the request type, such as block or quadlet read/write, type of lock request. The ASYNC\_PACKET structure is declared in 1394.h.
--   The **ResponsePacket** and **ResponseEvent** members of [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) contain pointers to pointers. Therefore, you must reference the pointers to your response packet and response event appropriately.
--   The **ResponseLength** member of [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) is a pointer to a ULONG variable. Therefore, you must dereference the member appropriately when setting the response data length for requests such as for read & lock requests).
--   The 1394 client driver is responsible for allocating memory for the response packet and response event (from nonpaged pool), and releasing that memory after the response has been delivered. It is recommended that a work item is queued and the work item should wait on response event. That event is signaled by the 1394 bus driver after the response has been delivered. The client driver can then release the memory within the work item.
--   The **ResponseCode** member in the [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) structure must be set to one of the RCODE values defined in 1394.h. If **ResponseCode** is set to any value other than RCODE\_RESPONSE\_COMPLETE, the 1394 bus driver sends an error response packet. In the case of a read or lock request, the request does not return any data. In Windows 7, can leak memory, for more information see [Knowledge Base: Memory Leak in IEEE 1394 Bus Driver Performing Asynchronous Notification Callbacks (2023232)](http://support.microsoft.com/kb/2023232).
--   For read and lock requests, the **ResponsePacket** member of the [**NOTIFICATION\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff537437) structure must point to the data to be returned in the asynchronous response packet.
+* If **Mdl** and **Fifo** members of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure are NULL, then pre-notification is being performed.
+* The **ResponseMdl**, **ResponsePacket**, **ResponseLength**, and **ResponseEvent** members of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must not be NULL.
+* The **fulNotificationOptions** member of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must indicate the action (read, write, lock) that triggered the notification. Only one flag (NOTIFY\_FLAGS\_AFTER\_READ , NOTIFY\_FLAGS\_AFTER\_WRITE , or NOTIFY\_FLAGS\_AFTER\_LOCK) can be set each time your notification routine is invoked.
+* You can identify the type of request by inspecting the **RequestPacket-&gt;AP\_tCode** member of the ASYNC\_PACKET structure. The member indicates the TCODE that specifies the request type, such as block or quadlet read/write, type of lock request. The ASYNC\_PACKET structure is declared in 1394.h.
+* The **ResponsePacket** and **ResponseEvent** members of [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) contain pointers to pointers. Therefore, you must reference the pointers to your response packet and response event appropriately.
+* The **ResponseLength** member of [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) is a pointer to a ULONG variable. Therefore, you must dereference the member appropriately when setting the response data length for requests such as for read & lock requests).
+* The 1394 client driver is responsible for allocating memory for the response packet and response event (from nonpaged pool), and releasing that memory after the response has been delivered. It is recommended that a work item is queued and the work item should wait on response event. That event is signaled by the 1394 bus driver after the response has been delivered. The client driver can then release the memory within the work item.
+* The **ResponseCode** member in the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must be set to one of the RCODE values defined in 1394.h. If **ResponseCode** is set to any value other than RCODE\_RESPONSE\_COMPLETE, the 1394 bus driver sends an error response packet. In the case of a read or lock request, the request does not return any data. In Windows 7, can leak memory, for more information see [Knowledge Base: Memory Leak in IEEE 1394 Bus Driver Performing Asynchronous Notification Callbacks (2023232)](https://support.microsoft.com/help/2023232).
+* For read and lock requests, the **ResponsePacket** member of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must point to the data to be returned in the asynchronous response packet.
 
 The following code examples shows the work item implementation and the client driver's notification routine.
 
@@ -227,10 +214,10 @@ kmdf1394_NotifyRoutineWorkItem (
                                      KernelMode,
                                      FALSE,
                                      NULL);
-    if (!NT_SUCCESS(ntStatus)) 
+    if (!NT_SUCCESS(ntStatus))
     {
-        DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                            TRACE_FLAG_ASYNC, 
+        DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                            TRACE_FLAG_ASYNC,
                             "Wait on notify response event failed: %!STATUS!\n",
                             ntStatus);
     }
@@ -240,7 +227,7 @@ kmdf1394_NotifyRoutineWorkItem (
     Exit();
 }
 
-VOID 
+VOID
 kmdf1394_NotificationCallback (
     IN PNOTIFICATION_INFO   NotifyInfo)
 {
@@ -255,13 +242,13 @@ kmdf1394_NotificationCallback (
 
     Enter();
 
-    DoTraceLevelMessage(TRACE_LEVEL_INFORMATION, 
-                        TRACE_FLAG_ASYNC, 
-                        "NotifyInfo Mdl %p ulOffset %08x nLength %08x fulNotificationOptions %08x Context %p RCode %x Pkt %p\n", 
-                        NotifyInfo->Mdl, 
-                        NotifyInfo->ulOffset, 
-                        NotifyInfo->nLength, 
-                        NotifyInfo->fulNotificationOptions, 
+    DoTraceLevelMessage(TRACE_LEVEL_INFORMATION,
+                        TRACE_FLAG_ASYNC,
+                        "NotifyInfo Mdl %p ulOffset %08x nLength %08x fulNotificationOptions %08x Context %p RCode %x Pkt %p\n",
+                        NotifyInfo->Mdl,
+                        NotifyInfo->ulOffset,
+                        NotifyInfo->nLength,
+                        NotifyInfo->fulNotificationOptions,
                         NotifyInfo->Context,
                         NotifyInfo->ResponseCode,
                         asyncPacket);
@@ -280,11 +267,11 @@ kmdf1394_NotificationCallback (
                 break;
 
             case NOTIFY_FLAGS_AFTER_READ:
-                // Don&#39;t touch ResponseCode if no error
+                // Don't touch ResponseCode if no error
                 // NotifyInfo->ResponseCode = RCODE_RESPONSE_COMPLETE;
                 break;
 
-            default: 
+            default:
                 NotifyInfo->ResponseCode = RCODE_TYPE_ERROR;
                 break;
         }
@@ -299,18 +286,18 @@ kmdf1394_NotificationCallback (
                     !NotifyInfo->ResponseLength ||
                     !NotifyInfo->ResponseEvent )
             {
-                DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                                    TRACE_FLAG_ASYNC, 
+                DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                                    TRACE_FLAG_ASYNC,
                                     "Pre-Notification failure: missing Response field(s)!\n");
-                DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                                    TRACE_FLAG_ASYNC, 
+                DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                                    TRACE_FLAG_ASYNC,
                                     "ResponseMdl %p\tResponsePacket %p\tResponseLength %p\tResponseEvent %p\n",
                                     NotifyInfo->ResponseMdl, NotifyInfo->ResponsePacket,
                                     NotifyInfo->ResponseLength, NotifyInfo->ResponseEvent);
                 if (NotifyInfo->ResponsePacket != NULL)
                 {
-                    DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                                        TRACE_FLAG_ASYNC, 
+                    DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                                        TRACE_FLAG_ASYNC,
                                         "\t*ResponsePacket %p\n",
                                         *NotifyInfo->ResponsePacket);
                 }
@@ -318,21 +305,21 @@ kmdf1394_NotificationCallback (
             }
             else if ( NULL == asyncAddressData )
             {
-                DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                                    TRACE_FLAG_ASYNC, 
+                DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                                    TRACE_FLAG_ASYNC,
                                     "Pre-Notification failure: missing Notify Context!\n");
                 NotifyInfo->ResponseCode = RCODE_TYPE_ERROR;
             }
             else
             {
-                DoTraceLevelMessage(TRACE_LEVEL_INFORMATION, 
-                                    TRACE_FLAG_ASYNC, 
-                                    "AddrData %p DevExt %p Buffer %p Len %x hAddrRange %!HANDLE! Mdl %p\n", 
-                                    asyncAddressData, 
-                                    asyncAddressData->DeviceExtension, 
-                                    asyncAddressData->Buffer, 
-                                    asyncAddressData->nLength, 
-                                    asyncAddressData->hAddressRange, 
+                DoTraceLevelMessage(TRACE_LEVEL_INFORMATION,
+                                    TRACE_FLAG_ASYNC,
+                                    "AddrData %p DevExt %p Buffer %p Len %x hAddrRange %!HANDLE! Mdl %p\n",
+                                    asyncAddressData,
+                                    asyncAddressData->DeviceExtension,
+                                    asyncAddressData->Buffer,
+                                    asyncAddressData->nLength,
+                                    asyncAddressData->hAddressRange,
                                     asyncAddressData->pMdl);
 
                 switch (asyncPacket->AP_tCode)
@@ -353,7 +340,7 @@ kmdf1394_NotificationCallback (
                     case TCODE_READ_REQUEST_QUADLET:
                         // only implementing Quadlet Read for now
 
-                        // Create a WdfWorkItem, with notifyResponse as its context, 
+                        // Create a WdfWorkItem, with notifyResponse as its context,
                         // to handle waiting for the Response Event & cleaning up all the response stuff
 
                         WDF_WORKITEM_CONFIG_INIT (&workItemConfig, kmdf1394_NotifyRoutineWorkItem);
@@ -366,11 +353,11 @@ kmdf1394_NotificationCallback (
                             &attributes,
                             &workItem);
 
-                        if (!NT_SUCCESS (ntStatus)) 
+                        if (!NT_SUCCESS (ntStatus))
                         {
-                            DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                                                TRACE_FLAG_ASYNC, 
-                                                "Failed to create workitem %x\n", 
+                            DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                                                TRACE_FLAG_ASYNC,
+                                                "Failed to create workitem %x\n",
                                                 ntStatus);
 
                             NotifyInfo->ResponseCode = RCODE_DATA_ERROR;
@@ -399,8 +386,8 @@ kmdf1394_NotificationCallback (
 
                         if (!NT_SUCCESS(ntStatus) || !responseQuadlet)
                         {
-                            DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                                                TRACE_FLAG_ASYNC, 
+                            DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                                                TRACE_FLAG_ASYNC,
                                                 "Failed to allocate Response Data Memory: %!STATUS!\n",
                                                 ntStatus);
 
@@ -408,7 +395,7 @@ kmdf1394_NotificationCallback (
 
                             NotifyInfo->ResponseCode = RCODE_DATA_ERROR;
                             break;
-                        } 
+                        }
 
                         RtlFillMemory(responseQuadlet, sizeof(ULONG), 0x8F);    // dummy data for testing
 
@@ -439,22 +426,22 @@ kmdf1394_NotificationCallback (
                         *NotifyInfo->ResponseLength = sizeof(ULONG);
 
                         // NotifyInfo->ResponseCode
-                        // specifies the result of the driver&#39;s response to the request
+                        // specifies the result of the driver's response to the request
                         NotifyInfo->ResponseCode = RCODE_RESPONSE_COMPLETE;
 
                         // Enqueue the work item to clean up after notification completion
                         WdfWorkItemEnqueue (workItem);
 
-                        DoTraceLevelMessage(TRACE_LEVEL_INFORMATION, 
-                                            TRACE_FLAG_ASYNC, 
-                                            "Pre-Notification: Read Quadlet: Notify Response Handle %!HANDLE! Data %08x Event %p\n", 
-                                            notifyContext->responseMemory, 
-                                            *responseQuadlet, 
+                        DoTraceLevelMessage(TRACE_LEVEL_INFORMATION,
+                                            TRACE_FLAG_ASYNC,
+                                            "Pre-Notification: Read Quadlet: Notify Response Handle %!HANDLE! Data %08x Event %p\n",
+                                            notifyContext->responseMemory,
+                                            *responseQuadlet,
                                             &notifyContext->responseEvent);
 
                         break;
 
-                    default: 
+                    default:
                         NotifyInfo->ResponseCode = RCODE_TYPE_ERROR;
                         break;
                 } // switch (asyncPacket->AP_tCode)
@@ -462,8 +449,8 @@ kmdf1394_NotificationCallback (
         } // if (asyncPacket)
         else
         {
-            DoTraceLevelMessage(TRACE_LEVEL_ERROR, 
-                                TRACE_FLAG_ASYNC, 
+            DoTraceLevelMessage(TRACE_LEVEL_ERROR,
+                                TRACE_FLAG_ASYNC,
                                 "Pre-Notification failure: no RequestPacket!\n");
             NotifyInfo->ResponseCode = RCODE_DATA_ERROR;
         }
@@ -473,11 +460,3 @@ kmdf1394_NotificationCallback (
     return;
 } // kmdf1394_NotificationCallback
 ```
-
- 
-
- 
-
-
-
-

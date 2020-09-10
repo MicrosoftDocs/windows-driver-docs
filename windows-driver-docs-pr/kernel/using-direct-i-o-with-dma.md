@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The following figure illustrates how the I/O manager sets up an [**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff550794) request for a DMA transfer operation that uses direct I/O.
+The following figure illustrates how the I/O manager sets up an [**IRP\_MJ\_READ**](./irp-mj-read.md) request for a DMA transfer operation that uses direct I/O.
 
 ![diagram illustrating direct i/o on user buffers for devices that use dma](images/3mdldrct.png)
 
@@ -23,22 +23,17 @@ The previous figure illustrates how drivers can use the IRP's **MdlAddress** to 
 
 2.  The I/O manager services the current thread's read request, for which the thread passes a range of user-space virtual addresses that represent a buffer.
 
-3.  The I/O manager or file system driver (FSD) checks the user-supplied buffer for accessibility and calls [**MmProbeAndLockPages**](https://msdn.microsoft.com/library/windows/hardware/ff554664) with the previously created MDL. **MmProbeAndLockPages** also fills in the corresponding physical address range in the MDL.
+3.  The I/O manager or file system driver (FSD) checks the user-supplied buffer for accessibility and calls [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) with the previously created MDL. **MmProbeAndLockPages** also fills in the corresponding physical address range in the MDL.
 
     As the previous figure shows, an MDL for a virtual range can have several corresponding page-based physical address entries, and the virtual range for a buffer might begin and end at some byte offset from the start of the first and last pages described by an MDL.
 
-4.  The I/O manager provides a pointer to the MDL (**MdlAddress**) in an IRP that requests a transfer operation. Until the I/O manager or file system calls [**MmUnlockPages**](https://msdn.microsoft.com/library/windows/hardware/ff556381) after the driver completes the IRP, the physical pages described in the MDL remain locked down and assigned to the buffer. However, the virtual addresses in such an MDL can become invisible (and invalid), even before the IRP is sent to the device driver or to any intermediate driver that might be layered above the device driver.
+4.  The I/O manager provides a pointer to the MDL (**MdlAddress**) in an IRP that requests a transfer operation. Until the I/O manager or file system calls [**MmUnlockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunlockpages) after the driver completes the IRP, the physical pages described in the MDL remain locked down and assigned to the buffer. However, the virtual addresses in such an MDL can become invisible (and invalid), even before the IRP is sent to the device driver or to any intermediate driver that might be layered above the device driver.
 
-5.  If the driver uses packet-based system or bus-master DMA, its [*AdapterControl*](https://msdn.microsoft.com/library/windows/hardware/ff540504) routine calls [**MmGetMdlVirtualAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554539) with the IRP's **MdlAddress** pointer to get the base virtual address for the MDL's page-based entries.
+5.  If the driver uses packet-based system or bus-master DMA, its [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine calls [**MmGetMdlVirtualAddress**](./mm-bad-pointer.md) with the IRP's **MdlAddress** pointer to get the base virtual address for the MDL's page-based entries.
 
-6.  The *AdapterControl* routine then calls [**MapTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff554402) with the base address returned by **MmGetMdlVirtualAddress**, to read data from the device directly into physical memory. (For more information, see [Adapter Objects and DMA](adapter-objects-and-dma.md).)
+6.  The *AdapterControl* routine then calls [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer) with the base address returned by **MmGetMdlVirtualAddress**, to read data from the device directly into physical memory. (For more information, see [Adapter Objects and DMA](./introduction-to-adapter-objects.md).)
 
 Drivers should always check buffer lengths. Note that the I/O manager does not create an MDL for a zero-length buffer.
 
  
-
- 
-
-
-
 

@@ -36,13 +36,13 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains a WMI qualifier value that indicates the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFCPStatistics\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff554944) structure.
+On return, contains a WMI qualifier value that indicates the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFCPStatistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcpstatistics_out) structure.
 
 *ScsiId*   
-On return, contains a structure of type [**HBAScsiID**](https://msdn.microsoft.com/library/windows/hardware/ff556042) that holds information that identifies the device. This information is delivered to the miniport driver in the **ScsiId** member of a [**GetFCPStatistics\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff554942) structure.
+On return, contains a structure of type [**HBAScsiID**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid) that holds information that identifies the device. This information is delivered to the miniport driver in the **ScsiId** member of a [**GetFCPStatistics\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcpstatistics_in) structure.
 
 *FC4Statistics*   
-On return, contains a structure of type [**MSFC\_FC4STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff562492) that holds statistics for the indicated SCSI logical unit. The miniport driver returns this information in the **FC4Statistics** member of a [**GetFCPStatistics\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff554944) structure.
+On return, contains a structure of type [**MSFC\_FC4STATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics) that holds statistics for the indicated SCSI logical unit. The miniport driver returns this information in the **FC4Statistics** member of a [**GetFCPStatistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcpstatistics_out) structure.
 
 Return value
 ------------
@@ -81,18 +81,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**GetFCPStatistics\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff554942)
+[**GetFCPStatistics\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcpstatistics_in)
 
-[**GetFCPStatistics\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff554944)
+[**GetFCPStatistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcpstatistics_out)
 
-[**MSFC\_FC4STATISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff562492)
-
- 
+[**MSFC\_FC4STATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics)
 
  
-
-
-
-
-
 

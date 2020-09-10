@@ -1,35 +1,33 @@
 ---
 title: Time Travel Debugging - Overview
 description: This section describes time travel debugging.
-ms.date: 09/18/2017
+ms.date: 01/17/2020
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
-
 # Time Travel Debugging - Overview
 
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
 ## What is Time Travel Debugging?
 
 Time Travel Debugging, is a tool that allows you to record an execution of your process running, then replay it later both forwards and backwards. Time Travel Debugging (TTD) can help you debug issues easier by letting you "rewind" your debugger session, instead of having to reproduce the issue until you find the bug. 
- 
+
 TTD allows you to go back in time to better understand the conditions that lead up to the bug and replay it multiple times to learn how best to fix the problem. 
 
 TTD can have advantages over crash dump files, which often are missing the code execution that led up to the ultimate failure.  
 
-In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your co-worker figure out where to start. 
+In the event you can't figure out the issue yourself, you can share the trace with a co-worker and they can look at exactly what you're looking at. This can allow for easier collaboration than live debugging, as the recorded instructions are the same, where the address locations and code execution will be different on different PCs. You can also share a specific point in time to help your co-worker figure out where to start.
 
 TTD is efficient and works to add as little as possible overhead as it captures code execution in trace files.  
 
-TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions. 
+TTD includes a set of debugger data model objects to allow you to query the trace using LINQ. For example, you can use TTD objects to locate when a specific code module was loaded or locate all of the exceptions.
 
-![Example screen shot of WinDbg preview showing time travel command and cdog app](images/ttd-windbgx-screen-shot-example-cdog-app.png)
+![Example screen shot of WinDbg preview showing time travel command and three timelines](images/ttd-windbgx-screen-shot-example.png)
 
-##  Comparison of Debugging Tools
+## Comparison of Debugging Tools
 
 This table summarizes the pros and cons of the different debugging solutions available.
-
 
 |          Approach           |                                                      Pros                                                       |                                                                                                               Cons                                                                                                                |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -40,10 +38,23 @@ This table summarizes the pros and cons of the different debugging solutions ava
 
 ## TTD Availability 
 
-TTD is available on Windows 10 after installing the WinDbg Preview app from the Store.  WinDbg Preview is a brand-new version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
+TTD is available on Windows 10 after installing the WinDbg Preview app from the Store.  WinDbg Preview is an improved version of WinDbg with more modern visuals, faster windows, a full-fledged scripting experience, with built in support for the extensible debugger data model. For more information on downloading WinDbg Preview from the store, see [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md).
 
+## Administrator rights required to use TTD
 
-## Trace file basics 
+To use TTD, you need to run the debugger elevated. Install WinDbg Preview using an account that has administrator privileges and use that account when recording in the debugger. In order to run the debugger elevated, select and hold (or right-click) the WinDbg Preview icon in the Start menu and then select More > Run as Administrator.
+
+## Video Training
+
+To learn more about TTD see these videos.
+
+[Defrag Tools 185](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-185-Time-Travel-Debugging-Introduction) - Ivette and JamesP go over the basics of TTD and demo some features in WinDbg Preview
+
+[Defrag Tools 186](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-186-Time-Travel-Debugging-Advanced) - Jordi and JCAB demo more great features of TTD in WinDbg Preview
+
+[CppCon (YouTube)](https://www.youtube.com/watch?v=l1YJTg_A914) - Jordi, Ken and JamesM presented TTD in WinDbg Preview at CppCon 2017
+
+## Trace file basics
 
 ### Trace file size
 
@@ -74,25 +85,9 @@ C:\Users\User1\Documents
 
 For more information on working the trace files, see [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md).
 
-## Getting started with TTD
+## Things to look out for
 
-Review these topics to record and replay a trace file as well as for information on working with trace files and troubleshooting.
-
-- [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
-- [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
-- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
-- [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
-- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
-
-These topics describe additional advanced functionality in time travel debugging. 
-
-- [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
-- [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)
-
-
-## Things to look out for 
-
-### Anti-virus incompatibilities 
+### Anti-virus incompatibilities
 
 You may encounter incompatibilities because of how TTD hooks into process to record them. Typically issues arise with anti-virus or other system software that is attempting to track and shadow system memory calls. If you run into issues of with recording, such as an insufficient permission message, try temporarily disabling any anti-virus software.  
 
@@ -112,18 +107,25 @@ You can travel back in time, but you can't change history. You can use read memo
 
 Some Windows system protected processes, such as Protected Process Light (PPL) process are protected, so the TTD cannot inject itself into the protected process to allow for the recording of the code execution.
 
+### Performance impact of recording
+
+Recording an application or process impacts the performance of the PC. The actual performance overhead varies based upon the amount and type of code being executed during recording. You can expect about a 10x-20x performance hit in typical recording scenarios. Sometimes there will not be a noticeable slowdown but for more resource intensive operations (i.e. File Open dialog) you can see the impact of recording.
+
 ### Trace file errors
 
 There are some cases where trace file errors can occur. For more information, see [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md).
-
 
 ## Advanced Features of Time Travel Debugging
 
 Here's some of the most notable TTD advanced features.
 
+### Timelines
+
+Timelines are a visual representation of events that happen during the execution. These events can be locations of: breakpoints, memory read/writes, function calls and returns, and exceptions. For more information about timelines, see [WinDbg Preview - Timelines](windbg-timeline-preview.md).
+
 ### Debugger data model support
 
-- **Built in data model support** - TTD includes data model support. Using LINQ queries to analyze application failures can be a powerful tool. You can use the data model window in WinDbg  Preview to work with an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create tables using NatVis, JavaScript, and LINQ queries. 
+- **Built in data model support** - TTD includes data model support. Using LINQ queries to analyze application failures can be a powerful tool. You can use the data model window in WinDbg  Preview to work with an expandable and browsable version of ‘dx’ and ‘dx -g’, letting you create tables using NatVis, JavaScript, and LINQ queries.
 
 For general information about the debugger data model, see [WinDbg Preview - Data model](windbg-data-model-preview.md). For information about working with the TTD debugger object model, see [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md).
 
@@ -134,25 +136,30 @@ For general information about the debugger data model, see [WinDbg Preview - Dat
 
 For general information about working with JavaScript and NatVis, see [WinDbg Preview - Scripting](windbg-scripting-preview.md).
 
+### Managed code TTD support
+
+You can use the SOS debugging extension (sos.dll) running in 64 bit mode to debug managed code using TTD in WinDbg Preview. For more information, see [Debugging Managed Code Using the Windows Debugger](debugging-uwp-apps-using-the-windows-debugger.md).
 
 ## <span id="providingfeedback"></span>Providing feedback
 
-Your feedback will help guide time travel development priorities going forward. 
+Your feedback will help guide time travel development priorities going forward.
 
 - If you have feedback such as a feature that you really want to see or a bug that makes something difficult, use the Feedback Hub.
 
 ![Screen shot of feedback hub showing feedback options including the add new feedback button](images/windbgx-feedback.png)
 
 
-## TTD Latest News
+## Getting started with TTD
 
-For the latest news, tips, and tricks from the debugger dev team, refer to the debugger tools team blog.
-[https://blogs.msdn.microsoft.com/windbg/](https://blogs.msdn.microsoft.com/windbg/)
+Review these topics to record and replay a trace file as well as for information on working with trace files and troubleshooting.
 
+- [Time Travel Debugging - Record a trace](time-travel-debugging-record.md)
+- [Time Travel Debugging - Replay a trace](time-travel-debugging-replay.md)
+- [Time Travel Debugging - Working with trace files](time-travel-debugging-trace-file-information.md)
+- [Time Travel Debugging - Troubleshooting](time-travel-debugging-troubleshooting.md)
+- [Time Travel Debugging - Sample App Walkthrough](time-travel-debugging-walkthrough.md)
 
---- 
+These topics describe additional advanced functionality in time travel debugging. 
 
-
-
-
-
+- [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
+- [Time Travel Debugging - JavaScript Automation](time-travel-debugging-javascript-automation.md)

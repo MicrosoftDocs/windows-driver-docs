@@ -35,7 +35,7 @@ None
 Remarks
 -------
 
-The code for the **VERIFY_IS_IRQL_PASSIVE_LEVEL** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration. If your driver's binary includes **VERIFY_IS_IRQL_PASSIVE_LEVEL** code, the code will run when your driver runs with checked builds or free builds of the Microsoft Windows operating system.
+The code for the **VERIFY_IS_IRQL_PASSIVE_LEVEL** macro is included in your driver's binary when you build your driver in a release configuration or a debug configuration. 
 
 The **VERIFY_IS_IRQL_PASSIVE_LEVEL** code breaks into a kernel debugger if one of the following is true:
 
@@ -43,9 +43,9 @@ The **VERIFY_IS_IRQL_PASSIVE_LEVEL** code breaks into a kernel debugger if one o
 -   **VerifierOn** is set to a non-zero value and **DbgBreakOnError** is not set.
 -   Driver Verifier is enabled, the driver was built with framework version 1.9 or later, and neither **VerifierOn** nor **DbgBreakOnError** is set.
 
-For more information about registry entries that you can use to debug your driver, see [Registry Entries for Debugging Framework-Based Drivers](https://msdn.microsoft.com/library/windows/hardware/ff544573).
+For more information about registry entries that you can use to debug your driver, see [Registry Entries for Debugging Framework-Based Drivers](./registry-values-for-debugging-kmdf-drivers.md).
 
-For more information about debugging your driver, see [Debugging a KMDF Driver](https://msdn.microsoft.com/library/windows/hardware/ff540790).
+For more information about debugging your driver, see [Debugging a KMDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/debugging-a-wdf-driver).
 
 Examples
 --------

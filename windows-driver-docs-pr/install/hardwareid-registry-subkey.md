@@ -36,7 +36,7 @@ The following table defines the format and requirements of the **HardwareID** re
 <tr class="odd">
 <td align="left"><p>Valid <a href="hardware-ids.md" data-raw-source="[hardware ID](hardware-ids.md)">hardware ID</a> value</p></td>
 <td align="left"><p>Required</p></td>
-<td align="left"><p>Must include the hardware ID&#39;s bus prefix.</p>
+<td align="left"><p>Must include the hardware ID's bus prefix.</p>
 <p>All slash () path separator characters within the hardware ID must be replaced with number (#) characters.</p></td>
 <td align="left"><a href="deviceoverrides-registry-key.md" data-raw-source="[DeviceOverrides](deviceoverrides-registry-key.md)">DeviceOverrides</a></td>
 <td align="left"></td>

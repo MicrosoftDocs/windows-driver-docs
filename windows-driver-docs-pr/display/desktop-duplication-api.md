@@ -36,13 +36,7 @@ The API enables an application to request Windows to provide access to the conte
     -   Application can choose to use hardware acceleration to process move and mouse data.
     -   Application can choose to use hardware acceleration for compression before streaming out.
 
-For detailed documentation and samples, see [Desktop Duplication API](https://msdn.microsoft.com/library/windows/desktop/hh404487).
+For detailed documentation and samples, see [Desktop Duplication API](/windows/desktop/direct3ddxgi/desktop-dup-api).
 
  
-
- 
-
-
-
-
 

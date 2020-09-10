@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_RENDER
 
 
-The KSCATEGORY_RENDER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that renders wave and MIDI data streams.
+The KSCATEGORY_RENDER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that renders wave and MIDI data streams.
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Drivers for KS audio adapter devices register an instance of KSCATEGORY_RENDER t
 
 For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) in the WDK.
 
-For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799).
+For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
 Requirements
 ------------
@@ -71,10 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

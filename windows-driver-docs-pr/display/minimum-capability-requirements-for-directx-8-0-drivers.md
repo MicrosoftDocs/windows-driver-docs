@@ -25,19 +25,13 @@ A DirectX 8.0 driver must explicitly:
 
 -   Modify its list of supported texture formats to support new style pixel format specifications.
 
--   Handle the new [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) (DP2) drawing tokens.
+-   Handle the new [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) (DP2) drawing tokens.
 
--   Handle [**D3dCreateSurfaceEx**](https://msdn.microsoft.com/library/windows/hardware/ff542840) for vertex and index buffers even if your driver does not support video memory vertex buffer creation. Handles for system memory vertex and index buffers are passed to the driver.
+-   Handle [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) for vertex and index buffers even if your driver does not support video memory vertex buffer creation. Handles for system memory vertex and index buffers are passed to the driver.
 
 -   Set the new posttransformed clipping flag D3DPMISCCAPS\_CLIPTLVERT if the hardware supports clipping of posttransformed vertex data.
 
 It should be noted that a driver is not required to support any of the new features of DirectX 8.0 such as pixel or vertex shaders, volume textures, point sprites (beyond the nonzero maximum point size), multisampling or even multiple vertex streams (as the driver can set the maximum number of simultaneous vertex streams to one) in order to be considered a DirectX 8.0 driver.
 
  
-
- 
-
-
-
-
 

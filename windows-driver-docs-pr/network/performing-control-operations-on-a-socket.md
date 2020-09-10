@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 After a Winsock Kernel (WSK) application has successfully created a socket, it can perform control operations on the socket. The control operations that can be performed on a socket include setting and retrieving socket options and executing socket IOCTL operations.
 
-A WSK application performs control operations on a socket by calling the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function. The **WskControlSocket** function is pointed to by the **WskControlSocket** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](https://msdn.microsoft.com/library/windows/hardware/ff571182)) that was returned by the WSK subsystem during the creation of the socket.
+A WSK application performs control operations on a socket by calling the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function. The **WskControlSocket** function is pointed to by the **WskControlSocket** member of the socket's provider dispatch structure. A socket's provider dispatch structure is pointed to by the **Dispatch** member of the socket object structure ( [**WSK\_SOCKET**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket)) that was returned by the WSK subsystem during the creation of the socket.
 
-The following code example shows how a WSK application can set the [**SO\_EXCLUSIVEADDRUSE**](https://msdn.microsoft.com/library/windows/hardware/ff570830) socket option on a datagram socket.
+The following code example shows how a WSK application can set the [**SO\_EXCLUSIVEADDRUSE**](./so-exclusiveaddruse.md) socket option on a datagram socket.
 
 ```C++
 // Prototype for the control socket IoCompletion routine
@@ -40,7 +40,7 @@ NTSTATUS
   ULONG SocketOptionState;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_DATAGRAM_DISPATCH)(Socket->Dispatch);
 
@@ -128,9 +128,9 @@ NTSTATUS
 }
 ```
 
-For more information about each of the supported socket options, see [**WSK Socket Options**](https://msdn.microsoft.com/library/windows/hardware/ff571186).
+For more information about each of the supported socket options, see [**WSK Socket Options**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-socket-options).
 
-The following code example shows how a WSK application can execute the [**SIO\_WSK\_SET\_REMOTE\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/ff570820) socket IOCTL operation on a datagram socket.
+The following code example shows how a WSK application can execute the [**SIO\_WSK\_SET\_REMOTE\_ADDRESS**](./sio-wsk-set-remote-address.md) socket IOCTL operation on a datagram socket.
 
 ```C++
 // Prototype for the control socket IoCompletion routine
@@ -153,7 +153,7 @@ NTSTATUS
   PIRP Irp;
   NTSTATUS Status;
 
-  // Get pointer to the socket&#39;s provider dispatch structure
+  // Get pointer to the socket's provider dispatch structure
   Dispatch =
     (PWSK_PROVIDER_DATAGRAM_DISPATCH)(Socket->Dispatch);
 
@@ -238,13 +238,7 @@ NTSTATUS
 }
 ```
 
-For more information about each of the supported socket IOCTL operations, see [WSK Socket IOCTL Operations](https://msdn.microsoft.com/library/windows/hardware/ff571183).
+For more information about each of the supported socket IOCTL operations, see [WSK Socket IOCTL Operations](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-socket-ioctl-operations).
 
  
-
- 
-
-
-
-
 

@@ -44,13 +44,7 @@ class MSiSCSI_RedirectPortalInfoClass
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RedirectPortalInfoClass**](https://msdn.microsoft.com/library/windows/hardware/ff563117) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RedirectPortalInfoClass**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_redirectportalinfoclass) data structure.
 
  
-
- 
-
-
-
-
 

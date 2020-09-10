@@ -11,14 +11,15 @@ ms.localizationpriority: medium
 # IRP\_MN\_QUERY\_ALL\_DATA
 
 
-All drivers that support WMI must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) or by handling the IRP itself, as described in [Handling WMI Requests](https://msdn.microsoft.com/library/windows/hardware/ff546968).
+All drivers that support WMI must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
-If a driver calls [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) to handle an **IRP\_MN\_QUERY\_ALL\_DATA** request, WMI in turn calls that driver's [*DpWmiQueryDataBlock*](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine.
+If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_QUERY\_ALL\_DATA** request, WMI in turn calls that driver's [*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
 
 Major Code
 ----------
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
+
 When Sent
 ---------
 
@@ -38,9 +39,9 @@ WMI sends this IRP at IRQL = PASSIVE\_LEVEL in an arbitrary thread context.
 ## Output Parameters
 
 
-If the driver handles WMI IRPs by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834), WMI fills in a **WNODE\_ALL\_DATA** by calling the driver's *DpWmiQueryDataBlock* routine once for each block registered by the driver.
+If the driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI fills in a **WNODE\_ALL\_DATA** by calling the driver's *DpWmiQueryDataBlock* routine once for each block registered by the driver.
 
-Otherwise, the driver fills in a [**WNODE\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff566372) structure at **Parameters.WMI.Buffer** as follows:
+Otherwise, the driver fills in a [**WNODE\_ALL\_DATA**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_all_data) structure at **Parameters.WMI.Buffer** as follows:
 
 -   Sets **WnodeHeader.BufferSize** to the number of bytes of the entire **WNODE\_ALL\_DATA** to be returned, sets **WnodeHeader.Timestamp** to the value returned by **KeQuerySystemTime**, and sets **WnodeHeader.Flags** as appropriate for the data to be returned.
 
@@ -56,12 +57,12 @@ Otherwise, the driver fills in a [**WNODE\_ALL\_DATA**](https://msdn.microsoft.c
 
     -   Writes instance data following the last element of the **OffsetInstanceDataAndLength** array, plus padding so that each instance is aligned to an 8-byte boundary.
 
-If the buffer at **Parameters.WMI.Buffer** is too small to receive all of the data, a driver fills in the needed size in a [**WNODE\_TOO\_SMALL**](https://msdn.microsoft.com/library/windows/hardware/ff566379) structure at **Parameters.WMI.Buffer**. If the buffer is smaller than **sizeof**(**WNODE\_TOO\_SMALL**), the driver fails the IRP and returns STATUS\_BUFFER\_TOO\_SMALL.
+If the buffer at **Parameters.WMI.Buffer** is too small to receive all of the data, a driver fills in the needed size in a [**WNODE\_TOO\_SMALL**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_too_small) structure at **Parameters.WMI.Buffer**. If the buffer is smaller than **sizeof**(**WNODE\_TOO\_SMALL**), the driver fails the IRP and returns STATUS\_BUFFER\_TOO\_SMALL.
 
 ## I/O Status Block
 
 
-If the driver handles the IRP by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
+If the driver handles the IRP by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
 
 Otherwise, the driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as the following:
 
@@ -74,11 +75,11 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to the number of byte
 Operation
 ---------
 
-A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834) or by handling the IRP itself, as described in [Handling WMI Requests](https://msdn.microsoft.com/library/windows/hardware/ff546968).
+A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
-If a driver handles WMI IRPs by calling [**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834), that routine calls the driver's [*DpWmiQueryDataBlock*](https://msdn.microsoft.com/library/windows/hardware/ff544096) routine.
+If a driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), that routine calls the driver's [*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
 
-If a driver handles an **IRP\_MN\_QUERY\_ALL\_DATA** request, it should do so only if **Parameters.WMI.ProviderId** points to the same device object that the driver passed to [**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480). Otherwise, the driver must forward the request to the next-lower driver.
+If a driver handles an **IRP\_MN\_QUERY\_ALL\_DATA** request, it should do so only if **Parameters.WMI.ProviderId** points to the same device object that the driver passed to [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next-lower driver.
 
 Before handling the request, the driver must determine whether **Parameters.WMI.DataPath** points to a GUID that the driver supports. If not, the driver must fail the IRP and return STATUS\_WMI\_GUID\_NOT\_FOUND.
 
@@ -86,7 +87,7 @@ If the driver supports the data block, it must do the following:
 
 -   Verify that **Parameters.WMI.BufferSize** specifies a buffer that is large enough to receive all the data that the driver will return.
 
--   Fill in a [**WNODE\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff566372) structure at **Parameters.WMI.Buffer** with data for all instances of that data block.
+-   Fill in a [**WNODE\_ALL\_DATA**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_all_data) structure at **Parameters.WMI.Buffer** with data for all instances of that data block.
 
 Requirements
 ------------
@@ -107,22 +108,17 @@ Requirements
 ## See also
 
 
-[*DpWmiQueryDataBlock*](https://msdn.microsoft.com/library/windows/hardware/ff544096)
+[*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback)
 
-[**IoWMIRegistrationControl**](https://msdn.microsoft.com/library/windows/hardware/ff550480)
+[**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol)
 
-[**KeQuerySystemTime**](https://msdn.microsoft.com/library/windows/hardware/ff553068)
+[**KeQuerySystemTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime)
 
-[**WMILIB\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff565813)
+[**WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context)
 
-[**WmiSystemControl**](https://msdn.microsoft.com/library/windows/hardware/ff565834)
+[**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
 
-[**WNODE\_ALL\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff566372)
-
- 
+[**WNODE\_ALL\_DATA**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_all_data)
 
  
-
-
-
 

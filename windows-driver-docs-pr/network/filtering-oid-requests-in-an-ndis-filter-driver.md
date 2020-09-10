@@ -15,25 +15,25 @@ ms.localizationpriority: medium
 
 
 
-Filter drivers can process OID requests that are originated by overlying drivers. NDIS calls the [*FilterOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff549954) function to process each OID request. Filter drivers can forward OID requests to underlying drivers by calling the [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) function.
+Filter drivers can process OID requests that are originated by overlying drivers. NDIS calls the [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request) function to process each OID request. Filter drivers can forward OID requests to underlying drivers by calling the [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) function.
 
-NDIS can call a filter driver's [*FilterCancelOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff549911) function to cancel an OID request. When NDIS calls *FilterCancelOidRequest*, the filter driver should try to call the [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) function as soon as possible.
+NDIS can call a filter driver's [*FilterCancelOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_cancel_oid_request) function to cancel an OID request. When NDIS calls *FilterCancelOidRequest*, the filter driver should try to call the [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) function as soon as possible.
 
 The following figure illustrates a filtered OID request.
 
 ![diagram illustrating a filtered oid request](images/requestfilter.png)
 
-The filter driver can complete the OID request synchronously or asynchronously by returning NDIS\_STATUS\_SUCCESS or NDIS\_STATUS\_PENDING, respectively, from [*FilterOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff549954). *FilterOidRequest* can also complete synchronously with an error status.
+The filter driver can complete the OID request synchronously or asynchronously by returning NDIS\_STATUS\_SUCCESS or NDIS\_STATUS\_PENDING, respectively, from [*FilterOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request). *FilterOidRequest* can also complete synchronously with an error status.
 
-A filter driver that successfully handles an OID set request must set the **SupportedRevision** member in the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure upon return from the OID set request. The **SupportedRevision** member notifies the initiator of the OID request about which revision the driver supported. For more information about version information in NDIS structures, see [Specifying NDIS Version Information](specifying-ndis-version-information.md).
+A filter driver that successfully handles an OID set request must set the **SupportedRevision** member in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure upon return from the OID set request. The **SupportedRevision** member notifies the initiator of the OID request about which revision the driver supported. For more information about version information in NDIS structures, see [Specifying NDIS Version Information](specifying-ndis-version-information.md).
 
-If *FilterOidRequest* returns NDIS\_STATUS\_PENDING, it must call the [**NdisFOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561833) function after it completes the OID request. In this case, the driver passes the results of the request at the *OidRequest* parameter of **NdisFOidRequestComplete**. The driver passes the final status of the request at the *Status* parameter of **NdisFOidRequestComplete**.
+If *FilterOidRequest* returns NDIS\_STATUS\_PENDING, it must call the [**NdisFOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequestcomplete) function after it completes the OID request. In this case, the driver passes the results of the request at the *OidRequest* parameter of **NdisFOidRequestComplete**. The driver passes the final status of the request at the *Status* parameter of **NdisFOidRequestComplete**.
 
-If *FilterOidRequest* returns NDIS\_STATUS\_SUCCESS, it returns the results of a query request in the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure at the *OidRequest* parameter. In this case, the driver does not call the **NdisFOidRequestComplete** function.
+If *FilterOidRequest* returns NDIS\_STATUS\_SUCCESS, it returns the results of a query request in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure at the *OidRequest* parameter. In this case, the driver does not call the **NdisFOidRequestComplete** function.
 
-To forward an OID request to underlying drivers, a filter driver calls the [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830) function. If a request should not be forwarded to the underlying drivers, a filter driver can complete the request immediately. To complete the request without forwarding, the driver can return NDIS\_STATUS\_SUCCESS (or an error status) from *FilterOidRequest*, or it can call **NdisFOidRequestComplete** after returning NDIS\_STATUS\_PENDING.
+To forward an OID request to underlying drivers, a filter driver calls the [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) function. If a request should not be forwarded to the underlying drivers, a filter driver can complete the request immediately. To complete the request without forwarding, the driver can return NDIS\_STATUS\_SUCCESS (or an error status) from *FilterOidRequest*, or it can call **NdisFOidRequestComplete** after returning NDIS\_STATUS\_PENDING.
 
-**Note**  Before the driver calls [**NdisFOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561830), the driver must allocate an [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure and transfer the request information to the new structure by calling [**NdisAllocateCloneOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff560706).
+**Note**  Before the driver calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest), the driver must allocate an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure and transfer the request information to the new structure by calling [**NdisAllocateCloneOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest).
 
  
 
@@ -49,13 +49,7 @@ A filter driver can receive OID requests from overlying drivers when it is in th
 
 The following is an example of a filter driver modifying an OID request:
 
--   A filter driver adds a header. In this case, after the driver receives a response to a query for [OID\_GEN\_MAXIMUM\_FRAME\_SIZE](https://msdn.microsoft.com/library/windows/hardware/ff569598) from the underlying drivers, the filter subtracts the size of its header from the response. The driver subtracts its header size because the driver inserts a header in front of each sent packet and removes the header in each received packet.
+-   A filter driver adds a header. In this case, after the driver receives a response to a query for [OID\_GEN\_MAXIMUM\_FRAME\_SIZE](./oid-gen-maximum-frame-size.md) from the underlying drivers, the filter subtracts the size of its header from the response. The driver subtracts its header size because the driver inserts a header in front of each sent packet and removes the header in each received packet.
 
  
-
- 
-
-
-
-
 

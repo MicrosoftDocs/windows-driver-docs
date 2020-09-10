@@ -14,19 +14,17 @@ Miniport drivers use the **NDIS_STATUS_WWAN_SAR_CONFIG** notification to inform 
 
 Unsolicited events are not applicable.
 
-This notification uses the [**NDIS_WWAN_SAR_CONFIG_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_config_info) structure.
+This notification uses the [**NDIS_WWAN_SAR_CONFIG_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_config_info) structure.
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1703 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1703
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
-[MB SAR Platform Support](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sar-platform-support)
+[MB SAR Platform Support](./mb-sar-platform-support.md)
 
 [OID_WWAN_SAR_CONFIG](oid-wwan-sar-config.md)
 
-[**NDIS_WWAN_SAR_CONFIG_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_config_info)
+[**NDIS_WWAN_SAR_CONFIG_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_config_info)

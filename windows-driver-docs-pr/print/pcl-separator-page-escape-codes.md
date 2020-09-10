@@ -68,7 +68,7 @@ The escape codes shown in the following table can be used when you create a PCL 
 </tr>
 <tr class="even">
 <td><p>\L<em>xxx</em></p></td>
-<td><p>Prints the string of text that appears after the \L escape code. If you enter \LTest, the text &quot;Test&quot; appears in the separator page.</p></td>
+<td><p>Prints the string of text that appears after the \L escape code. If you enter \LTest, the text "Test" appears in the separator page.</p></td>
 </tr>
 <tr class="odd">
 <td><p>\N</p></td>

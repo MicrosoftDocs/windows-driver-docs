@@ -48,7 +48,7 @@ The following table describes the valid values for the **WIA\_IPS\_FEEDER\_CONTR
 <tbody>
 <tr class="odd">
 <td><p>WIA_FEEDER_CONTROL_AUTO</p></td>
-<td><p>The device controls the feeder motor operation. The feeder is started and stopped for each scan job (<a href="https://msdn.microsoft.com/library/windows/hardware/ff543956" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543956)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> call). This is the required default value if the property is supported.</p></td>
+<td><p>The device controls the feeder motor operation. The feeder is started and stopped for each scan job (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> call). This is the required default value if the property is supported.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_FEEDER_CONTROL_MANUAL</p></td>
@@ -61,9 +61,9 @@ The following table describes the valid values for the **WIA\_IPS\_FEEDER\_CONTR
 
 When the device supports this feature, the WIA application can use it to start the feeder motor before executing the first scan job (the first **IWiaTransfer::Download** call) and stop the feeder after the last scan job (the last **IWiaTransfer::Download** call in the current WIA application session) is complete. Between the individual jobs (**IWiaTransfer::Download** calls), the feeder is kept to its operating speed and is ready to continue the next job without delay.
 
-If the WIA minidriver receives an [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) request while WIA\_FEEDER\_CONTROL\_MANUAL is set and without receiving a WIA\_COMMAND\_START\_FEEDER command, the WIA minidriver must revert to WIA\_FEEDER\_COMMAND\_AUTO before executing the scan job.
+If the WIA minidriver receives an [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) request while WIA\_FEEDER\_CONTROL\_MANUAL is set and without receiving a WIA\_COMMAND\_START\_FEEDER command, the WIA minidriver must revert to WIA\_FEEDER\_COMMAND\_AUTO before executing the scan job.
 
-If WIA\_FEEDER\_CONTROL\_MANUAL is set and the WIA minidriver receives a [**IWiaMiniDrv::drvUnInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff545010) request without receiving a WIA\_COMMAND\_STOP\_FEEDER command, the WIA minidriver must stop the feeder before returning to the call.
+If WIA\_FEEDER\_CONTROL\_MANUAL is set and the WIA minidriver receives a [**IWiaMiniDrv::drvUnInitializeWia**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvuninitializewia) request without receiving a WIA\_COMMAND\_STOP\_FEEDER command, the WIA minidriver must stop the feeder before returning to the call.
 
 This property is valid only for the Feeder item (WIA\_CATEGORY\_FEEDER) and is optional.
 
@@ -84,10 +84,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

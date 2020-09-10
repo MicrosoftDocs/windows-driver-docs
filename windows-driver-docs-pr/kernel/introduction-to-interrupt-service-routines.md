@@ -18,14 +18,10 @@ Beginning with PCI 2.2, PCI devices can generate *message-signaled interrupts*.
 
 The system supports two different types of ISRs:
 
--   The driver can register an [*InterruptService*](https://msdn.microsoft.com/library/windows/hardware/ff547958) routine to handle line-based or message-signaled interrupts. (This is the only type available prior to Windows Vista.) The system passes a driver-supplied context value.
+-   The driver can register an [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine to handle line-based or message-signaled interrupts. (This is the only type available prior to Windows Vista.) The system passes a driver-supplied context value.
 
--   The driver can register an [*InterruptMessageService*](https://msdn.microsoft.com/library/windows/hardware/ff547940) routine to handle message-signaled interrupts. The system passes both a driver-supplied context value and the message ID of the interrupt message.
+-   The driver can register an [*InterruptMessageService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kmessage_service_routine) routine to handle message-signaled interrupts. The system passes both a driver-supplied context value and the message ID of the interrupt message.
 
+For more information about registering an InterruptService or InterruptMessageService routine to service the device's interrupts, see [Introduction to Message-Signaled Interrupts](./introduction-to-message-signaled-interrupts.md).
  
-
- 
-
-
-
 

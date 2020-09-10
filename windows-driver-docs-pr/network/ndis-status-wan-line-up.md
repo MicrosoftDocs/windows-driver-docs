@@ -16,11 +16,11 @@ The NDIS\_STATUS\_WAN\_LINE\_UP status indicates that a WAN-capable miniport dri
 Remarks
 -------
 
-NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff546752).
+NDIS 4.*x* and earlier NDIS WAN miniport drivers use this status indication. NDIS 5.0 and later WAN miniport drivers must use the CoNDIS WAN interface. For more information about the CoNDIS WAN interface, see [Implementing CoNDIS WAN Miniport Drivers (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546752(v=vs.85)).
 
-The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538) function contains a pointer to an [**NDIS\_MAC\_LINE\_UP**](https://msdn.microsoft.com/library/windows/hardware/ff557058) structure.
+The *StatusBuffer* parameter of the [**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85)) function contains a pointer to an [**NDIS\_MAC\_LINE\_UP**](/previous-versions/windows/hardware/network/ff557058(v=vs.85)) structure.
 
-For more information about NDIS\_STATUS\_WAN\_LINE\_UP, see [Line-Up Indication (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff549189) and [Indicating NDIS WAN Miniport Driver Status (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff546867).
+For more information about NDIS\_STATUS\_WAN\_LINE\_UP, see [Line-Up Indication (NDIS 5.1)](/previous-versions/windows/hardware/network/ff549189(v=vs.85)) and [Indicating NDIS WAN Miniport Driver Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546867(v=vs.85)).
 
 Requirements
 ------------
@@ -45,14 +45,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_MAC\_LINE\_UP**](https://msdn.microsoft.com/library/windows/hardware/ff557058)
+[**NDIS\_MAC\_LINE\_UP**](/previous-versions/windows/hardware/network/ff557058(v=vs.85))
 
-[**NdisMIndicateStatus**](https://msdn.microsoft.com/library/windows/hardware/ff553538)
-
- 
+[**NdisMIndicateStatus**](/previous-versions/windows/hardware/network/ff553538(v=vs.85))
 
  
-
-
-
 

@@ -11,13 +11,7 @@ ms.localizationpriority: medium
 
 This topic describes the operations to interface vendor specific operations to the MB Service.
 
-For more information about vendor specific operations, see [OID\_WWAN\_VENDOR\_SPECIFIC](https://msdn.microsoft.com/library/windows/hardware/ff569842).
+For more information about vendor specific operations, see [OID\_WWAN\_VENDOR\_SPECIFIC](./oid-wwan-vendor-specific.md).
 
  
-
- 
-
-
-
-
 

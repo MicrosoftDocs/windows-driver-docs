@@ -27,7 +27,7 @@ The package identifier is a security identifier (SID) that identifies the associ
 
 ### Redirecting Connections
 
-A callout driver calls the [**FwpsRedirectHandleCreate0**](https://msdn.microsoft.com/library/windows/hardware/hh439681) function to create a handle that can be used to redirect TCP connections.
+A callout driver calls the [**FwpsRedirectHandleCreate0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0) function to create a handle that can be used to redirect TCP connections.
 
 This section includes the following topics:
 
@@ -37,7 +37,7 @@ Querying the Redirect State
 
 ### Using a Redirection Handle
 
-Before an ALE connect redirection callout can redirect connections to a local process, it must obtain a redirect handle with the FwpsRedirectHandleCreate0 function and put the handle in the [**FWPS\_CONNECT\_REQUEST0**](https://msdn.microsoft.com/library/windows/hardware/ff551231) structure. The callout modifies the structure in the classifyFn for the ALE connect redirect layers.
+Before an ALE connect redirection callout can redirect connections to a local process, it must obtain a redirect handle with the FwpsRedirectHandleCreate0 function and put the handle in the [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure. The callout modifies the structure in the classifyFn for the ALE connect redirect layers.
 
 The FWPS\_CONNECT\_REQUEST0 structure contains the following members for redirection:
 
@@ -55,11 +55,11 @@ The FWPS\_CONNECT\_REQUEST0 structure contains the following members for redirec
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>localRedirectHandle</strong></p></td>
-<td align="left"><p>The redirect handle that the callout driver created by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439681" data-raw-source="[&lt;strong&gt;FwpsRedirectHandleCreate0&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh439681)"><strong>FwpsRedirectHandleCreate0</strong></a> function.</p></td>
+<td align="left"><p>The redirect handle that the callout driver created by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0" data-raw-source="[&lt;strong&gt;FwpsRedirectHandleCreate0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandlecreate0)"><strong>FwpsRedirectHandleCreate0</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>localRedirectContext</strong></p></td>
-<td align="left"><p>A callout driver context area that the callout driver allocated by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520" data-raw-source="[&lt;strong&gt;ExAllocatePoolWithTag&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544520)"><strong>ExAllocatePoolWithTag</strong></a> function.</p></td>
+<td align="left"><p>A callout driver context area that the callout driver allocated by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag" data-raw-source="[&lt;strong&gt;ExAllocatePoolWithTag&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)"><strong>ExAllocatePoolWithTag</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>localRedirectContextSize</strong></p></td>
@@ -70,11 +70,11 @@ The FWPS\_CONNECT\_REQUEST0 structure contains the following members for redirec
 
  
 
-After a callout driver has finished using a redirect handle, it must call the [**FwpsRedirectHandleDestroy0**](https://msdn.microsoft.com/library/windows/hardware/hh439684) function to destroy the handle.
+After a callout driver has finished using a redirect handle, it must call the [**FwpsRedirectHandleDestroy0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsredirecthandledestroy0) function to destroy the handle.
 
 ### Querying the Redirect State
 
-A callout driver calls the [**FwpsQueryConnectionRedirectState0**](https://msdn.microsoft.com/library/windows/hardware/hh439677) function to get the redirect state of a connection. The [**FWPS\_CONNECTION\_REDIRECT\_STATE**](https://msdn.microsoft.com/library/windows/hardware/hh439704) enumeration is the return type for a call to the **FwpsQueryConnectionRedirectState0** function.
+A callout driver calls the [**FwpsQueryConnectionRedirectState0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsqueryconnectionredirectstate0) function to get the redirect state of a connection. The [**FWPS\_CONNECTION\_REDIRECT\_STATE**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_connection_redirect_state_) enumeration is the return type for a call to the **FwpsQueryConnectionRedirectState0** function.
 
 If the redirect status is FWPS\_CONNECTION\_NOT\_REDIRECTED, the ALE\_CONNECT\_REDIRECT callout can proceed to proxy the connection.
 
@@ -85,10 +85,4 @@ If the redirect status is FWPS\_CONNECTION\_REDIRECTED\_BY\_OTHER, the ALE\_CONN
 If the redirect status is FWPS\_CONNECTION\_PREVIOUSLY\_REDIRECTED\_BY\_SELF, the ALE\_CONNECT\_REDIRECT callout must not perform redirection even if other inspectors’ results are not acceptable. In this case, it must either permit or block the connection (at the ALE\_AUTH\_CONNECT layer).
 
  
-
- 
-
-
-
-
 

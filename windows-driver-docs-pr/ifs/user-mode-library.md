@@ -17,76 +17,71 @@ The filter manager user mode interfaces provide common functionality for product
 
 These user-mode interfaces enable general control of the minifilter driver and communication between the user-mode service or control program and the filter driver. User-mode interfaces also provide interfaces for management tools that allow enumeration of filters, volumes, and instances.
 
-For minifilters, user-mode communication APIs do not require administrator privileges. Instead, a minifilter defines the necessary privilege using an [**ACL**](https://msdn.microsoft.com/library/windows/hardware/ff538866) defined on a port.
+For minifilters, user-mode communication APIs do not require administrator privileges. Instead, a minifilter defines the necessary privilege using an [**ACL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl) defined on a port.
 
 ### <span id="Filter_Manager_User-Mode_Library_Routines"></span><span id="filter_manager_user-mode_library_routines"></span><span id="FILTER_MANAGER_USER-MODE_LIBRARY_ROUTINES"></span>Filter Manager User-Mode Library Routines
 
 The filter manager provides the following support routines for user-mode applications to use for loading and unloading minifilter drivers:
 
-[**FilterLoad**](https://msdn.microsoft.com/library/windows/hardware/ff541504)
+[**FilterLoad**](/windows/desktop/api/fltuser/nf-fltuser-filterload)
 
-[**FilterUnload**](https://msdn.microsoft.com/library/windows/hardware/ff541516)
+[**FilterUnload**](/windows/desktop/api/fltuser/nf-fltuser-filterunload)
 
 The following support routines are provided for creating and closing minifilter driver and instance handles:
 
-[**FilterClose**](https://msdn.microsoft.com/library/windows/hardware/ff540453)
+[**FilterClose**](/windows/desktop/api/fltuser/nf-fltuser-filterclose)
 
-[**FilterCreate**](https://msdn.microsoft.com/library/windows/hardware/ff540467)
+[**FilterCreate**](/windows/desktop/api/fltuser/nf-fltuser-filtercreate)
 
-[**FilterInstanceClose**](https://msdn.microsoft.com/library/windows/hardware/ff540524)
+[**FilterInstanceClose**](/windows/desktop/api/fltuser/nf-fltuser-filterinstanceclose)
 
-[**FilterInstanceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff540528)
+[**FilterInstanceCreate**](/windows/desktop/api/fltuser/nf-fltuser-filterinstancecreate)
 
 The following support routines are provided for attaching and detaching minifilter driver instances:
 
-[**FilterAttach**](https://msdn.microsoft.com/library/windows/hardware/ff540442)
+[**FilterAttach**](/windows/desktop/api/fltuser/nf-fltuser-filterattach)
 
-[**FilterAttachAtAltitude**](https://msdn.microsoft.com/library/windows/hardware/ff540448)
+[**FilterAttachAtAltitude**](/windows/desktop/api/fltuser/nf-fltuser-filterattachataltitude)
 
-[**FilterDetach**](https://msdn.microsoft.com/library/windows/hardware/ff540475)
+[**FilterDetach**](/windows/desktop/api/fltuser/nf-fltuser-filterdetach)
 
 The following support routines are provided for enumerating filters, volumes, and instances:
 
-[**FilterFindFirst**](https://msdn.microsoft.com/library/windows/hardware/ff540485)
+[**FilterFindFirst**](/windows/desktop/api/fltuser/nf-fltuser-filterfindfirst)
 
-[**FilterFindNext**](https://msdn.microsoft.com/library/windows/hardware/ff540488)
+[**FilterFindNext**](/windows/desktop/api/fltuser/nf-fltuser-filterfindnext)
 
-[**FilterInstanceFindFirst**](https://msdn.microsoft.com/library/windows/hardware/ff540541)
+[**FilterInstanceFindFirst**](/windows/desktop/api/fltuser/nf-fltuser-filterinstancefindfirst)
 
-[**FilterInstanceFindNext**](https://msdn.microsoft.com/library/windows/hardware/ff541493)
+[**FilterInstanceFindNext**](/windows/desktop/api/fltuser/nf-fltuser-filterinstancefindnext)
 
-[**FilterVolumeFindFirst**](https://msdn.microsoft.com/library/windows/hardware/ff541525)
+[**FilterVolumeFindFirst**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindfirst)
 
-[**FilterVolumeFindNext**](https://msdn.microsoft.com/library/windows/hardware/ff541530)
+[**FilterVolumeFindNext**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindnext)
 
-[**FilterVolumeInstanceFindFirst**](https://msdn.microsoft.com/library/windows/hardware/ff541541)
+[**FilterVolumeInstanceFindFirst**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumeinstancefindfirst)
 
-[**FilterVolumeInstanceFindNext**](https://msdn.microsoft.com/library/windows/hardware/ff541551)
+[**FilterVolumeInstanceFindNext**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumeinstancefindnext)
 
 The following support routines are provided for querying for information:
 
-[**FilterGetDosName**](https://msdn.microsoft.com/library/windows/hardware/ff540492)
+[**FilterGetDosName**](/windows/desktop/api/fltuser/nf-fltuser-filtergetdosname)
 
-[**FilterGetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff540500)
+[**FilterGetInformation**](/windows/desktop/api/fltuser/nf-fltuser-filtergetinformation)
 
-[**FilterInstanceGetInformation**](https://msdn.microsoft.com/library/windows/hardware/ff541499)
+[**FilterInstanceGetInformation**](/windows/desktop/api/fltuser/nf-fltuser-filterinstancegetinformation)
 
 The following support routines are provided for communication initiated by a user operation:
 
-[**FilterConnectCommunicationPort**](https://msdn.microsoft.com/library/windows/hardware/ff540460)
+[**FilterConnectCommunicationPort**](/windows/desktop/api/fltuser/nf-fltuser-filterconnectcommunicationport)
 
-[**FilterSendMessage**](https://msdn.microsoft.com/library/windows/hardware/ff541513)
+[**FilterSendMessage**](/windows/desktop/api/fltuser/nf-fltuser-filtersendmessage)
 
 The following support routines are provided for responding to communication initiated by a minifilter driver:
 
-[**FilterGetMessage**](https://msdn.microsoft.com/library/windows/hardware/ff540506)
+[**FilterGetMessage**](/windows/desktop/api/fltuser/nf-fltuser-filtergetmessage)
 
-[**FilterReplyMessage**](https://msdn.microsoft.com/library/windows/hardware/ff541508)
-
- 
+[**FilterReplyMessage**](/windows/desktop/api/fltuser/nf-fltuser-filterreplymessage)
 
  
-
-
-
 

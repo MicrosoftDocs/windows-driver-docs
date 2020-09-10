@@ -11,7 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 07/31/2018
+ms.date: 01/31/2019
 ms.localizationpriority: medium
 ---
 
@@ -44,17 +44,16 @@ KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns stream presentation informat
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564262" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564262)"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537497" data-raw-source="[&lt;strong&gt;KSAUDIO_PRESENTATION_POSITION&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537497)"><strong>KSAUDIO_PRESENTATION_POSITION</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position"><STRONG>KSAUDIO_PRESENTATION_POSITION</STRONG></a></p></td>
 </tr>
 </tbody>
 </table>
-
  
 
-The property descriptor (instance data) is a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure. Before sending the request, the client loads the structure with values that describe the current cursor position in audio data stream.
+The property descriptor (instance data) is a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure. Before sending the request, the client loads the structure with values that describe the current cursor position in audio data stream.
 
-The property value is a [**KSAUDIO\_PRESENTATION\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/hh450865) structure that represents a recent presentation position in the audio data stream.
+The property value is a [**KSAUDIO\_PRESENTATION\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position) structure that represents a recent presentation position in the audio data stream.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -65,7 +64,7 @@ Remarks
 
 The OS may periodically get this property from the driver to retrieve recent presentation position information from the driver in order to allow upper layers to synchronize video or other activity with the audio stream.
 
-The value returned in the u64PositionInBlocks member of [**KSAUDIO\_PRESENTATION\_POSITION**](https://msdn.microsoft.com/library/windows/hardware/hh450865) should be consistent with the packet count returned by KSPROPERTY\_RTAUDIO\_PACKETCOUNT and the driver’s interpretation of the packet number passed to SetWritePacket. In other words, the first sample of packet 0 is block 0.
+The value returned in the u64PositionInBlocks member of [**KSAUDIO\_PRESENTATION\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position) should be consistent with the packet count returned by KSPROPERTY\_RTAUDIO\_PACKETCOUNT and the driver’s interpretation of the packet number passed to SetWritePacket. In other words, the first sample of packet 0 is block 0.
 
 This does not mean that KSPROPERTY\_RTAUDIO\_PACKETCOUNT and KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION, if called simultaneously, would return values that refer to the same sample. KSPROPERTY\_RTAUDIO\_PACKETCOUNT returns information about the samples transferred from the WaveRT buffer to the hardware, while KSPROPERTY\_RTAUDIO\_PRESENTATION\_POSITION returns information about samples presented at the output of the system. These are two different pieces of information.
 
@@ -95,11 +94,4 @@ Requirements
 [KSPROPSETID\_RTAudio](kspropsetid-rtaudio.md)
 
  
-
- 
-
-
-
-
-
 

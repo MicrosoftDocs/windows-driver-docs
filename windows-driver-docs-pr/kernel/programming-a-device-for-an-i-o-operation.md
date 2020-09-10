@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Use the following general guidelines for designing, writing, and calling [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routines that program a device for I/O operations:
+Use the following general guidelines for designing, writing, and calling [*SynchCritSection*](/windows-hardware/drivers/ddi/wdm/nc-wdm-ksynchronize_routine) routines that program a device for I/O operations:
 
 -   A *SynchCritSection* routine that programs the device for I/O operations must return control as quickly as possible.
 
@@ -28,9 +28,4 @@ Use the following general guidelines for designing, writing, and calling [*Synch
     You should not write a single, large, general-purpose *SynchCritSection* routine with a **switch** statement or many nested **if..then..else** statements to determine what operations it will carry out or what state information to update. On the other hand, you should avoid writing numerous *SynchCritSection* routines that program only a single device register.
 
  
-
- 
-
-
-
 

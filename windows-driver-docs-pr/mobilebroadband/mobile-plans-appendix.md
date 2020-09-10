@@ -1,18 +1,14 @@
 ---
-title: Mobile Plans appendix
+title: Mobile Plans general appendix
 description: This topic describes appendix information for the Mobile Plans program.
 ms.assetid: B3B478DB-78F4-4031-B041-DCBAACC15D6F
 keywords:
 - Windows Mobile Plans appendix, Mobile Plans appendix mobile operators
-ms.date: 09/17/2018
-ms.topic: article
-ms.prod: windows-hardware
-ms.technology: windows-devices
+ms.date: 07/05/2019
+ms.localizationpriority: medium
 ---
 
-# Mobile Plans appendix
-
-[!include[Mobile Plans Beta Prerelease](../mobile-plans-beta-prerelease.md)]
+# Mobile Plans general appendix
 
 ## Web portal flow and reference design
 
@@ -97,45 +93,41 @@ The back button on the menu bar of the Mobile Plans app will navigate users to t
 
 ### Error while loading the MO Direct experience
 
-When there are any unhandled errors or exceptions on the MO Direct portal that cause the Mobile Plans app to fail to load the MO Direct experience, the following error will be displayed:
+When there are any unhandled errors or exceptions on the MO Direct portal that cause the Mobile Plans app to fail to load the MO Direct experience, the following error is displayed:
 
 <img src="images/dynamo_appendix_mo_direct_10_error.png" alt="MO Direct walkthrough: error example" title="MO Direct walkthrough: error example" width="600" />
 
-## Mobile Plans user journey
+## High level integration schedule
 
-The following diagram shows the journey when a user is attaching an eSIM-capable Windows Connected device to a mobile operator that participates in the Mobile Plans program.
-
-<img src="images/dynamo_appendix_user_journey.png" alt="Mobile Plans user journey" title="Mobile Plans user journey" width="400" />
-
-## High-level integration schedule
-
-The following table provides a high-level overview of the Mobile Plans project integration schedule.
+The following table provides a high-level overview of the *Mobile Plans* project integration schedule.
 
 | Phase | Activities | Owner | Time estimate |
 | --- | --- | --- | --- |
-| Configuration | Define ICCID range | MO | N/A |
-| Configuration | Submit COSA database update <p>This is to ensure your APN configuration on Windows is automatic and is a hard deadline for inclusion in the Windows build. Prior to this the settings must be configured and validated.</p> | MO | about 2 months |
-| Configuration | Create Dev center account and submit app | MO | N/A |
-| Configuration | White list MO app and account | MS | 2 days |
-| Configuration | Provide service configuration email | MO | N/A |
-| Configuration | Publish metadata package in Dev center | MO | N/A |
-| Implementation | Implement mobile operator APIs | MO | N/A |
-| Implementation | Enable Walled Garden | MO | N/A |
-| Implementation | Build MO Direct web experience | MO | N/A |
-| Validation | MO APIs Code Complete | MO | N/A |
-| Validation | Validate MO API implementation | MO | N/A |
-| Integration | Provide a list of SIM/eSIMs to use during integration phase | MO | 1 day |
-| Integration | Configure SIM/eSIMs to validate | MS | up to 1 week |
-| Integration | Configure MO API staging endpoint in DM PPE environment | MS | up to 1 week |
-| Integration | MO API testing complete for Active SIM (checkpoint) | MS | 2 weeks |
-| Integration | MO API is production ready (checkpoint) | MO & MS | N/A |
-| Launch | Submit production MO API endpoint to DM | MO | N/A |
-| Launch | Configure MO API production endpoint in DM PPE environment | MS | up to 1 week |
-| Launch | Load test | MO & MS | 1 week |
-| Launch | Monitoring & escalation paths in place | MS | 1 week |
-| Launch | Configure smaller test SIM range with MO API production endpoint in DM Production environment | MS | up to 1 week |
-| Launch | End to end validation (checkpoint) | MO | N/A |
-| Launch | Go/No Go (final checkpoint) | MO & MS | N/A |
-| Launch | Configure full SIM range with MO API production endpoint in DM production environment | MS | up to 1 week |
-| Launch | Release review- launch readiness | MS | 2 days |
-| Launch | Launch | MO & MS | N/A |
+| Implementation | eSIM profile installable on a Windows device. Test using SMDP+ used for Staging Environment and Production Environment. | MO |  |
+|                | Provide the onboarding checklist document, including Staging Environment service configuration | MO |  |
+|                | Enable the mobile operator Staging Environment in the *Mobile Plans* Staging Environment | MSFT | Configuration updates occur on the 1st and 3rd Friday of every month |
+|                | Submit COSA database update | MO | About 3 months |
+|                | MO Direct portal development start |  |
+|                | `GetBalance` API development start |  |
+| Integration | Enable Walled Garden | MO |  |
+|             | Validate COSA update | MO |  |
+|             | MO Direct portal development complete | MO |  |
+|             | `GetBalance` API development complete | MO |  |
+|             | MO development complete - code complete (checkpoint) | MO |  |
+|             | Validate `GetBalance` API functionality | MO |  |
+|             | End-to-end experience is functional in MO Staging Environment (checkpoint) | MO |  |
+|             | Update Service Configuration document to reflect Production Environment settings (if not provided previously) | MO |  |
+|             | Provide ICCIDs to be used for `GetBalance` load test | MO |  |
+|             | Enable mobile operator Production Environment environment in *Mobile Plans* Staging Environment | MSFT | Configuration updates occur on the 1st and 3rd Friday of every month |
+|             | End-to-end experience is functional in MO Production Environment (checkpoint) | MO |  |
+| Validaton | Exit criteria test cases complete | MO |  |
+|           | Verify test case results | MSFT |  |
+|           | Test sign-off (checkpoint) | MSFT |  |
+| Rollout | `GetBalance` API load test | MSFT and MO | 1 week |
+|         | Monitoring and escalation paths in place | MSFT | 1 week |
+|         | Customer support in place | MSFT and MO |  |
+|         | Commercial agreement completed | MO |  |
+|         | COSA update available in Windows | MSFT |  |
+|         | Go/No-Go (final checkpoint) | MSFT and MO |  |
+|         | Configure MO Production Environment environment in *Mobile Plans* Production Environment | MSFT |  |
+|         | Launch | MSFT and MO | Launch date and time must be agreed upon to ensure that local validation happens |

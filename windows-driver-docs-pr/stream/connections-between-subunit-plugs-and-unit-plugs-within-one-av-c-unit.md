@@ -25,7 +25,7 @@ This scenario is the type of connection that was originally supported in *Avc.sy
 
 Scenario 1 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
-Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554101) structure and specifies values for these members for a source subunit plug.
+Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure and specifies values for these members for a source subunit plug.
 
 <table>
 <colgroup>
@@ -44,7 +44,7 @@ Each column in the following table corresponds to a member of the [**AVCCONNECTI
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because the source unit&#39;s device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because the source unit's device identifier is the unit that contains the subunit</p></td>
 <td><p>0xFF (the unit that contains the subunit)</p></td>
 <td><p>iPlug (0x0 to 0x1E or 0x7F)</p></td>
 <td><p>N/A</p></td>
@@ -110,7 +110,7 @@ Each column in the following table corresponds to a member of the AVCCONNECTINFO
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Not used because source unit&#39;s device identifier is the unit that contains the subunit</p></td>
+<td><p>Not used because source unit's device identifier is the unit that contains the subunit</p></td>
 <td><p>Subunit address</p></td>
 <td><p>Source plug (0x0 to 0x1E)</p></td>
 <td><p>N/A</p></td>
@@ -160,9 +160,4 @@ The following list describes the meaning of values that appear in the preceding 
 -   The values in the **DeviceID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
  
-
- 
-
-
-
 

@@ -22,18 +22,20 @@ Supported.
 Not requested.
 
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
-Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff560258).
+Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](/previous-versions/windows/hardware/network/ff560258(v=vs.85)).
 
 <a href="" id="windows-xp"></a>Windows XP  
 Supported.
 
 <a href="" id="ndis-5-1-miniport-drivers"></a>NDIS 5.1 miniport drivers  
-Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff560258).
+Mandatory. See [OID\_GEN\_SUPPORTED\_LIST (NDIS 5.1)](/previous-versions/windows/hardware/network/ff560258(v=vs.85)).
 
 Remarks
 -------
 
 NDIS 6.0 and later miniport drivers do not receive this OID request. NDIS handles this OID with a cached value that miniport drivers supply during initialization.
+
+To specify the list of supported OIDs during initialization, a miniport driver sets the **SupportedOidList** member of the [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure and passes the structure to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 NDIS forwards a subset of the provided list to protocol drivers that make this query. That is, NDIS filters any supported statistics OIDs out of the list because protocol drivers never make statistics queries.
 
@@ -63,9 +65,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

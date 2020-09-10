@@ -11,14 +11,14 @@ ms.localizationpriority: medium
 
 System on a Chip (SoC) integrated circuits make extensive use of general-purpose I/O (GPIO) pins. For SoC-based platforms, Windows defines a general abstraction for GPIO hardware, and this abstraction requires support from the Advanced Configuration and Power Interface (ACPI) namespace.
 
-The GPIO abstraction is supported by the [ACPI 5.0 Specification](https://www.uefi.org/specifications) definitions that are listed in this article.
+The GPIO abstraction is supported by the [ACPI 5.0 Specification](https://uefi.org/specifications) definitions that are listed in this article.
 
 To verify that your GPIO controller meets all Windows platform requirements, see [GPIO Controller Requirements Checklist](gpio-controller-requirements-checklist.md).
 
 ## GPIO controller devices
 
 
-Windows supports GPIO controllers. GPIO controllers provide a variety of functions for peripheral devices, including interrupts, input signaling, and output signaling. GPIO capabilities are modeled as a GPIO controller device in the namespace. The [GPIO framework extension](https://docs.microsoft.com/windows-hardware/drivers/gpio/gpio-driver-support-overview) (GpioClx) models the GPIO controller device as being partitioned into some number of banks of pins. Each pin bank has 64 or fewer configurable pins. The banks in a GPIO controller are ordered relative to their pins' position within the controller-relative GPIO pin space. For example, bank 0 contains pins 0-31 on the controller, bank 1 contains pins 32-63, and so on. All banks have the same number of pins, except for the last bank, which might have fewer. Banks are significant for the ACPI firmware because the firmware must report the mapping of system interrupt resources to banks, as described in **GPIO namespace objects** section below.
+Windows supports GPIO controllers. GPIO controllers provide a variety of functions for peripheral devices, including interrupts, input signaling, and output signaling. GPIO capabilities are modeled as a GPIO controller device in the namespace. The [GPIO framework extension](../gpio/gpio-driver-support-overview.md) (GpioClx) models the GPIO controller device as being partitioned into some number of banks of pins. Each pin bank has 64 or fewer configurable pins. The banks in a GPIO controller are ordered relative to their pins' position within the controller-relative GPIO pin space. For example, bank 0 contains pins 0-31 on the controller, bank 1 contains pins 32-63, and so on. All banks have the same number of pins, except for the last bank, which might have fewer. Banks are significant for the ACPI firmware because the firmware must report the mapping of system interrupt resources to banks, as described in **GPIO namespace objects** section below.
 
 Each pin on a bank has a set of parameters (for example, output, level-sensitive interrupt, de-bounced input, and so on) that describe how the pin is to be configured.
 
@@ -37,7 +37,7 @@ Logically, ActiveBoth signals have both an asserted and unasserted state, whethe
 
  
 
-To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_reconfigure_interrupt) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](https://docs.microsoft.com/windows-hardware/drivers/gpio).
+To support emulated ActiveBoth, the GPIO controller driver must enable ("opt-in to") ActiveBoth emulation by implementing a [*CLIENT\_ReconfigureInterrupt*](/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_reconfigure_interrupt) callback function, and by setting the **EmulateActiveBoth** flag in the basic information structure that the driver's [*CLIENT\_QueryControllerBasicInformation*](/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information) callback function supplies to **GpioClx**. For more information, see [General-Purpose I/O (GPIO) Drivers](../gpio/index.md).
 
 ## GPIO namespace objects
 
@@ -86,4 +86,3 @@ Fields in an OpRegion can be declared anywhere in the namespace and accessed fro
 > [!NOTE]
 > Because OpRegion access is provided by the GPIO controller device driver (the "OpRegion Handler"), methods must take care not to access an OpRegion until the driver is available. ASL code can track the state of the OpRegion handler by including a Region (\_REG) method under the GPIO controller device (see section 6.5.4 of the ACPI 5.0 specification). Additionally, the OpRegion Dependencies (\_DEP) object (see section 6.5.8 of the ACPI 5.0 specification) can be used under any device that has a method accessing GPIO OpRegion fields, if needed. See the **Device dependencies** section in the [Device management namespace objects](device-management-namespace-objects.md) topic for a discussion of when to use \_DEP. It is important that drivers are not assigned GPIO I/O resources that are also assigned to GeneralPurposeIO OpRegions. Opregions are for the exclusive use of ASL control methods.
 
- 

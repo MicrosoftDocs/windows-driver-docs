@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEFINE_DEVPROPKEY
 
 
-In Windows Vista and later versions of Windows, the DEFINE_DEVPROPKEY macro creates a DEVPROPKEY structure that represents a device property key in the [unified device property model](https://msdn.microsoft.com/library/windows/hardware/ff553515).
+In Windows Vista and later versions of Windows, the DEFINE_DEVPROPKEY macro creates a DEVPROPKEY structure that represents a device property key in the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md).
 
 ``` syntax
 #ifdef INITGUID
@@ -73,9 +73,9 @@ A DEVPROPID-typed variable that supplies the value of the **pid** (property iden
 Remarks
 -------
 
-The DEFINE_DEVPROPKEY structure is part of the [unified device property model](https://msdn.microsoft.com/library/windows/hardware/ff553515).
+The DEFINE_DEVPROPKEY structure is part of the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md).
 
-The DEFINE_DEVPROPKEY macro can be used to create a [**DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff543544) structure that represents a custom device property.
+The DEFINE_DEVPROPKEY macro can be used to create a [**DEVPROPKEY**](./devpropkey.md) structure that represents a custom device property.
 
 Requirements
 ------------
@@ -96,14 +96,7 @@ Requirements
 ## See also
 
 
-[**DEVPROPKEY**](https://msdn.microsoft.com/library/windows/hardware/ff543544)
+[**DEVPROPKEY**](./devpropkey.md)
 
  
-
- 
-
-
-
-
-
 

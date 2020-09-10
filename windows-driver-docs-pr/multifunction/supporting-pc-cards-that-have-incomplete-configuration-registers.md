@@ -48,11 +48,11 @@ The vendor-supplied custom INF for such a device must specify:
 
 -   The resource requirements of the multifunction device.
 
-    Specify the resource requirements in [**INF DDInstall.LogConfigOverride sections**](https://msdn.microsoft.com/library/windows/hardware/ff547339).
+    Specify the resource requirements in [**INF DDInstall.LogConfigOverride sections**](../install/inf-ddinstall-logconfigoverride-section.md).
 
 -   The hardware ID for each function of the device.
 
-    Specify the hardware IDs in an [**INF DDInstall.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330).
+    Specify the hardware IDs in an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md).
 
 -   A resource map for each function of the device, identifying the parent resources required by each child function.
 
@@ -60,7 +60,7 @@ The vendor-supplied custom INF for such a device must specify:
 
 The INF must restate all the resource requirements specified by the device because if override configurations are present in the INF, the PnP manager does not use any device resource requirements from the device.
 
-For such a device, the configuration option register can be programmed using a **PcCardConfig** entry, similar to programming a single-function device. The **PcCardConfig** entry contains information that applies to the entire device. The **PcCardConfig** entry is documented in [**INF LogConfig Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547448).
+For such a device, the configuration option register can be programmed using a **PcCardConfig** entry, similar to programming a single-function device. The **PcCardConfig** entry contains information that applies to the entire device. The **PcCardConfig** entry is documented in [**INF LogConfig Directive**](../install/inf-logconfig-directive.md).
 
 When specifying a **PcCardConfig** entry for a multifunction device, the format of the *ConfigIndex* is the same as that defined for a single-function device. The configuration register for single-function PC Cards contains an index to a set of resources defined in that device's attributes. This directive can also be used with certain multifunction devices that use the index-based format of the configuration option register.
 
@@ -78,7 +78,7 @@ Class      = MultiFunction              ; system-defined class
 ClassGUID  = {4d36e971-e325-11ce-bfc1-08002be10318}
 
 [ControlFlags]
-ExcludeFromSelect=*SUP2440  ; don&#39;t include PnP devices in lists of
+ExcludeFromSelect=*SUP2440  ; don't include PnP devices in lists of
                             ; devices to be manually installed
 
 [Manufacturer]
@@ -147,11 +147,3 @@ Supra1 = "Supra Dual 56K modem"
 ```
 
 An INF like the one shown above copies the ID and resource information for the child functions to the registry. The mf.sys driver retrieves the information from the registry when it enumerates the child functions of the device.
-
-
-
-
-
-
-
-

@@ -33,16 +33,11 @@ For a description of how the print spooler supports bidirectional communication,
 ## Related sections
 
 
-[Bidirectional Communication Interfaces](https://msdn.microsoft.com/library/windows/hardware/ff545163)
+[Bidirectional Communication Interfaces](/windows-hardware/drivers/ddi/_print/index)
 
-[Bidirectional Communication Schema Reference](https://msdn.microsoft.com/library/windows/hardware/ff545175)
+[Bidirectional Communication Schema Reference](./bidi-communications-schema-reference.md)
 
-[Bidirectional Communication Error Codes](https://msdn.microsoft.com/library/windows/hardware/dd183367)
-
- 
+[Bidirectional Communication Error Codes](./bidi-error-codes.md)
 
  
-
-
-
 

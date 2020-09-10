@@ -25,13 +25,13 @@ The size (in bytes) of the following values.
 
 | Type | Description |
 | --- | --- |
-| [**WDI_OS_POWER_MANAGEMENT_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wditypes/ne-wditypes-_wdi_os_power_management_flags) | A bitwise OR of **WDI_OS_POWER_MANAGEMENT_FLAGS** values that defines supported NAPS enablement scenarios. |
+| [**WDI_OS_POWER_MANAGEMENT_FLAGS**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_os_power_management_flags) | A bitwise OR of **WDI_OS_POWER_MANAGEMENT_FLAGS** values that defines supported NAPS enablement scenarios. |
  
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1803 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10, version 1803
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Wditypes.hpp

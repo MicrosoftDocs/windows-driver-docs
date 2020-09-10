@@ -21,7 +21,7 @@ This section provides design guidelines and requirements for a peripheral device
 
  
 
-**Note**  Windows 10 also supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance’s Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](http://www.wi-fi.org).
+**Note**  Windows 10 also supports NFC to Wi-Fi Direct static connection handover through the Wi-Fi alliance’s Wi-Fi P2P Carrier Configuration Record. For more information, see [Wi-Fi Alliance](https://www.wi-fi.org/).
 
  
 
@@ -338,7 +338,7 @@ The Windows Device Pairing Record follows the NDEF specification. It provides ad
 </tr>
 <tr class="even">
 <td align="left">Type</td>
-<td align="left">&#39;application/vnd.ms-windows.devicepairing&#39;</td>
+<td align="left">'application/vnd.ms-windows.devicepairing'</td>
 <td align="left">0x28 bytes</td>
 <td align="left">New type string we define for this scenario.</td>
 </tr>
@@ -466,7 +466,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <td align="left">11</td>
 <td align="left">0x01</td>
 <td align="left">1</td>
-<td align="left">Carrier Flags: CPS=1, &quot;active&quot;</td>
+<td align="left">Carrier Flags: CPS=1, "active"</td>
 </tr>
 <tr class="odd">
 <td align="left">12</td>
@@ -523,7 +523,7 @@ This first table illustrates the format of the Wi-Fi Direct pairing portion of t
 <p>0x66 0x64 0x2E 0x6F</p>
 <p>0x6F 0x62</p></td>
 <td align="left">34</td>
-<td align="left">Record Type Name: &#39;application/vnd.ms-windows.wfd.oob&#39;</td>
+<td align="left">Record Type Name: 'application/vnd.ms-windows.wfd.oob'</td>
 </tr>
 <tr class="odd">
 <td align="left">53</td>
@@ -739,7 +739,7 @@ This second table illustrates the format of the network printer pairing portion 
 <p>0x72 0x4e 0x61 0x6d</p>
 <p>0x65</p></td>
 <td align="left">25</td>
-<td align="left">Printer name: “\printServer\printerName&quot;</td>
+<td align="left">Printer name: “\printServer\printerName"</td>
 </tr>
 </tbody>
 </table>
@@ -852,5 +852,4 @@ Any attempt to tap the device on a system running an operating system that doesn
 
  
 ## Related topics
- [NFC device driver interface (DDI) reference](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
- 
+ [NFC device driver interface (DDI) reference](/windows-hardware/drivers/ddi/index)  

@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates that an unrecoverable error was encountered in a System on a Chip (SoC) subsystem.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## Bug Check 0x14B SOC\_SUBSYSTEM\_FAILURE Parameters
 
@@ -37,7 +39,7 @@ The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates 
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Address of an <strong><a href="https://msdn.microsoft.com/library/windows/hardware/dn376404" data-raw-source="[SOC_SUBSYSTEM_FAILURE_DETAILS](https://msdn.microsoft.com/library/windows/hardware/dn376404)">SOC_SUBSYSTEM_FAILURE_DETAILS</a></strong> structure.</p></td>
+<td align="left"><p>Address of an <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_soc_subsystem_failure_details" data-raw-source="[SOC_SUBSYSTEM_FAILURE_DETAILS](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_soc_subsystem_failure_details)">SOC_SUBSYSTEM_FAILURE_DETAILS</a></strong> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>
@@ -59,7 +61,7 @@ The SOC\_SUBSYSTEM\_FAILURE bug check has a value of 0x0000014B. This indicates 
 Resolution
 ----------
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 ```dbgcmd
 2: kd> !analyze -v
@@ -130,9 +132,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

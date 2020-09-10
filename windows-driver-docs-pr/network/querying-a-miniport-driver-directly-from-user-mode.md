@@ -14,13 +14,7 @@ ms.localizationpriority: medium
 
 
 
-An application can use [**IOCTL\_NDIS\_QUERY\_GLOBAL\_STATS**](https://msdn.microsoft.com/library/windows/hardware/ff548975) to directly query information from a miniport driver's NIC. In this operation, the application can use any query OID that the miniport driver supports.
+An application can use [**IOCTL\_NDIS\_QUERY\_GLOBAL\_STATS**](/previous-versions/windows/hardware/network/ff548975(v=vs.85)) to directly query information from a miniport driver's NIC. In this operation, the application can use any query OID that the miniport driver supports.
 
  
-
- 
-
-
-
-
 

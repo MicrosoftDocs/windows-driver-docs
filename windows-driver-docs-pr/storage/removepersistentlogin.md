@@ -11,15 +11,9 @@ ms.date: 10/17/2018
 
 The **RemovePersistentLogin** method removes a target from the initiator's list of persistent logons.
 
-This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md). For a description of the parameters of the **RemovePersistentLogin** method, see the member descriptions for the [**RemovePersistentLogin\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff564003) and [**RemovePersistentLogin\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff564008) structures.
+This WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md). For a description of the parameters of the **RemovePersistentLogin** method, see the member descriptions for the [**RemovePersistentLogin\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_removepersistentlogin_in) and [**RemovePersistentLogin\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_removepersistentlogin_out) structures.
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class must support **RemovePersistentLogin**.
 
  
-
- 
-
-
-
-
 

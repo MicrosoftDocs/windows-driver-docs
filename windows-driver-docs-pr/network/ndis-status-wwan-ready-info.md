@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_READY\_INFO notification to inform 
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_READY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567916) structure.
+This notification uses the [**NDIS\_WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info) structure.
 
 Remarks
 -------
@@ -47,14 +47,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_READY\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567916)
+[**NDIS\_WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_ready_info)
 
 [OID\_WWAN\_READY\_INFO](oid-wwan-ready-info.md)
 
  
-
- 
-
-
-
 

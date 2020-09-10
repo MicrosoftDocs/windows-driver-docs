@@ -17,7 +17,7 @@ You can run Static Driver Verifier (SDV) in a **Visual Studio Command Prompt** w
 msbuild /t:sdv /p:Inputs="Parameters" ProjectFile /p:Configuration=configuration /p:Platform=platform     
 ```
 
-You must select a Release configuration (for example, **/p:Configuration="Windows 7 Release"**). For the list of supported Release Configurations, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver). The Platform can be **Win32** (for x86) or **x64** (for example, **/p:Platform=Win32**).
+You must select a Release configuration (for example, **/p:Configuration="Windows 7 Release"**). For the list of supported Release Configurations, see [Building a Driver](../develop/building-a-driver.md). The Platform can be **Win32** (for x86) or **x64** (for example, **/p:Platform=Win32**).
 
 **Note**  Be sure to check your computer's power management plan to ensure the computer will not go into a sleep state during the analysis.
 
@@ -84,7 +84,7 @@ A **/clean** command deletes the files that SDV uses to create the Static Driver
 msbuild /t:sdv /p:Inputs="/check:*" mydriver.VcxProj /p:Configuration="Windows 7 Release"/p:Platform=Win32
 ```
 
-<span id="To_run_SDV_using_the_CancelSpinLock_rule_on_the_driver_files_in_the_local_directory_"></span><span id="to_run_sdv_using_the_cancelspinlock_rule_on_the_driver_files_in_the_local_directory_"></span><span id="TO_RUN_SDV_USING_THE_CANCELSPINLOCK_RULE_ON_THE_DRIVER_FILES_IN_THE_LOCAL_DIRECTORY_"></span>To run SDV using the [CancelSpinLock](https://msdn.microsoft.com/library/windows/hardware/ff542478) rule on the driver files in the local directory:  
+<span id="To_run_SDV_using_the_CancelSpinLock_rule_on_the_driver_files_in_the_local_directory_"></span><span id="to_run_sdv_using_the_cancelspinlock_rule_on_the_driver_files_in_the_local_directory_"></span><span id="TO_RUN_SDV_USING_THE_CANCELSPINLOCK_RULE_ON_THE_DRIVER_FILES_IN_THE_LOCAL_DIRECTORY_"></span>To run SDV using the [CancelSpinLock](./wdm-cancelspinlock.md) rule on the driver files in the local directory:  
 ```
 msbuild /t:sdv /p:Inputs="/check:CancelSpinLock" mydriver.VcxProj /p:Configuration="Windows 7 Release" /p:Platform=Win32
 ```
@@ -110,11 +110,4 @@ msbuild /t:sdv /p:Inputs="/view" mydriver.VcxProj /p:Configuration="Windows 7 Re
 [Using Static Driver Verifier to Find Defects in Windows Drivers](using-static-driver-verifier-to-find-defects-in-drivers.md)
 
  
-
- 
-
-
-
-
-
 

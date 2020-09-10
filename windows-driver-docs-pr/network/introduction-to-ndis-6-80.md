@@ -22,7 +22,7 @@ NDIS 6.80 introduces a new feature for OIDs, Synchronous OID requests. Synchrono
 
 ### RSSv2
 
-In NDIS 6.80, [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md) has been upgraded to RSS version 2 (RSSv2). RSSv2 improves on RSSv2 by offering per-VPort spreading. For more info, see [Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80](receive-side-scaling-version-2-rssv2-in-ndis-6-80.md).
+In NDIS 6.80, [Receive Side Scaling (RSS)](./receive-side-scaling-version-2-rssv2-.md) has been upgraded to RSS version 2 (RSSv2). RSSv2 improves on RSSv2 by offering per-VPort spreading. For more info, see [Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80](receive-side-scaling-version-2-rssv2-in-ndis-6-80.md).
 
 RSSv2 is preview only in Windows 10, version 1709.
 
@@ -38,7 +38,7 @@ In addition, an NDIS 6.80 driver must be compliant with the following requiremen
 
 - An NDIS 6.80 driver must report the correct NDIS version when it registers with NDIS.
 
-   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.80. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 80. This requirement applies to miniport, protocol and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.80 driver](#compiling-an-ndis-670-driver)).
+   You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.80. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 80. This requirement applies to miniport, protocol and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.80 driver](#compiling-an-ndis-680-driver)).
 
 ## Compiling an NDIS 6.80 driver
 
@@ -63,22 +63,21 @@ For information on building a driver with the Windows 10, version 1709 release 
 
 The following APIs and data structures are new in NDIS 6.80.
 
-- [MINIPORT_SYNCHRONOUS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/0DDF9CF8-91F6-4D7C-A8E8-FC425BF155CB)
-- [FILTER_SYNCHRONOUS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/AC84B27B-6FBF-429D-A8FA-F3C8F583F738)
-- [FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/E0749F52-CC7C-484D-8350-1986154957C1)
-- [NdisFSynchronousOidRequest](https://msdn.microsoft.com/library/windows/hardware/01B625EB-AB6D-496F-95F2-22845460324A)
-- [NdisSynchronousOidRequest](https://msdn.microsoft.com/library/windows/hardware/BF539DDA-59ED-4010-88BC-3C7D8DC475EF)
+- [MINIPORT_SYNCHRONOUS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/nf-ndis-miniport_synchronous_oid_request)
+- [FILTER_SYNCHRONOUS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/nf-ndis-filter_synchronous_oid_request)
+- [FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE](/windows-hardware/drivers/ddi/ndis/nf-ndis-filter_synchronous_oid_request_complete)
+- [NdisFSynchronousOidRequest](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsynchronousoidrequest)
+- [NdisSynchronousOidRequest](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissynchronousoidrequest)
 - [OID_GEN_RECEIVE_SCALE_PARAMETERS_V2](oid-gen-receive-scale-parameters-v2.md)
 - [OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES](oid-gen-rss-set-indirection-table-entries.md)
-- [NDIS_RECEIVE_SCALE_PARAMETERS_V2](https://msdn.microsoft.com/library/windows/hardware/96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219)
-- [NDIS_RSS_SET_INDIRECTION_ENTRIES](https://msdn.microsoft.com/library/windows/hardware/9AB69EC6-FE78-4242-89C7-D36AA16676BF)
-- [NDIS_RSS_SET_INDIRECTION_ENTRY](https://msdn.microsoft.com/library/windows/hardware/4430E19F-C603-4C52-8FC8-C36197FD2996)
+- [NDIS_RECEIVE_SCALE_PARAMETERS_V2](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters_v2)
+- [NDIS_RSS_SET_INDIRECTION_ENTRIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entries)
+- [NDIS_RSS_SET_INDIRECTION_ENTRY](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_set_indirection_entry)
 
 ### Updated APIs and data structures
 
 The following APIs and data structures were updated in NDIS 6.80.
 
-- [NDIS_MINIPORT_DRIVER_CHARACTERISTICS](https://msdn.microsoft.com/library/windows/hardware/ff565958)
-- [NDIS_FILTER_DRIVER_CHARACTERISTICS](https://msdn.microsoft.com/library/windows/hardware/ff565515)
-- [NDIS_RECEIVE_SCALE_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/ff567220)
-
+- [NDIS_MINIPORT_DRIVER_CHARACTERISTICS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_driver_characteristics)
+- [NDIS_FILTER_DRIVER_CHARACTERISTICS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_driver_characteristics)
+- [NDIS_RECEIVE_SCALE_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities)

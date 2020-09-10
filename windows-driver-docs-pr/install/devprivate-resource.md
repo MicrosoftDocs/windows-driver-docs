@@ -20,13 +20,7 @@ ms.date: 10/17/2018
 
  
 
-The DEVPRIVATE_RESOURCE structure is used for specifying either a resource list or a resource requirements list that describes private device-specific resource usage for a device instance. For more information about resource lists and resource requirements list, see [Hardware Resources](https://msdn.microsoft.com/library/windows/hardware/ff547012).
+The DEVPRIVATE_RESOURCE structure is used for specifying either a resource list or a resource requirements list that describes private device-specific resource usage for a device instance. For more information about resource lists and resource requirements list, see [Hardware Resources](../kernel/hardware-resources.md).
 
  
-
- 
-
-
-
-
 

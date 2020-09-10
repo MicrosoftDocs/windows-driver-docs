@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_P2P_WPS_ENABLED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_P2P\_WPS\_ENABLED
@@ -24,7 +25,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 
 | TLV                                                                 | Multiple TLV instances allowed | Optional | Description                                 |
 |---------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
-| [**WDI\_TLV\_P2P\_WPS\_ENABLED**](https://msdn.microsoft.com/library/windows/hardware/dn898018) |                                |          | Specifies whether to enable or disable WPS. |
+| [**WDI\_TLV\_P2P\_WPS\_ENABLED**](./wdi-tlv-p2p-wps-enabled.md) |                                |          | Specifies whether to enable or disable WPS. |
 
  
 
@@ -32,6 +33,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 
@@ -57,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

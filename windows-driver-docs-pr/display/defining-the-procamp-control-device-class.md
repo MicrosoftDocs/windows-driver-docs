@@ -21,7 +21,7 @@ Use the following example code to define the ProcAmp control device class:
 struct DXVA_ProcAmpControlDeviceClass : public DXVA_DeviceBaseClass
 {
     DXVA_VideoDesc  m_VideoDesc;
-    // Uses the base class&#39;s constructor.
+    // Uses the base class's constructor.
     DXVA_ProcAmpControlDeviceClass(const GUID& guid, DXVA_DeviceType Type) :
         DXVA_DeviceBaseClass(guid, Type)
     {}

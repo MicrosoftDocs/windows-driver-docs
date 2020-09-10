@@ -20,9 +20,9 @@ ms.localizationpriority: medium
 
 The FSCTL\_DELETE\_REPARSE\_POINT control code deletes a reparse point from the specified file or directory. Using FSCTL\_DELETE\_REPARSE\_POINT does not delete the file or directory.
 
-To perform this operation, call [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
-Minifilters should use [**FltUntagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544608) instead of FSCTL\_DELETE\_REPARSE\_POINT to delete a reparse point.
+Minifilters should use [**FltUntagFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltuntagfile) instead of FSCTL\_DELETE\_REPARSE\_POINT to delete a reparse point.
 
 For more information about reparse points and the FSCTL\_DELETE\_REPARSE\_POINT control code, see the Microsoft Windows SDK documentation.
 
@@ -35,10 +35,10 @@ File handle for the file or directory from which the reparse point is to be dele
 Control code for the operation. Use FSCTL\_DELETE\_REPARSE\_POINT for this operation.
 
 <a href="" id="inputbuffer"></a>*InputBuffer*  
-Pointer to a [**REPARSE\_GUID\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552014) or [**REPARSE\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552012) structure. The tag specified in the **ReparseTag** member of this structure must match the tag of the reparse point to be deleted, and the **ReparseDataLength** member must be zero. In addition, if the reparse point is a third-party (non-Microsoft) reparse point, the GUID specified in the **ReparseGuid** member of the REPARSE\_GUID\_DATA\_BUFFER structure must match the GUID of the reparse point to be deleted.
+Pointer to a [**REPARSE\_GUID\_DATA\_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE\_DATA\_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer) structure. The tag specified in the **ReparseTag** member of this structure must match the tag of the reparse point to be deleted, and the **ReparseDataLength** member must be zero. In addition, if the reparse point is a third-party (non-Microsoft) reparse point, the GUID specified in the **ReparseGuid** member of the REPARSE\_GUID\_DATA\_BUFFER structure must match the GUID of the reparse point to be deleted.
 
 <a href="" id="inputbufferlength"></a>*InputBufferLength*  
-Size, in bytes, of the buffer pointed to by the **InputBuffer** parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be exactly **sizeof**(REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE). For a REPARSE\_DATA\_BUFFER structure, this value must be exactly **sizeof**(REPARSE\_DATA\_BUFFER\_HEADER\_SIZE).
+Size, in bytes, of the buffer pointed to by the **InputBuffer** parameter. For a REPARSE\_GUID\_DATA\_BUFFER structure, this value must be exactly REPARSE\_GUID\_DATA\_BUFFER\_HEADER\_SIZE. For a REPARSE\_DATA\_BUFFER structure, this value must be exactly REPARSE\_DATA\_BUFFER\_HEADER\_SIZE.
 
 <a href="" id="outputbuffer"></a>*OutputBuffer*  
 Not used with this operation; set to **NULL**.
@@ -49,7 +49,7 @@ Not used with this operation; set to zero.
 Status block
 ------------
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) returns STATUS\_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
 <a href="" id="status-io-reparse-data-invalid"></a>STATUS\_IO\_REPARSE\_DATA\_INVALID  
 One of the specified parameter values was invalid. This is an error code.
@@ -84,9 +84,9 @@ Requirements
 
 [**FLT\_PARAMETERS for IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](flt-parameters-for-irp-mj-file-system-control.md)
 
-[**FltTagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544589)
+[**FltTagFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flttagfile)
 
-[**FltUntagFile**](https://msdn.microsoft.com/library/windows/hardware/ff544608)
+[**FltUntagFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltuntagfile)
 
 [**FSCTL\_GET\_REPARSE\_POINT**](fsctl-get-reparse-point.md)
 
@@ -94,22 +94,15 @@ Requirements
 
 [**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](irp-mj-file-system-control.md)
 
-[**IsReparseTagMicrosoft**](https://msdn.microsoft.com/library/windows/hardware/ff549452)
+[**IsReparseTagMicrosoft**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-isreparsetagmicrosoft)
 
-[**IsReparseTagNameSurrogate**](https://msdn.microsoft.com/library/windows/hardware/ff549462)
+[**IsReparseTagNameSurrogate**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-isreparsetagnamesurrogate)
 
-[**REPARSE\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552012)
+[**REPARSE\_DATA\_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer)
 
-[**REPARSE\_GUID\_DATA\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff552014)
+[**REPARSE\_GUID\_DATA\_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
-
- 
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
  
-
-
-
-
-
 

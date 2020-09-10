@@ -1,5 +1,5 @@
 ---
-title: IRP_MJ_READ
+title: IRP_MJ_READ (IFS)
 description: IRP_MJ_READ
 ms.assetid: f2f909ff-4af6-433e-9f3c-9692b5ab7171
 keywords: ["IRP_MJ_READ Installable File System Drivers"]
@@ -13,13 +13,13 @@ ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
 
-# IRP\_MJ\_READ
+# IRP\_MJ\_READ (IFS)
 
 
 ## When Sent
 
 
-The IRP\_MJ\_READ request is sent by the I/O Manager or by a file system driver. This request can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **ReadFile**, or when a kernel-mode component has called [**ZwReadFile**](https://msdn.microsoft.com/library/windows/hardware/ff567072).
+The IRP\_MJ\_READ request is sent by the I/O Manager or by a file system driver. This request can be sent, for example, when a user-mode application has called a Microsoft Win32 function such as **ReadFile**, or when a kernel-mode component has called [**ZwReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile).
 
 ## Operation: File System Drivers
 
@@ -54,7 +54,7 @@ The filter driver should perform any needed processing and, depending on the nat
 ## Parameters
 
 
-A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174) with the given IRP to get a pointer to its own [**stack location**](https://msdn.microsoft.com/library/windows/hardware/ff550659) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information contained in the following members of the IRP and the IRP stack location in processing a read request:
+A file system or filter driver calls [**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation) with the given IRP to get a pointer to its own [**stack location**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in the IRP, shown in the following list as *IrpSp*. (The IRP is shown as *Irp*.) The driver can use the information contained in the following members of the IRP and the IRP stack location in processing a read request:
 
 <a href="" id="deviceobject"></a>*DeviceObject*  
 
@@ -66,7 +66,7 @@ Pointer to a system-supplied buffer to be used as an intermediate system buffer,
 
 <a href="" id="irp--iostatus"></a>*Irp-&gt;IoStatus*  
 
-Pointer to an [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure that receives the final completion status and information about the requested operation. For more information, see the description of the *IoStatusBlock* parameter to [**ZwReadFile**](https://msdn.microsoft.com/library/windows/hardware/ff567072).
+Pointer to an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure that receives the final completion status and information about the requested operation. For more information, see the description of the *IoStatusBlock* parameter to [**ZwReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile).
 
 <a href="" id="irp--mdladdress"></a>*Irp-&gt;MdlAddress*  
 
@@ -80,7 +80,7 @@ Pointer to a caller-supplied output buffer that receives the data that is read f
 
 Pointer to the file object that is associated with *DeviceObject*. If the FO\_SYNCHRONOUS\_IO flag is set in *IrpSp-&gt;FileObject-&gt;Flags*, the file object was opened for synchronous I/O.
 
-The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_READ and should not be used.
+The *IrpSp-&gt;FileObject* parameter contains a pointer to the **RelatedFileObject** field, which is also a FILE\_OBJECT structure. The **RelatedFileObject** field of the FILE\_OBJECT structure is not valid during the processing of IRP\_MJ\_READ and should not be used.
 
 <a href="" id="irpsp--majorfunction"></a>*IrpSp-&gt;MajorFunction*  
 
@@ -116,7 +116,7 @@ Key value associated with a byte-range lock on the target file.
 
 <a href="" id="irpsp--parameters-read-length"></a>*IrpSp-&gt;Parameters.Read.Length*
 
-Length in bytes of the data to be read. If the read operation is successful, the number of bytes read is returned in the **Information** member of the [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure pointed to by *Irp-&gt;IoStatus*.
+Length in bytes of the data to be read. If the read operation is successful, the number of bytes read is returned in the **Information** member of the [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure pointed to by *Irp-&gt;IoStatus*.
 
 Remarks
 -------
@@ -126,30 +126,23 @@ File systems round write and read operations at end of file up to a multiple of 
 ## See also
 
 
-[**CcMdlRead**](https://msdn.microsoft.com/library/windows/hardware/ff539159)
+[**CcMdlRead**](/previous-versions/ff539159(v=vs.85))
 
-[**CcMdlReadComplete**](https://msdn.microsoft.com/library/windows/hardware/ff539163)
+[**CcMdlReadComplete**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlreadcomplete)
 
-[**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)
+[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
-[**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671)
+[**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block)
 
-[**IoGetCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff549174)
+[**IoGetCurrentIrpStackLocation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentirpstacklocation)
 
-[**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
-[**IRP\_MJ\_READ (WDK Kernel Reference)**](https://msdn.microsoft.com/library/windows/hardware/ff550794)
+[**IRP\_MJ\_READ (WDK Kernel Reference)**](../kernel/irp-mj-read.md)
 
 [**IRP\_MJ\_WRITE**](irp-mj-write.md)
 
-[**ZwReadFile**](https://msdn.microsoft.com/library/windows/hardware/ff567072)
+[**ZwReadFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntreadfile)
 
  
-
- 
-
-
-
-
-
 

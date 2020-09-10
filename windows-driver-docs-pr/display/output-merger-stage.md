@@ -13,43 +13,37 @@ The final step in the logical pipeline is visibility determination, through sten
 
 The Direct3D runtime calls the following driver functions to create, set up, clear, and destroy the output:
 
-[**CalcPrivateBlendStateSize**](https://msdn.microsoft.com/library/windows/hardware/ff538274)
+[**CalcPrivateBlendStateSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateblendstatesize)
 
-[**CalcPrivateDepthStencilStateSize**](https://msdn.microsoft.com/library/windows/hardware/ff538282)
+[**CalcPrivateDepthStencilStateSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivatedepthstencilstatesize)
 
-[**CalcPrivateDepthStencilViewSize**](https://msdn.microsoft.com/library/windows/hardware/ff538284)
+[**CalcPrivateDepthStencilViewSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivatedepthstencilviewsize)
 
-[**ClearDepthStencilView**](https://msdn.microsoft.com/library/windows/hardware/ff539408)
+[**ClearDepthStencilView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_cleardepthstencilview)
 
-[**ClearRenderTargetView**](https://msdn.microsoft.com/library/windows/hardware/ff539409)
+[**ClearRenderTargetView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_clearrendertargetview)
 
-[**CreateBlendState**](https://msdn.microsoft.com/library/windows/hardware/ff540594)
+[**CreateBlendState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createblendstate)
 
-[**CreateDepthStencilState**](https://msdn.microsoft.com/library/windows/hardware/ff540627)
+[**CreateDepthStencilState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdepthstencilstate)
 
-[**CreateDepthStencilView**](https://msdn.microsoft.com/library/windows/hardware/ff540629)
+[**CreateDepthStencilView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdepthstencilview)
 
-[**DestroyBlendState**](https://msdn.microsoft.com/library/windows/hardware/ff552745)
+[**DestroyBlendState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyblendstate)
 
-[**DestroyDepthStencilState**](https://msdn.microsoft.com/library/windows/hardware/ff552759)
+[**DestroyDepthStencilState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroydepthstencilstate)
 
-[**DestroyDepthStencilView**](https://msdn.microsoft.com/library/windows/hardware/ff552762)
+[**DestroyDepthStencilView**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroydepthstencilview)
 
-[**SetBlendState**](https://msdn.microsoft.com/library/windows/hardware/ff569527)
+[**SetBlendState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setblendstate)
 
-[**SetDepthStencilState**](https://msdn.microsoft.com/library/windows/hardware/ff569532)
+[**SetDepthStencilState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setdepthstencilstate)
 
-[**SetPredication**](https://msdn.microsoft.com/library/windows/hardware/ff569547)
+[**SetPredication**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setpredication)
 
-[**SetRenderTargets**](https://msdn.microsoft.com/library/windows/hardware/ff569553)
+[**SetRenderTargets**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setrendertargets)
 
-[**SetTextFilterSize**](https://msdn.microsoft.com/library/windows/hardware/ff569663)
-
- 
+[**SetTextFilterSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_settextfiltersize)
 
  
-
-
-
-
 

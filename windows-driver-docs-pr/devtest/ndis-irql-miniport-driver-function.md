@@ -46,9 +46,7 @@ This rule verifies functions for NDIS miniport driver logging, NDIS ports, and N
 **NdisMUpdateSharedMemory**
 **NdisMWriteLogData**
 
-|              |      |
-|--------------|------|
-| Driver model | NDIS |
+**Driver model: NDIS**
 
 How to test
 -----------
@@ -64,14 +62,14 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff552808" data-raw-source="[Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)">Static Driver Verifier</a> and specify the <strong>Irql_Miniport_Driver_Function</strong> rule.</p>
+<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier" data-raw-source="[Static Driver Verifier](./static-driver-verifier.md)">Static Driver Verifier</a> and specify the <strong>Irql_Miniport_Driver_Function</strong> rule.</p>
 Use the following steps to run an analysis of your code:
 <ol>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](./using-static-driver-verifier-to-find-defects-in-drivers.md#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](./using-static-driver-verifier-to-find-defects-in-drivers.md#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](./using-static-driver-verifier-to-find-defects-in-drivers.md#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
 </ol>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh454281" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -79,35 +77,27 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**NdisMCreateLog**](https://msdn.microsoft.com/library/windows/hardware/ff563572)
-[**NdisMDeregisterDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff563574)
-[**NdisMDeregisterIoPortRange**](https://msdn.microsoft.com/library/windows/hardware/ff563577)
-[**NdisMDeregisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563578)
-[**NdisMFlushLog**](https://msdn.microsoft.com/library/windows/hardware/ff563584)
-[**NdisMFreePort**](https://msdn.microsoft.com/library/windows/hardware/ff563588)
-[**NdisMFreeSharedMemory**](https://msdn.microsoft.com/library/windows/hardware/ff563589)
-[**NdisMGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff563592)
-[**NdisMGetDmaAlignment**](https://msdn.microsoft.com/library/windows/hardware/ff563593)
-[**NdisMMapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/ff563613)
-[**NdisMPauseComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563628)
-[**NdisMQueryAdapterInstanceName**](https://msdn.microsoft.com/library/windows/hardware/ff563630)
-[**NdisMReadDmaCounter**](https://msdn.microsoft.com/library/windows/hardware/ff563641)
-[**NdisMRegisterDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff563646)
-[**NdisMRegisterIoPortRange**](https://msdn.microsoft.com/library/windows/hardware/ff563651)
-[**NdisMRegisterMiniportDriver**](https://msdn.microsoft.com/library/windows/hardware/ff563654)
-[**NdisMRemoveMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff563661)
-[**NdisMResetComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563663)
-[**NdisMRestartComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563665)
-[**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672)
-[**NdisMSetupDmaTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff563675)
-[**NdisMSleep**](https://msdn.microsoft.com/library/windows/hardware/ff563677)
-[**NdisMUnmapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/ff563691)
-[**NdisMWriteLogData**](https://msdn.microsoft.com/library/windows/hardware/ff563695)
-
-
-
-
-
-
-
-
+[**NdisMCreateLog**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcreatelog)
+[**NdisMDeregisterDmaChannel**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterdmachannel)
+[**NdisMDeregisterIoPortRange**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterioportrange)
+[**NdisMDeregisterMiniportDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismderegisterminiportdriver)
+[**NdisMFlushLog**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismflushlog)
+[**NdisMFreePort**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreeport)
+[**NdisMFreeSharedMemory**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismfreesharedmemory)
+[**NdisMGetDeviceProperty**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetdeviceproperty)
+[**NdisMGetDmaAlignment**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetdmaalignment)
+[**NdisMMapIoSpace**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismmapiospace)
+[**NdisMPauseComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismpausecomplete)
+[**NdisMQueryAdapterInstanceName**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismqueryadapterinstancename)
+[**NdisMReadDmaCounter**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismreaddmacounter)
+[**NdisMRegisterDmaChannel**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterdmachannel)
+[**NdisMRegisterIoPortRange**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange)
+[**NdisMRegisterMiniportDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver)
+[**NdisMRemoveMiniport**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismremoveminiport)
+[**NdisMResetComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismresetcomplete)
+[**NdisMRestartComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismrestartcomplete)
+[**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
+[**NdisMSetupDmaTransfer**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetupdmatransfer)
+[**NdisMSleep**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsleep)
+[**NdisMUnmapIoSpace**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismunmapiospace)
+[**NdisMWriteLogData**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismwritelogdata)

@@ -140,7 +140,7 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="28147-improper-use-of-default-pool-tag.md" data-raw-source="[C28147](28147-improper-use-of-default-pool-tag.md)">C28147</a></p></td>
-<td align="left"><p>warning C28147: The use of a default pool tag (&#39; kdD&#39; or &#39; mdW&#39;) for calls to this function defeats the purpose of pool tagging</p></td>
+<td align="left"><p>warning C28147: The use of a default pool tag (' kdD' or ' mdW') for calls to this function defeats the purpose of pool tagging</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="28150-function-causes-irq-level-to-be-set-above-max.md" data-raw-source="[C28150](28150-function-causes-irq-level-to-be-set-above-max.md)">C28150</a></p></td>
@@ -252,7 +252,7 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="28615-must-call-resetstkoflw-in-except-block.md" data-raw-source="[C28615](28615-must-call-resetstkoflw-in-except-block.md)">C28615</a></p></td>
-<td align="left"><p>warning C28615: Must call _resetstkoflw in the __except() block when calling _alloca in the __try block. Don&#39;t call _resetstkoflw from inside a catch() block</p></td>
+<td align="left"><p>warning C28615: Must call _resetstkoflw in the __except() block when calling _alloca in the __try block. Don't call _resetstkoflw from inside a catch() block</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="28616-multithreaded-av-condition.md" data-raw-source="[C28616](28616-multithreaded-av-condition.md)">C28616</a></p></td>
@@ -381,7 +381,7 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="28730-possible-null-character-assignment.md" data-raw-source="[C28730](28730-possible-null-character-assignment.md)">C28730</a></p></td>
-<td align="left"><p>warning C28730: Possible assignment of &#39;\0&#39; directly to a pointer.</p></td>
+<td align="left"><p>warning C28730: Possible assignment of '\0' directly to a pointer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="28735-banned-crimson-api-usage.md" data-raw-source="[C28735](28735-banned-crimson-api-usage.md)">C28735</a></p></td>
@@ -433,11 +433,11 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 <tr class="even">
 <td align="left"><p><a href="30032-forcing-request-of-executable-memory.md" data-raw-source="[C30032](30032-forcing-request-of-executable-memory.md)">C30032</a></p></td>
-<td align="left"><p>warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920401" data-raw-source="[POOL_NX_OPTOUT](https://msdn.microsoft.com/library/windows/hardware/hh920401)">POOL_NX_OPTOUT</a> directive</p></td>
+<td align="left"><p>warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/selective-opt-out-pool-nx-optout" data-raw-source="[POOL_NX_OPTOUT](../kernel/selective-opt-out-pool-nx-optout.md)">POOL_NX_OPTOUT</a> directive</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="30033-executable-allocation-detected-with-pool-nx-optin.md" data-raw-source="[C30033](30033-executable-allocation-detected-with-pool-nx-optin.md)">C30033</a></p></td>
-<td align="left"><p>warning C30033: Executable allocation was detected in a driver compiled with <a href="https://msdn.microsoft.com/library/windows/hardware/hh920402" data-raw-source="[POOL_NX_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402)">POOL_NX_OPTIN</a>. This driver has been determined to be loaded at run time by another driver. Please verify that the loading driver calls <strong>ExInitializeDriverRuntime(<em>DrvRtPoolNxOptIn</em>)</strong> in its DriverEntry.</p></td>
+<td align="left"><p>warning C30033: Executable allocation was detected in a driver compiled with <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/single-binary-opt-in-pool-nx-optin" data-raw-source="[POOL_NX_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md)">POOL_NX_OPTIN</a>. This driver has been determined to be loaded at run time by another driver. Please verify that the loading driver calls <strong>ExInitializeDriverRuntime(<em>DrvRtPoolNxOptIn</em>)</strong> in its DriverEntry.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="30034-passing-flag-value-to-allocating-function.md" data-raw-source="[C30034](30034-passing-flag-value-to-allocating-function.md)">C30034</a></p></td>
@@ -449,8 +449,6 @@ Code Analysis for Drivers reports the following types of warnings:
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

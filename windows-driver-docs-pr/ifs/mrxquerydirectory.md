@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxQueryDirectory routine
 
 
-The *MRxQueryDirectory* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to request that a network mini-redirector query information on a file directory.
+The *MRxQueryDirectory* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query information on a file directory.
 
 Syntax
 ------
@@ -111,7 +111,7 @@ The **QueryDirectory.InitialQuery** member is set to nonzero if **UnicodeQueryTe
 
 For a wild card query ("\*.\*", for example), RDBSS will set the **UnicodeQueryTemplate.Buffer** member of the associated FOBX to the wild card query passed.
 
-If the **PostRequest** member of the RX\_CONTEXT structure is **TRUE** on return from *MRxQueryDirectory*, then RDBSS will call [**RxFsdPostRequest**](https://msdn.microsoft.com/library/windows/hardware/ff554472) passing the RX\_CONTEXT structure to a worker queue for processing by the file system process (FSP).
+If the **PostRequest** member of the RX\_CONTEXT structure is **TRUE** on return from *MRxQueryDirectory*, then RDBSS will call [**RxFsdPostRequest**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest) passing the RX\_CONTEXT structure to a worker queue for processing by the file system process (FSP).
 
 Requirements
 ------------
@@ -136,7 +136,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://msdn.microsoft.com/library/windows/hardware/ff550696)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryEaInfo**](mrxqueryeainfo.md)
 
@@ -160,14 +160,7 @@ Requirements
 
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
-[**RxFsdPostRequest**](https://msdn.microsoft.com/library/windows/hardware/ff554472)
+[**RxFsdPostRequest**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest)
 
  
-
- 
-
-
-
-
-
 

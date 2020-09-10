@@ -33,7 +33,7 @@ When T1 is rescheduled, it will reference **m\_cref** on line 9. Thus it will ac
   5         delete this;
   6         return NULL;
   7     }
-  8     /* this.m_cRef isn&#39;t thread safe */
+  8     /* this.m_cRef isn't thread safe */
   9     return m_cRef;
  10 }
 ```

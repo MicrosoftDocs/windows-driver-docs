@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 ## <span id="interrupt_sync_objects"></span><span id="INTERRUPT_SYNC_OBJECTS"></span>
 
 
-The PortCls system driver implements the [IInterruptSync](https://msdn.microsoft.com/library/windows/hardware/ff536590) interface for the benefit of miniport drivers. **IInterruptSync** represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-interrupt routines.
+The PortCls system driver implements the [IInterruptSync](/windows-hardware/drivers/ddi/portcls/nn-portcls-iinterruptsync) interface for the benefit of miniport drivers. **IInterruptSync** represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-interrupt routines.
 
 Interrupt sync objects provide two key capabilities:
 
@@ -30,7 +30,7 @@ Interrupt sync objects provide two key capabilities:
 
 An interrupt sync object is flexible in dealing with multiple ISRs. The ISRs reside in a linked list that the sync object traverses at interrupt time. When a miniport driver registers an ISR with a sync object, it specifies whether the ISR should be added to the beginning or end of this list.
 
-A miniport driver calls the [**PcNewInterruptSync**](https://msdn.microsoft.com/library/windows/hardware/ff537713) function to create an interrupt sync object. During this call, the driver specifies the manner in which the object is to traverse its list of ISRs at interrupt time. The call supports the three options that are specified by the INTERRUPTSYNCMODE enumeration constants in the following table.
+A miniport driver calls the [**PcNewInterruptSync**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewinterruptsync) function to create an interrupt sync object. During this call, the driver specifies the manner in which the object is to traverse its list of ISRs at interrupt time. The call supports the three options that are specified by the INTERRUPTSYNCMODE enumeration constants in the following table.
 
 <table>
 <colgroup>
@@ -71,20 +71,15 @@ In any of these modes, the sync object will acknowledge the interrupt to the ope
 
 The **IInterruptSync** interface supports the following methods:
 
-[**IInterruptSync::CallSynchronizedRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff536592)
+[**IInterruptSync::CallSynchronizedRoutine**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iinterruptsync-callsynchronizedroutine)
 
-[**IInterruptSync::Connect**](https://msdn.microsoft.com/library/windows/hardware/ff536594)
+[**IInterruptSync::Connect**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iinterruptsync-connect)
 
-[**IInterruptSync::Disconnect**](https://msdn.microsoft.com/library/windows/hardware/ff536597)
+[**IInterruptSync::Disconnect**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iinterruptsync-disconnect)
 
-[**IInterruptSync::GetKInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff536599)
+[**IInterruptSync::GetKInterrupt**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iinterruptsync-getkinterrupt)
 
-[**IInterruptSync::RegisterServiceRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff536600)
-
- 
+[**IInterruptSync::RegisterServiceRoutine**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iinterruptsync-registerserviceroutine)
 
  
-
-
-
 

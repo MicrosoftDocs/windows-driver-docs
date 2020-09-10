@@ -24,15 +24,9 @@ class MS_SM_HbaApiVersion
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SM\_HbaApiVersion**](https://msdn.microsoft.com/library/windows/hardware/ff563211)
+[**MS\_SM\_HbaApiVersion**](/previous-versions/windows/hardware/drivers/ff563211(v=vs.85))
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

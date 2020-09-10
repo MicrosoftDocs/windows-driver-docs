@@ -43,14 +43,14 @@ Similar to XML, DML tags are given as a starting &lt;tagname \[args\]&gt; and a 
 
 **Special Characters**
 
-DML content roughly follows the XML/HTML rules for special characters. The characters &, &lt;, &gt; and “ are special and cannot be used in plain text. The equivalent escaped versions are &, &lt;, &gt; and &quot;. For example this text:
+DML content roughly follows the XML/HTML rules for special characters. The characters &, &lt;, &gt; and “ are special and cannot be used in plain text. The equivalent escaped versions are &, &lt;, &gt; and ". For example this text:
 
 "Alice & Bob think 3 &lt; 4"
 
 would be converted to the following DML.
 
 ```text
-&quot;Alice & Bob think 3 &lt 4&quot;
+"Alice & Bob think 3 &lt 4"
 ```
 
 **C programming language formatting characters**
@@ -236,49 +236,49 @@ Request foreground and background colors for the text. The colors are given as n
 <td align="left"><p>wbg - Windows background</p>
 <p>wfg - Windows foreground</p></td>
 <td align="left">Default window background and foreground colors. Default to system colors for window and window text.
-<p>&lt;col fg=&quot;wfg&quot; bg=&quot;wbg&quot;&gt; This is standard foreground / background text &lt;/col&gt;</p></td>
+<p>&lt;col fg="wfg" bg="wbg"&gt; This is standard foreground / background text &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>clbg - Current line foreground</p>
 <p>clfg - Current line background</p></td>
 <td align="left">Current line background and foreground colors. Default to system colors for highlight and highlight text.
-<p>&lt;col fg=&quot;clfg&quot; bg=&quot;clbg&quot;&gt; Test Text - Current Line&lt;/col&gt;</p></td>
+<p>&lt;col fg="clfg" bg="clbg"&gt; Test Text - Current Line&lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>empbg - Emphasized background</p>
 <p>emphfg - Emphasized foreground</p></td>
 <td align="left">Emphasized text. Defaults to light blue.
-<p>&lt;col fg=&quot;empfg&quot; bg=&quot;empbg&quot;&gt; This is emphasis foreground / background text &lt;/col&gt;</p></td>
+<p>&lt;col fg="empfg" bg="empbg"&gt; This is emphasis foreground / background text &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>subbg - Subdued background</p>
 <p>subfg- Subdued foreground</p></td>
 <td align="left">Subdued text. Default to system color for inactive caption text and inactive captions.
-<p>&lt;col fg=&quot;subfg&quot; bg=&quot;subbg&quot;&gt; This is subdued foreground / background text &lt;/col&gt;</p></td>
+<p>&lt;col fg="subfg" bg="subbg"&gt; This is subdued foreground / background text &lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>normbg - Normal background</p>
 <p>normfg - Normal foreground</p></td>
 <td align="left">Normal
-<p>&lt;col fg=&quot;normfg&quot; bg=&quot;normbg&quot;&gt; Test Text - Normal (normfg / normbg) &lt;/col&gt;</p></td>
+<p>&lt;col fg="normfg" bg="normbg"&gt; Test Text - Normal (normfg / normbg) &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>warnbg - Warning background</p>
 <p>warnfg - Warning foreground</p></td>
 <td align="left">Warning
-<p>&lt;col fg=&quot;warnfg&quot; bg=&quot;warnbg&quot;&gt; Test Text - Warning (warnfg / warnbg) &lt;/col&gt;</p></td>
+<p>&lt;col fg="warnfg" bg="warnbg"&gt; Test Text - Warning (warnfg / warnbg) &lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>errbg - Error background</p>
 <p>errfg - Error foreground</p></td>
 <td align="left">Error
-<p>&lt;col fg=&quot;errfg&quot; bg=&quot;errbg&quot;&gt; Test Text - Error (errfg / errbg) &lt;/col&gt;</p></td>
+<p>&lt;col fg="errfg" bg="errbg"&gt; Test Text - Error (errfg / errbg) &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>verbbg - Verbose background</p>
 <p>verbfg - Verbose foreground</p></td>
 <td align="left">Verbose
-<p>&lt;col fg=&quot;verbfg&quot; bg=&quot;verbbg&quot;&gt; Test Text - Verbose (verbfg / verbbg) &lt;/col&gt;</p></td>
+<p>&lt;col fg="verbfg" bg="verbbg"&gt; Test Text - Verbose (verbfg / verbbg) &lt;/col&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -296,48 +296,48 @@ Request foreground and background colors for the text. The colors are given as n
 <tr class="odd">
 <td align="left"><p>srcnum - Source numeric constant</p></td>
 <td align="left">Source element colors.
-<p>&lt;col fg=&quot;srcnum&quot; bg=&quot;wbg&quot;&gt; Test Text - srcnum &lt;/col&gt;</p></td>
+<p>&lt;col fg="srcnum" bg="wbg"&gt; Test Text - srcnum &lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>srcchar - Source character constant</p></td>
-<td align="left"><p>&lt;col fg=&quot;srcchar&quot; bg=&quot;wbg&quot;&gt; Test Text - srcchar &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srcchar" bg="wbg"&gt; Test Text - srcchar &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>srcstr - Source string constant</p></td>
-<td align="left"><p>&lt;col fg=&quot;srcstr&quot; bg=&quot;wbg&quot;&gt; Test Text - srcstr &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srcstr" bg="wbg"&gt; Test Text - srcstr &lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>srcid -Source identifier</p></td>
-<td align="left"><p>&lt;col fg=&quot;srcid &quot; bg=&quot;wbg&quot;&gt; Test Text - srcid &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srcid " bg="wbg"&gt; Test Text - srcid &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>srckw- Keyword</p></td>
-<td align="left"><p>&lt;col fg=&quot;srckw&quot; bg=&quot;wbg&quot;&gt; Test Text - srckw &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srckw" bg="wbg"&gt; Test Text - srckw &lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>srcpair - Source brace or matching symbol pair</p></td>
-<td align="left"><p>&lt;col fg=&quot;srcpair&quot; bg=&quot;empbbg&quot;&gt; Test Text - srcpair &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srcpair" bg="empbbg"&gt; Test Text - srcpair &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>srccmnt - Source comment</p></td>
-<td align="left"><p>&lt;col fg=&quot;srccmnt&quot; bg=&quot;wbg&quot;&gt; Test Text - srccmnt &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srccmnt" bg="wbg"&gt; Test Text - srccmnt &lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>srcdrct - Source directive</p></td>
-<td align="left"><p>&lt;col fg=&quot;srcdrct&quot; bg=&quot;wbg&quot;&gt; Test Text - srcdrct &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srcdrct" bg="wbg"&gt; Test Text - srcdrct &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>srcspid - Source special identifier</p></td>
-<td align="left"><p>&lt;col fg=&quot;srcspid&quot; bg=&quot;wbg&quot;&gt; Test Text - srcspid &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srcspid" bg="wbg"&gt; Test Text - srcspid &lt;/col&gt;</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>srcannot - Source annotation</p></td>
-<td align="left"><p>&lt;col fg=&quot;srcannot&quot; bg=&quot;wbg&quot;&gt; Test Text - srcannot &lt;/col&gt;</p></td>
+<td align="left"><p>&lt;col fg="srcannot" bg="wbg"&gt; Test Text - srcannot &lt;/col&gt;</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>changed - Changed data</p></td>
 <td align="left">Used for data that has changed since a previous stop point, such as changed registers in WinDbg. Defaults to red.
-<p>&lt;col fg=&quot;changed&quot; bg=&quot;wbg&quot;&gt; Test Text - Changed&lt;/col&gt;</p></td>
+<p>&lt;col fg="changed" bg="wbg"&gt; Test Text - Changed&lt;/col&gt;</p></td>
 </tr>
 </tbody>
 </table>
@@ -483,10 +483,10 @@ The dbgeng already has a set of text handling input methods and output interface
 
 The output control flag DEBUG\_OUTCTL\_DML indicates that the text generated by a dbgeng method should be handled as DML content. If this flag is not given the text is treated as plain text context. DEBUG\_OUTCTL\_DML can be used with the following methods.
 
--   [**IDebugControl4::ControlledOutput**](https://msdn.microsoft.com/library/windows/hardware/ff539248)
--   [**IDebugControl4::ControlledOutputVaList**](https://msdn.microsoft.com/library/windows/hardware/ff539252)
--   [**IDebugControl4::ControlledOutputWide**](https://msdn.microsoft.com/library/windows/hardware/ff539266)
--   [**IDebugControl4::ControlledOutputVaListWide**](https://msdn.microsoft.com/library/windows/hardware/ff539259)
+-   [**IDebugControl4::ControlledOutput**](/previous-versions/ff539248(v=vs.85))
+-   [**IDebugControl4::ControlledOutputVaList**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-controlledoutputvalist)
+-   [**IDebugControl4::ControlledOutputWide**](/previous-versions/ff539266(v=vs.85))
+-   [**IDebugControl4::ControlledOutputVaListWide**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-controlledoutputvalistwide)
 
 Text given must follow the DML rules for valid characters.
 
@@ -494,15 +494,20 @@ All output routines have been enhanced to allow a new format specifier %\[h|w\]Y
 
 The following table summarizes the use of the %Y format specifier.
 
-|        |                                                                                                                                                                                                                                    |
-|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| %Y{t}  | Quoted string. Will convert text to DML if the output format (first arg) is DML.                                                                                                                                                   |
-| %Y{T}  | Quoted string. Will always convert text to DML regardless of the output format.                                                                                                                                                    |
-| %Y{s}  | Unquoted string. Will convert text to DML if the output format (first arg) is DML.                                                                                                                                                 |
-| %Y{S}  | Unquoted string. Will always convert text to DML regardless of the output format.                                                                                                                                                  |
-| %Y{as} | ULONG64. Adds either an empty string or 9 characters of spacing for padding the high 32-bit portion of debugger formatted pointer fields. The extra space outputs 9 spaces which includes the upper 8 zeros plus the \` character. |
-| %Y{ps} | ULONG64. Extra space for padding debugger formatted pointer fields (includes the upper 8 zeros plus the \` character).                                                                                                             |
-| %Y{l}  | ULONG64. Address as source line information.                                                                                                                                                                                       |
+**%Y{t}**: Quoted string. Will convert text to DML if the output format (first arg) is DML.
+
+**%Y{T}**: Quoted string. Will always convert text to DML regardless of the output format.
+
+**%Y{s}**: Unquoted string. Will convert text to DML if the output format (first arg) is DML.
+
+**%Y{S}**: Unquoted string. Will always convert text to DML regardless of the output format.
+
+**%Y{as}**: ULONG64. Adds either an empty string or 9 characters of spacing for padding the high 32-bit portion of debugger formatted pointer fields. The extra space outputs 9 spaces which includes the upper 8 zeros plus the \` character.
+
+**%Y{ps}**: ULONG64. Extra space for padding debugger formatted pointer fields (includes the upper 8 zeros plus the \` character).
+
+**%Y{l}**: ULONG64. Address as source line information.
+
 
 
 
@@ -549,7 +554,7 @@ DML/NORMAL Y{T}: "Hello <World>"
 DML/NORMAL Y{s}: Hello <World>
 DML/NORMAL Y{S}: Hello <World>
 TEXT/NORMAL Y{t}: "Hello <World>"
-TEXT/NORMAL Y{T}: &quot;Hello &lt;World&gt;&quot;
+TEXT/NORMAL Y{T}: "Hello &lt;World&gt;"
 TEXT/NORMAL Y{s}: Hello <World>
 TEXT/NORMAL Y{S}: Hello &lt;World&gt;
 DML/NORMAL Y{a}: 00007ffa`7da163c0
@@ -629,13 +634,3 @@ The dbgeng will automatically convert between plain text and DML as necessary. F
 
 
 [Using Debugger Markup Language](debugger-markup-language-commands.md)
-
-
-
-
-
-
-
-
-
-

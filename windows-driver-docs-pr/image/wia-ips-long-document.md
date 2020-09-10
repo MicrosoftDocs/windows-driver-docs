@@ -52,7 +52,7 @@ The following table describes the valid values for the **WIA\_IPS\_LONG\_DOCUMEN
 </tr>
 <tr class="even">
 <td><p>WIA_LONG_DOCUMENT_ENABLED</p></td>
-<td><p>The device scans long documents up to the device&#39;s maximum possible length. The <a href="wia-ips-page-size.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_SIZE&lt;/strong&gt;](wia-ips-page-size.md)"><strong>WIA_IPS_PAGE_SIZE</strong></a> property must be set to WIA_PAGE_AUTO for this value to be accepted.</p></td>
+<td><p>The device scans long documents up to the device's maximum possible length. The <a href="wia-ips-page-size.md" data-raw-source="[&lt;strong&gt;WIA_IPS_PAGE_SIZE&lt;/strong&gt;](wia-ips-page-size.md)"><strong>WIA_IPS_PAGE_SIZE</strong></a> property must be set to WIA_PAGE_AUTO for this value to be accepted.</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_LONG_DOCUMENT_SPLIT</p></td>

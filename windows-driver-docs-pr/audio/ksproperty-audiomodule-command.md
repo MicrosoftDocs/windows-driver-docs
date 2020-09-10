@@ -44,7 +44,7 @@ The *Set* value is provided as part of the command. When the *Get* is used, it r
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter or Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/mt808139" data-raw-source="[&lt;strong&gt;KSAUDIOMODULE_PROPERTY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/mt808139)"><strong>KSAUDIOMODULE_PROPERTY</strong></a> + [optional custom module arguments]</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property" data-raw-source="[&lt;strong&gt;KSAUDIOMODULE_PROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property)"><strong>KSAUDIOMODULE_PROPERTY</strong></a> + [optional custom module arguments]</p></td>
 <td align="left"><p>UNDEFINED</p></td>
 </tr>
 </tbody>
@@ -61,9 +61,9 @@ The property value type is a undefined. The implementer can create a module spec
 Remarks
 -------
 
-Support for the **KSPROPERTY\_AUDIOMODULE\_COMMAND** property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [**KSAUDIOMODULE\_PROPERTY**](https://msdn.microsoft.com/library/windows/hardware/mt808139) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the **KSAUDIOMODULE\_PROPERTY** in the input buffer to send custom commands.
+Support for the **KSPROPERTY\_AUDIOMODULE\_COMMAND** property allows Audio Module clients to send custom commands to query and set parameters on Audio Modules. The property can be sent through the filter or pin handle and a [**KSAUDIOMODULE\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_property) is passed as the input buffer for the DeviceIoControl call. A client can optionally send additional information immediately adjacent to the **KSAUDIOMODULE\_PROPERTY** in the input buffer to send custom commands.
 
-For more information about audio modules, see [Implementing Audio Module Discovery](https://msdn.microsoft.com/windows/hardware/drivers/audio/implementing-audio-module-communication).
+For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
 Requirements
 ------------
@@ -95,11 +95,4 @@ Requirements
 [KSPROPSETID\_AudioModule](kspropsetid-audiomodule.md)
 
  
-
- 
-
-
-
-
-
 

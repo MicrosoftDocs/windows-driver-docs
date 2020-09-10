@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !ndiskd.nblpool
 
 
-The **!ndiskd.nblpool** extension displays information about a [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure) (NBL) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NBL pools in the system.
+The **!ndiskd.nblpool** extension displays information about a [**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md) (NBL) pool. If you run this extension with no parameters, !ndiskd will display a list of all allocated NBL pools in the system.
 
 ```console
 !ndiskd.nblpool [-handle <x>] [-basic] [-allocations] [-find <str>] [-findnb <str>] 
@@ -39,7 +39,7 @@ Displays all allocated NBLs.
 Filter the list of allocated NBLs using a debugger expression.
 
 <span id="_______-findnb______"></span><span id="_______-FINDNB______"></span> *-findnb*   
-Filter the list of allocated NBLs by linked [**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure)s (NBs).
+Filter the list of allocated NBLs by linked [**NET\_BUFFER**](../network/net-buffer-structure.md)s (NBs).
 
 <span id="_______-findctx______"></span><span id="_______-FINDCTX______"></span> *-findctx*   
 Filter the list of allocated NBLs by context area.
@@ -155,26 +155,19 @@ ALL ALLOCATED NBLs
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)
+[**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)
 
-[**NET\_BUFFER**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-structure)
-
- 
+[**NET\_BUFFER**](../network/net-buffer-structure.md)
 
  
-
-
-
-
-
 

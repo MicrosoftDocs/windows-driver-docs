@@ -82,7 +82,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3d:Material&lt;Material&gt;\ </p>
 <p>psk:MaterialType</p></td>
 <td><p>Reserved</p></td>
-<td><p>Type of material, as defined in Print Schema Keywords for 3D Printing (for example, &quot;psk3d:PLA&quot;). This setting is being deprecated in favor of generic materials specified by name and color.</p></td>
+<td><p>Type of material, as defined in Print Schema Keywords for 3D Printing (for example, "psk3d:PLA"). This setting is being deprecated in favor of generic materials specified by name and color.</p></td>
 </tr>
 
 <tr>
@@ -156,7 +156,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <tr>
 <td><p>psk3dx:customStatus</p></td>
 <td><p>Optional</p></td>
-<td><p>A string representing the initial print job status, typically the slicing phase. If missing, the job status will be set to &quot;Printing&quot;. Typically this value should be set to &quot;Slicing&quot; when the slicing happens in the render filter, for example, when using the Microsoft Slicer.</p></td>
+<td><p>A string representing the initial print job status, typically the slicing phase. If missing, the job status will be set to "Printing". Typically this value should be set to "Slicing" when the slicing happens in the render filter, for example, when using the Microsoft Slicer.</p></td>
 </tr>
 
 <tr>
@@ -173,7 +173,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <td><p>Optional</p></td>
 <td><p>When present, this setting enables driver debug logging to a file, allowing a developer to inspect the G-Code and firmware responses.</p>
 <p>This setting can also be turned on globally via registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print</p>
-<p>StandardGCodeDebugLog=&quot;c:\Path\To\LogFile&quot;</p></td>
+<p>StandardGCodeDebugLog="c:\Path\To\LogFile"</p></td>
 </tr>
 
 <tr>
@@ -245,7 +245,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3dx:postcommands\ </p>
 <p>psk3dx:command</p></td>
 <td><p>Yes</p></td>
-<td><p>The set of G-Code commands to send at the end of each job, generally to bring the 3D printer to a safe state, like cooling down the extruder and moving the part away from the extruder/hot end to where it&#39;s easy to remove from the bed. Each device has different required post-commands.</p>
+<td><p>The set of G-Code commands to send at the end of each job, generally to bring the 3D printer to a safe state, like cooling down the extruder and moving the part away from the extruder/hot end to where it's easy to remove from the bed. Each device has different required post-commands.</p>
 <p>This sequence is also executed when a job is cancelled.</p></td>
 </tr>
 
@@ -255,7 +255,7 @@ The configuration file XML contains a number of settings that need to be adjuste
 <p>psk3dx:failsafepostcommands\ </p>
 <p>psk3dx:command</p></td>
 <td><p>Optional</p></td>
-<td><p>A set of G-Code commands to be sent as fail safe mechanism, for example, in case of a slicer error. If missing, the driver will execute an &quot;M110 N0&quot; followed by &quot;M104 S0&quot;.</p></td>
+<td><p>A set of G-Code commands to be sent as fail safe mechanism, for example, in case of a slicer error. If missing, the driver will execute an "M110 N0" followed by "M104 S0".</p></td>
 </tr>
 
 <tr>
@@ -591,18 +591,18 @@ The configuration file XML contains a number of settings that need to be adjuste
 <tr>
 <td><p>$rampup$</p></td>
 <td><p>This is a variable that can be 0..255 and scales with Z axis and is controlled by the &lt;psk3dx:rampuptarget&gt; in the slicer quality settings.</p>
-<p>For example a command &quot;M106 S$rampup$&quot; turns on the fan gradually as the Z axis increases. If the &lt;psk3dx:rampuptarget&gt; is set to 500 microns, the value of the variable would be  0 on the first layer, and 255 once the layer is at 500 microns or above.</p>
+<p>For example a command "M106 S$rampup$" turns on the fan gradually as the Z axis increases. If the &lt;psk3dx:rampuptarget&gt; is set to 500 microns, the value of the variable would be  0 on the first layer, and 255 once the layer is at 500 microns or above.</p>
 <p>This variable is intended to support for better print adhesion on heated print beds but it can be used in any command.</p></td>
 </tr>
 
 <tr>
 <td><p>;?ack=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to change the command ACK pattern (the printer response) from the default &#39;ok&#39; to something temporary, for example &quot;;?ack=Writing to file&quot; would tell the driver to wait for a confirmation the printer is ready to write to the internal storage.</p></td>
+<td><p>This setting instructs the driver to change the command ACK pattern (the printer response) from the default 'ok' to something temporary, for example ";?ack=Writing to file" would tell the driver to wait for a confirmation the printer is ready to write to the internal storage.</p></td>
 </tr>
 
 <tr>
 <td><p>;?err=&lt;pattern&gt;</p></td>
-<td><p>This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default &#39;error&#39;. For example “;?err=open failed” would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full).</p></td>
+<td><p>This setting instructs the driver to look for an additional error pattern in the printer response, in addition to the default 'error'. For example “;?err=open failed” would tell the driver to fail if such a response is received (in this example the hardware would return this response if the internal SD card storage was not initialized or full).</p></td>
 </tr>
 
 <tr>

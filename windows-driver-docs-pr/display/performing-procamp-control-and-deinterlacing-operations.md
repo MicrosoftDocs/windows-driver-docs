@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_performing_procamp_control_and_deinterlacing_operations_gg"></span><span id="DDK_PERFORMING_PROCAMP_CONTROL_AND_DEINTERLACING_OPERATIONS_GG"></span>
 
 
-Use the following example code to perform ProcAmp control and deinterlacing operations. This code is an implementation of the [*DdMoCompRender*](https://msdn.microsoft.com/library/windows/hardware/ff550248) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://msdn.microsoft.com/library/windows/hardware/ff551660) structure points to the callback function.
+Use the following example code to perform ProcAmp control and deinterlacing operations. This code is an implementation of the [*DdMoCompRender*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function.
 
 ```cpp
 DWORD APIENTRY
@@ -181,10 +181,4 @@ DWORD APIENTRY
 ```
 
  
-
- 
-
-
-
-
 

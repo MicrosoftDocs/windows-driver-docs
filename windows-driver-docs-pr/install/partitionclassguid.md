@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # PartitionClassGuid
 
 
-PartitionClassGuid is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for partition devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_PARTITION**](guid-devinterface-partition.md) class identifier for new instances of this class.
+PartitionClassGuid is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for partition devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_PARTITION**](guid-devinterface-partition.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -46,11 +46,4 @@ Requirements
 [**GUID_DEVINTERFACE_PARTITION**](guid-devinterface-partition.md)
 
  
-
- 
-
-
-
-
-
 

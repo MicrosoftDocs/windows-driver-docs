@@ -24,14 +24,9 @@ It supports following two types of customization:
 
 -   Implement Unidrv-specific or Pscript-specific COM interface methods that modify the rendered image or scan line data stream, or insert Postscript code at specific injection points, before the data stream is sent to the spooler.
 
-**Note**   Rendering plug-ins should never spawn a window directly. For Windows Vista and later, you can provide asynchronous event notification messages to a client computer by using the Asynchronous User Notification XML schema, asyncui.xsd. For more information, see [Asynchronous User Notification Schema](https://msdn.microsoft.com/library/windows/hardware/ff545066)..
+**Note**   Rendering plug-ins should never spawn a window directly. For Windows Vista and later, you can provide asynchronous event notification messages to a client computer by using the Asynchronous User Notification XML schema, asyncui.xsd. For more information, see [Asynchronous User Notification Schema](./asynchronous-user-notification-schema.md)..
 
  
 
  
-
- 
-
-
-
 

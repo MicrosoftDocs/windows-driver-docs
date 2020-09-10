@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic presents the requirements that Microsoft Direct3D feature levels place on the user-mode display driver.
 
-The first and second columns of the first table show all Direct3D format types that the driver must support. The third column shows all associated constant values of the Direct3D [**D3D10\_FORMAT\_SUPPORT**](https://msdn.microsoft.com/library/windows/desktop/bb205063) and/or [**D3D11\_FORMAT\_SUPPORT**](https://msdn.microsoft.com/library/windows/desktop/ff476134) enumerations that the driver must support. The fourth column shows the minimum Direct3D feature level at which the driver must support each format.
+The first and second columns of the first table show all Direct3D format types that the driver must support. The third column shows all associated constant values of the Direct3D [**D3D10\_FORMAT\_SUPPORT**](/windows/desktop/api/d3d10/ne-d3d10-d3d10_format_support) and/or [**D3D11\_FORMAT\_SUPPORT**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_format_support) enumerations that the driver must support. The fourth column shows the minimum Direct3D feature level at which the driver must support each format.
 
 The second table shows the Direct3D 10Level 9 support algorithm for each enumeration value.
 
@@ -620,10 +620,4 @@ The second table shows the Direct3D 10Level 9 support algorithm for each enumera
  
 
  
-
- 
-
-
-
-
 

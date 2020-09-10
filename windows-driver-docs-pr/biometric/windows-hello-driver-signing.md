@@ -5,7 +5,6 @@ ms.assetid: 803f4326-32ce-44b4-a2fb-6c6f245c3728
 keywords:
 - biometric drivers WDK , windows hello
 - signing biometric drivers
-ms.author: dawnwood
 ms.date: 07/19/2017
 ms.localizationpriority: medium
 ---
@@ -101,10 +100,8 @@ The driver configuration xml should be included in the driver package that is su
 ## Related topics
 
 
-[Windows Hello face authentication](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-face-authentication)
+[Windows Hello face authentication](/windows-hardware/design/device-experiences/windows-hello-face-authentication)
 
-[Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello)
+[Windows Hello](/windows-hardware/design/device-experiences/windows-hello)
 
-[Biometric Devices Design Guide](https://docs.microsoft.com/windows-hardware/drivers/biometric/)
-
-
+[Biometric Devices Design Guide](./index.md)

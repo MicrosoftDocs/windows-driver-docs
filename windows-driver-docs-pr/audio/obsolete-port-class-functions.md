@@ -34,72 +34,72 @@ The following table lists the obsolete PortCls function names in the left column
 <tbody>
 <tr class="odd">
 <td align="left"><p>AddAdapterDevice</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537683" data-raw-source="[&lt;strong&gt;PcAddAdapterDevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537683)"><strong>PcAddAdapterDevice</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddadapterdevice" data-raw-source="[&lt;strong&gt;PcAddAdapterDevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddadapterdevice)"><strong>PcAddAdapterDevice</strong></a></p></td>
 <td align="left"><p>YES</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>CompletePendingPropertyRequest</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537687" data-raw-source="[&lt;strong&gt;PcCompletePendingPropertyRequest&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537687)"><strong>PcCompletePendingPropertyRequest</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pccompletependingpropertyrequest" data-raw-source="[&lt;strong&gt;PcCompletePendingPropertyRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pccompletependingpropertyrequest)"><strong>PcCompletePendingPropertyRequest</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>GetTimeInterval</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537702" data-raw-source="[&lt;strong&gt;PcGetTimeInterval&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537702)"><strong>PcGetTimeInterval</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgettimeinterval" data-raw-source="[&lt;strong&gt;PcGetTimeInterval&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgettimeinterval)"><strong>PcGetTimeInterval</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>InitializeAdapterDriver</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537703" data-raw-source="[&lt;strong&gt;PcInitializeAdapterDriver&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537703)"><strong>PcInitializeAdapterDriver</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcinitializeadapterdriver" data-raw-source="[&lt;strong&gt;PcInitializeAdapterDriver&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcinitializeadapterdriver)"><strong>PcInitializeAdapterDriver</strong></a></p></td>
 <td align="left"><p>YES</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NewDmaChannel</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537712" data-raw-source="[&lt;strong&gt;PcNewDmaChannel&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537712)"><strong>PcNewDmaChannel</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewdmachannel" data-raw-source="[&lt;strong&gt;PcNewDmaChannel&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewdmachannel)"><strong>PcNewDmaChannel</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NewMiniport</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537714" data-raw-source="[&lt;strong&gt;PcNewMiniport&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537714)"><strong>PcNewMiniport</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport" data-raw-source="[&lt;strong&gt;PcNewMiniport&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport)"><strong>PcNewMiniport</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NewPort</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537715" data-raw-source="[&lt;strong&gt;PcNewPort&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537715)"><strong>PcNewPort</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport" data-raw-source="[&lt;strong&gt;PcNewPort&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport)"><strong>PcNewPort</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NewResourceList</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537717" data-raw-source="[&lt;strong&gt;PcNewResourceList&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537717)"><strong>PcNewResourceList</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcelist" data-raw-source="[&lt;strong&gt;PcNewResourceList&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcelist)"><strong>PcNewResourceList</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>NewResourceSublist</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537718" data-raw-source="[&lt;strong&gt;PcNewResourceSublist&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537718)"><strong>PcNewResourceSublist</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcesublist" data-raw-source="[&lt;strong&gt;PcNewResourceSublist&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcesublist)"><strong>PcNewResourceSublist</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>NewServiceGroup</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537719" data-raw-source="[&lt;strong&gt;PcNewServiceGroup&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537719)"><strong>PcNewServiceGroup</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewservicegroup" data-raw-source="[&lt;strong&gt;PcNewServiceGroup&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewservicegroup)"><strong>PcNewServiceGroup</strong></a></p></td>
 <td align="left"><p>no</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>RegisterPhysicalConnection</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537726" data-raw-source="[&lt;strong&gt;PcRegisterPhysicalConnection&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537726)"><strong>PcRegisterPhysicalConnection</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection" data-raw-source="[&lt;strong&gt;PcRegisterPhysicalConnection&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection)"><strong>PcRegisterPhysicalConnection</strong></a></p></td>
 <td align="left"><p>YES</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>RegisterPhysicalConnectionFromExternal</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537728" data-raw-source="[&lt;strong&gt;PcRegisterPhysicalConnectionFromExternal&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537728)"><strong>PcRegisterPhysicalConnectionFromExternal</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectionfromexternal" data-raw-source="[&lt;strong&gt;PcRegisterPhysicalConnectionFromExternal&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectionfromexternal)"><strong>PcRegisterPhysicalConnectionFromExternal</strong></a></p></td>
 <td align="left"><p>YES</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>RegisterPhysicalConnectionToExternal</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537729" data-raw-source="[&lt;strong&gt;PcRegisterPhysicalConnectionToExternal&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537729)"><strong>PcRegisterPhysicalConnectionToExternal</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectiontoexternal" data-raw-source="[&lt;strong&gt;PcRegisterPhysicalConnectionToExternal&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectiontoexternal)"><strong>PcRegisterPhysicalConnectionToExternal</strong></a></p></td>
 <td align="left"><p>YES</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>RegisterSubdevice</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537731" data-raw-source="[&lt;strong&gt;PcRegisterSubdevice&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537731)"><strong>PcRegisterSubdevice</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice" data-raw-source="[&lt;strong&gt;PcRegisterSubdevice&lt;/strong&gt;](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice)"><strong>PcRegisterSubdevice</strong></a></p></td>
 <td align="left"><p>YES</p></td>
 </tr>
 </tbody>
@@ -127,10 +127,4 @@ In cases in which the arguments changed, the macros in portcls.hconvert the argu
 ```
 
  
-
- 
-
-
-
-
 

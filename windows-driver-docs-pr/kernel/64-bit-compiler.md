@@ -18,7 +18,7 @@ After you convert your 32-bit driver source code to use the [new data types](the
 The following is an example of such a warning:
 
 ```cpp
-warning C4311: &#39;type cast&#39; : pointer truncation from &#39;unsigned char *&#39; to &#39;unsigned long &#39;
+warning C4311: 'type cast' : pointer truncation from 'unsigned char *' to 'unsigned long '
 ```
 
 For example, the following code can generate the C4311 warning:

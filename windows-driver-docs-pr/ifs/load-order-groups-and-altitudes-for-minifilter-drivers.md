@@ -24,7 +24,7 @@ A minifilter driver can be loaded at any time. The concept of load order groups 
 
 Each load order group has a defined range of altitudes. The allocation of altitudes to minifilter drivers is managed by Microsoft. To request an altitude for your minifilter driver, send an email message to <fsfcomm@microsoft.com> asking for one to be assigned.
 
-A minifilter driver must specify an altitude value from an altitude range that represents a load order group. Altitude values for a minifilter driver are specified in the Instance definitions of the Strings Section in the INF file that is used to install the minifilter driver. Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](https://msdn.microsoft.com/library/windows/hardware/ff551096) routine in the [**FLT\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff544811) structure. Multiple instances and altitudes can be defined for a minifilter driver. These instance definitions apply across all volumes.
+A minifilter driver must specify an altitude value from an altitude range that represents a load order group. Altitude values for a minifilter driver are specified in the Instance definitions of the Strings Section in the INF file that is used to install the minifilter driver. Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine in the [**FLT\_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. Multiple instances and altitudes can be defined for a minifilter driver. These instance definitions apply across all volumes.
 
 The following rules about start type and load order groups determine when a minifilter driver will be loaded:
 
@@ -175,9 +175,4 @@ Note that the load order groups and altitude ranges are listed as they appear on
  
 
  
-
- 
-
-
-
 

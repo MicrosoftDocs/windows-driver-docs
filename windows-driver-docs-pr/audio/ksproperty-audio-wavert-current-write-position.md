@@ -59,7 +59,7 @@ The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION property request returns
 Remarks
 -------
 
-To better understand how to interpret the information provided by this property request, assume a circular buffer of size n bytes. The initial write position, before any data is written, is 0. Data is written to the buffer in chunks that are a multiple of [**WAVEFORMATEX.nBlockAlign**](https://msdn.microsoft.com/library/windows/hardware/ff538799) bytes.
+To better understand how to interpret the information provided by this property request, assume a circular buffer of size n bytes. The initial write position, before any data is written, is 0. Data is written to the buffer in chunks that are a multiple of [**WAVEFORMATEX.nBlockAlign**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) bytes.
 
 For example, the buffer might contain 20 ms of 16-bit PCM stereo data, sampled at 48000 Hz. So based on the description for the nBlockAlign member of the **WAVEFORMATEX** structure, in this example nBlockAlign = 2 \* 16 / 8 = 4 bytes. This means that the length of the buffer would be 48000 \* 20 / 1000 = 960 frames, or 960 \* 4 = 3840 bytes.
 
@@ -97,14 +97,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff538799)
+[**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex)
 
  
-
- 
-
-
-
-
-
 

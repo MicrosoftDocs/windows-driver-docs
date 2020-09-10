@@ -59,7 +59,7 @@ You can control the break status and handling status by doing one of the followi
 
 -   (CDB, NTSD, and KD) Use the **sxe** or **sxd** keyword in the [Tools.ini](configuring-tools-ini.md) file.
 
--   (WinDbg only) Click [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
+-   (WinDbg only) Select [Event Filters](debug---event-filters.md) on the **Debug** menu to open the **Event Filters** dialog box, and then choose the options that you want.
 
 The **SX\\*** command, the **-x\\*** command-line option, and the **sx\\*** Tools.ini keyword typically set the break status of the specified event. You can add the **-h** option to cause the handling status to be set instead.
 
@@ -127,7 +127,7 @@ or
 
 If an exception is not anticipated by an **SX**\* setting, the target application breaks into the debugger on the second chance. The default status for events is listed in the following "Event Definitions and Defaults" section of this topic.
 
-To set break status by using the WinDbg graphical interface, [Event Filters](debug---event-filters.md) on the **Debug** menu, click the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
+To set break status by using the WinDbg graphical interface, [Event Filters](debug---event-filters.md) on the **Debug** menu select the event that you want from the list in the **Event Filters** dialog box, and then select **Enabled**, **Disabled**, **Output**, or **Ignore**.
 
 ### <span id="controlling_handling_status"></span><span id="CONTROLLING_HANDLING_STATUS"></span>Controlling Handling Status
 
@@ -170,7 +170,7 @@ When you use the **SX**\* command on **cc**, **hc**, **bpec**, and **ssec** even
 
  
 
-To set handling status by using the WinDbg graphical interface, click [Event Filters](debug---event-filters.md) on the **Debug** menu, click the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
+To set handling status by using the WinDbg graphical interface, select [Event Filters](debug---event-filters.md) on the **Debug** menu, select the event that you want from the list in the **Event Filters** dialog box, and then select **Handled** or **Not Handled**.
 
 ### <span id="automatic_commands"></span><span id="AUTOMATIC_COMMANDS"></span>Automatic Commands
 
@@ -477,14 +477,14 @@ You can change the break status of the following events. Because these events ar
 <td align="left"><p><strong>ibp</strong></p></td>
 <td align="left"><p>Initial break point</p>
 <p>(This event occurs at the beginning of the debug session and after you restart the target computer.)</p></td>
-<td align="left"><p><strong>In user mode:</strong> Break. You can change this status to &quot;Ignore&quot; by using the <strong>-g</strong><a href="command-line-options.md" data-raw-source="[command-line option](command-line-options.md)">command-line option</a>.</p>
-<p><strong>In kernel mode:</strong> Ignore. You can change this status to &quot;Enabled&quot; by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
+<td align="left"><p><strong>In user mode:</strong> Break. You can change this status to "Ignore" by using the <strong>-g</strong><a href="command-line-options.md" data-raw-source="[command-line option](command-line-options.md)">command-line option</a>.</p>
+<p><strong>In kernel mode:</strong> Ignore. You can change this status to "Enabled" by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>iml</strong></p></td>
 <td align="left"><p>Initial module load</p>
 <p>(Kernel mode only)</p></td>
-<td align="left"><p>Ignore. You can change this status to &quot;Break&quot; by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
+<td align="left"><p>Ignore. You can change this status to "Break" by a variety of methods. For more information about how to change this status, see <a href="crashing-and-rebooting-the-target-computer.md" data-raw-source="[Crashing and Rebooting the Target Computer](crashing-and-rebooting-the-target-computer.md)">Crashing and Rebooting the Target Computer</a>.</p></td>
 </tr>
 </tbody>
 </table>

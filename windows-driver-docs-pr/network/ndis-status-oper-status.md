@@ -18,9 +18,9 @@ Remarks
 
 NDIS generates this status indication; NDIS miniport drivers should not generate this status indication.
 
-NDIS supplies an [**NDIS\_OPER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566737) structure in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure.
+NDIS supplies an [**NDIS\_OPER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_oper_state) structure in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure.
 
-The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373) structure is set to sizeof(NDIS\_OPER\_STATE).
+The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(NDIS\_OPER\_STATE).
 
 Requirements
 ------------
@@ -45,14 +45,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_OPER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff566737)
+[**NDIS\_OPER\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_oper_state)
 
-[**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
-
- 
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
  
-
-
-
 

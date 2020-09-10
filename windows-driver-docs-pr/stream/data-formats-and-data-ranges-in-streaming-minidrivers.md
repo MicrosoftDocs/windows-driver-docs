@@ -20,14 +20,9 @@ ms.localizationpriority: medium
 
 
 
-Each stream details the data ranges it supports in the **StreamFormatsArray** member of its [**HW\_STREAM\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff559692) structure.
+Each stream details the data ranges it supports in the **StreamFormatsArray** member of its [**HW\_STREAM\_INFORMATION**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_information) structure.
 
 For more information about formats and range intersection, see [Data Range Intersections in AVStream](data-range-intersections-in-avstream.md).
 
  
-
- 
-
-
-
 

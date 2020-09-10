@@ -11,17 +11,11 @@ ms.localizationpriority: medium
 
 Windows Driver Frameworks (WDF) provides three methods that complete I/O requests:
 
--   [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945)
--   [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948)
--   [**WdfRequestCompleteWithPriorityBoost**](https://msdn.microsoft.com/library/windows/hardware/ff549949) (KMDF only)
+-   [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete)
+-   [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation)
+-   [**WdfRequestCompleteWithPriorityBoost**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost) (KMDF only)
 
 For information about using these methods, see [Completing I/O Requests](completing-i-o-requests.md).
 
  
-
- 
-
-
-
-
 

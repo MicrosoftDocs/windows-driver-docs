@@ -44,7 +44,7 @@ Describes what is done to the object.
 *Object*
 Identifies the type of object.
 
-For example, the I/O manager's [**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397) routine creates a device object to represent a physical, logical, or virtual device as the target of I/O requests.
+For example, the I/O manager's [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) routine creates a device object to represent a physical, logical, or virtual device as the target of I/O requests.
 
 One system component can export routines that call another component's support routines. This can reduce the number of calls that a driver must make. The I/O manager, in particular, exports certain routines that make it easier to develop drivers. For example, **IoConnectInterruptEx**, calls the kernel support routines for *interrupt objects*.
 
@@ -57,9 +57,4 @@ Some system-defined objects are *opaque*: only the defining system component is 
  
 
  
-
- 
-
-
-
 

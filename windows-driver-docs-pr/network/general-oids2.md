@@ -30,88 +30,88 @@ The following table lists the general OIDs for Remote NDIS Ethernet devices.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569642" data-raw-source="[OID_GEN_SUPPORTED_LIST](https://msdn.microsoft.com/library/windows/hardware/ff569642)">OID_GEN_SUPPORTED_LIST</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-list" data-raw-source="[OID_GEN_SUPPORTED_LIST](./oid-gen-supported-list.md)">OID_GEN_SUPPORTED_LIST</a></p></td>
 <td align="left"><p>List of supported OIDs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569585" data-raw-source="[OID_GEN_HARDWARE_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff569585)">OID_GEN_HARDWARE_STATUS</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-hardware-status" data-raw-source="[OID_GEN_HARDWARE_STATUS](./oid-gen-hardware-status.md)">OID_GEN_HARDWARE_STATUS</a></p></td>
 <td align="left"><p>Hardware status.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569609" data-raw-source="[OID_GEN_MEDIA_SUPPORTED](https://msdn.microsoft.com/library/windows/hardware/ff569609)">OID_GEN_MEDIA_SUPPORTED</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-media-supported" data-raw-source="[OID_GEN_MEDIA_SUPPORTED](./oid-gen-media-supported.md)">OID_GEN_MEDIA_SUPPORTED</a></p></td>
 <td align="left"><p>Media types supported (encoded).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569607" data-raw-source="[OID_GEN_MEDIA_IN_USE](https://msdn.microsoft.com/library/windows/hardware/ff569607)">OID_GEN_MEDIA_IN_USE</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-media-in-use" data-raw-source="[OID_GEN_MEDIA_IN_USE](./oid-gen-media-in-use.md)">OID_GEN_MEDIA_IN_USE</a></p></td>
 <td align="left"><p>Media types in use (encoded).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569598" data-raw-source="[OID_GEN_MAXIMUM_FRAME_SIZE](https://msdn.microsoft.com/library/windows/hardware/ff569598)">OID_GEN_MAXIMUM_FRAME_SIZE</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-maximum-frame-size" data-raw-source="[OID_GEN_MAXIMUM_FRAME_SIZE](./oid-gen-maximum-frame-size.md)">OID_GEN_MAXIMUM_FRAME_SIZE</a></p></td>
 <td align="left"><p>Maximum frame size in bytes.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569593" data-raw-source="[OID_GEN_LINK_SPEED](https://msdn.microsoft.com/library/windows/hardware/ff569593)">OID_GEN_LINK_SPEED</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-link-speed" data-raw-source="[OID_GEN_LINK_SPEED](./oid-gen-link-speed.md)">OID_GEN_LINK_SPEED</a></p></td>
 <td align="left"><p>Link speed in units of 100 bps.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569644" data-raw-source="[OID_GEN_TRANSMIT_BLOCK_SIZE](https://msdn.microsoft.com/library/windows/hardware/ff569644)">OID_GEN_TRANSMIT_BLOCK_SIZE</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-transmit-block-size" data-raw-source="[OID_GEN_TRANSMIT_BLOCK_SIZE](./oid-gen-transmit-block-size.md)">OID_GEN_TRANSMIT_BLOCK_SIZE</a></p></td>
 <td align="left"><p>Minimum amount of storage, in bytes, that a single packet occupies in the transmit buffer space of the NIC.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569633" data-raw-source="[OID_GEN_RECEIVE_BLOCK_SIZE](https://msdn.microsoft.com/library/windows/hardware/ff569633)">OID_GEN_RECEIVE_BLOCK_SIZE</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-receive-block-size" data-raw-source="[OID_GEN_RECEIVE_BLOCK_SIZE](./oid-gen-receive-block-size.md)">OID_GEN_RECEIVE_BLOCK_SIZE</a></p></td>
 <td align="left"><p>Amount of storage, in bytes, that a single packet occupies in the receive buffer space of the NIC.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569651" data-raw-source="[OID_GEN_VENDOR_ID](https://msdn.microsoft.com/library/windows/hardware/ff569651)">OID_GEN_VENDOR_ID</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-vendor-id" data-raw-source="[OID_GEN_VENDOR_ID](./oid-gen-vendor-id.md)">OID_GEN_VENDOR_ID</a></p></td>
 <td align="left"><p>Vendor NIC code.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569649" data-raw-source="[OID_GEN_VENDOR_DESCRIPTION](https://msdn.microsoft.com/library/windows/hardware/ff569649)">OID_GEN_VENDOR_DESCRIPTION</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-vendor-description" data-raw-source="[OID_GEN_VENDOR_DESCRIPTION](./oid-gen-vendor-description.md)">OID_GEN_VENDOR_DESCRIPTION</a></p></td>
 <td align="left"><p>Vendor network card description.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569650" data-raw-source="[OID_GEN_VENDOR_DRIVER_VERSION](https://msdn.microsoft.com/library/windows/hardware/ff569650)">OID_GEN_VENDOR_DRIVER_VERSION</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-vendor-driver-version" data-raw-source="[OID_GEN_VENDOR_DRIVER_VERSION](./oid-gen-vendor-driver-version.md)">OID_GEN_VENDOR_DRIVER_VERSION</a></p></td>
 <td align="left"><p>Vendor-assigned version number of driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569575" data-raw-source="[OID_GEN_CURRENT_PACKET_FILTER](https://msdn.microsoft.com/library/windows/hardware/ff569575)">OID_GEN_CURRENT_PACKET_FILTER</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-packet-filter" data-raw-source="[OID_GEN_CURRENT_PACKET_FILTER](./oid-gen-current-packet-filter.md)">OID_GEN_CURRENT_PACKET_FILTER</a></p></td>
 <td align="left"><p>Current packet filter (encoded).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569601" data-raw-source="[OID_GEN_MAXIMUM_TOTAL_SIZE](https://msdn.microsoft.com/library/windows/hardware/ff569601)">OID_GEN_MAXIMUM_TOTAL_SIZE</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-maximum-total-size" data-raw-source="[OID_GEN_MAXIMUM_TOTAL_SIZE](./oid-gen-maximum-total-size.md)">OID_GEN_MAXIMUM_TOTAL_SIZE</a></p></td>
 <td align="left"><p>Maximum total packet length in bytes.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569639" data-raw-source="[OID_GEN_RNDIS_CONFIG_PARAMETER](https://msdn.microsoft.com/library/windows/hardware/ff569639)">OID_GEN_RNDIS_CONFIG_PARAMETER</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-rndis-config-parameter" data-raw-source="[OID_GEN_RNDIS_CONFIG_PARAMETER](./oid-gen-rndis-config-parameter.md)">OID_GEN_RNDIS_CONFIG_PARAMETER</a></p></td>
 <td align="left"><p>Device-specific configuration parameter (set only).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569621" data-raw-source="[OID_GEN_PHYSICAL_MEDIUM](https://msdn.microsoft.com/library/windows/hardware/ff569621)">OID_GEN_PHYSICAL_MEDIUM</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-physical-medium" data-raw-source="[OID_GEN_PHYSICAL_MEDIUM](./oid-gen-physical-medium.md)">OID_GEN_PHYSICAL_MEDIUM</a></p></td>
 <td align="left"><p>Information about the underlying physical medium.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Required</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569604" data-raw-source="[OID_GEN_MEDIA_CONNECT_STATUS](https://msdn.microsoft.com/library/windows/hardware/ff569604)">OID_GEN_MEDIA_CONNECT_STATUS</a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-media-connect-status" data-raw-source="[OID_GEN_MEDIA_CONNECT_STATUS](./oid-gen-media-connect-status.md)">OID_GEN_MEDIA_CONNECT_STATUS</a></p></td>
 <td align="left"><p>Status of the NIC network connection.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff569597" data-raw-source="[OID_GEN_MAC_OPTIONS](https://msdn.microsoft.com/library/windows/hardware/ff569597)">OID_GEN_MAC_OPTIONS</a></p></td>
-<td align="left"><p>A bitmask that specifies optional properties of the NIC. Must be supported only by NICs that support <a href="https://msdn.microsoft.com/library/windows/hardware/ff562331" data-raw-source="[802.1p packet priority](https://msdn.microsoft.com/library/windows/hardware/ff562331)">802.1p packet priority</a>.</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-mac-options" data-raw-source="[OID_GEN_MAC_OPTIONS](./oid-gen-mac-options.md)">OID_GEN_MAC_OPTIONS</a></p></td>
+<td align="left"><p>A bitmask that specifies optional properties of the NIC. Must be supported only by NICs that support <a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff562331(v=vs.85)" data-raw-source="[802.1p packet priority](/previous-versions/windows/hardware/network/ff562331(v=vs.85))">802.1p packet priority</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -119,10 +119,4 @@ The following table lists the general OIDs for Remote NDIS Ethernet devices.
  
 
  
-
- 
-
-
-
-
 

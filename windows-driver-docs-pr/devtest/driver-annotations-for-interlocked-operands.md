@@ -44,7 +44,7 @@ Function parameters annotated with the \_Interlocked\_operand\_ are expected to 
 
 System-supplied functions are already annotated for interlocked operands.
 
-The following example shows the annotation for the [**InterlockedExchange**](https://msdn.microsoft.com/library/windows/hardware/ff547892) function. This annotation specifies that the Target parameter must always be accessed by using an interlocked operation.
+The following example shows the annotation for the [**InterlockedExchange**](/windows-hardware/drivers/ddi/wdm/nf-wdm-interlockedexchange) function. This annotation specifies that the Target parameter must always be accessed by using an interlocked operation.
 
 ```
 LONG  
@@ -58,13 +58,3 @@ InterlockedExchange (
 
 
 [SAL 2.0 Annotations for Drivers](sal-2-annotations-for-windows-drivers.md)
-
-
-
-
-
-
-
-
-
-

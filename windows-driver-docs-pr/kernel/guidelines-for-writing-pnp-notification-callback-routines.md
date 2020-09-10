@@ -23,7 +23,7 @@ To ensure smooth operation of the PnP subsystem, a PnP notification callback rou
 
     Calling such routines during a notification callback can cause a system deadlock.
 
-    For example, a driver must not call [**IoReportTargetDeviceChange**](https://msdn.microsoft.com/library/windows/hardware/ff549625) in a notification callback routine. Call [**IoReportTargetDeviceChangeAsynchronous**](https://msdn.microsoft.com/library/windows/hardware/ff549634) instead.
+    For example, a driver must not call [**IoReportTargetDeviceChange**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreporttargetdevicechange) in a notification callback routine. Call [**IoReportTargetDeviceChangeAsynchronous**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreporttargetdevicechangeasynchronous) instead.
 
 3.  A notification callback routine should return success for any events it does not explicitly fail.
 
@@ -34,9 +34,4 @@ To ensure smooth operation of the PnP subsystem, a PnP notification callback rou
 4.  A notification callback routine should be paged code.
 
  
-
- 
-
-
-
 

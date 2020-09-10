@@ -1,11 +1,11 @@
 ---
-Description: Support for property commands (WpdBasicHardwareDriverSample)
-title: Support for property commands (WpdBasicHardwareDriverSample)
-ms.date: 04/20/2017
+description: Using scope access with property commands (WpdServiceSampleDriver)
+title: Using scope access with property commands (WpdServiceSampleDriver)
+ms.date: 07/27/2020
 ms.localizationpriority: medium
 ---
 
-# Support for property commands (WpdBasicHardwareDriverSample)
+# Using scope access with property commands (WpdServiceSampleDriver)
 
 
 The sample driver supports six property commands. These commands are processed initially by the **WpdObjectProperties::DispatchMessage** method that, in turn, invokes a corresponding command handler. The **DispatchMessage** method and the individual handlers are all found in the *WpdObjectProperties.cpp file*.
@@ -67,7 +67,7 @@ The following code example from the **OnGetSupportedProperties** handler functio
     {
         ACCESS_SCOPE Scope = m_pDevice->GetAccessScope(pParams);
         hr = m_pDevice->GetSupportedProperties(Scope, wszObjectID, pKeys);
-        CHECK_HR(hr, "Failed to add supported property keys for object &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to add supported property keys for object '%ws'", wszObjectID);
     }
 ```
 
@@ -91,12 +91,12 @@ HRESULT FakeDevice::GetSupportedProperties(
     }
 
     hr = GetContent(Scope, wszObjectID, &pContent);
-    CHECK_HR(hr, "Failed to get content &#39;%ws&#39;", wszObjectID);
+    CHECK_HR(hr, "Failed to get content '%ws'", wszObjectID);
 
     if (hr == S_OK)
     {
         hr = pContent->GetSupportedProperties(pKeys);
-        CHECK_HR(hr, "Failed to get supported properties for &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to get supported properties for '%ws'", wszObjectID);
     }
 
     return hr;
@@ -120,7 +120,7 @@ HRESULT FakeContent::GetContent(
     else
     {
         hr = E_ACCESSDENIED;
-        CHECK_HR(hr, "GetContent: &#39;%ws&#39; was found but falls outside scope", wszObjectID);
+        CHECK_HR(hr, "GetContent: '%ws' was found but falls outside scope", wszObjectID);
     }
 
     return hr;

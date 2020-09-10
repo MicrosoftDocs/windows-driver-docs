@@ -55,7 +55,7 @@ The Windows 8, Windows 8.1, and Windows 10 experience is designed to be touch
 ## <span id="pap"></span><span id="PAP"></span>Provision after purchase
 
 
-The same provisioning file that can be applied by an app can also be applied by a website. In the web page’s JavaScript, check for the availability of the [**window.external.msProvisionNetworks**](https://msdn.microsoft.com/library/dn529170) method. If it is present, the browser can relay a provisioning file to the operating system. See [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md) for more information about how to generate this provisioning file.
+The same provisioning file that can be applied by an app can also be applied by a website. In the web page’s JavaScript, check for the availability of the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) method. If it is present, the browser can relay a provisioning file to the operating system. See [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md) for more information about how to generate this provisioning file.
 
 **Note**  
 This provisioning file must be signed when it is provided by a website or an app that is not the mobile broadband app.
@@ -72,14 +72,7 @@ The richest experience of Windows 8, Windows 8.1, and Windows 10 is through t
 ## <span id="related_topics"></span>Related topics
 
 
-[Hotspot authentication methods](hotspot-authentication-methods.md)
+[Hotspot authentication methods](integrating-windows-with-wireless-hotspots.md)
 
  
-
- 
-
-
-
-
-
 

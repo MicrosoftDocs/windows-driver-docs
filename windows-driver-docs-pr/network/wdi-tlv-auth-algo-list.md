@@ -21,14 +21,14 @@ WDI\_TLV\_AUTH\_ALGO\_LIST is a TLV that contains a list of authentication algor
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_AUTH\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897792) structures. The array must contain 1 or more elements.
+The size (in bytes) of the array of [**WDI\_AUTH\_ALGORITHM**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) structures. The array must contain 1 or more elements.
 
 ## Values
 
 
 | Type                                                        | Description                            |
 |-------------------------------------------------------------|----------------------------------------|
-| [**WDI\_AUTH\_ALGORITHM**](https://msdn.microsoft.com/library/windows/hardware/dn897792)\[\] | An array of authentication algorithms. |
+| [**WDI\_AUTH\_ALGORITHM**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm)\[\] | An array of authentication algorithms. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

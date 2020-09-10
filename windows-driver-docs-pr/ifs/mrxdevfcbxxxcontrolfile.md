@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxDevFcbXXXControlFile routine
 
 
-The *MRxDevFcbXXXControlFile* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to pass a device FCB control request (an IOCTL or FSCTL request) to the network mini-redirector.
+The *MRxDevFcbXXXControlFile* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to pass a device FCB control request (an IOCTL or FSCTL request) to the network mini-redirector.
 
 Syntax
 ------
@@ -124,16 +124,9 @@ Requirements
 ## See also
 
 
-[**MRxStart**](https://msdn.microsoft.com/library/windows/hardware/ff550829)
+[**MRxStart**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown_ctx)
 
 [**MRxStop**](mrxstop.md)
 
  
-
- 
-
-
-
-
-
 

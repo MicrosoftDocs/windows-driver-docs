@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # Video Decoder Change Event
 
 
-The [EVENTSETID\_VIDEODECODER](https://msdn.microsoft.com/library/windows/hardware/ff559569) event set contains the video decoder changed event. The following table describes the events that are part of the EVENTSETID\_VIDEODECODER event set.
+The [EVENTSETID\_VIDEODECODER](./eventsetid-videodecoder.md) event set contains the video decoder changed event. The following table describes the events that are part of the EVENTSETID\_VIDEODECODER event set.
 
 <table>
 <colgroup>
@@ -29,7 +29,7 @@ The [EVENTSETID\_VIDEODECODER](https://msdn.microsoft.com/library/windows/hardwa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561931" data-raw-source="[&lt;strong&gt;KSEVENT_VIDEODECODER_CHANGED&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561931)"><strong>KSEVENT_VIDEODECODER_CHANGED</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-videodecoder-changed" data-raw-source="[&lt;strong&gt;KSEVENT_VIDEODECODER_CHANGED&lt;/strong&gt;](./ksevent-videodecoder-changed.md)"><strong>KSEVENT_VIDEODECODER_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that the video decoder has changed, for example, because of the selection of an SVideo input port from a composite input port.</p></td>
 </tr>
 </tbody>
@@ -38,9 +38,4 @@ The [EVENTSETID\_VIDEODECODER](https://msdn.microsoft.com/library/windows/hardwa
  
 
  
-
- 
-
-
-
 

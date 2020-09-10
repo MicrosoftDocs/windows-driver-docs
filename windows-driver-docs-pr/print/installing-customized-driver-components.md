@@ -46,16 +46,11 @@ The .ini file name should reflect the printer product name. The .ini file name s
 
 An .ini file can contain either ANSI or Unicode text, but Unicode text is recommended. Within an .ini file, lines beginning with the pound sign (\#) are comments.
 
-For more information, see [General Guidelines for INF Files](https://msdn.microsoft.com/library/windows/hardware/ff544975) and [Installing a Unidrv Minidriver](installing-a-unidrv-minidriver.md).
+For more information, see [General Guidelines for INF Files](../install/general-guidelines-for-inf-files.md) and [Installing a Unidrv Minidriver](installing-a-unidrv-minidriver.md).
 
 If you provide a printer INF file, a convenient way to install and register a customized component is to make the component a *dependent file* of the printer driver. In addition, the associated .inf file can be installed as a dependent file. For more information about dependent files for printer drivers, see [Printer INF File Entries](printer-inf-file-entries.md).
 
 Alternatively, you can install a customized component by making the component a dependent file for another print component such as a port monitor or a status application. However, this method might create difficulties because [point-and-print](introduction-to-point-and-print.md) operations install only the driver and driver-dependent files on the client. If a customized component is not listed as a dependent file of the printer driver, the component must be installed on the client in some way other than as part of the point-and-print operation.
 
  
-
- 
-
-
-
 

@@ -29,8 +29,8 @@ The sum (in bytes) of the sizes of all contained elements.
 | Type                                                                   | Description                                                 |
 |------------------------------------------------------------------------|-------------------------------------------------------------|
 | UINT16                                                                 | Specifies the IEEE EtherType in big-endian byte order.      |
-| [**WDI\_EXEMPTION\_ACTION\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn897820) | Specifies the action type of the exemption.                 |
-| [**WDI\_EXEMPTION\_PACKET\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn897823) | Specifies the type of packet that the exemption applies to. |
+| [**WDI\_EXEMPTION\_ACTION\_TYPE**](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_exemption_action_type) | Specifies the action type of the exemption.                 |
+| [**WDI\_EXEMPTION\_PACKET\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_exemption_packet_type) | Specifies the type of packet that the exemption applies to. |
 
  
 
@@ -59,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

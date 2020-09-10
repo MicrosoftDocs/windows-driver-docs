@@ -15,12 +15,11 @@ ms.localizationpriority: medium
 # Enabling NFP
 
 
-A client can re-enable previously disabled subscriptions, publications, and presence with [**IOCTL\_NFP\_ENABLE**](https://msdn.microsoft.com/library/windows/hardware/jj853316).
+A client can re-enable previously disabled subscriptions, publications, and presence with [**IOCTL\_NFP\_ENABLE**](/windows-hardware/drivers/ddi/nfpdev/ni-nfpdev-ioctl_nfp_enable).
 
  
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
-[Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)

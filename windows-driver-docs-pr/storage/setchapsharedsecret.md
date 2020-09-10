@@ -17,15 +17,9 @@ The initiator uses two different shared secrets to implement the challenge hands
 
 -   The [LoginToTarget](logintotarget.md) method establishes the shared secret that the initiator uses to generate the CHAP response to a target's challenge.
 
-The **SetCHAPSharedSecret** WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md). For a description of the parameters of the **SetCHAPSharedSecret** method, see the member descriptions for the [**SetCHAPSharedSecret\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565595) and [**SetCHAPSharedSecret\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565600) structures.
+The **SetCHAPSharedSecret** WMI method belongs to the unpublished [MSiSCSI\_Operations WMI class](msiscsi-operations-wmi-class.md). For a description of the parameters of the **SetCHAPSharedSecret** method, see the member descriptions for the [**SetCHAPSharedSecret\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setchapsharedsecret_in) and [**SetCHAPSharedSecret\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setchapsharedsecret_out) structures.
 
 Miniport drivers that implement the MSiSCSI\_Operations WMI class are not required to support **SetCHAPSharedSecret**.
 
  
-
- 
-
-
-
-
 

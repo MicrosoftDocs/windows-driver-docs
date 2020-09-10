@@ -1,13 +1,17 @@
 - name: "Test Authoring and Execution Framework (TAEF)"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Test Authoring and Execution Framework (TAEF)"
+    href: index.md
   - name: "Getting Started"
     href: getting-started.md
   - name: "Te.Service"
     href: te-service.md
   - name: "Authoring Tests"
-    href: authoring-tests.md
+# Auto-expanded node
     items: 
+    - name: "Authoring Tests"
+      href: authoring-tests.md
     - name: "Authoring Tests in C++"
       href: authoring-tests-in-c--.md
     - name: "Authoring Tests in C#"
@@ -41,8 +45,10 @@
     - name: "DeploymentItem Metadata"
       href: deploymentitem-metadata.md
   - name: "Data Driven Testing"
-    href: data-driven-testing.md
+# Auto-expanded node
     items: 
+    - name: "Data Driven Testing"
+      href: data-driven-testing.md
     - name: "Data-driven Testing in Scripting Languages"
       href: data-driven-testing-in-scripting-languages.md
     - name: "Table Data Source"
@@ -68,8 +74,10 @@
     - name: "Multiple DataSources"
       href: multiple-datasources.md
   - name: "Executing Tests"
-    href: executing-tests.md
+# Auto-expanded node
     items: 
+    - name: "Executing Tests"
+      href: executing-tests.md
     - name: "Overview of Executing Tests"
       href: overview-of-executing-tests.md
     - name: "Te.exe Command Options"
@@ -85,8 +93,10 @@
     - name: "Parallel"
       href: parallel.md
     - name: "RunAs"
-      href: runas.md
+# Auto-expanded node
       items: 
+      - name: "RunAs"
+        href: runas.md
       - name: "RunAs Elevated"
         href: runas-elevated.md
       - name: "RunAs LowIL"

@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_HOME\_PROVIDER notification to info
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_HOME\_PROVIDER**](https://msdn.microsoft.com/library/windows/hardware/ff567909) structure.
+This notification uses the [**NDIS\_WWAN\_HOME\_PROVIDER**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider) structure.
 
 Remarks
 -------
@@ -55,12 +55,7 @@ Requirements
 
 [OID\_WWAN\_HOME\_PROVIDER](oid-wwan-home-provider.md)
 
-[**NDIS\_WWAN\_HOME\_PROVIDER**](https://msdn.microsoft.com/library/windows/hardware/ff567909)
+[**NDIS\_WWAN\_HOME\_PROVIDER**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_home_provider)
 
  
-
- 
-
-
-
 

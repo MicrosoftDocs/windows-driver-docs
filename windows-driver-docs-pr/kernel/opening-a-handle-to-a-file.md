@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 To open a handle to a file, perform the following steps:
 
-1.  Create an [**OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff557749) structure, and call the [**InitializeObjectAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff547804) macro to initialize the structure. You specify the file's object name as the *ObjectName* parameter to **InitializeObjectAttributes**.
+1.  Create an [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_object_attributes) structure, and call the [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes) macro to initialize the structure. You specify the file's object name as the *ObjectName* parameter to **InitializeObjectAttributes**.
 
-2.  Open a handle to the file by passing the **OBJECT\_ATTRIBUTES** structure to [**IoCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff548418), [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424), or [**ZwOpenFile**](https://msdn.microsoft.com/library/windows/hardware/ff567011).
+2.  Open a handle to the file by passing the **OBJECT\_ATTRIBUTES** structure to [**IoCreateFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile), [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile).
 
     If the file does not exist, **IoCreateFile** and **ZwCreateFile** will create it, whereas **ZwOpenFile** will return STATUS\_OBJECT\_NAME\_NOT\_FOUND.
 
@@ -52,11 +52,11 @@ Whichever routine you call, you must pass the access rights you need as the *Des
 <td><p>FILE_APPEND_DATA</p></td>
 </tr>
 <tr class="even">
-<td><p>Read the file&#39;s metadata, such as the file&#39;s creation time.</p></td>
+<td><p>Read the file's metadata, such as the file's creation time.</p></td>
 <td><p>FILE_READ_ATTRIBUTES or GENERIC_READ</p></td>
 </tr>
 <tr class="odd">
-<td><p>Write the file&#39;s metadata, such as the file&#39;s creation time.</p></td>
+<td><p>Write the file's metadata, such as the file's creation time.</p></td>
 <td><p>FILE_WRITE_ATTRIBUTES or GENERIC_WRITE</p></td>
 </tr>
 </tbody>
@@ -64,12 +64,7 @@ Whichever routine you call, you must pass the access rights you need as the *Des
 
  
 
-For more information about the values available for *DesiredAccess*, see [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424).
+For more information about the values available for *DesiredAccess*, see [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile).
 
  
-
- 
-
-
-
 

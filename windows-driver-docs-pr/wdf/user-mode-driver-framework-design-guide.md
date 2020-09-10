@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # UMDF 1.x Design Guide
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 This section contains information that applies only to User-Mode Driver Framework (UMDF) versions 1.11 and earlier.
 
@@ -30,14 +30,8 @@ For more information about which versions of UMDF are available in specific vers
 ## Additional resources for UMDF version 1
 
 
--   [Architecture of the User-Mode Driver Framework](https://msdn.microsoft.com/windows/hardware/gg463289)
--   [A COM QuickStart for UMDF Developers](https://msdn.microsoft.com/windows/hardware/gg463299)
+-   [Architecture of the User-Mode Driver Framework](/previous-versions/windows/hardware/download/dn550976(v=vs.85))
+-   [A COM QuickStart for UMDF Developers](/previous-versions/windows/hardware/download/dn550976(v=vs.85))
 
  
-
- 
-
-
-
-
 

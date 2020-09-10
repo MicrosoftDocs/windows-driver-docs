@@ -34,30 +34,30 @@ The following table lists the predefined registry value names and their meanings
 <tbody>
 <tr class="odd">
 <td><p>STI_DEVICE_VALUE_ICM_PROFILE</p></td>
-<td><p>&quot;ICMProfile&quot;</p></td>
+<td><p>"ICMProfile"</p></td>
 <td><p>REG_MULTI_SZ type containing names of ICM profiles for the device.</p></td>
 </tr>
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_ISIS_NAME</p></td>
-<td><p>&quot;ISISDriverName&quot;</p></td>
-<td><p>REG_SZ type containing the device&#39;s ISIS driver name, such as &quot;epson.pxn&quot;.</p></td>
+<td><p>"ISISDriverName"</p></td>
+<td><p>REG_SZ type containing the device's ISIS driver name, such as "epson.pxn".</p></td>
 </tr>
 <tr class="odd">
 <td><p>STI_DEVICE_VALUE_TIMEOUT</p></td>
-<td><p>&quot;PollTimeout&quot;</p></td>
+<td><p>"PollTimeout"</p></td>
 <td><p>REG_DWORD type representing the time-out value, in milliseconds, that should be used when polling the device. The default value is 1000 (1 second).</p></td>
 </tr>
 <tr class="even">
 <td><p>STI_DEVICE_VALUE_TWAIN_NAME</p></td>
-<td><p>&quot;TwainDS&quot;</p></td>
-<td><p>REG_SZ type containing the displayable name of the device&#39;s TWAIN data source, such as &quot;HP PictureScan 3.0&quot;.</p></td>
+<td><p>"TwainDS"</p></td>
+<td><p>REG_SZ type containing the displayable name of the device's TWAIN data source, such as "HP PictureScan 3.0".</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](https://msdn.microsoft.com/library/windows/hardware/ff543801) and [**IStillImage::GetDeviceValue**](https://msdn.microsoft.com/library/windows/hardware/ff543786) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff543824) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
+Clients of the **StillImage** COM interface should call [**IStillImage::SetDeviceValue**](/previous-versions/windows/hardware/drivers/ff543801(v=vs.85)) and [**IStillImage::GetDeviceValue**](/previous-versions/windows/hardware/drivers/ff543786(v=vs.85)) to reference the registry. Still image minidrivers can call the Win32 registry API, specifying the registry key received by the minidriver's [**IStiUSD::Initialize**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize) method. Values for predefined registry entries can also be set from within [the INF file](inf-files-for-still-image-devices.md).
 
 ### Customized Registry Values
 
@@ -87,7 +87,7 @@ The following table lists registry entries that should not be modified by vendor
 <p>0x1 - informational messages</p>
 <p>0x2 - warning messages</p>
 <p>0x4 - error messages</p>
-<p>See <a href="https://msdn.microsoft.com/library/windows/hardware/ff543807" data-raw-source="[&lt;strong&gt;IStillImage::WriteToErrorLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543807)"><strong>IStillImage::WriteToErrorLog</strong></a>.</p></td>
+<p>See <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff543807(v=vs.85)" data-raw-source="[&lt;strong&gt;IStillImage::WriteToErrorLog&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff543807(v=vs.85))"><strong>IStillImage::WriteToErrorLog</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>HKLM\SYSTEM\CurrentControlSet\Control\StillImage\Logging\STIMON</strong></p></td>
@@ -114,9 +114,4 @@ The following table lists registry entries that should not be modified by vendor
  
 
  
-
- 
-
-
-
 

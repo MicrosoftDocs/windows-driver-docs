@@ -15,18 +15,13 @@ ms.localizationpriority: medium
 
 An IHV who intends to develop a port monitor must design it to support autoconfiguration. To provide support for autoconfiguration in an IHV port monitor, follow these guidelines:
 
--   Implement the [**SendRecvBidiDataFromPort**](https://msdn.microsoft.com/library/windows/hardware/ff562071) function and place the address of this function in the **pfnSendRecvBidiDataFromPort** member of the [**MONITOR2**](https://msdn.microsoft.com/library/windows/hardware/ff557532) structure.
+-   Implement the [**SendRecvBidiDataFromPort**](/previous-versions/ff562071(v=vs.85)) function and place the address of this function in the **pfnSendRecvBidiDataFromPort** member of the [**MONITOR2**](/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_monitor2) structure.
 
--   Support the [bidi communications schema](https://msdn.microsoft.com/library/windows/hardware/ff545175).
+-   Support the [bidi communications schema](./bidi-communications-schema-reference.md).
 
 -   Support bidi notifications.
 
 An IHV is not required to develop a port monitor if in-box support is sufficient. (For details, see [In-box Support for Autoconfiguration](in-box-support-for-autoconfiguration.md).) Be aware that in-box support is provided only for the standard TCP/IP port monitor and the Web Services for Devices (WSD) port monitor. IHVs who intend to provide autoconfiguration for local printers must provide a port monitor.
 
  
-
- 
-
-
-
 

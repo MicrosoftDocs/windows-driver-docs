@@ -34,7 +34,7 @@ Parameters
 ----------
 
 *Resource* \[in, out\]  
-Pointer to an opaque ERESOURCE structure. This structure must be allocated by the caller from nonpaged pool and initialized by calling [**ExInitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545317) or [**ExReinitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545542).
+Pointer to an opaque ERESOURCE structure. This structure must be allocated by the caller from nonpaged pool and initialized by calling [**ExInitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite) or [**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
 
 Return value
 ------------
@@ -58,19 +58,19 @@ Whether or when the caller is given shared access to the given resource depends 
 
 -   If the resource is currently owned as exclusive by another thread or if there is another thread waiting for exclusive access and the caller does not already have shared access to the resource, the current thread is put into a wait state until the resource can be acquired.
 
-**FltAcquireResourceShared** is a wrapper for [**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363) that disables normal kernel APC delivery.
+**FltAcquireResourceShared** is a wrapper for [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85)) that disables normal kernel APC delivery.
 
-Because **FltAcquireResourceShared** disables normal kernel APC delivery, it is not necessary to call [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) or [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) before calling **FltAcquireResourceShared**.
+Because **FltAcquireResourceShared** disables normal kernel APC delivery, it is not necessary to call [**KeEnterCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) or [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) before calling **FltAcquireResourceShared**.
 
 To release the resource after it is acquired, call [**FltReleaseResource**](fltreleaseresource.md). Every successful call to **FltAcquireResourceShared** must be matched by a subsequent call to **FltReleaseResource**.
 
 To acquire a resource for exclusive access, call [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md).
 
-To delete a resource from the system's resource list, call [**ExDeleteResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff544578).
+To delete a resource from the system's resource list, call [**ExDeleteResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite).
 
-To initialize a resource for reuse, call [**ExReinitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545542).
+To initialize a resource for reuse, call [**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite).
 
-For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](https://msdn.microsoft.com/library/windows/hardware/ff548046) in the Kernel Architecture Design Guide.
+For more information about ERESOURCE structures, see [Introduction to ERESOURCE Routines](../kernel/introduction-to-eresource-routines.md) in the Kernel Architecture Design Guide.
 
 Requirements
 ------------
@@ -103,13 +103,13 @@ Requirements
 ## See also
 
 
-[**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363)
+[**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85))
 
-[**ExDeleteResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff544578)
+[**ExDeleteResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeleteresourcelite)
 
-[**ExInitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545317)
+[**ExInitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite)
 
-[**ExReinitializeResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545542)
+[**ExReinitializeResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite)
 
 [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md)
 
@@ -117,14 +117,7 @@ Requirements
 
 [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md)
 
-[**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021)
+[**KeEnterCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion)
 
  
-
- 
-
-
-
-
-
 

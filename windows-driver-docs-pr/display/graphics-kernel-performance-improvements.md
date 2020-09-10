@@ -16,23 +16,17 @@ To help evaluate graphics hardware performance, Windows Display Driver Model (WD
 
 These reference topics describe how to implement this capability in your display miniport driver and user-mode display driver:
 
--   [*DxgkDdiCalibrateGpuClock*](https://msdn.microsoft.com/library/windows/hardware/dn467321)
--   [*DxgkDdiFormatHistoryBuffer*](https://msdn.microsoft.com/library/windows/hardware/dn439360)
--   [**DXGK\_HISTORY\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/dn439361)
--   [**DXGK\_HISTORY\_BUFFER\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/dn439362)
--   [**DXGKARG\_CALIBRATEGPUCLOCK**](https://msdn.microsoft.com/library/windows/hardware/dn467320)
--   [**DXGKARG\_FORMATHISTORYBUFFER**](https://msdn.microsoft.com/library/windows/hardware/dn439358)
--   [**DXGKARG\_HISTORYBUFFERPRECISION**](https://msdn.microsoft.com/library/windows/hardware/dn439359)
--   [**DRIVER\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff556169) (new **DxgkDdiCalibrateGpuClock** and **DxgkDdiFormatHistoryBuffer** members)
--   [**DXGK\_ALLOCATIONINFOFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff560966) (new **HistoryBuffer** member)
--   [**DXGK\_QUERYADAPTERINFOTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff562010) (new **DXGKQAITYPE\_HISTORYBUFFERPRECISION** constant value)
--   [*DxgkDdiCreateAllocation*](https://msdn.microsoft.com/library/windows/hardware/ff559606) (see "Allocating history buffers" in Remarks)
+-   [*DxgkDdiCalibrateGpuClock*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_calibrategpuclock)
+-   [*DxgkDdiFormatHistoryBuffer*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_formathistorybuffer)
+-   [**DXGK\_HISTORY\_BUFFER**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_history_buffer)
+-   [**DXGK\_HISTORY\_BUFFER\_HEADER**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_history_buffer_header)
+-   [**DXGKARG\_CALIBRATEGPUCLOCK**](./index.md)
+-   [**DXGKARG\_FORMATHISTORYBUFFER**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_formathistorybuffer)
+-   [**DXGKARG\_HISTORYBUFFERPRECISION**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_historybufferprecision)
+-   [**DRIVER\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_driver_initialization_data) (new **DxgkDdiCalibrateGpuClock** and **DxgkDdiFormatHistoryBuffer** members)
+-   [**DXGK\_ALLOCATIONINFOFLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationinfoflags) (new **HistoryBuffer** member)
+-   [**DXGK\_QUERYADAPTERINFOTYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype) (new **DXGKQAITYPE\_HISTORYBUFFERPRECISION** constant value)
+-   [*DxgkDdiCreateAllocation*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation) (see "Allocating history buffers" in Remarks)
 
  
-
- 
-
-
-
-
 

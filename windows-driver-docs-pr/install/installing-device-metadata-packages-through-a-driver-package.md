@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Installing Device Metadata Packages through a Driver Package
 
 
-A [driver package](driver-packages.md) can install device metadata packages by copying them to the [device metadata store](device-metadata-store.md). This is accomplished by using [**INF CopyFiles directives**](inf-copyfiles-directive.md) within the [**DestinationDirs**](inf-destinationdirs-section.md) and [**DDInstall**](inf-ddinstall-section.md) sections of the [INF file](inf-files.md) for the driver package.
+A [driver package](driver-packages.md) can install device metadata packages by copying them to the [device metadata store](device-metadata-store.md). This is accomplished by using [**INF CopyFiles directives**](inf-copyfiles-directive.md) within the [**DestinationDirs**](inf-destinationdirs-section.md) and [**DDInstall**](inf-ddinstall-section.md) sections of the [INF file](overview-of-inf-files.md) for the driver package.
 
 **Note**  We highly recommend that you install device metadata packages from the WMIS server instead of through driver packages. For more information, see [Installing Device Metadata Packages from WMIS](installing-device-metadata-packages-from-wmis.md).
 

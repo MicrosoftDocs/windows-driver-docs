@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using the CONNECT\_LINE\_BASED Version of IoConnectInterruptEx
 
 
-For Windows Vista and later operating systems, a driver can use the CONNECT\_LINE\_BASED version of [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) to register an [*InterruptService*](https://msdn.microsoft.com/library/windows/hardware/ff547958) routine for the driver's line-based interrupts. (Driver for earlier operating systems can use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.)
+For Windows Vista and later operating systems, a driver can use the CONNECT\_LINE\_BASED version of [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register an [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine for the driver's line-based interrupts. (Driver for earlier operating systems can use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.)
 
 **Note**   You can use this method only for drivers that register a single interrupt service routine (ISR) for all of its line-based interrupts. If the driver can receive multiple interrupts, it must use the CONNECT\_FULLY\_SPECIFIED version of **IoConnectInterruptEx**.
 
@@ -31,10 +31,10 @@ The following code example demonstrates how to register an *InterruptService* ro
 ```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
-// deviceExtension is a pointer to the driver&#39;s device extension. 
+// deviceExtension is a pointer to the driver's device extension. 
 //     deviceExtension->IntObj is a PKINTERRUPT.
-// deviceInterruptService is a pointer to the driver&#39;s InterruptService routine.
-// PhysicalDeviceObject is a pointer to the device&#39;s PDO. 
+// deviceInterruptService is a pointer to the driver's InterruptService routine.
+// PhysicalDeviceObject is a pointer to the device's PDO. 
 // ServiceContext is a pointer to driver-specified context for the ISR.
 
 RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
@@ -56,9 +56,4 @@ if (!NT_SUCCESS(status)) {
 ```
 
  
-
- 
-
-
-
 

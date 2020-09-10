@@ -34,7 +34,7 @@ The following figure shows the driver stack for a printer connected over a USB p
 
 ![plug and play for usb printers](images/pnpusb01.png)
 
-The following example shows the entries in an [**INF Manufacturer section**](https://msdn.microsoft.com/library/windows/hardware/ff547454) that can be used to install a USB or other bus-type printer driver. The first line guarantees a rank-0 hardware ID match if the printer is installed on a USB bus. The second line guarantees a rank-0 hardware ID match if the printer is installed on another bus. For more information, see [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md).
+The following example shows the entries in an [**INF Manufacturer section**](../install/inf-manufacturer-section.md) that can be used to install a USB or other bus-type printer driver. The first line guarantees a rank-0 hardware ID match if the printer is installed on a USB bus. The second line guarantees a rank-0 hardware ID match if the printer is installed on another bus. For more information, see [Installing a Custom Plug and Play Printer Driver](installing-a-custom-plug-and-play-printer-driver.md).
 
 ```cpp
  "Model Name XYZ" = Install_Section_XYZ, USBPRINT\Company_NameModelNam1234, Company_NameModelNam1234 ; plus any other compatible IDs  
@@ -42,9 +42,4 @@ The following example shows the entries in an [**INF Manufacturer section**](htt
 ```
 
  
-
- 
-
-
-
 

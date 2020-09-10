@@ -23,13 +23,13 @@ typedef NTSTATUS
     );
 ```
 
-The *FilterUnloadCallback* routine has one input parameter, *Flags*, which can be **NULL** or FLTFL\_FILTER\_UNLOAD\_MANDATORY. The filter manager sets this parameter to FLTFL\_FILTER\_UNLOAD\_MANDATORY to indicate that the unload operation is mandatory. For more information about this parameter, see [**PFLT\_FILTER\_UNLOAD\_CALLBACK**](https://msdn.microsoft.com/library/windows/hardware/ff551085).
+The *FilterUnloadCallback* routine has one input parameter, *Flags*, which can be **NULL** or FLTFL\_FILTER\_UNLOAD\_MANDATORY. The filter manager sets this parameter to FLTFL\_FILTER\_UNLOAD\_MANDATORY to indicate that the unload operation is mandatory. For more information about this parameter, see [**PFLT\_FILTER\_UNLOAD\_CALLBACK**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_filter_unload_callback).
 
 A minifilter driver's *FilterUnloadCallback* routine must perform the following steps:
 
 -   Close any open kernel-mode communication server port handles.
 
--   Call [**FltUnregisterFilter**](https://msdn.microsoft.com/library/windows/hardware/ff544606) to unregister the minifilter driver.
+-   Call [**FltUnregisterFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunregisterfilter) to unregister the minifilter driver.
 
 -   Perform any needed global cleanup.
 
@@ -46,9 +46,4 @@ This section includes:
 [Returning Status from a FilterUnloadCallback Routine](returning-status-from-a-filterunloadcallback-routine.md)
 
  
-
- 
-
-
-
 

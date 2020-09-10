@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE bug check has a value of 0x00000136. This indicates that an initialization failure occurred while attempting to boot from a VHD. The volume that hosts the VHD does not have enough free space to expand the VHD.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE Parameters
 

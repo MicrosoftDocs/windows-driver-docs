@@ -18,11 +18,11 @@ After you have created an INF file, you can use it to install, upgrade, and unin
 
 ### <span id="Right-Click_Install"></span><span id="right-click_install"></span><span id="RIGHT-CLICK_INSTALL"></span>Right-Click Install
 
-To execute the [**DefaultInstall**](https://msdn.microsoft.com/library/windows/hardware/ff547356) and [**DefaultInstall.Services**](https://msdn.microsoft.com/library/windows/hardware/ff547360) sections of your INF file, you should do the following:
+To execute the [**DefaultInstall**](../install/inf-defaultinstall-section.md) and [**DefaultInstall.Services**](../install/inf-defaultinstall-services-section.md) sections of your INF file, you should do the following:
 
-1.  In Windows Explorer, right-click the INF file name. A shortcut menu will appear.
+1.  In Windows Explorer, select and hold (or right-click) the INF file name. A shortcut menu will appear.
 
-2.  Click **Install**.
+2.  Select **Install**.
 
 **Note**   The shortcut menu appears only if the INF file contains a **DefaultInstall** section.
 
@@ -40,7 +40,7 @@ RUNDLL32.EXE SETUPAPI.DLL,InstallHinfSection DefaultInstall 132 path-to-inf\infn
 
 ### <span id="Setup_Application"></span><span id="setup_application"></span><span id="SETUP_APPLICATION"></span>Setup Application
 
-[**InstallHinfSection**](https://msdn.microsoft.com/library/windows/desktop/aa376957) can also be called from a setup application, as shown in the following code example:
+[**InstallHinfSection**](/windows/desktop/api/setupapi/nf-setupapi-installhinfsectiona) can also be called from a setup application, as shown in the following code example:
 
 ```cpp
 InstallHinfSection(NULL,NULL,TEXT("DefaultInstall 132 path-to-inf\infname.inf"),0); 
@@ -54,14 +54,9 @@ If you use a setup application to install your driver, observe the following gui
 
     For more information about how to list your application in Add or Remove Programs, see "Removing an Application" in the Setup and System Administration section of the Windows SDK documentation.
 
--   Setup applications should never copy driver INF files to the Windows INF file directory (*%windir%\\INF*). SetupAPI copies the files there automatically as part of the [**InstallHinfSection**](https://msdn.microsoft.com/library/windows/desktop/aa376957) call.
+-   Setup applications should never copy driver INF files to the Windows INF file directory (*%windir%\\INF*). SetupAPI copies the files there automatically as part of the [**InstallHinfSection**](/windows/desktop/api/setupapi/nf-setupapi-installhinfsectiona) call.
 
-For more information about setup applications, see [Writing a Device Installation Application](https://msdn.microsoft.com/library/windows/hardware/ff554015).
-
- 
+For more information about setup applications, see [Writing a Device Installation Application](../install/writing-a-device-installation-application.md).
 
  
-
-
-
 

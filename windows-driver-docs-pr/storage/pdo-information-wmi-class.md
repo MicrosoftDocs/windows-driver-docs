@@ -39,13 +39,7 @@ class PDO_INFORMATION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**PDO\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff563828) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**PDO\_INFORMATION**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_pdo_information) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

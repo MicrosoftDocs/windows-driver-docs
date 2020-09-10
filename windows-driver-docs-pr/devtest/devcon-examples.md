@@ -161,7 +161,7 @@ This section provides examples of the following Device Console (DevCon.exe) comm
 
 Because DevCon operations use IDs and ID patterns to identify devices, a common first step in using DevCon is to create a hardware ID reference file for devices on the computer.
 
-The following command uses the [**DevCon HwIDs**](devcon-hwids.md) operation, which returns the IDs and the device description. It uses the wildcard character (**\\***) to represent all devices on the local computer.
+The following command uses the [**DevCon HwIDs**](devcon-hwids.md) operation, which returns the IDs and the device description. It uses the wildcard character (**\***) to represent all devices on the local computer.
 
 ```
 devcon hwids *
@@ -169,7 +169,7 @@ devcon hwids *
 
 Because the output is lengthy and used repeatedly, save the output in a text file for reference.
 
-The following command uses the wildcard character (**\\***) to represent all devices on the computer. It uses the redirection character (*<em>&gt;</em>*) to save the command output in the hwids.txt file.
+The following command uses the wildcard character (**\***) to represent all devices on the computer. It uses the redirection character (*<em>&gt;</em>*) to save the command output in the hwids.txt file.
 
 ```
 devcon hwids * > hwids.txt
@@ -189,7 +189,7 @@ devcon /m:\\server01 hwids * > server01_hwids.txt
 
 To find the hardware IDs of a particular device, enter the hardware ID or pattern, the compatible ID or pattern, the device instance ID or pattern, or the name of the device setup class.
 
-The following command uses the **DevCon HwIDs** operation and a pattern to find the hardware IDs of the floppy disk drive on the computer. (The user assumes that the pattern appears in one of the device identifiers.) The command uses the wildcard character (**\\***) to represent all characters that might precede or follow the word "floppy" in any of the IDs.
+The following command uses the **DevCon HwIDs** operation and a pattern to find the hardware IDs of the floppy disk drive on the computer. (The user assumes that the pattern appears in one of the device identifiers.) The command uses the wildcard character (**\***) to represent all characters that might precede or follow the word "floppy" in any of the IDs.
 
 ```
 devcon hwids *floppy*
@@ -200,9 +200,9 @@ In response, DevCon displays the device instance ID, hardware ID, and compatible
 ```
 FDC\GENERIC_FLOPPY_DRIVE\5&39194F6D&0&0
     Name: Floppy disk drive
-    Hardware ID&#39;s:
+    Hardware ID's:
         FDC\GENERIC_FLOPPY_DRIVE
-    Compatible ID&#39;s:
+    Compatible ID's:
         GenFloppyDisk
 1 matching device(s) found.
 ```
@@ -222,17 +222,17 @@ In response, DevCon displays the hardware IDs and compatible IDs of the three de
 ```
 ACPI\PNP0401\4&B4063F4&0
     Name: ECP Printer Port (LPT1)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ACPI\PNP0401
         *PNP0401
 ACPI\PNP0501\1
     Name: Communications Port (COM1)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ACPI\PNP0501
         *PNP0501
 ACPI\PNP0501\2
     Name: Communications Port (COM2)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ACPI\PNP0501
         *PNP0501
 3 matching device(s) found.
@@ -303,12 +303,12 @@ The resulting display lists the devices in the Net class and includes the device
 ```
 PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0
     Name: 3Com 3C920 Integrated Fast Ethernet Controller (3C905C-TX Compatible)
-    Hardware ID&#39;s:
+    Hardware ID's:
         PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78
         PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028
         PCI\VEN_10B7&DEV_9200&CC_020000
         PCI\VEN_10B7&DEV_9200&CC_0200
-    Compatible ID&#39;s:
+    Compatible ID's:
         PCI\VEN_10B7&DEV_9200&REV_78
         PCI\VEN_10B7&DEV_9200
         PCI\VEN_10B7&CC_020000
@@ -318,23 +318,23 @@ PCI\VEN_10B7&DEV_9200&SUBSYS_00BE1028&REV_78\4&BB7B4AE&0&60F0
  PCI\CC_0200
 ROOT\MS_L2TPMINIPORT\0000
     Name: WAN Miniport (L2TP)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_l2tpminiport
 ROOT\MS_NDISWANIP\0000
     Name: WAN Miniport (IP)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_ndiswanip
 ROOT\MS_PPPOEMINIPORT\0000
     Name: WAN Miniport (PPPOE)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_pppoeminiport
 ROOT\MS_PPTPMINIPORT\0000
     Name: WAN Miniport (PPTP)
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_pptpminiport
 ROOT\MS_PTIMINIPORT\0000
     Name: Direct Parallel
-    Hardware ID&#39;s:
+    Hardware ID's:
         ms_ptiminiport
 6 matching device(s) found.
 ```
@@ -359,7 +359,7 @@ No devices for setup class "TapeDrive" (Tape drives) on \\server01.
 
 ### <span id="ddk_example_8_list_all_driver_files_tools"></span><span id="DDK_EXAMPLE_8_LIST_ALL_DRIVER_FILES_TOOLS"></span><a name="ddk_example_8_list_all_driver_files_tools"></a>Example 8: List all driver files
 
-The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to list the file names of drivers that devices on the system use. The command uses the wildcard character (**\\***) to indicate all devices on the system. Because the output is extensive, the command uses the redirection character (*<em>&gt;</em>*) to redirect the output to a reference file, driverfiles.txt.
+The following command uses the [**DevCon DriverFiles**](devcon-driverfiles.md) operation to list the file names of drivers that devices on the system use. The command uses the wildcard character (**\***) to indicate all devices on the system. Because the output is extensive, the command uses the redirection character (*<em>&gt;</em>*) to redirect the output to a reference file, driverfiles.txt.
 
 ```
 devcon driverfiles * > driverfiles.txt
@@ -620,7 +620,7 @@ In response, DevCon returns the device instance ID (displayed in bold text) and 
 ```
 LPTENUM\MICROSOFTRAWPORT\5&CA97D7E&0&LPT1
     Name: Printer Port Logical Interface
-    Hardware ID&#39;s:
+    Hardware ID's:
         LPTENUM\MicrosoftRawPort958A
         MicrosoftRawPort958A
 1 matching device(s) found.
@@ -687,7 +687,7 @@ ROOT\MS_PTIMINIPORT\0000
 
 ### <span id="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></span><span id="DDK_EXAMPLE_17_DISPLAY_THE_STATUS_OF_ALL_DEVICES_ON_THE_LOCAL_COMPUTER"></span><a name="ddk_example_17_display_the_status_of_all_devices_on_the_local_computer"></a>Example 17: Display the status of all devices on the local computer
 
-The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\\***) to represent all devices and the redirection character (*<em>&gt;</em>*) to redirect the output to the status.txt file.
+The following command uses the [**DevCon Status**](devcon-status.md) operation to find the status of all devices on the local computer. It then saves the status in the status.txt file for logging or later review. The command uses the wildcard character (**\***) to represent all devices and the redirection character (*<em>&gt;</em>*) to redirect the output to the status.txt file.
 
 ```
 devcon status * > status.txt
@@ -814,7 +814,7 @@ ROOT\RDP_MOU\0000
 
 The following commands use the [**DevCon Find**](devcon-find.md) operation to display all legacy devices on the local computer. Because legacy devices do not have a hardware ID, you must search for them by their device instance ID (registry path), ROOT\\LEGACY, or their setup class, LegacyDriver.
 
-The first command finds legacy drivers by a device instance ID pattern. The ID pattern is prefaced by the at character (**@**) to indicate a device instance ID and followed by the wildcard character (**\\***) to find all devices in the ROOT\\Legacy subkey.
+The first command finds legacy drivers by a device instance ID pattern. The ID pattern is prefaced by the at character (**@**) to indicate a device instance ID and followed by the wildcard character (**\***) to find all devices in the ROOT\\Legacy subkey.
 
 ```
 devcon find @root\legacy*
@@ -1070,7 +1070,7 @@ Class filters changed. Class devices must be restarted for changes to take effec
 The following command uses the [**DevCon Enable**](devcon-enable.md) operation to enable a programmable interrupt controller that had been disabled to correct a system problem. Because the controller hardware ID \*PNP0000 includes an asterisk, the command uses the single quote character (**'**) to direct DevCon to find the hardware ID precisely as it is specified in the command. Otherwise, the asterisk would be interpreted as a wildcard character.
 
 ```
-devcon enable &#39;*PNP0000
+devcon enable '*PNP0000
 ```
 
 In response, DevCon displays the device instance ID of the device and explains that you must reboot the system to enable the device.
@@ -1085,7 +1085,7 @@ You can respond by rebooting the system, either manually, or by using the [**Dev
 The following command adds the **/r** parameter to the previous command. The **/r** parameter reboots the system only if rebooting is required to complete an operation.
 
 ```
-devcon /r enable &#39;*PNP0000
+devcon /r enable '*PNP0000
 ```
 
 In response, DevCon enables the device and then reboots the system to make the enabling effective.
@@ -1093,7 +1093,7 @@ In response, DevCon enables the device and then reboots the system to make the e
 When the system starts, use a DevCon status command to confirm that the device is enabled.
 
 ```
-devcon status &#39;*PNP0000
+devcon status '*PNP0000
 
 ACPI\PNP0000\4&B4063F4&0
     Name: Programmable interrupt controller
@@ -1171,7 +1171,7 @@ You can use this command to replace signed drivers on the system with alternate 
 devcon update c:\windows\inf\test.inf *PNP0501
 ```
 
-In response, DevCon displays a **Hardware Installation** warning explaining that the driver has not passed Windows Logo testing. If you click the **Continue Anyway** button on the dialog box, the installation continues.
+In response, DevCon displays a **Hardware Installation** warning explaining that the driver has not passed Windows Logo testing. If you select the **Continue Anyway** button on the dialog box, the installation continues.
 
 Then, DevCon displays the following success message.
 
@@ -1220,7 +1220,7 @@ To install this device during an unattended setup, begin by adding the following
 Then, to the **\[GUIRunOnce\]** section of the unattended setup file, add the following DevCon command:
 
 ```
-a:\devcon /r install a:\Netloop.inf &#39;*MSLOOP
+a:\devcon /r install a:\Netloop.inf '*MSLOOP
 ```
 
 This command identifies the loopback adapter by using its hardware ID, \*MSLOOP. The single quote character preceding "\*MSLOOP" tells DevCon to interpret the string literally, that is, to interpret the asterisk as part of the hardware ID, not as a wildcard character.
@@ -1294,7 +1294,7 @@ devcon /m:\\server01 rescan
 The following command uses the [**DevCon Restart**](devcon-restart.md) operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, **ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as an device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
 
 ```
-devcon restart =net @&#39;ROOT\*MSLOOP\0000
+devcon restart =net @'ROOT\*MSLOOP\0000
 ```
 
 In response, DevCon displays the device instance ID of the device and reports the result.

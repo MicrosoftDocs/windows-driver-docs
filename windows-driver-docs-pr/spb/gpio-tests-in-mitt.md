@@ -22,9 +22,9 @@ GPIO test modules that are included in the MITT software package can be used to 
 ## Before you begin...
 
 
--   Get a MITT board and a GPIO adapter board. See [Buy hardware for using MITT](https://msdn.microsoft.com/library/windows/hardware/dn919811).
--   [Download the MITT software package](https://msdn.microsoft.com/library/windows/hardware/dn919810). Install it on the system under test.
--   Install MITT firmware on the MITT board. See [Get started with MITT](https://msdn.microsoft.com/library/windows/hardware/dn919779).
+-   Get a MITT board and a GPIO adapter board. See [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md).
+-   [Download the MITT software package](/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
+-   Install MITT firmware on the MITT board. See [Get started with MITT](./get-started-with-mitt---.md).
 
 ## Hardware setup
 
@@ -186,7 +186,4 @@ To generate a sequence, you need these values:
 ![gpio schematic](images/gpioschematic.png)
 
 ## Related topics
-[Testing with Multi Interface Test Tool (MITT)](https://msdn.microsoft.com/library/windows/hardware/dn919874)  
-
-
-
+[Testing with Multi Interface Test Tool (MITT)](./testing-with-multi-interface-test-tool--mitt-.md)

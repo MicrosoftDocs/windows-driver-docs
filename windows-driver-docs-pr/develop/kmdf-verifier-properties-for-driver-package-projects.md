@@ -8,16 +8,16 @@ ms.localizationpriority: medium
 
 # KMDF Verifier Properties for Driver Package Projects
 
-Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/).
+Sets the properties for the KMDF Verifier (or framework verifier) on a remote computer. You can use these settings when you build and deploy a KMDF driver to a test computer. For information about KMDF drivers, see [Kernel-Mode Driver Framework](../wdf/index.md).
 
-For more information about the framework verifier, see [Using the Framework's Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545540) and [WDF Verifier Control Application](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556129).
+For more information about the framework verifier, see [Using the Framework's Verifier](../wdf/using-kmdf-verifier.md) and [WDF Verifier Control Application](../devtest/wdf-verifier-control-application.md).
 
 ## <span id="Setting_KMDF_Verifier_properties_for_driver_package_projects"></span><span id="setting_kmdf_verifier_properties_for_driver_package_projects"></span><span id="SETTING_KMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting KMDF Verifier properties for driver package projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **KMDF Verifier**.
-3.  Click the **Enable KMDF Verifier** option and select **KMDF verifier is always on**. When this option is selected, you can configure the framework verification options for KMDF drivers.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **KMDF Verifier**.
+3.  Select the **Enable KMDF Verifier** option and select **KMDF verifier is always on**. When this option is selected, you can configure the framework verification options for KMDF drivers.
 
 <table>
 <colgroup>
@@ -33,7 +33,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Enable_KMDF_Verifier"></span><span id="enable_kmdf_verifier"></span><span id="ENABLE_KMDF_VERIFIER"></span><strong>Enable KMDF Verifier</strong></p></td>
-<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifer is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of <a href="https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448" data-raw-source="[Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)">Driver Verifier</a> if KMDF version is 1.9 or higher.</p></td>
+<td align="left"><p>Enables the KMDF verifier on the test computer. The choices are <strong>KMDF verifier is always on</strong> or <strong>KMDF verifer is off</strong>. If the KMDF verifier is not enabled, basic framework verification is enabled as part of <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> if KMDF version is 1.9 or higher.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="KMDF_Service_Names"></span><span id="kmdf_service_names"></span><span id="KMDF_SERVICE_NAMES"></span><strong>KMDF Service Names</strong></p></td>
@@ -51,7 +51,7 @@ For more information about the framework verifier, see [Using the Framework's Ve
 <td align="left"><p><span id="Forward_Progress_Handler_Testing"></span><span id="forward_progress_handler_testing"></span><span id="FORWARD_PROGRESS_HANDLER_TESTING"></span><strong>Forward Progress Handler Testing</strong></p></td>
 <td align="left"><p>Specifies options for testing forward progress handling of your driver.</p>
 <p><strong>No Allocation Failures</strong> No faults will be simulated to test the forward progress handling of your driver.</p>
-<p><strong>Fail All Allocations</strong> All I/O requests destined for a forward progress queue will appear to fail, relying on your driver&#39;s forward progress handling.</p>
+<p><strong>Fail All Allocations</strong> All I/O requests destined for a forward progress queue will appear to fail, relying on your driver's forward progress handling.</p>
 <p><strong>Randomly Fail Allocations</strong> Randomly fail I/O requests destined for a forward progress queue.</p></td>
 </tr>
 <tr class="even">
@@ -83,15 +83,8 @@ For more information about the framework verifier, see [Using the Framework's Ve
 ## <span id="related_topics"></span>Related topics
 
 
-* [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
-* [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)
+* [Kernel-Mode Driver Framework](../wdf/index.md)
+* [Driver Verifier](../devtest/driver-verifier.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
  
-
- 
-
-
-
-
-
 

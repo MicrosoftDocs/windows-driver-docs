@@ -81,16 +81,9 @@ Requirements
 ## See also
 
 
-[**GuardInterval**](https://msdn.microsoft.com/library/windows/hardware/ff559626)
+[**GuardInterval**](/previous-versions/windows/desktop/mstv/guardinterval)
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
-
- 
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
-
-
-
-
 

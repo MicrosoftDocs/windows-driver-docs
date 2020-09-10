@@ -51,7 +51,7 @@ For each parallel port enumerated in the system and for each parallel device enu
 <td><p>Parallel port</p></td>
 <td><p>FDO</p></td>
 <td><p>GUID_PARALLEL_DEVICE</p></td>
-<td><p>&quot;\Device\ParallelPort<em>m&quot;,</em></p>
+<td><p>"\Device\ParallelPort<em>m",</em></p>
 <p><em>m &gt;=</em> 0</p></td>
 <td><p>None</p></td>
 </tr>
@@ -59,29 +59,29 @@ For each parallel port enumerated in the system and for each parallel device enu
 <td><p>Raw parallel device</p></td>
 <td><p>PDO</p></td>
 <td><p>GUID_PARCLASS_DEVICE</p></td>
-<td><p>&quot;\Device\Parallel<em>m</em>&quot;,</p>
+<td><p>"\Device\Parallel<em>m</em>",</p>
 <p><em>m &gt;=</em> 0</p></td>
-<td><p>&quot;LPT<em>n</em>&quot;,</p>
+<td><p>"LPT<em>n</em>",</p>
 <p><em>n = m +</em> 1</p></td>
 </tr>
 <tr class="odd">
 <td><p>IEEE 1284.3 device</p></td>
 <td><p>PDO</p></td>
 <td><p>None</p></td>
-<td><p>&quot;\Device\Parallel<em>m.x</em>&quot;,</p>
+<td><p>"\Device\Parallel<em>m.x</em>",</p>
 <p><em>m &gt;=</em> 0<em>,</em></p>
 <p>Windows 2000: <em>x =</em> 0 <em>to</em> 3</p>
 <p>Windows XP and later: <em>x =</em> 0 <em>or</em> 1</p></td>
-<td><p>&quot;LPT<em>n.x</em>&quot;,</p>
+<td><p>"LPT<em>n.x</em>",</p>
 <p><em>n = m +</em>1</p></td>
 </tr>
 <tr class="even">
 <td><p>IEEE 1284 end-of-chain device</p></td>
 <td><p>PDO</p></td>
 <td><p>None</p></td>
-<td><p>&quot;\Device\Parallel<em>m.</em>4&quot;</p>
+<td><p>"\Device\Parallel<em>m.</em>4"</p>
 <p><em>m</em> &gt;= 0</p></td>
-<td><p>&quot;LPT<em>n.</em>4&quot;</p>
+<td><p>"LPT<em>n.</em>4"</p>
 <p><em>n = m +</em>1</p></td>
 </tr>
 </tbody>
@@ -110,26 +110,26 @@ For example, the following device names and symbolic links are assigned to "\\De
 <tr class="odd">
 <td><p>Parallel Port</p></td>
 <td><p>FDO</p></td>
-<td><p>&quot;\Device\ParallelPort0&quot;</p></td>
+<td><p>"\Device\ParallelPort0"</p></td>
 <td><p>None</p></td>
 </tr>
 <tr class="even">
 <td><p>IEEE 1284.3 device</p></td>
 <td><p>PDO</p></td>
-<td><p>&quot;\Device\Parallel0.0&quot;</p></td>
-<td><p>&quot;LPT1.0&quot;</p></td>
+<td><p>"\Device\Parallel0.0"</p></td>
+<td><p>"LPT1.0"</p></td>
 </tr>
 <tr class="odd">
 <td><p>IEEE 1284.3 device</p></td>
 <td><p>PDO</p></td>
-<td><p>&quot;\Device\Parallel0.1&quot;</p></td>
-<td><p>&quot;LPT1.1&quot;</p></td>
+<td><p>"\Device\Parallel0.1"</p></td>
+<td><p>"LPT1.1"</p></td>
 </tr>
 <tr class="even">
 <td><p>IEEE 1284 end-of-chain device</p></td>
 <td><p>PDO</p></td>
-<td><p>&quot;\Device\Parallel0.4&quot;</p></td>
-<td><p>&quot;LPT1.4&quot;</p></td>
+<td><p>"\Device\Parallel0.4"</p></td>
+<td><p>"LPT1.4"</p></td>
 </tr>
 </tbody>
 </table>

@@ -16,13 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_format_operations_gg"></span><span id="DDK_FORMAT_OPERATIONS_GG"></span>
 
 
-When reporting supported surface formats a DirectX 8.0 driver must also indicate which operations can be performed on surfaces of that format. The supported operations for a pixel format are reported through the **dwOperations** field of the [**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274) structure. The driver should set this field to the logical combination of all supported operations for surfaces of that format.
+When reporting supported surface formats a DirectX 8.0 driver must also indicate which operations can be performed on surfaces of that format. The supported operations for a pixel format are reported through the **dwOperations** field of the [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure. The driver should set this field to the logical combination of all supported operations for surfaces of that format.
 
  
-
- 
-
-
-
-
 

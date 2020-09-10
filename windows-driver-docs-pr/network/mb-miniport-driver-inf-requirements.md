@@ -128,12 +128,12 @@ This keyword is set with one or more combinations of the following strings as ap
 <td align="left"><p><strong>Description</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;flpp4&quot;</p></td>
-<td align="left"><p>Miniport drivers specify &quot;flpp4&quot; if the MB device supports IPv4.</p></td>
+<td align="left"><p>"flpp4"</p></td>
+<td align="left"><p>Miniport drivers specify "flpp4" if the MB device supports IPv4.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>&quot;flpp6&quot;</p></td>
-<td align="left"><p>Miniport drivers specify &quot;flpp6&quot; if the MB device supports IPv6. This value is needed only for devices that support IPv6.</p></td>
+<td align="left"><p>"flpp6"</p></td>
+<td align="left"><p>Miniport drivers specify "flpp6" if the MB device supports IPv6. This value is needed only for devices that support IPv6.</p></td>
 </tr>
 </tbody>
 </table>
@@ -155,7 +155,7 @@ This keyword must have, at the minimum, the following value when media type is N
 <td align="left"><p><strong>Description</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;ppip&quot;</p></td>
+<td align="left"><p>"ppip"</p></td>
 <td align="left"><p>MB device type on the lower edge.</p></td>
 </tr>
 </tbody>

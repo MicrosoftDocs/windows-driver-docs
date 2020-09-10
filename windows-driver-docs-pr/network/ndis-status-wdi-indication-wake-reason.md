@@ -21,16 +21,16 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON to indicate the
 
 When the host goes to low power state, it offloads a few functions to the NIC and arms the NIC for wake. When a wake event occurs, the NIC asserts the wake interrupt line to wake the host. The host then brings the NIC into D0 (running power state). The NIC must indicate the wake reason once it enters D0.
 
-If the wake reason is a wake packet, the NIC should also include the wake packet and the wake pattern ID that matches the packet. The packet is encapsulated as [**WDI\_TLV\_INDICATION\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/dn897833). The wake reason should also include [**WDI\_TLV\_INDICATION\_WAKE\_PACKET\_PATTERN\_ID**](https://msdn.microsoft.com/library/windows/hardware/dn897832) to specify the pattern ID which matches the packet.
+If the wake reason is a wake packet, the NIC should also include the wake packet and the wake pattern ID that matches the packet. The packet is encapsulated as [**WDI\_TLV\_INDICATION\_WAKE\_PACKET**](./wdi-tlv-indication-wake-packet.md). The wake reason should also include [**WDI\_TLV\_INDICATION\_WAKE\_PACKET\_PATTERN\_ID**](./wdi-tlv-indication-wake-packet-pattern-id.md) to specify the pattern ID which matches the packet.
 
 ## Payload data
 
 
 | Type                                                                                                      | Multiple TLV instances allowed | Optional | Description                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_INDICATION\_WAKE\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn897834)                         |                                |          | The wake reason.                                                                                            |
-| [**WDI\_TLV\_INDICATION\_WAKE\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/dn897833)                         |                                | X        | The wake packet.                                                                                            |
-| [**WDI\_TLV\_INDICATION\_WAKE\_PACKET\_PATTERN\_ID**](https://msdn.microsoft.com/library/windows/hardware/dn897832) |                                | X        | The ID of the pattern that matches the wake packet. The ID is obtained from the Add command of the pattern. |
+| [**WDI\_TLV\_INDICATION\_WAKE\_REASON**](./wdi-tlv-indication-wake-reason.md)                         |                                |          | The wake reason.                                                                                            |
+| [**WDI\_TLV\_INDICATION\_WAKE\_PACKET**](./wdi-tlv-indication-wake-packet.md)                         |                                | X        | The wake packet.                                                                                            |
+| [**WDI\_TLV\_INDICATION\_WAKE\_PACKET\_PATTERN\_ID**](./wdi-tlv-indication-wake-packet-pattern-id.md) |                                | X        | The ID of the pattern that matches the wake packet. The ID is obtained from the Add command of the pattern. |
 
  
 
@@ -59,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

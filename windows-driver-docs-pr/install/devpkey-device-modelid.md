@@ -18,13 +18,19 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_ModelId
 
 
-The DEVPKEY_Device_ModelId device property matches a device to a [device metadata package](https://msdn.microsoft.com/library/windows/hardware/ff541439).
+The DEVPKEY_Device_ModelId device property matches a device to a [device metadata package](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages).
 
 <table>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -52,9 +58,9 @@ Remarks
 
 The DEVPKEY_Device_ModelId device property provides support for IHVs and OEMs to uniquely identify devices that share the same manufacturer and model. By using a model identifier (ModelID), OEMs and IHVs can match the device model that they distribute to their own branded device metadata package.
 
-The DEVPKEY_Device_ModelId device property contains the value of the [**ModelID**](https://msdn.microsoft.com/library/windows/hardware/ff549295) XML element from the device's metadata package. When the device is installed, this PKEY is populated with the ModelID GUID value as reported by the device.
+The DEVPKEY_Device_ModelId device property contains the value of the [**ModelID**](/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)) XML element from the device's metadata package. When the device is installed, this PKEY is populated with the ModelID GUID value as reported by the device.
 
-For more information, see [Device Metadata Packages](https://msdn.microsoft.com/library/windows/hardware/ff541439).
+For more information, see [Device Metadata Packages](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages).
 
 Requirements
 ------------
@@ -79,18 +85,11 @@ Requirements
 ## See also
 
 
-[Device Metadata Packages](https://msdn.microsoft.com/library/windows/hardware/ff541439)
+[Device Metadata Packages](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages)
 
-[**ModelID**](https://msdn.microsoft.com/library/windows/hardware/ff549295)
+[**ModelID**](/previous-versions/windows/hardware/metadata/ff549295(v=vs.85))
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

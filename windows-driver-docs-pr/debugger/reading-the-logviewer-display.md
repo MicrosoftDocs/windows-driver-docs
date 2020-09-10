@@ -31,8 +31,8 @@ Each row of the display contains several columns. The significance of each colum
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>+/-</strong></p></td>
-<td align="left"><p>If this column contains a &quot;+&quot; (plus sign), it indicates that the function takes one or more parameters. To see the parameters and their values, either double-click the row or hit the right arrow key when the row is outlined in red. To hide it again, double click it again or hit the left arrow key when the row is outlined in red.</p>
-<p>There is also a &quot;d#&quot; value in this column. This indicates the &quot;depth&quot; of the function call (in other words, how deep the call is nested in other logged function calls).</p></td>
+<td align="left"><p>If this column contains a "+" (plus sign), it indicates that the function takes one or more parameters. To see the parameters and their values, either double-click the row or hit the right arrow key when the row is outlined in red. To hide it again, double click it again or hit the left arrow key when the row is outlined in red.</p>
+<p>There is also a "d#" value in this column. This indicates the "depth" of the function call (in other words, how deep the call is nested in other logged function calls).</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>#</strong></p></td>

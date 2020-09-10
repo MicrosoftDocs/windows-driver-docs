@@ -16,13 +16,7 @@ This section includes:
 
 [Debugging Code Overview](debugging-code-overview.md)
 
-[Debugging Code Reference](https://msdn.microsoft.com/library/windows/hardware/ff544622)
+[Debugging Code Reference](/previous-versions/windows/hardware/previsioning-framework/ff544622(v=vs.85))
 
  
-
- 
-
-
-
-
 

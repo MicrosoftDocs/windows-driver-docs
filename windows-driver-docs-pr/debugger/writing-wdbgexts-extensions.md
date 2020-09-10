@@ -21,13 +21,7 @@ This section includes:
 
 [WdbgExts Extension Design Guide](wdbgexts-extension-design-guide.md)
 
-[WdbgExts Extension Reference](https://msdn.microsoft.com/library/windows/hardware/ff561252)
+[WdbgExts Extension Reference](/windows-hardware/drivers/ddi/wdbgexts/)
 
  
-
- 
-
-
-
-
 

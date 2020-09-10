@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The [**IWiaLog interface**](https://msdn.microsoft.com/library/windows/hardware/ff543935) is obsolete in Microsoft Windows XP and later and is no longer supported. Use the WIA Diagnostic Log Macros instead.
+The [**IWiaLog interface**](/windows-hardware/drivers/ddi/wia_lh/nn-wia_lh-iwialog) is obsolete in Microsoft Windows XP and later and is no longer supported. Use the WIA Diagnostic Log Macros instead.
 
 It is provided for backward compatibility only. The methods in this interface allow a minidriver to write error, trace, and warning messages to a log. The **IWiaLog** interface provides the following methods.
 
@@ -29,15 +29,15 @@ It is provided for backward compatibility only. The methods in this interface al
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543932" data-raw-source="[&lt;strong&gt;IWiaLog::InitializeLog&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543932)"><strong>IWiaLog::InitializeLog</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwialog-initializelog" data-raw-source="[&lt;strong&gt;IWiaLog::InitializeLog&lt;/strong&gt;](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwialog-initializelog)"><strong>IWiaLog::InitializeLog</strong></a></p></td>
 <td><p>Initializes the logging utility.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543939" data-raw-source="[&lt;strong&gt;IWiaLog::Log&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543939)"><strong>IWiaLog::Log</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwialog-log" data-raw-source="[&lt;strong&gt;IWiaLog::Log&lt;/strong&gt;](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwialog-log)"><strong>IWiaLog::Log</strong></a></p></td>
 <td><p>Logs a message to a file or other target.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff543928" data-raw-source="[&lt;strong&gt;IWiaLog::hResult&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff543928)"><strong>IWiaLog::hResult</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwialog-hresult" data-raw-source="[&lt;strong&gt;IWiaLog::hResult&lt;/strong&gt;](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwialog-hresult)"><strong>IWiaLog::hResult</strong></a></p></td>
 <td><p>Translates an HRESULT into a string.</p></td>
 </tr>
 </tbody>
@@ -45,12 +45,7 @@ It is provided for backward compatibility only. The methods in this interface al
 
  
 
-For more information about this interface, see [IWiaLog Interface and Diagnostic Log Macros](https://msdn.microsoft.com/library/windows/hardware/ff543937).
+For more information about this interface, see [IWiaLog Interface and Diagnostic Log Macros](/windows-hardware/drivers/ddi/_image/index).
 
  
-
- 
-
-
-
 

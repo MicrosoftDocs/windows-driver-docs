@@ -2,12 +2,15 @@
 title: Installing Just the Checked Operating System and HAL
 description: Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
 ms.assetid: 1203b7cd-50b9-4174-8bec-112019444fac
-ms.date: 04/20/2017
+ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---
 
 # Installing Just the Checked Operating System and HAL (For Windows Vista and Later)
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
 
 Instead of installing the complete checked build on your computer, you can install the free build of the system, and then install the checked versions of the operating system image and the hardware abstraction layer (HAL). If you use this procedure, you can configure the boot loader to provide you with two boot options. One boot option is for the free build. The second boot option starts the system using the checked operating system image and HAL, but uses free versions of all other system components.
 
@@ -15,7 +18,7 @@ Instead of installing the complete checked build on your computer, you can insta
 
 Before you install a partial checked build, you must determine the version of the operating system image and HAL files that were used to install the free build on your system.
 
-**Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](https://msdn.microsoft.com/library/windows/hardware/ff557573), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Installing the Checked Build](installing-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2---copying-the-checked-files).
+**Tip**   For 64-bit versions of Windows Vista and later, this process is easy. If you have the [Windows Driver Kit (WDK)](../index.yml), you can use the operating system image and HAL files from the Debug\\ directory of the WDK. See [Installing the Checked Build](installing-the-checked-build.md). There is only one version of each for amd64 or ia64. The names of the files are ntkrnlmp.exe and Hal.dll. If you have the WDK for the version of Windows you are using, you can skip ahead to [Step 2: Copying the Checked Files](#step-2---copying-the-checked-files).
 
  
 
@@ -34,11 +37,11 @@ The following example is from a setupapi.dev.log file. The *SourceFilename* is h
 ```
 {FILE_QUEUE_COPY}
    CopyStyle      - 0x09180000
-   SourceRootPath - &#39;C:\Windows\System32\DriverStore\FileRepository\hal.inf_0c52392f&#39;
-   SourceFilename - &#39;halmacpi.dll&#39;
-   TargetDirectory- &#39;C:\Windows\system32&#39;
-   TargetFilename - &#39;hal.dll&#39;
-   SourceDesc     - &#39;windows cd&#39;
+   SourceRootPath - 'C:\Windows\System32\DriverStore\FileRepository\hal.inf_0c52392f'
+   SourceFilename - 'halmacpi.dll'
+   TargetDirectory- 'C:\Windows\system32'
+   TargetFilename - 'hal.dll'
+   SourceDesc     - 'windows cd'
 {FILE_QUEUE_COPY exit(0x00000000)}
 ```
 
@@ -121,7 +124,7 @@ For general instructions on using BCDEdit, see [Tools for Changing Boot Options 
 **Note**  Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
  
-To configure a partial checked build on Windows Vista and later, use the [**BCDEdit /set**](https://msdn.microsoft.com/library/windows/hardware/ff542202) command and the **kernel** and **hal** options.
+To configure a partial checked build on Windows Vista and later, use the [**BCDEdit /set**](./bcdedit--set.md) command and the **kernel** and **hal** options.
 
 For example, the following commands configure a boot entry to use the checked versions of the kernel and HAL.
 
@@ -133,7 +136,7 @@ bcdedit /set {44a942bf-d6ee-11e3-baf8-000ffee4f6cd} kernel ntkrnlmp.chk
 bcdedit /set {44a942bf-d6ee-11e3-baf8-000ffee4f6cd} hal hal.chk
 ```
 
-You must also configure the computer for kernel debugging. Specifically, you must enable the boot entry for boot debugging [**BCDEdit /bootdebug**](https://msdn.microsoft.com/library/windows/hardware/ff542183). If you do not enable boot debugging and you do not have a kernel debugger connected to the computer, the computer will boot into the Windows Recover Environment if you select this new boot entry.
+You must also configure the computer for kernel debugging. Specifically, you must enable the boot entry for boot debugging [**BCDEdit /bootdebug**](./bcdedit--bootdebug.md). If you do not enable boot debugging and you do not have a kernel debugger connected to the computer, the computer will boot into the Windows Recover Environment if you select this new boot entry.
 
 ```
 bcdedit /bootdebug {44a942bf-d6ee-11e3-baf8-000ffee4f6cd} on
@@ -187,16 +190,9 @@ Microsoft (R) Windows (R) 6.00. 6001 Service Pack 1 Multiprocessor Checked.
 ## Related topics
 
 
-[Setting Up Debugging (Kernel-Mode and User-Mode)](https://msdn.microsoft.com/library/windows/hardware/hh450944)
+[Setting Up Debugging (Kernel-Mode and User-Mode)](../debugger/getting-set-up-for-debugging.md)
 
-[Debugging Tools for Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063)
-
- 
+[Debugging Tools for Windows](../debugger/index.md)
 
  
-
-
-
-
-
 

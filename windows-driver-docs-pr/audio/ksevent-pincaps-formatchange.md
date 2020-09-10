@@ -38,8 +38,8 @@ The `KSEVENT_PINCAPS_FORMATCHANGE` event indicates to the audio stack that the a
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561744" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561744)"><strong>KSEVENT</strong></a></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561750" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561750)"><strong>KSEVENTDATA</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -51,14 +51,14 @@ The event value type (operation data) is a **KSEVENTDATA** structure that specif
 Remarks
 -------
 
-When an audio port driver calls the [**EventHandler**](https://msdn.microsoft.com/library/windows/hardware/ff536374) routine for its miniport driver, it passes a [**PCEVENT\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537693) structure. This structure contains a pointer to a [**PCEVENT\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff537692) structure that is used to describe an event that is supported by a filter, pin, or node.
+When an audio port driver calls the [**EventHandler**](/windows-hardware/drivers/ddi/portcls/nc-portcls-pcpfnevent_handler) routine for its miniport driver, it passes a [**PCEVENT\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcevent_request) structure. This structure contains a pointer to a [**PCEVENT\_ITEM**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcevent_item) structure that is used to describe an event that is supported by a filter, pin, or node.
 
 So, for example, a driver that supports the `KSEVENT_PINCAPS_FORMATCHANGE` event must populate a **PCEVENT\_ITEM** structure as follows:
 
 ```cpp
 static PCEVENT_ITEM FormatChangePinEvent[] = {
   {
-    &amp;KSEVENTSETID_PinCapsChange,
+    &KSEVENTSETID_PinCapsChange,
     KSEVENT_PINCAPS_FORMATCHANGE,
     KSEVENT_TYPE_ENABLE | KSEVENT_TYPE_BASICSUPPORT,
     MyEventHandler
@@ -66,11 +66,11 @@ static PCEVENT_ITEM FormatChangePinEvent[] = {
 };
 ```
 
-In the preceding code example, the MyEventHandler custom event handler must monitor the `KSEVENT_PINCAPS_FORMATCHANGE` event and register it with Portcls when KSEVENT\_PINCAPS\_FORMATCHANGE is triggered. The miniport driver must call the [**IPortEvents::AddEventToEventList**](https://msdn.microsoft.com/library/windows/hardware/ff536886) method to register the event.
+In the preceding code example, the MyEventHandler custom event handler must monitor the `KSEVENT_PINCAPS_FORMATCHANGE` event and register it with Portcls when KSEVENT\_PINCAPS\_FORMATCHANGE is triggered. The miniport driver must call the [**IPortEvents::AddEventToEventList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportevents-addeventtoeventlist) method to register the event.
 
-To obtain a description of the pins, nodes, connections and properties supported by the miniport driver, the port driver calls the [**IMiniport::GetDescription**](https://msdn.microsoft.com/library/windows/hardware/ff536765) method. This method call returns a [**PCFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537694) structure that points to an automation table ([**PCAUTOMATION\_TABLE**](https://msdn.microsoft.com/library/windows/hardware/ff537685)). The **PCAUTOMATION\_TABLE** structure has an **Events** member. This member points to an array of the events that are associated with the filter that the miniport driver supports. So you must set the **Events** member to point to the event array that contains the **PCEVENT\_ITEM** structure for the `KSEVENT_PINCAPS_FORMATCHANGE` event.
+To obtain a description of the pins, nodes, connections and properties supported by the miniport driver, the port driver calls the [**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method. This method call returns a [**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor) structure that points to an automation table ([**PCAUTOMATION\_TABLE**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcautomation_table)). The **PCAUTOMATION\_TABLE** structure has an **Events** member. This member points to an array of the events that are associated with the filter that the miniport driver supports. So you must set the **Events** member to point to the event array that contains the **PCEVENT\_ITEM** structure for the `KSEVENT_PINCAPS_FORMATCHANGE` event.
 
-When the miniport driver detects a dynamic format change, it must call the [**IPortEvents::GenerateEventList**](https://msdn.microsoft.com/library/windows/hardware/ff536889) method to signal the `KSEVENT_PINCAPS_FORMATCHANGE` event.
+When the miniport driver detects a dynamic format change, it must call the [**IPortEvents::GenerateEventList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportevents-generateeventlist) method to signal the `KSEVENT_PINCAPS_FORMATCHANGE` event.
 
 Requirements
 ------------
@@ -95,32 +95,25 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**EventHandler**](https://msdn.microsoft.com/library/windows/hardware/ff536374)
+[**EventHandler**](/windows-hardware/drivers/ddi/portcls/nc-portcls-pcpfnevent_handler)
 
-[**IMiniport::GetDescription**](https://msdn.microsoft.com/library/windows/hardware/ff536765)
+[**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription)
 
-[**IPortEvents::AddEventToEventList**](https://msdn.microsoft.com/library/windows/hardware/ff536886)
+[**IPortEvents::AddEventToEventList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportevents-addeventtoeventlist)
 
-[**IPortEvents::GenerateEventList**](https://msdn.microsoft.com/library/windows/hardware/ff536889)
+[**IPortEvents::GenerateEventList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportevents-generateeventlist)
 
-[**KSEVENT**](https://msdn.microsoft.com/library/windows/hardware/ff561744)
+[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
 
-[**KSEVENTDATA**](https://msdn.microsoft.com/library/windows/hardware/ff561750)
+[**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 
-[**PCAUTOMATION\_TABLE**](https://msdn.microsoft.com/library/windows/hardware/ff537685)
+[**PCAUTOMATION\_TABLE**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcautomation_table)
 
-[**PCEVENT\_ITEM**](https://msdn.microsoft.com/library/windows/hardware/ff537692)
+[**PCEVENT\_ITEM**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcevent_item)
 
-[**PCEVENT\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff537693)
+[**PCEVENT\_REQUEST**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcevent_request)
 
-[**PCFILTER\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537694)
-
- 
+[**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor)
 
  
-
-
-
-
-
 

@@ -83,16 +83,9 @@ Requirements
 ## See also
 
 
-[**BDA\_PID\_UNMAP**](https://msdn.microsoft.com/library/windows/hardware/ff556540)
+[**BDA\_PID\_UNMAP**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_pid_unmap)
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
-
- 
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
-
-
-
-
 

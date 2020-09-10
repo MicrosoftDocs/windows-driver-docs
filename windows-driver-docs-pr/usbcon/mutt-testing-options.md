@@ -1,5 +1,5 @@
 ---
-Description: Before using MUTT devices, you must prepare the test system.
+description: Before using MUTT devices, you must prepare the test system.
 title: How to prepare the test system to run MUTT test tools
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -64,7 +64,7 @@ The instructions in this document are based on the following assumptions:
 Go to https://aka.ms/usbtrace for instructions and to download a script for capturing ETW traces from the USB drivers.
 
 ## Related topics
-[USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
 [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
 
 

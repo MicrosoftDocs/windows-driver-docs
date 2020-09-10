@@ -23,7 +23,7 @@ Clients enable the KSEVENT\_DYNAMIC\_FORMAT\_CHANGE event to signal that a dynam
 Remarks
 -------
 
-AVStream hardware codec drivers generate KSEVENT\_DYNAMIC\_FORMAT\_CHANGE. For more information, see [Supporting Dynamic Format Changes in AVStream Codecs](https://msdn.microsoft.com/library/windows/hardware/ff568483).
+AVStream hardware codec drivers generate KSEVENT\_DYNAMIC\_FORMAT\_CHANGE. For more information, see [Supporting Dynamic Format Changes in AVStream Codecs](./supporting-dynamic-format-changes-in-avstream-codecs.md).
 
 Requirements
 ------------
@@ -46,10 +46,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

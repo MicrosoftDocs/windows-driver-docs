@@ -104,13 +104,7 @@ Creating a background task and registering it for a custom trigger is very simil
     }
     ```
 
-For additional guidance about creating, configuring, and working with background tasks and triggers, see [Quickstart: Create and register a background task](https://msdn.microsoft.com/library/windows/apps/hh977055.aspx).
+For additional guidance about creating, configuring, and working with background tasks and triggers, see [Quickstart: Create and register a background task](/previous-versions/windows/apps/hh977055(v=win.10)).
 
  
-
- 
-
-
-
-
 

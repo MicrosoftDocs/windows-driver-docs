@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using IoConnectInterruptEx Prior to Windows Vista
 
 
-A driver for Windows 2000, Windows XP, or Windows Server 2003 can link to the Iointex.lib library to use [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) on those versions of the operating system.
+A driver for Windows 2000, Windows XP, or Windows Server 2003 can link to the Iointex.lib library to use [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) on those versions of the operating system.
 
 To use **IoConnectInterruptEx** in such a driver, include Iointex.h in the source code for your driver, immediately following Wdm.h or Ntddk.h. The Iointex.h header declares a prototype for the routine. When you build your driver, make sure that it is statically linked to Iointex.lib.
 
@@ -23,7 +23,7 @@ The following code example illustrates the technique:
 ```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
-// deviceExtension is a pointer to the driver&#39;s device extension. 
+// deviceExtension is a pointer to the driver's device extension. 
 //     deviceExtension->MessageUsed is a BOOLEAN.
 
 RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
@@ -39,7 +39,7 @@ if ( NT_SUCCESS(status) ) {
 } else {
     // Check to see if we are running on an operating system prior to Windows Vista.
     if (params.Version == CONNECT_FULLY_SPECIFIED) {
-        devExt->MessageUsed = FALSE;  // We&#39;re not using message-signaled interrupts.
+        devExt->MessageUsed = FALSE;  // We're not using message-signaled interrupts.
  
         // Set members of params.FullySpecified here.
  
@@ -51,9 +51,4 @@ if ( NT_SUCCESS(status) ) {
 ```
 
  
-
- 
-
-
-
 

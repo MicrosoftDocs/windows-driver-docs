@@ -49,7 +49,7 @@ The macro is defined as follows:
         WDF_PTR_ADD_OFFSET_TYPE(_ptr, _offset, PVOID)
 ```
 
-Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In the example, the driver calls **WDF_PTR_ADD_OFFSET** to add an offset to an address to determine a destination buffer address to pass to the [**WDF_WMI_BUFFER_APPEND_STRING**](https://msdn.microsoft.com/library/windows/hardware/ff553057) function.
+Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In the example, the driver calls **WDF_PTR_ADD_OFFSET** to add an offset to an address to determine a destination buffer address to pass to the [**WDF_WMI_BUFFER_APPEND_STRING**](/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdf_wmi_buffer_append_string) function.
 
 ```cpp
         //
@@ -59,8 +59,8 @@ Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In 
         status = WDF_WMI_BUFFER_APPEND_STRING(
             WDF_PTR_ADD_OFFSET(wnode, wnode->OffsetInstanceName),
             size,
-            &amp;deviceName,
-            &amp;length
+            &deviceName,
+            &length
             );
 
         //
@@ -76,8 +76,8 @@ Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In 
         WDF_WMI_BUFFER_APPEND_STRING(
             WDF_PTR_ADD_OFFSET(wnode,  wnode->DataBlockOffset),
             size,
-            &amp;modelName,
-            &amp;length
+            &modelName,
+            &length
             );
 ```
 
@@ -108,13 +108,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-

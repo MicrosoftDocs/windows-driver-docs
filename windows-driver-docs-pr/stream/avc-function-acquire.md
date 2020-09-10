@@ -91,8 +91,8 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ## See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb)
 
-[**AVC\_PIN\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff554187)
+[**AVC\_PIN\_ID**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_pin_id)
 
-[**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145)
+[**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function)

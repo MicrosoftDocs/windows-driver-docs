@@ -20,7 +20,7 @@ DirectX VA allows video processing operations that are frequently executed and s
 
 The DirectX VA API and corresponding [motion compensation](motion-compensation.md) DDI provide support for the following operations:
 
--   [Alpha blending](https://msdn.microsoft.com/library/windows/hardware/ff538232) for purposes such as DVD subpicture support.
+-   [Alpha blending](/windows-hardware/drivers/ddi/index) for purposes such as DVD subpicture support.
 
 -   [Encryption](encryption-support.md) for applications that require it.
 
@@ -45,10 +45,4 @@ The [Implementation of Current Standards](implementation-of-current-standards.md
 There are no tools supplied with DirectX VA. For more information about tools supplied for Windows media support, see the Windows Media Porting Kit.
 
  
-
- 
-
-
-
-
 

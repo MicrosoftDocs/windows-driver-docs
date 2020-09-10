@@ -5,9 +5,9 @@ ms.date: 10/18/2017
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
-
 # Time Travel Debugging - Troubleshooting
+
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png) 
 
 This section describes how to troubleshoot time travel traces.
 

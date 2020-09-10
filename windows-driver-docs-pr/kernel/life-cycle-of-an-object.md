@@ -21,25 +21,25 @@ The object manager maintains a count of the number of references to an object. W
 
 Drivers must ensure that the object manager has an accurate reference count for any objects they manipulate. An object that is released prematurely can cause the system to crash. An object whose reference count is mistakenly high will never be freed.
 
-Objects can be referenced either by handle, or by pointer. In addition to the reference count, the object manager maintains a count of the number of open handles to an object. Each routine that opens a handle increases both the object reference count and the object handle count by one. Each call to such a routine must be matched with a corresponding call to [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417). For more information, see [Object Handles](object-handles.md).
+Objects can be referenced either by handle, or by pointer. In addition to the reference count, the object manager maintains a count of the number of open handles to an object. Each routine that opens a handle increases both the object reference count and the object handle count by one. Each call to such a routine must be matched with a corresponding call to [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose). For more information, see [Object Handles](object-handles.md).
 
-Within kernel mode, objects can be referenced by a pointer to the object. Routines that return pointers to objects, such as [**IoGetAttachedDeviceReference**](https://msdn.microsoft.com/library/windows/hardware/ff549145), increase the reference count by one. Once the driver is done using the pointer, it must call [**ObDereferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff557724) to decrease the reference count by one.
+Within kernel mode, objects can be referenced by a pointer to the object. Routines that return pointers to objects, such as [**IoGetAttachedDeviceReference**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetattacheddevicereference), increase the reference count by one. Once the driver is done using the pointer, it must call [**ObDereferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject) to decrease the reference count by one.
 
 The following routines all increase the reference count of an object by one:
 
-[**ExCreateCallback**](https://msdn.microsoft.com/library/windows/hardware/ff544560)
+[**ExCreateCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback)
 
-[**IoGetAttachedDeviceReference**](https://msdn.microsoft.com/library/windows/hardware/ff549145)
+[**IoGetAttachedDeviceReference**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetattacheddevicereference)
 
-[**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198)
+[**IoGetDeviceObjectPointer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceobjectpointer)
 
-[**IoWMIOpenBlock**](https://msdn.microsoft.com/library/windows/hardware/ff550453)
+[**IoWMIOpenBlock**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock)
 
-[**ObReferenceObject**](https://msdn.microsoft.com/library/windows/hardware/ff558678)
+[**ObReferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obfreferenceobject)
 
-[**ObReferenceObjectByHandle**](https://msdn.microsoft.com/library/windows/hardware/ff558679)
+[**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle)
 
-[**ObReferenceObjectByPointer**](https://msdn.microsoft.com/library/windows/hardware/ff558686)
+[**ObReferenceObjectByPointer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbypointer)
 
 Each call that is made to any of the preceding routines must be matched with a corresponding call to **ObDereferenceObject**.
 
@@ -53,14 +53,9 @@ Most objects are *temporary*; they exist as long as they are in use, and then th
 
 A temporary object can be accessed by name only as long as its handle count is nonzero. Once the handle count decrements to zero, the object's name is removed from the object manager's namespace. Such objects can still be accessed by pointer as long as their reference count remains greater than zero. Permanent objects can be accessed by name as long as they exist.
 
-An object can be made permanent at the time of its creation by specifying the OBJ\_PERMANENT attribute in the [**OBJECT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff557749) structure for the object. For more information, see [**InitializeObjectAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff547804).
+An object can be made permanent at the time of its creation by specifying the OBJ\_PERMANENT attribute in the [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_object_attributes) structure for the object. For more information, see [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes).
 
-To make a permanent object temporary, use the [**ZwMakeTemporaryObject**](https://msdn.microsoft.com/library/windows/hardware/ff566477) routine. This routine causes an object to be automatically deleted once it is no longer in use. (If the object has no open handles, the object's name is immediately removed from the object manager's namespace. The object itself remains until the reference count falls to zero.)
-
- 
+To make a permanent object temporary, use the [**ZwMakeTemporaryObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwmaketemporaryobject) routine. This routine causes an object to be automatically deleted once it is no longer in use. (If the object has no open handles, the object's name is immediately removed from the object manager's namespace. The object itself remains until the reference count falls to zero.)
 
  
-
-
-
 

@@ -23,24 +23,17 @@ If an NDIS driver spends too much time at dispatch IRQ level in a deferred proce
 ## Related topics
 
 
-[*MiniportInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559395)
+[*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr)
 
-[*MiniportInterruptDPC*](https://msdn.microsoft.com/library/windows/hardware/ff559398)
+[*MiniportInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc)
 
-[*MiniportMessageInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559407)
+[*MiniportMessageInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_message_interrupt)
 
-[*MiniportMessageInterruptDPC*](https://msdn.microsoft.com/library/windows/hardware/ff559411)
+[*MiniportMessageInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_message_interrupt_dpc)
 
-[**NDIS\_RECEIVE\_THROTTLE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567241)
+[**NDIS\_RECEIVE\_THROTTLE\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_throttle_parameters)
 
-[**NdisMQueueDpcEx**](https://msdn.microsoft.com/library/windows/hardware/ff563640)
-
- 
+[**NdisMQueueDpcEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismqueuedpcex)
 
  
-
-
-
-
-
 

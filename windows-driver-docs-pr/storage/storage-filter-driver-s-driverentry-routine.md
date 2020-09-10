@@ -17,14 +17,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_storage_filter_drivers_driverentry_routine_kg"></span><span id="DDK_STORAGE_FILTER_DRIVERS_DRIVERENTRY_ROUTINE_KG"></span>
 
 
-Like any other kernel-mode driver, the [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine of an storage filter driver (SFD) must define its Dispatch and other entry points in the input driver object. If necessary, an SFD can allocate a driver object extension of appropriate size by calling [**IoAllocateDriverObjectExtension**](https://msdn.microsoft.com/library/windows/hardware/ff548233), copy the input registry path into the driver extension for later use, and initialize the driver extension with other driver-determined data, if any.
+Like any other kernel-mode driver, the [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine of an storage filter driver (SFD) must define its Dispatch and other entry points in the input driver object. If necessary, an SFD can allocate a driver object extension of appropriate size by calling [**IoAllocateDriverObjectExtension**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatedriverobjectextension), copy the input registry path into the driver extension for later use, and initialize the driver extension with other driver-determined data, if any.
 
-For more information about a PnP driver's [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine, see [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125).
-
- 
+For more information about a PnP driver's [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
 
  
-
-
-
 

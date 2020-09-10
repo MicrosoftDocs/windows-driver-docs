@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Message compiler task
 
 
-The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see [**Message Compiler (MC.exe)**](https://msdn.microsoft.com/library/windows/desktop/aa385638).
+The Windows Driver Kit (WDK) provides the MessageCompiler task so that you can run the MC.exe tool when you build your driver using MSBuild. For information about using MC.exe, see [**Message Compiler (MC.exe)**](/windows/desktop/WES/message-compiler--mc-exe-).
 
 MSBuild uses the MessageCompile Item to send the parameters for the MessageCompiler task. The MessageCompile item accesses the item metadata for mc.exe in project files.
 
@@ -151,7 +151,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tr>
 <tr class="even">
 <td align="left"><strong>GenerateMOFFile</strong>
-<p>Generates down-level support for all functions and macros that are generated. The MOF file is generated from the manifest. The MOF file is placed in the location specified by the &quot;-h&quot; switch.</p></td>
+<p>Generates down-level support for all functions and macros that are generated. The MOF file is generated from the manifest. The MOF file is placed in the location specified by the "-h" switch.</p></td>
 <td align="left">%(MessageCompile.GenerateMOFFile)</td>
 <td align="left"><strong>-mof</strong></td>
 </tr>
@@ -181,7 +181,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 </tr>
 <tr class="odd">
 <td align="left"><strong>PrefixMacroName</strong>
-<p>Defines the macro name prefix that is applied to each generated logging macro. The default is &quot;EventWrite&quot;.</p></td>
+<p>Defines the macro name prefix that is applied to each generated logging macro. The default is "EventWrite".</p></td>
 <td align="left">%(MessageCompile PrefixMacroName)</td>
 <td align="left"><strong>-p</strong><em>&lt;prefix&gt;</em></td>
 </tr>
@@ -259,14 +259,7 @@ In the example above, MSBuild invokes mc.exe on the file a.mc, with the –s swi
 ## <span id="related_topics"></span>Related topics
 
 
-[**Message Compiler (MC.exe)**](https://msdn.microsoft.com/library/windows/desktop/aa385638)
+[**Message Compiler (MC.exe)**](/windows/desktop/WES/message-compiler--mc-exe-)
 
  
-
- 
-
-
-
-
-
 

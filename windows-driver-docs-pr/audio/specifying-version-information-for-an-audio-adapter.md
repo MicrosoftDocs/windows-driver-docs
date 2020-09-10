@@ -25,12 +25,7 @@ A vendor should specify the following entries in the **Version** section of an I
   ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
 ```
 
-For a description of additional version requirements and options for all device classes, see [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502).
+For a description of additional version requirements and options for all device classes, see [**INF Version Section**](../install/inf-version-section.md).
 
  
-
- 
-
-
-
 

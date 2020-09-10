@@ -30,11 +30,11 @@ If any of the following statements are true for a device driver, you must update
 
 -   The device driver uses a load balancing algorithm to distribute the processing of I/O requests across multiple processors. In this situation, the device driver might stop functioning correctly if you add a processor to the hardware partition, and the device driver will be unable to fully use any new processors.
 
-If a device driver is affected by changes to the number of active processors, it must register itself with the operating system to be notified when you add processors to the hardware partition. When the device driver is notified, it can respond as required for safe and optimal operation. For more information about how a device driver can register itself with the operating system, see [Driver Notification](driver-notification.md).
+If a device driver is affected by changes to the number of active processors, it must register itself with the operating system to be notified when you add processors to the hardware partition. When the device driver is notified, it can respond as required for safe and optimal operation. For more information about how a device driver can register itself with the operating system, see [Driver Notification](introduction-to-driver-notification.md).
 
-To retrieve the current number of active processors in the hardware partition, device drivers should call the [**KeQueryActiveProcessorCount**](https://msdn.microsoft.com/library/windows/hardware/ff552985) function. To retrieve the current processor affinity value, device drivers can call either the [**KeQueryActiveProcessors**](https://msdn.microsoft.com/library/windows/hardware/ff553001) function or the **KeQueryActiveProcessorCount** function.
+To retrieve the current number of active processors in the hardware partition, device drivers should call the [**KeQueryActiveProcessorCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryactiveprocessorcount) function. To retrieve the current processor affinity value, device drivers can call either the [**KeQueryActiveProcessors**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryactiveprocessors) function or the **KeQueryActiveProcessorCount** function.
 
-**Note**  If a device driver allocates data structures for each active processor in the hardware partition and the device driver would fail if the memory allocation for the data structures for a new processor failed, the device driver can allocate enough of these data structures during driver initialization to handle the maximum number of processors that the operating system supports. In this situation, the device driver would not have to allocate new data structures when you add new processors to the hardware partition. However, unless the size of these data structures is fairly small, this can be an inefficient use of memory resources. A device driver can query the maximum number of processors that the operating system supports by calling the [**KeQueryMaximumProcessorCount**](https://msdn.microsoft.com/library/windows/hardware/ff553042) function.
+**Note**  If a device driver allocates data structures for each active processor in the hardware partition and the device driver would fail if the memory allocation for the data structures for a new processor failed, the device driver can allocate enough of these data structures during driver initialization to handle the maximum number of processors that the operating system supports. In this situation, the device driver would not have to allocate new data structures when you add new processors to the hardware partition. However, unless the size of these data structures is fairly small, this can be an inefficient use of memory resources. A device driver can query the maximum number of processors that the operating system supports by calling the [**KeQueryMaximumProcessorCount**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerymaximumprocessorcount) function.
 
  
 
@@ -46,14 +46,9 @@ To retrieve the current number of active processors in the hardware partition, d
 
  
 
-**Important**  Device drivers that are built for Windows Vista, Windows Server 2008 and later versions of Windows must not use the [**KeNumberProcessors**](https://msdn.microsoft.com/library/windows/hardware/ff552975) kernel variable to determine the number of active processors in the hardware partition. The **KeNumberProcessors** kernel variable is obsolete in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of Windows.
+**Important**  Device drivers that are built for Windows Vista, Windows Server 2008 and later versions of Windows must not use the [**KeNumberProcessors**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryactiveprocessors) kernel variable to determine the number of active processors in the hardware partition. The **KeNumberProcessors** kernel variable is obsolete in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of Windows.
 
  
 
  
-
- 
-
-
-
 

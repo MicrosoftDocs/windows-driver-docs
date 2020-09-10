@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 There are three key differences between the implementation of the changer class/miniclass driver pair in Windows XP and in Windows 2000:
 
-1.  Different use of a [**DriverEntry of Changer Miniclass Drivers**](https://msdn.microsoft.com/library/windows/hardware/ff552647) routine in the miniclass driver.
+1.  Different use of a [**DriverEntry of Changer Miniclass Drivers**](./driverentry-of-changer-miniclass-drivers.md) routine in the miniclass driver.
 
     In Windows 2000, the changer class driver's **DriverEntry** routine performs various driver initialization tasks, including the initialization of entry points for I/O requests. In Windows XP and later operating systems, initialization takes place in the **DriverEntry** routine of the miniclass driver. See [Required Changer Miniclass Routines](required-changer-miniclass-routines.md) for further information about the tasks that a miniclass driver's **DriverEntry** routine is required to perform.
 
@@ -36,22 +36,17 @@ There are three key differences between the implementation of the changer class/
 
 In Windows 2000, the changer class driver provides the following routines for the miniclass driver to call:
 
--   [**ChangerClassAllocatePool**](https://msdn.microsoft.com/library/windows/hardware/ff551402) -- allocates pool memory.
+-   [**ChangerClassAllocatePool**](/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassallocatepool) -- allocates pool memory.
 
--   [**ChangerClassFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff551411) -- frees pool memory.
+-   [**ChangerClassFreePool**](/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassfreepool) -- frees pool memory.
 
--   [**ChangerClassDebugPrint**](https://msdn.microsoft.com/library/windows/hardware/ff551406) -- prints debugging information.
+-   [**ChangerClassDebugPrint**](/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassdebugprint) -- prints debugging information.
 
 In Windows XP and later operating systems, the changer class driver provides, two additional routines in addition to the routines previously listed.
 
--   [**ChangerClassInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff551413) -- The changer miniclass driver calls **ChangerClassInitialize** from within its **DriverEntry** routine to initialize the driver. **ChangerClassInitialize** performs many tasks formerly performed by the Windows 2000 changer class driver's **DriverEntry** routine.
+-   [**ChangerClassInitialize**](/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclassinitialize) -- The changer miniclass driver calls **ChangerClassInitialize** from within its **DriverEntry** routine to initialize the driver. **ChangerClassInitialize** performs many tasks formerly performed by the Windows 2000 changer class driver's **DriverEntry** routine.
 
--   [**ChangerClassSendSrbSynchronous**](https://msdn.microsoft.com/library/windows/hardware/ff551415) -- initializes and synchronously sends an SRB to an indicated target device.
-
- 
+-   [**ChangerClassSendSrbSynchronous**](/windows-hardware/drivers/ddi/mcd/nf-mcd-changerclasssendsrbsynchronous) -- initializes and synchronously sends an SRB to an indicated target device.
 
  
-
-
-
 

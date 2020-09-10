@@ -33,11 +33,11 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The class driver passes a buffer in *pSrb*-&gt;**CommandData.StreamBuffer** of the size specified by the minidriver in response to the class driver's [**SRB\_INITIALIZE\_DEVICE**](srb-initialize-device.md) request. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure. Also see [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff567785).
+The class driver passes a buffer in *pSrb*-&gt;**CommandData.StreamBuffer** of the size specified by the minidriver in response to the class driver's [**SRB\_INITIALIZE\_DEVICE**](srb-initialize-device.md) request. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. Also see [**PORT\_CONFIGURATION\_INFORMATION**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_port_configuration_information).
 
-The minidriver fills **CommandData.StreamBuffer** with an [**HW\_STREAM\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff559686) that describes the device and the streams it supports. The size of this buffer is indicated by the minidriver in the **StreamDescriptorSize** field in the [**PORT\_CONFIGURATION\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff567785) structure.
+The minidriver fills **CommandData.StreamBuffer** with an [**HW\_STREAM\_DESCRIPTOR**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_descriptor) that describes the device and the streams it supports. The size of this buffer is indicated by the minidriver in the **StreamDescriptorSize** field in the [**PORT\_CONFIGURATION\_INFORMATION**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_port_configuration_information) structure.
 
-The class driver normally issues this request only once. The minidriver may force the class driver to reissue this request, to update its description of the supported streams, by calling [StreamClassReenumerateStreams](https://msdn.microsoft.com/library/windows/hardware/ff568256).
+The class driver normally issues this request only once. The minidriver may force the class driver to reissue this request, to update its description of the supported streams, by calling [StreamClassReenumerateStreams](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassreenumeratestreams).
 
 **When the SRB\_GET\_STREAM\_INFO command is received by the minidriver, the minidriver should:**
 
@@ -45,9 +45,9 @@ The class driver normally issues this request only once. The minidriver may forc
 
     ```cpp
      PHW_STREAM_HEADER pstrhdr =
-      (PHW_STREAM_HEADER)&amp;(pSrb->CommandData.StreamBuffer->StreamHeader);
+      (PHW_STREAM_HEADER)&(pSrb->CommandData.StreamBuffer->StreamHeader);
      PHW_STREAM_INFORMATION pstrinfo =
-      (PHW_STREAM_INFORMATION)&amp;(pSrb->CommandData.StreamBuffer->StreamInfo);
+      (PHW_STREAM_INFORMATION)&(pSrb->CommandData.StreamBuffer->StreamInfo);
      
     ```
 

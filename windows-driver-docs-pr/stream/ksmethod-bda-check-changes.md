@@ -55,16 +55,9 @@ Requirements
 ## See also
 
 
-[**BdaCheckChanges**](https://msdn.microsoft.com/library/windows/hardware/ff556433)
+[**BdaCheckChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacheckchanges)
 
-[**KSMETHOD**](https://msdn.microsoft.com/library/windows/hardware/ff563398)
-
- 
+[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
 
  
-
-
-
-
-
 

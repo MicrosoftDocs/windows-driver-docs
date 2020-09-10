@@ -16,7 +16,7 @@ WIA items represent device attributes and device data. Imaging applications see 
 
 More than one imaging application can use a single imaging device at the same time. Each application's view of an item object in a device tree must therefore be independent of another application's view. This is accomplished as follows:
 
-1.  A minidriver creates an item tree of [IWiaDrvItem Interface](https://msdn.microsoft.com/library/windows/hardware/ff543896) objects using the [IWiaMiniDrv Interface](https://msdn.microsoft.com/library/windows/hardware/ff545027) and the [WIA Driver Services Library Functions](https://msdn.microsoft.com/library/windows/hardware/ff551473). The items in this driver item tree are global objects that the minidriver uses to represent the device's items.
+1.  A minidriver creates an item tree of [IWiaDrvItem Interface](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiadrvitem) objects using the [IWiaMiniDrv Interface](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) and the [WIA Driver Services Library Functions](/windows-hardware/drivers/ddi/wiamdef/index). The items in this driver item tree are global objects that the minidriver uses to represent the device's items.
 
 2.  When an imaging application requests access to an item in the tree, the WIA service returns an item object that is a copy of the driver item. When an application acquires an application **IWiaItem** (described in the Microsoft Windows SDK documentation) item object (an application item), the WIA service links this object to the minidriver's corresponding **IWiaDrvItem** object in the *driver item tree*.
 
@@ -43,9 +43,4 @@ The remainder of this section contains the following topics:
 [Common, Camera, and Scanner Properties](common--camera--and-scanner-properties.md)
 
  
-
- 
-
-
-
 

@@ -41,7 +41,7 @@ The key point is that when the port driver calls into the miniport driver's uppe
 
 ### <span id="NDIS_example"></span><span id="ndis_example"></span><span id="NDIS_EXAMPLE"></span>NDIS example
 
-Sometimes a driver calls the upper edge of a lower driver indirectly. For example, suppose a [TCP/IP protocol driver](https://msdn.microsoft.com/library/windows/hardware/ff556929) sits above an [NDIS](https://msdn.microsoft.com/library/windows/hardware/ff565448) miniport driver in a driver stack. The miniport driver implements a set of *MiniportXxx* functions that form the miniport driver's upper edge. We say that the TCP/IP protocol driver *binds* to the upper edge of the NDIS miniport driver. But the TCP/IP driver does not call the *MiniportXxx* functions directly. Instead, it calls functions in the NDIS library, which then call the *MiniportXxx* functions.
+Sometimes a driver calls the upper edge of a lower driver indirectly. For example, suppose a [TCP/IP protocol driver](../network/introduction-to-ndis-protocol-drivers.md) sits above an [NDIS](../network/ndis-drivers.md) miniport driver in a driver stack. The miniport driver implements a set of *MiniportXxx* functions that form the miniport driver's upper edge. We say that the TCP/IP protocol driver *binds* to the upper edge of the NDIS miniport driver. But the TCP/IP driver does not call the *MiniportXxx* functions directly. Instead, it calls functions in the NDIS library, which then call the *MiniportXxx* functions.
 
 ![diagram of tcp/ip and ndis miniport stack](images/upperloweredge03.png)
 
@@ -67,16 +67,9 @@ The terms *upper edge* and *lower edge* are used to describe the interfaces that
 
 [Driver stacks](driver-stacks.md)
 
-[Audio Devices](https://msdn.microsoft.com/library/windows/hardware/ff537760)
+[Audio Devices](../audio/portal-audio-ref.md)
 
-[Network Drivers Starting with Windows Vista](https://msdn.microsoft.com/library/windows/hardware/ff570021)
-
- 
+[Network Drivers Starting with Windows Vista](/previous-versions/windows/hardware/drivers/ff570021(v=vs.85))
 
  
-
-
-
-
-
 

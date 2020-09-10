@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_x86_instructions_dbg"></span><span id="DDK_X86_INSTRUCTIONS_DBG"></span>
 
 
-In the lists in this section, instructions marked with an asterisk (**\\***) are particularly important. Instructions not so marked are not critical.
+In the lists in this section, instructions marked with an asterisk (**\***) are particularly important. Instructions not so marked are not critical.
 
 On the x86 processor, instructions are variable-sized, so disassembling backward is an exercise in pattern matching. To disassemble backward from an address, you should start disassembling at a point further back than you really want to go, then look forward until the instructions start making sense. The first few instructions may not make any sense because you may have started disassembling in the middle of an instruction. There is a possibility, unfortunately, that the disassembly will never synchronize with the instruction stream and you will have to try disassembling at a different starting point until you find a starting point that works.
 

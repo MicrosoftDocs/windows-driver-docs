@@ -9,12 +9,7 @@ ms.localizationpriority: medium
 # ConvertDevModeToPrintTicket print ticket support
 
 
-The [**IPrintTicketProvider::ConvertDevModeToPrintTicket**](https://msdn.microsoft.com/library/windows/hardware/ff554360) method is called by the print subsystem to convert the [**DEVMODEW**](https://msdn.microsoft.com/library/windows/hardware/ff552837) structure to a PrintTicket object.
+The [**IPrintTicketProvider::ConvertDevModeToPrintTicket**](/previous-versions/windows/hardware/drivers/ff554360(v=vs.85)) method is called by the print subsystem to convert the [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure to a PrintTicket object.
 
  
-
- 
-
-
-
 

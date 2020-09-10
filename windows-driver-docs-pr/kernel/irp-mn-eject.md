@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 Bus drivers typically handle this request for their child devices (child PDOs) that support device ejection. Function and filter drivers do not receive this request.
 
+## Value
+
+0x11
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -50,13 +55,13 @@ For the device to be ejected, the device must be in the D3 device power state (o
 
 Any driver that returns success for this IRP must wait until the device has been ejected before completing the IRP.
 
-See [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-Instead, see the reference page for the [**IoRequestDeviceEject**](https://msdn.microsoft.com/library/windows/hardware/ff549647) routine.
+Instead, see the reference page for the [**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject) routine.
 
 Requirements
 ------------
@@ -77,12 +82,7 @@ Requirements
 ## See also
 
 
-[**IoRequestDeviceEject**](https://msdn.microsoft.com/library/windows/hardware/ff549647)
+[**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject)
 
  
-
- 
-
-
-
 

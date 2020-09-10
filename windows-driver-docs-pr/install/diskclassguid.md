@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DiskClassGuid
 
 
-DiskClassGuid is an obsolete identifier for the device interface class for hard disk [storage devices](https://msdn.microsoft.com/library/windows/hardware/ff566969). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_DISK**](guid-devinterface-disk.md) class identifier for new instances of this class.
+DiskClassGuid is an obsolete identifier for the device interface class for hard disk [storage devices](../storage/index.md). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_DISK**](guid-devinterface-disk.md) class identifier for new instances of this class.
 
 Remarks
 -------
@@ -51,11 +51,4 @@ Requirements
 [**GUID_DEVINTERFACE_DISK**](guid-devinterface-disk.md)
 
  
-
- 
-
-
-
-
-
 

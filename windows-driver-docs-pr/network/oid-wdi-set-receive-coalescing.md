@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_RECEIVE\_COALESCING
@@ -26,7 +27,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                                 |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
-| [**WDI\_TLV\_SET\_RECEIVE\_COALESCING**](https://msdn.microsoft.com/library/windows/hardware/dn898061) |                                |          | The packet coalescing parameters to be set. |
+| [**WDI\_TLV\_SET\_RECEIVE\_COALESCING**](./wdi-tlv-set-receive-coalescing.md) |                                |          | The packet coalescing parameters to be set. |
 
  
 
@@ -34,6 +35,7 @@ When the host receives a request from the OS to set packet coalescing filters, i
 
 
 No additional parameters. The data in the header is sufficient.
+
 Requirements
 ------------
 
@@ -64,9 +66,4 @@ Requirements
 [OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING](oid-wdi-set-clear-receive-coalescing.md)
 
  
-
- 
-
-
-
 

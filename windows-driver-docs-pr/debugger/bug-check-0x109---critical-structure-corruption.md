@@ -3,7 +3,7 @@ title: Bug Check 0x109 CRITICAL_STRUCTURE_CORRUPTION
 description: The CRITICAL_STRUCTURE_CORRUPTION bug check has a value of 0x00000109. This indicates that the kernel has detected critical kernel code or data corruption.
 ms.assetid: 38d4d722-a915-4f17-899b-2a0b4aa69d95
 keywords: ["Bug Check 0x109 CRITICAL_STRUCTURE_CORRUPTION", "CRITICAL_STRUCTURE_CORRUPTION"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 topic_type:
 - apiref
 api_name:
@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The CRITICAL\_STRUCTURE\_CORRUPTION bug check has a value of 0x00000109. This indicates that the kernel has detected critical kernel code or data corruption.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## CRITICAL\_STRUCTURE\_CORRUPTION Parameters
 
@@ -76,7 +78,7 @@ The value of Parameter 4 indicates the type of corrupted region.
 </tr>
 <tr class="even">
 <td align="left"><p>0x1</p></td>
-<td align="left"><p>A function modification or the Itanium-based function location</p></td>
+<td align="left"><p>A function modification</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x2</p></td>
@@ -256,7 +258,7 @@ Cause
 
 There are generally three different causes for this bug check:
 
-1.  A driver has inadvertently, or deliberately, modified critical kernel code or data. Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows for x64-based computers do not allow the kernel to be patched except through authorized Microsoft-originated hot patches. For more information, see [Patching Policy for x64-based Systems](https://go.microsoft.com/fwlink/p/?linkid=50719).
+1.  A driver has inadvertently, or deliberately, modified critical kernel code or data. Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows for x64-based computers do not allow the kernel to be patched except through authorized Microsoft-originated hot patches.
 
 2.  A developer attempted to set a normal kernel breakpoint using a kernel debugger that was not attached when the system was started. Normal breakpoints ([**bp**](bp--bu--bm--set-breakpoint-.md)) can only be set if the debugger is attached at start time. Processor breakpoints ([**ba**](ba--break-on-access-.md)) can be set at any time.
 
@@ -265,7 +267,7 @@ There are generally three different causes for this bug check:
 Resolution
 ----------
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 To start, examine the stack trace using the [**k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md) command. You can specify the processor number to examine the stacks on all processors.
 
@@ -281,7 +283,7 @@ If you are not equipped to use the Windows debugger to work on this problem, you
 
 -   If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.
 
--   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
+-   Run the Windows Memory Diagnostics tool, to test the memory. In the control panel search box, type Memory, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
 
 -   You can try running the hardware diagnostics supplied by the system manufacturer.
 

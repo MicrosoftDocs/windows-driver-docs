@@ -74,7 +74,7 @@ The WIA service is a system-supplied component that communicates with imaging ap
 </tr>
 <tr class="even">
 <td><p><strong>IWiaPropertyStorage</strong></p></td>
-<td><p>Provides access to information about an <strong>IWiaItem</strong> object&#39;s properties.</p></td>
+<td><p>Provides access to information about an <strong>IWiaItem</strong> object's properties.</p></td>
 </tr>
 </tbody>
 </table>
@@ -99,9 +99,9 @@ The [WIA utility library](wia-utility-library.md) includes a collection of debug
 
 ### WIA Minidrivers
 
-[WIA minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff545027) are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which the WIA service calls to communicate with the minidriver.
+[WIA minidrivers](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv) are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which the WIA service calls to communicate with the minidriver.
 
-A WIA minidriver provides a device-specific, user-mode interface to a kernel-mode still image driver, which drives the imaging device through a driver, such as a USB driver. A minidriver communicates with the kernel-mode drivers by calling the [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](https://msdn.microsoft.com/library/windows/desktop/aa363216) Microsoft Win32 functions (which are described in the Microsoft Windows SDK documentation).
+A WIA minidriver provides a device-specific, user-mode interface to a kernel-mode still image driver, which drives the imaging device through a driver, such as a USB driver. A minidriver communicates with the kernel-mode drivers by calling the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) Microsoft Win32 functions (which are described in the Microsoft Windows SDK documentation).
 
 An imaging application cannot directly call the WIA minidriver. Only the WIA service can call the driver directly.
 
@@ -113,14 +113,9 @@ Microsoft provides Microsoft Windows Driver Model (WDM)-based kernel-mode still 
 
 A vendor must provide a kernel-mode still image driver only if its imaging device is incompatible with Microsoft-supplied kernel-mode I/O drivers.
 
-**Note**   On Windows XP and later, you can retrieve version information from the driver. The [**WIA\_DIP\_WIA\_VERSION**](https://msdn.microsoft.com/library/windows/hardware/ff550296) property contains the WIA version, and the [**WIA\_DIP\_DRIVER\_VERSION**](https://msdn.microsoft.com/library/windows/hardware/ff550263) property contains the driver DLL version. The WIA service creates and maintains these properties; they are added automatically by the WIA service when the driver is loaded. Windows Me does not include these properties.
+**Note**   On Windows XP and later, you can retrieve version information from the driver. The [**WIA\_DIP\_WIA\_VERSION**](./wia-dip-wia-version.md) property contains the WIA version, and the [**WIA\_DIP\_DRIVER\_VERSION**](./wia-dip-driver-version.md) property contains the driver DLL version. The WIA service creates and maintains these properties; they are added automatically by the WIA service when the driver is loaded. Windows Me does not include these properties.
 
  
 
  
-
- 
-
-
-
 

@@ -29,15 +29,9 @@ class MS_SMHBA_SCSIENTRY
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_SCSIENTRY**](https://msdn.microsoft.com/library/windows/hardware/ff563191)
+[**MS\_SMHBA\_SCSIENTRY**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_scsientry)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

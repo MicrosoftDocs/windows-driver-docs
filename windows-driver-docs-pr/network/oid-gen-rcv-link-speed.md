@@ -24,7 +24,7 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
 If the interface provider returns NDIS\_STATUS\_SUCCESS, the result of the query is a ULONG64 value that indicates the receive link speed of the interface, in bits per second.
 
@@ -47,12 +47,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
- 
-
-
-
 

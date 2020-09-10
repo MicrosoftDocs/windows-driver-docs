@@ -35,25 +35,19 @@ The I/O queue is empty, it cannot receive new I/O requests from the framework, a
 <a href="" id="purged"></a>*Purged*  
 The I/O queue is empty, it cannot receive new I/O requests from the framework, and all I/O requests that were in the I/O queue have been canceled.
 
-The framework can set a new I/O queue to the ready state after your driver calls [**WdfIoQueueCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547401). However, [power-managed I/O queues](using-power-managed-i-o-queues.md) enter the ready state only if the device is in its working (D0) state.
+The framework can set a new I/O queue to the ready state after your driver calls [**WdfIoQueueCreate**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate). However, [power-managed I/O queues](using-power-managed-i-o-queues.md) enter the ready state only if the device is in its working (D0) state.
 
 Your driver can change an I/O queue's state by:
 
--   Calling [**WdfIoQueueStop**](https://msdn.microsoft.com/library/windows/hardware/ff548482) or [**WdfIoQueueStopSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff548489) to place the queue in its stopped state.
+-   Calling [**WdfIoQueueStop**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuestop) or [**WdfIoQueueStopSynchronously**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuestopsynchronously) to place the queue in its stopped state.
 
--   Calling [**WdfIoQueueDrain**](https://msdn.microsoft.com/library/windows/hardware/ff547406) or [**WdfIoQueueDrainSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff547412) to place the queue in its drained state.
+-   Calling [**WdfIoQueueDrain**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuedrain) or [**WdfIoQueueDrainSynchronously**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuedrainsynchronously) to place the queue in its drained state.
 
--   Calling [**WdfIoQueuePurge**](https://msdn.microsoft.com/library/windows/hardware/ff548442) or [**WdfIoQueuePurgeSynchronously**](https://msdn.microsoft.com/library/windows/hardware/ff548449) to place the queue in its purged state.
+-   Calling [**WdfIoQueuePurge**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuepurge) or [**WdfIoQueuePurgeSynchronously**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuepurgesynchronously) to place the queue in its purged state.
 
--   Calling [**WdfIoQueueStart**](https://msdn.microsoft.com/library/windows/hardware/ff548478) to return the queue to its ready state.
+-   Calling [**WdfIoQueueStart**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuestart) to return the queue to its ready state.
 
-To obtain an I/O queue's current state, your driver can call [**WdfIoQueueGetState**](https://msdn.microsoft.com/library/windows/hardware/ff548437).
-
- 
+To obtain an I/O queue's current state, your driver can call [**WdfIoQueueGetState**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuegetstate).
 
  
-
-
-
-
 

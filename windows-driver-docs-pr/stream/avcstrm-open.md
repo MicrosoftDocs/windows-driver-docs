@@ -25,7 +25,7 @@ The **AVCSTRM\_OPEN** function code opens a stream with a specific stream format
 
 If successful, *avcstrm.sys* sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-If successful, a STATUS\_SUCCESS is returned along with the stream context in **AVCStreamContext** member of the [**AVC\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554194) structure. This context is subsequently used for other *avcstrm.sys* requests.
+If successful, a STATUS\_SUCCESS is returned along with the stream context in **AVCStreamContext** member of the [**AVC\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avc_stream_request_block) structure. This context is subsequently used for other *avcstrm.sys* requests.
 
 Possible error return values include:
 
@@ -97,7 +97,7 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 ### <span id="avc_stream_request_block_input"></span><span id="AVC_STREAM_REQUEST_BLOCK_INPUT"></span>AVC\_STREAM\_REQUEST\_BLOCK Input
 
 <span id="SizeOfThisBlock__Version_and_Function"></span><span id="sizeofthisblock__version_and_function"></span><span id="SIZEOFTHISBLOCK__VERSION_AND_FUNCTION"></span>**SizeOfThisBlock, Version and Function**  
-Use the [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750) macro to initialize these members. Pass **AVCSTRM\_OPEN** in the Request argument of the macro.
+Use the [**INIT\_AVCSTRM\_HEADER**](/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header) macro to initialize these members. Pass **AVCSTRM\_OPEN** in the Request argument of the macro.
 
 <span id="AVCStreamContext"></span><span id="avcstreamcontext"></span><span id="AVCSTREAMCONTEXT"></span>**AVCStreamContext**  
 Specifies the stream context (handle). This should be **NULL** on input, and if **AVCSTRM\_OPEN** returns successfully, this member contains a valid stream context for subsequent *avcstrm.sys* operations.
@@ -105,9 +105,9 @@ Specifies the stream context (handle). This should be **NULL** on input, and if 
 <span id="OpenStruct"></span><span id="openstruct"></span><span id="OPENSTRUCT"></span>**OpenStruct**  
 Specifies the description of the AV/C stream to be created.
 
-The [**AVCSTRM\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff554114) enumeration provides the list of supported AV/C streaming formats (from the IEC 61883 specifications) that *avcstrm.sys* supports, such as SDDV (61883-2) and MPEG2TS (61883-4).
+The [**AVCSTRM\_FORMAT**](/windows-hardware/drivers/ddi/avcstrm/ne-avcstrm-_avcstrm_format) enumeration provides the list of supported AV/C streaming formats (from the IEC 61883 specifications) that *avcstrm.sys* supports, such as SDDV (61883-2) and MPEG2TS (61883-4).
 
-In order to make an isochronous connection, the CIP headers and subunit dependent parameters are required and are defined in the [**AVCSTRM\_FORMAT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554117) structure.
+In order to make an isochronous connection, the CIP headers and subunit dependent parameters are required and are defined in the [**AVCSTRM\_FORMAT\_INFO**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avcstrm_format_info) structure.
 
 The following is an example of the MPEG2TS format information for receiving data:
 
@@ -143,9 +143,9 @@ The following is an example of the MPEG2TS format information for receiving data
     },
 ```
 
-A subunit driver must first allocate an IRP and an [**AVC\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554194) structure. Next, it should use the [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750) macro to initialize the AVC\_STREAM\_REQUEST\_BLOCK structure, passing **AVCSTRM\_OPEN** as the Request argument to the macro. Next, the subunit driver sets the **AVCStreamContext** member to **NULL**. On successful operation, this member should contain a valid stream context (a handle) that is used in subsequent *avcstrm.sys* operations. This member should not be modified thereafter until the stream is closed through [**AVCSTRM\_CLOSE**](avcstrm-close.md).. Finally, the subunit driver sets the **OpenStruct** member of the **CommandData** union that describes the stream to be opened.
+A subunit driver must first allocate an IRP and an [**AVC\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avc_stream_request_block) structure. Next, it should use the [**INIT\_AVCSTRM\_HEADER**](/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header) macro to initialize the AVC\_STREAM\_REQUEST\_BLOCK structure, passing **AVCSTRM\_OPEN** as the Request argument to the macro. Next, the subunit driver sets the **AVCStreamContext** member to **NULL**. On successful operation, this member should contain a valid stream context (a handle) that is used in subsequent *avcstrm.sys* operations. This member should not be modified thereafter until the stream is closed through [**AVCSTRM\_CLOSE**](avcstrm-close.md).. Finally, the subunit driver sets the **OpenStruct** member of the **CommandData** union that describes the stream to be opened.
 
-To send this request, a subunit submits an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766) IRP with the **IoControlCode** member of the IRP set to [**IOCTL\_AVCSTRM\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff560778) and the **Argument1** member of the IRP set to the AVC\_STREAM\_REQUEST\_BLOCK structure that describes the open operation to take place.
+To send this request, a subunit submits an [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md) IRP with the **IoControlCode** member of the IRP set to [**IOCTL\_AVCSTRM\_CLASS**](/windows-hardware/drivers/ddi/avcstrm/ni-avcstrm-ioctl_avcstrm_class) and the **Argument1** member of the IRP set to the AVC\_STREAM\_REQUEST\_BLOCK structure that describes the open operation to take place.
 
 A subunit driver can expect this command to complete synchronously. The result returns immediately without pending operation in *avcstrm.sys*.
 
@@ -153,13 +153,7 @@ This function code must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff554194), [**INIT\_AVCSTRM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff560750), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766), [**IOCTL\_AVCSTRM\_CLASS**](https://msdn.microsoft.com/library/windows/hardware/ff560778), [**AVCSTRM\_OPEN\_STRUCT**](https://msdn.microsoft.com/library/windows/hardware/ff554127), [**AVCSTRM\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554120), [**AVCSTRM\_FORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff554114), [**AVCSTRM\_FORMAT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554117)
+[**AVC\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avc_stream_request_block), [**INIT\_AVCSTRM\_HEADER**](/windows-hardware/drivers/ddi/avcstrm/nf-avcstrm-init_avcstrm_header), [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md), [**IOCTL\_AVCSTRM\_CLASS**](/windows-hardware/drivers/ddi/avcstrm/ni-avcstrm-ioctl_avcstrm_class), [**AVCSTRM\_OPEN\_STRUCT**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avcstrm_open_struct), [**AVCSTRM\_FUNCTION**](/windows-hardware/drivers/ddi/avcstrm/ne-avcstrm-_avcstrm_function), [**AVCSTRM\_FORMAT**](/windows-hardware/drivers/ddi/avcstrm/ne-avcstrm-_avcstrm_format), [**AVCSTRM\_FORMAT\_INFO**](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_avcstrm_format_info)
 
  
-
- 
-
-
-
-
 

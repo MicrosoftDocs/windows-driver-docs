@@ -13,7 +13,7 @@ Once a Personal Information Exchange (.*pfx*) file is created to store a [Softwa
 
 To import a *.pfx* file into the local Personal certificate store, do the following:
 
-1.  Start Windows Explorer and double-click the *.pfx* file to open the Certificate Import Wizard.
+1.  Start Windows Explorer and select and hold (or right-click) the *.pfx* file, then select Open to open the Certificate Import Wizard.
 
 2.  Follow the procedure in the Certificate Import Wizard to import the code-signing certificate into the Personal certificate store.
 
@@ -33,13 +33,7 @@ Where:
 
 -   The **-importPFX** option specifies name of the *.pfx* file (*abc.pfx*).
 
-Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) to release-sign [driver packages](driver-packages.md).
+Once the *.pfx* file is imported into the Personal certificate store on the signing computer, you can use [**SignTool**](../devtest/signtool.md) to release-sign [driver packages](driver-packages.md).
 
  
-
- 
-
-
-
-
 

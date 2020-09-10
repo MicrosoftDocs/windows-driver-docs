@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_storage_filter_driver_s_support_of_i_o_requests_kg"></span><span id="DDK_STORAGE_FILTER_DRIVER_S_SUPPORT_OF_I_O_REQUESTS_KG"></span>
 
 
-A higher-level storage filter driver (SFD) intercepts IRPs from user applications and higher-level drivers and modifies them as needed before passing them to the next-lower driver (a storage class driver or another filter driver). Such an SFD supplies device-specific support for requests that require special handling, such as translating data sent to or returned from the device in a nonstandard format, or programming the device in response to an [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) request.
+A higher-level storage filter driver (SFD) intercepts IRPs from user applications and higher-level drivers and modifies them as needed before passing them to the next-lower driver (a storage class driver or another filter driver). Such an SFD supplies device-specific support for requests that require special handling, such as translating data sent to or returned from the device in a nonstandard format, or programming the device in response to an [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md) request.
 
 A lower-level SFD monitors SRBs and/or IRPs issued by a storage class driver and modifies them as needed before passing them to the next-lower driver (a storage port driver or another filter driver).
 
@@ -27,18 +27,13 @@ Like a storage class driver, an SFD has the following requirements common to all
 
 -   It must supply a set of *Dispatch* routines to which the I/O manager and/or still higher-level drivers can send IRPs for appropriate I/O operations. An SFD must support the same set of IRP\_MJ\_XXX as the storage class driver for its type of device.
 
--   For [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) requests, it must support as many of the class driver-supported I/O control codes as its physical device can handle and, if possible, emulate support for any remaining I/O control codes in the driver.
+-   For [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md) requests, it must support as many of the class driver-supported I/O control codes as its physical device can handle and, if possible, emulate support for any remaining I/O control codes in the driver.
 
--   It must have a [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine, an [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine, an [*Unload*](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine, and *Dispatch* routines to handle PnP and power IRPs and can have any other standard higher-level driver routine, such as [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routines, as necessary.
+-   It must have a [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, an [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, an [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine, and *Dispatch* routines to handle PnP and power IRPs and can have any other standard higher-level driver routine, such as [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routines, as necessary.
 
 -   It must follow the rules for processing PnP, power management, and system control IRPs.
 
-If its device has special features, an SFD can support a set of driver-defined I/O control codes in addition to the system-required set of device-type-specific I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) requests.
+If its device has special features, an SFD can support a set of driver-defined I/O control codes in addition to the system-required set of device-type-specific I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md) requests.
 
  
-
- 
-
-
-
 

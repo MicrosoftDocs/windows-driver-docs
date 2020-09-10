@@ -20,18 +20,18 @@ ms.localizationpriority: medium
 
 The **FSCTL\_MARK\_VOLUME\_DIRTY** control code marks a specified volume as dirty, which triggers Autochk.exe to run on the volume during the next system restart.
 
-To perform this operation, call [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) with the following parameters.
+To perform this operation, call [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) with the following parameters.
 
 **Parameters**
 
 <a href="" id="instance"></a>*Instance*  
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) only. An opaque instance pointer to the minifilter driver instance that is initiating the FSCTL request.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. An opaque instance pointer to the minifilter driver instance that is initiating the FSCTL request.
 
 <a href="" id="fileobject"></a>*FileObject*  
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) only. A file pointer object specifying the volume to be marked dirty. This parameter is required and cannot be **NULL**.
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) only. A file pointer object specifying the volume to be marked dirty. This parameter is required and cannot be **NULL**.
 
 <a href="" id="filehandle"></a>*FileHandle*  
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) only. A handle to the volume that is to be marked dirty. This parameter is required and cannot be **NULL**.
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) only. A handle to the volume that is to be marked dirty. This parameter is required and cannot be **NULL**.
 
 <a href="" id="fscontrolcode"></a>*FsControlCode*  
 Control code for the operation. Use **FSCTL\_MARK\_VOLUME\_DIRTY** for this operation.
@@ -51,7 +51,7 @@ Not used with this operation. Set to 0.
 Status block
 ------------
 
-The [**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988) or [**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462) routine returns STATUS\_SUCCESS or an appropriate NTSTATUS value.
+The [**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile) or [**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85)) routine returns STATUS\_SUCCESS or an appropriate NTSTATUS value.
 
 <table>
 <colgroup>
@@ -114,18 +114,11 @@ Requirements
 ## See also
 
 
-[**FltFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff542988)
+[**FltFsControlFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile)
 
 [**FSCTL\_IS\_VOLUME\_DIRTY**](fsctl-is-volume-dirty.md)
 
-[**ZwFsControlFile**](https://msdn.microsoft.com/library/windows/hardware/ff566462)
+[**ZwFsControlFile**](/previous-versions/ff566462(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

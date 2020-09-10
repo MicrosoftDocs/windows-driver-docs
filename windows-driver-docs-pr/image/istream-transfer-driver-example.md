@@ -67,7 +67,4 @@ LONG                      *plDevErrVal)
 ```
 
 ## Related topics
-[**IWiaMiniDrvTransferCallback**](https://msdn.microsoft.com/library/windows/hardware/jj151550)  
-
-
-
+[**IWiaMiniDrvTransferCallback**](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvtransfercallback)

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # MB Adapter General Attribute Requirements
 
 
-The following table describes the values that miniport drivers should set the member variables of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) structure to. MB miniport drivers must use these values when they call [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) from their [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, during miniport driver initialization.
+The following table describes the values that miniport drivers should set the member variables of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure to. MB miniport drivers must use these values when they call [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) from their [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, during miniport driver initialization.
 
 <table>
 <colgroup>
@@ -27,15 +27,15 @@ The following table describes the values that miniport drivers should set the me
 <td align="left"><p>IfType</p></td>
 <td align="left"><p>GSM-based devices must specify IF_TYPE_WWANPP.</p>
 <p>CDMA-based devices specify IF_TYPE_WWANPP2.</p>
-<p>The value must match the *IfType value specified in the miniport driver&#39;s INF file.</p></td>
+<p>The value must match the *IfType value specified in the miniport driver's INF file.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MediaType</p></td>
-<td align="left"><p>The value must match the *MediaType value specified in the miniport driver&#39;s INF file. For example, either <strong>NdisMediumWirelessWan</strong> or <strong>NdisMedium802_3</strong>.</p></td>
+<td align="left"><p>The value must match the *MediaType value specified in the miniport driver's INF file. For example, either <strong>NdisMediumWirelessWan</strong> or <strong>NdisMedium802_3</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>PhysicalMediumType</p></td>
-<td align="left"><p>The value must match the *PhysicalMediaType value specified in the miniport driver&#39;s INF file. The value must be <strong>NdisPhysicalMediumWirelessWan</strong>.</p></td>
+<td align="left"><p>The value must match the *PhysicalMediaType value specified in the miniport driver's INF file. The value must be <strong>NdisPhysicalMediumWirelessWan</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AccessType</p></td>
@@ -47,10 +47,4 @@ The following table describes the values that miniport drivers should set the me
  
 
  
-
- 
-
-
-
-
 

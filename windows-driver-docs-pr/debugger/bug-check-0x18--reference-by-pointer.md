@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The REFERENCE\_BY\_POINTER bug check has a value of 0x00000018. This indicates that the reference count of an object is illegal for the current state of the object.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## REFERENCE\_BY\_POINTER Parameters
 
@@ -68,7 +70,7 @@ Resolution
 
 Make sure that the driver matches calls to the routines that increase and decrease the reference count of the object. Make sure that your driver does not make extra calls to routines that dereference the object (see Parameter 2).
 
-You can use a debugger to help analyze this problem. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md). The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
+You can use a debugger to help analyze this problem. For more information, see [Crash dump analysis using the Windows debuggers (WinDbg)](crash-dump-files.md). The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 To find the handle and pointer count on the object, use the **!object** debugger command.
 

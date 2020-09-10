@@ -30,16 +30,15 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
     ```
 
 -   The INF file must specify the **\*NetworkDirectTechnology** keyword value as follows. Once the driver is installed, administrators can update the **\*NetworkDirectTechnology** keyword value in the **Advanced** property page for the adapter. The enumerations are mutually exclusive, meaning  the selection of a NetworkDirectTechnology value excludes all others.  This allows for the Platform to define strict device behavior.  
--   For devices where multiple transports can be supported concurrently, the **Device Default** allows for device specific behavior, such as retry/fallback to multiple transports.
 -   A device must express only the supported transports.  The transport values are identifiers which map to WDK **NDK_RDMA_TECHNOLOGY**.  A redefinition of the identifiers is prohibited.
+-   The behavior of devices with multiple concurrent transports is undefined.  The device **must** specify a transport type.
 
     **Note**   The miniport driver is automatically restarted after a change is made in the **Advanced** property page for the adapter.
 
     ```INF
     HKR, Ndi\Params\*NetworkDirectTechnology,        ParamDesc,  0,  "NetworkDirect Technology"
-    HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "0"
+    HKR, Ndi\Params\*NetworkDirectTechnology,        Default,    0,  "1"
     HKR, Ndi\Params\*NetworkDirectTechnology,        Type,       0,  "enum"
-    HKR, Ndi\Params\*NetworkDirectTechnology\enum,   0,          0,  "Device Default"
     HKR, Ndi\Params\*NetworkDirectTechnology\enum,   1,          0,  "iWARP"
     HKR, Ndi\Params\*NetworkDirectTechnology\enum,   2,          0,  "InfiniBand"
     HKR, Ndi\Params\*NetworkDirectTechnology\enum,   3,          0,  "RoCE"
@@ -54,6 +53,5 @@ The INF file for a miniport driver that supports Network Direct kernel (NDK) mus
 ## Related topics
 
 
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
+[Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 
- 

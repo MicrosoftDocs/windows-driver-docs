@@ -35,7 +35,7 @@ The system software support for PnP, together with PnP drivers provides the foll
 
 -   A programming interface for drivers to interact with the PnP system
 
-    The interface includes [I/O manager routines](https://msdn.microsoft.com/library/windows/hardware/ff551797), [Plug and Play minor IRPs](https://msdn.microsoft.com/library/windows/hardware/ff558807), required [standard driver routines](https://msdn.microsoft.com/library/windows/hardware/ff563842), and information in the registry.
+    The interface includes [I/O manager routines](/previous-versions/windows/hardware/drivers/ff551797(v=vs.85)), [Plug and Play minor IRPs](./plug-and-play-minor-irps.md), required [standard driver routines](./introduction-to-standard-driver-routines.md), and information in the registry.
 
 -   Mechanisms for drivers and applications to learn of changes in the hardware environment and take appropriate actions
 
@@ -58,9 +58,4 @@ This section contains the following additional topics:
 [State Transitions for PnP Devices](state-transitions-for-pnp-devices.md)
 
  
-
- 
-
-
-
 

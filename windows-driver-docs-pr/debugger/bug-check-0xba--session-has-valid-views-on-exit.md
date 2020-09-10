@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT bug check has a value of 0x000000BA. This indicates that a session driver still had mapped views when the session unloaded.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT Parameters
 
@@ -45,11 +47,11 @@ The SESSION\_HAS\_VALID\_VIEWS\_ON\_EXIT bug check has a value of 0x000000BA. Th
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
-<td align="left"><p>The address of this session&#39;s mapped views table</p></td>
+<td align="left"><p>The address of this session's mapped views table</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p>The size of this session&#39;s mapped views table</p></td>
+<td align="left"><p>The size of this session's mapped views table</p></td>
 </tr>
 </tbody>
 </table>

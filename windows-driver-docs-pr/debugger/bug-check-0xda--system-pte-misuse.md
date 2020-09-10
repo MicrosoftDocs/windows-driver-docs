@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The SYSTEM\_PTE\_MISUSE bug check has a value of 0x000000DA. This indicates that a page table entry (PTE) routine has been used in an improper way.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## SYSTEM\_PTE\_MISUSE Parameters
 
@@ -108,8 +110,8 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 </tr>
 <tr class="even">
 <td align="left"><p>0x0A</p></td>
-<td align="left"><p><strong>1:</strong> The driver requested &quot;bug check on failure&quot; in the MDL.</p>
-<p><strong>0:</strong> The driver did not request &quot;bug check on failure&quot; in the MDL.</p></td>
+<td align="left"><p><strong>1:</strong> The driver requested "bug check on failure" in the MDL.</p>
+<p><strong>0:</strong> The driver did not request "bug check on failure" in the MDL.</p></td>
 <td align="left"><p>The number of mappings that the caller is allocating</p></td>
 <td align="left"><p>The type of mapping pool requested</p></td>
 <td align="left"><p>(Windows 2000 only) The caller is asking to allocate zero mappings.</p></td>
@@ -166,43 +168,43 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <tr class="even">
 <td align="left"><p>0x100</p></td>
 <td align="left"><p>The number of mappings being requested</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>The address of the routine that called the caller of this routine</p></td>
 <td align="left"><p> The caller requested 0 mappings.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x101</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
-<td align="left"><p>The owner&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
+<td align="left"><p>The owner's identifying tag</p></td>
 <td align="left"><p> A caller is trying to free a mapping address range that it does not own.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x102</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>The mapping address space that the caller is trying to free is apparently empty.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x103</p></td>
 <td align="left"><p>The address of the invalid mapping</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>The number of mappings in the mapping address space</p></td>
-<td align="left"><p>The mapping address space that the caller is trying to free is still reserved. <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff556392" data-raw-source="[MmUnmapReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff556392)">MmUnmapReservedMapping</a></strong></p>
-<p>must be called before <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554512" data-raw-source="[MmFreeMappingAddress](https://msdn.microsoft.com/library/windows/hardware/ff554512)">MmFreeMappingAddress</a></strong>.</p></td>
+<td align="left"><p>The mapping address space that the caller is trying to free is still reserved. <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong></p>
+<p>must be called before <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreemappingaddress" data-raw-source="[MmFreeMappingAddress](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreemappingaddress)">MmFreeMappingAddress</a></strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x104</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
-<td align="left"><p>The owner&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
+<td align="left"><p>The owner's identifying tag</p></td>
 <td align="left"><p>The caller is attempting to map an MDL to a mapping address space that it does not own.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x105</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>The caller is attempting to map an MDL to an invalid mapping address space. The caller has mostly likely specified an invalid address.</p></td>
 </tr>
@@ -211,19 +213,19 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <td align="left"><p>The first mapping address</p></td>
 <td align="left"><p>The address of the non-empty mapping</p></td>
 <td align="left"><p>The last mapping address</p></td>
-<td align="left"><p>The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff556392" data-raw-source="[MmUnmapReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff556392)">MmUnmapReservedMapping</a></strong> prior to calling <strong><a href="https://msdn.microsoft.com/library/windows/hardware/ff554640" data-raw-source="[MmMapLockedPagesWithReservedMapping](https://msdn.microsoft.com/library/windows/hardware/ff554640)">MmMapLockedPagesWithReservedMapping</a></strong></p></td>
+<td align="left"><p>The caller is attempting to map an MDL to a mapping address space that has not been properly reserved. The caller should have called <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping" data-raw-source="[MmUnmapReservedMapping](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapreservedmapping)">MmUnmapReservedMapping</a></strong> prior to calling <strong><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping" data-raw-source="[MmMapLockedPagesWithReservedMapping](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping)">MmMapLockedPagesWithReservedMapping</a></strong></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x108</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
-<td align="left"><p>The owner&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
+<td align="left"><p>The owner's identifying tag</p></td>
 <td align="left"><p>The caller is attempting to unmap a locked mapping address space that it does not own.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x109</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>Reserved</p></td>
 <td align="left"><p>The caller is attempting to unmap a locked virtual address space that is apparently empty.</p></td>
 </tr>
@@ -237,14 +239,14 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <tr class="even">
 <td align="left"><p>0x10B</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>The number of mappings to unmap</p></td>
 <td align="left"><p>The caller is attempting to unmap a portion of a locked virtual address space that is not currently mapped.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x10C</p></td>
 <td align="left"><p>The first mapping address</p></td>
-<td align="left"><p>The caller&#39;s identifying tag</p></td>
+<td align="left"><p>The caller's identifying tag</p></td>
 <td align="left"><p>The number of mappings to unmap</p></td>
 <td align="left"><p>The caller is not unmapping the entirety of the locked mapping address space.</p></td>
 </tr>
@@ -332,9 +334,4 @@ The error is indicated by the value of Parameter 1.
 A stack trace will identify the driver that caused the error.
 
  
-
- 
-
-
-
 

@@ -24,31 +24,25 @@ If a callback function has a function prototype declaration, you must replace th
 | Function role type                        | Storport routine                                                                                                               |
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | sp\_DRIVER\_INITIALIZE                    | DriverEntry                                                                                                                    |
-| HW\_INITIALIZE                            | [**HwStorInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff557396)                                                                               |
-| HW\_BUILDIO                               | [**HwStorBuildIo**](https://msdn.microsoft.com/library/windows/hardware/ff557369)                                                                                     |
-| HW\_STARTIO                               | [**HwStorStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557423)                                                                                     |
-| HW\_INTERRUPT                             | [**HwStorInterrupt**](https://msdn.microsoft.com/library/windows/hardware/ff557403)                                                                                 |
-| HW\_TIMER                                 | [**HwStorTimer**](https://msdn.microsoft.com/library/windows/hardware/ff557426)                                                                                         |
-| HW\_FIND\_ADAPTER                         | [**HwStorFindAdapter**](https://msdn.microsoft.com/library/windows/hardware/ff557390)                                                                             |
-| HW\_RESET\_BUS                            | [**HwStorResetBus**](https://msdn.microsoft.com/library/windows/hardware/ff557415)                                                                                   |
-| HW\_ADAPTER\_CONTROL                      | [**HwStorAdapterControl**](https://msdn.microsoft.com/library/windows/hardware/ff557365)                                                                       |
-| HW\_PASSIVE\_INITIALIZE\_ROUTINE          | [**HwStorPassiveInitializeRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff557407)                                                   |
-| HW\_DPC\_ROUTINE                          | [**HwStorDpcRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff557383)                                                                               |
-| HW\_FREE\_ADAPTER\_RESOURCES              | HwFreeAdapterResources part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure.  |
-| HW\_PROCESS\_SERVICE\_REQUEST             | HwProcessServiceRequest part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure. |
-| HW\_COMPLETE\_SERVICE\_IRP                | HwCompleteServiceIrp part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure.    |
-| HW\_INITIALIZE\_TRACING                   | HwInitializeTracing part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure.     |
-| HW\_CLEANUP\_TRACING                      | HwCleanupTracing part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure.        |
-| VIRTUAL\_HW\_FIND\_ADAPTER                | HwFindAdapter part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff568010) structure.           |
-| HW\_MESSAGE\_SIGNALED\_INTERRUPT\_ROUTINE | [**HwMSInterruptRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff557268)                                                                       |
+| HW\_INITIALIZE                            | [**HwStorInitialize**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize)                                                                               |
+| HW\_BUILDIO                               | [**HwStorBuildIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_buildio)                                                                                     |
+| HW\_STARTIO                               | [**HwStorStartIo**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio)                                                                                     |
+| HW\_INTERRUPT                             | [**HwStorInterrupt**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_interrupt)                                                                                 |
+| HW\_TIMER                                 | [**HwStorTimer**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_timer)                                                                                         |
+| HW\_FIND\_ADAPTER                         | [**HwStorFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)                                                                             |
+| HW\_RESET\_BUS                            | [**HwStorResetBus**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_reset_bus)                                                                                   |
+| HW\_ADAPTER\_CONTROL                      | [**HwStorAdapterControl**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_adapter_control)                                                                       |
+| HW\_PASSIVE\_INITIALIZE\_ROUTINE          | [**HwStorPassiveInitializeRoutine**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_passive_initialize_routine)                                                   |
+| HW\_DPC\_ROUTINE                          | [**HwStorDpcRoutine**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_dpc_routine)                                                                               |
+| HW\_FREE\_ADAPTER\_RESOURCES              | HwFreeAdapterResources part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure.  |
+| HW\_PROCESS\_SERVICE\_REQUEST             | HwProcessServiceRequest part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure. |
+| HW\_COMPLETE\_SERVICE\_IRP                | HwCompleteServiceIrp part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure.    |
+| HW\_INITIALIZE\_TRACING                   | HwInitializeTracing part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure.     |
+| HW\_CLEANUP\_TRACING                      | HwCleanupTracing part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure.        |
+| VIRTUAL\_HW\_FIND\_ADAPTER                | HwFindAdapter part of the [**VIRTUAL\_HW\_INITIALIZATION\_DATA**](/windows-hardware/drivers/ddi/storport/ns-storport-_virtual_hw_initialization_data) structure.           |
+| HW\_MESSAGE\_SIGNALED\_INTERRUPT\_ROUTINE | [**HwMSInterruptRoutine**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_message_signaled_interrupt_routine)                                                                       |
 
  
 
  
-
- 
-
-
-
-
 

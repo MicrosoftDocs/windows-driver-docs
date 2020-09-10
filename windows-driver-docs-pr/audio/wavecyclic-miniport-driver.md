@@ -34,45 +34,40 @@ A WaveCyclic miniport driver should implement two interfaces:
 
 -   **The stream interface** manages a wave stream and exposes most of the miniport driver's functionality.
 
-The miniport interface, [IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714), inherits the methods in the [IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698) interface. IMiniportWaveCyclic provides the following additional methods:
+The miniport interface, [IMiniportWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic), inherits the methods in the [IMiniport](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport) interface. IMiniportWaveCyclic provides the following additional methods:
 
-[**IMiniportWaveCyclic::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536722)
+[**IMiniportWaveCyclic::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclic-init)
 
 Initializes the miniport object.
 
-[**IMiniportWaveCyclic::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536723)
+[**IMiniportWaveCyclic::NewStream**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclic-newstream)
 
 Creates a new stream object.
 
-The stream interface, [IMiniportWaveCyclicStream](https://msdn.microsoft.com/library/windows/hardware/ff536715), inherits the methods in the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface. IMiniportWaveCyclicStream provides the following additional methods:
+The stream interface, [IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream), inherits the methods in the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveCyclicStream provides the following additional methods:
 
-[**IMiniportWaveCyclicStream::GetPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536716)
+[**IMiniportWaveCyclicStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition)
 
 Gets the device's current position in the wave stream.
 
-[**IMiniportWaveCyclicStream::NormalizePhysicalPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536717)
+[**IMiniportWaveCyclicStream::NormalizePhysicalPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-normalizephysicalposition)
 
 Converts a physical buffer position value into a time-based value.
 
-[**IMiniportWaveCyclicStream::SetFormat**](https://msdn.microsoft.com/library/windows/hardware/ff536718)
+[**IMiniportWaveCyclicStream::SetFormat**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-setformat)
 
 Sets the data format of the wave stream.
 
-[**IMiniportWaveCyclicStream::SetNotificationFreq**](https://msdn.microsoft.com/library/windows/hardware/ff536719)
+[**IMiniportWaveCyclicStream::SetNotificationFreq**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-setnotificationfreq)
 
 Sets the frequency at which notification interrupts occur.
 
-[**IMiniportWaveCyclicStream::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536720)
+[**IMiniportWaveCyclicStream::SetState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-setstate)
 
 Sets the state of the wave stream.
 
-[**IMiniportWaveCyclicStream::Silence**](https://msdn.microsoft.com/library/windows/hardware/ff536721)
+[**IMiniportWaveCyclicStream::Silence**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-silence)
 
 Copies silence into a buffer.
  
-
- 
-
-
-
 

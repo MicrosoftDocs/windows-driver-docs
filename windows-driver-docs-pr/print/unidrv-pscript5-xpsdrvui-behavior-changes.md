@@ -34,25 +34,25 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode will create the followin
 <tr class="even">
 <td><p>Copy Count</p>
 <p>(<strong>Advanced</strong> tab)</p></td>
-<td><p>(Unidrv only) The Copy Count UI is always displayed unless the GPD file has a &quot;Collate&quot; feature with &quot;<em>ConcealFromUI?: TRUE&quot;:</p>
-<p>(Unidrv only) When EMF is enabled, the Copy Count UI is hard-coded to have an upper limit that is the maximum value of 9999 or the GPD file&#39;s specified *MaxCopies value.</p>
+<td><p>(Unidrv only) The Copy Count UI is always displayed unless the GPD file has a "Collate" feature with "<em>ConcealFromUI?: TRUE":</p>
+<p>(Unidrv only) When EMF is enabled, the Copy Count UI is hard-coded to have an upper limit that is the maximum value of 9999 or the GPD file's specified *MaxCopies value.</p>
 <p>(Unidrv only) When EMF is disabled, Copy Count has an upper limit of the GPD file *MaxCopies value.</p>
 <p>(PS only) The Copy Count UI is always displayed, with an upper limit that is hard-coded to be 9999.</p></td>
 <td><p>(Unidrv only) The Copy Count UI behaves the same as the non-XPSDrv behavior with EMF disabled.</p>
-<p>(PS only) Copy Count is always displayed, with an upper limit that is specified in the PPD file&#39;s *MSXPSMaxCopies value. The upper limit is set to 1 if the PPD file does not specify *MSXPSMaxCopies.</p></td>
+<p>(PS only) Copy Count is always displayed, with an upper limit that is specified in the PPD file's *MSXPSMaxCopies value. The upper limit is set to 1 if the PPD file does not specify *MSXPSMaxCopies.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Collated</p>
 <p>(<strong>Advanced</strong> tab)</p></td>
 <td><p>When EMF is enabled, the Collated UI (which is a check box next to Copy Count) is hard-coded to be displayed.</p>
-<p>When EMF is disabled, Collated is displayed only if the GPD or PPD file specifies &quot;Collate&quot; as a supported feature, and the &quot;Collate&quot; GPD or PPD feature is not constrained by any device setting features.</p></td>
+<p>When EMF is disabled, Collated is displayed only if the GPD or PPD file specifies "Collate" as a supported feature, and the "Collate" GPD or PPD feature is not constrained by any device setting features.</p></td>
 <td><p>The Collated UI behaves the same as the non-XPSDrv behavior with EMF disabled.</p></td>
 </tr>
 <tr class="even">
 <td><p>Color</p>
 <p>(<strong>Paper/Quality</strong> tab)</p></td>
 <td><p>(Unidrv only) The color versus black and white UI selection is shown if the GPD ColorMode feature has one color option.</p></td>
-<td><p>(Unidrv only) The color versus black and white UI selection is shown if the GPD ColorMode feature has one color option and if the ColorMode feature does not specify &quot;</em>ConcealFromUI?: TRUE&quot;.</p></td>
+<td><p>(Unidrv only) The color versus black and white UI selection is shown if the GPD ColorMode feature has one color option and if the ColorMode feature does not specify "</em>ConcealFromUI?: TRUE".</p></td>
 </tr>
 <tr class="odd">
 <td><p>ICM Method, ICM Intent</p>
@@ -93,7 +93,7 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode will create the followin
 </ul></li>
 <li>In the Advanced tab:
 <ul>
-<li>Hardcoded &quot;Advanced Printing Features&quot; with two options: Enabled or Disabled.</li>
+<li>Hardcoded "Advanced Printing Features" with two options: Enabled or Disabled.</li>
 <li>Winprint-based NUp Direction UI with four options: Right-then-Down, Down-then-Right, Left-then-Down, Down-then-Left.</li>
 <li>Winprint-based Booklet Edge UI.</li>
 </ul></li>
@@ -109,7 +109,7 @@ A Unidrv/PScript5 driver that is running in XPSDrv mode will create the followin
 <tr class="odd">
 <td><p>Rendering Features by PScript5</p>
 <p>(<strong>Advanced</strong> tab)</p></td>
-<td><p>(PS only) Hard-coded &quot;PostScript Options&quot; include: PostScript Output Option, TrueType Font Download Option, PostScript Language Level, Send PostScript Error Handler, Mirrored Output, and Negative Output.</p></td>
+<td><p>(PS only) Hard-coded "PostScript Options" include: PostScript Output Option, TrueType Font Download Option, PostScript Language Level, Send PostScript Error Handler, Mirrored Output, and Negative Output.</p></td>
 <td><p>(PS only) None of the hard-coded PS rendering features are displayed.</p></td>
 </tr>
 <tr class="even">

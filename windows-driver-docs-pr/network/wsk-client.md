@@ -21,22 +21,21 @@ The contents of the **WSK_CLIENT** structure are opaque to a WSK application.
 
 ## Remarks
 
-When a WSK application calls the [WskCaptureProviderNPI](https://msdn.microsoft.com/library/windows/hardware/ff571122) function, the WSK subsystem returns a pointer to a WSK_CLIENT structure to the WSK application by means of the *WskProviderNpi* parameter. The WSK subsystem uses this structure to track the state of the binding between the WSK application and the WSK subsystem. A WSK application passes this pointer as a parameter to all the functions in [WSK_PROVIDER_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/ff571175) ([WskControlClient](https://msdn.microsoft.com/library/windows/hardware/ff571126), [WskSocket](https://msdn.microsoft.com/library/windows/hardware/ff571149), and [WskSocketConnect](https://msdn.microsoft.com/library/windows/hardware/ff571150)).
+When a WSK application calls the [WskCaptureProviderNPI](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi) function, the WSK subsystem returns a pointer to a WSK_CLIENT structure to the WSK application by means of the *WskProviderNpi* parameter. The WSK subsystem uses this structure to track the state of the binding between the WSK application and the WSK subsystem. A WSK application passes this pointer as a parameter to all the functions in [WSK_PROVIDER_DISPATCH](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch) ([WskControlClient](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client), [WskSocket](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket), and [WskSocketConnect](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect)).
 
 For more information, see [Registering a Winsock Kernel Application](registering-a-winsock-kernel-application.md).
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Available in Windows Vista and later versions of the Windows operating systems. |
-| Header | Wsk.h (include Wsk.h) |
+**Version**: Available in Windows Vista and later versions of the Windows operating systems.
+
+**Header**: Wsk.h (include Wsk.h)
+
 
 ## See also
 
-[WskCaptureProviderNPI](https://msdn.microsoft.com/library/windows/hardware/ff571122)  
-[WskControlClient](https://msdn.microsoft.com/library/windows/hardware/ff571126)  
-[WskSocket](https://msdn.microsoft.com/library/windows/hardware/ff571149)  
-[WskSocketConnect](https://msdn.microsoft.com/library/windows/hardware/ff571150)  
-[WSK_PROVIDER_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/ff571175)
-
+[WskCaptureProviderNPI](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi)  
+[WskControlClient](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client)  
+[WskSocket](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket)  
+[WskSocketConnect](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect)  
+[WSK_PROVIDER_DISPATCH](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_dispatch)

@@ -17,15 +17,9 @@ ms.localizationpriority: medium
 
 The framework checks for several types of errors from framework-based drivers. If one of these errors occurs, the framework creates a WDF\_VIOLATION bug check.
 
-For information about the types of driver errors that the framework checks for, see [**WDF\_VIOLATION**](https://msdn.microsoft.com/library/windows/hardware/ff557235).
+For information about the types of driver errors that the framework checks for, see [**WDF\_VIOLATION**](../debugger/bug-check-0x10d---wdf-violation.md).
 
-Your driver can create a bug check by calling [**WdfVerifierKeBugCheck**](https://msdn.microsoft.com/library/windows/hardware/ff551166).
-
- 
+Your driver can create a bug check by calling [**WdfVerifierKeBugCheck**](/windows-hardware/drivers/ddi/wdfverifier/nf-wdfverifier-wdfverifierkebugcheck).
 
  
-
-
-
-
 

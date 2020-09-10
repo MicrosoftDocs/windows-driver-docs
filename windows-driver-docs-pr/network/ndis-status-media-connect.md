@@ -20,7 +20,7 @@ NDIS translates NDIS\_STATUS\_MEDIA\_CONNECT status indications to [**NDIS\_STAT
 
 NDIS 5.*x* and earlier miniport drivers indicate an [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md) status when a miniport driver determines that the network connection has been lost. When the connection is restored, the driver indicates an NDIS\_STATUS\_MEDIA\_CONNECT status.
 
-For more information about NDIS\_STATUS\_MEDIA\_CONNECT, see [Indicating Connection Status (NDIS 5.1)](https://msdn.microsoft.com/library/windows/hardware/ff546856) and [Media Status Indications for 802.11 Networks](https://msdn.microsoft.com/library/windows/hardware/ff549301).
+For more information about NDIS\_STATUS\_MEDIA\_CONNECT, see [Indicating Connection Status (NDIS 5.1)](/previous-versions/windows/hardware/network/ff546856(v=vs.85)) and [Media Status Indications for 802.11 Networks](/previous-versions/windows/hardware/network/ff549301(v=vs.85)).
 
 Requirements
 ------------
@@ -50,9 +50,4 @@ Requirements
 [**NDIS\_STATUS\_MEDIA\_DISCONNECT**](ndis-status-media-disconnect.md)
 
  
-
- 
-
-
-
 

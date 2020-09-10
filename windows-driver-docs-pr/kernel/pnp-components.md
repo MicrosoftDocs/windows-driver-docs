@@ -23,12 +23,7 @@ PnP drivers support the physical, logical, and virtual devices on a machine. The
 
 All drivers should support PnP and power management. If a single driver does not support PnP and power management, it constrains the PnP and power management support of the system as a whole.
 
-See [Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455) for information about device and driver setup, including (INF) files, CAT files, and the registry.
+See [Device Installation Overview](../install/overview-of-device-and-driver-installation.md) for information about device and driver setup, including (INF) files, CAT files, and the registry.
 
  
-
- 
-
-
-
 

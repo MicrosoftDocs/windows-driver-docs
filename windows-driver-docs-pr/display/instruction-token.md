@@ -17,7 +17,7 @@ An instruction token informs the driver of a specific operation to perform and i
 ### <span id="bits"></span><span id="BITS"></span>Bits
 
 <span id="_15_00_"></span>**\[15:00\]**
-Bits 0 through 15 indicate an [operation code](https://msdn.microsoft.com/library/windows/hardware/ff569706). D3DSIO\_\* is an example of an operation code, where \* represents the instruction. For example, the following code snippet shows an [ADD instruction](https://msdn.microsoft.com/library/windows/hardware/ff538212):
+Bits 0 through 15 indicate an [operation code](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_instruction_opcode_type). D3DSIO\_\* is an example of an operation code, where \* represents the instruction. For example, the following code snippet shows an [ADD instruction](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_instruction_opcode_type):
 
 ```cpp
 // D3DSIO_ADD d, s1, s2
@@ -104,10 +104,4 @@ The runtime converts the **tex** and **texld** assembler instructions to the D3D
 Available in Windows Vista and later versions of the Windows operating systems.
 
  
-
- 
-
-
-
-
 

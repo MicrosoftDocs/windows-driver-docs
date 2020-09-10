@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 A **LogConfig** directive references one or more INF-writer-defined sections, each of which specifies a logical configuration of hardware resources − the interrupt request lines, memory ranges, I/O ports, and DMA channels that can be used by the device. Each *log-config-section* specifies an alternative set of bus-relative hardware resources that can be used by the device.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.LogConfigOverride] 
   
@@ -36,7 +36,7 @@ INF files for PnP devices use this directive only to create override configurati
 
 Each named section referenced by a **LogConfig** directive has the following form:
 
-```ini
+```inf
 [log-config-section]
  
 ConfigPriority=priority-value[,config-type]
@@ -163,7 +163,7 @@ Specifies the letter **M** if the given range is in system memory. If omitted, t
 <a href="" id="memconfig-mem-range--mem-range----"></a>**MemConfig=**<em>mem-range</em>\[**,**<em>mem-range</em>\]...  
 Specifies one or more memory ranges for the device in one of the following forms:
 
-```ini
+```inf
 start-end[(attr)] | size@min-max[%align-mask][(attr)]
 ```
 
@@ -338,7 +338,7 @@ A given *log-config-section* name must be unique to the INF file, but it can be 
 
 Only one **ConfigPriority** entry can be used in each *log-config-section*. There can be more than one of each of the other entries, depending on the hardware resource requirements of the device.
 
-One or more **MfCardConfig=** entries can appear only in a *log-config-section* that is referenced by a **LogConfig** directive in the <em>DDInstall</em>**.LogConfigOverride** section of an INF for a multifunction device. For more information about INF files for multifunction devices, see [Supporting Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743).
+One or more **MfCardConfig=** entries can appear only in a *log-config-section* that is referenced by a **LogConfig** directive in the <em>DDInstall</em>**.LogConfigOverride** section of an INF for a multifunction device. For more information about INF files for multifunction devices, see [Supporting Multifunction Devices](../multifunction/index.md).
 
 ### LogConfig-Referenced Section Entries and Values
 
@@ -357,7 +357,7 @@ Examples
 
 This example shows some valid **PcCardConfig** entries for a PCMCIA device.
 
-```ini
+```inf
 PcCardConfig=0:E0000:F0000(W)
 PcCardConfig=0:E0000(M)
 PcCardConfig=0::(W)
@@ -366,19 +366,19 @@ PcCardConfig=0(W)
 
 This example shows a Type 1 I/O range specification in an **IOConfig** entry. It specifies an I/O port region, eight bytes in size, which can start at 1F8, 2F8, or 3F8.
 
-```ini
+```inf
 IOConfig=1F8-1FF, 2F8-2FF, 3F8-3FF
 ```
 
 By contrast, this example shows a Type 2 I/O range specification in an **IOConfig** entry. It specifies an I/O port region, eight bytes in size, which can start at 300, 308, 310, 318, 320, or 328.
 
-```ini
+```inf
 IOConfig=8@300-32F%FF8
 ```
 
 This example shows a set of **IOConfig** entries for a four-port device, each specifying an I/O port range that is offset by 0x400 bytes from the next.
 
-```ini
+```inf
 IoConfig=0x200-0x21f
 IoConfig=0x600-0x61f
 IoConfig=0xA00-0xA1f
@@ -389,26 +389,26 @@ The next two examples show typical **MemConfig** entries.
 
 This example specifies a memory region of 32K bytes that can start at either C0000 or D0000.
 
-```ini
+```inf
 MemConfig=C0000-C7FFF, D0000-D7FFF
 ```
 
 This example specifies a memory region of 32k bytes starting on 64K boundaries.
 
-```ini
+```inf
 MemConfig=8000@C0000-D7FFF%F0000
 ```
 
 This example shows how the system HDC class INF file sets up several *log-config-sections* for generic ESDI hard disk controllers and uses a [***DDInstall*.LogConfigOverride**](inf-ddinstall-logconfigoverride-section.md) section for a particular IDE controller.
 
-```ini
+```inf
 [MS_HDC] ; per-manufacturer Models section
 %FujitsuIdePccard.DeviceDesc% = 
           atapi_fujitsu_Inst, PCMCIA\FUJITSU-IDE-PC_CARD-DDF2
 %*PNP0600.DeviceDesc% = atapi_Inst, *PNP0600 ; generic ESDI HDCs
 %PCI\CC_0101.DeviceDesc% = pciide_Inst,,PCI\CC_0101
 
-; ... other manufacturers&#39; Models sections omitted
+; ... other manufacturers' Models sections omitted
 
 [atapi_Inst]
 CopyFiles = @atapi.sys
@@ -447,7 +447,7 @@ IRQConfig=14,15,5,7,9,11,12,3
 PcCardConfig=1:0:0(W)
 ```
 
-For some examples of how **MfCardConfig** entries are used, see [Supporting PC Cards That Have Incomplete Configuration Register Addresses](https://msdn.microsoft.com/library/windows/hardware/ff542774).
+For some examples of how **MfCardConfig** entries are used, see [Supporting PC Cards That Have Incomplete Configuration Register Addresses](../multifunction/supporting-pc-cards-that-have-incomplete-configuration-register-addres.md).
 
 ## See also
 
@@ -457,11 +457,4 @@ For some examples of how **MfCardConfig** entries are used, see [Supporting PC C
 [***DDInstall*.FactDef**](inf-ddinstall-factdef-section.md)
 
  
-
- 
-
-
-
-
-
 

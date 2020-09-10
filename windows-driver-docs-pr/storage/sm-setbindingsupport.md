@@ -82,16 +82,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SetBindingSupport\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566330)
+[**SM\_SetBindingSupport\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setbindingsupport_in)
 
-[**SM\_SetBindingSupport\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566331)
-
- 
+[**SM\_SetBindingSupport\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setbindingsupport_out)
 
  
-
-
-
-
-
 

@@ -29,9 +29,9 @@ The two techniques to create a customized font installer are as follows:
 
     This plug-in must implement the following COM interface methods:
 
-    [**IPrintOemUI::FontInstallerDlgProc**](https://msdn.microsoft.com/library/windows/hardware/ff554176)
+    [**IPrintOemUI::FontInstallerDlgProc**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-fontinstallerdlgproc)
 
-    [**IPrintOemUI::UpdateExternalFonts**](https://msdn.microsoft.com/library/windows/hardware/ff554188)
+    [**IPrintOemUI::UpdateExternalFonts**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-updateexternalfonts)
 
 -   Supply a separate executable file
 
@@ -44,9 +44,4 @@ Unidrv uses the following algorithm for locating a font installer:
 2.  If an installer executable file is not available, Unidrv enables selection of font installation operations from the printer's property sheet. Unidrv determines if a user interface plug-in has been installed. If so, its font installation methods are called. If a user interface plug-in has not been installed, or if its font installation methods return E\_NOTIMPL, the driver uses its own fault installer.
 
  
-
- 
-
-
-
 

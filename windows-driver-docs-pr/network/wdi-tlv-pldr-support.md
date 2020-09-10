@@ -63,12 +63,7 @@ Requirements
 ## See also
 
 
-[PLDR](https://msdn.microsoft.com/library/windows/hardware/mt269098)
+[PLDR](./wdi-pldr-and-fldr.md)
 
  
-
- 
-
-
-
 

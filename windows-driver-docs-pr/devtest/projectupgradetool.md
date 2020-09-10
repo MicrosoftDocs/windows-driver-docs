@@ -137,15 +137,15 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
     In each \*.props file, locate the expression where `('$(VisualStudioVersion)' != '11.0')`. For example, the first instance will look like the following:
 
     ```XML
-            <When  Condition="&#39;$(VisualStudioVersion)&#39; != &#39;11.0&#39;">
+            <When  Condition="'$(VisualStudioVersion)' != '11.0'">
           <PropertyGroup>
-            <CLToolPath Condition="&#39;$(CLToolPath)&#39; == &#39;&#39;">$(WDKContentRoot)bin\x86\x64</CLToolPath>
+            <CLToolPath Condition="'$(CLToolPath)' == ''">$(WDKContentRoot)bin\x86\x64</CLToolPath>
             <CLToolArchitecture>Native32Bit</CLToolArchitecture>
-            <LinkToolPath Condition="&#39;$(LinkToolPath)&#39; == &#39;&#39;">$(WDKContentRoot)bin\x86\x64</LinkToolPath>
+            <LinkToolPath Condition="'$(LinkToolPath)' == ''">$(WDKContentRoot)bin\x86\x64</LinkToolPath>
             <LinkToolArchitecture>Native32Bit</LinkToolArchitecture>
-            <MIDLToolPath Condition="&#39;$(MIDLToolPath)&#39; == &#39;&#39;">$(WDKContentRoot)bin\x86</MIDLToolPath>
+            <MIDLToolPath Condition="'$(MIDLToolPath)' == ''">$(WDKContentRoot)bin\x86</MIDLToolPath>
             <MIDLToolArchitecture>Native32Bit</MIDLToolArchitecture>
-            <LibToolPath Condition="&#39;$(LibToolPath)&#39; == &#39;&#39;">$(WDKContentRoot)bin\x86</LibToolPath>
+            <LibToolPath Condition="'$(LibToolPath)' == ''">$(WDKContentRoot)bin\x86</LibToolPath>
             <LibToolArchitecture>Native32Bit</LibToolArchitecture>
             <ExecutablePath>$(WDKContentRoot)bin\x86\x64;$(WDKContentRoot)bin\x86;$(WDKContentRoot)tools\pfd\bin\bin\AMD64;$(WDKContentRoot)tools\tracing\x64;$(ExecutablePath)</ExecutablePath>      
         </PropertyGroup>
@@ -155,19 +155,19 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
     Change the not equals (!=) to less than ("&lt;").
 
     ```XML
-        <When  Condition="&#39;$(VisualStudioVersion)&#39; &lt;&#39;11.0&#39;">
+        <When  Condition="'$(VisualStudioVersion)' &lt;'11.0'">
     ```
 
     Locate the next instance of the expression where `('$(VisualStudioVersion)' != '11.0')`
 
     ```XML
-        <When Condition="(&#39;$(PlatformToolset)&#39; == &#39;WindowsApplicationForDrivers8.0&#39;) and (&#39;$(VisualStudioVersion)&#39; != &#39;11.0&#39;)">
+        <When Condition="('$(PlatformToolset)' == 'WindowsApplicationForDrivers8.0') and ('$(VisualStudioVersion)' != '11.0')">
     ```
 
     And change the not equals (!=) to less than ("&lt;").
 
     ```XML
-        <When Condition="(&#39;$(PlatformToolset)&#39; == &#39;WindowsApplicationForDrivers8.0&#39;) and (&#39;$(VisualStudioVersion)&#39; &lt;&#39;11.0&#39;)">
+        <When Condition="('$(PlatformToolset)' == 'WindowsApplicationForDrivers8.0') and ('$(VisualStudioVersion)' &lt;'11.0')">
     ```
 
     After you make the changes, save both \*.props files.
@@ -179,7 +179,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
     Locate the Vista target configurations in your project file (release and debug). For example:
 
     ```XML
-       <PropertyGroup Label="Configuration" Condition="&#39;$(Configuration)|$(Platform)&#39;==&#39;Vista Debug|Win32&#39;">
+       <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Vista Debug|Win32'">
         <TargetVersion>Vista</TargetVersion>
         <UseDebugLibraries>True</UseDebugLibraries>
         <PlatformToolset>WindowsKernelModeDriver8.0</PlatformToolset>
@@ -189,7 +189,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
     Add the **PackageDir** property to your Windows Vista configuration settings. In most instances, you should use the default values: `<PackageDir>$(OutDir)\$(Intdir)</PackageDir>`.
 
     ```XML
-       <PropertyGroup Label="Configuration" Condition="&#39;$(Configuration)|$(Platform)&#39;==&#39;Vista Debug|Win32&#39;">
+       <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Vista Debug|Win32'">
         <TargetVersion>Vista</TargetVersion>
         <PackageDir>$(OutDir)\$(Intdir)</PackageDir>
         <UseDebugLibraries>True</UseDebugLibraries>
@@ -200,7 +200,7 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
     Make the same change for your other configurations.
 
     ```XML
-        <PropertyGroup Label="Configuration" Condition="&#39;$(Configuration)|$(Platform)&#39;==&#39;Vista Release|Win32&#39;">
+        <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Vista Release|Win32'">
         <TargetVersion>Vista</TargetVersion>
         <PackageDir>$(OutDir)\$(Intdir)</PackageDir>
         <UseDebugLibraries>False</UseDebugLibraries>
@@ -213,16 +213,6 @@ error : Verification Error: Driver package has no driver version.    C:\Program 
 ## <span id="related_topics"></span>Related topics
 
 
-[Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver)
+[Building a Driver](../develop/building-a-driver.md)
 
 [WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md)
-
-
-
-
-
-
-
-
-
-

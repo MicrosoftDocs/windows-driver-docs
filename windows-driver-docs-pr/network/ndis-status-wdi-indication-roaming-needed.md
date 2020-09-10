@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION to indicate t
 
 | Type                                                                                    | Multiple TLV instances allowed | Optional | Description                                                                                                                         |
 |-----------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898049) |                                |          | The reason for the roam trigger. When a [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md) is triggered, this reason is forwarded to it. |
+| [**WDI\_TLV\_ROAMING\_NEEDED\_PARAMETERS**](./wdi-tlv-roaming-needed-parameters.md) |                                |          | The reason for the roam trigger. When a [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md) is triggered, this reason is forwarded to it. |
 
  
 
@@ -58,9 +58,4 @@ Requirements
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
  
-
- 
-
-
-
 

@@ -18,13 +18,19 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_DHPRebalanceOptOut
 
 
-The DEVPKEY_DeviceClass_DHPRebalanceOptOut device property represents a value that indicates whether an entire device class will participate in resource rebalancing after a [dynamic hardware partitioning (DHP)](https://msdn.microsoft.com/library/windows/hardware/ff544234) processor hot-add operation has occurred.
+The DEVPKEY_DeviceClass_DHPRebalanceOptOut device property represents a value that indicates whether an entire device class will participate in resource rebalancing after a [dynamic hardware partitioning (DHP)](../kernel/dynamic-hardware-partitioning-techniques.md) processor hot-add operation has occurred.
 
 <table>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -59,13 +65,13 @@ On a dynamically partitionable server that is running Windows Server 2008 or lat
 
 If the DEVPKEY_DeviceClass_DHPRebalanceOptOut device property exists and the value of the property is set to **TRUE**, the device class does not participate in resource rebalancing when a new processor is dynamically added to the system.
 
-A device's [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) is specified in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of the device's INF file.
+A device's [device setup class](./overview-of-device-setup-classes.md) is specified in the [**INF Version Section**](./inf-version-section.md) of the device's INF file.
 
 The default value for this property for the Network Adapter (Class = Net) is **TRUE**. The default value for this property for all other device setup classes is **FALSE**.
 
 This device property does not affect whether a device class participates in a resource rebalance that is initiated for other reasons.
 
-You can access the DEVPKEY_DeviceClass_DHPRebalanceOptOut property by calling [**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086) and [**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128).
+You can access the DEVPKEY_DeviceClass_DHPRebalanceOptOut property by calling [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) and [**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw).
 
 Requirements
 ------------
@@ -90,16 +96,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551086)
+[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiSetClassProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552128)
-
- 
+[**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
 
  
-
-
-
-
-
 

@@ -20,14 +20,9 @@ ms.localizationpriority: medium
 
 A vendor can provide an optional *device interface* and support for custom IOCTLs to operate an ACPI device's functional device object (*FDO*).
 
-The function driver typically calls [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) in its [**AddDevice**](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine to register a device interface. The driver calls [**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700) to enable the interface after Plug and Play starts the FDO. The driver should disable the interface if a device is removed by Plug and Play.
+The function driver typically calls [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) in its [**AddDevice**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine to register a device interface. The driver calls [**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate) to enable the interface after Plug and Play starts the FDO. The driver should disable the interface if a device is removed by Plug and Play.
 
 The device interface class GUID is vendor-defined.
 
  
-
- 
-
-
-
 

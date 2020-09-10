@@ -53,7 +53,7 @@ The following table shows the files and the information that you must provide, d
 </tr>
 <tr class="even">
 <td>WSD</td>
-<td>The standard properties from the <a href="https://msdn.microsoft.com/library/windows/hardware/gg463146.aspx" data-raw-source="[WS-Print Specification](https://msdn.microsoft.com/library/windows/hardware/gg463146.aspx)">WS-Print Specification</a> or WS-Print v1.1 Specification are populated into the Bidi Schema by the port monitor.</td>
+<td>The standard properties from the <a href="/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing" data-raw-source="[WS-Print Specification](/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing)">WS-Print Specification</a> or WS-Print v1.1 Specification are populated into the Bidi Schema by the port monitor.</td>
 <td><p>You must provide the following file:</p>
 XML Bidi extension file</td>
 <td>Print device must support the WS-Print v1.1 protocol.</td>
@@ -79,13 +79,10 @@ XML Bidi extension file</td>
 
  
 
-For more information, see [Bidirectional Communication Schema](https://msdn.microsoft.com/library/windows/hardware/ff545169.aspx) and [WSDMon port monitors](wsdmon-port-monitor.md). And to read about customizing port monitors to extend the Bidi schema, see [Customizing the Printer Port Monitors](https://msdn.microsoft.com/library/windows/hardware/ff547327.aspx).
+For more information, see [Bidirectional Communication Schema](./bidirectional-communication-schema.md) and [WSDMon port monitors](wsdmon-port-monitor.md). And to read about customizing port monitors to extend the Bidi schema, see [Customizing the Printer Port Monitors](./customizing-the-printer-port-monitors.md).
 
 ## Related topics
-[Bidirectional Communication Schema](https://msdn.microsoft.com/library/windows/hardware/ff545169.aspx)  
-[Customizing the Printer Port Monitors](https://msdn.microsoft.com/library/windows/hardware/ff547327.aspx)  
+[Bidirectional Communication Schema](./bidirectional-communication-schema.md)  
+[Customizing the Printer Port Monitors](./customizing-the-printer-port-monitors.md)  
 [V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)  
-[WSDMon port monitors](wsdmon-port-monitor.md)  
-
-
-
+[WSDMon port monitors](wsdmon-port-monitor.md)

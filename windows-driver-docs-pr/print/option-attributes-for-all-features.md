@@ -60,12 +60,12 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 </tr>
 <tr class="even">
 <td><p></em><strong>Name</strong></p></td>
-<td><p>Text string used as the option&#39;s display name on the printer&#39;s property sheet.</p></td>
+<td><p>Text string used as the option's display name on the printer's property sheet.</p></td>
 <td><p>Optional. If not specified, then <em><strong>rcNameID</strong> must be specified. (Also a <a href="feature-attributes.md" data-raw-source="[feature attribute](feature-attributes.md)">feature attribute</a>.)</p></td>
 </tr>
 <tr class="odd">
 <td><p></em><strong>OptionID</strong></p></td>
-<td><p>Numeric value representing a unique option identifier that Unidrv stores in the printer&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure. For use only with the PaperSize, InputSlot, Halftoning, and MediaType features. Value is stored in the DEVMODE structure&#39;s <strong>dmPaperSize</strong>, <strong>dmDefaultSource</strong>, <strong>dmDitherType</strong>, or <strong>dmMediaType</strong> member, respectively.</p></td>
+<td><p>Numeric value representing a unique option identifier that Unidrv stores in the printer's <a href="https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure. For use only with the PaperSize, InputSlot, Halftoning, and MediaType features. Value is stored in the DEVMODE structure's <strong>dmPaperSize</strong>, <strong>dmDefaultSource</strong>, <strong>dmDitherType</strong>, or <strong>dmMediaType</strong> member, respectively.</p></td>
 <td><p>Optional. If not specified, Unidrv assigns an identifier value (&gt;256). To avoid conflicts with Unidrv-assigned identifiers, the specified value must be greater than 512.</p></td>
 </tr>
 <tr class="even">
@@ -93,9 +93,4 @@ The following table lists, in alphabetic order, the [option attributes](option-a
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
  
-
- 
-
-
-
 

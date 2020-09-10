@@ -35,20 +35,15 @@ To write portable drivers, it is best to avoid:
 
 ### Using WDK-Supplied Interfaces
 
-Each Windows NT executive component exports a set of kernel-mode [driver support routines](https://msdn.microsoft.com/library/windows/hardware/ff544200) that drivers and all other kernel-mode components call. If the underlying implementation of a support routine changes over time, its callers remain portable because the interface to the defining component does not change.
+Each Windows NT executive component exports a set of kernel-mode [driver support routines](/windows-hardware/drivers/ddi/index) that drivers and all other kernel-mode components call. If the underlying implementation of a support routine changes over time, its callers remain portable because the interface to the defining component does not change.
 
 The WDK supplies a set of header files that define system-specific data types and constants that drivers (and all other kernel-mode components) use to help maintain portability from one platform to another. All kernel-mode drivers include one of the master WDK kernel-mode header files, Wdm.h or Ntddk.h. The master header files pull in not only system-supplied headers that define the basic kernel-mode types, but also appropriate selections from any processor-architecture-specific headers when a driver is compiled with the corresponding compiler directive.
 
-Some drivers, such as [SCSI miniport drivers](https://msdn.microsoft.com/library/windows/hardware/ff565309), [NDIS drivers](https://msdn.microsoft.com/library/windows/hardware/ff556938), and [video miniport drivers](https://msdn.microsoft.com/library/windows/hardware/ff570509), include other system-supplied header files.
+Some drivers, such as [SCSI miniport drivers](../storage/scsi-miniport-drivers.md), [NDIS drivers](/previous-versions/windows/hardware/network/ff556938(v=vs.85)), and [video miniport drivers](../display/video-miniport-drivers-in-the-windows-2000-display-driver-model.md), include other system-supplied header files.
 
 If a driver requires platform-dependent definitions, it is best to isolate those definitions within **\#ifdef** statements, so that each driver can be compiled and linked for the appropriate hardware platform. However, you can almost always avoid implementing any platform-specific, conditionally compiled code in a driver by using the support routines, macros, constants, and types that the WDK master header files provide.
 
 Kernel-mode drivers can use kernel-mode **Rtl*Xxx*** routines that are documented in the WDK. Kernel-mode drivers cannot call user-mode **Rtl*Xxx*** routines.
 
  
-
- 
-
-
-
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-To enable support for TWAIN capability pass-through, add the **WiaItemTypeTwainCapabilityPassThrough** flag to the [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585) property on the root item. This flag is defined in header file *wiatwcmp.h*.
+To enable support for TWAIN capability pass-through, add the **WiaItemTypeTwainCapabilityPassThrough** flag to the [**WIA\_IPA\_ITEM\_FLAGS**](./wia-ipa-item-flags.md) property on the root item. This flag is defined in header file *wiatwcmp.h*.
 
 The following example is taken from the *wiascanr* sample (which is included in the Driver Development Kit \[DDK\]) and demonstrates the use of the **WiaItemTypeTwainCapabilityPassThrough** flag).
 
@@ -39,9 +39,4 @@ The following example is taken from the *wiascanr* sample (which is included in 
 ```
 
  
-
- 
-
-
-
 

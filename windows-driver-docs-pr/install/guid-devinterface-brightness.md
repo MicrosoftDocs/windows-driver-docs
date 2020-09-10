@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_BRIGHTNESS
 
 
-The GUID_DEVINTERFACE_BRIGHTNESS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and support brightness control of monitor child devices.
+The GUID_DEVINTERFACE_BRIGHTNESS [device interface class](./overview-of-device-interface-classes.md) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](../display/windows-vista-display-driver-model-design-guide.md) and support brightness control of monitor child devices.
 
 <table>
 <colgroup>
@@ -50,9 +50,9 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of brightness control interfaces for monitor child devices.
 
-If the display miniport driver supports a direct-call brightness control interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID_DEVINTERFACE_BRIGHTNESS to specify the interface type.
+If the display miniport driver supports a direct-call brightness control interface for this [device setup class](./overview-of-device-setup-classes.md), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_BRIGHTNESS to specify the interface type.
 
-For information about brightness devices, see [Supporting Brightness Controls on Integrated Display Panels](https://msdn.microsoft.com/library/windows/hardware/ff569755) and [Brightness Control Interface](https://msdn.microsoft.com/library/windows/hardware/ff538260).
+For information about brightness devices, see [Supporting Brightness Controls on Integrated Display Panels](../display/supporting-brightness-controls-on-integrated-display-panels.md) and [Brightness Control Interface](/windows-hardware/drivers/ddi/index).
 
 Requirements
 ------------
@@ -75,10 +75,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

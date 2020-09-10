@@ -44,13 +44,7 @@ This is a preliminary document and is currently incomplete.
 
 For many concepts relating to the debuggers and the debugger engine that are not yet documented here, look in the [Debugging Techniques](debugging-techniques.md) section of this documentation.
 
-To obtain some of the currently undocumented functionality of the debugger engine API, use the [**Execute**](https://msdn.microsoft.com/library/windows/hardware/ff543208) method to execute individual debugger commands.
+To obtain some of the currently undocumented functionality of the debugger engine API, use the [**Execute**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-execute) method to execute individual debugger commands.
 
  
-
- 
-
-
-
-
 

@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DUPLICATE_DEVICE
+# Code 42 - CM_PROB_DUPLICATE_DEVICE
 
-This function is reserved for system use.
-
-A duplicate device was detected.
+This Device Manager error message indicates that a duplicate device was detected.
 
 ## Error Code
 
@@ -32,4 +30,4 @@ This error is reported when one of the following occurs:
 
 - A bus driver incorrectly creates two identically named children on the bus. This is caused by multiple devices on the bus that report the same serial number. This can also be caused by a bus driver that incorrectly reports the same hardware identifiers for two or more devices.
 
-    In this case, you should contact [Microsoft support](http://support.microsoft.com/) for more assistance with this problem.
+    In this case, you should contact [Microsoft support](https://support.microsoft.com/en-us) for more assistance with this problem.

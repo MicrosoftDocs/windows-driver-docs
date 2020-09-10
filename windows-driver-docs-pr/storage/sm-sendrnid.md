@@ -102,16 +102,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRNID\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566308)
+[**SM\_SendRNID\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrnid_in)
 
-[**SM\_SendRNID\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566310)
-
- 
+[**SM\_SendRNID\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrnid_out)
 
  
-
-
-
-
-
 

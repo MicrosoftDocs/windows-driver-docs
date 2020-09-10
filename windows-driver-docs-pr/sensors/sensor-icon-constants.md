@@ -134,7 +134,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[Specifying an Icon](https://msdn.microsoft.com/library/windows/hardware/ff545876)
+[Specifying an Icon](https://docs.microsoft.com/windows-hardware/drivers/sensors/specifying-an-icon)
 
  
 

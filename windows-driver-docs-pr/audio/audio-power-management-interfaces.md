@@ -22,19 +22,13 @@ Implemented by an adapter driver and exposed to PortCls. This interface provides
 
 An optional interface that a miniport driver can expose if it requires advance notification of impending power-state changes.
 
-[IAdapterPowerManagement](https://msdn.microsoft.com/library/windows/hardware/ff536485)
+[IAdapterPowerManagement](/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement)
 
-[IAdapterPowermanagement2](https://msdn.microsoft.com/library/windows/hardware/ff536486)
+[IAdapterPowermanagement2](/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement2)
 
-[IAdapterPowerManagement3](https://msdn.microsoft.com/library/windows/hardware/jj200330)
+[IAdapterPowerManagement3](/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement3)
 
-[IPowerNotify](https://msdn.microsoft.com/library/windows/hardware/ff536947)
-
- 
+[IPowerNotify](/windows-hardware/drivers/ddi/portcls/nn-portcls-ipowernotify)
 
  
-
-
-
-
 

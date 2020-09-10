@@ -56,7 +56,7 @@ Typically, the operating system sets the value of DEVPKEY_Numa_Proximity_Domain 
 
 You can retrieve the value of DEVPKEY_Numa_Proximity_Domain by calling **IoSetDevicePropertyData** or **IoGetDevicePropertyData** in a device driver.
 
-You can also call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Numa_Proximity_Domain.
+You can also call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Numa_Proximity_Domain.
 
 The value of this property is owned by Windows and should be treated as read-only by drivers and applications.
 
@@ -83,10 +83,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

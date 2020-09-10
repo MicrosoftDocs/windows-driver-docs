@@ -1,8 +1,8 @@
 ---
-Description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
+description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 title: WinUSB (Winusb.sys) Installation
 ms.date: 05/09/2018
-ms.localizationpriority: medium
+ms.localizationpriority: High
 ---
 
 # WinUSB (Winusb.sys) Installation
@@ -33,7 +33,7 @@ When you connect your device, you might notice that Windows loads Winusb.sys aut
 
 1.  Plug in your device to the host system.
 2.  Open Device Manager and locate the device.
-3.  Right-click the device and select **Update driver software...** from the context menu.
+3.  Select and hold (or right-click) the device and select **Update driver software...** from the context menu.
 4.  In the wizard, select **Browse my computer for driver software**.
 5.  Select **Let me pick from a list of device drivers on my computer**.
 6.  From the list of device classes, select **Universal Serial Bus devices**.
@@ -151,7 +151,7 @@ Except for device-specific values and several issues that are noted in the follo
 
 -   **USB\_Install.HW**: This section is the key in the .inf file. It specifies the device interface globally unique identifier (GUID) for your device. The **AddReg** directive sets the specified interface GUID in a standard registry value. When Winusb.sys is loaded as the device's function driver, it reads the registry value DeviceInterfaceGUIDs key and uses the specified GUID to represent the device interface. You should replace the GUID in this example with one that you create specifically for your device. If the protocols for the device change, create a new device interface GUID.
 
-    **Note**  User-mode software must call [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb\_Initialize**](https://msdn.microsoft.com/library/windows/hardware/ff540277) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+    **Note**  User-mode software must call [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system. The example shows INF with WDF coinstallers.
 
@@ -331,7 +331,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
 [WinUSB Power Management](winusb-power-management.md)  
 [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)  
-[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)  
+[WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
 [WinUSB](winusb.md)  
 
 

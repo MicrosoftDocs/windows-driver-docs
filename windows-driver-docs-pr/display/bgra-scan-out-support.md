@@ -19,17 +19,11 @@ The scan-out bit is turned on for the DXGI\_FORMAT\_B8G8R8A8\_UNORM and DXGI\_FO
 
 -   Handle requests for the primary surface that are in these formats.
 
--   Handle calls to its [**SetDisplayMode**](https://msdn.microsoft.com/library/windows/hardware/ff569535) function for resources that are created with these formats.
+-   Handle calls to its [**SetDisplayMode**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setdisplaymode) function for resources that are created with these formats.
 
--   Handle calls to its [**PresentDXGI**](https://msdn.microsoft.com/library/windows/hardware/ff569179) function to present these formats through both bit-block transfer (bitblt) and flip operations.
+-   Handle calls to its [**PresentDXGI**](/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions) function to present these formats through both bit-block transfer (bitblt) and flip operations.
 
--   Handle calls to its [**BltDXGI**](https://msdn.microsoft.com/library/windows/hardware/ff538252) function to copy these formats through stretch, rotate, and resolve (in fact, all the bitblt operations that are expected for the RGBA variants).
-
- 
+-   Handle calls to its [**BltDXGI**](/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions) function to copy these formats through stretch, rotate, and resolve (in fact, all the bitblt operations that are expected for the RGBA variants).
 
  
-
-
-
-
 

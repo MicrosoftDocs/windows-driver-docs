@@ -56,14 +56,9 @@ Within an *add-registry-section*, the following keywords can be used to specify 
 
  
 
-For more information about using these keywords, see [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320).
+For more information about using these keywords, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 The settings can be set by a user-mode component by using the device installation functions. For more information, see [Setting Device Object Registry Properties After Installation](setting-device-object-registry-properties-after-installation.md).
 
  
-
- 
-
-
-
 

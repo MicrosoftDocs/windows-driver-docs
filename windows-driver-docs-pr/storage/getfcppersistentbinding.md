@@ -41,7 +41,7 @@ Parameters
 Indicates the number of binding entries that the WMI provider can report in the *Entry* parameter.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFcpPersistentBinding\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff554936) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetFcpPersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_out) structure.
 
 *TotalEntryCount*   
 Indicates the total number of persistent bindings associated with the HBA.
@@ -50,7 +50,7 @@ Indicates the total number of persistent bindings associated with the HBA.
 Indicates the total number of persistent bindings retrieved by the **GetFcpPersistentBinding** method. This value will be less than or equal to *TotalEntryCount*.
 
 *Entry\[\]*   
-An array of structures of type [**HBAFCPBindingEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556034) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
+An array of structures of type [**HBAFCPBindingEntry**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry) that describe an HBA's bindings between operating system and Fibre Channel protocol (FCP) identifiers.
 
 Return value
 ------------
@@ -89,18 +89,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**GetFcpPersistentBinding\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff554933)
+[**GetFcpPersistentBinding\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_in)
 
-[**GetFcpPersistentBinding\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff554936)
+[**GetFcpPersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfcppersistentbinding_out)
 
-[**HBAFCPBindingEntry**](https://msdn.microsoft.com/library/windows/hardware/ff556034)
-
- 
+[**HBAFCPBindingEntry**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafcpbindingentry)
 
  
-
-
-
-
-
 

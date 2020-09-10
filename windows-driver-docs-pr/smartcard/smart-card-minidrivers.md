@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The smart card minidriver provides a simpler alternative to developing a legacy cryptographic service provider (CSP) by encapsulating most of the complex cryptographic operations from the card minidriver developer.
 
-For information about the specification for smart card minidrivers, see [Smart Card Minidriver Specification](https://msdn.microsoft.com/library/windows/hardware/dn631754).
+For information about the specification for smart card minidrivers, see [Smart Card Minidriver Specification](/previous-versions/windows/hardware/design/dn631754(v=vs.85)).
 
 Beginning with Windows Vista, applications can use the Microsoft Cryptography API: Next Generation (CNG) for smart card–based cryptographic services. As part of the elliptic curve cryptography (ECC) effort that was introduced in Windows Vista, ECC smart cards are supported in the new cryptographic framework. Applications and interfaces that interact with existing Rivest-Shamir-Adleman (RSA) card minidrivers through the legacy CAPI subsystem continue to work without modification.
 
@@ -41,10 +41,4 @@ The following figure shows the interfaces between card minidrivers and CAPI2-bas
 It is recommend that developers take advantage of the rich set of libraries that Microsoft provides for cryptographic operations that the minidriver performs. This lets developers benefit from the Microsoft Windows Update infrastructure for the distribution of critical security updates.
 
  
-
- 
-
-
-
-
 

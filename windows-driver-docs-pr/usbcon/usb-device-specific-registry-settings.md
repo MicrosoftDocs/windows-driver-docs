@@ -1,5 +1,5 @@
 ---
-Description: This topic describes the device-specific registry entries.
+description: This topic describes the device-specific registry entries.
 title: USB Device Registry Entries
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -87,8 +87,8 @@ The following table describes the possible registry entries for the ***vvvvppppr
 <p>Supported on Windows Vista and later versions.</p></td>
 <td><p>Indicates whether the USB driver stack must ignore the serial number of the device.</p></td>
 <td><ul>
-<li><p>0x0000: The setting is disabled.</p></li>
-<li><p>0x0001: Forces the USB driver stack to ignore the serial number of the device. Therefore, the device instance is tied to the port to which the device is attached.</p></li>
+<li><p>0x00: The setting is disabled.</p></li>
+<li><p>0x01: Forces the USB driver stack to ignore the serial number of the device. Therefore, the device instance is tied to the port to which the device is attached.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">

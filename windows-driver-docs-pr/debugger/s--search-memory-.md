@@ -3,7 +3,7 @@ title: s (Search Memory)
 description: The s command searches through memory to find a specific byte pattern.
 ms.assetid: fdca07c3-95c8-46cf-8da1-07a5e6767f67
 keywords: ["s (Search Memory) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 02/21/2019
 topic_type:
 - apiref
 api_name:
@@ -113,7 +113,23 @@ Searches for any memory that contains printable Unicode strings. Use the **l** *
 Specifies the memory area to search through. This range cannot be more than 256 MB long unless you use the **L?** syntax. For more information about this syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______Pattern______"></span><span id="_______pattern______"></span><span id="_______PATTERN______"></span> *Pattern*   
-Specifies one or more values to search for. By default, these values are byte values. You can specify different types of memory in *Type*. If you specify a WORD, DWORD, or QWORD value, enclose it in single quotation marks (for example, **'Tag7'**). If you specify a string, enclose it in double quotation marks (for example, **"This string"**).
+Specifies one or more values to search for. By default, these values are byte values. You can specify different types of memory in *Type*. If you specify a WORD, DWORD, or QWORD value, depending on the other options selected, you may need to enclose the search pattern in single quotation marks (for example, **'H'**). 
+
+```dbgcmd
+0:000> s -d @rsp L1000000 'H'  
+0000003f`ff07ec00  00000048 00000000 500c0163 00000000  H.......c..P....
+0000003f`ff07ec50  00000048 00000000 00000080 00000000  H...............
+0000003f`ff07efc0  00000048 00000000 400c0060 00000000  H.......`..@....
+```
+
+If you specify a string, using the ascii type, enclose it in double quotation marks (for example, **"B7"**).
+
+```dbgcmd
+0:000> s -a @rsp L10000000 "B7"  
+0000003f`ff07ef0a  42 37 ff 7f 00 00 90 38-4e c2 6c 01 00 00 7d 26  B7.....8N.l...}&
+0000003f`ff0ff322  42 37 ff 7f 00 00 f8 5d-42 37 ff 7f 00 00 20 41  B7.....]B7.... A
+0000003f`ff0ff32a  42 37 ff 7f 00 00 20 41-42 37 ff 7f 00 00 98 59  B7.... AB7.....Y
+```
 
 <span id="_______-v______"></span><span id="_______-V______"></span> **-v**   
 Searches for objects of the same type as the specified *Object*.

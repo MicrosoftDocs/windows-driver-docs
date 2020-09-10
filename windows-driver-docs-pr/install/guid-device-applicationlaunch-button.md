@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVICE_APPLICATIONLAUNCH_BUTTON
 
 
-The GUID_DEVICE_APPLICATIONLAUNCH_BUTTON [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for Advanced Configuration and Power Interface (ACPI) application start buttons.
+The GUID_DEVICE_APPLICATIONLAUNCH_BUTTON [device interface class](./overview-of-device-interface-classes.md) is defined for Advanced Configuration and Power Interface (ACPI) application start buttons.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The GUID_DEVICE_APPLICATIONLAUNCH_BUTTON [device interface class](https://msdn.m
 Remarks
 -------
 
-The system-supplied [ACPI driver](https://msdn.microsoft.com/library/windows/hardware/ff540493) registers an instance of this device interface class to notify the operating system and applications of the presence of ACPI application start buttons.
+The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers an instance of this device interface class to notify the operating system and applications of the presence of ACPI application start buttons.
 
-For information about supplying WDM [function drivers](https://msdn.microsoft.com/library/windows/hardware/ff546516) for ACPI devices, see [Supporting ACPI Devices](https://msdn.microsoft.com/library/windows/hardware/ff536161).
+For information about supplying WDM [function drivers](../kernel/function-drivers.md) for ACPI devices, see [Supporting ACPI Devices](../acpi/supporting-acpi-devices.md).
 
 Requirements
 ------------
@@ -69,10 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

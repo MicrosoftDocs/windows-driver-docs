@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_CLASS_MODEM
 
 
-GUID_CLASS_MODEM is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for modem devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_MODEM**](guid-devinterface-modem.md) class identifier for new instances of this class.
+GUID_CLASS_MODEM is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for modem devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_MODEM**](guid-devinterface-modem.md) class identifier for new instances of this class.
 
 Requirements
 ------------
@@ -46,11 +46,4 @@ Requirements
 [**GUID_DEVINTERFACE_MODEM**](guid-devinterface-modem.md)
 
  
-
- 
-
-
-
-
-
 

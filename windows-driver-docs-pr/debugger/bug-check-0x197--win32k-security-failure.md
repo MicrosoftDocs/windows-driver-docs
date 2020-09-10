@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The WIN32K\_SECURITY\_FAILURE bug check has a value of 0x00000197. This indicates a security failure was detected in win32k.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## WIN32K\_SECURITY\_FAILURE Parameters
 
@@ -38,7 +40,7 @@ The WIN32K\_SECURITY\_FAILURE bug check has a value of 0x00000197. This indicate
 <tr class="odd">
 <td align="left">1</td>
 <td align="left"><p>Failure type</p>
-<p>0x1 : An objects handle entry didn&#39;t point back to the object.</p>
+<p>0x1 : An objects handle entry didn't point back to the object.</p>
 2 - Pointer to the object type
 3 - Pointer to the object handle entry
 4 - Expected object</td>

@@ -6,6 +6,7 @@ ms.date: 04/02/2018
 keywords:
  - NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # NDIS_STATUS_WDI_INDICATION_CIPHER_KEY_UPDATED
@@ -16,10 +17,6 @@ This indication is sent only while the driver has not offload the RSN GTK rekey 
 
 For example, the driver would send this notification if it or the firmware receives a new GTK/iGTK in the WNM-Sleep mode response.
 
-| Object |
-| --- |
-| Port |
-
 ## Payload data
 
 | Type | Multiple TLV instances allowed | Optional | Description |
@@ -28,8 +25,9 @@ For example, the driver would send this notification if it or the firmware recei
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1803 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1803
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

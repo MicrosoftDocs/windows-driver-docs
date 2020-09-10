@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_SET\_CIPHER\_KEY\_INFO
 
 
-WDI\_TLV\_SET\_CIPHER\_KEY\_INFO is a TLV that contains cipher key mapping key information for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://msdn.microsoft.com/library/windows/hardware/dn925855).
+WDI\_TLV\_SET\_CIPHER\_KEY\_INFO is a TLV that contains cipher key mapping key information for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md).
 
 ## TLV Type
 
@@ -65,9 +65,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

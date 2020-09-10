@@ -9,10 +9,9 @@ ms.localizationpriority: medium
 
 # Publishing restrictions
 
-
 The following items are restricted during publication. You can still create a shipping label for them, but the request will require additional Microsoft review.
 
-The Windows Hardware Dev Center dashboard enforces these publication restrictions. Publication restrictions ensure that partners cannot publish drivers that overwrite Microsoft class drivers or generic bus HWID strings. They also ensure that devices do not receive incorrect drivers due to generic third party or reused HWIDs.
+The Partner Center enforces these publication restrictions. Publication restrictions ensure that partners cannot publish drivers that overwrite Microsoft class drivers or generic bus HWID strings. They also ensure that devices do not receive incorrect drivers due to generic third party or reused HWIDs.
 
 Examples of these restrictions include, but are not limited to the list in the following table.
 
@@ -59,7 +58,7 @@ Examples of these restrictions include, but are not limited to the list in the f
 <td><p>Classcode declarations</p></td>
 <td><p>\CLASS</p>
 <p>\CC</p>
-<p>&amp;</p></td>
+<p>&</p></td>
 </tr>
 <tr class="even">
 <td><p>Two-part HWIDs</p></td>
@@ -106,15 +105,4 @@ Examples of these restrictions include, but are not limited to the list in the f
 </tbody>
 </table>
 
- 
-
 For more information about the driver publishing workflow, see [Windows 10 Driver Publishing Workflow](https://go.microsoft.com/fwlink/p/?LinkId=617374).
-
- 
-
- 
-
-
-
-
-

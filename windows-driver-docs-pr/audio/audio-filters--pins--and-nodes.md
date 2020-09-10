@@ -50,12 +50,7 @@ This section presents the features of filters, pins, and nodes that are specific
 
 [Topology Filters](topology-filters.md)
 
-For a more general discussion of kernel-streaming filters, pins, and nodes, see [KS Minidriver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff567656).
+For a more general discussion of kernel-streaming filters, pins, and nodes, see [KS Minidriver Architecture](../stream/ks-minidriver-architecture.md).
 
  
-
- 
-
-
-
 

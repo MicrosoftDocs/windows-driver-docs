@@ -55,16 +55,9 @@ Requirements
 ## See also
 
 
-[**BdaMethodDeletePin**](https://msdn.microsoft.com/library/windows/hardware/ff556474)
+[**BdaMethodDeletePin**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethoddeletepin)
 
-[**KSM\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff563453)
-
- 
+[**KSM\_PIN**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)
 
  
-
-
-
-
-
 

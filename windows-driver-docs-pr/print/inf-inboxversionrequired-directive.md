@@ -22,7 +22,7 @@ InboxVersionRequired=UseDriverVer
 
 If the **UseDriverVer** keyword is used as the value for **InboxVersionRequired**, **UseDriverVer** informs the class installer to use the **DriverVer** directive version string from the INF that is being parsed as the minimum acceptable version of any core drivers. You must be careful when you service drivers that use the **UseDriverVer** keyword. All core drivers that are referenced by an INF must be the same or higher version for installation to be successful.
 
-You can also specify specific version strings as the value for **InboxVersionRequired**. These version strings follow the same formatting as the **DriverVer** string that is specified in the [**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502). For more information about the **DriverVer** string format, see [**INF DriverVer Directive**](https://msdn.microsoft.com/library/windows/hardware/ff547394).
+You can also specify specific version strings as the value for **InboxVersionRequired**. These version strings follow the same formatting as the **DriverVer** string that is specified in the [**INF Version Section**](../install/inf-version-section.md). For more information about the **DriverVer** string format, see [**INF DriverVer Directive**](../install/inf-driverver-directive.md).
 
 The following example shows how you set **InboxVersionRequired** to a specific version string:
 
@@ -31,9 +31,4 @@ InboxVersionRequired=09/28/1999,5.00.2136.1
 ```
 
  
-
- 
-
-
-
 

@@ -64,13 +64,7 @@ class MSiSCSI_HBASessionConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_HBASessionConfig**](https://msdn.microsoft.com/library/windows/hardware/ff563021) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_HBASessionConfig**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_hbasessionconfig) data structure.
 
  
-
- 
-
-
-
-
 

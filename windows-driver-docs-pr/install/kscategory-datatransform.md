@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_DATATRANSFORM
 
 
-The KSCATEGORY_DATATRANSFORM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that transforms audio data streams.
+The KSCATEGORY_DATATRANSFORM [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that transforms audio data streams.
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ Drivers for KS devices register instances of KSCATEGORY_DATATRANSFORM to indicat
 
 For an example of how to register this functional category in an INF file, see the *Ddksynth.inf* INF file that is included with the software synthesizer sample in the *src\\audio\\ddksynth* directory of the WDK.
 
-For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813), [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799), and [Requirements for a GFX Filter Factory](https://msdn.microsoft.com/library/windows/hardware/ff537839).
+For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md), [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md), and [Requirements for a GFX Filter Factory](../audio/index.md).
 
 Requirements
 ------------
@@ -71,10 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

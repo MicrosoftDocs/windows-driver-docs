@@ -81,20 +81,13 @@ Requirements
 ## See also
 
 
-[**BdaPropertyGetControllingPinId**](https://msdn.microsoft.com/library/windows/hardware/ff556480)
+[**BdaPropertyGetControllingPinId**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertygetcontrollingpinid)
 
-[**BDA\_TEMPLATE\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff556558)
+[**BDA\_TEMPLATE\_CONNECTION**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_template_connection)
 
-[**KSP\_BDA\_NODE\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff566716)
+[**KSP\_BDA\_NODE\_PIN**](/windows-hardware/drivers/ddi/bdamedia/ns-bdamedia-_ksp_bda_node_pin)
 
-[**KSTOPOLOGY\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff567148)
-
- 
+[**KSTOPOLOGY\_CONNECTION**](/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection)
 
  
-
-
-
-
-
 

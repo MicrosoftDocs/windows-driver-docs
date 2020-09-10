@@ -25,43 +25,33 @@ Drivers typically use a set of system-defined registry keys to store or access d
 
 -   **Parameters** key
 
-    The driver's **Parameters** key can contain configuration information for your driver. For Kernel-Mode Driver Framework (KMDF) drivers, this key is located in the [**HKLM\\SYSTEM\\CurrentControlSet\\Services**](https://msdn.microsoft.com/library/windows/hardware/ff546188) tree, under the driver's service name. For User-Mode Driver Framework (UMDF) drivers, this key is located in the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services** tree, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
+    The driver's **Parameters** key can contain configuration information for your driver. For Kernel-Mode Driver Framework (KMDF) drivers, this key is located in the [**HKLM\\SYSTEM\\CurrentControlSet\\Services**](../install/hklm-system-currentcontrolset-services-registry-tree.md) tree, under the driver's service name. For User-Mode Driver Framework (UMDF) drivers, this key is located in the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF\\Services** tree, under the driver's service name. The subkey for the driver always uses the driver's service name, even if the driver binary's file name differs from the service name.
 
-    When the system calls your driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff540807) routine, it passes the driver a path to the driver's **Services** tree. Your driver must pass this path to [**WdfDriverCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547175). Subsequently, the driver can obtain the path by calling [**WdfDriverGetRegistryPath**](https://msdn.microsoft.com/library/windows/hardware/ff547187), and the driver can open its **Parameters** key by calling [**WdfDriverOpenParametersRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff547202).
-
-    For more information about the **Parameters** key, see [The HKLM\\SYSTEM\\CurrentControlSet\\Services Tree](https://msdn.microsoft.com/library/windows/hardware/ff546188).
+    When the system calls your driver's [**DriverEntry**](./driverentry-for-kmdf-drivers.md) routine, it passes the driver a path to the driver's **Services** tree. Your driver must pass this path to [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate). Subsequently, the driver can obtain the path by calling [**WdfDriverGetRegistryPath**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivergetregistrypath), and the driver can open its **Parameters** key by calling [**WdfDriverOpenParametersRegistryKey**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriveropenparametersregistrykey).
 
 -   Software key
 
-    A driver's software key is also called its *driver key* because the registry contains a software key for each driver. The registry contains a list of all of the device classes, and each driver's software key resides under its device class entry. The system stores information about each driver under its software key.
+    A driver's software key is also called its *driver key*. The system stores information about each driver under its software key.
 
-    Your driver can call [**WdfFdoInitOpenRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff547249) and [**WdfDeviceOpenRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff546804) to open its software key.
+    Your driver can call [**WdfFdoInitOpenRegistryKey**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitopenregistrykey) and [**WdfDeviceOpenRegistryKey**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceopenregistrykey) to open a device's software key.
 
-    For more information about software keys, see [The HKLM\\SYSTEM\\CurrentControlSet\\Control Tree](https://msdn.microsoft.com/library/windows/hardware/ff546165).
+    Your driver's INF file can contain [**INF AddReg directives**](../install/inf-addreg-directive.md) that set registry values under the software key using [**INF DDInstall sections**](../install/inf-ddinstall-section.md).
 
 -   Hardware keys
 
-    When a driver stack informs the Plug and Play (PnP) manager that a device is connected to the system, the PnP manager creates a hardware key for the device. This key is also called a *device key*. The PnP manager stores each device's unique identification information under the device's hardware key.
+    When a driver stack informs the Plug and Play (PnP) manager that a device is connected to the system, the PnP manager creates a hardware key for the device. This key is also called a *device key*. Settings related to the hardware (such as interrupt settings) can be stored here by drivers.
 
-    Your driver can call [**WdfFdoInitOpenRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff547249) and [**WdfDeviceOpenRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff546804) to open a device's hardware key.
+    Your driver can call [**WdfFdoInitOpenRegistryKey**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitopenregistrykey) and [**WdfDeviceOpenRegistryKey**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceopenregistrykey) to open a device's hardware key.
 
-    For more information about hardware keys, see [The HKLM\\SYSTEM\\CurrentControlSet\\Enum Tree](https://msdn.microsoft.com/library/windows/hardware/ff546173).
-
-Your driver's INF file can contain [**INF AddReg directives**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that set registry values. INF files typically use [**INF DDInstall.HW sections**](https://msdn.microsoft.com/library/windows/hardware/ff547330) to set information under a device's hardware key.
+    Your driver's INF file can contain [**INF AddReg directives**](../install/inf-addreg-directive.md) that set registry values under the hardware key using [**INF DDInstall.HW sections**](../install/inf-ddinstall-hw-section.md).
 
 To determine whether your driver type requires that you store information under specific registry keys, see the sections of this documentation that discuss your driver's device type by using the table of contents.
 
 For more information about registry keys for drivers, see:
 
--   [Overview of Registry Trees and Keys](https://msdn.microsoft.com/library/windows/hardware/ff549538)
+-   [Overview of Registry Trees and Keys](../install/overview-of-registry-trees-and-keys.md)
 
--   [Using the Registry in a Driver](https://msdn.microsoft.com/library/windows/hardware/ff565537)
-
- 
+-   [Using the Registry in a Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-the-registry-in-a-driver)
 
  
-
-
-
-
 

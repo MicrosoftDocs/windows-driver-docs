@@ -43,7 +43,7 @@ The following table shows the directives that are used in the DriverConfig secti
 <td><p><strong>RequiredFiles</strong></p>
 <p>Includes files from ntprint.inf or ntprint4.inf.</p>
 <p>The RequiredFiles directive will support the following value in Windows 10:</p>
-<p>PWGRRenderFilter.dll: Adds the Microsoft PWG Raster rendering filter to the driver&#39;s dependent files list.</p>
+<p>PWGRRenderFilter.dll: Adds the Microsoft PWG Raster rendering filter to the driver's dependent files list.</p>
 <p>The PWG Raster rendering filter render filter requires that the driver use a PrintDeviceCapabilities file for configuration.</p></td>
 <td><p>Unidrv.dll, pscript5.dll, and mxdwdrv.dll should be omitted from this list. They will be resolved automatically.</p></td>
 <td><p>Examples:</p>
@@ -54,11 +54,11 @@ The following table shows the directives that are used in the DriverConfig secti
 <tr class="even">
 <td><p><strong>RequiredClass</strong></p>
 <p>Causes this driver to include all files from a defined class driver using the driver/friendly name of the device and its GUID as key. This is the mechanism for linking a printclass driver to a model specific driver.</p></td>
-<td><p>The RequiredClass directive cannot be used by a class driver. When you use RequiredClass, you should avoid file name collisions between the printer driver and the Print Class driver to which you&#39;re linking.</p>
-<p>Although files with similar names won&#39;t overwrite each other, it may be difficult during troubleshooting, to distinguish between the class driver package file and the file from the v4 printer driver.</p></td>
+<td><p>The RequiredClass directive cannot be used by a class driver. When you use RequiredClass, you should avoid file name collisions between the printer driver and the Print Class driver to which you're linking.</p>
+<p>Although files with similar names won't overwrite each other, it may be difficult during troubleshooting, to distinguish between the class driver package file and the file from the v4 printer driver.</p></td>
 <td><p>Example:</p>
 <p>RequiredClass=</p>
-<p>&quot;Fabrikam PCL5e Class Driver&quot;,{9343720D-B67E-4451-B93F-6F721C439771}</p></td>
+<p>"Fabrikam PCL5e Class Driver",{9343720D-B67E-4451-B93F-6F721C439771}</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DriverFile</strong></p>
@@ -82,7 +82,7 @@ The following table shows the directives that are used in the DriverConfig secti
 <td><p>Required for PrintDeviceCapabilities file.</p></td>
 <td><p>Example:</p>
 <p>DataFileType=</p>
-<p>&quot;application/vnd.ms-PrintDeviceCapabilities+xml&quot;</p></td>
+<p>"application/vnd.ms-PrintDeviceCapabilities+xml"</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Flags</strong></p>
@@ -118,7 +118,7 @@ The v4 driver uses this flag to request archive-optimized XPS as a spool file.</
 </tr>
 <tr class="odd">
 <td><p><strong>ResourceFile</strong></p>
-<p>Defines the name of the driver&#39;s string resource DLL.</p>
+<p>Defines the name of the driver's string resource DLL.</p>
 <p>In Windows 10, drivers may specify a ResourceFile using .resx format.</p></td>
 <td><p>None.</p></td>
 <td><p>Examples:</p>
@@ -127,7 +127,7 @@ The v4 driver uses this flag to request archive-optimized XPS as a spool file.</
 </tr>
 <tr class="even">
 <td><p><strong>ConstraintScript</strong></p>
-<p>Defines the name of the driver&#39;s JavaScript constraint file.</p></td>
+<p>Defines the name of the driver's JavaScript constraint file.</p></td>
 <td><p>None.</p></td>
 <td><p>ConstraintScript=</p>
 <p>FAConst.js</p></td>
@@ -151,7 +151,7 @@ PrintFax.Printer.Virtual</td>
 <p>Specifies a URL for the user to obtain a copy of the Printer extension app. Used in printer sharing.</p></td>
 <td><p>None.</p></td>
 <td><p>PrinterExtensionUrl=</p>
-<p>&quot;<a href="http://www.fabrikam.com/files/setup.exe&amp;quot" data-raw-source="http://www.fabrikam.com/files/setup.exe&amp;quot">http://www.fabrikam.com/files/setup.exe&quot</a>;</p></td>
+<p>"<a href="https://www.fabrikam.com/files/setup.exe&quot" data-raw-source="https://www.fabrikam.com/files/setup.exe&quot">https://www.fabrikam.com/files/setup.exe&quot</a>;</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DevModeMap</strong></p>
@@ -179,8 +179,8 @@ PrintFax.Printer.Virtual</td>
 <p>Specifies a list of hardware IDs that match one or more device interfaces to be used for USB Bidi communications.</p></td>
 <td><p>None, but should only be supported if status is done over a USB interface that is not the print interface.</p></td>
 <td><p>BidiUSBStatusInterface=</p>
-<p>”USB\vid_1234&amp;pid_1234”,</p>
-<p>”USB\vid_1234&amp;pid_4567”</p></td>
+<p>”USB\vid_1234&pid_1234”,</p>
+<p>”USB\vid_1234&pid_4567”</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>UserPropertyBagScope</strong></p>
@@ -196,10 +196,10 @@ All queues which use the same Manufacturer string in the INF use the same user p
 </tr>
 <tr class="even">
 <td><p><strong>RetrievePrintDeviceCapabilitiesFromDevice</strong></p>
-<p>v4 drivers may specify that they must retrieve a PrintDeviceCapabilities file from WS-Print v2.0 printers, as long as they set a PrintDeviceCapabilities file as the driver&#39;s DataFile and the DataFileType also indicates that the DataFile is of MIME type &quot;application/vnd.ms-PrintDeviceCapabilities+xml&quot;. Valid options:</p>
+<p>v4 drivers may specify that they must retrieve a PrintDeviceCapabilities file from WS-Print v2.0 printers, as long as they set a PrintDeviceCapabilities file as the driver's DataFile and the DataFileType also indicates that the DataFile is of MIME type "application/vnd.ms-PrintDeviceCapabilities+xml". Valid options:</p>
 <p>Valid options:</p>
-<p>True: Allows the driver&#39;s local DataFile to be replaced with the PrintDeviceCapabilities file from the device.</p>
-<p>False: The driver&#39;s local DataFile will not be replaced with the PrintDeviceCapabilities file from the device.</p>
+<p>True: Allows the driver's local DataFile to be replaced with the PrintDeviceCapabilities file from the device.</p>
+<p>False: The driver's local DataFile will not be replaced with the PrintDeviceCapabilities file from the device.</p>
 <p>If not specified, the default value of this directive is false.</p></td>
 <td><p>None.</p></td>
 <td><p>Example:</p>
@@ -293,7 +293,7 @@ The following table shows the directives that are used in the DriverRender secti
 </tr>
 <tr class="even">
 <td><p><strong>XpsFormat</strong></p>
-<p>Changes the XPS format generated by the print system for this driver. Multiple values may be specified, and the order represents the driver&#39;s preference.</p></td>
+<p>Changes the XPS format generated by the print system for this driver. Multiple values may be specified, and the order represents the driver's preference.</p></td>
 <td><p>Not available for use in class drivers that use Unidrv/PScript rendering.</p></td>
 <td><p>XpsFormat=XPS</p>
 <p>XpsFormat=OpenXPS</p>
@@ -307,13 +307,13 @@ The following table shows the directives that are used in the DriverRender secti
 <td><p>None.</p></td>
 <td><p>Valid usage types include:</p>
 <p>OutputFormat=</p>
-<p>&quot;application/oxps&quot;</p>
+<p>"application/oxps"</p>
 <p>OutputFormat=</p>
-<p>&quot;application/vnd.ms-xpsdocument&quot;</p>
+<p>"application/vnd.ms-xpsdocument"</p>
 <p>OutputFormat=</p>
-<p>&quot;image/pwg-raster&quot;</p>
+<p>"image/pwg-raster"</p>
 <p>OutputFormat=</p>
-<p>&quot;application/vnd.ms-3mfdocument&quot;</p>
+<p>"application/vnd.ms-3mfdocument"</p>
 <p>Any other valid defined MIME type may also be specified here.</p></td>
 </tr>
 </tbody>
@@ -375,7 +375,7 @@ This section supports the file-save scenario. When a v4 print driver is installe
 <tbody>
 <tr class="odd">
 <td><p><strong>&lt;FileExtensionName&gt;</strong></p>
-<p>This directive describes the FileExtension to be used when saving a file from this driver using the PORTPROMPT port. The value is a resourceID from the driver&#39;s ResourceFile. For XPS and OXPS only, a resourceID of 0 may be specified and the print spooler will use its internal resources for these.</p></td>
+<p>This directive describes the FileExtension to be used when saving a file from this driver using the PORTPROMPT port. The value is a resourceID from the driver's ResourceFile. For XPS and OXPS only, a resourceID of 0 may be specified and the print spooler will use its internal resources for these.</p></td>
 <td><p>None.</p></td>
 <td><p>&lt;FileExtensionName&gt;=</p>
 <p>&lt;resourceID&gt;</p>
@@ -383,7 +383,7 @@ This section supports the file-save scenario. When a v4 print driver is installe
 </tr>
 <tr class="even">
 <td><p><strong>SaveAsTitle</strong></p>
-<p>This directive describes the title to be used on the Save File dialog. The value is a resourceID from the driver&#39;s ResourceFile.</p></td>
+<p>This directive describes the title to be used on the Save File dialog. The value is a resourceID from the driver's ResourceFile.</p></td>
 <td><p>None.</p></td>
 <td><p>SaveAsTitle=</p>
 <p>&lt;resourceID&gt;</p>
@@ -447,7 +447,7 @@ PrinterDriverID={GUID}
 DriverCategory=PrintFax.Printer
 ConstraintScript=faconst.js
 EventFile=faevents.xml
-PrinterExtensionUrl="http://www.fabrikam.com/download.asp?uiapp=120"
+PrinterExtensionUrl="https://www.fabrikam.com/download.asp?uiapp=120"
 UserPropertyBagScope=Manufacturer
 DataFileType="application/vnd.ms-PrintDeviceCapabilities+xml"
 RetrievePrintDeviceCapabilitiesFromDevice=true

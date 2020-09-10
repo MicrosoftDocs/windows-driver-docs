@@ -15,13 +15,11 @@ ms.localizationpriority: medium
 
 # asyncPrintUIRequest element
 
-
 The required **asyncPrintUIRequest** element describes a request issued by the printer driver to create a message on a client computer.
 
-The **asyncPrintUIRequest** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request.
+The **asyncPrintUIRequest** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request).
 
-Usage
------
+## Usage
 
 ```xml
 <asyncPrintUIRequest>
@@ -29,13 +27,11 @@ Usage
 </asyncPrintUIRequest>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
 ## Child elements
-
 
 <table>
 <colgroup>
@@ -64,18 +60,16 @@ There are no attributes.
 
 ## Parent elements
 
-
 There are no parent elements.
 
-Examples
---------
+## Examples
 
 The following code example shows how to use the **asyncPrintUIRequest** element.
 
 ```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <balloonUI iconID="1" resourceDll="IHV.dll">
@@ -92,15 +86,6 @@ The following code example shows how to use the **asyncPrintUIRequest** element.
 
 ## See also
 
-
 [**requestClose**](requestclose.md)
 
 [**requestOpen**](requestopen.md)
-
- 
-
- 
-
-
-
-

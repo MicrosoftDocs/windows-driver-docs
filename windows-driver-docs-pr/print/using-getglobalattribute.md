@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 All of the global attribute names are the same as the keyword names defined in *PostScript Printer Description File Format Specification, v4.3*. Refer to this specification for their semantics. (This resource may not be available in some languages and countries.)
 
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](https://msdn.microsoft.com/library/windows/hardware/ff548692) enumerated type.
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 <table>
 <colgroup>
@@ -47,7 +47,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
 <p><em>pbData</em>: ASCII string (in MULTI_SZ format) containing registered values of extensionOption the printer supports.</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Note: &quot;<em>FileSystem: True&quot; is treated as if <strong></em>Extensions</strong> had the &quot;FileSystem&quot; option. &quot;FileSystem: False&quot; is treated as if <em>Extensions did not have the &quot;FileSystem&quot; option.</p></td>
+<p>Note: "<em>FileSystem: True" is treated as if <strong></em>Extensions</strong> had the "FileSystem" option. "FileSystem: False" is treated as if <em>Extensions did not have the "FileSystem" option.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>FileVersion</strong></p></td>
@@ -64,21 +64,21 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="even">
 <td><p><strong>LandscapeOrientation</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: NULL-terminated ASCII string of either &quot;Plus90&quot; or &quot;Minus90&quot;.</p>
+<p><em>pbData</em>: NULL-terminated ASCII string of either "Plus90" or "Minus90".</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Note: &quot;Minus90&quot; is returned only when the PPD contains &quot;<em>LandscapeOrientation: Minus90&quot;. In all other cases, &quot;Plus90&quot; is returned.</p></td>
+<p>Note: "Minus90" is returned only when the PPD contains "<em>LandscapeOrientation: Minus90". In all other cases, "Plus90" is returned.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>LanguageEncoding</strong></p></td>
 <td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
 <p><em>pbData</em>: NULL-terminated ASCII string containing one of the following encodingOption values:</p>
-<p>&quot;ISOLatin1&quot;</p>
-<p>&quot;Unicode&quot;</p>
-<p>&quot;JIS83-RKSJ&quot;</p>
-<p>&quot;None&quot;</p>
+<p>"ISOLatin1"</p>
+<p>"Unicode"</p>
+<p>"JIS83-RKSJ"</p>
+<p>"None"</p>
 <p><em><em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
 <p>Notes</p>
-<p>&quot;WindowsANSI&quot; is treated the same as &quot;ISOLatin1&quot;. Other encodingOption values are not supported.</p>
+<p>"WindowsANSI" is treated the same as "ISOLatin1". Other encodingOption values are not supported.</p>
 <p>If *LanguageEncoding is absent, *LanguageVersion is used to deduce the return value.</p></td>
 </tr>
 <tr class="even">
@@ -90,7 +90,7 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="odd">
 <td><p><strong>NickName</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_UNICODE</p>
-<p><em>pbData</em>: NULL-terminated Unicode string of the PPD&#39;s *ShortNickName value if *ShortNickName is present, or *NickName value if *ShortNickName is absent.</p>
+<p><em>pbData</em>: NULL-terminated Unicode string of the PPD's *ShortNickName value if *ShortNickName is present, or *NickName value if *ShortNickName is absent.</p>
 <p><em></em>pcbNeeded</em>: byte count of the Unicode string pointed to by <em>pbData</em> (including the last null character)</p></td>
 </tr>
 <tr class="even">
@@ -148,12 +148,12 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <td><p><strong>TTRasterizer</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_ASCII</p>
 <p><em>pbData</em>: a NULL-terminated ASCII string containing one of following rasterizerOption values:</p>
-<p>&quot;None&quot;</p>
-<p>&quot;Accept68K&quot;</p>
-<p>&quot;Type42&quot;</p>
-<p>&quot;TrueImage&quot;</p>
+<p>"None"</p>
+<p>"Accept68K"</p>
+<p>"Type42"</p>
+<p>"TrueImage"</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the last null character)</p>
-<p>Note: if the *TTRasterizer entry is absent, &quot;None&quot; is returned.</p></td>
+<p>Note: if the *TTRasterizer entry is absent, "None" is returned.</p></td>
 </tr>
 </tbody>
 </table>
@@ -161,9 +161,4 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
  
 
  
-
- 
-
-
-
 

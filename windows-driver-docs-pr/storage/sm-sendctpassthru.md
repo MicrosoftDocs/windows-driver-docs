@@ -98,16 +98,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendCTPassThru\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566293)
+[**SM\_SendCTPassThru\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_in)
 
-[**SM\_SendCTPassThru\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566294)
-
- 
+[**SM\_SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_out)
 
  
-
-
-
-
-
 

@@ -25,7 +25,7 @@ One Wi-Fi adapter can be used simultaneously for multiple connections e.g. Infra
 
 There can be multiple ports in an adapter. Commands issued on a port should only affect the state maintained for that port.
 
-The operating system configures each port with an operation mode, such as 802.11 station, Wi-Fi Direct Client, or Wi-Fi Direct Group Owner. The set commands that the firmware must be prepared to handle on a given port are determined by the operation mode and the state of the port. A port can be in one of two states: INIT and OP. The port is initially in the INIT state and transitions to the OP state only when the operating system issues a command to connect (in the case of infrastructure client) or to start an AP/GO. The port returns to the INIT state when [OID\_WDI\_TASK\_DOT11\_RESET](https://msdn.microsoft.com/library/windows/hardware/dn925952) is sent to the IHV component.
+The operating system configures each port with an operation mode, such as 802.11 station, Wi-Fi Direct Client, or Wi-Fi Direct Group Owner. The set commands that the firmware must be prepared to handle on a given port are determined by the operation mode and the state of the port. A port can be in one of two states: INIT and OP. The port is initially in the INIT state and transitions to the OP state only when the operating system issues a command to connect (in the case of infrastructure client) or to start an AP/GO. The port returns to the INIT state when [OID\_WDI\_TASK\_DOT11\_RESET](./oid-wdi-task-dot11-reset.md) is sent to the IHV component.
 
 ## Port availability requirements
 
@@ -51,10 +51,4 @@ The following concurrency requirements for the different port types are as follo
     3.  1 GO, 1 Client
 
  
-
- 
-
-
-
-
 

@@ -20,7 +20,7 @@ The C# version of the [Print job management and printer maintenance](https://go.
 ## <span id="Managing_print_jobs"></span><span id="managing_print_jobs"></span><span id="MANAGING_PRINT_JOBS"></span>Managing print jobs
 
 
-Windows 8.1 introduces new printer extension interfaces in the v4 printer driver that you can use for managing print jobs: [**IPrinterQueue2**](https://msdn.microsoft.com/library/windows/hardware/dn265389), [**IPrinterQueueView**](https://msdn.microsoft.com/library/windows/hardware/dn265392), [**IPrinterQueueViewEvent**](https://msdn.microsoft.com/library/windows/hardware/dn265393), [**IPrintJob**](https://msdn.microsoft.com/library/windows/hardware/dn265396), and [**IPrintJobCollection**](https://msdn.microsoft.com/library/windows/hardware/dn265397). These interfaces make it possible to monitor and cancel print jobs. For more info, see [Print job management (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265419).
+Windows 8.1 introduces new printer extension interfaces in the v4 printer driver that you can use for managing print jobs: [**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2), [**IPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview), [**IPrinterQueueViewEvent**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent), [**IPrintJob**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob), and [**IPrintJobCollection**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection). These interfaces make it possible to monitor and cancel print jobs. For more info, see [Print job management (v4 Printer Driver)](../print/job-management.md).
 
 **Tip**  C# and JavaScript apps can't work with COM APIs directly. If you're writing a C# or JavaScript UWP device app, use the printer extension library to access these interfaces (as shown in this topic).
 
@@ -55,7 +55,7 @@ private async void EnumeratePrinters_Click(object sender, RoutedEventArgs e)
     {
         rootPage.NotifyUser("Enumerating printers. Please wait", NotifyType.StatusMessage);
 
-        // Retrieve the running app&#39;s package family name, and enumerate associated printers.
+        // Retrieve the running app's package family name, and enumerate associated printers.
         string currentPackageFamilyName = Windows.ApplicationModel.Package.Current.Id.FamilyName;
 
         // Enumerate associated printers.
@@ -315,7 +315,7 @@ The following steps build your app and install the device metadata.
 ## <span id="related_topics"></span>Related topics
 
 
-[Job Management (v4 Printer Driver)](https://msdn.microsoft.com/library/windows/hardware/dn265419)
+[Job Management (v4 Printer Driver)](../print/job-management.md)
 
 [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
 
@@ -328,11 +328,4 @@ The following steps build your app and install the device metadata.
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
  
-
- 
-
-
-
-
-
 

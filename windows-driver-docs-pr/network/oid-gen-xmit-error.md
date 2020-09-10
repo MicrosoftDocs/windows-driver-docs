@@ -2,7 +2,7 @@
 title: OID_GEN_XMIT_ERROR
 description: As a query, the OID_GEN_XMIT_ERROR OID specifies the number of frames that a NIC fails to transmit.
 ms.assetid: c4f42271-812b-4da9-8280-79d3bddc5164
-ms.date: 08/08/2017
+ms.date: 11/01/2019
 keywords: 
  -OID_GEN_XMIT_ERROR Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -33,7 +33,9 @@ Mandatory.
 Remarks
 -------
 
-For general information about statistics OIDs, see [General Statistics](https://msdn.microsoft.com/library/windows/hardware/ff552485).
+The count is identical to the *ifOutErrors* counter described in RFC 2863.
+
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
 Requirements
 ------------
@@ -57,9 +59,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

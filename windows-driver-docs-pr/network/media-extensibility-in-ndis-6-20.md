@@ -23,13 +23,7 @@ NDIS 6.20 and later provide *raw IP* frame support with a new media type for raw
 
 NDIS 6.20 introduces enhanced support for media specific out of band (OOB) data. The media specific information has a tag that Microsoft assigns. NDIS 6.20 and later support multiple media specific information tags.
 
-For more information about media specific information, for more information about media extensibility, see [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](https://msdn.microsoft.com/library/windows/hardware/ff569622) and [**NDIS\_NBL\_MEDIA\_SPECIFIC\_INFORMATION\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff566518).
+For more information about media specific information, for more information about media extensibility, see [OID\_GEN\_PHYSICAL\_MEDIUM\_EX](./oid-gen-physical-medium-ex.md) and [**NDIS\_NBL\_MEDIA\_SPECIFIC\_INFORMATION\_EX**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_nbl_media_specific_information_ex).
 
  
-
- 
-
-
-
-
 

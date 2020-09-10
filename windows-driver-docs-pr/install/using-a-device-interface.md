@@ -21,19 +21,13 @@ Before a kernel-mode component can use a specific device or file object, it must
 
 1.  Determine whether the required device interface class is registered and enabled.
 
-    A driver can register with the PnP manager to be notified when an instance of a device interface is enabled or disabled. To register, the component calls [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526). This routine stores the address of a driver-supplied callback, which is called whenever an instance of a device interface instance is enabled or disabled, for a specified device class. The callback routines receive the [**DEVICE_INTERFACE_CHANGE_NOTIFICATION**](https://msdn.microsoft.com/library/windows/hardware/ff543134) structure, which contains a Unicode string representing the interface instance's symbolic link. See [Using PnP Device Interface Change Notification](https://msdn.microsoft.com/library/windows/hardware/ff565474) for more information.
+    A driver can register with the PnP manager to be notified when an instance of a device interface is enabled or disabled. To register, the component calls [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification). This routine stores the address of a driver-supplied callback, which is called whenever an instance of a device interface instance is enabled or disabled, for a specified device class. The callback routines receive the [**DEVICE_INTERFACE_CHANGE_NOTIFICATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_interface_change_notification) structure, which contains a Unicode string representing the interface instance's symbolic link. See [Using PnP Device Interface Change Notification](../kernel/using-pnp-device-interface-change-notification.md) for more information.
 
-    A driver or other kernel-mode component can also call [**IoGetDeviceInterfaces**](https://msdn.microsoft.com/library/windows/hardware/ff549186) to get a list of all registered, enabled device interface instances for a specific device interface class. The returned list contains pointers to the Unicode symbolic link strings that identify the device interface instances.
+    A driver or other kernel-mode component can also call [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to get a list of all registered, enabled device interface instances for a specific device interface class. The returned list contains pointers to the Unicode symbolic link strings that identify the device interface instances.
 
 2.  Get a pointer to a device or file object that corresponds to an instance of the interface.
 
-    To access a specific device object, the driver must call [**IoGetDeviceObjectPointer**](https://msdn.microsoft.com/library/windows/hardware/ff549198), passing the Unicode string for the required interface in the *ObjectName* parameter. To access a file object, the driver must call [**InitializeObjectAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff547804), passing the Unicode string in the *ObjectName* parameter, and then pass the successfully initialized attribute structure in a call to [**ZwCreateFile**](https://msdn.microsoft.com/library/windows/hardware/ff566424).
+    To access a specific device object, the driver must call [**IoGetDeviceObjectPointer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceobjectpointer), passing the Unicode string for the required interface in the *ObjectName* parameter. To access a file object, the driver must call [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes), passing the Unicode string in the *ObjectName* parameter, and then pass the successfully initialized attribute structure in a call to [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile).
 
  
-
- 
-
-
-
-
 

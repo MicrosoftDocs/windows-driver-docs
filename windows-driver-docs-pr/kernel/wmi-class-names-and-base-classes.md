@@ -22,7 +22,7 @@ WMI class names must be unique within the WMI namespace. Consequently a driver's
 To help prevent name collisions, a driver writer can define a driver-specific base class and derive all of the driver's WMI classes from that base class. The class name and base class name together are more likely to yield a unique name. For example, the following shows an abstract base class for a serial driver's data blocks:
 
 ```cpp
-// Serial driver&#39;s base class for data blocks
+// Serial driver's base class for data blocks
 [abstract]
 class MSSerial {
 }
@@ -56,7 +56,7 @@ class Adaptec1542_Speed : Adaptec1542 {
 WMI allows only one abstract base class in a given class hierarchy. Classes that define event blocks must derive from **WmiEvent**, which is an abstract base class, so the **abstract** qualifier cannot be used in a driver-defined base class for event blocks. Instead, derive a nonabstract base class from **WmiEvent**, then derive individual event classes from that base class. For example:
 
 ```cpp
-//Serial driver&#39;s base class for event blocks
+//Serial driver's base class for event blocks
 class MSSerialEvent : WmiEvent 
 {
 }

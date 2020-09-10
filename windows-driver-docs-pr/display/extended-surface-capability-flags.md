@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_extended_surface_capability_flags_gg"></span><span id="DDK_EXTENDED_SURFACE_CAPABILITY_FLAGS_GG"></span>
 
 
-The extended surface capabilities added to the latest versions of DirectDraw are made visible to the driver when the application sets the appropriate flags in the **dwCaps2** member of the [**DDSCAPS2**](https://msdn.microsoft.com/library/windows/hardware/ff550292) structure.
+The extended surface capabilities added to the latest versions of DirectDraw are made visible to the driver when the application sets the appropriate flags in the **dwCaps2** member of the [**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure.
 
 Applications can only set the DDSCAPS2\_HARDWAREDEINTERLACE flag in conjunction with the DDSCAPS\_OVERLAY flag. If a driver sees this flag set at **CreateSurface** time, it means that DirectDraw expects that the driver will do whatever is necessary to match the hardware video port frame rate with the device frame rate.
 
 The DDSCAPS2\_HINTDYNAMIC, DDSCAPS2\_HINTSTATIC, and DDSCAPS2\_OPAQUE flags are hints set by the application at **CreateSurface** time that inform the driver what the application plans to do with the surface. The DDSCAPS2\_HINTDYNAMIC flag means that the application will update the surface frequently. The DDSCAPS2\_HINTSTATIC flag means that the application will update the surface rarely, but still requires access. This means the driver must be able to allow locks on the surface, which may involve some hidden decompression and compression steps. The DDSCAPS2\_OPAQUE flag means that the application will never lock, blt, or update the surface for the rest of that surface's lifetime. The driver is free to compress or reorder the surface without having to ever decompress it.
 
-**Note**   The driver does not need to set these flags to enable them. DirectDraw merely passes these bits to the driver when [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) is called.
+**Note**   The driver does not need to set these flags to enable them. DirectDraw merely passes these bits to the driver when [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) is called.
 
  
 
@@ -34,10 +34,4 @@ The DDSCAPS2\_HINTDYNAMIC, DDSCAPS2\_HINTSTATIC, and DDSCAPS2\_OPAQUE flags are 
 The DDSCAPS2\_TEXTUREMANAGE flag is not relevant to drivers. This flag informs the DirectX runtime that it is responsible for moving the surface from a backing surface to display memory, as appropriate, to enable accelerated 3D texturing.
 
  
-
- 
-
-
-
-
 

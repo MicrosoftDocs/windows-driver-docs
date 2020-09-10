@@ -42,13 +42,7 @@ class MSiSCSI_Eventlog : __ExtrinsicEvent
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_EventLog**](https://msdn.microsoft.com/library/windows/hardware/ff563001) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_EventLog**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_eventlog) data structure.
 
  
-
- 
-
-
-
-
 

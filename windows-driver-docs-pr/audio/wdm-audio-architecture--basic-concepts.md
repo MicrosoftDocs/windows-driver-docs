@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="wdm_audio_architecture_basic_concepts"></span><span id="WDM_AUDIO_ARCHITECTURE_BASIC_CONCEPTS"></span>
 
 
-This section presents the basic architectural concepts of [Windows Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff565698) (WDM) audio drivers. The WDM audio architecture is based on kernel streaming (KS) services and is supported in Microsoft Windows 2000 and later and in Windows Me/98. For information about KS services, see [Kernel Streaming](https://msdn.microsoft.com/library/windows/hardware/ff560842).
+This section presents the basic architectural concepts of [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) (WDM) audio drivers. The WDM audio architecture is based on kernel streaming (KS) services and is supported in Microsoft Windows 2000 and later and in Windows Me/98. For information about KS services, see [Kernel Streaming](../stream/kernel-streaming.md).
 
 This section discusses the following topics:
 
@@ -32,9 +32,4 @@ This section discusses the following topics:
 [Digital Rights Management](digital-rights-management.md)
 
  
-
- 
-
-
-
 

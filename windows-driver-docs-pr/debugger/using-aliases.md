@@ -70,7 +70,7 @@ The debugger sets the following automatic aliases.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>$ntnsym</strong></p></td>
-<td align="left"><p>The most appropriate module for NT symbols on the computer&#39;s native architecture. This alias can equal either <strong>ntdll</strong> or <strong>nt</strong>.</p></td>
+<td align="left"><p>The most appropriate module for NT symbols on the computer's native architecture. This alias can equal either <strong>ntdll</strong> or <strong>nt</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$ntwsym</strong></p></td>

@@ -29,7 +29,7 @@ ms.localizationpriority: medium
 ## <span id="examples_of_audio_data_formats_and_data_ranges"></span><span id="EXAMPLES_OF_AUDIO_DATA_FORMATS_AND_DATA_RANGES"></span>
 
 
-The following examples show how to use the [**KSDATAFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff561656) and [**KSDATARANGE**](https://msdn.microsoft.com/library/windows/hardware/ff561658) structures to describe some of the more common formats for audio streams:
+The following examples show how to use the [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) and [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structures to describe some of the more common formats for audio streams:
 
 [Analog Audio Stream Data Range](analog-audio-stream-data-range.md)
 
@@ -58,9 +58,4 @@ The following examples show how to use the [**KSDATAFORMAT**](https://msdn.micro
 [PCM High Bitdepth Stream Data Range](pcm-high-bitdepth-stream-data-range.md)
 
  
-
- 
-
-
-
 

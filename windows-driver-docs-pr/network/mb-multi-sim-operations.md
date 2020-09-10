@@ -1,7 +1,7 @@
 ---
 title: MB Multi-SIM Operations
 description: MB Multi-SIM Operations
-ms.date: 04/20/2017
+ms.date: 10/16/2019
 ms.localizationpriority: medium
 ---
 
@@ -133,7 +133,7 @@ With the addition of the executor concept to non-Windows Mobile devices in Windo
 |  | OID_WWAN_SLOT_INFO_STATUS |
 
 > [!NOTE]
-> [OID_WWAN_RADIO_STATE](https://msdn.microsoft.com/library/windows/hardware/ff569832) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
+> [OID_WWAN_RADIO_STATE](./oid-wwan-radio-state.md) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
 
 ## MBIM Interface Update for Multi-SIM Operations
 
@@ -190,7 +190,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_SYS_CAPS_INFO | Not applicable |
@@ -238,7 +238,7 @@ This CID continues to be query-only and will return a MBIM_MS_DEVICE_CAPS_INFO_V
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not applicable | MBIM_MS_DEVICE_CAPS_INFO_V2 | Not applicable |
@@ -302,7 +302,7 @@ Not applicable.
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable | Not applicable |
 | Response | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | MBIM_MS_DEVICE_SLOT_MAPPING_INFO | Not applicable |
@@ -356,7 +356,7 @@ The Event InformationBuffer contains an MBIM_MS_SLOT_INFO structure. The functio
 
 #### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_MS_SLOT_INFO_REQ | Not applicable |
 | Response | Not applicable | MBIM_MS_SLOT_INFO | MBIM_MS_SLOT_INFO |
@@ -398,6 +398,24 @@ The following MBIM_MS_UICCSLOT_STATE structure describes the possible states of 
 | UICCSlotStateActiveEsim | 7 | The card in the slot is an eSIM with an active profile and is ready to accept commands. |
 | UICCSlotStateActiveEsimNoProfiles | 8 | The card in the slot is an eSIM with no profiles (or no active profiles) and is ready to accept commands. |
 
+##### MBIM_MS_UICCSLOT_STATE transition guidance for multi-sim devices
+
+Conforming to the correct UICC slot state transitions ensures that the OS handles all changes properly and displays the correct toast notifications to the user.
+
+For the *SIM inserted* toast notification, the OS expects the embedded slot (SIM2/Slot 1) to be selected and the following state transition to occur upon the insertion of a SIM in the physical slot (SIM1/Slot 0).
+
+| Possible values of Slot 0 before SIM insertion | Possible values of Slot 0 after SIM insertion |
+| --- | --- |
+| UICCSlotStateEmpty | UICCSlotStateActive |
+| UICCSlotStateOffEmpty | <ul><li>UICCSlotStateActiveEsim</li><li>UICCSlotStateActiveEsimNoProfile</li></ul> |
+
+For the *SIM removed* toast notification, the OS expects the physical slot (SIM1/Slot 0) to be selected with a SIM inserted and the following state transition to occur upon the removal of the SIM from the physical slot (SIM1/Slot 0).
+
+| Possible values of Slot 0 before SIM removal | Possible values of Slot 0 after SIM removal |
+| --- | --- |
+| UICCSlotStateActive | UICCSlotStateEmpty |
+| <ul><li>UICCSlotStateActiveEsim</li><li>UICCSlotStateActiveEsimNoProfile</li></ul> | UICCSlotStateOffEmpty |
+
 #### Status Codes
 
 This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of the public USB MBIM standard).
@@ -413,4 +431,3 @@ Most of the MBIM CIDs map or relate to NDIS OIDs, but there are a few commands t
 | Per-executor | CID_MBIM_MSIPADDRESSINFO |
 |  | CID_MBIM_MSNETWORKIDLEHINT |
 |  | CID_MBIM_MULTICARRIER_CURRENT_CID_LIST |
-

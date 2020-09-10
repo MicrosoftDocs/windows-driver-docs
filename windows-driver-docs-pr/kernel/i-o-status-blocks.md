@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 
 
-An I/O status block, which consists of an [**IO\_STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff550671) structure, is a part of each [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694). An I/O status block serves two purposes:
+An I/O status block, which consists of an [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure, is a part of each [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp). An I/O status block serves two purposes:
 
--   It provides a higher-level driver's [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine a way of determining whether the service worked when the IRP is completed.
+-   It provides a higher-level driver's [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine a way of determining whether the service worked when the IRP is completed.
 
 -   It provides more information about why the service either worked or did not work.
 
@@ -24,9 +24,4 @@ Upon completion of a IRP, the **Status** field indicates whether the drivers tha
 For more information, see [Setting the I/O Status Block in an IRP](processing-irps-in-a-lowest-level-driver.md#ddk-setting-the-i-o-status-block-in-an-irp-kg).
 
  
-
- 
-
-
-
 

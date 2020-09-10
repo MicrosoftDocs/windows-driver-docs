@@ -27,9 +27,9 @@ A callout driver should filter the network data at the highest possible filterin
 
 ### <a href="" id="blocking-at-the-application-layer-enforcement--ale--flow-established-l"></a>Blocking at the Application Layer Enforcement (ALE) Flow Established Layers
 
-Usually, if a callout has been added to the filter engine at one of the *ALE flow established* filtering layers (FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V4 or FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V6), its [*classifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff544890) callout function should never return FWP\_ACTION\_BLOCK for the action. A decision to authorize or reject a connection should not be made at one of the ALE flow established filtering layers. Such a decision should always be made at one of the other ALE filtering layers.
+Usually, if a callout has been added to the filter engine at one of the *ALE flow established* filtering layers (FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V4 or FWPM\_LAYER\_ALE\_FLOW\_ESTABLISHED\_V6), its [*classifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function should never return FWP\_ACTION\_BLOCK for the action. A decision to authorize or reject a connection should not be made at one of the ALE flow established filtering layers. Such a decision should always be made at one of the other ALE filtering layers.
 
-The only valid reason for such a [*classifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff544890) callout function to return FWP\_ACTION\_BLOCK for the action is if an error occurs that could pose a potential security risk if the established connection is not ended. In this case, returning FWP\_ACTION\_BLOCK for the action closes the connection to prevent the potential security risk from being exploited.
+The only valid reason for such a [*classifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function to return FWP\_ACTION\_BLOCK for the action is if an error occurs that could pose a potential security risk if the established connection is not ended. In this case, returning FWP\_ACTION\_BLOCK for the action closes the connection to prevent the potential security risk from being exploited.
 
 ### Callout Function Execution Time
 
@@ -41,11 +41,11 @@ Callouts should recalculate IP checksums before they call [packet injection func
 
 ### Inline Injection of TCP Packet from Transport Layers
 
-Because of the TCP stack's locking behavior, a callout at the transport layer cannot inject a new or cloned TCP packet from the [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function. If inline injection is desired, the callout must queue a DPC to perform the injection.
+Because of the TCP stack's locking behavior, a callout at the transport layer cannot inject a new or cloned TCP packet from the [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function. If inline injection is desired, the callout must queue a DPC to perform the injection.
 
 ### Outgoing IP Header Alignment
 
-The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRENT\_MDL**](https://msdn.microsoft.com/library/windows/hardware/ff568379)([**NET\_BUFFER\_LIST\_FIRST\_NB**](https://msdn.microsoft.com/library/windows/hardware/ff568394)(*netBufferList*))) must be pointer-aligned when one of the [packet injection functions](packet-injection-functions.md) is used to inject packet data into an outgoing path. Because an incoming packet's IP header MDL may be pointer-aligned, a callout must rebuild the IP header (if not already aligned) when injecting an incoming packet into an outgoing path.
+The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRENT\_MDL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_current_mdl)([**NET\_BUFFER\_LIST\_FIRST\_NB**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_first_nb)(*netBufferList*))) must be pointer-aligned when one of the [packet injection functions](packet-injection-functions.md) is used to inject packet data into an outgoing path. Because an incoming packet's IP header MDL may be pointer-aligned, a callout must rebuild the IP header (if not already aligned) when injecting an incoming packet into an outgoing path.
 
 ## Related topics
 
@@ -53,11 +53,4 @@ The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRE
 [Windows Filtering Platform Callout Drivers](windows-filtering-platform-callout-drivers2.md)
 
  
-
- 
-
-
-
-
-
 

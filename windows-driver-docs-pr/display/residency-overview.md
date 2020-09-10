@@ -19,9 +19,9 @@ Today the user mode driver builds allocation and patch location list information
 
 With the introduction of the new residency model, residency is being moved to an explicit list on the device instead of the per-command buffer list. The video memory manager will ensure that all allocations on a particular device residency requirement list are resident before any contexts belonging to that device are scheduled for execution.
 
-To manage residency, the user mode driver will have access to two new device driver interfaces (DDIs), [*MakeResident*](https://msdn.microsoft.com/library/windows/hardware/dn906357) and [*Evict*](https://msdn.microsoft.com/library/windows/hardware/dn906355), as well as be required to implement a new [*TrimResidency*](https://msdn.microsoft.com/library/windows/hardware/dn906364) callback. *MakeResident* will add one or more allocations to a device residency requirement list. *Evict* will remove one of more allocations from that list. The *TrimResidency* callback will be called by the video memory manager when it needs the user mode driver to reduce its residency requirement.
+To manage residency, the user mode driver will have access to two new device driver interfaces (DDIs), [*MakeResident*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb) and [*Evict*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb), as well as be required to implement a new [*TrimResidency*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_trimresidencyset) callback. *MakeResident* will add one or more allocations to a device residency requirement list. *Evict* will remove one of more allocations from that list. The *TrimResidency* callback will be called by the video memory manager when it needs the user mode driver to reduce its residency requirement.
 
-[*MakeResident*](https://msdn.microsoft.com/library/windows/hardware/dn906357) and [*Evict*](https://msdn.microsoft.com/library/windows/hardware/dn906355) have also been updated to keep an internal reference count, meaning multiple calls to *MakeResident* will require an equal number of *Evict* calls to actually evict the allocation.
+[*MakeResident*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_makeresidentcb) and [*Evict*](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb) have also been updated to keep an internal reference count, meaning multiple calls to *MakeResident* will require an equal number of *Evict* calls to actually evict the allocation.
 
 Under the new residency model, the per-command buffer allocation and patch location list are being slowly phased out. While these lists will exist in some scenarios, they will no longer have any control over residency.
 
@@ -80,10 +80,4 @@ References the primary surface, if any, being written to by the command buffer. 
  
 
  
-
- 
-
-
-
-
 

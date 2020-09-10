@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # DeviceCompanionApplications
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The DeviceCompanionApplications element specifies the app that will be downloaded when the operator’s mobile broadband hardware is detected on the PC.
 

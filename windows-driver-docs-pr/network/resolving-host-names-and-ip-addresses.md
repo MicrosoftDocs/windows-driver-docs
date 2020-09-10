@@ -15,27 +15,27 @@ ms.localizationpriority: medium
 # Resolving Host Names and IP Addresses
 
 
-Beginning with Windows 7, a *kernel name resolution* feature allows kernel-mode components to perform protocol-independent translation between Unicode host names and transport addresses. You can use the following [Winsock Kernel (WSK)](https://msdn.microsoft.com/library/windows/hardware/ff571083) client-level functions to perform this name resolution:
+Beginning with Windows 7, a *kernel name resolution* feature allows kernel-mode components to perform protocol-independent translation between Unicode host names and transport addresses. You can use the following [Winsock Kernel (WSK)](/windows-hardware/drivers/ddi/_netvista/) client-level functions to perform this name resolution:
 
--   [**WskFreeAddressInfo**](https://msdn.microsoft.com/library/windows/hardware/ff571131)
+-   [**WskFreeAddressInfo**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_free_address_info)
 
--   [**WskGetAddressInfo**](https://msdn.microsoft.com/library/windows/hardware/ff571132)
+-   [**WskGetAddressInfo**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_get_address_info)
 
--   [**WskGetNameInfo**](https://msdn.microsoft.com/library/windows/hardware/ff571134)
+-   [**WskGetNameInfo**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_get_name_info)
 
-These functions perform name-address translation similarly to the user-mode functions [**FreeAddrInfoW**](https://msdn.microsoft.com/library/windows/desktop/ms737912), [**GetAddrInfoW**](https://msdn.microsoft.com/library/windows/desktop/ms738519), and [**GetNameInfoW**](https://msdn.microsoft.com/library/windows/desktop/ms738531), respectively.
+These functions perform name-address translation similarly to the user-mode functions [**FreeAddrInfoW**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-freeaddrinfow), [**GetAddrInfoW**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfow), and [**GetNameInfoW**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getnameinfow), respectively.
 
 To take advantage of this feature, you must compile or recompile your driver with the NTDDI\_VERSION macro set to NTDDI\_WIN7 or greater.
 
 In order for your driver to use kernel name resolution functionality, it must perform the following calling sequence:
 
-1.  Call [**WskRegister**](https://msdn.microsoft.com/library/windows/hardware/ff571143) to register with WSK.
+1.  Call [**WskRegister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister) to register with WSK.
 
-2.  Call [**WskCaptureProviderNPI**](https://msdn.microsoft.com/library/windows/hardware/ff571122) to capture the WSK provider [Network Programming Interface (NPI)](network-programming-interface.md).
+2.  Call [**WskCaptureProviderNPI**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi) to capture the WSK provider [Network Programming Interface (NPI)](network-programming-interface.md).
 
-3.  When you are done using the WSK provider NPI, call [**WskReleaseProviderNPI**](https://msdn.microsoft.com/library/windows/hardware/ff571145) to release the WSK provider NPI.
+3.  When you are done using the WSK provider NPI, call [**WskReleaseProviderNPI**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskreleaseprovidernpi) to release the WSK provider NPI.
 
-4.  Call [**WskDeregister**](https://msdn.microsoft.com/library/windows/hardware/ff571128) to deregister the WSK application.
+4.  Call [**WskDeregister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) to deregister the WSK application.
 
 The following code example uses the above calling sequence to show how a WSK application can call the **WskGetAddressInfo** function to translate a host name to a transport address.
 
@@ -158,10 +158,4 @@ KernelNameResolutionSample(
 ```
 
  
-
- 
-
-
-
-
 

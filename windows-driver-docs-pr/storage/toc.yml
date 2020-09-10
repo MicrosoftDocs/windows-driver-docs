@@ -1,18 +1,24 @@
 - name: "Storage driver design guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "Storage driver design guide"
+    href: index.md
   - name: "Roadmap for Developing Windows Storage Drivers"
     href: roadmap-for-developing-storage-drivers.md
   - name: "Roadmap for Developing Storport Miniport Drivers"
     href: roadmap-for-developing-storport-miniport-drivers.md
   - name: "Storage Drivers"
-    href: storage-drivers.md
+# Auto-expanded node
     items: 
+    - name: "About Storage Drivers"
+      href: storage-drivers.md
     - name: "Windows Storage Driver Architecture"
       href: storage-driver-architecture.md
     - name: "Storage Drivers and Device Objects"
-      href: storage-drivers-and-device-objects.md
+# Auto-expanded node
       items: 
+      - name: "Overview"
+        href: storage-drivers-and-device-objects.md
       - name: "Device Object Example for a SCSI HBA"
         href: device-object-example-for-a-scsi-hba.md
       - name: "Device Object Example for an IEEE 1394 Controller"
@@ -29,9 +35,20 @@
       href: querying-for-the-write-cache-property.md
     - name: "Device Unique Identifiers (DUIDs) for Storage Devices"
       href: device-unique-identifiers--duids--for-storage-devices.md
-    - name: "Sample Storport Miniport Driver for an LSI_U3 Device"
-      href: sample-storport-miniport-driver-for-an-lsi-u3-device.md
+    - name: "General Storage I/O Control Codes"
+      href: general-storage-io-control-codes.md
+    - name: "Storage Data Set Management (DSM)"
+# Auto-expanded node
       items: 
+      - name: "Overview"
+        href: data-set-management-overview.md
+      - name: "DEVICE_DSM_ACTION Descriptions"
+        href: device-dsm-action-descriptions.md
+    - name: "Sample LSI_U3 Storport Miniport Driver"
+# Auto-expanded node
+      items: 
+      - name: "Overview"
+        href: sample-storport-miniport-driver-for-an-lsi-u3-device.md
       - name: "Initialization"
         href: initialization.md
       - name: "Main I/O Path"
@@ -41,34 +58,36 @@
       - name: "Porting from ScsiPort to StorPort"
         href: porting-from-scsiport-to-storport.md
   - name: "Storage Class Drivers"
-    href: storage-class-drivers.md
+# Auto-expanded node
     items: 
-    - name: "Introduction to Storage Class Drivers"
+    - name: "About Storage Class Drivers"
       href: introduction-to-storage-class-drivers.md
-    - name: "Storage Class Driver's General Functionality"
+    - name: "General Functionality"
       href: storage-class-driver-s-general-functionality.md
-    - name: "Storage Class Driver's Support of I/O Requests"
+    - name: "Support of I/O Requests"
       href: storage-class-driver-s-support-of-i-o-requests.md
-    - name: "Handling PnP Initialization in a Storage Class Driver"
+    - name: "Handling PnP Initialization"
       href: handling-pnp-initialization-in-a-storage-class-driver.md
-    - name: "Handling PnP Start in a Storage Class Driver"
+    - name: "Handling PnP Start"
       href: handling-pnp-start-in-a-storage-class-driver.md
-    - name: "Setting Up a Storage Class Driver's Device Extension"
+    - name: "Setting Up a Device Extension"
       href: setting-up-a-storage-class-driver-s-device-extension.md
-    - name: "Storage Class Driver's Standard Driver Routines"
-      href: storage-class-driver-s-standard-driver-routines.md
+    - name: "Standard Driver Routines"
+# Auto-expanded node
       items: 
-      - name: "Storage Class Driver's DriverEntry Routine"
+      - name: "DriverEntry Routine"
         href: storage-class-driver-s-driverentry-routine.md
-      - name: "Storage Class Driver's AddDevice Routine"
+      - name: "AddDevice Routine"
         href: storage-class-driver-s-adddevice-routine.md
-      - name: "Storage Class Driver's Dispatch Routines"
+      - name: "Dispatch Routines"
         href: storage-class-driver-s-dispatch-routines.md
-      - name: "Storage Class Driver's IoCompletion Routines"
+      - name: "IoCompletion Routines"
         href: storage-class-driver-s-iocompletion-routines.md
-    - name: "Handling Requests to Storage Peripherals"
-      href: handling-requests-to-storage-peripherals.md
+    - name: "Request Handling"
+# Auto-expanded node
       items: 
+      - name: "Handling Requests to Storage Peripherals"
+        href: handling-requests-to-storage-peripherals.md
       - name: "Handling SCSI Pass-Through Requests"
         href: handling-scsi-pass-through-requests.md
       - name: "Handling PnP Requests to Storage Peripherals"
@@ -77,191 +96,222 @@
         href: handling-power-requests-to-storage-peripherals.md
       - name: "Queuing Storage Requests"
         href: queuing-storage-requests.md
-    - name: "Storage Class Driver's Internal Routines"
-      href: storage-class-driver-s-internal-routines.md
+    - name: "Internal Routines"
+# Auto-expanded node
       items: 
-      - name: "Storage Class Driver's ClaimDevice Routine"
+      - name: "Overview"
+        href: storage-class-driver-s-internal-routines.md
+      - name: "ClaimDevice Routine"
         href: storage-class-driver-s-claimdevice-routine.md
-      - name: "Storage Class Driver's GetDescriptor Routine"
+      - name: "GetDescriptor Routine"
         href: storage-class-driver-s-getdescriptor-routine.md
-      - name: "Storage Class Driver's BuildRequest Routine"
+      - name: "BuildRequest Routine"
         href: storage-class-driver-s-buildrequest-routine.md
-      - name: "Storage Class Driver's SplitTransferRequest Routine"
+      - name: "SplitTransferRequest Routine"
         href: storage-class-driver-s-splittransferrequest-routine.md
-      - name: "Storage Class Driver's ReleaseQueue Routine"
+      - name: "ReleaseQueue Routine"
         href: storage-class-driver-s-releasequeue-routine.md
-      - name: "Storage Class Driver's InterpretRequestSense Routine"
+      - name: "InterpretRequestSense Routine"
         href: storage-class-driver-s-interpretrequestsense-routine.md
-      - name: "Storage Class Driver's RetryRequest Routine"
+      - name: "RetryRequest Routine"
         href: storage-class-driver-s-retryrequest-routine.md
-      - name: "Storage Class Driver's RemoveDevice Routine"
+      - name: "RemoveDevice Routine"
         href: storage-class-driver-s-removedevice-routine.md
     - name: "Converting an Existing SCSI Class Driver for Plug and Play"
       href: converting-an-existing-scsi-class-driver-for-plug-and-play.md
-    - name: "Supporting Mount Manager Requests in a Storage Class Driver"
+    - name: "Supporting Mount Manager Requests"
       href: supporting-mount-manager-requests-in-a-storage-class-driver.md
   - name: "Storage Port Drivers"
-    href: storage-port-drivers.md
+# Auto-expanded node
     items: 
+    - name: "About Storage Port Drivers"
+      href: storage-port-drivers.md
     - name: "SCSI Port Driver"
-      href: scsi-port-driver.md
+# Auto-expanded node
       items: 
-      - name: "Capabilities Provided by SCSI Port"
+      - name: "Overview"
+        href: scsi-port-driver-overview.md
+      - name: "Capabilities"
         href: capabilities-provided-by-scsi-port.md
-      - name: "SCSI Port's Interface with the Storage Class Driver"
-        href: scsi-port-s-interface-with-the-storage-class-driver.md
+      - name: "Support Routines"
+        href: scsi-port-driver-support-routines.md
+      - name: "Interface with the Storage Class Driver"
+# Auto-expanded node
         items: 
-        - name: "SCSI Port's SRB Interface with the Storage Class Driver"
+        - name: "SRB Interface"
           href: scsi-port-s-srb-interface-with-the-storage-class-driver.md
-        - name: "Negotiating Claim and Release Device Requests with SCSI Port"
+        - name: "Negotiating Claim and Release Device Requests"
           href: negotiating-claim-and-release-device-requests-with-scsi-port.md
-        - name: "Querying SCSI Port for Hardware Information"
+        - name: "Querying for Hardware Information"
           href: querying-scsi-port-for-hardware-information.md
-        - name: "SCSI Port's Role in Transmitting SCSI Sense Data"
+        - name: "Role in Transmitting SCSI Sense Data"
           href: scsi-port-s-role-in-transmitting-scsi-sense-data.md
         - name: "Bypassing the Class Driver with SCSI Pass-Through Requests"
           href: bypassing-the-class-driver-with-scsi-pass-through-requests.md
-      - name: "SCSI Port's Interface with SCSI Port Miniport Drivers"
+      - name: "Interface with SCSI Port Miniport Drivers"
         href: scsi-port-s-interface-with-scsi-port-miniport-drivers.md
       - name: "SCSI Port I/O Model"
         href: scsi-port-i-o-model.md
-      - name: "SCSI Port Driver's Queue Management"
-        href: scsi-port-driver-s-queue-management.md
+      - name: "Queue Management"
+# Auto-expanded node
         items: 
-        - name: "Freezing SCSI Port Driver's Internal Queue"
+        - name: "SCSI Port Driver's Queue Management"
+          href: scsi-port-driver-s-queue-management.md
+        - name: "Freezing SCSI Port's Internal Queue"
           href: freezing-scsi-port-driver-s-internal-queue.md
-        - name: "Locking SCSI Port Driver's Internal Queue"
+        - name: "Locking SCSI Port's Internal Queue"
           href: locking-scsi-port-driver-s-internal-queue.md
         - name: "Flushing Port Driver's Internal Queue"
           href: flushing-port-driver-s-internal-queue.md
     - name: "Storport Driver"
-      href: storport-driver.md
+# Auto-expanded node
       items: 
+      - name: "Overview"
+        href: storport-driver-overview.md
       - name: "Life Cycle of a Storport Driver"
         href: life-cycle-of-a-storport-driver.md
-      - name: "History of Storport"
+      - name: "History"
         href: history-of-storport.md
-      - name: "Capabilities Provided by Storport"
+      - name: "Capabilities"
         href: capabilities-provided-by-storport.md
+      - name: "Support Routines"
+        href: storport-driver-support-routines.md
+      - name: "Miniport Driver Routines"
+        href: storport-miniport-driver-routines.md
+      - name: "Interface with the Storage Class Driver"
+# Auto-expanded node
         items: 
-        - name: "Storport driver support routines"
-          href: storport-driver-support-routines.md
-        - name: "Storport driver miniport routines"
-          href: storport-driver-miniport-routines.md
-      - name: "Storport’s Interface with the Storage Class Driver"
-        href: storport-s-interface-with-the-storage-class-driver.md
-        items: 
-        - name: "Storport's SRB Interface with the Storage Class Driver"
+        - name: "SRB Interface"
           href: storport-s-srb-interface-with-the-storage-class-driver.md
-        - name: "Negotiating Claim and Release Device Requests with Storport"
+        - name: "Negotiating Claim and Release Device Requests"
           href: negotiating-claim-and-release-device-requests-with-storport.md
-        - name: "Querying Storport for Hardware Information"
+        - name: "Querying for Hardware Information"
           href: querying-storport-for-hardware-information.md
-        - name: "Storport's Role in Transmitting SCSI Sense Data"
+        - name: "Role in Transmitting SCSI Sense Data"
           href: storport-s-role-in-transmitting-scsi-sense-data.md
-        - name: "Bypassing the Class Driver with SCSI Pass-Through Requests to Storport"
+        - name: "Bypassing the Class Driver with SCSI Pass-Through Requests"
           href: bypassing-the-class-driver-with-scsi-pass-through-requests-to-storport.md
-      - name: "Storport’s Interface with Storport Miniport Drivers"
+      - name: "Interface with Storport Miniport Drivers"
         href: storport-s-interface-with-storport-miniport-drivers.md
       - name: "Storport I/O Model"
-        href: storport-i-o-model.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: storport-i-o-model.md
         - name: "Full-Duplex Mode"
           href: full-duplex-mode.md
-        - name: "Half-Duplex Mode: Not Appropriate for Shipped Products"
+        - name: "Half-Duplex Mode"
           href: half-duplex-mode--not-appropriate-for-shipped-products.md
         - name: "Unsynchronized HwStorBuildIo Routine"
           href: unsynchronized-hwstorbuildio-routine.md
         - name: "Synchronized Access within Unsynchronized Miniport Driver Routines"
           href: synchronized-access-within-unsynchronized-miniport-driver-routines.md
-        - name: "Access to Scatter/Gather Lists in the Storport I/O Model"
+        - name: "Access to Scatter/Gather Lists"
           href: access-to-scatter-gather-lists-in-the-storport-i-o-model.md
-        - name: "Use of Mapping Buffers in the Storport I/O Model"
+        - name: "Use of Mapping Buffers"
           href: use-of-mapping-buffers-in-the-storport-i-o-model.md
         - name: "Performance Tip: Completing Requests During HwStartIo"
           href: performance-tip--completing-requests-during-hwstartio.md
         - name: "Pre- and Post-Processing of CDBs and Sense Codes"
           href: pre--and-post-processing-of-cdbs-and-sense-codes.md
-      - name: "Storport Queue Management"
+      - name: "Queue Management"
         href: storport-queue-management.md
-      - name: "Storport Event Log Extensions"
+      - name: "Event Log Extensions"
         href: storport-event-log-extensions.md
-      - name: "Storport Error Management"
-        href: storport-error-management.md
+      - name: "Error Management"
+# Auto-expanded node
         items: 
-        - name: "Multi-Tier Reset in Storport"
+        - name: "Multi-Tier Reset"
           href: multi-tier-reset-in-storport.md
         - name: "Device Status for High-Performance Buses and Adapters"
           href: device-status-for-high-performance-buses-and-adapters.md
       - name: "Storport Idle Power Management"
-        href: storport-idle-power-management.md
+# Auto-expanded node
         items: 
-        - name: "IPM Scope"
+        - name: "Overview"
+          href: storport-idle-power-management.md
+        - name: "Scope"
           href: ipm-scope.md
-        - name: "IPM Assumptions"
+        - name: "Assumptions"
           href: ipm-assumptions.md
-        - name: "IPM Configuration and Usage"
+        - name: "Configuration and Usage"
           href: ipm-configuration-and-usage.md
-        - name: "IPM Hard Disk Drive Idle Timeout"
+        - name: "Hard Disk Drive Idle Timeout"
           href: ipm-hard-disk-drive-idle-timeout.md
       - name: "ATA Command Support"
-        href: ata-command-support.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: ata-command-support.md
         - name: "Security Group Commands"
           href: security-group-commands.md
       - name: "Making SCSI Port Miniport Drivers Work with Storport"
-        href: making-scsi-port-miniport-drivers-work-with-storport.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: making-scsi-port-miniport-drivers-work-with-storport.md
         - name: "Requirements for Using Storport with an Adapter"
           href: requirements-for-using-storport-with-an-adapter.md
-        - name: "Hardware Initialization with Storport"
+        - name: "Hardware Initialization"
           href: hardware-initialization-with-storport.md
-        - name: "Setting Port Configuration Information with Storport"
+        - name: "Setting Port Configuration Information"
           href: setting-port-configuration-information-with-storport.md
-      - name: "DEVICE_DATA_MANAGEMENT_SET_ACTION"
-        href: device-data-management-set-action.md
     - name: "ATA Port Driver"
-      href: ata-port-driver.md
+# Auto-expanded node
       items: 
-      - name: "ATA Port's Interface with the Storage Class Driver"
+      - name: "Overview"
+        href: ata-port-driver-overview.md
+      - name: "Interface with the Storage Class Driver"
         href: ata-port-s-interface-with-the-storage-class-driver.md
-      - name: "ATA Port's Interface with ATA Miniport Drivers"
+      - name: "Interface with ATA Miniport Drivers"
         href: ata-port-s-interface-with-ata-miniport-drivers.md
+      - name: "Support Routines"
+        href: ata-port-driver-support-routines.md
       - name: "ATA Port I/O Model"
-        href: ata-port-i-o-model.md
+# Auto-expanded node
         items: 
-        - name: "Synchronization in the ATA Port I/O Model"
+        - name: "Overview"
+          href: ata-port-i-o-model.md
+        - name: "Synchronization"
           href: synchronization-in-the-ata-port-i-o-model.md
         - name: "Unsynchronized IdeHwBuildIo Routine"
           href: unsynchronized-idehwbuildio-routine.md
         - name: "Synchronized Access within Unsynchronized ATA Miniport Driver Routines"
           href: synchronized-access-within-unsynchronized-ata-miniport-driver-routines.md
-        - name: "Access to Scatter/Gather Lists in the ATA Port I/O Model"
+        - name: "Access to Scatter/Gather Lists"
           href: access-to-scatter-gather-lists-in-the-ata-port-i-o-model.md
-      - name: "ATA Port Driver's Queue Management"
+      - name: "Queue Management"
         href: ata-port-driver-s-queue-management.md
-      - name: "ATA Port Driver's Reset Mechanism"
+      - name: "Reset Mechanism"
         href: ata-port-driver-s-reset-mechanism.md
-      - name: "ATA Port Driver's Power Management"
+      - name: "Power Management"
         href: ata-port-driver-s-power-management.md
       - name: "IDE Port Driver"
         href: ide-port-driver.md
   - name: "Storage Miniport Drivers"
-    href: storage-miniport-drivers.md
+# Auto-expanded node
     items: 
+    - name: "About Storage Miniport Drivers"
+      href: storage-miniport-drivers.md
     - name: "SCSI Miniport Drivers"
-      href: scsi-miniport-drivers.md
+# Auto-expanded node
       items: 
-      - name: "Supporting Plug and Play in a SCSI Miniport Driver"
-        href: supporting-plug-and-play-in-a-scsi-miniport-driver.md
+      - name: "Overview"
+        href: scsi-miniport-drivers.md
+      - name: "Supporting Plug and Play"
+# Auto-expanded node
         items: 
-        - name: "Registry Entries for Plug and Play SCSI Miniport Drivers"
+        - name: "Overview"
+          href: supporting-plug-and-play-in-a-scsi-miniport-driver.md
+        - name: "Registry Entries"
           href: registry-entries-for-plug-and-play-scsi-miniport-drivers.md
-        - name: "SCSI Miniport Initialization Under Plug and Play"
+        - name: "Initialization Under Plug and Play"
           href: scsi-miniport-initialization-under-plug-and-play.md
         - name: "Converting a Windows NT 4.0 SCSI Miniport for Plug and Play"
-          href: converting-a-windows-nt-4-0-scsi-miniport-for-plug-and-play.md
+# Auto-expanded node
           items: 
+          - name: "Overview"
+            href: converting-a-windows-nt-4-0-scsi-miniport-for-plug-and-play.md
           - name: "Use the HwContext Pointer to HwScsiFindAdapter Correctly"
             href: use-the-hwcontext-pointer-to-hwscsifindadapter-correctly.md
           - name: "Do Not Depend on Order of SCSI Miniport Initialization"
@@ -270,26 +320,30 @@
             href: use-only-supplied-resources-in-a-plug-and-play-scsi-miniport.md
           - name: "Verify Resource Ranges in HwScsiFindAdapter During Detection"
             href: verify-resource-ranges-in-hwscsifindadapter-during-detection.md
-      - name: "Registry Entries for SCSI Miniport Drivers"
+      - name: "Registry Entries"
         href: registry-entries-for-scsi-miniport-drivers.md
       - name: "Restrictions on SCSI Miniport Drivers that Manage the Boot Drive"
         href: restrictions-on-scsi-miniport-drivers-that-manage-the-boot-drive.md
-      - name: "Error Handling in SCSI Miniport Drivers"
+      - name: "Error Handling"
         href: error-handling-in-scsi-miniport-drivers.md
-      - name: "Required and Optional SCSI Miniport Driver Routines"
-        href: required-and-optional-scsi-miniport-driver-routines.md
+      - name: "SCSI Miniport Driver Routines"
+# Auto-expanded node
         items: 
-        - name: "SCSI Miniport Driver's DriverEntry Routine"
+        - name: "Required and Optional Routines"
+          href: scsi-miniport-driver-routines.md
+        - name: "DriverEntry Routine Overview"
           href: scsi-miniport-driver-s-driverentry-routine.md
-        - name: "DriverEntry of SCSI Miniport Driver"
+        - name: "DriverEntry Routine Reference"
           href: driverentry-of-scsi-miniport-driver.md
         - name: "Calling ScsiPortInitialize"
           href: calling-scsiportinitialize.md
         - name: "Storage Driver's Return from DriverEntry"
           href: storage-driver-s-return-from-driverentry.md
-        - name: "SCSI Miniport Driver's HwScsiFindAdapter Routine"
-          href: scsi-miniport-driver-s-hwscsifindadapter-routine.md
+        - name: "HwScsiFindAdapter Routine"
+# Auto-expanded node
           items: 
+          - name: "HwScsiFindAdapter Routine Overview"
+            href: scsi-miniport-driver-s-hwscsifindadapter-routine.md
           - name: "Calling ScsiPortXxx  from HwScsiFindAdapter"
             href: calling-scsiportxxx--from-hwscsifindadapter.md
           - name: "Port-Driver-Supplied ConfigInfo for HwScsiFindAdapter"
@@ -300,11 +354,13 @@
             href: setting-again-and-returning-from-hwscsifindadapter.md
           - name: "Returning Control from HwScsiFindAdapter"
             href: returning-control-from-hwscsifindadapter.md
-        - name: "SCSI Miniport Driver's HwScsiInitialize Routine"
+        - name: "HwScsiInitialize Routine"
           href: scsi-miniport-driver-s-hwscsiinitialize-routine.md
-        - name: "SCSI Miniport Driver's HwScsiStartIo Routine"
-          href: scsi-miniport-driver-s-hwscsistartio-routine.md
+        - name: "HwScsiStartIo Routine"
+# Auto-expanded node
           items: 
+          - name: "HwScsiStartIo Routine Overview"
+            href: scsi-miniport-driver-s-hwscsistartio-routine.md
           - name: "Modifying SRBs"
             href: modifying-srbs.md
           - name: "Handling SRB_FUNCTION_EXECUTE_SCSI"
@@ -319,6 +375,8 @@
             href: handling-srb-function-flush-and-srb-function-shutdown.md
           - name: "Handling SRB_FUNCTION_IO_CONTROL"
             href: handling-srb-function-io-control.md
+          - name: "Handling SRB_FUNCTION_PROTOCOL_COMMAND"
+            href: handling-srb-function-protocol-command.md
           - name: "Handling SRB_FUNCTION_PNP"
             href: handling-srb-function-pnp.md
           - name: "Handling SRB_FUNCTION_WMI"
@@ -329,40 +387,57 @@
             href: return-from-hwscsistartio.md
           - name: "Other SRB_FUNCTION_XXX  Requests"
             href: other-srb-function-xxx--requests.md
-        - name: "SCSI Miniport Driver's HwScsiDmaStarted Routine"
+        - name: "HwScsiDmaStarted Routine"
           href: scsi-miniport-driver-s-hwscsidmastarted-routine.md
-        - name: "SCSI Miniport Driver's HwScsiResetBus Routine"
+        - name: "HwScsiResetBus Routine"
           href: scsi-miniport-driver-s-hwscsiresetbus-routine.md
-        - name: "SCSI Miniport Driver's HwScsiInterrupt Routine"
-          href: scsi-miniport-driver-s-hwscsiinterrupt-routine.md
+        - name: "HwScsiInterrupt Routine"
+# Auto-expanded node
           items: 
+          - name: "HwScsiInterrupt Routine Overview"
+            href: scsi-miniport-driver-s-hwscsiinterrupt-routine.md
           - name: "Deferring Interrupt-Driven I/O from HwScsiInterrupt"
             href: deferring-interrupt-driven-i-o-from-hwscsiinterrupt.md
-        - name: "SCSI Miniport Driver's HwScsiEnableInterruptsCallback Routine"
+        - name: "HwScsiEnableInterruptsCallback Routine"
           href: scsi-miniport-driver-s-hwscsienableinterruptscallback-routine.md
-        - name: "SCSI Miniport Driver's HwScsiDisableInterruptsCallback Routine"
+        - name: "HwScsiDisableInterruptsCallback Routine"
           href: scsi-miniport-driver-s-hwscsidisableinterruptscallback-routine.md
-        - name: "SCSI Miniport Driver's HwScsiTimer Routine"
+        - name: "HwScsiTimer Routine"
           href: scsi-miniport-driver-s-hwscsitimer-routine.md
-        - name: "SCSI Miniport Driver's HwScsiAdapterState Routine"
+        - name: "HwScsiAdapterState Routine"
           href: scsi-miniport-driver-s-hwscsiadapterstate-routine.md
-        - name: "SCSI Miniport Driver's HwScsiAdapterControl Routine"
+        - name: "HwScsiAdapterControl Routine"
           href: scsi-miniport-driver-s-hwscsiadaptercontrol-routine.md
     - name: "Storport Miniport Drivers"
-      href: storport-miniport-drivers.md
+# Auto-expanded node
       items: 
-      - name: "Error Handling in Storport Miniport Drivers"
+      - name: "About Storport Miniport Drivers"
+        href: storport-miniport-drivers.md
+      - name: "Error Handling"
         href: error-handling-in-storport-miniport-drivers.md
-      - name: "Interlocked Operations in Storport Miniport Drivers"
+      - name: "Interlocked Operations"
         href: interlocked-operations-in-storport-miniport-drivers.md
+      - name: "Registry Entries"
+        href: registry-entries-for-storport-miniport-drivers.md
+      - name: "DMA remapping support in Storport miniport drivers"
+        href: storport-miniport-dma-remapping-support.md
       - name: "Upgrading Firmware for an NVMe Device"
         href: upgrading-firmware-for-an-nvme-device.md
-      - name: "Registry Entries for StorPort Miniport Drivers"
-        href: registry-entries-for-storport-miniport-drivers.md
+      - name: "StorNVMe Miniport Driver"
+# Auto-expanded node
+        items: 
+        - name: "NVMe features supported by StorNVMe"
+          href: nvme-features-supported-by-stornvme.md
+        - name: "StorNVMe command set support"
+          href: stornvme-command-set-support.md
+        - name: "StorNVMe feature support"
+          href: stornvme-feature-support.md
+        - name: "StorNVMe SCSI translation support"
+          href: stornvme-scsi-translation-support.md
     - name: "IDE Controller Minidrivers"
-      href: ide-controller-minidrivers.md
+# Auto-expanded node
       items: 
-      - name: "Requirements for Vendor-Supplied IDE Controller Minidrivers"
+      - name: "Overview"
         href: requirements-for-vendor-supplied-ide-controller-minidrivers.md
       - name: "Initializing and Calling IDE Minidriver Routines"
         href: initializing-and-calling-ide-minidriver-routines.md
@@ -376,55 +451,63 @@
       href: ata-miniport-drivers.md
     - name: "Restrictions on Miniport Drivers that Manage the Boot Drive"
       href: restrictions-on-miniport-drivers-that-manage-the-boot-drive.md
-    - name: "Handling WMI SRBs in Storage Miniport Drivers"
-      href: handling-wmi-srbs-in-storage-miniport-drivers.md
+    - name: "WMI SRBs in Storage Miniport Drivers"
+# Auto-expanded node
       items: 
+      - name: "Handling WMI SRBs"
+        href: handling-wmi-srbs-in-storage-miniport-drivers.md
       - name: "How the Port Driver Processes WMI Requests"
         href: how-the-port-driver-processes-wmi-requests.md
       - name: "Using the SCSI Port WMI Library"
         href: using-the-scsi-port-wmi-library.md
       - name: "Designing WMI Miniport Driver Callback Routines"
-        href: designing-wmi-miniport-driver-callback-routines.md
+# Auto-expanded node
         items: 
-        - name: "Designing a Miniport Driver Callback Routine that Handles WMI Classes with Methods"
+        - name: "WMI Miniport Driver Callback Routines"
+          href: designing-wmi-miniport-driver-callback-routines.md
+        - name: "Callback Routine that Handles WMI Classes with Methods"
           href: designing-a-miniport-driver-callback-routine-that-handles-wmi-classes-2.md
-        - name: "Designing a Miniport Driver Callback Routine that Handles WMI Classes with Data Fields"
+        - name: "Callback Routine that Handles WMI Classes with Data Fields"
           href: designing-a-miniport-driver-callback-routine-that-handles-wmi-classes-.md
       - name: "Modifying Storage Miniport Driver Routines to Support WMI SRBs"
         href: modifying-storage-miniport-driver-routines-to-support-wmi-srbs.md
   - name: "Storage Virtual Miniport Drivers"
-    href: storage-virtual-miniport-drivers.md
+# Auto-expanded node
     items: 
-    - name: "Overview of Storage Virtual Miniport Drivers"
+    - name: "About Storage VMiniport Drivers"
       href: overview-of-storage-virtual-miniport-drivers.md
-    - name: "Storage Virtual Miniport Drivers: When Are They Appropriate?"
+    - name: "When is a VMiniport Driver Appropriate?"
       href: storage-virtual-miniport-drivers--when-are-they-appropriate-.md
-    - name: "Initialization of Storage Virtual Miniport Drivers"
+    - name: "Initialization"
       href: initialization-of-storage-virtual-miniport-drivers.md
     - name: "Crash Dump and Hibernation Support"
       href: crash-dump-and-hibernation-support.md
   - name: "Storage Filter Drivers"
-    href: storage-filter-drivers.md
+# Auto-expanded node
     items: 
-    - name: "Storage Filter Driver's Support of I/O Requests"
+    - name: "About Storage Filter Drivers"
+      href: storage-filter-drivers.md
+    - name: "Support of I/O Requests"
       href: storage-filter-driver-s-support-of-i-o-requests.md
-    - name: "Storage Filter Driver's Device-Type-Specific Functionality"
+    - name: "Device-Type-Specific Functionality"
       href: storage-filter-driver-s-device-type-specific-functionality.md
-    - name: "Storage Filter Driver's DriverEntry Routine"
+    - name: "DriverEntry Routine"
       href: storage-filter-driver-s-driverentry-routine.md
-    - name: "Storage Filter Driver's AddDevice Routine"
+    - name: "AddDevice Routine"
       href: storage-filter-driver-s-adddevice-routine.md
-    - name: "Handling PnP Start in a Storage Filter Driver"
+    - name: "Handling PnP Start"
       href: handling-pnp-start-in-a-storage-filter-driver.md
-    - name: "Storage Filter Driver's Dispatch Routines"
+    - name: "Dispatch Routines"
       href: storage-filter-driver-s-dispatch-routines.md
-    - name: "Storage Filter Driver's IoCompletion Routines"
+    - name: "IoCompletion Routines"
       href: storage-filter-driver-s-iocompletion-routines.md
     - name: "Handling PnP Paging Requests"
       href: handling-pnp-paging-requests.md
   - name: "Crash Dump Filter Drivers"
-    href: crash-dump-filter-drivers.md
+# Auto-expanded node
     items: 
+    - name: "About Crash Dump Filter Drivers"
+      href: crash-dump-filter-drivers.md
     - name: "Problem Description"
       href: problem-description.md
     - name: "Feature Description"
@@ -438,34 +521,42 @@
     - name: "Filter Initialization"
       href: filter-initialization.md
   - name: "Storage Silo Drivers"
-    href: storage-silo-drivers.md
+# Auto-expanded node
     items: 
-    - name: "Overview"
+    - name: "About Storage Silo Drivers"
       href: overview.md
     - name: "Definitions"
       href: definitions.md
-    - name: "Requirements"
+    - name: "Silo driver system requirements"
       href: requirements.md
     - name: "Architecture"
       href: architecture.md
   - name: "CD-ROM Drivers"
-    href: cd-rom-drivers.md
+# Auto-expanded node
     items: 
-    - name: "CD-ROM Exclusive Access Mode"
+    - name: "About CD-ROM Drivers"
+      href: cd-rom-drivers.md
+    - name: "Exclusive Access Mode"
       href: cd-rom-exclusive-access-mode.md
-    - name: "CD-ROM Set Speed"
+    - name: "Set Speed"
       href: cd-rom-set-speed.md
-    - name: "CD-ROM Real-Time Streaming"
+    - name: "Real-Time Streaming"
       href: cd-rom-real-time-streaming-.md
     - name: "ACLs and the Device Stack"
       href: acls-and-the-device-stack.md
+    - name: "CD-ROM I/O control codes"
+      href: cd-rom-io-control-codes.md
   - name: "Tape Drivers"
-    href: tape-drivers.md
+# Auto-expanded node
     items: 
+    - name: "About Tape Drivers"
+      href: tape-drivers-overview.md
     - name: "Using the Tape Class Driver"
       href: using-the-tape-class-driver.md
-    - name: "Required and Optional Tape Miniclass Routines"
-      href: required-and-optional-tape-miniclass-routines.md
+    - name: "Tape Class Driver Routines"
+      href: tape-class-driver-routines.md
+    - name: "Tape Miniclass Driver Routines"
+      href: tape-miniclass-driver-routines.md
     - name: "DriverEntry of Tape Miniclass Driver"
       href: driverentry-of-tape-miniclass-driver.md
     - name: "Storing Tape Miniclass Context in Optional Extensions"
@@ -473,48 +564,56 @@
     - name: "Processing Tape Device Control Requests"
       href: processing-tape-device-control-requests.md
   - name: "Changer Drivers"
-    href: changer-drivers.md
+# Auto-expanded node
     items: 
-    - name: "System-Supplied Changer Drivers"
-      href: system-supplied-changer-drivers.md
+    - name: "About Changer Drivers"
+      href: changer-drivers.md
+    - name: "The Changer Driver Model"
+      href: the-changer-driver-model.md
+    - name: "Changer Class Driver"
+# Auto-expanded node
       items: 
-      - name: "The Changer Driver Model"
-        href: the-changer-driver-model.md
-      - name: "The Changer Class Driver"
+      - name: "Overview"
         href: the-changer-class-driver.md
       - name: "Differences in Changer Class Driver Versions"
         href: differences-in-changer-class-driver-versions.md
-    - name: "Vendor-Supplied Changer Drivers"
-      href: vendor-supplied-changer-drivers.md
+    - name: "Changer Miniclass Drivers"
+# Auto-expanded node
       items: 
-      - name: "Introduction to Changer Miniclass Drivers"
+      - name: "Overview"
         href: introduction-to-changer-miniclass-drivers.md
-      - name: "Required Changer Miniclass Routines"
+      - name: "Required Routines"
         href: required-changer-miniclass-routines.md
-      - name: "DriverEntry of Changer Miniclass Drivers"
+      - name: "DriverEntry"
         href: driverentry-of-changer-miniclass-drivers.md
-      - name: "Installing Changer Miniclass Drivers"
+      - name: "Installation"
         href: installing-changer-miniclass-drivers.md
     - name: "Storing Device-Specific Information in the Changer's Device Extension"
       href: storing-device-specific-information-in-the-changer-s-device-extension.md
     - name: "Processing Changer Device-Control Requests"
       href: processing-changer-device-control-requests.md
   - name: "Storage Scenarios"
-    href: storage-scenarios.md
+# Auto-expanded node
     items: 
     - name: "Offloaded Data Transfer"
       href: offloaded-data-transfer.md
     - name: "Thin Provisioning"
       href: thin-provisioning.md
   - name: "Storage management and WMI classes"
-    href: storage-wmi-classes.md
+# Auto-expanded node
     items: 
+    - name: "Overview"
+      href: storage-wmi-classes.md
     - name: "HBA WMI Classes"
-      href: hba-wmi-classes.md
+# Auto-expanded node
       items: 
+      - name: "Overview"
+        href: hba-wmi-classes.md
       - name: "WMI Class Qualifier Definitions in Hbaapi.mof"
-        href: wmi-class-qualifier-definitions-in-hbaapi-mof.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: wmi-class-qualifier-definitions-in-hbaapi-mof.md
         - name: "EVENT_TYPES_QUALIFIERS"
           href: event-types-qualifiers.md
         - name: "HBA_BIND_TYPE"
@@ -536,8 +635,10 @@
       - name: "MS_SM_AdapterInformationQuery WMI Class"
         href: ms-sm-adapterinformationquery-wmi-class.md
       - name: "MS_SM_EventControl WMI Class"
-        href: ms-sm-eventcontrol-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: ms-sm-eventcontrol-wmi-class.md
         - name: "SM_AddTarget"
           href: sm-addtarget.md
         - name: "SM_RemoveTarget"
@@ -551,8 +652,10 @@
         - name: "SM_RemoveLink"
           href: sm-removelink.md
       - name: "MS_SM_FabricAndDomainManagementMethods WMI Class"
-        href: ms-sm-fabricanddomainmanagementmethods-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: ms-sm-fabricanddomainmanagementmethods-wmi-class.md
         - name: "SM_SendCTPassThru"
           href: sm-sendctpassthru.md
         - name: "SM_GetRNIDMgmtInfo"
@@ -576,8 +679,10 @@
       - name: "MS_SM_PortInformationMethods WMI Class"
         href: ms-sm-portinformationmethods-wmi-class.md
       - name: "MS_SM_ScsiInformationMethods WMI Class"
-        href: ms-sm-scsiinformationmethods-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: ms-sm-scsiinformationmethods-wmi-class.md
         - name: "SM_ScsiInquiry"
           href: sm-scsiinquiry.md
         - name: "SM_ScsiReportLuns"
@@ -585,8 +690,10 @@
         - name: "SM_ScsiReadCapacity"
           href: sm-scsireadcapacity.md
       - name: "MS_SM_TargetInformationMethods WMI Class"
-        href: ms-sm-targetinformationmethods-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: ms-sm-targetinformationmethods-wmi-class.md
         - name: "SM_GetTargetMapping"
           href: sm-gettargetmapping.md
         - name: "SM_GetBindingCapability"
@@ -628,8 +735,10 @@
       - name: "MSFC_EventBuffer WMI Class"
         href: msfc-eventbuffer-wmi-class.md
       - name: "MSFC_EventControl WMI Class"
-        href: msfc-eventcontrol-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: msfc-eventcontrol-wmi-class.md
         - name: "AddLink"
           href: addlink.md
         - name: "AddPort"
@@ -655,8 +764,10 @@
       - name: "MSFC_HbaApiVersion WMI Class"
         href: msfc-hbaapiversion-wmi-class.md
       - name: "MSFC_HBAAdapterMethods WMI Class"
-        href: msfc-hbaadaptermethods-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: msfc-hbaadaptermethods-wmi-class.md
         - name: "GetDiscoveredPortAttributes"
           href: getdiscoveredportattributes.md
         - name: "GetEventBuffer"
@@ -696,8 +807,10 @@
         - name: "SetFC3MgmtInfo"
           href: setfc3mgmtinfo.md
       - name: "MSFC_HBAFCPInfo WMI Class"
-        href: msfc-hbafcpinfo-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: msfc-hbafcpinfo-wmi-class.md
         - name: "GetBindingCapability"
           href: getbindingcapability.md
         - name: "GetBindingSupport"
@@ -727,14 +840,20 @@
       - name: "MSFC_TM WMI Class"
         href: msfc-tm-wmi-class.md
     - name: "iSCSI WMI Classes"
-      href: iscsi-wmi-classes.md
+# Auto-expanded node
       items: 
+      - name: "Overview"
+        href: iscsi-wmi-classes.md
       - name: "iSCSI WMI Common Classes"
-        href: iscsi-wmi-common-classes.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: iscsi-wmi-common-classes.md
         - name: "WMI Property Qualifier Definitions in Common.mof"
-          href: wmi-property-qualifier-definitions-in-common-mof.md
+# Auto-expanded node
           items: 
+          - name: "Overview"
+            href: wmi-property-qualifier-definitions-in-common-mof.md
           - name: "ISCSI_AUTH_TYPES_QUALIFIERS"
             href: iscsi-auth-types-qualifiers.md
           - name: "ISCSI_STATUS_QUALIFIERS"
@@ -754,11 +873,15 @@
         - name: "ISCSI_TargetPortalGroup WMI Class"
           href: iscsi-targetportalgroup-wmi-class.md
       - name: "iSCSI WMI Classes That Manage Initiators, Ports, Sessions and Connections"
-        href: iscsi-wmi-classes-that-manage-initiators--ports--sessions-and-connecti.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: iscsi-wmi-classes-that-manage-initiators--ports--sessions-and-connecti.md
         - name: "WMI Property Qualifier Definitions in Mgmt.mof"
-          href: wmi-property-qualifier-definitions-in-mgmt-mof.md
+# Auto-expanded node
           items: 
+          - name: "Overview"
+            href: wmi-property-qualifier-definitions-in-mgmt-mof.md
           - name: "ISCSI_CONNECTION_STATE_TYPE_QUALIFIERS"
             href: iscsi-connection-state-type-qualifiers.md
           - name: "ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS"
@@ -812,8 +935,10 @@
         - name: "MSiSCSI_RedirectPortalInfoClass WMI Class"
           href: msiscsi-redirectportalinfoclass-wmi-class.md
       - name: "iSCSI WMI Classes That Report Performance Statistics"
-        href: iscsi-wmi-classes-that-report-performance-statistics.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: iscsi-wmi-classes-that-report-performance-statistics.md
         - name: "MSiSCSI_ConnectionStatistics WMI Class"
           href: msiscsi-connectionstatistics-wmi-class.md
         - name: "MSiSCSI_InitiatorInstanceStatistics WMI Class"
@@ -831,8 +956,10 @@
         - name: "MSiSCSI_SessionStatistics WMI Class"
           href: msiscsi-sessionstatistics-wmi-class.md
       - name: "iSCSI WMI Operations Classes"
-        href: iscsi-wmi-operations-classes.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: iscsi-wmi-operations-classes.md
         - name: "ISCSI_Persistent_Login WMI Class"
           href: iscsi-persistent-login-wmi-class.md
         - name: "MSiSCSI_AdapterEvent WMI Class"
@@ -842,8 +969,10 @@
         - name: "MSiSCSI_LUNMappingInformation WMI Class"
           href: msiscsi-lunmappinginformation-wmi-class.md
         - name: "MSiSCSI_Operations WMI Class"
-          href: msiscsi-operations-wmi-class.md
+# Auto-expanded node
           items: 
+          - name: "Overview"
+            href: msiscsi-operations-wmi-class.md
           - name: "AddConnectionToSession"
             href: addconnectiontosession.md
           - name: "AddiSNSServer"
@@ -881,8 +1010,10 @@
         - name: "MSiSCSI_PersistentLogins WMI Class"
           href: msiscsi-persistentlogins-wmi-class.md
         - name: "MSiSCSI_SecurityConfigOperations WMI Class"
-          href: msiscsi-securityconfigoperations-wmi-class.md
+# Auto-expanded node
           items: 
+          - name: "Overview"
+            href: msiscsi-securityconfigoperations-wmi-class.md
           - name: "ClearCache"
             href: clearcache.md
           - name: "GetPresharedKeyForId"
@@ -898,8 +1029,10 @@
         - name: "MSiSCSI_TargetMappings WMI Class"
           href: msiscsi-targetmappings-wmi-class.md
       - name: "iSCSI WMI Discovery Classes"
-        href: iscsi-wmi-discovery-classes.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: iscsi-wmi-discovery-classes.md
         - name: "ISCSI_DiscoveredTarget WMI Class"
           href: iscsi-discoveredtarget-wmi-class.md
         - name: "ISCSI_DiscoveredTarget2 WMI Class"
@@ -913,18 +1046,24 @@
         - name: "ISCSI_DiscoveredTargetPortalGroup2 WMI Class"
           href: iscsi-discoveredtargetportalgroup2-wmi-class.md
         - name: "MSiSCSI_DiscoveryOperations WMI Class"
-          href: msiscsi-discoveryoperations-wmi-class.md
+# Auto-expanded node
           items: 
+          - name: "Overview"
+            href: msiscsi-discoveryoperations-wmi-class.md
           - name: "ReportDiscoveredTargets"
             href: reportdiscoveredtargets.md
           - name: "ReportDiscoveredTargets2"
             href: reportdiscoveredtargets2.md
       - name: "iSCSI WMI Network Classes"
-        href: iscsi-wmi-network-classes.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: iscsi-wmi-network-classes.md
         - name: "WMI Property Qualifier Definitions in Config.mof"
-          href: wmi-property-qualifier-definitions-in-config-mof.md
+# Auto-expanded node
           items: 
+          - name: "Overview"
+            href: wmi-property-qualifier-definitions-in-config-mof.md
           - name: "ENCRYPTION_TYPES_QUALIFIERS"
             href: encryption-types-qualifiers.md
         - name: "MSiSCSI_BootConfiguration WMI Class"
@@ -940,8 +1079,10 @@
         - name: "MSiSCSI_TCPIPConfig WMI Class"
           href: msiscsi-tcpipconfig-wmi-class.md
     - name: "MPIO WMI Classes"
-      href: mpio-wmi-classes.md
+# Auto-expanded node
       items: 
+      - name: "Overview"
+        href: mpio-wmi-classes.md
       - name: "MPIO_PATH_HEALTH_CLASS WMI Class"
         href: mpio-path-health-class-wmi-class.md
       - name: "MPIO_PATH_HEALTH_INFO WMI Class"
@@ -975,8 +1116,10 @@
       - name: "MPIO_TIMERS_COUNTERS WMI Class"
         href: mpio-timers-counters-wmi-class.md
       - name: "MPIO_WMI_METHODS WMI Class"
-        href: mpio-wmi-methods-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: mpio-wmi-methods-wmi-class.md
         - name: "MPIOMoveDevice"
           href: mpiomovedevice.md
         - name: "GetPathConfiguration"
@@ -1020,8 +1163,10 @@
       - name: "DSM_QuerySupportedLBPolicies WMI Class"
         href: dsm-querysupportedlbpolicies-wmi-class.md
       - name: "DSM_LB_Operations WMI Class"
-        href: dsm-lb-operations-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: dsm-lb-operations-wmi-class.md
         - name: "DsmSetLoadBalancePolicy"
           href: dsmsetloadbalancepolicy.md
         - name: "DsmSetLoadBalancePolicyALUA"
@@ -1029,15 +1174,19 @@
       - name: "DSM_QueryUniqueId WMI Class"
         href: dsm-queryuniqueid-wmi-class.md
     - name: "NPIV WMI Classes"
-      href: npiv-wmi-classes.md
+# Auto-expanded node
       items: 
+      - name: "Overview"
+        href: npiv-wmi-classes.md
       - name: "MSFC_DH_Chap_Parameters WMI Class"
         href: msfc-dh-chap-parameters-wmi-class.md
       - name: "MSFC_FibrePortNPIVAttributes WMI Class"
         href: msfc-fibreportnpivattributes-wmi-class.md
       - name: "MSFC_FibrePortNPIVMethods WMI Class"
-        href: msfc-fibreportnpivmethods-wmi-class.md
+# Auto-expanded node
         items: 
+        - name: "Overview"
+          href: msfc-fibreportnpivmethods-wmi-class.md
         - name: "CreateVirtualPort"
           href: createvirtualport.md
         - name: "RemoveVirtualPort"
@@ -1047,77 +1196,78 @@
       - name: "MSFC_VirtualFibrePortAttributes WMI Class"
         href: msfc-virtualfibreportattributes-wmi-class.md
   - name: "Storage Class Memory"
-    href: storage-class-memory-portal.md
+# Auto-expanded node
     items: 
-    - name: "JEDEC Byte-Addressable Energy-Backed Interface NVDIMM Device-Specific Method (_DSM)"
-      href: jedec-byte-addressable-energy-backed-interface-nvdimms-device-specific-method---dsm-.md
+    - name: "Overview"
+      href: storage-class-memory-portal.md
+    - name: "Storage class memory glossary"
+      href: glossary.md
+    - name: "_DSM Interface for JEDEC Byte Addressable Energy Backed Function Class (Function Interface 1)"
+# Auto-expanded node
       items: 
-      - name: "Storage class memory glossary"
-        href: glossary.md
-      - name: "_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)"
+      - name: "Device-Specific Method (_DSM) Interface"
         href: -dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md
-        items: 
-        - name: "Query Implemented Functions (Function Index 0)"
-          href: query-implemented-functions--function-index-0-.md
-        - name: "Get NVDIMM-N Identification (Function Index 1)"
-          href: get-nvdimm-n-identification--function-index-1-.md
-        - name: "Get Save Operation Requirements (Function Index 2)"
-          href: get-save-operation-requirements--function-index-2-.md
-        - name: "Get Energy Source Identification (Function Index 3)"
-          href: get-energy-source-identification--function-index-3-.md
-        - name: "Get Last Backup Information (Function Index 4)"
-          href: get-last-backup-information--function-index-4-.md
-        - name: "Get NVM Thresholds (Function Index 5)"
-          href: get-nvm-thresholds--function-index-5-.md
-        - name: "Set NVM Lifetime Percentage Warning Threshold (Function Index 6)"
-          href: set-nvm-lifetime-percentage-warning-threshold--function-index-6-.md
-        - name: "Get Energy Source Thresholds (Function Index 7)"
-          href: get-energy-source-thresholds--function-index-7-.md
-        - name: "Set Energy Source Lifetime Warning Threshold (Function Index 8)"
-          href: set-energy-source-lifetime-warning-threshold--function-index-8-.md
-        - name: "Set Energy Source Temperature Warning Threshold (Function Index 9)"
-          href: set-energy-source-temperature-warning-threshold--function-index-9-.md
-        - name: "Get Critical Health Info (Function Index 10)"
-          href: get-critical-health-info--function-index-10-.md
-        - name: "Get NVDIMM-N Health Info (Function Index 11)"
-          href: get-nvdimm-n-health-info--function-index-11-.md
-        - name: "Get Energy Source Health Info (Function Index 12)"
-          href: get-energy-source-health-info--function-index-12-.md
-        - name: "Get Operational Statistics (Function Index 13)"
-          href: get-operational-statistics--function-index-13-.md
-        - name: "Get Vendor Log Page Size (Function Index 14)"
-          href: get-vendor-log-page-size--function-index-14-.md
-        - name: "Get Vendor Log Page (Function Index 15)"
-          href: get-vendor-log-page--function-index-15-.md
-        - name: "Query Error Injection Status (Function Index 16)"
-          href: query-error-injection-status--function-index-16-.md
-        - name: "Inject Error (Function Index 17)"
-          href: inject-error--function-index-17-.md
-        - name: "Get Injected Errors (Function Index 18)"
-          href: get-injected-errors--function-index-18-.md
-        - name: "Erase NVM Image (Function Index 19)"
-          href: erase-nvm-image--function-index-19-.md
-        - name: "Arm NVDIMM-N (Function Index 20)"
-          href: arm-nvdimm-n--function-index-20-.md
-        - name: "Reset to Factory Defaults (Function Index 21)"
-          href: reset-to-factory-defaults--function-index-21-.md
-        - name: "Start Firmware Update (Function Index 22)"
-          href: start-firmware-update--function-index-22-.md
-        - name: "Send Firmware Update Data (Function Index 23)"
-          href: send-firmware-update-data--function-index-23-.md
-        - name: "Finish Firmware Update (Function Index 24)"
-          href: finish-firmware-update--function-index-24-.md
-        - name: "Select Firmware Image Slot (Function Index 25)"
-          href: select-firmware-image-slot--function-index-25-.md
-        - name: "Get Firmware Info (Function Index 26)"
-          href: get-firmware-info--function-index-26-.md
-        - name: "I2C Read (Function Index 27)"
-          href: i2c-read--function-index-27-.md
-        - name: "I2C Write (Function Index 28)"
-          href: i2c-write--function-index-28-.md
-        - name: "Read Typed Data (Function Index 29)"
-          href: read-typed-data--function-index-29-.md
-        - name: "Write Typed Data (Function Index 30)"
-          href: write-typed-data--function-index-30-.md
-        - name: "Set Memory Error Counters (Function Index 31)"
-          href: set-memory-error-counters--function-index-31-.md
+      - name: "Query Implemented Functions (Function Index 0)"
+        href: query-implemented-functions--function-index-0-.md
+      - name: "Get NVDIMM-N Identification (Function Index 1)"
+        href: get-nvdimm-n-identification--function-index-1-.md
+      - name: "Get Save Operation Requirements (Function Index 2)"
+        href: get-save-operation-requirements--function-index-2-.md
+      - name: "Get Energy Source Identification (Function Index 3)"
+        href: get-energy-source-identification--function-index-3-.md
+      - name: "Get Last Backup Information (Function Index 4)"
+        href: get-last-backup-information--function-index-4-.md
+      - name: "Get NVM Thresholds (Function Index 5)"
+        href: get-nvm-thresholds--function-index-5-.md
+      - name: "Set NVM Lifetime Percentage Warning Threshold (Function Index 6)"
+        href: set-nvm-lifetime-percentage-warning-threshold--function-index-6-.md
+      - name: "Get Energy Source Thresholds (Function Index 7)"
+        href: get-energy-source-thresholds--function-index-7-.md
+      - name: "Set Energy Source Lifetime Warning Threshold (Function Index 8)"
+        href: set-energy-source-lifetime-warning-threshold--function-index-8-.md
+      - name: "Set Energy Source Temperature Warning Threshold (Function Index 9)"
+        href: set-energy-source-temperature-warning-threshold--function-index-9-.md
+      - name: "Get Critical Health Info (Function Index 10)"
+        href: get-critical-health-info--function-index-10-.md
+      - name: "Get NVDIMM-N Health Info (Function Index 11)"
+        href: get-nvdimm-n-health-info--function-index-11-.md
+      - name: "Get Energy Source Health Info (Function Index 12)"
+        href: get-energy-source-health-info--function-index-12-.md
+      - name: "Get Operational Statistics (Function Index 13)"
+        href: get-operational-statistics--function-index-13-.md
+      - name: "Get Vendor Log Page Size (Function Index 14)"
+        href: get-vendor-log-page-size--function-index-14-.md
+      - name: "Get Vendor Log Page (Function Index 15)"
+        href: get-vendor-log-page--function-index-15-.md
+      - name: "Query Error Injection Status (Function Index 16)"
+        href: query-error-injection-status--function-index-16-.md
+      - name: "Inject Error (Function Index 17)"
+        href: inject-error--function-index-17-.md
+      - name: "Get Injected Errors (Function Index 18)"
+        href: get-injected-errors--function-index-18-.md
+      - name: "Erase NVM Image (Function Index 19)"
+        href: erase-nvm-image--function-index-19-.md
+      - name: "Arm NVDIMM-N (Function Index 20)"
+        href: arm-nvdimm-n--function-index-20-.md
+      - name: "Reset to Factory Defaults (Function Index 21)"
+        href: reset-to-factory-defaults--function-index-21-.md
+      - name: "Start Firmware Update (Function Index 22)"
+        href: start-firmware-update--function-index-22-.md
+      - name: "Send Firmware Update Data (Function Index 23)"
+        href: send-firmware-update-data--function-index-23-.md
+      - name: "Finish Firmware Update (Function Index 24)"
+        href: finish-firmware-update--function-index-24-.md
+      - name: "Select Firmware Image Slot (Function Index 25)"
+        href: select-firmware-image-slot--function-index-25-.md
+      - name: "Get Firmware Info (Function Index 26)"
+        href: get-firmware-info--function-index-26-.md
+      - name: "I2C Read (Function Index 27)"
+        href: i2c-read--function-index-27-.md
+      - name: "I2C Write (Function Index 28)"
+        href: i2c-write--function-index-28-.md
+      - name: "Read Typed Data (Function Index 29)"
+        href: read-typed-data--function-index-29-.md
+      - name: "Write Typed Data (Function Index 30)"
+        href: write-typed-data--function-index-30-.md
+      - name: "Set Memory Error Counters (Function Index 31)"
+        href: set-memory-error-counters--function-index-31-.md

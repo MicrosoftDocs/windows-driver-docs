@@ -15,13 +15,7 @@ This class is similar to the [ISCSI\_DiscoveredTargetPortalGroup WMI class](iscs
 
 The ISCSI\_DiscoveredTargetPortalGroup2 class is unpublished and is defined in *Discover.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortalGroup2**](https://msdn.microsoft.com/library/windows/hardware/ff561517) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTargetPortalGroup2**](/windows-hardware/drivers/ddi/iscsifnd/ns-iscsifnd-_iscsi_discoveredtargetportalgroup2) data structure.
 
  
-
- 
-
-
-
-
 

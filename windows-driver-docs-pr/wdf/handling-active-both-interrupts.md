@@ -23,11 +23,11 @@ On SoC hardware platforms, active-both interrupts are typically used for very si
 
 To distinguish between low-to-high and high-to-low transitions, the driver must track the state of each interrupt. To do so, your driver might maintain a Boolean interrupt state value that is **FALSE** when interrupt line state is low and **TRUE** when line state is high.
 
-Consider an example in which the line state defaults to low when the system starts. The driver initializes the state value to **FALSE** in its [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function. Then each time the driver's ISR is called, signaling a change in state, the driver inverts the state value in its ISR.
+Consider an example in which the line state defaults to low when the system starts. The driver initializes the state value to **FALSE** in its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function. Then each time the driver's ISR is called, signaling a change in state, the driver inverts the state value in its ISR.
 
-If the line state is high when the system starts, the interrupt fires immediately after it is enabled. Because the driver calls the [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) routine directly, instead of calling [**WdfInterruptCreate**](https://msdn.microsoft.com/library/windows/hardware/ff547345), it is ensured of receiving a possible immediate interrupt.
+If the line state is high when the system starts, the interrupt fires immediately after it is enabled. Because the driver calls the [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) routine directly, instead of calling [**WdfInterruptCreate**](/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate), it is ensured of receiving a possible immediate interrupt.
 
-This solution requires that the GPIO controller support active-both interrupts in hardware, or that the driver for the GPIO controller emulate active-both interrupts in software. For information about emulating active-both interrupts, see the description of the **EmulateActiveBoth** member of the [**CONTROLLER\_ATTRIBUTE\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh439449) structure.
+This solution requires that the GPIO controller support active-both interrupts in hardware, or that the driver for the GPIO controller emulate active-both interrupts in software. For information about emulating active-both interrupts, see the description of the **EmulateActiveBoth** member of the [**CONTROLLER\_ATTRIBUTE\_FLAGS**](/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_controller_attribute_flags) structure.
 
 The following code example shows how a KMDF driver for a peripheral device can track interrupt polarity.
 
@@ -166,17 +166,11 @@ EvtDeviceReleaseHardware(
 }
 ```
 
-In the preceding code example, the driver's [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function configures the device context and then calls [**IoInitializeDpcRequest**](https://msdn.microsoft.com/library/windows/hardware/ff549307) to register a [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) routine.
+In the preceding code example, the driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function configures the device context and then calls [**IoInitializeDpcRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinitializedpcrequest) to register a [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) routine.
 
-The driver's [*InterruptService*](https://msdn.microsoft.com/library/windows/hardware/ff547958) routine inverts the interrupt state value and then calls [**IoRequestDpc**](https://msdn.microsoft.com/library/windows/hardware/ff549657) to queue the DPC.
+The driver's [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine inverts the interrupt state value and then calls [**IoRequestDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdpc) to queue the DPC.
 
-In its [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback function, the driver initializes the state value to **FALSE** and then calls [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378). In its [*EvtDeviceReleaseHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540890) callback function, the driver calls [**IoDisconnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff549093) to unregister its ISR.
-
- 
+In its [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback function, the driver initializes the state value to **FALSE** and then calls [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex). In its [*EvtDeviceReleaseHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) callback function, the driver calls [**IoDisconnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iodisconnectinterruptex) to unregister its ISR.
 
  
-
-
-
-
 

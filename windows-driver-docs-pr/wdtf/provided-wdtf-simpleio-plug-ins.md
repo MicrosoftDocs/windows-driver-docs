@@ -8,364 +8,280 @@ ms.localizationpriority: medium
 
 # Provided WDTF Simple I/O plug-ins
 
+Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality. If a plug-in exists for the type of device being tested, the [Device Fundamental tests](/windows-hardware/drivers) use the WDTF Simple I/O interfaces to test I/O.
 
-Simple I/O plug-ins are extensions to the Windows Driver Test Framework (WDTF) that implement generic device-specific I/O functionality. If a plug-in exists for the type of device being tested, the [Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests) use the WDTF Simple I/O interfaces to test I/O.
-
-The following table shows the device types that have Simple I/O plug-ins. The table also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893).
+This topic lists the device types that have Simple I/O plug-ins and indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/). The topic also offers ideas to troubleshoot and triage test failures.
 
 If your device type is not listed, you can create one, see [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](to-customize-i-o-for-your-device-using-the-wdtf-simple-i-o-action-plug-in.md)
 
-## Provided Simple I/O plugins and device requirements for testing and tips for troubleshooting
+For a list of Device Fundamental tests that have specific requirements, see [Device Fundamental tests that have specific device configuration requirements](#device-fundamental-tests-that-have-specific-device-configuration-requirements)
 
+## Audio
 
-The following section lists the device types that have Simple I/O plug-ins. The section also indicates if there are specific requirements for testing the device. These are the same requirements you need to follow when you use the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893). The section also shows tips you can use to troubleshoot and triage test failures.
+### Requirements
 
--   [Audio devices](#-audio)
--   [Bluetooth devices](#-bluetooth)
--   [CDROM devices](#-cdrom)
--   [Disk devices](#-disk)
--   [Display devices](#-display)
--   [GPS devices](#-gps)
--   [LAN devices](#-lan)
--   [Mobile Broadband devices](#-mobile-broadband)
--   [Portable devices](#-portable-devices)
--   [Smart Card Readers](#-smartcard)
--   [Sensor devices](#-sensors)
--   [Volume](#-volume)
--   [Webcam](#-webcam)
--   [WLAN](#-wlan)
--   [USB Controller and HUB with Mutt](#-usb-mutt)
+- The device must have at least one render type endpoint connected (speakers, headphones, or the like).
 
-For a list of Device Fundamental tests that have specific requirements, see [Device Fundamental tests that have specific device configuration requirements](#-devfund-test-req)
+- If the targeted audio device has HDMI video and audio output capability, to perform audio tests, the device must be connected to an HDMI audio capable device such as an HDMI Monitor or an A/V Receiver.
 
-### <a href="" id="-audio"></a>
+### Type of I/O plug-in performs
 
-| Audio |
-|-------|
-|       |
+- Plays a sine tune on render type endpoint. Captures audio on a capture type endpoint.
 
-**Requirements:**
+#### How to triage test failures
 
--   Device must have at least one render type endpoint connected (speakers, headphones, etc.).
+- Look at failing HRESULT to perform initial triage.
+- If test is not responding, use the kernel debugger on the target computer to narrow down the root-cause.
+- Run traces:
+  - Start kernel traces:
 
--   If the targeted audio device has HDMI video and audio output capability, to perform audio tests, the device must be connected to an HDMI audio capable device such as an HDMI Monitor or an A/V Receiver.
+```syntax
+xperf.exe -on LOADER+PROC_THREAD+CSWITCH+DISK_IO+HARD_FAULTS+PROFILE+INTERRUPT+NETWORKTRACE+DPC+Latency+POWER -stackwalk ProcessCreate+ProcessDelete+ImageLoad+ImageUnload+ThreadCreate+ThreadDelete+CSwitch+ReadyThread+Profile+DiskFlushInit+FileFlush+RegFlush+HardFault+VirtualAlloc+VirtualFree -BufferSize 1024 -MinBuffers 512 -MaxBuffers 1024 -f Audio_SimpleIo_Kernel.etl
+```
 
-**Type of I/O plug-in performs:**
+- Start audio traces:
 
--   Plays a sine tune on render type endpoint. Captures audio on a capture type endpoint.
+```syntax
+xperf.exe -start AudioSimpleIo -on Microsoft-Windows-Audio+a6a00efd-21f2-4a99-807e-9b3bf1d90285:0xffff:0x3 -BufferSize 1024 -MinBuffers 512 -MaxBuffers 1024 -f Audio_SimpleIo.etl
+```
 
-**How to triage test failures:**
+- Run tests.
+- Stop traces:
 
--   Look at failing HRESULT to perform initial triage.
--   If test is not responding, use the kernel debugger on the target computer to narrow down the root-cause.
--   Run traces:
+```syntax
+xperf.exe -stop "NT Kernel Logger" Audio_SimpleIo
+```
 
-    -   Start kernel traces:
+- Merge traces:
 
-        ``` syntax
-        xperf.exe -on LOADER+PROC_THREAD+CSWITCH+DISK_IO+HARD_FAULTS+PROFILE+INTERRUPT+NETWORKTRACE+DPC+Latency+POWER -stackwalk ProcessCreate+ProcessDelete+ImageLoad+ImageUnload+ThreadCreate+ThreadDelete+CSwitch+ReadyThread+Profile+DiskFlushInit+FileFlush+RegFlush+HardFault+VirtualAlloc+VirtualFree -BufferSize 1024 -MinBuffers 512 -MaxBuffers 1024 -f Audio_SimpleIo_Kernel.etl
-        ```
+```syntax
+xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Merged.etl
+```
 
-    -   Start audio traces:
+- View the merged trace file with Xperf (**xperfview**).
 
-        ``` syntax
-        xperf.exe -start AudioSimpleIo -on Microsoft-Windows-Audio+a6a00efd-21f2-4a99-807e-9b3bf1d90285:0xffff:0x3 -BufferSize 1024 -MinBuffers 512 -MaxBuffers 1024 -f Audio_SimpleIo.etl
-        ```
+## Bluetooth
 
-    -   Run tests.
-    -   Stop traces:
+### Bluetooth requirements
 
-        ``` syntax
-        xperf.exe -stop "NT Kernel Logger" Audio_SimpleIo
-        ```
+- No special requirements.
 
-    -   Merge traces:
+#### Type of I/O plug-in performs
 
-        ``` syntax
-        xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Merged.etl
-        ```
+- Uses [**BluetoothFindFirstDevice function**](/windows/desktop/api/bluetoothapis/nf-bluetoothapis-bluetoothfindfirstdevice) to find a Bluetooth device.
 
-    -   View the merged trace file with Xperf (**xperfview**).
+## CDROM
 
-### <a href="" id="-bluetooth"></a>
+### CDROM requirements
 
-| Bluetooth |
-|-----------|
-|           |
+- Drive letter is assigned.
+- Media is present in the device.
+- Files are present on the media inserted.
 
-**Requirements:**
+### Type of I/O plug-in performs (CDROM)
 
--   No special requirements.
+- Finds files on the CD-ROM and performs read operation using the Win32 [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) API.
 
-**Type of I/O plug-in performs:**
+### How to triage test failures (CDROM)
 
--   Uses [**BluetoothFindFirstDevice function**](https://msdn.microsoft.com/library/windows/desktop/aa362784) to find a Bluetooth device.
+- On the test computer, navigate to the CD/DVD drive in question and confirm you can access the contents of the drives.
+- The CD-Rom Simple I/O plug-in searches for files on CD/DVD to use to perform reads from. Ensure the CD/DVD has files encoded on disk.
+- This Simple I/O plug uses the Win32 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile), [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
 
-### <a href="" id="-cdrom"></a>
+## Disk
 
-| CDROM |
-|-------|
-|       |
+### Disk requirements
 
-**Requirements:**
+- Disk has at least one associated volume Drive letter is assigned.
 
--   Drive letter is assigned.
--   Media is present in the device.
--   Files are present on the media inserted.
+#### Type of I/O plug-in performs (Disk)
 
-**Type of I/O plug-in performs:**
+- Uses the Simple I/O plug-in for [Volumes](#volume).
 
--   Finds files on the CD-ROM and performs read operation using the Win32 [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) API.
+## Display
 
-**How to triage test failures:**
+### Display requirements
 
--   On the test computer, navigate to the CD/DVD drive in question and confirm you can access the contents of the drives.
--   The CD-Rom Simple I/O plug-in searches for files on CD/DVD to use to perform reads from. Ensure the CD/DVD has files encoded on disk.
--   This Simple I/O plug uses the Win32 [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747), [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) functions. Error returned are most likely Win32 error codes from these APIs.
+- No special requirements for testing.
 
-### <a href="" id="-disk"></a>
+### Type of I/O plug-in performs (Display)
 
-| Disk |
-|------|
-|      |
+- Uses D3DX APIs to exercise graphics adapter.
 
-**Requirements:**
+### How to triage test failures (Display)
 
--   Disk has at least one associated volume Drive letter is assigned.
+- Look through the test logs, which report failures from the APIs that are used.
 
-**Type of I/O plug-in performs:**
+## GPS devices (and GPS devices in systems)
 
--   Uses the Simple I/O plug-in for [Volumes](#-volume).
+### Requirements (GPS)
 
-### <a href="" id="-display"></a>
+- The device must be tested in a location with proper GPS signals.
 
-**Requirements:**
+### Type of I/O plug-in performs (GPS)
 
+- Uses the I/O plug-in for [Sensors](#sensors).
 
-| Display Devices |
-|-----------------|
-|                 |
+## LAN
 
--   No special requirements for testing.
+### Requirements (LAN)
 
-**Type of I/O plug-in performs:**
+- Device has an IPv6 address.
 
--   Uses D3DX APIs to exercise graphics adapter.
+- Device has an IPv6 gateway address (otherwise the WDTFREMOTESYSTEM parameter should be passed to the test with an IPv6 address that the test NIC can ping).
 
-**How to triage test failures:**
+- The network operation status of the device is IfOperStatusUp.
 
--   Look through the test logs, which report failures from the APIs that are used.
+- Network device is not a WWAN or a WLAN device.
 
-### <a href="" id="-gps"></a>
+### Type of I/O plug-in performs (LAN)
 
-| GPS devices (and GPS devices in systems) |
-|------------------------------------------|
-|                                          |
+- Pings IPv6 network gateway address.
 
-**Requirements:**
+### How to triage test failures (LAN)
 
--   The device must be tested in a location with proper GPS signals.
+- Confirm that there is an existing IP address.
+- Confirm that there is a gateway IPv6 IP Address.
+- Confirm the IP gateway address manually (use ping.exe).
 
-**Type of I/O plug-in performs:**
+## Mobile broadband
 
--   Uses the I/O plug-in for [Sensors](#-sensors).
+### Requirements (Mobile broadband)
 
-### <a href="" id="-lan"></a>
+- No special requirements for testing.
 
-| LAN |
-|-----|
-|     |
+### Type of I/O plug-in performs (Mobile broadband)
 
-**Requirements:**
+- Uses [**IMbnInterface interface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) and calls GetHomeProvider, [**IMbnInterface::GetInterfaceCapability method**](/windows/desktop/api/mbnapi/nf-mbnapi-imbninterface-getinterfacecapability), and [**IMbnInterface::GetReadyState method**](/windows/desktop/api/mbnapi/nf-mbnapi-imbninterface-getreadystate) APIs to exercise the device.
 
--   Device has an IPv6 address.
+### How to triage test failures (Mobile broadband)
 
--   Device has an IPv6 gateway address (otherwise the WDTFREMOTESYSTEM parameter should be passed to the test with an IPv6 address that the test NIC can ping).
+- The MobileBroadbandPlugin has limited areas it can fail.
 
--   The network operation status of the device is IfOperStatusUp.
+  - "MobileBroadbandPlugin: Getting all Mobile Broadband interfaces returned failure."
+  - "MobileBroadbandPlugin: Getting the interface returned failure."
+  - "MobileBroadbandPlugin: Getting the DeviceId returned."
+  - "MobileBroadbandPlugin: Getting the interface capabilities returned failure"
+  - "MobileBroadbandPlugin: Getting the ReadyState returned failure."
 
--   Network device is not a WWAN or a WLAN device.
+- The best place to investigate the failure is starting from the device and determine if it was unable to indicate Ready Information or Device Capabilities. To debug further OS Trace file need to be collected.
 
-**Type of I/O plug-in performs:**
+  - Run the command: **netsh trace start wwan\_dbg**
+  - Reproduce the issue.
+  - Run the command: **netsh trace stop**
 
--   Pings IPv6 network gateway address.
+## Portable devices
 
-**How to triage test failures:**
+### Requirements (Portable devices)
 
--   Confirm that there is an existing IP address.
--   Confirm that there is a gateway IPv6 IP Address.
--   Confirm the IP gateway address manually (use ping.exe).
+- Device has a storage component where folders and files can be created.
 
-### <a href="" id="-mobile-broadband"></a>
+### Type of I/O plug-in performs (Portable devices)
 
-| Mobile Broadband |
-|------------------|
-|                  |
+- Reads and writes a file to the storage component on WPD device using WPD APIs.
 
-**Requirements:**
+## Smart card readers
 
--   No special requirements for testing.
+### Requirements (Smart card readers)
 
-**Type of I/O plug-in performs:**
+- Device has Athena T0 test card inserted.
 
--   Uses [**IMbnInterface interface**](https://msdn.microsoft.com/library/windows/desktop/dd430406) and calls GetHomeProvider, [**IMbnInterface::GetInterfaceCapability method**](https://msdn.microsoft.com/library/windows/desktop/dd323100), and [**IMbnInterface::GetReadyState method**](https://msdn.microsoft.com/library/windows/desktop/dd323102) APIs to exercise the device.
+### Type of I/O plug-in performs (Smart card readers)
 
-**How to triage test failures:**
+- Reads and writes data to Athena T0 card inserted in the card reader.
 
--   The MobileBroadbandPlugin has limited areas it can fail.
+## Sensors
 
-    -   "MobileBroadbandPlugin: Getting all Mobile Broadband interfaces returned failure."
-    -   "MobileBroadbandPlugin: Getting the interface returned failure."
-    -   "MobileBroadbandPlugin: Getting the DeviceId returned."
-    -   "MobileBroadbandPlugin: Getting the interface capabilities returned failure"
-    -   "MobileBroadbandPlugin: Getting the ReadyState returned failure."
+### Requirements (Sensors)
 
--   The best place to investigate the failure is starting from the device and determine if it was unable to indicate Ready Information or Device Capabilities. To debug further OS Trace file need to be collected.
+- The GPS device must be tested in a location with proper GPS signals.
 
-    -   Run the command: **netsh trace start wwan\_dbg**
-    -   Reproduce the issue.
-    -   Run the command: **netsh trace stop**
+## Volume
 
-### <a href="" id="-portable-devices"></a>
+### Requirements (Volume)
 
-| Portable Devices |
-|------------------|
-|                  |
+- Volume has a drive letter assigned.
+- Volume has 5MB of free space.
+- Volume is not write-protected.
+- Media is present in the device.
 
-**Requirements:**
+### Type of I/O plug-in performs (Volume)
 
--   Device has a storage component where folders and files can be created.
+- Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) APIs to this file.
 
-**Type of I/O plug-in performs:**
+### How to triage test failures (Volume)
 
--   Reads and writes a file to the storage component on WPD device using WPD APIs.
+- On the test computer, navigate to the drive in question and confirm you can access the contents of the drive.
+- Attempt to save a file to the drive. Ensure you can save and access it readily.
+- This Simple I/O plug uses the Win32 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile), [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
 
-### <a href="" id="-smartcard"></a>
+## Webcam
 
-| Smart Card Readers |
-|--------------------|
-|                    |
+### Requirements (Webcam)
 
-**Requirements:**
+- No special requirements for testing.
 
--   Device has Athena T0 test card inserted.
+    > [!NOTE]
+    > The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. The Media Feature Pack is available for download. For more information, see [KB Article 968211](https://go.microsoft.com/fwlink/p/?linkid=266437).
 
-**Type of I/O plug-in performs:**
+### Type of I/O plug-in performs (Webcam)
 
--   Reads and writes data to Athena T0 card inserted in the card reader.
+- Uses Media Foundation interfaces to capture video.
 
-### <a href="" id="-sensors"></a>
+## WLAN
 
-| Sensors |
-|---------|
-|         |
+### Requirements (WLAN)
 
-**Requirements:**
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
 
--   The GPS device must be tested in a location with proper GPS signals.
+### Type of I/O plug-in performs (WLAN)
 
-### <a href="" id="-volume"></a>
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
 
-| Volume |
-|--------|
-|        |
+### How to triage test failures (WLAN)
 
-**Requirements:**
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
 
--   Volume has a drive letter assigned.
--   Volume has 5MB of free space.
--   Volume is not write-protected.
--   Media is present in the device.
+## USB Controller and HUB with Mutt
 
-**Type of I/O plug-in performs:**
+### Requirements (USB)
 
--   Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) and [**WriteFile**](https://msdn.microsoft.com/library/aa365747) APIs to this file.
-
-**How to triage test failures:**
-
--   On the test computer, navigate to the drive in question and confirm you can access the contents of the drive.
--   Attempt to save a file to the drive. Ensure you can save and access it readily.
--   This Simple I/O plug uses the Win32 [**CreateFile**](https://msdn.microsoft.com/library/windows/desktop/aa363858), [**WriteFile**](https://msdn.microsoft.com/library/windows/desktop/aa365747), [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) functions. Error returned are most likely Win32 error codes from these APIs.
-
-### <a href="" id="-webcam"></a>
-
-| Webcam |
-|--------|
-|        |
-
-**Requirements:**
-
--   No special requirements for testing.
-
-    **Note**  The Simple I/O plug-in for webcam devices has a dependency on the MFPlat.dll file, which is not available on versions of Windows that do not include Media Player and related technologies, for example Windows 7 N or Windows 7 KN. On these version of Windows, the Media Feature Pack must be installed. The Media Feature Pack is available for download. For more information, see [KB Article 968211](https://go.microsoft.com/fwlink/p/?linkid=266437).
-
-
-
-**Type of I/O plug-in performs:**
-
--   Uses Media Foundation interfaces to capture video.
-
-### <a href="" id="-wlan"></a>
-
-| WLAN |
-|------|
-|      |
-
-**Requirements:**
-
--   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
-
-**Type of I/O plug-in performs:**
-
--   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
-
-**How to triage test failures:**
-
--   See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
-
-### <a href="" id="-usb-mutt"></a>
-
-| USB Controller and HUB with Mutt |
-|----------------------------------|
-|                                  |
-
-**Requirements:**
-
--   No special requirements for testing.
+- No special requirements for testing.
 
     Device has a Symbolic link.
 
-**Type of I/O plug-in performs:**
+### Type of I/O plug-in performs (USB)
 
--   USB transfer tests using the Microsoft USB Test Tool (MUTT) device. Transfer types covered are control, bulk, isochronous, interrupt, and streams (only if SuperMUTT is plugged into USB 3.0 controller)
+- USB transfer tests using the Microsoft USB Test Tool (MUTT) device. Transfer types covered are control, bulk, isochronous, interrupt, and streams (only if SuperMUTT is plugged into USB 3.0 controller)
 
-**How to triage test failures:**
+### How to triage test failures (USB)
 
--   Start by examining the messages in the test log files.
--   Further investigate by enabling Event Tracing for Windows (ETW) on the USB 2.0 and USB 3.0 stacks.
-    -   For USB 2.0, see Microsoft Windows USB Core Team Blog - [ETW in the Windows 7 USB core stack](https://go.microsoft.com/fwlink/p/?linkid=266442)
-    -   For USB 3.0, see the Microsoft Windows USB Core Team Blog - [How to Capture and Read USB ETW Traces in Windows 8]( https://go.microsoft.com/fwlink/p/?linkid=266443)
+- Start by examining the messages in the test log files.
+- Further investigate by enabling Event Tracing for Windows (ETW) on the USB 2.0 and USB 3.0 stacks.
+  - For USB 2.0, see Microsoft Windows USB Core Team Blog - [ETW in the Windows 7 USB core stack](https://go.microsoft.com/fwlink/p/?linkid=266442)
+  - For USB 3.0, see the Microsoft Windows USB Core Team Blog - [How to Capture and Read USB ETW Traces in Windows 8]( https://go.microsoft.com/fwlink/p/?linkid=266443)
 
 ## Device Fundamental tests that have specific device configuration requirements
 
+Before you run the following [Device Fundamental tests](/windows-hardware/drivers), the devices on the test computer must be configured according to the requirements described in this topic for the specific device types.
 
-Before you run the following [Device Fundamental tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests), the devices on the test computer must be configured according to the requirements described for the specific device types. See the list of [the provided Simple I/O plug-ins and device requirements.](#-provided-io-plugin-list)
-
--   PCI Root Port Surprise Remove Test (PCI devices only)
--   Device Path Exerciser Test (Certification)
--   Sleep and PNP (disable and enable) with IO Before and After (Certification)
--   Plug and Play Driver Test (Certification)
--   Concurrent Hardware And Operating System (CHAOS) Test (Certification)
--   Reinstall with IO Before and After (Certification)
--   Device Install Check For File System Consistency (Certification)
--   Device Install Check For Other Device Stability (Certification)
+- PCI Root Port Surprise Remove Test (PCI devices only)
+- Device Path Exerciser Test (Certification)
+- Sleep and PNP (disable and enable) with IO Before and After (Certification)
+- Plug and Play Driver Test (Certification)
+- Concurrent Hardware And Operating System (CHAOS) Test (Certification)
+- Reinstall with IO Before and After (Certification)
+- Device Install Check For File System Consistency (Certification)
+- Device Install Check For Other Device Stability (Certification)
 
 ## Related topics
-[Device Fundamentals Tests](https://msdn.microsoft.com/library/windows/hardware/jj673011)  
-[How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)  
-[How to How to test a driver at runtime from a Command Prompt](https://msdn.microsoft.com/windows-drivers/develop/how_to_test_a_driver_at_runtime_from_a_command_prompt)  
-[How to select and configure the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)  
-[Troubleshooting the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/troubleshooting_the_device_fundamental_tests)  
 
+[Device Fundamentals Tests](../devtest/device-fundamentals-tests.md)  
 
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)  
 
+[How to How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)  
+
+[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)  
+
+[Troubleshooting the Device Fundamentals tests](/windows-hardware/drivers)

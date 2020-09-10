@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Any driver that has an ISR typically also has at least one [*DpcForIsr*](https://msdn.microsoft.com/library/windows/hardware/ff544079) or [*CustomDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542972) routine to complete processing of interrupt-driven I/O operations. A typical lowest-level driver's *DpcForIsr* or *CustomDpc* routine does the following:
+Any driver that has an ISR typically also has at least one [*DpcForIsr*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_dpc_routine) or [*CustomDpc*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine) routine to complete processing of interrupt-driven I/O operations. A typical lowest-level driver's *DpcForIsr* or *CustomDpc* routine does the following:
 
 -   Finishes handling an I/O operation that the ISR began processing.
 
@@ -28,9 +28,4 @@ A *DpcForIsr* or *CustomDpc* routine is called in an arbitrary DPC context at IR
 DPC objects and DPCs can also be used with timers. For more information, see [Timer Objects and DPCs](timer-objects-and-dpcs.md).
 
  
-
- 
-
-
-
 

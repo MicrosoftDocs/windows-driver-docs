@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # eulaHeaderTitle XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **eulaHeaderTitle** XML element customizes the text of the EULA header title that appears directly below the title bar on a DPInst EULA page.
 
@@ -83,11 +83,4 @@ If a **eulaHeaderTitle** element is not specified, DPInst displays the default E
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

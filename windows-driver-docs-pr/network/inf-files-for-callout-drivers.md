@@ -13,22 +13,21 @@ ms.localizationpriority: medium
 
 # INF Files for Callout Drivers
 
-
 A Windows Filtering Platform callout driver is installed by a setup information file (INF) file. INF files for callout drivers contain only the following INF file sections:
 
-[**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502)
+[**INF Version Section**](../install/inf-version-section.md)
 
-[**INF SourceDisksNames Section**](https://msdn.microsoft.com/library/windows/hardware/ff547478)
+[**INF SourceDisksNames Section**](../install/inf-sourcedisksnames-section.md)
 
-[**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472)
+[**INF SourceDisksFiles Section**](../install/inf-sourcedisksfiles-section.md)
 
-[**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383)
+[**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md)
 
-[**INF DefaultInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547356)
+[**INF DefaultInstall Section**](../install/inf-defaultinstall-section.md)
 
-[**INF DefaultInstall.Services Section**](https://msdn.microsoft.com/library/windows/hardware/ff547360)
+[**INF DefaultInstall.Services Section**](../install/inf-defaultinstall-services-section.md)
 
-[**INF Strings Section**](https://msdn.microsoft.com/library/windows/hardware/ff547485)
+[**INF Strings Section**](../install/inf-strings-section.md)
 
 For example:
 
@@ -78,9 +77,9 @@ ErrorControl = 1 ; SERVICE_ERROR_NORMAL
 ServiceBinary = %12%\ExampleCalloutDriver.sys
 
 [Strings]
-%Msft% = "Microsoft Corporation"
-%DiskName% = "Example Callout Driver Installation Disk"
-%Description% = "Example Callout Driver"
-%ServiceName% = "ExampleCalloutDriver"
-%ServiceDesc% = "Example Callout Driver"
+Msft = "Microsoft Corporation"
+DiskName = "Example Callout Driver Installation Disk"
+Description = "Example Callout Driver"
+ServiceName = "ExampleCalloutDriver"
+ServiceDesc = "Example Callout Driver"
 ```

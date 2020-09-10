@@ -46,15 +46,15 @@ The following table lists all the argument type specifiers.
 </tr>
 <tr class="even">
 <td><p>%C</p></td>
-<td><p>Binary byte added to ASCII &quot;0&quot;.</p></td>
+<td><p>Binary byte added to ASCII "0".</p></td>
 </tr>
 <tr class="odd">
 <td><p>%f</p></td>
-<td><p>Unsigned ASCII string representing a decimal value, with a decimal point inserted as the third character from the right, as in &quot;12.25&quot;.</p></td>
+<td><p>Unsigned ASCII string representing a decimal value, with a decimal point inserted as the third character from the right, as in "12.25".</p></td>
 </tr>
 <tr class="even">
 <td><p>%g</p></td>
-<td><p>2 * ABS(<em>Parameter</em>) + IS_NEGATIVE(<em>Parameter</em>) as a base-64 number, least significant digit to most significant digit. The most significant digit (0-63) is represented by bytes 191 through 254. All other digits are represented by bytes 63 through 126. &quot;IS_NEGATIVE(<em>Parameter</em>)&quot; is 1 if <em>Parameter</em> is negative, and zero otherwise.</p></td>
+<td><p>2 * ABS(<em>Parameter</em>) + IS_NEGATIVE(<em>Parameter</em>) as a base-64 number, least significant digit to most significant digit. The most significant digit (0-63) is represented by bytes 191 through 254. All other digits are represented by bytes 63 through 126. "IS_NEGATIVE(<em>Parameter</em>)" is 1 if <em>Parameter</em> is negative, and zero otherwise.</p></td>
 </tr>
 <tr class="odd">
 <td><p>%l</p></td>
@@ -74,7 +74,7 @@ The following table lists all the argument type specifiers.
 </tr>
 <tr class="odd">
 <td><p>%v</p></td>
-<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable&#39;s value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
+<td><p>NEC VFU (Vertical Format Unit) encoding. The specified variable's value is divided by 1/6 inch. The result is the number of times VFU data is sent to the printer.</p></td>
 </tr>
 </tbody>
 </table>

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Describing Extended Sample Information in AVStream Codecs
 
 
-Decoder filters can find extended sample information in the extended [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structure [**KS\_FRAME\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567645), which follows KSSTREAM\_HEADER in memory.
+Decoder filters can find extended sample information in the extended [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure [**KS\_FRAME\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_frame_info), which follows KSSTREAM\_HEADER in memory.
 
 The driver must propagate information specified in KSSTREAM\_HEADER.OptionsFlags from input (source) to output (destination) KS pins.
 
@@ -20,9 +20,4 @@ Encoders should include extended sample information in the extended KSSTREAM\_HE
 Surface stride is specified in KS\_FRAME\_INFO's lSurfacePitch member (union with **Reserved1** member). For more information about surface stride, see [Handling Stride in AVStream Codecs](handling-stride-in-avstream-codecs.md).
 
  
-
- 
-
-
-
 

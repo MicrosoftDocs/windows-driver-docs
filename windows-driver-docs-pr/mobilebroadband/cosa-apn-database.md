@@ -1,12 +1,12 @@
 ---
-title: COSA/APN database
-description: COSA/APN database
+title: Introduction to COSA/APN database
+description: Introduction to COSA/APN database
 ms.assetid: 0E3DA610-090D-4D1E-B67E-A4747252E8BE
-ms.date: 06/23/2017
+ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---
 
-# COSA/APN database
+# Introduction to COSA/APN database
 
 This section contains information about both COSA and apndatabase.xml (APN database). COSA is a newer format used in Windows 10, version 1703 and later, while APN database is used for Windows 8, Windows 8.1, and versions of Windows 10 before Windows 10, version 1703.
 
@@ -20,5 +20,5 @@ The following topics present further information about APNs, COSA, and APN datab
 - [APN elements](apn-elements.md)
 - [COSA overview](cosa-overview.md)
 - [APN database overview](apn-database-overview.md)
-- [COSA/APN database submission](cosa-apn-database-submission.md)
+- [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md)
 

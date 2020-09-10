@@ -1,5 +1,5 @@
 ---
-Description: Supported Property Retrieval
+description: Supported Property Retrieval
 title: Supported Property Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -45,7 +45,7 @@ HRESULT WpdObjectProperties::OnGetSupportedProperties(
     if (hr == S_OK)
     {
         hr = AddSupportedPropertyKeys(wszObjectID, pKeys);
-        CHECK_HR(hr, "Failed to add supported property keys for object &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to add supported property keys for object '%ws'", wszObjectID);
     }
 
     // Set the WPD_PROPERTY_OBJECT_PROPERTIES_PROPERTY_KEYS value in the results.

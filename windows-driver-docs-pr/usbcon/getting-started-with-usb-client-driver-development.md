@@ -1,11 +1,11 @@
 ---
-Description: This section introduces you to USB driver development.
-title: Getting started with USB client driver development
+description: This section introduces you to USB driver development.
+title: First steps for USB client driver development
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Getting started with USB client driver development
+# First steps for USB client driver development
 
 
 This section introduces you to USB driver development. The section applies to you if you are new to driver development; want to implement a driver for a USB device, for which Microsoft does not provide an in-box driver. Such a driver is termed as a *USB client driver* in this documentation set. The topics in this section describe high-level USB concepts and provide step-by-step instructions about performing common tasks of a USB client driver. For detailed information about those concepts, see USB specifications at [USB Documents](https://go.microsoft.com/fwlink/p/?linkid=617552).
@@ -29,7 +29,7 @@ As a driver developer, you must have coding experience in the C programming lang
 <tbody>
 <tr class="odd">
 <td><p><strong>Step 1</strong>—Read the <a href="https://go.microsoft.com/fwlink/p/?linkid=617552" data-raw-source="[Official USB specification version 2.0 and 3.0](https://go.microsoft.com/fwlink/p/?linkid=617552)">Official USB specification version 2.0 and 3.0</a>.</p></td>
-<td>Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It&#39;s important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects.</td>
+<td>Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It's important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects.</td>
 </tr>
 <tr class="even">
 <td><p><strong>Step 2</strong>—Obtain a test USB device.</p></td>
@@ -51,10 +51,10 @@ As a driver developer, you must have coding experience in the C programming lang
 <td><p><strong>Step 5</strong>—Familiarize yourself with the Microsoft-provided USB driver stack and driver development concepts.</p>
 <ul>
 <li><a href="usb-3-0-driver-stack-architecture.md" data-raw-source="[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)">USB host-side drivers in Windows</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/ff554731" data-raw-source="[Concepts for All Driver Developers](https://msdn.microsoft.com/library/windows/hardware/ff554731)">Concepts for All Driver Developers</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers" data-raw-source="[Concepts for All Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)">Concepts for All Driver Developers</a></li>
 <li><a href="usb-concepts-for-all-developers.md" data-raw-source="[Concepts for all USB developers](usb-concepts-for-all-developers.md)">Concepts for all USB developers</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/ff554721" data-raw-source="[Device nodes and device stacks](https://msdn.microsoft.com/library/windows/hardware/ff554721)">Device nodes and device stacks</a></li>
-<li><em>Developing Drivers with Windows Driver Foundation</em>, written by Penny Orwick and Guy Smith. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn605830" data-raw-source="[Developing Drivers with WDF](https://msdn.microsoft.com/library/windows/hardware/dn605830)">Developing Drivers with WDF</a>.</li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks" data-raw-source="[Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)">Device nodes and device stacks</a></li>
+<li><em>Developing Drivers with Windows Driver Foundation</em>, written by Penny Orwick and Guy Smith. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/developing-drivers-with-wdf" data-raw-source="[Developing Drivers with WDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/developing-drivers-with-wdf)">Developing Drivers with WDF</a>.</li>
 <li><a href="usb-driver-samples-in-wdk.md" data-raw-source="[USB driver samples](usb-driver-samples-in-wdk.md)">USB driver samples</a></li>
 </ul></td>
 <td><ul>
@@ -68,12 +68,12 @@ As a driver developer, you must have coding experience in the C programming lang
 <ul>
 <li><a href="https://go.microsoft.com/fwlink/p/?linkid=617580" data-raw-source="[Install the latest Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?linkid=617580)">Install the latest Windows Driver Kit (WDK)</a>.</li>
 <li><a href="https://go.microsoft.com/fwlink/p/?linkid=617580" data-raw-source="[Install Microsoft Visual Studio 2012](https://go.microsoft.com/fwlink/p/?linkid=617580)">Install Microsoft Visual Studio 2012</a>.</li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh450944" data-raw-source="[Get Set Up for Debugging](https://msdn.microsoft.com/library/windows/hardware/hh450944)">Get Set Up for Debugging</a>.</li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-set-up-for-debugging" data-raw-source="[Get Set Up for Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-set-up-for-debugging)">Get Set Up for Debugging</a>.</li>
 <li>Make sure that you have the <a href="headers-and-libraries-for-a-usb-client-driver.md" data-raw-source="[Headers and libraries required by a USB client driver](headers-and-libraries-for-a-usb-client-driver.md)">Headers and libraries required by a USB client driver</a>.</li>
 </ul></td>
 <td><ul>
 <li>If you are writing a kernel-mode driver, you should have configured debugging on host and target computers over an Ethernet network, 1394 cable, USB 2.0 or 3.0 debug cable, or a null-modem cable.</li>
-<li>If you are writing a user-mode driver, you can use the user-mode debuggers available in the Microsoft Visual Studio environment. You should know <a href="https://msdn.microsoft.com/library/windows/hardware/hh406273" data-raw-source="[how to attach to a process or launch a process under the debugger](https://msdn.microsoft.com/library/windows/hardware/hh406273)">how to attach to a process or launch a process under the debugger</a>.</li>
+<li>If you are writing a user-mode driver, you can use the user-mode debuggers available in the Microsoft Visual Studio environment. You should know <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-user-mode-process-using-visual-studio" data-raw-source="[how to attach to a process or launch a process under the debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-user-mode-process-using-visual-studio)">how to attach to a process or launch a process under the debugger</a>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -90,7 +90,7 @@ As a driver developer, you must have coding experience in the C programming lang
 </tr>
 <tr class="odd">
 <td><p><strong>Step 9</strong>—Extend your driver to use WDF USB I/O target objects to perform USB data transfers. <a href="usb-device-i-o.md" data-raw-source="[USB data transfers](usb-device-i-o.md)">USB data transfers</a>.</p></td>
-<td><p>Extend your driver to perform common tasks. This topic lists the &quot;How to&quot; topics in this documentation set that provide step-by-step guidance about those tasks.</p>
+<td><p>Extend your driver to perform common tasks. This topic lists the "How to" topics in this documentation set that provide step-by-step guidance about those tasks.</p>
 <ul>
 <li><a href="wdk-resources-for-usb-driver-development.md" data-raw-source="[Common tasks for USB client drivers](wdk-resources-for-usb-driver-development.md)">Common tasks for USB client drivers</a></li>
 </ul></td>
@@ -116,7 +116,7 @@ Miscellaneous resources based on frequently asked questions from developers who 
 [Download the latest tools for driver development](https://go.microsoft.com/fwlink/p/?linkid=617585), ensure that your product is reliable and compatible with Windows through the [Windows Certification Program](https://go.microsoft.com/fwlink/p/?linkid=617591), learn [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507).
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
 [How to enable USB selective suspend and system wake in the UMDF driver for a USB device](https://go.microsoft.com/fwlink/p/?linkid=617587)  
 [USB Driver Development Guide](usb-driver-development-guide.md)  
 

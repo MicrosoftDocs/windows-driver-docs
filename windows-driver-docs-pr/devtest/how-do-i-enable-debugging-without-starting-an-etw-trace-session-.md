@@ -35,8 +35,8 @@ If you are using the kernel debugger, set the level and flag values for the WPP 
     +0x008 Next : (null) 
     +0x010 Logger : 0
     +0x018 RegistryPath : (null) 
-    +0x01c FlagsLen : 0x1 &#39;&#39;
-    +0x01d Level : 0x0 &#39;&#39;    <--- Set the Level
+    +0x01c FlagsLen : 0x1 ''
+    +0x01d Level : 0x0 ''    <--- Set the Level
     +0x01e Reserved : 0
     +0x020 Flags : [1] 0x0  <--- Set the Flag
     ```

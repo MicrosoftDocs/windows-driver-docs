@@ -18,9 +18,10 @@ typedef UINT16 WDI_FRAME_ID;
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+
 

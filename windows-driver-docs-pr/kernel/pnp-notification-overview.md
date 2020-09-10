@@ -25,7 +25,7 @@ The PnP manager provides a mechanism for drivers and applications to be notified
     <a href="" id="guid-device-interface-removal"></a>GUID\_DEVICE\_INTERFACE\_REMOVAL  
     Indicates that a device interface of the specified class has been disabled.
 
-    See [**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506) and related routines for more information about device interfaces.
+    See [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface) and related routines for more information about device interfaces.
 
 -   **EventCategoryTargetDeviceChange**
 
@@ -62,13 +62,13 @@ The PnP manager provides a mechanism for drivers and applications to be notified
 
 PnP notification works as follows for kernel-mode components:
 
-1.  A driver registers for notification on a category of events by calling [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526).
+1.  A driver registers for notification on a category of events by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
 
     A PnP notification callback routine remains registered until the driver explicitly removes the registration.
 
 2.  The PnP manager calls the driver's callback routine when an event in the registered category occurs.
 
-3.  The driver removes the callback registration by calling [**IoUnregisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff550398).
+3.  The driver removes the callback registration by calling [**IoUnregisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification).
 
 Drivers must not generate a synchronous event or wait for an asynchronous event to occur during the processing of a close.
 
@@ -85,9 +85,4 @@ For further information about PnP notification, see the following sections:
 [Using PnP Custom Notification](using-pnp-custom-notification.md)
 
  
-
- 
-
-
-
 

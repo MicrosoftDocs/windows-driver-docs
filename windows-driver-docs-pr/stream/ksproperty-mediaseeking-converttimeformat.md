@@ -47,7 +47,7 @@ The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>None</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566726" data-raw-source="[&lt;strong&gt;KSP_TIMEFORMAT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566726)"><strong>KSP_TIMEFORMAT</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat" data-raw-source="[&lt;strong&gt;KSP_TIMEFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)"><strong>KSP_TIMEFORMAT</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -58,7 +58,7 @@ The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified 
 Remarks
 -------
 
-Also see [KS Properties](https://msdn.microsoft.com/library/windows/hardware/ff567671).
+Also see [KS Properties](./ks-properties.md).
 
 Requirements
 ------------
@@ -79,16 +79,9 @@ Requirements
 ## See also
 
 
-[**KSP\_TIMEFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff566726)
+[**KSP\_TIMEFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_timeformat)
 
 [KSPROPSETID\_MediaSeeking](kspropsetid-mediaseeking.md)
 
  
-
- 
-
-
-
-
-
 

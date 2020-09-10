@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !ndiskd.nbllog
 
 
-The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)) activity on the system.
+The **!ndiskd.nbllog** extension displays the log of all NBL ([**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)) activity on the system.
 
 ```console
 !ndiskd.nbllog [-stacks] 
@@ -96,31 +96,23 @@ After you have enabled NBL tracking on the target debugee machine, enter the **!
     Rerun with the '-force' option to bypass this limit.
 ```
 
-For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176) on the NDIS blog.
+For a more detailed description of how to interpret the results of **!ndiskd.nbllog**, see [!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log) on the NDIS blog.
 
 ## <span id="see_also"></span>See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/windows/hardware/drivers/network/net-buffer-list-structure)
+[**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)
 
-[!ndiskd.nbl -log](https://go.microsoft.com/fwlink/p/?linkid=846176)
-
- 
+[!ndiskd.nbl -log](/archive/blogs/ndis/ndiskd-nbl-log)
 
  
-
-
-
-
-
 

@@ -17,11 +17,11 @@ ms.localizationpriority: medium
 # Creating WDTF Scenarios
 
 
-You can begin your WDTF-based scenarios by creating an instance of the [**IWDTF2**](https://msdn.microsoft.com/library/windows/hardware/ff539628) aggregation interface, which contains [**DeviceDepot**](https://msdn.microsoft.com/library/windows/hardware/hh406304) and [**SystemDepot**](https://msdn.microsoft.com/library/windows/hardware/hh406309) properties.
+You can begin your WDTF-based scenarios by creating an instance of the [**IWDTF2**](/windows-hardware/drivers/ddi/index) aggregation interface, which contains [**DeviceDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_devicedepot) and [**SystemDepot**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtf2-get_systemdepot) properties.
 
-To collect one or more target objects, use the [**IWDTFDeviceDepot2**](https://msdn.microsoft.com/library/windows/hardware/hh406391) interface, and use the **Query** method with the [Simple Data Evaluation Language](simple-data-evaluation-language-overview.md) (SDEL).
+To collect one or more target objects, use the [**IWDTFDeviceDepot2**](/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfdevicedepot2) interface, and use the **Query** method with the [Simple Data Evaluation Language](simple-data-evaluation-language-overview.md) (SDEL).
 
-A script might also examine specific targets by using the [**IWDTFTarget2::Eval**](https://msdn.microsoft.com/library/windows/hardware/hh439396) method. After you choose the targets, control them by using [one or more action interfaces](controlling-targets.md).
+A script might also examine specific targets by using the [**IWDTFTarget2::Eval**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-eval) method. After you choose the targets, control them by using [one or more action interfaces](controlling-targets.md).
 
 Before you start to develop WDTF scenarios, you must install WDTF. See [WDTF Quick Start](wdtf-quick-start-.md) for more information.
 
@@ -47,13 +47,13 @@ You can run this scenario by running **CScript.exe WDTF\_Sample1.vbs**.
 
 ### Storing Target Information by Using Context
 
-Some programming languages, such as VBScript, do not easily manage object references. To simplify this management in WDTF, each target provides a [**Context**](https://msdn.microsoft.com/library/windows/hardware/hh439393) property that you can use to store arbitrary key/value pairs, including references to active objects. This property is especially useful for storing action interfaces so you can use them later. The following VBScript code example stores an [**IWDTFSimpleIOStressAction2**](https://msdn.microsoft.com/library/windows/hardware/hh451157) action within a named **Context** item.
+Some programming languages, such as VBScript, do not easily manage object references. To simplify this management in WDTF, each target provides a [**Context**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-put_context) property that you can use to store arbitrary key/value pairs, including references to active objects. This property is especially useful for storing action interfaces so you can use them later. The following VBScript code example stores an [**IWDTFSimpleIOStressAction2**](/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2) action within a named **Context** item.
 
 ```cpp
 deviceObj.Context("IWDTFSimpleIOStressAction2") = SimpleIOObj
 ```
 
-Later, your scenario can stop, pause, or restart the [**IWDTFSimpleIOStressAction2**](https://msdn.microsoft.com/library/windows/hardware/hh451157) interface by accessing it through [**Context**](https://msdn.microsoft.com/library/windows/hardware/hh439393) again, as the following code example shows.
+Later, your scenario can stop, pause, or restart the [**IWDTFSimpleIOStressAction2**](/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2) interface by accessing it through [**Context**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-put_context) again, as the following code example shows.
 
 ```cpp
 Device.Context("IWDTFSimpleIOStressAction2").Stop
@@ -69,12 +69,7 @@ Device-type targets include an **IsPhantom** attribute (and **IsAttached** attri
 Set NonPhantomDevices = WDTF.DeviceDepot.Query ("IsAttached")
 ```
 
-For more attribute keywords, see [SDEL Tokens](https://msdn.microsoft.com/library/windows/hardware/ff539571).
+For more attribute keywords, see [SDEL Tokens](/windows-hardware/drivers/ddi/index).
 
  
-
- 
-
-
-
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_CDROM
 
 
-The GUID_DEVINTERFACE_CDROM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for CD-ROM [storage devices](https://msdn.microsoft.com/library/windows/hardware/ff566969).
+The GUID_DEVINTERFACE_CDROM [device interface class](./overview-of-device-interface-classes.md) is defined for CD-ROM [storage devices](../storage/index.md).
 
 <table>
 <colgroup>
@@ -54,7 +54,7 @@ The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the W
 
 For information about the device interface class for CD-ROM changer devices, see [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md).
 
-For information about storage devices, see [Storage Drivers](https://msdn.microsoft.com/library/windows/hardware/ff566976).
+For information about storage devices, see [Storage Drivers](../storage/storage-drivers.md).
 
 Requirements
 ------------
@@ -80,11 +80,4 @@ Requirements
 [**GUID_DEVINTERFACE_CDCHANGER**](guid-devinterface-cdchanger.md)
 
  
-
- 
-
-
-
-
-
 

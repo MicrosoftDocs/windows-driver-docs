@@ -35,7 +35,7 @@ Every Storport miniport driver must notify the system port driver about the foll
 
 For a data underrun, the miniport driver must update the SRB's **DataTransferLength** to indicate how much data actually was transferred.
 
-In addition, the miniport driver should use the following guidelines to log some of the preceding errors by passing the SRB to [**StorPortLogError**](https://msdn.microsoft.com/library/windows/hardware/ff567426):
+In addition, the miniport driver should use the following guidelines to log some of the preceding errors by passing the SRB to [**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror):
 
 Log an error at the discretion of the driver writer for SRB\_STATUS\_ERROR.
 
@@ -53,7 +53,7 @@ Always log an error for SRB\_STATUS\_PHASE\_SEQUENCE\_FAILURE.
 
 Always log an error for SRB\_STATUS\_BUSY for hardware errors.
 
-To log an error, a miniport driver calls [**StorPortLogError**](https://msdn.microsoft.com/library/windows/hardware/ff567426) by using one of the following system-defined error or warning codes:
+To log an error, a miniport driver calls [**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror) by using one of the following system-defined error or warning codes:
 
 SP\_BUS\_PARITY\_ERROR maps to SRB\_STATUS\_PARITY\_ERROR
 
@@ -75,12 +75,7 @@ SP\_BAD\_FW\_ERROR where FW is *firmware*)
 
 SP\_BAD\_FW\_WARNING
 
-[**StorPortLogError**](https://msdn.microsoft.com/library/windows/hardware/ff567426) allocates an error-log packet, sets it up, and logs the I/O error in the event log on behalf of the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.
+[**StorPortLogError**](/windows-hardware/drivers/ddi/storport/nf-storport-storportlogerror) allocates an error-log packet, sets it up, and logs the I/O error in the event log on behalf of the miniport driver. System administrators or users can monitor the condition of an HBA by examining the system event log and, if necessary, reconfiguring, repairing, or replacing the HBA before it fails.
 
  
-
- 
-
-
-
 

@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 
 To ensure the quality and integrity of the driver, a PSHED plug-in must be digitally signed. Platform vendors must follow these guidelines when digitally signing a PSHED plug-in:
 
--   To minimize the system startup time, we recommend embedding an [Authenticode](https://msdn.microsoft.com/library/windows/hardware/ff686697) digital signature into the PSHED plug-in file. For more information about this procedure, see [Release-Signing a Driver through an Embedded Signature](https://msdn.microsoft.com/library/windows/hardware/ff549832).
+-   To minimize the system startup time, we recommend embedding an [Authenticode](../install/authenticode.md) digital signature into the PSHED plug-in file. For more information about this procedure, see [Release-Signing a Driver through an Embedded Signature](../install/release-signing-a-driver-through-an-embedded-signature.md).
 
--   Before the hardware platform can undergo additional verification through the server logo testing process, the plug-in's [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) must have a Windows Hardware Quality Labs (WHQL) digital signature. To obtain this digital signature, you must test and submit the driver package by using the WHQL Unclassified test category.
+-   Before the hardware platform can undergo additional verification through the server logo testing process, the plug-in's [driver package](../install/driver-packages.md) must have a Windows Hardware Quality Labs (WHQL) digital signature. To obtain this digital signature, you must test and submit the driver package by using the WHQL Unclassified test category.
 
-    **Note**  You must obtain a WHQL digital signature for the driver package regardless of whether the PSHED plug-in was embedded with an [Authenticode](https://msdn.microsoft.com/library/windows/hardware/ff686697) digital signature.
+    **Note**  You must obtain a WHQL digital signature for the driver package regardless of whether the PSHED plug-in was embedded with an [Authenticode](../install/authenticode.md) digital signature.
 
      
 
-For more information about how to digitally sign a PSHED plug-in, see [Signing Drivers for Public Release](https://msdn.microsoft.com/library/windows/hardware/ff552289).
+For more information about how to digitally sign a PSHED plug-in, see [Signing Drivers for Public Release](../install/signing-drivers-for-public-release--windows-vista-and-later-.md).
 
 After a PSHED plug-in has obtained a WHQL digital signature, the plug-in can be used in any system for which you request a system logo certification. For more information about the server logo certification process, see [Windows Logo Program](https://go.microsoft.com/fwlink/p/?linkid=26144).
 
@@ -36,9 +36,4 @@ PSHED plug-ins should be distributed to customers by hardware vendors in a manne
  
 
  
-
- 
-
-
-
 

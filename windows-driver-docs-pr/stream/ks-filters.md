@@ -29,9 +29,9 @@ Another device might combine or split data flows between pins. For example, an a
 
 The graph describes the internal relationship between the filter's pins. A more complicated filter might encapsulate several nodes that transform data flowing through the filter.
 
-Filters specify internal connections between pins and internal nodes by using the [KSPROPSETID\_Topology](https://msdn.microsoft.com/library/windows/hardware/ff566598) property set.
+Filters specify internal connections between pins and internal nodes by using the [KSPROPSETID\_Topology](./kspropsetid-topology.md) property set.
 
-The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://msdn.microsoft.com/library/windows/hardware/ff565802) property queries all connections between nodes of a KS filter. This property returns an array of [**KSTOPOLOGY\_CONNECTION**](https://msdn.microsoft.com/library/windows/hardware/ff567148). Each KSTOPOLOGY\_CONNECTION structure represents a single data-path connection inside a filter. In the mixer diagram above, the sequence of KSTOPOLOGY\_CONNECTION structures could be as follows:
+The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](./ksproperty-topology-connections.md) property queries all connections between nodes of a KS filter. This property returns an array of [**KSTOPOLOGY\_CONNECTION**](/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection). Each KSTOPOLOGY\_CONNECTION structure represents a single data-path connection inside a filter. In the mixer diagram above, the sequence of KSTOPOLOGY\_CONNECTION structures could be as follows:
 
 ```cpp
 //    FromNode,       FromNodePin,     ToNode,        ToNodePin,
@@ -42,9 +42,4 @@ The [**KSPROPERTY\_TOPOLOGY\_CONNECTIONS**](https://msdn.microsoft.com/library/w
 ```
 
  
-
- 
-
-
-
 

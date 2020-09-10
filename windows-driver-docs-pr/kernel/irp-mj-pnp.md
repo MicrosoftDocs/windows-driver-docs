@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_PNP
 
 
-All drivers must be prepared to service **IRP\_MJ\_PNP** requests in a [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine.
+All drivers must be prepared to service **IRP\_MJ\_PNP** requests in a [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 When Sent
 ---------
@@ -52,12 +52,7 @@ Requirements
 ## See also
 
 
-[*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
-
- 
-
-
-
 

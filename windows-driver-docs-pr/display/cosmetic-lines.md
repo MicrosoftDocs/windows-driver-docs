@@ -49,7 +49,7 @@ or
 </div>
 Slope &gt; 1</td>
 <td align="left"><p>Horizontally</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s left vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's left vertex.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Slope &lt; 1</p>
@@ -62,17 +62,17 @@ or
 </div>
 Slope &gt; 1</td>
 <td align="left"><p>Vertically</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s top vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's top vertex.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Slope = 1</p></td>
 <td align="left"><p>Horizontally</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s top vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's top vertex.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Slope = 1</p></td>
 <td align="left"><p>Vertically</p></td>
-<td align="left"><p>Light the pixel at diamond&#39;s right vertex.</p></td>
+<td align="left"><p>Light the pixel at diamond's right vertex.</p></td>
 </tr>
 </tbody>
 </table>
@@ -87,15 +87,9 @@ The following graph illustrates the diamond convention for a cosmetic line.
 
 ![diagram illustrating diamond convention for a cosmetic line](images/102-01b.png)
 
-For rendering cosmetic lines, the [**DrvStrokePath**](https://msdn.microsoft.com/library/windows/hardware/ff556316) function follows the GIQ diamond convention. The [**DrvLineTo**](https://msdn.microsoft.com/library/windows/hardware/ff556245) function is an optional entry point that a driver can supply as an optimization for application calls to the Microsoft Win32 **LineTo** function. **DrvLineTo** is simpler than **DrvStrokePath** because it supports only integer end-points and solid cosmetic lines.
+For rendering cosmetic lines, the [**DrvStrokePath**](/windows/desktop/api/winddi/nf-winddi-drvstrokepath) function follows the GIQ diamond convention. The [**DrvLineTo**](/windows/desktop/api/winddi/nf-winddi-drvlineto) function is an optional entry point that a driver can supply as an optimization for application calls to the Microsoft Win32 **LineTo** function. **DrvLineTo** is simpler than **DrvStrokePath** because it supports only integer end-points and solid cosmetic lines.
 
 For raster devices that support the R2\_NOT mix mode, a binary raster operation that changes the destination color to its inverse, the driver must use exact rendering. Rendering should also be exact for devices that require rendering by both GDI and the driver. This includes devices for which GDI draws on some bitmaps and the driver draws on other surfaces (unless the pixels are too small to make any visible difference). This also includes devices that request GDI to handle complex clipping.
 
  
-
- 
-
-
-
-
 

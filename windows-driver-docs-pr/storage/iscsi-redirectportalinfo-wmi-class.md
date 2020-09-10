@@ -27,7 +27,7 @@ class ISCSI_RedirectPortalInfo
 
     [read,
      WmiDataId(3),
-     Description("Original Target portal&#39;s socket number given in the login"): amended,
+     Description("Original Target portal's socket number given in the login"): amended,
      WmiVersion(1)] uint32 OriginalPort;
 
     [read,
@@ -37,7 +37,7 @@ class ISCSI_RedirectPortalInfo
 
     [read,
      WmiDataId(5),
-     Description("Redirected Target portal&#39;s socket number"): amended,
+     Description("Redirected Target portal's socket number"): amended,
      WmiVersion(1)] uint32 RedirectedPort;
 
     [read,
@@ -52,13 +52,7 @@ class ISCSI_RedirectPortalInfo
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectPortalInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561561) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_RedirectPortalInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_redirectportalinfo) data structure.
 
  
-
- 
-
-
-
-
 

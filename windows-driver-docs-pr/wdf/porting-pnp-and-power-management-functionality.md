@@ -12,10 +12,10 @@ ms.localizationpriority: medium
 WDF implements intelligent defaults for Plug and Play (PnP) and power management, so simple drivers (including most filter drivers) do not require additional code to meet the basic requirements for PnP. The framework automatically creates and manages PnP, power management, and power policy state machines. By default:
 
 -   The FDO owns power policy for the device.
--   Only the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback is required; all other PnP and power management callbacks are optional. A driver implements other callbacks to support device-specific features.
+-   Only the [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback is required; all other PnP and power management callbacks are optional. A driver implements other callbacks to support device-specific features.
 -   The framework implements power management for all WDFQUEUE objects, so that by default requests are dispatched from the queue to the driver’s I/O event callbacks only when the device hardware is available (that is, in the D0 state).
 
-If the device does not support interrupts or map memory, or require initialization or deinitialization when power transitions occur, the WDF driver requires only the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback.
+If the device does not support interrupts or map memory, or require initialization or deinitialization when power transitions occur, the WDF driver requires only the [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback.
 When a device is inserted or removed, the framework invokes PnP and power event callbacks in a defined order. The topics in this section describe the order, which varies slightly for PDOs, FDOs, and filter DOs:
 
 -   [Power-Up Sequence for a Function or Filter Device Object](power-up-sequence-for-a-function-or-filter-driver.md)
@@ -32,10 +32,4 @@ For more information about supporting PnP and power management in a framework-ba
 -   [Power Policy Ownership](power-policy-ownership.md)
 
  
-
- 
-
-
-
-
 

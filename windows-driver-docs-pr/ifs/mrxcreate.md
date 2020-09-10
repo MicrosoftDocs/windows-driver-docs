@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxCreate routine
 
 
-The*MRxCreate* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to request that the network mini-redirector create a file system object.
+The*MRxCreate* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that the network mini-redirector create a file system object.
 
 Syntax
 ------
@@ -77,7 +77,7 @@ Return value
 </tr>
 <tr class="even">
 <td align="left"><strong>STATUS_OBJECT_NAME_NOT_FOUND</strong></td>
-<td align="left"><p>The object name was not found. This error can be returned if the network mini-redirector was asked to open a file that doesn&#39;t exist.</p></td>
+<td align="left"><p>The object name was not found. This error can be returned if the network mini-redirector was asked to open a file that doesn't exist.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><strong>STATUS_OBJECT_PATH_NOT_FOUND</strong></td>
@@ -138,29 +138,29 @@ Requirements
 ## See also
 
 
-[**MRxAreFilesAliased**](https://msdn.microsoft.com/library/windows/hardware/ff549838)
+[**MRxAreFilesAliased**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkfcb_calldown)
 
-[**MRxCleanupFobx**](https://msdn.microsoft.com/library/windows/hardware/ff549841)
+[**MRxCleanupFobx**](/previous-versions/windows/hardware/drivers/ff549841(v=vs.85))
 
-[**MRxCloseSrvOpen**](https://msdn.microsoft.com/library/windows/hardware/ff549845)
+[**MRxCloseSrvOpen**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_calldown)
 
 [**MRxCollapseOpen**](mrxcollapseopen.md)
 
 [**MRxCreate**](mrxcreate.md)
 
-[**MRxDeallocateForFcb**](https://msdn.microsoft.com/library/windows/hardware/ff549871)
+[**MRxDeallocateForFcb**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_deallocate_for_fcb)
 
-[**MRxDeallocateForFobx**](https://msdn.microsoft.com/library/windows/hardware/ff549872)
+[**MRxDeallocateForFobx**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_deallocate_for_fobx)
 
-[**MRxExtendForCache**](https://msdn.microsoft.com/library/windows/hardware/ff549878)
+[**MRxExtendForCache**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_extendfile_calldown)
 
 [**MRxExtendForNonCache**](mrxextendfornoncache.md)
 
 [**MRxFlush**](mrxflush.md)
 
-[**MRxForceClosed**](https://msdn.microsoft.com/library/windows/hardware/ff550677)
+[**MRxForceClosed**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_forceclosed_calldown)
 
-[**MRxIsLockRealizable**](https://msdn.microsoft.com/library/windows/hardware/ff550691)
+[**MRxIsLockRealizable**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_is_lock_realizable)
 
 [**MRxShouldTryToCollapseThisOpen**](mrxshouldtrytocollapsethisopen.md)
 
@@ -169,11 +169,4 @@ Requirements
 [**MRxZeroExtend**](mrxzeroextend.md)
 
  
-
- 
-
-
-
-
-
 

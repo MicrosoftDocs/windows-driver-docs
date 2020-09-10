@@ -1,11 +1,15 @@
 - name: "WDTF design guide"
-  href: index.md
+# Auto-expanded node
   items: 
+  - name: "WDTF design guide"
+    href: index.md
   - name: "WDTF Quick Start"
     href: wdtf-quick-start-.md
   - name: "Writing a WDTF SimpleIO plug-in for your device"
-    href: writing-a-wdtf-simpleio-plug-in-for-your-device.md
+# Auto-expanded node
     items: 
+    - name: "Writing a WDTF SimpleIO plug-in for your device"
+      href: writing-a-wdtf-simpleio-plug-in-for-your-device.md
     - name: "How to determine if a custom  WDTF Simple I/O Action Plug-in is required for your device"
       href: test-your-device-to-see-if-you-need-to-customize-the-wdtf-simple-i-o-action-plug-in.md
     - name: "How to customize I/O for your device using the WDTF Simple I/O Action Plug-in"
@@ -13,13 +17,23 @@
     - name: "Provided WDTF SimpleIO plug-ins"
       href: provided-wdtf-simpleio-plug-ins.md
   - name: "Writing tests with WDTF"
-    href: writing-tests-with-wdtf.md
+# Auto-expanded node
     items: 
+    - name: "Writing tests with WDTF"
+      href: writing-tests-with-wdtf.md
     - name: "Simple Data Evaluation Language Overview"
       href: simple-data-evaluation-language-overview.md
+    - name: "Device relation tokens in SDEL"
+      href: device-relation-tokens-in-sdel.md
+    - name: "Attribute tokens in SDEL"
+      href: attribute-tokens-in-sdel.md
+    - name: "Examples of SDEL queries"
+      href: examples-of-sdel-queries.md
     - name: "Creating WDTF Scenarios"
-      href: creating-wdtf-scenarios.md
+# Auto-expanded node
       items: 
+      - name: "Creating WDTF Scenarios"
+        href: creating-wdtf-scenarios.md
       - name: "Sample WDTF Scenarios"
         href: sample-wdtf-scenarios.md
     - name: "Controlling Targets"
@@ -27,11 +41,15 @@
     - name: "Action interfaces"
       href: action-interfaces.md
   - name: "Triaging WDTF-based tests"
-    href: triaging-wdtf-based-tests.md
+# Auto-expanded node
     items: 
+    - name: "Triaging WDTF-based tests"
+      href: triaging-wdtf-based-tests.md
     - name: "WDTF Object Logging"
-      href: logging-and-tracing.md
+# Auto-expanded node
       items: 
+      - name: "WDTF Object Logging"
+        href: logging-and-tracing.md
       - name: "WDTF Object Name tags"
         href: wdtf-object-name-tags.md
     - name: "Enabling and Viewing WDTF Traces"
@@ -39,14 +57,18 @@
     - name: "Diagnosing problems running WDTF-based tests"
       href: diagnosing-problems-running-wdtf-based-tests.md
   - name: "WDTF Architecture and Overview"
-    href: wdtf-overview.md
+# Auto-expanded node
     items: 
+    - name: "WDTF Architecture and Overview"
+      href: wdtf-overview.md
     - name: "WDTF Architecture"
       href: wdtf-architecture.md
     - name: "WDTF runtime library" 
       href: wdtf-runtime-library.md
     - name: "Extending the Framework"
-      href: extending-the-framework.md
+# Auto-expanded node
       items: 
+      - name: "Extending the Framework"
+        href: extending-the-framework.md
       - name: "COM Interface Design Skills"
         href: com-interface-design-skills.md

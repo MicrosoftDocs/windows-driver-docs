@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_CLOCK
 
 
-The KSCATEGORY_CLOCK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a clock device.
+The KSCATEGORY_CLOCK [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a clock device.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_CLOCK to indicate to the operating system that the devices support the KSCATEGORY_CLOCK functional category.
 
-For more information about kernel streaming clocks, see [KS Minidriver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff567656), [KS Clocks](https://msdn.microsoft.com/library/windows/hardware/ff567307), and [AVStream Clocks](https://msdn.microsoft.com/library/windows/hardware/ff554208).
+For more information about kernel streaming clocks, see [KS Minidriver Architecture](../stream/ks-minidriver-architecture.md), [KS Clocks](../stream/ks-clocks.md), and [AVStream Clocks](../stream/avstream-clocks.md).
 
 Requirements
 ------------
@@ -69,10 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

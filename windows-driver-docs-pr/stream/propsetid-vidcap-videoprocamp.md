@@ -40,7 +40,7 @@ Prior to USB video class, this enumeration contained the following property item
 
 [**KSPROPERTY\_VIDEOPROCAMP\_GAIN**](ksproperty-videoprocamp-gain.md)
 
-With the introduction of the [USB Video Class Driver](https://msdn.microsoft.com/library/windows/hardware/ff568649), the following properties were added to the KSPROPERTY\_VIDCAP\_VIDEOPROCAMP enumeration:
+With the introduction of the [USB Video Class Driver](./usb-video-class-driver.md), the following properties were added to the KSPROPERTY\_VIDCAP\_VIDEOPROCAMP enumeration:
 
 [**KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER**](ksproperty-videoprocamp-digital-multiplier.md)
 
@@ -63,10 +63,4 @@ Note that values used in the property sets are multiplied by 100 to give improve
 The DirectShow **IAMVideoProcAmp** interface (see the DirectShow documentation in the Microsoft Windows SDK) provides access to the properties of this set.
 
  
-
- 
-
-
-
-
 

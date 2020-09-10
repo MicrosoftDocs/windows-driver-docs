@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 # Processing Notify Callouts
 
 
-The filter engine calls a callout's [*notifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff568803) callout function to notify the callout driver about events that are associated with the callout.
+The filter engine calls a callout's [*notifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn0) callout function to notify the callout driver about events that are associated with the callout.
 
 ### <a href="" id="filter-addition"></a> Filter Addition
 
-When a filter that specifies a callout for the filter's action is added to the filter engine, the filter engine calls the callout's [*notifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff568803) callout function, passing FWPS\_CALLOUT\_NOTIFY\_ADD\_FILTER in the *notifyType* parameter.
+When a filter that specifies a callout for the filter's action is added to the filter engine, the filter engine calls the callout's [*notifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn0) callout function, passing FWPS\_CALLOUT\_NOTIFY\_ADD\_FILTER in the *notifyType* parameter.
 
-A callout driver can register a callout with the filter engine after filters that specify the callout for the filter's action have already been added to the filter engine. In this situation, the filter engine does not call the callout's [*notifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff568803) callout function to notify the callout about any of the existing filters.
+A callout driver can register a callout with the filter engine after filters that specify the callout for the filter's action have already been added to the filter engine. In this situation, the filter engine does not call the callout's [*notifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn0) callout function to notify the callout about any of the existing filters.
 
 The filter engine only calls the callout's *notifyFn* callout function to notify the callout when new filters that specify the callout for the filter's action are added to the filter engine. In this situation, a callout's *notifyFn* callout function might not get called for every filter in the filter engine that specifies the callout for the filter's action.
 
@@ -30,11 +30,11 @@ If a callout driver registers a callout after the filter engine is started and t
 
 ### <a href="" id="filter-deletion"></a> Filter Deletion
 
-When a filter that specifies a callout for the filter's action is deleted from the filter engine, the filter engine calls the callout's [*notifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff568803) callout function and passes FWPS\_CALLOUT\_NOTIFY\_DELETE\_FILTER in the *notifyType* parameter and **NULL** in the *filterKey* parameter. The filter engine calls the callout's *notifyFn* callout function for every deleted filter in the filter engine that specifies the callout for the filter's action. This includes any filters that were added to the filter engine before the callout driver registered the callout with the filter engine. Therefore, a callout might receive filter delete notifications for filters for which it did not receive filter add notifications.
+When a filter that specifies a callout for the filter's action is deleted from the filter engine, the filter engine calls the callout's [*notifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn0) callout function and passes FWPS\_CALLOUT\_NOTIFY\_DELETE\_FILTER in the *notifyType* parameter and **NULL** in the *filterKey* parameter. The filter engine calls the callout's *notifyFn* callout function for every deleted filter in the filter engine that specifies the callout for the filter's action. This includes any filters that were added to the filter engine before the callout driver registered the callout with the filter engine. Therefore, a callout might receive filter delete notifications for filters for which it did not receive filter add notifications.
 
-If the callout's [*notifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff568803) callout function does not recognize the kind of notification that is passed in the *notifyType* parameter, it should ignore the notification and return STATUS\_SUCCESS.
+If the callout's [*notifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn0) callout function does not recognize the kind of notification that is passed in the *notifyType* parameter, it should ignore the notification and return STATUS\_SUCCESS.
 
-A callout driver can specify a context to be associated with a filter when the filter is added to the filter engine. Such a context is opaque to the filter engine. The callout's [*classifyFn*](https://msdn.microsoft.com/library/windows/hardware/ff544890) callout function can use this context to save state information for the next time that it is called by the filter engine. When the filter is deleted from the filter engine, the callout driver performs any necessary cleanup of the context.
+A callout driver can specify a context to be associated with a filter when the filter is added to the filter engine. Such a context is opaque to the filter engine. The callout's [*classifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function can use this context to save state information for the next time that it is called by the filter engine. When the filter is deleted from the filter engine, the callout driver performs any necessary cleanup of the context.
 
 For example:
 
@@ -47,7 +47,7 @@ typedef struct FILTER_CONTEXT_ {
 } FILTER_CONTEXT, *PFILTER_CONTEXT;
 
 // Memory pool tag for filter context structures
-#define FILTER_CONTEXT_POOL_TAG &#39;fcpt&#39;
+#define FILTER_CONTEXT_POOL_TAG 'fcpt'
 
 // notifyFn callout function
 NTSTATUS NTAPI
@@ -123,10 +123,4 @@ NTSTATUS NTAPI
 ```
 
  
-
- 
-
-
-
-
 

@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The following tables describe the kernel streaming event set and its respective event that is related to DVD decoder hardware:
 
-The [KSEVENTSETID\_VPNotify](https://msdn.microsoft.com/library/windows/hardware/ff561780) event set groups all kernel streaming events that are related to tuner events.
+The [KSEVENTSETID\_VPNotify](./kseventsetid-vpnotify.md) event set groups all kernel streaming events that are related to tuner events.
 
 <table>
 <colgroup>
@@ -34,7 +34,7 @@ The [KSEVENTSETID\_VPNotify](https://msdn.microsoft.com/library/windows/hardware
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561933" data-raw-source="[&lt;strong&gt;KSEVENT_VPNOTIFY_FORMATCHANGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561933)"><strong>KSEVENT_VPNOTIFY_FORMATCHANGE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-vpnotify-formatchange" data-raw-source="[&lt;strong&gt;KSEVENT_VPNOTIFY_FORMATCHANGE&lt;/strong&gt;](./ksevent-vpnotify-formatchange.md)"><strong>KSEVENT_VPNOTIFY_FORMATCHANGE</strong></a></p></td>
 <td><p>Notifies DirectShow of a change in the video port configuration, such as a change in resolution from 640x480 to 720x480.</p></td>
 </tr>
 </tbody>
@@ -43,9 +43,4 @@ The [KSEVENTSETID\_VPNotify](https://msdn.microsoft.com/library/windows/hardware
  
 
  
-
- 
-
-
-
 

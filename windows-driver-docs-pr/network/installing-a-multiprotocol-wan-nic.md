@@ -23,7 +23,7 @@ A multiprotocol WAN NIC provides more than one WAN protocol. For example, such a
 > ISDN capabilities have been deprecated in Windows 10 and later. 
 
 
-A vendor of a multiprotocol WAN NIC must provide a co-installer that installs a wizard page. (For more information about co-installers, see [Writing a Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff554011)). The wizard page prompts the user to select a WAN protocol:
+A vendor of a multiprotocol WAN NIC must provide a co-installer that installs a wizard page. (For more information about co-installers, see [Writing a Co-installer](../install/writing-a-co-installer.md)). The wizard page prompts the user to select a WAN protocol:
 
 -   If the user selects ISDN, the ISDN Wizard is displayed. The ISDN Wizard prompts the user for the ISDN switch type and, depending on the selected switch type, other ISDN parameter values. For more information, see [Specifying ISDN Keys and Values for an ISDN Adapter](specifying-isdn-keys-and-values-for-an-isdn-adapter.md).
 
@@ -38,10 +38,4 @@ After the WAN NIC has been installed, the user can reconfigure the NIC, using th
 Note that the **LowerRange** binding interface for a multiprotocol WAN NIC that supports ISDN must be set to **isdn**. For more information, see [Specifying Binding Interfaces](specifying-binding-interfaces.md). If the **ShowIsdnPages** registry value is not present and if the NIC's **LowerRange** is set to **isdn**, the ISDN Wizard is displayed during installation and configuration of the NIC. If **ShowIsdnPages** is set to zero, the ISDN Wizard is not displayed. If **ShowIsdnPages** is set to 1, the ISDN Wizard is displayed during configuration of the NIC.
 
  
-
- 
-
-
-
-
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # DEBUG\_PROCESS\_XXX
 
 
-The process options are a bit set that control how the [debugger engine](https://msdn.microsoft.com/library/windows/hardware/ff551059#debugger-engine) treats user-mode[processes](https://msdn.microsoft.com/library/windows/hardware/ff539300#processes). Some of these process options are global; others are specific to a process.
+The process options are a bit set that control how the [debugger engine](./introduction.md#debugger-engine) treats user-mode[processes](./controlling-threads-and-processes.md#processes). Some of these process options are global; others are specific to a process.
 
 The process options only apply to live user-mode debugging.
 
@@ -66,14 +66,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**.childdbg**](https://msdn.microsoft.com/library/windows/hardware/ff562215)
+[**.childdbg**](./-childdbg--debug-child-processes-.md)
 
  
-
- 
-
-
-
-
-
 

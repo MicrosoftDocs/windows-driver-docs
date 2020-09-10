@@ -17,17 +17,11 @@ For more information see the following topics:
 
 -   [MB Provider Operations](mb-provider-operations.md)
 
--   [OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS](https://msdn.microsoft.com/library/windows/hardware/hh831868)
+-   [OID\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS](./oid-wwan-preferred-multicarrier-providers.md)
 
--   [**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/hh846211)
+-   [**NDIS\_STATUS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](./ndis-status-wwan-preferred-multicarrier-providers.md)
 
--   [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](https://msdn.microsoft.com/library/windows/hardware/hh831864)
-
- 
+-   [**NDIS\_WWAN\_PREFERRED\_MULTICARRIER\_PROVIDERS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_preferred_multicarrier_providers)
 
  
-
-
-
-
 

@@ -18,122 +18,117 @@ The following lists contains all of the WIA properties that are unique to WIA sc
 
 A WIA minidriver supplies the following properties:
 
-[**WIA\_DPS\_OPTICAL\_XRES**](https://msdn.microsoft.com/library/windows/hardware/ff551409)
+[**WIA\_DPS\_OPTICAL\_XRES**](./wia-dps-optical-xres.md)
 
-[**WIA\_DPS\_OPTICAL\_YRES**](https://msdn.microsoft.com/library/windows/hardware/ff551410)
+[**WIA\_DPS\_OPTICAL\_YRES**](./wia-dps-optical-yres.md)
 
 ### Optional Properties on Scanner Root Items (Windows XP and Windows Me)
 
 A WIA minidriver supplies the following properties:
 
-[**WIA\_DPS\_DITHER\_PATTERN\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff551376)
+[**WIA\_DPS\_DITHER\_PATTERN\_DATA**](./wia-dps-dither-pattern-data.md)
 
-[**WIA\_DPS\_DITHER\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551377)
+[**WIA\_DPS\_DITHER\_SELECT**](./wia-dps-dither-select.md)
 
-[**WIA\_DPS\_FILTER\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551392)
+[**WIA\_DPS\_FILTER\_SELECT**](./wia-dps-filter-select.md)
 
-[**WIA\_DPS\_MAX\_SCAN\_TIME**](https://msdn.microsoft.com/library/windows/hardware/ff551403)
+[**WIA\_DPS\_MAX\_SCAN\_TIME**](./wia-dps-max-scan-time.md)
 
-[**WIA\_DPS\_PAD\_COLOR**](https://msdn.microsoft.com/library/windows/hardware/ff551412)
+[**WIA\_DPS\_PAD\_COLOR**](./wia-dps-pad-color.md)
 
-[**WIA\_DPS\_PLATEN\_COLOR**](https://msdn.microsoft.com/library/windows/hardware/ff551420)
+[**WIA\_DPS\_PLATEN\_COLOR**](./wia-dps-platen-color.md)
 
-[**WIA\_DPS\_SHOW\_PREVIEW\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff551432)
+[**WIA\_DPS\_SHOW\_PREVIEW\_CONTROL**](./wia-dps-show-preview-control.md)
 
 ### Required Properties on Scanner Child Items Able to Transfer Data
 
 A WIA minidriver supplies the following properties:
 
-[**WIA\_IPS\_BRIGHTNESS**](https://msdn.microsoft.com/library/windows/hardware/ff552567)
+[**WIA\_IPS\_BRIGHTNESS**](./wia-ips-brightness.md)
 
-[**WIA\_IPS\_CONTRAST**](https://msdn.microsoft.com/library/windows/hardware/ff552573)
+[**WIA\_IPS\_CONTRAST**](./wia-ips-contrast.md)
 
-[**WIA\_IPS\_CUR\_INTENT**](https://msdn.microsoft.com/library/windows/hardware/ff552579)
+[**WIA\_IPS\_CUR\_INTENT**](./wia-ips-cur-intent.md)
 
-[**WIA\_IPS\_PHOTOMETRIC\_INTERP**](https://msdn.microsoft.com/library/windows/hardware/ff552640)
+[**WIA\_IPS\_PHOTOMETRIC\_INTERP**](./wia-ips-photometric-interp.md)
 
-[**WIA\_IPS\_XEXTENT**](https://msdn.microsoft.com/library/windows/hardware/ff552661)
+[**WIA\_IPS\_XEXTENT**](./wia-ips-xextent.md)
 
-[**WIA\_IPS\_XPOS**](https://msdn.microsoft.com/library/windows/hardware/ff552663)
+[**WIA\_IPS\_XPOS**](./wia-ips-xpos.md)
 
-[**WIA\_IPS\_XRES**](https://msdn.microsoft.com/library/windows/hardware/ff552665)
+[**WIA\_IPS\_XRES**](./wia-ips-xres.md)
 
-[**WIA\_IPS\_YEXTENT**](https://msdn.microsoft.com/library/windows/hardware/ff552669)
+[**WIA\_IPS\_YEXTENT**](./wia-ips-yextent.md)
 
-[**WIA\_IPS\_YPOS**](https://msdn.microsoft.com/library/windows/hardware/ff552671)
+[**WIA\_IPS\_YPOS**](./wia-ips-ypos.md)
 
-[**WIA\_IPS\_YRES**](https://msdn.microsoft.com/library/windows/hardware/ff552673)
+[**WIA\_IPS\_YRES**](./wia-ips-yres.md)
 
 ### Optional Properties on Scanner Child Items Able to Transfer Data
 
 A WIA minidriver supplies the following properties:
 
-[**WIA\_DPS\_PAGE\_HEIGHT**](https://msdn.microsoft.com/library/windows/hardware/ff551416)
+[**WIA\_DPS\_PAGE\_HEIGHT**](./wia-dps-page-height.md)
 
-[**WIA\_DPS\_PAGE\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551417)
+[**WIA\_DPS\_PAGE\_SIZE**](./wia-dps-page-size.md)
 
-[**WIA\_DPS\_PAGE\_WIDTH**](https://msdn.microsoft.com/library/windows/hardware/ff551419)
+[**WIA\_DPS\_PAGE\_WIDTH**](./wia-dps-page-width.md)
 
-[**WIA\_IPS\_INVERT**](https://msdn.microsoft.com/library/windows/hardware/ff552599)
+[**WIA\_IPS\_INVERT**](./wia-ips-invert.md)
 
-[**WIA\_IPS\_MIRROR**](https://msdn.microsoft.com/library/windows/hardware/ff552616)
+[**WIA\_IPS\_MIRROR**](./wia-ips-mirror.md)
 
-[**WIA\_IPS\_ORIENTATION**](https://msdn.microsoft.com/library/windows/hardware/ff552625)
+[**WIA\_IPS\_ORIENTATION**](./wia-ips-orientation.md)
 
-[**WIA\_IPS\_ROTATION**](https://msdn.microsoft.com/library/windows/hardware/ff552648)
+[**WIA\_IPS\_ROTATION**](./wia-ips-rotation.md)
 
-[**WIA\_IPS\_THRESHOLD**](https://msdn.microsoft.com/library/windows/hardware/ff552655)
+[**WIA\_IPS\_THRESHOLD**](./wia-ips-threshold.md)
 
-[**WIA\_IPS\_WARM\_UP\_TIME**](https://msdn.microsoft.com/library/windows/hardware/ff552660)
+[**WIA\_IPS\_WARM\_UP\_TIME**](./wia-ips-warm-up-time.md)
 
 ### Required Properties on Flatbed Scanner Root Items (Windows XP and Windows Me)
 
 A WIA minidriver supplies the following properties:
 
-[**WIA\_DPS\_HORIZONTAL\_BED\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff551398)
+[**WIA\_DPS\_HORIZONTAL\_BED\_REGISTRATION**](./wia-dps-horizontal-bed-registration.md)
 
-[**WIA\_DPS\_HORIZONTAL\_BED\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551399)
+[**WIA\_DPS\_HORIZONTAL\_BED\_SIZE**](./wia-dps-horizontal-bed-size.md)
 
-[**WIA\_DPS\_PREVIEW**](https://msdn.microsoft.com/library/windows/hardware/ff551422)
+[**WIA\_DPS\_PREVIEW**](./wia-dps-preview.md)
 
-[**WIA\_DPS\_VERTICAL\_BED\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff551442)
+[**WIA\_DPS\_VERTICAL\_BED\_REGISTRATION**](./wia-dps-vertical-bed-registration.md)
 
-[**WIA\_DPS\_VERTICAL\_BED\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551445)
+[**WIA\_DPS\_VERTICAL\_BED\_SIZE**](./wia-dps-vertical-bed-size.md)
 
 ### Required Properties on Document Feeder Scanner Root Items (Windows XP and Windows Me)
 
 A WIA minidriver supplies the following properties:
 
-[**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551379)
+[**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](./wia-dps-document-handling-capabilities.md)
 
-[**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551384)
+[**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](./wia-dps-document-handling-select.md)
 
-[**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff551386)
+[**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](./wia-dps-document-handling-status.md)
 
-[**WIA\_DPS\_HORIZONTAL\_SHEET\_FEED\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551401)
+[**WIA\_DPS\_HORIZONTAL\_SHEET\_FEED\_SIZE**](./wia-dps-horizontal-sheet-feed-size.md)
 
-[**WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551405)
+[**WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE**](./wia-dps-min-horizontal-sheet-feed-size.md)
 
-[**WIA\_DPS\_MIN\_VERTICAL\_SHEET\_FEED\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551407)
+[**WIA\_DPS\_MIN\_VERTICAL\_SHEET\_FEED\_SIZE**](./wia-dps-min-vertical-sheet-feed-size.md)
 
-[**WIA\_DPS\_PAGES**](https://msdn.microsoft.com/library/windows/hardware/ff551414)
+[**WIA\_DPS\_PAGES**](./wia-dps-pages.md)
 
-[**WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION**](https://msdn.microsoft.com/library/windows/hardware/ff551430)
+[**WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION**](./wia-dps-sheet-feeder-registration.md)
 
-[**WIA\_DPS\_VERTICAL\_SHEET\_FEED\_SIZE**](https://msdn.microsoft.com/library/windows/hardware/ff551446)
+[**WIA\_DPS\_VERTICAL\_SHEET\_FEED\_SIZE**](./wia-dps-vertical-sheet-feed-size.md)
 
 ### Properties on Transparency Scanner Root Items (Windows XP and Windows Me)
 
 A WIA minidriver supplies the following properties:
 
-[**WIA\_DPS\_TRANSPARENCY**](https://msdn.microsoft.com/library/windows/hardware/ff551434)
+[**WIA\_DPS\_TRANSPARENCY**](./wia-dps-transparency.md)
 
-[**WIA\_DPS\_TRANSPARENCY\_SELECT**](https://msdn.microsoft.com/library/windows/hardware/ff551437)
-
- 
+[**WIA\_DPS\_TRANSPARENCY\_SELECT**](./wia-dps-transparency-select.md)
 
  
-
-
-
 

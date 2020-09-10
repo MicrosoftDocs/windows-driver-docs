@@ -28,7 +28,7 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                                                     |
 |--------|---------------------------------------------------------------------------------------------------------------------------------|
-| UINT32 | [**WDI\_SCAN\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926115) value that indicates whether scans should be performed in active or passive mode. |
+| UINT32 | [**WDI\_SCAN\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_scan_type) value that indicates whether scans should be performed in active or passive mode. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

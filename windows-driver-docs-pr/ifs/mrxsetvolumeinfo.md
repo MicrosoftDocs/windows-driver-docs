@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxSetVolumeInfo routine
 
 
-The*MRxSetVolumeInfo* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to request that a network mini-redirector set volume information.
+The*MRxSetVolumeInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set volume information.
 
 Syntax
 ------
@@ -124,7 +124,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://msdn.microsoft.com/library/windows/hardware/ff550696)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -149,11 +149,4 @@ Requirements
 [**MRxSetSdInfo**](mrxsetsdinfo.md)
 
  
-
- 
-
-
-
-
-
 

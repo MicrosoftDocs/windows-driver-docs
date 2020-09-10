@@ -28,7 +28,7 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                                                                                                    |
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UINT32 | The ID of the pattern that matches the wake packet. The ID is defined when the pattern is added with [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925858). |
+| UINT32 | The ID of the pattern that matches the wake packet. The ID is defined when the pattern is added with [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](./oid-wdi-set-add-wol-pattern.md). |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

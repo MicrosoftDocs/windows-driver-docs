@@ -1,5 +1,5 @@
 ---
-Description: The MTP Setup Information (.inf) File
+description: The MTP Setup Information (.inf) File
 title: The MTP Setup Information (.inf) File
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -45,8 +45,8 @@ The entries in the following table can support any of three transports (USB, IP,
 <ol>
 <li>Registers the kernel-mode driver (including <em>WPDUSB.sys</em> as the lower filter driver if you are installing the device on Windows Vista or Windows XP).</li>
 <li>Enables default MTP AutoPlay support.</li>
-<li>Enables legacy application compatibility support (the default value 0xFFFFFFFF allows the WPD class installer to query the device&#39;s capabilities).</li>
-<li>Sets the transport driver&#39;s class identifier.</li>
+<li>Enables legacy application compatibility support (the default value 0xFFFFFFFF allows the WPD class installer to query the device's capabilities).</li>
+<li>Sets the transport driver's class identifier.</li>
 </ol>
 <pre space="preserve"><code>;;[DDInstall.hw]
 ;;Include = wpdmtp.inf

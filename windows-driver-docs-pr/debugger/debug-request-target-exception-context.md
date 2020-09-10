@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # DEBUG\_REQUEST\_TARGET\_EXCEPTION\_CONTEXT
 
 
-The DEBUG\_REQUEST\_TARGET\_EXCEPTION\_CONTEXT [**Request**](request.md) operation returns the [thread context](https://msdn.microsoft.com/library/windows/hardware/ff554702#thread-context) for the stored event in a user-mode minidump file.
+The DEBUG\_REQUEST\_TARGET\_EXCEPTION\_CONTEXT [**Request**](request.md) operation returns the [thread context](./scopes-and-symbol-groups.md#thread-context) for the stored event in a user-mode minidump file.
 
 **Parameters**
 
@@ -29,21 +29,14 @@ The thread context for the stored event. The type of the thread context is the C
 Remarks
 -------
 
-This information is also returned to the *Context* parameter by the [**GetStoredEventInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548431) method.
+This information is also returned to the *Context* parameter by the [**GetStoredEventInformation**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-getstoredeventinformation) method.
 
 ## <span id="see_also"></span>See also
 
 
 [**Request**](request.md)
 
-[**GetStoredEventInformation**](https://msdn.microsoft.com/library/windows/hardware/ff548431)
+[**GetStoredEventInformation**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-getstoredeventinformation)
 
  
-
- 
-
-
-
-
-
 

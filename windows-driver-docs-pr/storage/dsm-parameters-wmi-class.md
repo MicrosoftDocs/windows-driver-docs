@@ -36,13 +36,7 @@ class DSM_PARAMETERS
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff552713) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_PARAMETERS**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_dsm_parameters) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

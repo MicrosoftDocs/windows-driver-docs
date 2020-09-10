@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # installHeaderTitle XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **installHeaderTitle** XML element customizes the bold text of the installation header title that appears on a DPInst installation page.
 
@@ -83,11 +83,4 @@ If an **installHeaderTitle** element is not specified, DPInst displays the defau
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

@@ -14,13 +14,14 @@ ms.date: 10/02/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+ms.custom: 19H1
 ---
 
 # What's New for WDF Drivers in Windows 10
 
 This topic summarizes the new features and improvements for Windows Driver Frameworks (WDF) drivers in Windows 10.
 
-Windows 10, version 1809 (October 2018 Update, Redstone 5) includes Kernel-Mode Driver Framework (KMDF) version 1.27 and User-Mode Driver Framework (UMDF) version 2.27.
+Windows 10, version 1903 (March 2019 Update, 19H1) includes Kernel-Mode Driver Framework (KMDF) version 1.29 and User-Mode Driver Framework (UMDF) version 2.29.
 
 You can use these framework versions to build drivers for:
 
@@ -29,14 +30,22 @@ You can use these framework versions to build drivers for:
 
 For version history, see [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md). Except where noted, UMDF references on this page describe version 2 functionality that is not available in UMDF version 1.
 
+## New in WDF for Windows 10, version 2004
+
+See [KMDF Version History](kmdf-version-history.md) and [UMDF Version History](umdf-version-history.md).
+
+## New in WDF for Windows 10, version 1903
+
+No functionality added or changed.
+
 ## New in WDF for Windows 10, version 1809
 
-* Added new API [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/content/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
+* Added new API [**WdfDriverRetrieveDriverDataDirectoryString**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdriverretrievedriverdatadirectorystring)
 
 ## New in WDF for Windows 10, version 1803
 
 * [Building a WDF driver for multiple versions of Windows](building-a-wdf-driver-for-multiple-versions-of-windows.md).
-* [**WdfDeviceRetrieveDeviceDirectoryString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
+* [**WdfDeviceRetrieveDeviceDirectoryString**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceretrievedevicedirectorystring)
 
 ## New in WDF for Windows 10, version 1709
 
@@ -69,18 +78,18 @@ In Windows 10, version 1703, WDF includes the following enhancements:
 
 * SleepStudy tool provides info on KMDF drivers
 
-    The SleepStudy software tool reports the number of power references that a KMDF driver has that are preventing the system from going to sleep.  For more info, see [Modern standby SleepStudy](https://msdn.microsoft.com/windows/hardware/commercialize/design/device-experiences/modern-standby-sleepstudy).
+    The SleepStudy software tool reports the number of power references that a KMDF driver has that are preventing the system from going to sleep.  For more info, see [Modern standby SleepStudy](/windows-hardware/design/device-experiences/modern-standby-sleepstudy).
 
 The rest of this page describes functionality that was added in Windows 10, version 1507.
 
 ## WDF source code is publicly available
 
 
--   The WDF source code is now available as open source on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from <http://github.com/Microsoft/Windows-Driver-Frameworks>.
+-   The WDF source code is now available as open source on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from <https://github.com/Microsoft/Windows-Driver-Frameworks>.
 
 -   The private symbol files for WDF on Windows 10 are now available through the Microsoft Symbol Server.
 
--   The Windows Driver Kit (WDK) 10 samples are also now published to GitHub. Download them from <http://github.com/Microsoft/Windows-Driver-Samples>.
+-   The Windows Driver Kit (WDK) 10 samples are also now published to GitHub. Download them from <https://github.com/Microsoft/Windows-Driver-Samples>.
 
 ## Automatic Source Level Debugging of Framework Code
 
@@ -90,7 +99,7 @@ When you use WinDbg to debug a WDF driver on Windows 10, WinDbg automatically r
 ## Universal Driver Compliance
 
 
-All WDF driver samples and Visual Studio driver templates are [Universal Windows driver](https://msdn.microsoft.com/windows-drivers/develop/getting_started_with_universal_drivers) compliant.
+All WDF driver samples and Visual Studio driver templates are [Universal Windows driver](/windows-hardware/drivers) compliant.
 
 All KMDF and UMDF 2 functionality is Universal Windows driver compliant.
 
@@ -101,7 +110,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
 -   All KMDF and UMDF 2 drivers can use an always on, always available Inflight Trace Recorder (IFR). When a driver provides a custom trace, the driver IFR log contains the trace messages. Note that the new driver IFR log is separate from the framework IFR log that WDF creates for each driver.
 
-    It's easy to turn on the IFR. See [Inflight Trace Recorder (IFR) for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610) and [Using Inflight Trace Recorder in KMDF and UMDF Drivers](using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
+    It's easy to turn on the IFR. See [Inflight Trace Recorder (IFR) for logging traces](../devtest/using-wpp-recorder.md) and [Using Inflight Trace Recorder in KMDF and UMDF Drivers](using-wpp-software-tracing-in-kmdf-and-umdf-2-drivers.md).
 
 -   The IFR maintains a circular buffer of WPP traces in non-pageable memory. If a driver crashes, the logs are frequently included in the crash dump file.
 
@@ -109,7 +118,7 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
     -   IFR logs are included in minidump files except when the responsible driver is undetermined or if the crash was a host timeout.
 
-    -   If you have a debugger connected, you can access both the driver and framework IFR logs by issuing [**!wdfkd.wdflogdump**](https://msdn.microsoft.com/library/windows/hardware/ff565805).
+    -   If you have a debugger connected, you can access both the driver and framework IFR logs by issuing [**!wdfkd.wdflogdump**](../debugger/-wdfkd-wdflogdump.md).
 
     -   If you do not have a debugger connected, you can still access both logs.  To learn how, see [Video: Accessing driver IFR logs without a debugger](video--accessing-driver-ifr-logs-without-a-debugger.md).
 
@@ -117,13 +126,13 @@ Note that UMDF 1 drivers run only on Windows 10 for desktop editions and earlie
 
 -   UMDF logs (WudfTrace.etl) and dumps are now located in %ProgramData%\\Microsoft\\WDF instead of %systemDrive%\\LogFiles\\Wudf.
 
--   New debugger command: [**!wdfkd.wdfumtriage**](https://msdn.microsoft.com/library/windows/hardware/dn961126) provides a kernel-centric view of all UMDF devices on the system.
+-   New debugger command: [**!wdfkd.wdfumtriage**](../debugger/-wdfkd-wdfumtriage.md) provides a kernel-centric view of all UMDF devices on the system.
 
--   You can run [**!analyze**](https://msdn.microsoft.com/library/windows/hardware/ff562112) to investigate UMDF verifier failures or UMDF unhandled exceptions. This works for live kernel debugging as well as debugging user crash dump files from *%ProgramData%*\\Microsoft\\WDF.
+-   You can run [**!analyze**](../debugger/-analyze.md) to investigate UMDF verifier failures or UMDF unhandled exceptions. This works for live kernel debugging as well as debugging user crash dump files from *%ProgramData%*\\Microsoft\\WDF.
 
 -   In KMDF and UMDF 2, you can monitor power reference usage in the debugger. For info, see [Debugging Power Reference Leaks in WDF](debugging-power-reference-leaks-in-wdf.md).
 
--   You can use [**!wdfkd.wdfcrashdump**](https://msdn.microsoft.com/library/windows/hardware/ff565682) to display error information about UMDF 2 drivers. For more information, see **!wdfkd.wdfcrashdump**.
+-   You can use [**!wdfkd.wdfcrashdump**](../debugger/-wdfkd-wdfcrashdump.md) to display error information about UMDF 2 drivers. For more information, see **!wdfkd.wdfcrashdump**.
 
 ## Performance Tracing tool for WDF drivers
 
@@ -164,10 +173,4 @@ New support has been added for USB drivers in UMDF. A UMDF 2 USB driver no longe
 -   UMDF provides improved buffer mapping for HID transfers.
 
  
-
- 
-
-
-
-
 

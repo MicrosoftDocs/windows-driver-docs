@@ -1,5 +1,5 @@
 ---
-Description: The Sample Driver Setup Information (.inf) File
+description: The Sample Driver Setup Information (.inf) File
 title: The Sample Driver Setup Information (.inf) File
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -30,21 +30,21 @@ The WpdHelloWorldDriver project contains a setup information (.inf) file named *
 <td align="left">This section is required.
 <ul>
 <li><em>WudfCoInstaller.dll</em> must be listed as a co-installer.</li>
-<li>The reg root must be &quot;HKR&quot;.</li>
+<li>The reg root must be "HKR".</li>
 <li>The type must be 0x10000.</li>
 <li>The registry directive must be present.</li>
 </ul>
 <p>Example: <code>[Basic_Install.CoInstallers_AddReg]</code></p>
-<p><code>HKR,,CoInstallers32,0x00010000,&quot;WUDFCoInstaller.dll&quot;</code></p></td>
+<p><code>HKR,,CoInstallers32,0x00010000,"WUDFCoInstaller.dll"</code></p></td>
 </tr>
  <tr class="even">
 <td align="left">Basic_Install.wdf</td>
 <td align="left">UmdfService directive</td>
 <td align="left">This directive is required.
 <ul>
-<li>This directive is of the form: &quot;UmdfService=ServiceName, ServiceInstallSection&quot;.</li>
-<li>The referenced section (&quot;ServiceInstallSection&quot;) must exist.</li>
-<li>The specified service name (&quot;ServiceName&quot;) must be used by the UmdfServiceOrder directive.</li>
+<li>This directive is of the form: "UmdfService=ServiceName, ServiceInstallSection".</li>
+<li>The referenced section ("ServiceInstallSection") must exist.</li>
+<li>The specified service name ("ServiceName") must be used by the UmdfServiceOrder directive.</li>
 </ul>
 <p>Example: <code>[Basic_Install.Wdf]</code></p>
 <p><code>UmdfService=WpdHelloWorldDriver, WpdHelloWorldDriver_Install</code></p>
@@ -67,33 +67,33 @@ The WpdHelloWorldDriver project contains a setup information (.inf) file named *
 <td align="left">EnableDefaultAutoPlaySupport directive</td>
 <td align="left">This directive is required.
 <ul>
-<li>The reg root must be &quot;HKR&quot;.</li>
+<li>The reg root must be "HKR".</li>
 <li>The type must be 0x10001.</li>
 <li>A valid value (0 or 1) must be set.</li>
 </ul>
 <p>Example:</p>
 <p><code>[Device_AddReg]</code></p>
-<p><code>HKR,,&quot;EnableDefaultAutoPlaySupport&quot;,0x10001,1</code></p></td>
+<p><code>HKR,,"EnableDefaultAutoPlaySupport",0x10001,1</code></p></td>
 </tr>
 <tr class="even">
 <td align="left">Device_AddReg</td>
 <td align="left">EnableLegacySupport directive</td>
 <td align="left">This directive is required.
 <ul>
-<li>The reg root must be &quot;HKR&quot;.</li>
+<li>The reg root must be "HKR".</li>
 <li>The type must be 0x10001.</li>
 <li>A valid value (0, 1, 2, or 3) must be set.</li>
 </ul>
 <p>Example:</p>
 <p><code>[Device_AddReg]</code></p>
-<p><code>HKR,,&quot;EnableLegacySupport&quot;,0x10001,1</code></p></td>
+<p><code>HKR,,"EnableLegacySupport",0x10001,1</code></p></td>
 </tr>
 <tr class="odd">
 <td align="left">Device_AddReg</td>
 <td align="left">UseWiaAutoPlay directive</td>
 <td align="left">This directive is optional.
 <ul>
-<li>The reg root must be &quot;HKR&quot;.</li>
+<li>The reg root must be "HKR".</li>
 <li>The type must be 0x10001.</li>
 <li>A valid value (0 or 1) must be set.</li>
 </ul></td>
@@ -135,7 +135,7 @@ The WpdHelloWorldDriver project contains a setup information (.inf) file named *
 <tr class="even">
 <td align="left">Version</td>
 <td align="left">Class parameter</td>
-<td align="left">This parameter is required. Must be set to &quot;WPD&quot;.
+<td align="left">This parameter is required. Must be set to "WPD".
 <p>Example:</p>
 <pre space="preserve"><code>[Version]
 Class=WPD</code></pre></td>
@@ -155,13 +155,13 @@ ClassGuid={EEC5AD98-8080-425f-922A-DABF3DE3F69A}</code></pre></td>
 <p>This directive must specify a well-formed GUID.</p>
 <p>Example:</p>
 <pre space="preserve"><code>[WpdHelloWorldDriver_Install]
-DriverCLSID=&quot;{EC7445EE-BC00-4CED-AFE7-A52849F10239}&quot;</code></pre></td>
+DriverCLSID="{EC7445EE-BC00-4CED-AFE7-A52849F10239}"</code></pre></td>
 </tr>
 <tr class="odd">
 <td align="left">WpdHelloWorldDriver_Install</td>
 <td align="left">ServiceBinary directive</td>
 <td align="left">This directive is required.
-<p>This directive must specify a path of the form: &quot;%12%\wudfrd.sys&quot;</p>
+<p>This directive must specify a path of the form: "%12%\wudfrd.sys"</p>
 <p>Example:</p>
 <p><code>[WUDFRD_ServiceInstall]</code></p>
 <p><code>ServiceBinary=%12%\WUDFRd.sys</code></p></td>

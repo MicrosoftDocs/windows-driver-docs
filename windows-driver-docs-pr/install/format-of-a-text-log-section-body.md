@@ -35,15 +35,15 @@ Indicates whether the log entry is an error message, a warning message, or an in
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;!!!  &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"!!!  "</code></pre></td>
 <td align="left"><p>An error message</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;!    &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"!    "</code></pre></td>
 <td align="left"><p>A warning message</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;     &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"     "</code></pre></td>
 <td align="left"><p>Information message other than an error message or a warning message</p></td>
 </tr>
 </tbody>
@@ -52,7 +52,7 @@ Indicates whether the log entry is an error message, a warning message, or an in
  
 
 <a href="" id="time-stamp-field"></a>*time_stamp* field  
-Indicates the system time when the logged event occurred. The *time_stamp* field is optional and SetupAPI does not include a time stamp by default. However, [**SetupWriteTextLog**](https://msdn.microsoft.com/library/windows/hardware/ff552218) supports including a time stamp in a log entry. The format of the *time_stamp* field is the same as the format of the *time_stamp* field that is described in [Format of a Text Log Section Header](format-of-a-text-log-section-header.md).
+Indicates the system time when the logged event occurred. The *time_stamp* field is optional and SetupAPI does not include a time stamp by default. However, [**SetupWriteTextLog**](/windows/desktop/api/setupapi/nf-setupapi-setupwritetextlog) supports including a time stamp in a log entry. The format of the *time_stamp* field is the same as the format of the *time_stamp* field that is described in [Format of a Text Log Section Header](format-of-a-text-log-section-header.md).
 
 <a href="" id="event-category-field"></a>*event_category* field  
 Indicates the category of SetupAPI operation that made the log entry. The *event_category* field is usually present, but is not required. If the *event_category* field is present, it will contain one of the strings that are listed in the following table.
@@ -70,63 +70,63 @@ Indicates the category of SetupAPI operation that made the log entry. The *event
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;...: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"...: "</code></pre></td>
 <td align="left"><p>Vendor-supplied operation</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;bak: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"bak: "</code></pre></td>
 <td align="left"><p>Backup data</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;cci: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"cci: "</code></pre></td>
 <td align="left"><p>Class installer or co-installer operation</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;cpy: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"cpy: "</code></pre></td>
 <td align="left"><p>Copy files</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;dvi: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"dvi: "</code></pre></td>
 <td align="left"><p>Device installation</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;flq: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"flq: "</code></pre></td>
 <td align="left"><p>Manage file queues</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;inf: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"inf: "</code></pre></td>
 <td align="left"><p>Manage INF files</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;ndv: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"ndv: "</code></pre></td>
 <td align="left"><p>New device wizard</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;prp: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"prp: "</code></pre></td>
 <td align="left"><p>Manage device and driver properties</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;reg: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"reg: "</code></pre></td>
 <td align="left"><p>Manage registry settings</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;set: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"set: "</code></pre></td>
 <td align="left"><p>General setup</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;sig: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"sig: "</code></pre></td>
 <td align="left"><p>Verify digital signatures</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;sto: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"sto: "</code></pre></td>
 <td align="left"><p>Manage the driver store</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre space="preserve"><code>&quot;ui : &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"ui : "</code></pre></td>
 <td align="left"><p>Manage user interface dialog boxes</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre space="preserve"><code>&quot;ump: &quot;</code></pre></td>
+<td align="left"><pre space="preserve"><code>"ump: "</code></pre></td>
 <td align="left"><p>User-mode PnP manager</p></td>
 </tr>
 </tbody>
@@ -174,10 +174,4 @@ When SetupAPI creates a section that groups operations that apply to a device in
 ```
 
  
-
- 
-
-
-
-
 

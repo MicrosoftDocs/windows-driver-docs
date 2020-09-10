@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 # KeXxxTimer Routines, KTIMER Objects, and DPCs
 
 
-Starting with Windows 2000, a set of **Ke*Xxx*Timer** routines is available to manage timers. These routines use timer objects that are based on the [**KTIMER**](https://msdn.microsoft.com/library/windows/hardware/ff554250) structure. To create a timer object, a driver first allocates storage for a **KTIMER** structure. Then the driver calls a routine such as [**KeInitializeTimer**](https://msdn.microsoft.com/library/windows/hardware/ff552168) or [**KeInitializeTimerEx**](https://msdn.microsoft.com/library/windows/hardware/ff552173) to initialize this structure.
+Starting with Windows 2000, a set of **Ke*Xxx*Timer** routines is available to manage timers. These routines use timer objects that are based on the [**KTIMER**](./eprocess.md) structure. To create a timer object, a driver first allocates storage for a **KTIMER** structure. Then the driver calls a routine such as [**KeInitializeTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimer) or [**KeInitializeTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimerex) to initialize this structure.
 
 
 
 
-A timer can be set to expire just once, or to expire repeatedly after a given interval. [**KeSetTimer**](https://msdn.microsoft.com/library/windows/hardware/ff553286) always sets a timer that will expire just once. [**KeSetTimerEx**](https://msdn.microsoft.com/library/windows/hardware/ff553292) accepts an optional *Period* parameter, which specifies a recurring timer interval.
+A timer can be set to expire just once, or to expire repeatedly after a given interval. [**KeSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer) always sets a timer that will expire just once. [**KeSetTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex) accepts an optional *Period* parameter, which specifies a recurring timer interval.
 
 An optional [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine (a type of deferred procedure call) can be associated with either a notification timer or a synchronization timer. This routine executes when the specified time interval expires. For more information, see [Using Timer Objects](using-timer-objects.md).
 
@@ -35,9 +35,4 @@ The following topics provide more information about timer objects and DPCs:
 [Providing CustomTimerDpc Context Information](providing-customtimerdpc-context-information.md)
 [Using a CustomTimerDpc Routine](using-a-customtimerdpc-routine.md)
  
-
- 
-
-
-
 

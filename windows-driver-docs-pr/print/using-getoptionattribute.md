@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 This function is supported only for PPD features. If a certain attribute is not available, **GetOptionAttribute** returns E\_INVALIDARG.
 
-In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](https://msdn.microsoft.com/library/windows/hardware/ff548692) enumerated type.
+In the following table, the *pdwDataType* parameter takes values of the [**EATTRIBUTE\_DATATYPE**](/windows-hardware/drivers/ddi/printoem/ne-printoem-_eattribute_datatype) enumerated type.
 
 ### Output Parameters for General Option Attributes
 
@@ -35,28 +35,28 @@ In the following table, the *pdwDataType* parameter takes values of the [**EATTR
 <tr class="odd">
 <td><p><strong>DisplayName</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_UNICODE</p>
-<p><em>pbData</em>: null-terminated Unicode string of the option keyword name&#39;s translation string</p>
+<p><em>pbData</em>: null-terminated Unicode string of the option keyword name's translation string</p>
 <p><em></em>pcbNeeded</em>: byte count of the Unicode string pointed to by <em>pbData</em> (including the null terminator)</p>
 <p>This option attribute is available to any option that <strong>EnumOptions</strong> can return on a PPD feature.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Invocation</strong></p></td>
 <td><p><em><em>pdwDataType</em>: kADT_BINARY</p>
-<p><em>pbData</em>: byte array for the option&#39;s InvocationValue.</p>
+<p><em>pbData</em>: byte array for the option's InvocationValue.</p>
 <p><em></em>pcbNeeded</em>: byte count of the binary data pointed to by <em>pbData</em></p>
-<p>This option attribute is available to any option that <strong>EnumOptions</strong> can return on a PPD feature. If the option&#39;s InvocationValue is empty, the function will set <em>pdwDataType</em> as above, set <em><em>pcbNeeded</em> = 0, and then return S_OK.</p></td>
+<p>This option attribute is available to any option that <strong>EnumOptions</strong> can return on a PPD feature. If the option's InvocationValue is empty, the function will set <em>pdwDataType</em> as above, set <em><em>pcbNeeded</em> = 0, and then return S_OK.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>OrderDependencyValue</strong></p></td>
 <td><p></em>pdwDataType: kADT_LONG</p>
-<p><em><em>pbData</em>: the relative order specified by the PPD&#39;s <em>OrderDependency or *NonUIOrderDependency keyword for this option. Notice that the first parameter of these keywords is a real number that is converted to a LONG and returned.</p>
+<p><em><em>pbData</em>: the relative order specified by the PPD's <em>OrderDependency or *NonUIOrderDependency keyword for this option. Notice that the first parameter of these keywords is a real number that is converted to a LONG and returned.</p>
 <p><em></em>pcbNeeded</em>: <strong>sizeof</strong>(LONG)</p>
 <p>This option attribute is available only for an option that has an <em>OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>OrderDependencySection</strong></p></td>
 <td><p><em></em>pdwDataType</em>: kADT_ASCII</p>
-<p><em>pbData</em>: null-terminated ASCII string containing one of following section names: &quot;ExitServer&quot; &quot;Prolog&quot; &quot;DocumentSetup&quot; &quot;PageSetup&quot; &quot;JCLSetup&quot; &quot;AnySetup&quot;.</p>
+<p><em>pbData</em>: null-terminated ASCII string containing one of following section names: "ExitServer" "Prolog" "DocumentSetup" "PageSetup" "JCLSetup" "AnySetup".</p>
 <p><em></em>pcbNeeded</em>: byte count of the ASCII string pointed to by <em>pbData</em> (including the null terminator)</p>
 <p>This option attribute is available only for an option that has an *OrderDependency or *NonUIOrderDependency entry in the PPD, and the entry does not omit optionKeyword.</p></td>
 </tr>
@@ -155,7 +155,7 @@ This option attribute is available only to the "CustomPageSize" option of the "P
 
 *\*pdwDataType*: kADT\_CUSTOMSIZEPARAMS
 
-*pbData*: an array of CUSTOMPARAM\_MAX elements, where each element is a [**CUSTOMSIZEPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff547337) structure. Each element of this array stores values specified in the PPD's \*ParamCustomPageSize keyword's paramOption entry. For paramOption other than "Orientation", lMinVal and lMaxVal values are in microns. For "Orientation", lMinVal and lMaxVal values are in the range of \[0, 3\].
+*pbData*: an array of CUSTOMPARAM\_MAX elements, where each element is a [**CUSTOMSIZEPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_customsizeparam) structure. Each element of this array stores values specified in the PPD's \*ParamCustomPageSize keyword's paramOption entry. For paramOption other than "Orientation", lMinVal and lMaxVal values are in microns. For "Orientation", lMinVal and lMaxVal values are in the range of \[0, 3\].
 
 *\*pcbNeeded*: **sizeof**(CUSTOMSIZEPARAM) \* CUSTOMPARAM\_MAX
 
@@ -189,7 +189,7 @@ This option attribute is available to any option of the "InstalledMemory" PPD fe
 
 ### Note on ParamCustomPageSize
 
-Here is some sample code that shows how to obtain the PPD file's original order, min, and max values of the "\*ParamCustomPageSize Width" entry. The CUSTOMPARAM\_WIDTH constant, which is defined in printoem.h, indicates the offset of the [**CUSTOMSIZEPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff547337) structure that contains the information related to the Width entry. This structure is one of CUSTOMPARAM\_MAX CUSTOMSIZEPARAM structures that form an array of such structures. The printoem.h header defines a set of constants named CUSTOMPARAM\_XXX listing the offsets of the structures in this array (Width, Height, WidthOffset, HeightOffset, and Orientation).
+Here is some sample code that shows how to obtain the PPD file's original order, min, and max values of the "\*ParamCustomPageSize Width" entry. The CUSTOMPARAM\_WIDTH constant, which is defined in printoem.h, indicates the offset of the [**CUSTOMSIZEPARAM**](/windows-hardware/drivers/ddi/printoem/ns-printoem-_customsizeparam) structure that contains the information related to the Width entry. This structure is one of CUSTOMPARAM\_MAX CUSTOMSIZEPARAM structures that form an array of such structures. The printoem.h header defines a set of constants named CUSTOMPARAM\_XXX listing the offsets of the structures in this array (Width, Height, WidthOffset, HeightOffset, and Orientation).
 
 ```cpp
 PCUSTOMSIZEPARAM  pCSParam;
@@ -205,9 +205,4 @@ max = pCSParam->lMaxVal / 25400.0 * 72.0;
 ```
 
  
-
- 
-
-
-
 

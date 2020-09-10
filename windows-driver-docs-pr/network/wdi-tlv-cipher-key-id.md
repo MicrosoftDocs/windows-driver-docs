@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CIPHER\_KEY\_ID
 
 
-WDI\_TLV\_CIPHER\_KEY\_ID is a TLV that contains a cipher key ID for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://msdn.microsoft.com/library/windows/hardware/dn925855) and [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](https://msdn.microsoft.com/library/windows/hardware/dn925929).
+WDI\_TLV\_CIPHER\_KEY\_ID is a TLV that contains a cipher key ID for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md) and [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](./oid-wdi-set-delete-cipher-keys.md).
 
 ## TLV Type
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

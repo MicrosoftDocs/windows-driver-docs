@@ -27,10 +27,10 @@ These topics describe the architecture and public interface between the NFC clas
 ## NFC driver DDI
 The following are the Windows-defined NFC driver DDI that are implemented by the NFC CX driver:
 
--   [Near Field Proximity DDI](https://msdn.microsoft.com/library/windows/hardware/jj866056)
--   [NFC Secure Element Management DDI](https://msdn.microsoft.com/library/windows/hardware/dn905485)
--   [Smart Card DDI for contactless smart card access](https://msdn.microsoft.com/library/windows/hardware/dn905601)
--   [NFC Radio Management DDI](https://msdn.microsoft.com/library/windows/hardware/dn905577)
+-   [Near Field Proximity DDI](/windows-hardware/drivers/ddi/index)
+-   [NFC Secure Element Management DDI](/windows-hardware/drivers/ddi/index)
+-   [Smart Card DDI for contactless smart card access](/previous-versions/dn905601(v=vs.85))
+-   [NFC Radio Management DDI](/windows-hardware/drivers/ddi/index)
 -   DTA DDI for NFC Forum certification
 
 ## NFC forum specifications
@@ -77,5 +77,5 @@ The following are the NFC smart cards and tags supported by the NFC CX driver:
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/_nfpdrivers/)  
-[NFC class extension (CX) reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/nfccx/)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/_nfpdrivers/)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/nfccx/)

@@ -48,18 +48,11 @@ Name: Switch Extensibility Test Extension 1
 ## Related topics
 
 
-[Get-VMSwitch](https://technet.microsoft.com/library/hh848499.aspx)
+[Get-VMSwitch](/powershell/module/hyper-v/get-vmswitch)
 
-[**Msvm\_EthernetSwitchExtension**](https://msdn.microsoft.com/library/hh850139)
+[**Msvm\_EthernetSwitchExtension**](/windows/desktop/HyperV_v2/msvm-ethernetswitchextension)
 
-[**Msvm\_VirtualEthernetSwitchSettingData**](https://msdn.microsoft.com/library/hh850246)
-
- 
+[**Msvm\_VirtualEthernetSwitchSettingData**](/windows/desktop/HyperV_v2/msvm-virtualethernetswitchsettingdata)
 
  
-
-
-
-
-
 

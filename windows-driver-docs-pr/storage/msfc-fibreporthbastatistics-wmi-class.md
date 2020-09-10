@@ -47,15 +47,9 @@ class MSFC_FibrePortHBAStatistics
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_FibrePortHBAStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff562503)
+[**MSFC\_FibrePortHBAStatistics**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fibreporthbastatistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

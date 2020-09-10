@@ -7,7 +7,7 @@ ms.date: 10/17/2018
 
 # Using a Component INF File
 
-If you want to include user-mode software for use with a device on Windows 10, you have the following options to create a [DCHU-compliant universal driver](../develop/getting-started-with-universal-drivers.md):
+If you want to include user-mode software for use with a device on Windows 10, you have the following options to create a [DCH-compliant driver](../develop/getting-started-with-windows-drivers.md):
     
 |Method|Scenario|
 |---|---|
@@ -75,17 +75,17 @@ To retrieve the device instance ID of a device that is associated with a softwar
 
 The executable can then retrieve the device instance ID of the software component from its incoming argument list.  
 
-Next, if the software component is targeting the Universal [target platform](../develop/windows-10-editions-for-universal-drivers.md), use the following procedure:
+Next, if the software component is targeting the Universal [target platform](../develop/target-platforms.md), use the following procedure:
 
-1. Call [**CM_Locate_DevNode**](https://msdn.microsoft.com/library/windows/hardware/ff538742) with the device instance ID of the software component to retrieve a device handle.
-2. Call [**CM_Get_Parent**](https://msdn.microsoft.com/library/windows/hardware/ff538610) to retrieve a handle to that device’s parent.  This parent is the device that added the software component using the [INF AddComponent Directive](inf-addcomponent-directive.md).
-3. Then, to retrieve the device instance ID of the parent, call [**CM_Get_Device_ID**](https://msdn.microsoft.com/library/windows/hardware/ff538405) on the handle from [**CM_Get_Parent**](https://msdn.microsoft.com/library/windows/hardware/ff538610).
+1. Call [**CM_Locate_DevNode**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_locate_devnodea) with the device instance ID of the software component to retrieve a device handle.
+2. Call [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to retrieve a handle to that device’s parent.  This parent is the device that added the software component using the [INF AddComponent Directive](inf-addcomponent-directive.md).
+3. Then, to retrieve the device instance ID of the parent, call [**CM_Get_Device_ID**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) on the handle from [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent).
 
-If the software component is targeting the Desktop [target platform](../develop/windows-10-editions-for-universal-drivers.md) only, use the following procedure:
+If the software component is targeting the Desktop [target platform](../develop/target-platforms.md) only, use the following procedure:
 
-1. Call [**SetupDiCreateDeviceInfoList**](https://msdn.microsoft.com/library/windows/hardware/ff550956) to create an empty device information set.
-2. Call [**SetupDiOpenDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff552071) with the software component device's device instance ID.
-3. Call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) with `DEVPKEY_Device_Parent` to retrieve the device instance ID of the parent.
+1. Call [**SetupDiCreateDeviceInfoList**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinfolist) to create an empty device information set.
+2. Call [**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) with the software component device's device instance ID.
+3. Call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) with `DEVPKEY_Device_Parent` to retrieve the device instance ID of the parent.
 
 ## Example
 
@@ -173,9 +173,9 @@ CONTOSO = "Contoso"
 ContosoCtrlPnl.DeviceDesc = "Contoso Control Panel" 
 ```
 
-The driver validation and submission process is the same for component INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://msdn.microsoft.com/library/windows/hardware/dn915002).
+The driver validation and submission process is the same for component INFs as for regular INFs. For more info, see [Windows HLK Getting Started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
-For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://msdn.microsoft.com/library/windows/hardware/ff553426).
+For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](./system-defined-device-setup-classes-available-to-vendors.md).
 
 ## See Also
 

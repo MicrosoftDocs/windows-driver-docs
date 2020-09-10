@@ -25,13 +25,7 @@ class ISCSI_TargetPortal {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortal**](https://msdn.microsoft.com/library/windows/hardware/ff561574) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_TargetPortal**](/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_targetportal) data structure.
 
  
-
- 
-
-
-
-
 

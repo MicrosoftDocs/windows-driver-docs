@@ -24,9 +24,9 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-This OID returns the time, starting from the last computer restart, when the interface entered its current operational state. For more information about the operational state, see [**NDIS\_STATUS\_OPER\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567406) and [OID\_GEN\_OPERATIONAL\_STATUS](oid-gen-operational-status.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](https://msdn.microsoft.com/library/windows/hardware/ff562675) function.
+This OID returns the time, starting from the last computer restart, when the interface entered its current operational state. For more information about the operational state, see [**NDIS\_STATUS\_OPER\_STATUS**](./ndis-status-oper-status.md) and [OID\_GEN\_OPERATIONAL\_STATUS](oid-gen-operational-status.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex) function.
 
 If the current operational state was entered before the last reinitialization of the interface, this value should be zero. . If the interface provider does not track operational state change time, the value should be zero.
 
@@ -53,16 +53,11 @@ Requirements
 
 [OID\_GEN\_OPERATIONAL\_STATUS](oid-gen-operational-status.md)
 
-[**NDIS\_STATUS\_OPER\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff567406)
+[**NDIS\_STATUS\_OPER\_STATUS**](./ndis-status-oper-status.md)
 
-[**NdisGetSystemUpTimeEx**](https://msdn.microsoft.com/library/windows/hardware/ff562675)
+[**NdisGetSystemUpTimeEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex)
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
-
- 
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
-
-
 

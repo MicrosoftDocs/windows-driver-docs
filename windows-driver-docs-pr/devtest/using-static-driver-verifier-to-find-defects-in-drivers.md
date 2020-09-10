@@ -23,7 +23,7 @@ Use the following steps to prepare your code for analysis.
 
 1.  **Declare driver-supplied functions by using function role types**
 
-    SDV requires that the functions be declared by using function role type declarations. For example, a [*DriverEntry*](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine must be declared by using the DRIVER\_INITIALIZE function role type:
+    SDV requires that the functions be declared by using function role type declarations. For example, a [*DriverEntry*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine must be declared by using the DRIVER\_INITIALIZE function role type:
 
     ```
     DRIVER_INITIALIZE DriverEntry;
@@ -67,7 +67,7 @@ Use the following steps to prepare your code for analysis.
 
 2.  **Run Code Analysis for C/C++**
 
-    To help you determine whether the source code is prepared, run the [Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836) in Visual Studio. The Code Analysis tool checks for function role type declarations, which SDV requires. The Code Analysis tool can help identify any function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
+    To help you determine whether the source code is prepared, run the [Code Analysis tool](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)) in Visual Studio. The Code Analysis tool checks for function role type declarations, which SDV requires. The Code Analysis tool can help identify any function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
 
     -   Open your driver project in Visual Studio.
     -   From the **Build** menu, click **Run Code Analysis on Solution**.
@@ -117,7 +117,7 @@ Use the following steps to prepare your code for analysis.
 
     Static Driver Verifier detects the type of driver you are analyzing (WDF, WDM, NDIS, or Storport) and selects the default set of rules for your driver type. If this is the first time you are running SDV on your driver, you should run the default rule set.
 
-    For information about the rules, see [DDI Compliance Rules](https://msdn.microsoft.com/library/windows/hardware/ff552840).
+    For information about the rules, see [DDI Compliance Rules](/windows-hardware/drivers/ddi/index).
 
 5.  Start the static analysis. Click the **Main** tab, and click **Start**. When you click **Start**, a message is displayed to let you know that static analysis is scheduled and that the analysis can take a long time to run. Click **OK** to continue. The analysis begins at the time you scheduled.
 
@@ -150,16 +150,6 @@ If SDV reports timeouts or fails to return useful results, you might need to cha
 
 [Using Function Role Type Declarations](using-function-role-type-declarations.md)
 
-[Static Driver Verifier Rules](https://msdn.microsoft.com/library/windows/hardware/ff552840)
+[Static Driver Verifier Rules](/windows-hardware/drivers/ddi/index)
 
-[Code Analysis tool](https://go.microsoft.com/fwlink/p/?linkid=226836)
-
-
-
-
-
-
-
-
-
-
+[Code Analysis tool](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120))

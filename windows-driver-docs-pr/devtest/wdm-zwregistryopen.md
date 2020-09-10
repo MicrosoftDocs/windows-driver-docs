@@ -16,33 +16,31 @@ ms.localizationpriority: medium
 # ZwRegistryOpen rule (wdm)
 
 
-The [**ZwRegistryOpen**](storport-zwregistryopen.md) rule specifies that after calling [**ZwOpenKey**](https://msdn.microsoft.com/library/windows/hardware/ff567014), the driver calls the following registry functions only while holding an open handle to a registry key (that is, before calling [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417) or [**ZwDeleteKey**](https://msdn.microsoft.com/library/windows/hardware/ff566437)):
+The [**ZwRegistryOpen**](storport-zwregistryopen.md) rule specifies that after calling [**ZwOpenKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenkey), the driver calls the following registry functions only while holding an open handle to a registry key (that is, before calling [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) or [**ZwDeleteKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey)):
 
--   [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417)
+-   [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose)
 
--   [**ZwDeleteKey**](https://msdn.microsoft.com/library/windows/hardware/ff566437)
+-   [**ZwDeleteKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey)
 
--   [**ZwEnumerateKey**](https://msdn.microsoft.com/library/windows/hardware/ff566447)
+-   [**ZwEnumerateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwenumeratekey)
 
--   [**ZwEnumerateValueKey**](https://msdn.microsoft.com/library/windows/hardware/ff566453)
+-   [**ZwEnumerateValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwenumeratevaluekey)
 
--   [**ZwFlushKey**](https://msdn.microsoft.com/library/windows/hardware/ff566457)
+-   [**ZwFlushKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwflushkey)
 
--   [**ZwQueryKey**](https://msdn.microsoft.com/library/windows/hardware/ff567060)
+-   [**ZwQueryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwquerykey)
 
--   [**ZwQueryValueKey**](https://msdn.microsoft.com/library/windows/hardware/ff567069)
+-   [**ZwQueryValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwqueryvaluekey)
 
--   [**ZwSetValueKey**](https://msdn.microsoft.com/library/windows/hardware/ff567109)
+-   [**ZwSetValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey)
 
-This rule also specifies that the driver must not call [**ZwOpenKey**](https://msdn.microsoft.com/library/windows/hardware/ff567014) if it is already holding an open handle to that registry key.
+This rule also specifies that the driver must not call [**ZwOpenKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenkey) if it is already holding an open handle to that registry key.
 
 Finally, this rule specifies that the driver must not return from the dispatch routine or cancel routine while holding an open handle to a registry key.
 
-This rule does not verify that the driver is holding an open handle to the correct registry key when it calls [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417) or [**ZwDeleteKey**](https://msdn.microsoft.com/library/windows/hardware/ff566437).
+This rule does not verify that the driver is holding an open handle to the correct registry key when it calls [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) or [**ZwDeleteKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey).
 
-|              |     |
-|--------------|-----|
-| Driver model | WDM |
+**Driver model: WDM**
 
 How to test
 -----------
@@ -58,14 +56,14 @@ How to test
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Run <a href="https://msdn.microsoft.com/library/windows/hardware/ff552808" data-raw-source="[Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)">Static Driver Verifier</a> and specify the <strong>ZwRegistryOpen</strong> rule.</p>
+<td align="left"><p>Run <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier" data-raw-source="[Static Driver Verifier](./static-driver-verifier.md)">Static Driver Verifier</a> and specify the <strong>ZwRegistryOpen</strong> rule.</p>
 Use the following steps to run an analysis of your code:
 <ol>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](https://msdn.microsoft.com/library/windows/hardware/hh454281#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](https://msdn.microsoft.com/library/windows/hardware/hh454281#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
-<li><a href="https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](https://msdn.microsoft.com/library/windows/hardware/hh454281#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#preparing-your-source-code" data-raw-source="[Prepare your code (use role type declarations).](./using-static-driver-verifier-to-find-defects-in-drivers.md#preparing-your-source-code)">Prepare your code (use role type declarations).</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running-static-driver-verifier" data-raw-source="[Run Static Driver Verifier.](./using-static-driver-verifier-to-find-defects-in-drivers.md#running-static-driver-verifier)">Run Static Driver Verifier.</a></li>
+<li><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#viewing-and-analyzing-the-results" data-raw-source="[View and analyze the results.](./using-static-driver-verifier-to-find-defects-in-drivers.md#viewing-and-analyzing-the-results)">View and analyze the results.</a></li>
 </ol>
-<p>For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh454281" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](https://msdn.microsoft.com/library/windows/hardware/hh454281)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
+<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers" data-raw-source="[Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md)">Using Static Driver Verifier to Find Defects in Drivers</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -73,25 +71,19 @@ Use the following steps to run an analysis of your code:
 Applies to
 ----------
 
-[**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417)
-[**ZwCreateKey**](https://msdn.microsoft.com/library/windows/hardware/ff566425)
-[**ZwDeleteKey**](https://msdn.microsoft.com/library/windows/hardware/ff566437)
-[**ZwEnumerateKey**](https://msdn.microsoft.com/library/windows/hardware/ff566447)
-[**ZwEnumerateValueKey**](https://msdn.microsoft.com/library/windows/hardware/ff566453)
-[**ZwFlushKey**](https://msdn.microsoft.com/library/windows/hardware/ff566457)
-[**ZwOpenKey**](https://msdn.microsoft.com/library/windows/hardware/ff567014)
-[**ZwQueryKey**](https://msdn.microsoft.com/library/windows/hardware/ff567060)
-[**ZwQueryValueKey**](https://msdn.microsoft.com/library/windows/hardware/ff567069)
-[**ZwSetValueKey**](https://msdn.microsoft.com/library/windows/hardware/ff567109)
+[**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose)
+[**ZwCreateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)
+[**ZwDeleteKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey)
+[**ZwEnumerateKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwenumeratekey)
+[**ZwEnumerateValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwenumeratevaluekey)
+[**ZwFlushKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwflushkey)
+[**ZwOpenKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenkey)
+[**ZwQueryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwquerykey)
+[**ZwQueryValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwqueryvaluekey)
+[**ZwSetValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey)
 See also
 --------
 
 [**ZwRegistryCreate**](wdm-zwregistrycreate.md)
  
-
- 
-
-
-
-
 

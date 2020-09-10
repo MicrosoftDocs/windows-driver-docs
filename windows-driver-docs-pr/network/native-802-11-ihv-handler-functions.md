@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Native 802.11 IHV Handler functions
 
 >[!IMPORTANT]
-> The [Native 802.11 Wireless LAN](native-802-11-wireless-lan4.md) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide).
+> The [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/native-802-11-wireless-lan4) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](./wdi-miniport-driver-design-guide.md).
 
 The Native 802.11 IHV Handler functions are provided by the IHV Extensions DLL and are called by the operating system to do the following:
 
@@ -23,30 +23,29 @@ The Native 802.11 IHV Handler functions are provided by the IHV Extensions DLL a
 For more information about the IHV UI Extensions DLL, see [Native 802.11 IHV UI Extensions DLL](native-802-11-ihv-ui-extensions-dll2.md).
 
 > [!NOTE]
-> With the exception of [Dot11ExtIhvGetVersionInfo](https://msdn.microsoft.com/library/windows/hardware/ff547464) and [Dot11ExtIhvInitService](https://msdn.microsoft.com/library/windows/hardware/ff547470), the operating system calls the IHV Handler functions through a function pointer associated with a member of the [DOT11EXT_IHV_HANDLERS](https://msdn.microsoft.com/library/windows/hardware/ff547625) structure. When the operating system calls the *Dot11ExtIhvInitService* IHV Handler function, the IHV Extensions DLL returns the list of pointers to the IHV Handler functions through the *pDot11IHVHandlers* parameter.
+> With the exception of [Dot11ExtIhvGetVersionInfo](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_get_version_info) and [Dot11ExtIhvInitService](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_init_service), the operating system calls the IHV Handler functions through a function pointer associated with a member of the [DOT11EXT_IHV_HANDLERS](/windows-hardware/drivers/ddi/wlanihv/ns-wlanihv-_dot11ext_ihv_handlers) structure. When the operating system calls the *Dot11ExtIhvInitService* IHV Handler function, the IHV Extensions DLL returns the list of pointers to the IHV Handler functions through the *pDot11IHVHandlers* parameter.
 
 This section describes the following Native 802.11 IHV Handler functions.
 
-- [Dot11ExtIhvAdapterReset](https://msdn.microsoft.com/library/windows/hardware/ff547434)
-- [Dot11ExtIhvControl](https://msdn.microsoft.com/library/windows/hardware/ff547438)
-- [Dot11ExtIhvCreateDiscoveryProfiles](https://msdn.microsoft.com/library/windows/hardware/ff547445)
-- [Dot11ExtIhvDeinitAdapter](https://msdn.microsoft.com/library/windows/hardware/ff547452)
-- [Dot11ExtIhvDeinitService](https://msdn.microsoft.com/library/windows/hardware/ff547457)
-- [Dot11ExtIhvGetVersionInfo](https://msdn.microsoft.com/library/windows/hardware/ff547464)
-- [Dot11ExtIhvInitAdapter](https://msdn.microsoft.com/library/windows/hardware/ff547469)
-- [Dot11ExtIhvInitService](https://msdn.microsoft.com/library/windows/hardware/ff547470)
-- [Dot11ExtIhvInitVirtualStation](https://msdn.microsoft.com/library/windows/hardware/ff547475)
-- [Dot11ExtIhvIsUIRequestPending](https://msdn.microsoft.com/library/windows/hardware/ff547479)
-- [Dot11ExtIhvOneXIndicateResult](https://msdn.microsoft.com/library/windows/hardware/ff547482)
-- [Dot11ExtIhvPerformCapabilityMatch](https://msdn.microsoft.com/library/windows/hardware/ff547488)
-- [Dot11ExtIhvPerformPostAssociate](https://msdn.microsoft.com/library/windows/hardware/ff547492)
-- [Dot11ExtIhvPerformPreAssociate](https://msdn.microsoft.com/library/windows/hardware/ff547499)
-- [Dot11ExtIhvProcessSessionChange](https://msdn.microsoft.com/library/windows/hardware/ff547501)
-- [Dot11ExtIhvProcessUIResponse](https://msdn.microsoft.com/library/windows/hardware/ff547504)
-- [Dot11ExtIhvQueryUIRequest](https://msdn.microsoft.com/library/windows/hardware/ff547507)
-- [Dot11ExtIhvReceiveIndication](https://msdn.microsoft.com/library/windows/hardware/ff547512)
-- [Dot11ExtIhvReceivePacket](https://msdn.microsoft.com/library/windows/hardware/ff547513)
-- [Dot11ExtIhvSendPacketCompletion](https://msdn.microsoft.com/library/windows/hardware/ff547516)
-- [Dot11ExtIhvStopPostAssociate](https://msdn.microsoft.com/library/windows/hardware/ff547521)
-- [Dot11ExtIhvValidateProfile](https://msdn.microsoft.com/library/windows/hardware/ff547523)
-
+- [Dot11ExtIhvAdapterReset](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_adapter_reset)
+- [Dot11ExtIhvControl](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_control)
+- [Dot11ExtIhvCreateDiscoveryProfiles](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_create_discovery_profiles)
+- [Dot11ExtIhvDeinitAdapter](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_deinit_adapter)
+- [Dot11ExtIhvDeinitService](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_deinit_service)
+- [Dot11ExtIhvGetVersionInfo](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_get_version_info)
+- [Dot11ExtIhvInitAdapter](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_init_adapter)
+- [Dot11ExtIhvInitService](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_init_service)
+- [Dot11ExtIhvInitVirtualStation](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_init_virtual_station)
+- [Dot11ExtIhvIsUIRequestPending](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_is_ui_request_pending)
+- [Dot11ExtIhvOneXIndicateResult](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_onex_indicate_result)
+- [Dot11ExtIhvPerformCapabilityMatch](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_perform_capability_match)
+- [Dot11ExtIhvPerformPostAssociate](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_perform_post_associate)
+- [Dot11ExtIhvPerformPreAssociate](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_perform_pre_associate)
+- [Dot11ExtIhvProcessSessionChange](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_process_session_change)
+- [Dot11ExtIhvProcessUIResponse](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_process_ui_response)
+- [Dot11ExtIhvQueryUIRequest](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_query_ui_request)
+- [Dot11ExtIhvReceiveIndication](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_receive_indication)
+- [Dot11ExtIhvReceivePacket](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_receive_packet)
+- [Dot11ExtIhvSendPacketCompletion](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_send_packet_completion)
+- [Dot11ExtIhvStopPostAssociate](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_stop_post_associate)
+- [Dot11ExtIhvValidateProfile](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11extihv_validate_profile)

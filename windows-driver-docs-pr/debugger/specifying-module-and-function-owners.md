@@ -62,7 +62,7 @@ The following example uses the previous sample Triage.ini file.
 Followup:  Person3
 ```
 
-According to the file, "Person3" owns **module2!functionB**, and "Person4" owns **module2!funct\\**<em>. Both of these strings match the argument that is passed to **!owner</em>*, so the more complete match is used.
+According to the file, "Person3" owns **module2!functionB**, and "Person4" owns **module2!funct\\**<em>. Both of these strings match the argument that is passed to **!owner**, so the more complete match is used.
 
 ### <span id="triage_ini_and__analyze"></span><span id="TRIAGE_INI_AND__ANALYZE"></span> Triage.ini and !analyze
 
@@ -104,7 +104,7 @@ A more complete match takes precedence over a shorter match. However, a module n
 
 If you omit the exclamation point and function name or add **!\\*** after a module name, all functions in that module are indicated. If a function within this module is also specified separately, the more precise specification takes precedence.
 
-If you use "default" as a module name or a function name, it is equivalent to a wildcard character. For example, **nt!\\*** is the same as **nt!default**, and **default** is the same as **\*!\\***.
+If you use "default" as a module name or a function name, it is equivalent to a wildcard character. For example, **nt!\\*** is the same as **nt!default**, and **default** is the same as **\*!\\\***.
 
 If a match is made, but the word **ignore** appears to the right of the equal sign (=), the debugger continues to the next frame in the stack.
 

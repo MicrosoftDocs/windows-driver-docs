@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # Driver Signing Policy
 
 > [!NOTE]
-> Starting with Windows 10, version 1607, Windows will not load any new kernel-mode drivers which are not signed by the Dev Portal.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program). Note that an [EV code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate) is required to establish a dashboard account.
+> Starting with Windows 10, version 1607, Windows will not load any new kernel-mode drivers which are not signed by the Dev Portal.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md). Note that an [EV code signing certificate](../dashboard/get-a-code-signing-certificate.md) is required to establish a dashboard account.
 
 There are many different ways to submit drivers to the portal.  For production drivers, you should submit HLK/HCK test logs, as described below.  For testing on Windows 10 client only systems, you can submit your drivers for [attestation signing](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md), which does not require HLK testing.  Or, you can submit your driver for Test signing as described on the [Create a new hardware submission](../dashboard/create-a-new-hardware-submission.md) page.
 
@@ -30,7 +30,7 @@ Cross-signed drivers are still permitted if any of the following are true:
 * Secure Boot is off in the BIOS.
 * Drivers was signed with an end-entity certificate issued prior to July 29th 2015 that chains to a supported cross-signed CA.
 
-For more info, see [Driver Signing Changes in Windows 10, version 1607](https://blogs.msdn.microsoft.com/windows_hardware_certification/2016/07/26/driver-signing-changes-in-windows-10-version-1607/).
+To prevent systems from failing to boot properly, boot drivers will not be blocked, but they will be removed by the Program Compatibility Assistant.
 
 ## Signing a driver for client versions of Windows
 
@@ -38,11 +38,11 @@ To sign a driver for Windows 10, follow these steps:
 
 1. For each version of Windows 10 that you want to certify on, download the Windows HLK (Hardware Lab Kit) for that version and run a full cert pass against the client for that version. You'll get one log per version.
 2. If you have multiple logs, merge them into a single log using the most recent HLK.
-3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](../dashboard/index.md).
+3. Submit your driver and the merged HLK test results to the [Windows Hardware Developer Center Dashboard portal](../dashboard/index.yml).
 
-For version-specific details, please review the [WHCP (Windows Hardware Compatibility Program) policy](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-specifications-policies) for the Windows versions you want to target.
+For version-specific details, please review the [WHCP (Windows Hardware Compatibility Program) policy](/windows-hardware/design/compatibility/whcp-specifications-policies) for the Windows versions you want to target.
 
-To sign a driver for Windows 7, Windows 8, or Windows 8.1, use the appropriate HCK (Hardware Certification Kit).  For more information, see the [Windows Hardware Certification Kit User's Guide](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
+To sign a driver for Windows 7, Windows 8, or Windows 8.1, use the appropriate HCK (Hardware Certification Kit).  For more information, see the [Windows Hardware Certification Kit User's Guide](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 ## Signing a driver for earlier versions of Windows
 
@@ -58,21 +58,34 @@ The following table shows signing policies for client operating system versions.
 
 Note that Secure Boot does not apply to Windows Vista and Windows 7.
 
-|Applies to:|Windows Vista, Windows 7; Windows 8+ with Secure Boot off|Windows 8, Windows 8.1, Windows 10, versions 1507 and 1511 with Secure Boot on|Windows 10, version 1607+ with Secure Boot on|
-|--- |--- |--- |--- |
-|**Architectures:**|64-bit only, no signature required for 32-bit|64-bit, 32-bit|64-bit, 32-bit|
-|**Signature required:**|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|
-|**Signature algorithm:**|SHA1|SHA1|SHA2 or SHA1|
-|**Certificate:**|Standard roots trusted by Code Integrity|Standard roots trusted by Code Integrity|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|
+|Applies to:|Windows Vista, Windows 7; Windows 8+ with Secure Boot off|Windows 8, Windows 8.1, Windows 10, versions 1507, 1511 with Secure Boot on|Windows 10, versions 1607, 1703, 1709 with Secure Boot on|Windows 10, version 1803+ with Secure Boot on|
+|--- |--- |--- |--- |--- |
+|**Architectures:**|64-bit only, no signature required for 32-bit|64-bit, 32-bit|64-bit, 32-bit|64-bit, 32-bit|
+|**Signature required:**|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|Embedded or catalog file|
+|**Signature algorithm:**|SHA2|SHA2|SHA2|SHA2|
+|**Certificate:**|Standard roots trusted by Code Integrity|Standard roots trusted by Code Integrity|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|Microsoft Root Authority 2010, Microsoft Root Certificate Authority, Microsoft Root Authority|
 
 In addition to driver code signing, you also need to meet the PnP device installation signing requirements for installing a driver.  For more info, see [Plug and Play (PnP) device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
-For info about signing an ELAM driver, see [Early launch antimalware](https://msdn.microsoft.com/library/windows/desktop/hh848061(v=vs.85).aspx).
+For info about signing an ELAM driver, see [Early launch antimalware](/windows/desktop/w8cookbook/secured-boot).
+
+## Signing a driver for internal distribution only
+
+In some cases, you may want to distribute a driver internally within a company rather than via Windows Update.  To do this without requiring that computers running it are in test mode, use the following procedure:
+
+1. [Register for the Hardware Dev Center](../dashboard/register-for-the-hardware-program.md).
+2. Review the [Hardware dashboard FAQ](../dashboard/hardware-dashboard-faq.md) and sign appropriate agreements.
+3. Upload codesign certificates.
+4. Sign drivers locally using a non-EV codesign certificate.
+5. Package drivers in a CAB and sign the CAB using the above codesign certificate.
+6. Submit the CAB to the Hardware Dev Center for signing.
+7. If the submission is approved, the Hardware Dev Center returns the driver with a Microsoft signature.
+8. Distribute the driver internally.
 
 ## See Also
 
 * [Installing an Unsigned Driver Package during Development and Test](installing-an-unsigned-driver-during-development-and-test.md)
 * [Signing Drivers for Public Release](signing-drivers-for-public-release--windows-vista-and-later-.md)
-* [Signing Drivers during Development and Test](signing-drivers-during-development-and-test.md)
+* [Signing Drivers during Development and Test](./introduction-to-test-signing.md)
 * [Digital Signatures](driver-signing.md)
-* [Troubleshooting Install and Load Problems with Signed Driver Packages](troubleshooting-install-and-load-problems-with-signed-driver-packages.md)
+* [Troubleshooting Install and Load Problems with Signed Driver Packages](./detecting-driver-load-errors.md)

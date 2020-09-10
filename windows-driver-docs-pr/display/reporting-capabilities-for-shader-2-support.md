@@ -24,17 +24,11 @@ If a device supports vertex shader 2.0 and later, its driver must set the member
 
 -   Set the D3DDTCAPS\_UBYTE4 bit in the **DeclTypes** member to 1 to indicate support of the UBYTE4 vertex element type. For more information, see [Reporting Support of UBYTE4 Vertex Element](reporting-support-of-ubyte4-vertex-element.md).
 
-If a device supports pixel shader 2.0 and later, its driver must configure the following bits in the **TextureCaps** member to indicate whether the driver supports 2-D texture mapping as nonpowers-of-2 conditionally or unconditionally. For more information, see the description of these bits in the [**D3DPRIMCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff549034) reference page.
+If a device supports pixel shader 2.0 and later, its driver must configure the following bits in the **TextureCaps** member to indicate whether the driver supports 2-D texture mapping as nonpowers-of-2 conditionally or unconditionally. For more information, see the description of these bits in the [**D3DPRIMCAPS**](/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dprimcaps) reference page.
 
 -   Set the D3DPTEXTURECAPS\_POW2 and D3DPTEXTURECAPS\_NONPOW2CONDITIONAL bits to 1 to indicate conditional support.
 
 -   Set the D3DPTEXTURECAPS\_POW2 and D3DPTEXTURECAPS\_NONPOW2CONDITIONAL bits to 0 (that is, do not set these bits) to indicate unconditional support.
 
  
-
- 
-
-
-
-
 

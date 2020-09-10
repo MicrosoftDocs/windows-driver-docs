@@ -16,9 +16,9 @@ ms.date: 10/17/2018
 # deleteBinaries XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
-The **deleteBinaries** XML element is an empty element that sets the **deleteBinaries** flag to ON, which configures DPInst to delete binary files from a system that were copied to the system when a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) was installed.
+The **deleteBinaries** XML element is an empty element that sets the **deleteBinaries** flag to ON, which configures DPInst to delete binary files from a system that were copied to the system when a [driver package](./driver-packages.md) was installed.
 
 **Element Tag**
 
@@ -73,7 +73,7 @@ The following code example demonstrates a **deleteBinaries** element.
 </dpinst>
 ```
 
-**Note**   Starting with Windows 7, the operating system ignores a setting of ON for the **deleteBinaries** XML element. The binary files, which were copied to a system when a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) was installed, can no longer be deleted by using DPInst.
+**Note**   Starting with Windows 7, the operating system ignores a setting of ON for the **deleteBinaries** XML element. The binary files, which were copied to a system when a [driver package](./driver-packages.md) was installed, can no longer be deleted by using DPInst.
 
  
 
@@ -83,11 +83,4 @@ The following code example demonstrates a **deleteBinaries** element.
 [**dpinst**](dpinst-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

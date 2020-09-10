@@ -115,7 +115,7 @@ Here are the possible valid values for the native C++ **TestResults::Result** en
 
 
 
-**Here is the list of native C++ LogContoller methods available:**
+**Here is the list of native C++ LogController methods available:**
 
 | Native C++ LogController Methods                                                                       | Functionality                                                                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -424,7 +424,7 @@ A common use for the WexLoggerErrorCallback function would be to write out the e
 ## .NET 4.0 Compatibility
 
 
-Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be loaded into both NetFx 2/3/3.5 and NetFx 4 processes. This allows TAEF to run all managed assemblies above NetFx 2. If you're using Wex.Logger outside TAEF, then you need to add a [config file](https://msdn.microsoft.com/library/ms229689.aspx) for your exe to configure the NetFx 4 runtime to load NetFx 2/3/3.5 binaries into it's process. The config file should contain the following:
+Wex.Logger.Interop is compiled as a NetFx 2/3/3.5 binary, so that it can be loaded into both NetFx 2/3/3.5 and NetFx 4 processes. This allows TAEF to run all managed assemblies above NetFx 2. If you're using Wex.Logger outside TAEF, then you need to add a [config file](/previous-versions/visualstudio/visual-studio-2008/ms229689(v=vs.90)) for your exe to configure the NetFx 4 runtime to load NetFx 2/3/3.5 binaries into it's process. The config file should contain the following:
 
 ```cpp
 <configuration> 
@@ -456,12 +456,3 @@ static void LogController_WexLoggerError(object sender, WexLoggerErrorEventArgs 
 ```
 
 Additionally, the **LogController::InitializeLogging()** and **LogController::FinalizeLogging()** methods themselves throw WexLoggerException in the event of failure. This provides detailed information on the error, and also allows you to abort the test run before it begins. Test case authors will never need to worry about catching these exceptions - they should be expected/handled during WexLogger initializaiton/completion only.
-
-
-
-
-
-
-
-
-

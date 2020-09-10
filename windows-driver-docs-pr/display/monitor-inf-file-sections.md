@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Monitors must be installed in NT-based operating systems using an INF file. The Windows Driver Kit (WDK) provides a sample monitor INF file, *monsamp.inf*, that you should use as a template to generate an INF file for your monitor. You cannot use the *geninf.exe* tool described in [Creating Graphics INF Files](creating-graphics-inf-files.md) to generate a monitor INF.
 
-The rest of this topic comments on some of the sections in *monsamp.inf* that are of specific interest to monitor INF writers. For more general information about INF files, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
+The rest of this topic comments on some of the sections in *monsamp.inf* that are of specific interest to monitor INF writers. For more general information about INF files, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
 
 You can also use an INF file to override the monitor Extended Display Identification Data (EDID). See [Overriding Monitor EDIDs with an INF](overriding-monitor-edids.md).
 
@@ -34,7 +34,7 @@ Files that must be copied during monitor installation should be placed in the **
 profile1.icm=1
 ```
 
-For more general information, see [**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472). See [Monitor Profiles](monitor-profiles.md) for more information about color management and profiles.
+For more general information, see [**INF SourceDisksFiles Section**](../install/inf-sourcedisksfiles-section.md). See [Monitor Profiles](monitor-profiles.md) for more information about color management and profiles.
 
 ### <span id="Models_Section"></span><span id="models_section"></span><span id="MODELS_SECTION"></span>Models Section
 
@@ -54,7 +54,7 @@ Each model is represented by a single line. Each line contains three elements:
 
 -   Hardware identification -- for example, the expression **Monitor\\MON12AB** combines the device class (Monitor) and the device identification (MON12AB) as it appears in the device's *EDID*.
 
-For more general information, see [**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456).
+For more general information, see [**INF Models Section**](../install/inf-models-section.md).
 
 ### <span id="DDInstall_Section"></span><span id="ddinstall_section"></span><span id="DDINSTALL_SECTION"></span>DDInstall Section
 
@@ -67,13 +67,13 @@ AddReg=ACME-1234.AddReg, 1280, DPMS
 CopyFiles=ACME-1234.CopyFiles
 ```
 
--   [**DelReg**](https://msdn.microsoft.com/library/windows/hardware/ff547374) directive--provides a link to the **DEL\_CURRENT\_REG** section, which details the registry keys to be deleted.
+-   [**DelReg**](../install/inf-delreg-directive.md) directive--provides a link to the **DEL\_CURRENT\_REG** section, which details the registry keys to be deleted.
 
--   [**AddReg**](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive--provides links to three sections in which registry keys to be added are detailed. These sections are **ACME-1234.AddReg**, **1280**, and **DPMS**.
+-   [**AddReg**](../install/inf-addreg-directive.md) directive--provides links to three sections in which registry keys to be added are detailed. These sections are **ACME-1234.AddReg**, **1280**, and **DPMS**.
 
--   [**CopyFiles**](https://msdn.microsoft.com/library/windows/hardware/ff546346) directive--provides a link to the **ACME-1234.CopyFiles** section, which specifies the files to be copied from the distribution disk or disks.
+-   [**CopyFiles**](../install/inf-copyfiles-directive.md) directive--provides a link to the **ACME-1234.CopyFiles** section, which specifies the files to be copied from the distribution disk or disks.
 
-For more general information, see [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344).
+For more general information, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
 ### <span id="INF_Writer-Defined_Sections"></span><span id="inf_writer-defined_sections"></span><span id="INF_WRITER-DEFINED_SECTIONS"></span>INF Writer-Defined Sections
 
@@ -131,4 +131,3 @@ An INF writer-defined section can have any name, provided it is unique within th
     ```
 
     For a monitor that meets the sRGB specification, which is preferred, no monitor profile is needed.
-

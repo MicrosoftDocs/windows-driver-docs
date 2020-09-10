@@ -34,7 +34,7 @@ If you are writing a miniport driver that controls a network interface card (NIC
 
 -   [Introduction to NDIS Miniport Drivers](introduction-to-ndis-miniport-drivers.md)
 
--   [NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
+-   [NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
 <a href="" id="connection-oriented-miniport-drivers"></a>**Connection-oriented miniport drivers**  
 If you are writing a miniport driver for connection-oriented network media (such as ISDN), read:
@@ -65,7 +65,7 @@ If you are writing a miniport driver that controls an IrDA adapter, read:
 <a href="" id="miniport-drivers-that-support-scalable-networking"></a>**Miniport drivers that support scalable networking**  
 To learn about miniport drivers that support scalable networking, read:
 
--   [Scalable Networking](https://msdn.microsoft.com/library/windows/hardware/ff570735)
+-   [Scalable Networking](/windows-hardware/drivers/ddi/_netvista/)
 
 <a href="" id="miniport-drivers-that-support-offloading-tcp-ip--------to-hardware-------"></a>**Miniport drivers that support offloading TCP/IP to hardware**   
 To learn about miniport drivers that offload TCP/IP to hardware, read:
@@ -73,10 +73,4 @@ To learn about miniport drivers that offload TCP/IP to hardware, read:
 -   [TCP/IP Offload](tcp-ip-offload.md)
 
  
-
- 
-
-
-
-
 

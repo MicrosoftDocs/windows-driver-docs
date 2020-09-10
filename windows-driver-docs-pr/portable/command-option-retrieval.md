@@ -1,5 +1,5 @@
 ---
-Description: Command-Option Retrieval
+description: Command-Option Retrieval
 title: Command-Option Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -44,7 +44,7 @@ HRESULT WpdCapabilities::OnGetCommandOptions(
     if (hr == S_OK)
     {
         // If your driver supports command options, then they should be added here
-        // to the command options collection &#39;pOptions&#39;.
+        // to the command options collection 'pOptions'.
     }
 
     // Set the WPD_PROPERTY_CAPABILITIES_COMMAND_OPTIONS value in the results.

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_MODEM
 
 
-The GUID_DEVINTERFACE_MODEM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [modem devices](https://msdn.microsoft.com/library/windows/hardware/ff542573).
+The GUID_DEVINTERFACE_MODEM [device interface class](./overview-of-device-interface-classes.md) is defined for [modem devices](/previous-versions/windows/hardware/modem/ff542573(v=vs.85)).
 
 <table>
 <colgroup>
@@ -65,7 +65,7 @@ GUID_DEVINTERFACE_MODEM in *Ntddmodm.h* will be defined correctly only if the co
 ...
 ```
 
-For information about modem devices, see [Modem Devices Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff542476).
+For information about modem devices, see [Modem Devices Design Guide](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)).
 
 For an example of using this device interface class, see the [FakeModem - Unimodem controller-less modem sample driver](https://go.microsoft.com/fwlink/p/?linkid=256110) sample that is provided in the WDK.
 
@@ -97,11 +97,4 @@ Requirements
 [**GUID_CLASS_MODEM**](guid-class-modem.md)
 
  
-
- 
-
-
-
-
-
 

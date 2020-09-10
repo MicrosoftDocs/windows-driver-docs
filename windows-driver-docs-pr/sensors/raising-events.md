@@ -55,9 +55,9 @@ static const DWORD g_dwDefaultInterval = 1000; // one second
 
 ### Lifetime Management
 
-The callback class, named CSensorDdi, which implements [ISensorDriver](https://msdn.microsoft.com/library/windows/hardware/ff545566), creates an instance of the CSampleEvents event class when the first client subscribes to events. The callback class destroys the CSampleEvents instance when clients are no longer subscribed to events.
+The callback class, named CSensorDdi, which implements [ISensorDriver](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver), creates an instance of the CSampleEvents event class when the first client subscribes to events. The callback class destroys the CSampleEvents instance when clients are no longer subscribed to events.
 
-CSampleEvents calls back to CSensorDdi to retrieve the newest data by using the same methods that the class extension uses, such as [**ISensorDriver::OnGetDataFields**](https://msdn.microsoft.com/library/windows/hardware/ff545607).
+CSampleEvents calls back to CSensorDdi to retrieve the newest data by using the same methods that the class extension uses, such as [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields).
 
 The following code example contains the method implementations for the CSampleEvents event class.
 
@@ -229,7 +229,7 @@ DWORD WINAPI CSampleEvents::_EventThreadProc(__in LPVOID pvData)
                 CComPtr<IWDFFile> spTemp;
 
                 // Get the data fields.
-                // Note that we&#39;re using a DDI call as a helper function, here.
+                // Note that we're using a DDI call as a helper function, here.
                 // Setting the first parameter to NULL will be problematic if you
                 // choose to track or use IWDFFile pointers in OnGetDataFields.
                 // This sample does not do so, therefore this is a safe thing to do

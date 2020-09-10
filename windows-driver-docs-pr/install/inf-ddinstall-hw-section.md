@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 <em>DDInstall</em>**.HW** sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit [**AddReg**](inf-addreg-directive.md) directives or with **Include** and **Needs** entries.
 
-```ini
+```inf
 [install-section-name.HW] |
 [install-section-name.nt.HW] |
 [install-section-name.ntx86.HW] |
@@ -39,7 +39,7 @@ ms.localizationpriority: medium
 
 
 <a href="" id="addreg-add-registry-section--add-registry-section----"></a>**AddReg=**<em>add-registry-section</em>\[**,**<em>add-registry-section</em>\]...  
-References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this <em>DDInstall</em>**.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/registry-trees-and-keys). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
+References one or more INF-writer-defined *add-registry-sections* elsewhere in the INF file for the devices covered by this <em>DDInstall</em>**.HW** section. The *add-registry-section* typically installs filters and/or stores per-device information in the registry. An **HKR** specification in such an *add-registry-section* specifies the device's *hardware key*, a device-specific registry subkey that contains information about the device. A hardware key is also called a device key. For more info, see [Registry Trees and Keys for Devices and Drivers](./registry-trees-and-keys.md). A driver package can add settings via an INF by using an **HKR** specification in an add-registry-section referenced by a **DDInstall.HW section**. 
 
 For more information, see [**INF AddReg Directive**](inf-addreg-directive.md).
 
@@ -75,14 +75,14 @@ Each directive in a <em>DDInstall</em>**.HW** section can reference more than on
 
 Each such section name must be unique within the INF file and must follow the general rules for defining section names. For more information about these rules, see [General Syntax Rules for INF Files](general-syntax-rules-for-inf-files.md).
 
-For more information about how to install multifunction devices, see [Supporting Multifunction Devices](https://msdn.microsoft.com/library/windows/hardware/ff542743).
+For more information about how to install multifunction devices, see [Supporting Multifunction Devices](../multifunction/index.md).
 
 Examples
 --------
 
 This example shows how the CD-ROM device class installer uses <em>DDInstall</em>**.HW** sections and <em>DDInstall</em>**.Services** sections to support both CD audio and changer functionality by creating the appropriate registry sections, and setting these up as PnP upper filter drivers.
 
-```ini
+```inf
 ;;
 ;; Installation section for cdaudio. Sets cdrom as the service 
 ;; and adds cdaudio as a PnP upper filter driver. 
@@ -104,7 +104,7 @@ CopyFiles=changer_copyfiles,cdrom_copyfiles
 [changer_install.HW]
 AddReg=changer_addreg
 
-; ... changer_install.Services section similar to cdaudio&#39;s
+; ... changer_install.Services section similar to cdaudio's
 
 ; ... some similar cdrom_install(.HW)/addreg sections omitted 
 
@@ -140,7 +140,7 @@ StartType      = 1
 ErrorControl   = 1
 ServiceBinary  = %12%\cdaudio.sys
 
-; ... changer_ServiceInstallSection similar to cdaudio&#39;s
+; ... changer_ServiceInstallSection similar to cdaudio's
 ```
 
 ## See also
@@ -157,11 +157,4 @@ ServiceBinary  = %12%\cdaudio.sys
 [**DelReg**](inf-delreg-directive.md)
 
  
-
- 
-
-
-
-
-
 

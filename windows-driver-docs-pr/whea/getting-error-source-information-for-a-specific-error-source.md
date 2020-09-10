@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # Getting Error Source Information for a Specific Error Source
 
 
-A user-mode application can get information about a particular [error source](hardware-errors-and-error-sources.md) that is supported by the hardware platform by calling the [**WHEAErrorSourceMethods::GetErrorSourceInfoRtn**](https://msdn.microsoft.com/library/windows/hardware/ff559530) method. This method returns a [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff560505) structure that describes the specified error source.
+A user-mode application can get information about a particular [error source](hardware-errors-and-error-sources.md) that is supported by the hardware platform by calling the [**WHEAErrorSourceMethods::GetErrorSourceInfoRtn**](/windows-hardware/drivers/ddi/_whea/) method. This method returns a [**WHEA\_ERROR\_SOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor) structure that describes the specified error source.
 
 The following code example shows how to get the error source information for a particular error source.
 
@@ -166,9 +166,4 @@ pOutParameters->Release();
 ```
 
  
-
- 
-
-
-
 

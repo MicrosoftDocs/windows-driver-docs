@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 
 The USB Video Class driver exposes Extension Units as nodes in the USB Video KS proxy filter. The Extension Unit controls are further exposed in user mode as a property set on the node, which is of type KSNODETYPE\_DEV\_SPECIFIC. The GUID of the property set matches the GUID of the Extension Unit descriptor.
 
-The individual Extension Unit controls should be continuously numbered from 1 to some maximum value *n*. These controls are directly mapped to property identifiers (IDs) on the Extension Unit property set, and they can be accessed by using standard KSPROPERTY requests through [IKsControl](https://msdn.microsoft.com/library/windows/hardware/ff559766).
+The individual Extension Unit controls should be continuously numbered from 1 to some maximum value *n*. These controls are directly mapped to property identifiers (IDs) on the Extension Unit property set, and they can be accessed by using standard KSPROPERTY requests through [IKsControl](/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikscontrol).
 
-In response to property requests from applications, the UVC driver returns property values that have the **MembersFlags** member of the [**KSPROPERTY\_MEMBERSHEADER**](https://msdn.microsoft.com/library/windows/hardware/ff565189) structure set exclusively to KSPROPERTY\_MEMBER\_RANGES. UVC does not support stepped ranges or extension unit default values of arbitrary length.
+In response to property requests from applications, the UVC driver returns property values that have the **MembersFlags** member of the [**KSPROPERTY\_MEMBERSHEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_membersheader) structure set exclusively to KSPROPERTY\_MEMBER\_RANGES. UVC does not support stepped ranges or extension unit default values of arbitrary length.
 
 To expose Extension Unit properties to an application, you can write a user-mode plug-in DLL that exposes a COM API. You can implement this API by making requests to the KS property set by using the **IKsControl** interface. *Vidcap.ax* automatically loads the node interface plug-in based on certain registry entries. An application can access the interface by using **IKsTopologyInfo::CreateNodeInstance** followed by a call to **QueryInterface** on the node object to obtain the required COM API.
 
@@ -57,16 +57,11 @@ The following schematic diagram shows the relationships between the various modu
 
 The USB Video Class supports auto-update events, where the device notifies the host driver of changes in any of its controls. The Microsoft USB Video Class driver supports this concept by letting applications register for auto-update events. The process of getting updates involves three steps:
 
-1.  Registering for update events by using [KSEVENTSETID\_VIDCAPNotify](https://msdn.microsoft.com/library/windows/hardware/ff561773)::[**KSEVENT\_VIDCAP\_AUTO\_UPDATE**](https://msdn.microsoft.com/library/windows/hardware/ff561916)
+1.  Registering for update events by using [KSEVENTSETID\_VIDCAPNotify](./kseventsetid-vidcapnotify.md)::[**KSEVENT\_VIDCAP\_AUTO\_UPDATE**](./ksevent-vidcap-auto-update.md)
 
 2.  Listening for events on the notify event handle
 
 3.  Canceling the notification when done
 
  
-
- 
-
-
-
 

@@ -28,7 +28,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                              | Description                                                                                                                   |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071) | The MAC address of the sender.                                                                                                |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address of the sender.                                                                                                |
 | UINT8                                             | A bit that indicates whether or not it is a reassociation request. A value of 1 indicates that it is a reassociation request. |
 
  
@@ -58,9 +58,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

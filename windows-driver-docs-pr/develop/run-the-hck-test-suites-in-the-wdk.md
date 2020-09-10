@@ -18,27 +18,27 @@ You can run the HCK test from a Command Prompt window or from Visual Studio. In 
 ## <span id="run_hck_from_vs"></span><span id="RUN_HCK_FROM_VS"></span>Running the HCK Test Suites on a test computer using Visual Studio
 
 
-If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/Library/Windows/Hardware/Dn745909). After you have configured a test computer, the name of the test computer appears in the toolbar. Be sure you have select the test computer that you have configured for device you are testing with the HCK Test Suite.
+If you have not already done so, follow the instructions in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md). After you have configured a test computer, the name of the test computer appears in the toolbar. Be sure you have select the test computer that you have configured for device you are testing with the HCK Test Suite.
 
 Prepare the test computer as needed, by installing the device and driver and any additional requirements for test topology (see the HCK test prerequisites for the device you are testing). In place of the HCK Studio and HCK controller, you run the tests using Visual Studio and WDK 8.1.
 
 **To select an HCK Test Suite to run on a test computer**
 
-1.  From the **Driver** menu, click **Test** and then select **Test Group Explorer**.
-2.  In the **Driver Test Group Explorer** window, click one of the [HCK Test Suites](#HCK_test_suites).
+1.  From the **Driver** menu, select **Test** and then select **Test Group Explorer**.
+2.  In the **Driver Test Group Explorer** window, select one of the [HCK Test Suites](#HCK_test_suites).
 
     When you select a Test Suite, the Test Suite appears in the **Driver Test Group** window.
 
 3.  Be sure you have selected the test computer that you have configured for device you are testing with the HCK Test Suite.
 4.  To use the HCK test suites, you must also follow the configuration requirements for the device you are testing.
 5.  You can use the check boxes to select the tests that match the architecture of the intended test computer (x86, x64, ARM).
-6.  From the **Driver** menu, click **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
+6.  From the **Driver** menu, select **Test &gt; Run test**. By default, the Run test command runs all of the tests in the currently selected test group.
 
 You can also copy one of the provided HCK Test Suites and export it, along with the necessary test support files so that you can run the test suite from a Command Prompt window.
 
 **To export a Test Suite**
 
-1.  In the **Test Group Explorer**, right-click the HCK Test Suite you want to copy and click **Export Test Suite...** from the short-cut menu. (The command runs the **CopyMe.cmd** script).
+1.  In the **Test Group Explorer**, select and hold (or right-click) the HCK Test Suite you want to copy and select **Export Test Suite...** from the short-cut menu. (The command runs the **CopyMe.cmd** script).
 2.  Select a destination folder for the test suite. You can export the test suite to a network share or to a USB flash drive.
 3.  To run the HCK Test Suite, open a Command Prompt window on the test computer with elevated permissions. Navigate to the destination directory and run the **RunMe.cmd** script. For more information, see [To run the HCK Test Suite from a Command Prompt window](#RunMe).
 
@@ -297,24 +297,12 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 </tbody>
 </table>
 
- 
-
 ## <span id="related_topics"></span>Related topics
-
 
 * [How to test a driver a runtime using Visual Studio](testing-a-driver-at-runtime.md)
 * [How to select and configure the Device Fundamentals Tests](how-to-select-and-configure-the-device-fundamental-tests.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
-* [Setting Up Kernel-Mode Debugging in Visual Studio](https://msdn.microsoft.com/windows/hardware/hh439376)
+* [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
 * [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
 * [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893)
 * [How to test a driver at runtime from a Command Prompt](how-to-test-a-driver-at-runtime-from-a-command-prompt.md)
- 
-
- 
-
-
-
-
-
-

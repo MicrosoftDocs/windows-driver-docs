@@ -33,7 +33,7 @@ The following table lists attributes describing the printer's support for raster
 <tbody>
 <tr class="odd">
 <td><p><em><strong>CursorXAfterSendBlockData</strong></p></td>
-<td><p>Constant value indicating the cursor&#39;s x-position after a block of raster data has been sent. Can be one of:</p>
+<td><p>Constant value indicating the cursor's x-position after a block of raster data has been sent. Can be one of:</p>
 AT_GRXDATA_END
 AT_GRXDATA_ORIGIN
 AT_CURSOR_X_ORIGIN
@@ -42,10 +42,10 @@ meaning the pixel at the start of the graphics block, the pixel after the last o
 </tr>
 <tr class="even">
 <td><p></em><strong>CursorYAfterSendBlockData</strong></p></td>
-<td><p>Constant value indicating the cursor&#39;s y-position after a block of raster data has been sent. Can be one of:</p>
+<td><p>Constant value indicating the cursor's y-position after a block of raster data has been sent. Can be one of:</p>
 NO_MOVE
 AUTO_INCREMENT</td>
-<td><p>Optional. If not specified, the default value is NO_MOVE, meaning the cursor&#39;s y-position is unchanged.</p></td>
+<td><p>Optional. If not specified, the default value is NO_MOVE, meaning the cursor's y-position is unchanged.</p></td>
 </tr>
 <tr class="odd">
 <td><p><em><strong>MaxMultipleRowBytes</strong></p></td>
@@ -66,7 +66,7 @@ AUTO_INCREMENT</td>
 </tr>
 <tr class="even">
 <td><p></em><strong>MoveToX0BeforeSetColor?</strong></p></td>
-<td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether the cursor&#39;s x-coordinate must be set to zero before an explicit color selection command can be sent.</p></td>
+<td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether the cursor's x-coordinate must be set to zero before an explicit color selection command can be sent.</p></td>
 <td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. Can be <strong>TRUE</strong> only if <em><strong>UseExpColorSelectCmd?</strong> is also <strong>TRUE</strong>.</p></td>
 </tr>
 <tr class="odd">

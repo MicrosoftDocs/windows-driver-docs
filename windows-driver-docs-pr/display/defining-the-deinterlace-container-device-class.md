@@ -21,7 +21,7 @@ Use the following example code to define the deinterlace container device class:
 // Deinterlace container device class.
 struct DXVA_DeinterlaceContainerDeviceClass : public DXVA_DeviceBaseClass
 {
-    // Uses the base class&#39;s constructor.
+    // Uses the base class's constructor.
     DXVA_DeinterlaceContainerDeviceClass(const GUID& guid, DXVA_DeviceType Type) :
         DXVA_DeviceBaseClass(guid, Type)
     {}

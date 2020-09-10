@@ -16,8 +16,8 @@ This topic describes some common build errors and how to resolve them.
 
 <span id="Build_Error__snippet__"></span><span id="build_error__snippet__"></span><span id="BUILD_ERROR__SNIPPET__"></span>Build Error (snippet):  
 ```
-1>traceloggingprovider.h(1592): error C2146: syntax error : missing &#39;;&#39; before identifier &#39;TLG_STATUS&#39;
-1>traceloggingprovider.h(1592): error C2433: &#39;DECLSPEC_SAFEBUFFERS&#39; : &#39;inline&#39; not permitted on data declarations
+1>traceloggingprovider.h(1592): error C2146: syntax error : missing ';' before identifier 'TLG_STATUS'
+1>traceloggingprovider.h(1592): error C2433: 'DECLSPEC_SAFEBUFFERS' : 'inline' not permitted on data declarations
 1>traceloggingprovider.h(1592): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
 ```
 
@@ -53,8 +53,8 @@ UWP apps need to link against advapi32.lib to resolve this reference issue.
 When compiling the file dictationuimodel.cpp, you get the error:
 
 ```
-traceloggingprovider.h(1592) : error C2146: syntax error : missing &#39;;&#39; before identifier &#39;TLG_STATUS&#39;
-traceloggingprovider.h(1592) : error C2433: &#39;DECLSPEC_SAFEBUFFERS&#39; : &#39;inline&#39; not permitted on data declarations
+traceloggingprovider.h(1592) : error C2146: syntax error : missing ';' before identifier 'TLG_STATUS'
+traceloggingprovider.h(1592) : error C2433: 'DECLSPEC_SAFEBUFFERS' : 'inline' not permitted on data declarations
 ```
 
 <span id="Fix_"></span><span id="fix_"></span><span id="FIX_"></span>Fix:  

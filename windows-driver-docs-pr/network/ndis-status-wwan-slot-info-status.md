@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_SLOT\_INFO
 
 
-Miniport drivers use the **NDIS\_STATUS\_WWAN\_SLOT\_INFO** notification to inform the MB service about the completion of a previous [OID\_WWAN\_SLOT\_INFO](https://msdn.microsoft.com/library/windows/hardware/mt799832) query request.
+Miniport drivers use the **NDIS\_STATUS\_WWAN\_SLOT\_INFO** notification to inform the MB service about the completion of a previous [OID\_WWAN\_SLOT\_INFO](./oid-wwan-slot-info-status.md) query request.
 
 Miniport drivers can send a **NDIS\_STATUS\_WWAN\_SLOT\_INFO** notification as an unsolicited event when the slot/card state changes.
 
-This notification uses the [**NDIS\_WWAN\_SLOT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt782408) structure.
+This notification uses the [**NDIS\_WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure.
 
 Requirements
 ------------
@@ -40,14 +40,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_SLOT\_INFO](https://msdn.microsoft.com/library/windows/hardware/mt799832)
+[OID\_WWAN\_SLOT\_INFO](./oid-wwan-slot-info-status.md)
 
-[**NDIS\_WWAN\_SLOT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/mt782408)
-
- 
+[**NDIS\_WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info)
 
  
-
-
-
 

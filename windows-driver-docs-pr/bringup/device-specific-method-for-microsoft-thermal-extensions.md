@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 To support more flexible design of thermal zones and thermal sensors, Windows supports extensions to the ACPI thermal zone model. Specifically, Windows supports a thermal minimum throttle limit (MTL) for each thermal zone, and also supports sharing a temperature sensor between thermal zones.
 
-For more information about MTL, see the document titled "Thermal Management in Windows" on the [Microsoft Connect website](http://connect.microsoft.com/site1304/Downloads/DownloadDetails.aspx?DownloadID=48106).
+For more information about MTL, see the document titled "Thermal Management in Windows" on the [Microsoft Connect website](https://aka.ms/connect-redirect?DownloadID=48106).
 
 To use these features, OEMs can include the following Device-Specific Method (\_DSM) in the namespace of any thermal zone.
 

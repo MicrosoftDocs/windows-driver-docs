@@ -17,13 +17,7 @@ This section includes:
 
 [DbgEng Extension Design Guide](dbgeng-extension-design-guide.md)
 
-[DbgEng Extension Reference](https://msdn.microsoft.com/library/windows/hardware/ff540395)
+[DbgEng Extension Reference](/previous-versions/ff540395(v=vs.85))
 
  
-
- 
-
-
-
-
 

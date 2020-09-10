@@ -28,10 +28,10 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type   | Description                                                                                                                                                          |
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| UINT32 | Specifies the enabled wake-on-LAN packet patterns using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).EnabledWoLPacketPatterns. |
-| UINT32 | Specifies the enabled protocol offloads using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).EnabledProtocolOffloads.            |
-| UINT32 | Specifies the wake-up flags using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).WakeUpFlags.                                    |
-| UINT32 | Specifies the media-specific wake up events using the flags as documented in [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759).MediaSpecificWakeUpEvents.      |
+| UINT32 | Specifies the enabled wake-on-LAN packet patterns using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).EnabledWoLPacketPatterns. |
+| UINT32 | Specifies the enabled protocol offloads using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).EnabledProtocolOffloads.            |
+| UINT32 | Specifies the wake-up flags using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).WakeUpFlags.                                    |
+| UINT32 | Specifies the media-specific wake up events using the flags as documented in [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters).MediaSpecificWakeUpEvents.      |
 
  
 
@@ -60,9 +60,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

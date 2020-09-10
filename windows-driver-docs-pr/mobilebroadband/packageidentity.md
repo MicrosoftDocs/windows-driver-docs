@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # PackageIdentity
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The PackageIdentity element specifies a UWP device app that should appear as the recommended AutoPlay action when a user plugs in a device.
 
@@ -42,13 +42,13 @@ The PackageIdentity element specifies a UWP device app that should appear as the
 <td><p>Name</p></td>
 <td><p>tns:PackageNameType</p></td>
 <td><p>Yes</p></td>
-<td><p>Copy this element from the Name attribute of the app manifest&#39;s Identity element, described in Remarks.</p></td>
+<td><p>Copy this element from the Name attribute of the app manifest's Identity element, described in Remarks.</p></td>
 </tr>
 <tr class="even">
 <td><p>Publisher</p></td>
 <td><p>tns:PublisherType</p></td>
 <td><p>Yes</p></td>
-<td><p>Copy this element from the Publisher attribute of the app manifest&#39;s Identity element, described in Remarks.</p></td>
+<td><p>Copy this element from the Publisher attribute of the app manifest's Identity element, described in Remarks.</p></td>
 </tr>
 </tbody>
 </table>

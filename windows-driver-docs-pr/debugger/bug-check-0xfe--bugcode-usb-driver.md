@@ -18,139 +18,30 @@ ms.localizationpriority: medium
 
 The BUGCODE\_USB\_DRIVER bug check has a value of 0x000000FE. This indicates that an error has occurred in a universal serial bus (USB) driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## BUGCODE\_USB\_DRIVER Parameters
 
 
-Parameter 1 identifies the type of violation.
+The four bug check parameters are displayed on the bug check stop screen and available using !analyze. Parameter 1 identifies the type of violation.
 
-Parameter 1
-Parameter 2
-Parameter 3
-Parameter 4
-Cause of Error
-0x1
-
-Reserved
-
-Reserved
-
-Reserved
-
-An internal error has occurred in the USB stack.
-
-0x2
-
-Address of the pending IRP
-
-Address of the IRP that was passed in
-
-Address of the USB request block (URB) that caused the error
-
-The USB client driver has submitted a URB that is still attached to another IRP pending in the bus driver.
-
-0x3
-
-Reserved
-
-Reserved
-
-Reserved
-
-The USB miniport driver has generated a bug check. This usually happens in response to a hardware failure.
-
-0x4
-
-Address of the IRP
-
-Address of the URB
-
-Reserved
-
-The caller has submitted an IRP that is already pending in the USB bus driver.
-
-0x5
-
-Device extension pointer of the host controller
-
-PCI vendor, product id for the controller
-
-Pointer to endpoint data structure
-
-A hardware failure has occurred because of a bad physical address found in a hardware data structure.
-
-0x6
-
-Object address
-
-Signature that was expected
-
-Reserved
-
-An internal data structure (object) is corrupted.
-
-0x7
-
-Pointer to usbport.sys debug log
-
-Message string
-
-File name
-
-Please see the provided message string for detailed information.
-
-0x8
-
-1
-
-Reserved
-
-Reserved
-
-Reserved
-
-2
-
-Device object
-
-IRP
-
-An IRP was received by the hub driver that it does not expect or has not registered for.
-
-3
-
-Reserved
-
-Reserved
-
-Reserved
-
-4
-
-PDO if Parameter 3 is not NULL. Context if Parameter 3 is NULL.
-
-Context or NULL
-
-Fatal PDO trap
-
-5
-
-Reserved
-
-Reserved
-
-Reserved
-
-6
-
-Time-out code. See the following table.
-
-Time-out code context: port data
-
-Fatal time-out
-
- 
+| Parameter 1 | Parameter 2 | Parameter 3 | Parameter 4 | Cause of Error                            | 
+|-------------|-------------|-------------|-------------|-------------------------------------------|
+| 0x1 | Reserved | Reserved | Reserved | An internal error has occurred in the USB stack. |
+| 0x2 | Address of the pending IRP | Address of the IRP that was passed in| Address of the USB request block (URB) that caused the error | The USB client driver has submitted a URB that is still attached to another IRP pending in the bus driver.| 
+|0x3| Reserved | Reserved| Reserved| The USB miniport driver has generated a bug check. This usually happens in response to a hardware failure.|
+| 0x4 | Address of the IRP| Address of the URB| Reserved| The caller has submitted an IRP that is already pending in the USB bus driver.| 
+| 0x5| Device extension pointer of the host controller| PCI vendor, product id for the controller| Pointer to endpoint data structure| A hardware failure has occurred because of a bad physical address found in a hardware data structure.| 
+| 0x6 | Object address| Signature that was expected| Reserved | An internal data structure (object) is corrupted.|
+| 0x7 | Pointer to usbport.sys debug log | Message string | File name | See the provided message string for detailed information.|
+| 0x8 | 1 | Reserved | Reserved | Reserved |
+| | 2 | Device object  | IRP | An IRP was received by the hub driver that it does not expect or has not registered for. |
+| | 3 | Reserved | Reserved | Reserved
+| | 4 | PDO if Parameter 3 is not NULL. Context if Parameter 3 is NULL. | Context or NULL | Fatal PDO trap
+| | 5 | Reserved | Reserved | Reserved |
+| | 6 | Time-out code. See the table below. | Time-out code context: port data | Fatal time-out
 
 If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter 3 is a time-out code. Possible values for the time-out code are given in the following table.
 
@@ -213,8 +104,10 @@ If Parameter 1 has a value of 8 and Parameter 2 has a value of 6, then Parameter
 </tbody>
 </table>
 
- 
+## Resolution
 
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+ 
  
 
  

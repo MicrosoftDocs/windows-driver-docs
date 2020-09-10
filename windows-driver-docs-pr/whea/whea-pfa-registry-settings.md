@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Predictive Failure Analysis (PFA), as performed by the Windows Hardware Error Architecture (WHEA), is configured by using registry settings. WHEA reads these registry settings when a computer system starts. Any change that you make to these settings requires you to restart the system in order for them to take effect.
 
-Starting with Windows 8, WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](https://msdn.microsoft.com/library/windows/hardware/hh451252) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
+Starting with Windows 8, WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
 
 **Note**   The registry settings described in this topic are intended for use by WHEA only. If a [platform-specific hardware error driver (PSHED) plug-in](platform-specific-hardware-error-driver-plug-ins2.md) performs PFA and uses the registry to store its configuration settings, it must use registry values that are different from those that are described in this topic.
 
@@ -75,7 +75,7 @@ The following table describes the various registry values that are used for PFA 
 <tr class="odd">
 <td><p></p>
 <p><strong>MemPfaDisable</strong></p></td>
-<td><p>A Boolean value that specifies whether WHEA&#39;s PFA for ECC memory pages is disabled.</p>
+<td><p>A Boolean value that specifies whether WHEA's PFA for ECC memory pages is disabled.</p>
 <p>A value of 0 enables PFA for ECC memory pages. Any other value disables PFA for ECC memory pages.</p>
 <p>The default value for this setting is 0.</p></td>
 </tr>
@@ -140,9 +140,4 @@ This value corresponds to the **MemPfaPageCount** registry value.
  
 
  
-
- 
-
-
-
 

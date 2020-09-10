@@ -22,28 +22,25 @@ ms.localizationpriority: medium
 
 To keep track of each device's state, the framework uses a PnP state machine, a power state machine, and a power policy state machine. The framework creates an instance of each state machine for each device that is plugged into a system.
 
-Very few drivers need to be aware of the state of a device's state machines. However, for the drivers that do need to know this information, the framework provides two sets of interfaces:
+>[!NOTE]
+>This functionality is for Microsoft-internal use only.
+
+For drivers that do need to know this information, the framework provides two sets of interfaces:
 
 -   A set of driver-supplied event callback functions.
 
     The driver can request that the framework call one of the following callback functions whenever one of the state machines enters or exits a particular state:
 
-    -   [*EvtDevicePnpStateChange*](https://msdn.microsoft.com/library/windows/hardware/ff540874), which the driver registers by calling [**WdfDeviceInitRegisterPnpStateChangeCallback**](https://msdn.microsoft.com/library/windows/hardware/ff546057).
-    -   [*EvtDevicePowerStateChange*](https://msdn.microsoft.com/library/windows/hardware/ff540878), which the driver registers by calling [**WdfDeviceInitRegisterPowerStateChangeCallback**](https://msdn.microsoft.com/library/windows/hardware/ff546071).
-    -   [*EvtDevicePowerPolicyStateChange*](https://msdn.microsoft.com/library/windows/hardware/ff540876), which the driver registers by calling [**WdfDeviceInitRegisterPowerPolicyStateChangeCallback**](https://msdn.microsoft.com/library/windows/hardware/ff546066).
+    -   [*EvtDevicePnpStateChange*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_pnp_state_change_notification), which the driver registers by calling [**WdfDeviceInitRegisterPnpStateChangeCallback**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitregisterpnpstatechangecallback).
+    -   [*EvtDevicePowerStateChange*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_power_state_change_notification), which the driver registers by calling [**WdfDeviceInitRegisterPowerStateChangeCallback**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitregisterpowerstatechangecallback).
+    -   [*EvtDevicePowerPolicyStateChange*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_power_policy_state_change_notification), which the driver registers by calling [**WdfDeviceInitRegisterPowerPolicyStateChangeCallback**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitregisterpowerpolicystatechangecallback).
 -   A set of methods that return the current state of the state machines.
 
     The driver can call one of the following methods to determine the current state of one of the state machines for a particular device:
 
-    -   [**WdfDeviceGetDevicePnpState**](https://msdn.microsoft.com/library/windows/hardware/ff545969)
-    -   [**WdfDeviceGetDevicePowerState**](https://msdn.microsoft.com/library/windows/hardware/ff545985)
-    -   [**WdfDeviceGetDevicePowerPolicyState**](https://msdn.microsoft.com/library/windows/hardware/ff545974)
+    -   [**WdfDeviceGetDevicePnpState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetdevicepnpstate)
+    -   [**WdfDeviceGetDevicePowerState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetdevicepowerstate)
+    -   [**WdfDeviceGetDevicePowerPolicyState**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetdevicepowerpolicystate)
 
  
-
- 
-
-
-
-
 

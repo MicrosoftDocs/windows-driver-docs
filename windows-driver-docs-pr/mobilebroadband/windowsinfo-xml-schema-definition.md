@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # WindowsInfo XML Schema Definition
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following are the namespaces of the WindowsInfo XML schema:
 
@@ -37,7 +37,7 @@ The following is a definition of the WindowsInfo XML schema:
     </xs:sequence>
   </xs:complexType>
 
-</xs:schema> 
+</xs:schema>
 ```
 
 The following is a definition of the WindowsInfov2 XML schema:
@@ -102,7 +102,7 @@ The following is a definition of the WindowsInfov2 XML schema:
 
   <xs:simpleType name="DistinguishedNameType">
     <xs:restriction base="tns:NonEmptyStringType">
-      <xs:pattern value="(CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+=&quot;&lt;&gt;#;])+|&quot;.*&quot;)(, ((CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+=&quot;&lt;&gt;#;])+|&quot;.*&quot;)))*"/>
+      <xs:pattern value="(CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+="&lt;&gt;#;])+|".*")(, ((CN|L|O|OU|E|C|S|STREET|T|G|I|SN|DC|SERIALNUMBER|(OID\.(0|[1-9][0-9]*)(\.(0|[1-9][0-9]*))+))=(([^,+="&lt;&gt;#;])+|".*")))*"/>
     </xs:restriction>
   </xs:simpleType>
   
@@ -161,12 +161,3 @@ The following is a definition of the WindowsInfov2 XML schema:
   
 </xs:schema>
 ```
-
- 
-
- 
-
-
-
-
-

@@ -47,7 +47,7 @@ This routine calls the kernel **DbgBreakPoint** routine.
 
 This routine raises an exception that is handled by the kernel debugger if one is installed; otherwise it is handled by the debug system. If no debugger is connected to the system, the exception can be handled in the standard way.
 
-In kernel mode, a break exception that is not handled will cause a blue screen (bug check) to result. You can, however, connect a kernel-mode debugger to the target computer that has kernel debugging enabled. For more information, see [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063).
+In kernel mode, a break exception that is not handled will cause a blue screen (bug check) to result. You can, however, connect a kernel-mode debugger to the target computer that has kernel debugging enabled. For more information, see [Windows Debugging](../debugger/index.md).
 
 Requirements
 ------------
@@ -78,14 +78,7 @@ Requirements
 
 [**RxAssert**](rxassert.md)
 
-[Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063)
+[Windows Debugging](../debugger/index.md)
 
  
-
- 
-
-
-
-
-
 

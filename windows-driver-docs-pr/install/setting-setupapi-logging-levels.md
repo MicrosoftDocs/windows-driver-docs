@@ -170,7 +170,7 @@ The following tables contain the general logging levels, device installation log
 </tr>
 <tr class="even">
 <td align="left"><p>0x20000000</p></td>
-<td align="left"><p>(<em>Windows XP and later</em>) Don&#39;t flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
+<td align="left"><p>(<em>Windows XP and later</em>) Don't flush logging information to disk after each entry is written. (Logging is faster, but information could be lost if the system crashes.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x40000000</p></td>

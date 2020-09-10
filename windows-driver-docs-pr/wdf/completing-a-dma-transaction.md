@@ -19,17 +19,17 @@ ms.localizationpriority: medium
 
 
 
-Each time that a driver's device [completes a DMA transfer](completing-a-dma-transfer.md), the driver must call [**WdfDmaTransactionDmaCompleted**](https://msdn.microsoft.com/library/windows/hardware/ff547039), [**WdfDmaTransactionDmaCompletedWithLength**](https://msdn.microsoft.com/library/windows/hardware/ff547052), or [**WdfDmaTransactionDmaCompletedFinal**](https://msdn.microsoft.com/library/windows/hardware/ff547049) and then check the return value.
+Each time that a driver's device [completes a DMA transfer](completing-a-dma-transfer.md), the driver must call [**WdfDmaTransactionDmaCompleted**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompleted), [**WdfDmaTransactionDmaCompletedWithLength**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompletedwithlength), or [**WdfDmaTransactionDmaCompletedFinal**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompletedfinal) and then check the return value.
 
-When the return value is **TRUE**, no more transfers are needed for the DMA transaction and the driver must complete the DMA transaction. Typically, the driver has not yet returned from its [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function. Therefore, this callback function completes the DMA transaction by:
+When the return value is **TRUE**, no more transfers are needed for the DMA transaction and the driver must complete the DMA transaction. Typically, the driver has not yet returned from its [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function. Therefore, this callback function completes the DMA transaction by:
 
-1.  Calling [**WdfObjectDelete**](https://msdn.microsoft.com/library/windows/hardware/ff548734) to delete the transaction object, or calling [**WdfDmaTransactionRelease**](https://msdn.microsoft.com/library/windows/hardware/ff547114) if the driver [reuses DMA transaction objects](reusing-dma-transaction-objects.md).
+1.  Calling [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to delete the transaction object, or calling [**WdfDmaTransactionRelease**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionrelease) if the driver [reuses DMA transaction objects](reusing-dma-transaction-objects.md).
 
-2.  Calling [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) or [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948), if the transaction is associated with a framework request object.
+2.  Calling [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) or [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation), if the transaction is associated with a framework request object.
 
-If the driver calls [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948), it typically first calls [**WdfDmaTransactionGetBytesTransferred**](https://msdn.microsoft.com/library/windows/hardware/ff547072) to obtain the total length (number of bytes) of all of the transaction's transfers.
+If the driver calls [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation), it typically first calls [**WdfDmaTransactionGetBytesTransferred**](/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiongetbytestransferred) to obtain the total length (number of bytes) of all of the transaction's transfers.
 
-These steps are illustrated in the following code example, taken from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function in the *Isrdpc.c* file:
+These steps are illustrated in the following code example, taken from the [PLX9x5x](https://go.microsoft.com/fwlink/p/?linkid=256157) sample’s [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function in the *Isrdpc.c* file:
 
 ```cpp
 if (readComplete) {
@@ -56,12 +56,3 @@ if (readComplete) {
     }
 }
 ```
-
-
-
-
-
-
-
-
-

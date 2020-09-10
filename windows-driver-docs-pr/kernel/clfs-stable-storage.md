@@ -37,7 +37,7 @@ Suppose a log has three containers, and a single client is writing CLFS records 
 
 1.  The client writes enough log records to fill all three containers.
 
-2.  The client sets the log base (by calling [**ClfsAdvanceLogBase**](https://msdn.microsoft.com/library/windows/hardware/ff540773) or [**ClfsWriteRestartArea**](https://msdn.microsoft.com/library/windows/hardware/ff541770).) to one of the records in container 2. By doing that, the client is saying that it no longer needs the records in container 1.
+2.  The client sets the log base (by calling [**ClfsAdvanceLogBase**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsadvancelogbase) or [**ClfsWriteRestartArea**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfswriterestartarea).) to one of the records in container 2. By doing that, the client is saying that it no longer needs the records in container 1.
 
 3.  The client writes another record to the log and gets back the LSN of the newly written record. The logical container identifier in that LSN is 4. When records are flushed to stable storage, records that the client sees in logical container 4 will go to physical container 1.
 
@@ -49,11 +49,11 @@ The logical container identifier, block offset, and record sequence number are s
 
 Given the LSN of a record, you can extract the logical container identifier, the block offset, and the record sequence number by calling the following functions.
 
-[**ClfsLsnContainer**](https://msdn.microsoft.com/library/windows/hardware/ff541573)
+[**ClfsLsnContainer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsncontainer)
 
-[**ClfsLsnBlockOffset**](https://msdn.microsoft.com/library/windows/hardware/ff541569)
+[**ClfsLsnBlockOffset**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnblockoffset)
 
-[**ClfsLsnRecordSequence**](https://msdn.microsoft.com/library/windows/hardware/ff541615)
+[**ClfsLsnRecordSequence**](/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnrecordsequence)
 
 The logical container identifier is a 32-bit number, so there are 2^32 possible logical container identifiers, and they are in the range 0x0 through 0xFFFFFFFF. A stream can have at most 2^32 logical containers.
 
@@ -62,9 +62,4 @@ The block offset is stored in 23 bits of the LSN, but **ClfsLsnBlockOffset** ret
 The record sequence number is a 9-bit number, so there are 2^9 (512) possible record sequence numbers, and they are in the range 0x0 through 0x1FF. A log I/O block can have at most 512 records.
 
  
-
- 
-
-
-
 

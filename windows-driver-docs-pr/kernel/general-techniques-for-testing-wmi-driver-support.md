@@ -44,18 +44,13 @@ A WMI client application performs the following tasks to test a driver:
 
 WMI errors that occur strictly in kernel-mode are logged to the system event log. You can use the Event Viewer to examine the system event log. (See [Logging Errors](logging-errors.md) for more information.)
 
-The two main sources of such errors are malformed replies to WMI requests and incorrect parameters to event notifications. For example, if the driver returns a malformed [**WMIREGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff565832) data structure in response to an [**IRP\_MN\_REGINFO**](https://msdn.microsoft.com/library/windows/hardware/ff551731) or [**IRP\_MN\_REGINFO\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff551734) request, the system will log that to the system event log. The system would also log an invalid call to [**IoWMIWriteEvent**](https://msdn.microsoft.com/library/windows/hardware/ff550520) and [**WmiFireEvent**](https://msdn.microsoft.com/library/windows/hardware/ff565807) to issue a WMI event notification.
+The two main sources of such errors are malformed replies to WMI requests and incorrect parameters to event notifications. For example, if the driver returns a malformed [**WMIREGINFO**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow) data structure in response to an [**IRP\_MN\_REGINFO**](./irp-mn-reginfo.md) or [**IRP\_MN\_REGINFO\_EX**](./irp-mn-reginfo-ex.md) request, the system will log that to the system event log. The system would also log an invalid call to [**IoWMIWriteEvent**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent) and [**WmiFireEvent**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmifireevent) to issue a WMI event notification.
 
 ### <a href="" id="ddk-wmi-wdm-provider-log-kg"></a>WMI WDM Provider Log
 
 WMI errors that occur while being handled by the WMI WDM provider (Wmiprov.dll) are logged to the log file for the WMI WDM Provider, Wmiprov.log. This is a text file can be found in %windir%\\system32\\wbem\\logs\\wmiprov.log. Errors, such as a bad or missing MOF resource for the driver, are logged here. In the case of a bad MOF resource, the file %windir%\\system32\\mofcomp.log might have additional information related to the error.
 
-In versions of Windows earlier than Windows Vista, you can change the logging settings for all WMI providers by using the Wmimgmt.msc application. (In Windows 98/Me, use Wbemcntl instead.) You can disable or reenable logging, change the directory where WMI log files are kept, as well as set the maximum size for such files. For more information, see [WMI Log Files](https://msdn.microsoft.com/library/aa394564).
+In versions of Windows earlier than Windows Vista, you can change the logging settings for all WMI providers by using the Wmimgmt.msc application. (In Windows 98/Me, use Wbemcntl instead.) You can disable or reenable logging, change the directory where WMI log files are kept, as well as set the maximum size for such files. For more information, see [WMI Log Files](/windows/desktop/WmiSdk/wmi-log-files).
 
  
-
- 
-
-
-
 

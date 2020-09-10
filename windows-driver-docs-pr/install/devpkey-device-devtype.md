@@ -25,6 +25,12 @@ The DEVPKEY_Device_DevType device property represents the device type of a devic
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -54,49 +60,29 @@ The DEVPKEY_Device_DevType device property represents the device type of a devic
 Remarks
 -------
 
-Windows sets the value of DEVPKEY_Device_DevType to the value of the DeviceType member of the [**DEVICE_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure for a device instance. The value of DEVPKEY_Device_DevType is one of the system-defined device type values that are listed in [Specifying Device Types](https://msdn.microsoft.com/library/windows/hardware/ff563821).
+Windows sets the value of DEVPKEY_Device_DevType to the value of the DeviceType member of the [**DEVICE_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure for a device instance. The value of DEVPKEY_Device_DevType is one of the system-defined device type values that are listed in [Specifying Device Types](../kernel/specifying-device-types.md).
 
-You can set the value of DEVPKEY_Device_DevType by using an [**INF AddReg directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) that is included in the [**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330) in the INF file that installs a device.
+You can set the value of DEVPKEY_Device_DevType by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF *DDInstall*.HW section**](./inf-ddinstall-hw-section.md) in the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_Device_DevType.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_DevType.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DevType property key. Instead, you can use the corresponding SPDRP_DEVTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DevType property key. Instead, you can use the corresponding SPDRP_DEVTYPE identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**DEVICE_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147)
+[**DEVICE_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object)
 
-[**INF *DDInstall*.HW section**](https://msdn.microsoft.com/library/windows/hardware/ff547330)
+[**INF *DDInstall*.HW section**](./inf-ddinstall-hw-section.md)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

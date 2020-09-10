@@ -35,13 +35,13 @@ Parameters
 ----------
 
 *Lunit*   
-A structure of type [**HBA\_ScsiId**](https://msdn.microsoft.com/library/windows/hardware/ff557191) that contains information that is used by the operating system to identify a SCSI logical unit.
+A structure of type [**HBA\_ScsiId**](/previous-versions/ff557191(v=vs.85)) that contains information that is used by the operating system to identify a SCSI logical unit.
 
 *HBAStatus*   
 The status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the HBAStatus member of a SM\_GetLUNStatistics\_OUT structure.
 
 *ProtocolStatistics*   
-A structure of type [**MS\_SMHBA\_PROTOCOLSTATISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff563172) that is used to report protocol traffic statistics on a port.
+A structure of type [**MS\_SMHBA\_PROTOCOLSTATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics) that is used to report protocol traffic statistics on a port.
 
 Return value
 ------------
@@ -78,16 +78,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetLUNStatistics\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566238)
+[**SM\_GetLUNStatistics\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getlunstatistics_in)
 
-[**SM\_GetLUNStatistics\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566241)
-
- 
+[**SM\_GetLUNStatistics\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getlunstatistics_out)
 
  
-
-
-
-
-
 

@@ -15,77 +15,71 @@ ms.localizationpriority: medium
 
 This section covers the following interfaces:
 
--   [**IDebugAdvanced**](https://msdn.microsoft.com/library/windows/hardware/ff549798)
+-   [**IDebugAdvanced**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced)
 
--   [**IDebugAdvanced2**](https://msdn.microsoft.com/library/windows/hardware/ff549803)
+-   [**IDebugAdvanced2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced2)
 
--   [**IDebugAdvanced3**](https://msdn.microsoft.com/library/windows/hardware/ff549807)
+-   [**IDebugAdvanced3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced3)
 
--   [**IDebugAdvanced4**](https://msdn.microsoft.com/library/windows/hardware/mt613237)
+-   [**IDebugAdvanced4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced4)
 
--   [**IDebugClient**](https://msdn.microsoft.com/library/windows/hardware/ff549827)
+-   [**IDebugClient**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient)
 
--   [**IDebugClient2**](https://msdn.microsoft.com/library/windows/hardware/ff550481)
+-   [**IDebugClient2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient2)
 
--   [**IDebugClient3**](https://msdn.microsoft.com/library/windows/hardware/ff550488)
+-   [**IDebugClient3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient3)
 
--   [**IDebugClient4**](https://msdn.microsoft.com/library/windows/hardware/ff550494)
+-   [**IDebugClient4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient4)
 
--   [**IDebugClient5**](https://msdn.microsoft.com/library/windows/hardware/ff550497)
+-   [**IDebugClient5**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5)
 
--   [**IDebugClient6**](https://msdn.microsoft.com/library/windows/hardware/mt782813)
+-   [**IDebugClient6**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient6)
 
--   [**IDebugClient7**](https://msdn.microsoft.com/library/windows/hardware/mt782815)
+-   [**IDebugClient7**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient7)
 
--   [**IDebugControl**](https://msdn.microsoft.com/library/windows/hardware/ff550508)
+-   [**IDebugControl**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol)
 
--   [**IDebugControl2**](https://msdn.microsoft.com/library/windows/hardware/ff550512)
+-   [**IDebugControl2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol2)
 
--   [**IDebugControl3**](https://msdn.microsoft.com/library/windows/hardware/ff550519)
+-   [**IDebugControl3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3)
 
--   [**IDebugControl4**](https://msdn.microsoft.com/library/windows/hardware/ff550526)
+-   [**IDebugControl4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4)
 
--   [**IDebugControl5**](https://msdn.microsoft.com/library/windows/hardware/dn818562)
+-   [**IDebugControl5**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol5)
 
--   [**IDebugControl6**](https://msdn.microsoft.com/library/windows/hardware/dn818568)
+-   [**IDebugControl6**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol6)
 
--   [**IDebugControl7**](https://msdn.microsoft.com/library/windows/hardware/dn818571)
+-   [**IDebugControl7**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol7)
 
--   [**IDebugDataSpaces**](https://msdn.microsoft.com/library/windows/hardware/ff550528)
+-   [**IDebugDataSpaces**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces)
 
--   [**IDebugDataSpaces2**](https://msdn.microsoft.com/library/windows/hardware/ff550531)
+-   [**IDebugDataSpaces2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces2)
 
--   [**IDebugDataSpaces3**](https://msdn.microsoft.com/library/windows/hardware/ff550537)
+-   [**IDebugDataSpaces3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces3)
 
--   [**IDebugDataSpaces4**](https://msdn.microsoft.com/library/windows/hardware/ff550546)
+-   [**IDebugDataSpaces4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces4)
 
--   [**IDebugRegisters**](https://msdn.microsoft.com/library/windows/hardware/ff550825)
+-   [**IDebugRegisters**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters)
 
--   [**IDebugRegisters2**](https://msdn.microsoft.com/library/windows/hardware/ff550835)
+-   [**IDebugRegisters2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters2)
 
--   [**IDebugSymbols**](https://msdn.microsoft.com/library/windows/hardware/ff550856)
+-   [**IDebugSymbols**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols)
 
--   [**IDebugSymbols2**](https://msdn.microsoft.com/library/windows/hardware/ff550864)
+-   [**IDebugSymbols2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols2)
 
--   [**IDebugSymbols3**](https://msdn.microsoft.com/library/windows/hardware/ff550870)
+-   [**IDebugSymbols3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3)
 
--   [**IDebugSymbols4**](https://msdn.microsoft.com/library/windows/hardware/mt782852)
+-   [**IDebugSymbols4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols4)
 
--   [**IDebugSymbols5**](https://msdn.microsoft.com/library/windows/hardware/mt782860)
+-   [**IDebugSymbols5**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols5)
 
--   [**IDebugSystemObjects**](https://msdn.microsoft.com/library/windows/hardware/ff550875)
+-   [**IDebugSystemObjects**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects)
 
--   [**IDebugSystemObjects2**](https://msdn.microsoft.com/library/windows/hardware/ff550885)
+-   [**IDebugSystemObjects2**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects2)
 
--   [**IDebugSystemObjects3**](https://msdn.microsoft.com/library/windows/hardware/ff550892)
+-   [**IDebugSystemObjects3**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects3)
 
--   [**IDebugSystemObjects4**](https://msdn.microsoft.com/library/windows/hardware/ff550893)
-
- 
+-   [**IDebugSystemObjects4**](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects4)
 
  
-
-
-
-
 

@@ -38,19 +38,14 @@ The I²C controller driver exposes a Serial Peripheral Bus (SPB) IOCTL interface
 ## The GPIO Controller Driver
 
 
-The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple slave component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the I²C channel.
+The General Purpose Input/Output (GPIO) controller delivers interrupts from the device over GPIO. This is often a simple subordinate component that uses GPIO pins to signal Windows of new data or other events. GPIO can also control the device by approaches other than the I²C channel.
 
 ## The Resource Hub
 
 
 Connections on a SoC platform are typically non-discoverable, because there are no standards for device enumeration on the buses that are used on SoC. As a result, these devices must be statically defined in the Advanced Configuration and Power Interface (ACPI). Furthermore, components often have multiple dependencies spanning multiple buses, as opposed to a strict branching tree structure.
 
-The resource hub is a proxy that manages the connections among all devices and bus controllers. The HIDI²C driver uses the resource hub to reroute device-open requests to the appropriate controller driver. For more information about the resource hub, refer to the [Connection IDs for SPB Connected Devices](https://msdn.microsoft.com/library/windows/hardware/hh698216) topic.
+The resource hub is a proxy that manages the connections among all devices and bus controllers. The HIDI²C driver uses the resource hub to reroute device-open requests to the appropriate controller driver. For more information about the resource hub, refer to the [Connection IDs for SPB Connected Devices](../spb/connection-ids-for-spb-connected-peripheral-devices.md) topic.
 
  
-
- 
-
-
-
 

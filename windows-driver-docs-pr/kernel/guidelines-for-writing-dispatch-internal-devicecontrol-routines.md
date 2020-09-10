@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 
 
-Keep the following points in mind when writing a [*DispatchDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) or [*DispatchInternalDeviceControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routine:
+Keep the following points in mind when writing a [*DispatchDeviceControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) or [*DispatchInternalDeviceControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine:
 
-At a minimum, a higher-level driver must copy the parameters for an [**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550744) or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff550766) request from its own I/O stack location in the IRP to the next-lower-level driver's I/O stack location. Then, it must call [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) with a pointer to the next-lower driver's device object and the IRP.
+At a minimum, a higher-level driver must copy the parameters for an [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) request from its own I/O stack location in the IRP to the next-lower-level driver's I/O stack location. Then, it must call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) with a pointer to the next-lower driver's device object and the IRP.
 
 The higher-level driver should propagate the status value returned by **IoCallDriver** or set it in the returned IRP's I/O status block when it returns control for a request that lower drivers handle synchronously.
 
@@ -44,9 +44,4 @@ The particular I/O control codes a device driver handles must include any device
 The class driver of a closely coupled class/port driver pair can process and complete a subset of device control requests without passing them on to the underlying port driver. However, such a class driver must pass on all valid device control requests that require a change of state for the device and those that require the return of volatile information about the device, such as its current baud rate, volume, or video mode.
 
  
-
- 
-
-
-
 

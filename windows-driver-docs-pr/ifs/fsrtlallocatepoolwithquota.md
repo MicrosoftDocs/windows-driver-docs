@@ -19,13 +19,7 @@ ms.localizationpriority: medium
 
 
 
-The **FsRtlAllocatePoolWithQuota** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithQuotaTag**](https://msdn.microsoft.com/library/windows/hardware/ff545665) instead.
+The **FsRtlAllocatePoolWithQuota** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocatepoolwithquotatag) instead.
 
  
-
- 
-
-
-
-
 

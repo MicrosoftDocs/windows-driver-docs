@@ -1,5 +1,5 @@
 ---
-Description: This topic lists the "How to" topics in the USB driver documentation set. Each how-to topic presents a set of tasks as a sequence of steps with code examples.
+description: This topic lists the "How to" topics in the USB driver documentation set. Each how-to topic presents a set of tasks as a sequence of steps with code examples.
 title: Common tasks for USB client drivers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -28,11 +28,11 @@ This list contains links to the how-to topics for USB client drivers.
 <tbody>
 <tr class="odd">
 <td><p><a href="tutorial--write-your-first-usb-client-driver--kmdf-.md" data-raw-source="[How to write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)">How to write your first USB client driver (KMDF)</a></p></td>
-<td><p>In this topic you&#39;ll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio 11 Professional Beta to write a simple kernel-mode driver framework (KMDF)-based client driver. After building and installing the client driver, you&#39;ll view the client driver in Device Manager and view the driver output in a debugger.</p></td>
+<td><p>In this topic you'll use the USB Kernel-Mode Driver template provided with Microsoft Visual Studio 11 Professional Beta to write a simple kernel-mode driver framework (KMDF)-based client driver. After building and installing the client driver, you'll view the client driver in Device Manager and view the driver output in a debugger.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="implement-driver-entry-for-a-usb-driver--umdf-.md" data-raw-source="[How to write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)">How to write your first USB client driver (UMDF)</a></p></td>
-<td><p>In this topic you&#39;ll use the USB User-Mode Driver template provided with Microsoft Visual Studio 11 Beta to write a user-mode driver framework (UMDF)-based client driver. After building and installing the client driver, you&#39;ll view the client driver in Device Manager and view the driver output in a debugger.</p></td>
+<td><p>In this topic you'll use the USB User-Mode Driver template provided with Microsoft Visual Studio 11 Beta to write a user-mode driver framework (UMDF)-based client driver. After building and installing the client driver, you'll view the client driver in Device Manager and view the driver output in a debugger.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="usb-configuration-descriptors.md" data-raw-source="[How to get the configuration descriptor](usb-configuration-descriptors.md)">How to get the configuration descriptor</a></p></td>
@@ -44,7 +44,7 @@ This list contains links to the how-to topics for USB client drivers.
 </tr>
 <tr class="odd">
 <td><p><a href="how-to-select-a-configuration-for-a-usb-device.md" data-raw-source="[How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md)">How to select a configuration for a USB device</a></p></td>
-<td><p>In this topic, you&#39;ll learn about how to select a configuration in a universal serial bus (USB) device. This topic describes the process of sending a select-configuration request by submitting an URB.</p></td>
+<td><p>In this topic, you'll learn about how to select a configuration in a universal serial bus (USB) device. This topic describes the process of sending a select-configuration request by submitting an URB.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="select-a-usb-alternate-setting.md" data-raw-source="[How to select an alternate setting in a USB interface](select-a-usb-alternate-setting.md)">How to select an alternate setting in a USB interface</a></p></td>
@@ -96,7 +96,7 @@ This list contains links to the how-to topics for USB client drivers.
  
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
 
 
 

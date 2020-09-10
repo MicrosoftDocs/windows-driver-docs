@@ -47,7 +47,7 @@ The KSPROPERTY\_EXTENSION\_UNIT\_INFO property retrieves the guidExtensionCode, 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Filter node</p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566720" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566720)"><strong>KSP_NODE</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)"><strong>KSP_NODE</strong></a></p></td>
 <td><p>PVOID</p></td>
 </tr>
 </tbody>
@@ -62,7 +62,7 @@ This property is available in Windows Vista and later, and the SDK for Microsoft
 
 During device startup, the system-supplied USB Video Class driver (*Usbvideo.sys*) caches information from the device's extension unit descriptor. *Usbvideo.sys* then uses this cached information to respond to KSPROPERTY\_EXTENSION\_UNIT\_INFO.
 
-Therefore, the fields returned by this property are identical to those provided by the device in the extension unit descriptor. For an example of such a descriptor, see [Sample Extension Unit Descriptor](https://msdn.microsoft.com/library/windows/hardware/ff568133).
+Therefore, the fields returned by this property are identical to those provided by the device in the extension unit descriptor. For an example of such a descriptor, see [Sample Extension Unit Descriptor](./sample-extension-unit-descriptor.md).
 
 Specifically, KSPROPERTY\_EXTENSION\_UNIT\_INFO returns the extension unit GUID followed by the data fields from the descriptor as shown in the following table.
 
@@ -89,7 +89,7 @@ Specifically, KSPROPERTY\_EXTENSION\_UNIT\_INFO returns the extension unit GUID 
 
  
 
-The following code example shows how to submit KSPROPERTY\_EXTENSION\_UNIT\_INFO, taken from the complete sample shown in [Sample Extension Unit Plug-in DLL](https://msdn.microsoft.com/library/windows/hardware/ff568134):
+The following code example shows how to submit KSPROPERTY\_EXTENSION\_UNIT\_INFO, taken from the complete sample shown in [Sample Extension Unit Plug-in DLL](./sample-extension-unit-plug-in-dll.md):
 
 ```cpp
 ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
@@ -99,11 +99,11 @@ ExtensionProp.Property.Set = PROPSETID_VIDCAP_EXTENSION_UNIT;
     ExtensionProp.NodeId = m_dwNodeId;
 
     hr = m_pKsControl->KsProperty(
-        (PKSPROPERTY) &amp;ExtensionProp,
+        (PKSPROPERTY) &ExtensionProp,
         sizeof(ExtensionProp),
         NULL,
         0,
-        &amp;ulBytesReturned);
+        &ulBytesReturned);
 ```
 
 Requirements

@@ -63,7 +63,7 @@ The following code example shows a typical filter pipeline configuration file:
 
 ### Private Keywords
 
-An [XPSDrv configuration module](xpsdrv-configuration-module.md) can put *private keywords* in the PrintTicket entry when it handles an [XPS driver document event](xps-driver-document-events.md) during a [**DrvDocumentEvent**](https://msdn.microsoft.com/library/windows/hardware/ff548544) function call. These PrintTicket entries are then read by the processing filters in the print filter pipeline while the filters are reading the PrintTicket.
+An [XPSDrv configuration module](xpsdrv-configuration-module.md) can put *private keywords* in the PrintTicket entry when it handles an [XPS driver document event](xps-driver-document-events.md) during a [**DrvDocumentEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent) function call. These PrintTicket entries are then read by the processing filters in the print filter pipeline while the filters are reading the PrintTicket.
 
 ### Filter Pipeline Property Bag
 
@@ -80,7 +80,7 @@ DrvPopulateFilterServices(
     );
 ```
 
-For more information about preceding function, see [**DrvPopulateFilterServices**](https://msdn.microsoft.com/library/windows/hardware/hh768268).
+For more information about preceding function, see [**DrvPopulateFilterServices**](/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-drvpopulatefilterservices).
 
 The following code example shows the XML syntax for the **&lt;FilterServiceProvider&gt;** element in the filter pipeline configuration file:
 

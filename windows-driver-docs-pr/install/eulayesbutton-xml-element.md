@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # eulaYesButton XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **eulaYesButton** XML element customizes the text that is associated with the accept option button on a DPInst EULA page.
 
@@ -68,7 +68,7 @@ The following code example demonstrates a **eulaYesButton** element that customi
   ...
   <language code="0x0409">
     ...
-    <eulaYesButton>I &amp;accept this EULA</eulaYesButton>
+    <eulaYesButton>I &accept this EULA</eulaYesButton>
     ...
   </language>
   ...
@@ -87,11 +87,4 @@ If a **eulaYesButton** element is not specified, DPInst displays the default opt
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

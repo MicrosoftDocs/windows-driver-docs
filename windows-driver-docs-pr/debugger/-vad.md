@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!vad** extension displays details of a virtual address descriptor (VAD) or a tree of VADs.
 
--   Displays details of one virtual addres descriptor (VAD)
+-   Displays details of one virtual address descriptor (VAD)
 -   Displays details of a tree of VADs.
 -   Displays information about the VADs for a particular user-mode module and provides a string that you can use to load the symbols for that module.
 
@@ -68,7 +68,7 @@ Address in the virtual address range of a user-mode module.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about virtual address descriptors, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. (This book may not be available in some languages and countries.)
+For information about virtual address descriptors, see *Microsoft Windows Internals*, by Mark Russinovich and David Solomon. 
 
 Remarks
 -------

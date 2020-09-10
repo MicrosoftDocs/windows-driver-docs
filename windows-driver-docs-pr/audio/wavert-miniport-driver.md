@@ -13,68 +13,63 @@ The WaveRT miniport driver is supported in Windows Vista and later Windows opera
 
 A WaveRT miniport driver must implement two interfaces:
 
--   [IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737). This interface performs miniport driver initialization, channel enumeration, and stream creation.
+-   [IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert). This interface performs miniport driver initialization, channel enumeration, and stream creation.
 
--   [IMiniportWaveRTStream](https://msdn.microsoft.com/library/windows/hardware/ff536738). This interface manages a wave stream and exposes most of the functionality of the miniport driver.
+-   [IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream). This interface manages a wave stream and exposes most of the functionality of the miniport driver.
 
 For information about how to design a WaveRT miniport driver that complements the WaveRT port driver, see the [Developing a WaveRT Miniport Driver](developing-a-wavert-miniport-driver.md) topic.
 
 ### <span id="iminiportwavert"></span><span id="IMINIPORTWAVERT"></span>IMiniportWaveRT
 
-The [IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737) interface provides the following methods:
+The [IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert) interface provides the following methods:
 
-[**IMiniportWaveRT::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536759)
+[**IMiniportWaveRT::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavert-init)
 
 Initializes the miniport object.
 
-[**IMiniportWaveRT::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536762)
+[**IMiniportWaveRT::NewStream**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavert-newstream)
 
 Creates a new stream object.
 
-[**IMiniportWaveRT::GetDeviceDescription**](https://msdn.microsoft.com/library/windows/hardware/ff536758)
+[**IMiniportWaveRT::GetDeviceDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavert-getdevicedescription)
 
-Returns a pointer to a [**DEVICE\_DESCRIPTION**](https://msdn.microsoft.com/library/windows/hardware/ff543107) structure describing the device.
+Returns a pointer to a [**DEVICE\_DESCRIPTION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_description) structure describing the device.
 
 ### <span id="iminiportwavertstream"></span><span id="IMINIPORTWAVERTSTREAM"></span>IMiniportWaveRTStream
 
-The [IMiniportWaveRTStream](https://msdn.microsoft.com/library/windows/hardware/ff536738) interface inherits the methods from the [**IUnknown**](https://msdn.microsoft.com/library/windows/desktop/ms680509) interface. IMiniportWaveRTStream provides the following additional methods:
+The [IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream) interface inherits the methods from the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveRTStream provides the following additional methods:
 
-[**IMiniportWaveRTStream::AllocateAudioBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536744)
+[**IMiniportWaveRTStream::AllocateAudioBuffer**](/previous-versions/windows/hardware/drivers/ff536744(v=vs.85))
 
 Allocates a cyclic buffer for audio data.
 
-[**IMiniportWaveRTStream::FreeAudioBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536745)
+[**IMiniportWaveRTStream::FreeAudioBuffer**](/previous-versions/windows/hardware/drivers/ff536745(v=vs.85))
 
-Frees an audio buffer previously allocated with a call to [**IMiniportWaveRTStream::AllocateAudioBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536744).
+Frees an audio buffer previously allocated with a call to [**IMiniportWaveRTStream::AllocateAudioBuffer**](/previous-versions/windows/hardware/drivers/ff536744(v=vs.85)).
 
-[**IMiniportWaveRTStream::GetClockRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536746)
+[**IMiniportWaveRTStream::GetClockRegister**](/previous-versions/windows/hardware/drivers/ff536746(v=vs.85))
 
 Retrieves the information that the port driver must have to expose the clock register to the audio subsystem and its clients.
 
-[**IMiniportWaveRTStream::GetHWLatency**](https://msdn.microsoft.com/library/windows/hardware/ff536747)
+[**IMiniportWaveRTStream::GetHWLatency**](/previous-versions/windows/hardware/drivers/ff536747(v=vs.85))
 
 Retrieves information about sources of stream latency in the audio hardware.
 
-[**IMiniportWaveRTStream::GetPosition**](https://msdn.microsoft.com/library/windows/hardware/ff536749)
+[**IMiniportWaveRTStream::GetPosition**](/previous-versions/windows/hardware/drivers/ff536749(v=vs.85))
 
 Retrieves the current play or record position as a byte offset from the beginning of the buffer.
 
-[**IMiniportWaveRTStream::GetPositionRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536752)
+[**IMiniportWaveRTStream::GetPositionRegister**](/previous-versions/windows/hardware/drivers/ff536752(v=vs.85))
 
 Retrieves the information that the port driver must have to expose the position register to the audio subsystem and its clients.
 
-[**IMiniportWaveRTStream::SetFormat**](https://msdn.microsoft.com/library/windows/hardware/ff536753)
+[**IMiniportWaveRTStream::SetFormat**](/previous-versions/windows/hardware/drivers/ff536753(v=vs.85))
 
 Sets the data format of the wave stream.
 
-[**IMiniportWaveRTStream::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536756)
+[**IMiniportWaveRTStream::SetState**](/previous-versions/windows/hardware/drivers/ff536756(v=vs.85))
 
 Changes the transport state of the audio stream.
 
  
-
- 
-
-
-
 

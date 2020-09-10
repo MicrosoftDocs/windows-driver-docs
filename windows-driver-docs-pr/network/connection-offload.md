@@ -1,6 +1,6 @@
 ---
-title: Connection Offload
-description: Connection Offload
+title: Connection Offload Overview
+description: Connection Offload Overview
 ms.assetid: 4c1b1a98-6ad3-4817-9e3d-d6112c887352
 keywords:
 - connection offload WDK TCP/IP transport
@@ -12,7 +12,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Connection Offload
+# Connection Offload Overview
 
 
 

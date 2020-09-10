@@ -22,17 +22,11 @@ WDF uses only Unicode strings. All of the methods that are defined by framework 
 
 The framework defines the *framework string object* that KMDF and UMDF drivers can use to represent Unicode strings.
 
-Your driver can call [**WdfStringCreate**](https://msdn.microsoft.com/library/windows/hardware/ff550046) to create a string object and to optionally assign a Unicode string to the object.
+Your driver can call [**WdfStringCreate**](/windows-hardware/drivers/ddi/wdfstring/nf-wdfstring-wdfstringcreate) to create a string object and to optionally assign a Unicode string to the object.
 
-Some of the framework's object methods, such as [**WdfRegistryQueryString**](https://msdn.microsoft.com/library/windows/hardware/ff549923), accept a string object handle as input and assign a string to the string object.
+Some of the framework's object methods, such as [**WdfRegistryQueryString**](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryquerystring), accept a string object handle as input and assign a string to the string object.
 
-To access the string that is assigned to a string object, your driver can call [**WdfStringGetUnicodeString**](https://msdn.microsoft.com/library/windows/hardware/ff550049).
-
- 
+To access the string that is assigned to a string object, your driver can call [**WdfStringGetUnicodeString**](/windows-hardware/drivers/ddi/wdfstring/nf-wdfstring-wdfstringgetunicodestring).
 
  
-
-
-
-
 

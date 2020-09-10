@@ -123,49 +123,49 @@ The %p conversion character is supported, but it represents a pointer in the tar
 <tr class="odd">
 <td align="left"><p>%p</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>A pointer in the target&#39;s virtual address space.</p></td>
+<td align="left"><p>A pointer in the target's virtual address space.</p></td>
 <td align="left"><p>The value of the pointer.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%N</p></td>
-<td align="left"><p>DWORD_PTR (32 or 64 bits, depending on the host&#39;s architecture)</p></td>
-<td align="left"><p>A pointer in the host&#39;s virtual address space.</p></td>
+<td align="left"><p>DWORD_PTR (32 or 64 bits, depending on the host's architecture)</p></td>
+<td align="left"><p>A pointer in the host's virtual address space.</p></td>
 <td align="left"><p>The value of the pointer. (This is equivalent to the standard C %p character.)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%ma</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a NULL-terminated ASCII string in the target&#39;s virtual address space.</p></td>
+<td align="left"><p>The address of a NULL-terminated ASCII string in the target's virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%mu</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a NULL-terminated Unicode string in the target&#39;s virtual address space.</p></td>
+<td align="left"><p>The address of a NULL-terminated Unicode string in the target's virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%msa</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of an ANSI_STRING structure in the target&#39;s virtual address space.</p></td>
+<td align="left"><p>The address of an ANSI_STRING structure in the target's virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%msu</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a UNICODE_STRING structure in the target&#39;s virtual address space.</p></td>
+<td align="left"><p>The address of a UNICODE_STRING structure in the target's virtual address space.</p></td>
 <td align="left"><p>The specified string.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>%y</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a debugger symbol in the target&#39;s virtual address space.</p></td>
+<td align="left"><p>The address of a debugger symbol in the target's virtual address space.</p></td>
 <td align="left"><p>A string containing the name of the specified symbol (and displacement, if any).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>%ly</p></td>
 <td align="left"><p>ULONG64</p></td>
-<td align="left"><p>The address of a debugger symbol in the target&#39;s virtual address space.</p></td>
+<td align="left"><p>The address of a debugger symbol in the target's virtual address space.</p></td>
 <td align="left"><p>A string containing the name of the specified symbol (and displacement, if any), as well as any available source line information.</p></td>
 </tr>
 </tbody>

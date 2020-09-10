@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVICE_SYS_BUTTON
 
 
-The GUID_DEVICE_SYS_BUTTON [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339)is defined for Advanced Configuration and Power Interface (ACPI) system power button devices.
+The GUID_DEVICE_SYS_BUTTON [device interface class](./overview-of-device-interface-classes.md)is defined for Advanced Configuration and Power Interface (ACPI) system power button devices.
 
 <table>
 <colgroup>
@@ -48,9 +48,9 @@ The GUID_DEVICE_SYS_BUTTON [device interface class](https://msdn.microsoft.com/l
 Remarks
 -------
 
-The system-supplied [ACPI driver](https://msdn.microsoft.com/library/windows/hardware/ff540493) registers an instance of this device interface class to notify the operating system and applications of the presence of system power button devices. I8042prt, the system-supplied driver for PS/2-style keyboard and mouse devices, also registers an instance of this class for a keyboard that supports a system power button.
+The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers an instance of this device interface class to notify the operating system and applications of the presence of system power button devices. I8042prt, the system-supplied driver for PS/2-style keyboard and mouse devices, also registers an instance of this class for a keyboard that supports a system power button.
 
-For information about supplying WDM [function drivers](https://msdn.microsoft.com/library/windows/hardware/ff546516) for ACPI devices, see [Supporting ACPI Devices](https://msdn.microsoft.com/library/windows/hardware/ff536161).
+For information about supplying WDM [function drivers](../kernel/function-drivers.md) for ACPI devices, see [Supporting ACPI Devices](../acpi/supporting-acpi-devices.md).
 
 For information about PS/2-style keyboard and mouse devices, see [Non-HIDClass Keyboard and Mouse Devices](../hid/keyboard-and-mouse-class-drivers.md).
 
@@ -71,10 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

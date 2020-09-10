@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 
 
-A PnP filter driver can support a specific device or all devices in a setup class and can attach below a device's function driver (a lower filter) or above a device's function driver (an upper filter). See [Types of WDM Drivers](https://msdn.microsoft.com/library/windows/hardware/ff564862) for more information about PnP driver layers.
+A PnP filter driver can support a specific device or all devices in a setup class and can attach below a device's function driver (a lower filter) or above a device's function driver (an upper filter). See [Types of WDM Drivers](../kernel/types-of-wdm-drivers.md) for more information about PnP driver layers.
 
 ### <a href="" id="ddk-installing-a-device-specific-filter-driver-dg"></a>Installing a Device-Specific Filter Driver
 
@@ -59,7 +59,7 @@ ServiceBinary  = %12%\cdaudio.sys
 
 ### <a href="" id="ddk-installing-a-class-filter-driver-dg"></a>Installing a Class Filter Driver
 
-To install a class-wide upper- or lower-filter for a device setup class that installs the necessary services. The application can then register the service as being an upper- or lower-filter for the desired device setup classes. To copy the service binaries, the application can use **SetupInstallFilesFromInfSection**. To install the services, the application can use **SetupInstallServicesFromInfSection**. To register the services as upper- and/or lower-filters for particular device setup classes, the application calls **SetupInstallFromInfSection** for each device setup class of interest, using the registry key handle they retrieved from [**SetupDiOpenClassRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552065) for the *RelativeKeyRoot* parameter. For example, consider the following INF sections:
+To install a class-wide upper- or lower-filter for a device setup class that installs the necessary services. The application can then register the service as being an upper- or lower-filter for the desired device setup classes. To copy the service binaries, the application can use **SetupInstallFilesFromInfSection**. To install the services, the application can use **SetupInstallServicesFromInfSection**. To register the services as upper- and/or lower-filters for particular device setup classes, the application calls **SetupInstallFromInfSection** for each device setup class of interest, using the registry key handle they retrieved from [**SetupDiOpenClassRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkey) for the *RelativeKeyRoot* parameter. For example, consider the following INF sections:
 
 ```cpp
 :
@@ -101,10 +101,4 @@ The device installation application would:
 Each call would specify **SPINST_REGISTRY** for the *Flags* argument, to indicate that only registry modifications need to be performed.
 
  
-
- 
-
-
-
-
 

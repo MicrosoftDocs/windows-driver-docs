@@ -1,5 +1,5 @@
 ---
-Description: Handling Access Control
+description: Handling Access Control
 title: Handling Access Control
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -107,7 +107,7 @@ CQueue::OnDeviceIoControl(
     else
     {
         hr = E_UNEXPECTED;
-        CHECK_HR(hr, "Received invalid/unsupported IOCTL code &#39;0x%lx&#39;",ControlCode);
+        CHECK_HR(hr, "Received invalid/unsupported IOCTL code '0x%lx'",ControlCode);
     }
 
     // Complete the request

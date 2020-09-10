@@ -120,15 +120,15 @@ The following table describes the valid values for the **WIA\_IPS\_SUPPORTED\_BA
 </tr>
 <tr class="odd">
 <td><p>WIA_BARCODE_POSTNETA</p></td>
-<td><p>POSTNET (Postal Numeric Encoding Technique) &quot;A&quot; code</p></td>
+<td><p>POSTNET (Postal Numeric Encoding Technique) "A" code</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_BARCODE_POSTNETB</p></td>
-<td><p>POSTNET (Postal Numeric Encoding Technique) &quot;B&quot; code</p></td>
+<td><p>POSTNET (Postal Numeric Encoding Technique) "B" code</p></td>
 </tr>
 <tr class="odd">
 <td><p>WIA_BARCODE_POSTNETC</p></td>
-<td><p>POSTNET (Postal Numeric Encoding Technique) &quot;C&quot; code</p></td>
+<td><p>POSTNET (Postal Numeric Encoding Technique) "C" code</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_BARCODE_POSTNET_DPBC</p></td>

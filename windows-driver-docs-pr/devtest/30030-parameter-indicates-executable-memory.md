@@ -22,16 +22,16 @@ Some APIs have parameters that configure whether memory is executable or not. Th
 
 Use one of the following options:
 
--   Specify the preprocessor definition [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) in the sources/project settings.
--   Specify the pre-processor definition [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) in the sources/project settings and call **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)** from the driver initialization function (**DriverEntry** or **DllInitialize**).
+-   Specify the preprocessor definition [POOL\_NX\_OPTIN\_AUTO](../kernel/multiple-binary-opt-in-pool-nx-optin-auto.md) in the sources/project settings.
+-   Specify the pre-processor definition [POOL\_NX\_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md) in the sources/project settings and call **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)** from the driver initialization function (**DriverEntry** or **DllInitialize**).
 
-**Note**  The choice of whether to use [POOL\_NX\_OPTIN\_AUTO](https://msdn.microsoft.com/library/windows/hardware/hh920390) or [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) largely depends on which platform you are targeting and how many binaries you are making. Both of these options result in these two types being changed for you (either by the compiler or at run time) to their NX equivalents. See the topic links for more information.
+**Note**  The choice of whether to use [POOL\_NX\_OPTIN\_AUTO](../kernel/multiple-binary-opt-in-pool-nx-optin-auto.md) or [POOL\_NX\_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md) largely depends on which platform you are targeting and how many binaries you are making. Both of these options result in these two types being changed for you (either by the compiler or at run time) to their NX equivalents. See the topic links for more information.
 
 
 
 **Note**  You may see a false positive warning if one of the following conditions is true:
 -   The driver initialization function calls another function that calls **ExInitializeDriverRuntime(*DrvRtPoolNxOptIn*)**
--   You are creating a **DRIVER\_LIBRARY** and have specified [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) but have no initialization function.
+-   You are creating a **DRIVER\_LIBRARY** and have specified [POOL\_NX\_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md) but have no initialization function.
 
 
 
@@ -103,18 +103,18 @@ For the **POOL\_TYPE** type you can fix this by changing the request type to the
 The following code generates a warning:
 
 ```
-ExAllocatePoolWithTag(NonPagedPool, numberOfBytes, &#39;xppn&#39;);
+ExAllocatePoolWithTag(NonPagedPool, numberOfBytes, 'xppn');
 ```
 
 The following code avoids the warning:
 
 ```
-ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, &#39;xppn&#39;);
+ExAllocatePoolWithTag(NonPagedPoolNx, numberOfBytes, 'xppn');
 ```
 
 **Other special cases:**
 
-There has been a change in the [**ExInitializeNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff545301) routine that now enables you to specify non-executable nonpaged pool memory. For example, the following code generates this warning:
+There has been a change in the [**ExInitializeNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist) routine that now enables you to specify non-executable nonpaged pool memory. For example, the following code generates this warning:
 
 ```
 ExInitializeNPagedLookasideList(pLookaside,
@@ -141,7 +141,7 @@ ExInitializeNPagedLookasideList(pLookaside,
 ## <span id="For_defects_involving_page_protections_"></span><span id="for_defects_involving_page_protections_"></span><span id="FOR_DEFECTS_INVOLVING_PAGE_PROTECTIONS_"></span>For defects involving page protections:
 
 
-Some APIs allow you to specify page protections, [**ZwMapViewOfSection**](https://msdn.microsoft.com/library/windows/hardware/ff566481) is one of these. In these cases, use the non-executable version of the protection type.
+Some APIs allow you to specify page protections, [**ZwMapViewOfSection**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwmapviewofsection) is one of these. In these cases, use the non-executable version of the protection type.
 
 Change:
 
@@ -185,12 +185,12 @@ Status = ZwMapViewOfSection(   handle,
 ## <span id="For_defects_involving_cache_types_"></span><span id="for_defects_involving_cache_types_"></span><span id="FOR_DEFECTS_INVOLVING_CACHE_TYPES_"></span>For defects involving cache types:
 
 
-Some APIs allocate memory with executable permissions dependent on a cache type. Two such APIs are [**MmAllocateContiguousMemorySpecifyCache**](https://msdn.microsoft.com/library/windows/hardware/ff554464) and [**MmAllocateContiguousMemorySpecifyCacheNode**](https://msdn.microsoft.com/library/windows/hardware/ff554469). Should a cache type of **MmCached** be used (see [**MEMORY\_CACHING\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff554430)), then executable memory will be allocated. To fix this, either select another caching type, or if cached memory is required then use the API [**MmAllocateContiguousNodeMemory**](https://msdn.microsoft.com/library/windows/hardware/jj602795).
+Some APIs allocate memory with executable permissions dependent on a cache type. Two such APIs are [**MmAllocateContiguousMemorySpecifyCache**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycache) and [**MmAllocateContiguousMemorySpecifyCacheNode**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycachenode). Should a cache type of **MmCached** be used (see [**MEMORY\_CACHING\_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_memory_caching_type)), then executable memory will be allocated. To fix this, either select another caching type, or if cached memory is required then use the API [**MmAllocateContiguousNodeMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousnodememory).
 
 Change:
 
 -   **MmCached** to **MmNonCached** or **MmWriteCombined** if cached memory is not required
--   The API to [**MmAllocateContiguousNodeMemory**](https://msdn.microsoft.com/library/windows/hardware/jj602795) if cached memory is required
+-   The API to [**MmAllocateContiguousNodeMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousnodememory) if cached memory is required
 
 The following code generates a warning:
 
@@ -253,14 +253,4 @@ MmAllocateContiguousNodeMemory(       numberOfBytes,
 ## <span id="related_topics"></span>Related topics
 
 
-[**POOL\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559707)
-
-
-
-
-
-
-
-
-
-
+[**POOL\_TYPE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type)

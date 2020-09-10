@@ -10,15 +10,15 @@ ms.localizationpriority: medium
 
 Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 
-For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/Library/Windows/Hardware/Dn745909) and [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
+For information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md) and [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 
-For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554716) and [WDF Verifier Control Application](https://msdn.microsoft.com/Library/Windows/Hardware/Ff556129).
+For information about debugging UMDF drivers, see [How to Enable Debugging of a UMDF Driver](../wdf/enabling-a-debugger.md) and [WDF Verifier Control Application](../devtest/wdf-verifier-control-application.md).
 
 ## <span id="Setting_UMDF_Verifier_properties_for_driver_projects"></span><span id="setting_umdf_verifier_properties_for_driver_projects"></span><span id="SETTING_UMDF_VERIFIER_PROPERTIES_FOR_DRIVER_PROJECTS"></span>Setting UMDF Verifier properties for driver projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **UMDF Verifier**.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **UMDF Verifier**.
 3.  Select the **Deploy UMDF Verifier** option. When this option is enabled (**Yes**), you can select the UMDF Verifier options to use on the test computer to verify a UMDF driver.
 
 <table>
@@ -94,15 +94,8 @@ For information about debugging UMDF drivers, see [How to Enable Debugging of a 
 ## <span id="related_topics"></span>Related topics
 
 
-* [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
-* [Driver Verifier](https://msdn.microsoft.com/Library/Windows/Hardware/Ff545448)
+* [User-Mode Driver Framework](../wdf/index.md)
+* [Driver Verifier](../devtest/driver-verifier.md)
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
  
-
- 
-
-
-
-
-
 

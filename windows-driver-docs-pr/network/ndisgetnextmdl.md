@@ -40,7 +40,7 @@ None
 Remarks
 -------
 
-The **NdisGetNextMdl** macro provides an MDL-based version of the [**NdisGetNextBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff552070) function.
+The **NdisGetNextMdl** macro provides an MDL-based version of the [**NdisGetNextBuffer**](/previous-versions/windows/hardware/network/ff552070(v=vs.85)) function.
 
 Requirements
 ------------
@@ -73,12 +73,7 @@ Requirements
 ## See also
 
 
-[**NdisGetNextBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff552070)
+[**NdisGetNextBuffer**](/previous-versions/windows/hardware/network/ff552070(v=vs.85))
 
  
-
- 
-
-
-
 

@@ -36,7 +36,7 @@ Rcdrkd.dll
 Remarks
 -------
 
-Each message in a recorder log has a prefix that you can control by specifying a trace message prefix string. For more information, see [Trace Message Prefix](https://msdn.microsoft.com/library/windows/hardware/ff553941).
+Each message in a recorder log has a prefix that you can control by specifying a trace message prefix string. For more information, see [Trace Message Prefix](../devtest/trace-message-prefix.md).
 
 Examples
 --------
@@ -75,11 +75,4 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
 [RCDRKD Extensions](rcdrkd-extensions.md)
 
  
-
- 
-
-
-
-
-
 

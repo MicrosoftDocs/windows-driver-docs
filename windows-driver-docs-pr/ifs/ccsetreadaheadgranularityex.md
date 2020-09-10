@@ -49,7 +49,7 @@ Remarks
 
 Calling **CcSetReadAheadGranularityEx** will enable pipelined read-ahead requests for the file object in *FileObject*. Selecting an appropriate value for *PipelinedRequestSize* will divide read-ahead requests into smaller multiple parallel requests. Callers of **CcSetReadAheadGranularityEx** can tune read-ahead performance by adjusting *PipelinedRequestSize*.
 
-After [**CcInitializeCacheMap**](https://msdn.microsoft.com/library/windows/hardware/ff539135) is called to cache a file, but before **CcSetReadAheadGranularityEx** is called for the cached file, the default read-ahead granularity for the cached file is equal to PAGE\_SIZE.
+After [**CcInitializeCacheMap**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccinitializecachemap) is called to cache a file, but before **CcSetReadAheadGranularityEx** is called for the cached file, the default read-ahead granularity for the cached file is equal to PAGE\_SIZE.
 
 Requirements
 ------------
@@ -86,20 +86,13 @@ Requirements
 ## See also
 
 
-[**CcInitializeCacheMap**](https://msdn.microsoft.com/library/windows/hardware/ff539135)
+[**CcInitializeCacheMap**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccinitializecachemap)
 
-[**CcReadAhead**](https://msdn.microsoft.com/library/windows/hardware/ff539191)
+[**CcReadAhead**](/previous-versions/ff539191(v=vs.85))
 
-[**CcScheduleReadAhead**](https://msdn.microsoft.com/library/windows/hardware/ff539200)
+[**CcScheduleReadAhead**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccschedulereadahead)
 
-[**CcSetAdditionalCacheAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff539203)
-
- 
+[**CcSetAdditionalCacheAttributes**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccsetadditionalcacheattributes)
 
  
-
-
-
-
-
 

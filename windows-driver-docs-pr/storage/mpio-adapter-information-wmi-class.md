@@ -16,7 +16,7 @@ class MPIO_ADAPTER_INFORMATION
 {
     //
     // Path ID. The PDO_INFORMATION class includes
-    // it&#39;s pathId. These values can be used to find
+    // it's pathId. These values can be used to find
     // which devices are on which path.
     //
     [WmiDataId(1)] uint64 PathId;
@@ -36,13 +36,7 @@ class MPIO_ADAPTER_INFORMATION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_ADAPTER\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff562313) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_ADAPTER\_INFORMATION**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_adapter_information) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

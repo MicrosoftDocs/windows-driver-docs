@@ -19,18 +19,15 @@ Thus, there are two ways for a WIA application in Windows Vista to cancel a tran
 
 A Windows Vista driver can be notified in two different ways that the application has canceled the transfer:
 
--   The driver receives a call to its [**IWiaMiniDrv::drvNotifyPnPEvent**](https://msdn.microsoft.com/library/windows/hardware/ff544998) with a WIA\_EVENT\_CANCEL\_IO event. We recommend that all kernel-mode read or write operations use OVERLAPPED I/O. Only with this procedure can you guarantee *immediate* cancellation.
+-   The driver receives a call to its [**IWiaMiniDrv::drvNotifyPnPEvent**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvnotifypnpevent) with a WIA\_EVENT\_CANCEL\_IO event. We recommend that all kernel-mode read or write operations use OVERLAPPED I/O. Only with this procedure can you guarantee *immediate* cancellation.
 
--   S\_FALSE is returned from two callback functions: **IWiaMiniDrvTransferCallback::GetNextStream** and [**IWiaMiniDrvTransferCallback::SendMessage**](https://msdn.microsoft.com/library/windows/hardware/jj151552).
+-   S\_FALSE is returned from two callback functions: **IWiaMiniDrvTransferCallback::GetNextStream** and [**IWiaMiniDrvTransferCallback::SendMessage**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvtransfercallback-sendmessage).
 
-When an application calls **IWiaTransfer::Cancel**, the **IWiaMiniDrv::drvNotifyPnPEvent** method should be called into the driver with WIA\_EVENT\_CANCEL\_IO. In addition, the [**IWiaMiniDrvTransferCallback::GetNextStream**](https://msdn.microsoft.com/library/windows/hardware/jj151551) and **IWiaMiniDrvTransferCallback::SendMessage** callback functions must always return S\_FALSE after the transfer has been canceled.
+When an application calls **IWiaTransfer::Cancel**, the **IWiaMiniDrv::drvNotifyPnPEvent** method should be called into the driver with WIA\_EVENT\_CANCEL\_IO. In addition, the [**IWiaMiniDrvTransferCallback::GetNextStream**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvtransfercallback-getnextstream) and **IWiaMiniDrvTransferCallback::SendMessage** callback functions must always return S\_FALSE after the transfer has been canceled.
 
 If **IWiaTransferCallback::GetNextStream** returns WIA\_STATUS\_SKIP\_ITEM during a [multi-item transfer](multipage-istream-transfers.md), an application is skipping (that is, not transferring) the current item. A return value of S\_FALSE still means that the whole transfer should be canceled.
 
 The **IWiaTransfer** and **IWiaTransferCallback** interfaces are described in the Microsoft Windows SDK documentation.
 
 ## Related topics
-[**IWiaMiniDrvTransferCallback**](https://msdn.microsoft.com/library/windows/hardware/jj151550)  
-
-
-
+[**IWiaMiniDrvTransferCallback**](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvtransfercallback)

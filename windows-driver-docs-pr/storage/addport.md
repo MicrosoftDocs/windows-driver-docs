@@ -37,7 +37,7 @@ Parameters
 A worldwide name that indicates the port whose events are to be reported.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddPort\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550132) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddPort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_out) structure.
 
 Return value
 ------------
@@ -72,16 +72,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**AddPort\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff550131)
+[**AddPort\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_in)
 
-[**AddPort\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550132)
-
- 
+[**AddPort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_out)
 
  
-
-
-
-
-
 

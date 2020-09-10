@@ -23,7 +23,7 @@ Performs an operation on a COPP DirectX VA device.
 
 ### <span id="Input_Parameters"></span><span id="input_parameters"></span><span id="INPUT_PARAMETERS"></span>Input Parameters
 
-The [**VIDEO\_REQUEST\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff570547) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
+The [**VIDEO\_REQUEST\_PACKET**](/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
 
 ```cpp
 typedef struct {
@@ -33,7 +33,7 @@ typedef struct {
 } COPP_IO_InputBuffer;
 ```
 
-The **ppThis** member points to a pointer to the COPP DirectX VA device object on which an operation is performed. The **InputBuffer** member is set to a pointer to a [**DXVA\_COPPCommand**](https://msdn.microsoft.com/library/windows/hardware/ff563141) structure that describes the COPP command to perform. The **phr** member should be set to the value returned from the [*COPPCommand*](https://msdn.microsoft.com/library/windows/hardware/ff539642) function.
+The **ppThis** member points to a pointer to the COPP DirectX VA device object on which an operation is performed. The **InputBuffer** member is set to a pointer to a [**DXVA\_COPPCommand**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppcommand) structure that describes the COPP command to perform. The **phr** member should be set to the value returned from the [*COPPCommand*](./coppcommand.md) function.
 
 ### <span id="Output_Parameters"></span><span id="output_parameters"></span><span id="OUTPUT_PARAMETERS"></span>Output Parameters
 
@@ -41,7 +41,7 @@ None
 
 ### <span id="I_O_Status_Block"></span><span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
 
-The miniport driver does not set the **Information** member of the [**STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff569732) structure.
+The miniport driver does not set the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure.
 
 Requirements
 ------------
@@ -62,16 +62,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[*COPPCommand*](https://msdn.microsoft.com/library/windows/hardware/ff539642)
+[*COPPCommand*](./coppcommand.md)
 
-[**DXVA\_COPPCommand**](https://msdn.microsoft.com/library/windows/hardware/ff563141)
-
- 
+[**DXVA\_COPPCommand**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppcommand)
 
  
-
-
-
-
-
 

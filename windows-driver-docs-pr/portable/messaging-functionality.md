@@ -1,5 +1,5 @@
 ---
-Description: Messaging Functionality
+description: Messaging Functionality
 title: Messaging Functionality
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -84,7 +84,7 @@ HRESULT WpdBaseDriver::DispatchWpdMessage(IPortableDeviceValues* pParams,
     CHECK_HR(hrTemp, ("Failed to set WPD_PROPERTY_COMMON_HRESULT"));
 
     // Set to a success code, to indicate that the message was received.
-    // the return code for the actual command&#39;s results is stored in the
+    // the return code for the actual command's results is stored in the
     // WPD_PROPERTY_COMMON_HRESULT property.
     hr = S_OK;
 

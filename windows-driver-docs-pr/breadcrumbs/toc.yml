@@ -2,9 +2,9 @@
   tocHref: /
   topicHref: /
   items:
-  - name: Windows Hardware
+  - name: Windows
     tocHref: /windows-hardware/
-    topicHref: "https://docs.microsoft.com/windows/#pivot=hardware-dev"
+    topicHref: "https://docs.microsoft.com/windows"
     items:
     - name: Windows Drivers
       tocHref: /windows-hardware/drivers/
@@ -28,7 +28,7 @@
       - name: Windows Debugging Tools
         tocHref: /windows-hardware/drivers/debugger/
         topicHref: /windows-hardware/drivers/debugger/index
-      - name: Device and Driver Technologies
+      - name: Driver Technologies
         tocHref: /windows-hardware/drivers/device-and-driver-technologies/
         topicHref: /windows-hardware/drivers/device-and-driver-technologies
         items:

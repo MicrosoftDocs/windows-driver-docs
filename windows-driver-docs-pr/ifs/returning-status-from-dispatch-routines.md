@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_returning_status_from_dispatch_routines_if"></span><span id="DDK_RETURNING_STATUS_FROM_DISPATCH_ROUTINES_IF"></span>
 
 
-Except when completing an IRP, a dispatch routine that does not set a completion routine should always return the NTSTATUS value returned by [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336). Unless this value is STATUS\_PENDING, it must match the value of **Irp-&gt;IoStatus.Status** set by the driver that completed the IRP.
+Except when completing an IRP, a dispatch routine that does not set a completion routine should always return the NTSTATUS value returned by [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver). Unless this value is STATUS\_PENDING, it must match the value of **Irp-&gt;IoStatus.Status** set by the driver that completed the IRP.
 
 A dispatch routine that sets a completion routine that might post the IRP to a work queue should do one of the following:
 
@@ -34,9 +34,4 @@ Which of these behaviors is correct, or even possible, depends on the specific o
 For more information about returning status from a dispatch routine, see [Constraints on Dispatch Routines](constraints-on-dispatch-routines.md).
 
  
-
- 
-
-
-
 

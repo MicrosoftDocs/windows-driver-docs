@@ -95,13 +95,7 @@ class MSiSCSI_InitiatorLoginStatistics : Win32_PerfRawData {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorLoginStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff563040) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_InitiatorLoginStatistics**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_initiatorloginstatistics) data structure.
 
  
-
- 
-
-
-
-
 

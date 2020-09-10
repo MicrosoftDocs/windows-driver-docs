@@ -3,7 +3,7 @@ title: Extracting Information from a Dump File
 description: Extracting Information from a Dump File
 ms.assetid: abde266e-e3ab-4e5e-ac6d-a27933f3d1a9
 keywords: ["extracting information from a dump file", "dump file, extracting various information", "machine name (determining from a dump file)", "computer name (determining from a dump file)", "IP address (determining from a dump file)"]
-ms.date: 05/23/2017
+ms.date: 03/13/2019
 ms.localizationpriority: medium
 ---
 
@@ -18,13 +18,6 @@ Certain kinds of information, such as the name of the target computer, are easil
 ### <span id="finding_the_computer_name_in_a_kernel_mode_dump_file"></span><span id="FINDING_THE_COMPUTER_NAME_IN_A_KERNEL_MODE_DUMP_FILE"></span>Finding the Computer Name in a Kernel-Mode Dump File
 
 If you need to determine the name of the computer on which the crash dump was made, you can use the [**!peb**](-peb.md) extension and look for the value of COMPUTERNAME it its output.
-
-Or you can use the following command:
-
-```dbgcmd
-0: kd> x srv!SrvComputerName
-be8ce2e8  srv!SrvComputerName  = _UNICODE_STRING "AIGM-MYCOMP-PUB01"
-```
 
 ### <span id="finding_the_ip_address_in_a_kernel_mode_dump_file"></span><span id="FINDING_THE_IP_ADDRESS_IN_A_KERNEL_MODE_DUMP_FILE"></span>Finding the IP Address in a Kernel-Mode Dump File
 

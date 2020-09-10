@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_defining_directx_va_device_classes_gg"></span><span id="DDK_DEFINING_DIRECTX_VA_DEVICE_CLASSES_GG"></span>
 
 
-Use the example code in this section to define device classes for the deinterlace container device, ProcAmp control device, deinterlace mode device (for example, [bob](bob-deinterlacing.md)), and COPP device. These device classes contain declarations for member functions that comprise the [ProcAmp Control DDI](https://msdn.microsoft.com/library/windows/hardware/ff569186) and [Deinterlace DDI](https://msdn.microsoft.com/library/windows/hardware/ff552701). These device class definitions can be declared in a driver-supplied header file.
+Use the example code in this section to define device classes for the deinterlace container device, ProcAmp control device, deinterlace mode device (for example, [bob](bob-deinterlacing.md)), and COPP device. These device classes contain declarations for member functions that comprise the [ProcAmp Control DDI](./procamp-control-ddi.md) and [Deinterlace DDI](./deinterlace-ddi.md). These device class definitions can be declared in a driver-supplied header file.
 
 Use the following example code to define each device type and a base class that applies to each device type:
 
@@ -50,10 +50,4 @@ The following topics contain example code that defines classes for the deinterla
 [Defining the COPP Device Class](defining-the-copp-device-class.md)
 
  
-
- 
-
-
-
-
 

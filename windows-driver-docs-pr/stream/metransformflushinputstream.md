@@ -30,15 +30,9 @@ When Device MFT’s output is changed or flushed, the related input streams may 
 ## Remarks
 
 
-When Device MFT’s input stream’s connected stream needs to be flushed, it generates this event. In response to this event, DTM would call [**FlushOutputStream**](https://msdn.microsoft.com/library/windows/hardware/mt797665) on the connected stream of the Devproxy and it will call [**FlushInputStream**](https://msdn.microsoft.com/library/windows/hardware/mt797664) on the Device MFT. Device MFT would flush its input stream and the flush operation is considered complete.
+When Device MFT’s input stream’s connected stream needs to be flushed, it generates this event. In response to this event, DTM would call [**FlushOutputStream**](/windows/win32/api/mftransform/nf-mftransform-imfdevicetransform-flushoutputstream) on the connected stream of the Devproxy and it will call [**FlushInputStream**](/windows/win32/api/mftransform/nf-mftransform-imfdevicetransform-flushinputstream) on the Device MFT. Device MFT would flush its input stream and the flush operation is considered complete.
 
 In general, this event would be called when the stream itself is in running state or about to be stopped.
 
  
-
- 
-
-
-
-
 

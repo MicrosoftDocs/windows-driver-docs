@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_REMOVE_WOL_PATTERN Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN
@@ -24,7 +25,7 @@ OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN removes a wake-on-LAN (WOL) pattern from the
 
 | TLV                                                                                        | Multiple TLV instances allowed | Optional | Description     |
 |--------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------|
-| [**WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE**](https://msdn.microsoft.com/library/windows/hardware/dn898186) |                                |          | WOL pattern ID. |
+| [**WDI\_TLV\_WAKE\_PACKET\_PATTERN\_REMOVE**](./wdi-tlv-wake-packet-pattern-remove.md) |                                |          | WOL pattern ID. |
 
  
 
@@ -32,6 +33,7 @@ OID\_WDI\_SET\_REMOVE\_WOL\_PATTERN removes a wake-on-LAN (WOL) pattern from the
 
 
 No additional parameters. The data in the header is sufficient.
+
 Requirements
 ------------
 
@@ -62,9 +64,4 @@ Requirements
 [OID\_WDI\_SET\_ADD\_WOL\_PATTERN](oid-wdi-set-add-wol-pattern.md)
 
  
-
- 
-
-
-
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\] routine
 
 
-The *MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to issue an I/O system control request to the network mini-redirector.
+The *MRxLowIOSubmit\[LOWIO\_OP\_IOCTL\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to issue an I/O system control request to the network mini-redirector.
 
 Syntax
 ------
@@ -143,11 +143,4 @@ Requirements
 [**MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]**](mrxlowiosubmit-lowio-op-write-.md)
 
  
-
- 
-
-
-
-
-
 

@@ -13,10 +13,10 @@ Starting in KMDF version 1.11, the framework supports custom type names. A custo
 
 Use these macros to manipulate custom type names:
 
--   To define a custom type name, call [**WDF\_DECLARE\_CUSTOM\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh439486) from an area of the driver that declares global data, such as a header file.
--   Call [**WdfObjectAddCustomType**](https://msdn.microsoft.com/library/windows/hardware/hh439344) or [**WdfObjectAddCustomTypeWithData**](https://msdn.microsoft.com/library/windows/hardware/hh439350) to associate a custom type with a framework object.
--   Call [**WdfObjectIsCustomType**](https://msdn.microsoft.com/library/windows/hardware/hh439362) to determine whether a specified object is of a specified custom type.
--   After calling [**WdfObjectAddCustomTypeWithData**](https://msdn.microsoft.com/library/windows/hardware/hh439350), the driver can later call [**WdfObjectGetCustomTypeData**](https://msdn.microsoft.com/library/windows/hardware/hh439356) to retrieve the data.
+-   To define a custom type name, call [**WDF\_DECLARE\_CUSTOM\_TYPE**](./wdf-declare-custom-type.md) from an area of the driver that declares global data, such as a header file.
+-   Call [**WdfObjectAddCustomType**](./wdfobjectaddcustomtype.md) or [**WdfObjectAddCustomTypeWithData**](./wdfobjectaddcustomtypewithdata.md) to associate a custom type with a framework object.
+-   Call [**WdfObjectIsCustomType**](./wdfobjectiscustomtype.md) to determine whether a specified object is of a specified custom type.
+-   After calling [**WdfObjectAddCustomTypeWithData**](./wdfobjectaddcustomtypewithdata.md), the driver can later call [**WdfObjectGetCustomTypeData**](./wdfobjectgetcustomtypedata.md) to retrieve the data.
 
 A driver can associate multiple custom types with a single framework object. A driver can also associate multiple framework objects with a single custom type.
 
@@ -27,10 +27,4 @@ WDF_Object_Name, [custom_Type1_Name, custom_Type2_Name]
 ```
 
  
-
- 
-
-
-
-
 

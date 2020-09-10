@@ -290,7 +290,7 @@ TAEF allows you to have a more meaningful 'Name' property instead of the Index t
 6                  <ParameterType Name="Color">String</ParameterType>
 7                  <ParameterType Name="Transparency">Boolean</ParameterType>
 8          </ParameterTypes>
-9          <Row Name=&#39;BlueTransparent&#39; Priority="1" Owner="C2">
+9          <Row Name='BlueTransparent' Priority="1" Owner="C2">
 10                 <Parameter Name="Size">12</Parameter>
 11                 <Parameter Name="Color">Blue</Parameter>
 12                 <Parameter Name="Transparency">True</Parameter>
@@ -300,7 +300,7 @@ TAEF allows you to have a more meaningful 'Name' property instead of the Index t
 16                 <Parameter Name="Color">White</Parameter>
 17                 <Parameter Name="Transparency">False</Parameter>
 18         </Row>
-19         <Row Name=&#39;BlackTransparent&#39; Owner="C2">
+19         <Row Name='BlackTransparent' Owner="C2">
 20                 <Parameter Name="Size">9</Parameter>
 21                 <Parameter Name="Color">Black</Parameter>
 22                 <Parameter Name="Transparency">True</Parameter>

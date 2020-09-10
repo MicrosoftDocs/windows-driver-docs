@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Supporting Direct3D Version 10
 
 
-The following sections describe the new features of Direct3D version 10 and how to support and use the [Direct3D version 10 DDI](https://msdn.microsoft.com/library/windows/hardware/ff552909):
+The following sections describe the new features of Direct3D version 10 and how to support and use the [Direct3D version 10 DDI](/windows-hardware/drivers/ddi/index):
 
 [Enabling Support for the Direct3D Version 10 DDI](enabling-support-for-the-direct3d-version-10-ddi.md)
 
@@ -30,10 +30,4 @@ The following sections describe the new features of Direct3D version 10 and how 
 [DirectX Graphics Infrastructure DDI](directx-graphics-infrastructure-ddi.md)
 
  
-
- 
-
-
-
-
 

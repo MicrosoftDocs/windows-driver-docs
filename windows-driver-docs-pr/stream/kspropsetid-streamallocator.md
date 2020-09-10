@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_kspropsetid_streamallocator_ks"></span><span id="DDK_KSPROPSETID_STREAMALLOCATOR_KS"></span>
 
 
-The KSPROPSETID\_StreamAllocator property set specifies the streaming allocator characteristics that can be queried and manipulated. All properties can be supported by an allocator instance. For more information about stream allocators, see [KS Allocators](https://msdn.microsoft.com/library/windows/hardware/ff567257).
+The KSPROPSETID\_StreamAllocator property set specifies the streaming allocator characteristics that can be queried and manipulated. All properties can be supported by an allocator instance. For more information about stream allocators, see [KS Allocators](./ks-allocators.md).
 
 The KSPROPSETID\_StreamAllocator property set includes:
 
@@ -21,10 +21,4 @@ The KSPROPSETID\_StreamAllocator property set includes:
 [**KSPROPERTY\_STREAMALLOCATOR\_STATUS**](ksproperty-streamallocator-status.md)
 
  
-
- 
-
-
-
-
 

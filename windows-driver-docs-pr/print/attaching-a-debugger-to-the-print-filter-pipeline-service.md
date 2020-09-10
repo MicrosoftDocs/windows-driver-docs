@@ -25,7 +25,7 @@ Use these steps to change the filter pipeline service timeout value:
 
 2.  Add a **PipelineHostTimeout** REG\_DWORD value to the key, if it is not already present.
 
-3.  Set **PipelineHostTimeout** to the timeout value, in milliseconds. Set a large enough value to give yourself ample time to attach the process and set breakpoints. For example, if you want a timeout value of .5 minutes , set **PipelineHostTimeout** to 90000.
+3.  Set **PipelineHostTimeout** to the timeout value, in milliseconds. Set a large enough value to give yourself ample time to attach the process and set breakpoints. For example, if you want a timeout value of 1.5 minutes , set **PipelineHostTimeout** to 90000.
 
 After setting the **PipelineHostTimeout** value, use the following procedure to attach WinDbg to the pipeline filter service:
 

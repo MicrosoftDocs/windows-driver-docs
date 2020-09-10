@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Verifying the SPC Signature of a Catalog File
 
 
-To verify that a [catalog file](catalog-files.md) is signed by a valid [Software Publisher Certificate (SPC)](software-publisher-certificate.md) and corresponding cross-certificate, use the following [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) command:
+To verify that a [catalog file](catalog-files.md) is signed by a valid [Software Publisher Certificate (SPC)](software-publisher-certificate.md) and corresponding cross-certificate, use the following [**SignTool**](../devtest/signtool.md) command:
 
 ```cpp
 SignTool verify /v /kp CatalogFileName.cat 
@@ -48,10 +48,4 @@ SignTool verify /kp /c tstamd64.cat toastpkg.inf
 ```
 
  
-
- 
-
-
-
-
 

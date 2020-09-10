@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DISASSOCIATION Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # NDIS\_STATUS\_WDI\_INDICATION\_DISASSOCIATION
@@ -26,19 +27,11 @@ Before the disassociation indication is sent, the port must clear the state asso
 ## Payload data
 
 
-Type
-Multiple TLV instances allowed
-Optional
-Description
-[**WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926292)
-The disassociation indication parameters.
-[**WDI\_TLV\_DISCONNECT\_DEAUTH\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926296)
-X
-The deauthentication frame that was received. This does not include the 802.11 MAC header.
-[**WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME**](https://msdn.microsoft.com/library/windows/hardware/dn926298)
-X
-The disassociation frame that was received. This does not include the 802.11 MAC header.
- 
+| Type | Multiple TLV instances allowed | Optional | Description |
+| --- | --- | --- | --- |
+| [**WDI\_TLV\_DISASSOCIATION\_INDICATION\_PARAMETERS**](./wdi-tlv-disassociation-indication-parameters.md) |   |   | The disassociation indication parameters. |
+| [**WDI\_TLV\_DISCONNECT\_DEAUTH\_FRAME**](./wdi-tlv-disconnect-deauth-frame.md) |   | X | The deauthentication frame that was received. This does not include the 802.11 MAC header. |
+| [**WDI\_TLV\_DISCONNECT\_DISASSOCIATION\_FRAME**](./wdi-tlv-disconnect-disassociation-frame.md) |   | X | The disassociation frame that was received. This does not include the 802.11 MAC header. | 
 
 Requirements
 ------------
@@ -72,9 +65,4 @@ Requirements
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
  
-
- 
-
-
-
 

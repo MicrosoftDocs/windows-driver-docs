@@ -14,20 +14,15 @@ Registry filtering drivers that run on Windows Vista and later operating system 
 
 -   Object identifiers and names
 
-    The [**CmCallbackGetKeyObjectIDEx**](https://msdn.microsoft.com/library/windows/hardware/jj215789) routine retrieves the registry key identifier and object name that are associated with a specified registry key object.
+    The [**CmCallbackGetKeyObjectIDEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmcallbackgetkeyobjectidex) routine retrieves the registry key identifier and object name that are associated with a specified registry key object.
 
 -   Transaction objects
 
-    The [**CmGetBoundTransaction**](https://msdn.microsoft.com/library/windows/hardware/ff541905) routine returns a pointer to the transaction object that represents the [transaction](using-kernel-transaction-manager.md), if any, that is associated with a registry key object.
+    The [**CmGetBoundTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetboundtransaction) routine returns a pointer to the transaction object that represents the [transaction](introduction-to-ktm.md), if any, that is associated with a registry key object.
 
 -   Version information
 
-    The [**CmGetCallbackVersion**](https://msdn.microsoft.com/library/windows/hardware/ff541912) routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
+    The [**CmGetCallbackVersion**](/windows-hardware/drivers/ddi/wdm/nf-wdm-cmgetcallbackversion) routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
 
  
-
- 
-
-
-
 

@@ -30,7 +30,7 @@ The following rules about load order groups determine when a file system filter 
 
 -   If a file system filter driver does not specify a load order group, it is loaded after all of the other drivers of the same start type that do specify a load order group.
 
-The following table lists the system-defined load order groups for file system filter drivers. For each load order group, the Load Order Group column contains the value that should be specified for that group in the **LoadOrderGroup** entry in the [**Version section**](https://msdn.microsoft.com/library/windows/hardware/ff547502) of a filter's INF file.
+The following table lists the system-defined load order groups for file system filter drivers. For each load order group, the Load Order Group column contains the value that should be specified for that group in the **LoadOrderGroup** entry in the [**Version section**](../install/inf-version-section.md) of a filter's INF file.
 
 Note that the load order groups are listed as they appear on the stack, which is the reverse of the order in which they are loaded.
 
@@ -48,7 +48,7 @@ Note that the load order groups are listed as they appear on the stack, which is
 <tbody>
 <tr class="odd">
 <td align="left"><p>Filter</p></td>
-<td align="left"><p>This group is the same as the &quot;filter&quot; load order group that was available on Windows 2000 and earlier. This group loads last and thus attaches furthest from the file system.</p></td>
+<td align="left"><p>This group is the same as the "filter" load order group that was available on Windows 2000 and earlier. This group loads last and thus attaches furthest from the file system.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>FSFilter Top</p></td>
@@ -146,9 +146,4 @@ Note that the load order groups are listed as they appear on the stack, which is
  
 
  
-
- 
-
-
-
 

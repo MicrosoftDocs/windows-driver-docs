@@ -33,7 +33,7 @@ Mandatory.
 Remarks
 -------
 
-For general information about statistics OIDs, see [General Statistics](https://msdn.microsoft.com/library/windows/hardware/ff552485).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
 Requirements
 ------------
@@ -57,9 +57,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

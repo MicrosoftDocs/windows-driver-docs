@@ -43,7 +43,7 @@ independent hardware vendors (IHVs) can use ProductType INF values to indicate t
 
 Therefore, even if a client-only driver package exists in the driver store of a server system, that driver is not installable.
 
-The [**INF Manufacturer Section**](https://msdn.microsoft.com/library/windows/hardware/ff547454) topic shows how to add *TargetOSVersion* to filter device installations based on various criteria. One of these criteria is *ProductType*, which can be used to specify a category of SKUs on which the package can be installed. The following values are defined for *ProductType*:
+The [**INF Manufacturer Section**](../install/inf-manufacturer-section.md) topic shows how to add *TargetOSVersion* to filter device installations based on various criteria. One of these criteria is *ProductType*, which can be used to specify a category of SKUs on which the package can be installed. The following values are defined for *ProductType*:
 
 ``` syntax
 0x0000001 (VER_NT_WORKSTATION)
@@ -92,10 +92,4 @@ IHV_DeviceName.ZZZ = "Foo Datacenter Name (Microsoft Corporation - WDDM v1.2)"
 ```
 
  
-
- 
-
-
-
-
 

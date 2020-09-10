@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 # OID\_PM\_PARAMETERS
 
 
-As a query, protocol drivers can use the OID\_PM\_PARAMETERS OID to query the power management hardware capabilities of a network adapter that are currently enabled. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure.
+As a query, protocol drivers can use the OID\_PM\_PARAMETERS OID to query the power management hardware capabilities of a network adapter that are currently enabled. After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure.
 
-As a set, protocol drivers can use the OID\_PM\_PARAMETERS OID to enable or disable the current hardware capabilities of a network adapter. The protocol driver provides a pointer to an [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure.
+As a set, protocol drivers can use the OID\_PM\_PARAMETERS OID to enable or disable the current hardware capabilities of a network adapter. The protocol driver provides a pointer to an [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure.
 
 Remarks
 -------
@@ -24,7 +24,7 @@ When an overlying driver queries the OID\_PM\_PARAMETERS OID, NDIS completes the
 
 The capabilities that are currently enabled can be a subset of the capabilities that the hardware supports. For more information about the capabilities that the hardware supports, see [OID\_PM\_HARDWARE\_CAPABILITIES](oid-pm-hardware-capabilities.md).
 
-**Note**  If NDIS sets the NDIS\_PM\_SELECTIVE\_SUSPEND\_ENABLED flag in the **WakeUpFlags** member of [**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759) structure, it issues the OID set request of OID\_PM\_PARAMETERS directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
+**Note**  If NDIS sets the NDIS\_PM\_SELECTIVE\_SUSPEND\_ENABLED flag in the **WakeUpFlags** member of [**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters) structure, it issues the OID set request of OID\_PM\_PARAMETERS directly to the miniport driver. This allows NDIS to bypass the processing by filter drivers in the networking driver stack.
 
  
 
@@ -68,16 +68,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_PM\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566759)
+[**NDIS\_PM\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_parameters)
 
 [OID\_PM\_HARDWARE\_CAPABILITIES](oid-pm-hardware-capabilities.md)
 
  
-
- 
-
-
-
 

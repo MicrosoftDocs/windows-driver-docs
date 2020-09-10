@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="_ntovr_smart_card_callback_parameters"></span><span id="_NTOVR_SMART_CARD_CALLBACK_PARAMETERS"></span>
 
 
-For all IOCTL requests except [**IOCTL\_SMARTCARD\_IS\_ABSENT**](https://msdn.microsoft.com/library/windows/hardware/ff548905) and [**IOCTL\_SMARTCARD\_IS\_PRESENT**](https://msdn.microsoft.com/library/windows/hardware/ff548906), [**SmartcardDeviceControl (WDM)**](https://msdn.microsoft.com/library/windows/hardware/ff548939) initializes the **IoRequest** member of the [**SMARTCARD\_EXTENSION**](https://msdn.microsoft.com/library/windows/hardware/ff548974) structure before it calls a callback routine. The following table indicates the sorts of initialization that **SmartcardDeviceControl** performs.
+For all IOCTL requests except [**IOCTL\_SMARTCARD\_IS\_ABSENT**](/previous-versions/windows/hardware/drivers/ff548905(v=vs.85)) and [**IOCTL\_SMARTCARD\_IS\_PRESENT**](/previous-versions/windows/hardware/drivers/ff548906(v=vs.85)), [**SmartcardDeviceControl (WDM)**](/previous-versions/ff548939(v=vs.85)) initializes the **IoRequest** member of the [**SMARTCARD\_EXTENSION**](/windows-hardware/drivers/ddi/smclib/ns-smclib-_smartcard_extension) structure before it calls a callback routine. The following table indicates the sorts of initialization that **SmartcardDeviceControl** performs.
 
 <table>
 <colgroup>
@@ -79,7 +79,7 @@ The structure pointed to by **SmartcardExtension-&gt;OsData** is set up as descr
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>CurrentIrp</strong></p></td>
-<td align="left"><p>Receives a pointer to the requesting IRP for every control request except <a href="https://msdn.microsoft.com/library/windows/hardware/ff548905" data-raw-source="[&lt;strong&gt;IOCTL_SMARTCARD_IS_ABSENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548905)"><strong>IOCTL_SMARTCARD_IS_ABSENT</strong></a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548906" data-raw-source="[&lt;strong&gt;IOCTL_SMARTCARD_IS_PRESENT&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff548906)"><strong>IOCTL_SMARTCARD_IS_PRESENT</strong></a>.</p></td>
+<td align="left"><p>Receives a pointer to the requesting IRP for every control request except <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548905(v=vs.85)" data-raw-source="[&lt;strong&gt;IOCTL_SMARTCARD_IS_ABSENT&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff548905(v=vs.85))"><strong>IOCTL_SMARTCARD_IS_ABSENT</strong></a> and <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff548906(v=vs.85)" data-raw-source="[&lt;strong&gt;IOCTL_SMARTCARD_IS_PRESENT&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff548906(v=vs.85))"><strong>IOCTL_SMARTCARD_IS_PRESENT</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>NotificationIrp</strong></p></td>
@@ -91,10 +91,4 @@ The structure pointed to by **SmartcardExtension-&gt;OsData** is set up as descr
  
 
  
-
- 
-
-
-
-
 

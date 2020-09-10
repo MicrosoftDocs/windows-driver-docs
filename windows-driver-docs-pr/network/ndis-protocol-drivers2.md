@@ -23,6 +23,6 @@ At its upper edge, a transport protocol driver has a private interface to a high
 
 ## Related topics
 
-[NDIS Protocol Drivers](ndis-protocol-drivers.md)
+[NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md)
 
-[NDIS Protocol Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff566829)
+[NDIS Protocol Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

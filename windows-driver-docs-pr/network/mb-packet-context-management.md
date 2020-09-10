@@ -21,17 +21,11 @@ The MB driver model builds on these two constraints regarding the number of acti
 
 2.  Only a single packet context can be activated at any given time.
 
-It is mandatory that any miniport driver that conforms to the MB driver model sets the **MaxActivatedContexts** member of the [**WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff571204) structure to one, when responding to [OID\_WWAN\_DEVICE\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569824) query requests. Even if a miniport driver sets this value to be greater than one, the MB Service ensures that, at most, only one packet context is activated at any given time.
+It is mandatory that any miniport driver that conforms to the MB driver model sets the **MaxActivatedContexts** member of the [**WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps) structure to one, when responding to [OID\_WWAN\_DEVICE\_CAPS](./oid-wwan-device-caps.md) query requests. Even if a miniport driver sets this value to be greater than one, the MB Service ensures that, at most, only one packet context is activated at any given time.
 
 Because each packet context can be activated no more than one time, a static packet context identifier can be used to identify the virtual circuit after being activated. The use of this static identifier is still valid as long as the first constraint still holds.
 
-For more information about packet context management, see [OID\_WWAN\_PROVISIONED\_CONTEXTS](https://msdn.microsoft.com/library/windows/hardware/ff569831) and [OID\_WWAN\_CONNECT](https://msdn.microsoft.com/library/windows/hardware/ff569823).
+For more information about packet context management, see [OID\_WWAN\_PROVISIONED\_CONTEXTS](./oid-wwan-provisioned-contexts.md) and [OID\_WWAN\_CONNECT](./oid-wwan-connect.md).
 
  
-
- 
-
-
-
-
 

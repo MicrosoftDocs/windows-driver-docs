@@ -4,16 +4,17 @@ description: OID_WWAN_DEVICE_CAPS_EX is a similar but different OID from OID_WWA
 ms.assetid: BE664B41-3FE7-4E93-8739-12BD2F0AE5B8
 keywords:
 - OID_WWAN_DEVICE_CAPS_EX, OID per executor, device capability ex
-ms.date: 08/08/2017
+ms.date: 04/04/2019
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WWAN\_DEVICE\_CAPS\_EX
 
 
-OID\_WWAN\_DEVICE\_CAPS\_EX is a similar but different OID from [OID\_WWAN\_DEVICE\_CAPS](oid-wwan-device-caps.md). OID\_WWAN\_DEVICE\_CAPS\_EX is a per-executor OID. This OID serves to indicate the hardware’s device/executor capability, including the capability on extended optional features such as LTE attach APN configuration.
+OID\_WWAN\_DEVICE\_CAPS\_EX is similar to [OID\_WWAN\_DEVICE\_CAPS](oid-wwan-device-caps.md) but is a per-executor OID, unlike OID_WWAN_DEVICE_CAPS which is a per-device OID. This OID serves to indicate the hardware’s device/executor capability, including the capability on extended optional features such as LTE attach APN configuration.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt782396) status notification containing an [**NDIS\_WWAN\_DEVICE\_CAPS\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt782401) structure, which in turn contains a [**WWAN\_DEVICE\_CAPS\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt799889) structure, to provide information about the device's capability.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS\_EX**](./ndis-status-wwan-device-caps-ex.md) status notification containing an [**NDIS\_WWAN\_DEVICE\_CAPS\_EX**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps_ex) structure, which in turn contains a [**WWAN\_DEVICE\_CAPS\_EX**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps_ex) structure, to provide information about the device's capability.
 
 The following diagram illustrates a query request.
 
@@ -35,6 +36,16 @@ For possible future updates, if the OS’s requested version is newer than the d
 Unlike other OIDs new to Windows 10 Version 1703 that are only required if the modem supports multi-SIM/multi-executors, this OID must be implemented for modems that would like to support any Microsoft-defined service extensions starting in Windows 10 Version 1703.
 
 Versions of Windows prior to Windows 10 Version 1703 may still use the existing [OID\_WWAN\_DEVICE\_CAPS](oid-wwan-device-caps.md); their behavior with multi-executor capable modems is not a supported scenario. IHVs must define this behavior.
+
+### Windows 10, version 1903
+
+Starting in Windows 10, version 1903, OID_WWAN_DEVICE_CAPS_EX has been upgraded to revision 2. A miniport driver must use revision 2 of this OID and the data structures it contains if the miniport driver supports 5G.
+
+When the host queries capabilities using this OID, the miniport driver must check if the underlying hardware supports 5G cellular capabilities. If it does, the miniport driver sets the bitmask in the **WwanDataClass** field of the [**WWAN_DEVICE_CAPS_EX**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps_ex) structure according to hardware capabilties.
+
+Additionally, in the **WwanOptionalServiceCaps** field of the **WWAN_DEVICE_CAPS_EX** structure, a new optional service bit is defined that covers support of all new 5G-related extensions.
+
+For more info about 5G data class support, see [MB 5G data class support](mb-5g-data-class-support.md).
 
 Requirements
 ------------
@@ -61,11 +72,8 @@ Requirements
 
 [OID\_WWAN\_DEVICE\_CAPS](oid-wwan-device-caps.md)
 
-[**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt782396)
+[**NDIS\_STATUS\_WWAN\_DEVICE\_CAPS\_EX**](./ndis-status-wwan-device-caps-ex.md)
 
-[**NDIS\_WWAN\_DEVICE\_CAPS\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt782401)
+[**NDIS\_WWAN\_DEVICE\_CAPS\_EX**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps_ex)
 
-[**WWAN\_DEVICE\_CAPS\_EX**](https://msdn.microsoft.com/library/windows/hardware/mt799889)
-
-
-
+[**WWAN\_DEVICE\_CAPS\_EX**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps_ex)

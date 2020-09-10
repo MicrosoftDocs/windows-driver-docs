@@ -21,14 +21,9 @@ There are three kinds of WDM device objects:
 
 3.  Filter Device Object (filter DO) – represents a device to a [filter driver](filter-drivers.md).
 
-The three kinds of device objects are all of the type [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147), but are used differently and can have different device extensions.
+The three kinds of device objects are all of the type [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object), but are used differently and can have different device extensions.
 
-A driver adds itself to the stack of drivers that handle I/O for a device by creating a device object ([**IoCreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff548397)) and attaching it to the device stack ([**IoAttachDeviceToDeviceStack**](https://msdn.microsoft.com/library/windows/hardware/ff548300)). **IoAttachDeviceToDeviceStack** determines the current top of the device stack and attaches the new device object to the top of the device stack.
-
- 
+A driver adds itself to the stack of drivers that handle I/O for a device by creating a device object ([**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice)) and attaching it to the device stack ([**IoAttachDeviceToDeviceStack**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack)). **IoAttachDeviceToDeviceStack** determines the current top of the device stack and attaches the new device object to the top of the device stack.
 
  
-
-
-
 

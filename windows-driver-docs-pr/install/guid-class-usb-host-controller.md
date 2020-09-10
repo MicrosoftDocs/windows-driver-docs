@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_CLASS_USB_HOST_CONTROLLER
 
 
-GUID_CLASS_USB_HOST_CONTROLLER is an obsolete identifier for the [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) for [USB](https://msdn.microsoft.com/library/windows/hardware/ff538930) host controller devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md) class identifier for new instances of this class.
+GUID_CLASS_USB_HOST_CONTROLLER is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for [USB](../index.yml) host controller devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md) class identifier for new instances of this class.
 
 Remarks
 -------
@@ -51,11 +51,4 @@ Requirements
 [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
 
  
-
- 
-
-
-
-
-
 

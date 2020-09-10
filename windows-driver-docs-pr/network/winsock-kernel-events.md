@@ -47,15 +47,15 @@ Basic sockets do not support any socket events.
 <tbody>
 <tr class="odd">
 <td align="left"><p>An incoming connection has been accepted.</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571120" data-raw-source="[&lt;em&gt;WskAcceptEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571120)"><em>WskAcceptEvent</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept_event" data-raw-source="[&lt;em&gt;WskAcceptEvent&lt;/em&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept_event)"><em>WskAcceptEvent</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>An incoming connection request has arrived.<em></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571137" data-raw-source="[&lt;em&gt;WskInspectEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571137)"><em>WskInspectEvent</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_event" data-raw-source="[&lt;em&gt;WskInspectEvent&lt;/em&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_event)"><em>WskInspectEvent</em></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>An incoming connection request has been dropped.</em></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571108" data-raw-source="[&lt;em&gt;WskAbortEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571108)"><em>WskAbortEvent</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_abort_event" data-raw-source="[&lt;em&gt;WskAbortEvent&lt;/em&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_abort_event)"><em>WskAbortEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -80,7 +80,7 @@ Basic sockets do not support any socket events.
 <tbody>
 <tr class="odd">
 <td align="left"><p>One or more new datagrams have been received.</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571142" data-raw-source="[&lt;em&gt;WskReceiveFromEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571142)"><em>WskReceiveFromEvent</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from_event" data-raw-source="[&lt;em&gt;WskReceiveFromEvent&lt;/em&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from_event)"><em>WskReceiveFromEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -103,15 +103,15 @@ Basic sockets do not support any socket events.
 <tbody>
 <tr class="odd">
 <td align="left"><p>New data has been received.</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571140" data-raw-source="[&lt;em&gt;WskReceiveEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571140)"><em>WskReceiveEvent</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event" data-raw-source="[&lt;em&gt;WskReceiveEvent&lt;/em&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_event)"><em>WskReceiveEvent</em></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>The socket has been disconnected.</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571130" data-raw-source="[&lt;em&gt;WskDisconnectEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571130)"><em>WskDisconnectEvent</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect_event" data-raw-source="[&lt;em&gt;WskDisconnectEvent&lt;/em&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_disconnect_event)"><em>WskDisconnectEvent</em></a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>The ideal send backlog size has changed.</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff571147" data-raw-source="[&lt;em&gt;WskSendBacklogEvent&lt;/em&gt;](https://msdn.microsoft.com/library/windows/hardware/ff571147)"><em>WskSendBacklogEvent</em></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_backlog_event" data-raw-source="[&lt;em&gt;WskSendBacklogEvent&lt;/em&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_backlog_event)"><em>WskSendBacklogEvent</em></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -122,15 +122,9 @@ When a WSK application creates a socket, the socket's event callback functions a
 
 If a WSK application registers an [extension interface](winsock-kernel-extension-interfaces.md) for a socket, the extension interface might support additional events. For more information about registering an extension interface for a socket, see [Registering an Extension Interface](registering-an-extension-interface.md).
 
-The WSK subsystem can also notify a WSK application of events that are not specific to a particular socket. In order for a WSK application to be notified of these events, the WSK application must implement a [*WskClientEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571123) event callback function. There are currently no events defined that are not specific to a particular socket. A WSK application's *WskClientEvent* event callback function is always enabled and cannot be disabled.
+The WSK subsystem can also notify a WSK application of events that are not specific to a particular socket. In order for a WSK application to be notified of these events, the WSK application must implement a [*WskClientEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_client_event) event callback function. There are currently no events defined that are not specific to a particular socket. A WSK application's *WskClientEvent* event callback function is always enabled and cannot be disabled.
 
 A WSK application's event callback functions must not wait for completion of other WSK requests in the context of WSK completion or event callback functions. The callback can initiate other WSK requests (assuming that it doesn't spend too much time at DISPATCH\_LEVEL), but it must not wait for their completion even when the callback is called at IRQL = PASSIVE\_LEVEL.
 
  
-
- 
-
-
-
-
 

@@ -32,27 +32,27 @@ Graphics functions that output lines, text or fills take at least one brush as a
 
 The driver can support the following functions to define brushes:
 
-[**DrvRealizeBrush**](https://msdn.microsoft.com/library/windows/hardware/ff556273)
+[**DrvRealizeBrush**](/windows/desktop/api/winddi/nf-winddi-drvrealizebrush)
 
-[**DrvDitherColor**](https://msdn.microsoft.com/library/windows/hardware/ff556202)
+[**DrvDitherColor**](/windows/desktop/api/winddi/nf-winddi-drvdithercolor)
 
 A brush is always used with a mix mode that defines how the pattern should be mixed with the data already on the device surface. The MIX data type consists of two ROP2 values packed into a single ULONG value. The foreground *ROP* is in the lowest-order byte. The next byte contains the background ROP. For more information, see the Microsoft Windows SDK documentation.
 
-GDI keeps track of all logical brushes that an application has requested for use. Before asking a driver to draw something, GDI first issues a call to the driver function [**DrvRealizeBrush**](https://msdn.microsoft.com/library/windows/hardware/ff556273). This allows the driver to compute the optimal representation of the required pattern for its own drawing code.
+GDI keeps track of all logical brushes that an application has requested for use. Before asking a driver to draw something, GDI first issues a call to the driver function [**DrvRealizeBrush**](/windows/desktop/api/winddi/nf-winddi-drvrealizebrush). This allows the driver to compute the optimal representation of the required pattern for its own drawing code.
 
-*DrvRealizeBrush* is called to realize the brush defined by *psoPattern* (pattern for the brush) and by *psoTarget* (surface for the realized brush). A realized brush contains information and accelerators a driver needs to fill an area with a pattern. This information is defined and used only by the driver. Driver realization of a brush is written into a buffer that the driver can cause to be allocated by calling the GDI service function [**BRUSHOBJ\_pvAllocRbrush**](https://msdn.microsoft.com/library/windows/hardware/ff538263) from within *DrvRealizeBrush*. GDI caches all realized brushes; consequently, they seldom need to be recomputed.
+*DrvRealizeBrush* is called to realize the brush defined by *psoPattern* (pattern for the brush) and by *psoTarget* (surface for the realized brush). A realized brush contains information and accelerators a driver needs to fill an area with a pattern. This information is defined and used only by the driver. Driver realization of a brush is written into a buffer that the driver can cause to be allocated by calling the GDI service function [**BRUSHOBJ\_pvAllocRbrush**](/windows/desktop/api/winddi/nf-winddi-brushobj_pvallocrbrush) from within *DrvRealizeBrush*. GDI caches all realized brushes; consequently, they seldom need to be recomputed.
 
-In *DrvRealizeBrush*, the **BRUSHOBJ**, or a standard-format bitmap. For a raster device, the surface describing the brush pattern represents a bitmap; and for a vector device, it is always one of the pattern surfaces returned by the [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) function. The transparency mask used for the brush is a one-bit-per-pixel bitmap with the same extent as the pattern. A mask bit of zero means that the pixel is considered to be a background pixel for the brush; that is, the target pixel is unaffected by that particular pattern pixel. *DrvRealizeBrush* uses an [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634) structure to translate the colors in the brush pattern to the device color indexes.
+In *DrvRealizeBrush*, the **BRUSHOBJ**, or a standard-format bitmap. For a raster device, the surface describing the brush pattern represents a bitmap; and for a vector device, it is always one of the pattern surfaces returned by the [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev) function. The transparency mask used for the brush is a one-bit-per-pixel bitmap with the same extent as the pattern. A mask bit of zero means that the pixel is considered to be a background pixel for the brush; that is, the target pixel is unaffected by that particular pattern pixel. *DrvRealizeBrush* uses an [**XLATEOBJ**](/windows/desktop/api/winddi/ns-winddi-_xlateobj) structure to translate the colors in the brush pattern to the device color indexes.
 
-The driver should call the GDI service function [**BRUSHOBJ\_pvGetRbrush**](https://msdn.microsoft.com/library/windows/hardware/ff538264) when the value of the **iSolidColor** member of the BRUSHOBJ structure is 0xFFFFFFFF and the **pvRbrush** member is **NULL**. **BRUSHOBJ\_pvGetRbrush** retrieves a pointer to the driver's realization of a specified brush. If the brush has not been realized when the driver calls this function, GDI automatically calls *DrvRealizeBrush* for the driver's realization of the brush.
+The driver should call the GDI service function [**BRUSHOBJ\_pvGetRbrush**](/windows/desktop/api/winddi/nf-winddi-brushobj_pvgetrbrush) when the value of the **iSolidColor** member of the BRUSHOBJ structure is 0xFFFFFFFF and the **pvRbrush** member is **NULL**. **BRUSHOBJ\_pvGetRbrush** retrieves a pointer to the driver's realization of a specified brush. If the brush has not been realized when the driver calls this function, GDI automatically calls *DrvRealizeBrush* for the driver's realization of the brush.
 
 ### <span id="Dithering"></span><span id="dithering"></span><span id="DITHERING"></span>Dithering
 
 If necessary, GDI can request the assistance of the driver when trying to create a brush with a solid color that cannot be represented exactly on the hardware. GDI calls the driver function **DrvDitherColor**.
 
-Dithering uses a pattern of several colors to approximate the chosen color, and its result is an array of device color indexes. A brush created using these colors for its pattern is usually a good approximation of the given color. [**DrvDitherColor**](https://msdn.microsoft.com/library/windows/hardware/ff556202) can also represent a color that cannot be specified exactly by a device. To do this, *DrvDitherColor* requests a pattern of several colors and creates a brush that approximates the given solid color.
+Dithering uses a pattern of several colors to approximate the chosen color, and its result is an array of device color indexes. A brush created using these colors for its pattern is usually a good approximation of the given color. [**DrvDitherColor**](/windows/desktop/api/winddi/nf-winddi-drvdithercolor) can also represent a color that cannot be specified exactly by a device. To do this, *DrvDitherColor* requests a pattern of several colors and creates a brush that approximates the given solid color.
 
-The function *DrvDitherColor* is optional and is called only if the GCAPS\_COLOR\_DITHER or GCAPS\_MONO\_DITHER capability flags are set in the **flGraphicsCaps** member of the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure. *DrvDitherColor* can return the values listed in the following table.
+The function *DrvDitherColor* is optional and is called only if the GCAPS\_COLOR\_DITHER or GCAPS\_MONO\_DITHER capability flags are set in the **flGraphicsCaps** member of the [**DEVINFO**](/windows/desktop/api/winddi/ns-winddi-tagdevinfo) structure. *DrvDitherColor* can return the values listed in the following table.
 
 <table>
 <colgroup>
@@ -86,10 +86,4 @@ The function *DrvDitherColor* is optional and is called only if the GCAPS\_COLOR
 Monochrome drivers should support *DrvDitherColor* in order for GDI to obtain good gray-level patterns.
 
  
-
- 
-
-
-
-
 

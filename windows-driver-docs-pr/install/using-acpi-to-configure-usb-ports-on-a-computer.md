@@ -88,7 +88,7 @@ The following examples show correctly formed ACPI Source Language (ASL) that dem
     ```cpp
     Name(_UPC, Package(){
         0xFF,         // Port is connectable
-        0x00,         // Connector type, Type &#39;A&#39; in this case
+        0x00,         // Connector type, Type 'A' in this case
         0x00000000,   // Reserved 0, must be zero
         0x00000000})  // Reserved 1, must be zero
 
@@ -97,7 +97,7 @@ The following examples show correctly formed ACPI Source Language (ASL) that dem
         0x31, 0x1C, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00})
     ```
     
-A USB Type-C connector must be correctly described in ACPI in order to pass the [USB Type-C ACPI Validation](https://msdn.microsoft.com/library/windows/hardware/mt770585(v=vs.85).aspx) Hardware Lab Kit test.
+A USB Type-C connector must be correctly described in ACPI in order to pass the [USB Type-C ACPI Validation](/windows-hardware/test/hlk/testref/b3c41a3f-b844-4c2d-b115-dad51a37f123) Hardware Lab Kit test.
 
 Example _UPC for a USB Type-C connector:
 ```cpp
@@ -111,10 +111,4 @@ Example _UPC for a USB Type-C connector:
 For more information about the ACPI 6.0 interface, see [Advanced Configuration and Power Interface Specification Revision 6.0](https://go.microsoft.com/fwlink/?LinkId=827852).
 
  
-
- 
-
-
-
-
 

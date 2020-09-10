@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_P2P\_SEND\_ACTION\_REQUEST\_FRAME\_PARAMETERS
 
 
-WDI\_TLV\_P2P\_SEND\_ACTION\_REQUEST\_FRAME\_PARAMETERS is a TLV that contains parameters for sending a Wi-Fi Direct action request frame with [OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME](https://msdn.microsoft.com/library/windows/hardware/dn925956).
+WDI\_TLV\_P2P\_SEND\_ACTION\_REQUEST\_FRAME\_PARAMETERS is a TLV that contains parameters for sending a Wi-Fi Direct action request frame with [OID\_WDI\_TASK\_P2P\_SEND\_REQUEST\_ACTION\_FRAME](./oid-wdi-task-p2p-send-request-action-frame.md).
 
 ## TLV Type
 
@@ -28,8 +28,8 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                                                    | Description                                                                                                                    |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/dn926086) | The type of request to send.                                                                                                   |
-| [**WDI\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926071)                       | The MAC address of the target peer device.                                                                                     |
+| [**WDI\_P2P\_ACTION\_FRAME\_TYPE**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_p2p_action_frame_type) | The type of request to send.                                                                                                   |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address)                       | The MAC address of the target peer device.                                                                                     |
 | UINT8                                                                   | The Direct Dialog Token for the transaction.                                                                                   |
 | UINT32                                                                  | The send timeout. The maximum time, in milliseconds, to send the action frame.                                                 |
 | UINT32                                                                  | The post-ACK dwell time. The time, in milliseconds, to remain on the listen channel after the incoming packet is acknowledged. |
@@ -61,9 +61,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

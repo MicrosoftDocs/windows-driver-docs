@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_AUDIO
 
 
-The KSCATEGORY_AUDIO [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for an audio device.
+The KSCATEGORY_AUDIO [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for an audio device.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS audio devices register instances of this device interface class to indicate to the operating system that the devices support the KSCATEGORY_AUDIO functional category.
 
-For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813).
+For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
 For information about how to register this functional category in an INF file, see the Help files *INFViewer.html* and *ac97smpl.inf*, which are included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) in the WDK.
 
@@ -71,10 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

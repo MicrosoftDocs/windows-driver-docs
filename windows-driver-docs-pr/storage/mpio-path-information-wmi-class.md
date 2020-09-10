@@ -36,7 +36,7 @@ class MPIO_PATH_INFORMATION
     ] uint32 Pad;
 
     //
-    // Array containing each path&#39;s information.
+    // Array containing each path's information.
     // Note that each of these are ULONGLONG aligned.
     //
     [WmiDataId(3),
@@ -48,13 +48,7 @@ class MPIO_PATH_INFORMATION
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_PATH\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff562441) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_PATH\_INFORMATION**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_path_information) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

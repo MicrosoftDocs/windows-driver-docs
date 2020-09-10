@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](https://msdn.microsoft.com/library/windows/hardware/ff540212) or passed to [**IoCreateDeviceSecure**](https://msdn.microsoft.com/library/windows/hardware/ff548407). The [Security Descriptor Definition Language](https://msdn.microsoft.com/library/windows/desktop/aa379567) is fully documented in the Microsoft Windows SDK documentation.
+The Security Descriptor Definition Language (SDDL) is used to represent security descriptors. Security for device objects can be specified by an SDDL string that is [placed in an INF file](../install/creating-secure-device-installations.md) or passed to [**IoCreateDeviceSecure**](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure). The [Security Descriptor Definition Language](/windows/desktop/SecAuthZ/security-descriptor-definition-language) is fully documented in the Microsoft Windows SDK documentation.
 
 While INF files support the full range of SDDL, only a subset of the language is supported by the **IoCreateDeviceSecure** routine. This subset is defined here.
 
@@ -215,7 +215,7 @@ The following SIDs describe how the user logged into the machine.
 <tr class="odd">
 <td><p>IU</p></td>
 <td><p>Interactive Users</p>
-<p>Users who initially logged onto the machine &quot;interactively&quot;, such as local logons and Remote Desktops logons.</p></td>
+<p>Users who initially logged onto the machine "interactively", such as local logons and Remote Desktops logons.</p></td>
 </tr>
 <tr class="even">
 <td><p>NU</p></td>
@@ -227,7 +227,7 @@ The following SIDs describe how the user logged into the machine.
 <td><p>World</p>
 <p>Before Windows XP, this SID covered every session, whether authenticated users, anonymous users, or the Builtin Guest account.</p>
 <p>Starting with Windows XP, this SID does not cover anonymous logon sessions; it covers only authenticated users and the Builtin Guest account.</p>
-<p>Note that untrusted or &quot;restricted&quot; code is also not covered by the World SID. For more information, see the description of the Restricted Code (RC) SID in the following table.</p></td>
+<p>Note that untrusted or "restricted" code is also not covered by the World SID. For more information, see the description of the Restricted Code (RC) SID in the following table.</p></td>
 </tr>
 </tbody>
 </table>
@@ -251,7 +251,7 @@ The following SIDs deserve special mention.
 <tr class="odd">
 <td><p>RC</p></td>
 <td><p>Restricted Code</p>
-<p>This SID is used to control access by untrusted code. ACL validation against tokens with RC consists of two checks, one against the token&#39;s normal list of SIDs (containing WD for instance), and one against a second list (typically containing RC and a subset of the original token SIDs). Access is granted only if a token passes both tests. As such, RC actually works in combination with other SIDs.</p>
+<p>This SID is used to control access by untrusted code. ACL validation against tokens with RC consists of two checks, one against the token's normal list of SIDs (containing WD for instance), and one against a second list (typically containing RC and a subset of the original token SIDs). Access is granted only if a token passes both tests. As such, RC actually works in combination with other SIDs.</p>
 <p>Any ACL that specifies RC must also specify WD. When RC is paired with WD in an ACL, a superset of Everyone including untrusted code is described.</p>
 <p>Untrusted code might be code launched using the Run As option in Explorer. By default, World does not cover untrusted code.</p></td>
 </tr>
@@ -259,7 +259,7 @@ The following SIDs deserve special mention.
 <td><p>UD</p></td>
 <td><p>User-Mode Drivers</p>
 <p>This SID grants access to user-mode drivers. Currently, this SID covers only drivers that are written for the User-Mode Driver Framework (UMDF). This SID is available starting with Windows 8.</p>
-<p>In earlier versions of Windows, which do not recognize the &quot;UD&quot; abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439567" data-raw-source="[Controlling Device Access](https://msdn.microsoft.com/library/windows/hardware/hh439567)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
+<p>In earlier versions of Windows, which do not recognize the "UD" abbreviation, you must specify the fully qualified form of this SID (S-1-5-84-0-0-0-0-0) to grant access to UMDF drivers. For more information, see <a href="/windows-hardware/drivers/wdf/controlling-device-access" data-raw-source="[Controlling Device Access](/windows-hardware/drivers/wdf/controlling-device-access)">Controlling Device Access</a> in the User-Mode Driver Framework documentation.</p></td>
 </tr>
 </tbody>
 </table>
@@ -321,9 +321,4 @@ Also note that traversal access is not granted to normal users. As such, this mi
 Note that the above SDDL strings do not include any inheritance modifiers. As such, they are only appropriate for device objects and should not be used for files or registry keys. For more information about specifying inheritance using SDDL, see the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

@@ -24,39 +24,39 @@ Lookaside lists are thread-safe. A lookaside list has built-in synchronization t
 ## Lookaside list interfaces
 
 
-Starting with Windows Vista, the [**LOOKASIDE\_LIST\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff554329) structure describes a lookaside list that can contain either paged or nonpaged buffers. If a driver provides custom *Allocate* and *Free* routines for this lookaside list, these routines receive a private context as an input parameter. A driver can use this context to collect private data for the lookaside list. For example, the context might be used to count the number of list entries that are dynamically allocated and freed by the list. For a code example that shows how to use a context in this way, see [**ExInitializeLookasideListEx**](https://msdn.microsoft.com/library/windows/hardware/ff545298).
+Starting with Windows Vista, the [**LOOKASIDE\_LIST\_EX**](./eprocess.md) structure describes a lookaside list that can contain either paged or nonpaged buffers. If a driver provides custom *Allocate* and *Free* routines for this lookaside list, these routines receive a private context as an input parameter. A driver can use this context to collect private data for the lookaside list. For example, the context might be used to count the number of list entries that are dynamically allocated and freed by the list. For a code example that shows how to use a context in this way, see [**ExInitializeLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializelookasidelistex).
 
 The following system-supplied routines support lookaside lists that are described by a **LOOKASIDE\_LIST\_EX** structure:
 
-[**ExAllocateFromLookasideListEx**](https://msdn.microsoft.com/library/windows/hardware/ff544381)
+[**ExAllocateFromLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromlookasidelistex)
 
-[**ExDeleteLookasideListEx**](https://msdn.microsoft.com/library/windows/hardware/ff544563)
+[**ExDeleteLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletelookasidelistex)
 
-[**ExFlushLookasideListEx**](https://msdn.microsoft.com/library/windows/hardware/ff544587)
+[**ExFlushLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exflushlookasidelistex)
 
-[**ExFreeToLookasideListEx**](https://msdn.microsoft.com/library/windows/hardware/ff544597)
+[**ExFreeToLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetolookasidelistex)
 
-[**ExInitializeLookasideListEx**](https://msdn.microsoft.com/library/windows/hardware/ff545298)
+[**ExInitializeLookasideListEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializelookasidelistex)
 
-Starting with Windows 2000, the [**PAGED\_LOOKASIDE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff558775) structure describes a lookaside list that contains paged buffers. If a driver provides custom *Allocate* and *Free* routines for this lookaside list, these routines do not receive a private context as an input parameter. For this reason, if your driver is intended to run only on Windows Vista and later versions of Windows, consider using the **LOOKASIDE\_LIST\_EX** structure instead of the **PAGED\_LOOKASIDE\_LIST** structure for your lookaside lists. The following system-supplied routines support lookaside lists that are described by a **PAGED\_LOOKASIDE\_LIST** structure:
+Starting with Windows 2000, the [**PAGED\_LOOKASIDE\_LIST**](./eprocess.md) structure describes a lookaside list that contains paged buffers. If a driver provides custom *Allocate* and *Free* routines for this lookaside list, these routines do not receive a private context as an input parameter. For this reason, if your driver is intended to run only on Windows Vista and later versions of Windows, consider using the **LOOKASIDE\_LIST\_EX** structure instead of the **PAGED\_LOOKASIDE\_LIST** structure for your lookaside lists. The following system-supplied routines support lookaside lists that are described by a **PAGED\_LOOKASIDE\_LIST** structure:
 
-[**ExAllocateFromPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff544393)
+[**ExAllocateFromPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefrompagedlookasidelist)
 
-[**ExDeletePagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff544570)
+[**ExDeletePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist)
 
-[**ExFreeToPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff544605)
+[**ExFreeToPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetopagedlookasidelist)
 
-[**ExInitializePagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff545309)
+[**ExInitializePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist)
 
-Starting with Windows 2000, the [**NPAGED\_LOOKASIDE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff556431) structure describes a lookaside list that contains nonpaged buffers. If a driver provides custom *Allocate* and *Free* routines for this lookaside list, these routines do not receive a private context as an input parameter. Again, if your driver is intended to run only on Windows Vista and later versions of Windows, consider using the **LOOKASIDE\_LIST\_EX** structure instead of the **NPAGED\_LOOKASIDE\_LIST** structure for your lookaside lists. The following system-supplied routines support lookaside lists that are described by an **NPAGED\_LOOKASIDE\_LIST** structure:
+Starting with Windows 2000, the [**NPAGED\_LOOKASIDE\_LIST**](./eprocess.md) structure describes a lookaside list that contains nonpaged buffers. If a driver provides custom *Allocate* and *Free* routines for this lookaside list, these routines do not receive a private context as an input parameter. Again, if your driver is intended to run only on Windows Vista and later versions of Windows, consider using the **LOOKASIDE\_LIST\_EX** structure instead of the **NPAGED\_LOOKASIDE\_LIST** structure for your lookaside lists. The following system-supplied routines support lookaside lists that are described by an **NPAGED\_LOOKASIDE\_LIST** structure:
 
-[**ExAllocateFromNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff544388)
+[**ExAllocateFromNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromnpagedlookasidelist)
 
-[**ExDeleteNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff544566)
+[**ExDeleteNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist)
 
-[**ExFreeToNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff544601)
+[**ExFreeToNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreetonpagedlookasidelist)
 
-[**ExInitializeNPagedLookasideList**](https://msdn.microsoft.com/library/windows/hardware/ff545301)
+[**ExInitializeNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist)
 
 ## Implementation guidelines
 
@@ -69,11 +69,11 @@ To implement a lookaside list that uses a **LOOKASIDE\_LIST\_EX** structure, fol
 
 -   For better performance, pass **NULL** pointers for the *Allocate* and *Free* parameters to **ExInitializeLookasideListEx** unless the allocation and deallocation routines must do more than merely allocate and free memory for lookaside list entries. For example, these routines might record information about the driver's usage of dynamically allocated buffers.
 
--   A driver-supplied *Allocate* routine can pass the input parameters (*PoolType*, *Tag*, and *Size*) that it receives directly to the [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) or [**ExAllocatePoolWithQuotaTag**](https://msdn.microsoft.com/library/windows/hardware/ff544513) routine to allocate a new buffer.
+-   A driver-supplied *Allocate* routine can pass the input parameters (*PoolType*, *Tag*, and *Size*) that it receives directly to the [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) or [**ExAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag) routine to allocate a new buffer.
 
 -   For every call to **ExAllocateFromLookasideListEx**, make the reciprocal call to **ExFreeToLookasideListEx** as soon as possible whenever a previously allocated entry is no longer being used.
 
-Supplying *Allocate* and *Free* routines that do nothing more than call [**ExAllocatePoolWithTag**](https://msdn.microsoft.com/library/windows/hardware/ff544520) and [**ExFreePool**](https://msdn.microsoft.com/library/windows/hardware/ff544590), respectively, wastes processor cycles. **ExAllocateFromLookasideListEx** makes the necessary calls to **ExAllocatePoolWithTag** and **ExFreePool** automatically when a driver passes **NULL** *Allocate* and *Free* pointers to **ExInitializeLookasideListEx**.
+Supplying *Allocate* and *Free* routines that do nothing more than call [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool), respectively, wastes processor cycles. **ExAllocateFromLookasideListEx** makes the necessary calls to **ExAllocatePoolWithTag** and **ExFreePool** automatically when a driver passes **NULL** *Allocate* and *Free* pointers to **ExInitializeLookasideListEx**.
 
 Any driver-supplied *Allocate* routine must not allocate memory for an entry from paged pool to be held in a nonpaged lookaside list or vice versa. It must also allocate fixed-size entries, because any subsequent driver call to **ExAllocateFromLookasideListEx** returns the first entry currently held in the lookaside list unless the list is empty. That is, a call to **ExAllocateFromLookasideListEx** causes a call to the driver-supplied *Allocate* routine only if the given lookaside list is currently empty. Therefore, at each call to **ExAllocateFromLookasideListEx**, the returned entry will be exactly the size that the driver needs only if all entries in the lookaside list are of a fixed size. A driver-supplied *Allocate* routine should also not change the *Tag* value that the driver originally passed to **ExInitializeLookasideListEx**, because changes in the pool-tag value would make debugging and tracking the driver's memory usage more difficult.
 
@@ -82,9 +82,4 @@ Calls to **ExFreeToLookasideListEx** store previously allocated entries in the l
 Similar guidelines apply to a lookaside list that uses a **PAGED\_LOOKASIDE\_LIST** or **NPAGED\_LOOKASIDE\_LIST** structure.
 
  
-
- 
-
-
-
 

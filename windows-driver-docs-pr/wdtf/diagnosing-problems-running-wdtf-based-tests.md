@@ -14,8 +14,8 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
 ## Diagnose problems with unresponsive WDTF-based tests (run from Visual Studio)
 
 
-1.  Configure and connect a kernel debugger to the computer that is running the WDTF-based test. See [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/library/windows/hardware/dn745909) or [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/library/windows/hardware/dn745909).
-2.  Search for Te.exe process and switch context to that process. For information about Te.exe, see [Test Authoring and Execution Framework (TAEF)](https://msdn.microsoft.com/library/windows/hardware/hh439725).
+1.  Configure and connect a kernel debugger to the computer that is running the WDTF-based test. See [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md) or [Provision a computer for driver deployment and testing (WDK 8)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
+2.  Search for Te.exe process and switch context to that process. For information about Te.exe, see [Test Authoring and Execution Framework (TAEF)](../taef/index.md).
 
     ``` syntax
     !process 0 0 Te.exe 
@@ -33,7 +33,7 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
     ·         
     ```
 
-3.  Run the [**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) command to identify the threads running under Te.exe.
+3.  Run the [**!process**](../debugger/-process.md) command to identify the threads running under Te.exe.
 
     ``` syntax
     !process fffffa80093c6340
@@ -48,17 +48,12 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
 
 You can diagnose problems with these commands.
 
-[**!powertriage**](https://msdn.microsoft.com/library/windows/hardware/mt431710) (provides information about system and device power related components)
-[**!devnode**](https://msdn.microsoft.com/library/windows/hardware/ff562345) (to display information about the PnP tree)
-[**!process**](https://msdn.microsoft.com/library/windows/hardware/ff564717) (to examine processes to locate associated threads)
-[**!thread**](https://msdn.microsoft.com/library/windows/hardware/ff565440) (to view information about threads)
-[**!wdfkd.wdfdevice**](https://msdn.microsoft.com/library/windows/hardware/ff565703) (for WDF driver information)
+[**!powertriage**](../debugger/-powertriage.md) (provides information about system and device power related components)
+[**!devnode**](../debugger/-devnode.md) (to display information about the PnP tree)
+[**!process**](../debugger/-process.md) (to examine processes to locate associated threads)
+[**!thread**](../debugger/-thread.md) (to view information about threads)
+[**!wdfkd.wdfdevice**](../debugger/-wdfkd-wdfdevice.md) (for WDF driver information)
 After confirming that there are active PnP or power management threads that are stuck (examine TickCount for this), follow up with the right component owners. (You can locate the component owners from looking at the stacks of the stuck threads).
 
  
-
- 
-
-
-
 

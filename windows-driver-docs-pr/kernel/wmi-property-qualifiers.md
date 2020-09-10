@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The following table lists the required and optional MOF property qualifiers that can be used to define items in a WMI data or event block.
 
-The following are standard MOF qualifiers: **key**, **read**, **write**, **ValueMap**, and **Values**. For more information about these and other standard MOF qualifiers, see [MOF Data Types](https://msdn.microsoft.com/library/aa392392).
+The following are standard MOF qualifiers: **key**, **read**, **write**, **ValueMap**, and **Values**. For more information about these and other standard MOF qualifiers, see [MOF Data Types](/windows/desktop/WmiSdk/mof-data-types).
 
 <table>
 <colgroup>
@@ -58,7 +58,7 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
 <td><p>Specifies that any WMI client that displays the property value should do so in hexadecimal.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>DisplayName(&quot;</strong><em>string</em><strong>&quot;)</strong></p></td>
+<td><p><strong>DisplayName("</strong><em>string</em><strong>")</strong></p></td>
 <td><p>Specifies a caption that a WMI client can use to display as the property name.</p></td>
 </tr>
 <tr class="odd">
@@ -75,14 +75,14 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
 </tr>
 <tr class="even">
 <td><p><strong>WmiDataId(</strong><em>data-item-ID</em><strong>)</strong></p></td>
-<td><p>(Required) Identifies a data item within a data block. Data item IDs must be assigned to all items in a block except the required items <strong>InstanceName</strong> and <strong>Active</strong>. Data item IDs must be assigned in a contiguous series, starting with 1. An item&#39;s data ID determines the order in which the item appears in an instance of the data block; the order of items in the MOF class definition is irrelevant.</p></td>
+<td><p>(Required) Identifies a data item within a data block. Data item IDs must be assigned to all items in a block except the required items <strong>InstanceName</strong> and <strong>Active</strong>. Data item IDs must be assigned in a contiguous series, starting with 1. An item's data ID determines the order in which the item appears in an instance of the data block; the order of items in the MOF class definition is irrelevant.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>WmiMethodId(</strong><em>method-item-ID</em><strong>)</strong></p></td>
 <td><p>Identifies a method within a data block.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>WmiSizeIs(&quot;</strong><em>data-item-name</em><strong>&quot;)</strong></p></td>
+<td><p><strong>WmiSizeIs("</strong><em>data-item-name</em><strong>")</strong></p></td>
 <td><p>Specifies the name of another data item in this block that indicates the number of elements in the variable-length array at this data item. <strong>WmiSizeIs</strong> is valid only for data items that define arrays.</p></td>
 </tr>
 <tr class="odd">
@@ -102,12 +102,12 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
 <td><p>Specifies the interval, in milliseconds, between updates of this data item. For example, if a data item is updated once each second, <em>interval</em> would be 1000. A WMI client might check <strong>WmiVolatility</strong> to determine how often to query for a potentially new value. If <strong>WmiVolatility</strong> is omitted, <em>interval</em> is undefined.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>WmiEventTrigger(</strong> <strong>&quot;</strong> <em>data-item-name</em><strong>&quot;)</strong></p></td>
-<td><p>Specifies the name of a data item in an event block that a WMI client can set to define the trigger value for the event. For example, if the event TooHot is qualified with <strong>WmiEventTrigger</strong>(&quot;TooHotTemperature&quot;), a WMI client could set TooHotTemperature to instruct the driver to send the TooHot event when the device reached the user-specified value for TooHotTemperature. Typically a driver would define the trigger value. By exposing a <strong>WmiEventTrigger</strong> data item, the driver allows a client to control when a particular event is fired.</p></td>
+<td><p><strong>WmiEventTrigger(</strong> <strong>"</strong> <em>data-item-name</em><strong>")</strong></p></td>
+<td><p>Specifies the name of a data item in an event block that a WMI client can set to define the trigger value for the event. For example, if the event TooHot is qualified with <strong>WmiEventTrigger</strong>("TooHotTemperature"), a WMI client could set TooHotTemperature to instruct the driver to send the TooHot event when the device reached the user-specified value for TooHotTemperature. Typically a driver would define the trigger value. By exposing a <strong>WmiEventTrigger</strong> data item, the driver allows a client to control when a particular event is fired.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>WmiEventRate(&quot;</strong><em>data-item-name</em><strong>&quot;)</strong></p></td>
-<td><p>Specifies the name of a data item in an event block that a WMI client can set to control the frequency at which this event will be sent. For example, if the data item TooHot is qualified with <strong>WmiEventRate(&quot;</strong>SendEventRate<strong>&quot;)</strong>, a WMI client user could set SendEventRate to instruct the driver to send TooHot at the user-specified interval.</p></td>
+<td><p><strong>WmiEventRate("</strong><em>data-item-name</em><strong>")</strong></p></td>
+<td><p>Specifies the name of a data item in an event block that a WMI client can set to control the frequency at which this event will be sent. For example, if the data item TooHot is qualified with <strong>WmiEventRate("</strong>SendEventRate<strong>")</strong>, a WMI client user could set SendEventRate to instruct the driver to send TooHot at the user-specified interval.</p></td>
 </tr>
 </tbody>
 </table>
@@ -115,9 +115,4 @@ The following are standard MOF qualifiers: **key**, **read**, **write**, **Value
  
 
  
-
- 
-
-
-
 

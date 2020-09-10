@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 
 # Ranking a Biometric Driver on Windows Update
 
-
 Vendors who provide both legacy biometric and WBDI drivers can use the driver Feature Score to control which driver is installed from Windows Update.
 
 Vendors who choose to write a single driver that supports legacy and WBDI should be aware that to work properly with the Windows Biometric Framework, the driver must support exclusive access. When exclusive access is disabled, the driver functions as a legacy driver. To review how to set the Exclusive value in the registry, see [Installing a Biometric Driver](installing-a-biometric-driver.md).
@@ -22,19 +21,19 @@ If Feature Score is set appropriately, the WBDI driver will only be installed on
 
 If a customer decides to opt into a legacy stack, the customer can install a higher-ranked legacy driver over the WBDI driver.
 
-### <span id="how_feature_score_works"></span><span id="HOW_FEATURE_SCORE_WORKS"></span>How Feature Score Works
+## How Feature Score Works
 
 Feature Score is represented in the third and fourth digit of the overall driver rank. For instance, *GG* is the feature score from the following driver rank:
 
 ```cpp
-0x00GG0000 
+0x00GG0000
 ```
 
 Lower feature numbers indicates better matches. The default feature score is 0xFF, which indicates that there is no preference based on the features of a driver.
 
 Microsoft recommends a feature score of 0xa0 for legacy biometric drivers. The feature score should never be set to 0x00, in case there is a need to override it later.
 
-The feature score for a driver is set by an INF FeatureScore directive in the [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344) for the device.
+The feature score for a driver is set by an INF FeatureScore directive in the [**INF DDInstall Section**](../install/inf-ddinstall-section.md) for the device.
 
 For example, the following code sets the feature score of a driver to 0x20:
 
@@ -44,13 +43,4 @@ For example, the following code sets the feature score of a driver to 0x20:
 FeatureScore=x20
 ```
 
-For more information about how to set the feature score on drivers, see [Feature Score (Windows Vista)](https://go.microsoft.com/fwlink/p/?linkid=132806).
-
- 
-
- 
-
-
-
-
-
+For more information about how to set the feature score on drivers, see [Feature Score](../install/feature-score--windows-vista-and-later-.md).

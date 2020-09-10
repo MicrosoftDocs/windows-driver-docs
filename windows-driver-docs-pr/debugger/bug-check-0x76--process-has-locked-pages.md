@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The PROCESS\_HAS\_LOCKED\_PAGES bug check has a value of 0x00000076. This bug check indicates that a driver failed to release locked pages after an I/O operation, or that it attempted to unlock pages that were already unlocked.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## PROCESS\_HAS\_LOCKED\_PAGES Parameters
 
@@ -67,6 +69,8 @@ The driver either failed to unlock pages that it locked (parameter 1 value is 0x
 
 Resolution
 ----------
+
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 **If the parameter 1 value is 0x0**
 

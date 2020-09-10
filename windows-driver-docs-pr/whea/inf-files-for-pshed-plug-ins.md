@@ -13,29 +13,29 @@ ms.localizationpriority: medium
 # INF Files for PSHED Plug-Ins
 
 
-A PSHED plug-in is installed by an [information (INF) file](https://msdn.microsoft.com/library/windows/hardware/ff547402). INF files for PSHED plug-ins contain the following standard INF file sections:
+A PSHED plug-in is installed by an [information (INF) file](https://docs.microsoft.com/windows-hardware/drivers/install/inf-files). INF files for PSHED plug-ins contain the following standard INF file sections:
 
-[**INF Version Section**](https://msdn.microsoft.com/library/windows/hardware/ff547502)
+[**INF Version Section**](../install/inf-version-section.md)
 
-[**INF SourceDisksNames Section**](https://msdn.microsoft.com/library/windows/hardware/ff547478)
+[**INF SourceDisksNames Section**](../install/inf-sourcedisksnames-section.md)
 
-[**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472)
+[**INF SourceDisksFiles Section**](../install/inf-sourcedisksfiles-section.md)
 
-[**INF DestinationDirs Section**](https://msdn.microsoft.com/library/windows/hardware/ff547383)
+[**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md)
 
-[**INF Manufacturer Section**](https://msdn.microsoft.com/library/windows/hardware/ff547454)
+[**INF Manufacturer Section**](../install/inf-manufacturer-section.md)
 
-[**INF *Models* Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456)
+[**INF *Models* Section**](../install/inf-models-section.md)
 
-[**INF *DDInstall* Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344)
+[**INF *DDInstall* Section**](../install/inf-ddinstall-section.md)
 
-[**INF *DDInstall*.Services Section**](https://msdn.microsoft.com/library/windows/hardware/ff547349)
+[**INF *DDInstall*.Services Section**](../install/inf-ddinstall-services-section.md)
 
-[**INF Strings Section**](https://msdn.microsoft.com/library/windows/hardware/ff547485)
+[**INF Strings Section**](../install/inf-strings-section.md)
 
-Within the [**INF *Models* section**](https://msdn.microsoft.com/library/windows/hardware/ff547456), the platform vendor can use any [hardware identifier (ID)](https://msdn.microsoft.com/library/windows/hardware/ff546152) for the PSHED plug-in. The hardware ID is specified by using the *hw-id* entry in the *Models* section, and can be a hardware ID in the ACPI namespace or another device namespace. The vendor can also specify a [compatible ID](https://msdn.microsoft.com/library/windows/hardware/ff539950) with a value of *PNP0C33*. This compatible ID is used to define to a Microsoft-compatible hardware error device. The vendor specifies the compatible ID by using the *compatible-id* entry in the *Models* section.
+Within the [**INF *Models* section**](../install/inf-models-section.md), the platform vendor can use any [hardware identifier (ID)](../install/hardware-ids.md) for the PSHED plug-in. The hardware ID is specified by using the *hw-id* entry in the *Models* section, and can be a hardware ID in the ACPI namespace or another device namespace. The vendor can also specify a [compatible ID](../install/compatible-ids.md) with a value of *PNP0C33*. This compatible ID is used to define to a Microsoft-compatible hardware error device. The vendor specifies the compatible ID by using the *compatible-id* entry in the *Models* section.
 
-A PSHED plug-in's INF file must also include an [**AddReg**](https://msdn.microsoft.com/library/windows/hardware/ff546320) directive that references a section in the file that adds an entry to the **System**\\**CurrentControlSet**\\**Control**\\**PSHED**\\**Plugins** key in the registry. This entry informs the PSHED that the PSHED plug-in is installed in the system. This allows the PSHED to verify that all the installed PSHED plug-ins are successfully loaded every time that the system is started.
+A PSHED plug-in's INF file must also include an [**AddReg**](../install/inf-addreg-directive.md) directive that references a section in the file that adds an entry to the **System**\\**CurrentControlSet**\\**Control**\\**PSHED**\\**Plugins** key in the registry. This entry informs the PSHED that the PSHED plug-in is installed in the system. This allows the PSHED to verify that all the installed PSHED plug-ins are successfully loaded every time that the system is started.
 
 For example:
 
@@ -101,9 +101,4 @@ ServiceBinary = %12%\%FileName%
 ```
 
  
-
- 
-
-
-
 

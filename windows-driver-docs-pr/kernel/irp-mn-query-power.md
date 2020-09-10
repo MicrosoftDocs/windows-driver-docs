@@ -17,10 +17,11 @@ Major Code
 ----------
 
 [**IRP\_MJ\_POWER**](irp-mj-power.md)
+
 When Sent
 ---------
 
-The power manager or a device power policy owner sends this IRP to determine whether it can change the system or device power state, typically to go to sleep. A driver must call [**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734) to allocate and send this IRP.
+The power manager or a device power policy owner sends this IRP to determine whether it can change the system or device power state, typically to go to sleep. A driver must call [**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp) to allocate and send this IRP.
 
 The power manager sends this IRP at IRQL = PASSIVE\_LEVEL to device stacks that set the DO\_POWER\_PAGABLE flag in the PDO.
 
@@ -33,9 +34,9 @@ The power manager can send the IRP at IRQL = DISPATCH\_LEVEL if the DO\_POWER\_I
 
 **Parameters.Power.State** specifies the power state itself, as follows:
 
--   If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM\_POWER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff564565) type.
+-   If **Parameters.Power.Type** is **SystemPowerState**, the value is an enumerator of the [**SYSTEM\_POWER\_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) type.
 
--   If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE\_POWER\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff543160) type.
+-   If **Parameters.Power.Type** is **DevicePowerState**, the value is an enumerator of the [**DEVICE\_POWER\_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_power_state) type.
 
 **Parameters.Power.ShutdownType** specifies additional information about the requested transition. Possible values are enumerators of the **POWER\_ACTION** type.
 
@@ -56,7 +57,7 @@ The parameters for **IRP\_MN\_QUERY\_POWER** are identical to those for [**IRP\_
 
 A driver must not change the power state of its device in response to an **IRP\_MN\_QUERY\_POWER** request.
 
-After a driver receives an **IRP\_MN\_QUERY\_POWER** request on Windows Server 2003, Windows XP, and Windows 2000, a driver must call [**PoStartNextPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559776), as described in [Calling **PoStartNextPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff540724). Beginning with Windows Vista, calling **PoStartNextPowerIrp** is not required and such a call performs no power management operation.
+After a driver receives an **IRP\_MN\_QUERY\_POWER** request on Windows Server 2003, Windows XP, and Windows 2000, a driver must call [**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp), as described in [Calling **PoStartNextPowerIrp**](./calling-postartnextpowerirp.md). Beginning with Windows Vista, calling **PoStartNextPowerIrp** is not required and such a call performs no power management operation.
 
 **IRP\_MN\_QUERY\_POWER for a System Power State**
 
@@ -64,11 +65,11 @@ The power manager sends this IRP to ensure that it can change the system power s
 
 Whenever possible, the power manager queries before sending **IRP\_MN\_SET\_POWER** to request a system sleep state or a normal system shutdown. However, under some critical conditions (such as the user pressing the **Power Off** button or a battery expiring), the power manager might send an **IRP\_MN\_SET\_POWER** request without first sending a query power request. The power manager queries only for sleep states; it never queries before returning to the working state.
 
-When a driver receives a system power query IRP, it should fail the IRP if it cannot support any of the device states that are valid for the queried system state. For more information, see [**DeviceState**](https://msdn.microsoft.com/library/windows/hardware/ff543087). Otherwise, the driver should pass the IRP to the next lower driver. The bus driver completes the IRP.
+When a driver receives a system power query IRP, it should fail the IRP if it cannot support any of the device states that are valid for the queried system state. For more information, see [**DeviceState**](./devicestate.md). Otherwise, the driver should pass the IRP to the next lower driver. The bus driver completes the IRP.
 
 Beginning with Windows Vista, transition to a system sleep state is considered a critical operation. Although a driver might fail a system query-power IRP, the power manager might still change the system power state to a sleep state. After a driver receives a system query-power IRP, the driver should always be prepared for a subsequent change in the system power state.
 
-When a device power policy owner receives a system power query IRP, it should set an [*IoCompletion*](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine in the IRP before passing it down. In the *IoCompletion* routine, it should send an **IRP\_MN\_QUERY\_POWER** for a device state that is valid for the queried system state. For more information, see [Handling a System Query-Power IRP in a Device Power Policy Owner](https://msdn.microsoft.com/library/windows/hardware/ff546725).
+When a device power policy owner receives a system power query IRP, it should set an [*IoCompletion*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine in the IRP before passing it down. In the *IoCompletion* routine, it should send an **IRP\_MN\_QUERY\_POWER** for a device state that is valid for the queried system state. For more information, see [Handling a System Query-Power IRP in a Device Power Policy Owner](./handling-a-system-query-power-irp-in-a-device-power-policy-owner.md).
 
 When the IRP specifies **PowerSystemShutdown** (S5), the value at **Parameters.Power.ShutdownType** provides a reason for the shutdown. The **ShutdownType** tells the driver whether the system is resetting (**PowerActionShutdownReset**) or powering off indefinitely to reboot later (**PowerActionShutdownOff**). For drivers of most devices, the difference is inconsequential. However, for certain devices, such as a video streaming device that performs DMA, a driver might opt to power down its device when the system is resetting, thus stopping any ongoing I/O.
 
@@ -109,14 +110,9 @@ Requirements
 
 [**IRP\_MN\_SET\_POWER**](irp-mn-set-power.md)
 
-[**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734)
+[**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)
 
-[**PoStartNextPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559776)
-
- 
+[**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp)
 
  
-
-
-
 

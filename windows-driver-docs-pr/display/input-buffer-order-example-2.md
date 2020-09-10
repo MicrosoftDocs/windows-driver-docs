@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.**
 
-The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.microsoft.com/library/windows/hardware/ff563927) function to use the device in [Input Buffer Order Example 1](input-buffer-order-example-1.md) to combine 2 video substreams with an interlaced video stream. The sequence of surfaces in the **lpBufferInfo** array are:
+The VMR initiates a call to the driver's [**DeinterlaceBltEx**](./dxva-deinterlacebobdeviceclass-deinterlacebltex.md) function to use the device in [Input Buffer Order Example 1](input-buffer-order-example-1.md) to combine 2 video substreams with an interlaced video stream. The sequence of surfaces in the **lpBufferInfo** array are:
 
 <table>
 <colgroup>
@@ -62,10 +62,4 @@ The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.mic
  
 
  
-
- 
-
-
-
-
 

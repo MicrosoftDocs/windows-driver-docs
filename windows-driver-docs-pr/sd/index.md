@@ -11,50 +11,36 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
+author: EliotSeattle
 ---
 
 # SD Bus Driver Design Guide
 
+[SD Card Driver Stack](./sd-card-driver-stack.md)
 
-## In this section
-[SD Card Driver Stack](https://msdn.microsoft.com/library/windows/hardware/ff537964)
+[Opening, Initializing and Closing an SD Card Bus Interface](./opening--initializing-and-closing-an-sd-card-bus-interface.md)
 
-[Opening, Initializing and Closing an SD Card Bus Interface](https://msdn.microsoft.com/library/windows/hardware/ff537442)
+[Handling SD Card Interrupts](./handling-sd-card-interrupts.md)
 
-[Handling SD Card Interrupts](https://msdn.microsoft.com/library/windows/hardware/ff537177)
-
-[SD Card Requests](https://msdn.microsoft.com/library/windows/hardware/ff537983)
- 
+[SD Card Requests](./sd-card-requests.md)
 
 ## SD Card Hardware Identifiers
 
-
-For information about Secure Digital (SD) device identification strings, see [Identifiers for Secure Digital (SD) Devices](https://msdn.microsoft.com/library/windows/hardware/ff546279).
+For information about Secure Digital (SD) device identification strings, see [Identifiers for Secure Digital (SD) Devices](../install/identifiers-for-secure-digital--sd--devices.md).
 
 ## Restrictions on SD Card Drivers
 
-
 Certain restrictions apply to Secure Digital (SD) card device drivers that manage a function on an SD combo or multifunction card. The driver stacks for the various card functions on a multifunction card must operate independently of one another. To ensure this independence, the bus driver rejects the following operations:
 
--   SD commands that change the device state, such as SELECT\_CARD.
+- SD commands that change the device state, such as SELECT\_CARD.
 
--   SD I/O commands that specify function zero but are outside the range of the address specified in the function basic register (FBR).
+- SD I/O commands that specify function zero but are outside the range of the address specified in the function basic register (FBR).
 
--   SD I/O commands that specify a function number of a different device stack.
+- SD I/O commands that specify a function number of a different device stack.
 
-SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537909) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff538012).
+SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbussubmitrequest) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](/windows-hardware/drivers/ddi/ntddsd/ne-ntddsd-sd_request_function).
 
-## SD Bus Sample
+## SD Bus Sample (Windows 8.1)
+This sample (no longer supported) is a functional Secure Digital (SD) IO driver. The driver is written using the Kernel Mode Driver Framework. It is a driver for a generic mars development board that implements the SDIO protocol without additional functionality.
 
-
-This is a sample for a functional Secure Digital (SD) IO driver. The driver is written using the Kernel Mode Driver Framework. It is a driver for a generic mars development board that implements the SDIO protocol without additional functionality.
-
-Download the [Storage SDIO driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617953) from GitHub.
-
- 
-
- 
-
-
-
-
+Download the [Storage SDIO driver sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples/%5BC%2B%2B%5D-windows-driver-kit-81-cpp/WDK%208.1%20C%2B%2B%20Samples/Storage%20SDIO%20Driver/C%2B%2B) from GitHub.

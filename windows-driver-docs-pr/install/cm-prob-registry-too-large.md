@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_REGISTRY_TOO_LARGE
+# Code 49 - CM_PROB_REGISTRY_TOO_LARGE
 
-This function is reserved for system use.
-
-The registry is too large.
+This Device Manager error message indicates that the registry is too large.
 
 ## Error Code
 

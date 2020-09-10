@@ -37,9 +37,9 @@ The following rules apply to device metadata package files:
 
 -   The GUID for each metadata package file name must be unique. When you create a new or revised metadata package, you must create a new GUID, even if the changes are minor.
 
--   Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID. For more information, see [**Locale XML element**](https://msdn.microsoft.com/library/windows/hardware/ff548647).
+-   Each metadata package can support only one locale. If you support more than one locale for your device, you must create separate metadata packages for each locale, with each metadata package having its own GUID. For more information, see [**Locale XML element**](/previous-versions/windows/hardware/metadata/ff548647(v=vs.85)).
 
-    **Note**  If you require multiple locale-specific device metadata package files for your device, you can group all the files by creating a language-neutral identifier. This identifier is a GUID, and the same GUID can be specified in the [**LanguageNeutralIdentifier**](https://msdn.microsoft.com/library/windows/hardware/ff548617) XML element within all metadata packages for the same device.
+    **Note**  If you require multiple locale-specific device metadata package files for your device, you can group all the files by creating a language-neutral identifier. This identifier is a GUID, and the same GUID can be specified in the [**LanguageNeutralIdentifier**](/previous-versions/windows/hardware/metadata/ff548617(v=vs.85)) XML element within all metadata packages for the same device.
 
      
 
@@ -79,10 +79,4 @@ Cabarc.exe -r -p -P .\MyMetadataPackage\
  
 
  
-
- 
-
-
-
-
 

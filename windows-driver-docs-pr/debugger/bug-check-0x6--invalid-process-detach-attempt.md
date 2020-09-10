@@ -18,14 +18,11 @@ ms.localizationpriority: medium
 
 The INVALID\_PROCESS\_DETACH\_ATTEMPT bug check has a value of 0x00000006.
 
-This bug check appears very infrequently. This bug check can be caused by calling the [**KeStackAttachProcess**](https://msdn.microsoft.com/library/windows/hardware/ff549659) routine and subsequently calling [**KeUnstackDetachProcess**](https://msdn.microsoft.com/library/windows/hardware/ff549677) in the driver's implementation of the [**PLOAD_IMAGE_NOTIFY_ROUTINE**](https://msdn.microsoft.com/library/windows/hardware/mt764088(v=vs.85).aspx) callback function. The callback runs in a thread of the process in which the image loaded.
+This bug check appears very infrequently. This bug check can be caused by calling the [**KeStackAttachProcess**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kestackattachprocess) routine and subsequently calling [**KeUnstackDetachProcess**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-keunstackdetachprocess) in the driver's implementation of the [**PLOAD_IMAGE_NOTIFY_ROUTINE**](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine) callback function. The callback runs in a thread of the process in which the image loaded.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
  
-
- 
-
-
-
 

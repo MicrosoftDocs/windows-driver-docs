@@ -25,9 +25,9 @@ ms.localizationpriority: medium
 ## <span id="system_wide_unique_device_ids"></span><span id="SYSTEM_WIDE_UNIQUE_DEVICE_IDS"></span>
 
 
-A driver for a typical audio adapter should easily be able to support several instances of the same audio adapter card in a system. Nearly all the data structures that a driver maintains are stored in the device-extension buffer (see the description of the [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure's **DeviceExtension** field). If several instances of a driver share any global data, however, those instances should synchronize their access to this data.
+A driver for a typical audio adapter should easily be able to support several instances of the same audio adapter card in a system. Nearly all the data structures that a driver maintains are stored in the device-extension buffer (see the description of the [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure's **DeviceExtension** field). If several instances of a driver share any global data, however, those instances should synchronize their access to this data.
 
-One additional requirement is that each subdevice on a particular instance of an adapter card should have a [device-ID string](https://msdn.microsoft.com/library/windows/hardware/ff541224) that uniquely identifies the subdevice across all instances of the same adapter card in the system.
+One additional requirement is that each subdevice on a particular instance of an adapter card should have a [device-ID string](../install/device-identification-strings.md) that uniquely identifies the subdevice across all instances of the same adapter card in the system.
 
 The most straightforward way to accomplish this is to expose each subdevice on the adapter card as a logically distinct device to the Plug and Play manager. This is presented as option (1) in [Multifunction Audio Devices](multifunction-audio-devices.md).
 
@@ -43,7 +43,7 @@ When either type of dependency exists, a proprietary bus driver is nearly always
 
 If you provide your own bus driver for an adapter card, you should ensure that the device IDs that your bus driver assigns are unique across the system.
 
-A bus driver provides a device ID for one of its children in response to an [**IRP\_MN\_QUERY\_ID**](https://msdn.microsoft.com/library/windows/hardware/ff551679) query from the Plug and Play manager. The ID can be specified in one of two ways, which the bus driver indicates in its response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) query by setting the [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure's **UniqueID** field to **TRUE** or **FALSE**:
+A bus driver provides a device ID for one of its children in response to an [**IRP\_MN\_QUERY\_ID**](../kernel/irp-mn-query-id.md) query from the Plug and Play manager. The ID can be specified in one of two ways, which the bus driver indicates in its response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md) query by setting the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure's **UniqueID** field to **TRUE** or **FALSE**:
 
 -   **UniqueID** = **TRUE**
 
@@ -56,9 +56,4 @@ A bus driver provides a device ID for one of its children in response to an [**I
 All audio bus drivers should set **UniqueID** = **FALSE** for their children. This causes the Plug and Play manager to extend the child's device ID string by adding information about the device's parent to make the ID unique on the machine.
 
  
-
- 
-
-
-
 

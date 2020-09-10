@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # MRxSetEaInfo routine
 
 
-The*MRxSetEaInfo* routine is called by [RDBSS](https://msdn.microsoft.com/library/windows/hardware/ff556810) to request that a network mini-redirector set extended attribute information on a file system object.
+The*MRxSetEaInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set extended attribute information on a file system object.
 
 Syntax
 ------
@@ -89,7 +89,7 @@ Return value
 </tr>
 <tr class="odd">
 <td align="left"><strong>STATUS_OBJECT_NAME_NOT_FOUND</strong></td>
-<td align="left"><p>The object name was not found. This error can be returned if the network mini-redirector was asked to set extended attributes on a file, but the file doesn&#39;t exist.</p></td>
+<td align="left"><p>The object name was not found. This error can be returned if the network mini-redirector was asked to set extended attributes on a file, but the file doesn't exist.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>STATUS_OBJECT_PATH_NOT_FOUND</strong></td>
@@ -142,7 +142,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://msdn.microsoft.com/library/windows/hardware/ff550696)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -167,11 +167,4 @@ Requirements
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
  
-
- 
-
-
-
-
-
 

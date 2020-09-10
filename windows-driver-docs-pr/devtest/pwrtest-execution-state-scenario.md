@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 The PwrTest Execution State Scenario (**/es**) monitors thread execution state changes of the currently running processes and services.
 
 **Note**  
-This PwrTest Execution State Scenario is primarily used for applications that use legacy power request APIs, such as [**SetThreadExecutionState function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/aa373208)). To monitor applications that use newer power request APIs, such as [**PowerSetRequest function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/dd405534) use the [PwrTest Requests Scenario](pwrtest-requests-scenario.md) instead.
+This PwrTest Execution State Scenario is primarily used for applications that use legacy power request APIs, such as [**SetThreadExecutionState function (Windows)**](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate)). To monitor applications that use newer power request APIs, such as [**PowerSetRequest function (Windows)**](/windows/desktop/api/winbase/nf-winbase-powersetrequest) use the [PwrTest Requests Scenario](pwrtest-requests-scenario.md) instead.
 
  
 
-Applications and services may temporarily override power management settings such as the monitor and sleep idle timeouts by changing their thread execution state. The PwrTest Execution State Scenario monitors thread execution state and system state changes that applications and services have made using the Win32 [**SetThreadExecutionState function (Windows)**](https://msdn.microsoft.com/library/windows/desktop/aa373208).
+Applications and services may temporarily override power management settings such as the monitor and sleep idle timeouts by changing their thread execution state. The PwrTest Execution State Scenario monitors thread execution state and system state changes that applications and services have made using the Win32 [**SetThreadExecutionState function (Windows)**](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate).
 
 You can use the **/es** scenario together with [PwrTest Idle Scenario](pwrtest-idle-scenario.md) to help identify the applications and services that are preventing the monitor or system from going idle.
 
@@ -30,7 +30,7 @@ pwrtest /es  [/t:n] [/stes:{y|n}] [/rss:{y|n}] [/sss:{y|n}] [/all] [/user] [/ker
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
 <span id="_stes_yn"></span><span id="_STES_YN"></span>**/stes:**{**y**|**n**}  
-Specifies whether [**SetThreadExecutionState**](https://msdn.microsoft.com/library/windows/desktop/aa373208) events should be logged (**y** (yes) is the default).
+Specifies whether [**SetThreadExecutionState**](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate) events should be logged (**y** (yes) is the default).
 
 <span id="_rss_yn"></span><span id="_RSS_YN"></span>**/rss:**{**y**|**n**}  
 Specifies whether **RegisterSystemState** events should be logged (**y** (yes) is the default).
@@ -39,10 +39,10 @@ Specifies whether **RegisterSystemState** events should be logged (**y** (yes) i
 Specifies whether **SetSystemState** events should be logged (**y** (yes) is the default).
 
 <span id="_all"></span><span id="_ALL"></span>**/all**  
-Specifies that all events should be logged ([**SetThreadExecutionState**](https://msdn.microsoft.com/library/windows/desktop/aa373208), **RegisterSystemState**, **SetSystemState**).
+Specifies that all events should be logged ([**SetThreadExecutionState**](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate), **RegisterSystemState**, **SetSystemState**).
 
 <span id="_user"></span><span id="_USER"></span>**/user**  
-Specifies that all user events should be logged ([**SetThreadExecutionState**](https://msdn.microsoft.com/library/windows/desktop/aa373208)).
+Specifies that all user events should be logged ([**SetThreadExecutionState**](/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate)).
 
 <span id="_kernel"></span><span id="_KERNEL"></span>**/kernel**  
 Specifies that only kernel-mode events should be logged (**RegisterSystemState**, **SetSystemState**).
@@ -182,11 +182,4 @@ The following table describes the XML elements that appear in the log file.
 [PwrTest Syntax](pwrtest-syntax.md)
 
  
-
- 
-
-
-
-
-
 

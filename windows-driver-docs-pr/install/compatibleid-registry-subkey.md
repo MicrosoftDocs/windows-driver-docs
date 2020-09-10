@@ -36,7 +36,7 @@ The following table defines the format and requirements of the **CompatibleID** 
 <tr class="odd">
 <td align="left"><p>Valid <a href="compatible-ids.md" data-raw-source="[compatible ID](compatible-ids.md)">compatible ID</a> value</p></td>
 <td align="left"><p>Required</p></td>
-<td align="left"><p>Must include the compatible ID&#39;s bus prefix.</p>
+<td align="left"><p>Must include the compatible ID's bus prefix.</p>
 <p>All slash () path separator characters within the compatible ID must be replaced with number (#) characters.</p></td>
 <td align="left"><a href="deviceoverrides-registry-key.md" data-raw-source="[DeviceOverrides](deviceoverrides-registry-key.md)">DeviceOverrides</a></td>
 <td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a> and/or <a href="childlocationpaths-registry-subkey.md" data-raw-source="[ChildLocationPaths](childlocationpaths-registry-subkey.md)">ChildLocationPaths</a></p></td>

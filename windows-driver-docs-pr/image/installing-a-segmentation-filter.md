@@ -37,18 +37,13 @@ Mysegfilter.dll=1
 
 *&lt;UiClassId&gt;* is the value that the driver returns for the WIA\_DIP\_UI\_CLSID property. *&lt;FilterClassId&gt;* is the class ID of the segmentation filter implementation. *Mysegfilter.dll* is the DLL that contains the implementation of the segmentation filter.
 
-The first entry in the device's [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) registers the segmentation filter as an extension for the driver, the next three entries register the segmentation filter as a COM component.
+The first entry in the device's [**INF AddReg Directive**](../install/inf-addreg-directive.md) registers the segmentation filter as an extension for the driver, the next three entries register the segmentation filter as a COM component.
 
-If the driver uses the WIA segmentation filter provided by Microsoft , neither the device's [**INF CopyFiles Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546346), [**INF SourceDisksFiles Section**](https://msdn.microsoft.com/library/windows/hardware/ff547472), nor the last three registry entries will be required. The only requirement is that the minidriver implements the WIA\_IPS\_SEGMENTATION property.
+If the driver uses the WIA segmentation filter provided by Microsoft , neither the device's [**INF CopyFiles Directive**](../install/inf-copyfiles-directive.md), [**INF SourceDisksFiles Section**](../install/inf-sourcedisksfiles-section.md), nor the last three registry entries will be required. The only requirement is that the minidriver implements the WIA\_IPS\_SEGMENTATION property.
 
 The COM **ThreadingModel** must be **Both**.
 
 For more information about INF files, see [INF Files for WIA Devices](inf-files-for-wia-devices.md).
 
  
-
- 
-
-
-
 

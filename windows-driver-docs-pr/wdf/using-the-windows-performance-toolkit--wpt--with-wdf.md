@@ -26,7 +26,7 @@ You can use WPT to obtain performance insights or troubleshoot performance issue
 ## Getting started
 
 
-The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from the [Windows hardware tools](http://dev.windows.com/featured/hardware/windows-10-hardware-preview-tools) site.
+The WPT is part of the Windows Assessment and Deployment Kit (ADK). You can install the ADK from the [Windows hardware tools](https://developer.microsoft.com/windows/featured/hardware/windows-10-hardware-preview-tools) site.
 
 The WPT consists of two separate tools: Windows Performance Recorder and Windows Performance Analyzer (WPA). In this topic, we use WPR to record a trace, and then WPA to view the trace in a configurable GUI format.
 
@@ -52,17 +52,13 @@ This script sets registry entries for the specified driver so that the framework
 3.  Reboot the computer.
 4.  In an elevated command prompt, enter the following command.
 
-    **Wpr.exe** **-Start WdfPerfTraceProviders.wprp**
+    **Wpr.exe** **-Start WdfTraceLoggingProvider -filemode**
 
     This command enables the ETW provider for WDF. The computer starts recording a trace.
 
-    **Note**  As in step 2, Wpr.exe and WdfPerfTraceProviders.wprp should be copied from the location you installed WPT. If you installed WPT on a development machine, copy these files from the WPT installation directory to the target machine.
+    **Note**  As in step 2, Wpr.exe should be copied from the location you installed WPT. If you installed WPT on a development machine, copy these files from the WPT installation directory to the target machine.
 
-
-
-
-On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces.
-
+    On Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), you can also start the trace with Wprui.exe, which provides a GUI for recording traces. Under more options, expand **Resource Analysis** and select **WDF Driver Activity**.
 
 5.  Exercise your scenario of interest.
 6.  Stop the ETW trace session: **Wpr.exe -Stop MyPerfTrace.etl**
@@ -93,9 +89,9 @@ The following screenshot shows sample summary graphs and tables for CPU and UMDF
 
 ![graph for umdf i/o request performance](images/WpaUMDFIoCapture-Narrow.PNG)
 
-In the [summary table](https://msdn.microsoft.com/library/windows/hardware/hh448109.aspx), most columns are self-explanatory, but there are a couple things to note. The WdfDevice column contains the WDFDEVICE handle associated with the I/O request. The ActivityID contains a unique identifier for the I/O request. The framework creates this identifier when it delivers an I/O request to the driver. If an activity identifier is already associated with the corresponding IRP, the framework uses that identifier. For more information, see [Using Activity Identifiers](using-activity-identifiers.md).
+In the [summary table](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448109(v=win.10)), most columns are self-explanatory, but there are a couple things to note. The WdfDevice column contains the WDFDEVICE handle associated with the I/O request. The ActivityID contains a unique identifier for the I/O request. The framework creates this identifier when it delivers an I/O request to the driver. If an activity identifier is already associated with the corresponding IRP, the framework uses that identifier. For more information, see [Using Activity Identifiers](using-activity-identifiers.md).
 
-Entry time is the trace timestamp when the framework delivered the request to the driver, and exit time is the timestamp when the driver called [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945) or a related method to complete the request.
+Entry time is the trace timestamp when the framework delivered the request to the driver, and exit time is the timestamp when the driver called [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete) or a related method to complete the request.
 
 ## KMDF I/O Request Graph and summary table
 
@@ -107,7 +103,7 @@ Here's a similar screenshot showing I/O request info for a KMDF driver.
 ## PnP Power callback graph and summary table
 
 
-WPT can also display the processing time of each PnP and power callback. The following screenshot shows [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848), [*EvtDeviceD0Exit*](https://msdn.microsoft.com/library/windows/hardware/ff540855) and [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880) callback duration for a sample KMDF driver and a sample UMDF driver.
+WPT can also display the processing time of each PnP and power callback. The following screenshot shows [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry), [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit) and [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback duration for a sample KMDF driver and a sample UMDF driver.
 
 The WdfDevice column contains the WDFDEVICE handle associated with the callback. The ActivityID contains a unique identifier for the callback instance.
 
@@ -122,31 +118,31 @@ After you run WdfPerfEnhancedVerifier.cmd for a specific driver, the framework r
 
 To determine when I/O requests start, the framework records events when it calls the following callbacks:
 
--   [*EvtIoDefault*](https://msdn.microsoft.com/library/windows/hardware/ff541757)
--   [*EvtIoRead*](https://msdn.microsoft.com/library/windows/hardware/ff541776)
--   [*EvtIoWrite*](https://msdn.microsoft.com/library/windows/hardware/ff541813)
--   [*EvtIoDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff541758)
--   [*EvtIoInternalDeviceControl*](https://msdn.microsoft.com/library/windows/hardware/ff541768)
+-   [*EvtIoDefault*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_default)
+-   [*EvtIoRead*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_read)
+-   [*EvtIoWrite*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_write)
+-   [*EvtIoDeviceControl*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control)
+-   [*EvtIoInternalDeviceControl*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_internal_device_control)
 
 The framework also records I/O request start events when the driver calls the following methods:
 
--   [**WdfIoQueueRetrieveNextRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548462)
--   [**WdfIoQueueRetrieveRequestByFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff548470)
--   [**WdfIoQueueRetrieveFoundRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548456)
+-   [**WdfIoQueueRetrieveNextRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueretrievenextrequest)
+-   [**WdfIoQueueRetrieveRequestByFileObject**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueretrieverequestbyfileobject)
+-   [**WdfIoQueueRetrieveFoundRequest**](/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueretrievefoundrequest)
 
 To determine when I/O requests complete, the framework tracks when the driver calls:
 
--   [**WdfRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff549945)
--   [**WdfRequestCompleteWithInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549948)
--   [**WdfRequestCompleteWithPriorityBoost**](https://msdn.microsoft.com/library/windows/hardware/ff549949)
+-   [**WdfRequestComplete**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete)
+-   [**WdfRequestCompleteWithInformation**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation)
+-   [**WdfRequestCompleteWithPriorityBoost**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost)
 
 Finally, to determine callback duration for PnP/Power callbacks, the framework records when it calls the following driver-supplied callback routines, and when they finish:
 
--   [*EvtDeviceD0Entry*](https://msdn.microsoft.com/library/windows/hardware/ff540848)
--   [*EvtDeviceD0Exit*](https://msdn.microsoft.com/library/windows/hardware/ff540855)
--   [*EvtDevicePrepareHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540880)
--   [*EvtDeviceReleaseHardware*](https://msdn.microsoft.com/library/windows/hardware/ff540890)
--   [*EvtIoStop*](https://msdn.microsoft.com/library/windows/hardware/ff541788)
+-   [*EvtDeviceD0Entry*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry)
+-   [*EvtDeviceD0Exit*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit)
+-   [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware)
+-   [*EvtDeviceReleaseHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware)
+-   [*EvtIoStop*](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop)
 
 ## Resources and Troubleshooting
 
@@ -165,20 +161,10 @@ Finally, to determine callback duration for PnP/Power callbacks, the framework r
     ----------------------------------
     ```
 
--   For development and testing purposes only, enforcement of the driver code signing policy can be temporarily disabled. For more information, see [Installing an Unsigned Driver Package during Development and Test](https://msdn.microsoft.com/library/windows/hardware/ff547565).
+-   For development and testing purposes only, enforcement of the driver code signing policy can be temporarily disabled. For more information, see [Installing an Unsigned Driver Package during Development and Test](../install/installing-an-unsigned-driver-during-development-and-test.md).
 -   If you captured a trace on Windows 10 Mobile, you'll need to copy MyPerfTrace.etl from the target device to a computer that has Wpa.exe. You can use the [TShell tool](https://sysdev.microsoft.com/Hardware/oem/docs/Phone_Testing/TShell) to do this.
 
 ## Related topics
 
 
-[Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx)
-
-
-
-
-
-
-
-
-
-
+[Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10))

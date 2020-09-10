@@ -1,5 +1,5 @@
 ---
-Description: In this topic, you will learn about how a WinUSB device is recognized in Windows 8.
+description: In this topic, you will learn about how a WinUSB device is recognized in Windows 8.
 title: WinUSB Device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -49,9 +49,9 @@ The "USBDevice" setup class is available for those devices for which Microsoft d
 
 ### About using the USBDevice class:
 
-Do not use the &quot;USB&quot; setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the &quot;USB&quot; class can lead to significant reliability and performance issues. For unclassified devices, use &quot;USBDevice&quot;.
+Do not use the "USB" setup class for unclassified devices. That class is reserved for installing controllers, hubs, and composite devices. Misusing the "USB" class can lead to significant reliability and performance issues. For unclassified devices, use "USBDevice".
 
-In Windows 8, to use &quot;USBDevice&quot; device class, simply add this to your INF:
+In Windows 8, to use "USBDevice" device class, simply add this to your INF:
 
 ```cpp
   …
@@ -144,7 +144,7 @@ The extended properties OS feature descriptor includes a header section that is 
 
  
 
-During device enumeration, The USB driver stack then retrieves the **DeviceInterfaceGUID** value from the extended properties OS feature descriptor and registers the device in the device's hardware key. An application can retrieve the value by using **SetupDiXxx** APIs (See [**SetupDiOpenDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552079)). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+During device enumeration, The USB driver stack then retrieves the **DeviceInterfaceGUID** value from the extended properties OS feature descriptor and registers the device in the device's hardware key. An application can retrieve the value by using **SetupDiXxx** APIs (See [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey)). For more information, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 **Enabling or disabling WinUSB power management features**
 

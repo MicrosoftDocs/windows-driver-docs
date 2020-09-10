@@ -33,11 +33,7 @@ On SoC-based platforms running Windows 8 and later, the framework supports sing
 
 The framework does not support system-mode DMA transfers on PC-based platforms.
 
+ ## Related topics
  
-
- 
-
-
-
-
+ [Enabling DMA Remapping for device drivers](../pci/enabling-dma-remapping-for-device-drivers.md)
 

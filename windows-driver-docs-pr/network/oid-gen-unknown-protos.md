@@ -24,7 +24,7 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
 The unknown-protocol statistics counter specifies the number of packets that were received through the interface that were discarded because the associated protocol was unknown or unsupported.
 
@@ -49,12 +49,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
- 
-
-
-
 

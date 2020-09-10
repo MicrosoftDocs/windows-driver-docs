@@ -19,13 +19,7 @@ Here are the suggested driver/firmware changes.
     -   If the remote peer supports ECSA, engage ECSA to move the peer into the channel configuration that yields a single channel.
 -   When the device is the Client and is in Multi-Channel mode:
     -   If an ECSA request comes from the remote peer, then support it.
--   Send channel change notifications to the operating system with [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_GROUP\_OPERATING\_CHANNEL](https://msdn.microsoft.com/library/windows/hardware/dn925643).
+-   Send channel change notifications to the operating system with [NDIS\_STATUS\_WDI\_INDICATION\_P2P\_GROUP\_OPERATING\_CHANNEL](./ndis-status-wdi-indication-p2p-group-operating-channel.md).
 
  
-
- 
-
-
-
-
 

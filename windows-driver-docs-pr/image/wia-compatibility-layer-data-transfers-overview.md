@@ -21,7 +21,7 @@ There are two transfer cases where a compatibility layer is needed, each of whic
     1.  File Transfer: The compatibility layer initiates file transfer with legacy driver.
     2.  Callback transfer: The compatibility layer initiates a callback transfer with the legacy driver.
 
-The first step in determining whether to use the compatibility layer is to determine if a WIA driver is a Windows Vista driver or a legacy driver. The WIA service will determine this by looking at the version number that a driver returns from [**IStiUSD::GetCapabilities**](https://msdn.microsoft.com/library/windows/hardware/ff543817). A legacy driver returns STI\_VERSION for the version number, whereas a Windows Vista driver must return STI\_VERSION\_3. This version number will be exposed to the WIA COM proxy (and a WIA application) in the Windows Vista property, WIA\_DIP\_STI\_DRIVER\_VERSION.
+The first step in determining whether to use the compatibility layer is to determine if a WIA driver is a Windows Vista driver or a legacy driver. The WIA service will determine this by looking at the version number that a driver returns from [**IStiUSD::GetCapabilities**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getcapabilities). A legacy driver returns STI\_VERSION for the version number, whereas a Windows Vista driver must return STI\_VERSION\_3. This version number will be exposed to the WIA COM proxy (and a WIA application) in the Windows Vista property, WIA\_DIP\_STI\_DRIVER\_VERSION.
 
 The next step in determining whether to use the compatibility layer is to determine if an application is a Windows Vista WIA application or a legacy WIA application is simple: if the application calls **IWiaDataTransfer::idtGetBandedData** or **IWiaDataTransfer::idtGetData** it is a legacy WIA application, if the application calls **IWiaTransfer::Download** it is a Windows Vista WIA application.
 
@@ -29,16 +29,11 @@ With the new stream-based data transfer model, the WIA service will no longer di
 
 WIA will not support the memory bitmap format **WiaImgFmt\_MEMORYBMP** in Windows Vista drivers.
 
-Windows Vista drivers can send update messages to transfer data in bands rather then having the driver cache the entire image during a transfer. This form of transfer is useful for transferring data during scans where it is not immediately possible to determine the size of the image being transferred, for example, a scan with a scroll-feed scanner. In order to transfer image data in bands, the driver must call **IStream::Seek** on the stream passed to it in [**IWiaTransferCallback::GetNextStream**](https://msdn.microsoft.com/library/windows/hardware/ff545039).
+Windows Vista drivers can send update messages to transfer data in bands rather then having the driver cache the entire image during a transfer. This form of transfer is useful for transferring data during scans where it is not immediately possible to determine the size of the image being transferred, for example, a scan with a scroll-feed scanner. In order to transfer image data in bands, the driver must call **IStream::Seek** on the stream passed to it in [**IWiaTransferCallback::GetNextStream**](/windows-hardware/drivers/ddi/wia_lh/nf-wia_lh-iwiatransfercallback-getnextstream).
 
 For additional information on TYMED and stream-based transfers see [Data Transfers](data-transfers.md).
 
 The **IWiaDataTransfer**, **IWiaTransfer**, and **IStream** interfaces are discussed in the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

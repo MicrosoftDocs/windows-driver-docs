@@ -1,5 +1,5 @@
 ---
-Description: Support for enumeration commands (WpdBasicHardwareDriverSample)
+description: Support for enumeration commands (WpdBasicHardwareDriverSample)
 title: Support for enumeration commands (WpdBasicHardwareDriverSample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -47,8 +47,8 @@ VOID WpdObjectEnumerator::InitializeEnumerationContext(
     // The eumeration context is initialized below with this information.
     if (strParentObjectID.CompareNoCase(L"") == 0)
     {
-        // Clients passing an &#39;empty&#39; string for the parent are asking for the
-        // &#39;DEVICE&#39; object.  We should return 1 child in this case.
+        // Clients passing an 'empty' string for the parent are asking for the
+        // 'DEVICE' object.  We should return 1 child in this case.
         pEnumeratorContext->m_TotalChildren = 1;
     }
     else if (strParentObjectID.CompareNoCase(WPD_DEVICE_OBJECT_ID) == 0)

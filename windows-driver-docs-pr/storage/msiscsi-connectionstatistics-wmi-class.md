@@ -73,7 +73,7 @@ class MSiSCSI_ConnectionStatistics : Win32_PerfRawData {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_ConnectionStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff562986) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_ConnectionStatistics**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_connectionstatistics) data structure.
 
 Initiators must register the MSiSCSI\_ConnectionStatistics WMI class with the following target instance name:
 
@@ -81,13 +81,7 @@ Initiators must register the MSiSCSI\_ConnectionStatistics WMI class with the fo
 targetname_#:#
 ```
 
-The first number sign (\#) is the value in the **USID** member of the [**MSiSCSI\_ConnectionStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff562986) structure, and the second number sign (\#) is the value in the **CID** member of this class.
+The first number sign (\#) is the value in the **USID** member of the [**MSiSCSI\_ConnectionStatistics**](/windows-hardware/drivers/ddi/iscsiprf/ns-iscsiprf-_msiscsi_connectionstatistics) structure, and the second number sign (\#) is the value in the **CID** member of this class.
 
  
-
- 
-
-
-
-
 

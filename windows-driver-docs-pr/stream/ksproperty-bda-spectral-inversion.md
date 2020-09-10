@@ -81,16 +81,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**SpectralInversion**](https://msdn.microsoft.com/library/windows/hardware/ff568154)
-
- 
+[**SpectralInversion**](/previous-versions/windows/hardware/drivers/ff568154(v=vs.85))
 
  
-
-
-
-
-
 

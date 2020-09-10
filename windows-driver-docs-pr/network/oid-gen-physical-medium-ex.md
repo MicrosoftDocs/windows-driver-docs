@@ -18,7 +18,7 @@ Remarks
 
 NDIS handles this OID for NDIS 6.0 and later miniport drivers. The miniport driver supplies the physical medium value during initialization.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure contains an NDIS\_PHYSICAL\_MEDIUM enumeration value.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an NDIS\_PHYSICAL\_MEDIUM enumeration value.
 
 **Note**  The difference between OID\_GEN\_PHYSICAL\_MEDIUM\_EX and [OID\_GEN\_PHYSICAL\_MEDIUM](oid-gen-physical-medium.md) is that the OID\_GEN\_PHYSICAL\_MEDIUM\_EX version does not override the **NdisPhysicalMedium802\_3** type as **NdisPhysicalMediumUnspecified** whereas OID\_GEN\_PHYSICAL\_MEDIUM still does. We recommend that all 6.x drivers use the EX version. OID\_GEN\_PHYSICAL\_MEDIUM\_EX is exposed through a WMI GUID.
 
@@ -55,16 +55,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
 [OID\_GEN\_MEDIA\_SUPPORTED](oid-gen-media-supported.md)
 
 [OID\_GEN\_PHYSICAL\_MEDIUM](oid-gen-physical-medium.md)
 
  
-
- 
-
-
-
 

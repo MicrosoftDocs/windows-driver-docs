@@ -31,7 +31,7 @@ The following table shows some example operator messages and alerts.
 <tbody>
 <tr class="odd">
 <td><p>International roaming</p></td>
-<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it&#39;s $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
+<td><p>Welcome to the UK. For $5 per day you have 25 MB of data, and then it's $1 per 1 MB. SMS is $0.49 per msg. Learn more at www.contoso.com/rates/uk.</p></td>
 </tr>
 <tr class="even">
 <td><p>Data usage overage</p></td>
@@ -70,9 +70,9 @@ Inappropriate design for showing operator messages:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   Use [**ListView**](https://msdn.microsoft.com/library/windows/apps/br211837) to display messages. For more info, see [Adding List View, Semantic Zoom, and other data controls](https://msdn.microsoft.com/library/windows/apps/hh465409).
+-   Use [**ListView**](/previous-versions/windows/apps/br211837(v=win.10)) to display messages. For more info, see [Adding List View, Semantic Zoom, and other data controls](/previous-versions/windows/apps/hh465409(v=win.10)).
 
--   Use the app bar control to view and delete messages. For more info, see [Guidelines for app bars](https://msdn.microsoft.com/library/windows/apps/hh465302).
+-   Use the app bar control to view and delete messages. For more info, see [Guidelines for app bars](/windows/uwp/controls-and-patterns/app-bars).
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 
@@ -82,11 +82,4 @@ Inappropriate design for showing operator messages:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

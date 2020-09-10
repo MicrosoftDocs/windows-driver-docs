@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-This section lists the required and optional WIA item properties for a scanner feeder item and scanner feeder child items (front and back page items). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739).
+This section lists the required and optional WIA item properties for a scanner feeder item and scanner feeder child items (front and back page items). For a complete list of WIA common, camera-specific, and scanner-specific properties, see [WIA Properties](./wia-properties.md).
 
 This section includes:
 
@@ -25,9 +25,4 @@ This section includes:
 [Requirements for Feeder Scanners Child Items](requirements-for-feeder-scanners-child-items.md)
 
  
-
- 
-
-
-
 

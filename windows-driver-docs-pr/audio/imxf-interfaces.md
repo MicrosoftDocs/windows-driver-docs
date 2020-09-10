@@ -17,40 +17,35 @@ ms.localizationpriority: medium
 ## <span id="imxf_interfaces"></span><span id="IMXF_INTERFACES"></span>
 
 
-All MIDI transport in the DirectMusic port and miniport driver is carried out using the same interface: [IMXF](https://msdn.microsoft.com/library/windows/hardware/ff536782).
+All MIDI transport in the DirectMusic port and miniport driver is carried out using the same interface: [IMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf).
 
-**IMXF** is the COM interface for a DirectMusic MIDI transform filter. The miniport driver, the sequencer, and other entities in the port driver that handle MIDI data use **IMXF** as their common COM interface. When the miniport driver implements this interface, it can participate in MIDI transport. [IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879), which resides in PortCls, manages **IMXF**. The interface from the capture device to capture sink is also an **IMXF** interface.
+**IMXF** is the COM interface for a DirectMusic MIDI transform filter. The miniport driver, the sequencer, and other entities in the port driver that handle MIDI data use **IMXF** as their common COM interface. When the miniport driver implements this interface, it can participate in MIDI transport. [IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus), which resides in PortCls, manages **IMXF**. The interface from the capture device to capture sink is also an **IMXF** interface.
 
-MIDI data is transported between user mode and kernel mode in buffers of packed time-stamped data. The kernel port driver breaks these buffers into individual events (see [**DMUS\_KERNEL\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff536340)). The high-resolution MIDI sequencer passes these events to the miniport driver when the trigger time occurs.
+MIDI data is transported between user mode and kernel mode in buffers of packed time-stamped data. The kernel port driver breaks these buffers into individual events (see [**DMUS\_KERNEL\_EVENT**](/windows-hardware/drivers/ddi/dmusicks/ns-dmusicks-_dmus_kernel_event)). The high-resolution MIDI sequencer passes these events to the miniport driver when the trigger time occurs.
 
-On the input side, the kernel port driver extracts individual input messages from the miniport driver and builds packed buffers to pass up to user mode. Accordingly, the data transport model for DirectMusic miniport drivers consists of [**IMXF::PutMessage**](https://msdn.microsoft.com/library/windows/hardware/ff536791) and [**IAllocatorMXF::GetMessage**](https://msdn.microsoft.com/library/windows/hardware/ff536494).
+On the input side, the kernel port driver extracts individual input messages from the miniport driver and builds packed buffers to pass up to user mode. Accordingly, the data transport model for DirectMusic miniport drivers consists of [**IMXF::PutMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-putmessage) and [**IAllocatorMXF::GetMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iallocatormxf-getmessage).
 
 The **IMXF** interface supports the following methods:
 
-[**IMXF::ConnectOutput**](https://msdn.microsoft.com/library/windows/hardware/ff536785)
+[**IMXF::ConnectOutput**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-connectoutput)
 
-[**IMXF::DisconnectOutput**](https://msdn.microsoft.com/library/windows/hardware/ff536787)
+[**IMXF::DisconnectOutput**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-disconnectoutput)
 
-[**IMXF::PutMessage**](https://msdn.microsoft.com/library/windows/hardware/ff536791)
+[**IMXF::PutMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-putmessage)
 
-[**IMXF::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536792)
+[**IMXF::SetState**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-setstate)
 
-The [IAllocatorMXF](https://msdn.microsoft.com/library/windows/hardware/ff536491) interface extends **IMXF** by adding the following methods:
+The [IAllocatorMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iallocatormxf) interface extends **IMXF** by adding the following methods:
 
-[**IAllocatorMXF::GetMessage**](https://msdn.microsoft.com/library/windows/hardware/ff536494)
+[**IAllocatorMXF::GetMessage**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iallocatormxf-getmessage)
 
-[**IAllocatorMXF::GetBufferSize**](https://msdn.microsoft.com/library/windows/hardware/ff536493)
+[**IAllocatorMXF::GetBufferSize**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iallocatormxf-getbuffersize)
 
-[**IAllocatorMXF::GetBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536492)
+[**IAllocatorMXF::GetBuffer**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iallocatormxf-getbuffer)
 
-[**IAllocatorMXF::PutBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536495)
+[**IAllocatorMXF::PutBuffer**](/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iallocatormxf-putbuffer)
 
 For more information about the use of these interfaces, see [Allocator](allocator.md).
 
  
-
- 
-
-
-
 

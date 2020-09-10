@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="pcm_stream_data_format"></span><span id="PCM_STREAM_DATA_FORMAT"></span>
 
 
-This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/library/windows/hardware/ff537095) structure to describe the data format of a PCM stream.
+This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure to describe the data format of a PCM stream.
 
 ```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT_WAVEFORMATEX);
@@ -34,9 +34,4 @@ This example uses a [**KSDATAFORMAT\_WAVEFORMATEX**](https://msdn.microsoft.com/
 ```
 
  
-
- 
-
-
-
 

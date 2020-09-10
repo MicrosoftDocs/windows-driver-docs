@@ -50,7 +50,7 @@ If not specified, there is no translation table. (This attribute is provided onl
 </tr>
 <tr class="even">
 <td><p><strong></em>LookAheadRegion</strong></p></td>
-<td><p>Numeric (integer) value representing how far ahead the driver must &quot;look&quot; to determine whether it should emit text. This value is in <em>y</em> master units, but must be convertible to an integral number of pixels. For more information, see the comment that follows this table.</p></td>
+<td><p>Numeric (integer) value representing how far ahead the driver must "look" to determine whether it should emit text. This value is in <em>y</em> master units, but must be convertible to an integral number of pixels. For more information, see the comment that follows this table.</p></td>
 <td><p>Optional. If not specified, the default value is zero. Used only with serial printers, (for example, HP DeskJet), for ordering text and bitmap data.</p></td>
 </tr>
 <tr class="odd">

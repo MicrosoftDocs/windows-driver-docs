@@ -81,16 +81,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**ModulationType**](https://msdn.microsoft.com/library/windows/hardware/ff567735)
-
- 
+[**ModulationType**](/previous-versions/windows/desktop/mstv/modulationtype)
 
  
-
-
-
-
-
 

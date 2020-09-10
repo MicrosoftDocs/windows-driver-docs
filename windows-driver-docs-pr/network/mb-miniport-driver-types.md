@@ -86,11 +86,11 @@ Production quality MB miniport drivers should specify the settings in the follow
 </tr>
 <tr class="even">
 <td align="left"><p>UpperRange</p></td>
-<td align="left"><p>&quot;flpp4&quot; and &quot;flpp6&quot; (if IPv6 supported)</p></td>
+<td align="left"><p>"flpp4" and "flpp6" (if IPv6 supported)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>LowerRange</p></td>
-<td align="left"><p>&quot;ppip&quot;</p></td>
+<td align="left"><p>"ppip"</p></td>
 </tr>
 </tbody>
 </table>

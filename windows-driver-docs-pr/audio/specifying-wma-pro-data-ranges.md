@@ -34,7 +34,7 @@ The corresponding format-subtype GUID can be specified in terms of the wave-form
                       DEFINE_WAVEFORMATEX_GUID(WAVE_FORMAT_WMASPDIF)
 ```
 
-The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) table entries for a pin that supports the WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats:
+The following code example shows how a WaveCyclic or WavePci miniport driver can specify the [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) table entries for a pin that supports the WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats:
 
 ```cpp
 static KSDATARANGE_AUDIO PinDataRangesSpdifOut[] =
@@ -104,9 +104,4 @@ The third data range specifies an AC-3-over-S/PDIF data format. For more informa
 The preceding example does not enable DirectSound to handle the non-PCM WMA Pro-over-S/PDIF and AC-3-over-S/PDIF formats on Microsoft Windows 2000 SP2 and Windows 98 SE + hotfix. To enable this capability, the sample code would need to be modified so that for each of the three data ranges that uses the specifier KSDATAFORMAT\_SPECIFIER\_WAVEFORMATEX, a second data range must be included that is identical except that it uses the specifier KSDATAFORMAT\_SPECIFIER\_DSOUND instead. For an example, see [Specifying AC-3 Data Ranges](specifying-ac-3-data-ranges.md).
 
  
-
- 
-
-
-
 

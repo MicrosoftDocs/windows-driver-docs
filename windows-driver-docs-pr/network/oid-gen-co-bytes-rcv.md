@@ -14,8 +14,6 @@ The OID_GEN_CO_BYTES_RCV OID specifies the number of bytes in PDUs received with
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

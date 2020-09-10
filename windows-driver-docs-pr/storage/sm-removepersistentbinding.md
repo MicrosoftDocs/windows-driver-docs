@@ -86,16 +86,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_RemovePersistentBinding\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566269)
+[**SM\_RemovePersistentBinding\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removepersistentbinding_in)
 
-[**SM\_RemovePersistentBinding\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566271)
-
- 
+[**SM\_RemovePersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_removepersistentbinding_out)
 
  
-
-
-
-
-
 

@@ -558,11 +558,11 @@ The following table indicates the notation used to describe assembly language in
 </tr>
 <tr class="even">
 <td align="left"><p><em>T</em></p></td>
-<td align="left"><p>&quot;B&quot;, &quot;W&quot;, or &quot;D&quot; (byte, word or dword)</p></td>
+<td align="left"><p>"B", "W", or "D" (byte, word or dword)</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>acc<em>T</em></p></td>
-<td align="left"><p>Size <em>T</em> accumulator: <strong>al</strong> if <em>T</em> = &quot;B&quot;, <strong>ax</strong> if <em>T</em> = &quot;W&quot;, or <strong>eax</strong> if <em>T</em> = &quot;D&quot;</p></td>
+<td align="left"><p>Size <em>T</em> accumulator: <strong>al</strong> if <em>T</em> = "B", <strong>ax</strong> if <em>T</em> = "W", or <strong>eax</strong> if <em>T</em> = "D"</p></td>
 </tr>
 </tbody>
 </table>

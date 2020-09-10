@@ -21,12 +21,7 @@ The PSHED exposes an interface to the operating system through which the Windows
 
 For more information about how to implement a PSHED plug-in that participates in error injection, see [Participating in Error Injection](participating-in-error-injection.md).
 
-User-mode management applications can inject errors into the hardware platform by calling the [WHEA Management API](https://msdn.microsoft.com/library/windows/hardware/ff560556). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
+User-mode management applications can inject errors into the hardware platform by calling the [WHEA Management API](/windows-hardware/drivers/ddi/_whea/). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
 
  
-
- 
-
-
-
 

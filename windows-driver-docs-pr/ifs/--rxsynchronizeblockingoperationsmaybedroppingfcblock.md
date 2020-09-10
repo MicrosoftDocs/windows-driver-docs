@@ -80,7 +80,7 @@ The **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** routine synchron
 
 A network mini-redirector may use **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** to synchronize operations on a separate queue that is maintained by the network mini-redirector.
 
-If *RxContext* is marked for an asynchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will add the *RxContext* to the queue and return STATUS\_PENDING. If *RxContext* is marked for a synchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will block and *RxContext* is resumed when a call is made to [**RxResumeBlockedOperations\_Serially**](https://msdn.microsoft.com/library/windows/hardware/ff554701).
+If *RxContext* is marked for an asynchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will add the *RxContext* to the queue and return STATUS\_PENDING. If *RxContext* is marked for a synchronous operation, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** will block and *RxContext* is resumed when a call is made to [**RxResumeBlockedOperations\_Serially**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxresumeblockedoperations_serially).
 
 If the blocking I/O request was canceled, **\_\_RxSynchronizeBlockingOperationsMaybeDroppingFcbLock** returns STATUS\_CANCELLED to indicate the error.
 
@@ -119,28 +119,21 @@ Requirements
 ## See also
 
 
-[**RxCompleteRequest\_Real**](https://msdn.microsoft.com/library/windows/hardware/ff554348)
+[**RxCompleteRequest\_Real**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxcompleterequest_real)
 
-[**RxCreateRxContext**](https://msdn.microsoft.com/library/windows/hardware/ff554367)
+[**RxCreateRxContext**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxcreaterxcontext)
 
-[**RxDereference**](https://msdn.microsoft.com/library/windows/hardware/ff554388)
+[**RxDereference**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxdereference)
 
-[**RxDereferenceAndDeleteRxContext\_Real**](https://msdn.microsoft.com/library/windows/hardware/ff554393)
+[**RxDereferenceAndDeleteRxContext\_Real**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxdereferenceanddeleterxcontext_real)
 
-[**RxInitializeContext**](https://msdn.microsoft.com/library/windows/hardware/ff554502)
+[**RxInitializeContext**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxinitializecontext)
 
-[**RxPrepareContextForReuse**](https://msdn.microsoft.com/library/windows/hardware/ff554643)
+[**RxPrepareContextForReuse**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxpreparecontextforreuse)
 
-[**RxResumeBlockedOperations\_Serially**](https://msdn.microsoft.com/library/windows/hardware/ff554701)
+[**RxResumeBlockedOperations\_Serially**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-rxresumeblockedoperations_serially)
 
-[**\_\_RxSynchronizeBlockingOperations**](https://msdn.microsoft.com/library/windows/hardware/ff557377)
-
- 
+[**\_\_RxSynchronizeBlockingOperations**](/windows-hardware/drivers/ddi/rxcontx/nf-rxcontx-__rxsynchronizeblockingoperations)
 
  
-
-
-
-
-
 

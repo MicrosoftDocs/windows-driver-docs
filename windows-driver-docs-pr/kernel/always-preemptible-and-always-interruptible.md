@@ -33,7 +33,7 @@ The lowest IRQL level is called PASSIVE\_LEVEL. At this level, no interrupt vect
 
 Some system support routines run at IRQL=PASSIVE\_LEVEL, either because they are implemented as pageable code or access pageable data, or because some kernel-mode components set up their own threads.
 
-Similarly, some [standard driver routines](https://msdn.microsoft.com/library/windows/hardware/ff563842) usually run at IRQL=PASSIVE\_LEVEL. However, several standard driver routines run either at IRQL=DISPATCH\_LEVEL or, for a lowest-level driver, at device IRQL (also called *DIRQL*). For more information about IRQLs, see [Managing Hardware Priorities](managing-hardware-priorities.md).
+Similarly, some [standard driver routines](./introduction-to-standard-driver-routines.md) usually run at IRQL=PASSIVE\_LEVEL. However, several standard driver routines run either at IRQL=DISPATCH\_LEVEL or, for a lowest-level driver, at device IRQL (also called *DIRQL*). For more information about IRQLs, see [Managing Hardware Priorities](managing-hardware-priorities.md).
 
 Every routine in a driver is interruptible. This includes any routine that is running at a higher IRQL than PASSIVE\_LEVEL. Any routine that is running at a particular IRQL retains control of the processor only if no interrupt for a higher IRQL occurs while that routine is running.
 
@@ -48,9 +48,4 @@ In general, only a highest-level driver is called in the context of the thread t
 Consequently, driver routines usually execute in an *arbitrary thread context*—the context of whatever thread is current when a standard driver routine is called. For performance reasons (to avoid context switches), very few drivers set up their own threads.
 
  
-
- 
-
-
-
 

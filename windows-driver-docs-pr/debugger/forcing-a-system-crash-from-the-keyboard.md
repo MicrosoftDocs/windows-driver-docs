@@ -3,47 +3,39 @@ title: Forcing a System Crash from the Keyboard
 description: Forcing a System Crash from the Keyboard
 ms.assetid: 0c3ec6f3-d233-46e4-b599-1a0f89318ed2
 keywords: ["boot process, causing system crash from keyboard", "CTRL+SCROLL LOCK", "system crash, causing from keyboard", "bug check, causing from keyboard", "keyboard-caused system crash", "USB keyboard and system crash", "PS/2 keyboard and system crash", "forcing system crash from keyboard"]
-ms.date: 05/23/2017
+ms.date: 07/01/2019
 ms.localizationpriority: medium
 ---
 
 # Forcing a System Crash from the Keyboard
 
-
 ## <span id="ddk_forcing_a_system_crash_from_the_keyboard_dbg"></span><span id="DDK_FORCING_A_SYSTEM_CRASH_FROM_THE_KEYBOARD_DBG"></span>
 
+The following types of keyboards can cause a system crash directly:
 
-Most of the following keyboards can cause a system crash directly:
+<span id="________PS_2_keyboards_connected_on_i8042prt_ports_______"></span><span id="________ps_2_keyboards_connected_on_i8042prt_ports_______"></span><span id="________PS_2_KEYBOARDS_CONNECTED_ON_I8042PRT_PORTS_______"></span> **PS/2 keyboards connected on i8042prt ports**
 
-<span id="________PS_2_keyboards_connected_on_i8042prt_ports_______"></span><span id="________ps_2_keyboards_connected_on_i8042prt_ports_______"></span><span id="________PS_2_KEYBOARDS_CONNECTED_ON_I8042PRT_PORTS_______"></span> PS/2 keyboards connected on i8042prt ports   
 This feature is available in Windows 2000 and later versions of Windows operating system.
 
-<span id="________USB_keyboards_______"></span><span id="________usb_keyboards_______"></span><span id="________USB_KEYBOARDS_______"></span> USB keyboards   
-This feature is available in:
+<span id="________USB_keyboards_______"></span><span id="________usb_keyboards_______"></span><span id="________USB_KEYBOARDS_______"></span> **USB keyboards**
 
--   Windows Server 2003 Service Pack 1 if the hotfix available with [KB 244139](https://go.microsoft.com/fwlink/p/?linkid=106065) is installed.
+This feature is available in Windows Vista and later versions of Windows operating system.
 
--   Windows Server 2003 (with Service Pack 2 or later).
+<span id="hyper_v_keyboards_______"></span> **Hyper-V keyboards**
 
--   Windows Vista Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
+This feature is available in Windows 10 version 1903 and later versions of Windows operating system.
 
--   Windows Vista Service Pack 2.
+<span id="Configuration"></span> **Configuration**
 
--   Windows Server 2008 Service Pack 1 if the hotfix available with [KB 971284](https://go.microsoft.com/fwlink/p/?LinkId=241349) is installed.
--   Windows Server 2008 (with Service Pack 2 or later).
--   Windows 7 and later versions of Windows operating system.
+Configure the following settings to enable the a system crash using keyboard:
 
-**Note**  This feature is not available in Windows XP.
+1. If you wish a crash dump file to be written, you must enable such dump files, choose the path and file name, and select the size of the dump file. For more information, see [Enabling a Kernel-Mode Dump File](enabling-a-kernel-mode-dump-file.md).
 
- 
+2. With PS/2 keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\i8042prt\\Parameters**, create a value named **CrashOnCtrlScroll**, and set it equal to a REG\_DWORD value of 0x01.
 
-You must ensure the following three settings before the keyboard can cause a system crash:
+3. With USB keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\kbdhid\\Parameters,** create a value named **CrashOnCtrlScroll**, and set it equal to a REG\_DWORD value of 0x01.
 
-1.  If you wish a crash dump file to be written, you must enable such dump files, choose the path and file name, and select the size of the dump file. For more information, see [Enabling a Kernel-Mode Dump File](enabling-a-kernel-mode-dump-file.md).
-
-2.  With PS/2 keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\i8042prt\\Parameters**, create a value named **CrashOnCtrlScroll**, and set it equal to a REG\_DWORD value of 0x01.
-
-3.  With USB keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\Services\\kbdhid\\Parameters,** create a value named **CrashOnCtrlScroll**, and set it equal to a REG\_DWORD value of 0x01.
+4. With Hyper-V keyboards, you must enable the keyboard-initiated crash in the registry. In the registry key **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\hyperkbd\Parameters**, create a value named **CrashOnCtrlScroll**, and set it equal to a REG_DWORD value of 0x01.
 
 You must restart the system for these settings to take effect.
 
@@ -53,19 +45,23 @@ The system then calls **KeBugCheck** and issues [**bug check 0xE2**](bug-check-0
 
 If a kernel debugger is attached to the crashed machine, the machine will break into the kernel debugger after the crash dump file has been written.
 
-For more information on using this feature, refer to the article [Generate a memory dump file by using the keyboard (KB 244139)](https://go.microsoft.com/fwlink/p/?linkid=106065).
+For more information on using this feature, refer to the article [Windows feature lets you generate a memory dump file by using the keyboard](https://support.microsoft.com/help/244139/windows-feature-lets-you-generate-a-memory-dump-file-by-using-the-keyb).
 
 ### <span id="defining_alternate_keyboard_shortcuts_to_force_a_system_crash_from_the"></span><span id="DEFINING_ALTERNATE_KEYBOARD_SHORTCUTS_TO_FORCE_A_SYSTEM_CRASH_FROM_THE"></span>Defining Alternate Keyboard Shortcuts to Force a System Crash from the Keyboard
 
 You can configure values under the following registry subkeys for different keyboard shortcut sequences to generate the memory dump file:
 
--   For PS/2 keyboards:
+- For PS/2 keyboards:
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\i8042prt\\crashdump**
 
--   For USB keyboards:
+- For USB keyboards:
 
     **HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\kbdhid\\crashdump**
+
+- For Hyper-V keyboards:
+
+    **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\hyperkbd\crashdump**
 
 You must create the following registry REG\_DWORD values under these subkeys:
 
@@ -113,11 +109,7 @@ The values for the first hot key are described in the following table.
 </tbody>
 </table>
 
- 
-
 **Note**  You can assign **Dump1Keys** a value that enables one or more keys as the first key used in the keyboard shortcut sequence. For example, assign **Dump1Keys** a value of 0x11 to define both the rightmost and leftmost SHIFT keys as the first key in the keyboard shortcut sequence.
-
- 
 
 <span id="Dump2Key"></span><span id="dump2key"></span><span id="DUMP2KEY"></span>**Dump2Key**  
 The **Dump2Key** registry value is the index into the scancode table for the keyboard layout of the target computer. The following is the actual table in the driver.
@@ -142,8 +134,6 @@ const UCHAR keyToScanTbl[134] = {
 
 **Note**   Index 124 (sysreq) is a special case because an 84-key keyboard has a different scan code.
 
- 
-
 If you define alternate keyboard shortcuts to force a system crash from a USB or PS/2 keyboard, you must either set the **CrashOnCtrlScroll** registry value to 0 or remove it from the registry.
 
 ### <span id="limitations"></span><span id="LIMITATIONS"></span>Limitations
@@ -151,12 +141,3 @@ If you define alternate keyboard shortcuts to force a system crash from a USB or
 It is possible for a system to freeze in such a way that the keyboard shortcut sequence will not work. However, this should be a very rare occurrence. Using the keyboard shortcut sequence to initiate a crash will work even in many instances where CTRL+ALT+DELETE does not work.
 
 Forcing a system crash from the keyboard does not work if the computer stops responding at a high interrupt request level (IRQL). This limitation exists because the Kbdhid.sys driver, which allows the memory dump process to run, operates at a lower IRQL than the i8042prt.sys driver.
-
- 
-
- 
-
-
-
-
-

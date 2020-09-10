@@ -56,11 +56,11 @@ The debugger automatically sets the following pseudo-registers.
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>$ea</strong></p></td>
-<td align="left"><p>The effective address of the last instruction that was executed. If this instruction does not have an effective address, the debugger displays &quot;Bad register error&quot;. If this instruction has two effective addresses, the debugger displays the first address.</p></td>
+<td align="left"><p>The effective address of the last instruction that was executed. If this instruction does not have an effective address, the debugger displays "Bad register error". If this instruction has two effective addresses, the debugger displays the first address.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>$ea2</strong></p></td>
-<td align="left"><p>The second effective address of the last instruction that was executed. If this instruction does not have two effective addresses, the debugger displays &quot;Bad register error&quot;.</p></td>
+<td align="left"><p>The second effective address of the last instruction that was executed. If this instruction does not have two effective addresses, the debugger displays "Bad register error".</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$exp</strong></p></td>
@@ -69,7 +69,7 @@ The debugger automatically sets the following pseudo-registers.
 <tr class="even">
 <td align="left"><p><strong>$ra</strong></p></td>
 <td align="left"><p>The return address that is currently on the stack.</p>
-<p>This address is especially useful in execution commands. For example, <strong>g @$ra</strong> continues until the return address is found (although <strong><a href="gu--go-up-.md" data-raw-source="[gu (Go Up)](gu--go-up-.md)">gu (Go Up)</a></strong> is a more precise effective way of &quot;stepping out&quot; of the current function).</p></td>
+<p>This address is especially useful in execution commands. For example, <strong>g @$ra</strong> continues until the return address is found (although <strong><a href="gu--go-up-.md" data-raw-source="[gu (Go Up)](gu--go-up-.md)">gu (Go Up)</a></strong> is a more precise effective way of "stepping out" of the current function).</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$ip</strong></p></td>

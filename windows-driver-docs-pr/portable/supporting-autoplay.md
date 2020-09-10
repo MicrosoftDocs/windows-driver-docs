@@ -1,5 +1,5 @@
 ---
-Description: Supporting AutoPlay
+description: Supporting AutoPlay
 title: Supporting AutoPlay
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -46,26 +46,26 @@ Devices that support these categories should set the appropriate entries in the 
 <td align="left">AutoPlaySourceOnly</td>
 <td align="left">This directive is required for devices that act only as an AutoPlay source.
 <ul>
-<li>The reg root must be &quot;HKR&quot;.</li>
+<li>The reg root must be "HKR".</li>
 <li>The type must be 0x10001.</li>
 <li>A value of 1 must be set.</li>
 </ul>
 <p>Example:</p>
 <p><code>[Device_AddReg]</code></p>
-<p><code>HKR,,&quot;AutoPlaySourceOnly&quot;,0x10001,1</code></p></td>
+<p><code>HKR,,"AutoPlaySourceOnly",0x10001,1</code></p></td>
 </tr>
 <tr class="even">
 <td align="left">Device_AddReg</td>
 <td align="left">EnableDefaultAutoPlaySupport directive</td>
 <td align="left">This directive is required.
 <ul>
-<li>The reg root must be &quot;HKR&quot;.</li>
+<li>The reg root must be "HKR".</li>
 <li>The type must be 0x10001.</li>
 <li>A valid value (0 or 1) must be set.</li>
 </ul>
 <p>Example:</p>
 <p><code>[Device_AddReg]</code></p>
-<p><code>HKR,,&quot;EnableDefaultAutoPlaySupport&quot;,0x10001,1</code></p></td>
+<p><code>HKR,,"EnableDefaultAutoPlaySupport",0x10001,1</code></p></td>
 </tr>
 </tbody>
 </table>

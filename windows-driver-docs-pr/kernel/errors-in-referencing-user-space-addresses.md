@@ -17,7 +17,7 @@ Any driver, whether supporting IRPs or fast I/O operations, should validate any 
 
 ### <a href="" id="failure-to-validate-addresses-passed-in-method-neither-ioctls-and-fsctls"></a>Failure to Validate Addresses Passed in METHOD\_NEITHER IOCTLs and FSCTLs
 
-The I/O manager does no validation whatsoever for METHOD\_NEITHER IOCTLs and FSCTLs. To ensure that user-space addresses are valid, the driver must use the [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876) and [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) routines, enclosing all buffer references in **try/except** blocks.
+The I/O manager does no validation whatsoever for METHOD\_NEITHER IOCTLs and FSCTLs. To ensure that user-space addresses are valid, the driver must use the [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) and [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) routines, enclosing all buffer references in **try/except** blocks.
 
 In the following example, the driver assumes that the value passed in the **Type3InputBuffer** represents a valid address.
 
@@ -88,9 +88,4 @@ In this example, the driver should validate the embedded pointer by using the **
 For more information about using **try/except** blocks to handle invalid addresses, see [Handling Exceptions](handling-exceptions.md).
 
  
-
- 
-
-
-
 

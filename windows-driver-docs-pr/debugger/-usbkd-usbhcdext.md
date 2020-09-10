@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !usbkd.usbhcdext
 
 
-The [**!usbkd.usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) command displays information from the device extension of a USB host controller or a USB root hub.
+The [**!usbkd.usbhcdext**](-usbkd-usbhcdext.md) command displays information from the device extension of a USB host controller or a USB root hub.
 
 ```dbgcmd
 !usbkd.usbhcdext DeviceExtension
@@ -52,7 +52,7 @@ EHCI MINIPORT(s) dt usbport!_USBPORT_MINIPORT_DRIVER ffffe00001f48bd0
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe00001ca11a0**.
 
-Now pass the address of the device extension to the [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) command.
+Now pass the address of the device extension to the [**!usbhcdext**](-usbkd-usbhcdext.md) command.
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
@@ -108,7 +108,7 @@ In the preceding output, you can see the address of the FDO of the root hub disp
 
 In the preceding output, you can see that the address of the device extension for the PDO of the root hub is `ffffe0000213c1a0`.
 
-Now pass the address of the device extension to the [**!usbhcdext**](https://msdn.microsoft.com/library/windows/hardware/dn367072) command.
+Now pass the address of the device extension to the [**!usbhcdext**](-usbkd-usbhcdext.md) command.
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe0000213c1a0
@@ -140,14 +140,7 @@ dt USBPORT!_PDO_EXTENSION ffffe0000213c5a0
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

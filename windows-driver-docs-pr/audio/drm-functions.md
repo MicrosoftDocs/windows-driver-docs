@@ -12,33 +12,27 @@ ms.localizationpriority: medium
 ## <span id="ddk_drm_functions_ks"></span><span id="DDK_DRM_FUNCTIONS_KS"></span>
 
 
-This section describes the DRM functions, which drivers use to manage the digital rights of kernel-streaming audio content in Windows. System driver component Drmk.sys contains the entry points for these functions. The definitions for these functions appear in header file drmk.h. For more information, see [Digital Rights Management](https://msdn.microsoft.com/library/windows/hardware/ff536260).
+This section describes the DRM functions, which drivers use to manage the digital rights of kernel-streaming audio content in Windows. System driver component Drmk.sys contains the entry points for these functions. The definitions for these functions appear in header file drmk.h. For more information, see [Digital Rights Management](./digital-rights-management.md).
 
 This section describes the following DRM functions:
 
-[**DrmAddContentHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff536347)
+[**DrmAddContentHandlers**](/windows-hardware/drivers/ddi/drmk/nf-drmk-drmaddcontenthandlers)
 
-[**DrmCreateContentMixed**](https://msdn.microsoft.com/library/windows/hardware/ff536348)
+[**DrmCreateContentMixed**](/windows-hardware/drivers/ddi/drmk/nf-drmk-drmcreatecontentmixed)
 
-[**DrmDestroyContent**](https://msdn.microsoft.com/library/windows/hardware/ff536349)
+[**DrmDestroyContent**](/windows-hardware/drivers/ddi/drmk/nf-drmk-drmdestroycontent)
 
-[**DrmForwardContentToDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff536351)
+[**DrmForwardContentToDeviceObject**](/windows-hardware/drivers/ddi/drmk/nf-drmk-drmforwardcontenttodeviceobject)
 
-[**DrmForwardContentToFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff536352)
+[**DrmForwardContentToFileObject**](/windows-hardware/drivers/ddi/drmk/nf-drmk-drmforwardcontenttofileobject)
 
-[**DrmForwardContentToInterface**](https://msdn.microsoft.com/library/windows/hardware/ff536353)
+[**DrmForwardContentToInterface**](/windows-hardware/drivers/ddi/drmk/nf-drmk-drmforwardcontenttointerface)
 
-[**DrmGetContentRights**](https://msdn.microsoft.com/library/windows/hardware/ff536354)
+[**DrmGetContentRights**](/windows-hardware/drivers/ddi/drmk/nf-drmk-drmgetcontentrights)
 
 In addition, this section describes the following macro:
 
-[**DEFINE\_DRMRIGHTS\_DEFAULT**](https://msdn.microsoft.com/library/windows/hardware/ff536254)
+[**DEFINE\_DRMRIGHTS\_DEFAULT**](/previous-versions/ff536254(v=vs.85))
 
  
-
- 
-
-
-
-
 

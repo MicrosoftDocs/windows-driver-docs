@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Receiving Data over a Datagram Socket
 
 
-After a Winsock Kernel (WSK) application has bound a datagram socket to a local transport address it can receive datagrams over the socket. A WSK application receives a datagram over a datagram socket by calling the [**WskReceiveFrom**](https://msdn.microsoft.com/library/windows/hardware/ff571141) function.
+After a Winsock Kernel (WSK) application has bound a datagram socket to a local transport address it can receive datagrams over the socket. A WSK application receives a datagram over a datagram socket by calling the [**WskReceiveFrom**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from) function.
 
 The following code example shows how a WSK application can receive a datagram over a datagram socket.
 
@@ -124,12 +124,12 @@ NTSTATUS
 }
 ```
 
-As an alternative to calling the [**WskReceiveFrom**](https://msdn.microsoft.com/library/windows/hardware/ff571141) function to receive each datagram over a datagram socket, a WSK application can enable the [*WskReceiveFromEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571142) event callback function on the socket. If a WSK application enables the *WskReceiveFromEvent* event callback function on a datagram socket, the WSK subsystem calls the socket's *WskReceiveFromEvent* event callback function whenever new datagrams are received on the socket. For more information about enabling a datagram socket's *WskReceiveFromEvent* event callback function, see [Enabling and Disabling Event Callback Functions](enabling-and-disabling-event-callback-functions.md).
+As an alternative to calling the [**WskReceiveFrom**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from) function to receive each datagram over a datagram socket, a WSK application can enable the [*WskReceiveFromEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from_event) event callback function on the socket. If a WSK application enables the *WskReceiveFromEvent* event callback function on a datagram socket, the WSK subsystem calls the socket's *WskReceiveFromEvent* event callback function whenever new datagrams are received on the socket. For more information about enabling a datagram socket's *WskReceiveFromEvent* event callback function, see [Enabling and Disabling Event Callback Functions](enabling-and-disabling-event-callback-functions.md).
 
 The following code example shows how a WSK application can receive datagrams by the WSK subsystem by calling a datagram socket's *WskReceiveFromEvent* event callback function.
 
 ```C++
-// A datagram socket&#39;s WskReceiveFromEvent
+// A datagram socket's WskReceiveFromEvent
 // event callback function
 NTSTATUS WSKAPI
   WskReceiveFromEvent(
@@ -167,13 +167,7 @@ NTSTATUS WSKAPI
 }
 ```
 
-If a datagram socket's [*WskReceiveFromEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571142) event callback function does not retrieve all of the datagrams from the list of [**WSK\_DATAGRAM\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff571164) structures pointed to by the *DataIndication* parameter, it can retain the list for further processing by returning STATUS\_PENDING. In this situation, the WSK application must call the [**WskRelease**](https://msdn.microsoft.com/library/windows/hardware/ff571144) function to release the list of WSK\_DATAGRAM\_INDICATION structures back to the WSK subsystem after it has completed retrieving all of the datagrams from the structures in the list.
+If a datagram socket's [*WskReceiveFromEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from_event) event callback function does not retrieve all of the datagrams from the list of [**WSK\_DATAGRAM\_INDICATION**](/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_datagram_indication) structures pointed to by the *DataIndication* parameter, it can retain the list for further processing by returning STATUS\_PENDING. In this situation, the WSK application must call the [**WskRelease**](/previous-versions/windows/hardware/drivers/ff571144(v=vs.85)) function to release the list of WSK\_DATAGRAM\_INDICATION structures back to the WSK subsystem after it has completed retrieving all of the datagrams from the structures in the list.
 
  
-
- 
-
-
-
-
 

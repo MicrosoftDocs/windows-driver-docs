@@ -18,7 +18,6 @@ ms.localizationpriority: medium
 
 # WinDbg Command-Line Options
 
-
 First-time users of WinDbg should begin with the [Debugging Using WinDbg](debugging-using-windbg.md) section.
 
 The WinDbg command line uses the following syntax:
@@ -100,7 +99,7 @@ After this action is attempted, a success or failure message is displayed. If **
 The **-I** parameter must not be used with any other parameters. This command will not actually start WinDbg, although a WinDbg window may appear for a moment.
 
 <span id="_______-IA_S_"></span><span id="_______-ia_s_"></span> **-IA**\[**S**\]  
-Associates WinDbg with the file extensions .dmp, .mdmp, and .wew in the registry. After this action is attempted, a success or failure message is displayed. If **S** is included, this procedure is done silently if it is successful; only failure messages are displayed. After this association is made, double-clicking a file with one of these extensions will start WinDbg.
+Associates WinDbg with the file extensions .dmp, .mdmp, and .wew in the registry. After this action is attempted, a success or failure message is displayed. If **S** is included, this procedure is done silently if it is successful; only failure messages are displayed. After this association is made, selecting and holding (or right-clicking) a file with one of these extensions will start WinDbg.
 
 The **-IA** parameter must not be used with any other parameters. This command will not actually start WinDbg, although a WinDbg window may appear for a moment.
 

@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 # Evaluating a Control Method Without Input Arguments
 
 
-To synchronously evaluate a control method that does not take input arguments, a driver for a device sends an [**IOCTL\_ACPI\_EVAL\_METHOD**](https://msdn.microsoft.com/library/windows/hardware/ff536148) request or an [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536149) request to the device. The general procedure for using both these requests is described in [Evaluating ACPI Control Methods Synchronously](evaluating-acpi-control-methods-synchronously.md). The specific difference between using these two requests is as follows:
+To synchronously evaluate a control method that does not take input arguments, a driver for a device sends an [**IOCTL\_ACPI\_EVAL\_METHOD**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method) request or an [**IOCTL\_ACPI\_EVAL\_METHOD\_EX**](/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method_ex) request to the device. The general procedure for using both these requests is described in [Evaluating ACPI Control Methods Synchronously](evaluating-acpi-control-methods-synchronously.md). The specific difference between using these two requests is as follows:
 
--   If the control method is an immediate child object of the device, the driver sends an IOCTL\_ACPI\_EVAL\_METHOD request and supplies an [**ACPI\_EVAL\_INPUT\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff536115) input structure.
+-   If the control method is an immediate child object of the device, the driver sends an IOCTL\_ACPI\_EVAL\_METHOD request and supplies an [**ACPI\_EVAL\_INPUT\_BUFFER**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_eval_input_buffer_v1) input structure.
 
--   If the control method is a child object in the ACPI namespace of the device, but is not an immediate child object of the device, the driver sends an IOCTL\_ACPI\_EVAL\_METHOD\_EX request and supplies an [**ACPI\_EVAL\_INPUT\_BUFFER\_EX**](https://msdn.microsoft.com/library/windows/hardware/ff536118) structure.
+-   If the control method is a child object in the ACPI namespace of the device, but is not an immediate child object of the device, the driver sends an IOCTL\_ACPI\_EVAL\_METHOD\_EX request and supplies an [**ACPI\_EVAL\_INPUT\_BUFFER\_EX**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_eval_input_buffer_v1_ex) structure.
 
 The example *GetAbcData* function that is provided in this topic shows how a driver for a device can use an IOCTL\_ACPI\_EVAL\_METHOD request to evaluate a control method named 'ABCD' that the device supports. The 'ABCD' control method is an immediate child of the device in the ACPI namespace and does not take input arguments or return output arguments.
 
@@ -31,13 +31,13 @@ If the 'ABCD' control method was not an immediate child object, the required cha
     inputBuffer.Signature = ACPI_EVAL_INPUT_BUFFER_SIGNATURE;
 ```
 
-*GetAbcData* also allocates an [**ACPI\_EVAL\_OUTPUT\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff536123) structure *outputBuffer*, but does not set any of the members of *outputBuffer*.
+*GetAbcData* also allocates an [**ACPI\_EVAL\_OUTPUT\_BUFFER**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_eval_output_buffer_v1) structure *outputBuffer*, but does not set any of the members of *outputBuffer*.
 
 *GetAbcData* then calls a driver-supplied function named [SendDownStreamIrp](senddownstreamirp-function.md) that performs the following:
 
-1.  Calls [**IoBuildDeviceIoControlRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548318) to build the request.
+1.  Calls [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest) to build the request.
 
-2.  Calls [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336) to send the request down the device stack.
+2.  Calls [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) to send the request down the device stack.
 
 3.  Waits for the I/O manager to signal the driver that the lower-level drivers completed request.
 
@@ -49,7 +49,7 @@ If the 'ABCD' control method was not an immediate child object, the required cha
 
 3.  Processes the output arguments that the ACPI driver passed back to the driver.
 
-Although this step is not included in the sample code, the driver should also call [**IoCompleteRequest**](https://msdn.microsoft.com/library/windows/hardware/ff548343) after processing the output data to complete the pending IOCTL\_ACPI\_EVAL\_METHOD request or IOCTL\_ACPI\_EVAL\_METHOD request that the driver sent to evaluate a control method.
+Although this step is not included in the sample code, the driver should also call [**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) after processing the output data to complete the pending IOCTL\_ACPI\_EVAL\_METHOD request or IOCTL\_ACPI\_EVAL\_METHOD request that the driver sent to evaluate a control method.
 
 The ACPI data structures and constants used in the following example are defined in *Acpiioct.h*.
 
@@ -124,9 +124,4 @@ Return Value:
 ```
 
  
-
- 
-
-
-
 

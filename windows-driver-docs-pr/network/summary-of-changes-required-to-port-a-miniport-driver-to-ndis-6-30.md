@@ -27,7 +27,7 @@ For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](i
 
      
 
--   In NDIS 6.30, NDIS can call [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) twice in parallel if there are two adapters plugged into the system at the same time or during system startup. Be sure to test your miniport driver under this "parallel startup" condition.
+-   In NDIS 6.30, NDIS can call [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) twice in parallel if there are two adapters plugged into the system at the same time or during system startup. Be sure to test your miniport driver under this "parallel startup" condition.
 
 ## General Porting Requirements
 
@@ -36,14 +36,14 @@ For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](i
 -   For all structures that were updated for NDIS 6.30, miniport drivers need to update the **Header** member of the structure with the correct **Revision** and **Size** values. For more information, see [Using NDIS 6.30 Data Structures](using-ndis-6-30-data-structures.md).
 -   All miniport drivers should implement the no-pause-on-suspend feature. For more information, see:
     -   [Power Management Enhancements in NDIS 6.30](power-management-enhancements-in-ndis-6-30.md)
-    -   [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565934)
-    -   [**NET\_PNP\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff568751)
-    -   [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780)
+    -   [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes)
+    -   [**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event)
+    -   [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md)
 
 ## Wi-Fi Direct Miniport Drivers
 
 
-During [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389), a Wi-Fi Direct-capable miniport driver must initialize the default 802.11 MAC entity. It must also report its Wi-Fi Direct and Virtual Wi-Fi capabilities using the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function.
+During [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize), a Wi-Fi Direct-capable miniport driver must initialize the default 802.11 MAC entity. It must also report its Wi-Fi Direct and Virtual Wi-Fi capabilities using the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 **Note**  The driver is not required to register with NDIS the NDIS port corresponding to the default MAC entity.
 
@@ -57,10 +57,4 @@ For USB-based Mobile Broadband devices, Windows 8 provides a class driver that 
 If your USB-based WWAN miniport driver cannot implement the MB class driver, it must at least implement the [NDIS Selective Suspend](ndis-selective-suspend.md) feature.
 
  
-
- 
-
-
-
-
 

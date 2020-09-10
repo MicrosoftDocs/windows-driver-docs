@@ -68,7 +68,7 @@ class DSM_Load_Balance_Policy
     uint32 Reserved;
 
     //
-    // Paths&#39; array.
+    // Paths' array.
     //
     [WmiDataId(5),
      WmiSizeIs("DSMPathCount"),
@@ -78,13 +78,7 @@ class DSM_Load_Balance_Policy
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_Load\_Balance\_Policy**](https://msdn.microsoft.com/library/windows/hardware/ff552696) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_Load\_Balance\_Policy**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_load_balance_policy) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -40,9 +40,9 @@ The following figure shows the item tree for a scanner, and the categories in th
 
 In the preceding figure, the tree on the left represents the scanner item tree. The balloons on the right contain the categories in the WIA\_IPA\_ITEM\_CATEGORY property that such a device must set.
 
-For a complete list of all categories defined by WIA and information about valid WIA item flags for each category, see [**WIA\_IPA\_ITEM\_CATEGORY**](https://msdn.microsoft.com/library/windows/hardware/ff551581).
+For a complete list of all categories defined by WIA and information about valid WIA item flags for each category, see [**WIA\_IPA\_ITEM\_CATEGORY**](./wia-ipa-item-category.md).
 
-For a complete list of all WIA item flags see [**WIA\_IPA\_ITEM\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff551585).
+For a complete list of all WIA item flags see [**WIA\_IPA\_ITEM\_FLAGS**](./wia-ipa-item-flags.md).
 
 The following code example demonstrates how an application could use the combination of the WIA\_IPA\_ITEM\_FLAGS and WIA\_IPA\_ITEM\_CATEGORY properties for classifying a WIA item found in the WIA item tree.
 
@@ -108,9 +108,4 @@ if (hr == S_OK)
 ```
 
  
-
- 
-
-
-
 

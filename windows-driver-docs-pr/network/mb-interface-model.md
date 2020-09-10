@@ -1,12 +1,12 @@
 ---
-title: MB Interface Model
+title: MB Interface Model Overview
 description: This section provides information for mobile broadband devices that are implemented based on the Mobile Broadband Interface Model (MBIM) specification.
 ms.assetid: B1C6D5F4-63E2-4C46-8038-71B8144AB474
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# MB Interface Model
+# MB Interface Model Overview
 
 
 This section provides information for mobile broadband devices that are implemented based on the Mobile Broadband Interface Model (MBIM) specification.
@@ -23,14 +23,14 @@ These scenarios are discussed in more detail throughout the MB Interface Model t
 
 *Microsoft OS compatible IDs*
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
+<table>  
+<colgroup>  
+<col width="33%" />  
+<col width="33%" />  
+<col width="33%" />  
+</colgroup>  
+<thead>  
+<tr class="header">  
 <th align="left">Microsoft OS Compatible ID</th>
 <th align="left">Microsoft OS Sub Compatible ID</th>
 <th align="left">Required for Scenario</th>
@@ -38,22 +38,22 @@ These scenarios are discussed in more detail throughout the MB Interface Model t
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>&quot;CDC_WMC&quot;</p></td>
+<td align="left"><p>"CDC_WMC"</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Loading USBCCGP on composite devices that use WMC UFD for grouping interfaces into functions</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;MBIM&quot;</p></td>
+<td align="left"><p>"MBIM"</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>Loading MBCD on MBIM backward-compatible function</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p>&quot;ALTRCFG&quot;</p></td>
+<td align="left"><p>"ALTRCFG"</p></td>
 <td align="left"><p>Configuration number in ASCII</p></td>
 <td align="left"><p>Identity morphing with IADs</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>&quot;WMCALTR&quot;</p></td>
+<td align="left"><p>"WMCALTR"</p></td>
 <td align="left"><p>Configuration number in ASCII</p></td>
 <td align="left"><p>Identity morphing with WMC UFD</p></td>
 </tr>

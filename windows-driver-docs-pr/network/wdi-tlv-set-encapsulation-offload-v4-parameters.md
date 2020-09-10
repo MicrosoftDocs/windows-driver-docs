@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS
 
 
-WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS is a TLV that is used by [OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925930) to indicate if IPv4 offloading should be started.
+WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS is a TLV that is used by [OID\_WDI\_SET\_ENCAPSULATION\_OFFLOAD](./oid-wdi-set-encapsulation-offload.md) to indicate if IPv4 offloading should be started.
 
 ## TLV Type
 
@@ -59,12 +59,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OFFLOAD\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff566706)
+[**NDIS\_OFFLOAD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
 
  
-
- 
-
-
-
 

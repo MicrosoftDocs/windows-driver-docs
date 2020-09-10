@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 
 
 
-A *button capability array* contains information about the button usages supported by a [top-level collection](top-level-collections.md) for a specific type of HID report. Information about a collection's capability is contained in its [**HIDP\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff539697) structure.
+A *button capability array* contains information about the button usages supported by a [top-level collection](top-level-collections.md) for a specific type of HID report. Information about a collection's capability is contained in its [**HIDP\_CAPS**](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_caps) structure.
 
-A user-mode application or kernel-mode driver uses one of the following [HIDClass support routines](https://msdn.microsoft.com/library/windows/hardware/ff538865) to obtain button capability information:
+A user-mode application or kernel-mode driver uses one of the following [HIDClass support routines](/windows-hardware/drivers/ddi/index) to obtain button capability information:
 
--   [**HidP\_GetButtonCaps**](https://msdn.microsoft.com/library/windows/hardware/ff539707) returns a button capability array describing all the button usages contained in a specified report type.
+-   [**HidP\_GetButtonCaps**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getbuttoncaps) returns a button capability array describing all the button usages contained in a specified report type.
 
--   [**HidP\_GetSpecificButtonCaps**](https://msdn.microsoft.com/library/windows/hardware/ff539733) filters the button capability information it returns by a caller-specified usage page, usage ID, and [link collection](link-collections.md).
+-   [**HidP\_GetSpecificButtonCaps**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificbuttoncaps) filters the button capability information it returns by a caller-specified usage page, usage ID, and [link collection](link-collections.md).
 
-A button capability array contains [**HIDP\_BUTTON\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff539693) structures, each one of which contains the following information about a [HID usage](hid-usages.md) or [usage range](hid-usages.md#usage-range):
+A button capability array contains [**HIDP\_BUTTON\_CAPS**](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_button_caps) structures, each one of which contains the following information about a [HID usage](hid-usages.md) or [usage range](hid-usages.md#usage-range):
 
 -   The usage page for the usage or usage range
 
@@ -153,9 +153,4 @@ The HID parser assigns a [data index](data-indices.md) to each usage associated 
  
 
  
-
- 
-
-
-
 

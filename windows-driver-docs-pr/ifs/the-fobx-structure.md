@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_the_fobx_structure_if"></span><span id="DDK_THE_FOBX_STRUCTURE_IF"></span>
 
 
-A file object extension (FOBX) structure is an RDBSS extension to the [**FILE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff545834) structure. The FOBX structure is pointed to by the **FileObjectExtension** field in the file object. An FOBX structure contains the following:
+A file object extension (FOBX) structure is an RDBSS extension to the [**FILE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure. The FOBX structure is pointed to by the **FileObjectExtension** field in the file object. An FOBX structure contains the following:
 
 -   A signature and reference count
 
@@ -50,9 +50,4 @@ The FOBX flags are split into two groups:
 The flags visible to network mini-redirectors consist of the lower 16 bits of the possible FOBX flags. The upper 16 bits are reserved for use internally by RDBSS.
 
  
-
- 
-
-
-
 

@@ -28,7 +28,7 @@ Windows Display Driver Model (WDDM) drivers in Windows 8 require INF changes to
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="updated-feature-score-directive.md" data-raw-source="[Updated feature score directive in Windows 8](updated-feature-score-directive.md)">Updated feature score directive in Windows 8</a></p></td>
-<td align="left"><p>The updated feature score directive is a general installation setting that&#39;s required for all Windows 8 drivers that follow the WDDM.</p></td>
+<td align="left"><p>The updated feature score directive is a general installation setting that's required for all Windows 8 drivers that follow the WDDM.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="driver-matching-criteria.md" data-raw-source="[Driver matching criteria](driver-matching-criteria.md)">Driver matching criteria</a></p></td>
@@ -52,7 +52,7 @@ Windows Display Driver Model (WDDM) drivers in Windows 8 require INF changes to
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="copy-flags-to-support-pnp-stop-directive.md" data-raw-source="[Copy flags to support PnP stop directive](copy-flags-to-support-pnp-stop-directive.md)">Copy flags to support PnP stop directive</a></p></td>
-<td align="left"><p>The Plug and Play (PnP) stop directive file section flag is required for the WDDM to support driver upgrades that don&#39;t require a reboot.</p></td>
+<td align="left"><p>The Plug and Play (PnP) stop directive file section flag is required for the WDDM to support driver upgrades that don't require a reboot.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="driver-services-start-type-directive.md" data-raw-source="[Driver\services start type directive](driver-services-start-type-directive.md)">Driver\services start type directive</a></p></td>

@@ -23,7 +23,7 @@ The parallel port function driver does the following:
 
     The format of the device name for the parallel port is "\\Device\\ParallelPortx", where x is an integer value for the port number. The parallel port function driver uses the PortName entry value (REG\_SZ) under the Plug and Play registry key for the parallel port to determine the port number. Note that if PortName has the format "LPTn", where n is the number of the port, then x in "ParallePortx" is set to the value of (n -1). For example, "ParallelPort0" is associated with "LPT1". If PortName does not have the correct format, a device object is not created.
 
-    Note that a "ParallelPortx" device name is not guaranteed. Microsoft recommends using [**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526) to be notified of the arrival of a GUID\_PARALLEL\_DEVICE device interface.
+    Note that a "ParallelPortx" device name is not guaranteed. Microsoft recommends using [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification) to be notified of the arrival of a GUID\_PARALLEL\_DEVICE device interface.
 
 -   Registers and enables a GUID\_PARALLEL\_DEVICE interface for the parallel port
 
@@ -46,9 +46,4 @@ The parallel port function driver does the following:
     Each parallel port has its own work queue. The parallel port function driver queues only allocate and select device requests. If the port is already allocated when the parallel port function driver receives a new allocate request or select request, it queues the request.
 
  
-
- 
-
-
-
 

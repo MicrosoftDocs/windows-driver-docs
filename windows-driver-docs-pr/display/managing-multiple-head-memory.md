@@ -14,11 +14,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_managing_multiple_head_memory_gg"></span><span id="DDK_MANAGING_MULTIPLE_HEAD_MEMORY_GG"></span>
 
 
-Setting the DDSCAPS2\_ADDITIONALPRIMARY capability bit in the **dwCaps2** member of the [**DDSCAPS2**](https://msdn.microsoft.com/library/windows/hardware/ff550292) structure for each surface on the subordinate head notifies that head that these surfaces are the last surfaces that are allocated from the video memory assigned to that head. The subordinate head should then relinquish control of the allocation of its video memory to the master head because the subordinate head is guaranteed that it does not receive subsequent [*DdCreateSurface*](https://msdn.microsoft.com/library/windows/hardware/ff549263) calls for the lifetime of the application.
+Setting the DDSCAPS2\_ADDITIONALPRIMARY capability bit in the **dwCaps2** member of the [**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for each surface on the subordinate head notifies that head that these surfaces are the last surfaces that are allocated from the video memory assigned to that head. The subordinate head should then relinquish control of the allocation of its video memory to the master head because the subordinate head is guaranteed that it does not receive subsequent [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)) calls for the lifetime of the application.
 
 The driver must ensure that the master head is able to allocate memory that is associated with subordinate heads.
 
-When the runtime calls the driver's [*DdDestroySurface*](https://msdn.microsoft.com/library/windows/hardware/ff549281) function to destroy surfaces on the subordinate head in which the DDSCAPS2\_ADDITIONALPRIMARY capability bit is set, the driver is notified that the subordinate head is again in control of its video memory management.
+When the runtime calls the driver's [*DdDestroySurface*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) function to destroy surfaces on the subordinate head in which the DDSCAPS2\_ADDITIONALPRIMARY capability bit is set, the driver is notified that the subordinate head is again in control of its video memory management.
 
 For the most part, this choice of which head owns video memory is inherent in the existing DirectDraw process. Specifically:
 
@@ -33,10 +33,4 @@ For the most part, this choice of which head owns video memory is inherent in th
 -   Finally, note that the runtime guarantees that all heads in the group participate in the multiple-head scenario. Therefore, the driver must only maintain one bit of state indicating whether it is currently in multiple-head mode.
 
  
-
- 
-
-
-
-
 

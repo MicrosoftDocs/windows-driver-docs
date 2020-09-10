@@ -28,11 +28,11 @@ These four object types all have the following characteristics:
 
 -   To obtain information about an object, TPS components can call a *query* routine.
 
--   To close an object handle, TPS components call [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417).
+-   To close an object handle, TPS components call [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose).
 
 KTM assigns an identifier GUID to each object. For transaction objects, this identifier GUID is also known as a *unit of work (UOW) identifier* that clients can specify. TPS components can use the identifier GUIDs to track objects. A TPS component that creates an object can pass the object's identifier GUID to another component so that the latter component can open a handle to the object.
 
-Any TPS component that uses KTM can call [**ZwEnumerateTransactionObject**](https://msdn.microsoft.com/library/windows/hardware/ff566450) to enumerate KTM objects, but most components do not have to call this routine.
+Any TPS component that uses KTM can call [**ZwEnumerateTransactionObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntenumeratetransactionobject) to enumerate KTM objects, but most components do not have to call this routine.
 
 This section contains the following topics:
 
@@ -45,9 +45,4 @@ This section contains the following topics:
 [Enlistment Objects](enlistment-objects.md)
 
  
-
- 
-
-
-
 

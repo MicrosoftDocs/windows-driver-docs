@@ -46,7 +46,7 @@ Each item of security information is designated by a bit flag. The following val
 <tbody>
 <tr class="odd">
 <td align="left"><p>DACL_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the object&#39;s DACL is being set or queried.</p>
+<td align="left"><p>Indicates that the object's DACL is being set or queried.</p>
 <p>For the following items, the DACL is queried:</p>
 <p>IRP_MJ_QUERY_SECURITY</p>
 <p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
@@ -124,7 +124,7 @@ Each item of security information is designated by a bit flag. The following val
 </tr>
 <tr class="even">
 <td align="left"><p>SACL_SECURITY_INFORMATION</p></td>
-<td align="left"><p>Indicates that the object&#39;s SACL is being set or queried.</p>
+<td align="left"><p>Indicates that the object's SACL is being set or queried.</p>
 <p>For the following items, the SACL is queried:</p>
 <p>IRP_MJ_QUERY_SECURITY</p>
 <p>FLT_PARAMETERS for IRP_MJ_QUERY_SECURITY</p>
@@ -156,26 +156,19 @@ Wdm.h (include Wdm.h)
 ## Related topics
 
 
-[**ACL**](https://msdn.microsoft.com/library/windows/hardware/ff538866)
+[**ACL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl)
 
-[**SECURITY\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff556610)
+[**SECURITY\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
 
-[**SeQuerySecurityDescriptorInfo**](https://msdn.microsoft.com/library/windows/hardware/ff556692)
+[**SeQuerySecurityDescriptorInfo**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sequerysecuritydescriptorinfo)
 
-[**SeSetSecurityDescriptorInfo**](https://msdn.microsoft.com/library/windows/hardware/ff556709)
+[**SeSetSecurityDescriptorInfo**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetsecuritydescriptorinfo)
 
-[**SeSetSecurityDescriptorInfoEx**](https://msdn.microsoft.com/library/windows/hardware/ff556712)
+[**SeSetSecurityDescriptorInfoEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetsecuritydescriptorinfoex)
 
-[**ZwQuerySecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff567066)
+[**ZwQuerySecurityObject**](/previous-versions/ff567066(v=vs.85))
 
-[**ZwSetSecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff567106)
-
- 
+[**ZwSetSecurityObject**](/previous-versions/ff567106(v=vs.85))
 
  
-
-
-
-
-
 

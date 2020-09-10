@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The VIDEO\_ENGINE\_TIMEOUT\_DETECTED bug check has a value of 0x00000141. This indicates that one of the display engines failed to respond in timely fashion.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## VIDEO\_ENGINE\_TIMEOUT\_DETECTED Parameters
 
@@ -35,7 +37,8 @@ The VIDEO\_ENGINE\_TIMEOUT\_DETECTED bug check has a value of 0x00000141. This i
 Remarks
 -------
 
-Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use .enumtag to view the data.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
+Secondary data of tag {270A33FD-3DA6-460D-BA89-3C1BAE21E39B} contains additional TDR related data. Use [**.enumtag**](-enumtag--enumerate-secondary-callback-data-.md) to view the data.
 
  
 

@@ -47,7 +47,7 @@ The KSPROPERTY\_AUDIO\_VOLUMELEVEL property specifies the volume level of a chan
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Node via Filter or Pin instance</p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537145" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537145)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY_AUDIO_CHANNEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)"><strong>KSNODEPROPERTY_AUDIO_CHANNEL</strong></a></p></td>
 <td align="left"><p>LONG</p></td>
 </tr>
 </tbody>
@@ -63,8 +63,8 @@ The property value is of type LONG and specifies the volume level of a channel i
 
 +2147483647 is +32767.99998474 decibels (gain).
 
-&gt; \[!Note\]
-&gt;  The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
+> [!NOTE]
+> The decibel range is represented by integer values from -2147483648 to +2147483647, where this scale has a resolution of 1/65536 decibel.
 
  
 
@@ -77,7 +77,7 @@ A KSPROPERTY\_AUDIO\_VOLUMELEVEL property request returns STATUS\_SUCCESS to ind
 Remarks
 -------
 
-The property descriptor for this property specifies a channel number. If the stream that passes through the volume node contains *n* channels, the channels are numbered 0 through *n*-1. For more information, see [Exposing Multichannel Nodes](https://msdn.microsoft.com/library/windows/hardware/ff536380).
+The property descriptor for this property specifies a channel number. If the stream that passes through the volume node contains *n* channels, the channels are numbered 0 through *n*-1. For more information, see [Exposing Multichannel Nodes](./exposing-multichannel-nodes.md).
 
 Requirements
 ------------
@@ -98,20 +98,13 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[Customizing Default Audio Volume Settings](https://msdn.microsoft.com/library/windows/hardware/jj870738)
+[Customizing Default Audio Volume Settings](./customizing-default-audio-volume-settings.md)
 
-[Default Audio Volume Settings](https://msdn.microsoft.com/library/windows/hardware/ff536251)
+[Default Audio Volume Settings](./default-audio-volume-settings.md)
 
-[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](https://msdn.microsoft.com/library/windows/hardware/ff537145)
+[**KSNODEPROPERTY\_AUDIO\_CHANNEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty_audio_channel)
 
 [**KSNODETYPE\_VOLUME**](ksnodetype-volume.md)
 
  
-
- 
-
-
-
-
-
 

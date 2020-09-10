@@ -28,9 +28,9 @@ To use mf.sys, a multifunction device must meet the following requirements:
 
 -   The device's underlying bus must have a multifunction standard.
 
--   The [**DEVICE\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) of the child functions must be identical and must match those of the parent device. When queried for the device capabilities of a child function ([**IRP\_MN\_QUERY\_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664)), the mf.sys driver reports the device capabilities of the parent device.
+-   The [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) of the child functions must be identical and must match those of the parent device. When queried for the device capabilities of a child function ([**IRP\_MN\_QUERY\_CAPABILITIES**](../kernel/irp-mn-query-capabilities.md)), the mf.sys driver reports the device capabilities of the parent device.
 
--   The driver for the bus on which the multifunction device resides, such as pcmcia.sys, must handle any [**IRP\_MN\_READ\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551727) and [**IRP\_MN\_WRITE\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551769) requests. The mf.sys driver just passes these IRPs to the parent bus driver.
+-   The driver for the bus on which the multifunction device resides, such as pcmcia.sys, must handle any [**IRP\_MN\_READ\_CONFIG**](../kernel/irp-mn-read-config.md) and [**IRP\_MN\_WRITE\_CONFIG**](../kernel/irp-mn-write-config.md) requests. The mf.sys driver just passes these IRPs to the parent bus driver.
 
 -   The functions must be independent: they cannot have start-order dependencies; the resource requirements for one function cannot be expressed in terms of the resources of another function (for example, function1 uses I/O port X and function2 uses portX + 200); and each function must be able to operate as a separate device, even if it is serviced by the same driver(s) as another function.
 
@@ -49,7 +49,7 @@ ClassGUID  = {4d36e971-e325-11ce-bfc1-08002be10318} ; GUID for MF
 ; ...
 ; ...
 [ControlFlags]
-ExcludeFromSelect = *   ; don&#39;t include PnP devices in a displayed list of 
+ExcludeFromSelect = *   ; don't include PnP devices in a displayed list of 
                         ; devices available for manual installation
 [Manufacturer]
 ; ...
@@ -91,9 +91,4 @@ The PnP manager treats each child device like a typical device, locating INF fil
 The illustration focuses on the function drivers and parent bus drivers and their associated FDOs and PDOs. Any filter drivers (and filter DOs) are omitted for simplicity.
 
  
-
- 
-
-
-
 

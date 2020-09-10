@@ -51,32 +51,25 @@ If you are using an INF file, follow these steps:
     If you use this flag, Windows attempts to replace the driver file on disk. For more info, see [INF CopyFiles Directive](inf-copyfiles-directive.md).
 
 2.  If the INF is for a PnP driver, during device installation Windows attempts to unload the running driver and restart the devices that use it, in order to pick up the new version of the driver. If that fails, device installation indicates that the system should be rebooted.
-3.  If the INF is not for a PnP driver and you are using a method such as [**InstallHInfSection**](https://msdn.microsoft.com/library/windows/desktop/aa376957) to process the INF, then manually stop and restart the driver:
+3.  If the INF is not for a PnP driver and you are using a method such as [**InstallHInfSection**](/windows/desktop/api/setupapi/nf-setupapi-installhinfsectiona) to process the INF, then manually stop and restart the driver:
     -   Close all open handles to the driver and then stop the driver using one of the following:
 
         -   **sc.exe stop** *&lt;mydriver&gt;*
         -   **ControlService(SERVICE_CONTROL_STOP)**
 
-        For more info, see [**ControlService function**](https://msdn.microsoft.com/library/windows/desktop/ms682108).
+        For more info, see [**ControlService function**](/windows/desktop/api/winsvc/nf-winsvc-controlservice).
 
 If you are not using an INF file, use these steps:
 
 1.  Stop the driver, as described above. Replace the old driver binary file with the new one.
-2.  If you can’t stop the driver, rename the existing file, copy the new file into place, and set up the existing file to be deleted in the future (for example, using [**MoveFileEx**](https://msdn.microsoft.com/library/windows/desktop/aa365240) with the **MOVEFILE_DELAY_UNTIL_REBOOT** flag). In order to start using the new version of the driver, the system will need to be restarted.
+2.  If you can’t stop the driver, rename the existing file, copy the new file into place, and set up the existing file to be deleted in the future (for example, using [**MoveFileEx**](/windows/desktop/api/winbase/nf-winbase-movefileexa) with the **MOVEFILE_DELAY_UNTIL_REBOOT** flag). In order to start using the new version of the driver, the system will need to be restarted.
 
 ## Related topics
 
 
-[File-Backed and Page-File-Backed Sections](https://msdn.microsoft.com/library/windows/hardware/ff545754)
+[File-Backed and Page-File-Backed Sections](../kernel/file-backed-and-page-file-backed-sections.md)
 
-[What Determines When a Driver Is Loaded](https://msdn.microsoft.com/library/windows/hardware/ff557272)
-
- 
+[What Determines When a Driver Is Loaded](../ifs/what-determines-when-a-driver-is-loaded.md)
 
  
-
-
-
-
-
 

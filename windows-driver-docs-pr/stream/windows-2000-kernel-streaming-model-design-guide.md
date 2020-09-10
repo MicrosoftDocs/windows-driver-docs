@@ -20,18 +20,13 @@ ms.localizationpriority: medium
 
 The following sections describe the Windows 2000 Kernel Streaming Model:
 
-[Streaming Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff568275)
+[Streaming Minidrivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [USBCAMD Minidriver Library](usbcamd-minidriver-library.md)
 
-[DVD Decoder Minidrivers](https://msdn.microsoft.com/library/windows/hardware/ff558742)
+[DVD Decoder Minidrivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [Kernel Streaming](kernel-streaming.md)
 
  
-
- 
-
-
-
 

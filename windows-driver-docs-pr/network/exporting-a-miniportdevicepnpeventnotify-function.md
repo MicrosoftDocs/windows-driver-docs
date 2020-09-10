@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS calls a miniport driver's [*MiniportDevicePnPEventNotify*](https://msdn.microsoft.com/library/windows/hardware/ff559369) function to notify the miniport driver of the following Plug and Play (PnP) events:
+NDIS calls a miniport driver's [*MiniportDevicePnPEventNotify*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_device_pnp_event_notify) function to notify the miniport driver of the following Plug and Play (PnP) events:
 
 -   The surprise removal of a NIC that the miniport driver controls.
 
@@ -29,10 +29,4 @@ If a miniport driver does not export a *MiniportDevicePnPEventNotify* function, 
 All NDIS 6.0 and later miniport drivers *must* export a *MiniportDevicePnPEventNotify* function. In addition, all miniport drivers that have a WDM lower edge *should* export a *MiniportDevicePnPEventNotify* function.
 
  
-
- 
-
-
-
-
 

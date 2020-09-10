@@ -43,7 +43,7 @@ The vendor-named section referenced by the **AddSock** directive must contain th
 </tr>
 <tr class="even">
 <td align="left"><p>HelperDllName</p></td>
-<td align="left"><p>A REG_EXPAND_SZ value that specifies the path to the Windows Sockets helper (WSH) DLL for the protocol. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566260" data-raw-source="[WSH DLL Function Summary](https://msdn.microsoft.com/library/windows/hardware/ff566260)">WSH DLL Function Summary</a>.</p></td>
+<td align="left"><p>A REG_EXPAND_SZ value that specifies the path to the Windows Sockets helper (WSH) DLL for the protocol. For more information, see <a href="https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566260(v=vs.85)" data-raw-source="[WSH DLL Function Summary](/previous-versions/windows/hardware/network/ff566260(v=vs.85))">WSH DLL Function Summary</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>MaxSockAddrLength</p></td>
@@ -216,10 +216,4 @@ ProviderId = "GUID"
 ```
 
  
-
- 
-
-
-
-
 

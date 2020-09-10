@@ -23,7 +23,7 @@ Returns the digital certificate used by the graphics hardware.
 
 ### <span id="Input_Parameters"></span><span id="input_parameters"></span><span id="INPUT_PARAMETERS"></span>Input Parameters
 
-The [**VIDEO\_REQUEST\_PACKET**](https://msdn.microsoft.com/library/windows/hardware/ff570547) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
+The [**VIDEO\_REQUEST\_PACKET**](/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet) (VRP) **InputBuffer** contains information passed from the display driver. For example, the display driver can pass a pointer to a COPP\_IO\_InputBuffer structure defined as follows:
 
 ```cpp
 typedef struct {
@@ -33,7 +33,7 @@ typedef struct {
 } COPP_IO_InputBuffer;
 ```
 
-The **ppThis** member points to a pointer to the COPP DirectX VA device object that is used to retrieve the hardware digital certificate. The **InputBuffer** member is not required. The **phr** member should be set to the value returned from the [*COPPKeyExchange*](https://msdn.microsoft.com/library/windows/hardware/ff539646) function.
+The **ppThis** member points to a pointer to the COPP DirectX VA device object that is used to retrieve the hardware digital certificate. The **InputBuffer** member is not required. The **phr** member should be set to the value returned from the [*COPPKeyExchange*](./coppkeyexchange.md) function.
 
 ### <span id="Output_Parameters"></span><span id="output_parameters"></span><span id="OUTPUT_PARAMETERS"></span>Output Parameters
 
@@ -41,7 +41,7 @@ The miniport driver returns an array of bytes in the VRP **OutputBuffer**. The a
 
 ### <span id="I_O_Status_Block"></span><span id="i_o_status_block"></span><span id="I_O_STATUS_BLOCK"></span>I/O Status Block
 
-The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff569732) structure to the value in the **OutputBufferLength** member of the VRP.
+The miniport driver sets the **Information** member of the [**STATUS\_BLOCK**](/windows-hardware/drivers/ddi/video/ns-video-_status_block) structure to the value in the **OutputBufferLength** member of the VRP.
 
 Requirements
 ------------
@@ -62,14 +62,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[*COPPKeyExchange*](https://msdn.microsoft.com/library/windows/hardware/ff539646)
+[*COPPKeyExchange*](./coppkeyexchange.md)
 
  
-
- 
-
-
-
-
-
 

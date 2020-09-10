@@ -73,7 +73,7 @@ You define a new GUID for an item the driver exports to other system components,
 
     Putting a GUID definition outside statements that prevent multiple inclusion does not cause multiple instances of the GUID in a driver because **DEFINE\_GUID** defines the GUID as an EXTERN\_C variable. Multiple declarations of an EXTERN variable are allowed as long as the types match.
 
-4.  When creating a GUID for a new [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509) or [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339), the following rules apply:
+4.  When creating a GUID for a new [device setup class](../install/overview-of-device-setup-classes.md) or [device interface class](../install/overview-of-device-interface-classes.md), the following rules apply:
     -   Do not use a single GUID to identify both a device setup class and a device interface class.
 
     -   When creating a symbolic name to associate with the GUID, use the following convention:
@@ -83,9 +83,4 @@ You define a new GUID for an item the driver exports to other system components,
         For device interface classes, use the format GUID\_DEVINTERFACE\_*XXX*.
 
  
-
- 
-
-
-
 

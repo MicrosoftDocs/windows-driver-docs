@@ -3,7 +3,7 @@ title: bp, bu, bm (Set Breakpoint)
 description: The bp, bu, and bm commands set one or more software breakpoints. You can combine locations, conditions, and options to set different kinds of software breakpoints.
 ms.assetid: 77d095fe-06d1-4842-ad49-8420ab4d5d72
 keywords: ["bp, bu, bm (Set Breakpoint) Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 05/13/2020
 topic_type:
 - apiref
 api_name:
@@ -55,9 +55,6 @@ Specifies breakpoint options. You can specify any number of the following option
 <span id="_1"></span>**/1**  
 Creates a "one-shot" breakpoint. After this breakpoint is triggered, it is deleted from the breakpoint list.
 
-<span id="_f_PredNum"></span><span id="_f_prednum"></span><span id="_F_PREDNUM"></span>**/f** *PredNum*  
-(Itanium-based only, user mode only) Specifies a predicate number. The breakpoint is predicated with the corresponding predicate register. (For example, **bp /f 4** *address* sets a breakpoint that is predicated with the **p4** predicate register.)
-
 <span id="_p_EProcess"></span><span id="_p_eprocess"></span><span id="_P_EPROCESS"></span>**/p** *EProcess*  
 (Kernel-mode only) Specifies a process that is associated with this breakpoint. *EProcess* should be the actual address of the EPROCESS structure, not the PID. The breakpoint is triggered only if it is encountered in the context of this process.
 
@@ -80,6 +77,28 @@ Activates the breakpoint only when the call stack depth is larger than *MinCallS
 (For **bm** only) Includes parameter list information in the symbol string that *SymbolString* defines.
 
 This feature enables you to set breakpoints on overloaded functions that have the same name but different parameter lists. For example, bm /( myFunc sets breakpoints on both **myFunc(int a)** and **myFunc(char a)**. Without "/(", a breakpoint that is set on **myFunc** fails because it does not indicate which **myFunc** function the breakpoint is intended for.
+
+<span id="_______dxObjectExpression______"></span><span id="_______dxObjectExpression______"></span><span id="_______DXOBJECTEXPRESSION______"></span> **/w dx object expression**
+Sets a conditional breakpoint based on the boolean value returned by dx object expression. The argument is a data model (dx) expression which evaluates to true (matches condition – break) or false (does not match condition – do not break).
+
+This example sets a conditional breakpoint based on the value of localVariable.
+
+```dbgcmd
+bp /w "localVariable == 4" mymodule!myfunction
+```
+
+This example shows how to set a breakpoint using JavaScript.
+
+```dbgcmd
+bp /w "@$scriptContents.myFunc(localVariable)" @rip
+```
+
+For more information on debugger objects, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md).
+
+> [!NOTE] 
+> The /w option is experimental and requires the latest version of the debugger. 
+
+
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the first byte of the instruction where the breakpoint is set. If you omit *Address*, the current instruction pointer is used. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
@@ -104,6 +123,8 @@ Any command that resumes program execution after a breakpoint (such as **g** or 
 
 <span id="_______SymbolPattern______"></span><span id="_______symbolpattern______"></span><span id="_______SYMBOLPATTERN______"></span> *SymbolPattern*   
 Specifies a pattern. The debugger tries to match this pattern to existing symbols and to set breakpoints on all pattern matches. *SymbolPattern* can contain a variety of wildcard characters and specifiers. For more information about this syntax, see [String Wildcard Syntax](string-wildcard-syntax.md). Because these characters are being matched to symbols, the match is not case sensitive, and a single leading underscore (\_) represents any quantity of leading underscores.
+
+
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 

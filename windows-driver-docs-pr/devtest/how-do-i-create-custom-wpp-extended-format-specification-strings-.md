@@ -34,7 +34,7 @@ To create the IPV6ADDR complex data type, add the following statements to the Lo
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>DEFINE_CPLX_TYPE(IPV6ADDR, WPP_LOGIPV6, in6_addr *, ItemIPV6Addr, &quot;s&quot;, _IPV6_, 0, 1);</code></pre></td>
+    <td align="left"><pre><code>DEFINE_CPLX_TYPE(IPV6ADDR, WPP_LOGIPV6, in6_addr *, ItemIPV6Addr, "s", _IPV6_, 0, 1);</code></pre></td>
     </tr>
     </tbody>
     </table>
@@ -55,7 +55,7 @@ To create the IPV6ADDR complex data type, add the following statements to the Lo
     </tbody>
     </table>
 
-    This statement defines the helper macro that is used to format the length/address pair of the IPV6 argument when it is passed to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function.
+    This statement defines the helper macro that is used to format the length/address pair of the IPV6 argument when it is passed to the [TraceMessage](/windows/win32/api/evntrace/nf-evntrace-tracemessage) function.
 
 In Visual Studio, open the properties page for your project. Under **WPP Tracing**, **File Options**, specify LocalWpp.ini as the **Additional Configuration file**. See [WPP Preprocessor](wpp-preprocessor.md) for more information.
 
@@ -85,7 +85,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </colgroup>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>DEFINE_CPLX_TYPE(HEXDUMP, WPP_LOGHEXDUMP, const xstr_t&, ItemHEXDump,&quot;s&quot;, _HEX_, 0, 2);</code></pre></td>
+    <td align="left"><pre><code>DEFINE_CPLX_TYPE(HEXDUMP, WPP_LOGHEXDUMP, const xstr_t&, ItemHEXDump,"s", _HEX_, 0, 2);</code></pre></td>
     </tr>
     </tbody>
     </table>
@@ -110,7 +110,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </tbody>
     </table>
 
-    This statement defines a structure that is used to save the length and address of a variable-length buffer. This structure is initialized in the LOG\_LENSTR macro, and is local to each invocation of [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) in which the HEXDUMP complex type is used within the *FormatString* parameter.
+    This statement defines a structure that is used to save the length and address of a variable-length buffer. This structure is initialized in the LOG\_LENSTR macro, and is local to each invocation of [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) in which the HEXDUMP complex type is used within the *FormatString* parameter.
 
 3.  <span codelanguage=""></span>
     <table>
@@ -124,7 +124,7 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </tbody>
     </table>
 
-    This statement defines the macro that is used to initialize an xstr\_t structure for the variable-length buffer. You must use this macro to pass the variable-length buffer in the *VariableList* parameter of [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918).
+    This statement defines the macro that is used to initialize an xstr\_t structure for the variable-length buffer. You must use this macro to pass the variable-length buffer in the *VariableList* parameter of [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
 
 4.  <span codelanguage=""></span>
     <table>
@@ -138,14 +138,14 @@ To create the HEXDUMP complex data type, add the following statements to the Loc
     </tbody>
     </table>
 
-    This statement defines the helper macro that is used to format the length/address pairs of the variable-length buffer argument when it is passed to the [TraceMessage](https://go.microsoft.com/fwlink/p/?linkid=179214) function.
+    This statement defines the helper macro that is used to format the length/address pairs of the variable-length buffer argument when it is passed to the [TraceMessage](/windows/win32/api/evntrace/nf-evntrace-tracemessage) function.
 
     Variable-length arguments require two length/address pairs. As a result, the WPP\_LOGHEXDUMP macro defines two calls to WPP\_LOGPAIR in the following way:
 
     -   The first call to WPP\_LOGPAIR passes the size of the variable-length buffer.
     -   The second call to WPP\_LOGPAIR passes the address of the buffer itself.
 
-    **Note**  This macro requires that an xstr\_t structure has been initialized for the variable-length buffer by a call to LOG\_LENSTR. As a result, you must pass the variable-length buffer to [**DoTraceMessage**](https://msdn.microsoft.com/library/windows/hardware/ff544918) through the LOG\_LENSTR macro.
+    **Note**  This macro requires that an xstr\_t structure has been initialized for the variable-length buffer by a call to LOG\_LENSTR. As a result, you must pass the variable-length buffer to [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)) through the LOG\_LENSTR macro.
 
      
 
@@ -159,8 +159,3 @@ DoTraceMessage(Noise, "HEXDUMP: %!HEXDUMP! ", LOG_LENSTR(sizeof(HexDump),(PCHAR)
 ```
 
 **Note**  You can create a complex type (HEXBYTES) for tracing variable-length buffers. This complex type can be specified by following the procedure that was used for the HEXDUMP complex type. 
-
-
-
-
-

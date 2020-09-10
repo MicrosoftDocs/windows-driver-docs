@@ -13,23 +13,17 @@ ms.localizationpriority: medium
 # Modifying a Resource List
 
 
-If a driver provides an [*EvtDeviceFilterAddResourceRequirements*](https://msdn.microsoft.com/library/windows/hardware/ff540870) callback function, it must also provide an [*EvtDeviceRemoveAddedResources*](https://msdn.microsoft.com/library/windows/hardware/ff540892) callback function. The *EvtDeviceRemoveAddedResources* callback function removes resources that the *EvtDeviceFilterAddResourceRequirements* callback function added so that the bus driver will not attempt to use them.
+If a driver provides an [*EvtDeviceFilterAddResourceRequirements*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_filter_resource_requirements) callback function, it must also provide an [*EvtDeviceRemoveAddedResources*](/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_remove_added_resources) callback function. The *EvtDeviceRemoveAddedResources* callback function removes resources that the *EvtDeviceFilterAddResourceRequirements* callback function added so that the bus driver will not attempt to use them.
 
 To modify the resource descriptors in a device's resource list, a driver should call the following methods:
 
--   [**WdfCmResourceListGetCount**](https://msdn.microsoft.com/library/windows/hardware/ff545687), to obtain the number of resource descriptors.
+-   [**WdfCmResourceListGetCount**](/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfcmresourcelistgetcount), to obtain the number of resource descriptors.
 
--   [**WdfCmResourceListGetDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff545688), to obtain access to a resource descriptor.
+-   [**WdfCmResourceListGetDescriptor**](/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfcmresourcelistgetdescriptor), to obtain access to a resource descriptor.
 
--   [**WdfCmResourceListRemove**](https://msdn.microsoft.com/library/windows/hardware/ff545704) and [**WdfCmResourceListRemoveByDescriptor**](https://msdn.microsoft.com/library/windows/hardware/ff545717), to remove a resource descriptor.
+-   [**WdfCmResourceListRemove**](/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfcmresourcelistremove) and [**WdfCmResourceListRemoveByDescriptor**](/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfcmresourcelistremovebydescriptor), to remove a resource descriptor.
 
 If the driver removes a resource, it must remove it from both the [raw and translated resource lists](raw-and-translated-resources.md).
 
  
-
- 
-
-
-
-
 

@@ -18,16 +18,9 @@ At the level of **DiagnoseLevelFirmwareImageDump** or **DiagnoseLevelDriverState
 ## Related topics
 
 
-[**eDiagnoseLevel**](https://msdn.microsoft.com/library/windows/hardware/mt297626)
+[**eDiagnoseLevel**](/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-ediagnoselevel)
 
-[*MiniportWdiAdapterHangDiagnose*](https://msdn.microsoft.com/library/windows/hardware/mt297558)
-
- 
+[*MiniportWdiAdapterHangDiagnose*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose)
 
  
-
-
-
-
-
 

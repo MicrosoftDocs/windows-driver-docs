@@ -32,7 +32,7 @@ The hardware vendor supplies both the general adapter code and the code for any 
 
 For an example of the general adapter code, see the implementation of the **CAdapterCommon** interface in the Sb16, Msvad, and Ac97 sample audio drivers in the Microsoft Windows Driver Kit (WDK).
 
-By using a layered approach, the vendor can write an adapter driver that operates on one of several levels, depending on the adapter's hardware functionality. When determining the level of support that a given hardware function requires, the vendor should first determine whether a system-supplied miniport driver already exists that supports the function (see the [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714) function's list of system-supplied miniport drivers). If not, the vendor must implement a proprietary miniport driver but might still be able to use one of the system-supplied port drivers (see the [**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715) function's list of system-supplied port drivers).
+By using a layered approach, the vendor can write an adapter driver that operates on one of several levels, depending on the adapter's hardware functionality. When determining the level of support that a given hardware function requires, the vendor should first determine whether a system-supplied miniport driver already exists that supports the function (see the [**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport) function's list of system-supplied miniport drivers). If not, the vendor must implement a proprietary miniport driver but might still be able to use one of the system-supplied port drivers (see the [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) function's list of system-supplied port drivers).
 
 To implement WDM support for a device, follow these steps:
 
@@ -49,9 +49,4 @@ This section discusses the following topics:
 [Subdevice Creation](subdevice-creation.md)
 
  
-
- 
-
-
-
 

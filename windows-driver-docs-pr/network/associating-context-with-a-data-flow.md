@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 # Associating Context with a Data Flow
 
 
-For callouts that process data at a filtering layer that supports data flows, the callout driver can associate a context with each data flow. Such a context is opaque to the filter engine. The callout's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function can use this context to save state information specific to the data flow for the next time that it is called by the filter engine for that data flow. The filter engine passes this context to the callout's classifyFn callout function through the *flowContext* parameter. If no context is associated with the data flow, the *flowContext* parameter is zero.
+For callouts that process data at a filtering layer that supports data flows, the callout driver can associate a context with each data flow. Such a context is opaque to the filter engine. The callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function can use this context to save state information specific to the data flow for the next time that it is called by the filter engine for that data flow. The filter engine passes this context to the callout's classifyFn callout function through the *flowContext* parameter. If no context is associated with the data flow, the *flowContext* parameter is zero.
 
-To associate a context with a data flow, a callout's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function calls the [**FwpsFlowAssociateContext0**](https://msdn.microsoft.com/library/windows/hardware/ff551165) function. For example:
+To associate a context with a data flow, a callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function calls the [**FwpsFlowAssociateContext0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsflowassociatecontext0) function. For example:
 
 ```cpp
 // Context structure to be associated with data flows
@@ -26,7 +26,7 @@ typedef struct FLOW_CONTEXT_ {
   .
 } FLOW_CONTEXT, *PFLOW_CONTEXT;
 
-#define FLOW_CONTEXT_POOL_TAG &#39;fcpt&#39;
+#define FLOW_CONTEXT_POOL_TAG 'fcpt'
 
 // classifyFn callout function
 VOID NTAPI
@@ -96,7 +96,7 @@ VOID NTAPI
 }
 ```
 
-If a context is already associated with a data flow, it must first be removed before a new context may be associated with the data flow. To remove a context from a data flow, a callout's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function calls the [**FwpsFlowRemoveContext0**](https://msdn.microsoft.com/library/windows/hardware/ff551169) function. For example:
+If a context is already associated with a data flow, it must first be removed before a new context may be associated with the data flow. To remove a context from a data flow, a callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function calls the [**FwpsFlowRemoveContext0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsflowremovecontext0) function. For example:
 
 ```C++
 // Context structure to be associated with data flows
@@ -104,7 +104,7 @@ typedef struct FLOW_CONTEXT_ {
   ...
 } FLOW_CONTEXT, *PFLOW_CONTEXT;
 
-#define FLOW_CONTEXT_POOL_TAG &#39;fcpt&#39;
+#define FLOW_CONTEXT_POOL_TAG 'fcpt'
 
 // classifyFn callout function
 VOID NTAPI
@@ -132,7 +132,7 @@ VOID NTAPI
      flowHandle = inMetaValues->flowHandle;
 
     // Check whether there is a context associated with the data flow
-     if (flowContext != 0) 
+     if (flowHandle != 0) 
      {
         // Get a pointer to the flow context structure
         context = (PFLOW_CONTEXT)flowContext;

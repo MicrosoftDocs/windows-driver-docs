@@ -17,15 +17,9 @@ Add the following compiler settings to the Visual Studio project for your driver
 
 -   For a filter or protocol driver, add NDIS640=1.
 
-For information on building a driver with the Windows 8.1 release of the WDK, see [Building a Driver](https://msdn.microsoft.com/windows-drivers/develop/building_a_driver).
+For information on building a driver with the Windows 8.1 release of the WDK, see [Building a Driver](../develop/building-a-driver.md).
 
-For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](https://msdn.microsoft.com/windows-drivers/develop/creating_a_driver_from_existing_source_files).
-
- 
+For information on converting an driver's build files to a Visual Studio project , see [Creating a Driver From Existing Source Files](/windows-hardware/drivers).
 
  
-
-
-
-
 

@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_DEVICE\_CAPS
 
 
-Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_CAPS notification to respond to [OID\_WWAN\_DEVICE\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569824) query requests.
+Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_CAPS notification to respond to [OID\_WWAN\_DEVICE\_CAPS](./oid-wwan-device-caps.md) query requests.
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps) structure.
 
 Remarks
 -------
@@ -43,14 +43,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_DEVICE\_CAPS](https://msdn.microsoft.com/library/windows/hardware/ff569824)
+[OID\_WWAN\_DEVICE\_CAPS](./oid-wwan-device-caps.md)
 
-[**NDIS\_WWAN\_DEVICE\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff567907)
-
- 
+[**NDIS\_WWAN\_DEVICE\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_caps)
 
  
-
-
-
 

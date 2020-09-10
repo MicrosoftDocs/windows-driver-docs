@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Bidirectional Request and Response Schemas
 
 
-The Bidirectional Request and Response Schemas provide an XML-formatted set of queries and responses that can be used for bidirectional communication between applications and printers. Using these queries, applications can retrieve any printer configuration and status data that is stored in accordance with the [Bidirectional Communication Schema](bidirectional-communication-schema.md). They can also set any writable printer properties. You can use either the [**IBidiSpl2::SendRecvXMLStream**](https://msdn.microsoft.com/library/windows/hardware/dd144983) or the [**IBidiSpl2::SendRecvXMLString**](https://msdn.microsoft.com/library/windows/hardware/dd144984) function to communicate with the printer.
+The Bidirectional Request and Response Schemas provide an XML-formatted set of queries and responses that can be used for bidirectional communication between applications and printers. Using these queries, applications can retrieve any printer configuration and status data that is stored in accordance with the [Bidirectional Communication Schema](bidirectional-communication-schema.md). They can also set any writable printer properties. You can use either the [**IBidiSpl2::SendRecvXMLStream**](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream) or the [**IBidiSpl2::SendRecvXMLString**](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring) function to communicate with the printer.
 
 There are several request schemas and corresponding response schemas. The formal definition of each, and an example of each, are located in the following topics:
 
@@ -29,12 +29,7 @@ For example, each &lt;Get&gt; response repeats the original set of queries and a
 
 For more information about constructing requests, see [Constructing a Bidi Communications Schema Query](constructing-a-bidi-communication-schema-query.md).
 
-For detailed information about the Bidirectional Communication Schema, see the [Bidirectional Communications Schema Hierarchy](bidirectional-communication-schema-hierarchy.md) and [Bidi Communications Schema Reference](https://msdn.microsoft.com/library/windows/hardware/ff545175) topics.
+For detailed information about the Bidirectional Communication Schema, see the [Bidirectional Communications Schema Hierarchy](bidirectional-communication-schema-hierarchy.md) and [Bidi Communications Schema Reference](./bidi-communications-schema-reference.md) topics.
 
  
-
- 
-
-
-
 

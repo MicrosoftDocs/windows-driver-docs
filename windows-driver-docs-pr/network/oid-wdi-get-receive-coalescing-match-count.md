@@ -28,7 +28,7 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                                              | Multiple TLV instances allowed | Optional | Description                                                                  |
 |--------------------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------------------------|
-| [**WDI\_TLV\_COALESCING\_FILTER\_MATCH\_COUNT**](https://msdn.microsoft.com/library/windows/hardware/dn926252) |                                |          | The number of packets that have matched receive filters on the network port. |
+| [**WDI\_TLV\_COALESCING\_FILTER\_MATCH\_COUNT**](./wdi-tlv-coalescing-filter-match-count.md) |                                |          | The number of packets that have matched receive filters on the network port. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

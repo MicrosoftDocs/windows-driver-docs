@@ -28,7 +28,7 @@ No additional parameters. The data in the header is sufficient.
 
 | TLV                                                                     | Multiple TLV instances allowed | Optional | Description     |
 |-------------------------------------------------------------------------|--------------------------------|----------|-----------------|
-| [**WDI\_TLV\_NEXT\_DIALOG\_TOKEN**](https://msdn.microsoft.com/library/windows/hardware/dn897854) |                                |          | A dialog token. |
+| [**WDI\_TLV\_NEXT\_DIALOG\_TOKEN**](./wdi-tlv-next-dialog-token.md) |                                |          | A dialog token. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

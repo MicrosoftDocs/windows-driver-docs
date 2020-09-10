@@ -33,13 +33,13 @@ Like device drivers, file systems are responsible for transferring data between 
 
 All standard Microsoft file systems use neither buffered nor direct I/O for most I/O processing.
 
-For more information about buffering methods, see [Methods for Accessing Data Buffers](https://msdn.microsoft.com/library/windows/hardware/ff554436).
+For more information about buffering methods, see [Methods for Accessing Data Buffers](../kernel/methods-for-accessing-data-buffers.md).
 
 For IRP-based I/O operations, the buffering method used is operation-specific and is determined by the following factors:
 
 -   The type of I/O operation that is being performed
 
--   The value of the **Flags** member of the [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure for the file system volume
+-   The value of the **Flags** member of the [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure for the file system volume
 
 -   For I/O control (IOCTL) and file system control (FSCTL) operations, the value of the *TransferType* parameter that was passed to the CTL\_CODE macro when the IOCTL or FSCTL was defined
 
@@ -62,9 +62,4 @@ This section includes:
 [IRP-Based I/O Operations That Have No Buffers](irp-based-i-o-operations-that-have-no-buffers.md)
 
  
-
- 
-
-
-
 

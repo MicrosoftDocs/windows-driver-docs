@@ -1,41 +1,12 @@
 ---
 title: Debugger Data Model C++ Additional Interfaces
 description: This topic describes  addtional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
-ms.date: 10/05/2018
+ms.date: 09/12/2018
 ---
 
 # Debugger Data Model C++ Additional Interfaces
 
-This topic describes some addtional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
-
-This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based
-debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
-
----
-
-[Debugger Data Model C++ Overview](data-model-cpp-overview.md)
-
-[Debugger Data Model C++ Interfaces](data-model-cpp-interfaces.md)
-
-[Debugger Data Model C++ Objects](data-model-cpp-objects.md)
-
-[Debugger Data Model C++ Additional Interfaces](data-model-cpp-additional-interfaces.md)
-
-[Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
-
-[Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-
----
-
-## Topic Sections
-
-This topic includes the following sections.
-
-[Debugger Data Model Metadata Interfaces](#metadatainterfaces)
-
-[Object Enumeration in the Data Model](#object)
-
----
+This topic describes some additional interfaces associated with the Debugger C++ Data Model, such as metadata, concepts and object enumeration.
 
 ## <span id="metadatainterfaces"></span> Debugger Data Model Metadata Interfaces
 
@@ -77,23 +48,23 @@ DECLARE_INTERFACE_(IKeyStore, IUnknown)
 }
 ```
 
-[GetKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeystore-getkey)
+[GetKey](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ikeystore-getkey)
 
 The GetKey method is analogous to the GetKey method on IModelObject. It will return the value of the specified key if it exists in the key store or the key store's parent store. Note that if the value of the key is a property accessor, the GetValue method will not be called on the property accessor. The actual IModelPropertyAccessor boxed into an IModelObject will be returned. It is typical that a client will call GetKeyValue for this reason. 
 
-[SetKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeystore-setkey)
+[SetKey](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ikeystore-setkey)
 
 The SetKey method is analogous to the SetKey method on IModelObject. It is the only method which is capable of creating a key and associating metadata with it within the key store. 
 
-[GetKeyValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeystore-getkeyvalue)
+[GetKeyValue](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ikeystore-getkeyvalue)
 
 The GetKeyValue method is the first method a client will go to in order to find the value of a particular key within the metadata store. If the key specified by the key argument exists within the store (or it's parent store), the value of that key and any metadata associated with it will be returned. If the value of the key is a property accessor (an IModelPropertyAccessor boxed into an IModelObject), the GetValue method of the property accessor will automatically be called by GetKeyValue and the underlying value of the property returned. 
 
-[SetKeyValue](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeystore-setkeyvalue)
+[SetKeyValue](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ikeystore-setkeyvalue)
 
 The SetKeyValue method is analogous to the SetKeyValue method on IModelObject. This method is not capable of creating a new key within the metadata store. If there is an existing key as indicated by the key argument, its value will be set as indicated. If the key is a property accessor, the SetValue method will be called on the property accessor in order to set the underlying value. Note that metadata is typically static once created. Use of this method on a metadata key store should be infrequent. 
 
-[ClearKeys](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeystore-clearkeys)
+[ClearKeys](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ikeystore-clearkeys)
 
 The ClearKeys method is analogous to the ClearKeys method on IModelObject. It will remove every key from the given metadata store. This method has no effect on any parent store. 
 
@@ -122,11 +93,11 @@ DECLARE_INTERFACE_(IKeyEnumerator, IUnknown)
 }
 ```
 
-[Reset](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeyenumerator-reset)
+[Reset](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ikeyenumerator-reset)
 
 The Reset method resets the enumerator to the position it was at when it was first acquired (e.g.: before the first element in the enumeration). A subsequent call to GetNext will return the first enumerated key. 
 
-[GetNext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-ikeyenumerator-getnext)
+[GetNext](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ikeyenumerator-getnext)
 
 The GetNext method both moves the enumerator forward and returns the key at that position in the enumeration.
 
@@ -144,18 +115,19 @@ DECLARE_INTERFACE_(IRawEnumerator, IUnknown)
 }
 ```
 
-[Reset](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-irawenumerator-reset)
+[Reset](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-irawenumerator-reset)
 
 The Reset method resets the enumerator to the position it was at when it was first acquired (e.g.: before the first element in the enumeration). A subsequent call to GetNext will return the first enumerated native/language construct. 
 
-[GetNext](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgmodel/nf-dbgmodel-irawenumerator-getnext)
+[GetNext](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-irawenumerator-getnext)
 
 The GetNext method both moves the enumerator forward and returns the native/language construct at that position in the enumeration. 
-
 
 ---
 
 ## <span id="related_topics"></span>Related topics
+
+This topic is part of a series which describes the interfaces accessible from C++, how to use them to build a C++ based debugger extension, and how to make use of other data model constructs (e.g.: JavaScript or NatVis) from a C++ data model extension.
 
 [Debugger Data Model C++ Overview](data-model-cpp-overview.md)
 
@@ -168,4 +140,3 @@ The GetNext method both moves the enumerator forward and returns the native/lang
 [Debugger Data Model C++ Concepts](data-model-cpp-concepts.md)
 
 [Debugger Data Model C++ Scripting](data-model-cpp-scripting.md)
-

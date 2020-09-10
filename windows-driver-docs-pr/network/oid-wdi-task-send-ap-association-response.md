@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE
@@ -26,10 +27,10 @@ If the send fails for any reason, an empty [NDIS\_STATUS\_WDI\_INDICATION\_SEND\
 
 | TLV                                                                                                      | Multiple TLV instances allowed | Optional | Description                                                                                                      |
 |----------------------------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926137)      |                                |          | Association response parameters.                                                                                 |
-| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://msdn.microsoft.com/library/windows/hardware/dn898076)                                |                                | X        | Additional IEs that the port must append to Association Response IE set before sending response to peer adapter. |
-| [**WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn926315) |                                |          | Information about the incoming association request.                                                              |
-| [**WDI\_TLV\_WFD\_ASSOCIATION\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/mt269148)                        |                                | X        | The Status value to set when the association request is denied.                                                  |
+| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS**](./wdi-tlv-association-response-parameters.md)      |                                |          | Association response parameters.                                                                                 |
+| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](./wdi-tlv-vendor-specific-ie.md)                                |                                | X        | Additional IEs that the port must append to Association Response IE set before sending response to peer adapter. |
+| [**WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO**](./wdi-tlv-incoming-association-request-info.md) |                                |          | Information about the incoming association request.                                                              |
+| [**WDI\_TLV\_WFD\_ASSOCIATION\_STATUS**](./wdi-tlv-wfd-association-status.md)                        |                                | X        | The Status value to set when the association request is denied.                                                  |
 
  
 
@@ -37,6 +38,7 @@ If the send fails for any reason, an empty [NDIS\_STATUS\_WDI\_INDICATION\_SEND\
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPONSE\_COMPLETE](ndis-status-wdi-indication-send-ap-association-response-complete.md)
+
 Requirements
 ------------
 
@@ -62,9 +64,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

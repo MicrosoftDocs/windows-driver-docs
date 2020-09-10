@@ -70,14 +70,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_AddLink\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566210)
+[**SM\_AddLink\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_addlink_out)
 
  
-
- 
-
-
-
-
-
 

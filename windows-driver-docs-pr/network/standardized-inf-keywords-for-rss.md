@@ -7,15 +7,11 @@ keywords:
 - RSS WDK networking , standardized INF keywords
 - standardized INF keywords WDK RSS
 - INF entries WDK RSS
-ms.date: 04/20/2017
+ms.date: 02/01/2019
 ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for RSS
-
-
-
-
 
 The RSS interface supports [standardized INF keywords](standardized-inf-keywords-for-network-devices.md) that appear in the registry and are specified in INF files.
 
@@ -88,7 +84,7 @@ The following table describes the possible INF entries for the RSS enumeration k
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>2</p></td>
-<td align="left"><p><strong>ClosestProcessorStatic</strong>: No dynamic load-balancing - Distribute but don&#39;t load-balance at runtime.</p></td>
+<td align="left"><p><strong>ClosestProcessorStatic</strong>: No dynamic load-balancing - Distribute but don't load-balance at runtime.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
@@ -126,7 +122,7 @@ The preferred NUMA node that is used for the memory allocations of the network a
 
 A driver for a PCI expansion card should not specify the NUMA node ID statically in its INF, since the closest node depends on which PCI slot the card is plugged into.  Only specify **\*NumaNodeId** if the network adapter is integrated into the system, the NUMA node is known in advance, and the node cannot be determined at runtime by querying ACPI.
 
-**Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567274) structure.
+**Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
 
  
 
@@ -144,9 +140,8 @@ The maximum number of RSS processors.
 The maximum processor number of the RSS interface.
 If **\*RssMaxProcNumber** is specified, then **\*RssMaxProcGroup** should also be specified.
 
-<a href="" id="---------rssmaxprocnumber"></a> **\*RssMaxProcNumber**  
-The maximum processor number of the RSS interface.
-If **\*RssMaxProcNumber** is specified, then **\*RssMaxProcGroup** should also be specified.
+<a href="" id="---------rssmaxprocnumber"></a> **\*NumRSSQueues**  
+The number of RSS queues.
 
 <a href="" id="---------rssmaxprocgroup"></a> **\*RssMaxProcGroup**
 The maximum processor group of the RSS interface.
@@ -282,10 +277,4 @@ If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
  
-
- 
-
-
-
-
 

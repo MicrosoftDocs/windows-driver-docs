@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_CONNECTION_QUALITY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_CONNECTION\_QUALITY
@@ -28,8 +29,8 @@ OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enfor
 
 | TLV                                                                                                                       | Multiple TLV instances allowed | Optional | Description                                                                                                                                                                                    |
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926259)                           |                                |          | The desired Wi-Fi connection quality hint.                                                                                                                                                     |
-| [**WDI\_TLV\_LOW\_LATENCY\_CONNECTION\_QUALITY\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn897843) |                                | X        | The behavior for low latency connection quality. This is only required if the connection quality is set to [**WDI\_CONNECTION\_QUALITY\_LOW\_LATENCY**](https://msdn.microsoft.com/library/windows/hardware/dn897807). |
+| [**WDI\_TLV\_CONNECTION\_QUALITY\_PARAMETERS**](./wdi-tlv-connection-quality-parameters.md)                           |                                |          | The desired Wi-Fi connection quality hint.                                                                                                                                                     |
+| [**WDI\_TLV\_LOW\_LATENCY\_CONNECTION\_QUALITY\_PARAMETERS**](./wdi-tlv-low-latency-connection-quality-parameters.md) |                                | X        | The behavior for low latency connection quality. This is only required if the connection quality is set to [**WDI\_CONNECTION\_QUALITY\_LOW\_LATENCY**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_connection_quality_hint). |
 
  
 
@@ -37,6 +38,7 @@ OID\_WDI\_SET\_CONNECTION\_QUALITY provides a hint to the IHV component to enfor
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 
@@ -62,9 +64,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

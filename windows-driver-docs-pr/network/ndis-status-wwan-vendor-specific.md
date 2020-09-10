@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_VENDOR\_SPECIFIC notification to im
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_VENDOR\_SPECIFIC**](https://msdn.microsoft.com/library/windows/hardware/ff567947) structure.
+This notification uses the [**NDIS\_WWAN\_VENDOR\_SPECIFIC**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_vendor_specific) structure.
 
 Remarks
 -------
@@ -43,14 +43,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_VENDOR\_SPECIFIC**](https://msdn.microsoft.com/library/windows/hardware/ff567947)
+[**NDIS\_WWAN\_VENDOR\_SPECIFIC**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_vendor_specific)
 
 [OID\_WWAN\_VENDOR\_SPECIFIC](oid-wwan-vendor-specific.md)
 
  
-
- 
-
-
-
 

@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The RESERVE\_QUEUE\_OVERFLOW bug check has a value of 0x000000FF. This indicates that an attempt was made to insert a new item into a reserve queue, causing the queue to overflow.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## RESERVE\_QUEUE\_OVERFLOW Parameters
 
@@ -54,8 +56,8 @@ The RESERVE\_QUEUE\_OVERFLOW bug check has a value of 0x000000FF. This indicates
 </tbody>
 </table>
 
- 
-
+## Resolution 
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in determining the root cause.
  
 
  

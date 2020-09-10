@@ -17,16 +17,11 @@ If a driver does not support a particular power IRP, it must nevertheless pass t
 
 To pass an unsupported or unrecognized power IRP, a driver should call the following routines in the sequence that is described in [Passing Power IRPs](passing-power-irps.md):
 
--   In Windows 7 and Windows Vista, call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) and [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
+-   In Windows 7 and Windows Vista, call [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
--   In Windows Server 2003, Windows XP, and Windows 2000, call [**PoStartNextPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559776), **IoSkipCurrentIrpStackLocation**, and [**PoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff559654).
+-   In Windows Server 2003, Windows XP, and Windows 2000, call [**PoStartNextPowerIrp**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-postartnextpowerirp), **IoSkipCurrentIrpStackLocation**, and [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver).
 
 The driver should not change anything in the IRP before passing the IRP down a device stack.
 
  
-
- 
-
-
-
 

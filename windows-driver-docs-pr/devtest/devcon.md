@@ -17,7 +17,7 @@ keywords:
 - device management WDK DevCon
 - listing device information WDK
 ms.date: 04/20/2017
-ms.localizationpriority: medium
+ms.localizationpriority: high 
 ---
 
 # Windows Device Console (Devcon.exe)
@@ -41,7 +41,7 @@ DevCon runs on Microsoft Windows 2000 and later versions of Windows.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="https://go.microsoft.com/fwlink/p/?linkid=290798" data-raw-source="[Windows Hardware Downloads](https://go.microsoft.com/fwlink/p/?linkid=290798)">Windows Hardware Downloads</a>.</p>
+<td align="left"><p>DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8 and Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
 <p>%WindowsSdkDir%\tools\x64\devcon.exe</p>
 <p>%WindowsSdkDir%\tools\x86\devcon.exe</p>
@@ -78,11 +78,11 @@ DevCon is a command-line tool that performs device management functions on local
 Devcon features include:
 
 -   **Display driver and device info** DevCon can display the following properties of drivers and devices on local computers, and remote computers (running Windows XP and earlier):
-    -   Hardware IDs, compatible IDs, and device instance IDs. These identifiers are described in detail in [Device Identification Strings](https://msdn.microsoft.com/library/windows/hardware/ff541224).
-    -   [Device setup classes](https://msdn.microsoft.com/library/windows/hardware/ff541509)
+    -   Hardware IDs, compatible IDs, and device instance IDs. These identifiers are described in detail in [Device Identification Strings](../install/device-identification-strings.md).
+    -   [Device setup classes](../install/overview-of-device-setup-classes.md)
     -   The devices in a device setup class
     -   INF files and device driver files
-    -   Details of [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff539954)
+    -   Details of [driver packages](../install/components-of-a-driver-package.md)
     -   Hardware resources
     -   Device status
     -   Expected driver stack
@@ -104,7 +104,7 @@ Devcon features include:
 ## <span id="DevCon_source_code"></span><span id="devcon_source_code"></span><span id="DEVCON_SOURCE_CODE"></span>DevCon source code
 
 
-The DevCon source code is also available so that you can examine the methods that DevCon uses to retrieve and change setup and configuration data. DevCon illustrates the use of [general setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985), [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299), and [PnP Configuration Manager functions](https://msdn.microsoft.com/library/windows/hardware/ff549713). The source code for the [Device Console (DevCon) Tool](https://go.microsoft.com/fwlink/p/?LinkId=617966) is available in the [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507) repository on GitHub.
+The DevCon source code is also available so that you can examine the methods that DevCon uses to retrieve and change setup and configuration data. DevCon illustrates the use of [general setup functions](/previous-versions/ff544985(v=vs.85)), [device installation functions](/previous-versions/ff541299(v=vs.85)), and [PnP Configuration Manager functions](/previous-versions/ff549713(v=vs.85)). The source code for the [Device Console (DevCon) Tool](https://github.com/Microsoft/Windows-driver-samples/tree/master/setup/devcon) is available in the [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples) repository on GitHub.
 
 ## <span id="related_topics"></span>Related topics
 
@@ -114,11 +114,4 @@ The DevCon source code is also available so that you can examine the methods tha
 [DevCon Examples](devcon-examples.md)
 
  
-
- 
-
-
-
-
-
 

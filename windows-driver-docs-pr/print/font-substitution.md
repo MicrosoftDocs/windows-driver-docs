@@ -28,8 +28,8 @@ You can create a default font substitution table by using a series of \*TTFS ent
 <td><p></p>
 *TTFS: <em>FontName</em>
 {
-*TTFontName: &quot;<em>TTFontNameString</em>&quot;
-*DevFontName: &quot;<em>DeviceFontNameString</em>&quot;
+*TTFontName: "<em>TTFontNameString</em>"
+*DevFontName: "<em>DeviceFontNameString</em>"
 <strong>}</strong></td>
 </tr>
 </tbody>

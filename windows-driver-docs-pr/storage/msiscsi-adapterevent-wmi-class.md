@@ -16,13 +16,7 @@ The MSiSCSI\_AdapterEvent WMI class defines an event that the system fires whene
 
 The MSiSCSI\_AdapterEvent class is unpublished and is defined in *Operations.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_AdapterEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562968) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_AdapterEvent**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_msiscsi_adapterevent) data structure.
 
  
-
- 
-
-
-
-
 

@@ -26,33 +26,33 @@ For example, the number and type of devices that are plugged into a system's PCI
 
 The framework enables drivers to support dynamic enumeration by providing framework child-list objects. Each child-list object represents a list of child devices that are connected to a parent device. The bus driver for the parent device must identify the parent's child devices, add them to the parent device's child list, and create a physical device object (PDO) for each child.
 
-Each time a driver creates a framework device object that represents an FDO for a device, the framework creates an empty, default child list for the device. Your driver can obtain a handle to a device's default child list by calling [**WdfFdoGetDefaultChildList**](https://msdn.microsoft.com/library/windows/hardware/ff547235). Typically, if you are writing a bus driver that enumerates a device's children, your driver can add children to the default child list. If you need to create additional child lists, your driver can call [**WdfChildListCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545615).
+Each time a driver creates a framework device object that represents an FDO for a device, the framework creates an empty, default child list for the device. Your driver can obtain a handle to a device's default child list by calling [**WdfFdoGetDefaultChildList**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdogetdefaultchildlist). Typically, if you are writing a bus driver that enumerates a device's children, your driver can add children to the default child list. If you need to create additional child lists, your driver can call [**WdfChildListCreate**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate).
 
-Before a driver can use a child list, it must configure the child-list object by initializing a [**WDF\_CHILD\_LIST\_CONFIG**](https://msdn.microsoft.com/library/windows/hardware/ff551227) structure and passing the structure to either [**WdfFdoInitSetDefaultChildListConfig**](https://msdn.microsoft.com/library/windows/hardware/ff547258), for the default child list, or to [**WdfChildListCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545615), for additional child lists.
+Before a driver can use a child list, it must configure the child-list object by initializing a [**WDF\_CHILD\_LIST\_CONFIG**](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_list_config) structure and passing the structure to either [**WdfFdoInitSetDefaultChildListConfig**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig), for the default child list, or to [**WdfChildListCreate**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistcreate), for additional child lists.
 
 ### Dynamic Child Descriptions
 
 Each time a bus driver identifies a child device, it must add the child device's description to a child list. A *child description* consists of a required *identification description* and an optional *address description*.
 
 <a href="" id="identification-description"></a>*Identification Description*  
-An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a [**WDF\_CHILD\_IDENTIFICATION\_DESCRIPTION\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff551223) structure.
+An identification description is a structure that contains information that uniquely identifies each device that the driver enumerates. The driver defines this structure, but its first member must be a [**WDF\_CHILD\_IDENTIFICATION\_DESCRIPTION\_HEADER**](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header) structure.
 
-Typically, an identification description contains a device's [device identification strings](https://msdn.microsoft.com/library/windows/hardware/ff541224), possibly a serial number, and information about the device's location on the bus, such as a slot number.
+Typically, an identification description contains a device's [device identification strings](../install/device-identification-strings.md), possibly a serial number, and information about the device's location on the bus, such as a slot number.
 
 The driver can provide the following set of callback functions, which allow the framework to manipulate the information in an identification description:
 
--   [*EvtChildListIdentificationDescriptionCompare*](https://msdn.microsoft.com/library/windows/hardware/ff540833), which compares the contents of two identification description structures.
+-   [*EvtChildListIdentificationDescriptionCompare*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_identification_description_compare), which compares the contents of two identification description structures.
 
--   [*EvtChildListIdentificationDescriptionCopy*](https://msdn.microsoft.com/library/windows/hardware/ff540834), which copies the contents of one identification description structure to another.
+-   [*EvtChildListIdentificationDescriptionCopy*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_identification_description_copy), which copies the contents of one identification description structure to another.
 
--   [*EvtChildListIdentificationDescriptionDuplicate*](https://msdn.microsoft.com/library/windows/hardware/ff540836), which creates a new identification description by duplicating an existing identification description structure and, if necessary, allocating additional buffers.
+-   [*EvtChildListIdentificationDescriptionDuplicate*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_identification_description_duplicate), which creates a new identification description by duplicating an existing identification description structure and, if necessary, allocating additional buffers.
 
--   [*EvtChildListIdentificationDescriptionCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff540832), which deallocates buffers that were allocated by the [*EvtChildListIdentificationDescriptionDuplicate*](https://msdn.microsoft.com/library/windows/hardware/ff540836) callback function.
+-   [*EvtChildListIdentificationDescriptionCleanup*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_identification_description_cleanup), which deallocates buffers that were allocated by the [*EvtChildListIdentificationDescriptionDuplicate*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_identification_description_duplicate) callback function.
 
 Typically, you will need to provide these callback functions if your driver's identification description structures contain pointers to dynamically allocated buffers. For more information about the purpose of these callback functions, see their reference pages.
 
 <a href="" id="address-description"></a>*Address Description*  
-An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a [**WDF\_CHILD\_ADDRESS\_DESCRIPTION\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff551219) structure.
+An address description is a structure that contains information that the driver requires so that it can access the device on its bus, if the information can change while the device is plugged in. The driver defines this structure, but its first member must be a [**WDF\_CHILD\_ADDRESS\_DESCRIPTION\_HEADER**](/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header) structure.
 
 Address descriptions are optional. If a device's address information cannot change between the time the device is plugged in and the time it is unplugged, all of the device's address information can be stored in an identification description. For example, USB controllers assign addresses to devices when the devices are plugged in, and these addresses do not change.
 
@@ -60,43 +60,43 @@ On the other hand, some buses use addressing information that can change. For ex
 
 The driver can provide the following set of callback functions to manipulate the information in an address description:
 
--   [*EvtChildListAddressDescriptionCopy*](https://msdn.microsoft.com/library/windows/hardware/ff540824), which copies the contents of one address description structure to another.
+-   [*EvtChildListAddressDescriptionCopy*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_address_description_copy), which copies the contents of one address description structure to another.
 
--   [*EvtChildListAddressDescriptionDuplicate*](https://msdn.microsoft.com/library/windows/hardware/ff540826), which creates a new address description by duplicating an existing address description structure and, if necessary, allocating additional buffers.
+-   [*EvtChildListAddressDescriptionDuplicate*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_address_description_duplicate), which creates a new address description by duplicating an existing address description structure and, if necessary, allocating additional buffers.
 
--   [*EvtChildListAddressDescriptionCleanup*](https://msdn.microsoft.com/library/windows/hardware/ff540823), which deallocates buffers that were allocated by the [*EvtChildListAddressDescriptionDuplicate*](https://msdn.microsoft.com/library/windows/hardware/ff540826) callback function.
+-   [*EvtChildListAddressDescriptionCleanup*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_address_description_cleanup), which deallocates buffers that were allocated by the [*EvtChildListAddressDescriptionDuplicate*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_address_description_duplicate) callback function.
 
 Typically, you will need to provide these callback functions if your driver's address description structures contain pointers to dynamically allocated buffers. For more information about the purpose of these callback functions, see their reference pages.
 
 ### Adding Devices to a Dynamic Child List
 
-When the framework calls a bus driver's [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function, the callback function must call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create an FDO for the parent device, which is typically a bus adapter. For more information about creating an FDO, see [Creating Device Objects in a Function Driver](creating-device-objects-in-a-function-driver.md). The driver must then enumerate the parent device's children and add the children to a child list.
+When the framework calls a bus driver's [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function, the callback function must call [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create an FDO for the parent device, which is typically a bus adapter. For more information about creating an FDO, see [Creating Device Objects in a Function Driver](creating-device-objects-in-a-function-driver.md). The driver must then enumerate the parent device's children and add the children to a child list.
 
-Optionally, the driver can call [**WdfDeviceSetBusInformationForChildren**](https://msdn.microsoft.com/library/windows/hardware/ff546868) to provide the framework with information about the bus. Doing so is recommended because it makes it easier for child devices and apps to identify the bus.
+Optionally, the driver can call [**WdfDeviceSetBusInformationForChildren**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetbusinformationforchildren) to provide the framework with information about the bus. Doing so is recommended because it makes it easier for child devices and apps to identify the bus.
 
-To add children to a child list, the driver must call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) for each child device that it finds. This call informs the framework that a driver has discovered a child device that is connected to a parent device. When your driver calls **WdfChildListAddOrUpdateChildDescriptionAsPresent**, it supplies an identification description and, optionally, an address description.
+To add children to a child list, the driver must call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) for each child device that it finds. This call informs the framework that a driver has discovered a child device that is connected to a parent device. When your driver calls **WdfChildListAddOrUpdateChildDescriptionAsPresent**, it supplies an identification description and, optionally, an address description.
 
-After the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) to report a new device, the framework informs the PnP manager that the new device exists. The PnP manager then builds a device stack and driver stack for the new device. As part of this process, the framework calls the bus driver's [*EvtChildListCreateDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540828) callback function. This callback function must call [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create a PDO for the new device.
+After the driver calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) to report a new device, the framework informs the PnP manager that the new device exists. The PnP manager then builds a device stack and driver stack for the new device. As part of this process, the framework calls the bus driver's [*EvtChildListCreateDevice*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_create_device) callback function. This callback function must call [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a PDO for the new device.
 
-Typically, several child devices are connected to a parent, so the bus driver will need to call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) several times. The most efficient way to do this is the following:
+Typically, several child devices are connected to a parent, so the bus driver will need to call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) several times. The most efficient way to do this is the following:
 
-1.  Call [**WdfChildListBeginScan**](https://msdn.microsoft.com/library/windows/hardware/ff545608).
+1.  Call [**WdfChildListBeginScan**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginscan).
 
-2.  Call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) for each child device.
+2.  Call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) for each child device.
 
-3.  Call [**WdfChildListEndScan**](https://msdn.microsoft.com/library/windows/hardware/ff545626).
+3.  Call [**WdfChildListEndScan**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistendscan).
 
-If you surround your driver's dynamic enumeration with calls to [**WdfChildListBeginScan**](https://msdn.microsoft.com/library/windows/hardware/ff545608) and [**WdfChildListEndScan**](https://msdn.microsoft.com/library/windows/hardware/ff545626), the framework stores all of the changes to the child list, and notifies the PnP manager of the changes when the driver calls **WdfChildListEndScan**. At some later time, the framework calls the bus driver's [*EvtChildListCreateDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540828) callback function for each device in the child list. This callback function calls [**WdfDeviceCreate**](https://msdn.microsoft.com/library/windows/hardware/ff545926) to create a PDO for each new device.
+If you surround your driver's dynamic enumeration with calls to [**WdfChildListBeginScan**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginscan) and [**WdfChildListEndScan**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistendscan), the framework stores all of the changes to the child list, and notifies the PnP manager of the changes when the driver calls **WdfChildListEndScan**. At some later time, the framework calls the bus driver's [*EvtChildListCreateDevice*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_create_device) callback function for each device in the child list. This callback function calls [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate) to create a PDO for each new device.
 
-When your driver calls [**WdfChildListBeginScan**](https://msdn.microsoft.com/library/windows/hardware/ff545608), the framework marks all previously reported devices as no longer being present. Therefore, the driver must call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) for all children that the driver can detect, not just newly discovered children. To add a single child to a child list, the driver can make a single call to [**WdfChildListUpdateAllChildDescriptionsAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545667) without first calling **WdfChildListBeginScan**.
+When your driver calls [**WdfChildListBeginScan**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginscan), the framework marks all previously reported devices as no longer being present. Therefore, the driver must call [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) for all children that the driver can detect, not just newly discovered children. To add a single child to a child list, the driver can make a single call to [**WdfChildListUpdateAllChildDescriptionsAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistupdateallchilddescriptionsaspresent) without first calling **WdfChildListBeginScan**.
 
 ### Updating a Dynamic Child List
 
 There are two common ways to update the information in a dynamic child list:
 
-1.  When a parent device receives an interrupt that indicates the arrival or removal of a child, the driver's [*EvtInterruptDpc*](https://msdn.microsoft.com/library/windows/hardware/ff541721) callback function calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) if a device has been plugged in or [**WdfChildListUpdateChildDescriptionAsMissing**](https://msdn.microsoft.com/library/windows/hardware/ff545674) if a device has been unplugged.
+1.  When a parent device receives an interrupt that indicates the arrival or removal of a child, the driver's [*EvtInterruptDpc*](/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc) callback function calls [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) if a device has been plugged in or [**WdfChildListUpdateChildDescriptionAsMissing**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistupdatechilddescriptionasmissing) if a device has been unplugged.
 
-2.  The driver can provide an [*EvtChildListScanForChildren*](https://msdn.microsoft.com/library/windows/hardware/ff540838) callback function, which the framework calls each time the parent device enters its working (D0) state. This callback function should enumerate all child devices by calling [**WdfChildListBeginScan**](https://msdn.microsoft.com/library/windows/hardware/ff545608), [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545591) (or [**WdfChildListUpdateAllChildDescriptionsAsPresent**](https://msdn.microsoft.com/library/windows/hardware/ff545667)), and [**WdfChildListEndScan**](https://msdn.microsoft.com/library/windows/hardware/ff545626).
+2.  The driver can provide an [*EvtChildListScanForChildren*](/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_scan_for_children) callback function, which the framework calls each time the parent device enters its working (D0) state. This callback function should enumerate all child devices by calling [**WdfChildListBeginScan**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginscan), [**WdfChildListAddOrUpdateChildDescriptionAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent) (or [**WdfChildListUpdateAllChildDescriptionsAsPresent**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistupdateallchilddescriptionsaspresent)), and [**WdfChildListEndScan**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistendscan).
 
 You can use one or both of these techniques in your driver.
 
@@ -106,31 +106,26 @@ If you want your driver to examine the contents of a child list, it can traverse
 
 -   To obtain the contents of each child device description, one at a time, the driver can:
 
-    1.  Call [**WdfChildListBeginIteration**](https://msdn.microsoft.com/library/windows/hardware/ff545601).
-    2.  Call [**WdfChildListRetrieveNextDevice**](https://msdn.microsoft.com/library/windows/hardware/ff545655), as many times as necessary.
-    3.  Call [**WdfChildListEndIteration**](https://msdn.microsoft.com/library/windows/hardware/ff545618).
+    1.  Call [**WdfChildListBeginIteration**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginiteration).
+    2.  Call [**WdfChildListRetrieveNextDevice**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice), as many times as necessary.
+    3.  Call [**WdfChildListEndIteration**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistenditeration).
 
-    When calling [**WdfChildListBeginIteration**](https://msdn.microsoft.com/library/windows/hardware/ff545601), the driver specifies a [**WDF\_RETRIEVE\_CHILD\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff552507)-typed flag that indicates whether the framework should retrieve all device descriptions or only a subset. When [**WdfChildListRetrieveNextDevice**](https://msdn.microsoft.com/library/windows/hardware/ff545655) finds a match, it retrieves the child device's identification and address descriptions, plus a handle to its device object.
+    When calling [**WdfChildListBeginIteration**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginiteration), the driver specifies a [**WDF\_RETRIEVE\_CHILD\_FLAGS**](/windows-hardware/drivers/ddi/wdfchildlist/ne-wdfchildlist-_wdf_retrieve_child_flags)-typed flag that indicates whether the framework should retrieve all device descriptions or only a subset. When [**WdfChildListRetrieveNextDevice**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice) finds a match, it retrieves the child device's identification and address descriptions, plus a handle to its device object.
 
--   If you need to obtain the address description that is currently contained in a child device description, your driver can call [**WdfChildListRetrieveAddressDescription**](https://msdn.microsoft.com/library/windows/hardware/ff545648), specifying an identification description. The framework traverses the child list until it finds a child device with a matching identification description, and then it retrieves the address description.
+-   If you need to obtain the address description that is currently contained in a child device description, your driver can call [**WdfChildListRetrieveAddressDescription**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrieveaddressdescription), specifying an identification description. The framework traverses the child list until it finds a child device with a matching identification description, and then it retrieves the address description.
 
--   If you need to obtain a handle to the framework device object that is associated with a particular child device, your driver can call [**WdfChildListRetrievePdo**](https://msdn.microsoft.com/library/windows/hardware/ff545663). The framework traverses the child list until it finds a child device with a matching identification description, and then it returns a device object handle.
+-   If you need to obtain a handle to the framework device object that is associated with a particular child device, your driver can call [**WdfChildListRetrievePdo**](/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievepdo). The framework traverses the child list until it finds a child device with a matching identification description, and then it returns a device object handle.
 
 ### Accessing a PDO's Identification and Address Descriptions
 
 Your driver can call the following methods to access a PDO's identification description or address description:
 
--   [**WdfPdoRetrieveIdentificationDescription**](https://msdn.microsoft.com/library/windows/hardware/ff548824), which retrieves the identification description that is associated with a PDO.
+-   [**WdfPdoRetrieveIdentificationDescription**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoretrieveidentificationdescription), which retrieves the identification description that is associated with a PDO.
 
--   [**WdfPdoRetrieveAddressDescription**](https://msdn.microsoft.com/library/windows/hardware/ff548820), which retrieves the address description that is associated with a PDO.
+-   [**WdfPdoRetrieveAddressDescription**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoretrieveaddressdescription), which retrieves the address description that is associated with a PDO.
 
--   [**WdfPdoUpdateAddressDescription**](https://msdn.microsoft.com/library/windows/hardware/ff548826), which updates the address description that is associated with a PDO.
+-   [**WdfPdoUpdateAddressDescription**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoupdateaddressdescription), which updates the address description that is associated with a PDO.
 
- 
+### Handling re-enumeration requests
 
- 
-
-
-
-
-
+Framework-based bus drivers that support dynamic enumeration can receive a request to reenumerate a particular child device through the [**REENUMERATE_SELF_INTERFACE_STANDARD**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_reenumerate_self_interface_standard) interface. For more info, see [Handling Enumeration Requests](./handling-enumeration-requests.md)

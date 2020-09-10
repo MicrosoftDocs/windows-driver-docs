@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # How to Use Decorations in INF Files for Printer Drivers
 
 
-Printer drivers that run on Windows Server 2003 with SP1 and later, or on the 64-bit version of Windows XP and later, and that target x64 architectures must include a decorated [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) as shown in the following example. However, because the driver might be installed as an additional driver on a version of Windows before Windows Server 2003 with SP1, the INF file must also provide an undecorated INF Models section. It is also recommended that decorations be used to install Itanium-based drivers.
+Printer drivers that run on Windows Server 2003 with SP1 and later, or on the 64-bit version of Windows XP and later, and that target x64 architectures must include a decorated [**INF Models section**](../install/inf-models-section.md) as shown in the following example. However, because the driver might be installed as an additional driver on a version of Windows before Windows Server 2003 with SP1, the INF file must also provide an undecorated INF Models section. It is also recommended that decorations be used to install Itanium-based drivers.
 
 The following examples show how to write an INF file that can be used to install a driver for a single processor architecture.
 
@@ -131,9 +131,4 @@ Location = "Acme CD ROM"
 ```
 
  
-
- 
-
-
-
 

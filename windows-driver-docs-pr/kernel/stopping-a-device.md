@@ -19,7 +19,7 @@ The PnP manager directs drivers to stop a device in the following situations:
 
 -   To disable the device in response to a Device Manager request (Windows 98/Me only). Windows 2000 and later versions of Windows send remove IRPs in this situation; see [Understanding When Remove IRPs Are Issued](understanding-when-remove-irps-are-issued.md).
 
--   After a failed [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) request (Windows 98/Me only)
+-   After a failed [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request (Windows 98/Me only)
 
 This section covers the following topics:
 
@@ -31,12 +31,6 @@ This section covers the following topics:
 
 [Handling Stop IRPs (Windows 2000 and Later)](handling-stop-irps--windows-2000-and-later-.md)
 
-[Handling Stop IRPs (Windows 98/Me)](handling-stop-irps--windows-98-me-.md)
 
  
-
- 
-
-
-
 

@@ -26,7 +26,7 @@ This command is used to disconnect from an Access Point or a Wi-Fi Direct GO, an
 
 | TLV                                                                            | Multiple TLV instances allowed | Optional | Description                |
 |--------------------------------------------------------------------------------|--------------------------------|----------|----------------------------|
-| [**WDI\_TLV\_DISCONNECT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926300) |                                |          | The disconnect parameters. |
+| [**WDI\_TLV\_DISCONNECT\_PARAMETERS**](./wdi-tlv-disconnect-parameters.md) |                                |          | The disconnect parameters. |
 
  
 
@@ -67,9 +67,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

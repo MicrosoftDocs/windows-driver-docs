@@ -15,14 +15,14 @@ OID\_WWAN\_PIN sets or returns information related to Personal Identification Nu
 
 Miniport drivers must process set and query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending an [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md) status notification when they have completed the set or query request.
 
-Miniport drivers should send [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md) status notifications containing an [**NDIS\_WWAN\_PIN\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567911) structure to return PIN-type and PIN-entry state information, primarily to indicate whether a PIN is required to unlock the MB device or Subscriber Identity Module (SIM card) when completing query requests.
+Miniport drivers should send [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md) status notifications containing an [**NDIS\_WWAN\_PIN\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure to return PIN-type and PIN-entry state information, primarily to indicate whether a PIN is required to unlock the MB device or Subscriber Identity Module (SIM card) when completing query requests.
 
-Callers requesting to set information related to PINs provide an [**NDIS\_WWAN\_SET\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff567922) structure to the miniport driver to send a PIN to the MB device, enable or disable PIN settings, or to change a PIN on the SIM.
+Callers requesting to set information related to PINs provide an [**NDIS\_WWAN\_SET\_PIN**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin) structure to the miniport driver to send a PIN to the MB device, enable or disable PIN settings, or to change a PIN on the SIM.
 
 Remarks
 -------
 
-See [WWAN Pin Operations](https://msdn.microsoft.com/library/windows/hardware/ff559093) for more information about using this OID.
+See [WWAN Pin Operations](./mb-pin-operations.md) for more information about using this OID.
 
 Windows 7 miniport drivers should use OID\_WWAN\_PIN. Windows 8 miniport drivers should use [OID\_WWAN\_PIN\_EX](oid-wwan-pin-ex.md).
 
@@ -65,18 +65,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_PIN\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff567911)
+[**NDIS\_WWAN\_PIN\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info)
 
-[**NDIS\_WWAN\_SET\_PIN**](https://msdn.microsoft.com/library/windows/hardware/ff567922)
+[**NDIS\_WWAN\_SET\_PIN**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin)
 
 [**NDIS\_STATUS\_WWAN\_PIN\_INFO**](ndis-status-wwan-pin-info.md)
 
-[WWAN Pin Operations](https://msdn.microsoft.com/library/windows/hardware/ff559093)
+[WWAN Pin Operations](./mb-pin-operations.md)
 
  
-
- 
-
-
-
 

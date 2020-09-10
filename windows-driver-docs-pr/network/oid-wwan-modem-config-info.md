@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_MODEM\_CONFIG\_INFO retrieves information about the modem configuration information.
 
-MBB drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [NDIS\_STATUS\_WWAN\_MODEM\_CONFIG\_INFO](ndis-status-wwan-modem-config-info.md) status notification containing an [**NDIS\_WWAN\_MODEM\_CONFIG\_INFO**](https://msdn.microsoft.com/library/windows/hardware/07C2BAED-157A-459C-B558-115C0091ECE5) structure, which in turn contains a [**WWAN\_MODEM\_CONFIG\_INFO**](https://msdn.microsoft.com/library/windows/hardware/14FBFA51-F4A5-417A-8905-241CEA543774) structure, to provide information about the modem's configuration.
+MBB drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [NDIS\_STATUS\_WWAN\_MODEM\_CONFIG\_INFO](ndis-status-wwan-modem-config-info.md) status notification containing an [**NDIS\_WWAN\_MODEM\_CONFIG\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_modem_config_info) structure, which in turn contains a [**WWAN\_MODEM\_CONFIG\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_modem_config_info) structure, to provide information about the modem's configuration.
 
 Set requests are not applicable.
 
@@ -47,9 +47,6 @@ Requirements
 
 [NDIS\_STATUS\_WWAN\_MODEM\_CONFIG\_INFO](ndis-status-wwan-modem-config-info.md)
 
-[**NDIS\_WWAN\_MODEM\_CONFIG\_INFO**](https://msdn.microsoft.com/library/windows/hardware/07C2BAED-157A-459C-B558-115C0091ECE5)
+[**NDIS\_WWAN\_MODEM\_CONFIG\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_modem_config_info)
 
-[**WWAN\_MODEM\_CONFIG\_INFO**](https://msdn.microsoft.com/library/windows/hardware/14FBFA51-F4A5-417A-8905-241CEA543774)
-
-
-
+[**WWAN\_MODEM\_CONFIG\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_modem_config_info)

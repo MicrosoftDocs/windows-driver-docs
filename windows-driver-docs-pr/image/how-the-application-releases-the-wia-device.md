@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-When an application has no further need of a WIA device, it calls the **IWiaItem::Release** method (described in the Microsoft Windows SDK documentation). When the last reference to any WIA item is released, the WIA service calls the [**IWiaMiniDrv::drvUnInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff545010) method. A WIA minidriver should use this method primarily to manage resources associated with all connected applications. When an application closes, the resources associated with its item tree are no longer needed. The WIA minidriver should keep track of all connected applications by incrementing a reference counter in [**IWiaMiniDrv::drvInitializeWia**](https://msdn.microsoft.com/library/windows/hardware/ff544986) and decrementing that reference counter in **IWiaMiniDrv::drvUnInitializeWia**. Freeing resources at this point can cause problems for other connected applications. When the reference counter reaches zero there are no more applications connected to the WIA minidriver. The minidriver should clean up any allocated resources it acquired during application connections.
+When an application has no further need of a WIA device, it calls the **IWiaItem::Release** method (described in the Microsoft Windows SDK documentation). When the last reference to any WIA item is released, the WIA service calls the [**IWiaMiniDrv::drvUnInitializeWia**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvuninitializewia) method. A WIA minidriver should use this method primarily to manage resources associated with all connected applications. When an application closes, the resources associated with its item tree are no longer needed. The WIA minidriver should keep track of all connected applications by incrementing a reference counter in [**IWiaMiniDrv::drvInitializeWia**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinitializewia) and decrementing that reference counter in **IWiaMiniDrv::drvUnInitializeWia**. Freeing resources at this point can cause problems for other connected applications. When the reference counter reaches zero there are no more applications connected to the WIA minidriver. The minidriver should clean up any allocated resources it acquired during application connections.
 
 **Note**  **** The **IWiaMiniDrv::drvUnInitializeWia** method does not unload the driver. The driver may be called again to process events, or when an application intends to communicate with it. A call to this method does not mean that all clients are disconnected. There should be one call per client disconnect.
 Each call to the **IWiaMiniDrv::drvUnInitializeWia** method should be paired with a corresponding call to the **IWiaMiniDrv::drvInitializeWia** method.
@@ -65,9 +65,4 @@ HRESULT _stdcall CWIADevice::drvUnInitializeWia(BYTE *pWiasContext)
 ```
 
  
-
- 
-
-
-
 

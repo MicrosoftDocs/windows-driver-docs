@@ -11,14 +11,9 @@ ms.localizationpriority: medium
 
 The WIA flatbed scanner item can optionally support the following WIA properties:
 
-[**WIA\_DPS\_MAX\_SCAN\_TIME**](https://msdn.microsoft.com/library/windows/hardware/ff551403)
+[**WIA\_DPS\_MAX\_SCAN\_TIME**](./wia-dps-max-scan-time.md)
 
-[**WIA\_DPS\_PLATEN\_COLOR**](https://msdn.microsoft.com/library/windows/hardware/ff551420)
-
- 
+[**WIA\_DPS\_PLATEN\_COLOR**](./wia-dps-platen-color.md)
 
  
-
-
-
 

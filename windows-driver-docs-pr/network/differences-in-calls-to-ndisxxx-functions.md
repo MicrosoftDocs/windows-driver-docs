@@ -14,25 +14,19 @@ ms.localizationpriority: medium
 
 
 
-A call manager calls a different set of call manager functions than an MCM driver. A call manager calls **NdisCm*Xxx*** functions, and an MCM driver calls **NdisMCm*Xxx*** functions.
+A call manager calls a different set of call manager functions than an MCM driver. A call manager calls **NdisCm_Xxx_** functions, and an MCM driver calls **NdisMCm_Xxx_** functions.
 
-An MCM driver does not call the **NdisCo*Xxx*** functions that both connection-oriented clients and call managers call. Instead, an MCM driver calls the following comparable **NdisMCm*Xxx*** functions:
+An MCM driver does not call the **NdisCo_Xxx_** functions that both connection-oriented clients and call managers call. Instead, an MCM driver calls the following comparable **NdisMCm_Xxx_** functions:
 
--   [**NdisMCmCreateVc**](https://msdn.microsoft.com/library/windows/hardware/ff562812) instead of [**NdisCoCreateVc**](https://msdn.microsoft.com/library/windows/hardware/ff561696)
+-   [**NdisMCmCreateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmcreatevc) instead of [**NdisCoCreateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc)
 
--   [**NdisMCmDeleteVc**](https://msdn.microsoft.com/library/windows/hardware/ff562819) instead of [**NdisCoDeleteVc**](https://msdn.microsoft.com/library/windows/hardware/ff561698)
+-   [**NdisMCmDeleteVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmdeletevc) instead of [**NdisCoDeleteVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscodeletevc)
 
--   [**NdisMCmOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff563548) instead of [**NdisCoOidRequest**](https://msdn.microsoft.com/library/windows/hardware/ff561711)
+-   [**NdisMCmOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequest) instead of [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest)
 
--   [**NdisMCmOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff563551) instead of [**NdisCoOidRequestComplete**](https://msdn.microsoft.com/library/windows/hardware/ff561716)
+-   [**NdisMCmOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequestcomplete) instead of [**NdisCoOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequestcomplete)
 
-An MCM driver does not require a call that is comparable to [**NdisCoSendNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff561728), because the send interface between the call manager and the miniport driver is internal to an MCM driver and therefore opaque to NDIS.
-
- 
+An MCM driver does not require a call that is comparable to [**NdisCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscosendnetbufferlists), because the send interface between the call manager and the miniport driver is internal to an MCM driver and therefore opaque to NDIS.
 
  
-
-
-
-
 

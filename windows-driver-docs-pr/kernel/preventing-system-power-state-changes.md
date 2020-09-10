@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Although drivers cannot directly set system power policy, the power manager provides three routines through which a driver can prevent system transitions out of the working state: [**PoSetSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559768), [**PoRegisterSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559731), and [**PoUnregisterSystemState**](https://msdn.microsoft.com/library/windows/hardware/ff559794).
+Although drivers cannot directly set system power policy, the power manager provides three routines through which a driver can prevent system transitions out of the working state: [**PoSetSystemState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate), [**PoRegisterSystemState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregistersystemstate), and [**PoUnregisterSystemState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pounregistersystemstate).
 
 By calling **PoRegisterSystemState** or **PoSetSystemState**, a driver can notify the power manager that a user is present or that the driver requires use of the system or display.
 
@@ -24,9 +24,4 @@ With **PoSetSystemState**, a driver notifies the power manager of the same condi
 Using these routines, a driver can forestall many, but not all, transitions out of the working state. The power manager always shuts down the system when loss of power is imminent or when a user explicitly requests shutdown.
 
  
-
- 
-
-
-
 

@@ -28,7 +28,7 @@ The following diagram shows an NDIS-WDM miniport driver that interfaces with the
 The following list describes the components that the preceding diagram shows:
 
 <a href="" id="ipx-spx-compatible-and-tcp-ip"></a>IPX/SPX Compatible and TCP/IP  
-[NDIS protocol drivers](ndis-protocol-drivers.md) that transmit packets by using underlying miniport drivers.
+[NDIS protocol drivers](./roadmap-for-developing-ndis-protocol-drivers.md) that transmit packets by using underlying miniport drivers.
 
 <a href="" id="ndis"></a>NDIS  
 The Ndis.sys driver that provides a standard interface between layered network drivers.
@@ -40,16 +40,10 @@ An NDIS-WDM miniport driver that interfaces with the USB driver stack.
 Other vendor-supplied USB client drivers.
 
 <a href="" id="usb-class-interface"></a>USB Class Interface  
-[USB Routines](https://msdn.microsoft.com/library/windows/hardware/ff540046) and [I/O requests](https://msdn.microsoft.com/library/windows/hardware/ff537421) that USB client drivers can use to interface with the USB driver stack.
+[USB Routines](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)) and [I/O requests](/previous-versions/ff537421(v=vs.85)) that USB client drivers can use to interface with the USB driver stack.
 
 <a href="" id="usb-driver-stack"></a>USB Driver Stack  
-Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](https://msdn.microsoft.com/library/windows/hardware/hh406256).
+Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](/windows-hardware/drivers/ddi/index).
 
  
-
- 
-
-
-
-
 

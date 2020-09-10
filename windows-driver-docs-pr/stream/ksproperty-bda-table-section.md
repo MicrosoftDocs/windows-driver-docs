@@ -81,16 +81,9 @@ Requirements
 ## See also
 
 
-[**BDA\_TABLE\_SECTION**](https://msdn.microsoft.com/library/windows/hardware/ff556553)
+[**BDA\_TABLE\_SECTION**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_table_section)
 
-[**KSP\_NODE**](https://msdn.microsoft.com/library/windows/hardware/ff566720)
-
- 
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
-
-
-
-
 

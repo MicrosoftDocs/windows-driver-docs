@@ -11,11 +11,12 @@ ms.localizationpriority: medium
 
 Follow these steps to install the sample driver and attach an ADXL345 accelerometer to the J1C1 header on your Sharks Cove board.
 
+> [!WARNING]
+> The Sharks Cove hardware development board is no longer supported. For a list of currently supported boards, see [SoCs and custom boards](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
+
 ## Install Windows on the Sharks Cove board
 
-
-For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](https://msdn.microsoft.com/library/windows/hardware/dn745910) and [SharksCove.org](https://go.microsoft.com/fwlink/p/?linkid=403167).
-
+For information about how to get a Sharks Cove board and how to install Windows on the board, see [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board) and SharksCove.org.
 ## Modify the ADXL345 to work with the Sharks Cove
 
 
@@ -39,7 +40,7 @@ Attach the ADXL345 pins to the J1C1 header pins as shown here:
 
 A driver development environment has two computers: the *host computer* and the *target computer*. The target computer is also called the *test computer*. You develop and build your driver in Microsoft Visual Studio on the host computer. The debugger runs on the host computer and is available in the Visual Studio user interface. When you test and debug a driver, the driver runs on the target computer. In this case, the Sharks Cove board is the target computer.
 
-On your host computer, install kits and tools as described in [Sharks Cove hardware development board](https://msdn.microsoft.com/library/windows/hardware/dn745910).
+On your host computer, install kits and tools as described in [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board).
 
 ## Download and extract the SpbAccelerometer sample
 

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_cpsui_option_types_gg"></span><span id="DDK_CPSUI_OPTION_TYPES_GG"></span>
 
 
-When using CPSUI to create a property sheet page, user-selectable options must be defined using [CPSUI-supported window controls](https://msdn.microsoft.com/library/windows/hardware/ff547168). These controls are identified by the following CPSUI option types:
+When using CPSUI to create a property sheet page, user-selectable options must be defined using [CPSUI-supported window controls](./cpsui-supported-window-controls.md). These controls are identified by the following CPSUI option types:
 
 [**TVOT\_2STATES**](tvot-2states.md)
 
@@ -34,12 +34,7 @@ When using CPSUI to create a property sheet page, user-selectable options must b
 
 [**TVOT\_UDARROW**](tvot-udarrow.md)
 
-An option's type is specified in the **Type** member of an [**OPTTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559670) structure.
+An option's type is specified in the **Type** member of an [**OPTTYPE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) structure.
 
  
-
- 
-
-
-
 

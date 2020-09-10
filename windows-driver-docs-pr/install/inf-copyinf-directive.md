@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 A **CopyINF** directive causes specified INF files to be copied to the target system. The **CopyINF** directive is supported in Windows XP and later versions of Windows.
 
-```ini
+```inf
 [DDInstall]
   
 CopyINF=filename1.inf[,filename2.inf]...
@@ -40,7 +40,7 @@ If you follow these rules, Windows can install drivers for each function without
 
 The following points apply to the **CopyINF** directive:
 
--   Before Windows Vista, Windows copies the specified INF files as part of the default processing for [**DIF_INSTALLDEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff543692) (see [**SetupDiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552039)) after the device is installed successfully.
+-   Before Windows Vista, Windows copies the specified INF files as part of the default processing for [**DIF_INSTALLDEVICE**](./dif-installdevice.md) (see [**SetupDiInstallDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldevice)) after the device is installed successfully.
 
     Windows copies the specified INF files into a system directory path that it will search during device installations.
 
@@ -53,23 +53,17 @@ Starting with Windows Vista, the following points also apply to the **CopyINF** 
 
 -   The **CopyINF** directive is processed during driver store import instead of during device installation. This means that a call to [SetupCopyOEMInf](https://go.microsoft.com/fwlink/p/?linkid=194252) on Windows Vista and later versions of Windows causes all the **CopyINF** directives in the specified INF file to be processed at that time. This occurs recursively for each **CopyINF** directive that is contained within the specified INF file until all referenced driver packages are copied into the driver store.
 
-Starting with Windows 10, version 1511, under certain circumstances (for example, running Windows Update or some calls to [**DiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff544710)), INFs copied with **CopyINF** will also be installed on applicable devices.
+Starting with Windows 10, version 1511, under certain circumstances (for example, running Windows Update or some calls to [**DiInstallDevice**](/windows/desktop/api/newdev/nf-newdev-diinstalldevice)), INFs copied with **CopyINF** will also be installed on applicable devices.
 
 For more information about how to copy INF files, see [Copying INFs](copying-inf-files.md).
 
 Examples
 --------
 
-```ini
+```inf
 [MyMfDevice.NTx86]
 CopyINF = Sound.INF
 ```
 
  
-
- 
-
-
-
-
 

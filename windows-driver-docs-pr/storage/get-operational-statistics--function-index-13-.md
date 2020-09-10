@@ -11,8 +11,8 @@ ms.date: 10/17/2018
 
 This function returns counters that track operations performed by the NVDIMM-N.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 
@@ -82,7 +82,7 @@ None.
 <td align="left"><strong>Number of Save Operations Completed</strong></td>
 <td align="left">4</td>
 <td align="left">16</td>
-<td align="left"><p>The number of completed save operations over the NVDIMM-N module&#39;s lifetime.</p>
+<td align="left"><p>The number of completed save operations over the NVDIMM-N module's lifetime.</p>
 <p><em>Byte 0 – <em>NUM_SAVE_OPS_COUNT0</em> (2, 0x0A)</p>
 <p></em>Byte 1 – <em>NUM_SAVE_OPS_COUNT1</em> (2, 0x0B)</p>
 <p>Byte 2 – Reserved.</p>
@@ -92,7 +92,7 @@ None.
 <td align="left"><strong>Number of Restore Operations Completed</strong></td>
 <td align="left">4</td>
 <td align="left">20</td>
-<td align="left"><p>The number of completed restore operations over the NVDIMM-N module&#39;s lifetime.</p>
+<td align="left"><p>The number of completed restore operations over the NVDIMM-N module's lifetime.</p>
 <p><em>Byte 0 – <em>NUM_RESTORE_OPS_COUNT0 0</em> (2, 0x0C)</p>
 <p></em>Byte 1 – <em>NUM_RESTORE_OPS_COUNT1</em> (2, 0x0D)</p>
 <p>Byte 2 – Reserved.</p>
@@ -102,7 +102,7 @@ None.
 <td align="left"><strong>Number of Erase Operations Completed</strong></td>
 <td align="left">4</td>
 <td align="left">24</td>
-<td align="left"><p>The number of completed erase operations over the NVDIMM-N module&#39;s lifetime.</p>
+<td align="left"><p>The number of completed erase operations over the NVDIMM-N module's lifetime.</p>
 <p><em>Byte 0 – <em>NUM_ERASE_COUNTS0</em> (2, 0x0E)</p>
 <p></em>Byte 1 – <em>NUM_ERASE_COUNTS1</em> (2, 0x0F)</p>
 <p>Byte 2 – Reserved.</p>
@@ -112,7 +112,7 @@ None.
 <td align="left"><strong>Number of Module Power Cycles</strong></td>
 <td align="left">4</td>
 <td align="left">28</td>
-<td align="left"><p>The number of power cycles over the NVDIMM-N module&#39;s lifetime.</p>
+<td align="left"><p>The number of power cycles over the NVDIMM-N module's lifetime.</p>
 <p><em>Byte 0 – <em>NUM_MODULE_POWER_CYCLES0</em> (2, 0x10)</p>
 <p></em>Byte 1 – <em>NUM_MODULE_POWER_CYCLES1</em> (2, 0x11)</p>
 <p>Byte 2 – Reserved.</p>

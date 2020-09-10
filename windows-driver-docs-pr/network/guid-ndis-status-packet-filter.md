@@ -16,5 +16,4 @@ NDIS generates the NDIS_STATUS_PACKET_FILTER status indication to notify overlyi
 
 NDIS translates the status indication to a WMI GUID_NDIS_STATUS_PACKET_FILTER event for WMI clients.
 
-The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](https://msdn.microsoft.com/library/windows/hardware/ff567900) structure that is followed by a ULONG value. For more information about packet filter status and the possible values, see [OID_GEN_CURRENT_PACKET_FILTER](oid-gen-current-packet-filter.md).
-
+The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_wmi_event_header) structure that is followed by a ULONG value. For more information about packet filter status and the possible values, see [OID_GEN_CURRENT_PACKET_FILTER](oid-gen-current-packet-filter.md).

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # HS\_CONNECTION\_CONTEXT structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_CONNECTION\_CONTEXT** structure contains the information required by the plugin for post connect authentication.

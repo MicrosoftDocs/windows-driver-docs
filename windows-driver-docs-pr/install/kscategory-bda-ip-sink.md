@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_IP_SINK
 
 
-The KSCATEGORY_BDA_IP_SINK [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a sink filter in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_IP_SINK [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a sink filter in the [broadcast driver architecture](/windows-hardware/drivers/ddi/_stream/index) (BDA).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_IP_SINK to indicate that the devices support a BDA IP sink filter.
 
-For more information, see [BDA Filter Category GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff556521).
+For more information, see [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
 Requirements
 ------------
@@ -73,10 +73,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

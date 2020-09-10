@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 You must include a description of all of the custom GUIDs that map to a miniport driver's custom OIDs in a managed object format (MOF) file that must be compiled and included in the miniport driver's resource (\*.rc) file.
 
-The MOF source file must be of type MOFDATA and must have an extension of .mof. You must compile the MOF source file into a binary file with [Mofcomp.exe](https://msdn.microsoft.com/library/windows/hardware/ff542012) and must check this file with [Wmimofck.exe](https://msdn.microsoft.com/library/windows/hardware/ff565588).
+The MOF source file must be of type MOFDATA and must have an extension of .mof. You must compile the MOF source file into a binary file with [Mofcomp.exe](../kernel/compiling-a-driver-s-mof-file.md) and must check this file with [Wmimofck.exe](../kernel/using-wmimofck-exe.md).
 
 You must insert the following line in the miniport driver's resource file (\*.rc) to include the MOF binary:
 
@@ -32,10 +32,4 @@ NdisMofResource MOFDATA filename.bmf
 *FileName* represents the file name of the MOF source file.
 
  
-
- 
-
-
-
-
 

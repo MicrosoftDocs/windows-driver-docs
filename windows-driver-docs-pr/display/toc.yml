@@ -1,29 +1,42 @@
 - name: "Design Guide"
   href: index.md
 - name: "Windows Display Driver Model (WDDM) Design Guide"
-  href: windows-vista-display-driver-model-design-guide.md
+# Auto-expanded node
   items: 
+  - name: "Windows Display Driver Model (WDDM) Design Guide"
+    href: windows-vista-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows Display Driver Model (WDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-vista-display-driver-mo.md
-  - name: "What's new for Windows 10 display drivers (WDDM 2.0 and later)"
-    href: what-s-new-for-windows-threshold-display-drivers--wddm-2-0-.md
-  - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
-    href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
-  - name: "What's new for Windows 8 display drivers (WDDM 1.2)"
-    href: what-s-new-for-windows-8-display-drivers.md
-  - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
-    href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
+  - name: "What's new for Windows display and graphics drivers"
+# Auto-expanded node
+    items:
+    - name: "What's new for Windows 10 display and graphics drivers"
+      href: what-s-new-for-windows-10-display-and-graphics-drivers.md
+    - name: "What's new for prior WDDM 2.X versions for Windows 10 display and graphics drivers"
+      href: what-s-new-for-prior-wddm-2-x-versions.md
+    - name: "What's new for Windows 8.1 display drivers (WDDM 1.3)"
+      href: what-s-new-for-windows-8-1-display-drivers--wddm-1-3-.md
+    - name: "What's new for Windows 8 display drivers (WDDM 1.2)"
+      href: what-s-new-for-windows-8-display-drivers.md
+    - name: "What's new for Windows 7 display drivers (WDDM 1.1)"
+      href: what-s-new-for-windows-7-display-drivers--wddm-1-1-.md
   - name: "WDDM 2.1 Features"
     href: wddm-2-1-features.md
   - name: "WDDM 2.0 and Windows 10"
-    href: wddm-2-0-and-windows-10.md
+# Auto-expanded node
     items: 
+    - name: "WDDM 2.0 and Windows 10"
+      href: wddm-2-0-and-windows-10.md
     - name: "GPU virtual memory in WDDM 2.0"
-      href: gpu-virtual-memory-in-wddm-2-0.md
+# Auto-expanded node
       items: 
+      - name: "GPU virtual memory in WDDM 2.0"
+        href: gpu-virtual-memory-in-wddm-2-0.md
       - name: "GpuMmu model"
-        href: gpummu-model.md
+# Auto-expanded node
         items: 
+        - name: "GpuMmu model"
+          href: gpummu-model.md
         - name: "GPU segments"
           href: gpu-segments.md
         - name: "GPU virtual address"
@@ -55,8 +68,10 @@
       - name: "IoMmu model"
         href: iommu-model.md
     - name: "Driver residency in WDDM 2.0"
-      href: driver-residency-in-wddm-2-0.md
+# Auto-expanded node
       items: 
+      - name: "Driver residency in WDDM 2.0"
+        href: driver-residency-in-wddm-2-0.md
       - name: "Residency overview"
         href: residency-overview.md
       - name: "Allocation usage tracking"
@@ -70,13 +85,17 @@
     - name: "Context monitoring"
       href: context-monitoring.md
   - name: "WDDM 1.2 and Windows 8"
-    href: wddm-in-windows-8.md
+# Auto-expanded node
     items: 
+    - name: "WDDM 1.2 and Windows 8"
+      href: wddm-in-windows-8.md
     - name: "WDDM 1.2 features"
       href: wddm-v1-2-features.md
     - name: "Advances to the display Infrastructure"
-      href: advances-to-the-display-infrastructure.md
+# Auto-expanded node
       items: 
+      - name: "Advances to the display Infrastructure"
+        href: advances-to-the-display-infrastructure.md
       - name: "Container ID support for displays"
         href: container-id-support-for-displays-.md
       - name: "Microsoft Basic Display Driver"
@@ -86,8 +105,10 @@
       - name: "Support for headless systems"
         href: support-for-headless-systems.md
     - name: "Direct3D features and requirements in WDDM 1.2"
-      href: direct3d-features-and-requirements.md
+# Auto-expanded node
       items: 
+      - name: "Direct3D features and requirements in WDDM 1.2"
+        href: direct3d-features-and-requirements.md
       - name: "DirectX feature improvements in Windows 8"
         href: directx-feature-improvements-in-windows-8.md
       - name: "Direct3D software requirements in Windows 8"
@@ -95,8 +116,10 @@
       - name: "Hardware requirements"
         href: hardware-requirements.md
     - name: "Graphics INF requirements in WDDM 1.2"
-      href: graphics-inf-requirements.md
+# Auto-expanded node
       items: 
+      - name: "Graphics INF requirements in WDDM 1.2"
+        href: graphics-inf-requirements.md
       - name: "Updated feature score directive in Windows 8"
         href: updated-feature-score-directive.md
       - name: "Driver matching criteria"
@@ -128,8 +151,10 @@
       - name: "File Version Formatting for Display Driver DLLs"
         href: driver-dll-for-display-adapter-or-chipset-has-properly-formatted-file-version.md
     - name: "WDDM 1.2 installation scenarios"
-      href: installation-scenarios.md
+# Auto-expanded node
       items: 
+      - name: "WDDM 1.2 installation scenarios"
+        href: installation-scenarios.md
       - name: "Windows 8 in-box graphics driver preferred"
         href: windows-8-in-box-graphics-driver-preferred-.md
       - name: "Windows 8 in-box graphics drivers treated as generic drivers"
@@ -139,8 +164,10 @@
       - name: "XDDM drivers  not supported for Windows 8"
         href: xddm-drivers--not-supported-for-windows-8-.md
     - name: "WDDM 1.2 driver enforcement guidelines"
-      href: wddm-v1-2-driver-enforcement-guidelines.md
+# Auto-expanded node
       items: 
+      - name: "WDDM 1.2 driver enforcement guidelines"
+        href: wddm-v1-2-driver-enforcement-guidelines.md
       - name: "WDDM 1.2 driver enforcement"
         href: wddm-v1-2-driver-enforcement.md
       - name: "WDDM driver and feature caps"
@@ -148,8 +175,10 @@
       - name: "WDDM 1.2 best practices"
         href: wddm-v1-2-best-practices.md
   - name: "Introduction to the Windows Display Driver Model (WDDM)"
-    href: introduction-to-the-windows-vista-and-later-display-driver-model.md
+# Auto-expanded node
     items: 
+    - name: "Introduction to the Windows Display Driver Model (WDDM)"
+      href: introduction-to-the-windows-vista-and-later-display-driver-model.md
     - name: "Windows Display Driver Model (WDDM) Architecture"
       href: windows-vista-and-later-display-driver-model-architecture.md
     - name: "Benefits of the Windows Display Driver Model (WDDM)"
@@ -159,8 +188,10 @@
     - name: "Windows Display Driver Model (WDDM) Operation Flow"
       href: windows-vista-and-later-display-driver-model-operation-flow.md
   - name: "Installation Requirements for Display Miniport and User-Mode Display Drivers"
-    href: installing-display-miniport-and-user-mode-display-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Installation Requirements for Display Miniport and User-Mode Display Drivers"
+      href: installing-display-miniport-and-user-mode-display-drivers.md
     - name: "Setting the Driver Control Flags"
       href: setting-the-driver-control-flags.md
     - name: "Adding Software Registry Settings"
@@ -190,8 +221,10 @@
     - name: "Overriding Monitor EDIDs"
       href: overriding-monitor-edids.md
   - name: "Installation Requirements for Display Drivers Optimized for Windows 7 and Later"
-    href: installing-display-drivers-optimized-for-windows-7-and-later.md
+# Auto-expanded node
     items: 
+    - name: "Installation Requirements for Display Drivers Optimized for Windows 7 and Later"
+      href: installing-display-drivers-optimized-for-windows-7-and-later.md
     - name: "Setting the Feature Score for Windows 7 Display Drivers"
       href: setting-the-feature-score-for-windows-7-display-drivers.md
     - name: "Append Info to Windows 7 Display Driver Friendly Names"
@@ -201,8 +234,10 @@
     - name: "Encoding Windows 7 Display Driver INF Files in Unicode"
       href: encoding-windows-7-display-driver-inf-files-in-unicode.md
   - name: "Initializing Display Miniport and User-Mode Display Drivers"
-    href: initializing-display-miniport-and-user-mode-display-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Initializing Display Miniport and User-Mode Display Drivers"
+      href: initializing-display-miniport-and-user-mode-display-drivers.md
     - name: "Plug and Play (PnP) in WDDM 1.2 and later"
       href: plug-and-play--pnp--start-and-stop-cases.md
     - name: "Providing seamless state transitions in WDDM 1.2 and later"
@@ -222,30 +257,21 @@
     - name: "Kernel-Mode Support to the OpenGL Installable Client Driver"
       href: providing-kernel-mode-support-to-the-opengl-installable-client-driver.md
   - name: "WDDM Threading and Synchronization Model"
-    href: windows-vista-display-driver-threading-and-synchronization-model.md
+# Auto-expanded node
     items: 
+    - name: "WDDM Threading and Synchronization Model"
+      href: windows-vista-display-driver-threading-and-synchronization-model.md
     - name: "Threading and Synchronization Model of Display Miniport Driver"
-      href: threading-and-synchronization-model-of-display-miniport-driver.md
+# Auto-expanded node
       items: 
+      - name: "Threading and Synchronization Model of Display Miniport Driver"
+        href: threading-and-synchronization-model-of-display-miniport-driver.md
       - name: "Threading and Synchronization Third Level"
         href: threading-and-synchronization-third-level.md
       - name: "Threading and Synchronization Second Level"
         href: threading-and-synchronization-second-level.md
       - name: "Threading and Synchronization First Level"
         href: threading-and-synchronization-first-level.md
-        items: 
-        - name: "Pointer Class"
-          href: pointer-class.md
-        - name: "GPU Scheduler Class"
-          href: gpu-scheduler-class.md
-        - name: "Swizzling Range Class"
-          href: swizzling-range-class.md
-        - name: "Overlay Class"
-          href: overlay-class.md
-        - name: "Child I/O Class"
-          href: child-i-o-class.md
-        - name: "Display Class"
-          href: display-class.md
       - name: "Threading and Synchronization Zero Level"
         href: threading-and-synchronization-zero-level.md
       - name: "Thread Synchronization and TDR"
@@ -253,16 +279,22 @@
     - name: "Threading Model of User-Mode Display Driver"
       href: threading-model-of-user-mode-display-driver.md
   - name: "Video Memory Management and GPU Scheduling"
-    href: video-memory-management-and-gpu-scheduling.md
+# Auto-expanded node
     items: 
+    - name: "Video Memory Management and GPU Scheduling"
+      href: video-memory-management-and-gpu-scheduling.md
     - name: "Handling Memory Segments"
-      href: handling-memory-segments.md
+# Auto-expanded node
       items: 
+      - name: "Handling Memory Segments"
+        href: handling-memory-segments.md
       - name: "Using Memory Segments to Describe the GPU Address Space"
         href: using-memory-segments-to-describe-the-gpu-address-space.md
       - name: "Configuring Memory Segment Types"
-        href: configuring-memory-segment-types.md
+# Auto-expanded node
         items: 
+        - name: "Configuring Memory Segment Types"
+          href: configuring-memory-segment-types.md
         - name: "Linear Memory-Space Segments"
           href: linear-memory-space-segments.md
         - name: "Linear Aperture-Space Segments"
@@ -278,8 +310,10 @@
       - name: "Specifying Segments When Creating Allocations"
         href: specifying-segments-when-creating-allocations.md
       - name: "Reporting Graphics Memory"
-        href: reporting-graphics-memory.md
+# Auto-expanded node
         items: 
+        - name: "Reporting Graphics Memory"
+          href: reporting-graphics-memory.md
         - name: "Calculating Graphics Memory"
           href: calculating-graphics-memory.md
         - name: "Examples of Graphics Memory Reporting"
@@ -287,8 +321,10 @@
         - name: "Retrieving Graphics Memory Numbers"
           href: retrieving-graphics-memory-numbers.md
     - name: "Handling Command and DMA Buffers"
-      href: handling-command-and-dma-buffers.md
+# Auto-expanded node
       items: 
+      - name: "Handling Command and DMA Buffers"
+        href: handling-command-and-dma-buffers.md
       - name: "Introduction to Command and DMA Buffers"
         href: introduction-to-command-and-dma-buffers.md
       - name: "Using the Guaranteed Contract DMA Buffer Model"
@@ -306,8 +342,10 @@
       - name: "Preparing DMA Buffers"
         href: preparing-dma-buffers.md
     - name: "GDI Hardware Acceleration"
-      href: gdi-hardware-acceleration.md
+# Auto-expanded node
       items: 
+      - name: "GDI Hardware Acceleration"
+        href: gdi-hardware-acceleration.md
       - name: "Setting the Size and Pitch of the Memory Allocation"
         href: setting-the-size-and-pitch-of-the-memory-allocation.md
       - name: "Initialization and DMA Buffer Creation"
@@ -331,8 +369,10 @@
     - name: "Present overhead improvements starting in WDDM 1.3"
       href: present-overhead-improvements.md
   - name: "User-Mode Display Drivers"
-    href: user-mode-display-drivers.md
+# Auto-expanded node
     items: 
+    - name: "User-Mode Display Drivers"
+      href: user-mode-display-drivers.md
     - name: "Returning Error Codes Received from Runtime Functions"
       href: returning-error-codes-received-from-runtime-functions.md
     - name: "Handling the E_INVALIDARG Return Value"
@@ -350,11 +390,15 @@
     - name: "Handling Multiple Locks"
       href: handling-multiple-locks.md
     - name: "DirectX Video Acceleration 2.0"
-      href: directx-video-acceleration-2-0.md
+# Auto-expanded node
       items: 
+      - name: "DirectX Video Acceleration 2.0"
+        href: directx-video-acceleration-2-0.md
       - name: "Video Decode Acceleration for DirectX VA 2.0"
-        href: video-decode-acceleration-for-directx-va-2-0.md
+# Auto-expanded node
         items: 
+        - name: "Video Decode Acceleration for DirectX VA 2.0"
+          href: video-decode-acceleration-for-directx-va-2-0.md
         - name: "Providing Capabilities for Video Decoding"
           href: providing-capabilities-for-video-decoding.md
         - name: "Creating a Video Decode Device"
@@ -366,8 +410,10 @@
         - name: "Synchronizing Video Decode Operations"
           href: synchronizing-video-decode-operations.md
       - name: "Video Processing for DirectX VA 2.0"
-        href: video-processing-for-directx-va-2-0.md
+# Auto-expanded node
         items: 
+        - name: "Video Processing for DirectX VA 2.0"
+          href: video-processing-for-directx-va-2-0.md
         - name: "Providing Capabilities for Video Processing"
           href: providing-capabilities-for-video-processing.md
         - name: "Creating a Video Processing Device"
@@ -377,22 +423,28 @@
         - name: "Processing Video Frames"
           href: processing-video-frames.md
       - name: "Extended Support for DirectX VA 2.0"
-        href: extended-support-for-directx-va-2-0.md
+# Auto-expanded node
         items: 
+        - name: "Extended Support for DirectX VA 2.0"
+          href: extended-support-for-directx-va-2-0.md
         - name: "Providing Capabilities for DirectX VA 2.0 Extension Modes"
           href: providing-capabilities-for-directx-va-2-0-extension-modes.md
         - name: "Creating and Using a DirectX VA 2.0 Extension Device"
           href: creating-and-using-a-directx-va-2-0-extension-device.md
     - name: "Supporting Direct3D Version 10"
-      href: supporting-direct3d-version-10.md
+# Auto-expanded node
       items: 
+      - name: "Supporting Direct3D Version 10"
+        href: supporting-direct3d-version-10.md
       - name: "Enabling Support for the Direct3D Version 10 DDI"
         href: enabling-support-for-the-direct3d-version-10-ddi.md
       - name: "Initializing Communication with the Direct3D Version 10 DDI"
         href: initializing-communication-with-the-direct3d-version-10-ddi.md
       - name: "Rendering Pipeline"
-        href: rendering-pipeline.md
+# Auto-expanded node
         items: 
+        - name: "Rendering Pipeline"
+          href: rendering-pipeline.md
         - name: "Input Assembler Stage"
           href: input-assembler-stage.md
         - name: "Vertex Shader Stage"
@@ -410,8 +462,10 @@
       - name: "Using the State-Refresh Callback Functions"
         href: using-the-state-refresh-callback-functions.md
       - name: "Using Direct3D Version 10 Handles"
-        href: using-direct3d-version-10-handles.md
+# Auto-expanded node
         items: 
+        - name: "Using Direct3D Version 10 Handles"
+          href: using-direct3d-version-10-handles.md
         - name: "Direct3D Version 10 Runtime and Driver Handles"
           href: direct3d-version-10-runtime-and-driver-handles.md
         - name: "Direct3D Version 10 Kernel Handles"
@@ -423,8 +477,10 @@
       - name: "Retroactively Requiring Free-Threaded CalcPrivate DDIs"
         href: retroactively-requiring-free-threaded-calcprivate-ddis.md
       - name: "DirectX Graphics Infrastructure DDI"
-        href: directx-graphics-infrastructure-ddi.md
+# Auto-expanded node
         items: 
+        - name: "DirectX Graphics Infrastructure DDI"
+          href: directx-graphics-infrastructure-ddi.md
         - name: "Supporting the DXGI DDI"
           href: supporting-the-dxgi-ddi.md
         - name: "DirectX Graphics Kernel Subsystem"
@@ -436,18 +492,24 @@
         - name: "Setting DXGI Information in the Registry"
           href: setting-dxgi-information-in-the-registry.md
     - name: "Supporting Direct3D Version 10.1"
-      href: supporting-direct3d-version-10-1.md
+# Auto-expanded node
       items: 
+      - name: "Supporting Direct3D Version 10.1"
+        href: supporting-direct3d-version-10-1.md
       - name: "Version Numbers for Direct3D Version 10.1"
         href: version-numbers-for-direct3d-version-10-1.md
       - name: "Supporting Extended Format Awareness"
-        href: supporting-extended-format-awareness.md
+# Auto-expanded node
         items: 
+        - name: "Supporting Extended Format Awareness"
+          href: supporting-extended-format-awareness.md
         - name: "Version Discovery Support"
           href: version-discovery-support.md
         - name: "Details of the Extended Format"
-          href: details-of-the-extended-format.md
+# Auto-expanded node
           items: 
+          - name: "Details of the Extended Format"
+            href: details-of-the-extended-format.md
           - name: "XR Layout"
             href: xr-layout.md
           - name: "XR Format Alpha Content"
@@ -456,14 +518,18 @@
             href: dxgi-format-r10g10b10-xr-bias-a2-unorm.md
           - name: "Casting Ability of XR Formats"
             href: casting-ability-of-xr-formats.md
+        - name: "XR_BIAS conversion rules"
+          items:
+          - name: "XR_BIAS color channel conversion rules"
+            href: xr-bias-color-channel-conversion-rules.md
           - name: "XR_BIAS to Float Conversion Rules"
             href: xr-bias-to-float-conversion-rules.md
           - name: "Float to XR_BIAS Conversion Rules"
             href: float-to-xr-bias-conversion-rules.md
-          - name: "Conversion from BGR8888 to XR_BIAS"
-            href: conversion-from-bgr8888-to-xr-bias.md
-          - name: "Interpretation of X Channel"
-            href: interpretation-of-x-channel.md
+        - name: "Conversion from BGR8888 to XR_BIAS"
+          href: conversion-from-bgr8888-to-xr-bias.md
+        - name: "Interpretation of X Channel"
+          href: interpretation-of-x-channel.md
         - name: "Fully-Typed Back Buffers Casting"
           href: fully-typed-back-buffers-casting.md
         - name: "BGRA Scan-Out Support"
@@ -473,8 +539,10 @@
         - name: "DDI Changes for Direct3D Version 9 Drivers"
           href: ddi-changes-for-direct3d-version-9-drivers.md
     - name: "Supporting Direct3D Version 11"
-      href: supporting-direct3d-version-11.md
+# Auto-expanded node
       items: 
+      - name: "Supporting Direct3D Version 11"
+        href: supporting-direct3d-version-11.md
       - name: "Enabling Support for the Direct3D Version 11 DDI"
         href: enabling-support-for-the-direct3d-version-11-ddi.md
       - name: "Initializing Communication with the Direct3D Version 11 DDI"
@@ -486,8 +554,10 @@
       - name: "Changes from Direct3D 10"
         href: changes-from-direct3d-10.md
       - name: "Supporting Deferred Contexts"
-        href: supporting-deferred-contexts.md
+# Auto-expanded node
         items: 
+        - name: "Supporting Deferred Contexts"
+          href: supporting-deferred-contexts.md
         - name: "Introduction to Deferred Contexts"
           href: introduction-to-deferred-contexts.md
         - name: "Excluding DDI Functions for Deferred Contexts"
@@ -503,34 +573,44 @@
       - name: "Direct3D 11 video playback improvements"
         href: d3d11-video-playback-improvements.md
     - name: "Processing High-Definition Video"
-      href: processing-high-definition-video.md
+# Auto-expanded node
       items: 
+      - name: "Processing High-Definition Video"
+        href: processing-high-definition-video.md
       - name: "DXVA-HD DDI"
         href: dxva-hd-ddi.md
       - name: "DXVA-HD DDI Programming Considerations"
         href: dxva-hd-ddi-programming-considerations.md
       - name: "YUV format ranges in Windows 8.1"
-        href: yuv-format-ranges.md
+# Auto-expanded node
         items: 
+        - name: "YUV format ranges in Windows 8.1"
+          href: yuv-format-ranges.md
         - name: "YUV-RGB data range conversions"
           href: yuv-rgb-data-range-conversions.md
     - name: "Protecting Video Content"
-      href: protecting-video-content.md
+# Auto-expanded node
       items: 
+      - name: "Protecting Video Content"
+        href: protecting-video-content.md
       - name: "Content Protection DDI"
         href: content-protection-ddi.md
       - name: "Using Crypto Session with DirectX Video Accelerator 2.0 Decoder"
         href: using-crypto-session-with-directx-video-accelerator-2-0-decoder.md
     - name: "Verifying Overlay Support"
-      href: verifying-overlay-support.md
+# Auto-expanded node
       items: 
+      - name: "Verifying Overlay Support"
+        href: verifying-overlay-support.md
       - name: "Overlay DDI"
         href: overlay-ddi.md
       - name: "Overlay DDI Programming Considerations"
         href: overlay-ddi-programming-considerations.md
     - name: "Multiplane overlay support"
-      href: multiplane-overlay-support.md
+# Auto-expanded node
       items: 
+      - name: "Multiplane overlay support"
+        href: multiplane-overlay-support.md
       - name: "Multiplane overlay hardware requirements"
         href: multiplane-overlay-hardware-requirements.md
       - name: "Multiplane overlay resource creation"
@@ -540,8 +620,10 @@
     - name: "Tiled resource support"
       href: tiled-resource-support.md
     - name: "Using cross-adapter resources in a hybrid system"
-      href: using-cross-adapter-resources-in-a-hybrid-system.md
+# Auto-expanded node
       items: 
+      - name: "Using cross-adapter resources in a hybrid system"
+        href: using-cross-adapter-resources-in-a-hybrid-system.md
       - name: "Validating a hybrid system configuration"
         href: validating-a-hybrid-system-configuration.md
       - name: "Rendering on a discrete GPU using cross-adapter resources"
@@ -557,20 +639,28 @@
     - name: "Direct3D Functions Implemented by User Mode Display Drivers"
       href: direct3d-functions-implemented-by-user-mode.md
   - name: "Monitor Drivers"
-    href: monitor-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Monitor Drivers"
+      href: monitor-drivers.md
     - name: "Monitor Class Function Driver"
       href: monitor-class-function-driver.md
     - name: "Monitor Filter Drivers"
       href: monitor-filter-drivers.md
   - name: "HMDs and Specialized Monitors"
-    href: specialized-monitors.md
+# Auto-expanded node
     items:
+    - name: "HMDs and Specialized Monitors"
+      href: specialized-monitors.md
     - name: "EDID Extension for HMDs and Specialized Monitors"
-      href: "specialized-monitors-edid-extension.md"
+      href: specialized-monitors-edid-extension.md
+    - name: "Building a Custom Compositor App for HMDs and Specialized Monitors"
+      href: specialized-monitors-compositor.md
   - name: "Multiple Monitors and Video Present Networks"
-    href: multiple-monitors-and-video-present-networks.md
+# Auto-expanded node
     items: 
+    - name: "Multiple Monitors and Video Present Networks"
+      href: multiple-monitors-and-video-present-networks.md
     - name: "Video Present Network Terminology"
       href: video-present-network-terminology.md
     - name: "Introduction to Video Present Networks"
@@ -588,13 +678,19 @@
     - name: "Determining VidPN Support on a Display Adapter"
       href: determining-whether-a-vidpn-is-supported-on-a-display-adapter.md
   - name: "Indirect Display Driver Model Overview"
-    href: indirect-display-driver-model-overview.md
+# Auto-expanded node
     items: 
+    - name: "Indirect Display Driver Model Overview"
+      href: indirect-display-driver-model-overview.md
     - name: "IddCx Objects"
       href: iddcx-objects.md
+    - name: "Debugging indirect display drivers"
+      href: indirect-display-debugging.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
-    href: tasks-in-the-windows-vista-display-driver-model.md
+# Auto-expanded node
     items: 
+    - name: "Tasks in the Windows Display Driver Model (WDDM)"
+      href: tasks-in-the-windows-vista-display-driver-model.md
     - name: "Requesting and Using Surface Memory"
       href: requesting-and-using-surface-memory.md
     - name: "Specifying Memory Type for a Resource"
@@ -607,9 +703,11 @@
       href: manipulating-3-d-virtual-textures-directly-from-hardware.md
     - name: "Registering Hardware Information"
       href: registering-hardware-information.md
-  - name: "Debugging Tips for the Windows Display Driver Model (WDDM)"
-    href: debugging-tips-for-the-windows-vista-display-driver-model.md
-    items: 
+  - name: "Debugging the Windows Display Driver Model (WDDM)"
+# Auto-expanded node
+    items:
+    - name: "Debugging tips for WDDM drivers"
+      href: debugging-tips-for-wddm-drivers.md
     - name: "Installing Checked Binaries"
       href: installing-checked-binaries.md
     - name: "Changing the Behavior of the GPU Scheduler for Debugging"
@@ -627,8 +725,10 @@
     - name: "XPS rasterization on the GPU"
       href: xps-rasterization-on-the-gpu.md
     - name: "Timeout Detection and Recovery"
-      href: timeout-detection-and-recovery.md
+# Auto-expanded node
       items: 
+      - name: "Timeout Detection and Recovery"
+        href: timeout-detection-and-recovery.md
       - name: "Limiting Repetitive GPU Hangs and Recoveries"
         href: limiting-repetitive-gpu-hangs-and-recoveries.md
       - name: "TDR Error Messaging"
@@ -638,11 +738,15 @@
       - name: "TDR changes in Windows 8"
         href: tdr-changes-in-windows-8.md
   - name: "Tips and Requirements for the Windows Display Driver Model (WDDM)"
-    href: implementation-tips-and-requirements-for-the-windows-vista-display-dri.md
+# Auto-expanded node
     items: 
+    - name: "Tips and Requirements for the Windows Display Driver Model (WDDM)"
+      href: implementation-tips-and-requirements-for-the-windows-vista-display-dri.md
     - name: "Hardware support for Direct3D feature levels"
-      href: hardware-support-for-direct3d-feature-levels.md
+# Auto-expanded node
       items: 
+      - name: "Hardware support for Direct3D feature levels"
+        href: hardware-support-for-direct3d-feature-levels.md
       - name: "Required Direct3D 9 capabilities"
         href: required-direct3d-9-capabilities.md
       - name: "Required DXGI formats"
@@ -661,11 +765,17 @@
       href: supplying-fence-identifiers.md
     - name: "Handling Resource Creation and Destruction"
       href: handling-resource-creation-and-destruction.md
+    - name: "Supporting brightness controls for external display connectors"
+      href: supporting-brightness-controls-for-external-display-connectors.md
+    - name: "Container support for non-DX APIs"
+      href: container-non-dx.md
     - name: "Supporting Video Capture and Other Child Devices"
       href: supporting-video-capture-and-other-child-devices.md
     - name: "Supporting Rotation"
-      href: supporting-rotation.md
+# Auto-expanded node
       items: 
+      - name: "Supporting Rotation"
+        href: supporting-rotation.md
       - name: "Supporting Rotation in a Display Miniport Driver"
         href: supporting-rotation-in-a-display-miniport-driver.md
       - name: "Optimized screen rotation support"
@@ -673,8 +783,10 @@
       - name: "Supporting Path-Independent Rotation"
         href: supporting-path-independent-rotation.md
       - name: "Supporting Rotation in a User-Mode Display Driver"
-        href: supporting-rotation-in-a-user-mode-display-driver.md
+# Auto-expanded node
         items: 
+        - name: "Supporting Rotation in a User-Mode Display Driver"
+          href: supporting-rotation-in-a-user-mode-display-driver.md
         - name: "Windowed-Mode Behavior"
           href: windowed-mode-behavior.md
         - name: "Full-Screen-Mode Behavior"
@@ -687,13 +799,13 @@
       href: supporting-brightness-controls-on-integrated-display-panels.md
     - name: "Supporting Display Output and ACPI Events"
       href: supporting-display-output.md
-    - name: "Marking Sources as Removable"
-      href: marking-sources-as-removable.md
     - name: "Stereoscopic 3D"
       href: stereoscopic-3d.md
     - name: "Supporting Output Protection Manager"
-      href: supporting-output-protection-manager.md
+# Auto-expanded node
       items: 
+      - name: "Supporting Output Protection Manager"
+        href: supporting-output-protection-manager.md
       - name: "OPM Terminology"
         href: opm-terminology.md
       - name: "OPM Features"
@@ -705,8 +817,10 @@
       - name: "Using the OPM DDI"
         href: using-the-opm-ddi.md
       - name: "Handling Protection Levels with OPM"
-        href: handling-protection-levels-with-opm.md
+# Auto-expanded node
         items: 
+        - name: "Handling Protection Levels with OPM"
+          href: handling-protection-levels-with-opm.md
         - name: "Assigning Precedence to Protection Levels"
           href: assigning-precedence-to-protection-levels.md
         - name: "Determining the Protection Level for a Physical Output"
@@ -718,8 +832,10 @@
       - name: "Retrieving COPP-Compatible Information on Protected Output"
         href: retrieving-copp-compatible-information-about-a-protected-output.md
       - name: "Configuring a Protected Output"
-        href: configuring-a-protected-output.md
+# Auto-expanded node
         items: 
+        - name: "Configuring a Protected Output"
+          href: configuring-a-protected-output.md
         - name: "Setting the Protection Level for a Protected Output"
           href: setting-the-protection-level-for-a-protected-output.md
         - name: "Configuring Protection for the Video Signal"
@@ -729,8 +845,10 @@
       - name: "Reporting Status of a Protected Output"
         href: reporting-status-of-a-protected-output.md
       - name: "Implementation Tips and Requirements for OPM"
-        href: implementation-tips-and-requirements-for-opm.md
+# Auto-expanded node
         items: 
+        - name: "Implementation Tips and Requirements for OPM"
+          href: implementation-tips-and-requirements-for-opm.md
         - name: "OPM and ChangeDisplaySettingsEx"
           href: opm-and-changedisplaysettingsex.md
         - name: "OPM and Display Modes"
@@ -738,8 +856,10 @@
         - name: "CGMS-A Standards"
           href: cgms-a-standards.md
     - name: "Supporting Transient Multi-Monitor Manager"
-      href: supporting-transient-multi-monitor-manager.md
+# Auto-expanded node
       items: 
+      - name: "Supporting Transient Multi-Monitor Manager"
+        href: supporting-transient-multi-monitor-manager.md
       - name: "TMM Terminology"
         href: tmm-terminology.md
       - name: "Requirements of an IViewHelper Clone-View COM Object"
@@ -747,8 +867,10 @@
       - name: "Using an IViewHelper Clone-View COM Object"
         href: using-an-iviewhelper-clone-view-com-object.md
       - name: "Handling Monitor Configurations"
-        href: handling-monitor-configurations.md
+# Auto-expanded node
         items: 
+        - name: "Handling Monitor Configurations"
+          href: handling-monitor-configurations.md
         - name: "Handling Two Monitor Configurations"
           href: handling-two-monitor-configurations.md
         - name: "Handling Existing Monitor Configurations"
@@ -756,11 +878,15 @@
       - name: "Determining Whether a Platform is Mobile or Desktop"
         href: determining-whether-a-platform-is-mobile-or-desktop.md
     - name: "Connecting and Configuring Displays"
-      href: connecting-and-configuring-displays.md
+# Auto-expanded node
       items: 
+      - name: "Connecting and Configuring Displays"
+        href: connecting-and-configuring-displays.md
       - name: "CCD Concepts"
-        href: ccd-concepts.md
+# Auto-expanded node
         items: 
+        - name: "CCD Concepts"
+          href: ccd-concepts.md
         - name: "Forced Versus Connected Targets"
           href: forced-versus-connected-targets.md
         - name: "Path Priority Order"
@@ -772,11 +898,15 @@
         - name: "Scaling the Desktop Image"
           href: scaling-the-desktop-image.md
       - name: "CCD APIs"
-        href: ccd-apis.md
+# Auto-expanded node
         items: 
+        - name: "CCD APIs"
+          href: ccd-apis.md
         - name: "CCD Summaries and Scenarios"
-          href: ccd-summaries-and-scenarios.md
+# Auto-expanded node
           items: 
+          - name: "CCD Summaries and Scenarios"
+            href: ccd-summaries-and-scenarios.md
           - name: "QueryDisplayConfig Summary and Scenarios"
             href: querydisplayconfig-summary-and-scenarios.md
           - name: "GetDisplayConfigBufferSizes Summary and Scenarios"
@@ -790,8 +920,10 @@
         - name: "CCD Example Code"
           href: ccd-example-code.md
       - name: "CCD DDIs"
-        href: ccd-ddis.md
+# Auto-expanded node
         items: 
+        - name: "CCD DDIs"
+          href: ccd-ddis.md
         - name: "Obtaining Additional Monitor Target Modes"
           href: obtaining-additional-monitor-target-modes.md
         - name: "Using Aspect Ratio and Custom Scaling Modes"
@@ -805,8 +937,10 @@
       - name: "Example code for displaying an app on a portrait device"
         href: displaying-app-on-portrait-device.md
     - name: "Wireless displays (Miracast)"
-      href: wireless-displays--miracast-.md
+# Auto-expanded node
       items: 
+      - name: "Wireless displays (Miracast)"
+        href: wireless-displays--miracast-.md
       - name: "WDDM display miniport driver tasks to support Miracast wireless displays"
         href: wddm-display-miniport-driver-tasks-to-support-miracast-wireless-displays.md
       - name: "Miracast user-mode driver tasks to support Miracast wireless displays"
@@ -816,20 +950,26 @@
       - name: "Calling DisplayConfig functions for a Miracast target"
         href: calling-displayconfig-functions-for-a-miracast-target.md
     - name: "Direct3D Shader Codes"
-      href: direct3d-shader-codes.md
+# Auto-expanded node
       items: 
+      - name: "Direct3D Shader Codes"
+        href: direct3d-shader-codes.md
       - name: "Shader Relative Addressing"
         href: shader-relative-addressing.md
       - name: "Shader Code Format"
-        href: shader-code-format.md
+# Auto-expanded node
         items: 
+        - name: "Shader Code Format"
+          href: shader-code-format.md
         - name: "DCL Instruction Format"
           href: dcl-instruction.md
         - name: "SINCOS Instruction Format"
           href: sincos-instruction.md
       - name: "Shader Code Tokens"
-        href: shader-code-tokens.md
+# Auto-expanded node
         items: 
+        - name: "Shader Code Tokens"
+          href: shader-code-tokens.md
         - name: "Comment Token"
           href: comment-token.md
         - name: "Destination Parameter Token"
@@ -849,11 +989,15 @@
     - name: "GPU power management of idle states and active power"
       href: gpu-power-management-of-idle-and-active-power.md
   - name: "Reserved For System Use"
-    href: reserved-for-system-use.md
+# Auto-expanded node
     items: 
+    - name: "Reserved For System Use"
+      href: reserved-for-system-use.md
     - name: "D3dkmddi.h - Reserved"
-      href: d3dkmddi-h---reserved.md
+# Auto-expanded node
       items: 
+      - name: "D3dkmddi.h - Reserved"
+        href: d3dkmddi-h---reserved.md
       - name: "_DXGK_ALLOCATIONGROUPDESCRIPTOR"
         href: dxgk-allocationgroupdescriptor.md
       - name: "_DXGK_ALLOCATIONGROUPOUT"
@@ -911,8 +1055,10 @@
       - name: "DXGKDDISETPOWERPSTATE"
         href: dxgkddisetpowerpstate.md
     - name: "D3dkmdt.h - Reserved"
-      href: d3dkmdt-h---reserved.md
+# Auto-expanded node
       items: 
+      - name: "D3dkmdt.h - Reserved"
+        href: d3dkmdt-h---reserved.md
       - name: "D3DKMT_WDDM_1_2_CAPS"
         href: d3dkmt-wddm-1-2-caps.md
       - name: "D3DKMT_WDDM_1_3_CAPS"
@@ -922,13 +1068,17 @@
       - name: "DXGKMDT_OPM_CONNECTOR_TYPE"
         href: dxgkmdt-opm-connector-type.md
     - name: "D3dukmdt.h - Reserved"
-      href: d3dukmdt-h---reserved.md
+# Auto-expanded node
       items: 
+      - name: "D3dukmdt.h - Reserved"
+        href: d3dukmdt-h---reserved.md
       - name: "D3DDDI_OPENALLOCATIONINFO2"
         href: d3dddi-openallocationinfo2.md
     - name: "D3dkmthk.h - Reserved"
-      href: d3dkmthk-h---reserved.md
+# Auto-expanded node
       items: 
+      - name: "D3dkmthk.h - Reserved"
+        href: d3dkmthk-h---reserved.md
       - name: "D3DKMT_CREATE_OUTPUTDUPL"
         href: d3dkmt-create-outputdupl.md
       - name: "D3DKMT_DESTROY_OUTPUTDUPL"
@@ -946,7 +1096,7 @@
       - name: "D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT"
         href: d3dkmt-multiplane-overlay-stereo-format.md
       - name: "D3DKMT_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT"
-        href: d3dkmt-multiplane-overlay-video-frame-format.md
+        href: /windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-d3dkmt_multiplane_overlay_video_frame_format
       - name: "D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS"
         href: d3dkmt-multiplane-overlay-ycbcr-flags.md
       - name: "D3DKMT_OUTDUPL_POINTER_SHAPE_INFO"
@@ -984,10 +1134,12 @@
       - name: "OUTPUTDUPL_CONTEXT_DEBUG_STATUS"
         href: outputdupl-context-debug-status.md
     - name: "D3dumddi.h - Reserved"
-      href: d3dumddi-h---reserved.md
+# Auto-expanded node
       items: 
+      - name: "D3dumddi.h - Reserved"
+        href: d3dumddi-h---reserved.md
       - name: "D3DDDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO"
-        href: d3dddi-check-multiplane-overlay-support-plane-info.md
+        href: /windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddi_check_multiplane_overlay_support_plane_info
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER"
         href: d3dddi-multiplane-overlay-filter.md
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE"
@@ -995,8 +1147,10 @@
       - name: "D3DDDI_MULTIPLANE_OVERLAY_FILTER_TYPE"
         href: d3dddi-multiplane-overlay-filter-type.md
     - name: "Dispmprt.h - Reserved"
-      href: dispmprt-h---reserved.md
+# Auto-expanded node
       items: 
+      - name: "Dispmprt.h - Reserved"
+        href: dispmprt-h---reserved.md
       - name: "DXGKARG_SYSTEM_DISPLAY_ENABLE_FLAGS"
         href: dxgkarg-system-display-enable-flags.md
       - name: "DXGKDDI_CREATEALLOCATION2"
@@ -1012,21 +1166,29 @@
       - name: "DXGKDDI_UPDATEPAGETABLE"
         href: dxgkddiupdatepagetable.md
     - name: "Dxgiddi.h - Reserved"
-      href: dxgiddi-h---reserved.md
+# Auto-expanded node
       items: 
+      - name: "Dxgiddi.h - Reserved"
+        href: dxgiddi-h---reserved.md
       - name: "DXGI_DDI_MULTIPLANE_OVERLAY_STEREO_CAPS"
         href: dxgi-ddi-multiplane-overlay-stereo-caps.md
 - name: "Windows 2000 Display Driver Model (XDDM) Design Guide"
-  href: windows-2000-display-driver-model-design-guide.md
+# Auto-expanded node
   items: 
+  - name: "Windows 2000 Display Driver Model (XDDM) Design Guide"
+    href: windows-2000-display-driver-model-design-guide.md
   - name: "Roadmap for the Windows 2000 Display Driver Model (XDDM)"
     href: roadmap-for-developing-drivers-for-the-windows-2000-display-driver-mod.md
   - name: "Introduction to Display (Windows 2000 Model)"
-    href: introduction-to-display--windows-2000-model-.md
+# Auto-expanded node
     items: 
+    - name: "Introduction to Display (Windows 2000 Model)"
+      href: introduction-to-display--windows-2000-model-.md
     - name: "Windows 2000 Display Architecture"
-      href: windows-2000-display-architecture.md
+# Auto-expanded node
       items: 
+      - name: "Windows 2000 Display Architecture"
+        href: windows-2000-display-architecture.md
       - name: "Windows 2000 Display Driver Responsibilities"
         href: windows-2000-display-driver-responsibilities.md
       - name: "Windows 2000 Video Miniport Driver Responsibilities"
@@ -1034,8 +1196,10 @@
     - name: "General Design and Implementation Strategies"
       href: general-design-and-implementation-strategies.md
     - name: "Accessing the Graphics Adapter"
-      href: accessing-the-graphics-adapter.md
+# Auto-expanded node
       items: 
+      - name: "Accessing the Graphics Adapter"
+        href: accessing-the-graphics-adapter.md
       - name: "Communicating IOCTLs to the Video Miniport Driver"
         href: communicating-ioctls-to-the-video-miniport-driver.md
       - name: "Accessing the Frame Buffer and Hardware Registers"
@@ -1043,8 +1207,10 @@
     - name: "Fast User Switching"
       href: fast-user-switching.md
     - name: "Creating Graphics INF Files"
-      href: creating-graphics-inf-files.md
+# Auto-expanded node
       items: 
+      - name: "Creating Graphics INF Files"
+        href: creating-graphics-inf-files.md
       - name: "INF GeneralConfigData Section"
         href: inf-generalconfigdata-section.md
       - name: "Display INF File Sections"
@@ -1052,8 +1218,10 @@
       - name: "Monitor INF File Sections"
         href: monitor-inf-file-sections.md
     - name: "Testing Requirements for Display/Video Miniport Drivers"
-      href: compatibility-testing-requirements-for-display-and-video-miniport-driv.md
+# Auto-expanded node
       items: 
+      - name: "Testing Requirements for Display/Video Miniport Drivers"
+        href: compatibility-testing-requirements-for-display-and-video-miniport-driv.md
       - name: "INF and Installation Requirements"
         href: inf-and-installation-requirements.md
       - name: "Video Miniport Driver and Display Driver Requirements (Windows 2000 Model)"
@@ -1061,11 +1229,15 @@
       - name: "Control Panel Requirements"
         href: control-panel-requirements.md
   - name: "Display Drivers (Windows 2000 Model)"
-    href: display-drivers--windows-2000-model-.md
+# Auto-expanded node
     items: 
+    - name: "Display Drivers (Windows 2000 Model)"
+      href: display-drivers--windows-2000-model-.md
     - name: "Graphics DDI Functions for Display Drivers"
-      href: graphics-ddi-functions-for-display-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Graphics DDI Functions for Display Drivers"
+        href: graphics-ddi-functions-for-display-drivers.md
       - name: "Required Display Driver Functions"
         href: required-display-driver-functions.md
       - name: "Conditionally Required Display Driver Functions"
@@ -1079,8 +1251,8 @@
     - name: "Synchronization Issues for Display Drivers"
       href: synchronization-issues-for-display-drivers.md
     - name: "Debugging Display Drivers"
-      href: debugging-display-drivers.md
-      items: 
+# Auto-expanded node
+      items:
       - name: "Disabling EA Recovery"
         href: disabling-ea-recovery.md
       - name: "Disabling the Watchdog Timer While Testing Display Drivers"
@@ -1088,8 +1260,10 @@
       - name: "Display Hardware Acceleration Slider"
         href: display-hardware-acceleration-slider.md
     - name: "Desktop Management"
-      href: desktop-management.md
+# Auto-expanded node
       items: 
+      - name: "Desktop Management"
+        href: desktop-management.md
       - name: "Switching Desktops: Responding to DrvAssertMode"
         href: switching-desktops--responding-to-drvassertmode.md
       - name: "Returning Display Modes: DrvGetModes"
@@ -1097,11 +1271,15 @@
       - name: "Supporting Multiple PDEVs"
         href: supporting-multiple-pdevs.md
     - name: "Pointer Control"
-      href: pointer-control.md
+# Auto-expanded node
       items: 
+      - name: "Pointer Control"
+        href: pointer-control.md
       - name: "Pointer Drawing"
-        href: pointer-drawing.md
+# Auto-expanded node
         items: 
+        - name: "Pointer Drawing"
+          href: pointer-drawing.md
         - name: "Drawing Monochrome Pointers"
           href: drawing-monochrome-pointers.md
         - name: "Drawing Color Pointers"
@@ -1111,8 +1289,10 @@
       - name: "Moving the Pointer: DrvMovePointer"
         href: moving-the-pointer--drvmovepointer.md
     - name: "Display Control Interface Functions"
-      href: display-control-interface-functions.md
+# Auto-expanded node
       items: 
+      - name: "Display Control Interface Functions"
+        href: display-control-interface-functions.md
       - name: "DCIBeginAccess"
         href: dcibeginaccess.md
       - name: "DCICloseProvider"
@@ -1152,8 +1332,10 @@
     - name: "Special Effects in Display Drivers"
       href: special-effects-in-display-drivers.md
     - name: "Color Management for Displays"
-      href: color-management-for-displays.md
+# Auto-expanded node
       items: 
+      - name: "Color Management for Displays"
+        href: color-management-for-displays.md
       - name: "Monitor Profiles"
         href: monitor-profiles.md
     - name: "DirectDraw and GDI"
@@ -1173,8 +1355,10 @@
     - name: "Disabling Timeout Recovery for Display Drivers"
       href: disabling-timeout-recovery-for-display-drivers.md
     - name: "Mirror Drivers"
-      href: mirror-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Mirror Drivers"
+        href: mirror-drivers.md
       - name: "Remote Display Drivers"
         href: remote-display-drivers.md
       - name: "Video Port DDI Support"
@@ -1184,33 +1368,45 @@
       - name: "Mirror Driver Installation"
         href: mirror-driver-installation.md
     - name: "Display Driver Testing Tools"
-      href: display-driver-testing-tools.md
+# Auto-expanded node
       items: 
+      - name: "Display Driver Testing Tools"
+        href: display-driver-testing-tools.md
       - name: "NewDisp: Dynamic Reload of a Display Driver"
         href: newdisp--dynamic-reload-of-a-display-driver.md
       - name: "Dynamic Change of Permitted Driver Accelerations"
         href: dynamic-change-of-permitted-driver-accelerations.md
   - name: "DirectDraw"
-    href: directdraw.md
+# Auto-expanded node
     items: 
+    - name: "DirectDraw"
+      href: directdraw.md
     - name: "About DirectDraw"
-      href: about-directdraw.md
+# Auto-expanded node
       items: 
+      - name: "About DirectDraw"
+        href: about-directdraw.md
       - name: "DirectDraw Architecture"
         href: directdraw-architecture.md
       - name: "The DirectDraw Driver"
-        href: the-directdraw-driver.md
+# Auto-expanded node
         items: 
+        - name: "The DirectDraw Driver"
+          href: the-directdraw-driver.md
         - name: "First Steps For DirectDraw Drivers"
           href: first-steps-for-directdraw-drivers.md
       - name: "Hardware Emulation Layer"
         href: hardware-emulation-layer.md
     - name: "DirectDraw Driver Fundamentals"
-      href: directdraw-driver-fundamentals.md
+# Auto-expanded node
       items: 
+      - name: "DirectDraw Driver Fundamentals"
+        href: directdraw-driver-fundamentals.md
       - name: "DirectDraw Surfaces"
-        href: directdraw-surfaces.md
+# Auto-expanded node
         items: 
+        - name: "DirectDraw Surfaces"
+          href: directdraw-surfaces.md
         - name: "Complex Surfaces and Attachments"
           href: complex-surfaces-and-attachments.md
         - name: "Creating and Destroying DirectDraw Surfaces"
@@ -1220,13 +1416,17 @@
         - name: "Losing Driver-Managed Textures"
           href: losing-driver-managed-textures.md
       - name: "Display Memory"
-        href: display-memory.md
+# Auto-expanded node
         items: 
+        - name: "Display Memory"
+          href: display-memory.md
         - name: "Memory Heap Allocation"
           href: memory-heap-allocation.md
       - name: "Memory Configurations"
-        href: memory-configurations.md
+# Auto-expanded node
         items: 
+        - name: "Memory Configurations"
+          href: memory-configurations.md
         - name: "Linear Memory Allocation"
           href: linear-memory-allocation.md
         - name: "Rectangular Memory Allocation"
@@ -1234,8 +1434,10 @@
         - name: "Mixed Memory Allocation"
           href: mixed-memory-allocation.md
       - name: "Flipping"
-        href: flipping.md
+# Auto-expanded node
         items: 
+        - name: "Flipping"
+          href: flipping.md
         - name: "Tearing"
           href: tearing.md
         - name: "Triple Buffering"
@@ -1251,8 +1453,10 @@
         - name: "Flipping to the GDI Surface"
           href: flipping-to-the-gdi-surface.md
       - name: "Blitting"
-        href: blitting.md
+# Auto-expanded node
         items: 
+        - name: "Blitting"
+          href: blitting.md
         - name: "Transparent Blt"
           href: transparent-blt.md
         - name: "Clip Lists"
@@ -1270,24 +1474,34 @@
       - name: "Return Values for DirectDraw"
         href: return-values-for-directdraw.md
     - name: "DirectDraw Driver Initialization"
-      href: directdraw-driver-initialization.md
+# Auto-expanded node
       items: 
+      - name: "DirectDraw Driver Initialization"
+        href: directdraw-driver-initialization.md
       - name: "Windows 2000 Driver Initialization"
-        href: windows-2000-driver-initialization.md
+# Auto-expanded node
         items: 
+        - name: "Windows 2000 Driver Initialization"
+          href: windows-2000-driver-initialization.md
         - name: "DirectDraw Callback Support Using DrvEnableDirectDraw"
           href: directdraw-callback-support-using-drvenabledirectdraw.md
         - name: "DirectDraw and Direct3D Callback Support Using DdGetDriverInfo"
           href: directdraw-and-direct3d-callback-support-using-ddgetdriverinfo.md
     - name: "Video Port Extensions to DirectX"
-      href: video-port-extensions-to-directx.md
+# Auto-expanded node
       items: 
+      - name: "Video Port Extensions to DirectX"
+        href: video-port-extensions-to-directx.md
       - name: "Video Port Extensions Background"
-        href: video-port-extensions-background.md
+# Auto-expanded node
         items: 
+        - name: "Video Port Extensions Background"
+          href: video-port-extensions-background.md
         - name: "Displaying Video on Interlaced and Proscan Monitors"
-          href: displaying-video-on-interlaced-and-proscan-monitors.md
+# Auto-expanded node
           items: 
+          - name: "Displaying Video on Interlaced and Proscan Monitors"
+            href: displaying-video-on-interlaced-and-proscan-monitors.md
           - name: "NTSC and Interlaced Data"
             href: ntsc-and-interlaced-data.md
           - name: "NTSC/PAL Conversion"
@@ -1297,8 +1511,10 @@
           - name: "Progressive Scan Monitors and Interleaved Data"
             href: progressive-scan-monitors-and-interleaved-data.md
         - name: "Displaying Interleaved Video with VPE"
-          href: displaying-interleaved-video-with-vpe.md
+# Auto-expanded node
           items: 
+          - name: "Displaying Interleaved Video with VPE"
+            href: displaying-interleaved-video-with-vpe.md
           - name: "Bob Method"
             href: bob-method.md
           - name: "Weave Method"
@@ -1308,8 +1524,10 @@
         - name: "VPE Functions in DirectDraw API and Driver"
           href: vpe-functions-in-directdraw-api-and-driver.md
       - name: "DirectX VPE Initialization"
-        href: directx-vpe-initialization.md
+# Auto-expanded node
         items: 
+        - name: "DirectX VPE Initialization"
+          href: directx-vpe-initialization.md
         - name: "VPE Callback Functions"
           href: vpe-callback-functions.md
       - name: "DirectDraw Interfaces for Kernel-Mode Video Transport Support"
@@ -1317,8 +1535,10 @@
     - name: "Color Control Initialization"
       href: color-control-initialization.md
     - name: "AGP Support"
-      href: agp-support.md
+# Auto-expanded node
       items: 
+      - name: "AGP Support"
+        href: agp-support.md
       - name: "Flagging Support for Nonlocal Display Memory"
         href: flagging-support-for-nonlocal-display-memory.md
       - name: "Specifying Nonlocal Display Memory Heaps"
@@ -1330,8 +1550,10 @@
       - name: "Reordering Textures In Nonlocal Display Memory"
         href: reordering-textures-in-nonlocal-display-memory.md
       - name: "Handling DMA-style AGP"
-        href: handling-dma-style-agp.md
+# Auto-expanded node
         items: 
+        - name: "Handling DMA-style AGP"
+          href: handling-dma-style-agp.md
         - name: "Flagging Support for DMA Model Nonlocal Display Memory"
           href: flagging-support-for-dma-model-nonlocal-display-memory.md
         - name: "Reporting DirectDraw Capabilities for Nonlocal Display Memory"
@@ -1341,21 +1563,29 @@
       - name: "Managing AGP Heaps"
         href: managing-agp-heaps.md
     - name: "Kernel-Mode Video Transport"
-      href: kernel-mode-video-transport.md
+# Auto-expanded node
       items: 
+      - name: "Kernel-Mode Video Transport"
+        href: kernel-mode-video-transport.md
       - name: "VPE and Kernel-Mode Video Transport Architecture"
         href: vpe-and-kernel-mode-video-transport-architecture.md
       - name: "Using Kernel-Mode Video Transport"
-        href: using-kernel-mode-video-transport.md
+# Auto-expanded node
         items: 
+        - name: "Using Kernel-Mode Video Transport"
+          href: using-kernel-mode-video-transport.md
         - name: "Getting the User-Mode Handles"
           href: getting-the-user-mode-handles.md
       - name: "Using the DxApi Interface"
-        href: using-the-dxapi-interface.md
+# Auto-expanded node
         items: 
+        - name: "Using the DxApi Interface"
+          href: using-the-dxapi-interface.md
         - name: "DxApi Miniport Driver Functions For Windows 2000 and Later"
-          href: dxapi-miniport-driver-functions-for-windows-2000-and-later.md
+# Auto-expanded node
           items: 
+          - name: "DxApi Miniport Driver Functions For Windows 2000 and Later"
+            href: dxapi-miniport-driver-functions-for-windows-2000-and-later.md
           - name: "DxApi Miniport Driver Initialization"
             href: dxapi-miniport-driver-initialization.md
           - name: "Kernel-Mode Video Transport Callback Functions"
@@ -1365,15 +1595,19 @@
           - name: "Video VBI Capture"
             href: video-vbi-capture.md
     - name: "Extended Surface Alignment"
-      href: extended-surface-alignment.md
+# Auto-expanded node
       items: 
+      - name: "Extended Surface Alignment"
+        href: extended-surface-alignment.md
       - name: "Review of the Older Alignment Method"
         href: review-of-the-older-alignment-method.md
       - name: "Using Extended Surface Alignment"
         href: using-extended-surface-alignment.md
     - name: "Extended Surface Capabilities"
-      href: extended-surface-capabilities.md
+# Auto-expanded node
       items: 
+      - name: "Extended Surface Capabilities"
+        href: extended-surface-capabilities.md
       - name: "Extended Surface Capability Flags"
         href: extended-surface-capability-flags.md
       - name: "Exposing the Extended Surface Capabilities"
@@ -1383,8 +1617,10 @@
       - name: "Extended Surface Description Structure"
         href: extended-surface-description-structure.md
     - name: "Compressed Texture Surfaces"
-      href: compressed-texture-surfaces.md
+# Auto-expanded node
       items: 
+      - name: "Compressed Texture Surfaces"
+        href: compressed-texture-surfaces.md
       - name: "Enumerating DXT Formats"
         href: enumerating-dxt-formats.md
       - name: "Creating the Compressed Texture Surface"
@@ -1398,20 +1634,26 @@
       - name: "DirectX Compressed VolumeTexture Formats"
         href: directx-compressed-volumetexture-formats.md
     - name: "Compressed Video Decoding"
-      href: compressed-video-decoding.md
+# Auto-expanded node
       items: 
+      - name: "Compressed Video Decoding"
+        href: compressed-video-decoding.md
       - name: "Motion Compensation"
         href: motion-compensation.md
       - name: "Motion Compensation Callbacks"
         href: motion-compensation-callbacks.md
   - name: "Direct3D DDI"
-    href: direct3d.md
+# Auto-expanded node
     items: 
+    - name: "Direct3D DDI"
+      href: direct3d.md
     - name: "Cross Platform Direct3D Driver Development"
       href: cross-platform-direct3d-driver-development.md
     - name: "Direct3D Implementation Requirements"
-      href: direct3d-implementation-requirements.md
+# Auto-expanded node
       items: 
+      - name: "Direct3D Implementation Requirements"
+        href: direct3d-implementation-requirements.md
       - name: "Render Target Requirements"
         href: render-target-requirements.md
       - name: "Point, Line, and Triangle Filling Requirements"
@@ -1421,13 +1663,17 @@
       - name: "Texturing Requirements"
         href: texturing-requirements.md
     - name: "Direct3D Driver DDI"
-      href: direct3d-driver-ddi.md
+# Auto-expanded node
       items: 
+      - name: "Direct3D Driver DDI"
+        href: direct3d-driver-ddi.md
       - name: "Driver Functions to Support Direct3D"
         href: driver-functions-to-support-direct3d.md
       - name: "CPixel Support Methods for Lightweight MIP Maps"
-        href: cpixel-support-methods-for-lightweight-mip-maps.md
+# Auto-expanded node
         items: 
+        - name: "CPixel Support Methods for Lightweight MIP Maps"
+          href: cpixel-support-methods-for-lightweight-mip-maps.md
         - name: "CPixel::ComputeSurfaceSize"
           href: cpixel-computesurfacesize.md
         - name: "CPixel::ComputeVolumeSize"
@@ -1443,8 +1689,10 @@
         - name: "CPixel::ComputeSurfaceOffset"
           href: cpixel-computesurfaceoffset.md
       - name: "Operation Code Handling"
-        href: operation-code-handling.md
+# Auto-expanded node
         items: 
+        - name: "Operation Code Handling"
+          href: operation-code-handling.md
         - name: "Command Stream"
           href: command-stream.md
         - name: "Improving Performance of Operation Handling"
@@ -1456,8 +1704,10 @@
     - name: "Direct3D Driver Initialization"
       href: direct3d-driver-initialization.md
     - name: "Direct3D Context Management"
-      href: direct3d-context-management.md
+# Auto-expanded node
       items: 
+      - name: "Direct3D Context Management"
+        href: direct3d-context-management.md
       - name: "Creating and Destroying a Context"
         href: creating-and-destroying-a-context.md
       - name: "Maintaining State Within a Context"
@@ -1469,8 +1719,10 @@
       - name: "Pointers to DirectDraw Surfaces"
         href: pointers-to-directdraw-surfaces.md
       - name: "D3dCreateSurfaceEx Handles"
-        href: d3dcreatesurfaceex-handles.md
+# Auto-expanded node
         items: 
+        - name: "D3dCreateSurfaceEx Handles"
+          href: d3dcreatesurfaceex-handles.md
         - name: "D3dCreateSurfaceEx and Backing Surfaces"
           href: d3dcreatesurfaceex-and-backing-surfaces.md
         - name: "D3dCreateSurfaceEx and Complex Surfaces"
@@ -1486,11 +1738,15 @@
         - name: "Lost Surfaces, Surface Handles, and Contexts"
           href: lost-surfaces--surface-handles--and-contexts.md
     - name: "Direct3D Texture Management"
-      href: direct3d-texture-management.md
+# Auto-expanded node
       items: 
+      - name: "Direct3D Texture Management"
+        href: direct3d-texture-management.md
       - name: "Multiple Textures"
-        href: multiple-textures.md
+# Auto-expanded node
         items: 
+        - name: "Multiple Textures"
+          href: multiple-textures.md
         - name: "Texture Stages"
           href: texture-stages.md
         - name: "Processing Texture Stages"
@@ -1512,11 +1768,15 @@
       - name: "Driver-Managed Resources"
         href: driver-managed-resources.md
     - name: "Primitive Drawing and State Changes"
-      href: primitive-drawing-and-state-changes.md
+# Auto-expanded node
       items: 
+      - name: "Primitive Drawing and State Changes"
+        href: primitive-drawing-and-state-changes.md
       - name: "Command and Vertex Buffers"
-        href: command-and-vertex-buffers.md
+# Auto-expanded node
         items: 
+        - name: "Command and Vertex Buffers"
+          href: command-and-vertex-buffers.md
         - name: "Command and Vertex Buffer Allocation"
           href: command-and-vertex-buffer-allocation.md
       - name: "Direct3D Command Buffers"
@@ -1528,16 +1788,22 @@
       - name: "Setting the Number of Line Pattern Repetitions"
         href: setting-the-number-of-line-pattern-repetitions.md
     - name: "FVF (Flexible Vertex Format)"
-      href: fvf--flexible-vertex-format-.md
+# Auto-expanded node
       items: 
+      - name: "FVF (Flexible Vertex Format)"
+        href: fvf--flexible-vertex-format-.md
       - name: "Determining the Vertex Buffer Data Format"
         href: determining-the-vertex-buffer-data-format.md
     - name: "Advanced Direct3D Driver Topics"
-      href: advanced-direct3d-driver-topics.md
+# Auto-expanded node
       items: 
+      - name: "Advanced Direct3D Driver Topics"
+        href: advanced-direct3d-driver-topics.md
       - name: "Optimized Textures"
-        href: optimized-textures.md
+# Auto-expanded node
         items: 
+        - name: "Optimized Textures"
+          href: optimized-textures.md
         - name: "Optimized Texture API"
           href: optimized-texture-api.md
       - name: "Stencil Planes"
@@ -1547,8 +1813,10 @@
       - name: "Extents Adjustment"
         href: extents-adjustment.md
       - name: "W-Buffering"
-        href: w-buffering.md
+# Auto-expanded node
         items: 
+        - name: "W-Buffering"
+          href: w-buffering.md
         - name: "W-Buffering API"
           href: w-buffering-api.md
         - name: "W-Buffering DDI"
@@ -1556,11 +1824,15 @@
       - name: "Bump Mapping"
         href: bump-mapping.md
       - name: "Hardware Transform and Lighting"
-        href: hardware-transform-and-lighting.md
+# Auto-expanded node
         items: 
+        - name: "Hardware Transform and Lighting"
+          href: hardware-transform-and-lighting.md
         - name: "Vertex Blending"
-          href: vertex-blending.md
+# Auto-expanded node
           items: 
+          - name: "Vertex Blending"
+            href: vertex-blending.md
           - name: "Multimatrix Vertex Blending"
             href: multimatrix-vertex-blending.md
           - name: "Multimatrix Vertex Blending Algorithm"
@@ -1576,13 +1848,17 @@
         - name: "Texture Coordinate Transformations"
           href: texture-coordinate-transformations.md
         - name: "Cube Environment Map Support"
-          href: cube-environment-map-support.md
+# Auto-expanded node
           items: 
+          - name: "Cube Environment Map Support"
+            href: cube-environment-map-support.md
           - name: "Environment Mapping with Standard Diffuse Lighting"
             href: integration-of-environment-mapping-with-standard-diffuse-lighting.md
         - name: "Vertex and Pixel Fogging "
-          href: vertex-and-pixel-fogging.md
+# Auto-expanded node
           items: 
+          - name: "Vertex and Pixel Fogging "
+            href: vertex-and-pixel-fogging.md
           - name: "Vertex Fog"
             href: vertex-fog.md
           - name: "Pixel Fog"
@@ -1590,8 +1866,10 @@
           - name: "Range Based Fog"
             href: range-based-fog.md
     - name: "DirectX 7.0 Release Notes"
-      href: directx-7-0-release-notes.md
+# Auto-expanded node
       items: 
+      - name: "DirectX 7.0 Release Notes"
+        href: directx-7-0-release-notes.md
       - name: "FVF Update"
         href: fvf-update.md
       - name: "Rasterizer Update"
@@ -1599,11 +1877,15 @@
       - name: "MIP Map Surface Creation Update"
         href: mip-map-surface-creation-update.md
     - name: "DirectX 8.0 Release Notes"
-      href: directx-8-0-release-notes.md
+# Auto-expanded node
       items: 
+      - name: "DirectX 8.0 Release Notes"
+        href: directx-8-0-release-notes.md
       - name: "Header Files for DirectX 8.0 Drivers"
-        href: header-files-for-directx-8-0-drivers.md
+# Auto-expanded node
         items: 
+        - name: "Header Files for DirectX 8.0 Drivers"
+          href: header-files-for-directx-8-0-drivers.md
         - name: "DIRECT3D_VERSION"
           href: direct3d-version.md
       - name: "Minimal DirectX 8.0 DDI Support"
@@ -1611,8 +1893,10 @@
       - name: "Supporting GetDriverInfo2"
         href: supporting-getdriverinfo2.md
       - name: "Reporting DirectX 8.0 Style Direct3D Capabilities"
-        href: reporting-directx-8-0-style-direct3d-capabilities.md
+# Auto-expanded node
         items: 
+        - name: "Reporting DirectX 8.0 Style Direct3D Capabilities"
+          href: reporting-directx-8-0-style-direct3d-capabilities.md
         - name: "Minimum Capability Requirements for DirectX 8.0 Drivers"
           href: minimum-capability-requirements-for-directx-8-0-drivers.md
         - name: "Reporting Support for Video Memory Vertex and Index Buffers"
@@ -1620,15 +1904,19 @@
         - name: "Setting Presentation Swap Intervals"
           href: setting-presentation-swap-intervals.md
       - name: "The Texture Format List"
-        href: the-texture-format-list.md
+# Auto-expanded node
         items: 
+        - name: "The Texture Format List"
+          href: the-texture-format-list.md
         - name: "Format Operations"
           href: format-operations.md
         - name: "Surface Formats as FOURCCs"
           href: surface-formats-as-fourccs.md
       - name: "Multiple Vertex Streams"
-        href: multiple-vertex-streams.md
+# Auto-expanded node
         items: 
+        - name: "Multiple Vertex Streams"
+          href: multiple-vertex-streams.md
         - name: "Reporting Multiple Vertex Stream Capability"
           href: reporting-multiple-vertex-stream-capability.md
         - name: "Stream Zero"
@@ -1636,18 +1924,24 @@
         - name: "Notification of Stream and Vertex Buffer Binding"
           href: notification-of-stream-and-vertex-buffer-binding.md
       - name: "Vertex and Index Buffers"
-        href: vertex-and-index-buffers.md
+# Auto-expanded node
         items: 
+        - name: "Vertex and Index Buffers"
+          href: vertex-and-index-buffers.md
         - name: "Index Buffers"
-          href: index-buffers.md
+# Auto-expanded node
           items: 
+          - name: "Index Buffers"
+            href: index-buffers.md
           - name: "Reporting Support for 32-bit Indices"
             href: reporting-support-for-32-bit-indices.md
           - name: "Setting the Current Index Buffer"
             href: setting-the-current-index-buffer.md
         - name: "Vertex Buffers"
-          href: vertex-buffers.md
+# Auto-expanded node
           items: 
+          - name: "Vertex Buffers"
+            href: vertex-buffers.md
           - name: "Vertex Buffer Callbacks and Windows 2000"
             href: vertex-buffer-callbacks-and-windows-2000.md
           - name: "Vertex Buffer Creation Handling on Windows 2000"
@@ -1657,13 +1951,17 @@
           - name: "Handling Renaming on Windows 2000"
             href: handling-renaming-on-windows-2000.md
       - name: "New DP2 Stream Drawing Tokens"
-        href: new-dp2-stream-drawing-tokens.md
+# Auto-expanded node
         items: 
+        - name: "New DP2 Stream Drawing Tokens"
+          href: new-dp2-stream-drawing-tokens.md
         - name: "Copying Vertex and Index Buffers in the DP2 Stream"
           href: copying-vertex-and-index-buffers-in-the-dp2-stream.md
       - name: "Point Sprites"
-        href: point-sprites.md
+# Auto-expanded node
         items: 
+        - name: "Point Sprites"
+          href: point-sprites.md
         - name: "Reporting Support for Point Sprites"
           href: reporting-support-for-point-sprites.md
         - name: "Computing the Size of Point Sprites"
@@ -1671,8 +1969,10 @@
         - name: "Rendering Point Sprites"
           href: rendering-point-sprites.md
       - name: "Volume Textures"
-        href: volume-textures.md
+# Auto-expanded node
         items: 
+        - name: "Volume Textures"
+          href: volume-textures.md
         - name: "Reporting Support for Volume Textures"
           href: reporting-support-for-volume-textures.md
         - name: "Handling the Creation of Volume Textures"
@@ -1682,8 +1982,10 @@
         - name: "Locking a Subvolume of a Volume Texture"
           href: locking-a-subvolume-of-a-volume-texture.md
       - name: "Presentation"
-        href: presentation.md
+# Auto-expanded node
         items: 
+        - name: "Presentation"
+          href: presentation.md
         - name: "New DDSCAPS2 Flags"
           href: new-ddscaps2-flags.md
         - name: "Present and GetBltStatus"
@@ -1693,21 +1995,29 @@
       - name: "Cursors"
         href: cursors.md
       - name: "Direct3D Shaders"
-        href: direct3d-shaders.md
+# Auto-expanded node
         items: 
+        - name: "Direct3D Shaders"
+          href: direct3d-shaders.md
         - name: "Vertex Shaders"
-          href: vertex-shaders.md
+# Auto-expanded node
           items: 
+          - name: "Vertex Shaders"
+            href: vertex-shaders.md
           - name: "Reporting Support for Programmable Vertex Shader Hardware"
             href: reporting-support-for-programmable-vertex-processing-hardware.md
         - name: "Pixel Shaders"
-          href: pixel-shaders.md
+# Auto-expanded node
           items: 
+          - name: "Pixel Shaders"
+            href: pixel-shaders.md
           - name: "Reporting Support for Programmable Pixel Shader Hardware"
             href: reporting-support-for-programmable-pixel-processing-hardware.md
       - name: "High Order Surfaces"
-        href: high-order-surfaces.md
+# Auto-expanded node
         items: 
+        - name: "High Order Surfaces"
+          href: high-order-surfaces.md
         - name: "Reporting Support for High Order Surfaces"
           href: reporting-support-for-high-order-surfaces.md
         - name: "High Order Surface DP2 Stream Drawing Tokens"
@@ -1715,8 +2025,10 @@
         - name: "High Order Surface Render States"
           href: high-order-surface-render-states.md
       - name: "Multisample Rendering"
-        href: multisample-rendering.md
+# Auto-expanded node
         items: 
+        - name: "Multisample Rendering"
+          href: multisample-rendering.md
         - name: "Reporting Multisample Support"
           href: reporting-multisample-support.md
         - name: "Multisample Support through StretchBlt"
@@ -1728,8 +2040,10 @@
         - name: "Controlling Multisampling"
           href: controlling-multisampling.md
       - name: "Pure Devices"
-        href: pure-devices.md
+# Auto-expanded node
         items: 
+        - name: "Pure Devices"
+          href: pure-devices.md
         - name: "Reporting Pure Device Capability"
           href: reporting-pure-device-capability.md
         - name: "State Block Recording and Pure Devices"
@@ -1743,30 +2057,40 @@
       - name: "GDI Event Services in Windows 2000"
         href: gdi-event-services-in-windows-2000.md
     - name: "DirectX 9.0 Release Notes"
-      href: directx-9-0-release-notes.md
+# Auto-expanded node
       items: 
+      - name: "DirectX 9.0 Release Notes"
+        href: directx-9-0-release-notes.md
       - name: "Header Files for DirectX 9.0 Drivers"
         href: header-files-for-directx-9-0-drivers.md
       - name: "Required DirectX 9.0 Driver Support"
-        href: required-directx-9-0-driver-support.md
+# Auto-expanded node
         items: 
+        - name: "Required DirectX 9.0 Driver Support"
+          href: required-directx-9-0-driver-support.md
         - name: "Supporting Two-Dimensional Operations"
-          href: supporting-two-dimensional-operations.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Two-Dimensional Operations"
+            href: supporting-two-dimensional-operations.md
           - name: "Reporting Support for 2D Operations Using Surface Formats"
             href: reporting-support-for-2d-operations-using-surface-formats.md
           - name: "Using DXVA with 2D Operations"
             href: using-dxva-with-2d-operations.md
         - name: "Supporting Dynamic Resources"
-          href: supporting-dynamic-resources.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Dynamic Resources"
+            href: supporting-dynamic-resources.md
           - name: "Dynamic Vertex and Index Buffers"
             href: dynamic-vertex-and-index-buffers.md
           - name: "Dynamic Textures"
             href: dynamic-textures.md
         - name: "Supporting Vertex Shader Declarations"
-          href: supporting-vertex-shader-declarations.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Vertex Shader Declarations"
+            href: supporting-vertex-shader-declarations.md
           - name: "Separating Declarations and Code for Vertex Shaders"
             href: separating-declarations-and-code-for-vertex-shaders.md
           - name: "Supporting Vertex Elements Sharing Offset in a Stream"
@@ -1774,22 +2098,28 @@
           - name: "Handling Vertex Elements"
             href: handling-vertex-elements.md
         - name: "Supporting Stream Offsets"
-          href: supporting-stream-offsets.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Stream Offsets"
+            href: supporting-stream-offsets.md
           - name: "Reporting Support for Stream Offsets"
             href: reporting-support-for-stream-offsets.md
         - name: "Reporting Support of UBYTE4 Vertex Element"
           href: reporting-support-of-ubyte4-vertex-element.md
         - name: "Supporting Commands for Setting Render Target"
-          href: supporting-commands-for-setting-render-target.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Commands for Setting Render Target"
+            href: supporting-commands-for-setting-render-target.md
           - name: "Setting Multiple Render Targets and Depth Stencils"
             href: setting-multiple-render-targets-and-depth-stencils.md
           - name: "Verifying Validity of Render Target"
             href: verifying-validity-of-render-target.md
         - name: "Setting Scissor Rectangle"
-          href: setting-scissor-rectangle.md
+# Auto-expanded node
           items: 
+          - name: "Setting Scissor Rectangle"
+            href: setting-scissor-rectangle.md
           - name: "Reporting Support for Scissor Rectangle"
             href: reporting-support-for-scissor-rectangle.md
         - name: "Notifying about DirectX Version"
@@ -1797,8 +2127,10 @@
         - name: "Reporting DDI Version"
           href: reporting-ddi-version.md
         - name: "Supporting Asynchronous Query Operations"
-          href: supporting-asynchronous-query-operations.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Asynchronous Query Operations"
+            href: supporting-asynchronous-query-operations.md
           - name: "Verifying Support of Query Types"
             href: verifying-support-of-query-types.md
           - name: "Handling Asynchronous Queries"
@@ -1810,18 +2142,24 @@
       - name: "Recommended DirectX 9.0 Driver Support"
         href: recommended-directx-9-0-driver-support.md
       - name: "Optional DirectX 9.0 Driver Support"
-        href: optional-directx-9-0-driver-support.md
+# Auto-expanded node
         items: 
+        - name: "Optional DirectX 9.0 Driver Support"
+          href: optional-directx-9-0-driver-support.md
         - name: "Controlling Multiple-Sample Rendering"
-          href: controlling-multiple-sample-rendering.md
+# Auto-expanded node
           items: 
+          - name: "Controlling Multiple-Sample Rendering"
+            href: controlling-multiple-sample-rendering.md
           - name: "Controlling Quality of Multiple-Sample Rendering"
             href: controlling-quality-of-multiple-sample-rendering.md
           - name: "Dynamically Controlling Multiple-Sample Rendering"
             href: dynamically-controlling-multiple-sample-rendering.md
         - name: "Supporting Nonstandard Display Modes"
-          href: supporting-nonstandard-display-modes.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Nonstandard Display Modes"
+            href: supporting-nonstandard-display-modes.md
           - name: "Enumerating Extended Formats"
             href: enumerating-extended-formats.md
           - name: "Switching Between Standard and Nonstandard Modes"
@@ -1829,8 +2167,10 @@
           - name: "Handling Nonstandard Display Modes"
             href: handling-nonstandard-display-modes.md
         - name: "Supporting Multiple-Head Hardware"
-          href: supporting-multiple-head-hardware.md
+# Auto-expanded node
           items: 
+          - name: "Supporting Multiple-Head Hardware"
+            href: supporting-multiple-head-hardware.md
           - name: "Identifying Adapter Group and Providing Capabilities"
             href: identifying-adapter-group-and-providing-capabilities.md
           - name: "Creating Heads"
@@ -1846,8 +2186,10 @@
           - name: "Using Multiple Multiple-Head Adapters"
             href: using-multiple-multiple-head-adapters.md
         - name: "Managing MIP Map Textures"
-          href: managing-mip-map-textures.md
+# Auto-expanded node
           items: 
+          - name: "Managing MIP Map Textures"
+            href: managing-mip-map-textures.md
           - name: "Handling Lightweight MIP Map Textures"
             href: handling-lightweight-mip-map-textures.md
           - name: "Obtaining Sublevels of Lightweight MIP Map Textures"
@@ -1855,8 +2197,10 @@
           - name: "Generating Sublevels of MIP Map Textures"
             href: generating-sublevels-of-mip-map-textures.md
         - name: "Handling Gamma Correction"
-          href: handling-gamma-correction.md
+# Auto-expanded node
           items: 
+          - name: "Handling Gamma Correction"
+            href: handling-gamma-correction.md
           - name: "Marking Formats for Gamma and Linear Conversion"
             href: marking-formats-for-gamma-and-linear-conversion.md
           - name: "Performing Gamma Correction on Swap Chains"
@@ -1864,8 +2208,10 @@
         - name: "Supporting Stretch Blit Operations"
           href: supporting-stretch-blit-operations.md
         - name: "Rendering to Multiple Targets Simultaneously"
-          href: rendering-to-multiple-targets-simultaneously.md
+# Auto-expanded node
           items: 
+          - name: "Rendering to Multiple Targets Simultaneously"
+            href: rendering-to-multiple-targets-simultaneously.md
           - name: "Required Features for Multiple Render Targets"
             href: required-features-for-multiple-render-targets.md
           - name: "Optional Features for Multiple Render Targets"
@@ -1883,22 +2229,28 @@
         - name: "Supporting Additional Instruction Slots for Shader 3"
           href: supporting-additional-instruction-slots-for-shader-3.md
         - name: "Reporting Capabilities for Shader Versions"
-          href: reporting-capabilities-for-shader-versions.md
+# Auto-expanded node
           items: 
+          - name: "Reporting Capabilities for Shader Versions"
+            href: reporting-capabilities-for-shader-versions.md
           - name: "Reporting Capabilities for Shader 2 Support"
             href: reporting-capabilities-for-shader-2-support.md
           - name: "Reporting Capabilities for Shader 3 Support"
             href: reporting-capabilities-for-shader-3-support.md
       - name: "Updates for Windows DDK"
-        href: updates-for-windows-ddk.md
+# Auto-expanded node
         items: 
+        - name: "Updates for Windows DDK"
+          href: updates-for-windows-ddk.md
         - name: "Allocating Nonpaged Display Memory"
           href: allocating-nonpaged-display-memory.md
         - name: "The Max Size of Bug-check Data in a Video Miniport Driver"
           href: specifying-maximum-size-of-bug-check-data-in-a-video-miniport-driver.md
       - name: "Updates for Earlier DirectX DDK Versions"
-        href: updates-for-earlier-directx-ddk-versions.md
+# Auto-expanded node
         items: 
+        - name: "Updates for Earlier DirectX DDK Versions"
+          href: updates-for-earlier-directx-ddk-versions.md
         - name: "Promoting Z Buffers to 32 Bits Per Pixel"
           href: promoting-z-buffers-to-32-bits-per-pixel.md
         - name: "Destroying Objects Associated with a Direct3D Context"
@@ -1908,21 +2260,29 @@
         - name: "Default Texture Coordinates in Vertex Declarations"
           href: supplying-default-values-for-texture-coordinates-in-vertex-declaration.md
   - name: "DirectX Video Acceleration"
-    href: directx-video-acceleration.md
+# Auto-expanded node
     items: 
+    - name: "DirectX Video Acceleration"
+      href: directx-video-acceleration.md
     - name: "Introduction to DirectX VA"
-      href: introduction-to-directx-va.md
+# Auto-expanded node
       items: 
+      - name: "Introduction to DirectX VA"
+        href: introduction-to-directx-va.md
       - name: "Implementation of Current Standards"
-        href: implementation-of-current-standards.md
+# Auto-expanded node
         items: 
+        - name: "Implementation of Current Standards"
+          href: implementation-of-current-standards.md
         - name: "ITU-T H.261"
           href: itu-t-h-261.md
         - name: "MPEG-1"
           href: mpeg-1.md
         - name: "MPEG-2 (H.262)"
-          href: mpeg-2--h-262-.md
+# Auto-expanded node
           items: 
+          - name: "MPEG-2 (H.262)"
+            href: mpeg-2--h-262-.md
           - name: "Frame-Structured Pictures"
             href: frame-structured-pictures.md
           - name: "Field-Structured Pictures"
@@ -1938,16 +2298,22 @@
       - name: "DirectX VA Relationship to IAMVideoAccelerator API and Motion Compensation DDI"
         href: directx-va-relationship-to-iamvideoaccelerator-api-and-motion-compensa.md
     - name: "Video Decoding"
-      href: video-decoding.md
+# Auto-expanded node
       items: 
+      - name: "Video Decoding"
+        href: video-decoding.md
       - name: "Frame Buffer Organization"
         href: frame-buffer-organization.md
       - name: "Decoder Stages"
-        href: decoder-stages.md
+# Auto-expanded node
         items: 
+        - name: "Decoder Stages"
+          href: decoder-stages.md
         - name: "Motion-Compensated Prediction"
-          href: motion-compensated-prediction.md
+# Auto-expanded node
           items: 
+          - name: "Motion-Compensated Prediction"
+            href: motion-compensated-prediction.md
           - name: "Macroblock Prediction"
             href: macroblock-prediction.md
           - name: "Macroblock Partitioning "
@@ -1955,22 +2321,28 @@
           - name: "Prediction Planes"
             href: prediction-planes.md
     - name: "Deinterlacing and Frame-Rate Conversion"
-      href: deinterlacing-and-frame-rate-conversion.md
+# Auto-expanded node
       items: 
+      - name: "Deinterlacing and Frame-Rate Conversion"
+        href: deinterlacing-and-frame-rate-conversion.md
       - name: "Deinterlace Modes"
         href: deinterlace-modes.md
       - name: "Frame-Rate Conversion Modes"
         href: frame-rate-conversion-modes.md
       - name: "Bob Deinterlacing"
-        href: bob-deinterlacing.md
+# Auto-expanded node
         items: 
+        - name: "Bob Deinterlacing"
+          href: bob-deinterlacing.md
         - name: "Bob Deinterlacing Mechanics"
           href: bob-deinterlacing-mechanics.md
         - name: "Bob Deinterlacing Algorithm"
           href: bob-deinterlacing-algorithm.md
       - name: "Mapping the Deinterlace DDI to DirectDraw and DirectX VA"
-        href: mapping-the-deinterlace-ddi-to-directdraw-and-directx-va.md
+# Auto-expanded node
         items: 
+        - name: "Mapping the Deinterlace DDI to DirectDraw and DirectX VA"
+          href: mapping-the-deinterlace-ddi-to-directdraw-and-directx-va.md
         - name: "Deinterlace Container Device for Deinterlacing"
           href: deinterlace-container-device-for-deinterlacing.md
         - name: "Calling the Deinterlace DDI from a User-Mode Component"
@@ -1980,8 +2352,10 @@
       - name: "Deinterlacing on 64-bit Operating Systems"
         href: deinterlacing-on-64-bit-operating-systems.md
       - name: "Combining Deinterlacing and Video Substream Compositing"
-        href: combining-deinterlacing-and-video-substream-compositing.md
+# Auto-expanded node
         items: 
+        - name: "Combining Deinterlacing and Video Substream Compositing"
+          href: combining-deinterlacing-and-video-substream-compositing.md
         - name: "Overview of DeinterlaceBltEx"
           href: overview-of-deinterlacebltex.md
         - name: "Reporting Support for DeinterlaceBltEx"
@@ -1991,8 +2365,10 @@
         - name: "Operations on Video Substream and Destination Surfaces"
           href: supporting-operations-on-video-substream-and-destination-surfaces.md
         - name: "Displaying Samples and Background Color in the Target Rectangle"
-          href: displaying-samples-and-background-color-in-the-target-rectangle.md
+# Auto-expanded node
           items: 
+          - name: "Displaying Samples and Background Color in the Target Rectangle"
+            href: displaying-samples-and-background-color-in-the-target-rectangle.md
           - name: "Displaying 16:9 Video within a 4:3 Destination Surface"
             href: displaying-16-9-video-within-a-4-3-destination-surface.md
           - name: "Combine Video Stream, Substream with Different Aspect Ratios"
@@ -2000,15 +2376,19 @@
           - name: "Combining Two Streams with Different Heights and Widths"
             href: combining-two-streams-with-different-heights-and-widths.md
         - name: "Processing Subrectangles"
-          href: processing-subrectangles.md
+# Auto-expanded node
           items: 
+          - name: "Processing Subrectangles"
+            href: processing-subrectangles.md
           - name: "Processing Subrectangles without Stretching"
             href: processing-subrectangles-without-stretching.md
           - name: "Stretching Subrectangles"
             href: stretching-subrectangles.md
         - name: "Input Buffer Order"
-          href: input-buffer-order.md
+# Auto-expanded node
           items: 
+          - name: "Input Buffer Order"
+            href: input-buffer-order.md
           - name: "Input Buffer Order Rules"
             href: input-buffer-order-rules.md
           - name: "Input Buffer Order Example 1"
@@ -2028,15 +2408,19 @@
       - name: "Sample Functions for Deinterlacing"
         href: sample-functions-for-deinterlacing.md
     - name: "ProcAmp Control Processing"
-      href: procamp-control-processing.md
+# Auto-expanded node
       items: 
+      - name: "ProcAmp Control Processing"
+        href: procamp-control-processing.md
       - name: "Processing in the 8-bit YUV Color Space"
         href: processing-in-the-8-bit-yuv-color-space.md
       - name: "VMR Video Processing"
         href: vmr-video-processing.md
       - name: "Mapping the ProcAmp Control DDI to DirectDraw and DirectX VA"
-        href: mapping-the-procamp-control-ddi-to-directdraw-and-directx-va.md
+# Auto-expanded node
         items: 
+        - name: "Mapping the ProcAmp Control DDI to DirectDraw and DirectX VA"
+          href: mapping-the-procamp-control-ddi-to-directdraw-and-directx-va.md
         - name: "Deinterlace Container Device for ProcAmp Control"
           href: deinterlace-container-device-for-procamp-control.md
         - name: "Calling the ProcAmp Control DDI from a User-Mode Component"
@@ -2046,16 +2430,22 @@
       - name: "Sample Functions for ProcAmp Control"
         href: sample-functions-for-procamp-control.md
     - name: "COPP Processing"
-      href: copp-processing.md
+# Auto-expanded node
       items: 
+      - name: "COPP Processing"
+        href: copp-processing.md
       - name: "Introduction to COPP"
-        href: introduction-to-copp.md
+# Auto-expanded node
         items: 
+        - name: "Introduction to COPP"
+          href: introduction-to-copp.md
         - name: "Cryptographic Primitives Used by COPP"
           href: cryptographic-primitives-used-by-copp.md
         - name: "Communicating Through a Secure Channel"
-          href: communicating-through-a-secure-channel.md
+# Auto-expanded node
           items: 
+          - name: "Communicating Through a Secure Channel"
+            href: communicating-through-a-secure-channel.md
           - name: "Authenticated Key Exchange"
             href: authenticated-key-exchange.md
           - name: "Command Security and Authenticity"
@@ -2065,8 +2455,10 @@
         - name: "Graphics Adapter Output Requirements to Support COPP"
           href: graphics-adapter-output-requirements-to-support-copp.md
       - name: "Mapping the COPP DDI to DirectDraw and DirectX VA"
-        href: mapping-the-copp-ddi-to-directdraw-and-directx-va.md
+# Auto-expanded node
         items: 
+        - name: "Mapping the COPP DDI to DirectDraw and DirectX VA"
+          href: mapping-the-copp-ddi-to-directdraw-and-directx-va.md
         - name: "DirectX VA COPP Device"
           href: directx-va-copp-device.md
         - name: "Calling the COPP DDI from a User-Mode Component"
@@ -2074,8 +2466,10 @@
         - name: "Calling the COPP DDI from the Display Driver"
           href: calling-the-copp-ddi-from-the-display-driver.md
       - name: "Sample Functions for COPP"
-        href: sample-functions-for-copp.md
+# Auto-expanded node
         items: 
+        - name: "Sample Functions for COPP"
+          href: sample-functions-for-copp.md
         - name: "COPPOpenVideoSession function"
           href: coppopenvideosession.md
         - name: "COPPGetCertificateLength function"
@@ -2093,8 +2487,10 @@
       - name: "Returning Error Codes from COPP Functions"
         href: returning-error-codes-from-copp-functions.md
       - name: "Performing COPP Operations"
-        href: performing-copp-operations.md
+# Auto-expanded node
         items: 
+        - name: "Performing COPP Operations"
+          href: performing-copp-operations.md
         - name: "Starting a Protected Video Session"
           href: starting-a-protected-video-session.md
         - name: "Handling Protection Levels"
@@ -2102,8 +2498,10 @@
         - name: "Handling the Loss of a COPP Device"
           href: handling-the-loss-of-a-copp-device.md
         - name: "COPP Commands"
-          href: copp-commands.md
+# Auto-expanded node
           items: 
+          - name: "COPP Commands"
+            href: copp-commands.md
           - name: "Setting the Protection Level"
             href: setting-the-protection-level.md
           - name: "Instructing How to Protect the Signal"
@@ -2113,8 +2511,10 @@
         - name: "COPP Status Events"
           href: copp-status-events.md
       - name: "Implementation Tips and Requirements for COPP"
-        href: implementation-tips-and-requirements-for-copp.md
+# Auto-expanded node
         items: 
+        - name: "Implementation Tips and Requirements for COPP"
+          href: implementation-tips-and-requirements-for-copp.md
         - name: "COPP and Multiple-Monitor Support"
           href: copp-and-multiple-monitor-support.md
         - name: "COPP and ChangeDisplaySettingsEx"
@@ -2122,8 +2522,10 @@
         - name: "COPP and Display Modes"
           href: copp-and-display-modes.md
       - name: "DirectX Video Acceleration I/O Control Codes"
-        href: directx-video-acceleration-i-o-control-codes.md
+# Auto-expanded node
         items: 
+        - name: "DirectX Video Acceleration I/O Control Codes"
+          href: directx-video-acceleration-i-o-control-codes.md
         - name: "IOCTL_COPP_GetCertificateLength"
           href: ioctl-copp-getcertificatelength.md
         - name: "IOCTL_COPP_KeyExchange"
@@ -2135,14 +2537,20 @@
         - name: "IOCTL_COPP_Status"
           href: ioctl-copp-status.md
     - name: "Example Code for DirectX VA Devices"
-      href: example-code-for-directx-va-devices.md
+# Auto-expanded node
       items: 
+      - name: "Example Code for DirectX VA Devices"
+        href: example-code-for-directx-va-devices.md
       - name: "Motion Compensation Code Template"
-        href: motion-compensation-code-template.md
+# Auto-expanded node
         items: 
+        - name: "Motion Compensation Code Template"
+          href: motion-compensation-code-template.md
         - name: "Defining DirectX VA Device Classes"
-          href: defining-directx-va-device-classes.md
+# Auto-expanded node
           items: 
+          - name: "Defining DirectX VA Device Classes"
+            href: defining-directx-va-device-classes.md
           - name: "Defining the Deinterlace Container Device Class"
             href: defining-the-deinterlace-container-device-class.md
           - name: "Defining the ProcAmp Control Device Class"
@@ -2164,8 +2572,10 @@
         - name: "Deleting Instances of DirectX VA Device Objects"
           href: deleting-instances-of-directx-va-device-objects.md
         - name: "Deinterlace DDI"
-          href: deinterlace-ddi.md
+# Auto-expanded node
           items: 
+          - name: "Deinterlace DDI"
+            href: deinterlace-ddi.md
           - name: "DXVA_DeinterlaceContainerDeviceClass::DeinterlaceQueryAvailableModes"
             href: dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes.md
           - name: "DXVA_DeinterlaceContainerDeviceClass::DeinterlaceQueryModeCaps"
@@ -2179,8 +2589,10 @@
           - name: "DXVA_DeinterlaceBobDeviceClass::DeinterlaceCloseStream"
             href: dxva-deinterlacebobdeviceclass-deinterlaceclosestream.md
         - name: "ProcAmp Control DDI"
-          href: procamp-control-ddi.md
+# Auto-expanded node
           items: 
+          - name: "ProcAmp Control DDI"
+            href: procamp-control-ddi.md
           - name: "DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryCaps"
             href: dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md
           - name: "DXVA_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange"
@@ -2192,8 +2604,10 @@
           - name: "DXVA_ProcAmpControlDeviceClass::ProcAmpControlCloseStream"
             href: dxva-procampcontroldeviceclass-procampcontrolclosestream.md
       - name: "COPP Video Miniport Driver Template"
-        href: copp-video-miniport-driver-template.md
+# Auto-expanded node
         items: 
+        - name: "COPP Video Miniport Driver Template"
+          href: copp-video-miniport-driver-template.md
         - name: "COPP Device Definition Template Code"
           href: copp-device-definition-template-code.md
         - name: "COPP Video Miniport Driver IOCTL Template Code"
@@ -2217,16 +2631,22 @@
       - name: "DriverEntry of Display Miniport Driver"
         href: driverentry-of-display-miniport-driver.md
     - name: "DirectX VA Data Flow Management"
-      href: directx-va-data-flow-management.md
+# Auto-expanded node
       items: 
+      - name: "DirectX VA Data Flow Management"
+        href: directx-va-data-flow-management.md
       - name: "Encryption Support"
         href: encryption-support.md
       - name: "Setting Up DirectX VA Decoding"
-        href: setting-up-directx-va-decoding.md
+# Auto-expanded node
         items: 
+        - name: "Setting Up DirectX VA Decoding"
+          href: setting-up-directx-va-decoding.md
         - name: "bDXVA_Func Variable"
-          href: bdxva-func-variable.md
+# Auto-expanded node
           items: 
+          - name: "bDXVA_Func Variable"
+            href: bdxva-func-variable.md
           - name: "DXVA_ConfigQueryOrReplyFlag and DXVA_ConfigQueryorReplyFunc Variables"
             href: dxva-configqueryorreplyflag-and-dxva-configqueryorreplyfunc-variables.md
       - name: "Probing and Locking of Configurations"
@@ -2234,28 +2654,38 @@
       - name: "Buffer Description List"
         href: buffer-description-list.md
       - name: "Sequence Requirements"
-        href: sequence-requirements.md
+# Auto-expanded node
         items: 
+        - name: "Sequence Requirements"
+          href: sequence-requirements.md
         - name: "Using Four Uncompressed Surfaces for Decoding"
           href: using-four-uncompressed-surfaces-for-decoding.md
         - name: "Using Five or More Uncompressed Surfaces for Decoding"
           href: using-five-or-more-uncompressed-surfaces-for-decoding.md
     - name: "DirectX VA Operations"
-      href: directx-va-operations.md
+# Auto-expanded node
       items: 
+      - name: "DirectX VA Operations"
+        href: directx-va-operations.md
       - name: "Compressed Picture Decoding"
-        href: compressed-picture-decoding.md
+# Auto-expanded node
         items: 
+        - name: "Compressed Picture Decoding"
+          href: compressed-picture-decoding.md
         - name: "Pixel Formats for Uncompressed Video"
-          href: pixel-formats-for-uncompressed-video.md
+# Auto-expanded node
           items: 
+          - name: "Pixel Formats for Uncompressed Video"
+            href: pixel-formats-for-uncompressed-video.md
           - name: "4:2:2 Video Pixel Formats"
             href: 4-2-2-video-pixel-formats.md
           - name: "4:2:0 Video Pixel Formats"
             href: 4-2-0-video-pixel-formats.md
         - name: "Macroblock-Oriented Picture Decoding"
-          href: macroblock-oriented-picture-decoding.md
+# Auto-expanded node
           items: 
+          - name: "Macroblock-Oriented Picture Decoding"
+            href: macroblock-oriented-picture-decoding.md
           - name: "Macroblock Control Commands"
             href: macroblock-control-commands.md
           - name: "Motion Vectors"
@@ -2293,8 +2723,10 @@
         - name: "Off-Host VLD Bitstream Decoding Operation"
           href: off-host-vld-bitstream-decoding-operation.md
       - name: "Alpha-Blend Data Loading"
-        href: alpha-blend-data-loading.md
+# Auto-expanded node
         items: 
+        - name: "Alpha-Blend Data Loading"
+          href: alpha-blend-data-loading.md
         - name: "Loading an AYUV Alpha-Blending Surface"
           href: loading-an-ayuv-alpha-blending-surface.md
         - name: "Loading a DPXD Alpha-Blending Surface"
@@ -2304,8 +2736,10 @@
         - name: "Loading DCCMD Data"
           href: loading-dccmd-data.md
       - name: "Alpha-Blend Combination"
-        href: alpha-blend-combination.md
+# Auto-expanded node
         items: 
+        - name: "Alpha-Blend Combination"
+          href: alpha-blend-combination.md
         - name: "MPEG-2 Pan-Scan Example"
           href: mpeg-2-pan-scan-example.md
         - name: "DVD 4:3 Pan-Scan Within 16:9 Pictures Example"
@@ -2321,11 +2755,15 @@
       - name: "Picture Resampling Control"
         href: picture-resampling-control.md
     - name: "Defining Accelerator Capabilities"
-      href: defining-accelerator-capabilities.md
+# Auto-expanded node
       items: 
+      - name: "Defining Accelerator Capabilities"
+        href: defining-accelerator-capabilities.md
       - name: "Restricted Profiles"
-        href: restricted-profiles.md
+# Auto-expanded node
         items: 
+        - name: "Restricted Profiles"
+          href: restricted-profiles.md
         - name: "H261_A"
           href: h261-a.md
         - name: "H261_B "
@@ -2355,8 +2793,10 @@
         - name: "WMV8_A, WMV8_B, WMV9_A, WMV9_B, and WMV9_C"
           href: wmv8-a--wmv8-b--wmv9-a--wmv9-b--and-wmv9-c.md
         - name: "Minimal Interoperability Configuration Sets"
-          href: minimal-interoperability-configuration-sets.md
+# Auto-expanded node
           items: 
+          - name: "Minimal Interoperability Configuration Sets"
+            href: minimal-interoperability-configuration-sets.md
           - name: "Compressed Picture Decoding Set"
             href: compressed-picture-decoding-set.md
           - name: "First Picture Decoding Configuration"
@@ -2386,8 +2826,10 @@
           - name: "Alpha-Blend Combination Set"
             href: alpha-blend-combination-set.md
   - name: "Video Miniport Drivers in the Windows 2000 Display Driver Model"
-    href: video-miniport-drivers-in-the-windows-2000-display-driver-model.md
+# Auto-expanded node
     items: 
+    - name: "Video Miniport Drivers in the Windows 2000 Display Driver Model"
+      href: video-miniport-drivers-in-the-windows-2000-display-driver-model.md
     - name: "Video Miniport Driver Header Files (Windows 2000 Model)"
       href: video-miniport-driver-header-files--windows-2000-model-.md
     - name: "Video Miniport Driver Requirements (Windows 2000 Model)"
@@ -2395,11 +2837,15 @@
     - name: "Video Miniport Driver Within the Graphics Architecture (Windows 2000 Model)"
       href: video-miniport-driver-within-the-graphics-architecture--windows-2000-m.md
     - name: "Video Miniport Driver Initialization (Windows 2000 Model)"
-      href: video-miniport-driver-initialization--windows-2000-model-.md
+# Auto-expanded node
       items: 
+      - name: "Video Miniport Driver Initialization (Windows 2000 Model)"
+        href: video-miniport-driver-initialization--windows-2000-model-.md
       - name: "Starting the Device of the Video Miniport Driver "
-        href: starting-the-device-of-the-video-miniport-driver.md
+# Auto-expanded node
         items: 
+        - name: "Starting the Device of the Video Miniport Driver "
+          href: starting-the-device-of-the-video-miniport-driver.md
         - name: "Setting up Video Adapter Access Ranges"
           href: setting-up-video-adapter-access-ranges.md
         - name: "Setting Hardware Information in the Registry"
@@ -2417,8 +2863,10 @@
     - name: "Events in Video Miniport Drivers (Windows 2000 Model)"
       href: events-in-video-miniport-drivers--windows-2000-model-.md
     - name: "Processing Video Requests (Windows 2000 Model)"
-      href: processing-video-requests--windows-2000-model-.md
+# Auto-expanded node
       items: 
+      - name: "Processing Video Requests (Windows 2000 Model)"
+        href: processing-video-requests--windows-2000-model-.md
       - name: "System-Defined IOCTL_VIDEO_XXX Requests"
         href: system-defined-ioctl-video-xxx-requests.md
       - name: "Privately Defined Display-Miniport Driver IOCTL_VIDEO_XXX Requests"
@@ -2432,8 +2880,10 @@
     - name: "Video Port Driver Support for Bug Check Callbacks"
       href: video-port-driver-support-for-bug-check-callbacks.md
     - name: "Child Devices of the Display Adapter (Windows 2000 Model)"
-      href: child-devices-of-the-display-adapter--windows-2000-model-.md
+# Auto-expanded node
       items: 
+      - name: "Child Devices of the Display Adapter (Windows 2000 Model)"
+        href: child-devices-of-the-display-adapter--windows-2000-model-.md
       - name: "Detecting Child Devices "
         href: detecting-child-devices.md
       - name: "Communicating with the Driver of a Child Device"
@@ -2443,8 +2893,10 @@
     - name: "I2C Bus and Child Devices of the Display Adapter"
       href: i2c-bus-and-child-devices-of-the-display-adapter.md
     - name: "Interrupts in Video Miniport Drivers"
-      href: interrupts-in-video-miniport-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Interrupts in Video Miniport Drivers"
+        href: interrupts-in-video-miniport-drivers.md
       - name: "Implementing a HwVidSynchronizeExecutionCallback Routine"
         href: when-to-implement-a-hwvidsynchronizeexecutioncallback-routine.md
     - name: "Timers in Video Miniport Drivers"
@@ -2454,8 +2906,10 @@
     - name: "Resetting the Adapter in Video Miniport Drivers"
       href: resetting-the-adapter-in-video-miniport-drivers.md
     - name: "Bus-Master DMA in Video Miniport Drivers"
-      href: bus-master-dma-in-video-miniport-drivers.md
+# Auto-expanded node
       items: 
+      - name: "Bus-Master DMA in Video Miniport Drivers"
+        href: bus-master-dma-in-video-miniport-drivers.md
       - name: "Packet-Based Bus-Master DMA"
         href: packet-based-bus-master-dma.md
       - name: "Common-Buffer Bus-Master DMA"
@@ -2469,13 +2923,17 @@
     - name: "DualView Advanced Implementation Details"
       href: dualview-advanced-implementation-details.md
     - name: "TV Connector and Copy Protection Support in Video Miniport Drivers"
-      href: tv-connector-and-copy-protection-support-in-video-miniport-drivers.md
+# Auto-expanded node
       items: 
+      - name: "TV Connector and Copy Protection Support in Video Miniport Drivers"
+        href: tv-connector-and-copy-protection-support-in-video-miniport-drivers.md
       - name: "Querying TV Connector and Copy Protection Hardware"
         href: querying-tv-connector-and-copy-protection-hardware.md
       - name: "Setting TV Connector and Copy Protection Hardware"
-        href: setting-tv-connector-and-copy-protection-hardware.md
+# Auto-expanded node
         items: 
+        - name: "Setting TV Connector and Copy Protection Hardware"
+          href: setting-tv-connector-and-copy-protection-hardware.md
         - name: "Setting Copy Protection Hardware"
           href: setting-copy-protection-hardware.md
         - name: "Multiple Session Copy Protection"
@@ -2483,8 +2941,10 @@
     - name: "Mirror Driver Support in Video Miniport Drivers (Windows 2000 Model)"
       href: mirror-driver-support-in-video-miniport-drivers--windows-2000-model-.md
     - name: "VGA-Compatible Video Miniport Drivers (Windows 2000 Model)"
-      href: vga-compatible-video-miniport-drivers--windows-2000-model-.md
+# Auto-expanded node
       items: 
+      - name: "VGA-Compatible Video Miniport Drivers (Windows 2000 Model)"
+        href: vga-compatible-video-miniport-drivers--windows-2000-model-.md
       - name: "Windowed VDMs in x86-Based Machines"
         href: windowed-vdms-in-x86-based-machines.md
       - name: "Full-Screen VDMs in x86-based Machines"
@@ -2496,15 +2956,19 @@
       - name: "VGA-Compatible Miniport Driver's HwVidStartIO"
         href: vga-compatible-miniport-driver-s-hwvidstartio.md
     - name: "Video Miniport Drivers on Multiple Windows Versions (Windows 2000 Model)"
-      href: video-miniport-drivers-on-multiple-windows-versions--windows-2000-mode.md
+# Auto-expanded node
       items: 
+      - name: "Video Miniport Drivers on Multiple Windows Versions (Windows 2000 Model)"
+        href: video-miniport-drivers-on-multiple-windows-versions--windows-2000-mode.md
       - name: "Converting a Windows NT 4.0 Miniport Driver to Windows 2000"
         href: converting-a-windows-nt-4-0-miniport-driver-to-windows-2000.md
       - name: "Using VideoPortGetProcAddress"
         href: using-videoportgetprocaddress.md
   - name: "Tips and Requirements for the Windows 2000 Display Driver Model"
-    href: implementation-tips-and-requirements-for-the-windows-2000-display-driv.md
+# Auto-expanded node
     items: 
+    - name: "Tips and Requirements for the Windows 2000 Display Driver Model"
+      href: implementation-tips-and-requirements-for-the-windows-2000-display-driv.md
     - name: "Exception Handling When Accessing User-Mode Memory"
       href: exception-handling-when-accessing-user-mode-memory.md
     - name: "Version Numbers for Display Drivers"
@@ -2512,16 +2976,22 @@
     - name: "Handling Removable Child Devices"
       href: handling-removable-child-devices.md
   - name: "GDI"
-    href: gdi.md
+# Auto-expanded node
     items: 
+    - name: "GDI"
+      href: gdi.md
     - name: "Graphics System Overview"
       href: graphics-system-overview.md
     - name: "Using the Graphics DDI"
-      href: using-the-graphics-ddi.md
+# Auto-expanded node
       items: 
+      - name: "Using the Graphics DDI"
+        href: using-the-graphics-ddi.md
       - name: "Graphics Driver Functions"
-        href: graphics-driver-functions.md
+# Auto-expanded node
         items: 
+        - name: "Graphics Driver Functions"
+          href: graphics-driver-functions.md
         - name: "Required Graphics Driver Functions"
           href: required-graphics-driver-functions.md
         - name: "Conditionally Required Graphics Driver Functions"
@@ -2529,8 +2999,10 @@
         - name: "Optional Graphics Driver Functions"
           href: optional-graphics-driver-functions.md
       - name: "Supporting Initialization and Termination Functions"
-        href: supporting-initialization-and-termination-functions.md
+# Auto-expanded node
         items: 
+        - name: "Supporting Initialization and Termination Functions"
+          href: supporting-initialization-and-termination-functions.md
         - name: "Driver Initialization and Cleanup"
           href: driver-initialization-and-cleanup.md
         - name: "PDEV Initialization and Cleanup"
@@ -2542,11 +3014,15 @@
       - name: "Creating Device-Dependent Bitmaps"
         href: creating-device-dependent-bitmaps.md
       - name: "Supporting Graphics Output"
-        href: supporting-graphics-output.md
+# Auto-expanded node
         items: 
+        - name: "Supporting Graphics Output"
+          href: supporting-graphics-output.md
         - name: "Drawing Lines and Curves"
-          href: drawing-lines-and-curves.md
+# Auto-expanded node
           items: 
+          - name: "Drawing Lines and Curves"
+            href: drawing-lines-and-curves.md
           - name: "Cosmetic Lines"
             href: cosmetic-lines.md
           - name: "Geometric Wide Lines"
@@ -2556,8 +3032,10 @@
           - name: "Bezier Curves"
             href: bezier-curves.md
         - name: "Drawing and Filling Paths"
-          href: drawing-and-filling-paths.md
+# Auto-expanded node
           items: 
+          - name: "Drawing and Filling Paths"
+            href: drawing-and-filling-paths.md
           - name: "Path Fill Modes"
             href: path-fill-modes.md
           - name: "Filling Areas (Closed Paths)"
@@ -2569,18 +3047,24 @@
         - name: "Image Color Management"
           href: image-color-management.md
       - name: "Supporting Graphics DDI Color and Pattern Functions"
-        href: supporting-graphics-ddi-color-and-pattern-functions.md
+# Auto-expanded node
         items: 
+        - name: "Supporting Graphics DDI Color and Pattern Functions"
+          href: supporting-graphics-ddi-color-and-pattern-functions.md
         - name: "Managing Palettes"
           href: managing-palettes.md
         - name: "Realizing Brushes"
           href: realizing-brushes.md
       - name: "Supporting Graphics DDI Font and Text Functions"
-        href: supporting-graphics-ddi-font-and-text-functions.md
+# Auto-expanded node
         items: 
+        - name: "Supporting Graphics DDI Font and Text Functions"
+          href: supporting-graphics-ddi-font-and-text-functions.md
         - name: "Managing and Optimizing Fonts"
-          href: managing-and-optimizing-fonts.md
+# Auto-expanded node
           items: 
+          - name: "Managing and Optimizing Fonts"
+            href: managing-and-optimizing-fonts.md
           - name: "Font Metric Functions"
             href: font-metric-functions.md
           - name: "Font Driver Functions"
@@ -2594,16 +3078,22 @@
       - name: "Obsolete Graphics DDI Functions"
         href: obsolete-graphics-ddi-functions.md
     - name: "GDI Support for Graphics Drivers"
-      href: gdi-support-for-graphics-drivers.md
+# Auto-expanded node
       items: 
+      - name: "GDI Support for Graphics Drivers"
+        href: gdi-support-for-graphics-drivers.md
       - name: "GDI from the Driver's Perspective"
-        href: gdi-from-the-driver-s-perspective.md
+# Auto-expanded node
         items: 
+        - name: "GDI from the Driver's Perspective"
+          href: gdi-from-the-driver-s-perspective.md
         - name: "GDI as a Graphics Language for Applications"
           href: gdi-as-a-graphics-language-for-applications.md
         - name: "GDI as a Rendering Engine"
-          href: gdi-as-a-rendering-engine.md
+# Auto-expanded node
           items: 
+          - name: "GDI as a Rendering Engine"
+            href: gdi-as-a-rendering-engine.md
           - name: "GDI-Managed Bitmaps"
             href: gdi-managed-bitmaps.md
           - name: "GDI-Managed Lines and Curves"
@@ -2617,11 +3107,15 @@
           - name: "Translating 8-Bit-Per-Pixel Halftone Indexes to Ink Levels"
             href: translating-8-bit-per-pixel-halftone-indexes-to-ink-levels.md
       - name: "GDI/Driver Division of Labor"
-        href: gdi-driver-division-of-labor.md
+# Auto-expanded node
         items: 
+        - name: "GDI/Driver Division of Labor"
+          href: gdi-driver-division-of-labor.md
         - name: "GDI Communication with the Driver"
-          href: gdi-communication-with-the-driver.md
+# Auto-expanded node
           items: 
+          - name: "GDI Communication with the Driver"
+            href: gdi-communication-with-the-driver.md
           - name: "GDI User Objects"
             href: gdi-user-objects.md
           - name: "GDI Service Routines"
@@ -2629,8 +3123,10 @@
         - name: "PDEV Negotiation"
           href: pdev-negotiation.md
         - name: "Surface Negotiation"
-          href: surface-negotiation.md
+# Auto-expanded node
           items: 
+          - name: "Surface Negotiation"
+            href: surface-negotiation.md
           - name: "Surface Coordinates"
             href: surface-coordinates.md
           - name: "DC Origin"
@@ -2644,8 +3140,10 @@
           - name: "Hooking Versus Punting"
             href: hooking-versus-punting.md
       - name: "GDI Support Services"
-        href: gdi-support-services.md
+# Auto-expanded node
         items: 
+        - name: "GDI Support Services"
+          href: gdi-support-services.md
         - name: "GDI Support for Surfaces"
           href: gdi-support-for-surfaces.md
         - name: "GDI Support for Palettes"

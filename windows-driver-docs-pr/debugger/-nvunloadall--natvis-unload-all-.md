@@ -15,14 +15,13 @@ ms.localizationpriority: medium
 
 # .nvunloadall (NatVis Unload All)
 
-
 The .nvunloadall command unloads all of the NatVis files from the debugger environment.
 
 ```dbgcmd
- .nvunloadall 
+ .nvunloadall
 ```
 
-### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
+## Environment
 
 <table>
 <colgroup>
@@ -45,23 +44,10 @@ The .nvunloadall command unloads all of the NatVis files from the debugger envir
 </tbody>
 </table>
 
- 
+## Additional Information
 
-### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
+For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
 
-For more information, see [Writing debugger type visualizers for C++ using .natvis files](https://code.msdn.microsoft.com/windowsdesktop/Writing-type-visualizers-2eae77a2).
-
-## <span id="see_also"></span>See also
-
+## See also
 
 [**dx (Display NatVis Expression)**](dx--display-visualizer-variables-.md)
-
- 
-
- 
-
-
-
-
-
-

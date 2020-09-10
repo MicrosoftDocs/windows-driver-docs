@@ -48,7 +48,7 @@ The following table describes the UEFI requirements for Windows 10 Mobile that e
 </tr>
 <tr class="even">
 <td>Memory services</td>
-<td>The GetMemoryMap() function must return the full range of physical memory for the platform, as specified by section 6.2 &quot;Memory Services&quot; of the UEFI specification.</td>
+<td>The GetMemoryMap() function must return the full range of physical memory for the platform, as specified by section 6.2 "Memory Services" of the UEFI specification.</td>
 </tr>
 <tr class="odd">
 <td>EFI block I/O protocol</td>

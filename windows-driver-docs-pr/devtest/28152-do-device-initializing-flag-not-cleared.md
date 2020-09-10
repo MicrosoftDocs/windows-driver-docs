@@ -24,13 +24,7 @@ The **AddDevice** routine must contain code similar to the following to clear th
 FunctionalDeviceObject->Flags &= ~DO_DEVICE_INITIALIZING;
 ```
 
-For more information about **AddDevice** routines, see [AddDevice Routines in Function or Filter Drivers](https://msdn.microsoft.com/library/windows/hardware/ff540529)
+For more information about **AddDevice** routines, see [AddDevice Routines in Function or Filter Drivers](../kernel/adddevice-routines-in-function-or-filter-drivers.md)
 
  
-
- 
-
-
-
-
 

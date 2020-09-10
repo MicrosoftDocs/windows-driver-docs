@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_SUPPORTED\_SIMS structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_SUPPORTED\_SIMS** structure contains the list of supported SIM configurations. This list must be supplied if the hotspot plugin requires HTTP or EAP authentication for any of its networks.
@@ -69,12 +69,7 @@ Requirements
 
 [**HS\_SIM\_IDENTITY**](hs-sim-identity.md)
 
-[Microsoft Interface Definition Language](https://msdn.microsoft.com//library/windows/desktop/aa367091)
+[Microsoft Interface Definition Language](/windows/desktop/Midl/midl-start-page)
 
  
-
- 
-
-
-
 

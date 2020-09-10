@@ -65,6 +65,5 @@ The maximum length of the subtype component is 250 characters (not including the
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
-[Near field proximity DDI reference](https://msdn.microsoft.com/library/windows/hardware/jj866056)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)

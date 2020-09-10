@@ -21,12 +21,7 @@ In the following example of an INF device-driver-installation section, the two d
   Needs=KS.Registration, WDMAUDIO.Registration
 ```
 
-For information about the **Include** and **Needs** directives, see [**INF DDInstall Section**](https://msdn.microsoft.com/library/windows/hardware/ff547344).
+For information about the **Include** and **Needs** directives, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
  
-
- 
-
-
-
 

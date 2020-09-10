@@ -12,7 +12,7 @@ keywords:
 - driver debugging WDK boot options
 - operating system boot options WDK
 - load configurations WDK boot options
-ms.date: 07/09/2018
+ms.date: 04/19/2019
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +20,6 @@ ms.localizationpriority: medium
 
 To test and debug drivers on a Microsoft Windows operating system, you must enable and configure features that are established when the operating system loads. The settings for these features are included in the *boot options*--values that determine how the boot loader loads and configures the operating system and other bootable programs and devices.
 
-> [!TIP] 
-> If you are using the Windows Driver Kit (WDK) 8, you can configure computers for testing and debugging from Visual Studio. When you configure the test computers, the WDK driver test framework automatically enables the test computer for remote debugging and transfers the necessary test binaries and support files. 
-> For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), or [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/library/windows/hardware/hh698272), and [How to test a driver at runtime using Visual Studio](https://docs.microsoft.com/windows-hardware/drivers/develop/testing-a-driver-at-runtime).
 
 This section explains how to add, delete, and change boot options to create new load configurations for an operating system and how to use the boot entry parameters to customize a load configuration for driver testing and debugging.
 
@@ -46,11 +43,12 @@ By editing boot options, you can:
 
 This section includes:
 
-- [Introduction to Boot Options](introduction-to-boot-options.md)
+- [Introduction to Boot Options]()
+- [Overview of Boot Options in Windows](boot-options-in-windows.md).
+- [Boot Options Identifiers](boot-options-identifiers.md)
 - [Editing Boot Options](editing-boot-options.md)
-- [Boot.ini Boot Parameter Reference](https://msdn.microsoft.com/library/windows/hardware/ff542248)
-- [BCD Boot Options Reference](https://msdn.microsoft.com/library/windows/hardware/ff542205)
+- [BCD Boot Options Reference](/windows-hardware/drivers/ddi/index)
 - [Using Boot Parameters](using-boot-parameters.md)
-- [Bypassing Boot Options](bypassing-boot-options.md)
-
-Beginning in Windows Vista, Windows includes a new boot loader architecture, new boot options, and a new boot options editor. For information, see [Boot Options in Windows Vista](boot-options-in-windows-vista-and-later.md).
+- [Bypassing Boot Options]()
+- [BCD Boot Options Reference](bcd-boot-options-reference.md)
+- [Boot Options in Previous Versions of Windows](boot-options-in-previous-versions-of-windows.md)

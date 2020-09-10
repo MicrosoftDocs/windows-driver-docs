@@ -44,7 +44,7 @@ HPPCL
 HPPCL_RES
 HPPCL_OUTLINE
 OEM_CALLBACK</td>
-<td><p>Required if the printer can download fonts. If OEM_CALLBACK is specified, font callback functions must be provided. For more information about these callbacks, see <a href="customizing-microsoft-s-printer-drivers.md" data-raw-source="[Customizing Microsoft&#39;s Printer Drivers](customizing-microsoft-s-printer-drivers.md)">Customizing Microsoft&#39;s Printer Drivers</a>.</p></td>
+<td><p>Required if the printer can download fonts. If OEM_CALLBACK is specified, font callback functions must be provided. For more information about these callbacks, see <a href="customizing-microsoft-s-printer-drivers.md" data-raw-source="[Customizing Microsoft's Printer Drivers](customizing-microsoft-s-printer-drivers.md)">Customizing Microsoft's Printer Drivers</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><em>MaxFontID</strong></p></td>
@@ -73,7 +73,7 @@ OEM_CALLBACK</td>
 </tr>
 <tr class="even">
 <td><p><strong></em>TextHalftoneThreshold</strong></p></td>
-<td><p>Numeric value that determines whether Unidrv performs text halftoning for TrueType fonts. If the driver&#39;s resolution is greater than or equal to the value specified in this attribute, Unidrv halftones text.</p></td>
+<td><p>Numeric value that determines whether Unidrv performs text halftoning for TrueType fonts. If the driver's resolution is greater than or equal to the value specified in this attribute, Unidrv halftones text.</p></td>
 <td><p>Optional. The default value is 600.</p></td>
 </tr>
 </tbody>

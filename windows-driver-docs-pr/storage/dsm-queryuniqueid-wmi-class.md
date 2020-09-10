@@ -36,13 +36,7 @@ class DSM_QueryUniqueId
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QueryUniqueId**](https://msdn.microsoft.com/library/windows/hardware/ff552742) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QueryUniqueId**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_queryuniqueid) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

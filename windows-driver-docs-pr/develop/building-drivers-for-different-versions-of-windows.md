@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Building Drivers for Different Versions of Windows
 
-If you are [writing drivers for different versions of Windows](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554887), the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.
+If you are [writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md), the following section provides some guidelines about how you should build those drivers using the Windows Driver Kit (WDK) 8.1 or WDK 8, Visual Studio, and MSBuild.
 
 ## <span id="Guidelines_that_apply_to_building_both_user-mode_and_kernel-mode_drivers"></span><span id="guidelines_that_apply_to_building_both_user-mode_and_kernel-mode_drivers"></span><span id="GUIDELINES_THAT_APPLY_TO_BUILDING_BOTH_USER-MODE_AND_KERNEL-MODE_DRIVERS"></span>Guidelines that apply to building both user-mode and kernel-mode drivers
 
@@ -22,7 +22,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
 
 -   If you want your kernel-mode driver to run on multiple versions of Windows and dynamically determine the features that are available to the driver, build the driver using the build configuration for the most recent version of the operating system. For example, if you want your driver to support all versions of Windows starting with Windows 7, but to use certain features that were first available in Windows 8.1 when your driver is running on Windows 8.1 or later versions of the operating system, specify Windows 8.1 (**Win8.1**) as the target configuration.
 
--   Use the [**RtlIsNtDdiVersionAvailable**](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561954) and [**RtlIsServicePackVersionInstalled**](https://msdn.microsoft.com/Library/Windows/Hardware/Ff561956) functions to determine the version of Windows that is available to your driver at run time. For more information, see [Writing drivers for different versions of Windows](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554887).
+-   Use the [**RtlIsNtDdiVersionAvailable**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisntddiversionavailable) and [**RtlIsServicePackVersionInstalled**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisservicepackversioninstalled) functions to determine the version of Windows that is available to your driver at run time. For more information, see [Writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md).
 -   Create prototypes for pointers to functions that your driver must call conditionally.
 -   If you have a WDM driver, or a non-KMDF kernel-mode driver, and you are targeting Windows 8.1 or Windows 8 but also want to run on earlier versions of Windows, you need to override the linker **$(KernelBufferOverflowLib)** option. When you select Windows 8 or Windows 8.1 configurations, the driver is linked with BufferOverflowFastFailK.lib, which is not available in earlier Windows versions. For Windows 7 and Vista, you must link with BufferOverflowK.lib instead.
 
@@ -71,7 +71,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
     </thead>
     <tbody>
     <tr class="odd">
-    <td align="left"><pre><code>  &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8.1 Debug|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+    <td align="left"><pre><code>  &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Debug|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;WindowsV6.3&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;true&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;
@@ -79,7 +79,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
         &lt;ConfigurationType&gt;Driver&lt;/ConfigurationType&gt;
         &lt;DriverType&gt;KMDF&lt;/DriverType&gt;
       &lt;/PropertyGroup&gt;
-      &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8.1 Release|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+      &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Release|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;WindowsV6.3&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;false&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;
@@ -87,7 +87,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
         &lt;ConfigurationType&gt;Driver&lt;/ConfigurationType&gt;
         &lt;DriverType&gt;KMDF&lt;/DriverType&gt;
       &lt;/PropertyGroup&gt;
-      &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8 Debug|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+      &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;Windows8&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;true&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;
@@ -95,7 +95,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
         &lt;ConfigurationType&gt;Driver&lt;/ConfigurationType&gt;
         &lt;DriverType&gt;KMDF&lt;/DriverType&gt;
       &lt;/PropertyGroup&gt;
-      &lt;PropertyGroup Condition=&quot;&#39;$(Configuration)|$(Platform)&#39;==&#39;Win8 Release|Win32&#39;&quot; Label=&quot;Configuration&quot;&gt;
+      &lt;PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|Win32'" Label="Configuration"&gt;
         &lt;TargetVersion&gt;Windows8&lt;/TargetVersion&gt;
         &lt;UseDebugLibraries&gt;false&lt;/UseDebugLibraries&gt;
         &lt;KernelBufferOverflowLib&gt;$(DDK_LIB_PATH)\BufferOverflowK.lib&lt;/KernelBufferOverflowLib&gt;
@@ -117,14 +117,7 @@ If you are [writing drivers for different versions of Windows](https://msdn.micr
 ## <span id="related_topics"></span>Related topics
 
 
-* [Writing drivers for different versions of Windows](https://msdn.microsoft.com/Library/Windows/Hardware/Ff554887)
+* [Writing drivers for different versions of Windows](../gettingstarted/platforms-and-driver-versions.md)
 * [Building a Driver](building-a-driver.md)
  
-
- 
-
-
-
-
-
 

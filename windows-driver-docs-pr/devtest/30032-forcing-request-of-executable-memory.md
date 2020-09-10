@@ -11,11 +11,11 @@ f1_keywords:
 # C30032
 
 
-warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the [POOL\_NX\_OPTOUT](https://msdn.microsoft.com/library/windows/hardware/hh920401) directive
+warning C30032: Calling a memory allocating function and forcing the request of executable memory through use of the [POOL\_NX\_OPTOUT](../kernel/selective-opt-out-pool-nx-optout.md) directive
 
 BANNED\_MEM\_ALLOCATION\_FORCE\_UNSAFE
 
-The preprocessor directive [POOL\_NX\_OPTOUT](https://msdn.microsoft.com/library/windows/hardware/hh920401) prevents the auto-promotion of non-safe types (**MM\_PAGE\_PRIORITY** and **POOL\_TYPE**) to safe types (for example, NonPagedPool to NonPagedPoolNx). The use of POOL\_NX\_OPTOUT in your sources is likely by design. If this is by design and executable memory is required, then you can suppress the warning with [Pragma Prefast to Suppress Warning Messages](https://msdn.microsoft.com/library/gg155764.aspx). This type of allocation is not permitted on Windows 10 systems that have opted-in to additional memory protections.
+The preprocessor directive [POOL\_NX\_OPTOUT](../kernel/selective-opt-out-pool-nx-optout.md) prevents the auto-promotion of non-safe types (**MM\_PAGE\_PRIORITY** and **POOL\_TYPE**) to safe types (for example, NonPagedPool to NonPagedPoolNx). The use of POOL\_NX\_OPTOUT in your sources is likely by design. If this is by design and executable memory is required, then you can suppress the warning with [Pragma Prefast to Suppress Warning Messages](/previous-versions/windows/embedded/gg155764(v=winembedded.70)). This type of allocation is not permitted on Windows 10 systems that have opted-in to additional memory protections.
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -49,10 +49,4 @@ pPtr = MmGetSystemAddressForMdlSafe( pMdl, NormalPagePriority);
 ```
 
  
-
- 
-
-
-
-
 

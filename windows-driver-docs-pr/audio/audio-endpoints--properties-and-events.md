@@ -28,7 +28,7 @@ ms.localizationpriority: medium
 ## <span id="audio_properties_and_events"></span><span id="AUDIO_PROPERTIES_AND_EVENTS"></span>
 
 
-The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](https://msdn.microsoft.com/library/windows/hardware/ff567673).
+The PortCls system driver supports a subset of the intrinsic operations that are described in [KS Properties, Events, and Methods](../stream/ks-properties--events--and-methods.md).
 
 The port drivers in Portcls.sys support properties and events by providing handlers for some property and event requests and by forwarding other requests to the miniport drivers' handlers.
 
@@ -52,37 +52,37 @@ None of the port drivers provide support for methods on either the filter or its
 
 Audio adapter drivers support some or all of the following standard property sets:
 
-[KSPROPSETID\_AC3](https://msdn.microsoft.com/library/windows/hardware/ff537436)
+[KSPROPSETID\_AC3](./kspropsetid-ac3.md)
 
-[KSPROPSETID\_Acoustic\_Echo\_Cancel](https://msdn.microsoft.com/library/windows/hardware/ff537438)
+[KSPROPSETID\_Acoustic\_Echo\_Cancel](./kspropsetid-acoustic-echo-cancel.md)
 
-[KSPROPSETID\_Audio](https://msdn.microsoft.com/library/windows/hardware/ff537440)
+[KSPROPSETID\_Audio](./kspropsetid-audio.md)
 
-[KSPROPSETID\_DirectSound3DBuffer](https://msdn.microsoft.com/library/windows/hardware/ff537447)
+[KSPROPSETID\_DirectSound3DBuffer](./kspropsetid-directsound3dbuffer.md)
 
-[KSPROPSETID\_DirectSound3DListener](https://msdn.microsoft.com/library/windows/hardware/ff537449)
+[KSPROPSETID\_DirectSound3DListener](./kspropsetid-directsound3dlistener.md)
 
-[KSPROPSETID\_DrmAudioStream](https://msdn.microsoft.com/library/windows/hardware/ff537481)
+[KSPROPSETID\_DrmAudioStream](./kspropsetid-drmaudiostream.md)
 
-[KSPROPSETID\_General](https://msdn.microsoft.com/library/windows/hardware/ff566576)
+[KSPROPSETID\_General](../stream/kspropsetid-general.md)
 
-[KSPROPSETID\_Hrtf3d](https://msdn.microsoft.com/library/windows/hardware/ff537482)
+[KSPROPSETID\_Hrtf3d](./kspropsetid-hrtf3d.md)
 
-[KSPROPSETID\_Jack](https://msdn.microsoft.com/library/windows/hardware/ff537484)
+[KSPROPSETID\_Jack](./kspropsetid-jack.md)
 
-[KSPROPSETID\_Pin](https://msdn.microsoft.com/library/windows/hardware/ff566584)
+[KSPROPSETID\_Pin](../stream/kspropsetid-pin.md)
 
-[KSPROPSETID\_Synth](https://msdn.microsoft.com/library/windows/hardware/ff537486)
+[KSPROPSETID\_Synth](./kspropsetid-synth.md)
 
-[KSPROPSETID\_Synth\_Dls](https://msdn.microsoft.com/library/windows/hardware/ff537488)
+[KSPROPSETID\_Synth\_Dls](./kspropsetid-synth-dls.md)
 
-[KSPROPSETID\_TopologyNode](https://msdn.microsoft.com/library/windows/hardware/ff537491)
+[KSPROPSETID\_TopologyNode](./kspropsetid-topologynode.md)
 
 All audio drivers support the **KSPROPSETID\_Audio** property set.
 
 Some audio adapter drivers support the following event set:
 
-[KSEVENTSETID\_AudioControlChange](https://msdn.microsoft.com/library/windows/hardware/ff537122)
+[KSEVENTSETID\_AudioControlChange](./kseventsetid-audiocontrolchange.md)
 
 In addition, audio adapter drivers are free to provide property handlers for other property sets that are defined in header file Ksmedia.h. Drivers can also define and support their own custom property and event sets, but only an application that knows about a custom property or event will be able to use it.
 
@@ -117,9 +117,4 @@ This section discusses audio-specific properties and events. It contains the fol
 [Hardware Events](hardware-events.md)
 
  
-
- 
-
-
-
 

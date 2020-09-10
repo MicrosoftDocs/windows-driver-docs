@@ -23,26 +23,21 @@ To filter an entire file system, a file system filter driver creates a filter de
 
 A filter device object that is attached above a file system can generally expect to receive the following types of I/O requests:
 
-[**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548649)
+[**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md)
 
-[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548670)
+[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](./irp-mj-file-system-control.md)
 
-[**IRP\_MJ\_SHUTDOWN**](https://msdn.microsoft.com/library/windows/hardware/ff549423)
+[**IRP\_MJ\_SHUTDOWN**](./irp-mj-shutdown.md)
 
 If the file system supports opening handles to its control device object, filters can expect to see the following types of I/O requests as well:
 
-[**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff548608)
+[**IRP\_MJ\_CLEANUP**](./irp-mj-cleanup.md)
 
-[**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff548621)
+[**IRP\_MJ\_CLOSE**](./irp-mj-close.md)
 
-[**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff548630)
+[**IRP\_MJ\_CREATE**](./irp-mj-create.md)
 
 File system filter device objects attached to file systems are required to pass all unrecognized or unwanted IRPs to the next-lower driver on the driver stack by default.
 
  
-
- 
-
-
-
 

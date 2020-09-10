@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Using a Callout for Deep Inspection of Stream Data
 
 
-When a callout inspects stream data, its [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function can inspect any combination of the fixed data fields, the metadata fields, and the raw stream data that is passed to it, and any relevant data that has been stored in a context associated with the filter or the data flow.
+When a callout inspects stream data, its [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function can inspect any combination of the fixed data fields, the metadata fields, and the raw stream data that is passed to it, and any relevant data that has been stored in a context associated with the filter or the data flow.
 
 For example:
 
@@ -129,15 +129,9 @@ VOID NTAPI
 }
 ```
 
-The value in *filter-&gt;action.type* determines which actions the callout's [classifyFn](https://msdn.microsoft.com/library/windows/hardware/ff544887) callout function should return in the **actionType** member of the structure pointed to by the *classifyOut* parameter. For more information about these actions, see the [**FWPS\_ACTION0**](https://msdn.microsoft.com/library/windows/hardware/ff551215) structure.
+The value in *filter-&gt;action.type* determines which actions the callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function should return in the **actionType** member of the structure pointed to by the *classifyOut* parameter. For more information about these actions, see the [**FWPS\_ACTION0**](/windows/desktop/api/fwpstypes/ns-fwpstypes-fwps_action0_) structure.
 
 For more information about packet and stream data inspection, see [Inspecting Packet and Stream Data](inspecting-packet-and-stream-data.md).
 
  
-
- 
-
-
-
-
 

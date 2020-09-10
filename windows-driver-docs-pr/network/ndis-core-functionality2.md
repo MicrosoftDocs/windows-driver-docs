@@ -1,6 +1,6 @@
 ---
-title: NDIS Core Functionality
-description: NDIS Core Functionality
+title: NDIS Drivers and Services
+description: NDIS Drivers and Services
 ms.assetid: b312e5c6-8f37-494f-9336-6f63add67753
 keywords:
 - NDIS WDK
@@ -9,18 +9,18 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# NDIS Core Functionality
+# NDIS Drivers and Services
 
 
-The NDIS Core Functionality sections describe the four primary types of kernel-mode network device drivers and other general-purpose Network Driver Interface Specification (NDIS) driver services.
+The NDIS Drivers and Services sections describe the four primary types of kernel-mode network device drivers and other general-purpose Network Driver Interface Specification (NDIS) driver services.
 
 This section includes:
 
 [NDIS Miniport Drivers](ndis-miniport-drivers.md)
 
-[NDIS Protocol Drivers](ndis-protocol-drivers.md)
+[NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md)
 
-[NDIS Filter Drivers](ndis-filter-drivers2.md)
+[NDIS Filter Drivers](./roadmap-for-developing-ndis-filter-drivers.md)
 
 [NDIS Intermediate Drivers](ndis-intermediate-drivers2.md)
 
@@ -43,4 +43,3 @@ This section includes:
 [NDIS core functionality OIDs](ndis-core-functionality-oids.md)
 
 [NDIS core functionality status indications](ndis-core-functionality-status-indications.md)
-

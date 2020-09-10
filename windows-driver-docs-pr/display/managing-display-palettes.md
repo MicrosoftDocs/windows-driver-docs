@@ -11,31 +11,18 @@ keywords:
 - settable palettes WDK Windows 2000 display
 - indexed palettes WDK Windows 2000 display
 - RGB colors WDK Windows 2000 display
-ms.date: 04/20/2017
+ms.date: 10/11/2019
 ms.localizationpriority: medium
 ---
 
 # Managing Display Palettes
 
+If the video hardware supports colors that can be set, it maintains a color lookup table called a *palette*. GDI takes each RGB value and translates it into a device *color index* so that it can be displayed. GDI uses precalculated and cached tables for the translation. These tables are accessible to drivers as the user object [*XLATEOBJ*](/windows/win32/api/winddi/ns-winddi-xlateobj). Therefore, every GDI graphics function that takes source colors and moves them to a destination device uses a XLATEOBJ structure to translate the colors. For more information about palettes and how GDI handles them, see [GDI Support for Palettes](gdi-support-for-palettes.md).
 
-## <span id="ddk_managing_display_palettes_gg"></span><span id="DDK_MANAGING_DISPLAY_PALETTES_GG"></span>
+If the video hardware supports palettes that can be set, GDI calls the [**DrvSetPalette**](/windows/win32/api/winddi/nf-winddi-drvsetpalette) requested by the application. GDI passes the new palette to the display driver, and the driver queries the [PALOBJ](/windows/win32/api/winddi/ns-winddi-palobj).
 
+The **DrvSetPalette** function supplies a handle to a *PDEV* to the driver, and requests the driver to realize the palette for that device. The driver should set the hardware palette to match the entries in the given palette as closely as possible.
 
-If the video hardware supports colors that can be set, it maintains a color lookup table called a *palette*. GDI takes each RGB value and translates it into a device *color index* so that it can be displayed. GDI uses precalculated and cached tables for the translation. These tables are accessible to drivers as the user object [**XLATEOBJ**](https://msdn.microsoft.com/library/windows/hardware/ff570634). Therefore, every GDI graphics function that takes source colors and moves them to a destination device uses a XLATEOBJ structure to translate the colors. For more information about palettes and how GDI handles them, see [GDI Support for Palettes](gdi-support-for-palettes.md).
+This entry point is required if the device supports a palette that can be set, and should not be provided otherwise. A display driver specifies that its device has a settable palette by setting the GCAPS\_PALMANAGED bit in the **flGraphicsCaps** field of the [DEVINFO](/windows/win32/api/winddi/ns-winddi-devinfo) structure returned in [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev).
 
-If the video hardware supports palettes that can be set, GDI calls the **DrvSetPalette** requested by the application. GDI passes the new palette to the display driver, and the driver queries the **PALOBJ**.
-
-The *DrvSetPalette* function supplies a handle to a *PDEV* to the driver, and requests the driver to realize the palette for that device. The driver should set the hardware palette to match the entries in the given palette as closely as possible.
-
-This entry point is required if the device supports a palette that can be set, and should not be provided otherwise. A display driver specifies that its device has a settable palette by setting the GCAPS\_PALMANAGED bit in the **flGraphicsCaps** field of the [**DEVINFO**](https://msdn.microsoft.com/library/windows/hardware/ff552835) structure returned in [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211).
-
-The service routine [**PALOBJ\_cGetColors**](https://msdn.microsoft.com/library/windows/hardware/ff568845) is available to display drivers. This function downloads RGB colors from an indexed palette, and should be called from within the implementation of *DrvSetPalette*.
-
- 
-
- 
-
-
-
-
-
+The service routine [PALOBJ_cGetColors](/windows/desktop/api/winddi/nf-winddi-palobj_cgetcolors) is available to display drivers. This function downloads RGB colors from an indexed palette, and should be called from within the implementation of *DrvSetPalette*.

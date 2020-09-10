@@ -47,11 +47,11 @@ Every file system driver entry point routine must call [**FsRtlEnterFileSystem**
 
 Every successful call to [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) must be matched by a subsequent call to **FsRtlExitFileSystem**.
 
-Note that, unlike local file systems and network redirectors, file system filter drivers should never disable delivery of normal kernel APCs (by calling [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) or [**KeEnterCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552021) or by raising to IRQL APC\_LEVEL) across a call to [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
+Note that, unlike local file systems and network redirectors, file system filter drivers should never disable delivery of normal kernel APCs (by calling [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md) or [**KeEnterCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion) or by raising to IRQL APC\_LEVEL) across a call to [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
-The only time when a file system filter driver should disable normal kernel APCs is immediately before calling [**ExAcquireResourceExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544345), [**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351), [**ExAcquireResourceShared**](https://msdn.microsoft.com/library/windows/hardware/ff544359), [**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363), or [**ExAcquireSharedStarveExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544367). After calling [**ExReleaseResource**](https://msdn.microsoft.com/library/windows/hardware/ff545571) or [**ExReleaseResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545597), the filter driver should immediately re-enable delivery of normal kernel APCs. As an alternative to [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md), minifilter drivers can use the [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md), [**FltAcquireResourceShared**](fltacquireresourceshared.md), and [**FltReleaseResource**](fltreleaseresource.md) routines which properly handles APCs when acquiring and releasing a resource.
+The only time when a file system filter driver should disable normal kernel APCs is immediately before calling [**ExAcquireResourceExclusive**](../kernel/mmcreatemdl.md), [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85)), [**ExAcquireResourceShared**](../kernel/mmcreatemdl.md), [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85)), or [**ExAcquireSharedStarveExclusive**](/previous-versions/ff544367(v=vs.85)). After calling [**ExReleaseResource**](../kernel/mmcreatemdl.md) or [**ExReleaseResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite), the filter driver should immediately re-enable delivery of normal kernel APCs. As an alternative to [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md), minifilter drivers can use the [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md), [**FltAcquireResourceShared**](fltacquireresourceshared.md), and [**FltReleaseResource**](fltreleaseresource.md) routines which properly handles APCs when acquiring and releasing a resource.
 
-It is not necessary to disable normal kernel APCs before calling [**ExAcquireSharedWaitForExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544370) because this routine calls [**KeRaiseIrqlToDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff553084), which disables both normal and special kernel APCs. It is also not necessary to do so before calling [**ExAcquireFastMutex**](https://msdn.microsoft.com/library/windows/hardware/ff544337) or [**ExAcquireResourceExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544345), because these routines disable normal kernel APCs.
+It is not necessary to disable normal kernel APCs before calling [**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85)) because this routine calls [**KeRaiseIrqlToDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel), which disables both normal and special kernel APCs. It is also not necessary to do so before calling [**ExAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85)) or [**ExAcquireResourceExclusive**](../kernel/mmcreatemdl.md), because these routines disable normal kernel APCs.
 
 Requirements
 ------------
@@ -80,25 +80,25 @@ Requirements
 ## See also
 
 
-[**ExAcquireFastMutex**](https://msdn.microsoft.com/library/windows/hardware/ff544337)
+[**ExAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff544337(v=vs.85))
 
-[**ExAcquireResourceExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544345)
+[**ExAcquireResourceExclusive**](../kernel/mmcreatemdl.md)
 
-[**ExAcquireResourceExclusiveLite**](https://msdn.microsoft.com/library/windows/hardware/ff544351)
+[**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))
 
-[**ExAcquireResourceShared**](https://msdn.microsoft.com/library/windows/hardware/ff544359)
+[**ExAcquireResourceShared**](../kernel/mmcreatemdl.md)
 
-[**ExAcquireResourceSharedLite**](https://msdn.microsoft.com/library/windows/hardware/ff544363)
+[**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85))
 
-[**ExAcquireSharedWaitForExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544370)
+[**ExAcquireSharedWaitForExclusive**](/previous-versions/ff544370(v=vs.85))
 
-[**ExAcquireSharedStarveExclusive**](https://msdn.microsoft.com/library/windows/hardware/ff544367)
+[**ExAcquireSharedStarveExclusive**](/previous-versions/ff544367(v=vs.85))
 
-[**ExReleaseResource**](https://msdn.microsoft.com/library/windows/hardware/ff545571)
+[**ExReleaseResource**](../kernel/mmcreatemdl.md)
 
-[**ExReleaseResourceLite**](https://msdn.microsoft.com/library/windows/hardware/ff545597)
+[**ExReleaseResourceLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite)
 
-[**ExTryToAcquireFastMutex**](https://msdn.microsoft.com/library/windows/hardware/ff545647)
+[**ExTryToAcquireFastMutex**](/previous-versions/windows/hardware/drivers/ff545647(v=vs.85))
 
 [**FltAcquireResourceExclusive**](fltacquireresourceexclusive.md)
 
@@ -108,18 +108,11 @@ Requirements
 
 [**FsRtlEnterFileSystem**](fsrtlenterfilesystem.md)
 
-[**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336)
+[**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver)
 
-[**KeLeaveCriticalRegion**](https://msdn.microsoft.com/library/windows/hardware/ff552964)
+[**KeLeaveCriticalRegion**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion)
 
-[**KeRaiseIrqlToDpcLevel**](https://msdn.microsoft.com/library/windows/hardware/ff553084)
-
- 
+[**KeRaiseIrqlToDpcLevel**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel)
 
  
-
-
-
-
-
 

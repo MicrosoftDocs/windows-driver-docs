@@ -24,51 +24,51 @@ To filter a volume, a filter driver creates a filter device object and attaches 
 
 A filter device object that is attached above a volume can generally expect to receive the following types of I/O requests:
 
-[**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff548608)
+[**IRP\_MJ\_CLEANUP**](./irp-mj-cleanup.md)
 
-[**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff548621)
+[**IRP\_MJ\_CLOSE**](./irp-mj-close.md)
 
-[**IRP\_MJ\_CREATE**](https://msdn.microsoft.com/library/windows/hardware/ff548630)
+[**IRP\_MJ\_CREATE**](./irp-mj-create.md)
 
-[**IRP\_MJ\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548649)
+[**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md)
 
-[**IRP\_MJ\_DIRECTORY\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548658)
+[**IRP\_MJ\_DIRECTORY\_CONTROL**](./irp-mj-directory-control.md)
 
-[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff548670)
+[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](./irp-mj-file-system-control.md)
 
-[**IRP\_MJ\_FLUSH\_BUFFERS**](https://msdn.microsoft.com/library/windows/hardware/ff549235)
+[**IRP\_MJ\_FLUSH\_BUFFERS**](./irp-mj-flush-buffers.md)
 
-[**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff549241)
+[**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md)
 
-[**IRP\_MJ\_LOCK\_CONTROL**](https://msdn.microsoft.com/library/windows/hardware/ff549251)
+[**IRP\_MJ\_LOCK\_CONTROL**](./irp-mj-lock-control.md)
 
-[**IRP\_MJ\_PNP**](https://msdn.microsoft.com/library/windows/hardware/ff549268)
+[**IRP\_MJ\_PNP**](./irp-mj-pnp.md)
 
-[**IRP\_MJ\_QUERY\_EA**](https://msdn.microsoft.com/library/windows/hardware/ff549279)
+[**IRP\_MJ\_QUERY\_EA**](./irp-mj-query-ea.md)
 
-[**IRP\_MJ\_QUERY\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549283)
+[**IRP\_MJ\_QUERY\_INFORMATION**](./irp-mj-query-information.md)
 
-[**IRP\_MJ\_QUERY\_QUOTA**](https://msdn.microsoft.com/library/windows/hardware/ff549293)
+[**IRP\_MJ\_QUERY\_QUOTA**](./irp-mj-query-quota.md)
 
-[**IRP\_MJ\_QUERY\_SECURITY**](https://msdn.microsoft.com/library/windows/hardware/ff549298)
+[**IRP\_MJ\_QUERY\_SECURITY**](./irp-mj-query-security.md)
 
-[**IRP\_MJ\_QUERY\_VOLUME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549318)
+[**IRP\_MJ\_QUERY\_VOLUME\_INFORMATION**](./irp-mj-query-volume-information.md)
 
-[**IRP\_MJ\_READ**](https://msdn.microsoft.com/library/windows/hardware/ff549327)
+[**IRP\_MJ\_READ**](./irp-mj-read.md)
 
-[**IRP\_MJ\_SET\_EA**](https://msdn.microsoft.com/library/windows/hardware/ff549346)
+[**IRP\_MJ\_SET\_EA**](./irp-mj-set-ea.md)
 
-[**IRP\_MJ\_SET\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549366)
+[**IRP\_MJ\_SET\_INFORMATION**](./irp-mj-set-information.md)
 
-[**IRP\_MJ\_SET\_QUOTA**](https://msdn.microsoft.com/library/windows/hardware/ff549401)
+[**IRP\_MJ\_SET\_QUOTA**](./irp-mj-set-quota.md)
 
-[**IRP\_MJ\_SET\_SECURITY**](https://msdn.microsoft.com/library/windows/hardware/ff549407)
+[**IRP\_MJ\_SET\_SECURITY**](./irp-mj-set-security.md)
 
-[**IRP\_MJ\_SET\_VOLUME\_INFORMATION**](https://msdn.microsoft.com/library/windows/hardware/ff549415)
+[**IRP\_MJ\_SET\_VOLUME\_INFORMATION**](./irp-mj-set-volume-information.md)
 
-[**IRP\_MJ\_SHUTDOWN**](https://msdn.microsoft.com/library/windows/hardware/ff549423)
+[**IRP\_MJ\_SHUTDOWN**](./irp-mj-shutdown.md)
 
-[**IRP\_MJ\_WRITE**](https://msdn.microsoft.com/library/windows/hardware/ff549427)
+[**IRP\_MJ\_WRITE**](./irp-mj-write.md)
 
 **FastIoCheckIfPossible**
 
@@ -127,14 +127,9 @@ File system filter device objects, attached to volumes, are required to pass all
 
 **ReleaseForModWrite**
 
-For more information, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172).
+For more information, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
  
 
  
-
- 
-
-
-
 

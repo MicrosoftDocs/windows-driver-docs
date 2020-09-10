@@ -34,10 +34,10 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetFC3MgmtInfo\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565667) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**SetFC3MgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_out) structure.
 
 *MgmtInfo*   
-A structure of type [**HBAFC3MgmtInfo**](https://msdn.microsoft.com/library/windows/hardware/ff556032) that holds FC3 management information that will be used to configure the fibre channel adapter. This information is delivered to the miniport driver in the **PortWWN** member of a [**SetFC3MgmtInfo\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565661) structure.
+A structure of type [**HBAFC3MgmtInfo**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo) that holds FC3 management information that will be used to configure the fibre channel adapter. This information is delivered to the miniport driver in the **PortWWN** member of a [**SetFC3MgmtInfo\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_in) structure.
 
 Return value
 ------------
@@ -74,20 +74,13 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**GetFC3MgmtInfo\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff553946)
+[**GetFC3MgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_getfc3mgmtinfo_out)
 
-[**HBAFC3MgmtInfo**](https://msdn.microsoft.com/library/windows/hardware/ff556032)
+[**HBAFC3MgmtInfo**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbafc3mgmtinfo)
 
-[**SetFC3MgmtInfo\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff565661)
+[**SetFC3MgmtInfo\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_in)
 
-[**SetFC3MgmtInfo\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff565667)
-
- 
+[**SetFC3MgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_setfc3mgmtinfo_out)
 
  
-
-
-
-
-
 

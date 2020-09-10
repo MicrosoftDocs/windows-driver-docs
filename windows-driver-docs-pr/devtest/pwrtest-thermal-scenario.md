@@ -180,14 +180,7 @@ The following table describes the XML elements that appear in the log file.
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
-[PowerCfg](https://go.microsoft.com/fwlink/p/?linkid=294568)
+[PowerCfg](/windows-hardware/design/device-experiences/powercfg-command-line-options)
 
  
-
- 
-
-
-
-
-
 

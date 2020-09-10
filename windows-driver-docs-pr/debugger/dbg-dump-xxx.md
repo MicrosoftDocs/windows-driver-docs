@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_dbg_dump_xxx_dbx"></span><span id="DDK_DBG_DUMP_XXX_DBX"></span>
 
 
-The DBG\_DUMP\_*XXX* bit flags are used by the **Options** member of the SYM\_DUMP\_PARAM structure to control the behavior of the [**IG\_DUMP\_SYMBOL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff550906)[**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084) operation.
+The DBG\_DUMP\_*XXX* bit flags are used by the **Options** member of the SYM\_DUMP\_PARAM structure to control the behavior of the [**IG\_DUMP\_SYMBOL\_INFO**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_sym_dump_param)[**Ioctl**](/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine) operation.
 
 The following flags can be present.
 
@@ -87,7 +87,7 @@ The following flags can be present.
 </tr>
 <tr class="odd">
 <td align="left"><p>DBG_DUMP_READ_PHYSICAL</p></td>
-<td align="left"><p>The symbol&#39;s value will be read directly from the target&#39;s physical memory.</p></td>
+<td align="left"><p>The symbol's value will be read directly from the target's physical memory.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DBG_DUMP_FUNCTION_FORMAT</p></td>
@@ -123,16 +123,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**IG\_DUMP\_SYMBOL\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff550906)
+[**IG\_DUMP\_SYMBOL\_INFO**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_sym_dump_param)
 
-[**Ioctl**](https://msdn.microsoft.com/library/windows/hardware/ff551084)
-
- 
+[**Ioctl**](/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine)
 
  
-
-
-
-
-
 

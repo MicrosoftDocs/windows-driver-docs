@@ -14,7 +14,7 @@ Starting with Windows Driver Kit (WDK) 8, the driver development environment an
 > This feature is not available in Windows 10, version 1507 and later versions of the WDK.
 >
  
-To get the integrated environment, first install Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p?linkid=391063).
+To get the integrated environment, first install Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 Typically kernel-mode debugging requires two computers. The debugger runs on the *host computer*, and the code being debugged runs on the *target computer*. The target computer is also called the *test computer*. You can do user-mode debugging on a single computer, but in some cases you might want to debug a user-mode process that is running on a separate target computer.
 
@@ -41,10 +41,4 @@ These topics show you how to use Visual Studio to perform several of the tasks i
 -   [Keeping a Log File in Visual Studio](keeping-a-log-file-in-visual-studio.md)
 
  
-
- 
-
-
-
-
 

@@ -97,13 +97,7 @@ This must be called at IRQL = PASSIVE\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://msdn.microsoft.com/library/windows/hardware/ff554177), [**AVC\_SETCONNECT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff554192), [**AVCCONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554101), [**AVC\_FUNCTION**](https://msdn.microsoft.com/library/windows/hardware/ff554145), [**AV/C Intersect Handler**](https://msdn.microsoft.com/library/windows/hardware/ff556379)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_SETCONNECT\_INFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_setconnect_info), [**AVCCONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function), [**AV/C Intersect Handler**](/windows-hardware/drivers/ddi/avc/nc-avc-pfnavcintersecthandler)
 
  
-
- 
-
-
-
-
 

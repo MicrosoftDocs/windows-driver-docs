@@ -26,7 +26,7 @@ Before proceeding with any testing of your device, make sure you set up your deb
 
 1.  Set up Application Verifier, with the default settings enabled, to monitor Spoolsv.exe. Testing on a wide variety of hardware, including 32- and 64-bit machines, is recommended.
 
-2.  Use the Driver Verifier tool to monitor any kernel-mode drivers that you are using. For printer drivers, be sure to include Win32k.sys. See [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) for information about setting up your test environment to use the tool.
+2.  Use the Driver Verifier tool to monitor any kernel-mode drivers that you are using. For printer drivers, be sure to include Win32k.sys. See [Driver Verifier](../devtest/driver-verifier.md) for information about setting up your test environment to use the tool.
 
 3.  For power management testing, before a device is attached, make sure that your test environment supports all possible system power states and that the device can enter and wake from all states successfully.
 
@@ -43,9 +43,4 @@ The following sections describe the common test scenarios to address when testin
 -   [Stress Testing](stress-testing.md)
 
  
-
- 
-
-
-
 

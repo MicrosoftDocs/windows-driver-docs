@@ -44,7 +44,7 @@ G4 compressed data (WIA\_COMPRESSION\_G4) could be transferred either within a T
 
 JPEG compressed data (WIA\_COMPRESSION\_JPEG) could be transferred either using the JFIF format (WiaImgFmt\_JPEG), the EEXIF format (WiaImgFmt\_EXIF), or the TIFF format (WiaImgFmt\_TIFF). It is not possible to transfer JPEG data formatted in one of the Interchange Formats (JFIF, EEXIF) within transfers using the raw format (WiaImgFmt\_RAW) - instead, it is necessary to use one of the other JPEG-compatible formats.
 
-For more information on the WIA compression constants, see the [**WIA\_IPA\_COMPRESSION**](https://msdn.microsoft.com/library/windows/hardware/ff551540) property.
+For more information on the WIA compression constants, see the [**WIA\_IPA\_COMPRESSION**](./wia-ipa-compression.md) property.
 
 <a href="" id="dword-photometricinterp"></a>DWORD *PhotometricInterp*  
 Describes the photometric interpretation for the image that is transferred. This field is required for black and white (1bpp) and grayscale (4bpp or more) images. These images need to indicate the values for white and black, either WIA\_PHOTO\_WHITE\_1 (where white is 1, black is 0) or WIA\_PHOTO\_WHITE\_0 (where white is 0, black is 1). This field is optional for color images.
@@ -73,9 +73,4 @@ Black and white and grayscale data can omit the palette (because the information
 For indexed images, the number of entries in the color palette is dictated by the current *BitsPerPixel* value (2 ^ *BitsPerPixel*. For example, 2 entries for 1bpp, 16 entries for 4bpp, 256 entries for 8bpp). The format of the palette entries would be dictated by the number of entries in *BitsPerChannel* field (the number of fields/channels in each palette entry) and *BitsPerChannel* values (each field would contain exactly the value specified in the *BitsPerChannel* field for the respective channel). Each palette entry field must be BYTE-aligned.
 
  
-
- 
-
-
-
 

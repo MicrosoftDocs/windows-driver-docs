@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-The network configuration subsystem always informs a notify object about changes in binding that affect the notify object's network component. The subsystem calls the notify object's [**INetCfgComponentNotifyBinding::NotifyBindingPath**](https://msdn.microsoft.com/library/windows/hardware/ff547731) method and passes a value that specifies the change along with a pointer to the **INetCfgBindingPath** interface of the binding path involved in the change. If the subsystem passes NCN\_DISABLE to disable the binding path that the notify object's network component shares with a specific network card, the notify object can activate the binding with another network card as shown in the following code.
+The network configuration subsystem always informs a notify object about changes in binding that affect the notify object's network component. The subsystem calls the notify object's [**INetCfgComponentNotifyBinding::NotifyBindingPath**](/previous-versions/windows/hardware/network/ff547731(v=vs.85)) method and passes a value that specifies the change along with a pointer to the **INetCfgBindingPath** interface of the binding path involved in the change. If the subsystem passes NCN\_DISABLE to disable the binding path that the notify object's network component shares with a specific network card, the notify object can activate the binding with another network card as shown in the following code.
 
 ```C++
 HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
@@ -31,7 +31,7 @@ HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
     DWORD dwFlags = EBP_BELOW;
     ULONG celt = 1; // Request one enumeration element. 
     HRESULT hr = S_OK;
-    // Retrieve bindings for the notify object&#39;s component (m_pncc)
+    // Retrieve bindings for the notify object's component (m_pncc)
     hr = m_pncc->QueryInterface(IID_INetCfgComponentBindings, 
                                 (LPVOID*)&pncbind);
     // Determine if notification is about disabling a binding path.
@@ -47,7 +47,7 @@ HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
    hr = penumncbp->Skip(celt); // skip one element
             hr = penumncbp->Next(celt, &pncbp2, NULL);
         } while (SUCCEEDED(hr));
-        if (SUCCEEDED(hr) {
+        if (SUCCEEDED(hr)) {
             // Retrieve enumerator for interfaces of the binding path.
             hr = pncbp2->EnumBindingInterfaces(&penumncbi);
             // Retrieve a binding interface for the binding path.
@@ -70,10 +70,4 @@ HRESULT CSample::NotifyBindingPath(DWORD dwChangeFlag,
 ```
 
  
-
- 
-
-
-
-
 

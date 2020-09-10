@@ -29,7 +29,7 @@ This page uses X and X’ for labeling successive segments. All other segment an
 None of these segments generates an exception.
 ### Result
 
-A single SCU is formed out of the 10 segments. This is indicated as a single [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) in a single [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388).
+A single SCU is formed out of the 10 segments. This is indicated as a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) in a single [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list).
 
 ## Example 2: Data segments, followed by an exception, followed by data segments
 
@@ -66,7 +66,7 @@ A single SCU is formed out of the first 5 segments. The 6th segment does not for
 
 The 7th and 8th segments form an SCU together.
 
-A [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388) chain is indicated with three **NET\_BUFFER\_LIST** structures each having a single [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376). The ordering of received segments is maintained.
+A [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) chain is indicated with three **NET\_BUFFER\_LIST** structures each having a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer). The ordering of received segments is maintained.
 
 ## Example 3: Data segments, followed by multiple window updates
 
@@ -90,7 +90,7 @@ The 7th segment is a pure ACK that is a window update with SEG.WND = 131070 as s
 
 ### Result
 
-A single SCU is formed out of the 7 segments. This is indicated as a single [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) in a single [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388).
+A single SCU is formed out of the 7 segments. This is indicated as a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) in a single [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list).
 
 The SCU.WND = 131070, and the checksum is updated based on this value.
 
@@ -119,13 +119,7 @@ None of these segments generates an exception.
 None of these segments generates an exception.
 ### Result
 
-A single SCU is formed out of the 5 segments. This is indicated as a single [**NET\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff568376) in a single [**NET\_BUFFER\_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff568388). The SCU.ACK is set to the last SEG.ACK.
+A single SCU is formed out of the 5 segments. This is indicated as a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) in a single [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list). The SCU.ACK is set to the last SEG.ACK.
 
  
-
- 
-
-
-
-
 

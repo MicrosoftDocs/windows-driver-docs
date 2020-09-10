@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 Starting with Windows 8, an optional GPU power management infrastructure is available that lets Windows Display Driver Model (WDDM) 1.2 and later drivers manage power for individual devices or a set of devices. This infrastructure provides a standardized mechanism to support F-state and P-state power management in collaboration with Windows.
 
-|                                                                                   |                                        |
-|-----------------------------------------------------------------------------------|----------------------------------------|
-| Minimum WDDM version                                                              | 1.2                                    |
-| Minimum Windows version                                                           | 8                                      |
-| Driver implementation                                                             | Optional                               |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests | **Device.Graphics…RuntimePowerMgmt** |
+**Minimum WDDM version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation**: Optional
+
+**[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: **Device.Graphics…RuntimePowerMgmt**
+
 
  
 
@@ -25,22 +27,22 @@ Starting with Windows 8, an optional GPU power management infrastructure is avai
 
 These new and updated functions and structures are available starting with Windows 8 for the display miniport driver to transition the state of power components and to communicate power events with the Microsoft DirectX graphics kernel subsystem.
 
--   [*DxgkCbCompleteFStateTransition*](https://msdn.microsoft.com/library/windows/hardware/jj128349)
--   [*DxgkCbPowerRuntimeControlRequest*](https://msdn.microsoft.com/library/windows/hardware/hh451323)
--   [*DxgkCbSetPowerComponentActive*](https://msdn.microsoft.com/library/windows/hardware/hh451331)
--   [*DxgkCbSetPowerComponentIdle*](https://msdn.microsoft.com/library/windows/hardware/hh451336)
--   [*DxgkCbSetPowerComponentLatency*](https://msdn.microsoft.com/library/windows/hardware/hh698278)
--   [*DxgkCbSetPowerComponentResidency*](https://msdn.microsoft.com/library/windows/hardware/hh698279)
--   [*DxgkDdiPowerRuntimeControlRequest*](https://msdn.microsoft.com/library/windows/hardware/hh451396)
--   [*DxgkDdiSetPowerComponentFState*](https://msdn.microsoft.com/library/windows/hardware/hh451422)
--   [**DXGK\_DRIVERCAPS**](https://msdn.microsoft.com/library/windows/hardware/ff561062)
--   [**DXGK\_POWER\_COMPONENT\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh464063)
--   [**DXGK\_POWER\_COMPONENT\_MAPPING**](https://msdn.microsoft.com/library/windows/hardware/hh464067)
--   [**DXGK\_POWER\_COMPONENT\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/hh464070)
--   [**DXGK\_POWER\_RUNTIME\_COMPONENT**](https://msdn.microsoft.com/library/windows/hardware/hh464073)
--   [**DXGK\_QUERYADAPTERINFOTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff562010)
--   [**DXGKARG\_QUERYADAPTERINFO**](https://msdn.microsoft.com/library/windows/hardware/ff557621)
--   [**DXGK\_QUERYSEGMENTOUT3**](https://msdn.microsoft.com/library/windows/hardware/hh464082)
+-   [*DxgkCbCompleteFStateTransition*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_completefstatetransition)
+-   [*DxgkCbPowerRuntimeControlRequest*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_powerruntimecontrolrequest)
+-   [*DxgkCbSetPowerComponentActive*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentactive)
+-   [*DxgkCbSetPowerComponentIdle*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentidle)
+-   [*DxgkCbSetPowerComponentLatency*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentlatency)
+-   [*DxgkCbSetPowerComponentResidency*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkcb_setpowercomponentresidency)
+-   [*DxgkDdiPowerRuntimeControlRequest*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddipowerruntimecontrolrequest)
+-   [*DxgkDdiSetPowerComponentFState*](/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddisetpowercomponentfstate)
+-   [**DXGK\_DRIVERCAPS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps)
+-   [**DXGK\_POWER\_COMPONENT\_FLAGS**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_power_component_flags)
+-   [**DXGK\_POWER\_COMPONENT\_MAPPING**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_power_component_mapping)
+-   [**DXGK\_POWER\_COMPONENT\_TYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_power_component_type)
+-   [**DXGK\_POWER\_RUNTIME\_COMPONENT**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_power_runtime_component)
+-   [**DXGK\_QUERYADAPTERINFOTYPE**](/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_queryadapterinfotype)
+-   [**DXGKARG\_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_queryadapterinfo)
+-   [**DXGK\_QUERYSEGMENTOUT3**](/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentout3)
 
 ## <span id="GPU_power_management_scenarios"></span><span id="gpu_power_management_scenarios"></span><span id="GPU_POWER_MANAGEMENT_SCENARIOS"></span>GPU power management scenarios
 
@@ -55,15 +57,9 @@ These are the key power management scenarios to reduce power consumption and ext
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…RuntimePowerMgmt**.
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on **Device.Graphics…RuntimePowerMgmt**.
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
  
-
- 
-
-
-
-
 

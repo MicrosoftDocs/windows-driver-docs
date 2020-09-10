@@ -1,10 +1,8 @@
 ---
 title: Get product data
 description: These methods from the Microsoft Hardware APIs get data for hardware products registered to your Dev Center Account.
-author: balapv
-ms.author: balapv
 ms.topic: article
-ms.date: 04/05/2018
+ms.date: 04/09/2020
 ms.localizationpriority: medium
 ---
 
@@ -13,17 +11,17 @@ ms.localizationpriority: medium
 Use the following methods in *Microsoft Hardware APIs* to get data for hardware products registered to your Dev Center Account. For an introduction to Microsoft Hardware APIs, including prerequisites for using the API, see [Manage hardware submissions using APIs](dashboard-api.md).
 
 ```cpp
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/
+https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/
 ```
 
 Before you can use these methods, the product must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 | Method | URI | Description |
 |-|-|-|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/`|[Get data for all your products](get-all-products.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}`|[Get data for a specific product](get-a-product.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions`|[Get data for all submissions of a product](get-all-submissions.md)|
-|GET |`https://manage.devcenter.microsoft.com/v1.0/hardware/products/{productID}/submissions/{submissionId}`|[Get data for a specific submission of a product](get-a-submission.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/`|[Get data for all your products](get-all-products.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}`|[Get data for a specific product](get-a-product.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}/submissions`|[Get data for all submissions of a product](get-all-submissions.md)|
+|GET |`https://manage.devcenter.microsoft.com/v2.0/hardware/products/{productID}/submissions/{submissionId}`|[Get data for a specific submission of a product](get-a-submission.md)|
 
 ## Prerequisites
 
@@ -39,16 +37,16 @@ This resource represents a hardware product (driver) that is registered to your 
 
 ```json
 {
-  "id”: 9007199267351834,
-  “sharedProductId”: 1152921504606971100,
-  “links”: [
+  "id": 9007199267351834,
+  "sharedProductId": 1152921504606971100,
+  "links": [
     {
-      “href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     },
     {
-      "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834/submissions",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834/submissions",
       "rel": "get_submissions",
       "method": "GET"
     }
@@ -61,7 +59,7 @@ This resource represents a hardware product (driver) that is registered to your 
   "isFlightSign": false,
   "marketingNames": [
     "marketing name 1",
-    " marketing name 2"
+    "marketing name 2"
 ],
   "productName": "product name",
   "selectedProductTypes": {
@@ -74,7 +72,7 @@ This resource represents a hardware product (driver) that is registered to your 
   ],
   "additionalAttributes": {},
   "testHarness": "hlk",
-  " announcementDate ": "2016-10-22T00:00:00Z",
+  "announcementDate": "2016-10-22T00:00:00Z",
 }
 ```
 
@@ -88,8 +86,8 @@ This resource has the following values
 | isCommitted | Boolean | Indicates whether the product has at least one committed submission  |
 | isExtensionInf | Boolean | (DEPRECATED) Indicates whether the product is an extension driver. This field is deprecated and should no longer be used. isExtensionInf has been moved to submission level property. |
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
-| deviceType | String | Indicates the type of device. Possible values are:<ul><li>“internal” - An internal component, device is part of a system and connects inside the PC</li><li>“external” - An external component, device is an external device (peripheral) that connects to a PC</li><li>“internalExternal” - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>“notSet” – no data available</li></ul>|
-| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/windows-hardware/drivers/install/whql-test-signature-program)  |
+| deviceType | String | Indicates the type of device. Possible values are:<ul><li>"internal" - An internal component, device is part of a system and connects inside the PC</li><li>"external" - An external component, device is an external device (peripheral) that connects to a PC</li><li>"internalExternal" - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>"notSet" – no data available</li></ul>|
+| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md)  |
 | isFlightSign | Boolean | Indicates whether the product is a flight signed driver. Flight signed drivers are test drivers which can be published via Windows Update. They can be published/installed only on machines which have signed up for Windows Insider Program. They can be installed on machines without disbaling secure boot. They cannot be installed on retail machines which are not part of Windows Insider Program.|
 | marketingNames | array of strings | Marketing names or aliases of the product |
 | productName | String | The name of the driver as specified during creation |
@@ -108,13 +106,13 @@ This resource represents a submission of a product.
   "id": 1152921504621442000,
   "productId": 13635057453741328,
    "workflowStatus": {
-      “currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     },
   "links": [
     {
-      "href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/13635057453741329/submissions/1152921504621441944",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/13635057453741329/submissions/1152921504621441944",
       "rel": "self",
       "method": "GET"
     }
@@ -149,9 +147,9 @@ This object represents the status of workflow for a given entity
 
 ```json
 {
-      “currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     }
 ```
 
@@ -172,15 +170,15 @@ This object represents the downloads for a given submission.
   "items": [
     {
       "type": "initialPackage",
-      "url": "https://ingestionpackagesint1.blob.core.windows.net/ingestion/dc55b8c6-a01c-40b6-b815-cac8bc08812a?sv=2016-05-31&sr=b&sig=ipjW3RsVC75lZrcEZRh9JmTX89L4gTIKkxwqv9F8Axs%3D&se=2018-03-12T15:32:10Z&sp=rl"
+      "url": "https://ingestionpackages.blob.core.windows.net/ingestion/dc55b8c6-a01c-40b6-b815-cac8bc08812a?sv=2016-05-31&sr=b&sig=ipjW3RsVC75lZrcEZRh9JmTX89L4gTIKkxwqv9F8Axs%3D&se=2018-03-12T15:32:10Z&sp=rl"
     },
     {
       "type": "derivedPackage",
-      "url": "https://ingestionpackagesint1.blob.core.windows.net/ingestion/6bd77dbf-a851-46d2-b703-29ea4efae006?sv=2016-05-31&sr=b&sig=O5XQf%2FzMbI2FFt5WwSUJWL1JbWY4JXXPRkCKAnX7IRs%3D&se=2018-03-12T15:32:10Z&sp=rl&rscd=attachment%3B filename%3DShell_1152921504621441930.hlkx"
+      "url": "https://ingestionpackages.blob.core.windows.net/ingestion/6bd77dbf-a851-46d2-b703-29ea4efae006?sv=2016-05-31&sr=b&sig=O5XQf%2FzMbI2FFt5WwSUJWL1JbWY4JXXPRkCKAnX7IRs%3D&se=2018-03-12T15:32:10Z&sp=rl&rscd=attachment%3B filename%3DShell_1152921504621441930.hlkx"
     },
     {
       "type": "signedPackage",
-      "url": "https://ingestionpackagesint1.blob.core.windows.net/ingestion/0b83a294-c1d1-4136-82a1-dd52f51841e3?sv=2016-05-31&sr=b&sig=zTfxKJmaTwpbFol%2FpAKG0QuXJTTxm5aZ0F2wQQI8whc%3D&se=2018-03-12T15:32:10Z&sp=rl"
+      "url": "https://ingestionpackages.blob.core.windows.net/ingestion/0b83a294-c1d1-4136-82a1-dd52f51841e3?sv=2016-05-31&sr=b&sig=zTfxKJmaTwpbFol%2FpAKG0QuXJTTxm5aZ0F2wQQI8whc%3D&se=2018-03-12T15:32:10Z&sp=rl"
     },
     {
       "type": "certificationReport",
@@ -196,7 +194,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 | Items | array | An array of download types and the URL for each. Please refer below for details |
-| Type | string | The type of package available for download. Possible values are:<ul><li>“initialPackage” – package uploaded by user (in case of new submission, it points to the SAS URI for uploading the package)</li><li>“derivedPackage” – shell for derived submissions</li><li>“signedPackage” – package signed by Microsoft</li><li>“certificationReport” – certification report for the signed product</li></ul>|
+| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (in case of new submission, it points to the SAS URI for uploading the package)</li><li>"derivedPackage" – shell for derived submissions</li><li>"signedPackage" – package signed by Microsoft</li><li>"certificationReport" – certification report for the signed product</li></ul>|
 | Messages | array | An array of strings to provide messages about the downloadable files |
 
 ### Link object
@@ -205,7 +203,7 @@ This object represents a list of helpful links for the containing entity
 
 ```json
 {
-      “href": "https:// manage.devcenter.microsoft.com/api/v1.0/hardware/products/9007199267351834",
+      "href": "https:// manage.devcenter.microsoft.com/api/v2.0/hardware/products/9007199267351834",
       "rel": "self",
       "method": "GET"
     }
@@ -392,6 +390,8 @@ The following table lists Operating system Family Codes and their descriptions.
 | Windows_v100Server_RS5 | Windows Server 2019 |
 | Windows_v100_RS5 | Windows 10 RS5 x86 |
 | Windows_v100_RS5 | Windows 10 RS5 x64 |
+| Windows_v100_19H1 | Windows 10 19H1 Update |
+| Windows_v100_VB | Windows 10 version 2004 |
 
 ### List of Operating System Codes
 
@@ -446,9 +446,15 @@ The following table lists Operating System Codes and their descriptions.
 |WINDOWS_v100_RS4_FULL|Windows 10 RS4 Client|
 |WINDOWS_v100_X64_RS4_FULL|Windows 10 RS4 Client x64|
 |WINDOWS_v100_ARM64_RS4_FULL|Windows 10 RS4 Client ARM64|
-| WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
-| WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
-| WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 x64 |
+|WINDOWS_v100_SERVER_X64_RS5_FULL | Windows Server 2019 |
+|WINDOWS_v100_RS5_FULL | Windows 10 RS5 x86 |
+|WINDOWS_v100_X64_RS5_FULL | Windows 10 RS5 Client x64 |
+|WINDOWS_v100_19H1_FULL |Windows 19H1 Client x86 |
+|WINDOWS_v100_X64_19H1_FULL |Windows 19H1 Client x64 |
+|WINDOWS_v100_ARM64_19H1_FULL | Windows 19H1 Client ARM64 |
+|WINDOWS_v100_VB_FULL | Windows 10 version 2004 Client x86 |
+|WINDOWS_v100_X64_VB_FULL | Windows version 2004 Client x64 |
+|WINDOWS_v100_ARM64_VB_FULL | Windows version 2004 Client ARM64 |
 
 ## Error codes
 
@@ -463,7 +469,6 @@ The error codes are applicable to all web methods of the API. If the request can
 | 415 - Unsupported Media Type | Payload is in a format not supported by this method on the target resource. |
 | 422 - Unprocessable Entity | Validation failures. |
 | 500 - Internal Server Error | Unrecoverable error occurred at the API server. |
-
 
 If there are functional validation failures, the response body will contain one of the following functional error codes.
 
@@ -490,4 +495,4 @@ If there are functional validation failures, the response body will contain one 
 
 ## See also
 
-- [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)
+* [Hardware dashboard API samples (GitHub)](https://aka.ms/hpc_async_api_samples)

@@ -15,32 +15,27 @@ ms.localizationpriority: medium
 
 
 
-*Preparsed data* is report descriptor data associated with a [top-level collection](top-level-collections.md). User-mode applications or kernel-mode drivers use preparsed data to extract information about specific HID controls without having to obtain and interpret a device's entire report descriptor. A user-mode application obtains a collection's preparsed data by using [**HidD\_GetPreparsedData**](https://msdn.microsoft.com/library/windows/hardware/ff539679) and a kernel-mode driver uses an [**IOCTL\_HID\_GET\_COLLECTION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff541089) request.
+*Preparsed data* is report descriptor data associated with a [top-level collection](top-level-collections.md). User-mode applications or kernel-mode drivers use preparsed data to extract information about specific HID controls without having to obtain and interpret a device's entire report descriptor. A user-mode application obtains a collection's preparsed data by using [**HidD\_GetPreparsedData**](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getpreparseddata) and a kernel-mode driver uses an [**IOCTL\_HID\_GET\_COLLECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_get_collection_descriptor) request.
 
-The following [HIDClass support routines](https://msdn.microsoft.com/library/windows/hardware/ff538865) support extracting and setting button and value data:
+The following [HIDClass support routines](/windows-hardware/drivers/ddi/index) support extracting and setting button and value data:
 
-[**HidP\_GetButtons**](https://msdn.microsoft.com/library/windows/hardware/ff539708)
+[**HidP\_GetButtons**](./hdpi-h-macros.md)
 
-[**HidP\_SetButtons**](https://msdn.microsoft.com/library/windows/hardware/ff539779)
+[**HidP\_SetButtons**](./hdpi-h-macros.md)
 
-[**HidP\_UnsetButtons**](https://msdn.microsoft.com/library/windows/hardware/ff539812)
+[**HidP\_UnsetButtons**](./hdpi-h-macros.md)
 
-[**HidP\_GetUsageValue**](https://msdn.microsoft.com/library/windows/hardware/ff539748)
+[**HidP\_GetUsageValue**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue)
 
-[**HidP\_SetUsageValue**](https://msdn.microsoft.com/library/windows/hardware/ff539797)
+[**HidP\_SetUsageValue**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevalue)
 
-[**HidP\_GetScaledUsageValue**](https://msdn.microsoft.com/library/windows/hardware/ff539729)
+[**HidP\_GetScaledUsageValue**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getscaledusagevalue)
 
-[**HidP\_SetScaledUsageValue**](https://msdn.microsoft.com/library/windows/hardware/ff539787)
+[**HidP\_SetScaledUsageValue**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setscaledusagevalue)
 
-[**HidP\_GetUsageValueArray**](https://msdn.microsoft.com/library/windows/hardware/ff539750)
+[**HidP\_GetUsageValueArray**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray)
 
-[**HidP\_SetUsageValueArray**](https://msdn.microsoft.com/library/windows/hardware/ff539801)
-
- 
+[**HidP\_SetUsageValueArray**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusagevaluearray)
 
  
-
-
-
 

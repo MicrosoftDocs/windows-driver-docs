@@ -63,7 +63,7 @@ mofcomp -N:root\virtualization\v2 Fabrikam_SwitchCustomSettingData.mof
 net start vmms
 ```
 
-For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](https://msdn.microsoft.com/library/windows/hardware/ff542012).
+For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](../kernel/compiling-a-driver-s-mof-file.md).
 
 The following example shows how you can configure the sample feature. In this example, the Fabrikam\_SwitchCustomSettingData MOF class is used to configure a switch named “TestSwitch”.
 
@@ -149,10 +149,4 @@ PSComputerName    : TEST_SERVER
 For more information on how extensible switch extensions manage switch policies, see [Managing Switch Policies](managing-switch-policies.md).
 
  
-
- 
-
-
-
-
 

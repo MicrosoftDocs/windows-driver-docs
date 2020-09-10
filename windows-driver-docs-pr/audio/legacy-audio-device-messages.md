@@ -28,29 +28,23 @@ The following Windows Multimedia functions provide a way for callers to pass mes
 
 Some of these device messages are handled directly by the device driver, and some are handled by the system on behalf of the device.
 
-This section describes only messages that are intercepted by the system and handled without ever being passed to the device driver. For more information, see [System-Intercepted Device Messages](https://msdn.microsoft.com/library/windows/hardware/ff538507).
+This section describes only messages that are intercepted by the system and handled without ever being passed to the device driver. For more information, see [System-Intercepted Device Messages](./system-intercepted-device-messages.md).
 
 Each message described in this section is valid for use with one or more of the six *xxx*Message functions in the preceding list.
 
 This section describes the following messages:
 
-[**DRV\_QUERYDEVICEINTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536363)
+[**DRV\_QUERYDEVICEINTERFACE**](/previous-versions/windows/hardware/drivers/ff536363(v=vs.85))
 
-[**DRV\_QUERYDEVICEINTERFACESIZE**](https://msdn.microsoft.com/library/windows/hardware/ff536364)
+[**DRV\_QUERYDEVICEINTERFACESIZE**](/previous-versions/windows/hardware/drivers/ff536364(v=vs.85))
 
-[**DRV\_QUERYDEVNODE**](https://msdn.microsoft.com/library/windows/hardware/ff536365)
+[**DRV\_QUERYDEVNODE**](/previous-versions/windows/hardware/drivers/ff536365(v=vs.85))
 
-[**DRV\_QUERYMAPPABLE**](https://msdn.microsoft.com/library/windows/hardware/ff536366)
+[**DRV\_QUERYMAPPABLE**](/previous-versions/windows/hardware/drivers/ff536366(v=vs.85))
 
-[**DRVM\_MAPPER\_CONSOLEVOICECOM\_GET**](https://msdn.microsoft.com/library/windows/hardware/ff536361)
+[**DRVM\_MAPPER\_CONSOLEVOICECOM\_GET**](/previous-versions/windows/hardware/drivers/ff536361(v=vs.85))
 
-[**DRVM\_MAPPER\_PREFERRED\_GET**](https://msdn.microsoft.com/library/windows/hardware/ff536362)
-
- 
+[**DRVM\_MAPPER\_PREFERRED\_GET**](/previous-versions/windows/hardware/drivers/ff536362(v=vs.85))
 
  
-
-
-
-
 

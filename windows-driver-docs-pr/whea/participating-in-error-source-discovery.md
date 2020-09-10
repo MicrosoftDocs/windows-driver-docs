@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 # Participating in Error Source Discovery
 
 
-To participate in error source discovery, a PSHED plug-in must implement a [*GetAllErrorSources*](https://msdn.microsoft.com/library/windows/hardware/ff559366) callback function. A PSHED plug-in that participates in error source discovery can also implement an optional [*GetErrorSourceInfo*](https://msdn.microsoft.com/library/windows/hardware/ff559368) callback function.
+To participate in error source discovery, a PSHED plug-in must implement a [*GetAllErrorSources*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_get_all_error_sources) callback function. A PSHED plug-in that participates in error source discovery can also implement an optional [*GetErrorSourceInfo*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_get_error_source_info) callback function.
 
 The following code example shows how to implement these callback functions.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s GetAllErrorSources callback function
+// The PSHED plug-in's GetAllErrorSources callback function
 //
 NTSTATUS
   GetAllErrorSources(
@@ -72,7 +72,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s GetErrorSourceInfo callback function
+// The PSHED plug-in's GetErrorSourceInfo callback function
 //
 NTSTATUS
   GetErrorSourceInfo(
@@ -101,9 +101,4 @@ NTSTATUS
 A PSHED plug-in that participates in error source discovery must specify the **PshedFADiscovery** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
  
-
- 
-
-
-
 

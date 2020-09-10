@@ -25,7 +25,7 @@ Windows compatible hardware development boards offer an affordable, yet a powerf
 ## <span id="Supported_Hardware_Development_Boards"></span><span id="supported_hardware_development_boards"></span><span id="SUPPORTED_HARDWARE_DEVELOPMENT_BOARDS"></span>Supported Hardware Development Boards
 
 
-For information on the latest supported development boards, see [IoT Device Options](https://docs.microsoft.com/windows/iot-core/learn-about-hardware/socsandcustomboards).
+For information on the latest supported development boards, see [IoT Device Options](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
 ## <span id="Learn_more"></span><span id="learn_more"></span><span id="LEARN_MORE"></span>Learn more
 
@@ -34,13 +34,13 @@ For information on the latest supported development boards, see [IoT Device Opti
 
     SoC-based hardware development boards enable hardware manufacturers to develop and certify their Windows drivers without time-consuming purchase and licensing processes, and without the need for extensive engagement with Microsoft. Purchasing the boards is quick and easy, and development tips can be found within the Microsoft developer community.
 
-    [Watch the video](http://channel9.msdn.com/Events/Build/2014/2-536) to learn how Microsoft partnered with vendors like Intel to create easy onboarding opportunities for your off-SOC hardware.
+    [Watch the video](https://channel9.msdn.com/Events/Build/2014/2-536) to learn how Microsoft partnered with vendors like Intel to create easy onboarding opportunities for your off-SOC hardware.
 
 -   **Blog post**
 
     Read about the initiative to make Windows and driver development tools available for affordable development boards.
 
-    [Windows-compatible hardware development boards available soon](http://blogs.windows.com/windows/b/buildingapps/archive/2014/04/04/windows-compatible-hardware-development-boards-available-soon.aspx)
+    [Windows-compatible hardware development boards available soon](https://blogs.windows.com/windowsdeveloper/2014/04/04/windows-compatible-hardware-development-boards-available-soon/#V762kL2jCQwuiIiU.97)
 
 -   **Join the community**
 
@@ -49,10 +49,4 @@ For information on the latest supported development boards, see [IoT Device Opti
     [Windows Hardware and Driver Developer Community](https://go.microsoft.com/fwlink/p/?linkid=393552)
 
  
-
- 
-
-
-
-
 

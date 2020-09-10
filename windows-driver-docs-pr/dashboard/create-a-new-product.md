@@ -1,8 +1,6 @@
 ---
 title: Create a new product
 description: Use this method in the Microsoft Hardware API to create a new hardware product.
-author: balapv
-ms.author: balapv
 ms.date: 04/05/2018
 ms.topic: article
 ms.localizationpriority: medium
@@ -22,7 +20,7 @@ This method has the following syntax. See the following sections for usage examp
 
 | Method | Request URI |
 |:--|:--|
-| POST | `https://manage.devcenter.microsoft.com/v1.0/my/hardware/products` |
+| POST | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products` |
 
 
 ### Request header
@@ -52,7 +50,6 @@ The following example demonstrates the JSON request body for creating a new prod
   "isTestSign": false,
   "isFlightSign": false,  
   "marketingNames": [],
-  "productName": "VST_apdevtest1",
   "selectedProductTypes": {
     "windows_v100_RS3": "Unclassified"
   },
@@ -73,7 +70,7 @@ For details about the fields in the request, refer to [Product resource](get-pro
 The following example demonstrates how to create a new product.
 
 ```cpp
-POST https://manage.devcenter.microsoft.com/v1.0/my/hardware/products HTTP/1.1
+POST https://manage.devcenter.microsoft.com/v2.0/my/hardware/products HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 

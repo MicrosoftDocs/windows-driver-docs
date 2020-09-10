@@ -18,13 +18,13 @@ ms.localizationpriority: medium
 
 Event filters are divided into three categories.
 
-1.  *Specific event filters*. These are the filters for all the non-exception events. See [**DEBUG\_FILTER\_XXX**](https://msdn.microsoft.com/library/windows/hardware/ff541490) for a list of these events.
+1.  *Specific event filters*. These are the filters for all the non-exception events. See [**DEBUG\_FILTER\_XXX**](./debug-filter-xxx.md) for a list of these events.
 
-2.  *Specific exception filters*. The first specific exception filter is the *default exception filter*. The rest are filters for those exceptions for which the engine has built-in filters. See [**Specific Exceptions**](https://msdn.microsoft.com/library/windows/hardware/ff558784) for a list of the specific exception filters.
+2.  *Specific exception filters*. The first specific exception filter is the *default exception filter*. The rest are filters for those exceptions for which the engine has built-in filters. See [**Specific Exceptions**](./specific-exceptions.md) for a list of the specific exception filters.
 
 3.  *Arbitrary exception filters*. These are filters for exception events that have been added manually.
 
-The filters in categories 1 and 2 are collectively known as *specific filters*, and the filters in categories 2 and 3 are collectively known as *exception filters*. The number of filters in each category is returned by [**GetNumberEventFilters**](https://msdn.microsoft.com/library/windows/hardware/ff547899).
+The filters in categories 1 and 2 are collectively known as *specific filters*, and the filters in categories 2 and 3 are collectively known as *exception filters*. The number of filters in each category is returned by [**GetNumberEventFilters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnumbereventfilters).
 
 An event matches a specific event filter if the type of the event is the same as the type of the filter. Some event filters have an additional parameter which further restricts the events they match.
 
@@ -32,15 +32,15 @@ An exception event matches an exception filter if the exception code for the exc
 
 ### <span id="commands_and_parameters"></span><span id="COMMANDS_AND_PARAMETERS"></span>Commands and Parameters
 
-Event filters can have a debugger command associated with them. This command is executed by the engine when an event matching the filter occurs. [**GetEventFilterCommand**](https://msdn.microsoft.com/library/windows/hardware/ff546611) and [**SetEventFilterCommand**](https://msdn.microsoft.com/library/windows/hardware/ff556678) can be used to get and set this command. For exception filters, this command is executed on the first-chance of the exception. A separate second-chance command can be executed upon the second-chance exception event. To get and set the second-chance command, use [**GetExceptionFilterSecondCommand**](https://msdn.microsoft.com/library/windows/hardware/ff546653) and [**SetExceptionSecondChanceCommand**](https://msdn.microsoft.com/library/windows/hardware/ff556687).
+Event filters can have a debugger command associated with them. This command is executed by the engine when an event matching the filter occurs. [**GetEventFilterCommand**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-geteventfiltercommand) and [**SetEventFilterCommand**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-seteventfiltercommand) can be used to get and set this command. For exception filters, this command is executed on the first-chance of the exception. A separate second-chance command can be executed upon the second-chance exception event. To get and set the second-chance command, use [**GetExceptionFilterSecondCommand**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getexceptionfiltersecondcommand) and [**SetExceptionSecondChanceCommand**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setexceptionfiltersecondcommand).
 
-The parameters for specific event filters and exception filters are returned by [**GetSpecificFilterParameters**](https://msdn.microsoft.com/library/windows/hardware/ff548398) and [**GetExceptionFilterParameters**](https://msdn.microsoft.com/library/windows/hardware/ff556683). The break status and handling status for event filters can be set using [**SetSpecificFilterParameters**](https://msdn.microsoft.com/library/windows/hardware/ff556795) and **SetExceptionFilterParameters**.
+The parameters for specific event filters and exception filters are returned by [**GetSpecificFilterParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getspecificfilterparameters) and [**GetExceptionFilterParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setexceptionfilterparameters). The break status and handling status for event filters can be set using [**SetSpecificFilterParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setspecificfilterparameters) and **SetExceptionFilterParameters**.
 
 **SetExceptionFilterParameters** can also be used to add and remove arbitrary exception filters.
 
-A short description of specific filters is returned by [**GetEventFilterText**](https://msdn.microsoft.com/library/windows/hardware/ff546618).
+A short description of specific filters is returned by [**GetEventFilterText**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-geteventfiltertext).
 
-Some specific filters take arguments that restrict which events the filter matches. [**GetSpecificFilterArgument**](https://msdn.microsoft.com/library/windows/hardware/ff548386) and [**SetSpecificFilterArgument**](https://msdn.microsoft.com/library/windows/hardware/ff556791) will get and set arguments for those specific filters which support arguments. If a specific filter has no argument, there is no restriction on which events it matches. The following table lists the event filters that take arguments and how they restrict the events which match them:
+Some specific filters take arguments that restrict which events the filter matches. [**GetSpecificFilterArgument**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getspecificfilterargument) and [**SetSpecificFilterArgument**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setspecificfilterargument) will get and set arguments for those specific filters which support arguments. If a specific filter has no argument, there is no restriction on which events it matches. The following table lists the event filters that take arguments and how they restrict the events which match them:
 
 <table>
 <colgroup>
@@ -90,7 +90,7 @@ Some specific filters take arguments that restrict which events the filter match
 
 ### <span id="index_and_exception_code"></span><span id="INDEX_AND_EXCEPTION_CODE"></span>Index and Exception Code
 
-Each event filter has an index. The index is a number between zero and one less than the total number of filters (inclusive). The index range for each category of filters can be found from the *SpecificEvents*, *SpecificExceptions*, and *ArbitraryExceptions* values returned by [**GetNumberEventFilters**](https://msdn.microsoft.com/library/windows/hardware/ff547899), as described in the following table:
+Each event filter has an index. The index is a number between zero and one less than the total number of filters (inclusive). The index range for each category of filters can be found from the *SpecificEvents*, *SpecificExceptions*, and *ArbitraryExceptions* values returned by [**GetNumberEventFilters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnumbereventfilters), as described in the following table:
 
 <table>
 <colgroup>
@@ -126,19 +126,13 @@ Each event filter has an index. The index is a number between zero and one less 
 
  
 
-The indices for the specific event filters are found in the first table located in the topic [**DEBUG\_FILTER\_XXX**](https://msdn.microsoft.com/library/windows/hardware/ff541490). The index of the default exception filter (the first specific exception filter) is *SpecificEvents*. When an arbitrary exception filter is removed, the indices of the other arbitrary exception filters can change.
+The indices for the specific event filters are found in the first table located in the topic [**DEBUG\_FILTER\_XXX**](./debug-filter-xxx.md). The index of the default exception filter (the first specific exception filter) is *SpecificEvents*. When an arbitrary exception filter is removed, the indices of the other arbitrary exception filters can change.
 
-The exception filters are usually specified by exception code. However, some methods require the index of the exception. To find the index of an exception filter for a given exception, use [**GetExceptionFilterParameters**](https://msdn.microsoft.com/library/windows/hardware/ff546650) to iterate over all the exception filters until you find the one with the same exception code as the exception. The exception codes for the specific exception filters can be found in the topic [**Specific Exceptions**](https://msdn.microsoft.com/library/windows/hardware/ff558784).
+The exception filters are usually specified by exception code. However, some methods require the index of the exception. To find the index of an exception filter for a given exception, use [**GetExceptionFilterParameters**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getexceptionfilterparameters) to iterate over all the exception filters until you find the one with the same exception code as the exception. The exception codes for the specific exception filters can be found in the topic [**Specific Exceptions**](./specific-exceptions.md).
 
 ### <span id="system_errors"></span><span id="SYSTEM_ERRORS"></span>System Errors
 
-When a system error occurs, the engine will break into the debugger or print the error to the output stream, if the error occurs at or below specified levels. These levels are returned by [**GetSystemErrorControl**](https://msdn.microsoft.com/library/windows/hardware/ff549215) and can be changed using [**SetSystemErrorControl**](https://msdn.microsoft.com/library/windows/hardware/ff556806).
+When a system error occurs, the engine will break into the debugger or print the error to the output stream, if the error occurs at or below specified levels. These levels are returned by [**GetSystemErrorControl**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getsystemerrorcontrol) and can be changed using [**SetSystemErrorControl**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setsystemerrorcontrol).
 
  
-
- 
-
-
-
-
 

@@ -13,13 +13,13 @@ ms.localizationpriority: medium
 # Summary of Debugger Extensions in Wudfext.dll
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The Windows Driver Kit (WDK) includes a debugger extension library, named *WudfExt.dll*, which is located in the %DDKROOT%\\bin subdirectory. This topic describes the debugger extension commands in *WudfExt.dll*, which you can use to debug User-Mode Driver Framework (UMDF) version 1.*x* drivers.
 
-To debug UMDF drivers starting in UMDF version 2.0, you must instead use the *Wdfkd.dll* debugger extension library. For more info, see [**Windows Driver Framework Extensions (Wdfkd.dll)**](https://msdn.microsoft.com/library/windows/hardware/ff551876).
+To debug UMDF drivers starting in UMDF version 2.0, you must instead use the *Wdfkd.dll* debugger extension library. For more info, see [**Windows Driver Framework Extensions (Wdfkd.dll)**](../debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
 
-For a complete description of each command in *WudfExt.dll*, see [User-Mode Driver Framework Extensions (Wudfext.dll)](https://msdn.microsoft.com/library/windows/hardware/ff560030). For more information about all available debugger extension libraries, see the documentation that is supplied with the [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) package.
+For a complete description of each command in *WudfExt.dll*, see [User-Mode Driver Framework Extensions (Wudfext.dll)](../debugger/user-mode-driver-framework-extensions--wudfext-dll-.md). For more information about all available debugger extension libraries, see the documentation that is supplied with the [Windows Debugging](../debugger/index.md) package.
 
 To load the *WudfExt.dll* debugger extension library, enter the following command at the debugger's command prompt:
 
@@ -125,10 +125,4 @@ The following table summarizes the extension commands that the WudfExt.dll exten
  
 
  
-
- 
-
-
-
-
 

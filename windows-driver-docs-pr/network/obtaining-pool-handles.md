@@ -21,32 +21,26 @@ ms.localizationpriority: medium
 
 The following NDIS pool allocation functions require a handle to allocate resources:
 
--   [**NdisAllocateNetBufferPool**](https://msdn.microsoft.com/library/windows/hardware/ff561613)
+-   [**NdisAllocateNetBufferPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferpool)
 
--   [**NdisAllocateNetBufferListPool**](https://msdn.microsoft.com/library/windows/hardware/ff561611)
+-   [**NdisAllocateNetBufferListPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool)
 
 NDIS 6.0 drivers obtain a handle as follows:
 
 <a href="" id="protocol-drivers"></a>Protocol drivers  
-Protocol drivers call the [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520) function to obtain a handle.
+Protocol drivers call the [**NdisRegisterProtocolDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function to obtain a handle.
 
 <a href="" id="miniport-drivers"></a>Miniport drivers  
-NDIS calls the [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function to pass the handle to the miniport driver.
+NDIS calls the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function to pass the handle to the miniport driver.
 
 <a href="" id="intermediate-drivers"></a>Intermediate drivers  
-Intermediate drivers call the [**NdisRegisterProtocolDriver**](https://msdn.microsoft.com/library/windows/hardware/ff564520) function to obtain a handle for pools used in send operations and NDIS calls *MiniportInitializeEx* to pass the handle to the intermediate driver for pools used in receive operations.
+Intermediate drivers call the [**NdisRegisterProtocolDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function to obtain a handle for pools used in send operations and NDIS calls *MiniportInitializeEx* to pass the handle to the intermediate driver for pools used in receive operations.
 
 <a href="" id="filter-drivers"></a>Filter drivers  
-NDIS calls the [*FilterAttach*](https://msdn.microsoft.com/library/windows/hardware/ff549905) function to pass the handle to the filter driver.
+NDIS calls the [*FilterAttach*](/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach) function to pass the handle to the filter driver.
 
 <a href="" id="other-drivers"></a>Other drivers  
-If a driver cannot obtain a handle through one of the preceding methods, the driver can call the [**NdisAllocateGenericObject**](https://msdn.microsoft.com/library/windows/hardware/ff561603) function to get a handle.
+If a driver cannot obtain a handle through one of the preceding methods, the driver can call the [**NdisAllocateGenericObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocategenericobject) function to get a handle.
 
  
-
- 
-
-
-
-
 

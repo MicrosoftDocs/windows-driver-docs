@@ -25,6 +25,12 @@ The DEVPKEY_DEVICE_CompatibleIds device property represents the list of compatib
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -36,7 +42,7 @@ The DEVPKEY_DEVICE_CompatibleIds device property represents the list of compatib
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>Internal data format</strong></p></td>
-<td align="left">&quot;<em>compatible-id1</em>\0<em>compatible-id</em>2\0...<em>compatible-idn</em>\0\0&quot;</td>
+<td align="left">"<em>compatible-id1</em>\0<em>compatible-id</em>2\0...<em>compatible-idn</em>\0\0"</td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Property access</strong></p></td>
@@ -58,45 +64,25 @@ The DEVPKEY_DEVICE_CompatibleIds device property represents the list of compatib
 Remarks
 -------
 
-The value of DEVPKEY_DEVICE_CompatibleIds is set by the *compatible-id* entry values that are supplied for a device in the [**INF Models section**](https://msdn.microsoft.com/library/windows/hardware/ff547456) of the INF file that installs a device.
+The value of DEVPKEY_DEVICE_CompatibleIds is set by the *compatible-id* entry values that are supplied for a device in the [**INF Models section**](./inf-models-section.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963) to retrieve the value of DEVPKEY_DEVICE_CompatibleIds.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_DEVICE_CompatibleIds.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_CompatibleIds property key. Instead, you can use the corresponding SPDRP_COMPATIBLEIDS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://msdn.microsoft.com/library/windows/hardware/ff537737).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_CompatibleIds property key. Instead, you can use the corresponding SPDRP_COMPATIBLEIDS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**INF Models Section**](https://msdn.microsoft.com/library/windows/hardware/ff547456)
+[**INF Models Section**](./inf-models-section.md)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

@@ -273,7 +273,7 @@ Consider including the threat modeling process in a broader Secure Development L
 
 The Microsoft SDL process provides a number of recommended software development process that can be modified to fit any size of organization - including a single developer. Consider adding components of the SDL recommendations to your software development process.
 
-For more information, see [Microsoft Security Development Lifecycle (SDL) – Process Guidance](https://msdn.microsoft.com/library/84aed186-1d75-4366-8e61-8d258746bopq.aspx).
+For more information, see [Microsoft Security Development Lifecycle (SDL) – Process Guidance](/previous-versions/windows/desktop/cc307891(v=msdn.10)).
 
 **Training and organizational capabilities** - Pursue software development security training to expand your ability to recognize and remediate software vulnerabilities.
 
@@ -333,17 +333,17 @@ For additional driver security resources, see [Driver Security Checklist](driver
 
 [Common Driver Reliability Problems](https://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc) white paper
 
-[Cancel Logic in Windows Drivers](https://msdn.microsoft.com/library/windows/hardware/dn653289) white paper
+[Cancel Logic in Windows Drivers](/previous-versions/windows/hardware/design/dn653289(v=vs.85)) white paper
 
 [Windows security model: what every driver writer needs to know](windows-security-model.md)
 
 **Microsoft Windows Driver Development Kit (DDK)**
 
-See [Driver Programming Techniques](https://msdn.microsoft.com/library/windows/hardware/ff544177) in [Kernel-Mode Driver Architecture](https://msdn.microsoft.com/library/windows/hardware/ff557560)
+See [Driver Programming Techniques](https://docs.microsoft.com/windows-hardware/drivers/kernel/driver-programming-techniques) in [Kernel-Mode Driver Architecture](../index.yml)
 
 **Test Tools**
 
-See [Windows Hardware Lab Kit](https://msdn.microsoft.com/library/windows/hardware/dn930814) in [Test for performance and compatibility](https://msdn.microsoft.com/windows/hardware/commercialize/test/index)
+See [Windows Hardware Lab Kit](../index.yml) in [Test for performance and compatibility](/windows-hardware/test/index)
 
 **Public databases of known threats and software vulnerabilities**
 
@@ -353,11 +353,5 @@ To expand your knowledge of software threats, review the available public databa
 -   Common Weakness Enumeration: <https://cwe.mitre.org/>
 -   Common Attack Pattern Enumeration and Classification: <https://capec.mitre.org/index.html>
 -   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
-
-
- 
-
-
-
 
 

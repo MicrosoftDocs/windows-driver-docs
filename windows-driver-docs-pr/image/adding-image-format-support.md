@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-A WIA minidriver reports image formats to the WIA service in the [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543986) method.
+A WIA minidriver reports image formats to the WIA service in the [**IWiaMiniDrv::drvGetWiaFormatInfo**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo) method.
 
 ### <a href="" id="implementing-iwiaminidrv-drvgetwiaformatinfo"></a>Implementing IWiaMiniDrv::drvGetWiaFormatInfo
 
@@ -36,7 +36,7 @@ TYMED\_CALLBACK
 
 TYMED\_MULTIPAGE\_CALLBACK
 
-The following example shows an implementation of [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://msdn.microsoft.com/library/windows/hardware/ff543986):
+The following example shows an implementation of [**IWiaMiniDrv::drvGetWiaFormatInfo**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo):
 
 ```cpp
 HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
@@ -86,9 +86,4 @@ HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
 ```
 
  
-
- 
-
-
-
 

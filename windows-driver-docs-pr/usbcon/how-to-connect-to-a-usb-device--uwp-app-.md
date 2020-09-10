@@ -1,5 +1,5 @@
 ---
-Description: In Windows 8.1, you can write a UWP app that interacts with a USB device.
+description: In Windows 8.1, you can write a UWP app that interacts with a USB device.
 title: How to connect to a USB device (UWP app)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -10,14 +10,14 @@ ms.localizationpriority: medium
 
 **Summary**
 
--   How to use the [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446) object to detect devices
+-   How to use the [**DeviceWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher) object to detect devices
 -   How to open the device for communication
 -   How to close the device when you are finished using it
 
 **Important APIs**
 
--   [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883)
--   [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446)
+-   [**UsbDevice**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice)
+-   [**DeviceWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)
 
 When you write a UWP app that interacts with a USB device, the app can send control commands, get device information, and read and write data to/from bulk and interrupt endpoints. Before you can do all that, you must find the device and establish connection.
 
@@ -27,7 +27,7 @@ When you write a UWP app that interacts with a USB device, the app can send cont
 -   This is the first topic in a series. Before you start this tutorial, you must have created a basic Visual Studio project that you can extend in this tutorial. Read [Getting started with UWP apps](https://go.microsoft.com/fwlink/p/?linkid=617681) for more info.
 -   Code examples are based on the CustomUsbDeviceAccess sample. You can download the complete sample from this code gallery page.
 -   The USB device used in tutorial is the SuperMUTT device.
--   In order to use the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace to write a Windows app that interacts with a USB device, the device must have the Winusb.sys driver loaded as its function driver. Winusb.sys is provided by Microsoft and is included with Windows in the **\\Windows\\System32\\drivers** folder.
+-   In order to use the [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb) namespace to write a Windows app that interacts with a USB device, the device must have the Winusb.sys driver loaded as its function driver. Winusb.sys is provided by Microsoft and is included with Windows in the **\\Windows\\System32\\drivers** folder.
 
 ## Flowchart: Finding the device
 
@@ -108,9 +108,9 @@ Your UWP app can find all devices that match a specific set of class, subclass, 
 
 Generate an advanced query string (AQS) that contains identification information about the device that you want to detect. You can generate the string either by specifying the vendor/product IDs, device interface GUID, or by the device class.
 
--   If you want to provide the vendor ID/product ID or the device interface GUID, call any overload of [**GetDeviceSelector**](https://msdn.microsoft.com/library/windows/apps/dn264022).
+-   If you want to provide the vendor ID/product ID or the device interface GUID, call any overload of [**GetDeviceSelector**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_GetDeviceSelector_System_UInt32_System_UInt32_System_Guid_).
 
-    In the example of the SuperMUTT device, [**GetDeviceSelector**](https://msdn.microsoft.com/library/windows/apps/dn264022) retrieves an AQS string similar to this string:
+    In the example of the SuperMUTT device, [**GetDeviceSelector**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_GetDeviceSelector_System_UInt32_System_UInt32_System_Guid_) retrieves an AQS string similar to this string:
 
     `"System.Devices.InterfaceClassGuid:="{DEE824EF-729B-4A0E-9C14-B7117D33A817}" AND System.Devices.InterfaceEnabled:=System.StructuredQueryType.Boolean#True AND System.DeviceInterface.WinUsb.UsbVendorId:=1118 AND System.DeviceInterface.WinUsb.UsbProductId:=61441"`
 
@@ -118,20 +118,20 @@ Generate an advanced query string (AQS) that contains identification information
 
      
 
--   If you know the device class of the device or its class, subclass, and protocol codes, call [**GetDeviceClassSelector**](https://msdn.microsoft.com/library/windows/apps/dn264013) to generate the AQS string.
+-   If you know the device class of the device or its class, subclass, and protocol codes, call [**GetDeviceClassSelector**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_GetDeviceClassSelector_Windows_Devices_Usb_UsbDeviceClass_) to generate the AQS string.
 
-    Create a [**UsbDeviceClass**](https://msdn.microsoft.com/library/windows/apps/dn263894) object by specifying [**ClassCode**](https://msdn.microsoft.com/library/windows/apps/dn263948), [**SubclassCode**](https://msdn.microsoft.com/library/windows/apps/dn263956), and [**ProtocolCode**](https://msdn.microsoft.com/library/windows/apps/dn263951) property values. Alternatively, if you know the device class of the device, you can call the constructor by specifying a particular [**UsbDeviceClasses**](https://msdn.microsoft.com/library/windows/apps/dn263904) property.
+    Create a [**UsbDeviceClass**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDeviceClass) object by specifying [**ClassCode**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDeviceClass#Windows_Devices_Usb_UsbDeviceClass_ClassCode), [**SubclassCode**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDeviceClass#Windows_Devices_Usb_UsbDeviceClass_SubclassCode), and [**ProtocolCode**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDeviceClass#Windows_Devices_Usb_UsbDeviceClass_ProtocolCode) property values. Alternatively, if you know the device class of the device, you can call the constructor by specifying a particular [**UsbDeviceClasses**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDeviceClasses) property.
 
 ## Finding the device—The basic way
 
 
-This is the simplest way to find a USB device. For details, see [Quickstart: enumerating commonly used devices](https://msdn.microsoft.com/library/windows/apps/xaml/hh872189).
+This is the simplest way to find a USB device. For details, see [Quickstart: enumerating commonly used devices](https://docs.microsoft.com/previous-versions/windows/apps/hh872189(v=win.10)).
 
-1.  Pass the retrieved AQS string to [**FindAllAsync**](https://msdn.microsoft.com/library/windows/apps/br225432). The call retrieves a [**DeviceInformationCollection**](https://msdn.microsoft.com/library/windows/apps/br225395) object.
-2.  Loop through the collection. Each iteration gets a [**DeviceInformation**](https://msdn.microsoft.com/library/windows/apps/br225393) object.
-3.  Get the [**DeviceInformation.Id**](https://msdn.microsoft.com/library/windows/apps/br225437) property value. The string value is the device instance path. For example, "\\\\\\\\?\\\\USB\#VID\_045E&PID\_078F\#6&1b8ff026&0&5\#{dee824ef-729b-4a0e-9c14-b7117d33a817}".
-4.  Call [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/dn264010) by passing the device instance string and get the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object. You can then use the **UsbDevice** object to perform other operations, such as sending a control transfer. When the app has finished using the **UsbDevice** object, the app must release it by calling [**Close**](https://msdn.microsoft.com/library/windows/apps/dn263990).
-    **Note**  When UWP app suspends, the device is closed automatically. To avoid using a stale handle for future operations, the app must released the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) reference.
+1.  Pass the retrieved AQS string to [**FindAllAsync**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_FindAllAsync_System_String_). The call retrieves a [**DeviceInformationCollection**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformationCollection) object.
+2.  Loop through the collection. Each iteration gets a [**DeviceInformation**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation) object.
+3.  Get the [**DeviceInformation.Id**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id) property value. The string value is the device instance path. For example, "\\\\\\\\?\\\\USB\#VID\_045E&PID\_078F\#6&1b8ff026&0&5\#{dee824ef-729b-4a0e-9c14-b7117d33a817}".
+4.  Call [**FromIdAsync**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_FromIdAsync_System_String_) by passing the device instance string and get the [**UsbDevice**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice) object. You can then use the **UsbDevice** object to perform other operations, such as sending a control transfer. When the app has finished using the **UsbDevice** object, the app must release it by calling [**Close**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Close).
+    **Note**  When UWP app suspends, the device is closed automatically. To avoid using a stale handle for future operations, the app must released the [**UsbDevice**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice) reference.
 
      
 
@@ -164,15 +164,15 @@ This is the simplest way to find a USB device. For details, see [Quickstart: enu
 ## Find the device—using DeviceWatcher
 
 
-Alternatively, you can enumerate devices dynamically. Then, your app can receive notification if devices are added or removed, or if device properties change. For more information, see [How to get notifications if devices are added, removed, or changed](https://msdn.microsoft.com/library/windows/apps/xaml/hh967756).
+Alternatively, you can enumerate devices dynamically. Then, your app can receive notification if devices are added or removed, or if device properties change. For more information, see [How to get notifications if devices are added, removed, or changed](https://docs.microsoft.com/previous-versions/windows/apps/hh967756(v=win.10)).
 
-A [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446) object enables an app to dynamically detect devices as they get added and removed from the system.
+A [**DeviceWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher) object enables an app to dynamically detect devices as they get added and removed from the system.
 
-1.  Create a [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446) object to detect when the device is added to or removed from the system. You must create the object by calling [**CreateWatcher**](https://msdn.microsoft.com/library/windows/apps/br225427) and specifying the AQS string.
-2.  Implement and register handlers for [**Added**](https://msdn.microsoft.com/library/windows/apps/br225450) and [**Removed**](https://msdn.microsoft.com/library/windows/apps/br225453) events on the [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446) object. Those event handlers are invoked when devices (with the same identification information) are added or removed from the system.
-3.  Start and stop the [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446) object.
+1.  Create a [**DeviceWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher) object to detect when the device is added to or removed from the system. You must create the object by calling [**CreateWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_CreateWatcher) and specifying the AQS string.
+2.  Implement and register handlers for [**Added**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher#Windows_Devices_Enumeration_DeviceWatcher_Added) and [**Removed**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher#Windows_Devices_Enumeration_DeviceWatcher_Removed) events on the [**DeviceWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher) object. Those event handlers are invoked when devices (with the same identification information) are added or removed from the system.
+3.  Start and stop the [**DeviceWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher) object.
 
-    The app must start the [**DeviceWatcher**](https://msdn.microsoft.com/library/windows/apps/br225446) object by calling [**Start**](https://msdn.microsoft.com/library/windows/apps/br225454) so that it can start detecting devices as they are added or removed from the system. Conversely, the app must stop the **DeviceWatcher** by calling [**Stop**](https://msdn.microsoft.com/library/windows/apps/br225456), when it's no longer necessary to detect devices. The sample has two buttons that allows the user to start and stop **DeviceWatcher**.
+    The app must start the [**DeviceWatcher**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher) object by calling [**Start**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher#Windows_Devices_Enumeration_DeviceWatcher_Start) so that it can start detecting devices as they are added or removed from the system. Conversely, the app must stop the **DeviceWatcher** by calling [**Stop**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher#Windows_Devices_Enumeration_DeviceWatcher_Stop), when it's no longer necessary to detect devices. The sample has two buttons that allows the user to start and stop **DeviceWatcher**.
 
 This code example shows how to create and start a device watcher to look for instances of the SuperMUTT device.
 
@@ -199,13 +199,13 @@ void CreateSuperMuttDeviceWatcher(void)
 ## Open the device
 
 
-To open the device, the app must start an asynchronous operation by calling the static method [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/dn264010) and passing the device instance path (obtained from [**DeviceInformation.Id**](https://msdn.microsoft.com/library/windows/apps/br225437)). That result of that operation obtain is a [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object, which is used for future communication with the device, such as performing data transfers.
+To open the device, the app must start an asynchronous operation by calling the static method [**FromIdAsync**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_FromIdAsync_System_String_) and passing the device instance path (obtained from [**DeviceInformation.Id**](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)). That result of that operation obtain is a [**UsbDevice**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice) object, which is used for future communication with the device, such as performing data transfers.
 
-After you are finished using the [**UsbDevice**](https://msdn.microsoft.com/library/windows/apps/dn263883) object, you must release it. By releasing the object, all pending data transfers are canceled. The completion callback routines for those operations are still invoked with canceled error or the operation completed.
+After you are finished using the [**UsbDevice**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice) object, you must release it. By releasing the object, all pending data transfers are canceled. The completion callback routines for those operations are still invoked with canceled error or the operation completed.
 
-C++ apps must release the reference by using the **delete** keyword. C#/VB apps must call the [**UsbDevice.Dispose**](https://msdn.microsoft.com/library/windows/apps/dn264007) method. JavaScript apps must call [**UsbDevice.Close**](https://msdn.microsoft.com/library/windows/apps/dn263990).
+C++ apps must release the reference by using the **delete** keyword. C#/VB apps must call the [**UsbDevice.Dispose**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Dispose) method. JavaScript apps must call [**UsbDevice.Close**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_Close).
 
-The [**FromIdAsync**](https://msdn.microsoft.com/library/windows/apps/dn264010) fails if the device is in use or cannot be found.
+The [**FromIdAsync**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_FromIdAsync_System_String_) fails if the device is in use or cannot be found.
 
  
 

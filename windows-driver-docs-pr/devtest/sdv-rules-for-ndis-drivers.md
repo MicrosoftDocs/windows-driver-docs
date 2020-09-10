@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Rules for NDIS Drivers
 
 
-This section lists and describes the [Static Driver Verifier rules](https://msdn.microsoft.com/library/windows/hardware/ff552839) for NDIS drivers that you can include in a verification of your driver.
+This section lists and describes the [Static Driver Verifier rules](./static-driver-verifier-rule.md) for NDIS drivers that you can include in a verification of your driver.
 
 ## In this section
 
@@ -73,10 +73,4 @@ You can test NDIS/WIFI drivers with these rules starting with Windows 8.1.
  
 
  
-
- 
-
-
-
-
 

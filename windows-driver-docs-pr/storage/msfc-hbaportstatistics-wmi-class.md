@@ -54,15 +54,9 @@ class MSFC_HBAPortStatistics
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_HBAPortStatistics**](https://msdn.microsoft.com/library/windows/hardware/ff562512)
+[**MSFC\_HBAPortStatistics**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportstatistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

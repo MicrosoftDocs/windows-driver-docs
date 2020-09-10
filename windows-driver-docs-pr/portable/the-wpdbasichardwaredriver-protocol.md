@@ -1,5 +1,5 @@
 ---
-Description: The WpdBasicHardwareDriver Protocol
+description: The WpdBasicHardwareDriver Protocol
 title: The WpdBasicHardwareDriver Protocol
 ms.date: 04/20/2017
 ms.localizationpriority: medium

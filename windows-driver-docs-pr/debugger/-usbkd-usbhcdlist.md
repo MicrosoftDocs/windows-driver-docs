@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !usbkd.usbhcdlist
 
 
-The [**!usbkd.usbhcdlist**](https://msdn.microsoft.com/library/windows/hardware/dn367074) command displays information about all USB host controllers that are represented by the USB port driver (Usbport.sys). For information about the USB port driver and the associated miniport drivers, see [USB Driver Stack Architecture](https://go.microsoft.com/fwlink/p?LinkId=251983).
+The [**!usbkd.usbhcdlist**](-usbkd-usbhcdlist.md) command displays information about all USB host controllers that are represented by the USB port driver (Usbport.sys). For information about the USB port driver and the associated miniport drivers, see [USB host-side drivers in Windows](../usbcon/usb-3-0-driver-stack-architecture.md).
 
 ```dbgcmd
 !usbkd.usbhcdlist
@@ -30,7 +30,7 @@ Usbkd.dll
 Examples
 --------
 
-Here is an example of a portion of the output of [**!usbhcdlist**](https://msdn.microsoft.com/library/windows/hardware/dn367074).
+Here is an example of a portion of the output of [**!usbhcdlist**](-usbkd-usbhcdlist.md).
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdlist
@@ -63,14 +63,7 @@ MINIPORT List @ fffff80001e5bbd0
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

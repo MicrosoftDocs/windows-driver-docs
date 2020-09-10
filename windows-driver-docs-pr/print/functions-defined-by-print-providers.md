@@ -26,7 +26,7 @@ All print providers must supply pointers for all listed functions. However, most
 
 In the following function lists, functions that must be supported are labeled "Required".
 
-All print providers must export the initialization function, [**InitializePrintProvidor**](https://msdn.microsoft.com/library/windows/hardware/ff551614). Pointers to all the other functions must be supplied in a [**PRINTPROVIDOR**](https://msdn.microsoft.com/library/windows/hardware/ff560993) structure. (Note that these two names are misspelled, but are consistent with the names that appear in the header file, Winsplp.h.)
+All print providers must export the initialization function, [**InitializePrintProvidor**](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor). Pointers to all the other functions must be supplied in a [**PRINTPROVIDOR**](/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_printprovidor) structure. (Note that these two names are misspelled, but are consistent with the names that appear in the header file, Winsplp.h.)
 
 Functions are divided into groups, and presented in the following sections:
 
@@ -67,7 +67,7 @@ Other Functions
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff551614" data-raw-source="[&lt;strong&gt;InitializePrintProvidor&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff551614)"><strong>InitializePrintProvidor</strong></a> (Required)</p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor" data-raw-source="[&lt;strong&gt;InitializePrintProvidor&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-initializeprintprovidor)"><strong>InitializePrintProvidor</strong></a> (Required)</p></td>
 <td><p>Initializes the print provider and returns pointers to supplied functions.</p></td>
 </tr>
 </tbody>
@@ -130,12 +130,12 @@ Other Functions
 <td><p>Enables caller access to a specified print queue.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff561930" data-raw-source="[&lt;strong&gt;RefreshPrinterChangeNotification&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff561930)"><strong>RefreshPrinterChangeNotification</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/ff561930(v=vs.85)" data-raw-source="[&lt;strong&gt;RefreshPrinterChangeNotification&lt;/strong&gt;](/previous-versions/ff561930(v=vs.85))"><strong>RefreshPrinterChangeNotification</strong></a></p></td>
 <td><p>Called by router if client calls <strong>FindNextPrinterChangeNotification</strong> (see the Microsoft Windows SDK documentation) with the PRINTER_NOTIFY_OPTIONS_REFRESH flag set.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ResetPrinter</strong></p></td>
-<td><p>Modifies a print queue&#39;s data type or <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552837)"><strong>DEVMODEW</strong></a> structure.</p></td>
+<td><p>Modifies a print queue's data type or <a href="https://docs.microsoft.com/windows/win32/api/wingdi/ns-wingdi-devmodew" data-raw-source="[&lt;strong&gt;DEVMODEW&lt;/strong&gt;](/windows/win32/api/wingdi/ns-wingdi-devmodew)"><strong>DEVMODEW</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SetPrinter</strong> (Required)</p></td>
@@ -166,7 +166,7 @@ Other Functions
 <tbody>
 <tr class="odd">
 <td><p><strong>AddPrinterDriver</strong></p></td>
-<td><p>Adds a specified printer&#39;s driver files to a specified server.</p></td>
+<td><p>Adds a specified printer's driver files to a specified server.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AddPrinterDriverEx</strong></p></td>
@@ -174,7 +174,7 @@ Other Functions
 </tr>
 <tr class="odd">
 <td><p><strong>DeletePrinterDriver</strong></p></td>
-<td><p>Deletes access to a specified printer&#39;s driver files, on a specified server.</p></td>
+<td><p>Deletes access to a specified printer's driver files, on a specified server.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DeletePrinterDriverEx</strong></p></td>
@@ -194,7 +194,7 @@ Other Functions
 </tr>
 <tr class="even">
 <td><p><strong>GetPrinterDriverDirectory</strong></p></td>
-<td><p>Returns the name of the server&#39;s printer driver directory.</p></td>
+<td><p>Returns the name of the server's printer driver directory.</p></td>
 </tr>
 </tbody>
 </table>
@@ -225,7 +225,7 @@ Other Functions
 <td><p></p>
 <strong>AddJob</strong>
 (Required)</td>
-<td><p>Returns a job identifier and spool file path. The caller uses <a href="https://msdn.microsoft.com/library/windows/desktop/aa363858" data-raw-source="[&lt;strong&gt;CreateFile&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/desktop/aa363858)"><strong>CreateFile</strong></a> and <strong>WriteFile</strong> to send data to the spool file.</p></td>
+<td><p>Returns a job identifier and spool file path. The caller uses <a href="https://docs.microsoft.com/windows/win32/api/fileapi/nf-fileapi-createfilea" data-raw-source="[&lt;strong&gt;CreateFile&lt;/strong&gt;](/windows/win32/api/fileapi/nf-fileapi-createfilea)"><strong>CreateFile</strong></a> and <strong>WriteFile</strong> to send data to the spool file.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p>
@@ -261,7 +261,7 @@ Other Functions
 <td><p></p>
 <strong>WritePrinter</strong>
 (Required)</td>
-<td><p>Receives a portion of the print job&#39;s data stream.</p></td>
+<td><p>Receives a portion of the print job's data stream.</p></td>
 </tr>
 </tbody>
 </table>
@@ -421,7 +421,7 @@ Returns the directory path in which print processor files must be stored.
 <tbody>
 <tr class="odd">
 <td><p><strong>AddPort</strong></p></td>
-<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff545026" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff545026)"><strong>AddPortUI</strong></a> function.</p></td>
+<td><p>Adds a printer port to the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-addportui" data-raw-source="[&lt;strong&gt;AddPortUI&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-addportui)"><strong>AddPortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>AddPortEx</strong></p></td>
@@ -431,13 +431,13 @@ Returns the directory path in which print processor files must be stored.
 <td><p></p>
 <strong>ConfigurePort</strong>
 (Required)</td>
-<td><p>Configures a printer port, typically by calling the specified port monitor&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff546290" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff546290)"><strong>ConfigurePortUI</strong></a> function.</p></td>
+<td><p>Configures a printer port, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-configureportui" data-raw-source="[&lt;strong&gt;ConfigurePortUI&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-configureportui)"><strong>ConfigurePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p></p>
 <strong>DeletePort</strong>
 (Required)</td>
-<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff547432" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547432)"><strong>DeletePortUI</strong></a> function.</p></td>
+<td><p>Deletes a printer port from the list of those available, typically by calling the specified port monitor's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/winsplp/nf-winsplp-deleteportui" data-raw-source="[&lt;strong&gt;DeletePortUI&lt;/strong&gt;](/windows-hardware/drivers/ddi/winsplp/nf-winsplp-deleteportui)"><strong>DeletePortUI</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p></p>
@@ -470,7 +470,7 @@ Returns the directory path in which print processor files must be stored.
 <tbody>
 <tr class="odd">
 <td><p><strong>DeletePrinterData</strong></p></td>
-<td><p>Deletes the value currently assigned to a specified value name, under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Deletes the value currently assigned to a specified value name, under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DeletePrinterDataEx</strong></p></td>
@@ -478,11 +478,11 @@ Returns the directory path in which print processor files must be stored.
 </tr>
 <tr class="odd">
 <td><p><strong>DeletePrinterKey</strong></p></td>
-<td><p>Deletes a specified key and its subkeys, if they are currently stored in the registry under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Deletes a specified key and its subkeys, if they are currently stored in the registry under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>EnumPrinterData</strong></p></td>
-<td><p>Returns each of the value names and currently assigned values that are stored in the registry under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Returns each of the value names and currently assigned values that are stored in the registry under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>EnumPrinterDataEx</strong></p></td>
@@ -494,7 +494,7 @@ Returns the directory path in which print processor files must be stored.
 </tr>
 <tr class="odd">
 <td><p><strong>GetPrinterData</strong></p></td>
-<td><p>Returns the value currently assigned to a specified value name, which is stored in the registry under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Returns the value currently assigned to a specified value name, which is stored in the registry under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>GetPrinterDataEx</strong></p></td>
@@ -502,7 +502,7 @@ Returns the directory path in which print processor files must be stored.
 </tr>
 <tr class="odd">
 <td><p><strong>SetPrinterData</strong></p></td>
-<td><p>Stores a specified value name and value in the registry, under the specified printer&#39;s <strong>PrinterDriverData</strong> key.</p></td>
+<td><p>Stores a specified value name and value in the registry, under the specified printer's <strong>PrinterDriverData</strong> key.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SetPrinterDataEx</strong></p></td>
@@ -528,7 +528,7 @@ Returns the directory path in which print processor files must be stored.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff564255" data-raw-source="[&lt;strong&gt;XcvData&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564255)"><strong>XcvData</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/previous-versions/ff564255(v=vs.85)" data-raw-source="[&lt;strong&gt;XcvData&lt;/strong&gt;](/previous-versions/ff564255(v=vs.85))"><strong>XcvData</strong></a></p></td>
 <td><p>Provides a communication path between a port monitor UI DLL and a port monitor server DLL.</p></td>
 </tr>
 </tbody>
@@ -537,9 +537,4 @@ Returns the directory path in which print processor files must be stored.
  
 
  
-
- 
-
-
-
 

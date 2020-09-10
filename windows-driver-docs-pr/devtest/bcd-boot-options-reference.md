@@ -2,24 +2,24 @@
 title: BCDEdit Options Reference
 description: BCDEdit Options Reference
 ms.assetid: 351f8bc3-a228-48a4-bda8-69ee8521a5d3
-ms.date: 05/21/2018
+ms.date: 04/22/2019
 ms.localizationpriority: medium
 ---
 
 # BCDEdit Options Reference
 
-
 *Boot entry parameters*, or *boot parameters*, are optional, system-specific settings that represent configuration options. You can add boot parameters to a boot entry for an operating system.
 
 This section describes the boot options for supported versions of Windows that are related to developing, testing, and debugging drivers on computers with x86-based and x64-based processors. You can add these parameters to the boot entries for Windows operating systems.
 
+> [!CAUTION]
+> Administrative privileges are required to use BCDEdit to modify BCD. Changing some boot entry options using the **BCDEdit /set** command could render your computer inoperable. As an alternative, use the System Configuration utility (MSConfig.exe) to change boot settings.
+ 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
  
-
 ## In this section
-
 
 <table>
 <colgroup>
@@ -79,168 +79,6 @@ Before setting BCDEdit options you might need to disable or suspend BitLocker an
 </tbody>
 </table>
 
- 
-
-### Mapping Boot.ini Options to BCDEdit Options and Elements
-
-The following table provides a mapping from the boot options used in operating systems prior to Windows Vista (in Boot.ini), to the BCDEdit options and the BCD elements used in Windows. For information about the BCD boot elements see [BCD Reference](https://go.microsoft.com/fwlink/p/?linkid=56420).
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Boot.ini</th>
-<th align="left">BCDEdit option</th>
-<th align="left">BCD element type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>/3GB</p></td>
-<td align="left"><p><strong>increaseuserva</strong></p></td>
-<td align="left"><p>BcdOSLoaderInteger_IncreaseUserVa</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/BASEVIDEO</p></td>
-<td align="left"><p><strong>vga</strong></p></td>
-<td align="left"><p>BcdOSLoaderBoolean_UseVgaDriver</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/BOOTLOG</p></td>
-<td align="left"><p><strong>bootlog</strong></p></td>
-<td align="left"><p>BcdOSLoaderBoolean_BootLogInitialization</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/BREAK</p></td>
-<td align="left"><p><strong>halbreakpoint</strong></p></td>
-<td align="left"><p>BcdOSLoaderBoolean_DebuggerHalBreakpoint</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/CRASHDEBUG</p></td>
-<td align="left"><p><strong>/dbgsettings /start</strong></p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/DEBUG, BOOTDEBUG</p></td>
-<td align="left"><p><strong>/debug</strong></p>
-<p><strong>/bootdebug</strong></p></td>
-<td align="left"><p>BcdLibraryBoolean_DebuggerEnabled</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/DEBUG</p></td>
-<td align="left"><p><strong>/debug</strong></p></td>
-<td align="left"><p>BcdOSLoaderBoolean_KernelDebuggerEnabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/DEBUG, /DEBUGPORT=</p></td>
-<td align="left"><p><strong>/dbgsettings</strong></p></td>
-<td align="left"><p>BcdLibraryInteger_DebuggerType</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/DEBUGPORT=</p></td>
-<td align="left"><p><strong>/dbgsettings</strong></p></td>
-<td align="left"><p>BcdLibraryInteger_SerialDebuggerPort</p>
-<p>BcdLibraryInteger_SerialDebuggerBaudRate</p>
-<p>BcdLibraryInteger_1394DebuggerChannel</p>
-<p>BcdLibraryString_UsbDebuggerTargetName</p>
-<p>BcdLibraryInteger_DebuggerNetHostIP</p>
-<p>BcdLibraryInteger_DebuggerNetPort</p>
-<p>BcdLibraryBoolean_DebuggerNetDhcp</p>
-<p>BcdLibraryString_DebuggerNetKey</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/EXECUTE</p></td>
-<td align="left"><p><strong>nx</strong></p></td>
-<td align="left"><p>BcdOSLoaderInteger_NxPolicy</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/FASTDETECT</p></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/HAL=</p></td>
-<td align="left"><p><strong>hal</strong></p></td>
-<td align="left"><p>BcdOSLoaderString_HalPath</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/KERNEL=</p></td>
-<td align="left"><p><strong>kernel</strong></p></td>
-<td align="left"><p>BcdOSLoaderString_KernelPath</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/MAXMEM=</p></td>
-<td align="left"><p><strong>truncatememory</strong></p></td>
-<td align="left"><p>BcdLibraryInteger_TruncatePhysicalMemory</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/NODEBUG</p></td>
-<td align="left"><p><strong>/debug</strong></p></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/NOEXECUTE</p></td>
-<td align="left"><p><strong>nx</strong> {</p></td>
-<td align="left"><p>BcdOSLoaderInteger_NxPolicy</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/NOGUIBOOT</p></td>
-<td align="left"><p><strong>quietboot</strong></p></td>
-<td align="left"><p>BcdOSLoaderBoolean_DisableBootDisplay</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/NOLOWMEM</p></td>
-<td align="left"><p><strong>nolowmem</strong></p></td>
-<td align="left"><p>BcdOSLoaderBoolean_NoLowMemory</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/NOPAE</p></td>
-<td align="left"><p><strong>pae</strong></p></td>
-<td align="left"><p>BcdOSLoaderInteger_PAEPolicy</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/ONECPU</p></td>
-<td align="left"><p><strong>onecpu</strong></p></td>
-<td align="left"><p>BcdOSLoaderBoolean_UseBootProcessorOnly</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/PAE</p></td>
-<td align="left"><p><strong>pae</strong></p></td>
-<td align="left"><p>BcdOSLoaderInteger_PAEPolicy</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/PCILOCK</p></td>
-<td align="left"><p><strong>usefirmwarepcisettings</strong></p></td>
-<td align="left"><p>BcdOSLoaderInteger_UseFirmwarePciSettings</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>/REDIRECT</p></td>
-<td align="left"><p><strong>/ems</strong></p>
-<p><strong>/emssettings</strong> [ <strong>BIOS</strong> ] |</p>
-<p>[ <strong>EMSPORT:</strong>{<em>port</em>} | [<strong>EMSBAUDRATE:</strong> {<em>baudrate</em>}] ]</p></td>
-<td align="left"><p>BcdOSLoaderBoolean_EmsEnabled</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>/SOS</p></td>
-<td align="left"><p><strong>sos</strong></p></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-
  ## See also
  
- [Adding Boot Entries](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-boot-entries)
-
- 
-
- 
-
-
-
-
-
+ [Adding Boot Entries](./adding-boot-entries.md)

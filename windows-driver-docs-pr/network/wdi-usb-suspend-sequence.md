@@ -22,16 +22,9 @@ The following flow diagram shows the suspend sequence.
 ## Related topics
 
 
-[*MiniportWdiIdleNotification*](https://msdn.microsoft.com/library/windows/hardware/mt297563)
+[*MiniportWdiIdleNotification*](/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_idle_notification)
 
-[**WDI\_TLV\_SET\_POWER\_DX\_REASON**](https://msdn.microsoft.com/library/windows/hardware/dn898060)
-
- 
+[**WDI\_TLV\_SET\_POWER\_DX\_REASON**](./wdi-tlv-set-power-dx-reason.md)
 
  
-
-
-
-
-
 

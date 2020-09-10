@@ -1,5 +1,5 @@
 ---
-Description: Guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.
+description: Guidelines for choosing the best driver model for developing a USB client driver that acts as the device's function driver.
 title: Choose a driver model for developing a USB driver
 ms.date: 05/09/2018
 ms.localizationpriority: medium
@@ -23,7 +23,7 @@ The most common approach has been to implement a device driver, (termed as a *US
 Writing a driver that is customized to the device's requirements is the most flexible way to provide access to a USB device. However, implementing a driver requires a lot of work. The driver must perform complex tasks, such as driver initialization when new devices are detected, power management, I/O operations, surprise removal, state management, and cleanup when the device is removed. Before you choose to write a driver, ask the following questions:
 
 -   [Can you use a Microsoft-provided driver?](#can-you-use-a-microsoft-provided-driver)
--   [If you write a USB client driver, which driver model is best?](#if-you--write-a-usb-client-driver--which-driver-model-is-best-)
+-   [If you write a USB client driver, which driver model is best?](#if-you-write-a-usb-client-driver-which-driver-model-is-best)
 
 ## Can you use a Microsoft-provided driver?
 
@@ -44,7 +44,7 @@ You might *not* need to write a driver if:
 
     Loading WinUSB as the function driver provides a simpler alternative to implementing a custom USB driver. For example, WinUSB is the preferred approach for an electronic weather station that is accessed only by an application that is packaged with the device. It is also useful for diagnostic communication with a device and for flashing firmware.
 
-    To make it easy for applications to send requests to Winusb.sys, we provide a user-mode DLL, Winusb.dll, that exposes [WinUSB functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb). An application can call those functions to access the device, configure it, and transfer data to the device’s endpoints.
+    To make it easy for applications to send requests to Winusb.sys, we provide a user-mode DLL, Winusb.dll, that exposes [WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb). An application can call those functions to access the device, configure it, and transfer data to the device’s endpoints.
 
     WinUSB is not an option if:
 

@@ -93,7 +93,7 @@ On an x64-based computer: <strong>AMD64</strong>.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>windows</strong></p></td>
-<td align="left"><p>Becomes &quot;.&quot; Ignored. This directory level will be skipped.</p></td>
+<td align="left"><p>Becomes "." Ignored. This directory level will be skipped.</p></td>
 <td align="left"><p>Symbol path is <strong>retail</strong>.</p></td>
 </tr>
 <tr class="even">
@@ -170,7 +170,7 @@ For AMD64 builds:
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>hal</strong></p></td>
-<td align="left"><p>Becomes &quot;<strong>..</strong>&quot; For example, if the root destination directory is C:\Binaries\Amd64, the file is placed in C:\Binaries.</p></td>
+<td align="left"><p>Becomes "<strong>..</strong>" For example, if the root destination directory is C:\Binaries\Amd64, the file is placed in C:\Binaries.</p></td>
 <td align="left"><p>Symbol path is stripped of one directory.</p></td>
 </tr>
 <tr class="even">
@@ -206,7 +206,7 @@ For IA64 builds:
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>hal</strong></p></td>
-<td align="left"><p>Becomes &quot;<strong>..</strong>&quot;</p></td>
+<td align="left"><p>Becomes "<strong>..</strong>"</p></td>
 <td align="left"><p>Symbol path is stripped of one directory.</p></td>
 </tr>
 <tr class="even">

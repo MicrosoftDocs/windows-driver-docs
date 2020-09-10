@@ -21,15 +21,9 @@ A driver should use a BUS\_INTERFACE\_STANDARD interface if the overhead of an I
 
 A driver can use this method while running at IRQL &lt;= DISPTACH\_LEVEL.
 
-A driver usually obtains a BUS\_INTERFACE\_STANDARD interface during its initialization. The driver uses an [**IRP\_MN\_QUERY\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff551687) request to obtain the interface from the PCMCIA bus driver. The query interface request must be sent at IRQL PASSIVE\_LEVEL.
+A driver usually obtains a BUS\_INTERFACE\_STANDARD interface during its initialization. The driver uses an [**IRP\_MN\_QUERY\_INTERFACE**](../kernel/irp-mn-query-interface.md) request to obtain the interface from the PCMCIA bus driver. The query interface request must be sent at IRQL PASSIVE\_LEVEL.
 
 After the driver obtains the standard bus interface, the driver can call the interface routines **GetBusData** or **SetBusData** to access attribute memory.
 
  
-
- 
-
-
-
-
 

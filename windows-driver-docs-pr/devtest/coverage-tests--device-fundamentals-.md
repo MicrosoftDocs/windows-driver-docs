@@ -38,7 +38,7 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageDisableSupport.dll</p>
 <p><strong>Test method:</strong> DisableCoverageDataCollection</p>
 <p><strong>Parameters:</strong></p>
-<p><em>DQ</em> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p></td>
+<p><em>DQ</em> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="Display_collected_IRP_coverage_data._"></span><span id="display_collected_irp_coverage_data._"></span><span id="DISPLAY_COLLECTED_IRP_COVERAGE_DATA._"></span>Display collected IRP coverage data.</p></td>
@@ -60,7 +60,7 @@ The Device Fundamental Coverage tests monitor and report on the various I/O requ
 <p><strong>Test binary:</strong> DriverCoverageEnableSupport.dll</p>
 <p><strong>Test method:</strong> EnableCoverageDataCollection</p>
 <p><strong>Parameters:</strong> None</p>
-<p><em>DQ</em> - see <a href="https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests" data-raw-source="[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)">Device Fundamentals Test Parameters</a></p></td>
+<p><em>DQ</em> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -74,24 +74,17 @@ The Device Fundamentals coverage tests are based upon the Driver Coverage Toolki
 ## <span id="related_topics"></span>Related topics
 
 
-[How to How to test a driver at runtime using Visual Studio](https://msdn.microsoft.com/windows-drivers/develop/testing_a_driver_at_runtime)
+[How to How to test a driver at runtime using Visual Studio](/windows-hardware/drivers)
 
-[How to select and configure the Device Fundamentals tests](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)
+[How to select and configure the Device Fundamentals tests](/windows-hardware/drivers)
 
 [Device Fundamentals Tests](device-fundamentals-tests.md)
 
-[Device Fundamentals Test Parameters](https://msdn.microsoft.com/windows-drivers/develop/how_to_select_and_configure_the_device_fundamental_tests)
+[Device Fundamentals Test Parameters](/windows-hardware/drivers)
 
-[Provided WDTF Simple I/O plug-ins](https://msdn.microsoft.com/library/windows/hardware/hh781398)
+[Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
-[How to test a driver at runtime from a Command Prompt](https://msdn.microsoft.com/windows-drivers/develop/how_to_test_a_driver_at_runtime_from_a_command_prompt)
-
- 
+[How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
 
  
-
-
-
-
-
 

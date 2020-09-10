@@ -13,17 +13,11 @@ ms.localizationpriority: medium
 # Calling WinUSB from UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
-A UMDF driver can call [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb) directly if the driver cannot use the USB-specific UMDF interfaces to perform a specific operation. To call WinUSB Functions, the driver must first obtain a WinUSB interface handle by calling [**IWDFUsbTargetDevice::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560369) or [**IWDFUsbInterface::GetWinUsbHandle**](https://msdn.microsoft.com/library/windows/hardware/ff560337). A WinUSB interface handle is used to define the first interface in the selected configuration.
+A UMDF driver can call [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) directly if the driver cannot use the USB-specific UMDF interfaces to perform a specific operation. To call WinUSB Functions, the driver must first obtain a WinUSB interface handle by calling [**IWDFUsbTargetDevice::GetWinUsbHandle**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetdevice-getwinusbhandle) or [**IWDFUsbInterface::GetWinUsbHandle**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbinterface-getwinusbhandle). A WinUSB interface handle is used to define the first interface in the selected configuration.
 
-For more information, see [How to Access a USB Device by Using WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540174).
-
- 
+For more information, see [How to Access a USB Device by Using WinUSB Functions](/windows-hardware/drivers/ddi/index).
 
  
-
-
-
-
 

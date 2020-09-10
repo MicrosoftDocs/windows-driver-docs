@@ -1,16 +1,12 @@
 ---
-title: Security Guidelines for Offload-Capable Miniport Drivers
-description: Security Guidelines for Offload-Capable Miniport Drivers
+title: Security Guidelines for Offload-Capable Miniport Drivers Overview
+description: Security Guidelines for Offload-Capable Miniport Drivers Overview
 ms.assetid: 178be416-3936-4e17-b055-134897b3e2eb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Security Guidelines for Offload-Capable Miniport Drivers
-
-
-
-
+# Security Guidelines for Offload-Capable Miniport Drivers Overview
 
 To increase its performance, the Microsoft TCP/IP transport can offload tasks or connections to a network interface card (NIC) that has the appropriate TCP/IP-offload capabilities. Offloaded TCP/IP network communication tasks are handled in the NIC hardware. Miniport drivers advertise the various offload capabilities of the NIC hardware to the operating system and confugure the NIC hardware. The NIC hardware performs the advertised offload tasks on outgoing and incoming packets in the send and receive dispatch handlers. The hardware performs operations such as computing IP header checksum and so on.
 
@@ -29,12 +25,3 @@ The following topics provide more information about security attacks and how to 
 [Added Costs for Testing Vulnerable NDIS Drivers](added-costs-for-testing-vulnerable-ndis-drivers.md)
 
 [Security Checklist for NDIS Drivers](security-checklist-for-ndis-drivers.md)
-
- 
-
- 
-
-
-
-
-

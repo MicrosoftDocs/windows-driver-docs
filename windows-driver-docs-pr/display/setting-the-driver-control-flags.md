@@ -18,13 +18,7 @@ The following example shows how to add the **ExcludeFromSelect** directive to a 
 ExcludeFromSelect=*
 ```
 
-For more information on driver control flags, see [**INF ControlFlags Section**](https://msdn.microsoft.com/library/windows/hardware/ff546342).
+For more information on driver control flags, see [**INF ControlFlags Section**](../install/inf-controlflags-section.md).
 
  
-
- 
-
-
-
-
 

@@ -31,14 +31,9 @@ CPSUI-supported window controls include:
 
 -   A check box
 
-This set of window controls must always be used when specifying [property sheet options](property-sheet-options.md). The window controls are specified by using [CPSUI option types](https://msdn.microsoft.com/library/windows/hardware/ff547142). While usually not necessary, appearance of these controls can be customized. For more information, see [Customizing CPSUI-Supported Window Controls](customizing-cpsui-supported-window-controls.md).
+This set of window controls must always be used when specifying [property sheet options](property-sheet-options.md). The window controls are specified by using [CPSUI option types](./cpsui-option-types.md). While usually not necessary, appearance of these controls can be customized. For more information, see [Customizing CPSUI-Supported Window Controls](customizing-cpsui-supported-window-controls.md).
 
-CPSUI also defines two special controls, called an extended check box and an extended push button. These controls, which provide capabilities beyond those of standard check boxes and push buttons, can be specified using the [**EXTCHKBOX**](https://msdn.microsoft.com/library/windows/hardware/ff548781) and [**EXTPUSH**](https://msdn.microsoft.com/library/windows/hardware/ff548795) structures, respectively.
-
- 
+CPSUI also defines two special controls, called an extended check box and an extended push button. These controls, which provide capabilities beyond those of standard check boxes and push buttons, can be specified using the [**EXTCHKBOX**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_extchkbox) and [**EXTPUSH**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_extpush) structures, respectively.
 
  
-
-
-
 

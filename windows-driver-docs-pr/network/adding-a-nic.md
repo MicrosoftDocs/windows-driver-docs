@@ -17,9 +17,9 @@ ms.localizationpriority: medium
 
 
 
-The following description starts with the loading of the miniport driver and describes how a NIC is added. For the initial processing that the PnP manager performs when a NIC is added to a running system, see steps 1-11 of [Adding a PnP Device to a Running System](https://msdn.microsoft.com/library/windows/hardware/ff540535).
+The following description starts with the loading of the miniport driver and describes how a NIC is added. For the initial processing that the PnP manager performs when a NIC is added to a running system, see steps 1-11 of [Adding a PnP Device to a Running System](../kernel/adding-a-pnp-device-to-a-running-system.md).
 
-1.  If the miniport driver for the NIC is not already loaded, the PnP manager loads the driver and then calls the miniport driver's [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff548818) function. If the driver is already loaded, processing continues with step 4.
+1.  If the miniport driver for the NIC is not already loaded, the PnP manager loads the driver and then calls the miniport driver's [**DriverEntry**](./initializing-a-miniport-driver.md) function. If the driver is already loaded, processing continues with step 4.
 
 2.  From its **DriverEntry** function, the miniport driver registers as a miniport drivers and performs other drivers initialization. For more information about registering as a miniport driver, see [Initializing a Miniport Driver](initializing-a-miniport-driver.md).
 
@@ -35,10 +35,4 @@ The following description starts with the loading of the miniport driver and des
 6.  The PnP manager assigns resources to the NIC, if necessary.
 
  
-
- 
-
-
-
-
 

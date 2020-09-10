@@ -37,14 +37,9 @@ Requirements
 
 
 ****
-[**NDIS\_STATUS\_INDICATION**](https://msdn.microsoft.com/library/windows/hardware/ff567373)
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
 [OID\_GEN\_ISOLATION\_PARAMETERS](oid-gen-isolation-parameters.md)
 
  
-
- 
-
-
-
 

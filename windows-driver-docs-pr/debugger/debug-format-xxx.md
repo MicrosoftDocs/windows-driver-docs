@@ -114,7 +114,7 @@ The following bit-flags apply to all crash dump files.
 <p>DEBUG_FORMAT_USER_SMALL_FILTER_PATHS</p>
 </td>
 <td>
-<p>Remove the module paths, leaving only the module names.  This is useful for protecting privacy by hiding the directory structure (which may contain the user&#39;s name).</p>
+<p>Remove the module paths, leaving only the module names.  This is useful for protecting privacy by hiding the directory structure (which may contain the user's name).</p>
 </td>
 </tr>
 <tr>
@@ -162,7 +162,7 @@ The following bit-flags apply to all crash dump files.
 <p>DEBUG_FORMAT_USER_SMALL_FULL_MEMORY_INFO</p>
 </td>
 <td>
-<p>Add all basic memory information.  This is the information returned by the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugdataspaces2-queryvirtual" data-raw-source="[IDebugDataSpaces2::QueryVirtual method](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/dbgeng/nf-dbgeng-idebugdataspaces2-queryvirtual)">IDebugDataSpaces2::QueryVirtual method</a>.  The information for all memory is included, not just valid memory, which allows the debugger to reconstruct the complete virtual memory layout from the Minidump.</p>
+<p>Add all basic memory information.  This is the information returned by the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces2-queryvirtual" data-raw-source="[IDebugDataSpaces2::QueryVirtual method](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces2-queryvirtual)">IDebugDataSpaces2::QueryVirtual method</a>.  The information for all memory is included, not just valid memory, which allows the debugger to reconstruct the complete virtual memory layout from the Minidump.</p>
 </td>
 </tr>
 <tr>
@@ -200,9 +200,3 @@ Requirements
 </tr>
 </tbody>
 </table>
- 
-
-
-
-
-

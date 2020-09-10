@@ -13,20 +13,21 @@ A mobile broadband experience helps you create a service metadata package used t
 
 The topics in this section include the following:
 
-- [Developer and preview mode](https://msdn.microsoft.com/library/windows/hardware/dn282082.aspx)
+- [Developer and preview mode](developer-and-preview-mode.md)
 
-- [Service icon requirements](https://msdn.microsoft.com/library/windows/hardware/dn236416.aspx)
+- [Service icon requirements](service-icon-requirements.md)
 
-- [Service number](https://msdn.microsoft.com/library/windows/hardware/dn236413.aspx)
+- [Service number](service-number.md)
 
-- [Trusted certificates](https://msdn.microsoft.com/library/windows/hardware/dn486876.aspx)
+- [Trusted certificates](trusted-certificates.md)
 
 You can also get for more information about service metadata packages and how to submit them to the Partner Center by using the following links:
 
-- [Developer guide for creating service metadata](https://msdn.microsoft.com/library/windows/hardware/dn973080) – A step-by-step guide that walks you through the process of submitting a service metadata package to the Partner Center.
+- [Developer guide for creating service metadata](../mobilebroadband/developer-guide-for-creating-service-metadata.md) – A step-by-step guide that walks you through the process of submitting a service metadata package to the Partner Center.
 
-- [Service metadata package schema reference](https://msdn.microsoft.com/library/windows/hardware/dn973175) – A reference for the XML schemas that are included in a service metadata package.
+- [Service metadata overview](../mobilebroadband/service-metadata.md) – A reference for the XML schemas that are included in a service metadata package.
 
 ## Related topics
 
-[Device Metadata](https://msdn.microsoft.com/library/windows/hardware/br230800.aspx)
+[Device Metadata](create-a-device-metadata-experience.md)
+

@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 
 The TVOT\_PUSHBUTTON option type consists of a push button inside a group box.
 
-<span id="OPTITEM_Structure"></span><span id="optitem_structure"></span><span id="OPTITEM_STRUCTURE"></span>[**OPTITEM**](https://msdn.microsoft.com/library/windows/hardware/ff559656) Structure  
+<span id="OPTITEM_Structure"></span><span id="optitem_structure"></span><span id="OPTITEM_STRUCTURE"></span>[**OPTITEM**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_optitem) Structure  
 
 <span id="Sel_pSel"></span><span id="sel_psel"></span><span id="SEL_PSEL"></span>**Sel/pSel**  
 Depends on the **Style** member of the OPTPARAM structure, as follows.
@@ -61,7 +61,7 @@ Depends on the **Style** member of the OPTPARAM structure, as follows.
 
  
 
-<span id="OPTPARAM_Structure_Array__pOptParam_member_of_OPTTYPE_"></span><span id="optparam_structure_array__poptparam_member_of_opttype_"></span><span id="OPTPARAM_STRUCTURE_ARRAY__POPTPARAM_MEMBER_OF_OPTTYPE_"></span>[**OPTPARAM**](https://msdn.microsoft.com/library/windows/hardware/ff559660) Structure Array (**pOptParam** member of [**OPTTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559670))  
+<span id="OPTPARAM_Structure_Array__pOptParam_member_of_OPTTYPE_"></span><span id="optparam_structure_array__poptparam_member_of_opttype_"></span><span id="OPTPARAM_STRUCTURE_ARRAY__POPTPARAM_MEMBER_OF_OPTTYPE_"></span>[**OPTPARAM**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_optparam) Structure Array (**pOptParam** member of [**OPTTYPE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype))  
 
 <span id="pData"></span><span id="pdata"></span><span id="PDATA"></span>**pData**  
 Depends on the **Style** member, as follows.
@@ -80,7 +80,7 @@ Depends on the **Style** member, as follows.
 <tbody>
 <tr class="odd">
 <td><p>PUSHBUTTON_TYPE_CALLBACK</p></td>
-<td><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564313)"><strong>_CPSUICALLBACK</strong></a>-typed function.</p></td>
+<td><p>Pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback)"><strong>_CPSUICALLBACK</strong></a>-typed function.</p></td>
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_DLGPROC</p></td>
@@ -92,7 +92,7 @@ Depends on the **Style** member, as follows.
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_HTSETUP</p></td>
-<td><p>Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552832" data-raw-source="[&lt;strong&gt;DEVHTADJDATA&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff552832)"><strong>DEVHTADJDATA</strong></a> structure.</p></td>
+<td><p>Pointer to a <a href="https://docs.microsoft.com/windows/win32/api/winddi/ns-winddi-devhtadjdata" data-raw-source="[&lt;strong&gt;DEVHTADJDATA&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-devhtadjdata)"><strong>DEVHTADJDATA</strong></a> structure.</p></td>
 </tr>
 </tbody>
 </table>
@@ -123,7 +123,7 @@ Depends on the Style member, as follows.
 </tr>
 <tr class="even">
 <td><p>PUSHBUTTON_TYPE_DLGPROC</p></td>
-<td><p>Resource identifier for a DIALOG resource, or handle to a DLGTEMPLATE structure (see the Windows SDK documentation). Depends on the DPF_USE_HDLGTEMPLATE flag in the OPTPARAM structure&#39;s <strong>Flags</strong> member.</p></td>
+<td><p>Resource identifier for a DIALOG resource, or handle to a DLGTEMPLATE structure (see the Windows SDK documentation). Depends on the DPF_USE_HDLGTEMPLATE flag in the OPTPARAM structure's <strong>Flags</strong> member.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PUSHBUTTON_TYPE_HTCLRADJ</p></td>
@@ -156,12 +156,12 @@ Depends on the Style member, as follows.
 </tr>
 <tr class="even">
 <td><p><span id="PUSHBUTTON_TYPE_CALLBACK"></span><span id="pushbutton_type_callback"></span>PUSHBUTTON_TYPE_CALLBACK</p></td>
-<td><p>CPSUI calls the application&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff564313" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff564313)"><strong>_CPSUICALLBACK</strong></a>-typed callback function to handle button events, with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547088)"><strong>CPSUICBPARAM</strong></a> structure&#39;s <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function&#39;s return value.)</p></td>
+<td><p>CPSUI calls the application's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback" data-raw-source="[&lt;strong&gt;_CPSUICALLBACK&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback)"><strong>_CPSUICALLBACK</strong></a>-typed callback function to handle button events, with the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam)"><strong>CPSUICBPARAM</strong></a> structure's <strong>Reason</strong> member set to CPSUICB_REASON_PUSHBUTTON. (CPSUI ignores the callback function's return value.)</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="PUSHBUTTON_TYPE_DLGPROC"></span><span id="pushbutton_type_dlgproc"></span>PUSHBUTTON_TYPE_DLGPROC</p></td>
-<td><p>The application&#39;s dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607" data-raw-source="[&lt;strong&gt;DLGPAGE&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547607)"><strong>DLGPAGE</strong></a>.)</p>
-<p>When the function receives a WM_INITDIALOG message, its <em>lParam</em> argument points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547088" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff547088)"><strong>CPSUICBPARAM</strong></a> structure with the <strong>Reason</strong> member set to CPSUICB_REASON_DLGPROC.</p></td>
+<td><p>The application's dialog box procedure handles button events. (For more information, see the <strong>Remarks</strong> section for <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage" data-raw-source="[&lt;strong&gt;DLGPAGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage)"><strong>DLGPAGE</strong></a>.)</p>
+<p>When the function receives a WM_INITDIALOG message, its <em>lParam</em> argument points to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam" data-raw-source="[&lt;strong&gt;CPSUICBPARAM&lt;/strong&gt;](/windows-hardware/drivers/ddi/compstui/ns-compstui-_cpsuicbparam)"><strong>CPSUICBPARAM</strong></a> structure with the <strong>Reason</strong> member set to CPSUICB_REASON_DLGPROC.</p></td>
 </tr>
 <tr class="even">
 <td><p><span id="PUSHBUTTON_TYPE_HTCLRADJ"></span><span id="pushbutton_type_htclradj"></span>PUSHBUTTON_TYPE_HTCLRADJ</p></td>
@@ -176,7 +176,7 @@ Depends on the Style member, as follows.
 
  
 
-<span id="OPTTYPE_Structure"></span><span id="opttype_structure"></span><span id="OPTTYPE_STRUCTURE"></span>[**OPTTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559670) Structure  
+<span id="OPTTYPE_Structure"></span><span id="opttype_structure"></span><span id="OPTTYPE_STRUCTURE"></span>[**OPTTYPE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) Structure  
 
 <span id="___________Type__________"></span><span id="___________type__________"></span><span id="___________TYPE__________"></span> Type   
 TVOT\_PUSHBUTTON
@@ -188,11 +188,11 @@ TVOT\_PUSHBUTTON
 The following optional bit flags can be specified.
 
 <span id="OTS_PUSH_ENABLE_ALWAYS"></span><span id="ots_push_enable_always"></span>OTS\_PUSH\_ENABLE\_ALWAYS  
-If set, the push button is always enabled, even if the user cannot modify the property sheet page (that is, even if CPSUIF\_UPDATE\_PERMISSION is not set in a [**COMPROPSHEETUI**](https://msdn.microsoft.com/library/windows/hardware/ff546211) structure).
+If set, the push button is always enabled, even if the user cannot modify the property sheet page (that is, even if CPSUIF\_UPDATE\_PERMISSION is not set in a [**COMPROPSHEETUI**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_compropsheetui) structure).
 
 The push button's callback function must display its dialog, but it must not allow user modifications.
 
-NOTE: You must also set this flag in the **Flags** member of the [**OPTTYPE**](https://msdn.microsoft.com/library/windows/hardware/ff559670) structure.
+NOTE: You must also set this flag in the **Flags** member of the [**OPTTYPE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_opttype) structure.
 
 <span id="OTS_PUSH_INCL_SETUP_TITLE"></span><span id="ots_push_incl_setup_title"></span>OTS\_PUSH\_INCL\_SETUP\_TITLE  
 If set, CPSUI includes the word "Setup" after the button's name string (**pName** in OPTITEM).
@@ -201,7 +201,7 @@ If set, CPSUI includes the word "Setup" after the button's name string (**pName*
 If set, CPSUI includes three dots (...) after the button's name string (**pName** in OPTITEM).
 
 <span id="BegCtrlID"></span><span id="begctrlid"></span><span id="BEGCTRLID"></span>**BegCtrlID**  
-If **pDlgPage** in [**COMPROPSHEETUI**](https://msdn.microsoft.com/library/windows/hardware/ff546211) identifies a CPSUI-supplied page, or if **DlgTemplateID** in [**DLGPAGE**](https://msdn.microsoft.com/library/windows/hardware/ff547607) identifies a CPSUI-supplied template, **BegCtrlID** is not used.
+If **pDlgPage** in [**COMPROPSHEETUI**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_compropsheetui) identifies a CPSUI-supplied page, or if **DlgTemplateID** in [**DLGPAGE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage) identifies a CPSUI-supplied template, **BegCtrlID** is not used.
 
 Otherwise, **BegCtrlID** must contain the first control identifier of a sequentially numbered set of control identifiers. Control identifiers must identify the following Windows controls:
 
@@ -246,7 +246,7 @@ Otherwise, **BegCtrlID** must contain the first control identifier of a sequenti
 
  
 
-For additional information, see [Customizing CPSUI-Supported Window Controls](https://msdn.microsoft.com/library/windows/hardware/ff547296).
+For additional information, see [Customizing CPSUI-Supported Window Controls](./customizing-cpsui-supported-window-controls.md).
 
 Requirements
 ------------
@@ -265,9 +265,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

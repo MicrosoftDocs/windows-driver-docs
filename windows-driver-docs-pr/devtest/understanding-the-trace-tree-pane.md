@@ -28,13 +28,7 @@ Some lines of code in the **Source Code** pane correspond to more than one eleme
 IoReleaseCancelSpinLock(KeGetCurrentIrql());
 ```
 
-In this situation, the **Trace Tree** pane would include a critical element for the [**KeGetCurrentIrql**](https://msdn.microsoft.com/library/windows/hardware/ff552054) function call, a few calls to the SDV operating system model to randomly generate an IRQL, and then a call to [**IoReleaseCancelSpinLock**](https://msdn.microsoft.com/library/windows/hardware/ff549550) with the returned IRQL.
+In this situation, the **Trace Tree** pane would include a critical element for the [**KeGetCurrentIrql**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kegetcurrentirql) function call, a few calls to the SDV operating system model to randomly generate an IRQL, and then a call to [**IoReleaseCancelSpinLock**](/previous-versions/windows/hardware/drivers/ff549550(v=vs.85)) with the returned IRQL.
 
  
-
- 
-
-
-
-
 

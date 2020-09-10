@@ -57,14 +57,7 @@ Not applicable to WMI methods.
 ## <span id="see_also"></span>See also
 
 
-[NPIV Status Codes](https://msdn.microsoft.com/library/windows/hardware/dn386176)
+[NPIV Status Codes](/previous-versions/windows/hardware/drivers/dn386176(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

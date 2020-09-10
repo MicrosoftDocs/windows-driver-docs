@@ -20,7 +20,7 @@ A network module should use some form of reference counting to keep track of the
 For example, a client module might use an implementation similar to the following for tracking the number of in-progress calls to an attached provider module's NPI functions:
 
 ```C++
-// Context structure for the client&#39;s binding to a provider module
+// Context structure for the client's binding to a provider module
 typedef struct CLIENT_BINDING_CONTEXT_ {
   LIST_ENTRY Link;
   HANDLE NmrBindingHandle;
@@ -35,12 +35,12 @@ typedef struct CLIENT_BINDING_CONTEXT_ {
 } CLIENT_BINDING_CONTEXT, *PCLIENT_BINDING_CONTEXT;
 
 // Pool tag used for allocating the binding context
-#define BINDING_CONTEXT_POOL_TAG &#39;tpcb&#39;
+#define BINDING_CONTEXT_POOL_TAG 'tpcb'
 
-// Structure for the client&#39;s dispatch table
+// Structure for the client's dispatch table
 const EXNPI_CLIENT_DISPATCH Dispatch = {
   .
-  . // Function pointers to the client module&#39;s
+  . // Function pointers to the client module's
   . // NPI callback functions
   .
 };
@@ -51,7 +51,7 @@ LIST_ENTRY BindingContextList;
 // Spin lock for binding context list
 KSPIN_LOCK BindingContextListLock;
 
-// Prototype for the client module&#39;s unload function
+// Prototype for the client module's unload function
 VOID
   Unload(
     PDRIVER_OBJECT DriverObject
@@ -113,8 +113,8 @@ NTSTATUS
   KLOCK_QUEUE_HANDLE BindingContextListLockHandle;
   NTSTATUS Status;
 
-  // Get pointers to the provider module&#39;s identification structure
-  // and the provider module&#39;s NPI-specific characteristics structure
+  // Get pointers to the provider module's identification structure
+  // and the provider module's NPI-specific characteristics structure
   ProviderModuleId = ProviderRegistrationInstance->ModuleId;
   ProviderNpiSpecificCharacteristics =
     (PEXNPI_PROVIDER_CHARACTERISTICS)
@@ -136,7 +136,7 @@ NTSTATUS
     return STATUS_NOINTERFACE;
   }
 
-  // Allocate memory for the client&#39;s binding context structure
+  // Allocate memory for the client's binding context structure
   BindingContext =
     (PCLIENT_BINDING_CONTEXT)
       ExAllocatePoolWithTag(
@@ -203,7 +203,7 @@ NTSTATUS
   // Attachment did not succeed
   else
   {
-    // Free memory for client&#39;s binding context structure
+    // Free memory for client's binding context structure
     ExFreePoolWithTag(
       BindingContext,
       BINDING_CONTEXT_POOL_TAG

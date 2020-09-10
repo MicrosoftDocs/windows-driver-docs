@@ -138,7 +138,7 @@ ms.localizationpriority: medium
 
 -   Avoid using computed or hard-coded pointer offsets.
 
-    When working with structures, use the [**FIELD\_OFFSET**](https://msdn.microsoft.com/library/windows/hardware/ff545727) macro wherever possible to determine the offset of structure members.
+    When working with structures, use the [**FIELD\_OFFSET**](/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro wherever possible to determine the offset of structure members.
 
 -   Avoid using hard-coded pointer or handle values.
 
@@ -152,7 +152,7 @@ ms.localizationpriority: medium
     DWORD index = 0;
     CHAR *p;
 
-    // if (p[index-1] == &#39;0&#39;) causes access violation on 64-bit Windows!
+    // if (p[index-1] == '0') causes access violation on 64-bit Windows!
     ```
 
     On 32-bit machines:
@@ -236,7 +236,7 @@ ms.localizationpriority: medium
 
 <!-- -->
 
--   Use the [**FIELD\_OFFSET**](https://msdn.microsoft.com/library/windows/hardware/ff545727) macro.
+-   Use the [**FIELD\_OFFSET**](/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro.
 
     For example:
 
@@ -288,7 +288,7 @@ ms.localizationpriority: medium
 
 -   Be cautious when using structure packing directives.
 
-    On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](https://msdn.microsoft.com/library/windows/hardware/ff561808) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
+    On 64-bit Windows, if a data structure is misaligned, routines that manipulate the structure, such as [**RtlCopyMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcopymemory) and **memcpy**, will not fault. Instead, they will raise an exception. For example:
 
     ```cpp
     #pragma pack (1)  /* also set by /Zp switch */
@@ -323,12 +323,7 @@ ms.localizationpriority: medium
 
 -   [Supporting 32-Bit I/O in Your 64-Bit Driver](supporting-32-bit-i-o-in-your-64-bit-driver.md)
 
--   [Getting Ready for 64-bit Windows](https://msdn.microsoft.com/library/windows/desktop/aa384198) (user-mode application porting guide)
+-   [Getting Ready for 64-bit Windows](/windows/desktop/WinProg64/getting-ready-for-64-bit-windows) (user-mode application porting guide)
 
  
-
- 
-
-
-
 

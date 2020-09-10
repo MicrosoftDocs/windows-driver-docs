@@ -75,16 +75,11 @@ Within the driver's INF file, each GUID specification must include either an ast
 
 ### Event Notification
 
-The driver must monitor the device (using either asynchronous I/O or polling) to determine when the event associated with each GUID occurs. Depending on device capabilities, the driver can notify clients of the occurrence of device events either asynchronously or by responding to a request to poll the device. All drivers that are capable of delivering notification of device events (by either method) must set the STI\_GENCAP\_NOTIFICATIONS flag in the device's [**STI\_DEV\_CAPS**](https://msdn.microsoft.com/library/windows/hardware/ff548380) structure. Drivers that support polling, and not asynchronous notification, must also set the STI\_GENCAP\_POLLING\_NEEDED flag in the same structure. (These capabilities must also be indicated using the **Capabilities** keyword in [INF files for still image devices](inf-files-for-still-image-devices.md).)
+The driver must monitor the device (using either asynchronous I/O or polling) to determine when the event associated with each GUID occurs. Depending on device capabilities, the driver can notify clients of the occurrence of device events either asynchronously or by responding to a request to poll the device. All drivers that are capable of delivering notification of device events (by either method) must set the STI\_GENCAP\_NOTIFICATIONS flag in the device's [**STI\_DEV\_CAPS**](/windows-hardware/drivers/ddi/sti/ns-sti-_sti_dev_caps) structure. Drivers that support polling, and not asynchronous notification, must also set the STI\_GENCAP\_POLLING\_NEEDED flag in the same structure. (These capabilities must also be indicated using the **Capabilities** keyword in [INF files for still image devices](inf-files-for-still-image-devices.md).)
 
-If a driver supports asynchronous notification of events, the event monitor calls [**IStiUSD::SetNotificationHandle**](https://msdn.microsoft.com/library/windows/hardware/ff543840) to request notifications and to supply an event handle. When a device event occurs, the driver must notify the event monitor by calling **SetEvent** (see the Microsoft Windows SDK documentation), using the event handle as an argument. The client can then call [**IStiUSD::GetNotificationData**](https://msdn.microsoft.com/library/windows/hardware/ff543821) to obtain the event's GUID.
+If a driver supports asynchronous notification of events, the event monitor calls [**IStiUSD::SetNotificationHandle**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-setnotificationhandle) to request notifications and to supply an event handle. When a device event occurs, the driver must notify the event monitor by calling **SetEvent** (see the Microsoft Windows SDK documentation), using the event handle as an argument. The client can then call [**IStiUSD::GetNotificationData**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getnotificationdata) to obtain the event's GUID.
 
-If polling is required, the event monitor calls [**IStiUSD::GetStatus**](https://msdn.microsoft.com/library/windows/hardware/ff543823) to poll the driver, which must in turn poll the device and return results in an [**STI\_DEVICE\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff548369) structure.
-
- 
+If polling is required, the event monitor calls [**IStiUSD::GetStatus**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getstatus) to poll the driver, which must in turn poll the device and return results in an [**STI\_DEVICE\_STATUS**](/windows-hardware/drivers/ddi/sti/ns-sti-_sti_device_status) structure.
 
  
-
-
-
 

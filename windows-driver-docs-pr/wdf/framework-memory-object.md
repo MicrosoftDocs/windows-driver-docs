@@ -14,15 +14,9 @@ ms.localizationpriority: medium
 # Framework Memory Object
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
-The framework memory object is exposed to drivers by the [IWDFMemory](https://msdn.microsoft.com/library/windows/hardware/ff559249) interface. It provides access to a memory block.
-
- 
+The framework memory object is exposed to drivers by the [IWDFMemory](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory) interface. It provides access to a memory block.
 
  
-
-
-
-
 

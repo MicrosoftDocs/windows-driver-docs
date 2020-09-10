@@ -24,16 +24,16 @@ When this command is received by the device, it shall update any relevant Wi-Fi 
 ## Set property parameters
 
 
-WDI can provide a pre-configured set of prefix hashes for the advertised services. If a peer sends a hash, the driver first tries to match with a service name hash as defined in [**WDI\_TLV\_P2P\_ADVERTISED\_PREFIX\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/mt269134). If a match is found from the prefix hashes, the driver searches for the service(s) in [**WDI\_TLV\_P2P\_ADVERTISED\_SERVICE\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897861) that have the prefix and responds with those. If a match is not found, the driver tries to match the requested service name hash in [**WDI\_TLV\_P2P\_ADVERTISED\_SERVICE\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897861).
+WDI can provide a pre-configured set of prefix hashes for the advertised services. If a peer sends a hash, the driver first tries to match with a service name hash as defined in [**WDI\_TLV\_P2P\_ADVERTISED\_PREFIX\_ENTRY**](./wdi-tlv-p2p-advertised-prefix-entry.md). If a match is found from the prefix hashes, the driver searches for the service(s) in [**WDI\_TLV\_P2P\_ADVERTISED\_SERVICE\_ENTRY**](./wdi-tlv-p2p-advertised-service-entry.md) that have the prefix and responds with those. If a match is not found, the driver tries to match the requested service name hash in [**WDI\_TLV\_P2P\_ADVERTISED\_SERVICE\_ENTRY**](./wdi-tlv-p2p-advertised-service-entry.md).
 
 | TLV                                                                                                 | Multiple TLV instances allowed | Optional | Description                                     |
 |-----------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------|
-| [**WDI\_TLV\_ADDITIONAL\_IES**](https://msdn.microsoft.com/library/windows/hardware/dn926122)                                    |                                | X        | Additional IEs to be included.                  |
-| [**WDI\_TLV\_P2P\_DEVICE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/dn897875)                                 |                                | X        | Wi-Fi Direct device information.                |
-| [**WDI\_TLV\_P2P\_DEVICE\_CAPABILITY**](https://msdn.microsoft.com/library/windows/hardware/dn897872)                     |                                | X        | Wi-Fi Direct device capabilities.               |
-| [**WDI\_TLV\_P2P\_GROUP\_OWNER\_CAPABILITY**](https://msdn.microsoft.com/library/windows/hardware/dn897954)          |                                | X        | Wi-Fi Direct Group Owner capability information |
-| [**WDI\_TLV\_P2P\_SECONDARY\_DEVICE\_TYPE\_LIST**](https://msdn.microsoft.com/library/windows/hardware/dn897991) |                                | X        | List of Wi-Fi Direct secondary device types.    |
-| [**WDI\_TLV\_P2P\_ADVERTISED\_SERVICES**](https://msdn.microsoft.com/library/windows/hardware/dn897860)                 |                                | X        | Wi-Fi Direct advertised services.               |
+| [**WDI\_TLV\_ADDITIONAL\_IES**](./wdi-tlv-additional-ies.md)                                    |                                | X        | Additional IEs to be included.                  |
+| [**WDI\_TLV\_P2P\_DEVICE\_INFO**](./wdi-tlv-p2p-device-info.md)                                 |                                | X        | Wi-Fi Direct device information.                |
+| [**WDI\_TLV\_P2P\_DEVICE\_CAPABILITY**](./wdi-tlv-p2p-device-capability.md)                     |                                | X        | Wi-Fi Direct device capabilities.               |
+| [**WDI\_TLV\_P2P\_GROUP\_OWNER\_CAPABILITY**](./wdi-tlv-p2p-group-owner-capability.md)          |                                | X        | Wi-Fi Direct Group Owner capability information |
+| [**WDI\_TLV\_P2P\_SECONDARY\_DEVICE\_TYPE\_LIST**](./wdi-tlv-p2p-secondary-device-type-list.md) |                                | X        | List of Wi-Fi Direct secondary device types.    |
+| [**WDI\_TLV\_P2P\_ADVERTISED\_SERVICES**](./wdi-tlv-p2p-advertised-services.md)                 |                                | X        | Wi-Fi Direct advertised services.               |
 
  
 
@@ -72,9 +72,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

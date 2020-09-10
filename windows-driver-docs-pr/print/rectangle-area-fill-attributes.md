@@ -33,12 +33,12 @@ The following table lists attributes describing the printer's support for fillin
 <tbody>
 <tr class="odd">
 <td><p><em><strong>CursorXAfterRectFill</strong></p></td>
-<td><p>AT_RECT_X_ORIGIN or AT_RECT_X_END, indicating where the cursor&#39;s x-coordinate is after the printer fills a rectangle area.</p></td>
+<td><p>AT_RECT_X_ORIGIN or AT_RECT_X_END, indicating where the cursor's x-coordinate is after the printer fills a rectangle area.</p></td>
 <td><p>Optional. If not specified, the default value is AT_RECT_X_ORIGIN.</p></td>
 </tr>
 <tr class="even">
 <td><p></em><strong>CursorYAfterRectFill</strong></p></td>
-<td><p>AT_RECT_Y_ORIGIN or AT_RECT_Y_END, indicating where the cursor&#39;s y-coordinate is after the printer fills a rectangle area.</p></td>
+<td><p>AT_RECT_Y_ORIGIN or AT_RECT_Y_END, indicating where the cursor's y-coordinate is after the printer fills a rectangle area.</p></td>
 <td><p>Optional. If not specified, the default value is AT_RECT_Y_ORIGIN.</p></td>
 </tr>
 <tr class="odd">

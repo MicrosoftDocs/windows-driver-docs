@@ -25,13 +25,7 @@ ms.localizationpriority: medium
 
 If a blt is happening within one surface and the source and destination areas overlap, the proper direction must be determined to avoid overwriting part of the source before it is copied. This can be accomplished with just two potential starting points at opposite corners of the surface. All the blt engine needs are the location and dimensions for each image.
 
-Everything possible should be done to speed up the actual blt. Duplicating sections of code to avoid an IF statement may make the driver go faster, for example. Perhaps the best implementation of this technique is to put the code in a macro and use that in different places rather than making function calls. For more information, see [*DdBlt*](https://msdn.microsoft.com/library/windows/hardware/ff549205).
+Everything possible should be done to speed up the actual blt. Duplicating sections of code to avoid an IF statement may make the driver go faster, for example. Perhaps the best implementation of this technique is to put the code in a macro and use that in different places rather than making function calls. For more information, see [*DdBlt*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_blt).
 
  
-
- 
-
-
-
-
 

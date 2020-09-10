@@ -11,12 +11,14 @@ ms.localizationpriority: medium
 
 This topic describes Container ID support for displays—visual representation of devices that are embedded within a display or monitor device.
 
-|                                                                                   |                                          |
-|-----------------------------------------------------------------------------------|------------------------------------------|
-| Minimum Windows Display Driver Model (WDDM) version                               | 1.2                                      |
-| Minimum Windows version                                                           | 8                                        |
-| Driver implementation—Full graphics and Display only                              | Mandatory                                |
-| [WHCK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests |  [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4) |
+**Minimum Windows Display Driver Model (WDDM) version**: 1.2
+
+**Minimum Windows version**: 8
+
+**Driver implementation—Full graphics and Display only**: Mandatory
+
+**[WHCK](/windows-hardware/test/hlk/windows-hardware-lab-kit) requirements and tests**: [Functional test for monitor container ID](/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4)
+
 
  
 
@@ -25,8 +27,8 @@ This topic describes Container ID support for displays—visual representation o
 
 Implement this function and structure in your display miniport driver:
 
--   [*DxgkDdiGetChildContainerId*](https://msdn.microsoft.com/library/windows/hardware/hh451349)
--   [**DXGK\_CHILD\_CONTAINER\_ID**](https://msdn.microsoft.com/library/windows/hardware/hh464005)
+-   [*DxgkDdiGetChildContainerId*](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_get_child_container_id)
+-   [**DXGK\_CHILD\_CONTAINER\_ID**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_container_id)
 
 ## <span id="Container_ID_description"></span><span id="container_id_description"></span><span id="CONTAINER_ID_DESCRIPTION"></span>Container ID description
 
@@ -60,15 +62,9 @@ In a few scenarios, the ownership of driving the display is transitioned between
 ## <span id="Hardware_certification_requirements"></span><span id="hardware_certification_requirements"></span><span id="HARDWARE_CERTIFICATION_REQUIREMENTS"></span>Hardware certification requirements
 
 
-For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) on  [Functional test for monitor container ID](https://docs.microsoft.com/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4).
+For info on requirements that hardware devices must meet when they implement this feature, refer to the relevant [WHCK documentation](/windows-hardware/test/hlk/windows-hardware-lab-kit) on  [Functional test for monitor container ID](/windows-hardware/test/hlk/testref/2f657caa-368c-4531-8cec-8faf475125f4).
 
 See [WDDM 1.2 features](wddm-v1-2-features.md) for a review of features added with Windows 8.
 
  
-
- 
-
-
-
-
 

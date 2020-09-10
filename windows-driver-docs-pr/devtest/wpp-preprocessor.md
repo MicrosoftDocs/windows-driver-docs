@@ -118,7 +118,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="odd">
 <td align="left"><p>Specify Control GUID</p></td>
 <td align="left"><p><strong>-ctl:</strong> <em>GUID</em></p></td>
-<td align="left">Defines a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556186" data-raw-source="[WPP_CONTROL_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186)">WPP_CONTROL_GUIDS</a> macro with the specified <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> and WPP_DEFINE_BIT entries named Error, Unusual, and Noise.
+<td align="left">Defines a <a href="https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)" data-raw-source="[WPP_CONTROL_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85))">WPP_CONTROL_GUIDS</a> macro with the specified <a href="control-guid.md" data-raw-source="[control GUID](control-guid.md)">control GUID</a> and WPP_DEFINE_BIT entries named Error, Unusual, and Noise.
 <p>This is an alternative to adding the macro to the source file.</p>
 <p><em>GUID</em> represents the control GUID.</p></td>
 </tr>
@@ -147,18 +147,18 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="odd">
 <td align="left"><p>Ignore Exclamation Marks</p></td>
 <td align="left"><p><strong>-noshrieks</strong></p></td>
-<td align="left"><p>Directs WPP to ignore exclamation marks, also known as &quot;shrieks.&quot;</p>
+<td align="left"><p>Directs WPP to ignore exclamation marks, also known as "shrieks."</p>
 <p>Used in complex formatting, such as %!timestamp!%. By default, exclamation marks are required and WPP tries to interpret them.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Numeric base for numbering of format strings</p></td>
 <td align="left"><p><strong>-argbase:</strong> <em>Number</em></p></td>
-<td align="left"><p>Establishes a numeric base for numbering of format strings, such as &quot;%1!d!, %2!s!.&quot; The default is 1.</p></td>
+<td align="left"><p>Establishes a numeric base for numbering of format strings, such as "%1!d!, %2!s!." The default is 1.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Function To Generate Trace Messages</p></td>
 <td align="left"><p><strong>-func:</strong> <em>FunctionDescription</em></p></td>
-<td align="left"><p>Specifies alternatives to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544918" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff544918)"><strong>DoTraceMessage</strong></a> macro. These functions can then be used to generate trace messages.</p>
+<td align="left"><p>Specifies alternatives to the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)" data-raw-source="[&lt;strong&gt;DoTraceMessage&lt;/strong&gt;](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85))"><strong>DoTraceMessage</strong></a> macro. These functions can then be used to generate trace messages.</p>
 <p>For example, you can define a function that specifies both the flags and the level for a trace message, such as:</p>
 <pre space="preserve"><code>-func (DoMyTraceMessage(LEVEL,FLAGS,MSG,...)</code></pre>
 <p>You can use multiple instances of the <strong>-func</strong> option.</p>
@@ -167,7 +167,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <tr class="even">
 <td align="left"><p>Specify String To Search For</p></td>
 <td align="left"><p><strong>-lookfor:</strong><em>String</em></p></td>
-<td align="left"><p>Directs WPP to search the source files for the specified string to initiate tracing. By default, WPP searches for the string &quot;WPP_INIT_TRACING.&quot;</p>
+<td align="left"><p>Directs WPP to search the source files for the specified string to initiate tracing. By default, WPP searches for the string "WPP_INIT_TRACING."</p>
 <p>This is an advanced option for users who are writing their own templates.</p>
 <p>For example, in default.tpl:</p>
 <pre space="preserve"><code><code>IF FOUND WPP_INIT_TRACING</code>
@@ -222,7 +222,7 @@ The following tables describe the options for the WPP preprocessor. You can conf
 <td align="left"><p><strong>-ext:.</strong> <em>ext1</em> <strong>[.</strong><em>ext2</em><strong>]</strong></p></td>
 <td align="left"><p>Specifies the file types that WPP recognizes as source files. WPP ignores files with a different file name extension.</p>
 <p>By default, WPP recognizes only .c, .c++, .cpp, and .cxx files.</p>
-<p>This option allows you to use the default settings for WPP without having to delete or rename resource files that WPP doesn&#39;t use, such as .rc and .mc files.</p>
+<p>This option allows you to use the default settings for WPP without having to delete or rename resource files that WPP doesn't use, such as .rc and .mc files.</p>
 <p>For example, to add tracing to C++ files and header (.h) files, use the following command:</p>
 <p><strong>-ext:.cpp.CPP.h.H</strong></p>
 <p>Also, to give the TMH files for the C++ and header files different names, use the <strong>-preserveext</strong> option.</p></td>
@@ -283,10 +283,4 @@ The WPP build process completes the following steps:
 2.  After the WPP preprocessor has created the trace message header files, the C preprocessor processes the built-in WPP macros in the trace message header files in a normal manner.
 
  
-
- 
-
-
-
-
 

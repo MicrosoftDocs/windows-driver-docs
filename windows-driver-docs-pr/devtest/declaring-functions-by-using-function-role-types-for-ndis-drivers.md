@@ -70,13 +70,13 @@ NDIS_IO_WORKITEM MPQueuedWorkItem;
 
 As required in the C programming language, the parameter types that you use in the function definition must match the parameter types of the function prototype, or in this case, the function role type. SDV depends upon the function signatures for analysis and ignores functions whose signatures do not match.
 
-For example, you should declare an [*MiniportInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559395) function using the MINIPORT\_ISR function role type:
+For example, you should declare an [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function using the MINIPORT\_ISR function role type:
 
 ```
 MINIPORT_ISR myMPIsr;
 ```
 
-When you implement the interrupt routine, *myMPIsr*, the parameter types must match those used by MINIPORT\_ISR, namely, NDIS\_HANDLE, PBOOLEAN, and PULONG (see the [*MiniportInterrupt*](https://msdn.microsoft.com/library/windows/hardware/ff559395) function for syntax).
+When you implement the interrupt routine, *myMPIsr*, the parameter types must match those used by MINIPORT\_ISR, namely, NDIS\_HANDLE, PBOOLEAN, and PULONG (see the [*MiniportInterrupt*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_isr) function for syntax).
 
 ```
 BOOLEAN 
@@ -94,10 +94,4 @@ myMPIsr(
 To help you determine whether the source code is prepared, run [Code Analysis for Drivers](code-analysis-for-drivers.md). Code Analysis for Drivers checks for function role type declarations and can help identify function declarations that might have been missed or warn you when the parameters of the function definition do not match those in the function role type.
 
  
-
- 
-
-
-
-
 

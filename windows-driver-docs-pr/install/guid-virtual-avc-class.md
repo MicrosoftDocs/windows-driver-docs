@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_VIRTUAL_AVC_CLASS
 
 
-The GUID_VIRTUAL_AVC_CLASS [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for virtual audio video control (AV/C) devices that are supported by the [AVStream](https://msdn.microsoft.com/library/windows/hardware/ff554240) architecture.
+The GUID_VIRTUAL_AVC_CLASS [device interface class](./overview-of-device-interface-classes.md) is defined for virtual audio video control (AV/C) devices that are supported by the [AVStream](../stream/avstream-overview.md) architecture.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The GUID_VIRTUAL_AVC_CLASS [device interface class](https://msdn.microsoft.com/l
 Remarks
 -------
 
-The system-supplied [AV/C client driver](https://msdn.microsoft.com/library/windows/hardware/ff556367) [Avc.sys](https://msdn.microsoft.com/library/windows/hardware/ff568667) registers an instance of GUID_VIRTUAL_AVC_CLASS to represent a virtual AV/C device.
+The system-supplied [AV/C client driver](../stream/av-c-client-drivers2.md) [Avc.sys](../stream/using-avc-sys.md) registers an instance of GUID_VIRTUAL_AVC_CLASS to represent a virtual AV/C device.
 
 For information about the device interface class for AV/C units on a 1394 bus, see [**GUID_AVC_CLASS**](guid-avc-class.md).
 
@@ -78,11 +78,4 @@ Requirements
 [**GUID_AVC_CLASS**](guid-avc-class.md)
 
  
-
- 
-
-
-
-
-
 

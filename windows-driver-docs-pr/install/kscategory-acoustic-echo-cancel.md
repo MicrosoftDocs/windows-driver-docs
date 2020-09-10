@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_ACOUSTIC_ECHO_CANCEL
 
 
-The KSCATEGORY_ACOUSTIC_ECHO_CANCEL [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that performs acoustic echo cancellation.
+The KSCATEGORY_ACOUSTIC_ECHO_CANCEL [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that performs acoustic echo cancellation.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS audio devices register instances of KSCATEGORY_ACOUSTIC_ECHO_CANCEL to indicate to the operating system that the devices support the KS functional category that performs acoustic echo cancellation.
 
-For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://msdn.microsoft.com/library/windows/hardware/ff536813).
+For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
 Requirements
 ------------
@@ -69,10 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

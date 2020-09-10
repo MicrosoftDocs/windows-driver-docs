@@ -12,59 +12,40 @@ ms.localizationpriority: medium
 The source code in this topic demonstrates how to use TraceLogging.
 
 ```
-#include <TraceLoggingSample.h>
+#include <windows.h>
 #include <TraceLoggingProvider.h>
 #include <winmeta.h>
-#include <TraceLoggingPartB_HelloWorld.h>
-
-using namespace WEX::Common;
-using namespace WEX::TestExecution;
-using namespace WEX::Logging;
-
-/*
-Define a unique provider identifier
-*/
-
-/*{E98FD1FA-2218-4168-B7F8-9DE67AC89821}*/
-static const GUID s_TraceLoggingSampleProviderId = { 
-    0xe98fd1fa, 
-    0x2218, 
-    0x4168, 
-    {0xb7, 0xf8, 0x9d, 0xe6, 0x7a, 0xc8, 0x98, 0x21}
-};
 
 /*
 Invoke this macro to allocate storage for a provider and declare a
-corresponding TraceLoggingHProvider handle variable. The provider name must be a
-string literal (not a variable) and must not contain any &#39;\0&#39; characters. The
-handle and copies of the handle are valid as long as the original handle is in
-scope.
+corresponding handle symbol. The provider name must be a string literal (not a
+variable) and must not contain any '\0' characters.
 
 Note that the handle is created in the "unregistered" state and will ignore
-any Write calls until it is registered.
+any TraceLoggingWrite calls until it is registered.
 */
-TraceLoggingProvider(g_hProvider, "TraceLoggingProviderSample");
+TRACELOGGING_DEFINE_PROVIDER(
+    g_hProvider,
+    "TraceLoggingProviderSample",
+    // {a12b3f0b-1161-5d99-1553-a9194ee77d81}
+    (0xa12b3f0b, 0x1161, 0x5d99, 0x15, 0x53, 0xa9, 0x19, 0x4e, 0xe7, 0x7d, 0x81));
 
-bool TraceLoggingSample::Setup()
+ULONG StartUp()
 {
     /*
     Call this function to register your provider with ETW.
     This is analogous to the ETW EventRegister() function.
     The provider handle must be in the "unregistered" state.
     Returns ERROR_SUCCESS if the provider was successfully registered.
-    Note that it is ok to ignore failure - if TraceLoggingRegisterByGuid
+    Note that it is ok to ignore failure - if TraceLoggingRegister
     fails, TraceLoggingWrite and TraceLoggingUnregister will be no-ops.
     */
-    ULONG RegisterResult = TraceLoggingRegisterByGuid(g_hProvider, 
-        &s_TraceLoggingSampleProviderId);
+    ULONG RegisterResult = TraceLoggingRegister(g_hProvider);
     
-    VERIFY_WIN32_SUCCEEDED(RegisterResult, L"Failed to register TraceLogging");
-
-
-    return true;
+    return RegisterResult;
 }
 
-bool TraceLoggingSample::Cleanup()
+ULONG ShutDown()
 {
     /*
     Call this function to unregister your provider.  Once unregistered,
@@ -74,10 +55,10 @@ bool TraceLoggingSample::Cleanup()
     TraceLoggingUnregister(g_hProvider);
 
 
-    return true;
+    return ERROR_SUCCESS;
 }
 
-void TraceLoggingSample::BasicDataTypes()
+void BasicDataTypes()
 {
     UINT8 u8 = 200;
     INT32 i32 = -2000000000;
@@ -85,7 +66,7 @@ void TraceLoggingSample::BasicDataTypes()
     INT64 i64 = 9000000000000000000;
     float f32 = 3.14f;
     BOOL b = TRUE;
-    bool bcpp = true;
+    BOOLEAN bcpp = TRUE;
 
     /*
     The following four "NumericValues" events are equivalent (except where noted) ...
@@ -94,33 +75,16 @@ void TraceLoggingSample::BasicDataTypes()
     TraceLoggingWrite(
         g_hProvider,
         "NumericValues",
-        TraceLoggingUInt8(u8, "UINT8"),”
-        TraceLoggingInt32(i32, "INT32"),
-        TraceLoggingUInt32(u32, "UINT32"),
-        TraceLoggingHexUInt32(u32, "UINT32"),
-        TraceLoggingInt64(i64, "INT64"),
-        TraceLoggingFloat32(f32, "float"),
-        TraceLoggingBool(b, "BOOL"),
-        TraceLoggingBool(bcpp, "bool (C++)") 
+        TraceLoggingUInt8(u8, "MyUINT8_field"),
+        TraceLoggingInt32(i32, "MyINT32_field"),
+        TraceLoggingUInt32(u32, "MyUINT32_field"),
+        TraceLoggingHexUInt32(u32, "MyHexUINT32_field"),
+        TraceLoggingInt64(i64, "MyINT64_field"),
+        TraceLoggingFloat32(f32, "My_float_field"),
+        TraceLoggingBool(b, "MyBool32_field"),
+        TraceLoggingBoolean(bcpp, "MyBool8_field") 
         );
 
-    /*
-    same as ...
-    */
-
-    TraceLoggingWrite(
-        g_hProvider,
-        "NumericValues",
-        TraceLoggingUInt8(200, "UINT8"),
-        TraceLoggingInt32(-2000000000, "INT32"),
-        TraceLoggingUInt32(4000000000, "UINT32"),
-        TraceLoggingHexUInt32(4000000000, "UINT32"),
-        TraceLoggingInt64(9000000000000000000, "INT64"),
-        TraceLoggingFloat32(3.14f, "float"),
-        TraceLoggingBool(TRUE, "BOOL"),
-        TraceLoggingBool(true, "bool (C++)")  
-        );
-    
     /*
     same as ...
     */
@@ -133,30 +97,14 @@ void TraceLoggingSample::BasicDataTypes()
 
     TraceLoggingWrite(
         g_hProvider,
-        "NumericValues",
-        TraceLoggingValue(u8, "UINT8"),
-        TraceLoggingValue(i32, "INT32"),
-        TraceLoggingValue(u32, "UINT32"),
-        TraceLoggingValue(u32, "UINT32"),
-        TraceLoggingValue(i64, "INT64"),
-        TraceLoggingValue(f32, "float"),
-        TraceLoggingValue(b, "BOOL"),         // This will be evaluated as INT32, not as BOOL
-        TraceLoggingValue(bcpp, "bool (C++)") // This will be evaluated as UINT8, not as bool
-        );
-
-    TraceLoggingWrite(
-        g_hProvider,
-        "NumericValues",
-        TraceLoggingValue((BYTE)200, "UINT8"),
-        TraceLoggingValue(-2000000000, "INT32"),
-        TraceLoggingValue(4000000000, "UINT32"),
-        TraceLoggingValue(4000000000, "UINT32"),    // This one won&#39;t show up as hex. 
-                                                    // TraceLoggingValue will use default out types
-        TraceLoggingValue(9000000000000000000, "INT64"),
-        TraceLoggingValue(3.14f, "float"),
-        TraceLoggingValue((BOOL)TRUE, "BOOL"),      // This will be evaluated as INT32, not as BOOL
-        TraceLoggingValue((bool)true, "bool (C++)") // This will be evaluated as UINT8, not as bool
-        );
+        "NumericValuesCpp",
+        TraceLoggingValue(u8,  "MyUINT8"),
+        TraceLoggingValue(i32, "MyINT32"),
+        TraceLoggingValue(u32, "MyUINT32"),
+        TraceLoggingValue(i64, "MyINT64"),
+        TraceLoggingValue(f32, "MyFloat"),
+        TraceLoggingValue(b,   "MyBOOL32"), // Since BOOL is a typedef for int, this will be evaluated as TraceLoggingInt32, not as TraceLoggingBool
+        TraceLoggingValue(bcpp, "MyBool8"));
 
 #endif
 
@@ -170,10 +118,8 @@ void TraceLoggingSample::BasicDataTypes()
         "Strings and Chars",
         TraceLoggingString("She loves me ...", "String (char)"), 
         TraceLoggingWideString(L"She loves me not ...", "String (wide char)"), 
-        TraceLoggingChar(&#39;A&#39;, "Single char"),
-        TraceLoggingWchar(L&#39;z&#39;, "Single wide char")
-        );
-
+        TraceLoggingChar('A', "Single char"),
+        TraceLoggingWChar(L'z', "Single wide char"));
 
     /*
     Other types
@@ -189,6 +135,7 @@ void TraceLoggingSample::BasicDataTypes()
     FILETIME ft;
     SYSTEMTIME st;
     SID const sid1 = { SID_REVISION, 1, 5, { 6 } };
+    GUID g = {0};
 
     GetSystemTime(&st);
     GetSystemTimeAsFileTime(&ft);
@@ -196,17 +143,17 @@ void TraceLoggingSample::BasicDataTypes()
     TraceLoggingWrite(
         g_hProvider,
         "Other Types",
-        TraceLoggingGuid(s_TraceLoggingSampleProviderId, "GUID"), 
-        TraceLoggingFileTime(ft, "Current Time (SYSTEMTIME)"), 
-        TraceLoggingSystemTime(st, "Current Time (FILETIME)"), 
-        TraceLoggingSid(sid1, "SID"),  
-        TraceLoggingPointer((LPCVOID)this, "void*"),
+        TraceLoggingGuid(g, "GUID"), 
+        TraceLoggingFileTime(ft, "Current Time (FILETIME)"), 
+        TraceLoggingSystemTime(st, "Current Time (SYSTEMTIME)"), 
+        TraceLoggingSid(&sid1, "SID"),  
+        TraceLoggingPointer((LPCVOID)&g, "void*"),
         TraceLoggingIntPtr(iptr, "INT_PTR"),
         TraceLoggingUIntPtr(uptr, "UINT_PTR")
         );
 }
 
-void TraceLoggingSample::NamingData()
+void NamingData()
 {
     UINT32 Cat = 0xCA7;
 
@@ -222,18 +169,17 @@ void TraceLoggingSample::NamingData()
     TraceLoggingWrite(
         g_hProvider,
         "MoreThanOneWayToSkinACat",
-        TraceLoggingUInt32(Cat) 
+        TraceLoggingUInt32(Cat, "Cat")  // Field explicitly named "Cat"
         );
 
     TraceLoggingWrite(
         g_hProvider,
         "MoreThanOneWayToSkinACat",
-        TraceLoggingValue(Cat)  
+        TraceLoggingUInt32(Cat) // Field automatically named "Cat" named based on the expression Cat.
         );
 
-
     /*
-    Let&#39;s use a different symbol for the value of the event&#39;s "Cat" field.  
+    Let's use a different symbol for the value of the event's "Cat" field.  
     */
     
     UINT32 Tiger = Cat;
@@ -246,25 +192,31 @@ void TraceLoggingSample::NamingData()
     TraceLoggingWrite(
         g_hProvider,
         "MoreThanOneWayToSkinACat",
-        TraceLoggingUInt32(Tiger, "Cat")
+        TraceLoggingUInt32(Tiger, "Cat") // Field explicitly named "Cat"
         );
 
     TraceLoggingWrite(
         g_hProvider,
         "MoreThanOneWayToSkinACat",
-        TraceLoggingValue(Tiger, "Cat")
+        TraceLoggingUInt32(Tiger) // Field automatically named "Tiger".
         );
 };
 
-void TraceLoggingSample::LevelsAndKeywords()
+void LevelsAndKeywords()
 {
     /*
     Verbosity levels and event keywords must be compile-time constants.
 
-    TraceLoggingLevel accepts values 0-255
-    TraceLoggingKeyword accepts values 0 to UINT64_MAX
+    TraceLoggingLevel accepts values 0..255, though only 0..5 are well-defined.
+    0 means "always". 1 means "fatal". 2 means "error". 3 means "warning".
+    4 means "info". 5 means "verbose". If TraceLoggingLevel is not set for an
+    event, the default is 5 (verbose).
 
-    See winmeta.h for predefined verbosity levels and reserved keyword values.
+    See winmeta.h for predefined verbosity levels.
+
+    TraceLoggingKeyword is a 64-bit bitfield. The top 16 bits are reserved by
+    Microsoft for special situations. The low 48 bits are available for
+    definition on a per-provider basis.
     */
 
     PCWSTR MyName = L"Joe";
@@ -301,7 +253,6 @@ void TraceLoggingSample::LevelsAndKeywords()
         TraceLoggingUInt32(MySerialNumber, "Serial Number")
         );
 
-
     /*
     Keywords, however, can be combined using multiple TraceLoggingKeyword() macros ...
     */
@@ -320,14 +271,14 @@ void TraceLoggingSample::LevelsAndKeywords()
         g_hProvider,
         "Keywords",
         TraceLoggingKeyword(MY_PROVIDER_KEYWORD_GREEN),
-        TraceLoggingValue(Status, "Current Status")
+        TraceLoggingWideString(Status, "Current Status")
         );
 
     TraceLoggingWrite(
         g_hProvider,
         "Keywords",
         TraceLoggingKeyword(MY_PROVIDER_KEYWORD_BLUE | MY_PROVIDER_KEYWORD_YELLOW),
-        TraceLoggingValue(Status, "Current Status")
+        TraceLoggingWideString(Status, "Current Status")
         );
 
     TraceLoggingWrite(
@@ -335,19 +286,14 @@ void TraceLoggingSample::LevelsAndKeywords()
         "Keywords",
         TraceLoggingKeyword(MY_PROVIDER_KEYWORD_BLUE),
         TraceLoggingKeyword(MY_PROVIDER_KEYWORD_YELLOW),
-        TraceLoggingValue(Status, "Current Status")
+        TraceLoggingWideString(Status, "Current Status")
         );
 }
 
-void TraceLoggingSample::Arrays()
+void Arrays()
 {
-    INT32 IntValsFixed[5] = {20, 21, 22, 23, 24};
+    INT32 IntVals[5] = {20, 21, 22, 23, 24};
     UINT cIntVals = 5;
-    INT32* IntValsVar = new INT32[cIntVals];
-
-    VERIFY_IS_NOT_NULL(IntValsVar);
-    memcpy(IntValsVar, IntValsFixed, sizeof(IntValsFixed));
-
 
     /*
     Variable size arrays
@@ -356,10 +302,8 @@ void TraceLoggingSample::Arrays()
     TraceLoggingWrite(
         g_hProvider,
         "Variable Size Arrays",
-        TraceLoggingInt32Array(IntValsVar, (UINT16)cIntVals, "Variable size int array"), 
-        TraceLoggingInt32Array(IntValsVar, 5, "Variable size int array")  
+        TraceLoggingInt32Array(IntVals, (UINT16)cIntVals, "Variable size int array")
         );
-
 
     /*
     Fixed size arrays
@@ -371,19 +315,18 @@ void TraceLoggingSample::Arrays()
     TraceLoggingWrite(
         g_hProvider,
         "Constant Size Arrays", 
-        TraceLoggingInt32FixedArray(IntValsFixed, _countof(IntValsFixed), 
-            "Constant size int array")      
-        );
-
-    delete [] IntValsVar;
+        TraceLoggingInt32FixedArray(IntVals, _countof(IntVals),
+            "Constant size int array"));
 }
 
-void TraceLoggingSample::Structs()
+void Structs()
 {
     WIN32_FIND_DATA FindData;
     HANDLE hFind = FindFirstFile(L".", &FindData);
-
-    VERIFY_IS_TRUE(hFind != INVALID_HANDLE_VALUE);
+    if (hFind == INVALID_HANDLE_VALUE)
+    {
+        return;
+    }
 
     /*
     TraceLoggingStruct defines a group of related fields in an event.
@@ -405,7 +348,7 @@ void TraceLoggingSample::Structs()
         );
 
     /*
-    ... or ...
+    If you commonly use the same set of fields, you might define a helper macro.
     */
 
 #define LogWin32FindData(fd) \
@@ -426,30 +369,16 @@ void TraceLoggingSample::Structs()
     FindClose(hFind);
 }
 
-void TraceLoggingSample::PartB()
+int __cdecl
+main()
 {
-    SYSTEMTIME st;
-    GetSystemTime(&st);
-
-    TraceLoggingWrite(
-        g_hProvider,
-        "ExampleWithPartB",
-        TraceLoggingValue(st, "Part C: Current Time"),
-        TraceLoggingPartB_Ms_HelloWorld(
-            "Bond, James",              // Alias
-            "TraceLoggingExamples",     // Tutorial Name
-            8,                          // Rating (1-10) 
-            "Ready to instrument"),     // Feedback      
-        TraceLoggingValue("Happy tracing!", "Part C: Closing Message")
-        );
+    // Note:
+    StartUp();
+    BasicDataTypes();
+    NamingData();
+    LevelsAndKeywords();
+    Arrays();
+    Structs();
+    ShutDown();
 }
 ```
-
- 
-
- 
-
-
-
-
-

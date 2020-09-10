@@ -9,9 +9,9 @@ ms.localizationpriority: medium
 # High Definition Audio DDI Reference
 
 
-This section is a technical reference that describes the routines in the three versions of the High Definition (HD) Audio device driver interface (DDI) that the [**HDAUDIO\_BUS\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536413), [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff536418) and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://msdn.microsoft.com/library/windows/hardware/ff536416) structures define. It also describes the types of structures that these routines use as parameters.
+This section is a technical reference that describes the routines in the three versions of the High Definition (HD) Audio device driver interface (DDI) that the [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface), [**HDAUDIO\_BUS\_INTERFACE\_V2**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2) and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structures define. It also describes the types of structures that these routines use as parameters.
 
-For more information about the DDI, see [High Definition Audio DDI](https://msdn.microsoft.com/library/windows/hardware/ff536442).
+For more information about the DDI, see [High Definition Audio DDI](./high-definition-audio-ddi.md).
 
 Two sets of reference pages are presented:
 
@@ -22,10 +22,4 @@ Two sets of reference pages are presented:
 [HD Audio DDI Enumerations](hd-audio-ddi-enumerations.md)
 
  
-
- 
-
-
-
-
 

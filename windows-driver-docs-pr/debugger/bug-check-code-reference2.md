@@ -2,27 +2,58 @@
 title: Bug Check Code Reference
 description: This section contains descriptions of the common bug checks, including the parameters passed to the blue screen.
 ms.assetid: DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB
-ms.date: 01/08/2019
-ms.localizationpriority: medium
+ms.date: 04/03/2020
+ms.localizationpriority: high
 ---
 
 # Bug Check Code Reference
 
-This section contains descriptions of common bug check codes, including the parameters displayed with the error code on the blue bug check screen. This section also describes how you can diagnose the fault which led to the bug check, as well as possible ways to deal with the error.
+This section contains descriptions of common bug check codes that are displayed on the blue bug check screen. This section also describes how you can use the [**!analyze**](-analyze.md) extension in the Windows Debugger to display information about a bug check code.
 
-> [!NOTE] 
-> This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://go.microsoft.com/fwlink/p/?linkid=183646).
+> [!NOTE]
+> This topic is for programmers. If you are a customer whose system has displayed a blue screen with a bug check code, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
 
-If a specific bug check code does not appear in this reference, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
+## Using WinDbg to display stop code information
+
+If a specific bug check code does not appear in this topic, use the [**!analyze**](-analyze.md) extension in the Windows Debugger (WinDbg) with the following syntax (in kernel mode), replacing `<code>` with a bug check code:
 
 `!analyze -show <code>`
 
 Entering this command causes WinDbg to display information about the specified bug check code. If your default number base (radix) is not 16, prefix `<code>` with **0x**.
 
-The following table shows the code and name of each bug check code.
+Provide the stop code parameters to the !analyze command to display any available parameter information. For example, to display information on [Bug Check 0x9F: DRIVER_POWER_STATE_FAILURE](bug-check-0x9f--driver-power-state-failure.md), with a parameter 1 value of 0x3, use `!analyze -show 0x9F 0x3` as shown here.  
 
-| Code       | Name                                                                                                                                               |
-|------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+```dbgcmd
+1: kd> !analyze -show 0x9F 0x3
+DRIVER_POWER_STATE_FAILURE (9f)
+A driver has failed to complete a power IRP within a specific time.
+Arguments:
+Arg1: 0000000000000003, A device object has been blocking an Irp for too long a time
+Arg2: 0000000000000000, Physical Device Object of the stack
+Arg3: 0000000000000000, nt!TRIAGE_9F_POWER on Win7 and higher, otherwise the Functional Device Object of the stack
+Arg4: 0000000000000000, The blocked IRP
+```
+
+To download WinDbg, see [Download Debugging Tools for Windows](debugger-download-tools.md). To learn more about the WinDbg development tools, see [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md).
+
+## Bug check dump files
+
+When a bug check occurs, a dump file may be available that contains additional information about the contents of memory when the stop code occurred. To understand the contents of memory during a failure, knowledge of processor memory registers and assembly is required.
+
+For more information, see:
+
+- [Analyzing a Kernel-Mode Dump File with WinDbg](analyzing-a-kernel-mode-dump-file-with-windbg.md)
+
+- [!analyze](-analyze.md)
+
+- [Processor Architecture](processor-architecture.md)
+
+## Bug Check Codes
+
+The following table provides links to bug check codes.
+
+| Code       | Name                                                                                                                                              |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0x00000001 | [**APC\_INDEX\_MISMATCH**](bug-check-0x1--apc-index-mismatch.md)                                                                                  |
 | 0x00000002 | [**DEVICE\_QUEUE\_NOT\_BUSY**](bug-check-0x2--device-queue-not-busy.md)                                                                           |
 | 0x00000003 | [**INVALID\_AFFINITY\_SET**](bug-check-0x3--invalid-affinity-set.md)                                                                              |
@@ -233,6 +264,7 @@ The following table shows the code and name of each bug check code.
 | 0x000000EC | [**SESSION\_HAS\_VALID\_SPECIAL\_POOL\_ON\_EXIT**](bug-check-0xec--session-has-valid-special-pool-on-exit.md)                                     |
 | 0x000000ED | [**UNMOUNTABLE\_BOOT\_VOLUME**](bug-check-0xed--unmountable-boot-volume.md)                                                                       |
 | 0x000000EF | [**CRITICAL\_PROCESS\_DIED**](bug-check-0xef--critical-process-died.md)                                                                           |
+| 0x000000F0 | [**STORAGE\_MINIPORT\_ERROR**](bug-check-0xf0--storage-miniport-error.md)                                                                         |
 | 0x000000F1 | [**SCSI\_VERIFIER\_DETECTED\_VIOLATION**](bug-check-0xf1--scsi-verifier-detected-violation.md)                                                    |
 | 0x000000F2 | [**HARDWARE\_INTERRUPT\_STORM**](bug-check-0xf2--hardware-interrupt-storm.md)                                                                     |
 | 0x000000F3 | [**DISORDERLY\_SHUTDOWN**](bug-check-0xf3--disorderly-shutdown.md)                                                                                |
@@ -273,15 +305,15 @@ The following table shows the code and name of each bug check code.
 | 0x0000011B | [**DRIVER\_RETURNED\_HOLDING\_CANCEL\_LOCK**](bug-check-0x11b---driver-returned-holding-cancel-lock.md)                                           |
 | 0x0000011C | [**ATTEMPTED\_WRITE\_TO\_CM\_PROTECTED\_STORAGE**](bug-check-0x11c--attempted-write-to-cm-protected-storage.md)                                   |
 | 0x0000011D | [**EVENT\_TRACING\_FATAL\_ERROR**](bug-check-0x11d---event-tracing-fatal-error.md)                                                                |
-| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check--0x11e--too-many-recursive-faults.md)                                                                |
-| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check--0x11f--invalid-driver-handle.md)                                                                         |
-| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check--0x120--bitlocker-fatal-error-.md)                                                                        |
+| 0x0000011E | [**TOO\_MANY\_RECURSIVE\_FAULTS**](bug-check-0x11e--too-many-recursive-faults.md)                                                                |
+| 0x0000011F | [**INVALID\_DRIVER\_HANDLE**](bug-check-0x11f--invalid-driver-handle.md)                                                                         |
+| 0x00000120 | [**BITLOCKER\_FATAL\_ERROR**](bug-check-0x120--bitlocker-fatal-error-.md)                                                                        |
 | 0x00000121 | [**DRIVER\_VIOLATION**](bug-check-0x121---driver-violation.md)                                                                                    |
 | 0x00000122 | [**WHEA\_INTERNAL\_ERROR**](bug-check-0x122---whea-internal-error.md)                                                                             |
-| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check--0x123--crypto-self-test-failure-.md)                                                                 |
+| 0x00000123 | [**CRYPTO\_SELF\_TEST\_FAILURE**](bug-check-0x123--crypto-self-test-failure-.md)                                                                 |
 | 0x00000124 | [**WHEA\_UNCORRECTABLE\_ERROR**](bug-check-0x124---whea-uncorrectable-error.md)                                                                   |
-| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check--0x125--nmr-invalid-state.md)                                                                                 |
-| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check--0x126--netio-invalid-pool-caller.md)                                                                |
+| 0x00000125 | [**NMR\_INVALID\_STATE**](bug-check-0x125--nmr-invalid-state.md)                                                                                 |
+| 0x00000126 | [**NETIO\_INVALID\_POOL\_CALLER**](bug-check-0x126--netio-invalid-pool-caller.md)                                                                |
 | 0x00000127 | [**PAGE\_NOT\_ZERO**](bug-check-0x127---page-not-zero.md)                                                                                         |
 | 0x00000128 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_IO\_PRIORITY**](bug-check-0x128--worker-thread-returned-with-bad-io-priority.md)                          |
 | 0x00000129 | [**WORKER\_THREAD\_RETURNED\_WITH\_BAD\_PAGING\_IO\_PRIORITY**](bug-check-0x129--worker-thread-returned-with-bad-paging-io-priority.md)           |
@@ -300,7 +332,7 @@ The following table shows the code and name of each bug check code.
 | 0x00000136 | [**VHD\_BOOT\_HOST\_VOLUME\_NOT\_ENOUGH\_SPACE**](bug-check-0x136--vhd-boot-host-volume-not-enough-space.md)                                      |
 | 0x00000137 | [**WIN32K\_HANDLE\_MANAGER**](bug-check-0x137--win32k-handle-manager.md)                                                                          |
 | 0x00000138 | [**GPIO\_CONTROLLER\_DRIVER\_ERROR**](bug-check-0x138-gpio-controller-driver-error.md)                                                            |
-| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check---bug-check-0x139-kernel-security-check-failure.md)                                              |
+| 0x00000139 | [**KERNEL\_SECURITY\_CHECK\_FAILURE**](bug-check-0x139--kernel-security-check-failure.md)                                              |
 | 0x0000013A | [**KERNEL\_MODE\_HEAP\_CORRUPTION**](bug-check-0x13a--kernel-mode-heap-corruption.md)                                                             |
 | 0x0000013B | [**PASSIVE\_INTERRUPT\_ERROR**](bug-check-0x13b--passive-interrupt-error.md)                                                                      |
 | 0x0000013C | [**INVALID\_IO\_BOOST\_STATE**](bug-check-0x13c--invalid-io-boost-state.md)                                                                       |
@@ -331,23 +363,43 @@ The following table shows the code and name of each bug check code.
 | 0x00000159 | [**HAL\_ILLEGAL\_IOMMU\_PAGE\_FAULT**](bug-check-0x159--hal-illegal-iommu-page-fault.md)                                                          |
 | 0x0000015A | [**SDBUS\_INTERNAL\_ERROR**](bug-check-0x15a--sdbus-internal-error.md)                                                                            |
 | 0x0000015B | [**WORKER\_THREAD\_RETURNED\_WITH\_SYSTEM\_PAGE\_PRIORITY\_ACTIVE**](bug-check-0x15b--worker-thread-returned-with-system-page-priority-active.md) |
-| 0x0000015C | [**PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x15c--pdc-watchdog-timeout-livedump.md)                                                         |
+| 0x0000015C | [**PDC\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x15c--pdc-watchdog-timeout-livedump.md)              
+| 0x0000015D | [**SOC\_SUBSYSTEM\_FAILURE\_LIVEDUMP**](bug-check-0x15d-soc-subsystem-failure-livedump.md)              
+| 0x0000015E | [**BUGCODE\_NDIS\_DRIVER\_LIVE\_DUMP**](bug-check-0x15e-bugcode-ndis-driver-live-dump.md)                                                         |
 | 0x0000015F | [**CONNECTED\_STANDBY\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x15f--connected-standby-watchdog-timeout-livedump.md)                            |
 | 0x00000160 | [**WIN32K\_ATOMIC\_CHECK\_FAILURE**](bug-check-0x160--win32k-atomic-check-failure.md)                                                             |
 | 0x00000161 | [**LIVE\_SYSTEM\_DUMP**](bug-check-0x161--live-system-dump.md)                                                                                    |
 | 0x00000162 | [**KERNEL\_AUTO\_BOOST\_INVALID\_LOCK\_RELEASE**](bug-check-0x162--kernel-auto-boost-invalid-lock-release.md)                                     |
 | 0x00000163 | [**WORKER\_THREAD\_TEST\_CONDITION**](bug-check-0x162--worker-thread-test-condition.md)                                                           |
 | 0x00000164 | [**WIN32K\_CRITICAL\_FAILURE**](bug-check-0x164--win32k-critical-failure.md)                                                                      |
+| 0x00000165 | [**CLUSTER\_CSV\_STATUS\_IO\_TIMEOUT\_LIVEDUMP**](bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md)                                      | 
+| 0x00000166 | [**CLUSTER\_RESOURCE\_CALL\_TIMEOUT\_LIVEDUMP**](bug-check-0x166--cluster-resource-call-timeout-livedump.md)                                      |
+| 0x00000167 | [**CLUSTER\_CSV\_SNAPSHOT\_DEVICE\_INFO\_TIMEOUT\_LIVEDUMP**](bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md)              |    
+| 0x00000168 | [**CLUSTER\_CSV\_STATE\_TRANSITION\_TIMEOUT\_LIVEDUMP**](bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md)                       |   
+| 0x00000169 | [**CLUSTER\_CSV\_VOLUME\_ARRIVAL\_LIVEDUMP**](bug-check-0x169--cluster-csv-volume-arival-livedump.md)                                             |      
+| 0x0000016A | [**CLUSTER\_CSV\_VOLUME\_REMOVAL\_LIVEDUMP**](bug-check-0x16a--cluster-csv-volume-removal-livedump.md)                                            |    
+| 0x0000016B | [**CLUSTER\_CSV\_CLUSTER\_WATCHDOG\_LIVEDUMP**](bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md)                                       |   
 | 0x0000016C | [**INVALID\_RUNDOWN\_PROTECTION\_FLAGS**](bug-check-0x16c--invalid-rundown-protection-flags.md)                                                   |
 | 0x0000016D | [**INVALID\_SLOT\_ALLOCATOR\_FLAGS**](bug-check-0x16d--invalid-slot-allocator-flags.md)                                                           |
 | 0x0000016E | [**ERESOURCE\_INVALID\_RELEASE**](bug-check-0x16e--eresource-invalid-release.md)                                                                  |
+| 0x0000016F | [**CLUSTER\_CSV\_STATE\_TRANSITION\_INTERVAL\_TIMEOUT\_LIVEDUMP**](bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md)           |
+| 0x00000170 | [**CRYPTO\_LIBRARY\_INTERNAL\_ERROR**](bug-check-0x170--crypto-library-internal-error.md)                                                         |
+| 0x00000171 | [**CLUSTER\_CSV\_CLUSSVC\_DISCONNECT\_WATCHDOG**](bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md)                                    |
+| 0x00000173 | [**COREMSGCALL\_INTERNAL\_ERROR**](bug-check-0x173--coremsgcall-internal-error.md)                                                                |
+| 0x00000174 | [**COREMSG\_INTERNAL\_ERROR**](bug-check-0x174--coremsg-internal-error.md)                                                                        |
 | 0x00000175 | [**PREVIOUS\_FATAL\_ABNORMAL\_RESET\_ERROR**](bug-check-0x175--previous-fatal-abnormal-reset-error.md)                                            |
 | 0x00000178 | [**ELAM\_DRIVER\_DETECTED\_FATAL\_ERROR**](bug-check-0x175--elam-driver-detected-fatal-error.md)                                                  |
+| 0x00000179 | [**CLUSTER\_CLUSPORT\_STATUS\_IO\_TIMEOUT\_LIVEDUMP**](bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md)                           |
 | 0x0000017B | [**PROFILER\_CONFIGURATION\_ILLEGAL**](bug-check-0x17b--profiler-configuration-illegal.md)                                                        | 
+| 0x0000017C | [**PDC\_LOCK\_WATCHDOG\_LIVEDUMP**](bug-check-0x17c--pdc-lock-watchdog-livedump.md)                                                               | 
+| 0x0000017D | [**PDC\_UNEXPECTED\_REVOCATION\_LIVEDUMP**](bug-check-0x17d-unexpected-revocation-livedump.md)                                                    | 
+| 0x0000017E | [**MICROCODE\_REVISION\_MISMATCH**](bug-check-0x17e--microcode-revision-mismatch.md)                                                              | 
 | 0x00000187 | [**VIDEO\_DWMINIT\_TIMEOUT\_FALLBACK\_BDD**](bug-check-0x187--video-dwminit-timeout-fallback-bdd.md)                                              |
 | 0x00000188 | [**CLUSTER\_CSVFS\_LIVEDUMP**](bug-check-0x188--cluster-csvfs-livedump.md)                                                                        |
 | 0x00000189 | [**BAD\_OBJECT\_HEADER**](bug-check-0x189--bad-object-header.md)                                                                                  |
 | 0x0000018B | [**SECURE\_KERNEL\_ERROR**](bug-check-0x18b--secure-kernel-error.md)                                                                              |
+| 0x0000018C | [**HYPERGUARD\_VIOLATION**](bug-check-0x18c--hyperguard-violation.md)                                                                              |   
+| 0x0000018D | [**SECURE\_FAULT\_UNHANDLED**](bug-check-0x18d--secure-fault-unhandled.md)                                                                        | 
 | 0x0000018E | [**KERNEL\_PARTITION\_REFERENCE\_VIOLATION**](bug-check-0x18e--kernel-partition-reference-violation.md)                                           |
 | 0x00000190 | [**WIN32K\_CRITICAL\_FAILURE\_LIVEDUMP**](bug-check-0x190--win32k-critical-failure-livedump.md)                                                   |
 | 0x00000191 | [**PF\_DETECTED\_CORRUPTION**](bug-check-0x191--pf-detected-corruption.md)                                                                        |
@@ -362,11 +414,25 @@ The following table shows the code and name of each bug check code.
 | 0x0000019B | [**TTM\_FATAL\_ERROR**](bug-check-0x19b--ttm-fatal-error.md)                                                                                      |
 | 0x0000019C | [**WIN32K\_POWER\_WATCHDOG\_TIMEOUT**](bug-check-0x19c--win32k-power-watchdog-timeout.md)                                                         |
 | 0x0000019D | [**CLUSTER\_SVHDX\_LIVEDUMP**](bug-check-0x19d--cluster-svhdx-livedump.md)                                                                        |
+| 0x000001A0 | [**TTM\_WATCHDOG\_TIMEOUT**](bug-check-0x1a0--ttm-watchdog-timeout.md)                                                                            |
+| 0x000001A1 | [**WIN32K\_CALLOUT\_WATCHDOG\_LIVEDUMP**](bug-check-0x1a1--win32k-callout-watchdog-livedump.md)                                                   |
+| 0x000001A2 | [**WIN32K\_CALLOUT\_WATCHDOG\_BUGCHECK**](bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md)                                                   |
 | 0x000001A3 | [**CALL\_HAS\_NOT\_RETURNED\_WATCHDOG\_TIMEOUT\_LIVEDUMP**](bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md)                  |
 | 0x000001A4 | [**DRIPS\_SW\_HW\_DIVERGENCE\_LIVEDUMP**](bug-check-0x1a4--drips-sw-hw-divergence-livedump.md)                                                    |
+| 0x000001A5 | [**USB\_DRIPS\_BLOCKER\_SURPRISE\_REMOVAL\_LIVEDUMP**](bug-check-0x1a5--usb-drips-blocker-surprise-removal-livedump.md)                           |
+| 0x000001A6 | [**BLUETOOTH\_ERROR\_RECOVERY\_LIVEDUMP**](bug-check-0x1a6--bluetooth-error-recovery-livedump.md)                                                 |
+| 0x000001A7 | [**SMB\_REDIRECTOR\_LIVEDUMP**](bug-check-0x1A7--smb-redirector-livedump.md)                                                                      |
+| 0x000001A8 | [**VIDEO\_DXGKRNL\_BLACK\_SCREEN\_LIVEDUMP**](bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md)                                            |
+| 0x000001B0 | [**VIDEO_MINIPORT_FAILED_LIVEDUMP**](bug-check-0x1b0--video-miniport-failed-livedump.md)                                                          |
+| 0x000001B8 | [**VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP**](bug-check-0x1b8--video-miniport-black-screen-livedump.md)                                              |
 | 0x000001C4 | [**DRIVER\_VERIFIER\_DETECTED\_VIOLATION\_LIVEDUMP**](bug-check-0x1c4--driver-verifier-detected-violation-livedump.md)                            |
 | 0x000001C5 | [**IO\_THREADPOOL\_DEADLOCK\_LIVEDUMP**](bug-check-0x1c5--io-threadpool-deadlock-livedump.md)                                                     |
+| 0x000001C6 | [**FAST\_ERESOURCE\_PRECONDITION\_VIOLATION**](bug-check-0x1c6--fast-eresource-precondition-violation.md)                                         |
+| 0x000001C7 | [**STORE\_DATA\_STRUCTURE\_CORRUPTION**](bug-check-0x1c7--store-data-structure-corruption.md)                                                     |
 | 0x000001C8 | [**MANUALLY\_INITIATED\_POWER\_BUTTON\_HOLD**](bug-check-0x1c8--manually-initiated-power-button-hold.md)                                          |
+| 0x000001C9 | [**USER\_MODE\_HEALTH\_MONITOR\_LIVEDUMP**](bug-check-0x1c9--user-mode-health-monitor-livedump.md)                                                |
+| 0x000001CA | [**SYNTHETIC\_WATCHDOG\_TIMEOUT**](bug-check-0x1ca--synthetic-watchdog-timeout.md)                                                                |
+| 0x000001CB | [**INVALID\_SILO\_DETACH**](bug-check-0x1cb--invalid-silo-detach.md)                                                                              |
 | 0x000001CC | [**EXRESOURCE_TIMEOUT_LIVEDUMP**](bug-check-0x1cc--exresource-timeout-livedump.md)                                                                |
 | 0x000001CD | [**INVALID\_CALLBACK\_STACK_ADDRESS**](bug-check-0x1cd--invalid-callback-stack-address.md)                                                        |
 | 0x000001CE | [**INVALID\_KERNEL\_STACK\_ADDRESS**](bug-check-0x1ce--invalid-kernel-stack-address.md)                                                           |
@@ -376,27 +442,24 @@ The following table shows the code and name of each bug check code.
 | 0x000001D2 | [**WORKER\_THREAD\_INVALID\_STATE**](bug-check-0x1d2--worker-thread-invalid-state.md)                                                             |
 | 0x000001D3 | [**WFP\_INVALID\_OPERATION**](bug-check-0x1d3--wfp-invalid-operation.md)                                                                          |
 | 0x000001D4 | [**UCMUCSI\_LIVEDUMP**](bug-check-0x1d4--ucmusci-livedump.md)                                                                                     |
+| 0x000001D5 | [**DRIVER_PNP_WATCHDOG**](bug-check-0x1d5--driver-pnp-watchdog.md)                                                                                |
+| 0x000001D6 | [**WORKER\_THREAD\_RETURNED\_WITH\_NON\_DEFAULT\_WORKLOAD\_CLASS**](bug-check-0x1d6--worker-thread-returned-with-non-default-workload-class.md)   |
+| 0x000001D7 | [**EFS\_FATAL\_ERROR**](bug-check-0x1d7--efs-fatal-error.md)                                                                                      |
+| 0x000001D8 | [**UCMUCSI\_FAILURE**](bug-check-0x1d8--ucmucsi-failure.md)                                                                                       |
+| 0x000001D9 | [**HAL\_IOMMU\_INTERNAL\_ERROR**](bug-check-0x1d8--ucmucsi-failure.md)                                                                            |  
+| 0x000001DA | [**HAL\_BLOCKED\_PROCESSOR\_INTERNAL\_ERROR**](bug-check-0x1da--hal-blocked-processor-internal-error.md)                                         |
+| 0x000001DB | [**IPI\_WATCHDOG\_TIMEOUT**](bug-check-0x1db--ipi-watchdog-timeout.md)                                                                            |
+| 0x000001DC | [**DMA_COMMON_BUFFER_VECTOR_ERROR**](bug-check-0x1dc--dma-common-buffer-vector-error.md)                                                          |
 | 0x00000356 | [**XBOX\_ERACTRL\_CS\_TIMEOUT**](bug-check-0x356--xbox-eractrl-cs-timeout.md)                                                                     |
 | 0x00000BFE | [**BC\_BLUETOOTH\_VERIFIER\_FAULT**](bug-check-0xbfe--bc-bluetooth-verifier-fault.md)                                                             |
 | 0x00000BFF | [**BC\_BTHMINI\_VERIFIER\_FAULT**](bug-check-0xbff--bc-bthmini-verifier-fault.md)                                                                 |
-| 0x00020001 | [**HYPERVISOR\_ERROR**](bug-check--0x20001--hypervisor-error.md)                                                                                  |
+| 0x00020001 | [**HYPERVISOR\_ERROR**](bug-check-0x20001--hypervisor-error.md)                                                                                   |
 | 0x1000007E | [**SYSTEM\_THREAD\_EXCEPTION\_NOT\_HANDLED\_M**](bug-check-0x1000007e--system-thread-exception-not-handled-m.md)                                  |
 | 0x1000007F | [**UNEXPECTED\_KERNEL\_MODE\_TRAP\_M**](bug-check-0x1000007f--unexpected-kernel-mode-trap-m.md)                                                   |
 | 0x1000008E | [**KERNEL\_MODE\_EXCEPTION\_NOT\_HANDLED\_M**](bug-check-0x1000008e--kernel-mode-exception-not-handled-m.md)                                      |
 | 0x100000EA | [**THREAD\_STUCK\_IN\_DEVICE\_DRIVER\_M**](bug-check-0x100000ea--thread-stuck-in-device-driver-m.md)                                              |
 | 0x4000008A | [**THREAD\_TERMINATE\_HELD\_MUTEX**](bug-check-0x4000008a--thread-terminate-held-mutex.md)                                                        |
 | 0xC0000218 | [**STATUS\_CANNOT\_LOAD\_REGISTRY\_FILE**](bug-check-0xc0000218--status-cannot-load-registry-file.md)                                             |
-| 0xC000021A | [**STATUS\_SYSTEM\_PROCESS\_TERMINATED**](bug-check-0xc000021a--status-system-process-terminated.md)                                              |
+| 0xC000021A | [**WINLOGON\_FATAL\_ERROR**](bug-check-0xc000021a--winlogin-fatal-error.md)                                              |
 | 0xC0000221 | [**STATUS\_IMAGE\_CHECKSUM\_MISMATCH**](bug-check-0xc0000221--status-image-checksum-mismatch.md)                                                  |
 | 0xDEADDEAD | [**MANUALLY\_INITIATED\_CRASH1**](bug-check-0xdeaddead--manually-initiated-crash1.md)                                                             |
-
- 
-
- 
-
- 
-
-
-
-
-

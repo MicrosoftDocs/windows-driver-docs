@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Collection list helpers
 
 
-The collection list helper functions are used by the v2 sensor drivers, for working with [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
+The collection list helper functions are used by the v2 sensor drivers, for working with [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
 
 The helper functions are used along with the sensor device driver software interface (DDSI).
 
@@ -21,9 +21,9 @@ Usage by sensor DDSI
 
 Comments
 
--   See [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
+-   See [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) for more information.
 
--   See [**SENSOR\_VALUE\_PAIR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/sensorsdef/ns-sensorsdef-sensor_value_pair) for more information.
+-   See [**SENSOR\_VALUE\_PAIR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_value_pair) for more information.
 
 **CollectionsListGetFillableCount**
 
@@ -57,11 +57,12 @@ Comments
 
 ### <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
 
-|                          |                        |
-|--------------------------|------------------------|
-| Minimum supported client | Windows 8.1            |
-| Minimum supported server | Windows Server 2012 R2 |
-| Header                   | Sensorsutils.h         |
+**Minimum supported client**: Windows 8.1
+
+**Minimum supported server**: Windows Server 2012 R2
+
+**Header**: Sensorsutils.h
+
 
  
 

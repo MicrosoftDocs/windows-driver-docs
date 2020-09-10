@@ -86,18 +86,11 @@ Requirements
 ## See also
 
 
-[**ASSERT**](https://msdn.microsoft.com/library/windows/hardware/ff542107)
+[**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85))
 
-[RtlAssert](https://msdn.microsoft.com/library/windows/hardware/ff563638)
+[RtlAssert](/windows-hardware/drivers/ddi/index)
 
 [**RxDbgBreakPoint**](rxdbgbreakpoint.md)
 
  
-
- 
-
-
-
-
-
 

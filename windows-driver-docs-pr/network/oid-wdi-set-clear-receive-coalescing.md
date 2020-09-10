@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_CLEAR_RECEIVE_COALESCING Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING
@@ -24,7 +25,7 @@ OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING is used by the host to remove a packet
 
 | TLV                                                                                            | Multiple TLV instances allowed | Optional | Description                         |
 |------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
-| [**WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING**](https://msdn.microsoft.com/library/windows/hardware/dn898057) |                                |          | The packet filter ID to be removed. |
+| [**WDI\_TLV\_SET\_CLEAR\_RECEIVE\_COALESCING**](./wdi-tlv-set-clear-receive-coalescing.md) |                                |          | The packet filter ID to be removed. |
 
  
 
@@ -32,6 +33,7 @@ OID\_WDI\_SET\_CLEAR\_RECEIVE\_COALESCING is used by the host to remove a packet
 
 
 No additional data. The data in the header is sufficient.
+
 Requirements
 ------------
 
@@ -62,9 +64,4 @@ Requirements
 [OID\_WDI\_SET\_RECEIVE\_COALESCING](oid-wdi-set-receive-coalescing.md)
 
  
-
- 
-
-
-
 

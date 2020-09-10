@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_INTERFACETRANSFORM
 
 
-The KSCATEGORY_INTERFACETRANSFORM [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category that transforms the interface of a device.
+The KSCATEGORY_INTERFACETRANSFORM [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that transforms the interface of a device.
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_INTERFACETRANSFORM to indicate to the operating system that the devices support the KSCATEGORY_INTERFACETRANSFORM functional category.
 
-The KSCATEGORY_INTERFACETRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799) functional categories.
+The KSCATEGORY_INTERFACETRANSFORM functional category is one of the [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md) functional categories.
 
 Requirements
 ------------
@@ -71,14 +71,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://msdn.microsoft.com/library/windows/hardware/ff565799)
+[**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md)
 
  
-
- 
-
-
-
-
-
 

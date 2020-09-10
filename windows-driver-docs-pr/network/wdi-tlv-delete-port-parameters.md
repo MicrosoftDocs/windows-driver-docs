@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_DELETE\_PORT\_PARAMETERS
 
 
-WDI\_TLV\_DELETE\_PORT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DELETE\_PORT](https://msdn.microsoft.com/library/windows/hardware/dn925950).
+WDI\_TLV\_DELETE\_PORT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DELETE\_PORT](./oid-wdi-task-delete-port.md).
 
 ## TLV Type
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

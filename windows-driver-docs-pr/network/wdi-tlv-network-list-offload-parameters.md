@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS
 
 
-WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS is a TLV that contains Network List Offload (NLO) parameters for [OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925933).
+WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS is a TLV that contains Network List Offload (NLO) parameters for [OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD](./oid-wdi-set-network-list-offload.md).
 
 ## TLV Type
 
@@ -58,9 +58,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

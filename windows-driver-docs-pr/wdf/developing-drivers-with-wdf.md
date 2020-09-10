@@ -20,7 +20,7 @@ Orwick, Penny and Guy Smith. *Developing Drivers with Windows Driver Foundation*
 
 You can purchase the book from O'Reilly using the following link:
 
--   [Preview or read entire content](http://safari.oreilly.com/9780735623743) with a Safari subscription
+-   [Preview or read entire content](https://www.safaribooksonline.com/) with a Safari subscription
 
  
 

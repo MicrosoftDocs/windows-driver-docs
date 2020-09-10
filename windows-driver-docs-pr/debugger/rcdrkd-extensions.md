@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This section describes the RCDRKD debugger extension commands. These commands display WPP trace messages created by drivers. Starting with Windows 8, you no longer need a separate trace message format (TMF) file to parse WPP messages. The TMF information is stored in the regular symbol file (PDB file).
 
-Starting in Windows 10, kernel-mode and user-mode drivers can use [Inflight Trace Recorder (IFR) for logging traces](https://msdn.microsoft.com/library/windows/hardware/dn914610). Your kernel-mode driver can use the RCDRKD commands to read messages from the circular buffers, format the messages, and display the messages in the debugger.
+Starting in Windows 10, kernel-mode and user-mode drivers can use [Inflight Trace Recorder (IFR) for logging traces](../devtest/using-wpp-recorder.md). Your kernel-mode driver can use the RCDRKD commands to read messages from the circular buffers, format the messages, and display the messages in the debugger.
 
 **Note**  You cannot use the RCDRKD commands to view UMDF driver logs, UMDF framework logs, and KMDF framework logs. To view those logs, use [Windows Driver Framework Extensions (Wdfkd.dll)](kernel-mode-driver-framework-extensions--wdfkd-dll-.md) commands.
 
@@ -38,18 +38,11 @@ The [**!rcdrkd.rcdrhelp**](-rcdrkd-rcdrhelp.md) displays help for the RCDRKD com
 ## <span id="related_topics"></span>Related topics
 
 
-[WPP Software Tracing](https://go.microsoft.com/fwlink/p?LinkID=251984)
+[WPP Software Tracing](../devtest/wpp-software-tracing.md)
 
-[Using the Framework's Event Logger](https://go.microsoft.com/fwlink/p?LinkID=251985)
+[Using the Framework's Event Logger](../wdf/using-the-framework-s-event-logger.md)
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
  
-
- 
-
-
-
-
-
 

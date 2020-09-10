@@ -15,23 +15,17 @@ The rasterizer always determines that input positions are provided in clip-space
 
 The Direct3D runtime calls the following driver functions to create, set up, and destroy the state of the rasterizer:
 
-[**CalcPrivateRasterizerStateSize**](https://msdn.microsoft.com/library/windows/hardware/ff538298)
+[**CalcPrivateRasterizerStateSize**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivaterasterizerstatesize)
 
-[**CreateRasterizerState**](https://msdn.microsoft.com/library/windows/hardware/ff540676)
+[**CreateRasterizerState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createrasterizerstate)
 
-[**DestroyRasterizerState**](https://msdn.microsoft.com/library/windows/hardware/ff552788)
+[**DestroyRasterizerState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_destroyrasterizerstate)
 
-[**SetRasterizerState**](https://msdn.microsoft.com/library/windows/hardware/ff569550)
+[**SetRasterizerState**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setrasterizerstate)
 
-[**SetScissorRects**](https://msdn.microsoft.com/library/windows/hardware/ff569659)
+[**SetScissorRects**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setscissorrects)
 
-[**SetViewports**](https://msdn.microsoft.com/library/windows/hardware/ff569698)
-
- 
+[**SetViewports**](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setviewports)
 
  
-
-
-
-
 

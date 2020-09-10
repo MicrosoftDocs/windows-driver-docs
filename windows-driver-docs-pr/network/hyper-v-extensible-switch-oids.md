@@ -26,29 +26,27 @@ The OID request is issued by an extension.
 
 | Name                                                                                                 | Q | S | M | P | E |
 |---                                                                                                   |---|---|---|---|---|
-| [OID_SWITCH_FEATURE_STATUS_QUERY](https://msdn.microsoft.com/library/windows/hardware/hh598260)      |   |   | X | X |   | 
-| [OID_SWITCH_NIC_ARRAY](https://msdn.microsoft.com/library/windows/hardware/hh598261)                 | X |   |   |   | X | 
-| [OID_SWITCH_NIC_CONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598262)               |   | X |   | X |   |
-| [OID_SWITCH_NIC_CREATE](https://msdn.microsoft.com/library/windows/hardware/hh598263)                |   | X |   | X |   |
-| [OID_SWITCH_NIC_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598264)                |   | X |   | X |   |  
-| [OID_SWITCH_NIC_DISCONNECT](https://msdn.microsoft.com/library/windows/hardware/hh598265)            |   | X |   | X |   | 
-| [OID_SWITCH_NIC_REQUEST](https://msdn.microsoft.com/library/windows/hardware/hh598266)               |   |   | X |   | X |   
-| [OID_SWITCH_NIC_RESTORE](https://msdn.microsoft.com/library/windows/hardware/hh598267)               |   | X |   | X |   |   
-| [OID_SWITCH_NIC_SAVE](https://msdn.microsoft.com/library/windows/hardware/hh598268)                  | X |   |   | X |   |
-| [OID_SWITCH_NIC_SAVE_COMPLETE](https://msdn.microsoft.com/library/windows/hardware/hh598269)         |   | X |   | X |   | 
-| [OID_SWITCH_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh598270)                | X |   |   |   | X |
-| [OID_SWITCH_PORT_ARRAY](https://msdn.microsoft.com/library/windows/hardware/hh598271)                | X |   |   |   | X | 
-| [OID_SWITCH_PORT_CREATE](https://msdn.microsoft.com/library/windows/hardware/hh598272)               |   | X |   | X |   | 
-| [OID_SWITCH_PORT_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598273)               |   | X |   | X |   | 
-| [OID_SWITCH_PORT_FEATURE_STATUS_QUERY](https://msdn.microsoft.com/library/windows/hardware/hh598274) |   |   | X | X |   | 
-| [OID_SWITCH_PORT_PROPERTY_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598275)         |   | X |   | X |   |
-| [OID_SWITCH_PORT_PROPERTY_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598276)      |   | X |   | X |   |   
-| [OID_SWITCH_PORT_PROPERTY_ENUM](https://msdn.microsoft.com/library/windows/hardware/hh598277)        |   |   | X |   | X |   
-| [OID_SWITCH_PORT_PROPERTY_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598278)      |   | X |   | X |   | 
-| [OID_SWITCH_PORT_TEARDOWN](https://msdn.microsoft.com/library/windows/hardware/hh598279)             |   | X |   | X |   |
-| [OID_SWITCH_PROPERTY_ADD](https://msdn.microsoft.com/library/windows/hardware/hh598280)              |   | X |   | X |   | 
-| [OID_SWITCH_PROPERTY_DELETE](https://msdn.microsoft.com/library/windows/hardware/hh598281)           |   | X |   | X |   | 
-| [OID_SWITCH_PROPERTY_ENUM](https://msdn.microsoft.com/library/windows/hardware/hh598282)             |   |   | X |   | X |
-| [OID_SWITCH_PROPERTY_UPDATE](https://msdn.microsoft.com/library/windows/hardware/hh598283)           |   | X |   | X |   | 
-
-
+| [OID_SWITCH_FEATURE_STATUS_QUERY](./oid-switch-feature-status-query.md)      |   |   | X | X |   | 
+| [OID_SWITCH_NIC_ARRAY](./oid-switch-nic-array.md)                 | X |   |   |   | X | 
+| [OID_SWITCH_NIC_CONNECT](./oid-switch-nic-connect.md)               |   | X |   | X |   |
+| [OID_SWITCH_NIC_CREATE](./oid-switch-nic-create.md)                |   | X |   | X |   |
+| [OID_SWITCH_NIC_DELETE](./oid-switch-nic-delete.md)                |   | X |   | X |   |  
+| [OID_SWITCH_NIC_DISCONNECT](./oid-switch-nic-disconnect.md)            |   | X |   | X |   | 
+| [OID_SWITCH_NIC_REQUEST](./oid-switch-nic-request.md)               |   |   | X |   | X |   
+| [OID_SWITCH_NIC_RESTORE](./oid-switch-nic-restore.md)               |   | X |   | X |   |   
+| [OID_SWITCH_NIC_SAVE](./oid-switch-nic-save.md)                  | X |   |   | X |   |
+| [OID_SWITCH_NIC_SAVE_COMPLETE](./oid-switch-nic-save-complete.md)         |   | X |   | X |   | 
+| [OID_SWITCH_PARAMETERS](./oid-switch-parameters.md)                | X |   |   |   | X |
+| [OID_SWITCH_PORT_ARRAY](./oid-switch-port-array.md)                | X |   |   |   | X | 
+| [OID_SWITCH_PORT_CREATE](./oid-switch-port-create.md)               |   | X |   | X |   | 
+| [OID_SWITCH_PORT_DELETE](./oid-switch-port-delete.md)               |   | X |   | X |   | 
+| [OID_SWITCH_PORT_FEATURE_STATUS_QUERY](./oid-switch-port-feature-status-query.md) |   |   | X | X |   | 
+| [OID_SWITCH_PORT_PROPERTY_ADD](./oid-switch-port-property-add.md)         |   | X |   | X |   |
+| [OID_SWITCH_PORT_PROPERTY_DELETE](./oid-switch-port-property-delete.md)      |   | X |   | X |   |   
+| [OID_SWITCH_PORT_PROPERTY_ENUM](./oid-switch-port-property-enum.md)        |   |   | X |   | X |   
+| [OID_SWITCH_PORT_PROPERTY_UPDATE](./oid-switch-port-property-update.md)      |   | X |   | X |   | 
+| [OID_SWITCH_PORT_TEARDOWN](./oid-switch-port-teardown.md)             |   | X |   | X |   |
+| [OID_SWITCH_PROPERTY_ADD](./oid-switch-property-add.md)              |   | X |   | X |   | 
+| [OID_SWITCH_PROPERTY_DELETE](./oid-switch-property-delete.md)           |   | X |   | X |   | 
+| [OID_SWITCH_PROPERTY_ENUM](./oid-switch-property-enum.md)             |   |   | X |   | X |
+| [OID_SWITCH_PROPERTY_UPDATE](./oid-switch-property-update.md)           |   | X |   | X |   |

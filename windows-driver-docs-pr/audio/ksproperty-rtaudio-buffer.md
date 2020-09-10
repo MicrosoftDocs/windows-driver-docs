@@ -47,14 +47,14 @@ The following table summarizes the features of this property.
 <td align="left"><p>No</p></td>
 <td align="left"><p>Pin</p></td>
 <td align="left"><p><a href="ksrtaudio-buffer-property.md" data-raw-source="[&lt;strong&gt;KSRTAUDIO_BUFFER_PROPERTY&lt;/strong&gt;](ksrtaudio-buffer-property.md)"><strong>KSRTAUDIO_BUFFER_PROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff537493" data-raw-source="[&lt;strong&gt;KSRTAUDIO_BUFFER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff537493)"><strong>KSRTAUDIO_BUFFER</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_buffer" data-raw-source="[&lt;strong&gt;KSRTAUDIO_BUFFER&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_buffer)"><strong>KSRTAUDIO_BUFFER</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY structure that contains a [**KSPROPERTY**](https://msdn.microsoft.com/library/windows/hardware/ff564262) structure along with other members. The client writes its requested buffer size into the structure. If the client does not have to work with a specific base address, it must specify the base address as **NULL**.
+The property descriptor (instance data) consists of a KSRTAUDIO\_BUFFER\_PROPERTY structure that contains a [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)) structure along with other members. The client writes its requested buffer size into the structure. If the client does not have to work with a specific base address, it must specify the base address as **NULL**.
 
 The property value (operation data) is a structure of type KSRTAUDIO\_BUFFER. The driver fills this structure with the actual buffer size, base address, and memory barrier flag for the cyclic buffer that it has allocated.
 
@@ -129,18 +129,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSRTAUDIO\_BUFFER**](https://msdn.microsoft.com/library/windows/hardware/ff537493)
+[**KSRTAUDIO\_BUFFER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_buffer)
 
 [**KSRTAUDIO\_BUFFER\_PROPERTY**](ksrtaudio-buffer-property.md)
 
 [**KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION**](ksproperty-rtaudio-buffer-with-notification.md)
 
  
-
- 
-
-
-
-
-
 

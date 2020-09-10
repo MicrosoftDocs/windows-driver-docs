@@ -1,5 +1,5 @@
 ---
-Description: Functional-Object Retrieval
+description: Functional-Object Retrieval
 title: Functional-Object Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -46,7 +46,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
     {
         PROPVARIANT pv = {0};
         PropVariantInit(&pv);
-        // Don&#39;t call PropVariantClear, since we did not allocate the memory for these object identifiers
+        // Don't call PropVariantClear, since we did not allocate the memory for these object identifiers
 
         // Add WPD_DEVICE_OBJECT_ID to the functional object identifiers collection
         if (hr == S_OK)

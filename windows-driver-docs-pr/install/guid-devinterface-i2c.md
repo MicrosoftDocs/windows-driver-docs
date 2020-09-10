@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_I2C
 
 
-The GUID_DEVINTERFACE_I2C [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](https://msdn.microsoft.com/library/windows/hardware/ff570593) and perform I2C transactions with monitor child devices.
+The GUID_DEVINTERFACE_I2C [device interface class](./overview-of-device-interface-classes.md) is defined for display adapter drivers that operate in the context of the [Windows Vista Display Driver Model](../display/windows-vista-display-driver-model-design-guide.md) and perform I2C transactions with monitor child devices.
 
 <table>
 <colgroup>
@@ -50,9 +50,9 @@ Remarks
 
 Drivers register instances of this device interface class to notify the operating system and applications of the presence of I2C interfaces that perform transactions with monitor child devices.
 
-If a display miniport driver supports a direct-call I2C interface for this [device setup class](https://msdn.microsoft.com/library/windows/hardware/ff541509), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](https://msdn.microsoft.com/library/windows/hardware/ff559764) function and supplying GUID_DEVINTERFACE_I2C to specify the interface type.
+If a display miniport driver supports a direct-call I2C interface for this [device setup class](./overview-of-device-setup-classes.md), a kernel-mode component can retrieve the direct-call interface by calling the miniport driver's [**DxgkDdiQueryInterface**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_interface) function and supplying GUID_DEVINTERFACE_I2C to specify the interface type.
 
-For information about the I2C bus, see [I2C Bus and Child Devices of the Display Adapter](https://msdn.microsoft.com/library/windows/hardware/ff567381).
+For information about the I2C bus, see [I2C Bus and Child Devices of the Display Adapter](../display/i2c-bus-and-child-devices-of-the-display-adapter.md).
 
 Requirements
 ------------
@@ -75,10 +75,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

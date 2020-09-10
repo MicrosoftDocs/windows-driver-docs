@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # ServiceDescription1
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ServiceDescription1 element specifies descriptive information about the service. This is applied to the description field of the wireless wide area network (WWAN) connection profile. It is not displayed in the user interface to the end user and should be left blank.
 

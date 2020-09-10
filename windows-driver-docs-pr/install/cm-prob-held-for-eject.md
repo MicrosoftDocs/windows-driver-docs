@@ -8,11 +8,9 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_HELD_FOR_EJECT
+# Code 47 - CM_PROB_HELD_FOR_EJECT
 
-This function is reserved for system use.
-
-The device has been prepared for ejection.
+This Device Manager error message indicates that the device has been prepared for ejection.
 
 ## Error Code
 
@@ -28,4 +26,4 @@ The device has been prepared for ejection.
 
 Unplug the device and plug it in again. Alternatively, selecting **Restart Computer** will restart the computer and make the device available.
 
-This error should occur only if the user invokes the hot-plug program to prepare the device for removal (which calls [**CM_Request_Device_Eject**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_request_device_ejectw)), or if the user presses a physical eject button (which calls [**IoRequestDeviceEject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nf-wdm-iorequestdeviceeject)). The user can prepare a device that is currently not removable, such as a CD-ROM trapped between the laptop and the docking station tray.
+This error should occur only if the user invokes the hot-plug program to prepare the device for removal (which calls [**CM_Request_Device_Eject**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_request_device_ejectw)), or if the user presses a physical eject button (which calls [**IoRequestDeviceEject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdeviceeject)). The user can prepare a device that is currently not removable, such as a CD-ROM trapped between the laptop and the docking station tray.

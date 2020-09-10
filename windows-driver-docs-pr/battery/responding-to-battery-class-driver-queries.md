@@ -18,20 +18,15 @@ ms.localizationpriority: medium
 ## <span id="ddk_responding_to_battery_class_driver_queries_dg"></span><span id="DDK_RESPONDING_TO_BATTERY_CLASS_DRIVER_QUERIES_DG"></span>
 
 
-The miniclass driver must provide the following three [BatteryMini*Xxx*](https://msdn.microsoft.com/library/windows/hardware/ff536286) routines, which report battery status:
+The miniclass driver must provide the following three [BatteryMini*Xxx*](/windows-hardware/drivers/ddi/_battery/) routines, which report battery status:
 
-[*BatteryMiniQueryTag*](https://msdn.microsoft.com/library/windows/hardware/ff536275)
+[*BatteryMiniQueryTag*](/windows/desktop/api/batclass/nc-batclass-bclass_query_tag_callback)
 
-[*BatteryMiniQueryInformation*](https://msdn.microsoft.com/library/windows/hardware/ff536273)
+[*BatteryMiniQueryInformation*](/windows/desktop/api/batclass/nc-batclass-bclass_query_information_callback)
 
-[*BatteryMiniQueryStatus*](https://msdn.microsoft.com/library/windows/hardware/ff536274)
+[*BatteryMiniQueryStatus*](/windows/desktop/api/batclass/nc-batclass-bclass_query_status_callback)
 
-The [**BatteryClassIoctl**](https://msdn.microsoft.com/library/windows/hardware/ff536267) routine in the class driver calls these miniclass driver routines when it receives IOCTLs requesting information about the batteries.
-
- 
+The [**BatteryClassIoctl**](/windows/desktop/api/batclass/nf-batclass-batteryclassioctl) routine in the class driver calls these miniclass driver routines when it receives IOCTLs requesting information about the batteries.
 
  
-
-
-
 

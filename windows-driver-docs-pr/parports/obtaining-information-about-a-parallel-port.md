@@ -20,22 +20,17 @@ Before a client uses a parallel port, it can obtain information about the follow
 
 -   Hardware capabilities of the parallel port
 
--   [Parallel port callback routines](https://msdn.microsoft.com/library/windows/hardware/ff544307) that a kernel-mode driver can use
+-   [Parallel port callback routines](/windows-hardware/drivers/ddi/index) that a kernel-mode driver can use
 
 A client uses the following internal device control requests to obtain the above information:
 
-[**IOCTL\_INTERNAL\_GET\_PARALLEL\_PORT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff544002)
+[**IOCTL\_INTERNAL\_GET\_PARALLEL\_PORT\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_get_parallel_port_info)
 
-[**IOCTL\_INTERNAL\_GET\_MORE\_PARALLEL\_PORT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff543996)
+[**IOCTL\_INTERNAL\_GET\_MORE\_PARALLEL\_PORT\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_get_more_parallel_port_info)
 
-[**IOCTL\_INTERNAL\_GET\_PARALLEL\_PNP\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff543997)
+[**IOCTL\_INTERNAL\_GET\_PARALLEL\_PNP\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_get_parallel_pnp_info)
 
-A client releases parallel port information by using an [**IOCTL\_INTERNAL\_RELEASE\_PARALLEL\_PORT\_INFO**](https://msdn.microsoft.com/library/windows/hardware/ff544047) request.
-
- 
+A client releases parallel port information by using an [**IOCTL\_INTERNAL\_RELEASE\_PARALLEL\_PORT\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_release_parallel_port_info) request.
 
  
-
-
-
 

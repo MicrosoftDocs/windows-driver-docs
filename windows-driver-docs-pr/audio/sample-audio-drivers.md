@@ -66,7 +66,7 @@ a. You can use GitHub tools to work with the samples. You can also download the 
 
 b. Download the master.zip file to your local hard drive.
 
-c. Right click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
+c. Select and hold (or right-click)*Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
 
 d. After the files are extracted, navigate to the following subfolder.
 
@@ -74,14 +74,14 @@ d. After the files are extracted, navigate to the following subfolder.
 
 **Open the driver solution in Visual Studio**
 
-In Microsoft Visual Studio, Click **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\Audio\\Sysvad*). Double-click the *Sysvad* solution file to open it.
+In Microsoft Visual Studio, Select **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\Audio\\Sysvad*). Double-click the *Sysvad* solution file to open it.
 
 In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has six projects.
 
 ## <span id="sample_audio_drivers"></span><span id="SAMPLE_AUDIO_DRIVERS"></span>Archived Audio Samples
 
 
-These audio samples support previous versions of the Microsoft Windows Driver Kit (WDK). They are available as part of the zip file download available [here](https://go.microsoft.com/fwlink/p/?LinkId=618052).
+These audio samples support previous versions of the Microsoft Windows Driver Kit (WDK). They are available as part of the [zip file download](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples).
 
 -   **Microsoft Virtual Audio Device Driver Sample (Msvad)**
 
@@ -103,12 +103,7 @@ These audio samples support previous versions of the Microsoft Windows Driver Ki
 
 For details, see the readme documentation that accompanies each of these samples in the WDK.
 
-For information on the WDK samples, see [Windows Driver Kit Samples Pack (Windows Drivers).](https://msdn.microsoft.com/library/windows/hardware/ff554118)
+For information on the WDK samples, see [Windows Driver Kit Samples Pack (Windows Drivers).](../samples/index.md)
 
  
-
- 
-
-
-
 

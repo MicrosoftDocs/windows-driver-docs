@@ -27,8 +27,6 @@ In many cases, you can troubleshoot a problem by using the techniques outlined i
 
 If you want to explore the mechanics of how this information is stored, or if you want to devise your own techniques for state information analysis, see [RPC State Information Internals](rpc-state-information-internals.md).
 
-These tools and techniques do not work on Windows 2000.
-
  
 
  

@@ -22,7 +22,7 @@ A **CopyFiles** directive can do either of the following:
 -   Cause a single file to be copied from the source media to the default destination directory.
 -   Reference one or more INF-writer-defined sections in the INF that each specifies a list of files to be copied from the source media to the destination.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.CoInstallers] | 
 [ClassInstall32] | 
@@ -44,7 +44,7 @@ A **CopyFiles** directive can be specified within any of the sections shown in t
 
 Each named section referenced by a **CopyFiles** directive has one or more entries of the following form:
 
-```ini
+```inf
 [file-list-section]
 destination-file-name[,[source-file-name][,[unused][,flag]]]
 ...
@@ -54,7 +54,7 @@ An INF-writer-defined *file-list-section* can have any number of entries, each o
 
 Each *file-list-section* can have an optional, associated <em>file-list-section</em>**.security** section of the following form:
 
-```ini
+```inf
 [file-list-section.security]
 "security-descriptor-string"
 ```
@@ -119,7 +119,7 @@ If the source file cannot be copied because the destination file is being used, 
 <a href="" id="security-descriptor-string"></a>*security-descriptor-string*  
 Specifies a security descriptor, to be applied to all files copied by the named *file-list-section*. The *security-descriptor-string* is a string with tokens to indicate the DACL (**D:**) security component.
 
-For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://msdn.microsoft.com/library/windows/desktop/aa379567). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
+For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 If an <em>file-list-section</em>**.security** section is not specified, files inherit the security characteristics of the directory into which the files are copied.
 
@@ -161,7 +161,7 @@ Examples
 
 This example shows how the [**SourceDisksNames**](inf-sourcedisksnames-section.md), [**SourceDisksFiles**](inf-sourcedisksfiles-section.md), and [**DestinationDirs**](inf-destinationdirs-section.md) sections specify the paths for copy-file (and delete-file) operations that occur in processing a simple device-driver INF. (The same INF was also used previously as examples of [**Version**](inf-version-section.md), **SourceDisksNames**, and **SourceDisksFiles** sections.)
 
-```ini
+```inf
 [SourceDisksNames]
 1 = %Floppy_Description%,,,\WinNT
 
@@ -187,7 +187,7 @@ CopyFiles=@AHA154x.SYS
 
 This example shows how a **CopyFiles** directive can be used in a [***DDInstall*.CoInstallers**](inf-ddinstall-coinstallers-section.md) section of an INF for a device driver that provides two device-specific co-installers to supplement the INF processing of the system device-type-specific class installer.
 
-```ini
+```inf
 [DestinationDirs]
 XxDev_Coinstallers_CopyFiles = 11  ; DIRID_SYSTEM
 ; ... other file-list entries and DefaultDestDirs omitted here
@@ -237,11 +237,4 @@ For additional examples of how to use the INF **CopyFiles** directive, see the I
 [**Version**](inf-version-section.md)
 
  
-
- 
-
-
-
-
-
 

@@ -81,7 +81,7 @@ gflags /p [/disable ImageFile] [/?]
 To display help:
 
 ```console
-glags /?
+gflags /?
 ```
 
 ## <span id="ddk_gflags_commands_dtools"></span><span id="DDK_GFLAGS_COMMANDS_DTOOLS"></span>Parameters
@@ -146,7 +146,7 @@ Sets the maximum size of the user-mode stack trace database for the process. To 
 <span id="_______PoolTag______"></span><span id="_______pooltag______"></span><span id="_______POOLTAG______"></span> *PoolTag*   
 (Windows Vista and later.) Specifies a pool tag for the [Special Pool](special-pool.md) feature. Use only with the **spp** flag.
 
-Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
+Enter a four-character pattern for *PoolTag*, such as Tag1. It can include the **?** (substitute for any single character) and **\*** (substitute for multiple characters) wildcard characters. For example, Fat\* or Av?4. Pool tags are always case-sensitive.
 
 <span id="0xSize______"></span><span id="0xsize______"></span><span id="0XSIZE______"></span>**0x***Size*   
 (Windows Vista and later.) Specifies a size range for the Special Pool feature. Use only with the **spp** flag. For guidance on selecting a size value, see "Selecting an Allocation Size" in [Special Pool](special-pool.md).
@@ -176,7 +176,7 @@ The following table lists the subparameters that are valid with **/ro**.
 <tr class="even">
 <td align="left"><p><strong>/i</strong> <em>ImageFile</em></p></td>
 <td align="left"><p>Limits the trace to objects that are created by processes with the specified image file. You can specify only one image file with the <strong>/i</strong> parameter.</p>
-<p>Enter an image file name, such as notepad.exe, with up to 64 characters. &quot;System&quot; and &quot;Idle&quot; are not valid image names.</p>
+<p>Enter an image file name, such as notepad.exe, with up to 64 characters. "System" and "Idle" are not valid image names.</p>
 <p>If you do not specify an image file, Windows traces all objects with the specified pool tags. If you specify both an image file (<strong>/i</strong>) and one or more pool tags (<strong>/t</strong>), Windows traces objects with any of the specified pool tags that are created by the specified image.</p></td>
 </tr>
 <tr class="odd">

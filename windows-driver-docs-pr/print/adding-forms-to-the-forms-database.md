@@ -110,13 +110,13 @@ typedef struct _FORM_INFO_2 {
 <tr class="even">
 <td><p>dwResourceId</p></td>
 <td><p>The value of the *rcNameID entry in the GPD file. If the *rcName option is used in the GPD file instead, the value for this field is 0.</p></td>
-<td><p>The resource ID, in <strong>pMuiDll</strong>, of the form&#39;s display name when <strong>StringType</strong> contains STRING_MUIDLL.</p></td>
+<td><p>The resource ID, in <strong>pMuiDll</strong>, of the form's display name when <strong>StringType</strong> contains STRING_MUIDLL.</p></td>
 </tr>
 <tr class="odd">
 <td><p>pDisplayName</p></td>
 <td><p><strong>NULL</strong></p>
 <p>This field is not used.</p></td>
-<td><p>The form&#39;s display name in the language that <strong>wLangId</strong> specifies when <strong>StringType</strong> contains STRING_LANGPAIR.</p></td>
+<td><p>The form's display name in the language that <strong>wLangId</strong> specifies when <strong>StringType</strong> contains STRING_LANGPAIR.</p></td>
 </tr>
 <tr class="even">
 <td><p>wLangId</p></td>

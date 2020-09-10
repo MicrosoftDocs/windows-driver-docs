@@ -29,13 +29,7 @@ This render state gives the number of segments to be used for each edge of the p
 
 ### <span id="d3drs_deletertpatch"></span><span id="D3DRS_DELETERTPATCH"></span> D3DRS\_DELETERTPATCH
 
-This render state notifies the driver that a patch is to be deleted. For more information, see [**D3DRENDERSTATETYPE**](https://msdn.microsoft.com/library/windows/hardware/ff549036).
+This render state notifies the driver that a patch is to be deleted. For more information, see [**D3DRENDERSTATETYPE**](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3drenderstatetype).
 
  
-
- 
-
-
-
-
 

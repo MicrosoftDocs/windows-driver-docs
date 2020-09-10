@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_USB_DEVICE
 
 
-The GUID_DEVINTERFACE_USB_DEVICE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [USB devices](https://msdn.microsoft.com/library/windows/hardware/ff538930) that are attached to a USB hub.
+The GUID_DEVINTERFACE_USB_DEVICE [device interface class](./overview-of-device-interface-classes.md) is defined for [USB devices](../index.yml) that are attached to a USB hub.
 
 <table>
 <colgroup>
@@ -80,11 +80,4 @@ Requirements
 [**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md)
 
  
-
- 
-
-
-
-
-
 

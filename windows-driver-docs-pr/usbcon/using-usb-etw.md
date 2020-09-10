@@ -1,5 +1,5 @@
 ---
-Description: This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.
+description: This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon.
 title: Using activity ID GUIDs in USB ETW traces
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ This image shows you related events from an application, UMDF driver, and Ucx010
 ## How to add an activity ID GUID in an application
 
 
-An application can include activity ID GUIDs by calling [**EventActivityIdControl**](https://msdn.microsoft.com/library/windows/desktop/aa363720). For more information, see [Event Tracing Functions](https://msdn.microsoft.com/library/windows/desktop/aa363795).
+An application can include activity ID GUIDs by calling [**EventActivityIdControl**](https://docs.microsoft.com/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol). For more information, see [Event Tracing Functions](https://docs.microsoft.com/windows/desktop/ETW/event-tracing-functions).
 
 This example code shows how an application can set an activity ID GUID and send it to the ETW provider, a UMDF driver.
 
@@ -64,14 +64,14 @@ if(success == 0)
 }
 ```
 
-In the preceding example, an application calls [**EventActivityIdControl**](https://msdn.microsoft.com/library/windows/desktop/aa363720) to create an activity ID (EVENT\_ACTIVITY\_CTRL\_CREATE\_ID) and then to set it (EVENT\_ACTIVITY\_CTRL\_SET\_ID) for the current thread. The application specifies that activity GUID to the ETW event provider, such as a user-mode driver, by sending a driver-defined IOCTL (described in the next section).
+In the preceding example, an application calls [**EventActivityIdControl**](https://docs.microsoft.com/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol) to create an activity ID (EVENT\_ACTIVITY\_CTRL\_CREATE\_ID) and then to set it (EVENT\_ACTIVITY\_CTRL\_SET\_ID) for the current thread. The application specifies that activity GUID to the ETW event provider, such as a user-mode driver, by sending a driver-defined IOCTL (described in the next section).
 
-The event provider must publish an instrumentation manifest file (.MAN file). By running the [**message compiler (Mc.exe)**](https://msdn.microsoft.com/library/windows/desktop/aa385638), a header file is generated that contains definitions for the event provider, event attributes, channels, and events. In the example, the application calls EventWriteReadFail, which are defined in the generated header file, to write trace event messages in case of a failure.
+The event provider must publish an instrumentation manifest file (.MAN file). By running the [**message compiler (Mc.exe)**](https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-), a header file is generated that contains definitions for the event provider, event attributes, channels, and events. In the example, the application calls EventWriteReadFail, which are defined in the generated header file, to write trace event messages in case of a failure.
 
 ## How to set the activity ID GUID in a UMDF driver
 
 
-A user-mode driver creates and sets activity ID GUIDs by calling [**EventActivityIdControl**](https://msdn.microsoft.com/library/windows/desktop/aa363720) and the calls are similar to the way an application calls them, as described in the previous section. Those calls add the activity ID GUID to the current thread and that activity ID GUID is used whenever the thread logs an event. For more information, see [Using Activity Identifiers](https://msdn.microsoft.com/library/windows/hardware/hh706287).
+A user-mode driver creates and sets activity ID GUIDs by calling [**EventActivityIdControl**](https://docs.microsoft.com/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol) and the calls are similar to the way an application calls them, as described in the previous section. Those calls add the activity ID GUID to the current thread and that activity ID GUID is used whenever the thread logs an event. For more information, see [Using Activity Identifiers](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-activity-identifiers).
 
 This example code shows how a UMDF driver sets the activity ID GUID that was created and specified by the application through an IOCTL.
 
@@ -190,7 +190,7 @@ CMyReadWriteQueue::ForwardFormattedRequest(
 }
 ```
 
-Let's see how the activity ID GUID that was created by the application gets associated with a [User-Mode Driver Framework](https://msdn.microsoft.com/library/windows/hardware/ff560027) (UMDF) client driver. When the driver receives the IOCTL request from the application, it copies the GUID in a private member. At some point, the application calls [**ReadFile**](https://msdn.microsoft.com/library/windows/desktop/aa365467) to perform a read operation. The framework creates a request and invokes the driver's handler, ForwardFormattedRequest. In the handler, the driver sets the previously stored activity ID GUID on the thread by calling [**EventActivityIdControl**](https://msdn.microsoft.com/library/windows/desktop/aa363720) and EventWriteReadFail to trace event messages.
+Let's see how the activity ID GUID that was created by the application gets associated with a [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/debugger/user-mode-driver-framework-debugging) (UMDF) client driver. When the driver receives the IOCTL request from the application, it copies the GUID in a private member. At some point, the application calls [**ReadFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-readfile) to perform a read operation. The framework creates a request and invokes the driver's handler, ForwardFormattedRequest. In the handler, the driver sets the previously stored activity ID GUID on the thread by calling [**EventActivityIdControl**](https://docs.microsoft.com/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol) and EventWriteReadFail to trace event messages.
 
 **Note**  The UMDF driver must also include the header file that is generated through the instrumentation manifest file. The header file defines macros such as EventWriteReadFail that write trace messages.
 
@@ -201,11 +201,11 @@ Let's see how the activity ID GUID that was created by the application gets asso
 
 In kernel mode, a driver can trace messages on the thread that originates in user mode or a thread that the driver creates. In both those cases, the driver requires the activity ID GUID of the thread.
 
-To trace messages, the driver must obtain the registration handle as an event provider (see [**EtwRegister**](https://msdn.microsoft.com/library/windows/hardware/ff545603)) and then call [**EtwWrite**](https://msdn.microsoft.com/library/windows/hardware/ff545627) by specifying the GUID and the event message. For more information, see [Adding Event Tracing to Kernel-Mode Drivers](https://msdn.microsoft.com/library/windows/hardware/ff541236).
+To trace messages, the driver must obtain the registration handle as an event provider (see [**EtwRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-etwregister)) and then call [**EtwWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-etwwrite) by specifying the GUID and the event message. For more information, see [Adding Event Tracing to Kernel-Mode Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-event-tracing-to-kernel-mode-drivers).
 
-If your kernel- mode driver handles a request that was created by an application or a user-mode driver, the kernel-mode driver does not create and set an activity ID GUID. Instead, the I/O manager handles most of the activity ID propagation. When a user-mode thread initiates a request, the I/O manager creates an IRP for the request and automatically copies the current thread's activity ID GUID into the new IRP. If the kernel-mode driver wants to trace events on that thread, it must get the GUID by calling [**IoGetActivityIdIrp**](https://msdn.microsoft.com/library/windows/hardware/hh439309), and then call [**EtwWrite**](https://msdn.microsoft.com/library/windows/hardware/ff545627).
+If your kernel- mode driver handles a request that was created by an application or a user-mode driver, the kernel-mode driver does not create and set an activity ID GUID. Instead, the I/O manager handles most of the activity ID propagation. When a user-mode thread initiates a request, the I/O manager creates an IRP for the request and automatically copies the current thread's activity ID GUID into the new IRP. If the kernel-mode driver wants to trace events on that thread, it must get the GUID by calling [**IoGetActivityIdIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iogetactivityidirp), and then call [**EtwWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-etwwrite).
 
-If your kernel-mode driver creates an IRP with an activity ID GUID, the driver can call [**EtwActivityIdControl**](https://msdn.microsoft.com/library/windows/hardware/ff545578) with EVENT\_ACTIVITY\_CTRL\_CREATE\_SET\_ID to generate a new GUID. The driver can then associate the new GUID with the IRP by calling [**IoSetActivityIdIrp**](https://msdn.microsoft.com/library/windows/hardware/hh439382)and then call [**EtwWrite**](https://msdn.microsoft.com/library/windows/hardware/ff545627).
+If your kernel-mode driver creates an IRP with an activity ID GUID, the driver can call [**EtwActivityIdControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-etwactivityidcontrol) with EVENT\_ACTIVITY\_CTRL\_CREATE\_SET\_ID to generate a new GUID. The driver can then associate the new GUID with the IRP by calling [**IoSetActivityIdIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iosetactivityidirp)and then call [**EtwWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-etwwrite).
 
 The activity ID GUID is passed along with the IRP to the next lower drivers. The lower drivers can add their trace messages to the thread.
 

@@ -34,17 +34,11 @@ The following is an example of an *add-registry-section* that adds a **HelpText*
 HKR, Ndi, HelpText, 0, %MyTransport_Help%
 ```
 
-The **HelpText** value is a % *strkey*% token that is defined in the **Strings** section of the INF file. For more information about the **Strings** section, see the [**INF Strings Section**](https://msdn.microsoft.com/library/windows/hardware/ff547485).
+The **HelpText** value is a % *strkey*% token that is defined in the **Strings** section of the INF file. For more information about the **Strings** section, see the [**INF Strings Section**](../install/inf-strings-section.md).
 
 **Note**  For Multilingual User Interface (MUI) support, the **HelpText** value can be an indirect string in the form `@filename,resource`. For example: "@%SystemRoot%\\System32\\drivers\\mydriver.sys,-1000". The target string is located in the specified file. The resource value identifies the specific string within the file. If the resource value is zero or greater, the number is used as an index of the string in a binary file. If the resource value is negative, it is used as a resource identifier in a resource file.
 
  
 
  
-
- 
-
-
-
-
 

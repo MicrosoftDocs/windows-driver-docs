@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_multiple_texture_validation_gg"></span><span id="DDK_MULTIPLE_TEXTURE_VALIDATION_GG"></span>
 
 
-Current hardware does not necessarily implement everything that Direct3D can express. The application determines whether a particular blending operation can be performed by first setting up the desired blending mode, and then calling the **IDirect3DDevice7::ValidateDevice** method. The driver must accurately report its capabilities at initialization time and support [**D3dValidateTextureStageState**](https://msdn.microsoft.com/library/windows/hardware/ff549064) to allow its capabilities to be validated. Validation also covers operations specified at the TBLEND level. For information about **IDirect3DDevice7::ValidateDevice**, see the Direct3D SDK documentation.
+Current hardware does not necessarily implement everything that Direct3D can express. The application determines whether a particular blending operation can be performed by first setting up the desired blending mode, and then calling the **IDirect3DDevice7::ValidateDevice** method. The driver must accurately report its capabilities at initialization time and support [**D3dValidateTextureStageState**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_validatetexturestagestatecb) to allow its capabilities to be validated. Validation also covers operations specified at the TBLEND level. For information about **IDirect3DDevice7::ValidateDevice**, see the Direct3D SDK documentation.
 
 The following table lists the return codes for **IDirect3DDevice7::ValidateDevice**.
 
@@ -69,10 +69,4 @@ The following table lists the return codes for **IDirect3DDevice7::ValidateDevic
  
 
  
-
- 
-
-
-
-
 

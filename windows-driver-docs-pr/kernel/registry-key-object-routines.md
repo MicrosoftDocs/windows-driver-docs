@@ -56,12 +56,7 @@ A driver can manipulate a registry-key object by performing the following steps:
 
 2.  Perform the intended operations by calling the appropriate **Zw*Xxx*Key** routines. For information about how to do so, see [Using a Handle to a Registry-Key Object](using-a-handle-to-a-registry-key-object.md).
 
-3.  Close the handle by calling [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417).
+3.  Close the handle by calling [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose).
 
  
-
- 
-
-
-
 

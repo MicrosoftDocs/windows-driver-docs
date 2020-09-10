@@ -19,15 +19,15 @@ ms.localizationpriority: medium
 
 To participate in error information retrieval, a PSHED plug-in must implement the following callback functions:
 
-[*GetInjectionCapabilities*](https://msdn.microsoft.com/library/windows/hardware/ff559372)
+[*GetInjectionCapabilities*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_get_injection_capabilities)
 
-[*InjectError*](https://msdn.microsoft.com/library/windows/hardware/ff559397)
+[*InjectError*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_inject_error)
 
 The following code example shows how to implement these callback functions.
 
 ```cpp
 //
-// The PSHED plug-in&#39;s GetInjectionCapabilities callback function
+// The PSHED plug-in's GetInjectionCapabilities callback function
 //
 NTSTATUS
   GetInjectionCapabilities(
@@ -45,7 +45,7 @@ NTSTATUS
 }
 
 //
-// The PSHED plug-in&#39;s InjectError callback function
+// The PSHED plug-in's InjectError callback function
 //
 NTSTATUS
   InjectError(
@@ -85,9 +85,4 @@ NTSTATUS
 A PSHED plug-in that participates in error injection must specify the **PshedFAErrorInjection** flag when it [registers](registering-a-pshed-plug-in.md) itself with the operating system.
 
  
-
- 
-
-
-
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_CLEANUP
 
 
-Drivers that maintain process-specific context information must handle cleanup requests in [*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch) routines.
+Drivers that maintain process-specific context information must handle cleanup requests in [*DispatchCleanup*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routines.
 
 When Sent
 ---------
@@ -35,9 +35,9 @@ This IRP is sent in the context of the process that closed the file object handl
 
 If the driver's device objects were set up as exclusive, so that only a single thread can use the device at a time, the driver must complete every IRP that is currently queued to the target device object and set STATUS\_CANCELLED in each IRP's I/O status block.
 
-Otherwise, the driver must cancel and complete only the currently queued IRPs that are associated with the file object handle that is being released. (A pointer to the file object is located in the **FileObject** member of the driver's [**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659) of the IRP.) After canceling these queued IRPs, the driver completes the cleanup IRP and sets STATUS\_SUCCESS in its I/O status block.
+Otherwise, the driver must cancel and complete only the currently queued IRPs that are associated with the file object handle that is being released. (A pointer to the file object is located in the **FileObject** member of the driver's [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) of the IRP.) After canceling these queued IRPs, the driver completes the cleanup IRP and sets STATUS\_SUCCESS in its I/O status block.
 
-For more information about handling this request, see [DispatchCleanup Routines](https://msdn.microsoft.com/library/windows/hardware/ff543242).
+For more information about handling this request, see [DispatchCleanup Routines](./dispatchcleanup-routines.md).
 
 Requirements
 ------------
@@ -58,16 +58,11 @@ Requirements
 ## See also
 
 
-[*DispatchCleanup*](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/nc-wdm-driver_dispatch)
+[*DispatchCleanup*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
-[**IO\_STACK\_LOCATION**](https://msdn.microsoft.com/library/windows/hardware/ff550659)
+[**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location)
 
 [**IRP\_MJ\_CLOSE**](irp-mj-close.md)
 
  
-
- 
-
-
-
 

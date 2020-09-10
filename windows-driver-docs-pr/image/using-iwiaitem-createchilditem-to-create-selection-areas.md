@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-WIA applications should read the [**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://msdn.microsoft.com/library/windows/hardware/ff552653) property to determine whether the film scanning item supports creating of child items. The film scanner items can contain child items (that is, frames) in the item tree that *cannot* be deleted. The application can delete WIA items that are marked with the [**WIA\_IPA\_ACCESS\_RIGHTS**](https://msdn.microsoft.com/library/windows/hardware/ff551518) settings of (WIA\_PROP\_READ | WIA\_ITEM\_WRITE | WIA\_ITEM\_CAN\_BE\_DELETED).
+WIA applications should read the [**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](./wia-ips-supports-child-item-creation.md) property to determine whether the film scanning item supports creating of child items. The film scanner items can contain child items (that is, frames) in the item tree that *cannot* be deleted. The application can delete WIA items that are marked with the [**WIA\_IPA\_ACCESS\_RIGHTS**](./wia-ipa-access-rights.md) settings of (WIA\_PROP\_READ | WIA\_ITEM\_WRITE | WIA\_ITEM\_CAN\_BE\_DELETED).
 
 ### Creating Dynamic Film Items
 
@@ -23,9 +23,4 @@ A WIA application calls **IWiaItem::CreateChildItem** (described in the Microsof
  
 
  
-
- 
-
-
-
 

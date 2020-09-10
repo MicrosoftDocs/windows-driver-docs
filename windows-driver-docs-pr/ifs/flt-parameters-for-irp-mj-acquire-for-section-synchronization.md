@@ -11,17 +11,15 @@ api_location:
 - fltkernel.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 07/17/2019
 ms.localizationpriority: medium
 ---
 
-# FLT\_PARAMETERS for IRP\_MJ\_ACQUIRE\_FOR\_SECTION\_SYNCHRONIZATION union
+# FLT_PARAMETERS for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION union
 
+The following union component is used when the **MajorFunction** field of the [**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block) structure for the operation is IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION.
 
-The following union component is used when the **MajorFunction** field of the [**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638) structure for the operation is IRP\_MJ\_ACQUIRE\_FOR\_SECTION\_SYNCHRONIZATION.
-
-Syntax
-------
+## Syntax
 
 ```ManagedCPlusPlus
 typedef union _FLT_PARAMETERS {
@@ -35,82 +33,43 @@ typedef union _FLT_PARAMETERS {
 } FLT_PARAMETERS, *PFLT_PARAMETERS;
 ```
 
-Members
--------
+## Members
 
-**SyncType**  
-* Specifies the type of synchronization requested for the section. This parameter must be one of two enumerated values:
-  * **SyncTypeCreateSection**
-  * **SyncTypeOther**
+### SyncType  
 
-**PageProtection**  
-* Specifies the type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, one of the following flags, possibly combined with PAGE\_NOCACHE:
+The type of synchronization requested for the section. This parameter is set to **SyncTypeCreateSection** if a section is being created; otherwise, it is set to **SyncTypeOther**.
 
-  * PAGE\_READONLY
+### PageProtection
 
-  * PAGE\_READWRITE
+The type of page protection requested for the section. Must be zero if **SyncType** is SyncTypeOther. Otherwise, this parameter must be one of the defined [memory protection constant values](/windows/win32/memory/memory-protection-constants).
 
-  * PAGE\_WRITECOPY
+### OutputInformation
 
-  * PAGE\_EXECUTE
-
-**OutputInformation**
-*  A [**FS_FILTER_SECTION_SYNC_OUTPUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ntifs/ns-ntifs-_fs_filter_section_sync_output) structure that specifies information describing the attributes of the section that is being created.
+A [**FS_FILTER_SECTION_SYNC_OUTPUT**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fs_filter_section_sync_output) structure that specifies information describing the attributes of the section that is being created.
 
 ## Remarks
 
+The [**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters) structure for IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION operations contains the parameters for an **AcquireForSectionSynchronization** operation represented by a callback data ([**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)) structure. It is contained in an FLT_IO_PARAMETER_BLOCK structure.
 
-The [**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673) structure for IRP\_MJ\_ACQUIRE\_FOR\_SECTION\_SYNCHRONIZATION operations contains the parameters for an **AcquireForSectionSynchronization** operation represented by a callback data ([**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)) structure. It is contained in an FLT\_IO\_PARAMETER\_BLOCK structure.
+IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION is a file system (FSFilter) callback operation.
 
-IRP\_MJ\_ACQUIRE\_FOR\_SECTION\_SYNCHRONIZATION is a file system (FSFilter) callback operation.
+If the enumerated value of the **SyncType** member is set to **SyncTypeOther**, a file system minifilter or legacy filter driver cannot fail this operation. If **SyncType** is set to **SyncTypeCreateSection**, a file system minifilter or legacy filter driver is allowed to fail with a STATUS_INSUFFICIENT_RESOURCES error if there is not enough memory to create the section.
 
-If the enumerated value of the **SyncType** member is set to **SyncTypeOther** (zero), a file system minifilter or legacy filter driver cannot fail this operation. If **SyncType** is set to **SyncTypeCreateSection**, a file system minifilter or legacy filter driver is allowed to fail with a STATUS\_INSUFFICIENT\_RESOURCES error if there is not enough memory to create the section.
-
-For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172).
+For more information about FSFilter callback operations, see the reference entry for [**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks).
 
 ## Requirements
 
+**Version**: Available in Windows XP and later versions of the Windows operating system.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows XP and later versions of the Windows operating system.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Fltkernel.h (include Fltkernel.h)</td>
-</tr>
-</tbody>
-</table>
+**Header**: Fltkernel.h (include Fltkernel.h)
+
 
 ## See also
 
+[**FLT_CALLBACK_DATA**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data)
 
-[**FLT\_CALLBACK\_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff544620)
+[**FLT_IO_PARAMETER_BLOCK**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_io_parameter_block)
 
-[**FLT\_IO\_PARAMETER\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff544638)
+[**FLT_PARAMETERS**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_parameters)
 
-[**FLT\_IS\_FASTIO\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544645)
-
-[**FLT\_IS\_FS\_FILTER\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544648)
-
-[**FLT\_IS\_IRP\_OPERATION**](https://msdn.microsoft.com/library/windows/hardware/ff544654)
-
-[**FLT\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff544673)
-
-[**FsRtlRegisterFileSystemFilterCallbacks**](https://msdn.microsoft.com/library/windows/hardware/ff547172)
-
- 
-
- 
-
-
-
-
-
-
+[**FsRtlRegisterFileSystemFilterCallbacks**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlregisterfilesystemfiltercallbacks)

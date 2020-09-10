@@ -2,7 +2,7 @@
 title: OID_GEN_DIRECTED_FRAMES_XMIT
 description: As a query, the OID_GEN_DIRECTED_FRAMES_XMIT OID specifies the number of directed packets that are transmitted without errors.
 ms.assetid: 7863c5c5-618f-4e3c-9a50-3bfdcf00034d
-ms.date: 08/08/2017
+ms.date: 11/01/2019
 keywords: 
  -OID_GEN_DIRECTED_FRAMES_XMIT Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -33,7 +33,9 @@ Optional.
 Remarks
 -------
 
-For general information about statistics OIDs, see [General Statistics](https://msdn.microsoft.com/library/windows/hardware/ff552485).
+The count is identical to the *ifOutUcastPkts* counter described in RFC 2863.
+
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
 Requirements
 ------------
@@ -57,9 +59,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

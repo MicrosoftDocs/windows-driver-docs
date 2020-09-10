@@ -45,7 +45,7 @@ If needed, you can set registry values to arbitrary values to prevent JoyHID fro
 <tbody>
 <tr class="odd">
 <td><p>OEMName</p></td>
-<td><p>&quot;Unused entry for IHV device X, do not remove&quot;</p></td>
+<td><p>"Unused entry for IHV device X, do not remove"</p></td>
 </tr>
 <tr class="even">
 <td><p>OEMData</p></td>
@@ -53,7 +53,7 @@ If needed, you can set registry values to arbitrary values to prevent JoyHID fro
 </tr>
 <tr class="odd">
 <td><p>OEMCallout</p></td>
-<td><p>&quot;unused&quot;</p></td>
+<td><p>"unused"</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,7 +1,7 @@
 ---
-Description: Create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control code (IOCTL) requests.
+description: Create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control code (IOCTL) requests.
 title: Communicating with GenericUSBFn.sys from a user-mode service
-ms.date: 04/20/2017
+ms.date: 07/26/2019
 ms.localizationpriority: medium
 ---
 
@@ -15,7 +15,7 @@ The IOCTLs declared in [Genericusbfnioctl.h](https://docs.microsoft.com/windows/
 
 The following steps describe how you can define a USB interface service that interacts with GenericUSBFn.sys to communicate with the USB function drivers:
 
-1. On startup, the service listens for the device interface arrival of the interface. The device interface GUID is the InterfaceGUID value that is declared in the registry under the OEM-defined subkey of HKEY_LOCAL_MACHINE\CurrentControlSet\Control\USBFN\Interfaces. There are two common methods for listening to device arrival:
+1. On startup, the service listens for the device interface arrival of the interface. The device interface GUID is the InterfaceGUID value that is declared in the registry under the OEM-defined subkey of HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\USBFN\Interfaces. There are two common methods for listening to device arrival:
     - Trigger start the service. For more information, see Service Trigger Events. 
     - Register for device interface arrival. For more information, see the CM_Register_Notification function. 
 2. After the interface arrives, the service opens a handle to the device: 

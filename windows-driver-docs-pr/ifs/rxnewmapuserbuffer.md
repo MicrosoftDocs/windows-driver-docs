@@ -45,7 +45,7 @@ Remarks
 
 If an MDL exists, then the assumption is that the MDL describes the user buffer, and the system address for the MDL is returned by **RxNewMapUserBuffer**. Otherwise, the user buffer is returned directly by **RxNewMapUserBuffer**.
 
-The **RxNewMapUserBuffer** routine checks if the **CurrentIrp**-&gt;**MdlAddress** member of the *RxContext* variable is **NULL** and returns the **CurrentIrp**-&gt;**UserBuffer** member of the *RxContext* variable when this is the case. If the **CurrentIrp**-&gt;**MdlAddress** member is not **NULL**, then **RxNewMapUserBuffer** will call [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559) to return the MDL from the IRP.
+The **RxNewMapUserBuffer** routine checks if the **CurrentIrp**-&gt;**MdlAddress** member of the *RxContext* variable is **NULL** and returns the **CurrentIrp**-&gt;**UserBuffer** member of the *RxContext* variable when this is the case. If the **CurrentIrp**-&gt;**MdlAddress** member is not **NULL**, then **RxNewMapUserBuffer** will call [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md) to return the MDL from the IRP.
 
 Note that the **RxNewMapUserBuffer** routine is only available on Windows XP and Windows 2000.
 
@@ -80,22 +80,15 @@ Requirements
 ## See also
 
 
-[**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559)
+[**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md)
 
-[**RxLowIoCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff554525)
+[**RxLowIoCompletion**](/windows-hardware/drivers/ddi/lowio/nf-lowio-rxlowiocompletion)
 
-[**RxLowIoGetBufferAddress**](https://msdn.microsoft.com/library/windows/hardware/ff554529)
+[**RxLowIoGetBufferAddress**](/windows-hardware/drivers/ddi/lowio/nf-lowio-rxlowiogetbufferaddress)
 
-[**RxMapSystemBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff554549)
+[**RxMapSystemBuffer**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxmapsystembuffer)
 
-[**RX\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff554751)
-
- 
+[**RX\_CONTEXT**](/windows-hardware/drivers/ddi/rxcontx/ns-rxcontx-_rx_context)
 
  
-
-
-
-
-
 

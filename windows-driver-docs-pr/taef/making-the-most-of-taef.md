@@ -48,7 +48,7 @@ So, if you want all or most of the tests in your class to have the same "Priorit
 9        class PremiumBankAccountTests
 10       {
 11           //
-12           // Declare this class to be a test class with an&#39;advanced&#39; declaration
+12           // Declare this class to be a test class with an'advanced' declaration
 13           // Use advanced declaration when you want to set metadata on the class
 14           //
 15           BEGIN_TEST_CLASS(PremiumBankAccountTests) //This metadata applies to all the test in this class
@@ -73,7 +73,7 @@ So, if you want all or most of the tests in your class to have the same "Priorit
 34           TEST_METHOD_SETUP(CreateBankAccount);
 35           TEST_METHOD_CLEANUP(DestroyBankAccount);
 36           //
-37           // Declare test methods with an &#39;advanced&#39; declaration
+37           // Declare test methods with an 'advanced' declaration
 38           // Use advanced declaration when you want to set metadata on the methods
 39           //
 40           BEGIN_TEST_METHOD(DebitTest)

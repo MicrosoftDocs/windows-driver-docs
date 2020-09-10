@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 A display driver must convert input color values for the ARGB and YUV classes of color formats because applications request color-fill and clear operations on surfaces with these formats in a uniform way. However, the driver must directly use the color values from other class formats. For example, applications use A8R8G8B8 as the uniform color value for all surfaces that have at most 8 bits for the alpha (A), red (R), green (G), and blue (B) components; the driver must convert the A8R8G8B8 color to the color value that is specific to the actual ARGB format by copying the bits with the highest significance.
 
-The display driver receives color values when it processes the D3DDP2OP\_CLEAR and D3DDP2OP\_COLORFILL operation codes in its [**D3dDrawPrimitives2**](https://msdn.microsoft.com/library/windows/hardware/ff544704) function.
+The display driver receives color values when it processes the D3DDP2OP\_CLEAR and D3DDP2OP\_COLORFILL operation codes in its [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function.
 
 The display driver can use the following code to convert color values for the ARGB and YUV class formats:
 
@@ -141,13 +141,13 @@ DWORD CPixel::ConvertFromARGB(D3DCOLOR  InputColor,
                     (Red);
         break;
 
-    case MAKEFOURCC(&#39;A&#39;, &#39;Y&#39;, &#39;U&#39;, &#39;V&#39;):
-    case MAKEFOURCC(&#39;N&#39;, &#39;V&#39;, &#39;1&#39;, &#39;2&#39;):
-    case MAKEFOURCC(&#39;Y&#39;, &#39;V&#39;, &#39;1&#39;, &#39;2&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;1&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;2&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;3&#39;):
-    case MAKEFOURCC(&#39;I&#39;, &#39;C&#39;, &#39;M&#39;, &#39;4&#39;):
+    case MAKEFOURCC('A', 'Y', 'U', 'V'):
+    case MAKEFOURCC('N', 'V', '1', '2'):
+    case MAKEFOURCC('Y', 'V', '1', '2'):
+    case MAKEFOURCC('I', 'C', 'M', '1'):
+    case MAKEFOURCC('I', 'C', 'M', '2'):
+    case MAKEFOURCC('I', 'C', 'M', '3'):
+    case MAKEFOURCC('I', 'C', 'M', '4'):
         Output = InputColor;
         break;
     }
@@ -156,10 +156,4 @@ DWORD CPixel::ConvertFromARGB(D3DCOLOR  InputColor,
 ```
 
  
-
- 
-
-
-
-
 

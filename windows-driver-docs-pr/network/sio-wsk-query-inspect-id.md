@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The SIO\_WSK\_QUERY\_INSPECT\_ID socket I/O control operation allows a WSK application to query the inspection identification data for a connection-oriented socket that has been successfully accepted on a listening socket that has conditional accept mode enabled. This socket I/O control operation applies only to connection-oriented sockets that have been accepted on a listening socket that has conditional accept mode enabled.
 
-To query the inspection identification data for a connection-oriented socket, a WSK application calls the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function with the following parameters.
+To query the inspection identification data for a connection-oriented socket, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -68,7 +68,7 @@ To query the inspection identification data for a connection-oriented socket, a 
 
 If a WSK application calls the **WskControlSocket** function to query the inspection identification data for any socket other than a connection-oriented socket that was accepted on a listening socket that has conditional accept mode enabled, the **WskControlSocket** function returns STATUS\_INVALID\_DEVICE\_REQUEST.
 
-For more information about conditionally accepting connections, see [Listening for and Accepting Incoming Connections](https://msdn.microsoft.com/library/windows/hardware/ff557059).
+For more information about conditionally accepting connections, see [Listening for and Accepting Incoming Connections](./listening-for-and-accepting-incoming-connections.md).
 
 Requirements
 ------------
@@ -91,9 +91,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

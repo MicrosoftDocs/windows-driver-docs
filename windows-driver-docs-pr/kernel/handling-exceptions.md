@@ -40,7 +40,7 @@ An *access violation* is an attempt to perform an operation on a page that is no
 
 -   To access a page that is currently resident but dedicated to the use of a system component. For example, user-mode code is not allowed access a page that the kernel is using.
 
-If an operation might cause an exception, the driver should enclose the operation in a **try/except** block. Accesses of locations in user-mode are typical causes of exceptions. For example, the [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879) routine checks that the driver can actually write to a user-mode buffer. If it cannot, the routine raises a STATUS\_ACCESS\_VIOLATION exception. In the following code example, the driver calls **ProbeForWrite** in a **try/except** so that it can handle the resulting exception, if one should occur.
+If an operation might cause an exception, the driver should enclose the operation in a **try/except** block. Accesses of locations in user-mode are typical causes of exceptions. For example, the [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) routine checks that the driver can actually write to a user-mode buffer. If it cannot, the routine raises a STATUS\_ACCESS\_VIOLATION exception. In the following code example, the driver calls **ProbeForWrite** in a **try/except** so that it can handle the resulting exception, if one should occur.
 
 ```cpp
 try {
@@ -59,17 +59,17 @@ try {
 
 Drivers must handle any raised exceptions. An exception that is not handled causes the system to bug check. The driver that causes the exception to be raised must handle it: a lower-level driver cannot rely on a higher-level driver to handle the exception.
 
-Drivers can directly raise an exception, by using the [**ExRaiseAccessViolation**](https://msdn.microsoft.com/library/windows/hardware/ff545509), [**ExRaiseDatatypeMisalignment**](https://msdn.microsoft.com/library/windows/hardware/ff545524), or [**ExRaiseStatus**](https://msdn.microsoft.com/library/windows/hardware/ff545529) routines. The driver must handle any exceptions that these routines raise.
+Drivers can directly raise an exception, by using the [**ExRaiseAccessViolation**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exraiseaccessviolation), [**ExRaiseDatatypeMisalignment**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exraisedatatypemisalignment), or [**ExRaiseStatus**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exraisestatus) routines. The driver must handle any exceptions that these routines raise.
 
 The following is a partial list of routines that, at least in certain situations, can raise an exception:
 
--   [**MmMapLockedPages**](https://msdn.microsoft.com/library/windows/hardware/ff554622)
+-   [**MmMapLockedPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpages)
 
--   [**MmProbeAndLockPages**](https://msdn.microsoft.com/library/windows/hardware/ff554664)
+-   [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages)
 
--   [**ProbeForRead**](https://msdn.microsoft.com/library/windows/hardware/ff559876)
+-   [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread)
 
--   [**ProbeForWrite**](https://msdn.microsoft.com/library/windows/hardware/ff559879)
+-   [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite)
 
 Memory accesses to user-mode buffers can also cause access violations. For more information, see [Errors in Referencing User-Space Addresses](errors-in-referencing-user-space-addresses.md).
 
@@ -78,9 +78,4 @@ Note that structured exception handling is distinct from C++ exceptions. The ker
 For more information about structured exception handling, see the Microsoft Windows SDK, and the Visual Studio documentation.
 
  
-
- 
-
-
-
 

@@ -36,7 +36,7 @@ Usb3kd.dll
 Remarks
 -------
 
-The output the [**!xhci\_capability**](-usb3kd-device-info.md) command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](https://msdn.microsoft.com/library/windows/hardware/hh406256).
+The output the [**!xhci\_capability**](-usb3kd-device-info.md) command is based on the data structures maintained by the USB 3.0 host controller driver (UsbXhci.sys). For more information about the USB 3.0 host controller driver and other drivers in the USB stack, see [USB Driver Stack Architecture](/windows-hardware/drivers/ddi/index).
 
 Examples
 --------
@@ -113,14 +113,7 @@ Now you can pass the address of the device extension to the **!xhci\_capability*
 
 [**!xhci\_dumpall**](-usb3kd-xhci-dumpall.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

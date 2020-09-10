@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Microsoft ASL compiler
 
 
-Version 5.0 of the Microsoft ACPI source language (ASL) compiler supports the features in the Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](https://www.uefi.org/specifications)). The ASL compiler is distributed with the Windows Driver Kit (WDK). Look for the Asl.exe executable file in the Tools\\arm\\ACPIVerify, Tools\\arm64\\ACPIVerify, Tools\\x86\\ACPIVerify, or Tools\\x64\\ACPIVerify directory of your installed WDK.
+Version 5.0 of the Microsoft ACPI source language (ASL) compiler supports the features in the Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](https://uefi.org/specifications)). The ASL compiler is distributed with the Windows Driver Kit (WDK). Look for the Asl.exe executable file in the Tools\\arm\\ACPIVerify, Tools\\arm64\\ACPIVerify, Tools\\x86\\ACPIVerify, or Tools\\x64\\ACPIVerify directory of your installed WDK.
 
 ## Command line options
 
@@ -75,8 +75,7 @@ where AMLFile is the name of the compiled AML file that contains the table you w
 ## Additional resources
 
 -   [ACPICA Documentation](https://acpica.org/documentation/)
--   [ACPI Website](https://www.uefi.org/specifications/)
--   [ACPI Debugging](https://msdn.microsoft.com/library/windows/hardware/ff537808)
--   [Acpi.sys: The Windows ACPI Driver](https://msdn.microsoft.com/library/windows/hardware/ff540493)
--   [Power Management and ACPI](https://msdn.microsoft.com/library/windows/hardware/dn614610)
-
+-   [ACPI Website](https://uefi.org/specifications/)
+-   [ACPI Debugging](../debugger/acpi-debugging.md)
+-   [Acpi.sys: The Windows ACPI Driver](../kernel/acpi-driver.md)
+-   [Power Management and ACPI](/previous-versions/windows/hardware/design/dn614610(v=vs.85))

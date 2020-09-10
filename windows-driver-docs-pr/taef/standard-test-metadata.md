@@ -60,7 +60,7 @@ Identifies files and folders as test dependencies.
 A short description of what the test does.
 
 <span id="_DpiAware_"></span><span id="_dpiaware_"></span><span id="_DPIAWARE_"></span>"DpiAware"  
-When set to "true," TAEF will run your tests in a process marked as DPI-aware, see [High DPI](https://msdn.microsoft.com/library/windows/desktop/dd464646).
+When set to "true," TAEF will run your tests in a process marked as DPI-aware, see [High DPI](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows).
 
 <span id="_ExecutionGroup_"></span><span id="_executiongroup_"></span><span id="_EXECUTIONGROUP_"></span>"ExecutionGroup"  
 A set of consecutive tests within a class that need to be run in order and are blocked if a previous test in the execution group is not run or fails. See [Execution Groups](execution-groups.md) for details.
@@ -169,10 +169,4 @@ The following metadata may be used in the future - please don't use it.
 -   HostType
 
  
-
- 
-
-
-
-
 

@@ -15,7 +15,7 @@ These porting aids use one or both of the following techniques to enable the dri
 
 -   Use a `#define` preprocessor statement to create a globally defined macro name.
 
--   Call an inline function from the [**DriverEntry**](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine.
+-   Call an inline function from the [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine.
 
 For most kernel-mode driver code, these porting aids enable developers to update their drivers with minimal effort.
 
@@ -52,9 +52,4 @@ For most kernel-mode driver code, these porting aids enable developers to update
  
 
  
-
- 
-
-
-
 

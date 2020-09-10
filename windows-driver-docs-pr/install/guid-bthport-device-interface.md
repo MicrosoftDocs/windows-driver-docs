@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_BTHPORT_DEVICE_INTERFACE
 
 
-The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [Bluetooth radios](https://msdn.microsoft.com/library/windows/hardware/ff536596).
+The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](./overview-of-device-interface-classes.md) is defined for [Bluetooth radios](/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)).
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The GUID_BTHPORT_DEVICE_INTERFACE [device interface class](https://msdn.microsof
 Remarks
 -------
 
-Drivers for [Bluetooth radios](https://msdn.microsoft.com/library/windows/hardware/ff536596) register instances of this device interface class to notify the operating system and applications of the presence of Bluetooth radios.
+Drivers for [Bluetooth radios](/previous-versions/windows/hardware/drivers/ff536596(v=vs.85)) register instances of this device interface class to notify the operating system and applications of the presence of Bluetooth radios.
 
 Requirements
 ------------
@@ -71,10 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

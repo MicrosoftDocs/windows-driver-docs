@@ -32,13 +32,7 @@ The properties in this property set return information about a pin. Typically, p
 
 ### See Also
 
-[**BdaCreatePin**](https://msdn.microsoft.com/library/windows/hardware/ff556445), [**BdaInitFilter**](https://msdn.microsoft.com/library/windows/hardware/ff556464), [**BdaPropertyGetPinControl**](https://msdn.microsoft.com/library/windows/hardware/ff556483), [KSMETHODSETID\_BdaDeviceConfiguration](ksmethodsetid-bdadeviceconfiguration.md)
+[**BdaCreatePin**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacreatepin), [**BdaInitFilter**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdainitfilter), [**BdaPropertyGetPinControl**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertygetpincontrol), [KSMETHODSETID\_BdaDeviceConfiguration](ksmethodsetid-bdadeviceconfiguration.md)
 
  
-
- 
-
-
-
-
 

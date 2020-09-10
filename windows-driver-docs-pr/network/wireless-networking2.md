@@ -1,6 +1,6 @@
 ---
-title: Wireless Networking
-description: Wireless Networking
+title: Wireless Networking Topics
+description: Wireless Networking Topics
 ms.assetid: 256d46d1-830c-4e6b-9658-bc2fdeb78455
 keywords:
 - network drivers WDK , wireless networking
@@ -10,8 +10,7 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Wireless Networking
-
+# Wireless Networking Topics
 
 This section includes the following topics:
 

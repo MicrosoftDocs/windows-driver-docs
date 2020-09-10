@@ -31,7 +31,7 @@ ur
 Specifies the memory range that contains the instructions to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the beginning of the memory range to disassemble. Eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor) are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
+Specifies the beginning of the memory range to disassemble. Eight instructions on an x86-based processorare unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
 
@@ -65,7 +65,7 @@ For more information about how to debug BIOS code, see [Debugging BIOS Code](deb
 Remarks
 -------
 
-If you do not specify *Range* or *Address*, the disassembly begins at the current address and extends eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor).
+If you do not specify *Range* or *Address*, the disassembly begins at the current address and extends eight instructions on an x86-based processor.
 
 If you are examining 16-bit real-mode code on an x86-based processor, both the **ur** command and the [**u (Unassemble)**](u--unassemble-.md) command give correct results.
 

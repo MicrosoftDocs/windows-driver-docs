@@ -39,11 +39,11 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-When the class driver receives a [**KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT**](ksproperty-connection-proposedataformat.md) request, it uses this SRB code to determine whether the proposed format is supported. The class driver passes the proposed data format in the **CommandData**.**OpenFormat** member pointed to by *pSrb*. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://msdn.microsoft.com/library/windows/hardware/ff559702) structure.
+When the class driver receives a [**KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT**](ksproperty-connection-proposedataformat.md) request, it uses this SRB code to determine whether the proposed format is supported. The class driver passes the proposed data format in the **CommandData**.**OpenFormat** member pointed to by *pSrb*. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure.
 
 If the minidriver does not support the data format, it sets *pSrb*-&gt;**Status** to STATUS\_NOT\_SUPPORTED. If the minidriver is able to switch the stream to the specified format, it sets this field to STATUS\_SUCCESS.
 
-If the minidriver is able to accept the new format, the class driver at some later time may send the minidriver a format change, which is indicated by the **OptionsFlags** member in a [**KSSTREAM\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff567138) structure.
+If the minidriver is able to accept the new format, the class driver at some later time may send the minidriver a format change, which is indicated by the **OptionsFlags** member in a [**KSSTREAM\_HEADER**](/windows-hardware/drivers/ddi/ks/ns-ks-ksstream_header) structure.
 
 ## See also
 
@@ -53,11 +53,4 @@ If the minidriver is able to accept the new format, the class driver at some lat
 [SRB\_GET\_DATA\_FORMAT](srb-get-data-format.md)
 
  
-
- 
-
-
-
-
-
 

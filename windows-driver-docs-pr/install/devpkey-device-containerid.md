@@ -25,6 +25,12 @@ The DEVPKEY_Device_ContainerId device property is used by the Plug and Play (PnP
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -68,7 +74,7 @@ The DEVPKEY_Device_ContainerId can be used to determine the device container gro
 
  
 
-For more information about ContainerIDs, see [Container IDs](https://msdn.microsoft.com/library/windows/hardware/ff540024).
+For more information about ContainerIDs, see [Container IDs](./container-ids.md).
 
 Requirements
 ------------
@@ -93,16 +99,9 @@ Requirements
 ## See also
 
 
-[Container IDs](https://msdn.microsoft.com/library/windows/hardware/ff540024)
+[Container IDs](./container-ids.md)
 
-[**SetupDiGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551963)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

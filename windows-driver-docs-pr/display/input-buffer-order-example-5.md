@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.**
 
-The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.microsoft.com/library/windows/hardware/ff563927) function to use the device in [Input Buffer Order Example 4](input-buffer-order-example-4.md) to combine the 2 video substreams with a progressive video stream. The VMR still passes the same number of progressive video samples even though those samples are not necessary to produce the output in the destination buffer. The sequence of surfaces in the **lpBufferInfo** array are:
+The VMR initiates a call to the driver's [**DeinterlaceBltEx**](./dxva-deinterlacebobdeviceclass-deinterlacebltex.md) function to use the device in [Input Buffer Order Example 4](input-buffer-order-example-4.md) to combine the 2 video substreams with a progressive video stream. The VMR still passes the same number of progressive video samples even though those samples are not necessary to produce the output in the destination buffer. The sequence of surfaces in the **lpBufferInfo** array are:
 
 <table>
 <colgroup>
@@ -73,13 +73,7 @@ The VMR initiates a call to the driver's [**DeinterlaceBltEx**](https://msdn.mic
 
  
 
-The driver can ignore the surfaces at index 1 and index 3 because they are not required for the deinterlace operation. Progressive samples are marked with the DXVA\_SampleProgressiveFrame flag in the **SampleFormat** member of [**DXVA\_VideoSample2**](https://msdn.microsoft.com/library/windows/hardware/ff564092) structures for the samples. Substream samples are marked with the new DXVA\_SampleSubStream flag.
+The driver can ignore the surfaces at index 1 and index 3 because they are not required for the deinterlace operation. Progressive samples are marked with the DXVA\_SampleProgressiveFrame flag in the **SampleFormat** member of [**DXVA\_VideoSample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample2) structures for the samples. Substream samples are marked with the new DXVA\_SampleSubStream flag.
 
  
-
- 
-
-
-
-
 

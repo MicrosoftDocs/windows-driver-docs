@@ -25,7 +25,7 @@ When specifying a printer command, you use attributes to provide Unidrv with the
 
 -   The escape sequence that causes the hardware to perform the operation, if the operation is implemented in printer hardware.
 
--   The callback identifier and parameters required by the [**IPrintOemUni::CommandCallback**](https://msdn.microsoft.com/library/windows/hardware/ff554216) method, if the operation is implemented in a [rendering plug-in](rendering-plug-ins.md).
+-   The callback identifier and parameters required by the [**IPrintOemUni::CommandCallback**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback) method, if the operation is implemented in a [rendering plug-in](rendering-plug-ins.md).
 
 -   The order in which the command should be sent, relative to other commands.
 
@@ -47,7 +47,7 @@ The following table lists the command attributes in alphabetic order and describ
 <tbody>
 <tr class="odd">
 <td><p><strong><em>CallbackID</strong></p></td>
-<td><p>Positive numeric value, passed to the rendering plug-in&#39;s <a href="https://msdn.microsoft.com/library/windows/hardware/ff554216" data-raw-source="[&lt;strong&gt;IPrintOemUni::CommandCallback&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff554216)"><strong>IPrintOemUni::CommandCallback</strong></a> method as its <em>dCmdCbID</em> argument.</p></td>
+<td><p>Positive numeric value, passed to the rendering plug-in's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback" data-raw-source="[&lt;strong&gt;IPrintOemUni::CommandCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback)"><strong>IPrintOemUni::CommandCallback</strong></a> method as its <em>dCmdCbID</em> argument.</p></td>
 <td><p>Required for <a href="dynamically-generated-printer-commands.md" data-raw-source="[dynamically generated printer commands](dynamically-generated-printer-commands.md)">dynamically generated printer commands</a>. Not valid if <strong></em>Cmd</strong> is specified.</p></td>
 </tr>
 <tr class="even">
@@ -69,7 +69,7 @@ The following table lists the command attributes in alphabetic order and describ
 </tr>
 <tr class="odd">
 <td><p><strong><em>Params</strong></p></td>
-<td><p><a href="lists.md" data-raw-source="[List](lists.md)">List</a> of <a href="standard-variables.md" data-raw-source="[standard variables](standard-variables.md)">standard variables</a>, passed to the rendering plug-in&#39;s IPrintOemUni::CommandCallback method in the EXTRAPARAM structure that is passed as its <em>pdwParams</em> argument.</p></td>
+<td><p><a href="lists.md" data-raw-source="[List](lists.md)">List</a> of <a href="standard-variables.md" data-raw-source="[standard variables](standard-variables.md)">standard variables</a>, passed to the rendering plug-in's IPrintOemUni::CommandCallback method in the EXTRAPARAM structure that is passed as its <em>pdwParams</em> argument.</p></td>
 <td><p>Valid only if <strong></em>CallbackID</strong> is also specified.</p></td>
 </tr>
 </tbody>
@@ -80,9 +80,4 @@ The following table lists the command attributes in alphabetic order and describ
 For examples, see the [sample GPD files](sample-gpd-files.md).
 
  
-
- 
-
-
-
 

@@ -25,13 +25,7 @@ The class driver sends this request to signal the minidriver that it has complet
 
 Once the minidriver completes this request, the class driver can begin to send [**SRB\_OPEN\_STREAM**](srb-open-stream.md) requests.
 
-When this SRB is received by the minidriver, the minidriver should create any necessary Registry entries. For example, a DirectShow filter might register a TV tuner or Crossbar for use with the FilterGraph using the [**StreamClassRegisterFilterWithNoKSPins**](https://msdn.microsoft.com/library/windows/hardware/ff568261) routine.
+When this SRB is received by the minidriver, the minidriver should create any necessary Registry entries. For example, a DirectShow filter might register a TV tuner or Crossbar for use with the FilterGraph using the [**StreamClassRegisterFilterWithNoKSPins**](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassregisterfilterwithnokspins) routine.
 
  
-
- 
-
-
-
-
 

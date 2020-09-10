@@ -16,17 +16,11 @@ ms.localizationpriority: medium
 
 
 
-The [**NDIS\_TIMER\_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff567886) structure defines characteristics of a one-shot or periodic timer. Any NDIS driver can have more than one timer. Each timer object is associated with a different [**NetTimerCallback**](https://msdn.microsoft.com/library/windows/hardware/ff568351) function that is specified in the **TimerFunction** member. NDIS calls the associated *NetTimerCallback* function when the timer expires.
+The [**NDIS\_TIMER\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_timer_characteristics) structure defines characteristics of a one-shot or periodic timer. Any NDIS driver can have more than one timer. Each timer object is associated with a different [**NetTimerCallback**](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_timer_function) function that is specified in the **TimerFunction** member. NDIS calls the associated *NetTimerCallback* function when the timer expires.
 
-To allocate and initialize a timer, your driver should call the [**NdisAllocateTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff561618) function and provide a driver-allocated NDIS\_TIMER\_CHARACTERISTICS structure. The timer does not start until the driver calls the [**NdisSetTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff564563) function.
+To allocate and initialize a timer, your driver should call the [**NdisAllocateTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatetimerobject) function and provide a driver-allocated NDIS\_TIMER\_CHARACTERISTICS structure. The timer does not start until the driver calls the [**NdisSetTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissettimerobject) function.
 
-To free a timer object, your driver should call the [**NdisFreeTimerObject**](https://msdn.microsoft.com/library/windows/hardware/ff562605) function.
-
- 
+To free a timer object, your driver should call the [**NdisFreeTimerObject**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreetimerobject) function.
 
  
-
-
-
-
 

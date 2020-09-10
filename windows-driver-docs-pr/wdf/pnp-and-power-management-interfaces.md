@@ -13,27 +13,21 @@ ms.localizationpriority: medium
 # PnP and Power Management Interfaces
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
-When a new device arrives in the system, the framework calls the [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) method to notify the UMDF driver of the arrival and passes the [**IWDFDriver**](https://msdn.microsoft.com/library/windows/hardware/ff558893) and [**IWDFDeviceInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff556965) interfaces in the call. The driver calls the [**IWDFDriver::CreateDevice**](https://msdn.microsoft.com/library/windows/hardware/ff558899) method to create a framework device object for the device.
+When a new device arrives in the system, the framework calls the [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method to notify the UMDF driver of the arrival and passes the [**IWDFDriver**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdriver) and [**IWDFDeviceInitialize**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize) interfaces in the call. The driver calls the [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice) method to create a framework device object for the device.
 
 When drivers create a framework device object, they can register the following interfaces so that the framework notifies the driver—by calling the methods associated with the interfaces—when Plug and Play (PnP) and power management (PM) events occur.
 
-[**IPnpCallback**](https://msdn.microsoft.com/library/windows/hardware/ff556762)
+[**IPnpCallback**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallback)
 
-[**IPnpCallbackSelfManagedIo**](https://msdn.microsoft.com/library/windows/hardware/ff556776)
+[**IPnpCallbackSelfManagedIo**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackselfmanagedio)
 
-[**IPnpCallbackHardware**](https://msdn.microsoft.com/library/windows/hardware/ff556764)
+[**IPnpCallbackHardware**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware)
 
-[**IPowerPolicyCallbackWakeFromS0**](https://msdn.microsoft.com/library/windows/hardware/ff556815)
+[**IPowerPolicyCallbackWakeFromS0**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipowerpolicycallbackwakefroms0)
 
-[**IPowerPolicyCallbackWakeFromSx**](https://msdn.microsoft.com/library/windows/hardware/ff556825)
-
- 
+[**IPowerPolicyCallbackWakeFromSx**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipowerpolicycallbackwakefromsx)
 
  
-
-
-
-
 

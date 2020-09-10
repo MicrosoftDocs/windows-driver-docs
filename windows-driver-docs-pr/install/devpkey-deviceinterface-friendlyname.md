@@ -25,6 +25,12 @@ The DEVPKEY_DeviceInterface_FriendlyName device property represents the friendly
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -54,57 +60,37 @@ The DEVPKEY_DeviceInterface_FriendlyName device property represents the friendly
 Remarks
 -------
 
-The **FriendlyName** registry value for a device interface class is set by an [**INF AddInterface directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310) that is included in the [**INF *DDInstall*.Interface section**](https://msdn.microsoft.com/library/windows/hardware/ff547335) of the INF file that installs a device interface.
+The **FriendlyName** registry value for a device interface class is set by an [**INF AddInterface directive**](./inf-addinterface-directive.md) that is included in the [**INF *DDInstall*.Interface section**](./inf-ddinstall-interfaces-section.md) of the INF file that installs a device interface.
 
 Windows sets the value of the [**DEVPKEY_NAME**](devpkey-name--device-interface-.md) device property for an interface to the value of DEVPKEY_DeviceInterface_FriendlyName. To identify a device interface in a user interface item, use the value of DEVPKEY_NAME for the device interface instead of the value of DEVPKEY_DeviceInterface_FriendlyName.
 
-You can retrieve the value of the DEVPKEY_DeviceInterface_FriendlyName by calling [**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122) and set it by calling [**SetupDiSetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552158).
+You can retrieve the value of the DEVPKEY_DeviceInterface_FriendlyName by calling [**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) and set it by calling [**SetupDiSetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterface_FriendlyName property key. You can access the value of this property by accessing the corresponding **FriendlyName** registry entry value for the device interface. For information about how to access a registry entry value for a device interface, see [Accessing Device Interface Properties](https://msdn.microsoft.com/library/windows/hardware/ff537740).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterface_FriendlyName property key. You can access the value of this property by accessing the corresponding **FriendlyName** registry entry value for the device interface. For information about how to access a registry entry value for a device interface, see [Accessing Device Interface Properties](./accessing-device-interface-properties.md).
 
-For information about device interfaces, see [Device Interface Classes](https://msdn.microsoft.com/library/windows/hardware/ff541339) and the [**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310).
+For information about device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and the [**INF AddInterface Directive**](./inf-addinterface-directive.md).
 
 Requirements
 ------------
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
 [**DEVPKEY_NAME (Device Interface)**](devpkey-name--device-interface-.md)
 
-[**INF AddInterface Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546310)
+[**INF AddInterface Directive**](./inf-addinterface-directive.md)
 
-[**INF *DDInstall*.Interface Section**](https://msdn.microsoft.com/library/windows/hardware/ff547335)
+[**INF *DDInstall*.Interface Section**](./inf-ddinstall-interfaces-section.md)
 
-[**SetupDiGetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff551122)
+[**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
 
-[**SetupDiOpenDeviceInterfaceRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff552075)
+[**SetupDiOpenDeviceInterfaceRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey)
 
-[**SetupDiSetDeviceInterfaceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff552158)
-
- 
+[**SetupDiSetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw)
 
  
-
-
-
-
-
 

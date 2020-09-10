@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that a problem occurred with an NDIS driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## BUGCODE\_ID\_DRIVER Parameters
 
@@ -67,7 +69,7 @@ The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that
 <td align="left"><p>Address of the packet that is incorrectly included in the packet array</p></td>
 <td align="left"><p>Address of the packet array</p></td>
 <td align="left"><p>Number of packets in the array</p></td>
-<td align="left"><p><strong>Indicating packet not owned by it.</strong> The miniport&#39;s packet array is corrupt.</p></td>
+<td align="left"><p><strong>Indicating packet not owned by it.</strong> The miniport's packet array is corrupt.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Address of the MiniBlock</p></td>
@@ -78,7 +80,7 @@ The BUGCODE\_ID\_DRIVER bug check has a value of 0x000000D2. This indicates that
 </tr>
 <tr class="even">
 <td align="left"><p>Address of the MiniBlock</p></td>
-<td align="left"><p>The MiniBlock&#39;s reference count</p></td>
+<td align="left"><p>The MiniBlock's reference count</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p>0</p></td>
 <td align="left"><p><strong>NdisMUnload: MiniBlock</strong> is getting unloaded but it is still on <strong>NdisMiniDriverList</strong>.</p></td>
@@ -155,6 +157,9 @@ This bug check code only occurs on Windows 2000 and Windows XP. In Windows Serve
 
 On the checked build of Windows, only the **Allocating Shared Memory at Raised IRQL** and **Completing Reset When One is Not Pending** instances of this bug check can occur. All the other instances of bug check 0xD2 are replaced with ASSERTs. See [Breaking Into the Debugger](breaking-into-the-debugger.md) for details.
 
+> [!NOTE]
+> Checked builds were available on older versions of Windows, before Windows 10 version 1803.
+> Use tools such as Driver Verifier and GFlags to check driver code in later versions of Windows.
  
 
  

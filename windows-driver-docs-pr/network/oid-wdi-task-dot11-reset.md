@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DOT11_RESET Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_DOT11\_RESET
@@ -37,8 +38,8 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                                       |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------------|
-| [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn926302) |                                |          | Parameters for the dot11 reset.                   |
-| [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](https://msdn.microsoft.com/library/windows/hardware/dn926257) |                                | X        | The MAC address that should be used for the port. |
+| [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](./wdi-tlv-dot11-reset-parameters.md) |                                |          | Parameters for the dot11 reset.                   |
+| [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](./wdi-tlv-configured-mac-address.md) |                                | X        | The MAC address that should be used for the port. |
 
  
 
@@ -46,6 +47,7 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_DOT11\_RESET\_COMPLETE](ndis-status-wdi-indication-dot11-reset-complete.md)
+
 Requirements
 ------------
 
@@ -71,9 +73,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

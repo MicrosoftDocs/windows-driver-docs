@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 # Parsing Extension Arguments
 
 
-The EngExtCpp extension framework provides methods to aid in parsing the command-line arguments passed to an extension. To take advantage of these methods, the extension must first declare the format of the command-line arguments in the [**EXT\_COMMAND**](https://msdn.microsoft.com/library/windows/hardware/ff544514) macro.
+The EngExtCpp extension framework provides methods to aid in parsing the command-line arguments passed to an extension. To take advantage of these methods, the extension must first declare the format of the command-line arguments in the [**EXT\_COMMAND**](/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command) macro.
 
-To bypass the command-line argument parsing done by the framework and let the extension itself parse the arguments, set the command-line description to `"{{custom}}"` and use the method [**GetRawArgStr**](https://msdn.microsoft.com/library/windows/hardware/ff548226) to get the command-line arguments for parsing.
+To bypass the command-line argument parsing done by the framework and let the extension itself parse the arguments, set the command-line description to `"{{custom}}"` and use the method [**GetRawArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff548226(v=vs.85)) to get the command-line arguments for parsing.
 
 Command-line description strings will automatically be wrapped when printed, to fit the column width of the display. However, newline characters can be embedded in the description strings - using '`\n`' - to start new lines.
 
@@ -73,10 +73,10 @@ The name of the argument. This is the name used in commands and in methods that 
 The type of the argument. This affects how the argument is parsed and how it is retrieved. The *type* parameter can have one of the following values:
 
 <span id="b"></span><span id="B"></span>b  
-Boolean type. The argument is either present or not present. Named Boolean arguments can be retrieved using [**HasArg**](https://msdn.microsoft.com/library/windows/hardware/ff549721).
+Boolean type. The argument is either present or not present. Named Boolean arguments can be retrieved using [**HasArg**](/previous-versions/windows/hardware/previsioning-framework/ff549721(v=vs.85)).
 
 <span id="e_d__s__bits_"></span><span id="E_D__S__BITS_"></span>e\[d\]\[s\]\[bits\]  
-Expression type. The argument has a numeric value. Named expression arguments can be retrieved using [**GetArgU64**](https://msdn.microsoft.com/library/windows/hardware/ff545596) and unnamed expression arguments can be retrieved using [**GetUnnamedArgU64**](https://msdn.microsoft.com/library/windows/hardware/ff549465).
+Expression type. The argument has a numeric value. Named expression arguments can be retrieved using [**GetArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff545596(v=vs.85)) and unnamed expression arguments can be retrieved using [**GetUnnamedArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff549465(v=vs.85)).
 
 <span id="d"></span><span id="D"></span>d  
 The expression is limited to the next space character in the argument string. If this is not present, the expression evaluator will consume characters from the command line until it determines that it reached the end of the expression.
@@ -88,7 +88,7 @@ The value of the expression is signed. Otherwise, the value of the expression is
 The number of bits in the value of the argument. The maximum value for *bits* is 64.
 
 <span id="s"></span><span id="S"></span>s  
-String type. The string is limited to the next space character. Named string arguments can be retrieved using [**GetArgStr**](https://msdn.microsoft.com/library/windows/hardware/ff545586) and unnamed string arguments can be retrieved using [**GetUnnamedArgStr**](https://msdn.microsoft.com/library/windows/hardware/ff549464).
+String type. The string is limited to the next space character. Named string arguments can be retrieved using [**GetArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff545586(v=vs.85)) and unnamed string arguments can be retrieved using [**GetUnnamedArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff549464(v=vs.85)).
 
 <span id="x"></span><span id="X"></span>x  
 String type. The argument is the rest of the command line. The argument is retrieved using **GetArgStr** or **GetUnnamedArgStr**, as with the s string type.
@@ -148,15 +148,9 @@ The following is a list of some ways that arguments are parsed on the command li
 
 Several methods are used by the argument parser to set arguments.
 
-The method [**SetUnnamedArg**](https://msdn.microsoft.com/library/windows/hardware/ff556876) will change the value of an unnamed argument. And, for convenience, the methods [**SetUnnamedArgStr**](https://msdn.microsoft.com/library/windows/hardware/ff556878) and [**SetUnnamedArgU64**](https://msdn.microsoft.com/library/windows/hardware/ff556879) will set unnamed string and expression arguments respectively.
+The method [**SetUnnamedArg**](/previous-versions/windows/hardware/previsioning-framework/ff556876(v=vs.85)) will change the value of an unnamed argument. And, for convenience, the methods [**SetUnnamedArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff556878(v=vs.85)) and [**SetUnnamedArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff556879(v=vs.85)) will set unnamed string and expression arguments respectively.
 
-Similar methods exist for named arguments. [**SetArg**](https://msdn.microsoft.com/library/windows/hardware/ff556614) is used to change the value of any named argument and [**SetArgStr**](https://msdn.microsoft.com/library/windows/hardware/ff556618) and [**SetArgU64**](https://msdn.microsoft.com/library/windows/hardware/ff556622) are used for named string and expression arguments respectively.
-
- 
+Similar methods exist for named arguments. [**SetArg**](/previous-versions/windows/hardware/previsioning-framework/ff556614(v=vs.85)) is used to change the value of any named argument and [**SetArgStr**](/previous-versions/windows/hardware/previsioning-framework/ff556618(v=vs.85)) and [**SetArgU64**](/previous-versions/windows/hardware/previsioning-framework/ff556622(v=vs.85)) are used for named string and expression arguments respectively.
 
  
-
-
-
-
 

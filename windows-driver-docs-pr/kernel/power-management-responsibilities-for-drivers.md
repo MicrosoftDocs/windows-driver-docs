@@ -31,12 +31,7 @@ Drivers that support power management are responsible for:
 
 Not every driver in every device stack performs all of these tasks. Typically, the bus driver reports capabilities, sets flags, and manipulates the physical device, and the device power policy manager (usually the function driver) issues requests to put the device to sleep and to enable wake-up.
 
-With few exceptions, drivers power on and power off their devices, and they enable devices for wake-up in response to power IRPs, that is, IRPs with the major code [**IRP\_MJ\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff550784). Power IRPs can be sent by the power manager and, in some cases, by a driver.
+With few exceptions, drivers power on and power off their devices, and they enable devices for wake-up in response to power IRPs, that is, IRPs with the major code [**IRP\_MJ\_POWER**](./irp-mj-power.md). Power IRPs can be sent by the power manager and, in some cases, by a driver.
 
  
-
- 
-
-
-
 

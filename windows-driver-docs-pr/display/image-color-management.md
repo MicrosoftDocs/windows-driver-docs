@@ -25,17 +25,11 @@ To find out more about Image Color Management and a particular class of output d
 
 [Color Management for Displays](color-management-for-displays.md)
 
-[Color Management for Printers](https://msdn.microsoft.com/library/windows/hardware/ff546064)
+[Color Management for Printers](../print/color-management-for-printers.md)
 
-[Color Management for Still Image Devices](https://msdn.microsoft.com/library/windows/hardware/ff539516)
+[Color Management for Still Image Devices](../image/color-management-for-still-image-devices.md)
 
 For a general discussion about Image Color Management, see the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
-
 

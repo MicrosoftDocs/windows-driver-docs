@@ -2,7 +2,7 @@
 title: SymProxy Automated Installation
 description: These steps along with the Install.cmd script below can help automate the installation of SymProxy to a default IIS installation. 
 ms.assetid: 9E5433D8-D024-4E2B-AEAA-2271C133FD0E
-ms.date: 11/28/2017
+ms.date: 03/12/2019
 ms.localizationpriority: medium
 ---
 
@@ -109,6 +109,7 @@ rem Add * to the MIME Types of the 'Default Web Site'
             <clear />
         </system.webServer-staticContent>
     </CONFIG>
+</appcmd>    
 ```
 
 ## <span id="Testing_the_SymProxy_Installation_"></span><span id="testing_the_symproxy_installation_"></span><span id="TESTING_THE_SYMPROXY_INSTALLATION_"></span>Testing the SymProxy Installation

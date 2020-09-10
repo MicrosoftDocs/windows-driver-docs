@@ -13,14 +13,19 @@ ms.localizationpriority: medium
 
 The PnP manager uses this I/O request packet (IRP) to notify bus drivers that a device object exists and that it has been fully enumerated by the plug and play manager.
 
+## Value
+
+0x19
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
-The PnP manager sends this IRP just before user mode is notified with GUID\_DEVICE\_ENUMERATED. This IRP allows drivers to provide a preprocess routine for IRP\_MN\_DEVICE\_ENUMERATED, such as filling in additional device properties. This IRP primarily allows drivers to set device properties for the physical device object (PDO) by using [**IoSetDevicePropertyData**](https://msdn.microsoft.com/library/windows/hardware/ff549704).
+The PnP manager sends this IRP just before user mode is notified with GUID\_DEVICE\_ENUMERATED. This IRP allows drivers to provide a preprocess routine for IRP\_MN\_DEVICE\_ENUMERATED, such as filling in additional device properties. This IRP primarily allows drivers to set device properties for the physical device object (PDO) by using [**IoSetDevicePropertyData**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdevicepropertydata).
 
 ## Input Parameters
 
@@ -35,7 +40,7 @@ None
 ## I/O Status Block
 
 
-A driver that handles this IRP sets [Irp-&gt;IoStatus.Status](https://msdn.microsoft.com/library/windows/hardware/ff551825) to STATUS\_SUCCESS or an appropriate error status.
+A driver that handles this IRP sets [Irp-&gt;IoStatus.Status](./i-o-status-blocks.md) to STATUS\_SUCCESS or an appropriate error status.
 
 Operation
 ---------
@@ -73,9 +78,4 @@ Requirements
 [Plug and Play Minor IRPs](plug-and-play-minor-irps.md)
 
  
-
- 
-
-
-
 

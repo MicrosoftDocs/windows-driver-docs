@@ -16,13 +16,7 @@ The ISCSI\_DiscoveredTarget WMI class provides information that is related to a 
 
 This class is unpublished and is defined in *Discover.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget**](https://msdn.microsoft.com/library/windows/hardware/ff561501) data structure
+When the WMI tool suite compiles this class definition, it produces the [**ISCSI\_DiscoveredTarget**](/windows-hardware/drivers/ddi/iscsifnd/ns-iscsifnd-_iscsi_discoveredtarget) data structure
 
  
-
- 
-
-
-
-
 

@@ -22,7 +22,7 @@ devcon dp_add C:\WinDDK\5322\src\general\toaster\inf\i386\toaster.inf
 In response, DevCon reports that it added the Toaster INF file to the driver store and named it Oem2.inf.
 
 ```
-Driver Package &#39;oem2.inf&#39; added.
+Driver Package 'oem2.inf' added.
 ```
 
 Before copying it to the driver store, Windows compares the binary version of the INF file to the binary versions of the INF files in the driver store to be sure that it is not adding a duplicate file. For example, if you repeat the command to add Toaster.inf to the driver store, DevCon does not create a new OEM\*.inf file. It just reports the name of the existing file, as shown in the following DevCon output.
@@ -30,11 +30,11 @@ Before copying it to the driver store, Windows compares the binary version of th
 ```
 devcon dp_add C:\WinDDK\5322\src\general\toaste
 r\inf\i386\toaster.inf
-Driver Package &#39;oem2.inf&#39; added.
+Driver Package 'oem2.inf' added.
 
 devcon dp_add C:\WinDDK\5322\src\general\toaste
 r\inf\i386\toaster.inf
-Driver Package &#39;oem2.inf&#39; added.
+Driver Package 'oem2.inf' added.
 ```
 
 To remove the driver package for the Toaster driver from the driver store, you must use the OEM\*.inf file name for the driver. To find the file name for the driver, use the [**DevCon Dp\_enum**](devcon-dp-enum.md) command.
@@ -68,7 +68,7 @@ devcon dp_delete oem2.inf
 In response, DevCon displays a message that indicates the command succeeded:
 
 ```
-Driver Package &#39;oem2.inf&#39; deleted.
+Driver Package 'oem2.inf' deleted.
 ```
 
 The OEM\*.inf file name is required in the [**DevCon Dp\_delete**](devcon-dp-delete.md) command. If you try to use the original name of the INF file, the command fails, as shown in the following DevCon output.

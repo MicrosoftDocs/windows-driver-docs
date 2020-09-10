@@ -1,64 +1,87 @@
 - name: "Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)"
   href: index.md
 - name: "Download Debugging Tools for Windows - WinDbg"
-  href: debugger-download-tools.md
+# Auto-expanded node
   items: 
+  - name: "Download Debugging Tools for Windows - WinDbg"
+    href: debugger-download-tools.md
   - name: "Download  Windows Symbol Packages for Debugging"
     href: debugger-download-symbols.md
 - name: "Getting Started with Windows Debugging"
-  href: getting-started-with-windows-debugging.md
+# Auto-expanded node
   items: 
+  - name: "Getting Started with Windows Debugging"
+    href: getting-started-with-windows-debugging.md
   - name: "Getting Started with WinDbg (User-Mode)"
     href: getting-started-with-windbg.md
   - name: "Getting Started with WinDbg (Kernel-Mode)"
     href: getting-started-with-windbg--kernel-mode-.md
-  - name: "Choosing the 32-Bit or 64-Bit Debugging Tools"
-    href: choosing-a-32-bit-or-64-bit-debugger-package.md
   - name: "Debugging Environments"
     href: debuggers-in-the-debugging-tools-for-windows-package.md
+  - name: "Choosing the 32-Bit or 64-Bit Debugging Tools"
+    href: choosing-a-32-bit-or-64-bit-debugger-package.md
   - name: "Setting Up Debugging (Kernel-Mode and User-Mode)"
-    href: getting-set-up-for-debugging.md
+# Auto-expanded node
     items: 
+    - name: "Setting Up Debugging (Kernel-Mode and User-Mode)"
+      href: getting-set-up-for-debugging.md
     - name: "Setting Up Kernel-Mode Debugging"
-      href: setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md
+# Auto-expanded node
       items: 
+      - name: "Setting Up Kernel-Mode Debugging"
+        href: setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md
       - name: "Setting Up KDNET Network Kernel Debugging Automatically"
         href: setting-up-a-network-debugging-connection-automatically.md
       - name: "Setting Up KDNET Network Kernel Debugging Manually"
         href: setting-up-a-network-debugging-connection.md
-      - name: "Setting Up Kernel-Mode Debugging over a 1394 Cable Manually"
-        href: setting-up-a-1394-cable-connection.md
+      - name: "Setting Up Network Debugging of a Virtual Machine Host - KDNET"
+        href: setting-up-network-debugging-of-a-virtual-machine-host.md
+      - name: "Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a COM Port"
+        href: attaching-to-a-virtual-machine--kernel-mode-.md
+      - name: "Setting Up Local Kernel Debugging of a Single Computer Manually"
+        href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
+      - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
+        href: setting-up-a-null-modem-cable-connection.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually"
         href: setting-up-a-usb-3-0-debug-cable-connection.md
       - name: "Setting Up Kernel-Mode Debugging over a USB 2.0 Cable Manually"
         href: setting-up-a-usb-2-0-debug-cable-connection.md
-      - name: "Setting Up Kernel-Mode Debugging over a Serial Cable Manually"
-        href: setting-up-a-null-modem-cable-connection.md
-      - name: "Setting Up Kernel-Mode Debugging using Serial over USB Manually"
-        href: setting-up-kernel-mode-debugging-using-serial-over-usb-manually-.md
-      - name: "Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a COM Port"
-        href: attaching-to-a-virtual-machine--kernel-mode-.md
-      - name: "Setting Up Network Debugging of a Virtual Machine Host - KDNET"
-        href: setting-up-network-debugging-of-a-virtual-machine-host.md
-      - name: "Setting Up Local Kernel Debugging of a Single Computer Manually"
-        href: setting-up-local-kernel-debugging-of-a-single-computer-manually.md
+      - name: "Setting Up Kernel-Mode Debugging over a 1394 Cable Manually"
+        href: setting-up-a-1394-cable-connection.md
     - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10"
       href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
-    - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
-      href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
+    - name: "Supported Ethernet NICs for Network Kernel Debugging in Previous Versions of Windows"
+# Auto-expanded node
+      items: 
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1909"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1909.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1903"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1903.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1809"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1809.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1803"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1803.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1709"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1709.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 10 - 1703"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-10-1703.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md
+      - name: "Supported Ethernet NICs for Network Kernel Debugging in Windows 8"
+        href: supported-ethernet-nics-for-network-kernel-debugging-in-windows-8.md
     - name: "Configuring tools.ini"
       href: configuring-tools-ini.md
     - name: "Using KDbgCtrl"
       href: using-kdbgctrl.md
-  - name: "Debug Universal Drivers - Step by Step Lab (Echo Kernel-Mode)"
+  - name: "Debug Windows Drivers - Step by Step Lab (Echo Kernel-Mode)"
     href: debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md
   - name: "Debug Drivers - Step by Step Lab (Sysvad Kernel-Mode)"
     href: debug-universal-drivers--kernel-mode-.md
-- name: "Debugging Using WinDbg Preview"
-  href: debugging-using-windbg-preview.md
+- name: "WinDbg Preview"
+# Auto-expanded node
   items: 
+  - name: "Debugging Using WinDbg Preview"
+    href: debugging-using-windbg-preview.md
   - name: "WinDbg Preview - What's New"
     href: windbg-what-is-new-preview.md
   - name: "WinDbg Preview - Installation"
@@ -73,45 +96,64 @@
     href: windbg-user-mode-preview.md
   - name: "WinDbg Preview - Start a kernel mode session"
     href: windbg-kernel-mode-preview.md
+  - name: "WinDbg Preview - Start a remote, process or dump file session"
+    href: windbg-remote-preview.md
   - name: "WinDbg Preview – File menu"
     href: windbg-file-preview.md
   - name: "WinDbg Preview – Home menu"
     href: windbg-home-preview.md
   - name: "WinDbg Preview – View menu"
     href: windbg-view-preview.md
-  - name: "WinDbg Preview – Breakpoints"
+  - name: "WinDbg Preview – Breakpoints menu"
     href: windbg-breakpoints-preview.md
-  - name: "WinDbg Preview – Data Model"
+  - name: "WinDbg Preview – Time Travel menu"
+    href: windbg-timetravel-preview.md
+  - name: "WinDbg Preview – Data Model menu"
     href: windbg-data-model-preview.md
-  - name: "WinDbg Preview – Scripting"
+  - name: "WinDbg Preview – Scripting menu"
     href: windbg-scripting-preview.md
-  - name: "Time Travel Debugging - Overview"
-    href: time-travel-debugging-overview.md
+  - name: "WinDbg Preview – Notes, Command, Memory and Source menus"
+    href: windbg-notes-etc-preview.md
+  - name: "WinDbg Preview Basics"
+# Auto-expanded node
     items: 
-    - name: "Time Travel Debugging - Recording"
+    - name: "WinDbg Preview Basics"
+      href: windbg-preview-basics.md
+  - name: "Time Travel Debugging"
+# Auto-expanded node
+    items: 
+    - name: "Time Travel Debugging - Overview"
+      href: time-travel-debugging-overview.md
+    - name: "Time Travel Debugging - Record a trace"
       href: time-travel-debugging-record.md
     - name: "Time Travel Debugging - Replay a trace"
       href: time-travel-debugging-replay.md
+    - name: "WinDbg Preview - Timelines"
+      href: windbg-timeline-preview.md
     - name: "Time Travel Debugging - Working with trace files"
       href: time-travel-debugging-trace-file-information.md
     - name: "Time Travel Debugging - Troubleshooting"
       href: time-travel-debugging-troubleshooting.md
     - name: "Time Travel Debugging - Navigation commands"
       href: time-travel-debugging-navigation-commands.md
-    - name: "Time Travel Debugging - Extension Commands"
-      href: time-travel-debugging-extension-commands.md
+    - name: "Time Travel Debugging - Commands"
+# Auto-expanded node
       items: 
+      - name: "Time Travel Debugging - Overview of Extension Commands"
+        href: time-travel-debugging-extension-commands.md
       - name: "Time Travel Debugging - !tt (time travel)"
         href: time-travel-debugging-extension-tt.md
       - name: "Time Travel Debugging - !index (time travel)"
         href: time-travel-debugging-extension-index.md
       - name: "Time Travel Debugging - !positions (time travel)"
         href: time-travel-debugging-extension-positions.md
-    - name: "Time Travel Debugging - Sample App Walkthrough"
+    - name: "Time Travel Debugging - Walkthrough"
       href: time-travel-debugging-walkthrough.md
-    - name: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
-      href: time-travel-debugging-object-model.md
+    - name: "Time Travel Debugging - Time Travel Debugging objects"
+# Auto-expanded node
       items: 
+      - name: "Time Travel Debugging - Introduction to Time Travel Debugging objects"
+        href: time-travel-debugging-object-model.md
       - name: "Time Travel Debugging - Calls objects"
         href: time-travel-debugging-calls-objects.md
       - name: "Time Travel Debugging - Heap objects"
@@ -128,23 +170,31 @@
         href: time-travel-debugging-range-objects.md
       - name: "Time Travel Debugging - Thread objects"
         href: time-travel-debugging-thread-objects.md
+      - name: "Time Travel Debugging - Module objects"
+        href: time-travel-debugging-module-objects.md
+      - name: "Time Travel Debugging - Collection objects"
+        href: time-travel-debugging-collection-objects.md
     - name: "Time Travel Debugging - JavaScript Automation"
       href: time-travel-debugging-javascript-automation.md
 - name: "Debugging Resources"
-  href: debugging-resources.md
+# Auto-expanded node
   items: 
+  - name: "Debugging Resources"
+    href: debugging-resources.md
   - name: "Debugging Tools for Windows: New for Windows 10"
     href: debugging-tools-for-windows--new-for-windows-10.md
   - name: "Tools Included in Debugging Tools for Windows"
-    href: extra-tools.md
+# Auto-expanded node
     items: 
-    - name: "ADPlus"
-      href: adplus.md
+    - name: "Tools Included in Debugging Tools for Windows"
+      href: extra-tools.md
     - name: "DumpChk"
       href: dumpchk.md
     - name: "GFlags"
-      href: gflags.md
+# Auto-expanded node
       items: 
+      - name: "GFlags"
+        href: gflags.md
       - name: "GFlags Overview"
         href: gflags-overview.md
       - name: "GFlags Details"
@@ -158,8 +208,10 @@
       - name: "Monitoring Silent Process Exit"
         href: registry-entries-for-silent-process-exit.md
       - name: "Global Flags Dialog Box"
-        href: global-flags-dialog-box.md
+# Auto-expanded node
         items: 
+        - name: "Global Flags Dialog Box"
+          href: global-flags-dialog-box.md
         - name: "Opening the Dialog Box"
           href: opening-the-dialog-box.md
         - name: "Setting and Clearing System-wide Flags"
@@ -175,8 +227,10 @@
         - name: "Running a Program in a Debugger"
           href: running-a-program-in-a-debugger.md
         - name: "Configuring Special Pool"
-          href: configuring-special-pool.md
+# Auto-expanded node
           items: 
+          - name: "Configuring Special Pool"
+            href: configuring-special-pool.md
           - name: "Requesting Special Pool by Pool Tag"
             href: requesting-special-pool-by-pool-tag.md
           - name: "Requesting Special Pool by Allocation Size"
@@ -188,8 +242,10 @@
         - name: "Configuring Object Reference Tracing"
           href: configuring-object-reference-tracing.md
       - name: "Global Flag Reference"
-        href: global-flag-reference.md
+# Auto-expanded node
         items: 
+        - name: "Global Flag Reference"
+          href: global-flag-reference.md
         - name: "Buffer DbgPrint Output"
           href: buffer-dbgprint-output.md
         - name: "Create kernel mode stack trace database"
@@ -261,8 +317,10 @@
         - name: "Stop on unhandled user-mode exception"
           href: stop-on-unhandled-user-mode-exception.md
       - name: "GFlags Examples"
-        href: gflags-examples.md
+# Auto-expanded node
         items: 
+        - name: "GFlags Examples"
+          href: gflags-examples.md
         - name: "Example 1:  Displaying Global Flags"
           href: example-1---displaying-global-flags.md
         - name: "Example 2:  Setting a Flag by Using a Flag Abbreviation"
@@ -296,11 +354,15 @@
     - name: "Kill Tool"
       href: kill-tool.md
     - name: "Logger and LogViewer"
-      href: logger-and-logviewer.md
+# Auto-expanded node
       items: 
+      - name: "Logger and LogViewer"
+        href: logger-and-logviewer.md
       - name: "Logger"
-        href: logger.md
+# Auto-expanded node
         items: 
+        - name: "Logger"
+          href: logger.md
         - name: "Using the Debugger and Logexts.dll"
           href: using-the-debugger-and-logexts-dll.md
         - name: "Using Logger.exe"
@@ -308,8 +370,10 @@
         - name: "Logger Restrictions and Limitations"
           href: logger-restrictions-and-limitations.md
       - name: "LogViewer"
-        href: logviewer.md
+# Auto-expanded node
         items: 
+        - name: "LogViewer"
+          href: logviewer.md
         - name: "Reading the LogViewer Display"
           href: reading-the-logviewer-display.md
         - name: "Filtering the LogViewer Function List"
@@ -317,8 +381,10 @@
         - name: "Exporting LogViewer Files to Text"
           href: exporting-logviewer-files-to-text.md
       - name: "The Logger Manifest"
-        href: the-logger-manifest.md
+# Auto-expanded node
         items: 
+        - name: "The Logger Manifest"
+          href: the-logger-manifest.md
         - name: "Overview of the Logging Manifest"
           href: overview-of-the-logging-manifest.md
         - name: "Manifest File Placement"
@@ -328,13 +394,17 @@
     - name: "PLMDebug"
       href: plmdebug.md
     - name: "Remote Tool"
-      href: remote-tool.md
+# Auto-expanded node
       items: 
+      - name: "Remote Tool"
+        href: remote-tool.md
       - name: "Remote Tool Concepts"
         href: remote-tool-concepts.md
       - name: "Remote Tool Commands"
-        href: remote-tool-commands.md
+# Auto-expanded node
         items: 
+        - name: "Remote Tool Commands"
+          href: remote-tool-commands.md
         - name: "Remote Server Syntax"
           href: remote-server-syntax.md
         - name: "Remote Client Syntax"
@@ -346,20 +416,26 @@
       - name: "Remote Tool Examples"
         href: remote-tool-examples.md
     - name: "TList"
-      href: tlist.md
+# Auto-expanded node
       items: 
+      - name: "TList"
+        href: tlist.md
       - name: "TList Commands"
         href: tlist-commands.md
       - name: "TList Examples"
         href: tlist-examples.md
     - name: "UMDH"
-      href: umdh.md
+# Auto-expanded node
       items: 
+      - name: "UMDH"
+        href: umdh.md
       - name: "Preparing to Use UMDH"
         href: preparing-to-use-umdh.md
       - name: "UMDH Commands"
-        href: umdh-commands.md
+# Auto-expanded node
         items: 
+        - name: "UMDH Commands"
+          href: umdh-commands.md
         - name: "Analyze a Running Process"
           href: analyze-a-running-process.md
         - name: "Analyze UMDH Logs"
@@ -371,27 +447,33 @@
     - name: "USBView"
       href: usbview.md
   - name: "Tools Related to Debugging Tools for Windows"
-    href: tools-related-to-debugging-tools-for-windows.md
+# Auto-expanded node
     items: 
-    - name: "Application Verifier"
-      href: application-verifier.md
+    - name: "Tools Related to Debugging Tools for Windows"
+      href: tools-related-to-debugging-tools-for-windows.md
     - name: "Windows Error Reporting"
       href: windows-error-reporting.md
   - name: "Source Code"
-    href: source-code.md
+# Auto-expanded node
     items: 
+    - name: "Source Code"
+      href: source-code.md
     - name: "Source Path"
       href: source-path.md
     - name: "Using a Source Server"
       href: using-a-source-server.md
     - name: "SrcSrv"
-      href: srcsrv.md
+# Auto-expanded node
       items: 
+      - name: "SrcSrv"
+        href: srcsrv.md
       - name: "Using SrcSrv"
         href: using-srcsrv.md
       - name: "Source Indexing"
-        href: source-indexing.md
+# Auto-expanded node
         items: 
+        - name: "Source Indexing"
+          href: source-indexing.md
         - name: "The Srcsrv.ini File"
           href: the-srcsrv-ini-file.md
         - name: "The Ssindex.cmd Script"
@@ -403,8 +485,10 @@
         - name: "The VSSDump Tool"
           href: the-vssdump-tool.md
       - name: "Source Control Systems"
-        href: source-control-systems.md
+# Auto-expanded node
         items: 
+        - name: "Source Control Systems"
+          href: source-control-systems.md
         - name: "Using Visual SourceSafe"
           href: using-visual-sourcesafe.md
         - name: "Debugging with Visual SourceSafe"
@@ -412,8 +496,10 @@
         - name: "Using CVS"
           href: using-cvs.md
         - name: "Using Other Source Control Systems"
-          href: using-other-source-control-systems.md
+# Auto-expanded node
           items: 
+          - name: "Using Other Source Control Systems"
+            href: using-other-source-control-systems.md
           - name: "Creating Your Own Provider Module"
             href: creating-your-own-provider-module.md
           - name: "Creating Your Own Source Control System"
@@ -423,8 +509,10 @@
           - name: "Language Specification 2"
             href: language-specification-2.md
       - name: "HTTP Sites and UNC Shares"
-        href: http-sites-and-unc-shares.md
+# Auto-expanded node
         items: 
+        - name: "HTTP Sites and UNC Shares"
+          href: http-sites-and-unc-shares.md
         - name: "Setting Up the Web Site"
           href: setting-up-the-web-site.md
         - name: "Extracting Source Files"
@@ -436,13 +524,17 @@
         - name: "Using HTTP Sites and UNC Shares in Conjuction with Regular Version Control"
           href: using-http-sites-and-unc-shares-in-conjuction-with-regular-version-con.md
   - name: "Security Considerations"
-    href: security-considerations.md
+# Auto-expanded node
     items: 
+    - name: "Security Considerations"
+      href: security-considerations.md
     - name: "Debug Privilege"
       href: debug-privilege.md
     - name: "Security Vulnerabilities"
-      href: security-vulnerabilities.md
+# Auto-expanded node
       items: 
+      - name: "Security Vulnerabilities"
+        href: security-vulnerabilities.md
       - name: "Security During Kernel-Mode Debugging"
         href: security-during-kernel-mode-debugging.md
       - name: "Security During User-Mode Debugging"
@@ -452,18 +544,24 @@
       - name: "Security During Remote Debugging"
         href: security-during-remote-debugging.md
     - name: "Secure Mode"
-      href: secure-mode.md
+# Auto-expanded node
       items: 
+      - name: "Secure Mode"
+        href: secure-mode.md
       - name: "Features of Secure Mode"
         href: features-of-secure-mode.md
       - name: "Activating Secure Mode"
         href: activating-secure-mode.md
   - name: "Processor Architecture"
-    href: processor-architecture.md
+# Auto-expanded node
     items: 
+    - name: "Processor Architecture"
+      href: processor-architecture.md
     - name: "The x86 Processor"
-      href: the-x86-processor.md
+# Auto-expanded node
       items: 
+      - name: "The x86 Processor"
+        href: the-x86-processor.md
       - name: "x86 Architecture"
         href: x86-architecture.md
       - name: "x86 Instructions"
@@ -471,8 +569,10 @@
       - name: "Annotated x86 Disassembly"
         href: annotated-x86-disassembly.md
     - name: "The x64 Processor"
-      href: the-x64-processor.md
+# Auto-expanded node
       items: 
+      - name: "The x64 Processor"
+        href: the-x64-processor.md
       - name: "x64 Architecture"
         href: x64-architecture.md
       - name: "x64 Instructions"
@@ -480,13 +580,17 @@
       - name: "Annotated x64 Disassembly"
         href: annotated-x64-disassembly.md
   - name: "Debugger Engine and Extension APIs"
-    href: debugger-engine-and-extension-apis.md
+# Auto-expanded node
     items: 
+    - name: "Debugger Engine and Extension APIs"
+      href: debugger-engine-and-extension-apis.md
     - name: "Debugger Engine Introduction"
       href: introduction.md
     - name: "Debugger Engine Overview"
-      href: debugger-engine-overview.md
+# Auto-expanded node
       items: 
+      - name: "Debugger Engine Overview"
+        href: debugger-engine-overview.md
       - name: "Debugging Session and Execution Model"
         href: debugging-session-and-execution-model.md
       - name: "Client Objects"
@@ -508,14 +612,20 @@
       - name: "Threads and Processes"
         href: threads-and-processes.md
     - name: "Using the Debugger Engine API"
-      href: using-the-debugger-engine-api.md
+# Auto-expanded node
       items: 
+      - name: "Using the Debugger Engine API"
+        href: using-the-debugger-engine-api.md
       - name: "Debugger Engine API Overview"
-        href: debugger-engine-api-overview.md
+# Auto-expanded node
         items: 
+        - name: "Debugger Engine API Overview"
+          href: debugger-engine-api-overview.md
         - name: "Interacting with the Engine"
-          href: interacting-with-the-engine.md
+# Auto-expanded node
           items: 
+          - name: "Interacting with the Engine"
+            href: interacting-with-the-engine.md
           - name: "Using Client Objects"
             href: using-client-objects.md
           - name: "Using Callback Objects"
@@ -523,22 +633,28 @@
         - name: "Using Input and Output"
           href: using-input-and-output.md
         - name: "Monitoring Events"
-          href: monitoring-events.md
+# Auto-expanded node
           items: 
+          - name: "Monitoring Events"
+            href: monitoring-events.md
           - name: "Event Filters"
             href: event-filters.md
           - name: "Event Information"
             href: event-information.md
         - name: "Using Breakpoints"
-          href: using-breakpoints2.md
+# Auto-expanded node
           items: 
+          - name: "Using Breakpoints"
+            href: using-breakpoints2.md
           - name: "Setting Breakpoints"
             href: setting-breakpoints.md
           - name: "Controlling Breakpoint Flags and Parameters"
             href: controlling-breakpoint-flags-and-parameters.md
         - name: "Memory Access"
-          href: memory-access.md
+# Auto-expanded node
           items: 
+          - name: "Memory Access"
+            href: memory-access.md
           - name: "Virtual and Physical Memory"
             href: virtual-and-physical-memory.md
           - name: "Registers"
@@ -550,8 +666,10 @@
         - name: "Controlling Threads and Processes"
           href: controlling-threads-and-processes.md
         - name: "Using Symbols"
-          href: using-symbols.md
+# Auto-expanded node
           items: 
+          - name: "Using Symbols"
+            href: using-symbols.md
           - name: "Modules"
             href: modules.md
           - name: "Types"
@@ -561,8 +679,10 @@
         - name: "Using Source Files"
           href: using-source-files.md
         - name: "Connecting to Targets"
-          href: connecting-to-targets.md
+# Auto-expanded node
           items: 
+          - name: "Connecting to Targets"
+            href: connecting-to-targets.md
           - name: "Live User-Mode Targets"
             href: live-user-mode-targets.md
           - name: "Live Kernel-Mode Targets"
@@ -580,11 +700,15 @@
         - name: "Assembling and Disassembling Instructions"
           href: assembling-and-disassembling-instructions.md
     - name: "Writing DbgEng Extensions"
-      href: writing-dbgeng-extensions.md
+# Auto-expanded node
       items: 
+      - name: "Writing DbgEng Extensions"
+        href: writing-dbgeng-extensions.md
       - name: "DbgEng Extension Design Guide"
-        href: dbgeng-extension-design-guide.md
+# Auto-expanded node
         items: 
+        - name: "DbgEng Extension Design Guide"
+          href: dbgeng-extension-design-guide.md
         - name: "Anatomy of a DbgEng Extension DLL"
           href: anatomy-of-a-dbgeng-extension-dll.md
         - name: "Using Clients and the Engine"
@@ -594,11 +718,15 @@
         - name: "Building DbgEng Extensions"
           href: building-dbgeng-extensions.md
     - name: "EngExtCpp Extensions"
-      href: engextcpp-extensions.md
+# Auto-expanded node
       items: 
+      - name: "EngExtCpp Extensions"
+        href: engextcpp-extensions.md
       - name: "EngExtCpp Extension Design Guide"
-        href: engextcpp-extension-design-guide.md
+# Auto-expanded node
         items: 
+        - name: "EngExtCpp Extension Design Guide"
+          href: engextcpp-extension-design-guide.md
         - name: "EngExtCpp Extension Libraries"
           href: engextcpp-extension-libraries.md
         - name: "Client Objects and the Engine"
@@ -612,11 +740,15 @@
         - name: "Typed Data"
           href: typed-data.md
     - name: "Writing WdbgExts Extensions"
-      href: writing-wdbgexts-extensions.md
+# Auto-expanded node
       items: 
+      - name: "Writing WdbgExts Extensions"
+        href: writing-wdbgexts-extensions.md
       - name: "WdbgExts Extension Design Guide"
-        href: wdbgexts-extension-design-guide.md
+# Auto-expanded node
         items: 
+        - name: "WdbgExts Extension Design Guide"
+          href: wdbgexts-extension-design-guide.md
         - name: "WdbgExts Extension API Overview"
           href: wdbgexts-extension-api-overview.md
         - name: "32-Bit Pointers and 64-Bit Pointers"
@@ -626,8 +758,10 @@
         - name: "Using the DECLARE_API Macro"
           href: using-the-declare-api-macro.md
         - name: "Writing WdbgExts Extension Code"
-          href: writing-wdbgexts-extension-code.md
+# Auto-expanded node
           items: 
+          - name: "Writing WdbgExts Extension Code"
+            href: writing-wdbgexts-extension-code.md
           - name: "WdbgExts Input and Output"
             href: wdbgexts-input-and-output.md
           - name: "WdbgExts Memory Access"
@@ -641,8 +775,10 @@
         - name: "Building WdbgExts Extensions"
           href: building-wdbgexts-extensions.md
     - name: "Writing Custom Analysis Debugger Extensions"
-      href: writing-custom-analysis-debugger-extensions.md
+# Auto-expanded node
       items: 
+      - name: "Writing Custom Analysis Debugger Extensions"
+        href: writing-custom-analysis-debugger-extensions.md
       - name: "Writing an Analysis Extension Plug-in to Extend !analyze"
         href: writing-an-analysis-extension-to-extend--analyze.md
       - name: "Metadata Files for Analysis Extension Plug-ins"
@@ -654,15 +790,19 @@
   - name: "Debug Engine Interfaces"
     href: client-com-interfaces.md
   - name: "Debugger Engine Reference"
-    href: debugger-engine-reference.md
+# Auto-expanded node
     items: 
+    - name: "Debugger Engine Reference"
+      href: debugger-engine-reference.md
     - name: "DebugBaseEventCallbacks"
       href: debugbaseeventcallbacks.md
     - name: "DebugBaseEventCallbacksWide"
       href: debugbaseeventcallbackswide.md
     - name: "Debug API Constants"
-      href: debug-api-constants.md
+# Auto-expanded node
       items: 
+      - name: "Debug API Constants"
+        href: debug-api-constants.md
       - name: "DBG_ASMOPT_XXX"
         href: debug-asmopt-xxx.md
       - name: "DBG_ATTACH_XXX"
@@ -696,8 +836,10 @@
     - name: "HRESULT Values"
       href: hresult-values.md
     - name: "Request"
-      href: request.md
+# Auto-expanded node
       items: 
+      - name: "Request"
+        href: request.md
       - name: "DEBUG_REQUEST_SOURCE_PATH_HAS_SOURCE_SERVER"
         href: debug-request-source-path-has-source-server.md
       - name: "DEBUG_REQUEST_TARGET_EXCEPTION_CONTEXT"
@@ -721,8 +863,10 @@
       - name: "DEBUG_REQUEST_READ_CAPTURED_EVENT_CODE_STREAM"
         href: debug-request-read-captured-event-code-stream.md
       - name: "DEBUG_REQUEST_EXT_TYPED_DATA_ANSI"
-        href: debug-request-ext-typed-data-ansi.md
+# Auto-expanded node
         items: 
+        - name: "DEBUG_REQUEST_EXT_TYPED_DATA_ANSI"
+          href: debug-request-ext-typed-data-ansi.md
         - name: "EXT_TDOP_COPY"
           href: ext-tdop-copy.md
         - name: "EXT_TDOP_RELEASE"
@@ -770,12 +914,20 @@
   - name: "Customizing Debugger Output Using DML"
     href: customizing-debugger-output-using-dml.md
   - name: "JavaScript Debugger Scripting"
-    href: javascript-debugger-scripting.md
+# Auto-expanded node
     items: 
+    - name: "JavaScript Debugger Scripting"
+      href: javascript-debugger-scripting.md
     - name: "JavaScript Debugger Example Scripts"
       href: javascript-debugger-example-scripts.md
     - name: "Native Debugger Objects in JavaScript Extensions"
       href: native-objects-in-javascript-extensions.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Debugger Object Details"
+      href: native-objects-in-javascript-extensions-debugger-objects.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Type Objects"
+      href: native-objects-in-javascript-extensions-type-objects.md
+    - name: "Native Debugger Objects in JavaScript Extensions - Design Considerations"
+      href: native-objects-in-javascript-extensions-design-considerations.md   
   - name: "Native Debugger Objects in NatVis"
     href: native-debugger-objects-in-natvis.md
   - name: "Using LINQ With the debugger objects"
@@ -783,8 +935,10 @@
   - name: "Debugger Data Model Function Aliases"
     href: debugger-data-model-function-aliases.md
   - name: "Debugger Data Model C++ Overview"
-    href: data-model-cpp-overview.md
+# Auto-expanded node
     items: 
+    - name: "Debugger Data Model C++ Overview"
+      href: data-model-cpp-overview.md
     - name: "Debugger Data Model C++ Interfaces"
       href: data-model-cpp-interfaces.md
     - name: "Debugger Data Model C++ Objects"
@@ -796,8 +950,10 @@
     - name: "Debugger Data Model C++ Scripting"
       href: data-model-cpp-scripting.md
   - name: "Debugger Data Model - Code Namespace"
-    href: dbgmodel-namespace-code.md
+# Auto-expanded node
     items: 
+    - name: "Debugger Data Model - Code Namespace"
+      href: dbgmodel-namespace-code.md
     - name: "Debugger Data Model - Disassembler Objects"
       href: dbgmodel-object-disassembler.md
     - name: "Debugger Data Model - Basic Block Objects"
@@ -821,8 +977,10 @@
   - name: "Debugger Data Model - Collections Namespace"
     href: dbgmodel-namespace-collections.md
   - name: "Debugger Data Model - File System Namespace"
-    href: dbgmodel-namespace-file-system.md
+# Auto-expanded node
     items: 
+    - name: "Debugger Data Model - File System Namespace"
+      href: dbgmodel-namespace-file-system.md
     - name: "Debugger Data Model - Directory Objects"
       href: dbgmodel-object-directory.md
     - name: "Debugger Data Model - File Objects"
@@ -832,8 +990,10 @@
     - name: "Debugger Data Model - Text Writer Objects"
       href: dbgmodel-object-text-writer.md
   - name: "Glossary"
-    href: glossary.md
+# Auto-expanded node
     items: 
+    - name: "Glossary"
+      href: glossary.md
     - name: "A"
       href: a.md
     - name: "B"
@@ -875,11 +1035,15 @@
     - name: "W"
       href: w.md
 - name: "Debugger Operation"
-  href: debugger-operation-win8.md
+# Auto-expanded node
   items: 
+  - name: "Debugger Operation"
+    href: debugger-operation-win8.md
   - name: "Debugging Using WinDbg"
-    href: debugging-using-windbg.md
+# Auto-expanded node
     items: 
+    - name: "Debugging Using WinDbg"
+      href: debugging-using-windbg.md
     - name: "Debugging a User-Mode Process Using WinDbg"
       href: debugging-a-user-mode-process-using-windbg.md
     - name: "Debugging a UWP app using WinDbg"
@@ -893,7 +1057,7 @@
     - name: "Setting Symbol and Executable Image Paths in WinDbg"
       href: setting-symbol-and-source-paths-in-windbg.md
     - name: "Remote Debugging Using WinDbg"
-      href: remode-debugging-using-windbg.md
+      href: remote-debugging-using-windbg.md
     - name: "Entering Debugger Commands in WinDbg"
       href: debugger-command-window.md
     - name: "Using the Command Browser Window in WinDbg"
@@ -925,8 +1089,10 @@
     - name: "Using the Scratch Pad"
       href: scratch-pad.md
   - name: "Debugging Using KD and NTKD"
-    href: debugging-using-kd-and-ntkd.md
+# Auto-expanded node
     items: 
+    - name: "Debugging Using KD and NTKD"
+      href: debugging-using-kd-and-ntkd.md
     - name: "Opening a Dump File Using KD"
       href: opening-a-crash-dump-file-using-kd.md
     - name: "Live Kernel-Mode Debugging Using KD"
@@ -950,8 +1116,10 @@
     - name: "Keeping a Log File in KD"
       href: keeping-a-log-file-in-kd.md
   - name: "Debugging Using CDB and NTSD"
-    href: debugging-using-cdb-and-ntsd.md
+# Auto-expanded node
     items: 
+    - name: "Debugging Using CDB and NTSD"
+      href: debugging-using-cdb-and-ntsd.md
     - name: "Debugging a User-Mode Process Using CDB"
       href: debugging-a-user-mode-process-using-cdb.md
     - name: "Opening a Dump File Using CDB"
@@ -978,9 +1146,13 @@
     href: controlling-the-target.md
   - name: "Enabling Postmortem Debugging"
     href: enabling-postmortem-debugging.md
+  - name: "Open Enclave debugging"
+    href: open-enclave-debugging.md
   - name: "Using the Debugger Command Window"
-    href: the-debugger-command-window.md
+# Auto-expanded node
     items: 
+    - name: "Using the Debugger Command Window"
+      href: the-debugger-command-window.md
     - name: "Using Debugger Commands"
       href: using-debugger-commands.md
     - name: "Evaluating Expressions"
@@ -992,8 +1164,10 @@
     - name: "Using Script Files"
       href: using-script-files.md
     - name: "Using Debugger Command Programs"
-      href: using-debugger-command-programs.md
+# Auto-expanded node
       items: 
+      - name: "Using Debugger Command Programs"
+        href: using-debugger-command-programs.md
       - name: "Elements of a Debugger Command Program"
         href: elements-of-a-debugger-command-program.md
       - name: "Control Flow Tokens"
@@ -1003,11 +1177,15 @@
       - name: "Debugger Command Program Examples"
         href: debugger-command-program-examples.md
   - name: "Using the WinDbg Graphical Interface"
-    href: windbg-graphical-interface.md
+# Auto-expanded node
     items: 
+    - name: "Using the WinDbg Graphical Interface"
+      href: windbg-graphical-interface.md
     - name: "Using Debugging Information Windows"
-      href: using-debugging-information-windows.md
+# Auto-expanded node
       items: 
+      - name: "Using Debugging Information Windows"
+        href: using-debugging-information-windows.md
       - name: "Opening a Window"
         href: opening-a-window.md
       - name: "Closing a Window"
@@ -1021,8 +1199,10 @@
       - name: "Changing Text Properties"
         href: changing-text-properties.md
       - name: "Positioning the Windows"
-        href: positioning-the-windows.md
+# Auto-expanded node
         items: 
+        - name: "Positioning the Windows"
+          href: positioning-the-windows.md
         - name: "Debugging with Floating and Docked Windows"
           href: debugging-with-floating-and-docked-windows.md
         - name: "Docking a Window"
@@ -1038,15 +1218,19 @@
         - name: "Arranging Windows"
           href: arranging-windows.md
     - name: "Using Workspaces"
-      href: using-workspaces.md
+# Auto-expanded node
       items: 
+      - name: "Using Workspaces"
+        href: using-workspaces.md
       - name: "Creating and Opening a Workspace"
         href: creating-and-opening-a-workspace.md
       - name: "Workspace Contents"
         href: workspace-contents.md
       - name: "Using and Customizing WinDbg Themes"
-        href: using-and-customizing-windbg-themes.md
+# Auto-expanded node
         items: 
+        - name: "Using and Customizing WinDbg Themes"
+          href: using-and-customizing-windbg-themes.md
         - name: "Loading a Theme"
           href: loading-a-theme.md
         - name: "Customizing a Theme"
@@ -1058,8 +1242,10 @@
     - name: "Using the Help Documentation"
       href: using-the-help-documentation.md
   - name: "Using Debugger Extensions"
-    href: debugger-extensions.md
+# Auto-expanded node
     items: 
+    - name: "Using Debugger Extensions"
+      href: debugger-extensions.md
     - name: "Loading Debugger Extension DLLs"
       href: loading-debugger-extension-dlls.md
     - name: "Using Debugger Extension Commands"
@@ -1067,13 +1253,17 @@
     - name: "Writing New Debugger Extensions"
       href: writing-new-debugger-extensions.md
   - name: "Remote Debugging"
-    href: remote-debugging.md
+# Auto-expanded node
     items: 
+    - name: "Remote Debugging"
+      href: remote-debugging.md
     - name: "Choosing the Best Remote Debugging Method"
       href: choosing-the-best-remote-debugging-method.md
     - name: "Remote Debugging Through the Debugger"
-      href: remote-debugging-through-the-debugger.md
+# Auto-expanded node
       items: 
+      - name: "Remote Debugging Through the Debugger"
+        href: remote-debugging-through-the-debugger.md
       - name: "Activating a Debugging Server"
         href: activating-a-debugging-server.md
       - name: "Searching for Debugging Servers"
@@ -1085,8 +1275,10 @@
       - name: "Controlling a Remote Debugging Session"
         href: controlling-a-remote-debugging-session.md
     - name: "Controlling the User-Mode Debugger from the Kernel Debugger"
-      href: controlling-the-user-mode-debugger-from-the-kernel-debugger.md
+# Auto-expanded node
       items: 
+      - name: "Controlling the User-Mode Debugger from the Kernel Debugger"
+        href: controlling-the-user-mode-debugger-from-the-kernel-debugger.md
       - name: "Starting the Debugging Session"
         href: starting-the-debugging-session.md
       - name: "Switching Modes"
@@ -1096,8 +1288,10 @@
       - name: "Combining This Method with Remote Debugging"
         href: combining-this-method-with-remote-debugging.md
     - name: "Remote Debugging Through Remote.exe"
-      href: remote-debugging-through-remote-exe.md
+# Auto-expanded node
       items: 
+      - name: "Remote Debugging Through Remote.exe"
+        href: remote-debugging-through-remote-exe.md
       - name: "The Remote.exe Utility"
         href: the-remote-exe-utility.md
       - name: "Starting a Remote.exe Session"
@@ -1105,8 +1299,10 @@
       - name: "Remote.exe Batch Files"
         href: remote-exe-batch-files.md
     - name: "Process Servers (User Mode)"
-      href: process-servers--user-mode-.md
+# Auto-expanded node
       items: 
+      - name: "Process Servers (User Mode)"
+        href: process-servers--user-mode-.md
       - name: "Activating a Process Server"
         href: activating-a-process-server.md
       - name: "Searching for Process Servers"
@@ -1118,8 +1314,10 @@
       - name: "Controlling a Process Server Session"
         href: controlling-a-process-server-session.md
     - name: "KD Connection Servers (Kernel Mode)"
-      href: kd-connection-servers--kernel-mode-.md
+# Auto-expanded node
       items: 
+      - name: "KD Connection Servers (Kernel Mode)"
+        href: kd-connection-servers--kernel-mode-.md
       - name: "Activating a KD Connection Server"
         href: activating-a-kd-connection-server.md
       - name: "Searching for KD Connection Servers"
@@ -1131,8 +1329,10 @@
       - name: "Controlling a KD Connection Server Session"
         href: controlling-a-kd-connection-server-session.md
     - name: "Repeaters"
-      href: repeaters.md
+# Auto-expanded node
       items: 
+      - name: "Repeaters"
+        href: repeaters.md
       - name: "Activating a Repeater"
         href: activating-a-repeater.md
       - name: "Using a Repeater"
@@ -1140,8 +1340,10 @@
       - name: "Repeater Examples"
         href: repeater-examples.md
     - name: "Advanced Remote Debugging Scenarios"
-      href: advanced-remote-debugging-scenarios.md
+# Auto-expanded node
       items: 
+      - name: "Advanced Remote Debugging Scenarios"
+        href: advanced-remote-debugging-scenarios.md
       - name: "Debugging Targets on Multiple Computers"
         href: debugging-targets-on-multiple-computers.md
       - name: "Symbols in the Middle"
@@ -1151,11 +1353,15 @@
     - name: "Remote Debugging on Workgroup Computers"
       href: remote-debugging-on-workgroup-computers.md
   - name: "Debugging Previous Versions of Windows"
-    href: debugging-previous-versions-of-windows.md
+# Auto-expanded node
     items: 
+    - name: "Debugging Previous Versions of Windows"
+      href: debugging-previous-versions-of-windows.md
     - name: "Debugging Tools For Windows: What's New"
-      href: debugging-tools-for-windows--what-s-new.md
+# Auto-expanded node
       items: 
+      - name: "Debugging Tools For Windows: What's New"
+        href: debugging-tools-for-windows--what-s-new.md
       - name: "Debugging Tools for Windows: New for Windows 8.1"
         href: debugging-tools-for-windows--new-for-windows-8-1.md
       - name: "Debugging Tools for Windows: New for Windows 8"
@@ -1167,8 +1373,10 @@
     - name: "Debugging Using Visual Studio"
       href: debugging-using-visual-studio.md
     - name: "Setting Up User-Mode Debugging in Visual Studio"
-      href: setting-up-user-mode-debugging-in-visual-studio.md
+# Auto-expanded node
       items: 
+      - name: "Setting Up User-Mode Debugging in Visual Studio"
+        href: setting-up-user-mode-debugging-in-visual-studio.md
       - name: "Debugging a User-Mode Process Using Visual Studio"
         href: debugging-a-user-mode-process-using-visual-studio.md
       - name: "Opening a Dump File Using Visual Studio"
@@ -1198,8 +1406,10 @@
       - name: "Keeping a Log File in Visual Studio"
         href: keeping-a-log-file-in-visual-studio.md
     - name: "Setting Up Kernel-Mode Debugging in Visual Studio"
-      href: setting-up-kernel-mode-debugging-in-visual-studio.md
+# Auto-expanded node
       items: 
+      - name: "Setting Up Kernel-Mode Debugging in Visual Studio"
+        href: setting-up-kernel-mode-debugging-in-visual-studio.md
       - name: "Setting Up Kernel-Mode Debugging over a Network Cable in Visual Studio"
         href: setting-up-a-network-debugging-connection-in-visual-studio.md
       - name: "Setting Up Kernel-Mode Debugging over a 1394 Cable in Visual Studio"
@@ -1215,14 +1425,20 @@
       - name: "Setting Up Kernel-Mode Debugging of a Virtual Machine in Visual Studio"
         href: setting-up-a-connection-to-a-virtual-machine-in-visual-studio.md
 - name: "Debugging Techniques"
-  href: debugging-techniques.md
+# Auto-expanded node
   items: 
+  - name: "Debugging Techniques"
+    href: debugging-techniques.md
   - name: "Standard Debugging Techniques"
-    href: standard-debugging-techniques.md
+# Auto-expanded node
     items: 
+    - name: "Standard Debugging Techniques"
+      href: standard-debugging-techniques.md
     - name: "Using Breakpoints"
-      href: using-breakpoints.md
+# Auto-expanded node
       items: 
+      - name: "Using Breakpoints"
+        href: using-breakpoints.md
       - name: "Methods of Controlling Breakpoints"
         href: methods-of-controlling-breakpoints.md
       - name: "Breakpoint Syntax"
@@ -1242,8 +1458,10 @@
       - name: "Executing Until a Specified State is Reached"
         href: executing-until-a-specified-state-is-reached.md
     - name: "Reading and Writing Memory"
-      href: reading-and-writing-memory.md
+# Auto-expanded node
       items: 
+      - name: "Reading and Writing Memory"
+        href: reading-and-writing-memory.md
       - name: "Accessing Memory by Virtual Address"
         href: accessing-memory-by-virtual-address.md
       - name: "Accessing Memory by Physical Address"
@@ -1297,13 +1515,17 @@
     - name: "Synchronizing with the Target Computer"
       href: synchronizing-with-the-target-computer.md
     - name: "Finding a Memory Leak"
-      href: finding-a-memory-leak.md
+# Auto-expanded node
       items: 
+      - name: "Finding a Memory Leak"
+        href: finding-a-memory-leak.md
       - name: "Determining Whether a Leak Exists"
         href: determining-whether-a-leak-exists.md
       - name: "Finding a Kernel-Mode Memory Leak"
-        href: finding-a-kernel-mode-memory-leak.md
+# Auto-expanded node
         items: 
+        - name: "Finding a Kernel-Mode Memory Leak"
+          href: finding-a-kernel-mode-memory-leak.md
         - name: "Using PoolMon to Find a Kernel-Mode Memory Leak"
           href: using-poolmon-to-find-a-kernel-mode-memory-leak.md
         - name: "Using the Kernel Debugger to Find a Kernel-Mode Memory Leak"
@@ -1311,22 +1533,28 @@
         - name: "Using Driver Verifier to Find a Kernel-Mode Memory Leak"
           href: using-driver-verifier-to-find-a-kernel-mode-memory-leak.md
       - name: "Finding a User-Mode Memory Leak"
-        href: finding-a-user-mode-memory-leak.md
+# Auto-expanded node
         items: 
+        - name: "Finding a User-Mode Memory Leak"
+          href: finding-a-user-mode-memory-leak.md
         - name: "Using Performance Monitor to Find a User-Mode Memory Leak"
           href: using-performance-monitor-to-find-a-user-mode-memory-leak.md
         - name: "Using UMDH to Find a User-Mode Memory Leak"
           href: using-umdh-to-find-a-user-mode-memory-leak.md
     - name: "Debugging a Time Out"
-      href: debugging-a-time-out.md
+# Auto-expanded node
       items: 
+      - name: "Debugging a Time Out"
+        href: debugging-a-time-out.md
       - name: "Resource Time Outs"
         href: resource-time-outs.md
       - name: "Critical Section Time Outs"
         href: critical-section-time-outs.md
     - name: "Debugging a Stalled System"
-      href: debugging-a-stalled-system.md
+# Auto-expanded node
       items: 
+      - name: "Debugging a Stalled System"
+        href: debugging-a-stalled-system.md
       - name: "Finding the Failed Process"
         href: finding-the-failed-process.md
       - name: "Debugging an Interrupt Storm"
@@ -1352,8 +1580,10 @@
     - name: "Mapping Driver Files"
       href: mapping-driver-files.md
     - name: "Messages from the Target"
-      href: messages-from-the-target.md
+# Auto-expanded node
       items: 
+      - name: "Messages from the Target"
+        href: messages-from-the-target.md
       - name: "Breaking Into the Debugger"
         href: breaking-into-the-debugger.md
       - name: "Sending Output to the Debugger"
@@ -1363,8 +1593,10 @@
       - name: "Determining if a Debugger is Attached"
         href: determining-if-a-debugger-is-attached.md
   - name: "Specialized Debugging Techniques"
-    href: specialized-debugging-techniques.md
+# Auto-expanded node
     items: 
+    - name: "Specialized Debugging Techniques"
+      href: specialized-debugging-techniques.md
     - name: "Debugging ARM64"
       href: debugging-arm64.md
     - name: "Windows Runtime Debugging"
@@ -1394,15 +1626,19 @@
     - name: "Specifying Module and Function Owners"
       href: specifying-module-and-function-owners.md
     - name: "RPC Debugging"
-      href: rpc-debugging.md
+# Auto-expanded node
       items: 
+      - name: "RPC Debugging"
+        href: rpc-debugging.md
       - name: "Overview of RPC Debugging"
         href: overview-of-rpc-debugging.md
       - name: "Enabling RPC State Information"
         href: enabling-rpc-state-information.md
       - name: "Displaying RPC State Information"
-        href: displaying-rpc-state-information.md
+# Auto-expanded node
         items: 
+        - name: "Displaying RPC State Information"
+          href: displaying-rpc-state-information.md
         - name: "Using the RPC Debugger Extensions"
           href: using-the-rpc-debugger-extensions.md
         - name: "Using the DbgRpc Tool"
@@ -1418,8 +1654,10 @@
         - name: "Get RPC Client Call Information"
           href: get-rpc-client-call-information.md
       - name: "Common RPC Debugging Techniques"
-        href: common-rpc-debugging-techniques.md
+# Auto-expanded node
         items: 
+        - name: "Common RPC Debugging Techniques"
+          href: common-rpc-debugging-techniques.md
         - name: "Analyzing a Stuck Call Problem"
           href: analyzing-a-stuck-call-problem.md
         - name: "Tracking Contention in the Server Process"
@@ -1431,11 +1669,15 @@
       - name: "RPC State Information Internals"
         href: rpc-state-information-internals.md
     - name: "ACPI Debugging"
-      href: acpi-debugging.md
+# Auto-expanded node
       items: 
+      - name: "ACPI Debugging"
+        href: acpi-debugging.md
       - name: "The AMLI Debugger"
-        href: the-amli-debugger.md
+# Auto-expanded node
         items: 
+        - name: "The AMLI Debugger"
+          href: the-amli-debugger.md
         - name: "Introduction to the AMLI Debugger"
           href: introduction-to-the-amli-debugger.md
         - name: "Setting Up an AML Debugging Session"
@@ -1451,25 +1693,24 @@
       - name: "Other ACPI Debugging Extensions"
         href: other-acpi-debugging-extensions.md
     - name: "NDIS Debugging"
-      href: ndis-debugging.md
+# Auto-expanded node
       items: 
       - name: "Overview of NDIS Debugging"
         href: overview-of-ndis-debugging.md
-      - name: "Preparing for NDIS Debugging"
-        href: preparing-for-ndis-debugging.md
       - name: "Enabling NDIS Debug Tracing"
         href: enabling-ndis-debug-tracing.md
-        items: 
-        - name: "Enabling NDIS Debug Tracing By Setting Registry Values"
-          href: enabling-ndis-debug-tracing-by-setting-registry-values.md
     - name: "Kernel Streaming Debugging"
-      href: kernel-streaming-debugging.md
+# Auto-expanded node
       items: 
+      - name: "Kernel Streaming Debugging"
+        href: kernel-streaming-debugging.md
       - name: "Overview of Kernel Streaming Debugging"
         href: overview-of-kernel-streaming-debugging.md
       - name: "Analyzing a Video Stream Stall"
-        href: analyzing-a-video-stream-stall.md
+# Auto-expanded node
         items: 
+        - name: "Analyzing a Video Stream Stall"
+          href: analyzing-a-video-stream-stall.md
         - name: "Determining the Cause of a Video Stream Stall"
           href: determining-the-cause-of-a-video-stream-stall.md
         - name: "Debugging a Processing Stall"
@@ -1487,8 +1728,10 @@
       - name: "Using !ks.graph"
         href: using--ks-graph.md
     - name: "SCSI Miniport Debugging"
-      href: scsi-miniport-debugging.md
+# Auto-expanded node
       items: 
+      - name: "SCSI Miniport Debugging"
+        href: scsi-miniport-debugging.md
       - name: "Overview of SCSI Miniport Debugging"
         href: overview-of-scsi-miniport-debugging.md
       - name: "Extensions for Debugging SCSI Miniport Drivers"
@@ -1500,8 +1743,10 @@
       - name: "Important Breakpoints for Analyzing Reproducible Problems"
         href: important-breakpoints-for-analyzing-reproducible-problems.md
     - name: "Plug and Play Debugging"
-      href: plug-and-play-debugging.md
+# Auto-expanded node
       items: 
+      - name: "Plug and Play Debugging"
+        href: plug-and-play-debugging.md
       - name: "Extensions for Debugging Plug and Play Drivers"
         href: extensions-for-debugging-plug-and-play-drivers.md
       - name: "Determining the Status of a Device"
@@ -1513,8 +1758,10 @@
       - name: "Checking for Resource Conflicts"
         href: checking-for-resource-conflicts.md
     - name: "Debugging a Service Application"
-      href: debugging-a-service-application.md
+# Auto-expanded node
       items: 
+      - name: "Debugging a Service Application"
+        href: debugging-a-service-application.md
       - name: "Choosing the Best Method"
         href: choosing-the-best-method.md
       - name: "Preparing to Debug the Service Application"
@@ -1524,30 +1771,42 @@
       - name: "Debugging the Service Application Manually"
         href: debugging-the-service-application-manually.md
 - name: "Symbols for Windows Debugging (WinDbg, KD, CDB, NTSD)"
-  href: symbols.md
+# Auto-expanded node
   items: 
+  - name: "Symbols for Windows Debugging (WinDbg, KD, CDB, NTSD)"
+    href: symbols.md
   - name: "Introduction to Symbols"
-    href: introduction-to-symbols.md
+# Auto-expanded node
     items: 
+    - name: "Introduction to Symbols"
+      href: introduction-to-symbols.md
     - name: "Symbol path for Windows debuggers"
       href: symbol-path.md
     - name: "Symbols and Symbol Files"
       href: symbols-and-symbol-files.md
     - name: "Public and Private Symbols"
       href: public-and-private-symbols.md
+    - name: "Portable PDB Symbols"
+      href: symbols-portable-pdb.md
   - name: "Accessing Symbols for Debugging"
-    href: accessing-symbols-for-debugging.md
+# Auto-expanded node
     items: 
+    - name: "Accessing Symbols for Debugging"
+      href: accessing-symbols-for-debugging.md
     - name: "Installing Windows Symbol Files"
       href: installing-windows-symbol-files.md
     - name: "Symbol Stores and Symbol Servers"
-      href: symbol-stores-and-symbol-servers.md
+# Auto-expanded node
       items: 
+      - name: "Symbol Stores and Symbol Servers"
+        href: symbol-stores-and-symbol-servers.md
       - name: "Using a Symbol Server"
         href: using-a-symbol-server.md
       - name: "SymSrv"
-        href: symsrv.md
+# Auto-expanded node
         items: 
+        - name: "SymSrv"
+          href: symsrv.md
         - name: "Microsoft public symbol server"
           href: microsoft-public-symbols.md
         - name: "Advanced SymSrv Use"
@@ -1561,8 +1820,10 @@
       - name: "Symbol Store Folder Tree"
         href: symbol-store-folder-tree.md
       - name: "SymProxy"
-        href: symproxy.md
+# Auto-expanded node
         items: 
+        - name: "SymProxy"
+          href: symproxy.md
         - name: "Installing SymProxy"
           href: installing-symproxy.md
         - name: "Configuring the Registry"
@@ -1590,19 +1851,21 @@
     - name: "Avoiding debugger searches for unneeded symbols"
       href: avoiding-debugger-searches-for-unneeded-symbols.md
   - name: "SymStore"
-    href: symstore.md
+# Auto-expanded node
     items: 
+    - name: "SymStore"
+      href: symstore.md
     - name: "SymStore Transactions"
       href: symstore-transactions.md
     - name: "File System References and Symbol Files"
       href: file-system-references-and-symbol-files.md
-    - name: "SymStore Compressed Files"
-      href: symstore-compressed-files.md
     - name: "Symbol Storage Format"
       href: symbol-storage-format.md
   - name: "How the Debugger Recognizes Symbols"
-    href: how-the-debugger-recognizes-symbols.md
+# Auto-expanded node
     items: 
+    - name: "How the Debugger Recognizes Symbols"
+      href: how-the-debugger-recognizes-symbols.md
     - name: "Symbol Syntax and Symbol Matching"
       href: symbol-syntax-and-symbol-matching.md
     - name: "Symbol Options"
@@ -1610,8 +1873,10 @@
     - name: "Symbol Status Abbreviations"
       href: symbol-status-abbreviations.md
   - name: "Symbol Problems While Debugging"
-    href: symbol-problems-while-debugging.md
+# Auto-expanded node
     items: 
+    - name: "Symbol Problems While Debugging"
+      href: symbol-problems-while-debugging.md
     - name: "Verifying Symbols"
       href: verifying-symbols.md
     - name: "Matching Symbol Names"
@@ -1627,15 +1892,19 @@
     - name: "Offline Symbols for Windows Update"
       href: symbols-windows-update.md
   - name: "AgeStore"
-    href: agestore.md
+# Auto-expanded node
     items: 
+    - name: "AgeStore"
+      href: agestore.md
     - name: "Using AgeStore"
       href: using-agestore.md
     - name: "AgeStore Command-Line Options"
       href: agestore-command-line-options.md
   - name: "DBH"
-    href: dbh.md
+# Auto-expanded node
     items: 
+    - name: "DBH"
+      href: dbh.md
     - name: "Using DBH"
       href: using-dbh.md
     - name: "Additional DBH Examples"
@@ -1645,8 +1914,10 @@
     - name: "DBH Commands"
       href: dbh-commands.md
   - name: "PDBCopy"
-    href: pdbcopy.md
+# Auto-expanded node
     items: 
+    - name: "PDBCopy"
+      href: pdbcopy.md
     - name: "Using PDBCopy"
       href: using-pdbcopy.md
     - name: "Choosing Which Public Symbols to Remove"
@@ -1654,8 +1925,10 @@
     - name: "PDBCopy Command-Line Options"
       href: pdbcopy-command-line-options.md
   - name: "SymChk"
-    href: symchk.md
+# Auto-expanded node
     items: 
+    - name: "SymChk"
+      href: symchk.md
     - name: "Using SymChk"
       href: using-symchk.md
     - name: "Using a Manifest File with SymChk"
@@ -1663,14 +1936,20 @@
     - name: "SymChk Command-Line Options"
       href: symchk-command-line-options.md
 - name: "Crash dump analysis using the Windows debuggers (WinDbg)"
-  href: crash-dump-files.md
+# Auto-expanded node
   items: 
+  - name: "Crash dump analysis using the Windows debuggers (WinDbg)"
+    href: crash-dump-files.md
   - name: "Kernel-Mode Dump Files"
-    href: kernel-mode-dump-files.md
+# Auto-expanded node
     items: 
+    - name: "Kernel-Mode Dump Files"
+      href: kernel-mode-dump-files.md
     - name: "Varieties of Kernel-Mode Dump Files"
-      href: varieties-of-kernel-mode-dump-files.md
+# Auto-expanded node
       items: 
+      - name: "Varieties of Kernel-Mode Dump Files"
+        href: varieties-of-kernel-mode-dump-files.md
       - name: "Complete Memory Dump"
         href: complete-memory-dump.md
       - name: "Kernel Memory Dump"
@@ -1682,13 +1961,17 @@
       - name: "Active Memory Dump"
         href: active-memory-dump.md
     - name: "Creating a Kernel-Mode Dump File"
-      href: creating-a-kernel-mode-dump-file.md
+# Auto-expanded node
       items: 
+      - name: "Creating a Kernel-Mode Dump File"
+        href: creating-a-kernel-mode-dump-file.md
       - name: "Enabling a Kernel-Mode Dump File"
         href: enabling-a-kernel-mode-dump-file.md
       - name: "Forcing a System Crash"
-        href: forcing-a-system-crash.md
+# Auto-expanded node
         items: 
+        - name: "Forcing a System Crash"
+          href: forcing-a-system-crash.md
         - name: "Forcing a System Crash from the Debugger"
           href: forcing-a-system-crash-from-the-debugger.md
         - name: "Forcing a System Crash from the Keyboard"
@@ -1698,17 +1981,19 @@
       - name: "Verifying the Creation of a Kernel-Mode Dump File"
         href: verifying-the-creation-of-a-kernel-mode-dump-file.md
     - name: "Analyzing a Kernel-Mode Dump File"
-      href: analyzing-a-kernel-mode-dump-file.md
+# Auto-expanded node
       items: 
+      - name: "Analyzing a Kernel-Mode Dump File"
+        href: analyzing-a-kernel-mode-dump-file.md
       - name: "Analyzing a Kernel-Mode Dump File with KD"
         href: analyzing-a-kernel-mode-dump-file-with-kd.md
       - name: "Analyzing a Kernel-Mode Dump File with WinDbg"
         href: analyzing-a-kernel-mode-dump-file-with-windbg.md
-      - name: "Analyzing a Kernel-Mode Dump File with KAnalyze"
-        href: analyzing-a-kernel-mode-dump-file-with-kanalyze.md
   - name: "User-Mode Dump Files"
-    href: user-mode-dump-files.md
+# Auto-expanded node
     items: 
+    - name: "User-Mode Dump Files"
+      href: user-mode-dump-files.md
     - name: "Analyzing a User-Mode Dump File"
       href: analyzing-a-user-mode-dump-file.md
   - name: "Extracting Information from a Dump File"
@@ -1718,15 +2003,19 @@
   - name: "Debugging OCA minidump files"
     href: debugging-oca-minidump-files.md
 - name: "Bug Checks (Blue Screens)"
-  href: bug-checks--blue-screens-.md
+# Auto-expanded node
   items: 
+  - name: "Bug Checks (Blue Screens)"
+    href: bug-checks--blue-screens-.md
   - name: "General Tips for Blue Screens"
     href: general-troubleshooting-tips.md
   - name: "Blue Screen Data"
     href: blue-screen-data.md
   - name: "Bug Check Code Reference"
-    href: bug-check-code-reference2.md
+# Auto-expanded node
     items: 
+    - name: "Bug Check Code Reference"
+      href: bug-check-code-reference2.md
     - name: "Bug Check 0x1: APC_INDEX_MISMATCH"
       href: bug-check-0x1--apc-index-mismatch.md
     - name: "Bug Check 0x2: DEVICE_QUEUE_NOT_BUSY"
@@ -2147,6 +2436,8 @@
       href: bug-check-0xed--unmountable-boot-volume.md
     - name: "Bug Check 0xEF: CRITICAL_PROCESS_DIED"
       href: bug-check-0xef--critical-process-died.md
+    - name: "Bug Check 0xF0: STORAGE_MINIPORT_ERROR"
+      href: bug-check-0xf0--storage-miniport-error.md
     - name: "Bug Check 0xF1: SCSI_VERIFIER_DETECTED_VIOLATION"
       href: bug-check-0xf1--scsi-verifier-detected-violation.md
     - name: "Bug Check 0xF2: HARDWARE_INTERRUPT_STORM"
@@ -2228,23 +2519,23 @@
     - name: "Bug Check 0x11D:  EVENT_TRACING_FATAL_ERROR"
       href: bug-check-0x11d---event-tracing-fatal-error.md
     - name: "Bug Check 0x11E: TOO_MANY_RECURSIVE_FAULTS"
-      href: bug-check--0x11e--too-many-recursive-faults.md
+      href: bug-check-0x11e--too-many-recursive-faults.md
     - name: "Bug Check 0x11F: INVALID_DRIVER_HANDLE"
-      href: bug-check--0x11f--invalid-driver-handle.md
+      href: bug-check-0x11f--invalid-driver-handle.md
     - name: "Bug Check 0x120: BITLOCKER_FATAL_ERROR"
-      href: bug-check--0x120--bitlocker-fatal-error-.md
+      href: bug-check-0x120--bitlocker-fatal-error-.md
     - name: "Bug Check 0x121:  DRIVER_VIOLATION"
       href: bug-check-0x121---driver-violation.md
     - name: "Bug Check 0x122:  WHEA_INTERNAL_ERROR"
       href: bug-check-0x122---whea-internal-error.md
     - name: "Bug Check 0x123: CRYPTO_SELF_TEST_FAILURE"
-      href: bug-check--0x123--crypto-self-test-failure-.md
+      href: bug-check-0x123--crypto-self-test-failure-.md
     - name: "Bug Check 0x124:  WHEA_UNCORRECTABLE_ERROR"
       href: bug-check-0x124---whea-uncorrectable-error.md
     - name: "Bug Check 0x125: NMR_INVALID_STATE"
-      href: bug-check--0x125--nmr-invalid-state.md
+      href: bug-check-0x125--nmr-invalid-state.md
     - name: "Bug Check 0x126: NETIO_INVALID_POOL_CALLER"
-      href: bug-check--0x126--netio-invalid-pool-caller.md
+      href: bug-check-0x126--netio-invalid-pool-caller.md
     - name: "Bug Check 0x127:  PAGE_NOT_ZERO"
       href: bug-check-0x127---page-not-zero.md
     - name: "Bug Check 0x128: WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY"
@@ -2282,7 +2573,7 @@
     - name: "Bug Check 0x138: GPIO_CONTROLLER_DRIVER_ERROR"
       href: bug-check-0x138-gpio-controller-driver-error.md
     - name: "Bug Check 0x139: KERNEL_SECURITY_CHECK_FAILURE"
-      href: bug-check---bug-check-0x139-kernel-security-check-failure.md
+      href: bug-check-0x139--kernel-security-check-failure.md
     - name: "Bug Check 0x13A: KERNEL_MODE_HEAP_CORRUPTION"
       href: bug-check-0x13a--kernel-mode-heap-corruption.md
     - name: "Bug Check 0x13B: PASSIVE_INTERRUPT_ERROR"
@@ -2361,18 +2652,50 @@
       href: bug-check-0x162--worker-thread-test-condition.md
     - name: "Bug Check 0x164: WIN32K_CRITICAL_FAILURE"
       href: bug-check-0x164--win32k-critical-failure.md
+    - name: "Bug Check 0x165: CLUSTER_CSV_STATUS_IO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x165--cluster-csv-staus-io-timeout-livedump.md
+    - name: "Bug Check 0x166: CLUSTER_RESOURCE_CALL_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x166--cluster-resource-call-timeout-livedump.md
+    - name: "Bug Check 0x167: CLUSTER_CSV_SNAPSHOT_DEVICE_INFO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x167--cluster-csv-snapshot-device-info-timeout-livedump.md
+    - name: "Bug Check 0x168: CLUSTER_CSV_STATE_TRANSITION_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x168--cluster-csv-state-transition-timeout-livedump.md
+    - name: "Bug Check 0x169: CLUSTER_CSV_VOLUME_ARRIVAL_LIVEDUMP"
+      href: bug-check-0x169--cluster-csv-volume-arival-livedump.md
+    - name: "Bug Check 0x16A: CLUSTER_CSV_VOLUME_REMOVAL_LIVEDUMP"
+      href: bug-check-0x16a--cluster-csv-volume-removal-livedump.md
+    - name: "Bug Check 0x16B: CLUSTER_CSV_CLUSTER_WATCHDOG_LIVEDUMP"
+      href: bug-check-0x16b--cluster-csv-cluster-watchdog-livedump.md
     - name: "Bug Check 0x16C: INVALID_RUNDOWN_PROTECTION_FLAGS"
       href: bug-check-0x16c--invalid-rundown-protection-flags.md
     - name: "Bug Check 0x16D: INVALID_SLOT_ALLOCATOR_FLAGS"
       href: bug-check-0x16d--invalid-slot-allocator-flags.md
     - name: "Bug Check 0x16E: ERESOURCE_INVALID_RELEASE"
       href: bug-check-0x16e--eresource-invalid-release.md
+    - name: "Bug Check 0x16F: CLUSTER_CSV_STATE_TRANSITION_INTERVAL_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x16f--cluster-csv-state-transistion-interval-livedump.md
+    - name: "Bug Check 0x170: CRYPTO_LIBRARY_INTERNAL_ERROR"
+      href: bug-check-0x170--crypto-library-internal-error.md
+    - name: "Bug Check 0x171: CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG"
+      href: bug-check-0x171--cluster-csv-clussvc-disconnect-watchdog.md
+    - name: "Bug Check 0x173: COREMSGCALL_INTERNAL_ERROR"
+      href: bug-check-0x173--coremsgcall-internal-error.md
+    - name: "Bug Check 0x174: COREMSG_INTERNAL_ERROR"
+      href: bug-check-0x174--coremsg-internal-error.md
     - name: "Bug Check 0x175: PREVIOUS_FATAL_ABNORMAL_RESET_ERROR"
       href: bug-check-0x175--previous-fatal-abnormal-reset-error.md
     - name: "Bug Check 0x178: ELAM_DRIVER_DETECTED_FATAL_ERROR"
       href: bug-check-0x175--elam-driver-detected-fatal-error.md
+    - name: "Bug Check 0x179: CLUSTER_CLUSPORT_STATUS_IO_TIMEOUT_LIVEDUMP"
+      href: bug-check-0x179--cluster-clusport-status-io-timeout-livedump.md
     - name: "Bug Check 0x17B PROFILER_CONFIGURATION_ILLEGAL"
       href: bug-check-0x17b--profiler-configuration-illegal.md
+    - name: "Bug Check 0x17C PDC_LOCK_WATCHDOG_LIVEDUMP "
+      href: bug-check-0x17c--pdc-lock-watchdog-livedump.md
+    - name: "Bug Check 0x17D PDC_UNEXPECTED_REVOCATION_LIVEDUMP"
+      href: bug-check-0x17d-unexpected-revocation-livedump.md
+    - name: "Bug Check 0x17E MICROCODE_REVISION_MISMATCH"
+      href: bug-check-0x17e--microcode-revision-mismatch.md
     - name: "Bug Check 0x187: VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD"
       href: bug-check-0x187--video-dwminit-timeout-fallback-bdd.md
     - name: "Bug Check 0x188: CLUSTER_CSVFS_LIVEDUMP"
@@ -2381,6 +2704,10 @@
       href: bug-check-0x189--bad-object-header.md
     - name: "Bug Check 0x18B: SECURE_KERNEL_ERROR"
       href: bug-check-0x18b--secure-kernel-error.md
+    - name: "Bug Check 0x18C: HYPERGUARD_VIOLATION"
+      href: bug-check-0x18c--hyperguard-violation.md
+    - name: "Bug Check 0x18D: SECURE_FAULT_UNHANDLED"
+      href: bug-check-0x18d--secure-fault-unhandled.md
     - name: "Bug Check 0x18E: KERNEL_PARTITION_REFERENCE_VIOLATION"
       href: bug-check-0x18e--kernel-partition-reference-violation.md
     - name: "Bug Check 0x190: WIN32K_CRITICAL_FAILURE_LIVEDUMP"
@@ -2409,16 +2736,44 @@
       href: bug-check-0x19c--win32k-power-watchdog-timeout.md
     - name: "Bug Check 0x19D: CLUSTER_SVHDX_LIVEDUMP"
       href: bug-check-0x19d--cluster-svhdx-livedump.md
+    - name: "Bug Check 0x1A0: TTM_WATCHDOG_TIMEOUT"
+      href: bug-check-0x1a0--ttm-watchdog-timeout.md
+    - name: "Bug Check 0x1A1: WIN32K_CALLOUT_WATCHDOG_LIVEDUMP"
+      href: bug-check-0x1a1--win32k-callout-watchdog-livedump.md
+    - name: "Bug Check 0x1A2: WIN32K_CALLOUT_WATCHDOG_BUGCHECK"
+      href: bug-check-0x1a2--win32k-callout-watchdog-bugcheck.md
     - name: "Bug Check 0x1A3: CALL_HAS_NOT_RETURNED_WATCHDOG_TIMEOUT_LIVEDUMP"
       href: bug-check-0x1a3--call-has-not-returned-watchdog-timeout-livedump.md
     - name: "Bug Check 0x1A4: DRIPS_SW_HW_DIVERGENCE_LIVEDUMP"
       href: bug-check-0x1a4--drips-sw-hw-divergence-livedump.md
+    - name: "Bug Check 0x1A5: USB_DRIPS_BLOCKER_SURPRISE_REMOVAL_LIVEDUMP"
+      href: bug-check-0x1a5--usb-drips-blocker-surprise-removal-livedump.md
+    - name: "Bug Check 0x1A6: BLUETOOTH_ERROR_RECOVERY_LIVEDUMP"
+      href: bug-check-0x1a6--bluetooth-error-recovery-livedump.md
+    - name: "Bug Check 0x1A7: SMB_REDIRECTOR_LIVEDUMP"
+      href: bug-check-0x1A7--smb-redirector-livedump.md
+    - name: "Bug Check 0x1A8: VIDEO_DXGKRNL_BLACK_SCREEN_LIVEDUMP"
+      href: bug-check-0x1a8--video-dxgkrnl-black-screen-livedump.md
+    - name: "Bug Check 0x1B0: VIDEO_MINIPORT_FAILED_LIVEDUMP"
+      href: bug-check-0x1b0--video-miniport-failed-livedump.md      
+    - name: "Bug Check 0x1B8: VIDEO_MINIPORT_BLACK_SCREEN_LIVEDUMP"
+      href: bug-check-0x1b8--video-miniport-black-screen-livedump.md      
     - name: "Bug Check 0x1C4: DRIVER_VERIFIER_DETECTED_VIOLATION_LIVEDUMP"
       href: bug-check-0x1c4--driver-verifier-detected-violation-livedump.md
     - name: "Bug Check 0x1C5: IO_THREADPOOL_DEADLOCK_LIVEDUMP"
       href: bug-check-0x1c5--io-threadpool-deadlock-livedump.md
-    - name: "Bug Check 0x1C8: MANUALLY_INITIATED_POWER_BUTTON_HOLD"
+    - name: "Bug Check 0x1C6: FAST_ERESOURCE_PRECONDITION_VIOLATION"
+      href: bug-check-0x1c6--fast-eresource-precondition-violation.md
+    - name: "Bug Check 0x1C7: STORE_DATA_STRUCTURE_CORRUPTION"
+      href: bug-check-0x1c7--store-data-structure-corruption.md      
+    - name: "Bug Check 0x1C8 MANUALLY_INITIATED_POWER_BUTTON_HOLD"
       href: bug-check-0x1c8--manually-initiated-power-button-hold.md
+    - name: "Bug Check 0x1C9: USER_MODE_HEALTH_MONITOR_LIVEDUMP"
+      href: bug-check-0x1c9--user-mode-health-monitor-livedump.md
+    - name: "Bug Check 0x1CA: SYNTHETIC_WATCHDOG_TIMEOUT"
+      href: bug-check-0x1ca--synthetic-watchdog-timeout.md
+    - name: "Bug Check 0x1CB: INVALID_SILO_DETACH"
+      href: bug-check-0x1cb--invalid-silo-detach.md
     - name: "Bug Check 0x1CC: EXRESOURCE_TIMEOUT_LIVEDUMP"
       href: bug-check-0x1cc--exresource-timeout-livedump.md
     - name: "Bug Check 0x1CD: INVALID_CALLBACK_STACK_ADDRESS"
@@ -2437,6 +2792,22 @@
       href: bug-check-0x1d3--wfp-invalid-operation.md
     - name: "Bug Check 0x1D4: UCMUCSI_LIVEDUMP"
       href: bug-check-0x1d4--ucmusci-livedump.md
+    - name: "Bug Check 0x1D5: DRIVER_PNP_WATCHDOG"
+      href: bug-check-0x1d5--driver-pnp-watchdog.md
+    - name: "Bug Check 0x1D6: WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS"
+      href: bug-check-0x1d6--worker-thread-returned-with-non-default-workload-class.md
+    - name: "Bug Check 0x1D7: EFS_FATAL_ERROR"
+      href: bug-check-0x1d7--efs-fatal-error.md
+    - name: "Bug Check 0x1D8: UCMUCSI_FAILURE"
+      href: bug-check-0x1d8--ucmucsi-failure.md
+    - name: "Bug Check 0x1D9: HAL_IOMMU_INTERNAL_ERROR"
+      href: bug-check-0x1d9--hal-iommu-internal-error.md
+    - name: "Bug Check 0x1DA: HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR"
+      href: bug-check-0x1da--hal-blocked-processor-internal-error.md
+    - name: "Bug Check 0x1DB: IPI_WATCHDOG_TIMEOUT"
+      href: bug-check-0x1db--ipi-watchdog-timeout.md
+    - name: "Bug Check 0x1DC: DMA_COMMON_BUFFER_VECTOR_ERROR"
+      href: bug-check-0x1dc--dma-common-buffer-vector-error.md
     - name: "Bug Check 0x356: XBOX_ERACTRL_CS_TIMEOUT"
       href: bug-check-0x356--xbox-eractrl-cs-timeout.md
     - name: "Bug Check 0xBFE: BC_BLUETOOTH_VERIFIER_FAULT"
@@ -2444,7 +2815,7 @@
     - name: "Bug Check 0xBFF: BC_BTHMINI_VERIFIER_FAULT"
       href: bug-check-0xbff--bc-bthmini-verifier-fault.md
     - name: "Bug Check 0x20001: HYPERVISOR_ERROR"
-      href: bug-check--0x20001--hypervisor-error.md
+      href: bug-check-0x20001--hypervisor-error.md
     - name: "Bug Check 0x1000007E: SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M"
       href: bug-check-0x1000007e--system-thread-exception-not-handled-m.md
     - name: "Bug Check 0x1000007F: UNEXPECTED_KERNEL_MODE_TRAP_M"
@@ -2457,18 +2828,22 @@
       href: bug-check-0x4000008a--thread-terminate-held-mutex.md
     - name: "Bug Check 0xC0000218: STATUS_CANNOT_LOAD_REGISTRY_FILE"
       href: bug-check-0xc0000218--status-cannot-load-registry-file.md
-    - name: "Bug Check 0xC000021A: STATUS_SYSTEM_PROCESS_TERMINATED"
-      href: bug-check-0xc000021a--status-system-process-terminated.md
+    - name: "Bug Check 0xC000021A: WINLOGON_FATAL_ERROR"
+      href: bug-check-0xc000021a--winlogin-fatal-error.md
     - name: "Bug Check 0xC0000221: STATUS_IMAGE_CHECKSUM_MISMATCH"
       href: bug-check-0xc0000221--status-image-checksum-mismatch.md
     - name: "Bug Check 0xDEADDEAD: MANUALLY_INITIATED_CRASH1"
       href: bug-check-0xdeaddead--manually-initiated-crash1.md
 - name: "Debugger Reference"
-  href: debugger-reference.md
+# Auto-expanded node
   items: 
+  - name: "Debugger Reference"
+    href: debugger-reference.md
   - name: "Command-Line Options"
-    href: command-line-options.md
+# Auto-expanded node
     items: 
+    - name: "Command-Line Options"
+      href: command-line-options.md
     - name: "CDB Command-Line Options"
       href: cdb-command-line-options.md
     - name: "KD Command-Line Options"
@@ -2488,21 +2863,29 @@
     - name: "SymStore Command-Line Options"
       href: symstore-command-line-options.md
   - name: "Environment Variables"
-    href: environment-variables.md
+# Auto-expanded node
     items: 
+    - name: "Environment Variables"
+      href: environment-variables.md
     - name: "General Environment Variables"
       href: general-environment-variables.md
     - name: "Kernel-Mode Environment Variables"
       href: kernel-mode-environment-variables.md
   - name: "Debugger Commands"
-    href: debugger-commands.md
+# Auto-expanded node
     items: 
+    - name: "Debugger Commands"
+      href: debugger-commands.md
     - name: "Syntax Rules"
-      href: syntax-rules.md
+# Auto-expanded node
       items: 
+      - name: "Syntax Rules"
+        href: syntax-rules.md
       - name: "Numerical Expression Syntax"
-        href: numerical-expression-syntax.md
+# Auto-expanded node
         items: 
+        - name: "Numerical Expression Syntax"
+          href: numerical-expression-syntax.md
         - name: "MASM Numbers and Operators"
           href: masm-numbers-and-operators.md
         - name: "C++ Numbers and Operators"
@@ -2532,8 +2915,10 @@
       - name: "Multiprocessor Syntax"
         href: multiprocessor-syntax.md
     - name: "Command Tokens"
-      href: command-tokens.md
+# Auto-expanded node
       items: 
+      - name: "Command Tokens"
+        href: command-tokens.md
       - name: ";  (Command Separator)"
         href: ----command-separator-.md
       - name: "{ }  (Block Delimiter)"
@@ -2571,8 +2956,10 @@
       - name: ".while"
         href: -while.md
     - name: "Commands"
-      href: commands.md
+# Auto-expanded node
       items: 
+      - name: "Commands"
+        href: commands.md
       - name: "ENTER (Repeat Last Command)"
         href: enter--repeat-last-command-.md
       - name: "$<, $><, $$<, $$><, $$ >a< (Run Script File)"
@@ -2774,8 +3161,10 @@
       - name: "z (Execute While)"
         href: z--execute-while-.md
     - name: "Meta-Commands"
-      href: meta-commands.md
+# Auto-expanded node
       items: 
+      - name: "Meta-Commands"
+        href: meta-commands.md
       - name: ".abandon (Abandon Process)"
         href: -abandon--abandon-process-.md
       - name: ".allow_exec_cmds (Allow Execution Commands)"
@@ -3089,8 +3478,10 @@
       - name: ".wtitle (Set Window Title)"
         href: -wtitle--set-window-title-.md
     - name: "Control Keys"
-      href: control-keys.md
+# Auto-expanded node
       items: 
+      - name: "Control Keys"
+        href: control-keys.md
       - name: "CTRL+\\ (Debug Current Debugger)"
         href: ctrl--.md
       - name: "CTRL+ALT+\\  (Debug Current Debugger)"
@@ -3116,8 +3507,10 @@
       - name: "CTRL+W (Show Debugger Version)"
         href: ctrl-w--show-debugger-version-.md
     - name: "General Extension Commands"
-      href: general-extensions.md
+# Auto-expanded node
       items: 
+      - name: "General Extension Commands"
+        href: general-extensions.md
       - name: "!acl"
         href: -acl.md
       - name: "!address"
@@ -3154,8 +3547,6 @@
         href: -dml-proc.md
       - name: "!dumpfa"
         href: -dumpfa.md
-      - name: "!elog_str"
-        href: -elog-str.md
       - name: "!envvar"
         href: -envvar.md
       - name: "!error"
@@ -3253,8 +3644,10 @@
       - name: "!winrterr"
         href: -winrterr.md
     - name: "Kernel-Mode Extension Commands"
-      href: kernel-mode-extensions.md
+# Auto-expanded node
       items: 
+      - name: "Kernel-Mode Extension Commands"
+        href: kernel-mode-extensions.md
       - name: "!ahcache"
         href: -ahcache.md
       - name: "!alignmentfaults"
@@ -3514,7 +3907,7 @@
       - name: "!ppmperfpolicy"
         href: -ppmperfpolicy.md
       - name: "!ppmsettings"
-        href: -ppmstate.md
+        href: -ppmsettings.md
       - name: "!ppmstate"
         href: -ppmstate.md
       - name: "!prcb"
@@ -3630,8 +4023,10 @@
       - name: "!zombies"
         href: -zombies.md
     - name: "User-Mode Extension Commands"
-      href: user-mode-extensions.md
+# Auto-expanded node
       items: 
+      - name: "User-Mode Extension Commands"
+        href: user-mode-extensions.md
       - name: "!avrf"
         href: -avrf.md
       - name: "!critsec"
@@ -3642,8 +4037,6 @@
         href: -dreg.md
       - name: "!dt"
         href: -dt.md
-      - name: "!evlog"
-        href: -evlog.md
       - name: "!findstack"
         href: -findstack.md
       - name: "!gatom"
@@ -3665,11 +4058,15 @@
       - name: "!vprot"
         href: -vprot.md
     - name: "Specialized Extension Commands"
-      href: specialized-extensions.md
+# Auto-expanded node
       items: 
+      - name: "Specialized Extension Commands"
+        href: specialized-extensions.md
       - name: "Storage Kernel Debugger Extensions"
-        href: storage-kernel-debugger-extensions.md
+# Auto-expanded node
         items: 
+        - name: "Storage Kernel Debugger Extensions"
+          href: storage-kernel-debugger-extensions.md
         - name: "!storagekd.storadapter"
           href: -storagekd-storadapter.md
         - name: "!storagekd.storclass"
@@ -3687,8 +4084,10 @@
         - name: "!storagekd.storunit"
           href: -storagekd-storunit.md
       - name: "Bluetooth Extensions (Bthkd.dll)"
-        href: bluetooh-extensions--bthkd-dll-.md
+# Auto-expanded node
         items: 
+        - name: "Bluetooth Extensions (Bthkd.dll)"
+          href: bluetooh-extensions--bthkd-dll-.md
         - name: "!bthkd.bthdevinfo"
           href: -bthkd-bthdevinfo.md
         - name: "!bthkd.bthenuminfo"
@@ -3724,8 +4123,10 @@
         - name: "!bthkd.sdpstream"
           href: -bthkd-sdpstream.md
       - name: "GPIO Extensions"
-        href: gpio-extensions.md
+# Auto-expanded node
         items: 
+        - name: "GPIO Extensions"
+          href: gpio-extensions.md
         - name: "!gpiokd.help"
           href: -gpiokd-help.md
         - name: "!gpiokd.bankinfo"
@@ -3741,8 +4142,10 @@
         - name: "!gpiokd.pintable"
           href: -gpiokd-pintable.md
       - name: "USB 3.0 Extensions"
-        href: usb-3-extensions.md
+# Auto-expanded node
         items: 
+        - name: "USB 3.0 Extensions"
+          href: usb-3-extensions.md
         - name: "USB 3.0 Data Structures"
           href: usb-3-0-data-structures.md
         - name: "!usb3kd.help"
@@ -3798,8 +4201,10 @@
         - name: "!usb3kd.xhci_transferring"
           href: -usb3kd-xhci-transferring.md
       - name: "USB 2.0 Debugger Extensions"
-        href: usb-2-0-extensions.md
+# Auto-expanded node
         items: 
+        - name: "USB 2.0 Debugger Extensions"
+          href: usb-2-0-extensions.md
         - name: "!usbkd.usbhelp"
           href: -usbkd-usbhelp.md
         - name: "!usbkd._ehcidd"
@@ -3913,8 +4318,10 @@
         - name: "!usbkd.usbver"
           href: -usbkd-usbver.md
       - name: "RCDRKD Extensions"
-        href: rcdrkd-extensions.md
+# Auto-expanded node
         items: 
+        - name: "RCDRKD Extensions"
+          href: rcdrkd-extensions.md
         - name: "!rcdrkd.rcdrhelp"
           href: -rcdrkd-rcdrhelp.md
         - name: "!rcdrkd.rcdrcrashdump"
@@ -3934,8 +4341,10 @@
         - name: "!rcdrkd.rcdrtraceprtdebug"
           href: -rcdrkd-rcdrtraceprtdebug.md
       - name: "HID Extensions"
-        href: hid-extensions.md
+# Auto-expanded node
         items: 
+        - name: "HID Extensions"
+          href: hid-extensions.md
         - name: "!hidkd.help"
           href: -hidkd-help.md
         - name: "!hidkd.hidfdo"
@@ -3949,8 +4358,10 @@
         - name: "!hidkd.hidrd"
           href: -hidkd-hidrd.md
       - name: "Logger Extensions (Logexts.dll)"
-        href: logger-extensions--logexts-dll-.md
+# Auto-expanded node
         items: 
+        - name: "Logger Extensions (Logexts.dll)"
+          href: logger-extensions--logexts-dll-.md
         - name: "!logexts.help"
           href: -logexts-help.md
         - name: "!logexts.logb"
@@ -3968,8 +4379,10 @@
         - name: "!logexts.logo"
           href: -logexts-logo.md
       - name: "NDIS Extensions (Ndiskd.dll)"
-        href: ndis-extensions--ndiskd-dll-.md
+# Auto-expanded node
         items: 
+        - name: "NDIS Extensions (Ndiskd.dll)"
+          href: ndis-extensions--ndiskd-dll-.md
         - name: "!ndiskd.help"
           href: -ndiskd-help.md
         - name: "!ndiskd.netadapter"
@@ -3998,16 +4411,6 @@
           href: -ndiskd-pendingnbls.md
         - name: "!ndiskd.nbllog"
           href: -ndiskd-nbllog.md
-        - name: "!ndiskd.cxadapter"
-          href: -ndiskd-cxadapter.md
-        - name: "!ndiskd.netqueue"
-          href: -ndiskd-netqueue.md
-        - name: "!ndiskd.netrb"
-          href: -ndiskd-netrb.md
-        - name: "!ndiskd.netpacket"
-          href: -ndiskd-netpacket.md
-        - name: "!ndiskd.netpacketfragment"
-          href: -ndiskd-netpacketfragment.md
         - name: "!ndiskd.oid"
           href: -ndiskd-oid.md
         - name: "!ndiskd.interfaces"
@@ -4054,9 +4457,28 @@
           href: -ndiskd-ndiskdversion.md
         - name: "!ndiskd.netreport"
           href: -ndiskd-netreport.md
+        - name: "NDIS CX Extensions (Ndiskd.dll)"
+# Auto-expanded node
+          items: 
+          - name: "!ndiskd.cxadapter"
+            href: -ndiskd-cxadapter.md
+          - name: "!ndiskd.netqueue"
+            href: -ndiskd-netqueue.md
+          - name: "!ndiskd.netrb"
+            href: -ndiskd-netrb.md
+          - name: "!ndiskd.netpacket"
+            href: -ndiskd-netpacket.md
+          - name: "!ndiskd.netfragment"
+            href: -ndiskd-netfragment.md
+          - name: "!ndiskd.nrc"
+            href: -ndiskd-nrc.md
+          - name: "!ndiskd.netring"
+            href: -ndiskd-netring.md
       - name: "RPC Extensions (Rpcexts.dll)"
-        href: rpc-extensions--rpcexts-dll-.md
+# Auto-expanded node
         items: 
+        - name: "RPC Extensions (Rpcexts.dll)"
+          href: rpc-extensions--rpcexts-dll-.md
         - name: "!rpcexts.checkrpcsym"
           href: -rpcexts-checkrpcsym.md
         - name: "!rpcexts.eeinfo"
@@ -4082,8 +4504,10 @@
         - name: "!rpcexts.thread"
           href: -rpcexts-thread.md
       - name: "ACPI Extensions (Acpikd.dll and Kdexts.dll)"
-        href: acpi-extensions--acpikd-dll-and-kdexts-dll-.md
+# Auto-expanded node
         items: 
+        - name: "ACPI Extensions (Acpikd.dll and Kdexts.dll)"
+          href: acpi-extensions--acpikd-dll-and-kdexts-dll-.md
         - name: "!acpicache"
           href: -acpicache.md
         - name: "!acpiinf"
@@ -4143,13 +4567,17 @@
         - name: "!rsdt"
           href: -rsdt.md
       - name: "Graphics Driver Extensions (Gdikdx.dll)"
-        href: graphics-driver-extensions--gdikdx-dll-.md
+# Auto-expanded node
         items: 
+        - name: "Graphics Driver Extensions (Gdikdx.dll)"
+          href: graphics-driver-extensions--gdikdx-dll-.md
         - name: "!gdikdx.verifier"
           href: -gdikdx-verifier.md
       - name: "Kernel Streaming Extensions (Ks.dll)"
-        href: kernel-streaming-extensions--ks-dll-.md
+# Auto-expanded node
         items: 
+        - name: "Kernel Streaming Extensions (Ks.dll)"
+          href: kernel-streaming-extensions--ks-dll-.md
         - name: "!ks.help"
           href: -ks-help.md
         - name: "!ks.kshelp"
@@ -4201,8 +4629,10 @@
         - name: "!ks.topology"
           href: -ks-topology.md
       - name: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
-        href: scsi-miniport-extensions--scsikd-dll-and-minipkd-dll-.md
+# Auto-expanded node
         items: 
+        - name: "SCSI Miniport Extensions (Scsikd.dll and Minipkd.dll)"
+          href: scsi-miniport-extensions--scsikd-dll-and-minipkd-dll-.md
         - name: "!scsikd.help"
           href: -scsikd-help.md
         - name: "!scsikd.classext"
@@ -4228,8 +4658,10 @@
         - name: "!minipkd.srb"
           href: -minipkd-srb.md
       - name: "Windows Driver Framework Extensions (Wdfkd.dll)"
-        href: kernel-mode-driver-framework-extensions--wdfkd-dll-.md
+# Auto-expanded node
         items: 
+        - name: "Windows Driver Framework Extensions (Wdfkd.dll)"
+          href: kernel-mode-driver-framework-extensions--wdfkd-dll-.md
         - name: "!wdfkd.help"
           href: -wdfkd-help.md
         - name: "!wdfkd.wdfchildlist"
@@ -4331,8 +4763,10 @@
         - name: "!wdfkd.wdfwmi"
           href: -wdfkd-wdfwmi.md
       - name: "User-Mode Driver Framework Extensions (Wudfext.dll)"
-        href: user-mode-driver-framework-extensions--wudfext-dll-.md
+# Auto-expanded node
         items: 
+        - name: "User-Mode Driver Framework Extensions (Wudfext.dll)"
+          href: user-mode-driver-framework-extensions--wudfext-dll-.md
         - name: "!wudfext.help"
           href: -wudfext-help.md
         - name: "!wudfext.umdevstack"
@@ -4376,8 +4810,10 @@
         - name: "!wudfext.wudfusbtarget"
           href: -wudfext-wudfusbtarget.md
       - name: "WMI Tracing Extensions (Wmitrace.dll)"
-        href: wmi-tracing-extensions--wmitrace-dll-.md
+# Auto-expanded node
         items: 
+        - name: "WMI Tracing Extensions (Wmitrace.dll)"
+          href: wmi-tracing-extensions--wmitrace-dll-.md
         - name: "!wmitrace.disable"
           href: -wmitrace-disable.md
         - name: "!wmitrace.dumpmini"
@@ -4414,13 +4850,11 @@
           href: -wmitrace-tmffile.md
         - name: "!wmitrace.traceoperation"
           href: -wmitrace-traceoperation.md
-      - name: "OEM Support Extensions (kdex2x86.dll)"
-        href: oem-support-extensions--kdex2x86-dll-.md
-      - name: "SieExtPub.dll"
-        href: sieextpub-dll.md
   - name: "Debugger-Related APIs"
-    href: debugger-related-apis.md
+# Auto-expanded node
     items: 
+    - name: "Debugger-Related APIs"
+      href: debugger-related-apis.md
     - name: "Symbol Server API"
       href: symbol-server-api.md
     - name: "The dbgeng.h Header File"
@@ -4428,8 +4862,10 @@
     - name: "The wdbgexts.h Header File"
       href: the-wdbgexts-h-header-file.md
   - name: "Debugger Error and Warning Messages"
-    href: debugger-error-and-warning-messages.md
+# Auto-expanded node
     items: 
+    - name: "Debugger Error and Warning Messages"
+      href: debugger-error-and-warning-messages.md
     - name: "dbgerr001: PEB is Paged Out"
       href: dbgerr001--peb-is-paged-out.md
     - name: "dbgerr002: Bad Pointer"
@@ -4445,11 +4881,15 @@
     - name: "No Header Information Available"
       href: no-header-information-available.md
   - name: "WinDbg Graphical Interface Features"
-    href: windbg-graphical-interface-features.md
+# Auto-expanded node
     items: 
+    - name: "WinDbg Graphical Interface Features"
+      href: windbg-graphical-interface-features.md
     - name: "File Menu"
-      href: file-menu.md
+# Auto-expanded node
       items: 
+      - name: "File Menu"
+        href: file-menu.md
       - name: "File | Open Source File"
         href: file---open-source-file.md
       - name: "File | Close Current Window"
@@ -4495,8 +4935,10 @@
       - name: "File | Exit"
         href: file---exit.md
     - name: "Edit Menu"
-      href: edit-menu.md
+# Auto-expanded node
       items: 
+      - name: "Edit Menu"
+        href: edit-menu.md
       - name: "Edit | Cut"
         href: edit---cut.md
       - name: "Edit | Copy"
@@ -4532,8 +4974,10 @@
       - name: "Edit | Open/Close Log File"
         href: edit---open-close-log-file.md
     - name: "View Menu"
-      href: view-menu.md
+# Auto-expanded node
       items: 
+      - name: "View Menu"
+        href: view-menu.md
       - name: "View | Command"
         href: view---command.md
       - name: "View | Watch"
@@ -4571,8 +5015,10 @@
       - name: "View | WinDbg Command Line"
         href: view---windbg-command-line.md
     - name: "Debug Menu"
-      href: debug-menu.md
+# Auto-expanded node
       items: 
+      - name: "Debug Menu"
+        href: debug-menu.md
       - name: "Debug | Go"
         href: debug---go.md
       - name: "Debug | Go Unhandled Exception"
@@ -4610,8 +5056,10 @@
       - name: "Debug | Kernel Connection | Resynchronize"
         href: debug---kernel-connection---resynchronize.md
     - name: "Window Menu"
-      href: window-menu.md
+# Auto-expanded node
       items: 
+      - name: "Window Menu"
+        href: window-menu.md
       - name: "Window | Close All Source Windows"
         href: window---close-all-source-windows.md
       - name: "Window | Close All Error Windows"
@@ -4629,8 +5077,10 @@
       - name: "List of Open Windows"
         href: list-of-open-windows.md
     - name: "Help Menu"
-      href: help-menu.md
+# Auto-expanded node
       items: 
+      - name: "Help Menu"
+        href: help-menu.md
       - name: "Help | Contents"
         href: help---contents.md
       - name: "Help | Index"

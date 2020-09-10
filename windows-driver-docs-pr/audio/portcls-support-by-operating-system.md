@@ -30,170 +30,165 @@ The following lists contain all the functions and interfaces that the PortCls sy
 
 ### <span id="Audio_Port_Class_Functions"></span><span id="audio_port_class_functions"></span><span id="AUDIO_PORT_CLASS_FUNCTIONS"></span>Audio Port Class Functions
 
-[**PcAddAdapterDevice**](https://msdn.microsoft.com/library/windows/hardware/ff537683)
+[**PcAddAdapterDevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddadapterdevice)
 
-\* [**PcAddContentHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff537684)
+\* [**PcAddContentHandlers**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddcontenthandlers)
 
-[**PcCompleteIrp**](https://msdn.microsoft.com/library/windows/hardware/ff537686)
+[**PcCompleteIrp**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pccompleteirp)
 
-[**PcCompletePendingPropertyRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537687)
+[**PcCompletePendingPropertyRequest**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pccompletependingpropertyrequest)
 
-\* [**PcCreateContentMixed**](https://msdn.microsoft.com/library/windows/hardware/ff537689)
+\* [**PcCreateContentMixed**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pccreatecontentmixed)
 
-\* [**PcDestroyContent**](https://msdn.microsoft.com/library/windows/hardware/ff537690)
+\* [**PcDestroyContent**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcdestroycontent)
 
-[**PcDispatchIrp**](https://msdn.microsoft.com/library/windows/hardware/ff537691)
+[**PcDispatchIrp**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcdispatchirp)
 
-\* [**PcForwardContentToDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff537696)
+\* [**PcForwardContentToDeviceObject**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardcontenttodeviceobject)
 
-\* [**PcForwardContentToFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff537697)
+\* [**PcForwardContentToFileObject**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardcontenttofileobject)
 
-\* [**PcForwardContentToInterface**](https://msdn.microsoft.com/library/windows/hardware/ff537698)
+\* [**PcForwardContentToInterface**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardcontenttointerface)
 
-[**PcForwardIrpSynchronous**](https://msdn.microsoft.com/library/windows/hardware/ff537699)
+[**PcForwardIrpSynchronous**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardirpsynchronous)
 
-\* [**PcGetContentRights**](https://msdn.microsoft.com/library/windows/hardware/ff537700)
+\* [**PcGetContentRights**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgetcontentrights)
 
-[**PcGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff537701)
+[**PcGetDeviceProperty**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgetdeviceproperty)
 
-[**PcGetTimeInterval**](https://msdn.microsoft.com/library/windows/hardware/ff537702)
+[**PcGetTimeInterval**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgettimeinterval)
 
-[**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703)
+[**PcInitializeAdapterDriver**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcinitializeadapterdriver)
 
-[**PcNewDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff537712)
+[**PcNewDmaChannel**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewdmachannel)
 
-[**PcNewInterruptSync**](https://msdn.microsoft.com/library/windows/hardware/ff537713)
+[**PcNewInterruptSync**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewinterruptsync)
 
-[**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714)
+[**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport)
 
-[**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715)
+[**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport)
 
-[**PcNewRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff537716)
+[**PcNewRegistryKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewregistrykey)
 
-[**PcNewResourceList**](https://msdn.microsoft.com/library/windows/hardware/ff537717)
+[**PcNewResourceList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcelist)
 
-[**PcNewResourceSublist**](https://msdn.microsoft.com/library/windows/hardware/ff537718)
+[**PcNewResourceSublist**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcesublist)
 
-[**PcNewServiceGroup**](https://msdn.microsoft.com/library/windows/hardware/ff537719)
+[**PcNewServiceGroup**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewservicegroup)
 
-[**PcRegisterAdapterPowerManagement**](https://msdn.microsoft.com/library/windows/hardware/ff537724)
+[**PcRegisterAdapterPowerManagement**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteradapterpowermanagement)
 
-[**PcRegisterIoTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff537725)
+[**PcRegisterIoTimeout**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteriotimeout)
 
-[**PcRegisterPhysicalConnection**](https://msdn.microsoft.com/library/windows/hardware/ff537726)
+[**PcRegisterPhysicalConnection**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection)
 
-[**PcRegisterPhysicalConnectionFromExternal**](https://msdn.microsoft.com/library/windows/hardware/ff537728)
+[**PcRegisterPhysicalConnectionFromExternal**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectionfromexternal)
 
-[**PcRegisterPhysicalConnectionToExternal**](https://msdn.microsoft.com/library/windows/hardware/ff537729)
+[**PcRegisterPhysicalConnectionToExternal**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectiontoexternal)
 
-[**PcRegisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537731)
+[**PcRegisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice)
 
-[**PcRequestNewPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff537733)
+[**PcRequestNewPowerState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcrequestnewpowerstate)
 
-[**PcUnregisterIoTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff537736)
+[**PcUnregisterIoTimeout**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcunregisteriotimeout)
 
 ### <span id="Audio_Helper_Object_Interfaces"></span><span id="audio_helper_object_interfaces"></span><span id="AUDIO_HELPER_OBJECT_INTERFACES"></span>Audio Helper Object Interfaces
 
-[IDmaChannel](https://msdn.microsoft.com/library/windows/hardware/ff536547)
+[IDmaChannel](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel)
 
-[IDmaChannelSlave](https://msdn.microsoft.com/library/windows/hardware/ff536548)
+[IDmaChannelSlave](/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannelslave)
 
-\* [IDrmPort](https://msdn.microsoft.com/library/windows/hardware/ff536571)
+\* [IDrmPort](/windows-hardware/drivers/ddi/portcls/nn-portcls-idrmport)
 
-\* [IDrmPort2](https://msdn.microsoft.com/library/windows/hardware/ff536573)
+\* [IDrmPort2](/windows-hardware/drivers/ddi/portcls/nn-portcls-idrmport2)
 
-[IInterruptSync](https://msdn.microsoft.com/library/windows/hardware/ff536590)
+[IInterruptSync](/windows-hardware/drivers/ddi/portcls/nn-portcls-iinterruptsync)
 
-[IMasterClock](https://msdn.microsoft.com/library/windows/hardware/ff536696)
+[IMasterClock](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imasterclock)
 
-\* [IPortClsVersion](https://msdn.microsoft.com/library/windows/hardware/ff536877)
+\* [IPortClsVersion](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsversion)
 
-[IPortEvents](https://msdn.microsoft.com/library/windows/hardware/ff536884)
+[IPortEvents](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportevents)
 
-\* [IPreFetchOffset](https://msdn.microsoft.com/library/windows/hardware/ff536951)
+\* [IPreFetchOffset](/windows-hardware/drivers/ddi/portcls/nn-portcls-iprefetchoffset)
 
-[IRegistryKey](https://msdn.microsoft.com/library/windows/hardware/ff536965)
+[IRegistryKey](/windows-hardware/drivers/ddi/portcls/nn-portcls-iregistrykey)
 
-[IResourceList](https://msdn.microsoft.com/library/windows/hardware/ff536976)
+[IResourceList](/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist)
 
-[IServiceGroup](https://msdn.microsoft.com/library/windows/hardware/ff536994)
+[IServiceGroup](/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup)
 
-[IServiceSink](https://msdn.microsoft.com/library/windows/hardware/ff537006)
+[IServiceSink](/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink)
 
-\*\* [IUnregisterPhysicalConnection](https://msdn.microsoft.com/library/windows/hardware/ff537022)
+\*\* [IUnregisterPhysicalConnection](/windows-hardware/drivers/ddi/portcls/nn-portcls-iunregisterphysicalconnection)
 
-\*\* [IUnregisterSubdevice](https://msdn.microsoft.com/library/windows/hardware/ff537030)
+\*\* [IUnregisterSubdevice](/windows-hardware/drivers/ddi/portcls/nn-portcls-iunregistersubdevice)
 
 ### <span id="Audio_Port_Object_Interfaces"></span><span id="audio_port_object_interfaces"></span><span id="AUDIO_PORT_OBJECT_INTERFACES"></span>Audio Port Object Interfaces
 
-[IPort](https://msdn.microsoft.com/library/windows/hardware/ff536842)
+[IPort](/windows-hardware/drivers/ddi/portcls/nn-portcls-iport)
 
-[IPortDMus](https://msdn.microsoft.com/library/windows/hardware/ff536879)
+[IPortDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iportdmus)
 
-[IPortMidi](https://msdn.microsoft.com/library/windows/hardware/ff536891)
+[IPortMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportmidi)
 
-[IPortTopology](https://msdn.microsoft.com/library/windows/hardware/ff536896)
+[IPortTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology)
 
-[IPortWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536899)
+[IPortWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic)
 
-[IPortWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536905)
+[IPortWavePci](/previous-versions/windows/hardware/drivers/ff536905(v=vs.85))
 
-\*\* [IPortWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536920)
+\*\* [IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert)
 
 ### <span id="Audio_Miniport_Object_Interfaces"></span><span id="audio_miniport_object_interfaces"></span><span id="AUDIO_MINIPORT_OBJECT_INTERFACES"></span>Audio Miniport Object Interfaces
 
-[IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698)
+[IMiniport](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport)
 
-[IMiniportDMus](https://msdn.microsoft.com/library/windows/hardware/ff536699)
+[IMiniportDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iminiportdmus)
 
-[IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703)
+[IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi)
 
-[IMiniportTopology](https://msdn.microsoft.com/library/windows/hardware/ff536712)
+[IMiniportTopology](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiporttopology)
 
-[IMiniportWaveCyclic](https://msdn.microsoft.com/library/windows/hardware/ff536714)
+[IMiniportWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclic)
 
-[IMiniportWavePci](https://msdn.microsoft.com/library/windows/hardware/ff536724)
+[IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci)
 
-\*\* [IMiniportWaveRT](https://msdn.microsoft.com/library/windows/hardware/ff536737)
+\*\* [IMiniportWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavert)
 
 ### <span id="Audio_Miniport_Auxiliary_Interfaces"></span><span id="audio_miniport_auxiliary_interfaces"></span><span id="AUDIO_MINIPORT_AUXILIARY_INTERFACES"></span>Audio Miniport Auxiliary Interfaces
 
-\* [IMusicTechnology](https://msdn.microsoft.com/library/windows/hardware/ff536778)
+\* [IMusicTechnology](/windows-hardware/drivers/ddi/portcls/nn-portcls-imusictechnology)
 
-\* [IPinCount](https://msdn.microsoft.com/library/windows/hardware/ff536832)
+\* [IPinCount](/windows-hardware/drivers/ddi/portcls/nn-portcls-ipincount)
 
 ### <span id="Audio_Stream_Object_Interfaces"></span><span id="audio_stream_object_interfaces"></span><span id="AUDIO_STREAM_OBJECT_INTERFACES"></span>Audio Stream Object Interfaces
 
-[IAllocatorMXF](https://msdn.microsoft.com/library/windows/hardware/ff536491)
+[IAllocatorMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-iallocatormxf)
 
-\* [IDrmAudioStream](https://msdn.microsoft.com/library/windows/hardware/ff536568)
+\* [IDrmAudioStream](/windows-hardware/drivers/ddi/drmk/nn-drmk-idrmaudiostream)
 
-[IMiniportMidiStream](https://msdn.microsoft.com/library/windows/hardware/ff536704)
+[IMiniportMidiStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidistream)
 
-[IMiniportWaveCyclicStream](https://msdn.microsoft.com/library/windows/hardware/ff536715)
+[IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream)
 
-[IMiniportWavePciStream](https://msdn.microsoft.com/library/windows/hardware/ff536725)
+[IMiniportWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream)
 
-\*\* [IMiniportWaveRTStream](https://msdn.microsoft.com/library/windows/hardware/ff536738)
+\*\* [IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream)
 
-[IMXF](https://msdn.microsoft.com/library/windows/hardware/ff536782)
+[IMXF](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-imxf)
 
-[IPortWavePciStream](https://msdn.microsoft.com/library/windows/hardware/ff536907)
+[IPortWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepcistream)
 
-\*\* [IPortWaveRTStream](https://msdn.microsoft.com/library/windows/hardware/ff536922)
+\*\* [IPortWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavertstream)
 
-[ISynthSinkDMus](https://msdn.microsoft.com/library/windows/hardware/ff537011)
+[ISynthSinkDMus](/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-isynthsinkdmus)
 
 ### <span id="Audio_Power_Management_Interfaces"></span><span id="audio_power_management_interfaces"></span><span id="AUDIO_POWER_MANAGEMENT_INTERFACES"></span>Audio Power Management Interfaces
 
-[IAdapterPowerManagement](https://msdn.microsoft.com/library/windows/hardware/ff536485)
+[IAdapterPowerManagement](/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement)
 
-[IPowerNotify](https://msdn.microsoft.com/library/windows/hardware/ff536947)
-
- 
+[IPowerNotify](/windows-hardware/drivers/ddi/portcls/nn-portcls-ipowernotify)
 
  
-
-
-
 

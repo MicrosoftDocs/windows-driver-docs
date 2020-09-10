@@ -14,81 +14,75 @@ ms.localizationpriority: medium
 
 This section describes, in alphabetic order, the general functions that the PortCls system driver (portcls.sys) provides. These functions do not belong to any interface. They are used by audio miniport drivers to perform operations of general utility such as registering with the PortCls and installing subdevices.
 
-For a list of which versions of the operating system support the various PortCls functions, see [PortCls Support by Operating System](https://msdn.microsoft.com/library/windows/hardware/ff537762).
+For a list of which versions of the operating system support the various PortCls functions, see [PortCls Support by Operating System](./portcls-support-by-operating-system.md).
 
 PortCls implements the following functions:
 
-[**PcAddAdapterDevice**](https://msdn.microsoft.com/library/windows/hardware/ff537683)
+[**PcAddAdapterDevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddadapterdevice)
 
-[**PcAddContentHandlers**](https://msdn.microsoft.com/library/windows/hardware/ff537684)
+[**PcAddContentHandlers**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddcontenthandlers)
 
-[**PcCompleteIrp**](https://msdn.microsoft.com/library/windows/hardware/ff537686)
+[**PcCompleteIrp**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pccompleteirp)
 
-[**PcCompletePendingPropertyRequest**](https://msdn.microsoft.com/library/windows/hardware/ff537687)
+[**PcCompletePendingPropertyRequest**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pccompletependingpropertyrequest)
 
-[**PcCreateContentMixed**](https://msdn.microsoft.com/library/windows/hardware/ff537689)
+[**PcCreateContentMixed**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pccreatecontentmixed)
 
-[**PcDestroyContent**](https://msdn.microsoft.com/library/windows/hardware/ff537690)
+[**PcDestroyContent**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcdestroycontent)
 
-[**PcDispatchIrp**](https://msdn.microsoft.com/library/windows/hardware/ff537691)
+[**PcDispatchIrp**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcdispatchirp)
 
-[**PcForwardContentToDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/ff537696)
+[**PcForwardContentToDeviceObject**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardcontenttodeviceobject)
 
-[**PcForwardContentToFileObject**](https://msdn.microsoft.com/library/windows/hardware/ff537697)
+[**PcForwardContentToFileObject**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardcontenttofileobject)
 
-[**PcForwardContentToInterface**](https://msdn.microsoft.com/library/windows/hardware/ff537698)
+[**PcForwardContentToInterface**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardcontenttointerface)
 
-[**PcForwardIrpSynchronous**](https://msdn.microsoft.com/library/windows/hardware/ff537699)
+[**PcForwardIrpSynchronous**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardirpsynchronous)
 
-[**PcGetContentRights**](https://msdn.microsoft.com/library/windows/hardware/ff537700)
+[**PcGetContentRights**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgetcontentrights)
 
-[**PcGetDeviceProperty**](https://msdn.microsoft.com/library/windows/hardware/ff537701)
+[**PcGetDeviceProperty**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgetdeviceproperty)
 
-[**PcGetPhysicalDeviceObject**](https://msdn.microsoft.com/library/windows/hardware/hh706182)
+[**PcGetPhysicalDeviceObject**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgetphysicaldeviceobject)
 
-[**PcGetTimeInterval**](https://msdn.microsoft.com/library/windows/hardware/ff537702)
+[**PcGetTimeInterval**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcgettimeinterval)
 
-[**PcInitializeAdapterDriver**](https://msdn.microsoft.com/library/windows/hardware/ff537703)
+[**PcInitializeAdapterDriver**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcinitializeadapterdriver)
 
-[**PcNewDmaChannel**](https://msdn.microsoft.com/library/windows/hardware/ff537712)
+[**PcNewDmaChannel**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewdmachannel)
 
-[**PcNewInterruptSync**](https://msdn.microsoft.com/library/windows/hardware/ff537713)
+[**PcNewInterruptSync**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewinterruptsync)
 
-[**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714)
+[**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport)
 
-[**PcNewPort**](https://msdn.microsoft.com/library/windows/hardware/ff537715)
+[**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport)
 
-[**PcNewRegistryKey**](https://msdn.microsoft.com/library/windows/hardware/ff537716)
+[**PcNewRegistryKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewregistrykey)
 
-[**PcNewResourceList**](https://msdn.microsoft.com/library/windows/hardware/ff537717)
+[**PcNewResourceList**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcelist)
 
-[**PcNewResourceSublist**](https://msdn.microsoft.com/library/windows/hardware/ff537718)
+[**PcNewResourceSublist**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewresourcesublist)
 
-[**PcNewServiceGroup**](https://msdn.microsoft.com/library/windows/hardware/ff537719)
+[**PcNewServiceGroup**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewservicegroup)
 
-[**PcRegisterAdapterPowerManagement**](https://msdn.microsoft.com/library/windows/hardware/ff537724)
+[**PcRegisterAdapterPowerManagement**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteradapterpowermanagement)
 
-[**PcRegisterIoTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff537725)
+[**PcRegisterIoTimeout**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteriotimeout)
 
-[**PcRegisterPhysicalConnection**](https://msdn.microsoft.com/library/windows/hardware/ff537726)
+[**PcRegisterPhysicalConnection**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection)
 
-[**PcRegisterPhysicalConnectionFromExternal**](https://msdn.microsoft.com/library/windows/hardware/ff537728)
+[**PcRegisterPhysicalConnectionFromExternal**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectionfromexternal)
 
-[**PcRegisterPhysicalConnectionToExternal**](https://msdn.microsoft.com/library/windows/hardware/ff537729)
+[**PcRegisterPhysicalConnectionToExternal**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnectiontoexternal)
 
-[**PcRegisterSubdevice**](https://msdn.microsoft.com/library/windows/hardware/ff537731)
+[**PcRegisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice)
 
-[**PcRequestNewPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff537733)
+[**PcRequestNewPowerState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcrequestnewpowerstate)
 
-[**PcUnregisterAdapterPowerManagement**](https://msdn.microsoft.com/library/windows/hardware/ff537735)
+[**PcUnregisterAdapterPowerManagement**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcunregisteradapterpowermanagement)
 
-[**PcUnregisterIoTimeout**](https://msdn.microsoft.com/library/windows/hardware/ff537736)
-
- 
+[**PcUnregisterIoTimeout**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcunregisteriotimeout)
 
  
-
-
-
-
 

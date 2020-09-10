@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The THREAD\_STUCK\_IN\_DEVICE\_DRIVER bug check has a value of 0x000000EA. This indicates that a thread in a device driver is endlessly spinning.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## THREAD\_STUCK\_IN\_DEVICE\_DRIVER Parameters
 
@@ -49,7 +51,7 @@ The THREAD\_STUCK\_IN\_DEVICE\_DRIVER bug check has a value of 0x000000EA. This 
 </tr>
 <tr class="even">
 <td align="left"><p>4</p></td>
-<td align="left"><p><strong>In the kernel debugger:</strong> The number of times the &quot;intercepted&quot; bug check 0xEA was hit</p>
+<td align="left"><p><strong>In the kernel debugger:</strong> The number of times the "intercepted" bug check 0xEA was hit</p>
 <p><strong>On the blue screen:</strong> 1</p></td>
 </tr>
 </tbody>

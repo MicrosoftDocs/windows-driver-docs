@@ -11,9 +11,9 @@ ms.localizationpriority: medium
 # WSK\_CACHE\_SD
 
 
-A WSK application uses the WSK\_CACHE\_SD client control operation to obtain a cached copy of a security descriptor that can be passed to the [**WskSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571149), [**WskSocketConnect**](https://msdn.microsoft.com/library/windows/hardware/ff571150), and [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) functions.
+A WSK application uses the WSK\_CACHE\_SD client control operation to obtain a cached copy of a security descriptor that can be passed to the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket), [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect), and [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) functions.
 
-To obtain a cached copy of a security descriptor, a WSK application calls the [**WskControlClient**](https://msdn.microsoft.com/library/windows/hardware/ff571126) function with the following parameters.
+To obtain a cached copy of a security descriptor, a WSK application calls the [**WskControlClient**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>
@@ -85,9 +85,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The required **button** element specifies the characteristics of a button in a message box that is displayed on the client computer.
 
-The **button** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **button** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
 
 Usage
 -----
@@ -56,9 +56,9 @@ Attributes
 <td><p></p>
 <p>A required attribute that specifies the string that will be returned to the printer driver when the user clicks the button. This attribute can take one of the following values:</p>
 IDOK
-A button with the name &quot;OK&quot; will be displayed in the message box. When the user clicks the button, the message box returns the string &quot;IDOK&quot;.
+A button with the name "OK" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDOK".
 IDCANCEL
-A button with the name &quot;CANCEL&quot; will be displayed in the message box. When the user clicks the button, the message box returns the string &quot;IDCANCEL&quot;.</td>
+A button with the name "CANCEL" will be displayed in the message box. When the user clicks the button, the message box returns the string "IDCANCEL".</td>
 </tr>
 <tr class="even">
 <td><p><strong>resourceDll</strong></p></td>
@@ -118,7 +118,7 @@ The following code example shows how to use the **button** element to display **
 ```xml
 <?xml version="1.0" ?>
   <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <messageBoxUI>

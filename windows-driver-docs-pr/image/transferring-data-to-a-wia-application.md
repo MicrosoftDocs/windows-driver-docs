@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 
 
-When an application initiates a data transfer, the WIA service calls the [**IWiaMiniDrv::drvAcquireItemData**](https://msdn.microsoft.com/library/windows/hardware/ff543956) method to perform the transfer. This method is responsible for acquiring data from the device and sending that data back to the application using the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://msdn.microsoft.com/library/windows/hardware/ff543946) method.
+When an application initiates a data transfer, the WIA service calls the [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method to perform the transfer. This method is responsible for acquiring data from the device and sending that data back to the application using the [**IWiaMiniDrvCallBack::MiniDrvCallback**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) method.
 
-In Microsoft Windows Millennium Edition (Me) and Windows XP, the WIA minidriver should be able to handle two types of data transfers: file and memory. To determine which type of transfer the application initiated, the minidriver should read the [**WIA\_IPA\_TYMED**](https://msdn.microsoft.com/library/windows/hardware/ff551656) property value or check the **tymed** member of the [**MINIDRV\_TRANSFER\_CONTEXT**](https://msdn.microsoft.com/library/windows/hardware/ff545250) structure. The second option is valid only if the WIA minidriver called the [**wiasGetImageInformation**](https://msdn.microsoft.com/library/windows/hardware/ff549249) service function first. The **wiasGetImageInformation** service function automatically reads the WIA\_IPA\_TYMED property and assigns the value to the **tymed** member of the MINIDRV\_TRANSFER\_CONTEXT structure.
+In Microsoft Windows Millennium Edition (Me) and Windows XP, the WIA minidriver should be able to handle two types of data transfers: file and memory. To determine which type of transfer the application initiated, the minidriver should read the [**WIA\_IPA\_TYMED**](./wia-ipa-tymed.md) property value or check the **tymed** member of the [**MINIDRV\_TRANSFER\_CONTEXT**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context) structure. The second option is valid only if the WIA minidriver called the [**wiasGetImageInformation**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiasgetimageinformation) service function first. The **wiasGetImageInformation** service function automatically reads the WIA\_IPA\_TYMED property and assigns the value to the **tymed** member of the MINIDRV\_TRANSFER\_CONTEXT structure.
 
 The preferred way is for the WIA minidriver to read the WIA\_IPA\_TYMED property value. This guarantees that the minidriver is performing the proper type of acquisition.
 
@@ -35,9 +35,4 @@ This section covers the following topics:
 For basic information about data transfers using TYMED( in-memory and file transfers) and stream-based transfers see [Data Transfers](data-transfers.md).
 
  
-
- 
-
-
-
 

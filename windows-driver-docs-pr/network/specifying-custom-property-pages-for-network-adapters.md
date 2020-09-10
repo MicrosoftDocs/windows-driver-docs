@@ -28,7 +28,7 @@ If the **Advanced** property page is not suitable for displaying the configurati
     HKR, EnumPropPages32, 0, "DLL name, ExtensionPropSheetPageProc function name"
     ```
 
-3.  In the INF file for the adapter, include a **CopyFiles** section that copies the property sheet extension DLL to the Windows\\System32 directory. For more information about the **CopyFiles** section, see [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433).
+3.  In the INF file for the adapter, include a **CopyFiles** section that copies the property sheet extension DLL to the Windows\\System32 directory. For more information about the **CopyFiles** section, see [INF File Sections and Directives](../install/index.md).
 
 4.  In the **DDInstall** section for the adapter, specify NCF\_HAS\_UI as one of the **Characteristics** values to indicate that the adapter supports a user interface. For more information, see [DDInstall Section](ddinstall-section-in-a-network-inf-file.md).
 
@@ -40,10 +40,4 @@ If the **Advanced** property page is not suitable for displaying the configurati
         This reloads the driver so that it can read the changed parameter values.
 
  
-
- 
-
-
-
-
 

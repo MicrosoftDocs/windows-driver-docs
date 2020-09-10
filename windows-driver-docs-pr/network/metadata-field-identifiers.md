@@ -167,8 +167,8 @@ The metadata field identifiers are each represented by a bit-field. These identi
 </td>
 <td>
 <p>A 
-       <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825"><b>SOCKADDR_STORAGE</b></a> structure that indicate
-       the packet&#39;s original destination.</p>
+       <a href="https://docs.microsoft.com/windows/desktop/api/ws2def/ns-ws2def-sockaddr_storage"><b>SOCKADDR_STORAGE</b></a> structure that indicate
+       the packet's original destination.</p>
 <p>
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>
@@ -200,7 +200,7 @@ The metadata field identifiers are each represented by a bit-field. These identi
 <p>FWPS_METADATA_FIELD_PARENT_ENDPOINT_HANDLE</p>
 </td>
 <td>
-<p>The handle of the endpoint&#39;s parent socket.</p>
+<p>The handle of the endpoint's parent socket.</p>
 <p>
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
 <div> </div>

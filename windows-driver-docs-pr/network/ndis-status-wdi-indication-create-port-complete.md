@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CREATE\_PORT\_COMPLETE to in
 
 | Type                                                               | Multiple TLV instances allowed | Optional | Description                         |
 |--------------------------------------------------------------------|--------------------------------|----------|-------------------------------------|
-| [**WDI\_TLV\_PORT\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/dn898038) |                                |          | The attributes of the created port. |
+| [**WDI\_TLV\_PORT\_ATTRIBUTES**](./wdi-tlv-port-attributes.md) |                                |          | The attributes of the created port. |
 
  
 
@@ -53,9 +53,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -9,177 +9,171 @@ ms.localizationpriority: medium
 # HD Audio DDI Routines
 
 
-As explained in [Differences Between the HD Audio DDI Versions](https://msdn.microsoft.com/library/windows/hardware/ff536258), three versions of the HD Audio DDI exist. These three DDI versions are defined by the [**HDAUDIO\_BUS\_INTERFACE**](https://msdn.microsoft.com/library/windows/hardware/ff536413), [**HDAUDIO\_BUS\_INTERFACE\_V2**](https://msdn.microsoft.com/library/windows/hardware/ff536418), and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](https://msdn.microsoft.com/library/windows/hardware/ff536416) structures.
+As explained in [Differences Between the HD Audio DDI Versions](./differences-between-the-hd-audio-ddi-versions.md), three versions of the HD Audio DDI exist. These three DDI versions are defined by the [**HDAUDIO\_BUS\_INTERFACE**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface), [**HDAUDIO\_BUS\_INTERFACE\_V2**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2), and [**HDAUDIO\_BUS\_INTERFACE\_BDL**](/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl) structures.
 
 The three DDI versions are accessible only in kernel mode.
 
 Each DDI version provides access to the hardware resources that the HD Audio bus controller manages. These resources include codecs, DMA engines, link bandwidth, link position registers, and a wall clock register. The HD Audio bus driver implements the DDI and exposes the DDI to its children. The children are instances of kernel-mode function drivers that use the DDI to manage the hardware codecs that are connected to the HD Audio controller.
 
-To obtain access to a DDI version, a function driver must query the HD Audio bus driver for a DDI context object. For more information, see [Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object](https://msdn.microsoft.com/library/windows/hardware/ff537589), [Obtaining an HDAUDIO\_BUS\_INTERFACE\_V2 DDI Object](https://msdn.microsoft.com/library/windows/hardware/ff537592), and [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](https://msdn.microsoft.com/library/windows/hardware/ff537586).
+To obtain access to a DDI version, a function driver must query the HD Audio bus driver for a DDI context object. For more information, see [Obtaining an HDAUDIO\_BUS\_INTERFACE DDI Object](./obtaining-an-hdaudio-bus-interface-ddi-object.md), [Obtaining an HDAUDIO\_BUS\_INTERFACE\_V2 DDI Object](./obtaining-an-hdaudio-bus-interface-v2-ddi-object.md), and [Obtaining an HDAUDIO\_BUS\_INTERFACE\_BDL DDI Object](./obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md).
 
 Each routine in the three DDI versions takes a pointer to the context object as its first call parameter.
 
 The HDAUDIO\_BUS\_INTERFACE structure defines a DDI that contains the following routines:
 
-[**AllocateCaptureDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536177)
+[**AllocateCaptureDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine)
 
-[**AllocateDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536179)
+[**AllocateDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_dma_buffer)
 
-[**AllocateRenderDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536181)
+[**AllocateRenderDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine)
 
-[**ChangeBandwidthAllocation**](https://msdn.microsoft.com/library/windows/hardware/ff536229)
+[**ChangeBandwidthAllocation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pchange_bandwidth_allocation)
 
-[**FreeDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536391)
+[**FreeDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_buffer)
 
-[**FreeDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536393)
+[**FreeDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_engine)
 
-[**GetDeviceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536397)
+[**GetDeviceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_device_information)
 
-[**GetLinkPositionRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536398)
+[**GetLinkPositionRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_link_position_register)
 
-[**GetResourceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536399)
+[**GetResourceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_resource_information)
 
-[**GetWallClockRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536401)
+[**GetWallClockRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_wall_clock_register)
 
-[**RegisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff537803)
+[**RegisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pregister_event_callback)
 
-[**SetDmaEngineState**](https://msdn.microsoft.com/library/windows/hardware/ff537889)
+[**SetDmaEngineState**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pset_dma_engine_state)
 
-[**TransferCodecVerbs**](https://msdn.microsoft.com/library/windows/hardware/ff538596)
+[**TransferCodecVerbs**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs)
 
-[**UnregisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff538663)
+[**UnregisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-punregister_event_callback)
 
 The HDAUDIO\_BUS\_INTERFACE\_V2 structure is available in Windows Vista and later versions of Windows, and it defines a DDI that contains the following routines:
 
-[**AllocateCaptureDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536177)
+[**AllocateCaptureDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine)
 
-[**AllocateDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536179)
+[**AllocateDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_dma_buffer)
 
-[**AllocateDmaBufferWithNotification**](https://msdn.microsoft.com/library/windows/hardware/ff536180)
+[**AllocateDmaBufferWithNotification**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_dma_buffer_with_notification)
 
-[**AllocateRenderDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536181)
+[**AllocateRenderDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine)
 
-[**ChangeBandwidthAllocation**](https://msdn.microsoft.com/library/windows/hardware/ff536229)
+[**ChangeBandwidthAllocation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pchange_bandwidth_allocation)
 
-[**FreeDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536391)
+[**FreeDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_buffer)
 
-[**FreeDmaBufferWithNotification**](https://msdn.microsoft.com/library/windows/hardware/ff536392)
+[**FreeDmaBufferWithNotification**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_buffer_with_notification)
 
-[**FreeDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536393)
+[**FreeDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_engine)
 
-[**GetDeviceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536397)
+[**GetDeviceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_device_information)
 
-[**GetLinkPositionRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536398)
+[**GetLinkPositionRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_link_position_register)
 
-[**GetResourceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536399)
+[**GetResourceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_resource_information)
 
-[**GetWallClockRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536401)
+[**GetWallClockRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_wall_clock_register)
 
-[**RegisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff537803)
+[**RegisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pregister_event_callback)
 
-[**RegisterNotificationEvent**](https://msdn.microsoft.com/library/windows/hardware/ff537809)
+[**RegisterNotificationEvent**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pregister_notification_event)
 
-[**SetDmaEngineState**](https://msdn.microsoft.com/library/windows/hardware/ff537889)
+[**SetDmaEngineState**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pset_dma_engine_state)
 
-[**TransferCodecVerbs**](https://msdn.microsoft.com/library/windows/hardware/ff538596)
+[**TransferCodecVerbs**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs)
 
-[**UnregisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff538663)
+[**UnregisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-punregister_event_callback)
 
-[**UnregisterNotificationEvent**](https://msdn.microsoft.com/library/windows/hardware/ff538669)
+[**UnregisterNotificationEvent**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-punregister_notification_event)
 
 The HDAUDIO\_BUS\_INTERFACE version of the HD Audio DDI is supported in Windows Vista and later versions of Windows. In addition, a version of the HD Audio bus driver that supports this DDI can be installed in Windows 2000, Windows XP, and Windows Server 2003.
 
 The HDAUDIO\_BUS\_INTERFACE\_BDL structure defines a DDI that contains the following routines:
 
-[**AllocateCaptureDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536177)
+[**AllocateCaptureDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine)
 
-[**AllocateContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536178)
+[**AllocateContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer)
 
-[**AllocateRenderDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536181)
+[**AllocateRenderDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine)
 
-[**ChangeBandwidthAllocation**](https://msdn.microsoft.com/library/windows/hardware/ff536229)
+[**ChangeBandwidthAllocation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pchange_bandwidth_allocation)
 
-[**FreeContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536390)
+[**FreeContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_contiguous_dma_buffer)
 
-[**FreeDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536393)
+[**FreeDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_engine)
 
-[**GetDeviceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536397)
+[**GetDeviceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_device_information)
 
-[**GetLinkPositionRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536398)
+[**GetLinkPositionRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_link_position_register)
 
-[**GetResourceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536399)
+[**GetResourceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_resource_information)
 
-[**GetWallClockRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536401)
+[**GetWallClockRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_wall_clock_register)
 
-[**RegisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff537803)
+[**RegisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pregister_event_callback)
 
-[**SetDmaEngineState**](https://msdn.microsoft.com/library/windows/hardware/ff537889)
+[**SetDmaEngineState**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pset_dma_engine_state)
 
-[**SetupDmaEngineWithBdl**](https://msdn.microsoft.com/library/windows/hardware/ff537894)
+[**SetupDmaEngineWithBdl**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl)
 
-[**TransferCodecVerbs**](https://msdn.microsoft.com/library/windows/hardware/ff538596)
+[**TransferCodecVerbs**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs)
 
-[**UnregisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff538663)
+[**UnregisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-punregister_event_callback)
 
 A version of the HD Audio bus driver that supports the HDAUDIO\_BUS\_INTERFACE\_BDL version of the HD Audio DDI can be installed in Windows 2000, Windows XP, and Windows Server 2003. However, Windows Vista provides no support for this DDI version.
 
 Most of the routines in the two DDIs are identical in both name and operation. However, the following two routines, which are part of the HDAUDIO\_BUS\_INTERFACE version of the DDI, are not included in the HDAUDIO\_BUS\_INTERFACE\_BDL version:
 
-[**AllocateDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536179)
+[**AllocateDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_dma_buffer)
 
-[**FreeDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536391)
+[**FreeDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_buffer)
 
 Similarly, the following three routines in the HDAUDIO\_BUS\_INTERFACE\_BDL version of the DDI are not part of the HDAUDIO\_BUS\_INTERFACE version:
 
-[**AllocateContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536178)
+[**AllocateContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer)
 
-[**FreeContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536390)
+[**FreeContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_contiguous_dma_buffer)
 
-[**SetupDmaEngineWithBdl**](https://msdn.microsoft.com/library/windows/hardware/ff537894)
+[**SetupDmaEngineWithBdl**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl)
 
 This section describes the following DDI routines:
 
-[**AllocateCaptureDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536177)
+[**AllocateCaptureDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine)
 
-[**AllocateContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536178)
+[**AllocateContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_contiguous_dma_buffer)
 
-[**AllocateDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536179)
+[**AllocateDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_dma_buffer)
 
-[**AllocateRenderDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536181)
+[**AllocateRenderDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine)
 
-[**ChangeBandwidthAllocation**](https://msdn.microsoft.com/library/windows/hardware/ff536229)
+[**ChangeBandwidthAllocation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pchange_bandwidth_allocation)
 
-[**FreeContiguousDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536390)
+[**FreeContiguousDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_contiguous_dma_buffer)
 
-[**FreeDmaBuffer**](https://msdn.microsoft.com/library/windows/hardware/ff536391)
+[**FreeDmaBuffer**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_buffer)
 
-[**FreeDmaEngine**](https://msdn.microsoft.com/library/windows/hardware/ff536393)
+[**FreeDmaEngine**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pfree_dma_engine)
 
-[**GetDeviceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536397)
+[**GetDeviceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_device_information)
 
-[**GetLinkPositionRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536398)
+[**GetLinkPositionRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_link_position_register)
 
-[**GetResourceInformation**](https://msdn.microsoft.com/library/windows/hardware/ff536399)
+[**GetResourceInformation**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_resource_information)
 
-[**GetWallClockRegister**](https://msdn.microsoft.com/library/windows/hardware/ff536401)
+[**GetWallClockRegister**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pget_wall_clock_register)
 
-[**RegisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff537803)
+[**RegisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pregister_event_callback)
 
-[**SetDmaEngineState**](https://msdn.microsoft.com/library/windows/hardware/ff537889)
+[**SetDmaEngineState**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pset_dma_engine_state)
 
-[**SetupDmaEngineWithBdl**](https://msdn.microsoft.com/library/windows/hardware/ff537894) which works with [**PHDAUDIO\_BDL\_ISR**](https://msdn.microsoft.com/library/windows/hardware/mt750609)
+[**SetupDmaEngineWithBdl**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl) which works with [**PHDAUDIO\_BDL\_ISR**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-phdaudio_bdl_isr)
 
-[**TransferCodecVerbs**](https://msdn.microsoft.com/library/windows/hardware/ff538596)
+[**TransferCodecVerbs**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs)
 
-[**UnregisterEventCallback**](https://msdn.microsoft.com/library/windows/hardware/ff538663)
+[**UnregisterEventCallback**](/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-punregister_event_callback)
 
 The preceding list contains all the routines that appear in either or both versions of the DDI.
 
  
-
- 
-
-
-
-
 

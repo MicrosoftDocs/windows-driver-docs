@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The EXFAT\_FILE\_SYSTEM bug check has a value of 0x0000012C. This bug check indicates that a problem occurred in the Extended File Allocation Table (exFAT) file system.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## EXFAT\_FILE\_SYSTEM Parameters
 
@@ -37,7 +39,7 @@ The EXFAT\_FILE\_SYSTEM bug check has a value of 0x0000012C. This bug check indi
 <tbody>
 <tr class="odd">
 <td align="left"><p>1</p></td>
-<td align="left"><p>Specifies source file and line number information. The high 16 bits (the first four hexadecimal digits after the &quot;0x&quot;) determine the source file by its identifier number. The low 16 bits determine the source line in the file where the bug check occurred.</p></td>
+<td align="left"><p>Specifies source file and line number information. The high 16 bits (the first four hexadecimal digits after the "0x") determine the source file by its identifier number. The low 16 bits determine the source line in the file where the bug check occurred.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2</p></td>

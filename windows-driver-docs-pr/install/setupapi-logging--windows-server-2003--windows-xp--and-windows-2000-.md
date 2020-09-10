@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-The Windows Setup and Device Installer Services, also known as SetupAPI, include the Windows functions that control Setup and device installation. As Setup proceeds, the [general Setup functions](https://msdn.microsoft.com/library/windows/hardware/ff544985) (**Setup***Xxx* functions) and [device installation functions](https://msdn.microsoft.com/library/windows/hardware/ff541299) (**SetupDi***Xxx* functions) create a log file that provides useful information for troubleshooting device installation problems.
+The Windows Setup and Device Installer Services, also known as SetupAPI, include the Windows functions that control Setup and device installation. As Setup proceeds, the [general Setup functions](/previous-versions/ff544985(v=vs.85)) (**Setup***Xxx* functions) and [device installation functions](/previous-versions/ff541299(v=vs.85)) (**SetupDi***Xxx* functions) create a log file that provides useful information for troubleshooting device installation problems.
 
 SetupAPI logs to the file %*systemroot*%\\*setupapi.log*. The log file is a plain text file. To reset the log, rename or delete the file.
 
@@ -29,10 +29,4 @@ This section includes the following information:
 [Interpreting a Sample SetupAPI Log File](interpreting-a-sample-setupapi-log-file.md)
 
  
-
- 
-
-
-
-
 

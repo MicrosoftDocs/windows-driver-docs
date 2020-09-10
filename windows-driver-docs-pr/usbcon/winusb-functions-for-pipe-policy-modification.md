@@ -1,5 +1,5 @@
 ---
-Description: Winusb.dll exposes the WinUsb_GetPipePolicy function to retrieve the pipe's default policy.
+description: Winusb.dll exposes the WinUsb_GetPipePolicy function to retrieve the pipe's default policy.
 title: WinUSB Functions for Pipe Policy Modification
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # WinUSB Functions for Pipe Policy Modification
 
 
-To enable applications to get and set an endpoint pipe's default policy parameters, Winusb.dll exposes the [**WinUsb\_GetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540266) function to retrieve the pipe's default policy. The [**WinUsb\_SetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540304) function allows an application to set the policy parameter to a new value.
+To enable applications to get and set an endpoint pipe's default policy parameters, Winusb.dll exposes the [**WinUsb\_GetPipePolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpipepolicy) function to retrieve the pipe's default policy. The [**WinUsb\_SetPipePolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpipepolicy) function allows an application to set the policy parameter to a new value.
 
 WinUSB allows you to modify its default behavior by applying policies to an endpoint's pipe. By using these policies, you can configure WinUSB to best match your device to its capabilities. The following table provides a list of the pipe policies that are supported by WinUSB.
 
@@ -95,7 +95,7 @@ WinUSB allows you to modify its default behavior by applying policies to an endp
 <tr class="even">
 <td>0x08</td>
 <td>MAXIMUM_TRANSFER_SIZE</td>
-<td>Gets the maximum size of a USB transfer supported by WinUSB. This is a read-only policy that can be retrieved by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540266" data-raw-source="[&lt;strong&gt;WinUsb_GetPipePolicy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540266)"><strong>WinUsb_GetPipePolicy</strong></a>.</td>
+<td>Gets the maximum size of a USB transfer supported by WinUSB. This is a read-only policy that can be retrieved by calling <a href="https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpipepolicy" data-raw-source="[&lt;strong&gt;WinUsb_GetPipePolicy&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpipepolicy)"><strong>WinUsb_GetPipePolicy</strong></a>.</td>
 <td><p>Bulk (IN)</p>
 <p>Bulk (OUT)</p>
 <p>Interrupt (IN)</p>
@@ -105,7 +105,7 @@ WinUSB allows you to modify its default behavior by applying policies to an endp
 <tr class="odd">
 <td>0x09</td>
 <td>RESET_PIPE_ON_RESUME</td>
-<td>Resets the endpoint&#39;s pipe after resuming from suspend before accepting new requests.</td>
+<td>Resets the endpoint's pipe after resuming from suspend before accepting new requests.</td>
 <td><p>Bulk (IN)</p>
 <p>Bulk (OUT)</p>
 <p>Interrupt (IN)</p>
@@ -137,7 +137,7 @@ The following table identifies best practices for how to use each of the pipe po
 <td>SHORT_PACKET_TERMINATE(0x01)</td>
 <td>The device requires the OUT transfers to be terminated with a zero-length packet. Most devices do not have this requirement.</td>
 <td><p>If enabled (policy parameter value is <strong>TRUE</strong> or nonzero), every write request that is a multiple of the maximum packet size supported by the endpoint, is followed by a zero-length packet.</p>
-<p>After sending data to the host controller, WinUSB sends a write request with a zero-length packet and then completes the request that was created by <a href="https://msdn.microsoft.com/library/windows/hardware/ff540322" data-raw-source="[&lt;strong&gt;WinUsb_WritePipe&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540322)"><strong>WinUsb_WritePipe</strong></a>.</p></td>
+<p>After sending data to the host controller, WinUSB sends a write request with a zero-length packet and then completes the request that was created by <a href="https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writepipe" data-raw-source="[&lt;strong&gt;WinUsb_WritePipe&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writepipe)"><strong>WinUsb_WritePipe</strong></a>.</p></td>
 </tr>
 <tr class="even">
 <td>AUTO_CLEAR_STALL</td>
@@ -146,7 +146,7 @@ The following table identifies best practices for how to use each of the pipe po
 <li><p>If enabled (policy parameter value is <strong>TRUE</strong> or nonzero), a stall condition is cleared automatically. This policy parameter does not affect control pipes.</p>
 <p>When a read request fails and the host controller returns a status other than STATUS_CANCELLED or STATUS_DEVICE_NOT_CONNECTED, WinUSB resets the pipe before completing the failed request. Resetting the pipe clears the stall condition without interrupting the data flow. Data continues to flow in the endpoints as long as new transfers keep arriving from the device. A new transfer can include one that was in the queue when the stall occurred.</p>
 <p>Enabling this policy does not significantly impact performance.</p></li>
-<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), all transfers that arrive to the endpoint after the stalled transfer fail until the caller manually resets the endpoint&#39;s pipe by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540300" data-raw-source="[&lt;strong&gt;WinUsb_ResetPipe&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540300)"><strong>WinUsb_ResetPipe</strong></a>.</li>
+<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), all transfers that arrive to the endpoint after the stalled transfer fail until the caller manually resets the endpoint's pipe by calling <a href="https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_resetpipe" data-raw-source="[&lt;strong&gt;WinUsb_ResetPipe&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_resetpipe)"><strong>WinUsb_ResetPipe</strong></a>.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -193,20 +193,20 @@ The following table identifies best practices for how to use each of the pipe po
 <td>AUTO_FLUSH</td>
 <td>ALLOW_PARTIAL _READS policy is enabled.
 <p>The device can send more data than was requested, and your application does not require any additional data. This is possible if the size of your request buffer is a multiple of the maximum endpoint packet size.</p></td>
-<td><p>AUTO_FLUSH defines WinUSB&#39;s behavior when ALLOW_PARTIAL_READS is enabled. If ALLOW_PARTIAL_READS is disabled, the AUTO_FLUSH value is ignored by WinUSB.</p>
-<p>WinUSB can either discard the remaining data or send it with the caller&#39;s next read request.</p>
+<td><p>AUTO_FLUSH defines WinUSB's behavior when ALLOW_PARTIAL_READS is enabled. If ALLOW_PARTIAL_READS is disabled, the AUTO_FLUSH value is ignored by WinUSB.</p>
+<p>WinUSB can either discard the remaining data or send it with the caller's next read request.</p>
 <ul>
 <li>If enabled (policy parameter value is <strong>TRUE</strong> or nonzero), WinUSB discards the extra bytes without any error code.</li>
-<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), WinUSB saves the extra bytes, adds them to the beginning of the caller&#39;s next read request, and then sends the data to the caller in the next read operation.</li>
+<li>If disabled (policy parameter value is <strong>FALSE</strong> or zero), WinUSB saves the extra bytes, adds them to the beginning of the caller's next read request, and then sends the data to the caller in the next read operation.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>RAW_IO</td>
 <td>Performance is a priority and the application submits simultaneous read requests to the same endpoint.
-<p>RAW_IO imposes certain restrictions on the buffer that is passed by the caller in <a href="https://msdn.microsoft.com/library/windows/hardware/ff540297" data-raw-source="[&lt;strong&gt;WinUsb_ReadPipe&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540297)"><strong>WinUsb_ReadPipe</strong></a>:</p>
+<p>RAW_IO imposes certain restrictions on the buffer that is passed by the caller in <a href="https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readpipe" data-raw-source="[&lt;strong&gt;WinUsb_ReadPipe&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readpipe)"><strong>WinUsb_ReadPipe</strong></a>:</p>
 <ul>
 <li>The buffer length must be a multiple of the maximum endpoint packet size.</li>
-<li>The length must be less than or equal to the value of MAXIMUM_TRANSFER_SIZE retrieved by <a href="https://msdn.microsoft.com/library/windows/hardware/ff540266" data-raw-source="[&lt;strong&gt;WinUsb_GetPipePolicy&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff540266)"><strong>WinUsb_GetPipePolicy</strong></a>.</li>
+<li>The length must be less than or equal to the value of MAXIMUM_TRANSFER_SIZE retrieved by <a href="https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpipepolicy" data-raw-source="[&lt;strong&gt;WinUsb_GetPipePolicy&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpipepolicy)"><strong>WinUsb_GetPipePolicy</strong></a>.</li>
 </ul></td>
 <td><p>If enabled, transfers bypass queuing and error handling to boost performance for multiple read requests. WinUSB handles read requests as follows:</p>
 <ul>
@@ -232,9 +232,9 @@ Enabling this setting significantly improves the performance of multiple read re
 [Choosing a driver model for developing a USB client driver](winusb-considerations.md)  
 [WinUSB (Winusb.sys) Installation](winusb-installation.md)  
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
-[WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb)  
-[**WinUsb\_GetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540266)  
-[**WinUsb\_SetPipePolicy**](https://msdn.microsoft.com/library/windows/hardware/ff540304)  
+[WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
+[**WinUsb\_GetPipePolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getpipepolicy)  
+[**WinUsb\_SetPipePolicy**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_setpipepolicy)  
 [WinUSB](winusb.md)  
 
 

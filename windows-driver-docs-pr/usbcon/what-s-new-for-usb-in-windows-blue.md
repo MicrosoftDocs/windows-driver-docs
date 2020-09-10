@@ -1,5 +1,5 @@
 ---
-Description: Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
+description: Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
 title: Windows 8.1 - What's new for USB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 
 Here are the new features and improvements for Universal Serial Bus (USB) in Windows 8.1.
 
--   [Windows Runtime USB API for developing UWP apps](#usb-sdk)
--   [Microsoft OS 2.0 descriptors for improved device enumeration](#microsoft-os-2-0-descriptors-for-improved-device-enumeration)
--   [Isochronous support for WinUSB](#usb-wdk)
+-   [Windows Runtime USB API for developing UWP apps](#windows-runtime-usb-api-for-developing-uwp-apps)
+-   [Microsoft OS 2.0 descriptors for improved device enumeration](#microsoft-os-20-descriptors-for-improved-device-enumerations)
+-   [Isochronous support for WinUSB](#isochronous-support-for-winusb)
 -   [USB driver stack improvements](#usb-driver-stack-improvements)
 -   [USB tests in the Hardware Certification Kit (HCK)](#usb-tests-in-the-hardware-certification-kit-hck)
--   [Improved USB diagnostic tools and debugger extensions](#improved-usb-diagnostic-tools-and-debugger-extensions-)
+-   [Improved USB diagnostic tools and debugger extensions](#improved-usb-diagnostic-tools-and-debugger-extensions)
 -   [Related topics](#related-topics)
 
 ## Windows Runtime USB API for developing UWP apps
 
 
-Windows Runtime provides a new namespace: [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) (see [Writing apps for USB devices (UWP apps using C#/VB/C++)](https://msdn.microsoft.com/library/windows/apps/xaml/dn263144) for a brief overview). By using the namespace, you can write a UWP app that talks to a custom USB device.
+Windows Runtime provides a new namespace: [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb) (see [Writing apps for USB devices (UWP apps using C#/VB/C++)](https://docs.microsoft.com/previous-versions/windows/apps/dn263144(v=win.10)) for a brief overview). By using the namespace, you can write a UWP app that talks to a custom USB device.
 
 For more information, see these topics:
 
@@ -34,7 +34,7 @@ For more information, see these topics:
 -   [How to get USB descriptors (UWP app)](how-to-get-usb-descriptors--uwp-app-.md)
 -   [How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)
 
-These samples demonstrate the use of the [**Windows.Devices.Usb**](https://msdn.microsoft.com/library/windows/apps/dn278466) namespace.
+These samples demonstrate the use of the [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb) namespace.
 
 <table>
 <colgroup>
@@ -81,16 +81,16 @@ For information about the specification, see [Microsoft OS Descriptors for USB D
 
 The Microsoft-provided WinUSB (kernel-mode driver) now supports transfers to and from isochronous endpoints of a USB device
 
-The user-mode DLL, Winusb.dll, exposes these [WinUSB Functions](https://msdn.microsoft.com/library/windows/hardware/ff540046#winusb) that a Windows desktop app can use to initiate such transfers.
+The user-mode DLL, Winusb.dll, exposes these [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) that a Windows desktop app can use to initiate such transfers.
 
--   [**WinUsb\_RegisterIsochBuffer**](https://msdn.microsoft.com/library/windows/hardware/dn265566)
--   [**WinUsb\_UnregisterIsochBuffer**](https://msdn.microsoft.com/library/windows/hardware/dn265567)
--   [**WinUsb\_WriteIsochPipeAsap**](https://msdn.microsoft.com/library/windows/hardware/dn265569)
--   [**WinUsb\_ReadIsochPipeAsap**](https://msdn.microsoft.com/library/windows/hardware/dn265565)
--   [**WinUsb\_WriteIsochPipe**](https://msdn.microsoft.com/library/windows/hardware/dn265568)
--   [**WinUsb\_ReadIsochPipe**](https://msdn.microsoft.com/library/windows/hardware/dn265564)
--   [**WinUsb\_GetCurrentFrameNumber**](https://msdn.microsoft.com/library/windows/hardware/dn265549)
--   [**WinUsb\_GetAdjustedFrameNumber**](https://msdn.microsoft.com/library/windows/hardware/dn265548)
+-   [**WinUsb\_RegisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_registerisochbuffer)
+-   [**WinUsb\_UnregisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_unregisterisochbuffer)
+-   [**WinUsb\_WriteIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipeasap)
+-   [**WinUsb\_ReadIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipeasap)
+-   [**WinUsb\_WriteIsochPipe**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipe)
+-   [**WinUsb\_ReadIsochPipe**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipe)
+-   [**WinUsb\_GetCurrentFrameNumber**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getcurrentframenumber)
+-   [**WinUsb\_GetAdjustedFrameNumber**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getadjustedframenumber)
 
 ## USB driver stack improvements
 
@@ -107,15 +107,15 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
 
 -   These USB tests in the Hardware Certification Kit (HCK) have been improved. The device enumeration tests now have a new parameter that reduces manual intervention during testing using simplified topologies. The suspend tests have been improved logging capabilities.
 
-    -   [USB Exposed Port Controller Test](https://msdn.microsoft.com/library/windows/hardware/hh998021.aspx)
-    -   [USB Hub Exposed Port Test USB](https://msdn.microsoft.com/library/windows/hardware/jj123960.aspx)
-    -   [Hub Selective Suspend Test](https://msdn.microsoft.com/library/windows/hardware/jj124844.aspx)
-    -   [USB Exposed Port System Test](https://msdn.microsoft.com/library/windows/hardware/jj123655.aspx)
-    -   [USB Selective Suspend Test (xHCI)](https://msdn.microsoft.com/library/windows/hardware/jj124491.aspx)
-    -   [USB 3.0 Suspend Test](https://msdn.microsoft.com/library/windows/hardware/jj125210.aspx)
+    -   [USB Exposed Port Controller Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh998021(v=vs.85))
+    -   [USB Hub Exposed Port Test USB](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj123960(v=vs.85))
+    -   [Hub Selective Suspend Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124844(v=vs.85))
+    -   [USB Exposed Port System Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj123655(v=vs.85))
+    -   [USB Selective Suspend Test (xHCI)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124491(v=vs.85))
+    -   [USB 3.0 Suspend Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj125210(v=vs.85))
 -   MUTT and SuperMUTT devices are now USB-IF compliance devices. The devices and the accompanying software package are integrated in to the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.
 
-    MUTT hardware can be purchased from [JJG Technologies](http://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](https://msdn.microsoft.com/windows/hardware/jj590752) and run MUTTUtil.exe. For more information, see the documentation included with the package.
+    MUTT hardware can be purchased from [JJG Technologies](https://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](https://msdn.microsoft.com/windows/hardware/jj590752) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
 ## Improved USB diagnostic tools and debugger extensions
 
@@ -124,7 +124,7 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
 -   USB events shown in the Message Analyzer (Netmon) are now more descriptive. The events can also be grouped and sorted by controller, hub, and so on.
 
 ## Related topics
-[Universal Serial Bus (USB)](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
 
 
 

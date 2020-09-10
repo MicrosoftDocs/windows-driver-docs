@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 # Listening for and Accepting Incoming Connections
 
 
-After a Winsock Kernel (WSK) application binds a listening socket to a local transport address, the socket begins listening for incoming connections from remote transport addresses. A WSK application can accept an incoming connection on a listening socket by calling the [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109) function. The IRP that the application passes to the **WskAccept** function is queued until an incoming connection arrives.
+After a Winsock Kernel (WSK) application binds a listening socket to a local transport address, the socket begins listening for incoming connections from remote transport addresses. A WSK application can accept an incoming connection on a listening socket by calling the [**WskAccept**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept) function. The IRP that the application passes to the **WskAccept** function is queued until an incoming connection arrives.
 
 The following code example shows how a WSK application can accept an incoming connection by calling the **WskAccept** function.
 
@@ -130,7 +130,7 @@ NTSTATUS
 }
 ```
 
-As an alternative to calling the [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109) function to accept incoming connections on a listening socket, a WSK application can enable the [*WskAcceptEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571120) event callback function on the socket. If a WSK application enables the *WskAcceptEvent* event callback function on a listening socket, the WSK subsystem calls the socket's *WskAcceptEvent* event callback function whenever a new incoming connection is accepted on the socket. For more information about enabling a listening socket's *WskAcceptEvent* event callback function, see [Enabling and Disabling Event Callback Functions](enabling-and-disabling-event-callback-functions.md).
+As an alternative to calling the [**WskAccept**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept) function to accept incoming connections on a listening socket, a WSK application can enable the [*WskAcceptEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept_event) event callback function on the socket. If a WSK application enables the *WskAcceptEvent* event callback function on a listening socket, the WSK subsystem calls the socket's *WskAcceptEvent* event callback function whenever a new incoming connection is accepted on the socket. For more information about enabling a listening socket's *WskAcceptEvent* event callback function, see [Enabling and Disabling Event Callback Functions](enabling-and-disabling-event-callback-functions.md).
 
 The following code example shows how a WSK application can accept an incoming connection by the WSK subsystem calling a listening socket's *WskAcceptEvent* event callback function.
 
@@ -208,9 +208,9 @@ NTSTATUS WSKAPI
 }
 ```
 
-A WSK application can configure a listening socket to conditionally accept incoming connections that are received on the socket. A WSK application enables conditional accept mode on a listening socket by setting the [**SO\_CONDITIONAL\_ACCEPT**](https://msdn.microsoft.com/library/windows/hardware/ff570829) socket option for the socket prior to binding the socket to a local transport address. For more information about how to set socket options, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
+A WSK application can configure a listening socket to conditionally accept incoming connections that are received on the socket. A WSK application enables conditional accept mode on a listening socket by setting the [**SO\_CONDITIONAL\_ACCEPT**](./so-conditional-accept.md) socket option for the socket prior to binding the socket to a local transport address. For more information about how to set socket options, see [Performing Control Operations on a Socket](performing-control-operations-on-a-socket.md).
 
-If conditional accept mode is enabled on a listening socket, the WSK subsystem first calls the socket's [*WskInspectEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571137) event callback function whenever a new incoming connection request is received on the socket. A socket's *WskInspectEvent* event callback function can inspect the incoming connection request to determine if the request should be accepted or rejected. To accept the request, the socket's *WskInspectEvent* event callback function returns **InspectAccept**. To reject the request, the socket's *WskInspectEvent* event callback function returns **InspectReject**. If a socket's *WskInspectEvent* event callback function cannot immediately determine if the request should be accepted or rejected, it returns **InspectPend**. In this situation, a WSK application must call the [**WskInspectComplete**](https://msdn.microsoft.com/library/windows/hardware/ff571136) function after completing the inspection process for the incoming connection request. If an incoming connection request is dropped before the socket connection is fully established, the WSK subsystem calls the WSK application's [*WskAbortEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571108) event callback function.
+If conditional accept mode is enabled on a listening socket, the WSK subsystem first calls the socket's [*WskInspectEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_event) event callback function whenever a new incoming connection request is received on the socket. A socket's *WskInspectEvent* event callback function can inspect the incoming connection request to determine if the request should be accepted or rejected. To accept the request, the socket's *WskInspectEvent* event callback function returns **InspectAccept**. To reject the request, the socket's *WskInspectEvent* event callback function returns **InspectReject**. If a socket's *WskInspectEvent* event callback function cannot immediately determine if the request should be accepted or rejected, it returns **InspectPend**. In this situation, a WSK application must call the [**WskInspectComplete**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_inspect_complete) function after completing the inspection process for the incoming connection request. If an incoming connection request is dropped before the socket connection is fully established, the WSK subsystem calls the WSK application's [*WskAbortEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_abort_event) event callback function.
 
 The following code example shows how a WSK application can inspect an incoming connection request by the WSK subsystem calling the listening socket's *WskInspectEvent* event callback function.
 
@@ -292,13 +292,7 @@ NTSTATUS WSKAPI
 }
 ```
 
-If a WSK application determines that it will accept an incoming connection request on a listening socket that has conditional accept mode enabled, the incoming connection will be established and it can be accepted normally by either the application calling to the [**WskAccept**](https://msdn.microsoft.com/library/windows/hardware/ff571109) function or the WSK subsystem calling the socket's [*WskAcceptEvent*](https://msdn.microsoft.com/library/windows/hardware/ff571120) event callback function as described previously.
+If a WSK application determines that it will accept an incoming connection request on a listening socket that has conditional accept mode enabled, the incoming connection will be established and it can be accepted normally by either the application calling to the [**WskAccept**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept) function or the WSK subsystem calling the socket's [*WskAcceptEvent*](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_accept_event) event callback function as described previously.
 
  
-
- 
-
-
-
-
 

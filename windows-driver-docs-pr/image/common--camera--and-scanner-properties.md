@@ -41,7 +41,7 @@ The three-letter acronym in the middle of a WIA property name contains informati
 <tr class="odd">
 <td><p>WIA_IPA_<em>Xxx</em></p></td>
 <td><p>Item Property, All</p>
-<p>Information that is common to both camera and scanner items, such as the item&#39;s name and the type of image.</p></td>
+<p>Information that is common to both camera and scanner items, such as the item's name and the type of image.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_DPC_<em>Xxx</em></p></td>
@@ -68,12 +68,7 @@ The three-letter acronym in the middle of a WIA property name contains informati
 
  
 
-See [WIA Properties](https://msdn.microsoft.com/library/windows/hardware/ff552739) for a complete list of WIA common, camera-specific, and scanner-specific properties.
+See [WIA Properties](./wia-properties.md) for a complete list of WIA common, camera-specific, and scanner-specific properties.
 
  
-
- 
-
-
-
 

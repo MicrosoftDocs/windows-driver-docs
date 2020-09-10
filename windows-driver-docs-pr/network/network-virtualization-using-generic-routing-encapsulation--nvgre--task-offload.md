@@ -1,12 +1,12 @@
 ---
-title: NVGRE Task Offload
+title: About Network Virtualization using Generic Routing Encapsulation (NVGRE)
 description: This section describes Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
 ms.assetid: D1BE5659-4491-411B-9D32-9CB7A141A240
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload
+# About Network Virtualization using Generic Routing Encapsulation (NVGRE)
 
 Hyper-V Network Virtualization supports Network Virtualization using Generic Routing Encapsulation (NVGRE) as the mechanism to virtualize IP addresses. In NVGRE, the virtual machine's packet is encapsulated inside another packet. The header of this new, NVGRE-formatted packet has the appropriate source and destination provider area (PA) IP addresses. In addition, it has a 24-bit Virtual Subnet ID (VSID), which is stored in the GRE header of the new packet.
 
@@ -31,12 +31,12 @@ NDIS 6.30 (available in Windows Server 2012 and later) introduces NVGRE Task Of
 
 For more information about NVGRE, see the following Internet Draft:
 
--   [NVGRE: Network Virtualization using Generic Routing Encapsulation](http://ietfreport.isoc.org/idref/draft-sridharan-virtualization-nvgre/)
+-   [NVGRE: Network Virtualization using Generic Routing Encapsulation](https://ietfreport.isoc.org/idref/draft-sridharan-virtualization-nvgre/)
 
 NVGRE is based on Generic Routing Encapsulation (GRE). For more information about GRE, see the following resources:
 
--   [RFC 2784: Generic Routing Encapsulation (GRE)](http://tools.ietf.org/html/rfc2784)
--   [RFC 2890: Key and Sequence Number Extensions to GRE](http://tools.ietf.org/html/rfc2890)
+-   [RFC 2784: Generic Routing Encapsulation (GRE)](https://tools.ietf.org/html/rfc2784)
+-   [RFC 2890: Key and Sequence Number Extensions to GRE](https://tools.ietf.org/html/rfc2890)
 
 This section includes:
 

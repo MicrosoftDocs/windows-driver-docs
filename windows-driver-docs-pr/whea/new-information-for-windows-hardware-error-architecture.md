@@ -28,14 +28,9 @@ This section includes the following topics:
 
 Starting with Windows 8, the following changes have been made to Windows Hardware Error Architecture (WHEA)
 
--   A new WMI provider class [**WHEAPolicyManagementMethods**](https://msdn.microsoft.com/library/windows/hardware/hh451252).
--   WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](https://msdn.microsoft.com/library/windows/hardware/hh451252) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
--   The WHEA WMI Method [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](https://msdn.microsoft.com/library/windows/hardware/ff559531) is deprecated.
+-   A new WMI provider class [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/).
+-   WHEA policies can be managed either though [**WHEAPolicyManagementMethods**](/windows-hardware/drivers/ddi/_whea/) or through the WHEA Powershell module. If the policy is updated through either of these modes, the policy values take effect immediately.
+-   The WHEA WMI Method [**WHEAErrorSourceMethods::SetErrorSourceInfoRtn**](/windows-hardware/drivers/ddi/_whea/) is deprecated.
 
  
-
- 
-
-
-
 

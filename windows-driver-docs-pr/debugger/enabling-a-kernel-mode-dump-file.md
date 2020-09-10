@@ -17,7 +17,7 @@ During a system crash, the Windows crash dump settings determine whether a dump 
 
 The Windows Control Panel controls the kernel-mode crash dump settings. Only a system administrator can modify these settings.
 
-To change these settings, go to **Control Panel &gt; System and Security &gt; System**. Click **Advanced system settings**. Under **Startup and Recovery**, click **Settings**.
+To change these settings, go to **Control Panel &gt; System and Security &gt; System**. Select **Advanced system settings**. Under **Startup and Recovery**, select **Settings**.
 
 You will see the following dialog box:
 

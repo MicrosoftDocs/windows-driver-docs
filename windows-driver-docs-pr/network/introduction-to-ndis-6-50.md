@@ -45,40 +45,40 @@ For information on building a driver with the Windows 10, version 1507 release 
 
 The following data structures are new in NDIS 6.50.
 
-- [OID_WWAN_SYS_CAPS](https://msdn.microsoft.com/library/windows/hardware/mt799833)
-- [OID_WWAN_DEVICE_CAPS_EX](https://msdn.microsoft.com/library/windows/hardware/mt799830)
-- [OID_WWAN_SLOT_INFO_STATUS](https://msdn.microsoft.com/library/windows/hardware/mt799832)
-- [OID_WWAN_NETWORK_IDLE_HINT](https://msdn.microsoft.com/library/windows/hardware/dn931089) 
-- [NDIS_STATUS_PD_CURRENT_CONFIG](https://msdn.microsoft.com/library/windows/hardware/dn931850)
-- [NDIS_PD_CAPABILITIES](https://msdn.microsoft.com/library/windows/hardware/dn931833)
-- [NDIS_PD_CLOSE_PROVIDER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931834)
-- [NDIS_PD_CONFIG](https://msdn.microsoft.com/library/windows/hardware/dn931835)
-- [NDIS_PD_COUNTER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931836)
-- [NDIS_PD_COUNTER_VALUE](https://msdn.microsoft.com/library/windows/hardware/dn931838)
-- [NDIS_PD_FILTER_COUNTER](https://msdn.microsoft.com/library/windows/hardware/dn931839)
-- [NDIS_PD_FILTER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931840)
-- [NDIS_PD_ON_RSS_QUEUE_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931841)
-- [NDIS_PD_OPEN_PROVIDER_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931842)
-- [NDIS_PD_PROVIDER_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/dn931843)
-- [NDIS_PD_QUEUE](https://msdn.microsoft.com/library/windows/hardware/dn931844)
-- [NDIS_PD_QUEUE_DISPATCH](https://msdn.microsoft.com/library/windows/hardware/dn931845)
-- [NDIS_PD_QUEUE_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/dn931846)
-- [NDIS_PD_RECEIVE_QUEUE_COUNTER](https://msdn.microsoft.com/library/windows/hardware/dn931848)
-- [NDIS_PD_TRANSMIT_QUEUE_COUNTER](https://msdn.microsoft.com/library/windows/hardware/dn931849)
-- [PD_BUFFER](https://msdn.microsoft.com/library/windows/hardware/dn931863)
-- [PD_BUFFER_8021Q_INFO](https://msdn.microsoft.com/library/windows/hardware/dn931864)
-- [PD_BUFFER_VIRTUAL_SUBNET_INFO](https://msdn.microsoft.com/library/windows/hardware/dn931865)
+- [OID_WWAN_SYS_CAPS](./oid-wwan-sys-caps.md)
+- [OID_WWAN_DEVICE_CAPS_EX](./oid-wwan-device-caps-ex.md)
+- [OID_WWAN_SLOT_INFO_STATUS](./oid-wwan-slot-info-status.md)
+- [OID_WWAN_NETWORK_IDLE_HINT](./oid-wwan-network-idle-hint.md) 
+- [NDIS_STATUS_PD_CURRENT_CONFIG](./ndis-status-pd-current-config.md)
+- [NDIS_PD_CAPABILITIES](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pd_capabilities)
+- [NDIS_PD_CLOSE_PROVIDER_PARAMETERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_close_provider_parameters)
+- [NDIS_PD_CONFIG](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pd_config)
+- [NDIS_PD_COUNTER_PARAMETERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_counter_parameters)
+- [NDIS_PD_COUNTER_VALUE](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_counter_value)
+- [NDIS_PD_FILTER_COUNTER](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_filter_counter)
+- [NDIS_PD_FILTER_PARAMETERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_filter_parameters)
+- [NDIS_PD_ON_RSS_QUEUE_PARAMETERS](/windows-hardware/drivers/ddi/_netvista/)
+- [NDIS_PD_OPEN_PROVIDER_PARAMETERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_open_provider_parameters)
+- [NDIS_PD_PROVIDER_DISPATCH](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_provider_dispatch)
+- [NDIS_PD_QUEUE](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_queue)
+- [NDIS_PD_QUEUE_DISPATCH](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_queue_dispatch)
+- [NDIS_PD_QUEUE_PARAMETERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_queue_parameters)
+- [NDIS_PD_RECEIVE_QUEUE_COUNTER](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_receive_queue_counter)
+- [NDIS_PD_TRANSMIT_QUEUE_COUNTER](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_transmit_queue_counter)
+- [PD_BUFFER](/windows-hardware/drivers/ddi/ndis/ns-ndis-_pd_buffer)
+- [PD_BUFFER_8021Q_INFO](/windows-hardware/drivers/ddi/ndis/ns-ndis-_pd_buffer_8021q_info)
+- [PD_BUFFER_VIRTUAL_SUBNET_INFO](/windows-hardware/drivers/ddi/ndis/ns-ndis-_pd_buffer_virtual_subnet_info)
 
 ### Updated data structures
 
 The following data structures were updated in NDIS 6.50.
 
-- [NET_PNP_EVENT_NOTIFICATION](https://msdn.microsoft.com/library/windows/hardware/ff568752)
-- [NDIS_OID_REQUEST](https://msdn.microsoft.com/library/windows/hardware/ff566710)
-- [NDIS_NET_BUFFER_LIST_INFO](https://msdn.microsoft.com/library/windows/hardware/ff566569)
-- [NdisMGetDeviceProperty](https://msdn.microsoft.com/library/windows/hardware/ff563592)
-- [NDIS_SWITCH_OPTIONAL_HANDLERS](https://msdn.microsoft.com/library/windows/hardware/hh598219)
-- [NDIS_SWITCH_NIC_SAVE_STATE](https://msdn.microsoft.com/library/windows/hardware/hh598216)
+- [NET_PNP_EVENT_NOTIFICATION](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification)
+- [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+- [NDIS_NET_BUFFER_LIST_INFO](/windows-hardware/drivers/ddi/ndis/ne-ndis-_ndis_net_buffer_list_info)
+- [NdisMGetDeviceProperty](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetdeviceproperty)
+- [NDIS_SWITCH_OPTIONAL_HANDLERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_optional_handlers)
+- [NDIS_SWITCH_NIC_SAVE_STATE](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)
 
 ## NDIS 6.51
 
@@ -86,4 +86,3 @@ NDIS 6.51 is a very minor version update to NDIS 6.50. NDIS 6.51 is included in 
 
 - The MinorNdisVersion changes from 50 to 51 when registering your driver with NDIS.
 - The compiler settings change from ```NDIS650_MINIPORT=1``` for miniport drivers and ```NDIS650=1``` for filter or protocol drivers, to ```NDIS651_MINIPORT=1``` and ```NDIS651=1``` respectively.
-

@@ -17,18 +17,13 @@ ms.localizationpriority: medium
 
 
 
-If a printer provides device fonts, the printer graphics DLL must define a [**DrvTextOut**](https://msdn.microsoft.com/library/windows/hardware/ff557277) function to generate text output commands. The graphics DLL must also define the following functions:
+If a printer provides device fonts, the printer graphics DLL must define a [**DrvTextOut**](/windows/win32/api/winddi/nf-winddi-drvtextout) function to generate text output commands. The graphics DLL must also define the following functions:
 
-[**DrvQueryAdvanceWidths**](https://msdn.microsoft.com/library/windows/hardware/ff556259)
-[**DrvQueryFont**](https://msdn.microsoft.com/library/windows/hardware/ff556262)
-[**DrvQueryFontData**](https://msdn.microsoft.com/library/windows/hardware/ff556264)
-[**DrvQueryFontTree**](https://msdn.microsoft.com/library/windows/hardware/ff556266)
-For more information about supporting device fonts, see [Supporting Graphics DDI Font and Text Functions](https://msdn.microsoft.com/library/windows/hardware/ff569868).
-
- 
+[**DrvQueryAdvanceWidths**](/windows/win32/api/winddi/nf-winddi-drvqueryadvancewidths)
+[**DrvQueryFont**](/windows/win32/api/winddi/nf-winddi-drvqueryfont)
+[**DrvQueryFontData**](/windows/win32/api/winddi/nf-winddi-drvqueryfontdata)
+[**DrvQueryFontTree**](/windows/win32/api/winddi/nf-winddi-drvqueryfonttree)
+For more information about supporting device fonts, see [Supporting Graphics DDI Font and Text Functions](../display/supporting-graphics-ddi-font-and-text-functions.md).
 
  
-
-
-
 

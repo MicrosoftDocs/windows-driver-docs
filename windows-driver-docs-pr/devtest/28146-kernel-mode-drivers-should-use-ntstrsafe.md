@@ -31,13 +31,7 @@ warning C28146: Kernel Mode drivers should use ntstrsafe.h, not strsafe.h. Found
 
  
 
-A kernel-mode driver includes Strsafe.h, instead of Ntstrsafe.h. For information about Ntstrsafe.h and Strsafe.h, see [Using Safe String Functions](https://msdn.microsoft.com/library/windows/hardware/ff565508).
+A kernel-mode driver includes Strsafe.h, instead of Ntstrsafe.h. For information about Ntstrsafe.h and Strsafe.h, see [Using Safe String Functions](../kernel/using-safe-string-functions.md).
 
  
-
- 
-
-
-
-
 

@@ -72,7 +72,7 @@ This property returns one of the values in the following table.
 
 ## VBScript Example
 
-The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_PAPERNAMES flag set.
+The handler for this property obtains the list of paper forms by calling the printer driver's [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function with the DC\_PAPERNAMES flag set.
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::PaperNames** property can be queried.
 
@@ -102,6 +102,6 @@ Requirements
 
 ## See also
 
-[**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/winddiui/nf-winddiui-drvdevicecapabilities)
+[**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities)
 
 [**Iasphelp::Open**](iasphelp-open.md)

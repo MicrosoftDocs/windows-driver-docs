@@ -15,21 +15,19 @@ ms.localizationpriority: medium
 
 # sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 
-
-The **sx***\** commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
+The **sx** commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
 
 ```dbgcmd
-sx 
+sx
 
-sx{e|d|i|n} [-c "Cmd1"] [-c2 "Cmd2"] [-h] {Exception|Event|*} 
+sx{e|d|i|n} [-c "Cmd1"] [-c2 "Cmd2"] [-h] {Exception|Event|*}
 
-sx- [-c "Cmd1"] [-c2 "Cmd2"] {Exception|Event|*} 
+sx- [-c "Cmd1"] [-c2 "Cmd2"] {Exception|Event|*}
 
 sxr
 ```
 
 ## <span id="ddk_cmd_set_exceptions_dbg"></span><span id="DDK_CMD_SET_EXCEPTIONS_DBG"></span>Parameters
-
 
 <span id="-c__Cmd1_"></span><span id="-c__cmd1_"></span><span id="-C__CMD1_"></span>**-c "**<em>Cmd1</em>**"**  
 Specifies a command that is executed if the exception or event occurs. This command is executed when the first chance to handle this exception occurs, regardless of whether this exception breaks into the debugger. You must enclose the *Cmd1* string in quotation marks. This string can include multiple commands, separated by semicolons. The space between the -c and the quoted command string is optional.
@@ -37,16 +35,16 @@ Specifies a command that is executed if the exception or event occurs. This comm
 <span id="-c2_Cmd2_"></span><span id="-c2_cmd2_"></span><span id="-C2_CMD2_"></span>**-c2"**<em>Cmd2</em>**"**  
 Specifies a command that is executed if the exception or event occurs and is not handled on the first chance. This command is executed when the second chance to handle this exception occurs, regardless of whether this exception breaks into the debugger. You must enclose the *Cmd2* string in quotation marks. This string can include multiple commands, separated by semicolons. The space between the -c2 and the quoted command string is optional.
 
-<span id="_______-h______"></span><span id="_______-H______"></span> **-h**   
+<span id="_______-h______"></span><span id="_______-H______"></span> **-h**
 Changes the specified event's handling status instead of its break status. If *Event* is **cc**, **hc**, **bpec**, or **ssec**, you do not have to use the **-h** option.
 
-<span id="_______Exception______"></span><span id="_______exception______"></span><span id="_______EXCEPTION______"></span> *Exception*   
+<span id="_______Exception______"></span><span id="_______exception______"></span><span id="_______EXCEPTION______"></span> *Exception*
 Specifies the exception number that the command acts on, in the current radix.
 
-<span id="_______Event______"></span><span id="_______event______"></span><span id="_______EVENT______"></span> *Event*   
+<span id="_______Event______"></span><span id="_______event______"></span><span id="_______EVENT______"></span> *Event*
 Specifies the event that the command acts on. These events are identified by short abbreviations. For a list of the events, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
-<span id="______________"></span> **\\***   
+<span id="______________"></span> **\***
 Affects all exceptions that are not otherwise explicitly named for **sx**. For a list of explicitly named exceptions, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
 
 ### <span id="Environment"></span><span id="environment"></span><span id="ENVIRONMENT"></span>Environment
@@ -72,8 +70,6 @@ Affects all exceptions that are not otherwise explicitly named for **sx**. For a
 </tbody>
 </table>
 
- 
-
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
 For more information about break status and handling status, descriptions of all event codes, a list of the default status for all events, and other methods of controlling this status, see [Controlling Exceptions and Events](controlling-exceptions-and-events.md).
@@ -89,7 +85,7 @@ The **sxr** command resets all of the exception and event filter states to the d
 
 The **sx-** command does not change the handling status or the break status of the specified exception or event. This command can be used if you wish to change the first-chance command or second-chance command associated with a specific event, but do not wish to change anything else.
 
-If you include the **-h** option (or if the **cc**, **hc**, **bpec**, or **ssec** events are specified), the **sxe**, **sxd**, **sxn**, and **sxi** commands control the [handling status](https://msdn.microsoft.com/library/windows/hardware/ff541490#handling-status) of the exception or event. In all other cases, these commands control the [break status](https://msdn.microsoft.com/library/windows/hardware/ff541490#break-status) of the exception or event.
+If you include the **-h** option (or if the **cc**, **hc**, **bpec**, or **ssec** events are specified), the **sxe**, **sxd**, **sxn**, and **sxi** commands control the [handling status](./debug-filter-xxx.md#handling-status) of the exception or event. In all other cases, these commands control the [break status](./debug-filter-xxx.md#break-status) of the exception or event.
 
 When you are setting the break status, these commands have the following effects.
 
@@ -133,8 +129,6 @@ When you are setting the break status, these commands have the following effects
 </tbody>
 </table>
 
- 
-
 When you are setting the handling status, these commands have the following effects:
 
 <table>
@@ -164,8 +158,6 @@ When you are setting the handling status, these commands have the following effe
 </tbody>
 </table>
 
- 
-
 You can use the **-h** option together with exceptions, not events. Using this option with **ch**, **bpe**, or **sse** sets the handling status for **hc**, **bpec**, or **ssec**, respectively. If you use the -h option with any other event, it has no effect.
 
 Using the **-c** or **-c2** options with **hc**, **bpec**, or **ssec** associates the specified commands with **ch**, **bpe**, or **sse**, respectively.
@@ -173,21 +165,12 @@ Using the **-c** or **-c2** options with **hc**, **bpec**, or **ssec** associate
 In the following example, the **sxe** command is used to set the break status of access violation events to break on the first chance, and to set the first-chance command that will be executed at that point to **r eax**. Then the **sx-** command is used to alter the first-chance command to **r ebx**, without changing the handling status. Finally, a portion of the **sx** output is shown, indicating the current settings for access violation events:
 
 ```dbgcmd
-0:000> sxe -c "r eax" av 
+0:000> sxe -c "r eax" av
 
-0:000> sx- -c "r ebx" av 
+0:000> sx- -c "r ebx" av
 
-0:000> sx 
+0:000> sx
  av - Access violation - break - not handled
        Command: "r ebx"
   . . .  
 ```
-
- 
-
- 
-
-
-
-
-

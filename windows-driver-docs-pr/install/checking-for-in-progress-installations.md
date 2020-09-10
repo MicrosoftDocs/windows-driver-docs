@@ -12,11 +12,7 @@ ms.localizationpriority: medium
 
 # Checking for In-Progress Installations
 
-
-
-
-
-Your *device installation application* should determine whether other installation activities are in progress before performing its installations. To make this determination, the device installation application should call [**CMP_WaitNoPendingInstallEvents**](https://msdn.microsoft.com/library/windows/hardware/ff537916), typically with a zero time-out value. If the return value from this function indicates other installation activities are pending (for example, the Found New Hardware Wizard might be active), the device installation application should exit.
+Your *device installation application* should determine whether other installation activities are in progress before performing its installations. To make this determination, the device installation application should call [**CMP_WaitNoPendingInstallEvents**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_waitnopendinginstallevents), typically with a zero time-out value. If the return value from this function indicates other installation activities are pending (for example, the Found New Hardware Wizard might be active), the device installation application should exit.
 
 To make your *device installation application* compatible with platforms that do not support **CMP_WaitNoPendingInstallEvents**, the application should include the following code:
 
@@ -30,16 +26,16 @@ IsDeviceInstallInProgress (VOID)
     hModule = GetModuleHandle(TEXT("setupapi.dll"));
     if(!hModule)
     {
-        // Should never happen since we&#39;re linked to SetupAPI, but...
+        // Should never happen since we're linked to SetupAPI, but...
         return FALSE;
     }
 
-    pCMP_WaitNoPendingInstallEvents = 
+    pCMP_WaitNoPendingInstallEvents =
         (CMP_WAITNOPENDINGINSTALLEVENTS_PROC)GetProcAddress(hModule,
                                              "CMP_WaitNoPendingInstallEvents");
     if(!pCMP_WaitNoPendingInstallEvents)
     {
-        // We&#39;re running on a release of the operating system that doesn&#39;t supply this function.
+        // We're running on a release of the operating system that doesn't supply this function.
         // Trust the operating system to suppress AutoRun when appropriate.
         return FALSE;
     }
@@ -52,8 +48,8 @@ _tmain(IN int argc, IN PTCHAR argv[])
 {
     if(IsDeviceInstallInProgress()) {
         //
-        // We don&#39;t want to start right now.  Instead, our 
-        // device co-installer will invoke this application 
+        // We don't want to start right now.  Instead, our
+        // device co-installer will invoke this application
         // (if necessary) during finish-install processing.
         //
         return -1;
@@ -66,12 +62,3 @@ _tmain(IN int argc, IN PTCHAR argv[])
 Use of this code is based on the premise that if a platform does not support **CMP_WaitNoPendingInstallEvents**, the platform does not start AutoRun if installation activities are in progress.
 
 For a sample usage of this code, see the toaster installation package under the *src\\general\\toaster* subdirectory of the Windows Driver Kit (WDK).
-
- 
-
- 
-
-
-
-
-

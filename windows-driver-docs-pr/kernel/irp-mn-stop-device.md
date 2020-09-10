@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 All PnP drivers must handle this IRP.
 
+## Value
+
+0x04
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -50,13 +55,13 @@ This IRP is handled first by the driver at the top of the device stack and then 
 
 In response to this IRP, Windows 2000 and later drivers stop the device and release any hardware resources being used by the device, such as I/O ports and interrupts.
 
-On Windows 2000 and later, a stop IRP is used solely to free a device's hardware resources so they can be reconfigured. Once the resources are reconfigured, the device is restarted. A stop IRP is not a precursor to a remove IRP. See [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) for more information about the order in which PnP IRPs are sent to devices.
+On Windows 2000 and later, a stop IRP is used solely to free a device's hardware resources so they can be reconfigured. Once the resources are reconfigured, the device is restarted. A stop IRP is not a precursor to a remove IRP. See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for more information about the order in which PnP IRPs are sent to devices.
 
 On Windows 98/Me, a stop IRP is also used after a failed start and when a device is being disabled. WDM drivers that run on these operating systems should stop the device, fail any incoming I/O, and disable and deregister any user-mode interfaces.
 
 A driver must not fail this IRP. If a driver cannot release the device's hardware resources, it must fail the preceding query-stop IRP.
 
-See [Stopping a Device](https://msdn.microsoft.com/library/windows/hardware/ff563868) for detailed information about handling stop IRPs.
+See [Stopping a Device](./stopping-a-device.md) for detailed information about handling stop IRPs.
 
 **Sending This IRP**
 
@@ -85,14 +90,9 @@ Requirements
 
 [**IRP\_MN\_START\_DEVICE**](irp-mn-start-device.md)
 
-[**IoSetDeviceInterfaceState**](https://msdn.microsoft.com/library/windows/hardware/ff549700)
+[**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate)
 
-[**IoRegisterDeviceInterface**](https://msdn.microsoft.com/library/windows/hardware/ff549506)
-
- 
+[**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface)
 
  
-
-
-
 

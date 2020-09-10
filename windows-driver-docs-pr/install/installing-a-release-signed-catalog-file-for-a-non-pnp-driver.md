@@ -13,19 +13,13 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 To install a catalog file for a non-PnP driver that is released to the public, a redistributable installation application should use the [CryptCATAdminAddCatalog](https://go.microsoft.com/fwlink/p/?linkid=104926) cryptography function, as described in [Installing a Catalog File by using CryptCATAdminAddCatalog](installing-a-catalog-file-by-using-cryptcatadminaddcatalog.md).
 
-**Note**   In general, a redistributable installation application cannot use the [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778) tool to install a catalog file because SignTool is not a redistributable tool.
+**Note**   In general, a redistributable installation application cannot use the [**SignTool**](../devtest/signtool.md) tool to install a catalog file because SignTool is not a redistributable tool.
 
  
 
-**Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://msdn.microsoft.com/windows-drivers/develop/signing_a_driver).
-
- 
+**Tip**   Using embedded signatures is generally easier and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](/windows-hardware/drivers).
 
  
 
  
-
-
-
-
 

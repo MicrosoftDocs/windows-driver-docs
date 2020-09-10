@@ -16,7 +16,7 @@ The following code example is a sample XML file that extends the bidi communicat
 
 ```xml
 <?xml version="1.0" encoding="US-ASCII"?>
-<bidi:Schema xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
+<bidi:Schema xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi">
     <Property name="Printer">
       <Property name="Layout">
         <Property name="InputBins">

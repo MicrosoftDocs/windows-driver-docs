@@ -15,7 +15,7 @@ The state of the SO\_EXCLUSIVEADDRUSE socket option determines whether the local
 
 If a WSK application sets this socket option, it must do so before the socket is bound to a local transport address.
 
-To set the state of this socket option, a WSK application calls the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function with the following parameters.
+To set the state of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -123,7 +123,7 @@ A WSK application must specify a pointer to an IRP when calling the **WskControl
 
 The default state of this socket option is that exclusive use of the local transport address is disabled.
 
-For more information about using the SO\_EXCLUSIVEADDRUSE socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](https://msdn.microsoft.com/library/windows/hardware/ff570806).
+For more information about using the SO\_EXCLUSIVEADDRUSE socket option and its impact on the sharing of local transport addresses between sockets, see [Sharing Transport Addresses](./sharing-transport-addresses.md).
 
 Requirements
 ------------
@@ -146,9 +146,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -18,14 +18,14 @@ ms.date: 10/17/2018
 # DEVPROP_MASK_TYPEMOD
 
 
-In Windows Vista and later versions of Windows, the DEVPROP_MASK_TYPEMOD mask can be combined in a bitwise AND with a [property-data-type identifier](https://msdn.microsoft.com/library/windows/hardware/ff541476) to extract the DEVPROP_TYPEMOD_*Xxx* [**property-data-type modifier**](https://msdn.microsoft.com/library/windows/hardware/ff549770) from a property-data-type identifier.
+In Windows Vista and later versions of Windows, the DEVPROP_MASK_TYPEMOD mask can be combined in a bitwise AND with a [property-data-type identifier](/previous-versions/ff541476(v=vs.85)) to extract the DEVPROP_TYPEMOD_*Xxx* [**property-data-type modifier**](/previous-versions/ff549770(v=vs.85)) from a property-data-type identifier.
 
 Remarks
 -------
 
 This mask cannot be used as a base-data-type identifier, a property-data-type modifier, or property-data-type identifier.
 
-For information about how to extract the [**base-data-type identifier**](https://msdn.microsoft.com/library/windows/hardware/ff537793) from a property-data-type identifier, see [**DEVPROP_MASK_TYPE**](devprop-mask-type.md).
+For information about how to extract the [**base-data-type identifier**](/previous-versions/ff537793(v=vs.85)) from a property-data-type identifier, see [**DEVPROP_MASK_TYPE**](devprop-mask-type.md).
 
 Requirements
 ------------
@@ -49,11 +49,4 @@ Requirements
 [**DEVPROP_MASK_TYPE**](devprop-mask-type.md)
 
  
-
- 
-
-
-
-
-
 

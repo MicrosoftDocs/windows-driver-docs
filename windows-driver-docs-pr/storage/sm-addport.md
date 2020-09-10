@@ -78,16 +78,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_AddPort\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566213)
+[**SM\_AddPort\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_addport_in)
 
-[**SM\_AddPort\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566215)
-
- 
+[**SM\_AddPort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_addport_out)
 
  
-
-
-
-
-
 

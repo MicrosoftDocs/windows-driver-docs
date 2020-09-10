@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_HOST\_NAME structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_HOST\_NAME** structure contains the host name.

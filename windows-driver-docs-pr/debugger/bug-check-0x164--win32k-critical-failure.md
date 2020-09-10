@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicates that Win32k has encountered a critical failure.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## WIN32K\_CRITICAL\_FAILURE Parameters
 
@@ -42,7 +44,7 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 <p>2 - Pointer to DC</p>
 <p>3 - Pointer to SURFACE</p>
 <p>4 - Pointer to REGION</p>
-0x2 : OPERATOR_NEW_USED - Operator &quot;new&quot; is used to allocate memory.
+0x2 : OPERATOR_NEW_USED - Operator "new" is used to allocate memory.
 <p>2 - Reserved</p>
 <p>3 - Reserved</p>
 <p>4 - Reserved</p>
@@ -51,7 +53,7 @@ The WIN32K\_CRITICAL\_FAILURE bug check has a value of 0x00000164. This indicate
 <p>2 - wchar_t* to the name of the missing function</p>
 <p>3 - Reserved</p>
 <p>4 - Reserved</p>
-0x4 : GDI_SPRITE_SURFACE_INVALID_DELETE - GDI sprite&#39;s shape is being deleted without deleting the sprite.
+0x4 : GDI_SPRITE_SURFACE_INVALID_DELETE - GDI sprite's shape is being deleted without deleting the sprite.
 <p>2 - Handle to the SURFACE</p>
 <p>3 - Reference count to the SURFACE</p>
 <p>4 - PID of the SURFACE owner</p>

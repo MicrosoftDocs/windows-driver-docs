@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="directsound_stream_data_range"></span><span id="DIRECTSOUND_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/windows/hardware/ff537096) structure to describe the data range for a DirectSound stream.
+This example uses a [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio) structure to describe the data range for a DirectSound stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_AUDIO);
@@ -34,9 +34,4 @@ This example uses a [**KSDATARANGE\_AUDIO**](https://msdn.microsoft.com/library/
 The member values in this example are similar to those of the [PCM multichannel stream data range](pcm-multichannel-stream-data-range.md) example, with the exception of the **MaximumBitsPerSample** value. This value is set to the sample container size and should be a multiple of eight. For example, if the device supports 20 bits of valid audio data in 24-bit containers, the value for **MaximumBitsPerSample** should be set to 24.
 
  
-
- 
-
-
-
 

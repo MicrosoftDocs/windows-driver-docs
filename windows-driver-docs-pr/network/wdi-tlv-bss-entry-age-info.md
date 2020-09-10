@@ -40,11 +40,11 @@ The sum (in bytes) of the sizes of all contained elements.
 <tbody>
 <tr class="odd">
 <td>UINT64</td>
-<td>Timestamp of when this BSS entry was most recently discovered. The timestamp should be obtained with <a href="https://msdn.microsoft.com/library/windows/hardware/ff562629" data-raw-source="[&lt;strong&gt;NdisGetCurrentSystemTime&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff562629)"><strong>NdisGetCurrentSystemTime</strong></a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff553068" data-raw-source="[&lt;strong&gt;KeQuerySystemTime&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff553068)"><strong>KeQuerySystemTime</strong></a>.</td>
+<td>Timestamp of when this BSS entry was most recently discovered. The timestamp should be obtained with <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetcurrentsystemtime" data-raw-source="[&lt;strong&gt;NdisGetCurrentSystemTime&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetcurrentsystemtime)"><strong>NdisGetCurrentSystemTime</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime" data-raw-source="[&lt;strong&gt;KeQuerySystemTime&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime)"><strong>KeQuerySystemTime</strong></a>.</td>
 </tr>
 <tr class="even">
 <td>UINT8</td>
-<td>Specifies whether this information is live (found during a currently running scan) or is coming from the IHV component&#39;s BSS list cache.
+<td>Specifies whether this information is live (found during a currently running scan) or is coming from the IHV component's BSS list cache.
 <p>Valid values are 0 (live) or 1 (cached).</p></td>
 </tr>
 </tbody>
@@ -77,9 +77,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

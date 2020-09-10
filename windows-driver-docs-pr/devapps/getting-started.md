@@ -39,9 +39,9 @@ If you're developing Windows drivers in addition to UWP device apps, use Microso
 
 ### <span id="If_you_re_not_going_to_be_developing_drivers"></span><span id="if_you_re_not_going_to_be_developing_drivers"></span><span id="IF_YOU_RE_NOT_GOING_TO_BE_DEVELOPING_DRIVERS"></span>If you're not going to be developing drivers
 
-If you don't need to develop drivers, you can use Microsoft Visual Studio Express for Windows to create UWP device apps. But this version of Visual Studio installs a version of the SDK that doesn’t include the Device Metadata Authoring Wizard. To get the new Device Metadata Authoring Wizard, you must also download the standalone Windows 8.1 SDK.
+If you don't need to develop drivers, you can use Microsoft Visual Studio Express 2015 for Windows to create UWP device apps. But this version of Visual Studio installs a version of the SDK that doesn’t include the Device Metadata Authoring Wizard. To get the new Device Metadata Authoring Wizard, you must also download the standalone Windows 8.1 SDK.
 
-1.  [Download Visual Studio Express for Windows](https://go.microsoft.com/fwlink/p/?LinkId=302196)
+1.  [Download Visual Studio Express 2015 for Windows 10](https://visualstudio.microsoft.com/vs/express/)
 2.  [Download the standalone Windows 8.1 SDK](https://go.microsoft.com/fwlink/p/?LinkId=302196)
 
 ## <span id="2._build_some_regular_windows_store_apps"></span><span id="2._BUILD_SOME_REGULAR_WINDOWS_STORE_APPS"></span>2. Build some regular UWP apps

@@ -15,7 +15,6 @@ ms.localizationpriority: medium
 
 # .cordll (Control CLR Debugging)
 
-
 The **.cordll** command controls managed code debugging and the Microsoft .NET common language runtime (CLR).
 
 ```dbgsyntax
@@ -23,7 +22,6 @@ The **.cordll** command controls managed code debugging and the Microsoft .NET c
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
-
 
 <span id="_______Options______"></span><span id="_______options______"></span><span id="_______OPTIONS______"></span> *Options*   
 One or more of the following options:
@@ -105,23 +103,12 @@ If you omit the **I** parameter, the debugger uses version 4 by default. For exa
 .cordll -I clr -lp c:\dacFolder
 ```
 
-Sos.dll is a component that is used for debugging managed code. The current version of Debugging Tools for Windows does not include any version of sos.dll. For information about how to get sos.dll, see [Getting the SOS Debugging Extension (sos.dll)](debugging-managed-code.md#getting-the-sos-debugging-extension).
+Sos.dll is a component that is used for debugging managed code. The current version of Debugging Tools for Windows does not include any version of sos.dll. For information about how to get sos.dll, see *Getting the SOS Debugging Extension (sos.dll)* in [Debugging Managed Code Using the Windows Debugger](debugging-managed-code.md).
 
 The **.cordll** command is supported in kernel-mode debugging. However, this command might not work unless the necessary memory is paged in.
 
-## <span id="see_also"></span>See also
-
+## See also
 
 [Debugging Managed Code Using the Windows Debugger](debugging-managed-code.md)
 
-[SOS Debugging Extension](https://go.microsoft.com/fwlink/p/?linkid=223345)
-
- 
-
- 
-
-
-
-
-
-
+[SOS Debugging Extension](/dotnet/framework/tools/sos-dll-sos-debugging-extension)

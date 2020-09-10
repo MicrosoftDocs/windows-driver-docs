@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BDA_RECEIVER_COMPONENT
 
 
-The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a receiver in the [broadcast driver architecture](https://msdn.microsoft.com/library/windows/hardware/ff556573) (BDA).
+The KSCATEGORY_BDA_RECEIVER_COMPONENT [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a receiver in the [broadcast driver architecture](/windows-hardware/drivers/ddi/_stream/index) (BDA).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for BDA devices register instances of KSCATEGORY_BDA_RECEIVER_COMPONENT to indicate to the operating system that the devices support a BDA receiver filter.
 
-For more information about the KS functional category for a BDA receiver filters, see [Common Control Nodes and Filters](https://msdn.microsoft.com/library/windows/hardware/ff557718), [Starting a BDA Minidriver](https://msdn.microsoft.com/library/windows/hardware/ff568223), and [BDA Filter Category GUIDs](https://msdn.microsoft.com/library/windows/hardware/ff556521).
+For more information about the KS functional category for a BDA receiver filters, see [Common Control Nodes and Filters](../stream/common-control-nodes-and-filters.md), [Starting a BDA Minidriver](../stream/starting-a-bda-minidriver.md), and [BDA Filter Category GUIDs](../stream/bda-filter-category-guids.md).
 
 Requirements
 ------------
@@ -73,10 +73,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

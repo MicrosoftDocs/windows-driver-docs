@@ -20,22 +20,16 @@ This section lists and describes the Windows Device Driver Interface (DDI) Compl
 
 ### Driver Verification Tools
 
-You can use the code analysis tools, [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808) and [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) to test a driver for compliance to the DDI usage rules. Static Driver Verifier (SDV) performs static analysis on the driver source code, so you can use SDV early in development cycle. Driver Verifier is integrated with the operating system, so you can test a driver at runtime after it has been built, deployed, and installed.
+You can use the code analysis tools, [Static Driver Verifier](./static-driver-verifier.md) and [Driver Verifier](./driver-verifier.md) to test a driver for compliance to the DDI usage rules. Static Driver Verifier (SDV) performs static analysis on the driver source code, so you can use SDV early in development cycle. Driver Verifier is integrated with the operating system, so you can test a driver at runtime after it has been built, deployed, and installed.
 
-Using the driver source code, [Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808) creates a model of the driver and the operating system. In this model, SDV places the driver in a hostile environment and systematically tests code paths through the driver by looking for violations of a formalized set of the driver compliance rules ([Static Driver Verifier rules](https://msdn.microsoft.com/library/windows/hardware/ff552839)).
+Using the driver source code, [Static Driver Verifier](./static-driver-verifier.md) creates a model of the driver and the operating system. In this model, SDV places the driver in a hostile environment and systematically tests code paths through the driver by looking for violations of a formalized set of the driver compliance rules ([Static Driver Verifier rules](./static-driver-verifier-rule.md)).
 
-Starting in Windows 8, you can configure [Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) to run some of the same compliance checks on installed drivers by enabling [DDI compliance checking](https://msdn.microsoft.com/library/windows/hardware/hh454208).
+Starting in Windows 8, you can configure [Driver Verifier](./driver-verifier.md) to run some of the same compliance checks on installed drivers by enabling [DDI compliance checking](./ddi-compliance-checking.md).
 
 ## Related topics
 
 
-[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448)
-[Static Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff552808)
+[Driver Verifier](./driver-verifier.md)
+[Static Driver Verifier](./static-driver-verifier.md)
  
-
- 
-
-
-
-
 

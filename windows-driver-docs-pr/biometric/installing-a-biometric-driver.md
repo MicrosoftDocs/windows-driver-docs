@@ -81,7 +81,7 @@ The following is a list of guidelines for biometric device installation. The cod
 
 -   To differentiate WBDI and legacy drivers, vendors must set a Feature Score for the driver in the INX file. Feature Score is not set in the [WudfBioUsbSample](https://github.com/Microsoft/Windows-driver-samples/tree/master/biometrics/driver) sample. For more information about setting a Feature Score, see [Ranking a Biometric Driver on Windows Update](ranking-a-biometric-driver-on-windows-update.md).
 
-For information about INX files and how they differ from INF files, see [Using INX Files to Create INF Files](https://msdn.microsoft.com/library/windows/hardware/ff545473).
+For information about INX files and how they differ from INF files, see [Using INX Files to Create INF Files](../wdf/using-inx-files-to-create-inf-files.md).
 
 In order to replace a WBDI driver with a legacy driver, use the following procedure:
 
@@ -94,10 +94,4 @@ In order to replace a WBDI driver with a legacy driver, use the following proced
 4.  Install the legacy driver.
 
  
-
- 
-
-
-
-
 

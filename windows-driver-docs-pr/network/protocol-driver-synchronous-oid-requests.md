@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Protocol Driver Synchronous OID Requests
 
-To support the Synchronous OID request path, protocol drivers call the [**NdisSynchronousOidRequest**](https://msdn.microsoft.com/library/windows/hardware/BF539DDA-59ED-4010-88BC-3C7D8DC475EF) function to issue a Synchronous OID.
+To support the Synchronous OID request path, protocol drivers call the [**NdisSynchronousOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissynchronousoidrequest) function to issue a Synchronous OID.
 
 For protocol drivers, the *Synchronous OID request interface* differs from the Regular and Direct OID request interfaces in that protocol drivers do not have to implement an asynchronous *complete* callback function. This is because of the synchronous nature of the path. For more info about the differences between Regular, Direct, and Synchronous OIDs in general, see [Synchronous OID Request Interface in NDIS 6.80](synchronous-oid-request-interface-in-ndis-6-80.md).
 
@@ -20,5 +20,4 @@ To support the Synchronous OID request interface, use the documentation for the 
 
 | Synchronous OID function | Standard OID function |
 | --- | --- |
-| [*NdisSynchronousOidRequest*](https://msdn.microsoft.com/library/windows/hardware/BF539DDA-59ED-4010-88BC-3C7D8DC475EF) | [*NdisOidRequest*](https://msdn.microsoft.com/library/windows/hardware/ff563710) |
-
+| [*NdisSynchronousOidRequest*](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissynchronousoidrequest) | [*NdisOidRequest*](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) |

@@ -81,16 +81,9 @@ Requirements
 ## See also
 
 
-[**BdaPropertyNodeEvents**](https://msdn.microsoft.com/library/windows/hardware/ff556488)
+[**BdaPropertyNodeEvents**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdapropertynodeevents)
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
-
- 
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
-
-
-
-
 

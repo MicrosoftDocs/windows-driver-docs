@@ -94,14 +94,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendRLS\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566305)
+[**SM\_SendRLS\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendrls_out)
 
  
-
- 
-
-
-
-
-
 

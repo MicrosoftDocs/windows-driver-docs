@@ -1,87 +1,124 @@
 - name: "Bluetooth Design Guide"
   href: index.md
+- name: "Bluetooth Universal Windows driver model for Windows 10"
+  href: universal-bluetooth-driver-model-for-windows-10.md
+- name: "Bluetooth Profile Drivers Overview"
   items: 
-  - name: "Bluetooth Universal Windows driver model for Windows 10"
-    href: universal-bluetooth-driver-model-for-windows-10.md
-  - name: "Bluetooth Profile Drivers Overview"
+  - name: "Introduction to Bluetooth Profile Drivers"
     href: bluetooth-profile-drivers-overview.md
-    items: 
-    - name: "Bluetooth Driver Stack"
-      href: bluetooth-driver-stack.md
-    - name: "Installing a Bluetooth Device"
-      href: installing-a-bluetooth-device.md
-    - name: "Bluetooth Registry Entries"
-      href: bluetooth-registry-entries.md
-  - name: "Bluetooth Low Energy Overview"
-    href: bluetooth-low-energy-overview.md
-  - name: "Using the Bluetooth Driver Stack"
+  - name: "Bluetooth Driver Stack"
+    href: bluetooth-driver-stack.md
+  - name: "Installing a Bluetooth Device"
+    href: installing-a-bluetooth-device.md
+  - name: "Bluetooth Registry Entries"
+    href: bluetooth-registry-entries.md
+- name: "Bluetooth Low Energy Overview"
+  href: bluetooth-low-energy-overview.md
+- name: "Using the Bluetooth Driver Stack"
+  items: 
+  - name: "How to use the Bluetooth Driver Stack"
     href: using-the-bluetooth-driver-stack.md
+  - name: "Bluetooth IOCTLs"
+    href: bluetooth-ioctls2.md
+  - name: "Querying for Bluetooth Interfaces"
+    href: querying-for-bluetooth-interfaces.md
+  - name: "Building and Sending a BRB"
+    href: building-and-sending-a-brb.md
+  - name: "Creating a SCO Client Connection to a Remote Device"
+    href: creating-a-sco-client-connection-to-a-remote-device.md
+  - name: "Accepting SCO Connections in a Bluetooth Profile Driver"
+    href: accepting-sco-connections-in-a-bluetooth-profile-driver.md
+  - name: "Creating a L2CAP Client Connection to a Remote Device"
+    href: creating-a-l2cap-client-connection-to-a-remote-device.md
+  - name: "Accepting L2CAP Connections in a Bluetooth Profile Driver"
+    href: accepting-l2cap-connections-in-a-bluetooth-profile-driver.md
+  - name: "Communicating with SDP Servers"
     items: 
-    - name: "Bluetooth IOCTLs"
-      href: bluetooth-ioctls2.md
-    - name: "Querying for Bluetooth Interfaces"
-      href: querying-for-bluetooth-interfaces.md
-    - name: "Building and Sending a BRB"
-      href: building-and-sending-a-brb.md
-    - name: "Creating a SCO Client Connection to a Remote Device"
-      href: creating-a-sco-client-connection-to-a-remote-device.md
-    - name: "Accepting SCO Connections in a Bluetooth Profile Driver"
-      href: accepting-sco-connections-in-a-bluetooth-profile-driver.md
-    - name: "Creating a L2CAP Client Connection to a Remote Device"
-      href: creating-a-l2cap-client-connection-to-a-remote-device.md
-    - name: "Accepting L2CAP Connections in a Bluetooth Profile Driver"
-      href: accepting-l2cap-connections-in-a-bluetooth-profile-driver.md
-    - name: "Communicating with SDP Servers"
+    - name: "Communicating with SDP Servers Overview"
       href: communicating-with-sdp-servers.md
-      items: 
-      - name: "Accessing SDP Service Information"
-        href: accessing-sdp-service-information.md
-      - name: "Converting SDP Records to a Tree Structure"
-        href: converting-sdp-records-to-a-tree-structure.md
-      - name: "Building SDP Records"
-        href: building-sdp-records.md
-    - name: "Supporting Bluetooth Event Notifications"
-      href: supporting-bluetooth-event-notifications.md
-  - name: "Debugging Bluetooth Profile Drivers"
-    href: debugging-bluetooth-profile-drivers.md
-  - name: "Microsoft-defined Bluetooth HCI commands and events"
-    href: microsoft-defined-bluetooth-hci-commands-and-events.md
+    - name: "Accessing SDP Service Information"
+      href: accessing-sdp-service-information.md
+    - name: "Converting SDP Records to a Tree Structure"
+      href: converting-sdp-records-to-a-tree-structure.md
+    - name: "Building SDP Records"
+      href: building-sdp-records.md
+  - name: "Supporting Bluetooth Event Notifications"
+    href: supporting-bluetooth-event-notifications.md
+- name: "Debugging Bluetooth Profile Drivers"
+  href: debugging-bluetooth-profile-drivers.md
+- name: "Microsoft-defined Bluetooth HCI commands and events"
+  href: microsoft-defined-bluetooth-hci-commands-and-events.md
+- name: "Bluetooth Frequently Asked Questions"
+  items: 
   - name: "Bluetooth FAQ"
     href: bluetooth-faq.md
-    items: 
-    - name: "Bluetooth Version and Profile Support in Windows 10"
-      href: general-bluetooth-support-in-windows.md
-    - name: "Bluetooth Version and Profile Support in Previous Windows Versions"
-      href: bluetooth-support-in-previous-windows-versions.md
-    - name: "Bluetooth Host Radio Support"
-      href: bluetooth-host-radio-support.md
-    - name: "Bluetooth Software Radio Switch Function Prototypes"
-      href: bluetooth-software-radio-switch-function-prototypes.md
-    - name: "Bluetooth User Interface"
-      href: bluetooth-user-interface.md
-    - name: "Bluetooth Certification"
-      href: bluetooth-certification.md
-    - name: "Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista"
-      href: bluetooth-faq--appendix-a.md
-    - name: "Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista"
-      href: bluetooth-faq--appendix-b.md
-    - name: "Bluetooth Appendix"
-      href: bluetooth-faq--appendix-c.md
+  - name: "Bluetooth Version and Profile Support in Windows 10"
+    href: general-bluetooth-support-in-windows.md
+  - name: "Bluetooth Version and Profile Support in Previous Windows Versions"
+    href: bluetooth-support-in-previous-windows-versions.md
+  - name: "Bluetooth Host Radio Support"
+    href: bluetooth-host-radio-support.md
+  - name: "Bluetooth Software Radio Switch Function Prototypes"
+    href: bluetooth-software-radio-switch-function-prototypes.md
+  - name: "Bluetooth User Interface"
+    href: bluetooth-user-interface.md
+  - name: "Bluetooth Certification"
+    href: bluetooth-certification.md
+  - name: "Appendix A: How to Install an In-Box Bluetooth Driver on New Hardware in Windows Vista"
+    href: bluetooth-faq--appendix-a.md
+  - name: "Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista"
+    href: bluetooth-faq--appendix-b.md
+  - name: "Bluetooth Appendix"
+    href: bluetooth-faq--appendix-c.md
+- name: "Transport Bus Driver for Bluetooth Power Control Handling"
+  items: 
   - name: "Transport Bus Driver for Bluetooth Power Control Handling Guidelines"
     href: transport-bus-driver-for-bluetooth-power-control-handling-guidelines.md
-    items: 
-    - name: "Transport Bus Driver for Bluetooth"
-      href: transport-bus-driver-for-bluetooth.md
-    - name: "Bluetooth Core Driver Layer and Supported Power Transitions"
-      href: bluetooth-core-driver-layer-and-supported-power-transitions.md
-    - name: "Serial Bus Driver Layer"
-      href: serial-bus-driver-layer.md
-    - name: "Transport Bus Driver FAQ"
-      href: transport-bus-driver-faq.md
-  - name: "Bluetooth LE Proximity Profile Device and App"
+  - name: "Transport Bus Driver for Bluetooth"
+    href: transport-bus-driver-for-bluetooth.md
+  - name: "Bluetooth Core Driver Layer and Supported Power Transitions"
+    href: bluetooth-core-driver-layer-and-supported-power-transitions.md
+  - name: "Serial Bus Driver Layer"
+    href: serial-bus-driver-layer.md
+  - name: "Transport Bus Driver FAQ"
+    href: transport-bus-driver-faq.md
+- name: "Bluetooth LE Proximity Profile Device and App"
+  items: 
+  - name: "Bluetooth LE Proximity Profile Overview"
     href: implementing-a-bluetooth-le-proximity-profile-device-and-application.md
-    items: 
-    - name: "Bluetooth Proximity Profile"
-      href: bluetooth-proximity-profile.md
-    - name: "Proximity Profile Implementation Details"
-      href: proximity-profile-implementation-details.md
+  - name: "Bluetooth Proximity Profile"
+    href: bluetooth-proximity-profile.md
+  - name: "Proximity Profile Implementation Details"
+    href: proximity-profile-implementation-details.md
+- name: "Bluetooth Driver Testing"
+  items: 
+  - name: "Bluetooth Driver Testing Resources"
+    href: testing-Bluetooth-main.md
+  - name: "Bluetooth Test Platform (BTP)"
+    items:
+    - name: "Bluetooth Test Platform Overview"
+      href: testing-BTP-Overview.md
+    - name: "Setting Up BTP"
+      href: testing-BTP-setup.md
+    - name: "BTP Software"
+      href: testing-BTP-software-package.md
+    - name: "BTP Hardware"
+      items:
+      - name: "Traduci board"
+        href: testing-BTP-hw.md
+      - name: "HID Capable Radios"
+        href: testing-BTP-hw-hid.md
+      - name: "Audio Capable Radios"
+        href: testing-BTP-hw-audio.md
+    - name: "BTP Tests"
+      items:
+      - name: "Currently Available BTP Tests"
+        href: testing-BTP-Tests.md
+      - name: "Testing Bluetooth Pairing"
+        href: testing-BTP-tests-pairing.md
+      - name: "Testing Bluetooth HID"
+        href: testing-BTP-tests-hid.md
+      - name: "Testing Bluetooth Audio"
+        href: testing-BTP-tests-audio.md
+- name: "Bluetooth Radio Reset and Recovery"
+  href: bluetooth-radio-error-recovery.md

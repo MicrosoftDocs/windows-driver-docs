@@ -15,7 +15,7 @@ warning C30035: A call was made to a function that must be made from inside the 
 
 BANNED\_MEM\_ALLOCATION\_MAYBE\_BAD\_CALL\_SITE
 
-The code was compiled with the [POOL\_NX\_OPTIN](https://msdn.microsoft.com/library/windows/hardware/hh920402) macro but the initialization did not occur inside of **DriverEntry()** or **DllInitialize()**. To fix this, move the call inside of the initialization function.
+The code was compiled with the [POOL\_NX\_OPTIN](../kernel/single-binary-opt-in-pool-nx-optin.md) macro but the initialization did not occur inside of **DriverEntry()** or **DllInitialize()**. To fix this, move the call inside of the initialization function.
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -64,10 +64,4 @@ DriverEntry (
 ```
 
  
-
- 
-
-
-
-
 

@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_TASK\_SEND\_REQUEST\_ACTION\_FRAME
@@ -34,8 +35,8 @@ The host may decide to abort this operation and continue/retry the public action
 
 | TLV                                                                                                             | Multiple TLV instances allowed | Optional | Description                                     |
 |-----------------------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------|
-| [**WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/dn898053) |                                |          | Parameters for sending an Action Frame Request. |
-| [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://msdn.microsoft.com/library/windows/hardware/dn926118)                                         |                                |          | The Action Frame body.                          |
+| [**WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS**](./wdi-tlv-send-action-frame-request-parameters.md) |                                |          | Parameters for sending an Action Frame Request. |
+| [**WDI\_TLV\_ACTION\_FRAME\_BODY**](./wdi-tlv-action-frame-body.md)                                         |                                |          | The Action Frame body.                          |
 
  
 
@@ -43,6 +44,7 @@ The host may decide to abort this operation and continue/retry the public action
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_SEND\_REQUEST\_ACTION\_FRAME\_COMPLETE](ndis-status-wdi-indication-send-request-action-frame-complete.md)
+
 Requirements
 ------------
 
@@ -68,9 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

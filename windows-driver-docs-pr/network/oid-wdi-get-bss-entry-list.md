@@ -6,6 +6,7 @@ ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_BSS_ENTRY_LIST Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # OID\_WDI\_GET\_BSS\_ENTRY\_LIST
@@ -30,7 +31,7 @@ The Microsoft component uses the list of indicated entries to report the BSS lis
 
 | TLV                                         | Multiple TLV instances allowed | Optional | Description                                           |
 |---------------------------------------------|--------------------------------|----------|-------------------------------------------------------|
-| [**WDI\_TLV\_SSID**](https://msdn.microsoft.com/library/windows/hardware/dn898064) |                                |          | The SSID that the host needs the BSS list update for. |
+| [**WDI\_TLV\_SSID**](./wdi-tlv-ssid.md) |                                |          | The SSID that the host needs the BSS list update for. |
 
  
 
@@ -42,6 +43,7 @@ No additional data. The data in the header is sufficient.
 
 
 [NDIS\_STATUS\_WDI\_INDICATION\_BSS\_ENTRY\_LIST](ndis-status-wdi-indication-bss-entry-list.md)
+
 Requirements
 ------------
 
@@ -67,9 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -4,6 +4,7 @@ description: You run PwrTest from a Command Prompt window. You can select and co
 ms.assetid: bcae1bb6-ce5b-4ece-a5ba-bae6fefd6408
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+ms.custom: 19H1
 ---
 
 # PwrTest Syntax
@@ -36,7 +37,8 @@ pwrtest /scenario [/scenario_options] [/common_options]
 | processidle | Forces background maintenance tasks to execute (now rather than at their scheduled time) and monitors their progress. (Windows 7 and later)                        |
 | cs          | Cycles the computer through connected standby transitions if they are supported by the system. (Windows 8 and later)                                               |
 | platidle    | Monitors and attempts to log platform idle transition counts if they are supported by the system. (Windows 8 and later)                                            |
- 
+| directedfx  | Monitors low-power idle state switches related to [Directed Power Management Framework (DFx)](../kernel/introduction-to-the-directed-power-management-framework.md). (Windows 10, version 1903 and later)|
+
 
  
 
@@ -83,7 +85,7 @@ The group policy settings put in place by your system administrator might interf
 
 PwrTest automatically generates multiple logs for each execution in .log (plaintext), .xml (format varies per scenario), .wtl (WTTLog), and .etl (ETW trace) log formats.
 
-To be able to use all PwrTest Scenarios, you must first provision a test computer for testing using Visual Studio and the WDK. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://msdn.microsoft.com/library/windows/hardware/dn745909), or [Provision a computer for driver deployment and testing (WDK 8)](https://msdn.microsoft.com/library/windows/hardware/hh698272). Some scenarios require the power button driver that is part of Windows Driver Testing Framework (WDTF). WDTF (and the included power button driver) is automatically installed when you provision a system for testing using Visual Studio and the WDK. For information about WDTF, see [**Windows Device Testing Framework (WDTF) (Windows Drivers)**](https://msdn.microsoft.com/library/windows/hardware/ff539547).
+To be able to use all PwrTest Scenarios, you must first provision a test computer for testing using Visual Studio and the WDK. For more information, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md), or [Provision a computer for driver deployment and testing (WDK 8)](/previous-versions/hh698272(v=vs.85)). Some scenarios require the power button driver that is part of Windows Driver Testing Framework (WDTF). WDTF (and the included power button driver) is automatically installed when you provision a system for testing using Visual Studio and the WDK. For information about WDTF, see [**Windows Device Testing Framework (WDTF) (Windows Drivers)**](../wdtf/index.md).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -93,11 +95,4 @@ To be able to use all PwrTest Scenarios, you must first provision a test compute
 [PwrTest Log File](pwrtest-log-file.md)
 
  
-
- 
-
-
-
-
-
 

@@ -32,14 +32,9 @@ In particular, a *RetryRequest* routine should do the following:
 
 4.  Set up the I/O stack location for the port driver in the IRP as already described in [Storage Class Driver's Dispatch Routines](storage-class-driver-s-dispatch-routines.md) through [Storage Class Driver's SplitTransferRequest Routine](storage-class-driver-s-splittransferrequest-routine.md).
 
-5.  Call [**IoSetCompletionRoutine**](https://msdn.microsoft.com/library/windows/hardware/ff549679) for the IRP, because the driver's [**IoCompletion**](https://msdn.microsoft.com/library/windows/hardware/ff548354) routine must free the SRB before the IRP returns. The *IoCompletion* routine might also need to retry the request more than once, or to call the driver's *InterpretRequestSense* or *ReleaseQueue* routine.
+5.  Call [**IoSetCompletionRoutine**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutine) for the IRP, because the driver's [**IoCompletion**](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine must free the SRB before the IRP returns. The *IoCompletion* routine might also need to retry the request more than once, or to call the driver's *InterpretRequestSense* or *ReleaseQueue* routine.
 
-6.  Pass the request on to the next-lower driver with [**IoCallDriver**](https://msdn.microsoft.com/library/windows/hardware/ff548336).
-
- 
+6.  Pass the request on to the next-lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
  
-
-
-
 

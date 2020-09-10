@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 To support increased functionality and extension to select technology stacks, Windows define Device-Specific Methods (\_DSM) for the device.
 
-The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces several device-specific methods that are used by Windows to support hardware platforms that use System on a Chip (SoC) integrated circuits. The topics in this section describe the arguments and return values that are defined for these methods.
+The [ACPI 5.0 specification](https://uefi.org/specifications) introduces several device-specific methods that are used by Windows to support hardware platforms that use System on a Chip (SoC) integrated circuits. The topics in this section describe the arguments and return values that are defined for these methods.
 
 ## In this section
 
@@ -34,7 +34,7 @@ The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces sev
 </tr>
 <tr class="even">
 <td><p><a href="battery-device-specific-method.md" data-raw-source="[Battery Device-Specific Method](battery-device-specific-method.md)">Battery Device-Specific Method</a></p></td>
-<td><p>To support the passive thermal management of the battery by the platform, Microsoft defines a _DSM method to communicate to the platform firmware the thermal throttling limit set by the battery&#39;s thermal zone.</p></td>
+<td><p>To support the passive thermal management of the battery by the platform, Microsoft defines a _DSM method to communicate to the platform firmware the thermal throttling limit set by the battery's thermal zone.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="device-specific-method-for-microsoft-thermal-extensions.md" data-raw-source="[Device-Specific Method for Microsoft thermal extensions](device-specific-method-for-microsoft-thermal-extensions.md)">Device-Specific Method for Microsoft thermal extensions</a></p></td>
@@ -46,7 +46,7 @@ The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces sev
 </tr>
 <tr class="odd">
 <td><p><a href="hidi2c-device-specific-method---dsm-.md" data-raw-source="[HIDI2C Device-Specific Method (_DSM)](hidi2c-device-specific-method---dsm-.md)">HIDI2C Device-Specific Method (_DSM)</a></p></td>
-<td><p>The _DSM method is defined in section 9.14.1, &quot;_DSM (Device Specific Method)&quot;, in the <a href="https://www.uefi.org/specifications" data-raw-source="[ACPI 5.0 specification](https://www.uefi.org/specifications)">ACPI 5.0 specification</a>. This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods.</p></td>
+<td><p>The _DSM method is defined in section 9.14.1, "_DSM (Device Specific Method)", in the <a href="https://uefi.org/specifications" data-raw-source="[ACPI 5.0 specification](https://uefi.org/specifications)">ACPI 5.0 specification</a>. This method provides for individual, device-specific data and control functions that can be called by a device driver without conflicting with other such device-specific methods.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="windows-button-array-device-specific-method---dsm-.md" data-raw-source="[Windows button array Device-Specific Method (_DSM)](windows-button-array-device-specific-method---dsm-.md)">Windows button array Device-Specific Method (_DSM)</a></p></td>
@@ -62,18 +62,14 @@ The [ACPI 5.0 specification](https://www.uefi.org/specifications) introduces sev
 
 To support device-class-specific communications between the driver stack in Windows and the platform firmware, Microsoft defines Device-Specific Methods (\_DSM) to be used with drivers.
 
-|                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Topic                                                                                                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](https://msdn.microsoft.com/library/windows/hardware/mt604741) | The \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity. It provides a common basis of reporting device functions & capabilities, such that OS software can interact with various implementations through the same mechanisms. Further, it allows support for vendor-specific functionality through access to I2C registers. |
-| [\_DSM (Device Specific Method) for SATA](https://msdn.microsoft.com/library/windows/hardware/dn613874)                                                                               | This method enables management of each port of a SATA controller separate from the host controller as a whole.                                                                                                                                                                                                                                                                                                                                                                           |
+**Topic**: Description
+
+**[\_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1)](../storage/-dsm-interface-for-byte-addressable-energy-backed-function-class--function-interface-1-.md)**: The \_DSM Interface for Byte Addressable Energy Backed Function Class (Function Interface 1) is designed to map to the JEDEC Byte Addressable Energy Backed Interface standard in order to minimize BIOS complexity. It provides a common basis of reporting device functions & capabilities, such that OS software can interact with various implementations through the same mechanisms. Further, it allows support for vendor-specific functionality through access to I2C registers.
+
+**[\_DSM (Device Specific Method) for SATA](/previous-versions/windows/hardware/design/dn613874(v=vs.85))**: This method enables management of each port of a SATA controller separate from the host controller as a whole.
+
 
  
 
  
-
- 
-
-
-
 

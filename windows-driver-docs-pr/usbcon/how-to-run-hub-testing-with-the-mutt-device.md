@@ -1,5 +1,5 @@
 ---
-Description: The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.
+description: The goal of hub testing is to generate a complete set of possible traffic patterns from devices. You can test disconnect scenarios by adding an upstream SuperMUTT pack.
 title: USB hub testing with MUTT devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -21,7 +21,7 @@ Before you run the MUTT test commands at an elevated command prompt, make sure y
 ## Recommended hub tests
 
 
--   USB IF electrical tests. All of our tests are protocol and state focused. See [USB-IF Compliance Program](http://www.usb.org/developers/compliance/) for more information on electrical tests.
+-   USB IF electrical tests. All of our tests are protocol and state focused. See [USB-IF Compliance Program](https://www.usb.org/compliance) for more information on electrical tests.
 -   MUTT stress and transfer tests included in the MUTT software package with MUTT devices connected in the suggested configurations for USB controllers. **RunTest.bat** runs both the stress and transfer tests. See [How to run stress and transfer performance tests for MUTT devices](how-to-run-stress-and-transfer-and-super-mutt-performance-tests-for-mutt-devices.md).
 -   Device Fundamental test. For more information, see [How to run devfund tests in Visual Studio for MUTT devices](how-to-run-device-fundamental-tests-in-visual-studio-for-connected-mutt-devices.md).
 -   Controller Windows Hardware Certification Kit tests. For more information, see [USB-IF Certification Validation Test (Controller)](https://go.microsoft.com/fwlink/p/?linkid=316509).
@@ -37,7 +37,7 @@ Before you run the MUTT test commands at an elevated command prompt, make sure y
     ![test connect/disconnect](images/fig14-topology-connect-disconnect.png)
 
 ## Related topics
-[USB](https://msdn.microsoft.com/library/windows/hardware/ff538930)  
+[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
 [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
 
 

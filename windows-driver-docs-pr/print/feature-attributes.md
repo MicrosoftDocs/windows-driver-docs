@@ -46,17 +46,17 @@ The following table lists the feature attributes in alphabetic order and describ
 <td><p><strong><em>ConcealFromUI?</strong></p></td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether the feature should be displayed in the user interface.</p></td>
 <td><p>Optional. If not specified the default value is <strong>FALSE</strong>, which means the feature is displayed.</p>
-<p>Should be <strong>TRUE</strong> only if a feature has only one option (for example, one resolution) and is thus not user-modifiable, or, if the feature&#39;s option selection is controlled by setting another feature&#39;s options.</p>
+<p>Should be <strong>TRUE</strong> only if a feature has only one option (for example, one resolution) and is thus not user-modifiable, or, if the feature's option selection is controlled by setting another feature's options.</p>
 <p>If the <strong></em>ConcealFromUI</strong> attribute is set to <strong>TRUE</strong>, then Unidrv or PrintConfig will add the psk:DisplayUI element to the Feature element for this item in the PrintCapabilities XML.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong><em>ConflictPriority</strong></p></td>
-<td><p>Numeric value representing the feature&#39;s priority, where 1 is the highest priority.</p></td>
+<td><p>Numeric value representing the feature's priority, where 1 is the highest priority.</p></td>
 <td><p>Optional. See <a href="feature-conflict-priority.md" data-raw-source="[Feature Conflict Priority](feature-conflict-priority.md)">Feature Conflict Priority</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong></em>DefaultOption</strong></p></td>
-<td><p>Name of one of the feature&#39;s options.</p></td>
+<td><p>Name of one of the feature's options.</p></td>
 <td><p>Optional. If not specified, the first option listed in a <em>Feature entry is the default. For the PaperSize feature, the default options for Unidrv are A4 for metric locales and Letter elsewhere. If the default PaperSize does not exist, Unidrv uses the PaperSize option that is specified by the *<strong>DefaultOption</strong> keyword.</p></td>
 </tr>
 <tr class="even">
@@ -66,7 +66,7 @@ The following table lists the feature attributes in alphabetic order and describ
 <p>PRINTER_PROPERTY</p>
 <p>If DOC_PROPERTY or JOB_PROPERTY, the feature is assigned to the document property sheet. If PRINTER_PROPERTY, the feature is assigned to the printer property sheet.</p></td>
 <td><p>Required for customized features. Optional for standard features. If not specified, the default value for standard features is DOC_PROPERTY unless otherwise noted.</p>
-<p>If PRINTER_PROPERTY, the feature&#39;s option value is saved in the registry. If DOC_PROPERTY or JOB_PROPERTY, the feature&#39;s option value is saved with the document.</p></td>
+<p>If PRINTER_PROPERTY, the feature's option value is saved in the registry. If DOC_PROPERTY or JOB_PROPERTY, the feature's option value is saved with the document.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><em>HelpIndex</strong></p></td>
@@ -77,7 +77,7 @@ The following table lists the feature attributes in alphabetic order and describ
 <td><p><strong></em>Installable?</strong></p></td>
 <td><p><strong>TRUE</strong> or <strong>FALSE</strong>, indicating whether the feature is installable. (<strong>FALSE</strong> means always installed.)</p>
 <p>For more information, see <a href="handling-installable-features-and-options.md" data-raw-source="[Handling Installable Features and Options](handling-installable-features-and-options.md)">Handling Installable Features and Options</a>.</p></td>
-<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, all the feature&#39;s options are also installable, except for the first one specified. If <strong>FALSE</strong>, at least one of the feature&#39;s options must also always be installed. (Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
+<td><p>Optional. If not specified, the default value is <strong>FALSE</strong>. If <strong>TRUE</strong>, all the feature's options are also installable, except for the first one specified. If <strong>FALSE</strong>, at least one of the feature's options must also always be installed. (Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong><em>InstallableFeatureName</strong></p></td>
@@ -87,7 +87,7 @@ The following table lists the feature attributes in alphabetic order and describ
 </tr>
 <tr class="even">
 <td><p><strong></em>Name</strong></p></td>
-<td><p>Text string used as the feature&#39;s display name on the printer&#39;s property sheet.</p></td>
+<td><p>Text string used as the feature's display name on the printer's property sheet.</p></td>
 <td><p>Optional. If not specified, then <em><strong>rcNameID</strong> must be specified. (Also an <a href="option-attributes.md" data-raw-source="[option attribute](option-attributes.md)">option attribute</a>.)</p></td>
 </tr>
 <tr class="odd">

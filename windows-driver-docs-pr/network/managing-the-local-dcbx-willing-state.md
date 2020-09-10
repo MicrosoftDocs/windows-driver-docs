@@ -33,9 +33,9 @@ The ability to set individual Willing bits in these TLVs depends on the local DC
 
 The miniport driver manages the local DCBX Willing state in the following way:
 
--   When the miniport driver is initialized through a call to its [*MiniportInitializeEx*](https://msdn.microsoft.com/library/windows/hardware/ff559389) function, it should enable the local DCBX Willing state based on proprietary QoS settings that are defined by the IHV.
+-   When the miniport driver is initialized through a call to its [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, it should enable the local DCBX Willing state based on proprietary QoS settings that are defined by the IHV.
 
--   The DCB component (Msdcb.sys) issues an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835) to configure the local QoS parameters on a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://msdn.microsoft.com/library/windows/hardware/ff566710) structure for this OID request contains a pointer to an [**NDIS\_QOS\_PARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/hh451640) structure.
+-   The DCB component (Msdcb.sys) issues an object identifier (OID) method request of [OID\_QOS\_PARAMETERS](./oid-qos-parameters.md) to configure the local QoS parameters on a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for this OID request contains a pointer to an [**NDIS\_QOS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure.
 
     If the **NDIS\_QOS\_PARAMETERS\_WILLING** flag is set in the **Flags** member of this structure, the miniport driver enables the DCBX Willing state. If this bit is not set, the miniport driver disabled the DCBX Willing state.
 
@@ -43,15 +43,9 @@ For more information about LLDP, refer to the IEEE 802.1AB-2005 standard.
 
 For more information about the local DCBX Willing bits and TLVs, refer to the IEEE 802.1Qaz draft standard.
 
-**Note**  Starting with Windows Server 2012, the DCB component can be configured through a PowerShell cmdlet to set or clear the **NDIS\_QOS\_PARAMETERS\_WILLING** flag when it issues an [OID\_QOS\_PARAMETERS](https://msdn.microsoft.com/library/windows/hardware/hh451835) request. This causes the miniport driver to respectively enable or disable the local DCBX Willing state.
+**Note**  Starting with Windows Server 2012, the DCB component can be configured through a PowerShell cmdlet to set or clear the **NDIS\_QOS\_PARAMETERS\_WILLING** flag when it issues an [OID\_QOS\_PARAMETERS](./oid-qos-parameters.md) request. This causes the miniport driver to respectively enable or disable the local DCBX Willing state.
 
  
 
  
-
- 
-
-
-
-
 

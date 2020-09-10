@@ -17,7 +17,7 @@ As you structure your device stack, keep in mind that the framework currently su
 
 **How to install and configure your driver**
 
-1.  A UMDF 1 filter driver should call [**IWDFDeviceInitialize::SetFilter**](https://msdn.microsoft.com/library/windows/hardware/ff556985) from the its [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554896) callback function. Starting in UMDF version 2, your driver instead calls [**WdfFdoInitSetFilter**](https://msdn.microsoft.com/library/windows/hardware/ff547273).
+1.  A UMDF 1 filter driver should call [**IWDFDeviceInitialize::SetFilter**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setfilter) from the its [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) callback function. Starting in UMDF version 2, your driver instead calls [**WdfFdoInitSetFilter**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetfilter).
 
 2.  In addition to any UMDF-specific directives your driver may specify, you must specify the **UmdfService** and **UmdfServiceOrder** directives. In this topic, we'll specify an upper filter driver:
 
@@ -61,10 +61,4 @@ As you structure your device stack, keep in mind that the framework currently su
     ```
 
  
-
- 
-
-
-
-
 

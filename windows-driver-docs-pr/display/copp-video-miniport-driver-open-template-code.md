@@ -30,7 +30,7 @@ IoctlCOPPOpenDevice(
     COPP_DeviceData* pThis = VideoPortAllocatePool(pHwDeviceExtension,
                                               VpPagedPool,
                                               sizeof(COPP_DeviceData),
-                                              &#39;PPOC&#39;);
+                                              'PPOC');
     *pInBuff->ppThis = NULL;
     if (pThis == NULL) {
         *pInBuff->phr = ERROR_NOT_ENOUGH_MEMORY;

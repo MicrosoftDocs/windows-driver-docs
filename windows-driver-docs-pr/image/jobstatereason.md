@@ -63,7 +63,7 @@ Required. One of the following values:
 </tr>
 <tr class="even">
 <td><p><span id="JobCanceledAtDevice"></span><span id="jobcanceledatdevice"></span><span id="JOBCANCELEDATDEVICE"></span>JobCanceledAtDevice</p></td>
-<td><p>The current scan job was canceled at the scan device&#39;s front panel.</p></td>
+<td><p>The current scan job was canceled at the scan device's front panel.</p></td>
 </tr>
 <tr class="odd">
 <td><p><span id="JobCompletedWithErrors"></span><span id="jobcompletedwitherrors"></span><span id="JOBCOMPLETEDWITHERRORS"></span>JobCompletedWithErrors</p></td>

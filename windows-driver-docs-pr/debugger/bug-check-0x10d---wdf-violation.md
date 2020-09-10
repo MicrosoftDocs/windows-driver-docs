@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The WDF\_VIOLATION bug check has a value of 0x0000010D. This indicates that Kernel-Mode Driver Framework (KMDF) detected that Windows found an error in a framework-based driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## WDF\_VIOLATION Parameters
 
@@ -62,7 +64,7 @@ Parameter 1 indicates the specific error code of the bug check. Parameter 4 is r
 <tr class="even">
 <td align="left"><p>0x4</p></td>
 <td align="left"><p>Reserved</p></td>
-<td align="left"><p>The caller&#39;s address</p></td>
+<td align="left"><p>The caller's address</p></td>
 <td align="left"><p>A <strong>NULL</strong> parameter was passed to a function that required a non-<strong>NULL</strong> value.</p></td>
 </tr>
 <tr class="odd">
@@ -117,7 +119,7 @@ Parameter 1 indicates the specific error code of the bug check. Parameter 4 is r
 <td align="left"><p>0xD</p></td>
 <td align="left"><p>WDFDEVICE handle</p></td>
 <td align="left"><p>Pointer to power IRP</p></td>
-<td align="left"><p>A device&#39;s power policy owner received a power IRP that it did not request. There might be multiple power policy owners, but only one is allowed. A KMDF driver can change power policy ownership by calling <strong>WdfDeviceInitSetPowerPolicyOwnership</strong>.</p></td>
+<td align="left"><p>A device's power policy owner received a power IRP that it did not request. There might be multiple power policy owners, but only one is allowed. A KMDF driver can change power policy ownership by calling <strong>WdfDeviceInitSetPowerPolicyOwnership</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0xE</p></td>
@@ -220,7 +222,7 @@ See the description of each code in the Parameters section for an explanation of
 Resolution
 ----------
 
-The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be very helpful in gathering information, such as the faulting code module.
+The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in gathering information, such as the faulting code module.
 
 Typically, the WDF dump file will yield further information on the driver that caused this bug check. Use this command to look at the log file.
 

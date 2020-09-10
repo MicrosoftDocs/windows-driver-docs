@@ -1,5 +1,5 @@
 ---
-Description: Support for capability commands (WpdBasicHardwareDriver sample)
+description: Support for capability commands (WpdBasicHardwareDriver sample)
 title: Support for capability commands (WpdBasicHardwareDriver sample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -88,7 +88,7 @@ Although it was unnecessary to modify the handler, it was necessary to update th
 const GUID g_SupportedFunctionalCategories[] =
 {
     WPD_FUNCTIONAL_CATEGORY_DEVICE,
-    FUNCTIONAL_CATEGORY_SENSOR_SAMPLE, // Our sensor&#39;s functional category  
+    FUNCTIONAL_CATEGORY_SENSOR_SAMPLE, // Our sensor's functional category  
 };
 ```
 
@@ -137,7 +137,7 @@ HRESULT WpdCapabilities::OnGetFunctionalObjects(
     {
         PROPVARIANT pv = {0};
         PropVariantInit(&pv);
-        // Don&#39;t call PropVariantClear, since we did not allocate the memory for these object identifiers
+        // Don't call PropVariantClear, since we did not allocate the memory for these object identifiers
 
         // Add WPD_DEVICE_OBJECT_ID to the functional object identifiers collection
         if (hr == S_OK)
@@ -330,7 +330,7 @@ HRESULT WpdCapabilities::OnGetSupportedEvents(
         {
             PROPVARIANT pv = {0};
             PropVariantInit(&pv);
-            // Don&#39;t call PropVariantClear, 
+            // Don't call PropVariantClear, 
             // since we did not allocate the memory for these GUIDs
 
             pv.vt    = VT_CLSID;

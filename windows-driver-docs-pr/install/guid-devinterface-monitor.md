@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_MONITOR
 
 
-The GUID_DEVINTERFACE_MONITOR [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for [monitor devices](https://msdn.microsoft.com/library/windows/hardware/ff568428).
+The GUID_DEVINTERFACE_MONITOR [device interface class](./overview-of-device-interface-classes.md) is defined for [monitor devices](../display/monitor-drivers.md).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Windows registers a device interface for each monitor that is configured in the operating system.
 
-For information about display adapter and monitors, see [Display Devices Design Guide](https://msdn.microsoft.com/library/windows/hardware/ff554044) and [Monitor Drivers](https://msdn.microsoft.com/library/windows/hardware/ff568428).
+For information about display adapter and monitors, see [Display Devices Design Guide](../display/index.md) and [Monitor Drivers](../display/monitor-drivers.md).
 
 Requirements
 ------------
@@ -69,10 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

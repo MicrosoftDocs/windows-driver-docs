@@ -72,9 +72,9 @@ If this is done correctly, you should have an extension element similar to the f
 ## <span id="steptwo"></span><span id="STEPTWO"></span>Step 2: Background task handler
 
 
-If your app provides a mobile operator notifications declaration, it must supply a handler for the background task activation. The handler will get the mobile operator network account ID and event data from [**Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails**](https://msdn.microsoft.com/library/windows/apps/br207377).
+If your app provides a mobile operator notifications declaration, it must supply a handler for the background task activation. The handler will get the mobile operator network account ID and event data from [**Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails).
 
-Because the only UI that is supported by background task is **Toast**, the background task handler can show Toast or save [**NetworkOperatorNotificationEventDetails**](https://msdn.microsoft.com/library/windows/apps/br207377) to local storage.
+Because the only UI that is supported by background task is **Toast**, the background task handler can show Toast or save [**NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails) to local storage.
 
 The following code examples demonstrate a background task that is designed to run when a new administrative SMS notification is received.
 
@@ -307,7 +307,7 @@ var settings = Windows.Storage.ApplicationData.current.localSettings;
 
 If the toast sets a parameter, it will be passed to app through **detail.arguments**.
 
-In JavaScript or C#, you handle the [**WinJS.Application.onactivated**](https://msdn.microsoft.com/library/windows/apps/br212679) event, and then examine the event arguments that are passed to the event handler. Activation from toast passes the event argument of type [**Windows.UI.WebUI.WebUILaunchActivatedEventArgs**](https://msdn.microsoft.com/library/windows/apps/hh701841). If the event argument’s **detail.kind** property is [**Windows.ApplicationModel.Activation.ctivationKind**](https://msdn.microsoft.com/library/windows/apps/br224693).**launch**, the app provides either the Start experience or the Notification experience, depending on whether the event argument’s **detail.argument** property is set to **null**.
+In JavaScript or C#, you handle the [**WinJS.Application.onactivated**](/previous-versions/windows/apps/br212679(v=win.10)) event, and then examine the event arguments that are passed to the event handler. Activation from toast passes the event argument of type [**Windows.UI.WebUI.WebUILaunchActivatedEventArgs**](/uwp/api/Windows.UI.WebUI.WebUILaunchActivatedEventArgs). If the event argument’s **detail.kind** property is [**Windows.ApplicationModel.Activation.ctivationKind**](/uwp/api/Windows.ApplicationModel.Activation.ActivationKind).**launch**, the app provides either the Start experience or the Notification experience, depending on whether the event argument’s **detail.argument** property is set to **null**.
 
 **JavaScript**
 
@@ -442,7 +442,7 @@ Events of interest include Event ID 220 that indicates that DSM has successfully
 
 ### <span id="Verify_that_provisioning_metadata_is_successfully_applied"></span><span id="verify_that_provisioning_metadata_is_successfully_applied"></span><span id="VERIFY_THAT_PROVISIONING_METADATA_IS_SUCCESSFULLY_APPLIED"></span>Verify that provisioning metadata is successfully applied
 
-When applying provisioning metadata, verify that [**ProvisionFromXmlDocumentResults.AllElementsProvisioned**](https://msdn.microsoft.com/library/windows/apps/br212047) is true. If not, check the ProvisionResultsXml for more details about the error. Common mobile broadband errors include the following:
+When applying provisioning metadata, verify that [**ProvisionFromXmlDocumentResults.AllElementsProvisioned**](/uwp/api/Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults#Windows_Networking_NetworkOperators_ProvisionFromXmlDocumentResults_AllElementsProvisioned) is true. If not, check the ProvisionResultsXml for more details about the error. Common mobile broadband errors include the following:
 
 -   A mismatch between the SIM in the PC and the provisioning file (profile fails with ERROR\_NOT\_FOUND).
 
@@ -612,11 +612,4 @@ In particular, if account provisioning metadata specifies the sender phone numbe
 [Creating and configuring Internet Sharing experiences](creating-and-configuring-internet-sharing-experiences.md)
 
  
-
- 
-
-
-
-
-
 

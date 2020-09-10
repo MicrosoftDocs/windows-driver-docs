@@ -16,10 +16,6 @@ ms.localizationpriority: medium
 
 # Operation of Serenum and Serial
 
-
-
-
-
 This section includes the following topics about operating Serenum and Serial:
 
 [Serenum Filtering of I/O Requests](serenum-filtering-of-i-o-requests.md)
@@ -50,18 +46,10 @@ This section includes the following topics about operating Serenum and Serial:
 
 For more information about operating Serenum and Serial, see the following resources:
 
--   [Serenum Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff547040)
+- [ntddser header](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/0)
 
--   [Serial Driver Reference](https://msdn.microsoft.com/library/windows/hardware/ff547476)
+- [Serial Port Driver Reference](/windows-hardware/drivers/ddi/_serports/)
 
--   Sample code in the \\src\\kernel\\serial and \\src\\kernel\\serenum directories in the Windows Driver Kit (WDK)
+- Sample code in the \\src\\kernel\\serial and \\src\\kernel\\serenum directories in the Windows Driver Kit (WDK) https://github.com/Microsoft/Windows-driver-samples/tree/master/serial/serenum
 
--   Communications resources that are supported by the Windows Base Services in the Microsoft Windows SDK
-
- 
-
- 
-
-
-
-
+- Communications resources that are supported by the Windows Base Services in the Microsoft Windows SDK

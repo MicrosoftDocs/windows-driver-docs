@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
  
 
-If your driver package that installs those components. The device installation application and distribution medium should be compatible with AutoRun, so that AutoRun starts the application automatically when a user inserts your distribution medium. For more information about AutoRun, see [Creating an AutoRun-Enabled Application](https://msdn.microsoft.com/library/windows/desktop/cc144206).
+If your driver package that installs those components. The device installation application and distribution medium should be compatible with AutoRun, so that AutoRun starts the application automatically when a user inserts your distribution medium. For more information about AutoRun, see [Creating an AutoRun-Enabled Application](/previous-versions/windows/desktop/legacy/cc144206(v=vs.85)).
 
 For guidelines about how to write a device installation application, see [Guidelines for Writing Device Installation Applications](guidelines-for-writing-device-installation-applications.md).
 
@@ -37,10 +37,4 @@ Your [driver package](driver-packages.md) must handle two situations:
 2.  The user inserts your distribution medium before plugging in your hardware. This is commonly referred to as a [software-first installation](software-first-installation.md).
 
  
-
- 
-
-
-
-
 

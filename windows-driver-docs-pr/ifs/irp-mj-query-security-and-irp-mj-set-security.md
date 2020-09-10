@@ -129,7 +129,7 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
     // SeSetSecurityDescriptorInfo so we can track our memory usage
     //
     newSD = ExAllocatePoolWithTag(PagedPool, 
-        Fcb->SecurityDescriptorLength, &#39;DSyM&#39;);
+        Fcb->SecurityDescriptorLength, 'DSyM');
 
     if (!newSD) {
  
@@ -158,7 +158,7 @@ NTSTATUS FsdCommonSetSecurity(PIRP_CONTEXT IrpContext)
 
     if (!NT_SUCCESS(status)) {
       //
-      // great- modified the in-core SD but couldn&#39;t get it out
+      // great- modified the in-core SD but couldn't get it out
       // to disk. undo everything. 
       //
       ExFreePool(newSD);

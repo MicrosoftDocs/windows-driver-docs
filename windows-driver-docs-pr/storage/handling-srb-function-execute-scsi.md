@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_handling_srb_function_execute_scsi_kg"></span><span id="DDK_HANDLING_SRB_FUNCTION_EXECUTE_SCSI_KG"></span>
 
 
-After the higher-level storage class drivers have loaded, most of the SRBs sent to the [**HwScsiStartIo**](https://msdn.microsoft.com/library/windows/hardware/ff557323) routine have the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI.
+After the higher-level storage class drivers have loaded, most of the SRBs sent to the [**HwScsiStartIo**](/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine have the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI.
 
 On receipt of an SRB\_FUNCTION\_EXECUTE\_SCSI request, a miniport driver's *HwScsiStartIo* routine does the following:
 
@@ -28,14 +28,9 @@ On receipt of an SRB\_FUNCTION\_EXECUTE\_SCSI request, a miniport driver's *HwSc
 
     For a device I/O operation, such an internal routine generally selects the target device and sends the CDB over the bus to the target logical unit.
 
-If the miniport driver uses system DMA, it must call [**ScsiPortIoMapTransfer**](https://msdn.microsoft.com/library/windows/hardware/ff564649)*before* programming the HBA to transfer data. **ScsiPortIoMapTransfer** sets up the system DMA controller and calls the miniport driver's *HwScsiDmaStarted* routine, described later in [SCSI Miniport Driver's HwScsiDmaStarted Routine](scsi-miniport-driver-s-hwscsidmastarted-routine.md).
+If the miniport driver uses system DMA, it must call [**ScsiPortIoMapTransfer**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportiomaptransfer)*before* programming the HBA to transfer data. **ScsiPortIoMapTransfer** sets up the system DMA controller and calls the miniport driver's *HwScsiDmaStarted* routine, described later in [SCSI Miniport Driver's HwScsiDmaStarted Routine](scsi-miniport-driver-s-hwscsidmastarted-routine.md).
 
 All system-defined, required device I/O control requests sent to NT-based operating system storage class drivers are mapped to SRBs with the **Function** member set to SRB\_FUNCTION\_EXECUTE\_SCSI.
 
  
-
- 
-
-
-
 

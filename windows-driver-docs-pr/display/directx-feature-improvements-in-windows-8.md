@@ -26,7 +26,7 @@ The feature improvements are in the following areas:
 ## <span id="pixelformats"></span><span id="PIXELFORMATS"></span>Pixel formats (5551, 565, 4444)
 
 
-To better support graphics in low-power configurations using DirectX, the following DirectX 9 pixel formats from the [**DXGI\_FORMAT**](https://msdn.microsoft.com/library/windows/desktop/bb173059) enumeration must be supported in Direct3D for Windows 8:
+To better support graphics in low-power configurations using DirectX, the following DirectX 9 pixel formats from the [**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration must be supported in Direct3D for Windows 8:
 
 -   **DXGI\_FORMAT\_B5G6R5\_UNORM**
 -   **DXGI\_FORMAT\_B5G5R5A1\_UNORM**
@@ -97,7 +97,7 @@ Target-independent rasterization (TIR) provides a high performance anti-aliasing
 
 Direct3D 10.0 - Direct3D 11.0 hardware (and Feature Level 10\_0 - 11\_0) supports ForcedSampleCount set to 1 (and any sample count for Render Target View) along with the described limitations (for example, no depth/stencil).
 
-For 10\_0, 10\_1 and 11\_0 hardware, when [**D3D11\_1\_DDI\_RASTERIZER\_DESC**](https://msdn.microsoft.com/library/windows/hardware/hh451052).**ForcedSampleCount** is set to 1, line rendering cannot be configured to 2-triangle (quadrilateral)-based mode (that is, the **MultisampleEnable** state cannot be set to true). This limitation isn't present for 11\_1 hardware. Note that the naming of the **MultisampleEnable** state is misleading because it no longer has anything to do with enabling multisampling; instead, it is now one of the controls together with **AntialiasedLineEnable** for selecting line-rendering mode.
+For 10\_0, 10\_1 and 11\_0 hardware, when [**D3D11\_1\_DDI\_RASTERIZER\_DESC**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1_ddi_rasterizer_desc).**ForcedSampleCount** is set to 1, line rendering cannot be configured to 2-triangle (quadrilateral)-based mode (that is, the **MultisampleEnable** state cannot be set to true). This limitation isn't present for 11\_1 hardware. Note that the naming of the **MultisampleEnable** state is misleading because it no longer has anything to do with enabling multisampling; instead, it is now one of the controls together with **AntialiasedLineEnable** for selecting line-rendering mode.
 
 This limited form of target-independent rasterization, with **ForcedSampleCount** = 1, closely matches a mode that was present in Direct3D 10.0, but became unavailable for Direct3D 10.1 and Direct3D (and Feature Levels 10\_1 and 11\_0) due to API changes. In Direct3D 10.0, this mode was the center-sampled rendering even on a Multiple Sample Anti Aliasing (MSAA) surface that was available when **MultisampleEnable** was set to false (and this could be toggled by toggling **MultisampleEnable**). In Direct3D 10.1+, **MultisampleEnable** no longer affects multisampling (despite the name), and only controls line-rendering behavior.
 
@@ -209,29 +209,23 @@ Many UI operations, such as scrolling, require transferring image data from one 
 
 These functions and structures are new or updated for Windows 8:
 
--   [*AssignDebugBinary*](https://msdn.microsoft.com/library/windows/hardware/hh406234)
--   [*CalcPrivateBlendStateSize(D3D11\_1)*](https://msdn.microsoft.com/library/windows/hardware/hh406237)
--   [*ClearView*](https://msdn.microsoft.com/library/windows/hardware/hh406255)
--   [*DefaultConstantBufferUpdateSubresourceUP(D3D11\_1)*](https://msdn.microsoft.com/library/windows/hardware/hh802464)
--   [*ResourceUpdateSubresourceUP(D3D11\_1)*](https://msdn.microsoft.com/library/windows/hardware/hh439847)
--   [*VsSetConstantBuffers(D3D11\_1)*](https://msdn.microsoft.com/library/windows/hardware/hh439921)
--   [**D3D11\_1DDI\_D3D11\_OPTIONS\_DATA**](https://msdn.microsoft.com/library/windows/hardware/hh406442)
--   [**D3DDDI\_BLTFLAGS**](https://msdn.microsoft.com/library/windows/hardware/ff544379)
--   [**D3DDDI\_COPY\_FLAGS**](https://msdn.microsoft.com/library/windows/hardware/hh451175)
--   [**D3DDDIARG\_BUFFERBLT1**](https://msdn.microsoft.com/library/windows/hardware/hh451069)
--   [**D3DDDIARG\_DISCARD**](https://msdn.microsoft.com/library/windows/hardware/hh451076)
--   [**D3DDDIARG\_TEXBLT1**](https://msdn.microsoft.com/library/windows/hardware/hh451142)
--   [**D3DDDIARG\_VOLUMEBLT1**](https://msdn.microsoft.com/library/windows/hardware/hh451145)
--   [**D3DDDICAPS\_ARCHITECTURE\_INFO**](https://msdn.microsoft.com/library/windows/hardware/hh451150)
--   [**D3DDDICAPS\_SHADER\_MIN\_PRECISION**](https://msdn.microsoft.com/library/windows/hardware/hh451152)
--   [**D3DDDICAPS\_SHADER\_MIN\_PRECISION\_SUPPORT**](https://msdn.microsoft.com/library/windows/hardware/hh451154)
--   [**D3DDDICAPS\_TYPE**](https://msdn.microsoft.com/library/windows/hardware/ff544132)
+-   [*AssignDebugBinary*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_assigndebugbinary)
+-   [*CalcPrivateBlendStateSize(D3D11\_1)*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_calcprivateblendstatesize)
+-   [*ClearView*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_clearview)
+-   [*DefaultConstantBufferUpdateSubresourceUP(D3D11\_1)*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_resourceupdatesubresourceup)
+-   [*ResourceUpdateSubresourceUP(D3D11\_1)*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_resourceupdatesubresourceup)
+-   [*VsSetConstantBuffers(D3D11\_1)*](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_setconstantbuffers)
+-   [**D3D11\_1DDI\_D3D11\_OPTIONS\_DATA**](/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_d3d11_options_data)
+-   [**D3DDDI\_BLTFLAGS**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_bltflags)
+-   [**D3DDDI\_COPY\_FLAGS**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-d3dddi_copy_flags)
+-   [**D3DDDIARG\_BUFFERBLT1**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_bufferblt1)
+-   [**D3DDDIARG\_DISCARD**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_discard)
+-   [**D3DDDIARG\_TEXBLT1**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_texblt1)
+-   [**D3DDDIARG\_VOLUMEBLT1**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_volumeblt1)
+-   [**D3DDDICAPS\_ARCHITECTURE\_INFO**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddicaps_architecture_info)
+-   [**D3DDDICAPS\_SHADER\_MIN\_PRECISION**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-d3dddicaps_shader_min_precision)
+-   [**D3DDDICAPS\_SHADER\_MIN\_PRECISION\_SUPPORT**](/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddicaps_shader_min_precision_support)
+-   [**D3DDDICAPS\_TYPE**](/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddicaps_type)
 
  
-
- 
-
-
-
-
 

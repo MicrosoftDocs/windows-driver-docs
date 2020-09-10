@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-A network provider uses the [KSPROPSETID\_BdaFrequencyFilter](https://msdn.microsoft.com/library/windows/hardware/ff566542) property set to control an RF tuner node in a BDA filter topology. For example, the network provider uses this property set to inform the tuner node how to tune the RF signal.
+A network provider uses the [KSPROPSETID\_BdaFrequencyFilter](./kspropsetid-bdafrequencyfilter.md) property set to control an RF tuner node in a BDA filter topology. For example, the network provider uses this property set to inform the tuner node how to tune the RF signal.
 
 In the following code snippet, the controlling pin of the tuner node in the BDA minidriver intercepts and supplies methods for properties of the KSPROPSETID\_BdaFrequencyFilter property set. Note that some KSPROPSETID\_BdaFrequencyFilter properties are only applicable to specific types of tuners.
 
@@ -64,9 +64,4 @@ DEFINE_KSPROPERTY_TABLE(RFNodeFrequencyProperties)
 ```
 
  
-
- 
-
-
-
 

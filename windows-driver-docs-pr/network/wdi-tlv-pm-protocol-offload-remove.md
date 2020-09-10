@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE
 
 
-WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE is a TLV that contains the protocol offload ID to be removed with [OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD](https://msdn.microsoft.com/library/windows/hardware/dn925943).
+WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE is a TLV that contains the protocol offload ID to be removed with [OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD](./oid-wdi-set-remove-pm-protocol-offload.md).
 
 ## TLV Type
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

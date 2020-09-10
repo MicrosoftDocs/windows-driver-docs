@@ -17,37 +17,37 @@ The simplest way to ensure cross-system compatibility is to write a driver that 
 
 ### WDM Differences in Driver Support Routines
 
-The Windows Driver Kit (WDK) reference page for each [driver support routine](https://msdn.microsoft.com/library/windows/hardware/ff544200) indicates if the routine is restricted to specific versions of WDM, or if its behavior is different on different operating system versions. Before using any driver support routine in a cross-system driver, be sure to understand any version-specific restrictions or behaviors.
+The Windows Driver Kit (WDK) reference page for each [driver support routine](/windows-hardware/drivers/ddi/index) indicates if the routine is restricted to specific versions of WDM, or if its behavior is different on different operating system versions. Before using any driver support routine in a cross-system driver, be sure to understand any version-specific restrictions or behaviors.
 
 ### WDM Differences in Plug and Play
 
 The following Plug and Play I/O request packet (IRP) is supported only in Windows 2000 and later versions of the NT-based operating system (WDM version 1.10 and later):
 
-[**IRP\_MN\_SURPRISE\_REMOVAL**](https://msdn.microsoft.com/library/windows/hardware/ff551760)
+[**IRP\_MN\_SURPRISE\_REMOVAL**](./irp-mn-surprise-removal.md)
 
 In addition, the following IRPs work differently on Windows 98/Me from how they work on the NT-based operating system:
 
-[**IRP\_MN\_STOP\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551755) and [**IRP\_MN\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551738)
+[**IRP\_MN\_STOP\_DEVICE**](./irp-mn-stop-device.md) and [**IRP\_MN\_REMOVE\_DEVICE**](./irp-mn-remove-device.md)
 
-[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551705)
+[**IRP\_MN\_QUERY\_REMOVE\_DEVICE**](./irp-mn-query-remove-device.md)
 
 ### WDM Differences in Power Management
 
 The following power management functions and I/O requests differ in operation between the Windows 98/Me operating system and the NT-based operating system:
 
-[**PoSetPowerState**](https://msdn.microsoft.com/library/windows/hardware/ff559765)
+[**PoSetPowerState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate)
 
-[**PoRequestPowerIrp**](https://msdn.microsoft.com/library/windows/hardware/ff559734)
+[**PoRequestPowerIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-porequestpowerirp)
 
-[**PoRegisterDeviceForIdleDetection**](https://msdn.microsoft.com/library/windows/hardware/ff559721)
+[**PoRegisterDeviceForIdleDetection**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection)
 
-[**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699)
+[**IRP\_MN\_QUERY\_POWER**](./irp-mn-query-power.md)
 
-[**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744)
+[**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md)
 
 When completing power IRPs, drivers on Windows 98/Me must complete power IRPs at IRQL = PASSIVE\_LEVEL, while drivers on the NT-based operating system can complete such IRPs at IRQL = PASSIVE\_LEVEL or IRQL = DISPATCH\_LEVEL.
 
-The DO\_POWER\_PAGABLE flag in the [**DEVICE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff543147) structure is used differently on the Windows 98/Me operating system than on the NT-based operating system.
+The DO\_POWER\_PAGABLE flag in the [**DEVICE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object) structure is used differently on the Windows 98/Me operating system than on the NT-based operating system.
 
 ### WDM Differences in Kernel-Mode Driver Operation
 
@@ -56,9 +56,4 @@ Kernel-mode WDM drivers for Windows 98/Me must follow certain guidelines for usi
 Windows 98/Me provides a fixed number of worker threads that might not be adequate for some drivers.
 
  
-
- 
-
-
-
 

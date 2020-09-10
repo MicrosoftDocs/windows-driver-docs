@@ -60,13 +60,7 @@ You cannot use *geninf.exe* to generate:
 
 These sample INF files are both shipped with the Windows Driver Kit (WDK).
 
-See [Creating an INF File](https://msdn.microsoft.com/library/windows/hardware/ff549520) and [INF File Sections and Directives](https://msdn.microsoft.com/library/windows/hardware/ff547433) for detailed information when updating a sample INF file.
+See [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives) for detailed information when updating a sample INF file.
 
  
-
- 
-
-
-
-
 

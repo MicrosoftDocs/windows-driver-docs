@@ -15,63 +15,57 @@ ms.localizationpriority: medium
 
 
 
-The system calls a protocol driver's [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) routine after it loads the driver. Protocol drivers load as system services. They can load at any time before, during, or after the miniport drivers load.
+The system calls a protocol driver's [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine after it loads the driver. Protocol drivers load as system services. They can load at any time before, during, or after the miniport drivers load.
 
-Protocol drivers allocate driver resources and register *ProtocolXxx* functions in **DriverEntry**. This includes CoNDIS clients and stand-alone call managers. To register its *ProtocolXxx* functions with NDIS, a protocol driver calls the [NdisRegisterProtocolDriver](https://msdn.microsoft.com/library/windows/hardware/ff564520) function.
+Protocol drivers allocate driver resources and register *ProtocolXxx* functions in **DriverEntry**. This includes CoNDIS clients and stand-alone call managers. To register its *ProtocolXxx* functions with NDIS, a protocol driver calls the [NdisRegisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function.
 
-[DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) returns STATUS_SUCCESS, or its equivalent NDIS_STATUS_SUCCESS, if the driver registered as an NDIS protocol driver successfully. If **DriverEntry** fails initialization by propagating an error status that was returned by an **NdisXxx** function or by a kernel-mode support routine, the driver will not remain loaded. **DriverEntry** must execute synchronously; that is, it cannot return STATUS_PENDING or its equivalent NDIS_STATUS_PENDING.
+[DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) returns STATUS_SUCCESS, or its equivalent NDIS_STATUS_SUCCESS, if the driver registered as an NDIS protocol driver successfully. If **DriverEntry** fails initialization by propagating an error status that was returned by an **NdisXxx** function or by a kernel-mode support routine, the driver will not remain loaded. **DriverEntry** must execute synchronously; that is, it cannot return STATUS_PENDING or its equivalent NDIS_STATUS_PENDING.
 
-The [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) function of an NDIS protocol driver must call the [NdisRegisterProtocolDriver](https://msdn.microsoft.com/library/windows/hardware/ff564520) function. To register the driver's *ProtocolXxx* entry points with the NDIS library, a protocol driver initializes an [**NDIS_PROTOCOL_DRIVER_CHARACTERISTICS**](https://msdn.microsoft.com/library/windows/hardware/ff566825) structure and passes it to **NdisRegisterProtocolDriver**.
+The [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function of an NDIS protocol driver must call the [NdisRegisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function. To register the driver's *ProtocolXxx* entry points with the NDIS library, a protocol driver initializes an [**NDIS_PROTOCOL_DRIVER_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_driver_characteristics) structure and passes it to **NdisRegisterProtocolDriver**.
 
 Drivers that call NdisRegisterProtocolDriver must be prepared for an immediate call to any of their ProtocolXxx functions.
 
 NDIS protocol drivers provide the following *ProtocolXxx* functions, which are updated versions of the functions that legacy drivers provide:
 
-[*ProtocolSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff570269)
+[*ProtocolSetOptions*](/windows-hardware/drivers/ddi/ndis/nc-ndis-set_options)
 
-[*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220)
+[*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex)
 
-[*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278)
+[*ProtocolUnbindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_unbind_adapter_ex)
 
-[*ProtocolOpenAdapterCompleteEx*](https://msdn.microsoft.com/library/windows/hardware/ff570265)
+[*ProtocolOpenAdapterCompleteEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_open_adapter_complete_ex)
 
-[*ProtocolCloseAdapterCompleteEx*](https://msdn.microsoft.com/library/windows/hardware/ff570236)
+[*ProtocolCloseAdapterCompleteEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_close_adapter_complete_ex)
 
-[*ProtocolNetPnPEvent*](https://msdn.microsoft.com/library/windows/hardware/ff570263)
+[*ProtocolNetPnPEvent*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event)
 
-[*ProtocolUninstall*](https://msdn.microsoft.com/library/windows/hardware/ff570279)
+[*ProtocolUninstall*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_uninstall)
 
 NDIS protocol drivers provide the following *ProtocolXxx* functions for send and receive operations:
 
-[**ProtocolReceiveNetBufferLists**](https://msdn.microsoft.com/library/windows/hardware/ff570267)
+[**ProtocolReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_receive_net_buffer_lists)
 
-[**ProtocolSendNetBufferListsComplete**](https://msdn.microsoft.com/library/windows/hardware/ff570268)
+[**ProtocolSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_send_net_buffer_lists_complete)
 
-All types of NDIS protocol drivers should register fully functional [*ProtocolBindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570220) and [*ProtocolUnbindAdapterEx*](https://msdn.microsoft.com/library/windows/hardware/ff570278) functions to support Plug and Play (PnP). In general, a [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) function should call [NdisRegisterProtocolDriver](https://msdn.microsoft.com/library/windows/hardware/ff564520) immediately before it returns control with a status value of STATUS_SUCCESS or NDIS_STATUS_SUCCESS.
+All types of NDIS protocol drivers should register fully functional [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) and [*ProtocolUnbindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_unbind_adapter_ex) functions to support Plug and Play (PnP). In general, a [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function should call [NdisRegisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) immediately before it returns control with a status value of STATUS_SUCCESS or NDIS_STATUS_SUCCESS.
 
-Any protocol driver that exports a set of standard kernel-mode driver routines in addition to its NDIS-defined *ProtocolXxx* functions must set the entry points for those driver routines in the given driver object that is passed in to its [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) function. For more information about the functionality of such a protocol driver's **DriverEntry** function, see [Writing a DriverEntry Routine](../kernel/writing-a-driverentry-routine.md).
+Any protocol driver that exports a set of standard kernel-mode driver routines in addition to its NDIS-defined *ProtocolXxx* functions must set the entry points for those driver routines in the given driver object that is passed in to its [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. For more information about the functionality of such a protocol driver's **DriverEntry** function, see [Writing a DriverEntry Routine](../kernel/writing-a-driverentry-routine.md).
 
-If an attempt to allocate resources that the driver needs to carry out network I/O operations fails, [DriverEntry](https://msdn.microsoft.com/library/windows/hardware/ff544113) should release all resources that it already allocated before it returns control with a status other than STATUS_SUCCESS or NDIS_STATUS_SUCCESS.
+If an attempt to allocate resources that the driver needs to carry out network I/O operations fails, [DriverEntry](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) should release all resources that it already allocated before it returns control with a status other than STATUS_SUCCESS or NDIS_STATUS_SUCCESS.
 
-If an error occurs after a successful call to [NdisRegisterProtocolDriver](https://msdn.microsoft.com/library/windows/hardware/ff564520), the driver must call the [NdisDeregisterProtocolDriver](https://msdn.microsoft.com/library/windows/hardware/ff561743) function before **DriverEntry** returns.
+If an error occurs after a successful call to [NdisRegisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver), the driver must call the [NdisDeregisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisderegisterprotocoldriver) function before **DriverEntry** returns.
 
 To allow a protocol driver to configure optional services, NDIS calls the *ProtocolSetOptions* function within the context of the protocol driver's call to **NdisRegisterProtocolDriver**. For more information about optional services, see [Configuring Optional Protocol Driver Services](configuring-optional-protocol-driver-services.md).
 
-CoNDIS client drivers must call the [NdisSetOptionalHandlers](https://msdn.microsoft.com/library/windows/hardware/ff564550) function from the [*ProtocolSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff570269) function. The driver initializes an [**NDIS_CO_CLIENT_OPTIONAL_HANDLERS**](https://msdn.microsoft.com/library/windows/hardware/ff564884) structure and passes it at the *OptionalHandlers* parameter of **NdisSetOptionalHandlers**.
+CoNDIS client drivers must call the [NdisSetOptionalHandlers](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetoptionalhandlers) function from the [*ProtocolSetOptions*](/windows-hardware/drivers/ddi/ndis/nc-ndis-set_options) function. The driver initializes an [**NDIS_CO_CLIENT_OPTIONAL_HANDLERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_co_client_optional_handlers) structure and passes it at the *OptionalHandlers* parameter of **NdisSetOptionalHandlers**.
 
-CoNDIS stand-alone call managers must also call the [NdisSetOptionalHandlers](https://msdn.microsoft.com/library/windows/hardware/ff564550) function from the [*ProtocolSetOptions*](https://msdn.microsoft.com/library/windows/hardware/ff570269) function. The driver initializes an [**NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS**](https://msdn.microsoft.com/library/windows/hardware/ff564883) structure and passes it at the *OptionalHandlers* parameter of **NdisSetOptionalHandlers**.
+CoNDIS stand-alone call managers must also call the [NdisSetOptionalHandlers](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetoptionalhandlers) function from the [*ProtocolSetOptions*](/windows-hardware/drivers/ddi/ndis/nc-ndis-set_options) function. The driver initializes an [**NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_co_call_manager_optional_handlers) structure and passes it at the *OptionalHandlers* parameter of **NdisSetOptionalHandlers**.
 
-MCMs are not protocol drivers. Therefore, they must call the [NdisSetOptionalHandlers](https://msdn.microsoft.com/library/windows/hardware/ff564550) function from the [MiniportSetOptions](https://msdn.microsoft.com/library/windows/hardware/ff559443) function. The MCM initializes an [**NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS**](https://msdn.microsoft.com/library/windows/hardware/ff564883) structure and passes it at the *OptionalHandlers* parameter of **NdisSetOptionalHandlers**.
+MCMs are not protocol drivers. Therefore, they must call the [NdisSetOptionalHandlers](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetoptionalhandlers) function from the [MiniportSetOptions](/windows-hardware/drivers/ddi/ndis/nc-ndis-set_options) function. The MCM initializes an [**NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_co_call_manager_optional_handlers) structure and passes it at the *OptionalHandlers* parameter of **NdisSetOptionalHandlers**.
 
-To unregister with NDIS, a protocol driver calls [NdisDeregisterProtocolDriver](https://msdn.microsoft.com/library/windows/hardware/ff561743) from its [Unload](https://msdn.microsoft.com/library/windows/hardware/ff564886) routine.
+To unregister with NDIS, a protocol driver calls [NdisDeregisterProtocolDriver](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisderegisterprotocoldriver) from its [Unload](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine.
 
-To perform cleanup operations before a protocol driver is uninstalled, a protocol driver can register a [*ProtocolUninstall*](https://msdn.microsoft.com/library/windows/hardware/ff570279) function. The *ProtocolUninstall* function is optional. For example, the protocol lower edge of an intermediate driver might require a *ProtocolUninstall* function. The intermediate driver can release its protocol edge resources in *ProtocolUninstall* before NDIS calls its [*MiniportDriverUnload*](https://msdn.microsoft.com/library/windows/hardware/ff559378) function.
-
- 
+To perform cleanup operations before a protocol driver is uninstalled, a protocol driver can register a [*ProtocolUninstall*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_uninstall) function. The *ProtocolUninstall* function is optional. For example, the protocol lower edge of an intermediate driver might require a *ProtocolUninstall* function. The intermediate driver can release its protocol edge resources in *ProtocolUninstall* before NDIS calls its [*MiniportDriverUnload*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_unload) function.
 
  
-
-
-
-
 

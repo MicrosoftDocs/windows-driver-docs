@@ -80,9 +80,9 @@ For information about using Windows software trace preprocessor (WPP) macros to 
 
 For information about the using the kernel-mode ETW API for drivers, see [Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md).
 
-For information about using the Windows Management Instrumentation (WMI) extensions to the Windows Driver Model (WDM) to add software tracing to any driver, see [WMI Event Tracing](https://msdn.microsoft.com/library/windows/hardware/ff566350).
+For information about using the Windows Management Instrumentation (WMI) extensions to the Windows Driver Model (WDM) to add software tracing to any driver, see [WMI Event Tracing](../kernel/wmi-event-tracing.md).
 
-**Note**   ETW and WPP support most types of kernel-mode drivers and user-mode applications. However, ETW and WPP use types that are not available for certain types of drivers, such as miniport drivers. To determine whether a particular driver type is supported, add basic WPP macros to the driver, such as [WPP\_INIT\_TRACING](https://msdn.microsoft.com/library/windows/hardware/ff556191) and [WPP\_CLEANUP](https://msdn.microsoft.com/library/windows/hardware/ff556179). If the code does not compile because the types that are used are not defined, then ETW and WPP cannot support the driver type. 
+**Note**   ETW and WPP support most types of kernel-mode drivers and user-mode applications. However, ETW and WPP use types that are not available for certain types of drivers, such as miniport drivers. To determine whether a particular driver type is supported, add basic WPP macros to the driver, such as [WPP\_INIT\_TRACING](/previous-versions/windows/hardware/previsioning-framework/ff556191(v=vs.85)) and [WPP\_CLEANUP](/previous-versions/windows/hardware/previsioning-framework/ff556179(v=vs.85)). If the code does not compile because the types that are used are not defined, then ETW and WPP cannot support the driver type. 
 
 ## What's in this section
 
@@ -112,4 +112,4 @@ This section includes:
 
 [Kernel Mode Performance Monitoring](kernel-mode-performance-monitoring.md)
 
-For conceptual information [About Event Tracing](https://msdn.microsoft.com/library/windows/desktop/aa363668), see the Microsoft Windows SDK documentation. 
+For conceptual information [About Event Tracing](/windows/desktop/ETW/about-event-tracing), see the Microsoft Windows SDK documentation. 

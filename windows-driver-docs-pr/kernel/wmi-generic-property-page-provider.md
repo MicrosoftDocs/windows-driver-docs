@@ -57,7 +57,7 @@ HKLM, System\CurrentControlSet\Control\CoDeviceInstallers, ClassGUID,
     0x00010000, "WmiProp.dll, WmiPropCoInstaller"
 ```
 
-*ClassGUID* is the GUID for the WMI class. See [Registering a Class Co-installer](https://msdn.microsoft.com/library/windows/hardware/ff549801) for details.
+*ClassGUID* is the GUID for the WMI class. See [Registering a Class Co-installer](../install/registering-a-class-co-installer.md) for details.
 
 You must also specify the particular WMI classes to be exposed through the generic property provider. To do this, set the **WmiConfigClasses** value-entry to be a comma-separated list of the WMI classes in the *add-registry-section* of the device class or device hardware instance.
 
@@ -71,14 +71,9 @@ HKR,,"WmiConfigClasses",0x00000000,"class1,class2"
 HKR,,"WmiConfigClasses",0x00000000,"class3"
 ```
 
-See [**INF AddReg Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546320) for a description of an *add-registry-section* in INF files.
+See [**INF AddReg Directive**](../install/inf-addreg-directive.md) for a description of an *add-registry-section* in INF files.
 
 Wmiprop.dll assumes only one instance of each class. Each class is represented by a tab on the property sheet. Use the **DisplayName** property qualifier to set the title text of the tab. A property page for a class only appears if there is currently an instance of the class. Therefore, if the device is removed or not started, the pages do not appear.
 
  
-
- 
-
-
-
 

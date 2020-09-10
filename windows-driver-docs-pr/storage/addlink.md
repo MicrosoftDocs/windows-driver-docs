@@ -33,7 +33,7 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddLink\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550129) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddLink\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addlink_out) structure.
 
 Return value
 ------------
@@ -68,14 +68,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**AddLink\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff550129)
+[**AddLink\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addlink_out)
 
  
-
- 
-
-
-
-
-
 

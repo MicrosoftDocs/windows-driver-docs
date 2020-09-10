@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Troubleshooting the metadata authoring wizards
 
 
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?LinkId=226411). For more information, see [Windows 8.1 device experience](https://go.microsoft.com/fwlink/p/?linkid=325561). \]
+\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://www.microsoft.com/download/details.aspx?id=42273). \]
 
 If you receive any of the following error messages, refer to the Resolution column in the table to resolve the issue.
 
@@ -44,7 +44,7 @@ If you receive any of the following error messages, refer to the Resolution colu
 <tr class="even">
 <td align="left"></td>
 <td align="left">Welcome</td>
-<td align="left">The chosen file doesn&#39;t exist</td>
+<td align="left">The chosen file doesn't exist</td>
 <td align="left">Correct the file path or name.</td>
 </tr>
 <tr class="odd">
@@ -79,20 +79,20 @@ If you receive any of the following error messages, refer to the Resolution colu
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Association</td>
-<td align="left">Invalid format : &quot;Value&quot; - don&#39;t add { } in the beginning and end.</td>
+<td align="left">Invalid format : "Value" - don't add { } in the beginning and end.</td>
 <td align="left">Remove the {} and try again.</td>
 </tr>
 <tr class="even">
 <td align="left"></td>
 <td align="left">Association</td>
-<td align="left">Invalid GUID format: &quot;Value&quot;</td>
+<td align="left">Invalid GUID format: "Value"</td>
 <td align="left">Type the correct GUID and try again.</td>
 </tr>
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Icon</td>
-<td align="left">There were problems with the icon file: &quot;Error Message&quot; Icon Validation Error</td>
-<td align="left">The icon can&#39;t be found or doesn&#39;t meet the requirement to be displayed in Devices and Printers in Control Panel. Find or fix the icon and try again.
+<td align="left">There were problems with the icon file: "Error Message" Icon Validation Error</td>
+<td align="left">The icon can't be found or doesn't meet the requirement to be displayed in Devices and Printers in Control Panel. Find or fix the icon and try again.
 <p>Error examples:</p>
 <ul>
 <li>Error: Image 256x256 transparency needs to be set.</li>

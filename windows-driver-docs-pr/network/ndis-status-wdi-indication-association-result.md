@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_ASSOCIATION\_RESULT to indic
 
 | Type                                                                     | Multiple TLV instances allowed | Optional | Description                    |
 |--------------------------------------------------------------------------|--------------------------------|----------|--------------------------------|
-| [**WDI\_TLV\_ASSOCIATION\_RESULT**](https://msdn.microsoft.com/library/windows/hardware/dn926140) | X                              |          | A list of association results. |
+| [**WDI\_TLV\_ASSOCIATION\_RESULT**](./wdi-tlv-association-result.md) | X                              |          | A list of association results. |
 
  
 
@@ -60,9 +60,4 @@ Requirements
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
  
-
- 
-
-
-
 

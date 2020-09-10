@@ -1,5 +1,5 @@
 ---
-Description: Creating the Sensor Devices
+description: Creating the Sensor Devices
 title: Creating the Sensor Devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -30,7 +30,7 @@ The RetrieveInterval function is identical for every sensor. This function retri
 
 ```cpp
 RetrieveInterval:
-    SERIN 16, 16780, Interval, Timeout, [DEC NewInterval]   &#39;Retrieve interval
+    SERIN 16, 16780, Interval, Timeout, [DEC NewInterval]   'Retrieve interval
     IF NewInterval >= 10 AND NewInterval <= 60000 THEN
       Interval = NewInterval
     ENDIF
@@ -49,42 +49,42 @@ Be aware that the Timeout function returns to the Main routine, which invokes Po
 
 ```cpp
 Main:
-  GOSUB PollSensor                   &#39;Determine distance
-  GOSUB RetrieveInterval             &#39;Retrieve interval data
+  GOSUB PollSensor                   'Determine distance
+  GOSUB RetrieveInterval             'Retrieve interval data
 ```
 
 The following is the complete source code for the ultrasonic distance sensor:
 
 ```cpp
-&#39; Smart Sensors and Applications - PingMeasureCmAndIn.bs2
-&#39; Measure distance with Ping))) sensor and display in both in & cm
-&#39; {$STAMP BS2}
-&#39; {$PBASIC 2.5}
-&#39; Conversion constants for room temperature measurements.
+' Smart Sensors and Applications - PingMeasureCmAndIn.bs2
+' Measure distance with Ping))) sensor and display in both in & cm
+' {$STAMP BS2}
+' {$PBASIC 2.5}
+' Conversion constants for room temperature measurements.
 CmConstant CON 2260
-&#39;InConstant CON 890
+'InConstant CON 890
 cmDistance VAR Word
-&#39;inDistance VAR Word
+'inDistance VAR Word
 time VAR Word
-SensorID  VAR   Byte  &#39;Sensor identifier = 5 for PIR
-ElementSize VAR Byte  &#39;Size (in bytes) of each element
-ElementCount  VAR   Byte  &#39;Count of elements in packet
-Padding VAR Byte      &#39;Padding for the 8-byte element
+SensorID  VAR   Byte  'Sensor identifier = 5 for PIR
+ElementSize VAR Byte  'Size (in bytes) of each element
+ElementCount  VAR   Byte  'Count of elements in packet
+Padding VAR Byte      'Padding for the 8-byte element
 
 SensorID = 4
 ElementSize = 1
-ElementCount = 5      &#39;5bytes for distance data
+ElementCount = 5      '5bytes for distance data
 
-NewInterval VAR  Word  &#39;New interval requested by user
-Interval  VAR   Word   &#39;Interval value utlized by firmware
+NewInterval VAR  Word  'New interval requested by user
+Interval  VAR   Word   'Interval value utlized by firmware
 
 Interval = 2000
 NewInterval = 2000
 
 
 Main:
-  GOSUB PollSensor                  &#39;Was motion detected?
-  GOSUB RetrieveInterval            &#39;Retrieve units data
+  GOSUB PollSensor                  'Was motion detected?
+  GOSUB RetrieveInterval            'Retrieve units data
 
 Timeout:
   SEROUT 16, 16780, [DEC1 SensorID, DEC1 ElementSize, DEC1 ElementCount, DEC5 cmDistance, DEC5 Interval]
@@ -97,7 +97,7 @@ PollSensor:
 RETURN
 
 RetrieveInterval:
-    SERIN 16, 16780, Interval, Timeout, [DEC NewInterval]   &#39;Retrieve interval
+    SERIN 16, 16780, Interval, Timeout, [DEC NewInterval]   'Retrieve interval
     IF NewInterval >= 10 AND NewInterval <= 60000 THEN
       Interval = NewInterval
     ENDIF

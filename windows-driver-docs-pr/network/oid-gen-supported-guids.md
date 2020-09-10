@@ -33,7 +33,7 @@ Optional.
 Remarks
 -------
 
-Each structure in the array specifies the mapping of a custom GUID (globally unique identifier) to either a custom OID or to an NDIS\_STATUS that the miniport driver sends through the [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) function.
+Each structure in the array specifies the mapping of a custom GUID (globally unique identifier) to either a custom OID or to an NDIS\_STATUS that the miniport driver sends through the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function.
 
 The NDIS\_GUID structure is defined as follows:
 
@@ -107,7 +107,7 @@ NDIS_GUID    NdisGuid = {{0x44795701, 0xa61b, 0x11d0, 0x8d, 0xd4,
 
 A GUID is an identifier used by Windows Management Instrumentation (WMI) to obtain or set information. NDIS intercepts a GUID sent by WMI to an NDIS driver, it maps the GUID to an OID, and sends the OID to the driver. The driver returns the data items to NDIS, which then returns the data to WMI.
 
-NDIS also translates changes in NIC status into GUIDs that are recognized by WMI. When a miniport driver reports a change in NIC status using the [**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600) function, NDIS translates the NDIS\_STATUS indicated by the miniport driver into a GUID that NDIS sends to WMI.
+NDIS also translates changes in NIC status into GUIDs that are recognized by WMI. When a miniport driver reports a change in NIC status using the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function, NDIS translates the NDIS\_STATUS indicated by the miniport driver into a GUID that NDIS sends to WMI.
 
 If a miniport driver supports customs GUIDs, it must support OID\_GEN\_SUPPORTED\_GUIDS. This OID returns to NDIS the mapping of custom GUIDs to custom OIDs or NDIS\_STATUS strings. After querying the miniport driver using OID\_GEN\_SUPPORTED\_GUIDS, NDIS registers the miniport driver's custom GUIDs with WMI.
 
@@ -130,12 +130,7 @@ Requirements
 ## See also
 
 
-[**NdisMIndicateStatusEx**](https://msdn.microsoft.com/library/windows/hardware/ff563600)
+[**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex)
 
  
-
- 
-
-
-
 

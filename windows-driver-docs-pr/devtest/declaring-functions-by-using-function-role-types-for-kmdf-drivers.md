@@ -13,7 +13,7 @@ To enable SDV to analyze a KMDF driver, you must declare your functions using th
 
 Each event callback function in a KMDF driver must be declared by specifying the corresponding role type.
 
-For example, the following code example shows the function role type declaration for the [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) callback function. In this example, the callback function is called *myDriver\_EvtDriverDeviceAdd*. The function role type is EVT\_WDF\_DRIVER\_DEVICE\_ADD.
+For example, the following code example shows the function role type declaration for the [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function. In this example, the callback function is called *myDriver\_EvtDriverDeviceAdd*. The function role type is EVT\_WDF\_DRIVER\_DEVICE\_ADD.
 
 ```
 EVT_WDF_DRIVER_DEVICE_ADD myDriver_EvtDriverDeviceAdd;
@@ -61,13 +61,13 @@ To help you determine whether the source code is prepared, run [Code Analysis fo
 
 As required in the C programming language, the parameter types that you use in the function definition must match the parameter types of the function prototype, or in this case, the function role type. SDV depends upon the function signatures for analysis and ignores functions whose signatures do not match.
 
-For example, you should declare an [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine using the EVT\_WDF\_DRIVER\_DEVICE\_ADD function role type.
+For example, you should declare an [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) routine using the EVT\_WDF\_DRIVER\_DEVICE\_ADD function role type.
 
 ```
 EVT_WDF_DRIVER_DEVICE_ADD myEvtDriverDeviceAdd;
 ```
 
-When you implement the function *myEvtDriverDeviceAdd*, the parameter types must match those used by EVT\_WDF\_DRIVER\_DEVICE\_ADD, namely, WDFDRIVER and PWDFDEVICE\_INIT (see [*EvtDriverDeviceAdd*](https://msdn.microsoft.com/library/windows/hardware/ff541693) routine for syntax).
+When you implement the function *myEvtDriverDeviceAdd*, the parameter types must match those used by EVT\_WDF\_DRIVER\_DEVICE\_ADD, namely, WDFDRIVER and PWDFDEVICE\_INIT (see [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) routine for syntax).
 
 ```
 NTSTATUS
@@ -80,10 +80,4 @@ NTSTATUS
 ```
 
  
-
- 
-
-
-
-
 

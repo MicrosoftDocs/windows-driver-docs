@@ -1,5 +1,5 @@
 ---
-Description: Defining the Sensor Objects
+description: Defining the Sensor Objects
 title: Defining the Sensor Objects
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -80,7 +80,7 @@ These object identifier constants are passed to the methods in source modules th
         {
             // We are being asked for the WPD_DEVICE_OBJECT_ID
             hr = AddStringValueToPropVariantCollection(pObjectIDCollection, WPD_DEVICE_OBJECT_ID);
-            CHECK_HR(hr, "Failed to add &#39;DEVICE&#39; object ID to enumeration collection");
+            CHECK_HR(hr, "Failed to add 'DEVICE' object ID to enumeration collection");
 
             // Update the number of children we are returning for this enumeration call
             NumObjectsEnumerated++;

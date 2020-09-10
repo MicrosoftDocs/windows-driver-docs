@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 >
 
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://msdn.microsoft.com/library/windows/hardware/ff557573).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](../index.yml).
 
 To perform remote debugging using Visual Studio:
 
@@ -21,10 +21,4 @@ To perform remote debugging using Visual Studio:
 2.  In the **Connect to Remote Debugger** dialog box, enter a connection string, and click **Connect**.
 
  
-
- 
-
-
-
-
 

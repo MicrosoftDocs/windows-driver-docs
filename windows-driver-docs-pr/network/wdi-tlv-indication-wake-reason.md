@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_INDICATION\_WAKE\_REASON
 
 
-WDI\_TLV\_INDICATION\_WAKE\_REASON is a TLV that contains a wake reason for [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](https://msdn.microsoft.com/library/windows/hardware/dn925669).
+WDI\_TLV\_INDICATION\_WAKE\_REASON is a TLV that contains a wake reason for [NDIS\_STATUS\_WDI\_INDICATION\_WAKE\_REASON](./ndis-status-wdi-indication-wake-reason.md).
 
 ## TLV Type
 
@@ -75,9 +75,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

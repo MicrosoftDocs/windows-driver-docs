@@ -31,7 +31,7 @@ Testing device drivers is limited by the following reasons:
 
 -   *Control*. Drivers that work correctly under normal circumstances can have subtle errors that occur only in exceptional situations, such as when a driver below it in the stack fails an IRP. Such situations are hard to exercise, so traditional testing does not adequately detect the error paths through the driver code.
 
-SDV enhances both the observation and control that you have when you test drivers. By defining rules for the proper use of WDM, KMDF, NDIS, and Storport functions and monitoring the driver's compliance with those rules, SDV improves your ability to observe errors. For example, the WDM rule [LowerDriverReturn](https://msdn.microsoft.com/library/windows/hardware/ff548273) specifies that, under certain circumstances, a driver's dispatch routine should always return the value that was returned by the lower driver in the stack.
+SDV enhances both the observation and control that you have when you test drivers. By defining rules for the proper use of WDM, KMDF, NDIS, and Storport functions and monitoring the driver's compliance with those rules, SDV improves your ability to observe errors. For example, the WDM rule [LowerDriverReturn](./wdm-lowerdriverreturn.md) specifies that, under certain circumstances, a driver's dispatch routine should always return the value that was returned by the lower driver in the stack.
 
 SDV also increases control by providing:
 
@@ -42,10 +42,4 @@ SDV also increases control by providing:
 SDV is an essential unit-testing tool for device drivers. It places a driver in a hostile environment and systematically tests code paths through the driver by looking for violations of driver model usage rules.
 
  
-
- 
-
-
-
-
 

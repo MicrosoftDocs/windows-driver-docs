@@ -2,18 +2,15 @@
 title: NDIS/WIFI verification
 description: The NDIS/WIFI verification option determines whether an NDIS or WIFI driver correctly interacts with the Windows operating system kernel.
 ms.assetid: EB553449-9460-403D-8ED2-343048C4B38C
-ms.date: 04/20/2017
+ms.date: 04/10/2020
 ms.localizationpriority: medium
 ---
 
 # NDIS/WIFI verification
 
-
 The NDIS/WIFI verification option determines whether an NDIS or WIFI driver correctly interacts with the Windows operating system kernel.
 
 **Note**  This option is available starting with Windows 8.1.
-
- 
 
 The NDIS/WIFI verification option applies rules to verify that your driver correctly processes OIDs in various contexts and follows Microsoft recommended best practices.
 
@@ -21,33 +18,35 @@ When this option is active and Driver Verifier detects that the driver violates 
 
 The list of verification rules includes the following:
 
-[**NdisOidComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305115)
+[**NdisOidComplete**](./ndis-ndisoidcomplete.md)
 
-[**NdisOidDoubleComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305116)
+[**NdisOidDoubleComplete**](./ndis-ndisoiddoublecomplete.md)
 
-[**NdisOidDoubleRequest**](https://msdn.microsoft.com/library/windows/hardware/dn305117)
+[**NdisOidDoubleRequest**](./ndis-ndisoiddoublerequest.md)
 
-[**NdisTimedDataHang**](https://msdn.microsoft.com/library/windows/hardware/dn305118)
+[**NdisTimedDataHang**](./ndis-ndistimeddatahang.md)
 
-[**NdisTimedDataSend**](https://msdn.microsoft.com/library/windows/hardware/dn305119)
+[**NdisTimedDataSend**](./ndis-ndistimeddatasend.md)
 
-[**NdisTimedOidComplete**](https://msdn.microsoft.com/library/windows/hardware/dn305120)
+[**NdisTimedOidComplete**](./ndis-ndistimedoidcomplete.md)
 
-[**WlanAssociation**](https://msdn.microsoft.com/library/windows/hardware/dn305122)
+[**WlanAssert**](./ndis-wlanassert.md)
 
-[**WlanConnectionRoaming**](https://msdn.microsoft.com/library/windows/hardware/dn305123)
+[**WlanAssociation**](./ndis-wlanassociation.md)
 
-[**WlanDisassociation**](https://msdn.microsoft.com/library/windows/hardware/dn305124)
+[**WlanConnectionRoaming**](./ndis-wlanconnectionroaming.md)
 
-[**WlanTimedAssociation**](https://msdn.microsoft.com/library/windows/hardware/dn305125)
+[**WlanDisassociation**](./ndis-wlandisassociation.md)
 
-[**WlanTimedConnectionRoaming**](https://msdn.microsoft.com/library/windows/hardware/dn305126)
+[**WlanTimedAssociation**](./ndis-wlantimedassociation.md)
 
-[**WlanTimedConnectRequest**](https://msdn.microsoft.com/library/windows/hardware/dn305127)
+[**WlanTimedConnectionRoaming**](./ndis-wlantimedconnectionroaming.md)
 
-[**WlanTimedScan**](https://msdn.microsoft.com/library/windows/hardware/dn305129)
+[**WlanTimedConnectRequest**](./ndis-wlantimedconnectrequest.md)
 
-[**WlanTimedLinkQuality**](https://msdn.microsoft.com/library/windows/hardware/dn305128)
+[**WlanTimedScan**](./ndis-wlantimedscan.md)
+
+[**WlanTimedLinkQuality**](./ndis-wlantimedlinkquality.md)
 
 ## <span id="Activating_this_option"></span><span id="activating_this_option"></span><span id="ACTIVATING_THIS_OPTION"></span>Activating this option
 
@@ -73,10 +72,4 @@ You can activate the NDIS/WIFI verification feature for one or more drivers by u
     5.  Restart the computer.
 
  
-
- 
-
-
-
-
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_MULTIPLEXER
 
 
-The KSCATEGORY_MULTIPLEXER [device interface class](https://msdn.microsoft.com/library/windows/hardware/ff541339) is defined for the [kernel streaming](https://msdn.microsoft.com/library/windows/hardware/ff568277) (KS) functional category for a multiplexer device.
+The KSCATEGORY_MULTIPLEXER [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a multiplexer device.
 
 <table>
 <colgroup>
@@ -52,9 +52,9 @@ Drivers for KS devices register instances of KSCATEGORY_MULTIPLEXER to indicate 
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
-For information about multiplexers, see [Topology Filters](https://msdn.microsoft.com/library/windows/hardware/ff538552).
+For information about multiplexers, see [Topology Filters](../audio/topology-filters.md).
 
-For more information about the KSCATEGORY_MULTIPLEXER functional category, see [Encoder Installation and Registration](https://msdn.microsoft.com/library/windows/hardware/ff559551).
+For more information about the KSCATEGORY_MULTIPLEXER functional category, see [Encoder Installation and Registration](../stream/encoder-installation-and-registration.md).
 
 Requirements
 ------------
@@ -73,10 +73,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

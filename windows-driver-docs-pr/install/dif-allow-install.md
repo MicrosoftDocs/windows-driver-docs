@@ -52,13 +52,13 @@ After selecting a driver for the device but before installing the device.
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the [device information set](https://msdn.microsoft.com/library/windows/hardware/ff541247) that contains the device.
+Supplies a handle to the [device information set](./device-information-sets.md) that contains the device.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -75,7 +75,7 @@ A class installer typically returns ERROR_DI_DO_DEFAULT or a Win32 error code.
 
 Typical Win32 error codes for this DIF request include ERROR_DI_DONT_INSTALL and ERROR_NON_WINDOWS_NT_DRIVER.
 
-**Note**  Class installers and co-installers should not freturn ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION since that causes the device installation to fail. If the device installation requires user interaction, class installers and co-installers should support a [finish-install action](https://msdn.microsoft.com/library/windows/hardware/ff544940).
+**Note**  Class installers and co-installers should not freturn ERROR_REQUIRES_INTERACTIVE_WINDOWSTATION since that causes the device installation to fail. If the device installation requires user interaction, class installers and co-installers should support a [finish-install action](./finish-install-actions--windows-vista-and-later-.md).
 
  
 
@@ -95,7 +95,7 @@ If an installer fails this DIF request, Windows stops the installation.
 
 If an installer fails this DIF request and DI_QUIETINSTALL is not set in the device installation parameters, the installer should display a dialog box with a message that explains why the device is not being installed.
 
-For more information about DIF codes, see [Handling DIF Codes](https://msdn.microsoft.com/library/windows/hardware/ff546094).
+For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
 Requirements
 ------------
@@ -120,16 +120,9 @@ Requirements
 ## See also
 
 
-[**SP_DEVINFO_DATA**](https://msdn.microsoft.com/library/windows/hardware/ff552344)
+[**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://msdn.microsoft.com/library/windows/hardware/ff552346)
-
- 
+[**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
 
  
-
-
-
-
-
 

@@ -37,11 +37,11 @@ Note that parser entries allow UDP-ESP functionality to be extended, if necessar
 
 ### Adding a UDP-ESP SA and Parser Entry
 
-The TCP/IP transport requests a miniport driver to add one or more UDP-ESP SAs, and the parser entry for these SAs, by issuing an [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569809) request. The **EncapTypeEntry** member of the OFFLOAD\_IPSEC\_ADD\_UDPESP\_SA structure contains the parser entry information.
+The TCP/IP transport requests a miniport driver to add one or more UDP-ESP SAs, and the parser entry for these SAs, by issuing an [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](./oid-tcp-task-ipsec-add-udpesp-sa.md) request. The **EncapTypeEntry** member of the OFFLOAD\_IPSEC\_ADD\_UDPESP\_SA structure contains the parser entry information.
 
 Before issuing an OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA request, the TCP/IP transport determines whether the parser entry for the SAs that is being offloaded is in its parser entry list for the specified IP interface.
 
--   If the parser entry is not in the transport's list, the transport creates its own copy of the entry and sets the **EncapTypeEntryOffloadHandle** member of the OFFLOAD\_IPSEC\_ADD\_UDPESP\_SA structure to **NULL**. The transport then issues the [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569809) request. After receiving the request, the miniport driver determines whether the parser entry that the **EncapTypeEntry** specified is in the NIC's parser entry list.
+-   If the parser entry is not in the transport's list, the transport creates its own copy of the entry and sets the **EncapTypeEntryOffloadHandle** member of the OFFLOAD\_IPSEC\_ADD\_UDPESP\_SA structure to **NULL**. The transport then issues the [OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA](./oid-tcp-task-ipsec-add-udpesp-sa.md) request. After receiving the request, the miniport driver determines whether the parser entry that the **EncapTypeEntry** specified is in the NIC's parser entry list.
 
     -   If the specified parser entry is not in the NIC's parser entry list, the miniport driver creates the parser entry by using the encapsulation type and destination port specified in **EncapTypeEntry** and adds the parser entry to the NIC's parser entry list. The miniport driver then offloads the SAs specified in the OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA request. After successfully completing the OID request, the miniport driver returns a handle in **EncapTypeEntryOffloadHandle** that identifies the newly created parser entry. The miniport driver also returns a handle that identifies the offloaded SAs in the **OffloadHandle** member of the OFFLOAD\_IPSEC\_ADD\_UDPESP\_SA structure.
     -   If the specified parser entry is already in the NIC's parser entry list, the miniport driver simply returns the handle in **EncapTypeEntryOffloadHandle** for the existing parser entry. The miniport driver also returns a handle that identifies the offloaded SAs in the **OffloadHandle** member of the OFFLOAD\_IPSEC\_ADD\_UDPESP\_SA structure.
@@ -54,7 +54,7 @@ Before issuing an OID\_TCP\_TASK\_IPSEC\_ADD\_UDPESP\_SA request, the TCP/IP tra
 
 ### Deleting a UDP-ESP SA and Parser Entry
 
-The TCP/IP transport requests a miniport driver to delete one or more SAs and possibly the parser entry for these SAs by issuing an [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](https://msdn.microsoft.com/library/windows/hardware/ff569811) request.
+The TCP/IP transport requests a miniport driver to delete one or more SAs and possibly the parser entry for these SAs by issuing an [OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA](./oid-tcp-task-ipsec-delete-udpesp-sa.md) request.
 
 Before issuing this request, the TCP/IP transport decrements the reference count for the parser entry that is associated with the SAs to be deleted. The transport then tests whether the reference count is zero.
 
@@ -67,10 +67,4 @@ If the miniport driver fails the OID\_TCP\_TASK\_IPSEC\_DELETE\_UDPESP\_SA reque
 Note that a transport could request a miniport driver to delete an SA or a parser entry (or both) before the miniport driver completes adding that SA or parser entry (or both). The miniport driver must therefore serialize the deletion operation with the addition operation.
 
  
-
- 
-
-
-
-
 

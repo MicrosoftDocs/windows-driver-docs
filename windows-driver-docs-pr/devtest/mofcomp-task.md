@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Mofcomp task
 
 
-The Windows Driver Kit (WDK) provides the Mofcomp task so that you can run the Mofcomp.exe tool when you build your driver using MSBuld. For information about the tool, see [**mofcomp**](https://msdn.microsoft.com/library/aa392389).
+The Windows Driver Kit (WDK) provides the Mofcomp task so that you can run the Mofcomp.exe tool when you build your driver using MSBuld. For information about the tool, see [**mofcomp**](/windows/desktop/WmiSdk/mofcomp).
 
 MSBuild uses the Mofcomp item to send the parameters for the Mofcomp task to Mofcomp.exe. The item metadata for Mofcomp is accessed using the Mofcomp item in project files.
 
@@ -183,14 +183,7 @@ This example invokes mofcomp.exe on the file b.mof with the -WMI switch.
 ## <span id="related_topics"></span>Related topics
 
 
-[**mofcomp**](https://msdn.microsoft.com/library/aa392389)
+[**mofcomp**](/windows/desktop/WmiSdk/mofcomp)
 
  
-
- 
-
-
-
-
-
 

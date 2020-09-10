@@ -10,13 +10,13 @@ ms.localizationpriority: medium
 # Target State
 
 
-The method [**OutputCurrentState**](https://msdn.microsoft.com/library/windows/hardware/ff553206) will print the current state of the target to the debugger's output stream.
+The method [**OutputCurrentState**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-outputcurrentstate) will print the current state of the target to the debugger's output stream.
 
-The current execution status of the target is returned by [**GetExecutionStatus**](https://msdn.microsoft.com/library/windows/hardware/ff546675). If the target is suspended, the method [**SetExecutionStatus**](https://msdn.microsoft.com/library/windows/hardware/ff556693) can be used to resume execution in one of the execution modes.
+The current execution status of the target is returned by [**GetExecutionStatus**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getexecutionstatus). If the target is suspended, the method [**SetExecutionStatus**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setexecutionstatus) can be used to resume execution in one of the execution modes.
 
-The method [**GetReturnOffset**](https://msdn.microsoft.com/library/windows/hardware/ff548237) returns the address of the instruction that will execute when the current function returns.
+The method [**GetReturnOffset**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getreturnoffset) returns the address of the instruction that will execute when the current function returns.
 
-[**GetNearInstruction**](https://msdn.microsoft.com/library/windows/hardware/ff547197) returns the location of an instruction relative to a given address.
+[**GetNearInstruction**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnearinstruction) returns the location of an instruction relative to a given address.
 
 ### <span id="examining_the_stack_trace"></span><span id="EXAMINING_THE_STACK_TRACE"></span>Examining the Stack Trace
 
@@ -26,13 +26,7 @@ A *call stack* contains the data for the function calls that are made by a threa
 
  
 
-To retrieve the call stack or *stack trace*, use the methods [**GetStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff548425) and [**GetContextStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff545748). The stack trace can be printed using [**OutputStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff553252) and [**OutputContextStackTrace**](https://msdn.microsoft.com/library/windows/hardware/ff553203).
+To retrieve the call stack or *stack trace*, use the methods [**GetStackTrace**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getstacktrace) and [**GetContextStackTrace**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-getcontextstacktrace). The stack trace can be printed using [**OutputStackTrace**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-outputstacktrace) and [**OutputContextStackTrace**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-outputcontextstacktrace).
 
  
-
- 
-
-
-
-
 

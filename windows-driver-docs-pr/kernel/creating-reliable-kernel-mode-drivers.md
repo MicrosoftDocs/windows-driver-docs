@@ -17,7 +17,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
 -   Secure device objects properly.
 
-    User access to a system's drivers and devices is controlled by security descriptors that the system assigns to device objects. Most often, the system sets device security parameters when a device is installed. For more information, see [Creating Secure Device Installations](https://msdn.microsoft.com/library/windows/hardware/ff540212). Sometimes it is appropriate for a driver to play a part in controlling access to its device. For more information, see [Securing Device Objects](securing-device-objects.md).
+    User access to a system's drivers and devices is controlled by security descriptors that the system assigns to device objects. Most often, the system sets device security parameters when a device is installed. For more information, see [Creating Secure Device Installations](../install/creating-secure-device-installations.md). Sometimes it is appropriate for a driver to play a part in controlling access to its device. For more information, see [Securing Device Objects](controlling-device-access.md).
 
 -   Validate device objects properly.
 
@@ -39,7 +39,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
     Never assume that your driver will run only on single-processor systems. For information about programming techniques that you can use to ensure that your driver will function properly on multiprocessor systems, see the following topics:
 
-    [Synchronization Techniques](synchronization-techniques.md)
+    [Synchronization Techniques](introduction-to-kernel-dispatcher-objects.md)
 
     [Errors in a Multiprocessor Environment](errors-in-a-multiprocessor-environment.md)
 
@@ -53,7 +53,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
     [DispatchReadWrite Using Buffered I/O](dispatchreadwrite-using-buffered-i-o.md)
 
-    [Errors in Buffered I/O](errors-in-buffered-i-o.md)
+    [Errors in Buffered I/O](failure-to-check-the-size-of-buffers.md)
 
     [DispatchReadWrite Using Direct I/O](dispatchreadwrite-using-direct-i-o.md)
 
@@ -65,7 +65,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
 -   Handle the I/O stack properly.
 
-    When [passing IRPs down the driver stack](passing-irps-down-the-driver-stack.md), it is important for drivers to call [**IoSkipCurrentIrpStackLocation**](https://msdn.microsoft.com/library/windows/hardware/ff550355) or [**IoCopyCurrentIrpStackLocationToNext**](https://msdn.microsoft.com/library/windows/hardware/ff548387) to set up the next driver's I/O stack location. Do not write code that directly copies one I/O stack location to the next.
+    When [passing IRPs down the driver stack](passing-irps-down-the-driver-stack.md), it is important for drivers to call [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) or [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) to set up the next driver's I/O stack location. Do not write code that directly copies one I/O stack location to the next.
 
 -   Handle IRP completion operations properly.
 
@@ -81,7 +81,7 @@ Drivers make up a significant percentage of the total code that executes in kern
 
 -   Handle IRP cleanup and close operations properly.
 
-    Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](https://msdn.microsoft.com/library/windows/hardware/ff550718) and [**IRP\_MJ\_CLOSE**](https://msdn.microsoft.com/library/windows/hardware/ff550720) requests. Cleanup requests arrive after an application closes all handles on a file object, but sometimes before all I/O requests have completed. Close requests arrive after all I/O requests for the file object have been completed or canceled. For more information, see the following topics:
+    Be sure that you understand the difference between [**IRP\_MJ\_CLEANUP**](./irp-mj-cleanup.md) and [**IRP\_MJ\_CLOSE**](./irp-mj-close.md) requests. Cleanup requests arrive after an application closes all handles on a file object, but sometimes before all I/O requests have completed. Close requests arrive after all I/O requests for the file object have been completed or canceled. For more information, see the following topics:
 
     [DispatchCreate, DispatchClose, and DispatchCreateClose Routines](dispatchcreate--dispatchclose--and-dispatchcreateclose-routines.md)
 
@@ -93,12 +93,7 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 ### Using Driver Verifier
 
-[Driver Verifier](https://msdn.microsoft.com/library/windows/hardware/ff545448) is the most important tool you can use to ensure the reliability of your driver. Driver Verifier can check for a variety of common driver problems, including some of those discussed in this section. However, use of Driver Verifier does not replace careful, thoughtful software design.
+[Driver Verifier](../devtest/driver-verifier.md) is the most important tool you can use to ensure the reliability of your driver. Driver Verifier can check for a variety of common driver problems, including some of those discussed in this section. However, use of Driver Verifier does not replace careful, thoughtful software design.
 
  
-
- 
-
-
-
 

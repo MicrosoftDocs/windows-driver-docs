@@ -35,15 +35,15 @@ ms.localizationpriority: medium
 
 ITU-T Recommendation H.263 is titled Video Coding for Low Bit Rate Communication. This recommendation offers improved compression performance relative to H.261, MPEG-1, and MPEG-2. The H.263 standard contains a baseline mode of operation that supports only the most basic features of H.263. It also contains a large number of optional, enhanced modes of operation that can be used for various purposes. Baseline H.263 prediction operates in this interface using a subset of the MPEG-1 features. The baseline mode contains no bidirectional prediction âˆ’ only forward prediction.
 
-**Rounding control:** Several H.263 optional modes require rounding control. This feature is supported by the **bRcontrol** member of [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012).
+**Rounding control:** Several H.263 optional modes require rounding control. This feature is supported by the **bRcontrol** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters).
 
-**Motion Vectors over Picture Boundaries:** Several H.263 optional modes allow motion vectors that address locations outside the boundaries of a picture, as defined in H.263 Annex D. The **bPicExtrapolation** member of [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012), indicates whether the accelerator needs to support such motion. There are two ways that an accelerator can support motion vectors over picture boundaries. In either case, the result is the same:
+**Motion Vectors over Picture Boundaries:** Several H.263 optional modes allow motion vectors that address locations outside the boundaries of a picture, as defined in H.263 Annex D. The **bPicExtrapolation** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters), indicates whether the accelerator needs to support such motion. There are two ways that an accelerator can support motion vectors over picture boundaries. In either case, the result is the same:
 
 -   Clip the value of the address on each sample fetch to ensure that it stays within picture boundaries.
 
 -   Pad the picture by using duplicated samples to widen the actual memory area used by one macroblock width and height across each border of the picture.
 
-**Bidirectional motion prediction:** the bidirectional motion prediction used in some optional H.263 prediction operations uses a different rounding operator than MPEG-1. (It uses downward-rounding of half integer values as opposed to upward-rounding.) The **bBidirectionalAveragingMode** member of [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) indicates the rounding method used for combining prediction planes in bidirectional motion compensation.
+**Bidirectional motion prediction:** the bidirectional motion prediction used in some optional H.263 prediction operations uses a different rounding operator than MPEG-1. (It uses downward-rounding of half integer values as opposed to upward-rounding.) The **bBidirectionalAveragingMode** member of [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) indicates the rounding method used for combining prediction planes in bidirectional motion compensation.
 
 **Four-MV Motion Compensation (INTER4V)**: Although each macroblock in H.263 is 16x16 in size, some optional modes (for example, Annex F and Annex J of H.263) allow four motion vectors to be sent for a single macroblock, with one motion vector sent for each of the four 8x8 luminance blocks within the macroblock. The corresponding 8x8 chrominance area uses a single, derived motion vector.
 
@@ -98,10 +98,4 @@ The following figure shows how one 8x8 block is placed in the three types of pre
 **Other H.263 Optional Features:** Other optional features of H.263 can be supported without any impact on the DirectX VA design. For example, Annexes I, K, S, and T can be easily handled by altering the software decoder without any impact on the accelerator.
 
  
-
- 
-
-
-
-
 

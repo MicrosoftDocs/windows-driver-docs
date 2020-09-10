@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.**
 
-COPP provides a mechanism of applying copy protection to video that is output by the graphics adapter. COPP provides a common protocol for sending various link-protection requirements to the graphics adapter in a more protected fashion than by using the [**IOCTL\_VIDEO\_HANDLE\_VIDEOPARAMETERS**](https://msdn.microsoft.com/library/windows/hardware/ff567805) I/O control (IOCTL) code.
+COPP provides a mechanism of applying copy protection to video that is output by the graphics adapter. COPP provides a common protocol for sending various link-protection requirements to the graphics adapter in a more protected fashion than by using the [**IOCTL\_VIDEO\_HANDLE\_VIDEOPARAMETERS**](/windows-hardware/drivers/ddi/ntddvdeo/ni-ntddvdeo-ioctl_video_handle_videoparameters) I/O control (IOCTL) code.
 
 The following topics describe COPP:
 
@@ -30,10 +30,4 @@ The following topics describe COPP:
 [Graphics Adapter Output Requirements to Support COPP](graphics-adapter-output-requirements-to-support-copp.md)
 
  
-
- 
-
-
-
-
 

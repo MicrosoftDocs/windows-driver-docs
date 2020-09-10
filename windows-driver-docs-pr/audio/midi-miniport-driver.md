@@ -24,46 +24,41 @@ A MIDI miniport driver should implement two interfaces:
 
 -   The *stream interface* manages a MIDI stream and exposes most of the miniport driver's functionality.
 
-The miniport interface, [IMiniportMidi](https://msdn.microsoft.com/library/windows/hardware/ff536703), inherits the methods in the [IMiniport](https://msdn.microsoft.com/library/windows/hardware/ff536698) interface. **IMiniportMidi** provides the following additional methods:
+The miniport interface, [IMiniportMidi](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidi), inherits the methods in the [IMiniport](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport) interface. **IMiniportMidi** provides the following additional methods:
 
-[**IMiniportMidi::Init**](https://msdn.microsoft.com/library/windows/hardware/ff536709)
+[**IMiniportMidi::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidi-init)
 
 Initializes the miniport object.
 
-[**IMiniportMidi::NewStream**](https://msdn.microsoft.com/library/windows/hardware/ff536710)
+[**IMiniportMidi::NewStream**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidi-newstream)
 
 Creates a new stream object.
 
-[**IMiniportMidi::Service**](https://msdn.microsoft.com/library/windows/hardware/ff536711)
+[**IMiniportMidi::Service**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidi-service)
 
 Notifies the miniport driver of a request for service.
 
-The stream interface, [IMiniportMidiStream](https://msdn.microsoft.com/library/windows/hardware/ff536704), inherits the methods in the **IUnknown** interface. **IMiniportMidiStream** provides the following additional methods:
+The stream interface, [IMiniportMidiStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportmidistream), inherits the methods in the **IUnknown** interface. **IMiniportMidiStream** provides the following additional methods:
 
-[**IMiniportMidiStream::Read**](https://msdn.microsoft.com/library/windows/hardware/ff536705)
+[**IMiniportMidiStream::Read**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidistream-read)
 
 Reads input data from a MIDI capture device.
 
-[**IMiniportMidiStream::SetFormat**](https://msdn.microsoft.com/library/windows/hardware/ff536706)
+[**IMiniportMidiStream::SetFormat**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidistream-setformat)
 
 Sets the data format of the MIDI stream.
 
-[**IMiniportMidiStream::SetState**](https://msdn.microsoft.com/library/windows/hardware/ff536707)
+[**IMiniportMidiStream::SetState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidistream-setstate)
 
 Sets the state of the MIDI stream.
 
-[**IMiniportMidiStream::Write**](https://msdn.microsoft.com/library/windows/hardware/ff536708)
+[**IMiniportMidiStream::Write**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidistream-write)
 
 Writes output data to a MIDI synthesizer.
 
 The MIDI port driver handles all timing issues in both directions and relies on the miniport driver to promptly move data on and off the adapter in response to the port driver's calls to the **IMiniportMidiStream** read and write methods.
 
-PortCls contains built-in MIDI miniport drivers for MIDI devices that have FM synth and UART functions. For more information, see [**PcNewMiniport**](https://msdn.microsoft.com/library/windows/hardware/ff537714).
+PortCls contains built-in MIDI miniport drivers for MIDI devices that have FM synth and UART functions. For more information, see [**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport).
 
  
-
- 
-
-
-
 

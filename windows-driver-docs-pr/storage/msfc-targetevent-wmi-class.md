@@ -32,13 +32,7 @@ class MSFC_TargetEvent : WmiEvent {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_TargetEvent**](https://msdn.microsoft.com/library/windows/hardware/ff562518)
+[**MSFC\_TargetEvent**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_targetevent)
 
  
-
- 
-
-
-
-
 

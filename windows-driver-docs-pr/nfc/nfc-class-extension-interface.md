@@ -19,20 +19,19 @@ The NFC CX interface is based on the UMDF class extension model. The NFC CX inte
 
 The NFC CX interface includes the following methods:
 
--   [**NfcCxDeviceInitConfig**](https://msdn.microsoft.com/library/windows/hardware/dn905610)
--   [**NfcCxDeviceInitialize**](https://msdn.microsoft.com/library/windows/hardware/dn905611)
--   [**NfcCxDeviceDeinitialize**](https://msdn.microsoft.com/library/windows/hardware/dn905609)
--   [**NfcCxHardwareEvent**](https://msdn.microsoft.com/library/windows/hardware/dn905612)
--   [**NfcCxNciReadNotification**](https://msdn.microsoft.com/library/windows/hardware/dn905613)
--   [**NfcCxSetRfDiscoveryConfig**](https://msdn.microsoft.com/library/windows/hardware/dn905616)
--   [**NfcCxSetLlcpConfig**](https://msdn.microsoft.com/library/windows/hardware/dn905615)
--   [**NfcCxRegisterSequenceHandler**](https://msdn.microsoft.com/library/windows/hardware/dn905614)
--   [**NfcCxUnRegisterSequenceHandler**](https://msdn.microsoft.com/library/windows/hardware/dn905617)
+-   [**NfcCxDeviceInitConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdeviceinitconfig)
+-   [**NfcCxDeviceInitialize**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdeviceinitialize)
+-   [**NfcCxDeviceDeinitialize**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxdevicedeinitialize)
+-   [**NfcCxHardwareEvent**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxhardwareevent)
+-   [**NfcCxNciReadNotification**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxncireadnotification)
+-   [**NfcCxSetRfDiscoveryConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetrfdiscoveryconfig)
+-   [**NfcCxSetLlcpConfig**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxsetllcpconfig)
+-   [**NfcCxRegisterSequenceHandler**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxregistersequencehandler)
+-   [**NfcCxUnRegisterSequenceHandler**](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxunregistersequencehandler)
 
  
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://msdn.microsoft.com/library/windows/hardware/mt715815)  
-[NFC class extension (CX) reference](https://msdn.microsoft.com/library/windows/hardware/dn905536)  
-
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[NFC class extension (CX) reference](/windows-hardware/drivers/ddi/index)

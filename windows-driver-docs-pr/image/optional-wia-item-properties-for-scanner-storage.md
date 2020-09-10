@@ -11,12 +11,7 @@ ms.localizationpriority: medium
 
 The WIA scanner storage (folder) item can optionally support the following WIA property:
 
-[**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](https://msdn.microsoft.com/library/windows/hardware/ff552653)
+[**WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION**](./wia-ips-supports-child-item-creation.md)
 
  
-
- 
-
-
-
 

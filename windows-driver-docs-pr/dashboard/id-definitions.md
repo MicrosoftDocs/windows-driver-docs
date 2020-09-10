@@ -1,6 +1,6 @@
 ---
-title: Windows Hardware Dev Center Dashboard ID Definitions
-description: Windows Hardware Dev Center Dashboard ID Definitions
+title: Windows Partner Center ID Definitions
+description: Windows Partner Center ID Definitions
 ms.topic: article 
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -8,15 +8,15 @@ ms.localizationpriority: medium
 
 # Dashboard ID definitions
 
-This topic defines the identification numbers associated with Windows Hardware Dev Center Dashboard submissions.
+This topic defines the identification numbers associated with Partner Center submissions.
 
 Within the Windows Hardware Dev Center, each driver submission is associated with three IDs: A private, shared and submission ID. The relation between these three IDs is illustrated below:
 
-![screenshot that shows the relationship of the three ID types](images/id_relationship.png)
+![screenshot that shows the relationship of the private, shared and submission ID types](images/id_relationship.png)
 
-The Windows Hardware Dev Center Dashboard lists each of these IDs on the driver details page of your products:
+The Partner Center lists each of these IDs on the driver details page of your products:
 
-![screenshot that shows the relationship of the three ID types](images/id_driver_details.png)
+![screenshot that shows the that the three ID types and values are listed in the Partner Center](images/id_driver_details.png)
 
 ## ID definitions
 
@@ -38,25 +38,24 @@ The Windows Hardware Dev Center Dashboard lists each of these IDs on the driver 
 &gt; [!NOTE]
 &gt; when you share a driver with someone else, they will be assigned a new private product ID. If you want to communicate about a product, use the Shared Product ID.
 </p>
-
 </td>
 </tr>
 <tr class="odd">
 <td><p>Submission ID</p></td>
-<td><p>This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See <a href="https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions" data-raw-source="[Manage your hardware submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions)">Manage your hardware submissions</a> for more details. </p></td>
+<td><p>This identifier represents the individual packages you upload to a Product. The initial submission, and all submission updates each have a unique identifier. This ID is most useful for tracking updates using the Driver Update Acceptable (DUA) process within a product. See <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/manage-your-hardware-submissions" data-raw-source="[Manage your hardware submissions](./manage-your-hardware-submissions.md)">Manage your hardware submissions</a> for more details. </p></td>
 </tr>
 </tbody>
 </table>
 
 Shipping labels also contain two additional IDs:
 
-ID Name | Description
---- | ---
-Shipping Label ID | This identifier is used for internal tracking, and is assigned to any shipping labels that are assigned to a product. In most cases, you will not need to know the Shipping Label ID.
-Promotion Request ID | If your Shipping Label requires a manual review from Microsoft, it will be given a Promotion Request ID. This represents your unique shipping label in the Driver Shiproom. You should include this Id in any support inquiry.
+|ID Name | Description|
+|--- | ---|
+|Shipping Label ID | This identifier is used for internal tracking, and is assigned to any shipping labels that are assigned to a product. In most cases, you will not need to know the Shipping Label ID.|
+|Promotion Request ID | If your Shipping Label requires a manual review from Microsoft, it will be given a Promotion Request ID. This represents your unique shipping label in the Driver Shiproom. You should include this Id in any support inquiry.|
 
-## <span id="related_topics"></span>Related topics
+## Related topics
 
-- [Manage your hardware submissions](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-your-hardware-submissions)
+* [Manage your hardware submissions](./manage-your-hardware-submissions.md)
 
-- [Manage driver distribution with shipping labels](https://msdn.microsoft.com/windows/hardware/drivers/dashboard/manage-driver-distribution-by-submission)
+* [Manage driver distribution with shipping labels](./manage-driver-distribution-by-submission.md)

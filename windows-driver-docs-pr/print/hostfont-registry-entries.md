@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-An OEM plug-in can notify the Pscript5 driver that the %hostfont%-ready PostScript interpreter has a set of fonts and CIDFonts that are available to use and are identical to those that the Pscript5 driver might download in the course of a print job. Notification of which fonts are to be handled this way is done by placing keys in the registry. The Pscript5 driver checks the registry for new information when its [**DrvEnablePDEV**](https://msdn.microsoft.com/library/windows/hardware/ff556211) function is called. The plug-in can then ensure that the data is current before the PDEV is enabled.
+An OEM plug-in can notify the Pscript5 driver that the %hostfont%-ready PostScript interpreter has a set of fonts and CIDFonts that are available to use and are identical to those that the Pscript5 driver might download in the course of a print job. Notification of which fonts are to be handled this way is done by placing keys in the registry. The Pscript5 driver checks the registry for new information when its [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) function is called. The plug-in can then ensure that the data is current before the PDEV is enabled.
 
 The following table lists the %hostfont% registry entry names, their types, and their values. The OEM plug-in should call SetPrinterData (described in the Microsoft Windows SDK documentation) to set these entry names. The HostFont*Xxx* entry names are mutually exclusive. That is, only one of the following entry names can exist in the registry at any given time.
 
@@ -44,7 +44,7 @@ The following table lists the %hostfont% registry entry names, their types, and 
 <td><p>HostFontExceptFonts</p></td>
 <td><p>REG_BINARY</p>
 <p>Can contain multiple, NULL-terminated ASCII strings containing the PostScript font names. The final string is terminated by an extra null character.</p></td>
-<td><p>Fonts that the Pscript5 driver does not &quot;see&quot; as available and identical to those fonts in the %hostfont%-ready PostScript interpreter. The Pscript5 driver downloads only these fonts.</p></td>
+<td><p>Fonts that the Pscript5 driver does not "see" as available and identical to those fonts in the %hostfont%-ready PostScript interpreter. The Pscript5 driver downloads only these fonts.</p></td>
 </tr>
 <tr class="odd">
 <td><p>HostFontHasMostFonts</p></td>
@@ -62,7 +62,7 @@ The following table lists the %hostfont% registry entry names, their types, and 
 <td><p>HostFontIncludesFonts</p></td>
 <td><p>REG_BINARY</p>
 <p>Can contain multiple, NULL-terminated ASCII strings containing the PostScript font names. The final string is terminated by an extra null character.</p></td>
-<td><p>Fonts that the Pscript5 driver &quot;sees&quot; as the only ones that are available and identical in the %hostfont%-ready PostScript interpreter. The Pscript5 driver does not download these fonts.</p></td>
+<td><p>Fonts that the Pscript5 driver "sees" as the only ones that are available and identical in the %hostfont%-ready PostScript interpreter. The Pscript5 driver does not download these fonts.</p></td>
 </tr>
 </tbody>
 </table>
@@ -78,9 +78,4 @@ The existence of the HostFontHasMostFonts key with any value assigned to it mean
 HostFontIncludesFonts is similar to HostFontExceptFonts except that it explicitly lists PostScript font names that are available on the target interpreter.
 
  
-
- 
-
-
-
 

@@ -24,13 +24,13 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-NDIS uses this OID to query the link speed of an [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) provider. Only NDIS interface providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+NDIS uses this OID to query the link speed of an [NDIS network interface](./ndis-network-interfaces2.md) provider. Only NDIS interface providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-This OID returns the link speeds in an [**NDIS\_LINK\_SPEED**](https://msdn.microsoft.com/library/windows/hardware/ff565864) structure.
+This OID returns the link speeds in an [**NDIS\_LINK\_SPEED**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_speed) structure.
 
 Miniport drivers supply the link speed during initialization and provide updated link speeds with status indications.
 
-To specify the link speeds in a miniport driver, set the **XmitLinkSpeed** and **RcvLinkSpeed** members of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672) function.
+To specify the link speeds in a miniport driver, set the **XmitLinkSpeed** and **RcvLinkSpeed** members of the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure that the miniport driver passes to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
 Requirements
 ------------
@@ -51,18 +51,13 @@ Requirements
 ## See also
 
 
-[**NDIS\_LINK\_SPEED**](https://msdn.microsoft.com/library/windows/hardware/ff565864)
+[**NDIS\_LINK\_SPEED**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_link_speed)
 
-[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565923)
+[**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
 
-[**NdisMSetMiniportAttributes**](https://msdn.microsoft.com/library/windows/hardware/ff563672)
+[**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
-
- 
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
-
-
 

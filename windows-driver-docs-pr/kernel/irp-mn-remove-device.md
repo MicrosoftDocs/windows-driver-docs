@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 All PnP drivers must handle this IRP.
 
+## Value
+
+0x02
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -50,13 +55,13 @@ This IRP is handled first by the driver at the top of the device stack and then 
 
 In response to this IRP, drivers perform such tasks as powering down the device, removing the device's software representation (device objects, and so forth), and releasing any resources for the device.
 
-For more information about handling this IRP, see [Handling an IRP\_MN\_REMOVE\_DEVICE Request](https://msdn.microsoft.com/library/windows/hardware/ff546687). For general information about supporting device removal, see [Removing a Device](https://msdn.microsoft.com/library/windows/hardware/ff561046).
+For more information about handling this IRP, see [Handling an IRP\_MN\_REMOVE\_DEVICE Request](./handling-an-irp-mn-remove-device-request.md). For general information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-If a bus driver detects that one (or more) of its child devices (child PDOs) has been physically removed from the computer, the bus driver calls [**IoInvalidateDeviceRelations**](https://msdn.microsoft.com/library/windows/hardware/ff549353) to report the change to the PnP manager. The PnP manager then sends remove IRPs for any devices that have disappeared.
+If a bus driver detects that one (or more) of its child devices (child PDOs) has been physically removed from the computer, the bus driver calls [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) to report the change to the PnP manager. The PnP manager then sends remove IRPs for any devices that have disappeared.
 
 Requirements
 ------------
@@ -77,9 +82,9 @@ Requirements
 ## See also
 
 
-[**IoInvalidateDeviceRelations**](https://msdn.microsoft.com/library/windows/hardware/ff549353)
+[**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations)
 
-[**IoRegisterPlugPlayNotification**](https://msdn.microsoft.com/library/windows/hardware/ff549526)
+[**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification)
 
 [**IRP\_MN\_CANCEL\_REMOVE\_DEVICE**](irp-mn-cancel-remove-device.md)
 
@@ -88,9 +93,4 @@ Requirements
 [**IRP\_MN\_SURPRISE\_REMOVAL**](irp-mn-surprise-removal.md)
 
  
-
- 
-
-
-
 

@@ -116,7 +116,7 @@ You can activate the Systematic low resources simulation feature for one or more
 ## <span id="Debugging_bug_checks_caused_by_Systematic_low_resources_simulation"></span><span id="debugging_bug_checks_caused_by_systematic_low_resources_simulation"></span><span id="DEBUGGING_BUG_CHECKS_CAUSED_BY_SYSTEMATIC_LOW_RESOURCES_SIMULATION"></span>Debugging bug checks caused by Systematic low resources simulation
 
 
-Most of the issues found with Systematic low resources simulation result in bug checks. To help determine the cause of these code bugs, the [Windows Debugging](https://msdn.microsoft.com/library/windows/hardware/ff551063) tools for Windows 8.1 provides the debugger extension (kdexts.dll) and the necessary symbols.
+Most of the issues found with Systematic low resources simulation result in bug checks. To help determine the cause of these code bugs, the [Windows Debugging](../debugger/index.md) tools for Windows 8.1 provides the debugger extension (kdexts.dll) and the necessary symbols.
 
 **To run the debugger extension**
 
@@ -129,10 +129,4 @@ Most of the issues found with Systematic low resources simulation result in bug 
 This will dump information to your debugger showing the call stacks from the most recent failures injected.
 
  
-
- 
-
-
-
-
 

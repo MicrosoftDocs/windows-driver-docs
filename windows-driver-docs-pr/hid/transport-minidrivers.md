@@ -1,13 +1,12 @@
 ---
-title: Transport minidrivers
+title: Transport Minidriver Overview
 description: This section contains details for vendors who need to create their own HID minidrivers. 
 ms.assetid: 5142A2C9-AE6E-4CE6-AF16-2CF811D6C10F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Transport minidrivers
-
+# Transport Minidriver Overview
 
 This section contains details for vendors who need to create their own HID minidrivers. If your device requires USB, Bluetooth, Bluetooth LE, I²C, GPIO as the transport, use the Microsoft-provided in-box driver. To see the list of in-box transport minidrivers, see [**HID Transports**](hid-transports.md).
 

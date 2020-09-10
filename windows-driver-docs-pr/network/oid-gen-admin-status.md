@@ -26,9 +26,9 @@ Remarks
 
 The administrative status is the status that the system administrator requested.
 
-Only [NDIS network interface](https://msdn.microsoft.com/library/windows/hardware/ff566527) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_ADMIN\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff568740) enumeration.
+If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query can be one of the values in the [**NET\_IF\_ADMIN\_STATUS**](/windows/desktop/api/ifdef/ne-ifdef-_net_if_admin_status) enumeration.
 
 Requirements
 ------------
@@ -49,14 +49,9 @@ Requirements
 ## See also
 
 
-[**NET\_IF\_ADMIN\_STATUS**](https://msdn.microsoft.com/library/windows/hardware/ff568740)
+[**NET\_IF\_ADMIN\_STATUS**](/windows/desktop/api/ifdef/ne-ifdef-_net_if_admin_status)
 
-[NDIS Network Interface OIDs](https://msdn.microsoft.com/library/windows/hardware/ff566545)
-
- 
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
-
-
 

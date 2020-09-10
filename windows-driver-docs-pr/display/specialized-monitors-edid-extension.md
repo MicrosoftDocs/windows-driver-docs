@@ -1,6 +1,6 @@
 ---
-title: EDID Extension for HMDs and Specialized Monitors
-description: EDID Extension for HMDs and Specialized Monitors
+title: EDID extension for head-mounted and specialized monitors
+description: EDID extension for head-mounted and specialized monitors
 keywords:
 - display devices WDK
 - monitor drivers WDK
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ---
 
 
-# EDID Extension (VSDB) for HMDs and Specialized Displays
+# EDID extension for head-mounted and specialized monitors
 
 *Specification for Display Manufacturers*
 
@@ -33,19 +33,19 @@ Two parts are necessary for the specification in this document to solve the abov
 1. The firmware in the display that contains the [EDID](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data) will be modified to contain a [Vendor Specific Data Block](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data#EIA.2FCEA-861_extension_block) to identify the Windows-specific use-case of the display.
 2. The Windows display subsystem will correctly recognize the Vendor Specific Data Block outlined in this document and treat the displays appropriately. Note that different versions of the Windows OS may have different behaviors, which are called out below.
 
-The combination of 1. and 2. above will result in the correct Windows behavior from the moment the display is first plugged in. In particular, HMDs and certain specialized displays will not be included in the regular Windows desktop environment, and access to the display with the [Windows.Devices.Display.Core](https://docs.microsoft.com/en-us/uwp/api/windows.devices.display.core) APIs will become available to third-party compositors.
+The combination of 1. and 2. above will result in the correct Windows behavior from the moment the display is first plugged in. In particular, HMDs and certain specialized displays will not be included in the regular Windows desktop environment, and access to the display with the [Windows.Devices.Display.Core](/uwp/api/windows.devices.display.core) APIs will become available to third-party compositors.
 
 The Video Electronics Standards Association (VESA) has defined standardized fields in DisplayId v2.0 which provides access to similar information as the VSDB defined in this document.  DisplayID v2.0 or later is the preferred mechanism to deliver this data for HMDs, however if a device must use an EDID for other reasons, this VSDB should be used.
 
-## Vendor Specific Data Block (VSDB)
+## Vendor-specific data block (VSDB)
 
-The party responsible for writing the firmware code that contains the EDID must include a CTA extension block and within that block put a Microsoft-defined Vendor Specific Data Block (VSDB). The structure of EDIDs is described in the "VESA Enhanced Extended Display Identification Data Standard" ([E-EDID](https://www.vesa.org/vesa-standards/standards-summaries/)), see version 1.4, release A, revision 2 with section 2.2 describing extension blocks.  The CTA extension block is defined in the CTA's 861 series documents "A DTV Profile for Uncompressed High-Speed Digital Interfaces".  VSDBs are described in section 7.5.4 in the latest (at time of writing) published version, [CTA-861-G](https://standards.cta.tech/kwspub/published_docs/CTA-861-G-Preview.pdf) including the order of VSDB relative to other data blocks. 
+The party responsible for writing the firmware code that contains the EDID must include a CTA extension block and within that block put a Microsoft-defined Vendor Specific Data Block (VSDB). The structure of EDIDs is described in the "VESA Enhanced Extended Display Identification Data Standard" ([E-EDID](https://vesa.org/vesa-standards/standards-summaries/)), see version 1.4, release A, revision 2 with section 2.2 describing extension blocks.  The CTA extension block is defined in the CTA's 861 series documents "A DTV Profile for Uncompressed High-Speed Digital Interfaces".  VSDBs are described in section 7.5.4 in the latest (at time of writing) published version, [CTA-861-G](https://standards.cta.tech/kwspub/published_docs/CTA-861-G-Preview.pdf) including the order of VSDB relative to other data blocks.
 
 The VSDB structure must have the format and values that are outlined in the following table.
 
 ![VSDB Specification](images/specialized-displays-vsdb.png)
 
-### Vendor Specific Tag Code [3 bits]
+### Vendor specific tag code [3 bits]
 
 This field must be set to `0x3`.
 
@@ -67,7 +67,7 @@ The version number associated with the contents of the Microsoft Display Vendor-
 | HMD (VR/AR) display devices that will be used by third-party compositors (other than the Windows Mixed Reality experience) | `0x2` | Supported in Windows 10 October 2018 Update and later |
 | Specialized display devices that are not HMDs | `0x3` | Supported in next Windows vNext and later |
 
-### Desktop Usage Flag [1 bit]
+### Desktop usage flag [1 bit]
 
 On version `0x3` and above of this VSDB, this bit indicates whether the display should be part of the desktop.
 
@@ -76,16 +76,16 @@ On version `0x3` and above of this VSDB, this bit indicates whether the display 
 
 In version `0x1` and `0x2` of this VSDB, this value should always be set to `0x0`.
 
-### Third-Party Usage Flag [1 bit]
+### Third-party usage flag [1 bit]
 
 On version `0x3` and above of this VSDB, this bit indicates whether the display should be usable by third-party compositors, or only the Microsoft-provided Windows compositor.
 
 * If the display should be usable by non-Windows software compositors, this should be set to `0x1`.
-* If the display should only be used by the Windows compositor, this should be set to 0x0.
+* If the display should only be used by the Windows compositor, this should be set to `0x0`.
 
 In version `0x1` and `0x2` of this VSDB, this value should always be set to `0x0`.
 
-### Display Product Primary Use Case [5 bits]
+### Display product primary use case [5 bits]
 
 The primary use case of the display device:
 
@@ -103,9 +103,9 @@ The primary use case of the display device:
 * Dedicated video monitor display - `0x13`
 * Accessory display - `0x14`
 
-### ContainerID [16 bytes]
+### Container ID [16 bytes]
 
-The 16-byte Universally Unique Identifier that is unique to each device. This is the identifier that is burned in on the factory floor. 
+The 16-byte Universally Unique Identifier that is unique to each device. This is the identifier that is burned in on the factory floor.
 
 ## Remarks
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 
 
-A *DDInstall*.**Services** section in a network INF file is based on the generic [**INF DDInstall.Services section**](https://msdn.microsoft.com/library/windows/hardware/ff547349).
+A *DDInstall*.**Services** section in a network INF file is based on the generic [**INF DDInstall.Services section**](../install/inf-ddinstall-services-section.md).
 
 A *DDInstall*.**Services** section contains one or more **AddService** directives, each of which references an INF-writer-defined *service-install- section* that specifies how and when the services of particular component drivers are loaded.
 
@@ -28,7 +28,7 @@ A *DDInstall*.**Services** section is required in an INF file that installs a Ne
 
 An **AddService** directive in a *DDInstall*.**Services** section can also reference an *error-log-install-section* that installs an error log for a component. An error log is optional for all network components.
 
-For more information, see [**INF AddService Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326).
+For more information, see [**INF AddService Directive**](../install/inf-addservice-directive.md).
 
 The following is an example of a *DDInstall*.**Services** section, a *service-install-section*, an *error-log-install-section*, and an *add-registry-section* that is referenced by an **AddReg** directive in the *error-log-install-section*:
 
@@ -55,10 +55,4 @@ HKR,,TypesSupported,0x00010001,7
 The *ServiceName* parameter of the **AddService** directive, which in the above example is **a1**(the first **AddService** parameter), must match the component's **Ndi\\Service** value. For more information, see [Adding Service-Related Values to the Ndi Key](adding-service-related-values-to-the-ndi-key.md).
 
  
-
- 
-
-
-
-
 

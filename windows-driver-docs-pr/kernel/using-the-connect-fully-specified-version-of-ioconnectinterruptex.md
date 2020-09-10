@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using the CONNECT\_FULLY\_SPECIFIED Version of IoConnectInterruptEx
 
 
-A driver can use the CONNECT\_FULLY\_SPECIFIED version of [**IoConnectInterruptEx**](https://msdn.microsoft.com/library/windows/hardware/ff548378) to register an [*InterruptService*](https://msdn.microsoft.com/library/windows/hardware/ff547958) routine for a specific interrupt. A driver can use the CONNECT\_FULLY\_SPECIFIED version starting with Windows Vista. By linking to the Iointex.lib library, the driver can use the CONNECT\_FULLY\_SPECIFIED version in Windows 2000, Windows XP, and Windows Server 2003. For more information, see [Using IoConnectInterruptEx Prior to Windows Vista](using-ioconnectinterruptex-prior-to-windows-vista.md).
+A driver can use the CONNECT\_FULLY\_SPECIFIED version of [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex) to register an [*InterruptService*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kservice_routine) routine for a specific interrupt. A driver can use the CONNECT\_FULLY\_SPECIFIED version starting with Windows Vista. By linking to the Iointex.lib library, the driver can use the CONNECT\_FULLY\_SPECIFIED version in Windows 2000, Windows XP, and Windows Server 2003. For more information, see [Using IoConnectInterruptEx Prior to Windows Vista](using-ioconnectinterruptex-prior-to-windows-vista.md).
 
 The driver specifies a value of CONNECT\_FULLY\_SPECIFIED for *Parameters***-&gt;Version** and uses the members of *Parameters***-&gt;FullySpecified** to specify the other parameters of the operation:
 
@@ -22,7 +22,7 @@ The driver specifies a value of CONNECT\_FULLY\_SPECIFIED for *Parameters***-&gt
 
 -   Drivers can optionally specify a spin lock in *Parameters***-&gt;FullySpecified.SpinLock** for the system to use when synchronizing with the ISR. Most drivers can just specify **NULL** to enable the system to allocate a spin lock on behalf of the driver. For more information about synchronizing with an ISR, see [Synchronizing Access to Device Data](synchronizing-access-to-device-data.md).
 
-The driver must specify the key properties of the interrupt in other members of *Parameters***-&gt;FullySpecified**. The system provides the necessary information in the array of [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff541977) structures when it sends the [**IRP\_MN\_START\_DEVICE**](https://msdn.microsoft.com/library/windows/hardware/ff551749) IRP to the driver.
+The driver must specify the key properties of the interrupt in other members of *Parameters***-&gt;FullySpecified**. The system provides the necessary information in the array of [**CM\_PARTIAL\_RESOURCE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor) structures when it sends the [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) IRP to the driver.
 
 The system provides for each interrupt a **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** structure with **Type** member equal to **CmResourceTypeInterrupt**. For a message-signaled interrupt, the CM\_RESOURCE\_INTERRUPT\_MESSAGE bit of the **Flags** member is set; otherwise, it is cleared.
 
@@ -59,8 +59,8 @@ The **u.Interrupt** member of **CM\_PARTIAL\_RESOURCE\_DESCRIPTOR** contains the
 </tr>
 <tr class="even">
 <td><p><strong>InterruptMode</strong></p></td>
-<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
-<td><p><strong>Flags</strong> &amp; CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
+<td><p><strong>Flags</strong> & CM_RESOURCE_INTERRUPT_LATCHED</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ProcessorEnableMask</strong></p></td>
@@ -79,11 +79,11 @@ The following code example demonstrates how to register an *InterruptService* ro
 ```cpp
 IO_CONNECT_INTERRUPT_PARAMETERS params;
 
-// deviceExtension is a pointer to the driver&#39;s device extension. 
+// deviceExtension is a pointer to the driver's device extension. 
 //     deviceExtension->IntObj is a PKINTERRUPT.
-// deviceInterruptService is a pointer to the driver&#39;s InterruptService routine.
+// deviceInterruptService is a pointer to the driver's InterruptService routine.
 // IntResource is a CM_PARTIAL_RESOURCE_DESCRIPTOR structure of either type CmResourceTypeInterrupt or CmResourceTypeMessageInterrupt.
-// PhysicalDeviceObject is a pointer to the device&#39;s PDO. 
+// PhysicalDeviceObject is a pointer to the device's PDO. 
 // ServiceContext is a pointer to driver-specified context for the ISR.
 
 RtlZeroMemory( &params, sizeof(IO_CONNECT_INTERRUPT_PARAMETERS) );
@@ -122,9 +122,4 @@ if (!NT_SUCCESS(status)) {
 ```
 
  
-
- 
-
-
-
 

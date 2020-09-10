@@ -21,13 +21,7 @@ ms.localizationpriority: medium
 
 If your framework-based driver accesses WDM interfaces, you must be aware of the following restrictions:
 
--   Framework-based drivers must not use the **Tail.Overlay.DriverContext** member of the [**IRP**](https://msdn.microsoft.com/library/windows/hardware/ff550694) structure, because the framework uses this member.
+-   Framework-based drivers must not use the **Tail.Overlay.DriverContext** member of the [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp) structure, because the framework uses this member.
 
  
-
- 
-
-
-
-
 

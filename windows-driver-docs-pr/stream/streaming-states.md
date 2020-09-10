@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 # Streaming States
 
 
-Each stream provided by the minidriver exists in one of four states: KSSTATE\_STOP, KSSTATE\_ACQUIRE, KSSTATE\_PAUSE, or KSSTATE\_RUN. Upon initialization, the stream is, by default, in the **KSSTATE\_STOP** state. Transitions to the other states are made when the Stream class interface sends an [**SRB\_SET\_STREAM\_STATE**](https://msdn.microsoft.com/library/windows/hardware/ff568210) request to the minidriver. The following table identifies and describes the four stream states.
+Each stream provided by the minidriver exists in one of four states: KSSTATE\_STOP, KSSTATE\_ACQUIRE, KSSTATE\_PAUSE, or KSSTATE\_RUN. Upon initialization, the stream is, by default, in the **KSSTATE\_STOP** state. Transitions to the other states are made when the Stream class interface sends an [**SRB\_SET\_STREAM\_STATE**](./srb-set-stream-state.md) request to the minidriver. The following table identifies and describes the four stream states.
 
 <table>
 <colgroup>
@@ -34,7 +34,7 @@ Each stream provided by the minidriver exists in one of four states: KSSTATE\_ST
 <tbody>
 <tr class="odd">
 <td><p>KSSTATE_STOP</p></td>
-<td><p>When the stream state is stopped, the minidriver uses the absolute minimum of resources, and there are no outstanding data SRBs in the minidriver&#39;s queue.</p></td>
+<td><p>When the stream state is stopped, the minidriver uses the absolute minimum of resources, and there are no outstanding data SRBs in the minidriver's queue.</p></td>
 </tr>
 <tr class="even">
 <td><p>KSSTATE_ACQUIRE</p></td>
@@ -54,9 +54,4 @@ Each stream provided by the minidriver exists in one of four states: KSSTATE\_ST
  
 
  
-
- 
-
-
-
 

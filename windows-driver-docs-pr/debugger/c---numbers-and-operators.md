@@ -113,7 +113,7 @@ You can use the following operators. The operators in each cell take precedence 
 <p><strong>!</strong> <em>Value</em></p>
 <p><em>Value</em></p>
 <p><strong>+</strong> <em>Value</em></p>
-<p><strong>&amp;</strong> <em>LValue</em></p>
+<p><strong>&</strong> <em>LValue</em></p>
 <p><strong><em></strong> <em>Value</em></p></td>
 <td align="left"><p>Typecast (always performed)</p>
 <p>Size of expression</p>
@@ -170,7 +170,7 @@ You can use the following operators. The operators in each cell take precedence 
 <p>Not equal (comparison)</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><em>Value</em> <strong>&amp;</strong> <em>Value</em></p></td>
+<td align="left"><p><em>Value</em> <strong>&</strong> <em>Value</em></p></td>
 <td align="left"><p>Bitwise AND</p></td>
 </tr>
 <tr class="even">
@@ -182,7 +182,7 @@ You can use the following operators. The operators in each cell take precedence 
 <td align="left"><p>Bitwise OR</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><em>Value</em> <strong>&amp;&amp;</strong> <em>Value</em></p></td>
+<td align="left"><p><em>Value</em> <strong>&&</strong> <em>Value</em></p></td>
 <td align="left"><p>Logical AND</p></td>
 </tr>
 <tr class="odd">
@@ -190,15 +190,16 @@ You can use the following operators. The operators in each cell take precedence 
 <td align="left"><p>Logical OR</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><em>LValue</em> <strong>=</strong><em>Value</em></p>
-<p><em>LValue</em> <strong></em>=</strong> <em>Value</em></p>
+<td align="left">
+<p><em>LValue</em> <strong>=</strong> <em>Value</em></p>
+<p><em>LValue</em> <strong>*=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>/=</strong> <em>Value</em></p>
-<p><em>LValue</em> <strong>%=</strong><em>Value</em></p>
-<p><em>LValue</em> <strong>+=</strong><em>Value</em></p>
+<p><em>LValue</em> <strong>%=</strong> <em>Value</em></p>
+<p><em>LValue</em> <strong>+=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>-=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>&lt;&lt;=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>&gt;&gt;=</strong> <em>Value</em></p>
-<p><em>LValue</em> <strong>&amp;=</strong> <em>Value</em></p>
+<p><em>LValue</em> <strong>&=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>|=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>^=</strong> <em>Value</em></p></td>
 <td align="left"><p>Assign</p>

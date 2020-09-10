@@ -11,7 +11,7 @@ ms.date: 10/17/2018
 
 GPIO test automation uses the MITT platform.
 
-To get started, see [GPIO tests in MITT](https://msdn.microsoft.com/library/windows/hardware/dn919780). Download the installer, unpack its contents, and read the **ReadMe** file for a general overview of the tool.
+To get started, see [GPIO tests in MITT](../spb/gpio-tests-in-mitt.md). Download the installer, unpack its contents, and read the **ReadMe** file for a general overview of the tool.
 
 To connect the tool to the system under test, the GPIO button and indicator pin-outs are required. After the board is set up and its related package is installed, you can use it in either of the following ways:
 
@@ -28,9 +28,4 @@ The MITT platform can easily accommodate customized input patterns. See the MITT
  
 
  
-
- 
-
-
-
 

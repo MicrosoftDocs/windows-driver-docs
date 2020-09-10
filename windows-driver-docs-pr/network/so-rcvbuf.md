@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The SO\_RCVBUF socket option determines the size of a socket's receive buffer that is used by the underlying transport. This socket option applies only to listening sockets, datagram sockets, and connection-oriented sockets.
 
-To set the value of this socket option, a WSK application calls the [**WskControlSocket**](https://msdn.microsoft.com/library/windows/hardware/ff571127) function with the following parameters.
+To set the value of this socket option, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -45,7 +45,7 @@ To set the value of this socket option, a WSK application calls the [**WskContro
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a ULONG-typed variable that contains the new size of the socket&#39;s receive buffer</p></td>
+<td><p>A pointer to a ULONG-typed variable that contains the new size of the socket's receive buffer</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -102,7 +102,7 @@ To retrieve the value of the SO\_RCVBUF socket option, a WSK application calls t
 </tr>
 <tr class="odd">
 <td><p><em>OutputBuffer</em></p></td>
-<td><p>A pointer to a ULONG-typed variable that receives the current size of the socket&#39;s receive buffer</p></td>
+<td><p>A pointer to a ULONG-typed variable that receives the current size of the socket's receive buffer</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSizeReturned</em></p></td>
@@ -139,9 +139,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

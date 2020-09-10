@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Using the INF AddProperty Directive and the INF DelProperty Directive
 
 
-In Windows Vista and later versions of Windows, you can use [**INF AddProperty directives**](inf-addproperty-directive.md) and [**INF DelProperty directives**](inf-delproperty-directive.md) to set and delete properties for device instances, [device setup classes](device-setup-classes.md), [device interface classes](device-interface-classes.md), and device interfaces. This includes [system-defined device properties](system-defined-device-properties2.md) and [custom device properties](creating-custom-device-properties.md). However, you should use the following guidelines when you use **AddProperty** and **DelProperty** directives instead of [**INF AddReg directives**](inf-addreg-directive.md) and [**INF DelReg directives**](inf-delreg-directive.md) to set and delete device properties:
+In Windows Vista and later versions of Windows, you can use [**INF AddProperty directives**](inf-addproperty-directive.md) and [**INF DelProperty directives**](inf-delproperty-directive.md) to set and delete properties for device instances, [device setup classes](./overview-of-device-setup-classes.md), [device interface classes](./overview-of-device-interface-classes.md), and device interfaces. This includes [system-defined device properties](system-defined-device-properties2.md) and [custom device properties](creating-custom-device-properties.md). However, you should use the following guidelines when you use **AddProperty** and **DelProperty** directives instead of [**INF AddReg directives**](inf-addreg-directive.md) and [**INF DelReg directives**](inf-delreg-directive.md) to set and delete device properties:
 
 -   For device properties that were introduced on Windows Vista and later versions of Windows, you should use **AddProperty** and **DelProperty** directives to set and delete device properties.
 
@@ -39,10 +39,10 @@ Each line in an add-property-section specifies one property. The following shows
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
-The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_DrvPkg_VendorWebSite**](https://msdn.microsoft.com/library/windows/hardware/ff543527) property.
+The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](./devpkey-drvpkg-model.md) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_DrvPkg_VendorWebSite**](./devpkey-drvpkg-vendorwebsite.md) property.
 
 <a href="" id="property-category-guid"></a>*property-category-guid*  
-The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
+The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](./devpkey-device-friendlyname.md) property. The GUID value can also specify a custom device category.
 
 <a href="" id="property-pid"></a>*property-pid*  
 The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY_Device_FriendlyName property is 14.
@@ -85,16 +85,16 @@ Each line in a *del-property-section* specifies one property. The following show
 The entry values supply the following:
 
 <a href="" id="property-name"></a>*property-name*  
-The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](https://msdn.microsoft.com/library/windows/hardware/ff543523) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property.
+The name that identifies a DEVPKEY_DrvPkg_*Xxx* property. For example, **DeviceModel**, which represents the [**DEVPKEY_DrvPkg_Model**](./devpkey-drvpkg-model.md) property, or **DeviceVendorWebSite**, which represents the [**DEVPKEY_Device_FriendlyName**](./devpkey-device-friendlyname.md) property.
 
 <a href="" id="property-category-guid"></a>*property-category-guid*  
-The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](https://msdn.microsoft.com/library/windows/hardware/ff542502) property. The GUID value can also specify a custom device category.
+The GUID value of the property category to which the property belongs. For example, the system-defined [**DEVPKEY_Device_FriendlyName**](./devpkey-device-friendlyname.md) property. The GUID value can also specify a custom device category.
 
 <a href="" id="property-pid"></a>*property-pid*  
 The property identifier that identifies a property within a property category. For example, the value of the property identifier for the DEVPKEY_Device_FriendlyName property is 14.
 
 <a href="" id="flags"></a>*Flags*  
-An optional flag that is valid for use only with a property whose data type is [**DEVPROP_TYPE_STRING_LIST**](https://msdn.microsoft.com/library/windows/hardware/ff543614). If the flag is set, the delete operation deletes the string that is specified by *value* from the property string list.
+An optional flag that is valid for use only with a property whose data type is [**DEVPROP_TYPE_STRING_LIST**](./devprop-type-string-list.md). If the flag is set, the delete operation deletes the string that is specified by *value* from the property string list.
 
 <a href="" id="value"></a>*value*  
 The string to delete from a property string list.
@@ -110,10 +110,4 @@ DeviceModel
 ```
 
  
-
- 
-
-
-
-
 

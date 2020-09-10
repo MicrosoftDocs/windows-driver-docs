@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 To be used for release signing, a Software Publisher Certificate (SPC), and its private and public keys, must be stored in a Personal Information Exchange (.*pfx*) file. However, some certificate authorities (CAs) use different file formats to store this data. For example, some CAs store the certificate's private key in a Private Key (.*pvk*) file and store the certificate and public key in a *.spc* or *.cer* file.
 
-If the CA issued an *.spc* and its keys in non-*.pfx* files, you must convert and store the files in a *.pfx* file before they can be used for release-signing. The [**Pvk2Pfx**](https://msdn.microsoft.com/library/windows/hardware/ff550672) tool is used to perform this conversion.
+If the CA issued an *.spc* and its keys in non-*.pfx* files, you must convert and store the files in a *.pfx* file before they can be used for release-signing. The [**Pvk2Pfx**](../devtest/pvk2pfx.md) tool is used to perform this conversion.
 
 The following command-line example converts a *.pvk* file that is named *abc.pvk* and a *.spc* that is named *abc.spc* into a *.pfx* file that is named *abc.pfx*:
 
@@ -36,10 +36,4 @@ Where:
 For more information about SPCs and their management, see [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
  
-
- 
-
-
-
-
 

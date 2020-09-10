@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Authoring a firmware update package
 
 
-Each firmware update package includes a single binary file that contains the entire firmware payload (for example firmware.bin) and a security catalog that Windows uses to validate firmware.bin. For more information about security catalogs and drivers, see [Catalog Files and Digital Signatures](https://msdn.microsoft.com/library/windows/hardware/ff537872) and [Creating a Catalog File for a PnP Driver Package](https://msdn.microsoft.com/library/windows/hardware/ff540161).
+Each firmware update package includes a single binary file that contains the entire firmware payload (for example firmware.bin) and a security catalog that Windows uses to validate firmware.bin. For more information about security catalogs and drivers, see [Catalog Files and Digital Signatures](../install/catalog-files.md) and [Creating a Catalog File for a PnP Driver Package](../install/creating-a-catalog-file-for-a-pnp-driver-package.md).
 
 Firmware update packages must be capable of updating one or more of the following types of firmware:
 
@@ -63,7 +63,4 @@ It is recommended that each firmware update package target a single firmware res
 [Populating the ESRT table](populating-the-esrt-table.md)  
 [Customizing firmware for different geographic regions](customizing-firmware-for-different-geographic-regions.md)  
 [Certifying and signing the update package](certifying-and-signing-the-update-package.md)  
-[Installing the update](installing-the-update.md)  
-
-
-
+[Installing the update](installing-the-update.md)

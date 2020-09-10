@@ -16,9 +16,9 @@ ms.date: 10/17/2018
 # installAllOrNone XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
-The **installAllOrNone** XML element is an empty element that sets the **installAllOrNone** flag to ON, which configures DPInst to install drivers in a [driver package](https://msdn.microsoft.com/library/windows/hardware/ff544840) only if all of the driver packages in the installation package can be installed or if all of driver packages in the driver package group can be installed.
+The **installAllOrNone** XML element is an empty element that sets the **installAllOrNone** flag to ON, which configures DPInst to install drivers in a [driver package](./driver-packages.md) only if all of the driver packages in the installation package can be installed or if all of driver packages in the driver package group can be installed.
 
 ### **Element Tag**
 
@@ -61,7 +61,7 @@ None
 
 ### <a href="" id="comments"></a>Remarks
 
-By default, the **installAllOrNone** flag is set to OFF. To set the **installAllOrNone** flag to ON for all of the [driver packages](https://msdn.microsoft.com/library/windows/hardware/ff544840), including those in driver package groups, include an **installAllOrNone** element as a child element of a **dpinst** XML element, or use the **/a** command-line switch. To set the **installAllOrNone** flag to ON only for a specific driver package group, include an **installAllOrNone** element as child element of the corresponding **group** XML element.
+By default, the **installAllOrNone** flag is set to OFF. To set the **installAllOrNone** flag to ON for all of the [driver packages](./driver-packages.md), including those in driver package groups, include an **installAllOrNone** element as a child element of a **dpinst** XML element, or use the **/a** command-line switch. To set the **installAllOrNone** flag to ON only for a specific driver package group, include an **installAllOrNone** element as child element of the corresponding **group** XML element.
 
 The following code example demonstrates an **installAllOrNone** element that is a child element of a **dpinst** element.
 
@@ -95,11 +95,4 @@ The following code example demonstrates an **installAllOrNone** element that is 
 [**group**](group-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

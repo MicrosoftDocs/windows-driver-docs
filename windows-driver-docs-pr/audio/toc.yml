@@ -1,21 +1,22 @@
 - name: "Audio Drivers Design Guide"
   href: index.md
-  items: 
-  - name: "Windows 10: What's New for Audio"
-    href: windows-threshold--what-s-new-for-audio.md
-  - name: "Windows Audio Architecture"
-    href: windows-audio-architecture.md
-  - name: "Roadmap for Developing WDM Audio Drivers"
-    href: roadmap-for-developing-wdm-audio-drivers.md
-  - name: "Custom Audio Driver Type Decision Tree"
-    href: custom-audio-driver-type-decision-tree.md
+- name: "Windows 10: What's New for Audio"
+  href: windows-threshold--what-s-new-for-audio.md
+- name: "Windows Audio Architecture"
+  href: windows-audio-architecture.md
 - name: "WDM Audio Drivers Overview"
-  href: getting-started-with-wdm-audio-drivers.md
+# Auto-expanded node
   items: 
+  - name: "WDM Audio Drivers Overview"
+    href: getting-started-with-wdm-audio-drivers.md
   - name: "Universal Windows Drivers for Audio"
     href: audio-universal-drivers.md
   - name: "Universal Audio Architecture"
     href: universal-audio-architecture.md
+  - name: "Roadmap for Developing WDM Audio Drivers"
+    href: roadmap-for-developing-wdm-audio-drivers.md
+  - name: "Custom Audio Driver Type Decision Tree"
+    href: custom-audio-driver-type-decision-tree.md
   - name: "Audio Signal Processing Modes"
     href: audio-signal-processing-modes.md
   - name: "Custom Audio Drivers"
@@ -25,11 +26,15 @@
   - name: "Specifying Pin Data Ranges"
     href: specifying-pin-data-ranges.md
 - name: "WDM Audio Architecture: Basic Concepts"
-  href: wdm-audio-architecture--basic-concepts.md
+# Auto-expanded node
   items: 
+  - name: "WDM Audio Architecture: Basic Concepts"
+    href: wdm-audio-architecture--basic-concepts.md
   - name: "Introduction to WDM Audio Drivers"
-    href: introduction-to-wdm-audio-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Introduction to WDM Audio Drivers"
+      href: introduction-to-wdm-audio-drivers.md
     - name: "Basic Functions of a WDM Audio Driver"
       href: basic-functions-of-a-wdm-audio-driver.md
     - name: "Vendor Audio Driver Options"
@@ -41,8 +46,10 @@
     - name: "KsStudio Utility"
       href: ksstudio-utility.md
   - name: "Audio Filters, Pins, and Nodes"
-    href: audio-filters--pins--and-nodes.md
+# Auto-expanded node
     items: 
+    - name: "Audio Filters, Pins, and Nodes"
+      href: audio-filters--pins--and-nodes.md
     - name: "Audio Filters"
       href: audio-filters.md
     - name: "Filter Factories"
@@ -60,8 +67,10 @@
     - name: "Topology Filters"
       href: topology-filters.md
   - name: "Audio Endpoints, Properties and Events"
-    href: audio-endpoints--properties-and-events.md
+# Auto-expanded node
     items: 
+    - name: "Audio Endpoints, Properties and Events"
+      href: audio-endpoints--properties-and-events.md
     - name: "Audio Property Requests"
       href: audio-property-requests.md
     - name: "Filter, Pin, and Node Properties"
@@ -87,8 +96,10 @@
     - name: "Jack Description Property"
       href: jack-description-property.md
     - name: "Microphone Array Geometry Property"
-      href: microphone-array-geometry-property.md
+# Auto-expanded node
       items: 
+      - name: "Microphone Array Geometry Property"
+        href: microphone-array-geometry-property.md
       - name: "Microphone Array Geometry Descriptor Format"
         href: microphone-array-geometry-descriptor-format.md
       - name: "Modified INF for MSVAD Micarray"
@@ -96,8 +107,10 @@
     - name: "Hardware Events"
       href: hardware-events.md
   - name: "Audio Data Formats and Data Ranges"
-    href: audio-data-formats-and-data-ranges.md
+# Auto-expanded node
     items: 
+    - name: "Audio Data Formats and Data Ranges"
+      href: audio-data-formats-and-data-ranges.md
     - name: "Audio Data Formats"
       href: audio-data-formats.md
     - name: "Audio Data Ranges"
@@ -105,8 +118,10 @@
     - name: "Extensible Wave-Format Descriptors"
       href: extensible-wave-format-descriptors.md
     - name: "Multichannel Formats for Home-Theater Systems"
-      href: multichannel-formats-for-home-theater-systems.md
+# Auto-expanded node
       items: 
+      - name: "Multichannel Formats for Home-Theater Systems"
+        href: multichannel-formats-for-home-theater-systems.md
       - name: "Channel Mask"
         href: channel-mask.md
       - name: "Mapping Stream Formats to Speaker Configurations"
@@ -114,8 +129,10 @@
       - name: "Header File Changes"
         href: header-file-changes.md
     - name: "Examples of Audio Data Formats and Data Ranges"
-      href: examples-of-audio-data-formats-and-data-ranges.md
+# Auto-expanded node
       items: 
+      - name: "Examples of Audio Data Formats and Data Ranges"
+        href: examples-of-audio-data-formats-and-data-ranges.md
       - name: "Analog Audio Stream Data Range"
         href: analog-audio-stream-data-range.md
       - name: "DirectMusic Stream Data Format"
@@ -143,8 +160,10 @@
       - name: "PCM High Bitdepth Stream Data Range"
         href: pcm-high-bitdepth-stream-data-range.md
   - name: "Digital Rights Management"
-    href: digital-rights-management.md
+# Auto-expanded node
     items: 
+    - name: "Digital Rights Management"
+      href: digital-rights-management.md
     - name: "DRM Overview"
       href: drm-overview.md
     - name: "Content IDs and Content Rights"
@@ -158,11 +177,15 @@
     - name: "DRM Functions and Interfaces"
       href: drm-functions-and-interfaces.md
 - name: "WDM Audio Architecture: Advanced Topics"
-  href: wdm-audio-architecture--advanced-topics.md
+# Auto-expanded node
   items: 
+  - name: "WDM Audio Architecture: Advanced Topics"
+    href: wdm-audio-architecture--advanced-topics.md
   - name: "Data-Intersection Handlers"
-    href: data-intersection-handlers.md
+# Auto-expanded node
     items: 
+    - name: "Data-Intersection Handlers"
+      href: data-intersection-handlers.md
     - name: "Data Intersection"
       href: data-intersection.md
     - name: "Default Data-Intersection Handlers"
@@ -180,8 +203,10 @@
     - name: "Data-Range Properties"
       href: data-range-properties.md
   - name: "Dynamic Audio Subdevices"
-    href: dynamic-audio-subdevices.md
+# Auto-expanded node
     items: 
+    - name: "Dynamic Audio Subdevices"
+      href: dynamic-audio-subdevices.md
     - name: "Managing Dynamic Topologies"
       href: managing-dynamic-topologies.md
     - name: "Driver Support for Dynamic Subdevices"
@@ -189,15 +214,19 @@
     - name: "Jack Descriptions for Dynamic Audio Subdevices"
       href: jack-descriptions-for-dynamic-audio-subdevices.md
   - name: "Multifunction Audio Devices"
-    href: multifunction-audio-devices.md
+# Auto-expanded node
     items: 
+    - name: "Multifunction Audio Devices"
+      href: multifunction-audio-devices.md
     - name: "Multiple Audio Subdevices"
       href: multiple-audio-subdevices.md
     - name: "Multifunction Device Limits"
       href: multifunction-device-limits.md
   - name: "Supporting Non-PCM Wave Formats"
-    href: supporting-non-pcm-wave-formats.md
+# Auto-expanded node
     items: 
+    - name: "Supporting Non-PCM Wave Formats"
+      href: supporting-non-pcm-wave-formats.md
     - name: "Background of Non-PCM Support"
       href: background-of-non-pcm-support.md
     - name: "Requirements for a Non-PCM Pin Factory"
@@ -221,11 +250,15 @@
     - name: "USB Audio Support for Non-PCM Formats"
       href: usb-audio-support-for-non-pcm-formats.md
   - name: "High Definition Audio DDI"
-    href: high-definition-audio-ddi.md
+# Auto-expanded node
     items: 
+    - name: "High Definition Audio DDI"
+      href: high-definition-audio-ddi.md
     - name: "HD Audio and UAA"
-      href: hd-audio-and-uaa.md
+# Auto-expanded node
       items: 
+      - name: "HD Audio and UAA"
+        href: hd-audio-and-uaa.md
       - name: "Intel's HD Audio Architecture"
         href: intel-s-hd-audio-architecture.md
       - name: "UAA Extensions to the HD Audio Architecture"
@@ -236,18 +269,24 @@
         href: uaa-class-drivers.md
       - name: "Communicating Verbs with the HD Audio Codec"
         href: communicating-verbs-with-the-hd-audio-codec.md
-    - name: "Programming Guidelines"
+    - name: "HD Audio DDI Programming Guidelines"
       href: programming-guidelines.md
       items: 
+      - name: "Programming Guidelines"
+        href: programming-guidelines.md
       - name: "Differences Between the HD Audio DDI Versions"
         href: differences-between-the-hd-audio-ddi-versions.md
+      - name: "Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations"
+        href: managing-memory-buffers-rebalance.md
       - name: "Synchronous and Asynchronous Codec Commands"
         href: synchronous-and-asynchronous-codec-commands.md
       - name: "Wall Clock and Link Position Registers"
         href: wall-clock-and-link-position-registers.md
       - name: "Hardware Resource Management"
-        href: hardware-resource-management.md
+# Auto-expanded node
         items: 
+        - name: "Hardware Resource Management"
+          href: hardware-resource-management.md
         - name: "Allocating DMA Engines"
           href: allocating-dma-engines.md
         - name: "Allocating Link Bandwidth"
@@ -261,8 +300,10 @@
       - name: "Data Copying and Caching Policy"
         href: data-copying-and-caching-policy.md
       - name: "Querying for an HD Audio DDI"
-        href: querying-for-an-hd-audio-ddi.md
+# Auto-expanded node
         items: 
+        - name: "Querying for an HD Audio DDI"
+          href: querying-for-an-hd-audio-ddi.md
         - name: "Obtaining an HDAUDIO_BUS_INTERFACE DDI Object"
           href: obtaining-an-hdaudio-bus-interface-ddi-object.md
         - name: "Obtaining an HDAUDIO_BUS_INTERFACE_V2 DDI Object"
@@ -270,15 +311,21 @@
         - name: "Obtaining an HDAUDIO_BUS_INTERFACE_BDL DDI Object"
           href: obtaining-an-hdaudio-bus-interface-bdl-ddi-object.md
 - name: "WDM Audio Support in Different Versions of Windows"
-  href: wdm-audio-support-in-different-versions-of-windows.md
+# Auto-expanded node
   items: 
+  - name: "WDM Audio Support in Different Versions of Windows"
+    href: wdm-audio-support-in-different-versions-of-windows.md
   - name: "Implementing Audio Module Communication"
-    href: implementing-audio-module-communication.md
+# Auto-expanded node
     items: 
+    - name: "Implementing Audio Module Communication"
+      href: implementing-audio-module-communication.md
     - name: "Configure and query audio device modules"
       href: configure-and-query-audiodevicemodules.md
   - name: "Low Latency Audio"
     href: low-latency-audio.md
+  - name: "Multiple Voice Assistant"
+    href: voice-activation-mva.md
   - name: "Voice Activation"
     href: voice-activation.md
   - name: "USB Audio 2.0 Drivers"
@@ -286,13 +333,17 @@
   - name: "Audio Hardware Resource Management"
     href: audio-hardware-resource-management.md
   - name: "Bluetooth Bypass Guidelines for Audio Drivers"
-    href: bluetooth-bypass-guidelines-for-audio-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Bluetooth Bypass Guidelines for Audio Drivers"
+      href: bluetooth-bypass-guidelines-for-audio-drivers.md
     - name: "Windows Bluetooth host controller interface (HCI) Architectural Overview"
       href: btth-architectural-overview.md
     - name: "Theory of Operation"
-      href: theory-of-operation.md
+# Auto-expanded node
       items: 
+      - name: "Theory of Operation"
+        href: theory-of-operation.md
       - name: "HFP Device Startup"
         href: startup.md
       - name: "HFP Device Connection"
@@ -308,8 +359,10 @@
     - name: "Bluetooth Bypass DDI Reference"
       href: bluetooth-bypass-ddi-reference.md
     - name: "Related Design Guidelines"
-      href: related-design-guidelines.md
+# Auto-expanded node
       items: 
+      - name: "Related Design Guidelines"
+        href: related-design-guidelines.md
       - name: "Setting Properties and Registry Values"
         href: setting-properties-and-registry-values.md
       - name: "Setting Friendly Names, Registering APOs"
@@ -317,25 +370,33 @@
       - name: "Obtaining Bluetooth Address of HF Device"
         href: obtaining-bluetooth-address-of-hf-device.md
   - name: "Hardware-Offloaded Audio Processing"
-    href: hardware-offloaded-audio-processing.md
+# Auto-expanded node
     items: 
+    - name: "Hardware-Offloaded Audio Processing"
+      href: hardware-offloaded-audio-processing.md
     - name: "Architectural Overview"
       href: architectural-overview.md
     - name: "Driver Implementation for Offloaded Audio"
-      href: driver-implementation-for-offloaded-audio.md
+# Auto-expanded node
       items: 
+      - name: "Driver Implementation for Offloaded Audio"
+        href: driver-implementation-for-offloaded-audio.md
       - name: "Implementation Overview"
         href: implementation-overview.md
       - name: "Driver Implementation Details"
-        href: driver-implementation-details.md
+# Auto-expanded node
         items: 
+        - name: "Driver Implementation Details"
+          href: driver-implementation-details.md
         - name: "Helper Interfaces for Offloaded Audio Processing"
           href: helper-interfaces-for-offloaded-audio-processing.md
         - name: "Glitch Reporting for Offloaded Audio"
           href: glitch-reporting-for-offloaded-audio.md
     - name: "PortCls Power Management Updates for SoC"
-      href: portcls-power-management-updates-for-soc.md
+# Auto-expanded node
       items: 
+      - name: "PortCls Power Management Updates for SoC"
+        href: portcls-power-management-updates-for-soc.md
       - name: "PortCls Registry Power Settings"
         href: portcls-registry-power-settings.md
       - name: "Immediate Idle Timeout Opt-in"
@@ -345,18 +406,24 @@
       - name: "PortCls D3 Exit Latency Requirement"
         href: portcls-d3-exit-latency-requirement.md
   - name: "WDM Audio Platform Differences"
-    href: wdm-audio-platform-differences.md
+# Auto-expanded node
     items: 
+    - name: "WDM Audio Platform Differences"
+      href: wdm-audio-platform-differences.md
     - name: "Windows Vista Support for WDM Audio"
       href: windows-vista-support-for-wdm-audio.md
   - name: "WDM Audio Components"
-    href: wdm-audio-components.md
+# Auto-expanded node
     items: 
+    - name: "WDM Audio Components"
+      href: wdm-audio-components.md
     - name: "User-Mode WDM Audio Components"
       href: user-mode-wdm-audio-components.md
     - name: "Kernel-Mode WDM Audio Components"
-      href: kernel-mode-wdm-audio-components.md
+# Auto-expanded node
       items: 
+      - name: "Kernel-Mode WDM Audio Components"
+        href: kernel-mode-wdm-audio-components.md
       - name: "USB Audio Class System Driver (Usbaudio.sys)"
         href: usb-audio-class-system-driver--usbaudio-sys-.md
     - name: "Wave and DirectSound Components"
@@ -366,8 +433,10 @@
     - name: "Virtual Audio Devices"
       href: virtual-audio-devices.md
   - name: "Typical Audio Configurations"
-    href: typical-audio-configurations.md
+# Auto-expanded node
     items: 
+    - name: "Typical Audio Configurations"
+      href: typical-audio-configurations.md
     - name: "Rendering and Capturing Wave Content"
       href: rendering-and-capturing-wave-content.md
     - name: "Rendering and Capturing MIDI Content"
@@ -379,8 +448,10 @@
     - name: "Rendering Wave Content Using DirectSound Software and Hardware Buffers"
       href: rendering-wave-content-using-directsound-software-and-hardware-buffers.md
   - name: "Factors Governing Wave-Output Latency"
-    href: factors-governing-wave-output-latency.md
+# Auto-expanded node
     items: 
+    - name: "Factors Governing Wave-Output Latency"
+      href: factors-governing-wave-output-latency.md
     - name: "WaveCyclic Latency"
       href: wavecyclic-latency.md
     - name: "WavePci Latency"
@@ -394,19 +465,21 @@
   - name: "Dynamic Format Change"
     href: dynamic-format-change.md
 - name: "Windows Audio Processing Objects"
-  href: windows-audio-processing-objects.md
+# Auto-expanded node
   items: 
+  - name: "Windows Audio Processing Objects"
+    href: windows-audio-processing-objects.md
   - name: "Audio Processing Object Architecture"
     href: audio-processing-object-architecture.md
   - name: "Implementing Audio Processing Objects"
     href: implementing-audio-processing-objects.md
-  - name: "Implementing a UI for Configuring APO Effects"
-    href: implementing-a-ui-for-configuring-apo-effects.md
   - name: "Implementing Hardware Offloaded APO Effects"
     href: implementing-hardware-offloaded-apo-effects.md
   - name: "Windows Default APOs"
-    href: windows-default-apos.md
+# Auto-expanded node
     items: 
+    - name: "Windows Default APOs"
+      href: windows-default-apos.md
     - name: "Bass Boost"
       href: bass-boost.md
     - name: "Bass Management"
@@ -428,26 +501,36 @@
     - name: "Virtualized Surround Sound over Headphones"
       href: virtualized-surround-sound-over-headphones.md
 - name: "Audio Miniport Drivers"
-  href: audio-miniport-drivers.md
+# Auto-expanded node
   items: 
+  - name: "Audio Miniport Drivers"
+    href: audio-miniport-drivers.md
   - name: "Introduction to Port Class"
-    href: introduction-to-port-class.md
+# Auto-expanded node
     items: 
+    - name: "Introduction to Port Class"
+      href: introduction-to-port-class.md
     - name: "Implementation of Function-Specific Interfaces"
       href: implementation-of-function-specific-interfaces.md
     - name: "PortCls Support by Operating System"
       href: portcls-support-by-operating-system.md
   - name: "Supporting a Device"
-    href: supporting-a-device.md
+# Auto-expanded node
     items: 
+    - name: "Supporting a Device"
+      href: supporting-a-device.md
     - name: "WaveRT Port Driver"
-      href: wavert-port-driver.md
+# Auto-expanded node
       items: 
+      - name: "WaveRT Port Driver"
+        href: wavert-port-driver.md
       - name: "Introducing the WaveRT Port Driver"
         href: introducing-the-wavert-port-driver.md
       - name: "Understanding the WaveRT Port Driver"
-        href: understanding-the-wavert-port-driver.md
+# Auto-expanded node
         items: 
+        - name: "Understanding the WaveRT Port Driver"
+          href: understanding-the-wavert-port-driver.md
         - name: "Stream Latency During Playback"
           href: stream-latency-during-playback.md
         - name: "Stream Latency During Recording"
@@ -459,8 +542,10 @@
     - name: "DMus Port Driver"
       href: dmus-port-driver.md
   - name: "Adapter Driver Construction"
-    href: adapter-driver-construction.md
+# Auto-expanded node
     items: 
+    - name: "Adapter Driver Construction"
+      href: adapter-driver-construction.md
     - name: "Startup Sequence"
       href: startup-sequence.md
     - name: "Subdevice Creation"
@@ -468,8 +553,10 @@
   - name: "Miniport Driver Types by Operating System"
     href: miniport-driver-types-by-operating-system.md
   - name: "COM in the Kernel"
-    href: com-in-the-kernel.md
+# Auto-expanded node
     items: 
+    - name: "COM in the Kernel"
+      href: com-in-the-kernel.md
     - name: "Function Tables for Miniport Drivers"
       href: function-tables-for-miniport-drivers.md
     - name: "Creating Audio Driver Objects"
@@ -477,11 +564,15 @@
     - name: "Reference-Counting Conventions for COM Objects"
       href: reference-counting-conventions-for-com-objects.md
   - name: "Miniport Interfaces"
-    href: miniport-interfaces.md
+# Auto-expanded node
     items: 
+    - name: "Miniport Interfaces"
+      href: miniport-interfaces.md
     - name: "WaveRT Miniport Driver"
-      href: wavert-miniport-driver.md
+# Auto-expanded node
       items: 
+      - name: "WaveRT Miniport Driver"
+        href: wavert-miniport-driver.md
       - name: "Developing a WaveRT Miniport Driver"
         href: developing-a-wavert-miniport-driver.md
     - name: "Topology Miniport Driver"
@@ -491,15 +582,19 @@
     - name: "DMus Miniport Driver"
       href: dmus-miniport-driver.md
   - name: "Installing a Port Class Audio Adapter"
-    href: installing-a-port-class-audio-adapter.md
+# Auto-expanded node
     items: 
+    - name: "Installing a Port Class Audio Adapter"
+      href: installing-a-port-class-audio-adapter.md
     - name: "Specifying Version Information for an Audio Adapter"
       href: specifying-version-information-for-an-audio-adapter.md
     - name: "Installing Device Interfaces for an Audio Adapter"
       href: installing-device-interfaces-for-an-audio-adapter.md
     - name: "Installing Core System Components for an Audio Adapter"
-      href: installing-core-system-components-for-an-audio-adapter.md
+# Auto-expanded node
       items: 
+      - name: "Installing Core System Components for an Audio Adapter"
+        href: installing-core-system-components-for-an-audio-adapter.md
       - name: "Installing in Windows"
         href: installing-in-windows.md
     - name: "Installing Windows Multimedia System Support for an Audio Adapter"
@@ -513,8 +608,10 @@
     - name: "Adding New Digital Formats to Control Panel"
       href: adding-new-digital-formats-to-control-panel.md
     - name: "Miscellaneous Installation Issues for an Audio Adapter"
-      href: miscellaneous-installation-issues-for-an-audio-adapter.md
+# Auto-expanded node
       items: 
+      - name: "Miscellaneous Installation Issues for an Audio Adapter"
+        href: miscellaneous-installation-issues-for-an-audio-adapter.md
       - name: "Default Audio Volume Settings"
         href: default-audio-volume-settings.md
       - name: "Software Volume Control Support"
@@ -532,8 +629,10 @@
       - name: "Retrieving Device Setup Information"
         href: retrieving-device-setup-information.md
   - name: "Port Driver Helper Objects"
-    href: port-driver-helper-objects.md
+# Auto-expanded node
     items: 
+    - name: "Port Driver Helper Objects"
+      href: port-driver-helper-objects.md
     - name: "DMA Channel Objects"
       href: dma-channel-objects.md
     - name: "Registry Key Objects"
@@ -545,8 +644,10 @@
     - name: "Interrupt Sync Objects"
       href: interrupt-sync-objects.md
   - name: "Power Management for Audio Devices"
-    href: power-management-for-audio-devices.md
+# Auto-expanded node
     items: 
+    - name: "Power Management for Audio Devices"
+      href: power-management-for-audio-devices.md
     - name: "Implementing IAdapterPowerManagement"
       href: implementing-iadapterpowermanagement.md
     - name: "Implementing IPowerNotify"
@@ -554,8 +655,10 @@
     - name: "Audio Device Class Inactivity Timer Implementation"
       href: audio-device-class-inactivity-timer-implementation.md
   - name: "Version Numbers for Audio Drivers"
-    href: version-numbers-for-audio-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Version Numbers for Audio Drivers"
+      href: version-numbers-for-audio-drivers.md
     - name: "Internal and External Version Numbers"
       href: internal-and-external-version-numbers.md
     - name: "INF Driver-Version Entry"
@@ -563,8 +666,10 @@
     - name: "DirectX File Version Numbers"
       href: directx-file-version-numbers.md
   - name: "Other Implementation Issues for Audio Drivers"
-    href: other-implementation-issues-for-audio-drivers.md
+# Auto-expanded node
     items: 
+    - name: "Other Implementation Issues for Audio Drivers"
+      href: other-implementation-issues-for-audio-drivers.md
     - name: "Writing 64-Bit Audio Drivers"
       href: writing-64-bit-audio-drivers.md
     - name: "Accessing PCI Configuration Space"
@@ -572,15 +677,19 @@
     - name: "Implement PnP Rebalance for PortCls Audio Drivers"
       href: implement-pnp-rebalance-for-portcls-audio-drivers.md
 - name: "Legacy Audio Interfaces"
-  href: legacy-audio-interfaces.md
+# Auto-expanded node
   items: 
+  - name: "Legacy Audio Interfaces"
+    href: legacy-audio-interfaces.md
   - name: "WavePci Port Driver"
     href: wavepci-port-driver.md
   - name: "WavePci Miniport Driver"
     href: wavepci-miniport-driver.md
   - name: "Implementation Issues for WavePci Devices"
-    href: implementation-issues-for-wavepci-devices.md
+# Auto-expanded node
     items: 
+    - name: "Implementation Issues for WavePci Devices"
+      href: implementation-issues-for-wavepci-devices.md
     - name: "Hardware Requirements for WavePci Devices"
       href: hardware-requirements-for-wavepci-devices.md
     - name: "Performance Issues for a WavePci Miniport Driver"
@@ -592,11 +701,15 @@
   - name: "WaveCyclic Miniport Driver"
     href: wavecyclic-miniport-driver.md
   - name: "Driver Support for DirectSound"
-    href: driver-support-for-directsound.md
+# Auto-expanded node
     items: 
+    - name: "Driver Support for DirectSound"
+      href: driver-support-for-directsound.md
     - name: "DirectSound Hardware Acceleration in WDM Audio"
-      href: directsound-hardware-acceleration-in-wdm-audio.md
+# Auto-expanded node
       items: 
+      - name: "DirectSound Hardware Acceleration in WDM Audio"
+        href: directsound-hardware-acceleration-in-wdm-audio.md
       - name: "Overview of DirectSound Hardware Acceleration"
         href: overview-of-directsound-hardware-acceleration.md
       - name: "Supporting 2D DirectSound Acceleration in WDM Audio"
@@ -614,8 +727,10 @@
       - name: "Prefetch Offsets"
         href: prefetch-offsets.md
     - name: "DirectSound Speaker-Configuration Settings"
-      href: directsound-speaker-configuration-settings.md
+# Auto-expanded node
       items: 
+      - name: "DirectSound Speaker-Configuration Settings"
+        href: directsound-speaker-configuration-settings.md
       - name: "Translating Speaker-Configuration Requests"
         href: translating-speaker-configuration-requests.md
       - name: "Applying Speaker-Configuration Settings"
@@ -627,23 +742,31 @@
       - name: "DSSPEAKER_DIRECTOUT Speaker Configuration"
         href: dsspeaker-directout-speaker-configuration.md
     - name: "DirectSound Capture Effects"
-      href: directsound-capture-effects.md
+# Auto-expanded node
       items: 
+      - name: "DirectSound Capture Effects"
+        href: directsound-capture-effects.md
       - name: "Exposing Hardware-Accelerated Capture Effects"
         href: exposing-hardware-accelerated-capture-effects.md
       - name: "AEC System Filter"
         href: aec-system-filter.md
   - name: "Driver Support for DirectMusic"
-    href: driver-support-for-directmusic.md
+# Auto-expanded node
     items: 
+    - name: "Driver Support for DirectMusic"
+      href: driver-support-for-directmusic.md
     - name: "DirectMusic DDI Overview"
-      href: directmusic-ddi-overview.md
+# Auto-expanded node
       items: 
+      - name: "DirectMusic DDI Overview"
+        href: directmusic-ddi-overview.md
       - name: "User Mode Versus Kernel Mode"
         href: user-mode-versus-kernel-mode.md
     - name: "Custom Rendering in User Mode"
-      href: custom-rendering-in-user-mode.md
+# Auto-expanded node
       items: 
+      - name: "Custom Rendering in User Mode"
+        href: custom-rendering-in-user-mode.md
       - name: "Synthesizers and Wave Sinks"
         href: synthesizers-and-wave-sinks.md
       - name: "IDirectMusicSynth and IDirectMusicSynthSink"
@@ -651,8 +774,10 @@
       - name: "MIDI to Wave"
         href: midi-to-wave.md
       - name: "Synthesizer Timing"
-        href: synthesizer-timing.md
+# Auto-expanded node
         items: 
+        - name: "Synthesizer Timing"
+          href: synthesizer-timing.md
         - name: "Synthesizer Latency"
           href: synthesizer-latency.md
         - name: "Time-Stamped Events"
@@ -664,18 +789,24 @@
       - name: "Registering Your Synthesizer"
         href: registering-your-synthesizer.md
     - name: "Kernel Mode Hardware Acceleration DDI"
-      href: kernel-mode-hardware-acceleration-ddi.md
+# Auto-expanded node
       items: 
+      - name: "Kernel Mode Hardware Acceleration DDI"
+        href: kernel-mode-hardware-acceleration-ddi.md
       - name: "DirectMusic WDM Kernel Streaming Background"
         href: directmusic-wdm-kernel-streaming-background.md
       - name: "Synthesizer Miniport Driver Overview"
         href: synthesizer-miniport-driver-overview.md
       - name: "DirectMusic Miniport Driver Interface"
-        href: directmusic-miniport-driver-interface.md
+# Auto-expanded node
         items: 
+        - name: "DirectMusic Miniport Driver Interface"
+          href: directmusic-miniport-driver-interface.md
         - name: "MIDI Transport"
-          href: midi-transport.md
+# Auto-expanded node
           items: 
+          - name: "MIDI Transport"
+            href: midi-transport.md
           - name: "IMXF Interfaces"
             href: imxf-interfaces.md
           - name: "Allocator"
@@ -697,11 +828,15 @@
       - name: "Support for DirectMusic Properties"
         href: support-for-directmusic-properties.md
   - name: "Driver Support for Legacy Audio Interfaces"
-    href: driver-support-for-legacy-audio-interfaces.md
+# Auto-expanded node
     items: 
+    - name: "Driver Support for Legacy Audio Interfaces"
+      href: driver-support-for-legacy-audio-interfaces.md
     - name: "Kernel Streaming Topology to Audio Mixer API Translation"
-      href: kernel-streaming-topology-to-audio-mixer-api-translation.md
+# Auto-expanded node
       items: 
+      - name: "Kernel Streaming Topology to Audio Mixer API Translation"
+        href: kernel-streaming-topology-to-audio-mixer-api-translation.md
       - name: "Topology Pins"
         href: topology-pins.md
       - name: "Topology Nodes"
@@ -713,13 +848,17 @@
       - name: "Exposing Filter Topology"
         href: exposing-filter-topology.md
     - name: "WDM Audio Extensions to Legacy Windows Multimedia APIs"
-      href: wdm-audio-extensions-to-legacy-windows-multimedia-apis.md
+# Auto-expanded node
       items: 
+      - name: "WDM Audio Extensions to Legacy Windows Multimedia APIs"
+        href: wdm-audio-extensions-to-legacy-windows-multimedia-apis.md
       - name: "Extended Capabilities from a WDM Audio Driver"
         href: extended-capabilities-from-a-wdm-audio-driver.md
     - name: "System-Intercepted Device Messages"
-      href: system-intercepted-device-messages.md
+# Auto-expanded node
       items: 
+      - name: "System-Intercepted Device Messages"
+        href: system-intercepted-device-messages.md
       - name: "Accessing the Preferred Device ID"
         href: accessing-the-preferred-device-id.md
       - name: "Preferred Voice-Communications Device ID"
@@ -728,14 +867,25 @@
         href: obtaining-a-device-interface-name.md
       - name: "Music Technology GUIDs"
         href: music-technology-guids.md
-- name: "Audio Devices DDI Reference Overview"
-  href: portal-audio-ref.md
+- name: "Audio Devices Troubleshooting"
+# Auto-expanded node
   items: 
+  - name: "Audio Devices Troubleshooting Overview"
+    href: audio-devices-troubleshooting.md
+  - name: "USB Audio Device Not Playing"
+    href: usb-audio-not-playing.md
+- name: "Audio Devices DDI Reference Overview"
+# Auto-expanded node
+  items: 
+  - name: "Audio Devices DDI Reference Overview"
+    href: portal-audio-ref.md
   - name: "Audio Drivers Enumerations"
     href: audio-drivers-enumerations.md
   - name: "Audio Drivers Property Sets"
-    href: audio-drivers-property-sets.md
+# Auto-expanded node
     items: 
+    - name: "Audio Drivers Property Sets"
+      href: audio-drivers-property-sets.md
     - name: "KSPROPSETID_AC3"
       href: kspropsetid-ac3.md
     - name: "KSPROPSETID_Acoustic_Echo_Cancel"
@@ -749,8 +899,10 @@
     - name: "KSPROPSETID_AudioGfx"
       href: kspropsetid-audiogfx.md
     - name: "KSPROPSETID_AudioModule"
-      href: kspropsetid-audiomodule.md
+# Auto-expanded node
       items: 
+      - name: "KSPROPSETID_AudioModule"
+        href: kspropsetid-audiomodule.md
       - name: "KSPROPERTY_AUDIOMODULE_COMMAND"
         href: ksproperty-audiomodule-command.md
       - name: "KSPROPERTY_AUDIOMODULE_DESCRIPTORS"
@@ -768,14 +920,18 @@
     - name: "KSPROPSETID_DrmAudioStream"
       href: kspropsetid-drmaudiostream.md
     - name: "KSPROPSETID_FMRXControl"
-      href: kspropsetid-fmrxcontrol.md
+# Auto-expanded node
       items: 
+      - name: "KSPROPSETID_FMRXControl"
+        href: kspropsetid-fmrxcontrol.md
       - name: "KSPROPERTY_FMRX_STATE"
         href: ksproperty-fmrx-state.md
     - name: "KSPROPSETID_FMRXTopology"
       href: kspropsetid-fmrxtopology.md
     - name: "KSPROPSETID_Hrtf3d"
       href: kspropsetid-hrtf3d.md
+    - name: "KSPROPSETID_INTERLEAVEDAUDIO_FORMATINFORMATION"
+      href: kspropsetid-interleavedaudio.md
     - name: "KSPROPSETID_Itd3d"
       href: kspropsetid-itd3d.md
     - name: "KSPROPSETID_Jack"
@@ -784,6 +940,8 @@
       href: kspropsetid-rtaudio.md
     - name: "KSPROPSETID_SoundDetector"
       href: kspropsetid-sounddetector.md
+    - name: "KSPROPSETID_SoundDetector2"
+      href: kspropsetid-sounddetector2.md
     - name: "KSPROPSETID_Synth"
       href: kspropsetid-synth.md
     - name: "KSPROPSETID_SynthClock"
@@ -801,8 +959,10 @@
     - name: "KSPROPSETID_TopologyNode"
       href: kspropsetid-topologynode.md
   - name: "Audio Drivers Event Sets"
-    href: audio-drivers-event-sets.md
+# Auto-expanded node
     items: 
+    - name: "Audio Drivers Event Sets"
+      href: audio-drivers-event-sets.md
     - name: "KSEVENTSETID_AudioControlChange"
       href: kseventsetid-audiocontrolchange.md
     - name: "KSEVENTSETID_LoopedStreaming"
@@ -812,13 +972,17 @@
     - name: "KSEVENTSETID_SoundDetector"
       href: kseventsetid-sounddetector.md
     - name: "KSEVENTSETID_VolumeLimit"
-      href: kseventsetid-volumelimit.md
+# Auto-expanded node
       items: 
+      - name: "KSEVENTSETID_VolumeLimit"
+        href: kseventsetid-volumelimit.md
       - name: "KSEVENT_VOLUMELIMIT_CHANGED"
         href: ksevent-volumelimit-changed.md
   - name: "Audio Topology Nodes"
-    href: audio-topology-nodes.md
+# Auto-expanded node
     items: 
+    - name: "Audio Topology Nodes"
+      href: audio-topology-nodes.md
     - name: "KSNODETYPE_3D_EFFECTS"
       href: ksnodetype-3d-effects.md
     - name: "KSNODETYPE_ACOUSTIC_ECHO_CANCEL"
@@ -894,8 +1058,10 @@
   - name: "Audio Drivers Structures"
     href: audio-drivers-structures.md
   - name: "Audio Drivers Interfaces"
-    href: audio-drivers-interfaces.md
+# Auto-expanded node
     items: 
+    - name: "Audio Drivers Interfaces"
+      href: audio-drivers-interfaces.md
     - name: "IAudioSystemEffects"
       href: iaudiosystemeffects.md
     - name: "IAudioSystemEffects2"
@@ -903,15 +1069,19 @@
     - name: "IKeywordDetectorOemAdapter"
       href: ikeyworddetectoroemadapter.md
   - name: "Bluetooth HFP DDI Reference"
-    href: bluetooth-hfp-ddi-reference.md
+# Auto-expanded node
     items: 
+    - name: "Bluetooth HFP DDI Reference"
+      href: bluetooth-hfp-ddi-reference.md
     - name: "Bluetooth HFP DDI Structures"
       href: bluetooth-hfp-ddi-structures.md
     - name: "Bluetooth HFP DDI IOCTLs"
       href: bluetooth-hfp-ddi-ioctls.md
   - name: "High Definition Audio DDI Reference"
-    href: high-definition-audio-ddi-reference.md
+# Auto-expanded node
     items: 
+    - name: "High Definition Audio DDI Reference"
+      href: high-definition-audio-ddi-reference.md
     - name: "HD Audio DDI Routines"
       href: hd-audio-ddi-routines.md
     - name: "HD Audio DDI Structures"
@@ -925,8 +1095,10 @@
   - name: "Legacy Audio Device Messages"
     href: legacy-audio-device-messages.md
   - name: "Audio INF File Settings"
-    href: media-class-inf-extensions.md
+# Auto-expanded node
     items: 
+    - name: "Audio INF File Settings"
+      href: media-class-inf-extensions.md
     - name: "SetupPreferredAudioDevices"
       href: setuppreferredaudiodevices.md
     - name: "PKEY_APO_SWFallback_ProcessingModes"
@@ -957,6 +1129,8 @@
       href: pkey-compositefx-offload-streameffectclsid.md
     - name: "PKEY_CompositeFX_StreamEffectClsid"
       href: pkey-compositefx-streameffectclsid.md
+    - name: "PKEY_Devices_AudioDevice_Microphone_IsFarField"
+      href: pkey-devices-audiodevice-microphone-isfarfield.md
     - name: "PKEY_FX_KeywordDetector_StreamEffectClsid"
       href: pkey-fx-keyworddetector-streameffectclsid.md
     - name: "PKEY_FX_KeywordDetector_ModeEffectClsid"
@@ -992,8 +1166,10 @@
     - name: "UsePositionLock"
       href: usepositionlock.md
   - name: "Port Class Audio Driver Reference"
-    href: port-class-audio-driver-reference.md
+# Auto-expanded node
     items: 
+    - name: "Port Class Audio Driver Reference"
+      href: port-class-audio-driver-reference.md
     - name: "Audio Port Class Functions"
       href: audio-port-class-functions.md
     - name: "Audio Helper Object Interfaces"
@@ -1011,22 +1187,28 @@
     - name: "Audio Power Management Interfaces"
       href: audio-power-management-interfaces.md
     - name: "Macro Definitions for Obsolete Functions"
-      href: macro-definitions-for-obsolete-functions.md
+# Auto-expanded node
       items: 
+      - name: "Macro Definitions for Obsolete Functions"
+        href: macro-definitions-for-obsolete-functions.md
       - name: "Obsolete Port Class Functions"
         href: obsolete-port-class-functions.md
       - name: "Obsolete Kernel-Mode Driver-Support Functions"
         href: obsolete-kernel-mode-driver-support-functions.md
   - name: "Ks.h"
-    href: ks-h.md
+# Auto-expanded node
     items: 
+    - name: "Ks.h"
+      href: ks-h.md
     - name: "KSEVENT_PINCAPS_FORMATCHANGE"
       href: ksevent-pincaps-formatchange.md
     - name: "KSEVENT_PINCAPS_JACKINFOCHANGE"
       href: ksevent-pincaps-jackinfochange.md
   - name: "Ksmedia.h"
-    href: ksmedia-h.md
+# Auto-expanded node
     items: 
+    - name: "Ksmedia.h"
+      href: ksmedia-h.md
     - name: "KSEVENT_CONTROL_CHANGE"
       href: ksevent-control-change.md
     - name: "KSEVENT_LOOPEDSTREAMING_POSITION"
@@ -1245,6 +1427,8 @@
       href: ksproperty-hrtf3d-initialize.md
     - name: "KSPROPERTY_HRTF3D_PARAMS"
       href: ksproperty-hrtf3d-params.md
+    - name: "KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION"
+      href: ksproperty-interleavedaudio-formatinformation.md
     - name: "KSPROPERTY_ITD3D_PARAMS"
       href: ksproperty-itd3d-params.md
     - name: "KSPROPERTY_JACK"
@@ -1293,6 +1477,10 @@
       href: ksproperty-sounddetector-matchresult.md
     - name: "KSPROPERTY_SOUNDDETECTOR_PATTERNS"
       href: ksproperty-sounddetector-patterns.md
+    - name: "KSPROPERTY_SOUNDDETECTOR_RESET"
+      href: ksproperty-sounddetector-reset.md
+    - name: "KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT"
+      href: ksproperty-sounddetector-streamingsupport.md
     - name: "KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS"
       href: ksproperty-sounddetector-supportedpatterns.md
     - name: "KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE"

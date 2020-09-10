@@ -16,17 +16,11 @@ You should not enumerate devices by using registry keys directly. Registry keys 
 
 To enumerate installed devices safely, follow these steps:
 
-1.  Use [**SetupDiGetClassDevs**](https://msdn.microsoft.com/library/windows/hardware/ff551069) or [**SetupDiGetClassDevsEx**](https://msdn.microsoft.com/library/windows/hardware/ff551072) to retrieve information for a set of devices that belong to a specified device setup class. To retrieve information only for devices that are present in the system, set DIGCF_PRESENT in the *Flags* parameter.
+1.  Use [**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) or [**SetupDiGetClassDevsEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to retrieve information for a set of devices that belong to a specified device setup class. To retrieve information only for devices that are present in the system, set DIGCF_PRESENT in the *Flags* parameter.
 
-2.  Use [**SetupDiEnumDeviceInfo**](https://msdn.microsoft.com/library/windows/hardware/ff551010) to enumerate the devices in the set.
+2.  Use [**SetupDiEnumDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo) to enumerate the devices in the set.
 
-3.  Use [**SetupDiGetDeviceInstanceId**](https://msdn.microsoft.com/library/windows/hardware/ff551106) to retrieve unique [device instance identifiers (IDs)](device-instance-ids.md).
-
- 
+3.  Use [**SetupDiGetDeviceInstanceId**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstanceida) to retrieve unique [device instance identifiers (IDs)](device-instance-ids.md).
 
  
-
-
-
-
 

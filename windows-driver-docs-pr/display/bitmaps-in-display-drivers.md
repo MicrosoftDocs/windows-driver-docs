@@ -37,13 +37,7 @@ Drivers that implement device bitmaps in [*off-screen memory*](video-present-net
 -   Leveraging hardware to perform operations that support OpenGL, such as mask bit-block transfers and double-buffering.
 
 
-Drivers should implement device bitmaps in off-screen memory through [**DrvCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff556185).
+Drivers should implement device bitmaps in off-screen memory through [**DrvCreateDeviceBitmap**](/windows/desktop/api/winddi/nf-winddi-drvcreatedevicebitmap).
 
  
-
- 
-
-
-
-
 

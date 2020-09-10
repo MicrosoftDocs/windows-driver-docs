@@ -77,7 +77,7 @@ Remarks
 
 **WdfObjectAddCustomType** is a simplified version of [**WdfObjectAddCustomTypeWithData**](wdfobjectaddcustomtypewithdata.md).
 
-For more information about object driver types, see [Framework Object Custom Types](https://msdn.microsoft.com/library/windows/hardware/hh406457).
+For more information about object driver types, see [Framework Object Custom Types](./framework-object-custom-types.md).
 
 Examples
 --------
@@ -89,13 +89,13 @@ NTSTATUS                status;
 WDF_IO_QUEUE_CONFIG     queueConfig;
 WDFQUEUE                queue;  
 
-WDF_IO_QUEUE_CONFIG_INIT(&amp;queueConfig,   
+WDF_IO_QUEUE_CONFIG_INIT(&queueConfig,   
                          WdfIoQueueDispatchParallel);  
 
 status = WdfIoQueueCreate(device,  
-                          &amp;queueConfig,  
+                          &queueConfig,  
                           WDF_NO_OBJECT_ATTRIBUTES,  
-                          &amp;queue);  
+                          &queue);  
  
 if (!NT_SUCCESS(status)) {  
      TraceEvents(TRACE_LEVEL_ERROR, DBG_INFO,
@@ -156,11 +156,4 @@ Requirements
 [**WdfObjectIsCustomType**](wdfobjectiscustomtype.md)
 
  
-
- 
-
-
-
-
-
 

@@ -25,12 +25,7 @@ If no request-sense information is available, *InterpretRequestSense* should che
 
 The *InterpretRequestSense* routine might call a driver-supplied error-logging routine as well. Whenever a storage class driver logs an I/O error, it should include the **PathId**, **TargetId**, **Lun**, and **SrbStatus** values set by the storage port driver in the SRB, and, if possible, pertinent request-sense information as part of the error log entry's **DumpData**. Note that a storage class driver must not use the **PathId**, **TargetId**, and **Lun** from such SRBs to address other requests.
 
-For more information about logging I/O errors, see [Logging Errors](https://msdn.microsoft.com/library/windows/hardware/ff554312).
+For more information about logging I/O errors, see [Logging Errors](../kernel/logging-errors.md).
 
  
-
- 
-
-
-
 

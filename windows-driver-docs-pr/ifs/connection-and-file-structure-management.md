@@ -34,7 +34,7 @@ These six fundamental data structures are as follows:
 
 -   SRV\_OPEN--server-side open context. This structure encapsulates an open handle on the server.
 
--   FOBX--file object extension. This structure is an RDBSS extension to the [**FILE\_OBJECT**](https://msdn.microsoft.com/library/windows/hardware/ff545834) structure.
+-   FOBX--file object extension. This structure is an RDBSS extension to the [**FILE\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object) structure.
 
 These data structures are organized in the following hierarchy:
 
@@ -91,7 +91,7 @@ All of these data structures are reference counted. The reference counts on a da
 
  
 
-In each case, the dynamic value refers to the number of callers that have referenced the structure without dereferencing it. The static part of the reference count is maintained by the routines themselves. For example, [**RxCreateNetRoot**](https://msdn.microsoft.com/library/windows/hardware/ff554366) increments the reference count for the associated SRV\_CALL structure.
+In each case, the dynamic value refers to the number of callers that have referenced the structure without dereferencing it. The static part of the reference count is maintained by the routines themselves. For example, [**RxCreateNetRoot**](/windows-hardware/drivers/ddi/fcb/nf-fcb-rxcreatenetroot) increments the reference count for the associated SRV\_CALL structure.
 
 Reference calls and successful lookups increment the reference counts; dereference calls decrements the count. Create routine calls allocate a structure and set the reference count to 1.
 
@@ -124,9 +124,4 @@ This section contains the following topics:
 [Connection and File Control Block Management Routines](connection-and-file-control-block-management-routines.md)
 
  
-
- 
-
-
-
 

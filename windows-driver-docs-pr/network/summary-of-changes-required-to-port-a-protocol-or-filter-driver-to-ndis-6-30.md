@@ -37,17 +37,11 @@ For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](i
 A filter driver should always complete **NetEventSetPower** without waiting for packets. For more information, see:
 
 -   [Power Management Enhancements in NDIS 6.30](power-management-enhancements-in-ndis-6-30.md)
--   [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](https://msdn.microsoft.com/library/windows/hardware/ff565934)
--   [**NET\_PNP\_EVENT**](https://msdn.microsoft.com/library/windows/hardware/ff568751)
--   [OID\_PNP\_SET\_POWER](https://msdn.microsoft.com/library/windows/hardware/ff569780)
+-   [**NDIS\_MINIPORT\_ADAPTER\_REGISTRATION\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes)
+-   [**NET\_PNP\_EVENT**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event)
+-   [OID\_PNP\_SET\_POWER](./oid-pnp-set-power.md)
 
 For more information about NDIS 6.30 features, see [Introduction to NDIS 6.30](introduction-to-ndis-6-30.md).
 
  
-
- 
-
-
-
-
 

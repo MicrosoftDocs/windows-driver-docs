@@ -70,7 +70,7 @@ The following table summarizes the differences between UVC 1.0 and 1.1.
 <td><p>change</p></td>
 <td><p>Class-Specific VS Interface Input Header</p></td>
 <td><p><strong>bmaControls(n)</strong></p></td>
-<td><p>1.1 uses some of these bits differently in &quot;Probe and Commit&quot;</p></td>
+<td><p>1.1 uses some of these bits differently in "Probe and Commit"</p></td>
 </tr>
 <tr class="even">
 <td><p>change</p></td>

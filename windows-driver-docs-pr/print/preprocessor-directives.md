@@ -57,7 +57,7 @@ GPD files can contain preprocessor directives, which can be used to control cond
 <td><p>Indicates the end of a block of GPD file entries.</p></td>
 </tr>
 <tr class="odd">
-<td><p><em><strong>Include</strong> : &quot;<em>FileName</em>&quot;</p></td>
+<td><p><em><strong>Include</strong> : "<em>FileName</em>"</p></td>
 <td><p>Specifies the name of an additional GPD file. See <a href="using-multiple-gpd-files-in-a-minidriver.md" data-raw-source="[Using Multiple GPD Files in a Minidriver](using-multiple-gpd-files-in-a-minidriver.md)">Using Multiple GPD Files in a Minidriver</a>.</p></td>
 </tr>
 <tr class="even">
@@ -103,7 +103,7 @@ For example, if your GPD file contains the following directive:
 *SetPPPrefix: #SpecialPrefix#
 ```
 
-then the preprocessor stops searching for preprocessor directives that begin with **\\*** and instead looks for directives beginning with **\#SpecialPrefix\#**. The following sequence temporarily changes the preprocessor prefix to **\#SpecialPrefix\#**, then restores it to **\\***.
+then the preprocessor stops searching for preprocessor directives that begin with **\*** and instead looks for directives beginning with **\#SpecialPrefix\#**. The following sequence temporarily changes the preprocessor prefix to **\#SpecialPrefix\#**, then restores it to **\***.
 
 ```cpp
 *SetPPPrefix: #SpecialPrefix#

@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The PCI\_VERIFIER\_DETECTED\_VIOLATION bug check has a value of 0x000000F6. This indicates that an error occurred in the BIOS or another device being verified by the PCI driver.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## PCI\_VERIFIER\_DETECTED\_VIOLATION Parameters
 
@@ -47,7 +49,7 @@ Parameter 1 is the only parameter of interest; this identifies the nature of the
 </tr>
 <tr class="odd">
 <td align="left"><p>0x03</p></td>
-<td align="left"><p>A driver has written to Windows-controlled portions of a PCI device&#39;s configuration space.</p></td>
+<td align="left"><p>A driver has written to Windows-controlled portions of a PCI device's configuration space.</p></td>
 </tr>
 </tbody>
 </table>

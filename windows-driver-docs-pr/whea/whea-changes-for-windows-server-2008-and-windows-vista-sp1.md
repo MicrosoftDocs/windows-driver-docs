@@ -30,16 +30,11 @@ Starting with Windows Server 2008 and Windows Vista SP1, the following changes h
 
 -   WHEA raises an Event Tracing for Windows (ETW) event whenever a hardware error occurs. Starting with Windows Server 2008, the WHEA hardware error events and the data templates that describe those hardware error events are different from the events and templates that are supported on Windows Vista.
 
-    For more information about ETW support within WHEA, see [Hardware Error Events](https://msdn.microsoft.com/library/windows/hardware/ff559387).
+    For more information about ETW support within WHEA, see [Hardware Error Events](/windows-hardware/drivers/ddi/_whea/).
 
 -   [WHEA hardware error event processing applications](whea-hardware-error-event-processing-applications.md) can retrieve hardware error events from the system event log by querying for any events that were logged by WHEA. However, starting with Windows Server 2008, the name of the provider that logs the WHEA hardware error events has changed. These applications have to access error events through the new provider. For more information, see [Querying the System Event Log for Hardware Error Events](querying-the-system-event-log-for-hardware-error-events.md).
 
 -   In addition to WHEA hardware error event processing applications, [WHEA management applications](whea-management-applications.md) are now supported in Windows Server 2008, Windows Vista SP1 and later versions of Windows. Through a WMI interface that is provided by WHEA, user-mode applications can perform WHEA management operations, such as enabling or disabling an error source and injecting hardware errors for testing purposes.
 
  
-
- 
-
-
-
 

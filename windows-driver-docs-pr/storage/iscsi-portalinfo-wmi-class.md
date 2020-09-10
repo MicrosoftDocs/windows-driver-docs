@@ -31,8 +31,8 @@ class ISCSI_PortalInfo
     [read,
      WmiDataId(3),
      ISCSI_CONNECTION_PROTOCOL_TYPE_QUALIFIERS,
-     //Description("The portal&#39;s transport protocol"): amended,
-     description("The portal&#39;s transport protocol"),
+     //Description("The portal's transport protocol"): amended,
+     description("The portal's transport protocol"),
      WmiVersion(1)] ISCSI_CONNECTION_PROTOCOL_TYPE Protocol;
 
     [read,
@@ -45,28 +45,22 @@ class ISCSI_PortalInfo
  
     [read,
      WmiDataId(6),
-     description("The portal&#39;s network address"),
+     description("The portal's network address"),
      WmiVersion(1)] ISCSI_IP_Address IPAddr;
 
     [read,
      WmiDataId(7),
-     description("The portal&#39;s socket number"),
+     description("The portal's socket number"),
      WmiVersion(1)] uint32 Port;
 
     [read,
      WmiDataId(8),
-     description("The portal&#39;s aggregation tag"),
+     description("The portal's aggregation tag"),
      WmiVersion(1)] uint16 PortalTag;
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_PortalInfo**](https://msdn.microsoft.com/library/windows/hardware/ff561557) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_PortalInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_portalinfo) data structure.
 
  
-
- 
-
-
-
-
 

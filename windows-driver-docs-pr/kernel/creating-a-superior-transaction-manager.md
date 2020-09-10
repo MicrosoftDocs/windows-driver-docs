@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 In KTM, a *superior transaction manager* is a resource manager that creates superior enlistments for the transactions that it participates in. A *superior enlistment* is an enlistment that grants the resource manager the ability to coordinate the [commit operation](handling-commit-operations.md) for the enlistment's transaction. In other words, either a transactional client or the superior transaction manager can start the pre-prepare/prepare/commit sequence for the transaction.
 
-After a resource manager has created a superior enlistment for a transaction, KTM rejects all calls to [**ZwCommitTransaction**](https://msdn.microsoft.com/library/windows/hardware/ff566420) for the transaction. Therefore, transactional clients cannot commit such a transaction. Instead, the resource manager that created the superior enlistment must call [**ZwPrePrepareEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567044), [**ZwPrepareEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567039), and [**ZwCommitEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff566419).
+After a resource manager has created a superior enlistment for a transaction, KTM rejects all calls to [**ZwCommitTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) for the transaction. Therefore, transactional clients cannot commit such a transaction. Instead, the resource manager that created the superior enlistment must call [**ZwPrePrepareEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntpreprepareenlistment), [**ZwPrepareEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntprepareenlistment), and [**ZwCommitEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitenlistment).
 
 ### When to Create a Superior Transaction Manager
 
@@ -24,19 +24,19 @@ For example, suppose that your component provides its own interfaces that client
 
 If you want your component to be a superior transaction manager, it must do the following:
 
-1.  Call [**ZwCreateResourceManager**](https://msdn.microsoft.com/library/windows/hardware/ff566427) to register as a resource manager.
+1.  Call [**ZwCreateResourceManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager) to register as a resource manager.
 
-2.  Call [**ZwCreateTransaction**](https://msdn.microsoft.com/library/windows/hardware/ff566429) every time that a client of your component creates a transaction by using your component's client interface.
+2.  Call [**ZwCreateTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction) every time that a client of your component creates a transaction by using your component's client interface.
 
-3.  Call [**ZwCreateEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff566422), setting the ENLISTMENT\_SUPERIOR flag, and specifying both the ENLISTMENT\_SUPERIOR\_RIGHTS and ENLISTMENT\_SUBORDINATE\_RIGHTS access flags.
+3.  Call [**ZwCreateEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment), setting the ENLISTMENT\_SUPERIOR flag, and specifying both the ENLISTMENT\_SUPERIOR\_RIGHTS and ENLISTMENT\_SUBORDINATE\_RIGHTS access flags.
 
-4.  Call [**ZwPrePrepareEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567044), [**ZwPrepareEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567039), and [**ZwCommitEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff566419) when your component's client calls your component's client interface to commit the transaction.
+4.  Call [**ZwPrePrepareEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntpreprepareenlistment), [**ZwPrepareEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntprepareenlistment), and [**ZwCommitEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommitenlistment) when your component's client calls your component's client interface to commit the transaction.
 
 KTM permits only one superior enlistment per transaction. Other resource managers can create additional enlistments. These enlistments are called *subordinate enlistments* because they cannot initiate the commit operation.
 
-To roll back a superior enlistment, your superior transaction manager calls [**ZwRollbackEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567083).
+To roll back a superior enlistment, your superior transaction manager calls [**ZwRollbackEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbackenlistment).
 
-To recover a superior enlistment, your superior transaction manager calls [**ZwRecoverEnlistment**](https://msdn.microsoft.com/library/windows/hardware/ff567075).
+To recover a superior enlistment, your superior transaction manager calls [**ZwRecoverEnlistment**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrecoverenlistment).
 
 When a superior transaction manager commits, rolls back, or recovers a transaction, KTM sends [transaction notifications](transaction-notifications.md) to all subordinate enlistments so that they can participate.
 
@@ -45,9 +45,4 @@ A TPS that includes a superior transaction manager cannot use [single-phase comm
 During a recovery operation, if KTM cannot determine the outcome of a transaction, it sends a TRANSACTION\_NOTIFY\_RECOVER\_QUERY notification to the superior transaction manager. In response, the superior transaction manager must call **ZwCommitEnlistment** if the transaction can be committed or **ZwRollbackEnlistment** if the transaction should be rolled back. If the superior transaction manager cannot determine the outcome of a transaction, it should not respond to the TRANSACTION\_NOTIFY\_RECOVER\_QUERY notification until it can determine an outcome.
 
  
-
- 
-
-
-
 

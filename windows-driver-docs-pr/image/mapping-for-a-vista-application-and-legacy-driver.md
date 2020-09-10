@@ -105,16 +105,11 @@ This table shows the mapping of a legacy driver's file transfer messages to the 
 
  
 
-For more information on the legacy transfer messages, see the [IWiaMiniDrvCallBack Interface](https://msdn.microsoft.com/library/windows/hardware/ff543943).
+For more information on the legacy transfer messages, see the [IWiaMiniDrvCallBack Interface](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrvcallback).
 
 For more information on the TYMED constants, see [Understanding TYMED](understanding-tymed.md).
 
 The **IStream** interface is described in the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
 

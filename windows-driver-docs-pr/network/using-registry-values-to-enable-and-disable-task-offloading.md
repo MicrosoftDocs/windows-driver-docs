@@ -96,7 +96,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>TCPChecksumOffloadIPv4</strong></p></td>
@@ -120,7 +120,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>TCPChecksumOffloadIPv6</strong></p></td>
@@ -144,7 +144,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>UDPChecksumOffloadIPv4</strong></p></td>
@@ -168,7 +168,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong><em>UDPChecksumOffloadIPv6</strong></p></td>
@@ -192,7 +192,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Rx &amp; Tx Enabled</p></td>
+<td align="left"><p>Rx & Tx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>LsoV1IPv4</strong></p></td>
@@ -252,7 +252,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>IPsecOffloadV2</strong></p></td>
@@ -276,7 +276,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>*IPsecOffloadV2IPv4</strong></p></td>
@@ -300,7 +300,7 @@ The following table describes the granular keywords that you can use to configur
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Auth Header &amp; ESP Enabled</p></td>
+<td align="left"><p>Auth Header & ESP Enabled</p></td>
 </tr>
 </tbody>
 </table>
@@ -359,7 +359,7 @@ The following table describes the grouped keywords that you can use to configure
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx &amp; Rx Enabled</p></td>
+<td align="left"><p>Tx & Rx Enabled</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong></em>TCPUDPChecksumOffloadIPv6</strong></p></td>
@@ -383,7 +383,7 @@ The following table describes the grouped keywords that you can use to configure
 <td align="left"></td>
 <td align="left"></td>
 <td align="left"><p>3 (Default)</p></td>
-<td align="left"><p>Tx &amp; Rx Enabled</p></td>
+<td align="left"><p>Tx & Rx Enabled</p></td>
 </tr>
 </tbody>
 </table>
@@ -392,7 +392,7 @@ The following table describes the grouped keywords that you can use to configure
 
 There are restrictions on the combinations of offloads that can be enabled. For example, if a miniport adapter supports LSOV1 or LSOV2, the miniport adapter also calculates the IP and TCP checksums. For more information about valid combinations of offloads, see [Combining Types of Task Offloads](combining-types-of-task-offloads.md).
 
-If task offload services are disabled with a registry key setting, protocol drivers must not issue the [OID\_OFFLOAD\_ENCAPSULATION](https://msdn.microsoft.com/library/windows/hardware/ff569762) object identifier (OID).
+If task offload services are disabled with a registry key setting, protocol drivers must not issue the [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md) object identifier (OID).
 
 You can use the following registry values to enable or disable task offloading for the TCP/IP protocol:
 
@@ -403,10 +403,4 @@ Setting this value to one disables all of the task offloads from the TCP/IP tran
 Setting this value to zero disables Internet protocol security (IPsec) offloads from the TCP/IP transport. The offloading of TCP/IP checksum tasks, large send offload version 1 (LSOV1), and large send offload version 2 (LSOV2) are not affected. Setting this value to one enables IPsec offloads.
 
  
-
- 
-
-
-
-
 

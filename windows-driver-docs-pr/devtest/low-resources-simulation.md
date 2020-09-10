@@ -12,37 +12,35 @@ ms.localizationpriority: medium
 
 # Low Resources Simulation
 
-
 ## <span id="ddk_low_resources_simulation_tools"></span><span id="DDK_LOW_RESOURCES_SIMULATION_TOOLS"></span>
-
 
 When the Low Resources Simulation option (called *Randomized low resources simulation* in Windows 8.1) is active, Driver Verifier fails random instances of the driver's memory allocations, as might occur if the driver was running on a computer with insufficient memory. This tests the driver's ability to respond properly to low memory and other low-resource conditions.
 
-The Low Resources Simulation test fails allocations requested by calls to several different functions, including [**ExAllocatePoolWithXXX**](https://msdn.microsoft.com/library/windows/hardware/ff544520), [**MmGetSystemAddressForMdlSafe**](https://msdn.microsoft.com/library/windows/hardware/ff554559), [**MmProbeAndLockPages**](https://msdn.microsoft.com/library/windows/hardware/ff554664), [**MmMapLockedPagesSpecifyCache**](https://msdn.microsoft.com/library/windows/hardware/ff554629), and [**MmMapIoSpace**](https://msdn.microsoft.com/library/windows/hardware/ff554618).
+The Low Resources Simulation test fails allocations requested by calls to several different functions, including [**ExAllocatePoolWithXXX**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag), [**MmGetSystemAddressForMdlSafe**](../kernel/mm-bad-pointer.md), [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), [**MmMapLockedPagesSpecifyCache**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpagesspecifycache), and [**MmMapIoSpace**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmapiospace).
 
-Starting with Windows Vista, the Low Resource Simulation test also injects faults into [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257), [**IoAllocateMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548263), [**IoAllocateWorkItem**](https://msdn.microsoft.com/library/windows/hardware/ff548276), [**IoAllocateErrorLogEntry**](https://msdn.microsoft.com/library/windows/hardware/ff548245), [**MmAllocateContiguousMemory**](https://msdn.microsoft.com/library/windows/hardware/ff554460), [**MmAllocateContiguousMemorySpecifyCache**](https://msdn.microsoft.com/library/windows/hardware/ff554464), [**MmAllocatePagesForMdl**](https://msdn.microsoft.com/library/windows/hardware/ff554482), and [**MmAllocatePagesForMdlEx**](https://msdn.microsoft.com/library/windows/hardware/ff554489). Moreover, starting with Windows Vista, when Low Resources Simulation is enabled, calls to [**KeWaitForMultipleObjects**](https://msdn.microsoft.com/library/windows/hardware/ff553324) or [**KeWaitForSingleObject**](https://msdn.microsoft.com/library/windows/hardware/ff553350) with the *Alertable* parameter set to **TRUE** can return STATUS\_ALERTED when running in the context of non-privileged processes. This simulates a possible thread alert coming from another thread in the same non-privileged application.
+Starting with Windows Vista, the Low Resource Simulation test also injects faults into [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp), [**IoAllocateMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl), [**IoAllocateWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem), [**IoAllocateErrorLogEntry**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateerrorlogentry), [**MmAllocateContiguousMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemory), [**MmAllocateContiguousMemorySpecifyCache**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycache), [**MmAllocatePagesForMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl), and [**MmAllocatePagesForMdlEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdlex). Moreover, starting with Windows Vista, when Low Resources Simulation is enabled, calls to [**KeWaitForMultipleObjects**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects) or [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) with the *Alertable* parameter set to **TRUE** can return STATUS\_ALERTED when running in the context of non-privileged processes. This simulates a possible thread alert coming from another thread in the same non-privileged application.
 
-The Low Resource Simulation test also injects faults into the following GDI functions: [**EngAllocMem**](https://msdn.microsoft.com/library/windows/hardware/ff564176), [**EngAllocUserMem**](https://msdn.microsoft.com/library/windows/hardware/ff564178), [**EngCreateBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff564199), [**EngCreateDeviceSurface**](https://msdn.microsoft.com/library/windows/hardware/ff564206), [**EngCreateDeviceBitmap**](https://msdn.microsoft.com/library/windows/hardware/ff564204), [**EngCreatePalette**](https://msdn.microsoft.com/library/windows/hardware/ff564212), [**EngCreateClip**](https://msdn.microsoft.com/library/windows/hardware/ff564202), [**EngCreatePath**](https://msdn.microsoft.com/library/windows/hardware/ff564755), [**EngCreateWnd**](https://msdn.microsoft.com/library/windows/hardware/ff564769), [**EngCreateDriverObj**](https://msdn.microsoft.com/library/windows/hardware/ff564207), [**BRUSHOBJ\_pvAllocRbrush**](https://msdn.microsoft.com/library/windows/hardware/ff538263), and [**CLIPOBJ\_ppoGetPath**](https://msdn.microsoft.com/library/windows/hardware/ff539423).
+The Low Resource Simulation test also injects faults into the following GDI functions: [**EngAllocMem**](/windows/desktop/api/winddi/nf-winddi-engallocmem), [**EngAllocUserMem**](/windows/desktop/api/winddi/nf-winddi-engallocusermem), [**EngCreateBitmap**](/windows/desktop/api/winddi/nf-winddi-engcreatebitmap), [**EngCreateDeviceSurface**](/windows/desktop/api/winddi/nf-winddi-engcreatedevicesurface), [**EngCreateDeviceBitmap**](/windows/desktop/api/winddi/nf-winddi-engcreatedevicebitmap), [**EngCreatePalette**](/windows/desktop/api/winddi/nf-winddi-engcreatepalette), [**EngCreateClip**](/windows/desktop/api/winddi/nf-winddi-engcreateclip), [**EngCreatePath**](/windows/desktop/api/winddi/nf-winddi-engcreatepath), [**EngCreateWnd**](/windows/desktop/api/winddi/nf-winddi-engcreatewnd), [**EngCreateDriverObj**](/windows/desktop/api/winddi/nf-winddi-engcreatedriverobj), [**BRUSHOBJ\_pvAllocRbrush**](/windows/desktop/api/winddi/nf-winddi-brushobj_pvallocrbrush), and [**CLIPOBJ\_ppoGetPath**](/windows/desktop/api/winddi/nf-winddi-clipobj_ppogetpath).
 
 In Windows 7 and later versions of the Windows operating system, the Low Resources Simulation option supports memory that was allocated by using the following kernel APIs:
 
--   [**IoAllocateMdl**](https://msdn.microsoft.com/library/windows/hardware/ff548263)
+-   [**IoAllocateMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl)
 
--   [**IoAllocateIrp**](https://msdn.microsoft.com/library/windows/hardware/ff548257) and the other routines that can allocate I/O request packet (IRP) data structures
+-   [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) and the other routines that can allocate I/O request packet (IRP) data structures
 
--   [**RtlAnsiStringToUnicodeString**](https://msdn.microsoft.com/library/windows/hardware/ff561729) and other run-time library (RTL) string routines
+-   [**RtlAnsiStringToUnicodeString**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlansistringtounicodestring) and other run-time library (RTL) string routines
 
--   [**IoSetCompletionRoutineEx**](https://msdn.microsoft.com/library/windows/hardware/ff549686)
+-   [**IoSetCompletionRoutineEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetcompletionroutineex)
 
 Starting with Windows 8.1, the Low Resources Simulation option also fails allocations requested by calls to MmAllocateNodePagesForMdlEx. In addition, for some functions, Driver Verifier now fills the allocated memory with a random pattern. But only in situations where the function returns uninitialized memory. These functions include:
 
--   [**MmAllocatePagesForMdlEx**](https://msdn.microsoft.com/library/windows/hardware/ff554489)
+-   [**MmAllocatePagesForMdlEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdlex)
 -   MmAllocateNodePagesForMdlEx
--   [**MmAllocateContiguousMemory**](https://msdn.microsoft.com/library/windows/hardware/ff554460)
--   [**MmAllocateContiguousMemorySpecifyCache**](https://msdn.microsoft.com/library/windows/hardware/ff554464)
--   [**MmAllocateContiguousMemorySpecifyCacheNode**](https://msdn.microsoft.com/library/windows/hardware/ff554469)
--   [**MmAllocateContiguousNodeMemory**](https://msdn.microsoft.com/library/windows/hardware/jj602795)
--   [**MmAllocateNonCachedMemory**](https://msdn.microsoft.com/library/windows/hardware/ff554479)
+-   [**MmAllocateContiguousMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemory)
+-   [**MmAllocateContiguousMemorySpecifyCache**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycache)
+-   [**MmAllocateContiguousMemorySpecifyCacheNode**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousmemoryspecifycachenode)
+-   [**MmAllocateContiguousNodeMemory**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatecontiguousnodememory)
+-   [**MmAllocateNonCachedMemory**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmallocatenoncachedmemory)
 
 ### <span id="custom_settings_for_low_resources_simulation"></span><span id="CUSTOM_SETTINGS_FOR_LOW_RESOURCES_SIMULATION"></span>Custom Settings for Low Resources Simulation
 
@@ -136,7 +134,7 @@ At the command line, the syntax for these settings is as follows:
 
 - *PoolTags*
 
-  Limits the allocations that Driver Verifier can fail to allocations with the specified pool tags. You can use a wildcard character (**\\***) to represent multiple pool tags. To list multiple pool tags, separate the tags with spaces. By default, all allocations can fail.
+  Limits the allocations that Driver Verifier can fail to allocations with the specified pool tags. You can use a wildcard character (**\***) to represent multiple pool tags. To list multiple pool tags, separate the tags with spaces. By default, all allocations can fail.
 
 - *Applications*
 
@@ -267,12 +265,3 @@ Verified drivers:
 
 blah.sys
 ```
-
-
-
-
-
-
-
-
-

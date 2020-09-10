@@ -21,14 +21,14 @@ WDI\_TLV\_CHANNEL\_LIST is a TLV that contains one or more channel numbers.
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_CHANNEL\_MAPPING\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897799) structures. The array must contain 1 or more structures.
+The size (in bytes) of the array of [**WDI\_CHANNEL\_MAPPING\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_channel_mapping_entry) structures. The array must contain 1 or more structures.
 
 ## Values
 
 
 | Type                                                                       | Description                          |
 |----------------------------------------------------------------------------|--------------------------------------|
-| [**WDI\_CHANNEL\_MAPPING\_ENTRY**](https://msdn.microsoft.com/library/windows/hardware/dn897799)\[\] | An array of channel mapping entries. |
+| [**WDI\_CHANNEL\_MAPPING\_ENTRY**](/windows-hardware/drivers/ddi/wditypes/ns-wditypes-_wdi_channel_mapping_entry)\[\] | An array of channel mapping entries. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

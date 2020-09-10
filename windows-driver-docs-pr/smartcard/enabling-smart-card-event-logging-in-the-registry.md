@@ -56,13 +56,7 @@ The registry values that enable event logging are listed in the following table.
 
  
 
-For more information about specifying these registry entries, see [**INF AddService Directive**](https://msdn.microsoft.com/library/windows/hardware/ff546326).
+For more information about specifying these registry entries, see [**INF AddService Directive**](../install/inf-addservice-directive.md).
 
  
-
- 
-
-
-
-
 

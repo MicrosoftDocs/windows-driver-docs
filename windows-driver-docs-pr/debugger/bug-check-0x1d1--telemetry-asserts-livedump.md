@@ -12,9 +12,11 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# Bug Check Bug Check 0x1D1: TELEMETRY\_ASSERTS\_LIVEDUMP
+# Bug Check 0x1D1: TELEMETRY\_ASSERTS\_LIVEDUMP
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 The TELEMETRY_ASSERTS_LIVEDUMP bug check has a value of 0x000001D1. 
 

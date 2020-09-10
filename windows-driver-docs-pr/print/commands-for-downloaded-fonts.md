@@ -34,7 +34,7 @@ The following table lists the commands for controlling downloaded fonts. All com
 <tr class="odd">
 <td><p><strong>CmdDeleteFont</strong></p></td>
 <td><p>Command to delete a soft font by specifying its identifier.</p></td>
-<td><p>Optional. Specify this command only if a deleted font&#39;s allocated memory can be immediately reclaimed.</p></td>
+<td><p>Optional. Specify this command only if a deleted font's allocated memory can be immediately reclaimed.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>CmdDeselectFontID</strong></p></td>

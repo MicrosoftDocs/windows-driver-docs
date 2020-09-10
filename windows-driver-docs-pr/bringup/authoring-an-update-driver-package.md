@@ -247,7 +247,7 @@ The following table describes the various driver package INF sections and fields
 </tr>
 <tr class="odd">
 <td>Provider</td>
-<td>&quot;Contoso Ltd.&quot;</td>
+<td>"Contoso Ltd."</td>
 <td>An example of a string token key/value mapping.</td>
 </tr>
 </tbody>
@@ -274,7 +274,7 @@ The steps to self-sign the driver package for test purposes are enumerated below
     pvk2pfx.exe -pvk fwu.pvk -spc fwu.cer -pi <Password entered during makecert prompt> -spc fwu.cer -pfx fwu.pfx
     ```
 
-    For more information, see [**MakeCert**](https://msdn.microsoft.com/library/windows/hardware/ff548309).
+    For more information, see [**MakeCert**](../devtest/makecert.md).
 
 3.  Run the following command to create a catalog file.
 
@@ -282,9 +282,9 @@ The steps to self-sign the driver package for test purposes are enumerated below
     Inf2Cat.exe /driver:"." /os:8_x64
     ```
 
-    The */driver* argument points to the location where the INF is located. Change the value of the */os* argument depending on the OS for which the firmware driver package is intended for. For more information, see [**Inf2Cat**](https://msdn.microsoft.com/library/windows/hardware/ff547089).
+    The */driver* argument points to the location where the INF is located. Change the value of the */os* argument depending on the OS for which the firmware driver package is intended for. For more information, see [**Inf2Cat**](../devtest/inf2cat.md).
 
-    For more information about security catalogs and drivers, see [Catalog Files and Digital Signatures](https://msdn.microsoft.com/library/windows/hardware/ff537872) and [Creating a Catalog File for a PnP Driver Package](https://msdn.microsoft.com/library/windows/hardware/ff540161).
+    For more information about security catalogs and drivers, see [Catalog Files and Digital Signatures](../install/catalog-files.md) and [Creating a Catalog File for a PnP Driver Package](../install/creating-a-catalog-file-for-a-pnp-driver-package.md).
 
 4.  Run the following command to sign the catalog file.
 
@@ -292,7 +292,7 @@ The steps to self-sign the driver package for test purposes are enumerated below
     signtool sign /fd sha256 /f fwu.pfx /p <Password entered during makecert prompt> delta.cat
     ```
 
-    For more information, see [**SignTool**](https://msdn.microsoft.com/library/windows/hardware/ff551778).
+    For more information, see [**SignTool**](../devtest/signtool.md).
 
 5.  Install the test certificate on the test system:
     1.  Double click on the fwu.cer file and choose the **Install Certificate** option.
@@ -371,4 +371,4 @@ After the next reboot, the OS Loader will call into UpdateCapsule() with the pay
 
 [Seamless crisis prevention and recovery](seamless-crisis-prevention-and-recovery.md)  
 
-[Firmware update status](firmware-update-status.md)  
+[Firmware update status](firmware-update-status.md)

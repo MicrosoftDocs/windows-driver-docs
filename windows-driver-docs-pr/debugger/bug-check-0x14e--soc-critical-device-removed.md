@@ -18,7 +18,9 @@ ms.localizationpriority: medium
 
 The SOC\_CRITICAL\_DEVICE\_REMOVED bug check has a value of 0x0000014E. This indicates that a critical SOC device has been unexpectedly removed or failed.
 
-**Important** This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://windows.microsoft.com/windows-10/troubleshoot-blue-screen-errors).
+> [!IMPORTANT]
+> This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
+
 
 ## SOC\_CRITICAL\_DEVICE\_REMOVED Parameters
 

@@ -56,9 +56,9 @@ An AEC node should number its logical pins with the pin IDs from header file Ksm
 
  
 
-Note that the pins in the preceding table are logical pins on the node, which are used solely to specify connections internal to the filter, rather than external pins on the filter, which are used to connect to other filters. For more information, see [**PCCONNECTION\_DESCRIPTOR**](https://msdn.microsoft.com/library/windows/hardware/ff537688).
+Note that the pins in the preceding table are logical pins on the node, which are used solely to specify connections internal to the filter, rather than external pins on the filter, which are used to connect to other filters. For more information, see [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
 
-For information about how a filter containing an AEC node can provide support for full-duplex DirectSound applications, see [DirectSound Capture Effects](https://msdn.microsoft.com/library/windows/hardware/ff536327).
+For information about how a filter containing an AEC node can provide support for full-duplex DirectSound applications, see [DirectSound Capture Effects](./directsound-capture-effects.md).
 
 When a filter containing an AEC node is created or the node is reset, the node is initially configured to operate in pass-through mode.
 
@@ -83,10 +83,4 @@ A KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL node can also support the following optiona
 [**KSPROPERTY\_AEC\_STATUS**](ksproperty-aec-status.md)
 
  
-
- 
-
-
-
-
 

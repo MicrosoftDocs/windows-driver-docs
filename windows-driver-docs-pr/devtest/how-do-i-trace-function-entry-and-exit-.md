@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 The following sample code shows how to trace function entry and exit calls. This code works in Windows 2000 and later versions of Windows.
 
-First, add the definition of the [WPP\_CONTROL\_GUIDS](https://msdn.microsoft.com/library/windows/hardware/ff556186) macro to a source or header file. When defining the [trace flags](trace-flags.md), define a flag for function tracing, as shown in the following example:
+First, add the definition of the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/previsioning-framework/ff556186(v=vs.85)) macro to a source or header file. When defining the [trace flags](trace-flags.md), define a flag for function tracing, as shown in the following example:
 
 ```
 #define WPP_CONTROL_GUIDS \
@@ -74,12 +74,3 @@ RUN_WPP=$(SOURCES) -km -scan:mytrace.h
 
 
 For a complete list of the optional parameters for RUN\_WPP, see [WPP Preprocessor](wpp-preprocessor.md).
-
-
-
-
-
-
-
-
-

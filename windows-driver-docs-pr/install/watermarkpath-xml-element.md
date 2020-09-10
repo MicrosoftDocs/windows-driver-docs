@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # watermarkPath XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://msdn.microsoft.com/windows/hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **watermarkPath** element specifies the source file for a custom watermark bitmap that DPInst displays on the left side of the DPInst welcome page and the DPInst finish page.
 
@@ -83,11 +83,4 @@ If a **watermarkPath** element is not specified, DPInst uses a default watermark
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

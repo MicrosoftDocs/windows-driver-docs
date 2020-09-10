@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 You can measure the amount of time that a driver spends in deferred procedure calls (DPCs) and interrupt service routines (ISRs) by tracing these events in the Windows kernel. This information will help you to minimize the time the driver spends at higher IRQLs, making the driver and the system more efficient.
 
-Microsoft recommends that DPCs should not run longer than 100 microseconds and ISRs should not run longer than 25 microseconds. For the most recent requirements, see the [Hardware Certification Program]( https://go.microsoft.com/fwlink/p/?linkid=227016).
+Microsoft recommends that DPCs should not run longer than 100 microseconds and ISRs should not run longer than 25 microseconds. For the most recent requirements, see the [Hardware Lab Kit](/windows-hardware/test/hlk/).
 
 The procedure that is described in this section includes the following steps:
 
@@ -199,10 +199,4 @@ The following excerpt from a sample report shows the distribution of DPC executi
 ```
 
  
-
- 
-
-
-
-
 

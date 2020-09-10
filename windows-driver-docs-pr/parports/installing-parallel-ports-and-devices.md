@@ -23,7 +23,7 @@ For more information about device installation, see:
 
 [Requirements for Vendor-Supplied Parallel Drivers](requirements-for-vendor-supplied-parallel-drivers.md)
 
-[Device Installation Overview](https://msdn.microsoft.com/library/windows/hardware/ff549455)
+[Device Installation Overview](../install/overview-of-device-and-driver-installation.md)
 
 For more information about system support for parallel ports and devices attached to parallel ports, see:
 
@@ -31,12 +31,7 @@ For more information about system support for parallel ports and devices attache
 
 [System-Supplied Parallel Drivers](system-supplied-parallel-drivers.md)
 
-[Client Interfaces to System-Supplied Parallel Drivers](https://msdn.microsoft.com/library/windows/hardware/ff543926)
+[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/index)
 
  
-
- 
-
-
-
 

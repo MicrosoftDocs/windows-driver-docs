@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY
 
 
-WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY is a TLV that contains CCMP cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEY](https://msdn.microsoft.com/library/windows/hardware/dn925855).
+WDI\_TLV\_CIPHER\_KEY\_CCMP\_KEY is a TLV that contains CCMP cipher algorithm key data for [OID\_WDI\_SET\_ADD\_CIPHER\_KEY](./oid-wdi-set-add-cipher-keys.md).
 
 ## TLV Type
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

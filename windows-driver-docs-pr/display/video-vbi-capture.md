@@ -18,19 +18,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_video_vbi_capture_gg"></span><span id="DDK_VIDEO_VBI_CAPTURE_GG"></span>
 
 
-DirectX 5.2 introduced two DirectDraw driver functions for video vertical blanking interval (VBI) capture. These functions are [*DxTransfer*](https://msdn.microsoft.com/library/windows/hardware/ff562887) and [*DxGetTransferStatus*](https://msdn.microsoft.com/library/windows/hardware/ff557438).
+DirectX 5.2 introduced two DirectDraw driver functions for video vertical blanking interval (VBI) capture. These functions are [*DxTransfer*](/windows/desktop/api/dxmini/nc-dxmini-pdx_transfer) and [*DxGetTransferStatus*](/windows/desktop/api/dxmini/nc-dxmini-pdx_gettransferstatus).
 
 The *DxTransfer* function facilitates video and VBI capture. Because this function is called at IRQ time, it must return as quickly as possible. If the display hardware is not ready to do a bus master at the time *DxTransfer* is called, then the video miniport driver should keep an internal queue of a number of bus masters (the actual number of bus masters saved in the queue is up to the driver developer). This allows the hardware to perform the bus master when the hardware is ready. In other words, the driver should not poll and wait for the bus master to complete.
 
-When DirectDraw calls the *DxTransfer* function, it supplies a transfer ID in the **dwTransferID** member of the [**DDTRANSFERININFO**](https://msdn.microsoft.com/library/windows/hardware/ff550356) structure. The video miniport driver can then use this identification when the *DxGetTransferStatus* function is called.
+When DirectDraw calls the *DxTransfer* function, it supplies a transfer ID in the **dwTransferID** member of the [**DDTRANSFERININFO**](/windows/desktop/api/dxmini/ns-dxmini-_ddtransferininfo) structure. The video miniport driver can then use this identification when the *DxGetTransferStatus* function is called.
 
-When a bus master completes, the display hardware must generate an IRQ. The video miniport driver must then call the [**IRQCallback**](https://msdn.microsoft.com/library/windows/hardware/ff568158) function that was specified in [*DxEnableIRQ*](https://msdn.microsoft.com/library/windows/hardware/ff557413). In this **IRQCallback** call, the video miniport driver specifies the DDIRQ\_BUSMASTER flag. DirectDraw then calls the [*DxGetTransferStatus*](https://msdn.microsoft.com/library/windows/hardware/ff557438) function to determine which bus master completed. The video miniport driver must return the transfer ID (**dwTransferID**) that DirectDraw passed to the driver in an earlier *DxTransfer* call. In this way, if the driver has five bus masters in the queue, DirectDraw can determine which one completed most recently.
-
- 
+When a bus master completes, the display hardware must generate an IRQ. The video miniport driver must then call the [**IRQCallback**](/windows/desktop/api/dxmini/nc-dxmini-pdx_irqcallback) function that was specified in [*DxEnableIRQ*](/windows/desktop/api/dxmini/nc-dxmini-pdx_enableirq). In this **IRQCallback** call, the video miniport driver specifies the DDIRQ\_BUSMASTER flag. DirectDraw then calls the [*DxGetTransferStatus*](/windows/desktop/api/dxmini/nc-dxmini-pdx_gettransferstatus) function to determine which bus master completed. The video miniport driver must return the transfer ID (**dwTransferID**) that DirectDraw passed to the driver in an earlier *DxTransfer* call. In this way, if the driver has five bus masters in the queue, DirectDraw can determine which one completed most recently.
 
  
-
-
-
-
 

@@ -1,12 +1,12 @@
 ---
-title: NDIS Packet Coalescing
-description: NDIS Packet Coalescing
+title: Introduction to NDIS Packet Coalescing
+description: Introduction to NDIS Packet Coalescing
 ms.assetid: 500FBF0F-54D9-4675-8E2D-447387DA8798
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# NDIS Packet Coalescing
+# Introduction to NDIS Packet Coalescing
 
 
 Starting with NDIS 6.30, network adapters can support NDIS packet coalescing. This feature reduces the processing overhead and power consumption on a host system due to the reception of random broadcast or multicast packets.

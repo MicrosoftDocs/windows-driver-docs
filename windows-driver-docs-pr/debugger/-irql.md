@@ -57,14 +57,14 @@ The **!irql** extension is only available in Windows Server 2003 and later versi
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about IRQLs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. (These resources may not be available in some languages and countries.)
+For information about IRQLs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 Remarks
 -------
 
 When the target computer breaks into the debugger, the IRQL changes, but the IRQL that was effective just before the debugger break is saved. The **!irql** extension displays the saved IRQL.
 
-Similarly, when a bug check occurs and a crash dump file is created, the IRQL saved in the crash dump file is the one immediately prior to the bug check, not the IRQL at which the [**KeBugCheckEx**](https://msdn.microsoft.com/library/windows/hardware/ff551961) routine was executed.
+Similarly, when a bug check occurs and a crash dump file is created, the IRQL saved in the crash dump file is the one immediately prior to the bug check, not the IRQL at which the [**KeBugCheckEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kebugcheckex) routine was executed.
 
 In both cases, the current IRQL is raised to DISPATCH\_LEVEL, except on x86 architectures. Thus, if more than one such event occurs, the IRQL displayed will also be DISPATCH\_LEVEL, making it useless for debugging purposes.
 
@@ -82,12 +82,7 @@ kd> !irql 1
 Debugger saved IRQL for processor 0x1 -- 0 (LOW_LEVEL)
 ```
 
-If the debugger is in verbose mode, a description of the IRQL itself is included. Here is an example from an Itanium processor:
-
-```dbgcmd
-kd> !irql
-Debugger saved IRQL for processor 0x0 -- 12 (PC_LEVEL) [Performance counter level]
-```
+If the debugger is in verbose mode, a description of the IRQL itself is included.
 
 The meaning of the IRQL number often depends on the processor. Here is an example from an x64 processor. Note that the IRQL number is the same as in the previous example, but the IRQL meaning is different:
 
@@ -97,10 +92,4 @@ Debugger saved IRQL for processor 0x0 -- 12 (SYNCH_LEVEL) [Synchronization level
 ```
 
  
-
- 
-
-
-
-
 

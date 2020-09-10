@@ -20,21 +20,15 @@ To remain backward compatible with older implementations, NDIS supports processo
 
 To support more than 64 processors, NDIS 6.20 and later provide updated versions of these interfaces:
 
--   [Receive Side Scaling (RSS)](ndis-receive-side-scaling2.md)
+-   [Receive Side Scaling (RSS)](./receive-side-scaling-version-2-rssv2-.md)
 
--   Processor information device driver interfaces (see [NDIS System Information Functions](https://msdn.microsoft.com/library/windows/hardware/ff564816))
+-   Processor information device driver interfaces (see [NDIS System Information Functions](/windows-hardware/drivers/ddi/_netvista/))
 
--   Resource allocation (see [NDIS Memory Management Interface](https://msdn.microsoft.com/library/windows/hardware/ff564749))
+-   Resource allocation (see [NDIS Memory Management Interface](/windows-hardware/drivers/ddi/_netvista/))
 
--   Read and write locks (see [NDIS Read Write Lock Reference](https://msdn.microsoft.com/library/windows/hardware/ff564797))
+-   Read and write locks (see [NDIS Read Write Lock Reference](/windows-hardware/drivers/ddi/_netvista/))
 
 Some of the NDIS device driver interface elements are obsolete for NDIS 6.20 and later drivers. For more information about obsolete interfaces, see [Obsolete Interfaces in NDIS 6.20](obsolete-interfaces-in-ndis-6-20.md).
 
  
-
- 
-
-
-
-
 

@@ -47,8 +47,8 @@ The KSPROPERTY\_QUALITY\_REPORT property is an optional property that should be 
 <td><p>Yes</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://msdn.microsoft.com/library/windows/hardware/ff566728" data-raw-source="[&lt;strong&gt;KSQUALITY&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/ff566728)"><strong>KSQUALITY</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksquality" data-raw-source="[&lt;strong&gt;KSQUALITY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality)"><strong>KSQUALITY</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,7 +58,7 @@ The KSPROPERTY\_QUALITY\_REPORT property is an optional property that should be 
 Remarks
 -------
 
-KSPROPERTY\_QUALITY\_REPORT has a property value of type [**KSQUALITY**](https://msdn.microsoft.com/library/windows/hardware/ff566728) structure. Use this structure to get or set the proportion of frames currently being used and the delta from optimal frame receipt time.
+KSPROPERTY\_QUALITY\_REPORT has a property value of type [**KSQUALITY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality) structure. Use this structure to get or set the proportion of frames currently being used and the delta from optimal frame receipt time.
 
 The class driver does not handle this property; the stream minidriver must provide handling on its own.
 
@@ -81,16 +81,9 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
-[**KSQUALITY**](https://msdn.microsoft.com/library/windows/hardware/ff566728)
-
- 
+[**KSQUALITY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksquality)
 
  
-
-
-
-
-
 

@@ -30,14 +30,14 @@ As a general rule, if the audio adapter drives a set of analog speakers that hav
 
 If the audio adapter does not have a hardware amplifier, see [Software Volume Control Support](software-volume-control-support.md) for information about the software support provided.
 
-**Note**  If there is a hardware amplifier, then the driver sets the range and the default level via the [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309) kernel streaming property. If there is not a hardware amplifier, Windows will create a software volume control APO.
+**Note**  If there is a hardware amplifier, then the driver sets the range and the default level via the [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md) kernel streaming property. If there is not a hardware amplifier, Windows will create a software volume control APO.
 If there is a physical volume knob on an active set of speakers, it should appear to Windows as a HID control. This will function similarly to the volume up and volume down buttons on a keyboard; Windows will see the volume knob turn and will program the volume control correspondingly (whether it is a hardware or software volume.)
 
  
 
-Ideally, if a set of active speakers ships in the same box with the audio adapter card, the factory should adjust the volume knob on the speakers to the position that works best with the adapter's default volume setting. If the audio adapter does not have a physical volume control knob, see the [Software Volume Control Support](https://msdn.microsoft.com/library/windows/hardware/ff539263) topic for information about the software support provided by Windows.
+Ideally, if a set of active speakers ships in the same box with the audio adapter card, the factory should adjust the volume knob on the speakers to the position that works best with the adapter's default volume setting. If the audio adapter does not have a physical volume control knob, see the [Software Volume Control Support](./software-volume-control-support.md) topic for information about the software support provided by Windows.
 
-**Note**  If the audio hardware exposes a hardware volume control (like a volume knob), then the driver sets the range and the default level via the [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://msdn.microsoft.com/library/windows/hardware/ff537309) Kernel Streaming property.
+**Note**  If the audio hardware exposes a hardware volume control (like a volume knob), then the driver sets the range and the default level via the [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md) Kernel Streaming property.
 
  
 
@@ -84,10 +84,7 @@ The following table shows the volume ranges and default volume levels for audio 
  
 
 \*The term non-microphone describes all playback devices and recording devices other than microphones.
-For information about the operational characteristics of the physical volume sliders that are represented by the software volume sliders in Windows applications, see [Audio-Tapered Volume Controls](https://msdn.microsoft.com/library/windows/desktop/dd370798.aspx).
+For information about the operational characteristics of the physical volume sliders that are represented by the software volume sliders in Windows applications, see [Audio-Tapered Volume Controls](/windows/desktop/CoreAudio/audio-tapered-volume-controls).
 
 ## <span id="related_topics"></span>Related topics
-[Customizing Default Audio Volume Settings](customizing-default-audio-volume-settings.md)  
-
-
-
+[Customizing Default Audio Volume Settings](customizing-default-audio-volume-settings.md)

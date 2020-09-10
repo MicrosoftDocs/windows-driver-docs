@@ -23,14 +23,9 @@ A dialog box procedure is a callback function that handles window messages sent 
 
 For all property sheet pages created using CPSUI, window messages are first intercepted by CPSUI before being passed to the application-supplied dialog box procedure. If the page was defined using a CPSUI-supplied template, the application-supplied dialog procedure can supply a return value indicating that CPSUI should process the message.
 
-A dialog box procedure can use the [**SetCPSUIUserData**](https://msdn.microsoft.com/library/windows/hardware/ff562624) and [**GetCPSUIUserData**](https://msdn.microsoft.com/library/windows/hardware/ff549922) functions to store and retrieve an application-supplied value.
+A dialog box procedure can use the [**SetCPSUIUserData**](/windows-hardware/drivers/ddi/compstui/nf-compstui-setcpsuiuserdata) and [**GetCPSUIUserData**](/windows-hardware/drivers/ddi/compstui/nf-compstui-getcpsuiuserdata) functions to store and retrieve an application-supplied value.
 
-For more information about using dialog box procedures with CPSUI, see the Remarks section for [**DLGPAGE**](https://msdn.microsoft.com/library/windows/hardware/ff547607).
-
- 
+For more information about using dialog box procedures with CPSUI, see the Remarks section for [**DLGPAGE**](/windows-hardware/drivers/ddi/compstui/ns-compstui-_dlgpage).
 
  
-
-
-
 

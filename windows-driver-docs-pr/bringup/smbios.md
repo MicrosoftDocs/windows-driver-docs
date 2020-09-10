@@ -12,7 +12,7 @@ The SMBIOS specification defines data structures and information that will go in
 
 To add uniformity to SMBIOS to better identify device information, we recommend the following as guidance when populating SMBIOS fields. The SMBIOS data below is also collected and used in various capacities. The data going into these fields should be planned in detail before populating using tools provided by BIOS/Firmware vendors. The hash generated for CHID targeting is based on the data populating these fields.
 
-Although this information is similar to that listed in the [Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx), the following tables prescribe additional levels of detail for some fields, increasing the level of specificity.
+Although this information is similar to that listed in the [Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx), the following tables prescribe additional levels of detail for some fields, increasing the level of specificity.
 
 ## Recommended settings when moving to SMBIOS 3.0
 
@@ -33,8 +33,8 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>04h</td>
             <td>32</td>
-            <td rowspan="8">Contoso, Inc. manufactures 2 product lines: 1) &quot;A&quot; series, and 2) &quot;B&quot; series. The &quot;A&quot; series of devices include the Contoso &quot;A11&quot; and &quot;A13&quot; device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The &quot;A11&quot; has three models: 1) the base model (the a110001) 2) a midsize model with a premium audio package (the a110002) and 3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the &quot;A11&quot; models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number.</td>
-            <td>&quot;Contoso&quot;</td>
+            <td rowspan="8">Contoso, Inc. manufactures 2 product lines: 1) "A" series, and 2) "B" series. The "A" series of devices include the Contoso "A11" and "A13" device sub-brands, each of which have different screen sizes and both support physically detachable keyboards (though the keyboards are sold as an option). The "A11" has three models: 1) the base model (the a110001) 2) a midsize model with a premium audio package (the a110002) and 3) a high-end model with a higher resolution touch panel (the a110003). Each model has gone through several generations of baseboard revisions, which are identified internally with codes bb01 through bb04. Each of the "A11" models can be further customized with different storage and memory configurations. To separate different production runs on their manufacturing floor, Contoso uses an internal identification system that combines the Family, Product Name, market region, and production run number.</td>
+            <td>"Contoso"</td>
         </tr>
         <tr>
             <td>Family</td>
@@ -42,7 +42,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>1Ah</td>
             <td>64</td>
-            <td>&quot;A11&quot;</td>
+            <td>"A11"</td>
         </tr>
         <tr>
             <td>Product Name</td>
@@ -50,7 +50,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>05h</td>
             <td>64</td>
-            <td>&quot;A11 a110001&quot;</td>
+            <td>"A11 a110001"</td>
         </tr>
         <tr>
             <td>Baseboard Product</td>
@@ -58,7 +58,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>05h</td>
             <td>32</td>
-            <td>&quot;bb03&quot;</td>
+            <td>"bb03"</td>
         </tr>
         <tr>
             <td>KU Number</td>
@@ -66,7 +66,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>19h</td>
             <td>32</td>
-            <td>&quot;A11a11001-EU-04&quot;</td>
+            <td>"A11a11001-EU-04"</td>
         </tr>
         <tr>
             <td>Serial Number</td>
@@ -74,7 +74,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>String</td>
             <td>07h</td>
             <td></td>
-            <td>&quot;A1B2C3456789ABC&quot;</td>
+            <td>"A1B2C3456789ABC"</td>
         </tr>
         <tr>
             <td>UUID</td>
@@ -82,7 +82,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>Varies</td>
             <td>08h</td>
             <td>16</td>
-            <td>Universal unique ID number<br>See section 7.2.1. in <a href="http://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
+            <td>Universal unique ID number<br>See section 7.2.1. in <a href="https://www.dmtf.org/standards/smbios">DMTF SMBIOS Specification 3.1</a> or later.</td>
         </tr>
         <tr>
             <td>Enclosure Type</td>
@@ -90,7 +90,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
             <td>Byte</td>
             <td>05h</td>
             <td>N/A</td>
-            <td>&quot;detachable&quot;</td>
+            <td>"detachable"</td>
         </tr>
         <tr>
             <td>BIOS Vendor</td>
@@ -131,7 +131,8 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
     </tbody>
 </table>
 
-**Note**  SMBIOS fields starting with **BIOS** may be considered optional or recommended. These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in the resulting CHID.
+> [!NOTE]
+> SMBIOS fields starting with **BIOS** may be considered optional or recommended. These are used to build the **Computer Hardware ID (CHID)** and ensure additional levels of uniqueness in the resulting CHID.
 
 <table>
 	<tbody>
@@ -152,7 +153,7 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 		<tr>
 			<td>Family</td>
             <td>Number of null-terminated string.</td>&gt;
-			<td>The value in the familyf field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The <b>family</b> value excludes variance by components, device generation, manufactured year, SKU, or other factors. The <b>family</b> value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
+			<td>The value in the family field identifies the company sub-brand name, specific to a grouping of similar devices know as a product line, under which the device is marketed to end users. The <b>family</b> value excludes variance by components, device generation, manufactured year, SKU, or other factors. The <b>family</b> value is generally not specific enough to indicate an actual device, but rather product line marketed to end users.</td>
 			<td>The format of the <b>family</b> field string is to match what End Users identify as Company’s sub-brand name, specific to a product line. The <b>family</b> field string should not contain the <b>manufacturer</b> name.</td>
 			<td>The <b>family</b> field is the second-level indicator to End Users, representing a grouping of similar devices know as a product line. This field should remain consistent for the life of the product line.</td>
 		</tr>
@@ -229,7 +230,6 @@ Although this information is similar to that listed in the [Windows 10 Driver Pu
 	</tbody>
 </table>
 
-
 The following table describes settings for the **Enclosure Type** field.
 
 <table>
@@ -279,12 +279,8 @@ The following table describes settings for the **Enclosure Type** field.
 	</tbody>
 </table>
 
-
 ## Related resources
 
-[Windows 10 Driver Publishing Workflow](http://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
+[Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx) 
 
-[SMBIOS DMTF Specifications](http://www.dmtf.org/standards/smbios)                                                 
-
-
-
+[SMBIOS DMTF Specifications](https://www.dmtf.org/standards/smbios)

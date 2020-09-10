@@ -11,8 +11,8 @@ ms.date: 10/17/2018
 
 This function returns identification information about the Energy Source (ES), which can be host-managed or device-managed.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
 
 
@@ -59,7 +59,7 @@ None.
 <td align="left"><strong>Device-Managed ES Identification</strong></td>
 <td align="left">11</td>
 <td align="left">5</td>
-<td align="left">&amp;gt; [!Note]<br/><p>&amp;gt;This field contains valid data only if the current ES policy is device-managed (i.e. bit 2 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
+<td align="left">&gt; [!Note]<br/><p>&gt;This field contains valid data only if the current ES policy is device-managed (i.e. bit 2 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
 
 <p>See Device-Managed ES Identification for information.</p></td>
 </tr>
@@ -67,7 +67,7 @@ None.
 <td align="left"><strong>Host-Managed ES Identification</strong></td>
 <td align="left">3</td>
 <td align="left">16</td>
-<td align="left">&amp;gt; [!Note]<br/><p>&amp;gt;This field contains valid data only if the current ES policy is host-managed (i.e. bit 3 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
+<td align="left">&gt; [!Note]<br/><p>&gt;This field contains valid data only if the current ES policy is host-managed (i.e. bit 3 of SET_ES_POLICY_STATUS (0, 0x70) is set). For all other ES policies, this field shall be 0.</p>
 
 <p>See Host-Managed ES Identification for information.</p></td>
 </tr>
@@ -116,7 +116,7 @@ If the value of ES policy is 0, the Device-Managed ES Identification field is va
 <td align="left"><strong>ES Health Check Frequency</strong></td>
 <td align="left">1</td>
 <td align="left">9</td>
-<td align="left"><p>The current frequency of the module&#39;s ES health assessment.</p>
+<td align="left"><p>The current frequency of the module's ES health assessment.</p>
 <p></em>Byte 0 – <em>AUTO_ES_HEALTH_CHECK_FREQUENCY</em> (0, 0xA9)</p></td>
 </tr>
 <tr class="even">
@@ -184,7 +184,7 @@ If the value of ES policy is 1, the Host-Managed ES Identification field is vali
 <td align="left"><strong>ES Health Check Frequency</strong></td>
 <td align="left">1</td>
 <td align="left">16</td>
-<td align="left"><p>The current frequency of the platform&#39;s ES health assessment.</p>
+<td align="left"><p>The current frequency of the platform's ES health assessment.</p>
 <p><em>Byte 0 – <em>AUTO_ES_HEALTH_FREQUENCY</em> (0, 0xA9).</p></td>
 </tr>
 <tr class="even">

@@ -1,5 +1,5 @@
 ---
-Description: Property-Value Retrieval
+description: Property-Value Retrieval
 title: Property-Value Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -52,7 +52,7 @@ HRESULT WpdObjectProperties::OnGetPropertyValues(
     if (hr == S_OK)
     {
         hr = GetPropertyValuesForObject(wszObjectID, pKeys, pValues);
-        CHECK_HR(hr, "Failed to get property values for object &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to get property values for object '%ws'", wszObjectID);
     }
 
     // S_OK or S_FALSE can be returned from GetPropertyValuesForObject( ).

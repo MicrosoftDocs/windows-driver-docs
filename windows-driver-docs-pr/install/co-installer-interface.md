@@ -29,13 +29,13 @@ typedef DWORD
 ```
 
 <a href="" id="installfunction"></a>*InstallFunction*  
-Specifies the device installation request being processed, in which the co-installer has the option of participating. These requests are specified using DIF codes, such as DIF_INSTALLDEVICE. For more information, see [Device Installation Function Codes](https://msdn.microsoft.com/library/windows/hardware/ff541307).
+Specifies the device installation request being processed, in which the co-installer has the option of participating. These requests are specified using DIF codes, such as DIF_INSTALLDEVICE. For more information, see [Device Installation Function Codes](/previous-versions/ff541307(v=vs.85)).
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
 Supplies a handle to a [device information set](device-information-sets.md).
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Optionally identifies a device that is the target of the device installation request. If this parameter is non-**NULL**, it identifies a device information element in the device information set. *DeviceInfoData* is non-**NULL** when [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) calls a device-specific co-installer. A class-specific co-installer can be called with a DIF request that has a **NULL***DeviceInfoData*, such as DIF_DETECT or DIF_FIRSTTIMESETUP.
+Optionally identifies a device that is the target of the device installation request. If this parameter is non-**NULL**, it identifies a device information element in the device information set. *DeviceInfoData* is non-**NULL** when [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) calls a device-specific co-installer. A class-specific co-installer can be called with a DIF request that has a **NULL***DeviceInfoData*, such as DIF_DETECT or DIF_FIRSTTIMESETUP.
 
 <a href="" id="context"></a>*Context*  
 Points to a [**COINSTALLER_CONTEXT_DATA**](#coinstaller-context-data) structure.
@@ -77,10 +77,4 @@ The following list describes the members of this structure:
 -   **PrivateData** points to a co-installer-allocated buffer. If a co-installer sets this pointer and requests postprocessing, **SetupDiCallClassInstaller** passes the pointer to the co-installer when it calls the co-installer for postprocessing.
 
  
-
- 
-
-
-
-
 

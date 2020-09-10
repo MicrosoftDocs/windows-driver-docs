@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.ifstacktable** extension displays the network interface stack table (ifStackTable).
 
-For more information about the interface stack table, see [Maintaining a Network Interface Stack](https://msdn.microsoft.com/windows/hardware/drivers/network/maintaining-a-network-interface-stack).
+For more information about the interface stack table, see [Maintaining a Network Interface Stack](../network/maintaining-a-network-interface-stack.md).
 
 ```console
 !ndiskd.ifstacktable 
@@ -50,7 +50,7 @@ INTERFACE STACK TABLE
     ffffdf801494c010   16                  17                 ffffdf801494ba20
 ```
 
-NDIS maintains the stack table for NDIS miniport adapters, NDIS 5.x filter intermediate drivers, and NDIS filter modules, whereas [NDIS MUX Intermediate Drivers](https://msdn.microsoft.com/windows/hardware/drivers/network/ndis-mux-intermediate-drivers) drivers are required to specify the internal interface relationship between the virtual miniport interface and the protocol lower interface. Therefore, the ifStackTable could be useful for seeing the interface stack relationships in a system with more complicated MUX drivers installed.
+NDIS maintains the stack table for NDIS miniport adapters, NDIS 5.x filter intermediate drivers, and NDIS filter modules, whereas [NDIS MUX Intermediate Drivers](../network/ndis-mux-intermediate-drivers.md) drivers are required to specify the internal interface relationship between the virtual miniport interface and the protocol lower interface. Therefore, the ifStackTable could be useful for seeing the interface stack relationships in a system with more complicated MUX drivers installed.
 
 Since there are no NDIS MUX Intermediate drivers installed on this example system, the ifStackTable only shows the stack relationships that NDIS has provided. In the following example, clicking on the handle for the Lower interface of the third row (handle ffffdf801494c010, Lower IfIndex 16) shows the interface for the QoS Packet Scheduler.
 
@@ -159,28 +159,21 @@ This shows that the WFP 802.3 MAC Layer LightWeight Filter sits above the QoS Pa
 ## <span id="see_also"></span>See also
 
 
-[Network Driver Design Guide](https://msdn.microsoft.com/windows/hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://msdn.microsoft.com/library/windows/hardware/ff571081)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Maintaining a Network Interface Stack](https://msdn.microsoft.com/windows/hardware/drivers/network/maintaining-a-network-interface-stack)
+[Maintaining a Network Interface Stack](../network/maintaining-a-network-interface-stack.md)
 
-[NDIS MUX Intermediate Drivers](https://msdn.microsoft.com/windows/hardware/drivers/network/ndis-mux-intermediate-drivers)
+[NDIS MUX Intermediate Drivers](../network/ndis-mux-intermediate-drivers.md)
 
 [**!ndiskd.netreport**](-ndiskd-netreport.md)
 
  
-
- 
-
-
-
-
-
 

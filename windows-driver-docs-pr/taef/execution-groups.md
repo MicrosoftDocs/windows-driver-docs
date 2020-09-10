@@ -47,7 +47,7 @@ Consider a native example:
 17
 18        TEST_METHOD(Test3)
 19        {
-20            Log::Comment(L"Test3 is blocked; so you shouldn&#39;t see this.");
+20            Log::Comment(L"Test3 is blocked; so you shouldn't see this.");
 21        }
 22    };
 ```

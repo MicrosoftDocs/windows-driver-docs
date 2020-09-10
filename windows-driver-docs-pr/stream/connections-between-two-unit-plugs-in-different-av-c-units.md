@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 Scenarios 7 and 8 represent connections between a subunit in one unit to a subunit in a different unit, where the target does not support subunit to unit connections within one AV/C unit. These type of connections require the **Signal source** and **Input select** CCM commands.
 
-Scenarios 7 and 8 describe subunit source or destination plugs that have the **KSPIN\_FLAG\_AVC\_PCRONLY** flag set in the **Flag** member of their [**AVCPRECONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554103) structures, which is translated by *Avc.sys* to 0xFF for their subunit's address.
+Scenarios 7 and 8 describe subunit source or destination plugs that have the **KSPIN\_FLAG\_AVC\_PCRONLY** flag set in the **Flag** member of their [**AVCPRECONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcpreconnectinfo) structures, which is translated by *Avc.sys* to 0xFF for their subunit's address.
 
 ### **Scenario 7**
 
@@ -28,7 +28,7 @@ Scenarios 7 and 8 describe subunit source or destination plugs that have the **K
 
 Scenario 7 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
-Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](https://msdn.microsoft.com/library/windows/hardware/ff554101) structure and specifies values for these members for a source subunit plug.
+Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure and specifies values for these members for a source subunit plug.
 
 <table>
 <colgroup>
@@ -167,9 +167,4 @@ The following list describes the meaning of values that appear in the preceding 
 -   The values in the **DeviceID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
  
-
- 
-
-
-
 

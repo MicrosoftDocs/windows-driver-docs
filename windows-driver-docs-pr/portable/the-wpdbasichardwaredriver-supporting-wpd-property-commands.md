@@ -1,5 +1,5 @@
 ---
-Description: Support for property commands (WpdBasicHardwareDriverSample)
+description: Support for property commands (WpdBasicHardwareDriverSample)
 title: Support for property commands (WpdBasicHardwareDriverSample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -45,7 +45,7 @@ HRESULT AddSupportedPropertyKeys(
 
     if (strObjectID.CompareNoCase(WPD_DEVICE_OBJECT_ID) == 0)
     {
-        // Add the PROPERTYKEYs for the &#39;DEVICE&#39; object
+        // Add the PROPERTYKEYs for the 'DEVICE' object
         AddDevicePropertyKeys(pKeys);
     }
 
@@ -136,7 +136,7 @@ The following excerpt from the **GetPropertyValuesForObject** method contains th
 
                 if (hr == S_OK)
                 {
-                    // Preset the property value to &#39;error not supported&#39;.  The actual value
+                    // Preset the property value to 'error not supported'.  The actual value
                     // will replace this value, if read from the device.
                     pValues->SetErrorValue(Key, HRESULT_FROM_WIN32(ERROR_NOT_SUPPORTED));
                     if (IsEqualPropertyKey(Key, WPD_OBJECT_ID))
@@ -229,7 +229,7 @@ The **GetSensorReading** helper function retrieves the most recent sensor readin
 ```cpp
 LONGLONG WpdObjectProperties::GetSensorReading()
 {    
-    // Ensure that this value isn&#39;t currently being accessed by another thread
+    // Ensure that this value isn't currently being accessed by another thread
     CComCritSecLock<CComAutoCriticalSection> Lock(m_SensorReadingCriticalSection);
 
     return m_llSensorReading;

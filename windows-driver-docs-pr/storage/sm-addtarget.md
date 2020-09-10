@@ -86,16 +86,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_AddTarget\_IN**](https://msdn.microsoft.com/library/windows/hardware/ff566218)
+[**SM\_AddTarget\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_addtarget_in)
 
-[**SM\_AddTarget\_OUT**](https://msdn.microsoft.com/library/windows/hardware/ff566219)
-
- 
+[**SM\_AddTarget\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_addtarget_out)
 
  
-
-
-
-
-
 

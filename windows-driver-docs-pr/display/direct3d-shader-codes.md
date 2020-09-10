@@ -17,17 +17,11 @@ This section describes the format of an individual shader code and the tokens th
 
 [Shader Code Tokens](shader-code-tokens.md)
 
-[Shader Operation Codes](https://msdn.microsoft.com/library/windows/hardware/ff569706)
+[Shader Operation Codes](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_instruction_opcode_type)
 
-[Shader Register Types](https://msdn.microsoft.com/library/windows/hardware/ff569707)
+[Shader Register Types](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type)
 
 [Shader Relative Addressing](shader-relative-addressing.md)
 
  
-
- 
-
-
-
-
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)
 
 
-The <strong>k*\\</strong>** commands display the stack frame of the given thread, together with related information..
+The **k\*** commands display the stack frame of the given thread, together with related information..
 
 User-Mode, x86 Processor
 
@@ -106,7 +106,7 @@ Displays the distance between adjacent frames. This distance is the number of by
 Hides source lines in the display. L is case sensitive.
 
 <span id="_______M"></span><span id="_______m"></span> M  
-Displays output using [Debugger Markup Language](debugger-markup-language-commands.md). Each frame number in the display is a link that you can click to set the local context and display local variables. For information about the local context, see [**.frame**](-frame--set-local-context-.md).
+Displays output using [Debugger Markup Language](debugger-markup-language-commands.md). Each frame number in the display is a link that you can select to set the local context and display local variables. For information about the local context, see [**.frame**](-frame--set-local-context-.md).
 
 <span id="_______FrameCount______"></span><span id="_______framecount______"></span><span id="_______FRAMECOUNT______"></span> *FrameCount*   
 Specifies the number of stack frames to display. You should specify this number in hexadecimal format, unless you have changed the radix by using the [**n (Set Number Base)**](n--set-number-base-.md) command. The default value is 20 (0x14), unless you have changed the default value by using the [**.kframes (Set Stack Length)**](-kframes--set-stack-length-.md) command.
@@ -210,7 +210,7 @@ When you use the **kv** command, the FPO information is added at the end of the 
 
  
 
-The **kd** command displays the raw stack data. Each DWORD value is displayed on a separate line. Symbol information is displayed for those lines together with associated symbols. This format creates a more detailed list than the other **k***\** commands. The **kd** command is equivalent to a [**dds (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command that uses the stack address as its parameter.
+The **kd** command displays the raw stack data. Each DWORD value is displayed on a separate line. Symbol information is displayed for those lines together with associated symbols. This format creates a more detailed list than the other **k**_\*_ commands. The **kd** command is equivalent to a [**dds (Display Memory)**](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command that uses the stack address as its parameter.
 
 If you use the **k** command at the beginning of a function (before the function prolog has been executed), you receive incorrect results. The debugger uses the frame register to compute the current backtrace, and this register is not set correctly for a function until its prolog has been executed.
 

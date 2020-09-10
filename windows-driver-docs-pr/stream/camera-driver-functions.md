@@ -11,24 +11,19 @@ ms.localizationpriority: medium
 
 The following camera driver functions are new for Windows 10.
 
-[**KsAcquireCachedMdl**](https://msdn.microsoft.com/library/windows/hardware/mt186387)
+[**KsAcquireCachedMdl**](/windows-hardware/drivers/ddi/ks/nf-ks-ksacquirecachedmdl)
 
-[**KsDeviceRegisterThermalDispatch**](https://msdn.microsoft.com/library/windows/hardware/mt186388)
+[**KsDeviceRegisterThermalDispatch**](/windows-hardware/drivers/ddi/ks/nf-ks-ksdeviceregisterthermaldispatch)
 
-[**KsGenerateThermalEvent**](https://msdn.microsoft.com/library/windows/hardware/mt186391)
+[**KsGenerateThermalEvent**](/windows-hardware/drivers/ddi/ks/nf-ks-ksgeneratethermalevent)
 
-[**KsInitializeDeviceProfile**](https://msdn.microsoft.com/library/windows/hardware/dn917797)
+[**KsInitializeDeviceProfile**](/windows-hardware/drivers/ddi/ks/nf-ks-ksinitializedeviceprofile)
 
-[**KsPersistDeviceProfile**](https://msdn.microsoft.com/library/windows/hardware/dn917889)
+[**KsPersistDeviceProfile**](/windows-hardware/drivers/ddi/ks/nf-ks-kspersistdeviceprofile)
 
-[**KsPublishDeviceProfile**](https://msdn.microsoft.com/library/windows/hardware/dn936920)
+[**KsPublishDeviceProfile**](/windows-hardware/drivers/ddi/ks/nf-ks-kspublishdeviceprofile)
 
-[**KsReleaseCachedMdl**](https://msdn.microsoft.com/library/windows/hardware/mt186396)
-
- 
+[**KsReleaseCachedMdl**](/windows-hardware/drivers/ddi/ks/nf-ks-ksreleasecachedmdl)
 
  
-
-
-
 

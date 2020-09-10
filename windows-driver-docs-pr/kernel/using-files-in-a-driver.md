@@ -27,14 +27,9 @@ Kernel-mode components refer to a file by its object name, which is **\\DosDevic
 
     For more information, see [Using a File Handle](using-a-file-handle.md).
 
-3.  Close the handle by calling [**ZwClose**](https://msdn.microsoft.com/library/windows/hardware/ff566417).
+3.  Close the handle by calling [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose).
 
 Every time that you open a handle to a file, the Windows executive creates a file object that represents the file, and it returns an open handle to that object. Therefore, multiple file objects can exist for a single file. (Because a user-mode application can copy a handle, multiple handles can also exist for the same file object.) After all the open handles to a file object are closed, the Windows executive deletes the file object.
 
  
-
- 
-
-
-
 

@@ -14,13 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_alpha_blend_data_loading_set_gg"></span><span id="DDK_ALPHA_BLEND_DATA_LOADING_SET_GG"></span>
 
 
-The minimal interoperability configuration set for alpha-blend data loading consists of all defined values of the **bConfigDataType** member of the [**DXVA\_ConfigAlphaLoad**](https://msdn.microsoft.com/library/windows/hardware/ff563129) structure.
+The minimal interoperability configuration set for alpha-blend data loading consists of all defined values of the **bConfigDataType** member of the [**DXVA\_ConfigAlphaLoad**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) structure.
 
  
-
- 
-
-
-
-
 

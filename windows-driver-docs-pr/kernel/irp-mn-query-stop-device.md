@@ -13,10 +13,15 @@ ms.localizationpriority: medium
 
 All PnP drivers must handle this IRP.
 
+## Value
+
+0x05
+
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -50,9 +55,9 @@ This IRP is handled first by the driver at the top of the device stack and then 
 
 In response to this IRP, Windows 2000 and later drivers indicate whether it is safe to stop the device for resource rebalancing.
 
-On Windows 98/Me, this IRP is sent not only during resource rebalancing, but also when a device is being disabled. Because a driver cannot distinguish these two situations, it should proceed as if the device were being disabled. If there are any open handles to the device, the driver should fail this IRP. If no handles are open, the driver should proceed as described in [Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 98/Me)](https://msdn.microsoft.com/library/windows/hardware/ff546684).
+On Windows 98/Me, this IRP is sent not only during resource rebalancing, but also when a device is being disabled. Because a driver cannot distinguish these two situations, it should proceed as if the device were being disabled. If there are any open handles to the device, the driver should fail this IRP. If no handles are open, the driver should proceed as described in [Handling an IRP\_MN\_QUERY\_STOP\_DEVICE Request (Windows 98/Me)](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-query-stop-device-request--windows-98-me-).
 
-See [Plug and Play](https://msdn.microsoft.com/library/windows/hardware/ff547125) for the general rules for handling [Plug and Play Minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play Minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

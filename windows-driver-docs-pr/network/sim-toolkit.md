@@ -1,12 +1,12 @@
 ---
-title: SIM toolkit
-description: SIM toolkit
+title: SIM toolkit Overview
+description: SIM toolkit Overview
 ms.assetid: 39869948-d61c-438c-a90c-05dcb099acad
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# SIM toolkit
+# SIM toolkit Overview
 
 
 SIM toolkit is a set of applications on the SIM that can be activated by network events or user actions. SIM toolkit applications are represented by proactive commands that are defined by 3GPP and ETSI specifications. Windows 10 Mobile supports a subset of the SIM toolkit commands. For a list of the supported commands, see [SIM toolkit commands](sim-toolkit-commands.md).
@@ -56,7 +56,7 @@ OEMs can modify the display period for certain dialogs or messages if the defaul
 
 -   GETINKEY: 60 seconds
 
-For information about these customizations, see [Customize the SIM toolkit](https://msdn.microsoft.com/library/windows/hardware/mt629102).
+For information about these customizations, see [Customize the SIM toolkit](/windows-hardware/customize/mobile/mcsf/customize-the-sim-toolkit).
 
 ### Example of processing a SIM toolkit command
 
@@ -112,11 +112,4 @@ The following settings are recommended:
 [SIM toolkit commands](sim-toolkit-commands.md)
 
  
-
- 
-
-
-
-
-
 

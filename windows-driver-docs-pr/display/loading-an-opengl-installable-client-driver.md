@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The OpenGL runtime accesses the registry to determine which OpenGL installable client driver (ICD) to load. To load the OpenGL ICD, the OpenGL runtime:
 
--   Determines the name, version, and flags that are associated with the OpenGL ICD by calling the [**D3DKMTQueryAdapterInfo**](https://msdn.microsoft.com/library/windows/hardware/ff547100) function with the KMTQAITYPE\_UMOPENGLINFO value set in the **Type** member of the [**D3DKMT\_QUERYADAPTERINFO**](https://msdn.microsoft.com/library/windows/hardware/ff548203) structure that the *pData* parameter points to.
+-   Determines the name, version, and flags that are associated with the OpenGL ICD by calling the [**D3DKMTQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo) function with the KMTQAITYPE\_UMOPENGLINFO value set in the **Type** member of the [**D3DKMT\_QUERYADAPTERINFO**](/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_queryadapterinfo) structure that the *pData* parameter points to.
 
 -   Checks the version number of the OpenGL ICD that **D3DKMTQueryAdapterInfo** returns to validate the version of the OpenGL ICD.
 
@@ -27,7 +27,7 @@ The OpenGL runtime accesses the registry to determine which OpenGL installable c
 
      
 
-To locate the name of the OpenGL ICD, [**D3DKMTQueryAdapterInfo**](https://msdn.microsoft.com/library/windows/hardware/ff547100) searches the registry in the following key:
+To locate the name of the OpenGL ICD, [**D3DKMTQueryAdapterInfo**](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo) searches the registry in the following key:
 
 ```registry
 HKLM/System/CurrentControlSet/Control/Class/{Adapter GUID}/0000/
@@ -78,10 +78,4 @@ REG\_DWORD
 A flag bitmask of the 32-bit OpenGL ICD for 64-bit Windows Vista.
 
  
-
- 
-
-
-
-
 

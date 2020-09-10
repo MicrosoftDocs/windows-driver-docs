@@ -66,13 +66,7 @@ class MSiSCSI_ManagementOperations
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_ManagementOperations](https://msdn.microsoft.com/library/windows/hardware/ff563069) data structures.
+When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_ManagementOperations](/windows-hardware/drivers/ddi/index) data structures.
 
  
-
- 
-
-
-
-
 

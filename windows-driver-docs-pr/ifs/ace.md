@@ -59,30 +59,23 @@ Requirements: ntifs.h (include ntifs.h)
 ## Related topics
 
 
-[**ACCESS\_ALLOWED\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff538796)
+[**ACCESS\_ALLOWED\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_access_allowed_ace)
 
-[**ACCESS\_DENIED\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff538831)
+[**ACCESS\_DENIED\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_access_denied_ace)
 
-[**ACE\_HEADER**](https://msdn.microsoft.com/library/windows/hardware/ff538847)
+[**ACE\_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_ace_header)
 
-[**ACL**](https://msdn.microsoft.com/library/windows/hardware/ff538866)
+[**ACL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl)
 
-[**RtlAddAccessAllowedAce**](https://msdn.microsoft.com/library/windows/hardware/ff552092)
+[**RtlAddAccessAllowedAce**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtladdaccessallowedace)
 
-[**RtlGetAce**](https://msdn.microsoft.com/library/windows/hardware/ff552288)
+[**RtlGetAce**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlgetace)
 
-[**SID**](https://msdn.microsoft.com/library/windows/hardware/ff556740)
+[**SID**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_sid)
 
-[**SYSTEM\_ALARM\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff556769)
+[**SYSTEM\_ALARM\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_system_alarm_ace)
 
-[**SYSTEM\_AUDIT\_ACE**](https://msdn.microsoft.com/library/windows/hardware/ff556771)
-
- 
+[**SYSTEM\_AUDIT\_ACE**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_system_audit_ace)
 
  
-
-
-
-
-
 

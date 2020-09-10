@@ -61,12 +61,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://msdn.microsoft.com/library/windows/hardware/dn925858)
+[OID\_WDI\_SET\_ADD\_WOL\_PATTERN](./oid-wdi-set-add-wol-pattern.md)
 
  
-
- 
-
-
-
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Ctrpp task
 
 
-The Windows Driver Kit (WDK) provides the Ctrpp task so that you can run the ctrpp.exe tool when you build your driver using MSBuild. For information about using ctrpp.exe, see [**CTRPP**](https://msdn.microsoft.com/library/windows/desktop/aa372128).
+The Windows Driver Kit (WDK) provides the Ctrpp task so that you can run the ctrpp.exe tool when you build your driver using MSBuild. For information about using ctrpp.exe, see [**CTRPP**](/windows/desktop/PerfCtrs/ctrpp).
 
 MSBuild uses the Ctrpp Item to send the parameters for the Ctrpp task to ctrpp.exe. The Ctrpp item in the project files accesses the item metadata for ctrpp.exe.
 
@@ -112,7 +112,7 @@ In the example above, MSBuild invokes ctrpp.exe on the file a.manifest, with the
 <td align="left">GenerateNotificationCallback</td>
 <td align="left">%(Ctrpp.GenerateNotificationCallback)</td>
 <td align="left"><strong>-NotificationCallback</strong></td>
-<td align="left">Optional Boolean parameter. Generates customized notification callback template. Similar to the &quot;callback&quot; attribute in the &lt;provider&gt; element.</td>
+<td align="left">Optional Boolean parameter. Generates customized notification callback template. Similar to the "callback" attribute in the &lt;provider&gt; element.</td>
 </tr>
 <tr class="even">
 <td align="left">GenerateResourceSourceFile</td>
@@ -140,4 +140,4 @@ In the example above, MSBuild invokes ctrpp.exe on the file a.manifest, with the
 ## <span id="related_topics"></span>Related topics
 
 
-[**CTRPP**](https://msdn.microsoft.com/library/windows/desktop/aa372128)
+[**CTRPP**](/windows/desktop/PerfCtrs/ctrpp)

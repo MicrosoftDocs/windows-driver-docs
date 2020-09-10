@@ -1,5 +1,5 @@
 ---
-Description: Retrieving a list of Supported Resources
+description: Retrieving a list of Supported Resources
 title: Retrieving a list of Supported Resources
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -43,7 +43,7 @@ HRESULT WpdObjectResources::OnGetSupportedResources(
     if (hr == S_OK)
     {
         hr = GetSupportedResourcesForObject(wszObjectID, pKeys);
-        CHECK_HR(hr, "Failed to get supported resources for object &#39;%ws&#39;", wszObjectID);
+        CHECK_HR(hr, "Failed to get supported resources for object '%ws'", wszObjectID);
     }
 
     if (hr == S_OK)

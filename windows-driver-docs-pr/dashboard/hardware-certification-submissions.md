@@ -9,16 +9,16 @@ ms.localizationpriority: medium
 
 # Hardware submissions
 
-The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Windows Hardware Dev Center dashboard. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
+The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Partner Center. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
-To develop your device, download the [Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+To develop your device, download the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](https://go.microsoft.com/fwlink/p/?LinkId=219237).
+To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](https://go.microsoft.com/fwlink/p/?LinkId=219237).
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
 > [!NOTE]
-> We strongly encourage you to include public driver symbols as part your HLK package. Including symbols will improve the data returned in your [driver reliability report](driver-failure-reporting.md) and are never shared externally.  See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
+> We strongly encourage you to include public driver symbols as part your HLK package. See [Public Symbols and Private Symbols](../devtest/public-symbols-and-private-symbols.md) to learn how to create public symbols.  See [Step 8: Create a submission package](/windows-hardware/test/hlk/getstarted/step-8-create-a-submission-package) to learn how to include symbols with your package. Note that any .pdb files in your submission will be removed before being published.
 
 - To submit an HLK or HCK package, see [Create a new hardware submission](create-a-new-hardware-submission.md).
 
@@ -79,8 +79,8 @@ The hardware certification submission list displays the following information ab
 <td><p>Your permission for the submission. Possible values are:</p>
 <ul>
 <li>Author: Author of the driver. You can complete all tasks and share the driver with partners.</li>
-<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can&#39;t share the driver with additional companies.</li>
-<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can&#39;t create shipping labels or create DUA packages.</li>
+<li>Publisher: The driver is shared with you. You can download the driver, create Windows Update shipping labels, and create DUA packages. You can't share the driver with additional companies.</li>
+<li>Read-only: The driver was submitted to Windows Update on your behalf. You can see the driver details, download the driver, and view the shipping label that was submitted on your behalf. You can't create shipping labels or create DUA packages.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -130,9 +130,12 @@ This section displays certification information. Select **See more info** to exp
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr class="even">
+<td><p>Retpoline Compiled</p></td>
+<td><p>Indicates whether or not your driver was compiled with the Retpoline flag.  A Check mark = True and an X = False.  For more information about this change see our <a href="https://techcommunity.microsoft.com/t5/Hardware-Dev-Center/Upcoming-Hardware-Dev-Center-changes-that-enable-support-for/ba-p/504574">blog post</a>. </p></td>
+</tr><tr class="even">
 <td><p>Is this a Universal Windows driver?</p></td>
-<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers" data-raw-source="[Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers)">Getting Started with Universal Windows drivers</a>.</p></td>
+<td><p>Indicates whether or not your driver meets the Universal Windows Platform requirements. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers" data-raw-source="[Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md)">Getting Started with Universal Windows drivers</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>What type of device?</p></td>
@@ -150,7 +153,7 @@ This section displays certification information. Select **See more info** to exp
 </tr>
 <tr class="even">
 <td><p>Announcement date</p></td>
-<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is **Today**.</p></td>
+<td><p>The date when you want your product included on the Windows Server Catalog, the Windows Certified Product List, and the Universal Driver List. The default setting is <strong>Today</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Marketing names</p></td>
@@ -159,7 +162,7 @@ This section displays certification information. Select **See more info** to exp
 </tbody>
 </table>
 
-Submissions are automatically assigned Declarative and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declarative=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declarative and another set is not, the entire submission would be marked as `Declarative=False`. Each set should be separated into two submissions to ensure they are marked appropriately. 
+Submissions are automatically assigned Declarative and Universal attributes based off the entire submission contents.  If you want a submission to be marked as `Declarative=True` and/or `Universal=True`, all files and INFs within the submission must be compliant with the appropriate attribute(s).  For example, a merged HLK package can contain two driver sets for different OS certifiations. If one set is Declarative and another set is not, the entire submission would be marked as `Declarative=False`. INF only packages will have Universal greyed out as there are no binaries to validate.  Each set should be separated into two submissions to ensure they are marked appropriately. 
 
 If you want to add or update your announcement date, use the **Announcement date (UTC)** field and select **Submit**.
 
@@ -197,7 +200,7 @@ The shipping label list displays the shipping labels for this submission. This l
 </tr>
 <tr class="odd">
 <td><p>Destination</p></td>
-<td><p>For a Windows Update shipping label, the destination is &quot;Windows Update&quot;.</p>
+<td><p>For a Windows Update shipping label, the destination is "Windows Update".</p>
 <p>For a shared driver, the destination is the <strong>Publisher display name</strong> of the company you selected for <strong>Who is publishing?</strong> when you created the shipping label. This allows you to easily see all companies that you have shared your driver with.</p></td>
 </tr>
 <tr class="even">

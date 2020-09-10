@@ -1,14 +1,18 @@
 - name: "Bring up"
   href: index.md
 - name: "Firmware Windows Engineering Guide (WEG)"
-  href: firmware-weg.md
+# Auto-expanded node
   items: 
+  - name: "Firmware Windows Engineering Guide (WEG)"
+    href: firmware-weg.md
   - name: "UEFI security"
-    href: uefi-security.md
+# Auto-expanded node
     items: 
+    - name: "UEFI security"
+      href: uefi-security.md
     - name: "Unified Extensible Firmware Interface (UEFI)"
       href: unified-extensible-firmware-interface.md
-    - name: "Device Guard and Credential Guard"
+    - name: "Hypervisor-Protected Code Integrity (HVCI)"
       href: device-guard-and-credential-guard.md
     - name: "Fixed ComBuffer and Windows SMM Security Mitigation Table (WSMT)"
       href: fixed-combuffer-and-windows-smm-security-mitigation-table.md
@@ -21,8 +25,10 @@
     - name: "Trusted Platform Module (TPM) considerations"
       href: trusted-platform-module-considerations.md
   - name: "Firmware update"
-    href: firmware-update.md
+# Auto-expanded node
     items: 
+    - name: "Firmware update"
+      href: firmware-update.md
     - name: "Build and submit a firmware package to Windows Update (WU)"
       href: build-and-submit-a-firmware-package-to-windows-update.md
     - name: "Target a system using CHID"
@@ -38,8 +44,10 @@
   - name: "Wi-Fi support in firmware"
     href: wi-fi-support-in-firmware.md
   - name: "Switch from legacy MBR disk to GPT disk with Windows 10"
-    href: switch-from-legacy-mbr-disk-to-gpt-disk-with-windows-10.md
+# Auto-expanded node
     items: 
+    - name: "Switch from legacy MBR disk to GPT disk with Windows 10"
+      href: switch-from-legacy-mbr-disk-to-gpt-disk-with-windows-10.md
     - name: "Switch legacy BIOS boot and CSM to UEFI and GPT"
       href: switch-legacy-bios-boot-and-csm-to-uefi-and-gpt.md
     - name: "New method: Windows 10, version 1703 and later"
@@ -57,14 +65,20 @@
   - name: "Sample PowerShell script to query SMBIOS locally"
     href: sample-powershell-script-to-query-smbios-locally.md
 - name: "Boot and UEFI"
-  href: boot-and-uefi.md
+# Auto-expanded node
   items: 
+  - name: "Boot and UEFI"
+    href: boot-and-uefi.md
   - name: "UEFI in Windows"
-    href: uefi-in-windows.md
+# Auto-expanded node
     items: 
+    - name: "UEFI in Windows"
+      href: uefi-in-windows.md
     - name: "Minimum UEFI requirements for Windows on SoC platforms"
-      href: minimum-uefi-requirements-for-windows-on-soc-platforms.md
+# Auto-expanded node
       items: 
+      - name: "Minimum UEFI requirements for Windows on SoC platforms"
+        href: minimum-uefi-requirements-for-windows-on-soc-platforms.md
       - name: "UEFI requirements that apply to all Windows editions on SoC platforms"
         href: uefi-requirements-that-apply-to-all-windows-platforms.md
       - name: "UEFI requirements for Windows 10 Mobile"
@@ -72,16 +86,22 @@
       - name: "UEFI requirements for USB flashing support"
         href: uefi-requirements-for-usb-flashing-support.md
     - name: "UEFI protocols for Windows"
-      href: uefi-protocols-for-windows.md
+# Auto-expanded node
       items: 
+      - name: "UEFI protocols for Windows"
+        href: uefi-protocols-for-windows.md
       - name: "UEFI entropy gathering protocol"
-        href: uefi-entropy-gathering-protocol.md
+# Auto-expanded node
         items: 
+        - name: "UEFI entropy gathering protocol"
+          href: uefi-entropy-gathering-protocol.md
         - name: "EFI_RNG_SERVICE_BINDING_PROTOCOL"
           href: efi-rng-service-binding-protocol.md
         - name: "EFI_RNG_PROTOCOL"
-          href: efi-rng-protocol.md
+# Auto-expanded node
           items: 
+          - name: "EFI_RNG_PROTOCOL"
+            href: efi-rng-protocol.md
           - name: "EFI_RNG_PROTOCOL.GetInfo"
             href: efi-rng-protocol-getinfo.md
           - name: "EFI_RNG_PROTOCOL.GetRNG"
@@ -89,8 +109,10 @@
           - name: "EFI_RNG_ALGORITHM_LIST"
             href: efi-rng-algorithm-list.md
       - name: "UEFI USB function protocol"
-        href: uefi-usb-function-protocol.md
+# Auto-expanded node
         items: 
+        - name: "UEFI USB function protocol"
+          href: uefi-usb-function-protocol.md
         - name: "EFI_USBFN_IO_PROTOCOL.AbortTransfer"
           href: efi-usbfn-io-protocolaborttransfer.md
         - name: "EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer"
@@ -168,8 +190,10 @@
         - name: "UEFI Sequence Diagram"
           href: uefi-sequence-diagram.md
       - name: "UEFI simple I/O protocol"
-        href: uefi-simple-io-protocol.md
+# Auto-expanded node
         items: 
+        - name: "UEFI simple I/O protocol"
+          href: uefi-simple-io-protocol.md
         - name: "EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize"
           href: efi-simple-winphone-io-protocolinitialize.md
         - name: "EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Read"
@@ -179,13 +203,17 @@
         - name: "EFI_SIMPLE_WINPHONE_IO_PROTOCOL.GetMaxPacketSize"
           href: efi-simple-winphone-io-protocolgetmaxpacketsize.md
       - name: "UEFI check signature protocol"
-        href: uefi-check-signature-protocol.md
+# Auto-expanded node
         items: 
+        - name: "UEFI check signature protocol"
+          href: uefi-check-signature-protocol.md
         - name: "EFI_CHECKSIG_PROTOCOL.EfiCheckSignatureAndHash"
           href: efi-checksig-protocolefichecksignatureandhash.md
       - name: "UEFI battery charging protocol"
-        href: uefi-battery-charging-protocol.md
+# Auto-expanded node
         items: 
+        - name: "UEFI battery charging protocol"
+          href: uefi-battery-charging-protocol.md
         - name: "EFI_BATTERY_CHARGING_PROTOCOL"
           href: efi-battery-charging-protocol.md
         - name: "EFI_BATTERY_CHARGING_PROTOCOL.GetBatteryInformation"
@@ -199,8 +227,10 @@
         - name: "EFI_BATTERY_CHARGING_COMPLETION_TOKEN"
           href: efi-battery-charging-completion-token.md
       - name: "UEFI display power state protocol"
-        href: uefi-display-power-state-protocol.md
+# Auto-expanded node
         items: 
+        - name: "UEFI display power state protocol"
+          href: uefi-display-power-state-protocol.md
         - name: "EFI_DISPLAY_POWER_PROTOCOL"
           href: efi-display-power-protocol.md
         - name: "EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState"
@@ -210,11 +240,15 @@
         - name: "EFI_DISPLAY_POWER_STATE"
           href: efi-display-power-state.md
     - name: "Windows UEFI firmware update platform"
-      href: windows-uefi-firmware-update-platform.md
+# Auto-expanded node
       items: 
+      - name: "Windows UEFI firmware update platform"
+        href: windows-uefi-firmware-update-platform.md
       - name: "System and device firmware updates via a firmware driver package"
-        href: system-and-device-firmware-updates-via-a-firmware-driver-package.md
+# Auto-expanded node
         items: 
+        - name: "System and device firmware updates via a firmware driver package"
+          href: system-and-device-firmware-updates-via-a-firmware-driver-package.md
         - name: "Populating the ESRT table"
           href: populating-the-esrt-table.md
         - name: "Customizing firmware for different geographic regions"
@@ -226,8 +260,10 @@
         - name: "Installing the update"
           href: installing-the-update.md
       - name: "Implementing support for UEFI firmware updates"
-        href: implementing-support-for-uefi-firmware-updates.md
+# Auto-expanded node
         items: 
+        - name: "Implementing support for UEFI firmware updates"
+          href: implementing-support-for-uefi-firmware-updates.md
         - name: "ESRT table definition"
           href: esrt-table-definition.md
         - name: "Plug and play device"
@@ -243,21 +279,29 @@
         - name: "Firmware update status"
           href: firmware-update-status.md
       - name: "User experience for UEFI firmware updates"
-        href: user-experience-for-uefi-firmware-updates.md
+# Auto-expanded node
         items: 
+        - name: "User experience for UEFI firmware updates"
+          href: user-experience-for-uefi-firmware-updates.md
         - name: "Boot screen components"
           href: boot-screen-components.md
   - name: "Battery charging in the boot environment for Windows 10 Mobile"
-    href: battery-charging-in-the-boot-environment.md
+# Auto-expanded node
     items: 
+    - name: "Battery charging in the boot environment for Windows 10 Mobile"
+      href: battery-charging-in-the-boot-environment.md
     - name: "Architecture of the UEFI battery charging application provided by Microsoft"
       href: architecture-of-the-uefi-battery-charging-application.md
 - name: "Windows ACPI design guide for SoC platforms"
-  href: windows-acpi-design-guide-for-soc-platforms.md
+# Auto-expanded node
   items: 
+  - name: "Windows ACPI design guide for SoC platforms"
+    href: windows-acpi-design-guide-for-soc-platforms.md
   - name: "Overview of Windows support for ACPI 5.0"
-    href: overview-of-windows-support-for-acpi-5-0.md
+# Auto-expanded node
     items: 
+    - name: "Overview of Windows support for ACPI 5.0"
+      href: overview-of-windows-support-for-acpi-5-0.md
     - name: "Summary of ACPI support in Windows"
       href: summary-of-acpi-support-in-windows.md
     - name: "Hardware requirements for SoC-based platforms"
@@ -267,22 +311,30 @@
     - name: "Microsoft ASL compiler"
       href: microsoft-asl-compiler.md
   - name: "ACPI system description tables"
-    href: acpi-system-description-tables.md
+# Auto-expanded node
     items: 
+    - name: "ACPI system description tables"
+      href: acpi-system-description-tables.md
+    - name: "Debug Port Table 2 (DBG2)"
+      href: acpi-debug-port-table.md
     - name: "Generate ACPI tables by using AcpiGenFx"
       href: generate-acpi-tables-by-using-acpigenfx.md
   - name: "Device management namespace objects"
     href: device-management-namespace-objects.md
   - name: "General-purpose I/O (GPIO)"
-    href: general-purpose-i-o--gpio-.md
+# Auto-expanded node
     items: 
+    - name: "General-purpose I/O (GPIO)"
+      href: general-purpose-i-o--gpio-.md
     - name: "GPIO controller requirements checklist"
       href: gpio-controller-requirements-checklist.md
   - name: "Simple peripheral bus (SPB)"
     href: simple-peripheral-bus--spb-.md
   - name: "Device power management"
-    href: device-power-management.md
+# Auto-expanded node
     items: 
+    - name: "Device power management"
+      href: device-power-management.md
     - name: "Firmware requirements for D3cold"
       href: firmware-requirements-for-d3cold.md
   - name: "ACPI-defined devices"
@@ -290,8 +342,10 @@
   - name: "Other ACPI namespace objects"
     href: other-acpi-namespace-objects.md
   - name: "ACPI device-specific methods"
-    href: acpi-device-specific-methods.md
+# Auto-expanded node
     items: 
+    - name: "ACPI device-specific methods"
+      href: acpi-device-specific-methods.md
     - name: "GPIO controller Device-Specific Method (_DSM)"
       href: gpio-controller-device-specific-method---dsm-.md
     - name: "Battery Device-Specific Method"
@@ -305,8 +359,10 @@
     - name: "Windows button array Device-Specific Method (_DSM)"
       href: windows-button-array-device-specific-method---dsm-.md
 - name: "Security"
-  href: security-overview.md
+# Auto-expanded node
   items: 
+  - name: "Security"
+    href: security-overview.md
   - name: "Secure boot and device encryption overview"
     href: secure-boot-and-device-encryption-overview.md
   - name: "Secure MOR implementation"

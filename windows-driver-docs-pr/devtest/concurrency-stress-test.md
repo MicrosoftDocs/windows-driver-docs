@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Power Framework Delay Fuzzing
 
 
-The Power Framework Delay Fuzzing option randomizes thread schedules to help detect concurrency bugs in drivers that use the [power management framework (PoFx)](https://msdn.microsoft.com/library/windows/hardware/hh406637). This option is not recommended for drivers that do not directly utilize the power management framework (PoFx).
+The Power Framework Delay Fuzzing option randomizes thread schedules to help detect concurrency bugs in drivers that use the [power management framework (PoFx)](../kernel/overview-of-the-power-management-framework.md). This option is not recommended for drivers that do not directly utilize the power management framework (PoFx).
 
 **Note**  This option is available starting with Windows 8.
 
@@ -47,10 +47,4 @@ You can activate the Power Framework Delay Fuzzing feature for one or more drive
     5.  Restart the computer.
 
  
-
- 
-
-
-
-
 
