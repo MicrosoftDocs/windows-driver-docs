@@ -16,15 +16,13 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 
 ## In this section
 
-[CFU engineering guide](cfu-engineering-guide.md)
-
-[CFU virtual HID device firmware update](cfu-virtual-hid-device-firmware-update.md)
-
-[CFU inbox HIDCFU driver INF sample](cfu-inbox-hidcfu-driver-inf-sample.md)
-
-[CFU standalone tool sample](cfu-standalone-tool-sample.md)
-
-[CFU protocol specification](cfu-specification.md)
+| Topic | Description |
+|--|--|
+| [CFU engineering guide](cfu-engineering-guide.md) | TBD |
+| [CFU virtual HID device firmware update](cfu-virtual-hid-device-firmware-update.md) | TBD |
+| [CFU inbox HIDCFU driver INF sample](cfu-inbox-hidcfu-driver-inf-sample.md) | TBD |
+| [CFU standalone tool sample](cfu-standalone-tool-sample.md) | TBD |
+| [CFU protocol specification](cfu-specification.md) | TBD |
 
 ## CFU repository on GitHub
 
