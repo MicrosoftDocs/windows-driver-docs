@@ -22,9 +22,8 @@ Documentation updated to WDI version 1.1.9.
 | [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | New TLV type added |
 | [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
 | [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | Added Host-WPA3-FIPS mode |
+
 NOTE: this needs more information regarding the notes for the FIPS mode, as well as links to the new TLV type. Is a FIPS mode article required? Can we reference a future version of Windows, and if so, what is the verbiage? 
-
-
 
 ## Ref Changes? 
 **In Section 8.3.10**
