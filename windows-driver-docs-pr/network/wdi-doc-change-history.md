@@ -9,25 +9,20 @@ ms.custom: 19H1
 
 # WDI doc change history
 
-## Windows 10, version 2001
+## Windows 10, version 2004
 
 Documentation updated to WDI version 1.1.9.
 
 | Topic | Description |
 | --- | --- |
+| [WDI message structure](/wdi-wi-fi-messages#tlvs) | Modified TLV structure to allow for variable-size KCK/KEK |
+| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md | |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-gmac-256-key.md | |
 
 
 
 
 
-
-
-o	In Section 12.13.4.1 WDI_PM_RSN_KEY_INFO 
-	Modified struct used by TLV into an aggregate container to allow for variable-size KCK/KEK
-
-o	In Section 12.5.5 WDI_SET_CIPHER_KEY_INFO: Added entries for:
-	WDI_TLV_CIPHER_KEY_GCMP_256_KEY
-	WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY
 
 o	In Section 12.13.4 WDI_SET_CONFIGURED_CIPHER_KEY: Added entries for:
 	WDI_TLV_CIPHER_KEY_GCMP_256_KEY
@@ -78,8 +73,6 @@ o	Adding a BandwidthUsed field to the FTM response and its corresponding enumera
 o	Making RTT field a signed integer to be able to provide negative values.
 
 o	Adding a PropagationProperty field to the FTM respone and its corresponding enumeration.
-
-
 
 
 
