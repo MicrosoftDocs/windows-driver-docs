@@ -18,23 +18,16 @@ The following table shows the data fields. For more information about the types 
 |PKEY_SensorData_MagneticFieldStrengthX_Microteslas|VT_R4|Required|The x-axis magnetic field in microteslas. This is calibrated to account for the magnetic effects of the device chassis.|
 |PKEY_SensorData_MagneticFieldStrengthY_Microteslas|VT_R4|Required|The y-axis magnetic field in microteslas. This is calibrated to account for the magnetic effects of the device chassis.|
 |PKEY_SensorData_MagneticFieldStrengthZ_Microteslas|VT_R4|Required|The z-axis magnetic field in microteslas. This is calibrated to account for the magnetic effects of the device chassis.|
-|PKEY_SensorData_MagnetometerAccuracy|VT_UI4|Required|The accuracy of the magnetometer sensor. For more information about valid values, see [<strong>MAGNETOMETER_ACCURACY</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-magnetometer_accuracy).|
+|PKEY_SensorData_MagnetometerAccuracy|VT_UI4|Required|The accuracy of the magnetometer sensor. For more information about valid values, see [<strong>MAGNETOMETER_ACCURACY</strong>](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-magnetometer_accuracy).|
 
  
 
 ## Related topics
 
 
-[**MAGNETOMETER\_ACCURACY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-magnetometer_accuracy)
+[**MAGNETOMETER\_ACCURACY**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-magnetometer_accuracy)
 
 [MSDN PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
-
- 
-
-
-
-
-
 

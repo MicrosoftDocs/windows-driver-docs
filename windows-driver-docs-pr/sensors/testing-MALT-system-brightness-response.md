@@ -60,4 +60,4 @@ The following is a list of tips on MALT sensor placement.
 * No light should be leaking out from the top of the box. You should not be able to see inside the box at all.
 
 
-Refer to [this white paper](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.
+Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.

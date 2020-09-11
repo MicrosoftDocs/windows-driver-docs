@@ -32,13 +32,13 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 ## Software Setup
 
-1. Download the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk#download-icon-step-2-install-wdk-for-windows-10-version-1903).
+1. Download the [Windows Driver Kit](../download-the-wdk.md#download-icon-step-2-install-wdk-for-windows-10-version-2004).
 
-2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\10\Testing\Runtimes` directory.
+2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\10\Testing\Runtimes` directory.
 
 3. Download the [BTP software package](testing-BTP-software-package.md), which will install all required files to the `C:\BTP` directory.
 
-4. Ensure [Secure boot](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
+4. Ensure [Secure boot](/windows-hardware/design/device-experiences/oem-secure-boot) **disabled**.
 
 5. Ensure BitLocker is **disabled**.
 

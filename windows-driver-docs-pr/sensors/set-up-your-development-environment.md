@@ -25,7 +25,7 @@ Before you get started with this exercise, make sure that you have the following
 -   USB network adapter
 -   Monitor and HDMI cable (possibly with HDMI cable adapters)
 
-For detailed instructions about how to connect and set up the hardware in the preceding list, see [Sharks Cove hardware development board](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/sharks-cove-hardware-development-board), and perform all the tasks up to, and including Step 4.
+For detailed instructions about how to connect and set up the hardware in the preceding list, see [Sharks Cove hardware development board](../gettingstarted/sharks-cove-hardware-development-board.md), and perform all the tasks up to, and including Step 4.
 
 If you successfully completed the steps suggested in the preceding paragraph, then your development environment should now have the following:
 
@@ -36,9 +36,4 @@ If you successfully completed the steps suggested in the preceding paragraph, th
 Follow the guidance in the next topic to [prepare your sensor test board](prepare-your-sensor-test-board.md) to be connected to the Sharks Cove board.
 
  
-
- 
-
-
-
 

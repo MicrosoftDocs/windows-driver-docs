@@ -7930,6 +7930,11 @@
                             "source_path":  "windows-driver-docs-pr/install/inf-sections.md",
                             "redirect_url":  "/windows-hardware/drivers/install/inf-classinstall32-section",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/using-the-registry-in-a-driver.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/registry-key-object-routines",
+                            "redirect_document_id":  false
                         }
                      ]
 }

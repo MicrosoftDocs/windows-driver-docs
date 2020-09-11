@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # WdfWaitlock rule (kmdf)
 
 
-The **WdfWaitlock** rule specifies that calls to [**WdfWaitLockAcquire**](/previous-versions/ff551168(v=vs.85)) are used in strict alternation with [**WdfWaitlockRelease**](kmdf-wdfwaitlockrelease.md). When the KMDF event callback function returns, the driver should not hold the framework spin lock object that was obtained by a previous call to **WdfWaitLockAcquire**.
+The **WdfWaitlock** rule specifies that calls to [**WdfWaitLockAcquire**](/previous-versions/ff551168(v=vs.85)) are used in strict alternation with [**WdfWaitlockRelease**](kmdf-wdfwaitlockrelease.md). When the KMDF event callback function returns, the driver should not hold the framework wait lock object that was obtained by a previous call to **WdfWaitLockAcquire**.
 
 **Driver model: KMDF**
 
