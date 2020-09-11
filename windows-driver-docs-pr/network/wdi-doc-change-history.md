@@ -16,19 +16,15 @@ Documentation updated to WDI version 1.1.9.
 | Topic | Description |
 | --- | --- |
 | [WDI message structure](/wdi-wi-fi-messages#tlvs) | Modified TLV structure an aggregate container to allow for variable-size KCK/KEK |
-| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) |  |
-| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-gmac-256-key.md) |  |
+| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | New TLV added. |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-gmac-256-key.md) | New TLV added. |
+| [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-gmac-256-key.md) |
 
 
 
 
 
 
-
-
-o	In Section 12.13.4 WDI_SET_CONFIGURED_CIPHER_KEY: Added entries for:
-	WDI_TLV_CIPHER_KEY_GCMP_256_KEY
-	WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY
 •	OWE related changes
 
 o	In Section 8.3.2, new TLV type defined:
