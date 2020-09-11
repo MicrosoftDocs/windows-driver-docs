@@ -21,6 +21,10 @@ Documentation updated to WDI version 1.1.9.
 | [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
 | [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | New TLV type added |
 | [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | Added Host-WPA3-FIPS mode |
+NOTE: this needs more information regarding the notes for the FIPS mode, as well as links to the new TLV type. Is a FIPS mode article required? Can we reference a future version of Windows, and if so, what is the verbiage? 
+
+
 
 ## Ref Changes? 
 **In Section 8.3.10**
@@ -42,11 +46,6 @@ Documentation updated to WDI version 1.1.9.
 - WDI_TLV_REPLAY_COUNTER
 - WDI_TLV_KCK_CONTENT
 - WDI_TLV_KEK_CONTENT
-
-**In Section 12.12.3 WDI_STATION_ATTRIBUTES Structure**
-- Added Host-WPA3-FIPS Mode Implemented to WDI_TLV_STATION_CAPABILITIES
-- Driver must indicate support for WDI_AUTH_ALGO_WPA3 auth and WDI_CIPHER_ALGO_GCMP_256 cipher pairs in the unicast and multicast algo pairs. It must also indicate support for WDI_AUTH_ALGO_WPA3 auth and WDI_CIPHER_ALGO_BIP_GMAC_256 cipher in the Multicast Management algo pairs
-**FIPS support in the OS will be enabled in future version of Windows release**
 
 **WPA3 SAE Capability requirement**
 **In Section 12.12.3 WDI_STATION_ATTRIBUTES Structure**
