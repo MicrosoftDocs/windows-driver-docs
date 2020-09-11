@@ -20,11 +20,7 @@ Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely 
 
 - [Customize the CFU driver sample](#customize-the-cfu-driver-sample)
 
-  - [1 Create componentized packages](#1-create-componentized-packages)
-
   - [2 Configure the CFU driver INF](#2-configure-the-cfu-driver-inf)
-
-  - [3 Configure the diagnostic capabilities](#3-configure-the-diagnostic-capabilities)
 
   - [4 Deploy the package through Windows Update](#4-deploy-the-package-through-windows-update)
 
@@ -78,58 +74,14 @@ This allows you to service your in-market devices through Windows Update. To upd
 
 ![CFU firmware update](images/transfer-flowchart.png)
 
-## Customize the CFU driver sample
+## Customize the CFU driver INF sample
 
-Customize the CFU driver sample to meet your needs. To do so, choose a deployment package approach, modify the INF file, change the name of the driver binary, and update some logging GUIDs.
-
-### 1 Create componentized packages
-
-Starting in Windows 10, version 1709, INF functionality can be split into different packages. Using that functionality, split the deployment package into one base package and several extension packages. The base package contains the driver binary and the driver INF that is common for all your devices. The extension package contains the firmware image files and an INF that describes those firmware files for a device.
-
-Base package and extensions packages are serviced independently.
-
-1. Define a base package that contains the common driver binary and an INF that describes the hardware IDs for each device that is going to use the CFU driver.
-
-1. Define a separate extension package for each device, which contains:
-
-    - The firmware image file(s) for the device.
-
-    - An extension INF that describes the hardware ID for the specific device. The INF also specifies the path of the firmware files.
-
-#### Componentized package example
-
-- Base Package
-  - ComponentFirmwareUpdate.inf
-  - ComponentFirmwareUpdate.dll
-
-- Extension Package for a dock device
-  - DockFirmwareUpdate.inf
-  - Dock_Audio.offer.bin
-  - Dock_Audio.payload.bin
-  - Dock_MCU.offer.bin
-  - Dock_MCU.payload.bin
-
-- Extension Package for components of a Laptop
-  - LaptopMCUFirmwareUpdate.inf
-  - laptop_FPGA.offer.bin
-  - laptop_FPGA.payload.bin
-  - laptop_MCU.offer.bin
-  - laptop_MCU.payload.bin
-  - laptop_TCPM.offer.bin
-  - laptop_TCPM.payload.bin
-
-Reference sample: [ComponentizedPackageExample](https://github.com/Microsoft/CFU/tree/master/Host/ComponentizedPackageExample)
-
-### 2 Configure the CFU driver INF
-
-The sample CFU driver is extensible. To tune the driver's behavior, change the driver INF instead of the source code.
+Configure the CFU driver INF to meet your needs.
 
 1. Update the INF with the hardware ID of the HID TLC intended for firmware update.
 Windows ensures that the driver is loaded when the component is enumerated on the host.
 
-1. Update the INF with hardware IDs of your devices.
-
-    1. Start with the ComponentFirmwareUpdate.inx as the base package INF. Replace the hardware ID in in this section with hardwareID(s) of all your supported devices.
+1. Update the INF with hardware IDs of your devices. Replace the hardware ID in in this section with hardwareID(s) of all your supported devices.
   
         ```inf
         ; Target the Hardware ID for your devices.
@@ -139,15 +91,6 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
         %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
         ```
-
-    1. Start with the DockFirmwareUpdate.inx as the extension package INF. Provide the hardware ID for your primary component in the device in this section.
-
-        ```inf
-        [Standard.NT$ARCH$]
-        %DockFirmwareUpdate.ExtensionDesc%=DockFirmwareUpdate, HID\....; Your HardwareID for Dock MCU
-        ```
-
-    1. Add a new extension package for each component.
 
 1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see [DockFirmwareUpdate.inx](https://github.com/Microsoft/CFU/blob/master/Host/ComponentizedPackageExample/DockFWUpdate/DockFirmwareUpdate.inx)
 
@@ -162,28 +105,6 @@ Windows ensures that the driver is loaded when the component is enumerated on th
 
     Device capabilities are specified in the device specific firmware file.
 
-### 3 Configure the diagnostic capabilities
-
-1. The CFU driver sample uses [WPP Software Tracing](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) for diagnostics. Update the trace with you own GUID to ensure that you can capture the WPP traces for your customized driver.
-
-    Reference sample: [Trace.h](https://github.com/Microsoft/CFU/blob/master/Host/ComponentFirmwareUpdateDriver/Trace.h)
-
-1. Update the EVENTLOG Provider in Device.h
-
-    `EVENTLOG_PROVIDER_NAME L"SampleProvider"`
-
-    Reference sample: [Device.h](https://github.com/Microsoft/CFU/blob/master/Host/ComponentFirmwareUpdateDriver/Device.h)
-
-    ```cpp
-    #define REPORT_ID_FW_VERSION_FEATURE      0x20
-    #define REPORT_ID_PAYLOAD_CONTENT_OUTPUT  0x20
-    #define REPORT_ID_PAYLOAD_RESPONSE_INPUT  0x22
-    #define REPORT_ID_OFFER_CONTENT_OUTPUT    0x25
-    #define REPORT_ID_OFFER_RESPONSE_INPUT    0x25
-    ```
-
-   If you need a different set of report IDs, modify [Dmf_ComponentFirmwareUpdateHidTransport.c](https://github.com/Microsoft/DMF/blob/master/Dmf/Modules.Library/Dmf_ComponentFirmwareUpdateHidTransport.c).
-
 ### 4 Deploy the package through Windows Update
 
 Next, deploy the package through Windows Update.
@@ -192,11 +113,9 @@ For information about deployment, see:
 
 [Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
 
-[Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file)
+## Firmware update image file format
 
-## Firmware file format
-
-A firmware image has two parts: an offer file and a payload file. The offer contains necessary information about the payload to allow the primary component in the device that is receiving the update to decide if the payload is acceptable. The payload is a range of addresses and bytes that the primary component can consume.
+The firmware update image has two parts: an offer file and a payload file. The offer contains necessary information about the payload to allow the primary component in the device that is receiving the update to decide if the payload is acceptable. The payload is a range of addresses and bytes that the primary component can consume.
 
 ### Offer format
 
@@ -243,94 +162,94 @@ During the protocol transaction, the CFU driver writes registry entries to indic
 
 ## Sample INF file for the HIDCFU inbox driver
 
-```inf
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; File:               CfuVirtualHidDeviceFwUpdate.inx
-;
-; Description:        Driver installation file for Cfu Virtual Hid Device firmware update.
-;
-; Copyright (C) Microsoft Corporation.  All Rights Reserved.
-; Licensed under the MIT license.
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-[Version]
-Signature="$Windows NT$"
-Class=Firmware
-ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
-Provider=%ManufacturerName%
-CatalogFile=CfuVirtualHidDeviceFwUpdate.cat
-DriverVer = 12/16/2019,11.42.16.703
-PnPLockDown=1
-
-[SourceDisksNames]
-1= %DiskName%
-
-[DestinationDirs]
-CfuVirtualHidDeviceFwUpdate.CopyFiles=13
-
-[Manufacturer]
-%ManufacturerName%=Standard,NTamd64
-
-[Standard.NTamd64]
-%CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5 ; HardwareID for VirtualHidDevice MCU
-
-[CfuVirtualHidDeviceFwUpdate.NT]
-Include            = HidCfu.inf
-Needs              = HidCfu.NT
-CopyFiles          = CfuVirtualHidDeviceFwUpdate.CopyFiles
-
-[CfuVirtualHidDeviceFwUpdate.NT.Wdf]
-Include            = HidCfu.inf
-Needs              = HidCfu.NT.Wdf
-
-[CfuVirtualHidDeviceFwUpdate.NT.HW]
-AddReg = CfuVirtualHidDeviceFwUpdate_HWAddReg
-
-[CfuVirtualHidDeviceFwUpdate_HWAddReg]
-HKR,,FriendlyName,,%FwUpdateFriendlyName%
-HKR,,Alignment,0x00010001, 1                       ; (No Alignment)
-HKR,,OfferInputValueCapabilityUsageRangeMinimum,0x00010001,0x1A
-HKR,,OfferOutputValueCapabilityUsageRangeMinimum,0x00010001, 0x1E
-HKR,,PayloadInputValueCapabilityUsageRangeMinimum,0x00010001,0x26
-HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x31
-HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
-
-; Specify the location of the firmware offer and payload file in the registry.
-; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
-; in driver store.
-;
-; You can change subkey name under CFU (e.g. "CfuVirtualHidDevice_MCU"), and specify your own offer
-; (e.g. "CfuVirtualHidDevice_MCU.offer.bin") and payload (e.g "CfuVirtualHidDevice_MCU.payload.bin") file name.
-;
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Offer,   0x00000000, %13%\CfuVirtualHidDevice_MCU.offer.bin
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Payload, 0x00000000, %13%\CfuVirtualHidDevice_MCU.payload.bin
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Offer,   0x00000000, %13%\CfuVirtualHidDevice_Audio.offer.bin
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Payload, 0x00000000, %13%\CfuVirtualHidDevice_Audio.payload.bin
-
-[SourceDisksFiles]
-CfuVirtualHidDevice_MCU.offer.bin=1
-CfuVirtualHidDevice_MCU.payload.bin=1
-CfuVirtualHidDevice_Audio.offer.bin=1
-CfuVirtualHidDevice_Audio.payload.bin=1
-
-[CfuVirtualHidDeviceFwUpdate.CopyFiles]
-CfuVirtualHidDevice_MCU.offer.bin
-CfuVirtualHidDevice_MCU.payload.bin
-CfuVirtualHidDevice_Audio.offer.bin
-CfuVirtualHidDevice_Audio.payload.bin
-
-[CfuVirtualHidDeviceFwUpdate.NT.Services]
-Include            = HidCfu.inf
-Needs              = HidCfu.NT.Services
-
-; =================== Generic ==================================
-
-[Strings]
-ManufacturerName="Surface"
-CfuVirtualHidDeviceFwUpdate.DeviceDesc = "CfuVirtualHidDevice Firmware Update"
-DiskName = "CfuVirtualHidDevice Firmware Update Installation Disk"
-FwUpdateFriendlyName= "CfuVirtualHidDevice Firmware Update"
-```
+    ```inf
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ; File:               CfuVirtualHidDeviceFwUpdate.inx
+    ;
+    ; Description:        Driver installation file for Cfu Virtual Hid Device firmware update.
+    ;
+    ; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+    ; Licensed under the MIT license.
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    
+    [Version]
+    Signature="$Windows NT$"
+    Class=Firmware
+    ClassGuid={f2e7dd72-6468-4e36-b6f1-6488f42c1b52}
+    Provider=%ManufacturerName%
+    CatalogFile=CfuVirtualHidDeviceFwUpdate.cat
+    DriverVer = 12/16/2019,11.42.16.703
+    PnPLockDown=1
+    
+    [SourceDisksNames]
+    1= %DiskName%
+    
+    [DestinationDirs]
+    CfuVirtualHidDeviceFwUpdate.CopyFiles=13
+    
+    [Manufacturer]
+    %ManufacturerName%=Standard,NTamd64
+    
+    [Standard.NTamd64]
+    %CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5 ; HardwareID for VirtualHidDevice MCU
+    
+    [CfuVirtualHidDeviceFwUpdate.NT]
+    Include            = HidCfu.inf
+    Needs              = HidCfu.NT
+    CopyFiles          = CfuVirtualHidDeviceFwUpdate.CopyFiles
+    
+    [CfuVirtualHidDeviceFwUpdate.NT.Wdf]
+    Include            = HidCfu.inf
+    Needs              = HidCfu.NT.Wdf
+    
+    [CfuVirtualHidDeviceFwUpdate.NT.HW]
+    AddReg = CfuVirtualHidDeviceFwUpdate_HWAddReg
+    
+    [CfuVirtualHidDeviceFwUpdate_HWAddReg]
+    HKR,,FriendlyName,,%FwUpdateFriendlyName%
+    HKR,,Alignment,0x00010001, 1                       ; (No Alignment)
+    HKR,,OfferInputValueCapabilityUsageRangeMinimum,0x00010001,0x1A
+    HKR,,OfferOutputValueCapabilityUsageRangeMinimum,0x00010001, 0x1E
+    HKR,,PayloadInputValueCapabilityUsageRangeMinimum,0x00010001,0x26
+    HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x31
+    HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
+    
+    ; Specify the location of the firmware offer and payload file in the registry.
+    ; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
+    ; in driver store.
+    ;
+    ; You can change subkey name under CFU (e.g. "CfuVirtualHidDevice_MCU"), and specify your own offer
+    ; (e.g. "CfuVirtualHidDevice_MCU.offer.bin") and payload (e.g "CfuVirtualHidDevice_MCU.payload.bin") file name.
+    ;
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Offer,   0x00000000, %13%\CfuVirtualHidDevice_MCU.offer.bin
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Payload, 0x00000000, %13%\CfuVirtualHidDevice_MCU.payload.bin
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Offer,   0x00000000, %13%\CfuVirtualHidDevice_Audio.offer.bin
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Payload, 0x00000000, %13%\CfuVirtualHidDevice_Audio.payload.bin
+    
+    [SourceDisksFiles]
+    CfuVirtualHidDevice_MCU.offer.bin=1
+    CfuVirtualHidDevice_MCU.payload.bin=1
+    CfuVirtualHidDevice_Audio.offer.bin=1
+    CfuVirtualHidDevice_Audio.payload.bin=1
+    
+    [CfuVirtualHidDeviceFwUpdate.CopyFiles]
+    CfuVirtualHidDevice_MCU.offer.bin
+    CfuVirtualHidDevice_MCU.payload.bin
+    CfuVirtualHidDevice_Audio.offer.bin
+    CfuVirtualHidDevice_Audio.payload.bin
+    
+    [CfuVirtualHidDeviceFwUpdate.NT.Services]
+    Include            = HidCfu.inf
+    Needs              = HidCfu.NT.Services
+    
+    ; =================== Generic ==================================
+    
+    [Strings]
+    ManufacturerName="Surface"
+    CfuVirtualHidDeviceFwUpdate.DeviceDesc = "CfuVirtualHidDevice Firmware Update"
+    DiskName = "CfuVirtualHidDevice Firmware Update Installation Disk"
+    FwUpdateFriendlyName= "CfuVirtualHidDevice Firmware Update"
+    ```
 
 ## Troubleshooting tips
 
@@ -385,3 +304,84 @@ Learn about developing Windows drivers by using Windows Driver Foundation (WDF):
 - [Developing Drivers with Windows Driver Foundation](https://docs.microsoft.com/windows-hardware/drivers/wdf/developing-drivers-with-wdf), written by Penny Orwick and Guy Smith
 
 - [Using WDF to Develop a Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver)
+
+## CFU registry values
+
+| Registry value | Description |
+|--|--|
+| Alignment | Protocol Attribute: What is the bin record alignment required for this configuration?<p>During payload send phase of the protocol, the driver fills in many Hid buffers with the payload and send to firmware one by one.<p>This option control the alignment requirement when packing the payload.<p>By default 8 byte alignment is used. If no alignment is required, configure this as 1. |
+| UseHidSetOutputReport | 0 - Driver will use Write request while sending any output report.<p>1 - Driver will use IOCTL_HID_SET_OUTPUT_REPORT for sending any output report.<p>Default is 0. Set this to 1 if your underlying transport is not USB (for example, HID Over BTH). |
+| OfferInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Input Report Handling. See Notes below. |
+| OfferOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Output Report Handling. See Notes below. |
+| PayloadInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Input Report Handling. See Notes below. |
+| PayloadOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Output Report Handling. See Notes below. |
+| VersionsFeatureValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Version Feature Report Handling. See Notes below. |
+
+## Notes on Value Capability
+
+In order for the inbox driver to communicate with the firmware (real/virtual), the Value capability Usages specified in the INF should match with those in Hid Descriptor configuration in the firmware (real/virtual).
+
+CfuVirtualHidDeviceFwUpdate.INF configures the inbox driver to update the CFU Simulation driver CfuVirtualHid.  
+
+As shown below, the INF values match the values specified in the virtual firmware simulation driver's HID descriptor.
+
+[CfuVirtualHidDeviceFwUpdate_HWAddReg]
+...
+...
+HKR,,OfferInputValueCapabilityUsageRangeMinimum,0x00010001,0x1A
+HKR,,OfferOutputValueCapabilityUsageRangeMinimum,0x00010001, 0x1E
+HKR,,PayloadInputValueCapabilityUsageRangeMinimum,0x00010001,0x26
+HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x31
+HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
+
+Refer: https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c  g_CfuVirtualHid_HidReportDescriptor   (HID Report Descriptor)
+
+    ```cpp
+    0x85, REPORT_ID_PAYLOAD_INPUT,      // REPORT_ID(34)
+    0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
+    0x95, 0x04,                         // REPORT COUNT(4)
+    0x19, PAYLOAD_INPUT_USAGE_MIN,      // USAGE MIN (0x26)
+    0x29, PAYLOAD_INPUT_USAGE_MAX,      // USAGE MAX (0x29)
+    0x81, 0x02,                         // INPUT(0x02)
+
+    0x85, REPORT_ID_OFFER_INPUT,        // REPORT_ID(37)
+    0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
+    0x95, 0x04,                         // REPORT COUNT(4)
+    0x19, OFFER_INPUT_USAGE_MIN,        // USAGE MIN (0x1A)
+    0x29, OFFER_INPUT_USAGE_MAX,        // USAGE MAX (0x1D)
+    0x81, 0x02,                         // INPUT(0x02)
+
+    0x85, REPORT_ID_PAYLOAD_OUTPUT,     // REPORT_ID(32)
+    0x75, 0x08,                         // REPORT SIZE(8)
+    0x95, OUTPUT_REPORT_LENGTH,         // REPORT COUNT(60)
+    0x09, PAYLOAD_OUTPUT_USAGE,         // USAGE(0x31)
+    0x92, 0x02, 0x01,                   // OUTPUT(0x02)
+
+    0x85, REPORT_ID_OFFER_OUTPUT,       // REPORT_ID(37)
+    0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
+    0x95, 0x04,                         // REPORT COUNT(4)
+    0x19, OFFER_OUTPUT_USAGE_MIN,       // USAGE MIN (0x1E)
+    0x29, OFFER_OUTPUT_USAGE_MAX,       // USAGE MAX (0x21)
+    0x91, 0x02,                         // OUTPUT(0x02)
+
+    0x85, REPORT_ID_VERSIONS_FEATURE,   // REPORT_ID(32)
+    0x75, 0x08,                         // REPORT SIZE(8)
+    0x95, FEATURE_REPORT_LENGTH,        // REPORT COUNT(60)
+    0x09, VERSIONS_FEATURE_USAGE,       // USAGE(0x42)
+    0xB2, 0x02, 0x01,                   // FEATURE(0x02)
+    ```
+
+## Notes on Hardware ID
+
+In order for the inbox driver to communicate with the firmware (real/virtual), the hardware ID specified in the INF should match with what is specified in the Hid Descriptor configuration in the firmware (real/virtual).
+
+As shown below, the CfuVirtualHidDeviceFwUpdate.inf values match the values specified in the virtual firmware simulation driver's HID descriptor.
+
+[Standard.NTamd64]
+%CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5
+
+Refer: https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c  g_CfuVirtualHid_HidReportDescriptor   (HID Report Descriptor)
+
+    ```cpp
+    0x06, CFU_DEVICE_USAGE_PAGE,        // USAGE_PAGE(0xFA00) 
+    0x09, CFU_DEVICE_USAGE,             // USAGE(0xF5)
