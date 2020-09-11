@@ -22,7 +22,7 @@ The size (in bytes) of the array of UINT8 elements. The array must contain 1 or 
 
 ## Values
 
-| Type | Description |                                                         |
+| Type | Description |
 | --- | --- |
 | UINT8\[\] | An array of UINT8 elements that contains the IEs that must be included in association requests sent by the port. These are applicable to any BSSID that the device associates with. They should be used in addition to the common and BSSID specific IEs. |
 
