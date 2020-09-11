@@ -1,13 +1,13 @@
 ---
-title: Creating an INF File for a Minifilter Driver
-description: Creating an INF File for a Minifilter Driver
+title: Creating an INF file for a filter driver
+description: Describes how to create an INF file for a filter driver
 ms.assetid: 2ae41287-e3c5-4df5-8dec-8575343d5319
 keywords:
 - INF files WDK file system , minifilter drivers
+- INF files WDK file system , filter drivers
 - DestinationDirs section WDK file system
 - Version section WDK file system
 - Strings section WDK file system
-- DefaultUninstall section WDK file system
 - ServiceInstall section WDK file system
 - DefaultInstall section WDK file system
 - AddRegistry section WDK file system
@@ -15,15 +15,17 @@ ms.date: 08/21/2020
 ms.localizationpriority: medium
 ---
 
-# Creating an INF File for a Minifilter Driver
+# Creating an INF file for a filter driver
 
 ## Introduction
 
 > [!NOTE]
 >
-> Starting in Windows 10 version 1903, primitive drivers (such as file system minifilter drivers) continue to use INF-based installation, but INF requirements have changed. See [Creating a new primitive driver](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-primitive-driver) for details.
+> Starting in Windows 10 version 1903, INF requirements for primitive drivers (such as file system filter drivers) have changed. See [Creating a new primitive driver](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-primitive-driver) for details.
 
-An INF file for a file system minifilter driver generally contains the following sections:
+Filter drivers need an INF file to be installed on the Windows operating system. You'll find sample INF files in the [minifilter samples](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter).
+
+An INF file for a file system filter driver generally contains the following sections:
 
 | Section                       | Notes |
 | -------                       | ----- |
@@ -35,11 +37,11 @@ An INF file for a file system minifilter driver generally contains the following
 | **AddRegistry**               | Required |
 | **Strings**                   | Required |
 
-All drivers running on 64-bit versions of Windows systems must be signed before Windows will load them. See [Signing a driver](https://docs.microsoft.com/windows-hardware/drivers/develop/signing-a-driver) for more information.
-
 > [!NOTE]
 >
 > Starting with Windows 10 version 1903, the **DefaultUninstall** and **DefaultUninstall.Services** sections are prohibited [(with exception)](https://docs.microsoft.com/windows-hardware/drivers/develop/creating-a-primitive-driver#legacy-compatibility). These sections were optional in prior OS versions.
+>
+> All drivers running on 64-bit versions of Windows systems must be signed before Windows will load them. See [Signing a driver](https://docs.microsoft.com/windows-hardware/drivers/develop/signing-a-driver) for more information.
 
 ## Version Section (required)
 

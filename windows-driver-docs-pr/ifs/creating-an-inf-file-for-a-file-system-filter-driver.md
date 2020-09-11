@@ -1,26 +1,17 @@
 ---
-title: Creating an INF File for a File System Filter Driver
-description: Creating an INF File for a File System Filter Driver
+title: Creating an INF File for a legacy file system driver
+description: How to create an INF File for a legacy file system driver
 ms.assetid: 1e8d0e59-eabd-4bdb-9675-e693a0b364ca
 keywords:
 - INF files WDK file system , creating
-- SetupAPI WDK file system
-- Strings section WDK file system
-- DefaultUninstall section WDK file system
-- ServiceInstall section WDK file system
-- DefaultInstall section WDK file system
-- SourceDisksNames section WDK file system
-- DestinationDirs section WDK file system
-- Version section WDK file system
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Creating an INF File for a File System Filter Driver
+# Creating an INF file for a legacy file system filter driver
 
-
-## <span id="ddk_creating_an_inf_file_for_a_file_system_filter_driver_if"></span><span id="DDK_CREATING_AN_INF_FILE_FOR_A_FILE_SYSTEM_FILTER_DRIVER_IF"></span>
-
+> [!NOTE]
+> For optimal reliability and performance, use [file system minifilter drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts) with Filter Manager support instead of legacy file system filter drivers.
 
 The Windows Setup and Device Installer Services, known collectively as [SetupAPI](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi), provide the functions that control Windows setup and driver installation. The installation process is controlled by INF files.
 
