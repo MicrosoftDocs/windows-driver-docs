@@ -14,9 +14,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_registering_the_minifilter_if"></span><span id="DDK_REGISTERING_THE_MINIFILTER_IF"></span>
 
 
-Once a minifilter driver has registered the context types that it uses, it can create a context by calling [**FltAllocateContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext). This routine selects the appropriate context definition to use according to the criteria described in [Registering Context Types](registering-context-types.md).
+Once a minifilter driver has registered the context types that it uses, it can create a context by calling [**FltAllocateContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext). This routine selects the appropriate context definition to use according to the criteria described in [Registering Context Types](registering-context-types.md).
 
-In the following code example, taken from the CTX sample minifilter driver, the **CtxInstanceSetup** routine calls [**FltAllocateContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) to create an instance context:
+In the following code example, taken from the CTX sample minifilter driver, the **CtxInstanceSetup** routine calls [**FltAllocateContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) to create an instance context:
 
 ```cpp
 status = FltAllocateContext(
@@ -37,14 +37,9 @@ In the CTX sample, the following context definition is registered for instance c
   CTX_INSTANCE_CONTEXT_TAG },        //PoolTag
 ```
 
-This is a fixed-size context definition, because the **Size** member is a constant. (If the **Size** member were FLT\_VARIABLE\_SIZED\_CONTEXTS, it would be a variable-size context definition.) Note that the FLTFL\_CONTEXT\_REGISTRATION\_NO\_EXACT\_SIZE\_MATCH flag is not set in the **Flags** member. In this case, if the value of the *Size* parameter of [**FltAllocateContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) matches that of the **Size** member of the context definition, **FltAllocateContext** allocates the instance context from the appropriate nonpaged lookaside list. If the values do not match, **FltAllocateContext** fails with a return value of STATUS\_FLT\_CONTEXT\_ALLOCATION\_NOT\_FOUND.
+This is a fixed-size context definition, because the **Size** member is a constant. (If the **Size** member were FLT\_VARIABLE\_SIZED\_CONTEXTS, it would be a variable-size context definition.) Note that the FLTFL\_CONTEXT\_REGISTRATION\_NO\_EXACT\_SIZE\_MATCH flag is not set in the **Flags** member. In this case, if the value of the *Size* parameter of [**FltAllocateContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) matches that of the **Size** member of the context definition, **FltAllocateContext** allocates the instance context from the appropriate nonpaged lookaside list. If the values do not match, **FltAllocateContext** fails with a return value of STATUS\_FLT\_CONTEXT\_ALLOCATION\_NOT\_FOUND.
 
-[**FltAllocateContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) initializes the reference count on the new context to one. When the context is no longer needed, the minifilter driver must release this reference. Thus, every call to **FltAllocateContext** must be matched by a subsequent call to [**FltReleaseContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext).
-
- 
+[**FltAllocateContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext) initializes the reference count on the new context to one. When the context is no longer needed, the minifilter driver must release this reference. Thus, every call to **FltAllocateContext** must be matched by a subsequent call to [**FltReleaseContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext).
 
  
-
-
-
 

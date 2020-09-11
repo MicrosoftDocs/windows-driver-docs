@@ -20,10 +20,10 @@ The Windows 8 release of the WDK provides enhancements to the C/C++ Code Analys
 For information about the Code Analysis tool in Visual Studio, see:
 
 -   [Analyzing Application Quality using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836)
--   [Code Analysis for Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/code-analysis-for-drivers)
--   [How to run Code Analysis for drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/how-to-run-code-analysis-for-drivers)
+-   [Code Analysis for Drivers](../devtest/code-analysis-for-drivers.md)
+-   [How to run Code Analysis for drivers](../devtest/how-to-run-code-analysis-for-drivers.md)
 -   [Using SAL Annotations to Reduce C/C++ Code Defects](https://go.microsoft.com/fwlink/p/?linkid=247283)
--   [SAL 2.0 Annotations for Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)
+-   [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md)
 
 **Note**  In previous versions of the WDK, the driver-specific module for code analysis was part of a standalone tool called PREfast for Drivers (PFD). PREfast for Drivers was also integrated into the WDK Build environment, as part of Microsoft Automated Code Review (OACR).
 
@@ -38,17 +38,11 @@ Static Driver Verifier (SDV) is a static verification tool that systematically a
 
 For information about Static Driver Verifier, see:
 
--   Overview: [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier)
--   How to: [Using Static Driver Verifier to find defects in drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers)
+-   Overview: [Static Driver Verifier](../devtest/static-driver-verifier.md)
+-   How to: [Using Static Driver Verifier to find defects in drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md)
 
 
  
 
  
-
- 
-
-
-
-
 

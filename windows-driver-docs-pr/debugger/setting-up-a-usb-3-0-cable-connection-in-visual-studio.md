@@ -61,7 +61,7 @@ Debugging over a USB 3.0 connection requires the following hardware:
 ## <span id="Configuring_the_host_and_target_computers"></span><span id="configuring_the_host_and_target_computers"></span><span id="CONFIGURING_THE_HOST_AND_TARGET_COMPUTERS"></span>Configuring the host and target computers
 
 
-1.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+1.  Begin configuring your host and target computers as described in [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 2.  On the host computer, in Visual Studio, when you come to the Computer Configuration dialog box, select **Provision computer and choose debugger settings**.
 3.  For **Connection Type**, choose **USB**.
 
@@ -72,7 +72,7 @@ Debugging over a USB 3.0 connection requires the following hardware:
     -   The maximum length of the string is 24 characters.
     -   The only characters in the string are the hyphen (-), the underscore(\_), the digits 0 through 9, and the letters A through Z (upper or lower case).
 
-    If you have more than one USB host controller on the target computer, enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 48.0.0).
+    Enter a **Bus Parameters** value of *b*.*d*.*f*, where *b*, *d*, and *f* are the bus, device, and function numbers for the USB host controller that you intend to use for debugging on the target computer. The bus, device, and function numbers must be in decimal format (example: 48.0.0). These values are displayed in Device Manager under *Location* on the *General* tab.  
 
 4.  The configuration process takes several minutes and might automatically reboot the target computer once or twice. When the process is complete, select **Finish**.
 
@@ -97,7 +97,7 @@ busparams               48.0.0
 
 Verify that *debugtype* is USB and *targetname* is the name you specified in Visual Studio on the host comptuer. You can ignore the values of *debugport* and *baudrate*; they do not apply to debugging over USB.
 
-If you entered **Bus Parameters** in Visual Studio, verify that *busparams* matches the bus parameters you specified.
+Verify that *busparams* matches the bus parameters you specified.
 
 If you do not see the value you entered for **Bus Parameters**, enter this command:
 
@@ -147,11 +147,4 @@ When you have finished using the xHCI host controller for debugging, enable sele
 [Setting Up Kernel-Mode Debugging in Visual Studio](setting-up-kernel-mode-debugging-in-visual-studio.md)
 
  
-
- 
-
-
-
-
-
 

@@ -51,7 +51,7 @@ reg add HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\StrongName\Verificatio
 
 ## Install Enterprise WDK (EWDK) Insider Preview
 
-The EWDK is a standalone self-contained command-line environment for building drivers.  It includes Build Tools for Visual Studio 2019, the SDK, the WDK and support for ARM64 driver development. See more at [Installing the Enterprise WDK](https://docs.microsoft.com/windows-hardware/drivers/develop/installing-the-enterprise-wdk). 
+The EWDK is a standalone self-contained command-line environment for building drivers.  It includes Build Tools for Visual Studio 2019, the SDK, the WDK and support for ARM64 driver development. See more at [Installing the Enterprise WDK](./develop/using-the-enterprise-wdk.md). 
 
 [Get the Enterprise Windows Driver Kit (EWDK) Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewWDK)
 
@@ -59,9 +59,9 @@ To get started mount the ISO and select LaunchBuildEnv.
 
 ## Run-time requirements for the WDK and the EWDK
 
-The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/visualstudio/releases/2019/system-requirements).
+The WDK requires Visual Studio. For more info about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
 
-In addition, the EWDK requires .NET 4.7.2. For more info about what .NET runs on, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements).
+In addition, the EWDK requires .NET 4.7.2. For more info about what .NET runs on, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
 You can use the WDK Insider Preview and the EWDK Insider Preview to develop drivers for these operating systems: 
 
@@ -71,4 +71,3 @@ You can use the WDK Insider Preview and the EWDK Insider Preview to develop driv
 |Windows 8.1|Windows Server 2012 R2|
 |Windows 8|Windows Server 2012|
 |Windows 7|Windows Server 2008 R2 SP1|
-

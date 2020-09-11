@@ -62,7 +62,7 @@ Note that extension INF files are always applied after the base INF, but that th
 
 Here are the entries you need to define an INF as an extension INF.
 
-1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](https://docs.microsoft.com/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors).
+1.  Specify these values for **Class** and **ClassGuid** in the [**Version**](inf-version-section.md) section. For more info on setup classes, see [System-Defined Device Setup Classes Available to Vendors](./system-defined-device-setup-classes-available-to-vendors.md).
 
     ```cpp
     [Version]
@@ -82,7 +82,7 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
 3.  If you are updating an extension INF, keep the **ExtensionId** the same and increment the version or date (or both) specified by the [**DriverVer**](inf-driverver-directive.md) directive. For a given **ExtensionId** value, PnP selects the INF with the highest **DriverVer**.
 
 >[!NOTE]
-> If your extension INF targets Windows 10 S, see [Windows 10 in S mode Driver Requirements](https://docs.microsoft.com/windows-hardware/drivers/install/windows10sdriverrequirements) for information about driver installation on that version of Windows.
+> If your extension INF targets Windows 10 S, see [Windows 10 in S mode Driver Requirements](./windows10sdriverrequirements.md) for information about driver installation on that version of Windows.
 
 4.  In the [**INF Models section**](inf-models-section.md), specify one or more hardware and compatible IDs that match those of the target device.  Note that these hardware and compatible IDs do not need to match those of the base INF.  Typically, an extension INF lists a more specific hardware ID than the base INF, with the goal of further specializing a specific driver configuration.  For example, the base INF might use a two-part PCI hardware ID, while the extension INF specifies a four-part PCI hardware ID, like the following:
     
@@ -95,20 +95,22 @@ Note that an organization may only use an **ExtensionID** that it owns.  For inf
     
     In some cases, the extension INF might provide a less specific device ID, like a compatible ID, in order to customize a setting across a broader set of devices.
 
-    [CHID targeting](https://docs.microsoft.com/windows-hardware/drivers/bringup/target-a-system-using-chid) can be used if a four-part hardware ID is not possible or is not restrictive enough.
+    [CHID targeting](../bringup/target-a-system-using-chid.md) can be used if a four-part hardware ID is not possible or is not restrictive enough.
 
 5.  Do not define a service with `SPSVCINST_ASSOCSERVICE`.  However, an extension INF can define other services, such as a filter driver for the device.  For more info about specifying services, see [**INF AddService Directive**](inf-addservice-directive.md).
 
 In most cases, you'll submit an extension INF package to the Hardware Dev Center separately from the base driver package.  For examples on how to package extension INFs, as well as links to sample code, see [DCH-Compliant Driver Package Example](../develop/dch-example.md).
 
-The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+The driver validation and submission process is the same for extension INFs as for regular INFs. For more info, see [Windows HLK Getting Started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
 ## Uninstalling an extension driver
 
-Before uninstalling an extension driver, you must first uninstall the base device.  Next, run PnPUtil on the extension INF.
+To uninstall an extension driver, use PnPUtil's `delete` command with the `uninstall` flag. 
 
-To delete the driver package, use `pnputil /delete-driver oem0.inf`.
-To force delete the driver package, use `pnputil /delete-driver oem1.inf /force`.
+To delete the driver package, use `pnputil /delete-driver /uninstall oem0.inf`.
+To force delete the driver package, use `pnputil /delete-driver /uninstall oem1.inf /force`.
+
+This allows the extension driver to be uninstalled without removing the base driver.
 
 ## Example 1: Using an extension INF to set the device friendly name
 
@@ -231,7 +233,7 @@ OsrFx2.ExtensionDesc = "OsrFx2 DCHU Device Extension"
 REG_EXPAND_SZ = 0x00020000
 FLG_ADDREG_KEYONLY = 0x00000010
 ```
-For info on how to use an Extension INF to install a filter driver, see [Device filter driver ordering](https://docs.microsoft.com/windows-hardware/drivers/develop/device-filter-driver-ordering).
+For info on how to use an Extension INF to install a filter driver, see [Device filter driver ordering](../develop/device-filter-driver-ordering.md).
 
 To improve extensibility, we recommend that an IHV put optional functionality in an [extension INF template](using-an-extension-inf-file-template.md).
 

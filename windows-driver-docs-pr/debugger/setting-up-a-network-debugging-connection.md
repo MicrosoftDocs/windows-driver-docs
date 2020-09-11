@@ -86,7 +86,7 @@ If you connect several target computers to a single host computer, each connecti
 
     **Note**  We strongly recommend that you use an automatically generated key. However, you can create your own key as described later in the "Creating Your Own Key" section.
 
-5. If there is more than one network adapter in the target computer, use Device Manager to determine the PCI bus, device, and function numbers for the adapter you want to use for debugging. Then in an elevated Command Prompt window, enter the following command, where *b*, *d*, and *f* are the bus number, device number, and function number of the adapter:
+5. Use Device Manager to determine the PCI bus, device, and function numbers for the adapter you want to use for debugging. These values are displayed in Device Manager under *Location* on the *General* tab.  Then in an elevated Command Prompt window, enter the following command, where *b*, *d*, and *f* are the bus number, device number, and function number of the adapter:
 
     ```console
     bcdedit /set "{dbgsettings}" busparams b.d.f
@@ -195,7 +195,7 @@ KDNET on the target computer attempts to use Dynamic Host Configuration Protocol
 
 ### Always specify busparams when setting up KDNET on a physical machine with a PCI based NIC
 
-If you are setting up KDNET on a physical machine with a PCI or PCIe based NIC, you should always specify the busparams for the NIC you want to use for KDNET. To specify the bus parameters, Open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter, and make a note of the bus number, device number, and function number. In an elevated Command Prompt Window, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
+If you are setting up KDNET on a physical machine with a PCI or PCIe based NIC, you should always specify the busparams for the NIC you want to use for KDNET. To specify the bus parameters, Open Device Manager, and locate the network adapter that you want to use for debugging. Open the property page for the network adapter and make a note of the bus number, device number, and function number that are displayed under *Location* on the *General* tab. In an elevated Command Prompt Window, enter the following command, where *b*, *d*, and *f* are the bus, device and function numbers in decimal format:
 
 ```console
 bcdedit /set "{dbgsettings}" busparams b.d.f
@@ -213,7 +213,7 @@ Manually deleting is not normally required but is provided here as a troubleshoo
 
 Manually deleting entries is not necessary when using the kdnet utility. For more information, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
-When you use bcdedit –deletevalue, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--deletevalue).
+When you use bcdedit –deletevalue, you must provide a valid bcd element name. For more information, see [BCDEdit /deletevalue](../devtest/bcdedit--deletevalue.md).
 
 To manually delete BCDEdit entries, complete these steps.
 

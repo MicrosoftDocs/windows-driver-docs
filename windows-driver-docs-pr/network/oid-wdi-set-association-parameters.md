@@ -27,7 +27,7 @@ This command replaces the previously configured list of BSSID-specific associati
 
 | TLV                                                                     | Multiple TLV instances allowed | Optional | Description                     |
 |-------------------------------------------------------------------------|--------------------------------|----------|---------------------------------|
-| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-bss-entry) | X                              |          | The BSS entries and parameters. |
+| [**WDI\_TLV\_CONNECT\_BSS\_ENTRY**](./wdi-tlv-connect-bss-entry.md) | X                              |          | The BSS entries and parameters. |
 
  
 
@@ -61,9 +61,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

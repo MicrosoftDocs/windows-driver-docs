@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 # TV Audio Change Event
 
 
-The [KSEVENTSETID\_VIDCAP\_TVAUDIO](https://docs.microsoft.com/windows-hardware/drivers/stream/kseventsetid-vidcap-tvaudio) event set contains the TV audio changed event. The following table describes the events that are part of the KSEVENTSETID\_VIDCAP\_TVAUDIO event set.
+The [KSEVENTSETID\_VIDCAP\_TVAUDIO](./kseventsetid-vidcap-tvaudio.md) event set contains the TV audio changed event. The following table describes the events that are part of the KSEVENTSETID\_VIDCAP\_TVAUDIO event set.
 
 <table>
 <colgroup>
@@ -29,7 +29,7 @@ The [KSEVENTSETID\_VIDCAP\_TVAUDIO](https://docs.microsoft.com/windows-hardware/
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-tvaudio-changed" data-raw-source="[&lt;strong&gt;KSEVENT_TVAUDIO_CHANGED&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-tvaudio-changed)"><strong>KSEVENT_TVAUDIO_CHANGED</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-tvaudio-changed" data-raw-source="[&lt;strong&gt;KSEVENT_TVAUDIO_CHANGED&lt;/strong&gt;](./ksevent-tvaudio-changed.md)"><strong>KSEVENT_TVAUDIO_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that TV audio has changed, for example, because of the appearance of a secondary audio program on a newly selected channel.</p></td>
 </tr>
 </tbody>
@@ -38,9 +38,4 @@ The [KSEVENTSETID\_VIDCAP\_TVAUDIO](https://docs.microsoft.com/windows-hardware/
  
 
  
-
- 
-
-
-
 

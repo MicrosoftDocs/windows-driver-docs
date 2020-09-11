@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The Verifier utility has several ways to monitor the actions of Driver Verifier and of the drivers being verified.
 
-The kernel debugger extension **!verifier** can also be used to monitor and report on a number of statistics related to Driver Verifier's activities. When verifying graphics drivers, the **!gdikdx.verifier** extension should be used instead. For information about debugger extensions, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+The kernel debugger extension **!verifier** can also be used to monitor and report on a number of statistics related to Driver Verifier's activities. When verifying graphics drivers, the **!gdikdx.verifier** extension should be used instead. For information about debugger extensions, see [Windows Debugging](../debugger/index.md).
 
 This section includes:
 
@@ -29,10 +29,4 @@ This section includes:
 [Creating Log Files](creating-log-files.md)
 
  
-
- 
-
-
-
-
 

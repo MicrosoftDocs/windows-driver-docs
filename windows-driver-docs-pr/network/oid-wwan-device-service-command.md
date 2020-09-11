@@ -15,7 +15,7 @@ OID\_WWAN\_DEVICE\_SERVICE\_COMMAND allows miniport drivers to implement vendor 
 
 Both query and set requests are supported.
 
-Miniport drivers must process query and set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-response) status notification containing a vendor-defined structure ([**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_command)) to provide responses when they have completed the transaction.
+Miniport drivers must process query and set requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](./ndis-status-wwan-device-service-response.md) status notification containing a vendor-defined structure ([**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_command)) to provide responses when they have completed the transaction.
 
 Miniport drivers should return NDIS\_STATUS\_NOT\_SUPPORTED if they do not support the specified device service or operation.
 
@@ -42,14 +42,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-response)
+[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_RESPONSE**](./ndis-status-wwan-device-service-response.md)
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_command)
-
- 
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_COMMAND**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_command)
 
  
-
-
-
 

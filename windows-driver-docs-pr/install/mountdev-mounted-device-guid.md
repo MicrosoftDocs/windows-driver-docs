@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # MOUNTDEV_MOUNTED_DEVICE_GUID
 
 
-The MOUNTDEV_MOUNTED_DEVICE_GUID [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for volume devices.
+The MOUNTDEV_MOUNTED_DEVICE_GUID [device interface class](./overview-of-device-interface-classes.md) is defined for volume devices.
 
 <table>
 <colgroup>
@@ -74,11 +74,4 @@ Requirements
 [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
 
  
-
- 
-
-
-
-
-
 

@@ -119,7 +119,7 @@ If the source file cannot be copied because the destination file is being used, 
 <a href="" id="security-descriptor-string"></a>*security-descriptor-string*  
 Specifies a security descriptor, to be applied to all files copied by the named *file-list-section*. The *security-descriptor-string* is a string with tokens to indicate the DACL (**D:**) security component.
 
-For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
+For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 If an <em>file-list-section</em>**.security** section is not specified, files inherit the security characteristics of the directory into which the files are copied.
 
@@ -237,11 +237,4 @@ For additional examples of how to use the INF **CopyFiles** directive, see the I
 [**Version**](inf-version-section.md)
 
  
-
- 
-
-
-
-
-
 

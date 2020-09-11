@@ -26,7 +26,7 @@ The universal camera driver model also contains new DDIs, including:
 
 ## Build a universal camera driver
 
-The universal camera driver is an AVStream minidriver built on the [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) (WDM).
+The universal camera driver is an AVStream minidriver built on the [Windows Driver Model](../kernel/introduction-to-wdm.md) (WDM).
 
 For more information, see the following sections in the [Universal camera driver model reference for Windows 10](windows-10-technical-preview-camera-drivers-reference.md):
 
@@ -39,6 +39,3 @@ For more information about building AVStream minidrivers, see the following topi
 
 * [AVStream Overview](avstream-overview.md)
 * [Writing an AVStream Minidriver](writing-an-avstream-minidriver.md)
-
-
-

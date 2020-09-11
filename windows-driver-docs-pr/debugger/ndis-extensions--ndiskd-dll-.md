@@ -89,7 +89,7 @@ The following commands display information about the machine's network adapters,
 ## <span id="NET_BUFFER_LIST_and_NET_BUFFER_Commands"></span><span id="net_buffer_list_and_net_buffer_commands"></span><span id="NET_BUFFER_LIST_AND_NET_BUFFER_COMMANDS"></span>NET\_BUFFER\_LIST and NET\_BUFFER Commands
 
 
-The following commands display information relating to [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure) and [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-structure) structures.
+The following commands display information relating to [**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md) and [**NET\_BUFFER**](../network/net-buffer-structure.md) structures.
 
 - [**!ndiskd.nbl**](-ndiskd-nbl.md)
 - [**!ndiskd.nb**](-ndiskd-nb.md)
@@ -100,7 +100,7 @@ The following commands display information relating to [**NET\_BUFFER\_LIST**](h
 
 ## <span id="NetAdapterCx_Commands"></span><span id="netadaptercx_commands"></span><span id="NETADAPTERCX_COMMANDS"></span>NetAdapterCx Commands
 
-The following commands display information relating to the Network Adapter WDF Class Extension [NetAdapterCx](https://docs.microsoft.com/windows-hardware/drivers/netcx/) and its associated structures, [NET_RING_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/netcx/introduction-to-net-rings) and [NET_PACKET](https://docs.microsoft.com/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet).
+The following commands display information relating to the Network Adapter WDF Class Extension [NetAdapterCx](../netcx/index.md) and its associated structures, [NET_RING_BUFFER](../netcx/introduction-to-net-rings.md) and [NET_PACKET](/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet).
 
 - [**!ndiskd.cxadapter**](-ndiskd-cxadapter.md)
 - [**!ndiskd.netqueue**](-ndiskd-netqueue.md)
@@ -119,7 +119,7 @@ The following commands display information relating to network interfaces.
 
 ## <span id="NDIS_PACKET_Commands"></span><span id="ndis_packet_commands"></span><span id="NDIS_PACKET_COMMANDS"></span>NDIS\_PACKET Commands
 
-The following commands display information about [NDIS\_PACKET](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structures. These extensions are for legacy NDIS 5.x drivers. The NDIS\_PACKET structure and its associated architecture have been deprecated.
+The following commands display information about [NDIS\_PACKET](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structures. These extensions are for legacy NDIS 5.x drivers. The NDIS\_PACKET structure and its associated architecture have been deprecated.
 
 - [**!ndiskd.pkt**](-ndiskd-pkt.md)
 - [**!ndiskd.pktpools**](-ndiskd-pktpools.md)
@@ -127,7 +127,7 @@ The following commands display information about [NDIS\_PACKET](https://docs.mic
 
 ## <span id="CoNDIS_Commands"></span><span id="condis_commands"></span><span id="CONDIS_COMMANDS"></span>CoNDIS Commands
 
-The following commands display information about [Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis) connections.
+The following commands display information about [Connection-Oriented NDIS](../network/connection-oriented-ndis.md) connections.
 
 - [**!ndiskd.vc**](-ndiskd-vc.md)
 - [**!ndiskd.af**](-ndiskd-af.md)
@@ -144,7 +144,7 @@ The following commands display information relating to NDIS refcounts, event log
 
 ## <span id="WDI_Commands"></span><span id="wdi_commands"></span><span id="WDI_COMMANDS"></span>WDI Commands
 
-The following commands display information about [WDI Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-design-guide).
+The following commands display information about [WDI Miniport Drivers](../network/wdi-miniport-driver-design-guide.md).
 
 - [**!ndiskd.wdiadapter**](-ndiskd-wdiadapter.md)
 - [**!ndiskd.wdiminidriver**](-ndiskd-wdiminidriver.md)
@@ -165,8 +165,8 @@ The following commands display information about NDIS.sys and ndiskd.dll.
 
 ## <span id="Related_Topics"></span><span id="related_topics"></span><span id="RELATED_TOPICS"></span>Related Topics
 
-For more information about designing NDIS drivers for Windows Vista and later, see the [Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index).
+For more information about designing NDIS drivers for Windows Vista and later, see the [Network Driver Design Guide](../network/index.md).
 
-For more information about reference for NDIS drivers for Windows Vista and later, see [Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+For more information about reference for NDIS drivers for Windows Vista and later, see [Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/).
 
 For a demonstration of using the !ndiskd debugger commands to debug the network stack, see the [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack) channel 9 video.

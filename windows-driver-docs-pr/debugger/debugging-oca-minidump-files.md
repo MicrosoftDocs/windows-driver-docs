@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Debugging OCA minidump files
 
-Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](https://docs.microsoft.com/windows/desktop/wer/windows-error-reporting) information. Your company can use OCA crash dumps to analyze customer problems.
+Online Crash Analysis (OCA) is the reporting facility for [Windows Error Reporting (WER)](/windows/desktop/wer/windows-error-reporting) information. Your company can use OCA crash dumps to analyze customer problems.
 
 ## Analyze dump files
 
@@ -34,7 +34,7 @@ Symbol files can include any or all of the following:
 - The names, data types, addresses, and scopes of local variables.
 - The line number in the source code that corresponds to each binary instruction.
 
-The Windows Driver Kit (WDK) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files. For more information, see [BinPlace](https://docs.microsoft.com/windows-hardware/drivers/devtest/binplace).
+The Windows Driver Kit (WDK) includes tools that can be used to reduce the number of symbols in a symbol file. The symbol files that contain all of the source-level information are called full symbol files. The symbol files with reduced information are called stripped symbol files. For more information, see [BinPlace](../devtest/binplace.md).
 
 Because symbol data is crucial for getting meaningful crash information from Windows Error Report (WER) data, we encourage you to submit your symbols when you submit drivers to be signed. When symbols are submitted, they are stored on a server that synchronizes symbol data with the associated WER processes. With this storage process, you can easily categorize the crashes reported in the minidump files and ultimately receive better data back from Microsoft.
 
@@ -42,20 +42,20 @@ Microsoft provides a symbol server on the Internet that you can use to analyze t
 
 ## Integrate WER into applications
 
-For more information on integrating WER into applications, see [Using WER](https://docs.microsoft.com/windows/desktop/wer/using-wer).
+For more information on integrating WER into applications, see [Using WER](/windows/desktop/wer/using-wer).
 
 ## Related topics
 
 [Advanced Driver Debugging \[336 KB\] \[PPT\]](https://download.microsoft.com/download/f/0/5/f05a42ce-575b-4c60-82d6-208d3754b2d6/adv-drv_debug.ppt)
 
-[WDK and WinDbg downloads](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+[WDK and WinDbg downloads](../download-the-wdk.md)
 
 [Driver Debugging Basics \[WinHEC 2007; 633 KB\] \[PPT\]](https://download.microsoft.com/download/a/f/d/afdfd50d-6eb9-425e-84e1-b4085a80e34e/dvr-t410_wh07.pptx)
 
 [How to read the small memory dump file that is created by Windows if a crash occurs](https://support.microsoft.com/help/315263/how-to-read-the-small-memory-dump-file-that-is-created-by-windows-if-a)
 
-[Resource-Definition Statements](https://docs.microsoft.com/windows/desktop/menurc/resource-definition-statements)
+[Resource-Definition Statements](/windows/desktop/menurc/resource-definition-statements)
 
-[Windows Error Reporting](https://docs.microsoft.com/windows/desktop/wer/windows-error-reporting)
+[Windows Error Reporting](/windows/desktop/wer/windows-error-reporting)
 
-[VERSIONINFO resource](https://docs.microsoft.com/windows/desktop/menurc/versioninfo-resource)
+[VERSIONINFO resource](/windows/desktop/menurc/versioninfo-resource)

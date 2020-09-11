@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_USB_HOST_CONTROLLER
 
 
-The GUID_DEVINTERFACE_USB_HOST_CONTROLLER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [USB](https://docs.microsoft.com/windows-hardware/drivers/) host controller devices.
+The GUID_DEVINTERFACE_USB_HOST_CONTROLLER [device interface class](./overview-of-device-interface-classes.md) is defined for [USB](../index.yml) host controller devices.
 
 <table>
 <colgroup>
@@ -80,11 +80,4 @@ Requirements
 [**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md)
 
  
-
- 
-
-
-
-
-
 

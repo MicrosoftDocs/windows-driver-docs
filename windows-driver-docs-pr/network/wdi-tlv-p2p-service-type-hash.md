@@ -25,14 +25,14 @@ WDI\_TLV\_P2P\_SERVICE\_TYPE\_HASH is a TLV that contains the hash of Service Ty
 ## Length
 
 
-The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_p2p_service_name_hash) structure.
+The size (in bytes) of a [**WDI\_P2P\_SERVICE\_NAME\_HASH**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_p2p_service_name_hash) structure.
 
 ## Values
 
 
 | Type                                                                    | Description               |
 |-------------------------------------------------------------------------|---------------------------|
-| [**WDI\_P2P\_SERVICE\_NAME\_HASH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_p2p_service_name_hash) | The hash of Service Type. |
+| [**WDI\_P2P\_SERVICE\_NAME\_HASH**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_p2p_service_name_hash) | The hash of Service Type. |
 
  
 
@@ -61,9 +61,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

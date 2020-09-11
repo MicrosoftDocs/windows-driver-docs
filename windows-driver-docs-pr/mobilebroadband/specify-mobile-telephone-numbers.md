@@ -45,7 +45,7 @@ SMS short codes that have short phone numbers that are four to six digits long a
 ## <span id="related_topics"></span>Related topics
 
 
-[Send SMS by using the text-mode interface](send-sms-by-using-the-text-mode-interface.md)
+[Send SMS by using the text-mode interface](calculate-characters-and-segments-of-a-draft-sms.md)
 
  
 

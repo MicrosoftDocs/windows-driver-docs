@@ -27,7 +27,7 @@ Windows supports two categories of cameras. One is a color camera and the other 
 
 A camera that supports color only format types should be registered under KSCATEGORY\_VIDEO\_CAMERA. A camera that supports IR or Depth-only format types should be registered under KSCATEGORY\_SENSOR\_CAMERA. A camera that supports both color and non-color format types should be registered under KSCATEGORY\_VIDEO\_CAMERA and KSCATEGORY\_SENSOR\_CAMERA. This categorization helps applications to select the camera that they want to work with.
 
-A UVC camera can specify its category preference through attributes, **SensorCameraMode** and **SkipCameraEnumeration**, in its BOS [MS OS 2.0 Descriptor](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors) detailed in following sections.
+A UVC camera can specify its category preference through attributes, **SensorCameraMode** and **SkipCameraEnumeration**, in its BOS [MS OS 2.0 Descriptor](../usbcon/microsoft-defined-usb-descriptors.md) detailed in following sections.
 
 The attribute **SensorCameraMode** takes a value 1 or 2.
 
@@ -70,8 +70,8 @@ The following format type GUIDs should be specified in the stream video format d
 
 | Type | Description |
 | --- | --- |
-| KSDATAFORMAT\_SUBTYPE\_L8\_IR |  Uncompressed 8 bit luma plane. This type maps to [MFVideoFormat\_L8](https://docs.microsoft.com/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
-| KSDATAFORMAT\_SUBTYPE\_L16\_IR | Uncompressed 16 bit luma plane. This type maps to [MFVideoFormat\_L16](https://docs.microsoft.com/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
+| KSDATAFORMAT\_SUBTYPE\_L8\_IR |  Uncompressed 8 bit luma plane. This type maps to [MFVideoFormat\_L8](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
+| KSDATAFORMAT\_SUBTYPE\_L16\_IR | Uncompressed 16 bit luma plane. This type maps to [MFVideoFormat\_L16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). |
 | KSDATAFORMAT\_SUBTYPE\_MJPG\_IR | Compressed MJPEG frames. Media Foundation converts this into NV12 uncompressed frames and uses only the luma plane. |
 
 When these format type GUIDs are specified in the guidFormat field of the frame descriptor, the Media Foundation capture pipeline marks the stream as IR stream. Applications written with Media Foundation FrameReader API will be able to consume the IR stream. No scaling or conversions of the IR frames are supported by the pipeline for IR streams.
@@ -108,7 +108,7 @@ Windows inbox USB Video Class driver supports cameras that produce Depth streams
 
 | Type | Description |
 | --- | --- |
-| KSDATAFORMAT\_SUBTYPE\_D16 |  16 bit depth map values. This type is identical to [MFVideoFormat\_D16](https://docs.microsoft.com/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). The values are in millimeters. |
+| KSDATAFORMAT\_SUBTYPE\_D16 |  16 bit depth map values. This type is identical to [MFVideoFormat\_D16](/windows/desktop/medfound/video-subtype-guids#luminance-and-depth-formats). The values are in millimeters. |
 
 When the format type GUID is specified in the guidFormat member of the frame descriptor, the Media Foundation capture pipeline marks the stream as depth stream. Applications written with FrameReader API will be able to consume the depth stream. No scaling or conversions of the depth frames are supported by the pipeline for depth streams.
 
@@ -517,7 +517,7 @@ See [UVC Control Cache](camera-device-uvc-control-cache.md)
 
 ## BOS and MS OS 2.0 descriptor
 
-UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](https://docs.microsoft.com/previous-versions/dn385747(v=msdn.10)). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
+UVC compliant camera can specify Windows specific device configuration values in a platform capability BOS descriptor in its firmware using [Microsoft OS 2.0 Descriptors](/previous-versions/dn385747(v=msdn.10)). Please refer the documentation on MS OS 2.0 descriptor to understand how to specify a valid BOS descriptor that conveys the device configuration to the OS.
 
 ### Microsoft OS 2.0 Descriptor Set Header
 

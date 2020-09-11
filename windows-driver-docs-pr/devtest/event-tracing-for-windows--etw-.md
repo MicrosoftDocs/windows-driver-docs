@@ -22,13 +22,7 @@ Topics in this section include:
 
 [Adding Event Tracing to Kernel-Mode Drivers](adding-event-tracing-to-kernel-mode-drivers.md)
 
-[ETW Kernel-Mode Reference](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff545650(v=vs.85))
+[ETW Kernel-Mode Reference](/previous-versions/windows/hardware/previsioning-framework/ff545650(v=vs.85))
 
  
-
- 
-
-
-
-
 

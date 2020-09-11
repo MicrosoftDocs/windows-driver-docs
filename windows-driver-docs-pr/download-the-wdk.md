@@ -36,7 +36,7 @@ Windows 7|Windows Server 2008 R2 SP1|
 
 ### ![download icon](images/download-install.png) Step 1: Install Visual Studio 2019
 
-The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](https://docs.microsoft.com/visualstudio/releases/2019/system-requirements).
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
 
 The following editions of Visual Studio 2019 support driver development for this release:
 
@@ -77,11 +77,11 @@ The WDK Visual Studio extension is included in the default WDK installation.
 
 The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.3.0 and MSVC toolset v14.23.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
-The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements).
+The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
 ### ![download icon](images/download-install.png) EWDK with Visual Studio Build Tools
 
-* [Download the EWDK for Windows 10, version 2004](https://docs.microsoft.com/legal/windows/hardware/enterprise-wdk-license-2019)
+* [Download the EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019)
 
 ## Driver samples for Windows 10
 
@@ -89,13 +89,13 @@ To download the driver samples, do one of the following:
 
 * Go to the driver samples page on [GitHub](https://github.com/Microsoft/Windows-driver-samples), click **Clone or download**, and then click **Download ZIP**.
 * Download the [GitHub Extension for Visual Studio](https://visualstudio.github.com/), and then connect to the GitHub repositories.
-* Browse the driver samples on the [Microsoft Samples portal](https://docs.microsoft.com/samples/browse/?products=windows-wdk).
+* Browse the driver samples on the [Microsoft Samples portal](/samples/browse/?products=windows-wdk).
 
 ## Related downloads
 
 * [Download the WDK Insider Preview](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK)
 * [Download previous versions of the WDK](other-wdk-downloads.md)
-* [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
-* [Download the Windows HLK](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)
-* [Download the Windows Debugging Tools (WinDbg)](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools)
-* [Download Windows Symbol Packages](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-symbols)
+* [Download the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
+* [Download the Windows HLK](/windows-hardware/test/hlk/windows-hardware-lab-kit)
+* [Download the Windows Debugging Tools (WinDbg)](./debugger/debugger-download-tools.md)
+* [Download Windows Symbol Packages](./debugger/debugger-download-symbols.md)

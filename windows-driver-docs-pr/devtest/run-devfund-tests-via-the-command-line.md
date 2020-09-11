@@ -16,20 +16,20 @@ There are several ways to run the DevFund and SysFund tests via the command-line
 
 Other methods for running the DevFund and SysFund tests include:
 
-- Hardware Lab Kit (HLK): The tests can be run from the command line on an [HLK client test machine](https://docs.microsoft.com/windows-hardware/test/hlk/testref/reproduce-the-test-failure-by-running-the-test-from-the-command-line)
+- Hardware Lab Kit (HLK): The tests can be run from the command line on an [HLK client test machine](/windows-hardware/test/hlk/testref/reproduce-the-test-failure-by-running-the-test-from-the-command-line)
 
-- Test machine "provisioned" through Visual Studio: [Running test via the command-line](https://docs.microsoft.com/windows-hardware/drivers/develop/how-to-test-a-driver-at-runtime-from-a-command-prompt)
+- Test machine "provisioned" through Visual Studio: [Running test via the command-line](../develop/how-to-test-a-driver-at-runtime-from-a-command-prompt.md)
 
-- Enterprise Windows Driver Kit (EWDK- does not require Visual Studio): If Visual Studio is not installed and will not be used, [use the EWDK to run tests on the command-line](https://docs.microsoft.com/windows-hardware/drivers/devtest/configure-the-machine-for-testing)
+- Enterprise Windows Driver Kit (EWDK- does not require Visual Studio): If Visual Studio is not installed and will not be used, [use the EWDK to run tests on the command-line](./configure-the-machine-for-testing.md)
 
 **Setup**
 
 
 Note that the following commands must be executed from an elevated/administrator command prompt because WDTF installation installs drivers on the system. The instructions below assume the system architecture is x64. The following steps may need to be adjusted for other architectures.
 
-**Step 1** : [Install Visual Studio and the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+**Step 1** : [Install Visual Studio and the Windows Driver Kit (WDK)](../download-the-wdk.md)
 
-**Step 2** : The tests use the [TAEF](https://docs.microsoft.com/windows-hardware/drivers/taef/) service.  
+**Step 2** : The tests use the [TAEF](../taef/index.md) service.  
 
 To install the TAEF service (Te.service), go to ```%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\TAEF\x64``` and run the following commands to get the service started:
 
@@ -43,7 +43,7 @@ To install the TAEF service (Te.service), go to ```%PROGRAMFILES(X86)%\Windows K
 
 Add this directory to the system PATH environment variable and restart the elevated command prompt.
 
-**Step 3** : Install [WDTF](https://docs.microsoft.com/windows-hardware/drivers/wdtf/) by navigating to the location of the WDTF MSI (```%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\```) and installing the package for the desired architecture. Specify a location and name for the installation log file, **%USERPROFILE%\Desktop\WDTFInstall.log** in this example:
+**Step 3** : Install [WDTF](../wdtf/index.md) by navigating to the location of the WDTF MSI (```%PROGRAMFILES(X86)%\Windows Kits\10\Testing\Runtimes\```) and installing the package for the desired architecture. Specify a location and name for the installation log file, **%USERPROFILE%\Desktop\WDTFInstall.log** in this example:
 
  
 ``` 

@@ -44,13 +44,13 @@ If the MAC is to function as a Wi-Fi Direct device port, **uOpmodeMask** contain
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-create-port-parameters" data-raw-source="[&lt;strong&gt;WDI_TLV_CREATE_PORT_PARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-create-port-parameters)"><strong>WDI_TLV_CREATE_PORT_PARAMETERS</strong></a></td>
+<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-create-port-parameters" data-raw-source="[&lt;strong&gt;WDI_TLV_CREATE_PORT_PARAMETERS&lt;/strong&gt;](./wdi-tlv-create-port-parameters.md)"><strong>WDI_TLV_CREATE_PORT_PARAMETERS</strong></a></td>
 <td></td>
 <td></td>
 <td>Parameters for port creation.</td>
 </tr>
 <tr class="even">
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-create-port-mac-address" data-raw-source="[&lt;strong&gt;WDI_TLV_CREATE_PORT_MAC_ADDRESS&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-create-port-mac-address)"><strong>WDI_TLV_CREATE_PORT_MAC_ADDRESS</strong></a></td>
+<td><a href="https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-create-port-mac-address" data-raw-source="[&lt;strong&gt;WDI_TLV_CREATE_PORT_MAC_ADDRESS&lt;/strong&gt;](./wdi-tlv-create-port-mac-address.md)"><strong>WDI_TLV_CREATE_PORT_MAC_ADDRESS</strong></a></td>
 <td></td>
 <td>X</td>
 <td><p>This TLV is used when the UE recreates the non-primary port during resume from hibernation. When this TLV is present, the firmware must use this MAC address to create the port. This MAC address is guaranteed to be the MAC address that the firmware created for the port type prior to hibernation.</p>
@@ -91,9 +91,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

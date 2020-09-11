@@ -35,13 +35,7 @@ r200umd.dll,,,0x00004000  ; COPYFLG_IN_USE_TRY_RENAME
 r200umd2.dll,,,0x00004000 ; COPYFLG_IN_USE_TRY_RENAME
 ```
 
-For more information about the **CopyFiles** directive and file sections that are associated with **CopyFiles**, see [**INF CopyFiles Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive).
+For more information about the **CopyFiles** directive and file sections that are associated with **CopyFiles**, see [**INF CopyFiles Directive**](../install/inf-copyfiles-directive.md).
 
  
-
- 
-
-
-
-
 

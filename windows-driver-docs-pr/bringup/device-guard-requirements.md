@@ -30,11 +30,11 @@ ms.localizationpriority: medium
 
 ## Recommended reading
 
-- [Blog post: Protecting BitLocker from Cold Attacks (and other threats)](https://docs.microsoft.com/archive/blogs/si_team/protecting-bitlocker-from-cold-attacks-and-other-threats)
+- [Blog post: Protecting BitLocker from Cold Attacks (and other threats)](/archive/blogs/si_team/protecting-bitlocker-from-cold-attacks-and-other-threats)
 
 - [Whitepaper: A Tour Beyond BIOS with the UEFI TPM2 Support in EDKII](https://github.com/tianocore/edk2-platforms/blob/devel-MinPlatform/Platform/Intel/MinPlatformPkg/Docs/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II%20-%20V2.pdf)
 
-- [Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)
+- [Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)
 
 ## Overview
 
@@ -158,10 +158,10 @@ These flowcharts show the expected behavior of your implementation:
 
 [PC Client Work Group Platform Reset Attack Mitigation Specification, Version 1.10 (PDF download)](https://trustedcomputinggroup.org/wp-content/uploads/TCG_PlatformResetAttackMitigationSpecification_1.10_published.pdf)
 
-[Protecting BitLocker from Cold Attacks (and other threats)](https://docs.microsoft.com/archive/blogs/si_team/protecting-bitlocker-from-cold-attacks-and-other-threats)  
+[Protecting BitLocker from Cold Attacks (and other threats)](/archive/blogs/si_team/protecting-bitlocker-from-cold-attacks-and-other-threats)  
 
 [A Tour Beyond BIOS with the UEFI TPM2 Support in EDKII](https://github.com/tianocore/edk2-platforms/blob/devel-MinPlatform/Platform/Intel/MinPlatformPkg/Docs/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II%20-%20V2.pdf)
 
-[Protect derived domain credentials with Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard)
+[Protect derived domain credentials with Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)
 
-[UEFI Specifications](https://uefi.org/specifications)  
+[UEFI Specifications](https://uefi.org/specifications)

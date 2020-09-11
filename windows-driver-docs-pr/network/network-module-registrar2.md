@@ -29,13 +29,7 @@ This section discusses the Network Module Registrar and includes the following t
 
 [Programming Considerations](programming-considerations.md)
 
-Using the [**WskRegister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister) and [**WskDeregister**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) functions is the preferred method for registering and unregistering WSK applications. The Network Module Registrar remains available for compatibility. For more information, see [Registering a Winsock Kernel Application](registering-a-winsock-kernel-application.md).
+Using the [**WskRegister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister) and [**WskDeregister**](/windows-hardware/drivers/ddi/wsk/nf-wsk-wskderegister) functions is the preferred method for registering and unregistering WSK applications. The Network Module Registrar remains available for compatibility. For more information, see [Registering a Winsock Kernel Application](registering-a-winsock-kernel-application.md).
 
  
-
- 
-
-
-
-
 

@@ -30,13 +30,7 @@ The **KSPROPSETID\_AudioModule** property set contains the following KS properti
 
 This property name is defined in the [**KSPROPERTY\_AUDIOMODULE**](ksproperty-audiomodule.md) enum.
 
-For more information about audio modules, see [Implementing Audio Module Discovery](https://docs.microsoft.com/windows-hardware/drivers/audio/implementing-audio-module-communication).
+For more information about audio modules, see [Implementing Audio Module Discovery](./implementing-audio-module-communication.md).
 
  
-
- 
-
-
-
-
 

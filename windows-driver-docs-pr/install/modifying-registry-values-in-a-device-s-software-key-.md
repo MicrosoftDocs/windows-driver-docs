@@ -42,19 +42,13 @@ These device properties represent a device's installation state. Direct modifica
 
 To safely modify the values of other registry entries in a device's software key, follow these guidelines:
 
--   Use [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve and set standard or custom properties.
+-   Use [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve and set standard or custom properties.
 
     For more information, see [Accessing Device Driver Properties](accessing-device-driver-properties.md).
 
 -   Set only those device properties that are not reserved by the operating system.
 
-    For example, to change the name of the device as displayed to the user, change its [**DEVPKEY_Device_FriendlyName**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-friendlyname) device property.
+    For example, to change the name of the device as displayed to the user, change its [**DEVPKEY_Device_FriendlyName**](./devpkey-device-friendlyname.md) device property.
 
  
-
- 
-
-
-
-
 

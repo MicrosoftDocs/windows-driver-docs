@@ -1,5 +1,5 @@
 ---
-Description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function. 
+description: USB interface association descriptor (IAD) allows the device to group interfaces that belong to a function.
 title: USB Interface Association Descriptor
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -107,7 +107,7 @@ The following illustrates a descriptor layout for a composite USB device. The ex
 <a href="" id="function-1--video-class"></a>**Function 1: Video Class**  
 This function is defined by an interface association descriptor (IAD) and contains two interfaces: interface zero (0) and interface one (1).
 
-The system generates hardware and compatible identifiers (IDs) for the function, as described in [Support for the Wireless Mobile Communication Device Class](support-for-the-wireless-mobile-communication-device-class--wmcdc-.md). After matching the appropriate INF file, the system loads the Video Class driver stack.
+The system generates hardware and compatible identifiers (IDs) for the function, as described in [Support for the Wireless Mobile Communication Device Class](./support-for-interface-collections.md). After matching the appropriate INF file, the system loads the Video Class driver stack.
 
 <a href="" id="function-2--human-input-device"></a>**Function 2: Human Input Device**  
 This function contains only one interface: interface two (2).
@@ -252,7 +252,4 @@ The descriptor is as follows:
 ```
 
 ## Related topics
-[USB Descriptors](usb-descriptors.md)  
-
-
-
+[USB Descriptors](usb-descriptors.md)

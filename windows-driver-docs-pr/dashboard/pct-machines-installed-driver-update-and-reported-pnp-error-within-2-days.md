@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-After a successful install, machines can experience post-install PnP errors that can result in a negative user experience; from the device not working as expected to an unexpected reboot. A list of PNP error codes is located on [Device Manager Problem Codes](https://docs.microsoft.com/windows-hardware/drivers/install/device-manager-error-messages) and [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
+After a successful install, machines can experience post-install PnP errors that can result in a negative user experience; from the device not working as expected to an unexpected reboot. A list of PNP error codes is located on [Device Manager Problem Codes](../install/device-manager-error-messages.md) and [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
 
 ## Measure attributes
 
@@ -23,7 +23,7 @@ After a successful install, machines can experience post-install PnP errors that
 |**Passing criteria**|<=5% machines encounter a post-install PNP error|
 |**Cohort-enabled**|Yes|
 |**Minimum population per cohort**|500 machines|
-|**Measure ID**|10042784|
+|**Measure ID**|10042784 or 26387262|
 
 ## Calculation
 

@@ -17,7 +17,7 @@ Symbol files make it easier to debug your code. The easiest way to get Windows s
 >
 > With the cadence that we release updates for Windows, the Windows debugging symbols we publish via the packages on this page are quickly made out of  date.
 > We have made significant improvements to the online [Microsoft Symbol Server](microsoft-public-symbols.md) by moving this to be an Azure-based symbol store, and symbols for all Windows versions and updates are available there. 
-> You can find more about this in this [blog entry](https://blogs.msdn.microsoft.com/windbg/2017/10/18/update-on-microsofts-symbol-server/).
+> You can find more about this in this [blog entry](/archive/blogs/windbg/update-on-microsofts-symbol-server).
 >
 > For information on how to retrieve symbols for a machine that is not connected to the Internet, see [Using a Manifest File with SymChk](using-a-manifest-file-with-symchk.md).
 
@@ -33,10 +33,10 @@ We are interested in your feedback about symbols. Please mail suggestions or bug
 
 - [Download Windows Debugging Tools](debugger-download-tools.md)
 
-- [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+- [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
 
-- [Download the Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+- [Download the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
 
-- [Download the Windows HLK, HCK, or Logo Kit](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)
+- [Download the Windows HLK, HCK, or Logo Kit](/windows-hardware/test/hlk/windows-hardware-lab-kit)
 
 - [Download Windows Insider Preview builds](https://insider.windows.com/)

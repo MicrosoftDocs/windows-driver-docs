@@ -24,4 +24,4 @@ Support for MOR Lock V2 is included in the following versions of Windows:
 
 [TCG Platform Reset Attack Mitigation Specification](https://www.trustedcomputinggroup.org/wp-content/uploads/Platform-Reset-Attack-Mitigation-Specification.pdf)
 
-[Secure MOR Implementation](https://docs.microsoft.com/windows-hardware/drivers/bringup/device-guard-requirements)
+[Secure MOR Implementation](./device-guard-requirements.md)

@@ -423,7 +423,7 @@ Book: *Microsoft Windows Internals* by Mark Russinovich and David Solomon.
 
 [Example 12: Using Page Heap Verification to Find a Bug](example-12---using-page-heap-verification-to-find-a-bug.md)
 
-For information on using the Heap memory process logger, see [Example 11: Starting a Private Trace Session](https://docs.microsoft.com/windows-hardware/drivers/devtest/example-11--starting-a-private-trace-session)
+For information on using the Heap memory process logger, see [Example 11: Starting a Private Trace Session](../devtest/example-11--starting-a-private-trace-session.md)
 
 Remarks
 -------

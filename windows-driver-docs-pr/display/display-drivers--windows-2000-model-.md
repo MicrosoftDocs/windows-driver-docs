@@ -31,13 +31,7 @@ Display driver writers can also implement the following DDIs:
 
 -   Direct3D DDI -- 3D graphics interface that allows vendors to provide hardware accelerations for Direct3D. See [Direct3D DDI](direct3d.md) for details.
 
-For complete descriptions of the graphics DDI entry points and structures, as well as GDI service functions and objects, see [GDI Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+For complete descriptions of the graphics DDI entry points and structures, as well as GDI service functions and objects, see [GDI Functions](/windows-hardware/drivers/ddi/index).
 
  
-
- 
-
-
-
-
 

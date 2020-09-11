@@ -62,9 +62,9 @@ Remarks
 
 Windows sets the value of DEVPKEY_Device_RemovalPolicy to one of the CM_REMOVAL_POLICY_*Xxx* values that are defined in Cfgmgr32.h.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_RemovalPolicy property.
+You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_RemovalPolicy property.
 
-Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicy property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003 and Windows XP support this property, but do not support the DEVPKEY_Device_RemovalPolicy property key. Instead, you can use the corresponding SPDRP_REMOVAL_POLICY identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
@@ -76,14 +76,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
- 
-
-
-
-
-
 

@@ -32,7 +32,7 @@ The **!lookaside** extension displays information about look-aside lists, resets
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
 Specifies the hexadecimal address of a look-aside list to be displayed or modified.
 
-If *Address* is omitted (or 0) and the **-all** option is not specified, a set of well-known, standard system look-aside lists is displayed. The set of lists is not exhaustive; that is, it does not include all system look-aside lists. Also, the set does not include custom look-aside lists that were created by calls to [**ExInitializePagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist) or [**ExInitializeNPagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist).
+If *Address* is omitted (or 0) and the **-all** option is not specified, a set of well-known, standard system look-aside lists is displayed. The set of lists is not exhaustive; that is, it does not include all system look-aside lists. Also, the set does not include custom look-aside lists that were created by calls to [**ExInitializePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist) or [**ExInitializeNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist).
 
 If *Address* is omitted (or 0) and the **-all** option is specified, all look-aside lists are displayed.
 
@@ -53,7 +53,7 @@ Specifies the new maximum depth of the specified look-aside list. This parameter
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For information about look-aside lists, see the [Using Lookaside Lists](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-lookaside-lists) and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
+For information about look-aside lists, see the [Using Lookaside Lists](../kernel/using-lookaside-lists.md) and *Microsoft Windows Internals*, by Mark Russinovich and David Solomon.
 
 Remarks
 -------
@@ -95,10 +95,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

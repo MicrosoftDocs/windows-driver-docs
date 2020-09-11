@@ -54,6 +54,4 @@ In the following, the first example is a [generic identifier](generic-identifier
 
 ## See Also
 
-[INF HardwareId Directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-hardwareid-directive)
-
-
+[INF HardwareId Directive](./inf-hardwareid-directive.md)

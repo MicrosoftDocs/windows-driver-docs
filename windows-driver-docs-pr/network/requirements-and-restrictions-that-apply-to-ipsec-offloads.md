@@ -75,13 +75,7 @@ The following requirements and restrictions apply to Internet protocol security 
 
 -   IPsec tasks are not offloaded for send packets that require IP fragmentation or for receive packets that require reassembly from IP fragmentation.
 
--   IPsec tasks are not offloaded for send and receive packets that pass through a load-balancing miniport driver. For more information about load balancing, see [Load Balancing and Failover](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff549197(v=vs.85)).
+-   IPsec tasks are not offloaded for send and receive packets that pass through a load-balancing miniport driver. For more information about load balancing, see [Load Balancing and Failover](/previous-versions/windows/hardware/network/ff549197(v=vs.85)).
 
  
-
- 
-
-
-
-
 

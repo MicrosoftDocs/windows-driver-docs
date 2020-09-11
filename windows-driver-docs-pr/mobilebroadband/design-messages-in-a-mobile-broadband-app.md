@@ -70,9 +70,9 @@ Inappropriate design for showing operator messages:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   Use [**ListView**](https://docs.microsoft.com/previous-versions/windows/apps/br211837(v=win.10)) to display messages. For more info, see [Adding List View, Semantic Zoom, and other data controls](https://docs.microsoft.com/previous-versions/windows/apps/hh465409(v=win.10)).
+-   Use [**ListView**](/previous-versions/windows/apps/br211837(v=win.10)) to display messages. For more info, see [Adding List View, Semantic Zoom, and other data controls](/previous-versions/windows/apps/hh465409(v=win.10)).
 
--   Use the app bar control to view and delete messages. For more info, see [Guidelines for app bars](https://docs.microsoft.com/windows/uwp/controls-and-patterns/app-bars).
+-   Use the app bar control to view and delete messages. For more info, see [Guidelines for app bars](/windows/uwp/controls-and-patterns/app-bars).
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 
@@ -82,11 +82,4 @@ Inappropriate design for showing operator messages:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

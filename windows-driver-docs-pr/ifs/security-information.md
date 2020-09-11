@@ -156,26 +156,19 @@ Wdm.h (include Wdm.h)
 ## Related topics
 
 
-[**ACL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl)
+[**ACL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl)
 
-[**SECURITY\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
+[**SECURITY\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff556610(v=vs.85))
 
-[**SeQuerySecurityDescriptorInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sequerysecuritydescriptorinfo)
+[**SeQuerySecurityDescriptorInfo**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sequerysecuritydescriptorinfo)
 
-[**SeSetSecurityDescriptorInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetsecuritydescriptorinfo)
+[**SeSetSecurityDescriptorInfo**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetsecuritydescriptorinfo)
 
-[**SeSetSecurityDescriptorInfoEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetsecuritydescriptorinfoex)
+[**SeSetSecurityDescriptorInfoEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetsecuritydescriptorinfoex)
 
-[**ZwQuerySecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff567066)
+[**ZwQuerySecurityObject**](/previous-versions/ff567066(v=vs.85))
 
-[**ZwSetSecurityObject**](https://msdn.microsoft.com/library/windows/hardware/ff567106)
-
- 
+[**ZwSetSecurityObject**](/previous-versions/ff567106(v=vs.85))
 
  
-
-
-
-
-
 

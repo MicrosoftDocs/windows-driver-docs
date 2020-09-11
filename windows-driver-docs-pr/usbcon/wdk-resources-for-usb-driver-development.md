@@ -1,5 +1,5 @@
 ---
-Description: This topic lists the "How to" topics in the USB driver documentation set. Each how-to topic presents a set of tasks as a sequence of steps with code examples.
+description: This topic lists the "How to" topics in the USB driver documentation set. Each how-to topic presents a set of tasks as a sequence of steps with code examples.
 title: Common tasks for USB client drivers
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -96,7 +96,4 @@ This list contains links to the how-to topics for USB client drivers.
  
 
 ## Related topics
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/)  
-
-
-
+[Universal Serial Bus (USB) Drivers](../index.yml)

@@ -1,5 +1,5 @@
 ---
-Description: This topic lists the Microsoft-provided drivers for the supported USB device classes.
+description: This topic lists the Microsoft-provided drivers for the supported USB device classes.
 title: USB device class drivers included in Windows
 ms.date: 04/20/2017
 ms.localizationpriority: High
@@ -34,7 +34,7 @@ For the current list of USB class specifications and class codes, visit the [USB
 
 Windows categorizes devices by *device setup classes*, which indicate the functionality of the device.
 
-Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](https://docs.microsoft.com/previous-versions/ff553419(v=vs.85)).
+Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](/previous-versions/ff553419(v=vs.85)).
 
 Two important device setup classes for USB devices are as follows:
 
@@ -63,7 +63,7 @@ The device setup classes are different from USB device classes discussed earlier
       {4d36e96c-e325-11ce-bfc1-08002be10318}</td>
       <td>Usbaudio.sys<p>Wdma\_usb.inf</p></td>
       <td>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-      <td>Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in <a href="https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components">Kernel-Mode WDM Audio Components</a>. For more information about Windows audio support, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8751">Audio Device Technologies for Windows</a> website.</td>
+      <td>Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in <a href="/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components">Kernel-Mode WDM Audio Components</a>. For more information about Windows audio support, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8751">Audio Device Technologies for Windows</a> website.</td>
     </tr>
     <tr>
       <td rowspan="4">Communications and CDC Control (02h)</td>
@@ -92,7 +92,7 @@ The device setup classes are different from USB device classes discussed earlier
         <td><strong>HIDClass</strong></br>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</td>
         <td>Hidclass.sys</br>Hidusb.sys</br>Input.inf</td>
         <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)">HID Architecture</a> and <a href="https://docs.microsoft.com/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8709">Input and HID - Architecture and Driver Support</a> website.</td>
+        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="https://docs.microsoft.com/previous-versions/jj126193(v=vs.85)">HID Architecture</a> and <a href="/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8709">Input and HID - Architecture and Driver Support</a> website.</td>
       </tr>
       <tr>
         <td>Physical (05h)</td>
@@ -122,7 +122,7 @@ The device setup classes are different from USB device classes discussed earlier
           <td><strong>USB</strong></td>
           <td>Usbstor.sys</td>
           <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-          <td>Microsoft provides the Usbstor.sys port driver to manage USB mass storage devices with Microsoft's native storage class drivers. For an example device stack that is managed by this driver, see <a href="https://docs.microsoft.com/windows-hardware/drivers/storage/device-object-example-for-a-usb-mass-storage-device">Device Object Example for a USB Mass Storage Device</a>. For information about Windows storage support, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8766">Storage Technologies</a> website.</td>
+          <td>Microsoft provides the Usbstor.sys port driver to manage USB mass storage devices with Microsoft's native storage class drivers. For an example device stack that is managed by this driver, see <a href="/windows-hardware/drivers/storage/device-object-example-for-a-usb-mass-storage-device">Device Object Example for a USB Mass Storage Device</a>. For information about Windows storage support, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8766">Storage Technologies</a> website.</td>
         </tr>
         <tr>
          <td><strong>SCSIAdapter</strong><p>{4d36e97b-e325-11ce-bfc1-08002be10318}</td>
@@ -241,4 +241,4 @@ The device setup classes are different from USB device classes discussed earlier
 
 ## Related topics
 
-[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
+[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)

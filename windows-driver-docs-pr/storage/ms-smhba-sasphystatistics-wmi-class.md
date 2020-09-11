@@ -47,15 +47,9 @@ class MS_SMHBA_SASPHYSTATISTICS
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_SASPHYSTATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_sasphystatistics)
+[**MS\_SMHBA\_SASPHYSTATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_sasphystatistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

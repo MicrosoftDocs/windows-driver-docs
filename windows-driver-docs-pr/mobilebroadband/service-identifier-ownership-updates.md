@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Service identifier ownership updates
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 
 Service Identifiers are a set of fields that are encoded in mobile broadband devices (SIM cards for GSM and modem for CDMA) and are used to uniquely identify the device. The service identifier is used by Windows 8, Windows 8.1, and Windows 10 to download the service metadata package for that device. Before you create your service metadata packages, you must register your service identifiers with the Windows Dev Center hardware dashboard. For info on registering new service identifiers, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md).

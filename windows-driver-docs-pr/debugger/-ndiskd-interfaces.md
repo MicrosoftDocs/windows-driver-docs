@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The **!ndiskd.interfaces** extension displays information about a network interface. If you run this extension with no parameters, !ndiskd will display a list of all network interfaces.
 
-For more information about network interfaces, see [NDIS Network Interfaces](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2).
+For more information about network interfaces, see [NDIS Network Interfaces](../network/ndis-network-interfaces2.md).
 
 ```console
 !ndiskd.interfaces -handle <x> [-luid <x>]
@@ -29,7 +29,7 @@ For more information about network interfaces, see [NDIS Network Interfaces](htt
 Optional handle of a network interface.
 
 <span id="_______-luid______"></span><span id="_______-LUID______"></span> *-luid*   
-[NetLuid](https://docs.microsoft.com/windows-hardware/drivers/network/net-luid-value) (Net Locally Unique Identifier) of a network interface.
+[NetLuid](../network/net-luid-value.md) (Net Locally Unique Identifier) of a network interface.
 
 ### DLL
 
@@ -113,9 +113,9 @@ STATE
 
 ## See also
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -123,6 +123,6 @@ STATE
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[NDIS Network Interfaces](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2)
+[NDIS Network Interfaces](../network/ndis-network-interfaces2.md)
 
-[NET\_LUID Value](https://docs.microsoft.com/windows-hardware/drivers/network/net-luid-value)
+[NET\_LUID Value](../network/net-luid-value.md)

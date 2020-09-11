@@ -21,7 +21,7 @@ Percent of machines with pending firmware updates due to the risk of entering bi
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|250|
 |**Passing criteria**|<= 10%|
-|**Measure ID**|23153969|
+|**Measure ID**|23153969 or 23260737|
 
 ## Calculation
 

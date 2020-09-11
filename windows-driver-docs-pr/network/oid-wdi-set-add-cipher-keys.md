@@ -27,7 +27,7 @@ Cipher keys that are marked as Static should not be cleared on a roam. They can 
 
 | TLV                                                                          | Multiple TLV instances allowed | Optional | Description                                                              |
 |------------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------|
-| [**WDI\_TLV\_SET\_CIPHER\_KEY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-cipher-key-info) | X                              |          | The cipher keys to be added or overwritten in the key table of the port. |
+| [**WDI\_TLV\_SET\_CIPHER\_KEY\_INFO**](./wdi-tlv-set-cipher-key-info.md) | X                              |          | The cipher keys to be added or overwritten in the key table of the port. |
 
  
 
@@ -66,9 +66,4 @@ Requirements
 [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](oid-wdi-set-delete-cipher-keys.md)
 
  
-
- 
-
-
-
 

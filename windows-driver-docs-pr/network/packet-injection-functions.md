@@ -29,32 +29,32 @@ A callout driver can call the following WFP functions to inject pended or modifi
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0" data-raw-source="[&lt;strong&gt;FwpsInjectForwardAsync0&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0)"><strong>FwpsInjectForwardAsync0</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0" data-raw-source="[&lt;strong&gt;FwpsInjectForwardAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectforwardasync0)"><strong>FwpsInjectForwardAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the forwarding data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkReceiveAsync0&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0)"><strong>FwpsInjectNetworkReceiveAsync0</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkReceiveAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworkreceiveasync0)"><strong>FwpsInjectNetworkReceiveAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the receive data path</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkSendAsync0&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0)"><strong>FwpsInjectNetworkSendAsync0</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectNetworkSendAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectnetworksendasync0)"><strong>FwpsInjectNetworkSendAsync0</strong></a></p></td>
 <td align="left"><p>network layer</p></td>
 <td align="left"><p>the send data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportReceiveAsync0&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0)"><strong>FwpsInjectTransportReceiveAsync0</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportReceiveAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportreceiveasync0)"><strong>FwpsInjectTransportReceiveAsync0</strong></a></p></td>
 <td align="left"><p>packet data from the transport, datagram data, ICMP error, or ALE layers</p></td>
 <td align="left"><p>the receive data path</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportSendAsync0&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0)"><strong>FwpsInjectTransportSendAsync0</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0" data-raw-source="[&lt;strong&gt;FwpsInjectTransportSendAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjecttransportsendasync0)"><strong>FwpsInjectTransportSendAsync0</strong></a></p></td>
 <td align="left"><p>packet data from the transport, datagram data, ICMP error, or ALE layers</p></td>
 <td align="left"><p>the send data path</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0" data-raw-source="[&lt;strong&gt;FwpsStreamInjectAsync0&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0)"><strong>FwpsStreamInjectAsync0</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0" data-raw-source="[&lt;strong&gt;FwpsStreamInjectAsync0&lt;/strong&gt;](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsstreaminjectasync0)"><strong>FwpsStreamInjectAsync0</strong></a></p></td>
 <td align="left"><p>TCP data segments</p></td>
 <td align="left"><p>a data stream</p></td>
 </tr>
@@ -63,7 +63,7 @@ A callout driver can call the following WFP functions to inject pended or modifi
 
  
 
-In addition, the [**FwpsQueryPacketInjectionState0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsquerypacketinjectionstate0) function is used to inspect the injection history of packet data.
+In addition, the [**FwpsQueryPacketInjectionState0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsquerypacketinjectionstate0) function is used to inspect the injection history of packet data.
 
 Cross-layer injection is enabled if the callout can supply all needed information that is required by the injection function, and the net buffer list has the format expected by the injection function. For example, a callout can capture a packet at the forward path, modify its destination address to that of the local computer, and call **FwpsInjectTransportReceiveAsync0** to redirect the packet into the local computer's TCP/IP stack.
 
@@ -91,10 +91,4 @@ In Windows Vista with Service Pack 1 (SP1) and Windows Server 2008, if inMetaVal
  
 
  
-
- 
-
-
-
-
 

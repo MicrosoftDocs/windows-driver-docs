@@ -1,5 +1,5 @@
 ---
-Description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. 
+description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
 title: Test USB Type-C systems with USB Type-C ConnEx
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -109,7 +109,7 @@ Make sure you meet these requirements:
 
 -   Installation of the test tools requires an elevated command window.
 
-    To open an elevated command window, the user must be a member of the **Administrators** group on the proxy controller. To open an elevated Command Prompt window, create a desktop shortcut to Cmd.exe, right-click the Cmd.exe shortcut, and select **Run as administrator**.
+    To open an elevated command window, the user must be a member of the **Administrators** group on the proxy controller. To open an elevated Command Prompt window, create a desktop shortcut to Cmd.exe, select and hold (or right-click) the Cmd.exe shortcut, and select **Run as administrator**.
 
 ### USB Type-C ConnEx tools
 
@@ -196,7 +196,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
             ![attaching system under test (sut) with dtmf](images/connexc-connect5.png)
 
 7.  Make sure USB Type-C ConnEx is recognized by Device Manager on the proxy controller.
-    1.  Right-click the Start button in the task bar and select **Device Manager**.
+    1.  Select and hold (or right-click) the Start button in the task bar and select **Device Manager**.
     2.  Expand the **Ports (COM & LPT)** node and note the COM port that is used by the microcontroller. In this example, it is connected to COM 4.
 
         ![USB Type-C ConnEx in device manager](images/connexc-connect8.png)

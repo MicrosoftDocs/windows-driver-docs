@@ -23,14 +23,9 @@ This section describes how user-mode applications and kernel-mode drivers send H
 
 This section includes the following topics:
 
-[Sending HID Reports by User-Mode Applications](sending-hid-reports-by-user-mode-applications.md)
+[Sending HID Reports by User-Mode Applications]()
 
-[Sending HID Reports by Kernel-Mode Drivers](sending-hid-reports-by-kernel-mode-drivers.md)
-
- 
+[Sending HID Reports by Kernel-Mode Drivers]()
 
  
-
-
-
 

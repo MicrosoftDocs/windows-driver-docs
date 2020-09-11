@@ -1,5 +1,5 @@
 ---
-Description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
+description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
 title: USB Type-C manual interoperability test procedures
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -150,7 +150,7 @@ Applies to: System, dock, device
 
 Repeat this test for other available system power states: Sleep (S3), Hibernate (S4), and Hybrid Sleep.
 
-**Note**  Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](https://docs.microsoft.com/windows-hardware/drivers/devtest/pwrtest).
+**Note**  Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](../devtest/pwrtest.md).
 
  
 
@@ -170,7 +170,7 @@ Applies to: Dock, device
 Additional information of selective suspend can be found from the following sources:
 
 -   [Enabling selective suspend for HID](https://go.microsoft.com/fwlink/p/?LinkId=623307)
--   [Selective suspend for HID over USB devices](https://docs.microsoft.com/windows-hardware/drivers/hid/selective-suspend-for-hid-over-usb-devices)
+-   [Selective suspend for HID over USB devices](../hid/selective-suspend-for-hid-over-usb-devices.md)
 -   [Demystifying selective suspend]( https://go.microsoft.com/fwlink/p/?LinkId=623308)
 
 ## <a href="" id="ft5"></a>FT Case 5: Dock Identification
@@ -484,9 +484,4 @@ Provide these details:
 -   Systems, devices, docks, or hubs that were used for the tests. Include make, model, and Web site so that we can get additional information, if needed.
 
  
-
- 
-
-
-
 

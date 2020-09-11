@@ -20,8 +20,8 @@ This topic describes the expected behavior of hardware buttons.
 
 For more information about button requirements:
 
-- For Windows 10 Mobile, see section 2.6 in the [Minimum Hardware Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
-- For Windows 10 for desktop editions, see section 3.6 in the [Minimum Hardware Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+- For Windows 10 Mobile, see section 2.6 in the [Minimum Hardware Requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
+- For Windows 10 for desktop editions, see section 3.6 in the [Minimum Hardware Requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
 ## Button behavior in Windows 10
 
@@ -47,7 +47,7 @@ Volume up|Press and hold|Auto-repeat volume increment|Auto-repeat volume increme
 
 ### Button combination behavior in Windows 10
 
-As noted, some button combinations in Windows 10 apply to the [Windows 10 button architecture](https://docs.microsoft.com/windows-hardware/drivers/hid/buttons) or the Windows 8.1 button architecture. All other button combinations in Windows 10 apply to either button architecture. It is recommended to describe hardware buttons using the Windows 10 architecture.
+As noted, some button combinations in Windows 10 apply to the [Windows 10 button architecture](../hid/buttons.md) or the Windows 8.1 button architecture. All other button combinations in Windows 10 apply to either button architecture. It is recommended to describe hardware buttons using the Windows 10 architecture.
 
 |Button combination|Windows 10 for desktop editions|Windows 10 Mobile|
 |---|---|---|
@@ -90,5 +90,5 @@ As noted, some button combinations in Windows 10 apply to the [Windows 10 butto
 
 ## Related topics
 
-[Windows 10 button architecture](https://docs.microsoft.com/windows-hardware/drivers/hid/buttons)  
-[Minimum Hardware Requirements](https://docs.microsoft.com/windows-hardware/design/minimum/minimum-hardware-requirements-overview)  
+[Windows 10 button architecture](../hid/buttons.md)  
+[Minimum Hardware Requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)

@@ -1,5 +1,5 @@
 ---
-Description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
+description: This topic provides information for client driver developers about the tracing and logging features for Universal Serial Bus (USB).
 title: Overview of USB Event Tracing for Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -26,7 +26,7 @@ ETW was introduced in Windows 2000. Since then, various core operating system an
 
 ETW was significantly upgraded for Windows Vista and Windows 7. One of the most significant new features is the unified event provider model and APIs. In short, the new unified APIs combine logging traces and writing to the Event Viewer into one consistent, easy-to-use mechanism for event providers. At the same time, several new features have been added to ETW to improve the developer and end-user experiences.
 
-For more information about ETW and WPP, see Event Tracing and [Event Tracing for Windows (ETW)](https://docs.microsoft.com/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-).
+For more information about ETW and WPP, see Event Tracing and [Event Tracing for Windows (ETW)](../devtest/event-tracing-for-windows--etw-.md).
 
 ## USB Support for ETW Logging
 
@@ -115,7 +115,4 @@ Windows 8 provides a USB driver stack to support USB 3.0 devices. The Microsoft
 
 ## Related topics
 [Using USB ETW](using-usb-etw.md)  
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
-
-
-
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

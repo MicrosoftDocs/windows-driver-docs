@@ -45,7 +45,7 @@ by Richard McDougall, Jim Mauro and Brendan Gregg
 
 Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. Launch the feedback hub from a Windows PC, by clicking this link [https://windows-feedback:?contextid=1053](https://windows-feedback:?contextid=1053).
+1. Launch the feedback hub from a Windows PC, by selecting this link [https://windows-feedback:?contextid=1053](https://windows-feedback:?contextid=1053).
 2. Select *Add new feedback*.
 3. Provide a detailed, specific description of the issue or suggestion.
 

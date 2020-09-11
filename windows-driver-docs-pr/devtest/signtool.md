@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 # SignTool
 
-SignTool (Signtool.exe) is a command-line [CryptoAPI](https://docs.microsoft.com/windows/win32/seccrypto/cryptography-portal) tool that digitally-signs files, verifies signatures in files, and time stamps files.
+SignTool (Signtool.exe) is a command-line [CryptoAPI](/windows/win32/seccrypto/cryptography-portal) tool that digitally-signs files, verifies signatures in files, and time stamps files.
 
 ```command
     SignTool [Operation] [Options] [FileName ...]
@@ -190,10 +190,10 @@ Verifies the signature at a specified position.
 Specifies an optional hash algorithm to use when searching for a file in a catalog.
 
 **/kp**  
-Configures SignTool to verify that the digital signature of each of the files specified by the *FileName* argument complies with the [kernel-mode code signing policy](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-) and the [PnP device installation signing requirements](https://docs.microsoft.com/windows-hardware/drivers/install/pnp-device-installation-signing-requirements--windows-vista-and-later-) of Windows Vista and later versions of Windows. If this option is not specified, SignTool only verifies that a signature complies with the PnP device installation signing requirements.
+Configures SignTool to verify that the digital signature of each of the files specified by the *FileName* argument complies with the [kernel-mode code signing policy](../install/kernel-mode-code-signing-policy--windows-vista-and-later-.md) and the [PnP device installation signing requirements](../install/pnp-device-installation-signing-requirements--windows-vista-and-later-.md) of Windows Vista and later versions of Windows. If this option is not specified, SignTool only verifies that a signature complies with the PnP device installation signing requirements.
 
 **/ms**  
-Uses multiple verification semantics. This is the default behavior of a [**WinVerifyTrust function**](https://docs.microsoft.com/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on Windows 8 and above.
+Uses multiple verification semantics. This is the default behavior of a [**WinVerifyTrust function**](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on Windows 8 and above.
 
 **/o** *Version*  
 Verifies the file as per the operating system version. The format for the *Version* argument is *PlatformID:VerMajor.VerMinor.BuildNumber*
@@ -204,7 +204,7 @@ The use of the **/o** option is recommended. If **/o** is not specified, SignToo
 Verifies PKCS \#7 files. No existing policies are used for PKCS \#7 validation. The signature is checked and a chain is built for the signing certificate.
 
 **/pa**  
-Configures SignTool to verify that the digital signature of each of the files specified by the *FileName* argument complies with the [PnP device installation signing requirements](https://docs.microsoft.com/windows-hardware/drivers/install/pnp-device-installation-signing-requirements--windows-vista-and-later-).
+Configures SignTool to verify that the digital signature of each of the files specified by the *FileName* argument complies with the [PnP device installation signing requirements](../install/pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
 >[!NOTE]
 >This option cannot be used with the **catdb** options.
@@ -238,25 +238,25 @@ Configures SignTool to display help information in a command window.
 *FileName ...*  
 Specifies a list of one or more file names. Depending on the command, SignTool will sign, timestamp, or verify the specified files. If the **catdb** command is used, SignTool will add or remove the specified files from a catalog database.
 
-For the **sign**, **timestamp**, and **verify** commands, a file can be a catalog file for a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) or a driver file.
+For the **sign**, **timestamp**, and **verify** commands, a file can be a catalog file for a [driver package](../install/driver-packages.md) or a driver file.
 
-For the **catdb** command, a file must be a catalog file for a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages).
+For the **catdb** command, a file must be a catalog file for a [driver package](../install/driver-packages.md).
 
 ## Remarks
 
 SignTool supports a large number of options. The options described in this topic are limited to the ones that you can use to sign or verify a driver package or driver file.
 
-For a complete list of SignTool parameters, see the Microsoft [SignTool](https://docs.microsoft.com/windows/win32/seccrypto/signtool) website.
+For a complete list of SignTool parameters, see the Microsoft [SignTool](/windows/win32/seccrypto/signtool) website.
 
-For more information about signing files, see the Microsoft [Cryptography Tools](https://docs.microsoft.com/windows/win32/seccrypto/cryptography-tools) website.
+For more information about signing files, see the Microsoft [Cryptography Tools](/windows/win32/seccrypto/cryptography-tools) website.
 
 A 32-bit version of SignTool is located in the bin\\i386 folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
 
 ## Examples
 
-The following is an example of how to sign a [driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) catalog file using a Software Publisher Certificate (SPC) and a corresponding cross-certificate. This example is valid for signing a driver package for 64-bit versions of Windows Vista and later versions of Windows, which enforce the kernel-mode code signing policy. The example signs the driver package's catalog file AbcCatFileName.cat. To sign the catalog file, the example uses the cross-certificate AbcCrossCertificate and the AbcSPCCertificate certificate. The AbcSPCCertificate certificate is located in the AbcCertificateStore certificate store.
+The following is an example of how to sign a [driver package's](../install/driver-packages.md) catalog file using a Software Publisher Certificate (SPC) and a corresponding cross-certificate. This example is valid for signing a driver package for 64-bit versions of Windows Vista and later versions of Windows, which enforce the kernel-mode code signing policy. The example signs the driver package's catalog file AbcCatFileName.cat. To sign the catalog file, the example uses the cross-certificate AbcCrossCertificate and the AbcSPCCertificate certificate. The AbcSPCCertificate certificate is located in the AbcCertificateStore certificate store.
 
-The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is http://timestamp.digicert.com.
+The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is `http://timestamp.digicert.com`.
 
 ```command
 SignTool sign /ac AbcCrossCertificate.cer /s AbcCertificateStore /n AbcSPCCertificate /t http://timestamp.digicert.com AbcCatFileName.cat
@@ -268,9 +268,9 @@ The following is an example of how to embed a signature in a driver file using a
 SignTool sign /ac AbcCrossCertificate.cer /s AbcCertificateStore /n AbcSPCCertificate /t http://timestamp.digicert.com AbcDriverFile.sys
 ```
 
-The following is an example of how to sign a [driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) catalog file using a [commercial release certificate](https://docs.microsoft.com/windows-hardware/drivers/install/commercial-release-certificate) or a [commercial test certificate](https://docs.microsoft.com/windows-hardware/drivers/install/commercial-test-certificate). This example is valid for signing a driver package for 32-bit versions of Windows Vista and later versions of Windows, which do not enforce the kernel-mode code signing policy. The example signs the driver package's catalog file CatalogFileName.cat. The example uses the AbcTestCertificate test certificate, located in the TestCertificateStore certificate store, to sign the catalog file.
+The following is an example of how to sign a [driver package's](../install/driver-packages.md) catalog file using a [commercial release certificate](../install/commercial-release-certificate.md) or a [commercial test certificate](../install/commercial-test-certificate.md). This example is valid for signing a driver package for 32-bit versions of Windows Vista and later versions of Windows, which do not enforce the kernel-mode code signing policy. The example signs the driver package's catalog file CatalogFileName.cat. The example uses the AbcTestCertificate test certificate, located in the TestCertificateStore certificate store, to sign the catalog file.
 
-The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is http://timestamp.digicert.com.
+The example also uses a publicly-available timestamp server to sign the catalog file. The timestamp server is provided by DigiCert and its URL is `http://timestamp.digicert.com`.
 
 ```command
 SignTool sign /s TestCertificateStore /n AbcTestCertificate /t http://timestamp.digicert.com CatalogFileName.cat
@@ -278,7 +278,7 @@ SignTool sign /s TestCertificateStore /n AbcTestCertificate /t http://timestamp.
 
 ### Verifying Examples
 
-The following is an example of how to verify that the signature of a [driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) catalog file complies with the kernel-mode code signing policy and the PnP device installation signing requirements. The example verifies the signature of the catalog file AbcCatalogFile.cat.
+The following is an example of how to verify that the signature of a [driver package's](../install/driver-packages.md) catalog file complies with the kernel-mode code signing policy and the PnP device installation signing requirements. The example verifies the signature of the catalog file AbcCatalogFile.cat.
 
 ```command
 SignTool verify /kp CatalogFileName.cat
@@ -296,7 +296,7 @@ The following is an example of how to verify that an embedded signature complies
 SignTool verify /kp AbcDriverFile.sys
 ```
 
-The following is an example of how to verify that the signature of a [driver package's](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) catalog file complies with the PnP device installation signing requirements. The example verifies the signature of the catalog file CatalogFileName.cat.
+The following is an example of how to verify that the signature of a [driver package's](../install/driver-packages.md) catalog file complies with the PnP device installation signing requirements. The example verifies the signature of the catalog file CatalogFileName.cat.
 
 ```command
 SignTool verify /pa CatalogFileName.cat

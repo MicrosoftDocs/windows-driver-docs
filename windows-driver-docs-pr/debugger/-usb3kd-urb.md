@@ -82,14 +82,7 @@ TransferBufferMDL:     0xfffffa8005848930
 
 [USB 3.0 Extensions](usb-3-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

@@ -28,7 +28,7 @@ The size (in bytes) of a UINT32.
 
 | Type   | Description                                                                                                  |
 |--------|--------------------------------------------------------------------------------------------------------------|
-| UINT32 | The Stop AP reason. See [**WDI\_STOP\_AP\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_stop_ap_reason) for possible reason values. |
+| UINT32 | The Stop AP reason. See [**WDI\_STOP\_AP\_REASON**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_stop_ap_reason) for possible reason values. |
 
  
 
@@ -59,12 +59,7 @@ Requirements
 ## See also
 
 
-[NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-stop-ap)
+[NDIS\_STATUS\_WDI\_INDICATION\_STOP\_AP](./ndis-status-wdi-indication-stop-ap.md)
 
  
-
- 
-
-
-
 

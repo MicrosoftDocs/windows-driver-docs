@@ -71,12 +71,7 @@ Resolution
 
 To begin debugging, use a kernel debugger to get a stack trace: the [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause, then use the [**kb (Display Stack Backtrace)**](k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-.md)  command to get a stack trace. If the driver that caused the error has been identified, activate Driver Verifier and attempt to replicate this bug.
 
-For full details on [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier), see the Windows Driver Kit.
+For full details on [Driver Verifier](../devtest/driver-verifier.md), see the Windows Driver Kit.
 
  
-
- 
-
-
-
 

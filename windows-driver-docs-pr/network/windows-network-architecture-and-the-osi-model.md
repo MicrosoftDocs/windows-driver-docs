@@ -9,7 +9,7 @@ keywords:
 - MAC layer WDK networking
 - physical layer WDK networking
 - Windows network architecture WDK
-ms.date: 04/20/2017
+ms.date: 09/04/2020
 ms.localizationpriority: medium
 ms.custom: contperfq1
 ---
@@ -45,13 +45,13 @@ The data link layer is further divided by the Institute of Electrical and Electr
 
 The MAC sublayer manages access to the physical layer, checks frame errors, and manages address recognition of received frames.
 
-In the Windows network architecture, the MAC sublayer is implemented in the NIC. The NIC is controlled by a software device driver called the [miniport driver](ndis-miniport-drivers2.md). Windows supports several variations of miniport drivers including WDM miniport drivers, miniport call managers (MCMs), and miniport [intermediate drivers](ndis-miniport-drivers.md).
+In the Windows network architecture, the MAC sublayer is implemented in the NIC. The NIC is controlled by a software device driver called the [miniport driver](ndis-miniport-drivers2.md). Windows supports several variations of miniport drivers including WDM miniport drivers, miniport call managers (MCMs), and miniport [intermediate drivers](ndis-intermediate-drivers.md).
 
 ### LLC
 
 The LLC sublayer provides error-free transfer of data frames from one node to another. The LLC sublayer establishes and terminates logical links, controls frame flow, sequences frames, acknowledges frames, and retransmits unacknowledged frames. The LLC sublayer uses frame acknowledgement and retransmission to provide virtually error free transmission over the link to the layers above.
 
-In Windows, the LLC sublayer is implemented by a software driver known as a [protocol driver](ndis-protocol-drivers.md).
+In Windows, the LLC sublayer is implemented by a software driver known as a [protocol driver](./roadmap-for-developing-ndis-protocol-drivers.md).
 
 ## Network Layer
 The network layer controls the operation of the subnet. This layer determines the physical path that the data should take, based on the following:
@@ -62,7 +62,7 @@ The network layer controls the operation of the subnet. This layer determines th
 
 -   Other factors, such as routing, traffic control, frame fragmentation and reassembly, logical-to-physical address mapping, and usage accounting
 
-The network layer is implemented by a [protocol driver](ndis-protocol-drivers.md).
+The network layer is implemented by a [protocol driver](./roadmap-for-developing-ndis-protocol-drivers.md).
 
 ## Transport Layer
 
@@ -70,13 +70,7 @@ The transport layer ensures that messages are delivered error free, in sequence,
 
 A minimal transport layer is required in protocol stacks that include a reliable network or LLC sublayer that provides virtual circuit capability. For example, because the NetBEUI transport driver for Windows is an OSI-compliant LLC sublayer, its transport layer functions are minimal. If the protocol stack does not include an LLC sublayer, and if the network layer is unreliable and/or supports datagrams (as with TCP/IP's IP layer or NWLink's IPX layer), the transport layer should include frame sequencing and acknowledgment, as well as retransmission of unacknowledged frames.
 
-In the Windows network architecture, the transport layer is implemented by a [protocol driver](ndis-protocol-drivers.md), which is sometimes referred to a *transport driver*.
+In the Windows network architecture, the transport layer is implemented by a [protocol driver](./roadmap-for-developing-ndis-protocol-drivers.md), which is sometimes referred to a *transport driver*.
 
  
-
- 
-
-
-
-
 

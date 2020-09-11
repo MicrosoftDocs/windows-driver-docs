@@ -10,33 +10,33 @@ ms.localizationpriority: medium
 
 A document feeder is a unit attached to or built into a scanner that automatically feeds paper documents in a position to be scanned. For a scanner with a document feeder, the functionality is exposed and controlled through the addition of the properties contained in the following list. For Windows Me and Windows XP, the following properties are located on the root item:
 
-- [**WIA\_DPS\_HORIZONTAL\_SHEET\_FEED\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-horizontal-sheet-feed-size)
+- [**WIA\_DPS\_HORIZONTAL\_SHEET\_FEED\_SIZE**](./wia-dps-horizontal-sheet-feed-size.md)
 
-- [**WIA\_DPS\_VERTICAL\_SHEET\_FEED\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-vertical-sheet-feed-size)
+- [**WIA\_DPS\_VERTICAL\_SHEET\_FEED\_SIZE**](./wia-dps-vertical-sheet-feed-size.md)
 
-- [**WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-min-horizontal-sheet-feed-size)
+- [**WIA\_DPS\_MIN\_HORIZONTAL\_SHEET\_FEED\_SIZE**](./wia-dps-min-horizontal-sheet-feed-size.md)
 
-- [**WIA\_DPS\_MIN\_VERTICAL\_SHEET\_FEED\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-min-vertical-sheet-feed-size)
+- [**WIA\_DPS\_MIN\_VERTICAL\_SHEET\_FEED\_SIZE**](./wia-dps-min-vertical-sheet-feed-size.md)
 
-- [**WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-sheet-feeder-registration)
+- [**WIA\_DPS\_SHEET\_FEEDER\_REGISTRATION**](./wia-dps-sheet-feeder-registration.md)
 
-- [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-capabilities)
+- [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](./wia-dps-document-handling-capabilities.md)
 
-- [**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-status)
+- [**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](./wia-dps-document-handling-status.md)
 
-- [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-select)
+- [**WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT**](./wia-dps-document-handling-select.md)
 
-- [**WIA\_DPS\_PAGES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-pages)
+- [**WIA\_DPS\_PAGES**](./wia-dps-pages.md)
 
 For Windows Me and Windows XP, the following optional document feeder properties are located on the child item:
 
-- [**WIA\_DPS\_PAGE\_SIZE**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-page-size)
+- [**WIA\_DPS\_PAGE\_SIZE**](./wia-dps-page-size.md)
 
-- [**WIA\_DPS\_PAGE\_WIDTH**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-page-width)
+- [**WIA\_DPS\_PAGE\_WIDTH**](./wia-dps-page-width.md)
 
-- [**WIA\_DPS\_PAGE\_HEIGHT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-page-height)
+- [**WIA\_DPS\_PAGE\_HEIGHT**](./wia-dps-page-height.md)
 
-- [**WIA\_IPS\_ORIENTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-orientation)
+- [**WIA\_IPS\_ORIENTATION**](./wia-ips-orientation.md)
 
 If a device has a flatbed, a document feeder, and a duplexer, the driver reports the WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES property as `FEED | FLAT | DUP`. Make sure that the valid values for WIA\_DPS\_DOCUMENT\_HANDLING\_SELECT are set correctly.
 
@@ -46,7 +46,7 @@ It is important to remember that if the device has a document feeder, it must su
 
 ## Acquiring data from a document feeder
 
-There are a few changes that must be made in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method when the scanner acquires images from a document feeder.
+There are a few changes that must be made in the implementation of the [**IWiaMiniDrv::drvAcquireItemData**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata) method when the scanner acquires images from a document feeder.
 
 1. An application reads the WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES property to determine whether the scanner supports scanning using the document feeder.
 
@@ -56,7 +56,7 @@ There are a few changes that must be made in the implementation of the [**IWiaMi
 
 1. Check the WIA\_DPS\_PAGES property to determine the scanning behavior. If this property is zero, scan all pages until the feeder is empty. If it is positive, scan only the number of pages indicated by the value contained in the WIA\_DPS\_PAGES property.
 
-1. Scan the requested number of pages by controlling a loop, continually scanning, and sending data (one page at a time) to the WIA application by calling the [**IWiaMiniDrvCallBack::MiniDrvCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) method. The following code example shows how this might work:
+1. Scan the requested number of pages by controlling a loop, continually scanning, and sending data (one page at a time) to the WIA application by calling the [**IWiaMiniDrvCallBack::MiniDrvCallback**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrvcallback-minidrvcallback) method. The following code example shows how this might work:
 
     ```cpp
     for(int x=1; x=Pagecount; x++)
@@ -67,7 +67,7 @@ There are a few changes that must be made in the implementation of the [**IWiaMi
     }
     ```
 
-1. If [**WIA\_IPA\_TYMED**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-tymed) is set to TYMED\_CALLBACK or TYMED\_MULTIPAGE\_CALLBACK, then an extra message (IT\_MSG\_NEW\_PAGE) must be sent after one page has been scanned and before the next one is to be scanned. This is done by calling the [**wiasSendEndOfPage**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiassendendofpage) WIA service utility function.
+1. If [**WIA\_IPA\_TYMED**](./wia-ipa-tymed.md) is set to TYMED\_CALLBACK or TYMED\_MULTIPAGE\_CALLBACK, then an extra message (IT\_MSG\_NEW\_PAGE) must be sent after one page has been scanned and before the next one is to be scanned. This is done by calling the [**wiasSendEndOfPage**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiassendendofpage) WIA service utility function.
 
 The number of pages that a document feeder driver returns depends on the setting of the WIA\_DPS\_PAGES property.
 

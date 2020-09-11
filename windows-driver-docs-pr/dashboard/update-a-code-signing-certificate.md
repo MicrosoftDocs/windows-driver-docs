@@ -13,7 +13,7 @@ As a Partner Center administrator, you’re responsible for keeping your digital
 
 Partner Center supports multiple certificates associated with a single account.  If you want to add additional certificates using this same process.
 
-If you’re registering your company on dashboard for the first time, see [Establish a new company](https://docs.microsoft.com/windows-hardware/drivers/dashboard/establish-a-new-company).
+If you’re registering your company on dashboard for the first time, see [Establish a new company](/windows-hardware/drivers/dashboard/dashboard-administration).
 
 > [!IMPORTANT]
 > The certificate uploaded and used for all Partner Center submission packages has changed:
@@ -26,7 +26,7 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 ### Step 1: Renew your code signing certificate if needed  
 
-1. Determine which type of code signing certificate you need (for more information, see [Get a code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate)).
+1. Determine which type of code signing certificate you need (for more information, see [Get a code signing certificate](./get-a-code-signing-certificate.md)).
 
 2. Get a new certificate or reuse an existing certificate.
 
@@ -48,10 +48,10 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 ## Related topics
 
-* [Before you sign in](https://docs.microsoft.com/windows-hardware/drivers/dashboard/before-you-sign-in)
+* [Before you sign in](./get-started-with-the-hardware-dashboard.md)
 
-* [Establish a new company](https://docs.microsoft.com/windows-hardware/drivers/dashboard/establish-a-new-company)
+* [Establish a new company](/windows-hardware/drivers/dashboard/dashboard-administration)
 
-* [Hardware certification submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions)
+* [Hardware certification submissions](./hardware-certification-submissions.md)
 
-* [App certification submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/app-certification-submissions)
+* [App certification submissions](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification)

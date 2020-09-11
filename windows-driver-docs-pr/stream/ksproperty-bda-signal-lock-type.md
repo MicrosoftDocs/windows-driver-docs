@@ -45,7 +45,7 @@ Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCK\_TYPE to determine the current lock ty
 <td><p>No</p></td>
 <td><p>Pin or Filter</p></td>
 <td><p>KSP_NODE</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype" data-raw-source="[&lt;strong&gt;BDA_LockType&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)"><strong>BDA_LockType</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype" data-raw-source="[&lt;strong&gt;BDA_LockType&lt;/strong&gt;](/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)"><strong>BDA_LockType</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -57,7 +57,7 @@ Remarks
 
 The **NodeId** member of KSP\_NODE specifies the identifier of the control node or is set to −1 to specify a pin.
 
-The returned [**BDA\_LockType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)-typed value identifies the current lock type.
+The returned [**BDA\_LockType**](/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)-typed value identifies the current lock type.
 
 The RF tuner node should provide this indication.
 
@@ -80,18 +80,11 @@ Requirements
 ## See also
 
 
-[**BDA\_LockType**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)
+[**BDA\_LockType**](/windows-hardware/drivers/ddi/bdamedia/ne-bdamedia-_bdalocktype)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_LOCK\_CAPS**](ksproperty-bda-signal-lock-caps.md)
 
  
-
- 
-
-
-
-
-
 

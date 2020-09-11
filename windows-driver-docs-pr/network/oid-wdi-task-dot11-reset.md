@@ -38,8 +38,8 @@ If the port being reset was operating as a STA, AP, or a Wi-Fi Direct Client or 
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                                       |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------------|
-| [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-dot11-reset-parameters) |                                |          | Parameters for the dot11 reset.                   |
-| [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-configured-mac-address) |                                | X        | The MAC address that should be used for the port. |
+| [**WDI\_TLV\_DOT11\_RESET\_PARAMETERS**](./wdi-tlv-dot11-reset-parameters.md) |                                |          | Parameters for the dot11 reset.                   |
+| [**WDI\_TLV\_CONFIGURED\_MAC\_ADDRESS**](./wdi-tlv-configured-mac-address.md) |                                | X        | The MAC address that should be used for the port. |
 
  
 
@@ -73,9 +73,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

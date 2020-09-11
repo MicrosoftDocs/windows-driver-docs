@@ -96,4 +96,4 @@ Use the guidance in this section to design and implement drivers for devices tha
 
 ## Related sections
 
-- [Streaming media DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream)
+- [Streaming media DDI reference](/windows-hardware/drivers/ddi/_stream)

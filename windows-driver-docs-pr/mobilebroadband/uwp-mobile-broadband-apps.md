@@ -36,7 +36,7 @@ All UWP apps share the following features and benefits:
 
 -   **Touch optimization** Touch interaction support is built-in. You can design your mobile broadband app for touch, and Windows gives you keyboard, mouse, and graphical scaling support.
 
-For more info about UWP apps, see [Getting started with Windows 10 apps](https://docs.microsoft.com/windows/uwp/get-started/).
+For more info about UWP apps, see [Getting started with Windows 10 apps](/windows/uwp/get-started/).
 
 ## UWP mobile broadband apps
 
@@ -71,4 +71,4 @@ The following table provides information about the differences between MBAE and 
 | MBAE | Windows 8, Windows 8.1, or Windows 10 | Sysdev metadata | Sysdev metadata or COSA if declared as part of the profile | 
 | MO UWP app | Windows 10 (preferably version 1803 and later with the same SDK version) | COSA database | COSA database |
 
-UI source code between MBAE and an MO UWP app might differ due to changes between Windows 8/Windows 8.1 and Windows 10 UI principles. Most business logic source code, however, should not require much change. For example, the code for accessing the back end and accessing mobile broadband information might be the same. However, MOs should validate each of the [Mobile broadband app scenarios](mobile-broadband-app-scenarios.md) accordingly.
+UI source code between MBAE and an MO UWP app might differ due to changes between Windows 8/Windows 8.1 and Windows 10 UI principles. Most business logic source code, however, should not require much change. For example, the code for accessing the back end and accessing mobile broadband information might be the same. However, MOs should validate each of the [Mobile broadband app scenarios](./account-management.md) accordingly.

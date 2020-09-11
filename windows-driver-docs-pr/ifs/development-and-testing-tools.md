@@ -22,11 +22,11 @@ The *Fltmc.exe* program is a system-supplied command line utility for common min
 
 ## Fsutil.exe Command
 
-The [*Fsutil.exe*](https://docs.microsoft.com/windows-server/administration/windows-commands/fsutil-file) program is a system-supplied command line utility that performs various operations on files. Developers can type ```fsutil file layout foo.md``` to pretty-print all the details of a file, such as its attributes, time stamps, streams, and so forth.
+The [*Fsutil.exe*](/windows-server/administration/windows-commands/fsutil-file) program is a system-supplied command line utility that performs various operations on files. Developers can type ```fsutil file layout foo.md``` to pretty-print all the details of a file, such as its attributes, time stamps, streams, and so forth.
 
 ## !fltkd Debugger Extension
 
-The !fltkd debugger extension is provided in the [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) tools. Commonly used commands include the following:
+The !fltkd debugger extension is provided in the [Windows Debugging](../debugger/index.md) tools. Commonly used commands include the following:
 
 | Command | Description |
 | ------- | ----------- |
@@ -42,7 +42,7 @@ In WinDbg, type **!fltkd.help** for a full list of commands.
 
 ## Filter Verifier
 
-Filter Verifier is an [I/O Verification](https://docs.microsoft.com/windows-hardware/drivers/devtest/i-o-verification) option in [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the filter manager. Developers should always develop minifilter drivers with Driver Verifier and Filter Verifier enabled.
+Filter Verifier is an [I/O Verification](../devtest/i-o-verification.md) option in [Driver Verifier](../devtest/driver-verifier.md) that validates minifilter driver usage of filter manager functions. Filter Verifier is installed with the filter manager. Developers should always develop minifilter drivers with Driver Verifier and Filter Verifier enabled.
 
 To use Filter Verifier, specify the minifilter driver's name and enable the I/O Verification option in Driver Verifier (*Verifier.exe*). Verification starts when the minifilter driver registers with the filter manager.
 

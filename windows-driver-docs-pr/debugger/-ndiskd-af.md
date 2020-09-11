@@ -32,9 +32,9 @@ Ndiskd.dll
 
 ### Remarks
 
-For more information about CoNDIS, see [Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis).
+For more information about CoNDIS, see [Connection-Oriented NDIS](../network/connection-oriented-ndis.md).
 
-For more information about CoNDIS address families, see [Address Families](https://docs.microsoft.com/windows-hardware/drivers/network/address-families).
+For more information about CoNDIS address families, see [Address Families](../network/address-families.md).
 
 ### Examples
 
@@ -106,9 +106,9 @@ CLIENT HANDLERS
 
 ## See also
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -116,6 +116,6 @@ CLIENT HANDLERS
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Connection-Oriented NDIS](https://docs.microsoft.com/windows-hardware/drivers/network/connection-oriented-ndis)
+[Connection-Oriented NDIS](../network/connection-oriented-ndis.md)
 
-[Address Families](https://docs.microsoft.com/windows-hardware/drivers/network/address-families)
+[Address Families](../network/address-families.md)

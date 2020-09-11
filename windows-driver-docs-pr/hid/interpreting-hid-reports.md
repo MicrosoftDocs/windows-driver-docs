@@ -15,28 +15,23 @@ ms.localizationpriority: medium
 
 
 
-This section describes how user-mode applications and kernel-mode drivers use the HidP\_*Xxx* [HIDClass support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) to interpret control data in a HID report.
+This section describes how user-mode applications and kernel-mode drivers use the HidP\_*Xxx* [HIDClass support routines](/windows-hardware/drivers/ddi/index) to interpret control data in a HID report.
 
 For information about extracting control data from a report, see the following:
 
-[Extracting Value Data by Specifying Its Usage](extracting-value-data-by-specifying-its-usage.md)
+[Extracting Value Data by Specifying Its Usage]()
 
-[Extracting Button Usages That Are Set to ON](extracting-button-usages-that-are-set-to-on.md)
+[Extracting Button Usages That Are Set to ON]()
 
-[Extracting and Setting Control Data by Data Indices](extracting-and-setting-control-data-by-data-indices.md)
+[Extracting and Setting Control Data by Data Indices]()
 
 For information about how to set control data in a report, see the following:
 
-[Setting Value Data by Specifying Its Usage](setting-value-data-by-specifying-its-usage.md)
+[Setting Value Data by Specifying Its Usage]()
 
-[Setting Button State by Specifying Its Usage](setting-button-state-by-specifying-its-usage.md)
+[Setting Button State by Specifying Its Usage]()
 
-[Extracting and Setting Control Data by Data Indices](extracting-and-setting-control-data-by-data-indices.md)
-
- 
+[Extracting and Setting Control Data by Data Indices]()
 
  
-
-
-
 

@@ -47,7 +47,7 @@ The KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT property retrieves a count specifying th
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>No</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -64,7 +64,7 @@ A KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT property request returns STATUS\_SUCCESS t
 Remarks
 -------
 
-SysAudio enumerates a unique virtual audio device for each enabled hardware device in the system that performs wave rendering. In each instance, the virtual audio device is composed of the hardware device, the [KMixer system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#kmixer-system-driver), and other audio components. A DirectSound application program selects a particular hardware device by selecting the virtual audio device that incorporates the hardware device.
+SysAudio enumerates a unique virtual audio device for each enabled hardware device in the system that performs wave rendering. In each instance, the virtual audio device is composed of the hardware device, the [KMixer system driver](./kernel-mode-wdm-audio-components.md#kmixer-system-driver), and other audio components. A DirectSound application program selects a particular hardware device by selecting the virtual audio device that incorporates the hardware device.
 
 For example, if three audio cards are plugged into the system bus and each contains a wave-rendering device with a WaveCyclic or WavePci miniport driver, SysAudio enumerates three virtual audio devices with device IDs 0, 1, and 2.
 
@@ -89,14 +89,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

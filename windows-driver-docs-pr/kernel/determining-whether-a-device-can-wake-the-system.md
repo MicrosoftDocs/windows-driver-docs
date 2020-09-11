@@ -19,7 +19,7 @@ Although the operating system is designed to awaken from any of the intermediate
 
 Similarly, most devices neither support all device power states (D0 through D3) nor support wake-up from all the device power states that they do support.
 
-The sleep states that a device can enter, along with the states from which it supports wake up, are described at enumeration by the bus driver and are stored in the [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure. The following table lists the members of this structure that are relevant to wait/wake support.
+The sleep states that a device can enter, along with the states from which it supports wake up, are described at enumeration by the bus driver and are stored in the [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities) structure. The following table lists the members of this structure that are relevant to wait/wake support.
 
 <table>
 <colgroup>
@@ -83,9 +83,4 @@ In general, a device can wake the system if the following are true:
 -   The system is in a power state equal to or more powered than the **SystemWake** value.
 
  
-
- 
-
-
-
 

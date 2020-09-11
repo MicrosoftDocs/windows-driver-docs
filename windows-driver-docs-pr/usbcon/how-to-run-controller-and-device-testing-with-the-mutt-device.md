@@ -1,5 +1,5 @@
 ---
-Description: The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.
+description: The goal of controller testing is to generate a complete set of possible traffic patterns from hubs and devices.
 title: USB host controller testing with MUTT devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -41,8 +41,5 @@ Consider the following configurations for xHCI controllers under test:
     ![example xhci controller topology](images/fig12-xhci-controller-topology.png)
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[USB](../index.yml)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

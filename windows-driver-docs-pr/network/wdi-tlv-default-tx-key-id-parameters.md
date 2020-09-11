@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS
 
 
-WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for [OID\_WDI\_SET\_DEFAULT\_KEY\_ID](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-default-key-id).
+WDI\_TLV\_DEFAULT\_TX\_KEY\_ID\_PARAMETERS is a TLV that contains the default key ID for packet transmission on a port for [OID\_WDI\_SET\_DEFAULT\_KEY\_ID](./oid-wdi-set-default-key-id.md).
 
 ## TLV Type
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

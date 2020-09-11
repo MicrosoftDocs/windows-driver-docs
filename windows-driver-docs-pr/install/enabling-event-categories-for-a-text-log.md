@@ -106,7 +106,7 @@ The following table lists the event categories that SetupAPI supports, the manif
 
  
 
-<a href="" id="to-enable-event-categories-for-the-setupapi-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To enable event categories for the SetupAPI logs, create (or modify) the following [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) registry value:  
+<a href="" id="to-enable-event-categories-for-the-setupapi-logs--create--or-modify--the-following-reg-dword-registry-value-"></a>To enable event categories for the SetupAPI logs, create (or modify) the following [REG_DWORD](/windows/desktop/SysInfo/registry-value-types) registry value:  
 **HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Setup\\LogMask**
 
 The **LogMask** registry value applies to the device installation text log and the application installation text log.
@@ -122,10 +122,4 @@ The **LogMask** registry value is formatted as 0X*VVVVVVVV, where VVVVVVVV* is a
 -   To enable only log entries that are written by custom installation operations, set **LogMask** to TXTLOG_VENDOR (0x80000000).
 
  
-
- 
-
-
-
-
 

@@ -44,7 +44,7 @@ The KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS property describes the scanning c
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_networktype_scan_caps_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_networktype_scan_caps_s)"><strong>KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S</strong></a></p></td>
+<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_networktype_scan_caps_s" data-raw-source="[&lt;strong&gt;KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_networktype_scan_caps_s)"><strong>KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S</strong></a></p></td>
 <td><p>KSPROPERTY_TUNER_NETWORKTYPE</p>
 <p>_SCAN_CAPS_S</p></td>
 </tr>
@@ -81,14 +81,7 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS\_S**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_networktype_scan_caps_s)
+[**KSPROPERTY\_TUNER\_NETWORKTYPE\_SCAN\_CAPS\_S**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_tuner_networktype_scan_caps_s)
 
  
-
- 
-
-
-
-
-
 

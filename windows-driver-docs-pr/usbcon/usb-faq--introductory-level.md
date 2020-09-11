@@ -1,5 +1,5 @@
 ---
-Description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
+description: This topic presents frequently asked questions for driver developers who are new to developing and integrating USB devices and drivers with Windows operating systems.
 title: USB in Windows - FAQ
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -76,7 +76,7 @@ If the PC has USB 3.0 ports and is running a version of Windows earlier than Win
 
 If you added a USB 3.0 controller card to your PC that is running a version of Windows earlier than Windows 8, you must install the drivers provided by the controller card manufacturer.
 
-In Windows 8, the Microsoft-provided set of USB 3.0 drivers (USB driver stack) work with most host controllers. Microsoft USB 3.0 driver stack does not work with the Fresco Logic FL1000 controller. To determine if you have an FL1000 controller, open Device Manager and expand **Universal Serial Bus controllers**. View the controller properties by right-clicking the controller node. On the **Details** tab, select **Hardware Ids** property in the list. If the hardware ID starts with PCI\\VEN\_1B73&DEV\_1000, it is the FL1000. For that controller, download and install drivers from your PC or controller card manufacturer.
+In Windows 8, the Microsoft-provided set of USB 3.0 drivers (USB driver stack) work with most host controllers. Microsoft USB 3.0 driver stack does not work with the Fresco Logic FL1000 controller. To determine if you have an FL1000 controller, open Device Manager and expand **Universal Serial Bus controllers**. View the controller properties by selecting and holding (or right-clicking) the controller node. On the **Details** tab, select **Hardware Ids** property in the list. If the hardware ID starts with PCI\\VEN\_1B73&DEV\_1000, it is the FL1000. For that controller, download and install drivers from your PC or controller card manufacturer.
 
 ## Why do I see several host controllers on my system?
 
@@ -473,18 +473,18 @@ Because Windows 2000 and Windows XP were released before USB 2.0 hardware was av
 
 1. Follow the procedure that was described in the answer to the first question to verify that your computer has USB 2.0 ports and that you need to install a driver for the enhanced host controller.
 2. In the Device Manager window, expand the **Other Devices** section as explained in the first question, and then double-click **Universal Serial Bus (USB) Controller**.
-3. On the **General** tab of the Properties dialog box, click **Reinstall Driver**.
+3. On the **General** tab of the Properties dialog box, select **Reinstall Driver**.
 
     ![reinstall driver](images/usb-reinstall-driver.jpg)
 
-4. In the Add New Hardware Wizard, select **Install the software automatically (Recommended)**, and then click **Next**. Continue with the wizard, accepting all default options, until you reach the last page of the wizard, and then click **Finish**. You might be required to restart your computer to finish the installation.
+4. In the Add New Hardware Wizard, select **Install the software automatically (Recommended)**, and then select **Next**. Continue with the wizard, accepting all default options, until you reach the last page of the wizard, and then select **Finish**. You might be required to restart your computer to finish the installation.
 
 **Note**  
 To ensure that you have the latest updates installed on your machine, visit Windows Update regularly.
 
 ## Can I disable the "HI-SPEED USB Device plugged into non-HI-SPEED USB port" notice?
 
-Windows XP and later versions of Windows create a pop-up notice when a Hi-Speed USB device is plugged into a USB port that does not support high speed. To obtain the fastest performance from the device, users must click the notice and follow the instructions on the screen.
+Windows XP and later versions of Windows create a pop-up notice when a Hi-Speed USB device is plugged into a USB port that does not support high speed. To obtain the fastest performance from the device, users must select the notice and follow the instructions on the screen.
 
 To disable the notice, follow these steps:
 
@@ -619,4 +619,4 @@ A composite USB device cannot expose a function that serves as a hub. Windows do
 ## Related topics
 
 [USB concepts for all developers](usb-concepts-for-all-developers.md)  
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
+[Universal Serial Bus (USB)](../index.yml)

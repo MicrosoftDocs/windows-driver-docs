@@ -31,7 +31,7 @@ You will need the following software to be able to complete the lab.
 -   Windows Driver Kit (WDK) for Windows 10
 -   The sample Sysvad audio driver for Windows 10
 
-For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+For information on downloading and installing the WDK, see [Download the Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 ## <span id="sysvad_debugging_walkthrough_overview"></span>Sysvad debugging walkthrough
 
@@ -71,7 +71,7 @@ This lab uses two computers. WinDbg runs on the *host* system and the Sysvad dri
 
 ![two pcs connected with a double arrow](images/debuglab-image-targethostdrawing1.png)
 
-To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](https://docs.microsoft.com/windows-hardware/drivers) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
+To work with kernel-mode applications and use WinDbg, we recommend that you use the KDNET over Ethernet transport. For information about how to use the Ethernet transport protocol, see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md). For more information about setting up the target computer, see [Preparing a Computer for Manual Driver Deployment](/windows-hardware/drivers) and [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md).
 
 ### <span id="configure__kernel_mode_debugging_using_ethernet"></span>Configure kernel–mode debugging using ethernet
 
@@ -754,7 +754,7 @@ This diagram shows a more complex device node tree.
 
 ![device node tree with about 20 nodes](images/debuglab-image-device-node-tree.png)
 
-**Note**  For more information about more complex driver stacks, see [Driver stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/driver-stacks) and [Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks).
+**Note**  For more information about more complex driver stacks, see [Driver stacks](../gettingstarted/driver-stacks.md) and [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md).
 
  
 
@@ -2108,10 +2108,4 @@ OSR  - <https://www.osr.com/>
 ## See Also
 
 [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md) 
-
- 
-
-
-
-
 

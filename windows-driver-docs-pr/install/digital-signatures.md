@@ -51,7 +51,7 @@ For example, this signing process for a [driver package](driver-packages.md) inv
     -   The certificate of the publisher is installed in the [Trusted Publishers certificate store](trusted-publishers-certificate-store.md).
     -   The root certificate of the CA that issued the publisher's certificate is installed in the [Trusted Root Certification Authorities certificate store](trusted-root-certification-authorities-certificate-store.md).
 
-For more information about how the Plug and Play (PnP) device installation uses the digital signature of a [driver package's](driver-packages.md) [catalog file](catalog-files.md), see [Digital Signatures and PnP Device Installation](digital-signatures-and-pnp-device-installation.md).
+For more information about how the Plug and Play (PnP) device installation uses the digital signature of a [driver package's](driver-packages.md) [catalog file](catalog-files.md), see [Digital Signatures and PnP Device Installation](digital-signatures-and-pnp-device-installation--windows-vista-and-late.md).
 
 For more information about Microsoft public key infrastructure technology, code signing, and digital signatures, see [Introduction to Code Signing](https://go.microsoft.com/fwlink/p/?linkid=104071) and [Code Signing Best Practices](https://go.microsoft.com/fwlink/p/?linkid=68250).
 

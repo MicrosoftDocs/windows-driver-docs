@@ -1,5 +1,5 @@
 ---
-Description: The driver for the function controller informs the operating system about the charging levels that its USB Type-C connector supports and notifies the battery subsystem when it can begin charging and the maximum amount of current the device can draw.
+description: The driver for the function controller informs the operating system about the charging levels that its USB Type-C connector supports and notifies the battery subsystem when it can begin charging and the maximum amount of current the device can draw.
 title: Bring up the function controller on a USB Type-C Windows system
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -22,8 +22,8 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [USB function controller client driver programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188010(v=vs.85))
--   [USB filter driver for supporting proprietary chargers](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188012(v=vs.85))
+-   [USB function controller client driver programming reference](/previous-versions/windows/hardware/drivers/mt188010(v=vs.85))
+-   [USB filter driver for supporting proprietary chargers](/previous-versions/windows/hardware/drivers/mt188012(v=vs.85))
 
 The driver for the function controller informs the operating system about the charging levels that its USB Type-C connector supports and notifies the battery subsystem when it can begin charging and the maximum amount of current the device can draw.
 
@@ -38,10 +38,10 @@ There are two drivers that manage the operations of a function controller. The p
 
 -   If your system uses ChipIdea and Synopsys controllers.
     1.  Load the Microsoft provided in-box client drivers for ChipIdea and Synopsys controllers.
-    2.  Write a lower filter driver that gets attach/detach events when a charger is connected. The driver determines the type of charger and the configuration properties. It can also detect USB charging ports as defined by the BC1.2 specification. Charging information is passed to the class extension so that it can report it to charging arbitration driver (CAD.sys). For more information, see [USB filter driver for supporting proprietary chargers](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)).
+    2.  Write a lower filter driver that gets attach/detach events when a charger is connected. The driver determines the type of charger and the configuration properties. It can also detect USB charging ports as defined by the BC1.2 specification. Charging information is passed to the class extension so that it can report it to charging arbitration driver (CAD.sys). For more information, see [USB filter driver for supporting proprietary chargers](/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)).
 -   If your system uses a custom controller, write a client driver. The BC1.2 detect logic is implemented in the client driver. For more information, see:
 
-    [USB function controller client driver programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188010(v=vs.85))
+    [USB function controller client driver programming reference](/previous-versions/windows/hardware/drivers/mt188010(v=vs.85))
 
     [Developing Windows drivers for USB function controller](developing-windows-drivers-for-usb-function-controllers.md)
 
@@ -76,7 +76,4 @@ Device (UFN0)
 ```
 
 ## Related topics
-[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)  
-
-
-
+[Developing Windows drivers for USB Type-C connectors](developing-windows-drivers-for-usb-type-c-connectors.md)

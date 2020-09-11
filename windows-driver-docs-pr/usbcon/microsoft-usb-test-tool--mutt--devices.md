@@ -1,5 +1,5 @@
 ---
-Description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
+description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
 title: Overview of Microsoft USB Test Tool (MUTT) devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -129,9 +129,5 @@ The USB Type-C Connection Exerciser (USB Type-C ConnEx) is a custom shield that 
 ![USB Type-C ConnEx](images/connexc-side.jpg)
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)  
-
-
-
-
+[USB](../index.yml)  
+[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)

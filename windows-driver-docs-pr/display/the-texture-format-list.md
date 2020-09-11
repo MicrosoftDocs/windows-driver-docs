@@ -22,23 +22,17 @@ The DDPIXELFORMAT data structure is no longer exposed through API level interfac
 
 In addition, certain other new fields have been added to DDPIXELFORMAT (the new fields have been added as members of unions with existing fields so the size of the data structure is the same). These fields include: **dwOperations**, **dwPrivateFormatBitCount**, and **wFlipMSTypes** and **wBltMSTypes**.
 
-A DirectX 8.0 DDI compliant driver should continue to report DX7 style surface formats through the standard mechanisms, that is, the texture format list reported in the global driver data structure ([**D3DHAL\_GLOBALDRIVERDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_globaldriverdata)) and the Z/Stencil list reported in response to a GUID\_ZPixelFormats from [**DdGetDriverInfo**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo). However, the driver should also report all of its supported surface formats through the new DirectX 8.0 DDI mechanism described below.
+A DirectX 8.0 DDI compliant driver should continue to report DX7 style surface formats through the standard mechanisms, that is, the texture format list reported in the global driver data structure ([**D3DHAL\_GLOBALDRIVERDATA**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_globaldriverdata)) and the Z/Stencil list reported in response to a GUID\_ZPixelFormats from [**DdGetDriverInfo**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo). However, the driver should also report all of its supported surface formats through the new DirectX 8.0 DDI mechanism described below.
 
 DirectX 8.0 DDI style surface formats are reported using **GetDriverInfo2**. Two **GetDriverInfo2** query types are used by the runtime to query for surface formats from the driver. D3DGDI2\_TYPE\_GETFORMATCOUNT is used to request the number of DirectX 8.0 style surface formats supported by the driver. D3DGDI2\_TYPE\_GETFORMAT is used to query for a particular surface format from the driver.
 
-To handle the D3DGDI2\_TYPE\_GETFORMATCOUNT, the driver must store the number of DirectX 8.0 DDI style surface formats that it supports in the **dwFormatCount** field of the [**DD\_GETFORMATCOUNTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_dd_getformatcountdata).
+To handle the D3DGDI2\_TYPE\_GETFORMATCOUNT, the driver must store the number of DirectX 8.0 DDI style surface formats that it supports in the **dwFormatCount** field of the [**DD\_GETFORMATCOUNTDATA**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_dd_getformatcountdata).
 
-When the runtime has received the number of supported formats from the driver, it then queries for each surface format in turn with **GetDriverInfo2** queries of type D3DGDI2\_TYPE\_GETFORMAT. The data structure pointed to by the **lpvData** field of the [**DD\_GETDRIVERINFODATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_getdriverinfodata) data structure is, in this case, [**DD\_GETFORMATDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_dd_getformatdata).
+When the runtime has received the number of supported formats from the driver, it then queries for each surface format in turn with **GetDriverInfo2** queries of type D3DGDI2\_TYPE\_GETFORMAT. The data structure pointed to by the **lpvData** field of the [**DD\_GETDRIVERINFODATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_getdriverinfodata) data structure is, in this case, [**DD\_GETFORMATDATA**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_dd_getformatdata).
 
 The DirectX 8.0 runtime scans the texture format list reported by the driver examining the **dwFlags** fields of each pixel format. If any of the texture formats have **dwFlags** set to DDPF\_D3DFORMAT, then the runtime identifies this texture format list as DX8 style and filters all texture formats whose pixel format is not flagged as DDPF\_D3DFORMAT. Furthermore, a DX7 runtime filters any texture format that has DDPF\_D3DFORMAT set. Therefore, a driver supporting the DX8 DDI can return a texture format list that contains two entries for each supported format, one specified in the old style and one in the new. DX8 runtimes use the formats specified in the new style and DX7 runtimes use the formats specified in the old style.
 
 All supported surface formats, such as textures, depth or stencil buffers, or render targets, should be reported through the **GetDriverInfo2** mechanism. The runtime ignores the texture and Z/Stencil formats returned through legacy mechanisms (D3DHAL\_GLOBALDRIVERDATA and GUID\_ZPixelFormats). No attempt is made to map these formats to DX8 style formats for DirectX 8.0 drivers. However, legacy formats are mapped to the new style for DirectX 7.0 or earlier drivers. Therefore, a driver must report all supported surface formats through the DirectX 8.0 DDI. Furthermore, because legacy runtimes do not map new style surface formats to old style formats it is essential that the driver continues to report DirectX 7.0 style surface and Z/Stencil formats through the legacy mechanism.
 
  
-
- 
-
-
-
-
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # WIA Error Handling Example
 
-For an example of a driver that sends device status messages, please see the *Extended WIA 2.0 Monster Driver* sample in the [Windows Image Acquisition (WIA) Driver Samples](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/windows-image-acquisition-wia-driver-samples). The sample illustrates how a simple error handler can be implemented.
+For an example of a driver that sends device status messages, please see the *Extended WIA 2.0 Monster Driver* sample in the [Windows Image Acquisition (WIA) Driver Samples](/samples/microsoft/windows-driver-samples/windows-image-acquisition-wia-driver-samples). The sample illustrates how a simple error handler can be implemented.
 
 ## Example: Error Handling Extension
 

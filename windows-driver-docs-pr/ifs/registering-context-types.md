@@ -16,13 +16,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_registering_the_minifilter_if"></span><span id="DDK_REGISTERING_THE_MINIFILTER_IF"></span>
 
 
-When a minifilter driver calls [**FltRegisterFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltregisterfilter) from its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, it must register each type of context that it uses.
+When a minifilter driver calls [**FltRegisterFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltregisterfilter) from its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine, it must register each type of context that it uses.
 
-To register context types, the minifilter driver creates a variable-length array of [**FLT\_CONTEXT\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_context_registration) structures and stores a pointer to the array in the **ContextRegistration** member of the [**FLT\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure that the minifilter driver passes in the *Registration* parameter of [**FltRegisterFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltregisterfilter). The order of the elements in this array does not matter. However, the last element in the array must be {FLT\_CONTEXT\_END}.
+To register context types, the minifilter driver creates a variable-length array of [**FLT\_CONTEXT\_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_context_registration) structures and stores a pointer to the array in the **ContextRegistration** member of the [**FLT\_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure that the minifilter driver passes in the *Registration* parameter of [**FltRegisterFilter**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltregisterfilter). The order of the elements in this array does not matter. However, the last element in the array must be {FLT\_CONTEXT\_END}.
 
 For each context type that the minifilter driver uses, it must supply at least one context definition in the form of an FLT\_CONTEXT\_REGISTRATION structure. Each FLT\_CONTEXT\_REGISTRATION structure defines the type, size, and other information for the context.
 
-When the minifilter driver creates a new context by calling [**FltAllocateContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext), the filter manager uses the *Size* parameter of the **FltAllocateContext** routine, as well as the **Size** and **Flags** members of the FLT\_CONTEXT\_REGISTRATION structure, to select the context definition to be used.
+When the minifilter driver creates a new context by calling [**FltAllocateContext**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext), the filter manager uses the *Size* parameter of the **FltAllocateContext** routine, as well as the **Size** and **Flags** members of the FLT\_CONTEXT\_REGISTRATION structure, to select the context definition to be used.
 
 For fixed-size contexts, the **Size** member of the FLT\_CONTEXT\_REGISTRATION structure specifies the size, in bytes, of the portion of the context structure that is defined by the minifilter driver. The maximum size for a context is MAXUSHORT (64 KB). Zero is a valid size value. The filter manager implements fixed-size contexts using lookaside lists. The filter manager creates two lookaside lists for each size value: one paged and one nonpaged.
 
@@ -30,11 +30,11 @@ For variable-size contexts, the **Size** member must be set to FLT\_VARIABLE\_SI
 
 In the **Flags** member of the FLT\_CONTEXT\_REGISTRATION structure, the FLTFL\_CONTEXT\_REGISTRATION\_NO\_EXACT\_SIZE\_MATCH flag can be specified. If the minifilter driver uses fixed-size contexts and this flag is specified, the filter manager allocates a context from the lookaside list if the context's size is greater than or equal to the requested size. Otherwise, the context's size must be equal to the requested size.
 
-For a given context type, the minifilter driver can supply up to three fixed-size context definitions, each with a different size, and one variable-size definition. For more information, see [**FLT\_CONTEXT\_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_context_registration).
+For a given context type, the minifilter driver can supply up to three fixed-size context definitions, each with a different size, and one variable-size definition. For more information, see [**FLT\_CONTEXT\_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_context_registration).
 
-The minifilter driver can optionally supply a context cleanup callback routine to be called before the context is freed. For more information, see [**PFLT\_CONTEXT\_CLEANUP\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_cleanup_callback).
+The minifilter driver can optionally supply a context cleanup callback routine to be called before the context is freed. For more information, see [**PFLT\_CONTEXT\_CLEANUP\_CALLBACK**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_cleanup_callback).
 
-A minifilter driver can optionally define its own callback routines for allocating and freeing contexts, instead of relying on the filter manager to perform these tasks. However, this is very rarely necessary. For more information, see [**PFLT\_CONTEXT\_ALLOCATE\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_allocate_callback) and [**PFLT\_CONTEXT\_FREE\_CALLBACK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_free_callback).
+A minifilter driver can optionally define its own callback routines for allocating and freeing contexts, instead of relying on the filter manager to perform these tasks. However, this is very rarely necessary. For more information, see [**PFLT\_CONTEXT\_ALLOCATE\_CALLBACK**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_allocate_callback) and [**PFLT\_CONTEXT\_FREE\_CALLBACK**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_free_callback).
 
 The following code example, which is taken from the CTX sample minifilter driver, shows an array of FLT\_CONTEXT\_REGISTRATION structures that are used to register instance, file, stream, and file object (stream handle) contexts.
 
@@ -70,9 +70,4 @@ const FLT_CONTEXT_REGISTRATION contextRegistration[] =
 ```
 
  
-
- 
-
-
-
 

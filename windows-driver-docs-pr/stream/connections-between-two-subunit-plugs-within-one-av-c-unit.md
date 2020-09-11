@@ -23,7 +23,7 @@ Connect from a specific source plug (0x0 to 0x1E), or any available source plug 
 
 Scenario 3 describes a connection where the local pin's **DataFlow** member is KSPIN\_DATAFLOW\_IN.
 
-Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure and specifies values for these members for the source subunit plug.
+Each column in the following table corresponds to a member of the [**AVCCONNECTINFO**](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo) structure and specifies values for these members for the source subunit plug.
 
 <table>
 <colgroup>
@@ -158,9 +158,4 @@ The following list describes the meaning of values that appear in the preceding 
 -   The values in the **DeviceID** columns (for source and destination subunit plugs) are used to search for the physical device object (PDO) of the target AV/C device to issue AV/C CCM commands to.
 
  
-
- 
-
-
-
 

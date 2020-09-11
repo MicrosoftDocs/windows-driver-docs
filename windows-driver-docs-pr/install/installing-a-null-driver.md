@@ -39,13 +39,7 @@ AddService = ,2    ; no value for the service name
 
 The hardware ID for the device in the *Models* section should identify the device specifically, using the subsystem vendor ID and whatever other information is relevant.
 
-The operating system will create a device node (*devnode*) for the device, but if the device is not capable of executing in raw mode, the operating system will not start the device because a function driver has not been assigned to it. Note, however, that if the device has a [boot configuration](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources#logical-configuration-types-for-resource-lists), those resources will be reserved.
+The operating system will create a device node (*devnode*) for the device, but if the device is not capable of executing in raw mode, the operating system will not start the device because a function driver has not been assigned to it. Note, however, that if the device has a [boot configuration](../kernel/hardware-resources.md#logical-configuration-types-for-resource-lists), those resources will be reserved.
 
  
-
- 
-
-
-
-
 

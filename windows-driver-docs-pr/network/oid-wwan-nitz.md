@@ -13,7 +13,7 @@ ms.custom: 19H1
 
 OID_WWAN_NITZ is used to query the current network time with Network Identity and Time Zone (NITZ).
 
-Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_NITZ_INFO](ndis-status-wwan-nitz-info.md) status notification containing an [**NDIS_WWAN_NITZ_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_nitz_info) structure that describes the current network time and time zone.
+Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_NITZ_INFO](ndis-status-wwan-nitz-info.md) status notification containing an [**NDIS_WWAN_NITZ_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_nitz_info) structure that describes the current network time and time zone.
 
 Set requests are not applicable.
 
@@ -32,4 +32,4 @@ For more information about usage of this OID, see [MB NITZ support](mb-nitz-supp
 
 [NDIS_STATUS_WWAN_NITZ_INFO](ndis-status-wwan-nitz-info.md)
 
-[**NDIS_WWAN_NITZ_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_nitz_info)
+[**NDIS_WWAN_NITZ_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_nitz_info)

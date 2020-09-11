@@ -39,8 +39,8 @@ Use the following dynamic verification tools as soon as the driver is built and 
 
   - **Memory leaks.** Driver Verifier tracks memory allocations made by a driver and makes sure the memory is freed before the driver gets unloaded.
 
-  - **I/O operations that take too much time to complete or to be canceled.** The Driver Verifier can test the driver's logic for responding to STATUS\_PENDING return values from [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+  - **I/O operations that take too much time to complete or to be canceled.** The Driver Verifier can test the driver's logic for responding to STATUS\_PENDING return values from [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
   - **DDI Compliance Checking.** (Available starting with Windows 8) Driver Verifier applies a set of device driver interface (DDI) rules that check for the proper interaction between a driver and the kernel interface of the operating system. These rules correspond to rules that Static Driver Verifier uses in analyzing driver source code. If Driver Verifier finds an error when DDI Compliance Checking is enabled, run [Static Driver Verifier](static-driver-verifier.md) and select the same rule that caused the error. Static Driver Verifier can help you locate the cause of the defect in the driver source code.
 
-- [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code. 
+- [Application Verifier](application-verifier.md) is a dynamic verification tool for user-mode applications and drivers written in C/C++. It does not verify managed code.

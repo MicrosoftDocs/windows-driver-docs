@@ -1,5 +1,5 @@
 ---
-Description: If you are building a new system, the tests in this topic are recommended.
+description: If you are building a new system, the tests in this topic are recommended.
 title: Recommended USB tests for system development
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -21,11 +21,11 @@ If you are building a new system, here are the recommended USB HCK tests:
 ## Stage 1—System bring-up
 
 
--   [DF – Sleep with IO Before and After (Basic)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn247481(v=vs.85))
--   [DF - PNP (disable and enable) with IO Before and After (Basic)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn260411(v=vs.85))
--   [USB Exposed Port controller Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh998021(v=vs.85))
--   [USB xHCI Transfer Speed Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh997864(v=vs.85))
--   [USB3 Termination](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124672(v=vs.85))
+-   [DF – Sleep with IO Before and After (Basic)](/previous-versions/windows/hardware/hck/dn247481(v=vs.85))
+-   [DF - PNP (disable and enable) with IO Before and After (Basic)](/previous-versions/windows/hardware/hck/dn260411(v=vs.85))
+-   [USB Exposed Port controller Test](/previous-versions/windows/hardware/hck/hh998021(v=vs.85))
+-   [USB xHCI Transfer Speed Test](/previous-versions/windows/hardware/hck/hh997864(v=vs.85))
+-   [USB3 Termination](/previous-versions/windows/hardware/hck/jj124672(v=vs.85))
 
 <table>
 <colgroup>
@@ -75,9 +75,9 @@ If you are building a new system, here are the recommended USB HCK tests:
 ## Stage 2—System integration
 
 
--   [DF - Reboot restart with IO before and after (Functional)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn260266(v=vs.85))
--   [DF - Sleep and PNP (disable and enable) with IO Before and After (Functional)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn260391(v=vs.85))
--   [USB xHCI Transfer Speed Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh997864(v=vs.85))
+-   [DF - Reboot restart with IO before and after (Functional)](/previous-versions/windows/hardware/hck/dn260266(v=vs.85))
+-   [DF - Sleep and PNP (disable and enable) with IO Before and After (Functional)](/previous-versions/windows/hardware/hck/dn260391(v=vs.85))
+-   [USB xHCI Transfer Speed Test](/previous-versions/windows/hardware/hck/hh997864(v=vs.85))
 
 <table>
 <colgroup>
@@ -133,13 +133,13 @@ If you are building a new system, here are the recommended USB HCK tests:
 
 System 1
 
--   [DF - Sleep with IO During (Certification)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn247416(v=vs.85))
--   [DF - Concurrent Hardware And Operating System (CHAOS) Test (Certification)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh998603(v=vs.85))
+-   [DF - Sleep with IO During (Certification)](/previous-versions/windows/hardware/hck/dn247416(v=vs.85))
+-   [DF - Concurrent Hardware And Operating System (CHAOS) Test (Certification)](/previous-versions/windows/hardware/hck/hh998603(v=vs.85))
 
 System 2
 
--   [DF - Sleep and PNP (disable and enable) with IO Before and After (Functional)](https://docs.microsoft.com/previous-versions/windows/hardware/hck/dn260391(v=vs.85))
--   [USB xHCI Transfer Speed Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh997864(v=vs.85))
+-   [DF - Sleep and PNP (disable and enable) with IO Before and After (Functional)](/previous-versions/windows/hardware/hck/dn260391(v=vs.85))
+-   [USB xHCI Transfer Speed Test](/previous-versions/windows/hardware/hck/hh997864(v=vs.85))
 
 System 3 (if dock supported)
 
@@ -213,7 +213,4 @@ System 3 (if dock supported)
  
 
 ## Related topics
-[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)  
-
-
-
+[Windows Hardware Lab Kit Tests for USB](windows-hardware-certification-kit-tests-for-usb.md)

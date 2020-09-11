@@ -58,7 +58,7 @@ The information in the following table describes the namespaces that are referen
 <tr class="odd">
 <td align="left"><p>wse</p></td>
 <td align="left"><p><a href="https://schemas.xmlsoap.org/ws/2004/08/eventing/" data-raw-source="[https://schemas.xmlsoap.org/ws/2004/08/eventing](https://schemas.xmlsoap.org/ws/2004/08/eventing/)">https://schemas.xmlsoap.org/ws/2004/08/eventing</a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ms951233(v=msdn.10)" data-raw-source="[Web Services Eventing](https://docs.microsoft.com/previous-versions/ms951233(v=msdn.10)">Web Services Eventing</a> (WS-Eventing)</p></td>
+<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ms951233(v=msdn.10)" data-raw-source="[Web Services Eventing](/previous-versions/ms951233(v=msdn.10)">Web Services Eventing</a> (WS-Eventing)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>wsx</p></td>
@@ -83,10 +83,4 @@ The information in the following table describes the namespaces that are referen
 In addition to these, [SOAP Message Transmission Optimization Mechanism (MTOM)](https://www.w3.org/TR/2005/REC-soap12-mtom-20050125/) is used.
 
  
-
- 
-
-
-
-
 

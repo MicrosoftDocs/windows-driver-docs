@@ -27,7 +27,7 @@ The primary responsibilities of a bus driver are to:
 
 Bus drivers are essentially [function drivers](function-drivers.md) that also enumerate children.
 
-During enumeration, a bus driver identifies the devices on its bus and creates device objects for them. (For information about device objects, see [Device Objects and Device Stacks](device-objects-and-device-stacks.md).) The method a bus driver uses to identify connected devices depends on the particular bus.
+During enumeration, a bus driver identifies the devices on its bus and creates device objects for them. (For information about device objects, see [Device Objects and Device Stacks](introduction-to-device-objects.md).) The method a bus driver uses to identify connected devices depends on the particular bus.
 
 A bus driver performs certain operations on behalf of the devices on its bus, including accessing device registers to physically change the power state of a device. For example, when the device goes to sleep, the bus driver sets device registers to put the device in the proper device power state.
 
