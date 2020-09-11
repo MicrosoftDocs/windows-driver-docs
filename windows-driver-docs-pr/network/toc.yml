@@ -3091,7 +3091,7 @@
       - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
         href: wdi-tlv-cipher-key-bip-key.md
       - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
-        href: wdi-tlv-cipher-key-gmac-256-key.md
+        href: wdi-tlv-cipher-key-bip-gmac-256-key.md
       - name: "WDI_TLV_CIPHER_KEY_CCMP_KEY"
         href: wdi-tlv-cipher-key-ccmp-key.md
       - name: "WDI_TLV_CIPHER_KEY_GCMP_KEY"
