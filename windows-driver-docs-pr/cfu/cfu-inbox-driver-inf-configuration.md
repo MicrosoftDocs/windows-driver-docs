@@ -224,13 +224,13 @@ The payload file is a binary file which a collection of records that are stored 
 | Byte 4 | Byte | Length | Length of payload data. |
 | Byte 5-N | Bytes | Data | Byte array of payload data. |
 
-## Firmware update status provided by the driver
+## Firmware update status
 
-During the protocol transaction, the CFU driver writes registry entries to indicate the status.  This table describes the name, format of values and meaning of values that the driver touches during various stages of the protocol.
+During the protocol transaction, the CFU inbox driver writes registry entries to indicate the status.  This table describes the name, format of values and meaning of values that the driver touches during various stages of the protocol.
 
-- \_ID_ in the table represents the Component ID, that is retrieved from the offer file. As specified in the specification, Component ID uniquely identify each component.
+- \_ID_ in the table represents the Component ID, that is retrieved from the offer file. As described in the specification, the Component ID uniquely identifies each component.
 
-- For information about the DWORD, refer to the specification.
+- For information about the Value DWORD, refer to the specification.
 
 | Stage | Location | Reg Value Name | Value (DWORD) |
 |--|--|--|--|
@@ -239,7 +239,7 @@ During the protocol transaction, the CFU driver writes registry entries to indic
 | Offer; About to send offer. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*OfferFwVersion" | Version that is sent (or about to be send) to the device. |
 | Offer Response (Rejected) | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatusRejectReason" | Reason for rejection returned by device. |
 | Offer Response (Device Busy) | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_BUSY_PROCESSING_UPDATE |
-| Offer Response (Accepted); About to send Payload. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_DOWNLOADING_UPDATE |  |
+| Offer Response (Accepted); About to send Payload. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_DOWNLOADING_UPDATE |
 | Payload Accepted. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_PENDING_RESET |
 | Error at any stage. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_ERROR |
 
@@ -247,9 +247,9 @@ During the protocol transaction, the CFU driver writes registry entries to indic
 
   ```inf
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ; File:               CfuVirtualHidDeviceFwUpdate.inx
+  ; File:           CfuVirtualHidDeviceFwUpdate.inx
   ;
-  ; Description:        Driver installation file for Cfu Virtual Hid Device firmware update.
+  ; Description:    Sample Driver INF file for Cfu Virtual Hid Device firmware update.
   ;
   ; Copyright (C) Microsoft Corporation.  All Rights Reserved.
   ; Licensed under the MIT license.
