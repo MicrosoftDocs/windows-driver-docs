@@ -2990,6 +2990,8 @@
         href: wdi-tlv-additional-probe-response-ies.md
       - name: "WDI_TLV_ALLOWED_BSSIDS_LIST"
         href: wdi-tlv-allowed-bssids-list.md
+      - name: "WDI_TLV_OWE_DH_IE"
+        href: wdi-tlv-owe-dh-ie.md
       - name: "WDI_TLV_ANQP_ELEMENTS"
         href: wdi-tlv-anqp-elements.md
       - name: "WDI_TLV_ANQP_QUERY_PARAMETERS"
