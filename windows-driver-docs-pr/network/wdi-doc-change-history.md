@@ -2,9 +2,9 @@
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
 ms.assetid: 29268059-9C33-4768-8F80-195CB28B4663
-ms.date: 02/21/2019
+ms.date: 09/10/2020
 ms.localizationpriority: medium
-ms.custom: 19H1
+ms.custom: 2004
 ---
 
 # WDI doc change history
@@ -15,9 +15,11 @@ Documentation updated to WDI version 1.1.9.
 
 | Topic | Description |
 | --- | --- |
-| [WDI message structure](/wdi-wi-fi-messages#tlvs) | Modified TLV structure to allow for variable-size KCK/KEK |
-| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md | |
-| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-gmac-256-key.md | |
+| [WDI message structure](/wdi-wi-fi-messages#tlvs) | Modified TLV structure an aggregate container to allow for variable-size KCK/KEK |
+| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) |  |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-gmac-256-key.md) |  |
+
+
 
 
 

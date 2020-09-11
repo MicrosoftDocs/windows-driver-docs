@@ -3088,10 +3088,14 @@
         href: wdi-tlv-checksum-offload-v6-tx-parameters.md
       - name: "WDI_TLV_CIPHER_KEY_BIP_KEY"
         href: wdi-tlv-cipher-key-bip-key.md
+      - name: "WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY"
+        href: wdi-tlv-cipher-key-gmac-256-key.md
       - name: "WDI_TLV_CIPHER_KEY_CCMP_KEY"
         href: wdi-tlv-cipher-key-ccmp-key.md
       - name: "WDI_TLV_CIPHER_KEY_GCMP_KEY"
         href: wdi-tlv-cipher-key-gcmp-key.md
+      - name: "WDI_TLV_CIPHER_KEY_GCMP_256_KEY"
+        href: wdi-tlv-cipher-key-gcmp-256-key.md
       - name: "WDI_TLV_CIPHER_KEY_ID"
         href: wdi-tlv-cipher-key-id.md
       - name: "WDI_TLV_CIPHER_KEY_IHV_KEY"
