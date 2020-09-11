@@ -278,13 +278,6 @@ Class = WPD
 ClassGuid = {eec5ad98-8080-425f-922a-dabf3de3f69a}  
 (Windows Vista and later versions of Windows) This class includes WPD devices.  
   
-**Windows SideShow**  
-Class = SideShow  
-ClassGuid = {997b5d8d-c442-4f2e-baf3-9c8e671e9e21}  
-(Windows Vista and later versions of Windows) This class includes all devices that are compatible with Windows SideShow.  
-  
-   
-  
    
   
 
