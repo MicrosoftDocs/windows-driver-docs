@@ -15,10 +15,10 @@ Documentation updated to WDI version 1.1.9.
 
 | Topic | Description |
 | --- | --- |
-| [WDI message structure](wdi-wi-fi-messages.md#tlvs) | Modified TLV structure an aggregate container to allow for variable-size KCK/KEK |
+| [WDI message structure](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-wi-fi-messages#tlvs) | Modified TLV structure an aggregate container to allow for variable-size KCK/KEK |
 | [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | New TLV added. |
 | [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | New TLV added. |
-| [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-bip-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-gmac-256-key.md) |
+| [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
 | [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | New TLV type added |
 | [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
 
