@@ -9,6 +9,88 @@ ms.custom: 19H1
 
 # WDI doc change history
 
+## Windows 10, version 2001
+
+Documentation updated to WDI version 1.1.9.
+
+| Topic | Description |
+| --- | --- |
+
+
+
+
+
+
+
+o	In Section 12.13.4.1 WDI_PM_RSN_KEY_INFO 
+	Modified struct used by TLV into an aggregate container to allow for variable-size KCK/KEK
+
+o	In Section 12.5.5 WDI_SET_CIPHER_KEY_INFO: Added entries for:
+	WDI_TLV_CIPHER_KEY_GCMP_256_KEY
+	WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY
+
+o	In Section 12.13.4 WDI_SET_CONFIGURED_CIPHER_KEY: Added entries for:
+	WDI_TLV_CIPHER_KEY_GCMP_256_KEY
+	WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY
+•	OWE related changes
+
+o	In Section 8.3.2, new TLV type defined:
+	WDI_TLV_OWE_DH_IE
+
+o	In Section 8.3.10, added new WDI_AUTH_ALGORITHM:
+	WDI_AUTH_ALGO_OWE
+
+o	In Section 11.3.2, modified WDI_CONNECT_PARAMETERS to include optional DH IE
+•	WPA3 SuiteB Feature changes
+
+o	In Section 8.3.2 TLV Types: Defined new TLVs:
+	WDI_TLV_CIPHER_KEY_GCMP_256_KEY
+	WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY
+	WDI_TLV_PROTOCOL_OFFLOAD_ID
+	WDI_TLV_REPLAY_COUNTER
+	WDI_TLV_KCK_CONTENT
+	WDI_TLV_KEK_CONTENT
+
+o	In Section 8.3.10: Added new Auth Algo:
+	WDI_AUTH_ALGO_WPA3
+
+o	In Section 8.3.11: Added new Ciphers:
+	WDI_CIPHER_ALGO_GCMP_256
+	WDI_CIPHER_ALGO_BIP_GMAC_256
+
+o	In Section 12.12.3 WDI_STATION_ATTRIBUTES Structure 
+	Added Host-WPA3-FIPS Mode Implemented to WDI_TLV_STATION_CAPABILITIES
+	Driver must indicate support for WDI_AUTH_ALGO_WPA3 auth and WDI_CIPHER_ALGO_GCMP_256 cipher pairs in the unicast and multicast algo pairs. It must also indicate support for WDI_AUTH_ALGO_WPA3 auth and WDI_CIPHER_ALGO_BIP_GMAC_256 cipher in the Multicast Management algo pairs
+
+o	FIPS support in the OS will be enabled in future version of Windows release
+•	WPA3 SAE Capability requirement
+
+o	In Section 12.12.3 WDI_STATION_ATTRIBUTES Structure 
+	Driver must indicate support for WDI_AUTH_ALGO_WPA3_SAE auth and WDI_CIPHER_ALGO_CCMP cipher pairs in the unicast and multicast algo pairs. It must also indicate support for WDI_AUTH_ALGO_WPA3_SAE auth and WDI_CIPHER_ALGO_BIP cipher in the Multicast Management algo pairs
+•	FTM related changes
+
+o	Adding a new ScanTrigger enum value to indicate that the scan was due to discovering APs for FTMs.
+
+o	Updating the description of WDI_TASK_REQUEST_FTM to make clear the expected behavior of LE that maintain a BSS list cache.
+
+o	Adding a BandwidthUsed field to the FTM response and its corresponding enumeration.
+
+o	Making RTT field a signed integer to be able to provide negative values.
+
+o	Adding a PropagationProperty field to the FTM respone and its corresponding enumeration.
+
+
+
+
+
+
+
+
+
+
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | Added support for the driver to indicate support for Fine Timing Measurement (FTM). |
+| [OID_WDI_TASK_REQUEST_FTM](oid-wdi-task-request-ftm.md) | Newly added task OID that enables WDI to request that the adapter initiate FTM procedures to obtain roundtrip time (RTT) and the Location Configuration Information (LCI) report from BSS targets. |
+
 ## Windows 10, version 1903
 
 Documentation updated to WDI version 1.1.8.
