@@ -39,7 +39,7 @@ This value specifies a version number.
 
 Each of *w*, *x*, *y*, and *z* must be an integer that is greater than or equal to zero and less than 65535.
 
-For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
+For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
 The following point applies to this value for Windows 2000, and Windows XP:
 
@@ -69,11 +69,4 @@ DriverVer=09/28/1999,5.00.2136.1
 [**Version**](inf-version-section.md)
 
  
-
- 
-
-
-
-
-
 

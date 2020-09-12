@@ -22,7 +22,7 @@ Each load order group has a defined range of *altitudes*. Every filter driver mu
 
 Altitude allocation is managed by Microsoft. To request an altitude for your filter driver, see [Filter Altitude Request](minifilter-altitude-request.md).
 
-Altitude values for a filter driver are specified in the **Instance** definitions of the [**Strings** Section in the filter driver's INF file](creating-an-inf-file-for-a-minifilter-driver.md). Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine in the [**FLT_REGISTRATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. Multiple instances and altitudes can be defined for a filter driver. These instance definitions apply across all volumes.
+Altitude values for a filter driver are specified in the **Instance** definitions of the [**Strings** Section in the filter driver's INF file](creating-an-inf-file-for-a-minifilter-driver.md). Instance definitions can also be specified in calls to the [**InstanceSetupCallback**](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback) routine in the [**FLT_REGISTRATION**](/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration) structure. Multiple instances and altitudes can be defined for a filter driver. These instance definitions apply across all volumes.
 
 ## Table of load order groups and altitude ranges
 

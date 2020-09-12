@@ -568,7 +568,7 @@ If your code references a compiled binary that is not part of your code, the Win
 > [!TIP]
 >When adding a symbol path (that references a networked symbol server), add a local cache location to specify a local path to cache the symbols. Not doing this can greatly compromise the performance of BinSkim. The following example, specifies a local cache at d:\symbols.
 `--sympath Cache*d:\symbols;Srv*http://symweb`
-For more information about sympath, see [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path).
+For more information about sympath, see [Symbol path for Windows debuggers](../debugger/symbol-path.md).
 
 1. Execute the following command to analyze a compiled driver binary. Update the target path to point to your complied driver .sys file.
 

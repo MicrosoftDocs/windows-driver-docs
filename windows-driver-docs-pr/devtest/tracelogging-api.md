@@ -32,7 +32,7 @@ TraceLogging is built on ETW and is compatible with existing tools. Providers th
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="tracelogging-for-kernel-mode-drivers-and-components.md" data-raw-source="[TraceLogging for kernel-mode drivers and components](tracelogging-for-kernel-mode-drivers-and-components.md)">TraceLogging for kernel-mode drivers and components</a></p></td>
-<td align="left"><p>This topic describes how to use the <a href="https://docs.microsoft.com/windows/desktop/tracelogging/trace-logging-portal" data-raw-source="[TraceLogging](/windows/desktop/tracelogging/trace-logging-portal)">TraceLogging</a> API from within kernel-mode drivers and components.</p></td>
+<td align="left"><p>This topic describes how to use the <a href="/windows/desktop/tracelogging/trace-logging-portal" data-raw-source="[TraceLogging](/windows/desktop/tracelogging/trace-logging-portal)">TraceLogging</a> API from within kernel-mode drivers and components.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="tracelogging-examples.md" data-raw-source="[TraceLogging Examples](tracelogging-examples.md)">TraceLogging Examples</a></p></td>

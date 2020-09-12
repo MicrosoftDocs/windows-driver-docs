@@ -68,9 +68,9 @@ As part of Windows 8.1 investments, the **msgpio** button driver brings importan
 For questions about GPIO buttons and indicator implementation, send an e-mail to the Microsoft support group at dockingsupport@microsoft.com.
 
 ## <span id="related_topics"></span>Related topics
-[Power Button Behaviors and Implementation](https://aka.ms/connect-redirect?DownloadID=47452)  
-[Connected Standby Wake Sources](https://aka.ms/connect-redirect?DownloadID=49891)  
-[ACPI Design Guide](https://aka.ms/connect-redirect?DownloadID=48755)  
+[Power Button Behaviors and Implementation](/collaborate/connect-redirect?DownloadID=47452)  
+[Connected Standby Wake Sources](/collaborate/connect-redirect?DownloadID=49891)  
+[ACPI Design Guide](/collaborate/connect-redirect?DownloadID=48755)  
 [GetSystemMetrics function](https://go.microsoft.com/fwlink/p/?linkid=324686)  
 [Keyboard Enhancements in Windows 8](https://go.microsoft.com/fwlink/p/?linkid=324536)  
 [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/index)  

@@ -48,7 +48,7 @@ All drivers that specify a start type of SERVICE_BOOT_START will be loaded befor
 
 A driver writer can specify the start type for a driver at installation time in either of the following ways:
 
-- By specifying the desired start type for the **StartType** entry in the *service-install-section* referred to by an [**AddService**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) directive in the driver's INF file. This method is described in the **ServiceInstall** Section of [Creating an INF file for a filter driver](creating-an-inf-file-for-a-minifilter-driver.md).
+- By specifying the desired start type for the **StartType** entry in the *service-install-section* referred to by an [**AddService**](../install/inf-addservice-directive.md) directive in the driver's INF file. This method is described in the **ServiceInstall** Section of [Creating an INF file for a filter driver](creating-an-inf-file-for-a-minifilter-driver.md).
 
 - By passing the desired start type for the *dwStartType* parameter when calling **CreateService** or **ChangeServiceConfig** from a user-mode installation program. This method is described in the reference entries for **CreateService** and **ChangeServiceConfig** in the Microsoft Windows SDK documentation.
 
@@ -75,7 +75,7 @@ A driver writer can specify the load order group for a driver at installation ti
 
 - By passing the desired start type for the *lpLoadOrderGroup* parameter when calling **CreateService** or **ChangeServiceConfig** from a user-mode installation program. This method is described in the reference entries for **CreateService** and **ChangeServiceConfig** in the Microsoft Windows SDK documentation.
 
-For more general information about driver load order and load order groups, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
+For more general information about driver load order and load order groups, see [Specifying Driver Load Order](../install/specifying-driver-load-order.md).
 
 ## Rules for loading a filter driver
 
