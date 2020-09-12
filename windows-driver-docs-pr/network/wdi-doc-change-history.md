@@ -36,7 +36,7 @@ NOTE: this needs more information regarding the notes for the FIPS mode, as well
 - WDI_CIPHER_ALGO_GCMP_256
 - WDI_CIPHER_ALGO_BIP_GMAC_256
 
-## Backlog
+## In Progress
 **WPA3 SuiteB Feature changes**
 **In Section 8.3.2 TLV Types: Defined new TLVs:**
 - WDI_TLV_CIPHER_KEY_GCMP_256_KEY (done)
