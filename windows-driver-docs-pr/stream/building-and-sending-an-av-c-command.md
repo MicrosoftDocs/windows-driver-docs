@@ -116,7 +116,7 @@ Repeat Steps 1 through 5 as necessary.
 <tbody>
 <tr class="odd">
 <td><p>STATUS_SUCCESS</p></td>
-<td><p>The request was made, and a final response was received within the bounds of the AV/C specification's time-out and retry parameters. The subunit's response code (the <strong>ResponseCode</strong> member of the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb" data-raw-source="[&lt;strong&gt;AVC_COMMAND_IRB&lt;/strong&gt;](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb)"><strong>AVC_COMMAND_IRB</strong></a> structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
+<td><p>The request was made, and a final response was received within the bounds of the AV/C specification's time-out and retry parameters. The subunit's response code (the <strong>ResponseCode</strong> member of the <a href="/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb" data-raw-source="[&lt;strong&gt;AVC_COMMAND_IRB&lt;/strong&gt;](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb)"><strong>AVC_COMMAND_IRB</strong></a> structure) must still be examined to determine the true result of the operation. STATUS_SUCCESS simply means that a round-trip request and response cycle was completed in less than 100 ms (assuming the default timeout was not changed from 100 ms).</p></td>
 </tr>
 <tr class="even">
 <td><p>STATUS_TIMEOUT</p></td>

@@ -31,12 +31,12 @@ The [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) namespace provides a
 </tr>
 <tr class="even">
 <td><p><a href="updating-the-app-manifest-with-usb-device-capabilities.md" data-raw-source="[How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)">How to add USB device capabilities to the app manifest</a></p></td>
-<td><p>This topic describes the device capabilities that are required for a Windows app that uses the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb)"><strong>Windows.Devices.Usb</strong></a> namespace.</p></td>
+<td><p>This topic describes the device capabilities that are required for a Windows app that uses the <a href="/uwp/api/Windows.Devices.Usb" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb)"><strong>Windows.Devices.Usb</strong></a> namespace.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="how-to-connect-to-a-usb-device--uwp-app-.md" data-raw-source="[How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)">How to connect to a USB device (UWP app)</a></p></td>
 <td><p>In Windows 8.1, you can write a UWP app that interacts with a USB device. The app can send control commands, get device information, and read and write data to/from bulk and interrupt endpoints. Before you can do all that, you must find the device and establish connection.</p>
-<p>In this part, you will learn how to use the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object to find the device and then open it to start communicating from your app. You will also learn how to close the device when you are finished using it.</p></td>
+<p>In this part, you will learn how to use the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object to find the device and then open it to start communicating from your app. You will also learn how to close the device when you are finished using it.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="how-to-send-a-usb-control-transfer--uwp-app-.md" data-raw-source="[How to send a USB control transfer (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)">How to send a USB control transfer (UWP app)</a></p></td>
@@ -56,7 +56,7 @@ The [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) namespace provides a
 </tr>
 <tr class="even">
 <td><p><a href="how-to-select-a-usb-interface-setting--uwp-app-.md" data-raw-source="[How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)">How to select a USB interface setting (UWP app)</a></p></td>
-<td><p>In this topic, you'll learn about changing a setting within a USB interface. You'll use the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting)"><strong>UsbInterfaceSetting</strong></a> object to get the current setting and set a setting in the interface.</p></td>
+<td><p>In this topic, you'll learn about changing a setting within a USB interface. You'll use the <a href="/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting)"><strong>UsbInterfaceSetting</strong></a> object to get the current setting and set a setting in the interface.</p></td>
 </tr>
 </tbody>
 </table>

@@ -41,7 +41,7 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>usb.h</td>
 <td>Include\shared</td>
 <td></td>
-<td>Defines <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_urb" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
+<td>Defines <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb" data-raw-source="[&lt;strong&gt;URB&lt;/strong&gt;](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)"><strong>URB</strong></a> structures for USB Request Blocks (URBs) required by a client driver to send requests to the USB driver stack.</td>
 </tr>
 <tr class="odd">
 <td>usb100.h</td>
@@ -134,7 +134,7 @@ To find the header and library for a specific device driver interface (DDI), con
 <td>Include\shared</td>
 <td><p>winapifamily.h</p>
 <p>usb.h</p></td>
-<td>Defines flags for <a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb" data-raw-source="[WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)">WinUSB functions</a>.</td>
+<td>Defines flags for <a href="/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb" data-raw-source="[WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)">WinUSB functions</a>.</td>
 </tr>
 </tbody>
 </table>
