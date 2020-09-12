@@ -35,7 +35,7 @@ This property page is available if you add a message text file (.mc) or a manife
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Additional_Options"></span><span id="additional_options"></span><span id="ADDITIONAL_OPTIONS"></span><strong>Additional Options</strong></p></td>
-<td align="left"><p>Specifies additional options to pass to the <a href="https://docs.microsoft.com/windows/desktop/WES/message-compiler--mc-exe-" data-raw-source="[&lt;strong&gt;Message Compiler (MC.exe)&lt;/strong&gt;](/windows/desktop/WES/message-compiler--mc-exe-)"><strong>Message Compiler (MC.exe)</strong></a> tool.</p></td>
+<td align="left"><p>Specifies additional options to pass to the <a href="/windows/desktop/WES/message-compiler--mc-exe-" data-raw-source="[&lt;strong&gt;Message Compiler (MC.exe)&lt;/strong&gt;](/windows/desktop/WES/message-compiler--mc-exe-)"><strong>Message Compiler (MC.exe)</strong></a> tool.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Ansi_Input_File"></span><span id="ansi_input_file"></span><span id="ANSI_INPUT_FILE"></span><strong>Ansi Input File</strong></p></td>
@@ -175,5 +175,3 @@ This property page is available if you add a message text file (.mc) or a manife
 * [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md)
 Message compiler task
 * [Event Tracing for Windows (ETW)](../devtest/event-tracing-for-windows--etw-.md)
- 
-

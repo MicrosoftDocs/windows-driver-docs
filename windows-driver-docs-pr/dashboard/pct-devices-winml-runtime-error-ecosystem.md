@@ -14,7 +14,7 @@ This is an Ecosystem measure to monitor the overall health & reliability of the 
 
 This measure will calculate the % of devices that run WinML using GPU sessions and hit WinML RuntimeError. WinML has CPU and GPU execution paths. This measure only considers the results from GPU path.
 
-This is the Ecosystem counterpart of [Percent of devices with WinML Runtime Errors](https://docs.microsoft.com/windows-hardware/drivers/dashboard/pct-devices-winml-runtime-error), which means it will include data from multiple driver flights that target the same driver version. The reason to have this Driver Ecosystem measure is because we expect the standard WinML Driver Flight measure could have very limited amount of data. Once the Driver Flight measure doesn’t meet the minimal data requirement, we’ll use this Ecosystem measure to make the decision.
+This is the Ecosystem counterpart of [Percent of devices with WinML Runtime Errors](./pct-devices-winml-runtime-error.md), which means it will include data from multiple driver flights that target the same driver version. The reason to have this Driver Ecosystem measure is because we expect the standard WinML Driver Flight measure could have very limited amount of data. Once the Driver Flight measure doesn’t meet the minimal data requirement, we’ll use this Ecosystem measure to make the decision.
 
 ## Measure attributes
 

@@ -22,7 +22,7 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit downloads](../download-the-wdk.md)">Windows Driver Kit downloads</a>.</p></td>
+<td align="left"><p>JSConstraintsDebug.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit downloads](../download-the-wdk.md)">Windows Driver Kit downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -164,6 +164,4 @@ Test merge and validate operations between two custom print tickets.
 ```
 JSConstraintsDebug “Contoso Printer” PrintTicket.xml PrintTicket2.xml
 ```
-
- 
 

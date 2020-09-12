@@ -51,7 +51,7 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 <td align="left"><p>Disable I/O Spy on 1 or more devices. Uninstalls IoSpy and disables IOCTL and WMI filtering for all devices on the test system.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_DisableSupport.wsc</p>
 <p><strong>Test method:</strong> DisableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p></td>
 </tr>
 <tr class="even">
@@ -65,7 +65,7 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 <td align="left"><p>Installs IoSpy on the test system and enables IOCTL and WMI filtering on one or more devices. The DQ parameter controls which devices the IoSpy filter driver will get installed on.</p>
 <p><strong>Test binary:</strong> Devfund_IOSpy_EnableSupport.wsc</p>
 <p><strong>Test method:</strong> EnableIoSpy</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>DFD</em> - specifies the path to the IoSpy data file. The default location is %SystemDrive%\DriverTest\IoSpy</p></td>
 </tr>
@@ -79,6 +79,4 @@ You can install and remove IoSpy using the [Penetration Tests (Device Fundamenta
 After IoSpy is installed in a test system, it records the data sent through IOCTL and WMI requests to the drivers for devices enabled for fuzz tests. While IoSpy does not analyze the payloads of these requests, it does record the details of the requests such as the length of the payload buffers.
 
 The *DFD* parameter for the **Enable I/O Spy** test specifies the path to the IoSpy data file. The default location is %SystemDrive%\\DriverTest\\IoSpy
-
- 
 
