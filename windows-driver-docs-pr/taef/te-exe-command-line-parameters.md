@@ -58,7 +58,7 @@ Keeps the console running te.exe 'topmost' in the desktop z-order for the durati
 
 ### /dpiaware
 
-Executes tests in a process marked as DPI-aware, see [High DPI](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows). This can also be set via metadata ("DpiAware").
+Executes tests in a process marked as DPI-aware, see [High DPI](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows). This can also be set via metadata ("DpiAware").
 
 ### /inproc
 

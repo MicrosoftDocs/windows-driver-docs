@@ -191,7 +191,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 **To configure your target computer for WPP tracing**
 
-1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\10\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracelog-command-syntax).
+1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\10\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](../devtest/tracelog-command-syntax.md).
 2. Open a **Command Window** and run as administrator.
 3. Type the following command:
 

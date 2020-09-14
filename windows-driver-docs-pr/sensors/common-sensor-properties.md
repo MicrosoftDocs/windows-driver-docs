@@ -36,14 +36,14 @@ The following table shows common properties. For more information about the type
 <td><p>VT_CLSID</p></td>
 <td><p>R/O</p></td>
 <td><p>Required</p></td>
-<td><p>The type of sensor. The GUID will consist of the same format as a Windows sensor (e.g., SENSOR_TYPE_ACCELEROMETER_3D). For more information about sensor types, see <a href="https://docs.microsoft.com/windows-hardware/drivers/sensors/about-sensor-constants" data-raw-source="[Sensor type GUIDs](./about-sensor-constants.md)">Sensor type GUIDs</a>.</p></td>
+<td><p>The type of sensor. The GUID will consist of the same format as a Windows sensor (e.g., SENSOR_TYPE_ACCELEROMETER_3D). For more information about sensor types, see <a href="/windows-hardware/drivers/sensors/about-sensor-constants" data-raw-source="[Sensor type GUIDs](./about-sensor-constants.md)">Sensor type GUIDs</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>PKEY_Sensor_State</p></td>
 <td><p>VT_UI4</p></td>
 <td><p>R/O</p></td>
 <td><p>Required</p></td>
-<td><p>The state of the sensor. For more information about sensor states, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state" data-raw-source="[&lt;strong&gt;SENSOR_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state)"><strong>SENSOR_STATE</strong></a>.</p></td>
+<td><p>The state of the sensor. For more information about sensor states, see <a href="/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state" data-raw-source="[&lt;strong&gt;SENSOR_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state)"><strong>SENSOR_STATE</strong></a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>PKEY_Sensor_MinimumDataInterval_Ms</p></td>
@@ -159,6 +159,4 @@ When the client driver reports the following properties, the client driver must 
 [**SENSOR\_STATE**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state)
 
 [Sensor type GUIDs](./about-sensor-constants.md)
-
- 
 

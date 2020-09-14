@@ -55,7 +55,7 @@ Microsoft provides these set of drivers:
 <p>WudfUsbBIDAdvanced.inf</p></td>
 <td><p>Windows 8.1</p>
 <p>Windows 8</p></td>
-<td><p>Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. See the <a href="https://docs.microsoft.com/previous-versions/ff536448(v=vs.85)" data-raw-source="[Windows Biometric Framework](/previous-versions/ff536448(v=vs.85))">Windows Biometric Framework</a>.</p></td>
+<td><p>Microsoft supports USB biometric devices (fingerprint readers) by providing the Windows Biometric Framework. See the <a href="/previous-versions/ff536448(v=vs.85)" data-raw-source="[Windows Biometric Framework](/previous-versions/ff536448(v=vs.85))">Windows Biometric Framework</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Media Transfer Protocol Devices</td>
@@ -70,7 +70,7 @@ Microsoft provides these set of drivers:
 <div>
 
 </div>
-<p>Microsoft provides the Wpdusb.sys driver to manage portable devices that support the Media Transfer Protocol. See <a href="https://docs.microsoft.com/previous-versions/ff597864(v=vs.85)" data-raw-source="[WPD Design Guide](/previous-versions/ff597864(v=vs.85))">WPD Design Guide</a>.</p></td>
+<p>Microsoft provides the Wpdusb.sys driver to manage portable devices that support the Media Transfer Protocol. See <a href="/previous-versions/ff597864(v=vs.85)" data-raw-source="[WPD Design Guide](/previous-versions/ff597864(v=vs.85))">WPD Design Guide</a>.</p></td>
 </tr>
 <tr class="even">
 <td>USBDevice</td>

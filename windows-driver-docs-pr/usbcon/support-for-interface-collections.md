@@ -284,7 +284,7 @@ USB Audio Device class interface collections that occur on CDC and WMCDC devices
 <td><p>Hardware IDs</p></td>
 <td><pre space="preserve"><code class="language-syntax">USB\Vid_%04x&Pid_%04x&Rev_%04x&MI_%02x
 USB\Vid_%04x&Pid_%04x&MI_%02x</code></pre>
-<p>The hardware IDs for audio interface collections do not contain interface class-specific information. For an explanation of the formatting of hardware IDs that are associated with audio interface collections, see <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class]()">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
+<p>The hardware IDs for audio interface collections do not contain interface class-specific information. For an explanation of the formatting of hardware IDs that are associated with audio interface collections, see <a href="/windows-hardware/drivers/usbcon/support-for-interface-collections" data-raw-source="[Support for the Wireless Mobile Communication Device Class]()">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Compatible IDs</p></td>
@@ -910,7 +910,7 @@ USB\Class_02</code></pre></td>
 <tr class="odd">
 <td><p>Special handling</p></td>
 <td><p>The UFD might reference an audio interface collection that is enumerated independently of the ACM interface collection.</p>
-<p>Interface collections must comply with the special descriptor and endpoint requirements that are specified in section 6.2 of the WMCDC specification. If the interface collection does not comply with the WMCDC requirements but the interface complies with CDC requirements, the USB generic parent driver will enumerate the interface collection and generic hardware IDs with CDC formats, as described in <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class]()">Support for the Wireless Mobile Communication Device Class</a>.</p>
+<p>Interface collections must comply with the special descriptor and endpoint requirements that are specified in section 6.2 of the WMCDC specification. If the interface collection does not comply with the WMCDC requirements but the interface complies with CDC requirements, the USB generic parent driver will enumerate the interface collection and generic hardware IDs with CDC formats, as described in <a href="/windows-hardware/drivers/usbcon/support-for-interface-collections" data-raw-source="[Support for the Wireless Mobile Communication Device Class]()">Support for the Wireless Mobile Communication Device Class</a>.</p>
 <p>The compatible IDs of this control model have a match in a Microsoft-supplied INF file. If the operating system does not find a match for one of the hardware IDs in a vendor-supplied INF file, the system automatically loads the native telephony application programming interface (TAPI) modem filter driver to manage the modem function and sets the appropriate TAPI registry settings, unless the protocol code is 0xFE. If the protocol code is 0xFE, the vendor must supply a device or class co-installer to correctly populate the TAPI registry settings.</p></td>
 </tr>
 </tbody>
@@ -1096,7 +1096,7 @@ USB\Class_02</code></pre></td>
 </tr>
 <tr class="odd">
 <td><p>Special handling</p></td>
-<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see <a href="support-for-the-wireless-mobile-communication-device-class--wmcdc-.md" data-raw-source="[Support for the Wireless Mobile Communication Device Class]()">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
+<td><p>The registry settings that are associated with the instance of the USB generic parent driver that manages the composite device determine whether OBEX interfaces are managed with a single PDO or multiple PDOs. For an explanation of the registry settings that specify how the USB generic parent driver enumerates OBEX interfaces, see <a href="/windows-hardware/drivers/usbcon/support-for-interface-collections" data-raw-source="[Support for the Wireless Mobile Communication Device Class]()">Support for the Wireless Mobile Communication Device Class</a>.</p></td>
 </tr>
 </tbody>
 </table>
