@@ -47,7 +47,7 @@ The [**DiInstallDriver**](/windows/desktop/api/newdev/nf-newdev-diinstalldrivera
 
 Calling **DiInstallDriver** or [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) is the simplest way for an installation application to install a new driver for a device. **DiInstallDriver** and **UpdateDriverForPlugAndPlayDevices** perform the same basic installation operations. However **UpdateDriverForPlugAndPlayDevices** supports additional installation options.
 
-By default, **DiInstallDriver** only installs the driver on a device if the driver is a better match to the device than the driver that is currently installed on the device. For information about how Windows selects a driver for device, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
+By default, **DiInstallDriver** only installs the driver on a device if the driver is a better match to the device than the driver that is currently installed on the device. For information about how Windows selects a driver for device, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
 A caller can also call **DiInstallDriver** to do the following:
 
@@ -94,6 +94,4 @@ A caller can also optionally call **UpdateDriverForPlugAndPlayDevices** to do th
 -   Suppress the display of user interface components.
 
 -   Indicate to the caller whether a system restart is required to complete the installation.
-
- 
 

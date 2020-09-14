@@ -23,7 +23,7 @@ The Windows Setup and Device Installer Services, known collectively as [SetupAPI
 
 A file system driver's INF file provides instructions that SetupAPI uses to install the driver. The INF file is a text file that specifies the files that must be present for your driver to run and the source and destination directories for the driver files. An INF file also contains driver configuration information that SetupAPI stores in the registry, such as the driver's start type and load order group.
 
-For more information about INF files and how they are created, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives). For general information about signing drivers, see [Driver Signing](../install/driver-signing.md).
+For more information about INF files and how they are created, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md). For general information about signing drivers, see [Driver Signing](../install/driver-signing.md).
 
 You can create a single INF file to install your driver on multiple versions of the Windows operating system. For more information about creating such an INF file, see [Creating INF Files for Multiple Platforms and Operating Systems](../install/creating-inf-files-for-multiple-platforms-and-operating-systems.md) and [Creating International INF Files](../install/creating-international-inf-files.md).
 

@@ -109,7 +109,7 @@ An installer handles this DIF request to participate in selecting a driver for a
 
     1.  Get the information about the first driver in the list by calling [**SetupDiEnumDriverInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdriverinfoa) and [**SetupDiGetDriverInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinstallparamsa). If appropriate, modify the driver parameters and apply the change by calling [**SetupDiSetDriverInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdriverinstallparamsa).
 
-        If a driver is a worst-case choice, set the driver's rank to 0xFFFF or higher in the driver install parameters. See [How Windows Selects Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-selects-drivers) for more information.
+        If a driver is a worst-case choice, set the driver's rank to 0xFFFF or higher in the driver install parameters. See [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md) for more information.
 
     2.  Repeat the previous step until you have processed all the drivers in the list. Make sure that you increment the *MemberIndex* parameter to [**SetupDiEnumDriverInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdriverinfoa) as described in the reference page for that function.
 
@@ -153,6 +153,4 @@ Requirements
 [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
 
 [**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
-
- 
 

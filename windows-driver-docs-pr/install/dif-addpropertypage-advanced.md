@@ -104,7 +104,7 @@ A co-installer should add custom pages in its preprocessing pass.
 
 If an installer allows a user to set a property that requires Windows to remove and restart the device, the installer must set the DI_FLAGSEX_PROPCHANGE_PENDING flag in the device installation parameters from its **DialogProc** routine.
 
-For more information about how to provide device property pages, see [Providing Device Property Pages](https://docs.microsoft.com/windows-hardware/drivers/install/providing-device-property-pages).
+For more information about how to provide device property pages, see [Providing Device Property Pages](./overview-of-device-property-pages.md).
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
@@ -136,6 +136,4 @@ Requirements
 [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
 
 [**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
-
- 
 

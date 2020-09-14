@@ -38,7 +38,7 @@ Miniport drivers must do the following to report such legacy resources:
   <tbody>
   <tr class="odd">
   <td align="left"><p><strong>HwLegacyResourceList</strong></p></td>
-  <td align="left"><p>Points to an array of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_access_range" data-raw-source="[&lt;strong&gt;VIDEO_ACCESS_RANGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_access_range)"><strong>VIDEO_ACCESS_RANGE</strong></a> structures. Each structure describes a device I/O port or memory range for the video adapter that is not listed in PCI configuration space.</p></td>
+  <td align="left"><p>Points to an array of <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_access_range" data-raw-source="[&lt;strong&gt;VIDEO_ACCESS_RANGE&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_access_range)"><strong>VIDEO_ACCESS_RANGE</strong></a> structures. Each structure describes a device I/O port or memory range for the video adapter that is not listed in PCI configuration space.</p></td>
   </tr>
   <tr class="even">
   <td align="left"><p><strong>HwLegacyResourceCount</strong></p></td>
@@ -80,6 +80,4 @@ hwInitData.HwLegacyResourceCount = 3;
 ```
 
 The miniport driver can "reclaim" legacy resources again in subsequent call(s) to [**VideoPortVerifyAccessRanges**](/windows-hardware/drivers/ddi/video/nf-video-videoportverifyaccessranges); however, the video port driver will just ignore requests for any such previously claimed resources. Power management and docking will be disabled in the system if the miniport driver attempts to claim a legacy access range in **VideoPortVerifyAccessRanges** that was not previously claimed in the **HwLegacyResourceList** during [**DriverEntry**](./driverentry-of-video-miniport-driver.md) or returned in the *LegacyResourceList* parameter of [*HwVidLegacyResources*](/windows-hardware/drivers/ddi/video/nc-video-pvideo_hw_legacyresources).
-
- 
 

@@ -51,7 +51,5 @@ For more information about registry keys for drivers, see:
 
 -   [Overview of Registry Trees and Keys](../install/overview-of-registry-trees-and-keys.md)
 
--   [Using the Registry in a Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-the-registry-in-a-driver)
-
- 
+-   [Using the Registry in a Driver](../kernel/registry-key-object-routines.md)
 

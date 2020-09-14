@@ -167,7 +167,7 @@ The metadata field identifiers are each represented by a bit-field. These identi
 </td>
 <td>
 <p>A 
-       <a href="https://docs.microsoft.com/windows/desktop/api/ws2def/ns-ws2def-sockaddr_storage"><b>SOCKADDR_STORAGE</b></a> structure that indicate
+       <a href="/windows/desktop/api/ws2def/ns-ws2def-sockaddr_storage"><b>SOCKADDR_STORAGE</b></a> structure that indicate
        the packet's original destination.</p>
 <p>
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
@@ -328,4 +328,3 @@ The metadata field identifiers are each represented by a bit-field. These identi
 </td>
 </tr>
 </table>
-

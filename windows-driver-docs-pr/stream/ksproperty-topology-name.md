@@ -47,7 +47,7 @@ The KSPROPERTY\_TOPOLOGY\_NAME property provides the localized Unicode string na
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Node</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)"><strong>KSP_NODE</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node" data-raw-source="[&lt;strong&gt;KSP_NODE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)"><strong>KSP_NODE</strong></a></p></td>
 <td><p>A buffer to hold the string name.</p></td>
 </tr>
 </tbody>
@@ -80,6 +80,4 @@ Requirements
 
 
 [**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
-
- 
 

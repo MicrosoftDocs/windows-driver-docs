@@ -135,7 +135,7 @@ USB transfer sizes are subject to the following limits:
 </tr>
 <tr class="even">
 <td>Isochronous</td>
-<td><p>1024<em><strong>wBytesPerInterval</strong> (see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor" data-raw-source="[&lt;strong&gt;USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor)"><strong>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</strong></a>) for SuperSpeed (xHCI)</p>
+<td><p>1024<em><strong>wBytesPerInterval</strong> (see <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor" data-raw-source="[&lt;strong&gt;USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_superspeed_endpoint_companion_descriptor)"><strong>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</strong></a>) for SuperSpeed (xHCI)</p>
 <p>1024</em> <strong>MaximumPacketSize</strong> for high speed (xHCI, EHCI)</p>
 <p>256 * <strong>MaximumPacketSize</strong> for full speed (xHCI, EHCI)</p>
 <p>64K for full speed (UHCI, OHCI)</p></td>
@@ -197,5 +197,3 @@ Delimiting the data transmission with zero-length packets, as required by the US
 Compliant USB 2.0/1.1 drivers must transmit packets of maximum size (*wMaxPacketSize*) and then either end the transmission by means of a packet of less than maximum size, or delimit the end of the transmission by means of a zero-length packet. The transmission is not complete until the driver sends a packet smaller than *wMaxPacketSize*. If the transfer size is an exact multiple of the maximum, the driver must send a zero-length delimiting packet to explicitly terminate the transfer
 
 Delimiting the data transmission with zero-length packets, as required by the USB specification, is the responsibility of the device driver. The system USB stack will not generate these packets automatically.
-
-

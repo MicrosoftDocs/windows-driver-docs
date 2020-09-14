@@ -47,7 +47,7 @@ The following table lists the command attributes in alphabetic order and describ
 <tbody>
 <tr class="odd">
 <td><p><strong><em>CallbackID</strong></p></td>
-<td><p>Positive numeric value, passed to the rendering plug-in's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback" data-raw-source="[&lt;strong&gt;IPrintOemUni::CommandCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback)"><strong>IPrintOemUni::CommandCallback</strong></a> method as its <em>dCmdCbID</em> argument.</p></td>
+<td><p>Positive numeric value, passed to the rendering plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback" data-raw-source="[&lt;strong&gt;IPrintOemUni::CommandCallback&lt;/strong&gt;](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-commandcallback)"><strong>IPrintOemUni::CommandCallback</strong></a> method as its <em>dCmdCbID</em> argument.</p></td>
 <td><p>Required for <a href="dynamically-generated-printer-commands.md" data-raw-source="[dynamically generated printer commands](dynamically-generated-printer-commands.md)">dynamically generated printer commands</a>. Not valid if <strong></em>Cmd</strong> is specified.</p></td>
 </tr>
 <tr class="even">
@@ -78,6 +78,4 @@ The following table lists the command attributes in alphabetic order and describ
  
 
 For examples, see the [sample GPD files](sample-gpd-files.md).
-
- 
 

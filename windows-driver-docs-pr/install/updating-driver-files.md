@@ -61,7 +61,5 @@ Use the following guidelines when you write installation software and INF files 
 
 -   When updating a class installer, class co-installer, or service DLL, you must give the new version a new file name.
 
-For more information about INF files, see [Creating an INF File](overview-of-inf-files.md) and [INF File Sections and Directives](inf-file-sections-and-directives.md).
-
- 
+For more information about INF files, see [Creating an INF File](overview-of-inf-files.md) and [INF File Sections and Directives](./index.md).
 

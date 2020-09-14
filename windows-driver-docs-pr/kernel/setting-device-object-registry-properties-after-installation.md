@@ -45,7 +45,7 @@ The correspondence between values for the *Property* parameter and actual proper
 </tr>
 <tr class="even">
 <td><p>SPDRP_SECURITY</p></td>
-<td><p>Security descriptor as a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor)"><strong>SECURITY_DESCRIPTOR</strong></a> structure</p></td>
+<td><p>Security descriptor as a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor" data-raw-source="[&lt;strong&gt;SECURITY_DESCRIPTOR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor)"><strong>SECURITY_DESCRIPTOR</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p>SPDRP_SECURITY_SDS</p></td>
@@ -61,6 +61,4 @@ Note that two different ways are provided to get or set the security descriptor.
 For Windows XP and later operating systems, programs can also get and set the property values for a device setup class. Use the [**SetupDiGetClassRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassregistrypropertya) and [**SetupDiSetClassRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclassregistrypropertya) functions to get and set the property values for a device setup class.
 
 For more information about using the **SetupDi*Xxx*** functions, see [Using Device Installation Functions](../install/using-device-installation-functions.md).
-
- 
 

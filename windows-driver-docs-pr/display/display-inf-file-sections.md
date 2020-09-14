@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_display_inf_file_sections_gg"></span><span id="DDK_DISPLAY_INF_FILE_SECTIONS_GG"></span>
 
 
-This section tells you how to write the setup information file (INF) sections that specifically apply to a graphics-adapter installation. For more general information about INF files, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+This section tells you how to write the setup information file (INF) sections that specifically apply to a graphics-adapter installation. For more general information about INF files, see [INF File Sections and Directives](../install/index.md).
 
 ### <span id="DDInstall.SoftwareSettings_Section"></span><span id="ddinstall.softwaresettings_section"></span><span id="DDINSTALL.SOFTWARESETTINGS_SECTION"></span>DDInstall.SoftwareSettings Section
 
@@ -91,15 +91,15 @@ The value of the **CapabilityOverride** registry entry is a bitwise OR of one or
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4</p></td>
-<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to <a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo)"><strong>DdGetDriverInfo</strong></a><em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to <a href="/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo)"><strong>DdGetDriverInfo</strong></a><em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x8</p></td>
-<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsetpixelformat" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvsetpixelformat)"><strong>DrvSetPixelFormat</strong></a>, <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdescribepixelformat" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvdescribepixelformat)"><strong>DrvDescribePixelFormat</strong></a>, and <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvswapbuffers" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvswapbuffers)"><strong>DrvSwapBuffers</strong></a> from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to <a href="/windows/desktop/api/winddi/nf-winddi-drvsetpixelformat" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvsetpixelformat)"><strong>DrvSetPixelFormat</strong></a>, <a href="/windows/desktop/api/winddi/nf-winddi-drvdescribepixelformat" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvdescribepixelformat)"><strong>DrvDescribePixelFormat</strong></a>, and <a href="/windows/desktop/api/winddi/nf-winddi-drvswapbuffers" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvswapbuffers)"><strong>DrvSwapBuffers</strong></a> from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x10</p></td>
-<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvescape" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvescape)"><strong>DrvEscape</strong></a> and <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdrawescape" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvdrawescape)"><strong>DrvDrawEscape</strong></a> from reaching the driver.</p></td>
+<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to <a href="/windows/desktop/api/winddi/nf-winddi-drvescape" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvescape)"><strong>DrvEscape</strong></a> and <a href="/windows/desktop/api/winddi/nf-winddi-drvdrawescape" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvdrawescape)"><strong>DrvDrawEscape</strong></a> from reaching the driver.</p></td>
 </tr>
 </tbody>
 </table>
@@ -201,6 +201,4 @@ HKLM,"SYSTEM\CurrentControlSet\Control\AGP","1AD0012A",0x00030003,04,00,00,00,00
 ```
 
 The second entry in the preceding code indicates that the subkey identified by the string following HKLM is to be added to the registry, under the HKEY\_LOCAL\_MACHINE root. As in the previous entry, the value name associated with this subkey is a string that is composed of the device's DeviceID and VendorID. The flag value is also the same. The value entry is AGP\_FLAG\_NO\_4X\_RATE, which disables the AGP 4X transfer rate. Notice that, as before, the bytes in this value entry are in the opposite order as those of the flag's value in the preceding table.
-
- 
 

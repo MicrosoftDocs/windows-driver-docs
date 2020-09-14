@@ -44,7 +44,7 @@ Clients use the  **KSPROPERTY\_PIN\_MODEDATAFORMATS** property to retrieve a lis
 <td><p>No</p></td>
 <td><p>Filter</p></td>
 <td><p>KSP_PIN, followed by a Mode GUID</p></td>
-<td><p>KSMULTIPLE_ITEM structure, followed by a sequence of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a> structures</p></td>
+<td><p>KSMULTIPLE_ITEM structure, followed by a sequence of <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a> structures</p></td>
 </tr>
 </tbody>
 </table>

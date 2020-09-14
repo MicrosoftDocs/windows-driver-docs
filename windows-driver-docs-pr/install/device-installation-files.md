@@ -39,11 +39,9 @@ The software that is required to support a particular device depends on the kind
 * <a href="" id="other-files"></a>Other files  
     A [driver package](driver-packages.md) can contain other files, such as a custom device installation application, a device icon, or a driver library file (such as for video drivers).
 
-    For more information, see [Providing Device Property Pages](providing-device-property-pages.md).
+    For more information, see [Providing Device Property Pages](./overview-of-device-property-pages.md).
 
 Also, see the device-type-specific documentation in the WDK.
 
 The WDK includes various sample installation files. For more information, see [Sample Device Installation Files](sample-device-installation-files.md)
-
- 
 

@@ -181,7 +181,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
 <div>
  
 </div>
-<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
+<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
 <td align="left"><p>0: Black</p>
 <div>
  
@@ -215,7 +215,7 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
 <div>
  
 </div>
-<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
+<strong>Note</strong>: For these modes, a valid combination must not have any of the cyan, magenta, or yellow ink levels equal to zero. For such a combination, <a href="/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette" data-raw-source="[&lt;strong&gt;HT_Get8BPPMaskPalette&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-ht_get8bppmaskpalette)"><strong>HT_Get8BPPMaskPalette</strong></a> indicates an error condition by returning a zero-count palette in its <em>pPaletteEntry</em> parameter.</td>
 </tr>
 </tbody>
 </table>
@@ -458,6 +458,4 @@ In the product above, C, M, and Y represent the number of levels of cyan, magent
             |
             +-- Cyan 0-7 (Max. 8 levels)
 ```
-
- 
 

@@ -35,11 +35,11 @@ The sample ProcAmp control functions in the following table are member functions
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryCaps&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md)"><strong>ProcAmpControlQueryCaps</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryCaps&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md)"><strong>ProcAmpControlQueryCaps</strong></a></p></td>
 <td align="left"><p>Queries the driver to determine input requirements of the ProcAmp control device.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryRange&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md)"><strong>ProcAmpControlQueryRange</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryRange&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md)"><strong>ProcAmpControlQueryRange</strong></a></p></td>
 <td align="left"><p>Queries the driver to determine the minimum, maximum, step size, and default value for each ProcAmp property.</p></td>
 </tr>
 </tbody>
@@ -64,15 +64,15 @@ The sample ProcAmp control functions in the following table are member functions
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolopenstream" data-raw-source="[&lt;strong&gt;ProcAmpControlOpenStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolopenstream.md)"><strong>ProcAmpControlOpenStream</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolopenstream" data-raw-source="[&lt;strong&gt;ProcAmpControlOpenStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolopenstream.md)"><strong>ProcAmpControlOpenStream</strong></a></p></td>
 <td align="left"><p>Creates a ProcAmp stream object.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolblt" data-raw-source="[&lt;strong&gt;ProcAmpControlBlt&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolblt.md)"><strong>ProcAmpControlBlt</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolblt" data-raw-source="[&lt;strong&gt;ProcAmpControlBlt&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolblt.md)"><strong>ProcAmpControlBlt</strong></a></p></td>
 <td align="left"><p>Performs the ProcAmp adjustment operation by writing the output to the destination surface.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolclosestream" data-raw-source="[&lt;strong&gt;ProcAmpControlCloseStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolclosestream.md)"><strong>ProcAmpControlCloseStream</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolclosestream" data-raw-source="[&lt;strong&gt;ProcAmpControlCloseStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolclosestream.md)"><strong>ProcAmpControlCloseStream</strong></a></p></td>
 <td align="left"><p>Closes the ProcAmp stream object and instructs the device driver to release hardware resources associated with the stream.</p></td>
 </tr>
 </tbody>
@@ -97,29 +97,27 @@ The sample functions in this section map to the motion compensation callback fun
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryCaps&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md)"><strong>ProcAmpControlQueryCaps</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryCaps&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolquerycaps.md)"><strong>ProcAmpControlQueryCaps</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryRange&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md)"><strong>ProcAmpControlQueryRange</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange" data-raw-source="[&lt;strong&gt;ProcAmpControlQueryRange&lt;/strong&gt;](./dxva-deinterlacecontainerdeviceclass-procampcontrolqueryrange.md)"><strong>ProcAmpControlQueryRange</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolopenstream" data-raw-source="[&lt;strong&gt;ProcAmpControlOpenStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolopenstream.md)"><strong>ProcAmpControlOpenStream</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolopenstream" data-raw-source="[&lt;strong&gt;ProcAmpControlOpenStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolopenstream.md)"><strong>ProcAmpControlOpenStream</strong></a></p></td>
 <td align="left"><p><strong>CreateMoComp</strong></p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolblt" data-raw-source="[&lt;strong&gt;ProcAmpControlBlt&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolblt.md)"><strong>ProcAmpControlBlt</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolblt" data-raw-source="[&lt;strong&gt;ProcAmpControlBlt&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolblt.md)"><strong>ProcAmpControlBlt</strong></a></p></td>
 <td align="left"><p><strong>RenderMoComp</strong></p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolclosestream" data-raw-source="[&lt;strong&gt;ProcAmpControlCloseStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolclosestream.md)"><strong>ProcAmpControlCloseStream</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/display/dxva-procampcontroldeviceclass-procampcontrolclosestream" data-raw-source="[&lt;strong&gt;ProcAmpControlCloseStream&lt;/strong&gt;](./dxva-procampcontroldeviceclass-procampcontrolclosestream.md)"><strong>ProcAmpControlCloseStream</strong></a></p></td>
 <td align="left"><p><strong>DestroyMoComp</strong></p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

@@ -22,7 +22,7 @@ The power management test tool (PwrTest) is a test tool that enables developers,
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>PwrTest.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit Downloads](../download-the-wdk.md)">Windows Driver Kit Downloads</a>.</p></td>
+<td align="left"><p>PwrTest.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit Downloads](../download-the-wdk.md)">Windows Driver Kit Downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -72,6 +72,4 @@ PwrTest functionality is separated into scenarios. For information about these s
 [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md)
 
 [Provision a computer for driver deployment and testing (WDK 8)](/previous-versions/hh698272(v=vs.85))
-
- 
 
