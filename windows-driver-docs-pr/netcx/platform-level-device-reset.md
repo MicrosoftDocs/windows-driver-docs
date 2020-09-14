@@ -26,17 +26,17 @@ NetAdapterCx does not recover network devices through function-level device rese
 
 As part of the NetAdapterCx reset and recovery process the client driver can collect device-specific diagnostics from the failed device before the device is platform-level reset. IHVs and Microsoft can use this data in post-failure analysis to improve the quality of their products.
 
-### Register NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES
+### Register NET_DEVICE_RESET_CAPABILITIES
 
-Client drivers need to initialize and register the [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES**](/windows-hardware/drivers/ddi/netdevice/ns-netdevice-net_device_reset_diagnostics_capabilities) structure in their [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function in order to collect device-specific diagnostics.
+Client drivers need to initialize and register the [**NET_DEVICE_RESET_CAPABILITIES**](/windows-hardware/drivers/ddi/netdevice/ns-netdevice-net_device_reset_capabilities) structure in their [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function in order to collect device-specific diagnostics.
 
-[**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES**](/windows-hardware/drivers/ddi/netdevice/ns-netdevice-net_device_reset_diagnostics_capabilities) contains:
+[**NET_DEVICE_RESET_CAPABILITIES**](/windows-hardware/drivers/ddi/netdevice/ns-netdevice-net_device_reset_capabilities) contains:
 
 * A unique GUID. The IHV specifies this GUID and uses it later to identify and retrieve the reset diagnostics from a memory dump. For example, the [.enumtag](../debugger/-enumtag--enumerate-secondary-callback-data-.md) command can be used to retrieve the diagnostics.
 
 * An [*EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_collect_reset_diagnostics) event callback function. NetAdapterCx invokes this callback to collect diagnostics. If the client driver provides an *EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS* callback, NetAdapterCx invokes it on the client driver using a *dedicated* thread.
 
-The following example shows how to register **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** to NetAdapterCx:
+The following example shows how to register **NET_DEVICE_RESET_CAPABILITIES** to NetAdapterCx:
 
 ```cpp
 EVT_WDF_DRIVER_DEVICE_ADD EvtWdfDriverDeviceAdd;
@@ -49,20 +49,20 @@ NTSTATUS EvtWdfDriverDeviceAdd(
 {
     ...
 
-    NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES resetDiagnosticsCapabilities;
-    NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT(
-        &resetDiagnosticsCapabilities,
+    NET_DEVICE_RESET_CAPABILITIES resetCapabilities;
+    NET_DEVICE_RESET_CAPABILITIES_INIT(
+        &resetCapabilities,
         DUMMY_GUID,
         EvtDeviceCollectResetDiagnostics);
-    NetDeviceInitSetResetDiagnosticsCapabilities(DeviceInit, &resetDiagnosticsCapabilities);
+    NetDeviceInitSetResetCapabilities(DeviceInit, &resetCapabilities);
 
     ...
 }
 ```
 
-For information about how to initialize the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure, see [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_diagnostics_capabilities_init).
+For information about how to initialize the **NET_DEVICE_RESET_CAPABILITIES** structure, see [**NET_DEVICE_RESET_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_capabilities_init).
 
-To learn how to advertise the **NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES** structure to NetAdapterCx, see [**NetDeviceInitSetResetDiagnosticsCapabilities**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetdiagnosticscapabilities).
+To learn how to advertise the **NET_DEVICE_RESET_CAPABILITIES** structure to NetAdapterCx, see [**NetDeviceInitSetResetCapabilitites**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetcapabilitites).
 
 ### Implement *EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*
 
@@ -105,7 +105,7 @@ Calling **NetDeviceRequestReset** also has no effect if the [power-down sequence
 
 When the OS or the client driver triggers PLDR, the following sequence occurs:
 
-1. Collect reset diagnostics: NetAdapterCx invokes the client driver's [*EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_collect_reset_diagnostics) callback to collect diagnostics from the failed device. For example, the driver may collect a snapshot of the device firmware. This step is optional and only occurs if the client driver has registered the [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES**](/windows-hardware/drivers/ddi/netdevice/ns-netdevice-net_device_reset_diagnostics_capabilities) structure. Otherwise, NetAdapterCx will skip this step.
+1. Collect reset diagnostics: NetAdapterCx invokes the client driver's [*EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_collect_reset_diagnostics) callback to collect diagnostics from the failed device. For example, the driver may collect a snapshot of the device firmware. This step is optional and only occurs if the client driver has registered the [**NET_DEVICE_RESET_CAPABILITIES**](/windows-hardware/drivers/ddi/netdevice/ns-netdevice-net_device_reset_capabilities) structure. Otherwise, NetAdapterCx will skip this step.
 
 2. Perform PLDR: NetAdapterCx performs the platform-level device reset operation. NetAdapterCx power recycles the hardware and tears down the software device stack.
 
