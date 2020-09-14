@@ -17,9 +17,12 @@ Instead of capturing traces by using the command line tool, logman, and then par
 
 ## Install and launch Microsoft Message Analyzer
 
-1.  [Download Microsoft Message Analyzer](https://www.microsoft.com/download/details.aspx?id=44226) and install the tool by following **Install Instructions** on the download page. After downloading, follow the install prompts and select **Update items**.
+1.  Install the tool **Microsoft Message Analyzer**  by following on screen Instructions and select **Update items**.
 
 2.  After installation completes, the tool launches and the start page is shown.
+
+> [NOTE]
+> Above instructions are only for the users those are already downloaded above tool before retired
 
 ## Set up a trace session and capture USB events
 
