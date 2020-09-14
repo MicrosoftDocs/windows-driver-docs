@@ -76,7 +76,7 @@ Some of the more common error values that **GetLastError** might return are as f
 </tr>
 <tr class="even">
 <td align="left"><strong>ERROR_IN_WOW64</strong></td>
-<td align="left"><p>The calling application is a 32-bit application that is attempting to execute in a 64-bit environment, which is not allowed. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/install/device-installations-on-64-bit-systems" data-raw-source="[Installing Devices on 64-Bit Systems](./device-installations-on-64-bit-systems.md)">Installing Devices on 64-Bit Systems</a>.</p></td>
+<td align="left"><p>The calling application is a 32-bit application that is attempting to execute in a 64-bit environment, which is not allowed. For more information, see <a href="/windows-hardware/drivers/install/device-installations-on-64-bit-systems" data-raw-source="[Installing Devices on 64-Bit Systems](./device-installations-on-64-bit-systems.md)">Installing Devices on 64-Bit Systems</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -170,6 +170,4 @@ Requirements
 [**SetupDiSetSelectedDriver**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddrivera)
 
 [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa)
-
- 
 

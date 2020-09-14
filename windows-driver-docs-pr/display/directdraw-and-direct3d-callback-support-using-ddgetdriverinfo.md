@@ -37,11 +37,11 @@ The display driver can implement the [**DdGetDriverInfo**](/windows/desktop/api/
   </thead>
   <tbody>
   <tr class="odd">
-  <td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncsurface" data-raw-source="[&lt;em&gt;DdSyncSurfaceData&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncsurface)"><em>DdSyncSurfaceData</em></a></p></td>
+  <td align="left"><p><a href="/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncsurface" data-raw-source="[&lt;em&gt;DdSyncSurfaceData&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncsurface)"><em>DdSyncSurfaceData</em></a></p></td>
   <td align="left"><p>Sets and modifies surface data.</p></td>
   </tr>
   <tr class="even">
-  <td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncvideoport" data-raw-source="[&lt;em&gt;DdSyncVideoPortData&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncvideoport)"><em>DdSyncVideoPortData</em></a></p></td>
+  <td align="left"><p><a href="/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncvideoport" data-raw-source="[&lt;em&gt;DdSyncVideoPortData&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_kernelcb_syncvideoport)"><em>DdSyncVideoPortData</em></a></p></td>
   <td align="left"><p>Sets and modifies video port extensions (VPE) object data.</p></td>
   </tr>
   </tbody>
@@ -66,15 +66,15 @@ The display driver can implement the [**DdGetDriverInfo**](/windows/desktop/api/
   </thead>
   <tbody>
   <tr class="odd">
-  <td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_fliptogdisurface" data-raw-source="[&lt;em&gt;DdFlipToGDISurface&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_fliptogdisurface)"><em>DdFlipToGDISurface</em></a></p></td>
+  <td align="left"><p><a href="/windows/desktop/api/ddrawint/nc-ddrawint-pdd_fliptogdisurface" data-raw-source="[&lt;em&gt;DdFlipToGDISurface&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_fliptogdisurface)"><em>DdFlipToGDISurface</em></a></p></td>
   <td align="left"><p>Notifies the driver when DirectDraw is flipping to or from a GDI surface.</p></td>
   </tr>
   <tr class="even">
-  <td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_freedrivermemory" data-raw-source="[&lt;em&gt;DdFreeDriverMemory&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_freedrivermemory)"><em>DdFreeDriverMemory</em></a></p></td>
+  <td align="left"><p><a href="/windows/desktop/api/ddrawint/nc-ddrawint-pdd_freedrivermemory" data-raw-source="[&lt;em&gt;DdFreeDriverMemory&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_freedrivermemory)"><em>DdFreeDriverMemory</em></a></p></td>
   <td align="left"><p>Frees offscreen or nonlocal display memory to satisfy a new allocation request.</p></td>
   </tr>
   <tr class="odd">
-  <td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_setexclusivemode" data-raw-source="[&lt;em&gt;DdSetExclusiveMode&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_setexclusivemode)"><em>DdSetExclusiveMode</em></a></p></td>
+  <td align="left"><p><a href="/windows/desktop/api/ddrawint/nc-ddrawint-pdd_setexclusivemode" data-raw-source="[&lt;em&gt;DdSetExclusiveMode&lt;/em&gt;](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_setexclusivemode)"><em>DdSetExclusiveMode</em></a></p></td>
   <td align="left"><p>Notifies the driver when a DirectDraw application is switching to or from exclusive mode.</p></td>
   </tr>
   </tbody>
@@ -85,6 +85,4 @@ The display driver can implement the [**DdGetDriverInfo**](/windows/desktop/api/
 <!-- -->
 
 -   If the driver receives the GUID\_VideoPortCallbacks GUID, it returns a pointer to the [**DD\_VIDEOPORTCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_videoportcallbacks) structure to indicate its support of [VPE Callback Functions](vpe-callback-functions.md). For more information, see [Video Port Extensions to DirectX](video-port-extensions-to-directx.md).
-
- 
 

@@ -109,7 +109,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpBufferInfo</strong></p></td>
-<td align="left"><p>Points to an array of <a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
+<td align="left"><p>Points to an array of <a href="/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/desktop/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dwFunction</strong></p></td>
@@ -117,7 +117,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpInputData</strong></p></td>
-<td align="left"><p>Points to a filled <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBltEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex)"><strong>DXVA_DeinterlaceBltEx</strong></a> structure.</p></td>
+<td align="left"><p>Points to a filled <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex" data-raw-source="[&lt;strong&gt;DXVA_DeinterlaceBltEx&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_deinterlacebltex)"><strong>DXVA_DeinterlaceBltEx</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>lpOutputData</strong></p></td>
@@ -168,6 +168,4 @@ Requirements
 [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
 [**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata)
-
- 
 

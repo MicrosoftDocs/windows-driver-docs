@@ -28,7 +28,7 @@ A file system filter driver intercepts requests targeted at a file system or ano
 - Backup agents
 - Encryption products
 
-Filter driver developers use the system-supplied [Filter Manager](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts), which provides a framework for developing filter drivers without having to manage all the complexities of file I/O. The Filter Manager simplifies the development of third-party filter drivers and solves many of the problems with the legacy filter driver model, such as the ability to control load order through an assigned altitude.
+Filter driver developers use the system-supplied [Filter Manager](./filter-manager-concepts.md), which provides a framework for developing filter drivers without having to manage all the complexities of file I/O. The Filter Manager simplifies the development of third-party filter drivers and solves many of the problems with the legacy filter driver model, such as the ability to control load order through an assigned altitude.
 
 ## File system and filter sample code
 

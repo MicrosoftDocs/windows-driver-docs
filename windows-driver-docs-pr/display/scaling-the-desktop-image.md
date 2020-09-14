@@ -82,7 +82,7 @@ The following table shows the different [**SetDisplayConfig**](/windows/desktop/
 <tr class="odd">
 <td align="left"><p>AdapterDefault</p></td>
 <td align="left"><p>The adapter default scaling value</p>
-<p>Currently, on tablet systems, the default is stretched. On non-tablet systems with graphics adapters that support the <a href="windows-vista-display-driver-model-design-guide.md" data-raw-source="[Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md)">Windows Display Driver Model (WDDM)</a>, the default is defined by the driver. On non-tablet systems with graphics adapters that support the Windows Display Driver Model (WDDM) with <a href="https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development" data-raw-source="[features new for Windows 7](../what-s-new-in-driver-development.md)">features new for Windows 7</a>, the default is DC_ASPECTRATIOCENTEREDMAX.</p></td>
+<p>Currently, on tablet systems, the default is stretched. On non-tablet systems with graphics adapters that support the <a href="windows-vista-display-driver-model-design-guide.md" data-raw-source="[Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md)">Windows Display Driver Model (WDDM)</a>, the default is defined by the driver. On non-tablet systems with graphics adapters that support the Windows Display Driver Model (WDDM) with <a href="/windows-hardware/drivers/what-s-new-in-driver-development" data-raw-source="[features new for Windows 7](../what-s-new-in-driver-development.md)">features new for Windows 7</a>, the default is DC_ASPECTRATIOCENTEREDMAX.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DatabaseValue</p></td>
@@ -370,6 +370,4 @@ Microsoft DirectX 9L and earlier runtimes require that applications always call 
  
 
 By using this information in combination with the preceding scaling tables, you can determine the expected scaling from a DirectX application.
-
- 
 

@@ -88,7 +88,7 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 <p>A value of Message1 causes a system-supplied message to be displayed, and sets the <strong>CreateFileName</strong> entry value to AUTO.</p>
 <p>Applies to both scanners and cameras that require manual installation.</p></td>
 <td><p>Optional</p>
-<p>Note that for Plug and Play devices, <strong>PortSelect</strong> is ignored, but the device still must have the <strong>CreateFileName</strong> entry value set to AUTO in order for WIA to load the device. Use the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive" data-raw-source="[&lt;strong&gt;INF AddReg Directive&lt;/strong&gt;](../install/inf-addreg-directive.md)"><strong>INF AddReg Directive</strong></a> to add this entry to the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section" data-raw-source="[&lt;strong&gt;INF DDInstall Section&lt;/strong&gt;](../install/inf-ddinstall-section.md)"><strong>INF DDInstall Section</strong></a> of the device's INF file.</p></td>
+<p>Note that for Plug and Play devices, <strong>PortSelect</strong> is ignored, but the device still must have the <strong>CreateFileName</strong> entry value set to AUTO in order for WIA to load the device. Use the <a href="/windows-hardware/drivers/install/inf-addreg-directive" data-raw-source="[&lt;strong&gt;INF AddReg Directive&lt;/strong&gt;](../install/inf-addreg-directive.md)"><strong>INF AddReg Directive</strong></a> to add this entry to the <a href="/windows-hardware/drivers/install/inf-ddinstall-section" data-raw-source="[&lt;strong&gt;INF DDInstall Section&lt;/strong&gt;](../install/inf-ddinstall-section.md)"><strong>INF DDInstall Section</strong></a> of the device's INF file.</p></td>
 </tr>
 </tbody>
 </table>
@@ -300,6 +300,4 @@ The user interface (UI) entries are required only if the vendor supplies a custo
 **Remarks**
 
 When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](/previous-versions/gg463179(v=msdn.10)) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.
-
- 
 
