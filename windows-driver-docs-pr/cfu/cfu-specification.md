@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) Protocol Specification
 description: This specification describes a generic HID protocol to update firmware for components without interrupting the device operation during a download.
-ms.date: 07/24/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -93,9 +93,9 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.1-3 GET_FIRMWARE_VERSION Response - Header Bits](#table-51-3-get_firmware_version-response--header-bits)
 
-[Table - GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](#table---get_firmware_version-response---component-version-and-properties-layout)
+[Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](#table-51-4-get_firmware_version-response---component-version-and-properties-layout)
 
-[Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites](#table-51-4-get_firmware_version-response---component-version-and-properties-bites)
+[Table 5.1-5 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites](#table-51-5-get_firmware_version-response---component-version-and-properties-bites)
 
 [Table 5.2-1 FIRMWARE_UPDATE_OFFER Command Layout](#table-52-1-firmware_update_offer-command-layout)
 
@@ -123,11 +123,11 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.2-13 FIRMWARE\_UPDATE\_OFFER Response RR Code Values](#table-52-13-firmware_update_offer-response-rr-code-values)
 
-[Table - FIRMWARE_UPDATE_OFFER Response Status Layout](#table---firmware_update_offer-response-status-layout)
+[Table 5.2-14 FIRMWARE_UPDATE_OFFER Response Status Layout](#table-52-14-firmware_update_offer-response-status-layout)
 
-[Table 5.2-14 FIRMWARE_UPDATE_OFFER Response - Status Bits](#table-52-14-firmware_update_offer-response--status-bits)
+[Table 5.2-15 FIRMWARE_UPDATE_OFFER Response - Status Bits](#table-52-15-firmware_update_offer-response--status-bits)
 
-[Table 5.2-15 FIRMWARE_UPDATE_OFFER Response Status Values](#table-52-15-firmware_update_offer-response-status-values)
+[Table 5.2-16 FIRMWARE_UPDATE_OFFER Response Status Values](#table-52-16-firmware_update_offer-response-status-values)
 
 [Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout](#table-53-1-firmware_update_offer---information-command-layout)
 
@@ -165,17 +165,17 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.4-6 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response - Token Layout](#table-54-6-firmware_update_offer--offer-command-packet-response---token-layout)
 
-[Table - FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits](#table---firmware_update_offer---offer-command-response---token-bits)
+[Table 5.4-7 FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits](#table-54-7-firmware_update_offer---offer-command-response---token-bits)
 
-[Table 5.4-7 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout](#table-54-7-firmware_update_offer---offer-information-packet-response-rr-layout)
+[Table 5.4-8 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout](#table-54-8-firmware_update_offer---offer-information-packet-response-rr-layout)
 
-[Table 5.4-8 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code](#table-54-8-firmware_update_offer--offer-command-response---rr-code)
+[Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code](#table-54-9-firmware_update_offer--offer-command-response---rr-code)
 
-[Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values](#table-54-9-firmware_update_offer--offer-command-packet---rr-code-values)
+[Table 5.4-10 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values](#table-54-10-firmware_update_offer--offer-command-packet---rr-code-values)
 
-[Table 5.4-10 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout](#table-54-10-firmware_update_offer---offer-command-packet-response-status-layout)
+[Table 5.4-11 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout](#table-54-11-firmware_update_offer---offer-command-packet-response-status-layout)
 
-[Table 5.4-11 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code](#table-54-11-firmware_update_offer--offer-command-packet-response-rr-code)
+[Table 5.4-12 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code](#table-54-12-firmware_update_offer--offer-command-packet-response-rr-code)
 
 [Table 5.5-1 FIRMWARE_UPDATE_CONTENT Command Layout](#table-55-1-firmware_update_content-command-layout)
 
@@ -191,15 +191,15 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.5-7 FIRMWARE_UPDATE_CONTENT Command Response Layout](#table-55-7-firmware_update_content-command-response-layout)
 
-[Table - FIRMWARE_UPDATE_CONTENT Response - Sequence Number](#table---firmware_update_content-response---sequence-number)
+[Table 5.5-8 FIRMWARE_UPDATE_CONTENT Response - Sequence Number](#table-55-8-firmware_update_content-response---sequence-number)
 
-[Table 5.5-8 FIRMWARE_UPDATE_CONTENT - Command - Response Bits](#table-55-8-firmware_update_content---command---response-bits)
+[Table 5.5-9 FIRMWARE_UPDATE_CONTENT - Command - Response Bits](#table-55-9-firmware_update_content---command---response-bits)
 
-[Table 5.5-9 FIRMWARE_UPDATE_CONTENT Response Status Layout](#table-55-9-firmware_update_content-response-status-layout)
+[Table 5.5-10 FIRMWARE_UPDATE_CONTENT Response Status Layout](#table-55-10-firmware_update_content-response-status-layout)
 
-[Table 5.5-10 FIRMWARE_UPDATE_OFFER - Response - Status Bits](#table-55-10-firmware_update_offer---response---status-bits)
+[Table 5.5-11 FIRMWARE_UPDATE_OFFER - Response - Status Bits](#table-55-11-firmware_update_offer---response---status-bits)
 
-[Table 5.5-11 FIRMWARE_UPDATE_OFFER- Response - Status Code Values](#table-55-11-firmware_update_offer--response---status-code-values)
+[Table 5.5-12 FIRMWARE_UPDATE_OFFER- Response - Status Code Values](#table-55-12-firmware_update_offer--response---status-code-values)
 
 ## 1 Introduction
 
@@ -441,13 +441,13 @@ The header for the response provides the following information.
 
 For each component, two DWORDs are used to describe the properties of the component up to 7 components. If the component count in the header is less than 7, the unused DWORDS at the end of the response must be set to 0.
 
-###### Table - GET_FIRMWARE_VERSION Response - Component Version and Properties Layout
+###### Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Layout
 
 ![GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](images/get-firmware-version-response-component-version-and-properties-layout.png)
 
 Each component specific information is described in two DWORDs as follows:
 
-###### Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites
+###### Table 5.1-5 GET_FIRMWARE_VERSION Response - Component Version and Properties Bites
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -595,22 +595,22 @@ The possible values for the RR Code byte are described in this table.
 
 ##### 5.2.2.4 Status
 
-###### Table - FIRMWARE_UPDATE_OFFER Response Status Layout
+###### Table 5.2-14 FIRMWARE_UPDATE_OFFER Response Status Layout
 
 ![FIRMWARE_UPDATE_OFFER Response Status Layout](images/firmware-update-offer-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
-###### Table 5.2-14 FIRMWARE_UPDATE_OFFER Response – Status Bits
+###### Table 5.2-15 FIRMWARE_UPDATE_OFFER Response – Status Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
-| 0 | Status | 8 | This value indicates the component's decision to accept, pend, skip, or reject the offer. The component provides the reason the in the RR Code field value. For a Status to RR Code mapping see Table 5.2-15. |
+| 0 | Status | 8 | This value indicates the component's decision to accept, pend, skip, or reject the offer. The component provides the reason the in the RR Code field value. For a Status to RR Code mapping see Table 5.2-16. |
 | 8 | Reserved | 24 | Reserved. Do not use. |
 
 The possible values for the Status byte are described in this table.
 
-###### Table 5.2-15 FIRMWARE_UPDATE_OFFER Response Status Values
+###### Table 5.2-16 FIRMWARE_UPDATE_OFFER Response Status Values
 
 | Status | Name | Description |
 |--|--|--|
@@ -810,7 +810,7 @@ The FIRMWARE\_UPDATE\_OFFER - Offer Command response from the device may not be 
 
 The bits of the Token byte are described in this table.
 
-###### Table - FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits
+###### Table 5.4-7 FIRMWARE_UPDATE_OFFER - Offer Command Response - Token Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -825,22 +825,22 @@ Reserved. Do not use.
 
 ##### 5.4.2.3 Reject Reason
 
-###### Table 5.4-7 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout
+###### Table 5.4-8 FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout
 
 ![FIRMWARE_UPDATE_OFFER - Offer Information Packet Response RR Layout](images/firmware-update-offer-offer-information-packet-response-rr-layout.png)
 
 The bits of the Reject Reason byte are described in this table.
 
-###### Table 5.4-8 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code
+###### Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Response - RR Code
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
-| 0 | RR Code | 8 | This value depends on the Status field. For possible RR Code values, see Table 5.4-9. |
+| 0 | RR Code | 8 | This value depends on the Status field. For possible RR Code values, see Table 5.4-10. |
 | 8 | Reserved | 24 | Reserved. Do not use. |
 
 The possible values for the RR Code byte are described in this table.
 
-###### Table 5.4-9 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values
+###### Table 5.4-10 FIRMWARE_UPDATE_OFFER- Offer Command Packet - RR Code Values
 
 | RR Code | Name | Description |
 |--|--|--|
@@ -853,13 +853,13 @@ The possible values for the RR Code byte are described in this table.
 
 ##### 5.4.2.4 Status
 
-###### Table 5.4-10 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout
+###### Table 5.4-11 FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout
 
 ![FIRMWARE_UPDATE_OFFER - Offer Command Packet Response Status Layout](images/firmware-update-offer-offer-command-packet-response-status-layout.png)
 
 The bits of the Status byte are described in this table.
 
-###### Table 5.4-11 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code
+###### Table 5.4-12 FIRMWARE_UPDATE_OFFER- Offer Command Packet Response RR Code
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -928,13 +928,13 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Data are described in this table.
 
 ##### 5.5.2.1 Sequence Number
 
-###### Table - FIRMWARE_UPDATE_CONTENT Response - Sequence Number
+###### Table 5.5-8 FIRMWARE_UPDATE_CONTENT Response - Sequence Number
 
 ![FIRMWARE_UPDATE_CONTENT Response - Sequence Number](images/firmware-update-content-response-sequence-number.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this table.
 
-###### Table 5.5-8 FIRMWARE_UPDATE_CONTENT - Command - Response Bits
+###### Table 5.5-9 FIRMWARE_UPDATE_CONTENT - Command - Response Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -943,22 +943,22 @@ The bits of the FIRMWARE\_UPDATE\_CONTENT Response (3-0) are described in this t
 
 ##### 5.5.2.2 Status
 
-###### Table 5.5-9 FIRMWARE_UPDATE_CONTENT Response Status Layout
+###### Table 5.5-10 FIRMWARE_UPDATE_CONTENT Response Status Layout
 
 ![FIRMWARE_UPDATE_CONTENT Response Status Layout](images/firmware-update-content-response-status-layout.png)
 
 The bits of the FIRMWARE\_UPDATE\_CONTENT Response (7-4) are described in this table.
 
-###### Table 5.5-10 FIRMWARE_UPDATE_OFFER - Response - Status Bits
+###### Table 5.5-11 FIRMWARE_UPDATE_OFFER - Response - Status Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
-| 0 | Status | 8 | This value indicates the status code returned by the device component. This is not a bitwise and can be one of the values described in Table 5.5-11. |
+| 0 | Status | 8 | This value indicates the status code returned by the device component. This is not a bitwise and can be one of the values described in Table 5.5-12. |
 | 8 | Reserved | 24 | Reserved. Do not use. |
 
 The possible values for the Status byte are described in this table.
 
-###### Table 5.5-11 FIRMWARE_UPDATE_OFFER- Response - Status Code Values
+###### Table 5.5-12 FIRMWARE_UPDATE_OFFER- Response - Status Code Values
 
 | Flag | Name | Description |
 |--|--|--|
