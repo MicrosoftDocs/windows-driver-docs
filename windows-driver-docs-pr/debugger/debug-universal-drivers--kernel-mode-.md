@@ -420,7 +420,7 @@ To install the driver on the target system, perform the following steps.
     `%windir%\inf\setupapi.dev.log`
     >
      
-    For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+    For more detailed instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 
     The INF file contains the hardware ID for installing the *tabletaudiosample.sys*. For the Syvad sample, the hardware ID is:
     `root\sysvad_TabletAudioSample`
@@ -2108,4 +2108,3 @@ OSR  - <https://www.osr.com/>
 ## See Also
 
 [Getting Started with Windows Debugging](getting-started-with-windows-debugging.md) 
-

@@ -46,7 +46,7 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
    </tr>
    <tr class="even">
    <td><p><strong>Specify the partner (if any) that is allowed visibility into this request</strong></p></td>
-   <td><p>Enter a partner that you want to have read-only permissions to your driver and shipping label. Use this field when you want a partner to be aware of this shipping label request, such as when you publish a driver on their behalf. For more information, see <a href="https://docs.microsoft.com/previous-versions/mt786462(v=vs.85)" data-raw-source="[Publish a driver on behalf of a partner](/previous-versions/mt786462(v=vs.85))">Publish a driver on behalf of a partner</a>.</p></td>
+   <td><p>Enter a partner that you want to have read-only permissions to your driver and shipping label. Use this field when you want a partner to be aware of this shipping label request, such as when you publish a driver on their behalf. For more information, see <a href="/previous-versions/mt786462(v=vs.85)" data-raw-source="[Publish a driver on behalf of a partner](/previous-versions/mt786462(v=vs.85))">Publish a driver on behalf of a partner</a>.</p></td>
    </tr>
    <tr class="odd">
    <td><p><strong>Driver promotions</strong></p></td>
@@ -99,6 +99,4 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
    ![A screenshot of the two checkboxes you must select when submitting a driver for Windows 10 S](images/win-cloud-checkboxes.png)
 
 10. Select **Publish** to send your request to Windows Update. If you do not want to publish the shipping label right now, you can select **Save**. You can publish the shipping label later by either opening the shipping label and selecting **Publish**, or you can select **Publish all pending** from the hardware submission page. Note that selecting **Publish all pending** will publish all unpublished shipping labels.
-
- 
 

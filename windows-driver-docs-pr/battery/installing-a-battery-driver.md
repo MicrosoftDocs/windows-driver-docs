@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 A battery driver's INF file specifies information about the driver and the devices it controls. All battery devices are members of the Battery class and the battery class installer installs the driver.
 
-This section describes battery-specific entries in the INF file. For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+This section describes battery-specific entries in the INF file. For more information about creating and distributing INF files and installing drivers, see [Creating an INF File](../install/overview-of-inf-files.md) and [INF File Sections and Directives](../install/index.md).
 
 A battery driver's INF file includes the sections described below.
 
@@ -88,6 +88,4 @@ StartType      = 3 ;    SERVICE_DEMAND_START
 ErrorControl   = 1 ;    SERVICE_ERROR_NORMAL%
 ServiceBinary  = %12%\NewBatt.sys
 ```
-
- 
 
