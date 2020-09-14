@@ -126,7 +126,7 @@ Function and filter drivers do not handle this IRP; they pass it to the next low
 
 A bus driver that handles this request should check the WhichSpace parameter to ensure that it contains a value that the driver supports.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

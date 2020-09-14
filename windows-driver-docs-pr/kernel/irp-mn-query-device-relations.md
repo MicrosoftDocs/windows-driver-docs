@@ -82,7 +82,7 @@ A driver must reference the PDO of any device that it reports in this IRP ([**Ob
 
 A function or filter driver should be prepared to handle this IRP for a device any time after its [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine has completed for the device. Bus drivers should be prepared to handle a query for **BusRelations** immediately after a device is enumerated.
 
-For the general rules about handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md) see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+For the general rules about handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md) see [Plug and Play](./introduction-to-plug-and-play.md).
 
 The following subsections describe the specific actions for handling the various queries.
 
