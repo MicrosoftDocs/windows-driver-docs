@@ -29,7 +29,7 @@ To access device driver properties on Windows Server 2003, Windows XP, and Windo
 1.  Call [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) to retrieve a handle to the software key for a device instance. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to the device information set that contains the device information element for which to retrieve the global software key.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device information element for which to retrieve the global software key.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device information element for which to retrieve the global software key.
     -   Set *Scope* to DICS_FLAG_GLOBAL.
     -   Set *HwProfile* to zero.
     -   Set *KeyType* to DIREG_DRV, which configures **SetupDiOpenDevRegKey** to retrieve a handle to the software key for a device instance.

@@ -36,7 +36,7 @@ To retrieve a device property on Windows Server 2003, Windows XP, and Microsoft 
 1.  Call **SetupDiGetDeviceRegistryProperty** to retrieve the size, in bytes, of the property value. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to retrieve the requested property value.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to retrieve the requested property value.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to retrieve the requested property value.
     -   Set *Property* to an SPDRP_*Xxx* identifier. For a list of these identifiers and a description of the corresponding device properties, see the description of the *Property* parameter that is included with [**SetupDiSetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya).
     -   Set *PropertyRegDataType* to a pointer to a DWORD-typed variable.
     -   Set *PropertyBuffer* to **NULL**.
@@ -58,7 +58,7 @@ To set a device property on Windows Server 2003, Windows XP, and Windows 2000, c
 
 -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to set property value.
 
--   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to set property value.
+-   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to set property value.
 
 -   Set *Property* to an SPDRP_*Xxx* identifier.
 

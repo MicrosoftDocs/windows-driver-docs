@@ -40,10 +40,10 @@ The handle is opaque. Use the handle, for example, to identify the device inform
 The *DeviceInfoSet* might have an associated [device setup class](./overview-of-device-setup-classes.md). If so, call [**SetupDiGetDeviceInfoListClass**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinfolistclass) to get the class GUID.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies a device in the device information set.
+Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies a device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>*Device Installation Parameters*   
-These indirect parameters supply information for the device installation in an [**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure. If *DeviceInfoData* is not **NULL**, there are device installation parameters associated with the *DeviceInfoData*. If *DeviceInfoData* is **NULL**, the device installation parameters are associated with the *DeviceInfoSet*.
+These indirect parameters supply information for the device installation in an [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure. If *DeviceInfoData* is not **NULL**, there are device installation parameters associated with the *DeviceInfoData*. If *DeviceInfoData* is **NULL**, the device installation parameters are associated with the *DeviceInfoSet*.
 
 Call [**SetupDiGetDeviceInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa) to get the device installation parameters.
 

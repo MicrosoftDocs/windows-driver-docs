@@ -136,7 +136,7 @@ Requirements
 
 [**SP_DETECTDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_detectdevice_params)
 
-[**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
  
 

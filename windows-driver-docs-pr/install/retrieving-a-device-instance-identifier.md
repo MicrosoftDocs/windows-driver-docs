@@ -20,7 +20,7 @@ To retrieve a device instance identifier on Windows Server 2003, Windows XP, and
 1.  Call **SetupDiGetDeviceInstanceId** to retrieve the size, in bytes, of the device instance identifier. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to the device information set that contains the device information element for which to retrieve the requested device instance identifier.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device information element for which to retrieve a device instance identifier.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device information element for which to retrieve a device instance identifier.
     -   Set *DeviceInstanceId* to **NULL**.
     -   Set *DeviceInstanceIdSize* to zero.
     -   Set *RequiredSize* to a pointer to a DWORD-typed variable that receives the number of characters required to store the NULL-terminated device instance identifier.

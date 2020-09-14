@@ -58,7 +58,7 @@ After a device co-installer has saved the device instance ID of the parent devic
 
 2.  Call **RegQueryValueEx** to retrieve the device instance ID of the parent device that you saved in the entry value that you set in your device co-installer.
 
-After you retrieve the device instance ID of the parent device, call [**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure for the parent device.
+After you retrieve the device instance ID of the parent device, call [**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure for the parent device.
 
 ### <a href="" id="handling-a-chain-of-ancestors-for-a-nonpresent-device"></a> Handling a Chain of Ancestors for a Nonpresent Device
 

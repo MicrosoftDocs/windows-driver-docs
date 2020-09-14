@@ -41,7 +41,7 @@ To set the default interface for a device interface class, call [**SetupDiSetDev
 
 -   Set *DeviceInfoSet* to a handle to the device information set that contains the device interface to set as the default for a device interface class.
 
--   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that specifies the device interface in *DeviceInfoSet*.
+-   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure that specifies the device interface in *DeviceInfoSet*.
 
 ### <a href="" id="accessing-device-interface-class-properties-that-have-registry-entry-v"></a> Accessing Device Interface Class Properties That Have Registry Entry Values Under the Interface Class Registry Key
 
