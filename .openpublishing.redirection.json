@@ -7940,6 +7940,11 @@
                             "source_path":  "windows-driver-docs-pr/kernel/ntstatus-values.md",
                             "redirect_url":  "/windows-hardware/drivers/kernel/using-ntstatus-values",
                             "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/using-i-o-control-codes.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes",
+                            "redirect_document_id":  true
                         }
                      ]
 }
