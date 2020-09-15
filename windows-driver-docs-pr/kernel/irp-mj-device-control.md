@@ -41,7 +41,7 @@ On receipt of a device I/O control request, a higher-level driver usually passes
 
 On receipt of a device I/O control request, a device driver examines the I/O control code to determine how to satisfy the request. For most public I/O control codes, device drivers transfer a small amount of data to or from the buffer at **Irp-&gt;AssociatedIrp.SystemBuffer**.
 
-For general information about I/O control codes for **IRP\_MJ\_DEVICE\_CONTROL** or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md) requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes). See also [Device Type-Specific I/O Requests](./device-type-specific-i-o-requests.md).
+For general information about I/O control codes for **IRP\_MJ\_DEVICE\_CONTROL** or [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](irp-mj-internal-device-control.md) requests, see [Using I/O Control Codes](./introduction-to-i-o-control-codes.md). See also [Device Type-Specific I/O Requests](./device-type-specific-i-o-requests.md).
 
 Requirements
 ------------
@@ -63,6 +63,4 @@ Requirements
 
 
 [*DispatchDeviceControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
-
- 
 

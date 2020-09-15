@@ -137,7 +137,7 @@ One of the following:
 <a href="" id="irpsp--parameters-filesystemcontrol-fscontrolcode"></a>*IrpSp-&gt;Parameters.FileSystemControl.FsControlCode*  
 FSCTL function code to be passed to the file system or file system filter driver for the target volume. For use with IRP\_MN\_USER\_FS\_REQUEST only.
 
-For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
+For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation.
 
 <a href="" id="irpsp--parameters-filesystemcontrol-inputbufferlength"></a>*IrpSp-&gt;Parameters.FileSystemControl.InputBufferLength*  
 Size in bytes of the buffer pointed to by *Irp-&gt;AssociatedIrp.SystemBuffer*.
@@ -178,4 +178,3 @@ Pointer to the VPB for the volume to be verified.
 [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile)
-
