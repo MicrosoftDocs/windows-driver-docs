@@ -50,6 +50,7 @@ For information about the new features for KMDF drivers in Windows 10, see [Wha
 * Added new API [**WdfDeviceSetDeviceInterfaceStateEx**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetdeviceinterfacestateex)
 * Improved existing API [**WdfDeviceGetSystemPowerAction**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetsystempoweraction)
 * Added new API [**WdfPdoInitRemovePowerDependencyOnParent**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitremovepowerdependencyonparent)
+* [Introduction to the Directed Power Management Framework](../kernel/introduction-to-the-directed-power-management-framework.md)
 
 ## KMDF Version 1.29
 
