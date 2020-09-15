@@ -22,10 +22,9 @@ Another prerequisite to commit a submission is to complete the upload of the dri
 
 This method has the following syntax. See the following sections for usage examples and descriptions of the header and request body.
 
-
 | Method | Request URI                                                                                                    |
 |:-------|:---------------------------------------------------------------------------------------------------------------|
-| POST   | https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/commit |
+| POST   | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/commit`|
 
 The productId in the method is the product for which the submission is intended. The submssionID in the method is the submission which is being committed.
 

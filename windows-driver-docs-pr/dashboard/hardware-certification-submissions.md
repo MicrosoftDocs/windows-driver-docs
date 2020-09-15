@@ -13,7 +13,7 @@ The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hard
 
 To develop your device, download the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
-To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10. For previous operating systems, download the [Windows Hardware Certification Kit (Windows HCK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) or [Windows Logo Kit (WLK)](https://go.microsoft.com/fwlink/p/?LinkId=219237).
+To test your device, download the [Windows Hardware Lab Kit (Windows HLK)](/windows-hardware/test/hlk/windows-hardware-lab-kit) for Windows 10.
 
 After you develop and test your product, you can submit the results with a hardware submission.
 
