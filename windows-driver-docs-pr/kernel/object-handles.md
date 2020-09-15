@@ -66,7 +66,7 @@ Here is a list of object types that drivers typically use, and the routines that
 
 When the driver no longer requires access to the object, it calls the [**ZwClose**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose) routine to close the handle. This works for all of the object types listed in the table above.
 
-Most of the routines that provide handles take an [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_object_attributes) structure as a parameter. This structure can be used to specify attributes for the handle.
+Most of the routines that provide handles take an [**OBJECT\_ATTRIBUTES**](/windows/win32/api/ntdef/ns-ntdef-_object_attributes) structure as a parameter. This structure can be used to specify attributes for the handle.
 
 Drivers can specify the following handle attributes:
 
@@ -82,7 +82,7 @@ Drivers can specify the following handle attributes:
 
     This attribute specifies that the system performs all access checks on the handle. By default, the system bypasses all access checks on handles created in kernel mode.
 
-Use the [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes) routine to set these attributes in an **OBJECT\_ATTRIBUTES** structure.
+Use the [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes) routine to set these attributes in an **OBJECT\_ATTRIBUTES** structure.
 
 For information about validating object handles, see [Failure to Validate Object Handles](failure-to-validate-object-handles.md).
 
