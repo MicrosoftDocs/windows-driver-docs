@@ -13,7 +13,7 @@ To prepare your Windows Server 2008 (and below) hardware for certification, you 
 
 ## Creating a WQReady.xml file
 
-1. Download the [Windows Hardware Lab Kit (HLK)](windows-hardware/test/hlk/index). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
+1. Download the [Windows Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/index/). Be sure to test your driver or drivers with the appropriate certification kit on each operating system that you want certification for.
 
 2. Open the Winqual Submission Tool (WST) and click **Add**.
 
