@@ -21,7 +21,7 @@ Two types of APOs can be loaded during hardware offload playback.
 
 In Windows 8, the audio engine has been redesigned to work with audio streams that have been offloaded to a hardware device that is separate from, but connected to, the computer's main audio system. This is referred to as hardware offloading. For more information, see [Hardware-Offloaded Audio Processing](hardware-offloaded-audio-processing.md).
 
-The hardware offloading feature is primarily targeted for low power scenarios with larger buffer sizes. For example, during Low Power Audio (LPA) playback in the capable systems, the audio buffer size or periodicity is set to 1 second so that the CPU doesn’t wake up frequently to process small buffers (e.g., at every 10 milliseconds).
+The hardware offloading feature is primarily targeted for low power scenarios with larger buffer sizes. For example, during Low Power Audio (LPA) playback in the capable systems, the audio buffer size or periodicity may be set to 1 second so that the CPU doesn’t wake up frequently to process small buffers (e.g., at every 10 milliseconds).
 
 Implementing hardware offloaded APOs along with hardware offloaded audio processing provides the ability to maximize power efficiency.
 
