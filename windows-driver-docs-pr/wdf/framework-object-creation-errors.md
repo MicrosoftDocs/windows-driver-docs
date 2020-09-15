@@ -47,7 +47,5 @@ If the **Size** member of any framework-defined structure does not match the str
 
 If the framework cannot allocate memory for the new object, it can return STATUS\_INSUFFICIENT\_RESOURCES.
 
-Individual object creation methods might also return additional [NTSTATUS values](https://docs.microsoft.com/windows-hardware/drivers/kernel/ntstatus-values). For more information about each creation method's additional return values, see the method's reference page.
-
- 
+Individual object creation methods might also return additional [NTSTATUS values](../kernel/using-ntstatus-values.md). For more information about each creation method's additional return values, see the method's reference page.
 

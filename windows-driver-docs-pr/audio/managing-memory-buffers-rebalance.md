@@ -34,7 +34,7 @@ When portcls receives the close stream handle, portcls invokes the functions bel
 
 *release buffer*  
 
-[IMiniportWaveRTStream::FreeAudioBuffer]([IMiniportWaveRTStream::SetState](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536756(v=vs.85)) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
+[IMiniportWaveRTStream::FreeAudioBuffer](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-freeaudiobuffer) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
 
 Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by the driver during a SR/STOP operation (i.e., when SR/STOP arrives before the close handle request).
 
