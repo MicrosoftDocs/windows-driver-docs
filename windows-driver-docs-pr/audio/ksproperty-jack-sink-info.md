@@ -54,7 +54,7 @@ In Windows 7 and later operating systems, this property can be supported on any
 
  
 
-The property value (instance data) is a KSJACK\_SINK\_INFORMAITON structure.
+The property value (instance data) is a KSJACK\_SINK\_INFORMATION structure.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
