@@ -14,7 +14,7 @@ To retrieve the value of a device instance property on Windows Vista and later v
 1.  Call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to determine the data type and the size, in bytes, of the property value. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to retrieve a property.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to retrieve a property.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to retrieve a property.
     -   Set *PropertyKey* to a pointer to a [**DEVPROPKEY**](./devpropkey.md) structure that represents the property.
     -   Set *PropertyType* to a pointer to a [**DEVPROPTYPE**](/previous-versions/ff543546(v=vs.85))-typed variable.
     -   Set *PropertyBuffer* to **NULL**.

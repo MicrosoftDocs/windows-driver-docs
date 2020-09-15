@@ -57,7 +57,7 @@ The PnP manager calls any **EventCategoryTargetDeviceChange** notification callb
 
 If a file system is mounted on the device, it must undo any operations it did in response to the query-remove notification.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for detailed information about handling remove IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for detailed information about handling remove IRPs and for the general rules for handling all [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

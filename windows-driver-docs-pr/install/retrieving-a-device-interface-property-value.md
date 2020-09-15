@@ -14,7 +14,7 @@ Starting with Windows Vista, follow these steps to retrieve the value of a [devi
 1.  Call [**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to determine the data type and the size, in bytes, of the property value. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to a device information set that contains a device interface for which to retrieve a list of device interface property keys.
-    -   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that represents the device interface for which to retrieve a list of device property keys.
+    -   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure that represents the device interface for which to retrieve a list of device property keys.
     -   Set *PropertyKey* to a pointer to a [**DEVPROPKEY**](./devpropkey.md) structure that represents the property.
     -   Set *PropertyType* to a pointer to a [**DEVPROPKEY**](./devpropkey.md)-typed variable.
     -   Set *PropertyBuffer* to **NULL**.

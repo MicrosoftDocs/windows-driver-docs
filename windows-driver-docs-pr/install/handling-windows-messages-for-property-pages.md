@@ -56,7 +56,7 @@ The property sheet sends a PSN_APPLY notification message when the user clicks *
 
 When it receives the PSN_APPLY notification, the provider must do the following:
 
-1.  If it has not already done so, get a pointer to the device install parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure) for the device. This structure is available by calling [**SetupDiGetDeviceInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa), passing the saved *DeviceInfoSet* and *DeviceInfoData* that were passed in the area referenced by the **lParam** member of the PROPSHEETPAGE structure.
+1.  If it has not already done so, get a pointer to the device install parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure) for the device. This structure is available by calling [**SetupDiGetDeviceInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinstallparamsa), passing the saved *DeviceInfoSet* and *DeviceInfoData* that were passed in the area referenced by the **lParam** member of the PROPSHEETPAGE structure.
 
 2.  Ensure that the user's changes are valid.
 
@@ -64,7 +64,7 @@ When it receives the PSN_APPLY notification, the provider must do the following:
 
     However, if the provider can ensure that the changes do not require the device's drivers to be stopped and then restarted, it does not have to set this flag.
 
-4.  Call [**SetupDiSetDeviceInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) with the changed [**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure to set the new parameters.
+4.  Call [**SetupDiSetDeviceInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinstallparamsa) with the changed [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure to set the new parameters.
 
 ### <a href="" id="psn-reset-notifications"></a>PSN_RESET Notifications
 

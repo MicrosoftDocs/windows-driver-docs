@@ -31,7 +31,7 @@ To access device interface properties by using registry entry values on Windows 
 
 -   Set *DeviceInfoSet* to a pointer to a device information set that contains the device interface.
 
--   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that identifies the device interface.
+-   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure that identifies the device interface.
 
 -   Set *Reserved* to zero.
 
@@ -45,7 +45,7 @@ Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) functio
 
 ### <a href="" id="using-setupdienumdeviceinterfaces-to-retrieve-information-about-a-devi"></a> Using SetupDiEnumDeviceInterfaces to Retrieve Information About a Device Interface
 
-Another way to retrieve information about a device interface on Windows Server 2003, Windows XP, and Windows 2000 is by calling [**SetupDiEnumDeviceInterfaces**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to retrieve an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure for the interface. An SP_DEVICE_INTERFACE_DATA structure contains the following information:
+Another way to retrieve information about a device interface on Windows Server 2003, Windows XP, and Windows 2000 is by calling [**SetupDiEnumDeviceInterfaces**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to retrieve an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure for the interface. An SP_DEVICE_INTERFACE_DATA structure contains the following information:
 
 -   The **Flags** member indicates whether a device interface is active or removed, and whether the device is the default interface for the interface class.
 

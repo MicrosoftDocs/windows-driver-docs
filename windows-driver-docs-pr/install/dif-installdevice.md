@@ -55,10 +55,10 @@ After selecting the driver, registering any device co-installers, and registerin
 Supplies a handle to the [device information set](./device-information-sets.md) that contains the device to be installed.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure for the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure for the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None
@@ -102,7 +102,7 @@ If the installer returns a Win32 error code, Windows abandons the installation.
 
 If Windows cannot locate an INF file for a new device, it sends DIF_INSTALLDEVICE in an attempt to install a *null driver*. The default handler (**SetupDiInstallDevice** or is a non-PnP device (reported by [**IoReportDetectedDevice**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice)), In the latter case, Windows installs a null driver for the device.
 
-If this attempt fails, Windows sends DIF_INSTALLDEVICE again, this time with the DI_FLAGSEX_SETFAILEDINSTALL flag set in the [**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure. In this case, the default handler just sets the FAILEDINSTALL flag in the device's **ConfigFlags** registry value. If the DI_FLAGSEX_SETFAILEDINSTALL flag is set, class installers must return NO_ERROR or ERROR_DI_DO_DEFAULT and co-installers must return NO_ERROR.
+If this attempt fails, Windows sends DIF_INSTALLDEVICE again, this time with the DI_FLAGSEX_SETFAILEDINSTALL flag set in the [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure. In this case, the default handler just sets the FAILEDINSTALL flag in the device's **ConfigFlags** registry value. If the DI_FLAGSEX_SETFAILEDINSTALL flag is set, class installers must return NO_ERROR or ERROR_DI_DO_DEFAULT and co-installers must return NO_ERROR.
 
 For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
@@ -151,9 +151,9 @@ Requirements
 
 [**SetupDiInstallDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldevice)
 
-[**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
  
 

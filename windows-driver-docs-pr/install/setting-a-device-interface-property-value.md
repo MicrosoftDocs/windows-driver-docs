@@ -13,7 +13,7 @@ To set the value of a [device interface property](/previous-versions/ff541409(v=
 
 -   Set *DeviceInfoSet* to a handle to a device information set that contains the device interface for which to set a device interface property.
 
--   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_device_interface_data) structure that represents the device interface for which to set a device interface property.
+-   Set *DeviceInterfaceData* to a pointer to an [**SP_DEVICE_INTERFACE_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_data) structure that represents the device interface for which to set a device interface property.
 
 -   Set *PropertyKey* to a pointer to the [**DEVPROPKEY**](./devpropkey.md) structure that represents the property to set.
 

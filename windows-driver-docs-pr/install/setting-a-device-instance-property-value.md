@@ -13,7 +13,7 @@ To set the value of a device instance property on Windows Vista and later versio
 
 -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to set the property.
 
--   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to set the property.
+-   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to set the property.
 
 -   Set *PropertyKey* to a pointer to the [**DEVPROPKEY**](./devpropkey.md) structure that represents the property to set.
 

@@ -14,7 +14,7 @@ To determine which properties are set for a device instance on Windows Vista and
 1.  Call [**SetupDiGetDevicePropertyKeys**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) to determine how many properties are set for a device instance. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to retrieve a list of property keys.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to retrieve the list of property keys.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to retrieve the list of property keys.
     -   Set *PropertyKeyArray* to **NULL**.
     -   Set *PropertyKeyCount* to zero.
     -   Set *RequiredPropertyKeyCount* to a pointer to a DWORD-typed variable.

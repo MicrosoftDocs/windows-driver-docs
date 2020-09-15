@@ -21,7 +21,7 @@ Use the following guidelines to safely query and modify the attributes of device
 
     2.  Use [**SetupDiGetDeviceInterfaceDetail**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to retrieve details for the device interface.
 
-        The optional *DeviceInfoData* parameter will receive the [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) element for the device for which the interface is registered.
+        The optional *DeviceInfoData* parameter will receive the [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) element for the device for which the interface is registered.
 
     3.  Use persistent registry storage for the custom settings for a device interface class. To do this, use [**SetupDiCreateDeviceInterfaceRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinterfaceregkeya) (to create a new registry key) or [**SetupDiOpenDeviceInterfaceRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey) (to open an existing registry key).
 
