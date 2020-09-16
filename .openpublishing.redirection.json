@@ -1,6 +1,16 @@
 {
     "redirections":  [
         {
+            "source_path":  "/windows-hardware/drivers/network/offloading-ipsec-tasks.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/ipsec-offload-version-1.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "/windows-hardware/drivers/mobilebroadband/serviceinfo-xml-data-types.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-serviceinfo",
             "redirect_document_id":  false
