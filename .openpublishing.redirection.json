@@ -7950,6 +7950,16 @@
                             "source_path":  "windows-driver-docs-pr/devtest/reading-and-filtering-debugging-messages.md",
                             "redirect_url":  "/windows-hardware/drivers/debugger/reading-and-filtering-debugging-messages",
                             "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/managing-power-for-individual-devices.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/device-power-states",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/mutex-objects.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-mutex-objects",
+                            "redirect_document_id":  false
                         }
                      ]
 }
