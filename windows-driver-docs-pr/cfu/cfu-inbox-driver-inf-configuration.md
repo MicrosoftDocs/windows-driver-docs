@@ -1,6 +1,6 @@
 ---
-title: Component Firmware Update (CFU) inbox driver INF
-description: Component Firmware Update (CFU) inbox driver INF
+title: Component Firmware Update (CFU) inbox HIDSYS driver INF
+description: Component Firmware Update (CFU) inbox HIDSYS driver INF
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: windows-hardware
@@ -8,9 +8,9 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CFU) inbox driver INF
+# Component Firmware Update (CFU) inbox HIDSYS driver INF
 
-Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely update firmware for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, a sample CFU inbox driver INF file, and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
+Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely update firmware for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, a sample CFU inbox HIDSYS driver INF file for the inbox driver (HidSys.dll), and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
 
 ## Contents
 
@@ -18,7 +18,7 @@ Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely 
 
 - [Overview](#overview)
 
-- [Configure the CFU inbox driver INF](#configure-the-cfu-inbox-driver-inf)
+- [Configure the CFU inbox HIDSYS driver INF](#configure-the-cfu-inbox-driver-inf)
 
   - [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry)
 
@@ -38,7 +38,7 @@ Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely 
 
 - [Firmware update status](#firmware-update-status)
 
-- [Sample inbox driver INF file](#sample-inbox-driver-inf-file)
+- [Sample inbox HIDSYS driver INF file](#sample-inbox-driver-inf-file)
 
 - [Troubleshooting](#troubleshooting)
 
@@ -66,7 +66,7 @@ The following resources will help you learn about the Component Firmware Update 
 
 To update the firmware image for your device by using the CFU model, you should expect to meet the following requirements:
 
-- Provide a CFU inbox driver INF file. This file proves information to the CFU inbox driver that sends the firmware update to the device. We recommend that you customize the sample CFU inbox driver INF file to support your firmware update scenarios.
+- Provide a CFU inbox HIDSYS driver INF file. This file proves information to the CFU inbox HIDSYS driver (HidSys.dll) that sends the firmware update to the device. We recommend that you customize the sample CFU inbox HIDSYS driver INF file to support your firmware update scenarios.
 
 - Your device must ship with a firmware image that is compliant with the CFU protocol so that it can accept an update from the CFU driver.
 
