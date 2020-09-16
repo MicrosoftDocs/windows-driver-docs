@@ -34,7 +34,7 @@ Beginning with Windows Vista, the Windows operating system supports the followin
 
 -   Connection offload
 
-Starting in Windows 10, version 1912, Windows also supports UDP Segmentation Offload (USO).
+Starting in Windows 10, version 2004, Windows also supports UDP Segmentation Offload (USO).
 
 The TCP/IP transport that is provided beginning with Windows Vista supports TCP/IP offload services for both IPv4 and IPv6 packets.
 
