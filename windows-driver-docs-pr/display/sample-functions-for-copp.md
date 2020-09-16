@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-The sample COPP functions show how to implement COPP processing functionality. These sample functions map to the [motion compensation callback functions](motion-compensation-callbacks.md) defined in the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. You can implement each sample function and a corresponding COPP I/O control (IOCTL) request, and then use a motion-compensation code template and a video miniport driver template to complete the implementation. For more information, see [Example Code for DirectX VA Devices](example-code-for-directx-va-devices.md).
+The sample COPP functions show how to implement COPP processing functionality. These sample functions map to the [motion compensation callback functions](motion-compensation-callbacks.md) defined in the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. You can implement each sample function and a corresponding COPP I/O control (IOCTL) request, and then use a motion-compensation code template and a video miniport driver template to complete the implementation. For more information, see [Example Code for DirectX VA Devices](example-code-for-directx-va-devices.md).
 
 ### <span id="COPP_Sample_Functions"></span><span id="copp_sample_functions"></span><span id="COPP_SAMPLE_FUNCTIONS"></span>COPP Sample Functions
 
@@ -72,7 +72,7 @@ The sample COPP functions in the following table are called by using the COPP de
 
 ### <span id="Mapping_Sample_Functions_to_DD_MOTIONCOMPCALLBACKS"></span><span id="mapping_sample_functions_to_dd_motioncompcallbacks"></span><span id="MAPPING_SAMPLE_FUNCTIONS_TO_DD_MOTIONCOMPCALLBACKS"></span>Mapping Sample Functions to DD\_MOTIONCOMPCALLBACKS
 
-The sample functions in this section map to the motion compensation callback functions by using a COPP IOCTL, as follows; that is, each sample function is called within its respective COPP IOCTL, and each COPP IOCTL is passed to the [**EngDeviceIoControl**](/windows/desktop/api/winddi/nf-winddi-engdeviceiocontrol) function within its respective motion-compensation callback function.
+The sample functions in this section map to the motion compensation callback functions by using a COPP IOCTL, as follows; that is, each sample function is called within its respective COPP IOCTL, and each COPP IOCTL is passed to the [**EngDeviceIoControl**](/windows/win32/api/winddi/nf-winddi-engdeviceiocontrol) function within its respective motion-compensation callback function.
 
 <table>
 <colgroup>

@@ -17,7 +17,7 @@ Many [device properties](device-properties.md) have complex dependencies on othe
 
 Direct modification of reserved properties could invalidate device installation state. For example, if the [**DEVPKEY_Device_DeviceDesc**](./devpkey-device-devicedesc.md) is changed, system functionality (such as backup, driver rollback, and Windows Update) could break.
 
-The following properties are read-only and can never be set with [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw):
+The following properties are read-only and can never be set with [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw):
 
 -   [**DEVPKEY_Device_Address**](./devpkey-device-address.md)
 

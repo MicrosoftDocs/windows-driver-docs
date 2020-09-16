@@ -79,7 +79,7 @@ Typically, an *add-interface-section* contains only an [**INF AddReg directive**
 
 An *add-registry-section* referenced within an *add-interface-section* is specific to the instances for the device, driver, and interface. It might have a value entry defining a friendly name for the exported device interface instance so that still higher level components can refer to that interface by its friendly name in the user interface.
 
-An **HKR** specified in such an *add-registry-section* section designates the run-time accessible state registry key for a device interface.  The driver can access state stored in this registry key at runtime by calling [**IoOpenDeviceInterfaceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a HANDLE to the state registry key.  User mode components can query the state by calling [**CM_Open_Device_Interface_Key**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw).
+An **HKR** specified in such an *add-registry-section* section designates the run-time accessible state registry key for a device interface.  The driver can access state stored in this registry key at runtime by calling [**IoOpenDeviceInterfaceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) to retrieve a HANDLE to the state registry key.  User mode components can query the state by calling [**CM_Open_Device_Interface_Key**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_device_interface_keyw).
 
 Examples
 --------

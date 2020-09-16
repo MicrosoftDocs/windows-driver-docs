@@ -27,9 +27,9 @@ The unshaded boxes represent the components that the operating system supplies f
 
 Co-installers can be provided for a specific device (*device-specific co-installer*) or for a device setup class (*class co-installer*). SetupAPI calls a device-specific co-installer only when installing the device for which the co-installer is registered. The operating system and vendors can register zero or more device-specific co-installers for a device. SetupAPI calls a class co-installer when installing any device of the device setup class for which the co-installer is registered. The operating system and vendors can register one or more class co-installers for a device setup class. In addition, a class co-installer can be registered for one or more setup classes.
 
-Windows and [custom device installation applications](writing-a-device-installation-application.md) install devices by calling [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) with [device installation function codes](/previous-versions/ff541307(v=vs.85)) (DIF codes).
+Windows and [custom device installation applications](writing-a-device-installation-application.md) install devices by calling [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) with [device installation function codes](/previous-versions/ff541307(v=vs.85)) (DIF codes).
 
-During GUI-mode setup, the operating system calls [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) with DIF codes to detect non-PnP devices that are present in the system. An IHV would typically provide a co-installer to perform this action for non-PnP devices that the IHV releases.
+During GUI-mode setup, the operating system calls [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) with DIF codes to detect non-PnP devices that are present in the system. An IHV would typically provide a co-installer to perform this action for non-PnP devices that the IHV releases.
 
 For each DIF request, **SetupDiCallClassInstaller** calls any class co-installers registered for the device's setup class, any device co-installers registered for the specific device, and then the Class Installer supplied by the system for the device's setup class, if there is one.
 
@@ -37,7 +37,7 @@ Custom device installation applications must call **SetupDiCallClassInstaller** 
 
 Class co-installers are typically registered prior to device installation, and device-specific co-installers are registered as part of the device's installation. Class co-installers are therefore typically added to the co-installer list when it is first built and are called for all DIF requests during device installation.
 
-The operating system adds device-specific co-installers to the co-installer list after a [**DIF_REGISTER_COINSTALLERS**](./dif-register-coinstallers.md) request has been completed for the device (or [**SetupDiRegisterCoDeviceInstallers**](/windows/desktop/api/setupapi/nf-setupapi-setupdiregistercodeviceinstallers) has been called). Device-specific co-installers do not participate in the following DIF requests:
+The operating system adds device-specific co-installers to the co-installer list after a [**DIF_REGISTER_COINSTALLERS**](./dif-register-coinstallers.md) request has been completed for the device (or [**SetupDiRegisterCoDeviceInstallers**](/windows/win32/api/setupapi/nf-setupapi-setupdiregistercodeviceinstallers) has been called). Device-specific co-installers do not participate in the following DIF requests:
 
 [**DIF_ALLOW_INSTALL**](./dif-allow-install.md)
 
@@ -75,7 +75,7 @@ In the example illustrated by the previous figure, two class co-installers are r
 
 4.  After all registered co-installers have been called, **SetupDiCallClassInstaller** calls the system-supplied Class Installer, if there is one for the device's setup class. In this example, the class installer returns ERROR_DI_DO_DEFAULT, which is a typical return value for class installers.
 
-5.  **SetupDiCallClassInstaller** calls the default handler for the installation request, if there is one. DIF_INSTALLDEVICE has a default handler, [**SetupDiInstallDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldevice), which is part of SetupAPI.
+5.  **SetupDiCallClassInstaller** calls the default handler for the installation request, if there is one. DIF_INSTALLDEVICE has a default handler, [**SetupDiInstallDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiinstalldevice), which is part of SetupAPI.
 
 6.  **SetupDiCallClassInstaller** calls any co-installers that requested postprocessing. In this example, the second class co-installer requested postprocessing.
 

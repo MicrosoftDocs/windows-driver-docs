@@ -25,7 +25,7 @@ NDIS provides enhanced support for Management Instrumentation (WMI). For more in
 ## Related topics
 
 
-[**NDIS\_INTERFACE\_INFORMATION**](/windows/desktop/api/ifdef/ns-ifdef-ndis_interface_information)
+[**NDIS\_INTERFACE\_INFORMATION**](/windows/win32/api/ifdef/ns-ifdef-ndis_interface_information)
 
  
 

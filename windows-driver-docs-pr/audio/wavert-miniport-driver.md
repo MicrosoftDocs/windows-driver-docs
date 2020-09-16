@@ -37,7 +37,7 @@ Returns a pointer to a [**DEVICE\_DESCRIPTION**](/windows-hardware/drivers/ddi/w
 
 ### <span id="iminiportwavertstream"></span><span id="IMINIPORTWAVERTSTREAM"></span>IMiniportWaveRTStream
 
-The [IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream) interface inherits the methods from the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveRTStream provides the following additional methods:
+The [IMiniportWaveRTStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream) interface inherits the methods from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveRTStream provides the following additional methods:
 
 [**IMiniportWaveRTStream::AllocateAudioBuffer**](/previous-versions/windows/hardware/drivers/ff536744(v=vs.85))
 

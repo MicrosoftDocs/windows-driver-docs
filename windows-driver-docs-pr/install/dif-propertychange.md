@@ -65,7 +65,7 @@ Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-se
 There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_PROPCHANGE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_propchange_params) structure is associated with the *DeviceInfoData*.
+An [**SP_PROPCHANGE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_propchange_params) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
@@ -75,7 +75,7 @@ An [**SP_PROPCHANGE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_prop
 
 A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
 If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
@@ -89,13 +89,13 @@ If the class installer encounters an error, the installer should return an appro
 
 ### Default DIF Code Handler
 
-[**SetupDiChangeState**](/windows/desktop/api/setupapi/nf-setupapi-setupdichangestate)
+[**SetupDiChangeState**](/windows/win32/api/setupapi/nf-setupapi-setupdichangestate)
 
 ### Installer Operation
 
 In response to a DIF_PROPERTYCHANGE request an installer can participate in the property-change operation. The class installation parameters (SP_PROPCHANGE_PARAMS) indicate which change is taking place.
 
-A property change might require a system restart. For information about how to restart the system, see [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller).
+A property change might require a system restart. For information about how to restart the system, see [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller).
 
 When Windows sends a DIF_INSTALLDEVICE request to install a device for the first time, Windows starts the device but does not send a DIF_PROPERTYCHANGE request as part of the installation. If a custom installation operation must be performed when a device is started for the first time and whenever the device is subsequently restarted, an installer or a co-installer should handle the DIF_INSTALLDEVICE request that starts the device for the first time and a DIF_PROPERTYCHANGE request that indicates that the state change action is that the device is being started.
 
@@ -124,13 +124,13 @@ Requirements
 ## See also
 
 
-[**SetupDiChangeState**](/windows/desktop/api/setupapi/nf-setupapi-setupdichangestate)
+[**SetupDiChangeState**](/windows/win32/api/setupapi/nf-setupapi-setupdichangestate)
 
 [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_PROPCHANGE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_propchange_params)
+[**SP_PROPCHANGE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_propchange_params)
 
  
 

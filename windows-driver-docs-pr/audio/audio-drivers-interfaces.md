@@ -13,23 +13,23 @@ In Windows Vista and later Windows operating systems, digital signal processing 
 
 The following topics provide information about the interfaces and the methods that are exposed by the sAPOs.
 
-[IAudioMediaType](/windows/desktop/api/audiomediatype/nn-audiomediatype-iaudiomediatype)
+[IAudioMediaType](/windows/win32/api/audiomediatype/nn-audiomediatype-iaudiomediatype)
 
-[IAudioProcessingObject](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject)
+[IAudioProcessingObject](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject)
 
-[IAudioProcessingObjectConfiguration](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration)
+[IAudioProcessingObjectConfiguration](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration)
 
-[IAudioProcessingObjectRT](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt)
+[IAudioProcessingObjectRT](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt)
 
 [IAudioSystemEffects2](iaudiosystemeffects2.md)
 
 [IAudioSystemEffects](iaudiosystemeffects.md)
 
-[IAudioSystemEffectsCustomFormats](/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffectscustomformats)
+[IAudioSystemEffectsCustomFormats](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffectscustomformats)
 
 [IKeywordDetectorOemAdapter](ikeyworddetectoroemadapter.md)
 
-[IPropertyStore](/windows/desktop/api/propsys/nn-propsys-ipropertystore)
+[IPropertyStore](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 [Audio Processing Objects Utility Functions](/previous-versions/windows/hardware/drivers/ff536213(v=vs.85))
 

@@ -61,7 +61,7 @@ Optionally supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/set
 Device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) are associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
+An [**SP_ADDPROPERTYPAGE_DATA**](/windows/win32/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) structure is associated with the *DeviceInfoData*, if specified, or with the *DeviceInfoSet*.
 
 ### Installer Output
 
@@ -69,7 +69,7 @@ An [**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_n
 An installer can modify the device installation parameters.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) to supply custom pages.
+An installer can modify the [**SP_ADDPROPERTYPAGE_DATA**](/windows/win32/api/setupapi/ns-setupapi-_sp_newdevicewizard_data) to supply custom pages.
 
 ### Installer Return Value
 
@@ -131,7 +131,7 @@ Requirements
 ## See also
 
 
-[**SP_ADDPROPERTYPAGE_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_newdevicewizard_data)
+[**SP_ADDPROPERTYPAGE_DATA**](/windows/win32/api/setupapi/ns-setupapi-_sp_newdevicewizard_data)
 
 [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 

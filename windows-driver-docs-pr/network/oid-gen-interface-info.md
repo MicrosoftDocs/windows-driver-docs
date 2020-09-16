@@ -26,7 +26,7 @@ Remarks
 
 Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query is an [**NDIS\_INTERFACE\_INFORMATION**](/windows/desktop/api/ifdef/ns-ifdef-_ndis_interface_information) structure. This structure contains information that changes during the lifetime of the interface.
+If the query succeeds, the interface provider returns NDIS\_STATUS\_SUCCESS, and the result of the query is an [**NDIS\_INTERFACE\_INFORMATION**](/windows/win32/api/ifdef/ns-ifdef-_ndis_interface_information) structure. This structure contains information that changes during the lifetime of the interface.
 
 Requirements
 ------------
@@ -47,7 +47,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_INTERFACE\_INFORMATION**](/windows/desktop/api/ifdef/ns-ifdef-_ndis_interface_information)
+[**NDIS\_INTERFACE\_INFORMATION**](/windows/win32/api/ifdef/ns-ifdef-_ndis_interface_information)
 
 [NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 

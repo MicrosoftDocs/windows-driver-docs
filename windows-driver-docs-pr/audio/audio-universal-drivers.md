@@ -128,7 +128,7 @@ To implement an end user UI, use a Hardware Support App (HSA) for a Windows Univ
 
 ### Programmatically launching UWP Hardware Support Apps
 
-To programmatically launch a UWP Hardware Support App, based on a driver event (for example, when a new audio device is connected), use the Windows Shell APIs. The Windows 10 Shell APIs support a method for launching UWP UI based on resource activation, or directly via [IApplicationActivationManager](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication). You can find more details on automated launching for UWP applications in [Automate launching Windows 10 UWP apps](/windows/uwp/xbox-apps/automate-launching-uwp-apps#launch-activation).  
+To programmatically launch a UWP Hardware Support App, based on a driver event (for example, when a new audio device is connected), use the Windows Shell APIs. The Windows 10 Shell APIs support a method for launching UWP UI based on resource activation, or directly via [IApplicationActivationManager](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iapplicationactivationmanager-activateapplication). You can find more details on automated launching for UWP applications in [Automate launching Windows 10 UWP apps](/windows/uwp/xbox-apps/automate-launching-uwp-apps#launch-activation).  
 
 ### APO and device driver vendor use of the AudioModules API
 

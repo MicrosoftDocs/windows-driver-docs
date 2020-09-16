@@ -20,9 +20,9 @@ Interface for a user-mode synth
 
 Interface for a user-mode synth sink
 
-[IDirectMusicSynth](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynth)
+[IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth)
 
-[IDirectMusicSynthSink](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynthsink)
+[IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink)
 
  
 

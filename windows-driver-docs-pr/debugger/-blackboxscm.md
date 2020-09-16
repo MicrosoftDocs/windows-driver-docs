@@ -69,6 +69,6 @@ For more information about SCM, see [Service Control Manager](/windows/desktop/S
 
 ### <span id="Additional_Information"></span>Additional Information
 
-dwControl values are defined in winsvc.h and documented as parameters to [LPHANDLER_FUNCTION_EX callback function](/windows/desktop/api/winsvc/nc-winsvc-lphandler_function_ex#parameters).
+dwControl values are defined in winsvc.h and documented as parameters to [LPHANDLER_FUNCTION_EX callback function](/windows/win32/api/winsvc/nc-winsvc-lphandler_function_ex#parameters).
 
  

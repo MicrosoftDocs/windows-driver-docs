@@ -42,7 +42,7 @@ Device installation applications *must not* do the following:
 
 -   Delete the installed driver files from the system during the uninstall operation, even if the hardware is removed.
 
--   Force any unnecessary system restarts. Restarts are generally not required for installing PnP devices or software applications. The *bRebootRequired* parameter of the [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) function indicates the need for a restart.
+-   Force any unnecessary system restarts. Restarts are generally not required for installing PnP devices or software applications. The *bRebootRequired* parameter of the [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) function indicates the need for a restart.
 
 -   Use RunOnce registry keys, because this requires a system restart.
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 **Exceptions and Breakpoints**
 
-The most common application errors are called exceptions. These include access violations, division-by-zero errors, numerical overflows, CLR exceptions, and many other kinds of errors. Applications can also cause breakpoint interrupts. These occur when Windows is unable to run the application (for example, when a necessary module cannot be loaded) or when a breakpoint is encountered. Breakpoints can be inserted into the code by a debugger, or invoked through a function such as [**DebugBreak**](/windows/desktop/api/debugapi/nf-debugapi-debugbreak).
+The most common application errors are called exceptions. These include access violations, division-by-zero errors, numerical overflows, CLR exceptions, and many other kinds of errors. Applications can also cause breakpoint interrupts. These occur when Windows is unable to run the application (for example, when a necessary module cannot be loaded) or when a breakpoint is encountered. Breakpoints can be inserted into the code by a debugger, or invoked through a function such as [**DebugBreak**](/windows/win32/api/debugapi/nf-debugapi-debugbreak).
 
 **Exception Handlers Precedence**
 

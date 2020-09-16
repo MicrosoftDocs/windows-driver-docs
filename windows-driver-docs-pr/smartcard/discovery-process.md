@@ -118,7 +118,7 @@ Starting fromWindows 8, if Plug and Play is unable to find a driver for the car
 ## <span id="Winscard_Discovery_Process"></span><span id="winscard_discovery_process"></span><span id="WINSCARD_DISCOVERY_PROCESS"></span>Winscard Discovery Process
 
 
-The Winscard (Winscard.dll) discovery process is used to associate a card in the system with an installed minidriver. The process is started when [**SCardListCards**](/windows/desktop/api/winscard/nf-winscard-scardlistcardsa) or [**SCardLocateCards**](/windows/desktop/api/winscard/nf-winscard-scardlocatecardsa) is called.
+The Winscard (Winscard.dll) discovery process is used to associate a card in the system with an installed minidriver. The process is started when [**SCardListCards**](/windows/win32/api/winscard/nf-winscard-scardlistcardsa) or [**SCardLocateCards**](/windows/win32/api/winscard/nf-winscard-scardlocatecardsa) is called.
 
 Beginning with Windows 7, the following describes the Winscard discovery process:
 

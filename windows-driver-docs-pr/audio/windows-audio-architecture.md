@@ -42,7 +42,7 @@ These older APIs are deprecated.
 These lower level APIs are recommended for audio streaming.
 
 -   [WASAPI](/windows/desktop/CoreAudio/wasapi) (High performance, but more complicated)
--   [IXAudio2](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2) (Typically used for games)
+-   [IXAudio2](/windows/win32/api/xaudio2/nn-xaudio2-ixaudio2) (Typically used for games)
 -   [MIDI](/windows/desktop/Multimedia/about-midi)
 
 This lower level API is recommended for enumeration.

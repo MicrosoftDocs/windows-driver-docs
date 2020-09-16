@@ -98,7 +98,7 @@ To read data from the device, the client driver can use the framework provided c
 ## Bulk transfer request example
 
 
-Consider an example scenario, where an application wants to read or write data to your device. The application calls Windows APIs to send such requests. In this example, the application opens a handle to the device by using the device interface GUID published by your driver in kernel mode. The application then calls [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) or [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) to initiate a read or write request. In that call, the application also specifies a buffer that contains the data to read or write and the length of that buffer.
+Consider an example scenario, where an application wants to read or write data to your device. The application calls Windows APIs to send such requests. In this example, the application opens a handle to the device by using the device interface GUID published by your driver in kernel mode. The application then calls [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) or [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) to initiate a read or write request. In that call, the application also specifies a buffer that contains the data to read or write and the length of that buffer.
 
 The I/O Manager receives the request, creates an I/O Request Packet (IRP), and forwards it to the client driver.
 

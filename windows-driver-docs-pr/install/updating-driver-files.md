@@ -36,12 +36,12 @@ Drivers are updated whenever one of the following occurs:
 
 Use the following guidelines when you write installation software and INF files that update existing drivers.
 
--   Installation software can call [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa), supplying an INF file and a hardware ID, to update drivers for devices that match the hardware ID.
+-   Installation software can call [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa), supplying an INF file and a hardware ID, to update drivers for devices that match the hardware ID.
 
     Starting with Windows Vista, installation software can also call one of the following to update drivers:
 
-    -   [**DiInstallDriver**](/windows/desktop/api/newdev/nf-newdev-diinstalldrivera), which pre-installs a driver and then installs the driver on devices present in the system that the driver supports.
-    -   [**DiInstallDevice**](/windows/desktop/api/newdev/nf-newdev-diinstalldevice), which installs a specified driver from the driver store on a specified device that is present in the system.
+    -   [**DiInstallDriver**](/windows/win32/api/newdev/nf-newdev-diinstalldrivera), which pre-installs a driver and then installs the driver on devices present in the system that the driver supports.
+    -   [**DiInstallDevice**](/windows/win32/api/newdev/nf-newdev-diinstalldevice), which installs a specified driver from the driver store on a specified device that is present in the system.
 
     For more information, see [Writing a Device Installation Application](writing-a-device-installation-application.md).
 

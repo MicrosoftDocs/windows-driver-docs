@@ -20,7 +20,7 @@ The topics that follow describe the driver entry point functions, categorizing t
 
 [Optional Graphics Driver Functions](optional-graphics-driver-functions.md)
 
-When a device driver returns an error, it should typically call the GDI [**EngSetLastError**](/windows/desktop/api/winddi/nf-winddi-engsetlasterror) function to report an extended error code. The application program can then retrieve the error code.
+When a device driver returns an error, it should typically call the GDI [**EngSetLastError**](/windows/win32/api/winddi/nf-winddi-engsetlasterror) function to report an extended error code. The application program can then retrieve the error code.
 
  
 

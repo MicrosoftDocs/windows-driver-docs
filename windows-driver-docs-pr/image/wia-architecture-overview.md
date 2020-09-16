@@ -50,7 +50,7 @@ Alternatively, a minidriver can perform such tasks itself. By taking advantage o
 
 WIA minidrivers are vendor-supplied, user-mode components that direct WIA property changes and commands to an imaging device. A minidriver implements the WIA DDI, which is called by the WIA service to communicate with the minidriver.
 
-A WIA minidriver implements the standard WIA minidriver interfaces. The minidriver communicates with the imaging device through a standard Microsoft Windows kernel-mode driver, such as the USB driver. The minidriver communicates with the kernel-mode driver by calling the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and **DeviceIoControl** Win32 functions (described in the Microsoft Windows SDK documentation).
+A WIA minidriver implements the standard WIA minidriver interfaces. The minidriver communicates with the imaging device through a standard Microsoft Windows kernel-mode driver, such as the USB driver. The minidriver communicates with the kernel-mode driver by calling the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and **DeviceIoControl** Win32 functions (described in the Microsoft Windows SDK documentation).
 
 An imaging application cannot make direct calls to the WIA minidriver. Only the WIA service is permitted to call the driver directly.
 

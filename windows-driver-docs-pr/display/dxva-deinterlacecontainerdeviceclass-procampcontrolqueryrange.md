@@ -89,7 +89,7 @@ For each ProcAmp property, the VMR queries the driver to determine the minimum, 
 
 For more information regarding ProcAmp properties, see [ProcAmp Properties](./procamp-properties.md).
 
-The sample **ProcAmpControlQueryRange** function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to the driver-supplied [**DdMoCompRender**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback that references the [**DD\_RENDERMOCOMPDATA**](/windows/desktop/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
+The sample **ProcAmpControlQueryRange** function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to the driver-supplied [**DdMoCompRender**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback that references the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
 
 <table>
 <colgroup>

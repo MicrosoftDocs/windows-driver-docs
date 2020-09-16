@@ -68,7 +68,7 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 #### Type of I/O plug-in performs
 
-- Uses [**BluetoothFindFirstDevice function**](/windows/desktop/api/bluetoothapis/nf-bluetoothapis-bluetoothfindfirstdevice) to find a Bluetooth device.
+- Uses [**BluetoothFindFirstDevice function**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothfindfirstdevice) to find a Bluetooth device.
 
 ## CDROM
 
@@ -80,13 +80,13 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 ### Type of I/O plug-in performs (CDROM)
 
-- Finds files on the CD-ROM and performs read operation using the Win32 [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) API.
+- Finds files on the CD-ROM and performs read operation using the Win32 [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) API.
 
 ### How to triage test failures (CDROM)
 
 - On the test computer, navigate to the CD/DVD drive in question and confirm you can access the contents of the drives.
 - The CD-Rom Simple I/O plug-in searches for files on CD/DVD to use to perform reads from. Ensure the CD/DVD has files encoded on disk.
-- This Simple I/O plug uses the Win32 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile), [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
+- This Simple I/O plug uses the Win32 [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile), [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
 
 ## Disk
 
@@ -152,7 +152,7 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 ### Type of I/O plug-in performs (Mobile broadband)
 
-- Uses [**IMbnInterface interface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbninterface) and calls GetHomeProvider, [**IMbnInterface::GetInterfaceCapability method**](/windows/desktop/api/mbnapi/nf-mbnapi-imbninterface-getinterfacecapability), and [**IMbnInterface::GetReadyState method**](/windows/desktop/api/mbnapi/nf-mbnapi-imbninterface-getreadystate) APIs to exercise the device.
+- Uses [**IMbnInterface interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbninterface) and calls GetHomeProvider, [**IMbnInterface::GetInterfaceCapability method**](/windows/win32/api/mbnapi/nf-mbnapi-imbninterface-getinterfacecapability), and [**IMbnInterface::GetReadyState method**](/windows/win32/api/mbnapi/nf-mbnapi-imbninterface-getreadystate) APIs to exercise the device.
 
 ### How to triage test failures (Mobile broadband)
 
@@ -207,13 +207,13 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 ### Type of I/O plug-in performs (Volume)
 
-- Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile) APIs to this file.
+- Creates a directory called WDTF\_Volume\_IO and creates a file called SimpleIO.tmp. The I/O is performed by calling [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) and [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile) APIs to this file.
 
 ### How to triage test failures (Volume)
 
 - On the test computer, navigate to the drive in question and confirm you can access the contents of the drive.
 - Attempt to save a file to the drive. Ensure you can save and access it readily.
-- This Simple I/O plug uses the Win32 [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/desktop/api/fileapi/nf-fileapi-writefile), [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
+- This Simple I/O plug uses the Win32 [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), [**WriteFile**](/windows/win32/api/fileapi/nf-fileapi-writefile), [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) functions. Error returned are most likely Win32 error codes from these APIs.
 
 ## Webcam
 

@@ -21,7 +21,7 @@ If you implement your own marshaling helper functions, remember that helper func
 |Topic|Description|
 |--|--|
 |[Time stamp helper](timestamp-helper.md)|The time stamp helper function is used by v2 sensor drivers, and it's used with the sensor device driver software interface (DDSI).|
-|[PropVariant helpers](propvariant-helpers.md)|The PropVariant helper functions are used by the v2 sensor drivers for manipulating the [PROPVARIANT](/windows/desktop/api/propidl/ns-propidl-tagpropvariant) structures associated with the sensors.|
+|[PropVariant helpers](propvariant-helpers.md)|The PropVariant helper functions are used by the v2 sensor drivers for manipulating the [PROPVARIANT](/windows/win32/api/propidl/ns-propidl-tagpropvariant) structures associated with the sensors.|
 |[Collection list helpers](collection-list-helpers.md)|The collection list helper functions are used by the v2 sensor drivers, for working with [SENSOR_COLLECTION_LIST](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.|
 |[Collection list serialization helpers](collection-list-serialization-helpers.md)|The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on [SENSOR_COLLECTION_LIST](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.|
 |[Collection list legacy helpers](collection-list-legacy-helpers.md)|The collection list legacy helper functions are used by v2 sensor drivers for interacting with [SENSOR_COLLECTION_LIST](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.|

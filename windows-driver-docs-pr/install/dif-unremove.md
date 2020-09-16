@@ -61,7 +61,7 @@ Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-se
 There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_UNREMOVEDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_unremovedevice_params) structure is associated with the *DeviceInfoData*. The **Scope** field must be set to DI_UNREMOVEDEVICE_CONFIGSPECIFIC and a hardware profile must be specified in the **HwProfile** field.
+An [**SP_UNREMOVEDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_unremovedevice_params) structure is associated with the *DeviceInfoData*. The **Scope** field must be set to DI_UNREMOVEDEVICE_CONFIGSPECIFIC and a hardware profile must be specified in the **HwProfile** field.
 
 ### Installer Output
 
@@ -71,7 +71,7 @@ An [**SP_UNREMOVEDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_
 
 A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
 If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
@@ -85,7 +85,7 @@ If the class installer encounters an error, the installer should return an appro
 
 ### Default DIF Code Handler
 
-[**SetupDiUnremoveDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiunremovedevice)
+[**SetupDiUnremoveDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiunremovedevice)
 
 ### Installer Operation
 
@@ -116,13 +116,13 @@ Requirements
 ## See also
 
 
-[**SetupDiUnremoveDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiunremovedevice)
+[**SetupDiUnremoveDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiunremovedevice)
 
 [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_UNREMOVEDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_unremovedevice_params)
+[**SP_UNREMOVEDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_unremovedevice_params)
 
  
 

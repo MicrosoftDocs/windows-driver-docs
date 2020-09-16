@@ -26,15 +26,15 @@ The DirectX runtime saves and restores floating-point state as required for the 
 
 -   [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb)
 
--   [**D3dGetDriverState**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverstate)
+-   [**D3dGetDriverState**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverstate)
 
 -   [**D3dValidateTextureStageState**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_validatetexturestagestatecb)
 
 For the following callback functions, a Direct3D-supported display driver must save floating-point state before performing floating-point operations, and restore it when the operations are complete:
 
--   [**D3dCreateSurfaceEx**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)
+-   [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)
 
--   [**D3dDestroyDDLocal**](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_destroyddlocal)
+-   [**D3dDestroyDDLocal**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_destroyddlocal)
 
 -   [D3DBuffer Callbacks](/windows-hardware/drivers/ddi/index)
 

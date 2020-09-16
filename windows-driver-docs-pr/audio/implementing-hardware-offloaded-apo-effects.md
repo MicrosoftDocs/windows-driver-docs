@@ -37,7 +37,7 @@ A hardware offloaded APO must follow the same basic requirements and design prin
 
 For hardware offloaded APOs, some additional consideration must be given to supported audio formats.
 
-Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
+Each APO implements [**IAudioProcessingObject::IsInputFormatSupported**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported) method which is used during audio graph building to determine the output audio format and whether any format conversion is needed.
 
 ```cpp
 HRESULT IsInputFormatSupported(
