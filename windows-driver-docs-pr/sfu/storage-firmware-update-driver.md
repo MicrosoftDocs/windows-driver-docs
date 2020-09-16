@@ -31,7 +31,7 @@ To use Windows 10 to update drive firmware, you must have supported drives. To e
 
 Contact your solution vendor for information about whether your hardware supports Windows updating the drive firmware.
 
-For additional details, see the COMPAT requirements for [NVMe: Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8](https://partner.microsoft.com/dashboard/collaborate/packages/7840).
+For additional details, see the Windows device COMPAT requirements for NVMe: [Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8](https://partner.microsoft.com/dashboard/collaborate/packages/7840).
 
 > [!NOTE]
 > The above link requires a valid account on the [Microsoft Collaborate](https://developer.microsoft.com/dashboard/collaborate/) portal.
@@ -346,3 +346,13 @@ StorFwUpdateOem.DeviceDesc = "Storage Firmware Update (StorageIHV3) 1"
 DiskName = "Storage Firmware Update Installation Disk"
 FwUpdateFriendlyName= "StorageIHV3 Firmware Update"
 ```
+
+## Deploy the extension INF and firmware packages through Windows Update
+
+Next, deploy the package through Windows Update using appropriate CHIDs.
+
+For information about deployment, see [Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
+
+## Additional resources
+
+[Identifiers for SCSI Devices](https://docs.microsoft.com/windows-hardware/drivers/install/identifiers-for-scsi-devices)
