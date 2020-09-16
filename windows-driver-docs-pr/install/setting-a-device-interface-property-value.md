@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Setting a Device Interface Property Value
 
 
-To set the value of a [device interface property](/previous-versions/ff541409(v=vs.85)) in Windows Vista and later versions of Windows, call [**SetupDiSetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw) and supply the following parameters values:
+To set the value of a [device interface property](/previous-versions/ff541409(v=vs.85)) in Windows Vista and later versions of Windows, call [**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw) and supply the following parameters values:
 
 -   Set *DeviceInfoSet* to a handle to a device information set that contains the device interface for which to set a device interface property.
 
@@ -27,7 +27,7 @@ To set the value of a [device interface property](/previous-versions/ff541409(v=
 
 -   Set *Flags* to zero.
 
-If the call to [**SetupDiSetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw) succeeds, **SetupDiSetDeviceInterfaceProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceInterfaceProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+If the call to [**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw) succeeds, **SetupDiSetDeviceInterfaceProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceInterfaceProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
 
  
 

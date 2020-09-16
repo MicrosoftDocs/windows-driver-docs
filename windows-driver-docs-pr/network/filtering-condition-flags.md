@@ -281,7 +281,7 @@ The filtering condition flags are each represented by a bit field. These flags a
 <p>0x00004000</p>
 </td>
 <td>
-<p>Indicates that the name of the peer machine that the application is expecting to connect to has been obtained by calling a function such as <a href="/windows/desktop/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname"><b>WSASetSocketPeerTargetName</b></a> and not by using the caching heuristics.</p>
+<p>Indicates that the name of the peer machine that the application is expecting to connect to has been obtained by calling a function such as <a href="/windows/win32/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname"><b>WSASetSocketPeerTargetName</b></a> and not by using the caching heuristics.</p>
 <p>This flag is applicable at the following filtering layers in Windows Server 2008 R2, Windows 7, and later versions of Windows:<dl>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V4</dd>
 <dd>FWPM_LAYER_ALE_AUTH_CONNECT_V6</dd>

@@ -65,7 +65,7 @@ If *DeviceInfoData* is not **NULL**, there are device installation parameters ([
 Of particular interest is the **DriverPath**, which contains the location of INF(s) to use when building the driver list.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_SELECTDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_selectdevice_params_a) structure is associated with the *DeviceInfoData* if *DeviceInfoData* is not **NULL**. Otherwise, the class installation parameters are associated with the device information set as a whole.
+An [**SP_SELECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_selectdevice_params_a) structure is associated with the *DeviceInfoData* if *DeviceInfoData* is not **NULL**. Otherwise, the class installation parameters are associated with the device information set as a whole.
 
 ### Installer Output
 
@@ -73,7 +73,7 @@ An [**SP_SELECTDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_se
 An installer can modify the device installation parameters. However, it should not modify the **DriverPath** field.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP_SELECTDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_selectdevice_params_a). For example, an installer might specify a title and/or instructions for Windows to use in the dialog box that asks the user to select a driver.
+An installer can modify the [**SP_SELECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_selectdevice_params_a). For example, an installer might specify a title and/or instructions for Windows to use in the dialog box that asks the user to select a driver.
 
 If an installer sets new select-device parameters, versus modifying parameters set by a previous installer, the installer must zero the fields that it does not set.
 
@@ -81,7 +81,7 @@ If an installer sets new select-device parameters, versus modifying parameters s
 
 If a co-installer does nothing for this DIF code, it returns NO_ERROR from its preprocessing pass. If a co-installer handles this DIF code, it should do so in its preprocessing pass and return NO_ERROR or a Win32 error code. By the time that a co-installer is called for postprocessing, the driver has already been selected.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
 If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
@@ -93,11 +93,11 @@ For more information about calling the default handler, see [Calling Default DIF
 
 If the class installer encounters an error, the installer should return an appropriate Win32 error code and **SetupDiCallClassInstaller** will not subsequently call the default handler.
 
-A class installer returns ERROR_DI_BAD_PATH if the **DriverPath** member of the corresponding [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure is not equal to **NULL**, but there are no valid drivers at the specified path location. This can occur if there are no drivers at the path location or if there are drivers, but the **Flags** member of the [**SP_DRVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_drvinstall_params) structure of each driver was set with the DN_BAD_DRIVER flag. In response to this error code, Windows displays an error to the user.
+A class installer returns ERROR_DI_BAD_PATH if the **DriverPath** member of the corresponding [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure is not equal to **NULL**, but there are no valid drivers at the specified path location. This can occur if there are no drivers at the path location or if there are drivers, but the **Flags** member of the [**SP_DRVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_drvinstall_params) structure of each driver was set with the DN_BAD_DRIVER flag. In response to this error code, Windows displays an error to the user.
 
 ### Default DIF Code Handler
 
-[**SetupDiSelectDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiselectdevice)
+[**SetupDiSelectDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiselectdevice)
 
 ### Installer Operation
 
@@ -109,11 +109,11 @@ In response to a DIF_SELECTDEVICE request, an installer performs any selection o
 
 -   Supply select strings that Windows will display in the selection UI.
 
-    An installer can supply select strings in the class installation parameters ([**SP_SELECTDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_selectdevice_params_a)). For example, an installer can modify the **Instructions** or the window header **Title**.
+    An installer can supply select strings in the class installation parameters ([**SP_SELECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_selectdevice_params_a)). For example, an installer can modify the **Instructions** or the window header **Title**.
 
     A class installer should not supply select strings if a co-installer already supplied select strings. The co-installer probably has more relevant information.
 
-    If an installer modifies the [**SP_SELECTDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_selectdevice_params_a), the installer must also set the DI_USECI_SELECTSTRINGS flag in the [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a).
+    If an installer modifies the [**SP_SELECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_selectdevice_params_a), the installer must also set the DI_USECI_SELECTSTRINGS flag in the [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a).
 
     If an installer successfully supplies select strings, Windows still has to call the default handler. Therefore, in this case, a co-installer returns NO_ERROR and a class installer returns ERROR_DI_DO_DEFAULT.
 
@@ -131,8 +131,8 @@ In response to a DIF_SELECTDEVICE request, an installer performs any selection o
 
     An installer marks bad drivers by following these steps:
 
-    1.  Build the driver list by calling [**SetupDiBuildDriverInfoList**](/windows/desktop/api/setupapi/nf-setupapi-setupdibuilddriverinfolist) with a *DriverType* of SPDIT_CLASSDRIVER.
-    2.  Get the information about the first driver in the list by calling [**SetupDiEnumDriverInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdriverinfoa) and [**SetupDiGetDriverInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinstallparamsa). If the driver is not appropriate for the device, set the DNF_BAD_DRIVER flag in the **Flags** field of the parameters. Apply the change to the parameters by calling [**SetupDiSetDriverInstallParams**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdriverinstallparamsa).
+    1.  Build the driver list by calling [**SetupDiBuildDriverInfoList**](/windows/win32/api/setupapi/nf-setupapi-setupdibuilddriverinfolist) with a *DriverType* of SPDIT_CLASSDRIVER.
+    2.  Get the information about the first driver in the list by calling [**SetupDiEnumDriverInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdriverinfoa) and [**SetupDiGetDriverInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdriverinstallparamsa). If the driver is not appropriate for the device, set the DNF_BAD_DRIVER flag in the **Flags** field of the parameters. Apply the change to the parameters by calling [**SetupDiSetDriverInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdriverinstallparamsa).
     3.  Repeat the previous step until you have processed all the drivers in the list. Make sure that you increment the *MemberIndex* parameter to **SetupDiEnumDriverInfo** as described in the reference page for that function.
 
     An installer might set the DNF_BAD_DRIVER flag for one or more drivers in the driver list, but an installer must not clear that flag.
@@ -174,13 +174,13 @@ Requirements
 
 [**DIF_NEWDEVICEWIZARD_SELECT**](dif-newdevicewizard-select.md)
 
-[**SetupDiSelectDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiselectdevice)
+[**SetupDiSelectDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiselectdevice)
 
 [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_SELECTDEVICE_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_selectdevice_params_a)
+[**SP_SELECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_selectdevice_params_a)
 
  
 

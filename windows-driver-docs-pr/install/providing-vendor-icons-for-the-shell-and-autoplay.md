@@ -70,7 +70,7 @@ The **Icons** and **NoMediaIcons** value entries are stored under the **Device P
 
 * `NoMediaIcons [REG_MULTI_SZ] = %SystemRoot%\system32\noicon.ico`
 
-To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey).
+To modify the **Device Parameters** key from user mode, use [**SetupDiCreateDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey).
 
 From kernel mode, use [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey).
 

@@ -26,7 +26,7 @@ The **KSPROPSETID\_AudioEffectsDiscovery** property set contains the following K
 
 [**KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST**](/previous-versions/windows/hardware/drivers/dn457706(v=vs.85))
 
-This property name is defined in the [**KSPROPERTY\_AUDIOEFFECTSDISCOVERY**](/windows/desktop/api/msapofxproxy/ne-msapofxproxy-ksproperty_audioeffectsdiscovery) enum.
+This property name is defined in the [**KSPROPERTY\_AUDIOEFFECTSDISCOVERY**](/windows/win32/api/msapofxproxy/ne-msapofxproxy-ksproperty_audioeffectsdiscovery) enum.
 
  
 

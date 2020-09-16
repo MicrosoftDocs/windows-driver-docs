@@ -17,7 +17,7 @@ New drivers should use the [cancel-safe IRP queue](cancel-safe-irp-queues.md) fr
 
 Drivers with device-dedicated threads or drivers that use executive worker threads, such as most system FSDs, are the most likely types of drivers to manage their own run-time internal queuing of IRPs in an interlocked queue. All PnP drivers, including WDM drivers, also must queue certain IRPs internally while making PnP and power state transitions.
 
-Usually, these drivers set up a doubly linked interlocked queue; every IRP contains a member of type [**LIST\_ENTRY**](/windows/desktop/api/ntdef/ns-ntdef-_list_entry), which a driver can use to doubly link IRPs that it is currently holding. A driver cannot requeue IRPs for retries if it sets up a singly linked interlocked queue.
+Usually, these drivers set up a doubly linked interlocked queue; every IRP contains a member of type [**LIST\_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-_list_entry), which a driver can use to doubly link IRPs that it is currently holding. A driver cannot requeue IRPs for retries if it sets up a singly linked interlocked queue.
 
 ### <a href="" id="ddk-using-an-interlocked-queue-kg"></a>
 

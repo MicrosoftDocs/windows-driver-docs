@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## When Sent
 
 
-The IRP\_MJ\_DEVICE\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. Normally this IRP is sent on behalf of a user-mode application that has called the Microsoft Win32 [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function or on behalf of a kernel-mode component that has called [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile).
+The IRP\_MJ\_DEVICE\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. Normally this IRP is sent on behalf of a user-mode application that has called the Microsoft Win32 [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function or on behalf of a kernel-mode component that has called [**ZwDeviceIoControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwdeviceiocontrolfile).
 
 ## Operation: File System Drivers
 

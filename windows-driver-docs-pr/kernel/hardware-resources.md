@@ -57,7 +57,7 @@ A resource list identifying resources currently in use by a device instance. Onl
 
 Device drivers are responsible for determining a PnP-compatible device's basic configuration, filtered configuration, and boot configuration, and for returning that information in response to IRPs sent by the PnP manager. (For more information, see [Adding a PnP Device to a Running System](adding-a-pnp-device-to-a-running-system.md).) Driver installation software can create override configurations, forced configurations, and, for non-PnP devices, boot configurations. The PnP manager maintains each device instance's allocated configuration.
 
-A priority is assigned to each configuration when it is created. If the PnP manager finds that a device instance has been assigned several logical configurations of the same type, it attempts to use the one with the highest priority first. If that configuration results in resource conflicts, it tries the configuration with the next lower priority. (For a list of configuration priorities, see [**CM\_Add\_Empty\_Log\_Conf**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_add_empty_log_conf).)
+A priority is assigned to each configuration when it is created. If the PnP manager finds that a device instance has been assigned several logical configurations of the same type, it attempts to use the one with the highest priority first. If that configuration results in resource conflicts, it tries the configuration with the next lower priority. (For a list of configuration priorities, see [**CM\_Add\_Empty\_Log\_Conf**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_add_empty_log_conf).)
 
  
 

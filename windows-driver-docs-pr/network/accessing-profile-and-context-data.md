@@ -36,9 +36,9 @@ The Native 802.11 IHV Extensions DLL specifies a custom UI through a [**DOT11EXT
 
 Access to the profile data is through the **Read** and **Write** methods of the [IPropertyBag COM interface](https://go.microsoft.com/fwlink/p/?linkid=56610) for a property named **IHV\_NOTIFICATION\_DATA**.
 
-The Native 802.11 IHV UI Extensions DLL accesses the [IPropertyBag COM interface](https://go.microsoft.com/fwlink/p/?linkid=56610) through the *IUnknown* pointer returned through the [**IObjectWithSite::SetSite**](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite) method. For more information, see [**IObjectWithSite**](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite).
+The Native 802.11 IHV UI Extensions DLL accesses the [IPropertyBag COM interface](https://go.microsoft.com/fwlink/p/?linkid=56610) through the *IUnknown* pointer returned through the [**IObjectWithSite::SetSite**](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) method. For more information, see [**IObjectWithSite**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite).
 
-As an alternative to the IPropertyBag COM interface, the Native 802.11 IHV UI Extensions DLL can access the **IHV\_PROFILE\_DATA** and **IHV\_NOTIFICATION\_DATA** properties through the [**GetProp**](/windows/desktop/api/winuser/nf-winuser-getpropa) Win32 function. In this situation, the DLL must use the handle of the parent window, as shown in the following example:
+As an alternative to the IPropertyBag COM interface, the Native 802.11 IHV UI Extensions DLL can access the **IHV\_PROFILE\_DATA** and **IHV\_NOTIFICATION\_DATA** properties through the [**GetProp**](/windows/win32/api/winuser/nf-winuser-getpropa) Win32 function. In this situation, the DLL must use the handle of the parent window, as shown in the following example:
 
 ```C++
 LPWSTR lpszBuffer = (LPWSTR) GetProp(GetParent(hwndDlg), L"IHV_PROFILE_DATA");

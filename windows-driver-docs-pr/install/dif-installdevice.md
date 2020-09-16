@@ -72,7 +72,7 @@ An installer can modify the device installation parameters for the *DeviceInfoDa
 
 A co-installer typically returns NO_ERROR or ERROR_DI_POSTPROCESSING_REQUIRED. A co-installer might also return a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
 If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
@@ -84,7 +84,7 @@ If the class installer encounters an error, the installer should return an appro
 
 ### Default DIF Code Handler
 
-[**SetupDiInstallDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldevice)
+[**SetupDiInstallDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiinstalldevice)
 
 ### Installer Operation
 
@@ -120,7 +120,7 @@ In the rare situation where the class installer must perform operations after al
 
 4.  Perform the operations that must be done after all default installation operations, except for starting the device, have completed.
 
-5.  Call [**SetupDiRestartDevices**](/windows/desktop/api/setupapi/nf-setupapi-setupdirestartdevices) to start the device.
+5.  Call [**SetupDiRestartDevices**](/windows/win32/api/setupapi/nf-setupapi-setupdirestartdevices) to start the device.
 
 6.  Return NO_ERROR if the class installer successfully completed the installation operation or return a Win32 error if the installation operation failed.
 
@@ -149,7 +149,7 @@ Requirements
 
 [**DIF_INSTALLDEVICEFILES**](dif-installdevicefiles.md)
 
-[**SetupDiInstallDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldevice)
+[**SetupDiInstallDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdiinstalldevice)
 
 [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 

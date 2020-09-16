@@ -206,7 +206,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><a href="how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md" data-raw-source="[Write a WinUSB application](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)">Write a WinUSB application</a></p>
 <p>WinUSB functions
     <ul>
-    <li><a href="/windows/desktop/api/winusb/" data-raw-source="[Winusb.h](/windows/desktop/api/winusb/)">Winusb.h</a>
+    <li><a href="/windows/win32/api/winusb/" data-raw-source="[Winusb.h](/windows/win32/api/winusb/)">Winusb.h</a>
     </li>
     <li><a href="/windows-hardware/drivers/ddi/usbioctl/" data-raw-source="[Usbioctl.h](/windows-hardware/drivers/ddi/usbioctl/)">Usbioctl.h</a>
     </li>

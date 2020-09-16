@@ -83,14 +83,14 @@ The Microsoft-provided WinUSB (kernel-mode driver) now supports transfers to and
 
 The user-mode DLL, Winusb.dll, exposes these [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) that a Windows desktop app can use to initiate such transfers.
 
--   [**WinUsb\_RegisterIsochBuffer**](/windows/desktop/api/winusb/nf-winusb-winusb_registerisochbuffer)
--   [**WinUsb\_UnregisterIsochBuffer**](/windows/desktop/api/winusb/nf-winusb-winusb_unregisterisochbuffer)
--   [**WinUsb\_WriteIsochPipeAsap**](/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipeasap)
--   [**WinUsb\_ReadIsochPipeAsap**](/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipeasap)
--   [**WinUsb\_WriteIsochPipe**](/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipe)
--   [**WinUsb\_ReadIsochPipe**](/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipe)
--   [**WinUsb\_GetCurrentFrameNumber**](/windows/desktop/api/winusb/nf-winusb-winusb_getcurrentframenumber)
--   [**WinUsb\_GetAdjustedFrameNumber**](/windows/desktop/api/winusb/nf-winusb-winusb_getadjustedframenumber)
+-   [**WinUsb\_RegisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_registerisochbuffer)
+-   [**WinUsb\_UnregisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_unregisterisochbuffer)
+-   [**WinUsb\_WriteIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipeasap)
+-   [**WinUsb\_ReadIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipeasap)
+-   [**WinUsb\_WriteIsochPipe**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipe)
+-   [**WinUsb\_ReadIsochPipe**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipe)
+-   [**WinUsb\_GetCurrentFrameNumber**](/windows/win32/api/winusb/nf-winusb-winusb_getcurrentframenumber)
+-   [**WinUsb\_GetAdjustedFrameNumber**](/windows/win32/api/winusb/nf-winusb-winusb_getadjustedframenumber)
 
 ## USB driver stack improvements
 

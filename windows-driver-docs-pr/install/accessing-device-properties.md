@@ -20,13 +20,13 @@ To safely access device properties, follow these guidelines:
 
 -   For user-mode applications, follow these steps:
 
-    1.  Starting with Windows Vista, use [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve device properties, and use [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) with DEVPKEY_Xxx property codes to set device properties.
+    1.  Starting with Windows Vista, use [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve device properties, and use [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) with DEVPKEY_Xxx property codes to set device properties.
 
         For more information about device instance properties on Windows Vista and later versions of Windows, see [Accessing Device Instance Properties (Windows Vista and Later)](accessing-device-instance-properties--windows-vista-and-later-.md).
 
         **Note**  Starting with Windows Vista, some device properties are reserved by the operating system. For more information, see [Modifying Device Properties](modifying-device-properties.md).
 
-    2.  On Windows 2000, Windows XP, and Windows Server 2003, use [**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve device properties, and use [**SetupDiSetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) with SPDRP_Xxx property codes to set device properties.
+    2.  On Windows 2000, Windows XP, and Windows Server 2003, use [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) to retrieve device properties, and use [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya) with SPDRP_Xxx property codes to set device properties.
 
         For more information about device instance properties on Windows 2000, Windows XP, and Windows Server 2003, see [Accessing Device Instance SPDRP_Xxx Properties](accessing-device-instance-spdrp-xxx-properties.md).
 

@@ -87,7 +87,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_CONNECTION_TYPE</strong>
 (PID = 11)</td>
 <td><p><strong>VT_UI4</strong></p>
-<p>Read only. <a href="/windows/desktop/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0002" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](/windows/desktop/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0002)"><strong>SensorConnectionType</strong></a> value that contains the current connection type.</p></td>
+<p>Read only. <a href="/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0002" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0002)"><strong>SensorConnectionType</strong></a> value that contains the current connection type.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_CURRENT_REPORT_INTERVAL"></span><span id="sensor_property_current_report_interval"></span>
@@ -164,7 +164,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_PERSISTENT_UNIQUE_ID</strong>
 (PID = 5)</td>
 <td><p><strong>VT_CLSID</strong></p>
-<p>Read only. Required, static. A <strong>GUID</strong> that identifies the sensor. This value must be unique for each sensor on a device, or across devices of the same model as enumerated on the computer. This property contains the same value obtained by calling <a href="/windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getid" data-raw-source="[&lt;strong&gt;ISensor::GetID&lt;/strong&gt;](/windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getid)"><strong>ISensor::GetID</strong></a> .</p></td>
+<p>Read only. Required, static. A <strong>GUID</strong> that identifies the sensor. This value must be unique for each sensor on a device, or across devices of the same model as enumerated on the computer. This property contains the same value obtained by calling <a href="/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getid" data-raw-source="[&lt;strong&gt;ISensor::GetID&lt;/strong&gt;](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getid)"><strong>ISensor::GetID</strong></a> .</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_RANGE_MAXIMUM"></span><span id="sensor_property_range_maximum"></span>
@@ -201,7 +201,7 @@ Values for properties designated as read/write can be specified by the client ap
 (PID = 3)</td>
 <td><p><strong>VT_UI4</strong></p>
 <p>Read only. Required.</p>
-<p><a href="/windows/desktop/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0001" data-raw-source="[&lt;strong&gt;SensorState&lt;/strong&gt;](/windows/desktop/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0001)"><strong>SensorState</strong></a> value that contains the current sensor state.</p>
+<p><a href="/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0001" data-raw-source="[&lt;strong&gt;SensorState&lt;/strong&gt;](/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0001)"><strong>SensorState</strong></a> value that contains the current sensor state.</p>
 <div class="alert">
 <strong>Note</strong>  To update this property, raise a state-changed event by calling <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange" data-raw-source="[&lt;strong&gt;ISensorClassExtension::PostStateChange&lt;/strong&gt;](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange)"><strong>ISensorClassExtension::PostStateChange</strong></a>.
 </div>
@@ -276,11 +276,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**GetProperties**](/windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getproperties)
+[**GetProperties**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getproperties)
 
-[**GetProperty**](/windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-getproperty)
+[**GetProperty**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getproperty)
 
 [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=275070)
 
-[**SetProperties**](/windows/desktop/api/sensorsapi/nf-sensorsapi-isensor-setproperties)
+[**SetProperties**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-setproperties)
 

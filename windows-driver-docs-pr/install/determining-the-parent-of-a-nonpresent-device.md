@@ -40,11 +40,11 @@ To save the parent/child relationship of a device, supply a *device co-installer
 
 ***<em>To save the device instance ID of the immediate parent in the registry</em>***
 
-1.  Call [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to obtain a device instance handle for the parent of the device.
+1.  Call [**CM_Get_Parent**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to obtain a device instance handle for the parent of the device.
 
-2.  Using the device instance handle for the parent device, call [**CM_Get_Device_ID**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to obtain the device instance ID for the parent device.
+2.  Using the device instance handle for the parent device, call [**CM_Get_Device_ID**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to obtain the device instance ID for the parent device.
 
-3.  Call [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) by using the DIREG_DEV flag to obtain a handle to the hardware registry key of the device.
+3.  Call [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) by using the DIREG_DEV flag to obtain a handle to the hardware registry key of the device.
 
 4.  Call **RegSetValueEx** to save the device instance ID of the parent device in a user-created entry value under the hardware registry key of the device.
 
@@ -58,7 +58,7 @@ After a device co-installer has saved the device instance ID of the parent devic
 
 2.  Call **RegQueryValueEx** to retrieve the device instance ID of the parent device that you saved in the entry value that you set in your device co-installer.
 
-After you retrieve the device instance ID of the parent device, call [**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure for the parent device.
+After you retrieve the device instance ID of the parent device, call [**SetupDiOpenDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure for the parent device.
 
 ### <a href="" id="handling-a-chain-of-ancestors-for-a-nonpresent-device"></a> Handling a Chain of Ancestors for a Nonpresent Device
 

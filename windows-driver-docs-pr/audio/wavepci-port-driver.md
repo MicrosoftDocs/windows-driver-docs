@@ -31,7 +31,7 @@ Creates a new master DMA channel object.
 [**IPortWavePci::Notify**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepci-notify)
 
 Notifies the port driver that the DMA controller has advanced to a new position in the audio stream.
-The WavePci port driver also exposes an [IPortWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepcistream) interface to each of the miniport driver's stream objects. IPortWavePciStream inherits the methods in base interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown). IPortWavePciStream provides the following additional methods:
+The WavePci port driver also exposes an [IPortWavePciStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepcistream) interface to each of the miniport driver's stream objects. IPortWavePciStream inherits the methods in base interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown). IPortWavePciStream provides the following additional methods:
 
 [**IPortWavePciStream::GetMapping**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-getmapping)
 

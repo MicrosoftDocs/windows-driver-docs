@@ -23,7 +23,7 @@ The USB function stack is conceptualized in this image:
 
 **Applications and Services**
 
-- All user-mode requests are sent to the Microsoft-provided kernel-mode class driver GenericUSBFn.sys. You can create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control codes (IOCTLs) as defined in [genericusbfnioctl.h](/windows/desktop/api/genericusbfnioctl/). For more information about these IOCTLs see [Communicating with GenericUSBFn.sys from a user-mode service](./user-mode-services-ufx.md)
+- All user-mode requests are sent to the Microsoft-provided kernel-mode class driver GenericUSBFn.sys. You can create a user-mode service that communicates with GenericUSBFn.sys by sending I/O control codes (IOCTLs) as defined in [genericusbfnioctl.h](/windows/win32/api/genericusbfnioctl/). For more information about these IOCTLs see [Communicating with GenericUSBFn.sys from a user-mode service](./user-mode-services-ufx.md)
 
 **USB function class driver**
 

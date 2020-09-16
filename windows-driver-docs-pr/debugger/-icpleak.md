@@ -56,7 +56,7 @@ For information about I/O completion ports, see *Microsoft Windows Internals* by
 Remarks
 -------
 
-This extension is useful when there is a leak in the I/O completion pool. I/O completion pool leaks can occur when a process is allocating I/O completion packets by calling [**PostQueuedCompletionStatus**](/windows/desktop/FileIO/postqueuedcompletionstatus), but is not calling [**GetQueuedCompletionStatus**](/windows/desktop/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) to free them, or when a process is queuing completion entries to a port, but there is no thread retrieving the entries. To detect a leak run the [**!poolused**](-poolused.md) extension and check the value of ICP pool tag. If pool use with the ICP tag is significant, a leak might have occurred.
+This extension is useful when there is a leak in the I/O completion pool. I/O completion pool leaks can occur when a process is allocating I/O completion packets by calling [**PostQueuedCompletionStatus**](/windows/desktop/FileIO/postqueuedcompletionstatus), but is not calling [**GetQueuedCompletionStatus**](/windows/win32/api/ioapiset/nf-ioapiset-getqueuedcompletionstatus) to free them, or when a process is queuing completion entries to a port, but there is no thread retrieving the entries. To detect a leak run the [**!poolused**](-poolused.md) extension and check the value of ICP pool tag. If pool use with the ICP tag is significant, a leak might have occurred.
 
 This extension works only if the system maintains type lists. If the *HandleFlag* is set and the system has many processes, this extension will take a long time to run.
 

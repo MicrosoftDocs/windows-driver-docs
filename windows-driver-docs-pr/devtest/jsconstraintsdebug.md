@@ -31,13 +31,13 @@ JSConstraintsDebug (JSConstraintsDebug.exe) is a command-line tool that provides
 
 The tool executes each of the following relevant entry point APIs on the JavaScript constraints of the targeted driver against the user provided print ticket:
 
-[**PTGetPrintCapabilities**](/windows/desktop/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
+[**PTGetPrintCapabilities**](/windows/win32/api/prntvpt/nf-prntvpt-ptgetprintcapabilities)
 
-[**PTConvertDevModeToPrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)
+[**PTConvertDevModeToPrintTicket**](/windows/win32/api/prntvpt/nf-prntvpt-ptconvertdevmodetoprintticket)
 
-[**TConvertPrintTicketToDevMode**](/windows/desktop/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)
+[**TConvertPrintTicketToDevMode**](/windows/win32/api/prntvpt/nf-prntvpt-ptconvertprinttickettodevmode)
 
-[**PTMergeAndValidatePrintTicket**](/windows/desktop/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)
+[**PTMergeAndValidatePrintTicket**](/windows/win32/api/prntvpt/nf-prntvpt-ptmergeandvalidateprintticket)
 
 During execution the tool will prompt for an appropriate IDE debugger such as Visual Studio. Upon selection, the constraints source code will be opened and stopped at a JavaScript debugger statement.
 

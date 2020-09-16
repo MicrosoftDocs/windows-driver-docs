@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 Memory corruption is a common driver problem. Driver errors can result in crashes long after the errors are made. The most common of these errors is accessing memory that has already been freed, and allocating *n* bytes and then accessing *n*+1 bytes.
 
-To detect memory corruption, Driver Verifier can allocate driver memory from a special pool and monitor that pool for incorrect access. Special pool support is provided for kernel-mode system-supplied routines, such as [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and also for the GDI system-supplied routines, such as [**EngAllocMem**](/windows/desktop/api/winddi/nf-winddi-engallocmem).
+To detect memory corruption, Driver Verifier can allocate driver memory from a special pool and monitor that pool for incorrect access. Special pool support is provided for kernel-mode system-supplied routines, such as [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and also for the GDI system-supplied routines, such as [**EngAllocMem**](/windows/win32/api/winddi/nf-winddi-engallocmem).
 
 Two alignments of the special pool are available. The **Verify End** alignment is better at detecting access overruns, and the **Verify Start** alignment is better at detecting access underruns. (Note that the vast majority of memory corruptions are due to overruns, not underruns.)
 

@@ -555,7 +555,7 @@ Your driver can use the following kernel-mode functions, MIB structures, and MIB
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="/windows/desktop/api/netioapi/ne-netioapi-_mib_if_table_level" data-raw-source="[&lt;strong&gt;MIB_IF_TABLE_LEVEL&lt;/strong&gt;](/windows/desktop/api/netioapi/ne-netioapi-_mib_if_table_level)"><strong>MIB_IF_TABLE_LEVEL</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/netioapi/ne-netioapi-_mib_if_table_level" data-raw-source="[&lt;strong&gt;MIB_IF_TABLE_LEVEL&lt;/strong&gt;](/windows/win32/api/netioapi/ne-netioapi-_mib_if_table_level)"><strong>MIB_IF_TABLE_LEVEL</strong></a></p></td>
 <td align="left"><p>Defines the level of interface information to retrieve.</p></td>
 </tr>
 <tr class="even">
@@ -582,7 +582,7 @@ Your driver can use the following kernel-mode functions, MIB structures, and MIB
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="/windows/desktop/api/nldef/ne-nldef-nl_address_type" data-raw-source="[&lt;strong&gt;NL_ADDRESS_TYPE&lt;/strong&gt;](/windows/desktop/api/nldef/ne-nldef-nl_address_type)"><strong>NL_ADDRESS_TYPE</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/nldef/ne-nldef-nl_address_type" data-raw-source="[&lt;strong&gt;NL_ADDRESS_TYPE&lt;/strong&gt;](/windows/win32/api/nldef/ne-nldef-nl_address_type)"><strong>NL_ADDRESS_TYPE</strong></a></p></td>
 <td align="left"><p>Specifies the IP address type of the network layer.</p></td>
 </tr>
 <tr class="even">
@@ -590,11 +590,11 @@ Your driver can use the following kernel-mode functions, MIB structures, and MIB
 <td align="left"><p>Defines the duplicate address detection (DAD) state.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="/windows/desktop/api/nldef/ne-nldef-_nl_link_local_address_behavior" data-raw-source="[&lt;strong&gt;NL_LINK_LOCAL_ADDRESS_BEHAVIOR&lt;/strong&gt;](/windows/desktop/api/nldef/ne-nldef-_nl_link_local_address_behavior)"><strong>NL_LINK_LOCAL_ADDRESS_BEHAVIOR</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/nldef/ne-nldef-_nl_link_local_address_behavior" data-raw-source="[&lt;strong&gt;NL_LINK_LOCAL_ADDRESS_BEHAVIOR&lt;/strong&gt;](/windows/win32/api/nldef/ne-nldef-_nl_link_local_address_behavior)"><strong>NL_LINK_LOCAL_ADDRESS_BEHAVIOR</strong></a></p></td>
 <td align="left"><p>Defines the link local address behavior.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="/windows/desktop/api/nldef/ne-nldef-_nl_neighbor_state" data-raw-source="[&lt;strong&gt;NL_NEIGHBOR_STATE&lt;/strong&gt;](/windows/desktop/api/nldef/ne-nldef-_nl_neighbor_state)"><strong>NL_NEIGHBOR_STATE</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/nldef/ne-nldef-_nl_neighbor_state" data-raw-source="[&lt;strong&gt;NL_NEIGHBOR_STATE&lt;/strong&gt;](/windows/win32/api/nldef/ne-nldef-_nl_neighbor_state)"><strong>NL_NEIGHBOR_STATE</strong></a></p></td>
 <td align="left"><p>Defines the state of a network layer neighbor IP address, as described in RFC 2461, section 7.3.2.</p></td>
 </tr>
 <tr class="odd">
@@ -602,15 +602,15 @@ Your driver can use the following kernel-mode functions, MIB structures, and MIB
 <td align="left"><p>Defines the origin of the prefix or network part of the IP address.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="/windows/desktop/api/nldef/ne-nldef-_nl_route_origin" data-raw-source="[&lt;strong&gt;NL_ROUTE_ORIGIN&lt;/strong&gt;](/windows/desktop/api/nldef/ne-nldef-_nl_route_origin)"><strong>NL_ROUTE_ORIGIN</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/nldef/ne-nldef-_nl_route_origin" data-raw-source="[&lt;strong&gt;NL_ROUTE_ORIGIN&lt;/strong&gt;](/windows/win32/api/nldef/ne-nldef-_nl_route_origin)"><strong>NL_ROUTE_ORIGIN</strong></a></p></td>
 <td align="left"><p>Defines the origin of the IP route.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="/windows/desktop/api/nldef/ne-nldef-nl_route_protocol" data-raw-source="[&lt;strong&gt;NL_ROUTE_PROTOCOL&lt;/strong&gt;](/windows/desktop/api/nldef/ne-nldef-nl_route_protocol)"><strong>NL_ROUTE_PROTOCOL</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/nldef/ne-nldef-nl_route_protocol" data-raw-source="[&lt;strong&gt;NL_ROUTE_PROTOCOL&lt;/strong&gt;](/windows/win32/api/nldef/ne-nldef-nl_route_protocol)"><strong>NL_ROUTE_PROTOCOL</strong></a></p></td>
 <td align="left"><p>Defines the routing mechanism that an IP route was added with, as described in RFC 4292.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="/windows/desktop/api/nldef/ne-nldef-_nl_router_discovery_behavior" data-raw-source="[&lt;strong&gt;NL_ROUTER_DISCOVERY_BEHAVIOR&lt;/strong&gt;](/windows/desktop/api/nldef/ne-nldef-_nl_router_discovery_behavior)"><strong>NL_ROUTER_DISCOVERY_BEHAVIOR</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/nldef/ne-nldef-_nl_router_discovery_behavior" data-raw-source="[&lt;strong&gt;NL_ROUTER_DISCOVERY_BEHAVIOR&lt;/strong&gt;](/windows/win32/api/nldef/ne-nldef-_nl_router_discovery_behavior)"><strong>NL_ROUTER_DISCOVERY_BEHAVIOR</strong></a></p></td>
 <td align="left"><p>Defines the router discovery behavior, as described in RFC 2461.</p></td>
 </tr>
 <tr class="odd">

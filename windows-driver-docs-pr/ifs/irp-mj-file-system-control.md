@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## When Sent
 
 
-The IRP\_MJ\_FILE\_SYSTEM\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called the Microsoft Win32 [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send a file system I/O control (FSCTL) request.
+The IRP\_MJ\_FILE\_SYSTEM\_CONTROL request is sent by the I/O Manager and other operating system components, as well as other kernel-mode drivers. It can be sent, for example, when a user-mode application has called the Microsoft Win32 [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function to send a file system I/O control (FSCTL) request.
 
 ## Operation: File System Drivers
 

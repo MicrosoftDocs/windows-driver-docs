@@ -23,6 +23,6 @@ If the video hardware supports palettes that can be set, GDI calls the [**DrvSet
 
 The **DrvSetPalette** function supplies a handle to a *PDEV* to the driver, and requests the driver to realize the palette for that device. The driver should set the hardware palette to match the entries in the given palette as closely as possible.
 
-This entry point is required if the device supports a palette that can be set, and should not be provided otherwise. A display driver specifies that its device has a settable palette by setting the GCAPS\_PALMANAGED bit in the **flGraphicsCaps** field of the [DEVINFO](/windows/win32/api/winddi/ns-winddi-devinfo) structure returned in [**DrvEnablePDEV**](/windows/desktop/api/winddi/nf-winddi-drvenablepdev).
+This entry point is required if the device supports a palette that can be set, and should not be provided otherwise. A display driver specifies that its device has a settable palette by setting the GCAPS\_PALMANAGED bit in the **flGraphicsCaps** field of the [DEVINFO](/windows/win32/api/winddi/ns-winddi-devinfo) structure returned in [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev).
 
-The service routine [PALOBJ_cGetColors](/windows/desktop/api/winddi/nf-winddi-palobj_cgetcolors) is available to display drivers. This function downloads RGB colors from an indexed palette, and should be called from within the implementation of *DrvSetPalette*.
+The service routine [PALOBJ_cGetColors](/windows/win32/api/winddi/nf-winddi-palobj_cgetcolors) is available to display drivers. This function downloads RGB colors from an indexed palette, and should be called from within the implementation of *DrvSetPalette*.

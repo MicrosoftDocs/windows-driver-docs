@@ -37,9 +37,9 @@ Routines and structures affected by this topic include the following:
 
 [**FILTER\_VOLUME\_STANDARD\_INFORMATION**](/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_filter_volume_standard_information)
 
-[**FilterVolumeFindFirst**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindfirst)
+[**FilterVolumeFindFirst**](/windows/win32/api/fltuser/nf-fltuser-filtervolumefindfirst)
 
-[**FilterVolumeFindNext**](/windows/desktop/api/fltuser/nf-fltuser-filtervolumefindnext)
+[**FilterVolumeFindNext**](/windows/win32/api/fltuser/nf-fltuser-filtervolumefindnext)
 
 [**FltEnumerateVolumeInformation**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltenumeratevolumeinformation)
 

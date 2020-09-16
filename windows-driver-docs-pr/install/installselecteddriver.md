@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # InstallSelectedDriver function
 
 
-The **InstallSelectedDriver** function is deprecated. For Windows Vista and later, use [**DiInstallDevice**](/windows/desktop/api/newdev/nf-newdev-diinstalldevice) instead.
+The **InstallSelectedDriver** function is deprecated. For Windows Vista and later, use [**DiInstallDevice**](/windows/win32/api/newdev/nf-newdev-diinstalldevice) instead.
 
 Syntax
 ------
@@ -90,27 +90,27 @@ To access **InstallSelectedDriver**, call **LoadLibrary** to load *Newdev.dll* a
 
 You should only call **InstallSelectedDriver** if it is necessary to install a specific driver on a specific device.
 
-**Important**   For Windows Vista and later versions of Windows, call [**DiInstallDevice**](/windows/desktop/api/newdev/nf-newdev-diinstalldevice) instead of **InstallSelectedDriver** to perform this type of operation.
+**Important**   For Windows Vista and later versions of Windows, call [**DiInstallDevice**](/windows/win32/api/newdev/nf-newdev-diinstalldevice) instead of **InstallSelectedDriver** to perform this type of operation.
 
  
 
-Other than the special applications that require the installation of a specific driver on a specific device, an installation application should install the driver that is the best match for a device. To install the driver that is the best match for a device, call [**DiInstallDriver**](/windows/desktop/api/newdev/nf-newdev-diinstalldrivera) or [**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa). For more information about which of these functions to call to install a driver on a device, see [SetupAPI Functions that Simplify Driver Installation](./functions-that-simplify-driver-installation.md).
+Other than the special applications that require the installation of a specific driver on a specific device, an installation application should install the driver that is the best match for a device. To install the driver that is the best match for a device, call [**DiInstallDriver**](/windows/win32/api/newdev/nf-newdev-diinstalldrivera) or [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa). For more information about which of these functions to call to install a driver on a device, see [SetupAPI Functions that Simplify Driver Installation](./functions-that-simplify-driver-installation.md).
 
 Before calling **InstallSelectedDriver**, the caller must obtain a device information set that contains the device, select the device in the set, and select a driver for the device.
 
 To create a device information set that contains the device, do one of the following:
 
--   Call [**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) to retrieve a device information set that contains the device and then call [**SetupDiEnumDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo) to enumerate the devices in the device information set. On each call, **SetupDiEnumDeviceInfo** returns an SP\_DEVINFO\_DATA structure that represents the enumerated device in the device information set. To obtain specific information about the enumerated device, call [**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) and supply the SP\_DEVINFO\_DATA structure that was returned by **SetupDiEnumDeviceInfo**.
+-   Call [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) to retrieve a device information set that contains the device and then call [**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo) to enumerate the devices in the device information set. On each call, **SetupDiEnumDeviceInfo** returns an SP\_DEVINFO\_DATA structure that represents the enumerated device in the device information set. To obtain specific information about the enumerated device, call [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) and supply the SP\_DEVINFO\_DATA structure that was returned by **SetupDiEnumDeviceInfo**.
 
     - OR -
 
--   Call [**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to add a device with a known device instance ID to the device information set. **SetupDiOpenDeviceInfo** returns an [**SP\_DEVINFO\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device in the device information set.
+-   Call [**SetupDiOpenDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to add a device with a known device instance ID to the device information set. **SetupDiOpenDeviceInfo** returns an [**SP\_DEVINFO\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device in the device information set.
 
-After obtaining the SP\_DEVINFO\_DATA structure for a device, call [**SetupDiSetSelectedDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddevice) to select the device in the device information set.
+After obtaining the SP\_DEVINFO\_DATA structure for a device, call [**SetupDiSetSelectedDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdisetselecteddevice) to select the device in the device information set.
 
-To retrieve a driver for a device, call [**SetupDiBuildDriverInfoList**](/windows/desktop/api/setupapi/nf-setupapi-setupdibuilddriverinfolist) to build a list of compatible drivers for the device and then call [**SetupDiEnumDriverInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdriverinfoa) to enumerate the elements of the driver list for the device. For each enumerated driver, **SetupDiEnumDriverInfo** retrieves an SP\_DRVINFO\_DATA structure that represents the driver. [**SetupDiGetDriverInfoDetail**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinfodetaila) can be called to retrieve additional details about an enumerated driver.
+To retrieve a driver for a device, call [**SetupDiBuildDriverInfoList**](/windows/win32/api/setupapi/nf-setupapi-setupdibuilddriverinfolist) to build a list of compatible drivers for the device and then call [**SetupDiEnumDriverInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdriverinfoa) to enumerate the elements of the driver list for the device. For each enumerated driver, **SetupDiEnumDriverInfo** retrieves an SP\_DRVINFO\_DATA structure that represents the driver. [**SetupDiGetDriverInfoDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdriverinfodetaila) can be called to retrieve additional details about an enumerated driver.
 
-After obtaining an SP\_DRVINFO\_DATA structure for the driver, call [**SetupDiSetSelectedDriver**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddrivera) to select the driver for the device.
+After obtaining an SP\_DRVINFO\_DATA structure for the driver, call [**SetupDiSetSelectedDriver**](/windows/win32/api/setupapi/nf-setupapi-setupdisetselecteddrivera) to select the driver for the device.
 
 Requirements
 ------------
@@ -147,27 +147,27 @@ Requirements
 ## See also
 
 
-[**DiInstallDevice**](/windows/desktop/api/newdev/nf-newdev-diinstalldevice)
+[**DiInstallDevice**](/windows/win32/api/newdev/nf-newdev-diinstalldevice)
 
-[**DiInstallDriver**](/windows/desktop/api/newdev/nf-newdev-diinstalldrivera)
+[**DiInstallDriver**](/windows/win32/api/newdev/nf-newdev-diinstalldrivera)
 
-[**SetupDiBuildDriverInfoList**](/windows/desktop/api/setupapi/nf-setupapi-setupdibuilddriverinfolist)
+[**SetupDiBuildDriverInfoList**](/windows/win32/api/setupapi/nf-setupapi-setupdibuilddriverinfolist)
 
-[**SetupDiEnumDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinfo)
+[**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo)
 
-[**SetupDiEnumDriverInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdienumdriverinfoa)
+[**SetupDiEnumDriverInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdriverinfoa)
 
-[**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw)
+[**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw)
 
-[**SetupDiGetDeviceRegistryProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
+[**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya)
 
-[**SetupDiGetDriverInfoDetail**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdriverinfodetaila)
+[**SetupDiGetDriverInfoDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdriverinfodetaila)
 
-[**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa)
+[**SetupDiOpenDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinfoa)
 
-[**SetupDiSetSelectedDevice**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddevice)
+[**SetupDiSetSelectedDevice**](/windows/win32/api/setupapi/nf-setupapi-setupdisetselecteddevice)
 
-[**SetupDiSetSelectedDriver**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetselecteddrivera)
+[**SetupDiSetSelectedDriver**](/windows/win32/api/setupapi/nf-setupapi-setupdisetselecteddrivera)
 
-[**UpdateDriverForPlugAndPlayDevices**](/windows/desktop/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa)
+[**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa)
 

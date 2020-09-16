@@ -27,7 +27,7 @@ This image shows you related events from an application, UMDF driver, and Ucx010
 ## How to add an activity ID GUID in an application
 
 
-An application can include activity ID GUIDs by calling [**EventActivityIdControl**](/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol). For more information, see [Event Tracing Functions](/windows/desktop/ETW/event-tracing-functions).
+An application can include activity ID GUIDs by calling [**EventActivityIdControl**](/windows/win32/api/evntprov/nf-evntprov-eventactivityidcontrol). For more information, see [Event Tracing Functions](/windows/desktop/ETW/event-tracing-functions).
 
 This example code shows how an application can set an activity ID GUID and send it to the ETW provider, a UMDF driver.
 
@@ -64,14 +64,14 @@ if(success == 0)
 }
 ```
 
-In the preceding example, an application calls [**EventActivityIdControl**](/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol) to create an activity ID (EVENT\_ACTIVITY\_CTRL\_CREATE\_ID) and then to set it (EVENT\_ACTIVITY\_CTRL\_SET\_ID) for the current thread. The application specifies that activity GUID to the ETW event provider, such as a user-mode driver, by sending a driver-defined IOCTL (described in the next section).
+In the preceding example, an application calls [**EventActivityIdControl**](/windows/win32/api/evntprov/nf-evntprov-eventactivityidcontrol) to create an activity ID (EVENT\_ACTIVITY\_CTRL\_CREATE\_ID) and then to set it (EVENT\_ACTIVITY\_CTRL\_SET\_ID) for the current thread. The application specifies that activity GUID to the ETW event provider, such as a user-mode driver, by sending a driver-defined IOCTL (described in the next section).
 
 The event provider must publish an instrumentation manifest file (.MAN file). By running the [**message compiler (Mc.exe)**](/windows/desktop/WES/message-compiler--mc-exe-), a header file is generated that contains definitions for the event provider, event attributes, channels, and events. In the example, the application calls EventWriteReadFail, which are defined in the generated header file, to write trace event messages in case of a failure.
 
 ## How to set the activity ID GUID in a UMDF driver
 
 
-A user-mode driver creates and sets activity ID GUIDs by calling [**EventActivityIdControl**](/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol) and the calls are similar to the way an application calls them, as described in the previous section. Those calls add the activity ID GUID to the current thread and that activity ID GUID is used whenever the thread logs an event. For more information, see [Using Activity Identifiers](../wdf/using-activity-identifiers.md).
+A user-mode driver creates and sets activity ID GUIDs by calling [**EventActivityIdControl**](/windows/win32/api/evntprov/nf-evntprov-eventactivityidcontrol) and the calls are similar to the way an application calls them, as described in the previous section. Those calls add the activity ID GUID to the current thread and that activity ID GUID is used whenever the thread logs an event. For more information, see [Using Activity Identifiers](../wdf/using-activity-identifiers.md).
 
 This example code shows how a UMDF driver sets the activity ID GUID that was created and specified by the application through an IOCTL.
 
@@ -190,7 +190,7 @@ CMyReadWriteQueue::ForwardFormattedRequest(
 }
 ```
 
-Let's see how the activity ID GUID that was created by the application gets associated with a [User-Mode Driver Framework](../debugger/user-mode-driver-framework-debugging.md) (UMDF) client driver. When the driver receives the IOCTL request from the application, it copies the GUID in a private member. At some point, the application calls [**ReadFile**](/windows/desktop/api/fileapi/nf-fileapi-readfile) to perform a read operation. The framework creates a request and invokes the driver's handler, ForwardFormattedRequest. In the handler, the driver sets the previously stored activity ID GUID on the thread by calling [**EventActivityIdControl**](/windows/desktop/api/evntprov/nf-evntprov-eventactivityidcontrol) and EventWriteReadFail to trace event messages.
+Let's see how the activity ID GUID that was created by the application gets associated with a [User-Mode Driver Framework](../debugger/user-mode-driver-framework-debugging.md) (UMDF) client driver. When the driver receives the IOCTL request from the application, it copies the GUID in a private member. At some point, the application calls [**ReadFile**](/windows/win32/api/fileapi/nf-fileapi-readfile) to perform a read operation. The framework creates a request and invokes the driver's handler, ForwardFormattedRequest. In the handler, the driver sets the previously stored activity ID GUID on the thread by calling [**EventActivityIdControl**](/windows/win32/api/evntprov/nf-evntprov-eventactivityidcontrol) and EventWriteReadFail to trace event messages.
 
 **Note**  The UMDF driver must also include the header file that is generated through the instrumentation manifest file. The header file defines macros such as EventWriteReadFail that write trace messages.
 

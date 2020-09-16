@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 ## <span id="wave_filters"></span><span id="WAVE_FILTERS"></span>
 
 
-Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) and [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible).
+Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-twaveformatex) and [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible).
 
 A *wave-rendering* filter receives as input a wave digital audio stream and outputs either an analog audio signal (to a set of speakers or external mixer) or a digital audio stream (to an S/PDIF connector, for example).
 

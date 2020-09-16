@@ -26,7 +26,7 @@ The feature improvements are in the following areas:
 ## <span id="pixelformats"></span><span id="PIXELFORMATS"></span>Pixel formats (5551, 565, 4444)
 
 
-To better support graphics in low-power configurations using DirectX, the following DirectX 9 pixel formats from the [**DXGI\_FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration must be supported in Direct3D for Windows 8:
+To better support graphics in low-power configurations using DirectX, the following DirectX 9 pixel formats from the [**DXGI\_FORMAT**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format) enumeration must be supported in Direct3D for Windows 8:
 
 -   **DXGI\_FORMAT\_B5G6R5\_UNORM**
 -   **DXGI\_FORMAT\_B5G5R5A1\_UNORM**

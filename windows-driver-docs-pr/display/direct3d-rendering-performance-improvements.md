@@ -158,7 +158,7 @@ These input [**D3D11DDIARG\_CREATERESOURCE**](/windows-hardware/drivers/ddi/d3d1
 </tr>
 <tr class="even">
 <td align="left"><p><span id="SampleDesc"></span><span id="sampledesc"></span><span id="SAMPLEDESC"></span><strong>SampleDesc</strong></p></td>
-<td align="left"><p>The runtime sets the <a href="/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc" data-raw-source="[&lt;strong&gt;DXGI_SAMPLE_DESC&lt;/strong&gt;](/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc)"><strong>DXGI_SAMPLE_DESC</strong></a>.<strong>Count</strong> member to 1, and the <strong>Quality</strong> member to zero.</p></td>
+<td align="left"><p>The runtime sets the <a href="/windows/win32/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc" data-raw-source="[&lt;strong&gt;DXGI_SAMPLE_DESC&lt;/strong&gt;](/windows/win32/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc)"><strong>DXGI_SAMPLE_DESC</strong></a>.<strong>Count</strong> member to 1, and the <strong>Quality</strong> member to zero.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="MipLevels"></span><span id="miplevels"></span><span id="MIPLEVELS"></span><strong>MipLevels</strong></p></td>

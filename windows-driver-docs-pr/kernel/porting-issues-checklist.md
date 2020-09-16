@@ -138,7 +138,7 @@ ms.localizationpriority: medium
 
 -   Avoid using computed or hard-coded pointer offsets.
 
-    When working with structures, use the [**FIELD\_OFFSET**](/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro wherever possible to determine the offset of structure members.
+    When working with structures, use the [**FIELD\_OFFSET**](/windows/win32/api/ntdef/nf-ntdef-field_offset) macro wherever possible to determine the offset of structure members.
 
 -   Avoid using hard-coded pointer or handle values.
 
@@ -236,7 +236,7 @@ ms.localizationpriority: medium
 
 <!-- -->
 
--   Use the [**FIELD\_OFFSET**](/windows/desktop/api/ntdef/nf-ntdef-field_offset) macro.
+-   Use the [**FIELD\_OFFSET**](/windows/win32/api/ntdef/nf-ntdef-field_offset) macro.
 
     For example:
 

@@ -54,7 +54,7 @@ The correspondence of user-mode API scaling values to the display miniport drive
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left"><a href="/windows/desktop/api/winuser/nf-winuser-setdisplayconfig" data-raw-source="[&lt;strong&gt;SetDisplayConfig&lt;/strong&gt;](/windows/desktop/api/winuser/nf-winuser-setdisplayconfig)"><strong>SetDisplayConfig</strong></a> API Scaling Value</th>
+<th align="left"><a href="/windows/win32/api/winuser/nf-winuser-setdisplayconfig" data-raw-source="[&lt;strong&gt;SetDisplayConfig&lt;/strong&gt;](/windows/win32/api/winuser/nf-winuser-setdisplayconfig)"><strong>SetDisplayConfig</strong></a> API Scaling Value</th>
 <th align="left">DDI Scaling Value</th>
 </tr>
 </thead>

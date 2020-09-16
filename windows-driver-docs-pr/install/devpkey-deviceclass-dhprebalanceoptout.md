@@ -71,7 +71,7 @@ The default value for this property for the Network Adapter (Class = Net) is **T
 
 This device property does not affect whether a device class participates in a resource rebalance that is initiated for other reasons.
 
-You can access the DEVPKEY_DeviceClass_DHPRebalanceOptOut property by calling [**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) and [**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw).
+You can access the DEVPKEY_DeviceClass_DHPRebalanceOptOut property by calling [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) and [**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw).
 
 Requirements
 ------------
@@ -96,9 +96,9 @@ Requirements
 ## See also
 
 
-[**SetupDiGetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiSetClassProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
+[**SetupDiSetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclasspropertyw)
 
  
 
