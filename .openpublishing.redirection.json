@@ -7945,6 +7945,11 @@
                             "source_path":  "windows-driver-docs-pr/kernel/using-i-o-control-codes.md",
                             "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes",
                             "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/devtest/reading-and-filtering-debugging-messages.md",
+                            "redirect_url":  "/windows-hardware/drivers/debugger/reading-and-filtering-debugging-messages",
+                            "redirect_document_id":  true
                         }
                      ]
 }
