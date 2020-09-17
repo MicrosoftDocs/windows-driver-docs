@@ -1,5 +1,5 @@
 ---
-title: Number of user mode reliability for crashes in Microsoft Photos app, less than or equal to the baseline goal
+title: Number of user mode reliability for crashes in Microsoft Photos app, less than or equal to the baseline goal (Ecosystem)
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Photos, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019
