@@ -188,7 +188,7 @@ To allow drivers to support HVCI virtualization, there are additional memory req
 
 ### Device objects
 
-- Secure device objects. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+- Secure device objects. For more information, see [Securing Device Objects](../kernel/controlling-device-access.md).
 
 - Validate device objects. For more information, see [Failure to Validate Device Objects](../kernel/failure-to-validate-device-objects.md).
 
@@ -280,7 +280,7 @@ Drivers must work to prevent users from inappropriately accessing a computer's d
 
 In order to allow applications or other WDF drivers to access your PnP device PDO, you should use device interfaces. For more information, see [Using Device Interfaces](../wdf/using-device-interfaces.md). A device interface serves as a symbolic link to your device stack's PDO.
 
-One of the betters way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [SDDL for Device Objects](../kernel/sddl-for-device-objects.md).
+One of the betters way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](../kernel/controlling-device-access.md) and [SDDL for Device Objects](../kernel/sddl-for-device-objects.md).
 
 For more information about controlling access, see the following articles:
 

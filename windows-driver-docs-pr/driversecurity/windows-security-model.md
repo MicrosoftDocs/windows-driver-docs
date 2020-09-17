@@ -209,7 +209,7 @@ For more information, see [Object Handles](../kernel/object-handles.md) and [Obj
 
 The operating system kernel treats every driver, in effect, as a file system with its own namespace. Consequently, when a caller attempts to create an object in the device namespace, the I/O Manager checks that the process has traversal rights to the directories in the path. 
 
-With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](../kernel/controlling-device-namespace-access.md) and [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](../kernel/controlling-device-namespace-access.md) and [Securing Device Objects](../kernel/controlling-device-access.md).
 
 For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](../wdf/controlling-device-access-in-kmdf-drivers.md).
 
@@ -252,6 +252,6 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 
 ### See Also
 
-[Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects)
+[Securing Device Objects](../kernel/controlling-device-access.md)
 
 [Driver security checklist](driver-security-checklist.md)
