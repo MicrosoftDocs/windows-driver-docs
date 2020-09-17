@@ -22,9 +22,8 @@ Because HID devices are a primary device class in Windows, they must adhere to t
 
 Below is a short summary of how devices should behave during the connected standby power state.
 
-|                                                                                                                                                                 |                                              |                                           |                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|-------------------------------------------|-----------------------------------------------------------|
 | Input Source                                                                                                                                                    | Indicates User Presence in connected standby | Processed while in connected standby      | Device State when System transitions to connected standby |
+|-|-|-|-|
 | Digitizer                                                                                                                                                       | No                                           | Must not process                          | D3                                                        |
 | Mouse                                                                                                                                                           | Yes                                          | Must process, will exit connected standby | D0                                                        |
 | Keyboard                                                                                                                                                        | Yes                                          | Must process, will exit connected standby | D0                                                        |
