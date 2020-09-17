@@ -77,12 +77,16 @@ In general, the DRR scheduler services only the RA-TID queues associated with th
 
 Frames injected by the IHV with extended TID in the IHV reserved range map to the following extended ACs for the purposes of priority scheduling. The table is in order of increasing priority.
 
-|              |        |        |        |        |         |         |         |         |
-|--------------|--------|--------|--------|--------|---------|---------|---------|---------|
-| Extended TID | 17     | 18     | 19     | 20     | 21      | 22      | 23      | 24      |
-| Extended AC  | AC\_BK | AC\_BE | AC\_VI | AC\_VO | AC\_PR0 | AC\_PR1 | AC\_PR2 | AC\_PR3 |
-
- 
+| Extended TID | Extended AC |
+| - | - |
+| 17 | AC\_BK |
+| 18 | AC\_BE |
+| 19 | AC\_VI |
+| 20 | AC\_VO |
+| 21 | AC\_PR0 |
+| 22 | AC\_PR1 |
+| 23 | AC\_PR2 |
+| 24 | AC\_PR3 |
 
 For WDI port queuing, all injected frames are treated equally regardless of the extended TID.
 

@@ -21,9 +21,8 @@ The syntax and semantics of the MB OIDs listed in the following table are descri
 
 ## WWAN-Specific OIDs
 
-| OID and Corresponding Data Structure | Set operation |   | Query operation |   | GSM/CDMA |
+| OID and Corresponding Data Structure | Set, Windows 7 | Set, Windows 8  | Query, Windows 7 | Query, Windows 8  | GSM/CDMA |
 | ---                                  | ---       | ---       | ---       | ---       |--- |
-|                                      | Windows 7 | Windows 8 | Windows 7 | Windows 8 |    |
 | [OID\_WWAN\_DRIVER\_CAPS](./oid-wwan-driver-caps.md) uses [**NDIS\_WWAN\_DRIVER\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps) | Not supported | Not supported |S | S | GSM, CDMA |
 | [OID\_WWAN\_DEVICE\_CAPS](./oid-wwan-device-caps.md) has no corresponding structure | Not supported | Not supported | A | A | GSM, CDMA |
 | [OID\_WWAN\_READY\_INFO](./oid-wwan-ready-info.md) has no corresponding structure | Not supported Not supported | A | A | GSM, CDMA |
