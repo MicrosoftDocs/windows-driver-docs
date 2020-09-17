@@ -1,6 +1,16 @@
 {
     "redirections":  [
         {
+            "source_path":  "/windows-hardware/drivers/network/offloading-ipsec-tasks.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/ipsec-offload-version-1.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "/windows-hardware/drivers/mobilebroadband/serviceinfo-xml-data-types.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-serviceinfo",
             "redirect_document_id":  false
@@ -7945,6 +7955,51 @@
                             "source_path":  "windows-driver-docs-pr/kernel/using-i-o-control-codes.md",
                             "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes",
                             "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/devtest/reading-and-filtering-debugging-messages.md",
+                            "redirect_url":  "/windows-hardware/drivers/debugger/reading-and-filtering-debugging-messages",
+                            "redirect_document_id":  true
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/managing-power-for-individual-devices.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/device-power-states",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/mutex-objects.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-mutex-objects",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/securing-device-objects.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/controlling-device-access",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/threaded-dpcs.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-threaded-dpcs",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/using-common-log-file-system.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-the-common-log-file-system",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/using-kernel-transaction-manager.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-ktm",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/wdf/handling-hardware-interrupts.md",
+                            "redirect_url":  "/windows-hardware/drivers/wdf/creating-an-interrupt-object",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/wdf/supporting-wmi-in-kmdf-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/wdf/introduction-to-wmi-for-kmdf-drivers",
+                            "redirect_document_id":  false
                         }
                      ]
 }
