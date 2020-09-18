@@ -456,7 +456,7 @@ async private void OnSaveRequested(object sender, PrintTaskConfigurationSaveRequ
 
 The [Print settings and print notifications](https://go.microsoft.com/fwlink/p/?LinkID=242862) sample demonstrates how to set defined features, which covers most print options. However, some options require a custom UI to get a user-specified value. For example, if an app used the advanced print settings to specify a custom page size, it would take these steps to save the user-specified value:
 
-1. Retrieve the print ticket during app activation. App activation for print settings is described earlier in [Step 3: Handle activation](#step3).
+1. Retrieve the print ticket during app activation. App activation for print settings is described earlier in [Step 3: Handle activation](#step-3-handle-activation).
 
 2. Check if the page size option is specified. In a C# or JS app, the print helper class can check for this option. In a C++ app, call QueryInterface on IPrintSchemaOption to retrieve IPrintSchemaPageMediaSizeOption.
 
