@@ -442,6 +442,11 @@
                              "redirect_document_id":  true
                          },
                          {
+                            "source_path":  "windows-driver-docs-pr/usbcon/capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md",
+                            "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-event-tracing-for-windows",
+                            "redirect_document_id":  true
+                         },
+                         {
                              "source_path":  "windows-driver-docs-pr/usbcon/writing-usb-device-companion-apps-for-uwp.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/writing-usb-device-companion-apps-for-microsoft-store",
                              "redirect_document_id":  true

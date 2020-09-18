@@ -445,7 +445,7 @@ Select the description for each warning to see the problematic area in your code
 
 Select the linked warning code to see additional information.
 
-Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects?view=vs-2015) and [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md).
+Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects) and [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md).
 
 For general information on SAL, refer to this article available from OSR.
 [https://www.osr.com/blog/2015/02/23/sal-annotations-dont-hate-im-beautiful/](https://www.osr.com/blog/2015/02/23/sal-annotations-dont-hate-im-beautiful/)
@@ -505,7 +505,7 @@ Follow these steps to validate that the security compile options are properly co
 
 4. Select the downloaded zip file and unzip it, for example to `C:\binskim-master`.
 
-5. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio?view=vs-2019).
+5. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
 6. Open a Visual Studio Developer Command Prompt window and move to the directory that you unzipped the files to.  
 
@@ -626,7 +626,7 @@ The default compile options in Visual Studio for driver projects can disable war
 
 [C4986 - 'declaration': exception specification does not match previous declaration](/cpp/error-messages/compiler-warnings/compiler-warning-c4986)
 
-For more information about the compiler warnings, see [Compiler Warnings by compiler version](/cpp/error-messages/compiler-warnings/compiler-warnings-by-compiler-version?view=vs-2019).
+For more information about the compiler warnings, see [Compiler Warnings by compiler version](/cpp/error-messages/compiler-warnings/compiler-warnings-by-compiler-version).
 
 ## Use additional code validation tools
 

@@ -2,7 +2,7 @@
 title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows 7, Windows Server 2008, Windows 8, Windows 8.1,Windows 10, Windows Server 2012, and Windows Server 2012 R2.
 ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
-ms.date: 02/07/2018
+ms.date: 09/17/2020
 keywords: ["BCDEdit /set Driver Development Tools"]
 topic_type:
 - apiref
@@ -23,6 +23,18 @@ The **BCDEdit /set** command sets a boot entry option value in the Windows boot 
 > [!NOTE]
 > Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 
+## Alternatives to BCDEdit
+
+### Settings startup options
+
+To avoid the risk associated with using BCDEdit, some common boot options such as enabling debugging mode are available in the start up options.  In Windows 10, the settings can be accessed in Settings, Update and Security, select Recovery. Under Advanced startup, select Restart Now. When the PC reboots, select Startup options. Then select Troubleshoot > Advanced options > Startup Settings , then select Restart button. When the PC restarts, you will be able to set the available startup options.
+
+### System Configuration Utility
+
+Use the System Configuration Utility (MSConfig.exe) instead of BCDEdit when possible. For more information, see [How to open MSConfig in Windows 10](https://support.microsoft.com/help/4026130/windows-how-to-open-msconfig-in-windows-10).
+
+## Syntax
+
 ```syntax
 bcdedit  /set [{ID}] datatype value
 ```
@@ -37,7 +49,7 @@ The **{ID}** is the GUID that is associated with the boot entry. If you do not s
 
 *datatype* *value*  
 
-The following list shows some useful *datatypes* and their associated *values*.
+The following list shows some *datatypes* and their associated *values*.
 
 **bootlog** \[ **yes** | **no** \]  
 Enables the system initialization log. This log is stored in the Ntbtlog.txt file in the %WINDIR% directory. It includes a list of loaded and unloaded drivers in text format.
@@ -90,7 +102,7 @@ Controls the loading of Early Launch Antimalware (ELAM) drivers. The OS loader r
 Forces the OS to assume the presence of legacy PC devices like CMOS and keyboard controllers.
 
 > [!NOTE]
-> This option should only be used for debugging. 
+> This option should only be used for debugging.
 
 **groupsize** *maxsize*
 Sets the maximum number of logical processors in a single processor group, where *maxsize* is any power of 2 between 1 and 64 inclusive. By default, processor groups have a maximum size of 64 logical processors. You can use this boot configuration setting to override the size and makeup of a computer's processor groups for testing purposes. [Processor groups](/windows/win32/procthread/processor-groups) provide support for computers with greater than 64 logical processors. This boot option is available on 64-bit versions of Windows 7 and Windows Server 2008 R2 and later versions. This boot option has no effect on the 32-bit versions of Windows 7.
@@ -210,7 +222,7 @@ Indicates whether the VGA driver should avoid VESA BIOS calls. The option is ign
 **novga** \[ **on** | **off** \]
 Disables the use of VGA modes in the OS. The option is available starting in Windows 8 and Windows Server 2012.
 
-**nx** \[**Optin |OptOut | AlwaysOn |AlwaysOff**\]  
+**nx** \[**Optin \|OptOut \| AlwaysOn \|AlwaysOff**\]  
 Enables, disables, and configures Data Execution Prevention (DEP), a set of hardware and software technologies designed to prevent harmful code from running in protected memory locations. For information about DEP settings, see [Data Execution Prevention](/windows/desktop/Memory/data-execution-prevention).
 
 **Optin**  
@@ -350,8 +362,6 @@ Any change to a boot option requires a restart to take effect. For information a
 **Minimum supported client**: Windows Vista
 
 **Minimum supported server**: Windows Server 2008
-
-****: 
 
 
 ## See also

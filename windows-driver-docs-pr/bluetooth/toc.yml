@@ -110,6 +110,8 @@
         href: testing-BTP-hw-hid.md
       - name: "Audio Capable Radios"
         href: testing-BTP-hw-audio.md
+      - name: "BM-64-EVB board"
+        href: testing-BTP-hw-bm64.md
     - name: "BTP Tests"
       items:
       - name: "Currently Available BTP Tests"
@@ -120,5 +122,9 @@
         href: testing-BTP-tests-hid.md
       - name: "Testing Bluetooth Audio"
         href: testing-BTP-tests-audio.md
+      - name: "Testing Bluetooth Audio and HID"
+        href: testing-BTP-tests-audio-hid.md
+      - name: "Testing Bluetooth Battery"
+        href: testing-BTP-tests-battery.md
 - name: "Bluetooth Radio Reset and Recovery"
   href: bluetooth-radio-error-recovery.md
