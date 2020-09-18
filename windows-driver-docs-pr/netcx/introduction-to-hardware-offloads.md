@@ -14,7 +14,7 @@ To increase its performance, the Windows TCP/IP stack can offload some tasks to 
 
 ## Overview of offloads in NetAdapterCx
 
-NetAdapterCx focuses on ease of offload configuration and management of offload capabilities. Client drivers only need to specify a simple configuration for their hardware offload capabilities and register callbacks to be notified of changes in capabilities. 
+NetAdapterCx focuses on ease of offload configuration and management of offload capabilities. Client drivers only need to specify a simple configuration for their hardware offload capabilities and register callbacks to be notified of changes in capabilities.
 
 This guidance provides an overview of key concepts for hardware offloads in NetAdapterCx.
 
@@ -34,6 +34,7 @@ The following offloads are supported by NetAdapterCx and the Windows TCP/IP stac
 | --- | --- |
 | [Checksum](checksum-offload.md) | Offloading the calculation and validation of IP and TCP checksums to the NIC. |
 | [Generic send offload (GSO)](gso-offload.md) | Offloading segmentation of large TCP/UDP packets for IPv4 and IPv6. |
+| [Receive Segment Coalescing (RSC)](rsc-offload.md) | Offloading coalescing of a sequence of received TCP segments for IPv4 and IPv6. |
 
 ## Configuring hardware offloads
 
