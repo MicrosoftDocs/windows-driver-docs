@@ -242,7 +242,7 @@ A protocol driver can initiate OID requests to set or query information in under
 ## Related topics
 
 
-[Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md)
+[Writing NDIS Protocol Drivers](initializing-a-protocol-driver.md)
 
  
 

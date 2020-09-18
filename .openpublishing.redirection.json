@@ -1,6 +1,71 @@
 {
     "redirections":  [
         {
+            "source_path":  "/windows-hardware/drivers/network/scalable-networking2.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/header-data-split",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/header-data-split-administration-and-configuration.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/setting-the-current-header-data-split-configuration",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/header-data-split-overview.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/header-data-split-architecture",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/ndis-management-information-and-oids",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/ndis-stack-operations.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/starting-a-driver-stack",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/managing-packet-coalescing-receive-filters.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/guidelines-for-managing-packet-coalescing-receive-filters",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/installation-requirements-for-network-components.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/installation-requirements-for-network-adapters",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/sections-in-a-network-inf-file.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/version-section-in-a-network-inf-file",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/connection-oriented-operations.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/connection-oriented-operations-performed-by-clients",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/writing-ndis-protocol-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/initializing-a-protocol-driver",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/call-manager-requirements-for-voice-streaming.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/responding-to-an-oid-co-tapi-line-caps-query",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/previous-versions-of-network-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/network-drivers-prior-to-windows-vista",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/condis-registration.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/condis-miniport-driver-registration",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "/windows-hardware/drivers/network/offloading-ipsec-tasks.md",
             "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
             "redirect_document_id":  false

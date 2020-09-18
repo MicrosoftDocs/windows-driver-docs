@@ -30,7 +30,7 @@ If an intermediate driver itself processes the setting of an OID rather than pas
 
  
 
-For additional information about responding to sets and queries in an intermediate driver, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
+For additional information about responding to sets and queries in an intermediate driver, see [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](ndis-management-information-and-oids.md).
 
  
 

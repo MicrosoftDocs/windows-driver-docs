@@ -50,7 +50,7 @@ To create a Network Driver Interface Specification (NDIS) miniport driver packag
 
   Additional considerations include topics that expand on the primary interfaces that are described in the [writing miniport drivers section](./initializing-a-miniport-driver.md).
 
-  [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md)
+  [Obtaining and Setting Miniport Driver Information and NDIS Support for WMI](ndis-management-information-and-oids.md)
 
   [NDIS MSI-X](ndis-msi-x.md)
 

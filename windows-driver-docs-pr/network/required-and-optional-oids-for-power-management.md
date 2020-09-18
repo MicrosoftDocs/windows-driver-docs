@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-For a miniport driver, supporting power management involves supporting power management object identifiers (OIDs). For a detailed description of how miniport drivers process queries and sets to OIDs, see [Obtaining and SettingMiniport Driver Information and NDIS Support for WMI](obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md).
+For a miniport driver, supporting power management involves supporting power management object identifiers (OIDs). For a detailed description of how miniport drivers process queries and sets to OIDs, see [Obtaining and SettingMiniport Driver Information and NDIS Support for WMI](ndis-management-information-and-oids.md).
 
 There are two levels of power management support for miniport drivers:
 
