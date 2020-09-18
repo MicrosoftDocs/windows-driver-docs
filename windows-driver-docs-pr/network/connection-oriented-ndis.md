@@ -29,7 +29,7 @@ The following sections describe connection-oriented NDIS:
 
 [Connection-Oriented Timing Features](connection-oriented-timing-features.md)
 
-[CoNDIS Registration](condis-registration.md)
+[CoNDIS Registration](condis-miniport-driver-registration.md)
 
 [Connection-Oriented Operations](connection-oriented-operations.md)
 

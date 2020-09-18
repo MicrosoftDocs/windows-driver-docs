@@ -1,6 +1,16 @@
 {
     "redirections":  [
         {
+            "source_path":  "/windows-hardware/drivers/network/previous-versions-of-network-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/network-drivers-prior-to-windows-vista",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "/windows-hardware/drivers/network/condis-registration.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/condis-miniport-driver-registration",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "/windows-hardware/drivers/network/offloading-ipsec-tasks.md",
             "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
             "redirect_document_id":  false
