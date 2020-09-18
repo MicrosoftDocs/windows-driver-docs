@@ -27,7 +27,7 @@ This guide includes the following sections:
 
 [NDIS Core Functionality](ndis-core-functionality2.md)
 
-[Scalable Networking](scalable-networking2.md)
+[Scalable Networking](header-data-split.md)
 
 [Virtualized Networking](virtualized-networking.md)
 
