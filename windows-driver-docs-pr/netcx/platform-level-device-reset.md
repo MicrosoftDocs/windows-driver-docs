@@ -94,7 +94,7 @@ To submit diagnostics to NetAdapterCx, the client driver performs the following 
 
 ## How a client driver requests PLDR
 
-A client driver triggers PLDR using the NetAdapterCx [**NetDeviceRequestReset**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdevicerequestreset.md) API when it detects device failure. **NetDeviceRequestReset** returns immediately to the client driver.
+A client driver triggers PLDR using the NetAdapterCx [**NetDeviceRequestReset**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdevicerequestreset) API when it detects device failure. **NetDeviceRequestReset** returns immediately to the client driver.
 The reset and recovery sequence described in [NetAdapterCx reset and recover sequence](#netadaptercx-reset-and-recover-sequence) is triggered and is asynchronous to the **NetDeviceRequestReset** call.
 
 Only one PLDR operation can happen at any given time. Therefore, subsequent calls of **NetDeviceRequestReset** have no effect when a PLDR operation has already started.
