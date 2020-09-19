@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 # HS\_DEVICE\_IDENTITY structure
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_DEVICE\_IDENTITY** structure contains information about the device model and manufacturer.

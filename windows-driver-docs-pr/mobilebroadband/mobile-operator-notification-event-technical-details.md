@@ -52,7 +52,7 @@ An incoming operator message, including SMS and USSD, triggers the MobileOperato
 
 ### DataPlanThresholdReached
 
-By default, this message type is disabled. You can enable it by using provisioning metadata to specify the [**DataUsageInMobileOperatorNotificationEnabled**](https://docs.microsoft.com/uwp/schemas/mobilebroadbandschema/plans/element-datausageinmobileoperatornotificationenabled) field, as shown here.
+By default, this message type is disabled. You can enable it by using provisioning metadata to specify the [**DataUsageInMobileOperatorNotificationEnabled**](/uwp/schemas/mobilebroadbandschema/plans/element-datausageinmobileoperatornotificationenabled) field, as shown here.
 
 ``` syntax
 <?xml version="1.0"?>
@@ -113,7 +113,7 @@ The MobileOperatorNotification event is generated with these **MessageType**s wh
 The ProfileConnected MessageType is triggered on L2 connectivity for the mobile broadband interface.
 
 >[!NOTE]
->This trigger occurs before network identification is complete. The [**NetworkStatusChanged**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event (part of the [**NetworkInformation**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkInformation) API) is generated when network identification determines the connectivity level of the network. For more information about network identification, see [Quickstart: Retrieving network connection information](https://docs.microsoft.com/previous-versions/windows/apps/hh452990(v=win.10)) and the **NetworkInformation** class.
+>This trigger occurs before network identification is complete. The [**NetworkStatusChanged**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation#Windows_Networking_Connectivity_NetworkInformation_NetworkStatusChanged) event (part of the [**NetworkInformation**](/uwp/api/Windows.Networking.Connectivity.NetworkInformation) API) is generated when network identification determines the connectivity level of the network. For more information about network identification, see [Quickstart: Retrieving network connection information](/previous-versions/windows/apps/hh452990(v=win.10)) and the **NetworkInformation** class.
 
 ### RegisteredRoaming and RegisteredHome
 
@@ -125,7 +125,7 @@ The app should only notify the user one time when they register on a roaming net
 
 The MobileOperatorNotification event is generated with this **MessageType**s when the user turns on Internet Sharing. The event is triggered every time the user tries to use Internet Sharing as long as the mobile operator has set the [AllowTethering](allowtethering.md) element in the service metadata schema to **EntitlementCheckRequired**. For more info about the service metadata schema, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
-The app should run the appropriate entitlement check mechanism supported by the mobile operator network and send the outcome to the system by using the [**AuthorizeTethering**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails#Windows_Networking_NetworkOperators_NetworkOperatorNotificationEventDetails_AuthorizeTethering_System_Boolean_System_String_) method of the [**NetworkOperatorNotificationEventDetails**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails) class in the [**Windows.Networking.NetworkOperators**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators) namespace. If the app does not have the capability to run the entitlement check, the mobile operator should change the Service Metadata [AllowTethering](allowtethering.md) element to **Always** or **Never**, so that the event is never generated.
+The app should run the appropriate entitlement check mechanism supported by the mobile operator network and send the outcome to the system by using the [**AuthorizeTethering**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails#Windows_Networking_NetworkOperators_NetworkOperatorNotificationEventDetails_AuthorizeTethering_System_Boolean_System_String_) method of the [**NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails) class in the [**Windows.Networking.NetworkOperators**](/uwp/api/Windows.Networking.NetworkOperators) namespace. If the app does not have the capability to run the entitlement check, the mobile operator should change the Service Metadata [AllowTethering](allowtethering.md) element to **Always** or **Never**, so that the event is never generated.
 
 ## Register for the MobileOperatorNotification event by using metadata
 

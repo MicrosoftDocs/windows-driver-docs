@@ -1,5 +1,5 @@
 ---
-title: Bluetooth Version and Profile Support in Previous Windows Versions
+title: Bluetooth Software Radio Switch Function Prototypes
 description: Bluetooth Version and Profile Support in Previous Windows Versions
 ms.assetid: A5A81EAA-0DC7-4725-AA0D-5C4867DDE47C
 ms.date: 02/12/2018

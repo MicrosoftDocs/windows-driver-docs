@@ -137,7 +137,7 @@ Ndiskd.dll
 
 ### Examples
 
-By running **!ndiskd.netadapter** with no parameters, you can get a list of all network adapters on the system along with their associated miniport drivers. In this example output, look for the Microsoft Kernel Debug Network Adapter, whose handle is ffffdf80140c71a0. For more information about what the Kernel Debug Network Adapter is, see [Kernel debugging over the network](https://docs.microsoft.com/archive/blogs/ndis/kernel-debugging-over-the-network) on the NDIS blog.
+By running **!ndiskd.netadapter** with no parameters, you can get a list of all network adapters on the system along with their associated miniport drivers. In this example output, look for the Microsoft Kernel Debug Network Adapter, whose handle is ffffdf80140c71a0. For more information about what the Kernel Debug Network Adapter is, see [Kernel debugging over the network](/archive/blogs/ndis/kernel-debugging-over-the-network) on the NDIS blog.
 
 ```console
 3: kd> !ndiskd.netadapter
@@ -261,9 +261,9 @@ You can now click the "bp" link to the right of each handler to set a breakpoint
 
 ## See also
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -271,6 +271,6 @@ You can now click the "bp" link to the right of each handler to set a breakpoint
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Kernel debugging over the network](https://docs.microsoft.com/archive/blogs/ndis/kernel-debugging-over-the-network)
+[Kernel debugging over the network](/archive/blogs/ndis/kernel-debugging-over-the-network)
 
 [**!ndiskd.minidriver**](-ndiskd-minidriver.md)

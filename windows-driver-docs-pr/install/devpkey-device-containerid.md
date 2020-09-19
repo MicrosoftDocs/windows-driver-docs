@@ -74,7 +74,7 @@ The DEVPKEY_Device_ContainerId can be used to determine the device container gro
 
  
 
-For more information about ContainerIDs, see [Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids).
+For more information about ContainerIDs, see [Container IDs](./container-ids.md).
 
 Requirements
 ------------
@@ -99,16 +99,9 @@ Requirements
 ## See also
 
 
-[Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids)
+[Container IDs](./container-ids.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

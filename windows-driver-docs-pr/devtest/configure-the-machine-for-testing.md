@@ -9,10 +9,10 @@ ms.localizationpriority: medium
 ---
 
 # Configure the machine for testing
-This topic outlines the steps required to install [WDTF](https://docs.microsoft.com/windows-hardware/drivers/wdtf/) and [TAEF](https://docs.microsoft.com/windows-hardware/drivers/taef/), copy the data-driven tests, and configure the machine for testing. Note that the following commands must be executed from an elevated/administrator command prompt because WDTF installation installs drivers on the system.
+This topic outlines the steps required to install [WDTF](../wdtf/index.md) and [TAEF](../taef/index.md), copy the data-driven tests, and configure the machine for testing. Note that the following commands must be executed from an elevated/administrator command prompt because WDTF installation installs drivers on the system.
 The instructions below assume the system architecture is x64.  The following steps may need to be adjusted for other architectures.
 
-**Step 1**: Obtain the packages and files from the latest [EWDK](https://docs.microsoft.com/windows-hardware/drivers/develop/installing-the-enterprise-wdk) by accepting the licensing terms and saving the EWDK ISO file to the machine on which the tests will run. The EWDK does not require the installation of Visual Studio. Simply download the EWDK ISO, mount the ISO, and copy the files specified below. To mount the ISO, right-click the ISO file and the click **Mount**. When it is mounted, an ISO drive letter is assigned to the mounted ISO.
+**Step 1**: Obtain the packages and files from the latest [EWDK](../develop/using-the-enterprise-wdk.md) by accepting the licensing terms and saving the EWDK ISO file to the machine on which the tests will run. The EWDK does not require the installation of Visual Studio. Simply download the EWDK ISO, mount the ISO, and copy the files specified below. To mount the ISO, right-click the ISO file and the click **Mount**. When it is mounted, an ISO drive letter is assigned to the mounted ISO.
 
 **Step 2**: Install TAEF by navigating to the location of the TAEF MSI in the mounted ISO and installing the package for the desired architecture. Specify a location and name for the installation log file, **%USERPROFILE%\Desktop\TAEFInstall.log** in this example:
 
@@ -63,4 +63,3 @@ The WDTF MSI installs WDTF to **%PROGRAMFILES%\Windows Kits\10\Testing\Runtimes\
 2.	Because the tests can potentially reboot the machine and need to control the sleep cycles, configure the machine to never sleep, never turn off display, and autologon to a test account (netplwiz.exe).  Note that autologon should be used with caution.
 
 **Step 5**: Obtain the data-driven test binaries by copying all files from **\<ISO drive>\Program Files\Windows Kits\10\Testing\Tests\Additional Tests\x64\DevFund\DataDriven** to a local folder such as **%USERPROFILE%\Desktop\Tests**. Unmount the ISO.
-

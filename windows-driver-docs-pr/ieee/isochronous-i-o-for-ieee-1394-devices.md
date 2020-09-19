@@ -27,22 +27,17 @@ Real-time multimedia devices such as digital cameras need large amounts of bandw
 
 This section includes:
 
-[Setting Up Isochronous Transfer for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/setting-up-isochronous-transfer-for-ieee-1394-devices)
+[Setting Up Isochronous Transfer for IEEE 1394 Devices](./setting-up-isochronous-transfer-for-ieee-1394-devices.md)
 
-[Buffering Isochronous DMA Transfers for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/buffering-isochronous-dma-transfers-for-ieee-1394-devices)
+[Buffering Isochronous DMA Transfers for IEEE 1394 Devices](./buffering-isochronous-dma-transfers-for-ieee-1394-devices.md)
 
-[Isochronous Listen Options for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/isochronous-listen-options-for-ieee-1394-devices)
+[Isochronous Listen Options for IEEE 1394 Devices](./isochronous-listen-options-for-ieee-1394-devices.md)
 
-[Isochronous Talk Options for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/isochronous-talk-options-for-ieee-1394-devices)
+[Isochronous Talk Options for IEEE 1394 Devices](./isochronous-talk-options-for-ieee-1394-devices.md)
 
-[Isochronous Synchronization Options for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/isochronous-synchronization-options-for-ieee-1394-devices)
+[Isochronous Synchronization Options for IEEE 1394 Devices](./isochronous-synchronization-options-for-ieee-1394-devices.md)
 
-[Completing an Isochronous Data Transfer](https://docs.microsoft.com/windows-hardware/drivers/ieee/completing-an-isochronous-data-transfer)
-
- 
+[Completing an Isochronous Data Transfer](./completing-an-isochronous-data-transfer.md)
 
  
-
-
-
 

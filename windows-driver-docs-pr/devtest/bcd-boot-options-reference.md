@@ -81,4 +81,4 @@ Before setting BCDEdit options you might need to disable or suspend BitLocker an
 
  ## See also
  
- [Adding Boot Entries](https://docs.microsoft.com/windows-hardware/drivers/devtest/adding-boot-entries)
+ [Adding Boot Entries](./adding-boot-entries.md)

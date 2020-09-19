@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_AP\_ASSOCIATION\_REQUEST\_RE
 
 | Type                                                                                                     | Multiple TLV instances allowed | Optional | Description                                   |
 |----------------------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------|
-| [**WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-incoming-association-request-info) |                                |          | The incoming Association Request information. |
+| [**WDI\_TLV\_INCOMING\_ASSOCIATION\_REQUEST\_INFO**](./wdi-tlv-incoming-association-request-info.md) |                                |          | The incoming Association Request information. |
 
  
 
@@ -53,9 +53,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

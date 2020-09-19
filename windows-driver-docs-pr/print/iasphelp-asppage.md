@@ -81,7 +81,7 @@ This method can return one of these values.
 
 ## VBScript Example
 
-To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](https://docs.microsoft.com/windows-hardware/drivers/print/which-printer-details-page-is-displayed-).
+To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](./which-printer-details-page-is-displayed-.md).
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::AspPage** property can be queried.
 

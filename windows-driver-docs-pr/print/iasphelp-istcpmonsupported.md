@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 # Iasphelp::get\_IsTCPMonSupported method
 
-The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](https://docs.microsoft.com/windows-hardware/drivers/print/port-monitors) is being used with a printer.
+The **IsTCPMonSupported** property enables an ASP Web page to determine if Microsoft's standard TCP/IP [port monitor](./port-monitors.md) is being used with a printer.
 
 Syntax
 ------

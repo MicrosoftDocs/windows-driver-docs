@@ -48,13 +48,7 @@ class MSiSCSI_RADIUSConfig {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RADIUSConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_radiusconfig) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_RADIUSConfig**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_radiusconfig) data structure.
 
  
-
- 
-
-
-
-
 

@@ -23,7 +23,7 @@ The IPrinterScriptUsbWritePrintDataProgress interface is passed as a parameter i
 Members
 -------
 
-The **IPrinterScriptUsbWritePrintDataProgress** interface inherits from the [**IUnknown**](https://docs.microsoft.com/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbWritePrintDataProgress** also has these types of members:
+The **IPrinterScriptUsbWritePrintDataProgress** interface inherits from the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. **IPrinterScriptUsbWritePrintDataProgress** also has these types of members:
 
 -   [Methods](#methods)
 

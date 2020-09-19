@@ -25,6 +25,6 @@ This sample serves three purposes: First, it demonstrates the minimal functional
 
 ## Related topics
 
-[The Sensor Diagnostic Tool](https://docs.microsoft.com/windows-hardware/drivers/sensors/the-sensor-diagnostic-tool)
+[The Sensor Diagnostic Tool](../sensors/the-sensor-diagnostic-tool.md)
   
 [Writing a Location Sensor Driver](writing-a-location-sensor-driver.md)

@@ -24,7 +24,7 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-An [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) provider can assign unique alias strings for its interfaces. If the name should remain associated with the same interface, the provider can make the strings persistent after the computer restarts and reinitializations.
+An [NDIS network interface](./ndis-network-interfaces2.md) provider can assign unique alias strings for its interfaces. If the name should remain associated with the same interface, the provider can make the strings persistent after the computer restarts and reinitializations.
 
 Only NDIS network interface providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
@@ -49,12 +49,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
- 
-
-
-
 

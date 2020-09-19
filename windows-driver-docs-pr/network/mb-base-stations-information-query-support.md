@@ -32,10 +32,10 @@ Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 ### Parameters
 
-| | Set | Query | Notification |
+| Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_BASE_STATIONS_INFO_REQ | Not applicable |
-| Response | Not appliable | MBIM_BASE_STATIONS_INFO | Not applicable |
+| Response | Not applicable | MBIM_BASE_STATIONS_INFO | Not applicable |
 
 ### Query
 
@@ -319,7 +319,7 @@ Service UUID: **3d01dcc5-fef5-4d05-0d3a-bef7058e9aaf**
 
 ### Parameters
 
-| | Set | Query | Notification |
+| Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Not applicable | Not applicable |
 | Response | Not appliable | MBIM_LOCATION_INFO | MBIM_LOCATION_INFO |

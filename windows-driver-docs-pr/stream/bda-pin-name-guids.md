@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_bda_pin_name_guids_ks"></span><span id="DDK_BDA_PIN_NAME_GUIDS_KS"></span>
 
 
-A BDA minidriver uses BDA pin name GUIDs to specify the names and categories of pins it supports. A BDA minidriver assigns these GUIDs to the **Name** and **Category** members of a [**KSPIN\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) structure. The *Bdamedia.h* header file defines these GUIDs. Pins of filters specify their names and categories to connect to pins of other filters that also specify those names and categories.
+A BDA minidriver uses BDA pin name GUIDs to specify the names and categories of pins it supports. A BDA minidriver assigns these GUIDs to the **Name** and **Category** members of a [**KSPIN\_DESCRIPTOR**](/windows-hardware/drivers/ddi/ks/ns-ks-kspin_descriptor) structure. The *Bdamedia.h* header file defines these GUIDs. Pins of filters specify their names and categories to connect to pins of other filters that also specify those names and categories.
 
 The following pin name GUIDs are available in BDA:
 
@@ -41,10 +41,4 @@ Pin name for an input pin to a BDA IP sink node (KSNODE\_BDA\_IP\_SINK).
 Pin name for a multiprotocol encapsulation (MPE) pin.
 
  
-
- 
-
-
-
-
 

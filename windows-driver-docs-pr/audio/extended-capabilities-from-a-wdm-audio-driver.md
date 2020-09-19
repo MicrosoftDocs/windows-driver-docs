@@ -19,9 +19,9 @@ ms.localizationpriority: medium
 ## <span id="extended_capabilities_from_a_wdm_audio_driver"></span><span id="EXTENDED_CAPABILITIES_FROM_A_WDM_AUDIO_DRIVER"></span>
 
 
-By handling the [**KSPROPERTY\_GENERAL\_COMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-general-componentid) property, an audio filter can provide hardware-specific information that applications can use to uniquely identify the underlying device. Microsoft Windows XP is the first version of Windows to support this feature; this feature is not available in earlier versions.
+By handling the [**KSPROPERTY\_GENERAL\_COMPONENTID**](../stream/ksproperty-general-componentid.md) property, an audio filter can provide hardware-specific information that applications can use to uniquely identify the underlying device. Microsoft Windows XP is the first version of Windows to support this feature; this feature is not available in earlier versions.
 
-The filter provides the hardware-specific information in the form of a [**KSCOMPONENTID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) structure that contains the following:
+The filter provides the hardware-specific information in the form of a [**KSCOMPONENTID**](/windows-hardware/drivers/ddi/ks/ns-ks-kscomponentid) structure that contains the following:
 
 -   Manufacturer GUID
 
@@ -128,9 +128,4 @@ On Windows releases earlier than Windows XP, the legacy members of the capabilit
 The INIT\_MMREG\_MID and INIT\_MMREG\_PID macros above are defined in Ksmedia.h. These macros are used to convert the manufacturer and product IDs in the **wMid** and **wPid** members to GUIDs that are loaded into the **ManufacturerGuid** and **ProductGuid** members.
 
  
-
- 
-
-
-
 

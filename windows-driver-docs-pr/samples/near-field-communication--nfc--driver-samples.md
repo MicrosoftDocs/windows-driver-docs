@@ -12,4 +12,4 @@ The driver sample in this directory provides a starting point for writing a cust
 
 | Sample | Description |
 | --- | --- |
-| [NFC Simulator Driver Sample](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/nfc-cx-client-driver-sample/) | Demonstrates how to use User-Mode Driver Framework (UMDF) to write a Near-Field Communication (NFC) universal driver along with best practices. |
+| [NFC Simulator Driver Sample](/samples/microsoft/windows-driver-samples/nfc-cx-client-driver-sample/) | Demonstrates how to use User-Mode Driver Framework (UMDF) to write a Near-Field Communication (NFC) universal driver along with best practices. |

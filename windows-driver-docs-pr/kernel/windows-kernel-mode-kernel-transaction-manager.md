@@ -13,7 +13,7 @@ When you are dealing with multiple reads and writes on one or more data stores, 
 
 The kernel transaction manager (KTM) is the Windows kernel-mode component that implements transaction processing in kernel mode. KTM allows kernel mode components, such as drivers, to perform transactions. In addition, KTM is the platform on which user-mode [Transactional NTFS (TxF)](https://go.microsoft.com/fwlink/p/?linkid=131245) is based.
 
-For information about how to use KTM in kernel-mode components, see [Kernel Transaction Manager](using-kernel-transaction-manager.md).
+For information about how to use KTM in kernel-mode components, see [Kernel Transaction Manager](introduction-to-ktm.md).
 
  
 

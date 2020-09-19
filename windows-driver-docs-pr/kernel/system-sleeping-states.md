@@ -21,7 +21,7 @@ With each successive sleep state, from S1 to S4, more of the computer is shut do
 
 Details of the intermediate sleep states can vary depending on how the manufacturer has designed the machine. For example, on some machines certain chips on the motherboard might lose power at S3, while on others such chips retain power until S4. Furthermore, some devices might be able to wake the system only from S1 and not from deeper sleep states.
 
-Use `powercfg /a` to enumerate all available sleep states on a system. A user can specify the action to take when the sleep power button is pressed by using the [Sleep button action](https://docs.microsoft.com/windows-hardware/customize/power-settings/power-button-and-lid-settings-sleep-button-action).
+Use `powercfg /a` to enumerate all available sleep states on a system. A user can specify the action to take when the sleep power button is pressed by using the [Sleep button action](/windows-hardware/customize/power-settings/power-button-and-lid-settings-sleep-button-action).
 
 Typically, when the user presses the sleep button, the system goes to the S3 system power state.
 
@@ -96,9 +96,4 @@ Long and undefined. Only physical interaction returns the system to the working 
 None retained in hardware. The system writes an image of memory in the hibernate file before powering down. When the operating system is loaded, it reads this file and jumps to its previous location.
 
  
-
- 
-
-
-
 

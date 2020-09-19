@@ -61,12 +61,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_SET\_ADD\_WOL\_PATTERN](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-add-wol-pattern)
+[OID\_WDI\_SET\_ADD\_WOL\_PATTERN](./oid-wdi-set-add-wol-pattern.md)
 
  
-
- 
-
-
-
 

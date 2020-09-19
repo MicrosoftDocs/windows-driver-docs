@@ -15,9 +15,9 @@ The following table shows the data fields. For more information about the data t
 
 |Property key|Type|Required/Optional|Description|
 | --- | --- | --- | --- |
-|PKEY_SensorData_CurrentActivityState|VT_UI4|Required|An indication of the current activity state, expressed as a value of type [<strong>ACTIVITY_STATE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-activity_state).|
+|PKEY_SensorData_CurrentActivityState|VT_UI4|Required|An indication of the current activity state, expressed as a value of type [<strong>ACTIVITY_STATE</strong>](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-activity_state).|
 |PKEY_SensorData_CurrentActivityStateConfidence_Percentage|VT_UI2|Required|Confidence level of the sensor in indicating the current activity state.|
-|PKEY_SensorData_SubscribedActivityStates|VT_UI4|Required|An indication of the subscribed activity state, expressed as a value of type [<strong>ACTIVITY_STATE</strong>](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-activity_state).|
+|PKEY_SensorData_SubscribedActivityStates|VT_UI4|Required|An indication of the subscribed activity state, expressed as a value of type [<strong>ACTIVITY_STATE</strong>](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-activity_state).|
 |PKEY_SensorData_ActivityStream|VT_BOOL|Required|Boolean value that is set to TRUE, if an activity stream is available.|
 |PKEY_SensorData_ConfidenceThreshold_Percentage|VT_UI2|Required|A threshold value for the sensor's confidence level.|
  
@@ -25,16 +25,9 @@ The following table shows the data fields. For more information about the data t
 ## Related topics
 
 
-[**ACTIVITY\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-activity_state)
+[**ACTIVITY\_STATE**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-activity_state)
 
 [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
  
-
- 
-
-
-
-
-
 

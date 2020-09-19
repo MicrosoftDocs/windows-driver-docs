@@ -55,11 +55,5 @@ For more information, see [Run the DevFund Tests via the command-line](https://r
 
 ## See Also
 
-[Tools for Verifying Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-verifying-drivers)
-
- 
-
-
-
-
+[Tools for Verifying Drivers](../devtest/tools-for-verifying-drivers.md)
 

@@ -1,34 +1,36 @@
 ---
-title: Minifilter Altitude Request
-description: Minifilter Altitude Request
-ms.assetid: 4861E5FC-9883-455F-A925-EBAFC890F568
-ms.date: 04/20/2017
+title: Filter Altitude Request
+description: How to request a file system filter altitude
+ms.date: 08/31/2020
+keywords:
+- WDK request a filter altitude
+- WDK request a minifilter altitude
 ms.localizationpriority: medium
 ---
 
-# Minifilter Altitude Request
+# Filter altitude request
 
-A file system minifilter driver developed to the Filter Manager model must have a unique identifier called an altitude that defines its position relative to other minifilters present in the file system stack.
+A file system filter driver must have a unique identifier called an altitude that defines its position relative to other filters present in the file system stack.
 
-To request a minifilter altitude identifier, send email in an ASCII text e-mail message to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Minifilter%20altitude%20request) with the subject: “Minifilter altitude request”. The body of the email must contain the below fields and corresponding information.
+To request a filter altitude identifier, send email in an ASCII text e-mail message to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) with the subject: “Filter altitude request”. The body of the email must contain the below fields and corresponding information.
 
 An altitude for this filter will then be e-mailed back to the specified contact e-mail address.
 
-You can also send email to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Minifilter%20altitude%20request) to update information associated with existing altitudes.
+You can also send email to [fsfcomm@microsoft.com](mailto:fsfcomm@microsoft.com?subject=Filter%20altitude%20request) to update information associated with existing altitudes.
 
-|Field|Comment|
-|----|----|
-|Company name:| |
-|Contact e-mail:|Provide a long-term company email alias, versus individual email.|
-|Product name:| |
-|Product URL:| |
-|Product/Filter description:|A one paragraph summary to help Microsoft determine an appropriate altitude for the filter.|
-|Filter filename:| |
-|Filter type:|One of these values: Registry, FileSystem, Both|
-|Filter start-type:|One of these values: Boot, System, Auto, Demand|
-|Requested filter load order group:|See the [File System Minifilter Allocated Altitudes](allocated-altitudes.md) for available load order groups.|
-|Requested altitude:|Microsoft reserves the right to assign an altitude that is different from the requested altitude, depending on altitude availability and the filter driver functionality.|
-|Additional information:|Use this field to let us know if there is any information you would like Microsoft to consider when assigning an altitude to this filter.|
+| Field | Comment |
+| ----- | ------- |
+| Company name:    |  |
+| Contact e-mail:  | Provide a long-term company email alias, versus individual email. |
+| Product name:    |  |
+| Product URL:     |  |
+| Product/Filter description: | A one paragraph summary to help Microsoft determine an appropriate altitude for the filter. |
+| Filter filename: |  |
+| Filter type:     | One of these values: Registry, FileSystem, Both |
+| Filter start-type: | One of these values: Boot, System, Auto, Demand |
+| Requested filter load order group: | See [Load order groups and altitudes](load-order-groups-and-altitudes-for-minifilter-drivers.md) for the list of available groups. |
+| Requested altitude: | You must request an altitude allocation in the appropriate [load order group or groups](load-order-groups-and-altitudes-for-minifilter-drivers.md) for your filter. Microsoft reserves the right to assign an altitude that is different from the requested altitude, depending on altitude availability and the filter driver functionality. |
+| Additional information: | Use this field to let us know if there is any information you would like Microsoft to consider when assigning an altitude to this filter. |
 
 The following is an example for the body of an allocation request email.
 
@@ -54,7 +56,8 @@ Thanks,
 FilterDev
 ```
 
->[!NOTE]
->- All fields must be filled out.
->- It may take Microsoft up to two weeks to process and assign altitudes. Any missing information may delay the assignment.
->- The assigned altitude will eventually be reflected in the altitudes listed in [File System Minifilter Allocated Altitudes](allocated-altitudes.md). Please be aware that Microsoft only updates this list annually.
+> [!NOTE]
+>
+> * All fields must be filled out.
+> * It may take Microsoft up to two weeks to process and assign altitudes. Any missing information may delay the assignment.
+> * The assigned altitude will eventually be reflected in the altitudes listed in [Allocated Altitudes](allocated-altitudes.md).

@@ -46,7 +46,7 @@ For example:
 value = parameters,NumberOfButtons,REG_DWORD,2
 ```
 
-<a href="" id="reg-sz-or-reg-expand-sz"></a>REG_SZ or [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)  
+<a href="" id="reg-sz-or-reg-expand-sz"></a>REG_SZ or [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types)  
 One *value* is allowed; it is interpreted as the null-terminated string to be stored.
 
 For example:
@@ -86,10 +86,4 @@ value = parameters\PnpInterface,5,REG_DWORD,1
 ```
 
  
-
- 
-
-
-
-
 

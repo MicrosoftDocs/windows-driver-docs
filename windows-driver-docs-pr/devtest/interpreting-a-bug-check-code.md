@@ -57,31 +57,24 @@ Under some conditions, Windows will display only the first line of the blue scre
 
 ### <span id="bug_check_symbolic_names"></span><span id="BUG_CHECK_SYMBOLIC_NAMES"></span>Bug Check Symbolic Names
 
-Each bug check code also has an associated symbolic name. These names usually do not appear on the blue screen. In these examples, the first screen shows [**bug check 0x79**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x79--mismatched-hal) (MISMATCHED\_HAL), while the second shows [**bug check 0xC000021A**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc000021a--status-system-process-terminated) (STATUS\_SYSTEM\_PROCESS\_TERMINATED).
+Each bug check code also has an associated symbolic name. These names usually do not appear on the blue screen. In these examples, the first screen shows [**bug check 0x79**](../debugger/bug-check-0x79--mismatched-hal.md) (MISMATCHED\_HAL), while the second shows [**bug check 0xC000021A**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc000021a--status-system-process-terminated) (STATUS\_SYSTEM\_PROCESS\_TERMINATED).
 
-You can deliberately cause a bug check from a kernel-mode driver by passing the bug check's symbolic name to [**KeBugCheck**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kebugcheck) or [**KeBugCheckEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kebugcheckex). This should only be done in circumstances where no other option is available.
+You can deliberately cause a bug check from a kernel-mode driver by passing the bug check's symbolic name to [**KeBugCheck**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kebugcheck) or [**KeBugCheckEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kebugcheckex). This should only be done in circumstances where no other option is available.
 
 ### <span id="reading_bug_check_information_from_the_debugger"></span><span id="READING_BUG_CHECK_INFORMATION_FROM_THE_DEBUGGER"></span>Reading Bug Check Information from the Debugger
 
 If a debugger is attached, a bug check will cause the target computer to break into the debugger. In this case, the blue screen may not appear, or may appear with less text; the full details on this crash will be sent to the debugger and appear in the debugger window. For more information, see [Using a Debugger](using-a-debugger.md).
 
-This reference section for the bug check codes can be found as part of [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index). See [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2) for descriptions of the bug checks and parameters. Each reference page lists the bug check code, the text string, and the four additional parameters which are displayed with each bug check. It also describes how you can diagnose the fault that led to the bug check, and possible ways to deal with the error.
+This reference section for the bug check codes can be found as part of [Windows Debugging](../debugger/index.md). See [Bug Check Code Reference](../debugger/bug-check-code-reference2.md) for descriptions of the bug checks and parameters. Each reference page lists the bug check code, the text string, and the four additional parameters which are displayed with each bug check. It also describes how you can diagnose the fault that led to the bug check, and possible ways to deal with the error.
 
 For a full list of bug check codes, see the Bugcodes.h file. This file can be found in the inc directory of the Microsoft Windows Driver Kit (WDK).
 
 ## <span id="related_topics"></span>Related topics
 
 
-[Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2)
+[Bug Check Code Reference](../debugger/bug-check-code-reference2.md)
 
-[Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index)
-
- 
+[Windows Debugging](../debugger/index.md)
 
  
-
-
-
-
-
 

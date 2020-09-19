@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 ## <span id="ddk_checked_build_breakpoints_and_messages_tools"></span><span id="DDK_CHECKED_BUILD_BREAKPOINTS_AND_MESSAGES_TOOLS"></span>
 
-This topic contains a list and explanation of some of the common breakpoints and [**DbgPrint**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) messages that a driver might encounter in the checked build.
+This topic contains a list and explanation of some of the common breakpoints and [**DbgPrint**](/windows-hardware/drivers/ddi/wdm/nf-wdm-dbgprint) messages that a driver might encounter in the checked build.
 
 > [!NOTE]
 > Checked builds were available on older versions of Windows, before Windows 10 version 1803.
@@ -49,10 +49,4 @@ The driver named *xxxxxx* supports IRP\_MJ\_PNP, but did not specify an unload r
 The device object at address 0x*nnnnnnnn* was created outside of **DriverEntry**, but the DO\_DEVICE\_INITIALIZING bit was not cleared before returning to the system.
 
  
-
- 
-
-
-
-
 

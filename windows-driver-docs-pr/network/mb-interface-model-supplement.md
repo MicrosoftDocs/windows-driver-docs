@@ -195,7 +195,7 @@ The **bmRequestType** field is a bitmap composed of three parts—direction of d
 
 The **bRequest** field is used to indicate the format of the request. To retrieve a Microsoft OS feature descriptor, the **bRequest** field should be populated with a special GET\_MS\_DESCRIPTOR byte. The value of this byte is indicated by the **bMS\_VendorCode**, which is retrieved from the Microsoft string descriptor. For more information about the retrieval of the Microsoft OS string descriptor, see **Retrieving the OS string descriptor**.
 
-The **wValue** field is put to special use and is broken up into a high byte and a low byte. The high byte is used to store the interface number. This is essential for storing feature descriptors on a per interface basis, especially for composite devices, or devices with [multiple interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/index). In most cases, interface 0 will be used. The low byte is used to store a page number. This feature prevents descriptors from having a size boundary of 64 KB (a limit set by the size of the **wLength** field). A descriptor will be fetched with the page value initially set to zero. If a full descriptor (size is 64 KB) is received, the page value will be incremented by one and the request for the descriptor will be sent again (this time with the incremented page value). This process will repeat until a descriptor with a size less than 64 KB is received. Note that the maximum number of pages is 255, which places a limit of 16 MB on the descriptor size.
+The **wValue** field is put to special use and is broken up into a high byte and a low byte. The high byte is used to store the interface number. This is essential for storing feature descriptors on a per interface basis, especially for composite devices, or devices with [multiple interfaces](/windows-hardware/drivers/ddi/index). In most cases, interface 0 will be used. The low byte is used to store a page number. This feature prevents descriptors from having a size boundary of 64 KB (a limit set by the size of the **wLength** field). A descriptor will be fetched with the page value initially set to zero. If a full descriptor (size is 64 KB) is received, the page value will be incremented by one and the request for the descriptor will be sent again (this time with the incremented page value). This process will repeat until a descriptor with a size less than 64 KB is received. Note that the maximum number of pages is 255, which places a limit of 16 MB on the descriptor size.
 
 The **wIndex** field stores the feature index number for the Microsoft OS feature descriptor being retrieved. Microsoft will maintain this list of Microsoft OS feature descriptors and indexes. To learn more about Microsoft OS feature descriptors, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=308932).
 
@@ -608,10 +608,4 @@ The following tables show the values used by the Microsoft OS string descriptor 
 ²Offset of the custom property section has been reset to zero. To calculate the offset of a field from the beginning of the extended configuration descriptor, add the length of the sections that precede it.
 
  
-
- 
-
-
-
-
 

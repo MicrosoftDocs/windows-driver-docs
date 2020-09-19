@@ -20,15 +20,9 @@ ms.localizationpriority: medium
 ## <span id="ddk_flagging_support_for_nonlocal_display_memory_gg"></span><span id="DDK_FLAGGING_SUPPORT_FOR_NONLOCAL_DISPLAY_MEMORY_GG"></span>
 
 
-A driver must inform DirectDraw (and DirectDraw applications) that it is AGP-compatible. This is accomplished by specifying the capability bit DDCAPS2\_NONLOCALVIDMEM in the **dwCaps2** member of the [**DDCORECAPS**](https://docs.microsoft.com/windows/desktop/api/ddrawi/ns-ddrawi-_ddcorecaps) structure, which is part of the [**DD\_HALINFO**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_halinfo) structure passed to DirectDraw.
+A driver must inform DirectDraw (and DirectDraw applications) that it is AGP-compatible. This is accomplished by specifying the capability bit DDCAPS2\_NONLOCALVIDMEM in the **dwCaps2** member of the [**DDCORECAPS**](/windows/win32/api/ddrawi/ns-ddrawi-_ddcorecaps) structure, which is part of the [**DD\_HALINFO**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_halinfo) structure passed to DirectDraw.
 
 If running on an operating system that does not support AGP services, DirectDraw turns off the DDCAPS2\_NONLOCALVIDMEM capability bit and all associated nonlocal heaps.
 
  
-
- 
-
-
-
-
 

@@ -47,7 +47,7 @@ The KSPROPERTY\_AUDIO\_MUX\_SOURCE property specifies the source for the output 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -64,7 +64,7 @@ A KSPROPERTY\_AUDIO\_MUX\_SOURCE property request returns STATUS\_SUCCESS to ind
 Remarks
 -------
 
-The pin ID identifies a logical pin on the MUX node. For a discussion of pin IDs for logical pins on a node inside a filter, see [**PCCONNECTION\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
+The pin ID identifies a logical pin on the MUX node. For a discussion of pin IDs for logical pins on a node inside a filter, see [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
 
 Requirements
 ------------
@@ -87,16 +87,7 @@ Requirements
 
 [**KSNODETYPE\_MUX**](ksnodetype-mux.md)
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
-[**PCCONNECTION\_DESCRIPTOR**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff537688(v=vs.85))
-
- 
-
- 
-
-
-
-
-
+[**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85))
 

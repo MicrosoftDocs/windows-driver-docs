@@ -26,7 +26,7 @@ This command follows property semantics. It should be treated as a signal, shoul
 
 | TLV                                                                    | Multiple TLV instances allowed | Optional | Description                                          |
 |------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------|
-| [**WDI\_TLV\_CANCEL\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-cancel-parameters) |                                |          | Information for the command that is being cancelled. |
+| [**WDI\_TLV\_CANCEL\_PARAMETERS**](./wdi-tlv-cancel-parameters.md) |                                |          | Information for the command that is being cancelled. |
 
  
 
@@ -178,9 +178,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

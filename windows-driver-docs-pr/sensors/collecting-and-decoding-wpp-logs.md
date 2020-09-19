@@ -17,12 +17,12 @@ WPP provides ways to trace the operation of software components known as trace p
 
 -   SensorsUtilsV2.pdb
 
-The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracelog). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracing-tool-concepts).
+The tracelog tool is used to collect WPP logs. For more information, see [Tracelog](../devtest/tracelog.md). For more information about tracing concepts such as tracing GUIDs, trace flags, trace levels, or PDB files, see [Tracing Tool Concepts](../devtest/tracing-tool-concepts.md).
 
 ## Tracing GUID
 
 
-The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracelog).
+The following GUID identifies the trace provider for the CX driver in the sensor V2 stack. For more information about using this GUID with tracelog, see [Tracelog](../devtest/tracelog.md).
 
 ``` syntax
 c88b592b-6090-480f-a839-ca2434de5844
@@ -164,9 +164,4 @@ The tracefmt tool is used to decode ETL logs. For more information about this to
 If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md.
 
  
-
- 
-
-
-
 

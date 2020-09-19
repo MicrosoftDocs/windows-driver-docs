@@ -16,9 +16,9 @@ ms.custom: 19H1
 
 # !ndiskd.netrb
 
-The **!ndiskd.netrb** extension displays information about a [NET\_RING\_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-ring-buffer) structure.
+The **!ndiskd.netrb** extension displays information about a [NET\_RING\_BUFFER](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring) structure.
 
-For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
+For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](../netcx/index.md).
 
 ```console
 !ndiskd.netrb -handle <x> [-basic] [-dump] [-elementtype <str>] 
@@ -44,7 +44,7 @@ Ndiskd.dll
 
 ### Examples
 
-**Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_RING\_BUFFER object with other objects in the NetAdapterCx.
+**Note**  See [Summary of Objects](../netcx/summary-of-netadaptercx-objects.md) to see a diagram explaining the relationship of the NET\_RING\_BUFFER object with other objects in the NetAdapterCx.
 
 To obtain a handle for a NET\_RING\_BUFFER, follow these steps:
 
@@ -112,9 +112,9 @@ To see this NET\_RING\_BUFFER's elements, either click the "List all elements" l
 
 ## See also
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -122,11 +122,11 @@ To see this NET\_RING\_BUFFER's elements, either click the "List all elements" l
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx)
+[Network Adapter WDF Class Extension (Cx)](../netcx/index.md)
 
-[Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects)
+[Summary of Objects](../netcx/summary-of-netadaptercx-objects.md)
 
-[NET\_RING\_BUFFER](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-ring-buffer)
+[NET\_RING\_BUFFER](/windows-hardware/drivers/ddi/ring/ns-ring-_net_ring)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 

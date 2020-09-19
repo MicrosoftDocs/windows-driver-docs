@@ -26,7 +26,7 @@ Your debugger preference is used in two cases:
 
 If you select the **Customized command line** box, WDF Verifier passes the specified string to whatever debugger you have chosen.
 
-The default command line for the Debugging Tools for Windows debuggers bypasses the initial break, attaches to a specific PID, and instructs the debugger to detach from the process and leave it running when you close the debugger. For a complete list of command line options for Microsoft-provided debuggers, see [Command-Line Options](https://docs.microsoft.com/windows-hardware/drivers/debugger/command-line-options).
+The default command line for the Debugging Tools for Windows debuggers bypasses the initial break, attaches to a specific PID, and instructs the debugger to detach from the process and leave it running when you close the debugger. For a complete list of command line options for Microsoft-provided debuggers, see [Command-Line Options](../debugger/command-line-options.md).
 
 You can also change the default settings. For example:
 
@@ -53,10 +53,4 @@ The selections are shown as a guide in case you want to click **No** and perform
 If you select the **Do not ask for permission again...** box, your choice persists unless you change the reboot setting on the My Preferences tab.
 
  
-
- 
-
-
-
-
 

@@ -20,4 +20,4 @@ This section contains design guidance for building Global Navigation Satellite S
 
 ## Related sections
 
-- [Global Navigation Satellite System (GNSS) DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/gnssdriver/index)
+- [Global Navigation Satellite System (GNSS) DDI reference](/windows-hardware/drivers/ddi/gnssdriver/index)

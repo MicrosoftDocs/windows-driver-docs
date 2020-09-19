@@ -10,8 +10,8 @@ ms.localizationpriority: medium
 
 Three helper classes are part of the WIA Utility Library:
 
-- [CWiauDbgFn Class](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiautil/nl-wiautil-cwiaudbgfn)
+- [CWiauDbgFn Class](/windows-hardware/drivers/ddi/wiautil/nl-wiautil-cwiaudbgfn)
 
-- [CWiauFormatConverter Class](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiautil/nl-wiautil-cwiauformatconverter)
+- [CWiauFormatConverter Class](/windows-hardware/drivers/ddi/wiautil/nl-wiautil-cwiauformatconverter)
 
-- [CWiauPropertyList Class](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiautil/nl-wiautil-cwiaupropertylist)
+- [CWiauPropertyList Class](/windows-hardware/drivers/ddi/wiautil/nl-wiautil-cwiaupropertylist)

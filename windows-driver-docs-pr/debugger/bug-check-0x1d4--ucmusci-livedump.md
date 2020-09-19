@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The UCMUCSI_LIVEDUMP live dump has a value of 0x000001D4. This indicates that the UcmUcsi class extension has encountered an error. For example this can be because a UCSI command has timed out, or because a UCSI command execution failed because the client driver returned failure.
 
-The UcmUcsiCx.sys is the included UCSI Class Extension. For more information, see [USB Type-C Connector System Software Interface (UCSI) driver](https://docs.microsoft.com/windows-hardware/drivers/usbcon/ucsi).
+The UcmUcsiCx.sys is the included UCSI Class Extension. For more information, see [USB Type-C Connector System Software Interface (UCSI) driver](../usbcon/ucsi.md).
 
 ## UCMUCSI\_LIVEDUMP Parameters
 
@@ -40,4 +40,4 @@ Parameter | Description
 
 [USB Team Blog - Debugging UCSI firmware failures](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/debugging-ucsi-firmware-failures/ba-p/283226)
 
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
+[Universal Serial Bus (USB)](../usbcon/index.md)

@@ -133,7 +133,7 @@ With the addition of the executor concept to non-Windows Mobile devices in Windo
 |  | OID_WWAN_SLOT_INFO_STATUS |
 
 > [!NOTE]
-> [OID_WWAN_RADIO_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-radio-state) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
+> [OID_WWAN_RADIO_STATE](./oid-wwan-radio-state.md) has been updated for Windows 10, version 1703 as well. See OID_WWAN_RADIO_STATE for more information.
 
 ## MBIM Interface Update for Multi-SIM Operations
 
@@ -431,4 +431,3 @@ Most of the MBIM CIDs map or relate to NDIS OIDs, but there are a few commands t
 | Per-executor | CID_MBIM_MSIPADDRESSINFO |
 |  | CID_MBIM_MSNETWORKIDLEHINT |
 |  | CID_MBIM_MULTICARRIER_CURRENT_CID_LIST |
-

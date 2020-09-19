@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS
 
 
-WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS is a TLV that contains a MAC address for [OID\_WDI\_TASK\_CREATE\_PORT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-create-port).
+WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS is a TLV that contains a MAC address for [OID\_WDI\_TASK\_CREATE\_PORT](./oid-wdi-task-create-port.md).
 
 ## TLV Type
 
@@ -21,14 +21,14 @@ WDI\_TLV\_CREATE\_PORT\_MAC\_ADDRESS is a TLV that contains a MAC address for [O
 ## Length
 
 
-The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
+The size (in bytes) of a [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) structure.
 
 ## Values
 
 
 | Type                                              | Description                                   |
 |---------------------------------------------------|-----------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address to be used for port creation. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address to be used for port creation. |
 
  
 
@@ -57,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -18,7 +18,7 @@ This feature enables the hardware vendor to present hardware-based decoders, enc
 
 Hardware-based encoding and decoding greatly improves the user experience.
 
-To enable hardware codec support in AVStream, the vendor provides an AVStream-based minidriver that exposes decoding, encoding, and video processing, each as a separate AVStream filter. The operating system then creates a user-mode MFT that corresponds to each AVStream filter. User-mode applications can then submit transcoding requests to the MFTs by using IMFTransform interface functions that are defined in the [Media Foundation SDK](https://docs.microsoft.com/windows/win32/medfound/microsoft-media-foundation-sdk).
+To enable hardware codec support in AVStream, the vendor provides an AVStream-based minidriver that exposes decoding, encoding, and video processing, each as a separate AVStream filter. The operating system then creates a user-mode MFT that corresponds to each AVStream filter. User-mode applications can then submit transcoding requests to the MFTs by using IMFTransform interface functions that are defined in the [Media Foundation SDK](/windows/win32/medfound/microsoft-media-foundation-sdk).
 
 This section describes the changes that are required for AVStream drivers to use this feature.
 

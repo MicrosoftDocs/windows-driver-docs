@@ -64,8 +64,8 @@ Any software installed using **AddSoftware** must be installed silently (or quie
 
 Any software installed using **AddSoftware** will **not** be uninstalled if the virtual software component device or its parent devices are uninstalled. If your software is not a UWP app (i.e. you're using **AddSoftware** with a value of 1), please make sure users can easily uninstall it without leaving a trace in the registry. To do so:
 
-* If you're using an MSI installer, set up an [Add/Remove Programs](https://docs.microsoft.com/windows/desktop/Msi/configuring-add-remove-programs-with-windows-installer) entry in the application's Windows Installer package.
-* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](https://docs.microsoft.com/windows/desktop/Msi/uninstall-registry-key). 
+* If you're using an MSI installer, set up an [Add/Remove Programs](/windows/desktop/Msi/configuring-add-remove-programs-with-windows-installer) entry in the application's Windows Installer package.
+* If you're using a custom EXE that installs global registry/file state (instead of supplementing local device settings), use the [Uninstall Registry Key](/windows/desktop/Msi/uninstall-registry-key). 
 
 ## [software-install-section]: SoftwareType
 
@@ -87,8 +87,8 @@ If **SoftwareType** is set to 2, **SoftwareID** is required, and flags (in the *
 Do not use AddSoftware to distribute software that is unrelated to a device. For example, an OEM-specific PC utility program should not be installed with AddSoftware.
 Instead, use one of the following options to preinstall an app in an OEM image of Windows 10:
 
-* To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](https://docs.microsoft.com/windows-hardware/manufacture/desktop/audit-mode-overview).
-* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](https://docs.microsoft.com/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop)
+* To preinstall a Win32 app, boot to audit mode and install the app. For details, see [Audit Mode Overview](/windows-hardware/manufacture/desktop/audit-mode-overview).
+* To preinstall a Microsoft Store (UWP) app, see [Preinstallable apps for desktop devices](/windows-hardware/customize/preinstall/preinstallable-apps-for-windows-10-desktop)
 
 For info about pairing a driver with a Universal Windows Platform (UWP) app, see [Pairing a driver with a Universal Windows Platform (UWP) app](pairing-app-and-driver-versions.md) and [Hardware Support App (HSA): Steps for Driver Developers](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 

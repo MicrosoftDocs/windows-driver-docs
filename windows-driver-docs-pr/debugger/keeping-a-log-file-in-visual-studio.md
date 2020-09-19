@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The Windows Debugger can write a log file that records the debugging session. This log file contains all of the commands that you type and the responses from the debugger. In Microsoft Visual Studio, you can open, append, and close log files by entering commands in the Debugger Immediate Window.
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](../index.yml).
 
 ## <span id="ddk_keeping_a_log_file_dbg"></span><span id="DDK_KEEPING_A_LOG_FILE_DBG"></span>
 
@@ -39,10 +39,4 @@ To close an open log file, enter the [**.logclose (Close Log File)**](-logclose-
 To determine the log file status, enter the [**.logfile (Display Log File Status)**](-logfile--display-log-file-status-.md) command.
 
  
-
- 
-
-
-
-
 

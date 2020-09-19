@@ -144,4 +144,4 @@ class MSiSCSI_HBAInformation {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_HBAInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_hbainformation) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_HBAInformation**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_msiscsi_hbainformation) data structure.

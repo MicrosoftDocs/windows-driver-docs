@@ -36,7 +36,7 @@ Note, the configuration file is a collection of name / value pairs.
 
 You can use the **System.Configuration.ConfigurationManager** class to read data from your configuration files. For example,
 
-```cpp
+```cs
 NameValueCollection appStgs = ConfigurationManager.AppSettings;
 Log.Comment(appStgs["AssemblySetup"]);
 ```

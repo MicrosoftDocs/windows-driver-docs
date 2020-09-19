@@ -22,7 +22,7 @@ Windows 8.1 supports an SPB component as a class extension (running in kernel mo
 -   Implements tiered queue structure to manage simultaneous targets and bus-locking requests
 -   Translates buffers from user-mode to kernel-mode
 
-For more information see [Simple Peripheral Bus](https://docs.microsoft.com/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
+For more information see [Simple Peripheral Bus](/windows-hardware/design/component-guidelines/simple-peripheral-bus--spb-).
 
 ### SPB component and the sample driver
 
@@ -149,9 +149,4 @@ Return(RBUF)
 ```
 
  
-
- 
-
-
-
 

@@ -21,4 +21,4 @@ The **KSEVENT\_VOLUMELIMIT\_CHANGED** event propagates an a volume change action
 
 | Get | Set | Target | Event descriptor type | Event value type |
 |--|--|--|--|--|
-| No | Yes | Pin | [**KSE_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kse_node) | [**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |
+| No | Yes | Pin | [**KSE_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-kse_node) | [**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata) |

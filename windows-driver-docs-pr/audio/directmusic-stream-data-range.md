@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="directmusic_stream_data_range"></span><span id="DIRECTMUSIC_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a DirectMusic stream.
+This example uses a [**KSDATARANGE\_MUSIC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a DirectMusic stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_MUSIC);
@@ -31,9 +31,4 @@ This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-
 ```
 
  
-
- 
-
-
-
 

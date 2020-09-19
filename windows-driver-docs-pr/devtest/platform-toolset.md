@@ -36,8 +36,8 @@ The Windows Driver Kit (WDK) 8 provided the following platform toolsets for dri
 **Note**  If you create a driver from one of the available Windows driver templates in Visual Studio, the **PlatformToolset** property is set for you. You can also select the **PlatformToolset** by using the driver project property page in Visual Studio.
 **Setting the Platform Toolset in Visual Studio**
 
-1.  Open the property pages for your driver project. Right-click the driver project in **Solution Explorer** and select **Properties**.
-2.  In the property pages for the driver project, click **Configuration Properties** and then click **General**.
+1.  Open the property pages for your driver project. Select and hold (or right-click) the driver project in **Solution Explorer** and select **Properties**.
+2.  In the property pages for the driver project, select **Configuration Properties** and then select **General**.
 3.  Select the **Platform Toolset** property for the project from the drop-down list.
 
  

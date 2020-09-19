@@ -19,7 +19,7 @@ The Web Services for Devices (WSD) Installed construct indicates whether a print
 | **name** | The name of the schema value. |
 | **query** | The type of query that the WSD monitor will perform. |
 
-The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the [XPath Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)) for more information.
+The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the [XPath Reference](/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)) for more information.
 
 The behavior of an Installed construct depends on the definition of its parent nodes. If an Installed construct is specified without the use of a Parameter, the schema will always exist when queried. If an Installed construct is specified with the use of a Parameter, the schema will exist only if the associated Parameter value is found in the current WSD device queries. The software that is making the queries must be able to handle the case where the Installed schema is not returned.
 

@@ -38,15 +38,9 @@ class MS_SMHBA_PROTOCOLSTATISTICS
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MS\_SMHBA\_PROTOCOLSTATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics)
+[**MS\_SMHBA\_PROTOCOLSTATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_ms_smhba_protocolstatistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -12,9 +12,9 @@ Beginning with Windows 7 with Service Pack 1 (SP1), an inbox generic class min
 
 PIV-compliant smart cards and cards that implement the GIDS card edge. For more information about PIV, see [Personal Identity Verification (PIV) of Federal Employees and Contractors](https://www.nist.gov/publications/personal-identity-verification-piv-federal-employees-and-contractors).
 
-For more information about GIDS, see the [Generic Identity Device Specification](https://msdn.microsoft.com/windows/hardware/gg487496) web page.
+For more information about GIDS, see the [Generic Identity Device Specification](/previous-versions/windows/hardware/design/dn642100(v=vs.85)) web page.
 
-When a smart card is inserted into the reader and the Base CSP/KSP calls [**CardAcquireContext**](https://docs.microsoft.com/previous-versions/dn468701(v=vs.85)), the class minidriver performs the following discovery process to mark the associated card as either PIV- or GIDS-compliant:
+When a smart card is inserted into the reader and the Base CSP/KSP calls [**CardAcquireContext**](/previous-versions/dn468701(v=vs.85)), the class minidriver performs the following discovery process to mark the associated card as either PIV- or GIDS-compliant:
 
 1. A SELECT command is issued to locate the PIV AID. If the command succeeds, Windows considers the card to be a PIV device and the discovery process stops.
 2. If the command fails, a SELECT command is issued to locate the GIDS AID. If the command succeeds, Windows considers the card to be an GIDS device and the discovery process stops.
@@ -472,4 +472,4 @@ The following are required for this type of INF file:
   - Specify a date value that is far enough into the future so as to avoid conflicts with Windows service pack updates.
   - Although the 4-digit version number is optional, you must specify a version that is significantly higher than the current version that is specified in the inbox driver’s INF file.
 
-For more information on INF files and syntax, see [Device and Driver Installation Design Guide](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-device-and-driver-installation).
+For more information on INF files and syntax, see [Device and Driver Installation Design Guide](../install/overview-of-device-and-driver-installation.md).

@@ -13,7 +13,7 @@ Your driver must create persistent unique identifier (PUID) for each sensor. A P
 
 You should create a new PUID for each sensor, when the sensor first connects to the computer, and then store this value for later use.
 
-Your driver should create or retrieve the PUID before the sensor class extension is initialized, for example, when it is called in [**IPnpCallbackHardware::OnPrepareHardware**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware). This method supplies a pointer to the [IWDFDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice) interface that represents the sensor. You can use this pointer to access a specific property store for each device.
+Your driver should create or retrieve the PUID before the sensor class extension is initialized, for example, when it is called in [**IPnpCallbackHardware::OnPrepareHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onpreparehardware). This method supplies a pointer to the [IWDFDevice](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice) interface that represents the sensor. You can use this pointer to access a specific property store for each device.
 
 The following code example creates a function that creates, stores, and retrieves a PUID, as needed.
 
@@ -79,7 +79,4 @@ HRESULT CMyDevice::GetUniqueID(__in IWDFDevice* pWdfDevice,
 ```
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
-
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

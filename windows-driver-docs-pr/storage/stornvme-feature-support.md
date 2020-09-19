@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The following matrix lists NVME features and indicates the support provided by **StorNVMe** on Windows 10 version 1903 and later versions.
 
-See [Working with NVMe drives](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.
+See [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.
 
 | Feature  | Supported | Comments |
 | :------- | :-------: | :------- |
@@ -18,20 +18,20 @@ See [Working with NVMe drives](https://docs.microsoft.com/windows/win32/fileio/w
 | Firmware Activation without Reset                              | X | |
 | Metadata Handling                                              |   | |
 | End-to-End Data Protection                                     |   | |
-| Power Management                                               | X | Supports non-operational power states. Autonomous power state transitions are disabled by default. Runtime D3 transitions are enabled by default for selected platforms in Modern Stand-by. Host controlled thermal management Get and Set features supported through [IOCTL_STORAGE_QUERY_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) and [IOCTL_STORAGE_SET_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_set_property), respectively. |
+| Power Management                                               | X | Supports non-operational power states. Autonomous power state transitions are disabled by default. Runtime D3 transitions are enabled by default for selected platforms in Modern Stand-by. Host controlled thermal management Get and Set features supported through [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) and [IOCTL_STORAGE_SET_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_set_property), respectively. |
 | Virtualization Enhancements                                    |   | |
 | Doorbell Stride for Software Emulation                         |   | |
 | Standard Vendor Specific Command Format                        |   | |
 | Reservations                                                   |   | |
 | Host Memory Buffer                                             | X | |
 | Replay Protected Memory Block                                  |   | |
-| Device Self-test Operations                                    | X | No native support; feature available through [IOCTL_STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command).|
-| Namespace Management                                           | X | No native support; feature available through [IOCTL_STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) in WinPE mode. |
+| Device Self-test Operations                                    | X | No native support; feature available through [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command).|
+| Namespace Management                                           | X | No native support; feature available through [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) in WinPE mode. |
 | Boot Partitions                                                |   | |
-| Telemetry                                                      | X | Supported through [IOCTL_SCSI_PASS_THROUGH](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) using command SCSIOP_READ_DATA_BUFF16 with buffer mode as READ_BUFFER_MODE_ERROR_HISTORY. Also available through StorageAdapterProtocolSpecificProperty/StorageDeviceProtocolSpecificProperty from [IOCTL_STORAGE_QUERY_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property). For host telemetry, this is also available through [IOCTL_STORAGE_GET_DEVICE_INTERNAL_LOG](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_get_device_internal_log) starting with Windows 10, version 2004. |
-| Sanitize Operations                                            | X | Supported through [IOCTL_STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) in WinPE mode. |
+| Telemetry                                                      | X | Supported through [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) using command SCSIOP_READ_DATA_BUFF16 with buffer mode as READ_BUFFER_MODE_ERROR_HISTORY. Also available through StorageAdapterProtocolSpecificProperty/StorageDeviceProtocolSpecificProperty from [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property). For host telemetry, this is also available through [IOCTL_STORAGE_GET_DEVICE_INTERNAL_LOG](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_get_device_internal_log) starting with Windows 10, version 2004. |
+| Sanitize Operations                                            | X | Supported through [IOCTL_STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command) in WinPE mode. |
 | Read Recovery Level                                            |   | |
-| Endurance Groups                                               | X | Information can be retrieved through [IOCTL_STORAGE_QUERY_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) |
+| Endurance Groups                                               | X | Information can be retrieved through [IOCTL_STORAGE_QUERY_PROPERTY](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property) |
 | Predictable Latency Mode                                       |   | |
 | Namespace Write Protection                                     |   | |
 | Asymmetric Namespace Access Reporting                          |   | |
@@ -42,5 +42,5 @@ See [Working with NVMe drives](https://docs.microsoft.com/windows/win32/fileio/w
 
 ## Reference Links
 
-- [Working with NVMe Devices](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices)
-- [NVMe Storage Protocol Data Type](https://docs.microsoft.com/windows/win32/api/winioctl/ne-winioctl-storage_protocol_nvme_data_type)
+- [Working with NVMe Devices](/windows/win32/fileio/working-with-nvme-devices)
+- [NVMe Storage Protocol Data Type](/windows/win32/api/winioctl/ne-winioctl-storage_protocol_nvme_data_type)

@@ -60,4 +60,4 @@ The [**!analyze**](-analyze.md) debug extension displays information about the b
 
 STATUS\_REPARSE should be returned only for IRP\_MJ\_CREATE requests with trailing names, as that indicates the driver is supporting name spaces. 
 
-For more information about working with file system drivers, see [File systems driver design guide](https://docs.microsoft.com/windows-hardware/drivers/ifs/). For information about IRP\_MJ\_CREATE requests see [IRP_MJ_CREATE (IFS)](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create).
+For more information about working with file system drivers, see [File systems driver design guide](../ifs/index.md). For information about IRP\_MJ\_CREATE requests see [IRP_MJ_CREATE (IFS)](../ifs/irp-mj-create.md).

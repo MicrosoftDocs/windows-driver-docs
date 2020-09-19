@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 For the XPS print path, filters are the primary way that a driver prepares print data for the printer. In versions of the Microsoft Windows operating system before Windows Vista, print processors and rendering modules did the work of filters.
 
-An XPS filter is a DLL that exports [DllGetClassObject](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) and [DllCanUnloadNow](https://docs.microsoft.com/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow) functions. The filter pipeline manager calls these functions when it loads and unloads the XPS filter DLL. After loading the filter DLL, the filter pipeline manager does the following:
+An XPS filter is a DLL that exports [DllGetClassObject](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) and [DllCanUnloadNow](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow) functions. The filter pipeline manager calls these functions when it loads and unloads the XPS filter DLL. After loading the filter DLL, the filter pipeline manager does the following:
 
-- Calls **DllGetClassObject** to obtain a reference to the filter object's [IClassFactory](https://docs.microsoft.com/windows/win32/api/unknwn/nn-unknwn-iclassfactory) interface.
+- Calls **DllGetClassObject** to obtain a reference to the filter object's [IClassFactory](/windows/win32/api/unknwn/nn-unknwn-iclassfactory) interface.
 
-- Calls the [IClassFactory::CreateInstance](https://docs.microsoft.com/windows/win32/api/unknwn/nf-unknwn-iclassfactory-createinstance) method to obtain a reference to the filter object's [IPrintPipelineFilter](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelinefilter) interface.
+- Calls the [IClassFactory::CreateInstance](/windows/win32/api/unknwn/nf-unknwn-iclassfactory-createinstance) method to obtain a reference to the filter object's [IPrintPipelineFilter](/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelinefilter) interface.
 
-- Calls the [**IPrintPipelineFilter::InitializeFilter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iprintpipelinefilter-initializefilter) method to initialize the filter object.
+- Calls the [**IPrintPipelineFilter::InitializeFilter**](/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iprintpipelinefilter-initializefilter) method to initialize the filter object.
 
 Before unloading the filter DLL, the filter pipeline manager calls **DllCanUnloadNow**.
 
@@ -34,7 +34,7 @@ XPS filters make the printing subsystem more robust, because the filters run in 
 
 For maximum flexibility and reuse, each filter should perform a specific print processing function. For example, one filter would only apply a watermark, while another would only perform accounting.
 
-The following [XPS driver and filter samples](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/xpsdrv-driver-and-filter-sample/) are available on Github:
+The following [XPS driver and filter samples](/samples/microsoft/windows-driver-samples/xpsdrv-driver-and-filter-sample/) are available on Github:
 
 - Booklet
 

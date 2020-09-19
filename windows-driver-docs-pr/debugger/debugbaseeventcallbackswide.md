@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # DebugBaseEventCallbacksWide class 
 
-The DebugBaseEventCallbacksWide class provides a base implementation of the [IDebugEventCallbacksWide](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbackswide) interface. 
+The DebugBaseEventCallbacksWide class provides a base implementation of the [IDebugEventCallbacksWide](/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbackswide) interface. 
 
 A program can derive an event callbacks class from DebugBaseEventCallbacksWide and implement only the methods needed. 
 
@@ -32,10 +32,4 @@ Dbgeng.h (include Dbgeng.h)
 [DebugBaseEventCallbacks](debugbaseeventcallbacks.md)
 
  
-
- 
-
-
-
-
 

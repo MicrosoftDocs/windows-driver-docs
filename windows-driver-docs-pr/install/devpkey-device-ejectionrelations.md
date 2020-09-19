@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_EjectionRelations
 
 
-The DEVPKEY_Device_EjectionRelations device property represents the [**ejection relations**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) for a device instance.
+The DEVPKEY_Device_EjectionRelations device property represents the [**ejection relations**](../kernel/irp-mn-query-device-relations.md) for a device instance.
 
 <table>
 <colgroup>
@@ -56,9 +56,9 @@ The DEVPKEY_Device_EjectionRelations device property represents the [**ejection 
 Remarks
 -------
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_EjectionRelations.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_EjectionRelations.
 
-Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](https://docs.microsoft.com/windows-hardware/drivers/install/retrieving-device-relations).
+Windows Server 2003, Windows XP, and Windows 2000 do not directly support this property. For information about how to retrieve device relations properties on these earlier versions of Windows, see [Retrieving Device Relations](./retrieving-device-relations.md).
 
 Requirements
 ------------
@@ -70,14 +70,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
- 
-
-
-
-
-
 

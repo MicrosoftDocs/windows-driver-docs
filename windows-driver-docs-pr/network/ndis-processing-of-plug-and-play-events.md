@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-The [function drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers) for a network interface card (NIC) are implemented as an NDIS and miniport driver pair. When a NIC is added to the system, NDIS creates the functional device object (FDO) for the NIC. NDIS then subsequently handles all IRPs, including Plug and Play (PnP) and power management IRPs, that are passed to this FDO. The miniport driver for the NIC provides the operational interface for the NIC.\`
+The [function drivers](../kernel/function-drivers.md) for a network interface card (NIC) are implemented as an NDIS and miniport driver pair. When a NIC is added to the system, NDIS creates the functional device object (FDO) for the NIC. NDIS then subsequently handles all IRPs, including Plug and Play (PnP) and power management IRPs, that are passed to this FDO. The miniport driver for the NIC provides the operational interface for the NIC.\`
 
 The following sections describe how NDIS processes PnP IRPs on behalf of a NIC:
 
@@ -30,10 +30,4 @@ The following sections describe how NDIS processes PnP IRPs on behalf of a NIC:
 [Processing the Surprise Removal of a NIC](processing-the-surprise-removal-of-a-nic.md)
 
  
-
- 
-
-
-
-
 

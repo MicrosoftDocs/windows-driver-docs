@@ -23,4 +23,4 @@ This function is reserved for system use.
 #define CM_WaitNoPendingInstallEvents CMP_WaitNoPendingInstallEvents
 ```
 
-In other words, **CM_WaitNoPendingInstallEvents** is simply another name for [**CMP_WaitNoPendingInstallEvents**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_waitnopendinginstallevents). Since there is no actual function named **CM_WaitNoPendingInstallEvents**, **GetProcAddress** will return **NULL**.
+In other words, **CM_WaitNoPendingInstallEvents** is simply another name for [**CMP_WaitNoPendingInstallEvents**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_waitnopendinginstallevents). Since there is no actual function named **CM_WaitNoPendingInstallEvents**, **GetProcAddress** will return **NULL**.

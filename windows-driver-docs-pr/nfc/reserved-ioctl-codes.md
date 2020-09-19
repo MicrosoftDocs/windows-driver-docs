@@ -27,5 +27,5 @@ CTL\_CODE(FILE\_DEVICE\_NFP, 0x0100, \*, \*) through CTL\_CODE(FILE\_DEVICE\_NFP
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
+[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)

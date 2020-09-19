@@ -14,14 +14,7 @@ You should offload data traffic to Wi-Fi hot spots whenever possible. Windows Co
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
+[Mobile broadband app scenarios](./account-management.md)
 
  
-
- 
-
-
-
-
-
 

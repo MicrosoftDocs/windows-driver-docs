@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # subDirectory XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **subDirectory** XML element specifies one or all the subdirectories under the DPInst working directory.
 
@@ -91,11 +91,4 @@ The following code example demonstrates a **search** element that contains a **s
 [**search**](search-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

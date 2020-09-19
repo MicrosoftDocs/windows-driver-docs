@@ -11,14 +11,9 @@ ms.localizationpriority: medium
 
 The root item in the WIA item tree is required to support the following properties for all WIA scanners:
 
-[**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-capabilities)
+[**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](./wia-dps-document-handling-capabilities.md)
 
-[**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-status)
-
- 
+[**WIA\_DPS\_DOCUMENT\_HANDLING\_STATUS**](./wia-dps-document-handling-status.md)
 
  
-
-
-
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 # Hardware Support App (HSA): Steps for Driver Developers
 
-A Hardware Support App (HSA) is a device-specific app that is paired with a specific driver or [RPC (Remote Procedure Call)](https://docs.microsoft.com/windows/desktop/Rpc/rpc-start-page) endpoint.
+A Hardware Support App (HSA) is a device-specific app that is paired with a specific driver or [RPC (Remote Procedure Call)](/windows/desktop/Rpc/rpc-start-page) endpoint.
 
 To associate a Store app with a driver, first reserve a special value called a custom capability. Then permit access to apps that advertise the capability and provide the capability to the app developer.  This page describes these steps for the driver developer.
 
@@ -37,7 +37,7 @@ First, reserve a custom capability:
       * Do the data events stay on the users device, or is it sent  to partner?
     * What data does your capability provide access to?
     * What is the benefit to the end user of this capability?
-    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name).
+    * Include the Microsoft Store App Publisher ID.  To get one, create a skeleton app entry on the Microsoft Store page. For more info on reserving your App PFN, see [Create your app by reserving a name](/windows/uwp/publish/create-your-app-by-reserving-a-name).
 
 2. If the request is approved, Microsoft emails back a unique custom capability string name in the format **CompanyName.capabilityName\_PublisherID**.
 
@@ -47,7 +47,7 @@ Now you can use the custom capability to allow access to either an RPC endpoint 
 
 To allow access to an RPC endpoint to a UWP app that has the custom capability, follow these steps:
 
-1. Call [**DeriveCapabilitySidsFromName**](https://docs.microsoft.com/windows/desktop/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
+1. Call [**DeriveCapabilitySidsFromName**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
 2. Add the SID to your access allowed ACE along with any other SIDs that are needed for the security descriptor of your RPC endpoint.
 3. Create an RPC endpoint using the information from the Security Descriptor.
 
@@ -143,7 +143,7 @@ To do so, before getting the SCCD signed by Microsoft, add **DeveloperModeOnly**
 </CustomCapabilityDescriptor>
 ```
 
-The resulting signed SCCD works only on devices in [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development).
+The resulting signed SCCD works only on devices in [Developer Mode](/windows/uwp/get-started/enable-your-device-for-development).
 
 ## Allowing any app to use a custom capability
 
@@ -175,21 +175,21 @@ The following diagram summarizes the sequence described above:
 ## See Also
 
 * [Getting Started with Windows Drivers](../develop/getting-started-with-windows-drivers.md)
-* [Intro to the Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide)
-* [Universal Windows Platform (UWP)](https://docs.microsoft.com/windows/uwp/design/basics/design-and-ui-intro)
-* [App capabilities](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations)
-* [Develop UWP apps using Visual Studio](https://docs.microsoft.com/windows/uwp/develop/)
+* [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide)
+* [Universal Windows Platform (UWP)](/windows/uwp/design/basics/design-and-ui-intro)
+* [App capabilities](/windows/uwp/packaging/app-capability-declarations)
+* [Develop UWP apps using Visual Studio](/windows/uwp/develop/)
 * [Pairing a driver with a Universal Windows Platform (UWP) app](../install/pairing-app-and-driver-versions.md)
-* [Develop UWP apps](https://docs.microsoft.com/windows/uwp/develop/)
-* [Package an app using the Desktop App Converter (Desktop Bridge)](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
+* [Develop UWP apps](/windows/uwp/develop/)
+* [Package an app using the Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter)
 * [Custom Capability Sample App](https://go.microsoft.com/fwlink/p/?LinkId=846904)
 * [Custom Capability Driver Sample](https://aka.ms/customcapabilitydriversample )
-* [Sideload apps in Windows 10](https://docs.microsoft.com/windows/deploy/sideload-apps-in-windows-10)
+* [Sideload apps in Windows 10](/windows/deploy/sideload-apps-in-windows-10)
 * [FAQ on Custom Capabilities](FAQ-on-custom-capabilities.md)
 
 ## SCCD XML Schema
 
-The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.  See [Schema Cache](https://docs.microsoft.com/visualstudio/xml-tools/schema-cache) and [XML Document validation](https://docs.microsoft.com/visualstudio/xml-tools/xml-document-validation) for info on importing a schema and validating with IntelliSense.
+The following is the formal XML XSD schema for an SCCD file.  Use this schema to validate your SCCD before submitting it for review.  See [Schema Cache](/visualstudio/xml-tools/schema-cache) and [XML Document validation](/visualstudio/xml-tools/xml-document-validation) for info on importing a schema and validating with IntelliSense.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

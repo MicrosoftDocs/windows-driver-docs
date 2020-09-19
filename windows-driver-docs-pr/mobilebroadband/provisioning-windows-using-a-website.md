@@ -144,7 +144,7 @@ After a user has purchased a data plan or otherwise activated the mobile broadba
 
 -   Instruct the computer to reconnect the mobile broadband device
 
-The same account provisioning metadata that can be applied to a computer by using a mobile broadband app can also be applied by a mobile broadband website. In the web page’s JavaScript, check for the availability of the [**window.external.msProvisionNetworks**](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) method. If it is present, the browser can transfer account provisioning metadata to Windows.
+The same account provisioning metadata that can be applied to a computer by using a mobile broadband app can also be applied by a mobile broadband website. In the web page’s JavaScript, check for the availability of the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) method. If it is present, the browser can transfer account provisioning metadata to Windows.
 
 For more info about account provisioning metadata, see [Account provisioning](account-provisioning.md).
 
@@ -154,10 +154,4 @@ Account provisioning metadata must be signed with an extended validation (EV) ce
  
 
  
-
- 
-
-
-
-
 

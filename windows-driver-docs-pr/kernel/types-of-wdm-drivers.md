@@ -21,7 +21,7 @@ There are three kinds of WDM drivers: bus drivers, function drivers, and filter 
 
 In this context, a *bus* is any device to which other physical, logical, or virtual devices are attached; a bus includes traditional buses such as SCSI and PCI, as well as parallel ports, serial ports, and i8042 ports.
 
-It is important for driver developers to understand the different kinds of WDM drivers and to know which kind of driver they are writing. For example, whether a driver handles each [Plug and Play](implementing-plug-and-play.md) IRP and how to handle such IRPs depends on what kind of driver is being written (bus driver, function driver, or filter driver).
+It is important for driver developers to understand the different kinds of WDM drivers and to know which kind of driver they are writing. For example, whether a driver handles each [Plug and Play](introduction-to-plug-and-play.md) IRP and how to handle such IRPs depends on what kind of driver is being written (bus driver, function driver, or filter driver).
 
 ### <a href="" id="possible-driver-layers"></a>
 

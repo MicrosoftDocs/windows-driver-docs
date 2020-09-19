@@ -44,13 +44,13 @@ In the preceding image,
 
 -   **USB device-side drivers**
 
-    The [USB device-side drivers](usb-device-side-drivers-in-windows.md) service the function/device/peripheral. The USB function controller class extension supports MTP (Media Transfer Protocol) and charging using BC 1.2 chargers. Microsoft provides in-box client drivers for Synopsys USB 3.0 and ChipIdea USB 2.0 controllers. You can write a custom client driver for your function controller by using [USB function controller client driver programming interfaces](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188010(v=vs.85)). For more information, see [Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md).
+    The [USB device-side drivers](usb-device-side-drivers-in-windows.md) service the function/device/peripheral. The USB function controller class extension supports MTP (Media Transfer Protocol) and charging using BC 1.2 chargers. Microsoft provides in-box client drivers for Synopsys USB 3.0 and ChipIdea USB 2.0 controllers. You can write a custom client driver for your function controller by using [USB function controller client driver programming interfaces](/previous-versions/windows/hardware/drivers/mt188010(v=vs.85)). For more information, see [Developing Windows drivers for USB function controllers](developing-windows-drivers-for-usb-function-controllers.md).
 
     The SoC vendor might provide you with the USB function lower filter driver for charger detection. You can implement your own filter driver if you are using the in-box Synopsys USB 3.0 or ChipIdea USB 2.0 client driver.
 
 -   **USB host-side drivers**
 
-    The USB host-side drivers are a set of drivers that work with EHCI or XHCI compliant USB host controllers. The drivers are loaded if the role-switch driver enumerates the host role. If your host controller is not specification-compliant, then you can write a custom driver by using [USB host controller extension (UCX) programming interface](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). For information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
+    The USB host-side drivers are a set of drivers that work with EHCI or XHCI compliant USB host controllers. The drivers are loaded if the role-switch driver enumerates the host role. If your host controller is not specification-compliant, then you can write a custom driver by using [USB host controller extension (UCX) programming interface](/previous-versions/windows/hardware/drivers/mt188009(v=vs.85)). For information, see [Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md).
 
     **Note**  Not [all USB devices classes](supported-usb-classes.md) are supported on Windows 10 Mobile.
 
@@ -109,14 +109,14 @@ The examples given in this section describe interaction between the USB Type-C h
 ## How to test UCSI
 
 
-There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the [MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](https://docs.microsoft.com/windows-hardware/drivers/usbcon/).
+There are a number of ways to test your UCSI implementation. To test individual commands in your UCSI BIOS/EC implementation, use UCSIControl.exe, which is provided in the [MUTT Software Pack](mutt-software-package.md). To test your complete UCSI implementation, use both the UCSI tests that can be found in the Windows Hardware Lab Kit (HLK) and the steps in the [Type-C Manual Interop Procedures](./index.md).
 
 **UCSIControl.exe**
 
 You can test individual commands in your UCSI BIOS/EC implementation by using UCSIControl.exe. This tool enables you to send UCSI commands to the firmware through the UCSI driver. It requires the driver to be loaded and running, and also have the test interface to the driver enabled. By default, this interface is not enabled so as to prevent it from being accessible to unauthorized users on a retail system.
 
 1.  Locate the device node in Device Manager (devmgmt.msc) named **UCSI USB Connector Manager**. The node is under the **Universal Serial Bus controllers** category.
-2.  Right-click on the device, and select **Properties** and open the **Details** tab.
+2.  Select and hold (or right-click) on the device, and select **Properties** and open the **Details** tab.
 3.  Select **Device Instance Path** from the drop-down and note the property value.
 4.  Open Registry Editor (regedit.exe).
 5.  Navigate to the device instance path under this key.
@@ -204,7 +204,4 @@ Here are the common commands:
  
 
 ## Related topics
-[Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)  
-
-
-
+[Architecture: USB Type-C design for a Windows system](architecture--usb-type-c-in-a-windows-system.md)

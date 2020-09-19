@@ -11,12 +11,12 @@ ms.localizationpriority: medium
 
 # Deprecation of Software Publisher Certificates, Commercial Release Certificates, and Commercial Test Certificates
 
-The [Microsoft Trusted Root Program](https://docs.microsoft.com/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
+The [Microsoft Trusted Root Program](/security/trusted-root/program-requirements) no longer supports root certificates that have kernel mode signing capabilities.
 
-For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](https://docs.microsoft.com/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
+For policy requirements, see [Windows 10 Kernel Mode Code Signing Requirements](/security/trusted-root/program-requirements#f-windows-10-kernel-mode-code-signing-kmcs-requirements).
 
 Existing [cross-signed root certificates](cross-certificates-for-kernel-mode-code-signing.md) with kernel mode code signing capabilities will continue working until expiration.
-As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).
+As a result, all [software publisher certificates](software-publisher-certificate.md), [commercial release certificates](commercial-release-certificate.md), and [commercial test certificates](commercial-test-certificate.md) that chain back to these root certificates also become invalid on the same schedule.  To get your driver signed, first [Register for the Windows Hardware Dev Center program](../dashboard/register-for-the-hardware-program.md).
 
 ## Frequently asked questions
 * [What is the expiration schedule of the trusted cross-certificates?](#what-is-the-expiration-schedule-of-the-trusted-cross-certificates)
@@ -69,7 +69,7 @@ The following alternatives can be used:
 - [WHQL Test Signature Program](whql-test-signature-program.md)
 - [Enterprise CA Process](enterprise-ca-test-certificate.md)
 
-To use these options, you must enable [TESTSIGNING](the-testsigning-boot-configuration-option.md). See [Signing drivers during development and test](signing-drivers-during-development-and-test.md) for more information.
+To use these options, you must enable [TESTSIGNING](the-testsigning-boot-configuration-option.md). See [Signing drivers during development and test](./introduction-to-test-signing.md) for more information.
 
 ### What will happen to my existing signed driver packages? 
 
@@ -115,7 +115,7 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 
 ## Related information
 
-* [Register for the Hardware Program](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program)
+* [Register for the Hardware Program](../dashboard/register-for-the-hardware-program.md)
 * [Software Publisher Certificate](software-publisher-certificate.md)
 * [Commercial Release Certificate](commercial-release-certificate.md)
 * [Commercial Test Certificate](commercial-test-certificate.md)

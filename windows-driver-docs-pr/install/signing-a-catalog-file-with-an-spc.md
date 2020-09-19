@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Signing a Catalog File with an SPC
 
-Use the following [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) command to sign the [catalog file](catalog-files.md) of a kernel-mode [driver package](driver-packages.md) with a [Software Publisher Certificate (SPC)](software-publisher-certificate.md). For 64-bit versions of Windows Vista and later versions of Windows, kernel-mode driver packages that do not have a [WHQL release signature](whql-release-signature.md) must be signed with an SPC signature to comply with both the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) and the [PnP device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
+Use the following [**SignTool**](../devtest/signtool.md) command to sign the [catalog file](catalog-files.md) of a kernel-mode [driver package](driver-packages.md) with a [Software Publisher Certificate (SPC)](software-publisher-certificate.md). For 64-bit versions of Windows Vista and later versions of Windows, kernel-mode driver packages that do not have a [WHQL release signature](whql-release-signature.md) must be signed with an SPC signature to comply with both the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) and the [PnP device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md).
 
 ```cpp
 SignTool sign /v /ac CrossCertificateFile /s SPCCertificateStore /n SPCCertificateName /t http://timestamp.digicert.com CatalogFileName.cat

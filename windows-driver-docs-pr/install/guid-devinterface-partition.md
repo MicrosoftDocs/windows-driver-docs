@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_PARTITION
 
 
-The GUID_DEVINTERFACE_PARTITION [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for partition devices.
+The GUID_DEVINTERFACE_PARTITION [device interface class](./overview-of-device-interface-classes.md) is defined for partition devices.
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ The GUID_DEVINTERFACE_PARTITION [device interface class](https://docs.microsoft.
 Remarks
 -------
 
-The system-supplied [storage drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers) register an instance of GUID_DEVINTERFACE_PARTITION for a partition that is a child device of a [storage device](https://docs.microsoft.com/windows-hardware/drivers/storage/index).
+The system-supplied [storage drivers](../storage/storage-drivers.md) register an instance of GUID_DEVINTERFACE_PARTITION for a partition that is a child device of a [storage device](../storage/index.md).
 
 [**PartitionClassGuid**](partitionclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_PARTITION device interface class. For new instances of this class, use GUID_DEVINTERFACE_PARTITION instead.
 
@@ -78,11 +78,4 @@ Requirements
 [**PartitionClassGuid**](partitionclassguid.md)
 
  
-
- 
-
-
-
-
-
 

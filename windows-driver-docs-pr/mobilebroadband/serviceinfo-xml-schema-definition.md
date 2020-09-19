@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # ServiceInfo XML Schema Definition
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following is the namespace of the ServiceInfo XML schema:
 

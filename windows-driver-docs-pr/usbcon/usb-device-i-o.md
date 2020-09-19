@@ -62,7 +62,7 @@ After the client driver has configured the device, the driver has access to the 
 </tr>
 <tr class="odd">
 <td><p><a href="how-to-send-chained-mdls.md" data-raw-source="[How to send chained MDLs](how-to-send-chained-mdls.md)">How to send chained MDLs</a></p></td>
-<td><p>In this topic, you will learn about the chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl" data-raw-source="[&lt;strong&gt;MDL&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl)"><strong>MDL</strong></a> structure.</p></td>
+<td><p>In this topic, you will learn about the chained MDLs capability in the USB driver stack, and how a client driver can send a transfer buffer as a chain of <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl" data-raw-source="[&lt;strong&gt;MDL&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl)"><strong>MDL</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="how-to-recover-from-usb-pipe-errors.md" data-raw-source="[How to recover from USB pipe errors](how-to-recover-from-usb-pipe-errors.md)">How to recover from USB pipe errors</a></p></td>
@@ -78,7 +78,4 @@ After the client driver has configured the device, the driver has access to the 
  
 
 ## Related topics
-[USB Driver Development Guide](usb-driver-development-guide.md)  
-
-
-
+[USB Driver Development Guide](usb-driver-development-guide.md)

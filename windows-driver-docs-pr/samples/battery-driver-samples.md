@@ -12,4 +12,4 @@ The driver samples in this directory provides a starting point for writing a cus
 
 | Sample | Description |
 | --- | --- |
-| [Simulated Battery Driver (SimBatt)](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/simbatt-simulated-battery-driver-sample/) | Demonstrates a KMDF-based implementation of Windows battery driver interfaces. Use this sample as a starting point to implement a battery miniport driver specific to your needs. |
+| [Simulated Battery Driver (SimBatt)](/samples/microsoft/windows-driver-samples/simbatt-simulated-battery-driver-sample/) | Demonstrates a KMDF-based implementation of Windows battery driver interfaces. Use this sample as a starting point to implement a battery miniport driver specific to your needs. |

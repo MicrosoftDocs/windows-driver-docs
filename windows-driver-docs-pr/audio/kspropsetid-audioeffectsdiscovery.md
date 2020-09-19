@@ -24,15 +24,9 @@ DEFINE_GUIDSTRUCT("0B217A72-16B8-4A4D-BDED-F9D6BBEDCD8F", KSPROPSETID_AudioEffec
 
 The **KSPROPSETID\_AudioEffectsDiscovery** property set contains the following KS property.
 
-[**KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn457706(v=vs.85))
+[**KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST**](/previous-versions/windows/hardware/drivers/dn457706(v=vs.85))
 
-This property name is defined in the [**KSPROPERTY\_AUDIOEFFECTSDISCOVERY**](https://docs.microsoft.com/windows/desktop/api/msapofxproxy/ne-msapofxproxy-ksproperty_audioeffectsdiscovery) enum.
-
- 
+This property name is defined in the [**KSPROPERTY\_AUDIOEFFECTSDISCOVERY**](/windows/win32/api/msapofxproxy/ne-msapofxproxy-ksproperty_audioeffectsdiscovery) enum.
 
  
-
-
-
-
 

@@ -79,7 +79,7 @@ We suggest that you consider the following guidelines when you develop your devi
 
 -   You should understand dynamic hardware partitioning because certain assumptions about the hardware configuration of a server computer are not valid on dynamically partitionable servers. Device drivers that are not designed to accommodate dynamic hardware partitioning could cause data corruption or cause the operating system to generate a bug check if they are run on a dynamically partitionable server.
 
--   You should consider the [critical issues](critical-issues-for-device-drivers.md) that are identified for dynamic hardware partitioning, even if you are not developing device drivers for server computers.
+-   You should consider the [critical issues](changes-to-the-number-of-processors.md) that are identified for dynamic hardware partitioning, even if you are not developing device drivers for server computers.
 
 -   You should review and update all the device drivers that you are developing for servers that run Windows Server 2008 and later versions of Windows Server. Device drivers can register with the operating system to be notified of changes to the hardware configuration. When the device drivers are notified about a change to the hardware configuration, they can respond to the change as required for safe and optimal operation. This ensures that the drivers function correctly on dynamically partitionable servers.
 

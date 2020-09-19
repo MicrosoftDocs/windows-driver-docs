@@ -16,9 +16,9 @@ ms.date: 10/17/2018
 # scanHardware XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
-The **scanHardware** XML element is an empty element that sets the **scanHardware** flag to ON. Setting this flag to ON configures DPInst to install a [driver package](https://docs.microsoft.com/windows-hardware/drivers/install/driver-packages) for a Plug and Play (PnP) function driver only if the driver package matches a device that is configured in a computer and the driver package is a better match for the device than the driver package that is currently installed on the device.
+The **scanHardware** XML element is an empty element that sets the **scanHardware** flag to ON. Setting this flag to ON configures DPInst to install a [driver package](./driver-packages.md) for a Plug and Play (PnP) function driver only if the driver package matches a device that is configured in a computer and the driver package is a better match for the device than the driver package that is currently installed on the device.
 
 ### Element Tag
 
@@ -74,10 +74,4 @@ The following code example demonstrates a **scanHardware** element.
 ```
 
  
-
- 
-
-
-
-
 

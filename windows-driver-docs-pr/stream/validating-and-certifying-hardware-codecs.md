@@ -60,6 +60,6 @@ typedef enum
 
 User-mode components access KSPROPSETID\_OPMVideoOutput through the **IKsControl** interface on the AVStream proxy MFT. For code examples that show an implementation of the OPMVideoOutput method handler routines, see [Codec Merit Validation](codec-merit-validation.md).
 
-For driver-specific information about OPM, see [Supporting Output Protection Manager](https://docs.microsoft.com/windows-hardware/drivers/display/supporting-output-protection-manager).
+For driver-specific information about OPM, see [Supporting Output Protection Manager](../display/supporting-output-protection-manager.md).
 
-For application-specific information about OPM, see [Using Output Protection Manager](https://docs.microsoft.com/windows/win32/medfound/using-output-protection-manager).
+For application-specific information about OPM, see [Using Output Protection Manager](/windows/win32/medfound/using-output-protection-manager).

@@ -13,7 +13,7 @@ The PwrTest Requests Scenario logs power requests from processes and services ru
 
 You can use the PwrTest Requests Scenario to diagnose why a computer doesn't go to sleep or why the monitor stays on.
 
-You could also use the administrator tool [PowerCfg](https://docs.microsoft.com/windows-hardware/design/device-experiences/powercfg-command-line-options) (powercfg.exe) for this purpose (**powercfg.exe /requests**). PowerCfg is included with Windows (Windows\\System32 directory). However, Powercfg.exe only captures the power requests that are active at the time you run the tool. In contrast, the PwrTest Requests Scenario runs for a specified time and logs power requests as they are created and closed, so the requests don’t need to be active when the tool is run.
+You could also use the administrator tool [PowerCfg](/windows-hardware/design/device-experiences/powercfg-command-line-options) (powercfg.exe) for this purpose (**powercfg.exe /requests**). PowerCfg is included with Windows (Windows\\System32 directory). However, Powercfg.exe only captures the power requests that are active at the time you run the tool. In contrast, the PwrTest Requests Scenario runs for a specified time and logs power requests as they are created and closed, so the requests don’t need to be active when the tool is run.
 
 ## <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>Syntax
 
@@ -132,7 +132,7 @@ The following table describes the XML elements that appear in the log file.
 </tr>
 <tr class="odd">
 <td align="left"><strong>&lt;Legacy&gt;</strong></td>
-<td align="left"><p>Reports True or False if the caller used legacy <a href="https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate" data-raw-source="[&lt;strong&gt;SetThreadExecutionState function (Windows)&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-setthreadexecutionstate)"><strong>SetThreadExecutionState function (Windows)</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate" data-raw-source="[&lt;strong&gt;PoSetSystemState&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate)"><strong>PoSetSystemState</strong></a> APIs or the newer <a href="https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-powersetrequest" data-raw-source="[&lt;strong&gt;PowerSetRequest function (Windows)&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-powersetrequest)"><strong>PowerSetRequest function (Windows)</strong></a> or <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest" data-raw-source="[&lt;strong&gt;PoSetPowerRequest&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest)"><strong>PoSetPowerRequest</strong></a> APIs.</p></td>
+<td align="left"><p>Reports True or False if the caller used legacy <a href="/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate" data-raw-source="[&lt;strong&gt;SetThreadExecutionState function (Windows)&lt;/strong&gt;](/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate)"><strong>SetThreadExecutionState function (Windows)</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate" data-raw-source="[&lt;strong&gt;PoSetSystemState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-posetsystemstate)"><strong>PoSetSystemState</strong></a> APIs or the newer <a href="/windows/win32/api/winbase/nf-winbase-powersetrequest" data-raw-source="[&lt;strong&gt;PowerSetRequest function (Windows)&lt;/strong&gt;](/windows/win32/api/winbase/nf-winbase-powersetrequest)"><strong>PowerSetRequest function (Windows)</strong></a> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest" data-raw-source="[&lt;strong&gt;PoSetPowerRequest&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerrequest)"><strong>PoSetPowerRequest</strong></a> APIs.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>&lt;SystemAllowed&gt;</strong></td>
@@ -196,14 +196,5 @@ The following table describes the XML elements that appear in the log file.
 
 [PwrTest Syntax](pwrtest-syntax.md)
 
-[PowerCfg](https://docs.microsoft.com/windows-hardware/design/device-experiences/powercfg-command-line-options)
-
- 
-
- 
-
-
-
-
-
+[PowerCfg](/windows-hardware/design/device-experiences/powercfg-command-line-options)
 

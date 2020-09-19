@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 All user-mode requests are sent to the Microsoft-provided kernel-mode driver GenericUSBFn.sys. You can create a user-mode service that communicates with GenericUSBFn.sys by sending these I/O control code (IOCTL), and GenericUSBFn.sys handles kernel-mode communication with the USB function drivers.
 
-The IOCTLs declared in [Genericusbfnioctl.h](https://docs.microsoft.com/windows/desktop/api/genericusbfnioctl/) are used for communicating with GenericUSBFn.sys from a user-mode service.
+The IOCTLs declared in [Genericusbfnioctl.h](/windows/win32/api/genericusbfnioctl/) are used for communicating with GenericUSBFn.sys from a user-mode service.
 
 
 The following steps describe how you can define a USB interface service that interacts with GenericUSBFn.sys to communicate with the USB function drivers:
@@ -27,4 +27,4 @@ The following steps describe how you can define a USB interface service that int
 6. UsbfnEventReset: This is used to determine the speed of the connected USB device. 
 7. UsbfnEventConfigured: The service can now issue transfer requests. 
 8. UsbfnEventSetupPacket: The USB function class extension has received an interface-specific setup packet (bmRequestType.Type == BMREQUEST_CLASS). The service should reply to the setup packet by issuing a transfer request in pipe 0, followed by a handshake request (IOCTL_GENERICUSBFN_CONTROL_STATUS_HANDSHAKE_OUT) in the opposite direction on pipe 0. 
-9. After the UsbfnEventConfigured event is received, the service can begin issuing transfer requests using IOCTL_GENERICUSBFN_TRANSFER_IN, IOCTL_GENERICUSBFN_TRANSFER_IN_APPEND_ZERO_PKT, and IOCTL_GENERICUSBFN_TRANSFER_OUT. 
+9. After the UsbfnEventConfigured event is received, the service can begin issuing transfer requests using IOCTL_GENERICUSBFN_TRANSFER_IN, IOCTL_GENERICUSBFN_TRANSFER_IN_APPEND_ZERO_PKT, and IOCTL_GENERICUSBFN_TRANSFER_OUT.
