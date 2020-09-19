@@ -60,9 +60,9 @@ NTSTATUS EvtWdfDriverDeviceAdd(
 }
 ```
 
-For information about how to initialize the **NET_DEVICE_RESET_CAPABILITIES** structure, see [**NET_DEVICE_RESET_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/nf-netdevice-net_device_reset_capabilities_init).
+For information about how to initialize the **NET_DEVICE_RESET_CAPABILITIES** structure, see [**NET_DEVICE_RESET_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-net_device_reset_capabilities_init).
 
-To learn how to advertise the **NET_DEVICE_RESET_CAPABILITIES** structure to NetAdapterCx, see [**NetDeviceInitSetResetCapabilitites**](/windows-hardware/drivers/ddi/nf-netdevice-netdeviceinitsetresetcapabilitites).
+To learn how to advertise the **NET_DEVICE_RESET_CAPABILITIES** structure to NetAdapterCx, see [**NetDeviceInitSetResetCapabilities**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitsetresetcapabilities).
 
 ### Implement *EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*
 
@@ -80,12 +80,12 @@ To submit diagnostics to NetAdapterCx, the client driver performs the following 
 
 1. Preallocate a flat buffer from either paged or non-paged pool to collect the reset diagnostics. The driver should preallocate this buffer to avoid an out-of-memory error during device reset.
 
-2. Within the *EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS* callback, submit the diagnostics as a flat data buffer by calling the [**NetDeviceStoreResetDiagnostics**](/windows-hardware/drivers/ddi/nf-netdevice-netdevicestoreresetdiagnostics) API. The client driver must call the **NetDeviceStoreResetDiagnostics** API at PASSIVE_LEVEL.
+2. Within the *EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS* callback, submit the diagnostics as a flat data buffer by calling the [**NetDeviceStoreResetDiagnostics**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdevicestoreresetdiagnostics) API. The client driver must call the **NetDeviceStoreResetDiagnostics** API at PASSIVE_LEVEL.
 
 3. Free the data buffer once **NetDeviceStoreResetDiagnostics** returns.
 
 > [!IMPORTANT]
-> The [**NetDeviceStoreResetDiagnostics**](/windows-hardware/drivers/ddi/nf-netdevice-netdevicestoreresetdiagnostics) API must only be called in the [*EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_collect_reset_diagnostics) callback.
+> The [**NetDeviceStoreResetDiagnostics**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdevicestoreresetdiagnostics) API must only be called in the [*EVT_NET_DEVICE_COLLECT_RESET_DIAGNOSTICS*](/windows-hardware/drivers/ddi/netdevice/nc-netdevice-evt_net_device_collect_reset_diagnostics) callback.
 > It also can't be used to re-submit diagnostics data after previous **NetDeviceStoreResetDiagnostics** returns.
 > Violating either of these cases will result in a bugcheck.
 
@@ -94,7 +94,7 @@ To submit diagnostics to NetAdapterCx, the client driver performs the following 
 
 ## How a client driver requests PLDR
 
-A client driver triggers PLDR using the NetAdapterCx [**NetDeviceRequestReset**](/windows-hardware/drivers/ddi/nf-netdevice-netdevicerequestreset.md) API when it detects device failure. **NetDeviceRequestReset** returns immediately to the client driver.
+A client driver triggers PLDR using the NetAdapterCx [**NetDeviceRequestReset**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdevicerequestreset.md) API when it detects device failure. **NetDeviceRequestReset** returns immediately to the client driver.
 The reset and recovery sequence described in [NetAdapterCx reset and recover sequence](#netadaptercx-reset-and-recover-sequence) is triggered and is asynchronous to the **NetDeviceRequestReset** call.
 
 Only one PLDR operation can happen at any given time. Therefore, subsequent calls of **NetDeviceRequestReset** have no effect when a PLDR operation has already started.
