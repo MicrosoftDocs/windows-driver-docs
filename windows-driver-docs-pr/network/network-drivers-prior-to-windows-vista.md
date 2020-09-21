@@ -16,4 +16,4 @@ Network drivers prior to Windows Vista used NDIS 5.1, which was superceded in Wi
 
 ## Related topics
 
-[Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
+[Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)

@@ -20,7 +20,7 @@ For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_NETWORK_BLACKL
 
 After each Query or Set request, the miniport driver should return an [**NDIS_WWAN_NETWORK_BLACKLIST**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_network_blacklist) structure that contains information about the current network blacklist information.
 
-For more information about usage of this OID, see [MBIM_CID_MS_NETWORK_BLACKLIST](./mb-network-blacklist-operations.md#mbimcidmsnetworkblacklist).
+For more information about usage of this OID, see [MBIM_CID_MS_NETWORK_BLACKLIST](./mb-network-blacklist-operations.md#mbim_cid_ms_network_blacklist).
 
 ## Requirements
 
