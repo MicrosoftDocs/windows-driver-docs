@@ -28,6 +28,12 @@
     items:
     - name: "Overview"
       href: driver-flighting.md
+    - name: "Other Policies"
+      items:
+      - name: "Overview"
+        href: other-policies.md
+      - name: "Extension INF Targeting Rules"
+        href: extension-inf-targeting-rules.md
     - name: "Microsoft driver measures"
       href: overview-of-microsoft-driver-measure-dictionary.md
     - name: "Driver measure attributes"
