@@ -14,7 +14,7 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 ## Build and install the CFU virtual HID device sample
 
-1. Install Visual Studio 2019 and the Windows Driver Kit (WDK) as outlined at [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+1. Install Visual Studio 2019 and the Windows Driver Kit (WDK) as outlined at [Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
 1. Clone the Microsoft CFU repository into a local repository directory
 
@@ -86,7 +86,7 @@ This topic provides a walkthrough of updating firmware for the Component Firmwar
 
 ## Install a firmware update for the CFU virtual HID device
 
-This section provides an example of installing a firmware update on the sample [**CfuVirtualHid Device**](https://github.com/microsoft/CFU/tree/master/Host/CFUFirmwareSimulation) device built in Visual Studio 2019 and installed using the [**devcon.exe**](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon) command-line tool in the previous section above.
+This section provides an example of installing a firmware update on the sample [**CfuVirtualHid Device**](https://github.com/microsoft/CFU/tree/master/Host/CFUFirmwareSimulation) device built in Visual Studio 2019 and installed using the [**devcon.exe**](/windows-hardware/drivers/devtest/devcon) command-line tool in the previous section above.
 
 1. Navigate to the location of the .inf file and the firmware offer and payload .bin files for your target device. For example:
 
