@@ -132,8 +132,9 @@ The controller shall always complete this command promptly with a Command Comple
 |0x00000000&#160;00000010 |Controller supports verifying the validity of the public X and Y coordinates on the curve during the Secure Simple pairing process for P-192 and P-256. <br/>For more information, see [Bluetooth Core Specification Erratum 10734](https://www.bluetooth.org/docman/handlers/downloaddoc.ashx?doc_id=447440).|
 |0x00000000 00000020|Controller supports Continuous Advertising Monitoring of LE advertisements performed concurrently with other radio activities.|
 |0x00000000 00000040|Reserved.|
-|0x00000000 00000080|Controller supports the RSSI monitoring of LE extended advertisements without sampling.|
-|0xFFFFFFFF&#160;FFFFFFF0|Bits reserved for future definition. Must be zero.|
+|0x00000000 00000080|Reserved.|
+|0x00000000 00000100|Reserved.|
+|0xFFFFFFFF&#160;FFFFFE00|Bits reserved for future definition. Must be zero.|
 
 **Microsoft_event_prefix_length** (1 octet):
 
