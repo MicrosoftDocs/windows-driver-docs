@@ -34,10 +34,10 @@ bRet = GetModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS,
                          (PCWSTR)&DriverEntry,
                          &handleModule);
 if (bRet) {
-   winErr = GetModuleFileNameW(handleModule,
-                               path,
-                               pathLength);
-     …
+    charsWritten = GetModuleFileNameW(handleModule,
+                                      path,
+                                      pathLength);
+    …
 ```
 
 A WDM or KMDF driver that is running from the DriverStore and needs to access other files from its driver package could use [**IoQueryFullDriverPath**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioqueryfulldriverpath) to find its path, get the directory path it was loaded from, and look for configuration files relative to that path.
