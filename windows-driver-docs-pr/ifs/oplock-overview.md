@@ -1,12 +1,12 @@
 ---
-title: Overview
-description: Overview
+title: Oplock Overview
+description: Oplock Overview
 ms.assetid: 3b2895a2-9a2e-46eb-b8fb-47d6db4a1de0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Overview
+# Oplock Overview
 
 
 ## <span id="ddk_network_redirector_design_and_performance_if"></span><span id="DDK_NETWORK_REDIRECTOR_DESIGN_AND_PERFORMANCE_IF"></span>
