@@ -8070,6 +8070,51 @@
                             "source_path":  "windows-driver-docs-pr/wdf/supporting-wmi-in-kmdf-drivers.md",
                             "redirect_url":  "/windows-hardware/drivers/wdf/introduction-to-wmi-for-kmdf-drivers",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/asynchronous-procedure-calls.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/types-of-apcs",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/ms-dos-device-names.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-ms-dos-device-names",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/wdf/debugging-a-wdf-driver.md",
+                            "redirect_url":  "/windows-hardware/drivers/debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/dpc-objects-and-dpcs.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-dpc-objects",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/interrupt-service-routines.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-interrupt-service-routines",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/programming-issues-for-64-bit-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/porting-your-driver-to-64-bit-windows",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/thread-objects.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-thread-objects",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/synchronization-techniques.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-kernel-dispatcher-objects",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/device-objects-and-device-stacks.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-device-objects",
+                            "redirect_document_id":  false
                         }
                      ]
 }
