@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) engineering guide
 description: Component Firmware Update (CFU) engineering guide
-ms.date: 07/24/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -124,7 +124,7 @@ If the firmware is intended for a specific bank - the 2-bit field supports four 
 
 If that were the case, and the offer was meant to update a bank in use, the firmware that implements CFU on the target can reject the offer.  Else, the firmware on the target implementing CFU can take other action as warranted.
 
-If banking of firmware images is NOT in the design of the end-user firmware, then it's reasonable to ignore this field (set to whatever values that are convenient, but the value in the bank field is optional and depends on the way in which the on target firmware implements CFU).
+If banking of firmware images is NOT in the design of the end-user firmware, then it is reasonable to ignore this field (set to whatever values that are convenient, but the value in the bank field is optional and depends on the way in which the on target firmware implements CFU).
 
 ```cpp
 UINT8 bank : 2;

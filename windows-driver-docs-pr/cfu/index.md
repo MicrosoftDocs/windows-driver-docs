@@ -18,11 +18,11 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 
 | Topic | Description |
 |--|--|
-| [CFU engineering guide](cfu-engineering-guide.md) | TBD |
-| [CFU virtual HID device firmware update](cfu-virtual-hid-device-firmware-update.md) | TBD |
-| [CFU inbox HIDSYS driver INF configuration](cfu-inbox-driver-inf-configuration.md) | TBD |
-| [CFU standalone tool sample](cfu-standalone-tool-sample.md) | TBD |
-| [CFU protocol specification](cfu-specification.md) | TBD |
+| [CFU engineering guide](cfu-engineering-guide.md) | Provides detailed guidance on implementing the CFU protocol and the process of creating new firmware images to be installed on the target device. |
+| [CFU virtual HID device firmware update](cfu-virtual-hid-device-firmware-update.md) | Provides a walkthrough of updating the sample virtual HID device firmware. |
+| [CFU inbox HIDSYS driver INF configuration](cfu-inbox-driver-inf-configuration.md) | Provides information on configuring the inbox HIDSYS driver INF file for your firmware update. |
+| [CFU standalone tool sample](cfu-standalone-tool-sample.md) | Provides information on the CFU standalone tool sample that sends firmware update image files to a device. |
+| [CFU protocol specification](cfu-specification.md) | Provides detailed information on the CFU protocol offer, content, and firmware update command sequence. |
 
 ## CFU repository on GitHub
 

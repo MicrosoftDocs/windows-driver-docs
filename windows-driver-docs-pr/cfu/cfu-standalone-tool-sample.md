@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) standalone tool sample
 description: Component Firmware Update (CFU) standalone tool sample
-ms.date: 07/24/2020
+ms.date: 09/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -10,13 +10,13 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CFU) standalone tool sample
 
-The CFU tool sample sends firmware image files to a device in need of an update. Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](https://github.com/Microsoft/CFU/tree/master/Documentation/CFU-Protocol), an open source specification (included with CFU) based on the HID protocol.
+The CFU standalone tool sample sends firmware image update files to a device. Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
 
-This tool reads an offer file, firmware image file in SREC bin format, and passes the firmware to a device.  It is also capable of searching for the device based on the protocol settings and requesting/printing firmware version information.
+This tool reads an offer file and passes a firmware update image file in SREC bin format to a device.  It is also capable of searching for the device based on the protocol settings and requesting/printing firmware version information.
 
-It requires a protocol settings text csv file to be passed as an argument.
+It requires a protocol settings text .csv file to be passed as an argument.
 
-## Usage examples
+## Tool usage command format examples
 
 ```console
 FwUpdateCfu.exe version \<protocolSettingsPath\> (to retrieve version of device)
@@ -26,9 +26,9 @@ FwUpdateCfu.exe version \<protocolSettingsPath\> (to retrieve version of device)
 FwUpdateCfu.exe update \<protocolSettingsPath\> \<offerfile\> \<binfile\> [forceIgnoreVersion] [forceReset]
 ```
 
-## Example protocol settings
+## Example protocol settings (in .csv file)
 
-```console
+```text
 #instructions:
 #Fill in csv tag and the value in hex for each item
 #order not important
