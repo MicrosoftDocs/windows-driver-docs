@@ -1,6 +1,5 @@
 ---
 title: Testing Auto Brightness
-author: windows-driver-content
 description: This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool.
 ms.assetid: 0ca1a07e-ab4d-47d1-b6ab-a1aa02ee3ee6
 ms.date: 12/13/2018
