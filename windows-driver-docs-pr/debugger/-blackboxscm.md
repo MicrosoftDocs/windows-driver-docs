@@ -2,7 +2,6 @@
 title: blackboxscm
 description: The blackboxscmextension displays service control manager (scm) secondary boot data.
 keywords: ["blackboxscm Windows Debugging"]
-ms.author: windowsdriverdev
 ms.date: 01/02/2019
 ms.topic: article
 ms.prod: windows-hardware
