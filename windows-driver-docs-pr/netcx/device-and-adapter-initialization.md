@@ -15,11 +15,11 @@ This topic describes the steps for a NetAdapterCx client driver to initialize an
 
 ## EVT_WDF_DRIVER_DEVICE_ADD
 
-A NetAdapterCx client driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function when it calls [**WdfDriverCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) from its [*DriverEntry*](https://docs.microsoft.com/windows-hardware/drivers/wdf/driverentry-for-kmdf-drivers) routine.
+A NetAdapterCx client driver registers its [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function when it calls [**WdfDriverCreate**](/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate) from its [*DriverEntry*](../wdf/driverentry-for-kmdf-drivers.md) routine.
 
-In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), a NetAdapterCx client driver should do the following in order:
+In [*EVT_WDF_DRIVER_DEVICE_ADD*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add), a NetAdapterCx client driver should do the following in order:
 
-1. Call [**NetDeviceInitConfig**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig).
+1. Call [**NetDeviceInitConfig**](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig).
 
     ```C++
     status = NetDeviceInitConfig(DeviceInit);
@@ -29,12 +29,12 @@ In [*EVT_WDF_DRIVER_DEVICE_ADD*](https://docs.microsoft.com/windows-hardware/dri
     }
     ```
 
-2. Call [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate). 
+2. Call [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate). 
 
     > [!TIP]
     > If your device supports more than one NETADAPTER, we recommend storing pointers to each adapter in your device context.
 
-3. Create the NETADAPTER object. To do so, the client calls [**NetAdapterInitAllocate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate). 
+3. Create the NETADAPTER object. To do so, the client calls [**NetAdapterInitAllocate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterinitallocate), followed by optional **NetAdapterInitSetXxx** methods to initailize the adapter's attributes. Finally, the client calls [**NetAdapterCreate**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptercreate). 
 
     The following example shows how a client driver might initialize a NETADAPTER object. Note that error handling is simplified in this example.
 
@@ -91,10 +91,10 @@ Optionally, you can add context space to the NETADAPTER object. Since you can se
 
 We recommend that you put device-related data in the context for your WDFDEVICE, and networking-related data such as link layer addresses into your NETADAPTER context. If you are porting an existing NDIS 6.x driver, you'll likely have a single MiniportAdapterContext that combines networking-related and device-related data into a single data structure. To simplify the porting process, just convert that entire structure to the WDFDEVICE context, and make the NETADAPTER's context a small structure that points to the WDFDEVICE's context.
 
-You can optionally provide 2 callbacks to the [**NET_ADAPTER_DATAPATH_CALLBACKS_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_datapath_callbacks_init) method:
+You can optionally provide 2 callbacks to the [**NET_ADAPTER_DATAPATH_CALLBACKS_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_datapath_callbacks_init) method:
 
-* [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)
-* [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_create_rxqueue)
+* [*EVT_NET_ADAPTER_CREATE_TXQUEUE*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_create_txqueue)
+* [*EVT_NET_ADAPTER_CREATE_RXQUEUE*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_create_rxqueue)
 
 For details on what to provide in your implementations of these callbacks, see the individual reference pages.
 

@@ -128,13 +128,8 @@ causes the Message Compiler to generate the following files:
 
 More information about the Message Compiler can be found in the Microsoft Windows SDK.
 
-The Resource Compiler converts a resource script to a resource file that you can attach to your driver image. If you use the Build utility to build your driver, you can make sure that the resource script is converted to a resource file and attached to your driver image simply by including the name of the resource script in the SOURCES variable for the driver. For more information about the Resource Compiler, see the Windows SDK documentation. For information about using the Build utility to build your driver, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+The Resource Compiler converts a resource script to a resource file that you can attach to your driver image. If you use the Build utility to build your driver, you can make sure that the resource script is converted to a resource file and attached to your driver image simply by including the name of the resource script in the SOURCES variable for the driver. For more information about the Resource Compiler, see the Windows SDK documentation. For information about using the Build utility to build your driver, see [Building a Driver](../develop/building-a-driver.md).
 
 
  
-
- 
-
-
-
 

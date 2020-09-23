@@ -29,13 +29,7 @@ For the Windows Display Driver Model (WDDM), you must append "(Microsoft Corpora
 New Driver Model Foo Device Name (Microsoft Corporation - WDDM)
 ```
 
-For more information about the *Strings* section and the *%strkey%* tokens that are specified elsewhere in the INF, see [**INF Strings Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-strings-section).
+For more information about the *Strings* section and the *%strkey%* tokens that are specified elsewhere in the INF, see [**INF Strings Section**](../install/inf-strings-section.md).
 
  
-
- 
-
-
-
-
 

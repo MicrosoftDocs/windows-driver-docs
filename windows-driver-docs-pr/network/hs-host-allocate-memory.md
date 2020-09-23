@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # HS\_HOST\_ALLOCATE\_MEMORY function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_HOST\_ALLOCATE\_MEMORY** function returns an amount of memory specified by the caller.

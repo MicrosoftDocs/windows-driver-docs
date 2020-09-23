@@ -81,16 +81,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
-[**TransmissionMode**](https://docs.microsoft.com/previous-versions/windows/desktop/mstv/transmissionmode)
-
- 
+[**TransmissionMode**](/previous-versions/windows/desktop/mstv/transmissionmode)
 
  
-
-
-
-
-
 

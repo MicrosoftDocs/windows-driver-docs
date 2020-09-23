@@ -19,7 +19,7 @@ Every function driver, filter driver, and bus driver must create a framework dev
 
 Creating a framework device object involves three steps:
 
-1.  Obtaining a pointer to a [**WDFDEVICE\_INIT**](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdfdevice_init) structure.
+1.  Obtaining a pointer to a [**WDFDEVICE\_INIT**](./wdfdevice_init.md) structure.
 
     This is an opaque, system-allocated structure, into which the driver stores information about a device.
 
@@ -27,7 +27,7 @@ Creating a framework device object involves three steps:
 
     The driver calls a set of framework-supplied functions that add information to the structure.
 
-3.  Calling [**WdfDeviceCreate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate).
+3.  Calling [**WdfDeviceCreate**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate).
 
     The driver passes the WDFDEVICE\_INIT structure's pointer to the **WdfDeviceCreate** method. The method creates a framework device object and uses information in the WDFDEVICE\_INIT structure to initialize the object.
 
@@ -40,10 +40,4 @@ For more information about creating framework device objects, see the following 
 -   [Creating Device Objects in a Bus Driver](creating-device-objects-in-a-bus-driver.md)
 
  
-
- 
-
-
-
-
 

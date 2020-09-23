@@ -154,8 +154,8 @@ The following table describes how the Base CSP acts upon the three different cac
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **PinCacheNormal**       | For this mode, the PIN is cached by the Base CSP per process per logon ID.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | **PinCacheTimed**        | For this mode, the PIN is invalidated after an indicated period of time (value is given in seconds). This was implemented by recording the timestamp when the PIN is added to the cache and then verifying this timestamp versus the time when the PIN is accessed. This means that the PIN potentially lives in the cache longer than the specified timestamp, but is not used after it has expired. The PIN is encrypted in memory to keep it protected.                                                                                                                |
-| **PinCacheNone**         | When the PIN cannot be cached, Base CSP never adds the PIN to the cache. When the Base CSP/KSP is called with [**CryptSetProvParam**](https://docs.microsoft.com/windows/desktop/api/wincrypt/nf-wincrypt-cryptsetprovparam) to set a PIN, the PIN is submitted to the card for verification but not cached. This means that any subsequent operations must occur before the Base CSP transaction time-out expires.                                                                                                                                                                                                                  |
-| **PinCacheAlwaysPrompt** | Unlike **PinCacheNone**, when this cache mode is set, the Base CSP transaction time-out is not applicable. The PIN is collected from the user and then submitted to the card for verification before each call that requires authentication. Calls to [**CryptSetProvParam**](https://docs.microsoft.com/windows/desktop/api/wincrypt/nf-wincrypt-cryptsetprovparam) and [**NcryptSetProperty**](https://docs.microsoft.com/windows/desktop/api/ncrypt/nf-ncrypt-ncryptsetproperty) for setting the PIN return ERROR\_SUCCESS without verifying and caching the PIN. This implies that calls from applications that use silent contexts will fail if the call requires authentication. |
+| **PinCacheNone**         | When the PIN cannot be cached, Base CSP never adds the PIN to the cache. When the Base CSP/KSP is called with [**CryptSetProvParam**](/windows/win32/api/wincrypt/nf-wincrypt-cryptsetprovparam) to set a PIN, the PIN is submitted to the card for verification but not cached. This means that any subsequent operations must occur before the Base CSP transaction time-out expires.                                                                                                                                                                                                                  |
+| **PinCacheAlwaysPrompt** | Unlike **PinCacheNone**, when this cache mode is set, the Base CSP transaction time-out is not applicable. The PIN is collected from the user and then submitted to the card for verification before each call that requires authentication. Calls to [**CryptSetProvParam**](/windows/win32/api/wincrypt/nf-wincrypt-cryptsetprovparam) and [**NcryptSetProperty**](/windows/win32/api/ncrypt/nf-ncrypt-ncryptsetproperty) for setting the PIN return ERROR\_SUCCESS without verifying and caching the PIN. This implies that calls from applications that use silent contexts will fail if the call requires authentication. |
 
 
 
@@ -204,14 +204,3 @@ The **dwUnblockPermission** member is a bit-mask that describes which PINs have 
 The **dwFlags** member contains PIN flags. Currently, only one flag is defined: PIN\_INFO\_REQUIRE\_SECURE\_ENTRY. This flag indicates to the Base CSP/KSP whether a secure desktop is required for PIN entry.
 
 **Note**  It is possible by using this structure to give ROLE\_EVERYONE permission to change or unblock a PIN. We do not recommend this, and no mechanism is provided in the minidriver API to allow ROLE\_EVERYONE to change or unblock a PIN.
-
-
-
-
-
-
-
-
-
-
-

@@ -18,10 +18,10 @@ The WSD `Value` construct allows you to extend the bidi communications schema wi
 | **filter** | The XPath query that the WSD monitor will apply to the XML document that is specified by the query. See the discussion later in this topic. |
 | **name** | The name of the schema value. |
 | **query** | The type of query that the WSD monitor will perform. |
-| **type** | The type of data in the `Value` construct, a value in the [**BIDI_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type) enumeration. |
+| **type** | The type of data in the `Value` construct, a value in the [**BIDI_TYPE**](/windows-hardware/drivers/ddi/winspool/ne-winspool-bidi_type) enumeration. |
 | **xmllang** | (Optional) A boolean value that, when **TRUE**, means that the associated `Value` construct should be treated as a localizable string value. This means that the XPath query defined above is expected to return a list of nodes differentiated by their xml:lang attributes. The WSD monitor will then search the list of values for the best locale match. The default value is **FALSE**. |
 
-The XPath language is implemented in Windows and provides a convenient way to specify elements in an XML file. See the [XPath Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)) for more information.
+The XPath language is implemented in Windows and provides a convenient way to specify elements in an XML file. See the [XPath Reference](/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)) for more information.
 
 The **xmllang** attribute is used only when the type attribute of the `Value` construct is either "BIDI\_STRING" or "BIDI\_TEXT".
 

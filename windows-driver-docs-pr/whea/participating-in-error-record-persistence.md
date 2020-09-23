@@ -19,11 +19,11 @@ ms.localizationpriority: medium
 
 To participate in error record persistence, a PSHED plug-in must implement the following callback functions:
 
-[*WriteErrorRecord*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_write_error_record)
+[*WriteErrorRecord*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_write_error_record)
 
-[*ReadErrorRecord*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_read_error_record)
+[*ReadErrorRecord*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_read_error_record)
 
-[*ClearErrorRecord*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_clear_error_record)
+[*ClearErrorRecord*](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pshed_pi_clear_error_record)
 
 The following code example shows how to implement these callback functions.
 
@@ -181,9 +181,4 @@ A PSHED plug-in that participates in error record persistence must specify the *
 For more information about error record persistence, see [Error Record Persistence Mechanism](error-record-persistence-mechanism.md).
 
  
-
- 
-
-
-
 

@@ -47,7 +47,7 @@ The following control flow tokens are supported within a debugger command progra
 
 -   The [**.do**](-do.md) token behaves like the **do** keyword in C, except that you cannot use the word "while" before the condition.
 
--   The [**.break**](https://docs.microsoft.com/windows-hardware/drivers/devtest/-break) token behaves like the **break** keyword in C. You can use this token within any **.for**, **.while**, or **.do** loop.
+-   The [**.break**](https://support.microsoft.com/help/833721/available-switch-options-for-the-windows-xp-and-the-windows-server-200) token behaves like the **break** keyword in C. You can use this token within any **.for**, **.while**, or **.do** loop.
 
 -   The [**.continue**](-continue.md) token behaves like the **continue** keyword in C. You can use this token within any **.for**, **.while**, or **.do** loop.
 
@@ -62,10 +62,4 @@ The following control flow tokens are supported within a debugger command progra
 The [**!for\_each\_module**](-for-each-module.md), [**!for\_each\_frame**](-for-each-frame.md), and [**!for\_each\_local**](-for-each-local.md) extensions are also useful with a debugger command program.
 
  
-
- 
-
-
-
-
 

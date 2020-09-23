@@ -36,13 +36,7 @@ class MPIO_DRIVE_INFO
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DRIVE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_drive_info) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DRIVE\_INFO**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_drive_info) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -35,7 +35,7 @@ This XML fragment consists of the extensions to network security as defined by t
 
 -   Standard security settings.
 
-    For the WLAN adapter that is managed by the IHV Extensions DLL, the DLL is responsible for the security algorithms, such as the Robust Security Network Association ( [RSNA](https://docs.microsoft.com/windows-hardware/drivers/network/rsna-overview)) authentication algorithm or the [AES-CCMP](https://docs.microsoft.com/windows-hardware/drivers/network/aes-ccmp) cipher algorithm. The operating system is no longer responsible. In this situation, the IHV Extensions DLL can either process the algorithms or provide proprietary methods for offloading the processing to the WLAN adapter.
+    For the WLAN adapter that is managed by the IHV Extensions DLL, the DLL is responsible for the security algorithms, such as the Robust Security Network Association ( [RSNA](/previous-versions/windows/hardware/wireless/rsna-overview)) authentication algorithm or the [AES-CCMP](/previous-versions/windows/hardware/wireless/aes-ccmp) cipher algorithm. The operating system is no longer responsible. In this situation, the IHV Extensions DLL can either process the algorithms or provide proprietary methods for offloading the processing to the WLAN adapter.
 
 -   Proprietary security settings.
 
@@ -46,8 +46,3 @@ For more information about the Native 802.11 XML schema, refer to the Microsoft 
  
 
  
-
-
-
-
-

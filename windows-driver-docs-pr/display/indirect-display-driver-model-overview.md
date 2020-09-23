@@ -12,7 +12,7 @@ The indirect display driver (IDD) model was designed to provide a simple user-mo
 
 ## IDD implementation
 
-An IDD is implemented as a [UMDF](/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2) class extension. The IDD is the developer-provided UMDF driver for the device, using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the windows graphics sub-systems.
+An IDD is implemented as a [UMDF](../wdf/getting-started-with-umdf-version-2.md) class extension. The IDD is the developer-provided UMDF driver for the device, using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the windows graphics sub-systems.
 
 ![indirect display driver within UMDF architecture](images/idd_umdf_arch.png)
 
@@ -27,7 +27,7 @@ Because the IDD is a UMDF driver, it is responsible for all UMDF functionality s
 * Support other display functionality, like hardware mouse cursor, gamma, I2C communications, and protected content
 * Process the desktop images to display on the monitor
 
-The IDD runs in [Session 0](/windows-hardware/drivers/wdf/session-zero-guidelines-for-umdf-drivers) without any components running in the user session, so any driver instability will not affect the stability of the system as a whole.
+The IDD runs in [Session 0](../wdf/session-zero-guidelines-for-umdf-drivers.md) without any components running in the user session, so any driver instability will not affect the stability of the system as a whole.
 
 ## User-mode model
 
@@ -35,7 +35,7 @@ The IDD is a user-mode only model with no support for kernel-mode components. As
 
 > [!NOTE]
 >
-> The IDD should be built as a [universal windows driver](/windows-hardware/drivers/gettingstarted/writing-a-umdf-driver-based-on-a-template) so it can be used on multiple Windows platforms.
+> The IDD should be built as a [universal windows driver](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md) so it can be used on multiple Windows platforms.
 
 At build time, the UMDF IDD declares the version of IddCx it was built against and the OS ensures that the correct version of IddCx is loaded when the driver is loaded.
 

@@ -25,7 +25,7 @@ Devices that run Windows 10 Mobile can follow the UpdateCapsule-based process u
 
 Microsoft strongly recommends that devices running Windows 10 Mobile should update UEFI firmware by using the binary update process. Devices that run Windows 10 Mobile can use the UpdateCapsule-based process only in scenarios where the binary update process cannot be used. For example, if the partition layout of the device prevents the UEFI firmware from being updated by using a binary update package.
 
-For more information about .spkg packages for Windows 10 Mobile, see [Creating packages](https://docs.microsoft.com/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)) and [Update](https://docs.microsoft.com/windows-hardware/service/mobile/index).
+For more information about .spkg packages for Windows 10 Mobile, see [Creating packages](/previous-versions/windows/hardware/packaging/dn756642(v=vs.85)).
 
 ## Overview of the UEFI firmware update platform
 
@@ -33,7 +33,7 @@ There are two types of firmware that can be serviced via Windows: system firmwar
 
 ### System firmware updates
 
-System firmware updates for UEFI-based systems will be deployed as device driver packages (INFs). Windows will use information provided by the platform to ensure that the update package only applies to appropriate systems. A firmware update package contains a binary file containing the system firmware image. After the firmware update package is on the end-user’s system, Windows will use the UEFI UpdateCapsule function to hand-off the firmware payload to the platform firmware for processing.
+System firmware updates for UEFI-based systems will be deployed as device driver packages (INFs). Windows will use information provided by the platform to ensure that the update package only applies to appropriate systems. A firmware update package contains a binary file containing the system firmware image. After the firmware update package is on the end-user's system, Windows will use the UEFI UpdateCapsule function to hand-off the firmware payload to the platform firmware for processing.
 
 Deploying the update as a driver package allows the firmware update process to align with many existing deployment and servicing tools, and ensures simple update package authoring for hardware vendors.
 
@@ -46,7 +46,7 @@ For the purposes of updating device firmware, the device firmware can be assigne
 
 - UEFI-updatable device firmware.
 
-    This device firmware can be updated using a device driver package leveraging the same mechanism as system firmware. A device firmware update is distributed as a firmware update package. After the firmware update package is on the end-user’s system, Windows will use the UEFI UpdateCapsule function to hand-off the device firmware payload to the platform firmware for processing. This process is virtually identical to how Windows hands off system firmware update payload, and is discussed below.
+    This device firmware can be updated using a device driver package leveraging the same mechanism as system firmware. A device firmware update is distributed as a firmware update package. After the firmware update package is on the end-user's system, Windows will use the UEFI UpdateCapsule function to hand-off the device firmware payload to the platform firmware for processing. This process is virtually identical to how Windows hands off system firmware update payload, and is discussed below.
 
     It is recommended that device firmware be updated using a discrete firmware update driver package, but device firmware may also be updated with system firmware as part of a single firmware update driver package.
 
@@ -60,7 +60,7 @@ For the purposes of updating device firmware, the device firmware can be assigne
 
 In order for a system to be compatible with the Windows firmware updating mechanism, it must meet the following requirements:
 
-- The system must implement UpdateCapsule and QueryCapsuleCapabilities as defined by section 7.5.3 of the [UEFI specification](https://uefi.org/specifications).
+- The system must implement UpdateCapsule and QueryCapsuleCapabilities as defined by section 8.5.3 of the [UEFI specification 2.8](https://uefi.org/specifications).
 
     UpdateCapsule is used to pass the firmware update payload between Windows and the platform firmware.
 
@@ -72,7 +72,7 @@ In order for a system to be compatible with the Windows firmware updating mechan
 
     The Firmware Resource allows Windows to surface a device instance with a Hardware ID, which will be used to target the system or device firmware update to appropriate systems and devices. It also describes the current firmware version and provides status for previous updates.
 
-    There exists a single entry for system firmware updates. All devices with updateable firmware must have a resource specified in the ESRT, unless a device’s firmware is updated as part of a system firmware update.
+    There exists a single entry for system firmware updates. All devices with updateable firmware must have a resource specified in the ESRT, unless a device's firmware is updated as part of a system firmware update.
 
     For more information, see [ESRT table definition](esrt-table-definition.md).
 

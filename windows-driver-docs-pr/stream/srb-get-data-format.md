@@ -14,13 +14,7 @@ ms.localizationpriority: medium
 
 The class driver issues this request to query the data format for the stream. The minidriver should set *pSrb*-&gt;**CommandData** to the current data format for the stream.
 
-For more information about data formats, see the [Stream Class Minidriver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2).
+For more information about data formats, see the [Stream Class Minidriver Design Guide](./streaming-minidrivers2.md).
 
  
-
- 
-
-
-
-
 

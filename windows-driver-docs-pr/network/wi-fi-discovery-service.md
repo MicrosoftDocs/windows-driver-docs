@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Wi-Fi Discovery Service Overview
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 The Wi-Fi discovery service enables users to reduce data costs by offloading cellular traffic to Wi-Fi hotspots. The discovery service aggregates Wi-Fi hotspot data from providers, such as mobile operators, and other sources to produce a directory of known Wi-Fi hotspots. By using this directory, users can obtain information about hotspots near their current position.
 

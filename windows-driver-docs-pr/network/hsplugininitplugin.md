@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # HSPluginInitPlugin function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HSPluginInitPlugin** function is exported by the plugin DLL and is called to initialize the plugin.

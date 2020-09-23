@@ -40,7 +40,7 @@ Your INF file should add interfaces that contain these names:
   AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave2%,Test.Interface.Wave2
 ```
 
-The INF file should create **AddReg** sections (see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)) in order to add information about these interfaces to the registry:
+The INF file should create **AddReg** sections (see [**INF AddReg Directive**](../install/inf-addreg-directive.md)) in order to add information about these interfaces to the registry:
 
 ```inf
   [Test.Interface.Wave1]
@@ -72,9 +72,4 @@ Finally, the INF file should define the friendly names for these subdevices:
 The friendly names show up in the audio control panel to identify the subdevices.
 
  
-
- 
-
-
-
 

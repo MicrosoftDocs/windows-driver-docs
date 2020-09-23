@@ -20,13 +20,7 @@ The *Config.mof* file defines the following WMI property qualifier:
 
 If you apply one of the preceding qualifiers to a data field in a WMI class definition, it indicates that you can assign any of the integer values that are indicated in the definition of the qualifier to the corresponding structure member.
 
-For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](https://docs.microsoft.com/windows-hardware/drivers/kernel/wmi-property-qualifiers).
+For a general discussion of WMI property qualifiers, see [WMI Property Qualifiers](../kernel/wmi-property-qualifiers.md).
 
  
-
- 
-
-
-
-
 

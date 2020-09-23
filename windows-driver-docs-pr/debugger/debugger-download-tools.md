@@ -18,7 +18,7 @@ WinDbg Preview is a new version of WinDbg with more modern visuals, faster windo
 
  - Download WinDbg Preview from the Microsoft Store: [WinDbg Preview](https://www.microsoft.com/store/p/windbg/9pgjgd53tn86).
 
- - Learn more about installation and configuration in [WinDbg Preview - Installation](https://docs.microsoft.com/windows-hardware/drivers/debugger/windbg-install-preview).
+ - Learn more about installation and configuration in [WinDbg Preview - Installation](./windbg-install-preview.md).
 
 ## ![Small classic windbg preview logo](images/windbg-classic-logo.png) Debugging Tools for Windows 10 (WinDbg)
 
@@ -32,7 +32,7 @@ In the SDK installation wizard, select **Debugging Tools for Windows**, and dese
 
 ### Adding the Debugging Tools for Windows if the SDK is already installed
 
-If the Windows SDK is already installed, open **Settings**, navigate to **Apps & features**, select **Windows Software Development Kit**, and then click **Modify** to change the installation to add **Debugging Tools for Windows**.
+If the Windows SDK is already installed, open **Settings**, navigate to **Apps & features**, select **Windows Software Development Kit**, and then select **Modify** to change the installation to add **Debugging Tools for Windows**.
 
 -------------------
 
@@ -43,16 +43,16 @@ To download the debugger tools for previous versions of Windows, you need to dow
 
 ## Learn more about the debuggers
 
-Learn more about WinDbg and other debuggers in [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/).
+Learn more about WinDbg and other debuggers in [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](./index.md).
 
 ## Looking for related downloads?
 
-- [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+- [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
 
 - [Windows Symbol Packages](debugger-download-symbols.md)  
 
-- [Windows Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/windows-hardware-lab-kit)
+- [Windows Hardware Lab Kit](/windows-hardware/test/hlk/windows-hardware-lab-kit)
 
-- [Download and install the Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+- [Download and install the Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install)
 
 - [Windows Insider - Windows Preview builds](https://insider.windows.com/)

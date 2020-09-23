@@ -1,5 +1,5 @@
 ---
-Description: Support for property commands (WpdBasicHardwareDriverSample)
+description: Support for property commands (WpdBasicHardwareDriverSample)
 title: Support for property commands (WpdBasicHardwareDriverSample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

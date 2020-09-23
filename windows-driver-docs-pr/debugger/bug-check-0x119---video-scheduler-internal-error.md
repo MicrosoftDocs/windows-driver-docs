@@ -44,12 +44,12 @@ If the faulting module listed in the !analyze output is a video driver, investig
 
 For more information, see:
 
-[Handling Command and DMA Buffers](https://docs.microsoft.com/windows-hardware/drivers/display/handling-command-and-dma-buffers)
+[Handling Command and DMA Buffers](../display/handling-command-and-dma-buffers.md)
 
-[Submitting a Command Buffer](https://docs.microsoft.com/windows-hardware/drivers/display/submitting-a-command-buffer)
+[Submitting a Command Buffer](../display/submitting-a-command-buffer.md)
 
-[Supplying Fence Identifiers](https://docs.microsoft.com/windows-hardware/drivers/display/supplying-fence-identifiers)
+[Supplying Fence Identifiers](../display/supplying-fence-identifiers.md)
 
 [GPU Scheduler Class](https://docs.microsoft.com/windows-hardware/drivers/display/gpu-scheduler-class)
 
-[Direct flip of video memory](https://docs.microsoft.com/windows-hardware/drivers/display/direct-flip-of-video-memory)
+[Direct flip of video memory](../display/direct-flip-of-video-memory.md)

@@ -16,7 +16,7 @@ The measure aggregates telemetry from a 28-day sliding window into a ratio of ma
 
 Many firmware that fail this measure are not abiding by the contract where the ESRT LastAttemptStatus field is not reporting a failure code as the ESRT version reported is the same as the previous version on the machine, prior to install. 
 
-[Section 3 of this document](https://docs.microsoft.com/windows-hardware/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality) provides basic validation scenarios to ensure that the firmware implementation meets this requirement.  
+[Section 3 of this document](/windows-hardware/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality) provides basic validation scenarios to ensure that the firmware implementation meets this requirement.  
 
 ## Measure attributes
 
@@ -27,11 +27,10 @@ Many firmware that fail this measure are not abiding by the contract where the E
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|200|
 |**Passing criteria**|<= 5%|
-|**Measure ID**|20116755|
+|**Measure ID**|20116755 or 23260704|
 
 ## Calculation
 
 number of machines that installed a firmware that hit max retry limit /
 
 number of machines that received a driver install event for a firmware device
-

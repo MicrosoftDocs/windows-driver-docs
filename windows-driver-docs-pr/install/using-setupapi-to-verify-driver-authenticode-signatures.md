@@ -25,7 +25,7 @@ You can use the following procedures to verify that a driver has a valid Authent
 
 Check the DNF_AUTHENTICODE_SIGNED flag.
 
-If a driver has a valid Authenticode signature, Windows sets this flag in the **Flags** member of the driver node's [**SP_DRVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_drvinstall_params) structure. (Also be aware that Windows sets the DNF_INF_IS_SIGNED flag if the driver has a [WHQL release signature](whql-release-signature.md), if it is a system-supplied driver, or if it has an Authenticode signature.)
+If a driver has a valid Authenticode signature, Windows sets this flag in the **Flags** member of the driver node's [**SP_DRVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_drvinstall_params) structure. (Also be aware that Windows sets the DNF_INF_IS_SIGNED flag if the driver has a [WHQL release signature](whql-release-signature.md), if it is a system-supplied driver, or if it has an Authenticode signature.)
 
 ### To verify that an INF file has a valid Authenticode signature
 
@@ -64,10 +64,4 @@ However, be aware that the version is not set in the **Version** member.
 **SetupScanFileQueue** sets the ERROR_AUTHENTICODE_Xxx error code in the same way as described earlier in this topic for **SetupVerifyInfFile**.
 
  
-
- 
-
-
-
-
 

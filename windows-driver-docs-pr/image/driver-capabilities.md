@@ -14,7 +14,7 @@ The WIA minidriver is responsible for building a table that lists all of the eve
 
 ![diagram illustrating the wia minidriver capabilities table](images/wia-capabilitiestable.png)
 
-The capabilities table is defined as an array of [**WIA\_DEV\_CAP\_DRV**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_dev_cap_drv) structures. The minidriver must construct this array and return it to the WIA service when the WIA service calls the [**IWiaMiniDrv::drvGetCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
+The capabilities table is defined as an array of [**WIA\_DEV\_CAP\_DRV**](/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_dev_cap_drv) structures. The minidriver must construct this array and return it to the WIA service when the WIA service calls the [**IWiaMiniDrv::drvGetCapabilities**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetcapabilities) method.
 
 ## Defining supported events and commands
 

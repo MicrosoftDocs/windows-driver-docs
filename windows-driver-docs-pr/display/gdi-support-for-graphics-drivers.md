@@ -20,13 +20,7 @@ This section describes the Microsoft Windows NT-based operating system graphics 
 
 References to GDI in this section are implicit references to kernel-mode GDI; Microsoft Win32 GDI will be explicitly identified. Kernel-mode GDI is also known as the Graphics Engine.
 
-GDI function and structure references are documented in the [Display Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) section. Most of the GDI function declarations and structure definitions can be found in *Winddi.h*. For display drivers, the Microsoft DirectDraw heap manager functions are declared in *Dmemmgr.h*. Both files are shipped with the Windows Driver Kit (WDK).
+GDI function and structure references are documented in the [Display Devices Reference](/windows-hardware/drivers/ddi/index) section. Most of the GDI function declarations and structure definitions can be found in *Winddi.h*. For display drivers, the Microsoft DirectDraw heap manager functions are declared in *Dmemmgr.h*. Both files are shipped with the Windows Driver Kit (WDK).
 
  
-
- 
-
-
-
-
 

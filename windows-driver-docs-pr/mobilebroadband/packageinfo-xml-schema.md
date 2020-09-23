@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # PackageInfo XML schema overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 A metadata package contains one PackageInfo.xml document, which has information that the operating system uses to install the metadata package and reference its contents.
 
@@ -23,7 +23,7 @@ For the complete definition of the PackageInfo XML schema, see [PackageInfo XML 
 
 For information about the elements that are defined by the PackageInfo XML schema, see [PackageInfo XML elements](packageinfo-xml-elements.md).
 
-For information about the data types that are defined by the PackageInfo XML schema, see [PackageInfo XML data types](packageinfo-xml-data-types.md).
+For information about the data types that are defined by the PackageInfo XML schema, see [PackageInfo XML data types](guidtype-packageinfo.md).
 
 For an example of XML data in the format that is defined by the PackageInfo XML schema, see [PackageInfo XML Example](packageinfo-xml-example.md).
 

@@ -35,7 +35,7 @@ Remarks
 
 The count from this OID, combined with the count from [OID_GEN_MULTICAST_FRAMES_XMIT](oid-gen-multicast-frames-xmit.md), is identical to the *ifOutNUcastPkts* counter described in RFC 2863.
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
 Requirements
 ------------
@@ -59,9 +59,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

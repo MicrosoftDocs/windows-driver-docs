@@ -40,7 +40,7 @@ None
 Remarks
 -------
 
-The **NdisGetMdlPhysicalArraySize** macro provides an MDL-based version of the [**NdisGetBufferPhysicalArraySize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff552033(v=vs.85)) function.
+The **NdisGetMdlPhysicalArraySize** macro provides an MDL-based version of the [**NdisGetBufferPhysicalArraySize**](/previous-versions/windows/hardware/network/ff552033(v=vs.85)) function.
 
 Requirements
 ------------
@@ -69,7 +69,7 @@ Requirements
 </tr>
 <tr class="odd">
 <td><p>DDI compliance rules</p></td>
-<td><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function)"><strong>Irql_NetBuffer_Function</strong></a></td>
+<td><a href="/windows-hardware/drivers/devtest/ndis-irql-netbuffer-function" data-raw-source="[&lt;strong&gt;Irql_NetBuffer_Function&lt;/strong&gt;](../devtest/ndis-irql-netbuffer-function.md)"><strong>Irql_NetBuffer_Function</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -77,12 +77,5 @@ Requirements
 ## See also
 
 
-[**NdisGetBufferPhysicalArraySize**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff552033(v=vs.85))
-
- 
-
- 
-
-
-
+[**NdisGetBufferPhysicalArraySize**](/previous-versions/windows/hardware/network/ff552033(v=vs.85))
 

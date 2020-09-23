@@ -20,7 +20,7 @@ Custom APOs are implemented as in-process COM objects, so they run in user mode 
 
 Each logical device can be associated with one APO of each type. For more information on modes and effects, see [Audio Signal Processing Modes](audio-signal-processing-modes.md).
 
-You can implement an APO by basing your custom class on the CBaseAudioProcessingObject base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves adding new functionality into the CBaseAudioProcessingObject base class to create a customized APO. The CBaseAudioProcessingObject base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
+You can implement an APO by basing your custom class on the CBaseAudioProcessingObject base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves adding new functionality into the CBaseAudioProcessingObject base class to create a customized APO. The CBaseAudioProcessingObject base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
 
 Perform the following steps to implement your custom APOs.
 
@@ -33,16 +33,16 @@ Perform the following steps to implement your custom APOs.
 All custom APOs must have the following general characteristics:
 
 - The APO must have one input and one output connection. These connections are audio buffers and can have multiple channels.
-- An APO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) routine. The APO cannot change the settings of the underlying logical device, including its KS topology.
+- An APO can modify only the audio data that is passed to it through its [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) routine. The APO cannot change the settings of the underlying logical device, including its KS topology.
 - In addition to IUnknown, APOs must expose the following interfaces:
 
-  - [IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
+  - [IAudioProcessingObject](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). An interface that handles setup tasks such as initialization and format negotiation.
 
-  - [IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
+  - [IAudioProcessingObjectConfiguration](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The configuration interface.
 
-  - [IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
+  - [IAudioProcessingObjectRT](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). A real-time interface that handles audio processing. It can be called from a real-time processing thread.
 
-  - [IAudioSystemEffects](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
+  - [IAudioSystemEffects](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). The interface that makes the audio engine recognize a DLL as a systems effects APO.
 
 - All APOs must have real-time system compatibility. This means that:
 
@@ -77,13 +77,13 @@ a. You can use GitHub tools to work with the samples. You can also download the 
 
 b. Download the master.zip file to your local hard drive.
 
-c. Right click *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
+c. Selecct and hold (or right-click) *Windows-driver-samples-master.zip*, and choose **Extract All**. Specify a new folder, or browse to an existing one that will store the extracted files. For example, you could specify *C:\\DriverSamples\\* as the new folder into which the files will be extracted.
 
 d. After the files are extracted, navigate to the following subfolder: *C:\\DriverSamples\\Audio\\Sysvad*
 
 ### Open the driver solution in Visual Studio
 
-In Microsoft Visual Studio, Click **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\Audio\\Sysvad*). Double-click the *Sysvad* solution file to open it.
+In Microsoft Visual Studio, Select **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\DriverSamples\\Audio\\Sysvad*). Double-click the *Sysvad* solution file to open it.
 
 In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has six projects.
 
@@ -118,9 +118,9 @@ The primary header files for the SwapAPO sample is swapapo.h. The other primary 
 
 ## Implementing the COM Object Audio Processing Code
 
-You can wrap a system-supplied APO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized APO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
+You can wrap a system-supplied APO by basing your custom class on the **CBaseAudioProcessingObject** base class, which is declared in the Baseaudioprocessingobject.h file. This approach involves introducing new functionality into the **CBaseAudioProcessingObject** base class to create a customized APO. The **CBaseAudioProcessingObject** base class implements much of the functionality that an APO requires. It provides default implementations for most of the methods in the three required interfaces. The primary exception is the [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method.
 
-By using **CBaseAudioProcessingObject**, you can more easily implement an APO. If an APO has no special format requirements and operates on the required float32 format, the default implementations of the interface methods that are included in **CBaseAudioProcessingObject** should be sufficient. Given the default implementations, only three main methods must be implemented: [**IAudioProcessingObject::IsInputFormatSupported**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported), [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess), and **ValidateAndCacheConnectionInfo**.
+By using **CBaseAudioProcessingObject**, you can more easily implement an APO. If an APO has no special format requirements and operates on the required float32 format, the default implementations of the interface methods that are included in **CBaseAudioProcessingObject** should be sufficient. Given the default implementations, only three main methods must be implemented: [**IAudioProcessingObject::IsInputFormatSupported**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported), [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess), and **ValidateAndCacheConnectionInfo**.
 
 To develop your APOs based on the **CBaseAudioProcessingObject** class, perform the following steps:
 
@@ -142,13 +142,13 @@ To develop your APOs based on the **CBaseAudioProcessingObject** class, perform 
 
 2. Implement the following three methods:
 
-    - [**IAudioProcessingObject::IsInputFormatSupported**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported). This method handles format negotiation with the audio engine.
+    - [**IAudioProcessingObject::IsInputFormatSupported**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported). This method handles format negotiation with the audio engine.
 
-    - [**IAudioProcessingObjectRT::APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). This method uses your custom algorithm to perform signal processing.
+    - [**IAudioProcessingObjectRT::APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess). This method uses your custom algorithm to perform signal processing.
 
     - **ValidateAndCacheConnectionInfo**. This method allocates memory to store format details, for example, channel count, sampling rate, sample depth, and channel mask.
 
-The following C++ code example shows an implementation of the [**APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
+The following C++ code example shows an implementation of the [**APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) method for the sample class that you created in step 1. For an actual implementation of this concept, follow instructions in the **Audio Processing Objects Driver Sample** section to go to the Swap sample, and then refer to the *Swapapolfx.cpp* file.
 
 ```cpp
 // Custom implementation of APOProcess method
@@ -174,7 +174,7 @@ HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 
 **Note**  The remaining interfaces and methods that your class inherits from **CBaseAudioProcessingObject** are described in detail in the Audioenginebaseapo.idl file.
 
-For desktop PCs, you can provide a user interface to configure the features that you added to the custom APO. For more information about this, see [Implementing a UI for Configuring APOs](implementing-a-ui-for-configuring-sapos.md).
+For desktop PCs, you can provide a user interface to configure the features that you added to the custom APO. For more information about this, see [Implementing a UI for Configuring APOs](/windows-hardware/drivers/audio/implementing-a-ui-for-configuring-apo-effects).
 
 ## Replacing System-supplied APOs
 
@@ -206,10 +206,10 @@ The rest of the implementation steps are the same as a custom APO.
 
 Implement the following interfaces and methods for the COM component:
 
-- [IAudioProcessingObject](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). The required methods for this interface are: [**Initialize**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-initialize) and [**IsInputFormatSupported.**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported)
-- [IAudioProcessingObjectConfiguration](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The required methods for this interface are: [**LockForProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) and [**UnlockForProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-unlockforprocess)
-- [IAudioProcessingObjectRT](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). The required method for this interface is [**APOProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) and it is the method that implements the DSP algorithm.
-- [IAudioSystemEffects](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). This interface makes the audio engine recognize a DLL as an APO.
+- [IAudioProcessingObject](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobject). The required methods for this interface are: [**Initialize**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-initialize) and [**IsInputFormatSupported.**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobject-isinputformatsupported)
+- [IAudioProcessingObjectConfiguration](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectconfiguration). The required methods for this interface are: [**LockForProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) and [**UnlockForProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-unlockforprocess)
+- [IAudioProcessingObjectRT](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudioprocessingobjectrt). The required method for this interface is [**APOProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectrt-apoprocess) and it is the method that implements the DSP algorithm.
+- [IAudioSystemEffects](/windows/win32/api/audioenginebaseapo/nn-audioenginebaseapo-iaudiosystemeffects). This interface makes the audio engine recognize a DLL as an APO.
 
 ## Working with Visual Studio and APOs
 
@@ -219,7 +219,7 @@ When working with APOs in Visual Studio, perform these tasks for each APO projec
 
 Drivers that are targeting Windows 10 should dynamically link against the universal CRT.
 
-If you need to support Windows 8,1, enable static linking by setting the project properties in C/C++, Code Generation. Set "Runtime Library" to */MT* for release builds or */MTd* for debug builds. This change is made, because for a driver it is difficult to redistribute the MSVCRT&lt;n&gt;.dll binary. The solution is to statically link libcmt.dll. For more information see [/MD, /MT, /LD (Use Run-Time Library)](https://docs.microsoft.com/cpp/build/reference/md-mt-ld-use-run-time-library) .
+If you need to support Windows 8,1, enable static linking by setting the project properties in C/C++, Code Generation. Set "Runtime Library" to */MT* for release builds or */MTd* for debug builds. This change is made, because for a driver it is difficult to redistribute the MSVCRT&lt;n&gt;.dll binary. The solution is to statically link libcmt.dll. For more information see [/MD, /MT, /LD (Use Run-Time Library)](/cpp/build/reference/md-mt-ld-use-run-time-library) .
 
 ### Disable Use of an Embedded Manifest
 
@@ -241,17 +241,17 @@ You can register APOs for specific modes using certain allowable combinations of
 
 Refer to these reference topics for information on each of the APO INF file settings.
 
-[PKEY\_FX\_StreamEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-streameffectclsid)
+[PKEY\_FX\_StreamEffectClsid](./pkey-fx-streameffectclsid.md)
 
-[PKEY\_FX\_ModeEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-modeeffectclsid)
+[PKEY\_FX\_ModeEffectClsid](./pkey-fx-modeeffectclsid.md)
 
-[PKEY\_FX\_EndpointEffectClsid](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-fx-endpointeffectclsid)
+[PKEY\_FX\_EndpointEffectClsid](./pkey-fx-endpointeffectclsid.md)
 
-[PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-sfx-processingmodes-supported-for-streaming)
+[PKEY\_SFX\_ProcessingModes\_Supported\_For\_Streaming](./pkey-sfx-processingmodes-supported-for-streaming.md)
 
-[PKEY\_MFX\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-mfx-processingmodes-supported-for-streaming)
+[PKEY\_MFX\_ProcessingModes\_Supported\_For\_Streaming](./pkey-mfx-processingmodes-supported-for-streaming.md)
 
-[PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming](https://docs.microsoft.com/windows-hardware/drivers/audio/pkey-efx-processingmodes-supported-for-streaming)
+[PKEY\_EFX\_ProcessingModes\_Supported\_For\_Streaming](./pkey-efx-processingmodes-supported-for-streaming.md)
 
 The following INF file samples show how to register audio processing objects (APOs) for specific modes. They illustrate the possible combinations available from this list.
 
@@ -301,7 +301,7 @@ Note that in the sample INF file, the EFX\_Streaming property is commented out b
 
 ### Componentized APO Installation
 
-Starting with Windows 10, release 1809, APO registration with the audio engine uses the componentized audio driver model. Using audio componentization creates a smoother and more reliable install experience and better supports component servicing. For more information, see [Creating a componentized audio driver installation](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-universal-drivers#creating-a-componentized-audio-driver-installation).
+Starting with Windows 10, release 1809, APO registration with the audio engine uses the componentized audio driver model. Using audio componentization creates a smoother and more reliable install experience and better supports component servicing. For more information, see [Creating a componentized audio driver installation](./audio-universal-drivers.md#creating-a-componentized-audio-driver-installation).
 
 The following example code is extracted from the public ComponentizedAudioSampleExtension.inf and ComponentizedApoSample.inf. Refer to the SYSVAD audio sample which is available on GitHub here: <https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>.
 
@@ -323,7 +323,7 @@ This APO device triggers the second part, the installation of the APO INF, in th
 
 >[!NOTE]
 > The INF file samples shown support driver package isolation by using in most cases the HKR registry key. Earlier samples used the HKCR to store persistent values. The exception is that registration of Component Object Model (COM) objects, a key may be written under HKCR.
- For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
+ For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 ```inf
 [Version]
@@ -568,9 +568,9 @@ The audio system monitors the returned HRESULT values from the following four me
 
 - LockForProcess
 
-The failure count value is incremented for an APO every time one of these methods returns a failure code. The failure count is reset to zero when an APO returns a code that indicates that it was successfully incorporated into the audio graph. A successful call to the [**LockForProcess**](https://docs.microsoft.com/windows/desktop/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) method is a good indication that the APO was successfully incorporated.
+The failure count value is incremented for an APO every time one of these methods returns a failure code. The failure count is reset to zero when an APO returns a code that indicates that it was successfully incorporated into the audio graph. A successful call to the [**LockForProcess**](/windows/win32/api/audioenginebaseapo/nf-audioenginebaseapo-iaudioprocessingobjectconfiguration-lockforprocess) method is a good indication that the APO was successfully incorporated.
 
-For [**CoCreateInstance**](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) in particular, there are a number of reasons why the returned HRESULT code could indicate a failure. The three primary reasons are as follows:
+For [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) in particular, there are a number of reasons why the returned HRESULT code could indicate a failure. The three primary reasons are as follows:
 
 - The graph is running protected content, and the APO is not properly signed.
 
@@ -584,6 +584,6 @@ Also, if the failure count value for an SFX, MFX or EFX APO reaches a system-spe
 
 [Windows Audio Processing Objects](windows-audio-processing-objects.md)
 
-[Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file)
+[Using a Universal INF File](../install/using-a-universal-inf-file.md)
 
-[Creating a componentized audio driver installation](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-universal-drivers#creating-a-componentized-audio-driver-installation)
+[Creating a componentized audio driver installation](./audio-universal-drivers.md#creating-a-componentized-audio-driver-installation)

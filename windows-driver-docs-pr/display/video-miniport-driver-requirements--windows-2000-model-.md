@@ -22,7 +22,7 @@ The following are some of the requirements for video miniport drivers.
 
 -   **A miniport driver can only make calls exported by** ***videoprt.sys*.**
 
-    A miniport driver can call only those functions that are exported by the system-supplied video port driver. (The exported video port functions are listed on the reference pages following [Video Port Driver Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).) Driver writers can also use the following to determine which functions a miniport driver is calling:
+    A miniport driver can call only those functions that are exported by the system-supplied video port driver. (The exported video port functions are listed on the reference pages following [Video Port Driver Functions](/windows-hardware/drivers/ddi/index).) Driver writers can also use the following to determine which functions a miniport driver is calling:
 
     ```cpp
     link -dump -imports my_driver.sys
@@ -35,10 +35,4 @@ The following are some of the requirements for video miniport drivers.
     Panning must be disabled by default. The miniport driver should enable it only when it is requested through a control panel. OEMs can enable panning by default as a part of their preinstall.
 
  
-
- 
-
-
-
-
 

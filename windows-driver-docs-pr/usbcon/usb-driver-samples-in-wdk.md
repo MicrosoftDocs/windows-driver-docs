@@ -1,5 +1,5 @@
 ---
-Description: The topic contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.
+description: The topic contains basic information about the USB samples that are available for download from the Windows driver samples repository on GitHub.
 title: USB driver samples
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -53,10 +53,7 @@ The topic contains basic information about the USB samples that are available fo
 ## Building a Sample
 
 
-For information about building the sample drivers, see [Developing, Testing, and Deploying Drivers](https://docs.microsoft.com/windows-hardware/drivers).
+For information about building the sample drivers, see [Developing, Testing, and Deploying Drivers](/windows-hardware/drivers).
 
 ## Related topics
-[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
-
-
-
+[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)

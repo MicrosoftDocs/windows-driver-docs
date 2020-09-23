@@ -14,7 +14,7 @@ An extension INF template is an extension INF with entries commented out that a 
 
 To create an extension INF based on a template, follow the guidance in [Creating an extension INF](using-an-extension-inf-file.md#creating-an-extension-inf) and refer to the examples at the bottom of that page.
 
-To submit a new extension INF that is based on a template, use the [DUA process](https://docs.microsoft.com/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
+To submit a new extension INF that is based on a template, use the [DUA process](/windows-hardware/test/hlk/user/create-a-driver-only-update-package).
 
 > [!NOTE]
 > If an OEM uses the DUA process to modify an IHV-provided base INF, ownership of the base INF shifts to the OEM. Instead, the OEM should contact the IHV and request that appropriate extensibility be added to the base INF, or that the IHV provide an extension INF template.

@@ -8,17 +8,13 @@ ms.localizationpriority: medium
 
 # Shader Relative Addressing
 
-
-## <span id="ddk_shader_relative_addressing_gg"></span><span id="DDK_SHADER_RELATIVE_ADDRESSING_GG"></span>
-
-
 Pixel and vertex shader versions that support relative addressing can specify that relative addressing is used in bit 13 of [destination](destination-parameter-token.md) and [source parameter tokens](source-parameter-token.md). When relative addressing is specified, an additional DWORD token follows the destination or source parameter token.
 
 Note that this relative-addressing token is present only for vertex shader version 2\_0 and later and for pixel shader version 3\_0 and later. Relative addressing is not used for pixel shader versions earlier than 3\_0.
 
 This relative-addressing token is formatted the same as the destination or source parameter token and the following rules apply:
 
--   Only D3DSPR\_ADDR or D3DSPR\_LOOP can be used as [register types](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
+-   Only D3DSPR\_ADDR or D3DSPR\_LOOP can be used as [register types](/windows-hardware/drivers/ddi/d3d9types/ne-d3d9types-_d3dshader_param_register_type).
 
 -   Swizzle bits in source parameter tokens are used to determine a register component.
 
@@ -30,21 +26,6 @@ This relative-addressing token is formatted the same as the destination or sourc
 
 Address registers and the aL register are used for relative addressing of constant registers.
 
-## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
-
-
-Available in Windows Vista and later versions of the Windows operating systems.
-
-## <span id="Requirements"></span><span id="requirements"></span><span id="REQUIREMENTS"></span>Requirements
-
+## Requirements
 
 Available in Windows Vista and later versions of the Windows operating systems.
-
- 
-
- 
-
-
-
-
-

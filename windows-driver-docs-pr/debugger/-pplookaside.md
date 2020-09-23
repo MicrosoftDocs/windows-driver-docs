@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # !pplookaside
 
 
-The **!pplookaside** command displays [Lookaside Lists](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-lookaside-lists) for processors in the target computer.
+The **!pplookaside** command displays [Lookaside Lists](../kernel/using-lookaside-lists.md) for processors in the target computer.
 
 ```dbgcmd
 !pplookaside <address>
@@ -31,10 +31,4 @@ The address of the processor.
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
  
-
- 
-
-
-
-
 

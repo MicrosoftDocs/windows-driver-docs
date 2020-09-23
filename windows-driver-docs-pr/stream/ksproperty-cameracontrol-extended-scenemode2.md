@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE (ISP control parameters)
 
-The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration provides OEMs with capabilities to fine tune the scene mode along with any other ISP control parameters as needed.
+The **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE** property ID that is defined in the [**KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_extended_property) enumeration provides OEMs with capabilities to fine tune the scene mode along with any other ISP control parameters as needed.
 
 ## Usage summary table
 
@@ -43,7 +43,7 @@ This flag is not applicable.
 
 These flags indicate the corresponding scene mode as defined. The camera driver will use the scene mode specified as a hint to optimize the various ISP settings as needed (for example, for NIGHT, the ISP settings are optimized for night time environment).
 
-The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE** property. The [**KSCAMERA\_EXTENDEDPROP\_VALUE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure is ignored for **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE**.
+The table below contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE** property. The [**KSCAMERA\_EXTENDEDPROP\_VALUE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value) structure is ignored for **KSPROPERTY\_CAMERACONTROL\_EXTENDED\_SCENEMODE**.
 
 | Member | Value |
 |--|--|

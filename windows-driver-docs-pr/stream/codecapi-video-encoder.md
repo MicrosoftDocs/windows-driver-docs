@@ -56,13 +56,7 @@ Declared in *ksmedia.h*. Include *ksmedia.h*.
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
- 
-
-
-
-
 

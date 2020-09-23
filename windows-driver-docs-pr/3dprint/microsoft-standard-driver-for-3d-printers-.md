@@ -26,11 +26,11 @@ The general process to get a 3D printer working on Windows 10 includes the foll
 
 In the following sections, we will illustrate each of these steps using a concrete example.
 
-For more information, see [Microsoft OS Descriptors](https://docs.microsoft.com/previous-versions/gg463179(v=msdn.10)).
+For more information, see [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 
 ## Compatible ID
 
-To specify to the Windows operating system that we are currently using a 3D printer, we have to use the right compatible ID. The list of Microsoft Compatible ID are available at [Microsoft OS Descriptors](https://docs.microsoft.com/previous-versions/gg463179(v=msdn.10)).
+To specify to the Windows operating system that we are currently using a 3D printer, we have to use the right compatible ID. The list of Microsoft Compatible ID are available at [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 
 The compatible ID for a 3D printer is shown in the following table:
 
@@ -131,7 +131,7 @@ static const uint8_t PROGMEM ms3dprint_properties_descriptor[] = {
 };
 ```
 
-Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file. See [Microsoft OS Descriptors](https://docs.microsoft.com/previous-versions/gg463179(v=msdn.10)) for more information.
+Information regarding the extended properties OS feature descriptor are in the *OS\_Desc\_Ext\_Prop.doc* file. See [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)) for more information.
 
 ## Verifying the print capabilities
 
@@ -169,7 +169,7 @@ For more information, see the following documents and resources:
 
 [3D Printing SDK (MSI download)](https://go.microsoft.com/fwlink/p/?LinkId=394375)
 
-[Microsoft OS Descriptors](https://docs.microsoft.com/previous-versions/gg463179(v=msdn.10))
+[Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10))
 
 [USB 2.0 Specification](https://www.usb.org/documents)
 

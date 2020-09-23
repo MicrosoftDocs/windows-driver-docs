@@ -47,7 +47,7 @@ The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explicitly include a
 <td align="left"><p>No</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph" data-raw-source="[&lt;strong&gt;SYSAUDIO_SELECT_GRAPH&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)"><strong>SYSAUDIO_SELECT_GRAPH</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph" data-raw-source="[&lt;strong&gt;SYSAUDIO_SELECT_GRAPH&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)"><strong>SYSAUDIO_SELECT_GRAPH</strong></a></p></td>
 <td align="left"><p>None</p></td>
 </tr>
 </tbody>
@@ -55,7 +55,7 @@ The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explicitly include a
 
  
 
-The property descriptor (instance data) is a structure of type SYSAUDIO\_SELECT\_GRAPH that specifies the property, pin ID, and node ID. The property is specified by an embedded structure of type [**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)). The pin ID is an index identifying a pin factory in the KS filter that wraps the virtual audio device. The node ID is an index identifying an optional node in the specified pin's data path. For more information, see the following Remarks section.
+The property descriptor (instance data) is a structure of type SYSAUDIO\_SELECT\_GRAPH that specifies the property, pin ID, and node ID. The property is specified by an embedded structure of type [**KSPROPERTY**](/previous-versions/ff564262(v=vs.85)). The pin ID is an index identifying a pin factory in the KS filter that wraps the virtual audio device. The node ID is an index identifying an optional node in the specified pin's data path. For more information, see the following Remarks section.
 
 No property value (operation data) is defined for this property. Specify the property value's buffer pointer as **NULL** and its size as zero.
 
@@ -93,16 +93,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**SYSAUDIO\_SELECT\_GRAPH**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)
+[**SYSAUDIO\_SELECT\_GRAPH**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-sysaudio_select_graph)
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 

@@ -1,5 +1,5 @@
 ---
-Description: How to run stress and transfer and Super MUTT performance tests.
+description: How to run stress and transfer and Super MUTT performance tests.
 title: How to run stress and transfer performance tests for MUTT devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -33,8 +33,5 @@ To exit all tests, press **Ctrl-C** in the command window. If the system does no
 3.  Run the script that is named **FX3Perf.bat** to start a test run.
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[USB](../index.yml)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

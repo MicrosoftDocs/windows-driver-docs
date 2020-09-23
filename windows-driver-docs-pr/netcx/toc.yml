@@ -22,8 +22,6 @@
     href: power-down-sequence-for-a-netadaptercx-client-driver.md  
 - name: "Accessing configuration information"
   href: accessing-configuration-information.md
-- name: "Handling control requests"
-  href: handling-control-requests.md
 - name: "Debugging a NetAdapterCx client driver"
   href: debugging-a-netadaptercx-client-driver.md
 - name: "Transferring network data"

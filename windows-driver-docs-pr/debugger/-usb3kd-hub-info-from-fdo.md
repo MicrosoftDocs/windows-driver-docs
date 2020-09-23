@@ -98,14 +98,7 @@ Hub Event History:
 
 [**!usb3kd.hub\_info**](-usb3kd-hub-info.md)
 
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

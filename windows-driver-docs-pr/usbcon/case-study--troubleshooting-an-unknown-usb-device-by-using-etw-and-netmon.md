@@ -1,5 +1,5 @@
 ---
-Description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
+description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 title: Case Study - Troubleshooting an unknown USB device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -143,7 +143,7 @@ USB error events, and other events, have status values in their data that provid
 |Status type|Resource|
 |----|----|
 |**fid_NtStatus**|See [NTSTATUS values](https://go.microsoft.com/fwlink/p/?linkid=617532).|
-|The status field of a USB request block (URB) or **fid_UsbdStatus**|Look up the value as a USBD_STATUS in inc\api\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)). This topic lists the symbolic names and the meanings of the USBD\_STATUS values.|
+|The status field of a USB request block (URB) or **fid_UsbdStatus**|Look up the value as a USBD_STATUS in inc\api\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)). This topic lists the symbolic names and the meanings of the USBD\_STATUS values.|
 
 ## Reading Backwards from Problem Events
 
@@ -193,4 +193,4 @@ For USB enumeration to continue, the device should have responded to this reques
 ## Related topics
 
 [Using USB ETW](using-usb-etw.md)  
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

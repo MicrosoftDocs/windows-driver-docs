@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Rules for Storport Drivers
 
 
-This section lists and describes the [DDI compliance rules](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-rule) for Storport drivers that you can include in a verification of your driver.
+This section lists and describes the [DDI compliance rules](./static-driver-verifier-rule.md) for Storport drivers that you can include in a verification of your driver.
 
 ## In this section
 
@@ -61,10 +61,4 @@ This section lists and describes the [DDI compliance rules](https://docs.microso
  
 
  
-
- 
-
-
-
-
 

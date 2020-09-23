@@ -24,7 +24,7 @@ The signature score ranks a driver according to how the driver is signed, as fol
     -   A third-party signature using Authenticode technology.  Valid third-party signature types include the following:
         -   Drivers signed by using a code signing certificate from an Enterprise Certificate Authority (CA).
         -   Drivers signed by using a code signing certificate issued by a Class 3 CA.
-        -   Drivers signed by using a code signing certificate created by the [**MakeCert Tool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/makecert).
+        -   Drivers signed by using a code signing certificate created by the [**MakeCert Tool**](../devtest/makecert.md).
 -   Windows assigns the second best signature score to [driver packages](driver-packages.md) that do not have a valid signature, but the driver is installed by an [**INF *DDInstall* section**](inf-ddinstall-section.md) that has an **.nt** platform extension.
 
     For more information about the **.nt** extension, see [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md).
@@ -36,10 +36,4 @@ The signature score ranks a driver according to how the driver is signed, as fol
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
  
-
- 
-
-
-
-
 

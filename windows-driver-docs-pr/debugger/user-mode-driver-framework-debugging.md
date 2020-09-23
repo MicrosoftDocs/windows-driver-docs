@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # User-Mode Driver Framework Debugging
 
-For an overview of how to debug User-Mode Driver Framework (UMDF) drivers, including information on how to start this kind of debugging session, see [How to Enable Debugging of a UMDF Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/enabling-a-debugger).
+For an overview of how to debug User-Mode Driver Framework (UMDF) drivers, including information on how to start this kind of debugging session, see [How to Enable Debugging of a UMDF Driver](../wdf/enabling-a-debugger.md).
 
 ### UMDF Debugging Extensions
 

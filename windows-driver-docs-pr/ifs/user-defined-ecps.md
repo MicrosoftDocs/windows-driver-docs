@@ -9,12 +9,7 @@ ms.localizationpriority: medium
 # User-Defined ECPs
 
 
-To define your own ECP, define a GUID that identifies your ECP and a context structure that describes your ECP. For information about how to define GUIDs and using them in driver code, see [Using GUIDs in Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-guids-in-drivers).
+To define your own ECP, define a GUID that identifies your ECP and a context structure that describes your ECP. For information about how to define GUIDs and using them in driver code, see [Using GUIDs in Drivers](../kernel/using-guids-in-drivers.md).
 
  
-
- 
-
-
-
 

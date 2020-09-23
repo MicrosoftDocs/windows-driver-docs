@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_CAN\_SUSTAIN\_AP to indicate
 
 | Type                                                                                     | Multiple TLV instances allowed | Optional | Description                                                     |
 |------------------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------|
-| [**WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-indication-can-sustain-ap) |                                |          | The reason the adapter can now sustain 802.11 AP functionality. |
+| [**WDI\_TLV\_INDICATION\_CAN\_SUSTAIN\_AP**](./wdi-tlv-indication-can-sustain-ap.md) |                                |          | The reason the adapter can now sustain 802.11 AP functionality. |
 
  
 
@@ -53,9 +53,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

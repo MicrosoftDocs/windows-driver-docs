@@ -20,13 +20,7 @@ This section describes the functionality of the PCMCIA\_INTERFACE\_STANDARD inte
 
 -   Determine if the card memory is write-protected
 
-For more information about the routines provided by the PCMCIA\_INTERFACE\_STANDARD interface, see [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+For more information about the routines provided by the PCMCIA\_INTERFACE\_STANDARD interface, see [PCMCIA\_INTERFACE\_STANDARD Interface Memory Card Routines](/windows-hardware/drivers/ddi/index).
 
  
-
- 
-
-
-
-
 

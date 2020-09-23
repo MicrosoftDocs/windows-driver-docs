@@ -53,18 +53,11 @@ The file must be an .ICO file with one of the following requirements:
 
  
 
-The service icon is associated with the [ServiceIconFile](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/serviceiconfile) element in the [ServiceInfo XML schema](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/serviceinfo-xml-schema) of a service metadata package.
+The service icon is associated with the [ServiceIconFile](../mobilebroadband/serviceiconfile.md) element in the [ServiceInfo XML schema](../mobilebroadband/serviceinfo-xml-schema.md) of a service metadata package.
 
 ## <span id="related_topics"></span>Related topics
 
-- [Create a mobile broadband experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/create-a-mobile-broadband-experience)
+- [Create a mobile broadband experience](./create-a-mobile-broadband-experience.md)
 
  
-
- 
-
-
-
-
-
 

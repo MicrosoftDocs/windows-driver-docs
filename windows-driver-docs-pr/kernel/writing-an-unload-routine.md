@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 
 
 
-Any driver that can be replaced, or unloaded and reloaded, while the system is running must have an [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine. All WDM drivers must have *Unload* routines.
+Any driver that can be replaced, or unloaded and reloaded, while the system is running must have an [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine. All WDM drivers must have *Unload* routines.
 
-Although *Unload* routines are optional for non-WDM drivers, [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) will fail any driver that does not provide an *Unload* routine.
+Although *Unload* routines are optional for non-WDM drivers, [Driver Verifier](../devtest/driver-verifier.md) will fail any driver that does not provide an *Unload* routine.
 
 This section contains the following topics:
 
@@ -24,9 +24,4 @@ This section contains the following topics:
 [Unload Routine Functionality](unload-routine-functionality.md)
 
  
-
- 
-
-
-
 

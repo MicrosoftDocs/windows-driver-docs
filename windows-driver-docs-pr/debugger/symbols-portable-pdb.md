@@ -24,7 +24,7 @@ For complete information on the portable PDB format, see [Portable PDB v1.0: For
 
 For a code sample that reads portable PDB files, see [Microsoft.DiaSymReader.PortablePdb](https://github.com/dotnet/symreader-portable) on GitHub.
 
-This reader of Portable PDBs implements DiaSymReader interfaces such as ISymUnmanagedReader and ISymUnmanagedBinder. For more information about those .NET interfaces see [Diagnostics Symbol Store (Unmanaged API Reference)](https://docs.microsoft.com/dotnet/framework/unmanaged-api/diagnostics/).
+This reader of Portable PDBs implements DiaSymReader interfaces such as ISymUnmanagedReader and ISymUnmanagedBinder. For more information about those .NET interfaces see [Diagnostics Symbol Store (Unmanaged API Reference)](/dotnet/framework/unmanaged-api/diagnostics/).
 
 ## See also
 

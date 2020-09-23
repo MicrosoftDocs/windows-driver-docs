@@ -22,5 +22,4 @@ This Device Manager error message indicates that the device did not start becaus
 
 ### Recommended Resolution
 
-For more info, see [Plan for Deploying Devices using Discrete Device Assignment](https://docs.microsoft.com/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment).
-
+For more info, see [Plan for Deploying Devices using Discrete Device Assignment](/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment).

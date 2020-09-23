@@ -43,7 +43,7 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 </tr>
 <tr class="odd">
 <td align="left">Description</td>
-<td align="left"><p>Storport retrieves this registry data, and passes the buffer to the miniport as <em>Parameter</em> when it calls the miniport’s <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> routine.</p></td>
+<td align="left"><p>Storport retrieves this registry data, and passes the buffer to the miniport as <em>Parameter</em> when it calls the miniport’s <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter" data-raw-source="[&lt;strong&gt;HwStorFindAdapter&lt;/strong&gt;](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter)"><strong>HwStorFindAdapter</strong></a> routine.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Applies</td>
@@ -812,11 +812,4 @@ Registry entries for the miniport are keyed by the *\\Parameters* subkey and the
 </table>
 
  
-
- 
-
- 
-
-
-
 

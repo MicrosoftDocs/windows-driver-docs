@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # !ndiskd.pendingnbls
 
-The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LISTs**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)) that are in transit.
+The **!ndiskd.pendingnbls** extension displays pending NBLs ([**NET\_BUFFER\_LISTs**](../network/net-buffer-list-structure.md)) that are in transit.
 
 ```console
 !ndiskd.pendingnbls [-handle <x>] [-fullstack] [-verbosity <x>] 
@@ -110,9 +110,9 @@ Search complete.
 ## See also
 
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -120,7 +120,7 @@ Search complete.
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-structure)
+[**NET\_BUFFER\_LIST**](../network/net-buffer-list-structure.md)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 

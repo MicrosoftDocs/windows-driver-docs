@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_example_of_handle_assignments_gg"></span><span id="DDK_EXAMPLE_OF_HANDLE_ASSIGNMENTS_GG"></span>
 
 
-The following table shows an example arrangement of Direct3D handle values (supplied through [**D3dCreateSurfaceEx**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)) that might be present in a two-head scenario. The front, back and depth/stencil surfaces on each head all have unique handles; the master head must work with all of these handles. The master head owns all texture, vertex buffer, and index buffer surfaces; handles for these surfaces are only created on the master head.
+The following table shows an example arrangement of Direct3D handle values (supplied through [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex)) that might be present in a two-head scenario. The front, back and depth/stencil surfaces on each head all have unique handles; the master head must work with all of these handles. The master head owns all texture, vertex buffer, and index buffer surfaces; handles for these surfaces are only created on the master head.
 
 <table>
 <colgroup>
@@ -81,10 +81,4 @@ The following table shows an example arrangement of Direct3D handle values (supp
  
 
  
-
- 
-
-
-
-
 

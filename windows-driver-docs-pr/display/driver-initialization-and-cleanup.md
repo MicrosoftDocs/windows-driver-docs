@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_driver_initialization_and_cleanup_gg"></span><span id="DDK_DRIVER_INITIALIZATION_AND_CLEANUP_GG"></span>
 
 
-While the device driver may implement several or many functions, it exports only [**DrvEnableDriver**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenabledriver) to GDI. The driver exposes its other supported functions through a function table. The first call GDI makes to a device driver is to the **DrvEnableDriver** function. Within this function, the driver fills in the passed-in [**DRVENABLEDATA**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-tagdrvenabledata) structure so that GDI can determine which other *DrvXxx* functions are supported and where they are located. The driver supplies the following information in DRVENABLEDATA:
+While the device driver may implement several or many functions, it exports only [**DrvEnableDriver**](/windows/win32/api/winddi/nf-winddi-drvenabledriver) to GDI. The driver exposes its other supported functions through a function table. The first call GDI makes to a device driver is to the **DrvEnableDriver** function. Within this function, the driver fills in the passed-in [**DRVENABLEDATA**](/windows/win32/api/winddi/ns-winddi-tagdrvenabledata) structure so that GDI can determine which other *DrvXxx* functions are supported and where they are located. The driver supplies the following information in DRVENABLEDATA:
 
 -   The **iDriverVersion** member contains the graphics DDI version number for a particular Windows operating system version. The *winddi.h* header defines the following constants:
 
@@ -52,25 +52,19 @@ While the device driver may implement several or many functions, it exports only
 
      
 
-For more information about how these constants are used, see [**DRVENABLEDATA**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-tagdrvenabledata).
+For more information about how these constants are used, see [**DRVENABLEDATA**](/windows/win32/api/winddi/ns-winddi-tagdrvenabledata).
 
 -   The **c** member contains the number of DRVFN structures in the array.
 
--   The **pdrvfn** member points to an array of [**DRVFN**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_drvfn) structures that lists the supported functions and their indexes.
+-   The **pdrvfn** member points to an array of [**DRVFN**](/windows/win32/api/winddi/ns-winddi-_drvfn) structures that lists the supported functions and their indexes.
 
 For GDI to call a function other than the driver's enable and disable functions, the driver must make the function's name and location available to GDI.
 
-While [**DrvEnableDriver**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenabledriver) can also perform one-time initializations, such as the allocation of semaphores, a driver should not actually enable the hardware during **DrvEnableDriver**. Hardware initialization should occur in a driver's [**DrvEnablePDEV**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablepdev) function. Likewise, a driver should enable the surface in the [**DrvEnableSurface**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenablesurface) function.
+While [**DrvEnableDriver**](/windows/win32/api/winddi/nf-winddi-drvenabledriver) can also perform one-time initializations, such as the allocation of semaphores, a driver should not actually enable the hardware during **DrvEnableDriver**. Hardware initialization should occur in a driver's [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) function. Likewise, a driver should enable the surface in the [**DrvEnableSurface**](/windows/win32/api/winddi/nf-winddi-drvenablesurface) function.
 
-GDI calls the [**DrvDisableDriver**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdisabledriver) function to notify the driver that it is about to be unloaded. In response to this call, the driver should free all resources and memory still allocated by the driver at this point.
+GDI calls the [**DrvDisableDriver**](/windows/win32/api/winddi/nf-winddi-drvdisabledriver) function to notify the driver that it is about to be unloaded. In response to this call, the driver should free all resources and memory still allocated by the driver at this point.
 
-If the hardware needs to be reset, GDI calls the driver's [**DrvAssertMode**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvassertmode) function.
-
- 
+If the hardware needs to be reset, GDI calls the driver's [**DrvAssertMode**](/windows/win32/api/winddi/nf-winddi-drvassertmode) function.
 
  
-
-
-
-
 

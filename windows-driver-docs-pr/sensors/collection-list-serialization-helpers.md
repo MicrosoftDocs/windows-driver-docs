@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Collection list serialization helpers
 
 
-The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
+The collection list serialization helper functions are used by the v2 sensor drivers, for performing serialization-related operations on [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) structures.
 
 The helper functions are used along with the sensor device driver software interface (DDSI). And because these helper functions are architecture-independent, it is safe to use them for data transfer across process boundaries. For example, it is safe to use these helper functions during a call to DeviceIoControl.
 
@@ -47,7 +47,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Writes the [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the serialization buffer.
+-   Writes the [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the serialization buffer.
 
 Comments
 
@@ -57,7 +57,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Allocates a serialization buffer, and then writes the [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the buffer.
+-   Allocates a serialization buffer, and then writes the [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information to the buffer.
 
 Comments
 
@@ -69,7 +69,7 @@ Comments
 
 Usage by sensor DDSI
 
--   Reads [**SENSOR\_COLLECTION\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information from a source buffer.
+-   Reads [**SENSOR\_COLLECTION\_LIST**](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list) information from a source buffer.
 
 Comments
 
@@ -92,11 +92,4 @@ Comments
 [Marshalling helper functions](marshalling-helper-functions.md)
 
  
-
- 
-
-
-
-
-
 

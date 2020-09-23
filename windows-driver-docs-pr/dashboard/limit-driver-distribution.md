@@ -109,7 +109,7 @@ Note the following important information when expanding your driver's distributi
 
 * Expansion can only be performed by the **original submission owner**. Receivers of a shared submission will not see this option. (See [Important information](#important-information).)  
 * Expansion can only be performed once per submission and cannot be undone.  The Expansion button will be greyed out if it has already been performed.
-* Expansion can only be done to drivers where your [INF Manufacturer section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) does not use the \[BuildNumber] *TargetOSVersion* decoration such as NTamd64.10.0...**14393**.
+* Expansion can only be done to drivers where your [INF Manufacturer section](../install/inf-manufacturer-section.md) does not use the \[BuildNumber] *TargetOSVersion* decoration such as NTamd64.10.0...**14393**.
 * Only Windows 8.1 drivers can be expanded **upward** to target Windows 10 systems.  Windows 10 drivers can be expanded **downward**.
 * Expansion does not change or add to your driver's certification level.  If your driver is certified for RS5, expansion does not give you any extra lower OS certifications.
 
@@ -125,7 +125,7 @@ For example, the following submission was certified for Windows 10 Client versio
 
 ![UI showing that a submission has extended grid entries](images/expansion-pnpgrid-outline.png)
 
-If more than one INF were present in this submission, each INF and Hardware ID in them would receive identical new **Extended** entries.  The exception is, if an [INF Manufacturer](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section) section uses the *\[BuildNumber] TargetOSVersion* decoration such as NTamd64.10.0...**14393**.  These INFs are skipped and cannot be expanded.  This means you could end up with only a partially expanded list of INFs in the PNP grid.  If you want all INF files to be expanded, you must edit the INF and remove the *BuildNumber*.  In addition, you might not see the **Expand** option box at all if no INFs are supported.
+If more than one INF were present in this submission, each INF and Hardware ID in them would receive identical new **Extended** entries.  The exception is, if an [INF Manufacturer](../install/inf-manufacturer-section.md) section uses the *\[BuildNumber] TargetOSVersion* decoration such as NTamd64.10.0...**14393**.  These INFs are skipped and cannot be expanded.  This means you could end up with only a partially expanded list of INFs in the PNP grid.  If you want all INF files to be expanded, you must edit the INF and remove the *BuildNumber*.  In addition, you might not see the **Expand** option box at all if no INFs are supported.
 
 Once you have an **Extended** entry, you can then share or publish it.
 
@@ -196,4 +196,4 @@ See [Use Case 2](#use-case-2--publishing-an-expanded-submission-to-a-specific-os
 
 ### Some of my INFs are missing after expansion.  Why can't I expand my entire submission?
 
-Each INF in your submission is evaluated for expansion separately. If one or all your INFs' (see [INF Manufacturer](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section)) uses the *\[BuildNumber] TargetOSVersion* decoration, then we will fail to process that INF for expansion. If you need to expand your submission, then you must first edit your INF and remove the \[BuildNumber]. INFs that do not contain the \[BuildNumber] will process successfully.  For more info, see [Important Information](#important-information).
+Each INF in your submission is evaluated for expansion separately. If one or all your INFs' (see [INF Manufacturer](../install/inf-manufacturer-section.md)) uses the *\[BuildNumber] TargetOSVersion* decoration, then we will fail to process that INF for expansion. If you need to expand your submission, then you must first edit your INF and remove the \[BuildNumber]. INFs that do not contain the \[BuildNumber] will process successfully.  For more info, see [Important Information](#important-information).

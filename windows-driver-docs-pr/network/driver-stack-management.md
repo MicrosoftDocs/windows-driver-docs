@@ -40,7 +40,7 @@ The following topics provide more information about the driver stack, driver sta
 -   [Adapter States of a Miniport Driver](adapter-states-of-a-miniport-driver.md)
 -   [Binding States of a Protocol Driver](binding-states-of-a-protocol-driver.md)
 -   [Module States of a Filter Driver](module-states-of-a-filter-driver.md)
--   [NDIS Stack Operations](ndis-stack-operations.md)
+-   [NDIS Stack Operations](starting-a-driver-stack.md)
 
 ## Related topics
 

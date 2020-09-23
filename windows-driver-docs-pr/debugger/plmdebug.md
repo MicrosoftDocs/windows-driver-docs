@@ -33,7 +33,7 @@ plmdebug /suspend Package
 plmdebug /resume Package
 plmdebug /disableDebug Package
 plmdebug /enumerateBgTasks Package
-plmdebug /activateBgTaskTaskId "{TaskID}"
+plmdebug /activateBgTask "{TaskID}"
 ```
 
 ## <span id="Parameters"></span><span id="parameters"></span><span id="PARAMETERS"></span>Parameters
@@ -85,7 +85,7 @@ Remarks
 
 You must call **plmdebug /enableDebug** before you call any of the suspend, resume, or terminate functions.
 
-The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](https://docs.microsoft.com/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](https://docs.microsoft.com/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
+The PLMDebug tool calls the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings). This interface enables you to take manual control of the process lifecycle management for your apps. Through this interface (and as a result, through this tool), you can suspend, resume, and terminate your Windows app. Note that the methods of the [IPackageDebugSettings interface](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings) apply to an entire package. Suspend, resume, and terminate affect all currently running apps in the package.
 
 Examples
 --------
@@ -130,7 +130,7 @@ Increment the debug reference count for the package that contains MyApp.
 
 **plmdebug /enableDebug 4816**
 
-In WinDbg, in the **Attach to Process** dialog box, select process 4816, and click **OK**. WinDbg will attach to MyApp.
+In WinDbg, in the **Attach to Process** dialog box, select process 4816, and select **OK**. WinDbg will attach to MyApp.
 
 When you have finished debugging MyApp, detach the debugger. Then decrement the debug reference count for the package.
 
@@ -181,6 +181,6 @@ Then activate the desired task using its registration GUID, that you enumerated.
 
 ## See also
 
-[How to trigger suspend, resume, and background events while debugging UWP apps in Visual Studio](https://docs.microsoft.com/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)
+[How to trigger suspend, resume, and background events while debugging UWP apps in Visual Studio](/visualstudio/debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio)
 
 [Tools Included in Debugging Tools for Windows](extra-tools.md)

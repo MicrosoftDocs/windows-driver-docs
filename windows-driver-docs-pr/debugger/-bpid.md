@@ -77,7 +77,7 @@ Specifies the process ID of the desired process on the target computer. If you a
 
  
 
-This extension command is supported on x86-based, x64-based, and Itanium-based target computers.
+This extension command is supported on x86-based, x64-based target computers.
 
 Remarks
 -------

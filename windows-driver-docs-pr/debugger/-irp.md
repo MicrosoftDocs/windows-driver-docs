@@ -52,7 +52,7 @@ If this parameter is included with any value, such as 1, the output includes the
 
 See [Plug and Play Debugging](plug-and-play-debugging.md) and [Debugging Interrupt Storms](debugging-an-interrupt-storm.md) for applications of this extension command. For information about IRPs, see the Windows Driver Kit (WDK) documentation and *Microsoft Windows Internals* by Mark Russinovich and David Solomon. For further information on the major and minor function codes, see the Windows Driver Kit (WDK) documentation.
 
-This topic describes the IRP structure, [**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp).
+This topic describes the IRP structure, [**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp).
 
 For detailed information on decoding the IRP structure including the returned Args, see the following resources.
 
@@ -506,18 +506,11 @@ The SCSI minor function codes are as follows:
 ## <span id="see_also"></span>See also
 
 
-[**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
+[**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)
 
 [**!irpfind**](-irpfind.md)
 
 [**!ioctldecode**](-ioctldecode.md)
 
  
-
- 
-
-
-
-
-
 

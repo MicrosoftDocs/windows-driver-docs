@@ -23,7 +23,7 @@ A live kernel dump (LKD) is the product of a kernel error, where the machine can
 |**Passing criteria**|<= 3% machines encounter an LKD|
 |**Cohort-enabled**|Yes|
 |**Minimum population per cohort**|500 machines|
-|**Measure ID**|25739929|
+|**Measure ID**|25739929 or 26118015|
 
 ## Calculation
 

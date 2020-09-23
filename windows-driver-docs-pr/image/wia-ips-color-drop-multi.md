@@ -28,7 +28,7 @@ Access Rights: Read-only
 
 ## Remarks
 
-This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) only when the [**WIA\_IPS\_COLOR\_DROP**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-color-drop) property is supported.
+This property is valid for all programmable image data source items, including Flatbed (WIA\_CATEGORY\_FLATBED) and Feeder (WIA\_CATEGORY\_FEEDER) only when the [**WIA\_IPS\_COLOR\_DROP**](./wia-ips-color-drop.md) property is supported.
 
 ## Requirements
 

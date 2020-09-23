@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # HardwareId (PackageInfo)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 For service metadata packages, the HardwareID values represent the mobile network operator in the form of the following:
 

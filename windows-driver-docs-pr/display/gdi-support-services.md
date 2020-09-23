@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_gdi_support_services_gg"></span><span id="DDK_GDI_SUPPORT_SERVICES_GG"></span>
 
 
-*GDI* exports many service routines that can simplify driver design. The driver can call these routines directly. The names of routines that are general graphics engine services whose names begin with **Eng**. Service routines related to a particular object always start with the name of the object; for example, [**CLIPOBJ\_cEnumStart**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-clipobj_cenumstart) is a [**CLIPOBJ**](https://docs.microsoft.com/windows/desktop/api/winddi/ns-winddi-_clipobj) service.
+*GDI* exports many service routines that can simplify driver design. The driver can call these routines directly. The names of routines that are general graphics engine services whose names begin with **Eng**. Service routines related to a particular object always start with the name of the object; for example, [**CLIPOBJ\_cEnumStart**](/windows/win32/api/winddi/nf-winddi-clipobj_cenumstart) is a [**CLIPOBJ**](/windows/win32/api/winddi/ns-winddi-_clipobj) service.
 
 **Note**   The service routines in which the first argument is a pointer to a user object are methods on that user object, and are called using the usual C++ conventions. Therefore, drivers written in C++ can access the service routines as methods.
 
@@ -57,13 +57,7 @@ These service routines fall into the following categories:
 
 [Halftone services](gdi-halftone-services.md)
 
-[Using the Graphics DDI](using-the-graphics-ddi.md) describes the graphics DDI entry points and also explains where many of these service routines can be used to help the driver implement the entry points. For detailed descriptions of each of the service functions, see [GDI Functions Called by Printer and Display Drivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+[Using the Graphics DDI](using-the-graphics-ddi.md) describes the graphics DDI entry points and also explains where many of these service routines can be used to help the driver implement the entry points. For detailed descriptions of each of the service functions, see [GDI Functions Called by Printer and Display Drivers](/windows-hardware/drivers/ddi/index).
 
  
-
- 
-
-
-
-
 

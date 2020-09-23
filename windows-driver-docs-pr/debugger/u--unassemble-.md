@@ -33,7 +33,7 @@ u[u|b]
 Specifies the memory range that contains the instructions to disassemble. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md). If you use the **b** flag, you must specify *Range* by using the "*Address* **L**_Length_" syntax, not the "*Address1 Address2*" syntax.
 
 <span id="_______Address______"></span><span id="_______address______"></span><span id="_______ADDRESS______"></span> *Address*   
-Specifies the beginning of the memory range to disassemble. Eight instructions (on an x86-based processor) or nine instructions (on an Itanium-based processor) are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
+Specifies the beginning of the memory range to disassemble. Eight instructions on an x86-based processor are unassembled. For more information about the syntax, see [Address and Address Range Syntax](address-and-address-range-syntax.md).
 
 <span id="_______b______"></span><span id="_______B______"></span> **b**   
 Determines the memory range to disassemble by counting backward. If **ub** *Address* is used, the disassembled range will be the eight or nine byte range ending with *Address*. If a range is specified using the syntax **ub** *Address* **L**_Length_, the disassembled range will be the range of the specified length ending at *Address*.
@@ -73,7 +73,7 @@ For more information about assembly debugging and related commands, see [Debuggi
 Remarks
 -------
 
-If you do not specify a parameter for the **u** command, the disassembly begins at the current address and extends eight instructions (on an x86-based or x64-based processor) or nine instructions (on an Itanium-based processor). When you use **ub** without a parameter, the disassembly includes the eight or nine instructions before the current address.
+If you do not specify a parameter for the **u** command, the disassembly begins at the current address and extends eight instructions on an x86-based or x64-based processor. When you use **ub** without a parameter, the disassembly includes the eight or nine instructions before the current address.
 
 Do not confuse this command with the [**up (Unassemble from Physical Memory)**](up--unassemble-from-physical-memory-.md). The **u** command disassembles only virtual memory, while the **up** command disassembles only physical memory.
 

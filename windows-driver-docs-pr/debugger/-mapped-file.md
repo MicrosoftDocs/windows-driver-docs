@@ -53,7 +53,7 @@ The **!mapped\_file** extension can only be used during live, nonremote debuggin
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about file mapping, see [MapViewOfFile](https://docs.microsoft.com/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) in the Windows SDK.
+For more information about file mapping, see [MapViewOfFile](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) in the Windows SDK.
 
 Remarks
 -------
@@ -72,10 +72,4 @@ No information found for 80310000: error 87
 ```
 
  
-
- 
-
-
-
-
 

@@ -29,7 +29,4 @@ PFN_WDFPREDEVICEREMOVE     pfnWdfPreDeviceRemove;
 PFN_WDFPOSTDEVICEREMOVE   pfnWdfPostDeviceRemove;
 ```
 
-For a non-PnP KMDF driver, simply call the SCM API to create the service. For more info, see [Installing a Service](https://docs.microsoft.com/windows/win32/services/installing-a-service).
-
-
-
+For a non-PnP KMDF driver, simply call the SCM API to create the service. For more info, see [Installing a Service](/windows/win32/services/installing-a-service).

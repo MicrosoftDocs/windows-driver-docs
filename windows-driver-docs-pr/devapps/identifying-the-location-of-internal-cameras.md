@@ -57,7 +57,7 @@ To specify the address (\_ADR):
 
 1. Install Windows to the target PC
 2. Go to **Device Manager**
-3. Right-click your target webacm and select **Properties**
+3. Select and hold (or right-click) your target webcam and select **Properties**
 4. Open the **Details** tab and select **Address** in the **Property** menu
 5. The value in the **Value** box is the address that your device is located at
 6. Set the value in \_ADR in the ACPI table
@@ -111,7 +111,7 @@ The subkey entry to create under the InternalDeviceModification registry key is 
 
 The InternalDeviceModification registry key indicates that at least one camera uses the ModelID.
 
-|Registry key name|`InternalDeviceModification`|
+|Registry key name|InternalDeviceModification|
 |----|----|
 |Required/optional| Required|
 |Path|`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control`|

@@ -32,29 +32,22 @@ Receives the status code returned by this sub-operation. This is the same as the
 Remarks
 -------
 
-The value is formatted and is sent to the debugger engine's [output callbacks](https://docs.microsoft.com/windows-hardware/drivers/debugger/using-input-and-output#output-callbacks).
+The value is formatted and is sent to the debugger engine's [output callbacks](./using-input-and-output.md#output-callbacks).
 
-EXT\_TDOP\_OUTPUT\_SIMPLE\_VALUE is a value in the [**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
+EXT\_TDOP\_OUTPUT\_SIMPLE\_VALUE is a value in the [**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop) enumeration.
 
-The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
+The parameters for this sub-operation are members of the [**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data) structure. The members of EXT\_TYPED\_DATA that are not listed in the preceding Parameters section are not used by this sub-operation and should be set to zero. The descriptions of the members in the preceding Parameters section specify what the members are used for. See **EXT\_TYPED\_DATA** for more details.
 
 ## <span id="see_also"></span>See also
 
 
 [**DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI**](debug-request-ext-typed-data-ansi.md)
 
-[**EXT\_TDOP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
+[**EXT\_TDOP**](/windows-hardware/drivers/ddi/wdbgexts/ne-wdbgexts-_ext_tdop)
 
-[**EXT\_TYPED\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
+[**EXT\_TYPED\_DATA**](/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_ext_typed_data)
 
 [**Request**](request.md)
 
  
-
- 
-
-
-
-
-
 

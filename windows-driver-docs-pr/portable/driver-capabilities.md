@@ -1,5 +1,5 @@
 ---
-Description: Driver Capabilities
+description: Driver Capabilities
 title: Driver Capabilities
 ms.date: 04/20/2017
 ms.localizationpriority: medium

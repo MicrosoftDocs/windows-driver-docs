@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # ServiceInfo XML schema overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 A service metadata package contains one ServiceInfo.xml document, which contains detailed information about the service that Windows Connection Manager displays to the user.
 
@@ -23,7 +23,7 @@ For the complete definition of the ServiceInfo XML schema, see [ServiceInfo XML 
 
 For information about the elements that are defined by the ServiceInfo XML schema, see [ServiceInfo XML Elements](serviceinfo-xml-elements.md).
 
-For information about the data types that are defined by the ServiceInfo XML schema, see [ServiceInfo XML Data Types](serviceinfo-xml-data-types.md).
+For information about the data types that are defined by the ServiceInfo XML schema, see [ServiceInfo XML Data Types](guidtype-serviceinfo.md).
 
 For an example of XML data in the format that is defined by the ServiceInfo XML schema, see [ServiceInfo XML Example](serviceinfo-xml-example.md).
 

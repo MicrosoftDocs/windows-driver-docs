@@ -24,7 +24,7 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_IHV\_EVENT to pass IHV speci
 
 | Type                                                 | Multiple TLV instances allowed | Optional | Description                                           |
 |------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------|
-| [**WDI\_TLV\_IHV\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-data) |                                | X        | The event to be sent to the IHV extensibility module. |
+| [**WDI\_TLV\_IHV\_DATA**](./wdi-tlv-ihv-data.md) |                                | X        | The event to be sent to the IHV extensibility module. |
 
  
 
@@ -53,9 +53,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -20,4 +20,4 @@ The following Automation interfaces, implemented by Oleprn.dll, can be used with
 
 [IOleCvt Automation Interface](iolecvt-automation-interface.md)
 
-Active Server Pages (ASP) technology and Automation are described in the Windows SDK Documentation. For more information about printer Web pages, see [Internet Printing](https://docs.microsoft.com/windows-hardware/drivers/print/internet-printing).
+Active Server Pages (ASP) technology and Automation are described in the Windows SDK Documentation. For more information about printer Web pages, see [Internet Printing](./internet-printing.md).

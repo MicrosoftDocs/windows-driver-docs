@@ -21,15 +21,15 @@ ms.localizationpriority: medium
 
 The PortCls system driver (*Portcls.sys*) provides several built-in port drivers to support audio devices that render and capture wave and MIDI streams.
 
-All port drivers expose interfaces that derive from base interface [IPort](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iport). **IPort** inherits the methods from base interface **IUnknown**. **IPort** provides the following additional methods:
+All port drivers expose interfaces that derive from base interface [IPort](/windows-hardware/drivers/ddi/portcls/nn-portcls-iport). **IPort** inherits the methods from base interface **IUnknown**. **IPort** provides the following additional methods:
 
-[**IPort::GetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-getdeviceproperty)
+[**IPort::GetDeviceProperty**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-getdeviceproperty)
 
 Retrieves an audio adapter's Plug and Play properties from the registry.
-[**IPort::Init**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-init)
+[**IPort::Init**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-init)
 
 Initializes the port object.
-[**IPort::NewRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-newregistrykey)
+[**IPort::NewRegistryKey**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iport-newregistrykey)
 
 Creates a new registry key or opens an existing key.
 PortCls implements the following port drivers:
@@ -47,9 +47,4 @@ PortCls implements the following port drivers:
 [DMus Port Driver](dmus-port-driver.md)
 
  
-
- 
-
-
-
 

@@ -64,12 +64,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_TASK\_START\_AP](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-start-ap)
+[OID\_WDI\_TASK\_START\_AP](./oid-wdi-task-start-ap.md)
 
  
-
- 
-
-
-
 

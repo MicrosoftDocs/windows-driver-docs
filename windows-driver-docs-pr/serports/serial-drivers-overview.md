@@ -18,13 +18,13 @@ The Windows driver samples repository on GitHub contains the source code for the
 
 ## SerCx and SerCx2
 
-Starting with Windows 8, SerCx is a system-supplied component that supports serial communication between integrated circuits on a printed circuit board. SerCx is an extension to the Kernel-Mode Driver Framework (KMDF). This extension simplifies the development of custom drivers for serial controllers. SerCx assists an extension-based serial controller driver by handling many of the processing tasks that are common to serial controllers. This driver communicates with SerCx through the [SerCx device driver interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+Starting with Windows 8, SerCx is a system-supplied component that supports serial communication between integrated circuits on a printed circuit board. SerCx is an extension to the Kernel-Mode Driver Framework (KMDF). This extension simplifies the development of custom drivers for serial controllers. SerCx assists an extension-based serial controller driver by handling many of the processing tasks that are common to serial controllers. This driver communicates with SerCx through the [SerCx device driver interface](/windows-hardware/drivers/ddi/index).
 
-Starting with Windows 8.1, SerCx is superceded by SerCx2. SerCx2 has many improvements over SerCx to reduce the size and complexity of serial controller drivers. In particular, SerCx2 relieves the serial controller driver of the processing work required to manage time-outs, and to coordinate I/O transactions that compete for access to the serial controller. As a result, the serial controller driver is smaller and simpler. The hardware vendor for the serial controller supplies an extension-based serial controller driver that manages the hardware-specific functions in the serial controller, and that relies on SerCx2 to perform generic serial-controller tasks. This driver communicates with SerCx2 through the [SerCx2 device driver interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+Starting with Windows 8.1, SerCx is superceded by SerCx2. SerCx2 has many improvements over SerCx to reduce the size and complexity of serial controller drivers. In particular, SerCx2 relieves the serial controller driver of the processing work required to manage time-outs, and to coordinate I/O transactions that compete for access to the serial controller. As a result, the serial controller driver is smaller and simpler. The hardware vendor for the serial controller supplies an extension-based serial controller driver that manages the hardware-specific functions in the serial controller, and that relies on SerCx2 to perform generic serial-controller tasks. This driver communicates with SerCx2 through the [SerCx2 device driver interface](/windows-hardware/drivers/ddi/index).
 
 For more information about SerCx2, see [Using Version 2 of the Serial Framework Extension (SerCx2)](using-version-2-of-the-serial-framework-extension.md).
 
-For general information about the driver framework, see [Using WDF to Develop a Driver](https://docs.microsoft.com/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver)
+For general information about the driver framework, see [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md)
 
 ## In this section
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # The Checked Build and the Debugger
 
-The typical setup for debugging kernel-mode drivers on Windows operating systems consists of two computers that are connected by means of a network, USB or serial connection. For information about setting up kernel-mode debugging, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+The typical setup for debugging kernel-mode drivers on Windows operating systems consists of two computers that are connected by means of a network, USB or serial connection. For information about setting up kernel-mode debugging, see [Windows Debugging](../debugger/index.md).
 
 The *host computer* is the system on which the debugger runs. It should be a stable system and should always run the free build of the operating system.
 

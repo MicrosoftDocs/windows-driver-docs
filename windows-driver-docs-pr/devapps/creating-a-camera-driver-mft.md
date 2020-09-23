@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Creating a camera driver MFT for a UWP device app
 
 > [!IMPORTANT]
-> This topic has been deprecated. See the [Device MFT design guide](https://docs.microsoft.com/windows-hardware/drivers/stream/dmft-design) for updated guidance.
+> This topic has been deprecated. See the [Device MFT design guide](../stream/dmft-design.md) for updated guidance.
 
 UWP device apps let device manufacturers apply custom settings and special effects on the camera's video stream with a camera driver MFT (media foundation transform). This topic introduces driver MFTs and uses the [Driver MFT](https://go.microsoft.com/fwlink/p/?LinkID=251566) sample to show how to create one. To learn more about UWP device apps in general, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
@@ -327,8 +327,3 @@ For more info about how to use device metadata to associate your app with your d
 [UWP device app for camera sample](https://go.microsoft.com/fwlink/p/?LinkID=227865)
 
 [Driver MFT sample](https://go.microsoft.com/fwlink/p/?LinkID=251566)
-
-
-
-
-

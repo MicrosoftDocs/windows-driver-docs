@@ -14,11 +14,12 @@ ms.localizationpriority: medium
 
 
 
-
+```inf
 **\[**<em>install-section-name</em>**.MigrateToDevNode\]** |
 **\[**<em>install-section-name</em>**.nt.MigrateToDevNode\]** |
 **\[**<em>install-section-name</em>**.ntx86.MigrateToDevNode\]** |
 **\[**<em>install-section-name</em>**.ntia64.MigrateToDevNode\]**
+```
 
 <em>ServiceName</em>**=**<em>value-name</em>\[**,**<em>value-name</em>\],...
 The keyboard and mouse class installers copy the entry values specified by the list of *value-name* strings from the registry key **HKLM\\System\\CurrentControlSet\\Services\\**<em>ServiceName</em>**\\Parameters** to the device node of the device being installed.

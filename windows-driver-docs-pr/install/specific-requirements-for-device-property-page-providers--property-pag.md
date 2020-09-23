@@ -23,7 +23,7 @@ For information about how to create a custom device property page by a property 
 
 A property page extension DLL is installed by using the following directives in the [INF file](overview-of-inf-files.md) of a [driver package](driver-packages.md):
 
-1.  Use the *add-registry-section*, which is specified by an [**INF AddReg directive**](inf-addreg-directive.md) in the [**INF *DDInstall* section**](inf-ddinstall-section.md), to add an **EnumPropPages32** entry for the device. The **EnumPropPages32** entry specifies the following [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) values:
+1.  Use the *add-registry-section*, which is specified by an [**INF AddReg directive**](inf-addreg-directive.md) in the [**INF *DDInstall* section**](inf-ddinstall-section.md), to add an **EnumPropPages32** entry for the device. The **EnumPropPages32** entry specifies the following [REG_SZ](/windows/desktop/SysInfo/registry-value-types) values:
 
     -   The name of the DLL that exports the **ExtensionPropSheetPageProc** callback function.
     -   The name of the **ExtensionPropSheetPageProc** callback function as implemented by the DLL.
@@ -42,13 +42,7 @@ A property page extension DLL is installed by using the following directives in 
 
 3.  If the device is a network adapter, you must specify NCF_HAS_UI as one of the **Characteristics** values in the [**INF DDInstall section**](inf-ddinstall-section.md). This value indicates that the adapter supports a user interface.
 
-    For more information, see [Specifying Custom Property Pages for Network Adapters](https://docs.microsoft.com/windows-hardware/drivers/network/specifying-custom-property-pages-for-network-adapters).
+    For more information, see [Specifying Custom Property Pages for Network Adapters](../network/specifying-custom-property-pages-for-network-adapters.md).
 
  
-
- 
-
-
-
-
 

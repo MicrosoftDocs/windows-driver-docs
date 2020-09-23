@@ -1,5 +1,5 @@
 ---
-Description: This topic describes the WDM device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.
+description: This topic describes the WDM device states to use for USB device power states as specified in section 9.1 of the Universal Serial Bus 2.0 specification.
 title: USB Device Power States
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -24,9 +24,9 @@ Device power states in the WDM model can be summarized as follows:
 -   **D1/D2** - The intermediate sleep states. These states allow the device to be armed for remote wakeup.
 -   **D3** - The deepest sleep state. Devices in state **D3** cannot be armed for remote wakeup.
 
-For a complete discussion of device power states in the WDM power model, see [Device Power States](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-power-states).
+For a complete discussion of device power states in the WDM power model, see [Device Power States](../kernel/device-power-states.md).
 
-The WDM power model uses the term *arming* of devices for remote wakeup. Arming is a software operation that normally, but not always, leads to the hardware operation of *enabling* the remote wakeup feature on a USB device. The WDM software operation that arms a device for remote wakeup is the wait wake IRP ([**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake)). For more information about this IRP, see [Supporting Devices that Have Wake-Up Capabilities](https://docs.microsoft.com/windows-hardware/drivers/kernel/supporting-devices-that-have-wake-up-capabilities).
+The WDM power model uses the term *arming* of devices for remote wakeup. Arming is a software operation that normally, but not always, leads to the hardware operation of *enabling* the remote wakeup feature on a USB device. The WDM software operation that arms a device for remote wakeup is the wait wake IRP ([**IRP\_MN\_WAIT\_WAKE**](../kernel/irp-mn-wait-wake.md)). For more information about this IRP, see [Supporting Devices that Have Wake-Up Capabilities](../kernel/supporting-devices-that-have-wake-up-capabilities.md).
 
 For an explanation of the relationship between this software operation and the enabling of the USB remote wakeup feature, see [Remote Wakeup of USB Devices](remote-wakeup-of-usb-devices.md).
 
@@ -39,7 +39,7 @@ This section contains the following sub-sections:
 ## Changing the Power State of a non-Composite Device
 
 
-The power policy manager for a USB device is responsible for setting the power state of the device. The power policy manager sets the power state by issuing a WDM power ([**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power)) IRP. For more information about the power policy manager, see [Power Policy Ownership](https://docs.microsoft.com/windows-hardware/drivers/wdf/power-policy-ownership).
+The power policy manager for a USB device is responsible for setting the power state of the device. The power policy manager sets the power state by issuing a WDM power ([**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md)) IRP. For more information about the power policy manager, see [Power Policy Ownership](../wdf/power-policy-ownership.md).
 
 The actions taken by bus driver depend on the device power level that the power policy manager requests. The following lists the actions that the bus driver takes for each level of set power request:
 
@@ -55,7 +55,7 @@ The actions taken by bus driver depend on the device power level that the power 
 
     The bus driver performs the following tasks:
 
-    1.  Arms the device for remote wakeup, if a wait wake IRP ([**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake)) is pending.
+    1.  Arms the device for remote wakeup, if a wait wake IRP ([**IRP\_MN\_WAIT\_WAKE**](../kernel/irp-mn-wait-wake.md)) is pending.
     2.  Suspends the device's USB port by setting the PORT\_SUSPEND feature.
 -   **D3**
 
@@ -63,12 +63,12 @@ The actions taken by bus driver depend on the device power level that the power 
 
     1.  Suspends the device's USB port by setting the PORT\_SUSPEND feature.
     2.  Completes the device's wait wake IRP with STATUS\_POWER\_STATE\_INVALID, if one is pending.
-    3.  Completes the device's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
+    3.  Completes the device's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
 
 ## Changing the Power State of a Composite Device
 
 
-A client driver for an interface on a composite device must share the power state of the composite device with the client drivers for the other interfaces on the device. Therefore a client driver for an interface cannot put the composite device into a lower power state without affecting other interfaces on the device. The [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md) takes the following actions when an interface's client driver sends an [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) request.
+A client driver for an interface on a composite device must share the power state of the composite device with the client drivers for the other interfaces on the device. Therefore a client driver for an interface cannot put the composite device into a lower power state without affecting other interfaces on the device. The [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md) takes the following actions when an interface's client driver sends an [**IRP\_MN\_SET\_POWER**](../kernel/irp-mn-set-power.md) request.
 
 -   **D0**
 
@@ -86,7 +86,7 @@ A client driver for an interface on a composite device must share the power stat
     The bus driver performs the following tasks:
 
     1.  Completes the client driver's wait wake IRP (IRP\_MN\_WAIT\_WAKE) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
-    2.  Completes the client driver's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
+    2.  Completes the client driver's idle IRP ([**IOCTL\_INTERNAL\_USB\_SUBMIT\_IDLE\_NOTIFICATION**](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_submit_idle_notification)) with STATUS\_POWER\_STATE\_INVALID, if one is pending.
 
 The generic parent driver suspends the USB port for the device when one of the following conditions is true:
 
@@ -94,7 +94,4 @@ The generic parent driver suspends the USB port for the device when one of the f
 -   The client drivers for all functions on the composite device have initiated selective suspend.
 
 ## Related topics
-[USB Power Management](usb-power-management.md)  
-
-
-
+[USB Power Management](usb-power-management.md)

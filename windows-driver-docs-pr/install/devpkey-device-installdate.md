@@ -60,7 +60,7 @@ Windows sets the value of DEVPKEY_Device_InstallDate with the time stamp that sp
 
 This time stamp value changes for each successive update of the device driver. For example, this time stamp reports the date and time when the device driver was last updated through Windows Update.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_FirstInstallDate property.
 
 Requirements
 ------------
@@ -85,14 +85,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
- 
-
-
-
-
-
 

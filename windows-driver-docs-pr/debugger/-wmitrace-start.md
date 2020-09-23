@@ -64,7 +64,7 @@ This extension is available in Windows 7 and later versions of Windows.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more details on the parameters of this extension, see [StartTraceA Function](https://docs.microsoft.com/windows/win32/api/evntrace/nf-evntrace-starttracea) and [EVENT\_TRACE\_PROPERTIES](https://docs.microsoft.com/windows/win32/api/evntrace/ns-evntrace-event_trace_properties). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
+For more details on the parameters of this extension, see [StartTraceA Function](/windows/win32/api/evntrace/nf-evntrace-starttracea) and [EVENT\_TRACE\_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties). For a conceptual overview of event tracing, see the Microsoft Windows SDK. For information about tracing tools, see the Windows Driver Kit (WDK).
 
 Remarks
 -------
@@ -76,10 +76,4 @@ When the trace session is started, the system assigns it an ordinal number (the 
 To stop the ETW logger, use [**!wmitrace.stop**](-wmitrace-stop.md).
 
  
-
- 
-
-
-
-
 

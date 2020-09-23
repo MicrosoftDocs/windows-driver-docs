@@ -52,13 +52,7 @@ The property value (operation data) is of type BOOL and specifies whether the mi
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
- 
-
-
-
-
 

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 You should not use **SetupDiDeleteDevRegKey** or *hardware keys* for the device for the following reasons:
 
--   [**SetupDiDeleteDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdideletedevregkey) removes all custom settings in registry keys. This includes the following:
+-   [**SetupDiDeleteDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdideletedevregkey) removes all custom settings in registry keys. This includes the following:
 
     -   Settings that were specified during installation.
 
@@ -22,9 +22,9 @@ You should not use **SetupDiDeleteDevRegKey** or *hardware keys* for the device 
 
     -   Settings that were created or modified by applications or other components.
 
-    [**SetupDiDeleteDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdideletedevregkey) also removes critical device installation state.
+    [**SetupDiDeleteDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdideletedevregkey) also removes critical device installation state.
 
--   Software or hardware keys that are opened by using [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) with a scope of DICS_FLAG_GLOBAL contain data about the device installation state. Software or hardware keys that are accessed with a scope of DICS_FLAG_CONFIGSPECIFIC do not contain device installation state.
+-   Software or hardware keys that are opened by using [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) with a scope of DICS_FLAG_GLOBAL contain data about the device installation state. Software or hardware keys that are accessed with a scope of DICS_FLAG_CONFIGSPECIFIC do not contain device installation state.
 
     In either case, deleting these software or hardware keys could have implications for other device installation components.
 
@@ -35,10 +35,4 @@ You can safely create and delete registry subkeys under the hardware or software
 For more information about the standard registry functions, see [Registry Functions](https://go.microsoft.com/fwlink/p/?linkid=194529).
 
  
-
- 
-
-
-
-
 

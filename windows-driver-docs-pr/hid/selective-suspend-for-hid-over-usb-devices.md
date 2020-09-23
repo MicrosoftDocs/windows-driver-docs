@@ -93,7 +93,7 @@ VendorXYZ.DeviceDesc = "VendorXYZ Device"
 
 Where:
 
-1.  The [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-version-section) should have the **CLASSGUID** and **DriverVer** directives set as follows:
+1.  The [**INF Version section**](../install/inf-version-section.md) should have the **CLASSGUID** and **DriverVer** directives set as follows:
 
     -   The **CLASSGUID** directive must specify the Microsoft class GUID for HID devices. This GUID has the value {745a17a0-74d3-11d0-b6fe-00a0c90f57da}.
 
@@ -101,18 +101,13 @@ Where:
 
 2.  2. The VendorXYZDevice\* sections specify the hardware identifier (ID) for the vendor's HID device. The hardware ID consists of a vendor identifier (VID) and product identifier (PID). Each hardware ID for a device must have VID/PID values that are unique to the vendor and device. This ensures that the same hardware ID does not correspond to multiple names and settings
 
-3.  3. The VendorXYZDevice\_Install.NT and VendorXYZDevice\_Install.NT.HW sections are [**INF DDInstall sections**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section). In this example, these sections contain INF **Include** and **Needs** directives.
+3.  3. The VendorXYZDevice\_Install.NT and VendorXYZDevice\_Install.NT.HW sections are [**INF DDInstall sections**](../install/inf-ddinstall-section.md). In this example, these sections contain INF **Include** and **Needs** directives.
 
     The **Include** directives reference the system-supplied Input.inf file, which contains INF sections needed to enable the USB selective suspend feature for the vendor's HID device.
 
     The **Needs** directives indicate which sections from Input.inf should be processed during device installation. In this case, the HID\_SelSus\_Inst section is selected instead of the default HID\_Inst section, which does not support selective suspend.
 
-4.  4. The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.
+4.  4. The VendorXYZDevice\_Install.NT.Services section is an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md). In this example, the section also contains the same values for the INF **Include** and **Needs** directives.
 
  
-
- 
-
-
-
 
