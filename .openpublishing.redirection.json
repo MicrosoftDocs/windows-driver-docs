@@ -8115,6 +8115,11 @@
                             "source_path":  "windows-driver-docs-pr/kernel/device-objects-and-device-stacks.md",
                             "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-device-objects",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/ifs/oplock-semantics.md",
+                            "redirect_url":  "/windows-hardware/drivers/ifs/oplock-overview",
+                            "redirect_document_id":  false
                         }
                      ]
 }
