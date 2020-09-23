@@ -2,11 +2,14 @@
 title: Generate ACPI tables by using AcpiGenFx
 description: Use the ACPI Generation Framework (AcpiGenFx) library to write an app that generates ACPI tables.
 ms.assetid: 46A725C3-609E-45B9-A4BD-033656208E92
-ms.date: 05/22/2020
+ms.date: 09/23/2020
 ms.localizationpriority: medium
 ---
 
 # Generate ACPI tables by using AcpiGenFx
+
+> [!NOTE]
+> This article contains references to the term slave, a term that Microsoft no longer uses. When the term is removed from the software, we'll remove it from this article.
 
 ## Summary
 
@@ -389,8 +392,8 @@ namespace SSDTSample
             var sensor = platform.AddGenericDevice("ADXL", "ACPI\\ADXL345Acc", 1);
 
             sensor.AddI2CSerialBus(
-                TargetAddress: 0x1d,
-                Mode: TargetMode.ControllerInitiated,
+                SlaveAddress: 0x1d,
+                Mode: SlaveMode.ControllerInitiated,
                 ConnectionSpeed: 400000,
                 addressmode: AddressMode._7Bit,
                 controllername: "I2C1"
