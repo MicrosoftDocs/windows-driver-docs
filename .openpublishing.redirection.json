@@ -8130,6 +8130,11 @@
                             "source_path":  "windows-driver-docs-pr/install/device-metadata-packages.md",
                             "redirect_url":  "/windows-hardware/drivers/install/overview-of-device-metadata-packages",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/storage/tape-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/storage/tape-drivers-overview",
+                            "redirect_document_id":  false
                         }
                      ]
 }
