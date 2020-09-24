@@ -8135,6 +8135,11 @@
                             "source_path":  "windows-driver-docs-pr/storage/tape-drivers.md",
                             "redirect_url":  "/windows-hardware/drivers/storage/tape-drivers-overview",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/windows-driver-model.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/writing-wdm-drivers",
+                            "redirect_document_id":  false
                         }
                      ]
 }

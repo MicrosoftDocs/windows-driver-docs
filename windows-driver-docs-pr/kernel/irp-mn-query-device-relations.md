@@ -114,7 +114,7 @@ In the example shown in the figure, the PnP manager sends an **IRP\_MN\_QUERY\_D
 
     -   Creates a PDO for any child device that does not already have one.
 
-    -   Marks the PDO inactive for any device that is no longer present on the bus. The bus driver does not delete such PDOs.For more information about when to delete the PDOs, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+    -   Marks the PDO inactive for any device that is no longer present on the bus. The bus driver does not delete such PDOs.For more information about when to delete the PDOs, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device-in-a-bus-driver).
 
     -   Reports any child devices that are present on the bus.
 
