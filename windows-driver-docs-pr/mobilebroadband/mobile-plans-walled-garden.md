@@ -15,7 +15,7 @@ ms.technology: windows-devices
 The Mobile Plans *Walled Garden* is key to supporting customers when they run out of data. It enables them to reach the MO Direct portal even when there is no alternative internet connection such as Wi-Fi. This will enable consumers to purchase additional data plans and manage their subscriptions.
 
 > [!NOTE]
-> The Mobile Plans architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for whitelisting.
+> The Mobile Plans architecture does not support IP ranges for Walled Garden endpoints. Host names must be used for allowlisting.
 
 The MO Direct web portal and `GetBalance` API endpoint must also be part of this Walled Garden.
 
