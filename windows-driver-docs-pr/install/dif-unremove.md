@@ -61,7 +61,7 @@ Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-se
 There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_UNREMOVEDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_unremovedevice_params) structure is associated with the *DeviceInfoData*. The **Scope** field must be set to DI_UNREMOVEDEVICE_CONFIGSPECIFIC and a hardware profile must be specified in the **HwProfile** field.
+An [**SP_UNREMOVEDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_unremovedevice_params) structure is associated with the *DeviceInfoData*. The **Scope** field must be set to DI_UNREMOVEDEVICE_CONFIGSPECIFIC and a hardware profile must be specified in the **HwProfile** field.
 
 ### Installer Output
 
@@ -122,7 +122,7 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_UNREMOVEDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_unremovedevice_params)
+[**SP_UNREMOVEDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_unremovedevice_params)
 
  
 

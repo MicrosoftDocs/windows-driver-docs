@@ -75,7 +75,7 @@ New headers that support this feature include the following:
 
 * [Ring.h](/windows-hardware/drivers/ddi/ring/index)
 * [Ringcollection.h](/windows-hardware/drivers/ddi/ringcollection/index)
-* [Netringiterator.h](https://docs.microsoft.com/windows-hardware/drivers/ddi/netringiterator/index)
+* Netringiterator.h
 
 The following is a list of NetAdapterCx content updates:
 

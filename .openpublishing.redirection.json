@@ -1,142 +1,142 @@
 {
     "redirections":  [
         {
-            "source_path":  "/windows-hardware/drivers/network/scalable-networking2.md",
+            "source_path":  "windows-driver-docs-pr/network/scalable-networking2.md",
             "redirect_URL":  "/windows-hardware/drivers/network/header-data-split",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/header-data-split-administration-and-configuration.md",
+            "source_path":  "windows-driver-docs-pr/network/header-data-split-administration-and-configuration.md",
             "redirect_URL":  "/windows-hardware/drivers/network/setting-the-current-header-data-split-configuration",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/header-data-split-overview.md",
+            "source_path":  "windows-driver-docs-pr/network/header-data-split-overview.md",
             "redirect_URL":  "/windows-hardware/drivers/network/header-data-split-architecture",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md",
+            "source_path":  "windows-driver-docs-pr/network/obtaining-and-setting-miniport-driver-information-and-ndis-support-for.md",
             "redirect_URL":  "/windows-hardware/drivers/network/ndis-management-information-and-oids",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/ndis-stack-operations.md",
+            "source_path":  "windows-driver-docs-pr/network/ndis-stack-operations.md",
             "redirect_URL":  "/windows-hardware/drivers/network/starting-a-driver-stack",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/managing-packet-coalescing-receive-filters.md",
+            "source_path":  "windows-driver-docs-pr/network/managing-packet-coalescing-receive-filters.md",
             "redirect_URL":  "/windows-hardware/drivers/network/guidelines-for-managing-packet-coalescing-receive-filters",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/installation-requirements-for-network-components.md",
+            "source_path":  "windows-driver-docs-pr/network/installation-requirements-for-network-components.md",
             "redirect_URL":  "/windows-hardware/drivers/network/installation-requirements-for-network-adapters",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/sections-in-a-network-inf-file.md",
+            "source_path":  "windows-driver-docs-pr/network/sections-in-a-network-inf-file.md",
             "redirect_URL":  "/windows-hardware/drivers/network/version-section-in-a-network-inf-file",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/connection-oriented-operations.md",
+            "source_path":  "windows-driver-docs-pr/network/connection-oriented-operations.md",
             "redirect_URL":  "/windows-hardware/drivers/network/connection-oriented-operations-performed-by-clients",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/writing-ndis-protocol-drivers.md",
+            "source_path":  "windows-driver-docs-pr/network/writing-ndis-protocol-drivers.md",
             "redirect_URL":  "/windows-hardware/drivers/network/initializing-a-protocol-driver",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/call-manager-requirements-for-voice-streaming.md",
+            "source_path":  "windows-driver-docs-pr/network/call-manager-requirements-for-voice-streaming.md",
             "redirect_URL":  "/windows-hardware/drivers/network/responding-to-an-oid-co-tapi-line-caps-query",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/previous-versions-of-network-drivers.md",
+            "source_path":  "windows-driver-docs-pr/network/previous-versions-of-network-drivers.md",
             "redirect_URL":  "/windows-hardware/drivers/network/network-drivers-prior-to-windows-vista",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/condis-registration.md",
+            "source_path":  "windows-driver-docs-pr/network/condis-registration.md",
             "redirect_URL":  "/windows-hardware/drivers/network/condis-miniport-driver-registration",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/offloading-ipsec-tasks.md",
+            "source_path":  "windows-driver-docs-pr/network/offloading-ipsec-tasks.md",
             "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/network/ipsec-offload-version-1.md",
+            "source_path":  "windows-driver-docs-pr/network/ipsec-offload-version-1.md",
             "redirect_URL":  "/windows-hardware/drivers/network/background-reading-on-ipsec",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/serviceinfo-xml-data-types.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/serviceinfo-xml-data-types.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-serviceinfo",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/packageinfo-xml-data-types.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/packageinfo-xml-data-types.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/guidtype-packageinfo",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/get-started-with-a-hotspot-authentication-app.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/get-started-with-a-hotspot-authentication-app.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/review-the-hotspot-authentication-sample",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/mobile-operator-scenarios-b-mb.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/mobile-operator-scenarios-b-mb.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/mobile-plans-scenarios",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/overview-b-mb.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/overview-b-mb.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/overview-of-mobile-broadband",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/mobile-broadband-winrt-api-overview.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/mobile-broadband-winrt-api-overview.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/list-of-mobile-broadband-windows-runtime-apis",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/hotspot-authentication-methods.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/hotspot-authentication-methods.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/integrating-windows-with-wireless-hotspots",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/service-metadata-package-schema-reference.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/service-metadata-package-schema-reference.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/mobilebroadbandinfo-xml-schema",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/send-sms-by-using-the-text-mode-interface.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/send-sms-by-using-the-text-mode-interface.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/calculate-characters-and-segments-of-a-draft-sms",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/best-practices-for-using-mobile-broadband-windows-runtime-api.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/best-practices-for-using-mobile-broadband-windows-runtime-api.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/best-practices-for-handling-account-arrival-and-removal-events",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/cosa-apn-database-submission.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/cosa-apn-database-submission.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/apn-xml-schema.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/apn-xml-schema.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/apn-schema-definition",
             "redirect_document_id":  false
         },
         {
-            "source_path":  "/windows-hardware/drivers/mobilebroadband/apn-database-schema-reference.md",
+            "source_path":  "windows-driver-docs-pr/mobilebroadband/apn-database-schema-reference.md",
             "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/apn-schema-definition",
             "redirect_document_id":  false
         },
@@ -8119,6 +8119,21 @@
                         {
                             "source_path":  "windows-driver-docs-pr/ifs/oplock-semantics.md",
                             "redirect_url":  "/windows-hardware/drivers/ifs/oplock-overview",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/how-setup-ranks-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/device-metadata-packages.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/overview-of-device-metadata-packages",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/storage/tape-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/storage/tape-drivers-overview",
                             "redirect_document_id":  false
                         }
                      ]

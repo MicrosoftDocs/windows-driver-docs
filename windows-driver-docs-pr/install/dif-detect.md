@@ -61,7 +61,7 @@ None
 There are device installation parameters associated with the *DeviceInfoSet*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_detectdevice_params) structure is associated with the *DeviceInfoSet*. The parameters contain a callback routine that the class installer calls to indicate the progress of the detection operation.
+An [**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_detectdevice_params) structure is associated with the *DeviceInfoSet*. The parameters contain a callback routine that the class installer calls to indicate the progress of the detection operation.
 
 ### Installer Output
 
@@ -87,7 +87,7 @@ In response to a DIF_DETECT request an installer can detect devices of its setup
 
 If an installer detects devices, it should do at least the following:
 
--   Call the **DetectProgressNotify** callback routine in the [**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_detectdevice_params) class installation parameters, if detection will potentially take a noticeable amount of time.
+-   Call the **DetectProgressNotify** callback routine in the [**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_detectdevice_params) class installation parameters, if detection will potentially take a noticeable amount of time.
 
 -   For each device the installer detects, it should:
     -   Create a device information element ([**SetupDiCreateDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)).
@@ -134,7 +134,7 @@ Requirements
 
 [**SetupDiCreateDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedeviceinfoa)
 
-[**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_detectdevice_params)
+[**SP_DETECTDEVICE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_detectdevice_params)
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 

@@ -65,7 +65,7 @@ Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-se
 There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_PROPCHANGE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_propchange_params) structure is associated with the *DeviceInfoData*.
+An [**SP_PROPCHANGE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_propchange_params) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
@@ -130,7 +130,7 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_PROPCHANGE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_propchange_params)
+[**SP_PROPCHANGE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_propchange_params)
 
  
 

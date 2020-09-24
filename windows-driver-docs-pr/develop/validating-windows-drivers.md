@@ -60,7 +60,7 @@ Error   10  error MSB3721: The command ""C:\Program Files (x86)\Windows Kits\10\
 
 2.  Remove or replace API calls that are not permitted one at a time and rerun the tool until there are no errors.
 
-3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. If you cannot find a suitable replacement, please [submit feedback](https://go.microsoft.com/fwlink/p/?linkid=529549).  You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Windows Driver starting from the driver templates in the WDK.
+3.  In some cases, you can replace these calls with alternate DDIs that are listed on the reference pages for the desktop-only DDI. You may have to code a workaround if there is not a suitable replacement.  If you need to, write a new Windows Driver starting from the driver templates in the WDK.
 
 If you see errors like the following, please refer to the guidance in [Building for OneCore](building-for-onecore.md).
 
