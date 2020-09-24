@@ -7,11 +7,11 @@ ms.localizationpriority: medium
 ---
 
 # Overview of Driver Policies
-Driver Flighting and Gradual Rollout works to ensure that drivers being published are high quality and assists in limiting the chance a driver will negatively impact Windows customers.  To accomplish this, there aer a set of measures that are used to ensure quality. There are also policies that are put in place that ensures success in the ecosystem.
+Driver Flighting and Gradual Rollout works to ensure that drivers being published are high quality and assists in limiting the chance a driver will negatively impact Windows customers.  To accomplish this, there are a set of measures that are used to ensure quality. There are also policies that are put in place that ensure success in the ecosystem.
 
 Some existing policies that lead to the driver submission being rejected include:
-* Previous versions of Windows and Windows 10 can not both be targeted in the same submission.
-* Some device class have specific CHID targeting requirements. Some device classes require CHID like Firmware and other classes forbid the use of CHID like Display. 
+* Drivers targeting previous versions of Windows cannot be included in the same submission with drivers for Windows 10.
+* Some device class have specific CHID targeting requirements. For example Firmware and Display classes forbid the use of CHID.
 * OEMs can only target hardware IDs that target their own systems.
 
 ## Other Policies
