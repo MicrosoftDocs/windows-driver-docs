@@ -65,12 +65,12 @@ Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-se
 There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_troubleshooter_params_a) structure is associated with the *DeviceInfoData*.
+An [**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_troubleshooter_params_a) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer might modify the [**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_troubleshooter_params_a), setting a CHM or HTML file.
+An installer might modify the [**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_troubleshooter_params_a), setting a CHM or HTML file.
 
 ### Installer Return Value
 
@@ -129,7 +129,7 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_troubleshooter_params_a)
+[**SP_TROUBLESHOOTER_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_troubleshooter_params_a)
 
  
 

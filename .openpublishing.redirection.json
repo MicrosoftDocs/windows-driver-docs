@@ -8120,6 +8120,16 @@
                             "source_path":  "windows-driver-docs-pr/ifs/oplock-semantics.md",
                             "redirect_url":  "/windows-hardware/drivers/ifs/oplock-overview",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/how-setup-ranks-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/how-setup-ranks-drivers--windows-vista-and-later-",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/device-metadata-packages.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/overview-of-device-metadata-packages",
+                            "redirect_document_id":  false
                         }
                      ]
 }

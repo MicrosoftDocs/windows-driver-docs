@@ -62,7 +62,7 @@ You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setup
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverRank property key. For information about how to access this property on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
-For information about driver rank, see [How Windows Ranks Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers) .
+For information about driver rank, see [How Windows Ranks Drivers](https://docs.microsoft.com/windows-hardware/drivers/install/how-setup-ranks-drivers).
 
 Requirements
 ------------
@@ -78,7 +78,7 @@ Requirements
 
 [**SetupDiGetDriverInstallParams**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdriverinstallparamsa)
 
-[**SP_DRVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_drvinstall_params)
+[**SP_DRVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_drvinstall_params)
 
  
 
