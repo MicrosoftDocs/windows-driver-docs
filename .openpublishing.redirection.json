@@ -6,11 +6,6 @@
             "redirect_document_id":  false
         },
         {
-            "source_path":  "windows-driver-docs-pr/network/ndis-wake-reason-status-indications.md",
-            "redirect_URL":  "/windows-hardware/drivers/network/overview-of-ndis-wake-reason-statue-indications",
-            "redirect_document_id":  false
-        },
-        {
             "source_path":  "windows-driver-docs-pr/network/introduction-to-ndis-miniport-drivers.md",
             "redirect_URL":  "/windows-hardware/drivers/network/deserialized-ndis-miniport-drivers",
             "redirect_document_id":  false
