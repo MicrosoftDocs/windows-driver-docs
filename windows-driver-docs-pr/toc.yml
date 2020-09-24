@@ -112,7 +112,7 @@
     href: spb/index.md
   - name: "Storage device drivers"
     href: storage/index.md
-  - name: "Storage Firmware Update (CFU)"
+  - name: "Storage Firmware Update (SFU)"
     href: sfu/index.md
   - name: "Streaming media device drivers"
     href: stream/index.md
