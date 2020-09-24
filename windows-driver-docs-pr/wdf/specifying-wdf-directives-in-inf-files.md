@@ -83,7 +83,6 @@ You must specify **AllowDirectHardwareAccess** if your UMDF driver accesses hard
 
 For information about connecting a UMDF driver to particular types of resources, see:
 
--   [Connecting a UMDF Driver to GPIO I/O Pins](https://docs.microsoft.com/windows-hardware/drivers/gpio/connecting-a-umdf-driver-to-gpio-i-o-pins)
 -   [Hardware Resources for User-Mode SPB Peripheral Drivers](../spb/hardware-resources-for-user-mode-spb-peripheral-drivers.md)
 -   [Connection IDs for SPB-Connected Peripheral Devices](../spb/connection-ids-for-spb-connected-peripheral-devices.md)
 -   [Connecting a UMDF Peripheral Driver to a Serial Port](/previous-versions/hh406559(v=vs.85))
