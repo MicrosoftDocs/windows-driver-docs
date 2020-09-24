@@ -31,10 +31,57 @@ To use Windows 10 to update drive firmware, you must have supported drives. To e
 
 Contact your solution vendor for information about whether your hardware supports Windows updating the drive firmware.
 
+### Windows device COMPAT requirements for NVMe: Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8
+
+**Device.Storage.ControllerDrive.NVMe.BasicFunction**
+
+The device must have at least one upgradeable firmware slot.
+
+**5.7 Firmware Commit**
+
+- Activation of a firmware image should be done without requiring a power cycle of the device.
+
+- The activation process is expected to be achieved via a host-initiated reset, as described in section 8.1 of spec version 1.2a.
+
+- Windows will utilize commit actions 001b or 010b when issuing a firmware commit command.
+
+- Expected completion values for successful activation without a power cycle are 00h (generic success), 10h, or 11h.
+
+- If 0Bh is returned as completion status, Windows will inform the user to perform a power cycle of the device. This is highly discouraged, as it prevents updating of firmware at OS runtime and causes significant workload disruption.
+
+**5.8 Firmware Image Download**
+
+- The device must not fail I/O during the download phase and shall continue serving I/O.
+
 For additional details, see the Windows device COMPAT requirements for NVMe: [Device.Storage.ControllerDrive.NVMe - sections 5.7 and 5.8](https://partner.microsoft.com/dashboard/collaborate/packages/7840).
 
 > [!NOTE]
 > The above link requires a valid account on the [Microsoft Collaborate](https://developer.microsoft.com/dashboard/collaborate/) portal.
+
+## SCSI identifiers for NVMe storage disk drives
+
+Starting with Windows 10, Version 2004 (OS build 19041.488 or higher), two new identifiers are available for NVMe storage disk drives which support the [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description) structure:
+
+`SCSI\t*v(8)p(40)`
+
+Where:
+
+- t* is a device type code of variable length.
+- v(8) is an 8-character vendor identifier.
+- p(40) is a 40-character product identifier
+
+`SCSI\t*v(8)p(40)r(8)`
+
+Where:
+
+- t* is a device type code of variable length.
+- v(8) is an 8-character vendor identifier.
+- p(40) is a 40-character product identifier
+- r(8) is an 8-character revision level value.
+
+The `SCSI\t*v(8)p(40)r(80` identifier provides a full product name (aligned with the NVME 1.4 spec) and allows creation of a software component (SWC) node for firmware updates for NVME drives matching this name (up to 40 characters and 8 character firmware revision).
+
+For more information, see [Identifiers for SCSI Devices](/windows-hardware/drivers/install/identifiers-for-scsi-devices) and [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description)
 
 ## Storage Firmware Update (SFU) solution details
 
@@ -179,6 +226,12 @@ To view the new SWC node and hardware ID:
 View the updated NVMe disk firmware information in the **ActiveSlotNumber** and **FirmwareVersionInSlot** values.
 
 For more information, see [Get-StorageFirmwareInformation](/powershell/module/storage/get-storagefirmwareinformation?view=win10-ps).
+
+## Deploy the extension INF and firmware packages through Windows Update
+
+Next, deploy the package through Windows Update using appropriate CHIDs.
+
+For information about deployment, see [Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
 
 ## Disk extension INF sample
 
@@ -347,12 +400,8 @@ DiskName = "Storage Firmware Update Installation Disk"
 FwUpdateFriendlyName= "StorageIHV3 Firmware Update"
 ```
 
-## Deploy the extension INF and firmware packages through Windows Update
-
-Next, deploy the package through Windows Update using appropriate CHIDs.
-
-For information about deployment, see [Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
-
 ## Additional resources
 
 [Identifiers for SCSI Devices](/windows-hardware/drivers/install/identifiers-for-scsi-devices)
+
+[STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description)
