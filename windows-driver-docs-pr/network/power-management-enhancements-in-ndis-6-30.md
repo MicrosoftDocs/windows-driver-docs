@@ -31,7 +31,7 @@ Starting with NDIS 6.30, miniport drivers issue an NDIS wake reason status indic
 
  
 
-For more information, see [NDIS Wake Reason Status Indications](ndis-wake-reason-status-indications.md).
+For more information, see [NDIS Wake Reason Status Indications](overview-of-ndis-wake-reason-statue-indications.md).
 
 ### NDIS No Pause On Suspend
 

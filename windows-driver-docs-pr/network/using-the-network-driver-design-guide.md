@@ -58,7 +58,7 @@ An *intermediate driver* interfaces between upper-level protocol drivers and min
 
 Intermediate drivers can also manage hardware when they are configured as a *miniport-intermediate driver*.
 
-For more information about the Windows network architecture and programming considerations, see [Network Architecture for Kernel-Mode Drivers](network-architecture-for-kernel-mode-drivers.md) and [Network Driver Programming Considerations](network-driver-programming-considerations.md).
+For more information about the Windows network architecture and programming considerations, see [Network Architecture for Kernel-Mode Drivers](windows-network-architecture-and-the-osi-model.md) and [Network Driver Programming Considerations](network-driver-programming-considerations.md).
 
 For more information about network INF files, which are used to install network components, see [Installing Network Components](installing-network-components.md). If your network driver requires a notify object--for example, to control bindings--also see [Notify Objects for Network Components](notify-objects-for-network-components.md).
 

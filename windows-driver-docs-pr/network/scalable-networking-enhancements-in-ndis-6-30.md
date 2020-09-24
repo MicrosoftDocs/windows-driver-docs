@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Scalable networking includes the following enhancements for NDIS 6.30 and later drivers:
 
-[Receive Segment Coalescing (RSC)](receive-segment-coalescing--rsc-.md)
+[Receive Segment Coalescing (RSC)](overview-of-receive-segment-coalescing.md)
 [Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 [Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)
 [IPsec Offload Version 2](./introduction-to-ipsec-offload-version-2.md) (IPsecOV2) Updates
