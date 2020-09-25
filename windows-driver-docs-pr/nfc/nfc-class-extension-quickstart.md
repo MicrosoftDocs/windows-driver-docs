@@ -1,6 +1,5 @@
 ---
 title: NFC CX quick start guide
-author: EliotSeattle
 description: A quick start guide for writing a NFC functional driver using the NFC Class Extension.
 keywords:
 - NFC
@@ -9,7 +8,6 @@ keywords:
 - near field proximity
 - NFP
 - CX
-ms.author: eliotgra
 ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-hardware

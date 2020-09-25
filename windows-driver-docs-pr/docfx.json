@@ -107,7 +107,7 @@
         "**/usbcon/*.md": "billlattimer",
         "**/wdf/*.md": "tedhudek",
         "**/wdtf/*.md": "EliotSeattle",
-        "**/whea/*.md": "EliotSeattle"      },
+        "**/whea/*.md": "tedhudek"      },
       "ms.author":
       {
         "**/3dprint/*.md": "bagold",
@@ -159,7 +159,7 @@
         "**/usbcon/*.md": "billla",
         "**/wdf/*.md": "tedhudek",
         "**/wdtf/*.md": "eliotgra",
-        "**/whea/*.md": "eliotgra"      }
+        "**/whea/*.md": "tedhudek"      }
     },
     "externalReference": [],
     "template": "op.html",
