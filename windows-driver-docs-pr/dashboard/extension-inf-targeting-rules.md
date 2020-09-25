@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 As we move together towards properly componentized modern drivers, we’d like to share with you the plan on how we will evaluate these drivers moving forward. 
 
 As a reminder, keep in mind the founding principles behind driver componentization: 
-> ![NOTE - Keep in mind the founding principles ehind driver componentization]
+> ![NOTE] - Keep in mind the founding principles ehind driver componentization
 > Base drivers are meant to provide core device functionality and can be broadly targeted.
 
 > Extension drivers are generally meant to provide system specific customizations and must be specifically targeted.  As a best practice, the INF should only include targeting to a single OEM.   For our policy checking & validation, we are focusing on the HWIDs you choose to publish.  The targeting should only include HWIDs and CHIDs which are specifically being customized by the extension INF and limited to a single OEM. 
