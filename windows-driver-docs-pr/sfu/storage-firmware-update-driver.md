@@ -59,7 +59,7 @@ For additional details, see the Windows device COMPAT requirements for NVMe: [De
 
 ## SCSI identifiers for NVMe storage disk drives
 
-Starting with Windows 10, version 2004 (OS build 19041.488 or higher), two new identifiers are available for NVMe storage disk drives which support the [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description) structure:
+Starting with Windows 10, version 2004 (OS build 19041.488 or higher), two new identifiers are available for NVMe storage disk drives using drivers which support the [STOR_RICH_DEVICE_DESCRIPTION](/windows-hardware/drivers/ddi/storport/ns-storport-_stor_rich_device_description) structure:
 
 `SCSI\t*v(8)p(40)`
 
