@@ -4738,8 +4738,12 @@
         href: data-out-endpoint-descriptor.md
 - name: "Kernel Mode SDK Topics for Network Drivers"
   items: 
+  - name: "Overview of Kernel Mode SDK Topics for Network Drivers"
+    href: kernel-mode-sdk-topics-for-network-drivers.md
   - name: "Mstcpip.h"
     items: 
+    - name: "Overview"
+      href: mstcpip-h.md
     - name: "SIO_LOOPBACK_FAST_PATH control code"
       href: sio-loopback-fast-path.md
     - name: "SIO_QUERY_WFP_CONNECTION_REDIRECT_CONTEXT control code"
@@ -4750,6 +4754,8 @@
       href: sio-set-wfp-connection-redirect-records.md
   - name: "Ntddndis.h"
     items: 
+    - name: "Overview"
+      href: ntddndis-h.md
     - name: "GUID_NDIS_GEN_PCI_DEVICE_CUSTOM_PROPERTIES"
       href: guid-ndis-gen-pci-device-custom-properties.md
     - name: "OID_802_3_ADD_MULTICAST_ADDRESS"
@@ -5432,6 +5438,8 @@
       href: oid-wwan-visible-providers.md
   - name: "Ws2def.h"
     items: 
+    - name: "Overview"
+      href: ws2def-h.md
     - name: "AF_INET"
       href: af-inet.md
     - name: "AF_INET6"

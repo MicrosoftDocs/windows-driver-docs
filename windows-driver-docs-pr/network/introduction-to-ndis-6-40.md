@@ -44,7 +44,7 @@ The following documentation sections have been added or significantly expanded:
 -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 -   [Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md) Design Guide
 -   [Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)
--   [Receive Segment Coalescing (RSC)](receive-segment-coalescing--rsc-.md) Design Guide
+-   [Receive Segment Coalescing (RSC)](overview-of-receive-segment-coalescing.md) Design Guide
 -   [Getting Started Writing a Hyper-V Extensible Switch Extension](getting-started-writing-a-hyper-v-extensible-switch-extension.md)
 -   [NVGRE Task Offload Reference](/windows-hardware/drivers/ddi/_netvista/)
 

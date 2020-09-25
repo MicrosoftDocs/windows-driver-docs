@@ -1,6 +1,5 @@
 ---
 title: Different ways of handling IRPs - Cheat sheet
-author: kaushika-msft
 description: Different ways of handling IRPs
 keywords: ["IRPs WDK kernel , handling IRPs"]
 ms.date: 12/07/2017
@@ -148,7 +147,7 @@ In this case, the driver sets a completion routine, forwards the IRP down, and t
 
 ```cpp
 NTSTATUS
-DispathRoutine_3(
+DispatchRoutine_3(
     IN PDEVICE_OBJECT DeviceObject,
     IN PIRP Irp
     )

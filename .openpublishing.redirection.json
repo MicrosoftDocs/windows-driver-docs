@@ -1,6 +1,36 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/ndis-wake-reason-status-indications.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/overview-of-ndis-wake-reason-statue-indications",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/introduction-to-ndis-miniport-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/deserialized-ndis-miniport-drivers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/network-architecture-for-kernel-mode-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/windows-network-architecture-and-the-osi-model",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/receive-segment-coalescing--rsc-.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/overview-of-receive-segment-coalescing",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/receiving-data-in-an-intermediate-driver.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/receiving-data-in-an-intermediate-driver-with-a-connectionless-lower-e",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/managing-interrupts.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/registering-and-deregistering-interrupts",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/scalable-networking2.md",
             "redirect_URL":  "/windows-hardware/drivers/network/header-data-split",
             "redirect_document_id":  false
