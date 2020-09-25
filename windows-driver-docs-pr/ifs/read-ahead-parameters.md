@@ -6,7 +6,7 @@ keywords: ["read-ahead parameters"]
 topic_type:
 - apiref
 api_name:
-- read_ahead_parame3ters
+- read_ahead_parameters
 api_location:
 - NtosKrnl.exe
 api_type:
