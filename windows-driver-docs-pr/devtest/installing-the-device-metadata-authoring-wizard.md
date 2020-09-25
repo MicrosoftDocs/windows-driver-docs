@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The Device Metadata Authoring Wizard is located in the Windows® Driver Kit (WDK).
 
-To download and install the WDK, see [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+To download and install the WDK, see [Windows Driver Kit](../download-the-wdk.md).
 
 **Note**  You must install the entire WDK to use the tool.
 
@@ -31,10 +31,4 @@ After you have installed and launched the WDK, click the **Driver** menu in Micr
 The **Welcome to the Metadata Authoring Wizard** screen appears, and you're ready to begin creating a metadata package.
 
  
-
- 
-
-
-
-
 

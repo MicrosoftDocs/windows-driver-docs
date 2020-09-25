@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A driver registers for notification of hardware profile changes by calling [**IoRegisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
+A driver registers for notification of hardware profile changes by calling [**IoRegisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterplugplaynotification).
 
 The following information applies to calling this routine for hardware profile change notification:
 
@@ -23,12 +23,7 @@ The following information applies to calling this routine for hardware profile c
 
 -   Specify a driver-defined *Context*, if appropriate, that the PnP manager will pass to the callback routine.
 
-A driver removes notification registration by calling [**IoUnregisterPlugPlayNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
+A driver removes notification registration by calling [**IoUnregisterPlugPlayNotification**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iounregisterplugplaynotification) with the *NotificationEntry* returned by **IoRegisterPlugPlayNotification**.
 
  
-
- 
-
-
-
 

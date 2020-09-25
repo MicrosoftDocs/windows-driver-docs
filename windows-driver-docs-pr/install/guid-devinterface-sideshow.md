@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_SIDESHOW
 
 
-The GUID_DEVINTERFACE_SIDESHOW [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [Windows SideShow devices](https://docs.microsoft.com/windows-hardware/drivers/).
+The GUID_DEVINTERFACE_SIDESHOW [device interface class](./overview-of-device-interface-classes.md) is defined for [Windows SideShow devices](../index.yml).
 
 <table>
 <colgroup>
@@ -71,10 +71,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

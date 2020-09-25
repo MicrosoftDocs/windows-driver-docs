@@ -23,12 +23,7 @@ Capability structures cross-reference usages and data indices in the following w
 
 -   Each capability structure that describes a usage range has its **Range.UsageMin** and **Range.UsageMax** members set to identify the usage range and its **Range.DataIndexMin** and **Range.DataIndexMax** members set to identify the usage range's corresponding data index range. (*Data index range* specifies a consecutive sequence of data indices; and the number of data indices in a data index range is equal to the number of usages in a corresponding usage range.)
 
-For more information about how to use data indices, see [Extracting and Setting Control Data by Data Indices](extracting-and-setting-control-data-by-data-indices.md).
+For more information about how to use data indices, see [Extracting and Setting Control Data by Data Indices](./interpreting-hid-reports.md).
 
  
-
- 
-
-
-
 

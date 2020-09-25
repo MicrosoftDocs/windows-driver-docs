@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Package (SoftwareInfo - priviliged applications)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Package element specifies an app that should have access to the privileged Mobile Broadband interfaces.
 

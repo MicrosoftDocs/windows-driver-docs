@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # PackageInfo XML Example
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The following XML document uses the [PackageInfo XML schema](packageinfo-xml-schema.md) to specify the components of a vendor’s metadata package.
 

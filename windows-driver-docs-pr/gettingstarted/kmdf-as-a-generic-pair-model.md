@@ -61,14 +61,7 @@ In a (KMDF driver, Framework) pair, the Framework handles tasks that are common 
 
 [Minidrivers and driver pairs](minidrivers-and-driver-pairs.md)
 
-[Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/)
+[Kernel-Mode Driver Framework](../wdf/index.md)
 
  
-
- 
-
-
-
-
-
 

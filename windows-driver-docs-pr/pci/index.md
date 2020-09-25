@@ -35,16 +35,16 @@ The following table summarizes the PCIe features that are supported by different
 |Alternative Routing-ID Interpretation (ARI)</br>See section 6.13.|-  Windows 8</br>-  Windows Server 2012|
 |Message Signaled Interrupt (MSI/MSI-X) Support</br>See section 6.1.4.|-  Windows Vista</br>-  Windows Server 2008 R2|
 |TLP Processing Hints (TPH)</br>See section 6.17.|-  Windows 8</br>-  Windows Server 2012|
-|Single Root I/O Virtualization (SR-IOV)</br>See [Single Root I/O Virtualization (SR-IOV)](https://docs.microsoft.com/windows-hardware/drivers/network/single-root-i-o-virtualization--sr-iov-).|-  Windows 8</br>-  Windows Server 2012|
+|Single Root I/O Virtualization (SR-IOV)</br>See [Single Root I/O Virtualization (SR-IOV)](../network/single-root-i-o-virtualization--sr-iov-.md).|-  Windows 8</br>-  Windows Server 2012|
 
 ## In this section
 
-- [PCI Power Management and Device Drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-power-management-and-device-drivers)
-- [Accessing PCI Device Configuration Space](https://docs.microsoft.com/windows-hardware/drivers/pci/accessing-pci-device-configuration-space)
-- [I/O Resource Usage Reduction](https://docs.microsoft.com/windows-hardware/drivers/pci/i-o-resource-usage-reduction)
-- [Order of Resources in Start-Device IRP](https://docs.microsoft.com/windows-hardware/drivers/pci/order-of-resources-in-start-device-irp)
-- [PCI Express FAQ for Graphics](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-express-faq-for-graphics)
-- [PCI Sample](https://docs.microsoft.com/windows-hardware/drivers/pci/pci-sample)
+- [PCI Power Management and Device Drivers](./pci-power-management-and-device-drivers.md)
+- [Accessing PCI Device Configuration Space](./accessing-pci-device-configuration-space.md)
+- [I/O Resource Usage Reduction](./i-o-resource-usage-reduction.md)
+- [Order of Resources in Start-Device IRP](./order-of-resources-in-start-device-irp.md)
+- [PCI Express FAQ for Graphics](./pci-express-faq-for-graphics.md)
+- [PCI Sample](./pci-sample.md)
 
 ## See Also
 

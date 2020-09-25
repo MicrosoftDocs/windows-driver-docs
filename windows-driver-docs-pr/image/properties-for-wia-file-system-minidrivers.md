@@ -14,12 +14,7 @@ ms.localizationpriority: medium
 
 The following property is not implemented at this time. It is reserved by Microsoft for future use.
 
-[**WIA\_DPF\_MOUNT\_POINT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dpf-mount-point)
+[**WIA\_DPF\_MOUNT\_POINT**](./wia-dpf-mount-point.md)
 
  
-
- 
-
-
-
 

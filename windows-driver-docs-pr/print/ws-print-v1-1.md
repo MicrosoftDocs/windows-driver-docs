@@ -230,7 +230,7 @@ This schema provides device-specific GPD or PPD configuration files for this dev
 
 ## Device model ID
 
-The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)).
+The following schema describes a ModelID for the device, and is used for device metadata retrieval. For more information on ModelIDs, see [ModelID element](/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)).
 
 ```xml
     <xs:annotation>
@@ -301,4 +301,4 @@ For more detailed information about the SetPrinterElements operation, see the su
 
 ## Related topics
 
-[V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)  
+[V4 Printer Driver Connectivity](v4-printer-driver-connectivity.md)

@@ -22,4 +22,4 @@ This Device Manager error message indicates that the device did not start becaus
 
 There is currently no resolution to this problem.
 
-To help diagnose the problem, examine other failed devices in the [device tree](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-tree) that this device might depend on. If you can determine why another related device did not start, you might be able to resolve this issue.
+To help diagnose the problem, examine other failed devices in the [device tree](../kernel/device-tree.md) that this device might depend on. If you can determine why another related device did not start, you might be able to resolve this issue.

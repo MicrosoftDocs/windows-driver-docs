@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 > [!IMPORTANT]
 > This documentation and the geolocation driver sample for Windows 8.1 has been deprecated.
 
-When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off. These wireless devices may include a Wi-Fi antennae or a GPS device. The internal linkage between PC settings and a given wireless device is the [Radio Management API](https://docs.microsoft.com/previous-versions/windows/hardware/radio/hh406615(v=vs.85)) and a corresponding Radio Management DLL for the given device.
+When the user chooses the Wireless option in PC settings on their Windows 8 laptop, notebook, or tablet, they can turn any connected wireless devices on or off. These wireless devices may include a Wi-Fi antennae or a GPS device. The internal linkage between PC settings and a given wireless device is the [Radio Management API](/previous-versions/windows/hardware/radio/hh406615(v=vs.85)) and a corresponding Radio Management DLL for the given device.
 
 The Radio Management API is a set of COM/Win32 interfaces that ship as part of the Windows Driver Kit. These interfaces include methods that:
 
@@ -68,7 +68,7 @@ The following table lists the methods in the Radio Management API and the corres
 
 ## Communicating with the device driver
 
-When the radio-management DLL receives a request to retrieve or set the radio state from the radio-management API, it forwards that request as an IOCTL to the corresponding device driver. The DLL sends IOCTLs by invoking the [DeviceIoControl](https://docs.microsoft.com/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function. The specific IOCTLs associated with radio management are:
+When the radio-management DLL receives a request to retrieve or set the radio state from the radio-management API, it forwards that request as an IOCTL to the corresponding device driver. The DLL sends IOCTLs by invoking the [DeviceIoControl](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function. The specific IOCTLs associated with radio management are:
 
 - IOCTL\_GPS\_RADIO\_MANAGEMENT\_GET\_RADIO\_STATE
 

@@ -18,7 +18,7 @@ If the **AllSigningEqual** Group Policy is disabled, Windows ranks drivers signe
 
 -   An [Authenticode](authenticode.md) signature.
 
--   A Microsoft signature for a Windows version earlier than the [LowerLogoVersion](lowerlogoversion.md) value of the driver's [device setup class](device-setup-classes.md).
+-   A Microsoft signature for a Windows version earlier than the [LowerLogoVersion](lowerlogoversion.md) value of the driver's [device setup class](./overview-of-device-setup-classes.md).
 
 If the **AllSigningEqual** Group Policy is disabled, Windows selects a driver signed by a Windows signing authority over an Authenticode-signed driver, even if the Authenticode-signed driver is otherwise a better match to a device.
 
@@ -30,7 +30,7 @@ Signatures from a Windows signing authority are ranked equally and include the f
 
 -   Windows Sustained Engineering (SE) signatures
 
--   A WHQL signature for a Windows version that is the same or later than the [LowerLogoVersion](lowerlogoversion.md) value of the driver's [device setup class](device-setup-classes.md).
+-   A WHQL signature for a Windows version that is the same or later than the [LowerLogoVersion](lowerlogoversion.md) value of the driver's [device setup class](./overview-of-device-setup-classes.md).
 
 A network administrator can change this behavior by enabling the **AllSigningEqual** Group Policy. This configures Windows to treat all Microsoft signature types and Authenticode signatures as equal with respect to rank when selecting the driver that is the best match to a device.
 
@@ -79,10 +79,4 @@ This configuration change is made one time and applies to all subsequent driver 
 For more information about driver ranking, see [How Windows Ranks Drivers](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
  
-
- 
-
-
-
-
 

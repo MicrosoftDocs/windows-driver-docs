@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # HS\_HOST\_SEND\_USER\_MESSAGE function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_HOST\_SEND\_USER\_MESSAGE** function is called to communicate with the user. The message content is contained in custom UI display strings that are passed to the hotspot offload service.

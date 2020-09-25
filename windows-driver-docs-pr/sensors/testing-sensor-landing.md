@@ -1,6 +1,5 @@
 ---
 title: Sensor testing sources
-author: windows-driver-content
 description: This section provides useful links to sensor testing materials.
 ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a9
 ms.date: 12/13/2018
@@ -16,4 +15,4 @@ This section provides handy links to content relevant to sensor testing.
 - [SensorExplorer app](https://aka.ms/sensorexplorer) or [source](https://github.com/Microsoft/busiotools/tree/master/sensors/Tools/SensorExplorer)
 - [Tracing and logging scripts](https://github.com/Microsoft/busiotools/blob/master/sensors/tracing/README.md)
 - [Building a Light Testing Tool](testing-MALT-building-a-light-testing-tool.md)
-- [Light Sensor Guidance and Manual Testing](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update)
+- [Light Sensor Guidance and Manual Testing](/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update)

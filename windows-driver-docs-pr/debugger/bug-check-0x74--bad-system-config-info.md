@@ -64,7 +64,7 @@ The BAD\_SYSTEM\_CONFIG\_INFO bug check occurs if the SYSTEM hive is corrupt. Ho
 
 This bug check can also occur if some critical registry keys and values are missing. The keys and values might be missing if a user manually edited the registry or if an application or service corrupted the registry.
 
-Looking up the NT status value returned in parameter 4 can provide additional information, see [NTSTATUS Values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) for a listing. 
+Looking up the NT status value returned in parameter 4 can provide additional information, see [NTSTATUS Values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55) for a listing. 
 
 Resolution
 ----------

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 If you are building a [Windows Driver](../develop/getting-started-with-windows-drivers.md) package, you must use a universal INF file. If you are building a Windows Desktop Driver package, you don't have to use a universal INF file, but doing so is recommended because of the performance benefits.
 
-A universal INF file uses a subset of the [INF syntax](inf-file-sections-and-directives.md) that is available to a Windows driver. A universal INF file installs a driver and configures device hardware, but does not perform any other action, such as running a co-installer.
+A universal INF file uses a subset of the [INF syntax](./general-syntax-rules-for-inf-files.md) that is available to a Windows driver. A universal INF file installs a driver and configures device hardware, but does not perform any other action, such as running a co-installer.
 
 ## Why is a universal INF file required on non-desktop editions of Windows?
 
@@ -57,10 +57,10 @@ You can use any INF directive in a universal INF file except for the following:
 The following directives are valid with some caveats:
 
 -   The [**INF AddReg Directive**](inf-addreg-directive.md) is valid if entries in the specified *add-registry-section* have a *reg-root* value of **HKR**, or in the following cases:
-	-	For registration of [Component Object Model](https://docs.microsoft.com/windows/desktop/com) (COM) objects, a key may be written under:
+	-	For registration of [Component Object Model](/windows/desktop/com) (COM) objects, a key may be written under:
 		-	HKCR
 		-	HKLM\SOFTWARE\Classes
-	-	For creation of [Hardware Media Foundation Transforms](https://docs.microsoft.com/windows/desktop/medfound/media-foundation-transforms) (MFTs), a key may be written under:
+	-	For creation of [Hardware Media Foundation Transforms](/windows/desktop/medfound/media-foundation-transforms) (MFTs), a key may be written under:
 		-	HKLM\SOFTWARE\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW6432Node\Microsoft\Windows Media Foundation
 		-	HKLM\SOFTWARE\WOW3232Node\Microsoft\Windows Media Foundation

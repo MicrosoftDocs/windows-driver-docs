@@ -18,7 +18,7 @@ For more information about web portal flow and reference design, see [Web portal
 
 ## Web Portal interface for eSIM-enabled devices
 
-The Mobile Plans app uses the [WebView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host and present the mobile operator web portal experience. The portal is invoked by the app calling the mobile operator-hosted service endpoints directly, and returned content is rendered directly within the control
+The Mobile Plans app uses the [WebView](/uwp/api/Windows.UI.Xaml.Controls.WebView) control to host and present the mobile operator web portal experience. The portal is invoked by the app calling the mobile operator-hosted service endpoints directly, and returned content is rendered directly within the control
 
 When starting the `WebView`, several parameters are passed to the portal as part of the invocation. If there is at least one eSIM profile associated with the mobile operator, the *iccids* are passed to the portal as well.
 

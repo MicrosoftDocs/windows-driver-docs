@@ -92,7 +92,7 @@ Portable PDB support has been added. The Portable PDB (Program Database) format 
 
 ## 1.0.1908.30002
 
-**Improvements to TTD Calls objects** - [Calls queries](https://docs.microsoft.com/windows-hardware/drivers/debugger/time-travel-debugging-calls-objects) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
+**Improvements to TTD Calls objects** - [Calls queries](./time-travel-debugging-calls-objects.md) now include parameter names, types, and values. When querying across traces for function calls you can get fully typed parameters and their values making it easy to filter down results by parameters.
 
 **Support for Open Enclave** - WinDbg Preview can now debug Open Enclave (OE) applications for more information, see [Open Enclave debugging](open-enclave-debugging.md)).
 
@@ -110,7 +110,7 @@ You can find the extension in the [VS Code Marketplace](https://aka.ms/CDBVSCode
 * Running 'dx' without any parameters will now show the root namespace for easier browsability.
 * You can now modify the default symbol and source cache location via the settings menu.
 * Improved support for recording AVX-512 (recording of AVX-512 will cause a larger than normal slow-down).
-* We've enabled [offline licensing](https://docs.microsoft.com/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing).
+* We've enabled [offline licensing](/windows/uwp/publish/organizational-licensing#allowing-disconnected-offline-licensing).
 
 ## 1.0.1905.12001
 
@@ -151,7 +151,7 @@ Other changes and bug fixes:
 
 This version includes these updates.
 
-**Debugger data model C++ header** - There is a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](https://docs.microsoft.com/windows-hardware/drivers/debugger/data-model-cpp-overview). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](https://docs.microsoft.com/windows-hardware/drivers/debugger/dbgmodel-namespace-code) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](https://docs.microsoft.com/windows-hardware/drivers/debugger/dbgmodel-namespace-file-system).
+**Debugger data model C++ header** - There is a new C++ header, DbgModel.h, included as part of the Windows SDK for extending the debugger data model via C++. You can find more information in [Debugger Data Model C++ Overview](./data-model-cpp-overview.md). This release includes a new extension that adds some more "API style" features to the debugger data model that can be accessed through the 'dx' command, JavaScript, and the new DbgModel.h header. This extension extensions the data model to include knowledge about assembly and code execution through the [Debugger.Utility.Code](./dbgmodel-namespace-code.md) namespace, and the local file system through the [Debugger.Utility.FileSystem namespace](./dbgmodel-namespace-file-system.md).
 
 **Synthetic types extension** With this new API extension, we have a new sample up on our GitHub repo here - https://github.com/Microsoft/WinDbg-Samples/tree/master/SyntheticTypes. This JavaScript extension reads basic C header files and defines synthetic type information for the structures and unions defined in the header. Through the dx command, memory can then be viewed structured as if you had a PDB with type information for those types.
 

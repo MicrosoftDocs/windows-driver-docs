@@ -27,8 +27,8 @@ When this message is received, the LE should indicate its current encapsulation 
 
 | TLV                                                                                                                   | Multiple TLV instances allowed | Optional | Description                                     |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------|
-| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-encapsulation-offload-v4-parameters) |                                |          | Specifies if IPv4 offloading should be started. |
-| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V6\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-set-encapsulation-offload-v6-parameters) |                                |          | Specifies if IPv6 offloading should be started. |
+| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V4\_PARAMETERS**](./wdi-tlv-set-encapsulation-offload-v4-parameters.md) |                                |          | Specifies if IPv4 offloading should be started. |
+| [**WDI\_TLV\_SET\_ENCAPSULATION\_OFFLOAD\_V6\_PARAMETERS**](./wdi-tlv-set-encapsulation-offload-v6-parameters.md) |                                |          | Specifies if IPv6 offloading should be started. |
 
  
 
@@ -62,9 +62,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -20,7 +20,7 @@ The C# version of the [Print job management and printer maintenance](https://go.
 ## <span id="Managing_print_jobs"></span><span id="managing_print_jobs"></span><span id="MANAGING_PRINT_JOBS"></span>Managing print jobs
 
 
-Windows 8.1 introduces new printer extension interfaces in the v4 printer driver that you can use for managing print jobs: [**IPrinterQueue2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2), [**IPrinterQueueView**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview), [**IPrinterQueueViewEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent), [**IPrintJob**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob), and [**IPrintJobCollection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection). These interfaces make it possible to monitor and cancel print jobs. For more info, see [Print job management (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/job-management).
+Windows 8.1 introduces new printer extension interfaces in the v4 printer driver that you can use for managing print jobs: [**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2), [**IPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview), [**IPrinterQueueViewEvent**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent), [**IPrintJob**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob), and [**IPrintJobCollection**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection). These interfaces make it possible to monitor and cancel print jobs. For more info, see [Print job management (v4 Printer Driver)](../print/job-management.md).
 
 **Tip**  C# and JavaScript apps can't work with COM APIs directly. If you're writing a C# or JavaScript UWP device app, use the printer extension library to access these interfaces (as shown in this topic).
 
@@ -315,7 +315,7 @@ The following steps build your app and install the device metadata.
 ## <span id="related_topics"></span>Related topics
 
 
-[Job Management (v4 Printer Driver)](https://docs.microsoft.com/windows-hardware/drivers/print/job-management)
+[Job Management (v4 Printer Driver)](../print/job-management.md)
 
 [Developing v4 print drivers](https://go.microsoft.com/fwlink/p/?LinkId=314231)
 
@@ -328,11 +328,4 @@ The following steps build your app and install the device metadata.
 [Create device metadata for a UWP device app (step-by-step guide)](step-2--create-device-metadata.md)
 
  
-
- 
-
-
-
-
-
 

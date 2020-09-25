@@ -25,7 +25,7 @@ OID\_WDI\_SET\_PRIVACY\_EXEMPTION\_LIST is used by the host to provide the list 
 
 | TLV                                                                                 | Multiple TLV instances allowed | Optional | Description                        |
 |-------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------|
-| [**WDI\_TLV\_PRIVACY\_EXEMPTION\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-privacy-exemption-entry) | X                              | X        | List of privacy exemption entries. |
+| [**WDI\_TLV\_PRIVACY\_EXEMPTION\_ENTRY**](./wdi-tlv-privacy-exemption-entry.md) | X                              | X        | List of privacy exemption entries. |
 
  
 
@@ -59,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

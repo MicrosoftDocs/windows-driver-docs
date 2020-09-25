@@ -74,14 +74,7 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetRNIDMgmtInfo\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getrnidmgmtinfo_out)
+[**SM\_GetRNIDMgmtInfo\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getrnidmgmtinfo_out)
 
  
-
- 
-
-
-
-
-
 

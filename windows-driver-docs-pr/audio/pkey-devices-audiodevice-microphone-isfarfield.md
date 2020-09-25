@@ -15,7 +15,7 @@ A value of 1 indicates that the microphone will capture far field audio, which w
 
 A value of 0 or no property key indicates that the microphone does not support far field or support is unknown, so the endpoint will not be prioritized for use by a voice assistant.
 
-The property should be set via INF, and preferably an extension INF provided by the OEM as opposed to the base INF for the audio device. For more information about extension INF files, see [Creating a componentized audio driver installation](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-universal-drivers#-creating-a-componentized-audio-driver-installation) and [Using an Extension INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-an-extension-inf-file).
+The property should be set via INF, and preferably an extension INF provided by the OEM as opposed to the base INF for the audio device. For more information about extension INF files, see [Creating a componentized audio driver installation](./audio-universal-drivers.md#creating-a-componentized-audio-driver-installation) and [Using an Extension INF File](../install/using-an-extension-inf-file.md).
 
 ## INF File Sample
 

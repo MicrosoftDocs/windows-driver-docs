@@ -15,7 +15,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_PACKET\_SERVICE notification to inf
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state) structure.
+This notification uses the [**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state) structure.
 
 Remarks
 -------
@@ -71,14 +71,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state)
+[**NDIS\_WWAN\_PACKET\_SERVICE\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_packet_service_state)
 
 [OID\_WWAN\_PACKET\_SERVICE](oid-wwan-packet-service.md)
 
  
-
- 
-
-
-
 

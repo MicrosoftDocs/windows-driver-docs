@@ -48,13 +48,7 @@ class MSiSCSI_SecurityCapabilities {
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_SecurityCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_securitycapabilities) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**MSiSCSI\_SecurityCapabilities**](/windows-hardware/drivers/ddi/iscsicfg/ns-iscsicfg-_msiscsi_securitycapabilities) data structure.
 
  
-
- 
-
-
-
-
 

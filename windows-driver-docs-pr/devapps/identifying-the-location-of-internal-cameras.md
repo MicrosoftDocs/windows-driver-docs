@@ -111,7 +111,7 @@ The subkey entry to create under the InternalDeviceModification registry key is 
 
 The InternalDeviceModification registry key indicates that at least one camera uses the ModelID.
 
-|Registry key name|`InternalDeviceModification`|
+|Registry key name|InternalDeviceModification|
 |----|----|
 |Required/optional| Required|
 |Path|`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control`|

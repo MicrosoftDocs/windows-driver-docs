@@ -51,7 +51,7 @@ This IRP is handled first by the driver at the top of the device stack and then 
 
 In response to this IRP, drivers indicate whether the device can be removed without disrupting the computer.
 
-For more information about handling this IRP, see [Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-query-remove-device-request). For general information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+For more information about handling this IRP, see [Handling an IRP\_MN\_QUERY\_REMOVE\_DEVICE Request](./handling-an-irp-mn-query-remove-device-request.md). For general information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device-in-a-function-driver).
 
 **Sending This IRP**
 
@@ -83,9 +83,4 @@ Requirements
 [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)
 
  
-
- 
-
-
-
 

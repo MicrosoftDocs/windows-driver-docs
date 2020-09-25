@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 # Native 802.11 IHV Extensions Topics 
 
-This section describes how an independent hardware vendor (IHV) can add functionality to the Native 802.11 framework. For more information about the Native 802.11 framework, see [Native 802.11 Software Architecture](native-802-11-software-architecture.md).
+This section describes how an independent hardware vendor (IHV) can add functionality to the Native 802.11 framework. For more information about the Native 802.11 framework, see [Native 802.11 Software Architecture](/previous-versions/windows/hardware/wireless/native-802-11-software-architecture).
 
 This section includes the following topics:
 
@@ -31,8 +31,3 @@ This section includes the following topics:
  
 
  
-
-
-
-
-

@@ -138,14 +138,7 @@ Topology
 
 [**!usb3kd.device\_info**](-usb3kd-device-info.md)
 
-[Universal Serial Bus (USB) Drivers](https://docs.microsoft.com/windows-hardware/drivers/usbcon/)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

@@ -12,4 +12,4 @@ The driver samples in this directory provide a starting point for writing a cust
 
 | Sample | Description |
 | --- | --- |
-| [Standard SD Host Controller Miniport](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/standard-sd-host-controller-miniport) | Provides a functional miniport implementation for a standard SD host controller. |
+| [Standard SD Host Controller Miniport](/samples/microsoft/windows-driver-samples/standard-sd-host-controller-miniport) | Provides a functional miniport implementation for a standard SD host controller. |

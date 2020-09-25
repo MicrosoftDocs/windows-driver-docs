@@ -61,11 +61,11 @@ The DEVPKEY_Device_DriverPropPageProvider device property represents the name of
 Remarks
 -------
 
-You can set the value of DEVPKEY_Device_DriverPropPageProvider by using an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) that is included the [**INF *DDInstall* section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file that installs a device.
+You can set the value of DEVPKEY_Device_DriverPropPageProvider by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included the [**INF *DDInstall* section**](./inf-ddinstall-section.md) of the INF file that installs a device.
 
-You can retrieve the value of DEVPKEY_Device_DriverPropPageProvider by calling [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can retrieve the value of DEVPKEY_Device_DriverPropPageProvider by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverPropPageProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **EnumPropPages32** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-driver-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_DriverPropPageProvider property key. On these earlier versions of Windows, you can access the value of this property by accessing the corresponding **EnumPropPages32** registry value under the software key for the device instance. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Driver Properties](./accessing-device-driver-properties.md).
 
 Requirements
 ------------
@@ -77,18 +77,11 @@ Requirements
 ## See also
 
 
-[**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)
+[**INF AddReg Directive**](./inf-addreg-directive.md)
 
-[**INF *DDInstall* Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)
+[**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

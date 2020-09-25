@@ -198,7 +198,4 @@ If your sensor hardware, or firmware, supports the notion of a report interval y
 If your sensor does not provide native report-interval support, consider disabling interrupts for a subset of the current report interval. Then, once this time elapses, retrieve the current device data.
 
 ## Related topics
-[The Sensors Geolocation Driver Sample](https://docs.microsoft.com/windows-hardware/drivers/gnss/sensors-geolocation-driver-sample)
-
-
-
+[The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

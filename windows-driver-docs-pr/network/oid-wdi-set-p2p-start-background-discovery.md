@@ -24,7 +24,7 @@ The adapter is required to scan the specified channels at regular intervals and 
 
 If the channel list is provided, the adapter should only scan on the specified channels. Otherwise, it should scan all channels. If the firmware happened to discover a device outside of the specified channels, it should still send the information to the operating system.
 
-When Listen Duration and channels ([**WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-discovery-channel-settings)) are specified, they refer to the listen times for the remote devices. Based on all the values of Listen Duration and channels, the adapter needs to come up with a schedule to scan the requested channels in the most efficient manner. The operating system may also specify multiple instances of Listen Duration and channels. In this case, the adapter should first come up with the scan schedule for those entries which have non-zero values of Listen Duration and Channel list. Then, the adapter should use default values in the following cases:
+When Listen Duration and channels ([**WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS**](./wdi-tlv-p2p-discovery-channel-settings.md)) are specified, they refer to the listen times for the remote devices. Based on all the values of Listen Duration and channels, the adapter needs to come up with a schedule to scan the requested channels in the most efficient manner. The operating system may also specify multiple instances of Listen Duration and channels. In this case, the adapter should first come up with the scan schedule for those entries which have non-zero values of Listen Duration and Channel list. Then, the adapter should use default values in the following cases:
 
 1.  If the Listen duration is 0, the adapter should use the default scan times for the specified channels.
 2.  If the channel list is empty, the adapter should scan all of the channels in that band using the listen and cycle times specified for that band. The scan times would not apply to any channels that have separate listen durations specified by the operating system.
@@ -38,11 +38,11 @@ When the NIC is in D2, it suspends background discovery until it goes back to D0
 
 | TLV                                                                                                | Multiple TLV instances allowed | Optional | Description                                                                                                                         |
 |----------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_BACKGROUND\_DISCOVER\_MODE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-background-discover-mode)     |                                |          | Wi-Fi Direct Background Discover Mode parameters.                                                                                   |
-| [**WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-discovery-channel-settings) | X                              | X        | List of recommended channels to scan.                                                                                               |
-| [**WDI\_TLV\_P2P\_DEVICE\_FILTER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-device-filter-list)                 |                                | X        | List of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discover.                                    |
-| [**WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-service-name-hash)                   | X                              | X        | List of Service Hash names to be queried. This is required if WDI\_P2P\_SERVICE\_DISCOVERY\_TYPE\_SERVICE\_NAME\_ONLY is specified. |
-| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-vendor-specific-ie)                          |                                | X        | One or more IEs that must be included in the probe requests sent by the port.                                                       |
+| [**WDI\_TLV\_P2P\_BACKGROUND\_DISCOVER\_MODE**](./wdi-tlv-p2p-background-discover-mode.md)     |                                |          | Wi-Fi Direct Background Discover Mode parameters.                                                                                   |
+| [**WDI\_TLV\_P2P\_DISCOVERY\_CHANNEL\_SETTINGS**](./wdi-tlv-p2p-discovery-channel-settings.md) | X                              | X        | List of recommended channels to scan.                                                                                               |
+| [**WDI\_TLV\_P2P\_DEVICE\_FILTER\_LIST**](./wdi-tlv-p2p-device-filter-list.md)                 |                                | X        | List of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discover.                                    |
+| [**WDI\_TLV\_P2P\_SERVICE\_NAME\_HASH**](./wdi-tlv-p2p-service-name-hash.md)                   | X                              | X        | List of Service Hash names to be queried. This is required if WDI\_P2P\_SERVICE\_DISCOVERY\_TYPE\_SERVICE\_NAME\_ONLY is specified. |
+| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](./wdi-tlv-vendor-specific-ie.md)                          |                                | X        | One or more IEs that must be included in the probe requests sent by the port.                                                       |
 
  
 
@@ -80,9 +80,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

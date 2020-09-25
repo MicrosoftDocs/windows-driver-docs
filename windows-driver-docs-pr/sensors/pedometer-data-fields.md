@@ -15,7 +15,7 @@ The following table shows the data fields. For more information about the data t
 
 |Property key|Type|Required/Optional|Description|
 |--|--|--|--|
-|PKEY_SensorData_PedometerStepType|VT_UI4|Required|The step type, expressed as a [PEDOMETER_STEP_TYPE](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-pedometer_step_type) value.|
+|PKEY_SensorData_PedometerStepType|VT_UI4|Required|The step type, expressed as a [PEDOMETER_STEP_TYPE](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-pedometer_step_type) value.|
 |PKEY_SensorData_PedometerStepCount|VT_UI4|Required|The number of steps detected.|
 |PKEY_SensorData_PedometerStepDuration_Ms|VT_I8|Required|The duration over which the pedometer counted steps. This value is expressed in milliseconds.|
 |PKEY_SensorData_PedometerReset|VT_BOOL|Required|Indicates that the pedometer has been reset.|
@@ -27,14 +27,7 @@ The following table shows the data fields. For more information about the data t
 
 [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
 
-[**PEDOMETER\_STEP\_TYPE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-pedometer_step_type)
+[**PEDOMETER\_STEP\_TYPE**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-pedometer_step_type)
 
  
-
- 
-
-
-
-
-
 

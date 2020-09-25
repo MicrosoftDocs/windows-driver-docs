@@ -31,12 +31,7 @@ The Windows kernel calls into the PSHED to configure an error source in response
 
 For more information about how to implement a PSHED plug-in that participates in error source control, see [Participating in Error Source Control](participating-in-error-source-control.md).
 
-User-mode management applications control the error sources by calling the [WHEA Management API](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
+User-mode management applications control the error sources by calling the [WHEA Management API](/windows-hardware/drivers/ddi/_whea/). For more information about how to implement WHEA management applications, see [WHEA Management Applications](whea-management-applications.md).
 
  
-
- 
-
-
-
 

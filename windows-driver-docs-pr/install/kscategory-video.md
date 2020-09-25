@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_VIDEO
 
 
-The KSCATEGORY_VIDEO [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for a video device.
+The KSCATEGORY_VIDEO [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for a video device.
 
 <table>
 <colgroup>
@@ -52,9 +52,9 @@ Drivers for KS video devices register instances of KSCATEGORY_VIDEO to indicate 
 
 For an example of how to register this functional category in an INF file, see the *Bdan.inf* INF file that is included with the software tuner sample in the *src/swtuner/algtuner* directory of the WDK.
 
-For more information about this functional category, see [Providing a UVC INF File](https://docs.microsoft.com/windows-hardware/drivers/stream/providing-a-uvc-inf-file).
+For more information about this functional category, see [Providing a UVC INF File](../stream/providing-a-uvc-inf-file.md).
 
-For general information about video devices, see [Video Capture Devices](https://docs.microsoft.com/windows-hardware/drivers/stream/video-capture-devices).
+For general information about video devices, see [Video Capture Devices](../stream/video-capture-devices.md).
 
 For information about other device interface classes for video devices, see [**KSCATEGORY_TVAUDIO**](kscategory-tvaudio.md) and [**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md).
 
@@ -82,11 +82,4 @@ Requirements
 [**KSCATEGORY_TVTUNER**](kscategory-tvtuner.md)
 
  
-
- 
-
-
-
-
-
 

@@ -19,7 +19,7 @@ This section includes the following topics:
 
 [Querying Packet Coalescing Capabilities](querying-packet-coalescing-capabilities.md)
 
-[Managing Packet Coalescing Receive Filters](managing-packet-coalescing-receive-filters.md)
+[Managing Packet Coalescing Receive Filters](guidelines-for-managing-packet-coalescing-receive-filters.md)
 
 [Standardized INF Keywords for Packet Coalescing](standardized-inf-keywords-for-packet-coalescing.md)
 

@@ -25,9 +25,9 @@ Message-signaled interrupts (MSIs) provide an alternative to traditional line-ba
 
 Miniport drivers that support MSI-X can specify an *interrupt affinity*, which is a subset of central processing units (CPUs) that the drivers' message interrupt service routines run on. You can specify the interrupt affinity for each MSI-X message--for example, you can specify interrupt affinities on computers with Non-Uniform Memory Access (NUMA) architecture in terms of the "nearness" of their device to certain CPUs.
 
-MSI-X support can provide significant performance benefits, especially for network interface cards (NICs) that support receive side scaling (RSS). For more information about receive side scaling, see [Receive Side Scaling](ndis-receive-side-scaling2.md).
+MSI-X support can provide significant performance benefits, especially for network interface cards (NICs) that support receive side scaling (RSS). For more information about receive side scaling, see [Receive Side Scaling](./receive-side-scaling-version-2-rssv2-.md).
 
-For more information about line-based interrupts, see [Managing Interrupts](managing-interrupts.md).
+For more information about line-based interrupts, see [Managing Interrupts](registering-and-deregistering-interrupts.md).
 
 This section includes:
 
@@ -40,10 +40,4 @@ This section includes:
 [Changing the CPU Affinity of MSI-X Table Entries](changing-the-cpu-affinity-of-msi-x-table-entries.md)
 
  
-
- 
-
-
-
-
 

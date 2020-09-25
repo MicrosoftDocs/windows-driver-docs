@@ -41,8 +41,5 @@ Consider the following configurations for xHCI controllers under test:
     ![example xhci controller topology](images/fig12-xhci-controller-topology.png)
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[USB](../index.yml)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Code integrity checking
 
-[Hypervisor-Protected Code Integrity](https://docs.microsoft.com/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. The code integrity checks ensure compatibility of these code integrity rules, and detects the following violations:
+[Hypervisor-Protected Code Integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) can use hardware technology and virtualization to isolate the Code Integrity (CI) decision-making function from the rest of the Windows operating system. When using virtualization-based security to isolate Code Integrity, the only way kernel memory can become executable is through a Code Integrity verification. This means that kernel memory pages can never be Writable and Executable (W+X) and executable code cannot be directly modified. The code integrity checks ensure compatibility of these code integrity rules, and detects the following violations:
 
 <table>
   <tr>
@@ -68,7 +68,7 @@ ms.localizationpriority: medium
 
 ### Activating this option:
 
-You can activate code integrity checking for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting driver verifier options](https://docs.microsoft.com/windows-hardware/drivers/devtest/selecting-driver-verifier-options). You must restart the computer to activate or deactivate the code integrity checking option.
+You can activate code integrity checking for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting driver verifier options](./selecting-driver-verifier-options.md). You must restart the computer to activate or deactivate the code integrity checking option.
 
 * **At the command line**
 
@@ -87,4 +87,4 @@ You can activate code integrity checking for one or more drivers by using Driver
 
 ## Related topics
 
-[Evaluate HVCI driver compatibility](https://docs.microsoft.com/windows-hardware/drivers/driversecurity/use-device-guard-readiness-tool)
+[Evaluate HVCI driver compatibility](../driversecurity/use-device-guard-readiness-tool.md)

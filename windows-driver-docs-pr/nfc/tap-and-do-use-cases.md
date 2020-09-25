@@ -106,17 +106,6 @@ Use category: personal or interpersonal.
 2. The second user does not have the app installed. They are invited to acquire the app the friend is inviting them to use. If they decline the invitation, nothing happens.
 3. If they accept the invitation, they can acquire the app. The app will not start automatically. To do that, they will either need to run it directly and tap again with their friend (the *Tap and Use* use case), or simply tap again with their friend to launch the app (the *Tap and Launch* use case).
 
-## Tap and Acquire
-
-*Tap and Acquire* is an interaction for app acquisition. Using this experience, a user running an app on their computer will be able to invite a friend to obtain the same app if they do not have it installed.
-
-Use category: personal or interpersonal.
-
-**Use case example**
-
-1. A user wants to play a game with a friend and starts the app. The app may prompt to tap their computer to another computer.
-2. The second user does not have the app installed. They are invited to acquire the app. If they decline the invitation, nothing happens.
-3. If they accept the invitation, they can acquire the app. The app will not start automatically. To do that, they will either need to run it directly and tap again with their friend (the *Tap and Use* use case), or simply tap again with their friend to launch the app (the *Tap and Launch* use case).
 
 ## Tap and Send
 

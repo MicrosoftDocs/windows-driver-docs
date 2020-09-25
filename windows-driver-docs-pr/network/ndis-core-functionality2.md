@@ -18,9 +18,9 @@ This section includes:
 
 [NDIS Miniport Drivers](ndis-miniport-drivers.md)
 
-[NDIS Protocol Drivers](ndis-protocol-drivers.md)
+[NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md)
 
-[NDIS Filter Drivers](ndis-filter-drivers2.md)
+[NDIS Filter Drivers](./roadmap-for-developing-ndis-filter-drivers.md)
 
 [NDIS Intermediate Drivers](ndis-intermediate-drivers2.md)
 
@@ -43,4 +43,3 @@ This section includes:
 [NDIS core functionality OIDs](ndis-core-functionality-oids.md)
 
 [NDIS core functionality status indications](ndis-core-functionality-status-indications.md)
-

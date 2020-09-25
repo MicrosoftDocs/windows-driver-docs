@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The UMDF platform will fail to load the main UMDF driver binaries from any location other than the %SystemRoot%\\System32\\Drivers\\Umdf directory. Therefore, a UMDF INF file must restrict the location where it installs UMDF drivers to that directory. Installing in this directory also ensures that unprivileged users cannot tamper with the UMDF drivers.
 
-To install UMDF driver binaries to %SystemRoot%\\System32\\Drivers\\Umdf, the UMDF driver INF file must include an [**INF DestinationDirs Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-destinationdirs-section) that is similar to the following code example.
+To install UMDF driver binaries to %SystemRoot%\\System32\\Drivers\\Umdf, the UMDF driver INF file must include an [**INF DestinationDirs Section**](../install/inf-destinationdirs-section.md) that is similar to the following code example.
 
 ```cpp
 [DestinationDirs]
@@ -32,7 +32,7 @@ UMDriverCopy=12,UMDF ; copies to drivers\umdf
 WUDFOsrUsbDriver.dll
 ```
 
-The [**CopyFiles directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) must also reference the **UMDriverCopy** section to indicate the list of UMDF driver binaries for the operating system to copy from the source media to the destination as shown in the following example.
+The [**CopyFiles directive**](../install/inf-copyfiles-directive.md) must also reference the **UMDriverCopy** section to indicate the list of UMDF driver binaries for the operating system to copy from the source media to the destination as shown in the following example.
 
 ```cpp
 [OsrUsb_Install.NT]
@@ -40,10 +40,4 @@ CopyFiles=UMDriverCopy
 ```
 
  
-
- 
-
-
-
-
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # ExperienceID
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ExperienceID element specifies a GUID representing the device experience. This GUID is used to group one or more metadata packages for the same device identifiers independent of the packages’ locale.
 

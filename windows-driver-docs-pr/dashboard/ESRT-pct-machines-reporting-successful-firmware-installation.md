@@ -47,7 +47,7 @@ If the machine is reports a transient error (transient errors from UEFI.SYS are 
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|200|
 |**Passing criteria**|>= 95%|
-|**Measure ID**|20116729|
+|**Measure ID**|20116729 or 23260700|
 
 ## Calculation
 

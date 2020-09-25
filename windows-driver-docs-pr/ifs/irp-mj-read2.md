@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Checking the Oplock State of an IRP_MJ_READ operation
 
-The following [oplock break](https://docs.microsoft.com/windows-hardware/drivers/ifs/breaking-oplocks) conditions apply when a *stream* is being read. If a TxF transacted reader performs the read, this check is not made since a transacted reader excludes a writer (that is, a writer holding an oplock cannot be present at all).
+The following [oplock break](./breaking-oplocks.md) conditions apply when a *stream* is being read. If a TxF transacted reader performs the read, this check is not made since a transacted reader excludes a writer (that is, a writer holding an oplock cannot be present at all).
 
 ### Conditions for Level 2, Filter, Read, and Read-Handle request types
 

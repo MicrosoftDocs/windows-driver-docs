@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 # Mediums and categories
 
-Traditionally, Microsoft DirectShow streams have been identified solely by their [Media Type](https://docs.microsoft.com/previous-versions//ms787271(v=vs.85)). While this is sufficient for rendering simple filter graphs, more complex graphs and graphs that reflect a hardware topology require additional information for correct graph building. To enable filter graph building to correctly identify and connect pins, video capture minidrivers specify stream categories that their pins belong to, as well as mediums.
+Traditionally, Microsoft DirectShow streams have been identified solely by their [Media Type](/previous-versions//ms787271(v=vs.85)). While this is sufficient for rendering simple filter graphs, more complex graphs and graphs that reflect a hardware topology require additional information for correct graph building. To enable filter graph building to correctly identify and connect pins, video capture minidrivers specify stream categories that their pins belong to, as well as mediums.
 
 Stream categories are a method to identify the primary purpose of a pin. For example, a capture filter could have two output pins with identical MediaTypes supported on each pin. In the case where the filter gives priority to one of the pins, the higher-priority pin could be assigned to the capture stream category (PINNAME\_VIDEO\_CAPTURE), and the lower-priority pin to the preview stream category (PINNAME\_VIDEO\_PREVIEW).
 

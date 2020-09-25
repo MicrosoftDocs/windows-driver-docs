@@ -54,4 +54,4 @@ To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-sp
 
 ## Related topics
 
-[Testing with Multi Interface Test Tool (MITT)](https://docs.microsoft.com/windows-hardware/drivers/spb/testing-with-multi-interface-test-tool--mitt-)  
+[Testing with Multi Interface Test Tool (MITT)](./testing-with-multi-interface-test-tool--mitt-.md)

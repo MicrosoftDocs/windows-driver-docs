@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 # Using KTM
 
 
-You can use the Kernel Transaction Manager (KTM) and the [Common Log File System](using-common-log-file-system.md) (CLFS) to create a [*transaction processing system*](transaction-processing-terms.md#ktm-term-transaction-processing-system) (TPS).
+You can use the Kernel Transaction Manager (KTM) and the [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS) to create a [*transaction processing system*](transaction-processing-terms.md#ktm-term-transaction-processing-system) (TPS).
 
 This section includes the following topics:
 

@@ -1,6 +1,5 @@
 ---
 title: Testing System Brightness Response
-author: windows-driver-content
 description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light testing solution.
 ms.assetid: f0ba2628-8752-467d-abf6-6447668ac244
 ms.date: 12/13/2018
@@ -60,4 +59,4 @@ The following is a list of tips on MALT sensor placement.
 * No light should be leaking out from the top of the box. You should not be able to see inside the box at all.
 
 
-Refer to [this white paper](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.
+Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.

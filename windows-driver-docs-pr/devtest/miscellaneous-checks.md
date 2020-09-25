@@ -16,11 +16,11 @@ The Miscellaneous Checks option of Driver Verifier monitors the driver for commo
 
 Specifically, the Miscellaneous Checks option looks for the following improper driver behavior:
 
-- **Active work items in freed memory.** The driver calls [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that contains work items that were queued by using [**IoQueueWorkItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioqueueworkitem).
+- **Active work items in freed memory.** The driver calls [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that contains work items that were queued by using [**IoQueueWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioqueueworkitem).
 
-- **Active resources in freed memory.** The driver calls [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that contains active [ERESOURCE structures](https://docs.microsoft.com/windows-hardware/drivers/kernel/eresource-structures). The driver should call [**ExDeleteResource**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mmcreatemdl) to delete ERESOURCE objects before calling **ExFreePool**.
+- **Active resources in freed memory.** The driver calls [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that contains active [ERESOURCE structures](../kernel/eresource-structures.md). The driver should call [**ExDeleteResource**](../kernel/mmcreatemdl.md) to delete ERESOURCE objects before calling **ExFreePool**.
 
-- **Active lookaside lists in freed memory.** The driver calls [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that still contains active lookaside lists ([**NPAGED\_LOOKASIDE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) or [**PAGED\_LOOKASIDE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structures. The driver should call [**ExDeleteNPagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist) or [**ExDeletePagedLookasideList**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist) to delete the lookaside lists before calling **ExFreePool**.
+- **Active lookaside lists in freed memory.** The driver calls [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool) to free a pool block that still contains active lookaside lists ([**NPAGED\_LOOKASIDE\_LIST**](../kernel/eprocess.md) or [**PAGED\_LOOKASIDE\_LIST**](../kernel/eprocess.md) structures. The driver should call [**ExDeleteNPagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletenpagedlookasidelist) or [**ExDeletePagedLookasideList**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exdeletepagedlookasidelist) to delete the lookaside lists before calling **ExFreePool**.
 
 - **Windows Management Instrumentation (WMI) and Event Tracing for Windows (ETW) registration issues.** Such issues detected by Driver Verifier include:
 
@@ -32,9 +32,9 @@ Specifically, the Miscellaneous Checks option looks for the following improper d
 
   - A driver that attempts to unregister a provider that is already unregistered.
 
-- **Kernel handle errors.** (Windows Vista and later versions) Enabling the Miscellaneous Checks option will also enable handle tracing for the system process to aid in investigating kernel handle leaks and [**Bug Check 0x93: INVALID\_KERNEL\_HANDLE**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x93--invalid-kernel-handle). With handle tracing enabled, the kernel will collect stack traces for recent handle open and close operations. The stack traces can be displayed in the kernel debugger using the **!htrace** debugger extension. For more information about **!htrace**, see the Debugging Tools for Windows documentation.
+- **Kernel handle errors.** (Windows Vista and later versions) Enabling the Miscellaneous Checks option will also enable handle tracing for the system process to aid in investigating kernel handle leaks and [**Bug Check 0x93: INVALID\_KERNEL\_HANDLE**](../debugger/bug-check-0x93--invalid-kernel-handle.md). With handle tracing enabled, the kernel will collect stack traces for recent handle open and close operations. The stack traces can be displayed in the kernel debugger using the **!htrace** debugger extension. For more information about **!htrace**, see the Debugging Tools for Windows documentation.
 
-- **User-mode handle with kernel mode access** Starting with Windows 7, when you select the Miscellaneous Checks option, Driver Verifier also checks on calls to [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle). You cannot pass a user-mode handle with kernel mode access. If such an operation occurs, Driver Verifier issues Bug Check 0xC4, with a parameter 1 value of 0xF6.
+- **User-mode handle with kernel mode access** Starting with Windows 7, when you select the Miscellaneous Checks option, Driver Verifier also checks on calls to [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle). You cannot pass a user-mode handle with kernel mode access. If such an operation occurs, Driver Verifier issues Bug Check 0xC4, with a parameter 1 value of 0xF6.
 
 - **UserMode Wait for Synchronization Objects Allocated on the Kernel Stack**
 
@@ -42,9 +42,9 @@ Specifically, the Miscellaneous Checks option looks for the following improper d
 
     Allocating synchronization objects, such as KEVENT structures, as local variables on the kernel stack is a common practice. While a process is loaded in memory, the kernel stacks of its threads are never trimmed from the working set or paged out to the disk. Allocating synchronization objects in such nonpageable memory is correct.
 
-    However, when drivers call APIs such as [**KeWaitForSingleObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) or [**KeWaitForMultipleObjects**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects) to wait for an object that is allocated on the stack, they must specify the **KernelMode** value for the API’s *WaitMode* parameter. When all threads of a process are waiting in **UserMode** mode, that process becomes eligible to be swapped out to the disk. Therefore, if a driver specified **UserMode** as the *WaitMode* parameter, the operating system can swap out the current process as long as every other thread in the same process is waiting as **UserMode**, too. Swapping an entire process out to the disk includes paging out its kernel stacks. Waiting on a synchronization object that the operating system has swapped out is incorrect. At some point a thread must come along and signal the synchronization object. Signaling a synchronization object involves the Windows kernel manipulating the object at IRQL = DISPATCH\_LEVEL or above. Touching paged out or swapped out memory at DISPATCH\_LEVEL or above results in a system crash.
+    However, when drivers call APIs such as [**KeWaitForSingleObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitforsingleobject) or [**KeWaitForMultipleObjects**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kewaitformultipleobjects) to wait for an object that is allocated on the stack, they must specify the **KernelMode** value for the API’s *WaitMode* parameter. When all threads of a process are waiting in **UserMode** mode, that process becomes eligible to be swapped out to the disk. Therefore, if a driver specified **UserMode** as the *WaitMode* parameter, the operating system can swap out the current process as long as every other thread in the same process is waiting as **UserMode**, too. Swapping an entire process out to the disk includes paging out its kernel stacks. Waiting on a synchronization object that the operating system has swapped out is incorrect. At some point a thread must come along and signal the synchronization object. Signaling a synchronization object involves the Windows kernel manipulating the object at IRQL = DISPATCH\_LEVEL or above. Touching paged out or swapped out memory at DISPATCH\_LEVEL or above results in a system crash.
 
-    Starting in Windows 7, when you select the Miscellaneous Checks option, Driver Verifier checks that the synchronization objects that the verified driver uses for waiting in **UserMode** are not allocated on the current thread’s kernel stack. When Driver Verifier detects such an incorrect wait, it issues a [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation), with a parameter 1 value of 0x123.
+    Starting in Windows 7, when you select the Miscellaneous Checks option, Driver Verifier checks that the synchronization objects that the verified driver uses for waiting in **UserMode** are not allocated on the current thread’s kernel stack. When Driver Verifier detects such an incorrect wait, it issues a [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md), with a parameter 1 value of 0x123.
 
 - **Incorrect Kernel Handle References**
 
@@ -52,11 +52,11 @@ Specifically, the Miscellaneous Checks option looks for the following improper d
 
     A *kernel handle* as a handle that is valid for the System process’s handle table. A *user handle* as a handle that is valid for any process except the System process.
 
-    In Windows 7, Driver Verifier detects tries to reference kernel handle values that are incorrect. These driver defects are reported as a [**Bug Check 0x93: INVALID\_KERNEL\_HANDLE**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x93--invalid-kernel-handle) if the Driver Verifier Miscellaneous Checks option is enabled. Usually this kind of incorrect handle reference means that the driver has closed that handle already but is trying to continue using it. This kind of defect can result in unpredictable problems for the system because the handle value that is being referenced might have been reused already by another unrelated driver.
+    In Windows 7, Driver Verifier detects tries to reference kernel handle values that are incorrect. These driver defects are reported as a [**Bug Check 0x93: INVALID\_KERNEL\_HANDLE**](../debugger/bug-check-0x93--invalid-kernel-handle.md) if the Driver Verifier Miscellaneous Checks option is enabled. Usually this kind of incorrect handle reference means that the driver has closed that handle already but is trying to continue using it. This kind of defect can result in unpredictable problems for the system because the handle value that is being referenced might have been reused already by another unrelated driver.
 
-    If a kernel driver has recently closed a kernel handle and later references the closed handle, Driver Verifier forces the bug check as described previously. In this case the output of the [**!htrace**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-htrace) debugger extension provides the stack trace for the code path that closed this handle. Use the address of the System process as a parameter for **!htrace**. To find the address of the System process, use the **!process 4 0** command.
+    If a kernel driver has recently closed a kernel handle and later references the closed handle, Driver Verifier forces the bug check as described previously. In this case the output of the [**!htrace**](../debugger/-htrace.md) debugger extension provides the stack trace for the code path that closed this handle. Use the address of the System process as a parameter for **!htrace**. To find the address of the System process, use the **!process 4 0** command.
 
-    Starting in Windows 7, Driver Verifier adds a check to [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle). It is now prohibited to pass a user-space handle with KernelMode access. If such a combination is detected, Driver Verifier issues [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation), with a parameter 1 value of 0xF6.
+    Starting in Windows 7, Driver Verifier adds a check to [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle). It is now prohibited to pass a user-space handle with KernelMode access. If such a combination is detected, Driver Verifier issues [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md), with a parameter 1 value of 0xF6.
 
 ## Activating This Option
 
@@ -102,7 +102,7 @@ You can activate the Miscellaneous Checks option for one or more drivers by usin
 
 To view the results of the Miscellaneous Checks option, use the **!verifier** extension in the kernel debugger. (For information about **!verifier**, see the *Debugging Tools for Windows* documentation.)
 
-In the following example, the Miscellaneous Checks option detected an active ERESOURCE structure in memory that the driver was trying to free, resulting in [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation). The Bug Check 0xC4 display includes the address of the ERESOURCE and the affected memory.
+In the following example, the Miscellaneous Checks option detected an active ERESOURCE structure in memory that the driver was trying to free, resulting in [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md). The Bug Check 0xC4 display includes the address of the ERESOURCE and the affected memory.
 
 ```console
 1: kd> !verifier 1
@@ -147,7 +147,7 @@ Entry     State           NonPagedPool   PagedPool   Module
                4 -  Pool allocation size.
 ```
 
-To investigate the pool allocation, use the [**!pool**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-pool) debugger extension with the starting address of the pool allocation, 9655D468. (The *2* flag displays header information only for the pool that contains the specified address. Header information for other pools is suppressed.)
+To investigate the pool allocation, use the [**!pool**](../debugger/-pool.md) debugger extension with the starting address of the pool allocation, 9655D468. (The *2* flag displays header information only for the pool that contains the specified address. Header information for other pools is suppressed.)
 
 ```console
 1: kd> !pool 9655d468  2
@@ -155,7 +155,7 @@ Pool page 9655d468 region is Paged pool
 *9655d468 size:   b0 previous size:    8  (Allocated) *Bug_
 ```
 
-To find information about the ERESOURCE, use the [**!locks (!kdext\*.locks)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-locks---kdext--locks-) debugger extension with the address of the structure.
+To find information about the ERESOURCE, use the [**!locks (!kdext\*.locks)**](../debugger/-locks---kdext--locks-.md) debugger extension with the address of the structure.
 
 ```console
 1: kd> !locks 0x9655D4A8     <<<<<- ERESOURCE @0x9655D4A8 lives inside the pool block being freed

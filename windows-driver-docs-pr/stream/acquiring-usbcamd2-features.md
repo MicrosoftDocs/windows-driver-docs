@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 # Acquiring USBCAMD2 Features
 
 
-You must acquire a pointer to the [**USBCAMD\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbcamdi/ns-usbcamdi-usbcamd_interface) structure before you can use the new USBCAMD2 features. To acquire the pointer, build and send an [**IRP\_MN\_QUERY\_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request from the camera minidriver's [**SRB\_INITIALIZATION\_COMPLETE**](https://docs.microsoft.com/windows-hardware/drivers/stream/srb-initialization-complete) handler in the [*AdapterReceivePacket*](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-padapter_receive_packet_routine) callback function. The USBCAMD2 minidriver library processes this IRP and returns a direct-call interface of type USBCAMD\_INTERFACE to the camera minidriver. The interface is essentially a table of function pointers.
+You must acquire a pointer to the [**USBCAMD\_INTERFACE**](/windows-hardware/drivers/ddi/usbcamdi/ns-usbcamdi-usbcamd_interface) structure before you can use the new USBCAMD2 features. To acquire the pointer, build and send an [**IRP\_MN\_QUERY\_INTERFACE**](../kernel/irp-mn-query-interface.md) request from the camera minidriver's [**SRB\_INITIALIZATION\_COMPLETE**](./srb-initialization-complete.md) handler in the [*AdapterReceivePacket*](/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-padapter_receive_packet_routine) callback function. The USBCAMD2 minidriver library processes this IRP and returns a direct-call interface of type USBCAMD\_INTERFACE to the camera minidriver. The interface is essentially a table of function pointers.
 
 The following code demonstrates how to build and send the IRP\_MN\_QUERY\_INTERFACE request from the camera minidriver:
 
@@ -64,9 +64,4 @@ else
 ```
 
  
-
- 
-
-
-
 

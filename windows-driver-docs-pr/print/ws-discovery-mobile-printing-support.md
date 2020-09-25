@@ -75,4 +75,4 @@ The following table provides additional information about the MobilePrinter cate
 |--|--|
 | PNPX_DEVICECATEGORY_PRINTER_MOBILE<br><br>L"MobilePrinter" | MobilePrinter category<br><br>Keywords: Printer |
 
-For more information about how to add the device category to the WS-Discovery metadata exchange, see the [PnP-X specification](https://docs.microsoft.com/previous-versions/gg463082(v=msdn.10)).
+For more information about how to add the device category to the WS-Discovery metadata exchange, see the [PnP-X specification](/previous-versions/gg463082(v=msdn.10)).

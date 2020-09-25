@@ -44,15 +44,9 @@ To create a device metadata submission package, use the Submission tool in Micro
 
 10. When you're ready to submit your package, click **Launch Windows Dev Center - Hardware Dashboard**.
 
-For more information about how to submit your package, see [Submit a Device Metadata Package](hhttps://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-a-device-metadata-package--dashboard-help-).
+For more information about how to submit your package, see [Submit a Device Metadata Package](../dashboard/submit-a-device-metadata-package--dashboard-help-.md).
 
-For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/submit-a-bulk-metadata-package).
-
- 
+For more information about the bulkmetadata file, see [Submit a Bulk Metadata Package](../dashboard/submit-a-bulk-metadata-package.md).
 
  
-
-
-
-
 

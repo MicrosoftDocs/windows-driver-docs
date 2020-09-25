@@ -24,10 +24,10 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPO
 
 | Type | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- |
-| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-association-response-result-parameters) |   |   | The association response parameters. |
-| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-association-response-frame) |   |   | The received association response. This does not include the 802.11 MAC header. |
-| [**WDI\_TLV\_BEACON\_IES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-beacon-ies) |   |   | The beacon IEs from the association. |
-| [**WDI\_TLV\_PHY\_TYPE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-phy-type-list) |   |   | The list of PHY types. |
+| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS**](./wdi-tlv-association-response-result-parameters.md) |   |   | The association response parameters. |
+| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME**](./wdi-tlv-association-response-frame.md) |   |   | The received association response. This does not include the 802.11 MAC header. |
+| [**WDI\_TLV\_BEACON\_IES**](./wdi-tlv-beacon-ies.md) |   |   | The beacon IEs from the association. |
+| [**WDI\_TLV\_PHY\_TYPE\_LIST**](./wdi-tlv-phy-type-list.md) |   |   | The list of PHY types. |
  
 
 Requirements
@@ -55,9 +55,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

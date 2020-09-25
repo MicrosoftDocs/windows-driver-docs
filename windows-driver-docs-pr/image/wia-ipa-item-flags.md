@@ -32,7 +32,7 @@ Access Rights: Read-only
 Remarks
 -------
 
-The WIA item flags are the same as those in the *lObjectFlags* parameter of the [**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. The WIA service creates and maintains the WIA\_IPA\_ITEM\_FLAGS property.
+The WIA item flags are the same as those in the *lObjectFlags* parameter of the [**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem) service utility function. The WIA service creates and maintains the WIA\_IPA\_ITEM\_FLAGS property.
 
 An application reads WIA\_IPA\_ITEM\_FLAGS to determine a WIA item's descriptive flag values.
 
@@ -217,14 +217,7 @@ Requirements
 
 [**WIA\_IPA\_ITEM\_CATEGORY**](wia-ipa-item-category.md)
 
-[**wiasCreateDrvItem**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem)
+[**wiasCreateDrvItem**](/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatedrvitem)
 
  
-
- 
-
-
-
-
-
 

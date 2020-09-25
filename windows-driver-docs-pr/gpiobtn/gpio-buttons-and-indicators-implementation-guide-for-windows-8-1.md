@@ -68,18 +68,15 @@ As part of Windows 8.1 investments, the **msgpio** button driver brings importan
 For questions about GPIO buttons and indicator implementation, send an e-mail to the Microsoft support group at dockingsupport@microsoft.com.
 
 ## <span id="related_topics"></span>Related topics
-[Power Button Behaviors and Implementation](https://aka.ms/connect-redirect?DownloadID=47452)  
-[Connected Standby Wake Sources](https://aka.ms/connect-redirect?DownloadID=49891)  
-[ACPI Design Guide](https://aka.ms/connect-redirect?DownloadID=48755)  
+[Power Button Behaviors and Implementation](/collaborate/connect-redirect?DownloadID=47452)  
+[Connected Standby Wake Sources](/collaborate/connect-redirect?DownloadID=49891)  
+[ACPI Design Guide](/collaborate/connect-redirect?DownloadID=48755)  
 [GetSystemMetrics function](https://go.microsoft.com/fwlink/p/?linkid=324686)  
 [Keyboard Enhancements in Windows 8](https://go.microsoft.com/fwlink/p/?linkid=324536)  
-[Windows Hardware Compatibility Program](https://docs.microsoft.com/windows-hardware/design/compatibility/index)  
+[Windows Hardware Compatibility Program](/windows-hardware/design/compatibility/index)  
 [Certification requirements for Windows desktop apps](https://go.microsoft.com/fwlink/p/?linkid=306131)  
 [HID over I²C](https://go.microsoft.com/fwlink/p/?linkid=324690)  
-[GPIO tests in MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/gpio-tests-in-mitt)  
+[GPIO tests in MITT](../spb/gpio-tests-in-mitt.md)  
 [Windows System Image Manager Technical Reference](https://go.microsoft.com/fwlink/p/?linkid=324691)  
 [Unattended Windows Setup Reference](https://go.microsoft.com/fwlink/p/?linkid=276788)  
-[Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?linkid=310164)  
-
-
-
+[Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?linkid=310164)

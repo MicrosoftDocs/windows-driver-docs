@@ -35,8 +35,8 @@ The host may decide to abort this operation and continue/retry the public action
 
 | TLV                                                                                                             | Multiple TLV instances allowed | Optional | Description                                     |
 |-----------------------------------------------------------------------------------------------------------------|--------------------------------|----------|-------------------------------------------------|
-| [**WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-send-action-frame-request-parameters) |                                |          | Parameters for sending an Action Frame Request. |
-| [**WDI\_TLV\_ACTION\_FRAME\_BODY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-action-frame-body)                                         |                                |          | The Action Frame body.                          |
+| [**WDI\_TLV\_SEND\_ACTION\_FRAME\_REQUEST\_PARAMETERS**](./wdi-tlv-send-action-frame-request-parameters.md) |                                |          | Parameters for sending an Action Frame Request. |
+| [**WDI\_TLV\_ACTION\_FRAME\_BODY**](./wdi-tlv-action-frame-body.md)                                         |                                |          | The Action Frame body.                          |
 
  
 
@@ -70,9 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

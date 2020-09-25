@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-To support power management, drivers must also support [Plug and Play](implementing-plug-and-play.md) (PnP). Driver support for PnP is required because many power management operations are associated with installing and removing devices, and the PnP manager notifies drivers of these events by means of PnP IRPs. Additionally, drivers report device support for power management in response to PnP queries for device capabilities.
+To support power management, drivers must also support [Plug and Play](introduction-to-plug-and-play.md) (PnP). Driver support for PnP is required because many power management operations are associated with installing and removing devices, and the PnP manager notifies drivers of these events by means of PnP IRPs. Additionally, drivers report device support for power management in response to PnP queries for device capabilities.
 
 Power management works on two levels: one applies to individual devices and the other to the system as a whole.
 

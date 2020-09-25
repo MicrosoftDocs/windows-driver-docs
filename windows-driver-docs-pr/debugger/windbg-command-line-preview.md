@@ -110,7 +110,7 @@ Option | Description
 -xn *Exception* |   For the given exception, disable first- and second-chance-handling, and only display a message on the console.
 -xi *Exception* |   Completely ignore the given exception, disabling first- and second-chance handling, and not outputing anything to the console.
 
-For a list of exceptions that can be specified, see [Event Definitions and Defaults](https://docs.microsoft.com/windows-hardware/drivers/debugger/controlling-exceptions-and-events#event-definitions-and-defaults).
+For a list of exceptions that can be specified, see [Event Definitions and Defaults](./controlling-exceptions-and-events.md#event-definitions-and-defaults).
 
 **Post Mortem**
 

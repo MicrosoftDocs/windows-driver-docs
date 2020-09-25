@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_DeviceClass_Name
 
 
-The DEVPKEY_DeviceClass_Name device property represents the friendly name of a [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes).
+The DEVPKEY_DeviceClass_Name device property represents the friendly name of a [device setup class](./overview-of-device-setup-classes.md).
 
 <table>
 <colgroup>
@@ -56,11 +56,11 @@ The DEVPKEY_DeviceClass_Name device property represents the friendly name of a [
 Remarks
 -------
 
-The value of DEVPKEY_DeviceClass_Name is set by an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) that is included in the [**INF ClassInstall32 section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section) that installs the class. To set the friendly name for a class, use an **AddReg** directive to set the **(Default)** registry entry value for the class.
+The value of DEVPKEY_DeviceClass_Name is set by an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF ClassInstall32 section**](./inf-classinstall32-section.md) that installs the class. To set the friendly name for a class, use an **AddReg** directive to set the **(Default)** registry entry value for the class.
 
-You can call [**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Name.
+You can call [**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw) or [**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw) to retrieve the value of DEVPKEY_DeviceClass_Name.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_Name property key. For information about how to access the friendly name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-the-friendly-name-and-class-name-of-a-device-setup-class).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceClass_Name property key. For information about how to access the friendly name of a device setup class on Windows Server 2003, Windows XP, and Windows 2000, see [Accessing the Friendly Name and Class Name of a Device Setup Class](./accessing-the-friendly-name-and-class-name-of-a-device-setup-class.md).
 
 Requirements
 ------------
@@ -72,22 +72,15 @@ Requirements
 ## See also
 
 
-[**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)
+[**INF AddReg Directive**](./inf-addreg-directive.md)
 
-[**INF ClassInstall32 Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-classinstall32-section)
+[**INF ClassInstall32 Section**](./inf-classinstall32-section.md)
 
-[**SetupDiGetClassProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
+[**SetupDiGetClassProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyw)
 
-[**SetupDiGetClassPropertyEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
+[**SetupDiGetClassPropertyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclasspropertyexw)
 
-[**SetupDiGetClassDescriptionEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdescriptionexa)
-
- 
+[**SetupDiGetClassDescriptionEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdescriptionexa)
 
  
-
-
-
-
-
 

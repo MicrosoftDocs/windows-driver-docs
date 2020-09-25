@@ -85,18 +85,11 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_QUALITY**](ksproperty-bda-signal-quality.md)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_STRENGTH**](ksproperty-bda-signal-strength.md)
 
  
-
- 
-
-
-
-
-
 

@@ -27,7 +27,7 @@ This guide includes the following sections:
 
 [NDIS Core Functionality](ndis-core-functionality2.md)
 
-[Scalable Networking](scalable-networking2.md)
+[Scalable Networking](header-data-split.md)
 
 [Virtualized Networking](virtualized-networking.md)
 
@@ -47,7 +47,7 @@ This guide includes the following sections:
 
 [Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
 
-[Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
+[Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)
  
 
  

@@ -51,7 +51,7 @@ User-mode drivers and applications, and kernel-mode drivers, do the following to
 
 The following table is a simplification of the information listed above.
 
-|             | Drivers                      | Applications |
+|      Mode   | Drivers                      | Applications |
 |-------------|------------------------------|--------------|
 | User Mode   | HidD\_Xxx                    | HidP\_Xxx    |
 | Kernel Mode | HidD\_Xxx OR IOCTL\_HID\_xxx | N/A          |

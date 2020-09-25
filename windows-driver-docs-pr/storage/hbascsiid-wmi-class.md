@@ -27,15 +27,9 @@ class HBAScsiID {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**HBAScsiID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid)
+[**HBAScsiID**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_hbascsiid)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS
 
 
-WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS is a TLV that contains TCP offload capabilities of a miniport adapter for [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-tcp-offload-parameters).
+WDI\_TLV\_TCP\_SET\_OFFLOAD\_PARAMETERS is a TLV that contains TCP offload capabilities of a miniport adapter for [OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](./oid-wdi-set-tcp-offload-parameters.md).
 
 ## TLV Type
 
@@ -254,14 +254,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
+[**NDIS\_OFFLOAD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
 
-[OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-tcp-offload-parameters)
-
- 
+[OID\_WDI\_SET\_TCP\_OFFLOAD\_PARAMETERS](./oid-wdi-set-tcp-offload-parameters.md)
 
  
-
-
-
 
