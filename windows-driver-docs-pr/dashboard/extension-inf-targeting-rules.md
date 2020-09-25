@@ -11,11 +11,13 @@ As we move together towards properly componentized modern drivers, we’d like t
 
 As a reminder, keep in mind the founding principles behind driver componentization: 
 
-        Base drivers are meant to provide core device functionality and can be broadly targeted.
+::: alert
+Base drivers are meant to provide core device functionality and can be broadly targeted.
 
-        Extension drivers are generally meant to provide system specific customizations and must be specifically targeted.  As a best practice, the INF should only include targeting to a single OEM.   For our policy checking & validation, we are focusing on the HWIDs you choose to publish.  The targeting should only include HWIDs and CHIDs which are specifically being customized by the extension INF and limited to a single OEM. 
+Extension drivers are generally meant to provide system specific customizations and must be specifically targeted.  As a best practice, the INF should only include targeting to a single OEM.   For our policy checking & validation, we are focusing on the HWIDs you choose to publish.  The targeting should only include HWIDs and CHIDs which are specifically being customized by the extension INF and limited to a single OEM. 
 
-        Using CHID and publishing to every HWID listed will not constitute specific targeting if multiple OEMs HWIDs are referenced in the INF and will fail our policy checks. 
+Using CHID and publishing to every HWID listed will not constitute specific targeting if multiple OEMs HWIDs are referenced in the INF and will fail our policy checks. 
+:::
 
 Here is how we’ll evaluate these principles when processing your submissions in Driver Shiproom:
 **Is the Extension INF targeting a 2-ID with no CHID?**
