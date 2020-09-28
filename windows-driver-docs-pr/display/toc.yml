@@ -695,7 +695,7 @@
       - name: "Building IddCx v1.4 drivers"
         href: building-iddcx1.4-drivers.md
     - name: "EvtIddCxMonitorAssignSwapChain error handling"
-        href: idd-evtiddcxmonitorassignswapchain-error-handling.md
+      href: idd-evtiddcxmonitorassignswapchain-error-handling.md
     - name: "Debugging indirect display drivers"
       href: indirect-display-debugging.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
