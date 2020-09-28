@@ -107,7 +107,7 @@ VOID NTAPI
 }
 ```
 
-The value in *filter-&gt;action.type* determines which actions the callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function should return in the **actionType** member of the structure pointed to by the *classifyOut* parameter. For more information about these actions, see the [**FWPS\_ACTION0**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_action0_) structure.
+The value in *filter-&gt;action.type* determines which actions the callout's [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function should return in the **actionType** member of the structure pointed to by the *classifyOut* parameter. For more information about these actions, see the [**FWPS\_ACTION0**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_action0) structure.
 
 If a callout must perform additional processing of packet data outside its [classifyFn](/windows-hardware/drivers/ddi/_netvista/) callout function before it can determine whether the data should be permitted or blocked, it must pend the packet data until the processing of the data is completed. For information about how to pend packet data, see [Types of Callouts](types-of-callouts.md) and [**FwpsPendOperation0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpspendoperation0).
 

@@ -87,7 +87,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_CONNECTION_TYPE</strong>
 (PID = 11)</td>
 <td><p><strong>VT_UI4</strong></p>
-<p>Read only. <a href="/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0002" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0002)"><strong>SensorConnectionType</strong></a> value that contains the current connection type.</p></td>
+<p>Read only. <a href="/windows/win32/api/sensorsapi/ne-sensorsapi-_midl___midl_itf_sensorsapi_0000_0000_0002" data-raw-source="[&lt;strong&gt;SensorConnectionType&lt;/strong&gt;](/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0002)"><strong>SensorConnectionType</strong></a> value that contains the current connection type.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_CURRENT_REPORT_INTERVAL"></span><span id="sensor_property_current_report_interval"></span>
@@ -201,7 +201,7 @@ Values for properties designated as read/write can be specified by the client ap
 (PID = 3)</td>
 <td><p><strong>VT_UI4</strong></p>
 <p>Read only. Required.</p>
-<p><a href="/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0001" data-raw-source="[&lt;strong&gt;SensorState&lt;/strong&gt;](/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0001)"><strong>SensorState</strong></a> value that contains the current sensor state.</p>
+<p><a href="/windows/win32/api/sensorsapi/ne-sensorsapi-_midl___midl_itf_sensorsapi_0000_0000_0001" data-raw-source="[&lt;strong&gt;SensorState&lt;/strong&gt;](/windows/win32/api/sensorsapi/ne-sensorsapi-__midl___midl_itf_sensorsapi_0000_0000_0001)"><strong>SensorState</strong></a> value that contains the current sensor state.</p>
 <div class="alert">
 <strong>Note</strong>  To update this property, raise a state-changed event by calling <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange" data-raw-source="[&lt;strong&gt;ISensorClassExtension::PostStateChange&lt;/strong&gt;](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange)"><strong>ISensorClassExtension::PostStateChange</strong></a>.
 </div>

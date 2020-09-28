@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_the_devmodew_structure_gg"></span><span id="DDK_THE_DEVMODEW_STRUCTURE_GG"></span>
 
 
-The [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-_devicemodew) structure is the Unicode version of the DEVMODE structure, which is described in the Microsoft Windows SDK documentation. (The 'W' suffix on DEVMODEW stands for "wide", or Unicode characters.) While applications can use either structure, drivers are required to use the DEVMODEW structure rather than the DEVMODE structure.
+The [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devicemodew) structure is the Unicode version of the DEVMODE structure, which is described in the Microsoft Windows SDK documentation. (The 'W' suffix on DEVMODEW stands for "wide", or Unicode characters.) While applications can use either structure, drivers are required to use the DEVMODEW structure rather than the DEVMODE structure.
 
 ### <span id="public_and_private_members"></span><span id="PUBLIC_AND_PRIVATE_MEMBERS"></span>Public and Private Members
 

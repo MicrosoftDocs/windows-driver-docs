@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_gdi_drawing_and_related_services_gg"></span><span id="DDK_GDI_DRAWING_AND_RELATED_SERVICES_GG"></span>
 
 
-To support the [**CLIPOBJ**](/windows/win32/api/winddi/ns-winddi-_clipobj), [**BRUSHOBJ**](/windows/win32/api/winddi/ns-winddi-_brushobj), and [**XFORMOBJ**](/previous-versions/windows/hardware/drivers/ff570618(v=vs.85)) structures, GDI offers several drawing services, listed in the following table.
+To support the [**CLIPOBJ**](/windows/win32/api/winddi/ns-winddi-clipobj), [**BRUSHOBJ**](/windows/win32/api/winddi/ns-winddi-brushobj), and [**XFORMOBJ**](/previous-versions/windows/hardware/drivers/ff570618(v=vs.85)) structures, GDI offers several drawing services, listed in the following table.
 
 <table>
 <colgroup>
@@ -76,7 +76,7 @@ To support the [**CLIPOBJ**](/windows/win32/api/winddi/ns-winddi-_clipobj), [**B
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engcreateclip" data-raw-source="[&lt;strong&gt;EngCreateClip&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engcreateclip)"><strong>EngCreateClip</strong></a></p></td>
-<td align="left"><p>Allocates a <a href="/windows/win32/api/winddi/ns-winddi-_clipobj" data-raw-source="[&lt;strong&gt;CLIPOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_clipobj)"><strong>CLIPOBJ</strong></a> for the driver's temporary use. The driver should call the <a href="/windows/win32/api/winddi/nf-winddi-engdeleteclip" data-raw-source="[&lt;strong&gt;EngDeleteClip&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engdeleteclip)"><strong>EngDeleteClip</strong></a> function to delete it when it is no longer needed.</p></td>
+<td align="left"><p>Allocates a <a href="/windows/win32/api/winddi/ns-winddi-clipobj" data-raw-source="[&lt;strong&gt;CLIPOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_clipobj)"><strong>CLIPOBJ</strong></a> for the driver's temporary use. The driver should call the <a href="/windows/win32/api/winddi/nf-winddi-engdeleteclip" data-raw-source="[&lt;strong&gt;EngDeleteClip&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engdeleteclip)"><strong>EngDeleteClip</strong></a> function to delete it when it is no longer needed.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engdeleteclip" data-raw-source="[&lt;strong&gt;EngDeleteClip&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engdeleteclip)"><strong>EngDeleteClip</strong></a></p></td>

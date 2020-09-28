@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_returning_display_modes_drvgetmodes_gg"></span><span id="DDK_RETURNING_DISPLAY_MODES_DRVGETMODES_GG"></span>
 
 
-The display driver must also support [**DrvGetModes**](/windows/win32/api/winddi/nf-winddi-drvgetmodes). This function gives GDI a pointer to an array of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-_devicemodew) structures. The structures define the attributes of the display for the various modes that it supports, including the dimension (in both pixels and millimeters), number of planes, bits per plane, color information, and so on.
+The display driver must also support [**DrvGetModes**](/windows/win32/api/winddi/nf-winddi-drvgetmodes). This function gives GDI a pointer to an array of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devicemodew) structures. The structures define the attributes of the display for the various modes that it supports, including the dimension (in both pixels and millimeters), number of planes, bits per plane, color information, and so on.
 
 The order in which a driver writes the available display modes to memory when the [**DrvGetModes**](/windows/win32/api/winddi/nf-winddi-drvgetmodes) function is called can affect the final display mode that Windows chooses. In general, if an application does not specify a default mode, the system will select the first matching mode in the list supplied by the driver.
 
@@ -38,7 +38,7 @@ and the driver specifies the list of available display modes as follows:
 
 **Case 1**
 
-If an application attempts to set the monitor to 600x800x32bpp@60Hz, but the DM\_DISPLAYORIENTATION and DM\_DISPLAYFIXEDOUTPUT flags are not set in the **dmFields** member of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-_devicemodew), the system must choose the orientation and fixed output modes. In this case the system will choose display mode C because it is the first listed mode that matches the current DMDFO\_CENTER setting.
+If an application attempts to set the monitor to 600x800x32bpp@60Hz, but the DM\_DISPLAYORIENTATION and DM\_DISPLAYFIXEDOUTPUT flags are not set in the **dmFields** member of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devicemodew), the system must choose the orientation and fixed output modes. In this case the system will choose display mode C because it is the first listed mode that matches the current DMDFO\_CENTER setting.
 
 **Case 2**
 

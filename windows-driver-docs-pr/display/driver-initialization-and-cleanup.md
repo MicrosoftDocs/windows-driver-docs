@@ -56,7 +56,7 @@ For more information about how these constants are used, see [**DRVENABLEDATA**]
 
 -   The **c** member contains the number of DRVFN structures in the array.
 
--   The **pdrvfn** member points to an array of [**DRVFN**](/windows/win32/api/winddi/ns-winddi-_drvfn) structures that lists the supported functions and their indexes.
+-   The **pdrvfn** member points to an array of [**DRVFN**](/windows/win32/api/winddi/ns-winddi-drvfn) structures that lists the supported functions and their indexes.
 
 For GDI to call a function other than the driver's enable and disable functions, the driver must make the function's name and location available to GDI.
 

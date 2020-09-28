@@ -30,7 +30,7 @@ To correct the GDI ROP behavior, GDI in Windows XP and later supports a special 
 
 The following steps are required for all Windows XP and later drivers that use Windows GDI halftone 8-bit-per-pixel CMY mask modes. If you are developing a driver for Windows 2000, you should limit the driver's use to 8-bit-per-pixel monochrome palettes.
 
-1.  Set the **flHTFlags** member of the [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-_gdiinfo) structure to HT\_FLAG\_INVERT\_8BPP\_BITMASK\_IDX so that GDI will render images in one of the CMY\_INVERTED modes.
+1.  Set the **flHTFlags** member of the [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-gdiinfo) structure to HT\_FLAG\_INVERT\_8BPP\_BITMASK\_IDX so that GDI will render images in one of the CMY\_INVERTED modes.
 
 2.  Set *pPaletteEntry*\[0\] as follows prior to a call to **HT\_Get8BPPMaskPalette**:
 
