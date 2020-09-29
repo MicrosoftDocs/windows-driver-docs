@@ -17,7 +17,7 @@ The indirect display driver (IDD) model was designed to provide a simple user-mo
 
 ## IDD implementation
 
-An IDD is the third party-provided UMDF driver for the device. It is developed using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the windows graphics subsystems in the following ways:
+An IDD is the third party-provided [UMDF](/windows-hardware/drivers/wdf/umdf-driver-host-process) driver for the device. It is developed using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the windows graphics subsystems in the following ways:
 
 * Create the graphics adapter representing the indirect display device
 * Report monitors being connected and disconnected from the system
