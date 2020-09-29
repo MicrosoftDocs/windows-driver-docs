@@ -25,7 +25,7 @@ GDI can do most of the work with regard to palette management. When GDI calls th
 
 A palette effectively maps 32-bit *color indexes* into 24-bit RGB color values, which is the way GDI uses palettes. A driver specifies its palette so GDI can determine how different color indexes are to appear on the device.
 
-The driver need not deal with most palette operations and calculations as long as it uses the [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-_xlateobj) provided by GDI.
+The driver need not deal with most palette operations and calculations as long as it uses the [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-xlateobj) provided by GDI.
 
 If the device supports a modifiable palette, it should implement the function [**DrvSetPalette**](/windows/win32/api/winddi/nf-winddi-drvsetpalette). GDI calls *DrvSetPalette* when an application changes the palette for a device and passes the resulting new palette to the driver. The driver should set its internal hardware palette to match the new palette as closely as possible.
 
@@ -56,7 +56,7 @@ A palette can be defined for GDI in either of the two different formats listed i
 
  
 
-GDI typically uses the palette mapping in reverse. That is, an application specifies an RGB color for drawing and GDI must locate the color index that causes the device to display that color. As indicated in the next table, GDI provides two primary palette service functions for creating and deleting the palette, as well as some service functions related to the [**PALOBJ**](/windows/win32/api/winddi/ns-winddi-_palobj) and the [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-_xlateobj) used to translate color indexes between two palettes.
+GDI typically uses the palette mapping in reverse. That is, an application specifies an RGB color for drawing and GDI must locate the color index that causes the device to display that color. As indicated in the next table, GDI provides two primary palette service functions for creating and deleting the palette, as well as some service functions related to the [**PALOBJ**](/windows/win32/api/winddi/ns-winddi-palobj) and the [**XLATEOBJ**](/windows/win32/api/winddi/ns-winddi-xlateobj) used to translate color indexes between two palettes.
 
 <table>
 <colgroup>

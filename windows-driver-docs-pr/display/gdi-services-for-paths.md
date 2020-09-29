@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_gdi_services_for_paths_gg"></span><span id="DDK_GDI_SERVICES_FOR_PATHS_GG"></span>
 
 
-To assist vector devices in filling complex areas, their drivers can call the engine functions, listed in the following table, that create, modify, and enumerate a path. The driver has access to paths through the [**PATHOBJ**](/windows/win32/api/winddi/ns-winddi-_pathobj) structure.
+To assist vector devices in filling complex areas, their drivers can call the engine functions, listed in the following table, that create, modify, and enumerate a path. The driver has access to paths through the [**PATHOBJ**](/windows/win32/api/winddi/ns-winddi-pathobj) structure.
 
 <table>
 <colgroup>
@@ -46,7 +46,7 @@ To assist vector devices in filling complex areas, their drivers can call the en
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-pathobj_benum" data-raw-source="[&lt;strong&gt;PATHOBJ_bEnum&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-pathobj_benum)"><strong>PATHOBJ_bEnum</strong></a></p></td>
-<td align="left"><p>Retrieves the next <a href="/windows/win32/api/winddi/ns-winddi-_pathdata" data-raw-source="[&lt;strong&gt;PATHDATA&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_pathdata)"><strong>PATHDATA</strong></a> record from a path. Each record describes all or part of a subpath.</p></td>
+<td align="left"><p>Retrieves the next <a href="/windows/win32/api/winddi/ns-winddi-pathdata" data-raw-source="[&lt;strong&gt;PATHDATA&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_pathdata)"><strong>PATHDATA</strong></a> record from a path. Each record describes all or part of a subpath.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-pathobj_benumcliplines" data-raw-source="[&lt;strong&gt;PATHOBJ_bEnumClipLines&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-pathobj_benumcliplines)"><strong>PATHOBJ_bEnumClipLines</strong></a></p></td>
@@ -54,7 +54,7 @@ To assist vector devices in filling complex areas, their drivers can call the en
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-pathobj_bmoveto" data-raw-source="[&lt;strong&gt;PATHOBJ_bMoveTo&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-pathobj_bmoveto)"><strong>PATHOBJ_bMoveTo</strong></a></p></td>
-<td align="left"><p>Changes the current position in a <a href="/windows/win32/api/winddi/ns-winddi-_pathobj" data-raw-source="[&lt;strong&gt;PATHOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_pathobj)"><strong>PATHOBJ</strong></a>-defined path.</p></td>
+<td align="left"><p>Changes the current position in a <a href="/windows/win32/api/winddi/ns-winddi-pathobj" data-raw-source="[&lt;strong&gt;PATHOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_pathobj)"><strong>PATHOBJ</strong></a>-defined path.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-pathobj_bpolybezierto" data-raw-source="[&lt;strong&gt;PATHOBJ_bPolyBezierTo&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-pathobj_bpolybezierto)"><strong>PATHOBJ_bPolyBezierTo</strong></a></p></td>
@@ -66,7 +66,7 @@ To assist vector devices in filling complex areas, their drivers can call the en
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-pathobj_venumstart" data-raw-source="[&lt;strong&gt;PATHOBJ_vEnumStart&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-pathobj_venumstart)"><strong>PATHOBJ_vEnumStart</strong></a></p></td>
-<td align="left"><p>Notifies a <a href="/windows/win32/api/winddi/ns-winddi-_pathobj" data-raw-source="[&lt;strong&gt;PATHOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_pathobj)"><strong>PATHOBJ</strong></a> that the driver will begin calling <strong>PATHOBJ_bEnum</strong> to enumerate the curves in the specified path. This function must be called in case of an enumeration restart.</p></td>
+<td align="left"><p>Notifies a <a href="/windows/win32/api/winddi/ns-winddi-pathobj" data-raw-source="[&lt;strong&gt;PATHOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_pathobj)"><strong>PATHOBJ</strong></a> that the driver will begin calling <strong>PATHOBJ_bEnum</strong> to enumerate the curves in the specified path. This function must be called in case of an enumeration restart.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-pathobj_venumstartcliplines" data-raw-source="[&lt;strong&gt;PATHOBJ_vEnumStartClipLines&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-pathobj_venumstartcliplines)"><strong>PATHOBJ_vEnumStartClipLines</strong></a></p></td>

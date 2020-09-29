@@ -21,7 +21,7 @@ The IHV Extensions DLL calls the [**Dot11ExtSendNotification**](/windows-hardwar
 
  
 
-When calling [**Dot11ExtSendNotification**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_notification), the IHV Extensions DLL passes a pointer to a [**L2\_NOTIFICATION\_DATA**](/windows/win32/api/l2cmn/ns-l2cmn-_l2_notification_data) structure to the *pNotificationData* parameter. The L2\_NOTIFICATION\_DATA defines the type of the notification and can provide additional data about the notification to the IHV Extensions DLL.
+When calling [**Dot11ExtSendNotification**](/windows-hardware/drivers/ddi/wlanihv/nc-wlanihv-dot11ext_send_notification), the IHV Extensions DLL passes a pointer to a [**L2\_NOTIFICATION\_DATA**](/windows/win32/api/l2cmn/ns-l2cmn-l2_notification_data) structure to the *pNotificationData* parameter. The L2\_NOTIFICATION\_DATA defines the type of the notification and can provide additional data about the notification to the IHV Extensions DLL.
 
  
 

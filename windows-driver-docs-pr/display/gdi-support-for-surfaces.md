@@ -55,7 +55,7 @@ For each *PDEV*, a driver must support the [**DrvEnableSurface**](/windows/win32
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engcreatewnd" data-raw-source="[&lt;strong&gt;EngCreateWnd&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engcreatewnd)"><strong>EngCreateWnd</strong></a></p></td>
-<td align="left"><p>Create a <a href="/windows/win32/api/winddi/ns-winddi-_wndobj" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_wndobj)"><strong>WNDOBJ</strong></a> structure on a specified surface.</p></td>
+<td align="left"><p>Create a <a href="/windows/win32/api/winddi/ns-winddi-wndobj" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_wndobj)"><strong>WNDOBJ</strong></a> structure on a specified surface.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engdeletesurface" data-raw-source="[&lt;strong&gt;EngDeleteSurface&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engdeletesurface)"><strong>EngDeleteSurface</strong></a></p></td>
@@ -63,7 +63,7 @@ For each *PDEV*, a driver must support the [**DrvEnableSurface**](/windows/win32
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engdeletewnd" data-raw-source="[&lt;strong&gt;EngDeleteWnd&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engdeletewnd)"><strong>EngDeleteWnd</strong></a></p></td>
-<td align="left"><p>Deletes a <a href="/windows/win32/api/winddi/ns-winddi-_wndobj" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_wndobj)"><strong>WNDOBJ</strong></a> structure.</p></td>
+<td align="left"><p>Deletes a <a href="/windows/win32/api/winddi/ns-winddi-wndobj" data-raw-source="[&lt;strong&gt;WNDOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_wndobj)"><strong>WNDOBJ</strong></a> structure.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engerasesurface" data-raw-source="[&lt;strong&gt;EngEraseSurface&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engerasesurface)"><strong>EngEraseSurface</strong></a></p></td>
@@ -75,7 +75,7 @@ For each *PDEV*, a driver must support the [**DrvEnableSurface**](/windows/win32
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-englocksurface" data-raw-source="[&lt;strong&gt;EngLockSurface&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-englocksurface)"><strong>EngLockSurface</strong></a></p></td>
-<td align="left"><p>Gives the driver access to a created surface by creating a user object (<a href="/windows/win32/api/winddi/ns-winddi-_surfobj" data-raw-source="[&lt;strong&gt;SURFOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_surfobj)"><strong>SURFOBJ</strong></a>) for that surface. (The <a href="surface-negotiation.md" data-raw-source="[primary surface](surface-negotiation.md)">primary surface</a> is not locked.)</p></td>
+<td align="left"><p>Gives the driver access to a created surface by creating a user object (<a href="/windows/win32/api/winddi/ns-winddi-surfobj" data-raw-source="[&lt;strong&gt;SURFOBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_surfobj)"><strong>SURFOBJ</strong></a>) for that surface. (The <a href="surface-negotiation.md" data-raw-source="[primary surface](surface-negotiation.md)">primary surface</a> is not locked.)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engmarkbandingsurface" data-raw-source="[&lt;strong&gt;EngMarkBandingSurface&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engmarkbandingsurface)"><strong>EngMarkBandingSurface</strong></a></p></td>

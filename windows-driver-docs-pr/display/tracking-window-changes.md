@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_tracking_window_changes_gg"></span><span id="DDK_TRACKING_WINDOW_CHANGES_GG"></span>
 
 
-Changes to a window, including one in a [multiple-monitor system](multiple-monitor-support-in-the-display-driver.md), can be tracked by a device driver through a [**WNDOBJ**](/windows/win32/api/winddi/ns-winddi-_wndobj). A WNDOBJ is a driver-level window object that contains information about the position, size, and the visible client region of a window. That is, by creating a WNDOBJ that corresponds to an application window, the driver can track the size, position, and client region changes in that window.
+Changes to a window, including one in a [multiple-monitor system](multiple-monitor-support-in-the-display-driver.md), can be tracked by a device driver through a [**WNDOBJ**](/windows/win32/api/winddi/ns-winddi-wndobj). A WNDOBJ is a driver-level window object that contains information about the position, size, and the visible client region of a window. That is, by creating a WNDOBJ that corresponds to an application window, the driver can track the size, position, and client region changes in that window.
 
 An application uses the Win32 API to access the **WNDOBJ\_SETUP** functionality implemented by the device driver. Access is gained through the Win32 **ExtEscape** function. GDI passes this escape call to the device driver with [**DrvEscape**](/windows/win32/api/winddi/nf-winddi-drvescape), implemented by the device driver with **WNDOBJ\_SETUP** for the value of *iEsc*.
 
@@ -65,8 +65,8 @@ Creating a window object involves locking special window resources, therefore [*
 
 The **EngCreateWnd** function supports window tracking by multiple drivers. Through **EngCreateWnd**, each driver identifies its own callback routine that GDI is to call for changes to the corresponding window. This feature allows, for example, a live video driver to track changes to live video windows while an OpenGL driver is tracking changes to OpenGL windows.
 
-GDI will call back to the driver with the most recent window states if a new [**WNDOBJ**](/windows/win32/api/winddi/ns-winddi-_wndobj) is created in *DrvSetPixelFormat* or **ExtEscape**. GDI will also call back to the driver when a window referenced by a WNDOBJ is destroyed.
+GDI will call back to the driver with the most recent window states if a new [**WNDOBJ**](/windows/win32/api/winddi/ns-winddi-wndobj) is created in *DrvSetPixelFormat* or **ExtEscape**. GDI will also call back to the driver when a window referenced by a WNDOBJ is destroyed.
 
-As an accelerator, the driver may access public members of the [**WNDOBJ**](/windows/win32/api/winddi/ns-winddi-_wndobj) structure.
+As an accelerator, the driver may access public members of the [**WNDOBJ**](/windows/win32/api/winddi/ns-winddi-wndobj) structure.
 
 Tracking window changes involves the use of three callback functions provided to support the WNDOBJ structure. The visible client region may be enumerated by calling the [**WNDOBJ\_cEnumStart**](/windows/win32/api/winddi/nf-winddi-wndobj_cenumstart) and [**WNDOBJ\_bEnum**](/windows/win32/api/winddi/nf-winddi-wndobj_benum) callback functions. A driver may associate its own data with a WNDOBJ by calling the [**WNDOBJ\_vSetConsumer**](/windows/win32/api/winddi/nf-winddi-wndobj_vsetconsumer) callback function.

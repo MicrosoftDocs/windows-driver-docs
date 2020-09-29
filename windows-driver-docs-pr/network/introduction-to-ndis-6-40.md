@@ -24,7 +24,7 @@ NDKPI 1.2 adds the following new elements to the NDKPI DDI:
 - *NdkGetCqResultsEx* ([*NDK\_FN\_GET\_CQ\_RESULTS\_EX*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_cq_results_ex)) function
 - [**NDK\_RESULT\_EX**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result_ex) structure
 - New request callback *Flags* value: **NDK\_OP\_FLAG\_DEFER**
-- New [**NDK\_ADAPTER\_INFO**](/windows/win32/api/ndkinfo/ns-ndkinfo-_ndk_adapter_info)**AdapterFlags** value: **NDK\_ADAPTER\_FLAG\_RDMA\_READ\_LOCAL\_INVALIDATE\_SUPPORTED**
+- New [**NDK\_ADAPTER\_INFO**](/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info)**AdapterFlags** value: **NDK\_ADAPTER\_FLAG\_RDMA\_READ\_LOCAL\_INVALIDATE\_SUPPORTED**
 
 ### Native 802.11 Wireless LAN
 

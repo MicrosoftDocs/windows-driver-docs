@@ -89,7 +89,7 @@ The **SampleFlags** member of the [**DXVA\_VideoSample2**](/windows-hardware/dri
 
 The *dwNumSurfaces* parameter indicates the number of elements in the *lpDDSrcSurface* array. The video reference samples are first in the array, followed by the video substreams in Z-order. For more information, see [Input Buffer Order](./input-buffer-order.md). The number of video substreams that the driver receives can range from 0 to 15. When **DeinterlaceBltEx** is called, the driver will typically receive 0 or 1 video substreams. However, the driver must be implemented so that it can process multiple video substreams.
 
-The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to a display driver-supplied function that references the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
+The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to a display driver-supplied function that references the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
 
 <table>
 <colgroup>
@@ -109,7 +109,7 @@ The **DeinterlaceBltEx** function maps directly to a call to the **RenderMoComp*
 </tr>
 <tr class="even">
 <td align="left"><p><strong>lpBufferInfo</strong></p></td>
-<td align="left"><p>Points to an array of <a href="/windows/win32/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/win32/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
+<td align="left"><p>Points to an array of <a href="/windows/win32/api/ddrawint/ns-ddrawint-ddmocompbufferinfo" data-raw-source="[&lt;strong&gt;DDMOCOMPBUFFERINFO&lt;/strong&gt;](/windows/win32/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)"><strong>DDMOCOMPBUFFERINFO</strong></a> structures, one for each input reference source sample or substream sample, and one for the destination sample. The destination sample is the first element of the array.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>dwFunction</strong></p></td>
@@ -163,9 +163,9 @@ Requirements
 
 [**DXVA\_VideoSample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample2)
 
-[**DDMOCOMPBUFFERINFO**](/windows/win32/api/ddrawint/ns-ddrawint-_ddmocompbufferinfo)
+[**DDMOCOMPBUFFERINFO**](/windows/win32/api/ddrawint/ns-ddrawint-ddmocompbufferinfo)
 
 [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
-[**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_rendermocompdata)
+[**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata)
 

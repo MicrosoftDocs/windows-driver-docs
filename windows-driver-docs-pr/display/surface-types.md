@@ -51,7 +51,7 @@ A device-managed surface:
 
 -   Is created by a call to the device driver's [**DrvCreateDeviceBitmap**](/windows/win32/api/winddi/nf-winddi-drvcreatedevicebitmap) function.
 
--   Has an associated device handle to a surface (DHSURF; for more information, see [**SURFOBJ**](/windows/win32/api/winddi/ns-winddi-_surfobj)).
+-   Has an associated device handle to a surface (DHSURF; for more information, see [**SURFOBJ**](/windows/win32/api/winddi/ns-winddi-surfobj)).
 
 -   Can be either *opaque* or *nonopaque*.
 

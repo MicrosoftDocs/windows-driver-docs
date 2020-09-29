@@ -31,7 +31,7 @@ In the following scenarios, the runtime secures ownership of memory allocated in
 
 -   The driver updates the render state array to which the **lpdwRStates** member of D3DHAL\_DRAWPRIMITIVES2DATA points. The driver updates this array during a call to its *D3dDrawPrimitives2* function.
 
--   The driver updates its state at the **lpdwStates** member of the [**DD\_GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_getdriverstatedata) structure during a call to its [**D3dGetDriverState**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverstate) function.
+-   The driver updates its state at the **lpdwStates** member of the [**DD\_GETDRIVERSTATEDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverstatedata) structure during a call to its [**D3dGetDriverState**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverstate) function.
 
 -   The driver bit-block transfers or accesses a system texture that was allocated in user memory.
 

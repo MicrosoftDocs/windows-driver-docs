@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 Kernel-mode graphics drivers must do all floating-point operations between calls to the GDI-supplied [**EngSaveFloatingPointState**](/windows/win32/api/winddi/nf-winddi-engsavefloatingpointstate) and [**EngRestoreFloatingPointState**](/windows/win32/api/winddi/nf-winddi-engrestorefloatingpointstate) routines.
 
-If the hardware has a floating-point processor, the driver can do floating-point operations directly. Otherwise, the driver can use the GDI [**FLOATOBJ**](/windows/win32/api/winddi/ns-winddi-_floatobj) services shown in the following table to emulate floating-point operations. Regardless of processor type, the driver should use the FLOATL data type when declaring floating-point values.
+If the hardware has a floating-point processor, the driver can do floating-point operations directly. Otherwise, the driver can use the GDI [**FLOATOBJ**](/windows/win32/api/winddi/ns-winddi-floatobj) services shown in the following table to emulate floating-point operations. Regardless of processor type, the driver should use the FLOATL data type when declaring floating-point values.
 
 <table>
 <colgroup>

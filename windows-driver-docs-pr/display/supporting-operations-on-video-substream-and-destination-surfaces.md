@@ -51,7 +51,7 @@ The Line21 closed caption decoder and the teletext decoder create a source video
 
 Therefore, your driver's [*DdBlt*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_blt) function should support copying any FOURCC surface to a video substream surface of the same FOURCC format.
 
-Your driver should indicate that it supports copying FOURCC formats by setting the DDCAPS2\_COPYFOURCC flag in the **dwCaps2** member of the [**DDCORECAPS**](/windows/win32/api/ddrawi/ns-ddrawi-_ddcorecaps) structure. The driver specifies the DDCORECAPS structure in the **ddCaps** member of a [**DD\_HALINFO**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_halinfo) structure. DD\_HALINFO is returned by the driver's [**DrvGetDirectDrawInfo**](/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo) function.
+Your driver should indicate that it supports copying FOURCC formats by setting the DDCAPS2\_COPYFOURCC flag in the **dwCaps2** member of the [**DDCORECAPS**](/windows/win32/api/ddrawi/ns-ddrawi-ddcorecaps) structure. The driver specifies the DDCORECAPS structure in the **ddCaps** member of a [**DD\_HALINFO**](/windows/win32/api/ddrawint/ns-ddrawint-dd_halinfo) structure. DD\_HALINFO is returned by the driver's [**DrvGetDirectDrawInfo**](/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo) function.
 
 In a FOURCC video substream surface copy operation, the driver should not perform stretching or color-space conversion operations.
 

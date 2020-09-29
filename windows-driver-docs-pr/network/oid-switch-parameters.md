@@ -18,7 +18,7 @@ If the OID query request completes successfully, the **InformationBuffer** membe
 Remarks
 -------
 
-When the extension processes the returned [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure, it must not assume that the various string members of the **NDIS\_SWITCH\_PARAMETERS** structure, such as **SwitchName**, are null-terminated. The data types for these string members are type-defined by the [**IF\_COUNTED\_STRING**](/windows/win32/api/ifdef/ns-ifdef-_if_counted_string_lh) structure. The extension must determine the string length from the value of the **Length** member of this structure.
+When the extension processes the returned [**NDIS\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters) structure, it must not assume that the various string members of the **NDIS\_SWITCH\_PARAMETERS** structure, such as **SwitchName**, are null-terminated. The data types for these string members are type-defined by the [**IF\_COUNTED\_STRING**](/windows/win32/api/ifdef/ns-ifdef-if_counted_string_lh) structure. The extension must determine the string length from the value of the **Length** member of this structure.
 
 **Note**  If the string is null-terminated, the **Length** member must not include the terminating null character.
 

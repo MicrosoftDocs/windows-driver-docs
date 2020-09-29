@@ -31,14 +31,14 @@ The driver uses two GUIDs to gather and offer further information regarding Dire
 
 -   GUID\_UpdateNonLocalHeap
 
-GUID\_GetHeapAlignment signals to the driver to gather heap alignment information about any DirectDraw heaps that are passed to it. The heap information is passed to the driver using the [**DD\_GETHEAPALIGNMENTDATA**](/windows/win32/api/dmemmgr/ns-dmemmgr-_dd_getheapalignmentdata) structure. GUID\_GetHeapAlignment is defined as:
+GUID\_GetHeapAlignment signals to the driver to gather heap alignment information about any DirectDraw heaps that are passed to it. The heap information is passed to the driver using the [**DD\_GETHEAPALIGNMENTDATA**](/windows/win32/api/dmemmgr/ns-dmemmgr-dd_getheapalignmentdata) structure. GUID\_GetHeapAlignment is defined as:
 
 ```cpp
 DEFINE_GUID( GUID_GetHeapAlignment,
     0x42e02f16, 0x7b41, 0x11d2, 0x8b, 0xff, 0x0, 0xa0, 0xc9, 0x83, 0xea, 0xf6);
 ```
 
-GUID\_UpdateNonLocalHeap signals the driver to update its internal state with the heap information with the nonlocal heap structures supplied by DirectDraw. This information is contained in the [**DD\_UPDATENONLOCALHEAPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_updatenonlocalheapdata) structure. GUID\_UpdateNonLocalHeap is defined as:
+GUID\_UpdateNonLocalHeap signals the driver to update its internal state with the heap information with the nonlocal heap structures supplied by DirectDraw. This information is contained in the [**DD\_UPDATENONLOCALHEAPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_updatenonlocalheapdata) structure. GUID\_UpdateNonLocalHeap is defined as:
 
 ```cpp
 DEFINE_GUID( GUID_UpdateNonLocalHeap,
