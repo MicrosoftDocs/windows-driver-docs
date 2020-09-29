@@ -8180,6 +8180,66 @@
                             "source_path":  "windows-driver-docs-pr/wdf/handling-dma-operations-in-kmdf-drivers.md",
                             "redirect_url":  "/windows-hardware/drivers/wdf/introduction-to-dma-in-windows-driver-framework",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/implementing-plug-and-play.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-plug-and-play",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/device-and-driver-installation-advanced-topics.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/creating-secure-device-installations",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/install/inf-files.md",
+                            "redirect_url":  "/windows-hardware/drivers/install/overview-of-inf-files",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/completing-irps-in-dispatch-routines.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/how-to-complete-an-irp-in-a-dispatch-routine",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/driver-programming-techniques.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/errors-in-buffered-i-o.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/failure-to-check-the-size-of-buffers",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/introduction-to-windows-drivers.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/overview-of-windows-components",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/making-driver-code-or-data-pageable.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/detecting-code-that-can-be-pageable",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/miscellaneous-driver-programming-techniques.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/using-ntstatus-values",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/object-security.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/access-rights",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/removing-a-device.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/understanding-when-remove-irps-are-issued",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/kernel/rules-for-handling-power-irps.md",
+                            "redirect_url":  "/windows-hardware/drivers/kernel/calling-iocalldriver-versus-calling-pocalldriver",
+                            "redirect_document_id":  false
                         }
                      ]
 }
