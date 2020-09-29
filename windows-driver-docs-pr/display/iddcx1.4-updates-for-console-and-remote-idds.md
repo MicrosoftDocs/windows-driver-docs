@@ -52,7 +52,7 @@ Where:
 
 ## Update EvtIddCxMonitorAssignSwapChain error handling for Windows 10, version 1903 and later
 
-Starting with Windows 10, version 1903, IddCx error handling for the [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) callback has changed for all driver versions, and introduces a new status code. See [**EvtIdCxMonitorAssignSwapChain** error handling](idd-evtidcxmonitorassignswapchain-error-handling) for details.
+Starting with Windows 10, version 1903, IddCx error handling for the [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) callback has changed for all driver versions, and introduces a new status code. See [**EvtIdCxMonitorAssignSwapChain** error handling](idd-evtidcxmonitorassignswapchain-error-handling.md) for details.
 
 ## For EDID-less scenarios, add EVT_IDD_CX_MONITOR_GET_PHYSICAL_SIZE to provide the physical width and height of the monitor
 
