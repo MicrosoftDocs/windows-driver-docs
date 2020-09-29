@@ -8,32 +8,16 @@ ms.localizationpriority: medium
 
 # Proximity Sensor Property
 
-
-
 This property is an optional enumeration property.
 
 |Property key|Type|Access (R/O, R/W) |Required/Optional|Description|
 |--|--|--|--|--|
 |DEVPKEY_Sensor_ProximityType|VT_UI4|R/O|Optional|Describes the type of proximity being detected. It can be HumanProximity or ObjectProximity. For more information, see the ProximityType enumeration.|
 
- 
-
 ## Requirements
-
 
 **Header:** Sensorsdef.h
 
 ## Related topics
 
-
-[Other sensor properties](other-sensor-properties.md)
-
- 
-
- 
-
-
-
-
-
-
+[Common sensor properties](common-sensor-properties.md)

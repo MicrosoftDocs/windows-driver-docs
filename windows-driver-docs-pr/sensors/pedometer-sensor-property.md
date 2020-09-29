@@ -8,33 +8,18 @@ ms.localizationpriority: medium
 
 # Pedometer sensor property
 
-
 The property key for the pedometer.
 
 |Property key|Type|Access (R/O, R/W) |Required/Optional|Description|
 |--|--|--|--|--|
 |PKEY_SensorData_SupportedStepTypes|VT_UI4|R/O|Required|The supported step types.|
 
- 
-
 For more information about the data type shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
 
 ## Requirements
-
 
 **Header:** Sensorsdef.h
 
 ## Related topics
 
-
-[Other sensor properties](other-sensor-properties.md)
-
- 
-
- 
-
-
-
-
-
-
+[Common sensor properties](common-sensor-properties.md)

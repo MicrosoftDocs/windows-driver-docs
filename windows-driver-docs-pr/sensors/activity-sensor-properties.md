@@ -8,9 +8,7 @@ ms.localizationpriority: medium
 
 # Activity sensor properties
 
-
 The property keys for the activity sensor.
-
 
 |                 Property key                 |   Type    | Required/Optional | Description |
 |----------------------------------------------|-----------|-------------------|-------------|
@@ -21,20 +19,8 @@ For more information about the data types shown in the **Type** column, see [PRO
 
 ## Requirements
 
-
 **Header:** Sensorsdef.h
 
 ## Related topics
 
-
-[Other sensor properties](other-sensor-properties.md)
-
- 
-
- 
-
-
-
-
-
-
+[Common sensor properties](common-sensor-properties.md)
