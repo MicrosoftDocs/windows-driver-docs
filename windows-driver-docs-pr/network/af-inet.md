@@ -15,7 +15,7 @@ The AF\_INET address family is the address family for IPv4.
 
 ### Socket Address Structure
 
-An IPv4 transport address is specified with the [**SOCKADDR\_IN**](/windows/desktop/api/ws2def/ns-ws2def-sockaddr_in) structure.
+An IPv4 transport address is specified with the [**SOCKADDR\_IN**](/windows/win32/api/ws2def/ns-ws2def-sockaddr_in) structure.
 
 ### Socket Types
 

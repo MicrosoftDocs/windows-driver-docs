@@ -61,7 +61,7 @@ For more information about *DQ* and the other run-time parameters, see [Device F
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="DQ"></span><span id="dq"></span><em>DQ</em></p></td>
-<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/index" data-raw-source="[&lt;strong&gt;WDTF&lt;/strong&gt;](../wdtf/index.md)"><strong>WDTF</strong></a><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[SDEL](/windows-hardware/drivers/ddi/index)">SDEL</a> query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
+<td align="left"><p>Identifies the device or devices that should be used for testing. The <em>DQ</em> parameter takes a <a href="/windows-hardware/drivers/wdtf/index" data-raw-source="[&lt;strong&gt;WDTF&lt;/strong&gt;](../wdtf/index.md)"><strong>WDTF</strong></a><a href="/windows-hardware/drivers/ddi/index" data-raw-source="[SDEL](/windows-hardware/drivers/ddi/index)">SDEL</a> query that identifies the target devices. This query can be very flexible and it can be used to express any number of devices, from a single device to all devices in the system.</p>
 <p>Common examples:</p>
 <p></p>
 <dl>
@@ -143,7 +143,7 @@ WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - Terminate(KMDFTest Device ROOT\SAMPLE\000
 </tr>
 <tr class="odd">
 <td align="left"><p><span id="DoConcurrentIO"></span><span id="doconcurrentio"></span><span id="DOCONCURRENTIO"></span><em>DoConcurrentIO</em></p></td>
-<td align="left"><p>True or False. Uses <a href="https://docs.microsoft.com/windows-hardware/drivers/wdtf/index" data-raw-source="[WDTF](../wdtf/index.md)">WDTF</a> concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
+<td align="left"><p>True or False. Uses <a href="/windows-hardware/drivers/wdtf/index" data-raw-source="[WDTF](../wdtf/index.md)">WDTF</a> concurrent I/O interface to send I/O requests to target device stacks while performing PnP operations.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="FillZeroPageWithNull"></span><span id="fillzeropagewithnull"></span><span id="FILLZEROPAGEWITHNULL"></span><em>FillZeroPageWithNull</em></p></td>
@@ -298,13 +298,13 @@ WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - Terminate(KMDFTest Device ROOT\SAMPLE\000
 <tbody>
 <tr class="odd">
 <td align="left"><p><span id="Disable_Driver_Verifier"></span><span id="disable_driver_verifier"></span><span id="DISABLE_DRIVER_VERIFIER"></span>Disable Driver Verifier</p></td>
-<td align="left"><p>Disables <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> on the test computer.</p>
+<td align="left"><p>Disables <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> on the test computer.</p>
 <p><strong>Parameters:</strong> None</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><span id="Enable_Driver_Verifier"></span><span id="enable_driver_verifier"></span><span id="ENABLE_DRIVER_VERIFIER"></span>Enable Driver Verifier</p></td>
-<td align="left"><p>You can use this test to enable <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> for all drivers of a device (or devices) on the test computer.</p>
-<p><strong>Parameters:</strong> - See <a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier-options" data-raw-source="[Driver Verifier Options](../devtest/driver-verifier-options.md)">Driver Verifier Options</a>.</p></td>
+<td align="left"><p>You can use this test to enable <a href="/windows-hardware/drivers/devtest/driver-verifier" data-raw-source="[Driver Verifier](../devtest/driver-verifier.md)">Driver Verifier</a> for all drivers of a device (or devices) on the test computer.</p>
+<p><strong>Parameters:</strong> - See <a href="/windows-hardware/drivers/devtest/driver-verifier-options" data-raw-source="[Driver Verifier Options](../devtest/driver-verifier-options.md)">Driver Verifier Options</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -318,5 +318,3 @@ WDTF_SIMPLEIO_STRESS_PROC : INFO  :  - Terminate(KMDFTest Device ROOT\SAMPLE\000
 * [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md)
 * [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 * [How to customize I/O for your device using the WDTF Simple I/O Action Plug-in](../wdtf/to-customize-i-o-for-your-device-using-the-wdtf-simple-i-o-action-plug-in.md)
- 
-

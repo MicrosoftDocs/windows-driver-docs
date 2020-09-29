@@ -97,7 +97,7 @@ You can set properties for an individual driver or for an entire driver package.
 <td align="left"><p>Signing properties for driver packages (see <a href="signing-a-driver.md" data-raw-source="[Signing a Driver](signing-a-driver.md)">Signing a Driver</a>)</p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="counters-manifest-preprocessor-properties-for-driver-projects.md" data-raw-source="[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md)">Counters Manifest Preprocessor Properties for Driver Projects</a> (for <a href="https://docs.microsoft.com/windows/desktop/PerfCtrs/ctrpp" data-raw-source="[CTRPP](/windows/desktop/PerfCtrs/ctrpp)">CTRPP</a>)</td>
+<td align="left"><a href="counters-manifest-preprocessor-properties-for-driver-projects.md" data-raw-source="[Counters Manifest Preprocessor Properties for Driver Projects](counters-manifest-preprocessor-properties-for-driver-projects.md)">Counters Manifest Preprocessor Properties for Driver Projects</a> (for <a href="/windows/desktop/PerfCtrs/ctrpp" data-raw-source="[CTRPP](/windows/desktop/PerfCtrs/ctrpp)">CTRPP</a>)</td>
 <td align="left"><p><a href="deployment-properties-for-driver-projects.md" data-raw-source="[Deployment Properties for Driver Package Projects](deployment-properties-for-driver-projects.md)">Deployment Properties for Driver Package Projects</a> (see <a href="deploying-a-driver-to-a-test-computer.md" data-raw-source="[Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)">Deploying a Driver to a Test Computer</a>)</p></td>
 </tr>
 <tr class="odd">
@@ -113,7 +113,7 @@ You can set properties for an individual driver or for an entire driver package.
 <td align="left"><p><a href="umdf-verifier-properties-for-driver-package-projects.md" data-raw-source="[UMDF Verifier Properties for Driver Package Projects](umdf-verifier-properties-for-driver-package-projects.md)">UMDF Verifier Properties for Driver Package Projects</a></p></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-preprocessor" data-raw-source="[WPP Preprocessor (WPP Tracing)](../devtest/wpp-preprocessor.md)">WPP Preprocessor (WPP Tracing)</a></td>
+<td align="left"><a href="/windows-hardware/drivers/devtest/wpp-preprocessor" data-raw-source="[WPP Preprocessor (WPP Tracing)](../devtest/wpp-preprocessor.md)">WPP Preprocessor (WPP Tracing)</a></td>
 <td align="left"><p><a href="inf2cat-properties-for-driver-package-projects.md" data-raw-source="[Inf2Cat Properties for Driver Package Projects](inf2cat-properties-for-driver-package-projects.md)">Inf2Cat Properties for Driver Package Projects</a> (see the <a href="../devtest/inf2cat.md" data-raw-source="[&lt;strong&gt;Inf2Cat&lt;/strong&gt;](../devtest/inf2cat.md)"><strong>Inf2Cat</strong></a> tool)</p></td>
 </tr>
 </tbody>

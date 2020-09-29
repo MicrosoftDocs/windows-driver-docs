@@ -18,7 +18,7 @@ Setting the DDSCAPS2\_ADDITIONALPRIMARY capability bit in the **dwCaps2** member
 
 The driver must ensure that the master head is able to allocate memory that is associated with subordinate heads.
 
-When the runtime calls the driver's [*DdDestroySurface*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) function to destroy surfaces on the subordinate head in which the DDSCAPS2\_ADDITIONALPRIMARY capability bit is set, the driver is notified that the subordinate head is again in control of its video memory management.
+When the runtime calls the driver's [*DdDestroySurface*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_destroysurface) function to destroy surfaces on the subordinate head in which the DDSCAPS2\_ADDITIONALPRIMARY capability bit is set, the driver is notified that the subordinate head is again in control of its video memory management.
 
 For the most part, this choice of which head owns video memory is inherent in the existing DirectDraw process. Specifically:
 

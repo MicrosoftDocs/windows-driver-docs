@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 ## <span id="audio_property_requests"></span><span id="AUDIO_PROPERTY_REQUESTS"></span>
 
 
-Clients of a Microsoft Windows Driver Model (WDM) audio driver can send requests for [KS properties](../stream/ks-properties.md) to the KS filters and pins that the driver has instantiated. For example, a user-mode client can send a KS property request by calling the [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function (see the Microsoft Windows SDK documentation) with an I/O-control code of IOCTL\_KS\_PROPERTY. This function sends an IRP containing the property request to the specified filter or pin object.
+Clients of a Microsoft Windows Driver Model (WDM) audio driver can send requests for [KS properties](../stream/ks-properties.md) to the KS filters and pins that the driver has instantiated. For example, a user-mode client can send a KS property request by calling the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function (see the Microsoft Windows SDK documentation) with an I/O-control code of IOCTL\_KS\_PROPERTY. This function sends an IRP containing the property request to the specified filter or pin object.
 
 Audio drivers support get, set, and basic-support requests on properties (KSPROPERTY\_TYPE\_GET, KSPROPERTY\_TYPE\_SET, and KSPROPERTY\_TYPE\_BASICSUPPORT). For more information, see [Audio Drivers Property Sets](./audio-drivers-property-sets.md).
 

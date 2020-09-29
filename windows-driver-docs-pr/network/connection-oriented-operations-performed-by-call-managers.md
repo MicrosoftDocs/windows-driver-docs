@@ -20,7 +20,7 @@ A call manager performs:
 
 -   **Registers and deregisters one or more address families (AFs).**
 
-    A call manager [registers one or more address families](registering-and-opening-an-address-family.md) with NDIS . By registering an address family, a call manager advertises its call manager services (specifically, a signaling protocol) to bound connection-oriented clients. For information about registering entry points with NDIS, see [CoNDIS Registration](condis-registration.md).
+    A call manager [registers one or more address families](registering-and-opening-an-address-family.md) with NDIS . By registering an address family, a call manager advertises its call manager services (specifically, a signaling protocol) to bound connection-oriented clients. For information about registering entry points with NDIS, see [CoNDIS Registration](condis-miniport-driver-registration.md).
 
 -   **Registers and deregisters SAPs at the request of a connection-oriented client.**
 

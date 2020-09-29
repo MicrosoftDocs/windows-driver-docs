@@ -77,7 +77,7 @@ The Answer to Reset (ATR) is the first string of bytes sent by the UICC after a 
 
 ### Parameters
 
-|   | Set | Query | Notification |
+|  Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Empty | Not applicable |
 | Response | Not applicable | MBIM_MS_ATR_INFO | Not applicable |
@@ -413,7 +413,7 @@ When the host queries the function to determine the passthrough status, if the f
 
 ### Parameters
 
-|   | Set | Query | Notification |
+| Type  | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MS_SET_UICC_RESET | Empty | Not applicable |
 | Response | MBIM_MS_UICC_RESET_INFO | MBIM_MS_UICC_RESET_INFO | Not applicable |

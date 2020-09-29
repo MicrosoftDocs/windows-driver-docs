@@ -1,5 +1,5 @@
 ---
-title: Number of user mode crashes in top Microsoft apps
+title: Number of user mode crashes in top Microsoft apps (Ecosystem)
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in top Microsoft apps, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 05/20/2019

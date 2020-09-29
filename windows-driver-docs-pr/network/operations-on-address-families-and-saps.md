@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-A call manager or MCM driver must register its call manager entry points with NDIS and advertise its call manager services to connection-oriented clients. For more information about registering enttry points with NDIS, see [CoNDIS Registration](condis-registration.md).
+A call manager or MCM driver must register its call manager entry points with NDIS and advertise its call manager services to connection-oriented clients. For more information about registering entry points with NDIS, see [CoNDIS Registration](condis-miniport-driver-registration.md).
 
 To use the call manager services of a call manager or MCM driver, a connection-oriented client must open an address family with that call manager or MCM driver. To receive incoming calls, the client must also register one or more SAPs with the call manager or MCM driver.
 

@@ -60,7 +60,7 @@ Windows sets the value of DEVPKEY_Device_GenericDriverInstalled.
 
 The value of DEVPKEY_Device_GenericDriverInstalled is set to DEVPROP_TRUE to indicate that a basic driver is installed. Otherwise, the value of the property is set to DEVPROP_FALSE.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_GenericDriverInstalled.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_GenericDriverInstalled.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
@@ -74,7 +74,7 @@ Requirements
 ## See also
 
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

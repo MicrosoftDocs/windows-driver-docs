@@ -31,7 +31,7 @@ The Driver Install test category includes tests that uninstall and reinstall a d
 <td align="left"><p>This test uninstalls and reinstalls the drivers for selected devices, and runs I/O testing on devices.</p>
 <p><strong>Test binary:</strong> Devfund_Reinstall_With_IO_BeforeAndAfter.wsc</p>
 <p><strong>Test method:</strong> Reinstall_With_IO_Before_And_After</p>
-<p><strong>Parameters:</strong> - see <a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
+<p><strong>Parameters:</strong> - see <a href="/windows-hardware/drivers" data-raw-source="[Device Fundamentals Test Parameters](/windows-hardware/drivers)">Device Fundamentals Test Parameters</a></p>
 <p><em>DQ</em></p>
 <p><em>IOPeriod</em></p></td>
 </tr>
@@ -81,6 +81,4 @@ HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Setup\LogLevel
 [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md)
 
 [How to test a driver at runtime from a Command Prompt](/windows-hardware/drivers)
-
- 
 

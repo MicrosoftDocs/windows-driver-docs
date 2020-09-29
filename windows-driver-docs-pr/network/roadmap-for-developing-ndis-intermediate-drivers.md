@@ -37,7 +37,7 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
 -   Step 5: Read the intermediate driver, miniport driver, and protocol driver introduction topics.
     [Introduction to NDIS Intermediate Drivers](introduction-to-ndis-intermediate-drivers.md)
-    [Introduction to NDIS Miniport Drivers](introduction-to-ndis-miniport-drivers.md)
+    [Introduction to NDIS Miniport Drivers](deserialized-ndis-miniport-drivers.md)
     [NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md)
 -   Step 6: Read the [writing intermediate drivers section](writing-ndis-intermediate-drivers.md).
 

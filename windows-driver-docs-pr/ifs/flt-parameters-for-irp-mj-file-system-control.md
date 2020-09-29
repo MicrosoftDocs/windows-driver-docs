@@ -87,7 +87,7 @@ Length, in bytes, of the buffer that the **Neither.InputBuffer**, **Buffered.Sys
 **FsControlCode**  
 FSCTL function code to be passed to the file system, file system filter, or minifilter driver for the target device.
 
-For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation. (This resource may not be available in some languages and countries.)
+For detailed information about IOCTL and FSCTL requests, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md) in the *Kernel Mode Architecture Guide* and "Device Input and Output Control Codes" in the Microsoft Windows SDK documentation. (This resource may not be available in some languages and countries.)
 
 **Neither**  
 Union component used for IRP_MN_KERNEL_CALL and IRP_MN_USER_FS_REQUEST operations when the buffering method is METHOD_NEITHER. For more information about buffering methods, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md) in the *Kernel Mode Architecture Guide*. (This resource may not be available in some languages and countries.)

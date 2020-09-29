@@ -95,7 +95,7 @@ After the client driver is installed, Windows loads the client driver and the fr
 
 While the driver is loading and initializing, several events occur and the framework lets the client driver participate in handling them. On the client driver's side, the driver performs these tasks:
 
-1.  Implements and exports the [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) function from your client driver module so that the framework can get a reference to the driver.
+1.  Implements and exports the [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) function from your client driver module so that the framework can get a reference to the driver.
 2.  Provides a callback class that implements the [IDriverEntry](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface.
 3.  Provides a callback class that implements **IPnpCallbackXxx** interfaces.
 4.  Gets a reference to the device object and configures it according to the client driver's requirements.
@@ -107,7 +107,7 @@ The framework creates the *driver object*, which represents the instance of the 
 
 The complete source code for the driver callback is in Driver.h and Driver.c.
 
-The client driver must define a driver callback class that implements [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) and [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interfaces. The header file, Driver.h, declares a class called CMyDriver, which defines the driver callback.
+The client driver must define a driver callback class that implements [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) and [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interfaces. The header file, Driver.h, declares a class called CMyDriver, which defines the driver callback.
 
 ```ManagedCPlusPlus
 EXTERN_C const CLSID CLSID_Driver;
@@ -170,9 +170,9 @@ public:
 OBJECT_ENTRY_AUTO(CLSID_Driver, CMyDriver)
 ```
 
-The driver callback must be a COM class, meaning it must implement [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) and the related methods. In the template code, ATL classes CComObjectRootEx and CComCoClass contain the **IUnknown** methods.
+The driver callback must be a COM class, meaning it must implement [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) and the related methods. In the template code, ATL classes CComObjectRootEx and CComCoClass contain the **IUnknown** methods.
 
-After Windows instantiates the host process, the framework creates the driver object. To do so, the framework creates an instance of the driver callback class and calls drivers implementation of [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) (discussed in the [Driver entry source code](#driver-entry-source-code) section) and to obtain the client driver’s [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface pointer. That call registers the driver callback object with the framework driver object. Upon successful registration, the framework invokes the client driver's implementation when certain driver-specific events occur. The first method that the framework invokes is the [**IDriverEntry::OnInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_oninitialize) method. In the client driver's implementation of **IDriverEntry::OnInitialize**, the client driver can allocate global driver resources. Those resources must be released in [**IDriverEntry::OnDeinitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_ondeinitialize) that is invoked by the framework just before it is preparing to unload the client driver. The template code provides minimal implementation for the **OnInitialize** and **OnDeinitialize** methods.
+After Windows instantiates the host process, the framework creates the driver object. To do so, the framework creates an instance of the driver callback class and calls drivers implementation of [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) (discussed in the [Driver entry source code](#driver-entry-source-code) section) and to obtain the client driver’s [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface pointer. That call registers the driver callback object with the framework driver object. Upon successful registration, the framework invokes the client driver's implementation when certain driver-specific events occur. The first method that the framework invokes is the [**IDriverEntry::OnInitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_oninitialize) method. In the client driver's implementation of **IDriverEntry::OnInitialize**, the client driver can allocate global driver resources. Those resources must be released in [**IDriverEntry::OnDeinitialize**](https://msdn.microsoft.com/library/windows/hardware/ff554885_ondeinitialize) that is invoked by the framework just before it is preparing to unload the client driver. The template code provides minimal implementation for the **OnInitialize** and **OnDeinitialize** methods.
 
 The most important method of [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) is [**IDriverEntry::OnDeviceAdd**](https://msdn.microsoft.com/library/windows/hardware/ff554885_ondeviceadd). Before the framework creates the framework device object (discussed in the next section), it calls the driver's **IDriverEntry::OnDeviceAdd** implementation. When calling the method, the framework passes an [**IWDFDriver**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdriver) pointer to the driver object and an [**IWDFDeviceInitialize**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize) pointer. The client driver can call **IWDFDeviceInitialize** methods to specify certain configuration options.
 
@@ -305,7 +305,7 @@ In the previous section, you briefly saw the tasks that a client driver performs
 
     In the framework call to the client driver's implementation of the [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method, the framework passes a [**IWDFDeviceInitialize**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize) pointer. The client driver uses this pointer to specify configuration information for the device object to be created. For example, the client driver specifies whether the client driver is a filter or a function driver. To identify the client driver as a filter driver, it calls [**IWDFDeviceInitialize::SetFilter**](https://msdn.microsoft.com/library/windows/hardware/ff556965_setfilter). In that case, the framework creates a filter device object (FiDO); otherwise, a function device object (FDO) is created. Another option that you can set is the synchronization mode by calling [**IWDFDeviceInitialize::SetLockingConstraint**](https://msdn.microsoft.com/library/windows/hardware/ff556965_setlockingconstraint).
 
--   Calls the [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice) method by passing the [**IWDFDeviceInitialize**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize) interface pointer, an [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) reference of the device callback object, and a pointer-to-pointer [**IWDFDevice**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice) variable.
+-   Calls the [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice) method by passing the [**IWDFDeviceInitialize**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize) interface pointer, an [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) reference of the device callback object, and a pointer-to-pointer [**IWDFDevice**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice) variable.
 
     If the [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice) call is successful:
 
@@ -316,7 +316,7 @@ In the previous section, you briefly saw the tasks that a client driver performs
 
     -   The client driver receives the address of the new device object in the [**IWDFDevice**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice) variable. Upon receiving a pointer to the framework device object, the client driver can proceed with initialization tasks, such as setting up queues for I/O flow and registering the device interface GUID.
 
--   Calls [**IWDFDevice::CreateDeviceInterface**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinterfacea) to register the device interface GUID of the client driver. The applications can use the GUID to send requests to the client driver. The GUID constant is declared in Internal.h.
+-   Calls [**IWDFDevice::CreateDeviceInterface**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedeviceinterfacea) to register the device interface GUID of the client driver. The applications can use the GUID to send requests to the client driver. The GUID constant is declared in Internal.h.
 -   Initializes queues for I/O transfers to and from the device.
 
 The template code defines the helper method Initialize, which specifies configuration information and creates the device object.
@@ -381,7 +381,7 @@ Another configuration option is to specify whether the client driver is the filt
 
 The client driver also specifies that none of the framework's calls to the client driver's callbacks are synchronized. The client driver handles all synchronization tasks. To specify that preference, the client driver calls the [**IWDFDeviceInitialize::SetLockingConstraint**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setlockingconstraint) method.
 
-Next, the client driver obtains an [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pointer to its device callback class by calling [**IUnknown::QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)). Subsequently, the client driver calls [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice), which creates the framework device object and registers the client driver's device callback by using the **IUnknown** pointer.
+Next, the client driver obtains an [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) pointer to its device callback class by calling [**IUnknown::QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)). Subsequently, the client driver calls [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice), which creates the framework device object and registers the client driver's device callback by using the **IUnknown** pointer.
 
 Notice that the client driver stores the address of the device object (received through the [**IWDFDriver::CreateDevice**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice) call) in a private data member of the device callback class and then releases that reference by calling DriverSafeRelease (inline function defined in Internal.h). That is because the lifetime of the device object is tracked by the framework. Therefore the client driver is not required to keep additional reference count of the device object.
 
@@ -439,7 +439,7 @@ In the preceding code example, the client driver performs two main tasks: initia
 
 The queues are created and configured in the CMyIoQueue class. The first task is to instantiate that class by calling the static method named CreateInstanceAndInitialize. The client driver calls Configure to initialize queues. CreateInstanceAndInitialize and Configure are declared in CMyIoQueue, which is discussed later in this topic.
 
-The client driver also calls [**IWDFDevice::CreateDeviceInterface**](/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedeviceinterfacea) to register the device interface GUID of the client driver. The applications can use the GUID to send requests to the client driver. The GUID constant is declared in Internal.h.
+The client driver also calls [**IWDFDevice::CreateDeviceInterface**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedeviceinterfacea) to register the device interface GUID of the client driver. The applications can use the GUID to send requests to the client driver. The GUID constant is declared in Internal.h.
 
 **IPnpCallbackHardware implementation and USB-specific tasks**
 
@@ -759,7 +759,7 @@ In the [**IWDFDevice::CreateIoQueue**](/windows-hardware/drivers/ddi/wudfddi/nf-
 
 -   Reference to its queue callback class
 
-    Specifies an [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pointer to its queue callback class. This creates a partnership between the framework queue object and the client driver's queue callback object. When the I/O Manager receives a new request from an application, it notifies the framework. The framework then uses the **IUnknown** pointer to invoke the public methods exposed by the queue callback object.
+    Specifies an [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) pointer to its queue callback class. This creates a partnership between the framework queue object and the client driver's queue callback object. When the I/O Manager receives a new request from an application, it notifies the framework. The framework then uses the **IUnknown** pointer to invoke the public methods exposed by the queue callback object.
 
 -   Default or secondary queue
 
@@ -827,7 +827,7 @@ Exit:
 }
 ```
 
-Let's see how the queue mechanism works. To communicate with the USB device, an application first opens a handle to the device and sends a device I/O control request by calling the [**DeviceIoControl**](/previous-versions/windows/desktop/api/deviceaccess/nn-deviceaccess-ideviceiocontrol) function with a specific control code. Depending on the type of control code, the application can specify input and output buffers in that call. The call is eventually received by I/O Manager, which notifies the framework. The framework creates a framework request object and adds it to the framework queue object. In the template code, because the queue object was created with the WdfIoQueueDispatchParallel flag, the callback is invoked as soon as the request is added to the queue.
+Let's see how the queue mechanism works. To communicate with the USB device, an application first opens a handle to the device and sends a device I/O control request by calling the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function with a specific control code. Depending on the type of control code, the application can specify input and output buffers in that call. The call is eventually received by I/O Manager, which notifies the framework. The framework creates a framework request object and adds it to the framework queue object. In the template code, because the queue object was created with the WdfIoQueueDispatchParallel flag, the callback is invoked as soon as the request is added to the queue.
 
 When the framework invokes the client driver's event callback, it passes a handle to the framework request object that holds the request (and its input and output buffers) sent by the application. In addition, it sends a handle to the framework queue object that contains that request. In the event callback, the client driver processes the request as needed. The template code simply completes the request. The client driver can perform more involved tasks. For instance, if an application requests certain device information, in the event callback, the client driver can create a USB control request and send it to the USB driver stack to retrieve the requested device information. USB control requests are discussed in [USB Control Transfer](usb-control-transfer.md).
 
@@ -902,17 +902,17 @@ DllGetClassObject(
 }
 ```
 
-In the template code the class factory and [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) are implemented in ATL. The preceding code snippet simply invokes the ATL **DllGetClassObject** implementation. In general, **DllGetClassObject** must perform the following tasks:
+In the template code the class factory and [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) are implemented in ATL. The preceding code snippet simply invokes the ATL **DllGetClassObject** implementation. In general, **DllGetClassObject** must perform the following tasks:
 
 1.  Ensure that the CLSID passed by the framework is the GUID for your client driver. The framework retrieves the CLSID for the client driver from the driver's INF file. While validating, make sure that the specified GUID matches the one that you provided in the INF.
 2.  Instantiate the class factory implemented by the client driver. In the template code this is encapsulated by the ATL class.
-3.  Get a pointer to the [**IClassFactory**](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface of the class factory and return the retrieved pointer to the framework.
+3.  Get a pointer to the [**IClassFactory**](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface of the class factory and return the retrieved pointer to the framework.
 
-After the client driver module is loaded in memory, the framework calls the driver-supplied [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) function. In the framework's call to **DllGetClassObject**, the framework passes the CLSID that identifies the client driver and requests a pointer to the [**IClassFactory**](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) interface of a class factory. The client driver implements the class factory that facilitates the creation of the driver callback. Therefore, your client driver must contain at least one class factory. The framework then calls [**IClassFactory::CreateInstance**](/windows/desktop/api/unknwn/nf-unknwn-iclassfactory-createinstance) and requests an [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) pointer to the driver callback class.
+After the client driver module is loaded in memory, the framework calls the driver-supplied [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) function. In the framework's call to **DllGetClassObject**, the framework passes the CLSID that identifies the client driver and requests a pointer to the [**IClassFactory**](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) interface of a class factory. The client driver implements the class factory that facilitates the creation of the driver callback. Therefore, your client driver must contain at least one class factory. The framework then calls [**IClassFactory::CreateInstance**](/windows/win32/api/unknwn/nf-unknwn-iclassfactory-createinstance) and requests an [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) pointer to the driver callback class.
 
 **Exports.def**
 
-In order for the framework to call [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject), the client driver must export the function from a .def file. The file is already include in the Visual Studio project.
+In order for the framework to call [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject), the client driver must export the function from a .def file. The file is already include in the Visual Studio project.
 
 ```ManagedCPlusPlus
 ; Exports.def : Declares the module parameters.
@@ -923,4 +923,4 @@ EXPORTS
         DllGetClassObject   PRIVATE
 ```
 
-In the preceding code snippet from Export.def included with the driver project, the client provides the name of the driver module as the LIBRARY, and [**DllGetClassObject**](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject) under EXPORTS. For more information, see [Exporting from a DLL Using DEF Files](https://www.microsoft.com/download/details.aspx?id=55984).
+In the preceding code snippet from Export.def included with the driver project, the client provides the name of the driver module as the LIBRARY, and [**DllGetClassObject**](/windows/win32/api/combaseapi/nf-combaseapi-dllgetclassobject) under EXPORTS. For more information, see [Exporting from a DLL Using DEF Files](https://www.microsoft.com/download/details.aspx?id=55984).

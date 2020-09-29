@@ -34,7 +34,7 @@ Here are some general pointers to help you decide which implementation you shoul
 <td><p>If you are implementing a GPIO button, describe the button in the system ACPI so that Windows can load the in-box driver, Hidinterrupt.sys, as the button driver that reports events to the operating system.</p>
 <ul>
 <li><a href="acpi-button-device.md" data-raw-source="[ACPI button device](acpi-button-device.md)">ACPI button device</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/gpiobtn/button-behavior" data-raw-source="[Button Behavior](../gpiobtn/button-behavior.md)">Button Behavior</a></li>
+<li><a href="/windows-hardware/drivers/gpiobtn/button-behavior" data-raw-source="[Button Behavior](../gpiobtn/button-behavior.md)">Button Behavior</a></li>
 <li><a href="acpi-button-device.md#sample-buttons-acpi-for-phonetablet" data-raw-source="[Sample buttons ACPI for phone/tablet](acpi-button-device.md#acpi-button-phone)">Sample buttons ACPI for phone/tablet</a></li>
 <li><a href="acpi-button-device.md#sample-buttons-acpi-for-desktop" data-raw-source="[Sample buttons ACPI for desktop](acpi-button-device.md#acpi-button-desktop)">Sample buttons ACPI for desktop</a></li>
 </ul>
@@ -46,12 +46,12 @@ Here are some general pointers to help you decide which implementation you shoul
 <td><p>If you are implementing a non-GPIO button such as a stream of data in the HID format that needs to be injected by another software component, you can choose to write a kernel-mode driver. Starting in Windows 10, you can write a HID source driver by calling programming interfaces that communicate with Virtual HID Framework (VHF) and gets and sets HID Reports to and from the HID class driver.</p>
 <ul>
 <li><a href="virtual-hid-framework--vhf-.md" data-raw-source="[How to write a HID source driver that interacts with Virtual HID Framework (VHF)](virtual-hid-framework--vhf-.md)">How to write a HID source driver that interacts with Virtual HID Framework (VHF)</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[Virtual HID Framework Reference](/windows-hardware/drivers/ddi/index)">Virtual HID Framework Reference</a></li>
+<li><a href="/windows-hardware/drivers/ddi/index" data-raw-source="[Virtual HID Framework Reference](/windows-hardware/drivers/ddi/index)">Virtual HID Framework Reference</a></li>
 </ul>
 <p>Alternately, you can write a kernel-mode HID transport minidriver as supported by the earlier versions of Windows. However, we do not recommend this approach because poorly written KMDF HID transport minidrivers can crash the system.</p>
 <ul>
 <li><a href="transport-minidrivers.md" data-raw-source="[Transport Minidrivers](transport-minidrivers.md)">Transport Minidrivers</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/index" data-raw-source="[HID Minidriver IOCTLs](/windows-hardware/drivers/ddi/index)">HID Minidriver IOCTLs</a></li>
+<li><a href="/windows-hardware/drivers/ddi/index" data-raw-source="[HID Minidriver IOCTLs](/windows-hardware/drivers/ddi/index)">HID Minidriver IOCTLs</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -59,8 +59,8 @@ Here are some general pointers to help you decide which implementation you shoul
 <p><img src="images/hid-umdf.png" alt="HID Transport Minidriver" /></p></td>
 <td><p>If you are implementing a non-GPIO button, instead of using preceding model of writing a HID source driver, you can write a HID transport minidriver in user mode. These drivers are easier to develop than kernel-mode drivers and errors in this driver do not bug check the whole system.</p>
 <ul>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers" data-raw-source="[Creating UMDF HID Minidrivers](../wdf/creating-umdf-hid-minidrivers.md)">Creating UMDF HID Minidrivers</a></li>
-<li><a href="https://docs.microsoft.com/previous-versions/hh463977(v=vs.85)" data-raw-source="[UMDF HID Minidriver IOCTLs](/previous-versions/hh463977(v=vs.85))">UMDF HID Minidriver IOCTLs</a></li>
+<li><a href="/windows-hardware/drivers/wdf/creating-umdf-hid-minidrivers" data-raw-source="[Creating UMDF HID Minidrivers](../wdf/creating-umdf-hid-minidrivers.md)">Creating UMDF HID Minidrivers</a></li>
+<li><a href="/previous-versions/hh463977(v=vs.85)" data-raw-source="[UMDF HID Minidriver IOCTLs](/previous-versions/hh463977(v=vs.85))">UMDF HID Minidriver IOCTLs</a></li>
 </ul></td>
 </tr>
 </tbody>

@@ -13,7 +13,7 @@ Debugging Tools for Windows supports kernel debugging over a network. This topic
 
 > [!IMPORTANT]
 > Setting up a network debugging manually is a complex and error prone process.
-> To set up network debugging automatically, see [Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md). Using the KDNET utility is **strongly** recommended for all debugger users.
+> To set up network debugging automatically, see **[Setting Up KDNET Network Kernel Debugging Automatically](setting-up-a-network-debugging-connection-automatically.md)**. Using the KDNET utility is **strongly** recommended for all debugger users.
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows 7 or later, and the target computer must be running Windows 8 or later.
 

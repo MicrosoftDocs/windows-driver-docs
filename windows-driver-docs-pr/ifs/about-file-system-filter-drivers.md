@@ -21,7 +21,7 @@ A file system filter driver can filter I/O operations for one or more file syste
 
 There are two file system filter models in Windows:
 
-- The [minifilter model](https://docs.microsoft.com/windows-hardware/drivers/ifs/filter-manager-concepts), in which a filter (also called a minifilter) uses system-supplied Filter Manager support, thus simplifying filter development
+- The [minifilter model](./filter-manager-concepts.md), in which a filter (also called a minifilter) uses system-supplied Filter Manager support, thus simplifying filter development
 
 - The [legacy file system filter model](./about-file-system-legacy-filter-drivers.md)
 

@@ -37,4 +37,4 @@ The following list details some requirements for submitting a request.
 
 Reparse points are a powerful feature of Windows, but developers should be aware that there can only be one reparse point per file, and some Windows mechanisms use reparse points (HSM, Native Structured Storage). Developers need to have fallback strategies for when the reparse point tag is already in use for a file.
 
-See the Windows SDK documentation for more information about [reparse points and reparse point tags](https://docs.microsoft.com/windows/win32/fileio/reparse-points).
+See the Windows SDK documentation for more information about [reparse points and reparse point tags](/windows/win32/fileio/reparse-points).

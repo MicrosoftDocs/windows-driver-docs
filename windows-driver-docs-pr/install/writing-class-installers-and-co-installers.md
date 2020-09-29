@@ -48,11 +48,11 @@ Do not save device installation state within the *co-installer* dynamic-link lib
 
 To safely preserve device installer state, class installers or co-installers should save the state information as properties within the device's *driver key* in the registry. To do this, follow these steps:
 
-1.  To retrieve a registry handle to the driver key for a *device instance*, use [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) with the *KeyType* parameter set to DIREG_DRV.
+1.  To retrieve a registry handle to the driver key for a *device instance*, use [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) with the *KeyType* parameter set to DIREG_DRV.
 
-2.  Use [**SetupDiGetDevicePropertyKeys**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) (to retrieve all the property keys for a device instance) or [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) (to retrieve a specified device instance property key).
+2.  Use [**SetupDiGetDevicePropertyKeys**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) (to retrieve all the property keys for a device instance) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) (to retrieve a specified device instance property key).
 
-3.  Use [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to save the device instance property key.
+3.  Use [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to save the device instance property key.
 
 ## Loading executable or DLL files
 

@@ -35,7 +35,7 @@ A DirectX 9.0 driver creates the standard primary surface for a standard display
 
 4.  The driver flips the surface to the nonstandard format.
 
-    While the display device outputs the standard format, the application composes a nonstandard image in one of these back buffers. Once this image is ready for display, the runtime specifies one of the nonstandard surfaces as the target in a call to the driver's [*DdFlip*](/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function. The driver then reprograms the display device to output the nonstandard format.
+    While the display device outputs the standard format, the application composes a nonstandard image in one of these back buffers. Once this image is ready for display, the runtime specifies one of the nonstandard surfaces as the target in a call to the driver's [*DdFlip*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_flip) function. The driver then reprograms the display device to output the nonstandard format.
 
 5.  The application runs.
 

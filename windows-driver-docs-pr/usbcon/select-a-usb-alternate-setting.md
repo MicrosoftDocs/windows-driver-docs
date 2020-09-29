@@ -141,15 +141,15 @@ Exit:
     Enumerate all interfaces by calling the [**IWDFUsbTargetDevice::RetrieveUsbInterface**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetdevice-retrieveusbinterface) method in a loop until the function returns NULL. With each iteration, increment the member index (zero-based). The loop retrieves [**IWDFUsbInterface**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbinterface) pointers to all the enumerated interfaces.
 
 3.  For each interface, get the WinUSB handle by calling [**IWDFUsbInterface::GetWinUsbHandle**](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbinterface-getwinusbhandle). This handle is required by the next step.
-4.  Call [**WinUsb\_GetAssociatedInterface**](/windows/desktop/api/winusb/nf-winusb-winusb_getassociatedinterface) to obtain a handle to the interface. In the *AssociatedInterfaceIndex* parameter, specify the index in step 2.
+4.  Call [**WinUsb\_GetAssociatedInterface**](/windows/win32/api/winusb/nf-winusb-winusb_getassociatedinterface) to obtain a handle to the interface. In the *AssociatedInterfaceIndex* parameter, specify the index in step 2.
 5.  Determine the number of alternate settings in the interface.
 
-    Call the [**WinUsb\_QueryInterfaceSettings**](/windows/desktop/api/winusb/nf-winusb-winusb_queryinterfacesettings) function in a loop and increment the index (zero-based) in each iteration. When all settings are enumerated, the function returns ERROR\_NO\_MORE\_ITEMS. The function also returns interface descriptors for each setting.
+    Call the [**WinUsb\_QueryInterfaceSettings**](/windows/win32/api/winusb/nf-winusb-winusb_queryinterfacesettings) function in a loop and increment the index (zero-based) in each iteration. When all settings are enumerated, the function returns ERROR\_NO\_MORE\_ITEMS. The function also returns interface descriptors for each setting.
 
 6.  By using the value received in the **bNumEndpoints** member of each interface descriptor, and enumerate its endpoints. Inspect the endpoint descriptors and determine which setting meets your requirement.
-7.  Initiate a select-interface request by calling the [**WinUsb\_SetCurrentAlternateSetting**](/windows/desktop/api/winusb/nf-winusb-winusb_setcurrentalternatesetting) function. In the call, specify the alternate setting number associated with the index in step 4.
-8.  Release the interface handle obtained in step 4 by calling the [**WinUsb\_Free**](/windows/desktop/api/winusb/nf-winusb-winusb_free) function.
-9.  Release the WinUSB handle obtained in step 3 by calling the [**WinUsb\_Free**](/windows/desktop/api/winusb/nf-winusb-winusb_free) function.
+7.  Initiate a select-interface request by calling the [**WinUsb\_SetCurrentAlternateSetting**](/windows/win32/api/winusb/nf-winusb-winusb_setcurrentalternatesetting) function. In the call, specify the alternate setting number associated with the index in step 4.
+8.  Release the interface handle obtained in step 4 by calling the [**WinUsb\_Free**](/windows/win32/api/winusb/nf-winusb-winusb_free) function.
+9.  Release the WinUSB handle obtained in step 3 by calling the [**WinUsb\_Free**](/windows/win32/api/winusb/nf-winusb-winusb_free) function.
 10. If you are finished using [**IWDFUsbInterface**](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbinterface) methods, release all interface pointers retrieved in step 2.
 
 Remarks

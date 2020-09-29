@@ -162,7 +162,6 @@ Finally, to determine callback duration for PnP/Power callbacks, the framework r
     ```
 
 -   For development and testing purposes only, enforcement of the driver code signing policy can be temporarily disabled. For more information, see [Installing an Unsigned Driver Package during Development and Test](../install/installing-an-unsigned-driver-during-development-and-test.md).
--   If you captured a trace on Windows 10 Mobile, you'll need to copy MyPerfTrace.etl from the target device to a computer that has Wpa.exe. You can use the [TShell tool](https://sysdev.microsoft.com/Hardware/oem/docs/Phone_Testing/TShell) to do this.
 
 ## Related topics
 

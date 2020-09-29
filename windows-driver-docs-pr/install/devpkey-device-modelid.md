@@ -89,7 +89,7 @@ Requirements
 
 [**ModelID**](/previous-versions/windows/hardware/metadata/ff549295(v=vs.85))
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

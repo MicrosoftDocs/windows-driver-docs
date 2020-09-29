@@ -117,7 +117,7 @@ Windows operating systems include native support for USB host controllers, hubs,
 <td><strong>Write a USB client driver (KMDF, UMDF)</strong>
 <p>Introduces you to USB driver development. Provides information about choosing the most appropriate model for providing a USB driver for your device. This section also includes tutorials about writing your first user-mode and kernel-mode USB drivers by using the USB templates included with Microsoft Visual Studio.</p>
 <p><a href="getting-started-with-usb-client-driver-development.md" data-raw-source="[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)">Getting started with USB client driver development</a></p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/" data-raw-source="[USB device driver programming reference](/windows-hardware/drivers/ddi/_usbref/)">USB device driver programming reference</a></p>
+<p><a href="/windows-hardware/drivers/ddi/_usbref/" data-raw-source="[USB device driver programming reference](/windows-hardware/drivers/ddi/_usbref/)">USB device driver programming reference</a></p>
 <strong>Write a USB host controller driver</strong>
 <p>If you are developing an xHCI host controller that is not compliant with the specification or developing a custom non-xHCI hardware (such as a virtual host controller), you can write a host controller driver that communicates with UCX. For example, consider a wireless dock that supports USB devices. The PC communicates with USB devices through the wireless dock by using USB over TCP as a transport.</p>
 <p><a href="developing-windows-drivers-for-usb-host-controllers.md" data-raw-source="[Developing Windows drivers for USB host controllers](developing-windows-drivers-for-usb-host-controllers.md)">Developing Windows drivers for USB host controllers</a></p>
@@ -200,13 +200,13 @@ Windows operating systems include native support for USB host controllers, hubs,
 <strong>Write a UWP app</strong>
 <p>Provides step-by-step instructions about implementing USB features in a UWP app. To write such an app for a USB device you need Visual Studio and Microsoft Windows Software Development Kit (SDK) .</p>
 <p><a href="talking-to-usb-devices-start-to-finish.md" data-raw-source="[Talk to USB devices, start to finish](talking-to-usb-devices-start-to-finish.md)">Talk to USB devices, start to finish</a></p>
-<p><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb)"><strong>Windows.Devices.Usb</strong></a></p>
+<p><a href="/uwp/api/Windows.Devices.Usb" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb)"><strong>Windows.Devices.Usb</strong></a></p>
 <strong>Write a Windows desktop app</strong>
 <p>Describes how an application can call WinUSB Functions to communicate with a USB device.</p>
 <p><a href="how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md" data-raw-source="[Write a WinUSB application](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)">Write a WinUSB application</a></p>
 <p>WinUSB functions
     <ul>
-    <li><a href="/windows/desktop/api/winusb/" data-raw-source="[Winusb.h](/windows/desktop/api/winusb/)">Winusb.h</a>
+    <li><a href="/windows/win32/api/winusb/" data-raw-source="[Winusb.h](/windows/win32/api/winusb/)">Winusb.h</a>
     </li>
     <li><a href="/windows-hardware/drivers/ddi/usbioctl/" data-raw-source="[Usbioctl.h](/windows-hardware/drivers/ddi/usbioctl/)">Usbioctl.h</a>
     </li>
@@ -219,12 +219,10 @@ Windows operating systems include native support for USB host controllers, hubs,
 <p><a href="https://github.com/Microsoft/Windows-universal-samples" data-raw-source="[UWP app samples for USB](https://github.com/Microsoft/Windows-universal-samples)">UWP app samples for USB</a></p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=618021" data-raw-source="[Windows driver samples for USB](https://go.microsoft.com/fwlink/p/?linkid=618021)">Windows driver samples for USB</a></p>
 <p><strong>Development tools</strong></p>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Download kits and tools for Windows]( ../download-the-wdk.md)">Download kits and tools for Windows</a></td>
+<a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Download kits and tools for Windows]( ../download-the-wdk.md)">Download kits and tools for Windows</a></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

@@ -30,23 +30,21 @@ For NDIS to consider a device power-management -- aware, it must respond to the 
 <tbody>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-capabilities" data-raw-source="[OID_PNP_CAPABILITIES](./oid-pnp-capabilities.md)">OID_PNP_CAPABILITIES</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/network/oid-pnp-capabilities" data-raw-source="[OID_PNP_CAPABILITIES](./oid-pnp-capabilities.md)">OID_PNP_CAPABILITIES</a></p></td>
 <td align="left"><p>The NIC's Power Management abilities</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-query-power" data-raw-source="[OID_PNP_QUERY_POWER](./oid-pnp-query-power.md)">OID_PNP_QUERY_POWER</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/network/oid-pnp-query-power" data-raw-source="[OID_PNP_QUERY_POWER](./oid-pnp-query-power.md)">OID_PNP_QUERY_POWER</a></p></td>
 <td align="left"><p>A query to determine whether the device can transition to a specific power state.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Optional</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-pnp-set-power" data-raw-source="[OID_PNP_SET_POWER](./oid-pnp-set-power.md)">OID_PNP_SET_POWER</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/network/oid-pnp-set-power" data-raw-source="[OID_PNP_SET_POWER](./oid-pnp-set-power.md)">OID_PNP_SET_POWER</a></p></td>
 <td align="left"><p>A command to set the device to specified power state</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

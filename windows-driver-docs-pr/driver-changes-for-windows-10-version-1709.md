@@ -246,9 +246,9 @@ This information is retrieved only when the caller enables the feature in the ho
 
 An application can use these APIs to enable/disable the feature and retrieve the information:
 
-- [WinUsb_GetCurrentFrameNumberAndQpc](/windows/desktop/api/winusb/nf-winusb-winusb_getcurrentframenumberandqpc)
-- [WinUsb_StartTrackingForTimeSync](/windows/desktop/api/winusb/nf-winusb-winusb_starttrackingfortimesync)
-- [WinUsb_StopTrackingForTimeSync](/windows/desktop/api/winusb/nf-winusb-winusb_stoptrackingfortimesync)
+- [WinUsb_GetCurrentFrameNumberAndQpc](/windows/win32/api/winusb/nf-winusb-winusb_getcurrentframenumberandqpc)
+- [WinUsb_StartTrackingForTimeSync](/windows/win32/api/winusb/nf-winusb-winusb_starttrackingfortimesync)
+- [WinUsb_StopTrackingForTimeSync](/windows/win32/api/winusb/nf-winusb-winusb_stoptrackingfortimesync)
 
 Other drivers can send these IOCTL requests to enable/disable the feature and retrieve the information:
 

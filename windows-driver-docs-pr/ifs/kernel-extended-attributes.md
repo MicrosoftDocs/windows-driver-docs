@@ -19,7 +19,7 @@ EA's with the name prefix ``$Kernel`` can only be modified from kernel mode. Any
 It is recommended that a Kernel EA contains at least the following information:
 - USN UsnJournalID
   - The **UsnJournalID** field is a GUID that identifies the current incarnation of USN Journal File.  The USN Journal can be deleted and created from user mode per volume.  Each time the USN Journal is created a new **UsnJournalID** GUID will be generated.  With this field, you can tell if there was a period of time where the USN Journal was disabled and can revalidate.
-    - This value can be retrieved using [FSCTL_QUERY_USN_JOURNAL](/windows/desktop/api/winioctl/ni-winioctl-fsctl_query_usn_journal).
+    - This value can be retrieved using [FSCTL_QUERY_USN_JOURNAL](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_usn_journal).
 - USN FileUSN
   - The **FileUSN** value contains the USN ID of the last change that was made to the file and is tracked inside the Master File Table (MFT) record for the given file.
     - When the USN Journal is deleted, **FileUSN** is reset to zero.
@@ -42,7 +42,7 @@ When only a **FileObject** is available, using [FsRtlQueryKernelEaFile](/previou
 
 
 ## Querying Update Sequence Number Journal Information
-The [FSCTL_QUERY_USN_JOURNAL](/windows/desktop/api/winioctl/ni-winioctl-fsctl_query_usn_journal) operation requires **SE_MANAGE_VOLUME_PRIVILEGE** even when issued from kernel mode unless the **IRP_MN_KERNEL_CALL** value was set in the MinorFunction field of the IRP. The routine **FsRtlKernelFsControlFile** has been exported from the FsRtl package in the Kernel to easily allow kernel mode components to issue this USN request.
+The [FSCTL_QUERY_USN_JOURNAL](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_usn_journal) operation requires **SE_MANAGE_VOLUME_PRIVILEGE** even when issued from kernel mode unless the **IRP_MN_KERNEL_CALL** value was set in the MinorFunction field of the IRP. The routine **FsRtlKernelFsControlFile** has been exported from the FsRtl package in the Kernel to easily allow kernel mode components to issue this USN request.
 
 **NOTE** Starting with Windows 10, version 1703 and later this operation no longer requires SE_MANAGE_VOLUME_PRIVILEGE.  
 
@@ -65,7 +65,7 @@ This delete of Kernel EA’s will be successful even in low memory situations.
 ## See Also
 [FltQueryEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryeafile)  
 [FltSetEaFile](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltseteafile)  
-[FSCTL_QUERY_USN_JOURNAL](/windows/desktop/api/winioctl/ni-winioctl-fsctl_query_usn_journal)  
+[FSCTL_QUERY_USN_JOURNAL](/windows/win32/api/winioctl/ni-winioctl-fsctl_query_usn_journal)  
 [FsRtlQueryKernelEaFile](/previous-versions/mt807492(v=vs.85))      
 [FsRtlSetKernelEaFile](/previous-versions/mt807493(v=vs.85))  
 [ZwQueryEaFile](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryeafile)  

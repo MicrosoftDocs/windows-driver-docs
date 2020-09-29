@@ -12,7 +12,6 @@ ms.date: 06/28/2018
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # Driver Development Tools
@@ -42,22 +41,20 @@ author: EliotSeattle
 <p><a href="tools-for-software-tracing.md" data-raw-source="[Tools for Software Tracing](tools-for-software-tracing.md)">Tools for Software Tracing</a></p>
 <p><a href="additional-driver-tools.md" data-raw-source="[Additional Driver Tools](additional-driver-tools.md)">Additional Driver Tools</a></p>
 <td align="left"><p><strong>Resources</strong></p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Getting Started with Universal Windows Drivers](/windows-hardware/drivers)">Getting Started with Universal Windows Drivers</a></p>
+<p><a href="/windows-hardware/drivers" data-raw-source="[Getting Started with Universal Windows Drivers](/windows-hardware/drivers)">Getting Started with Universal Windows Drivers</a></p>
 <p>Universal Windows drivers allow developers to create a single driver that runs across multiple different device types, from embedded systems to tablets and desktop PCs. Hardware developers can use their existing components and device drivers across different form factors.</p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Converting WDK 8.1 Projects to WDK 10](/windows-hardware/drivers)">Converting WDK 8.1 Projects to WDK 10</a></p>
+<p><a href="/windows-hardware/drivers" data-raw-source="[Converting WDK 8.1 Projects to WDK 10](/windows-hardware/drivers)">Converting WDK 8.1 Projects to WDK 10</a></p>
 <p>You can convert projects and solutions that you created with WDK 8 or Windows Driver Kit (WDK) 8.1 to work with Windows Driver Kit (WDK) 10 and Visual Studio 2015. Before you open the projects or solutions, run the ProjectUpgradeTool. The ProjectUpgradeTool converts the projects and solutions so that they can be built using WDK for Windows 10.</p>
 <p></p>
-<p><a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Validating Universal Windows drivers](/windows-hardware/drivers)">Validating Universal Windows drivers</a></p>
+<p><a href="/windows-hardware/drivers" data-raw-source="[Validating Universal Windows drivers](/windows-hardware/drivers)">Validating Universal Windows drivers</a></p>
 <p>You can use the ApiValidator.exe tool to verify that the APIs that your driver calls are valid for a Universal Windows driver. The tool returns an error if your driver calls an API that is outside the set of valid APIs for Universal Windows drivers. This tool is part of the WDK for Windows 10.</p>
 <a href="wdk-and-visual-studio-build-environment.md" data-raw-source="[WDK and Visual Studio build environment](wdk-and-visual-studio-build-environment.md)">WDK and Visual Studio build environment</a>
 <p>More information and tips for driver developers about using the WDK and the Visual Studio build environment.</p>
-<a href="https://docs.microsoft.com/windows-hardware/drivers" data-raw-source="[Developing, Testing, and Deploying Drivers](/windows-hardware/drivers)">Developing, Testing, and Deploying Drivers</a>
+<a href="/windows-hardware/drivers" data-raw-source="[Developing, Testing, and Deploying Drivers](/windows-hardware/drivers)">Developing, Testing, and Deploying Drivers</a>
 <p>For specific information about building drivers, and using the verification tools and tests in the Visual Studio development environment.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

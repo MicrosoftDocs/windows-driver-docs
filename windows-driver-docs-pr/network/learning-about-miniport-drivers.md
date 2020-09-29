@@ -32,7 +32,7 @@ There are several types of miniport drivers. The following list describes which 
 <a href="" id="connectionless-miniport-drivers"></a>**Connectionless miniport drivers**  
 If you are writing a miniport driver that controls a network interface card (NIC) for connectionless network media (such as Ethernet), read:
 
--   [Introduction to NDIS Miniport Drivers](introduction-to-ndis-miniport-drivers.md)
+-   [Introduction to NDIS Miniport Drivers](deserialized-ndis-miniport-drivers.md)
 
 -   [NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 

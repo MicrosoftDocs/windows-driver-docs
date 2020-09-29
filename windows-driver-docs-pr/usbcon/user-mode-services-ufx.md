@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 All user-mode requests are sent to the Microsoft-provided kernel-mode driver GenericUSBFn.sys. You can create a user-mode service that communicates with GenericUSBFn.sys by sending these I/O control code (IOCTL), and GenericUSBFn.sys handles kernel-mode communication with the USB function drivers.
 
-The IOCTLs declared in [Genericusbfnioctl.h](/windows/desktop/api/genericusbfnioctl/) are used for communicating with GenericUSBFn.sys from a user-mode service.
+The IOCTLs declared in [Genericusbfnioctl.h](/windows/win32/api/genericusbfnioctl/) are used for communicating with GenericUSBFn.sys from a user-mode service.
 
 
 The following steps describe how you can define a USB interface service that interacts with GenericUSBFn.sys to communicate with the USB function drivers:

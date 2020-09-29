@@ -36,36 +36,36 @@ To initiate a transfer request, you must obtain a reference to the bulk pipe obj
   <tbody>
     <tr>
       <tr>
-      <td rowspan="5">Send data to a bulk pipe, obtain a reference to <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbBulkOutPipe"><strong>UsbBulkOutPipe</strong></a>.</td>
+      <td rowspan="5">Send data to a bulk pipe, obtain a reference to <a href="/uwp/api/Windows.Devices.Usb.UsbBulkOutPipe"><strong>UsbBulkOutPipe</strong></a>.</td>
       </tr>
       <tr>
-      <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkOutPipes"><strong>UsbDevice.DefaultInterface.BulkOutPipes[n]</strong></a> if your device configuration exposes one USB interface.</td>
+      <td><a href="/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkOutPipes"><strong>UsbDevice.DefaultInterface.BulkOutPipes[n]</strong></a> if your device configuration exposes one USB interface.</td>
       </tr>
       <tr>
-      <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkOutPipes"><strong>UsbDevice.Configuration.UsbInterfaces[m].BulkOutPipes[n]</strong></a>) for enumerating bulk OUT pipes in multiple interfaces supported by the device.</td>
+      <td><a href="/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkOutPipes"><strong>UsbDevice.Configuration.UsbInterfaces[m].BulkOutPipes[n]</strong></a>) for enumerating bulk OUT pipes in multiple interfaces supported by the device.</td>
       </tr>
-       <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor#Windows_Devices_Usb_UsbInterruptOutEndpointDescriptor_Pipe"><strong>UsbInterface.InterfaceSettings\[m\].BulkOutEndpoints [n].Pipe</strong></a> for enumerating bulk OUT pipes defined by settings in an interface.</td>
+       <td><a href="/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor#Windows_Devices_Usb_UsbInterruptOutEndpointDescriptor_Pipe"><strong>UsbInterface.InterfaceSettings\[m\].BulkOutEndpoints [n].Pipe</strong></a> for enumerating bulk OUT pipes defined by settings in an interface.</td>
       </tr>
       <tr>
-      <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor#Windows_Devices_Usb_UsbInterruptOutEndpointDescriptor_Pipe"><strong>UsbEndpointDescriptor.AsBulkOutEndpointDescriptor.Pipe</strong></a> for getting the pipe object from the endpoint descriptor for the bulk OUT endpoint.
+      <td><a href="/uwp/api/Windows.Devices.Usb.UsbInterruptOutEndpointDescriptor#Windows_Devices_Usb_UsbInterruptOutEndpointDescriptor_Pipe"><strong>UsbEndpointDescriptor.AsBulkOutEndpointDescriptor.Pipe</strong></a> for getting the pipe object from the endpoint descriptor for the bulk OUT endpoint.
       </td>
       </tr>
     </tr>
     <tr>
       <tr>
-        <td rowspan="5">Receive data from a bulk pipe, you can obtain the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbBulkInPipe"><strong>UsbBulkInPipe</strong></a> object</td>
+        <td rowspan="5">Receive data from a bulk pipe, you can obtain the <a href="/uwp/api/Windows.Devices.Usb.UsbBulkInPipe"><strong>UsbBulkInPipe</strong></a> object</td>
       </tr>
        <tr>
-        <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkInPipes"><strong>UsbDevice.DefaultInterface.BulkInPipes[n]</strong></a> if your device configuration exposes one USB interface.</td>
+        <td><a href="/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkInPipes"><strong>UsbDevice.DefaultInterface.BulkInPipes[n]</strong></a> if your device configuration exposes one USB interface.</td>
        </tr>
        <tr>
-       <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkInPipes"><strong>UsbDevice.Configuration.UsbInterfaces[m].BulkInPipes[n]</strong></a> for enumerating bulk IN pipes in multiple interfaces supported by the device.</td>
+       <td><a href="/uwp/api/Windows.Devices.Usb.UsbInterface#Windows_Devices_Usb_UsbInterface_BulkInPipes"><strong>UsbDevice.Configuration.UsbInterfaces[m].BulkInPipes[n]</strong></a> for enumerating bulk IN pipes in multiple interfaces supported by the device.</td>
        </tr>
        <tr>
-       <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_Pipe"><strong>UsbInterface.InterfaceSettings[m].BulkInEndpoints [n].Pipe</strong></a> for enumerating bulk IN pipes defined by settings in an interface.</td>
+       <td><a href="/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_Pipe"><strong>UsbInterface.InterfaceSettings[m].BulkInEndpoints [n].Pipe</strong></a> for enumerating bulk IN pipes defined by settings in an interface.</td>
        </tr>
        <tr>
-        <td><a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_Pipe"><strong>UsbEndpointDescriptor.AsBulkInEndpointDescriptor.Pipe</strong></a> for getting the pipe object from the endpoint descriptor for the bulk IN endpoint.</td>
+        <td><a href="/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_Pipe"><strong>UsbEndpointDescriptor.AsBulkInEndpointDescriptor.Pipe</strong></a> for getting the pipe object from the endpoint descriptor for the bulk IN endpoint.</td>
       </tr>
     </tr>
   </tbody>
@@ -99,10 +99,10 @@ For reading from the device, set the [**UsbBulkInPipe.ReadOptions**](/uwp/api/Wi
 <tr class="even">
 <td><p>Send multiple read requests with maximum efficiency. Boost performance by bypassing error checking.</p></td>
 <td><strong>OverrideAutomaticBufferManagement</strong>
-<p>A data request can be divided into one or more transfers, where each transfer contains a certain number of bytes called the <em>maximum transfer size</em>. For multiple transfers, there might be delay in queuing two transfers due to error checking performed by the driver. This flag bypasses that error checking. To get the maximum transfer size, use the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbBulkInPipe#Windows_Devices_Usb_UsbBulkInPipe_MaxTransferSizeBytes" data-raw-source="[&lt;strong&gt;UsbBulkInPipe.MaxTransferSizeBytes&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkInPipe#Windows_Devices_Usb_UsbBulkInPipe_MaxTransferSizeBytes)"><strong>UsbBulkInPipe.MaxTransferSizeBytes</strong></a> property. If your request size is <strong>UsbBulkInPipe.MaxTransferSizeBytes</strong>, you must set this flag. Note:</p>
+<p>A data request can be divided into one or more transfers, where each transfer contains a certain number of bytes called the <em>maximum transfer size</em>. For multiple transfers, there might be delay in queuing two transfers due to error checking performed by the driver. This flag bypasses that error checking. To get the maximum transfer size, use the <a href="/uwp/api/Windows.Devices.Usb.UsbBulkInPipe#Windows_Devices_Usb_UsbBulkInPipe_MaxTransferSizeBytes" data-raw-source="[&lt;strong&gt;UsbBulkInPipe.MaxTransferSizeBytes&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkInPipe#Windows_Devices_Usb_UsbBulkInPipe_MaxTransferSizeBytes)"><strong>UsbBulkInPipe.MaxTransferSizeBytes</strong></a> property. If your request size is <strong>UsbBulkInPipe.MaxTransferSizeBytes</strong>, you must set this flag. Note:</p>
 <p></p>
 <div class="alert">
-<strong>Important</strong><br/><p>If you set this flag, then you must request data in multiples of the pipe's maximum packet size. That information is stored in the endpoint descriptor. The size depends on the bus speed of the device. For full speed, high speed, and SuperSpeed; the maximum packet sizes are 64, 512, and 1024 bytes respectively. To obtain that value, use the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_MaxPacketSize" data-raw-source="[&lt;strong&gt;UsbBulkInPipe.EndpointDescriptor.MaxPacketSize&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_MaxPacketSize)"><strong>UsbBulkInPipe.EndpointDescriptor.MaxPacketSize</strong></a> property.</p>
+<strong>Important</strong><br/><p>If you set this flag, then you must request data in multiples of the pipe's maximum packet size. That information is stored in the endpoint descriptor. The size depends on the bus speed of the device. For full speed, high speed, and SuperSpeed; the maximum packet sizes are 64, 512, and 1024 bytes respectively. To obtain that value, use the <a href="/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_MaxPacketSize" data-raw-source="[&lt;strong&gt;UsbBulkInPipe.EndpointDescriptor.MaxPacketSize&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbBulkInEndpointDescriptor#Windows_Devices_Usb_UsbBulkInEndpointDescriptor_MaxPacketSize)"><strong>UsbBulkInPipe.EndpointDescriptor.MaxPacketSize</strong></a> property.</p>
 </div>
 <div>
 

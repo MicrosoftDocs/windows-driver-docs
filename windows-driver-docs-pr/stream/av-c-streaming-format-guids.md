@@ -80,11 +80,11 @@ The following table describes the KS data format specifier GUIDs and their corre
 <tbody>
 <tr class="odd">
 <td><p>KSDATAFORMAT_SPECIFIER_DVINFO</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_dvinfo" data-raw-source="[&lt;strong&gt;DVINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_dvinfo)"><strong>DVINFO</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_dvinfo" data-raw-source="[&lt;strong&gt;DVINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/avcstrm/ns-avcstrm-_dvinfo)"><strong>DVINFO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p>KSDATAFORMAT_SPECIFIER_DV_AVC</p></td>
-<td><p>DVINFO and <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo" data-raw-source="[&lt;strong&gt;AVCCONNECTINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo)"><strong>AVCCONNECTINFO</strong></a></p></td>
+<td><p>DVINFO and <a href="/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo" data-raw-source="[&lt;strong&gt;AVCCONNECTINFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/avc/ns-avc-_avcconnectinfo)"><strong>AVCCONNECTINFO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p>KSDATAFORMAT_SPECIFIER_AVC</p></td>
@@ -104,6 +104,4 @@ Microsoft Corporation introduced the *msdv.sys* subunit driver with Windows 98 S
 Microsoft Corporation introduced the *mstape.sys* tape subunit driver with Windows Me. This driver supports D-VHS tape decks and MPEG camcorder devices.
 
 **Note** Microsoft does not supply a codec to support DVCPro format decoding.
-
- 
 

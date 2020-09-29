@@ -47,7 +47,7 @@ Now you can use the custom capability to allow access to either an RPC endpoint 
 
 To allow access to an RPC endpoint to a UWP app that has the custom capability, follow these steps:
 
-1. Call [**DeriveCapabilitySidsFromName**](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
+1. Call [**DeriveCapabilitySidsFromName**](/windows/win32/api/securitybaseapi/nf-securitybaseapi-derivecapabilitysidsfromname) to convert the custom capability name to a security ID (SID).
 2. Add the SID to your access allowed ACE along with any other SIDs that are needed for the security descriptor of your RPC endpoint.
 3. Create an RPC endpoint using the information from the Security Descriptor.
 

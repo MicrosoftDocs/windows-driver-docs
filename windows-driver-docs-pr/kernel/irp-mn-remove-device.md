@@ -55,7 +55,7 @@ This IRP is handled first by the driver at the top of the device stack and then 
 
 In response to this IRP, drivers perform such tasks as powering down the device, removing the device's software representation (device objects, and so forth), and releasing any resources for the device.
 
-For more information about handling this IRP, see [Handling an IRP\_MN\_REMOVE\_DEVICE Request](./handling-an-irp-mn-remove-device-request.md). For general information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+For more information about handling this IRP, see [Handling an IRP\_MN\_REMOVE\_DEVICE Request](./handling-an-irp-mn-remove-device-request.md). For general information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device-in-a-function-driver).
 
 **Sending This IRP**
 

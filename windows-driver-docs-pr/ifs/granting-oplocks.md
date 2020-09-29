@@ -68,7 +68,7 @@ The following table identifies the required conditions necessary to grant an opl
 <ul>
 <li>If opened for SYNCHRONOUS access, STATUS_OPLOCK_NOT_GRANTED is returned (oplocks are not granted for synchronous I/O requests).</li>
 </ul></li>
-<li>There are no <a href="https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-kernel-mode-kernel-transaction-manager" data-raw-source="[TxF](../kernel/windows-kernel-mode-kernel-transaction-manager.md)">TxF</a> transactions on any stream of the file.
+<li>There are no <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-kernel-transaction-manager" data-raw-source="[TxF](../kernel/windows-kernel-mode-kernel-transaction-manager.md)">TxF</a> transactions on any stream of the file.
 <ul>
 <li>Else STATUS_OPLOCK_NOT_GRANTED is returned.</li>
 </ul></li>
@@ -251,8 +251,6 @@ The following table identifies the required conditions necessary to grant an opl
  
 
 **Note**   Read and Level 2 oplocks may coexist on the same stream, and Read and Read-Handle oplocks may coexist, but Level 2 and Read-Handle oplocks may not coexist.
-
- 
 
  
 

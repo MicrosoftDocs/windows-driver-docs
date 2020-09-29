@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Windows 7 introduced a NDIS (Network Device Interface Specification) based driver model for supporting Mobile Broadband (MB) devices. Windows 8 expanded the model to implement a standardized hardware interface for USB-based Mobile Broadband devices. This hardware interface specification is referred as the Mobile Broadband Interface Model (MBIM).
 
-Windows 8 provides an updated class driver that works with devices conforming to the MBIM specification. This model is referred to as the MB Class Driver. However, no class driver can support all of the functionality exposed by an MB device. In order to allow IHV partners to continue to innovate, the MB Class Driver provide mechanisms, such as the [**IMbnDeviceService interface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservice) to allow IHVs to extend the behavior of the class driver functionality.
+Windows 8 provides an updated class driver that works with devices conforming to the MBIM specification. This model is referred to as the MB Class Driver. However, no class driver can support all of the functionality exposed by an MB device. In order to allow IHV partners to continue to innovate, the MB Class Driver provide mechanisms, such as the [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice) to allow IHVs to extend the behavior of the class driver functionality.
 
 **Note**  Functionality to extend MB devices services is accomplished via a user-mode application, not a kernel-mode driver extension.
 

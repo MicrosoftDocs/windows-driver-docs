@@ -40,8 +40,8 @@ These HID APIs are used to move data between an application and a selected devic
 - [HidD\_GetInputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getinputreport)
 - [HidD\_SetFeature](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setfeature)
 - [HidD\_SetOutputReport](/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_setoutputreport)
-- [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile)
-- [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile)
+- [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile)
+- [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile)
 
 ## Report Creation and Interpretation
 

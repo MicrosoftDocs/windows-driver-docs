@@ -11,16 +11,16 @@ ms.localizationpriority: medium
 
 To determine which properties are set for a device instance on Windows Vista and later versions of Windows, follow these steps:
 
-1.  Call [**SetupDiGetDevicePropertyKeys**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) to determine how many properties are set for a device instance. Supply the following parameter values:
+1.  Call [**SetupDiGetDevicePropertyKeys**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) to determine how many properties are set for a device instance. Supply the following parameter values:
 
     -   Set *DeviceInfoSet* to a handle to a device information set that contains the device instance for which to retrieve a list of property keys.
-    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device instance for which to retrieve the list of property keys.
+    -   Set *DeviceInfoData* to a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device instance for which to retrieve the list of property keys.
     -   Set *PropertyKeyArray* to **NULL**.
     -   Set *PropertyKeyCount* to zero.
     -   Set *RequiredPropertyKeyCount* to a pointer to a DWORD-typed variable.
     -   Set *Flags* to zero.
 
-    In response to the call to [**SetupDiGetDevicePropertyKeys**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys), **SetupDiGetDevicePropertyKeys** sets \**RequiredPropertyKeyCount* to the number of properties that are set for the device instance, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    In response to the call to [**SetupDiGetDevicePropertyKeys**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys), **SetupDiGetDevicePropertyKeys** sets \**RequiredPropertyKeyCount* to the number of properties that are set for the device instance, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
 
 2.  Call **SetupDiGetDevicePropertyKeys** again and supply the same parameter values that were supplied in the first call, except for the following changes:
 

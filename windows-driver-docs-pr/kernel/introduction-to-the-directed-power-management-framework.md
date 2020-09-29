@@ -22,9 +22,11 @@ DFx does not power down paging or debug devices.
 
 A WDF driver that specifies **SystemManagedIdleTimeout** or **SystemManagedIdleTimeoutWithHint** in the [WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS](/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings) structure can opt into DFx by adding the following registry key to the INF's [AddReg directive section](../install/inf-addreg-directive.md) within the [DDInstall.HW section](../install/inf-ddinstall-hw-section.md):
 
-```
-HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1
-```
+`HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,1`
+
+A WDF driver targeting version 31 and above will enable DFx by default. If this is undesired, the driver can opt out of DFx by setting the registry key to 0: 
+
+`HKR,"WDF","WdfDirectedPowerTransitionEnable",0x00010001,0`
 
 Because requesting system-managed idle timeout causes WDF to register with PoFx on the driver's behalf, the driver does not need to register with PoFx in this scenario.
 

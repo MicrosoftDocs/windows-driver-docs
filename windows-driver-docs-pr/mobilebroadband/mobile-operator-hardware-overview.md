@@ -115,7 +115,7 @@ The Windows wireless platform supports APIs for the following functionality that
 
 -   Register for unsolicited device events from a specific device
 
-For more information, see [**IMbnDeviceService interface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservice).
+For more information, see [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice).
 
 ### <span id="Legacy_support_and_identity_morphing"></span><span id="legacy_support_and_identity_morphing"></span><span id="LEGACY_SUPPORT_AND_IDENTITY_MORPHING"></span>Legacy support and identity morphing
 
@@ -146,7 +146,7 @@ When the device is first connected to a Windows 7 PC, a typical external mobile
 
 The native Windows 8, Windows 8.1, and Windows 10 class driver eliminates the need for an external USB device to expose itself initially as a mass storage device, since no driver installation is necessary. Windows 8, Windows 8.1, and Windows 10 include the capability to trigger a device’s identity morphing, allowing the device to immediately appear as a mobile broadband device.
 
-To learn how to develop an identity morphing solution, see [**IMbnDeviceService interface**](/windows/desktop/api/mbnapi/nn-mbnapi-imbndeviceservice).\]
+To learn how to develop an identity morphing solution, see [**IMbnDeviceService interface**](/windows/win32/api/mbnapi/nn-mbnapi-imbndeviceservice).\]
 
 ### <span id="Firmware_update_support"></span><span id="firmware_update_support"></span><span id="FIRMWARE_UPDATE_SUPPORT"></span>Firmware update support
 

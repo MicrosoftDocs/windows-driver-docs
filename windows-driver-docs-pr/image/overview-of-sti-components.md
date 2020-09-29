@@ -60,7 +60,7 @@ Microsoft STI defines a set of COM interfaces that provide communications paths 
 
 ### <a href="" id="ddk-user-mode-still-image-minidrivers-si"></a>User-Mode Still Image Minidrivers
 
-User-mode still image minidrivers are vendor-supplied components that provide a device-specific, user-mode interface to an appropriate kernel-mode driver. Each of these user-mode drivers must implement the [IStiUSD COM Interface](istiusd-com-interface.md). They communicate with kernel-mode drivers by calling the [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) Win32 functions (described in the Microsoft Windows SDK documentation). For more information, see [Creating a User-Mode Still Image Minidriver](creating-a-user-mode-still-image-minidriver.md).
+User-mode still image minidrivers are vendor-supplied components that provide a device-specific, user-mode interface to an appropriate kernel-mode driver. Each of these user-mode drivers must implement the [IStiUSD COM Interface](istiusd-com-interface.md). They communicate with kernel-mode drivers by calling the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea), **ReadFile**, **WriteFile**, and [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) Win32 functions (described in the Microsoft Windows SDK documentation). For more information, see [Creating a User-Mode Still Image Minidriver](creating-a-user-mode-still-image-minidriver.md).
 
 ### <a href="" id="ddk-kernel-mode-still-image-drivers-si"></a>Kernel-Mode Still Image Drivers
 

@@ -33,13 +33,11 @@ The following function is used with CAB files. For a detailed function descripti
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupiteratecabineta" data-raw-source="[&lt;strong&gt;SetupIterateCabinet&lt;/strong&gt;](/windows/desktop/api/setupapi/nf-setupapi-setupiteratecabineta)"><strong>SetupIterateCabinet</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/setupapi/nf-setupapi-setupiteratecabineta" data-raw-source="[&lt;strong&gt;SetupIterateCabinet&lt;/strong&gt;](/windows/win32/api/setupapi/nf-setupapi-setupiteratecabineta)"><strong>SetupIterateCabinet</strong></a></p></td>
 <td align="left"><p>Sends a notification to a callback function for each file that is stored in a CAB file.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

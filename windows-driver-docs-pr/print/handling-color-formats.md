@@ -55,7 +55,7 @@ Each color format that a printer supports is specified as an option to the Color
 </tr>
 <tr class="even">
 <td><p>4</p></td>
-<td><p>1 (<a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-cmyk" data-raw-source="&lt;em&gt;CMYK&lt;/em&gt;"><em>CMYK</em></a>)</p></td>
+<td><p>1 (<a href="/windows-hardware/drivers/#wdkgloss-cmyk" data-raw-source="&lt;em&gt;CMYK&lt;/em&gt;"><em>CMYK</em></a>)</p></td>
 </tr>
 </tbody>
 </table>
@@ -103,6 +103,4 @@ For example, suppose you want to define a ColorMode option that causes images to
 ```
 
 In this example, the \***DevBPP** and \***DevNumOfPlanes** attributes represent the four-plane, one-bit-per-plane CMYK format that Unidrv can render and then send to the printer. However, in this case, halftoning operations must be performed on the rendered image before it is printed. [Minidriver-supplied halftoning](minidriver-supplied-halftoning.md) must be used.
-
- 
 

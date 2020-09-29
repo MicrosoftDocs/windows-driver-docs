@@ -53,7 +53,7 @@ Most objects are *temporary*; they exist as long as they are in use, and then th
 
 A temporary object can be accessed by name only as long as its handle count is nonzero. Once the handle count decrements to zero, the object's name is removed from the object manager's namespace. Such objects can still be accessed by pointer as long as their reference count remains greater than zero. Permanent objects can be accessed by name as long as they exist.
 
-An object can be made permanent at the time of its creation by specifying the OBJ\_PERMANENT attribute in the [**OBJECT\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_object_attributes) structure for the object. For more information, see [**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes).
+An object can be made permanent at the time of its creation by specifying the OBJ\_PERMANENT attribute in the [**OBJECT\_ATTRIBUTES**](/windows/win32/api/ntdef/ns-ntdef-object_attributes) structure for the object. For more information, see [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes).
 
 To make a permanent object temporary, use the [**ZwMakeTemporaryObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwmaketemporaryobject) routine. This routine causes an object to be automatically deleted once it is no longer in use. (If the object has no open handles, the object's name is immediately removed from the object manager's namespace. The object itself remains until the reference count falls to zero.)
 
