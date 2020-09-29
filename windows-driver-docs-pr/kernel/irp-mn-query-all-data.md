@@ -1,6 +1,6 @@
 ---
 title: IRP_MN_QUERY_ALL_DATA
-description: All drivers that support WMI must handle this IRP.
+description: Learn about the 'IRP_MN_QUERY_ALL_DATA' kernel-mode driver architecture. All drivers that support WMI must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 9d4e1c2e-73ad-4fc3-99e6-391a64edfa5c
 keywords:
