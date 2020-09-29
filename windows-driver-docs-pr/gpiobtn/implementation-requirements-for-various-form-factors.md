@@ -10,7 +10,7 @@ ms.date: 10/17/2018
 
 This topic describes implementation requirements for various form factors.
 
-| |Form factor|Definition|GPIO indicator implementation requirements|
+|Form factor|Form factor name|Definition|GPIO indicator implementation requirements|
 |----|----|----|----|
 |![slate form factor](images/slate.jpg)|Slate|Tablet form factor with no attachable keyboard|When a stationary docking accessory is available, the docking indicator must be implemented.|
 |![Laptop form factor](images/laptop.jpg)|Laptop|Permanently attached keyboard that is always available for typing.|Statically set the mode to laptop.|
