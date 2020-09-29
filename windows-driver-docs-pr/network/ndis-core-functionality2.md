@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 
 # NDIS Drivers and Services
 
-
 The NDIS Drivers and Services sections describe the four primary types of kernel-mode network device drivers and other general-purpose Network Driver Interface Specification (NDIS) driver services.
 
 This section includes:
@@ -37,8 +36,6 @@ This section includes:
 [NDIS Timer Services](ndis-timer-services2.md)
 
 [Miscellaneous NDIS Functions](miscellaneous-ndis-functions.md)
-
-[Installing and Upgrading Network Components](installing-and-upgrading-network-components.md)
 
 [NDIS core functionality OIDs](ndis-core-functionality-oids.md)
 
