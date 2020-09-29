@@ -1,6 +1,6 @@
 ---
 title: IRP_MN_STOP_DEVICE
-description: All PnP drivers must handle this IRP.
+description: Learn about the 'IRP_MN_STOP_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: a5c81db0-e753-4d91-97e4-c58ea05f5ce8
 keywords:
