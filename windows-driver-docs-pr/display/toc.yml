@@ -677,13 +677,25 @@
       href: enumerating-cofunctional-vidpn-source-and-target-modes.md
     - name: "Determining VidPN Support on a Display Adapter"
       href: determining-whether-a-vidpn-is-supported-on-a-display-adapter.md
-  - name: "Indirect Display Driver Model Overview"
+  - name: "Indirect display drivers (IDDs)"
 # Auto-expanded node
     items: 
-    - name: "Indirect Display Driver Model Overview"
+    - name: "IDD overview"
       href: indirect-display-driver-model-overview.md
-    - name: "IddCx Objects"
+    - name: "IddCx objects"
       href: iddcx-objects.md
+    - name: "IddCx v1.4 updates"
+      items:
+      - name: "Updates for IddCx versions 1.4 and later"
+        href: iddcx1.4-updates.md
+      - name: "IddCx 1.4 updates for console and remote IDDs"
+        href: iddcx1.4-updates-for-console-and-remote-idds.md
+      - name: "IddCx 1.4 updates for remote IDDs"
+        href: iddcx1.4-updates-for-remote-idds.md
+      - name: "Building IddCx v1.4 drivers"
+        href: building-iddcx1.4-drivers.md
+    - name: "EvtIddCxMonitorAssignSwapChain error handling"
+      href: idd-evtiddcxmonitorassignswapchain-error-handling.md
     - name: "Debugging indirect display drivers"
       href: indirect-display-debugging.md
   - name: "Tasks in the Windows Display Driver Model (WDDM)"
