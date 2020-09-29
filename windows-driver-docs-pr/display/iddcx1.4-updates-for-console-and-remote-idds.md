@@ -1,3 +1,18 @@
+---
+title: IddCx 1.4 updates for console and remote IDDs
+description: IddCx version 1.4 updates for console and remote indirect display drivers
+ms.assetid: 4823bb0a-3631-4232-93b4-ceb3c01b0b85
+ms.date: 09/28/2020
+keywords:
+- Console and remote indirect display driver, IddCx versions 1.4 and later
+- Console and remote IDD, IddCx versions 1.4 and later
+- Console indirect display driver
+- Console IDD
+- Remote indirect display driver
+- Remote IDD
+ms.localizationpriority: medium
+---
+
 # IddCx 1.4 updates for console and remote IDDs
 
 The following updates to IddCx version 1.4 apply to both console and remote indirect display drivers (IDDs).
@@ -37,7 +52,7 @@ Where:
 
 ## Update EvtIddCxMonitorAssignSwapChain error handling for Windows 10, version 1903 and later
 
-Starting with Windows 10, version 1903, IddCx error handling for the [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) callback has changed for all driver versions, and introduces a new status code. See [**EvtIdCxMonitorAssignSwapChain** error handling](idd-evtidcxmonitorassignswapchain-error-handling.md) for details.
+Starting with Windows 10, version 1903, IddCx error handling for the [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) callback has changed for all driver versions, and introduces a new status code. See [**EvtIdCxMonitorAssignSwapChain** error handling](idd-evtidcxmonitorassignswapchain-error-handling) for details.
 
 ## For EDID-less scenarios, add EVT_IDD_CX_MONITOR_GET_PHYSICAL_SIZE to provide the physical width and height of the monitor
 

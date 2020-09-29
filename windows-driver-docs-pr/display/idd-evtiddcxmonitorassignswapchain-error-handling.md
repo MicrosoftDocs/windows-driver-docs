@@ -1,3 +1,15 @@
+---
+title: EvtIddCxMonitorAssignSwapChain error handling
+description: Error handling associated with EvtIddCxMonitorAssignSwapChain
+ms.assetid: 68e5f3cd-2551-4e36-85dc-5bc42e0e48a6
+ms.date: 09/28/2020
+keywords:
+- EvtIddCxMonitorAssignSwapChain, error handling
+- EvtIddCxMonitorAssignSwapChain error handling, indirect display driver
+- EvtIddCxMonitorAssignSwapChain error handling, IDD
+ms.localizationpriority: medium
+---
+
 # EvtIddCxMonitorAssignSwapChain error handling
 
 ## Change in EvtIddCxMonitorAssignSwapChain error handling

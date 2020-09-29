@@ -1,3 +1,14 @@
+---
+title: Updates for IddCx versions 1.4 and later
+description: IddCx version 1.4 updates for indirect display drivers
+ms.assetid: 4220c3cb-57f0-401a-a39f-1d690f717d94
+ms.date: 09/28/2020
+keywords:
+- Indirect display driver, IddCx versions 1.4 and later
+- IDD, IddCx versions 1.4 and later
+ms.localizationpriority: medium
+---
+
 # Updates for IddCx versions 1.4 and later
 
 This section details features introduced in IddCx 1.4, which is supported in Windows 10 version 1903, and provides guidance on how to update an indirect display driver (IDD) for IddCx 1.4.

@@ -1,19 +1,21 @@
 ---
 title: Indirect display driver model overview
-description: The indirect display driver model was designed to provide a simple user mode driver model to support monitors that are not connected to traditional GPU display outputs.
+description: The indirect display driver model provides a simple user mode driver model to support monitors that are not connected to traditional GPU display outputs.
 ms.assetid: E2E64500-5F99-42A7-8945-B496026EA142
 keywords:
-- Indirect display driver, Windows
-- IDD, Windows
+- Indirect display driver, WDK
+- IDD, WDK
+- Indirect display driver model
+- IDD model
 - Indirect display driver implementation
 - IDD implementation
-ms.date: 09/24/2020
+ms.date: 09/28/2020
 ms.localizationpriority: medium
 ---
 
-# Indirect display driver model overview
+# Indirect display driver overview
 
-The indirect display driver (IDD) model was designed to provide a simple user-mode driver model to support monitors that are not connected to traditional GPU display outputs. An example is a dongle connected to the PC via USB that has a regular (VGA, DVI, HDMI, DP etc) monitor connected to it.
+The indirect display driver (IDD) model provides a simple user-mode driver model to support monitors that are not connected to traditional GPU display outputs. An example is a dongle connected to the PC via USB that has a regular (VGA, DVI, HDMI, DP etc) monitor connected to it.
 
 ## IDD implementation
 

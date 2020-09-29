@@ -1,8 +1,21 @@
+---
+title: IddCx 1.4 updates for remote IDDs
+description: IddCx version 1.4 updates for remote indirect display drivers
+ms.assetid: 4e065381-f1cd-401a-9844-f85eaf414b5f
+ms.date: 09/28/2020
+keywords:
+- Remote indirect display driver, IddCx versions 1.4 and later
+- Remote IDD, IddCx versions 1.4 and later
+- Remote indirect display driver
+- Remote IDD
+ms.localizationpriority: medium
+---
+
 # IddCx 1.4 updates for remote IDDs
 
 The following updates to IddCx version 1.4 apply to remote indirect display drivers (IDDs) only.
 
-Remote IDD developers should also see [IddCx 1.4 updates for console and remote IDDs](iddcx1.4-updates-for-console-andremote-idds.md) for additional updates.
+Remote IDD developers should also see [IddCx 1.4 updates for console and remote IDDs](iddcx1.4-updates-for-console-and-remote-idds.md) for additional updates.
 
 ## Declare a remote IDD for remote sessions
 
