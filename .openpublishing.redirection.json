@@ -8240,6 +8240,26 @@
                             "source_path":  "windows-driver-docs-pr/kernel/rules-for-handling-power-irps.md",
                             "redirect_url":  "/windows-hardware/drivers/kernel/calling-iocalldriver-versus-calling-pocalldriver",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/ifs/tracking-per-stream-context-in-a-legacy-file-system-filter-driver.md",
+                            "redirect_url":  "/windows-hardware/drivers/ifs/file-streams--stream-contexts--and-per-stream-contexts",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/ifs/using-extra-create-parameters-with-an-irp-mj-create-operation.md",
+                            "redirect_url":  "/windows-hardware/drivers/ifs/using-ecps-to-process-irp-mj-create-operations-in-a-file-system-minifilter",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/sensors/sensor-properties2.md",
+                            "redirect_url":  "/windows-hardware/drivers/sensors/common-sensor-properties",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/storage/storport-driver.md",
+                            "redirect_url":  "/windows-hardware/drivers/storage/storport-driver-overview",
+                            "redirect_document_id":  false
                         }
                      ]
 }
