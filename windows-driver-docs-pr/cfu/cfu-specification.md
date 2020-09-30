@@ -1,14 +1,14 @@
 ---
-title: Component Firmware Update (CFU) Protocol Specification
-description: This specification describes a generic HID protocol to update firmware for components without interrupting the device operation during a download.
-ms.date: 09/01/2020
+title: Component Firmware Update (CFU) protocol specification
+description: Provides detailed information on the Component Firmware Update (CFU) protocol offer, content, and firmware update command sequence.
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CFU) Protocol Specification
+# Component Firmware Update (CFU) protocol specification
 
 This specification describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download. The specification supports configurations where the component accepting the firmware might have sub-components, which require separate firmware images. The specification allows component in-charge to decide whether to accept the firmware. It also acts as an optimization because the firmware image is only sent to the component if it is able or ready to accept it.
 

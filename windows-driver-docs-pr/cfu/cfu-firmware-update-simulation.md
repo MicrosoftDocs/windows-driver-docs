@@ -1,16 +1,16 @@
 ---
-title: CFU virtual HID device firmware update
-description: Provides a walkthrough of updating firmware for the Component Firmware Update (CFU) virtual HID device sample.
-ms.date: 09/01/2020
+title: CFU virtual HID device firmware update simulation
+description: Provides a walkthrough of a simulated firmware update on a virtual HID device.
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# CFU virtual HID device firmware update
+# CFU virtual HID device firmware update simulation
 
-This topic provides a walkthrough of updating firmware for the Component Firmware Update (CFU) virtual HID device sample.
+This topic provides a walkthrough of a simulated firmware update on a virtual HID device.
 
 ## Build and install the CFU virtual HID device sample
 

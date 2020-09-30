@@ -1,14 +1,14 @@
 ---
-title: Component Firmware Update (CFU) inbox HIDCFU driver INF
-description: Component Firmware Update (CFU) inbox HIDCFU driver INF
-ms.date: 09/01/2020
+title: Component Firmware Update (CFU) inbox HIDCFU driver INF configuration
+description: Provides information on configuring the inbox HIDCFU driver INF file for Component Firmware Update (CFU).
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CFU) inbox HIDCFU driver INF
+# Component Firmware Update (CFU) inbox HIDCFU driver INF configuration
 
 Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely update firmware for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, a sample CFU inbox HIDCFU driver INF file for the inbox driver (HidCfu.dll), and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
 

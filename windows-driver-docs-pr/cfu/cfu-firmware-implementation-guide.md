@@ -1,18 +1,18 @@
 ---
-title: Component Firmware Update (CFU) engineering guide
-description: Component Firmware Update (CFU) engineering guide
-ms.date: 09/01/2020
+title: Component Firmware Update (CFU) firmware implementation guide
+description: Provides detailed guidance on implementing the Component Firmware Update (CFU) protocol and creating new firmware images to install on the target device.
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CFU) engineering guide
+# Component Firmware Update (CFU) firmware implementation guide
 
 Component Firmware Update (CFU) is a protocol and a process for submitting new firmware images to be installed on the target device.
 
-CFU submissions to the resident firmware are file pairs.  Each submission is a pair of files, one file is the offer part, the other file is the content part. Each CFU submission (each offer and content pair) is required to be created off-line before the submission is sent to the firmware that implements the CFU process.
+CFU submissions to the resident firmware are file pairs, one file is the offer part, the other file is the content part. Each CFU submission (each offer and content pair) is required to be created off-line before the submission is sent to the firmware that implements the CFU process.
 
 In the sample [Firmware](https://github.com/Microsoft/CFU/tree/master/Firmware) source code in the CFU repository on GitHub, the general implementation agnostic common code for CFU is contained in `ComponentFwUpdate.c`. All other files are helper files that can be updated or modified to the developer's unique implementation.
 

@@ -1,18 +1,18 @@
 ---
-title: Component Firmware Update (CFU) standalone tool sample
-description: Component Firmware Update (CFU) standalone tool sample
-ms.date: 09/01/2020
+title: Component Firmware Update (CFU) standalone tool
+description: Provides information on the Component Firmware Update (CFU) standalone tool that sends firmware update image files to a device.
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CFU) standalone tool sample
+# Component Firmware Update (CFU) standalone tool
 
-The CFU standalone tool sample sends firmware image update files to a device. Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
+The [CFU standalone tool](https://github.com/microsoft/CFU/tree/master/Tools/ComponentFirmwareUpdateStandAloneToolSample) sends firmware image update files to a device. Before sending the firmware image, the tool sends several commands to the device with firmware offers. Only if the device accepts, the tool sends the firmware payload. The communication between the tool and the device is in accordance with the [CFU protocol](cfu-specification.md), an open source specification (included with CFU) based on the HID protocol.
 
-This tool reads an offer file and passes a firmware update image file in SREC bin format to a device.  It is also capable of searching for the device based on the protocol settings and requesting/printing firmware version information.
+This tool reads an offer file and passes a firmware update image file to a device.  It is also capable of searching for the device based on the protocol settings and requesting/printing firmware version information.
 
 It requires a protocol settings text .csv file to be passed as an argument.
 

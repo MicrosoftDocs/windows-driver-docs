@@ -1,7 +1,7 @@
 ---
 title: Component Firmware Update (CFU) 
 description: Provides information about Component Firmware Update (CFU)
-ms.date: 09/28/2020
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,7 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 | Topic | Description |
 |--|--|
 | [CFU firmware implementation guide](cfu-firmware-implementation-guide.md) | Provides detailed guidance on implementing the CFU firmware protocol and creating new firmware images to install on the target device. |
-| [CFU inbox driver INF configuration](cfu-inbox-driver-inf-configuration.md) | Provides information on configuring the inbox driver INF file for your firmware update. |
+| [CFU inbox HIDCFU driver INF configuration](cfu-inbox-driver-inf-configuration.md) | Provides information on configuring the inbox HIDCFU driver INF file for your firmware update. |
 | [CFU protocol specification](cfu-specification.md) | Provides detailed information on the CFU protocol offer, content, and firmware update command sequence. |
 | [CFU standalone tool](cfu-standalone-tool.md) | Provides information on the CFU standalone tool that sends firmware update image files to a device. |
 | [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) | Simulates updating firmware on a virtual HID device. |
