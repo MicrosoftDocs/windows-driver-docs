@@ -1,6 +1,6 @@
 ---
 title: Storport driver support routines
-description: Describes the Storport miniport driver routines and differences between the design of the SCSI port driver and that of the Storport driver.
+description: Learn about the Storport driver routines, such as direct memory access and I/O request processing support routines.
 ms.assetid: 15f20a83-43cc-40d4-8fa6-031affca5ee2
 keywords:
 - Storport driver support routines
