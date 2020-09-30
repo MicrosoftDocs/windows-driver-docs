@@ -56,7 +56,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 <td><p>For learning purposes, popular choices are:</p>
 <ul>
 <li>OSR USB FX2 learning kit. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from <a href="https://www.osronline.com/" data-raw-source="[OSR Online](https://www.osronline.com/)">OSR Online</a>.</li>
-<li>Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="https://jjgtechnologies.com/mutt.md" data-raw-source="[JJG Technologies](https://jjgtechnologies.com/mutt.md)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, download the MUTT software package from <a href="mutt-software-package.md" data-raw-source="[this Web site](mutt-software-package.md)">this Web site</a> and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
+<li>Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="http://www.jjgtechnologies.com/mutt.htm" data-raw-source="[JJG Technologies](http://www.jjgtechnologies.com/mutt.htm)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, download the MUTT software package from <a href="mutt-software-package.md" data-raw-source="[this Web site](mutt-software-package.md)">this Web site</a> and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
 </ul></td>
 </tr>
 <tr class="odd">
