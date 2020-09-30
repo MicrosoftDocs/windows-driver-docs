@@ -22,4 +22,4 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 | [CFU inbox driver INF configuration](cfu-inbox-driver-inf-configuration.md) | Provides information on configuring the inbox driver INF file for your firmware update. |
 | [CFU protocol specification](cfu-specification.md) | Provides detailed information on the CFU protocol offer, content, and firmware update command sequence. |
 | [CFU standalone tool](cfu-standalone-tool.md) | Provides information on the CFU standalone tool that sends firmware update image files to a device. |
-| [CFU HID device firmware update simulation](cfu-firmware-update-simulation.md) | Simulates updating firmware on a virtual HID device. |
+| [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) | Simulates updating firmware on a virtual HID device. |

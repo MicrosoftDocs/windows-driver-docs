@@ -11,5 +11,5 @@
     href: cfu-specification.md
   - name: "CFU standalone tool"
     href: cfu-standalone-tool.md
-  - name: "CFU HID device firmware update simulation"
+  - name: "CFU virtual HID device firmware update simulation"
     href: cfu-firmware-update-simulation.md
