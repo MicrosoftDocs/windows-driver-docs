@@ -35,7 +35,7 @@ Get a USB device for which you will be writing the client driver. In most cases,
 
 If you are new to USB driver development, use the OSR USB FX2 learning kit to study USB samples included with the WDK. You can get the learning kit from [OSR Online](https://www.osronline.com/). It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
 
-You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](https://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
+You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/mutt.htm). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
 **Recommended reading**
 
