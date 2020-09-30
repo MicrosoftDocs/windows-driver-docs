@@ -1,6 +1,6 @@
 ---
 title: D3DKMT\_MULTIPLANE\_OVERLAY\_YCbCr\_FLAGS enumeration
-description: Reserved for system use. Do not use in your driver.
+description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_YCbCr\_FLAGS enumeration, which is reserved for system use. Do not use in your driver.
 ms.assetid: 3bfcd424-961f-4efe-a928-2ee7fbd29f4a
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_YCbCr_FLAGS enumeration Display Devices"]
 topic_type:
