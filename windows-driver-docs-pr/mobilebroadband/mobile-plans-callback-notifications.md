@@ -272,7 +272,7 @@ When a user completes a purchase in the web portal by adding more balance to an 
 
 The following diagram shows the high level flow for how the Mobile Plans app supports adding balance.
 
-![Mobile Plans add balancesequence diagram](images/mobile_plans_add_balance_flow.png)
+![Diagram that shows how a Mobile Plans app supports adding balance.](images/mobile_plans_add_balance_flow.png)
 
 ### MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData)
 
