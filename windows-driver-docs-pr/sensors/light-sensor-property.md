@@ -10,13 +10,13 @@ ms.localizationpriority: medium
 
 The property key for the light sensor.
 
-|Property key|Type|Access (R/O, R/W)|Required/Optional|Description|
-|----|----|----|----|----|
-|PKEY_LightSensor_ResponseCurve|VT_VECTOR \| VT_UI4|R/O|Required|The response curve of the light sensor.|
-|DEVPKEY_SensorData_LightLevel_AutoBrightnessPreferred|VT_BOOL|R/O|Optional|The light sensor is preferred for auto-brightness.|
-|DEVPKEY_SensorData_LightLevel_ColorCapable|VT_BOOL|R/O|Optional. Required if supporting chromaticity and light temperature.|The light sensor supports light temperature and/or chromaticity x/y.|
+| Property key | Type | Access (R/O, R/W) | Required/Optional | Description |
+| --- | --- | --- | --- | --- |
+| PKEY_LightSensor_ResponseCurve | VT_VECTOR | R/O | Required | The response curve of the light sensor. |
+| DEVPKEY_SensorData_LightLevel_AutoBrightnessPreferred | VT_BOOL | R/O | Optional | The light sensor is preferred for auto-brightness. |
+| DEVPKEY_SensorData_LightLevel_ColorCapable | VT_BOOL | R/O | Optional | Required if supporting chromaticity and light temperature. The light sensor supports light temperature and/or chromaticity x/y. |
 
-For more information about the data type shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+For more information about the data type shown in the **Type** column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 ## Remarks
 
@@ -41,10 +41,4 @@ To use this property key to set the value of its related property, you can use t
 
 For a complete example of sensor properties being set by using their related property keys, see the [client.cpp file](https://github.com/Microsoft/Windows-driver-samples/blob/master/sensors/ADXL345Acc/client.cpp) in the ADXL345Acc sample driver, and scroll down to the **NTSTATUS ADXL345AccDevice::Initialize(...)** routine.
 
-## Requirements
-
 **Header:** Sensorsdef.h
-
-## Related topics
-
-[Common sensor properties](common-sensor-properties.md)
