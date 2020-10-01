@@ -1,6 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1903
-description: This section describes new features for driver development in Windows 10.
+description: Learn about new features for driver development in Windows 10, such as camera driver features IR Torch and the USB Video Class 1.5 extension.
 ms.assetid: 90f7754d-be7a-408d-8b89-b173a86c4fa3
 ms.date: 04/28/2020
 ms.localizationpriority: medium
