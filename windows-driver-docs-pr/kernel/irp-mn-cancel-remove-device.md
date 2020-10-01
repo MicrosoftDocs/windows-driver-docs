@@ -1,6 +1,6 @@
 ---
 title: IRP_MN_CANCEL_REMOVE_DEVICE
-description: All PnP drivers must handle this IRP.
+description: Learn about the 'IRP_MN_CANCEL_REMOVE_DEVICE' kernel-mode driver architecture. All PnP drivers must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 5cadb1e2-7011-42a5-8e41-6473069b25a6
 keywords:

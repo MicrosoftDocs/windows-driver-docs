@@ -1,6 +1,6 @@
 ---
 title: DTrace Code Samples 
-description: DTrace supports the D programing language. This topic provide D code samples.
+description: Learn about DTrace, which supports the D programing language. See code samples and view additional available support.
 ms.assetid: abf23d76-423d-4d1e-afde-83739015bbff
 keywords:
 - DTrace WDK
