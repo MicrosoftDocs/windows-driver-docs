@@ -1,6 +1,6 @@
 ---
 title: Building a Light Testing Tool (MALT)
-description: This topic provides instructions on how to use the MALT (Microsoft Ambient Light Tool) as a light testing solution.
+description: Learn how to build a MALT (Microsoft Ambient Light Tool) to use for testing and calibrating screen brightness.
 ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a8
 ms.date: 12/13/2018
 ms.localizationpriority: medium
