@@ -33,7 +33,7 @@ This section describes the following audio port object interfaces:
 
 [IPortWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic)
 
-[IPortWavePci](windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci)
+[IPortWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci)
 
 [IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert)
 
