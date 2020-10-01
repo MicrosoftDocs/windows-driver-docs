@@ -46,7 +46,7 @@ The **KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST** property is a filter prop
 <td><p>No</p></td>
 <td><p>Pin factory (via Filter instance)</p></td>
 <td><p>KSP_PIN</p></td>
-<td><a href="https://msdn.microsoft.com/library/dn457711(v=vs.85)"><strong>KSP_PINMODE</strong></a></td>
+<td><a href="/windows/win32/api/msapofxproxy/ns-msapofxproxy-ksp_pinmode"><strong>KSP_PINMODE</strong></a></td>
 </tr>
 </tbody>
 </table>
@@ -67,7 +67,7 @@ The generic proxy APO receives **KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST*
 
 If the property descriptor specifies a KS pin that does not support **KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST**, then the driver must return STATUS\_NOT\_SUPPORTED.
 
-If the property descriptor specifies an *AudioProcessingMode* value that the driver does not support, then the driver must return STATUS\_INVALID\_PARAMETER. Note that an audio driver must support the [**KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES**](https://msdn.microsoft.com/library/dn457708\(v=vs.85\)) property to be able to indicate its supported audio signal processing modes.
+If the property descriptor specifies an *AudioProcessingMode* value that the driver does not support, then the driver must return STATUS\_INVALID\_PARAMETER. Note that an audio driver must support the [**KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES**](ksproperty-audiosignalprocessing-modes.md) property to be able to indicate its supported audio signal processing modes.
 
 ## Requirements
 
@@ -90,7 +90,6 @@ If the property descriptor specifies an *AudioProcessingMode* value that the dri
 
 ## See also
 
-[**KSP\_PINMODE**](https://msdn.microsoft.com/library/dn457711\(v=vs.85\))
+[**KSP\_PINMODE**](/windows/win32/api/msapofxproxy/ns-msapofxproxy-ksp_pinmode)
 
-[**KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES**](https://msdn.microsoft.com/library/dn457708\(v=vs.85\))
- 
+[**KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES**](ksproperty-audiosignalprocessing-modes.md)

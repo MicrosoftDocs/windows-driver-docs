@@ -56,7 +56,7 @@ An AEC node should number its logical pins with the pin IDs from header file Ksm
 
  
 
-Note that the pins in the preceding table are logical pins on the node, which are used solely to specify connections internal to the filter, rather than external pins on the filter, which are used to connect to other filters. For more information, see [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
+Note that the pins in the preceding table are logical pins on the node, which are used solely to specify connections internal to the filter, rather than external pins on the filter, which are used to connect to other filters. For more information, see [**PCCONNECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcconnection_descriptor).
 
 For information about how a filter containing an AEC node can provide support for full-duplex DirectSound applications, see [DirectSound Capture Effects](./directsound-capture-effects.md).
 

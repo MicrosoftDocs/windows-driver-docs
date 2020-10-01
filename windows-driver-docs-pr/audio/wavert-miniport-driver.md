@@ -2,7 +2,7 @@
 title: WaveRT Miniport Driver
 description: WaveRT Miniport Driver
 ms.assetid: 154dc921-424f-4021-8f17-5482ceef99a8
-ms.date: 04/20/2017
+ms.date: 10/01/2020
 ms.localizationpriority: medium
 ---
 
@@ -61,10 +61,10 @@ Retrieves the current play or record position as a byte offset from the beginnin
 
 Retrieves the information that the port driver must have to expose the position register to the audio subsystem and its clients.
 
-[**IMiniportWaveRTStream::SetFormat**](/previous-versions/windows/hardware/drivers/ff536753(v=vs.85))
+[**IMiniportWaveRTStream::SetFormat**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-setformat)
 
 Sets the data format of the wave stream.
 
-[**IMiniportWaveRTStream::SetState**](/previous-versions/windows/hardware/drivers/ff536756(v=vs.85))
+[**IMiniportWaveRTStream::SetState**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-setstate)
 
 Changes the transport state of the audio stream.
