@@ -18,7 +18,7 @@ This section describes constants used in Windows Filtering Platform callout driv
 
 [Filtering layer identifiers](management-filtering-layer-identifiers.md)
 
-[Filtering conditions](filtering-conditions.md)
+[Filtering conditions](filtering-condition-identifiers.md)
 
 [Metadata fields](metadata-field-identifiers.md)
 
