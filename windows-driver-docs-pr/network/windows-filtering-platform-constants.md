@@ -16,11 +16,11 @@ This section describes constants used in Windows Filtering Platform callout driv
 
 [Built-in callout identifiers](built-in-callout-identifiers.md)
 
-[Filtering layer identifiers](filtering-layer-identifiers.md)
+[Filtering layer identifiers](management-filtering-layer-identifiers.md)
 
 [Filtering conditions](filtering-conditions.md)
 
-[Metadata fields](metadata-fields.md)
+[Metadata fields](metadata-field-identifiers.md)
 
 [Data field identifiers](data-field-identifiers.md)
 
