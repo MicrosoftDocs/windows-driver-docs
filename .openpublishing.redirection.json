@@ -5228,7 +5228,7 @@
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/mbb-device-mbim-parameters.md",
-                             "redirect_URL":  "/windows-hardware/drivers/ddi/_netvista/ns-mbbcx-_mbb_device_mbim_parameters",
+                             "redirect_URL":  "/windows-hardware/drivers/ddi/mbbcx/ns-mbbcx-_mbb_device_mbim_parameters",
                              "redirect_document_id":  false
                          },
                          {
