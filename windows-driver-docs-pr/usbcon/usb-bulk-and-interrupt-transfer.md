@@ -46,7 +46,7 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
 This analyzer trace shows an example bulk OUT transaction at high speed.
 
-![trace of an example data transaction.](images/bulk-out-hs.png)
+![Screenshot that shows a trace of an example bulk OUT analyzer transaction.](images/bulk-out-hs.png)
 
 In the preceding trace, the host initiates a bulk OUT transfer to a high-speed bulk endpoint, by sending a token packet with PID set to OUT (OUT token). The packet contains the address of the device and target endpoint. After the OUT packet, the host sends a data packet that contains the bulk payload. If the endpoint accepts the incoming data, it sends an ACK packet. In this example, we can see that the host sent 31 bytes to device address:1; endpoint address: 2.
 
@@ -54,7 +54,7 @@ If the endpoint is busy at the time the data packet arrives and is not able to r
 
 This analyzer trace shows an example SuperSpeed bulk OUT transaction.
 
-![trace of an example data transaction.](images/bulk-out.png)
+![Screenshot that shows a trace of an example SuperSpeed bulk OUT data transaction.](images/bulk-out.png)
 
 In the preceding trace, the host initiates an OUT transaction to a SuperSpeed bulk endpoint by sending a data packet. The data packet contains the bulk payload, device, and endpoint addresses. In this example, we can see that the host sent 31 bytes to device address:4; endpoint address: 2.
 
@@ -64,7 +64,7 @@ The device receives and acknowledges data packet and sends an ACK packet back to
 
 This analyzer trace shows an example bulk IN transaction at high speed.
 
-![trace of an example data transaction.](images/bulk-in-hs.png)
+![Screenshot that shows a trace of an example bulk IN data transaction.](images/bulk-in-hs.png)
 
 In the preceding trace, the host initiates the transaction by sending a token packet with PID set to IN (IN token). The device then sends a data packet with bulk payload. If the endpoint has no data to send or is not yet ready to send data, the device can send a NAK handshake packet. The host retries the IN transfer until it receives an ACK packet from the device. That ACK packet implies that the device has accepted the data.
 

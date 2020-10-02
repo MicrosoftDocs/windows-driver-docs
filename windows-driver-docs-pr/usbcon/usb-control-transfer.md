@@ -156,7 +156,7 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
     Here is the trace for the data transaction.
 
-    ![trace of an example data transaction.](images/datra-trans.png)
+    ![Screenshot that shows a trace of an example data transaction.](images/datra-trans.png)
 
     Upon receiving the ACK packet, the host initiates the data transaction. To initiate the transaction, it sends a token packet (\#450) with direction as IN (called IN token).
 
@@ -172,7 +172,7 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
     Here is the next data transaction:
 
-    ![trace of an example data transaction.](images/datra-trans2.png)
+    ![Screenshot that shows a trace of the new data transaction.](images/datra-trans2.png)
 
     The host initiates the preceding data transaction by sending an IN token (\#463) and requesting the next 8 bytes from the device. The device responds with a data packet (\#464) that contains the next 8 bytes of the device descriptor.
 
@@ -180,7 +180,7 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
     Next, the host requests the last 2 bytes in another data transaction as follows:
 
-    ![trace of an example data transaction.](images/datra-trans3.png)
+    ![Screenshot that shows a trace of the new example data transaction in which the host requests the last 2 bytes.](images/datra-trans3.png)
 
     Therefore, we see that to transfer 18 bytes from the device to the host, the host keeps track of the number of bytes transferred and initiated three data transactions (8+8+2).
 
