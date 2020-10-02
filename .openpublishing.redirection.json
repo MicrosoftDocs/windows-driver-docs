@@ -5093,7 +5093,7 @@
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/mbb-device-mbim-parameters-init.md",
-                             "redirect_URL":  "/windows-hardware/drivers/ddi/_netvista/nf-mbbcx-mbb_mbim_parameters_init",
+                             "redirect_URL":  "/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbb_mbim_parameters_init",
                              "redirect_document_id":  false
                          },
                          {
