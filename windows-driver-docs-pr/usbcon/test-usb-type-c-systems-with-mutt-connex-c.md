@@ -161,7 +161,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     After five seconds, the LCD display shows the current and voltage.
 
-    ![USB Type-C ConnEx before firmware boot](images/connexc-connect2.png)![USB Type-C ConnEx before firmware boot](images/connexc-connect3.png)
+    ![Screenshot that shows the USB Type-C ConnEx with power, but nothing on the LCD display](images/connexc-connect2.png)![Screenshot that shows the USB Type-C ConnEx with "4.27 V" and "-0.017A" on the LCD display.](images/connexc-connect3.png)
 
     If you do not the see display as shown in the previous image, make sure your have assembled the unit correctly.
 

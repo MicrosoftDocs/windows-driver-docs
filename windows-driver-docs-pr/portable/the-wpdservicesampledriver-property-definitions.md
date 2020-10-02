@@ -12,7 +12,7 @@ WPD properties are object-description metadata. This section describes the prope
 
 The WDK includes several tools for WPD driver developers. One of these tools, *WpdInfo.exe*, enables a developer to examine the objects and properties that are exposed by a given driver. The following image of the *WpdInfo.exe* tool shows the properties that the Contacts Service Object in the driver supports:
 
-![the wpd information tool](images/wpd_info_service_root.png)
+![Screenshot that shows the W P D Information Tool with supported properties.](images/wpd_info_service_root.png)
 
 In the previous image, the leftmost column in the top pane lists the objects that the driver supports. The center pane lists the 14 properties that the driver for the Contacts Service Object supports. The first column in this pane lists the property name, the second column lists the value of that property, and the third column lists the type, and so on. The lower pane shows information that is returned by the event that the driver supports.
 
