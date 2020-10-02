@@ -130,21 +130,21 @@ You can view these UI messages in PC Settings.
 
 This image shows the UI message when the USB 3.0 device is operating at SuperSpeed.
 
-![superspeed usb device operating at superspeed ](images/usb-superspeed.jpg)
+![Screenshot that shows "PC settings" with "Devices" selected and "U S B 3.0 RAIDrive" highlighted.](images/usb-superspeed.jpg)
 
 This image shows the UI message when the USB device is operating at a bus speed that is lower than SuperSpeed.
 
-![superspeed usb device operating at high-speed ](images/usb-high-speed.jpg)
+![Screenshot that shows "Devices" selected and "U S B 3.0 RAIDrive" highlighted with the message "Device can perform faster when connected to U S B 3.0".](images/usb-high-speed.jpg)
 
 You can view similar messages in Devices and Printers, as shown in these images.
 
-![superspeed usb device operating at superspeed](images/usb-superspeed-devices.jpg)
+![Screenshot that shows "Storage - Devices and Printers" with a device selected that has a "Connected to U S B 3.0" message displayed.](images/usb-superspeed-devices.jpg)
 
 ![superspeed device operating at high-speed](images/usb-high-speed-devices.jpg)
 
 If the USB 3.0 device is a storage device, Windows Explorer shows similar messages when the volume label is selected, as shown below. Note that the **View -&gt; Details** pane must be selected for the message to be visible.
 
-![superspeed usb device operating at superspeed ](images/usb-superspeed-storage-device.jpg)
+![Screenshot that shows a superspeed U S B device selected in "Explorer" with a "Connected to U S B 3.0" message highlighted in the "Details" pane. ](images/usb-superspeed-storage-device.jpg)
 
 ![superspeed usb device operating at high-speed](images/usb-high-speed-storage-device.jpg)
 

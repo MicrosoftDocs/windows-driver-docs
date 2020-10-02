@@ -13,7 +13,7 @@ Your mobile broadband app is a convenient way to communicate with your customers
 
 You should not show user-to-user chat text messaging, promotions, and advertisements in the messages section mixed together with operator notifications and alerts because customers might miss important operator notifications. You can display promotions and advertisements in the layout of your app and display user-to-user chat text messages in a separate section of the user interface.
 
-![message](images/message.png)
+![Screenshot that shows an example of the "Messages" window.](images/message.png)
 
 The following table shows some example operator messages and alerts.
 

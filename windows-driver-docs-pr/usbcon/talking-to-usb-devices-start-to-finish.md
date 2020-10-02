@@ -290,7 +290,7 @@ For more information, see <a href="/previous-versions/windows/apps/hh967756(v=wi
 <ol>
 <li>In your device metadata package, you must specify how the device should respond to an AutoPlay notification. On the <strong>Windows Info</strong> tab, select the <strong>UWP device app</strong> option and enter app information as shown here:</li>
 <li><p>In the app manifest, add <strong>AutoPlay Device</strong> declaration and launch information as shown here:</p>
-<p><img src="images/autoplay.png" alt="AutoPlay" /></p></li>
+<p><img src="images/autoplay.png" alt="Screenshot that shows the app manifest with 'Declarations' selected and 'AutoPlay Device' added." /></p></li>
 <li>In the OnActivated method of the App class, check if the app is activated by the device. If it is, then the method receives a DeviceEventArgs parameter value that contains the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id" data-raw-source="[&lt;strong&gt;DeviceInformation.Id&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)"><strong>DeviceInformation.Id</strong></a> property value. This is the same value described in <a href="#step6" data-raw-source="[&lt;strong&gt;Step 6&lt;/strong&gt;—Extend the app to open the device for communication](#step6)"><strong>Step 6</strong>—Extend the app to open the device for communication</a>.</li>
 </ol>
 <p><strong>Find it in the sample:</strong> See files named Autoplay. For JavaScript, see default.js.</p></td>
