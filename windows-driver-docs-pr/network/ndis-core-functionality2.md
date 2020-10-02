@@ -15,7 +15,7 @@ The NDIS Drivers and Services sections describe the four primary types of kernel
 
 This section includes:
 
-[NDIS Miniport Drivers](ndis-miniport-drivers.md)
+[NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md)
 
 [NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md)
 
@@ -27,16 +27,16 @@ This section includes:
 
 [NDIS Network Interfaces](ndis-network-interfaces2.md)
 
-[NDIS Ports](ndis-ports.md)
+[NDIS Ports](overview-of-ndis-ports.md)
 
-[NDIS Power Management](ndis-power-management.md)
+[NDIS Power Management](power-management--ndis-6-30-.md)
 
 [NDIS QoS for Data Center Bridging](ndis-qos-for-data-center-bridging.md)
 
-[NDIS Timer Services](ndis-timer-services2.md)
+[NDIS Timer Services](initializing-ndis-timers.md)
 
-[Miscellaneous NDIS Functions](miscellaneous-ndis-functions.md)
+[Miscellaneous NDIS Functions](ndis-configuration-functions.md)
 
-[NDIS core functionality OIDs](ndis-core-functionality-oids.md)
+[NDIS core functionality OIDs](ndis-general-statistics-oids.md)
 
-[NDIS core functionality status indications](ndis-core-functionality-status-indications.md)
+[NDIS core functionality status indications](ndis-general-status-indications.md)
