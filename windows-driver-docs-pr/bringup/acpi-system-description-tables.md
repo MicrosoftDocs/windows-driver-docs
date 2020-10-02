@@ -113,4 +113,4 @@ For more information, see the [Windows SMM Security Mitigations Table (WSMT) spe
 
 The iSCSI Boot Firmware (iBF) Table (iBFT) is a block of information that contains various parameters that are useful to the iSCSI Boot process. The iBFT is the mechanism by which iBF parameter values are conveyed to the operating system. The iBF builds and fills in the iBFT. The iBFT is available to the Windows operating system to enable a consistent flow of the boot process.
 
-For more information, see the [iSCSI Boot Firmware Table (iBFT) specification (DOCX download)](https://download.microsoft.com/download/7/e/7/7e7662cf-cbea-470b-a97e-ce7ce0d98dc2/iBFT.docx).
+For more information, see the [iSCSI Boot Firmware Table (iBFT) specification (DOCX download)](https://download.microsoft.com/download/1/e/5/1e5a2287-366c-431a-8e05-b958540230b1/iBFT.docx).
