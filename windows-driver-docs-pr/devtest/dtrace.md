@@ -45,8 +45,8 @@ by Richard McDougall, Jim Mauro and Brendan Gregg
 
 Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. Launch the feedback hub from a Windows PC, by selecting this link [https://windows-feedback:?contextid=1053](https://windows-feedback:?contextid=1053).
-2. Select *Add new feedback*.
+1. Launch the feedback hub. Go to search, enter the word *feedback*, and then select **Feedback Hub**.
+2. Select either *Suggest a feature* or *Report a problem*.
 3. Provide a detailed, specific description of the issue or suggestion.
 
 ## DTrace Windows Extensions
@@ -172,17 +172,15 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
    The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/download/58091). Note that this version of DTrace is no longer supported.
 
+2. Download the MSI installation file ([Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441)) from the Microsoft Download Center.
 
-1. Download the MSI installation file from the Microsoft Download Center - [Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441).
-
-
-2. Select the Complete install.
+3. Select the Complete install.
 
     > [!IMPORTANT]
     > Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as Patchguard, BitLocker and Secure Boot on the test PC.
     > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
-3. Enable DTrace on the machine using the bcdedit command.  
+4. Enable DTrace on the machine using the bcdedit command.  
 
 ```cmd
 bcdedit /set dtrace ON
@@ -205,7 +203,7 @@ Some DTrace command use Windows symbols. To use Windows symbols create a symbols
 
 ```cmd
 mkdir c:\symbols
-set _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols 
+set _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
 ```
 
 For more information about symbols paths, see [Symbol path for Windows debuggers](../debugger/symbol-path.md).

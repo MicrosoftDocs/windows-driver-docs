@@ -1,6 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1809
-description: This section describes new features for driver development in Windows 10.
+description: Learn about new features for driver development in Windows 10, version 1809 (Windows 10 October 2018 update).
 ms.assetid: 764bcd98-c123-45e2-9dd1-44d54bb1addc
 ms.date: 04/28/2020
 ms.localizationpriority: medium

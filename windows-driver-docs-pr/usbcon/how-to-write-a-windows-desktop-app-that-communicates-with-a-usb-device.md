@@ -65,7 +65,7 @@ To create an application from the template:
 11. Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
 12. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
 
-![winusb application template](images/winusb-template-configuration-manager.png)
+![Screenshot that shows the "Configuration Manager" window with "Debug" and "x64" selected.](images/winusb-template-configuration-manager.png)
 
 ## Building, deploying and debugging the project
 

@@ -1,6 +1,6 @@
 ---
 title: Mobile Plans callback notifications
-description: This topic describes the Callback notifications support by Mobile Plans app
+description: Learn about the Callback notifications support by the Mobile Plans app. See code examples and view additional available information.
 ms.assetid: A3CE0B7D-80C5-4A98-8615-250A3C760B85
 keywords:
 - Windows Mobile Plans Callback notifications, Mobile Plans implementation mobile operators
@@ -272,7 +272,7 @@ When a user completes a purchase in the web portal by adding more balance to an 
 
 The following diagram shows the high level flow for how the Mobile Plans app supports adding balance.
 
-![Mobile Plans add balancesequence diagram](images/mobile_plans_add_balance_flow.png)
+![Diagram that shows how a Mobile Plans app supports adding balance.](images/mobile_plans_add_balance_flow.png)
 
 ### MobilePlansInlineOperations.notifyBalanceAddition(purchaseMetaData)
 
