@@ -26,7 +26,7 @@ This section describes constants used in Windows Filtering Platform callout driv
 
 [Data offset positions](data-offset-positions.md)
 
-[Discard reason identifiers](discard-reason-identifiers.md)
+[Discard reason identifiers](general-discard-reasons.md)
 
 ## Related topics
 
