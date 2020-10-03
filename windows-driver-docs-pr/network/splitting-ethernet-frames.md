@@ -46,7 +46,7 @@ This section includes:
 
 [Splitting Frames at the UDP Payload](splitting-frames-at-the-udp-payload.md)
 
-[Splitting Frames Other Than TCP and UDP](splitting-frames-other-than-tcp-and-udp.md)
+[Splitting Frames Other Than TCP and UDP](splitting-icmp-frames-and-other-upper-layer-protocol-frames.md)
 
  
 

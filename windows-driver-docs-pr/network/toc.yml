@@ -2558,6 +2558,8 @@
       href: hyper-v-extensible-switch-oids.md
     - name: "Hyper-V Extensible Switch Status Indications"
       items: 
+      - name: "Overview"
+        href: hyper-v-extensible-switch-status-indications.md
       - name: "NDIS_STATUS_SWITCH_NIC_STATUS"
         href: ndis-status-switch-nic-status.md
       - name: "NDIS_STATUS_SWITCH_PORT_REMOVE_VF"

@@ -1,6 +1,31 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/splitting-frames-other-than-tcp-and-udp.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/splitting-icmp-frames-and-other-upper-layer-protocol-frames",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/filtering-conditions.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/filtering-condition-identifiers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/metadata-fields.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/metadata-field-identifiers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/filtering-layer-identifiers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/management-filtering-layer-identifiers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/ndis-tcp-ip-offload-status-indications.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/ndis-status-task-offload-current-config",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/ndis-wake-reason-status-indications.md",
             "redirect_URL":  "/windows-hardware/drivers/network/overview-of-ndis-wake-reason-statue-indications",
             "redirect_document_id":  false
@@ -5068,7 +5093,7 @@
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/mbb-device-mbim-parameters-init.md",
-                             "redirect_URL":  "/windows-hardware/drivers/ddi/_netvista/nf-mbbcx-mbb_mbim_parameters_init",
+                             "redirect_URL":  "/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbb_mbim_parameters_init",
                              "redirect_document_id":  false
                          },
                          {

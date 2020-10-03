@@ -30,8 +30,6 @@ For phones that have radio type W/G + G, one executor is W/G capable and one exe
 
 For phones that have radio type C + G, the slot that contains a CDMA UICC always uses executor 0. If there are two GSM UICCs, the UICC chosen for the data line is associated with executor 0.
 
-For more information about configuring C + G, see [Configure C+G dual SIM settings](/windows-hardware/customize/mobile/mcsf/configure-c-g-dual-sim-settings).
-
 ## UICC swapping
 
 
