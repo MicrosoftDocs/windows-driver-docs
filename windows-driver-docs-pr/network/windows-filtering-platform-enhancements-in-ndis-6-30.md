@@ -14,7 +14,7 @@ Windows filtering platform (WFP) includes the following enhancements for NDIS 6.
 [Layer 2 Filtering](using-layer-2-filtering.md)
 [Proxied Connections Tracking](using-proxied-connections-tracking.md)
 [Virtual Switch Filtering](using-virtual-switch-filtering.md)
-For more information about new WFP features, see [New Information for WFP](new-information-for-wfp.md).
+For more information about new WFP features, see [New Information for WFP](wfp-changes-for-windows-8.md).
 
  
 

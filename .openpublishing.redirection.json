@@ -8285,6 +8285,16 @@
                             "source_path":  "windows-driver-docs-pr/storage/storport-driver.md",
                             "redirect_url":  "/windows-hardware/drivers/storage/storport-driver-overview",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/network/operations-on-vcs.md",
+                            "redirect_url":  "/windows-hardware/drivers/network/creating-a-vc",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/network/overview-of-virtualized-networking.md",
+                            "redirect_url":  "/windows-hardware/drivers/network/overview-of-hyper-v",
+                            "redirect_document_id":  false
                         }
                      ]
 }
