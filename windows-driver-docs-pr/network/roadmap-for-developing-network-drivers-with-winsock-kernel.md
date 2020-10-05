@@ -21,7 +21,7 @@ To create a networking driver package that uses the kernel-mode socket programmi
 
     [Windows Network Architecture and the OSI Model](windows-network-architecture-and-the-osi-model.md)
 
-    [NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers).md)
+    [NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md)
 
     [Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
