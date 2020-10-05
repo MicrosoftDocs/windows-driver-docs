@@ -31,7 +31,7 @@ This guide includes the following sections:
 
 [Virtualized Networking](virtualized-networking.md)
 
-[Wireless Networking](wireless-networking2.md)
+[Wireless Networking](wifi-universal-driver-model.md)
 
 [Network Module Registrar](network-module-registrar2.md)
 
