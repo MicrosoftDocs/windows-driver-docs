@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CFU) inbox HIDCFU driver INF configuration
 
-To configure an INF file (HidCfu.inf) for the inbox driver (HidCfu.dll), you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device. 
+To configure an INF file (HidCfu.inf) for the inbox driver (HidCfu.dll), you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
 
-The [sample inbox HIDCFU driver INF file](#sample-inbox-driver-inf-file) below is provided as a starting point to illustrate the concepts discussed below. Your actual INF file must be customized and configured specifically for your firmware and hardware.
+The [sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file) below is provided as a starting point to illustrate the concepts discussed below. Your actual INF file must be customized and configured specifically for your firmware and hardware.
 
 ## Contents
 
@@ -40,7 +40,7 @@ The [sample inbox HIDCFU driver INF file](#sample-inbox-driver-inf-file) below i
 
 - [Firmware update status](#firmware-update-status)
 
-- [Sample inbox HIDCFU driver INF file](#sample-inbox-driver-inf-file)
+- [Sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file)
 
 - [Troubleshooting](#troubleshooting)
 
