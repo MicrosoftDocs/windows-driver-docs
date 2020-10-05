@@ -32,6 +32,7 @@ The following table provides a quick summary of the information above:
 
 > [!NOTE]
 > In Windows 10 version 1709 and greater, Windows offers the best matching driver, which is not necessarily the most recent. The driver selection process considers hardware ID, date/version, and critical/automatic/optional category. Windows prioritizes critical or automatic drivers highest. If a matching driver is not found, WU looks next for optional drivers. As a result, an older critical driver of otherwise equal value takes precedence over a newer optional driver.
+> 
 > Starting with Windows 10 version 2004
 
 
