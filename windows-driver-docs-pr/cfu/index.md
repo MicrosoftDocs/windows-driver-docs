@@ -21,5 +21,5 @@ See the [Introducing Component Firmware Update](https://blogs.windows.com/buildi
 | [CFU firmware implementation guide](cfu-firmware-implementation-guide.md) | Provides detailed guidance on implementing the CFU firmware protocol and creating new firmware images to install on the target device. |
 | [CFU inbox HIDCFU driver INF configuration](cfu-inbox-driver-inf-configuration.md) | Provides information on configuring the inbox HIDCFU driver INF file for your firmware update. |
 | [CFU protocol specification](cfu-specification.md) | Provides detailed information on the CFU protocol offer, content, and firmware update command sequence. |
-| [CFU standalone tool](cfu-standalone-tool.md) | Provides information on the CFU standalone tool that sends firmware update image files to a device. |
+| [CFU standalone tool](cfu-standalone-tool.md) | Provides information on the CFU standalone tool that sends firmware update image files to a device. It can be used to test your firmware update on your device during development and before uploading it to Windows Update.|
 | [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) | Simulates updating firmware on a virtual HID device. |
