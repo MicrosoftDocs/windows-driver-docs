@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/ndis-miniport-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/roadmap-for-developing-ndis-miniport-drivers",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/inspecting-packet-and-stream-data.md",
             "redirect_URL":  "/windows-hardware/drivers/network/packet-inspection-points",
             "redirect_document_id":  false
