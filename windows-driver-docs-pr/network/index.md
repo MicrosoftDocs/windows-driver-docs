@@ -25,7 +25,7 @@ This guide includes the following sections:
 
 [NDIS version guide](ndis-version-guide.md)
 
-[NDIS Core Functionality](ndis-core-functionality2.md)
+[NDIS Core Functionality](roadmap-for-developing-ndis-miniport-drivers.md)
 
 [Scalable Networking](header-data-split.md)
 

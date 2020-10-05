@@ -352,8 +352,6 @@
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md    
 - name: "NDIS Core Functionality"
   items: 
-  - name: "NDIS Drivers and Services"
-    href: ndis-core-functionality2.md
   - name: "NDIS Miniport Drivers"
     items: 
     - name: "Roadmap for Developing NDIS Miniport Drivers"
