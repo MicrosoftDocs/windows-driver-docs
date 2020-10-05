@@ -86,7 +86,7 @@ The following table contains the list of possible parameters for WiFiProvider.ex
 | --- | --- |
 | DataFile | Required. The name of the file that contains the hotspot data. |
 | ProviderId | Required. The Microsoft-assigned provider ID (a GUID). |
-| ServiceEndpoint | Required. The URL of the discovery service server to which the hotspot data will be uploaded. For example, https://wifi.windowsphone.com/v1/submithotspots |
+| ServiceEndpoint | Required. The URL of the discovery service server to which the hotspot data will be uploaded. |
 | CustomerTransformer | Required. The name of the assembly that contains the transformer. | 
 | MappingFile | Optional. The mapping file that maps the provider's hotspot data to the format required by the discovery service. |
 | CertFile | Optional. A pointer to the actual pfx file that contains the certificate(s) for authentication. The certificate password parameter (**CertPassword**) must be specified when using this authentication method. |
