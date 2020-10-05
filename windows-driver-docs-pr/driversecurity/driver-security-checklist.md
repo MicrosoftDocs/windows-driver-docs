@@ -360,13 +360,13 @@ For more information about the related system fundamentals security test, see [D
 
 For more information, about file system driver security see the following articles:
 
-[Security Considerations for File Systems](https://docs.microsoft.com/windows-hardware/drivers/ifs/security-considerations-for-file-systems)
+[Introduction to File Systems Security](/windows-hardware/drivers/ifs/introduction-to-file-systems-security)
 
 [File System Security Issues](../ifs/file-system-security-issues.md)
 
 [Security Features for File Systems](../ifs/security-features-for-file-systems.md)
 
-[Security Considerations for File System Filter Drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/security-considerations-for-file-system-filter-drivers)
+[Coexistence with other File System Filter Drivers](/windows-hardware/drivers/ifs/coexistence-with-other-file-system-filter-drivers)
 
 ### NDIS - Networking
 

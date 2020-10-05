@@ -331,8 +331,6 @@ For additional driver security resources, see [Driver Security Checklist](driver
 
 **Microsoft Hardware and Driver Developer Information**
 
-[Common Driver Reliability Problems](https://download.microsoft.com/download/5/7/7/577a5684-8a83-43ae-9272-ff260a9c20e2/drvqa.doc) white paper
-
 [Cancel Logic in Windows Drivers](/previous-versions/windows/hardware/design/dn653289(v=vs.85)) white paper
 
 [Windows security model: what every driver writer needs to know](windows-security-model.md)

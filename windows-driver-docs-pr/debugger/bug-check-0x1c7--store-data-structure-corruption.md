@@ -66,7 +66,7 @@ This bugcheck can occur by memory corruption due to physical memory access. The 
 2.	A driver or device incorrectly modifying physical pages via an incorrect DMA operation or associated MDL.
 3.	Corruption caused by a hardware device or firmware corrupting memory, such as firmware illegally modifying physical pages across a power transition.
 
-For more information on Windows memory manager, see [Windows Internals 7th Edition Part 1](/sysinternals/learn/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
+For more information on Windows memory manager, see [Windows Internals 7th Edition Part 1](/sysinternals/resources/windows-internals) by  Pavel Yosifovich, Mark E. Russinovich, David A. Solomon and Alex Ionescu.
 
 ## Resolution
 -----

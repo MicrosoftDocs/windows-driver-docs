@@ -20,7 +20,7 @@ This test uninstalls and reinstalls the drivers for selected devices, and runs I
 
 **Test method**: Reinstall_With_IO_Before_And_After
 
-**Parameters**: [*DQ*](../develop/how-to-select-and-configure-the-device-fundamental-tests#device-fundamentals-test-parameters.md) and [*IOPeriod*](../develop/how-to-select-and-configure-the-device-fundamental-tests#device-fundamentals-test-parameters.md)
+**Parameters**: [*DQ*] and [*IOPeriod*] For more information, see "Device Fundamentals Test Parameters" in [How to select and configure the Device Fundamentals tests](../develop/how-to-select-and-configure-the-device-fundamental-tests.md#device-fundamentals-test-parameters)
 
 ## About the ReInstall with I/O Before and After test
 
