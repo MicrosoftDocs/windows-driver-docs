@@ -170,7 +170,7 @@ To see what was added in previous versions of WDF, see [KMDF Version History](./
 
 Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
 
-* [Using WHEA on Windows 10](/windows-hardware/drivers/whea/using-whea-on-windows-10)
+* [Using WHEA on Windows 10](./whea/using-whea-on-windows-10.md)
 * [**WheaAddErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
 * [**WheaReportHwErrorDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
 * [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)

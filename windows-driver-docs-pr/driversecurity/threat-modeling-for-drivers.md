@@ -339,7 +339,7 @@ For additional driver security resources, see [Driver Security Checklist](driver
 
 **Microsoft Windows Driver Development Kit (DDK)**
 
-See [Driver Programming Techniques](https://docs.microsoft.com/windows-hardware/drivers/kernel/driver-programming-techniques) in [Kernel-Mode Driver Architecture](../index.yml)
+See [Driver Programming Techniques](../kernel/using-nt-and-zw-versions-of-the-native-system-services-routines.md) in [Kernel-Mode Driver Architecture](../index.yml)
 
 **Test Tools**
 
@@ -353,5 +353,3 @@ To expand your knowledge of software threats, review the available public databa
 -   Common Weakness Enumeration: <https://cwe.mitre.org/>
 -   Common Attack Pattern Enumeration and Classification: <https://capec.mitre.org/index.html>
 -   NIST maintains a site that describes how vulnerabilities are cataloged: <https://samate.nist.gov/BF/>
-
-

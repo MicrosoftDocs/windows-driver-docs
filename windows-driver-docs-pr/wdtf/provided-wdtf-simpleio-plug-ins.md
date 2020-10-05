@@ -232,15 +232,15 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 ### Requirements (WLAN)
 
-- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](/previous-versions/windows/hardware/hck/dn260302(v=vs.85)) in the HCK documentation.
 
 ### Type of I/O plug-in performs (WLAN)
 
-- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](/previous-versions/windows/hardware/hck/dn260302(v=vs.85)) in the HCK documentation.
 
 ### How to triage test failures (WLAN)
 
-- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](/previous-versions/windows/hardware/hck/dn260302(v=vs.85)) in the HCK documentation.
 
 ## USB Controller and HUB with Mutt
 

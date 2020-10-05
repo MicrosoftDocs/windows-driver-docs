@@ -36,12 +36,12 @@ As a driver developer, you must have coding experience in the C programming lang
 <td><ul>
 <li>Have a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the device driver and the related design decisions.</li>
 <li>Have the OSR USB FX2 learning kit if you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from <a href="https://go.microsoft.com/fwlink/p/?linkid=617553" data-raw-source="[OSR Online](https://go.microsoft.com/fwlink/p/?linkid=617553)">OSR Online</a>.</li>
-<li>Have a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="https://go.microsoft.com/fwlink/p/?linkid=617554" data-raw-source="[JJG Technologies](https://go.microsoft.com/fwlink/p/?linkid=617554)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, <a href="https://go.microsoft.com/fwlink/p/?linkid=617555" data-raw-source="[download the MUTT software package](https://go.microsoft.com/fwlink/p/?linkid=617555)">download the MUTT software package</a>, and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
+<li>Have a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="https://go.microsoft.com/fwlink/p/?linkid=617554" data-raw-source="[JJG Technologies](https://go.microsoft.com/fwlink/p/?linkid=617554)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, <a href="/windows-hardware/drivers/usbcon/" data-raw-source="[download the MUTT software package](./index.md)">download the MUTT software package</a>, and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Step 3</strong>—Study your <a href="usb-device-layout.md" data-raw-source="[USB device layout](usb-device-layout.md)">USB device layout</a> and the related <a href="usb-descriptors.md" data-raw-source="[USB descriptors](usb-descriptors.md)">USB descriptors</a>.</p></td>
-<td>Describe your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using <a href="https://go.microsoft.com/fwlink/p/?linkid=617556" data-raw-source="[USBView](https://go.microsoft.com/fwlink/p/?linkid=617556)">USBView</a>, you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</td>
+<td>Describe your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using <a href="/windows-hardware/drivers/debugger/usbview" data-raw-source="[USBView](../debugger/usbview.md)">USBView</a>, you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</td>
 </tr>
 <tr class="even">
 <td><p><strong>Step 4</strong>—<a href="winusb-considerations.md" data-raw-source="[Choose a driver model for developing a USB client driver](winusb-considerations.md)">Choose a driver model for developing a USB client driver</a>.</p></td>
@@ -109,11 +109,11 @@ Check out posts written by the Microsoft USB Team. The blog focuses on the Windo
 <a href="" id="osr-online-lists---ntdev"></a>[OSR Online Lists - ntdev](https://go.microsoft.com/fwlink/p/?linkid=617582)  
 Discussion list managed by [OSR Online](https://go.microsoft.com/fwlink/p/?linkid=617590) for kernel-mode driver developers.
 
-<a href="" id="usb-technologies"></a>[USB Technologies](https://go.microsoft.com/fwlink/p/?linkid=617583)  
+<a href="" id="usb-technologies"></a>[USB Technologies](../index.yml)  
 Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.
 
 <a href="" id="windows-dev-center-for-hardware-development"></a>[Windows Dev-Center for Hardware Development](https://go.microsoft.com/fwlink/p/?linkid=617584)  
-[Download the latest tools for driver development](https://go.microsoft.com/fwlink/p/?linkid=617585), ensure that your product is reliable and compatible with Windows through the [Windows Certification Program](https://go.microsoft.com/fwlink/p/?linkid=617591), learn [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507).
+[Download the latest tools for driver development](https://go.microsoft.com/fwlink/p/?linkid=617585), ensure that your product is reliable and compatible with Windows through the [Windows Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)), learn [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507).
 
 ## Related topics
 [Universal Serial Bus (USB) Drivers](../index.yml)  

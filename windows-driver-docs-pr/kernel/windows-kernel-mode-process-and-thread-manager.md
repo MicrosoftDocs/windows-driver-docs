@@ -43,7 +43,7 @@ This set of guidelines applies to these callback routines:
 ## Subsystem Processes
 
 
-Starting in Windows 10, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](https://go.microsoft.com/fwlink/p/?linkid=838012) blog.
+Starting in Windows 10, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](/archive/blogs/wsl/) blog.
 
 One of the components is a *subsystem process* that hosts the unmodified user-mode Linux binary, such as /bin/bash. Subsystem processes do not contain data structures associated with Win32 processes, such as Process Environment Block (PEB) and Thread Environment Block (TEB). For a subsystem process, system calls and user mode exceptions are dispatched to a paired driver.
 
@@ -52,6 +52,4 @@ Here are the changes to the [Process and Thread Manager Routines](/windows-hardw
 -   The WSL type is indicated by the **SubsystemInformationTypeWSL** value in the [**SUBSYSTEM\_INFORMATION\_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type) enumeration. Drivers can call [**NtQueryInformationProcess**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationprocess) and [**NtQueryInformationThread**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationthread) to determine the underlying subsystem. Those calls return **SubsystemInformationTypeWSL** for WSL.
 -   Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreatethreadnotifyroutineex), and specify **PsCreateThreadNotifySubsystems** as the type of notification.
 -   The [**PS\_CREATE\_NOTIFY\_INFO**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_ps_create_notify_info) structure has been extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM\_INFORMATION\_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type).
-
- 
 

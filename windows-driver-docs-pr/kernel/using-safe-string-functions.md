@@ -19,7 +19,7 @@ Two new sets of string manipulation functions, called *safe string functions*, p
 
 One set of safe string functions are for use in kernel-mode code. These functions are prototyped in a header file named Ntstrsafe.h. This header file and an associated library are available in the WDK.
 
-The other set of safe string functions are for use in user-mode applications. A corresponding header file, Strsafe.h, contains prototypes for these functions. That file and an associated library are available in the Windows SDK. For more information about Strsafe.h, see [Using the Strsafe.h Functions](https://go.microsoft.com/fwlink/p/?linkid=165522).
+The other set of safe string functions are for use in user-mode applications. A corresponding header file, Strsafe.h, contains prototypes for these functions. That file and an associated library are available in the Windows SDK. For more information about Strsafe.h, see [Using the Strsafe.h Functions](/windows/win32/menurc/strsafe-ovw).
 
 The set of kernel-mode safe string functions consists of the following two subsets:
 
@@ -29,7 +29,7 @@ The set of kernel-mode safe string functions consists of the following two subse
 
 -   [Safe string functions for UNICODE\_STRING structures](/windows-hardware/drivers/ddi/index)
 
-    Each of these functions accepts a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure as an input or output parameter or both. For example, [**RtlStringCbCopyUnicodeString**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcopyunicodestring) accepts the structure as an input parameter, [**RtlUnicodeStringCopyString**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopystring) accepts the structure as an output parameter, and [**RtlUnicodeStringCopy**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopy) accepts the structure as both an input and output parameter.
+    Each of these functions accepts a [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure as an input or output parameter or both. For example, [**RtlStringCbCopyUnicodeString**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcbcopyunicodestring) accepts the structure as an input parameter, [**RtlUnicodeStringCopyString**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopystring) accepts the structure as an output parameter, and [**RtlUnicodeStringCopy**](/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlunicodestringcopy) accepts the structure as both an input and output parameter.
 
 The kernel-mode safe string functions provide the following features:
 
@@ -48,6 +48,4 @@ This section includes the following topics:
 [Summary of Kernel-Mode Safe String Functions](summary-of-kernel-mode-safe-string-functions.md)
 
 [Importing Kernel-Mode Safe String Functions](importing-kernel-mode-safe-string-functions.md)
-
- 
 

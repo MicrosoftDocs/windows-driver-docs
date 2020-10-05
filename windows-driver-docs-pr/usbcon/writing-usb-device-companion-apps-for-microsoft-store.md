@@ -66,9 +66,9 @@ The [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) namespace provides a
 ## USB samples
 
 
--   [Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
--   [USB CDC Control sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
--   [Firmware Update USB Device sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
+-   [Custom USB device access sample](/samples/browse/)
+-   [USB CDC Control sample](/samples/browse/)
+-   [Firmware Update USB Device sample](/samples/browse/)
 
 ## What are the limitations of the namespace?
 

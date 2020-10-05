@@ -268,7 +268,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 **Note**  Make sure that the driver package contents meet these requirements:
 -   The KMDF and WinUSB co-installer files must be obtained from the same version of the Windows Driver Kit (WDK).
 -   The co-installer files must be obtained from the latest version of the WDK, so that the driver supports all the latest Windows releases.
--   The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=129409) on the Windows Dev Center - Hardware site.
+-   The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](/windows-hardware/test/hlk/) on the Windows Dev Center - Hardware site.
 
  
 

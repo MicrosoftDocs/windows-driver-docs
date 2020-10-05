@@ -169,7 +169,7 @@ Applies to: Dock, device
 
 Additional information of selective suspend can be found from the following sources:
 
--   [Enabling selective suspend for HID](https://go.microsoft.com/fwlink/p/?LinkId=623307)
+-   [Enabling selective suspend for HID](/previous-versions/windows/hardware/design/dn613941(v=vs.85))
 -   [Selective suspend for HID over USB devices](../hid/selective-suspend-for-hid-over-usb-devices.md)
 -   [Demystifying selective suspend]( https://go.microsoft.com/fwlink/p/?LinkId=623308)
 
@@ -258,7 +258,7 @@ Applies to: System, dock, device
 
 1.  Restart the test system.
 2.  Plug a USB SuperMUTT device to exposed USB Type-C port.
-3.  Run the [DF - Reboot Restart with IO Before and After](https://go.microsoft.com/fwlink/p/?LinkId=623312) test.
+3.  Run the [DF - Reboot Restart with IO Before and After](/previous-versions/windows/hardware/hck/dn293550(v=vs.85)) test.
 4.  Repeat step 3 with a USB Type-C test device.
 
 ## <a href="" id="st3"></a>ST Case 3: Plug and Play
@@ -482,6 +482,4 @@ Provide these details:
 -   The list of tests (in order) that were performed before the failed test.
 -   The list must specify the tests that have failed or passed.
 -   Systems, devices, docks, or hubs that were used for the tests. Include make, model, and Web site so that we can get additional information, if needed.
-
- 
 

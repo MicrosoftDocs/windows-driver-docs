@@ -29,7 +29,7 @@ The following are two ways to generate a **ContainerID** for a USB device:
 ## USB ContainerID Contents
 
 
-A USB **ContainerID** is presented to the operating system in the form of a universally unique identifier (UUID) string. The **ContainerID** UUID is contained within a **ContainerID** descriptor. A **ContainerID** descriptor is a device-level Microsoft OS feature descriptor. As such, when the operating system requests a USB **ContainerID**, the wValue field of the descriptor request must always be set to zero. For more information about Microsoft OS feature descriptors and descriptor requests, see [Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519).
+A USB **ContainerID** is presented to the operating system in the form of a universally unique identifier (UUID) string. The **ContainerID** UUID is contained within a **ContainerID** descriptor. A **ContainerID** descriptor is a device-level Microsoft OS feature descriptor. As such, when the operating system requests a USB **ContainerID**, the wValue field of the descriptor request must always be set to zero. For more information about Microsoft OS feature descriptors and descriptor requests, see [Microsoft OS 1.0 Descriptors Specification](/previous-versions/gg463179(v=msdn.10)).
 
 A **ContainerID** descriptor consists of a header section.
 

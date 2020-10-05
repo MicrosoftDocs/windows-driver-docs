@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the pedometer.
 
-The following table shows the data fields. For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Description|
 |--|--|--|--|
@@ -25,9 +25,7 @@ The following table shows the data fields. For more information about the data t
 ## Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
 [**PEDOMETER\_STEP\_TYPE**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-pedometer_step_type)
-
- 
 

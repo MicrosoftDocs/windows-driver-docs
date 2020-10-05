@@ -34,7 +34,7 @@ Figure 1 Convertible Implementation Options
 
 Figure 2 Laptop Implementation Options
 
-The ConvertibleSlateMode [Unattended Windows Setup](https://go.microsoft.com/fwlink/p/?linkid=276788) setting allows OEMs to statically flag clamshells to laptop mode as an image customization without implementing the injection mechanism.
+The ConvertibleSlateMode [Unattended Windows Setup](/previous-versions/windows/it-pro/windows-8.1-and-8/ff699026(v=win.10)) setting allows OEMs to statically flag clamshells to laptop mode as an image customization without implementing the injection mechanism.
 
 This feature targets touchscreen systems that have a permanently attached keyboard (which the user can use at any time). The example that is provided here is the touchscreen clamshell that has no GPIO indicators/ injection available.
 

@@ -23,7 +23,7 @@ VolumeClassGuid is an obsolete identifier for the [device interface class](./ove
 Remarks
 -------
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076) that uses VolumeClassGuid to enumerate instances of the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include an [Addfilter Storage Filter Tool](/samples/browse/) that uses VolumeClassGuid to enumerate instances of the [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md) device interface class.
 
 Requirements
 ------------
@@ -49,6 +49,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
-
- 
 

@@ -18,7 +18,7 @@ Before you start running the logo tests make sure you meet the following require
 -   To run these tests you will need at least two computers: a test server and a test client.
 -   The test client must have the latest version of Windows.
 -   The test client must have EHCI and xHCI controllers, either integrated or as add-in cards. The controllers must expose user-accessible root ports (no integrated hubs).
--   Download the Windows HLK to the test server from [Windows Hardware Lab Kit Downloads](https://go.microsoft.com/fwlink/p/?linkid=285647).
+-   Download the Windows HLK to the test server from [Windows Hardware Lab Kit Downloads](/windows-hardware/test/hlk/).
 
     For detailed information about how to install and use the Windows HLK, see [Windows HLK Getting Started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
@@ -41,8 +41,8 @@ To run the HLK tests, you need:
 
 Complete set of requirements are given here:
 
--   [USB Bus Controller Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=617477)
--   [USB Hub.Connectivity Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=617499)
+-   [USB Bus Controller Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998789(v=vs.85))
+-   [USB Hub.Connectivity Testing Prerequisites](/previous-versions/windows/hardware/hck/jj124824(v=vs.85))
 
 ## HLK test selection for USB
 

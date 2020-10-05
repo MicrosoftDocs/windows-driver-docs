@@ -26,7 +26,7 @@ Instead, drivers use the [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers
 
 The PnP manager assigns one key for the driver, known as the driver's software key, and a key for each device, known as the device's hardware key. The **IoOpenDeviceRegistryKey** routine can be used to open either key. The value of the *DevInstKeyType* parameter determines which key to open. Specify PLUGPLAY\_REGKEY\_DRIVER to open a software key, or PLUGPLAY\_REGKEY\_DEVICE to a hardware key. The *DeviceObject* parameter specifies the device or driver. (The driver can also access its hardware and software keys relative to the current hardware profile, by ANDing PLUGPLAY\_REGKEY\_CURRENT\_HWPROFILE to *DevInstKeyType*.)
 
-**IoOpenDeviceInterfaceRegistryKey** opens the key associated with a particular device interface instance. The instance is identified by its name, which is a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) returned by [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces), [**IoGetDeviceInterfaceAlias**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacealias), or [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface). The string is passed as the *SymbolicLinkValue* parameter to **IoOpenDeviceInterfaceRegistryKey**.
+**IoOpenDeviceInterfaceRegistryKey** opens the key associated with a particular device interface instance. The instance is identified by its name, which is a [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) returned by [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces), [**IoGetDeviceInterfaceAlias**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfacealias), or [**IoRegisterDeviceInterface**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface). The string is passed as the *SymbolicLinkValue* parameter to **IoOpenDeviceInterfaceRegistryKey**.
 
 These keys can also be set in an INF file, or by using the **SetupDi*Xxx*** routines. For more information, see [Registry Keys for Drivers](../install/overview-of-registry-trees-and-keys.md).
 
@@ -57,6 +57,4 @@ if (NTSUCCESS(status)) {
 ```
 
 Note that access to a registry key can be restricted, so a call to [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) and [**IoOpenDeviceInterfaceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceinterfaceregistrykey) should specify the minimum rights necessary for *DesiredAccess*. If the driver requests an access right that is not allowed, either routine returns STATUS\_ACCESS\_DENIED. In particular, drivers should not specify KEY\_ALL\_ACCESS.
-
- 
 

@@ -41,7 +41,5 @@ The following guidelines should be followed to safely modify registry values by 
 
 -   Class installers and co-installers must not use **SetupDiDeleteDevRegKey** or *hardware keys* for the device. For more information, see [Deleting the Registry Keys of a Device](deleting-the-registry-keys-of-a-device.md).
 
-For more information about the standard registry functions, see [Registry Functions](https://go.microsoft.com/fwlink/p/?linkid=194529).
-
- 
+For more information about the standard registry functions, see [Registry Functions](/windows/win32/sysinfo/registry-functions).
 

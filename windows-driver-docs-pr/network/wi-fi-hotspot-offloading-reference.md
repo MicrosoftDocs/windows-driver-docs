@@ -24,7 +24,4 @@ This section contains descriptions of the Wi-Fi Hotspot Offloading programming e
 [Wi-Fi Hotspot Offloading Enumerations](wi-fi-hotspot-offloading-enumerations.md)
 
 ## Related topics
-[Wi-Fi Hotspot Offloading Guide](https://go.microsoft.com/fwlink/p/?linkid=842858)  
-
-
-
+[Wi-Fi Hotspot Offloading Guide](./wi-fi-hotspot-offloading-guide.md)

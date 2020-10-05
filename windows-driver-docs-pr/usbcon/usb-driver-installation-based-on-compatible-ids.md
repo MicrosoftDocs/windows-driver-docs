@@ -99,7 +99,7 @@ That entry can be added in one of two ways:
 -   Write an INF that references the install INF and add the registry entry in the **HW.AddReg** section.
 -   Describe the registry entry in an extended properties OS feature descriptor. Add a custom property section that sets the **bPropertyName** field to a Unicode string, "IdleUsbSelectiveSuspendPolicy" and **wPropertyNameLength** to 62 bytes. Set the **bPropertyData** field to "0x00000001" or "0x00000000". The property values are stored as little-endian 32-bit integers.
 
-    For more information, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=224878).
+    For more information, see [Microsoft OS Descriptors](./index.md).
 
 ## Develop Windows applications for a USB CDC device
 

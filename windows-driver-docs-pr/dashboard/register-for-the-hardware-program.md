@@ -26,7 +26,7 @@ Review the following requirements before you start the registration process.
 
     For information about code signing certificates and how to get a certificate, see [Get a code signing certificate](get-a-code-signing-certificate.md).
 
-- You will need to sign in with your organization’s Azure Active Directory (Azure AD) [Global administrator](https://go.microsoft.com/fwlink/?LinkId=746654) account. If you don’t know whether your organization has an Azure AD directory, contact your IT department. If your organization doesn’t have an Azure AD directory, you must be able to create one.
+- You will need to sign in with your organization’s Azure Active Directory (Azure AD) [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account. If you don’t know whether your organization has an Azure AD directory, contact your IT department. If your organization doesn’t have an Azure AD directory, you must be able to create one.
 
 - You must have the authority to sign legal agreements on behalf of your organization.
 
@@ -53,7 +53,7 @@ There are five main steps to the Hardware Program registration.
 
 4. Sign in with an Azure AD Global administrator account
 
-    - If your organization already has an Azure AD directory, sign in with a [Global administrator](https://go.microsoft.com/fwlink/?LinkId=746654) account.
+    - If your organization already has an Azure AD directory, sign in with a [Global administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) account.
 
     - If your organization does not have an Azure AD directory, you must create one and sign in.
 
