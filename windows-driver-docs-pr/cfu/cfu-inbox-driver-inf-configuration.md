@@ -10,7 +10,9 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CFU) inbox HIDCFU driver INF configuration
 
-Component Firmware Update (CFU) allows OEMs and IHVs to seamlessly and securely update firmware for components connected through interconnect buses such as USB, Bluetooth, I<sup>2</sup>C, and so on. As part of the open-source effort, we are sharing a CFU protocol specification, a sample CFU inbox HIDCFU driver INF file for the inbox driver (HidCfu.dll), and firmware sample code to allow device manufacturers to push firmware updates over Windows Update.
+To configure an INF file (HidCfu.inf) for the inbox driver (HidCfu.dll), you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device. 
+
+The [sample inbox HIDCFU driver INF file](#sample-inbox-driver-inf-file) below is provided as a starting point to illustrate the concepts discussed below. Your actual INF file must be customized and configured specifically for your firmware and hardware.
 
 ## Contents
 
@@ -56,7 +58,7 @@ The following resources will help you learn about the Component Firmware Update 
 
 - The [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md) describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download.
 
-  - The [CFU firmware update sample](https://github.com/Microsoft/CFU/tree/master/Firmware) contains sample firmware source code for implementing the CFU protocol.
+  - The [CFU firmware update sample](https://github.com/Microsoft/CFU/tree/master/Firmware) contains example firmware source code for implementing the CFU protocol.
 
   - The [CFU standalone tool](cfu-standalone-tool.md) can be used to test your firmware update on your device during development and before uploading it to Windows Update.
 
@@ -64,7 +66,7 @@ The following resources will help you learn about the Component Firmware Update 
 
 To update the firmware image for your device by using the CFU model, you should expect to meet the following requirements:
 
-- Provide a CFU inbox HIDCFU driver INF file. This file provides information to the CFU inbox HIDCFU driver (HidCfu.dll) that sends the firmware update to the device. We recommend that you customize the sample CFU inbox HIDCFU driver INF file to support your firmware update scenarios.
+- Provide a inbox HIDCFU driver INF file. This file provides information to the inbox HIDCFU driver (HidCfu.dll) that sends the firmware update to the device. We recommend that you customize the sample CFU inbox HIDCFU driver INF file to support your firmware update scenarios.
 
 - Your device must ship with a firmware image that is compliant with the [CFU protocol](cfu-specification.md) so that it can accept an update from the CFU driver.
 
