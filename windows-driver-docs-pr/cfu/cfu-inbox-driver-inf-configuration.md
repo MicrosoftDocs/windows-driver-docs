@@ -56,11 +56,9 @@ The following resources will help you learn about the Component Firmware Update 
 
 - The [Component Firmware Update (CFU) Protocol Specification](cfu-specification.md) describes a generic HID protocol to update firmware for components present on a PC or accessories. The specification allows for a component to accept firmware without interrupting the device operation during a download.
 
-- [CFU resources on GitHub](https://github.com/Microsoft/CFU)
+  - The [CFU firmware update sample](https://github.com/Microsoft/CFU/tree/master/Firmware) contains sample firmware source code for implementing the CFU protocol.
 
-  - [Firmware](https://github.com/Microsoft/CFU/tree/master/Firmware) contains sample firmware source code for implementing the CFU protocol.
-
-  - [Component Firmware Update Standalone Tool Sample](https://github.com/microsoft/CFU/tree/master/Tools/ComponentFirmwareUpdateStandAloneToolSample) contains the standalone tool sample used with CFU.
+  - The [CFU standalone tool](cfu-standalone-tool.md) can be used to test your firmware update on your device during development and before uploading it to Windows Update.
 
 ## Overview
 
@@ -91,7 +89,7 @@ This allows you to service your in-market devices through Windows Update. To upd
     %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
     ```
 
-1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see [DockFirmwareUpdate.inx](https://github.com/Microsoft/CFU/blob/master/Host/ComponentizedPackageExample/DockFWUpdate/DockFirmwareUpdate.inx)
+1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see [Sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file)
 
     > [!NOTE]
     > When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
@@ -237,7 +235,7 @@ During the protocol transaction, the CFU inbox driver writes registry entries to
 | Payload Accepted. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_PENDING_RESET |
 | Error at any stage. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_ERROR |
 
-## Sample inbox driver INF file
+## Sample inbox HIDCFU driver INF file
 
   ```inf
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
