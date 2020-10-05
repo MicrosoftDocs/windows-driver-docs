@@ -66,9 +66,9 @@ The following resources will help you learn about the Component Firmware Update 
 
 To update the firmware image for your device by using the CFU model, you should expect to meet the following requirements:
 
-- Provide a CFU inbox HIDCFU driver INF file. This file proves information to the CFU inbox HIDCFU driver (HidCfu.dll) that sends the firmware update to the device. We recommend that you customize the sample CFU inbox HIDCFU driver INF file to support your firmware update scenarios.
+- Provide a CFU inbox HIDCFU driver INF file. This file provides information to the CFU inbox HIDCFU driver (HidCfu.dll) that sends the firmware update to the device. We recommend that you customize the sample CFU inbox HIDCFU driver INF file to support your firmware update scenarios.
 
-- Your device must ship with a firmware image that is compliant with the CFU protocol so that it can accept an update from the CFU driver.
+- Your device must ship with a firmware image that is compliant with the [CFU protocol](cfu-specification.md) so that it can accept an update from the CFU driver.
 
 - Your device must expose itself as a HID device to the operating system (running the CFU inbox driver) and expose a HID Top-Level Collection (TLC). The CFU inbox driver driver loads on the TLC and sends the firmware update to the device.
 
@@ -112,9 +112,6 @@ You may configure each of these registry values per component as needed.
 
 | Registry Value | Description |
 |--|--|
-| SupportResumeOnConnect | Does this component support resume from a previously interrupted update?<p>You can enable this feature if the component can continue to receive payload data starting at a point where it was interrupted earlier.<p>When this value is set, during the payload transfer stage, the driver checks to see whether a previous transfer of this payload was interrupted. If it was interrupted, it the driver only sends the payload data from the interrupted point instead of the entire payload.<p>Set to 1 to enable and 0 (default) to disable.</p> |
-| SupportProtocolSkipOptimization | Does this component support skipping the entire protocol transaction for an already known all up to date firmware?<p>This is a driver side optimization option. If enabled, the driver checks these conditions during each initialization:<p>Were all offers rejected in a previous cycle?<p>Does the current offers match the set of offers that the driver offered earlier?<p>When the preceding conditions are satisfied, the driver skips the whole protocol transaction.<p>Set to 1 to enable and 0 (default) to disable. |
-| Protocol | Specify these values based on the underlying HID transport for your component.<p>If your component is connected by HID-Over-USB, specify 1. (Default)<p>If your component is connected by HID-Over-Bluetooth, specify value 2. |
 | Alignment | Protocol Attribute: What is the bin record alignment required for this configuration?<p>During payload send phase of the protocol, the driver fills in many Hid buffers with the payload and send to firmware one by one.<p>This option control the alignment requirement when packing the payload.<p>By default 8 byte alignment is used. If no alignment is required, configure this as 1. |
 | UseHidSetOutputReport | 0 - Driver will use Write request while sending any output report.<p>1 - Driver will use IOCTL_HID_SET_OUTPUT_REPORT for sending any output report.<p>Default is 0. Set this to 1 if your underlying transport is not USB (for example, HID Over BTH). |
 | OfferInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Input Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
