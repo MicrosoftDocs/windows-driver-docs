@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 To open a handle to a registry-key object, carry out the following two-step process:
 
-1.  Create an [**OBJECT\_ATTRIBUTES**](/windows/win32/api/ntdef/ns-ntdef-object_attributes) structure, and initialize it by calling [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes). You specify the name of the key to manipulate as the *ObjectName* parameter to **InitializeObjectAttributes**.
+1.  Create an [**OBJECT\_ATTRIBUTES**](/windows/win32/api/ntdef/ns-ntdef-_object_attributes) structure, and initialize it by calling [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes). You specify the name of the key to manipulate as the *ObjectName* parameter to **InitializeObjectAttributes**.
 
     If you pass **NULL** as the *RootDirectory* parameter to **InitializeObjectAttributes**, *ObjectName* must be the full path of the registry key, beginning with **\\Registry**. Otherwise, *RootDirectory* must be an open handle to a key, and *ObjectName* is the path that is relative to that key.
 
