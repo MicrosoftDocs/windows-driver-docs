@@ -103,9 +103,9 @@ If your device does not belong to one the preceding device classes, write a Wind
 <tr class="odd">
 <td>Get started with these samples</td>
 <td><ul>
-<li><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">Custom USB device access sample</a></li>
-<li><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[USB CDC Control sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">USB CDC Control sample</a></li>
-<li><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Firmware Update USB Device sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">Firmware Update USB Device sample</a></li>
+<li><a href="/samples/browse/" data-raw-source="[Custom USB device access sample](/samples/browse/)">Custom USB device access sample</a></li>
+<li><a href="/samples/browse/" data-raw-source="[USB CDC Control sample](/samples/browse/)">USB CDC Control sample</a></li>
+<li><a href="/samples/browse/" data-raw-source="[Firmware Update USB Device sample](/samples/browse/)">Firmware Update USB Device sample</a></li>
 </ul></td>
 <td><ul>
 <li>Start with the <strong>WinUsb Application</strong> template included with Microsoft Visual Studio (Ultimate or Professional)</li>

@@ -21,7 +21,7 @@ To deliver the best experience in Windows 8 and later, Windows takes advantage 
 -   For headless systems:
     -   System firmware should set the VGA Not Present flag in the IAPC\_BOOT\_ARCH field of the Fixed ACPI Description Table (FADT), and if there is any VBIOS, it should implement an empty mode list through the VESA BIOS Extensions (VBE).
     -   In the absence of VBE support, the headless system should not represent a working display through the Unified Extensible Firmware Interface (UEFI) Graphics Output Protocol (GOP).
--   See [Windows hardware certification](https://go.microsoft.com/fwlink/p/?linkid=325510) for validation and testing information.
+-   See [Windows hardware certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) for validation and testing information.
 -   Test a variety of hardware configurations on both desktops and mobile systems to ensure a solid end-user experience on Windows 8 and later.
 
 **Graphics hardware vendors:**
@@ -40,10 +40,4 @@ To deliver the best experience in Windows 8 and later, Windows takes advantage 
 -   Take advantage of the Windows 8 DirectX feature improvements.
 
  
-
- 
-
-
-
-
 

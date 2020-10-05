@@ -90,7 +90,7 @@ See the following for information about keyboard layouts:
 
 - Keyboard header file, kdb.h, in the Windows Driver Development Kit (DDK), which documents general information about keyboard layouts.
 
-- Sample keyboard [layouts](https://go.microsoft.com/fwlink/p/?linkid=256128).
+- Sample keyboard [layouts](/samples/browse/).
 
 To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](/globalization/windows-keyboard-layouts).
 
@@ -165,7 +165,7 @@ For more information about Kbfiltr operation, see the following:
 
 - The ntddkbd.h WDK header file.
 
-- The sample [Kbfiltr](https://go.microsoft.com/fwlink/p/?linkid=256125) source code.
+- The sample [Kbfiltr](/samples/browse/) source code.
 
 ### Kbfiltr IOCTLs
 

@@ -31,7 +31,5 @@ To set device setup class properties on Windows Server 2003, Windows XP, and Win
 
 -   Set *Reserved* to **NULL**.
 
-If this call to [**SetupDiSetClassRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclassregistrypropertya) succeeds, **SetupDiSetClassRegistryProperty** sets the device setup class property and returns **TRUE**. If the function call fails, **SetupDiSetClassRegistryProperty** will return **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
-
- 
+If this call to [**SetupDiSetClassRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetclassregistrypropertya) succeeds, **SetupDiSetClassRegistryProperty** sets the device setup class property and returns **TRUE**. If the function call fails, **SetupDiSetClassRegistryProperty** will return **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the most recently logged error code.
 

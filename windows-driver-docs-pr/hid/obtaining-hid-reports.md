@@ -38,15 +38,15 @@ An application can request the return of a specific report. To retrieve a specif
 
 ## Obtaining HID Reports by kernel-mode drivers
 
-This topic discusses how a kernel-mode driver should use [IRP_MJ_READ](/windows-hardware/drivers/ifs/irp-mj-read) requests as its main approach for continuously obtaining HID input reports.
+This topic discusses how a kernel-mode driver should use [IRP_MJ_READ](../ifs/irp-mj-read.md) requests as its main approach for continuously obtaining HID input reports.
 
 Consecutive read requests return input reports in the order in which they were received from the collection. The driver can also use **IOCTL_HID_GET_Xxx** requests to obtain input and feature reports. However, a driver should only use these I/O requests to obtain the current state of a device. If the driver attempts to use [IOCTL_HID_GET_INPUT_REPORT](/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioctl_hid_get_input_report) to continuously obtain input reports, reports can be lost. In addition, some devices might not support **IOCTL_HID_GET_INPUT_REPORT**, and will become unresponsive if this request is used.
 
 ### Using IRP_MJ_READ Requests
 
-Non-WDM Windows 2000 drivers, and drivers for Windows XP and later versions, can use a single IRP for all read requests to a device. However, Windows 2000 WDM drivers must allocate a new IRP for each read request. For general information about how to use and reuse IRPs, see [Handling IRPs](/windows-hardware/drivers/kernel/handling-irps) and [Reusing IRPs](/windows-hardware/drivers/kernel/reusing-irps).
+Non-WDM Windows 2000 drivers, and drivers for Windows XP and later versions, can use a single IRP for all read requests to a device. However, Windows 2000 WDM drivers must allocate a new IRP for each read request. For general information about how to use and reuse IRPs, see [Handling IRPs](../kernel/handling-irps.md) and [Reusing IRPs](../kernel/reusing-irps.md).
 
-If a driver reuses an IRP, the IRP's [IoCompletion](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine should complete the request with a status of **STATUS_MORE_PROCESSING_REQUIRED** (and not free the IRP). When the driver no longer requires the IRP, it should complete and free the IRP by calling [IoCompleteRequest](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) and [IoFreeIrp](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp). For example, a driver might typically complete and free the IRP in its [Unload](/windows-hardware/drivers/kernel/unload-routine-functionality) routine, or after a device is removed.
+If a driver reuses an IRP, the IRP's [IoCompletion](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine should complete the request with a status of **STATUS_MORE_PROCESSING_REQUIRED** (and not free the IRP). When the driver no longer requires the IRP, it should complete and free the IRP by calling [IoCompleteRequest](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest) and [IoFreeIrp](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreeirp). For example, a driver might typically complete and free the IRP in its [Unload](../kernel/unload-routine-functionality.md) routine, or after a device is removed.
 
 If a driver uses an IRP for only one read request, the IRP's **IoCompletion** routine should complete and free the IRP, and return **STATUS_SUCCESS**.
 

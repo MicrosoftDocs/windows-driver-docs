@@ -56,9 +56,9 @@ The DEVPKEY_DeviceDisplay_Category device property represents one or more functi
 Remarks
 -------
 
-Device categories for a physical device are specified through the [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85)) XML element in a [device metadata package](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages). Each instance of that device in a system inherits the device categories for that physical device.
+Device categories for a physical device are specified through the [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85)) XML element in a [device metadata package](./overview-of-device-metadata-packages.md). Each instance of that device in a system inherits the device categories for that physical device.
 
-Each physical device can have one or more functional categories specified in the [device metadata package](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages). Each category is used by Windows Devices and Printers to group the device instance into one of the recognized device categories.
+Each physical device can have one or more functional categories specified in the [device metadata package](./overview-of-device-metadata-packages.md). Each category is used by Windows Devices and Printers to group the device instance into one of the recognized device categories.
 
 Multifunction devices would typically identify multiple functional categories for each hardware function that the device supports. For example, a multifunction device could identify functional categories for printer, fax, scanner, and removable storage device functionality.
 
@@ -96,6 +96,4 @@ Requirements
 [**DeviceCategory**](/previous-versions/windows/hardware/metadata/ff541101(v=vs.85))
 
 [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
 

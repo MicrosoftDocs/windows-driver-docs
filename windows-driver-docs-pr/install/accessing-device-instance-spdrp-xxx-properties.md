@@ -43,14 +43,14 @@ To retrieve a device property on Windows Server 2003, Windows XP, and Microsoft 
     -   Set *PropertyBufferSize* to zero.
     -   Set *RequiredSize* to a pointer to a DWORD-typed variable that receives, the size, in bytes of the property value.
 
-    In response to the call to [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya), **SetupDiGetDeviceRegistryProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the most recently logged error code.
+    In response to the call to [**SetupDiSetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceregistrypropertya), **SetupDiGetDeviceRegistryProperty** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the most recently logged error code.
 
 2.  Call **SetupDiGetDeviceRegistryProperty** again and supply the same parameter values that were supplied in the first call, except for the following changes:
 
     -   Set *PropertyBuffer* to a pointer to a BYTE-typed buffer that receives the requested property value.
     -   Set *PropertyBufferSize* to the size, in bytes, of the *PropertyBuffer* buffer. The first call to **SetupDiGetDeviceRegistryProperty** retrieved the required size of the PropertyBuffer buffer in \**RequiredSize*.
 
-    If the second call to **SetupDiGetDeviceRegistryProperty** succeeds, **SetupDiGetDeviceRegistryProperty** sets \**PropertyRegDataType* to the registry data type of the property value, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+    If the second call to **SetupDiGetDeviceRegistryProperty** succeeds, **SetupDiGetDeviceRegistryProperty** sets \**PropertyRegDataType* to the registry data type of the property value, sets the *PropertyBuffer* buffer to the property value, sets \**RequiredSize* to the size, in bytes, of the property value that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 
 ### Setting a Device Property
 
@@ -66,7 +66,5 @@ To set a device property on Windows Server 2003, Windows XP, and Windows 2000, c
 
 -   Set *PropertyBufferSize* to the size, in bytes, of the property value that is supplied in the *PropertyBuffer* buffer.
 
-If this call to **SetupDiSetDeviceRegistryProperty** succeeds, **SetupDiSetDeviceRegistryProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
-
- 
+If this call to **SetupDiSetDeviceRegistryProperty** succeeds, **SetupDiSetDeviceRegistryProperty** sets the device instance property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceRegistryProperty** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 

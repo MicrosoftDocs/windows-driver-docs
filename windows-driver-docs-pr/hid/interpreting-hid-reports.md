@@ -32,10 +32,10 @@ To use **HidP_GetUsageValueArray** applications and drivers must allocate a zero
 
 To extract the HID usages of buttons that are set to ON (1), applications and drivers call one of the following HID support routines:
 
-- [HidP_GetButtons](/windows-hardware/drivers/hid/hdpi-h-macros) (or [HidP_GetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages))
+- [HidP_GetButtons](./hdpi-h-macros.md) (or [HidP_GetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusages))
 Returns the usage ID of all buttons on a specified usage page that are set to ON.
 
-- [HidP_GetButtonsEx](/windows-hardware/drivers/hid/hdpi-h-macros#hidp_getbuttonsex) (or [HidP_GetUsagesEx](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex))
+- [HidP_GetButtonsEx](./hdpi-h-macros.md#hidp_getbuttonsex) (or [HidP_GetUsagesEx](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagesex))
 Returns the usage page and usage ID of all buttons that are set to ON.
 
 These routines return an array of all usage information for all buttons that are currently set to ON. Implicitly, buttons whose usage is not returned by these routines are set to OFF (zero).
@@ -44,9 +44,9 @@ To call these routines, applications and drivers must first allocate and zero-in
 
 The required buffer size, in bytes, is the following:
 
-- (For [HidP_GetButtons](/windows-hardware/drivers/hid/hdpi-h-macros)) The value returned by **HidP_MaxUsageListLength** times sizeof(USAGE)
+- (For [HidP_GetButtons](./hdpi-h-macros.md)) The value returned by **HidP_MaxUsageListLength** times sizeof(USAGE)
 
-- (For [HidP_GetButtonsEx](/windows-hardware/drivers/hid/hdpi-h-macros#hidp_getbuttonsex)) The value returned by **HidP_MaxUsageListLength** times sizeof(USAGE_AND_PAGE)
+- (For [HidP_GetButtonsEx](./hdpi-h-macros.md#hidp_getbuttonsex)) The value returned by **HidP_MaxUsageListLength** times sizeof(USAGE_AND_PAGE)
 
 After an application or driver has used these routines to obtain information about which buttons are currently set to ON, it can determine the difference between the current state and the previous state of the buttons by calling one of the following [HIDClass support routines](/windows-hardware/drivers/ddi/_hid/#hidclass-support-routines). These routines return the difference between two arrays of usage information:
 
@@ -64,9 +64,9 @@ To use data indices to extract and set control data in a HID report, an applicat
 
 These routines are particularly useful to an application or driver that provides a "value-added" service. For example, one that provides a custom interface to all the controls supported by a HIDClass device. Microsoft DirectInput is one example.
 
-By calling these routines, an application or driver can most efficiently obtain and set all values in a report. For example, to obtain all value data by their [HID usages](/windows-hardware/drivers/hid/hid-usages) it has to call [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) for each usage. However, to obtain all value data by data index, it only has to call **HidP_GetData** once.
+By calling these routines, an application or driver can most efficiently obtain and set all values in a report. For example, to obtain all value data by their [HID usages](./hid-usages.md) it has to call [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) for each usage. However, to obtain all value data by data index, it only has to call **HidP_GetData** once.
 
-An application or driver uses the data indices specified in a collection's [Button Capability Arrays](/windows-hardware/drivers/hid/button-capability-arrays) and [Value Capability Arrays](/windows-hardware/drivers/hid/value-capability-arrays) to identify HID usages.
+An application or driver uses the data indices specified in a collection's [Button Capability Arrays](./button-capability-arrays.md) and [Value Capability Arrays](./value-capability-arrays.md) to identify HID usages.
 
 ## Setting Value Data by Specifying Its Usage
 
@@ -85,10 +85,10 @@ Sets a usage value array in a report.
 
 An application or driver can set the state of buttons in a properly-initialized HID report by calling one of the following [HIDClass support routines](/windows-hardware/drivers/ddi/_hid/#hidclass-support-routines):
 
-- [HidP_SetButtons](/windows-hardware/drivers/hid/hdpi-h-macros#hidp_setbuttons) (or [HidP_SetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages))
+- [HidP_SetButtons](./hdpi-h-macros.md#hidp_setbuttons) (or [HidP_SetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_setusages))
 Sets a specified set of buttons to ON (1).
 
-- [HidP_UnsetButtons](/windows-hardware/drivers/hid/hdpi-h-macros#hidp_unsetbuttons) (or [HidP_UnsetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages))
+- [HidP_UnsetButtons](./hdpi-h-macros.md#hidp_unsetbuttons) (or [HidP_UnsetUsages](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_unsetusages))
 Sets a specified set of buttons to OFF (zero).
 
 ## Extracting and Setting HID Control Data by Data Indices
@@ -103,7 +103,7 @@ These routines are particularly useful to an application or driver that provides
 
 By calling these routines, an application or driver can most efficiently obtain and set all values in a report. For example, to obtain all value data by their HID usages, it has to call [HidP_GetUsageValue](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevalue) for each usage. However, to obtain all value data by data index, it only has to call **HidP_GetData** once.
 
-An application or driver uses the data indices specified in a collection's [Button Capability Arrays](/windows-hardware/drivers/hid/button-capability-arrays) and [Value Capability Arrays](/windows-hardware/drivers/hid/value-capability-arrays) to identify HID usages.
+An application or driver uses the data indices specified in a collection's [Button Capability Arrays](./button-capability-arrays.md) and [Value Capability Arrays](./value-capability-arrays.md) to identify HID usages.
 
 ## See also
 

@@ -37,13 +37,11 @@ SetupAPI) from the system by using the following methods:
 
 ### <a href="" id="deleting-a-driver-package-from-the-driver-store"></a> Deleting a Driver Package from the Driver Store
 
-Starting with Windows XP, a device installation application can call the [SetupUninstallOEMInf](https://go.microsoft.com/fwlink/p/?linkid=169503) function to remove a specified [INF file](overview-of-inf-files.md) from the system INF file directory.
+Starting with Windows XP, a device installation application can call the [SetupUninstallOEMInf](/windows/win32/api/setupapi/nf-setupapi-setupuninstalloeminfa) function to remove a specified [INF file](overview-of-inf-files.md) from the system INF file directory.
 
 Starting with Windows Vista, this function also removes the [driver package](driver-packages.md), which contains the specified INF file, from the [driver store](driver-store.md).
 
 ### <a href="" id="deleting-the-binary-files-of-the-installed-driver"></a> Deleting the Binary Files of the Installed Driver
 
 SetupAPI cannot be used to perform this action.
-
- 
 

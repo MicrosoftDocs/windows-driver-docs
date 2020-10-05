@@ -14,7 +14,7 @@ How a user-mode application processes WM\_DEVICECHANGE messages depends on wheth
 
 ### Win32 applications
 
-Win32-based applications process the messages that are sent to the application's window(s) by implementing a *Window Procedure*. For more information about window procedures, see the [Window Procedures](https://go.microsoft.com/fwlink/p/?linkid=96748) topic in the Microsoft Windows SDK documentation.
+Win32-based applications process the messages that are sent to the application's window(s) by implementing a *Window Procedure*. For more information about window procedures, see the [Window Procedures](/windows/win32/winmsg/window-procedures) topic in the Microsoft Windows SDK documentation.
 
 The following code example shows how to process WM\_DEVICECHANGE messages in a Win32-based application:
 
@@ -241,9 +241,4 @@ CAppWnd::OnDeviceChange(
 ```
 
  
-
- 
-
-
-
 

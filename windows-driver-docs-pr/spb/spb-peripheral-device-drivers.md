@@ -26,7 +26,7 @@ The following diagram shows an example hardware configuration in which an SPB—
 
 Because the GPIO controller and I²C controller in this example are integrated into the SoC module, their hardware registers are memory-mapped and can be directly accessed by the processor. However, the processor can access the hardware registers of the two peripheral devices only indirectly, through the I²C controller.
 
-An SPB is not a [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) (PnP) bus and, therefore, cannot be used to automatically detect and configure new devices that are plugged into the bus. The bus and interrupt connections of an SPB-connected device are frequently permanent. Even if the device can be unplugged from a slot, this slot is typically dedicated to the device. In addition, an SPB does not provide an in-band hardware path for relaying interrupt requests from a peripheral device on the bus to the bus controller. Instead, the hardware path for interrupts is separate from the bus controller.
+An SPB is not a [Plug and Play](../kernel/introduction-to-plug-and-play.md) (PnP) bus and, therefore, cannot be used to automatically detect and configure new devices that are plugged into the bus. The bus and interrupt connections of an SPB-connected device are frequently permanent. Even if the device can be unplugged from a slot, this slot is typically dedicated to the device. In addition, an SPB does not provide an in-band hardware path for relaying interrupt requests from a peripheral device on the bus to the bus controller. Instead, the hardware path for interrupts is separate from the bus controller.
 
 The vendor for the hardware platform stores the configuration information for an SPB-connected peripheral device in the platform's ACPI firmware. During system startup, the [ACPI driver enumerates](../acpi/enumerating-child-devices-and-control-methods.md) the devices on the bus for the PnP manager. For each enumerated device, ACPI supplies information about the device's bus and interrupt connections. The PnP manager stores this information in a datastore called the *resource hub*.
 
@@ -108,6 +108,4 @@ In response to the secondary interrupt, the SPB peripheral device driver posts a
 </tr>
 </tbody>
 </table>
-
- 
 

@@ -51,7 +51,7 @@ You can avoid creating multiple INF files for multiple versions of the framework
 
 ### <a href="" id="sample-inf-ddinstall-coinstallers-and-ddinstall-wdf-sections"></a>**Sample INF** ***DDInstall*.CoInstallers and** ***DDInstall*.Wdf Sections**
 
-The following code example shows how to create the INF <em>DDInstall</em>**.CoInstallers** section and INF <em>DDInstall</em>**.Wdf** section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](https://go.microsoft.com/fwlink/p/?linkid=256129) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
+The following code example shows how to create the INF <em>DDInstall</em>**.CoInstallers** section and INF <em>DDInstall</em>**.Wdf** section of an INF file for a PnP driver. The example shows how to create an INF file that is called *MyDevice.inf* and is based on the [ECHO](/samples/browse/) sample driver's *Echo.inf* file. The Echo sample driver is located in the samples directory of the WDK.
 
 To create *MyDevice.inf*, you must change all **ECHO\_Device** substrings in *Echo.inf* to a name that is appropriate for your product. The following code example uses **MyDevice**.
 
@@ -121,6 +121,4 @@ KmdfLibraryVersion = 1.0
 ....
 =============== End of MyDevice.inf ===============
 ```
-
- 
 

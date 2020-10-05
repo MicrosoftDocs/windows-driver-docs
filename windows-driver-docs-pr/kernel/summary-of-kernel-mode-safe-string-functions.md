@@ -342,11 +342,9 @@ The following table summarizes the safe string functions that are available to k
 <dd>
 </dd>
 </dl></td>
-<td><p>Initialize or validate a <a href="/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string" data-raw-source="[&lt;strong&gt;UNICODE_STRING&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string)"><strong>UNICODE_STRING</strong></a> structure.</p></td>
+<td><p>Initialize or validate a <a href="/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string" data-raw-source="[&lt;strong&gt;UNICODE_STRING&lt;/strong&gt;](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string)"><strong>UNICODE_STRING</strong></a> structure.</p></td>
 <td><p>None</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 

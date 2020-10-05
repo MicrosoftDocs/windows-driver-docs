@@ -34,7 +34,7 @@ Developers of desktop applications can use this sample to see how to replace the
 
 ### Articles
 
--   [Wi-Fi Direct Services API](https://go.microsoft.com/fwlink/?LinkId=617633)
+-   [Wi-Fi Direct Services API](/uwp/api/Windows.Devices.WiFiDirect.Services)
 -   [What's new in driver development?]( https://go.microsoft.com/fwlink/?LinkId=617634)
 -   [Using WinRT API in Win32 App]( https://go.microsoft.com/fwlink/?LinkId=617635)
 
@@ -45,10 +45,4 @@ Developers of desktop applications can use this sample to see how to replace the
 -   [Building Windows Apps That Use Wi-Fi Direct (Windows 8.1)](https://go.microsoft.com/fwlink/?LinkId=617638)
 
  
-
- 
-
-
-
-
 

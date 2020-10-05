@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Creating a persistent unique identifier for a sensor (previous version)
 
 
-Your driver must create persistent unique identifier (PUID) for each sensor. A PUID is a GUID value that is stored across sessions and uniquely identifies the object on the device. Your driver must return the PUID value when queried for the property named SENSOR\_PROPERTY\_PERSISTENT\_UNIQUE\_ID. If a device contains multiple sensors, each sensor must be assigned its own PUID. Applications can retrieve this ID by calling the [ISensor::GetID](https://go.microsoft.com/fwlink/p/?linkid=157812) method in the Sensor API.
+Your driver must create persistent unique identifier (PUID) for each sensor. A PUID is a GUID value that is stored across sessions and uniquely identifies the object on the device. Your driver must return the PUID value when queried for the property named SENSOR\_PROPERTY\_PERSISTENT\_UNIQUE\_ID. If a device contains multiple sensors, each sensor must be assigned its own PUID. Applications can retrieve this ID by calling the [ISensor::GetID](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getid) method in the Sensor API.
 
 You should create a new PUID for each sensor, when the sensor first connects to the computer, and then store this value for later use.
 

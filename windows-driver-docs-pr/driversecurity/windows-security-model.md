@@ -203,7 +203,7 @@ To create a file, a process must have traversal rights to the parent directories
 
 The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\D maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
 
-For more information, see [Object Handles](../kernel/object-handles.md) and [Object Security](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-security).
+For more information, see [Object Handles](../kernel/object-handles.md) and [Object Security](../kernel/access-rights.md).
 
 ### <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
 

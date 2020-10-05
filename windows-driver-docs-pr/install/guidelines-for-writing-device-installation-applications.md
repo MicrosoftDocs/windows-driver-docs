@@ -28,7 +28,7 @@ Device installation applications *can* do the following:
 
 -   [Install device-specific applications](installing-device-specific-applications.md)
 
-    **Note**  We highly recommend that you submit device-specific applications to the appropriate [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) for software. See the [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
+    **Note**  We highly recommend that you submit device-specific applications to the appropriate [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) for software. See the [Microsoft Developer Network](https://go.microsoft.com/fwlink/p/?linkid=8714) website for more information.
 
      
 
@@ -57,6 +57,4 @@ Device installation applications *must not* do the following:
 -   Use *win.ini* entries to start device installation applications.
 
 -   Force the user to install any device-specific applications, unless the device will not operate without the application. Examples might include utilities for setting configurable keyboard keys or for setting a modem's country/region code, if an inbox application does not support such a capability.
-
- 
 
