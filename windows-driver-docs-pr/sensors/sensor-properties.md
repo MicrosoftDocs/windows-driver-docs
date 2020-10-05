@@ -68,7 +68,7 @@ Values for properties designated as read/write can be specified by the client ap
 <strong>SENSOR_PROPERTY_ACCURACY</strong>
 (PID = 17)</td>
 <td><p><strong>VT_UNKNOWN</strong></p>
-<p>Read only. <a href="https://go.microsoft.com/fwlink/p/?linkid=134660" data-raw-source="[IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=134660)">IPortableDeviceValues</a> object that contains sensor data type names and their associated accuracies. Accuracy values represent possible variation from true values. Accuracy values are expressed by using the same units as the data field, except when otherwise documented.</p></td>
+<p>Read only. <a href="/previous-versions//ms740012(v=vs.85)" data-raw-source="[IPortableDeviceValues](/previous-versions//ms740012(v=vs.85))">IPortableDeviceValues</a> object that contains sensor data type names and their associated accuracies. Accuracy values represent possible variation from true values. Accuracy values are expressed by using the same units as the data field, except when otherwise documented.</p></td>
 </tr>
 <tr class="even">
 <td><span id="SENSOR_PROPERTY_CHANGE_SENSITIVITY"></span><span id="sensor_property_change_sensitivity"></span>
@@ -280,7 +280,6 @@ Requirements
 
 [**GetProperty**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-getproperty)
 
-[IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=275070)
+[IPortableDeviceValues](/windows/win32/wpd_sdk/iportabledevicevalues)
 
 [**SetProperties**](/windows/win32/api/sensorsapi/nf-sensorsapi-isensor-setproperties)
-

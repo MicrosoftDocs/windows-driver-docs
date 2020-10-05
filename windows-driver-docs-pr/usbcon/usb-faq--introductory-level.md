@@ -112,7 +112,7 @@ If the USB 3.0 port is correctly routed to an xHCI controller, Windows loads the
 
 If the USB 2.0 port is connected to an EHCI controller through a USB 2.0 hub, the traffic moves through the EHCI controller, and the USB 2.0 driver stack is loaded.
 
-For more information about the drivers in the USB driver stack, see [USB host-side drivers in Windows](https://go.microsoft.com/fwlink/p/?linkid=320134).
+For more information about the drivers in the USB driver stack, see [USB host-side drivers in Windows](/windows-hardware/drivers/ddi/).
 
 If the PC's USB 2.0 ports use a companion controller, the host controller to which the port is routed depends on device speed. For example, a low speed device connects through a UHCI or an OHCI controller, and uses the USBUHCI or USBOHCI driver. The PC routes a high speed device to an EHCI controller, therefore, Windows uses the USBEHCI driver.
 
@@ -148,11 +148,11 @@ If the USB 3.0 device is a storage device, Windows Explorer shows similar messag
 
 ![superspeed usb device operating at high-speed](images/usb-high-speed-storage-device.jpg)
 
-If you are writing a device driver, the [USBView](https://go.microsoft.com/fwlink/p/?linkid=320135) tool, included in the Windows Driver Kit (WDK), is very useful. For the Windows 8 WDK, Microsoft updated USBView to display SuperSpeed USB information. You can use this tool to determine whether or not your device is operating at SuperSpeed. This image shows a USB 3.0 device operating at SuperSpeed in USBView.
+If you are writing a device driver, the [USBView](../debugger/usbview.md) tool, included in the Windows Driver Kit (WDK), is very useful. For the Windows 8 WDK, Microsoft updated USBView to display SuperSpeed USB information. You can use this tool to determine whether or not your device is operating at SuperSpeed. This image shows a USB 3.0 device operating at SuperSpeed in USBView.
 
 ![superspeed usb device operating at superspeed](images/usb-superspeed-usbview.jpg)
 
-If you are a device driver developer, the [USB driver stack](https://go.microsoft.com/fwlink/p/?linkid=320134) exposes a new IOCTL that is called [IOCTL\_USB\_GET\_NODE\_CONNECTION\_INFORMATION\_EX\_V2](https://go.microsoft.com/fwlink/p/?linkid=320136), which you can use to query speed information for USB 3.0 devices.
+If you are a device driver developer, the [USB driver stack](/windows-hardware/drivers/ddi/) exposes a new IOCTL that is called [IOCTL\_USB\_GET\_NODE\_CONNECTION\_INFORMATION\_EX\_V2](/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2), which you can use to query speed information for USB 3.0 devices.
 
 ## Why isn't my SuperSpeed USB device faster than an equivalent high-speed USB device?
 
@@ -360,8 +360,8 @@ This table highlights the USB DWG classes that are supported in Windows and also
 
 Microsoft provides system-defined setup classes for most device types. System-defined setup class GUIDs are defined in Devguid.h. For additional information, see the WDK. For a list of Windows class GUIDs, see these topics:
 
-- [System-Defined Device Setup Classes Available to Vendors](https://go.microsoft.com/fwlink/p/?linkid=320141)
-- [System-Defined Device Setup Classes Reserved for System Use](https://go.microsoft.com/fwlink/p/?linkid=320142)
+- [System-Defined Device Setup Classes Available to Vendors](../install/system-defined-device-setup-classes-available-to-vendors.md)
+- [System-Defined Device Setup Classes Reserved for System Use](../install/system-defined-device-setup-classes-reserved-for-system-use.md)
 
 Independent hardware vendors must use the setup class that is associated with the type of USB device, not with the bus type. If you are developing a device type for which Microsoft has not provided an existing class GUID, you can define a new device setup class.
 

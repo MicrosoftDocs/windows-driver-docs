@@ -28,7 +28,7 @@ To create a Network Driver Interface Specification (NDIS) intermediate driver pa
 
 - Step 3: Determine additional Windows driver design decisions.
 
-    For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](../install/creating-international-inf-files.md).
+    For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 

@@ -138,4 +138,4 @@ If the driver assigns a previously allocated buffer to a new memory object by ca
 
 A driver can reuse the request objects that it creates, but it must reinitialize each such object by calling [**WdfRequestReuse**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestreuse) before each reuse. For more information, see [Reusing Framework Request Objects](reusing-framework-request-objects.md).
 
-For sample code that reinitializes a request object, see the [Toaster](https://go.microsoft.com/fwlink/p/?linkid=256195) and [NdisEdge](https://go.microsoft.com/fwlink/p/?linkid=256154) samples that are provided with the KMDF release.
+For sample code that reinitializes a request object, see the [Toaster](/samples/browse/) and [NdisEdge](/samples/browse/) samples that are provided with the KMDF release.

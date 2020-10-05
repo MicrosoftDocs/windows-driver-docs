@@ -29,7 +29,7 @@ Describes the behavior of USB Device Emulation(UDE) class extension and tasks th
 
 ## Before you begin
 
-- [Install](https://go.microsoft.com/fwlink/p/?LinkID=733614) the latest Windows Driver Kit (WDK) your development computer. The kit has the required header files and libraries for writing a UDE client driver, specifically, you'll need:
+- [Install](../download-the-wdk.md) the latest Windows Driver Kit (WDK) your development computer. The kit has the required header files and libraries for writing a UDE client driver, specifically, you'll need:
   - The stub library, (Udecxstub.lib). The library translates calls made by the client driver and pass them up to UdeCx.
   - The header file, Udecx.h.
 - Install Windows 10 on your target computer.

@@ -37,7 +37,7 @@ Retrieves the string data that is currently assigned to a multi-string-typed val
 Retrieves the string data that is currently assigned to a string-typed value name and assigns the string to a specified framework string object.
 
 <a href="" id="---------wdfregistryqueryunicodestring--------"></a>[**WdfRegistryQueryUnicodeString**](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryqueryunicodestring)  
-Retrieves the string data that is currently assigned to a string-typed value name and copies the string to a specified [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure.
+Retrieves the string data that is currently assigned to a string-typed value name and copies the string to a specified [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure.
 
 <a href="" id="---------wdfregistryqueryulong--------"></a>[**WdfRegistryQueryULong**](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryqueryulong)  
 Retrieves the unsigned long word (REG\_DWORD) data that is currently assigned to a value name and copies the data to a specified location.
@@ -70,6 +70,4 @@ To remove a registry value, the driver must call [**WdfRegistryRemoveValue**](/w
 To obtain WDM information about the registry, a driver can call [**WdfRegistryWdmGetHandle**](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistrywdmgethandle), which returns a WDM handle to the registry key that a framework registry-key object represents.
 
 After your driver has finished accessing a registry key, it must call [**WdfRegistryClose**](/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryclose) or [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to close the key and delete the registry-key object.
-
- 
 

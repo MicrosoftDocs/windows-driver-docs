@@ -32,7 +32,7 @@ Because Direct3D version 11 devices must support presentation from any scan-out 
 
 -   DXGI\_FORMAT\_B8G8R8X8\_UNORM
 
-There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_USAGE\_BACKBUFFER (from the [DXGI\_USAGE](https://go.microsoft.com/fwlink/p/?linkid=122799) enumeration) is set, the following are the only other DXGI usages that are allowed:
+There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_USAGE\_BACKBUFFER (from the [DXGI\_USAGE](/windows/win32/direct3ddxgi/dxgi-usage) enumeration) is set, the following are the only other DXGI usages that are allowed:
 
 -   DXGI\_USAGE\_SHADERINPUT, which maps to D3D11\_BIND\_SHADER\_RESOURCE
 
@@ -41,10 +41,4 @@ There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_US
 Note that no CPU access flags are allowed for back buffers.
 
  
-
- 
-
-
-
-
 

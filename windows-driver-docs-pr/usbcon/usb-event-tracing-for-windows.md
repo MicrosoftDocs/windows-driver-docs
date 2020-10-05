@@ -68,7 +68,7 @@ Windows 8 provides a USB driver stack to support USB 3.0 devices. The Microsoft
 
 | Topic | Description |
 | --- | --- |
-|[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md) | This topic provides information about using the [Logman](https://go.microsoft.com/fwlink/p/?linkid=617153) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file. |
+|[How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md) | This topic provides information about using the [Logman](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753820(v=ws.10)) tool to capture a USB ETW event trace. Logman is a tracing tool that is built into Windows. You can use Logman to capture events into an event trace log file. |
 | [Using activity ID GUIDs in USB ETW traces](using-usb-etw.md) | This topic provides information about Activity ID GUIDs, how to add those GUIDs in the event trace providers, and view them in Netmon. |
 |[USB ETW traces in Netmon](viewing-etw-traces-in-netmon.md) | You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon. Netmon does not parse the trace automatically. It requires USB ETW parsers. USB ETW parsers are text files, written in Network Monitor Parser Language (NPL), that describe the structure of USB ETW event traces. The parsers also define USB-specific columns and filters. These parsers make Netmon the best tool for analyzing USB ETW traces. |
 | [Using Xperf with USB ETW](using-xperf-with-usb-etw.md) | This topic describes how to use Xperf with Netmon to analyze USB trace data. |

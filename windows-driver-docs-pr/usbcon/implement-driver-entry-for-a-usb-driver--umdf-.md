@@ -34,7 +34,7 @@ Before you begin, make sure that you meet the following requirements:
 
     The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](https://go.microsoft.com/fwlink/p/?linkid=617585).
 
--   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617701).
+-   Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](../download-the-wdk.md).
 -   If you are using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](../debugger/setting-up-user-mode-debugging-in-visual-studio.md).
 
 **Hardware requirements**
@@ -49,7 +49,7 @@ If you are new to USB driver development, use the OSR USB FX2 learning kit to st
 -   [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md)
 -   [Getting started with Windows drivers](../gettingstarted/index.md)
 -   [User-Mode Driver Framework](../debugger/user-mode-driver-framework-debugging.md)
--   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](https://go.microsoft.com/fwlink/p/?linkid=617702).
+-   *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 
 Instructions
 ------------

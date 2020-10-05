@@ -25,13 +25,11 @@ To retrieve a device instance identifier on Windows Server 2003, Windows XP, and
     -   Set *DeviceInstanceIdSize* to zero.
     -   Set *RequiredSize* to a pointer to a DWORD-typed variable that receives the number of characters required to store the NULL-terminated device instance identifier.
 
-    In response to the first call to [**SetupDiGetDeviceInstanceId**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinstanceida), **SetupDiGetDeviceInstanceId** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) returns the most recently logged error code.
+    In response to the first call to [**SetupDiGetDeviceInstanceId**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinstanceida), **SetupDiGetDeviceInstanceId** sets \**RequiredSize* to the size, in bytes, of the buffer that is required to retrieve the property value, logs the error code ERROR_INSUFFICIENT_BUFFER, and returns **FALSE**. A subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) returns the most recently logged error code.
 
 2.  Call **SetupDiGetDeviceInstanceId** again and supply the same parameter values that were supplied in the first call, except for the following changes:
     -   Set *DeviceInstanceId* to a pointer to a string buffer that receives the NULL-terminated device instance identifier that is associated with the device information element.
     -   Set *DeviceInstanceIdSize* to the size, in characters, of the *DeviceInstanceId* buffer. The first call to **SetupDiGetDeviceInstanceId** retrieved the required size of the *DeviceInstanceId* buffer in \**RequiredSize*.
 
-If the second call to **SetupDiGetDeviceInstanceId** succeeds, **SetupDiGetDeviceInstanceId** sets the *DeviceInstanceId* buffer to the device instance identifier, sets \**RequiredSize* to the size, in characters, of the device instance identifier that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInstanceId** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) returns the logged error code.
-
- 
+If the second call to **SetupDiGetDeviceInstanceId** succeeds, **SetupDiGetDeviceInstanceId** sets the *DeviceInstanceId* buffer to the device instance identifier, sets \**RequiredSize* to the size, in characters, of the device instance identifier that was retrieved, and returns **TRUE**. If the function call fails, **SetupDiGetDeviceInstanceId** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) returns the logged error code.
 

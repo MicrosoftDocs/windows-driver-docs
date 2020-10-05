@@ -708,7 +708,7 @@ _DestinationString [out]_
 
 **PUNICODE_STRING**
 
-Pointer to the [**UNICODE_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
+Pointer to the [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
 
 _Buffer [in]_
 

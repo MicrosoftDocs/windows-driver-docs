@@ -23,7 +23,7 @@ The host and target computers must be able to ping each other by name. This migh
 
 2. [Install the WDK](../download-the-wdk.md). You do not need to install Visual Studio, however, unless you plan on doing driver development on the target computer.
 
-3. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](https://go.microsoft.com/fwlink/p/?LinkID=309386).
+3. If Secure Boot is enabled on an x86 or x64 target computer, disable it. For information about Unified Extensible Firmware Interface (UEFI) and Secure Boot, see [UEFI Firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)).
 
     If the target computer uses an ARM processor, install the Windows Debug Policy. This can be done only by Microsoft or the manufacturer of the target computer. You do not need to disable Secure Boot.
 
@@ -64,7 +64,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 5. Select a type of debugging connection, and enter the required parameters.
 
-    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=223405).
+    For more information about setting up debugging over various types of connections, see [Setting Up Kernel-Mode Debugging Manually](../debugger/setting-up-kernel-mode-debugging-in-windbg--cdb--or-ntsd.md) in the CHM or online documentation for [Debugging Tools for Windows](../debugger/index.md).
 
 6. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, select **Finish**.
 

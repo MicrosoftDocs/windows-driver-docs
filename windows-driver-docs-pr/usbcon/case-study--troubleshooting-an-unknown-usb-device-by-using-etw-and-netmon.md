@@ -24,9 +24,9 @@ Typically when the USB driver stack fails to enumerate a device, the hub driver 
 * The request for the Configuration Descriptor failed.
 * The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
 
-In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](https://go.microsoft.com/fwlink/p/?linkid=617523) in Device Manager.
+In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725873(v=ws.10)) in Device Manager.
 
-If a device is marked with failure [Code 28](https://go.microsoft.com/fwlink/p/?linkid=617525) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
+If a device is marked with failure [Code 28](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731268(v=ws.10)) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
 
 ## Starting the Event Trace Analysis
 
@@ -142,7 +142,7 @@ USB error events, and other events, have status values in their data that provid
 
 |Status type|Resource|
 |----|----|
-|**fid_NtStatus**|See [NTSTATUS values](https://go.microsoft.com/fwlink/p/?linkid=617532).|
+|**fid_NtStatus**|See [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55).|
 |The status field of a USB request block (URB) or **fid_UsbdStatus**|Look up the value as a USBD_STATUS in inc\api\usb.h in the Windows Driver Kit (WDK). You can also use the [USBD\_STATUS](/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)). This topic lists the symbolic names and the meanings of the USBD\_STATUS values.|
 
 ## Reading Backwards from Problem Events

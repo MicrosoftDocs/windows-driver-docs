@@ -19,7 +19,7 @@ A DirectX 9.0 version driver can use the [CPixel class methods](./cpixel-support
 
 Driver writers are not required to use the CPixel class methods to calculate the locations of sublevels for lightweight MIP-map textures. However, the DirectX 9.0 runtime uses **CPixel** class methods to recover the memory layout of lightweight system memory MIP-map textures. Therefore, to ensure that the runtime and drivers recover the memory layout of lightweight system memory MIP-map textures in the same manner, driver writers must follow the same **CPixel** class rules to implement their own code.
 
-For information about how the **CPixel** class is implemented, see the *pixel.hpp*, *pixel.cpp*, and *pixlib.cpp* files in the [PixLib](https://go.microsoft.com/fwlink/p/?linkid=256156) code sample.
+For information about how the **CPixel** class is implemented, see the *pixel.hpp*, *pixel.cpp*, and *pixlib.cpp* files in the [PixLib](/samples/browse/) code sample.
 
 The CPixel class contains the following methods:
 
@@ -65,6 +65,4 @@ The CPixel class contains the following methods:
 </tr>
 </tbody>
 </table>
-
- 
 

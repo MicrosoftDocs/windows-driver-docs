@@ -49,15 +49,15 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](/uwp/api/Wind
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="" id="custom-usb-device-access-sample"></a><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">Custom USB device access sample</a></p></td>
+<td><p><a href="" id="custom-usb-device-access-sample"></a><a href="/samples/browse/" data-raw-source="[Custom USB device access sample](/samples/browse/)">Custom USB device access sample</a></p></td>
 <td><p>This sample shows how to communicate with a USB device. The sample can communicate with the OSR USB FX2 learning kit and the SuperMUTT device.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="" id="usb-cdc-control-sample"></a><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[USB CDC Control sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">USB CDC Control sample</a></p></td>
+<td><p><a href="" id="usb-cdc-control-sample"></a><a href="/samples/browse/" data-raw-source="[USB CDC Control sample](/samples/browse/)">USB CDC Control sample</a></p></td>
 <td><p>This sample shows how to communicate with a USB CDC (Communications Device Class) device and sends and receives data through serial ports, such as a USB serial converter cable.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="" id="firmware-update-usb-device-sample"></a><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Firmware Update USB Device sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">Firmware Update USB Device sample</a></p></td>
+<td><p><a href="" id="firmware-update-usb-device-sample"></a><a href="/samples/browse/" data-raw-source="[Firmware Update USB Device sample](/samples/browse/)">Firmware Update USB Device sample</a></p></td>
 <td><p>This sample shows how a UWP app can update the firmware of a USB device. The update operation runs as a background task.</p></td>
 </tr>
 </tbody>

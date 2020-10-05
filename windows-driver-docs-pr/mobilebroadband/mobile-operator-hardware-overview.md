@@ -154,7 +154,7 @@ Mobile broadband device firmware should be updated by using Windows Update. For 
 
 ### <span id="OMA-DM_client_support"></span><span id="oma-dm_client_support"></span><span id="OMA-DM_CLIENT_SUPPORT"></span>OMA-DM client support
 
-Windows 8.1 added OMA-DM support for enterprises to manage your devices running Windows in BYOD (Bring Your Own Device) scenarios. This extends support for these scenarios by adding enterprise-relevant protocols ([MS-MDE](https://go.microsoft.com/fwlink/?linkid=617595), [MS-MDM](https://go.microsoft.com/fwlink/?linkid=619346)) for use by 3rd-party mobile device management providers and Windows InTune.
+Windows 8.1 added OMA-DM support for enterprises to manage your devices running Windows in BYOD (Bring Your Own Device) scenarios. This extends support for these scenarios by adding enterprise-relevant protocols ([MS-MDE](/openspecs/windows_protocols/ms-mde/5c841535-042e-489e-913c-9d783d741267), [MS-MDM](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f)) for use by 3rd-party mobile device management providers and Windows InTune.
 
 Windows separates OMA-DM support for mobile Network operator configuration from the support for enterprise BYOD. The OMA-DM client in Windows 8.1 and Windows 10 does not support configuring Mobile Operator specific settings natively and is not 3rd party extensible to support mobile network operator requirements. OMA-DM solutions supporting Windows Phone platform are not compatible with the Windows 8.1 OMA-DM client or the Windows 10 OMA-DM client.
 
@@ -201,8 +201,6 @@ The device must report [**WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/wwa
 
 **Note**  
 There is no HCK test case to validate that this feature implemented on the device or system works with Windows. We look towards the OEM and the operator to use specific filters within MBOT to ensure that the final product can be tested.
-
- 
 
  
 

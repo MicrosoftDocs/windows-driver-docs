@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 > [!WARNING]
 > The Sharks Cove hardware development board is no longer supported for Windows IoT Core.  For a list of currently supported boards, see [SoCs and custom boards](/windows/iot-core/learn-about-hardware/socsandcustomboards).
 
-Sharks Cove is a [hardware development board](https://go.microsoft.com/fwlink/p?linkid=506967) that you can use to develop hardware and drivers for Windows.
+Sharks Cove is a [hardware development board](./windows-compatible-hardware-development-boards.md) that you can use to develop hardware and drivers for Windows.
 
 The Intel Sharks Cove board supports driver development for devices that use a variety of interfaces, including GPIO, I2C, I2S, UART, SDIO, and USB. You can also use the Sharks Cove board to develop drivers for cameras and touch screens.
 
@@ -45,15 +45,15 @@ A driver development environment has two computers: the *host computer* and the 
 To develop hardware and drivers for the Sharks Cove board, you need these kits and tools on the host computer:
 
 - [Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=533470)
-- [Windows Driver Kit (WDK), WDK Test Pack, and Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?LinkId=733614)
+- [Windows Driver Kit (WDK), WDK Test Pack, and Debugging Tools for Windows](../download-the-wdk.md)
 
 On the host computer, first download Visual Studio, then download the WDK, and then download the WDK Test Pack. You do not need to download Debugging Tools for Windows separately, because it is included in the WDK.
 
 ### Documentation
 
-- The online [documentation for the WDK](https://go.microsoft.com/fwlink/p?linkid=317001).
+- The online [documentation for the WDK](../index.yml).
 
-- The online [documentation for Debugging Tools for Windows](https://go.microsoft.com/fwlink/p?linkid=223405).
+- The online [documentation for Debugging Tools for Windows](../debugger/index.md).
 
 - The documentation for Debugging Tools for Windows is also available as a CHM file in the installation directory. Example: C:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64\\debugger.chm.
 
@@ -178,7 +178,7 @@ Provisioning the Sharks Cove board is similar to provisioning any other computer
 
 and this topic, which is available on line and in debugger.chm.
 
-- [Setting up Kernel-Mode Debugging using Serial over USB in Visual Studio](https://go.microsoft.com/fwlink/p?linkid=400460)
+- [Setting up Kernel-Mode Debugging using Serial over USB in Visual Studio](../debugger/setting-up-kernel-mode-debugging-using-serial-over-usb-in-visual-studio.md)
 
 >[!NOTE]
 >Before you provision the Sharks Cove board, you need to disable Secure Boot. Restart the Sharks Cove board. As the board restarts, hold the Volume-up button. Go to **Device Manager &gt; System Setup &gt; Boot**. Set **UEFI Security Boot** to **Disabled**.
@@ -191,12 +191,12 @@ Before you write a device driver for the Sharks Cove board, it is helpful to fam
 
 ## Step 6: Alter the Secondary System Description Table (SSDT)
 
-If you are writing a driver for a driver for a device that connects to a simple peripheral bus (SPB) on the Sharks Cove board, you need to update the Secondary System Description Table (SSDT) in the Sharks Cove firmware. An example of this is writing a driver for an accelerometer that transfers data over an I2C bus and generates interrupts through a general-purpose I/O (GPIO) pin. For more information, see [Simple Peripheral Buses](https://go.microsoft.com/fwlink/p?linkid=399232).
+If you are writing a driver for a driver for a device that connects to a simple peripheral bus (SPB) on the Sharks Cove board, you need to update the Secondary System Description Table (SSDT) in the Sharks Cove firmware. An example of this is writing a driver for an accelerometer that transfers data over an I2C bus and generates interrupts through a general-purpose I/O (GPIO) pin. For more information, see [Simple Peripheral Buses](/previous-versions//hh450903(v=vs.85)).
 
 Here's an example of altering the SSDT. We will add a table entry for the [ADXL345](https://go.microsoft.com/fwlink/p?linkid=401463) accelerometer.
 
 >[!NOTE]
->See the [SpbAccelerometer driver cookbook](../sensors/spbaccelerometer-driver-cookbook.md) for a step-by-step guide to the [SpbAccelerometer sample driver](https://go.microsoft.com/fwlink/p?linkid=506965) and the ADXL345 accelerometer.
+>See the [SpbAccelerometer driver cookbook](../sensors/spbaccelerometer-driver-cookbook.md) for a step-by-step guide to the [SpbAccelerometer sample driver](/samples/browse/) and the ADXL345 accelerometer.
 
 1. Copy the x86 version of ASL.exe to the Sharks Cove board. ASL.exe is included in the WDK.
 
@@ -420,15 +420,15 @@ Regardless of whether you use Visual Studio or WinDbg, these hands-on guides are
 
 ## Sample driver code
 
-- [SpbAccelerometer Sample Driver (UMDF Version 1)](https://go.microsoft.com/fwlink/p?linkid=506965)
+- [SpbAccelerometer Sample Driver (UMDF Version 1)](/samples/browse/)
 
 ## Understanding simple peripheral buses
 
-To learn how Windows drivers work with simple peripheral buses, see [Simple Peripheral Buses](https://go.microsoft.com/fwlink/p?linkid=399232).
+To learn how Windows drivers work with simple peripheral buses, see [Simple Peripheral Buses](/previous-versions//hh450903(v=vs.85)).
 
 ## Related topics
 
-[Concepts for all driver developers](https://go.microsoft.com/fwlink/p/?linkid=399233)
+[Concepts for all driver developers](./concepts-and-knowledge-for-all-driver-developers.md)
 
 [Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p/?linkid=399234)
 
@@ -436,8 +436,8 @@ To learn how Windows drivers work with simple peripheral buses, see [Simple Peri
 
 [Windows Hardware Developer Center](https://go.microsoft.com/fwlink/p/?linkid=8703)
 
-[WDK Samples for Windows](https://go.microsoft.com/fwlink/p?linkid=394031)
+[WDK Samples for Windows](/samples/browse/?products=windows-wdk)
 
-[Windows Hardware and Driver Developer Community](https://go.microsoft.com/fwlink/p?linkid=393983)
+[Windows Hardware and Driver Developer Community](/previous-versions/gg454528(v=msdn.10))
 
 [Technical Support](https://go.microsoft.com/fwlink/p/?linkid=8713)

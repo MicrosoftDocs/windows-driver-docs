@@ -26,7 +26,7 @@ Test scripts use WDTF objects through Component Object Model (COM) interfaces. Y
 
 Additionally, you can use some WDTF samples through Driver Test Manager (DTM) without any additional coding.
 
-**Note**  DTM is part of the [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=254893) and Microsoft Windows Logo Kit (WLK). When you run WDTF-based tests in DTM, WDTF is installed for you.
+**Note**  DTM is part of the [Windows Hardware Certification Kit (HCK)](/windows-hardware/test/hlk/) and Microsoft Windows Logo Kit (WLK). When you run WDTF-based tests in DTM, WDTF is installed for you.
 
  
 
@@ -39,9 +39,4 @@ The preceding figure shows a model for creating component-based scenarios that l
 -   [Extending the Framework](extending-the-framework.md)
 
  
-
- 
-
-
-
 

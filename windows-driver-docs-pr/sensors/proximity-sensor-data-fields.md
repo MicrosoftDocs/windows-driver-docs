@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the proximity sensor.
 
-The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the types shown in the type column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Description|
 |--|--|--|--|
@@ -44,7 +44,5 @@ If the driver fails to report these data-field properties, Apps will still be ab
 
 [EvtSensorGetDataFieldProperties](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
-
- 
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 

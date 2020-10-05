@@ -61,7 +61,7 @@ TRACE_LEVEL_PERF            6
 ## Tracelog macros
 
 
-The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this see the [WPP extended format strings](https://go.microsoft.com/fwlink/p/?linkid=324276) topic on MSD. The newline character is also included in the MSG so “\\n” is not necessary.
+The following are WPP macros with their associated trace levels and trace flags. The MSG parameter is a standard format string that is defined for the printf function. Partners can also use the WPP extended format string. For more information about this see the [WPP extended format strings](../devtest/what-are-the-wpp-extended-format-specification-strings-.md) topic on MSD. The newline character is also included in the MSG so “\\n” is not necessary.
 
 <table>
 <colgroup>
@@ -159,9 +159,7 @@ The following are WPP macros with their associated trace levels and trace flags.
 ## Decoding ETL logs
 
 
-The tracefmt tool is used to decode ETL logs. For more information about this tool, see [Tracefmt](https://go.microsoft.com/fwlink/p/?linkid=324212).
+The tracefmt tool is used to decode ETL logs. For more information about this tool, see [Tracefmt](../devtest/tracefmt.md).
 
 If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md.
-
- 
 

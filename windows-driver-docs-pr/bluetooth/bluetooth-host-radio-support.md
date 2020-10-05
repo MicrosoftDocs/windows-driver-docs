@@ -19,7 +19,7 @@ With Windows, a Bluetooth radio can be packaged as an external dongle or embedde
 A new Bluetooth radio might not match any of the device IDs in the Bluetooth INF (Bth.inf) that is included with Windows. This prevents Windows from loading a Bluetooth stack for the device. IHVs should ensure that their radio works with the native Bluetooth stack in one of the following ways:
 
 * Create an INF for the radio that references Bth.inf. For an example of a vendor-specific INF file for a Bluetooth radio, see [Appendix B: An Example of a Vendor-Provided INF File for Use in Windows Vista](bluetooth-faq--appendix-b.md).
-* Store an extended compat ID OS descriptor in the device firmware that specifies an appropriate compatible and subcompatible ID. For information about extended compat ID OS descriptors, see [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=308932).
+* Store an extended compat ID OS descriptor in the device firmware that specifies an appropriate compatible and subcompatible ID. For information about extended compat ID OS descriptors, see [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 * Force the Bluetooth stack to load
 
 The following procedure uses Device Manager to force the Bluetooth stack to load for a new radio:
@@ -96,7 +96,7 @@ If IHVs do not want Windows to automatically generate a PDO for their device, th
 
 ## How Group Policy can block Bluetooth radio installation
 
-For details on how to use Group Policy to block the installation of Bluetooth radios, see the “Prevent installation of prohibited devices” section of [Step-by-Step Guide to Controlling Device Installation and Usage with Group Policy](https://go.microsoft.com/fwlink/p/?linkid=324335).
+For details on how to use Group Policy to block the installation of Bluetooth radios, see the “Prevent installation of prohibited devices” section of [Step-by-Step Guide to Controlling Device Installation and Usage with Group Policy](/previous-versions/dotnet/articles/bb530324(v=msdn.10)).
 
 Use the following compatible IDs for the Bluetooth radio:
 

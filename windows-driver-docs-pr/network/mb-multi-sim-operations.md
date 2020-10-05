@@ -79,13 +79,13 @@ The Windows 10 desktop WMBCLASS driver follows the specification outlined in the
 
 ## OIDs for Set and Query Requests
 
-To query the number of devices (executors) and slots in the modem, as well as the number of executors that may be active concurrently, the host uses [OID_WWAN_SYS_CAPS](https://go.microsoft.com/fwlink/p/?linkid=841265).
+To query the number of devices (executors) and slots in the modem, as well as the number of executors that may be active concurrently, the host uses [OID_WWAN_SYS_CAPS](./oid-wwan-sys-caps.md).
 
-To query the capability of an executor, the host uses [OID_WWAN_DEVICE_CAPS_EX](https://go.microsoft.com/fwlink/p/?linkid=841266).
+To query the capability of an executor, the host uses [OID_WWAN_DEVICE_CAPS_EX](./oid-wwan-device-caps-ex.md).
 
-To define the slot that is bound to each executor or query the current mapping, the host uses [OID_WWAN_DEVICE_SLOT_MAPPINGS](https://go.microsoft.com/fwlink/p/?linkid=841267).
+To define the slot that is bound to each executor or query the current mapping, the host uses [OID_WWAN_DEVICE_SLOT_MAPPINGS](./oid-wwan-device-slot-mappings.md).
 
-To query the status of a particular slot on the modem, the host uses [OID_WWAN_SLOT_INFO_STATUS](https://go.microsoft.com/fwlink/p/?linkid=841268).
+To query the status of a particular slot on the modem, the host uses [OID_WWAN_SLOT_INFO_STATUS](./oid-wwan-slot-info-status.md).
 
 ## Per-device and Per-executor Commands
 

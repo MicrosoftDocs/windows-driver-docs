@@ -37,7 +37,7 @@ Parameters
 A pointer to a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure that represents the driver formed by the (display miniport, display port) driver pair.
 
 *RegistryPath* \[in\]
-A pointer to a [**UNICODE\_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that supplies the path to the driver's registry key.
+A pointer to a [**UNICODE\_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that supplies the path to the driver's registry key.
 
 Return value
 ------------
@@ -188,6 +188,4 @@ Requirements
 [**DxgkInitialize**](/windows-hardware/drivers/ddi/dispmprt/nf-dispmprt-dxgkinitialize)
 
 [*DxgkDdiUnload*](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_unload)
-
- 
 

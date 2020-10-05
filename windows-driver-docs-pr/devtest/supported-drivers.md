@@ -41,7 +41,7 @@ For SDV to verify a WDM driver, the driver must:
 
 - Include Wdm.h or Ntddk.h (Wdm.h is a subset of Ntddk.h).
 
-- Create device objects by using methods that are described in [Introduction to Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-device-objects) and following.
+- Create device objects by using methods that are described in [Introduction to Device Objects](../kernel/introduction-to-device-objects.md) and following.
 
 - Have an Unload routine that is written as recommended in [Writing an Unload Routine](../kernel/writing-an-unload-routine.md).
 
@@ -65,7 +65,7 @@ For SDV to verify an NDIS driver, the driver must:
 
 In addition, SDV can verify drivers that support:
 
-- [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+- [Plug and Play](../kernel/introduction-to-plug-and-play.md).
 
 - [Power management](../kernel/introduction-to-power-management.md).
 

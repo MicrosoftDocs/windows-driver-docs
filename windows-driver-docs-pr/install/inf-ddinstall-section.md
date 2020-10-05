@@ -237,7 +237,7 @@ Depending on the [device setup class](./overview-of-device-setup-classes.md) tha
 -   [DDInstall Section in a Network INF File](../network/ddinstall-services-section-in-a-network-inf-file.md)
 -   [INF Files for Still Image Devices](../image/inf-files-for-still-image-devices.md)
 -   [INF Files for WIA Devices](../image/inf-files-for-wia-devices.md)
--   [Installation Requirements for Network Components](https://docs.microsoft.com/windows-hardware/drivers/network/installation-requirements-for-network-components)
+-   [Installation Requirements for Network Components](../network/installation-requirements-for-network-adapters.md)
 -   [Specifying WDF Directives in INF Files](../wdf/specifying-wdf-directives-in-inf-files.md)
 
 Examples
@@ -348,6 +348,4 @@ CopyFiles=WDM.CopyFiles.Sys, WDM.CopyFiles.Drv
 [**DelProperty**](inf-delproperty-directive.md)
 
 [**FeatureScore**](inf-featurescore-directive.md)
-
- 
 
