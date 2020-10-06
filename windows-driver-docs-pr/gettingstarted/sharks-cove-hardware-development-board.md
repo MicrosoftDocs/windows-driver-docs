@@ -248,7 +248,7 @@ Here's an example of altering the SSDT. We will add a table entry for the [ADXL3
 
 4. Insert a Scope(\_SB\_) entry. Inside your scope entry, insert your own Device entry. For example, here's a scope(\_SB\_) entry and a Device entry for the ADXL345 accelerometer.
 
-    ``` syntax
+```syntax
     Scope(_SB_)
     {
         Device(SPBA)
@@ -309,23 +309,20 @@ Here's an example of altering the SSDT. We will add a table entry for the [ADXL3
 
 In this example, the entries under `ResourceTemplate()` specify that the accelerometer needs two hardware resources: a connection ID to a particular I2C bus controller (I2C3) and a GPIO interrupt. The interrupt uses pin 0x17 on the GPIO controller named GPO2.
 
-
-5.  After you have added your own Device entry to Ssdt.asl, compile Ssdt.asl by entering this command:
+5. After you have added your own Device entry to Ssdt.asl, compile Ssdt.asl by entering this command:
 
     **asl ssdt.asl**
 
     This puts the compiled output in a file named Ssdt.aml.
 
-6.  Verify that test signing is turned on for the Sharks Cove board.
+6. Verify that test signing is turned on for the Sharks Cove board.
 
-    **Note**  Test signing is turned on automatically during provisioning.
-
-
-
+  >[!NOTE]
+  >Test signing is turned on automatically during provisioning.
 
 On the Sharks Cove board, open a Command Prompt window as Administrator. Enter this command.
 
-**bcdedit /enum {current}**
+`bcdedit /enum {current}`
 
 Verify that you see `testsigning Yes` in the output.
 
@@ -407,9 +404,9 @@ When you are ready to test your driver on the Sharks Cove board, follow these st
 
 ## Using WinDbg to debug the Sharks Cove board
 
-As an alternative to using Visual Studio to set up kernel-mode debugging, you can do the setup manually. This topic is available on line and in debugger.chm.
+As an alternative to using Visual Studio to set up kernel-mode debugging, you can do the setup manually.
 
-- [Setting up Kernel-Mode Debugging using Serial over USB Manually](https://go.microsoft.com/fwlink/p?linkid=400461)
+- [Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually](../debugger/setting-up-a-usb-3-0-debug-cable-connection.md)
 
 As an alternative to using Visual Studio for debugging, you can use WinDbg.
 
@@ -430,14 +427,12 @@ To learn how Windows drivers work with simple peripheral buses, see [Simple Peri
 
 [Concepts for all driver developers](./concepts-and-knowledge-for-all-driver-developers.md)
 
-[Developing, Testing, and Deploying Drivers](https://go.microsoft.com/fwlink/p/?linkid=399234)
+[Developing, Testing, and Deploying Drivers](../develop/index.md)
 
-[Windows Driver Frameworks](https://go.microsoft.com/fwlink/p/?linkid=399235)
+[Windows Driver Frameworks](../wdf/index.md)
 
-[Windows Hardware Developer Center](https://go.microsoft.com/fwlink/p/?linkid=8703)
+[Windows Hardware Developer Center](https://developer.microsoft.com/windows/hardware/)
 
-[WDK Samples for Windows](/samples/browse/?products=windows-wdk)
+[WDK Samples for Windows](../samples/index.md)
 
-[Windows Hardware and Driver Developer Community](/previous-versions/gg454528(v=msdn.10))
-
-[Technical Support](https://go.microsoft.com/fwlink/p/?linkid=8713)
+[Technical Support](https://support.microsoft.com/)
