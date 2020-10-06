@@ -46,7 +46,7 @@ This section includes the following topics about operating Serenum and Serial:
 
 For more information about operating Serenum and Serial, see the following resources:
 
-- [ntddser header](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddser/0)
+- [ntddser header](/windows-hardware/drivers/ddi/ntddser/)
 
 - [Serial Port Driver Reference](/windows-hardware/drivers/ddi/_serports/)
 
