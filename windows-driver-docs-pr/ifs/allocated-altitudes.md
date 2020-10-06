@@ -7,6 +7,7 @@ keywords:
 - filter driver altitude
 - minifilter driver altitude
 ms.localizationpriority: medium
+ms.custom: contperfq1
 ---
 
 # Allocated filter altitudes
