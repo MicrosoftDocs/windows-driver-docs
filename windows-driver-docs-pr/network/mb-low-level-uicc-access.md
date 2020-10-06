@@ -40,7 +40,7 @@ The following table specifies the command code for each CID, as well as whether 
 
 ## Status codes
 
-MBIM status codes are defined in Section 9.4.5 of the [MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064). In addition, the following additional failure status codes are defined:
+MBIM status codes are defined in Section 9.4.5 of the [MBIM standard](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement). In addition, the following additional failure status codes are defined:
 
 | Status Code | Value (hex) | Description |
 | --- | --- | --- |

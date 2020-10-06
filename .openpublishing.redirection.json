@@ -1,6 +1,31 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/ndis-miniport-drivers.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/roadmap-for-developing-ndis-miniport-drivers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/inspecting-packet-and-stream-data.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/packet-inspection-points",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/ndis-core-functionality2.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/roadmap-for-developing-ndis-miniport-drivers",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/wireless-networking2.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/wifi-universal-driver-model",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/mobile-broadband--mb--design-guide.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/roadmap-to-develop-mb-miniport-drivers",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/splitting-frames-other-than-tcp-and-udp.md",
             "redirect_URL":  "/windows-hardware/drivers/network/splitting-icmp-frames-and-other-upper-layer-protocol-frames",
             "redirect_document_id":  false

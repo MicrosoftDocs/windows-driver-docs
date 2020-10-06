@@ -352,8 +352,6 @@
         href: summary-of-changes-required-to-port-an-intermediate-driver-to-ndis-6-2.md    
 - name: "NDIS Core Functionality"
   items: 
-  - name: "NDIS Drivers and Services"
-    href: ndis-core-functionality2.md
   - name: "NDIS Miniport Drivers"
     items: 
     - name: "Roadmap for Developing NDIS Miniport Drivers"
@@ -2574,8 +2572,6 @@
         href: ndis-status-receive-queue-state.md
 - name: "Wireless Networking"
   items: 
-  - name: "Wireless Networking Topics"
-    href: wireless-networking2.md
   - name: "WLAN Universal Windows driver model"
     href: wifi-universal-driver-model.md
   - name: "Cellular architecture and overview"
@@ -2604,8 +2600,6 @@
         href: communicate-with-the-ril-driver-by-using-the-ioemcellularmodem-interface.md
   - name: "Mobile Broadband (MB) Design Guide"
     items: 
-    - name: "Mobile Broadband (MB) Design Guide Topics"
-      href: mobile-broadband--mb--design-guide.md
     - name: "Roadmap to Develop MB Miniport Drivers"
       href: roadmap-to-develop-mb-miniport-drivers.md
     - name: "MB Interface Model"
