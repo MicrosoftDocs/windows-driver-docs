@@ -9,13 +9,15 @@ ms.localizationpriority: medium
 # Understanding Windows Update Automatic and Optional Rules for Driver Distribution
 
 > [!NOTE]
-> The behaviors listed below apply to Windows 10 version 1709 and above.
+> The behaviors listed below apply to Windows 10 version 1709 and above. Please note the change in behavior for Optional driver servicing in Windows 10 version 2004 and greater.
 
 This article describes how you can control when Windows Update distributes your driver.
 
-When [submitting a driver to Windows Update](publish-a-driver-to-windows-update.md), the **Driver promotions** section presents two checkboxes: **Automatically deliver and install this driver during Windows Upgrade** and **Automatically deliver and install this driver on all applicable systems**.
+When [submitting a driver to Windows Update](publish-a-driver-to-windows-update.md), the **Driver Delivery Options** section presents two section presents two radio buttons: **Automatic** and **Manual**
 
-![Automatic driver promotions checkboxes](images/automatic-driver-promotion-options.png)
+Under the Automatic option there are two checkboxes: **Automatically delivered during Windows Updates** and **Automatically delivered to all applicable systems**. This is the default setting for all new shipping labels.
+
+![Automatic driver promotions checkboxes](images/driver-delivery-options.png)
 
 If you select the first checkbox, the driver is classified as **Dynamic Update** (a term that applies to *upgrade* scenarios). Windows will then automatically preload this driver when upgrading the OS.
 
