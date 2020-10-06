@@ -13,4 +13,4 @@ Microsoft provides several drivers for standard protocols and devices, including
 
 For more information about applications that are written for Windows Portable Devices, see the [WPD SDK documentation](/windows/win32/windows-portable-devices).
 
-For more information about both WPD driver development and WPD application development, see the [WPD Blog (Archive)](https://docs.microsoft.com/en-us/archive/blogs/wpdblog/), which is accurate for Windows 10.
+For more information about both WPD driver development and WPD application development, see the [WPD Blog (Archive)](https://docs.microsoft.com/archive/blogs/wpdblog/), which is accurate for Windows 10.
