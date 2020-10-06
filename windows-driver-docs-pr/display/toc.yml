@@ -739,16 +739,12 @@
     - name: "Timeout Detection and Recovery"
 # Auto-expanded node
       items: 
-      - name: "Timeout Detection and Recovery"
+      - name: "Timeout detection and recovery (TDR)"
         href: timeout-detection-and-recovery.md
-      - name: "Limiting Repetitive GPU Hangs and Recoveries"
-        href: limiting-repetitive-gpu-hangs-and-recoveries.md
-      - name: "TDR Error Messaging"
-        href: tdr-error-messaging.md
-      - name: "TDR Registry Keys"
-        href: tdr-registry-keys.md
-      - name: "TDR changes in Windows 8"
+      - name: "TDR in Windows 8 and later"
         href: tdr-changes-in-windows-8.md
+      - name: "Testing and debugging TDR"
+        href: tdr-registry-keys.md
   - name: "Tips and Requirements for the Windows Display Driver Model (WDDM)"
 # Auto-expanded node
     items: 
