@@ -226,7 +226,7 @@ The *ModemId* field denotes the unique 64-bit identifier for a given modem hardw
 
 #### Status Codes
 
-This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://go.microsoft.com/fwlink/p/?linkid=842064)).
+This CID uses Generic Status Codes (see Use of Status Codes in Section 9.4.5 of [the public USB MBIM standard](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement)).
 
 ### MBIM_CID_MS_DEVICE_CAPS_V2
 
