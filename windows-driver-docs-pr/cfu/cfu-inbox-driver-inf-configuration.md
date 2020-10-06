@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 
 To configure an INF file (HidCfu.inf) for the inbox driver (HidCfu.dll), you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
 
-The [sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file) included below provides a starting point for your INF file and illustrates the configuration concepts discussed in this topic. Your actual INF file must be customized and configured specifically for your firmware and hardware.
+The [sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file) included below provides a starting point for your INF file. This sample INF is the *CfuVirtualHidDeviceFwUpdate.inf* file from the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) sample code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the simulation's INF file to illustrate the configuration concepts discussed in this topic.
+
+Your actual INF file must be customized and configured specifically for your firmware and hardware.
 
 ## Contents
 
@@ -91,14 +93,14 @@ This allows you to service your in-market devices through Windows Update. To upd
     %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
     ```
 
-1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see [Sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file)
+1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see the [Sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file).
 
     > [!NOTE]
     > When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
 
 1. Specify device capabilities in the INF.
 
-    The sample driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
+    The sample driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described below in [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
 
     For example, the sample driver requires information about the underlying bus protocol to which the device is connected. The protocol can be specified through registry settings.
 
@@ -122,9 +124,7 @@ You may configure each of these registry values per component as needed.
 
 #### INF Value Capability settings
 
-In order for the inbox driver to communicate with the firmware (real/virtual), the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware (real/virtual).
-
-CfuVirtualHidDeviceFwUpdate.INF configures the inbox driver to update the CFU Simulation driver CfuVirtualHid.  
+In order for the inbox driver to communicate with the firmware (real/virtual), the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
 
 As shown below, the INF values match the values specified in the virtual firmware simulation driver's Hid descriptor.
 
@@ -139,7 +139,7 @@ As shown below, the INF values match the values specified in the virtual firmwar
   HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
   ```
 
-For more information, refer the following code in g_CfuVirtualHid_HidReportDescriptor (Hid Report Descriptor) in [DmfInterface.c](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
+For more information, refer the following code in **g_CfuVirtualHid_HidReportDescriptor** (Hid Report Descriptor) in [*DmfInterface.c*](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
 
   ```cpp
   0x85, REPORT_ID_PAYLOAD_INPUT,      // REPORT_ID(34)
@@ -178,14 +178,16 @@ For more information, refer the following code in g_CfuVirtualHid_HidReportDescr
 
 #### INF Hardware ID settings
 
-In order for the inbox driver to communicate with the firmware (real/virtual), the hardware ID specified in the INF should match with what is specified in the Hid Descriptor configuration in the firmware (real/virtual).
+In order for the inbox driver to communicate with the firmware (real/virtual), the hardware ID specified in the INF should match with what is specified in the Hid Descriptor configuration in the firmware.
 
-As shown below, the CfuVirtualHidDeviceFwUpdate.inf values match the values specified in the virtual firmware simulation driver's Hid descriptor.
+As shown below, the *CfuVirtualHidDeviceFwUpdate.inf* values match the values specified in the virtual firmware simulation driver's Hid descriptor.
 
+```inf
 [Standard.NTamd64]
 %CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5
+```
 
-For more information, refer the following code in g_CfuVirtualHid_HidReportDescriptor (Hid Report Descriptor) in [DmfInterface.c](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
+For more information, refer the following code in **g_CfuVirtualHid_HidReportDescriptor** (Hid Report Descriptor) in [*DmfInterface.c*](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
 
   ```cpp
   0x06, CFU_DEVICE_USAGE_PAGE,        // USAGE_PAGE(0xFA00)
