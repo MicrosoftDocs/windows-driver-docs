@@ -34,7 +34,7 @@ In order to support rebalance when there are active audio streams, portcls audio
 
 OR
 
--   If the driver doesn’t support get/write IMiniportWaveRT for the streams, the driver must not support [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](./ksproperty-rtaudio-positionregister.md) and [**KSPROPERTY\_RTAUDIO\_CLOCKREGISTER**](./ksproperty-rtaudio-clockregister.md). The audio engine will use the [**IMiniportWaveRTStream::GetPosition**](/previous-versions/windows/hardware/drivers/ff536749(v=vs.85)) in this scenario.
+-   If the driver doesn’t support get/write IMiniportWaveRT for the streams, the driver must not support [**KSPROPERTY\_RTAUDIO\_POSITIONREGISTER**](./ksproperty-rtaudio-positionregister.md) and [**KSPROPERTY\_RTAUDIO\_CLOCKREGISTER**](./ksproperty-rtaudio-clockregister.md). The audio engine will use the [**IMiniportWaveRTStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-getposition) in this scenario.
 
 ## <span id="Audio_Stream_Behavior_When_Rebalancing_Occurs"></span><span id="audio_stream_behavior_when_rebalancing_occurs"></span><span id="AUDIO_STREAM_BEHAVIOR_WHEN_REBALANCING_OCCURS"></span>Audio Stream Behavior When Rebalancing Occurs
 
