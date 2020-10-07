@@ -70,6 +70,7 @@ MyAdapterSetOffloadCapabilities(
         NetAdapterOffloadLayer3FlagIPv6NoExtensions |
         NetAdapterOffloadLayer3FlagIPv6WithExtensions;
 
+    // Layer4Flags are optional
     auto const layer4Flags = NetAdapterOffloadLayer4FlagTcpNoOptions |
         NetAdapterOffloadLayer4FlagTcpWithOptions |
         NetAdapterOffloadLayer4FlagUdp;
@@ -77,8 +78,9 @@ MyAdapterSetOffloadCapabilities(
     NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT(
         &txChecksumOffloadCapabilities,
         layer3Flags,
-        layer4Flags,
         EvtAdapterOffloadSetTxChecksum);
+
+    txChecksumOffloadCapabilities.Layer4Flags = layer4Flags;
 
     txChecksumOffloadCapabilities.Layer4HeaderOffsetLimit = 127;
 
