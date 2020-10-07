@@ -15,13 +15,17 @@ ms.localizationpriority: medium
 
 # buttons element
 
-
 The required **buttons** element specifies one or more buttons that are displayed in the event notification message box on the client computer.
 
-The **buttons** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **buttons** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <buttons>

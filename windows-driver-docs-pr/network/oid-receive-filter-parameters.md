@@ -26,7 +26,7 @@ Remarks
 
 NDIS receive filters are used in the following NDIS interfaces:
 
--   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-packet-coalescing-receive-filters).
+-   [NDIS Packet Coalescing](./ndis-packet-coalescing.md). For more information about how to use receive filters in this interface, see [Managing Packet Coalescing Receive Filters](./guidelines-for-managing-packet-coalescing-receive-filters.md).
 
 -   [Single Root I/O Virtualization (SR-IOV)](./single-root-i-o-virtualization--sr-iov-.md). For more information about how to use receive filters in this interface, see [Setting a Receive Filter on a Virtual Port](./setting-a-receive-filter-on-a-virtual-port.md).
 
@@ -85,6 +85,4 @@ Requirements
 [**NDIS\_RECEIVE\_FILTER\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters)
 
 [OID\_RECEIVE\_FILTER\_SET\_FILTER](oid-receive-filter-set-filter.md)
-
- 
 

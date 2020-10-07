@@ -46,7 +46,7 @@ The handle returned in ClassIcon can be cast to the WPARAM that is required by t
 
 In addition to an icon that represents the device, a typical device property page includes a description or "friendly name" of the device and shows the current settings of device properties. The Plug and Play (PnP) manager stores the PnP properties of each device in the registry. A property page provider can call [**SetupDiGetDeviceRegistryProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceregistrypropertya) to get the value of any such property. If device- or class-specific configuration information has also been stored in the registry as part of the installation process, a property page provider can use other **SetupDiXxx** functions to extract that information for display. For more information, see [Device Installation Functions](/previous-versions/ff541299(v=vs.85)).
 
-When certain types of changes occur on the page, the property sheet sends a [WM_NOTIFY](https://go.microsoft.com/fwlink/p/?linkid=181554) message to the dialog box procedure. The dialog box procedure should be prepared to extract the notification code from the message parameters and respond appropriately.
+When certain types of changes occur on the page, the property sheet sends a [WM_NOTIFY](/windows/win32/controls/wm-notify) message to the dialog box procedure. The dialog box procedure should be prepared to extract the notification code from the message parameters and respond appropriately.
 
 For more information about the notifications that a dialog box procedure might encounter, such as the PSN_APPLY or PSN_HELP notifications, and how the procedure should handle them, see [Notifications](https://go.microsoft.com/fwlink/p/?linkid=181555) in the Windows SDK documentation.
 
@@ -69,6 +69,4 @@ When it receives the PSN_APPLY notification, the provider must do the following:
 ### <a href="" id="psn-reset-notifications"></a>PSN_RESET Notifications
 
 The property sheet sends a PSN_RESET notification message when the user clicks **Cancel**. In response to this message, the dialog box procedure should discard any changes that were made by the user.
-
- 
 

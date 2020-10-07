@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Using Visual Studio or MSBuild to build a driver
 
 
-This topic describes how you can build a driver using the Visual Studio development environment, or from the command line by using the Microsoft Build Engine ([MSBuild](https://go.microsoft.com/fwlink/p/?linkid=262804)).
+This topic describes how you can build a driver using the Visual Studio development environment, or from the command line by using the Microsoft Build Engine ([MSBuild](/visualstudio/msbuild/msbuild)).
 
 **Important**  Starting in Windows Driver Kit (WDK) 8, MSBuild replaced the Windows Build Utility (Build.exe). The WDK now uses the same compiler and build tools that you use to build Visual Studio projects. Driver projects that were built with previous versions of the WDK must be converted to work in the Visual Studio environment. You can run a conversion utility from the command line, or you can convert an existing driver by creating new Visual Studio project from existing sources. For more info, see [Creating a Driver From Existing Source Files](creating-a-driver-from-existing-source-files.md) and [WDK and the Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md).
 
@@ -24,7 +24,7 @@ You build a driver the same way you build any project or solution in Visual Stud
 
  
 
-For information about managing and editing build configurations, see [Building in Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=227872).
+For information about managing and editing build configurations, see [Building in Visual Studio](/previous-versions/visualstudio/visual-studio-2012/cyz1h6zd(v=vs.110)).
 
 The default Solution build configuration is **Debug** and **Win32**. 
 
@@ -41,7 +41,7 @@ The default Solution build configuration is **Debug** and **Win32**.
 ## <span id="building_a_driver_using_the_command_line__msbuild_"></span><span id="BUILDING_A_DRIVER_USING_THE_COMMAND_LINE__MSBUILD_"></span>Building a Driver Using the Command Line (MSBuild)
 
 
-You can build a driver from the command line using the **Visual Studio Command Prompt** window and the Microsoft Build Engine ([MSBuild](https://go.microsoft.com/fwlink/p/?linkid=262804))
+You can build a driver from the command line using the **Visual Studio Command Prompt** window and the Microsoft Build Engine ([MSBuild](/visualstudio/msbuild/msbuild))
 
 **To build a driver using the Visual Studio Command Prompt window**
 
@@ -135,11 +135,11 @@ The following tip can help you troubleshoot problems when you use the WDK and Vi
 ## <span id="related_topics"></span>Related topics
 
 
-* [Building in Visual Studio](https://go.microsoft.com/fwlink/p/?linkid=227872)
+* [Building in Visual Studio](/previous-versions/visualstudio/visual-studio-2012/cyz1h6zd(v=vs.110))
 * [Building Drivers for Different Versions of Windows](building-drivers-for-different-versions-of-windows.md)
 * [Using the Microsoft C Runtime with User-Mode Drivers and Desktop Apps](using-the-microsoft-c-runtime-with-user-mode-drivers-and-apps.md)
 * [ProjectUpgradeTool](../devtest/projectupgradetool.md)
-* [MSBuild](https://go.microsoft.com/fwlink/p/?linkid=262804)
+* [MSBuild](/visualstudio/msbuild/msbuild)
 * [Creating a Driver From Existing Source Files](creating-a-driver-from-existing-source-files.md)
 * [WDK and the Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md)
 * [Signing a Driver](signing-a-driver.md)

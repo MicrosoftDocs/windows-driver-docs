@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Hardware submissions
 
-The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Partner Center. For more information, see the [Windows hardware certification](https://go.microsoft.com/fwlink/p/?LinkId=224782) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
+The Windows Hardware Compatibility Program (for Windows 10) and the Windows Hardware Certification Program (for Windows 8/8.1 and older operating systems) enable you to design, create, and test your hardware and drivers before you submit the final version through the Partner Center. For more information, see the [Windows hardware certification](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) page. By certifying your hardware device, system, and drivers for Windows, you gain the support of Microsoft marketing resources in the form of compatibility and reliability listings, logo artwork, and promotional partnerships.
 
 To develop your device, download the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 

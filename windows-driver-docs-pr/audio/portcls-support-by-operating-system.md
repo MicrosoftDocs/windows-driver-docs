@@ -136,7 +136,7 @@ The following lists contain all the functions and interfaces that the PortCls sy
 
 [IPortWaveCyclic](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic)
 
-[IPortWavePci](/previous-versions/windows/hardware/drivers/ff536905(v=vs.85))
+[IPortWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci)
 
 \*\* [IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert)
 

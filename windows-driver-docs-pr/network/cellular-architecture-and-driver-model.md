@@ -40,11 +40,6 @@ For Windows 10 Mobile, the following is required:
 ![windows phone 8.1 cellular architecture](images/winphone81-cellular-architecture.png)
 
 
-## Related topics
-
-
-[Mobile Broadband (MB) Design Guide](mobile-broadband--mb--design-guide.md)
-
  
 
  

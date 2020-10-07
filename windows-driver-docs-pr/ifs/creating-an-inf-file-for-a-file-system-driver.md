@@ -33,7 +33,7 @@ Starting with 64-bit versions of Windows Vista, all kernel-mode components, incl
 
 - The [**SignTool**](../devtest/signtool.md) command-line tool, located in the \bin\SelfSign directory of the WDK installation directory, can be used to directly "embed sign" a driver SYS executable file. For performance reasons, boot-start drivers must contain an embedded signature.
 
-- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](https://go.microsoft.com/fwlink/p/?linkid=8705) logo signatures.
+- Given an INF file, the [**Inf2Cat**](../devtest/inf2cat.md) command-line tool can be used to create a catalog (.cat) file for a driver package. Only catalog files can receive [WHQL](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) logo signatures.
 
 - With Administrator privileges, an unsigned driver can still be installed on x64-based systems starting with Windows Vista. However, the driver will fail to load (and thus execute) because it is unsigned.
 

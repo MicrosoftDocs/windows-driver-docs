@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the activity detection sensor.
 
-The following table shows the data fields. For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the data types shown in the **Type** column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Description|
 | --- | --- | --- | --- |
@@ -27,7 +27,5 @@ The following table shows the data fields. For more information about the data t
 
 [**ACTIVITY\_STATE**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-activity_state)
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
-
- 
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 

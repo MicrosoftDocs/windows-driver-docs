@@ -174,8 +174,6 @@ HRESULT CSwapAPOGFX::ValidateAndCacheConnectionInfo( ... )
 
 **Note**  The remaining interfaces and methods that your class inherits from **CBaseAudioProcessingObject** are described in detail in the Audioenginebaseapo.idl file.
 
-For desktop PCs, you can provide a user interface to configure the features that you added to the custom APO. For more information about this, see [Implementing a UI for Configuring APOs](/windows-hardware/drivers/audio/implementing-a-ui-for-configuring-apo-effects).
-
 ## Replacing System-supplied APOs
 
 When implementing the APO interfaces, there are two approaches: you can write your own implementation, or you can call into the inbox APOs.

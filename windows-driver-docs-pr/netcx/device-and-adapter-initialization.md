@@ -106,7 +106,7 @@ Many NetAdapterCx client drivers start their adapters from within their [*EVT_WD
 
 NetAdapterCx requires the client driver to set the following capabilities:
 
-* Data path capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) to set these capabilities. For more information, see [Network data buffer management](/windows-hardware/drivers/netcx/network-data-buffer-management).
+* Data path capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetdatapathcapabilities) to set these capabilities. For more information, see [Network data buffer management](./network-data-buffer-management.md).
 
 * Link layer capabilities. The driver calls [**NetAdapterSetDataPathCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadaptersetlinklayercapabilities) to set these capabilities.
 

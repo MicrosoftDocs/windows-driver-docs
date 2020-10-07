@@ -22,7 +22,7 @@ Example **package.appxmanifest**:
   </Capabilities>
 ```
 
-For more information, see [App capability declarations (UWP apps)](https://go.microsoft.com/fwlink/p/?linkid=317125).
+For more information, see [App capability declarations (UWP apps)](/previous-versions/windows/apps/hh464936(v=win.10)).
 
 ## <span id="SMS_app_declaration_in_device_metadata"></span><span id="sms_app_declaration_in_device_metadata"></span><span id="SMS_APP_DECLARATION_IN_DEVICE_METADATA"></span>SMS app declaration in device metadata
 
@@ -44,11 +44,4 @@ The mobile broadband device can determine which apps it trusts to send and recei
 [Developing SMS apps](developing-sms-apps.md)
 
  
-
- 
-
-
-
-
-
 

@@ -97,9 +97,7 @@ Currently, you can modify the following registry values, which are located under
 
 -   The **LogFlushPeriodSeconds** value specifies how often, in seconds, trace messages are written to the trace log.
 
--   The **LogMinidumpType** value contains flags that specify the type of information that a mini-dump file, if produced, will contain. For more information about these flags, see the [MINIDUMP\_TYPE](https://go.microsoft.com/fwlink/p/?linkid=160310) enumeration.
+-   The **LogMinidumpType** value contains flags that specify the type of information that a mini-dump file, if produced, will contain. For more information about these flags, see the [MINIDUMP\_TYPE](/windows/win32/api/minidumpapiset/ne-minidumpapiset-minidump_type) enumeration.
 
 You might find additional registry values under the **HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\WUDF** registry key. You should not modify those values.
-
- 
 

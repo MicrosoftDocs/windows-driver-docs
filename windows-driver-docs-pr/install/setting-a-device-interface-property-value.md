@@ -27,7 +27,5 @@ To set the value of a [device interface property](/previous-versions/ff541409(v=
 
 -   Set *Flags* to zero.
 
-If the call to [**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw) succeeds, **SetupDiSetDeviceInterfaceProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceInterfaceProperty** returns **FALSE** and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
-
- 
+If the call to [**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw) succeeds, **SetupDiSetDeviceInterfaceProperty** sets the device class property and returns **TRUE**. If the function call fails, **SetupDiSetDeviceInterfaceProperty** returns **FALSE** and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 

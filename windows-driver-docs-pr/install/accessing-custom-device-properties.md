@@ -23,9 +23,7 @@ On Windows Server 2003, Windows XP, and Windows 2000, you can create custom regi
 
 -   A custom registry entry value for a device interface property should be located under the device interface registry key. Call [**SetupDiOpenDeviceInterfaceRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey) to retrieve a handle to the registry key for a device interface class.
 
-After you retrieve a handle to a registry key, supply the handle in a call to [RegQueryValueEx](https://go.microsoft.com/fwlink/p/?linkid=95398) or [RegSetValueEx](https://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the custom registry entry value that corresponds to the custom device property.
+After you retrieve a handle to a registry key, supply the handle in a call to [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) or [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexa) to retrieve or set the custom registry entry value that corresponds to the custom device property.
 
-Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) function to close the registry key after access to the registry key is no longer required.
-
- 
+Call the [RegCloseKey](/windows/win32/api/winreg/nf-winreg-regclosekey) function to close the registry key after access to the registry key is no longer required.
 

@@ -1,6 +1,6 @@
 ---
 title: Irql rule set (KMDF)
-description: Use these rules to verify that your driver makes DDI calls at the required IRQL.A driver that does not follow the IRQL rules can cause serious problems during operation that can lead to deadlock conditions or computer crashes.
+description: Learn about using rules (KMDF) to verify that your driver makes DDI calls at the required IRQL. In addition, learn how to select the IRQL rule set.
 ms.assetid: B02D196F-E8D5-4FE9-8983-AD08EAE00DE5
 ms.date: 05/21/2018
 ms.localizationpriority: medium

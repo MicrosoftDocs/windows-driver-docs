@@ -335,7 +335,7 @@ Windows 10 RS5 now enforces a Face Auth Profile V2 requirement for any camera wi
 
 However, for USB Video devices, a constraint with UVC based cameras is that for Windows 10 19H1, custom camera drivers are not allowed. All UVC based cameras must use the inbox USB Video Class driver and any vendor extensions must be implemented in the form of a Device MFT.
 
-For many OEM/ODMs, the preferred approach for camera modules is to implement much of the functionality within the module’s firmware, i.e. via Microsoft OS Descriptors.
+For many OEM/ODMs, the preferred approach for camera modules is to implement much of the functionality within the module's firmware, i.e. via Microsoft OS Descriptors.
 
 The following cameras are supported for publish Face Auth Profile via the MSOS Descriptors (also called BOS descriptors):
 
@@ -378,7 +378,7 @@ The Header Section describes a single custom property (Face Auth Profile).
 | 0      | dwSize               | 4            | 0x00000036 (54)       | Total size (in bytes) for this property.   |
 | 4      | dwPropertyDataType   | 4            | 0x00000004            | REG\_DWORD\_LITTLE\_ENDIAN                 |
 | 8      | wPropertyNameLength  | 2            | 0x00000024 (36)       | Size (in bytes) of the property name.      |
-| 10     | bPropertyName        | 36           | UVC-CPV2FaceAuth      | “UVC-CPV2FaceAuth” string in Unicode.      |
+| 10     | bPropertyName        | 36           | UVC-CPV2FaceAuth      | "UVC-CPV2FaceAuth" string in Unicode.      |
 | 46     | dwPropertyDataLength | 4            | 0x00000004            | 4 bytes for property data (sizeof(DWORD)). |
 | 50     | bPropertyData        | 4            | See Data Schema Below | See Data Schema Below.                     |
 
@@ -469,7 +469,7 @@ UCHAR Example2_MSOS20DescriptorSet_UVCFaceAuthForFutureWindows[0x3C] =
 }
 ```
 
-When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in this document: https://docs.microsoft.com/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices.
+When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in [DShow Bridge implementation guidance for UVC devices](/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices).
 
 However, if the device vendor must support older versions of Windows and/or need to enable MJPEG decompression within Frame Server, the EnableDshowRedirection registry entry must be added.
 
@@ -479,7 +479,7 @@ When OEMs build systems using Type 1 and Type 2 Cameras to provide both RGB and 
 
 This is done by declaring a FSSensorGroupId and FSSensorGroupName tag in an Extension INF to be created under the device interface property for each camera.
 
-However, if Extension INF is not provided, ODMs may use the same MSOS Descriptors to publish the FSSensorGroupId and FSSensorGroupName values. The inbox Windows 10 USB Video Class driver will automatically take any MSOS Descriptor whose Payload Name has been prefixed with “UVC-“ and migrate the tag into the device interface property store (removing the “UVC-“ prefix).
+However, if Extension INF is not provided, ODMs may use the same MSOS Descriptors to publish the FSSensorGroupId and FSSensorGroupName values. The inbox Windows 10 USB Video Class driver will automatically take any MSOS Descriptor whose Payload Name has been prefixed with "UVC-" and migrate the tag into the device interface property store (removing the "UVC-" prefix).
 
 So a Type 1 and Type 2 Camera which publishes the following will allow the OS to synthesize the cameras into a multi-device Sensor Group for use with Windows Hello:
 

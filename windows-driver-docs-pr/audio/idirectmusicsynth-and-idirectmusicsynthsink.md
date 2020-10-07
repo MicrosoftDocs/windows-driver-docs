@@ -139,7 +139,7 @@ Additionally, so that the synthesizer can keep track of time appropriately, it p
 
 The wave sink generates the latency clock because it actually manages the times at which samples get written by calls to **IDirectMusicSynth::Render**. When DirectMusic calls **IDirectMusicSynth::GetLatencyClock** on the DirectMusic port, it simply turns around and calls **IDirectMusicSynthSink::GetLatencyClock**.
 
-When a software synthesizer is first opened, DirectMusic gives the synthesizer a DMUS\_PORTPARAMS structure (described in the Microsoft Windows SDK documentation) that specifies the sample rate and number of channels for the audio output stream. The synthesizer then converts these into a standard [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-twaveformatex) structure that it passes to the wave sink when the wave sink calls the **IDirectMusicSynth::GetFormat** method.
+When a software synthesizer is first opened, DirectMusic gives the synthesizer a DMUS\_PORTPARAMS structure (described in the Microsoft Windows SDK documentation) that specifies the sample rate and number of channels for the audio output stream. The synthesizer then converts these into a standard [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) structure that it passes to the wave sink when the wave sink calls the **IDirectMusicSynth::GetFormat** method.
 
 For additional information, see the descriptions of the **IDirectMusic** and **IDirectMusicPort** interfaces in the Windows SDK documentation.
 

@@ -29,7 +29,7 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 
     The Microsoft OS **ContainerID** descriptor is intended to be used in devices that support simultaneous connection of the device through multiple system buses. For example, a printer may support simultaneous USB and IP network connections by using Plug and Play Extensions (PnP-X). By using a single Microsoft OS **ContainerID** descriptor, the same container ID is reported on both transports. Therefore, the PnP manager determines that the devnodes enumerated by each bus are part of the same physical device.
 
-    For more information about the Microsoft OS **ContainerID** descriptor, see the [Microsoft OS Descriptors](https://go.microsoft.com/fwlink/p/?linkid=142397).
+    For more information about the Microsoft OS **ContainerID** descriptor, see the [Microsoft OS Descriptors](/previous-versions/gg463179(v=msdn.10)).
 
 2.  If the USB device does not report a Microsoft OS **ContainerID** descriptor, the USB hub driver queries ACPI to determine whether the device is attached to an external-facing port.
 
@@ -58,10 +58,4 @@ This heuristic follows these steps for each devnode that the Plug and Play (PnP)
 For more information about the ACPI 3.0 interface, see [Advanced Configuration and Power Interface Specification Revision 3.0b](https://go.microsoft.com/fwlink/p/?linkid=145427).
 
  
-
- 
-
-
-
-
 

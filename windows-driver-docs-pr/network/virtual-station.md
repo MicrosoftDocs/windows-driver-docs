@@ -47,7 +47,7 @@ If your driver implements virtual station functionality but cannot sustain both 
 
 -   Fail the virtual station port connections if the ExtAP port is running in the OP state and one of the following situations occurs:
     -   One or more clients is on the ExtAP port.
-    -   The virtual station attempts to start a connection that duplicates [Wireless Hosted Network](https://go.microsoft.com/fwlink/p/?linkid=152328) settings.
+    -   The virtual station attempts to start a connection that duplicates [Wireless Hosted Network](/windows/win32/nativewifi/about-the-wireless-hosted-network) settings.
 
 ### <a href="" id="native-802-11-ihv-extensibility-functions-that-support-a-virtual-stati"></a> Native 802.11 IHV Extensibility Functions That Support a Virtual Station
 

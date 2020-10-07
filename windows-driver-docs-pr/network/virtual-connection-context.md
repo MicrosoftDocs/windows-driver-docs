@@ -26,7 +26,7 @@ Before data can be sent or received on a VC, the VC must be activated. The call 
 
 After a call is complete or a VC is otherwise not needed, the call manager can deactivate the VC by calling [**Ndis(M)CmDeactivateVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmdeactivatevc), which causes NDIS to call the miniport driver's [**MiniportCoDeactivateVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_deactivate_vc) function. Either the connection-oriented client or the call manager can initiate the deletion of the VC by calling [**NdisCoDeleteVc**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscodeletevc), which causes NDIS to call the miniport driver's [**MiniportCoDeleteVc**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_delete_vc) function.
 
-For more information about miniport driver operations on VCs, see [Operations on VCs](operations-on-vcs.md).
+For more information about miniport driver operations on VCs, see [Operations on VCs](creating-a-vc.md).
 
  
 

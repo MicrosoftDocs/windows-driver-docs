@@ -31,7 +31,7 @@ In addition to the components in the preceding list, a USB Type-C system can hav
 
 Here is an example of a USB Type-C system with an embedded controller:
 
-![usb type-c hardware design example for embedded controller devices](images/type-c-hw1.png)
+![Diagram that shows a U S B Type-C hardware design example for embedded controller devices.](images/type-c-hw1.png)
 
 Here is another view:
 

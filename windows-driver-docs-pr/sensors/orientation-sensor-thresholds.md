@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the orientation sensor thresholds.
 
-The following table shows the available thresholds values for the orientation sensor. For more information about the types shown in the type column, see the [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the available thresholds values for the orientation sensor. For more information about the types shown in the type column, see the [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Default value|Description|
 |---|---|---|---|---|
@@ -44,4 +44,4 @@ Drivers must therefore call SensorsCxSensorDataReady whenever the threshold cond
 ## Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

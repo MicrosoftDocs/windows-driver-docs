@@ -17,15 +17,13 @@ Windows 8 provides an updated class driver that works with devices conforming t
 
  
 
-While the class driver introduced in Windows 7 featured limited MB device feature support, the MB Class Driver in Windows 8 added native support for some additional features such as USSD, EAP-SIM/AKA and USB selective suspend, and offers an extensible device representation and control mechanisms. The [Mobile broadband WinRT API overview](https://go.microsoft.com/fwlink/p/?linkid=242060) provides some additional information about extending device services.
+While the class driver introduced in Windows 7 featured limited MB device feature support, the MB Class Driver in Windows 8 added native support for some additional features such as USSD, EAP-SIM/AKA and USB selective suspend, and offers an extensible device representation and control mechanisms. The [Mobile broadband WinRT API overview](../mobilebroadband/list-of-mobile-broadband-windows-runtime-apis.md) provides some additional information about extending device services.
 
-The MB Class Driver in Windows 8 enables vertical solution providers to use the [Mobile Broadband API Interfaces](/windows/desktop/mbn/mobile-broadband-networks-api-interfaces) to create enhanced user experiences that are outside of those provided by Windows. The extension mechanism is a way to augment, but not to replace, the functionality supported in the MB Class Driver itself. For example, an IHV can provide vendor-specific software that performs firmware updates on the device. Or, an IHV can provide vendor-specific software that provides value-add services such as SIM toolkit (STK) or Phonebook. The [AppContainer mobile broadband pin, connection and management](https://go.microsoft.com/fwlink/p/?linkid=320381) sample demonstrates Win32/COM Mobile Broadband APIs within the AppContainer to access and manage mobile broadband features.
+The MB Class Driver in Windows 8 enables vertical solution providers to use the [Mobile Broadband API Interfaces](/windows/desktop/mbn/mobile-broadband-networks-api-interfaces) to create enhanced user experiences that are outside of those provided by Windows. The extension mechanism is a way to augment, but not to replace, the functionality supported in the MB Class Driver itself. For example, an IHV can provide vendor-specific software that performs firmware updates on the device. Or, an IHV can provide vendor-specific software that provides value-add services such as SIM toolkit (STK) or Phonebook. The [AppContainer mobile broadband pin, connection and management](/samples/browse/) sample demonstrates Win32/COM Mobile Broadband APIs within the AppContainer to access and manage mobile broadband features.
 
 In addition to providing a mechanism to extend the MB Class Driver' functionality, Windows also provides mechanisms to enable IHVs to deploy and install their value-add software through Windows Update (WU).
 
 For more information see:
 
 -   The "MBIM Service and CID Extensibility" section of the [Mobile Broadband Interface Model (MBIM) specification]( https://go.microsoft.com/fwlink/p/?linkid=320791)
-
- 
 

@@ -19,7 +19,7 @@ A more detailed look at the printer driver options is provided in [Exploring the
 
 ## Prerequisites
 
-1. Follow the guidance in [Download the Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)
+1. Follow the guidance in [Download the Windows Driver Kit (WDK)](../download-the-wdk.md)
 
     1. Install Visual Studio 2019 with the **Desktop development with C++** workload and the correct version of the **Windows 10 SDK**.
 

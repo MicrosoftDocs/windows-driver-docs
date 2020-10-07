@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # INF Files for PSHED Plug-Ins
 
 
-A PSHED plug-in is installed by an [information (INF) file](https://docs.microsoft.com/windows-hardware/drivers/install/inf-files). INF files for PSHED plug-ins contain the following standard INF file sections:
+A PSHED plug-in is installed by an [information (INF) file](../install/overview-of-inf-files.md). INF files for PSHED plug-ins contain the following standard INF file sections:
 
 [**INF Version Section**](../install/inf-version-section.md)
 
@@ -99,6 +99,4 @@ ServiceBinary = %12%\%FileName%
 %ServiceDesc% = "Example PSHED Plug-In"
 %PSHEDControlPath% = "System\CurrentControlSet\Control\PSHED\Plugins"
 ```
-
- 
 

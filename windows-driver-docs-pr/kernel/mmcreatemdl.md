@@ -73,7 +73,7 @@ The following obsolete routines are exported to support existing binaries:
 </tr>
 <tr class="odd">
 <td><strong>ExInterlockedExchangeAddLargeInteger</strong></td>
-<td><p>For more information about atomically adding two 64-bit numbers, see <a href="https://go.microsoft.com/fwlink/p/?linkid=71056" data-raw-source="[InterlockedExchangeAdd64](https://go.microsoft.com/fwlink/p/?linkid=71056)">InterlockedExchangeAdd64</a>.</p></td>
+<td><p>For more information about atomically adding two 64-bit numbers, see <a href="/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd64" data-raw-source="[InterlockedExchangeAdd64](/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd64)">InterlockedExchangeAdd64</a>.</p></td>
 </tr>
 <tr class="even">
 <td><strong>ExInterlockedExchangeUlong</strong></td>
@@ -191,7 +191,7 @@ The following obsolete routines are exported to support existing binaries:
 [**FreeAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pfree_adapter_channel)  
 [**FreeMapRegisters**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pfree_map_registers)  
 [**GetDmaAlignment**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pget_dma_alignment)  
-[InterlockedExchangeAdd64](https://go.microsoft.com/fwlink/p/?linkid=71056)  
+[InterlockedExchangeAdd64](/windows/win32/api/winnt/nf-winnt-interlockedexchangeadd64)  
 [**IoAllocateMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocatemdl)  
 [**IoAllocateWorkItem**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem)  
 [**IoAttachDeviceToDeviceStack**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack)  
