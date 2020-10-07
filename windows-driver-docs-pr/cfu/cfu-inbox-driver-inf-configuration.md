@@ -198,9 +198,7 @@ For more information, refer the following code in **g_CfuVirtualHid_HidReportDes
 
 Next, deploy the package through Windows Update.
 
-For information about deployment, see:
-
-[Windows 10 Driver Publishing Workflow](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx)
+For information about deployment, see [Windows 10 Driver Publishing Workflow (DOCX download)](https://download.microsoft.com/download/B/A/8/BA89DCE0-DB25-4425-9EFF-1037E0BA06F9/windows10_driver_publishing_workflow.docx).
 
 ## Firmware update image file format
 
