@@ -29,7 +29,11 @@ This set of guidelines applies to these callback routines:
 
 [_PLOAD_IMAGE_NOTIFY_ROUTINE_](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine)
 
--    Keep notify routines short and simple.
+[ PEB_PRE_OPERATION_CALLBACK ](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
+
+[ POB_POST_OPERATION_CALLBACK ](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback)
+
+-    Keep routines short and simple.
 -    Do not make calls into a user mode service to validate the process, thread, or image. 
 -    Do not make registry calls. 
 -    Do not make blocking and/or Interprocess Communication (IPC) function calls. 
@@ -37,6 +41,7 @@ This set of guidelines applies to these callback routines:
 -    Use [System Worker Threads](./system-worker-threads.md) to queue work especially work involving: 
         -    Slow API’s or API’s that call into other process.
         -    Any blocking behavior which could interrupt threads in core services. 
+-    If you use System Worker Threads do not wait on the work to complete. Doing so defeats the purpose of queuing the work to be completed asynchronously.
 -    Be considerate of best practices for kernel mode stack usage. For examples, see [How do I keep my driver from running out of kernel-mode stack?](/previous-versions/windows/hardware/design/dn613940(v=vs.85)) and [Key Driver Concepts and Tips](/previous-versions/windows/hardware/design/dn614604(v=vs.85)).
 
 
