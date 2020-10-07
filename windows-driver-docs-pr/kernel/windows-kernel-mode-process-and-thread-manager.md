@@ -29,9 +29,9 @@ This set of guidelines applies to these callback routines:
 
 [_PLOAD_IMAGE_NOTIFY_ROUTINE_](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine)
 
-[ POB_PRE_OPERATION_CALLBACK ](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
+[_POB_PRE_OPERATION_CALLBACK_](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
 
-[ POB_POST_OPERATION_CALLBACK ](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback)
+[_POB_POST_OPERATION_CALLBACK_](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback)
 
 -    Keep routines short and simple.
 -    Do not make calls into a user mode service to validate the process, thread, or image. 
