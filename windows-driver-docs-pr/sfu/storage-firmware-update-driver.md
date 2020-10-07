@@ -1,7 +1,7 @@
 ---
 title: Storage Firmware Update (SFU) driver
 description: Provides implementation details for the Storage Firmware Update (SFU) driver.
-ms.date: 09/01/2020
+ms.date: 10/07/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -227,6 +227,8 @@ View the updated NVMe disk firmware information in the **ActiveSlotNumber** and 
 For more information, see [Get-StorageFirmwareInformation](/powershell/module/storage/get-storagefirmwareinformation?view=win10-ps).
 
 ## Deploy the extension INF and firmware packages through Windows Update
+
+First, validate the package deployment via Windows Update using the [Publishing for test distribution](/windows-hardware/drivers/dashboard/publishing-for-test-distribution) guidance.
 
 Next, deploy the package through Windows Update using appropriate CHIDs.
 
