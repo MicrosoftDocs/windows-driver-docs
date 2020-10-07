@@ -29,7 +29,7 @@ This set of guidelines applies to these callback routines:
 
 [_PLOAD_IMAGE_NOTIFY_ROUTINE_](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine)
 
-[ PEB_PRE_OPERATION_CALLBACK ](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
+[ POB_PRE_OPERATION_CALLBACK ](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
 
 [ POB_POST_OPERATION_CALLBACK ](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback)
 
