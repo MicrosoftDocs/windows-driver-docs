@@ -60,7 +60,7 @@ The value of DEVPKEY_Device_NoConnectSound is set to DEVPROP_TRUE to suppress pl
 
 The DEVPKEY_Device_NoConnectSound property is typically set by an [**INF AddProperty directive**](./inf-addproperty-directive.md) in the INF file for a device.
 
-You can call [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve or set the value of DEVPKEY_Device_NoConnectSound.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve or set the value of DEVPKEY_Device_NoConnectSound.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not support this property.
 
@@ -76,7 +76,7 @@ Requirements
 
 [**INF AddProperty Directive**](./inf-addproperty-directive.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

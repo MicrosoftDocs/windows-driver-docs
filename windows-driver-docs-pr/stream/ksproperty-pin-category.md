@@ -47,7 +47,7 @@ The client uses the KSPROPERTY\_PIN\_CATEGORY property to retrieve the category 
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>GUID</p></td>
 </tr>
 </tbody>
@@ -84,6 +84,4 @@ Requirements
 
 
 [**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
-
- 
 

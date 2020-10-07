@@ -24,13 +24,16 @@ Syntax
     bcdedit /emssettings [ BIOS ] | [ EMSPORT: port | [EMSBAUDRATE: baudrate] ] 
 ```
 
+> [!NOTE]
+> Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
+
 Parameters
 ----------
 
 **BIOS**   
 Specifies that the system will use BIOS settings for the EMS configuration. This works only on systems that have EMS support provided by the BIOS.
 
- **EMSPORT:** *port*   
+**EMSPORT:** *port*   
 Specifies the serial port to use as the EMS port. This parameter should not be specified with the **BIOS** option.
 
 **EMSBAUDRATE:** *baudrate*   

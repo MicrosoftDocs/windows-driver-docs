@@ -57,7 +57,7 @@ The following new or updated display driver DDIs are also provided in Windows 8
 
 Provides a limited set of display functions without rendering capability.
 
-**Note**  Refer also to the [Kernel mode display-only miniport driver](https://go.microsoft.com/fwlink/p/?linkid=258742) sample.
+**Note**  Refer also to the [Kernel mode display-only miniport driver](/samples/browse/) sample.
 
  
 
@@ -126,6 +126,4 @@ Also see [Windows 8 brightness control for integrated displays](/previous-versio
 [**Windows 8 OpenGL Enhancements**](supporting-opengl-enhancements.md)
 
 OpenGL installable client drivers (ICDs) can call new functions to control access to resources and to map between objects and identifiers.
-
- 
 

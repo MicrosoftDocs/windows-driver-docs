@@ -54,7 +54,7 @@ The extensible switch extension returns one of the following status codes for th
 <tbody>
 <tr class="odd">
 <td><p>NDIS_STATUS_BUFFER_TOO_SHORT</p></td>
-<td><p>The length of the information buffer is too small for the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_NIC_SAVE_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)"><strong>NDIS_SWITCH_NIC_SAVE_STATE</strong></a> and its associated run-time data The extensible switch extension must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The length of the information buffer is too small for the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state" data-raw-source="[&lt;strong&gt;NDIS_SWITCH_NIC_SAVE_STATE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)"><strong>NDIS_SWITCH_NIC_SAVE_STATE</strong></a> and its associated run-time data The extensible switch extension must set the <strong>DATA.METHOD_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 <tr class="even">
 <td><p>NDIS_STATUS_SUCCESS</p></td>
@@ -125,6 +125,4 @@ Requirements
 [OID\_SWITCH\_NIC\_RESTORE](oid-switch-nic-restore.md)
 
 [OID\_SWITCH\_NIC\_SAVE\_COMPLETE](oid-switch-nic-save-complete.md)
-
- 
 

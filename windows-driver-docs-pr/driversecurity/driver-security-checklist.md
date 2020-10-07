@@ -77,7 +77,7 @@ For information on using Windows Services, see [Services](/windows/desktop/Servi
 
 Use the [Windows Driver Frameworks](../wdf/index.md) to reduce the size of your code and increase its reliability and security.  To get started, review [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](../gettingstarted/choosing-a-driver-model.md).
 
-Writing an old fashion [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
+Writing an old fashion [Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
 
 The Windows Driver Framework source code is open source and available on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from [https://github.com/Microsoft/Windows-Driver-Frameworks](https://github.com/Microsoft/Windows-Driver-Frameworks).
 
@@ -188,7 +188,7 @@ To allow drivers to support HVCI virtualization, there are additional memory req
 
 ### Device objects
 
-- Secure device objects. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+- Secure device objects. For more information, see [Securing Device Objects](../kernel/controlling-device-access.md).
 
 - Validate device objects. For more information, see [Failure to Validate Device Objects](../kernel/failure-to-validate-device-objects.md).
 
@@ -206,7 +206,7 @@ The following articles provide information about validating IRP input values:
 
 [DispatchReadWrite Using Buffered I/O](../kernel/dispatchreadwrite-using-buffered-i-o.md)
 
-[Errors in Buffered I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-buffered-i-o)
+[Errors in Buffered I/O](../kernel/failure-to-check-the-size-of-buffers.md)
 
 [DispatchReadWrite Using Direct I/O](../kernel/dispatchreadwrite-using-direct-i-o.md)
 
@@ -280,7 +280,7 @@ Drivers must work to prevent users from inappropriately accessing a computer's d
 
 In order to allow applications or other WDF drivers to access your PnP device PDO, you should use device interfaces. For more information, see [Using Device Interfaces](../wdf/using-device-interfaces.md). A device interface serves as a symbolic link to your device stack's PDO.
 
-One of the betters way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects) and [SDDL for Device Objects](../kernel/sddl-for-device-objects.md).
+One of the betters way to control access to the PDO is by specifying an SDDL string in your INF. If the SDDL string is not in the INF file, Windows will apply a default security descriptor. For more information, see [Securing Device Objects](../kernel/controlling-device-access.md) and [SDDL for Device Objects](../kernel/sddl-for-device-objects.md).
 
 For more information about controlling access, see the following articles:
 
@@ -360,13 +360,13 @@ For more information about the related system fundamentals security test, see [D
 
 For more information, about file system driver security see the following articles:
 
-[Security Considerations for File Systems](https://docs.microsoft.com/windows-hardware/drivers/ifs/security-considerations-for-file-systems)
+[Introduction to File Systems Security](/windows-hardware/drivers/ifs/introduction-to-file-systems-security)
 
 [File System Security Issues](../ifs/file-system-security-issues.md)
 
 [Security Features for File Systems](../ifs/security-features-for-file-systems.md)
 
-[Security Considerations for File System Filter Drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/security-considerations-for-file-system-filter-drivers)
+[Coexistence with other File System Filter Drivers](/windows-hardware/drivers/ifs/coexistence-with-other-file-system-filter-drivers)
 
 ### NDIS - Networking
 
@@ -405,7 +405,7 @@ For more information, see the following articles:
 
 [Using Device Installation Functions](../install/using-device-installation-functions.md)
 
-[Device and Driver Installation Advanced Topics](https://docs.microsoft.com/windows-hardware/drivers/install/device-and-driver-installation-advanced-topics)
+[Device and Driver Installation Advanced Topics](../install/creating-secure-device-installations.md)
 
 ## Perform peer code review
 
@@ -445,7 +445,7 @@ Select the description for each warning to see the problematic area in your code
 
 Select the linked warning code to see additional information.
 
-Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects?view=vs-2015) and [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md).
+Determine whether your code needs to be changed, or whether an annotation needs to be added to allow the code analysis engine to properly follow the intent of your code. For more information on code annotation, see [Using SAL Annotations to Reduce C/C++ Code Defects](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects) and [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md).
 
 For general information on SAL, refer to this article available from OSR.
 [https://www.osr.com/blog/2015/02/23/sal-annotations-dont-hate-im-beautiful/](https://www.osr.com/blog/2015/02/23/sal-annotations-dont-hate-im-beautiful/)
@@ -505,7 +505,7 @@ Follow these steps to validate that the security compile options are properly co
 
 4. Select the downloaded zip file and unzip it, for example to `C:\binskim-master`.
 
-5. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio?view=vs-2019).
+5. Confirm Visual Studio is installed. For information on downloading and installing Visual Studio see [Install Visual Studio](/visualstudio/install/install-visual-studio).
 
 6. Open a Visual Studio Developer Command Prompt window and move to the directory that you unzipped the files to.  
 
@@ -568,7 +568,7 @@ If your code references a compiled binary that is not part of your code, the Win
 > [!TIP]
 >When adding a symbol path (that references a networked symbol server), add a local cache location to specify a local path to cache the symbols. Not doing this can greatly compromise the performance of BinSkim. The following example, specifies a local cache at d:\symbols.
 `--sympath Cache*d:\symbols;Srv*http://symweb`
-For more information about sympath, see [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path).
+For more information about sympath, see [Symbol path for Windows debuggers](../debugger/symbol-path.md).
 
 1. Execute the following command to analyze a compiled driver binary. Update the target path to point to your complied driver .sys file.
 
@@ -626,7 +626,7 @@ The default compile options in Visual Studio for driver projects can disable war
 
 [C4986 - 'declaration': exception specification does not match previous declaration](/cpp/error-messages/compiler-warnings/compiler-warning-c4986)
 
-For more information about the compiler warnings, see [Compiler Warnings by compiler version](/cpp/error-messages/compiler-warnings/compiler-warnings-by-compiler-version?view=vs-2019).
+For more information about the compiler warnings, see [Compiler Warnings by compiler version](/cpp/error-messages/compiler-warnings/compiler-warnings-by-compiler-version).
 
 ## Use additional code validation tools
 

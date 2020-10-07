@@ -27,7 +27,7 @@ Many firmware that fail this measure are not abiding by the contract where the E
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|200|
 |**Passing criteria**|<= 5%|
-|**Measure ID**|20116755|
+|**Measure ID**|20116755 or 23260704|
 
 ## Calculation
 

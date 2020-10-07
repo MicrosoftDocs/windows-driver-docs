@@ -5,7 +5,7 @@ ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
 keywords:
 - extension units WDK USB Video Class , samples, sample application
 - sample code WDK USB Video Class , UVC extension units
-ms.date: 06/18/2020
+ms.date: 09/08/2020
 ms.localizationpriority: medium
 ---
 
@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 This topic contains sample application code that you can use to support Extension Units.
 
-An application accesses the interface by using [**IKsTopologyInfo::CreateNodeInstance**](/previous-versions/windows/win32/api/Vidcap/nf-vidcap-ikstopologyinfo-createnodeinstance) followed by a call to **QueryInterface** on the node object to obtain the required COM API. For more information, see [**IKsTopologyInfo**](/previous-versions/windows/win32/api/Vidcap/nn-vidcap-ikstopologyinfo).
+An application accesses the interface by using [**IKsTopologyInfo::CreateNodeInstance**](/previous-versions/ms785846(v=vs.85)) followed by a call to **QueryInterface** on the node object to obtain the required COM API. For more information, see [**IKsTopologyInfo**](/previous-versions/ms785854(v=vs.85)).
 
 Include the following code in the application source, arbitrarily named TestApp.cpp.
 

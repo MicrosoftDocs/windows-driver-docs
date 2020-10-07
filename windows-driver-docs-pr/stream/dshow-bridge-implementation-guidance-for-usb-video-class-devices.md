@@ -23,7 +23,7 @@ IHVs and OEMs may need an exemption from the policies governing the DShow pipeli
 
 ![camera capture pipeline](images/camera-capture-pipeline.png)
 
-The OEMs and IHVs packaging their USB camera devices can use the USB bus standard’s Extended Properties OS Feature Descriptor specification to configure DShow Bridge without resorting to any INF file changes for their UVC driver.
+The OEMs and IHVs packaging their USB camera devices can use the USB bus standard's Extended Properties OS Feature Descriptor specification to configure DShow Bridge without resorting to any INF file changes for their UVC driver.
 
 The OS descriptors allow devices to define registry properties for USB devices or composite devices.
 
@@ -72,7 +72,7 @@ The header section describes the entire extended properties descriptor, includin
 
 #### Custom Property Section
 
-The USB HID device’s extended property OS descriptor has one custom property section to create the **EnableDshowRedirection** DWORD registry key.
+The USB HID device's extended property OS descriptor has one custom property section to create the **EnableDshowRedirection** DWORD registry key.
 
 | Offset | Field | Size (bytes) | Value |
 |--------|----------------------|---------|-------------------------------------------|
@@ -131,12 +131,9 @@ UCHAR Example2\_MSOS20DescriptorSetForFutureWindows\[0x48\] =
     0x6F, 0x00, 0x6E, 0x00,
     0x00, 0x00, 0x00, 0x00,
     0x04, 0x00,                 // wPropertyDataLength – 4 bytes
-    0x00, 0x00, 0x00, 0x00      // PropertyData – 0x00000003 (see note below)
+    0x00, 0x00, 0x00, 0x00      // PropertyData – 0x00000003 (DShow Bridge is enabled and MJPEG is decoded in FrameServer)
 }
 ```
-
-> [!NOTE]
-> 0x00000003:- DShow Bridge is enabled and MJPEG is decoded in FrameServer, for example, the source
 
 ### Resources
 

@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 Monitors must be installed in NT-based operating systems using an INF file. The Windows Driver Kit (WDK) provides a sample monitor INF file, *monsamp.inf*, that you should use as a template to generate an INF file for your monitor. You cannot use the *geninf.exe* tool described in [Creating Graphics INF Files](creating-graphics-inf-files.md) to generate a monitor INF.
 
-The rest of this topic comments on some of the sections in *monsamp.inf* that are of specific interest to monitor INF writers. For more general information about INF files, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+The rest of this topic comments on some of the sections in *monsamp.inf* that are of specific interest to monitor INF writers. For more general information about INF files, see [INF File Sections and Directives](../install/index.md).
 
 You can also use an INF file to override the monitor Extended Display Identification Data (EDID). See [Overriding Monitor EDIDs with an INF](overriding-monitor-edids.md).
 

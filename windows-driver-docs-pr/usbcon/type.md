@@ -150,7 +150,7 @@ Applies to: System, dock, device
 
 Repeat this test for other available system power states: Sleep (S3), Hibernate (S4), and Hybrid Sleep.
 
-**Note**  Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](https://docs.microsoft.com/windows-hardware/drivers/devtest/pwrtest).
+**Note**  Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](../devtest/pwrtest.md).
 
  
 
@@ -169,8 +169,8 @@ Applies to: Dock, device
 
 Additional information of selective suspend can be found from the following sources:
 
--   [Enabling selective suspend for HID](https://go.microsoft.com/fwlink/p/?LinkId=623307)
--   [Selective suspend for HID over USB devices](https://docs.microsoft.com/windows-hardware/drivers/hid/selective-suspend-for-hid-over-usb-devices)
+-   [Enabling selective suspend for HID](/previous-versions/windows/hardware/design/dn613941(v=vs.85))
+-   [Selective suspend for HID over USB devices](../hid/selective-suspend-for-hid-over-usb-devices.md)
 -   [Demystifying selective suspend]( https://go.microsoft.com/fwlink/p/?LinkId=623308)
 
 ## <a href="" id="ft5"></a>FT Case 5: Dock Identification
@@ -258,7 +258,7 @@ Applies to: System, dock, device
 
 1.  Restart the test system.
 2.  Plug a USB SuperMUTT device to exposed USB Type-C port.
-3.  Run the [DF - Reboot Restart with IO Before and After](https://go.microsoft.com/fwlink/p/?LinkId=623312) test.
+3.  Run the [DF - Reboot Restart with IO Before and After](/previous-versions/windows/hardware/hck/dn293550(v=vs.85)) test.
 4.  Repeat step 3 with a USB Type-C test device.
 
 ## <a href="" id="st3"></a>ST Case 3: Plug and Play
@@ -279,7 +279,7 @@ Applies to: System, dock, device
 1.  Restart the test system.
 2.  By using a USB Type-C A/V adapter, connect all ports of the A/V adapter so all functionality can be used as shown in this image:
 
-    ![usb type-c a/v adapter configuration](images/typec5.png)
+    ![Diagram that shows a U S B Type-C A/V adapter configuration.](images/typec5.png)
 
 3.  If the system under test has additional USB Type-C ports, repeat step 2.
 4.  Run the [DF - Sleep with IO During]( https://go.microsoft.com/fwlink/p/?LinkId=623314) test.
@@ -461,7 +461,7 @@ An analyzer trace should explicitly show every link state transition: statements
 
 In order to disable selective suspend on a USB device in Device Manager, first find the device node in the device tree. In this example, disable selective suspend on the hub shown below:
 
-![device manager](images/typec-device-mgr.png)
+![Screenshot that shows a "Generic U S B Hub" selected in "Device Manager".](images/typec-device-mgr.png)
 
 Right-click the device and select **Properties**. Then select the **Power Management** tab.
 
@@ -482,11 +482,4 @@ Provide these details:
 -   The list of tests (in order) that were performed before the failed test.
 -   The list must specify the tests that have failed or passed.
 -   Systems, devices, docks, or hubs that were used for the tests. Include make, model, and Web site so that we can get additional information, if needed.
-
- 
-
- 
-
-
-
 

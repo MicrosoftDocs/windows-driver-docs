@@ -22,7 +22,7 @@ XPS Converter (XpsConverter.exe) is a command-line tool for converting XML Paper
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>XpsConverter.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit Downloads](../download-the-wdk.md)">Windows Driver Kit Downloads</a>.</p></td>
+<td align="left"><p>XpsConverter.exe is included in the Microsoft Windows Driver Kit (WDK). For information about getting the WDK, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Driver Kit Downloads](../download-the-wdk.md)">Windows Driver Kit Downloads</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -126,6 +126,4 @@ XpsConverter /OpenXPS /InputFile=MyDoc.xps /OutputFile=ConvertedMyDoc.oxps  logg
 
 
 **isXPS.exe (isXPS Conformance Tool)**
-
- 
 

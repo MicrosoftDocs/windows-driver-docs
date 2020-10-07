@@ -21,7 +21,7 @@ This section describes header-data split services that are available in NDIS 6.1
 
 This section includes:
 
-[Header Data Split Overview](header-data-split-overview.md)
+[Header Data Split Overview](header-data-split-architecture.md)
 
 [Initializing a Header-Data Split Provider](initializing-a-header-data-split-provider.md)
 
@@ -29,7 +29,7 @@ This section includes:
 
 [Receive Indications with Header-Data Split](receive-indications-with-header-data-split.md)
 
-[Header-Data Split Administration and Configuration](header-data-split-administration-and-configuration.md)
+[Header-Data Split Administration and Configuration](setting-the-current-header-data-split-configuration.md)
 
 [Supporting Header-Data Split in Protocol Driver and Filter Drivers](supporting-header-data-split-in-protocol-driver-and-filter-drivers.md)
 

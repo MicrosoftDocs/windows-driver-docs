@@ -27,13 +27,11 @@ The [PROPSETID\_VIDCAP\_DROPPEDFRAMES](./propsetid-vidcap-droppedframes.md) prop
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-droppedframes-current" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT&lt;/strong&gt;](./ksproperty-droppedframes-current.md)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksproperty-droppedframes-current" data-raw-source="[&lt;strong&gt;KSPROPERTY_DROPPEDFRAMES_CURRENT&lt;/strong&gt;](./ksproperty-droppedframes-current.md)"><strong>KSPROPERTY_DROPPEDFRAMES_CURRENT</strong></a></p></td>
 <td><p>Returns the dropped frame information for a capture operation, including the current picture number and the average video frame size.</p></td>
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

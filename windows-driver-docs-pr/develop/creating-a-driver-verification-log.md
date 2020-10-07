@@ -1,7 +1,7 @@
 ---
 ms.assetid: 5EB802D0-1894-4D64-ACB0-77B848B7E644
 title: Creating a Driver Verification Log
-description: The Windows Server 2012 Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
+description: Learn why the Windows Server Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +15,7 @@ The Windows Server [Hardware Certification Program](/windows-hardware/design/co
 1.  Before running the Code Analysis tools, be sure that you can build and link your driver using the latest Windows Driver Kit (WDK).
 2.  For the Driver Solution, make sure that you have selected a Release configuration as the Solution Configuration and x64 as the Solution Platform.
 3.  Run [Static Driver Verifier](../devtest/static-driver-verifier.md). For information about creating the log file, see [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md) and [Using Static Driver Verifier to find defects in drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md).
-4.  Run the Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for Drivers](../devtest/how-to-run-code-analysis-for-drivers.md). For more information about code analysis, see [Analyzing C/C++ Code Quality by Using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836).
+4.  Run the Code Analysis tool for drivers. Address and fix any defects that are found. See [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md) and [How to run Code Analysis for Drivers](../devtest/how-to-run-code-analysis-for-drivers.md). For more information about code analysis, see [Analyzing C/C++ Code Quality by Using Code Analysis](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)).
 5.  Create the Driver Verification Log. From the **Driver** menu, select **Create Driver Verification Log...**.
 6.  Verify that both the Code Analysis Log and the Static Driver Verifier Log files are detected. Select **Create**.
 
@@ -47,9 +47,7 @@ msbuild.exe <vcxprojectfile> /target:dvl /p:Configuration="Release" /P:Platform=
 
 * [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md)
 * [Creating a log file for the code analysis tool](creating-a-log-file-for-the-code-analysis-tool.md)
-* [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
+* [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
 * [Analyzing Driver Quality by Using Code Analysis Tools](analyzing-driver-quality-by-using-code-analysis-tools.md)
 * [How to run Code Analysis for drivers](../devtest/how-to-run-code-analysis-for-drivers.md)
 * [Using Static Driver Verifier to find defects in drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md)
- 
-

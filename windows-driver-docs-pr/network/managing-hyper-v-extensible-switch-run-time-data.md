@@ -39,7 +39,7 @@ If the extension has run-time port data to save, it must follow these guidelines
 1.  The extension sets the **ExtensionId** member to the GUID value that uniquely identifies the driver.
 2.  The extension sets the **ExtensionFriendlyName** member to the name of the driver.
 
-    **Note**  The NDIS\_SWITCH\_EXTENSION\_FRIENDLYNAME data type is type-defined by the [**IF\_COUNTED\_STRING**](/windows/desktop/api/ifdef/ns-ifdef-_if_counted_string_lh) structure. A string that is defined by this structure does not have to be null-terminated. However, the length of the string must be set in the **Length** member of this structure. If the string is NULL-terminated, the **Length** member must not include the terminating NULL character.     
+    **Note**  The NDIS\_SWITCH\_EXTENSION\_FRIENDLYNAME data type is type-defined by the [**IF\_COUNTED\_STRING**](/windows/win32/api/ifdef/ns-ifdef-if_counted_string_lh) structure. A string that is defined by this structure does not have to be null-terminated. However, the length of the string must be set in the **Length** member of this structure. If the string is NULL-terminated, the **Length** member must not include the terminating NULL character.     
 
 3.  If a feature class is associated with the saved run-time data, the extension sets the **FeatureClassId** with the GUID that uniquely identifies the class.
 

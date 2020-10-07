@@ -64,7 +64,7 @@ You can use the [**DEVPKEY_NAME**](devpkey-name--device-instance-.md) device pro
 
 You can set the value of DEVPKEY_Device_FriendlyName by using an [**INF AddReg directive**](./inf-addreg-directive.md) that is included in the [**INF *DDInstall*.HW section**](./inf-ddinstall-hw-section.md) in the INF file that installs a device.
 
-You can retrieve the value of DEVPKEY_Device_FriendlyName by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can set this property by calling [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
+You can retrieve the value of DEVPKEY_Device_FriendlyName by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) or you can set this property by calling [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_FriendlyName property key. Instead, you can use the corresponding SPDRP_FRIENDLYNAME identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
@@ -84,9 +84,9 @@ Requirements
 
 [**INF *DDInstall*.HW Section**](./inf-ddinstall-hw-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
-[**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
+[**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
 
  
 

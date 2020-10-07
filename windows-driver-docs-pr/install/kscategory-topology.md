@@ -52,7 +52,7 @@ Drivers for KS audio adapter devices register instances of KSCATEGORY_TOPOLOGY t
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
-The [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) that is provided in the WDK enumerates instances of the KSCATEGORY_TOPOLOGY device interface class.
+The [AC'97 sample driver](/samples/browse/) that is provided in the WDK enumerates instances of the KSCATEGORY_TOPOLOGY device interface class.
 
 The sysfx sample in the WDK registers instances of this device interface class. The sysfx sample is located in the *src\\audio\\sysfx directory* of the WDK.
 
@@ -71,6 +71,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

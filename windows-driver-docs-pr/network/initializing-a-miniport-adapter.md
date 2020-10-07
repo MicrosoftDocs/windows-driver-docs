@@ -54,7 +54,7 @@ Typically, [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-m
 
 7.  Shared memory.
 
-8.  Interrupts (see [Managing Interrupts](managing-interrupts.md)).
+8.  Interrupts (see [Managing Interrupts](registering-and-deregistering-interrupts.md)).
 
 After [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) returns successfully, the adapter is in the Paused state. NDIS can call the [**MiniportRestart**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart) function to transition the adapter to the Running state. For more information, see [Starting a Miniport Adapter](starting-an-adapter.md).
 

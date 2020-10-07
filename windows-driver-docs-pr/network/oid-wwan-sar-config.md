@@ -20,7 +20,7 @@ For Set requests, this OID's payload contains an [**NDIS_WWAN_SET_SAR_CONFIG**](
 
 After each Query or Set request, the miniport driver should return an [**NDIS_WWAN_SAR_CONFIG_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sar_config_info) structure that contains information for all antennas on the device associated with Mobile Broadband.
 
-For more information about usage of this OID, see [MBIM_CID_MS_SAR_CONFIG](./mb-sar-platform-support.md#mbimcidmssarconfig).
+For more information about usage of this OID, see [MBIM_CID_MS_SAR_CONFIG](./mb-sar-platform-support.md#mbim_cid_ms_sar_config).
 
 ## Requirements
 

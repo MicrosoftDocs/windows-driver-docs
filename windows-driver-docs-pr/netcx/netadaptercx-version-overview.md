@@ -4,7 +4,6 @@ description: This topic lists versions of the Network Adapter WDF Class Extensio
 ms.assetid: 14847DED-FC24-4020-8526-D5F3A85882EB
 keywords:
 - Version overview Network Adapter Class Extension, version overview NetAdapterCx, version overview NetCx
-ms.author: windowsdriverdev
 ms.date: 11/04/2019
 ms.localizationpriority: medium
 ms.custom: Vib

@@ -19,7 +19,7 @@ With Synchronous OID requests, the payload of the call (the OID itself) is exact
 
 The following table describes the differences between Regular OIDs, Direct OIDs, and Synchronous OIDs.
 
-| | Regular OID | Direct OID | Synchronous OID |
+| Attribute | Regular OID | Direct OID | Synchronous OID |
 | --- | --- | --- | --- |
 | Payload | [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) | NDIS_OID_REQUEST | NDIS_OID_REQUEST |
 | OID types | Stats, Query, Set, Method | Stats, Query, Set, Method | Stats, Query, Set, Method |

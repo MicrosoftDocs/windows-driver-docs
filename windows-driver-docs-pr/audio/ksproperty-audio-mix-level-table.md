@@ -11,7 +11,7 @@ api_location:
 - Ksmedia.h
 api_type:
 - HeaderDef
-ms.date: 11/28/2017
+ms.date: 09/04/2020
 ms.localizationpriority: medium
 ---
 
@@ -45,15 +45,15 @@ The KSPROPERTY\_AUDIO\_MIX\_LEVEL\_TABLE property specifies the mix levels for a
 <tbody>
 <tr class="odd">
 <td align="left"><p>Yes</p></td>
-<td align="left"><p>Yes</p></td>
+<td align="left"><p>Optional</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
-<td align="left"><p>Array of <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel" data-raw-source="[&lt;strong&gt;KSAUDIO_MIXLEVEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel)"><strong>KSAUDIO_MIXLEVEL</strong></a> structures</p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></p></td>
+<td align="left"><p>Array of <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel" data-raw-source="[&lt;strong&gt;KSAUDIO_MIXLEVEL&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel)"><strong>KSAUDIO_MIXLEVEL</strong></a> structures</p></td>
 </tr>
 </tbody>
 </table>
 
- 
+The node is required to implement support for KSPROPERTY\_TYPE_GET requests. However, support for KSPROPERTY\_TYPE\_SET requests is optional.
 
 The property value (operation data) is an array of KSAUDIO\_MIXLEVEL structures that specifies the mix levels for all M\*N input-output paths in a supermixer node with M input channels and N output channels. The array contains M\*N elements:
 
@@ -155,6 +155,4 @@ Requirements
 [**KSAUDIO\_MIXLEVEL**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_mixlevel)
 
 [**KSNODETYPE\_SUPERMIX**](ksnodetype-supermix.md)
-
- 
 

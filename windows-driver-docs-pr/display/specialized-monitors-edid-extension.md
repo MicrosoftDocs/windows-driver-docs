@@ -8,7 +8,6 @@ keywords:
 - monitors
 - HMD
 - virtual reality
-ms.author: windowsdriverdev
 ms.date: 11/30/2018
 ms.topic: article
 ms.prod: windows-hardware

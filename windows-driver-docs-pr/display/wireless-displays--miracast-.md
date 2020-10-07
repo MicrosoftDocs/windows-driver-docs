@@ -94,11 +94,11 @@ All user-mode structures and enumerations that are used with Miracast display de
 
 These additional user-mode structures and enumerations support Miracast displays and are new or updated for Windows 8.1:
 
--   [**DISPLAYCONFIG\_TARGET\_BASE\_TYPE**](/windows/desktop/api/wingdi/ns-wingdi-displayconfig_target_base_type) (new)
--   [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](/windows/desktop/api/wingdi/ns-wingdi-displayconfig_video_signal_info) (**AdditionalSignalInfo** child structure added)
--   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](/windows/desktop/api/wingdi/ne-wingdi-displayconfig_device_info_type) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
+-   [**DISPLAYCONFIG\_TARGET\_BASE\_TYPE**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_target_base_type) (new)
+-   [**DISPLAYCONFIG\_VIDEO\_SIGNAL\_INFO**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_video_signal_info) (**AdditionalSignalInfo** child structure added)
+-   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](/windows/win32/api/wingdi/ne-wingdi-displayconfig_device_info_type) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
 -   [**D3DKMDT\_VIDEO\_SIGNAL\_INFO**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_video_signal_info) (**AdditionalSignalInfo** child structure added)
--   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](/windows/desktop/api/wingdi/ne-wingdi-displayconfig_device_info_type) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
+-   [**DISPLAYCONFIG\_DEVICE\_INFO\_TYPE**](/windows/win32/api/wingdi/ne-wingdi-displayconfig_device_info_type) (**DISPLAYCONFIG\_DEVICE\_INFO\_GET\_TARGET\_BASE\_TYPE** constant added)
 
 ### Kernel-mode DDIs
 

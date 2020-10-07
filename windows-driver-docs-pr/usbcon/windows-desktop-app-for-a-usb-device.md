@@ -8,11 +8,11 @@ ms.localizationpriority: medium
 # Windows desktop app for a USB device
 
 
-In this topic you'll learn about how an application can call [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) to communicate with a USB device. For such an application, [WinUSB](winusb.md) (Winusb.sys) must be installed as the device's function driver. WinUSB in the device's kernel-mode stack. This driver is included in Windows in the \\Windows\\System32\\drivers folder.
+In this topic you'll learn about how an application can call [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) to communicate with a USB device. For such an application, [WinUSB](winusb.md) (Winusb.sys) must be installed as the device's function driver. WinUSB in the device's kernel-mode stack. This driver is included in Windows in the \\Windows\\System32\\drivers folder.
 
-If you are using Winusb.sys as a USB device's function driver, you can call [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) from an application to communicate with the device. These functions, exposed by the user-mode DLL Winusb.dll, simplify the communication process. Instead of constructing device I/O control requests to perform standard USB operations (such as configuring the device, sending control requests, and transferring data to or from the device), applications call the equivalent WinUSB function.
+If you are using Winusb.sys as a USB device's function driver, you can call [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) from an application to communicate with the device. These functions, exposed by the user-mode DLL Winusb.dll, simplify the communication process. Instead of constructing device I/O control requests to perform standard USB operations (such as configuring the device, sending control requests, and transferring data to or from the device), applications call the equivalent WinUSB function.
 
-Winusb.dll uses the application-supplied data to construct the appropriate device I/O control request, and then sends the request to Winusb.sys for processing. To communicate with the USB stack, the WinUSB function calls the [**DeviceIoControl**](https://docs.microsoft.com/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) function with the appropriate IOCTL that correlates to the application's request. When the request is complete, the WinUSB function passes any information returned by Winusb.sys (such as data from a read request) back to the calling process. If the call to **DeviceIoControl** is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. In case of an error, the application can call [**GetLastError**](https://docs.microsoft.com/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) for a more detailed error message.
+Winusb.dll uses the application-supplied data to construct the appropriate device I/O control request, and then sends the request to Winusb.sys for processing. To communicate with the USB stack, the WinUSB function calls the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) function with the appropriate IOCTL that correlates to the application's request. When the request is complete, the WinUSB function passes any information returned by Winusb.sys (such as data from a read request) back to the calling process. If the call to **DeviceIoControl** is successful, it returns a nonzero value. If the call fails or is pending (not processed immediately), **DeviceIoControl** returns a zero value. In case of an error, the application can call [**GetLastError**](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) for a more detailed error message.
 
 It is simpler to use WinUSB functions to communicate with a device than it is to implement a driver. However, note the following limitations:
 
@@ -56,7 +56,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 <td><p>For learning purposes, popular choices are:</p>
 <ul>
 <li>OSR USB FX2 learning kit. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from <a href="https://www.osronline.com/" data-raw-source="[OSR Online](https://www.osronline.com/)">OSR Online</a>.</li>
-<li>Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="https://jjgtechnologies.com/mutt.md" data-raw-source="[JJG Technologies](https://jjgtechnologies.com/mutt.md)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, download the MUTT software package from <a href="mutt-software-package.md" data-raw-source="[this Web site](mutt-software-package.md)">this Web site</a> and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
+<li>Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="http://www.jjgtechnologies.com/mutt.htm" data-raw-source="[JJG Technologies](http://www.jjgtechnologies.com/mutt.htm)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, download the MUTT software package from <a href="mutt-software-package.md" data-raw-source="[this Web site](mutt-software-package.md)">this Web site</a> and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -64,7 +64,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 <td><p>You can write your first app in one of two ways:</p>
 <ul>
 <li><p>Write your app based on the WinUSB template included in Visual Studio. For more information, see <a href="how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md" data-raw-source="[Write a Windows desktop app based on the WinUSB template](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md)">Write a Windows desktop app based on the WinUSB template</a>.</p></li>
-<li><p>Call <a href="https://docs.microsoft.com/windows-hardware/drivers/install/setupapi" data-raw-source="[SetupAPI](https://docs.microsoft.com/windows-hardware/drivers/install/setupapi)">SetupAPI</a> routines to get a handle to your device and open it by calling <a href="https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize" data-raw-source="[&lt;strong&gt;WinUsb_Initialize&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize)"><strong>WinUsb_Initialize</strong></a>. For more information, see <a href="using-winusb-api-to-communicate-with-a-usb-device.md" data-raw-source="[How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)">How to Access a USB Device by Using WinUSB Functions</a>.</p></li>
+<li><p>Call <a href="/windows-hardware/drivers/install/setupapi" data-raw-source="[SetupAPI](../install/setupapi.md)">SetupAPI</a> routines to get a handle to your device and open it by calling <a href="/windows/win32/api/winusb/nf-winusb-winusb_initialize" data-raw-source="[&lt;strong&gt;WinUsb_Initialize&lt;/strong&gt;](/windows/win32/api/winusb/nf-winusb-winusb_initialize)"><strong>WinUsb_Initialize</strong></a>. For more information, see <a href="using-winusb-api-to-communicate-with-a-usb-device.md" data-raw-source="[How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)">How to Access a USB Device by Using WinUSB Functions</a>.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -99,7 +99,4 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 
 ## Related topics
 [Developing Windows applications for USB devices](developing-windows-applications-that-communicate-with-a-usb-device.md)  
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
-
-
-
+[Universal Serial Bus (USB)](../index.yml)

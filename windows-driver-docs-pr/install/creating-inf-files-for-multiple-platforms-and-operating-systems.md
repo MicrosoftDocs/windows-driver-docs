@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-By using system-defined platform extensions to [INF file sections and directives](inf-file-sections-and-directives.md), you can create a single INF file for cross-platform installations. The extensions enable you to create *decorated* section names, which specify which sections and directives are relevant to each target platform and operating system. For example, you can create an INF file that installs a device only on x64-based systems, only on Itanium-based systems, only on x86-based systems, or on all systems that are supported by Windows 2000 and later versions of Windows.
+By using system-defined platform extensions to [INF file sections and directives](./index.md), you can create a single INF file for cross-platform installations. The extensions enable you to create *decorated* section names, which specify which sections and directives are relevant to each target platform and operating system. For example, you can create an INF file that installs a device only on x64-based systems, only on Itanium-based systems, only on x86-based systems, or on all systems that are supported by Windows 2000 and later versions of Windows.
 
 The following table summarizes the system-supported platform extensions that can be added to the names of sections that support extensions.
 
@@ -93,10 +93,4 @@ For information about how to specify target operating systems through platform e
 For information about a sample INF file that can be used to install drivers in multiple operating system versions, see [Sample INF File for Device Installation on Multiple Versions of Windows](sample-inf-file-for-device-installation-on-multiple-versions-of-windows.md).
 
  
-
- 
-
-
-
-
 

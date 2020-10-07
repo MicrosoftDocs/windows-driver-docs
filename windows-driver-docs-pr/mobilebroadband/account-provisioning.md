@@ -659,7 +659,7 @@ An arbitrary binary large object (BLOB) that is contained inside the [**CarrierS
 </CarrierProvisioning>
 ```
 
-This method is equivalent to invoking the [**IMbnVendorSpecificOperation::SetVendorSpecific**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnvendorspecificoperation-setvendorspecific) method of the Mobile Broadband API, and passing a SAFEARRAY together with the BLOB contents.
+This method is equivalent to invoking the [**IMbnVendorSpecificOperation::SetVendorSpecific**](/windows/win32/api/mbnapi/nf-mbnapi-imbnvendorspecificoperation-setvendorspecific) method of the Mobile Broadband API, and passing a SAFEARRAY together with the BLOB contents.
 
 ### Force the mobile broadband device to reconnect to the network after provisioning completes
 

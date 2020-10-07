@@ -54,7 +54,7 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to deint
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>SampleFormat</strong></p></td>
-<td align="left"><p><strong>DXVA_SampleFieldInterleavedOddFirst</strong> enumerator in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a></p></td>
+<td align="left"><p><strong>DXVA_SampleFieldInterleavedOddFirst</strong> enumerator in <a href="/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>d3dFormat</strong></p></td>
@@ -165,7 +165,7 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to perfo
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>SampleFormat</strong></p></td>
-<td align="left"><p><strong>DXVA_SampleProgressiveFrame</strong> enumerator in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a> enumeration</p></td>
+<td align="left"><p><strong>DXVA_SampleProgressiveFrame</strong> enumerator in the <a href="/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a> enumeration</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>d3dFormat</strong></p></td>
@@ -189,8 +189,6 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to perfo
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

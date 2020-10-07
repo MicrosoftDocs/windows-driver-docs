@@ -100,7 +100,7 @@ if (SUCCEEDED(hr))
 
 In the preceding code example, variable `pIAsyncCallback` is a pointer to the caller's implementation of the [IPrintAsyncNotifyCallback](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifycallback) interface.
 
-In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychanne) method on [IPrintAsyncNotifyChannel](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel). For information about when to release a channel, see [Notification Channel](notification-channel.md).
+In some cases, you must release the bidirectional notification channel when you are done with it. To do this, call the [Release](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel) method on [IPrintAsyncNotifyChannel](/windows/win32/api/prnasnot/nn-prnasnot-iprintasyncnotifychannel). For information about when to release a channel, see [Notification Channel](notification-channel.md).
 
 ## Impersonation and Notification
 

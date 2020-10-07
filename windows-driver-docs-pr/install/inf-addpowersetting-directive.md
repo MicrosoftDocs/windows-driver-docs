@@ -255,7 +255,7 @@ The resource ID of the corresponding resource. In the case of a string, the *res
 <a href="" id="comment"></a>*Comment*  
 An optional value that can be used to aid debugging or to provide an additional comment about the setting. In the case of a string resource, the power manager does not combine or display the comment string with specified resource string.
 
-For more information about how to specify language-neutral registry values, see [Rendering Shell and Registry Strings](https://go.microsoft.com/fwlink/p/?linkid=70407).
+For more information about how to specify language-neutral registry values, see [Rendering Shell and Registry Strings](/previous-versions//ms776232(v=vs.85)).
 
 Examples
 --------
@@ -332,6 +332,4 @@ DC = 1
 [***DDInstall*.Interfaces**](inf-ddinstall-interfaces-section.md)
 
 [***DDInstall*.Services**](inf-ddinstall-services-section.md)
-
- 
 

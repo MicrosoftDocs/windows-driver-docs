@@ -51,7 +51,7 @@ The steps that a miniport driver completes to initialize a miniport adapter and 
 
 In a virtual machine, NDIS miniport drivers can manage either software-only resources as a virtual miniport, or they can manage a virtual NIC that represents hardware resources. The following table explains the differences between a virtual miniport and a virtual NIC.
 
-|   | Virtual miniport | Virtual NIC |
+|  Attribute | Virtual miniport | Virtual NIC |
 | --- | --- | --- |
 | Definition | An NDIS miniport driver that maps to a software-enumerated PnP device. | A NIC managed by the host OS hypervisor. The hypervisor makes the virtual machine think that it has some hardware, but no such hardware actually exists in the physical world. |
 | Has interrupts | No | Yes |

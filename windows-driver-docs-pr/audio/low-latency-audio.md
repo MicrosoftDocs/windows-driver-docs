@@ -96,7 +96,7 @@ Windows 10 has been enhanced in three areas to reduce latency:
    b. All the threads and interrupts that have been registered by the driver (using the new DDIs that are described in the section about driver resource registration).
    c. Some or all of the audio threads from the applications that request small buffers, as well as from all applications that share the same audio device graph (e.g. same signal processing mode) with any application that requested small buffers:
 4. AudioGraph callbacks on the streaming path.
-5. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](/windows/desktop/ProcThread/platform-work-queue-api) or [**MFCreateMFByteStreamOnStreamEx**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) and were tagged as "Audio" or "ProAudio".
+5. If the application uses WASAPI, then only the work items that were submitted to the [Real-Time Work Queue API](/windows/desktop/ProcThread/platform-work-queue-api) or [**MFCreateMFByteStreamOnStreamEx**](/windows/win32/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) and were tagged as "Audio" or "ProAudio".
 
 ## API Improvements
 
@@ -146,9 +146,9 @@ Starting in Windows 10 , WASAPI has been enhanced to:
 
 The above features will be available on all Windows devices. However, certain devices with enough resources and updated drivers will provide a better user experience than others.
 
-The above functionality is provided by a new interface, called [**IAudioClient3**](/windows/desktop/api/audioclient/nn-audioclient-iaudioclient3), which derives from [**IAudioClient2**](/windows/desktop/api/audioclient/nn-audioclient-iaudioclient2).
+The above functionality is provided by a new interface, called [**IAudioClient3**](/windows/win32/api/audioclient/nn-audioclient-iaudioclient3), which derives from [**IAudioClient2**](/windows/win32/api/audioclient/nn-audioclient-iaudioclient2).
 
-[**IAudioClient3**](/windows/desktop/api/audioclient/nn-audioclient-iaudioclient3) defines the following 3 methods:
+[**IAudioClient3**](/windows/win32/api/audioclient/nn-audioclient-iaudioclient3) defines the following 3 methods:
 
 |Method|Description|
 |--- |--- |
@@ -241,7 +241,7 @@ if (AUDCLNT_E_ENGINE_FORMAT_LOCKED == hr) {
 }
 ```
 
-Also, it is recommended for applications that use WASAPI to also use the [Real-Time Work Queue API](/windows/desktop/ProcThread/platform-work-queue-api) or the [**MFCreateMFByteStreamOnStreamEx**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) to create work items and tag them as Audio or Pro Audio, instead of their own threads. This will allow the OS to manage them in a way that will avoid interference non-audio subsystems. In contrast, all AudioGraph threads are automatically managed correctly by the OS. The following code snippet from the WASAPIAudio sample shows how to use the MF Work Queue APIs.
+Also, it is recommended for applications that use WASAPI to also use the [Real-Time Work Queue API](/windows/desktop/ProcThread/platform-work-queue-api) or the [**MFCreateMFByteStreamOnStreamEx**](/windows/win32/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstreamex) to create work items and tag them as Audio or Pro Audio, instead of their own threads. This will allow the OS to manage them in a way that will avoid interference non-audio subsystems. In contrast, all AudioGraph threads are automatically managed correctly by the OS. The following code snippet from the WASAPIAudio sample shows how to use the MF Work Queue APIs.
 
 ```cpp
 // Specify Source Reader Attributes
@@ -438,7 +438,8 @@ static struct
 See the following topics for more in-depth information regarding these structures:
 
 - [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS structure**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints)
-- [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
+- [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS2 structure**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2)
+ - [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT structure**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint)
 
 Also, the sysvad sample (<https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad>) shows how to use these properties, in order for a driver to declare the minimum buffer for each mode.
 

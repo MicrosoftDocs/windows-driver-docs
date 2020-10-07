@@ -50,7 +50,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     [Arduino Mega 2560 R3](https://go.microsoft.com/fwlink/p/?LinkId=733526) is used as the microcontroller for the test setup. This board can be purchased from the [Arduino store](https://go.microsoft.com/fwlink/p/?LinkId=733526).
 
-    ![arduino](images/arduino.png)
+    ![Shows the Arduino Mega 2560 R3 board.](images/arduino.png)
 
 -   **Power adapter for the microcontroller**.
 
@@ -141,7 +141,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     If the USB Type-C ConnEx did not come assembled, then continue with step 1. If your USB Type-C ConnEx has been assembled, then proceed to step 2.
 
-    **Caution**  ![caution](images/caution.png) This step must be performed carefully because the pins bend easily.
+    **Caution**  :::image type="icon" source="images/caution.png"::: This step must be performed carefully because the pins bend easily.
 
 
 
@@ -161,7 +161,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     After five seconds, the LCD display shows the current and voltage.
 
-    ![USB Type-C ConnEx before firmware boot](images/connexc-connect2.png)![USB Type-C ConnEx before firmware boot](images/connexc-connect3.png)
+    ![Shows the USB Type-C ConnEx with power, but nothing on the LCD display](images/connexc-connect2.png)![Shows the USB Type-C ConnEx with "4.27 V" and "-0.017A" on the LCD display.](images/connexc-connect3.png)
 
     If you do not the see display as shown in the previous image, make sure your have assembled the unit correctly.
 

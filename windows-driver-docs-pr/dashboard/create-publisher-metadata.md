@@ -1,8 +1,6 @@
 ---
 title: Create Publisher Driver Metadata
 description: Describes the API call to create publisher driver package metadata for Partner Center submissions.
-author: VanathiGanesh
-ms.author: vaganesh
 ms.topic: article
 ms.date: 11/06/2019
 ---
@@ -19,10 +17,9 @@ If you have not done so already, complete all the [prerequisites](dashboard-api.
 
 This method has the following syntax. See the following sections for usage examples and descriptions of the header and request body.
 
-
 | Method | Request URI                                                                                                    |
 |:-------|:---------------------------------------------------------------------------------------------------------------|
-| POST   | https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/createpublishermetadata |
+| POST   | `https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productID}/submissions/{submissionID}/createpublishermetadata`|
 
 ### Request header
 

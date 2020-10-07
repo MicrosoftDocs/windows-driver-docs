@@ -18,4 +18,4 @@ The Native 802.11 Wireless LAN interface was superceded in Windows 10 and later 
 
 [WLAN Universal Driver Model](wifi-universal-driver-model.md)
 
-[Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
+[Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)

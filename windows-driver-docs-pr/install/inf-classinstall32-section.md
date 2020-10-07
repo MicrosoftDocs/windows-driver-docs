@@ -217,7 +217,7 @@ HKR,,Icon,,"101"
 
 [**RenFiles**](inf-renfiles-directive.md)
 
-[**SetupDiBuildClassInfoListEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdibuildclassinfolistexa)
+[**SetupDiBuildClassInfoListEx**](/windows/win32/api/setupapi/nf-setupapi-setupdibuildclassinfolistexa)
 
 [**UpdateIniFields**](inf-updateinifields-directive.md)
 

@@ -17,7 +17,7 @@ This section describes kernel-mode Windows Management Instrumentation (WMI) exte
 
 For more information about the user-mode WMI API, refer to [Windows Management Instrumentation](/windows/desktop/WmiSdk/wmi-start-page) in the Windows SDK.
 
-If you are implementing a KMDF-based driver, refer to [Supporting WMI in Framework-Based Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/supporting-wmi-in-kmdf-drivers).
+If you are implementing a KMDF-based driver, refer to [Supporting WMI in Framework-Based Drivers](../wdf/introduction-to-wmi-for-kmdf-drivers.md).
 
 This section includes the following information about kernel-mode WMI:
 
@@ -46,6 +46,4 @@ This section includes the following information about kernel-mode WMI:
 [WMI Event Tracing](wmi-event-tracing.md)
 
 [Testing and Troubleshooting WMI Driver Support](general-techniques-for-testing-wmi-driver-support.md)
-
- 
 

@@ -26,7 +26,7 @@ The host sends MBIM_CID_MS_DEVICE_RESET to the MBIM function to reset the modem 
 
 ### Parameters
 
-|   | Set | Query | Notification |
+|  Type | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Empty | Not applicable | Not applicable |
 | Response | Empty | Not applicable | Not applicable |

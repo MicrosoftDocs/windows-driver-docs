@@ -34,7 +34,7 @@ The URL can be a link to the root of the vendor website, a webpage within a webs
 http://www.microsoft.com/redirect?prod=DSC530&rev=34
 ```
 
-You can set the value of DEVPKEY_DrvPkg_VendorWebSite by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF DDInstall section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_VendorWebSite by calling [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
+You can set the value of DEVPKEY_DrvPkg_VendorWebSite by an [**INF AddProperty directive**](./inf-addproperty-directive.md) that is included in the [**INF DDInstall section**](./inf-ddinstall-section.md) of the INF file that installs the device. You can retrieve the value of DEVPKEY_DrvPkg_VendorWebSite by calling [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw).
 
 The following is an example of how to use an INF **AddProperty** directive to set the DEVPKEY_DrvPkg_VendorWebSite property value for a device that is installed by an INF *DDInstall* section "SampleDDInstallSection":
 
@@ -62,4 +62,4 @@ DeviceVendorWebsite,,,,"http://www.microsoft.com/redirect?prod=DSC530&rev=34"
 
 [**INF *DDInstall* Section**](./inf-ddinstall-section.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
