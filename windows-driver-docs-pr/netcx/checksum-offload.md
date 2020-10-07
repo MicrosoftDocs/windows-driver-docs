@@ -46,7 +46,7 @@ During the call to **NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT** the cli
 
 ### Rules for indicating hardware transmit checksum capabilities
 
-1. The Layer3Flags and Layer4Flags in the [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_tx_checksum_capabilities) structure must be set. This indicates the packets on which the NIC is capable of performing checksum offload.
+1. The Layer3Flags in the [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_tx_checksum_capabilities) structure must be set. Setting the Layer4Flags is optional. Setting Layer3Flags and Layer4Flags indicates the packets on which the NIC is capable of performing checksum offload.
 2. The Layer3HeaderOffsetLimit and Layer4HeaderOffsetLimit in **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES** are optional. If the OS sends a packet with a header offset greater than the limit specified, it won't request the NIC to calculate the checksum for that layer.
 3. IP/TCP packets without options/extensions must be supported if options/extensions are supported.
 
@@ -70,7 +70,6 @@ MyAdapterSetOffloadCapabilities(
         NetAdapterOffloadLayer3FlagIPv6NoExtensions |
         NetAdapterOffloadLayer3FlagIPv6WithExtensions;
 
-    // Layer4Flags are optional
     auto const layer4Flags = NetAdapterOffloadLayer4FlagTcpNoOptions |
         NetAdapterOffloadLayer4FlagTcpWithOptions |
         NetAdapterOffloadLayer4FlagUdp;
