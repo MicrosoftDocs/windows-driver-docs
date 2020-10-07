@@ -31,24 +31,30 @@ Client drivers first advertise their hardware's checksum offload capabilities du
 To configure transmit (Tx) checksum offload, the client driver:
 
 1. Allocates a [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_offload_tx_checksum_capabilities) structure.
-2. Calls [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_tx_checksum_capabilities_init) to initialize the structure.
-3. Calls [**NetAdapterOffloadSetTxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadtxsetchecksumcapabilities) to register the structure with NetAdapterCx.
+
+1. Calls [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_tx_checksum_capabilities_init) to initialize the structure.
+
+1. Calls [**NetAdapterOffloadSetTxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadtxsetchecksumcapabilities) to register the structure with NetAdapterCx.
  
 During the call to **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_TX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_tx_checksum) callback. The system invokes this callback later if active offload capabilities change.
 
 To configure receive (Rx) checksum offload, the client driver:
 
 1. Allocates a [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_offload_rx_checksum_capabilities) structure.
-2. Calls [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_rx_checksum_capabilities_init) to initialize the structure.
-3. Calls [**NetAdapterOffloadSetRxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadsetrxchecksumcapabilities) to register the structure with NetAdapterCx.
+
+1. Calls [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_rx_checksum_capabilities_init) to initialize the structure.
+
+1. Calls [**NetAdapterOffloadSetRxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadsetrxchecksumcapabilities) to register the structure with NetAdapterCx.
 
 During the call to **NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_RX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_rx_checksum) callback. The system invokes this callback later if active offload capabilities change.
 
 ### Rules for indicating hardware transmit checksum capabilities
 
 1. The Layer3Flags in the [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_tx_checksum_capabilities) structure must be set. Setting the Layer4Flags is optional. Setting the Layer3Flags and Layer4Flags indicates the packets on which the NIC is capable of performing checksum offload.
-2. The Layer3HeaderOffsetLimit and Layer4HeaderOffsetLimit in **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES** are optional. If the OS sends a packet with a header offset greater than the limit specified, it won't request the NIC to calculate the checksum for that layer.
-3. IP/TCP packets without options/extensions must be supported if options/extensions are supported.
+
+1. The Layer3HeaderOffsetLimit and Layer4HeaderOffsetLimit in **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES** are optional. If the OS sends a packet with a header offset greater than the limit specified, it won't request the NIC to calculate the checksum for that layer.
+
+1. IP/TCP packets without options/extensions must be supported if options/extensions are supported.
 
 ### Rules for indicating hardware receive checksum capabilities
 
