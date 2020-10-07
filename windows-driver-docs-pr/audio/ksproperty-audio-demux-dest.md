@@ -64,7 +64,7 @@ A KSPROPERTY\_AUDIO\_DEMUX\_DEST property request returns STATUS\_SUCCESS to ind
 Remarks
 -------
 
-The pin ID identifies a logical pin on the DEMUX node. For a discussion of pin IDs for logical pins on a node inside a filter, see [**PCCONNECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcconnection_descriptor).
+The pin ID identifies a logical pin on the DEMUX node. For a discussion of pin IDs for logical pins on a node inside a filter, see [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)).
 
 Requirements
 ------------
@@ -89,5 +89,5 @@ Requirements
 
 [**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
-[**PCCONNECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcconnection_descriptor)
+[**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85))
 

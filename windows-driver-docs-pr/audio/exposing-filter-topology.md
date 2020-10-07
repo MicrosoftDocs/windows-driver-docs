@@ -24,7 +24,7 @@ A miniport driver describes the internal topology of a KS filter in terms of pin
 
 -   Nodes are specified in a static array of [**PCNODE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcnode_descriptor) structures. Each node has an ID that is its ordinal in the array.
 
--   Connections (pin-to-pin, pin-to-node, or node-to-node) are specified in a static array of [**PCCONNECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcconnection_descriptor) structures.
+-   Connections (pin-to-pin, pin-to-node, or node-to-node) are specified in a static array of [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)) structures.
 
 The miniport driver exposes these three arrays in the [**PCFILTER\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor) structure that it outputs from its [**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method.
 

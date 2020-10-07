@@ -33,9 +33,9 @@ The host and target computers must be able to ping each other by name. This migh
 
 5. If the target computer is running an N or KN version of Windows, install the Media Feature Pack for N and KN versions of Windows:
 
-    - [Media Feature Pack for N and KN versions of Windows 8.1](https://go.microsoft.com/fwlink/p?linkid=329737)
-    - [Media Feature Pack for N and KN versions of Windows 8](https://go.microsoft.com/fwlink/p?linkid=329738)
-    - [Media Feature Pack for N and KN versions of Windows 7](https://go.microsoft.com/fwlink/p?linkid=329739)
+    - [Media Feature Pack for N and KN versions of Windows 10](https://www.microsoft.com/download/details.aspx?id=48231)
+    - [Media Feature Pack for N and KN versions of Windows 8.1](https://www.microsoft.com/download/details.aspx?id=40744)
+    - [Media Feature Pack for N and KN versions of Windows 8](https://www.microsoft.com/download/details.aspx?id=30685)
 
 6. If your target computer is running Windows Server, find the DriverTest folder that was just created by WDK Test Target Setup MSI. (Example: c:\\DriverTest). Select and hold (or right-click) the **DriverTest** folder, and choose **Properties**. On the **Security** tab, give **Modify** permission to the **Authenticated Users** group.
 
@@ -68,7 +68,7 @@ Now you're ready to provision the target computer from the host computer in Visu
 
 6. The provisioning process takes several minutes and might automatically reboot the target computer once or twice. When provisioning is complete, select **Finish**.
 
-> [!TIP]
+> [!NOTE]
 > Provisioning virtual machines through the WDK's automatic provisioning process is not supported. However, you can test drivers on a VM by setting up the target VM manually as described in the [step by step echo lab](../debugger/debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md).
 
 ## See Also

@@ -1,6 +1,6 @@
 ---
 title: Device Metadata Authoring Wizard
-description: The Device Metadata Authoring Wizard is a tool that device manufacturers and service operators can use to develop a metadata package for their devices and services.
+description: Device manufacturers and service operators use the Device Metadata Authoring Wizard to create a metadata package for their devices and services.
 ms.assetid: 2e7beadc-66b2-4421-9f4e-1bdd06c70065
 keywords:
 - Device Metadata Authoring Wizard help
@@ -13,7 +13,8 @@ ms.localizationpriority: medium
 
 # Device Metadata Authoring Wizard
 
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you're developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://www.microsoft.com/download/details.aspx?id=42273). \]
+>[!NOTE]
+>This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. To developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://www.microsoft.com/download/details.aspx?id=42273).
 
 ## Purpose
 

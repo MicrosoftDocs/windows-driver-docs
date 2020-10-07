@@ -46,7 +46,7 @@ An audio filter exposes the structure of the underlying audio device as a collec
 
 [**PCNODE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-pcnode_descriptor)
 
-[**PCCONNECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcconnection_descriptor)
+[**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85))
 
 To obtain the filter descriptor from the miniport driver, the port driver calls the [**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method.
 

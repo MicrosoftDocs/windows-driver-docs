@@ -24,7 +24,7 @@ This guide demonstrates how to write a NFC functional driver using the NFC Class
 
 ## Prerequisites
 
-* Your NFC Controller's firmware must implement the NFC Forum's [NFC Controller Interface (NCI)](https://nfc-forum.org/our-work/specifications-and-application-documents/specifications/nfc-controller-interface-nci-specification/) protocol.
+* Your NFC Controller's firmware must implement the NFC Forum's [NFC Controller Interface (NCI)](https://nfc-forum.org/our-work/specification-releases/specifications/) protocol.
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_content=download+vs2017) (or later).
 * The [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 * The [Windows 10 Driver Kit (WDK)](../download-the-wdk.md).

@@ -76,7 +76,7 @@ Note that this list can omit any unimplemented effects as long as the relative o
 
 ### <span id="AEC_Node_Pin_Assignments"></span><span id="aec_node_pin_assignments"></span><span id="AEC_NODE_PIN_ASSIGNMENTS"></span>AEC Node Pin Assignments
 
-An adapter driver uses an array of [**PCCONNECTION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcconnection_descriptor) structures to specify the connections within a filter. Each array element describes one connection, which can be node-to-node, node-to-pin, or pin-to-pin. For details, see [Nodes and Connections](nodes-and-connections.md).
+An adapter driver uses an array of [**PCCONNECTION\_DESCRIPTOR**](/previous-versions/windows/hardware/drivers/ff537688(v=vs.85)) structures to specify the connections within a filter. Each array element describes one connection, which can be node-to-node, node-to-pin, or pin-to-pin. For details, see [Nodes and Connections](nodes-and-connections.md).
 
 To use the PCCONNECTION\_DESCRIPTOR structure, the driver writer assigns "logical" pins to nodes. These are "pins" on the nodes themselves and are used solely to specify the connections inside the filter. This is in contrast to the external pins on the filter, which are used to connect to other filters.
 
