@@ -49,10 +49,10 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
    <td><p>Enter a partner that you want to have read-only permissions to your driver and shipping label. Use this field when you want a partner to be aware of this shipping label request, such as when you publish a driver on their behalf. For more information, see <a href="/previous-versions/mt786462(v=vs.85)" data-raw-source="[Publish a driver on behalf of a partner](/previous-versions/mt786462(v=vs.85))">Publish a driver on behalf of a partner</a>.</p></td>
    </tr>
    <tr class="odd">
-   <td><p><strong>Driver promotions</strong></p></td>
-   <td><p>By default, drivers on Windows Update are marked as Optional. This means that a driver is only delivered if the device does not have a driver installed already. These options allow you to override the default behavior but require additional Microsoft evaluation.</p>
-   <p>Select <strong>Automatically deliver and install this driver during Windows Upgrade</strong> to promote your driver to be available for Dynamic Update.</p>
-   <p>Select <strong>Automatically deliver and install this driver on all applicable systems</strong> to promote your driver to Critical.</p></td>
+   <td><p><strong>Driver Delivery Options</strong></p></td>
+   <td><p>By default, drivers on Windows Update are marked as <strong>Automatic</strong>. This means that a driver is delivered automatically on upgrades and for every applicable system. When selecting only <strong>‘Automatically delivered during Windows Updates’</strong> the driver is defined as Dynamic Driver and will be delivered only during OS upgrades, while selecting only <strong>‘Automatically delivered to all applicable systems’</strong> will deliver the driver immediately to all applicable systems once it is released.</p>
+   <p>When selecting <strong>Manual</strong>, in Windows version 1909 and down-level the driver is automatically delivered only if the device does not have a driver installed already or only a generic driver.</p>
+   <p>Starting with Windows 10 version 2004 drivers with <strong>Manual</strong> shipping label will not be automatically delivered in any scenario. To access the best matching Optional driver user has to go to <strong>‘Settings > Update & Security > Windows Update > View optional updates > Driver updates‘</strong>.</p></td>
    </tr>
    </tbody>
    </table>
