@@ -19,39 +19,49 @@ Under the Automatic option there are two checkboxes: **Automatically delivered d
 
 ![Automatic driver promotions checkboxes](images/driver-delivery-options.png)
 
-If you select the first checkbox, the driver is classified as **Dynamic Update** (a term that applies to *upgrade* scenarios). Windows will then automatically preload this driver when upgrading the OS.
+When the first checkbox is selected, the driver is classified as **Dynamic Update** (a term that applies to *upgrade* scenarios). Windows will then automatically preload this driver when upgrading the OS.
 
-If you select the second checkbox, the driver is classified as **Automatic** (formerly known as **Critical update**); if you don't, the driver is classified as **Optional**.  In order to be published to Windows Update as **Automatic**, the driver must first have been evaluated by Microsoft through [Driver Flighting](driver-flighting.md).
+When the second checkbox is selected, the driver will be downloaded and installed automatically on all applicable systems once it is released. All Automatic drivers must first have been evaluated by Microsoft through [Driver Flighting](driver-flighting.md).
+
+If you like to publish the driver as Optional/Manual, you should select the **Manual** radio button.
 
 ## Automatic updates
 
-During a scheduled update or when a user selects **Check for updates** in the **Updates & Security** settings menu, Windows Update distributes only the highest-ranking **Automatic drivers** that apply to the system's devices. An **Automatic driver** is a system or inbox-provided driver that provides basic device functionality. Windows Update will only distribute **Optional** drivers in these scenarios if:
+During a scheduled update or when a user selects **Check for updates** in the **Updates & Security** settings menu, Windows Update distributes only the highest-ranking **Automatic drivers** that apply to the system's devices.
 
-* A device has no applicable drivers available in the Driver Store ("Driver Not Found")
-* Or *if the only locally available driver is generic*, that is, the only locally available driver is a system-provided driver that provides only basic device functionality.
+## Optional/Manual updates
+
+In Windows version 1909 and down-level, Windows Update will automatically distribute **Optional** drivers in the following scenarios:
+* A device has no applicable drivers available in the Driver Store ("Driver Not Found"), and there is no applicable **Automatic** driver
+* Or *if the only locally available driver is generic*. That is, the only locally available driver is a system-provided driver that provides only basic device functionality, and there is no applicable **Automatic** driver
 
 ## Device plug-in ("Plug and Play")
 
-When a device is connected to a Windows system, [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available locally on the system. If one exists, Windows installs it on the device. Otherwise, Windows looks on Windows Update for a compatible driver, first matching the highest ranking **Automatic** driver on Windows Update. If no **Automatic** driver is available for the device, Windows proceeds to the highest ranking **Optional** driver.
+When a device is connected to a Windows system, [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available locally on the system. If one exists, Windows installs it on the device. Otherwise, Windows looks on Windows Update for a compatible driver, first matching the highest-ranking **Automatic** driver on Windows Update.
 
-The same logic applies when a plugged-in device has no applicable drivers available in the Driver Store ("Driver Not Found") or if the only locally available driver is *generic*.
+In Windows version 1909 and down-level, if no **Automatic** driver is available for the device, Windows proceeds to the highest-ranking **Optional** driver.
+
+In Windows 10 version 2004 and greater, Windows will not search for an **Optional** driver when Automatic driver is not available. **Optional/Manual** drivers could be access only manually by the user here: *‘Settings > Update & Security > Windows Update > View optional updates > Driver updates’*.
 
 ## Device manager
 
-When a user searches for updated drivers in Device Manager, Windows attempts to install the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Optional**.
+In Windows version 1909 and down-level, when a user searches for updated drivers in Device Manager, Windows attempts to install the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Optional**.
+
+In Windows 10 version 2004 and greater, user could search driver updates only locally from Device Manager. Any online search could be done from the *Windows Update Settings page*.
 
 ## Summary
 
 Here's a table that summarizes the information above.
 
-The first column indicates which of the two checkboxes in the **Driver promotions** section are checked.
-The first checkbox (**Automatically deliver and install this driver during Windows Upgrade**) is indicated by Dynamic Update, and the second (**Automatically deliver and install this driver on all applicable systems**) is indicated by Automatic. Windows Update is abbreviated WU.
+The first column indicates the selection state in the **Driver Delivery Options** section. The first checkbox (**Automatically delivered during Windows Updates**) is indicated by Dynamic Update, and the second (**Automatically delivered to all applicable systems**) is indicated by Regular Automatic Update. Manual indicates Optional drivers, and Windows Update is abbreviated WU.
 
-|Driver promotions boxes checked|Windows Update (scheduled or via Updates & Security|OS Upgrades|Connect New Device|Device Manager|
-|-|-|-|-|-|
-|Automatic only|Yes|No|Only if the local driver is generic/ missing.|Yes|
-|Dynamic Update only|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|
-|Both|Yes|Yes|Only if the local driver is generic/ missing.|Yes|
-|Neither|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|No|Only if the local driver is generic/ missing, and WU has no applicable **Automatic** driver|Yes|
+|Driver Delivery Options|OS Upgrades|Connect New Device|Device Manager|Windows Update daily scan or ‘Check for Updates’ button|Windows Update Optional page|
+|-|-|-|-|-|-|
+|Automatic (default)|Yes|Only if the local driver is generic or missing|Only in Windows version 1909 and down-level|Yes|No|
+|Regular Automatic Update only|No|Only if the local driver is generic or missing|Only in Windows version 1909 and down-level|Yes|No|
+|Dynamic Update only|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Only in Windows version 1909 and down-level|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
+| | | | | | |
+|Manual in Windows version 1909 and down-level|No|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
+|Manual in Windows 10 version 2004 and greater|No|No|No|No|No|
 
 <!--use word generic? or just condense descriptive text?-->
