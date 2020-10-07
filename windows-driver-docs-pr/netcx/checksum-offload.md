@@ -65,14 +65,14 @@ MyAdapterSetOffloadCapabilities(
     // Configure the hardware's Tx checksum offload capabilities
     NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES txChecksumOffloadCapabilities;
 
-    auto const layer3Flags = NetAdapterOffloadFlagIPv4WithoutOptions |
-        NetAdapterOffloadFlagIPv4WithOptions |
-        NetAdapterOffloadFlagIPv6WithoutExtensions |
-        NetAdapterOffloadFlagIPv6WithExtensions;
+    auto const layer3Flags = NetAdapterOffloadLayer3FlagIPv4NoOptions |
+        NetAdapterOffloadLayer3FlagIPv4WithOptions |
+        NetAdapterOffloadLayer3FlagIPv6NoExtensions |
+        NetAdapterOffloadLayer3FlagIPv6WithExtensions;
 
-    auto const layer4Flags = NetAdapterOffloadFlagTcpWithoutOptions |
-        NetAdapterOffloadFlagTcpWithOptions |
-        NetAdapterOffloadFlagUdp;
+    auto const layer4Flags = NetAdapterOffloadLayer4FlagTcpNoOptions |
+        NetAdapterOffloadLayer4FlagTcpWithOptions |
+        NetAdapterOffloadLayer4FlagUdp;
 
     NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT(
         &txChecksumOffloadCapabilities,
