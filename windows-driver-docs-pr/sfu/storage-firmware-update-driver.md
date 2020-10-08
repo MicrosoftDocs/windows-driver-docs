@@ -100,7 +100,7 @@ Submit your extension INF package as a separate driver submission.
 
 Many device types, however, do not allow a single physical device to enumerate more than one device node. In this case, use an extension INF that specifies the [AddComponent](/windows-hardware/drivers/install/inf-addcomponent-directive) directive to create a device node that can be targeted by Windows Update and install the firmware update driver on it. The following snippet from an INF file shows how you can do this:
 
-```INF
+```inf
 [Manufacturer]
 %Contoso%=Standard,NTamd64
 [Standard.NTamd64]
@@ -131,7 +131,7 @@ Submit your firmware package as a separate driver submission.
 
 The drive firmware update package INF targets the new node **SWC\StorageIHVabcd-firmwareupdate** and invokes the Windows 10 storage firmware update driver. For a software-enumerated component device to function, its parent must be started. In order to use StorFwUpdate drive, developers should use the Include/Needs INF directives in the [DDInstall section](/windows-hardware/drivers/install/inf-ddinstall-section) for each possible `[DDInstall.*]` section to the corresponding `[StorFwUpdate.*]` sections as shown below, regardless of whether the INF specifies any directives for that section or not:
 
-```INF
+```inf
 [StorFwUpdateOem.NT]
 Include            = StorFwUpdate.inf
 Needs              = StorFwUpdate.NT
@@ -238,17 +238,25 @@ For information about deployment, see [Windows 10 Driver Publishing Workflow (DO
 
 The following is an example extension INF file:
 
-```INF
+```inf
 ;/*++
 ;
-;Copyright (c) Microsoft Corporation.  All rights reserved.
+;  Copyright (c) Microsoft Corporation.  All rights reserved.
 ;
-;Module Name:
-;    OEMDiskExtnPackage.inx
+;      THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+;      KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+;      IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+;      PURPOSE.
 ;
-;Abstract:
-;    INF file for installing the OEMDiskExtnPackage. This will create a SWC\ DevNode
-;    which will service as the target HWID for the Disk storage firmware package.
+;  File:
+;
+;      OEMDiskExtnPackage.inx
+;
+;  Description:
+;
+;      INF file for installing the OEMDiskExtnPackage. This will create a SWC\ DevNode
+;      which will service as the target HWID for the Disk storage firmware package.
+;
 ;--*/
 
 [Version]
@@ -329,13 +337,24 @@ SERVICE_ERROR_CRITICAL = 0x3
 
 The following is an example disk firmware INF file:
 
-```INF
+```inf
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; File:               StorageIHV3-Firmware-Update.inx
 ;
-; Description:        Driver installation file for firmware update.
+;  Copyright (c) Microsoft Corporation.  All rights reserved.
 ;
-; Copyright (C) Microsoft Corporation.  All Rights Reserved.
+;      THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
+;      KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+;      IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR
+;      PURPOSE.
+;
+;   File:
+;
+;      StorageIHV3-Firmware-Update.inx
+;
+;   Description:
+;
+;      Driver installation file for firmware update.
+;
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
