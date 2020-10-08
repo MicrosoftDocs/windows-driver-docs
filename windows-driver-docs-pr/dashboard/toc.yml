@@ -38,6 +38,8 @@
       href: overview-of-microsoft-driver-measure-dictionary.md
     - name: "Driver measure attributes"
       href: measure-attributes.md
+    - name: "Cohort Failure Report"
+      href: IDR-cohort-report.md
     - name: "Systemic measures"
       items:
       - name: "Driver installation measures"

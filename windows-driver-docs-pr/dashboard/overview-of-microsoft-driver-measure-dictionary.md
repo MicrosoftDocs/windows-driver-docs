@@ -77,3 +77,5 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 [Wi-Fi measures](wi-fi-measures.md)
 
 [Glossary](measures-glossary.md)
+
+[Cohort Failure Report](IDR-cohort-report.md)
