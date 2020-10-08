@@ -4,37 +4,51 @@ description: Generic Segmentation Offload usage, rules, and example
 ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Generic segmentation offload, GSO, Large Segmentation Offload, LSO, UDP Segmentation Offload, USO
-ms.date: 01/18/2019
-ms.custom: 19H1
+ms.date: 10/08/2020
+ms.custom: Fe
 ---
 
 # Generic Segmentation Offload
 
-Generic Segmentation Offload (GSO) is a term that collectively represents Large Send Offload (LSO) and UDP Send Offload (USO).  Client drivers that can offload the segmentation of large TCP/UDP packets that are larger than the maximum transmission unit (MTU) of the network medium must indicate their capability to NetAdapterCx using the GSO APIs.
+Generic Segmentation Offload (GSO) collectively represents [Large Send Offload (LSO)](../network/offloading-the-segmentation-of-large-tcp-packets.md) and [UDP Send Offload (USO)](../network/udp-segmentation-offload-uso-.md). Client drivers that can offload the segmentation of TCP/UDP packets that are larger than the maximum transmission unit (MTU) of the network medium must indicate their capability to NetAdapterCx using the GSO APIs.
 
-Refer [Offloading the Segmentation of Large TCP Packets](https://docs.microsoft.com/windows-hardware/drivers/network/offloading-the-segmentation-of-large-tcp-packets) for more details on LSO.
+## INF keywords for controlling generic segmentation offload
 
-Refer [UDP Segmentation Offload (USO)](https://docs.microsoft.com/windows-hardware/drivers/network/udp-segmentation-offload-uso-) for more details on USO.
+NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities. The driver doesn't need to take any further action.
 
-## INF keywords for controlling checksum offload
+The LSO keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the LSO offload with a registry key setting.
 
-The driver doesn't need to worry about checking standard registry keywords. NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities.
-
-The LSO keywords specified in [Using Registry Values to Enable and Disable Task Offloading](https://docs.microsoft.com/windows-hardware/drivers/network/using-registry-values-to-enable-and-disable-task-offloading) can be used to enable/disable the LSO offload with a registry key setting.
-
-The USO keywords specified in [UDP Segmentation Offload (USO)](https://docs.microsoft.com/windows-hardware/drivers/network/udp-segmentation-offload-uso-) can be used to enable/disable the USO offload with a registry key setting.
+The USO keywords specified in [UDP Segmentation Offload (USO)](../network/udp-segmentation-offload-uso-.md) can be used to enable/disable the USO offload with a registry key setting.
 
 ## Configuring hardware offloads
 
-Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within the context of [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) when starting a net adapter. To get started, the client driver allocates a capabilities structure for the GSO offload, initialize it, and calls the [**NetAdapterOffloadSetGsoCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetgsocapabilities) method to register it with NetAdapterCx. During the call to [**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-net_adapter_offload_gso_capabilities_init), the driver provides a pointer to a callback function that the system invokes later if active GSO capabilities change.
+Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
+
+To configure GSO, the client driver:
+
+1. Allocates a [**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_gso_capabilities) structure.
+
+1. Calls [**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-net_adapter_offload_gso_capabilities_init) to initialize the structure.
+
+1. Calls [**NetAdapterOffloadSetGsoCapabilities**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetgsocapabilities) to register the structure with NetAdapterCx.
+
+During the call to **NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_GSO*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_gso)callback. The system invokes this callback later if active offload capabilities change.
 
 ### Rules for indicating hardware GSO capabilities
-1. If Large Send Offload (LSO) is supported by the NIC, the driver must populate the TcpFlags field of the NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES with the types of packets it can perform LSO on.
-2. If UDP Send Offload (USO) is supported by the NIC, the driver must populate the UdpFlags field of the NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES with the types of packets it can perform USO on.
-3. MaximumOffloadSize and MinimumSegmentCount are mandatory fields.
-2. The layer 4 header offset limit is optional. If the OS sends a packet with a header offset larger than the specified limit, it will not ask for GSO to be performed. 
-2. IP/TCP packets without options/extensions must be supported if options/extensions are supported.
-3. Layer 3 flags must be set if layer 4 flags are set.
+
+The following rules apply to the [**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_gso_capabilities) structure:
+
+1. If LSO is supported by the NIC, the driver must populate the **Layer4Flags** field with the types of packets it can perform LSO on.
+
+1. If USO is supported by the NIC, the driver must populate the **Layer4Flags** field with the types of packets it can perform USO on.
+
+1. **MaximumOffloadSize** and **MinimumSegmentCount** are mandatory fields.
+
+1. The **Layer4OffsetLimit** field is optional. If the OS sends a packet with a header offset larger than the specified limit, it won't ask for GSO to be performed.
+
+1. IP/TCP packets without options/extensions must be supported if options/extensions are supported.
+
+1. **Layer3Flags** must be set if **Layer4Flags** are set.
 
 This example shows how a client driver might set up its hardware offload capabilities.
 
@@ -47,18 +61,18 @@ MyAdapterSetOffloadCapabilities(
     // Configure the hardware's GSO offload capabilities
     NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES gsoOffloadCapabilities;
 
-    auto const tcpFlags = NetAdapterOffloadFlagIPv4WithoutOptions |
-        NetAdapterOffloadFlagIPv4WithOptions |
-        NetAdapterOffloadFlagIPv6WithoutExtensions |
-        NetAdapterOffloadFlagIPv6WithExtensions |
-        NetAdapterOffloadFlagTcpWithoutOptions |
-        NetAdapterOffloadFlagTcpWithOptions;
+    auto const tcpFlags = NetAdapterOffloadLayer3FlagIPv4NoOptions |
+        NetAdapterOffloadLayer3FlagIPv4WithOptions |
+        NetAdapterOffloadLayer3FlagIPv6NoExtensions |
+        NetAdapterOffloadLayer3FlagIPv6WithExtensions |
+        NetAdapterOffloadLayer4FlagTcpNoOptions |
+        NetAdapterOffloadLayer4FlagTcpWithOptions;
 
-    auto const udpFlags = NetAdapterOffloadFlagIPv4WithoutOptions |
-        NetAdapterOffloadFlagIPv4WithOptions |
-        NetAdapterOffloadFlagIPv6WithoutExtensions |
-        NetAdapterOffloadFlagIPv6WithExtensions |
-        NetAdapterOffloadFlagUdp;
+    auto const udpFlags = NetAdapterOffloadLayer3FlagIPv4NoOptions |
+        NetAdapterOffloadLayer3FlagIPv4WithOptions |
+        NetAdapterOffloadLayer3FlagIPv6NoExtensions |
+        NetAdapterOffloadLayer3FlagIPv6WithExtensions |
+        NetAdapterOffloadLayer4FlagUdp;
 
     NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT(
         &gsoOffloadCapabilities,
@@ -68,6 +82,28 @@ MyAdapterSetOffloadCapabilities(
         EvtAdapterOffloadSetGso);
 
     gsoOffloadCapabilities.UdpFlags = udpFlags;
+    gsoOffloadCapabilities.Layer4OffsetLimit = 127;
+
+    // Configure the hardware's GSO offload capabilities
+    NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES gsoOffloadCapabilities;
+
+    auto const layer3Flags = NetAdapterOffloadLayer3FlagIPv4NoOptions |
+        NetAdapterOffloadLayer3FlagIPv4WithOptions |
+        NetAdapterOffloadLayer3FlagIPv6NoExtensions |
+        NetAdapterOffloadLayer3FlagIPv6WithExtensions;
+
+    auto const layer4Flags = NetAdapterOffloadLayer4FlagTcpNoOptions |
+        NetAdapterOffloadLayer4FlagTcpWithOptions;
+        NetAdapterOffloadLayer4FlagUdp;
+
+    NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT(
+        &gsoOffloadCapabilities,
+        layer3Flags,
+        layer4Flags,
+        MY_GSO_OFFLOAD_MAX_SIZE,
+        MY_GSO_OFFLOAD_MIN_SEGMENT_COUNT,
+        EvtAdapterOffloadSetGso);
+
     gsoOffloadCapabilities.Layer4OffsetLimit = 127;
 
     // Set the current GSO offload capabilities and register the callback for future changes in active capabilities
@@ -104,13 +140,3 @@ MyEvtAdapterOffloadSetGso(
 	MyUpdateHardwareChecksum(adapterContext);
 }
 ```
-
-## Related links
-
-[**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_gso_capabilities)
-
-[**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-net_adapter_offload_gso_capabilities_init)
-
-[**NetAdapterOffloadSetGsoCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetgsocapabilities)
-
-[*EvtNetAdapterOffloadSetGso*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_gso)
