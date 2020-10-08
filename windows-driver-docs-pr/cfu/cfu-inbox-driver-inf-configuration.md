@@ -246,7 +246,7 @@ During the protocol transaction, the CFU inbox driver writes registry entries to
   ; Description:    Sample Driver INF file for Cfu Virtual Hid Device firmware update.
   ;
   ; Copyright (C) Microsoft Corporation.  All Rights Reserved.
-  ; Licensed under the MIT license.
+  ;
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   
   [Version]

@@ -336,7 +336,7 @@ The following is an example disk firmware INF file:
 ; Description:        Driver installation file for firmware update.
 ;
 ; Copyright (C) Microsoft Corporation.  All Rights Reserved.
-; Licensed under the MIT license.
+;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 [Version]
