@@ -22,7 +22,7 @@ Turning off checksum offloads when [Generic Segmentation Offload](gso-offload.md
 
 NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities. The driver doesn't need to take any further action.
 
-The checksum keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the checksum offload with a registry key setting.
+The checksum keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the checksum offload with a registry key setting. Grouped keywords are not supported.
 
 ## Configuring checksum offload
 
