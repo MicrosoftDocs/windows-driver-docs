@@ -42,7 +42,7 @@ This procedure works only for defects. SDV does not generate a **Defect Viewer**
 
 The following screen shot shows a Static Driver Verifier Report page.
 
-![screen shot of a static driver verifier report page](images/sdv-defectviewer.png)
+![Screenshot that shows a "Static Driver Verifier Report Page".](images/sdv-defectviewer.png)
 
 ### <span id="review_the_rule"></span><span id="REVIEW_THE_RULE"></span>Review the Rule
 

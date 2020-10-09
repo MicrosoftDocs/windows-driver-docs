@@ -43,7 +43,7 @@ The disk dump port driver does not send multiple requests per logical unit. Ther
 
 ### <span id="polling"></span><span id="POLLING"></span>Polling and time checking
 
-Miniport drivers must not rely on time checking routines, such as [**ScsiPortQuerySystemTime**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportquerysystemtime) or [**StorPortQuerySystemTime**](/windows-hardware/drivers/ddi/storport/nf-storport-storportquerysystemtime) while running in dump mode. Best practices for miniport drivers exclude using the [**KeQuerySystemTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime) routine, at any time, because miniport drivers should always use port driver library routines to check the time.
+Miniport drivers must not rely on time checking routines, such as [**ScsiPortQuerySystemTime**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportquerysystemtime) or [**StorPortQuerySystemTime**](/windows-hardware/drivers/ddi/storport/nf-storport-storportquerysystemtime) while running in dump mode. Best practices for miniport drivers exclude using the [**KeQuerySystemTime**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime) routine, at any time, because miniport drivers should always use port driver library routines to check the time.
 
 ### <span id="irql"></span><span id="IRQL"></span>Interrupt request level
 
@@ -60,6 +60,4 @@ Storage miniport drivers in the boot or dump path must detect whether they are r
 -   The disk dump port driver passes a string of "dump=1" in the *ArgumentString* parameter when it calls the [**HwStorFindAdapter**](/windows-hardware/drivers/ddi/storport/nc-storport-hw_find_adapter) or [*HwScsiFindAdapter*](/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) routine.
 
 When you look in the debugger for an image of a storage miniport driver in dump mode, the driver name will have a prefix of "dump\_". If the miniport driver is in hibernation mode, the driver name will have a prefix of "hiber\_".
-
- 
 

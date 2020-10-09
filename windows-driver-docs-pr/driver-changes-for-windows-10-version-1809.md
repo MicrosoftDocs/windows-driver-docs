@@ -1,6 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1809
-description: This section describes new features for driver development in Windows 10.
+description: Learn about new features for driver development in Windows 10, version 1809 (Windows 10 October 2018 update).
 ms.assetid: 764bcd98-c123-45e2-9dd1-44d54bb1addc
 ms.date: 04/28/2020
 ms.localizationpriority: medium
@@ -188,7 +188,7 @@ If  your hardware is UCSI compliant and requires communication over a non-ACPI t
 
 For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated.
 
-* [Write a USB Type-C Policy Manager client driver](/windows-hardware/drivers/usbcon/policy-manager-client)
+* [Write a USB Type-C Policy Manager client driver](./usbcon/policy-manager-client.md)
 * New APIs are available in [Usbpmapi.h](/windows-hardware/drivers/ddi/usbpmapi/)
 
 **New versions of the class extensions available for emulated USB devices (UDE) -- 1.1 and USB host controller (Ucx) 1.5:**

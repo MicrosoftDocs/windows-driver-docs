@@ -341,7 +341,7 @@ This USB Audio 2.0 class driver was developed by Thesycon and is supported by Mi
 
 ### See also
 
-[Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model)
+[Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md)
 
 [Audio Drivers Overview](./getting-started-with-wdm-audio-drivers.md)
 

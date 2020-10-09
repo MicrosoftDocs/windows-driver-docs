@@ -20,7 +20,7 @@ File system filter drivers and device drivers in the Microsoft Windows operating
 
 - **No WDM**
 
-  File system filter drivers cannot be Windows Driver Model (WDM) drivers. The Microsoft [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) is only for device drivers.
+  File system filter drivers cannot be Windows Driver Model (WDM) drivers. The Microsoft [Windows Driver Model](../kernel/writing-wdm-drivers.md) is only for device drivers.
 
 - **No AddDevice or StartIo**
 

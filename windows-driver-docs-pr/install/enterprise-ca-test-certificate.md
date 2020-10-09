@@ -29,17 +29,11 @@ In summary, a domain administrator has to do the following to create an Enterpri
 
 -   Configure Group Policy to distribute the test certificates that are issued by the Enterprise CA.
 
-Detailed information on how to configure an Enterprise CA is beyond the scope of this documentation. For complete information about how to design a public key infrastructure and installing Enterprise CA, see the [Code-Signing Best Practices](https://go.microsoft.com/fwlink/p/?linkid=68250) website,
+Detailed information on how to configure an Enterprise CA is beyond the scope of this documentation. For complete information about how to design a public key infrastructure and installing Enterprise CA, see the [Code-Signing Best Practices](/windows-hardware/test/hlk/) website,
 
-the Windows Server 2003 Deployment Kit, the Windows Server 2003 Help and Support Center, and the [Public Key Infrastructures](https://go.microsoft.com/fwlink/p/?linkid=62645) webpage of the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=62647) website. The TechNet website includes information about certificates, certificate services, and certificate templates.
+the Windows Server 2003 Deployment Kit, the Windows Server 2003 Help and Support Center, and the [Public Key Infrastructures](/previous-versions/windows/it-pro/windows-server-2003/cc757327(v=ws.10)) webpage of the [Microsoft TechNet](https://go.microsoft.com/fwlink/p/?linkid=62647) website. The TechNet website includes information about certificates, certificate services, and certificate templates.
 
 Information about configuring an Enterprise CA to test-sign [driver packages](driver-packages.md) is also provided in the readme file *Selfsign_readme.htm*, which located in the *src\\general\\build\\driversigning* directory of the WDK.
 
  
-
- 
-
-
-
-
 

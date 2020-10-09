@@ -50,7 +50,7 @@ Remarks
 
 The system-supplied USB hub driver registers instances of GUID_DEVINTERFACE_USB_DEVICE to notify the system and applications of the presence of USB devices that are attached to a USB hub.
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](https://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses the obsolete identifier [**GUID_CLASS_USB_DEVICE**](guid-class-usb-device.md) to register to be notified of the arrival of instances of this device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](/samples/browse/). The USBVIEW sample uses the obsolete identifier [**GUID_CLASS_USB_DEVICE**](guid-class-usb-device.md) to register to be notified of the arrival of instances of this device interface class.
 
 You must include initguid.h before including any header that declares a GUID by using the DEFINE_GUID macro.
 
@@ -78,6 +78,4 @@ Requirements
 [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
 
 [**GUID_DEVINTERFACE_USB_HUB**](guid-devinterface-usb-hub.md)
-
- 
 

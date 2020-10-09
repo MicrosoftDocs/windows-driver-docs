@@ -1,6 +1,6 @@
 ---
 title: IRQL rule set (NDIS)
-description: Use these rules to verify that your driver makes DDI calls at the required IRQL.A driver that does not follow the IRQL rules can cause serious problems during operation that can lead to deadlock conditions or computer crashes.
+description: Learn about using rules (NDIS) to verify that your driver makes DDI calls at the required IRQL. In addition, learn how to select the IRQL rule set.
 ms.assetid: EEFEF8E3-8AB8-46AD-A3BD-DA676F8FA786
 ms.date: 05/21/2018
 ms.localizationpriority: medium

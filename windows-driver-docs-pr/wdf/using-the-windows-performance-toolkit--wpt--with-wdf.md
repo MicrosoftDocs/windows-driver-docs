@@ -87,7 +87,7 @@ WPT can display WDF I/O request completion throughput in two ways:
 
 The following screenshot shows sample summary graphs and tables for CPU and UMDF I/O request performance. In the UMDF I/O Request Completion Rate graph, the number of requests per second is shown on the y axis.
 
-![graph for umdf i/o request performance](images/WpaUMDFIoCapture-Narrow.PNG)
+![Screenshot that shows sample summary graphs for "U M D F I/O Requests" and "C P U Usage (Sampled)".](images/WpaUMDFIoCapture-Narrow.PNG)
 
 In the [summary table](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448109(v=win.10)), most columns are self-explanatory, but there are a couple things to note. The WdfDevice column contains the WDFDEVICE handle associated with the I/O request. The ActivityID contains a unique identifier for the I/O request. The framework creates this identifier when it delivers an I/O request to the driver. If an activity identifier is already associated with the corresponding IRP, the framework uses that identifier. For more information, see [Using Activity Identifiers](using-activity-identifiers.md).
 

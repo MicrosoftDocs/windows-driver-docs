@@ -19,7 +19,7 @@ The indirect display driver (IDD) model provides a simple user-mode driver model
 
 ## IDD implementation
 
-An IDD is the third party-provided [UMDF](/windows-hardware/drivers/wdf/umdf-driver-host-process) driver for the device. It is developed using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the windows graphics subsystems in the following ways:
+An IDD is the third party-provided [UMDF](../wdf/umdf-driver-host-process.md) driver for the device. It is developed using the functionality exposed by the [IddCx](/windows-hardware/drivers/ddi/iddcx/) (Indirect Display Driver Class eXtension) to interface with the windows graphics subsystems in the following ways:
 
 * Create the graphics adapter representing the indirect display device
 * Report monitors being connected and disconnected from the system
@@ -28,7 +28,7 @@ An IDD is the third party-provided [UMDF](/windows-hardware/drivers/wdf/umdf-dri
 * Support other display functionality, like hardware mouse cursor, gamma, I2C communications, and protected content
 * Process the desktop images to display on the monitor
 
-Because an IDD is a UMDF driver, it is also responsible for implementing all [UMDF](/windows-hardware/drivers/wdf/overview-of-the-umdf) functionality such as device communications, power management, plug and play etc.
+Because an IDD is a UMDF driver, it is also responsible for implementing all [UMDF](../wdf/overview-of-the-umdf.md) functionality such as device communications, power management, plug and play etc.
 
 The IDD runs in [Session 0](../wdf/session-zero-guidelines-for-umdf-drivers.md) without any components running in the user session, so any driver instability will not affect the stability of the system as a whole.
 

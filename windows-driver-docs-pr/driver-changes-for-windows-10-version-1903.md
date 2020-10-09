@@ -1,6 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1903
-description: This section describes new features for driver development in Windows 10.
+description: Learn about new features for driver development in Windows 10, such as camera driver features IR Torch and the USB Video Class 1.5 extension.
 ms.assetid: 90f7754d-be7a-408d-8b89-b173a86c4fa3
 ms.date: 04/28/2020
 ms.localizationpriority: medium
@@ -170,7 +170,7 @@ To see what was added in previous versions of WDF, see [KMDF Version History](./
 
 Windows 10, version 1903 includes a simplified interface to WHEA.  For more info, see the following pages:
 
-* [Using WHEA on Windows 10](/windows-hardware/drivers/whea/using-whea-on-windows-10)
+* [Using WHEA on Windows 10](./whea/using-whea-on-windows-10.md)
 * [**WheaAddErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheaadderrorsourcedevicedriver)
 * [**WheaReportHwErrorDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-wheareporthwerrordevicedriver)
 * [**WheaRemoveErrorSourceDeviceDriver**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-whearemoveerrorsourcedevicedriver)

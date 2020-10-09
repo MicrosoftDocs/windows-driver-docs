@@ -24,7 +24,7 @@ Before you run the MUTT test commands at an elevated command prompt, make sure y
 -   USB IF electrical tests. All of our tests are protocol and state focused. See [USB-IF Compliance Program](https://www.usb.org/compliance) for more information on electrical tests.
 -   MUTT stress and transfer tests included in the MUTT software package with MUTT devices connected in the suggested configurations for USB controllers. **RunTest.bat** runs both the stress and transfer tests. See [How to run stress and transfer performance tests for MUTT devices](how-to-run-stress-and-transfer-and-super-mutt-performance-tests-for-mutt-devices.md).
 -   Device Fundamental test. For more information, see [How to run devfund tests in Visual Studio for MUTT devices](how-to-run-device-fundamental-tests-in-visual-studio-for-connected-mutt-devices.md).
--   Controller Windows Hardware Certification Kit tests. For more information, see [USB-IF Certification Validation Test (Controller)](https://go.microsoft.com/fwlink/p/?linkid=316509).
+-   Controller Windows Hardware Certification Kit tests. For more information, see [USB-IF Certification Validation Test (Controller)](/previous-versions/windows/hardware/hck/jj124634(v=vs.85)).
 -   Manual test cases for host controllers, as found in Windows Test Guidance document in the section.
 
 ## Recommended topologies for hub testing with MUTT devices

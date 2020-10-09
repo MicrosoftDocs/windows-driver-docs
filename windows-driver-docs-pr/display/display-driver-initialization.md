@@ -49,7 +49,4 @@ GDI automatically enables DirectDraw after calling [**DrvEnableSurface**](/windo
 
 A display driver must implement [**DrvNotify**](/windows/win32/api/winddi/nf-winddi-drvnotify) in order to receive notification events, particularly the DN\_DRAWING\_BEGIN event. GDI sends this event immediately before it begins drawing, so it can be used to determine when caches can be initialized.
 
-See the [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) section for more information about the boot process.
-
-
-
+See the [Plug and Play](../kernel/introduction-to-plug-and-play.md) section for more information about the boot process.

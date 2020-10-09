@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-A miniport driver with a Microsoft [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) (WDM) lower interface is also known as an *NDIS-WDM miniport driver*. This type of miniport driver:
+A miniport driver with a Microsoft [Windows Driver Model](../kernel/writing-wdm-drivers.md) (WDM) lower interface is also known as an *NDIS-WDM miniport driver*. This type of miniport driver:
 
 -   Uses a WDM lower edge.
 
@@ -46,10 +46,4 @@ The following topics describe how to implement a miniport driver that uses a WDM
 [Installing NDIS-WDM Miniport Drivers](installing-ndis-wdm-miniport-drivers.md)
 
  
-
- 
-
-
-
-
 

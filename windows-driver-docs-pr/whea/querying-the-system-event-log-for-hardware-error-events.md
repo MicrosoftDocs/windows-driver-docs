@@ -116,14 +116,9 @@ VOID QueryHwErrorEvents(VOID) {
 }
 ```
 
-**Note**  All of the **Evt_Xxx_** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](https://go.microsoft.com/fwlink/p/?linkid=81187) section in the Microsoft Windows SDK documentation.
+**Note**  All of the **Evt_Xxx_** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](/windows/win32/wes/windows-event-log) section in the Microsoft Windows SDK documentation.
 
  
 
  
-
- 
-
-
-
 

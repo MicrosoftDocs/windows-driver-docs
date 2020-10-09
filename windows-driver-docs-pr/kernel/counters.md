@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 The system provides several driver support routines that return various count values.
 
-[**KeQuerySystemTime**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime)
+[**KeQuerySystemTime**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime)
 
 [**KeQueryInterruptTime**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequeryinterrupttime)
 
@@ -26,6 +26,4 @@ The system provides several driver support routines that return various count va
 [**KeQueryPerformanceCounter**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kequeryperformancecounter)
 
 [**KeQueryTimeIncrement**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerytimeincrement)
-
- 
 

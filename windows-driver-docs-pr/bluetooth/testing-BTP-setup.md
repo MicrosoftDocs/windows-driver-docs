@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 Using the supplied USB A-to-B cable, plug the Traduci into a USB port on the system under test (SUT). Performance is best if the Traduci is plugged directly into an A port on the PC and the Traduci is powered by a [9v, 2A power adapter](https://www.digikey.com/product-detail/en/qualtek/QFWB-18-9-US01/Q1181-ND/8260129) through the barrel connector to the right of the USB connector. Do not connect the Traduci to a USB hub.
 
-![Traduci showing USB and power ports](images/Traduci_USBPortSidejpg.jpg)
+![An angled side-view of the Traduci circuit board showing USB and power ports.](images/Traduci_USBPortSidejpg.jpg)
 
 ### Connecting peripherals to the Traduci
 

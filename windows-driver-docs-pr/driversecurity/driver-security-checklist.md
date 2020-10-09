@@ -77,7 +77,7 @@ For information on using Windows Services, see [Services](/windows/desktop/Servi
 
 Use the [Windows Driver Frameworks](../wdf/index.md) to reduce the size of your code and increase its reliability and security.  To get started, review [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md). For information on using the lower risk user mode framework driver (UMDF), see [Choosing a driver model](../gettingstarted/choosing-a-driver-model.md).
 
-Writing an old fashion [Windows Driver Model (WDM)](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
+Writing an old fashion [Windows Driver Model (WDM)](../kernel/writing-wdm-drivers.md) driver is more time consuming, costly, and almost always involves recreating code that is available in the driver frameworks.
 
 The Windows Driver Framework source code is open source and available on GitHub. This is the same source code from which the WDF runtime library that ships in Windows 10 is built. You can debug your driver more effectively when you can follow the interactions between the driver and WDF. Download it from [https://github.com/Microsoft/Windows-Driver-Frameworks](https://github.com/Microsoft/Windows-Driver-Frameworks).
 
@@ -206,7 +206,7 @@ The following articles provide information about validating IRP input values:
 
 [DispatchReadWrite Using Buffered I/O](../kernel/dispatchreadwrite-using-buffered-i-o.md)
 
-[Errors in Buffered I/O](https://docs.microsoft.com/windows-hardware/drivers/kernel/errors-in-buffered-i-o)
+[Errors in Buffered I/O](../kernel/failure-to-check-the-size-of-buffers.md)
 
 [DispatchReadWrite Using Direct I/O](../kernel/dispatchreadwrite-using-direct-i-o.md)
 
@@ -360,13 +360,13 @@ For more information about the related system fundamentals security test, see [D
 
 For more information, about file system driver security see the following articles:
 
-[Security Considerations for File Systems](https://docs.microsoft.com/windows-hardware/drivers/ifs/security-considerations-for-file-systems)
+[Introduction to File Systems Security](/windows-hardware/drivers/ifs/introduction-to-file-systems-security)
 
 [File System Security Issues](../ifs/file-system-security-issues.md)
 
 [Security Features for File Systems](../ifs/security-features-for-file-systems.md)
 
-[Security Considerations for File System Filter Drivers](https://docs.microsoft.com/windows-hardware/drivers/ifs/security-considerations-for-file-system-filter-drivers)
+[Coexistence with other File System Filter Drivers](/windows-hardware/drivers/ifs/coexistence-with-other-file-system-filter-drivers)
 
 ### NDIS - Networking
 
@@ -405,7 +405,7 @@ For more information, see the following articles:
 
 [Using Device Installation Functions](../install/using-device-installation-functions.md)
 
-[Device and Driver Installation Advanced Topics](https://docs.microsoft.com/windows-hardware/drivers/install/device-and-driver-installation-advanced-topics)
+[Device and Driver Installation Advanced Topics](../install/creating-secure-device-installations.md)
 
 ## Perform peer code review
 

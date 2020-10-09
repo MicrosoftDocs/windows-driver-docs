@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the accelerometer thresholds.
 
-The following table lists the available thresholds values for the accelerometer. For more information about the types shown in the type column, see the [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table lists the available thresholds values for the accelerometer. For more information about the types shown in the type column, see the [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Default value|Description|
 |---|---|---|---|---|
@@ -29,4 +29,4 @@ Accelerometer drivers must always report one sample reading immediately after th
 
 ## Related topics
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

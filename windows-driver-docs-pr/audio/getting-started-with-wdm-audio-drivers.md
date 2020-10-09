@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 # WDM Audio Drivers Overview
 
 
-[Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) (WDM) audio drivers make use of the [kernel streaming](../stream/kernel-streaming.md) (KS) components, which operate in kernel mode and are part of the operating system.
+[Windows Driver Model](../kernel/writing-wdm-drivers.md) (WDM) audio drivers make use of the [kernel streaming](../stream/kernel-streaming.md) (KS) components, which operate in kernel mode and are part of the operating system.
 
 Hardware vendors should make several design decisions before beginning development of a Windows-based audio hardware device.
 
@@ -40,6 +40,4 @@ This section includes the following topics:
 [Specifying the Topology](specifying-the-topology.md)
 
 [Specifying Pin Data Ranges](specifying-pin-data-ranges.md)
-
- 
 

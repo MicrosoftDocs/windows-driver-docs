@@ -17,7 +17,13 @@ ms.localizationpriority: medium
 
 The required **asyncPrintUIRequest** element describes a request issued by the printer driver to create a message on a client computer.
 
-The **asyncPrintUIRequest** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request).
+The **asyncPrintUIRequest** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

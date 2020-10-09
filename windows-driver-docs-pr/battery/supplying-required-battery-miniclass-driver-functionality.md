@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_supplying_required_battery_miniclass_driver_functionality_dg"></span><span id="DDK_SUPPLYING_REQUIRED_BATTERY_MINICLASS_DRIVER_FUNCTIONALITY_DG"></span>
 
 
-In addition to the routines required to support [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play), a battery miniclass driver must have the following routines:
+In addition to the routines required to support [Plug and Play](../kernel/introduction-to-plug-and-play.md), a battery miniclass driver must have the following routines:
 
 [DriverEntry](driverentry-routine-of-a-battery-miniclass-driver.md)
 
@@ -49,6 +49,4 @@ Battery miniclass drivers must include the following header files:
 -   Batclass.h
 
 -   Ntddk.h or Wdm.h
-
- 
 
