@@ -179,6 +179,6 @@ The flags can be one of the following:
 
 | Flag | Description |
 | --- | --- |
-| NetPacketRxChecksumEvaluationNotChecked | The NIC could not validate the checksum of the packet |
-| NetPacketRxChecksumEvaluationValid | The checksum of the packet is valid |
-| NetPacketRxChecksumEvaluationInvalid | The checksum of the packet is invalid |
+| `NetPacketRxChecksumEvaluationNotChecked` | The NIC could not validate the checksum of the packet |
+| `NetPacketRxChecksumEvaluationValid` | The checksum of the packet is valid |
+| `NetPacketRxChecksumEvaluationInvalid` | The checksum of the packet is invalid |
