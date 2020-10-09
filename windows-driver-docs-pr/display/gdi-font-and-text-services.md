@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_gdi_font_and_text_services_gg"></span><span id="DDK_GDI_FONT_AND_TEXT_SERVICES_GG"></span>
 
 
-GDI provides support for font management and text output. The [**FONTOBJ**](/windows/win32/api/winddi/ns-winddi-_fontobj) structure and related functions give a driver access to a particular instance of a font. To support text output, the driver has access to the [**STROBJ**](/windows/win32/api/winddi/ns-winddi-_strobj) structure and related functions. The following table lists FONTOBJ- and STROBJ-related functions.
+GDI provides support for font management and text output. The [**FONTOBJ**](/windows/win32/api/winddi/ns-winddi-fontobj) structure and related functions give a driver access to a particular instance of a font. To support text output, the driver has access to the [**STROBJ**](/windows/win32/api/winddi/ns-winddi-strobj) structure and related functions. The following table lists FONTOBJ- and STROBJ-related functions.
 
 <table>
 <colgroup>
@@ -73,11 +73,11 @@ GDI provides support for font management and text output. The [**FONTOBJ**](/win
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-fontobj_pfdg" data-raw-source="[&lt;strong&gt;FONTOBJ_pfdg&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-fontobj_pfdg)"><strong>FONTOBJ_pfdg</strong></a></p></td>
-<td align="left"><p>Retrieves the pointer to the <a href="/windows/win32/api/winddi/ns-winddi-_fd_glyphset" data-raw-source="[&lt;strong&gt;FD_GLYPHSET&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_fd_glyphset)"><strong>FD_GLYPHSET</strong></a> structure associated with the specified font.</p></td>
+<td align="left"><p>Retrieves the pointer to the <a href="/windows/win32/api/winddi/ns-winddi-fd_glyphset" data-raw-source="[&lt;strong&gt;FD_GLYPHSET&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_fd_glyphset)"><strong>FD_GLYPHSET</strong></a> structure associated with the specified font.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-fontobj_pifi" data-raw-source="[&lt;strong&gt;FONTOBJ_pifi&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-fontobj_pifi)"><strong>FONTOBJ_pifi</strong></a></p></td>
-<td align="left"><p>Retrieves the pointer to the <a href="/windows/win32/api/winddi/ns-winddi-_ifimetrics" data-raw-source="[&lt;strong&gt;IFIMETRICS&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_ifimetrics)"><strong>IFIMETRICS</strong></a> structure that describes the associated font.</p></td>
+<td align="left"><p>Retrieves the pointer to the <a href="/windows/win32/api/winddi/ns-winddi-ifimetrics" data-raw-source="[&lt;strong&gt;IFIMETRICS&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_ifimetrics)"><strong>IFIMETRICS</strong></a> structure that describes the associated font.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-fontobj_pjopentypetablepointer" data-raw-source="[&lt;strong&gt;FONTOBJ_pjOpenTypeTablePointer&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-fontobj_pjopentypetablepointer)"><strong>FONTOBJ_pjOpenTypeTablePointer</strong></a></p></td>
@@ -125,7 +125,7 @@ GDI provides support for font management and text output. The [**FONTOBJ**](/win
 </tr>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-strobj_venumstart" data-raw-source="[&lt;strong&gt;STROBJ_vEnumStart&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-strobj_venumstart)"><strong>STROBJ_vEnumStart</strong></a></p></td>
-<td align="left"><p>Restarts the enumeration of the <a href="/windows/win32/api/winddi/ns-winddi-_glyphpos" data-raw-source="[&lt;strong&gt;GLYPHPOS&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_glyphpos)"><strong>GLYPHPOS</strong></a> array for the specified STROBJ. This function should be called by the driver prior to subsequent enumerations.</p></td>
+<td align="left"><p>Restarts the enumeration of the <a href="/windows/win32/api/winddi/ns-winddi-glyphpos" data-raw-source="[&lt;strong&gt;GLYPHPOS&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_glyphpos)"><strong>GLYPHPOS</strong></a> array for the specified STROBJ. This function should be called by the driver prior to subsequent enumerations.</p></td>
 </tr>
 </tbody>
 </table>

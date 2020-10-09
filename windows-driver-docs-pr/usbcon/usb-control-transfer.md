@@ -156,7 +156,7 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
     Here is the trace for the data transaction.
 
-    ![trace of an example data transaction.](images/datra-trans.png)
+    ![Screenshot that shows a trace of an example data transaction.](images/datra-trans.png)
 
     Upon receiving the ACK packet, the host initiates the data transaction. To initiate the transaction, it sends a token packet (\#450) with direction as IN (called IN token).
 
@@ -172,7 +172,7 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
     Here is the next data transaction:
 
-    ![trace of an example data transaction.](images/datra-trans2.png)
+    ![Screenshot that shows a trace of the new data transaction.](images/datra-trans2.png)
 
     The host initiates the preceding data transaction by sending an IN token (\#463) and requesting the next 8 bytes from the device. The device responds with a data packet (\#464) that contains the next 8 bytes of the device descriptor.
 
@@ -180,7 +180,7 @@ You can see the structure of transactions and packets by using any USB analyzer,
 
     Next, the host requests the last 2 bytes in another data transaction as follows:
 
-    ![trace of an example data transaction.](images/datra-trans3.png)
+    ![Screenshot that shows a trace of the new example data transaction in which the host requests the last 2 bytes.](images/datra-trans3.png)
 
     Therefore, we see that to transfer 18 bytes from the device to the host, the host keeps track of the number of bytes transferred and initiated three data transactions (8+8+2).
 
@@ -363,7 +363,7 @@ Use this table to determine the best way to send control requests to the USB dri
 <ul>
 <li><a href="/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetdevice-retrievedescriptor" data-raw-source="[&lt;strong&gt;IWDFUsbTargetDevice::RetrieveDescriptor&lt;/strong&gt;](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetdevice-retrievedescriptor)"><strong>IWDFUsbTargetDevice::RetrieveDescriptor</strong></a></li>
 <li><a href="/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbinterface-getinterfacedescriptor" data-raw-source="[&lt;strong&gt;IWDFUsbInterface::GetInterfaceDescriptor&lt;/strong&gt;](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbinterface-getinterfacedescriptor)"><strong>IWDFUsbInterface::GetInterfaceDescriptor</strong></a></li>
-<li><a href="/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe-getinformation" data-raw-source="[&lt;strong&gt;IWDFUsbTargetPipe::GetInformation&lt;/strong&gt;](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe-getinformation)"><strong>IWDFUsbTargetPipe::GetInformation</strong></a>. This method returns endpoint descriptor fields in a <a href="/windows/win32/api/winusbio/ns-winusbio-_winusb_pipe_information" data-raw-source="[&lt;strong&gt;WINUSB_PIPE_INFORMATION&lt;/strong&gt;](/windows/win32/api/winusbio/ns-winusbio-_winusb_pipe_information)"><strong>WINUSB_PIPE_INFORMATION</strong></a> structure.</li>
+<li><a href="/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe-getinformation" data-raw-source="[&lt;strong&gt;IWDFUsbTargetPipe::GetInformation&lt;/strong&gt;](/windows-hardware/drivers/ddi/wudfusb/nf-wudfusb-iwdfusbtargetpipe-getinformation)"><strong>IWDFUsbTargetPipe::GetInformation</strong></a>. This method returns endpoint descriptor fields in a <a href="/windows/win32/api/winusbio/ns-winusbio-winusb_pipe_information" data-raw-source="[&lt;strong&gt;WINUSB_PIPE_INFORMATION&lt;/strong&gt;](/windows/win32/api/winusbio/ns-winusbio-_winusb_pipe_information)"><strong>WINUSB_PIPE_INFORMATION</strong></a> structure.</li>
 </ul></td>
 <td><p><a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request" data-raw-source="[&lt;strong&gt;_URB_CONTROL_DESCRIPTOR_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request)"><strong>_URB_CONTROL_DESCRIPTOR_REQUEST</strong></a></p>
 <p>(<a href="/previous-versions/ff538943(v=vs.85)" data-raw-source="[&lt;strong&gt;UsbBuildGetDescriptorRequest&lt;/strong&gt;](/previous-versions/ff538943(v=vs.85))"><strong>UsbBuildGetDescriptorRequest</strong></a>)</p>

@@ -31,7 +31,7 @@ Driver writers who are creating Microsoft DirectDraw drivers for Microsoft Windo
 
 -   *dvp.h* is used when the driver supports the DirectDraw video port extensions (VPE).
 
--   *dxmini.h* is used when the video miniport driver includes support for kernel-mode video transport, the DxApi interface (functions specified by the [**DXAPI\_INTERFACE**](/windows/win32/api/dxmini/ns-dxmini-_dxapi_interface) structure).
+-   *dxmini.h* is used when the video miniport driver includes support for kernel-mode video transport, the DxApi interface (functions specified by the [**DXAPI\_INTERFACE**](/windows/win32/api/dxmini/ns-dxmini-dxapi_interface) structure).
 
 -   *ddkmapi.h* is used by video capture drivers to access the [**DxApi**](/windows-hardware/drivers/ddi/dxapi/nf-dxapi-dxapi) function. DirectDraw, in turn, calls upon the DxApi interface.
 

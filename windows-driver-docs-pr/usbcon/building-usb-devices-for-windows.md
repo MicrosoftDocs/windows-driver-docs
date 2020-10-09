@@ -27,14 +27,14 @@ USB devices store standard descriptors in firmware for the device and its interf
 
 An IHV can use Microsoft OS descriptors to store the information in firmware instead of providing it separately. Window retrieves that information by reading Microsoft OS descriptors, and uses it to install and configure the device without requiring any user interaction. See [Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md).
 
-[Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519)  
+[Microsoft OS 1.0 Descriptors Specification](/previous-versions/gg463179(v=msdn.10))  
 This document introduces Microsoft OS descriptors. It includes a specification for the OS string descriptor, extended properties OS feature descriptor, and OS feature descriptors formats.
 
 [Microsoft OS 2.0 Descriptors Specification](./microsoft-os-2-0-descriptors-specification.md)  
 This document defines and describes the implementation of version 2.0 of the Microsoft OS Descriptors. The goal of Microsoft OS 2.0 Descriptors is to address the limitations and reliability problems with version 1.0 of OS descriptors and enable new Windows-specific functionality for USB devices.
 
 [Loading Winusb.sys as the function driver by using Microsoft OS descriptors](automatic-installation-of-winusb.md)  
-The IHV can define certain Microsoft operating system (OS) feature descriptors that report the compatible ID as "WINUSB". Those descriptors allow Windows to load Winusb.sys as the device's function driver without a custom INF file. For examples about how to define the compatible ID, see the example section of the Extended Compat ID OS Feature Descriptor Specification. The specification is included in the download for [Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519).
+The IHV can define certain Microsoft operating system (OS) feature descriptors that report the compatible ID as "WINUSB". Those descriptors allow Windows to load Winusb.sys as the device's function driver without a custom INF file. For examples about how to define the compatible ID, see the example section of the Extended Compat ID OS Feature Descriptor Specification. The specification is included in the download for [Microsoft OS 1.0 Descriptors Specification](/previous-versions/gg463179(v=msdn.10)).
 
 ## Setting a container ID
 

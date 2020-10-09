@@ -24,7 +24,7 @@ Each kernel-mode graphics driver represents a single logical device managed by G
 
 -   **Type of Hardware**: As an example of a driver supporting a PDEV characterized by the type of hardware, one driver could support the LaserWhiz, LaserWhiz II, and LaserWhiz Super printers. The device name passed by GDI specifies which logical device is requested from the total set of driver-supported devices.
 
--   **Logical Address**: A single driver can support printers attached to LPT1, COM2, and a server named \\\\SERVER1\\PSLASER, for example. In addition, a display driver that can support more than one VGA display simultaneously might differentiate between them by port numbers, such as 0x3CE, 0x2CE, and so on. The logical address for printers and other hard copy output devices is determined by GDI; the [**EngWritePrinter**](/windows/win32/api/winddi/nf-winddi-engwriteprinter) function directs the output to the proper destination. Displays can either determine their own logical address implicitly or retrieve the address from the private section of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-_devicemodew).
+-   **Logical Address**: A single driver can support printers attached to LPT1, COM2, and a server named \\\\SERVER1\\PSLASER, for example. In addition, a display driver that can support more than one VGA display simultaneously might differentiate between them by port numbers, such as 0x3CE, 0x2CE, and so on. The logical address for printers and other hard copy output devices is determined by GDI; the [**EngWritePrinter**](/windows/win32/api/winddi/nf-winddi-engwriteprinter) function directs the output to the proper destination. Displays can either determine their own logical address implicitly or retrieve the address from the private section of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devicemodew).
 
     The DEVMODEW structure provides the driver with required environment settings, such as the name of the device and other information specific to either printer or display drivers.
 
@@ -32,7 +32,7 @@ Each kernel-mode graphics driver represents a single logical device managed by G
 
 In response to a call to *DrvEnablePDEV*, the driver returns information about the capabilities of the hardware device to GDI through several structures.
 
-The [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-_gdiinfo) structure is zero-filled before GDI calls *DrvEnablePDEV*. The driver fills in GDIINFO to communicate the following information to GDI:
+The [**GDIINFO**](/windows/win32/api/winddi/ns-winddi-gdiinfo) structure is zero-filled before GDI calls *DrvEnablePDEV*. The driver fills in GDIINFO to communicate the following information to GDI:
 
 -   Driver version number
 

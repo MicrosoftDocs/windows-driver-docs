@@ -47,7 +47,7 @@ Video miniport drivers in the Windows 2000 display driver model include the foll
 </tr>
 <tr class="odd">
 <td align="left"><p><em>tvout.h</em></p></td>
-<td align="left"><p>Contains the <a href="/windows/win32/api/tvout/ns-tvout-_videoparameters" data-raw-source="[&lt;strong&gt;VIDEOPARAMETERS&lt;/strong&gt;](/windows/win32/api/tvout/ns-tvout-_videoparameters)"><strong>VIDEOPARAMETERS</strong></a> structure used to implement TV connector and copy protection support and the constants used in this structure.</p></td>
+<td align="left"><p>Contains the <a href="/windows/win32/api/tvout/ns-tvout-videoparameters" data-raw-source="[&lt;strong&gt;VIDEOPARAMETERS&lt;/strong&gt;](/windows/win32/api/tvout/ns-tvout-_videoparameters)"><strong>VIDEOPARAMETERS</strong></a> structure used to implement TV connector and copy protection support and the constants used in this structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>video.h</em></p></td>

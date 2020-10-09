@@ -25,7 +25,7 @@ The basic display driver initialization procedure, in which the desktop is creat
 
 1.  When GDI is called to create the first device context (*DC*) for the video hardware, GDI calls the display driver function [**DrvEnableDriver**](/windows/win32/api/winddi/nf-winddi-drvenabledriver). Upon return, **DrvEnableDriver** provides GDI with a [**DRVENABLEDATA**](/windows/win32/api/winddi/ns-winddi-tagdrvenabledata) structure that holds both the driver's graphics DDI version number and the entry points of all callable graphics DDI functions that are implemented by the driver (other than **DrvEnableDriver**).
 
-2.  GDI then calls the driver's [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) function to request a description of the driver's physical device's characteristics. In the call, GDI passes in a [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-_devicemodew) structure, which identifies the mode that GDI wants to set. If GDI requests a mode that the display or underlying miniport driver does not support, then the display driver must fail this call.
+2.  GDI then calls the driver's [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev) function to request a description of the driver's physical device's characteristics. In the call, GDI passes in a [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devicemodew) structure, which identifies the mode that GDI wants to set. If GDI requests a mode that the display or underlying miniport driver does not support, then the display driver must fail this call.
 
 3.  The display driver represents a logical device controlled by GDI. As shown in the following figure, a single logical device can manage several physical devices, each characterized by type of hardware, logical address, and surfaces supported. The display driver allocates the memory to support the device it creates. A display driver may be called upon to manage more than one *PDEV* for the same physical device, although only one PDEV can be enabled at a time for a given physical device. Each PDEV is created in a separate GDI call to [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev), and each call creates another PDEV that is used with a different surface.
 
@@ -49,7 +49,4 @@ GDI automatically enables DirectDraw after calling [**DrvEnableSurface**](/windo
 
 A display driver must implement [**DrvNotify**](/windows/win32/api/winddi/nf-winddi-drvnotify) in order to receive notification events, particularly the DN\_DRAWING\_BEGIN event. GDI sends this event immediately before it begins drawing, so it can be used to determine when caches can be initialized.
 
-See the [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) section for more information about the boot process.
-
-
-
+See the [Plug and Play](../kernel/introduction-to-plug-and-play.md) section for more information about the boot process.

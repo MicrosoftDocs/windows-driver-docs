@@ -34,8 +34,8 @@ Several changes have been made in the available functions and behavior of the Wi
     - [**FwpsAleEndpointGetSecurityInfo0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsaleendpointgetsecurityinfo0)
     - [**FwpsAleEndpointSetSecurityInfo0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsaleendpointsetsecurityinfo0)
 -   New structures and enumerations:
-    - [**FWPS\_ALE\_ENDPOINT\_ENUM\_TEMPLATE0**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_ale_endpoint_enum_template0_)
-    - [**FWPS\_ALE\_ENDPOINT\_PROPERTIES0**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_ale_endpoint_properties0_)
+    - [**FWPS\_ALE\_ENDPOINT\_ENUM\_TEMPLATE0**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_ale_endpoint_enum_template0)
+    - [**FWPS\_ALE\_ENDPOINT\_PROPERTIES0**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_ale_endpoint_properties0)
     - [**FWPS\_BIND\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0)
     - [**FWPS\_CALLOUT1**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout1_)
     - [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0)
@@ -54,7 +54,7 @@ Several changes have been made in the available functions and behavior of the Wi
     - [**FWPS\_FIELDS\_OUTBOUND\_MAC\_FRAME\_802\_3**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_outbound_mac_frame_ethernet_)
     - [**FWPS\_FIELDS\_STREAM\_PACKET\_V4**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_stream_packet_v4_)
     - [**FWPS\_FIELDS\_STREAM\_PACKET\_V6**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_stream_packet_v6_)
-    - [**FWPS\_FILTER1**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_filter1_)
+    - [**FWPS\_FILTER1**](/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_filter1)
     - [**FWPS\_NET\_BUFFER\_LIST\_EVENT\_TYPE0**](/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_net_buffer_list_event_type0_)
     - [**FWPS\_TRANSPORT\_SEND\_PARAMS1**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_transport_send_params1_)
 -   New documentation topics:

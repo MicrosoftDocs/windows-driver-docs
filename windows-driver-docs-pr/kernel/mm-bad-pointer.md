@@ -665,7 +665,7 @@ _DestinationString [out]_
 
 **PANSI_STRING**
 
-Pointer to the [**ANSI_STRING**](/windows/win32/api/ntdef/ns-ntdef-_string) structure to be initialized.
+Pointer to the [**ANSI_STRING**](/windows/win32/api/ntdef/ns-ntdef-string) structure to be initialized.
 
 _Buffer [in]_
 
@@ -708,7 +708,7 @@ _DestinationString [out]_
 
 **PUNICODE_STRING**
 
-Pointer to the [**UNICODE_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
+Pointer to the [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
 
 _Buffer [in]_
 
@@ -751,7 +751,7 @@ _L1 [in]_
 
 **PLUID**
 
-Specifies the [**LUID**](/windows/win32/api/ntdef/ns-ntdef-_luid) to check.
+Specifies the [**LUID**](/windows/win32/api/ntdef/ns-ntdef-luid) to check.
 
 **Return value**
 

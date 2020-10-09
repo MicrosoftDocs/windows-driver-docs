@@ -44,7 +44,7 @@ In this image, the device tree shows the drivers and their associated device obj
 
 **HID source driver (your driver)**
 
-The HID source driver links to Vhfkm.lib and includes Vhf.h in its build project. The driver can be written by using either [Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) (WDM) or Kernel-Mode Driver Framework (KMDF) that is part of the [Windows Driver Frameworks (WDF)](../what-s-new-in-driver-development.md). The driver can be loaded as a filter driver or a function driver in the device stack.
+The HID source driver links to Vhfkm.lib and includes Vhf.h in its build project. The driver can be written by using either [Windows Driver Model](../kernel/writing-wdm-drivers.md) (WDM) or Kernel-Mode Driver Framework (KMDF) that is part of the [Windows Driver Frameworks (WDF)](../what-s-new-in-driver-development.md). The driver can be loaded as a filter driver or a function driver in the device stack.
 
 **VHF static library (vhfkm.lib)**
 

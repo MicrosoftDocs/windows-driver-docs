@@ -24,7 +24,7 @@ NDKPI 1.2 adds the following new elements to the NDKPI DDI:
 - *NdkGetCqResultsEx* ([*NDK\_FN\_GET\_CQ\_RESULTS\_EX*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_cq_results_ex)) function
 - [**NDK\_RESULT\_EX**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result_ex) structure
 - New request callback *Flags* value: **NDK\_OP\_FLAG\_DEFER**
-- New [**NDK\_ADAPTER\_INFO**](/windows/win32/api/ndkinfo/ns-ndkinfo-_ndk_adapter_info)**AdapterFlags** value: **NDK\_ADAPTER\_FLAG\_RDMA\_READ\_LOCAL\_INVALIDATE\_SUPPORTED**
+- New [**NDK\_ADAPTER\_INFO**](/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info)**AdapterFlags** value: **NDK\_ADAPTER\_FLAG\_RDMA\_READ\_LOCAL\_INVALIDATE\_SUPPORTED**
 
 ### Native 802.11 Wireless LAN
 
@@ -44,7 +44,7 @@ The following documentation sections have been added or significantly expanded:
 -   [Porting NDIS 6.x Drivers to NDIS 6.30](porting-ndis-6-x-drivers-to-ndis-6-30.md)
 -   [Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md) Design Guide
 -   [Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md)
--   [Receive Segment Coalescing (RSC)](receive-segment-coalescing--rsc-.md) Design Guide
+-   [Receive Segment Coalescing (RSC)](overview-of-receive-segment-coalescing.md) Design Guide
 -   [Getting Started Writing a Hyper-V Extensible Switch Extension](getting-started-writing-a-hyper-v-extensible-switch-extension.md)
 -   [NVGRE Task Offload Reference](/windows-hardware/drivers/ddi/_netvista/)
 

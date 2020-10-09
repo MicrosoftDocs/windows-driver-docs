@@ -30,8 +30,6 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 <a href="" id="supermutt"></a>SuperMUTT  
 [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
 
-[Pactron](https://pactronstore.com/products/supermutt.mdl)
-
 <a href="" id="supermutt-pack"></a>SuperMUTT Pack  
 [VIA Labs](https://go.microsoft.com/fwlink/p/?linkid=618285)
 

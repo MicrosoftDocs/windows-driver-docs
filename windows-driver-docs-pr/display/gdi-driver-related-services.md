@@ -32,7 +32,7 @@ Driver writers can use the GDI driver-related services listed in the following t
 <tbody>
 <tr class="odd">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engcreatedriverobj" data-raw-source="[&lt;strong&gt;EngCreateDriverObj&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engcreatedriverobj)"><strong>EngCreateDriverObj</strong></a></p></td>
-<td align="left"><p>Creates a <a href="/windows/win32/api/winddi/ns-winddi-_driverobj" data-raw-source="[&lt;strong&gt;DRIVEROBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_driverobj)"><strong>DRIVEROBJ</strong></a> structure. This structure is used to track a device-managed resource that must be released if the resource-allocating process terminates without first cleaning it up.</p></td>
+<td align="left"><p>Creates a <a href="/windows/win32/api/winddi/ns-winddi-driverobj" data-raw-source="[&lt;strong&gt;DRIVEROBJ&lt;/strong&gt;](/windows/win32/api/winddi/ns-winddi-_driverobj)"><strong>DRIVEROBJ</strong></a> structure. This structure is used to track a device-managed resource that must be released if the resource-allocating process terminates without first cleaning it up.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-engdeletedriverobj" data-raw-source="[&lt;strong&gt;EngDeleteDriverObj&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-engdeletedriverobj)"><strong>EngDeleteDriverObj</strong></a></p></td>

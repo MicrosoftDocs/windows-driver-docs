@@ -88,7 +88,7 @@ Once the developer has obtained a valid GattDeviceService object, s/he can use i
 
 These APIs enable access to specific services and their objects (for example Included Services, Characteristics, and Descriptors), as well as read and write capabilities.
 
-The [Bluetooth Generic Attribute Profile - Heart Rate Service](https://go.microsoft.com/fwlink/p/?linkid=301978) sample demonstrates some of these techniques.
+The [Bluetooth Generic Attribute Profile - Heart Rate Service](/samples/browse/) sample demonstrates some of these techniques.
 
 ## <span id="Using_Power_Efficiently"></span><span id="using_power_efficiently"></span><span id="USING_POWER_EFFICIENTLY"></span>Using Power Efficiently
 
@@ -102,6 +102,4 @@ Therefore, to establish a Bluetooth LE connection an app needs to register a han
  
 
 Power considerations are described in [Proximity Profile Implementation Details](proximity-profile-implementation-details.md).
-
- 
 

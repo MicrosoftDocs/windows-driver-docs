@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_drawing_and_filling_paths_gg"></span><span id="DDK_DRAWING_AND_FILLING_PATHS_GG"></span>
 
 
-The graphics driver considers a path to be a sequence of lines, and/or curves, defined by a path object ([**PATHOBJ**](/windows/win32/api/winddi/ns-winddi-_pathobj) structure). To handle the filling of closed paths, the driver supports the function [**DrvFillPath**](/windows/win32/api/winddi/nf-winddi-drvfillpath).
+The graphics driver considers a path to be a sequence of lines, and/or curves, defined by a path object ([**PATHOBJ**](/windows/win32/api/winddi/ns-winddi-pathobj) structure). To handle the filling of closed paths, the driver supports the function [**DrvFillPath**](/windows/win32/api/winddi/nf-winddi-drvfillpath).
 
 GDI can call [**DrvFillPath**](/windows/win32/api/winddi/nf-winddi-drvfillpath) to fill a path on a device-managed surface. GDI compares the requirements of the fill with the [**DEVINFO**](/windows/win32/api/winddi/ns-winddi-tagdevinfo) structure's flags GCAPS\_BEZIERS, GCAPS\_ALTERNATEFILL, and GCAPS\_WINDINGFILL, to decide whether to call the driver. If GDI does call the driver, the driver either performs the operation or returns, informing GDI that the path or clipping requested is too complex to be handled by the device. In the latter case, GDI breaks the request down into several simpler operations.
 

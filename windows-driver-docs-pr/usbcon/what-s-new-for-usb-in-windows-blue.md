@@ -49,15 +49,15 @@ These samples demonstrate the use of the [**Windows.Devices.Usb**](/uwp/api/Wind
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="" id="custom-usb-device-access-sample"></a><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">Custom USB device access sample</a></p></td>
+<td><p><a href="" id="custom-usb-device-access-sample"></a><a href="/samples/browse/" data-raw-source="[Custom USB device access sample](/samples/browse/)">Custom USB device access sample</a></p></td>
 <td><p>This sample shows how to communicate with a USB device. The sample can communicate with the OSR USB FX2 learning kit and the SuperMUTT device.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="" id="usb-cdc-control-sample"></a><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[USB CDC Control sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">USB CDC Control sample</a></p></td>
+<td><p><a href="" id="usb-cdc-control-sample"></a><a href="/samples/browse/" data-raw-source="[USB CDC Control sample](/samples/browse/)">USB CDC Control sample</a></p></td>
 <td><p>This sample shows how to communicate with a USB CDC (Communications Device Class) device and sends and receives data through serial ports, such as a USB serial converter cable.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="" id="firmware-update-usb-device-sample"></a><a href="https://go.microsoft.com/fwlink/p/?linkid=309716" data-raw-source="[Firmware Update USB Device sample](https://go.microsoft.com/fwlink/p/?linkid=309716)">Firmware Update USB Device sample</a></p></td>
+<td><p><a href="" id="firmware-update-usb-device-sample"></a><a href="/samples/browse/" data-raw-source="[Firmware Update USB Device sample](/samples/browse/)">Firmware Update USB Device sample</a></p></td>
 <td><p>This sample shows how a UWP app can update the firmware of a USB device. The update operation runs as a background task.</p></td>
 </tr>
 </tbody>
@@ -115,7 +115,7 @@ In Windows 8.1, the performance and reliability of both USB 3.0 and 2.0 driver 
     -   [USB 3.0 Suspend Test](/previous-versions/windows/hardware/hck/jj125210(v=vs.85))
 -   MUTT and SuperMUTT devices are now USB-IF compliance devices. The devices and the accompanying software package are integrated in to the HCK suite of USB tests. They provide automated testing that can be used during the development cycle of USB controllers, devices and systems, especially stress testing.
 
-    MUTT hardware can be purchased from [JJG Technologies](https://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
+    MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/mutt.htm). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
 ## Improved USB diagnostic tools and debugger extensions
 

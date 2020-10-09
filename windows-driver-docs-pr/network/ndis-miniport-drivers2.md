@@ -51,6 +51,6 @@ Through its non-NDIS lower edge, a miniport driver uses the class interface for 
 
 ## Related topics
 
-[NDIS Miniport Drivers](ndis-miniport-drivers.md)
+[NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md)
 
 [NDIS Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

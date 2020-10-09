@@ -13,7 +13,7 @@ The sensor driver must implement the [ISensorDriver](/windows-hardware/drivers/d
 
 ## Method to Enumerate Sensors
 
-The class extension will always first enumerate the available sensors for the device by calling [**ISensorDriver::OnGetSupportedSensorObjects**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects). For each sensor, your driver must return an [IPortableDeviceValues](https://go.microsoft.com/fwlink/p/?linkid=131486) object that contains a string ID (unique for the device) and other required property values.
+The class extension will always first enumerate the available sensors for the device by calling [**ISensorDriver::OnGetSupportedSensorObjects**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupportedsensorobjects). For each sensor, your driver must return an [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) object that contains a string ID (unique for the device) and other required property values.
 
 ## Methods to Manage Client Connections
 
@@ -30,6 +30,4 @@ Client applications can also retrieve sensor data as **data fields**, or **prope
 ## Methods to Manage WPD Commands
 
 When the sensor class extension has received an I/O control command through [**ISensorClassExtension::ProcessIoControl**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-processiocontrol) for which it does not provide a handler, it calls [**ISensorDriver::OnProcessWpdMessage**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-onprocesswpdmessage). This callback method signals the driver that a WPD command has not been processed and gives the driver an opportunity to process the command. This means that you can create custom WPD commands and provide custom handlers in your driver, to extend sensor platform functionality.
-
- 
 

@@ -64,7 +64,7 @@ Each port driver implements an **IPortXxx** interface, which it presents to the 
 </tr>
 <tr class="even">
 <td align="left"><p>WavePci</p></td>
-<td align="left"><p><a href="/previous-versions/windows/hardware/drivers/ff536905(v=vs.85)" data-raw-source="[IPortWavePci](/previous-versions/windows/hardware/drivers/ff536905(v=vs.85))">IPortWavePci</a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci" data-raw-source="[IPortWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepci)">IPortWavePci</a></p></td>
 <td align="left"><p><a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci" data-raw-source="[IMiniportWavePci](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepci)">IMiniportWavePci</a></p></td>
 </tr>
 <tr class="odd">

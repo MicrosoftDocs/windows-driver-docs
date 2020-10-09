@@ -28,14 +28,14 @@ Before you start running devfund tests, make sure that you meet the following re
 
     You can download Visual Studio and WDK from [Downloads for Windows Hardware Development](https://go.microsoft.com/fwlink/p/?linkid=309780).
 
-    For instructions about configuration, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://go.microsoft.com/fwlink/p/?linkid=235504).
+    For instructions about configuration, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](/previous-versions//hh698272(v=vs.85)).
 
 -   Before you connect the host computer to the test computer, you must enable the File and Print Sharing and Network Discovery on the test computer. You can enable those options either in Control Panel or by using the following command in an elevated Command Prompt:
 
     `netsh.exe advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes`
 
 -   Set up and configure the MUTT device and install the firmware. For more information, see [How to prepare the test system](mutt-testing-options.md).
--   Provision the test computer. For instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](https://go.microsoft.com/fwlink/p/?linkid=235504).
+-   Provision the test computer. For instructions, see [Configuring a Computer for Driver Deployment, Testing, and Debugging](/previous-versions//hh698272(v=vs.85)).
 
 ### Scheduling tests
 

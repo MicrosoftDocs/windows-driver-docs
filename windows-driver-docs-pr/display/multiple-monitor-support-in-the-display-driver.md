@@ -22,7 +22,7 @@ Display drivers must be implemented without using global variables. All state mu
 
 To track window changes in a multiple-monitor system, a driver can request GDI to create WNDOBJ objects with desktop coordinates. The driver does this by calling [**EngCreateWnd**](/windows/win32/api/winddi/nf-winddi-engcreatewnd) using the flag WO\_RGN\_DESKTOP\_COORD. See [Tracking Window Changes](tracking-window-changes.md) for more information.
 
-In a multiple-monitor system, GDI stores the device's desktop position in the **dmPosition** member of the [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-_devicemodew) structure.
+In a multiple-monitor system, GDI stores the device's desktop position in the **dmPosition** member of the [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devicemodew) structure.
 
  
 

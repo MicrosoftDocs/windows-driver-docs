@@ -24,7 +24,7 @@ For a list of Device Fundamental tests that have specific requirements, see [Dev
 
 - If the targeted audio device has HDMI video and audio output capability, to perform audio tests, the device must be connected to an HDMI audio capable device such as an HDMI Monitor or an A/V Receiver.
 
-### Type of I/O plug-in performs
+### Type of I/O plug-in performs (audio)
 
 - Plays a sine tune on render type endpoint. Captures audio on a capture type endpoint.
 
@@ -66,7 +66,7 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 - No special requirements.
 
-#### Type of I/O plug-in performs
+#### Type of I/O plug-in performs (Bluetooth)
 
 - Uses [**BluetoothFindFirstDevice function**](/windows/win32/api/bluetoothapis/nf-bluetoothapis-bluetoothfindfirstdevice) to find a Bluetooth device.
 
@@ -232,15 +232,15 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 ### Requirements (WLAN)
 
-- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](/previous-versions/windows/hardware/hck/dn260302(v=vs.85)) in the HCK documentation.
 
 ### Type of I/O plug-in performs (WLAN)
 
-- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](/previous-versions/windows/hardware/hck/dn260302(v=vs.85)) in the HCK documentation.
 
 ### How to triage test failures (WLAN)
 
-- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](https://go.microsoft.com/fwlink/p/?linkid=309556) in the HCK documentation.
+- See [Troubleshooting WLAN SimpleIO plugin failures that are logged by Device Fundamentals tests](/previous-versions/windows/hardware/hck/dn260302(v=vs.85)) in the HCK documentation.
 
 ## USB Controller and HUB with Mutt
 
@@ -258,8 +258,8 @@ xperf.exe -merge Audio_SimpleIo_Kernel.etl Audio_SimpleIo.etl Audio_SimpleIo _Me
 
 - Start by examining the messages in the test log files.
 - Further investigate by enabling Event Tracing for Windows (ETW) on the USB 2.0 and USB 3.0 stacks.
-  - For USB 2.0, see Microsoft Windows USB Core Team Blog - [ETW in the Windows 7 USB core stack](https://go.microsoft.com/fwlink/p/?linkid=266442)
-  - For USB 3.0, see the Microsoft Windows USB Core Team Blog - [How to Capture and Read USB ETW Traces in Windows 8]( https://go.microsoft.com/fwlink/p/?linkid=266443)
+  - For USB 2.0, see Microsoft Windows USB Core Team Blog - [ETW in the Windows 7 USB core stack](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/etw-in-the-windows-7-usb-core-stack/ba-p/270689)
+  - For USB 3.0, see the Microsoft Windows USB Core Team Blog - [How to Capture and Read USB ETW Traces in Windows 8](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/how-to-capture-and-read-usb-etw-traces-in-windows-8/ba-p/270762)
 
 ## Device Fundamental tests that have specific device configuration requirements
 

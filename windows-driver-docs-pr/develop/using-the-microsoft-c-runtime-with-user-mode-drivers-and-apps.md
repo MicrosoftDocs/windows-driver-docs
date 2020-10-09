@@ -123,7 +123,7 @@ The following libraries contain the C run-time library functions.
 
 To determine which DLLs you must redistribute with your application, you should collect a list of the DLLs that your application depends on. One way to collect the list is to run Dependency Walker (depends.exe).
 
-When you have the list of dependencies, compare it to the list of files described in [Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](https://go.microsoft.com/fwlink/p/?linkid=320999). For more information, see [Determining Which DLLs to Redistribute](https://go.microsoft.com/fwlink/p/?linkid=321001) and [Choosing a Deployment Method](https://go.microsoft.com/fwlink/p/?linkid=321651).
+When you have the list of dependencies, compare it to the list of files described in [Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](https://go.microsoft.com/fwlink/p/?linkid=320999). For more information, see [Determining Which DLLs to Redistribute](/previous-versions/visualstudio/visual-studio-2013/8kche8ah(v=vs.120)) and [Choosing a Deployment Method](/previous-versions/visualstudio/visual-studio-2013/ms235316(v=vs.120)).
 
 You cannot redistribute all of the files that are included in Visual Studio; you are only permitted to redistribute the files that are specified in [Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](https://go.microsoft.com/fwlink/p/?linkid=320999). Debug versions of applications and the various Visual C++ dynamic-link libraries are not redistributable.
 
@@ -139,15 +139,8 @@ For UMDF drivers, use static linking of the CRT with your driver code.
 ## <span id="related_topics"></span>Related topics
 
 
-* [Determining Which DLLs to Redistribute](https://go.microsoft.com/fwlink/p/?linkid=321001)
+* [Determining Which DLLs to Redistribute](/previous-versions/visualstudio/visual-studio-2013/8kche8ah(v=vs.120))
 * [Redistributable Code for Visual Studio 2013 Preview and Visual Studio 2013 SDK Preview](https://go.microsoft.com/fwlink/p/?linkid=320999)
-* [Choosing a Deployment Method](https://go.microsoft.com/fwlink/p/?linkid=321651)
+* [Choosing a Deployment Method](/previous-versions/visualstudio/visual-studio-2013/ms235316(v=vs.120))
  
-
- 
-
-
-
-
-
 

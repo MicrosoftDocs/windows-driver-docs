@@ -53,7 +53,7 @@ The source and destination rectangles are required for either subrectangle ProcA
 
 The destination surface can be an off-screen plane, a D3D render target, a D3D texture, or a D3D texture that is also a render target. The destination surface will always be allocated in local video memory. The pixel format of the destination surface will be the one indicated in the DXVA\_ProcAmpControlCaps structure, unless a YUV-to-RGB color space conversion is being performed as part of the ProcAmp adjustment procedure. In this case, the destination surface format will be an RGB format with at least 8 bits of precision for each color component.
 
-The sample *ProcAmpControlBlt* function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to the driver-supplied *DdMoCompRender* callback that references the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
+The sample *ProcAmpControlBlt* function maps directly to a call to the **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure. The **RenderMoComp** member points to the driver-supplied *DdMoCompRender* callback that references the [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) structure. The DD\_RENDERMOCOMPDATA structure is filled as follows.
 
 <table>
 <colgroup>
@@ -105,5 +105,5 @@ For the DirectX VA device used for ProcAmp control, RenderMoComp is called witho
 
 [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
-[**DD\_CREATEMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-_dd_createmocompdata)
+[**DD\_CREATEMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_createmocompdata)
 

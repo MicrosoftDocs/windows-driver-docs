@@ -45,7 +45,7 @@ On your host computer, install kits and tools as described in [Sharks Cove hardw
 ## Download and extract the SpbAccelerometer sample
 
 
-On the host computer go to [this page](https://go.microsoft.com/fwlink/p?linkid=506965) and click the download button. Click **Save**, and then click **Open Folder**. Right click SpbAccelerometer Sample Driver (UMDF Version 1).zip, and choose **Extract All**. Specify or browse to a folder for the extracted files. For example, you could extract to c:\\SpbAccelerometer.
+On the host computer go to [this page](/samples/browse/) and click the download button. Click **Save**, and then click **Open Folder**. Right click SpbAccelerometer Sample Driver (UMDF Version 1).zip, and choose **Extract All**. Specify or browse to a folder for the extracted files. For example, you could extract to c:\\SpbAccelerometer.
 
 ## Open the driver solution in Visual Studio
 

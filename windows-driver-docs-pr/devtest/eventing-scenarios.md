@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 # Eventing Scenarios
 
-The Eventing scenario tests Eventing, as constrained in the [Device Profile for Web Services (DPWS)](https://schemas.xmlsoap.org/ws/2005/05/devprof/).
+The Eventing scenario tests Eventing, as constrained in the [Devices Profile for Web Services (DPWS)](https://docs.oasis-open.org/ws-dd/ns/dpws/2009/01).
 
 The goal of this scenario is not discovery of the Hosted Service endpoints. This scenario assumes that these endpoints were discovered or provided before starting this scenario.
 

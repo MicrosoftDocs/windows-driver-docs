@@ -63,12 +63,12 @@ Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-se
 There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_powermessagewake_params_a) structure is associated with the *DeviceInfoData*.
+An [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_powermessagewake_params_a) structure is associated with the *DeviceInfoData*.
 
 ### Installer Output
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
-An installer can modify the [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_powermessagewake_params_a) to supply custom text for a device's power properties page.
+An installer can modify the [**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_powermessagewake_params_a) to supply custom text for a device's power properties page.
 
 ### Installer Return Value
 
@@ -115,7 +115,7 @@ Requirements
 
 [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
-[**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-_sp_powermessagewake_params_a)
+[**SP_POWERMESSAGEWAKE_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_powermessagewake_params_a)
 
  
 

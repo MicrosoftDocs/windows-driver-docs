@@ -124,11 +124,11 @@ The lab has the following three sections.
 
     Double click on the exe file to run the sample app.
 
-    ![Faulting app dialog box](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png)
+    ![Screenshot that shows the .exe file running in the console.](images/ttd-time-travel-walkthrough-faulting-app-dialog-box.png)
 
     If this dialog box appears, select **Close program**
 
-    ![Faulting app dialog box](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png)
+    ![Screenshot that shows the "(filename).exe has stopped working" dialog box.](images/ttd-time-travel-walkthrough-program-not-working-dialog-box.png)
 
     In the next section of the walkthrough, we will record the execution of the sample app to see if we can determine why this exception is occurring.
 

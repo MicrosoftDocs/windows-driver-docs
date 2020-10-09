@@ -12,7 +12,7 @@ The easiest way to write a Windows desktop app that communicates with a USB devi
 ## Prerequisites
 
 - To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2019 or Microsoft Visual Studio Professional 2019 and then install the WDK. You can find information about how to set up Visual Studio and the WDK on the [WDK download page](../download-the-wdk.md).
-- Debugging Tools for Windows are included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=235427).
+- Debugging Tools for Windows are included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](../debugger/index.md).
 
 ## Creating a WinUSB application
 
@@ -65,7 +65,7 @@ To create an application from the template:
 11. Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
 12. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
 
-![winusb application template](images/winusb-template-configuration-manager.png)
+![Screenshot that shows the "Configuration Manager" window with "Debug" and "x64" selected.](images/winusb-template-configuration-manager.png)
 
 ## Building, deploying and debugging the project
 
@@ -358,10 +358,10 @@ In the preceding function, the application gets the device path by calling these
 
     Alternately, you can call [**SetupDiEnumDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinfo) that enumerates the device information set and returns information about device interface elements, specified by the index, in a caller-allocated [**SP\_DEVINFO\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure. You can then pass a reference to this structure in the *DeviceInfoData* parameter of the [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) function.
 
-3. [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to get detailed data for the device interface. The information is returned in a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure. Because the size of the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure varies, **SetupDiGetDeviceInterfaceDetail** is called twice. The first call gets the buffer size to allocate for the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure. The second call fills the allocated buffer with detailed information about the interface.
+3. [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) to get detailed data for the device interface. The information is returned in a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_detail_data_a) structure. Because the size of the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure varies, **SetupDiGetDeviceInterfaceDetail** is called twice. The first call gets the buffer size to allocate for the **SP\_DEVICE\_INTERFACE\_DETAIL\_DATA** structure. The second call fills the allocated buffer with detailed information about the interface.
    1. Calls [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) with *DeviceInterfaceDetailData* parameter set to **NULL**. The function returns the correct buffer size in the *requiredlength* parameter. This call fails with the ERROR\_INSUFFICIENT\_BUFFER error code. This error code is expected.
-   2. Allocates memory for a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure based on the correct buffer size that is retrieved in the *requiredlength* parameter.
-   3. Calls [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) again and passes it a reference to the initialized structure in the *DeviceInterfaceDetailData* parameter. When the function returns, the structure is filled with detailed information about the interface. The device path is in the [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-_sp_device_interface_detail_data_a) structure's **DevicePath** member.
+   2. Allocates memory for a [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_detail_data_a) structure based on the correct buffer size that is retrieved in the *requiredlength* parameter.
+   3. Calls [**SetupDiGetDeviceInterfaceDetail**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacedetaila) again and passes it a reference to the initialized structure in the *DeviceInterfaceDetailData* parameter. When the function returns, the structure is filled with detailed information about the interface. The device path is in the [**SP\_DEVICE\_INTERFACE\_DETAIL\_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_device_interface_detail_data_a) structure's **DevicePath** member.
 
 ### Creating a file handle for the device
 

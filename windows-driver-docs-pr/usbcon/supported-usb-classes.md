@@ -63,7 +63,7 @@ The device setup classes are different from USB device classes discussed earlier
       {4d36e96c-e325-11ce-bfc1-08002be10318}</td>
       <td>Usbaudio.sys<p>Wdma\_usb.inf</p></td>
       <td>Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-      <td>Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in <a href="/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components">Kernel-Mode WDM Audio Components</a>. For more information about Windows audio support, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8751">Audio Device Technologies for Windows</a> website.</td>
+      <td>Microsoft provides support for the USB audio device class by means of the Usbaudio.sys driver. For more information, see "USBAudio Class System Driver" in <a href="/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components">Kernel-Mode WDM Audio Components</a>. For more information about Windows audio support, see the <a href="/windows-hardware/drivers/audio/">Audio Device Technologies for Windows</a> website.</td>
     </tr>
     <tr>
       <td rowspan="4">Communications and CDC Control (02h)</td>
@@ -92,7 +92,7 @@ The device setup classes are different from USB device classes discussed earlier
         <td><strong>HIDClass</strong></br>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</td>
         <td>Hidclass.sys</br>Hidusb.sys</br>Input.inf</td>
         <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="/previous-versions/jj126193(v=vs.85)">HID Architecture</a> and <a href="/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8709">Input and HID - Architecture and Driver Support</a> website.</td>
+        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="/previous-versions/jj126193(v=vs.85)">HID Architecture</a> and <a href="/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="/windows-hardware/drivers/hid/">Input and HID - Architecture and Driver Support</a> website.</td>
       </tr>
       <tr>
         <td>Physical (05h)</td>
@@ -107,14 +107,14 @@ The device setup classes are different from USB device classes discussed earlier
       <td><strong>Image</strong></br>{6bdd1fc6-810f-11d0-bec7-08002be2092f}</td>
       <td>Usbscan.sys</br>Sti.inf</td>
       <td>Windows 10 for desktop editions</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-      <td>Microsoft provides the Usbscan.sys driver that manages USB digital cameras and scanners for Windows XP and later operating systems. This driver implements the USB component of the Windows Imaging Architecture (WIA). For more information about WIA, see <a href="/windows-hardware/drivers/image/windows-image-acquisition-drivers">Windows Image Acquisition Drivers</a> and the <a href="https://go.microsoft.com/fwlink/p/?linkid=8768">Windows Imaging Component</a> website. For a description of the role that Usbscan.sys plays in the WIA, see <a href="/windows-hardware/drivers/image/wia-core-components">WIA Core Components</a>.</td>
+      <td>Microsoft provides the Usbscan.sys driver that manages USB digital cameras and scanners for Windows XP and later operating systems. This driver implements the USB component of the Windows Imaging Architecture (WIA). For more information about WIA, see <a href="/windows-hardware/drivers/image/windows-image-acquisition-drivers">Windows Image Acquisition Drivers</a> and the <a href="/windows-hardware/drivers/image/">Windows Imaging Component</a> website. For a description of the role that Usbscan.sys plays in the WIA, see <a href="/windows-hardware/drivers/image/wia-core-components">WIA Core Components</a>.</td>
     </tr>
     <tr>
       <td>Printer (07h)</td>
       <td><strong>USB</strong><p><strong>Note</strong>   Usbprint.sys enumerates printer devices under the device set up class: <strong>Printer</strong><p> {4d36e979-e325-11ce-bfc1-08002be10318}.</td>
       <td>Usbprint.sys</br>Usbprint.inf</td>
       <td>Windows 10 for desktop editions</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-      <td>Microsoft provides the Usbprint.sys class driver that manages USB printers. For information about implementation of the printer class in Windows, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8764">Printing - Architecture and Driver Support</a> website.</td>
+      <td>Microsoft provides the Usbprint.sys class driver that manages USB printers. For information about implementation of the printer class in Windows, see the <a href="/windows-hardware/drivers/print/">Printing - Architecture and Driver Support</a> website.</td>
     </tr>
     <tr>
       <td rowspan="3">Mass Storage (08h)</td>
@@ -122,7 +122,7 @@ The device setup classes are different from USB device classes discussed earlier
           <td><strong>USB</strong></td>
           <td>Usbstor.sys</td>
           <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-          <td>Microsoft provides the Usbstor.sys port driver to manage USB mass storage devices with Microsoft's native storage class drivers. For an example device stack that is managed by this driver, see <a href="/windows-hardware/drivers/storage/device-object-example-for-a-usb-mass-storage-device">Device Object Example for a USB Mass Storage Device</a>. For information about Windows storage support, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8766">Storage Technologies</a> website.</td>
+          <td>Microsoft provides the Usbstor.sys port driver to manage USB mass storage devices with Microsoft's native storage class drivers. For an example device stack that is managed by this driver, see <a href="/windows-hardware/drivers/storage/device-object-example-for-a-usb-mass-storage-device">Device Object Example for a USB Mass Storage Device</a>. For information about Windows storage support, see the <a href="/windows-hardware/drivers/storage/">Storage Technologies</a> website.</td>
         </tr>
         <tr>
          <td><strong>SCSIAdapter</strong><p>{4d36e97b-e325-11ce-bfc1-08002be10318}</td>
@@ -220,7 +220,7 @@ The device setup classes are different from USB device classes discussed earlier
 {4d36e972-e325-11ce-bfc1-08002be10318}<p><strong>Note</strong>  Supports SubClass 04h and Protocol 01h</td>
       <td>Rndismp.sys</br>Rndismp.inf</td>
       <td>Windows 10 for desktop editions</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Vista</td>
-      <td>Prior to Windows Vista, support for CDC is limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (<strong>bInterfaceProtocol</strong>) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see <a href="/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-">Overview of Remote NDIS</a>. The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=8759">Networking and Wireless Technologies</a> website.</td>
+      <td>Prior to Windows Vista, support for CDC is limited to the RNDIS-specific implementation of the Abstract Control Model (ACM) with a vendor-unique protocol (<strong>bInterfaceProtocol</strong>) value of 0xFF. The RNDIS facility centers the management of all 802-style network cards in a single class driver, Rndismp.sys. For a detailed discussion of remote NDIS, see <a href="/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-">Overview of Remote NDIS</a>. The mapping of remote NDIS to USB is implemented in the Usb8023.sys driver. For further information about networking support in Windows, see the <a href="/windows-hardware/drivers/network/">Networking and Wireless Technologies</a> website.</td>
     </tr>
     <tr>
       <td>Application Specific (FEh)</td>

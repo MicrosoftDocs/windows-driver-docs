@@ -88,7 +88,5 @@ The following rules apply when you use **RunOnce** registry keys for device inst
 
     Before the *device installation application* creates the **RunOnce** entries, it informs the current user that a user who has administrator privileges must log on after a system restart.
 
-    For more information, see [Developing Applications that Run at Logon on Windows Vista](https://go.microsoft.com/fwlink/p/?linkid=133224).
-
- 
+    For more information, see [Developing Applications that Run at Logon on Windows Vista](/previous-versions/bb325654(v=msdn.10)).
 

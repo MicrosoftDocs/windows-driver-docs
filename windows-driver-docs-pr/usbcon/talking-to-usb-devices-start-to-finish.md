@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 **Summary**
 
 -   End-to-end walkthrough for creating a UWP app that talks to a USB device
--   **Companion sample**: [Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
+-   **Companion sample**: [Custom USB device access sample](/samples/browse/)
 
 **Important APIs**
 
@@ -23,7 +23,7 @@ Use the Windows Runtime APIs, introduced in Windows 8.1, to write UWP apps that
 
 Here we describe, how your UWP app using C++, C#, or Visual Basic app can implement those tasks, and link to examples that demonstrate the use of classes included in [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb). We'll go over the device capabilities required in the app manifest and how to launching the app when the device is connected. And we'll show how to run a data transfer task in the background even when the app is suspended to conserve battery life.
 
-Follow the steps in this section or, skip directly to the [Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716). The companion sample implements all the steps here, but to keep things moving we won't walk through the code. Certain steps have a **Find it in the sample** section to help you find the code quickly. The structure of the sample's source files is simple and flat so you can easily find code without having to drill down through multiple layers of source files. But you may prefer to break up and organize your own project differently.
+Follow the steps in this section or, skip directly to the [Custom USB device access sample](/samples/browse/). The companion sample implements all the steps here, but to keep things moving we won't walk through the code. Certain steps have a **Find it in the sample** section to help you find the code quickly. The structure of the sample's source files is simple and flat so you can easily find code without having to drill down through multiple layers of source files. But you may prefer to break up and organize your own project differently.
 
 ## In this section
 
@@ -107,7 +107,7 @@ Alternatively, you can view information the registry. For more information, see 
 <tr class="even">
 <td><a href="" id="step4"></a>
 <p><strong>Step 4</strong>—Create a basic Visual Studio 2013 project that you can extend in this tutorial.</p></td>
-<td>For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=617681" data-raw-source="[Getting started with UWP apps](https://go.microsoft.com/fwlink/p/?linkid=617681)">Getting started with UWP apps</a>.</td>
+<td>For more information, see <a href="/windows/uwp/get-started/" data-raw-source="[Getting started with UWP apps](/windows/uwp/get-started/)">Getting started with UWP apps</a>.</td>
 </tr>
 <tr class="odd">
 <td><a href="" id="step5"></a>
@@ -165,7 +165,7 @@ For more information, see <a href="/previous-versions/windows/apps/hh967756(v=wi
 <td><a href="" id="step7"></a>
 <p><strong>Step 7</strong>(Recommended)—Study your <a href="usb-device-layout.md" data-raw-source="[USB device layout](usb-device-layout.md)">USB device layout</a>.</p></td>
 <td><p>Review basic USB concepts about configuring the device and performing data transfers: <a href="usb-concepts-for-all-developers.md" data-raw-source="[Concepts for all USB developers](usb-concepts-for-all-developers.md)">Concepts for all USB developers</a>.</p>
-<p>View the device configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using <a href="https://go.microsoft.com/fwlink/p/?linkid=617721" data-raw-source="[USBView](https://go.microsoft.com/fwlink/p/?linkid=617721)">USBView</a>, you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</p></td>
+<p>View the device configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using <a href="/windows-hardware/drivers/debugger/usbview" data-raw-source="[USBView](../debugger/usbview.md)">USBView</a>, you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</p></td>
 </tr>
 <tr class="even">
 <td><a href="" id="step8"></a>
@@ -290,7 +290,7 @@ For more information, see <a href="/previous-versions/windows/apps/hh967756(v=wi
 <ol>
 <li>In your device metadata package, you must specify how the device should respond to an AutoPlay notification. On the <strong>Windows Info</strong> tab, select the <strong>UWP device app</strong> option and enter app information as shown here:</li>
 <li><p>In the app manifest, add <strong>AutoPlay Device</strong> declaration and launch information as shown here:</p>
-<p><img src="images/autoplay.png" alt="AutoPlay" /></p></li>
+<p><img src="images/autoplay.png" alt="Screenshot that shows the app manifest with 'Declarations' selected and 'AutoPlay Device' added." /></p></li>
 <li>In the OnActivated method of the App class, check if the app is activated by the device. If it is, then the method receives a DeviceEventArgs parameter value that contains the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id" data-raw-source="[&lt;strong&gt;DeviceInformation.Id&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceInformation#Windows_Devices_Enumeration_DeviceInformation_Id)"><strong>DeviceInformation.Id</strong></a> property value. This is the same value described in <a href="#step6" data-raw-source="[&lt;strong&gt;Step 6&lt;/strong&gt;—Extend the app to open the device for communication](#step6)"><strong>Step 6</strong>—Extend the app to open the device for communication</a>.</li>
 </ol>
 <p><strong>Find it in the sample:</strong> See files named Autoplay. For JavaScript, see default.js.</p></td>
@@ -381,8 +381,8 @@ Learn more from related samples.
 
 **Related Samples**
 
--   [USB CDC Control sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
--   [Firmware Update USB Device sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
+-   [USB CDC Control sample](/samples/browse/)
+-   [Firmware Update USB Device sample](/samples/browse/)
 
 [UWP app UI, start to finish (XAML)](/previous-versions/windows/apps/dn263191(v=win.10))
 
@@ -395,4 +395,3 @@ Learn more about creating UWP apps using C++, C#, or Visual Basic in general.
 [Asynchronous programming (UWP apps)](/previous-versions/windows/apps/hh464924(v=win.10))
 
 Learn about how to make your apps stay responsive when they do work that might take an extended amount of time.
-

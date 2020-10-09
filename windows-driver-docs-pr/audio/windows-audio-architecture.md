@@ -35,7 +35,7 @@ These older APIs are deprecated.
 -   [DirectShow](/windows/desktop/DirectShow/directshow)
 -   [DirectSound](/previous-versions/windows/desktop/ee416960(v=vs.85))
 -   [PlaySound](/previous-versions/dd743680(v=vs.85))
--   [Windows.Media.MediaControlContract](/uwp/extension-sdks/windows-desktop-extension-sdk)
+-   [Windows.Media.MediaControl](/uwp/api/Windows.Media.MediaControl)
 
 **Low level APIs**
 

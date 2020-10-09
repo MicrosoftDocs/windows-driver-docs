@@ -27,13 +27,13 @@ For example, the USER\_C\_FLAGS macro in a*sources* file is used to specify comm
   <ItemDefinitionGroup>
     <ClCompile>
       ...
-      <AdditionalOptions>%(AdditionalOptions) $(User_C_Flags)</AdditonalOptions>
+      <AdditionalOptions>%(AdditionalOptions) $(User_C_Flags)</AdditionalOptions>
       ...
     </ClCompile>
   </ItemDefinitionGroup>
 ```
 
-The mapping shown in the preceding example is from the PostToolsetRules.props file. The example mapping uses an MSBuild ItemDefinitionGroup to specify that $(User\_C\_Flags) should be appended to all items of type ClCompile within the AdditonalOptions metadata. You can find the properties files used in the conversion process in the C:\\Program Files (x86)\\Windows Kits\\8.0\\bin\\conversion directory.
+The mapping shown in the preceding example is from the PostToolsetRules.props file. The example mapping uses an MSBuild ItemDefinitionGroup to specify that $(User\_C\_Flags) should be appended to all items of type ClCompile within the AdditionalOptions metadata. You can find the properties files used in the conversion process in the C:\\Program Files (x86)\\Windows Kits\\8.0\\bin\\conversion directory.
 
 All of the conversion rules are specified using standard MSBuild syntax.
 
