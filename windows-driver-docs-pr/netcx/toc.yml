@@ -32,7 +32,7 @@
     href: packet-descriptors-and-extensions.md
   - name: "NetAdapterCx hardware offloads"
     items: 
-    - name: "Introduction to hardware offloads"
+    - name: "Introduction to NetAdapterCx hardware offloads"
       href: introduction-to-hardware-offloads.md
     - name: "Checksum offload"
       href: checksum-offload.md

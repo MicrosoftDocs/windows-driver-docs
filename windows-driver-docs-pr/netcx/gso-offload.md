@@ -34,7 +34,7 @@ To configure GSO, the client driver:
 
 1. Calls [**NetAdapterOffloadSetGsoCapabilities**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetgsocapabilities) to register the structure with NetAdapterCx.
 
-During the call to **NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_GSO*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_gso)callback. The system invokes this callback later if active offload capabilities change.
+During the call to **NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_GSO*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_gso) callback. The system invokes this callback later if active offload capabilities change.
 
 ### Rules for indicating hardware GSO capabilities
 
