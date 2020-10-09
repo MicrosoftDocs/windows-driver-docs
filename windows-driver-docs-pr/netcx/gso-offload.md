@@ -42,9 +42,9 @@ The following rules apply to the [**NET_ADAPTER_OFFLOAD_GSO_CAPABILITIES**](/win
 
 1. The driver must set the **Layer3Flags** and **Layer4Flags**.
 
-1. If the NIC supports LSO, the driver must populate the **TCPFlags** field with the `NetAdapterOffloadLayer4FlagTcpWithoutOptions` TCP flag.
+1. If the NIC supports LSO, the driver must populate the **Layer4Flags** field with the `NetAdapterOffloadLayer4FlagTcpWithoutOptions` TCP flag.
 
-1. If the NIC supports USO, the driver must populate the **Layer4Flags** field with the corresponding UDP flag.
+1. If the NIC supports USO, the driver must populate the **Layer4Flags** field with the `NetAdapterOffloadLayer4FlagUdp` UDP flag.
 
 1. **MaximumOffloadSize** and **MinimumSegmentCount** are mandatory fields.
 
