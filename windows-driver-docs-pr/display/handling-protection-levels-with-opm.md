@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 # Handling Protection Levels with OPM
 
-Each output protection type (for example, [Analog Copy Protection (ACP)](https://business.tivo.com/services/acp-technology), [Content Generation Management System Analog (CGMS-A)](cgms-a-standards.md), [High-bandwidth Digital Content Protection (HDCP)]((https://www.digital-cp.com/hdcp-specifications)), and [DisplayPort](https://go.microsoft.com/fwlink/p/?linkid=71382) Content Protection (DPCP)) has protection levels associated with it.
+Each output protection type (for example, [Analog Copy Protection (ACP)](https://business.tivo.com/services/acp-technology), [Content Generation Management System Analog (CGMS-A)](cgms-a-standards.md), [High-bandwidth Digital Content Protection (HDCP)](https://www.digital-cp.com/hdcp-specifications), and [DisplayPort](https://go.microsoft.com/fwlink/p/?linkid=71382) Content Protection (DPCP)) has protection levels associated with it.
 
 A graphics adapter is not required to support any output protection types. However, a graphics adapter must accurately report the protection types that it supports for each of the graphics adapter's outputs and the currently set protection level for each output.
 
