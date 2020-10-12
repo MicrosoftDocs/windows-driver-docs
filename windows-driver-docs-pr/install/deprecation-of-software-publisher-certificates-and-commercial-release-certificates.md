@@ -30,6 +30,7 @@ As a result, all [software publisher certificates](software-publisher-certificat
 * [How can we automate Microsoft Test Signing to work with our build processes?](#how-can-we-automate-microsoft-test-signing-to-work-with-our-build-processes)
 * [Starting in 2021, will Microsoft be the sole provider of production kernel mode code signatures?](#starting-in-2021-will-microsoft-be-the-sole-provider-of-production-kernel-mode-code-signatures)
 * [Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?](#hardware-dev-center-doesnt-provide-driver-signing-for-windows-xp-how-can-i-have-my-drivers-run-in-xp)
+* [How do production signing options differ by Windows version?](#how-do-production-signing-options-differ-by-windows-version)
 
 ### What is the expiration schedule of the trusted cross-certificates?
 
@@ -63,13 +64,15 @@ The majority of cross-signed root certificates will expire in 2021, according to
 
 ### What alternatives to cross-signed certificates are available for testing drivers?
 
-The following alternatives can be used:
+For all options below, the [TESTSIGNING boot option](the-testsigning-boot-configuration-option.md) must be enabled.
 
 - [MakeCert Process](makecert-test-certificate.md)
 - [WHQL Test Signature Program](whql-test-signature-program.md)
 - [Enterprise CA Process](enterprise-ca-test-certificate.md)
 
-To use these options, you must enable [TESTSIGNING](the-testsigning-boot-configuration-option.md). See [Signing drivers during development and test](./introduction-to-test-signing.md) for more information.
+For testing drivers at boot, see Installing Test Signed Drivers.
+
+For more info, see [Signing drivers during development and test](./introduction-to-test-signing.md).
 
 ### What will happen to my existing signed driver packages? 
 
@@ -89,7 +92,7 @@ Yes, these certificates will continue to work until they expire. Code which is s
 
 ### Will I be able to continue using my EV certificate for signing submissions to Hardware Dev Center?  
 
-Yes, you can use a valid EV certificate to sign a submission package for Hardware Dev Center, but a driver package signed by an EV certificate no longer validates after the certificate's expiration date. 
+Yes, EV certificates will continue to work until they expire. If you sign a kernel-mode driver with an EV certificate after the expiration of the cross-certificate that issued that EV certificate, the resulting driver will not load, run, or install.
 
 ### How do I know if my signing certificate will be impacted by these expirations? 
 
@@ -112,6 +115,14 @@ Yes.
 ### Hardware Dev Center doesn't provide driver signing for Windows XP, how can I have my drivers run in XP?
 
 Drivers can still be signed with a 3rd party issued code signing certificate. However, the certificate that signed the driver must be imported into the `Local Computer Trusted Publishers` certificate store on the target computer. See [Trusted Publishers Certificate Store](trusted-publishers-certificate-store.md) for more information.
+
+### How do production signing options differ by Windows version?
+
+|Driver runs on| Drivers signed before July 1 2021 by| Driver signed on or after July 1 2021 by |
+| - | - | - |
+|Windows Server 2008 and later, Windows 7, Windows 8| WHQL or cross-signed drivers| WHQL or drivers cross-signed before July 1 2021|
+|Windows 10| WHQL or attested | WHQL or attested |
+
 
 ## Related information
 
