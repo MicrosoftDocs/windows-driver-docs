@@ -128,7 +128,7 @@ NTSTATUS
 }
 ```
 
-For more information about each of the supported socket options, see [**WSK Socket Options**](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-socket-options).
+For more information about each of the supported socket options, see [**WSK Socket Options**](so-broadcast.md).
 
 The following code example shows how a WSK application can execute the [**SIO\_WSK\_SET\_REMOTE\_ADDRESS**](./sio-wsk-set-remote-address.md) socket IOCTL operation on a datagram socket.
 
@@ -238,7 +238,7 @@ NTSTATUS
 }
 ```
 
-For more information about each of the supported socket IOCTL operations, see [WSK Socket IOCTL Operations](https://docs.microsoft.com/windows-hardware/drivers/network/wsk-socket-ioctl-operations).
+For more information about each of the supported socket IOCTL operations, see [WSK Socket IOCTL Operations](sio-wsk-query-ideal-send-backlog.md).
 
  
 
