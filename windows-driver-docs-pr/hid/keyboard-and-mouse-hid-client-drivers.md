@@ -90,7 +90,7 @@ See the following for information about keyboard layouts:
 
 - Keyboard header file, kdb.h, in the Windows Driver Development Kit (DDK), which documents general information about keyboard layouts.
 
-- Sample keyboard [layouts](/samples/browse/).
+- Sample keyboard [layouts](/samples/microsoft/windows-driver-samples/keyboard-layout-samples/).
 
 To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](/globalization/windows-keyboard-layouts).
 
