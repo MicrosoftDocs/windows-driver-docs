@@ -17,7 +17,13 @@ ms.localizationpriority: medium
 
 The optional **bitmap** element is used to display a bitmap image to the left of the body text in a message box.
 
-The **bitmap** element is defined in the *asyncui* namespace at this URI: https://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **bitmap** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 

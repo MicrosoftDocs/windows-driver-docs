@@ -29,7 +29,11 @@ This set of guidelines applies to these callback routines:
 
 [_PLOAD_IMAGE_NOTIFY_ROUTINE_](/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pload_image_notify_routine)
 
--    Keep notify routines short and simple.
+[_POB_PRE_OPERATION_CALLBACK_](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback)
+
+[_POB_POST_OPERATION_CALLBACK_](/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback)
+
+-    Keep routines short and simple.
 -    Do not make calls into a user mode service to validate the process, thread, or image. 
 -    Do not make registry calls. 
 -    Do not make blocking and/or Interprocess Communication (IPC) function calls. 
@@ -37,13 +41,14 @@ This set of guidelines applies to these callback routines:
 -    Use [System Worker Threads](./system-worker-threads.md) to queue work especially work involving: 
         -    Slow API’s or API’s that call into other process.
         -    Any blocking behavior which could interrupt threads in core services. 
+-    If you use System Worker Threads do not wait on the work to complete. Doing so defeats the purpose of queuing the work to be completed asynchronously.
 -    Be considerate of best practices for kernel mode stack usage. For examples, see [How do I keep my driver from running out of kernel-mode stack?](/previous-versions/windows/hardware/design/dn613940(v=vs.85)) and [Key Driver Concepts and Tips](/previous-versions/windows/hardware/design/dn614604(v=vs.85)).
 
 
 ## Subsystem Processes
 
 
-Starting in Windows 10, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](https://go.microsoft.com/fwlink/p/?linkid=838012) blog.
+Starting in Windows 10, the Windows Subsystem for Linux (WSL) enables a user to run native Linux ELF64 binaries on Windows, alongside other Windows applications. For information about WSL architecture and the user-mode and kernel-mode components that are required to run the binaries, see the posts on the [Windows Subsystem for Linux](/archive/blogs/wsl/) blog.
 
 One of the components is a *subsystem process* that hosts the unmodified user-mode Linux binary, such as /bin/bash. Subsystem processes do not contain data structures associated with Win32 processes, such as Process Environment Block (PEB) and Thread Environment Block (TEB). For a subsystem process, system calls and user mode exceptions are dispatched to a paired driver.
 
@@ -52,6 +57,4 @@ Here are the changes to the [Process and Thread Manager Routines](/windows-hardw
 -   The WSL type is indicated by the **SubsystemInformationTypeWSL** value in the [**SUBSYSTEM\_INFORMATION\_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type) enumeration. Drivers can call [**NtQueryInformationProcess**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationprocess) and [**NtQueryInformationThread**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationthread) to determine the underlying subsystem. Those calls return **SubsystemInformationTypeWSL** for WSL.
 -   Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreatethreadnotifyroutineex), and specify **PsCreateThreadNotifySubsystems** as the type of notification.
 -   The [**PS\_CREATE\_NOTIFY\_INFO**](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_ps_create_notify_info) structure has been extended to include a **IsSubsystemProcess** member that indicates a subsystem other than Win32. Other members such as **FileObject**, **ImageFileName**, **CommandLine** indicate additional information about the subsystem process. For information about the behavior of those members, see [**SUBSYSTEM\_INFORMATION\_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type).
-
- 
 

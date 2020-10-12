@@ -50,7 +50,7 @@ Remarks
 
 The system-supplied storage class driver for floppy disk storage devices registers an instance of GUID_DEVINTERFACE_FLOPPY for a floppy disk storage device.
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](https://go.microsoft.com/fwlink/p/?linkid=256192) sample that uses the obsolete identifier [**FloppyClassGuid**](floppyclassguid.md) to register an instance of the GUID_DEVINTERFACE_FLOPPY device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](/samples/browse/) sample that uses the obsolete identifier [**FloppyClassGuid**](floppyclassguid.md) to register an instance of the GUID_DEVINTERFACE_FLOPPY device interface class.
 
 For information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
@@ -74,6 +74,4 @@ Requirements
 
 
 [**FloppyClassGuid**](floppyclassguid.md)
-
- 
 

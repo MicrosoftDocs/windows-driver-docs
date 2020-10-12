@@ -12,7 +12,7 @@ The easiest way to write a Windows desktop app that communicates with a USB devi
 ## Prerequisites
 
 - To set up the integrated development environment, first install Microsoft Visual Studio Ultimate 2019 or Microsoft Visual Studio Professional 2019 and then install the WDK. You can find information about how to set up Visual Studio and the WDK on the [WDK download page](../download-the-wdk.md).
-- Debugging Tools for Windows are included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=235427).
+- Debugging Tools for Windows are included when you install the WDK. For more information, see [Download and Install Debugging Tools for Windows](../debugger/index.md).
 
 ## Creating a WinUSB application
 
@@ -65,7 +65,7 @@ To create an application from the template:
 11. Replace VID\_vvvv&PID\_pppp with the hardware ID for your device. Get the hardware ID from Device Manager. In Device Manager, view the device properties. On the **Details** tab, view the **Hardware Ids** property value.
 12. In the **Solution Explorer** window, select and hold (or right-click) **Solution 'USB Application1' (2  of 2 projects)**, and choose **Configuration Manager**. Choose a configuration and platform for both the application project and the package project. In this exercise, we choose Debug and x64, as shown in the following screen shot.
 
-![winusb application template](images/winusb-template-configuration-manager.png)
+![Screenshot that shows the "Configuration Manager" window with "Debug" and "x64" selected.](images/winusb-template-configuration-manager.png)
 
 ## Building, deploying and debugging the project
 

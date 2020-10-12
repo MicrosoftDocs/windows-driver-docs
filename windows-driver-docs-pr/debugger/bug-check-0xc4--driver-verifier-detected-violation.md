@@ -265,7 +265,7 @@ Parameter 1 identifies the type of violation. The meaning of the remaining param
 |0x00020022 |Pointer to the string that describes the violated rule condition.|Reserved (unused)|Reserved (unused)|The driver violated the DDI compliance rule [IrqlIoDispatch](../devtest/wdm-irqliodispatch.md).|
 |0x00020023 |A pointer to the string describing the violated rule condition. |Reserved (unused). |Reserved (unused). |The driver violated the DDI compliance rule  [IrqlIoRtlZwPassive](../devtest/wdm-irqliortlzwpassive.md). The IrqlIoRtlZwPassive rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.|
 |0x00020024 |A pointer to the string describing the violated rule condition. |Reserved (unused). |Reserved (unused). |The driver violated the DDI compliance rule [IrqlNtifsApcPassive](../devtest/wdm-irqlntifsapcpassive.md). The IrqlNtifsApcPassive rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.|
-|0x00020025 |A pointer to the string describing the violated rule condition. |Reserved (unused). |Reserved (unused). |The driver violated the DDI compliance rule [IrqlKeMore](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdm-irqlkemore). The IrqlKeMore rule specifies that the driver calls the DDIs listed in the rule at IRQL required for these DDIs.|
+|0x00020025 |A pointer to the string describing the violated rule condition. |Reserved (unused). |Reserved (unused). |The driver violated the Microsoft internal DDI compliance rule IrqlKeMore. |
 
 ### 0x00040003 to 0x00043006 - DDI Compliance Rule Violations
 

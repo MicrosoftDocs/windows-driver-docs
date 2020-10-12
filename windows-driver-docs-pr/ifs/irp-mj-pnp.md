@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
 The Plug and Play Manager sends the IRP\_MJ\_PNP request whenever Plug and Play activity occurs on the system. Other operating system components, as well as other kernel-mode drivers, can also send certain IRP\_MJ\_PNP requests, depending on the minor function code.
 
-For more information about Plug and Play IRP processing requirements for drivers, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
+For more information about Plug and Play IRP processing requirements for drivers, see [Plug and Play](../kernel/introduction-to-plug-and-play.md).
 
 For reference information about IRP\_MJ\_PNP minor function codes, see [Plug and Play Minor IRPs](../kernel/plug-and-play-minor-irps.md).
 
@@ -139,6 +139,4 @@ One of the following:
 [**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md)
 
 [**IRP\_MN\_SURPRISE\_REMOVAL**](../kernel/irp-mn-surprise-removal.md)
-
- 
 

@@ -58,7 +58,5 @@ Follow these guidelines to safely access registry keys:
 
 -   *Class installers* and *co-installers* cannot call registry functions to create, change, or delete registry values that are reserved for use by the operating system.
 
-For more information about the access permissions of registry keys, see [Registry Key Security and Access Rights](https://go.microsoft.com/fwlink/p/?linkid=194542).
-
- 
+For more information about the access permissions of registry keys, see [Registry Key Security and Access Rights](/windows/win32/sysinfo/registry-key-security-and-access-rights).
 

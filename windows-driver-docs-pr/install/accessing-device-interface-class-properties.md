@@ -55,13 +55,11 @@ To access properties of a device interface class that have corresponding registr
     -   Set *MachineName* to a pointer to a NULL-terminated string that contains the name of the computer on which to open the requested class registry key. If the computer is the local computer, set *MachineName* to **NULL**.
     -   Set *Reserved* to **NULL**.
 
-    If this call to [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return the logged error code.
+    If this call to [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) succeeds, **SetupDiOpenClassRegKeyEx** returns the requested handle. If the function call fails, **SetupDiOpenClassRegKeyEx** returns INVALID_HANDLE_VALUE and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return the logged error code.
 
-2.  Supply the retrieved handle in a call to [RegQueryValueEx](https://go.microsoft.com/fwlink/p/?linkid=95398) and [RegSetValueEx](https://go.microsoft.com/fwlink/p/?linkid=95399) to retrieve or set the registry entry value that corresponds to the device interface class property.
+2.  Supply the retrieved handle in a call to [RegQueryValueEx](/windows/win32/api/winreg/nf-winreg-regqueryvalueexa) and [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexa) to retrieve or set the registry entry value that corresponds to the device interface class property.
 
-3.  Call the [RegCloseKey](https://go.microsoft.com/fwlink/p/?linkid=194543) function to close the class registry key after access to the key is no longer required.
+3.  Call the [RegCloseKey](/windows/win32/api/winreg/nf-winreg-regclosekey) function to close the class registry key after access to the key is no longer required.
 
 For information about how to install and use device interfaces, see [Device Interface Classes](./overview-of-device-interface-classes.md) and [**INF AddInterface Directive**](inf-addinterface-directive.md).
-
- 
 

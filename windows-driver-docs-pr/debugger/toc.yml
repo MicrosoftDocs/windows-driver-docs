@@ -1976,6 +1976,8 @@
           href: forcing-a-system-crash-from-the-debugger.md
         - name: "Forcing a System Crash from the Keyboard"
           href: forcing-a-system-crash-from-the-keyboard.md
+        - name: "Forcing a System Crash with the Power Button"
+          href: forcing-a-system-crash-with-the-power-button.md
       - name: "Creating a Dump File Without a System Crash"
         href: creating-a-dump-file-without-a-system-crash.md
       - name: "Verifying the Creation of a Kernel-Mode Dump File"

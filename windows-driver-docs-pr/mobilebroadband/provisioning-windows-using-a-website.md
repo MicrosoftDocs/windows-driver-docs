@@ -67,7 +67,7 @@ You must provide the following information to include in the APN database:
 
 ### <span id="detect"></span><span id="DETECT"></span>Detect Internet access
 
-When Windows first connects to a network to determine Internet connectivity, it performs various network tests. The destination site for these tests is msftncsi.com, which is a reserved domain that is used exclusively for connectivity testing.
+When Windows first connects to a network to determine Internet connectivity, it performs various network tests. The destination site for these tests is www.msftncsi.com, which is a reserved domain that is used exclusively for connectivity testing.
 
 To avoid false positives or false negatives, your network must allow access to www.msftncsi.com only when a user has general Internet access. A user who is connected to your network without having an active data plan must not have access to www.msftncsi.com.
 

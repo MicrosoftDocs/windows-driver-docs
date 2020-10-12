@@ -36,7 +36,5 @@ For more information about initializing storage class drivers, see the following
 
 [Storage Class Driver's AddDevice Routine](storage-class-driver-s-adddevice-routine.md)
 
-Also see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play).
-
- 
+Also see [Plug and Play](../kernel/introduction-to-plug-and-play.md).
 

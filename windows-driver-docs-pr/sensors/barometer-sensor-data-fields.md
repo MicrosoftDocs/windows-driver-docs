@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the sensor data fields that are specific to the barometer sensor.
 
-The following table shows the data fields. For more information about the data types shown in the **Type** column, see the [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the data types shown in the **Type** column, see the [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Description|
 | --- | --- | --- | --- |
@@ -22,4 +22,4 @@ The following table shows the data fields. For more information about the data t
 ## Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

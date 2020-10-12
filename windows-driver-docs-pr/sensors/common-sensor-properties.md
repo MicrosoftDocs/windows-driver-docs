@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 This topic describes the sensor properties that are common for all sensors.
 
-The following table shows common properties. For more information about the types shown in the type column, see [PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows common properties. For more information about the types shown in the type column, see [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 <table>
 <colgroup>
@@ -152,11 +152,10 @@ When the client driver reports the following properties, the client driver must 
 
 [EvtSensorSetBatchLatency](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
-[Sensor properties](sensor-properties2.md)
+[Sensor properties]()
 
 [**SENSOR\_STATE**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state)
 
 [Sensor type GUIDs](./about-sensor-constants.md)
-

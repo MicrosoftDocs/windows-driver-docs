@@ -30,9 +30,7 @@ You should not use **SetupDiDeleteDevRegKey** or *hardware keys* for the device 
 
 You should not make assumptions about whether device registry keys are present. When the device is uninstalled, the system automatically deletes all software and hardware keys for the device.
 
-You can safely create and delete registry subkeys under the hardware or software keys by using standard registry functions. By using these functions, you avoid naming collisions between the system and other components. Also, if you create subkeys by using these functions, the subkey inherits the default permissions of the parent registry key. For more information, see [Opening, Creating, and Closing Keys](https://go.microsoft.com/fwlink/p/?linkid=194541).
+You can safely create and delete registry subkeys under the hardware or software keys by using standard registry functions. By using these functions, you avoid naming collisions between the system and other components. Also, if you create subkeys by using these functions, the subkey inherits the default permissions of the parent registry key. For more information, see [Opening, Creating, and Closing Keys](/windows/win32/sysinfo/opening-creating-and-closing-keys).
 
-For more information about the standard registry functions, see [Registry Functions](https://go.microsoft.com/fwlink/p/?linkid=194529).
-
- 
+For more information about the standard registry functions, see [Registry Functions](/windows/win32/sysinfo/registry-functions).
 

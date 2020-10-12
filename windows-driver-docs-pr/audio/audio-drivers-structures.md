@@ -124,7 +124,7 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**KSP\_DRMAUDIOSTREAM\_CONTENTID**](/windows-hardware/drivers/ddi/drmk/ns-drmk-ksp_drmaudiostream_contentid)
 
-[**KSP\_PINMODE**](/windows/win32/api/msapofxproxy/ns-msapofxproxy-tagksp_pinmode)
+[**KSP\_PINMODE**](/windows/win32/api/msapofxproxy/ns-msapofxproxy-ksp_pinmode)
 
 [KSRTAUDIO Structures](/windows-hardware/drivers/ddi/ksmedia/index)
 
@@ -142,7 +142,7 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**MDEVICECAPSEX**](/windows/win32/api/mmddk/ns-mmddk-mdevicecapsex)
 
-[**MIDIOPENDESC**](/windows/win32/api/mmddk/ns-mmddk-midiopendesc_tag)
+[**MIDIOPENDESC**](/windows/win32/api/mmddk/ns-mmddk-midiopendesc)
 
 [**RTAUDIO\_GETREADPACKET\_INFO**](/previous-versions/windows/hardware/drivers/mt169891(v=vs.85))
 
@@ -172,6 +172,6 @@ This section describes the structures that are used by WDM audio miniport driver
 
 [**UNCOMPRESSEDAUDIOFORMAT**](/windows/win32/api/audiomediatype/ns-audiomediatype-uncompressedaudioformat)
 
-[**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-twaveformatex)
+[**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex)
 
 [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible)

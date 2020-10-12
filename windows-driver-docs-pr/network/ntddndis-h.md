@@ -23,7 +23,7 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 > [!NOTE]
 > This section's topics contains pages for definitions and OIDs, which are not part of network driver DDI reference. 
 >
-> For DDI reference for this header, see [ntddndis.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis).
+> For DDI reference for this header, see [ntddndis.h header](/windows-hardware/drivers/ddi/ntddndis).
 
 ## In this section
 

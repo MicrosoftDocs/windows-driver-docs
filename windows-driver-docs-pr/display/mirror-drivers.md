@@ -29,7 +29,7 @@ ms.localizationpriority: medium
 
 Starting with Windows 8, mirror drivers will not install on the system. Mirror drivers described in this section will install and run only on earlier versions of Windows.
 
-However, a special GDI accessibility driver model is available starting with Windows 8 to developers who want to provide mirror driver capabilities in [*assistive technologies*](https://go.microsoft.com/fwlink/p/?linkid=248209) for customers with disabilities or impairments. To learn more about this special driver model, please contact <acc_driver@microsoft.com>.
+However, a special GDI accessibility driver model is available starting with Windows 8 to developers who want to provide mirror driver capabilities in [*assistive technologies*](/windows/apps/accessibility) for customers with disabilities or impairments. To learn more about this special driver model, please contact <acc_driver@microsoft.com>.
 
 A *remote display driver* model that is based on the mirror driver architecture can also run starting with Windows 8, but has been removed in Windows 10, version 2004. For more information, see [Remote Display Drivers](remote-display-drivers.md).
 

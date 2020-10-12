@@ -17,7 +17,13 @@ ms.localizationpriority: medium
 
 The optional **action** element describes an action that will be completed when a user clicks a button in the balloon message.
 
-The **action** element is defined in the *asyncui* namespace at this URI: https://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **action** element is defined in the *asyncui* namespace at this URI:
+
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
 
 ## Usage
 
@@ -100,7 +106,7 @@ The **action** element is used with an interactive balloon, which is similar to 
 
 ## Examples
 
-The following XML code example will run the *IHV.exe* program on the client computer
+The following XML code example will run the *IHV.exe* program on the client computer.
 
 ```xml
 <?xml version="1.0" ?> 

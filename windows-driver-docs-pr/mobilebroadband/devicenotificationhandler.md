@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 [!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
-The DeviceNotificationHandler element specifies a device notification handler. A device notification handler allows you to run code in response to events, such as mobile network operator administrative SMS or USSD notifications, even if the Microsoft Store app is not running. For more information about implementing a notification handler, see the [Mobile Operator Notifications](https://go.microsoft.com/fwlink/?linkid=242062) white paper.
+The DeviceNotificationHandler element specifies a device notification handler. A device notification handler allows you to run code in response to events, such as mobile network operator administrative SMS or USSD notifications, even if the Microsoft Store app is not running. For more information about implementing a notification handler, see the [Mobile Operator Notifications](./enabling-mobile-operator-notifications-and-system-events.md) white paper.
 
 ## <span id="Usage"></span><span id="usage"></span><span id="USAGE"></span>Usage
 
@@ -108,10 +108,4 @@ There are no child elements.
 The DeviceNotificationHandler element is optional.
 
  
-
- 
-
-
-
-
 

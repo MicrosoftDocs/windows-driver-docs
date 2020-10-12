@@ -28,16 +28,15 @@ To create a Network Driver Interface Specification (NDIS) miniport driver packag
 
 - Step 3: Determine additional Windows driver design decisions.
 
-  For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/programming-issues-for-64-bit-drivers), and [Creating International INF Files](../install/creating-international-inf-files.md).
+  For more information about how to make additional Windows design decisions, see [Creating Reliable Kernel-Mode Drivers](../kernel/creating-reliable-kernel-mode-drivers.md), [Programming Issues for 64-Bit Drivers](../kernel/porting-your-driver-to-64-bit-windows.md), and [Creating International INF Files](../install/creating-international-inf-files.md).
 
 - Step 4: Learn about the Windows driver build, test, and debug processes and tools.
 
   Building a driver differs from building a user-mode application. For more information about Windows driver build, debug, and test processes, driver signing, and [Windows Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?LinkId=733613) testing, see [Building, Debugging, and Testing Drivers](/windows-hardware/drivers). For more information about building, testing, verifying, and debugging tools, see [Driver Development Tools](../devtest/index.md).
 
 - Step 5: Read the miniport driver introduction topics.
-  [Types of NDIS Miniport Drivers](types-of-ndis-miniport-drivers.md)
+  [Types of NDIS Miniport Drivers](deserialized-ndis-miniport-drivers.md)
   [Network Interface Card Support](network-interface-card-support.md)
-  [Important Features of Miniport Driver Code](important-features-of-miniport-driver-code.md)
   [Sample NDIS Miniport Drivers](sample-ndis-miniport-drivers.md)
 - Step 6: Read the [writing miniport drivers section](./initializing-a-miniport-driver.md).
 
@@ -55,11 +54,11 @@ To create a Network Driver Interface Specification (NDIS) miniport driver packag
 
   [NDIS Scatter/Gather DMA](ndis-scatter-gather-dma.md)
 
-  [NDIS Power Management](ndis-power-management.md)
+  [NDIS Power Management](power-management--ndis-6-30-.md)
 
-  [Plug and Play for NDIS Miniport Drivers](plug-and-play-for-ndis-miniport-drivers.md)
+  [Plug and Play for NDIS Miniport Drivers](exporting-a-miniportdevicepnpeventnotify-function.md)
 
-  [Reset, Halt, and Shutdown Functions](reset--halt--and-shutdown-functions.md)
+  [Reset, Halt, and Shutdown Functions](hardware-reset.md)
 
   [Miniport Driver with a WDM Lower Interface](./miniport-drivers-with-a-wdm-lower-interface.md)
 

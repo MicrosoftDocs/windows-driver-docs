@@ -161,13 +161,13 @@ Device(TP5) {
 3.  Copy Muttutil.dll and Mitti2ctest.dll from the MITT software package to the folder.
 4.  View all MITT I²C tests by using the **/list** option:
 
-    ![mitt i2c commands](images/mitt-i2c-cmds.png)
+    ![Screenshot that shows the list of MITT i 2 c tests in "Command prompt".](images/mitt-i2c-cmds.png)
 
 You are now ready to run I²C tests. You can run a single test, all tests at once, or run tests manually.
 
 - Run a single test by using the **/name:*&lt;test name&gt;*** option. This command runs the BasicIORead test:
 
-  ![mitt i2c commands](images/mitt-i2c-cmds1.png)
+  ![Screenshot that shows the command for a single test run in "Command prompt".](images/mitt-i2c-cmds1.png)
 
 - Run all tests by using this command:
 

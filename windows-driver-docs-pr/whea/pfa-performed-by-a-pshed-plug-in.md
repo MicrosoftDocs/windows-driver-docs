@@ -62,7 +62,7 @@ WHEA then adds the memory page into the Boot Configuration Data (BCD) store on t
 
 
 
-For more information about the system memory manager, see [Memory Management](https://go.microsoft.com/fwlink/p/?linkid=140723) in the Windows SDK documentation.
+For more information about the system memory manager, see [Memory Management](/windows/win32/memory/memory-management) in the Windows SDK documentation.
 
 
 10. The Windows kernel generates an ETW event and logs the error information in the system event log.

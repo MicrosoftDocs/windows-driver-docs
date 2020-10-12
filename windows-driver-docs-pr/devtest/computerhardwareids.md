@@ -19,13 +19,7 @@ This section contains the following topics:
 
 [ComputerHardwareIds Output](computerhardwareids-output.md)
 
-For more information about device metadata packages, see [Device Metadata Packages](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages).
+For more information about device metadata packages, see [Device Metadata Packages](../install/overview-of-device-metadata-packages.md).
 
  
-
- 
-
-
-
-
 
