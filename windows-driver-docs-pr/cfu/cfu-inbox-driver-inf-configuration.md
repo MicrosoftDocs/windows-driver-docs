@@ -1,6 +1,6 @@
 ---
-title: Component Firmware Update (CFU) inbox HIDCFU driver INF configuration
-description: Provides information on configuring the inbox HIDCFU driver INF file for Component Firmware Update (CFU).
+title: Component Firmware Update (CFU) inbox driver INF configuration
+description: Provides information on configuring the inbox driver INF file for Component Firmware Update (CFU).
 ms.date: 10/01/2020
 ms.topic: article
 ms.prod: windows-hardware
@@ -8,11 +8,11 @@ ms.technology: windows-devices
 ms.localizationpriority: medium
 ---
 
-# Component Firmware Update (CFU) inbox HIDCFU driver INF configuration
+# Component Firmware Update (CFU) inbox driver INF configuration
 
-To configure an INF file (HidCfu.inf) for the inbox driver (HidCfu.dll), you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
+To configure a custom INF file for the inbox CFU driver, you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
 
-The [sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file) included below provides a starting point for your INF file. This sample INF is the *CfuVirtualHidDeviceFwUpdate.inf* file from the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) sample code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the simulation's INF file to illustrate the configuration concepts discussed in this topic.
+The [sample inbox driver INF file](#sample-inbox-driver-inf-file) included below provides a starting point for your INF file. This sample INF is the *CfuVirtualHidDeviceFwUpdate.inf* file from the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) sample code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the simulation's INF file to illustrate the configuration concepts discussed in this topic.
 
 Your actual INF file must be customized and configured specifically for your firmware and hardware.
 
@@ -22,7 +22,7 @@ Your actual INF file must be customized and configured specifically for your fir
 
 - [Overview](#overview)
 
-- [Configure the CFU inbox HIDCFU driver INF](#configure-the-cfu-inbox-driver-inf)
+- [Configure the CFU inbox driver INF](#configure-the-cfu-inbox-driver-inf)
 
   - [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry)
 
@@ -42,7 +42,7 @@ Your actual INF file must be customized and configured specifically for your fir
 
 - [Firmware update status](#firmware-update-status)
 
-- [Sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file)
+- [Sample inbox driver INF file](#sample-inbox-driver-inf-file)
 
 - [Troubleshooting](#troubleshooting)
 
@@ -68,7 +68,7 @@ The following resources will help you learn about the Component Firmware Update 
 
 To update the firmware image for your device by using the CFU model, you should expect to meet the following requirements:
 
-- Provide a inbox HIDCFU driver INF file. This file provides information to the inbox HIDCFU driver (HidCfu.dll) that sends the firmware update to the device. We recommend that you customize the sample CFU inbox HIDCFU driver INF file to support your firmware update scenarios.
+- Provide a custom inbox driver INF file. This file provides information to the inbox driver that sends the firmware update to the device. We recommend that you customize the sample CFU inbox driver INF file provided below in this topic to support your firmware update scenarios.
 
 - Your device must ship with a firmware image that is compliant with the [CFU protocol](cfu-specification.md) so that it can accept an update from the CFU driver.
 
@@ -93,7 +93,7 @@ This allows you to service your in-market devices through Windows Update. To upd
     %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
     ```
 
-1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see the [Sample inbox HIDCFU driver INF file](#sample-inbox-hidcfu-driver-inf-file).
+1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see the [Sample inbox driver INF file](#sample-inbox-driver-inf-file).
 
     > [!NOTE]
     > When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
@@ -237,7 +237,7 @@ During the protocol transaction, the CFU inbox driver writes registry entries to
 | Payload Accepted. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_PENDING_RESET |
 | Error at any stage. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_ERROR |
 
-## Sample inbox HIDCFU driver INF file
+## Sample inbox driver INF file
 
 ```inf
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -255,7 +255,7 @@ During the protocol transaction, the CFU inbox driver writes registry entries to
 ;
 ; Description:
 ;
-;      Sample Driver INF file for Cfu Virtual Hid Device firmware update.
+;      Sample inbox driver INF file for Cfu virtual Hid device firmware update.
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

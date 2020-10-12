@@ -90,8 +90,6 @@ This section provides an example of installing a firmware update on the sample [
 
 1. Navigate to the location of the .inf file and the firmware offer and payload .bin files for your target device. For example:
 
-    `C:\<your_repo_folder>\CFU\Host\CFUFirmwareSimulation\x64\Debug\CfuVirtualHid`
-
     ![step 1](images/install-cfu-virtual-device-firmware-update-1.png)
 
 1. In a text editor, open your firmware update INF file. In this example, we'll use the *CfuVirtualHidDeviceFwUpdate.inf* file outlined in the [CFU inbox driver INF configuration](cfu-inbox-driver-inf-configuration.md).
