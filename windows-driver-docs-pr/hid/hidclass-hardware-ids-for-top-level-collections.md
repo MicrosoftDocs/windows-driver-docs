@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 # HIDClass Hardware IDs for Top-Level Collections
 
 
-This section specifies the hardware IDs that the HID class driver generates for top-level collections.
+This section specifies the [hardware IDs](../install/hardware-ids.md) that the HID class driver generates for [top-level collections](top-level-collections.md).
 
 Vendors must use the formats that are designated as *vendor hardware ID formats* to identify top-level collections. All other *device ID* formats are reserved for internal use only.
 
