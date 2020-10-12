@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
 
 
-The GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR [device interface class](./overview-of-device-interface-classes.md) is defined for Plug and Play (PnP) [serial ports](/previous-versions/ff547451(v=vs.85)).
+The GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR [device interface class](./overview-of-device-interface-classes.md) is defined for Plug and Play (PnP) [serial ports](/windows-hardware/drivers/serports/using-serial-sys-and-serenum-sys).
 
 <table>
 <colgroup>
@@ -50,9 +50,9 @@ Remarks
 
 The system-supplied enumerator for serial port devices registers instances of GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR to notify the operating system and applications of the presence of serial port devices.
 
-The WDK includes the serial enumerator sample [serenum](/previous-versions/ff546505(v=vs.85)). The serenum sample uses the obsolete identifier [**GUID_SERENUM_BUS_ENUMERATOR**](guid-serenum-bus-enumerator.md) to register instances of this device interface class. The serenum sample is located in the *src\\kernel* directory of the WDK.
+The WDK includes the serial enumerator sample [serenum](/windows-hardware/drivers/serports/features-of-serial-and-serenum). The serenum sample uses the obsolete identifier [**GUID_SERENUM_BUS_ENUMERATOR**](guid-serenum-bus-enumerator.md) to register instances of this device interface class. The serenum sample is located in the *src\\kernel* directory of the WDK.
 
-For information about serial devices and drivers, see [Serial Devices and Drivers](/previous-versions/ff547451(v=vs.85)).
+For information about serial devices and drivers, see [Serial Devices and Drivers](/windows-hardware/drivers/serports/using-serial-sys-and-serenum-sys).
 
 For information about the device interface class for serial port devices, see [**GUID_DEVINTERFACE_COMPORT**](guid-devinterface-comport.md).
 

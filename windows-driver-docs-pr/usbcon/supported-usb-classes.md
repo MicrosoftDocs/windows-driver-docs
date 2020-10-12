@@ -92,7 +92,7 @@ The device setup classes are different from USB device classes discussed earlier
         <td><strong>HIDClass</strong></br>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</td>
         <td>Hidclass.sys</br>Hidusb.sys</br>Input.inf</td>
         <td>Windows 10 for desktop editions</br>Windows 10 Mobile</br>Windows 8.1</br>Windows 8</br>Windows 7</br>Windows Server 2008</br>Windows Vista</td>
-        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="/previous-versions/jj126193(v=vs.85)">HID Architecture</a> and <a href="/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="/windows-hardware/drivers/hid/">Input and HID - Architecture and Driver Support</a> website.</td>
+        <td>Microsoft provides the HID class driver (Hidclass.sys) and the miniclass driver (Hidusb.sys) to operate devices that comply with the <a href="https://go.microsoft.com/fwlink/p/?LinkId=761243">USB HID Standard</a>. For more information, see <a href="/windows-hardware/drivers/hid/hid-architecture">HID Architecture</a> and <a href="/windows-hardware/drivers/hid/minidriver-operations">Minidrivers and the HID class driver</a>. For further information about Windows support for input hardware, see the <a href="/windows-hardware/drivers/hid/">Input and HID - Architecture and Driver Support</a> website.</td>
       </tr>
       <tr>
         <td>Physical (05h)</td>

@@ -84,7 +84,7 @@ Extended capabilities port (ECP) and enhanced parallel port (EPP) modes are supp
 For devices that support the SBP-2 protocol, user-mode drivers can call Microsoft's SBP-2 interface. Otherwise, a vendor-supplied filter driver is required.
 
 <a href="" id="devices-connected-to-a-serial-port"></a>**Devices connected to a serial port**  
-The standard serial port driver is used. (For more information, see [Serial Devices and Drivers](/previous-versions/ff547451(v=vs.85)).)
+The standard serial port driver is used. (For more information, see [Serial Devices and Drivers](/windows-hardware/drivers/serports/using-serial-sys-and-serenum-sys).)
 
 <a href="" id="devices-connected-to-an-infrared-interface"></a>**Devices connected to an infrared interface**  
 Drivers can call the **IrSock** software interface (described in the Microsoft Windows SDK documentation).
