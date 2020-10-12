@@ -50,7 +50,7 @@ Remarks
 
 Drivers for serial ports register instances of this device interface class to notify the operating system and applications of the presence of COM ports.
 
-The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](/previous-versions/ff547451(v=vs.85)).
+The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](/windows-hardware/drivers/serports/using-serial-sys-and-serenum-sys).
 
 The following samples (on Github) register an instance of this class for a serial port:
 
