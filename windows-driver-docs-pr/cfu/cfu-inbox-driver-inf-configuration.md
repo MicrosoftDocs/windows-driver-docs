@@ -68,7 +68,7 @@ The following resources will help you learn about the Component Firmware Update 
 
 To update the firmware image for your device by using the CFU model, you should expect to meet the following requirements:
 
-- Provide a custom inbox driver INF file. This file provides information to the inbox driver that sends the firmware update to the device. We recommend that you customize the sample CFU inbox driver INF file provided below in this topic to support your firmware update scenarios.
+- Provide a custom INF file for your device. This file provides information to the inbox driver that sends the firmware update to the device. We recommend that you customize the sample CFU INF file provided below in this topic to support your firmware update scenarios.
 
 - Your device must ship with a firmware image that is compliant with the [CFU protocol](cfu-specification.md) so that it can accept an update from the CFU driver.
 
@@ -79,8 +79,6 @@ This allows you to service your in-market devices through Windows Update. To upd
 ![CFU firmware update](images/transfer-flowchart.png)
 
 ## Configure the CFU inbox driver INF
-
-1. Update the INF with the hardware ID of the HID TLC intended for firmware update. Windows ensures that the driver is loaded when the component is enumerated on the host.
 
 1. Update the INF with hardware IDs of your devices. Replace the hardware ID in in this section with hardwareID(s) of your supported devices.
   
@@ -93,107 +91,101 @@ This allows you to service your in-market devices through Windows Update. To upd
     %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
     ```
 
-1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect all the firmware files. To see an example, see the [Sample inbox driver INF file](#sample-inbox-driver-inf-file).
+    **INF Hardware ID settings**
+
+    In order for the inbox driver to communicate with the firmware (real/virtual), the hardware ID specified in the INF should match with what is specified in the Hid descriptor configuration in the firmware.
+
+    As shown below, the *CfuVirtualHidDeviceFwUpdate.inf* values match the values specified in the virtual firmware simulation driver's Hid descriptor.
+
+    ```inf
+    [Standard.NTamd64]
+    %CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5
+    ```
+
+    For more information, refer the following code in **g_CfuVirtualHid_HidReportDescriptor** (Hid Report Descriptor) in [*DmfInterface.c*](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
+
+    ```cpp
+    0x06, CFU_DEVICE_USAGE_PAGE,        // USAGE_PAGE(0xFA00)
+    0x09, CFU_DEVICE_USAGE,             // USAGE(0xF5)
+    ```
+
+1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect the files in your firmware update. To see an example, see the [Sample inbox driver INF file](#sample-inbox-driver-inf-file).
 
     > [!NOTE]
     > When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
 
-1. Specify device capabilities in the INF.
+1. Specify device capabilities in your custom INF file.
 
-    The sample driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described below in [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
+    The inbox driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described below in [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
 
-    For example, the sample driver requires information about the underlying bus protocol to which the device is connected. The protocol can be specified through registry settings.
+    For example, the inbox driver requires information about the underlying bus protocol to which the device is connected. The protocol can be specified through registry settings. You may configure each of these registry values per component as needed.
 
-    Device capabilities are specified in the device specific firmware file.
+    **CFU registry values**
 
-### Configure device capabilities in the registry
+    | Registry Value | Description |
+    |--|--|
+    | Alignment | Protocol Attribute: What is the bin record alignment required for this configuration?<p>During payload send phase of the protocol, the driver fills in many Hid buffers with the payload and send to firmware one by one.<p>This option control the alignment requirement when packing the payload.<p>By default 8 byte alignment is used. If no alignment is required, configure this as 1. |
+    | UseHidSetOutputReport | 0 - Driver will use Write request while sending any output report.<p>1 - Driver will use IOCTL_HID_SET_OUTPUT_REPORT for sending any output report.<p>Default is 0. Set this to 1 if your underlying transport is not USB (for example, HID Over BTH). |
+    | OfferInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Input Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
+    | OfferOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Output Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
+    | PayloadInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Input Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
+    | PayloadOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Output Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
+    | VersionsFeatureValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Version Feature Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
 
-You may configure each of these registry values per component as needed.
+    **INF Value Capability settings**
 
-#### CFU registry values
+    In order for the inbox driver to communicate with the firmware (real/virtual), the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
 
-| Registry Value | Description |
-|--|--|
-| Alignment | Protocol Attribute: What is the bin record alignment required for this configuration?<p>During payload send phase of the protocol, the driver fills in many Hid buffers with the payload and send to firmware one by one.<p>This option control the alignment requirement when packing the payload.<p>By default 8 byte alignment is used. If no alignment is required, configure this as 1. |
-| UseHidSetOutputReport | 0 - Driver will use Write request while sending any output report.<p>1 - Driver will use IOCTL_HID_SET_OUTPUT_REPORT for sending any output report.<p>Default is 0. Set this to 1 if your underlying transport is not USB (for example, HID Over BTH). |
-| OfferInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Input Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-| OfferOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Output Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-| PayloadInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Input Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-| PayloadOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Output Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-| VersionsFeatureValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Version Feature Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
+    In this example, the INF values match the values specified in the virtual firmware simulation driver's Hid descriptor.
 
-#### INF Value Capability settings
-
-In order for the inbox driver to communicate with the firmware (real/virtual), the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
-
-As shown below, the INF values match the values specified in the virtual firmware simulation driver's Hid descriptor.
-
-  ```inf
-  [CfuVirtualHidDeviceFwUpdate_HWAddReg]
-  ...
-  ...
-  HKR,,OfferInputValueCapabilityUsageRangeMinimum,0x00010001,0x1A
-  HKR,,OfferOutputValueCapabilityUsageRangeMinimum,0x00010001, 0x1E
-  HKR,,PayloadInputValueCapabilityUsageRangeMinimum,0x00010001,0x26
-  HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x31
-  HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
-  ```
-
-For more information, refer the following code in **g_CfuVirtualHid_HidReportDescriptor** (Hid Report Descriptor) in [*DmfInterface.c*](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
-
-  ```cpp
-  0x85, REPORT_ID_PAYLOAD_INPUT,      // REPORT_ID(34)
-  0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
-  0x95, 0x04,                         // REPORT COUNT(4)
-  0x19, PAYLOAD_INPUT_USAGE_MIN,      // USAGE MIN (0x26)
-  0x29, PAYLOAD_INPUT_USAGE_MAX,      // USAGE MAX (0x29)
-  0x81, 0x02,                         // INPUT(0x02)
-  
-  0x85, REPORT_ID_OFFER_INPUT,        // REPORT_ID(37)
-  0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
-  0x95, 0x04,                         // REPORT COUNT(4)
-  0x19, OFFER_INPUT_USAGE_MIN,        // USAGE MIN (0x1A)
-  0x29, OFFER_INPUT_USAGE_MAX,        // USAGE MAX (0x1D)
-  0x81, 0x02,                         // INPUT(0x02)
-  
-  0x85, REPORT_ID_PAYLOAD_OUTPUT,     // REPORT_ID(32)
-  0x75, 0x08,                         // REPORT SIZE(8)
-  0x95, OUTPUT_REPORT_LENGTH,         // REPORT COUNT(60)
-  0x09, PAYLOAD_OUTPUT_USAGE,         // USAGE(0x31)
-  0x92, 0x02, 0x01,                   // OUTPUT(0x02)
-  
-  0x85, REPORT_ID_OFFER_OUTPUT,       // REPORT_ID(37)
-  0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
-  0x95, 0x04,                         // REPORT COUNT(4)
-  0x19, OFFER_OUTPUT_USAGE_MIN,       // USAGE MIN (0x1E)
-  0x29, OFFER_OUTPUT_USAGE_MAX,       // USAGE MAX (0x21)
-  0x91, 0x02,                         // OUTPUT(0x02)
-  
-  0x85, REPORT_ID_VERSIONS_FEATURE,   // REPORT_ID(32)
-  0x75, 0x08,                         // REPORT SIZE(8)
-  0x95, FEATURE_REPORT_LENGTH,        // REPORT COUNT(60)
-  0x09, VERSIONS_FEATURE_USAGE,       // USAGE(0x42)
-  0xB2, 0x02, 0x01,                   // FEATURE(0x02)
-  ```
-
-#### INF Hardware ID settings
-
-In order for the inbox driver to communicate with the firmware (real/virtual), the hardware ID specified in the INF should match with what is specified in the Hid Descriptor configuration in the firmware.
-
-As shown below, the *CfuVirtualHidDeviceFwUpdate.inf* values match the values specified in the virtual firmware simulation driver's Hid descriptor.
-
-```inf
-[Standard.NTamd64]
-%CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5
-```
-
-For more information, refer the following code in **g_CfuVirtualHid_HidReportDescriptor** (Hid Report Descriptor) in [*DmfInterface.c*](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
-
-```cpp
-0x06, CFU_DEVICE_USAGE_PAGE,        // USAGE_PAGE(0xFA00)
-0x09, CFU_DEVICE_USAGE,             // USAGE(0xF5)
-```
-
+    ```inf
+    [CfuVirtualHidDeviceFwUpdate_HWAddReg]
+    ...
+    ...
+    HKR,,OfferInputValueCapabilityUsageRangeMinimum,0x00010001,0x1A
+    HKR,,OfferOutputValueCapabilityUsageRangeMinimum,0x00010001, 0x1E
+    HKR,,PayloadInputValueCapabilityUsageRangeMinimum,0x00010001,0x26
+    HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x31
+    HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
+    ```
+    
+    For more information, refer the following code in **g_CfuVirtualHid_HidReportDescriptor** (Hid Report Descriptor) in [*DmfInterface.c*](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
+    
+    ```cpp
+    0x85, REPORT_ID_PAYLOAD_INPUT,      // REPORT_ID(34)
+    0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
+    0x95, 0x04,                         // REPORT COUNT(4)
+    0x19, PAYLOAD_INPUT_USAGE_MIN,      // USAGE MIN (0x26)
+    0x29, PAYLOAD_INPUT_USAGE_MAX,      // USAGE MAX (0x29)
+    0x81, 0x02,                         // INPUT(0x02)
+    
+    0x85, REPORT_ID_OFFER_INPUT,        // REPORT_ID(37)
+    0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
+    0x95, 0x04,                         // REPORT COUNT(4)
+    0x19, OFFER_INPUT_USAGE_MIN,        // USAGE MIN (0x1A)
+    0x29, OFFER_INPUT_USAGE_MAX,        // USAGE MAX (0x1D)
+    0x81, 0x02,                         // INPUT(0x02)
+    
+    0x85, REPORT_ID_PAYLOAD_OUTPUT,     // REPORT_ID(32)
+    0x75, 0x08,                         // REPORT SIZE(8)
+    0x95, OUTPUT_REPORT_LENGTH,         // REPORT COUNT(60)
+    0x09, PAYLOAD_OUTPUT_USAGE,         // USAGE(0x31)
+    0x92, 0x02, 0x01,                   // OUTPUT(0x02)
+    
+    0x85, REPORT_ID_OFFER_OUTPUT,       // REPORT_ID(37)
+    0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
+    0x95, 0x04,                         // REPORT COUNT(4)
+    0x19, OFFER_OUTPUT_USAGE_MIN,       // USAGE MIN (0x1E)
+    0x29, OFFER_OUTPUT_USAGE_MAX,       // USAGE MAX (0x21)
+    0x91, 0x02,                         // OUTPUT(0x02)
+    
+    0x85, REPORT_ID_VERSIONS_FEATURE,   // REPORT_ID(32)
+    0x75, 0x08,                         // REPORT SIZE(8)
+    0x95, FEATURE_REPORT_LENGTH,        // REPORT COUNT(60)
+    0x09, VERSIONS_FEATURE_USAGE,       // USAGE(0x42)
+    0xB2, 0x02, 0x01,                   // FEATURE(0x02)
+    ```
+    
 ## Deploy the firmware package through Windows Update
 
 Next, deploy the package through Windows Update.
