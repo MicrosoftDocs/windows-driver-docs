@@ -36,6 +36,8 @@ pnputil [/add-driver <...> | /delete-driver <...> |
 
  **/add-driver** * <filename.inf | *.inf> [/subdirs] [/install] [/reboot]*
 
+Available in Windows 10, version 1607 (Redstone 1) and later.
+
 Add driver package(s) into the driver store.  
 ```
 /subdirs - traverse sub directories for driver packages.  
@@ -44,6 +46,8 @@ Add driver package(s) into the driver store.
 ```
 
 **/delete-driver** *<oem#.inf> [/uninstall] [/force] [/reboot]*
+
+Available in Windows 10, version 1607 (Redstone 1) and later.
 
 Delete driver package from the driver store.  
 
@@ -55,9 +59,13 @@ Delete driver package from the driver store.
 
 **/export-driver** <em><oem#.inf | *> <target directory></em>
 
+Available in Windows 10, version 1607 (Redstone 1) and later.
+
 Export driver package(s) from the driver store into a target directory.
 
 **/enum-drivers**
+
+Available in Windows 10, version 1607 (Redstone 1) and later.
 
 Enumerate all 3rd party driver packages in the driver store.
 
