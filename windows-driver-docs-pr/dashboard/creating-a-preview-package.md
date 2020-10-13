@@ -45,8 +45,9 @@ Any preview package submitted by the partner of a company will require the compa
 
 ## Related topics
 
-[Create a Device Metadata Experience](./index.yml)
 
-[Submit a Device Metadata Package (Dashboard help)](./index.yml)
+[Create a Device Metadata Experience](create-a-device-metadata-experience.md)
 
-[Device Metadata Business Rules](./index.yml)
+[Submit a Device Metadata Package (Dashboard help)](submit-a-device-metadata-package--dashboard-help-.md)
+
+[Device Metadata Business Rules](device-metadata-business-rules.md)

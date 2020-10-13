@@ -220,7 +220,7 @@ Callout drivers that use connect redirection should register at the ALE authoriz
 
 The [**FWPS\_CONNECT\_REQUEST0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0) structure contains a member called **localRedirectTargetPID**. For any loopback connect redirection to be valid, this field must be populated with the PID of the process that will be responsible for the redirected flow. This is the same data that the engine passes at the ALE authorization connect layers as **FWPS\_METADATA\_FIELD\_LOCAL\_REDIRECT\_TARGET\_ID**.
 
-Starting with Windows 8, the proxy service needs to issue the [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-query-wfp-connection-redirect-records.md) and [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT**](./sio-query-wfp-connection-redirect-context.md) IOCTLs, using [**WSAIoctl**](/windows/desktop/api/winsock2/nf-winsock2-wsaioctl), against the original endpoint of the proxy service. Additionally, the [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-set-wfp-connection-redirect-records.md) IOCTL must be issued, using **WSAIoctl**, on the new (proxied) socket.
+Starting with Windows 8, the proxy service needs to issue the [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-query-wfp-connection-redirect-records.md) and [**SIO\_QUERY\_WFP\_CONNECTION\_REDIRECT\_CONTEXT**](./sio-query-wfp-connection-redirect-context.md) IOCTLs, using [**WSAIoctl**](/windows/win32/api/winsock2/nf-winsock2-wsaioctl), against the original endpoint of the proxy service. Additionally, the [**SIO\_SET\_WFP\_CONNECTION\_REDIRECT\_RECORDS**](./sio-set-wfp-connection-redirect-records.md) IOCTL must be issued, using **WSAIoctl**, on the new (proxied) socket.
 
 ## Related topics
 

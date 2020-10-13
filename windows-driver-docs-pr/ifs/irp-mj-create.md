@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 The I/O Manager sends an IRP_MJ_CREATE request when a new file or directory is being created, or when an existing file, device, directory, or volume is being opened.
 
-Normally this IRP is sent on behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) or on behalf of a kernel-mode component that has called a function such as [**IoCreateFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile), [**IoCreateFileSpecifyDeviceObjectHint**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint), [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile).
+Normally this IRP is sent on behalf of a user-mode application that has called a Microsoft Win32 function such as [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) or on behalf of a kernel-mode component that has called a function such as [**IoCreateFile**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile), [**IoCreateFileSpecifyDeviceObjectHint**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefilespecifydeviceobjecthint), [**ZwCreateFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile), or [**ZwOpenFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile).
 
 If the create request is completed successfully, the application or kernel-mode component receives a handle to the file object.
 

@@ -50,7 +50,7 @@ Remarks
 
 The system-supplied storage class drivers register an instance of GUID_DEVINTERFACE_DISK for a hard disk storage device.
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](https://go.microsoft.com/fwlink/p/?linkid=256103) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The disk class driver sample uses the obsolete identifier [**DiskClassGuid**](diskclassguid.md) to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of GUID_DEVINTERFACE_DISK device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](/samples/browse/) sample and the [Addfilter Storage Filter Tool](/samples/browse/). The disk class driver sample uses the obsolete identifier [**DiskClassGuid**](diskclassguid.md) to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of GUID_DEVINTERFACE_DISK device interface class.
 
 For information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
@@ -74,6 +74,4 @@ Requirements
 
 
 [**DiskClassGuid**](diskclassguid.md)
-
- 
 

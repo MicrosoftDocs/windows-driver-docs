@@ -44,7 +44,7 @@ You might *not* need to write a driver if:
 
     Loading WinUSB as the function driver provides a simpler alternative to implementing a custom USB driver. For example, WinUSB is the preferred approach for an electronic weather station that is accessed only by an application that is packaged with the device. It is also useful for diagnostic communication with a device and for flashing firmware.
 
-    To make it easy for applications to send requests to Winusb.sys, we provide a user-mode DLL, Winusb.dll, that exposes [WinUSB functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb). An application can call those functions to access the device, configure it, and transfer data to the device’s endpoints.
+    To make it easy for applications to send requests to Winusb.sys, we provide a user-mode DLL, Winusb.dll, that exposes [WinUSB functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb). An application can call those functions to access the device, configure it, and transfer data to the device’s endpoints.
 
     WinUSB is not an option if:
 
@@ -60,7 +60,7 @@ The answer depends on the design of your device. First, determine whether a part
 
 If you choose to write a driver, here are your options:
 
--   [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (UMDF)
+-   [User-Mode Driver Framework](../wdf/index.md) (UMDF)
 
     UMDF provides device driver interfaces (DDIs) that a client driver can use to integrate with Windows components such as the Plug and Play Manager and Power Manager. UMDF also provides specialized target objects for USB devices, which abstract the hardware in user mode and simplify I/O operations for the driver. In addition to the UMDF interfaces, WDF provides enhanced debugger extensions and tracing tools for user-mode drivers. UMDF is based on the component object model (COM) and developing a user-mode driver is easier for a C++ developer.
 
@@ -79,7 +79,7 @@ If you choose to write a driver, here are your options:
 
      
 
--   [Kernel-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/wdf/) (KMDF)
+-   [Kernel-Mode Driver Framework](../wdf/index.md) (KMDF)
 
     KMDF was designed to make the driver models easy to extend to support new types of hardware. KMDF provides DDIs and data structures that make kernel-mode USB drivers easier to implement than the earlier Windows Driver Model (WDM) drivers. In addition, KMDF provides specialized input/output (I/O) targets that you can use to write a fully functional client driver that uses the Microsoft USB driver stack.
 
@@ -141,7 +141,4 @@ All client SKUs of the 32-bit versions of Windows XP with SP2support WinUSB. Wi
 [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
 [WinUSB](winusb.md)  
 [Write your first USB client driver (UMDF)](implement-driver-entry-for-a-usb-driver--umdf-.md)  
-[Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)  
-
-
-
+[Write your first USB client driver (KMDF)](tutorial--write-your-first-usb-client-driver--kmdf-.md)

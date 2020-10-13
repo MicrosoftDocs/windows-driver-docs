@@ -53,7 +53,7 @@ The **AddPort** command adds a standard TCP/IP port, which can be either an LPR 
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -100,7 +100,7 @@ The **ConfigPort** command configures an existing standard TCP/IP port monitor p
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -147,7 +147,7 @@ The **DeletePort** command deletes a port from the standard TCP/IP port monitor.
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1" data-raw-source="[&lt;strong&gt;DELETE_PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1)"><strong>DELETE_PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1" data-raw-source="[&lt;strong&gt;DELETE_PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_delete_port_data_1)"><strong>DELETE_PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -194,7 +194,7 @@ The **GetConfigInfo** command obtains the configuration information of a particu
 </tr>
 <tr class="even">
 <td><p><em>pInputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1" data-raw-source="[&lt;strong&gt;CONFIG_INFO_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1)"><strong>CONFIG_INFO_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1" data-raw-source="[&lt;strong&gt;CONFIG_INFO_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_config_info_data_1)"><strong>CONFIG_INFO_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbInputData</em></p></td>
@@ -202,7 +202,7 @@ The **GetConfigInfo** command obtains the configuration information of a particu
 </tr>
 <tr class="even">
 <td><p><em>pOutputData</em></p></td>
-<td><p>Address of a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
+<td><p>Address of a <a href="/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1" data-raw-source="[&lt;strong&gt;PORT_DATA_1&lt;/strong&gt;](/windows-hardware/drivers/ddi/tcpxcv/ns-tcpxcv-_port_data_1)"><strong>PORT_DATA_1</strong></a> structure</p></td>
 </tr>
 <tr class="odd">
 <td><p><em>cbOutputData</em></p></td>
@@ -500,6 +500,4 @@ The **SNMPEnabled** command determines whether the Simple Network Management Pro
  
 
 **XcvData** returns NO\_ERROR if SNMP is enabled for the device. If *cbOutputData* is smaller than required, the function returns ERROR\_INVALID\_PARAMETER when *pcbOutputNeeded* is **NULL**, and ERROR\_INSUFFICIENT\_BUFFER when *pcbOutputNeeded* is non-**NULL**. If *pOutputData* is **NULL**, the function returns ERROR\_INVALID\_PARAMETER.
-
- 
 

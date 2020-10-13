@@ -36,7 +36,7 @@ The following topics describe the NDPROXY driver more fully. These topics also d
 
 [CoNDIS TAPI Shutdown](condis-tapi-shutdown.md)
 
-[Call Manager Requirements for Voice Streaming](call-manager-requirements-for-voice-streaming.md)
+[Call Manager Requirements for Voice Streaming](responding-to-an-oid-co-tapi-line-caps-query.md)
 
 [Non-WAN-Specific Extensions to Support Telephonic Services Over Connection-Oriented NDIS](non-wan-specific-extensions-to-support-telephonic-services-over-connec.md)
 

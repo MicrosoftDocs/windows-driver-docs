@@ -12,7 +12,7 @@ As described by the USB specification, every USB device provides a set of hierar
 
 Prior to Windows Vista, Microsoft-supplied drivers only select configuration 1. In Windows Vista and the later versions of Windows, you can set a registry value to specify which configuration the [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md) will use. For more information about selecting the device configuration on composite devices, see [How to select a configuration for a USB device](how-to-select-a-configuration-for-a-usb-device.md).
 
-Within a configuration, interfaces and interface collections are managed independently. Each interface is represented, at the descriptor level, by a unique value in the **bInterfaceNumber** member of its [**USB\_INTERFACE\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor) structure.
+Within a configuration, interfaces and interface collections are managed independently. Each interface is represented, at the descriptor level, by a unique value in the **bInterfaceNumber** member of its [**USB\_INTERFACE\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor) structure.
 
 The function of an interface is indicated by the **bInterfaceClass**, **bInterfaceSubClass**, and **bInterfaceProtocol** members of the same structure, along with the class-specific descriptors that might follow it.
 
@@ -20,7 +20,4 @@ For more information on descriptors, see [USB Descriptors](usb-descriptors.md).
 
 ## Related topics
 [USB Generic Parent Driver (Usbccgp.sys)](usb-common-class-generic-parent-driver.md)  
-[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)  
-
-
-
+[Microsoft-provided USB drivers](system-supplied-usb-drivers.md)

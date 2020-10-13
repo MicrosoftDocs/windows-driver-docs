@@ -64,7 +64,7 @@ The **FriendlyName** registry value for a device interface class is set by an [*
 
 Windows sets the value of the [**DEVPKEY_NAME**](devpkey-name--device-interface-.md) device property for an interface to the value of DEVPKEY_DeviceInterface_FriendlyName. To identify a device interface in a user interface item, use the value of DEVPKEY_NAME for the device interface instead of the value of DEVPKEY_DeviceInterface_FriendlyName.
 
-You can retrieve the value of the DEVPKEY_DeviceInterface_FriendlyName by calling [**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) and set it by calling [**SetupDiSetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw).
+You can retrieve the value of the DEVPKEY_DeviceInterface_FriendlyName by calling [**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw) and set it by calling [**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw).
 
 Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_DeviceInterface_FriendlyName property key. You can access the value of this property by accessing the corresponding **FriendlyName** registry entry value for the device interface. For information about how to access a registry entry value for a device interface, see [Accessing Device Interface Properties](./accessing-device-interface-properties.md).
 
@@ -86,11 +86,11 @@ Requirements
 
 [**INF *DDInstall*.Interface Section**](./inf-ddinstall-interfaces-section.md)
 
-[**SetupDiGetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
+[**SetupDiGetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdeviceinterfacepropertyw)
 
-[**SetupDiOpenDeviceInterfaceRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey)
+[**SetupDiOpenDeviceInterfaceRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinterfaceregkey)
 
-[**SetupDiSetDeviceInterfaceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw)
+[**SetupDiSetDeviceInterfaceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdeviceinterfacepropertyw)
 
  
 

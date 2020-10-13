@@ -117,7 +117,7 @@ Requirements
 
 [**DEVPKEY_Device_ContainerId**](devpkey-device-containerid.md)
 
-[**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
 

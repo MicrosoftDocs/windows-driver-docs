@@ -13,7 +13,7 @@ In Windows Vista and later versions of Windows, the [unified device property mod
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support these device setup class properties. However, these earlier versions of Windows do support the following mechanisms to retrieve information about device setup class icons:
 
--   Call [**SetupDiLoadClassIcon**](/windows/desktop/api/setupapi/nf-setupapi-setupdiloadclassicon) to retrieve the index of the mini-icon for a device setup class in the *MiniIconIndex* output parameter. You can then pass the retrieved mini-icon index to [**SetupDiDrawMiniIcon**](/windows/desktop/api/setupapi/nf-setupapi-setupdidrawminiicon) to draw a mini-icon of the retrieved class icon in a specified device context.
+-   Call [**SetupDiLoadClassIcon**](/windows/win32/api/setupapi/nf-setupapi-setupdiloadclassicon) to retrieve the index of the mini-icon for a device setup class in the *MiniIconIndex* output parameter. You can then pass the retrieved mini-icon index to [**SetupDiDrawMiniIcon**](/windows/win32/api/setupapi/nf-setupapi-setupdidrawminiicon) to draw a mini-icon of the retrieved class icon in a specified device context.
 
 -   Call SetupDiLoadClassIcon to load the large icon for a device setup class in the context of the caller and return a handle to the large icon to the caller.
 

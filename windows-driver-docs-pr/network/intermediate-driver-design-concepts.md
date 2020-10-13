@@ -36,7 +36,7 @@ The following topics provide additional information about writing NDIS intermedi
 
 [Intermediate Driver Network Data Management](intermediate-driver-network-data-management.md)
 
-[Receiving Data in an Intermediate Driver](receiving-data-in-an-intermediate-driver.md)
+[Receiving Data in an Intermediate Driver](receiving-data-in-an-intermediate-driver-with-a-connectionless-lower-e.md)
 
 [Transmitting Network Data Through an Intermediate Driver](transmitting-network-data-through-an-intermediate-driver.md)
 

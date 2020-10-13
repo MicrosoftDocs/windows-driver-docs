@@ -112,7 +112,7 @@ These example settings below, show setting the maximum number of full live dumps
 
 `reg add "HKLM\System\CurrentControlSet\Control\CrashControl" /f /t REG_DWORD /v AlwaysKeepMemoryDump /d 1`
 
-For more information on these settings, see [WER Settings](https://docs.microsoft.com/windows/win32/wer/wer-settings).
+For more information on these settings, see [WER Settings](/windows/win32/wer/wer-settings).
 
 ### Disable throttling
 

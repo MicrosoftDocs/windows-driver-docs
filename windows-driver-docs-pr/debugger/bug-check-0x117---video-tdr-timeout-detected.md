@@ -67,7 +67,7 @@ This process of detection and recovery is known as Timeout Detection and Recover
 
 If the recovery process is successful, a message will be displayed, indicating that the "Display driver stopped responding and has recovered."
 
-For more information, see Timeout Detection and Recovery (TDR), [TDR Registry Keys](../display/tdr-registry-keys.md) and [TDR changes in Windows 8](../display/tdr-changes-in-windows-8.md) which are located in [Debugging Tips for the Windows Display Driver Model (WDDM)](https://docs.microsoft.com/windows-hardware/drivers/display/debugging-tips-for-the-windows-vista-display-driver-model).
+For more information, see Timeout Detection and Recovery (TDR), [TDR Registry Keys](../display/tdr-registry-keys.md) and [TDR changes in Windows 8](../display/tdr-changes-in-windows-8.md) which are located in [Timeout Detection and Recovery (TDR)](../display/timeout-detection-and-recovery.md)
 
 Resolution
 ----------

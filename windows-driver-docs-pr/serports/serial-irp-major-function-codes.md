@@ -222,7 +222,7 @@ Serial sends all other power requests down the device stack to be completed by a
 
 Serial is the default power policy owner for a serial device stack that uses Serial as a function driver or a lower-level filter driver.
 
-For more information about the generic operation of these requests, see [Rules for Handling Power IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/rules-for-handling-power-irps).
+For more information about the generic operation of these requests, see [Rules for Handling Power IRPs](../kernel/calling-iocalldriver-versus-calling-pocalldriver.md).
 
 ## IRP_MJ_QUERY_INFORMATION
 
@@ -424,6 +424,6 @@ A client can use time-out events to terminate a write request. Note, however, th
 
 [Plug and Play Minor IRPs](../kernel/plug-and-play-minor-irps.md)
 
-[Rules for Handling Power IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/rules-for-handling-power-irps)
+[Rules for Handling Power IRPs](../kernel/calling-iocalldriver-versus-calling-pocalldriver.md)
 
 [Serial Controller Driver Design Guide](./index.md)

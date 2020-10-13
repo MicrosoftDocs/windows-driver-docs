@@ -43,7 +43,7 @@ and [Introduction to Spin Locks](./introduction-to-spin-locks.md).
 5. Opting into WDF synchronization and execution level model without full understanding of implications. See [Using Framework Locks](../wdf/using-framework-locks.md). Unless your driver is monolithic top-level driver directly
 interacting with the hardware, avoid opting into WDF synchronization as it can lead to deadlocks due to recursion.
 6. Acquiring KEVENT, Semaphore, ERESOURCE, UnsafeFastMutex in the context of multiple threads without entering critical region. Doing
-this can lead to DOS attack because a thread holding one of these locks can be suspended. See [Synchronization Techniques](https://docs.microsoft.com/windows-hardware/drivers/kernel/synchronization-techniques).
+this can lead to DOS attack because a thread holding one of these locks can be suspended. See [Introduction to Kernel Dispatcher Objects](./introduction-to-kernel-dispatcher-objects.md).
 7. Allocating KEVENT on thread stack and returning to the caller while the EVENT is still in use. Typically done when used with
 [IoBuildSyncronousFsdRequest](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest)
 or [IoBuildDeviceIoControlRequest](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest). Caller of these calls should make sure that they don't unwind from the stack until I/O manager has signaled the event when the IRP is

@@ -46,7 +46,7 @@ Since multiple apps can be contained within a single package, both &lt;PLMPackag
 <tr class="odd">
 <td align="left">&lt;ApplicationId&gt;</td>
 <td align="left"><p>The ApplicationId is located in the application manifest file and can be viewed using the .querypackage or .querypackages command as discussed in this topic.</p>
-<p>For more information about the application manifest file, see <a href="https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
+<p>For more information about the application manifest file, see <a href="/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">[&lt;parameters&gt;]</td>
@@ -145,7 +145,7 @@ windbg.exe -plmPackage <PLMPackageName> -plmBgTaskId <BackgroundTaskId>
 <tr class="odd">
 <td align="left">&lt;BackgroundTaskId&gt;</td>
 <td align="left"><p>The BackgroundTaskId can be located using the .querypackages command as described below.</p>
-<p>For more information about the application manifest file, see <a href="https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
+<p>For more information about the application manifest file, see <a href="/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -310,7 +310,7 @@ This table lists the parameters for .createpackageapp.
 <tr class="odd">
 <td align="left">&lt;ApplicationId&gt;</td>
 <td align="left"><p>The ApplicationId can be located using .querypackage or .querypackages as discussed earlier in this topic.</p>
-<p>For more information about the application manifest file, see <a href="https://docs.microsoft.com/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
+<p>For more information about the application manifest file, see <a href="/uwp/schemas/appxpackage/appx-package-manifest" data-raw-source="[App package manifest](/uwp/schemas/appxpackage/appx-package-manifest)">App package manifest</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">[&lt;parameters&gt;]</td>
@@ -503,6 +503,4 @@ Finally, decrement the debug reference count for the package.
 
 
 [Debugging Using WinDbg](debugging-using-windbg.md)
-
- 
 

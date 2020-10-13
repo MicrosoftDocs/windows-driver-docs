@@ -34,7 +34,7 @@ The hardware IDs that the HID class driver generates for a devnode depends on th
 
 Based on these factors, there are 4 categories of hardware IDs
 
-|                 | Single TLC | Multiple TLC |
+|     Type        | Single TLC | Multiple TLC |
 |-----------------|------------|--------------|
 | Single-Function | Case 1     | Case 2       |
 | Multi-Function  | Case 3     | Case 4       |

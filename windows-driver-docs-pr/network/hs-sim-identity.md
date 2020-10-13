@@ -75,10 +75,3 @@ Requirements
 </tbody>
 </table>
 
-## See also
-
-
-[Extensible Authentication Protocol](/previous-versions/windows/desktop/eap/eap-start-page)
-
- 
-

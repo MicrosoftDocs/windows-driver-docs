@@ -41,7 +41,7 @@ This I/O control code has been defined for communication between paired and laye
 
 The requested operation is device- or driver-specific.
 
-For general information about I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes). See also [Device Type-Specific I/O Requests](./device-type-specific-i-o-requests.md).
+For general information about I/O control codes for [**IRP\_MJ\_DEVICE\_CONTROL**](irp-mj-device-control.md) or **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests, see [Using I/O Control Codes](./introduction-to-i-o-control-codes.md). See also [Device Type-Specific I/O Requests](./device-type-specific-i-o-requests.md).
 
 Requirements
 ------------
@@ -67,6 +67,4 @@ Requirements
 [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp)
 
 [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)
-
- 
 

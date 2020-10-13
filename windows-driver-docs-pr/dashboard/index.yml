@@ -28,8 +28,8 @@ landingContent:
             url: manage-your-hardware-submissions.md
           - text: Driver flighting
             url: driver-flighting.md
-          - text: Device metadata
-            url: device-metadata.md
+          - text: Create a device metadata experience
+            url: create-a-device-metadata-experience.md
 
   
   - title: Driver distribution

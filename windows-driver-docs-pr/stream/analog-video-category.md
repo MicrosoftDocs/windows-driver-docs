@@ -36,11 +36,11 @@ When specifying **PINNAME\_VIDEO\_ANALOGVIDEOIN**, pins, use the information lis
 <tbody>
 <tr class="odd">
 <td><p><strong>DataRange Structure</strong></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo" data-raw-source="[&lt;strong&gt;KS_DATARANGE_ANALOGVIDEO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo)"><strong>KS_DATARANGE_ANALOGVIDEO</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo" data-raw-source="[&lt;strong&gt;KS_DATARANGE_ANALOGVIDEO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo)"><strong>KS_DATARANGE_ANALOGVIDEO</strong></a></p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DataFormat Structure</strong></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo" data-raw-source="[&lt;strong&gt;KS_DATARANGE_ANALOGVIDEO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo)"><strong>KS_DATARANGE_ANALOGVIDEO</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo" data-raw-source="[&lt;strong&gt;KS_DATARANGE_ANALOGVIDEO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_datarange_analogvideo)"><strong>KS_DATARANGE_ANALOGVIDEO</strong></a></p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MajorFormat GUID</strong></p></td>
@@ -84,6 +84,4 @@ There is no special category defined for analog audio, such as TV or radio audio
 Although the analog video stream essentially mimics the input to the analog video decoder, it simultaneously acts as a data transport for tuning information. Tuning packets, originating at the TV tuner filter, are passed through any intervening crossbar filters at the start and end of every tuning operation. The data packet is a [**KS\_TVTUNER\_CHANGE\_INFO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_tvtuner_change_info) structure that contains the country/region code, channel, frequency, and analog video standard in use.
 
 Capture filters must propagate this tuning packet in the extended header of VBI output streams to downstream VBI codecs.
-
- 
 

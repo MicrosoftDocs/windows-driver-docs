@@ -35,7 +35,7 @@ For more information about driver initialization, see the initialization topics 
 
 [Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
-[Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md)
+[Writing NDIS Protocol Drivers](initializing-a-protocol-driver.md)
 
 [NDIS Filter Drivers](ndis-filter-drivers.md)
 

@@ -7,7 +7,6 @@ keywords:
 - Insider Preview
 - Download
 - drivers
-ms.author: eliotgra
 ms.date: 07/11/2018
 ms.localizationpriority: medium
 ---

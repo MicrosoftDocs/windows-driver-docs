@@ -59,7 +59,7 @@ If a bus filter driver handles this IRP, it modifies the resource requirements l
 
 Function and non-bus filter drivers do not handle this IRP; they pass it to the next lower driver with no changes to **Irp-&gt;IoStatus**.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

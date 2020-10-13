@@ -16,8 +16,8 @@ Do not directly access the registry keys for device setup classes. As with any r
 
 To safely open the registry keys of a [device setup class](./overview-of-device-setup-classes.md), use one of the following [SetupAPI](setupapi.md) functions:
 
--   [**SetupDiOpenClassRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkey)
--   [**SetupDiOpenClassRegKeyEx**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) with the *Flags* parameter set to DIOCR_INSTALLER
+-   [**SetupDiOpenClassRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkey)
+-   [**SetupDiOpenClassRegKeyEx**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkeyexa) with the *Flags* parameter set to DIOCR_INSTALLER
 
  
 

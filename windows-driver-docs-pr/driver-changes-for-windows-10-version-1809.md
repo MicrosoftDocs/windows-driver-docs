@@ -1,6 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1809
-description: This section describes new features for driver development in Windows 10.
+description: Learn about new features for driver development in Windows 10, version 1809 (Windows 10 October 2018 update).
 ms.assetid: 764bcd98-c123-45e2-9dd1-44d54bb1addc
 ms.date: 04/28/2020
 ms.localizationpriority: medium
@@ -114,7 +114,7 @@ Several new APIs have been added in the core kernel:
   * [ExReleasePushLockExclusive macro](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleasepushlockexclusive)
   * [ExReleasePushLockShared macro](/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleasepushlockshared)
 * [KzLowerIrql](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kzlowerirql) and [KzRaiseIrql](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kzraiseirql) were moved to a supported extern forceinline for kernel components targeting Windows 8 and later versions, instead of relying on the forwarders to instantiate a special case of the inline functions.
-* Flattening Portal Bridge (FPB) for PCI is now supported. For more information, see the [Official Specification](https://pcisig.com/sites/default/files/specification_documents/ECN_FPB_9_Feb_2017.pdf). The new APIs (_PCI_FPB_*) are declared in [Ntddk.h](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/).
+* Flattening Portal Bridge (FPB) for PCI is now supported. For more information, see [PCI-SIG](https://pcisig.com) for the Official Specification. The new APIs (_PCI_FPB_*) are declared in [Ntddk.h](https://review.docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/).
 
 ## <a name="networking-1809"></a>Networking
 
@@ -167,7 +167,7 @@ See [Light sensor data fields](./sensors/light-sensor-data-fields.md) for more i
 Starting in Windows 10, version 1809, Windows supports flexible linking, which enables you to use a single binary to target OneCore and Desktop SKUs.
 To enable flexible linking, use the following new SDK API:
 
-* [IsApiSetImplemented](/windows/desktop/api/apiquery2/nf-apiquery2-isapisetimplemented)
+* [IsApiSetImplemented](/windows/win32/api/apiquery2/nf-apiquery2-isapisetimplemented)
 
 This existing topic has been enhanced to describe how to use flexible linking to comply with the U requirement of the [DCHU driver design principles](./develop/dch-principles-best-practices.md):
 
@@ -188,7 +188,7 @@ If  your hardware is UCSI compliant and requires communication over a non-ACPI t
 
 For example, control their device’s charging based on thermal conditions, so that the device won’t be overheated.
 
-* [Write a USB Type-C Policy Manager client driver](https://www.microsoft.com/windows-hardware/drivers/usbcon/policy-manager-client)
+* [Write a USB Type-C Policy Manager client driver](./usbcon/policy-manager-client.md)
 * New APIs are available in [Usbpmapi.h](/windows-hardware/drivers/ddi/usbpmapi/)
 
 **New versions of the class extensions available for emulated USB devices (UDE) -- 1.1 and USB host controller (Ucx) 1.5:**

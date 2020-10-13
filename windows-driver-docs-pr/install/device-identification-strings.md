@@ -26,7 +26,7 @@ Windows uses the following device identification strings to locate the informati
 
 - [Compatible IDs](compatible-ids.md)
 
-Windows tries to find a match for one of the hardware IDs or compatible IDs. For more information about how Windows uses these IDs to match a device to an INF file, and how to specify IDs in an INF file, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
+Windows tries to find a match for one of the hardware IDs or compatible IDs. For more information about how Windows uses these IDs to match a device to an INF file, and how to specify IDs in an INF file, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
 In addition to using the preceding IDs to identify devices, the PnP manager uses the following IDs to uniquely identify instances of each device that are installed in a computer:
 
@@ -36,7 +36,7 @@ In addition to using the preceding IDs to identify devices, the PnP manager uses
 
 Starting with Windows 7, the PnP manager uses the [Container ID](container-ids.md) device identification string to group one or more device nodes (devnodes) that were enumerated from each instance of a physical device installed in a computer.
 
-Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to uniquely identify the device that it enumerates. In addition, each enumerator has its own policy to identify hardware IDs and compatible IDs. For more information about hardware ID and compatible ID formats for most of the system buses, see [Device Identifier Formats](device-identifier-formats.md).
+Each enumerator customizes its device IDs, hardware IDs, and compatible IDs to uniquely identify the device that it enumerates. In addition, each enumerator has its own policy to identify hardware IDs and compatible IDs. For more information about hardware ID and compatible ID formats for most of the system buses, see [Device Identifier Formats](./generic-identifiers.md).
 
 > [!NOTE]
 > Device identification strings should not be parsed. They are meant only for string comparisons and should be treated as opaque strings.

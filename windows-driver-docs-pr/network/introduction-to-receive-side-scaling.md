@@ -6,7 +6,7 @@ keywords:
 - receive-side scaling WDK networking , about receive-side scaling
 - RSS WDK networking , about receive-side scaling
 - CPU determination WDK RSS
-ms.date: 04/20/2017
+ms.date: 09/04/2020
 ms.localizationpriority: medium
 ms.custom: contperfq1
 ---

@@ -34,7 +34,7 @@ These two topics provide additional information about working with JavaScript in
 
 ## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
-The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/).
+The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/).
 
 **JsProvider.dll**
 
@@ -1208,7 +1208,7 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 
 -   [WinJS: The Windows library for JavaScript](https://github.com/winjs/winjs)
 
--   [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/)
+-   [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/)
 
 ## <span id="related_topics"></span>Related topics
 

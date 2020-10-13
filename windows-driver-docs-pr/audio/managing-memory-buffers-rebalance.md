@@ -1,7 +1,7 @@
 ---
 title: Managing Memory Buffers During Audio Resource Rebalance and Surprise Removal Operations
 description: PnP rebalancing is used in certain PCI scenarios where memory resources need to be reallocated. Memory Buffers need to be managed properly to avoid issues.
-ms.date: 12/05/2019
+ms.date: 10/01/2020
 ms.localizationpriority: medium
 ---
 
@@ -30,11 +30,11 @@ When portcls receives the close stream handle, portcls invokes the functions bel
 
 *set stream state* (If the stream is not already in the stop state.)
 
-[IMiniportWaveRTStream::SetState](/previous-versions/windows/hardware/drivers/ff536756(v=vs.85))
+[IMiniportWaveRTStream::SetState](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-setstate)
 
 *release buffer*  
 
-[IMiniportWaveRTStream::FreeAudioBuffer]([IMiniportWaveRTStream::SetState](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536756(v=vs.85)) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
+[IMiniportWaveRTStream::FreeAudioBuffer](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-freeaudiobuffer) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)
 
 Note that portcls miniport drivers should succeed the state transitions from higher value to lower values (RUN == 3, PAUSE==2, ACQUIRE==1, STOP==0) when the stream has been already stopped by the driver during a SR/STOP operation (i.e., when SR/STOP arrives before the close handle request).
 
@@ -42,7 +42,7 @@ Note that portcls miniport drivers should succeed the state transitions from hig
 
 When a stream is closed during normal operations, portcls invokes the Wave RT’s callbacks to let the driver stop its DMA operations and release its associated buffers:
 
-[IMiniportWaveRTStream::SetState](/previous-versions/windows/hardware/drivers/ff536756(v=vs.85)) -> SetDmaEngineState (HD Audio Bus DDI). Takes action to start/pause DMA.
+[IMiniportWaveRTStream::SetState](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-setstate) -> SetDmaEngineState (HD Audio Bus DDI). Takes action to start/pause DMA.
 
 [IMiniportWaveRTStream::FreeAudioBuffer](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstream-freeaudiobuffer) or [IMiniportWaveRTStreamNotification::FreeBufferWithNotification](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavertstreamnotification-freebufferwithnotification)-> FreeDmaBuffer (HD Audio Bus DDI).
 

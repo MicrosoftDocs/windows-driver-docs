@@ -90,9 +90,9 @@ See the following for information about keyboard layouts:
 
 - Keyboard header file, kdb.h, in the Windows Driver Development Kit (DDK), which documents general information about keyboard layouts.
 
-- Sample keyboard [layouts](https://go.microsoft.com/fwlink/p/?linkid=256128).
+- Sample keyboard [layouts](/samples/browse/).
 
-To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](https://docs.microsoft.com/globalization/windows-keyboard-layouts).
+To visualize the layout of a specific keyboard, see [Windows Keyboard Layouts](/globalization/windows-keyboard-layouts).
 
 For additional details around the keyboard layout, visit Control Panel\\Clock, Language, and Region\\Language.
 
@@ -165,7 +165,7 @@ For more information about Kbfiltr operation, see the following:
 
 - The ntddkbd.h WDK header file.
 
-- The sample [Kbfiltr](https://go.microsoft.com/fwlink/p/?linkid=256125) source code.
+- The sample [Kbfiltr](/samples/browse/) source code.
 
 ### Kbfiltr IOCTLs
 
@@ -288,13 +288,13 @@ KbFilter_IsrHook returns TRUE if the interrupt service routine should continue; 
 */
 
 KbFilter_IsrHook KbFilter_IsrHook(
-  <em>In</em>    PDEVICE_OBJECT       DeviceObject,
-  <em>In</em>    PKEYBOARD_INPUT_DATA CurrentInput,
-  <em>In</em>    POUTPUT_PACKET       CurrentOutput,
-  <em>Inout</em> UCHAR                StatusByte,
-  <em>In</em>    PUCHAR               DataByte,
-  <em>Out</em>   PBOOLEAN             ContinueProcessing,
-  <em>In</em>    PKEYBOARD_SCAN_STATE ScanState
+  In    PDEVICE_OBJECT       DeviceObject,
+  In    PKEYBOARD_INPUT_DATA CurrentInput,
+  In    POUTPUT_PACKET       CurrentOutput,
+  Inout UCHAR                StatusByte,
+  In    PUCHAR               DataByte,
+  Out   PBOOLEAN             ContinueProcessing,
+  In    PKEYBOARD_SCAN_STATE ScanState
 );
 ```
 
@@ -324,10 +324,10 @@ None
 */
 
 VOID KbFilter_ServiceCallback(
-  <em>In</em>    PDEVICE_OBJECT       DeviceObject,
-  <em>In</em>    PKEYBOARD_INPUT_DATA InputDataStart,
-  <em>In</em>    PKEYBOARD_INPUT_DATA InputDataEnd,
-  <em>Inout</em> PULONG               InputDataConsumed
+  In    PDEVICE_OBJECT       DeviceObject,
+  In    PKEYBOARD_INPUT_DATA InputDataStart,
+  In    PKEYBOARD_INPUT_DATA InputDataEnd,
+  Inout PULONG               InputDataConsumed
 );
 ```
 

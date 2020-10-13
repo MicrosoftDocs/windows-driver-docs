@@ -35,7 +35,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 <tbody>
 <tr class="odd">
 <td align="left"><p>NoErrors</p></td>
-<td align="left"><p>The driver should not encounter any errors, including D3DDDIERR_DEVICEREMOVED. The runtime will determine that any call to <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb" data-raw-source="[&lt;strong&gt;pfnSetErrorCb&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb)"><strong>pfnSetErrorCb</strong></a> is critical.</p></td>
+<td align="left"><p>The driver should not encounter any errors, including D3DDDIERR_DEVICEREMOVED. The runtime will determine that any call to <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb" data-raw-source="[&lt;strong&gt;pfnSetErrorCb&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb)"><strong>pfnSetErrorCb</strong></a> is critical.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowDeviceRemoved</p></td>
@@ -51,7 +51,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 <tr class="odd">
 <td align="left"><p>AllowMapErrors</p></td>
-<td align="left"><p>The driver should check for resource contention. Therefore, the driver can pass DXGI_DDI_ERR_WASSTILLDRAWING through <strong>pfnSetErrorCb</strong> if the D3D10_DDI_MAP_FLAG_DONOTWAIT flag was passed into the driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap" data-raw-source="[&lt;strong&gt;ResourceMap&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap)"><strong>ResourceMap</strong></a> function. The driver can also pass D3DDDIERR_DEVICEREMOVED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p></td>
+<td align="left"><p>The driver should check for resource contention. Therefore, the driver can pass DXGI_DDI_ERR_WASSTILLDRAWING through <strong>pfnSetErrorCb</strong> if the D3D10_DDI_MAP_FLAG_DONOTWAIT flag was passed into the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap" data-raw-source="[&lt;strong&gt;ResourceMap&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourcemap)"><strong>ResourceMap</strong></a> function. The driver can also pass D3DDDIERR_DEVICEREMOVED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>AllowGetDataErrors</p></td>
@@ -59,7 +59,7 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 <tr class="odd">
 <td align="left"><p>AllowWKCheckCounterErrors</p></td>
-<td align="left"><p>The driver's <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter" data-raw-source="[&lt;strong&gt;CheckCounter&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter)"><strong>CheckCounter</strong></a> function should indicate whether it supports any runtime-defined counters. Therefore, the driver can pass DXGI_DDI_ERR_UNSUPPORTED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p>
+<td align="left"><p>The driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter" data-raw-source="[&lt;strong&gt;CheckCounter&lt;/strong&gt;](/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_checkcounter)"><strong>CheckCounter</strong></a> function should indicate whether it supports any runtime-defined counters. Therefore, the driver can pass DXGI_DDI_ERR_UNSUPPORTED through <strong>pfnSetErrorCb</strong>. The runtime will determine that any other error codes are critical.</p>
 <p>The driver cannot return D3DDDIERR_DEVICEREMOVED for any check-type function.</p></td>
 </tr>
 <tr class="even">
@@ -69,8 +69,6 @@ The following table lists the categories of errors that the Direct3D runtime all
 </tr>
 </tbody>
 </table>
-
- 
 
  
 

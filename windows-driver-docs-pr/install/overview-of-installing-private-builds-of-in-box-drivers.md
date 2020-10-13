@@ -47,7 +47,5 @@ To install a private build of an inbox driver, you must do the following:
 
     For more information, see [Configuring Windows to Rank Driver Signatures Equally](configuring-windows-to-rank-driver-signatures-equally.md).
 
-For more information about how Windows ranks drivers, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
-
- 
+For more information about how Windows ranks drivers, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 

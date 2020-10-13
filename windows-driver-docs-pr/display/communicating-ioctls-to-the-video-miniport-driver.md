@@ -19,7 +19,7 @@ The following figure shows how the display driver communicates with the video mi
 
 ![diagram illustrating display driver/video miniport driver communication](images/dpy2.png)
 
-The display driver calls [**EngDeviceIoControl**](/windows/desktop/api/winddi/nf-winddi-engdeviceiocontrol) with an IOCTL to send a synchronous request to the video miniport driver. GDI uses a single buffer for both input and output to pass the request to the I/O subsystem. The I/O subsystem routes the request to the video port, which processes the request with the video miniport driver.
+The display driver calls [**EngDeviceIoControl**](/windows/win32/api/winddi/nf-winddi-engdeviceiocontrol) with an IOCTL to send a synchronous request to the video miniport driver. GDI uses a single buffer for both input and output to pass the request to the I/O subsystem. The I/O subsystem routes the request to the video port, which processes the request with the video miniport driver.
 
 Some IOCTL requests require the miniport driver to access video registers, and others store or retrieve information from the miniport driver's data structures. Generally, no requests require the video miniport driver to perform actual drawing operations.
 

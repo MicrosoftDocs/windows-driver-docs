@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS network interface providers register network interfaces with NDIS. Before registering an interface, an interface provider obtains a [**NET\_LUID**](/windows/desktop/api/ifdef/ns-ifdef-net_luid_lh) value for that interface. NDIS assigns an interface index ( *IfIndex* in RFC 2863) to an interface when it is registered.
+NDIS network interface providers register network interfaces with NDIS. Before registering an interface, an interface provider obtains a [**NET\_LUID**](/windows/win32/api/ifdef/ns-ifdef-net_luid_lh) value for that interface. NDIS assigns an interface index ( *IfIndex* in RFC 2863) to an interface when it is registered.
 
 NDIS also provides services that drivers can use to manage entries in the interface stack table (*ifStackTable* in RFC 2863).
 

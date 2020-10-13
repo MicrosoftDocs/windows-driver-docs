@@ -547,8 +547,6 @@ For more info on InstantGo, see [Introduction to InstantGo](/windows-hardware/de
 
 Your mobile broadband app can use a special PDP context for enabling some of these InstantGo scenarios. You need to use following logic to reconnect to the special PDP context if it is disconnected because it is out of coverage. When the device enters the Connected Standby power state, Windows will disconnect all the connections to special PDP contexts after 10 minutes and your app has to request the connection again.
 
-For more info on how you can enable background networking in your mobile broadband apps, see [Introduction to Background Tasks](https://www.microsoft.com/download/details.aspx?id=27411) and [Background Networking](https://www.microsoft.com/download/details.aspx?id=28999).
-
 ![instantgo with pdp context](images/mb-pdp-fig5.jpg)
 
 ### Audio streaming in background
@@ -557,17 +555,17 @@ Audio streaming apps can audio in background and in the Connected Standby power 
 
 ### Real-time communication apps
 
-Real-time communication apps, such as VoIP or chat apps, can receive a wake up trigger on a special PDP context. The wake up trigger allows your app to be triggered at all times including when the system is in the Connected Standby power state. For more info on how to enable the wake up trigger, see [Background Networking](https://www.microsoft.com/download/details.aspx?id=28999).
+Real-time communication apps, such as VoIP or chat apps, can receive a wake up trigger on a special PDP context. The wake up trigger allows your app to be triggered at all times including when the system is in the Connected Standby power state.
 
 To enable this scenario, the mobile broadband device should support wake up filters on special PDP context, as stated in the [Mobile Broadband Interface Model (MBIM) specification](../network/mb-interface-model.md).
 
 ## Mobile broadband devices
 
-To support multiple PDP contexts, the firmware of the mobile broadband Device must support multiple PDP contexts, as defined in the [MBIM specification](https://go.microsoft.com/fwlink/?linkid=620028). It must also pass any Windows Hardware Certification Kit tests specific to multiple PDP contexts.
+To support multiple PDP contexts, the firmware of the mobile broadband Device must support multiple PDP contexts, as defined in the [MBIM specification](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement). It must also pass any Windows Hardware Certification Kit tests specific to multiple PDP contexts.
 
 Since this feature is operator specific, it is optional for mobile broadband devices. If you need this feature, you must add multiple PDP context functionality in the operator requirements with the following:
 
-- The device firmware should support multiple IP data streams as detailed in section 10.5.12.1 of the [MBIM specification](https://go.microsoft.com/fwlink/?linkid=620028). This includes supporting all the control implementation of CIDs and IP data streams for full support of multiple PDP contexts.
+- The device firmware should support multiple IP data streams as detailed in section 10.5.12.1 of the [MBIM specification](https://www.usb.org/document-library/mobile-broadband-interface-model-v10-errata-1-and-adopters-agreement). This includes supporting all the control implementation of CIDs and IP data streams for full support of multiple PDP contexts.
 
 - The device firmware must support multiple dual bearer (IPv4 & IPv6) PDP contexts for use by Windows.
 

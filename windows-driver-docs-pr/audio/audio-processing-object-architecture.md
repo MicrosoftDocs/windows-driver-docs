@@ -31,7 +31,7 @@ Software based effects are inserted in the software device pipe on stream initia
 Any effects applied in hardware DSP need to be advertised via a proxy APO. Microsoft provides a default proxy APO (MsApoFxProxy.dll). To use the Microsoft provided APO, this property set and property must be supported.
 
 -   [KSPROPSETID\_AudioEffectsDiscovery](./kspropsetid-audioeffectsdiscovery.md)
--   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](/previous-versions/windows/hardware/drivers/dn457706(v=vs.85))
+-   [KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST](./ksproperty-audioeffectsdiscovery-effectslist.md)
 
 Optionally, you can implement your own proxy APO.
 

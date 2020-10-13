@@ -83,7 +83,7 @@ The [**IKsControl::KsProperty**](/windows-hardware/drivers/ddi/ks/nf-ks-ikscontr
 
 -   No properties are supported by ports that represent DirectMusic emulation on top of the Microsoft Win32 handle-based multimedia calls (the midiOut and midiIn APIs). Use the **GUID\_DMUS\_PROP\_LegacyCaps** property set GUID to query a port for whether it is implemented with Win32 multimedia calls.
 
--   Property item requests to a port that represents a pluggable software synthesizer are handled entirely in user mode. The topology of this type of port is a synthesizer (represented by an [IDirectMusicSynth](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynth) interface) that is connected to a sink node (an [IDirectMusicSynthSink](/windows/desktop/api/dmusics/nn-dmusics-idirectmusicsynthsink) interface). The property request is given first to the synthesizer node, and then to the sink node if it is not recognized by the synthesizer.
+-   Property item requests to a port that represents a pluggable software synthesizer are handled entirely in user mode. The topology of this type of port is a synthesizer (represented by an [IDirectMusicSynth](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynth) interface) that is connected to a sink node (an [IDirectMusicSynthSink](/windows/win32/api/dmusics/nn-dmusics-idirectmusicsynthsink) interface). The property request is given first to the synthesizer node, and then to the sink node if it is not recognized by the synthesizer.
 
  
 

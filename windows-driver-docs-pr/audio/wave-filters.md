@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 ## <span id="wave_filters"></span><span id="WAVE_FILTERS"></span>
 
 
-Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](/windows/desktop/api/mmreg/ns-mmreg-twaveformatex) and [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible).
+Wave filters represent devices that render and/or capture wave-formatted digital audio data. Applications typically access the capabilities of these devices either through the DirectSound API or through the Microsoft Windows multimedia waveOut*Xxx* and waveIn*Xxx* functions. For information about the wave formats that WDM audio drivers can support, see [**WAVEFORMATEX**](/windows/win32/api/mmreg/ns-mmreg-waveformatex) and [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible).
 
 A *wave-rendering* filter receives as input a wave digital audio stream and outputs either an analog audio signal (to a set of speakers or external mixer) or a digital audio stream (to an S/PDIF connector, for example).
 
@@ -103,7 +103,7 @@ For more information, see [Implementation Issues for WavePci Devices](implementa
 ### <span id="wavecyclic_filter"></span><span id="WAVECYCLIC_FILTER"></span>WaveCyclic Filters
 
 > [!NOTE]
-> Microsoft supports a diverse and inclusionary environment. Within this document, there are references to the word slave. Microsoft's Style Guide for Bias-Free Communications recognizes this as an exclusionary word. This wording is used as it is currently the wording used within the software.
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the [Microsoft style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
 
 **Note: WaveCyclic Information for previous versions of Windows**
 

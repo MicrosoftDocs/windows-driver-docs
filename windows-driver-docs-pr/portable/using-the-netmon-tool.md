@@ -78,7 +78,7 @@ To view your traces, launch *NetMon.exe*, select the File/Open/Capture menu and 
 
 The following image shows a WPDAPI request at API level. The request travels through WPDMTP in the form of MTP request(s) that reach a transport and then bubble up.
 
-![viewing traces](images/framesummary1.png)
+![Screenshot that shows the "Frame Summary" window with callouts for different trace layers.](images/framesummary1.png)
 
 - The transport-level logging does not log the actual data during the data phase. Examine the WPDMTP Response message for the datasets that were sent or received during commands like **GetDeviceInfo** or **SendObjectPropList**.
 - If you select a WPDMTP Response line in the **Frame Summary** window, the corresponding item expands in the **Frame Details** window.

@@ -50,6 +50,6 @@ For more information, see:
 
 [Supplying Fence Identifiers](../display/supplying-fence-identifiers.md)
 
-[GPU Scheduler Class](https://docs.microsoft.com/windows-hardware/drivers/display/gpu-scheduler-class)
+[Video Memory Management and GPU Scheduling](../display/video-memory-management-and-gpu-scheduling.md)
 
 [Direct flip of video memory](../display/direct-flip-of-video-memory.md)

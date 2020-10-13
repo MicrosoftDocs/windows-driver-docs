@@ -225,7 +225,12 @@ This class includes processor types.
 Class = SCSIAdapter  
 ClassGuid = {4d36e97b-e325-11ce-bfc1-08002be10318}  
 This class includes SCSI HBAs (Host Bus Adapters) and disk-array controllers.  
-  
+ 
+<a href="" id="security-devices-"></a>**Security Devices**
+Class = Securitydevices  
+ClassGuid = {d94ee5d8-d189-4994-83d2-f68d7d41b0e6}  
+(Windows 8.1, Windows 10) This class includes [Trusted Platform Module](/windows/security/information-protection/tpm/trusted-platform-module-top-node) chips. A TPM is a secure crypto-processor that helps you with actions such as generating, storing, and limiting the use of cryptographic keys. Any new manufactured device must implement and enable TPM 2.0 by default. For more information, see [TPM Recommendations](/windows/security/information-protection/tpm/tpm-recommendations).
+
 **Sensors**  
 Class = Sensor  
 ClassGuid = {5175d334-c371-4806-b3ba-71fd53c9258d}  
@@ -272,13 +277,6 @@ The WCEUSBS setup class supports communication between a personal computer and a
 Class = WPD  
 ClassGuid = {eec5ad98-8080-425f-922a-dabf3de3f69a}  
 (Windows Vista and later versions of Windows) This class includes WPD devices.  
-  
-**Windows SideShow**  
-Class = SideShow  
-ClassGuid = {997b5d8d-c442-4f2e-baf3-9c8e671e9e21}  
-(Windows Vista and later versions of Windows) This class includes all devices that are compatible with Windows SideShow.  
-  
-   
   
    
   

@@ -23,7 +23,7 @@ FloppyClassGuid is an obsolete identifier for the [device interface class](./ove
 Remarks
 -------
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](https://go.microsoft.com/fwlink/p/?linkid=256192) sample that uses FloppyClassGuid to register instances of this device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](/samples/browse/) sample that uses FloppyClassGuid to register instances of this device interface class.
 
 Requirements
 ------------
@@ -49,6 +49,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_FLOPPY**](guid-devinterface-floppy.md)
-
- 
 

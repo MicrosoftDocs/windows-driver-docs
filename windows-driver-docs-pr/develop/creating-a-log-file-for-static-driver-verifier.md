@@ -1,14 +1,14 @@
 ---
 ms.assetid: EDA6357A-D18D-439D-A0DD-050BA51E1A79
 title: Creating a log file for Static Driver Verifier
-description: The Windows Server 2012 Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
+description: Learn how to run a Static Driver Verifier (SDV) before creating a Driver Verification Log (DVL) for your driver.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Creating a log file for Static Driver Verifier
 
-The Windows Server 2012 [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](../devtest/static-driver-verifier.md) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
+The Windows Server 2012 [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](../devtest/static-driver-verifier.md) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
 
 For best results, run the Code Analysis tool before you run Static Driver Verifier.
 
@@ -54,6 +54,4 @@ msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /ta
 * [Creating a driver verification log](creating-a-driver-verification-log.md)
 * [Static Driver Verifier](../devtest/static-driver-verifier.md)
 * [Using Static Driver Verifier to Find Defects in Drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md)
-* [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
- 
-
+* [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))

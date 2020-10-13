@@ -42,7 +42,7 @@ These device properties represent a device's installation state. Direct modifica
 
 To safely modify the values of other registry entries in a device's software key, follow these guidelines:
 
--   Use [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve and set standard or custom properties.
+-   Use [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) and [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to retrieve and set standard or custom properties.
 
     For more information, see [Accessing Device Driver Properties](accessing-device-driver-properties.md).
 

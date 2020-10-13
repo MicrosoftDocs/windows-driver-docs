@@ -52,7 +52,7 @@ Drivers for KS devices register instances of KSCATEGORY_REALTIME to indicate to 
 
 Devices that register this functional category are operated by the system-supplied [WaveRT port driver](/previous-versions/ff538837(v=vs.85)).
 
-For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) in the WDK.
+For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](/samples/browse/) in the WDK.
 
 Requirements
 ------------
@@ -73,6 +73,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

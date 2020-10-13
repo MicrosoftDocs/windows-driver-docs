@@ -28,7 +28,7 @@ The miniport should do the following:
 
 ## See Also
 
-[IOCTL_STORAGE_PROTOCOL_COMMAND (*winioctl.h*)](/windows/desktop/api/winioctl/ni-winioctl-ioctl_storage_protocol_command)
+[IOCTL_STORAGE_PROTOCOL_COMMAND (*winioctl.h*)](/windows/win32/api/winioctl/ni-winioctl-ioctl_storage_protocol_command)
 
 [IOCTL_STORAGE_PROTOCOL_COMMAND (*ntddstor.h*)](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command)
 

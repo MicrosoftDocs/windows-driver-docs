@@ -1,6 +1,5 @@
 ---
 title: NFC CX quick start guide
-author: EliotSeattle
 description: A quick start guide for writing a NFC functional driver using the NFC Class Extension.
 keywords:
 - NFC
@@ -9,7 +8,6 @@ keywords:
 - near field proximity
 - NFP
 - CX
-ms.author: eliotgra
 ms.date: 12/10/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -26,7 +24,7 @@ This guide demonstrates how to write a NFC functional driver using the NFC Class
 
 ## Prerequisites
 
-* Your NFC Controller's firmware must implement the NFC Forum's [NFC Controller Interface (NCI)](https://nfc-forum.org/our-work/specifications-and-application-documents/specifications/nfc-controller-interface-nci-specification/) protocol.
+* Your NFC Controller's firmware must implement the NFC Forum's [NFC Controller Interface (NCI)](https://nfc-forum.org/our-work/specification-releases/specifications/) protocol.
 * [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_content=download+vs2017) (or later).
 * The [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 * The [Windows 10 Driver Kit (WDK)](../download-the-wdk.md).
@@ -47,7 +45,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
     On the **File** menu, point to **New**, and then click **Project**. In the **Visual C++** node, under **Windows Drivers**, click **WDF**, and then click **User Mode Driver, Empty (UMDF V2)**
 
-    ![image](images/quick-start-new-project.png)
+    ![Screenshot that shows the Visual Studio "New Project" dialog with "User Mode Driver, Empty (UMDF V2)" selected.](images/quick-start-new-project.png)
 
 2. Open the INF file.
 
@@ -66,7 +64,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
         HKR,,Icon,,"-10"
         ```
 
-    2. Under the `[Strings]` section, remove the following line. 
+    2. Under the `[Strings]` section, remove the following line.
 
         ```inf
         ClassName="Samples" ; TODO: edit ClassName
@@ -76,7 +74,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
     1. Change the value of `Class` to `Proximity`
     2. Change the value of `ClassGuid` to `{5630831C-06C9-4856-B327-F5D32586E060}`
-        - This is the GUID of the Proximity device class.
+        * This is the GUID of the Proximity device class.
 
     ```ini
     [Version]
@@ -104,7 +102,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     3. Ensure that **Platform** is to set to `All Platforms`.
     4. Set **Link to NFC Class Extension** to `Yes`.
 
-    ![image](images/quick-start-link-to-nfc-cx.png)
+    ![Visual Studio dialog: MyNfcDriver Property Pages, showing "Link to NFC Class Extension" set to "Yes."](images/quick-start-link-to-nfc-cx.png)
 
 7. Add file named `Driver.cpp` to the project.
 
@@ -124,7 +122,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
     {
         NTSTATUS status = STATUS_SUCCESS;
 
-        // Specify `DeviceContext::AddDevice` as the 
+        // Specify `DeviceContext::AddDevice` as the
         // `EvtDriverDeviceAdd` function for the driver.
         WDF_DRIVER_CONFIG driverConfig;
         WDF_DRIVER_CONFIG_INIT(&driverConfig, DeviceContext::AddDevice);
@@ -410,7 +408,7 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 
         // FIX ME: Use the NCI packet in some way.
 
-        // FIX ME: Call `WdfRequestComplete` on `Request` with failure 
+        // FIX ME: Call `WdfRequestComplete` on `Request` with failure
         // or success `NTSTATUS` code.
     };
     ```
@@ -418,8 +416,8 @@ A complete version of this sample code is available on GitHub: [NFC CX client dr
 21. Call the [`NfcCxNciReadNotification`](/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxncireadnotification) function when the NFC Controller has an NCI packet that should be sent to the NFC CX. This is typically done in a hardware event callback.
 
     For example:
-    - A [GPIO interrupt](../gpio/gpio-interrupts.md) event callback. (I<sup>2</sup>C and SPI)
-    - A [USB continuous reader](../usbcon/how-to-use-the-continous-reader-for-getting-data-from-a-usb-endpoint--umdf-.md) callback.
+    * A [GPIO interrupt](../gpio/gpio-interrupts.md) event callback. (I<sup>2</sup>C and SPI)
+    * A [USB continuous reader](../usbcon/how-to-use-the-continous-reader-for-getting-data-from-a-usb-endpoint--umdf-.md) callback.
 
 ## Logging
 

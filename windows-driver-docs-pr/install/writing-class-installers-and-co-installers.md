@@ -48,11 +48,11 @@ Do not save device installation state within the *co-installer* dynamic-link lib
 
 To safely preserve device installer state, class installers or co-installers should save the state information as properties within the device's *driver key* in the registry. To do this, follow these steps:
 
-1.  To retrieve a registry handle to the driver key for a *device instance*, use [**SetupDiOpenDevRegKey**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) with the *KeyType* parameter set to DIREG_DRV.
+1.  To retrieve a registry handle to the driver key for a *device instance*, use [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) with the *KeyType* parameter set to DIREG_DRV.
 
-2.  Use [**SetupDiGetDevicePropertyKeys**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) (to retrieve all the property keys for a device instance) or [**SetupDiGetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) (to retrieve a specified device instance property key).
+2.  Use [**SetupDiGetDevicePropertyKeys**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertykeys) (to retrieve all the property keys for a device instance) or [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) (to retrieve a specified device instance property key).
 
-3.  Use [**SetupDiSetDeviceProperty**](/windows/desktop/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to save the device instance property key.
+3.  Use [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw) to save the device instance property key.
 
 ## Loading executable or DLL files
 
@@ -70,7 +70,5 @@ To safely load an executable file or DLL by a class installer or co-installer, w
 
 During device installation, Windows cannot track additional processes and is unable to determine what they are doing or when they are finished. For example, Windows could start or stop the device or initiate a system restart while the process is performing a critical action.
 
-In most cases, *co-installers* should not start other processes or services. However, installers can start other processes safely by calling [CreateProcess](https://go.microsoft.com/fwlink/p/?linkid=194524) from a function or dialog that is displayed through a [finish-install action](finish-install-actions--windows-vista-and-later-.md). The installer must not let the user continue in the dialog or procedure until the created process has exited.
-
- 
+In most cases, *co-installers* should not start other processes or services. However, installers can start other processes safely by calling [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) from a function or dialog that is displayed through a [finish-install action](finish-install-actions--windows-vista-and-later-.md). The installer must not let the user continue in the dialog or procedure until the created process has exited.
 

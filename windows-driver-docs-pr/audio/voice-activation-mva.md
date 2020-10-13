@@ -2,7 +2,7 @@
 title: Multiple Voice Assistant
 description: The Multiple Voice Assistant platform provides support for additional voice assistants beyond Cortana. 
 ms.assetid: 48a7e96b-58e8-4a49-b673-14036d4108d5
-ms.date: 03/12/2020
+ms.date: 09/08/2020
 ms.localizationpriority: medium
 ---
 
@@ -197,11 +197,11 @@ A driver operates under various constraints when moving audio data between the O
 
 HW-KWS solutions must support audio capture sizes of at least 100ms and up to 200ms.
 
-The driver expresses the buffer size constraints by setting the DEVPKEY\_KsAudio\_PacketSize\_Constraints device property on the KSCATEGORY\_AUDIO PnP device interface of the KS filter that has the KS streaming pin(s). This property should remain valid and stable while the KS filter interface is enabled. The OS can read this value at any time without having to open a handle to the driver and call on the driver.
+The driver expresses the buffer size constraints by setting the DEVPKEY\_KsAudio\_PacketSize\_Constraints2 device property on the KSCATEGORY\_AUDIO PnP device interface of the KS filter that has the KS streaming pin(s). This property should remain valid and stable while the KS filter interface is enabled. The OS can read this value at any time without having to open a handle to the driver and call on the driver.
 
-### DEVPKEY\_KsAudio\_PacketSize\_Constraints
+### DEVPKEY\_KsAudio\_PacketSize\_Constraints2
 
-The DEVPKEY\_KsAudio\_PacketSize\_Constraints property value contains a [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints) structure describing the physical hardware constraints (i.e. due to the mechanics of transferring data from the WaveRT buffer to the audio hardware). The structure includes an array of 0 or more [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint) structures describing constraints specific to any signal processing modes. The driver sets this property before calling [**PcRegisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice) or otherwise enabling its KS filter interface for its streaming pins.
+The DEVPKEY\_KsAudio\_PacketSize\_Constraints2 property value contains a [**KSAUDIO\_PACKETSIZE\_CONSTRAINTS2**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints2) structure describing the physical hardware constraints (i.e. due to the mechanics of transferring data from the WaveRT buffer to the audio hardware). The structure includes an array of 0 or more [**KSAUDIO\_PACKETSIZE\_PROCESSINGMODE\_CONSTRAINT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint) structures describing constraints specific to any signal processing modes. The driver sets this property before calling [**PcRegisterSubdevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice) or otherwise enabling its KS filter interface for its streaming pins.
 
 ### IMiniportWaveRTInputStream
 
