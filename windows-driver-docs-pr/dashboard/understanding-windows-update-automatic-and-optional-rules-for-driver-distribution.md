@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Understanding Windows Update Automatic and Optional Rules for Driver Distribution
 
 > [!NOTE]
-> The behaviors listed below apply to Windows 10 Version 1709 and above. Please note the change in behavior for **Optional/Manual** driver updates in Windows 10 Version 2004 and above.
+> The behaviors listed below apply to Windows 10 version 1709 and above. Please note the change in behavior for **Optional/Manual** driver updates in Windows 10 version 2004 and above.
 
 This article describes how you can control when Windows Update distributes your driver.
 
@@ -31,7 +31,7 @@ During a scheduled update or when a user selects **Check for updates** in the **
 
 ## Optional/Manual updates
 
-In Windows Version 1909 and below, Windows Update will automatically distribute **Optional/Manual** drivers in the following scenarios:
+In Windows version 1909 and below, Windows Update will automatically distribute **Optional/Manual** drivers in the following scenarios:
 * A device has no applicable drivers available in the Driver Store ("Driver Not Found"), and there is no applicable **Automatic** driver
 * Or *if the only locally available driver is generic*. That is, the only locally available driver is a system-provided driver that provides only basic device functionality, and there is no applicable **Automatic** driver
 
@@ -39,15 +39,15 @@ In Windows Version 1909 and below, Windows Update will automatically distribute 
 
 When a device is connected to a Windows system, [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available locally on the system. If one exists, Windows installs it on the device. Otherwise, Windows looks on Windows Update for a compatible driver, first matching the highest-ranking **Automatic** driver on Windows Update.
 
-In Windows Version 1909 and below, if no **Automatic** driver is available for the device, Windows proceeds to the highest-ranking **Optional/Manual** driver.
+In Windows version 1909 and below, if no **Automatic** driver is available for the device, Windows proceeds to the highest-ranking **Optional/Manual** driver.
 
-In Windows 10 Version 2004 and above, Windows will not search for an **Optional/Manual** driver when an **Automatic** driver is not available. **Optional/Manual** drivers could be access manually by a user by going to: *‘Settings > Update & Security > Windows Update > View optional updates > Driver updates’*.
+In Windows 10 version 2004 and above, Windows will not search for an **Optional/Manual** driver when an **Automatic** driver is not available. **Optional/Manual** drivers could be access manually by a user by going to: *‘Settings > Update & Security > Windows Update > View optional updates > Driver updates’*.
 
 ## Device manager
 
-In Windows Version 1909 and below, when a user searches for updated drivers in Device Manager, Windows attempts to install the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Optional/Manual**.
+In Windows version 1909 and below, when a user searches for updated drivers in Device Manager, Windows attempts to install the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Optional/Manual**.
 
-In Windows 10 Version 2004 and above, a user could only search for driver updates locally from Device Manager. Any online search are done from the *Windows Update Settings page*.
+In Windows 10 version 2004 and above, a user could only search for driver updates locally from Device Manager. Any online search are done from the *Windows Update Settings page*.
 
 ## Summary
 
@@ -57,11 +57,11 @@ The first column indicates the selection state in the **Driver Delivery Options*
 
 |Driver Delivery Options|OS Upgrades|Connect New Device|Device Manager|Windows Update daily scan or ‘Check for Updates’ button|Windows Update Optional page|
 |-|-|-|-|-|-|
-|Automatic (default)|Yes|Only if the local driver is generic or missing|Only in Windows Version 1909 and below|Yes|No|
-|Regular Automatic Update only|No|Only if the local driver is generic or missing|Only in Windows Version 1909 and below|Yes|No|
-|Dynamic Update only|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Only in Windows Version 1909 and below|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
+|Automatic (default)|Yes|Only if the local driver is generic or missing|Only in Windows version 1909 and below|Yes|No|
+|Regular Automatic Update only|No|Only if the local driver is generic or missing|Only in Windows version 1909 and below|Yes|No|
+|Dynamic Update only|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Only in Windows version 1909 and below|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
 | | | | | | |
-|Manual in Windows Version 1909 and below|No|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
-|Manual in Windows 10 Version 2004 and above|No|No|No|No|No|
+|Manual in Windows version 1909 and below|No|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
+|Manual in Windows 10 version 2004 and above|No|No|No|No|No|
 
 <!--use word generic? or just condense descriptive text?-->
