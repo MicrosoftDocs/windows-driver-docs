@@ -1,6 +1,6 @@
 ---
 title: Checksum offload
-description: Checksum offload usage, rules, and example
+description: Checksum offload usage, rules, and examples in NetAdapterCx
 ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Checksum Offload
@@ -22,7 +22,7 @@ Turning off checksum offloads when [Generic Segmentation Offload](gso-offload.md
 
 NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities. The driver doesn't need to take any further action.
 
-The checksum keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the checksum offload with a registry key setting.
+The checksum keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the checksum offload with a registry key setting. Grouped keywords are not supported.
 
 ## Configuring checksum offload
 
@@ -31,24 +31,30 @@ Client drivers first advertise their hardware's checksum offload capabilities du
 To configure transmit (Tx) checksum offload, the client driver:
 
 1. Allocates a [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_offload_tx_checksum_capabilities) structure.
-2. Calls [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_tx_checksum_capabilities_init) to initialize the structure.
-3. Calls [**NetAdapterOffloadSetTxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadtxsetchecksumcapabilities) to register the structure with NetAdapterCx.
+
+1. Calls [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_tx_checksum_capabilities_init) to initialize the structure.
+
+1. Calls [**NetAdapterOffloadSetTxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadtxsetchecksumcapabilities) to register the structure with NetAdapterCx.
  
 During the call to **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_TX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_tx_checksum) callback. The system invokes this callback later if active offload capabilities change.
 
 To configure receive (Rx) checksum offload, the client driver:
 
 1. Allocates a [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_offload_rx_checksum_capabilities) structure.
-2. Calls [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_rx_checksum_capabilities_init) to initialize the structure.
-3. Calls [**NetAdapterOffloadSetRxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadsetrxchecksumcapabilities) to register the structure with NetAdapterCx.
+
+1. Calls [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_rx_checksum_capabilities_init) to initialize the structure.
+
+1. Calls [**NetAdapterOffloadSetRxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadsetrxchecksumcapabilities) to register the structure with NetAdapterCx.
 
 During the call to **NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_RX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_rx_checksum) callback. The system invokes this callback later if active offload capabilities change.
 
 ### Rules for indicating hardware transmit checksum capabilities
 
-1. The Layer3Flags and Layer4Flags in the [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_tx_checksum_capabilities) structure must be set. This indicates the packets on which the NIC is capable of performing checksum offload.
-2. The Layer3HeaderOffsetLimit and Layer4HeaderOffsetLimit in **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES** are optional. If the OS sends a packet with a header offset greater than the limit specified, it won't request the NIC to calculate the checksum for that layer.
-3. IP/TCP packets without options/extensions must be supported if options/extensions are supported.
+1. The Layer3Flags in the [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_tx_checksum_capabilities) structure must be set. Setting the Layer4Flags is optional. Setting the Layer3Flags and Layer4Flags indicates the packets on which the NIC is capable of performing checksum offload.
+
+1. The Layer3HeaderOffsetLimit and Layer4HeaderOffsetLimit in **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES** are optional. If the OS sends a packet with a header offset greater than the limit specified, it won't request the NIC to calculate the checksum for that layer.
+
+1. IP/TCP packets without options/extensions must be supported if options/extensions are supported.
 
 ### Rules for indicating hardware receive checksum capabilities
 
@@ -65,20 +71,21 @@ MyAdapterSetOffloadCapabilities(
     // Configure the hardware's Tx checksum offload capabilities
     NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES txChecksumOffloadCapabilities;
 
-    auto const layer3Flags = NetAdapterOffloadFlagIPv4WithoutOptions |
-        NetAdapterOffloadFlagIPv4WithOptions |
-        NetAdapterOffloadFlagIPv6WithoutExtensions |
-        NetAdapterOffloadFlagIPv6WithExtensions;
+    auto const layer3Flags = NetAdapterOffloadLayer3FlagIPv4NoOptions |
+        NetAdapterOffloadLayer3FlagIPv4WithOptions |
+        NetAdapterOffloadLayer3FlagIPv6NoExtensions |
+        NetAdapterOffloadLayer3FlagIPv6WithExtensions;
 
-    auto const layer4Flags = NetAdapterOffloadFlagTcpWithoutOptions |
-        NetAdapterOffloadFlagTcpWithOptions |
-        NetAdapterOffloadFlagUdp;
+    auto const layer4Flags = NetAdapterOffloadLayer4FlagTcpNoOptions |
+        NetAdapterOffloadLayer4FlagTcpWithOptions |
+        NetAdapterOffloadLayer4FlagUdp;
 
     NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT(
         &txChecksumOffloadCapabilities,
         layer3Flags,
-        layer4Flags,
         EvtAdapterOffloadSetTxChecksum);
+
+    txChecksumOffloadCapabilities.Layer4Flags = layer4Flags;
 
     txChecksumOffloadCapabilities.Layer4HeaderOffsetLimit = 127;
 
@@ -172,6 +179,6 @@ The flags can be one of the following:
 
 | Flag | Description |
 | --- | --- |
-| NetPacketRxChecksumEvaluationNotChecked | The NIC could not validate the checksum of the packet |
-| NetPacketRxChecksumEvaluationValid | The checksum of the packet is valid |
-| NetPacketRxChecksumEvaluationInvalid | The checksum of the packet is invalid |
+| `NetPacketRxChecksumEvaluationNotChecked` | The NIC could not validate the checksum of the packet |
+| `NetPacketRxChecksumEvaluationValid` | The checksum of the packet is valid |
+| `NetPacketRxChecksumEvaluationInvalid` | The checksum of the packet is invalid |

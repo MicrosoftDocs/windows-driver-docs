@@ -31,8 +31,8 @@
   - name: "Packet descriptors and extensions"
     href: packet-descriptors-and-extensions.md
   - name: "NetAdapterCx hardware offloads"
-    items:
-    - name: "Introduction to hardware offloads"
+    items: 
+    - name: "Introduction to NetAdapterCx hardware offloads"
       href: introduction-to-hardware-offloads.md
     - name: "Checksum offload"
       href: checksum-offload.md
@@ -70,3 +70,5 @@
     href: mobile-broadband-mbb-wdf-class-extension-mbbcx.md
   - name: "Writing an MBBCx client driver"
     href: writing-an-MBBcx-client-driver.md
+- name: "Recovering an unresponsive NIC with NetAdapterCx PLDR"
+  href: platform-level-device-reset.md
