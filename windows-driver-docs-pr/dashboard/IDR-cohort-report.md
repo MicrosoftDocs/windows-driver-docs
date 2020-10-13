@@ -13,7 +13,7 @@ Beginning June 15, 2020, Driver Servicing began [evaluating driver quality by ta
 When a driver completes flighting, a bug is created and assigned to you, which includes the Decision Snapshot (a report of the state of the measures at the time of flight completion) [report.html in image below]. We will be utilizing that same bug to include the new Cohort Failure Report if the driver is cancelled due to a cohort failure during release monitoring. It will be added to the RejectedDriverFlightReport Zip file as an attachment to that bug. Inside the Zip file, the file name will be Cohort_Failure_Report.pdf.
 
 ![Screenshot of Bug Attachment with the RejectDriverFlightReport.zip file attached that contains the new Cohort_Failure_Report.pdf](images/IDRReportBug.png)
-Figure 1:Screenshot of Bug Attachment with the RejectedDriverFlightReport.zip file attached that contains the new Cohort_Failure_Report.pdf
+Figure 1: Screenshot of Bug Attachment with the RejectedDriverFlightReport.zip file attached that contains the new Cohort_Failure_Report.pdf
 
 ## How to Read the Report
 This report has 3 sections, described below.
@@ -27,13 +27,13 @@ Figure 2: Screenshot of the Title section that includes the submitter company na
 ### Summary section: provides a summary of the action you will need to take
 This section includes basic information about what type of analysis was done and what you can do to address the issue.
 
-![Screenshot of Summary section with the summary of the report and action you can take to resolve the problem](images/IDRReportSummary.png)
-Figure 3: Screenshot of Summary section with the summary of the report and action you can take to resolve the problem
+![Screenshot of the Summary section with the summary of the report and action you can take to resolve the problem](images/IDRReportSummary.png)
+Figure 3: Screenshot of the Summary section with the summary of the report and action you can take to resolve the problem
 
 ### Details Section: provides details about the failures that were found
 This section includes details about the failures that were found. The section will repeat for each failing cohort that is found. 
 
-First it will list a targeting cohort (Hardware ID, CHID, and OS version) that the failure was found it. Below that will be a list of measures that failed for that targeting cohort. This will include the Measure ID (to look it up in the Measure Dictionary and the Flight Report), the Measure name, the result of the measure at the time of the report, the passing criteria, the status of the measure, and the number of machines in that cohort that have adopted the driver and were used to calculate the measure.
+First it will list a targeting cohort (Hardware ID, CHID, and OS version) where the failure was found. Then, it will be followed by the list of measures that failed for that targeting cohort. This will include the Measure ID (to look it up in the Measure Dictionary and the Flight Report), the Measure name, the result of the measure at the time of the report, the passing criteria, the status of the measure, and the number of machines in that cohort that have adopted the driver and were used to calculate the measure.
 
 ![Screenshot of the Details section that includes each failing targeting cohort and the failing measure details for each cohort](images/IDRReportDetails.png)
 Figure 4: Screenshot of the Details section that includes each failing targeting cohort and the failing measure details for each cohort
