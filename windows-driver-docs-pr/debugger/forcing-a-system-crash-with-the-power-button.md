@@ -2,16 +2,18 @@
 title: Forcing a System Crash with the Power Button
 description: Forcing a System Crash with the Power Button
 keywords: ["boot process, causing system crash from power button", "system crash, power button", "bug check, power button"]
-ms.date: 10/05/2020 
+ms.date: 10/12/2020
 ms.localizationpriority: medium
 ---
 
 # Forcing a System Crash with the Power Button
 
-A [0x1C8](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0x1c8--manually-initiated-power-button-hold#manually_initiated_power_button_hold-parameters) manual system crash can be forced by pressing and holding the power button when the following registry key is set:
+A [Bug Check 0x1C8: MANUALLY_INITIATED_POWER_BUTTON_HOLD](bug-check-0x1c8--manually-initiated-power-button-hold.md) manual system crash can be forced by pressing and holding the power button when the following registry key is set:
 
-    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
-    "PowerButtonBugcheck"=dword:00000001
+```reg
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+"PowerButtonBugcheck"=dword:00000001
+```
 
 If this registry key does *not* exist, the system must be rebooted for this change to take effect.
 

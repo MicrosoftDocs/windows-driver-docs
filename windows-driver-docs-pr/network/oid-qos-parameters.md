@@ -60,7 +60,7 @@ When the miniport driver handles the OID method request of OID\_QOS\_PARAMETERS,
 
     For more information about the local DCBX Willing state, see [Managing the Local DCBX Willing State](./managing-the-local-dcbx-willing-state.md).
 
-For more information on how the miniport driver overrides local QoS parameters, see [Managing NDIS QoS Parameters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-ndis-qos--parameters).
+For more information on how the miniport driver overrides local QoS parameters, see [Managing NDIS QoS Parameters](overview-of-ndis-qos-parameters.md).
 
 **Note**  Overriding the local QoS parameters should not cause the miniport driver to fail the OID method request of OID\_QOS\_PARAMETERS.
 

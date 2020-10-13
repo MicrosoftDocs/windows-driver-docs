@@ -29,13 +29,13 @@ For information about the NTSTATUS values that drivers can set in the I/O status
 
 For more information about various kinds of drivers and the requests that each is required to support, see the following:
 
-[Serial Devices and Drivers](/previous-versions/ff547451(v=vs.85))
+[Serial Devices and Drivers](/windows-hardware/drivers/serports/using-serial-sys-and-serenum-sys)
 
-[System-Supplied Parallel Drivers](/previous-versions/ff544814(v=vs.85))
+[System-Supplied Parallel Drivers](/windows-hardware/drivers/parports/system-supplied-parallel-drivers)
 
 [Storage Drivers](../storage/storage-drivers.md)
 
-[HID Architecture](/previous-versions/jj126193(v=vs.85))
+[HID Architecture](../hid/hid-architecture.md)
 
 [I/O Requests for USB Client Drivers](/windows-hardware/drivers/ddi/_usbref/#km-ioctl)
 
