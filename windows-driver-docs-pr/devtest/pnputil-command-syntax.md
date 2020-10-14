@@ -36,7 +36,7 @@ pnputil [/add-driver <...> | /delete-driver <...> |
 
  **/add-driver** * <filename.inf | *.inf> [/subdirs] [/install] [/reboot]*
 
-Available in Windows 10, version 1607 (Redstone 1) and later.
+**Available starting in Windows 10, version 1607.**
 
 Add driver package(s) into the driver store.  
 ```
@@ -47,7 +47,7 @@ Add driver package(s) into the driver store.
 
 **/delete-driver** *<oem#.inf> [/uninstall] [/force] [/reboot]*
 
-Available in Windows 10, version 1607 (Redstone 1) and later.
+**Available starting in Windows 10, version 1607.**
 
 Delete driver package from the driver store.  
 
@@ -59,19 +59,19 @@ Delete driver package from the driver store.
 
 **/export-driver** <em><oem#.inf | *> <target directory></em>
 
-Available in Windows 10, version 1607 (Redstone 1) and later.
+**Available starting in Windows 10, version 1607.**
 
 Export driver package(s) from the driver store into a target directory.
 
 **/enum-drivers**
 
-Available in Windows 10, version 1607 (Redstone 1) and later.
+**Available starting in Windows 10, version 1607.**
 
 Enumerate all 3rd party driver packages in the driver store.
 
 **/disable-device** <em>\<instance ID\> [/reboot]</em>
 
-**Only available on Windows 10 Version 2004 and above**
+**Available starting in Windows 10 Version 2004**
 
 Disable devices on the system. 
 
@@ -81,7 +81,7 @@ Disable devices on the system.
 
 **/enable-device** *\<instance ID\> [/reboot]*
 
-**Only available on Windows 10 Version 2004 and above**
+**Available starting in Windows 10 Version 2004**
 
 Enable devices on the system.  
 
@@ -91,7 +91,7 @@ Enable devices on the system.
 
 **/restart-device** *\<instance ID\> [/reboot]*
 
-**Only available on Windows 10 Version 2004 and above**
+**Available starting in Windows 10 Version 2004**
 
 Restart devices devices on the system. 
 
@@ -101,7 +101,7 @@ Restart devices devices on the system.
 
 **/remove-device** *\<instance ID\> [/subtree] [/reboot]*
 
-**Only available on Windows 10 Version 2004 and above**
+**Available starting in Windows 10 Version 2004**
 
 Attempt to remove a device from the system. 
 
@@ -112,7 +112,7 @@ Attempt to remove a device from the system.
 
 **/scan-devices** *[/instanceid \<instance ID\>] [/async]*
 
-**Only available on Windows 10 Version 2004 and above**
+**Available starting in Windows 10 Version 2004**
 
 Scan the system for any device hardware changes. 
 
@@ -122,7 +122,7 @@ Scan the system for any device hardware changes.
 ```
 **/enum-devices** *[/connected] [/disconnected] [/instanceid \<instance ID\>] [/class <name | GUID>] [/problem [\<problem code\>]] [/ids] [/relations] [/drivers]*
 
-**Only available on Windows 10 Version 1903 and above**
+**Available starting in Windows 10 Version 1903**
 
 Enumerate all devices on the system.
 
@@ -138,7 +138,7 @@ Enumerate all devices on the system.
 
 **/enum-interfaces** *[/enabled | /disabled] [/class \<GUID\>]*
 
-**Only available on Windows 10 Version 1903 and above**
+**Available starting in Windows 10 Version 1903**
 
 Enumerate all device interfaces on the system.
 
