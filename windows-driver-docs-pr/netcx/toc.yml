@@ -36,9 +36,9 @@
       href: introduction-to-hardware-offloads.md
     - name: "Checksum offload"
       href: checksum-offload.md
-    - name: "Generic Segmentation offload"
+    - name: "Generic Segmentation Offload (GSO)"
       href: gso-offload.md
-    - name: "Receive Segment Coalescing offload"
+    - name: "Receive Segment Coalescing (RSC) offload"
       href: rsc-offload.md
   - name: "Transmit and receive queues"
     href: transmit-and-receive-queues.md
