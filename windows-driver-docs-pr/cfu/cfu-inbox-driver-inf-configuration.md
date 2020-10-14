@@ -12,9 +12,9 @@ ms.localizationpriority: medium
 
 To configure a custom INF file for the inbox CFU driver, you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
 
-The [sample inbox driver INF file](#sample-inbox-driver-inf-file) included below provides a starting point for your INF file. This sample INF is the *CfuVirtualHidDeviceFwUpdate.inf* file from the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) sample code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the simulation's INF file to illustrate the configuration concepts discussed in this topic.
+The [Sample CFU INF file](#sample-cfu-inf-file) included below provides a starting point for your device's custom INF file. The sample INF is the *CfuVirtualHidDeviceFwUpdate.inf* file from the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) sample code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the simulation's INF file to illustrate the configuration concepts discussed in this topic.
 
-Your actual INF file must be customized and configured specifically for your firmware and hardware.
+Your actual INF file must be customized and configured specifically for your device firmware and hardware.
 
 ## Contents
 
@@ -22,7 +22,7 @@ Your actual INF file must be customized and configured specifically for your fir
 
 - [Overview](#overview)
 
-- [Configure the CFU inbox driver INF](#configure-the-cfu-inbox-driver-inf)
+- [Configure the CFU INF](#configure-the-cfu-inf)
 
   - [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry)
 
@@ -42,7 +42,7 @@ Your actual INF file must be customized and configured specifically for your fir
 
 - [Firmware update status](#firmware-update-status)
 
-- [Sample inbox driver INF file](#sample-inbox-driver-inf-file)
+- [Sample CFU INF file](#sample-cfu-inf-file)
 
 - [Troubleshooting](#troubleshooting)
 
@@ -78,9 +78,9 @@ This allows you to service your in-market devices through Windows Update. To upd
 
 ![CFU firmware update](images/transfer-flowchart.png)
 
-## Configure the CFU inbox driver INF
+## Configure your custom CFU INF file
 
-1. Update the INF with hardware IDs of your devices. Replace the hardware ID in in this section with hardwareID(s) of your supported devices.
+1. In your custom INF file, insert the hardware IDs of your devices as indicated in this sample.
   
     ```inf
     ; Target the Hardware ID for your devices.
@@ -109,40 +109,40 @@ This allows you to service your in-market devices through Windows Update. To upd
     0x09, CFU_DEVICE_USAGE,             // USAGE(0xF5)
     ```
 
-1. Update the registry entries and **SourceDisksFiles** and **CopyFiles** sections (shown here) in your custom INF to match the files in your firmware update.
+1. In your custom INF file, update the following entries shown here (including the **SourceDisksFiles** and **CopyFiles** sections) to match the files in your firmware update.
 
     ```inf
-; Specify the location of the firmware offer and payload file in the registry.
-; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
-; in driver store.
-;
-; You can change subkey name under CFU (e.g. "CfuVirtualHidDevice_MCU"), and specify your own offer
-; (e.g. "CfuVirtualHidDevice_MCU.offer.bin") and payload (e.g "CfuVirtualHidDevice_MCU.payload.bin") file name.
-;
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Offer,   0x00000000, %13%\CfuVirtualHidDevice_MCU.offer.bin
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Payload, 0x00000000, %13%\CfuVirtualHidDevice_MCU.payload.bin
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Offer,   0x00000000, %13%\CfuVirtualHidDevice_Audio.offer.bin
-HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Payload, 0x00000000, %13%\CfuVirtualHidDevice_Audio.payload.bin
+    ; Specify the location of the firmware offer and payload file in the registry.
+    ; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
+    ; in driver store.
+    ;
+    ; You can change subkey name under CFU (e.g. "CfuVirtualHidDevice_MCU"), and specify your own offer
+    ; (e.g. "CfuVirtualHidDevice_MCU.offer.bin") and payload (e.g "CfuVirtualHidDevice_MCU.payload.bin") file name.
+    ;
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Offer,   0x00000000, %13%\CfuVirtualHidDevice_MCU.offer.bin
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Payload, 0x00000000, %13%\CfuVirtualHidDevice_MCU.payload.bin
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Offer,   0x00000000, %13%\CfuVirtualHidDevice_Audio.offer.bin
+    HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Payload, 0x00000000, %13%\CfuVirtualHidDevice_Audio.payload.bin
 
-[SourceDisksFiles]
-CfuVirtualHidDevice_MCU.offer.bin=1
-CfuVirtualHidDevice_MCU.payload.bin=1
-CfuVirtualHidDevice_Audio.offer.bin=1
-CfuVirtualHidDevice_Audio.payload.bin=1
+    [SourceDisksFiles]
+    CfuVirtualHidDevice_MCU.offer.bin=1
+    CfuVirtualHidDevice_MCU.payload.bin=1
+    CfuVirtualHidDevice_Audio.offer.bin=1
+    CfuVirtualHidDevice_Audio.payload.bin=1
 
-[CfuVirtualHidDeviceFwUpdate.CopyFiles]
-CfuVirtualHidDevice_MCU.offer.bin
-CfuVirtualHidDevice_MCU.payload.bin
-CfuVirtualHidDevice_Audio.offer.bin
-CfuVirtualHidDevice_Audio.payload.bin
+    [CfuVirtualHidDeviceFwUpdate.CopyFiles]
+    CfuVirtualHidDevice_MCU.offer.bin
+    CfuVirtualHidDevice_MCU.payload.bin
+    CfuVirtualHidDevice_Audio.offer.bin
+    CfuVirtualHidDevice_Audio.payload.bin
     ```
 
-    For more information, see the [Sample inbox driver INF file](#sample-inbox-driver-inf-file) below.
+    See the [Sample CFU INF file](#sample-cfu-inf-file) below for the complete CFU INF sample file.
 
     > [!NOTE]
     > When the packages are installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
 
-1. Specify device capabilities in your custom INF file.
+1. In your custom INF file, specify your device's capabilities with the registry value capability settings described in the table and sample INF section below.
 
     The inbox driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described below in [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
 
@@ -154,13 +154,13 @@ CfuVirtualHidDevice_Audio.payload.bin
     |--|--|
     | Alignment | Protocol Attribute: What is the bin record alignment required for this configuration?<p>During payload send phase of the protocol, the driver fills in many Hid buffers with the payload and send to firmware one by one.<p>This option control the alignment requirement when packing the payload.<p>By default 8 byte alignment is used. If no alignment is required, configure this as 1. |
     | UseHidSetOutputReport | 0 - Driver will use Write request while sending any output report.<p>1 - Driver will use IOCTL_HID_SET_OUTPUT_REPORT for sending any output report.<p>Default is 0. Set this to 1 if your underlying transport is not USB (for example, HID Over BTH). |
-    | OfferInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Input Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-    | OfferOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Output Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-    | PayloadInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Input Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-    | PayloadOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Output Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
-    | VersionsFeatureValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Version Feature Report Handling. See [INF Value Capability settings](#inf-value-capability-settings). |
+    | OfferInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Input Report Handling. |
+    | OfferOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Offer Output Report Handling. |
+    | PayloadInputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Input Report Handling. |
+    | PayloadOutputValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Payload Output Report Handling. |
+    | VersionsFeatureValueCapabilityUsageRangeMinimum | Value Capability Usage Minimum for Version Feature Report Handling. |
 
-    **INF Value Capability settings**
+    **INF value capability settings**
 
     In order for the inbox driver to communicate with the firmware (real/virtual), the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
 
@@ -176,9 +176,9 @@ CfuVirtualHidDevice_Audio.payload.bin
     HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x31
     HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
     ```
-    
+
     For more information, refer the following code in **g_CfuVirtualHid_HidReportDescriptor** (Hid Report Descriptor) in [*DmfInterface.c*](https://github.com/microsoft/CFU/blob/master/Host/CFUFirmwareSimulation/sys/DmfInterface.c).
-    
+
     ```cpp
     0x85, REPORT_ID_PAYLOAD_INPUT,      // REPORT_ID(34)
     0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
@@ -186,34 +186,34 @@ CfuVirtualHidDevice_Audio.payload.bin
     0x19, PAYLOAD_INPUT_USAGE_MIN,      // USAGE MIN (0x26)
     0x29, PAYLOAD_INPUT_USAGE_MAX,      // USAGE MAX (0x29)
     0x81, 0x02,                         // INPUT(0x02)
-    
+
     0x85, REPORT_ID_OFFER_INPUT,        // REPORT_ID(37)
     0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
     0x95, 0x04,                         // REPORT COUNT(4)
     0x19, OFFER_INPUT_USAGE_MIN,        // USAGE MIN (0x1A)
     0x29, OFFER_INPUT_USAGE_MAX,        // USAGE MAX (0x1D)
     0x81, 0x02,                         // INPUT(0x02)
-    
+
     0x85, REPORT_ID_PAYLOAD_OUTPUT,     // REPORT_ID(32)
     0x75, 0x08,                         // REPORT SIZE(8)
     0x95, OUTPUT_REPORT_LENGTH,         // REPORT COUNT(60)
     0x09, PAYLOAD_OUTPUT_USAGE,         // USAGE(0x31)
     0x92, 0x02, 0x01,                   // OUTPUT(0x02)
-    
+
     0x85, REPORT_ID_OFFER_OUTPUT,       // REPORT_ID(37)
     0x75, INPUT_REPORT_LENGTH,          // REPORT SIZE(32)
     0x95, 0x04,                         // REPORT COUNT(4)
     0x19, OFFER_OUTPUT_USAGE_MIN,       // USAGE MIN (0x1E)
     0x29, OFFER_OUTPUT_USAGE_MAX,       // USAGE MAX (0x21)
     0x91, 0x02,                         // OUTPUT(0x02)
-    
+
     0x85, REPORT_ID_VERSIONS_FEATURE,   // REPORT_ID(32)
     0x75, 0x08,                         // REPORT SIZE(8)
     0x95, FEATURE_REPORT_LENGTH,        // REPORT COUNT(60)
     0x09, VERSIONS_FEATURE_USAGE,       // USAGE(0x42)
     0xB2, 0x02, 0x01,                   // FEATURE(0x02)
     ```
-    
+
 ## Deploy the firmware package through Windows Update
 
 Next, deploy the package through Windows Update.
@@ -257,7 +257,7 @@ During the protocol transaction, the CFU inbox driver writes registry entries to
 | Payload Accepted. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_PENDING_RESET |
 | Error at any stage. | {Device Hardware key}\ComponentFirmwareUpdate | "Component*ID*FirmwareUpdateStatus" | FIRMWARE_UPDATE_STATUS_ERROR |
 
-## Sample inbox driver INF file
+## Sample CFU INF file
 
 ```inf
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -275,7 +275,7 @@ During the protocol transaction, the CFU inbox driver writes registry entries to
 ;
 ; Description:
 ;
-;      Sample inbox driver INF file for Cfu virtual Hid device firmware update.
+;      Sample INF file for Cfu virtual Hid device firmware update.
 ;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
