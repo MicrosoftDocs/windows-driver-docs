@@ -32,6 +32,7 @@ The following offloads are supported by NetAdapterCx and the Windows TCP/IP stac
 | --- | --- |
 | [Checksum](checksum-offload.md) | Offloading the calculation and validation of IP and TCP checksums to the NIC. |
 | [Generic send offload (GSO)](gso-offload.md) | Offloading segmentation of large TCP/UDP packets for IPv4 and IPv6. |
+| [Receive Segment Coalescing (RSC)](rsc-offload.md) | Offloading coalescing of a sequence of received TCP segments for IPv4 and IPv6. |
 
 For more information on configuring offloads and updating offloads when the TCP/IP stack or an overlying protocol driver requests a change to the net adapter's active capabilities, visit the corresponding offload reference page.
 
