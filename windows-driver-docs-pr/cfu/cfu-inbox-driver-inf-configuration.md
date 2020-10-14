@@ -109,10 +109,38 @@ This allows you to service your in-market devices through Windows Update. To upd
     0x09, CFU_DEVICE_USAGE,             // USAGE(0xF5)
     ```
 
-1. Update the **SourceDisksFiles** and **CopyFiles** sections to reflect the files in your firmware update. To see an example, see the [Sample inbox driver INF file](#sample-inbox-driver-inf-file).
+1. Update the registry entries and **SourceDisksFiles** and **CopyFiles** sections (shown here) in your custom INF to match the files in your firmware update.
+
+    ```inf
+; Specify the location of the firmware offer and payload file in the registry.
+; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
+; in driver store.
+;
+; You can change subkey name under CFU (e.g. "CfuVirtualHidDevice_MCU"), and specify your own offer
+; (e.g. "CfuVirtualHidDevice_MCU.offer.bin") and payload (e.g "CfuVirtualHidDevice_MCU.payload.bin") file name.
+;
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Offer,   0x00000000, %13%\CfuVirtualHidDevice_MCU.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_MCU,Payload, 0x00000000, %13%\CfuVirtualHidDevice_MCU.payload.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Offer,   0x00000000, %13%\CfuVirtualHidDevice_Audio.offer.bin
+HKR,A410A898-8132-4246-AC1A-30F1E98BB0A4\CfuVirtualHidDevice_Audio,Payload, 0x00000000, %13%\CfuVirtualHidDevice_Audio.payload.bin
+
+[SourceDisksFiles]
+CfuVirtualHidDevice_MCU.offer.bin=1
+CfuVirtualHidDevice_MCU.payload.bin=1
+CfuVirtualHidDevice_Audio.offer.bin=1
+CfuVirtualHidDevice_Audio.payload.bin=1
+
+[CfuVirtualHidDeviceFwUpdate.CopyFiles]
+CfuVirtualHidDevice_MCU.offer.bin
+CfuVirtualHidDevice_MCU.payload.bin
+CfuVirtualHidDevice_Audio.offer.bin
+CfuVirtualHidDevice_Audio.payload.bin
+    ```
+
+    For more information, see the [Sample inbox driver INF file](#sample-inbox-driver-inf-file) below.
 
     > [!NOTE]
-    > When the package(s) gets installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
+    > When the packages are installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
 
 1. Specify device capabilities in your custom INF file.
 
