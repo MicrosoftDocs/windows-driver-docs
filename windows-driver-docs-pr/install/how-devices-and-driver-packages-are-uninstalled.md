@@ -8,15 +8,15 @@ ms.localizationpriority: medium
 
 # How Devices and Driver Packages are Uninstalled
 
-This page describes how a driver uninstalls a device and removes a driver package from the [driver store](driver-store.md).
+This page describes how software uninstalls a device and removes a driver package from the [driver store](driver-store.md).
 
 ## Uninstalling the Device
 
 To remove the device node (*devnode*) that represents a physical device, use one of the following:
 
-* A device installation application that calls the [SetupAPI](setupapi.md) [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) function with a request of [**DIF_REMOVE**](./dif-remove.md). For more information, see [Using General Setup Functions](using-general-setup-functions.md).
+* To uninstall only the specified device, use a device installation application that calls the [SetupAPI](setupapi.md) function [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) with a request of [**DIF_REMOVE**](./dif-remove.md).
 
-* A device installation application that calls the [**DiUninstallDevice**](/windows/win32/api/newdev/nf-newdev-diuninstalldevice) function. For more information, see [Using Device Installation Functions](using-device-installation-functions.md).
+* To uninstall the specified device and any devices below it in the device tree, use a device installation application that calls the [**DiUninstallDevice**](/windows/win32/api/newdev/nf-newdev-diuninstalldevice) function.
 
 When a device is uninstalled using one of these methods, the Plug and Play (PnP) manager removes the association between the driver binary files and the device.
 
@@ -26,16 +26,14 @@ For info on how an end user can uninstall a device, see  [Using Device Manager t
 
 ## Deleting a Driver Package from the Driver Store
 
-Before deleting a driver package from the driver store, be sure to uninstall all devices that are using it.
+To delete a [driver package](driver-packages.md) from the [driver store](driver-store.md), do one of the following:
 
-To delete a [driver package](driver-packages.md) from the [driver store](driver-store.md), use one of these options:
+* From the command prompt, use `pnputil /delete-driver <example.inf> /uninstall`. For info on PnPUtil commands, see [PnPUtil Command Syntax](../devtest/pnputil-command-syntax.md).
+* On Windows 10, version 1703 or later, a device installation application can call [**DiUninstallDriverW**](/windows/win32/api/newdev/nf-newdev-diuninstalldriverw).
+* On earlier versions of Windows, a device installation application should first issue a [**DIF_REMOVE**](./dif-remove.md) request or call the [**DiUninstallDevice**](/windows/win32/api/newdev/nf-newdev-diuninstalldevice) function to uninstall all devices and then call [**SetupUninstallOEMInf**](/windows/win32/api/setupapi/nf-setupapi-setupuninstalloeminfa) to remove the driver.
 
-* `pnputil /delete-driver <blah.inf> /uninstall`
-* Use DevCon to [remove devices by device instance ID pattern](../devtest/devcon-examples.md#ddk_example_35_remove_devices_by_device_instance_id_pattern_tools)
+Deleting a driver package from the driver store removes associated metadata from the PnP manager's internal database and deletes related INF files from the system INF directory.
 
-Deleting the [driver package](driver-packages.md) from the [driver store](driver-store.md) removes associated metadata from the PnP manager's internal database and deletes related INF files from the system INF directory.
-
-After the driver package has been removed from the driver store, it is no longer available to be installed on a device. To reinstall, download the driver again from the original source, such as Windows Update.
+After the driver package has been removed, it is no longer available to be installed on a device. To reinstall, download the driver again from the original source, such as Windows Update.
 
 Manually deleting the [driver package](driver-packages.md) from the [driver store](driver-store.md) may result in unpredictable behavior.
-
