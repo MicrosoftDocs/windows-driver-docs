@@ -22,15 +22,7 @@ Your actual INF file must be customized and configured specifically for your dev
 
 - [Overview](#overview)
 
-- [Configure the CFU INF](#configure-the-cfu-inf)
-
-  - [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry)
-
-    - [CFU registry values](#cfu-registry-values)
-  
-    - [INF Value Capability settings](#inf-value-capability-settings)
-  
-    - [INF Hardware ID settings](#inf-hardware-id-settings)
+- [Configure your custom CFU INF file](#configure-your-custom-cfu-inf-file)
 
 - [Deploy the firmware package through Windows Update](#deploy-the-firmware-package-through-windows-update)
 
@@ -144,7 +136,7 @@ This allows you to service your in-market devices through Windows Update. To upd
 
 1. In your custom INF file, specify your device's capabilities with the registry value capability settings described in the table and sample INF section below.
 
-    The inbox driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described below in [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry).
+    The inbox driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described in the **CFU registry values** table below.
 
     For example, the inbox driver requires information about the underlying bus protocol to which the device is connected. The protocol can be specified through registry settings. You may configure each of these registry values per component as needed.
 
@@ -370,7 +362,7 @@ FwUpdateFriendlyName= "CfuVirtualHidDevice Firmware Update"
 
 **I have a component A that needs an update, how can I make the CFU driver aware of component A?**
 
-You need to configure the CFU inbox driver INF by using the hardware ID of the TLC created by component A. See [Configure the CFU inbox driver INF](#configure-the-cfu-inbox-driver-inf) for details.
+You need to configure the CFU inbox driver INF by using the hardware ID of the TLC created by component A.
 
 **I have two components: component A, and a sub-component B. How should I make the CFU driver aware of component B?**
 
@@ -378,11 +370,11 @@ You don't need to. The driver doesn't need to know about the component hierarchy
 
 **How can I make the driver aware about my firmware files (offer, payload) file that I need to send to my component A?**
 
-The firmware file information is set in the INF as registry values. See [Configure the CFU inbox driver INF](#configure-the-cfu-inbox-driver-inf) for details.
+The firmware file information is set in the INF as registry values.
 
 **I have many firmware files, multiple offer, payload, for main component A and its subcomponents. How should I make the driver aware of which firmware file is meant for which component?**
 
-The firmware file information is set in the INF as registry values. See [Configure the CFU inbox driver INF](#configure-the-cfu-inbox-driver-inf) for details.
+The firmware file information is set in the INF as registry values.
 
 **I have inbuilt component A and peripheral component B that needs an update. How should I make the driver aware of this?**
 
@@ -390,11 +382,11 @@ You do not need to make the driver aware of the component in this case. The driv
 
 **Component A uses HID-Over-USB, component B is uses HID-Over-Bluetooth. How should I pass this information to the driver?**
 
-Specify the correct capability by using the registry **Protocol** value. See [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry) for details.
+Specify the correct capability by using the registry **Protocol** value.
 
 **I am reusing the same driver for my components, are there any other customizations possible per usage scenarios?**
 
-There are certain optimization settings that the driver allows. Those are configured in the registry. See [Configure device capabilities in the registry](#configure-device-capabilities-in-the-registry) for details.
+There are certain optimization settings that the driver allows. Those are configured in the registry.
 
 **I am using the driver for firmware updates.  How do I know an update has succeeded?**
 
