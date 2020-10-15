@@ -92,7 +92,7 @@ This section provides an example of installing a firmware update on the sample [
 
     ![step 1](images/install-cfu-virtual-device-firmware-update-1.png)
 
-1. In a text editor, open your firmware update INF file. In this example, we'll use the *CfuVirtualHidDeviceFwUpdate.inf* file outlined in the [CFU inbox driver INF configuration](cfu-inbox-driver-inf-configuration.md).
+1. In a text editor, open your firmware update INF file. In this example, we'll use the *CfuVirtualHidDeviceFwUpdate.inf* file outlined in the [CFU INF configuration](cfu-inf-configuration.md).
 
 1. In your firmware update INF file, move to the `[Standard.NTamd64]` section and verify the following information exists for the **HID\VID_045E&UP:FA00_U:00F5** device:
 
