@@ -21,7 +21,7 @@ This section includes the following topics:
 
 [Managing NDIS QoS Capabilities](registering-ndis-qos-capabilities.md)
 
-[Managing NDIS QoS Parameters](overview-of-ndis-qos-parameters)
+[Managing NDIS QoS Parameters](overview-of-ndis-qos-parameters.md)
 
 [Standardized INF Keywords for NDIS QoS](standardized-inf-keywords-for-ndis-qos.md)
 
