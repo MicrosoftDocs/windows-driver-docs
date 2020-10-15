@@ -1,6 +1,21 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/overview-of-ndis-qos-for-data-center-bridging.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/ndis-qos-for-data-center-bridging",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/managing-ndis-qos-capabilities.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/registering-ndis-qos-capabilities",
+            "redirect_document_id":  false
+        },
+        {
+            "source_path":  "windows-driver-docs-pr/network/managing-ndis-qos--parameters.md",
+            "redirect_URL":  "/windows-hardware/drivers/network/overview-of-ndis-qos-parameters",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/ndis-miniport-drivers.md",
             "redirect_URL":  "/windows-hardware/drivers/network/roadmap-for-developing-ndis-miniport-drivers",
             "redirect_document_id":  false
