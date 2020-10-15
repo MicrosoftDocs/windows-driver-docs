@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Component Firmware Update (CFU) inbox driver INF configuration
 
-To configure a custom INF file for the inbox CFU driver, you must follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
+To configure a custom INF file for the inbox CFU driver, follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
 
 The [Sample CFU INF file](#sample-cfu-inf-file) included below provides a starting point for your device's custom INF file. The sample INF is the *CfuVirtualHidDeviceFwUpdate.inf* file from the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) sample code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the simulation's INF file to illustrate the configuration concepts discussed in this topic.
 
