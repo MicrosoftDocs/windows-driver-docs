@@ -28,7 +28,7 @@ The metadata field identifiers are each represented by a bit-field. These identi
 |FWPS_METADATA_FIELD_ICMP_ID_AND_SEQUENCE|The Identifier and Sequence Number fields of an ICMP Echo Request or Echo Reply packet. **Note:**  Supported starting with Windows 7.|
 |FWPS_METADATA_FIELD_IP_HEADER_SIZE|The size of the IP header.|
 |FWPS_METADATA_FIELD_LOCAL_REDIRECT_TARGET_PID|The Process ID that a connection was redirected to. **Note:**  Supported starting with Windows 7.|
-|FWPS_METADATA_FIELD_ORIGINAL_DESTINATION|A [**SOCKADDR_STORAGE**](previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) structure that indicate the packet's original destination. **Note:**  Supported starting with Windows 7.|
+|FWPS_METADATA_FIELD_ORIGINAL_DESTINATION|A [**SOCKADDR_STORAGE**](/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)) structure that indicate the packet's original destination. **Note:**  Supported starting with Windows 7.|
 |FWPS_METADATA_FIELD_PACKET_DIRECTION|The direction of network traffic (inbound or outbound).|
 |FWPS_METADATA_FIELD_PACKET_SYSTEM_CRITICAL|Reserved for system use. Do not use. **Note:**  Supported in Windows Server 2008, Windows Vista with SP1, and later.|
 |FWPS_METADATA_FIELD_PARENT_ENDPOINT_HANDLE|The handle of the endpoint's parent socket. **Note:**  Supported starting with Windows 7.|
