@@ -167,7 +167,7 @@ The metadata field identifiers are each represented by a bit-field. These identi
 </td>
 <td>
 <p>A 
-       <a href="https://docs.microsoft.com/en-us/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)"><b>SOCKADDR_STORAGE</b></a> structure that indicate
+       <a href="https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms740504(v=vs.85)"><b>SOCKADDR_STORAGE</b></a> structure that indicate
        the packet's original destination.</p>
 <p>
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div>
