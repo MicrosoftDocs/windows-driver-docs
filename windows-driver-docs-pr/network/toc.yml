@@ -150,8 +150,6 @@
     href: introduction-to-ndis-pdpi.md
 - name: "NDIS versions"
   items: 
-  - name: "NDIS version guide"
-    href: ndis-version-guide.md
   - name: "Overview of NDIS versions"
     href: overview-of-ndis-versions.md
   - name: "Introductions to NDIS 6.0 and later"
