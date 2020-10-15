@@ -70,7 +70,7 @@ For all options below, the [TESTSIGNING boot option](the-testsigning-boot-config
 - [WHQL Test Signature Program](whql-test-signature-program.md)
 - [Enterprise CA Process](enterprise-ca-test-certificate.md)
 
-For testing drivers at boot, see Installing Test Signed Drivers.
+For testing drivers at boot, see [How to Install a Test-signed Driver Required for Windows Setup and Boot](how-to-install-test-signed-driver-for-setup-and-boot.md).
 
 For more info, see [Signing drivers during development and test](./introduction-to-test-signing.md).
 

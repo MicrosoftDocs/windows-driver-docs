@@ -64,7 +64,7 @@ Dism /unmount-image /mountdir:C:\WinPE_amd64\mount /commit
 Use these steps to install the driver:
 
 1. Turn off **Secure Boot** on the test computer and then start the WinPE system.
-2. After the machine boots with the ISO file, a command prompt appears. Run `wpeinit`, for example from `X:\Windows\system32`.
+2. After the machine boots with the ISO file, a command prompt appears.
 3. To identify the letter of the drive with the mounted ISO file, use `diskpart`, then `list volume`. Find the volume with **Type** of `DVD-ROM`. Type `exit`.
 4. Navigate to the ISO drive and switch to the driver sample directory, for example `D:\DriverSample`.
 5. Use the following commands to install the test driver:
