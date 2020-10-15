@@ -5,8 +5,8 @@
     href: index.md
   - name: "CFU firmware implementation guide"
     href: cfu-firmware-implementation-guide.md
-  - name: "CFU inbox HIDCFU driver INF configuration"
-    href: cfu-inbox-driver-inf-configuration.md
+  - name: "CFU INF configuration"
+    href: cfu-inf-configuration.md
   - name: "CFU protocol specification"
     href: cfu-specification.md
   - name: "CFU standalone tool"
