@@ -26,11 +26,11 @@
     href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
   - name: "Driver Flighting"
     items:
-    - name: "Overview"
+    - name: "Overview of driver flighting"
       href: driver-flighting.md
     - name: "Other Policies"
       items:
-      - name: "Overview"
+      - name: "Overview of other policies"
         href: other-policies.md
       - name: "Extension INF Targeting Rules"
         href: extension-inf-targeting-rules.md
