@@ -16,32 +16,6 @@ The [Sample CFU INF file](#sample-cfu-inf-file) included below provides a starti
 
 Your actual INF file must be customized and configured specifically for your device firmware and hardware.
 
-## Contents
-
-- [Before you begin](#before-you-begin)
-
-- [Overview](#overview)
-
-- [Configure your custom CFU INF file](#configure-your-custom-cfu-inf-file)
-
-- [Deploy the firmware package through Windows Update](#deploy-the-firmware-package-through-windows-update)
-
-- [Firmware update image file format](#firmware-update-image-file-format)
-
-  - [Offer format](#offer-format)
-
-  - [Payload format](#payload-format)
-
-- [Firmware update status](#firmware-update-status)
-
-- [Sample CFU INF file](#sample-cfu-inf-file)
-
-- [Troubleshooting](#troubleshooting)
-
-- [FAQ](#faq)
-
-- [Additional resources](#additional-resources)
-
 ## Before you begin
 
 The following resources will help you learn about the Component Firmware Update (CFU) protocol.
