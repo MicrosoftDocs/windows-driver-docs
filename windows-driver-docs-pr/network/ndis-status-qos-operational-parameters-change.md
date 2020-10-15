@@ -34,7 +34,7 @@ The miniport driver issues an **NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHAN
 
     The miniport driver notifies NDIS and overlying drivers of its intention to override the local NDIS QoS parameters by issuing an **NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE** status indication.
 
-    For more information, see [Managing NDIS QoS Parameters](https://docs.microsoft.com/windows-hardware/drivers/network/managing-ndis-qos--parameters).
+    For more information, see [Managing NDIS QoS Parameters](overview-of-ndis-qos-parameters.md).
 
 **Note**  Overlying drivers can use the **NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE** status indication to determine the operational NDIS QoS parameters. Alternatively, these drivers can also issue OID query requests of [OID\_QOS\_OPERATIONAL\_PARAMETERS](./oid-qos-operational-parameters.md) to obtain the operational NDIS QoS parameters at any time.
 
