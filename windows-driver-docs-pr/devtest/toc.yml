@@ -2732,6 +2732,8 @@
       items: 
       - name: "BCDEdit Options Reference"
         href: bcd-boot-options-reference.md
+      - name: "BCDEdit /bootsequence"
+        href: bcdedit--bootsequence.md
       - name: "BCDEdit /bootdebug"
         href: bcdedit--bootdebug.md
       - name: "BCDEdit /dbgsettings"
@@ -2740,12 +2742,24 @@
         href: bcdedit--debug.md
       - name: "BCDEdit /deletevalue"
         href: bcdedit--deletevalue.md
+      - name: "BCDEdit /displayorder"
+        href: bcdedit--displayorder.md        
       - name: "BCDEdit /ems"
         href: bcdedit--ems.md
       - name: "BCDEdit /emssettings"
         href: bcdedit--emssettings.md
+      - name: "BCDEdit /enum"
+        href: bcdedit--enum.md
+      - name: "BCDEdit /event"
+        href: bcdedit--event.md
+      - name: "BCDEdit /hypervisorsettings"
+        href: bcdedit--hypervisorsettings.md
       - name: "BCDEdit /set"
         href: bcdedit--set.md
+      - name: "BCDEdit /timeout"
+        href: bcdedit--timeout.md
+      - name: "BCDEdit /toolsdisplayorder"
+        href: bcdedit--toolsdisplayorder.md
     - name: "Editing Boot Options"
 # Auto-expanded node
       items: 

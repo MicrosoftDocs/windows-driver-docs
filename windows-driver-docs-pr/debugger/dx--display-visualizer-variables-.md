@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # dx (Display Debugger Object Model Expression)
 
 
-The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+The **dx** command displays a C++ expression using the NatVis extension model. For more information about NatVis, see [Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
 
 ```dbgcmd
 dx [-g|-gc #][-c #][-n|-v]-r[#] Expression[,<FormatSpecifier> ]
@@ -32,14 +32,14 @@ A C++ expression to be displayed.
 <span id="_______-g______"></span><span id="_______-G______"></span> **-g**   
 Display as a data grid objects which are iterable. Each iterated element is a row in the grid and each display child of those elements is a column. This allows you to view something such as an array of structs, where each array element is displayed in a row and each field of the struct is displayed in a column.
 
-Left clicking a column name (where there is an available DML link) will sort by that column. If already sorted by that column, the sort order will be inverted.
+Selecting a column name (where there is an available DML link) will sort by that column. If already sorted by that column, the sort order will be inverted.
 
-Any object which is iterable will have a right click context menu item added via DML called 'Display as Grid'. Right clicking an object in the output window and selecting this will display the object in the grid view instead of the standard tree view.
+Any object which is iterable will have a select and hold (or right-click) context menu item added via DML called 'Display as Grid'. Selecting and holding (or right-clicking) an object in the output window and selecting this will display the object in the grid view instead of the standard tree view.
 
-A (+) displayed by a column name offers both a right click and left click behavior.
+A (+) displayed by a column name offers both a select-and-hold (or right-click) and a select behavior.
 
--   Left click takes that column and explodes it into its own table. You see the original rows plus the children of the expanded column.
--   Right click provides "Expand Into Grid" which takes the column and adds it back to the current table as right most columns.
+-   Select takes that column and explodes it into its own table. You see the original rows plus the children of the expanded column.
+-   Select and hold (or right-click) provides "Expand Into Grid" which takes the column and adds it back to the current table as right most columns.
 
 <span id="_______-gc________"></span><span id="_______-GC________"></span> **-gc \#**   
 Display as a grid and restrict grid cell sizes to specified number of (\#) characters.
@@ -187,7 +187,7 @@ Debugger.Sessions.First().Processes.First().Threads.First().Stack.Frames :
     [0x8]            : nt!KiIdleLoop + 0x1a
 ```
 
-Use the -g option to display output as a data grid. Click on a column to sort.
+Use the -g option to display output as a data grid. Select column to sort.
 
 ```dbgcmd
 kd> dx -g @$curprocess.Modules
@@ -365,10 +365,3 @@ For information about using debugger objects with JavaScript, see [Native Debugg
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
-
-
-
-
-
-
-

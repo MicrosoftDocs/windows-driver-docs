@@ -46,24 +46,24 @@ Returned in the I/O status block.
 
 A bus driver that handles this IRP sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status.
 
-On success, a bus driver sets **Irp-&gt;IoStatus.Information** to a pointer to a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) that contains the requested information. On an error, the bus driver sets **Irp-&gt;IoStatus.Information** to zero.
+On success, a bus driver sets **Irp-&gt;IoStatus.Information** to a pointer to a [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) that contains the requested information. On an error, the bus driver sets **Irp-&gt;IoStatus.Information** to zero.
 
 Operation
 ---------
 
-If a bus driver returns a resource list in response to this IRP, it allocates a [**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) from paged memory. The PnP manager frees the buffer when it is no longer needed.
+If a bus driver returns a resource list in response to this IRP, it allocates a [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) from paged memory. The PnP manager frees the buffer when it is no longer needed.
 
-If a device requires no hardware resources, the device's parent bus driver completes the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) without modifying **Irp-&gt;IoStatus.Status** or **Irp-&gt;IoStatus.Information**.
+If a device requires no hardware resources, the device's parent bus driver completes the IRP ([**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) without modifying **Irp-&gt;IoStatus.Status** or **Irp-&gt;IoStatus.Information**.
 
 Function and filter drivers do not receive this IRP.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 
 Reserved for system use. Drivers must not send this IRP.
 
-Drivers can call [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to get the boot configuration for a device, in both raw and translated forms.
+Drivers can call [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to get the boot configuration for a device, in both raw and translated forms.
 
 Requirements
 ------------
@@ -84,14 +84,9 @@ Requirements
 ## See also
 
 
-[**CM\_RESOURCE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list)
+[**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list)
 
-[**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty)
-
- 
+[**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty)
 
  
-
-
-
 

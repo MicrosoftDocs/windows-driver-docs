@@ -47,8 +47,8 @@ The KSPROPERTY\_AUDIO\_POSITION property specifies the current positions of the 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITION&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position)"><strong>KSAUDIO_POSITION</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position" data-raw-source="[&lt;strong&gt;KSAUDIO_POSITION&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position)"><strong>KSAUDIO_POSITION</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -66,9 +66,9 @@ Remarks
 
 DirectSound uses the KSPROPERTY\_AUDIO\_POSITION property to implement the **IDirectSoundBuffer::GetCurrentPosition** and **IDirectSoundBuffer::SetCurrentPosition** methods. The Windows multimedia functions **waveInGetPosition** and **waveOutGetPosition** also use this property. For more information about DirectSound and the Windows multimedia functions, see the Microsoft Windows SDK documentation.
 
-WaveCyclic and WavePci miniport drivers do not need to implement property handlers for KSPROPERTY\_AUDIO\_POSITION because the WaveCyclic and WavePci port drivers handle this property on behalf of miniport drivers. To obtain the play position in a render stream or record position in a capture stream, the property handler in the port driver calls the miniport driver's [**IMiniportWaveCyclicStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition) or [**IMiniportWavePciStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition) method.
+WaveCyclic and WavePci miniport drivers do not need to implement property handlers for KSPROPERTY\_AUDIO\_POSITION because the WaveCyclic and WavePci port drivers handle this property on behalf of miniport drivers. To obtain the play position in a render stream or record position in a capture stream, the property handler in the port driver calls the miniport driver's [**IMiniportWaveCyclicStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition) or [**IMiniportWavePciStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition) method.
 
-For more information, see [Audio Position Property](https://docs.microsoft.com/windows-hardware/drivers/audio/audio-position-property).
+For more information, see [Audio Position Property](./audio-position-property.md).
 
 Requirements
 ------------
@@ -89,20 +89,11 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))
+[**KSPROPERTY**](/previous-versions/ff564262(v=vs.85))
 
-[**KSAUDIO\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position)
+[**KSAUDIO\_POSITION**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_position)
 
-[**IMiniportWaveCyclicStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition)
+[**IMiniportWaveCyclicStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition)
 
-[**IMiniportWavePciStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition)
-
- 
-
- 
-
-
-
-
-
+[**IMiniportWavePciStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition)
 

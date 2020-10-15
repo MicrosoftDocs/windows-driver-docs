@@ -12,15 +12,14 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # PCMCIA Bus Driver Design Guide
 
 This section includes:
 
-[Access Attribute Memory of a PCMCIA Device](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/access-attribute-memory-of-a-pcmcia-device)
+[Access Attribute Memory of a PCMCIA Device](./access-attribute-memory-of-a-pcmcia-device.md)
 
-[PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/pcmcia-interface-standard-interface-for-memory-cards)
+[PCMCIA\_INTERFACE\_STANDARD Interface for Memory Cards](./pcmcia-interface-standard-interface-for-memory-cards.md)
 
-[PCMCIA IRQ Routing on Windows XP](https://docs.microsoft.com/windows-hardware/drivers/pcmcia/pcmcia-irq-routing-on-windows-xp)
+[PCMCIA IRQ Routing on Windows XP](./pcmcia-irq-routing-on-windows-xp.md)

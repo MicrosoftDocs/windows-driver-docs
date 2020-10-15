@@ -34,7 +34,7 @@ These two topics provide additional information about working with JavaScript in
 
 ## <span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>The Debugger JavaScript Provider
 
-The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/).
+The JavaScript provider included with the debugger takes full advantage of the latest ECMAScript6 object and class enhancements. For more information, see [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/).
 
 **JsProvider.dll**
 
@@ -233,7 +233,7 @@ Debugger.State.Scripts
     FirstSampleFunction    
 ```
 
-We can click on the *FirstSampleFunction*, to see what functions it provides.
+We can select the *FirstSampleFunction*, to see what functions it provides.
 
 ```dbgcmd
 0:000> dx -r1 -v Debugger.State.Scripts.FirstSampleFunction.Contents
@@ -404,7 +404,7 @@ function uninitializeScript()
 
 This table summarizes which functions are called by the script commands
 
-||[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
+|Command |[.scriptload](-scriptload--load-script-.md)|[.scriptrun (Run Script)](-scriptrun--run-script-.md)|[.scriptunload (Unload Script)](-scriptunload--unload-script-.md)|
 |--- |--- |--- |--- |
 |root|yes|yes| | |
 |initializeScript|yes|yes| | |
@@ -825,9 +825,8 @@ Error: 64 bit value loses precision on conversion to number
 
 In order to allow a debugger extension to maintain precision, a set of math functions are projected on top of the 64-bit library type. If the extension needs (or may possibly) need precision above 53-bits for incoming 64-bit values, the following methods should be utilized instead of relying on standard operators:
 
-|                   |                           |                                                                                                               |
-|-------------------|---------------------------|---------------------------------------------------------------------------------------------------------------|
 | **Method Name**   | **Signature**             | **Description**                                                                                               |
+|-------------------|---------------------------|---------------------------------------------------------------------------------------------------------------|
 | asNumber          | .asNumber()               | Converts the 64-bit value to a JavaScript number. If loss of precision occurs, \*\*AN EXCEPTION IS THROWN\*\* |
 | convertToNumber   | .convertToNumber()        | Converts the 64-bit value to a JavaScript number. If loss of precision occurs, \*\*NO EXCEPTION IS THROWN\*\* |
 | getLowPart        | .getLowPart()             | Converts the lower 32-bits of the 64-bit value to a JavaScript number                                         |
@@ -1201,15 +1200,15 @@ With that reference in your JavaScript file, VS Code will automatically give you
 
 The following are JavaScript resources that may be useful as you develop JavaScript debugging extensions.
 
--   [Writing JavaScript Code](https://docs.microsoft.com/scripting/javascript/writing-javascript-code)
+-   [Writing JavaScript Code](/scripting/javascript/writing-javascript-code)
 
--   [JScript Language Tour](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/t895bwkh(v=vs.100))
+-   [JScript Language Tour](/previous-versions/visualstudio/visual-studio-2010/t895bwkh(v=vs.100))
 
 -   [Mozilla JavaScript Reference](https://developer.mozilla.org/docs/Web/JavaScript)
 
 -   [WinJS: The Windows library for JavaScript](https://github.com/winjs/winjs)
 
--   [ECMAScript 6 — New Features: Overview & Comparison](https://es6-features.org/)
+-   [ECMAScript 6 — New Features: Overview & Comparison](http://es6-features.org/)
 
 ## <span id="related_topics"></span>Related topics
 
@@ -1217,13 +1216,3 @@ The following are JavaScript resources that may be useful as you develop JavaScr
 [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md)
 
 [Native Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
-
-
-
-
-
-
-
-
-
-

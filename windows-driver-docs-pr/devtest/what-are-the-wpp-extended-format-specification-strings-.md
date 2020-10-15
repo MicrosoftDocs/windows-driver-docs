@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 WPP includes predefined format specification strings that you can use in trace messages in addition to the standard format strings that are defined for **printf**.
 
-You can use the **%!FLAGS!**, **%!FUNC!** and **%!LEVEL!** strings in a [trace message prefix](trace-message-prefix.md), and in any tracing function or macro, such as [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
+You can use the **%!FLAGS!**, **%!FUNC!** and **%!LEVEL!** strings in a [trace message prefix](trace-message-prefix.md), and in any tracing function or macro, such as [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
 
 You can use the other extended strings in any tracing function.
 

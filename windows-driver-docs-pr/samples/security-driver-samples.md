@@ -12,4 +12,4 @@ The driver sample in this directory provides a starting point for writing a cust
 
 | Sample | Description |
 | --- | --- |
-| [Early Launch Anti-Malware Driver](https://docs.microsoft.com/samples/microsoft/windows-driver-samples/early-launch-anti-malware-driver) | Demonstrates how to receive notifications about the initialization of regular boot start drivers in an Early Launch Anti-Malware driver. |
+| [Early Launch Anti-Malware Driver](/samples/microsoft/windows-driver-samples/early-launch-anti-malware-driver) | Demonstrates how to receive notifications about the initialization of regular boot start drivers in an Early Launch Anti-Malware driver. |

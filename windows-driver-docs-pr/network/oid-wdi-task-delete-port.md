@@ -25,7 +25,7 @@ OID\_WDI\_TASK\_DELETE\_PORT requests that the IHV component releases all resour
 
 | TLV                                                                               | Multiple TLV instances allowed | Optional | Description                 |
 |-----------------------------------------------------------------------------------|--------------------------------|----------|-----------------------------|
-| [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-delete-port-parameters) |                                |          | The delete port parameters. |
+| [**WDI\_TLV\_DELETE\_PORT\_PARAMETERS**](./wdi-tlv-delete-port-parameters.md) |                                |          | The delete port parameters. |
 
  
 
@@ -59,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

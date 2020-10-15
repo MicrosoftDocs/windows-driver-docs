@@ -51,7 +51,7 @@ The following registry entries allow you to configure the behavior of the port d
     -   Operating system version: This feature is available in Windows NT 4.0 SP4 and later operating systems.
 -   **BusType**
     -   Location: HKLM\\System\\CurrentControlSet\\Services\\&lt;ServiceName&gt;\\Parameters\\BusType, where &lt;ServiceName&gt; = the miniport driver name specified with the **AddServices** directive in the INF file.
-    -   Values: The same as [**STORAGE\_BUS\_TYPE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff566356(v=vs.85)) enumerator:
+    -   Values: The same as [**STORAGE\_BUS\_TYPE**](/previous-versions/windows/hardware/drivers/ff566356(v=vs.85)) enumerator:
     -   Meaning: Indicates the type of bus that the adapter is connected to.
     -   Operating system version: This feature is available in Windows 2000 and later operating systems.
 -   **CreateInitiatorLU**
@@ -61,9 +61,4 @@ The following registry entries allow you to configure the behavior of the port d
     -   Operating system version: This feature is available in Windows Server 2003 and later operating systems. The value of this registry value only affects the functionality of the SCSI Port miniport drivers. Storport miniport driver always permit access to adapter objects, even when no device is attached to the adapter.
 
  
-
- 
-
-
-
 

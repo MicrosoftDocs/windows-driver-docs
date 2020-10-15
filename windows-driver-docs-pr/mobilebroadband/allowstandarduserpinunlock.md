@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # AllowStandardUserPinUnlock
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 > [!IMPORTANT]
 > Starting in Windows 10, version 1507, this element has been deprecated and may not be supported in future versions of Windows.

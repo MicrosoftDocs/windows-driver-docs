@@ -22,10 +22,10 @@ typedef struct _CO_PVC {
 The members of this structure contain the following information:
 
 **NdisAfHandle**  
-Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex).
+Specifies the NDIS-supplied handle returned by [NdisClOpenAddressFamilyEx](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex).
 
 **PvcParameters**  
-A formatted [CO_SPECIFIC_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex) structure. This structure contains protocol-specific parameters that describe the PVC.
+A formatted [CO_SPECIFIC_PARAMETERS](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex) structure. This structure contains protocol-specific parameters that describe the PVC.
 
 A PVC is removed manually by an administrator. A client that monitors such activity notifies a call manager of a PVC that has been removed by sending this OID to the call manager.
 
@@ -33,4 +33,3 @@ A PVC is removed manually by an administrator. A client that monitors such activ
 
 **Version**: Windows Vista and later
 **Header**: Ntddndis.h (include Ndis.h)
-

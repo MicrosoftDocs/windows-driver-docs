@@ -184,7 +184,7 @@ The following is a walkthrough of the various features that the mobile broadband
 
 6. The app publishes the updated information through the Data Usage and Subscription Manager APIs.
 
-7. Windows components and third-party apps on the PC can access this usage information by using the [**Windows.Networking.Connectivity.ConnectionProfile**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectionProfile) class. Apps can adjust their behavior accordingly. For example, the app can use a lower quality video stream on metered networks.
+7. Windows components and third-party apps on the PC can access this usage information by using the [**Windows.Networking.Connectivity.ConnectionProfile**](/uwp/api/Windows.Networking.Connectivity.ConnectionProfile) class. Apps can adjust their behavior accordingly. For example, the app can use a lower quality video stream on metered networks.
 
 ### Internet sharing
 
@@ -320,9 +320,9 @@ The Provisioning Agent provides an interface for you to configure Windows with y
 
 You can provide the XML file in one of the following ways:
 
-- A signed XML file provided by a website to the [**window.external.msProvisionNetworks**](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) function on a Windows 8, Windows 8.1, or Windows 10 computer running at least Internet Explorer 10 (or another supporting browser).
+- A signed XML file provided by a website to the [**window.external.msProvisionNetworks**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn529170(v=vs.85)) function on a Windows 8, Windows 8.1, or Windows 10 computer running at least Internet Explorer 10 (or another supporting browser).
 
-- An XML file (either signed or unsigned) provided by an app to the [**Windows.Networking.NetworkOperators.ProvisioningAgent.ProvisionFromXmlDocumentAsync**](https://docs.microsoft.com/uwp/api/windows.networking.networkoperators.provisioningagent.provisionfromxmldocumentasync?view=winrt-19041#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_) function.
+- An XML file (either signed or unsigned) provided by an app to the [**Windows.Networking.NetworkOperators.ProvisioningAgent.ProvisionFromXmlDocumentAsync**](/uwp/api/windows.networking.networkoperators.provisioningagent.provisionfromxmldocumentasync?view=winrt-19041#Windows_Networking_NetworkOperators_ProvisioningAgent_ProvisionFromXmlDocumentAsync_System_String_) function.
 
 For more details about the format and content of the provisioning file, see [Using metadata to configure mobile broadband experiences](using-metadata-to-configure-mobile-broadband-experiences.md).
 
@@ -348,9 +348,9 @@ Local data counters track the amount of data that is sent and received on a netw
 
 Local data counters are also available programmatically by using the following APIs:
 
-- The [**Windows.Networking.Connectivity.ConnectionProfile.GetNetworkUsageAsync**](https://docs.microsoft.com/uwp/api/windows.networking.connectivity.connectionprofile.getattributednetworkusageasync?view=winrt-19041#Windows_Networking_Connectivity_ConnectionProfile_GetAttributedNetworkUsageAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the data usage over a specified time period.
+- The [**Windows.Networking.Connectivity.ConnectionProfile.GetNetworkUsageAsync**](/uwp/api/windows.networking.connectivity.connectionprofile.getattributednetworkusageasync?view=winrt-19041#Windows_Networking_Connectivity_ConnectionProfile_GetAttributedNetworkUsageAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the data usage over a specified time period.
 
-- The [**Windows.Networking.Connectivity.ConnectionProfile.GetConnectivityIntervalsAsync**](https://docs.microsoft.com/uwp/api/windows.networking.connectivity.connectionprofile.getconnectivityintervalsasync?view=winrt-19041#Windows_Networking_Connectivity_ConnectionProfile_GetConnectivityIntervalsAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the connect timestamps and durations when a network interface is used.
+- The [**Windows.Networking.Connectivity.ConnectionProfile.GetConnectivityIntervalsAsync**](/uwp/api/windows.networking.connectivity.connectionprofile.getconnectivityintervalsasync?view=winrt-19041#Windows_Networking_Connectivity_ConnectionProfile_GetConnectivityIntervalsAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_NetworkUsageStates_) function provides the connect timestamps and durations when a network interface is used.
 
 Local data usage information serves as an estimate and a guide for the user. Windows cannot account for unbilled traffic or for usage on other devices that share the same data limits. For example, family plans using the same SIM on different devices. Mobile broadband apps should use local data counters only to approximate usage since the last sync with your billing system. For data usage that has already been processed, the billing system should be considered authoritative.
 
@@ -392,7 +392,7 @@ Windows Metadata and Internet Services (WMIS) is a cloud-based Windows service t
 
 The Microsoft Store is the primary way that UWP apps are delivered to Windows 8, Windows 8.1, and Windows 10 PCs. For a mobile broadband app, the app package is retrieved from the Microsoft Store whenever Internet connectivity is available after the device is connected. The app package is automatically installed and available to the user at that point. In Windows 8.1 and Windows 10, the app is available in **All Apps** but is not automatically pinned to the Start screen.
 
-For more information about UWP device apps, see [UWP device apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/index).
+For more information about UWP device apps, see [UWP device apps](../devapps/index.md).
 
 **Note**  
 Although enterprises can side load UWP apps under certain conditions, these will not be covered in this document.
@@ -409,7 +409,7 @@ The Windows APN database is present on all Windows 8, Windows 8.1, and Windows
 
 This information is intended to get customers online within seconds of connecting a mobile broadband device. It should enable them to purchase service immediately by using a Web browser or get online immediately if they have already purchased service.
 
-For information on submitting updates to the Windows APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
+For information on submitting updates to the Windows APN database, see [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
 ### Service metadata
 
@@ -417,7 +417,7 @@ Service metadata is delivered to any user after they connects a mobile broadband
 
 This information enables customers to have a richer experience by allowing you to add branding elements for Windows Connection Manager, referencing a mobile broadband app that is automatically acquired from the Microsoft Store, and having the most current mobile broadband settings for getting online for purchase or Internet connectivity. Windows will periodically check that it has the latest service metadata package from WMIS.
 
-The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the APN database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](service-metadata-package-schema-reference.md).
+The service metadata package is delivered to customers only when a mobile broadband device from the specified operator is detected on the PC. Information in this package overrides the content of the APN database, whenever it’s present. For more information on the service metadata package schema reference, see [Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md).
 
 For instructions on how to create a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md).
 

@@ -28,7 +28,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                              | Description                                         |
 |---------------------------------------------------|-----------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the MAC address associated with the port. |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | Specifies the MAC address associated with the port. |
 | UINT16                                            | Specifies the port number.                          |
 
  
@@ -58,9 +58,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -18,24 +18,17 @@ The WDI header files, wditypes.hpp and dot11wdi.h, are included in the WDK.
 ## How to write a universal WLAN driver
 
 
-To write a universal WLAN driver, see [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers), and follow the steps in the section titled *Building a Universal Windows driver* to build a universal driver using the Kernel Mode Driver (KMDF) template.
+To write a universal WLAN driver, see [Getting Started with Universal Windows drivers](/windows-hardware/drivers), and follow the steps in the section titled *Building a Universal Windows driver* to build a universal driver using the Kernel Mode Driver (KMDF) template.
 
 Then, see the WDI design and reference sections for implementation guidance.
 
 -   [WDI Miniport Driver Design Guide](wdi-miniport-driver-design-guide.md)
--   [WDI Miniport Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+-   [WDI Miniport Driver Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 ## Related topics
 
 
-[Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers)
+[Getting Started with Universal Windows drivers](/windows-hardware/drivers)
 
  
-
- 
-
-
-
-
-
 

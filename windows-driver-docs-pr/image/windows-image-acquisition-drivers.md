@@ -12,7 +12,7 @@ The Microsoft Windows Image Acquisition (WIA) programming interface is a Still I
 
 WIA is a full-featured imaging architecture that has evolved from the Windows STI model. WIA provides robustness, reliability, a consistent user experience, and built-in driver support for industry standard protocols such as the Picture Transfer Protocol (PTP) for cameras.
 
-For information about programming imaging applications, see the [WIA Application Programming Interface](https://docs.microsoft.com/windows/desktop/wia/-wia-wia-application-programming-interface).
+For information about programming imaging applications, see the [WIA Application Programming Interface](/windows/desktop/wia/-wia-wia-application-programming-interface).
 
 This section contains the following topics:
 
@@ -30,4 +30,3 @@ This section contains the following topics:
 
 [Installing a WIA Minidriver](installing-a-wia-minidriver.md)
 
- 

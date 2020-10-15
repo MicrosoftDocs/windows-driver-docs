@@ -43,15 +43,15 @@ Video miniport drivers in the Windows 2000 display driver model include the foll
 </tr>
 <tr class="even">
 <td align="left"><p><em>ntddvdeo.h</em></p></td>
-<td align="left"><p>Contains the system-defined I/O control codes (IOCTLs) and corresponding structures that are sent in video request packets (<a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-video-request-packet--vrp-" data-raw-source="&lt;em&gt;VRPs&lt;/em&gt;"><em>VRPs</em></a>) to video miniport drivers.</p></td>
+<td align="left"><p>Contains the system-defined I/O control codes (IOCTLs) and corresponding structures that are sent in video request packets (<a href="/windows-hardware/drivers/#wdkgloss-video-request-packet--vrp-" data-raw-source="&lt;em&gt;VRPs&lt;/em&gt;"><em>VRPs</em></a>) to video miniport drivers.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>tvout.h</em></p></td>
-<td align="left"><p>Contains the <a href="https://docs.microsoft.com/windows/desktop/api/tvout/ns-tvout-_videoparameters" data-raw-source="[&lt;strong&gt;VIDEOPARAMETERS&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/tvout/ns-tvout-_videoparameters)"><strong>VIDEOPARAMETERS</strong></a> structure used to implement TV connector and copy protection support and the constants used in this structure.</p></td>
+<td align="left"><p>Contains the <a href="/windows/win32/api/tvout/ns-tvout-videoparameters" data-raw-source="[&lt;strong&gt;VIDEOPARAMETERS&lt;/strong&gt;](/windows/win32/api/tvout/ns-tvout-_videoparameters)"><strong>VIDEOPARAMETERS</strong></a> structure used to implement TV connector and copy protection support and the constants used in this structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><em>video.h</em></p></td>
-<td align="left"><p>Contains the <strong>VideoPort</strong><em>Xxx</em> and <em>SvgaHwIoPortXxx</em> video port function declarations, video-specific structures, such as the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet" data-raw-source="[&lt;strong&gt;VIDEO_REQUEST_PACKET&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet)"><strong>VIDEO_REQUEST_PACKET</strong></a>, and the <em>HwVidXxx</em> video miniport function prototypes.</p></td>
+<td align="left"><p>Contains the <strong>VideoPort</strong><em>Xxx</em> and <em>SvgaHwIoPortXxx</em> video port function declarations, video-specific structures, such as the <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet" data-raw-source="[&lt;strong&gt;VIDEO_REQUEST_PACKET&lt;/strong&gt;](/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet)"><strong>VIDEO_REQUEST_PACKET</strong></a>, and the <em>HwVidXxx</em> video miniport function prototypes.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><em>videoagp.h</em></p></td>
@@ -62,13 +62,5 @@ Video miniport drivers in the Windows 2000 display driver model include the foll
 
  
 
-These headers are shipped with the Windows Driver Kit (WDK). For more detailed information about the functions, structures, system-defined I/O control codes, and constants in these header files, see [GDI Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
-
- 
-
- 
-
-
-
-
+These headers are shipped with the Windows Driver Kit (WDK). For more detailed information about the functions, structures, system-defined I/O control codes, and constants in these header files, see [GDI Functions](/windows-hardware/drivers/ddi/index).
 

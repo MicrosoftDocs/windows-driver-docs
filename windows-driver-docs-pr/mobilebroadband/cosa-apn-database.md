@@ -20,5 +20,5 @@ The following topics present further information about APNs, COSA, and APN datab
 - [APN elements](apn-elements.md)
 - [COSA overview](cosa-overview.md)
 - [APN database overview](apn-database-overview.md)
-- [COSA/APN database submission](cosa-apn-database-submission.md)
+- [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md)
 

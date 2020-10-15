@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # HS\_HOST\_SEND\_KEEP\_ALIVE\_COMPLETION function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_HOST\_SEND\_KEEP\_ALIVE\_COMPLETION** function indicates the success or failure of a request for a network send keep-alive message.

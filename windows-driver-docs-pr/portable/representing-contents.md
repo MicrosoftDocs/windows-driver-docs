@@ -1,5 +1,5 @@
 ---
-Description: Representing Contents
+description: Representing Contents
 title: Representing Contents
 ms.date: 04/20/2017
 ms.localizationpriority: medium

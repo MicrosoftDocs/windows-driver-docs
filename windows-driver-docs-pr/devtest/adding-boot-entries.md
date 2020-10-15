@@ -26,7 +26,7 @@ This topic applies to Windows Vista and later, Windows Server 2008 and later, an
 
 ## Adding a new boot entry <a name="adding-a-new-boot-entry-in-windows-vista-and-later"></a>
 
-In Windows, you use BCDEdit to modify your boot options. To add a new boot entry, open a Command Prompt window with elevated privileges (right click **Command Prompt** and click **Run as administrator** from the shortcut menu).
+In Windows, you use BCDEdit to modify your boot options. To add a new boot entry, open a Command Prompt window with elevated privileges (select and hold (or right-click) **Command Prompt** and select **Run as administrator** from the shortcut menu).
 
 **Note**  Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
 

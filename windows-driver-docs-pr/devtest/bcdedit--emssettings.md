@@ -24,13 +24,16 @@ Syntax
     bcdedit /emssettings [ BIOS ] | [ EMSPORT: port | [EMSBAUDRATE: baudrate] ] 
 ```
 
+> [!NOTE]
+> Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
+
 Parameters
 ----------
 
 **BIOS**   
 Specifies that the system will use BIOS settings for the EMS configuration. This works only on systems that have EMS support provided by the BIOS.
 
- **EMSPORT:** *port*   
+**EMSPORT:** *port*   
 Specifies the serial port to use as the EMS port. This parameter should not be specified with the **BIOS** option.
 
 **EMSBAUDRATE:** *baudrate*   
@@ -48,13 +51,7 @@ On all systems, use the [**BCDEdit /ems**](bcdedit--ems.md) command and specify 
 
 The boot parameters described in this section enable EMS console redirection after Windows is installed. 
 
-For a detailed example, see [Boot Parameters to Enable EMS Redirection](https://docs.microsoft.com/windows-hardware/drivers/devtest/boot-parameters-to-enable-ems-redirection).
+For a detailed example, see [Boot Parameters to Enable EMS Redirection](./boot-parameters-to-enable-ems-redirection.md).
 
  
-
- 
-
-
-
-
 

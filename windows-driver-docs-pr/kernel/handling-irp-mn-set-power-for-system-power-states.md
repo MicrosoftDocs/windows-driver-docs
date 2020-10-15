@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 
 
 
-The power manager sends a power IRP that specifies the minor code [**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) and a system power state for one of the following reasons:
+The power manager sends a power IRP that specifies the minor code [**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md) and a system power state for one of the following reasons:
 
 -   To change the system power state.
 
--   To reaffirm the current power state after a failed [**IRP\_MN\_QUERY\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-power) request.
+-   To reaffirm the current power state after a failed [**IRP\_MN\_QUERY\_POWER**](./irp-mn-query-power.md) request.
 
 Through the I/O manager, the power manager sends the IRP to the top driver in the device stack at each PnP device node. The IRP notifies all drivers in the stack of the correct system power state.
 
@@ -40,9 +40,4 @@ How a driver handles this IRP depends upon its role in the device stack, as desc
 A driver cannot fail an **IRP\_MN\_SET\_POWER** request to set the system power state. The power manager ignores any failure status returned for this IRP.
 
  
-
- 
-
-
-
 

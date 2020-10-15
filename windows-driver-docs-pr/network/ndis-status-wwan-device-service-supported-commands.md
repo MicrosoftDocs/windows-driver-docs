@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 # NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS
 
 
-Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS notification to report the completion of a query of [OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-enumerate-device-service-commands).
+Miniport drivers use the NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS notification to report the completion of a query of [OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](./oid-wwan-enumerate-device-service-commands.md).
 
 Miniport drivers cannot use this notification to send unsolicited events.
 
-This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands) structure.
+This notification uses the [**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands) structure.
 
 Requirements
 ------------
@@ -40,14 +40,9 @@ Requirements
 ## See also
 
 
-[OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-enumerate-device-service-commands)
+[OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICE\_COMMANDS](./oid-wwan-enumerate-device-service-commands.md)
 
-[**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands)
-
- 
+[**NDIS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_device_service_supported_commands)
 
  
-
-
-
 

@@ -1,5 +1,5 @@
 ---
-Description: This paper provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.
+description: This paper provides information about USB ContainerIDs for the Windows operating system. It includes guidelines for device manufacturers to program their multifunction USB devices so that they can be correctly detected by Windows.
 title: USB ContainerIDs in Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Starting in Windows 7, users can take advantage of all the capabilities of the d
 
 All types of devices that connect to a computer through different bus types can support device containers. However, not all bus types use the same mechanism for generating a **ContainerID**. For USB devices, device vendors can use a **ContainerID** descriptor to describe the **ContainerID** for a physical device. A **ContainerID** descriptor is a Microsoft OS feature descriptor that can be stored in the USB device's firmware. USB device manufacturers must correctly implement these **ContainerID** descriptors in their devices to take advantage of the new device capabilities that are available in Windows 7. USB device manufacturers need to implement only a single **ContainerID** for each physical device, regardless of how many device functions are supported by the device.
 
-For more information about consolidating all the functionality of a single device into a device container, see [How Container IDs are Generated](https://docs.microsoft.com/windows-hardware/drivers/install/how-container-ids-are-generated).
+For more information about consolidating all the functionality of a single device into a device container, see [How Container IDs are Generated](../install/how-container-ids-are-generated.md).
 
 For more information about Microsoft OS descriptors for USB devices, see [Microsoft OS Descriptors for USB Devices](microsoft-defined-usb-descriptors.md).
 
@@ -29,7 +29,7 @@ The following are two ways to generate a **ContainerID** for a USB device:
 ## USB ContainerID Contents
 
 
-A USB **ContainerID** is presented to the operating system in the form of a universally unique identifier (UUID) string. The **ContainerID** UUID is contained within a **ContainerID** descriptor. A **ContainerID** descriptor is a device-level Microsoft OS feature descriptor. As such, when the operating system requests a USB **ContainerID**, the wValue field of the descriptor request must always be set to zero. For more information about Microsoft OS feature descriptors and descriptor requests, see [Microsoft OS 1.0 Descriptors Specification](https://go.microsoft.com/fwlink/p/?linkid=617519).
+A USB **ContainerID** is presented to the operating system in the form of a universally unique identifier (UUID) string. The **ContainerID** UUID is contained within a **ContainerID** descriptor. A **ContainerID** descriptor is a device-level Microsoft OS feature descriptor. As such, when the operating system requests a USB **ContainerID**, the wValue field of the descriptor request must always be set to zero. For more information about Microsoft OS feature descriptors and descriptor requests, see [Microsoft OS 1.0 Descriptors Specification](/previous-versions/gg463179(v=msdn.10)).
 
 A **ContainerID** descriptor consists of a header section.
 
@@ -167,7 +167,4 @@ Recommendations for Implementing a USB **ContainerID** The following are recomme
 
 ## Related topics
 [Building USB devices for Windows](building-usb-devices-for-windows.md)  
-[Container IDs for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids-for-usb-devices)  
-
-
-
+[Container IDs for USB Devices](../install/how-usb-devices-are-assigned-container-ids.md)

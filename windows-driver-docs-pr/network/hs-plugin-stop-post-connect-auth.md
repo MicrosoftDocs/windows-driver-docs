@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_STOP\_POST\_CONNECT\_AUTH function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_STOP\_POST\_CONNECT\_AUTH** function is called to notify the plugin to stop the authentication process.

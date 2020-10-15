@@ -17,9 +17,8 @@ Windows loads the HID I²C class driver based on a compatible identifier match b
 
 The ACPI 5.0 Specification includes support for HID Class Devices. the ACPI definitions for HID I²C are as follows.
 
-|                           |                                             |             |                                                 |                                                                                      |
-|---------------------------|---------------------------------------------|-------------|-------------------------------------------------|--------------------------------------------------------------------------------------|
 | Field                     | Value                                       | ACPI object | Format                                          | Comments                                                                             |
+|-|-|-|-|-|
 | Compatible ID             | PNP0C50                                     | \_CID       | String in the format of ACPI0C50 or PNP0C50     | CompatibleID                                                                         |
 | Hardware ID               | Vendor Specific                             | \_HID       | String in the format of VVVVdddd (e.g NVDA0001) | VendorID + DeviceID                                                                  |
 | Subsystem                 | Vendor Specific                             | \_SUB       | String in the format of VVVVssss (e.g INTL1234) | SubVendorID + SubSystemID                                                            |
@@ -110,11 +109,10 @@ If the HOST fails to successfully complete any of steps 1-5 with the DEVICE, the
 
 ### <a href="" id="supported-hid-i2c-commands"></a>Supported HID I²C commands
 
-HIDI2C.SYS driver supports the following commands
+HIDI2C.SYS driver supports the following commands:
 
-|                 |                                                |                                                                                                                                                                                                       |
-|-----------------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Command         | How it's used                                  | When it's used                                                                                                                                                                                        |
+|-|-|-|
 | Reset           | Windows supports the Host Initiated Reset.     | Windows will issue this command during the following scenarios - device initialization - disable/enable - uninstall/reinstall                                                                         |
 | Get/Set\_Report | Windows supports the Get/Set\_Report commands. | Windows will issue this command during the following scenarios - when a HID client driver issues a get/set feature report request - when a HID client driver issues a synchronous input/output report |
 | Set\_Power      | Windows supports the Set\_Power command        | Windows will issue this command during the following scenarios - when the system transitions to a low power S3 / connected standby state - when the system is shut off.                               |

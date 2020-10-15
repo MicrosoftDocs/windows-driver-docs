@@ -17,7 +17,7 @@ The Windows Object Manager controls *objects* that are part of the kernel-mode o
 
 Typical kernel-mode objects include the following objects:
 
--   Device objects (See [Device Objects and Device Stacks](device-objects-and-device-stacks.md).)
+-   Device objects (See [Device Objects and Device Stacks](introduction-to-device-objects.md).)
 
 -   File objects.
 
@@ -27,7 +27,7 @@ Typical kernel-mode objects include the following objects:
 
 -   Threads and processes.
 
--   Kernel dispatcher objects, such as event objects and mutex objects. (See [Kernel Dispatcher Objects](kernel-dispatcher-objects.md).)
+-   Kernel dispatcher objects, such as event objects and mutex objects. (See [Kernel Dispatcher Objects](./introduction-to-kernel-dispatcher-objects.md).)
 
 -   Callback objects. (See [Callback Objects](callback-objects.md).)
 
@@ -41,14 +41,9 @@ User-mode programmers can reference objects only through indirection, using a *h
 
 Kernel-mode objects have a very specific life-cycle. For more information about object life-cycles, see [Life Cycle of an Object](life-cycle-of-an-object.md).
 
-Object security is a prime concern for kernel-mode programming. For more information on object security, see [Object Security](object-security.md).
+Object security is a prime concern for kernel-mode programming. For more information on object security, see [Object Security](access-rights.md).
 
 The kernel-mode environment stores objects in a virtual directory system, also known as the object namespace. This allows objects to be accessed in a hierarchical way with parent and child objects. This namespace is similar to a file system set of directories but does not exactly correspond to a particular file system on your computer. For more information about object directories, see [Object Directories](object-directories.md).
 
  
-
- 
-
-
-
 

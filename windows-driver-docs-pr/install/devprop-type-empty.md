@@ -37,11 +37,11 @@ To delete a property, call the corresponding SetupDiSet*Xxx* property function a
 
 -   Set the other function input parameters as appropriate to set the property.
 
-If DEVPROP_TYPE_EMPTY is used in an attempt to delete a property that does not exist, the delete operation will fail, and a call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return ERROR_NOT_FOUND.
+If DEVPROP_TYPE_EMPTY is used in an attempt to delete a property that does not exist, the delete operation will fail, and a call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return ERROR_NOT_FOUND.
 
 ### Retrieving a Property that Does Not Exist
 
-A call to a SetupDiGet*Xxx* property function that attempts to retrieve a device property that does not exist will fail, and a subsequent call to [GetLastError](https://go.microsoft.com/fwlink/p/?linkid=169416) will return ERROR_NOT_FOUND. The called SetupAPI property function will set the \**PropertyType* parameter to DEVPROP_TYPE_EMPTY.
+A call to a SetupDiGet*Xxx* property function that attempts to retrieve a device property that does not exist will fail, and a subsequent call to [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) will return ERROR_NOT_FOUND. The called SetupAPI property function will set the \**PropertyType* parameter to DEVPROP_TYPE_EMPTY.
 
 Requirements
 ------------
@@ -60,10 +60,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

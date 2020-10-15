@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 # !ndiskd.netpacket
 
-The **!ndiskd.netpacket** extension displays information about a [NET\_PACKET](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-packet) structure.
+The **!ndiskd.netpacket** extension displays information about a [NET\_PACKET](/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet) structure.
 
-For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx).
+For more information about the Network Adapter WDF Class Extension (NetAdapterCx), see [Network Adapter WDF Class Extension (Cx)](../netcx/index.md).
 
 ```console
 !ndiskd.netpacket -handle <x> [-basic] [-layout] [-checksum] [-data]
@@ -47,7 +47,7 @@ Ndiskd.dll
 
 ### Examples
 
-**Note**  See [Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
+**Note**  See [Summary of Objects](../netcx/summary-of-netadaptercx-objects.md) to see a diagram explaining the relationship of the NET\_PACKET object with other objects in the NetAdapterCx.
 
 To obtain a handle for a NET\_PACKET, follow these steps:
 
@@ -137,9 +137,9 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 
 ## See also
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Network Driver Design Guide](../network/index.md)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
 [Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
@@ -147,11 +147,11 @@ You can now combine the basic description with any of the other **!ndiskd.netpac
 
 [**!ndiskd.help**](-ndiskd-help.md)
 
-[Network Adapter WDF Class Extension (Cx)](https://docs.microsoft.com/windows-hardware/drivers/netcx)
+[Network Adapter WDF Class Extension (Cx)](../netcx/index.md)
 
-[Summary of Objects](https://docs.microsoft.com/windows-hardware/drivers/netcx/summary-of-objects)
+[Summary of Objects](../netcx/summary-of-netadaptercx-objects.md)
 
-[NET\_PACKET](https://docs.microsoft.com/windows-hardware/drivers/netcx/net-packet)
+[NET\_PACKET](/windows-hardware/drivers/ddi/packet/ns-packet-_net_packet)
 
 [**!ndiskd.netadapter**](-ndiskd-netadapter.md)
 

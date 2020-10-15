@@ -12,7 +12,7 @@ Windows 10 added features that significantly impact non-DX APIs and the lower-le
 
 1. Paravirtualized WDDM adapters
 2. Users now have control over the adapter used by applications that don't discriminate themselves
-3. [Universal drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers) introduces a new set of design principals
+3. [Universal drivers](../develop/getting-started-with-windows-drivers.md) introduces a new set of design principals
 
 Maintaining compatibility with the latest Windows 10 features requires the modifications described in the sections below.
 
@@ -43,8 +43,8 @@ only overwrite the destination files when they satisfy the "newer" criteria.
 
 In Windows 10 version 2004, the "newer" criteria compares two pieces of information:
 
-- [FileVersion](https://docs.microsoft.com/windows/desktop/api/verrsrc/ns-verrsrc-vs_fixedfileinfo)
-- [LastWriteTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information)
+- [FileVersion](/windows/win32/api/verrsrc/ns-verrsrc-vs_fixedfileinfo)
+- [LastWriteTime](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information)
 
 When the destination file ends with the .dll or .exe suffix,
 the **FileVersion** is used as the most-significant comparison value
@@ -55,7 +55,7 @@ then **LastWriteTime** is used as the least-significant comparison values
 where the later date/ time is deemed "newer".
 
 In Windows 10 versions earlier than 2004, the "newer" criteria only compared the files'
-[ChangeTime](https://docs.microsoft.com/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information).
+[ChangeTime](/windows-hardware/drivers/ddi/content/wdm/ns-wdm-_file_basic_information).
 
 ### Example 1
 
@@ -93,24 +93,24 @@ The OS will copy \<DriverStorePath>\Subdir1\Subdir2\softgpu2wow64.dll to %windir
 
 Inside containers, the driver store is not consistently located at the same canonical path as it normally is.
 To consistently use the correctly adjusted path, the registry and driver store must be accessed indirectly through
-[D3DKMTQueryAdapterInfo](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo)
-with [KMTQAITYPE_QUERYREGISTRY](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-_kmtqueryadapterinfotype),
-and [D3DDDI_QUERYREGISTRY_INFO](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_queryregistry_info).
+[D3DKMTQueryAdapterInfo](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryadapterinfo)
+with [KMTQAITYPE_QUERYREGISTRY](/windows-hardware/drivers/ddi/d3dkmthk/ne-d3dkmthk-_kmtqueryadapterinfotype),
+and [D3DDDI_QUERYREGISTRY_INFO](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_queryregistry_info).
 
 ## Honor OS default adapter setting
 
 The default adapter must honor the user's choice that is stored in the OS, which requires:
 
-1. Enumerating adapters through DXGI's [IDXGIFactory::EnumAdapters](https://docs.microsoft.com/windows/desktop/api/dxgi/nf-dxgi-idxgifactory-enumadapters),
+1. Enumerating adapters through DXGI's [IDXGIFactory::EnumAdapters](/windows/win32/api/dxgi/nf-dxgi-idxgifactory-enumadapters),
 as DXGI honors the user's choice.
 Adapter 0 changes based on the [user's settings](https://blogs.windows.com/windowsexperience/2018/02/07/announcing-windows-10-insider-preview-build-17093-pc/).
-2. Match the adapter order gotten through [D3DKMTEnumAdapters2](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtenumadapters2) to DXGI's.
+2. Match the adapter order gotten through [D3DKMTEnumAdapters2](/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtenumadapters2) to DXGI's.
 Adapter identities can be matched up by correlating the LUID between both enumeration techniques.
-DXGI returns its LUID through [IDXGIAdapter::GetDesc](https://docs.microsoft.com/windows/desktop/api/dxgi/nf-dxgi-idxgiadapter-getdesc).
+DXGI returns its LUID through [IDXGIAdapter::GetDesc](/windows/win32/api/dxgi/nf-dxgi-idxgiadapter-getdesc).
 
 ## DCHU design modifications
 
-Honor as many [universal driver](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers) design principals as possible,
+Honor as many [universal driver](../develop/getting-started-with-windows-drivers.md) design principals as possible,
 which may vary based on the exact device being supported.
 
 ## D3DKMT headers

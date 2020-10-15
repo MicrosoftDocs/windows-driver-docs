@@ -21,15 +21,9 @@ Whether the display device supports maskable multisampling (more than one sample
 
 Besides verifying whether the display device supports the multisampling technique, **IDirect3D9::CheckDeviceMultiSampleType** also returns the number of quality levels associated with the technique.
 
-When the application requests to create a surface, it uses a combination of surface format, multisample type, and number of quality levels whose support was previously verified. This ensures that the surface is created successfully. The runtime calls the driver's [*DdCanCreateSurface*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549213(v=vs.85)), [*DdCreateSurface*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)), or [**D3dCreateSurfaceEx**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) function to create the surface. In this call, the runtime encodes the number of samples for the multiple-sampled surface into five bits (the DDSCAPS3\_MULTISAMPLE\_MASK mask) and the number of multiple-sample quality levels into three bits (the DDSCAPS3\_MULTISAMPLE\_QUALITY\_MASK mask) of the **dwCaps3** member of the [**DDSCAPS2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for the surface.
+When the application requests to create a surface, it uses a combination of surface format, multisample type, and number of quality levels whose support was previously verified. This ensures that the surface is created successfully. The runtime calls the driver's [*DdCanCreateSurface*](/previous-versions/windows/hardware/drivers/ff549213(v=vs.85)), [*DdCreateSurface*](/previous-versions/windows/hardware/drivers/ff549263(v=vs.85)), or [**D3dCreateSurfaceEx**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_createsurfaceex) function to create the surface. In this call, the runtime encodes the number of samples for the multiple-sampled surface into five bits (the DDSCAPS3\_MULTISAMPLE\_MASK mask) and the number of multiple-sample quality levels into three bits (the DDSCAPS3\_MULTISAMPLE\_QUALITY\_MASK mask) of the **dwCaps3** member of the [**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85)) structure for the surface.
 
 For more information about **IDirect3D9::CheckDeviceMultiSampleType**, see the latest DirectX SDK documentation.
 
  
-
- 
-
-
-
-
 

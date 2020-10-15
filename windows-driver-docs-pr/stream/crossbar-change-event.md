@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 # Crossbar Change Event
 
 
-The [EVENTSETID\_CROSSBAR](https://docs.microsoft.com/windows-hardware/drivers/stream/eventsetid-crossbar) event set contains the crossbar changed event. The following table describes the events that are part of the EVENTSETID\_CROSSBAR event set.
+The [EVENTSETID\_CROSSBAR](./eventsetid-crossbar.md) event set contains the crossbar changed event. The following table describes the events that are part of the EVENTSETID\_CROSSBAR event set.
 
 <table>
 <colgroup>
@@ -28,18 +28,11 @@ The [EVENTSETID\_CROSSBAR](https://docs.microsoft.com/windows-hardware/drivers/s
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-crossbar-changed" data-raw-source="[&lt;strong&gt;KSEVENT_CROSSBAR_CHANGED&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/stream/ksevent-crossbar-changed)"><strong>KSEVENT_CROSSBAR_CHANGED</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/stream/ksevent-crossbar-changed" data-raw-source="[&lt;strong&gt;KSEVENT_CROSSBAR_CHANGED&lt;/strong&gt;](./ksevent-crossbar-changed.md)"><strong>KSEVENT_CROSSBAR_CHANGED</strong></a></p></td>
 <td><p>Signals to DirectShow that the crossbar has changed, for example, because of a new pin routing configuration.</p></td>
 </tr>
 </tbody>
 </table>
 
  
-
- 
-
- 
-
-
-
 

@@ -29,7 +29,7 @@ The following table shows the memory layout of the data buffer for this event.
 |-----------------| -------------------------------------------|
 | 0x00000002 | **Header.EventType = PosEventType::StatusUpdated**  |
 | 0x00000010 | **Header.DataLength** = sizeof(**PosEventDataHeader**) + sizeof(**PosStatusUpdatedEventData.Status** + sizeof(**PosStatusUpdatedEventData.ExtendedStatus**) |
-| UINT32     | **Status**. See [BarcodeStatus](https://docs.microsoft.com/windows-hardware/drivers/ddi/pointofservicecommontypes/ne-pointofservicecommontypes-_barcodestatus).   |
+| UINT32     | **Status**. See [BarcodeStatus](/windows-hardware/drivers/ddi/pointofservicecommontypes/ne-pointofservicecommontypes-_barcodestatus).   |
 | UINT32     | **ExtendedStatus** |
 
 ## Requirements

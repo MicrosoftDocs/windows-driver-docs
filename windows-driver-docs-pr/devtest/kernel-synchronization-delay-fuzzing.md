@@ -8,6 +8,8 @@ ms.localizationpriority: medium
 
 # Kernel synchronization delay fuzzing
 
+>[!Note]
+> **This check is deprecated starting in Windows 10 Insider Preview Build 19042 and above**
 
 The Kernel synchronization delay fuzzing option randomizes thread schedules to help detect concurrency bugs in drivers.
 

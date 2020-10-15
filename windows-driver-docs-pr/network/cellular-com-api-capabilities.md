@@ -42,5 +42,4 @@ All cellular COM interface methods require the ID_CAP_CELL_API_COMMON capability
 
 [Cellular COM API design guide](cellular-com-api-design-guide.md)
 
-[Cellular COM API reference](https://docs.microsoft.com/previous-versions/windows/hardware/cellular/dn946508(v=vs.85))
-
+[Cellular COM API reference](/previous-versions/windows/hardware/cellular/dn946508(v=vs.85))

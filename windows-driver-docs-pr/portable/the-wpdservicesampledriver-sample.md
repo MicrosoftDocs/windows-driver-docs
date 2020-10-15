@@ -1,5 +1,5 @@
 ---
-Description: The WpdServiceSampleDriver Sample
+description: The WpdServiceSampleDriver Sample
 title: The WpdServiceSampleDriver Sample
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -15,7 +15,7 @@ This section describes the following components of virtualized networking:
 
 [Virtualized Networking Concepts and Terms](virtualized-networking-concepts-and-terms.md)
 
-[Overview of Virtualized Networking](overview-of-virtualized-networking.md)
+[Overview of Virtualized Networking](overview-of-hyper-v.md)
 
 [Single Root I/O Virtualization (SR-IOV)](single-root-i-o-virtualization--sr-iov-.md)
 

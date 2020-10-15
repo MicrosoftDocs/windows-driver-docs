@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Step 2: A Driver for the Device is Selected
 
 
-After a new device is detected and identified, Windows and its [device installation components](https://docs.microsoft.com/previous-versions/ff541277(v=vs.85)) follow these steps:
+After a new device is detected and identified, Windows and its [device installation components](/previous-versions/ff541277(v=vs.85)) follow these steps:
 
 1.  Windows searches for an appropriate [driver package](driver-packages.md) for the device. For more information about this step, see [Searching for the Driver Package](#searching-for-the-driver).
 2.  Windows selects the most appropriate driver for the device from one or more driver packages. For more information about this step, see [Selecting the Driver](#selecting-the-driver).
@@ -76,7 +76,7 @@ As another example, if a user plugs a WLAN adapter into a port of a USB hub on a
 
 -   In a separate process, Windows searches Windows Update and the DevicePath for a better matching driver than was installed. If one is found, the driver is staged into the driver store, and then installed onto the device.
 
-For more information about the [driver package](driver-packages.md) search process, see [Where Windows Searches for Drivers](where-setup-searches-for-drivers.md).
+For more information about the [driver package](driver-packages.md) search process, see [Where Windows Searches for Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
 ### Selecting the Driver
 
@@ -96,13 +96,5 @@ As soon as Windows has found one or more matching [driver packages](driver-packa
 
 Once Windows has selected a driver for the device, Windows installs the driver as described in [Step 3: The Driver for the Device is Installed](step-3--the-driver-for-the-device-is-installed.md).
 
-For more information about how drivers are selected for a device, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
-
- 
-
- 
-
-
-
-
+For more information about how drivers are selected for a device, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 

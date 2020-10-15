@@ -416,6 +416,6 @@ After you have set up your host and target computer and connected them with a de
 
 [Debugging Techniques](debugging-techniques.md)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](./index.md)
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)

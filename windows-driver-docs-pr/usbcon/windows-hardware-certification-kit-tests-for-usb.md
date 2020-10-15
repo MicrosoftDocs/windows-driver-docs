@@ -1,5 +1,5 @@
 ---
-Description: The Windows Hardware Lab Kit (HLK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices. 
+description: The Windows Hardware Lab Kit (HLK) tests can be used for additional testing of Systems, USB host controllers, hubs, and devices.
 title: Windows Hardware Lab Kit (HLK) Tests for USB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -18,9 +18,9 @@ Before you start running the logo tests make sure you meet the following require
 -   To run these tests you will need at least two computers: a test server and a test client.
 -   The test client must have the latest version of Windows.
 -   The test client must have EHCI and xHCI controllers, either integrated or as add-in cards. The controllers must expose user-accessible root ports (no integrated hubs).
--   Download the Windows HLK to the test server from [Windows Hardware Lab Kit Downloads](https://go.microsoft.com/fwlink/p/?linkid=285647).
+-   Download the Windows HLK to the test server from [Windows Hardware Lab Kit Downloads](/windows-hardware/test/hlk/).
 
-    For detailed information about how to install and use the Windows HLK, see [Windows HLK Getting Started](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+    For detailed information about how to install and use the Windows HLK, see [Windows HLK Getting Started](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
 ## Hardware requirements for running USB tests in the HLK
 
@@ -41,30 +41,27 @@ To run the HLK tests, you need:
 
 Complete set of requirements are given here:
 
--   [USB Bus Controller Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=617477)
--   [USB Hub.Connectivity Testing Prerequisites](https://go.microsoft.com/fwlink/p/?linkid=617499)
+-   [USB Bus Controller Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998789(v=vs.85))
+-   [USB Hub.Connectivity Testing Prerequisites](/previous-versions/windows/hardware/hck/jj124824(v=vs.85))
 
 ## HLK test selection for USB
 
 
 The USB tests that apply to your system, host controller, hub, or device are automatically selected in HLK Studio.
 
-After you follow steps 1-5 in [Windows HLK Getting Started]( https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started), make sure that:
+After you follow steps 1-5 in [Windows HLK Getting Started]( /windows-hardware/test/hlk/getstarted/windows-hlk-getting-started), make sure that:
 
 -   In step 5,the correct device is selected in the **Selection** tab of HLK Studio.
 -   In step 6, all the tests that apply to your device are displayed in the **Tests** tab in HLK studio. To run these tests, you must select the test in the left-hand check box and click **Run Selected**. The tests for USB testing are listed in the following section of this document.
 
-For information about scheduling tests, see steps 2-6 in [Windows HLK Getting Started]( https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+For information about scheduling tests, see steps 2-6 in [Windows HLK Getting Started]( /windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
 ## Recommended Windows HLK tests
 
 In addition to all of the USB tests that are automatically selected in HLK Studio, we recommend running the Fundamentals tests as well with a MUTT or SuperMUTT connected to system, controller or hub under test. For system submissions, these are the System Fundamentals (SysFund) Tests, for a controller, hub or device submission these are the Device Fundamentals (DevFund) Tests.
 
--   [System Fundamentals (SysFund)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/system-fundamentals-tests)
--   [Device Fundamentals (DevFund)](https://docs.microsoft.com/windows-hardware/test/hlk/testref/device-devfund-tests)
+-   [System Fundamentals (SysFund)](/windows-hardware/test/hlk/testref/system-fundamentals-tests)
+-   [Device Fundamentals (DevFund)](/windows-hardware/test/hlk/testref/device-devfund-tests)
 
 ## Related topics
-[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)  
-
-
-
+[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)

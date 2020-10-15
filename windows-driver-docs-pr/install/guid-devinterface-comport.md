@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_COMPORT
 
 
-The GUID_DEVINTERFACE_COMPORT [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [COM ports](https://docs.microsoft.com/previous-versions/ff546485(v=vs.85)).
+The GUID_DEVINTERFACE_COMPORT [device interface class](./overview-of-device-interface-classes.md) is defined for [COM ports](/previous-versions/ff546485(v=vs.85)).
 
 <table>
 <colgroup>
@@ -50,7 +50,7 @@ Remarks
 
 Drivers for serial ports register instances of this device interface class to notify the operating system and applications of the presence of COM ports.
 
-The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](https://docs.microsoft.com/previous-versions/ff547451(v=vs.85)).
+The system-supplied function driver for serial ports registers an instance of this device interface class for a [serial port](/windows-hardware/drivers/serports/using-serial-sys-and-serenum-sys).
 
 The following samples (on Github) register an instance of this class for a serial port:
 
@@ -86,11 +86,4 @@ Requirements
 [**GUID_CLASS_COMPORT**](guid-class-comport.md)
 
  
-
- 
-
-
-
-
-
 

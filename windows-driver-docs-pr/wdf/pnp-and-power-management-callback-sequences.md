@@ -16,7 +16,7 @@ The following topics show the sequence in which the framework calls a WDF (KMDF 
 -   [Power-Down and Removal Sequence for a Function or Filter Driver](power-down-and-removal-sequence-for-a-function-or-filter-driver.md)
 -   [Power-Down and Removal Sequence for a Bus Driver](power-down-and-removal-sequence-for-a-bus-driver.md)
 -   [Surprise-Removal Sequence](surprise-removal-sequence.md)
--   [WDM IRPs and corresponding WDF event callbacks](https://docs.microsoft.com/windows-hardware/drivers/wdf/wdm-irps-and-kmdf-event-callback-functions)
+-   [WDM IRPs and corresponding WDF event callbacks](./wdm-irps-and-kmdf-event-callback-functions.md)
 
 The following topics identify typical PnP and power management scenarios and show the sequence in which the framework calls a driver's event callback functions during these scenarios:
 
@@ -26,10 +26,4 @@ The following topics identify typical PnP and power management scenarios and sho
 - [A Device Returns to Its Working State](a-device-returns-to-its-working-state.md)
 - [The PnP Manager Redistributes System Resources](the-pnp-manager-redistributes-system-resources.md)
  
-
- 
-
-
-
-
 

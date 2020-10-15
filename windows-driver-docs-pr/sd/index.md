@@ -11,22 +11,21 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # SD Bus Driver Design Guide
 
-[SD Card Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/sd/sd-card-driver-stack)
+[SD Card Driver Stack](./sd-card-driver-stack.md)
 
-[Opening, Initializing and Closing an SD Card Bus Interface](https://docs.microsoft.com/windows-hardware/drivers/sd/opening--initializing-and-closing-an-sd-card-bus-interface)
+[Opening, Initializing and Closing an SD Card Bus Interface](./opening--initializing-and-closing-an-sd-card-bus-interface.md)
 
-[Handling SD Card Interrupts](https://docs.microsoft.com/windows-hardware/drivers/sd/handling-sd-card-interrupts)
+[Handling SD Card Interrupts](./handling-sd-card-interrupts.md)
 
-[SD Card Requests](https://docs.microsoft.com/windows-hardware/drivers/sd/sd-card-requests)
+[SD Card Requests](./sd-card-requests.md)
 
 ## SD Card Hardware Identifiers
 
-For information about Secure Digital (SD) device identification strings, see [Identifiers for Secure Digital (SD) Devices](https://docs.microsoft.com/windows-hardware/drivers/install/identifiers-for-secure-digital--sd--devices).
+For information about Secure Digital (SD) device identification strings, see [Identifiers for Secure Digital (SD) Devices](../install/identifiers-for-secure-digital--sd--devices.md).
 
 ## Restrictions on SD Card Drivers
 
@@ -38,10 +37,9 @@ Certain restrictions apply to Secure Digital (SD) card device drivers that manag
 
 - SD I/O commands that specify a function number of a different device stack.
 
-SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbussubmitrequest) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddsd/ne-ntddsd-sd_request_function).
+SD device drivers can manage the host controller's common register set and the state of the device by calling [**SdBusSubmitRequest**](/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbussubmitrequest) with function requests of type SDRF\_GET\_PROPERTY and SDRF\_SET\_PROPERTY. For a description of these function request types, see [**SD\_REQUEST\_FUNCTION**](/windows-hardware/drivers/ddi/ntddsd/ne-ntddsd-sd_request_function).
 
-## SD Bus Sample
+## SD Bus Sample (Windows 8.1)
+This sample (no longer supported) is a functional Secure Digital (SD) IO driver. The driver is written using the Kernel Mode Driver Framework. It is a driver for a generic mars development board that implements the SDIO protocol without additional functionality.
 
-This is a sample for a functional Secure Digital (SD) IO driver. The driver is written using the Kernel Mode Driver Framework. It is a driver for a generic mars development board that implements the SDIO protocol without additional functionality.
-
-Download the [Storage SDIO driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617953) from GitHub.
+Download the [Storage SDIO driver sample](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples/%5BC%2B%2B%5D-windows-driver-kit-81-cpp/WDK%208.1%20C%2B%2B%20Samples/Storage%20SDIO%20Driver/C%2B%2B) from GitHub.

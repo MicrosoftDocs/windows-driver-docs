@@ -112,7 +112,7 @@ You can turn off lazy symbol loading in CDB and KD by using the `-s` [command-li
 
 ## <span id="azure"></span><span id="AZURE"></span>Azure DevOps Services Artifacts
 
-A symbol server is available with Azure Artifacts in Azure DevOps Services. For information on working with Azure Artifacts in WinDbg, see [Debug with symbols in WinDbg](https://docs.microsoft.com/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio). For general information about Azure generated symbols, see [Symbol files (PDBs)](https://docs.microsoft.com/azure/devops/artifacts/concepts/symbols).
+A symbol server is available with Azure Artifacts in Azure DevOps Services. For information on working with Azure Artifacts in WinDbg, see [Debug with symbols in WinDbg](/azure/devops/artifacts/symbols/debug-with-symbols-visual-studio). For general information about Azure generated symbols, see [Symbol files (PDBs)](/azure/devops/artifacts/concepts/symbols).
 
 ### <span id="controlling-the-symbol-path"></span><span id="CONTROLLING-THE-SYMBOL-PATH"></span>Controlling the symbol path
 

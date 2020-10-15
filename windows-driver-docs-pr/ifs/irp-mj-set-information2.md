@@ -78,7 +78,7 @@ This information applies when the following operations are being performed on a 
 
 This information applies when a caller tries to delete the file.
 
-- Break on IRP_MJ_SET_INFORMATION (for FileDispositionInformation) when the operation occurs on a FILE_OBJECT with an oplock key that differs from the key of the FILE_OBJECT that owns the oplock, **AND** when [FILE_DISPOSITION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_disposition_information).DeleteFile is **TRUE****. If the oplock is broken:
+- Break on IRP_MJ_SET_INFORMATION (for FileDispositionInformation) when the operation occurs on a FILE_OBJECT with an oplock key that differs from the key of the FILE_OBJECT that owns the oplock, **AND** when [FILE_DISPOSITION_INFORMATION](/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_disposition_information).DeleteFile is **TRUE****. If the oplock is broken:
 
   - Read-Handle requests break to Read.
 

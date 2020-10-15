@@ -23,15 +23,9 @@ PFC uses the 802.3 PAUSE frame, and extends it with the following PFC fields:
 
 When the receiver sends an 802.3 PAUSE frame with PFC data, the switch blocks the transmit of frames with the specified priority level to the port on which the receiver is connected. When the timer value expires, the switch resumes the transmit of paused frames on the port.
 
-NDIS Quality of Service (QoS) parameters are specified through the [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure. The **PfcEnable** member contains a bitmap, in which each bit specifies whether PFC is enabled for a 802.1p priority level.
+NDIS Quality of Service (QoS) parameters are specified through the [**NDIS\_QOS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure. The **PfcEnable** member contains a bitmap, in which each bit specifies whether PFC is enabled for a 802.1p priority level.
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
  
-
- 
-
-
-
-
 

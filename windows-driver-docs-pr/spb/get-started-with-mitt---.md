@@ -22,8 +22,8 @@ To run MITT tests, you must install the MITT firmware on a new MITT board. These
 ## Before you begin...
 
 
--   [Download the MITT software package](https://docs.microsoft.com/previous-versions/dn919810(v=vs.85)).
--   [Buy hardware for using MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--)
+-   [Download the MITT software package](/previous-versions/dn919810(v=vs.85)).
+-   [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md)
 -   Know how to run Windows command shell with elevated privilege. Installation of the test tools requires an elevated command window. For that window, you can open a Command Prompt window by using the **Run as administrator** option.
 
 ## Computer setup for running MITT tests
@@ -33,7 +33,7 @@ To run MITT tests, you need a computer that will run as the host and system unde
 
 -   The computer must be running Windows 8.1 version of the operating system.
 -   The computer must have the MITT software package installed.
--   The computer must be connected as a target to a kernel debugger running on a separate machine. For more information about how to get Windbg, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+-   The computer must be connected as a target to a kernel debugger running on a separate machine. For more information about how to get Windbg, see [Windows Debugging](../debugger/index.md).
     **Note**  Windbg can be installed as a standalone tool set.
 
      
@@ -47,13 +47,13 @@ To run MITT tests, you need a computer that will run as the host and system unde
 ## Install WDTF Runtime Library
 
 
-To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](https://docs.microsoft.com/windows-hardware/drivers/ddi/index).
+To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](/windows-hardware/drivers/ddi/index).
 
-**Download location**: [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
+**Download location**: [WDK and WinDbg downloads](../download-the-wdk.md)
 
 The runtime is installed here %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF
 
-The system under test must be connected to a kernel debugger. Debugging tools are installed with the WDK. For more information, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) and [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbols).
+The system under test must be connected to a kernel debugger. Debugging tools are installed with the WDK. For more information, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](../debugger/index.md) and [Windows Debugging](../debugger/symbols.md).
 
 ## Install MITT firmware
 
@@ -76,17 +76,17 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
     **MuttUtil.exe -List**
 
-    ![mitt firmware upgrade](images/mitt-setup1.png)
+    ![Screenshot that shows the "MuttUtil.exe -list" command run in "Administrator: Command Prompt".](images/mitt-setup1.png)
 
     The preceding output shows that the WinUSB loaded as the device driver for the board.
 
-13. There are two separate chips that require firmware on the MITT board. For this task, use [MuttUtil](https://docs.microsoft.com/windows-hardware/drivers/usbcon/). Run this command:
+13. There are two separate chips that require firmware on the MITT board. For this task, use [MuttUtil](../usbcon/index.md). Run this command:
 
     **MuttUtil.exe –UpdateFirmware**
 
     If you are using the FPGA development board, the EEPROM can take up to 5 minutes to program. MuttUtil compares the version of the firmware on the board with the firmware version contained within MuttUtil. The firmware is updated only if MuttUtil has newer firmware.
 
-    ![mitt firmware upgrade](images/mitt-setup2.png)
+    ![Screenshot that shows the "MuttUtil.exe -UpdateFirmware" command run in "Administrator: Command Prompt".](images/mitt-setup2.png)
 
     The preceding output shows a successful installation of the first firmware image.
 
@@ -111,7 +111,4 @@ If MuttUtil returns an error while updating or installing the firmware,
 -   Connecting MITT directly to xHCI root hub on host computer is not recommended. Test may hang randomly with that setup. As a workaround, add a powered USB 2.0 hub between the xHCI port and MITT board.
 
 ## Related topics
-[Testing with Multi Interface Test Tool (MITT)](https://docs.microsoft.com/windows-hardware/drivers/spb/testing-with-multi-interface-test-tool--mitt-)  
-
-
-
+[Testing with Multi Interface Test Tool (MITT)](./testing-with-multi-interface-test-tool--mitt-.md)

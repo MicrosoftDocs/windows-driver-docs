@@ -21,7 +21,7 @@ This section discusses Winsock Kernel (WSK) and includes the following topics:
 -   [Introduction to Winsock Kernel](introduction-to-winsock-kernel.md)
 -   [Winsock Kernel Overview](winsock-kernel-overview.md)
 -   [Winsock Kernel Operations](winsock-kernel-operations.md)
--   [Winsock Kernel Programming Considerations](winsock-kernel-programming-considerations.md)
+-   [Winsock Kernel Programming Considerations](porting-tdi-drivers-to-winsock-kernel.md)
 
  
 

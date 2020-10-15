@@ -2,7 +2,7 @@
 title: ACPI system description tables
 description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required.
 ms.assetid: 6EFCD288-031D-46BB-ABF3-8ADB53E7B4B1
-ms.date: 05/20/2020
+ms.date: 10/02/2020
 ms.localizationpriority: medium
 ---
 
@@ -85,17 +85,17 @@ Microsoft requires a debug port on all systems. To describe the debug port(s) bu
 
 Windows uses the Port Type value in the DBG2 table to identify and load the Kernel Debugger (KD) transport (for example, USB or serial) that the system requires. The KD transport then uses the Port Subtype value in the DBG2 table to identify the hardware interface used by the port. Other information in the DBG2 table specifies the system address of the port registers, which is used by the hardware interface module for the specified subtype. Finally, the DBG2 table must include a reference to the device node in the ACPI namespace that corresponds to the debug port. This reference enables Windows to manage conflicts between debugging use and normal use of the device, if any, and also to integrate the debugger with power transitions.
 
-For more information, see the [Microsoft Debug Port Table 2 (DBG2) specification](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn639131(v=vs.85)).
+For more information, see the [Microsoft Debug Port Table 2 (DBG2) specification](acpi-debug-port-table.md).
 
 ## Differentiated System Description Table (DSDT)
 
 In ACPI, peripheral devices and system hardware features on the platform are described in the Differentiated System Description Table (DSDT), which is loaded at boot, or in Secondary System Description Tables (SSDTs), which are loaded at boot or loaded dynamically at run time. For SoCs, the platform configuration is typically static, so the DSDT might be sufficient, although SSDTs can also be used to improve the modularity of the platform description.
 
-ACPI defines an interpreted language (ACPI source language, or ASL) and an execution environment (ACPI virtual machine) for describing system devices and features, and their platform-specific controls, in an OS-agnostic way. ASL is used to define named objects in the ACPI namespace, and the [Microsoft ASL compiler](microsoft-asl-compiler.md) is used to produce ACPI machine language (AML) byte code for transmission to the operating system in the DSDT. The inbox [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, implements the ACPI virtual machine and interprets the AML byte code. An AML object might simply return description information. Or, an AML object might be a method that performs computation or does I/O operations. A *control method* is an executable AML object that uses the operating system's device drivers to do I/O operations on the platform hardware. ASL uses OpRegions to abstract the various address spaces accessible in the operating system. Control methods perform I/O operations as a series of transfers to and from named fields declared in OpRegions.
+ACPI defines an interpreted language (ACPI source language, or ASL) and an execution environment (ACPI virtual machine) for describing system devices and features, and their platform-specific controls, in an OS-agnostic way. ASL is used to define named objects in the ACPI namespace, and the [Microsoft ASL compiler](microsoft-asl-compiler.md) is used to produce ACPI machine language (AML) byte code for transmission to the operating system in the DSDT. The inbox [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, implements the ACPI virtual machine and interprets the AML byte code. An AML object might simply return description information. Or, an AML object might be a method that performs computation or does I/O operations. A *control method* is an executable AML object that uses the operating system's device drivers to do I/O operations on the platform hardware. ASL uses OpRegions to abstract the various address spaces accessible in the operating system. Control methods perform I/O operations as a series of transfers to and from named fields declared in OpRegions.
 
 For more information about OpRegions, see section 5.5.2.4, "Access to Operation Regions", in the [ACPI 5.0 specification](https://uefi.org/specifications). For more about ASL and control methods, see section 5.5, "ACPI Namespace", in the ACPI 5.0 specification.
 
-Windows provides support for developing and debugging ASL code. The ASL compiler includes a disassembler to enable the implementer to load a namespace from a debugging target. The ASL compiler can then be used to reapply the namespace to the target for rapid prototyping and testing—without having to flash the system firmware. In addition, the Windows Kernel Debugger, in conjunction with a checked (CHK) version of the Acpi.sys driver, supports tracing and analyzing AML execution. For more information, see [The AMLI Debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction-to-the-amli-debugger).
+Windows provides support for developing and debugging ASL code. The ASL compiler includes a disassembler to enable the implementer to load a namespace from a debugging target. The ASL compiler can then be used to reapply the namespace to the target for rapid prototyping and testing—without having to flash the system firmware. In addition, the Windows Kernel Debugger, in conjunction with a checked (CHK) version of the Acpi.sys driver, supports tracing and analyzing AML execution. For more information, see [The AMLI Debugger](../debugger/introduction-to-the-amli-debugger.md).
 
 ## Windows SMM Security Mitigations Table (WSMT)
 
@@ -107,4 +107,10 @@ Windows Server 2016
 
 Windows 10, version 1607
 
-For more information, see the [Windows SMM Security Mitigations Table (WSMT) specification](https://go.microsoft.com/fwlink/p/?LinkId=786943).
+For more information, see the [Windows SMM Security Mitigations Table (WSMT) specification (DOCX download)](https://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx).
+
+## iSCSI Boot Firmware Table (iBFT)
+
+The iSCSI Boot Firmware (iBF) Table (iBFT) is a block of information that contains various parameters that are useful to the iSCSI Boot process. The iBFT is the mechanism by which iBF parameter values are conveyed to the operating system. The iBF builds and fills in the iBFT. The iBFT is available to the Windows operating system to enable a consistent flow of the boot process.
+
+For more information, see the [iSCSI Boot Firmware Table (iBFT) specification (DOCX download)](https://download.microsoft.com/download/1/e/5/1e5a2287-366c-431a-8e05-b958540230b1/iBFT.docx).

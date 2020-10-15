@@ -39,21 +39,14 @@ Returns zero (S\_OK or DD\_OK) if successful; otherwise, returns an error code. 
 Remarks
 -------
 
-The *DeinterlaceCloseStream* function maps directly to the **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure that points to the driver-supplied *DdMoCompDestroy* callback.
+The *DeinterlaceCloseStream* function maps directly to the **DestroyMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure that points to the driver-supplied *DdMoCompDestroy* callback.
 
 ## <span id="see_also"></span>See also
 
 
-[**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
+[**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
 [**DeinterlaceOpenStream**](dxva-deinterlacebobdeviceclass-deinterlaceopenstream.md)
 
  
-
- 
-
-
-
-
-
 

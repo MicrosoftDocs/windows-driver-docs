@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # ServiceName
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ServiceName element is not currently used.
 

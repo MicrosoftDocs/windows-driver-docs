@@ -56,9 +56,6 @@ Indicators under test:
 -   Laptop/slate mode indicator
 
 ## <span id="related_topics"></span>Related topics
-[Power button behavior](https://aka.ms/connect-redirect?DownloadID=47452)  
-[GPIO buttons testing with MITT platform](https://aka.ms/connect-redirect?DownloadID=48735)  
-[GPIO tests in MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/gpio-tests-in-mitt)  
-
-
-
+[Power button behavior](/collaborate/connect-redirect?DownloadID=47452)  
+[GPIO buttons testing with MITT platform](/collaborate/connect-redirect?DownloadID=48735)  
+[GPIO tests in MITT](../spb/gpio-tests-in-mitt.md)

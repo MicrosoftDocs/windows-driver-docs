@@ -1,5 +1,5 @@
 ---
-Description: BIOS/UEFI testing validates USB boot and handoff of the controller to the operating system.
+description: BIOS/UEFI testing validates USB boot and handoff of the controller to the operating system.
 title: BIOS/UEFI testing with the MUTT devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -44,8 +44,5 @@ In this scenario, it is assumed there is either no USB bootable media that is at
 Expected results for this scenario are that the SuperMUTT Pack and MUTT Pack are functional and operational after booting into the operating system and running the standard MUTT tests. After test devices are validated, the system should perform each of the supported system power states (S3, S4, and so on) and validate that the MUTT test devices remain functional after each system resume. Run MUTT tests after each resume event.
 
 ## Related topics
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
-
-
-
+[USB](../index.yml)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

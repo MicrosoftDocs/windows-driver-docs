@@ -23,7 +23,7 @@ NDIS intermediate drivers interface between upper-level protocol drivers and min
 
 -   Monitoring and collecting of network data statistics.
 
-Before attempting to write an intermediate driver, you should read about NDIS miniport and protocol drivers. For more information about NDIS miniport drivers, see [NDIS Miniport Drivers](ndis-miniport-drivers.md). For more information about NDIS protocol drivers, see [NDIS Protocol Drivers](ndis-protocol-drivers.md).
+Before attempting to write an intermediate driver, you should read about NDIS miniport and protocol drivers. For more information about NDIS miniport drivers, see [NDIS Miniport Drivers](roadmap-for-developing-ndis-miniport-drivers.md). For more information about NDIS protocol drivers, see [NDIS Protocol Drivers](./roadmap-for-developing-ndis-protocol-drivers.md).
 
 The following sections introduce intermediate drivers and describe how to create and install such drivers:
 
@@ -38,10 +38,4 @@ The following sections introduce intermediate drivers and describe how to create
 [Installing Intermediate Drivers](installing-an-intermediate-driver.md)
 
  
-
- 
-
-
-
-
 

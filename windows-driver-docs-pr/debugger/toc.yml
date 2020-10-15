@@ -1859,8 +1859,6 @@
       href: symstore-transactions.md
     - name: "File System References and Symbol Files"
       href: file-system-references-and-symbol-files.md
-    - name: "SymStore Compressed Files"
-      href: symstore-compressed-files.md
     - name: "Symbol Storage Format"
       href: symbol-storage-format.md
   - name: "How the Debugger Recognizes Symbols"
@@ -1978,6 +1976,8 @@
           href: forcing-a-system-crash-from-the-debugger.md
         - name: "Forcing a System Crash from the Keyboard"
           href: forcing-a-system-crash-from-the-keyboard.md
+        - name: "Forcing a System Crash with the Power Button"
+          href: forcing-a-system-crash-with-the-power-button.md
       - name: "Creating a Dump File Without a System Crash"
         href: creating-a-dump-file-without-a-system-crash.md
       - name: "Verifying the Creation of a Kernel-Mode Dump File"

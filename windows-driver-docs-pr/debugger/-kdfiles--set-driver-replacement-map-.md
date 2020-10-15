@@ -114,7 +114,7 @@ After build 20172, the user mode .kdfiles mechanism will attempt to pull files f
 
 Be aware of limitations with being unable to replace already in use disk files, etc. As many system DLLs are won’t be easily hot swappable after they have been loaded up initially, preset the gflags +ksl option and use .kdfiles to replace any user mode binaries right at boot.
 
-For more information about enabling boot debugging, see [BCDEdit /bootdebug](https://docs.microsoft.com/windows-hardware/drivers/devtest/bcdedit--bootdebug).
+For more information about enabling boot debugging, see [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md).
 
 The use of the high speed/low latency KD transport KDNET is recommended to minimize system performance impacts.
 
@@ -135,10 +135,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

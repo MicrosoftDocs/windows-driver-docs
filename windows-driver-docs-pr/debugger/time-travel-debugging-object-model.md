@@ -351,7 +351,7 @@ Use this dx command to display all of the events in the trace in grid format (-g
 ==================================================================================================================================================================================================
 ```
 
-Click on any of the columns with a + sign to sort the output.
+Select any of the columns with a + sign to sort the output.
 
 Use this LINQ query to display in grid format, the time position in the trace when threads were created (Type == "ThreadCreated").
 

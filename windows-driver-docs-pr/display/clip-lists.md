@@ -20,13 +20,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_clip_lists_gg"></span><span id="DDK_CLIP_LISTS_GG"></span>
 
 
-Clipped blts are never passed to the driver on Microsoft Windows 2000 and later. The **IsClipped** member of [**DD\_BLTDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_bltdata) is always **FALSE**, and the clipped list is always **NULL**.
+Clipped blts are never passed to the driver on Microsoft Windows 2000 and later. The **IsClipped** member of [**DD\_BLTDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_bltdata) is always **FALSE**, and the clipped list is always **NULL**.
 
  
-
- 
-
-
-
-
 

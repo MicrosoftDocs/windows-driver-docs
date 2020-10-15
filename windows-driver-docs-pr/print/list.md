@@ -19,7 +19,7 @@ The Web Services for Devices (WSD) `List` construct is a string type that compos
 | **name** | The name of the schema value. |
 | **query** | The type of query that the WSD monitor performs. |
 
-The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the [XPath Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)) for more information.
+The XPath language, implemented in Windows beginning with Microsoft XML (MSXML) 2.6, provides a convenient way to specify elements in an XML file. See the [XPath Reference](/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)) for more information.
 
 The `List` construct is defined in WsdBidi.xsd.
 

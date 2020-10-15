@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # MobileBroadbandInfo XML schema overview
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 A service metadata package contains one MobileBroadbandInfo.xml document, which contains information that is specific to mobile broadband networks.
 

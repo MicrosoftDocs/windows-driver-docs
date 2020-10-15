@@ -34,7 +34,7 @@ The microdriver can exclude data types not supported by the device.
 
 ### File Formats
 
-The default file format is bitmap (BMP). Other format support can be added using the [WIA microdriver optional command](https://docs.microsoft.com/windows-hardware/drivers/image/optional-commands) CMD\_SETFORMAT.
+The default file format is bitmap (BMP). Other format support can be added using the [WIA microdriver optional command](./optional-commands.md) CMD\_SETFORMAT.
 
 ### Supported Transfer Types
 
@@ -61,9 +61,4 @@ It is possible to use the **IWiaItem::DeviceDlg** method (described in the Micro
 Only simple Automatic Document Feeder (ADF) control is supported.
 
  
-
- 
-
-
-
 

@@ -50,16 +50,9 @@ Requirements
 ## See also
 
 
-[**BdaMethodCreatePin**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatepin)
+[**BdaMethodCreatePin**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdamethodcreatepin)
 
-[**KSM\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)
-
- 
+[**KSM\_PIN**](/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_ksm_pin)
 
  
-
-
-
-
-
 

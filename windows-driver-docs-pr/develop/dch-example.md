@@ -12,7 +12,7 @@ This topic describes how the [DCHU driver sample](https://github.com/Microsoft/W
 
 If you would like a local copy of the sample repo, clone from [Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples).
 
-Some portions of the sample may use directives and APIs that are only available on certain versions of Windows 10 and above.  Please refer to [INF Directives](../install/inf-directives.md) to see what OS version a given directive is supported on.
+Some portions of the sample may use directives and APIs that are only available on certain versions of Windows 10 and above.  Please refer to [Device and Driver Installation](../install/index.md) to see what OS version a given directive is supported on.
 
 ## Prerequisites
 
@@ -129,11 +129,11 @@ osrfx2_DCHU_componentsoftware.exe
 
 The [source code for the Win32 app](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU/osrfx2_DCHU_extension_loose/osrfx2_DCHU_componentsoftware) is included in the sample.
 
-Note that the component driver package is only distributed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware).  For more info, see [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update).
+Note that the component driver package is only distributed on Desktop SKUs due to targeting set in the [Windows Hardware Dev Center dashboard](https://partner.microsoft.com/dashboard/Registration/Hardware).  For more info, see [Publish a driver to Windows Update](../dashboard/publish-a-driver-to-windows-update.md).
 
 ## Allow communication with a hardware support app
 
-Fabrikam would like to provide a GUI-based companion app as part of the Windows Driver package.  Because Win32-based companion applications cannot be part of a Windows Driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](https://docs.microsoft.com/windows-hardware/drivers/devapps/hardware-access-for-universal-windows-platform-apps).
+Fabrikam would like to provide a GUI-based companion app as part of the Windows Driver package.  Because Win32-based companion applications cannot be part of a Windows Driver package, they port their Win32 app to the Universal Windows Platform (UWP) and [pair the app with the device](../devapps/hardware-support-app--hsa--steps-for-driver-developers.md).
 
 The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Microsoft/Windows-driver-samples/blob/master/general/DCHU/osrfx2_DCHU_base/osrfx2_DCHU_base/device.c) shows how the base driver package adds a custom capability to the device interface instance:
 
@@ -152,7 +152,7 @@ The following snippet from [`osrfx2_DCHU_base/device.c`](https://github.com/Micr
                                               (PVOID)customCapabilities);
 ```
 
-The new app (not included in the sample) is secure and can be updated easily in the Microsoft Store. With the UWP application ready, Contoso uses [DISM - Deployment Image Servicing and Management](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows Desktop edition images.
+The new app (not included in the sample) is secure and can be updated easily in the Microsoft Store. With the UWP application ready, Contoso uses [DISM - Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows) to pre-load the application on Windows Desktop edition images.
 
 ## Tightly coupling multiple INF files
 
@@ -168,7 +168,7 @@ Ideally, there should be strong versioning contracts between base, extensions, a
 CopyInf=osrfx2_DCHU_component.inf
 ```
 
-This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](https://docs.microsoft.com/windows-hardware/drivers/install/copying-inf-files).
+This directive can also be used to coordinate installation of INF files in multifunction devices.  For more details, see [Copying INF files](../install/copying-inf-files.md).
 
 > [!NOTE]
 > While a base driver can payload an extension (and target the base driver in the shipping label), an extension bundled with another driver cannot be published to the extension hardware ID.

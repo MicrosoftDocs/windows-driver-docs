@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Application (SoftwareInfo)
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Application element specifies the associated device notification handler.
 

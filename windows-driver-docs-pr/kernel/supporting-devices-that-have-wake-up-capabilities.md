@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-Drivers for devices that can respond to external wake signals must be able to handle [**IRP\_MN\_WAIT\_WAKE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-wait-wake) requests (*wait/wake IRPs*). The power policy owner for such a device must be able to send an **IRP\_MN\_WAIT\_WAKE** request.
+Drivers for devices that can respond to external wake signals must be able to handle [**IRP\_MN\_WAIT\_WAKE**](./irp-mn-wait-wake.md) requests (*wait/wake IRPs*). The power policy owner for such a device must be able to send an **IRP\_MN\_WAIT\_WAKE** request.
 
 Typically, whatever causes the device to assert the wake signal is also a normal service event for the device. For example, user input, which might cause a keyboard to wake up the system, is a normal event for the keyboard and its drivers.
 
@@ -26,9 +26,4 @@ The first topic of this section, [Overview of Wait/Wake Operation](overview-of-w
 [Canceling a Wait/Wake IRP](canceling-a-wait-wake-irp.md)
 
  
-
- 
-
-
-
 

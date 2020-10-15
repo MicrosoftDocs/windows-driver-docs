@@ -17,9 +17,9 @@ Security is a consideration when processing certain directory control operations
 
 Support for directory change notification by the file system run-time library allows a file system to specify a callback function for performing a traverse check before it returns a directory change notification. This callback function takes a large number of parameters. For security considerations, the following three parameters are important:
 
-- *NotifyContext* is the context of the directory where the change notification is active. This will be the *FsContext* parameter that is passed in to the call to [**FsRtlNotifyFullChangeDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory).
+- *NotifyContext* is the context of the directory where the change notification is active. This will be the *FsContext* parameter that is passed in to the call to [**FsRtlNotifyFullChangeDirectory**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullchangedirectory).
 
-- *TargetContext* is the context of the file that has changed. This will be the *TargetContext* parameter passed by the file system when it calls [**FsRtlNotifyFilterReportChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange).
+- *TargetContext* is the context of the file that has changed. This will be the *TargetContext* parameter passed by the file system when it calls [**FsRtlNotifyFilterReportChange**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange).
 
 - *SubjectContext* is the security context of the thread requesting the directory change notification. This is the subject security context captured by the file system at the time the directory change notification call is made to **FsRtlNotifyFullChangeDirectory**.
 

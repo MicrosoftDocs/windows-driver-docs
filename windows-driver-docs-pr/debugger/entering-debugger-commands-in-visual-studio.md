@@ -13,6 +13,6 @@ ms.localizationpriority: medium
 > As an alternative to Visual Studio, use the command window in WinDbg Preview. For more information, see [WinDbg Preview - View Menu](windbg-view-preview.md) and [Debugger Commands](debugger-commands.md).
 >
 
-The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](https://docs.microsoft.com/windows-hardware/drivers/).
+The procedures shown in this topic require that you have the Windows Driver Kit integrated into Visual Studio. To get the integrated environment, first install Microsoft Visual Studio, and then install the Windows Driver Kit (WDK). For more information, see [Windows Driver Development](../index.yml).
 
 In Visual Studio, you can enter debugger commands in the Debugger Immediate Window. To open the Debugger Immediate Window, from the **Debug** menu, choose **Windows&gt;Immediate**.

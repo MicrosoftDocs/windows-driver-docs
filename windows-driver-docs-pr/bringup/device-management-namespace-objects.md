@@ -14,7 +14,7 @@ The [ACPI 5.0 specification](https://uefi.org/specifications) defines several ty
 
 Windows Plug and Play finds and loads device drivers based on a device identifier provided by the enumerator of the device. Enumerators are bus drivers that know how to extract identification information from the device. Some buses (such as PCI, SD, and USB) have hardware-defined mechanisms to do this extraction. For buses that do not (such as the processor bus or a simple peripheral bus), ACPI defines identification objects in the namespace.
 
-The [Windows ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
+The [Windows ACPI driver](../kernel/acpi-driver.md), Acpi.sys, assembles the values found in these objects into a variety of device identifier strings that can identify a device very specifically, or quite generically, depending on the needs of the driver. Some of the string patterns created to identify ACPI-enumerated devices are:
 
 ```syntax
 ACPI\VEN_vvv[v]&DEV_dddd&SUBSYS_sss[s]nnnn&REV_rrrr
@@ -32,7 +32,7 @@ Device identifiers should be used for INF matching only, and should never be par
 
 ### Hardware ID (\_HID)
 
-The minimum requirement for identifying a device in ACPI is the Hardware ID (\_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](https://docs.microsoft.com/windows-hardware/drivers/install/plug-and-play-id---pnpid-request).
+The minimum requirement for identifying a device in ACPI is the Hardware ID (\_HID) object. \_HID returns a string with the format of "ABC\[D\]*xxxx*", where "ABC\[D\]" is a 3- or 4-character string that identifies the manufacturer of the device (the "Vendor ID"), and *xxxx* is a hexadecimal number that identifies the specific device manufactured by that vendor (the "Device ID"). Vendor IDs must be unique across the industry. Microsoft allocates these strings to ensure that they are unique. Vendor IDs can be obtained from [Plug and Play ID - PNPID Request](../install/plug-and-play-id---pnpid-request.md).
 
 > [!NOTE]
 > ACPI 5.0 also supports the use of PCI-assigned vendor IDs in \_HID and other identification objects, so you might not need to get a vendor ID from Microsoft. For more information about hardware identification requirements, see section 6.1.5, "\_HID (Hardware ID)", of the [ACPI 5.0 specification](https://uefi.org/specifications).
@@ -90,7 +90,7 @@ Additionally, ACPI provides a notification mechanism that ASL can use to notify 
 
 As part of Windows Plug and Play, drivers must be capable of being dynamically enabled and disabled by the user or by the system (for example, for updating a driver).
 
-On-SoC devices are integrated into the SoC chip and cannot be removed. Drivers for most on-SoC devices can be exempted from the requirements for enable and disable. For those drivers that are not exempt, there are driver interfaces for indicating that the driver supports orderly removal. For more information, see the document titled "Reducing PNP Requirements for SoC Drivers" on the [Microsoft Connect web site](https://aka.ms/connect-redirect?DownloadID=47560).
+On-SoC devices are integrated into the SoC chip and cannot be removed. Drivers for most on-SoC devices can be exempted from the requirements for enable and disable. For those drivers that are not exempt, there are driver interfaces for indicating that the driver supports orderly removal. For more information, see the document titled "Reducing PNP Requirements for SoC Drivers" on the [Microsoft Connect web site](/collaborate/connect-redirect?DownloadID=47560).
 
 If a driver supports orderly removal, and the device hardware can be disabled (that is, the device can be configured to stop accessing its assigned resources), then the ACPI namespace node for the device can include the Disable (\_DIS ) object. This method will be evaluated by the operating system whenever the driver is removed. Use of \_DIS has the following additional requirements:
 
@@ -113,16 +113,16 @@ There can also be software dependencies between device drivers. These dependenci
 
 For more information, see the following resources:
 
-- For driver-load-order dependencies, see [Specifying Driver Load Order](https://docs.microsoft.com/windows-hardware/drivers/install/specifying-driver-load-order).
+- For driver-load-order dependencies, see [Specifying Driver Load Order](../install/specifying-driver-load-order.md).
 
 - For power-relations dependencies, see:
 
-  - [IoInvalidateDeviceRelations](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
+  - [IoInvalidateDeviceRelations](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations) (To trigger establishing power relations, call the **IoInvalidateDeviceRelations** routine with the **DEVICE\_RELATION\_TYPE** enum value **PowerRelations**.)
   
-  - [IRP\_MN\_QUERY\_DEVICE\_RELATIONS](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations)
+  - [IRP\_MN\_QUERY\_DEVICE\_RELATIONS](../kernel/irp-mn-query-device-relations.md)
 
-  - [WdfDeviceInitSetPnpPowerEventCallbacks](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)
+  - [WdfDeviceInitSetPnpPowerEventCallbacks](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)
 
-  - [Enumerating the Devices on a Bus](https://docs.microsoft.com/windows-hardware/drivers/wdf/enumerating-the-devices-on-a-bus)
+  - [Enumerating the Devices on a Bus](../wdf/enumerating-the-devices-on-a-bus.md)
 
-  - [Dynamic Enumeration](https://docs.microsoft.com/windows-hardware/drivers/wdf/dynamic-enumeration)
+  - [Dynamic Enumeration](../wdf/dynamic-enumeration.md)

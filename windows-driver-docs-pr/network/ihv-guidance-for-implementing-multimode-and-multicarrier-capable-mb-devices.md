@@ -235,7 +235,7 @@ Set = **InformationBuffer on MBIM\_COMMAND\_MSG contains MBIM\_LOCATION\_INFO**
 
 Unsolicited Event = **Unsupported**
 
-The country code specified by the host will be based on the Geographical Location GEOID available on Windows. For more information, see [Table of Geographical Locations (Windows)](https://docs.microsoft.com/windows/desktop/Intl/table-of-geographical-locations).
+The country code specified by the host will be based on the Geographical Location GEOID available on Windows. For more information, see [Table of Geographical Locations (Windows)](/windows/desktop/Intl/table-of-geographical-locations).
 
 <table>
 <colgroup>
@@ -313,10 +313,4 @@ Unsolicited Event = **Unsupported**
  
 
  
-
- 
-
-
-
-
 

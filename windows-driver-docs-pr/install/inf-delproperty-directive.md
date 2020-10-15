@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 
  
 
-A **DelProperty** directive references one or more INF file sections that delete [device properties](device-properties.md) for a device instance, a [device setup class](device-setup-classes.md), a [device interface class](device-interface-classes.md), or a device interface.
+A **DelProperty** directive references one or more INF file sections that delete [device properties](device-properties.md) for a device instance, a [device setup class](./overview-of-device-setup-classes.md), a [device interface class](./overview-of-device-interface-classes.md), or a device interface.
 
 ```inf
 [DDInstall] | 
@@ -76,7 +76,7 @@ A property identifier that indicates the specific property within the property c
 An optional hexadecimal flag value that controls the delete operation. The only flag value supported is as follows:
 
 <a href="" id="0x00000001--flg-delproperty-multi-sz-delstring-"></a>**0x00000001** (FLG_DELPROPERTY_MULTI_SZ_DELSTRING)  
-If the property data type is [**DEVPROP_TYPE_STRING_LIST**](https://docs.microsoft.com/windows-hardware/drivers/install/devprop-type-string-list), the operation deletes all the strings with the existing string list that match the string that is supplied by the value entry value. The case of a character is not considered in the comparison between the supplied string and an existing string in the string list.
+If the property data type is [**DEVPROP_TYPE_STRING_LIST**](./devprop-type-string-list.md), the operation deletes all the strings with the existing string list that match the string that is supplied by the value entry value. The case of a character is not considered in the comparison between the supplied string and an existing string in the string list.
 
 <a href="" id="value"></a>*value*  
 If the property data type is DEVPROP_TYPE_STRING_LIST and the flags entry is **0x00000001**, the *value* entry value supplies the string that the delete operation uses to search for matching strings in the existing string list and, if a matching string is found, the delete operation removes the matching string from the existing string list.
@@ -107,11 +107,4 @@ DeviceModel
 [**AddProperty**](inf-addproperty-directive.md)
 
  
-
- 
-
-
-
-
-
 

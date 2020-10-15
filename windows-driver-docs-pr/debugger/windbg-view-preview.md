@@ -47,7 +47,7 @@ Use the stack Window to view the current call stack. The stack window provides b
 
 The disassembly window highlights the current instruction and retains that position when you scroll. 
 
-![ Disassembly window in debugger](images/windbgx-disassembly.png)
+![Screenshot that shows the "Disassembly" window in debugger.](images/windbgx-disassembly.png)
 
 ## Threads
 

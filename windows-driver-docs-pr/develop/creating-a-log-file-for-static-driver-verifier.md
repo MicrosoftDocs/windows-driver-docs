@@ -1,22 +1,22 @@
 ---
 ms.assetid: EDA6357A-D18D-439D-A0DD-050BA51E1A79
 title: Creating a log file for Static Driver Verifier
-description: The Windows Server 2012 Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
+description: Learn how to run a Static Driver Verifier (SDV) before creating a Driver Verification Log (DVL) for your driver.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Creating a log file for Static Driver Verifier
 
-The Windows Server 2012 [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
+The Windows Server 2012 [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run [Static Driver Verifier](../devtest/static-driver-verifier.md) (SDV) prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
 
 For best results, run the Code Analysis tool before you run Static Driver Verifier.
 
 **To create a log file for Static Driver Verifier**
 
-1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then right-click to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
-2.  If you have already run the Code Analysis tool, follow these instructions for [running Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers#running_static_driver_verifier). For more information about using SDV, see Using Static Driver Verifier to Find Defects in Drivers
-3.  If SDV finds defects in your driver, click the defect in the Results pane to view a trace of the code path that led to the rule violation. Fix any defects found in the driver and run SDV again.
+1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then select and hold (or right-click) to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
+2.  If you have already run the Code Analysis tool, follow these instructions for [running Static Driver Verifier](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md#running_static_driver_verifier). For more information about using SDV, see Using Static Driver Verifier to Find Defects in Drivers
+3.  If SDV finds defects in your driver, select the defect in the Results pane to view a trace of the code path that led to the rule violation. Fix any defects found in the driver and run SDV again.
 
 Static Driver Verifier writes the results to the file SDV.DVL.xml in the SDV sub-directory of your project, for example, \\myDriverProject\\SDV.
 
@@ -52,15 +52,6 @@ msbuild.exe <vcxprojectfile> /p:Configuration="Win8 Release" /p:Platform=x64 /ta
 
 
 * [Creating a driver verification log](creating-a-driver-verification-log.md)
-* [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier)
-* [Using Static Driver Verifier to Find Defects in Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/using-static-driver-verifier-to-find-defects-in-drivers)
-* [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
- 
-
- 
-
-
-
-
-
-
+* [Static Driver Verifier](../devtest/static-driver-verifier.md)
+* [Using Static Driver Verifier to Find Defects in Drivers](../devtest/using-static-driver-verifier-to-find-defects-in-drivers.md)
+* [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))

@@ -28,3 +28,5 @@ There are two ways to deliberately cause a system crash:
 [Forcing a System Crash from the Debugger](forcing-a-system-crash-from-the-debugger.md)
 
 [Forcing a System Crash from the Keyboard](forcing-a-system-crash-from-the-keyboard.md)
+
+[Forcing a System Crash with the Power Button](forcing-a-system-crash-with-the-power-button.md)

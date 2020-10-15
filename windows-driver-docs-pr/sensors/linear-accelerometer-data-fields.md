@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 This topic provides information about the data fields that are specific to the linear accelerometer.
 
-The following table shows the data fields. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395).
+The following table shows the data fields. For more information about the types shown in the type column, see [MSDN PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant).
 
 |Property key|Type|Required/Optional|Description|
 |--|--|--|--|
@@ -24,9 +24,4 @@ The following table shows the data fields. For more information about the types 
 ## Related topics
 
 
-[MSDN PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
-
-
-
-
-
+[MSDN PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

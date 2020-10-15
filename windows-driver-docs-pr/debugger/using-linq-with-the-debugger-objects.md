@@ -12,9 +12,9 @@ LINQ syntax can be used with the debugger objects to search and manipulate data.
 
 Debugger objects are projected into a namespace rooted at "Debugger". Processes, modules, threads, stacks, stack frames, and local variables are all available to be used in a LINQ query.
 
-LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see [Getting Started with LINQ in C#](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)
+LINQ is conceptually similar to the Structured Query Language (SQL) that is used to query databases. You can use a number of LINQ methods to search, filter and parse debug data. The LINQ C# method syntax is used. For more information on LINQ and the LINQ C# syntax, see [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)
 
-LINQ that is used in the debugger support uses the “method syntax” of LINQ and not the “query syntax”. You can find more details about the differences in [LINQ (Language-Integrated Query)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
+LINQ that is used in the debugger support uses the “method syntax” of LINQ and not the “query syntax”. You can find more details about the differences in [LINQ (Language-Integrated Query)](/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq).
 
 LINQ commands such as the following can be used with the debugger objects. All, .Any, .Count, .First, .Flatten, .GroupBy, .Last, .OrderBy, .OrderByDescending, .Select, and .Where. These methods follow (as closely as possible) the C# LINQ method form.
 
@@ -55,7 +55,7 @@ Debugger
     Utility
 ```
 
-After clicking on the top level topics, we determine that Sessions looks most interesting, so we click on the DML link to reveal that it contains *Processes*. 
+After selecting the top level topics, we determine that Sessions looks most interesting, so we select the DML link to reveal that it contains *Processes*. 
 
 ```dbgcmd
 0: kd> dx -r1 Debugger.Sessions[0]
@@ -65,7 +65,7 @@ Debugger.Sessions[0]                 : Remote KD: KdSrv:Server=@{<Local>},Trans=
     Attributes
 ```
 
-Then we click further down to look at specific process and we see that the *Threads* associated with that process are available. When we click on *Threads* for one of the processes, we see the all of the threads associated with that process are available.
+Then we select further down to look at specific process and we see that the *Threads* associated with that process are available. When we select *Threads* for one of the processes, we see the all of the threads associated with that process are available.
 
 
 ```dbgcmd
@@ -331,7 +331,7 @@ kd> dx -r1 @$curprocess.Threads
 
 ## User Defined Variables - Anonymous Types
 
-This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](https://docs.microsoft.com/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types). This example create an anonymous type with an integer and string value.
+This creation of dynamic objects is done using the C# anonymous type syntax (new { ... }). For more information see about anonymous types, see [Anonymous Types (C# Programming Guide)](/dotnet/articles/csharp/programming-guide/classes-and-structs/anonymous-types). This example create an anonymous type with an integer and string value.
 
 ```dbgcmd
 kd> dx -r1 new { MyInt = 42, MyString = "Hello World" }
@@ -559,7 +559,7 @@ String Object Projections
 
 In addition to the methods which are projected directly onto string objects, any object which itself has a string conversion has the following method projected onto it, making it method available for use:
 
-**.ToDisplayString ( )**: Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. For more information, see [Format specifiers for C++ in the Visual Studio debugger](https://docs.microsoft.com/visualstudio/debugger/format-specifiers-in-cpp?view=vs-2019)
+**.ToDisplayString ( )**: Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. For more information, see [Format specifiers for C++ in the Visual Studio debugger](/visualstudio/debugger/format-specifiers-in-cpp?view=vs-2019)
 
 
 
@@ -613,7 +613,7 @@ Use *Flatten* on the device tree to view all devices.
 
 **Grid Display**
 
-As with other dx commands, you can right click on a command after it was executed and click "Display as grid" or add "-g" to the command to get a grid view of the results.
+As with other dx commands, you can select and hold (or right-click) a command after it was executed and select "Display as grid" or add "-g" to the command to get a grid view of the results.
 
 ```dbgcmd
 # 0: kd> dx -g @$cursession.Devices.DeviceTree.Flatten(n => n.Children)
@@ -856,7 +856,7 @@ This table summarizes the use of the dx command with common device capability fl
 </table>
 
 
-For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
+For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
 
 
 ## <span id="see_also"></span>See also
@@ -868,10 +868,3 @@ For more information about the CapabilityFlags, see [**DEVICE\_CAPABILITIES**](h
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
 
 ---
-
-
-
-
-
-
-

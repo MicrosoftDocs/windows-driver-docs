@@ -12,7 +12,7 @@ keywords:
 - multifunction devices WDK , installing
 - parent buses WDK multifunction devices
 - INF files WDK multifunction devices
-ms.date: 04/20/2017
+ms.date: 08/25/2020
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,7 +46,7 @@ For a multifunction device that combines other functionality, you can use a syst
 
 If the device does not comply with the standard for its bus, you might need to supply a driver equivalent to mf.sys in functionality, in addition to function drivers and INF files for the device functions.
 
-To install a multifunction device, you typically provide a base INF file for the device and an additional INF file for each of the device's functions. The base INF file typically copies the INF files for the device's individual functions. For information about how to accomplish this, see [Copying INFs](https://docs.microsoft.com/windows-hardware/drivers/install/copying-inf-files).
+To install a multifunction device, you typically provide a base INF file for the device and an additional INF file for each of the device's functions. The base INF file typically copies the INF files for the device's individual functions. For information about how to accomplish this, see [Copying INFs](../install/copying-inf-files.md).
 
 The following sections describe driver and installation requirements for various types of multifunction devices:
 
@@ -60,6 +60,6 @@ The following sections describe driver and installation requirements for various
 
 [Creating Resource Maps for a Multifunction Device](creating-resource-maps-for-a-multifunction-device.md)
 
-See [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives) for information about INF file syntax.
+See [INF File Sections](../install/inf-classinstall32-section.md) and [INF File Directives](../install/inf-addcomponent-directive.md) for information about INF file syntax.
 
-The Windows Driver Kit (WDK) includes a separate section that describes how to support [multifunction audio devices](https://docs.microsoft.com/windows-hardware/drivers/audio/multifunction-audio-devices).
+The Windows Driver Kit (WDK) includes a separate section that describes how to support [multifunction audio devices](../audio/multifunction-audio-devices.md).

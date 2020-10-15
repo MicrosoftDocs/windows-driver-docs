@@ -32,13 +32,7 @@ class MSFC_PortEvent : WMIEvent {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_PortEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_portevent)
+[**MSFC\_PortEvent**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_portevent)
 
  
-
- 
-
-
-
-
 

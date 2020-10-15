@@ -25,7 +25,7 @@ OID\_WDI\_SET\_P2P\_WPS\_ENABLED requests that the adapter enables or disables W
 
 | TLV                                                                 | Multiple TLV instances allowed | Optional | Description                                 |
 |---------------------------------------------------------------------|--------------------------------|----------|---------------------------------------------|
-| [**WDI\_TLV\_P2P\_WPS\_ENABLED**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-wps-enabled) |                                |          | Specifies whether to enable or disable WPS. |
+| [**WDI\_TLV\_P2P\_WPS\_ENABLED**](./wdi-tlv-p2p-wps-enabled.md) |                                |          | Specifies whether to enable or disable WPS. |
 
  
 
@@ -59,9 +59,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

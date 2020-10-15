@@ -3,12 +3,15 @@ title: Debugging indirect display drivers
 description: Describes debugging techniques for indirect display drivers
 ms.assetid: a343812d-03d0-4a95-9c36-7e6b5a404088
 ms.date: 07/17/2020
+keywords:
+- Indirect display drivers, debugging
+- IDDs, debugging
 ms.localizationpriority: medium
 ---
 
 # Debugging indirect display drivers
 
-Indirect Displays drivers (IDDs) are UMDF drivers so the UMDF debugging documentation, such as [Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start](https://docs.microsoft.com/windows-hardware/drivers/wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails), is a good starting point.  This page provides indirect display-specific debugging information.
+Indirect Displays drivers (IDDs) are UMDF drivers so the UMDF debugging documentation, such as [Determining Why the UMDF Driver Fails to Load or the UMDF Device Fails to Start](../wdf/determining-why-the-umdf-driver-fails-to-load-or-the-umdf-device-fails.md), is a good starting point.  This page provides indirect display-specific debugging information.
 
 ## Registry control
 
@@ -42,15 +45,15 @@ The Indirect Display Driver Class eXtension (IccDx) has some registry settings t
 
 > [!NOTE]
 >
-> For any of the overlay functions to work, the Direct3D device created by the driver and passed to [**IddCxSwapChainSetDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainsetdevice) must be created with the **D3D11_CREATE_DEVICE_BGRA_SUPPORT** flag.
+> For any of the overlay functions to work, the Direct3D device created by the driver and passed to [**IddCxSwapChainSetDevice**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainsetdevice) must be created with the **D3D11_CREATE_DEVICE_BGRA_SUPPORT** flag.
 
 ## IddCx WPP traces
 
-Iddcx uses the [WPP infrastructure](https://docs.microsoft.com/windows-hardware/drivers/devtest/wpp-software-tracing) to log debug information. WPP information can be captured to a file, and while this capture is in progress it can be displayed in the kernel debugger.
+Iddcx uses the [WPP infrastructure](../devtest/wpp-software-tracing.md) to log debug information. WPP information can be captured to a file, and while this capture is in progress it can be displayed in the kernel debugger.
 
 ### Capturing IddCx WPP tracing
 
-There are several ways to enable WPP tracing. One convenient way is to use the build in [*logman.exe*](https://docs.microsoft.com/windows-server/administration/windows-commands/logman) program. If you copy the following line to a batch file and run from an elevated command prompt it will collect IddCx WPP traces into the *IddCx.etl* file.
+There are several ways to enable WPP tracing. One convenient way is to use the build in [*logman.exe*](/windows-server/administration/windows-commands/logman) program. If you copy the following line to a batch file and run from an elevated command prompt it will collect IddCx WPP traces into the *IddCx.etl* file.
 
 ```console
 @echo off  
@@ -115,7 +118,7 @@ Using the above section, you can enable WPP tracing using *logman.exe* and with 
 >
 > For this to work you need to be using a kernel debugger (not user mode debugger) and Windows build 19560 or above in order for the debugger to get the *IddCx.pdb* that contain the WPP decode info.
 
-In the example below, a Indirect Display driver calls [**IddCxMonitorArrival**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorarrival). As a part of the processing, IddCx calls the driver's [**EvtIddCxMonitorQueryTargetModes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_query_target_modes) DDI. In this example, the driver returned a mode with DISPLAYCONFIG_VIDEO_SIGNAL_INFO.AdditionalSignalInfo.vSyncFreqDivider set to zero which is invalid and causes an error.
+In the example below, a Indirect Display driver calls [**IddCxMonitorArrival**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxmonitorarrival). As a part of the processing, IddCx calls the driver's [**EvtIddCxMonitorQueryTargetModes**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_query_target_modes) DDI. In this example, the driver returned a mode with DISPLAYCONFIG_VIDEO_SIGNAL_INFO.AdditionalSignalInfo.vSyncFreqDivider set to zero which is invalid and causes an error.
 
 Here is a list of the debugger commands used:
 

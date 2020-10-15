@@ -1,5 +1,5 @@
 ---
-Description: The Windows.Devices.Usb namespace provides APIs to communicate with an external USB device.
+description: The Windows.Devices.Usb namespace provides APIs to communicate with an external USB device.
 title: UWP app for a USB device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 # UWP app for a USB device
 
 
-The [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb) namespace provides a way for a Windows app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.
+The [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) namespace provides a way for a Windows app to communicate with an external USB device that uses WinUSB (Winusb.sys) as the device driver.
 
 ## In this section
 
@@ -31,12 +31,12 @@ The [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices
 </tr>
 <tr class="even">
 <td><p><a href="updating-the-app-manifest-with-usb-device-capabilities.md" data-raw-source="[How to add USB device capabilities to the app manifest](updating-the-app-manifest-with-usb-device-capabilities.md)">How to add USB device capabilities to the app manifest</a></p></td>
-<td><p>This topic describes the device capabilities that are required for a Windows app that uses the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb)"><strong>Windows.Devices.Usb</strong></a> namespace.</p></td>
+<td><p>This topic describes the device capabilities that are required for a Windows app that uses the <a href="/uwp/api/Windows.Devices.Usb" data-raw-source="[&lt;strong&gt;Windows.Devices.Usb&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb)"><strong>Windows.Devices.Usb</strong></a> namespace.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="how-to-connect-to-a-usb-device--uwp-app-.md" data-raw-source="[How to connect to a USB device (UWP app)](how-to-connect-to-a-usb-device--uwp-app-.md)">How to connect to a USB device (UWP app)</a></p></td>
 <td><p>In Windows 8.1, you can write a UWP app that interacts with a USB device. The app can send control commands, get device information, and read and write data to/from bulk and interrupt endpoints. Before you can do all that, you must find the device and establish connection.</p>
-<p>In this part, you will learn how to use the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object to find the device and then open it to start communicating from your app. You will also learn how to close the device when you are finished using it.</p></td>
+<p>In this part, you will learn how to use the <a href="/uwp/api/Windows.Devices.Enumeration.DeviceWatcher" data-raw-source="[&lt;strong&gt;DeviceWatcher&lt;/strong&gt;](/uwp/api/Windows.Devices.Enumeration.DeviceWatcher)"><strong>DeviceWatcher</strong></a> object to find the device and then open it to start communicating from your app. You will also learn how to close the device when you are finished using it.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="how-to-send-a-usb-control-transfer--uwp-app-.md" data-raw-source="[How to send a USB control transfer (UWP app)](how-to-send-a-usb-control-transfer--uwp-app-.md)">How to send a USB control transfer (UWP app)</a></p></td>
@@ -56,7 +56,7 @@ The [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices
 </tr>
 <tr class="even">
 <td><p><a href="how-to-select-a-usb-interface-setting--uwp-app-.md" data-raw-source="[How to select a USB interface setting (UWP app)](how-to-select-a-usb-interface-setting--uwp-app-.md)">How to select a USB interface setting (UWP app)</a></p></td>
-<td><p>In this topic, you'll learn about changing a setting within a USB interface. You'll use the <a href="https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting&lt;/strong&gt;](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting)"><strong>UsbInterfaceSetting</strong></a> object to get the current setting and set a setting in the interface.</p></td>
+<td><p>In this topic, you'll learn about changing a setting within a USB interface. You'll use the <a href="/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting" data-raw-source="[&lt;strong&gt;UsbInterfaceSetting&lt;/strong&gt;](/uwp/api/Windows.Devices.Usb.UsbInterfaceSetting)"><strong>UsbInterfaceSetting</strong></a> object to get the current setting and set a setting in the interface.</p></td>
 </tr>
 </tbody>
 </table>
@@ -66,14 +66,14 @@ The [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices
 ## USB samples
 
 
--   [Custom USB device access sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
--   [USB CDC Control sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
--   [Firmware Update USB Device sample](https://go.microsoft.com/fwlink/p/?linkid=309716)
+-   [Custom USB device access sample](/samples/browse/)
+-   [USB CDC Control sample](/samples/browse/)
+-   [Firmware Update USB Device sample](/samples/browse/)
 
 ## What are the limitations of the namespace?
 
 
-You *cannot* use [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb) in these cases:
+You *cannot* use [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) in these cases:
 
 -   If the device driver is not Winusb.sys.
 -   You want to communicate with USB isochronous endpoints of the device.
@@ -90,10 +90,7 @@ You *cannot* use [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Wi
 
      
 
--   Your device has multiple USB configurations, and you want to select a configuration, other than the first. [**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb) selects the first configuration by default.
+-   Your device has multiple USB configurations, and you want to select a configuration, other than the first. [**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb) selects the first configuration by default.
 
 ## Related topics
-[**Windows.Devices.Usb**](https://docs.microsoft.com/uwp/api/Windows.Devices.Usb)  
-
-
-
+[**Windows.Devices.Usb**](/uwp/api/Windows.Devices.Usb)

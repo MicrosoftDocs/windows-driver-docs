@@ -8,8 +8,6 @@ ms.localizationpriority: medium
 
 # Writing a location sensor driver for Windows 8.1
 
-This section provides specific guidance for writing drivers for devices that provide location data. In addition to the information that is contained in this section, location driver authors must also understand and apply the information that is provided in [Writing a Sensor Device Driver](https://docs.microsoft.com/windows-hardware/drivers/sensors/writing-a-sensor-device-driver).
-
 The Sensor and Location Platform provides the Windows Location API to enable software developers to add location features to their programs easily. If you are writing a driver for a location sensor, you must understand how to make the driver compatible with the Location API and follow the guidelines in [Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md).
 
 ## Windows Hardware Certification Program requirements
@@ -44,7 +42,7 @@ The rest of this section describes these minimum requirements
 
 ## Identifying the category
 
-When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](https://docs.microsoft.com/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **WPD\_FUNCTIONAL\_OBJECT\_CATEGORY** property value to **SENSOR\_CATEGORY\_LOCATION**. The following code example shows how to set this constant through a pointer to [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCATION);
@@ -52,7 +50,7 @@ hr = pValues->SetGuidValue(WPD_FUNCTIONAL_OBJECT_CATEGORY, SENSOR_CATEGORY_LOCAT
 
 ## Setting the location sensor type
 
-When it is called through [**ISensorDriver::OnGetProperties**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](https://docs.microsoft.com/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
+When it is called through [**ISensorDriver::OnGetProperties**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties), set the **SENSOR\_PROPERTY\_TYPE** property value to the correct value. The following code example shows how to set the sensor type by using the **SENSOR\_TYPE\_LOCATION\_GPS** constant through a pointer to [IPortableDeviceValues](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues) named pValues.
 
 ```cpp
 hr = pValues->SetGuidValue(SENSOR_PROPERTY_TYPE, SENSOR_TYPE_LOCATION_GPS);
@@ -74,9 +72,9 @@ To support a civic address report, at least one of the following data fields is 
 
 - SENSOR\_DATA\_TYPE\_COUNTRY\_REGION
 
-To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-category-loc) in the [Windows Sensor Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) section.
+To view the complete set of platform-defined location data fields, see [**SENSOR\_CATEGORY\_LOCATION**](../sensors/sensor-category-loc.md) in the [Windows Sensor Reference](/windows-hardware/drivers/ddi/index) section.
 
-When they are called through [**ISensorDriver::OnGetSupportedDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](https://docs.microsoft.com/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](https://docs.microsoft.com/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) through a variable named pKeyCollection.
+When they are called through [**ISensorDriver::OnGetSupportedDataFields**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetsupporteddatafields), add the supported data field property key constants to the [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) that you return through the *ppSupportedDataFields* parameter. The following code example shows how to add the postal code data field to [IPortableDeviceKeyCollection](/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection) through a variable named pKeyCollection.
 
 ```cpp
 pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
@@ -84,7 +82,7 @@ pKeyCollection->Add(SENSOR_DATA_TYPE_POSTALCODE);
 
 ## Support the required properties
 
-Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-properties). The following list contains the required properties:
+Like other sensor drivers, location drivers provide information about the sensor itself through a set of properties. The Windows Hardware Certification Program specifies the minimum required set of properties that a location sensor must support. For more information about sensor properties, their meanings, and which properties are required for sensor drivers, see [**Sensor Properties**](../sensors/sensor-properties.md). The following list contains the required properties:
 
 - WPD\_FUNCTIONAL\_OBJECT\_CATEGORY
 
@@ -110,11 +108,11 @@ Like other sensor drivers, location drivers provide information about the sensor
 
 ## Providing data
 
-Location drivers provide data through the same mechanisms as other sensor drivers. That is, the sensor class extension calls the driver through [**ISensorDriver::OnGetDataFields**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields) and the driver returns the values through the *ppDataValues* parameter.
+Location drivers provide data through the same mechanisms as other sensor drivers. That is, the sensor class extension calls the driver through [**ISensorDriver::OnGetDataFields**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetdatafields) and the driver returns the values through the *ppDataValues* parameter.
 
 The following requirements apply to providing data from a location sensor:
 
-- Provide data both through synchronous requests and by [raising events](https://docs.microsoft.com/windows-hardware/drivers/sensors/raising-events).
+- Provide data both through synchronous requests and by [raising events](../sensors/raising-events.md).
 
 - Maintain a copy of your most recent data report. If new data is not available when you request it, return the cached report. Do not update the time stamp.
 
@@ -126,25 +124,25 @@ The following requirements apply to providing data from a location sensor:
 
 - If your driver supports both latitude/longitude and civic address reports, the location data in these reports should correspond to the same physical location.
 
-The following table describes the [sensor data fields](https://docs.microsoft.com/windows-hardware/drivers/sensors/sensor-categories--types--and-data-fields) that correspond to Location API data report fields. Use these data field constants when you provide data reports for a location.
+The following table describes the sensor data fields that correspond to Location API data report fields. Use these data field constants when you provide data reports for a location.
 
 | Sensor constant | Location API method and property |
 | --- | --- |
-| SENSOR_DATA_TYPE_ADDRESS1 | [ICivicAddressReport::GetAddressLine1](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getaddressline1)<br><br>[LocationDisp.DispCivicAddressReport.AddressLine1](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-dispcivicaddressreport-addressline1) |
-| SENSOR_DATA_TYPE_ADDRESS2 | [ICivicAddressReport::GetAddressLine2](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getaddressline2)<br><br>[LocationDisp.DispCivicAddressReport.AddressLine2](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-dispcivicaddressreport-addressline2) |
-| SENSOR_DATA_TYPE_ALTITUDE_ELLIPSOID_ERROR_METERS | [ILatLongReport::GetAltitudeError](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getaltitudeerror)<br><br>[LocationDisp.DispLatLongReport.AltitudeError](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-displatlongreport-altitudeerror) |
-| SENSOR_DATA_TYPE_ALTITUDE_ELLIPSOID_METERS | [ILatLongReport::GetAltitude](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getaltitude)<br><br>[LocationDisp.DispLatLongReport.Altitude](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-displatlongreport-altitude) |
-| SENSOR_DATA_TYPE_CITY | [ICivicAddressReport::GetCity](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getcity)<br><br>[LocationDisp.DispCivicAddressReport.City](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-dispcivicaddressreport-city)<br><br>[Windows.Devices. Geolocation.CivicAddress](https://docs.microsoft.com/uwp/api/Windows.Devices.Geolocation.CivicAddress#Windows_Devices_Geolocation_CivicAddress_City) |
-| SENSOR_DATA_TYPE_COUNTRY_REGION | [ICivicAddressReport::GetCountryRegion](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getcountryregion)<br><br>[LocationDisp.DispCivicAddressReport.CountryRegion](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-civicaddressreport-countryregion) |
-| SENSOR_DATA_TYPE_ERROR_RADIUS_METERS | [ILatLongReport::GetErrorRadius](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-geterrorradius)<br><br>[LocationDisp.DispLatLongReport.ErrorRadius](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-displatlongreport-errorradius) |
-| SENSOR_DATA_TYPE_LATITUDE_DEGREES | [ILatLongReport::GetLatitude](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getlatitude)<br><br>[LocationDisp.DispLatLongReport.Latitude](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-displatlongreport-latitude) |
-| SENSOR_DATA_TYPE_LONGITUDE_DEGREES | [ILatLongReport::GetLongitude](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getlongitude)<br><br>[LocationDisp.DispLatLongReport.Longitude](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-displatlongreport-longitude) |
-| SENSOR_DATA_TYPE_POSTALCODE | [ICivicAddressReport::GetPostalCode](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getpostalcode)<br><br>[LocationDisp.DispCivicAddressReport.PostalCode](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-dispcivicaddressreport-postalcode) |
-| SENSOR_DATA_TYPE_STATE_PROVINCE | [ICivicAddressReport::GetStateProvince](https://docs.microsoft.com/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getstateprovince)<br><br>[LocationDisp.DispCivicAddressReport.StateProvince](https://docs.microsoft.com/windows/win32/locationapi/locationdisp-dispcivicaddressreport-stateprovince) |
+| SENSOR_DATA_TYPE_ADDRESS1 | [ICivicAddressReport::GetAddressLine1](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getaddressline1)<br><br>[LocationDisp.DispCivicAddressReport.AddressLine1](/windows/win32/locationapi/locationdisp-dispcivicaddressreport-addressline1) |
+| SENSOR_DATA_TYPE_ADDRESS2 | [ICivicAddressReport::GetAddressLine2](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getaddressline2)<br><br>[LocationDisp.DispCivicAddressReport.AddressLine2](/windows/win32/locationapi/locationdisp-dispcivicaddressreport-addressline2) |
+| SENSOR_DATA_TYPE_ALTITUDE_ELLIPSOID_ERROR_METERS | [ILatLongReport::GetAltitudeError](/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getaltitudeerror)<br><br>[LocationDisp.DispLatLongReport.AltitudeError](/windows/win32/locationapi/locationdisp-displatlongreport-altitudeerror) |
+| SENSOR_DATA_TYPE_ALTITUDE_ELLIPSOID_METERS | [ILatLongReport::GetAltitude](/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getaltitude)<br><br>[LocationDisp.DispLatLongReport.Altitude](/windows/win32/locationapi/locationdisp-displatlongreport-altitude) |
+| SENSOR_DATA_TYPE_CITY | [ICivicAddressReport::GetCity](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getcity)<br><br>[LocationDisp.DispCivicAddressReport.City](/windows/win32/locationapi/locationdisp-dispcivicaddressreport-city)<br><br>[Windows.Devices. Geolocation.CivicAddress](/uwp/api/Windows.Devices.Geolocation.CivicAddress#Windows_Devices_Geolocation_CivicAddress_City) |
+| SENSOR_DATA_TYPE_COUNTRY_REGION | [ICivicAddressReport::GetCountryRegion](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getcountryregion)<br><br>[LocationDisp.DispCivicAddressReport.CountryRegion](/windows/win32/locationapi/locationdisp-civicaddressreport-countryregion) |
+| SENSOR_DATA_TYPE_ERROR_RADIUS_METERS | [ILatLongReport::GetErrorRadius](/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-geterrorradius)<br><br>[LocationDisp.DispLatLongReport.ErrorRadius](/windows/win32/locationapi/locationdisp-displatlongreport-errorradius) |
+| SENSOR_DATA_TYPE_LATITUDE_DEGREES | [ILatLongReport::GetLatitude](/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getlatitude)<br><br>[LocationDisp.DispLatLongReport.Latitude](/windows/win32/locationapi/locationdisp-displatlongreport-latitude) |
+| SENSOR_DATA_TYPE_LONGITUDE_DEGREES | [ILatLongReport::GetLongitude](/windows/win32/api/locationapi/nf-locationapi-ilatlongreport-getlongitude)<br><br>[LocationDisp.DispLatLongReport.Longitude](/windows/win32/locationapi/locationdisp-displatlongreport-longitude) |
+| SENSOR_DATA_TYPE_POSTALCODE | [ICivicAddressReport::GetPostalCode](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getpostalcode)<br><br>[LocationDisp.DispCivicAddressReport.PostalCode](/windows/win32/locationapi/locationdisp-dispcivicaddressreport-postalcode) |
+| SENSOR_DATA_TYPE_STATE_PROVINCE | [ICivicAddressReport::GetStateProvince](/windows/win32/api/locationapi/nf-locationapi-icivicaddressreport-getstateprovince)<br><br>[LocationDisp.DispCivicAddressReport.StateProvince](/windows/win32/locationapi/locationdisp-dispcivicaddressreport-stateprovince) |
 
 ## Managing state transitions
 
-At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
+At any time, a sensor driver can be in one of a number of states. Sensor states are defined by the [**SensorState**](/windows-hardware/drivers/ddi/sensorsclassextension/ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001) enumeration. To work correctly with the Location API, location sensors must follow these rules for handling state transitions.
 
 - Always start in the SENSOR\_STATE\_INITIALIZING state, but do not raise a state-changed event at startup.
 
@@ -172,13 +170,13 @@ The following diagram shows how state transitions may occur in a location sensor
 
 ## Raising data-updated and state-changed events
 
-The Location API, requires location sensors, such as GPS sensors, to raise events that provide data and state-change information. For more information about raising sensor events, see [About Sensor Driver Events](https://docs.microsoft.com/windows-hardware/drivers/sensors/about-sensor-driver-events).
+The Location API, requires location sensors, such as GPS sensors, to raise events that provide data and state-change information. For more information about raising sensor events, see [About Sensor Driver Events](../sensors/about-sensor-driver-events.md).
 
 When raising these events, location drivers must follow these rules:
 
-- Raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. Do not call [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) to raise state change events.
+- Raise state change events by calling the sensor class extension's [**ISensorClassExtension::PostStateChange**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-poststatechange) method. Do not call [**PostEvent**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent) to raise state change events.
 
-- Raise data-updated events by calling [**PostEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent).
+- Raise data-updated events by calling [**PostEvent**](/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensorclassextension-postevent).
 
 - Raise a data-updated event only if the data is up to date and accurate.
 
@@ -192,8 +190,8 @@ When raising these events, location drivers must follow these rules:
 
 - Do not provide incomplete data reports.
 
-- You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR\_DATA\_TYPE\_NMEA\_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](https://docs.microsoft.com/windows-hardware/drivers/sensors/defining-custom-values-for-constants).
+- You might not have current data for the required data fields, such as when a GPS sensor has lost its fix. In this case, you might still want to provide notifications about updates to extended data fields, such as SENSOR\_DATA\_TYPE\_NMEA\_SENTENCE. To provide such notifications, you must use a custom event type and raise only the custom event until data for the required data fields becomes available. For information about how to define custom types, see [Defining Custom Values for Constants](../sensors/defining-custom-values-for-constants.md).
 
 ## Related topics
 
-[Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md)  
+[Location Driver Guidelines for Power and Performance](location-driver-guidelines-for-power-and-performance.md)

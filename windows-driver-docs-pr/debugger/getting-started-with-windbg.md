@@ -10,7 +10,7 @@ ms.localizationpriority: high
 
 WinDbg is a kernel-mode and user-mode debugger that is included in Debugging Tools for Windows. Here we provide hands-on exercises that will help you get started using WinDbg as a user-mode debugger.
 
-For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com//windows-hardware/drivers/debugger/).
+For information about how to get Debugging Tools for Windows, see [Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](index.md).
 
 After you have installed the debugging tools, locate the installation directories for 64-bit (x64) and 32-bit (x86) versions of the tools. For example:
 
@@ -21,9 +21,9 @@ After you have installed the debugging tools, locate the installation directorie
 
 1. Navigate to your installation directory, and open WinDbg.exe.
 
-2. The debugger documentation is also available on line at [docs.microsoft.com](https://docs.microsoft.com/windows-hardware/drivers/debugger/).
+2. The debugger documentation is also available on line at [docs.microsoft.com](./index.md).
 
-3. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to the folder that contains notepad.exe (for example, C:\\Windows\\System32). For **File name**, enter notepad.exe. Click **Open**.
+3. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to the folder that contains notepad.exe (for example, C:\\Windows\\System32). For **File name**, enter notepad.exe. Select **Open**.
 
     ![screen shot of windbg after starting notepad](images/windbggetstart01.png)
 
@@ -228,7 +228,7 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 1. Open WinDbg.
 
-2. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Click **Open**.
+2. On the **File** menu, choose **Open Executable**. In the Open Executable dialog box, navigate to C:\\MyApp\\x64\\Debug. For **File name**, enter MyApp.exe. Select **Open**.
 3. Enter these commands:
 
     [.symfix](-symfix--set-symbol-store-path-.md)
@@ -340,6 +340,6 @@ For this exercise, we will assume that the built application (MyApp.exe) and the
 
 [Debugging Techniques](debugging-techniques.md)
 
-[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](https://docs.microsoft.com/windows-hardware/drivers/debugger/)
+[Debugging Tools for Windows (WinDbg, KD, CDB, NTSD)](./index.md)
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)

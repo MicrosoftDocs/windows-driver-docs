@@ -10,25 +10,24 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # IEEE 1394 bus driver design guide
 
 This section includes:
 
-[The IEEE 1394 Driver Stack](https://docs.microsoft.com/windows-hardware/drivers/ieee/the-ieee-1394-driver-stack)
+[The IEEE 1394 Driver Stack](./the-ieee-1394-driver-stack.md)
 
-[Installing IEEE 1394 Device Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/installing-ieee-1394-device-drivers)
+[Installing IEEE 1394 Device Drivers](./installing-ieee-1394-device-drivers.md)
 
-[Asynchronous I/O for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/asynchronous-i-o-for-ieee-1394-devices)
+[Asynchronous I/O for IEEE 1394 Devices](./asynchronous-i-o-for-ieee-1394-devices.md)
 
-[Isochronous I/O for IEEE 1394 Devices](https://docs.microsoft.com/windows-hardware/drivers/ieee/isochronous-i-o-for-ieee-1394-devices)
+[Isochronous I/O for IEEE 1394 Devices](./isochronous-i-o-for-ieee-1394-devices.md)
 
-[Modifying the 1394 Configuration ROM](https://docs.microsoft.com/windows-hardware/drivers/ieee/modifying-the-1394-configuration-rom)
+[Modifying the 1394 Configuration ROM](./modifying-the-1394-configuration-rom.md)
 
-[IEEE 1394 Hardware Emulation Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/ieee-1394-hardware-emulation-drivers)
+[IEEE 1394 Hardware Emulation Drivers](./ieee-1394-hardware-emulation-drivers.md)
 
-[1394 Samples and Diagnostic Tools](https://docs.microsoft.com/windows-hardware/drivers/ieee/1394-samples-and-diagnostic-tools)
+[1394 Samples and Diagnostic Tools](./1394-samples-and-diagnostic-tools.md)
 
-[IEC-61883 Client Drivers](https://docs.microsoft.com/windows-hardware/drivers/ieee/iec-61883-client-drivers)
+[IEC-61883 Client Drivers](./iec-61883-client-drivers.md)

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-When a driver fails to install correctly, the targeted component can lose functionality and prevent the user from accessing the component’s features. The user must troubleshoot the issue to regain functionality. A list of PNP error codes is located on [Device Manager Problem Codes](https://docs.microsoft.com/windows-hardware/drivers/install/device-manager-error-messages) and on [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
+When a driver fails to install correctly, the targeted component can lose functionality and prevent the user from accessing the component’s features. The user must troubleshoot the issue to regain functionality. A list of PNP error codes is located on [Device Manager Problem Codes](../install/device-manager-error-messages.md) and on [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
 
 ## Measure attributes
 

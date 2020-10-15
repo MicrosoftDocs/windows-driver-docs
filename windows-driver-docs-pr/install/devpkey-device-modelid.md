@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_ModelId
 
 
-The DEVPKEY_Device_ModelId device property matches a device to a [device metadata package](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages).
+The DEVPKEY_Device_ModelId device property matches a device to a [device metadata package](./overview-of-device-metadata-packages.md).
 
 <table>
 <colgroup>
@@ -58,9 +58,9 @@ Remarks
 
 The DEVPKEY_Device_ModelId device property provides support for IHVs and OEMs to uniquely identify devices that share the same manufacturer and model. By using a model identifier (ModelID), OEMs and IHVs can match the device model that they distribute to their own branded device metadata package.
 
-The DEVPKEY_Device_ModelId device property contains the value of the [**ModelID**](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)) XML element from the device's metadata package. When the device is installed, this PKEY is populated with the ModelID GUID value as reported by the device.
+The DEVPKEY_Device_ModelId device property contains the value of the [**ModelID**](/previous-versions/windows/hardware/metadata/ff549295(v=vs.85)) XML element from the device's metadata package. When the device is installed, this PKEY is populated with the ModelID GUID value as reported by the device.
 
-For more information, see [Device Metadata Packages](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages).
+For more information, see [Device Metadata Packages](./overview-of-device-metadata-packages.md).
 
 Requirements
 ------------
@@ -85,18 +85,9 @@ Requirements
 ## See also
 
 
-[Device Metadata Packages](https://docs.microsoft.com/windows-hardware/drivers/install/device-metadata-packages)
+[Device Metadata Packages](./overview-of-device-metadata-packages.md)
 
-[**ModelID**](https://docs.microsoft.com/previous-versions/windows/hardware/metadata/ff549295(v=vs.85))
+[**ModelID**](/previous-versions/windows/hardware/metadata/ff549295(v=vs.85))
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
-
- 
-
-
-
-
-
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 

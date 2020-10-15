@@ -3,14 +3,13 @@ title: Portable PDB Symbols
 description: The Portable PDB (Program Database) format describes an encoding of debugging information produced by compilers of Common Language Infrastructure languages and consumed by debuggers.
 ms.assetid: 511af309-4e48-445c-ab04-85d558584fd4
 keywords: ["symbols, overview"]
-ms.date: 08/05/2020
+ms.date: 10/12/2020
 ms.localizationpriority: medium
 ---
 
 # Portable PDB Symbols
 
 Starting with version 1.0.2007.01003 of the Windows Debugger, Portable PDB Symbols are supported. Portable symbols can be used to provide information to all of the commonly used debugger commands that use symbols, such as [x (Examine Symbols)](x--examine-symbols-.md), [dt (Display Type)](dt--display-type-.md) and [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md). For general information on the Portable PDB format, see [Portable PDB](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) on GitHub.
-
 
 ## The Portable PDB (Program Database) format
 
@@ -24,7 +23,7 @@ For complete information on the portable PDB format, see [Portable PDB v1.0: For
 
 For a code sample that reads portable PDB files, see [Microsoft.DiaSymReader.PortablePdb](https://github.com/dotnet/symreader-portable) on GitHub.
 
-This reader of Portable PDBs implements DiaSymReader interfaces such as ISymUnmanagedReader and ISymUnmanagedBinder. For more information about those .NET interfaces see [Diagnostics Symbol Store (Unmanaged API Reference)](https://docs.microsoft.com/dotnet/framework/unmanaged-api/diagnostics/).
+This reader of Portable PDBs implements DiaSymReader interfaces such as ISymUnmanagedReader and ISymUnmanagedBinder. For more information about those .NET interfaces see [Diagnostics Symbol Store (Unmanaged API Reference)](/dotnet/framework/unmanaged-api/diagnostics/).
 
 ## See also
 

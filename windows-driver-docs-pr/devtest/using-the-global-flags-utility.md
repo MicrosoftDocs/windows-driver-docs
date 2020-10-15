@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 The Global Flags (gflags.exe) utility provides a simple method of setting certain keys within the system registry, adjusting the kernel settings of the running system, and altering the settings for image files. You can set these keys by using a graphical or command-line interface.
 
-The Global Flags utility can be found in the Windows Support Tools package and in the Debugging Tools for Windows package. For information about the latter, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+The Global Flags utility can be found in the Windows Support Tools package and in the Debugging Tools for Windows package. For information about the latter, see [Windows Debugging](../debugger/index.md).
 
 The Global Flags utility can also be used to configure the Special Pool option of Driver Verifier, or to designate the special pool for use in individual memory allocations.
 
@@ -159,10 +159,4 @@ It is best to avoid using pool tags lower than PAGE\_SIZE. For example, if you p
 See [Special Pool](special-pool.md) for full details on the use of the special pool.
 
  
-
- 
-
-
-
-
 

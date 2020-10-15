@@ -22,9 +22,9 @@ The MITT software package includes tests for validating data transfers to a UART
 ## Before you begin...
 
 
--   Get a MITT board and a UART adapter board. See [Buy hardware for using MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--).
--   [Download the MITT software package](https://docs.microsoft.com/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
--   Install MITT firmware on the MITT board. See [Get started with MITT](https://docs.microsoft.com/windows-hardware/drivers/spb/get-started-with-mitt---).
+-   Get a MITT board and a UART adapter board. See [Buy hardware for using MITT](./multi-interface-test-tool--mitt--.md).
+-   [Download the MITT software package](/previous-versions/dn919810(v=vs.85)). Install it on the system under test.
+-   Install MITT firmware on the MITT board. See [Get started with MITT](./get-started-with-mitt---.md).
 
 ## Hardware setup
 
@@ -53,7 +53,7 @@ The MITT software package includes tests for validating data transfers to a UART
 To modify the ACPI tables, install Windows Hardware Certification Kit (HCK) 8.1. Perform these steps on the system under test that has the UART controller:
 
 1.  Perform the system changes that are described under the Device.BusController.UART.HCKTestability requirement.
-2.  Update the ACPI table for UART test drivers based on the template provided under \\\\&lt;hckcontrollername&gt;\\Tests\\&lt;architecture&gt;\\UART\\Sample-UART.asl or use this example. You can use the [Microsoft ASL compiler](https://docs.microsoft.com/windows-hardware/drivers/bringup/microsoft-asl-compiler).
+2.  Update the ACPI table for UART test drivers based on the template provided under \\\\&lt;hckcontrollername&gt;\\Tests\\&lt;architecture&gt;\\UART\\Sample-UART.asl or use this example. You can use the [Microsoft ASL compiler](../bringup/microsoft-asl-compiler.md).
 
     ``` syntax
     Device(UART) {
@@ -117,9 +117,4 @@ Example 2: To run the tests at 3Mbps:
 ![spi schematic](images/spi-schematic.png)
 
  
-
- 
-
-
-
 

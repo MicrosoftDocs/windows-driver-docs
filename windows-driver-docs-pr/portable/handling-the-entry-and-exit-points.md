@@ -1,5 +1,5 @@
 ---
-Description: Handling the Entry and Exit Points
+description: Handling the Entry and Exit Points
 title: Handling the Entry and Exit Points
 ms.date: 04/20/2017
 ms.localizationpriority: medium
