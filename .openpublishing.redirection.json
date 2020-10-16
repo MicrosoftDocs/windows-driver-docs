@@ -8360,6 +8360,11 @@
                             "source_path":  "windows-driver-docs-pr/network/overview-of-virtualized-networking.md",
                             "redirect_url":  "/windows-hardware/drivers/network/overview-of-hyper-v",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/sensors/introduction-to-the-sensor-and-location-platform-in-windows.md",
+                            "redirect_url":  "/windows-hardware/drivers/sensors/index",
+                            "redirect_document_id":  false
                         }
                      ]
 }
