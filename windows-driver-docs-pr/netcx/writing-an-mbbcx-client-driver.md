@@ -21,14 +21,14 @@ INF files for MBBCx client drivers are the same as other NetAdapterCx client dri
 
 In addition to those tasks required by NetAdapterCx for [NetAdapter device initialization](device-and-adapter-initialization.md), an MBB client driver must also perform the following tasks in its [*EvtDriverDeviceAdd*](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) callback function:
 
-1. Call [**MBB_DEVICE_CONFIG_INIT**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbb_device_config_init) after calling [*NetAdapterDeviceInitConfig*](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterdeviceinitconfig) but before calling [*WdfDeviceCreate*](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE\_INIT**](../wdf/wdfdevice_init.md) object passed in by the framework.
+1. Call [**MBB_DEVICE_CONFIG_INIT**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbb_device_config_init) after calling [*NetDeviceInitConfig*](/windows-hardware/drivers/ddi/netdevice/nf-netdevice-netdeviceinitconfig) but before calling [*WdfDeviceCreate*](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate), referencing the same [**WDFDEVICE\_INIT**](../wdf/wdfdevice_init.md) object passed in by the framework.
 
 2. Call [**MbbDeviceInitialize**](/windows-hardware/drivers/ddi/mbbcx/nf-mbbcx-mbbdeviceinitialize) to register MBB device-specific callback functions using an initialized [**MBB_DEVICE_CONFIG**](/windows-hardware/drivers/ddi/mbbcx/ns-mbbcx-_mbb_device_config) structure and the WDFDEVICE object obtained from *WdfDeviceCreate*.
 
 The following example demonstrates how to initialize the MBB device. Error handling has been left out for clarity.
 
 ```C++
-    status = NetAdapterDeviceInitConfig(deviceInit);
+    status = NetDeviceInitConfig(deviceInit);
     status = MbbDeviceInitConfig(deviceInit);
 
     // Set up other callbacks such as Pnp and Power policy
