@@ -22,42 +22,13 @@ To publish a driver to Windows Update, [create a hardware submission](create-a-n
 
 4. In the **Properties** section, complete the following information:
 
-   <table>
-   <colgroup>
-   <col width="50%" />
-   <col width="50%" />
-   </colgroup>
-   <thead>
-   <tr class="header">
-   <th>Field</th>
-   <th>Description</th>
-   </tr>
-   </thead>
-   <tbody>
-   <tr class="odd">
-   <td><p><strong>Destination</strong></p></td>
-   <td><p>Select <strong>Publish to Windows Update</strong> to publish your driver to Windows Update. If you want to create a shared shipping label that allows you to share your driver with a partner, see <a href="sharing-drivers-with-your-partners.md" data-raw-source="[Share a driver with a partner](sharing-drivers-with-your-partners.md)">Share a driver with a partner</a>.</p>
-   <div class="alert">
-   <strong>Note</strong>  Shared drivers can only be shared by the organization that originally created it. An organization that receives a shared driver cannot share it again.
-   </div>
-   <div>
-     
-   </div></td>
-   </tr>
-   <tr class="even">
-   <td><p><strong>Specify the partner (if any) that is allowed visibility into this request</strong></p></td>
-   <td><p>Enter a partner that you want to have read-only permissions to your driver and shipping label. Use this field when you want a partner to be aware of this shipping label request, such as when you publish a driver on their behalf. For more information, see <a href="/previous-versions/mt786462(v=vs.85)" data-raw-source="[Publish a driver on behalf of a partner](/previous-versions/mt786462(v=vs.85))">Publish a driver on behalf of a partner</a>.</p></td>
-   </tr>
-   <tr class="odd">
-   <td><p><strong>Driver Delivery Options</strong></p></td>
-   <td><p>By default, drivers on Windows Update are marked as <strong>Automatic</strong>. This means that a driver is delivered automatically on upgrades and for every applicable system. When selecting only <strong>‘Automatically delivered during Windows Updates’</strong> the driver is defined as Dynamic Driver and will be delivered only during OS upgrades. By selecting only <strong>‘Automatically delivered to all applicable systems’</strong> will deliver the driver immediately to all applicable systems once it is released.</p>
-   <p>When selecting <strong>Manual</strong> in Windows version 1909 and below, the driver is automatically delivered only if the device does not have a driver installed already or only has a generic driver.</p>
-   <p>Starting with Windows 10 version 2004, drivers with a <strong>Manual</strong> shipping label will not be automatically delivered in any scenario. To access the best matching <strong>Optional/Manual</strong> driver a user can go to <strong>‘Settings > Update & Security > Windows Update > View optional updates > Driver updates‘</strong>.</p></td>
-   </tr>
-   </tbody>
-   </table>
+|Field|Description|
+|--- |--- |
+|**Destination**|Select **Publish to Windows Update** to publish your driver to Windows Update. If you want to create a shared shipping label that allows you to share your driver with a partner, see [Share a driver with a partner](sharing-drivers-with-your-partners.md). **Note** Shared drivers can only be shared by the organization that originally created it. An organization that receives a shared driver cannot share it again.|
+|**Specify the partner (if any) that is allowed visibility into this request**|Enter a partner that you want to have read-only permissions to your driver and shipping label. Use this field when you want a partner to be aware of this shipping label request, such as when you publish a driver on their behalf. For more information, see [Publish a driver on behalf of a partner](/previous-versions/mt786462(v=vs.85)).|
+|**Driver Delivery Options**|When the destination is Windows Update, the default is **Automatic**, which means that the driver is delivered automatically on upgrades and for every applicable system. If you select only the **Automatically delivered during Windows Upgrades** the driver is defined as a Dynamic Driver and is delivered only during OS upgrades. If you select only **Automatically delivered to all applicable systems**, Windows Update delivers the driver immediately to all applicable systems once it is released.<br/><br/>If you select **Manual** in Windows 10, version 1909 or earlier, the driver is automatically delivered only if the device does not have a driver installed already or only has a generic driver.<br/><br/>Starting in Windows 10, version 2004, drivers with a **Manual** shipping label is not automatically delivered. To access the best matching **Optional/Manual** driver, the user must go to **Settings > Update & Security > Windows Update > View optional updates > Driver updates**.|
 
-   ![screenshot that shows label name and publishing properties](images/label-name-and-properties-windows-update.png)
+![screenshot that shows label name and publishing properties](images/label-name-and-properties-windows-update.png)
 
 5. In the **Targeting** section, select the driver package that you want to publish.
 
