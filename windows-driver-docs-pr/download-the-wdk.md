@@ -83,6 +83,17 @@ The EWDK also requires the .NET Framework version 4.7.2. For more information ab
 
 * [Download the EWDK for Windows 10, version 2004](/legal/windows/hardware/enterprise-wdk-license-2019)
 
+> Did you know you can use Visual Studio interface with the build tools provided in the EWDK, here’s how:
+>1.	Mount EWDK ISO
+>2.	Run LaunchBuildEnv.cmd
+>3.	Type SetupVSEnv and press enter from the environment started up in step 2.
+>4.	Launch devenv.exe from the same environment, full path is needed. 
+>Example: "C:\Program Files (x86)\Microsoft Visual Studio\2019\\%Community|Professionial|Enterprise%\Common7\IDE\devenv.exe"
+>
+>Note: The Visual Studio major versions should match with what is in the EWDK, meaning Visual 2019 works with EWDK that contain VS16.X build tools. 
+
+
+
 ## Driver samples for Windows 10
 
 To download the driver samples, do one of the following:
