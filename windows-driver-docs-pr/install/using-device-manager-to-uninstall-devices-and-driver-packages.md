@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ms.custom: contperfq2
 ---
 
-# Uninstalling Devices and Driver Packages
+# Using Device Manager to Uninstall Devices and Driver Packages
 
 This page describes how to uninstall a device or driver on Windows 10.
 

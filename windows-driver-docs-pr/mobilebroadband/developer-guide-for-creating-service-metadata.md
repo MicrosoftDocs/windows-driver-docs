@@ -163,7 +163,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
 **To create a service metadata package**
 
-1.  Navigate to <https://sysdev.microsoft.com>.
+1.  Navigate to sysdev.microsoft.com.
 
 2.  Under the **Device metadata** heading, click **Create mobile broadband experience**.
 

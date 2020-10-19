@@ -47,7 +47,7 @@ Check the following before you submit your app:
 
 -   The **package name** should be the same as the one you specified when you created the app in [step 1](step-1--create-a-uwp-device-app.md). Note that the package name expires if the app is not submitted within one year.
 
--   The app must be fully compliant with all the [Microsoft Store Certification Requirements](https://go.microsoft.com/fwlink/p/?LinkId=273052).
+-   The app must be fully compliant with all the [Microsoft Store Certification Requirements](https://docs.microsoft.com/windows/uwp/publish/the-app-certification-process).
 
 -   The app must be suitable for all ages.
 
