@@ -48,7 +48,7 @@ See [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#p
 
 | Opcode  | NVMe Command                | StorNVMe Support      | Comments |
 | ------  | --------------------------  | --------------------- | -------- |
-| 0       | Flush                       | Internal Driver Usage, [IOCTL_SCSI_PASS_THROUGH](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-[IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through)) | SCSIOP_SYNCHRONIZE_CACHE for [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
+| 0       | Flush                       | Internal Driver Usage, [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) | SCSIOP_SYNCHRONIZE_CACHE for [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
 | 1       | Write                       | Internal Driver Usage, [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) | SCSIOP_WRITE/SCSIOP_WRITE16 for  [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
 | 2       | Read                        | Internal Driver Usage, [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) | SCSIOP_READ/SCSIOP_READ16 for [IOCTL_SCSI_PASS_THROUGH](/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through) |
 | 4       | Write Uncorrectable         |   | Currently not supported |
