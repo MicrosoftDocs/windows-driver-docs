@@ -67,7 +67,7 @@ The connector can support *alternate modes*. The alternate mode feature allows n
 
    A system with USB Type-C connectors has higher power limits, it can support up to 5V, 3A, 15W.
 
-   In addition, the connector can optionally support the *power delivery* feature as defined by the [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310) OEM . If the connector supports power delivery, a USB Type-C system can be a power source provider or a consumer and support up to 100W.
+   In addition, the connector can optionally support the *power delivery* feature as defined by the [USB Power Delivery](https://www.usb.org/sites/default/files/D2T2-1%20-%20USB%20Power%20Delivery.pdf) OEM . If the connector supports power delivery, a USB Type-C system can be a power source provider or a consumer and support up to 100W.
 
 * **Supports USB dual roles**
 
@@ -79,13 +79,13 @@ No. The operating system (or any Microsoft-provided software component) plays no
 
 ## Pre-OS charging with Type-C and PD
 
-Enabling pre-OS charging is owned by the OEM. You can choose to not implement [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310), and charge at USB Type-C power levels until you boot into the operating system.
+Enabling pre-OS charging is owned by the OEM. You can choose to not implement [USB Power Delivery](https://www.usb.org/sites/default/files/D2T2-1%20-%20USB%20Power%20Delivery.pdf), and charge at USB Type-C power levels until you boot into the operating system.
 
 ## Charging the phone when it is a USB host to enable docking scenarios like Continuum
 
 Here are a few things to consider:
 
-* You must to implement [USB Power Delivery](https://go.microsoft.com/fwlink/p/?LinkID=623310), so that power and data roles can be swapped independently.
+* You must to implement [USB Power Delivery](https://www.usb.org/sites/default/files/D2T2-1%20-%20USB%20Power%20Delivery.pdf), so that power and data roles can be swapped independently.
 * Your dock’s upstream port should be implemented as a Charging UFP, defined in the USB Type-C specification. For details, see section 4.8.4, version 1.1.
 * Your dock should request a DR\_Swap if it resolved to a DFP, or a PR\_Swap if it resolved to a UFP.
 
@@ -93,7 +93,7 @@ Here are a few things to consider:
 
 ## Windows 10 Mobile support of USB billboard devices
 
-Yes, if you connect the phone to a device that supports a USB Billboard, as per the [USB Device Class Definition for Billboard Devices specification](https://go.microsoft.com/fwlink/p/?linkid=620207), the user is notified. Your USB connector manager (UCM) client driver is not required to handle the notification. If your system does not recognize the alternate mode, do not enter the mode.
+Yes, if you connect the phone to a device that supports a USB Billboard, as per the [USB Device Class Definition for Billboard Devices specification](https://www.usb.org/document-library/billboard-device-class-spec-revision-121-and-adopters-agreement#:~:text=The%20USB%20Billboard%20Device%20Class%20definition%20describes%20the,to%20provide%20support%20details%20in%20a%20human-readable%20format.), the user is notified. Your USB connector manager (UCM) client driver is not required to handle the notification. If your system does not recognize the alternate mode, do not enter the mode.
 
 ## Support for USB Type-C on earlier versions of Windows
 
@@ -109,11 +109,11 @@ To test your implementation, follow the guidelines given in [USB Type-C manual i
 
 ## Conditions and UI for the different errors
 
-Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](https://go.microsoft.com/fwlink/?LinkId=526894).
+Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2#devicenotwork).
 
 ## Connecting a non-PD port to a PD provider and a PD consumer to a system that is not a PD provider
 
-The non-PD port attempts to charge the system by using USB Type-C current levels. For more information, see [USB 3.1 and USB Type-C specifications](https://go.microsoft.com/fwlink/p/?LinkId=699515).
+The non-PD port attempts to charge the system by using USB Type-C current levels. For more information, see [USB 3.1 and USB Type-C specifications](https://www.usb.org/usb-type-cr-cable-and-connector-specification).
 
 ## Connecting Thunderbolt, SuperMHL, or PCI express to a PC that does not support those capabilities
 
@@ -157,7 +157,7 @@ In Windows HLK for Windows 10, there are no USB Type-C specific tests. We recom
 
 ## UCSI
 
-USB Type-C Connector System Software Interface (UCSI) Specification describes the capabilities of the USB Type-C Connector System software Interface (UCSI), and explains the registers and data structures, for hardware component designers, system builders, and device driver developers. Get the specification from [this site](https://go.microsoft.com/fwlink/p/?LinkId=703713).
+[USB Type-C Connector System Software Interface (UCSI) Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/usb-type-c-ucsi-spec.html) describes the capabilities of the USB Type-C Connector System software Interface (UCSI), and explains the registers and data structures, for hardware component designers, system builders, and device driver developers.
 
 Microsoft provides an in-box driver with Windows, UcmUcsi.sys, that implements the features defined by the specification. This driver is intended for systems with embedded controllers.
 
@@ -171,4 +171,4 @@ We recommend running USB tests in Windows HLK for Windows 10. These tests are l
 
 ## VBus/VConn control and role switch operations handled by the UCM class extension
 
-The UCM class extension might get requests from the operating system to change data or power direction of the connector. When it gets those requests, it invokes client driver's implementation of [*EVT\_UCM\_CONNECTOR\_SET\_DATA\_ROLE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucmmanager/nc-ucmmanager-evt_ucm_connector_set_data_role) and [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ucmmanager/nc-ucmmanager-evt_ucm_connector_set_power_role) callback functions (if the connector implements PD). In the implementation, the client driver is expected control the VBUS and VCONN pins. For more information about those callback functions, see [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
+The UCM class extension might get requests from the operating system to change data or power direction of the connector. When it gets those requests, it invokes client driver's implementation of [*EVT\_UCM\_CONNECTOR\_SET\_DATA\_ROLE*](/windows-hardware/drivers/ddi/ucmmanager/nc-ucmmanager-evt_ucm_connector_set_data_role) and [*EVT\_UCM\_CONNECTOR\_SET\_POWER\_ROLE*](/windows-hardware/drivers/ddi/ucmmanager/nc-ucmmanager-evt_ucm_connector_set_power_role) callback functions (if the connector implements PD). In the implementation, the client driver is expected control the VBUS and VCONN pins. For more information about those callback functions, see [Write a USB Type-C connector driver](bring-up-a-usb-type-c-connector-on-a-windows-system.md).
