@@ -168,21 +168,26 @@ The template code contains several trace messages (TraceEvents) that can help yo
    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 
 2. In the debugger, type the following commands:
-  1.**.load Wmitrace**
 
-       Loads the Wmitrace.dll extension.
+```console
+.load Wmitrace
 
-  2.**.chain**
+.chain
 
-       Verify that the debugger extension is loaded.
+!wmitrace.searchpath +***&lt;TMF file location&gt;
+```
 
-  3.**!wmitrace.searchpath +***&lt;TMF file location&gt;*
+These commands:
 
-       Add the location of the TMF files to the debugger extension's search path.
+- Load the Wmitrace.dll extension.
+- Verfies that the debugger extension is loaded.
+- Adds the location of the TMF files to the debugger extension's search path.
 
-       The output resembles this:
+The output resembles this:
 
-       `Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE;c:\drivers\tmf'`
+```console
+    Trace Format search path is: 'C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE;c:\drivers\tmf
+```
 
 ### To configure your target computer for WPP tracing
 
@@ -190,17 +195,23 @@ The template code contains several trace messages (TraceEvents) that can help yo
 2. Open a **Command Window** and run as administrator.
 3. Type the following command:
 
+```console
    **tracelog -start MyTrace -guid \#c918ee71-68c7-4140-8f7d-c907abbcb05d -flag 0xFFFF -level 7-rt -kd**
+```
 
    The command starts a trace session named MyTrace.
 
    The **guid** argument specifies the GUID of the trace provider, which is the client driver. You can get the GUID from Trace.h in the Visual Studio 2019 project. As another option, you can type the following command and specify the GUID in a .guid file. The file contains the GUID in hyphen format:
 
+```console
    **tracelog -start MyTrace -guid c:\\drivers\\Provider.guid -flag 0xFFFF -level 7-rt -kd**
+```
 
    You can stop the trace session by typing the following command:
 
+```console
    **tracelog -stop MyTrace**
+```
 
 ### <a href="" id="deploy-the-driver-on-the-target-computer"></a>Step 6: Deploy the driver on the target computer
 
@@ -212,17 +223,18 @@ The template code contains several trace messages (TraceEvents) that can help yo
 6. Click **Ok**.
 7. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 
-**Note**  Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
+> [!NOTE]
+>Do *not* specify the hardware ID of your device under **Hardware ID Driver Update**. The hardware ID must be specified only in your driver's information (INF) file.
 
 ### <a href="" id="view-the-driver-in-device-manager"></a>Step 7: View the driver in Device Manager
 
 <a href="" id="devicemanager"></a>
 
-1.Enter the following command to open **Device Manager**.
+1. Enter the following command to open **Device Manager**.
 
     **devmgmt**
 
-2.Verify that **Device Manager** shows the following node.
+2. Verify that **Device Manager** shows the following node.
 
     **USB Device**
 
@@ -232,9 +244,9 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
 Verify that trace messages appear in the **Debugger Immediate Window** on the host computer.
 
-The output should be similar to the following.
+The output should be similar to the following:
 
-``` syntax
+```console
 [0]0744.05F0::00/00/0000-00:00:00.000 [MyUSBDriver_UMDF_]CMyDevice::OnPrepareHardware Entry
 [0]0744.05F0::00/00/0000-00:00:00.000 [MyUSBDriver_UMDF_]CMyDevice::OnPrepareHardware Exit
 [1]0744.05F0::00/00/0000-00:00:00.000 [MyUSBDriver_UMDF_]CMyDevice::CreateInstanceAndInitialize Entry
