@@ -309,7 +309,7 @@ Basic demo of the port switching sequence.</td>
 Connect to a port
 
 ```console
-    connexutil.exe /setport 1
+connexutil.exe /setport 1
 ```
 
 Alternatively use the port name as printed on the board:
@@ -326,8 +326,8 @@ connexutil.exe /setport 0
 
 Loop through all ports
 
-``` syntax
-for %p in (1 2 3 4) 
+```console
+for %p in (1 2 3 4)
 do (
     connexutil.exe /setport %p
     echo Confirm device on port %p

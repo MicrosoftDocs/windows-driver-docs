@@ -388,9 +388,9 @@ To enable ETW for USB 2.0 ports, see [ETW in the Windows 7 USB core stack](https
 To enable USB 3.0 logging, perform the following commands instead (or see [How to capture a USB event trace with Logman](how-to-capture-a-usb-event-trace.md)):
 
 ```console
-    logman start usbtrace -ets -o usbtrace.etl -nb 128 640 -bs 128
-    logman update usbtrace -ets -p Microsoft-Windows-USB-UCX Default
-    logman update usbtrace -ets -p Microsoft-Windows-USB-USBHUB3 Default
+logman start usbtrace -ets -o usbtrace.etl -nb 128 640 -bs 128
+logman update usbtrace -ets -p Microsoft-Windows-USB-UCX Default
+logman update usbtrace -ets -p Microsoft-Windows-USB-USBHUB3 Default
 ```
 
 After these are logs are captured, perform the test scenario.
@@ -398,7 +398,7 @@ After these are logs are captured, perform the test scenario.
 Stop the trace by using this command:
 
 ```console
-    logman stop usbtrace -ets
+logman stop usbtrace -ets
 ```
 
 ## <a href="" id="analyzer"></a>Using an Analyzer to confirm Selective Suspend
