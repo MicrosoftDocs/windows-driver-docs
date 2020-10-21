@@ -8,14 +8,12 @@ ms.localizationpriority: medium
 
 # Driver initialization methods
 
-
 A sensor driver must support both client and device initialization. The pseudocode demonstrates this using the following methods:
 
--   DriverClientInitialize()
--   DeviceSensorInitialize()
+- DriverClientInitialize()
+- DeviceSensorInitialize()
 
 ## Client Initialization
-
 
 The client initialization method has the following form.
 
@@ -54,7 +52,5 @@ DriverClientInitialize(sensorID)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
-
-
+[Sensor Driver Logic](/windows-hardware/drivers/sensors/driver-logic--pseudo-code-)

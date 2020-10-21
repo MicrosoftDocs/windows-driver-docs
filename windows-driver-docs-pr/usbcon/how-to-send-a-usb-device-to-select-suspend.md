@@ -7,15 +7,13 @@ ms.localizationpriority: medium
 
 # USB client driver verifier
 
-
 This topic describes the USB client driver verifier feature of the USB 3.0 driver stack that enables the client driver to test certain failure cases.
 
--   [What is the USB client driver verifier](#what-is-the-usb-client-driver-verifier)
--   [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
--   [Configuration settings for the USB client driver verifier](#configuration-settings-for-the-usb-client-driver-verifier)
+- [What is the USB client driver verifier](#what-is-the-usb-client-driver-verifier)
+- [How to enable the USB client driver verifier](#how-to-enable-the-usb-client-driver-verifier)
+- [Configuration settings for the USB client driver verifier](#configuration-settings-for-the-usb-client-driver-verifier)
 
 ## What is the USB client driver verifier
-
 
 The *USB client driver verifier* is a feature of the USB 3.0 driver stack, included in Windows 8. When the verifier is enabled, the USB driver stack fails or modifies certain operations performed by a client driver. Those failures simulate error conditions that might be otherwise difficult to find and can lead to undesirable results later. The simulated failures give you the opportunity to make sure that your driver is able to deal with failures gracefully. The client can deal with errors through error handling code or exercise a different code path.
 
@@ -23,20 +21,16 @@ For example, a client driver supports I/O operations through static streams of a
 
 **Important**  The USB client driver verifier only tests your driver against various xHCI controllers. It simulates some of the inherent 2.0 controller behaviors such as lack of chained MDL support. However, we recommend that you must test your client drivers with the USB 2.0 controllers and not use this tool as a replacement for the same.
 
- 
-
-The Windows Hardware Certification Kit includes an automated test that runs the simulated test cases. For more information, see [USB (USBDEX) Verifier Test](/previous-versions/windows/hardware/hck/hh998558(v=vs.85)).
+The Windows Hardware Certification Kit includes an automated test that runs the simulated test cases. For more information, see [USB (USBDEX) Verifier Test](https://docs.microsoft.com/previous-versions/windows/hardware/hck/hh998558(v=vs.85)).
 
 ## How to enable the USB client driver verifier
-
 
 In order to use the USB client driver verifier, enable it on your target computer on which running Windows 8. The target computer must have an xHCI controller to which the USB device is connected.
 
 The USB client driver verifier is automatically enabled when you enable the [Driver Verifier](../devtest/driver-verifier.md) for the client driver. Alternatively, you can enable the verifier by setting this registry entry.
 
-**Note**  Enabling [The Windows Driver Foundation (WDF) Verifier control application (WdfVerifier.exe)](../devtest/wdf-verifier-control-application.md) does not enable the USB client driver verifier automatically.
-
- 
+> [!NOTE]
+> Enabling [The Windows Driver Foundation (WDF) Verifier control application (WdfVerifier.exe)](/windows-hardware/drivers/devtest/wdf-verifier-control-application) does not enable the USB client driver verifier automatically.
 
 ```cpp
 HKEY_LOCAL_MACHINE
@@ -52,8 +46,7 @@ The **UsbVerifierEnabled** registry entry takes a DWORD value. When **UsbVerifie
 
 ## Configuration settings for the USB client driver verifier
 
-
-When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](/windows-hardware/drivers/ddi/_usbref/#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](../devtest/driver-verifier.md). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.
+When the verifier is enabled, the USB driver stack keeps track of URBs that the client driver allocates by calling **USBD\_xxxUrbAllocate** routines (see [USB Routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#client)). If the client driver leaks any URB, the USB driver stack uses that information to cause a bugcheck through the [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier). In that case, use the **!usbanalyze -v** command to determine the cause of the leak.
 
 Additionally and optionally, you can configure the USB client driver verifier to modify or fail specific routines and specify how often the routine must fail. To configure the verifier, set the registry entries as shown here:
 
@@ -202,11 +195,10 @@ Changes the value received in the <em>OutputBuffer</em> parameter when the clien
 </tbody>
 </table>
 
- 
-
 ## Related topics
-[**USBD\_CreateHandle**](/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)  
-[**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))  
+
+[**USBD\_CreateHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle)  
+[**USBD\_QueryUsbCapability**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))  
 [How to Open and Close Static Streams in a USB Bulk Endpoint](how-to-open-streams-in-a-usb-endpoint.md)  
 [How to Send Chained MDLs](how-to-send-chained-mdls.md)  
-[USB Diagnostics and Test Guide](usb-driver-testing-guide.md)
+[Microsoft USB Test Tool - MUTT Devices](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices)
