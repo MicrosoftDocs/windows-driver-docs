@@ -24,9 +24,9 @@ Typically when the USB driver stack fails to enumerate a device, the hub driver 
 * The request for the Configuration Descriptor failed.
 * The [USB Configuration Descriptor](usb-configuration-descriptors.md) was malformed and failed validation.
 
-In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725873(v=ws.10)?redirectedfrom=MSDN) in Device Manager.
+In Windows 7, unknown devices that fail enumeration are marked with failure [Code 43](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725873(v=ws.10)?redirectedfrom=MSDN) in Device Manager.
 
-If a device is marked with failure [Code 28](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc731268(v=ws.10)) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
+If a device is marked with failure [Code 28](/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc731268(v=ws.10)) in Device Manager, the device enumerated successfully but is still an unknown device. This failure code indicates that the device did not provide a Product ID string during enumeration and Windows could not find a matching INF for the device to install a driver.
 
 ## Starting the Event Trace Analysis
 
