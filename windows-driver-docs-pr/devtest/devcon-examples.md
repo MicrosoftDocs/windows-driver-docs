@@ -1171,7 +1171,7 @@ You can use this command to replace signed drivers on the system with alternate 
 devcon update c:\windows\inf\test.inf *PNP0501
 ```
 
-In response, DevCon displays a **Hardware Installation** warning explaining that the driver has not passed Windows Logo testing. If you click the **Continue Anyway** button on the dialog box, the installation continues.
+In response, DevCon displays a **Hardware Installation** warning explaining that the driver has not passed Windows Logo testing. If you select the **Continue Anyway** button on the dialog box, the installation continues.
 
 Then, DevCon displays the following success message.
 

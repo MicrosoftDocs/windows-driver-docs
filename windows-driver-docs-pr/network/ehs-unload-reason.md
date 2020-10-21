@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # eHS\_UNLOAD\_REASON enumeration
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **eHS\_UNLOAD\_REASON** enumeration indicates the reason for the plugin to get unloaded.

@@ -15,15 +15,9 @@ This reference section includes:
 
 [Debugger Engine Reference](debugger-engine-reference.md)
 
-[EngExtCpp Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/engextcpp/index)
+[EngExtCpp Extension Reference](/windows-hardware/drivers/ddi/engextcpp/index)
 
-[WdbgExts Extension Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdbgexts/)
+[WdbgExts Extension Reference](/windows-hardware/drivers/ddi/wdbgexts/)
 
-[Custom Analysis Debugger Extension Reference](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/mt809565(v=vs.85))
-
- 
-
-
-
-
+[Custom Analysis Debugger Extension Reference](/previous-versions/windows/hardware/previsioning-framework/mt809565(v=vs.85))
 

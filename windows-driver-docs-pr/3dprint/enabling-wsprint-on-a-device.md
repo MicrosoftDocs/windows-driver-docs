@@ -79,6 +79,6 @@ The following steps are a more detailed description of WSPrint 2.0 interactions:
 
 For more information on WSPrint 2.0, see the following resources:
 
-[Implementing Web Services on Devices for Printing](https://docs.microsoft.com/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing)
+[Implementing Web Services on Devices for Printing](/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing)
 
-[WSPrint 2.0 specification](https://docs.microsoft.com/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing#file-downloads)
+[WSPrint 2.0 specification](/windows-hardware/design/whitepapers/implementing-web-services-on-devices-for-printing#file-downloads)

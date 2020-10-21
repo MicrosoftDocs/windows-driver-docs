@@ -39,11 +39,11 @@ DECLARE_INTERFACE_(IDataModelConcept, IUnknown)
 }
 ```
 
-[InitializeObject](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelconcept-initializeobject)
+[InitializeObject](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelconcept-initializeobject)
 
 A data model can be registered as the canonical visualizer or as an extension for a given native type through the data model manager's RegisterModelForTypeSignature or RegisterExtensionForTypeSignature methods. When a model is registered via either of these methods, the data model is automatically attached as a parent model to any native object whose type matches the signature passed in the registration. At the point where that attachment is automatically made, the InitializeObject method is called on the data model. It is passed the instance object, the type signature which caused the attachment, and an enumerator which produces the type instances (in linear order) which matched any wildcards in the type signature. The data model implementation may use this method call to initialize any caches it requires. 
 
-[GetName](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelconcept-getname)
+[GetName](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idatamodelconcept-getname)
 
 If a given data model is registered under a default name via the RegisterNamedModel method, the registered data model's IDataModelConcept interface must return that name from this method. Note that it is perfectly legitimate for a model to be registered under multiple names (the default or best one should be returned here). A model may be completely unnamed (so long as it is not registered under a name). In such circumstances, the GetName method should return E_NOTIMPL. 
 
@@ -59,7 +59,7 @@ DECLARE_INTERFACE_(IStringDisplayableConcept, IUnknown)
 }
 ```
 
-[ToDisplayString](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-istringdisplayableconcept-todisplaystring)
+[ToDisplayString](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-istringdisplayableconcept-todisplaystring)
 
 The ToDisplayString method is called whenever a client wishes to convert an object into a string to display (to console, in the UI, etc...). Such a string conversion should not be used for the basis of additional programmatic manipulation. The string conversion itself may be deeply influenced by the metadata passed to the call. A string conversion should make every attempt to honor the PreferredRadix and PreferredFormat keys. 
 
@@ -88,23 +88,23 @@ DECLARE_INTERFACE_(IModelIterator, IUnknown)
 }
 ```
 
-IIterableConcept's [GetDefaultIndexDimensionality](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iiterableconcept-getdefaultindexdimensionality)
+IIterableConcept's [GetDefaultIndexDimensionality](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iiterableconcept-getdefaultindexdimensionality)
 
 The GetDefaultIndexDimensionality method returns the number of dimensions to the default index. If an object is not indexable, this method should return 0 and succeed (S_OK). Any object which returns a non-zero value from this method is declaring support for a protocol contract which states: 
 - The object supports the indexable concept via support of IIndexableConcept
 - The GetNext method of the IModelIterator returned from the GetIterator method of the iterable concept will return a unique default index for each produced element. Such index will have the number of dimensions as indicated here.
 - Passing the indicies returned from the GetNext method of the IModelIterator to the GetAt method on the indexable concept (IIndexableConcept) will refer to the same object that GetNext produced. The same value is returned.
 
-IIterableConcept's [GetIterator](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iiterableconcept-getiterator)
+IIterableConcept's [GetIterator](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iiterableconcept-getiterator)
 
 The GetIterator method on the iterable concept returns an iterator interface which can be used to iterate the object. The returned iterator must remember the context object that was passed to the GetIterator method. It will not be passed to methods on the iterator itself. 
 
 
-IModelIterator's [Reset](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodeliterator-reset)
+IModelIterator's [Reset](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodeliterator-reset)
 
 The Reset method on an iterator returned from the iterable concept will restore the position of the iterator to where it was when the iterator was first created (before the first element). While it is strongly recommended that iterator's support the Reset method, it is not required. An iterator can be the equivalent of a C++ input iterator and only allow a single pass of forward iteration. In such case, the Reset method may fail with E_NOTIMPL. 
 
-IModelIterator's [GetNext](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodeliterator-getnext)
+IModelIterator's [GetNext](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-imodeliterator-getnext)
 
 The GetNext method moves the iterator forward and fetches the next iterated element. If the object is indexable in addition to being iterable and this is indicated by the GetDefaultIndexDimensionality argument returning a non-zero value, this method may optionally return the default indicies to get back to the produced value from the indexer. Note that a caller may choose to pass 0/nullptr and not retrieve any indicies. It is considered illegal for the caller to request partial indicies (e.g.: less than the number produced by GetDefaultIndexDimensionality). 
 
@@ -197,15 +197,15 @@ if (SUCCEEDED(spObject->GetConcept(__uuidof(IIterableConcept), &spIterable, null
 ```
 
 
-[GetDimensionality](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iindexableconcept-getdimensionality)
+[GetDimensionality](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iindexableconcept-getdimensionality)
 
 The GetDimensionality method returns the number of dimensions that the object is indexed in. Note that if the object is both iterable and indexable, the implementation of GetDefaultIndexDimensionality must agree with the implementation of GetDimensionality as to how many dimensions the indexer has. 
 
-[GetAt](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iindexableconcept-getat)
+[GetAt](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iindexableconcept-getat)
 
 The GetAt method retrieves the value at a particular N-dimensional index from within the indexed object. An indexer of N-dimensions where N is the value returned from GetDimensionality must be supported. Note that an object may be indexable in different domains by different types (e.g.: indexable via both ordinals and strings). If the index is out of range (or could not be accessed), the method will return a failure; however, in such cases, the output object may still be set to an error object. 
 
-[SetAt](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iindexableconcept-setat)
+[SetAt](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-iindexableconcept-setat)
 
 The SetAt method attempts to set the value at a particular N-dimensional index from within the indexed object. An indexer of N-dimensions where N is the value returned from GetDimensionality must be supported. Note that an object may be indexable in different domains by different types (e.g.: indexable via both ordinals and strings). Some indexers are read-only. In such cases, E_NOTIMPL will be returned from any call to the SetAt method. 
 
@@ -223,7 +223,7 @@ DECLARE_INTERFACE_(IPreferredRuntimeTypeConcept, IUnknown)
 }
 ```
 
-[CastToPreferredRuntimeType](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ipreferredruntimetypeconcept-casttopreferredruntimetype)
+[CastToPreferredRuntimeType](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-ipreferredruntimetypeconcept-casttopreferredruntimetype)
 
 The CastToPreferredRuntimeType method is called whenever a client wishes to attempt to convert from a static type instance to the runtime type of that instance. If the object in question supports (through one of its attached parent models) the preferred runtime type concept, this method will be called to perform the conversion. This method may either return the original object (there is no conversion or it could not be analyzed), return a new instance of the runtime type, fail for non-semantic reasons (e.g.: out of memory), or return E_NOT_SET. The E_NOT_SET error code is a very special error code which indicates to the data model that the implementation does not want to override the default behavior and that the data model should fall back to whatever analysis is performed by the debug host (e.g.: RTTI analysis, examination of the shape of the virtual function tables, etc...) 
 
@@ -261,39 +261,39 @@ DECLARE_INTERFACE_(IDynamicConceptProviderConcept, IUnknown)
 }
 ```
 
-IDynamicKeyProviderConcept's [GetKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamickeyproviderconcept-getkey)
+IDynamicKeyProviderConcept's [GetKey](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamickeyproviderconcept-getkey)
 
 The GetKey method on a dynamic key provider is largely an override of the GetKey method on IModelObject. The dynamic key provider is expected to return the value of the key and any metadata associated with that key. In the event that the key is not present (but no other error occurs), the provider must return false in the hasKey parameter and succeed with S_OK. Failing this call is considered a failure to fetch a key and will explicitly halt the search for the key through the parent model chain. Returning false in hasKey and success will continue the search for the key. 
 Note that it is perfectly legal for GetKey to return a boxed property accessor as the key. This would be semantically identical to the GetKey method on IModelObject returning a property accessor. 
 
-IDynamicKeyProviderConcept's [SetKey](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamickeyproviderconcept-setkey)
+IDynamicKeyProviderConcept's [SetKey](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamickeyproviderconcept-setkey)
 
 The SetKey method on a dynamic key provider is effectively an override of the SetKey method on IModelObject. This sets a key in the dynamic provider. It is effectively the creation of a new property on the provider. Note that a provider which does not support any notion of something like the creation of expando properties should return E_NOTIMPL here. 
 
-IDynamicKeyProviderConcept's [EnumerateKeys](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamickeyproviderconcept-enumeratekeys)
+IDynamicKeyProviderConcept's [EnumerateKeys](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamickeyproviderconcept-enumeratekeys)
 
 The EnumerateKeys method on a dynamic key provider is effectively an override of the EnumerateKeys method on IModelObject. This enumerates all the keys in the dynamic provider. The returned enumerator has several restrictions that must be honored by the implementation: 
 
 - It must behave as a call to EnumerateKeys and not EnumerateKeyValues or EnumerateKeyReferences. It must return the key values not resolving any underlying property accessors (if such concept exists in the provider).
 - From the perspective of a single dynamic key provider, it is illegal to enumerate multiple keys of the same name that are physically distinct keys. This can happen on different providers that are attached through the parent model chain, but it cannot happen from the perspective of a single provider.
 
-IDynamicConceptProviderConcept's [GetConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-getconcept)
+IDynamicConceptProviderConcept's [GetConcept](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-getconcept)
 
 The GetConcept method on a dynamic concept provider is effectively an override of the GetConcept method on IModelObject. The dynamic concept provider must return an interface for the queried concept if it exists as well as any metadata associated with that concept. If the concept does not exist on the provider, that must be indicated via a false value being returned in the hasConcept argument and a successful return. Failure of this method is a failure to fetch the concept and will explicitly halt the search for the concept. Returning false for hasConcept and a successful code will continue the search for the concept through the parent model tree. 
 
-IDynamicConceptProviderConcept's [SetConcept](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-setconcept)
+IDynamicConceptProviderConcept's [SetConcept](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-setconcept)
 
 The SetConcept method on a dynamic concept provider is effectively an override of the SetConcept method on IModelObject. The dynamic provider will assign the concept. This may make the object iterable, indexable, string convertible, etc... Note that a provider which does not allow the creation of concepts on it should return E_NOPTIMPL here. 
 
-IDynamicConceptProviderConcept's [NotifyParent](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifyparent)
+IDynamicConceptProviderConcept's [NotifyParent](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifyparent)
 
 The NotifyParent call on a dynamic concept provider is used by the core data model to inform the dynamic provider of the single parent model which is created to allow for bridging the "multiple parent models" paradigm of the data model to more dynamic languages. Any manipulation of that single parent model will cause further notifications to the dynamic provider. Note that this callback is made immediately upon assignment of the dynamic concept provider concept. 
 
-IDynamicConceptProviderConcept's [NotifyParentChange](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifyparentchange)
+IDynamicConceptProviderConcept's [NotifyParentChange](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifyparentchange)
 
 The NotifyParent method on a dynamic concept provider is a callback made by the core data model when a static manipulation of the object's single parent model is made. For any given parent model added, this method will be called a first time when said parent model is added and a second time if/when said parent model is removed. 
 
-IDynamicConceptProviderConcept's [NotifyDestruct](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifydestruct)
+IDynamicConceptProviderConcept's [NotifyDestruct](/windows-hardware/drivers/ddi/dbgmodel/nf-dbgmodel-idynamicconceptproviderconcept-notifydestruct)
 
 The NotifyDestruct method on a dynamic concept provider is a callback made by the core data model at the start of destruction of the object which is a dynamic concept provider. It provides additional clean up opportunities to clients which require it. 
 
@@ -317,11 +317,4 @@ This topic is part of a series which describes the interfaces accessible from C+
 
 
  
-
- 
-
-
-
-
-
 

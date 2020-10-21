@@ -25,7 +25,7 @@ This is to detect machines that have potentially bricked.
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum instances**|250|
 |**Passing criteria**|> 50%|
-|**Measure ID**|23095170|
+|**Measure ID**|23095170 or 23260732|
 
 ## Calculation
 

@@ -43,6 +43,4 @@ Use the following steps to test-sign a driver package using a test certificate:
 
 4.  Sign the "FabrikamPrintDriverV4 Package" with the pfx file you created in step 2. The other projects do not need to be driver signed as this step is what creates the package.
 
-For more information, see [How to Test-Sign a Driver Package](https://docs.microsoft.com/windows-hardware/drivers/install/how-to-test-sign-a-driver-package).
-
-
+For more information, see [How to Test-Sign a Driver Package](../install/how-to-test-sign-a-driver-package.md).

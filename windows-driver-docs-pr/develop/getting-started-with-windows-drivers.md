@@ -27,19 +27,19 @@ When Windows Drivers become a certification option, the following requirements w
 - Compliant with [DCH Design Principles](dch-principles-best-practices.md).
 - Follow the principles of [Driver Package Isolation](driver-isolation.md).
 - Follow [API Layering Requirements](api-layering.md).
-- Certified with [Windows Hardware Compatibility Program Certification Process](https://docs.microsoft.com/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](https://docs.microsoft.com/windows-hardware/test/hlk/). Note that the Windows Hardware Compatibility Program Certification Process requirements apply to both KMDF and UMDF drivers.
+- Certified with [Windows Hardware Compatibility Program Certification Process](/windows-hardware/design/compatibility/whcp-certification-process) using the [Hardware Lab Kit](/windows-hardware/test/hlk/). Note that the Windows Hardware Compatibility Program Certification Process requirements apply to both KMDF and UMDF drivers.
 
 ## Windows Drivers vs. Windows Desktop Drivers
 
 The following table summarizes the distinctions above:
 
-|                                                                     |Windows Drivers|Windows Desktop Drivers |
+|     Feature                                                         |Windows Drivers|Windows Desktop Drivers |
 | --------------------------------------------------------------------|:-------------:|:----------------------:|
 | Run on Windows 10 Desktop                                           | Yes           | Yes                    |
 | Run on Windows 10X                                                  | Yes           | No                     |
 | Must be certified with WHCP                                         | Yes           | No                     |
 | WDK & HLK are primary vehicles for developing and certifying drivers| Yes           | Yes                    |
-| Reliability and serviceability requirements     | Yes           | No                     |
+| Adhere to stricter reliability and serviceability requirements (e.g. driver package isolation)     | Yes           | No                     |
 
 
 While it won't be required for a driver running only on Windows 10 Desktop to meet the additional requirements for a Windows Driver, doing so will enhance driver serviceability and reliability, as well as preparing the driver for possible future certification on Windows 10X.

@@ -10,9 +10,9 @@ ms.localizationpriority: medium
 # Calling Extensions and Extension Functions
 
 
-To load an extension library (or to obtain a handle for an already loaded extension library), use [**AddExtension**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-addextension). An extension library can be unloaded with [**RemoveExtension**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-removeextension).
+To load an extension library (or to obtain a handle for an already loaded extension library), use [**AddExtension**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-addextension). An extension library can be unloaded with [**RemoveExtension**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-removeextension).
 
-Extension commands can be called using [**CallExtension**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-callextension).
+Extension commands can be called using [**CallExtension**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-callextension).
 
 ### <span id="extension_functions"></span><span id="EXTENSION_FUNCTIONS"></span>Extension Functions
 
@@ -22,7 +22,7 @@ They are not extension commands and are not available via debugger commands. Ext
 
 Extension functions are identified within extension libraries by the "\_EFN\_" prepended to their names.
 
-To obtain a pointer to an extension function, use [**GetExtensionFunction**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getextensionfunction). The type of this function pointer should match the prototype of the extension function. The extension function can now be called just like any other function pointer in C.
+To obtain a pointer to an extension function, use [**GetExtensionFunction**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getextensionfunction). The type of this function pointer should match the prototype of the extension function. The extension function can now be called just like any other function pointer in C.
 
 ### <span id="example"></span><span id="EXAMPLE"></span>Example
 
@@ -55,10 +55,4 @@ if (g_DebugControl->
 ```
 
  
-
- 
-
-
-
-
 

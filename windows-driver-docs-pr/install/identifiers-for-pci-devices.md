@@ -36,31 +36,32 @@ PCI\\VEN_v(4)&DEV_d(4)&CC_c(2)s(2)
 
 Where:
 
--   v(4) is the four-character PCI SIG-assigned identifier for the vendor of the device, where the term *device*, following PCI SIG usage, refers to a specific PCI chip.
+- v(4) is the four-character PCI SIG-assigned identifier for the vendor of the device, where the term *device*, following PCI SIG usage, refers to a specific PCI chip.
 
--   d(4) is the four-character vendor-defined identifier for the device.
+- d(4) is the four-character vendor-defined identifier for the device.
 
--   s(4) is the four-character vendor-defined subsystem identifier.
+- s(4) is the four-character vendor-defined subsystem identifier.
 
--   n(4) is the four-character PCI SIG-assigned identifier for the vendor of the subsystem.
+- n(4) is the four-character PCI SIG-assigned identifier for the vendor of the subsystem.
 
--   r(2) is the two-character revision number.
+- r(2) is the two-character revision number.
 
--   c(2) is the two-character base class code from the configuration space.
+- c(2) is the two-character base class code from the configuration space.
 
--   s(2) is the two-character subclass code.
+- s(2) is the two-character subclass code.
 
--   p(2) is the Programming Interface code.
+- p(2) is the Programming Interface code.
 
-The following is an example of a hardware ID for a display adapter on a portable computer. The format of this hardware ID is PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)&REV_r(2).
+The following is an example of a hardware ID for a display adapter on a portable computer. The format of this hardware ID is PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)&REV_r(2):
 
-    PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000&REV_04
+`PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000&REV_04`
 
 The following is the hardware ID for the display adapter in the previous example with the revision information removed. The format of this hardware ID is PCI\\VEN_<em>v(4)</em>&DEV_<em>d(4)</em>&SUBSYS_*s(4)n(4).*
 
-    PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000
+`PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000`
 
-**Note** In Windows 10, some IDs that previously appeared in the Hardware IDs list now appear in the list of Compatible IDs.
+>[!NOTE]
+>In Windows 10, some IDs that previously appeared in the Hardware IDs list now appear in the list of Compatible IDs.
 
 ## Reporting compatible IDs
 
@@ -88,11 +89,11 @@ PCI\\CC_c(2)s(2)\`
 
 Where:
 
--   The definitions of the following fields in a compatible ID are identical to the definitions of the corresponding fields that used in a hardware ID: *v(4)*, *r(2)*, *c(2)*, *s(2)*, and *p(2)*.
+- The definitions of the following fields in a compatible ID are identical to the definitions of the corresponding fields that used in a hardware ID: *v(4)*, *r(2)*, *c(2)*, *s(2)*, and *p(2)*.
 
--   *d(4)* in the DEV_*d(4)* field is the four-character vendor-defined identifier for the device.
+- *d(4)* in the DEV_*d(4)* field is the four-character vendor-defined identifier for the device.
 
--   *d(4)* in the DT_*d(4)* field is the four-character device type, as specified in the PCI Express Base specification.
+- *d(4)* in the DT_*d(4)* field is the four-character device type, as specified in the PCI Express Base specification.
 
 For the example of a display adapter on a portable computer, any of the following compatible IDs would match the information in an INF file for that adapter:
 
@@ -117,11 +118,3 @@ PCI\\CC_030000
 
 PCI\\CC_0300
 ```
- 
-
- 
-
-
-
-
-

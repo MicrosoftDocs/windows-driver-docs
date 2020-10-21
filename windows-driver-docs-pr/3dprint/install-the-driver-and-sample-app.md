@@ -121,12 +121,7 @@ By default, Windows blocks port 80 on a machine, so you will need to update Wind
 
 Ad-hoc discovery can be performed by implementing a UDP server that listens to discovery events on port 3702.
 
-For more information on the exchange sequence, see [Discovery and Metadata Exchange Message Patterns](https://docs.microsoft.com/windows/desktop/WsdApi/discovery-and-metadata-exchange-message-patterns).
+For more information on the exchange sequence, see [Discovery and Metadata Exchange Message Patterns](/windows/desktop/WsdApi/discovery-and-metadata-exchange-message-patterns).
 
  
-
- 
-
-
-
 

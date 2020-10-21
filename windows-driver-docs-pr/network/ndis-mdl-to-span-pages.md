@@ -36,7 +36,7 @@ Return value
 Remarks
 -------
 
-The **NDIS\_MDL\_TO\_SPAN\_PAGES** macro provides an MDL-based version of the [**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff556922(v=vs.85)) function.
+The **NDIS\_MDL\_TO\_SPAN\_PAGES** macro provides an MDL-based version of the [**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](/previous-versions/windows/hardware/network/ff556922(v=vs.85)) function.
 
 Requirements
 ------------
@@ -69,12 +69,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff556922(v=vs.85))
+[**NDIS\_BUFFER\_TO\_SPAN\_PAGES**](/previous-versions/windows/hardware/network/ff556922(v=vs.85))
 
  
-
- 
-
-
-
 

@@ -68,7 +68,7 @@ Package (2) {"UID", 0}, // Property 2: UID of the externally facing port on plat
 
 ## Identifying internal PCIe ports accessible to users and requiring DMA protection
 
-This ACPI object enables the operating system to identify internal PCIe hierarchies that are easily accessible by users (such as, Laptop M.2 PCIe slots accessible by way of a latch) and require protection by the OS [Kernel DMA Protection](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) mechanism. This object must be implemented in the Root Port ACPI device scope.
+This ACPI object enables the operating system to identify internal PCIe hierarchies that are easily accessible by users (such as, Laptop M.2 PCIe slots accessible by way of a latch) and require protection by the OS [Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt) mechanism. This object must be implemented in the Root Port ACPI device scope.
 
 Key items of note:
 
@@ -76,9 +76,9 @@ Key items of note:
 
 - Kernel DMA Protection must be enabled in system BIOS/UEFI, in order for the OS to parse the \_DSD and apply necessary protections to the PCI port.
 
-- Drivers of devices connected to this port MUST support [DMA remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers), otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard).
+- Drivers of devices connected to this port MUST support [DMA remapping](./enabling-dma-remapping-for-device-drivers.md), otherwise Windows 10 may block these devices from operating until a user logs in or indefinitely, depending on [DMAGuard Policy](/windows/client-management/mdm/policy-csp-dmaguard).
 
-```asl
+```ASL
 Name (_DSD, Package () {  
 
 ToUUID("70D24161-6DD5-4C9E-8070-705531292865"),
@@ -92,7 +92,7 @@ Package (2) {"UID", 0}, // Property 2: UID of the PCIe port on platform, range i
 
 ## Identifying PCIe ports supporting D3_COLD_AUX_POWER ECN Interface
 
-This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxiliary power in D3, above the default 375mA @3.3V. Any PCI port or bridge defining this DSD *must* guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds.
+This ACPI object enables the operating system to identify PCIe ports that support [D3_COLD_AUX_POWER ECN interface](/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface), which allows PCIe devices to request from the platform additional auxiliary power in D3, above the default 375mA @3.3V. Any PCI port or bridge defining this DSD *must* guarantee that when programming back the previously negotiated auxiliary power value, the operation succeeds.
 
 ```asl
 Name (_DSD, Package () {
@@ -108,8 +108,8 @@ Name (_DSD, Package () {
 
 [Enabling PCI Express Native Control in Windows](enabling-pci-express-native-control.md)
 
-[Kernel DMA Protection for Thunderbolt 3](https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
+[Kernel DMA Protection for Thunderbolt 3](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)
 
-[Enabling DMA Remapping for device drivers](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)
+[Enabling DMA Remapping for device drivers](./enabling-dma-remapping-for-device-drivers.md)
 
-[D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface)
+[D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure](/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_aux_power_and_timing_interface)

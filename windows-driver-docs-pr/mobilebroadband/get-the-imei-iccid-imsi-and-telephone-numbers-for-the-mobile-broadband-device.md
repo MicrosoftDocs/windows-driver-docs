@@ -63,14 +63,7 @@ account.currentDeviceInformation.mobileEquipmentId
 ## <span id="related_topics"></span>Related topics
 
 
-[Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
+[Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)
 
  
-
- 
-
-
-
-
-
 

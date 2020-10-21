@@ -1,7 +1,7 @@
 ---
 title: Microsoft extensions to USB Video Class 1.5 specification
 description: Describes Microsoft extensions to the USB Video Class 1.5 Specification that enables new controls as well as the capability to carry well-defined frame-metadata in a standard format.
-ms.date: 04/03/2019
+ms.date: 06/19/2020
 ms.localizationpriority: medium
 ms.custom: rs5, 19H1
 ---
@@ -12,7 +12,7 @@ ms.custom: rs5, 19H1
 
 ### 1.1 Summary
 
-Microsoft extensions to the [USB Video Class specification](https://go.microsoft.com/fwlink/p/?linkid=2085170) enable new controls as well as the capability to carry well-defined frame-metadata in a standard format.
+Microsoft extensions to the [USB Video Class specification](https://www.usb.org/document-library/video-class-v15-document-set) enable new controls as well as the capability to carry well-defined frame-metadata in a standard format.
 
 ### 1.2 Architecture Decisions
 
@@ -34,7 +34,7 @@ UVC metadata will only support system allocated memory. VRAM or DX surfaces will
 
 ##### 2.2.1.1 Still Image Capture – Method 2
 
-Some existing UVC devices may not support Method 2 described in section 2.4.2.4 (Still Image Capture) of the *UVC 1.5 Class specification.pdf* that can be downloaded at the [USB Video Class specification](https://go.microsoft.com/fwlink/p/?linkid=2085170) web site.
+Some existing UVC devices may not support Method 2 described in section 2.4.2.4 (Still Image Capture) of the *UVC 1.5 Class specification.pdf* that can be downloaded at the [USB Video Class specification](https://www.usb.org/document-library/video-class-v15-document-set) web site.
 
 In Windows 10, version 1607 and earlier, the capture pipeline did not leverage Method 2, even if a device advertised support for it per the UVC 1.5 spec.
 
@@ -70,7 +70,7 @@ HKR,,EnableDependentStillPinCapture,0x00010001,0x00000001
 
 #### 2.2.2 Extension Unit Controls
 
-Microsoft’s extension to the **USB Video Class specification** for enabling new controls is done through an extension unit identified by GUID MS_CAMERA_CONTROL_XU (referred to as Microsoft-XU).
+Microsoft's extension to the **USB Video Class specification** for enabling new controls is done through an extension unit identified by GUID MS_CAMERA_CONTROL_XU (referred to as Microsoft-XU).
 
 ```cpp
 // {0F3F95DC-2632-4C4E-92C9-A04782F43BC8}
@@ -106,7 +106,7 @@ GET_INFO request shall report such control as an Autoupdate Control (for example
 
 For such control, a SET_CUR request can be issued to set a new value (a SET_CUR(NORMAL) request wherein **bmOperationFlags:D0** bit is set to 0) or cancel a previous SET_CUR(NORMAL) request (a SET_CUR(CANCEL) request wherein **bmOperationFlags:D0** bit is set to 1). A SET_CUR request should be completed by the device immediately as soon as the request is received (even though the hardware is not configured or converged to the new settings requested). For each SET_CUR(NORMAL) request, the device produces a corresponding Control Change interrupt for this control raised when the new settings have been applied or when a SET_CUR(CANCEL) request arrives; until this interrupt arrives, the SET_CUR(NORMAL) request will be considered to be in-progress. When a SET_CUR(NORMAL) request is in-progress, additional SET_CUR(NORMAL) requests for this particular control shall result in a failure. A SET_CUR(CANCEL) request shall always succeed. If there is nothing to cancel, then the device just does nothing.
 
-The Control Change interrupt payload shall have the bit **bmOperationFlags:D0** set to 0 if the settings specified by SET_CUR(NORMAL) were applied (i.e. convergence happened) and set to 1 if the settings were not applied because of a SET_CUR(CANCEL) request that came after the SET_CUR(NORMAL) request (i.e. convergence hasn’t happened yet).
+The Control Change interrupt payload shall have the bit **bmOperationFlags:D0** set to 0 if the settings specified by SET_CUR(NORMAL) were applied (i.e. convergence happened) and set to 1 if the settings were not applied because of a SET_CUR(CANCEL) request that came after the SET_CUR(NORMAL) request (i.e. convergence hasn't happened yet).
 
 ##### 2.2.2.2 Focus Control
 
@@ -267,7 +267,7 @@ The following applies:
 
 The IR Torch must emit the [**MF_CAPTURE_METADATA_FRAME_ILLUMINATION**](standardized-extended-controls-.md) attribute for every frame.  It can provide this through a Device MFT or by including a **MetadataId_FrameIllumination** attribute in the metadata payload from the camera.  See section 2.2.3.4.4.  
 
-This metadata’s sole purpose is to indicate whether a frame is illuminated or not.  This is the same metadata required by the [**KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE**](ksproperty-cameracontrol-extended-faceauth-mode.md) DDI and  the **MSXU_FACE_AUTHENTICATION_CONTROL** defined in section 2.2.2.7.  
+This metadata's sole purpose is to indicate whether a frame is illuminated or not.  This is the same metadata required by the [**KSPROPERTY_CAMERACONTROL_EXTENDED_FACEAUTH_MODE**](ksproperty-cameracontrol-extended-faceauth-mode.md) DDI and  the **MSXU_FACE_AUTHENTICATION_CONTROL** defined in section 2.2.2.7.  
 
 #### 2.2.3 Metadata
 
@@ -360,7 +360,7 @@ The header length field specifies the length of the header, in bytes.
 
 *PTS: Presentation Time Stamp, Size: 4 bytes, Value: Number*
 
-- The PTS field is present when the PTS bit is set in the BFH[0] field. See Section 2.4.3.3 “Video and Still Image Payload Headers” in the *USB Device Class Definition for Video Devices* specification.
+- The PTS field is present when the PTS bit is set in the BFH[0] field. See Section 2.4.3.3 "Video and Still Image Payload Headers" in the *USB Device Class Definition for Video Devices* specification.
 
 *SCR: Source Clock Reference, Size: 6 bytes, Value: Number*
 
@@ -380,7 +380,7 @@ The metadata buffer provided to the user mode component would have a metadata it
 
 ##### 2.2.3.4 Metadata format for standard metadata identifiers
 
-The firmware can choose whether or not to produce metadata corresponding to an identifier. If the firmware chooses to produce metadata corresponding to an identifier, then that identifier’s metadata shall be present on all frames emitted by the firmware.
+The firmware can choose whether or not to produce metadata corresponding to an identifier. If the firmware chooses to produce metadata corresponding to an identifier, then that identifier's metadata shall be present on all frames emitted by the firmware.
 
 ###### 2.2.3.4.1 MetadataId_CaptureStats
 
@@ -448,11 +448,11 @@ The **SensorFramerate** field contains the measured sensor readout rate in hertz
 
 ###### 2.2.3.4.2 MetadataId_CameraExtrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](https://docs.microsoft.com/windows/desktop/api/mfapi/ns-mfapi-_mfcameraextrinsics) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](https://docs.microsoft.com/windows/desktop/api/mfapi/ns-mfapi-_mfcameraextrinsic_calibratedtransform) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFCameraExtrinsics](/windows/win32/api/mfapi/ns-mfapi-mfcameraextrinsics) structure followed by zero or more [MFCameraExtrinsic_CalibratedTransform](/windows/win32/api/mfapi/ns-mfapi-mfcameraextrinsic_calibratedtransform) structures. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.3 MetadataId_CameraIntrinsics
 
-The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](https://docs.microsoft.com/windows/desktop/api/mfapi/ns-mfapi-_mfpinholecameraintrinsics) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
+The metadata format for this identifier involves the standard KSCAMERA_METADATA_ITEMHEADER followed by a byte-array payload. The payload should align to a [MFPinholeCameraIntrinsics](/windows/win32/api/mfapi/ns-mfapi-mfpinholecameraintrinsics) structure. The payload must be 8-byte aligned and all unused bytes shall occur at the end of the payload and be set to 0.
 
 ###### 2.2.3.4.4 MetadataId_FrameIllumination
 

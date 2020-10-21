@@ -1,5 +1,5 @@
 ---
-Description: Supported Property Retrieval
+description: Supported Property Retrieval
 title: Supported Property Retrieval
 ms.date: 04/20/2017
 ms.localizationpriority: medium

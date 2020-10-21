@@ -17,7 +17,7 @@ This topic describes optimizations that AV products can use to avoid redundant s
 
 ## Container overview
 
-The Windows Container feature is designed to simplify the distribution and deployment of applications. For more information, see the introduction to [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/about_overview).
+The Windows Container feature is designed to simplify the distribution and deployment of applications. For more information, see the introduction to [Windows Containers](/virtualization/windowscontainers/about/about_overview).
 
 Containers are constructed from any number of package layers. The Windows base OS package forms the first layer.
 
@@ -82,7 +82,7 @@ In the past, we recommended using the `LayerRootLocations` registry key to get t
 
 The registry location that had been used to register package layers:
 
-`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Virtualization\LayerRootLocations`
+`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Virtualization\LayerRootLocations`
 
 ## Benefits and risks
 

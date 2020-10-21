@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 The SIO\_ADDRESS\_LIST\_CHANGE socket I/O control operation notifies a WSK application when there has been a change to the list of local transport addresses for a socket's address family. This socket I/O control operation applies to all socket types.
 
-To be notified when there has been a change to the list of local transport addresses for a socket's address family, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To be notified when there has been a change to the list of local transport addresses for a socket's address family, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -85,9 +85,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

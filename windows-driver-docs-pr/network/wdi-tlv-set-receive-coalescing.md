@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_SET\_RECEIVE\_COALESCING
 
 
-WDI\_TLV\_SET\_RECEIVE\_COALESCING is a TLV that contains received packet coalescing parameters for [OID\_WDI\_SET\_RECEIVE\_COALESCING](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-receive-coalescing).
+WDI\_TLV\_SET\_RECEIVE\_COALESCING is a TLV that contains received packet coalescing parameters for [OID\_WDI\_SET\_RECEIVE\_COALESCING](./oid-wdi-set-receive-coalescing.md).
 
 ## TLV Type
 
@@ -58,9 +58,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

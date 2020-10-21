@@ -58,7 +58,7 @@ KTM provides functions that transactional clients can call. These functions enab
 KTM also provides functions that resource managers can call. These functions enable resource managers to enlist in transactions so that they can receive notifications about transactions. After a resource manager enlists in a transaction, it can receive a notification when a transactional client is ready to commit or roll back the transaction, or when a recovery operation occurs.
 
 <a href="" id="ktm-term-log-stream"></a>**log stream**  
-A *log stream* is a recorded history of the events that have happened to transactions. KTM maintains a log stream by using the [Common Log File System](using-common-log-file-system.md) (CLFS). KTM records state changes for each transaction so that it can support rollback and recovery operations when they are necessary.
+A *log stream* is a recorded history of the events that have happened to transactions. KTM maintains a log stream by using the [Common Log File System](introduction-to-the-common-log-file-system.md) (CLFS). KTM records state changes for each transaction so that it can support rollback and recovery operations when they are necessary.
 
 Resource managers must also use a log stream to record data and operations.
 

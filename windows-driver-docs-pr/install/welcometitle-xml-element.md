@@ -16,7 +16,7 @@ ms.date: 10/17/2018
 # welcomeTitle XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **welcomeTitle** XML element customizes the bold text of the welcome title that appears at the top of the DPInst welcome page.
 
@@ -83,11 +83,4 @@ If a **welcomeTitle** element is not specified, DPInst displays the default welc
 [**language**](language-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

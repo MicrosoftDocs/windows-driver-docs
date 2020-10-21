@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Microsoft distributes thousands of drivers via the Windows Update service, servicing millions of machines and users each month. Safely delivering the right driver at scale requires evaluating driver quality through real-world verification during distribution.
 
-This document is a reference to publishers and authors of Windows device drivers.  Publishers and authors can better understand the criteria Microsoft uses in evaluating driver quality during the [driver flighting process](https://docs.microsoft.com/windows-hardware/drivers/dashboard/driver-flighting). Becoming familiar with the driver quality criteria will help driver publishers understand how Microsoft reached a decision about releasing their driver.
+This document is a reference to publishers and authors of Windows device drivers.  Publishers and authors can better understand the criteria Microsoft uses in evaluating driver quality during the [driver flighting process](./driver-flighting.md). Becoming familiar with the driver quality criteria will help driver publishers understand how Microsoft reached a decision about releasing their driver.
 
 Keywords in **bold** have corresponding definitions in the glossary.
 
@@ -66,8 +66,6 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 
 [Audio measures](audio-measures.md)
 
-[Bluetooth measures](bluetooth-measures.md)
-
 [Camera measures](camera-measures.md)
 
 [Fingerprint measures](fingerprint-measures.md)
@@ -77,5 +75,7 @@ Microsoft constructs each measure differently, with a unique calculation logic, 
 [Graphics measures](graphics-measures.md)
 
 [Wi-Fi measures](wi-fi-measures.md)
+
+[Cohort Failure Report](IDR-cohort-report.md)
 
 [Glossary](measures-glossary.md)

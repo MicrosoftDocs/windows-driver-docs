@@ -25,13 +25,13 @@ This guide includes the following sections:
 
 [NDIS version guide](ndis-version-guide.md)
 
-[NDIS Core Functionality](ndis-core-functionality2.md)
+[NDIS Core Functionality](roadmap-for-developing-ndis-miniport-drivers.md)
 
-[Scalable Networking](scalable-networking2.md)
+[Scalable Networking](header-data-split.md)
 
 [Virtualized Networking](virtualized-networking.md)
 
-[Wireless Networking](wireless-networking2.md)
+[Wireless Networking](wifi-universal-driver-model.md)
 
 [Network Module Registrar](network-module-registrar2.md)
 
@@ -47,7 +47,7 @@ This guide includes the following sections:
 
 [Kernel Mode SDK Topics for Network Drivers](kernel-mode-sdk-topics-for-network-drivers.md)
 
-[Previous Versions of Network Drivers](previous-versions-of-network-drivers.md)
+[Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)
  
 
  

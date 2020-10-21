@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="directsound_stream_data_format"></span><span id="DIRECTSOUND_STREAM_DATA_FORMAT"></span>
 
 
-This example uses a [**KSDATAFORMAT\_DSOUND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_dsound) structure to describe the data format of a DirectSound stream.
+This example uses a [**KSDATAFORMAT\_DSOUND**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_dsound) structure to describe the data format of a DirectSound stream.
 
 ```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT_DSOUND);
@@ -36,9 +36,4 @@ This example uses a [**KSDATAFORMAT\_DSOUND**](https://docs.microsoft.com/window
 ```
 
  
-
- 
-
-
-
 

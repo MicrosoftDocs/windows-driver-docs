@@ -1,5 +1,5 @@
 ---
-Description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
+description: Provides an example of how to use USB ETW and Netmon to troubleshoot a USB device that Windows does not recognize.
 title: Case Study - Troubleshooting an unknown USB device
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -37,7 +37,7 @@ Because this is a device failure, we recommend that you use Netmon with the USB 
 1. Run Netmon, click **File -&gt; Open -&gt; Capture**, and then select the file.
 2. Select the first event in the **Frame Summary** pane, which has the description SystemTrace. This image shows what the screen looks like when you select the first event.
 
-    ![microsoft network monitor](images/devicefailure-etl.png)
+    ![Screenshot that shows "Microsoft Network Monitor" window after selecting the first event.](images/devicefailure-etl.png)
 
 3. To customize the columns that Netmon displays, right-click a column name and select **Choose Columns**.
 4. The first event, which is identified as type **SystemTrace**, contains general information about the log. You can expand the information tree in the **Frame Details** pane to see information such as the number of events lost and the trace start time.
@@ -52,7 +52,7 @@ How can you identify the end of the summary events? If there is a significant br
 
 In this example, the device of interest was not connected to the system when we started the trace, so you can skip the device summary events for now.
 
-![microsoft network monitor](images/devicefailure-etl1.png)
+![Screenshot that shows a device of interest selected in the "Frame Summary" that was not connected when the trace was started.](images/devicefailure-etl1.png)
 
 ## Event Description and Data Payload
 
@@ -121,7 +121,7 @@ The USB error filter narrows the list of events to only those that meet the crit
 
 This image shows the smaller set of events that appear in the **Frame Summary** pane after we applied the USB error filter to our sample trace log.
 
-![microsoft network monitor](images/devicefailure-etl2.png)
+![Screenshot that shows a set of events in the "Frame Summary" pane after the USB error filter was applied.](images/devicefailure-etl2.png)
 
 To see an overview of the sequence of errors, you can briefly view each error event. Important fields to observe include **fid\_NtStatus**, **fid\_UsbdStatus**, and **fid\_DebugText**. For more information, see [Understanding Error Events and Status Codes](#understanding-error-events-and-status-codes). To turn off a filter, click the **Remove** button in the **Display Filter** pane.
 
@@ -193,4 +193,4 @@ For USB enumeration to continue, the device should have responded to this reques
 ## Related topics
 
 [Using USB ETW](using-usb-etw.md)  
-[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
+[USB Event Tracing for Windows](usb-event-tracing-for-windows.md)

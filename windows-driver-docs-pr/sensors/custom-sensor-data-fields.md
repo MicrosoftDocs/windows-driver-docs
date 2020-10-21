@@ -75,14 +75,7 @@ HID drivers only support the VT\_UI4 type for custom properties, while non-HID d
 ## Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
  
-
- 
-
-
-
-
-
 

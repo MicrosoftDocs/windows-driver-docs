@@ -14,7 +14,6 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # Windows Hardware Error Architecture (WHEA) design guide
@@ -47,6 +46,6 @@ This section describes the Windows Hardware Error Architecture (WHEA), which pro
 
 [Windows Hardware Error Architecture ACPI Table Specification](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/WHEA_ACPI-tables.docx)  
 
-[Hardware Management and Security](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614601(v=vs.85))  
+[Hardware Management and Security](/previous-versions/windows/hardware/design/dn614601(v=vs.85))  
 
-[**Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR (Windows Debuggers)**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0x124---whea-uncorrectable-error)  
+[**Bug Check 0x124: WHEA\_UNCORRECTABLE\_ERROR (Windows Debuggers)**](../debugger/bug-check-0x124---whea-uncorrectable-error.md)

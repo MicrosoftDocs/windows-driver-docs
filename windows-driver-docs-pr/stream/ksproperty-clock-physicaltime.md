@@ -47,7 +47,7 @@ Clients use the KSPROPERTY\_CLOCK\_PHYSICAL\_TIME property to determine the curr
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>LONGLONG</p></td>
 </tr>
 </tbody>
@@ -86,13 +86,4 @@ Requirements
 [**KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME**](ksproperty-clock-correlatedphysicaltime.md)
 
 [**KSPROPERTY\_CLOCK\_CORRELATEDTIME**](ksproperty-clock-correlatedtime.md)
-
- 
-
- 
-
-
-
-
-
 

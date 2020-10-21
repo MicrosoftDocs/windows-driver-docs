@@ -45,7 +45,7 @@ The StoreManifest.xml file must be stored in the root folder of your app's proje
 3.  Review the properties of the StoreManifest.xml file after it's been added to your project. Right-click the **StoreManifest.xml** file and select **Properties**. This highlights the **Properties** window.
 4.  In the **Properties** window, ensure that the **Build Action** property equals **Content** and the **Copy to Output Directory** property equals **Do not copy**.
 
-For more info about the StoreManifest.xml file, see [StoreManifest schema reference](https://go.microsoft.com/fwlink/p/?LinkId=307124).
+For more info about the StoreManifest.xml file, see [StoreManifest schema reference](/uwp/schemas/storemanifest/storemanifestschema2010/schema-root).
 
 ## <span id="Next_step"></span><span id="next_step"></span><span id="NEXT_STEP"></span>Next step
 
@@ -53,10 +53,4 @@ For more info about the StoreManifest.xml file, see [StoreManifest schema refere
 [Step 4: Test device metadata](step-4--test-device-metadata.md)
 
  
-
- 
-
-
-
-
 

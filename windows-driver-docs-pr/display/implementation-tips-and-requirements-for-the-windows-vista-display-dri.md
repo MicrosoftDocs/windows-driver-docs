@@ -14,8 +14,6 @@ ms.custom: seodec18
 
 # Tips and Requirements for the Windows Display Driver Model (WDDM)
 
-
-
 These topics discuss tips and requirements for implementing Windows Display Driver Model (WDDM) user-mode drivers and display miniport drivers:
 
 [Hardware support for Direct3D feature levels](hardware-support-for-direct3d-feature-levels.md)
@@ -42,8 +40,6 @@ These topics discuss tips and requirements for implementing Windows Display Driv
 
 [Supporting Display Output and ACPI Events](supporting-display-output.md)
 
-[Marking Sources as Removable](marking-sources-as-removable.md)
-
 [Supporting Output Protection Manager](supporting-output-protection-manager.md)
 
 [Supporting Transient Multi-Monitor Manager](supporting-transient-multi-monitor-manager.md)
@@ -53,12 +49,3 @@ These topics discuss tips and requirements for implementing Windows Display Driv
 [Wireless displays (Miracast)](wireless-displays--miracast-.md)
 
 [Adaptive refresh for playing 24 fps video content](adaptive-refresh-for-playing-24-fps-content.md)
-
- 
-
- 
-
-
-
-
-

@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ## <span id="analog_audio_stream_data_range"></span><span id="ANALOG_AUDIO_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE**](https://docs.microsoft.com/previous-versions/ff561658(v=vs.85)) structure to describe the data range for an analog audio stream.
+This example uses a [**KSDATARANGE**](/previous-versions/ff561658(v=vs.85)) structure to describe the data range for an analog audio stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE);
@@ -29,9 +29,4 @@ This example uses a [**KSDATARANGE**](https://docs.microsoft.com/previous-versio
 Typically, a miniport driver uses this type of data range to describe the analog signal passing through a *bridge pin*, which represents a hardwired connection on an audio adapter card. For more information about bridge pins, see [Audio Filter Graphs](audio-filter-graphs.md). Also, see the code example in [Exposing Filter Topology](exposing-filter-topology.md).
 
  
-
- 
-
-
-
 

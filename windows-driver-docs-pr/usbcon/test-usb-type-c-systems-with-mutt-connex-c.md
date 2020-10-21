@@ -1,5 +1,5 @@
 ---
-Description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board. 
+description: The MUTT Connection Exerciser Type-C (USB Type-C ConnEx) hardware board is a custom shield for the Arduino board.
 title: Test USB Type-C systems with USB Type-C ConnEx
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -44,7 +44,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
     [Arduino Mega 2560 R3](https://store.arduino.cc/usa/mega-2560-r3) is used as the microcontroller for the test setup.
 
-    ![arduino](images/arduino.png)
+    ![Shows the Arduino Mega 2560 R3 board.](images/arduino.png)
 
 - **Power adapter for the [Arduino Mega 2560 R3](https://store.arduino.cc/usa/mega-2560-r3) microcontroller**.
 
@@ -100,7 +100,7 @@ Make sure you meet these requirements:
 
 - Installation of the test tools requires an elevated command window.
 
-    To open an elevated command window, the user must be a member of the **Administrators** group on the proxy controller. To open an elevated Command Prompt window, create a desktop shortcut to Cmd.exe, right-click the Cmd.exe shortcut, and select **Run as administrator**.
+    To open an elevated command window, the user must be a member of the **Administrators** group on the proxy controller. To open an elevated Command Prompt window, create a desktop shortcut to Cmd.exe, select and hold (or right-click) the Cmd.exe shortcut, and select **Run as administrator**.
 
 ### USB Type-C ConnEx tools
 
@@ -148,7 +148,7 @@ In these steps, you will connect the hardware pieces, update the firmware on the
 
     After five seconds, the LCD display shows the current and voltage.
 
-    ![USB Type-C ConnEx before firmware boot](images/connexc-connect2.png)![USB Type-C ConnEx before firmware boot](images/connexc-connect3.png)
+    ![Shows the USB Type-C ConnEx with power, but nothing on the LCD display](images/connexc-connect2.png)![Shows the USB Type-C ConnEx with "4.27 V" and "-0.017A" on the LCD display.](images/connexc-connect3.png)
 
     If you do not the see display as shown in the previous image, make sure your have assembled the unit correctly.
 

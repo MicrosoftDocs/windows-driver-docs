@@ -13,11 +13,9 @@
   - name: "KSPROPERTYSETID_NetworkCameraControl"
     href: kspropertysetid-networkcameracontrol.md
   - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
-    href: ksproperty_networkcameracontrol_ntp.md
+    href: ksproperty-networkcameracontrol-ntp.md
   - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
-    href: ksproperty_networkcameracontrol_uri.md
-  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTPINFO_HEADER"
-    href: ksproperty_networkcameracontrol_ntpinfo_header.md
+    href: ksproperty-networkcameracontrol-uri.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
@@ -41,6 +39,8 @@
     href: infrared-stream-support-in-uvc.md
   - name: "Camera class INF file setting for Universal camera drivers"
     href: camera-driver-inf-file-class-setting.md
+  - name: "Driver support for Camera UVC Control Cache"
+    href: camera-device-uvc-control-cache.md
   - name: "Microsoft extensions to USB Video Class 1.5 specification"
     href: uvc-extensions-1-5.md
 - name: "Windows Hello Camera driver bring up guide"
@@ -933,6 +933,8 @@
       href: ksproperty-pin-interfaces.md
     - name: "KSPROPERTY_PIN_MEDIUMS"
       href: ksproperty-pin-mediums.md
+    - name: "KSPROPERTY_PIN_MODEDATAFORMATS"
+      href: ksproperty-pin-modedataformats.md
     - name: "KSPROPERTY_PIN_NAME"
       href: ksproperty-pin-name.md
     - name: "KSPROPERTY_PIN_NECESSARYINSTANCES"

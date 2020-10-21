@@ -1,5 +1,5 @@
 ---
-Description: The WPD Driver Samples
+description: The WPD Driver Samples
 title: The WPD Driver Samples
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -27,21 +27,15 @@ The Windows Portable Devices Driver Kit includes five sample WPD drivers. These 
 ## <span id="related_topics"></span>Related topics
 
 
-[WPD HelloWorld Driver download page](https://go.microsoft.com/fwlink/p/?linkid=257508)
+[WPD HelloWorld Driver download page](/samples/browse/)
 
-[WPD Basic Hardware Driver download page](https://go.microsoft.com/fwlink/p/?linkid=256221)
+[WPD Basic Hardware Driver download page](/samples/browse/)
 
-[WPD Multi-Transport Driver download page](https://go.microsoft.com/fwlink/p/?linkid=256222)
+[WPD Multi-Transport Driver download page](/samples/browse/)
 
-[WPD Service Sample Driver download page](https://go.microsoft.com/fwlink/p/?linkid=256223)
+[WPD Service Sample Driver download page](/samples/browse/)
 
-[WPD WUDF Sample Driver download page](https://go.microsoft.com/fwlink/p/?linkid=256224)
-
- 
+[WPD WUDF Sample Driver download page](/samples/browse/)
 
  
-
-
-
-
 

@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-NDIS handles all Plug and Play (PnP) and power management IRPs for NDIS-WDM miniport drivers. Therefore, NDIS-WDM miniport drivers should respond to PnP and power management OIDs, based on device capabilities, as described in [Power Management for NDIS Miniport Drivers](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-0-and-ndis-6-1-). For more information about these OIDs, see [Power Management (NDIS 6.0 and Later)](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-0-and-ndis-6-1-).
+NDIS handles all Plug and Play (PnP) and power management IRPs for NDIS-WDM miniport drivers. Therefore, NDIS-WDM miniport drivers should respond to PnP and power management OIDs, based on device capabilities, as described in [Power Management for NDIS Miniport Drivers](required-and-optional-oids-for-power-management.md).
 
  
 

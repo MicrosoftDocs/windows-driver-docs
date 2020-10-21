@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The following table lists SCSI commands and the translated NVMe command(s), where applicable. **StorNVMe** on Windows 10 version 1903 and later versions is compliant to SCSI Translation Reference Rev 1.5.
 
-See [Working with NVMe drives](https://docs.microsoft.com/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.
+See [Working with NVMe drives](/windows/win32/fileio/working-with-nvme-devices#protocol-specific-queries) for additional information.
 
 | SCSI Command | NVMe Command |
 | ------------ | ------------ |

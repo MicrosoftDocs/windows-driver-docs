@@ -22,13 +22,13 @@ Instructions
 
 From the project property pages for your driver package, you can configure whether you want to automatically deploy a driver package on a test computer. You can also run a custom installation script from these pages. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md) and [Deployment Properties for Driver Projects](deployment-properties-for-driver-projects.md).
 
-1.  Open the property pages for your driver package project. Right-click the driver project in Solution Explorer and select **Properties**.
+1.  Open the property pages for your driver package project. Select and hold (or right-click) the driver project in Solution Explorer and select **Properties**.
 
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Settings**, and then click **Deployment**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Settings**, and then select **Deployment**.
 
-3.  Click **Enable deployment** and then select the test computer to use.
+3.  Select **Enable deployment** and then select the test computer to use.
 
-4.  Click **Custom Command Line**. In the box, type custom command scripts that you want to run upon installation.
+4.  Select **Custom Command Line**. In the box, type custom command scripts that you want to run upon installation.
 
 5.  In the **Additional Files** text box, add the command script and other installation files to be copied to the test computer. When the driver is deployed, the additional files are copied to the *%Systemdrive%*\\drivertest\\drivers folder on the remote computer.
 

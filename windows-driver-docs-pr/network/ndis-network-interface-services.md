@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The NDIS network interfaces programming interface provides services to:
 
--   Generate a locally unique identifier ( [**NET\_LUID**](https://docs.microsoft.com/windows/desktop/api/ifdef/ns-ifdef-net_luid_lh)) for each interface. NET\_LUID values:
+-   Generate a locally unique identifier ( [**NET\_LUID**](/windows/win32/api/ifdef/ns-ifdef-net_luid_lh)) for each interface. NET\_LUID values:
     -   Must persist when the computer restarts. Interface providers must make NET\_LUIDs persistent even if the associated interface is not persistent. For example, this persistence allows the interface provider to free the NET\_LUID index if there is a computer power failure.
     -   Must be associated with an interface type ( *IfType* in RFC 2863).
     -   Must be unique on a local computer.
@@ -26,7 +26,7 @@ The NDIS network interfaces programming interface provides services to:
 -   Generate a locally unique interface index (a 24-bit value that is also referred to as *IfIndex* ) for each interface. *IfIndex* values have the following properties:
     -   Low numbers are preferred. For example, NDIS reuses the lowest available interface index.
     -   *IfIndex* values do not persist when the computer restarts.
-    -   There is a one-to-one correspondence between a [**NET\_LUID**](https://docs.microsoft.com/windows/desktop/api/ifdef/ns-ifdef-net_luid_lh) value and an *IfIndex* value.
+    -   There is a one-to-one correspondence between a [**NET\_LUID**](/windows/win32/api/ifdef/ns-ifdef-net_luid_lh) value and an *IfIndex* value.
 -   Map between interface indexes, NET\_LUID values, and "friendly names" (For example, a friendly name as displayed in the network connections folder).
 
 -   Define the layering order of interfaces in a driver stack.
@@ -34,10 +34,4 @@ The NDIS network interfaces programming interface provides services to:
 -   Query and set interface properties and tables that NDIS drivers manage and that RFCs 2863 and 2864 specify.
 
  
-
- 
-
-
-
-
 

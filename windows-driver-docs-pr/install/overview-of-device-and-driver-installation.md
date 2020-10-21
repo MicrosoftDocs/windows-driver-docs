@@ -16,7 +16,7 @@ The Windows operating system installs devices when the system restarts or when a
 
 Specifically, Windows enumerates the devices that are present in the system and loads and calls the drivers for each device.
 
-Drivers such as the ACPI driver and other PnP [bus drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/bus-drivers) help Windows determine which devices are present.
+Drivers such as the ACPI driver and other PnP [bus drivers](../kernel/bus-drivers.md) help Windows determine which devices are present.
 
 ## In this section
 
@@ -25,4 +25,3 @@ Drivers such as the ACPI driver and other PnP [bus drivers](https://docs.microso
 -   [Step 2: A Driver for the Device is Selected](step-2--a-driver-for-the-device-is-selected.md)
 -   [Step 3: The Driver for the Device is Installed](step-3--the-driver-for-the-device-is-installed.md)
 -   [Overview of the Driver Selection Process](overview-of-the-driver-selection-process.md)
-

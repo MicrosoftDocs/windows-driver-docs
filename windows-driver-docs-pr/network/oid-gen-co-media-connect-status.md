@@ -16,12 +16,9 @@ The OID_GEN_CO_MEDIA_CONNECT_STATUS OID requests the miniport driver to return t
 
 **NdisMediaStateDisconnected**
 
-When a miniport driver senses that the network connection has been lost, it should call [NdisMCoIndicateStatus](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) with NDIS_STATUS_MEDIA_DISCONNECT. When the connection is restored, it should call NdisMCoIndicateStatus with NDIS_STATUS_MEDIA_CONNECT.
+When a miniport driver senses that the network connection has been lost, it should call [NdisMCoIndicateStatus](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoindicatestatusex) with NDIS_STATUS_MEDIA_DISCONNECT. When the connection is restored, it should call NdisMCoIndicateStatus with NDIS_STATUS_MEDIA_CONNECT.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

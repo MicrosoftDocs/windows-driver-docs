@@ -27,7 +27,7 @@ In the ingress data path, after the capturing and filtering extensions but befor
 
 If the **NativeForwardingRequired** flag is set in the packet's OOB data, the packet is an NVGRE packet. If it is not set, the packet is a non-NVGRE packet.
 
-Extensions should use the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](https://docs.microsoft.com/windows-hardware/drivers/network/net-buffer-list-switch-forwarding-detail) macro to check the value of the **NativeForwardingRequired** flag.
+Extensions should use the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_switch_forwarding_detail) macro to check the value of the **NativeForwardingRequired** flag.
 
 NVGRE and non-NVGRE packets are treated as follows:
 

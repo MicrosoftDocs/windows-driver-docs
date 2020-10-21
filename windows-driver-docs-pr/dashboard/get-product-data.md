@@ -59,7 +59,7 @@ This resource represents a hardware product (driver) that is registered to your 
   "isFlightSign": false,
   "marketingNames": [
     "marketing name 1",
-    " marketing name 2"
+    "marketing name 2"
 ],
   "productName": "product name",
   "selectedProductTypes": {
@@ -72,7 +72,7 @@ This resource represents a hardware product (driver) that is registered to your 
   ],
   "additionalAttributes": {},
   "testHarness": "hlk",
-  " announcementDate ": "2016-10-22T00:00:00Z",
+  "announcementDate": "2016-10-22T00:00:00Z",
 }
 ```
 
@@ -87,7 +87,7 @@ This resource has the following values
 | isExtensionInf | Boolean | (DEPRECATED) Indicates whether the product is an extension driver. This field is deprecated and should no longer be used. isExtensionInf has been moved to submission level property. |
 | deviceMetadataIds | array of GUIDs | GUIDs which map device metadata submissions to the driver |
 | deviceType | String | Indicates the type of device. Possible values are:<ul><li>"internal" - An internal component, device is part of a system and connects inside the PC</li><li>"external" - An external component, device is an external device (peripheral) that connects to a PC</li><li>"internalExternal" - Both, device can be connected internally (inside a PC) and externally (peripheral)</li><li>"notSet" – no data available</li></ul>|
-| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/windows-hardware/drivers/install/whql-test-signature-program)  |
+| isTestSign | Boolean | Indicates whether the product is a test signed driver. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md)  |
 | isFlightSign | Boolean | Indicates whether the product is a flight signed driver. Flight signed drivers are test drivers which can be published via Windows Update. They can be published/installed only on machines which have signed up for Windows Insider Program. They can be installed on machines without disbaling secure boot. They cannot be installed on retail machines which are not part of Windows Insider Program.|
 | marketingNames | array of strings | Marketing names or aliases of the product |
 | productName | String | The name of the driver as specified during creation |
@@ -106,9 +106,9 @@ This resource represents a submission of a product.
   "id": 1152921504621442000,
   "productId": 13635057453741328,
    "workflowStatus": {
-      "currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     },
   "links": [
     {
@@ -147,9 +147,9 @@ This object represents the status of workflow for a given entity
 
 ```json
 {
-      "currentStep": " finalizeIngestion",
-      " state": " completed",
-      " messages": []
+      "currentStep": "finalizeIngestion",
+      "state": "completed",
+      "messages": []
     }
 ```
 

@@ -1,5 +1,5 @@
 ---
-Description: Use the USB User-Mode Driver template provided with Microsoft Visual Studio to write a UMDF client driver.
+description: Use the USB User-Mode Driver template provided with Microsoft Visual Studio to write a UMDF client driver.
 title: How to write your first USB client driver (UMDF)
 ms.date: 06/03/2019
 ms.localizationpriority: medium
@@ -55,7 +55,7 @@ If you are new to USB driver development, use the [OSR USB FX2 learning kit](htt
 ### <a href="" id="generate-the-umdf-driver-code-by-using-the-visual-studio-2019-usb-driver-template"></a>Step 1: Generate the UMDF driver code by using the Visual Studio 2019 USB driver template
 
 <a href="" id="generate"></a>
-For instructions about generating UMDF driver code, see [Writing a UMDF driver based on a template](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/writing-a-umdf-driver-based-on-a-template).
+For instructions about generating UMDF driver code, see [Writing a UMDF driver based on a template](../gettingstarted/writing-a-umdf-driver-based-on-a-template.md).
 
 ### For USB-specific code, select the following options in Visual Studio 2019
 
@@ -93,7 +93,7 @@ Before you build the driver, you must modify the template INF file with informat
 2. Open **Device Manager** and open properties for your device.
 3. On the **Details** tab, select **Hardward Ids** under **Property.**
 
-    The hardware ID for the device is displayed in the list box. Right-click and copy the hardware ID string.
+    The hardware ID for the device is displayed in the list box. Select and hold (or right-click) and copy the hardware ID string.
 
 4. In **Solution Explorer**, expand **Driver Files**, and open the INF.
 5. Replace the following your hardware ID string.
@@ -192,7 +192,7 @@ The output resembles this:
 
 ### To configure your target computer for WPP tracing
 
-1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\10\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracelog-command-syntax).
+1. Make sure you have the Tracelog tool on your target computer. The tool is located in the <em>&lt;install\_folder&gt;</em>Windows Kits\\10\\Tools\\*&lt;arch&gt;* folder of the WDK. For more information, see [**Tracelog Command Syntax**](../devtest/tracelog-command-syntax.md).
 2. Open a **Command Window** and run as administrator.
 3. Type the following command:
 
@@ -216,12 +216,12 @@ The output resembles this:
 
 ### <a href="" id="deploy-the-driver-on-the-target-computer"></a>Step 6: Deploy the driver on the target computer
 
-1. In the **Solution Explorer** window, right click the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
+1. In the **Solution Explorer** window, select and hold (or right-click) the <em>&lt;project name&gt;</em>**Package** , and choose **Properties**.
 2. In the left pane, navigate to **Configuration Properties &gt; Driver Install &gt; Deployment**.
 3. Check Enable deployment, and check Import into driver store.
 4. For **Remote Computer Name**, specify the name of the target computer.
 5. Select **Install and Verify**.
-6. Click **Ok**.
+6. Select **Ok**.
 7. On the **Debug** menu, choose **Start Debugging**, or press **F5** on the keyboard.
 
 > [!NOTE]
@@ -281,7 +281,7 @@ The purpose of each module is described here:
 - Winusb.sys—a Microsoft-provided driver that is required by all UMDF client drivers for USB devices. The driver must be installed below the reflector and acts as the gateway to the USB driver stack in the kernel-mode. For more information, see [WinUSB](winusb.md).
 - USB driver stack—a set of drivers, provided by Microsoft, that handle protocol-level communication with the USB device. For more information, see [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md).
 
-Whenever an application makes a request for the USB driver stack, the Windows I/O manager sends the request to the reflector, which directs it to client driver in user mode. The client driver handles the request by calling specific UMDF methods, which internally call [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) to send the request to WinUSB. Upon receiving the request, WinUSB either processes the request or forwards it to the USB driver stack.
+Whenever an application makes a request for the USB driver stack, the Windows I/O manager sends the request to the reflector, which directs it to client driver in user mode. The client driver handles the request by calling specific UMDF methods, which internally call [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) to send the request to WinUSB. Upon receiving the request, WinUSB either processes the request or forwards it to the USB driver stack.
 
 ## Related topics
 

@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_FLOPPY
 
 
-The GUID_DEVINTERFACE_FLOPPY [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for floppy disk [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index).
+The GUID_DEVINTERFACE_FLOPPY [device interface class](./overview-of-device-interface-classes.md) is defined for floppy disk [storage devices](../storage/index.md).
 
 <table>
 <colgroup>
@@ -50,9 +50,9 @@ Remarks
 
 The system-supplied storage class driver for floppy disk storage devices registers an instance of GUID_DEVINTERFACE_FLOPPY for a floppy disk storage device.
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](https://go.microsoft.com/fwlink/p/?linkid=256192) sample that uses the obsolete identifier [**FloppyClassGuid**](floppyclassguid.md) to register an instance of the GUID_DEVINTERFACE_FLOPPY device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include a [floppy driver](/samples/browse/) sample that uses the obsolete identifier [**FloppyClassGuid**](floppyclassguid.md) to register an instance of the GUID_DEVINTERFACE_FLOPPY device interface class.
 
-For information about storage drivers, see [Storage Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers).
+For information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
 Requirements
 ------------
@@ -74,13 +74,4 @@ Requirements
 
 
 [**FloppyClassGuid**](floppyclassguid.md)
-
- 
-
- 
-
-
-
-
-
 

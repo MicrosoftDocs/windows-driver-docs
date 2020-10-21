@@ -75,12 +75,7 @@ Requirements
 ## See also
 
 
-[OID\_WDI\_SET\_P2P\_WPS\_ENABLED](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-p2p-wps-enabled)
+[OID\_WDI\_SET\_P2P\_WPS\_ENABLED](./oid-wdi-set-p2p-wps-enabled.md)
 
  
-
- 
-
-
-
 

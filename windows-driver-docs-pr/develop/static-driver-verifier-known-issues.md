@@ -1,8 +1,6 @@
 ﻿---
 title: Static Driver Verifier Known Issues
 description: 
-author: selerner
-ms.author: selerner
 ms.date: 11/07/2018
 ms.topic: article
 ms.prod: windows-hardware
@@ -23,7 +21,7 @@ When examining the DVL file, you will see an `AssessmentScore` value with `Score
 
 For InterceptedBuild failures, perform the following steps to diagnose the issue.
 
-1. Rerun SDV from the Visual Studio 2017 Native Tools Command Line with the /debug flag.  For details on command options, see [Static Driver Verifier commands](https://docs.microsoft.com/windows-hardware/drivers/devtest/-static-driver-verifier-commands--msbuild-).
+1. Rerun SDV from the Visual Studio 2017 Native Tools Command Line with the /debug flag.  For details on command options, see [Static Driver Verifier commands](../devtest/-static-driver-verifier-commands--msbuild-.md).
 
     a. First, run SDV's library function on any dependent library projects.  For example: `msbuild /p:Configuration=Release /p:Platform=x64 /t:sdv /p:inputs="/lib /debug"`.
 
@@ -114,7 +112,7 @@ The key symptom is the failure to load RoMetadata.dll.
 
 If you have a Server GUI installation with the same architecture and Windows version as your ServerCore installation, copy the RoMetadata.dll file from Server GUI to ServerCore.  The DLL can be found in the System32 folder (for example, `C:\Windows\System32`) and should be placed in the same folder on the ServerCore machine.  This should enable the test to run on ServerCore.  If you are still experiencing issues, please refer to the next workaround.
 
-The second workaround is to run on Server GUI and then merge the package with the package containing the results from Server Core. For info on merging packages, see [Merge packages](https://docs.microsoft.com/windows-hardware/test/hlk/user/merge-packages).
+The second workaround is to run on Server GUI and then merge the package with the package containing the results from Server Core. For info on merging packages, see [Merge packages](/windows-hardware/test/hlk/user/merge-packages).
 
 ## Static Driver Verifier fails with exiting lib.exe/iwrap.exe with 0xc0000142 error
 

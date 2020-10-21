@@ -26,12 +26,20 @@
     href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
   - name: "Driver Flighting"
     items:
-    - name: "Overview"
+    - name: "Overview of driver flighting"
       href: driver-flighting.md
+    - name: "Other Policies"
+      items:
+      - name: "Overview of other policies"
+        href: other-policies.md
+      - name: "Extension INF Targeting Rules"
+        href: extension-inf-targeting-rules.md
     - name: "Microsoft driver measures"
       href: overview-of-microsoft-driver-measure-dictionary.md
     - name: "Driver measure attributes"
       href: measure-attributes.md
+    - name: "Cohort Failure Report"
+      href: IDR-cohort-report.md
     - name: "Systemic measures"
       items:
       - name: "Driver installation measures"
@@ -172,15 +180,17 @@
             href: graphics-display-health-percent-devices-with-display-issues-resume-from-low-power.md
           - name: "Ecosystem Netflix HWDRM Quality Comparison"
             href: ecosystem-netflix-hwdrm-quality-comparison.md
+          - name: "Percent of devices with WinML Runtime Errors"
+            href: pct-devices-winml-runtime-error-ecosystem.md
       - name: "Wi-Fi"
         items:
         - name: "Wi-Fi Measures"
           href: wi-fi-measures.md
-        - name: "Percent of wi-fi connection failures, from the top 95 percent of device and access-point pairs "
+        - name: "Percent of wi-fi connection failures, from devices and access-point pairs that have greater than 50 percent signal quality"
           href: percent-of-wifi-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-        - name: "Percent of internet connection failures, from the top 95 percent of device and access-point pairs that have greater than 50 percent signal quality"
+        - name: "Percent of internet connection failures of device and access-point pairs that have greater than 50 percent signal quality"
           href: percent-of-internet-connection-failures-from-the-top-95-percent-of-device-ap-pairs.md
-        - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect"
+        - name: "Percent of Wi-Fi sessions ending in an unexpected disconnect that have a greater than 50% signal quality"
           href: pct-wi-fi-sessions-ending-in-unexpected-disconnect.md
     - name: "Appendix"
       href: measure-appendix.md
@@ -215,7 +225,7 @@
   - name: "Publishing for test distribution"
     href: publishing-for-test-distribution.md
   - name: Gradual rollout
-    href: "gradual-rollout.md"
+    href: gradual-rollout.md
 - name: "Hardware dashboard API"
   items: 
   - name: "Getting started with the Hardware dashboard API"

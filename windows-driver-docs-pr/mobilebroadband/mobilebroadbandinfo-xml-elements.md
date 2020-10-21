@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # MobileBroadbandInfo XML elements list
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 This section describes the XML elements defined by the [MobileBroadbandInfo XML schema](mobilebroadbandinfo-xml-schema.md). The following is a list of these elements in the order in which they are defined in the XML schema.
 

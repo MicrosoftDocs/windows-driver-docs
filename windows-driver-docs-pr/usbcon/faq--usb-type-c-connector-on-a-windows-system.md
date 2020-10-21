@@ -1,5 +1,5 @@
 ---
-Description: Frequently asked questions for OEMs who want to build Windows systems with USB Type-C connectors.
+description: Frequently asked questions for OEMs who want to build Windows systems with USB Type-C connectors.
 title: FAQ - USB Type-C connector on a Windows system
 ms.date: 04/20/2017
 ms.localizationpriority: medium

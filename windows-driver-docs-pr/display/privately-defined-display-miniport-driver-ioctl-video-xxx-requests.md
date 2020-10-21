@@ -19,13 +19,7 @@ A miniport driver can define one or more private I/O control codes for its corre
 
 However, only a specific display-and-miniport driver pair can use privately defined I/O control codes. That is, a miniport driver designed to run under an existing display driver should not define private I/O control codes because the existing display driver cannot make new I/O control requests without being rewritten and, possibly, without breaking existing miniport drivers it already uses. An existing or generic display driver layered over many different models of adapters, such as SVGA adapters, also cannot rely on a privately defined I/O control code to have the same effects in every underlying miniport driver.
 
-For more information about defining private I/O control codes, see [Using I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/using-i-o-control-codes).
+For more information about defining private I/O control codes, see [Using I/O Control Codes](../kernel/introduction-to-i-o-control-codes.md).
 
  
-
- 
-
-
-
-
 

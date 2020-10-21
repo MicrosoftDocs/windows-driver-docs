@@ -77,4 +77,4 @@ Refer to [Command-line arguments for package generator](/windows-hardware/manufa
 
 [Review the INX file](review-and-revise-the-inf-file.md)
 
-[Command-line arguments for package generator](https://docs.microsoft.com/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator)
+[Command-line arguments for package generator](/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator)

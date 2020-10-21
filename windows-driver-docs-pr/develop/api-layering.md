@@ -16,6 +16,6 @@ To see which platform an API supports, visit the documentation page for the API 
 
 ## Validating API Layering  
 
-[ApiValidator](https://docs.microsoft.com/windows-hardware/test/hlk/testref/df4a9671-c2aa-4c81-b964-7247fb4799df) is the main tool used to validate API Layering compliance for Windows Drivers.  ApiValidator ships as part of the Windows Driver Kit (WDK).  
+[ApiValidator](/windows-hardware/test/hlk/testref/df4a9671-c2aa-4c81-b964-7247fb4799df) is the main tool used to validate API Layering compliance for Windows Drivers.  ApiValidator ships as part of the Windows Driver Kit (WDK).  
 
 See [Validating Windows Drivers](validating-windows-drivers.md) for more details on using ApiValidator to verify that a Windows Driver meets the API Layering requirement.

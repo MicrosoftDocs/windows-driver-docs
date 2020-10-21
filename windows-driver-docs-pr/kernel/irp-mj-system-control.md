@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_SYSTEM\_CONTROL
 
 
-All drivers must provide a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine that handles **IRP\_MJ\_SYSTEM\_CONTROL** requests, which are sent by the kernel-mode component of [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi) (WMI).
+All drivers must provide a [*DispatchSystemControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine that handles **IRP\_MJ\_SYSTEM\_CONTROL** requests, which are sent by the kernel-mode component of [Windows Management Instrumentation](./implementing-wmi.md) (WMI).
 
 When Sent
 ---------
@@ -31,11 +31,11 @@ Depends on the value at **MinorFunction** in the current I/O stack location of t
 Operation
 ---------
 
-All drivers must support **IRP\_MJ\_SYSTEM\_CONTROL** requests by supplying a [*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
+All drivers must support **IRP\_MJ\_SYSTEM\_CONTROL** requests by supplying a [*DispatchSystemControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
-Drivers that support [Windows Management Instrumentation](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-wmi) (WMI) must handle **IRP\_MJ\_SYSTEM\_CONTROL** requests by processing the minor function codes associated with this major function code. For information about the WMI minor function codes, see [WMI Minor IRPs](wmi-minor-irps.md).
+Drivers that support [Windows Management Instrumentation](./implementing-wmi.md) (WMI) must handle **IRP\_MJ\_SYSTEM\_CONTROL** requests by processing the minor function codes associated with this major function code. For information about the WMI minor function codes, see [WMI Minor IRPs](wmi-minor-irps.md).
 
-Drivers that do not support WMI by [registering as a WMI data provider](https://docs.microsoft.com/windows-hardware/drivers/kernel/registering-as-a-wmi-data-provider) must pass **IRP\_MJ\_SYSTEM\_CONTROL** requests to the next lower driver.
+Drivers that do not support WMI by [registering as a WMI data provider](./registering-as-a-wmi-data-provider.md) must pass **IRP\_MJ\_SYSTEM\_CONTROL** requests to the next lower driver.
 
 Requirements
 ------------
@@ -56,12 +56,7 @@ Requirements
 ## See also
 
 
-[*DispatchSystemControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+[*DispatchSystemControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
-
- 
-
-
-
 

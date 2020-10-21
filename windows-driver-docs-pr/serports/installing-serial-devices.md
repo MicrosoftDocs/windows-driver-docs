@@ -22,6 +22,6 @@ This section includes the following topics about installing serial devices:
 
 There are no other serial-specific requirements for installing serial devices.
 
-For general information about installing devices, see the [Device Installation Design Guide](https://docs.microsoft.com/windows-hardware/drivers/install/index) section.
+For general information about installing devices, see the [Device Installation Design Guide](../install/index.md) section.
 
-For more information about serial devices, see [Serial Devices and Drivers](https://docs.microsoft.com/previous-versions/ff547451(v=vs.85)).
+For more information about serial devices, see [Serial Devices and Drivers](using-serial-sys-and-serenum-sys.md).

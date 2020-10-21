@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 The Advanced Configuration and Power Interface Specification, Revision 5.0 ([ACPI 5.0 specification](https://uefi.org/specifications)), defines a new set of features to support low-power, mobile devices that are based on System on a Chip (SoC) integrated circuits and that implement the connected standby power model. Starting with Windows 8 and Windows 8.1, Windows supports the new ACPI 5.0 features for SoC-based platforms.
 
-This section contains guidelines for implementing Windows PCs and devices that support the new features in the ACPI 5.0 specification. Firmware developers and system designers can use these guidelines to make sure that Windows runs properly on their platforms. For a list of all Windows firmware requirements, see the documentation for the [Windows Certification Program](https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
+This section contains guidelines for implementing Windows PCs and devices that support the new features in the ACPI 5.0 specification. Firmware developers and system designers can use these guidelines to make sure that Windows runs properly on their platforms. For a list of all Windows firmware requirements, see the documentation for the [Windows Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)).
 
 ## In this section
 

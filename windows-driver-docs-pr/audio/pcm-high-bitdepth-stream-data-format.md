@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="pcm_high_bitdepth_stream_data_format"></span><span id="PCM_HIGH_BITDEPTH_STREAM_DATA_FORMAT"></span>
 
 
-This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure to describe the data format of a PCM high-bitdepth stream. This is similar to the PCM multichannel example, with the exception of the values for `Format.wBitsPerSample` and `Format.wValidBitsPerSample` that appear below.
+This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) structure to describe the data format of a PCM high-bitdepth stream. This is similar to the PCM multichannel example, with the exception of the values for `Format.wBitsPerSample` and `Format.wValidBitsPerSample` that appear below.
 
 ```cpp
   DataFormat.FormatSize  = sizeof(KSDATAFORMAT) + sizeof(WAVEFORMATEXTENSIBLE);
@@ -38,9 +38,4 @@ This example uses an extended version of a [**KSDATAFORMAT\_WAVEFORMATEX**](http
 ```
 
  
-
- 
-
-
-
 

@@ -15,13 +15,17 @@ ms.localizationpriority: medium
 
 # customUI element
 
-
 The optional **customUI** element specifies a custom user interface to be displayed on a client computer.
 
-The **customUI** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **customUI** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <customUI

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Relationships
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Relationships element specifies data that is used to track a device metadata package within the device metadata cache.
 

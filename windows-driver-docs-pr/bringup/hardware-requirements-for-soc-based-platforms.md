@@ -34,7 +34,7 @@ Platforms that implement the connected standby power model (a key feature of Ins
 
 Windows supports platforms that have low-power S0-idle capability regardless of whether they implement hardware-reduced ACPI or full ACPI. However, as required by the ACPI 5.0 specification, Windows does not use traditional sleep/resume features on platforms that have low-power S0-idle capability, regardless of ACPI configuration.
 
-For more information about the connected standby power model, see [Modern Standby](https://docs.microsoft.com/previous-versions/dn915061(v=vs.85)).
+For more information about the connected standby power model, see [Modern Standby](/previous-versions/dn915061(v=vs.85)).
 
 ## ACPI events
 
@@ -44,9 +44,4 @@ As part of chapter 4, "ACPI Hardware Specification", of the ACPI 5.0 specificati
 For more information about GPIO-signaled ACPI events, see section 5.6.5, "GPIO-Signaled ACPI Events", of the ACPI 5.0 specification. For more information about the ACPI software event handling, see section 5.6.4, "General Purpose Event Handling", of the ACPI 5.0 specification.
 
  
-
- 
-
-
-
 

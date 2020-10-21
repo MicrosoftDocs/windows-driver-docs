@@ -1,6 +1,5 @@
 ---
 title: INF DDInstall.Events Section
-author: andylsn
 description: Each per-Models DDInstall.Events section contains one or more INF AddEventProvider directives that reference additional INF-writer-defined sections in an INF file.
 ms.assetid: 
 keywords:
@@ -33,7 +32,7 @@ AddEventProvider={ProviderGUID},event-provider-install-section
 [Needs=inf-section-name[,inf-section-name]...] 
 ```
 
-You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](https://docs.microsoft.com/windows/desktop/ETW/about-event-tracing) (ETW) providers.
+You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) providers.
 
 ## Entries
 
@@ -87,10 +86,4 @@ AddEventProvider={6d3fd9ef-bcbb-42d7-9fbd-1bf2d926b394},bar_Event_Provider_Inst
 [***DDInstall***](inf-ddinstall-section.md)
 
  
-
- 
-
-
-
-
 

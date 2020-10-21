@@ -24,4 +24,4 @@ This section describes the support provided by the operating system-specific tap
 
 - See [Tape Class Driver Routines](tape-class-driver-routines.md) and [Tape Miniclass Driver Routines](tape-miniclass-driver-routines.md) for details on the routines in the tape class and tape miniclass drivers.
 
-- See [Device Configurations and Layered Drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-configurations-and-layered-drivers) for a description of the storage device driver layers.
+- See [Device Configurations and Layered Drivers](../kernel/device-configurations-and-layered-drivers.md) for a description of the storage device driver layers.

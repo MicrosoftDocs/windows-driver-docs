@@ -58,6 +58,7 @@ The RenderMoComp callback function is called without the display driver-supplied
 The DD_RENDERMOCOMPDATA structure is filled as follows.
 
 | Member | Value |
+| ------ | ----- |
 | dwNumBuffers | Zero. |
 | lpBufferInfo | NULL. |
 | dwFunction | DXVA_COPPQueryStatusFnCode constant (defined in dxva.h). |

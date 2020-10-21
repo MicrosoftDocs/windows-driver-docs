@@ -18,7 +18,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_CDCHANGER
 
 
-The GUID_DEVINTERFACE_CDCHANGER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for CD-ROM changer devices.
+The GUID_DEVINTERFACE_CDCHANGER [device interface class](./overview-of-device-interface-classes.md) is defined for CD-ROM changer devices.
 
 <table>
 <colgroup>
@@ -48,11 +48,11 @@ The GUID_DEVINTERFACE_CDCHANGER [device interface class](https://docs.microsoft.
 Remarks
 -------
 
-The system-supplied CD-ROM [changer driver](https://docs.microsoft.com/windows-hardware/drivers/storage/changer-drivers) registers instances of GUID_DEVINTERFACE_CDCHANGER to notify the operating system and applications of the presence of CD-ROM changer devices.
+The system-supplied CD-ROM [changer driver](../storage/changer-drivers.md) registers instances of GUID_DEVINTERFACE_CDCHANGER to notify the operating system and applications of the presence of CD-ROM changer devices.
 
 For information about the device interface class for CD-ROM devices, see [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md).
 
-For information about storage devices, see [Storage Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers).
+For information about storage devices, see [Storage Drivers](../storage/storage-drivers.md).
 
 [**CdChangerClassGuid**](cdchangerclassguid.md) is an obsolete identifier for the GUID_DEVINTERFACE_CDCHANGER device interface class; for new instances of this class, use GUID_DEVINTERFACE_CDCHANGER instead.
 
@@ -84,11 +84,4 @@ Requirements
 [**GUID_DEVINTERFACE_CDROM**](guid-devinterface-cdrom.md)
 
  
-
- 
-
-
-
-
-
 

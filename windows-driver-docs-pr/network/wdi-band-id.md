@@ -20,7 +20,7 @@ typedef UINT32 WDI_BAND_ID;
 
 Possible band ID values are as follows:
 
-| Value |   | Description |
+| Name | Value  | Description |
 | --- | --- | --- |
 | WDI_BAND_ID_ANY | 0xFFFFFFFF | All bands |
 | WDI_BAND_ID_2400 | 1 | 2.4 GHz |
@@ -32,9 +32,10 @@ Possible band ID values are as follows:
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Wditypes.hpp
+
 

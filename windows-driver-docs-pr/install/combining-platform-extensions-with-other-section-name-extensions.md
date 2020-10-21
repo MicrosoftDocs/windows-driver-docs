@@ -21,22 +21,16 @@ An INF file that contains INF *DDInstall* sections with platform extensions can 
 
 If a cross-operating system INF file contains decorated <em>install-section-name</em>**.nt**, <em>install-section-name</em>**.ntx86**, <em>install-section-name</em>**.ntia64**, or <em>install-section-name</em>**.ntamd64** sections, it must also have additional parallel decorated and undecorated per-device sections. That is, if the INF file has both *install-section-name* and <em>install-section-name</em>**.nt** sections and it has a *DDInstall*.**HW** section, it must also have a parallel <em>install-section-name</em>**.nt.HW** section (if the device or driver requires a **.HW** section for Windows 2000 and later versions of Windows).
 
-The topics in the [INF File Sections and Directives](inf-file-sections-and-directives.md) section show the **nt**<em>xxx</em>**.HW** extensions as part of the formal syntax statements in the appropriate section references, such as in the following example:
+The topics in the [INF File Sections and Directives](./index.md) section show the **nt**<em>xxx</em>**.HW** extensions as part of the formal syntax statements in the appropriate section references, such as in the following example:
 
-**\[**<em>install-section-name</em>**.HW\]** |
-**\[**<em>install-section-name</em>**.nt.HW\]** |
-**\[**<em>install-section-name</em>**.ntx86.HW\]** |
-**\[**<em>install-section-name</em>**.ntia64.HW\]** |
-**\[**<em>install-section-name</em>**.ntamd64.HW\]**
+```inf
+[install-section-name.HW] | 
+[install-section-name.nt.HW] | 
+[install-section-name.ntx86.HW] | 
+[install-section-name.ntia64.HW] | 
+[install-section-name.ntamd64.HW] 
+```
+
 Such a formal syntax statement indicates that these extensions are valid alternatives to the basic section. This type of statement does *not* indicate that any INF file that has an <em>install-section-name</em>**.nt.HW** section must also include every other platform-specific <em>install-section-name</em>**.nt**<em>xxx</em>**.HW** section. You can use any subset of these extensions to specify the decorated sections that are required for a particular cross-platform installation.
 
 INF files that contain *install-section-name* platform extensions can also include platform extensions with their [**INF SourceDisksNames section**](inf-sourcedisksnames-section.md) and [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) entries, to specify installation file locations in a platform-specific manner.
-
- 
-
- 
-
-
-
-
-

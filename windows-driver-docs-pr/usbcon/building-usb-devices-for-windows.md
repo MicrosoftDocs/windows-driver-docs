@@ -1,5 +1,5 @@
 ---
-Description: This section provides links for manufacturers of USB peripheral devices.
+description: This section provides links for manufacturers of USB peripheral devices.
 title: Overview of building USB devices for Windows
 ms.date: 04/20/2017
 ms.localizationpriority: medium

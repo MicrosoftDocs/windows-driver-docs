@@ -269,7 +269,7 @@
   - name: "Overview of USB Event Tracing for Windows"
     href: usb-event-tracing-for-windows.md
   - name: "Capture and view USB traces with Microsoft Message Analyzer"
-    href: capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md
+    href: ./usb-event-tracing-for-windows.md
   - name: "How to capture a USB event trace with Logman"
     href: how-to-capture-a-usb-event-trace.md
   - name: "Using activity ID GUIDs in USB ETW traces"
@@ -374,8 +374,6 @@
       items: 
       - name: "Overview of Enumeration of Interface Collections on USB Composite Devices"
         href: support-for-interface-collections.md
-      - name: "Support for the Wireless Mobile Communication Device Class"
-        href: support-for-the-wireless-mobile-communication-device-class--wmcdc-.md
     - name: "Content Security Features in Usbccgp.sys"
       href: content-security-features-in-the-composite-client-generic-parent-drive.md
   - name: "Winusb.sys"

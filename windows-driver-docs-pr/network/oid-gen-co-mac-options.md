@@ -14,8 +14,6 @@ The OID_GEN_CO_MAC_OPTIONS OID is reserved. Do not use it in your code.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

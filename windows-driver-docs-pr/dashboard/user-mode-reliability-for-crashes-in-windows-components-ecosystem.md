@@ -1,12 +1,12 @@
 ---
-title: Number of user mode reliability for crashes in Windows Components, normalized by population, is less than or equal to the baseline goal
+title: Number of user mode reliability for crashes in Windows Components, normalized by population, is less than or equal to the baseline goal (Ecosystem)
 description: The measure aggregates telemetry from a 7-day sliding window into a ratio of crashes in Microsoft Components, caused by the graphics drivers, over total runtime in years 
 ms.topic: article
 ms.date: 08/08/2019
 ms.localizationpriority: medium
 ---
 
-# Number of user mode reliability for crashes in Windows Components Photos app, normalized by population, is less than or equal to the baseline goal
+# Number of user mode reliability for crashes in Windows Components Photos app, normalized by population, is less than or equal to the baseline goal (Ecosystem)
 
 ## Description
 

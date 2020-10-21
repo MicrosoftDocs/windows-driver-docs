@@ -1,5 +1,5 @@
 ---
-Description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
+description: Install WinUSB (Winusb.sys) in the device's kernel-mode stack as the USB device's function driver instead of implementing a driver.
 title: WinUSB (Winusb.sys) Installation
 ms.date: 05/09/2018
 ms.localizationpriority: High
@@ -33,7 +33,7 @@ When you connect your device, you might notice that Windows loads Winusb.sys aut
 
 1.  Plug in your device to the host system.
 2.  Open Device Manager and locate the device.
-3.  Right-click the device and select **Update driver software...** from the context menu.
+3.  Select and hold (or right-click) the device and select **Update driver software...** from the context menu.
 4.  In the wizard, select **Browse my computer for driver software**.
 5.  Select **Let me pick from a list of device drivers on my computer**.
 6.  From the list of device classes, select **Universal Serial Bus devices**.
@@ -67,7 +67,7 @@ If you are installing WinUSB as the function driver for one of the functions in 
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system.
 
-> Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](https://docs.microsoft.com/windows-hardware/drivers/devtest/infverif) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommened that you provide a universal INF. For more information, see [Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-universal-inf-file).
+> Starting in Windows 10, version 1709, the Windows Driver Kit provides [InfVerif.exe](../devtest/infverif.md) that you can use to test a driver INF file to make sure there are no syntax issues and the INF file is universal. We recommened that you provide a universal INF. For more information, see [Using a Universal INF File](../install/using-a-universal-inf-file.md).
 
 ``` syntax
 ;
@@ -151,7 +151,7 @@ Except for device-specific values and several issues that are noted in the follo
 
 -   **USB\_Install.HW**: This section is the key in the .inf file. It specifies the device interface globally unique identifier (GUID) for your device. The **AddReg** directive sets the specified interface GUID in a standard registry value. When Winusb.sys is loaded as the device's function driver, it reads the registry value DeviceInterfaceGUIDs key and uses the specified GUID to represent the device interface. You should replace the GUID in this example with one that you create specifically for your device. If the protocols for the device change, create a new device interface GUID.
 
-    **Note**  User-mode software must call [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+    **Note**  User-mode software must call [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb\_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system. The example shows INF with WDF coinstallers.
 
@@ -268,11 +268,11 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 **Note**  Make sure that the driver package contents meet these requirements:
 -   The KMDF and WinUSB co-installer files must be obtained from the same version of the Windows Driver Kit (WDK).
 -   The co-installer files must be obtained from the latest version of the WDK, so that the driver supports all the latest Windows releases.
--   The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=129409) on the Windows Dev Center - Hardware site.
+-   The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](/windows-hardware/test/hlk/) on the Windows Dev Center - Hardware site.
 
  
 
-1. [Download the Windows Driver Kit (WDK)](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk) and install it.
+1. [Download the Windows Driver Kit (WDK)](../download-the-wdk.md) and install it.
 2. Create a driver package folder on the machine that the USB device is connected to. For example, c:\\UsbDevice.
 3. Copy the WinUSB co-installer (WinusbcoinstallerX.dll) from the **WinDDK\\**<em>BuildNumber</em>**\\redist\\winusb** folder to the driver package folder.
 
@@ -331,8 +331,5 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
 [WinUSB Power Management](winusb-power-management.md)  
 [WinUSB Functions for Pipe Policy Modification](winusb-functions-for-pipe-policy-modification.md)  
-[WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
-[WinUSB](winusb.md)  
-
-
-
+[WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb)  
+[WinUSB](winusb.md)

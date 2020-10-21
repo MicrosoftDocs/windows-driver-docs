@@ -25,15 +25,9 @@ The NIC can also support header-data split for fragmented IPv4 frames. For more 
 
  
 
-If the header-data split provider splits an IPv4 frame, the indicated [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_IS\_IPV4 flag set in the **NblFlags** member. For complete information about setting header-data split flags in the NET\_BUFFER\_LIST structure, see [Setting NET\_BUFFER\_LIST Information](setting-net-buffer-list-information.md).
+If the header-data split provider splits an IPv4 frame, the indicated [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_IS\_IPV4 flag set in the **NblFlags** member. For complete information about setting header-data split flags in the NET\_BUFFER\_LIST structure, see [Setting NET\_BUFFER\_LIST Information](setting-net-buffer-list-information.md).
 
-Additional Ethernet frame characteristics determine how to split IPv4 frames. If the IP frame is fragmented, see [Splitting Fragmented IP Frames](splitting-fragmented-ip-frames.md). If the frame contains TCP information, see [Splitting Frames at the TCP Payload](splitting-frames-at-the-tcp-payload.md). If the frame contains UDP information, see [Splitting Frames at the UDP Payload](splitting-frames-at-the-udp-payload.md). For all other cases, see [Splitting Frames Other Than TCP and UDP](splitting-frames-other-than-tcp-and-udp.md).
-
- 
+Additional Ethernet frame characteristics determine how to split IPv4 frames. If the IP frame is fragmented, see [Splitting Fragmented IP Frames](splitting-fragmented-ip-frames.md). If the frame contains TCP information, see [Splitting Frames at the TCP Payload](splitting-frames-at-the-tcp-payload.md). If the frame contains UDP information, see [Splitting Frames at the UDP Payload](splitting-frames-at-the-udp-payload.md). For all other cases, see [Splitting Frames Other Than TCP and UDP](splitting-icmp-frames-and-other-upper-layer-protocol-frames.md).
 
  
-
-
-
-
 

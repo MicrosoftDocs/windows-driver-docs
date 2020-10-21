@@ -1,5 +1,5 @@
 ---
-Description: This section introduces you to USB driver development.
+description: This section introduces you to USB driver development.
 title: First steps for USB client driver development
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -49,10 +49,10 @@ As a driver developer, you must have coding experience in the C programming lang
 <td><p><strong>Step 5</strong>—Familiarize yourself with the Microsoft-provided USB driver stack and driver development concepts.</p>
 <ul>
 <li><a href="usb-3-0-driver-stack-architecture.md" data-raw-source="[USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md)">USB host-side drivers in Windows</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers" data-raw-source="[Concepts for All Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)">Concepts for All Driver Developers</a></li>
+<li><a href="/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers" data-raw-source="[Concepts for All Driver Developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md)">Concepts for All Driver Developers</a></li>
 <li><a href="usb-concepts-for-all-developers.md" data-raw-source="[Concepts for all USB developers](usb-concepts-for-all-developers.md)">Concepts for all USB developers</a></li>
-<li><a href="https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks" data-raw-source="[Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)">Device nodes and device stacks</a></li>
-<li><em>Developing Drivers with Windows Driver Foundation</em>, written by Penny Orwick and Guy Smith. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/developing-drivers-with-wdf" data-raw-source="[Developing Drivers with WDF](https://docs.microsoft.com/windows-hardware/drivers/wdf/developing-drivers-with-wdf)">Developing Drivers with WDF</a>.</li>
+<li><a href="/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks" data-raw-source="[Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md)">Device nodes and device stacks</a></li>
+<li><em>Developing Drivers with Windows Driver Foundation</em>, written by Penny Orwick and Guy Smith. For more information, see <a href="/windows-hardware/drivers/wdf/developing-drivers-with-wdf" data-raw-source="[Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md)">Developing Drivers with WDF</a>.</li>
 <li><a href="usb-driver-samples-in-wdk.md" data-raw-source="[USB driver samples](usb-driver-samples-in-wdk.md)">USB driver samples</a></li>
 </ul></td>
 <td><ul>
@@ -71,7 +71,7 @@ As a driver developer, you must have coding experience in the C programming lang
 </ul></td>
 <td><ul>
 <li>If you are writing a kernel-mode driver, you should have configured debugging on host and target computers over an Ethernet network, 1394 cable, USB 2.0 or 3.0 debug cable, or a null-modem cable.</li>
-<li>If you are writing a user-mode driver, you can use the user-mode debuggers available in the Microsoft Visual Studio environment. You should know <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-user-mode-process-using-visual-studio" data-raw-source="[how to attach to a process or launch a process under the debugger](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugging-a-user-mode-process-using-visual-studio)">how to attach to a process or launch a process under the debugger</a>.</li>
+<li>If you are writing a user-mode driver, you can use the user-mode debuggers available in the Microsoft Visual Studio environment. You should know <a href="/windows-hardware/drivers/debugger/debugging-a-user-mode-process-using-visual-studio" data-raw-source="[how to attach to a process or launch a process under the debugger](../debugger/debugging-a-user-mode-process-using-visual-studio.md)">how to attach to a process or launch a process under the debugger</a>.</li>
 </ul></td>
 </tr>
 <tr class="odd">

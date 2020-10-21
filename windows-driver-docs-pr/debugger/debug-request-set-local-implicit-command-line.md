@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 # DEBUG\_REQUEST\_SET\_LOCAL\_IMPLICIT\_COMMAND\_LINE
 
 
-The DEBUG\_REQUEST\_SET\_LOCAL\_IMPLICIT\_COMMAND\_LINE [**Request**](request.md) operation sets the [debugger engine](https://docs.microsoft.com/windows-hardware/drivers/debugger/introduction#debugger-engine)'s implicit command line.
+The DEBUG\_REQUEST\_SET\_LOCAL\_IMPLICIT\_COMMAND\_LINE [**Request**](request.md) operation sets the [debugger engine](./introduction.md#debugger-engine)'s implicit command line.
 
 **Parameters**
 
@@ -29,29 +29,22 @@ Not used.
 Remarks
 -------
 
-The implicit command line can be used as the command line when creating a process. The process creation options ([**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_create_process_options)) contain an option for using the implicit command line instead of a supplied command line when creating a process.
+The implicit command line can be used as the command line when creating a process. The process creation options ([**DEBUG\_CREATE\_PROCESS\_OPTIONS**](/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_create_process_options)) contain an option for using the implicit command line instead of a supplied command line when creating a process.
 
 ## <span id="see_also"></span>See also
 
 
 [**Request**](request.md)
 
-[**DEBUG\_CREATE\_PROCESS\_OPTIONS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_create_process_options)
+[**DEBUG\_CREATE\_PROCESS\_OPTIONS**](/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_create_process_options)
 
 [**DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS**](debug-request-get-additional-create-options.md)
 
 [**DEBUG\_REQUEST\_SET\_ADDITIONAL\_CREATE\_OPTIONS**](debug-request-set-additional-create-options.md)
 
-[**CreateProcess2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)
+[**CreateProcess2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocess2)
 
-[**CreateProcessAndAttach2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocessandattach2)
-
- 
+[**CreateProcessAndAttach2**](/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-createprocessandattach2)
 
  
-
-
-
-
-
 

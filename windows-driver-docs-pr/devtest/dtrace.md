@@ -34,10 +34,6 @@ The primary GitHub site is located at [https://github.com/opendtrace/](https://g
 
 A set of useful scripts is available at [https://github.com/opendtrace/toolkit](https://github.com/opendtrace/toolkit).
 
-[DTrace.Org](http://dtrace.org) is a web site where many of the original developers provide tips and tricks.
-
-The illumos [Dynamic Tracing Guide](http://dtrace.org/guide/bookinfo.html) describes how to use DTrace to observe, debug, and tune system behavior.
-
 A number of DTrace books are available, such as:
 
 *DTrace: Dynamic Tracing in Oracle Solaris, Mac OS X and FreeBSD* by Brendan Gregg and Jim Mauro
@@ -49,8 +45,8 @@ by Richard McDougall, Jim Mauro and Brendan Gregg
 
 Use the feedback hub to request new features or to report any problems or bugs with Windows DTrace.
 
-1. Launch the feedback hub from a Windows PC, by clicking this link [https://windows-feedback:?contextid=1053](https://windows-feedback:?contextid=1053).
-2. Select *Add new feedback*.
+1. Launch the feedback hub. Go to search, enter the word *feedback*, and then select **Feedback Hub**.
+2. Select either *Suggest a feature* or *Report a problem*.
 3. Provide a detailed, specific description of the issue or suggestion.
 
 ## DTrace Windows Extensions
@@ -134,7 +130,7 @@ The Function Boundary Tracing (FBT) provider provides probes associated with the
 
 For each instruction set, there are a small number of functions that do not call other functions and are highly optimized by the compiler (so-called leaf functions) that cannot be instrumented by FBT. Probes for these functions are not present in DTrace.
 
-The command `dtrace -ln fbt:nt::` will list all the probes and their parameters available for the nt module. Use the debugger [lm (List Loaded Modules)](https://docs.microsoft.com/windows-hardware/drivers/debugger/lm--list-loaded-modules-) command to list all available modules.
+The command `dtrace -ln fbt:nt::` will list all the probes and their parameters available for the nt module. Use the debugger [lm (List Loaded Modules)](../debugger/lm--list-loaded-modules-.md) command to list all available modules.
 
 ```dtrace
 C:\>dtrace -ln "fbt:nt::"
@@ -154,7 +150,7 @@ C:\>dtrace -ln "fbt:nt::"
 
 The DTrace PID provider allows you to trace the internal execution of user-mode processes such as a web browser or a database. You can also attach DTrace at the time of process launch so as to debug process start-up issues. As part of the PID definition, you specify the functions defined in the process and specific offsets (or all offset using wildcard *) within the function. PID provider requires the binary to be launched or running at the time of script execution.
 
-This example command displays information about a specific call in the PID associated with notepad.exe. Use the debugger [lm (List Loaded Modules)](https://docs.microsoft.com/windows-hardware/drivers/debugger/lm--list-loaded-modules-) command to list all available modules.
+This example command displays information about a specific call in the PID associated with notepad.exe. Use the debugger [lm (List Loaded Modules)](../debugger/lm--list-loaded-modules-.md) command to list all available modules.
 
 ```dtrace
 C:\Windows\system32>dtrace -ln "pid$target:ntdll:RtlAllocateHeap:entry" -c notepad.exe
@@ -176,17 +172,15 @@ Traceext.sys (trace extension) is a Windows kernel extension driver, which allow
 
    The archived version of DTrace for 19H1 is available at [Archived Download DTrace on Windows](https://www.microsoft.com/download/58091). Note that this version of DTrace is no longer supported.
 
+2. Download the MSI installation file ([Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441)) from the Microsoft Download Center.
 
-1. Download the MSI installation file from the Microsoft Download Center - [Download DTrace on Windows](https://www.microsoft.com/download/details.aspx?id=100441).
-
-
-2. Select the Complete install.
+3. Select the Complete install.
 
     > [!IMPORTANT]
     > Before using bcdedit to change boot information you may need to temporarily suspend Windows security features such as Patchguard, BitLocker and Secure Boot on the test PC.
     > Re-enable these security features when testing is complete and appropriately manage the test PC, when the security features are disabled.
 
-3. Enable DTrace on the machine using the bcdedit command.  
+4. Enable DTrace on the machine using the bcdedit command.  
 
 ```cmd
 bcdedit /set dtrace ON
@@ -209,10 +203,10 @@ Some DTrace command use Windows symbols. To use Windows symbols create a symbols
 
 ```cmd
 mkdir c:\symbols
-set _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols 
+set _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
 ```
 
-For more information about symbols paths, see [Symbol path for Windows debuggers](https://docs.microsoft.com/windows-hardware/drivers/debugger/symbol-path).
+For more information about symbols paths, see [Symbol path for Windows debuggers](../debugger/symbol-path.md).
 
 ### Using DTrace inside of a Virtual Machine
 

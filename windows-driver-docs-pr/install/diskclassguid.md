@@ -18,12 +18,12 @@ ms.date: 10/17/2018
 # DiskClassGuid
 
 
-DiskClassGuid is an obsolete identifier for the device interface class for hard disk [storage devices](https://docs.microsoft.com/windows-hardware/drivers/storage/index). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_DISK**](guid-devinterface-disk.md) class identifier for new instances of this class.
+DiskClassGuid is an obsolete identifier for the device interface class for hard disk [storage devices](../storage/index.md). Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_DISK**](guid-devinterface-disk.md) class identifier for new instances of this class.
 
 Remarks
 -------
 
-The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](https://go.microsoft.com/fwlink/p/?linkid=256103) sample and the [Addfilter Storage Filter Tool](https://go.microsoft.com/fwlink/p/?linkid=256076). The disk class driver sample uses DiskClassGuid to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of the GUID_DEVINTERFACE_DISK device interface class.
+The storage [samples](https://go.microsoft.com/fwlink/p/?LinkId=618052) in the WDK include the [disk class driver](/samples/browse/) sample and the [Addfilter Storage Filter Tool](/samples/browse/). The disk class driver sample uses DiskClassGuid to register instances of the GUID_DEVINTERFACE_DISK device interface class. The sample Addfilter application uses DiskClassGuid to enumerate instances of the GUID_DEVINTERFACE_DISK device interface class.
 
 Requirements
 ------------
@@ -49,13 +49,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_DISK**](guid-devinterface-disk.md)
-
- 
-
- 
-
-
-
-
-
 

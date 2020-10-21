@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Barcode scanner driver sample
 
-The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and ARM platforms. For more information on universal drivers, go to [Getting Started with Universal Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers).
+The barcode scanner driver sample demonstrates how to create a universal driver for a barcode scanner and is intended to be used as a template for creating a new barcode scanner driver. The sample uses the User-Mode Driver Framework (UMDF) 2.0 and demonstrates basic functionality such as claiming the device for exclusive access. The sample driver can be compiled and deployed on x86, amd64, and ARM platforms. For more information on universal drivers, go to [Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md).
 
 ## Requirements
 
@@ -16,7 +16,7 @@ The barcode scanner driver sample demonstrates how to create a universal driver 
 
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com) (any version)
 
-- [Windows Driver Kit (WDK) 10](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk)
+- [Windows Driver Kit (WDK) 10](../download-the-wdk.md)
 
 The Windows Software Development Kit (SDK) 10 is also required, but this is installed as part of Microsoft Visual Studio.
 
@@ -37,7 +37,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
 1. Double-click the solution file, **BarcodeScanner.sln** to open the solution with Visual Studio.
 
-1. The project zip file was downloaded from the Internet so you may see a security warning when you open the solution. If you do, click **OK** to finish loading the project.
+1. The project zip file was downloaded from the Internet so you may see a security warning when you open the solution. If you do, select **OK** to finish loading the project.
 
 1. In Visual Studio, locate **Solution Explorer**. If this is not already open, select **Solution Explorer** from the **View** menu. In **Solution Explorer**, you can see the project and the source files it contains.
 
@@ -77,7 +77,7 @@ The [Windows driver samples](https://github.com/Microsoft/Windows-driver-samples
 
     `<devcon_path>\devcon.exe install SampleBarcodeScannerDrv.inf Root\SampleBarcodeScannerDrv`
 
-1. You will see a **Windows Security** dialog informing you that the publisher of the driver can't be verified. This is because the driver was signed with a test certificate. Click **Install this driver software anyway**. In a moment, you will see confirmation that your driver was installed correctly.
+1. You will see a **Windows Security** dialog informing you that the publisher of the driver can't be verified. This is because the driver was signed with a test certificate. Select **Install this driver software anyway**. In a moment, you will see confirmation that your driver was installed correctly.
 
 If the Device Console utility wasn't able to install the driver, confirm that you were using the one that matches your current OS platform and the platform of the driver.
 

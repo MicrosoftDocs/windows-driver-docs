@@ -1,6 +1,6 @@
 ---
 title: Driver flighting
-description: Driver flighting in the Partner Center enables you to distribute your driver within defined Windows Insider rings, and provides automatic monitoring and evaluation.
+description: Distribute your driver within defined Windows Insider rings. Driver flighting provides automatic monitoring and evaluation.
 ms.date: 07/27/2018
 ms.topic: article
 ms.localizationpriority: medium
@@ -39,7 +39,7 @@ Once your account has been approved, your organization's administrators will be 
 
 After being submitted to the Partner Center, you can promote your drivers for flighting with the following steps:
 
-1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](https://docs.microsoft.com/windows-hardware/drivers/dashboard/publish-a-driver-to-windows-update) for more information.
+1. Once your driver has been submitted and is in the **validation** stage of processing, create a new shipping label and fill out the **details** and **properties** sections. See [Publish a driver to Windows Update](./publish-a-driver-to-windows-update.md) for more information.
 
 2. Select one or more driver promotion option to promote your driver for flighting, as described below:
 

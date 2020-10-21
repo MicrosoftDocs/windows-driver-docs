@@ -1,5 +1,5 @@
 ---
-Description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
+description: The Microsoft USB Test Tool (MUTT) is collection of devices for testing interoperability of your USB hardware with the Microsoft USB driver stack.
 title: Overview of Microsoft USB Test Tool (MUTT) devices
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -27,8 +27,6 @@ To communicate with MUTT devices, you need the MUTT software package. This packa
 
 <a href="" id="supermutt"></a>SuperMUTT  
 [JJG Technologies]( https://go.microsoft.com/fwlink/p/?linkid=618287)
-
-[Pactron](https://pactronstore.com/products/supermutt.mdl)
 
 <a href="" id="supermutt-pack"></a>SuperMUTT Pack  
 [VIA Labs](https://go.microsoft.com/fwlink/p/?linkid=618285)

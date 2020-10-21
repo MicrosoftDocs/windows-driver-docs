@@ -61,9 +61,9 @@ Driver Verifier will issue a bug check when one of these violations is discovere
 
 When Deadlock Detection finds a violation, it will issue bug check 0xC4. The first parameter of this bug check will indicate the exact violation. Possible violations include:
 
-- Two or more threads involved in a lock hierarchy violation
+-   Two or more threads involved in a lock hierarchy violation
 
-- A resource that is released out of sequence
+-   A thread that tries to exclusively acquire a resource for which it is already a shared owner (exclusively owned resources can be acquired shared; shared resources cannot be acquired exclusively).
 
 - A thread that tries to acquire the same resource twice (a self-deadlock)
 
@@ -77,15 +77,18 @@ When Deadlock Detection finds a violation, it will issue bug check 0xC4. The fir
 
 - Starting in Windows 7, Driver Verifier can predict possible deadlocks. For example, trying to use the same KSPIN\_LOCK data structure both as a regular spin lock and as a stack queued spin lock.
 
-See [**Bug Check 0xC4**](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
+See [**Bug Check 0xC4**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md) (DRIVER\_VERIFIER\_DETECTED\_VIOLATION) for a list of the bug check parameters.
 
 ## Monitoring Deadlock Detection
 
 Once Deadlock Detection finds a violation, the **!deadlock** kernel debugger extension can be used to investigate exactly what has occurred. It can display the lock hierarchy topology as well as the call stacks for each thread at the time the locks were originally acquired.
 
-There is a detailed example of the [**!deadlock**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-deadlock) extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.
+There is a detailed example of the [**!deadlock**](../debugger/-deadlock.md) extension, as well as general information about debugger extensions, in the documentation in the Debugging Tools for Windows package. See [Windows Debugging](../debugger/index.md) for details.
 
 ### Activating This Option
+
+> [!NOTE]
+> This option is incompatible with [Kernel synchronization delay fuzzing](./kernel-synchronization-delay-fuzzing.md)
 
 You can activate the Deadlock Detection feature for one or more drivers by using Driver Verifier Manager or the Verifier.exe command line. For details, see [Selecting Driver Verifier Options](selecting-driver-verifier-options.md).
 
@@ -115,10 +118,10 @@ You can activate the Deadlock Detection feature for one or more drivers by using
 
 - **Using Driver Verifier Manager**
 
-    1. Select **Create custom settings (for code developers)** and then click **Next**.
+    1. Select **Create custom settings (for code developers)** and then select **Next**.
 
     1. Select **Select individual settings from a full list**.
 
     1. Select (check) **Deadlock detection**.
 
-The Deadlock Detection feature is also included in the standard settings. To use this feature, in **Driver Verifier Manager**, click **Create Standard Settings**.
+The Deadlock Detection feature is also included in the standard settings. To use this feature, in **Driver Verifier Manager**, select **Create Standard Settings**.

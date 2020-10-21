@@ -1,5 +1,5 @@
 ---
-Description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
+description: This topic explains how to test the interoperability of USB Type-C enabled systems and Windows.
 title: USB Type-C manual interoperability test procedures
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -259,7 +259,7 @@ Applies to: System, dock, device
 1. Restart the test system.
 2. By using a USB Type-C A/V adapter, connect all ports of the A/V adapter so all functionality can be used as shown in this image:
 
-    ![usb type-c a/v adapter configuration](images/typec5.png)
+    ![Diagram that shows a U S B Type-C A/V adapter configuration.](images/typec5.png)
 
 3. If the system under test has additional USB Type-C ports, repeat step 2.
 4. Run the [DF - Sleep with IO During](/windows-hardware/test/hlk/testref/9d87d997-f451-4a3d-852c-90367d4d3864) test.
@@ -419,7 +419,7 @@ An analyzer trace should explicitly show every link state transition: statements
 
 In order to disable selective suspend on a USB device in Device Manager, first find the device node in the device tree. In this example, disable selective suspend on the hub shown below:
 
-![device manager](images/typec-device-mgr.png)
+![Screenshot that shows a "Generic U S B Hub" selected in "Device Manager".](images/typec-device-mgr.png)
 
 Right-click the device and select **Properties**. Then select the **Power Management** tab.
 

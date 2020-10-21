@@ -1,6 +1,6 @@
 ---
 title: D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_RANGE structure
-description: Reserved for system use. Do not use it in your driver.Note  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header. .
+description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER\_RANGE structure, which is reserved for system use. Do not use it in your driver.
 ms.assetid: 61393cb5-eedc-4186-a321-703b74450ee5
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER_RANGE structure Display Devices"]
 topic_type:

@@ -41,7 +41,7 @@ The indication of NLO discovery happens in the following two cases.
 
 | Type                                                   | Multiple TLV instances allowed | Optional | Description                                                                                      |
 |--------------------------------------------------------|--------------------------------|----------|--------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bss-entry) | X                              |          | A list of BSSIDs. The list must at least contain the entry that triggered this discovery status. |
+| [**WDI\_TLV\_BSS\_ENTRY**](./wdi-tlv-bss-entry.md) | X                              |          | A list of BSSIDs. The list must at least contain the entry that triggered this discovery status. |
 
  
 
@@ -70,9 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

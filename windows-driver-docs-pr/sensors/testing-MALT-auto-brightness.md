@@ -1,6 +1,5 @@
 ---
 title: Testing Auto Brightness
-author: windows-driver-content
 description: This topic describes how to test auto brightness by using the MALT (Microsoft Ambient Light Tool) tool.
 ms.assetid: 0ca1a07e-ab4d-47d1-b6ab-a1aa02ee3ee6
 ms.date: 12/13/2018
@@ -79,4 +78,4 @@ You must manually inspect the results yourself or with your engineering team in 
 2. Are there enough steps in the ambient light response curve? A curve with few points will be noticeable to a user as they adjust the brightness.
 3. Are the steps at the lower end of the curve smaller than at the higher end of the curve? Brightness changes are more perceptible at lower brightness. Consider adding more frequent curve points with smaller steps at lower brightness percentages.
 
-Refer to [this white paper](https://docs.microsoft.com/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.
+Refer to [this white paper](/windows-hardware/design/whitepapers/integrating-ambient-light-sensors-with-computers-running-windows-10-creators-update) for Microsoft's full guidance on integrating light sensors and ambient light response curves.

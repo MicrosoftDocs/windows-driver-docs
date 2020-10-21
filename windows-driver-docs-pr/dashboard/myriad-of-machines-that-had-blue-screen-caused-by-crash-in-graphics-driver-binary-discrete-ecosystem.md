@@ -1,18 +1,18 @@
 ---
-title: Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary
-description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a bluescreen caused by a crash in the graphics driver binary
+title: Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary (Ecosystem)
+description: The measure aggregates telemetry from a 7-day sliding window into a myriad of distinct machines with discrete GPU that experienced a bluescreen caused by a crash in the graphics driver binary (Ecosystem)
 ms.topic: article
-ms.date: 10/28/2019
+ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---
 
-# Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary
+# Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary (Ecosystem)
 
 ## Description
 
 During a user’s session, crash in graphics driver binary may cause bluescreen resulting in machine restart which can interrupt user’s workflow. This measure evaluates myriad (out of 10,000) of machines with discrete GPUs having the driver, encountering bluescreen due to a crash in graphics driver binary. 
 
-This is the ecosystem counterpart of [Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary](https://docs.microsoft.com/windows-hardware/drivers/dashboard/myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard)  measure.
+This is the ecosystem counterpart of [Myriad of machines with discrete GPU that had a blue screen caused by a crash in the graphics driver binary](./myriad-of-machines-that-had-blue-screen-caused-by-crash-in-graphics-driver-binary-discrete-standard.md)  measure.
 
 ## Measure attributes
 
@@ -22,7 +22,7 @@ This is the ecosystem counterpart of [Myriad of machines with discrete GPU that 
 |**Time period**|7-day sliding window|
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|20,000 machines|
-|**Passing criteria**|<= 30/10,000 machines experience a blue screen|
+|**Passing criteria**|<= 15/10,000 machines experience a blue screen|
 |**Measure ID**|16507562|
 
 ## Calculation

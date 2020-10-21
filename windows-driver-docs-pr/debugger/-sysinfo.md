@@ -108,8 +108,6 @@ Displays help for this extension in the Debugger Command window.
 </tbody>
 </table>
 
- 
-
 Remarks
 -------
 
@@ -119,21 +117,10 @@ You can use any combination of the **-debug**, **-devices**, **-memory**, **-pow
 
 The following parameters are supported only on particular systems:
 
--   The **gbl** parameter works only when the target computer supports ACPI.
+- The **gbl** parameter works only when the target computer supports ACPI.
 
--   The **smbios** parameter works only when the target computer supports SMBIOS.
-
--   The **registers** parameter does not work on Itanium-based target computers, because they do not collect MSRs.
+- The **smbios** parameter works only when the target computer supports SMBIOS.
 
 Microsoft makes every effort to remove personally identifiable information (PII) from these records. All PII is removed from dump files. However, on a live system, some PII may not yet be removed. As a result, PII fields will be reported as 0 or blank, even if they actually contain information.
 
 To stop execution of commands that include the **cpuinfo**, **gbl**, **registers**, or **smbios** parameters at any time, press CTRL+BREAK (in WinDbg) or CTRL+C (in KD).
-
- 
-
- 
-
-
-
-
-

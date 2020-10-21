@@ -6,12 +6,11 @@ keywords: ["read-ahead parameters"]
 topic_type:
 - apiref
 api_name:
-- read_ahead_parame3ters
+- read_ahead_parameters
 api_location:
 - NtosKrnl.exe
 api_type:
 - DllExport
-ms.author: eliotgra
 ms.date: 09/14/2017
 ms.localizationpriority: medium
 ---
@@ -95,6 +94,6 @@ Requirements
 
 [**CcSetReadAheadGranularityEx**](CcSetReadAheadGranularityEx.md)
 
-[**CcReadAhead**](https://docs.microsoft.com/previous-versions/ff539191(v=vs.85))
+[**CcReadAhead**](/previous-versions/ff539191(v=vs.85))
 
-[**CcScheduleReadAhead**](https://msdn.microsoft.com/library/windows/hardware/ff539200)
+[**CcScheduleReadAhead**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccschedulereadahead)

@@ -31,7 +31,7 @@ The Microsoft component uses the list of indicated entries to report the BSS lis
 
 | TLV                                         | Multiple TLV instances allowed | Optional | Description                                           |
 |---------------------------------------------|--------------------------------|----------|-------------------------------------------------------|
-| [**WDI\_TLV\_SSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ssid) |                                |          | The SSID that the host needs the BSS list update for. |
+| [**WDI\_TLV\_SSID**](./wdi-tlv-ssid.md) |                                |          | The SSID that the host needs the BSS list update for. |
 
  
 
@@ -69,9 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

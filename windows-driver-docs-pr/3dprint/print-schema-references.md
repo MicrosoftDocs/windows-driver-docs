@@ -54,13 +54,13 @@ The Unicode Consortium. The Unicode Standard, Version 4.0.0, defined by: The Uni
 
 Bray, Tim, Eve Maler, Jean Paoli, C. M. Sperlberg-McQueen, and François Yergeau (editors). "Extensible Markup Language (XML) 1.0 (Fifth Edition)." World Wide Web Consortium. 2008.
 
-[http://www.w3.org/TR/2008/REC-xml-20081126/](http://www.w3.org/TR/2008/REC-xml-20081126/)
+[https://www.w3.org/TR/2008/REC-xml-20081126/](https://www.w3.org/TR/2008/REC-xml-20081126/)
 
 ## XML Namespaces
 
 Bray, Tim, Dave Hollander, Andrew Layman, and Richard Tobin (editors). "Namespaces in XML 1.0 (Third Edition)." World Wide Web Consortium. 2009.
 
-[http://www.w3.org/TR/2009/REC-xml-names-20091208/](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
+[https://www.w3.org/TR/2009/REC-xml-names-20091208/](https://www.w3.org/TR/2009/REC-xml-names-20091208/)
 
 ## XML Schema
 

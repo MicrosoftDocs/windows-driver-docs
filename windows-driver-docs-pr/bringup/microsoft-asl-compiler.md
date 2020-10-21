@@ -76,7 +76,6 @@ where AMLFile is the name of the compiled AML file that contains the table you w
 
 -   [ACPICA Documentation](https://acpica.org/documentation/)
 -   [ACPI Website](https://uefi.org/specifications/)
--   [ACPI Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/acpi-debugging)
--   [Acpi.sys: The Windows ACPI Driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver)
--   [Power Management and ACPI](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn614610(v=vs.85))
-
+-   [ACPI Debugging](../debugger/acpi-debugging.md)
+-   [Acpi.sys: The Windows ACPI Driver](../kernel/acpi-driver.md)
+-   [Power Management and ACPI](/previous-versions/windows/hardware/design/dn614610(v=vs.85))

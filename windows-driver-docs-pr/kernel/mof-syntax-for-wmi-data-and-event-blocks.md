@@ -19,19 +19,22 @@ A driver writer defines a driver's schema in Managed Object Format (MOF). MOF is
 
 A MOF class definition for a WMI data block follows this syntax:
 
-**\[**<em>Required and optional class qualifiers</em>**\]**
+```mof
+[Required and optional class qualifiers]
 
-**class***ClassName* : *OptionalBaseClass*
-**{**
-**\[key, read\]**
-**string InstanceName;**
-**\[read\]**
-**boolean Active;**
-**\[** *Required and optional property qualifiers* **\]**
-<em>datatype itemname1</em>**;**
-**\[** *Required and optional property qualifiers* **\]**
-<em>datatype itemnameN</em>**;**
-**};**
+classClassName : OptionalBaseClass 
+{ 
+[key, read] 
+string InstanceName; 
+[read] 
+boolean Active; 
+[ Required and optional property qualifiers ] 
+datatype itemname1; 
+[ Required and optional property qualifiers ] 
+datatype itemnameN; 
+}; 
+```
+
 The following topics describe the syntax elements shown above:
 
 [WMI Class Qualifiers](wmi-class-qualifiers.md)

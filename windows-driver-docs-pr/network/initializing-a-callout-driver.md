@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Initializing a Callout Driver
 
 
-A callout driver initializes itself within its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The main initialization tasks are as follows:
+A callout driver initializes itself within its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The main initialization tasks are as follows:
 
 -   [Specifying an Unload Function](specifying-an-unload-function.md)
 
@@ -18,10 +18,4 @@ A callout driver initializes itself within its [**DriverEntry**](https://docs.mi
 -   [Registering Callouts with the Filter Engine](registering-callouts-with-the-filter-engine.md)
 
  
-
- 
-
-
-
-
 

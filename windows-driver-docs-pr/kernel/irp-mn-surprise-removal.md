@@ -55,7 +55,7 @@ Operation
 
 This IRP is handled first by the driver at the top of the device stack and then passed down to each lower driver in the stack.
 
-For more information about this IRP, see [Handling an IRP\_MN\_SURPRISE\_REMOVAL Request](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-an-irp-mn-surprise-removal-request). For additional information about supporting device removal, see [Removing a Device](https://docs.microsoft.com/windows-hardware/drivers/kernel/removing-a-device).
+For more information about this IRP, see [Handling an IRP\_MN\_SURPRISE\_REMOVAL Request](./handling-an-irp-mn-surprise-removal-request.md). For additional information about supporting device removal, see [Removing a Device](./removing-a-device-in-a-function-driver.md).
 
 **Sending This IRP**
 
@@ -81,11 +81,4 @@ Requirements
 
 
 [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md)
-
- 
-
- 
-
-
-
 

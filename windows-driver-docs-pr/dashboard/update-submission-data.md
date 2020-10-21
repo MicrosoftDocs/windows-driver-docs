@@ -1,8 +1,6 @@
 ---
 title: Update submission data
 description: This method, in the Microsoft Hardware API, updates details of a submission.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 04/05/2018
 ms.localizationpriority: medium

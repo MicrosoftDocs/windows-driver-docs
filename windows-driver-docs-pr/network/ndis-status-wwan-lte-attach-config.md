@@ -14,14 +14,12 @@ Miniport drivers use the NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG notification to info
 
 Unsolicited events are sent if the default LTE attach context is updated by the network either over the air (OTA) or by short message service (SMS). In this case, the miniport driver must update the default LTE attach contexts and send this notification to the host OS with the updated list.
 
-This status notification uses the [**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_contexts) structure.
+This status notification uses the [**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_contexts) structure.
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1703 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1703
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
@@ -29,4 +27,4 @@ This status notification uses the [**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](https://do
 
 [OID_WWAN_LTE_ATTACH_CONFIG](oid-wwan-lte-attach-config.md)
 
-[**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_contexts)
+[**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_contexts)

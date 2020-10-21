@@ -1,12 +1,12 @@
 ---
-title: Number of user mode crashes in Communication and Collaboration Applications normalized by usage <= Baseline goal
-description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Communication and Collaboration Applications, caused by the graphics drivers, over total runtime in years
+title: Number of user mode crashes in Communication and Collaboration Applications normalized by usage <= Baseline goal (Ecosystem)
+description: The measure aggregates telemetry from a 7-day sliding window a ratio of crashes in Communication and Collaboration Applications, caused by the graphics drivers, over total runtime in years (Ecosystem)
 ms.topic: article
 ms.date: 05/11/2020
 ms.localizationpriority: medium
 ---
 
-# Number of user mode crashes in Communication and Collaboration Applications normalized by usage <= Baseline goal
+# Number of user mode crashes in Communication and Collaboration Applications normalized by usage <= Baseline goal (Ecosystem)
 
 ## Description
 
@@ -32,7 +32,7 @@ Examples of Communication and Collaboration applications considered for this mea
 * VIBER.EXE
 * MICROSOFT.SKYPEROOMSYSTEM
 
-This is the ecosystem counterpart of [Number of user mode crashes in Communication and Collaboration applications normalized by usage <= Baseline goal](https://docs.microsoft.com/windows-hardware/drivers/dashboard/graphics-user-mode-crashes-collaboration-standard) measure.
+This is the ecosystem counterpart of [Number of user mode crashes in Communication and Collaboration applications normalized by usage <= Baseline goal](./graphics-user-mode-crashes-collaboration-standard.md) measure.
 
 ## Measure attributes
 

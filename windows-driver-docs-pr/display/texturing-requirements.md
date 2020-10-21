@@ -25,11 +25,11 @@ The following are requirements for texture sizes:
 
 2.  If the hardware has an aspect ratio restriction on its textures, that ratio must be present in the **dwMaxTextureAspectRatio** member of the D3DDEVICEDESC7 structure.
 
-3.  If the device supports only texture dimensions that are powers of two, then it must set the **dwTextureCaps** member of the [**D3DPRIMCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dprimcaps) structure to contain the D3DPTEXTURECAPS\_POW2 flag for the appropriate primitive type (line or triangle).
+3.  If the device supports only texture dimensions that are powers of two, then it must set the **dwTextureCaps** member of the [**D3DPRIMCAPS**](/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dprimcaps) structure to contain the D3DPTEXTURECAPS\_POW2 flag for the appropriate primitive type (line or triangle).
 
 4.  If the device can support two-dimensional (2D) textures (that is, not volume or cube textures) of an arbitrary size when the texture addressing mode for the texture stage is set to D3DTADDRESS\_CLAMP, the texture wrapping for the texture stage is disabled (D3DRENDERSTATE\_WRAP*n* set to 0), and MIP mapping is not in use, then it must set the D3DPTEXTURECAPS\_NONPOW2CONDITIONAL flag.
 
-5.  If the device only supports textures whose dimensions are equal, then it must set the **dwTextureCaps** member of the [**D3DPRIMCAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dprimcaps) structure to contain the D3DPTEXTURECAPS\_SQUAREONLY flag for the appropriate primitive type (line or triangle).
+5.  If the device only supports textures whose dimensions are equal, then it must set the **dwTextureCaps** member of the [**D3DPRIMCAPS**](/windows-hardware/drivers/ddi/d3dcaps/ns-d3dcaps-_d3dprimcaps) structure to contain the D3DPTEXTURECAPS\_SQUAREONLY flag for the appropriate primitive type (line or triangle).
 
 If the device supports textures of an arbitrary size without restrictions other than those described in the first and second requirements, then it must not set any of the flags described in the third, fourth, and fifth requirements.
 
@@ -54,10 +54,4 @@ If a device supports a particular combination of texture stage state blending op
 If a device does not support a particular combination of texture stage state blending operations in a single pass, or does not support one or more of the blending operations or operands, then it must return one of the error codes allowable for the **IDirect3DDevice7::ValidateDevice** method. Invalid blending operations cannot silently fail the **IDirect3DDevice7::ValidateDevice** method.
 
  
-
- 
-
-
-
-
 

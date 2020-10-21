@@ -1,5 +1,5 @@
 ---
-Description: An app that communicates with a USB device usually sends several control transfers requests.
+description: An app that communicates with a USB device usually sends several control transfers requests.
 title: How to send a USB control transfer (UWP app)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

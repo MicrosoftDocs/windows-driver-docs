@@ -33,17 +33,24 @@ When attempting to capture an image, the device previews the image that is about
 
    a. *Successful preview event = 0% failure*
 
-       MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STARTED) HRESULT == 0
-       MFCaptureEnginePreviewSinkFirstFrame (MF_CAPTURE_ENGINE_PREVIEW_STARTED)
+```cpp
+MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STARTED) HRESULT == 0
+MFCaptureEnginePreviewSinkFirstFrame (MF_CAPTURE_ENGINE_PREVIEW_STARTED)
+```
 
    b. *Failed preview event = 100% failure*
 
-       MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STARTED) HRESULT != 0
-      **OR** a successful preview event followed by:
+```cpp
+MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STARTED) HRESULT != 0
+```
 
-       MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_ERROR)
-       MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STOPPED) > 1000ms
-       MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STARTED) HRESULT != 0
+**OR** a successful preview event followed by:
+
+```cpp
+MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_ERROR)
+MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STOPPED) > 1000ms
+MFCaptureEngineOnEvent (MF_CAPTURE_ENGINE_PREVIEW_STARTED) HRESULT != 0
+```
 
 ### Final calculation
 

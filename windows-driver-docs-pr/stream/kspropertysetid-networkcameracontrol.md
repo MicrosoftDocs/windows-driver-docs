@@ -1,7 +1,7 @@
 ---
 title: KSPROPERTYSETID\_NetworkCameraControl
 description: Defines the network camera property set ID. 
-ms.date: 04/14/2020
+ms.date: 07/07/2020
 ms.localizationpriority: medium
 ---
 
@@ -18,8 +18,8 @@ DEFINE_GUIDSTRUCT("0E780F09-5745-4E3A-BC9F-F226EA43A6EC", KSPROPERTYSETID_Networ
 
 The **KSPROPERTYSETID\_NetworkCameraControl** property set contains the following properties:
 
-[**KSPROPERTY_NETWORKCAMERACONTROL_NTP**](https://docs.microsoft.com/windows-hardware/drivers/stream/)
+[**KSPROPERTY_NETWORKCAMERACONTROL_NTP**](./ksproperty-networkcameracontrol-ntp.md)
 
-[**KSPROPERTY_NETWORKCAMERACONTROL_URI**](https://docs.microsoft.com/windows-hardware/drivers/stream/)
+[**KSPROPERTY_NETWORKCAMERACONTROL_URI**](./ksproperty-networkcameracontrol-uri.md)
 
-These property names are defined in the [KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY](https://docs.microsoft.com/windows-hardware/drivers/stream/ne-ksmedia-ksproperty_networkcameracontrol_property) enumeration.
+These property names are defined in the [KSPROPERTY_NETWORKCAMERACONTROL_PROPERTY](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_networkcameracontrol_property) enumeration.
