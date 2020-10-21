@@ -26,9 +26,9 @@ This topic lists the Microsoft-provided drivers for the supported USB device cla
 
 Hardware vendors should not write drivers for the supported device classes. Windows class drivers might not support all of the features that are described in a class specification. If some of the device's capabilities are not implemented by the class driver, vendors should provide supplementary drivers that work in conjunction with the class driver to support the entire range of functionality provided by the device.
 
-For general information about USB-IF approved device classes, see the [USB Technology](https://www.usb.org/developers/defined_class/) website.
+For general information about USB-IF approved device classes see the [USB Common Class Specification](https://usb.org/sites/default/files/usbccs10.pdf)
 
-For the current list of USB class specifications and class codes, visit the [USB DWG website](https://www.usb.org/about/dwg_charter/).
+The current list of USB class specifications and class codes is documented in the [USB-IF Defined Class Code List](https://www.usb.org/defined-class-codes).
 
 ## Device setup classes
 

@@ -27,7 +27,6 @@ We recommend using the **–verify** option for checking the controller and the 
 
 ## Related topics
 
-[USB test tools](usb-test-tools.md)  
 [Tools in the MUTT software package](mutt-software-package.md)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
 
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
