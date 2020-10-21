@@ -49,10 +49,10 @@ The blog post describes how a device must report a container ID such that Window
 
 ## Implementing power management
 
-[Link Power management in USB 3.0 Hardware](link-power-management-in-usb-3-0-hardware.md)  
+[Link Power management in USB 3.0 Hardware](/windows-hardware/drivers/usbcon/usb-3-0-lpm-mechanism-)  
 This document provides guidelines for hardware vendors and OEMs to implement power management for USB devices by using Link Power Management (LPM) in conjunction with Selective Suspend. It explains hardware transitions from U1 to U2 and provides information about common pitfalls in LPM implementation in USB controllers, hubs, and devices.
 
-[Demystifying selective suspend](link-power-management-in-usb-3-0-hardware.md)  
+[Demystifying selective suspend](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/demystifying-usb-selective-suspend/ba-p/270736)  
 This blog post describes how the USB driver stack handles function and selective suspend in USB 3.0 devices.
 
 ## Debugging and diagnostic tools

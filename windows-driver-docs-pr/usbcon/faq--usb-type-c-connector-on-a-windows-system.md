@@ -120,7 +120,7 @@ The non-PD port attempts to charge the system by using USB Type-C current levels
 The alternate mode feature allows non-USB protocols (such as Thunderbolt, SuperMHL) to run over the USB cable, while simultaneously preserving USB 2.0 and charging functionality. If a user connects a USB Type-C alternate mode device or adapter that is not supported by the attached PC or phone running Windows 10, an error condition is detected and a message is shown to the user.
 
 * If the device or adapter exposes a Billboard device, the user sees information about the error condition to help the troubleshoot issues. Windows 10 provides an in-box driver for a Billboard device and notifies the user that an error has occurred.
-* The user might see an error notification, "Try improving the USB connection". For more information, see [Error messages for a USB Type-C Windows system](introduction-to-usb-type-c-connectors.md#-4).
+* The user might see an error notification, "Try improving the USB connection". For more information, see [Error messages for a USB Type-C Windows system](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2).
 
 For the best results, make sure that the alternate mode device or adapter’s requirements are met by PC or phone or cable.
 
@@ -143,7 +143,7 @@ This is not a valid connection.
 * You cannot connect two PCs running Windows 10 for desktop editions.
 * You cannot connect two mobile devices running Windows 10 Mobile.
 
-If the user attempts to make such a connection, Windows shows an error message. For more information, see [Error messages for a USB Type-C Windows system](introduction-to-usb-type-c-connectors.md#-6).
+If the user attempts to make such a connection, Windows shows an error message. For more information, see [Error messages for a USB Type-C Windows system](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2).
 
 The only valid connection is between a Windows Mobile device and Windows desktop device.
 
