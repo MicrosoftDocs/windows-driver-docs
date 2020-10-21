@@ -27,7 +27,7 @@ If you want to find out about testing drivers in general, see the following reso
 -   **Visual Studio Kernel-Mode Debugging, using Serial over USB**
     <br/>Use this test/debug option, if you want the help of Visual Studio in setting up the debugging session for your sensor and its universal sensor driver. For more information, see [Setting Up Kernel-Mode Debugging using Serial over USB in Visual Studio](../debugger/setting-up-kernel-mode-debugging-using-serial-over-usb-in-visual-studio.md).
 -   **Manually set up Kernel-Mode Debugging, using Serial over USB**
-    <br/>If you want to test/debug your universal sensor driver, but don't want to use Visual Studio for doing the setup, you can use this option. For instructions on how to do this, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-kernel-mode-debugging-using-serial-over-usb-manually-).
+    <br/>If you want to test/debug your universal sensor driver, but don't want to use Visual Studio for doing the setup, you can use this option. For instructions on how to do this, see [Setting Up Kernel-Mode Debugging using Serial over USB Manually](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/setting-up-a-usb-3-0-debug-cable-connection).
 -   **WDK driver testing interface**
     You can use the Windows driver kit (WDK) driver testing interface via Microsoft Visual Studio, to test drivers. For information about how to do this, see [Testing a Driver](../develop/testing-a-driver.md).
 

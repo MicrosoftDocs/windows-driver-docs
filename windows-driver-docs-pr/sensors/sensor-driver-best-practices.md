@@ -37,7 +37,7 @@ The following requirements apply to properties and data fields.
 
 -   Your driver must use the correct type when setting, or returning, a [property](sensor-properties.md).
 
--   Your driver must use the correct type when returning a [data field](sensor-categories--types--and-data-fields.md).
+-   Your driver must use the correct type when returning a [data field](common-data-fields.md).
 
 ## Events
 
@@ -46,6 +46,7 @@ The following recommendations apply to sensor events:
 -   Raise data-updated events only when the current report interval has elapsed and the change sensitivity is exceeded. This is largely a function of the device firmware. However, the driver must arbitrate among multiple clients. For more information, see [About Sensor Driver Events](about-sensor-driver-events.md).
 
 ## Related topics
+
 [Writing a Location Sensor Driver](../gnss/writing-a-location-sensor-driver.md)
 [Supporting Ambient Light Sensors](supporting-ambient-light-sensors.md)
 [The Sensors Geolocation Driver Sample](../gnss/sensors-geolocation-driver-sample.md)

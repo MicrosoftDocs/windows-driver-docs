@@ -50,6 +50,6 @@ The geolocation sample driver demonstrates a minimal UMDF driver that emulates a
 The geolocation sample driver also includes code that demonstrates adding support for the Radio Management API. This is described in the [Supporting radio managment](../gnss/supporting-radio-management.md) topic.
 
 ## Related topics
-[Programming Guide](programming-guide.md)  
+
 [Sensor driver logic](driver-logic--pseudo-code-.md)  
 [The Sensor Diagnostic Tool](the-sensor-diagnostic-tool.md)
