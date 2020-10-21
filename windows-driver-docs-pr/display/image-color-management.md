@@ -25,4 +25,4 @@ To find out more about Image Color Management and a particular class of output d
 
 [Color Management for Still Image Devices](../image/color-management-for-still-image-devices.md)
 
-For a general discussion about Image Color Management, see the Microsoft [Windows SDK documentation](/previous-versions//dd372446(v=vs.85)).
+For a general discussion about Image Color Management, see the Microsoft [Windows SDK documentation](/previous-versions/windows/desktop/wcs/windows-color-system).
