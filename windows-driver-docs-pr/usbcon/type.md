@@ -310,11 +310,11 @@ The goal of this plan is to determine whether this system can perform the most c
 - Perform [FT Case 3: System Power Transitions](#ft3) for each peripheral in the list with USB to Type-C dongle. Verify that each device enumerates and functions as expected before and after the system power state changes.
   - Configure The USB Type-A to USB Type-C adapter as shown in this image:
 
-        ![topology for testing the usb type a dongle](images/typec1.png)
+    ![topology for testing the usb type a dongle](images/typec1.png)
 
   - Configure the USB Type-C A/V dongle as shown in this image.
 
-        ![usb type-c a/v dongle configuration](images/typec2.png)
+    ![usb type-c a/v dongle configuration](images/typec2.png)
 
 - Perform [FT Case 2: System Boot](#ft2) with only the USB Type-C A/V dongle configured as shown in the preceding image and validate these scenarios:
   - System will boot with all devices connected and video will display in monitor connected through USB Type-C A/V dongle.

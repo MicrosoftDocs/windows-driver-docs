@@ -72,20 +72,20 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
   - Secondary desktop PC or a laptop.
 
-        The proxy controller communicates with a mobile SUT, the microcontroller to load the firmware.
+    The proxy controller communicates with a mobile SUT, the microcontroller to load the firmware.
 
   - SUT by using a secondary USB port.
   - SUT by using a 3.5mm audio jack.
 
-        In this set up, you need:
+    In this set up, you need:
 
-        -   DTMF shield to run tests on SUTs with a single USB Type-C port. DTMF provides the ability to control the shield from a single-port device with an audio jack after the initial flash of the firmware has been completed.
+    - DTMF shield to run tests on SUTs with a single USB Type-C port. DTMF provides the ability to control the shield from a single-port device with an audio jack after the initial flash of the firmware has been completed.
 
-            ![dtmf shield](images/dtmf.png)
+        ![dtmf shield](images/dtmf.png)
 
-        -   4-pin male-to-male audio cable used to connect the DTMF shield to the SUT. This allows the SUT to control the USB Type-C shield during testing.
+    - 4-pin male-to-male audio cable used to connect the DTMF shield to the SUT. This allows the SUT to control the USB Type-C shield during testing.
 
-            ![3.5mm audio jack](images/audio-jack.png)
+        ![3.5mm audio jack](images/audio-jack.png)
 
 ## Software requirements
 
@@ -308,25 +308,25 @@ Basic demo of the port switching sequence.</td>
 
 Connect to a port
 
-```
+```console
 connexutil.exe /setport 1
 ```
 
 Alternatively use the port name as printed on the board:
 
-```
+```console
 connexutil.exe /setport J3
 ```
 
 Disconnect all ports
 
-```
+```console
 connexutil.exe /setport 0
 ```
 
 Loop through all ports
 
-```
+```console
 for %p in (1 2 3 4)
 do (
     connexutil.exe /setport %p
@@ -596,7 +596,7 @@ The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direct
 
 ## Using ETW to log issues
 
-Go to https://aka.ms/usbtrace for instructions and to download a script for capturing ETW traces from the USB drivers.
+See [How to capture a USB event trace with Logman](/windows-hardware/drivers/usbcon/how-to-capture-a-usb-event-trace)
 
 ## Reporting test results
 
