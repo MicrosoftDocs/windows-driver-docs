@@ -27,21 +27,21 @@ By providing support for USB dual role in Windows 10, we provide the following b
 
 The following table shows the list of *host* class drivers that are available on desktop and mobile SKUs of Windows.
 
-| USB Host class drivers                                             | Windows 10 Mobile | Windows 10 for desktop editions |
-|--------------------------------------------------------------------|-------------------|---------------------------------|
-| USB Hubs (USBHUB)                                                  | Yes               | Yes (Since Windows 2000)        |
-| HID - Keyboard/Mice (HidClass, KBDCLass, MouClass, KBDHid, MouHid) | Yes               | Yes (Since Windows 2000)        |
-| USB Mass Storage (Bulk & UASP)                                     | Yes               | Yes (Since Windows 2000)        |
-| Generic USB Host Driver (WinUSB)                                   | Yes               | Yes (Since Windows Vista)       |
-| USB Audio in / out (USBAUDIO)                                      | Yes               | Yes (Since Windows XP)          |
-| Serial Devices (USBSER)                                            | Yes               | Yes (Since Windows 10)          |
-| Bluetooth (BTHUSB)                                                 | Yes               | Yes (Since Windows XP)          |
-| Print (usbprint)                                                   | No                | Yes (Since Windows XP)          |
-| Scanning (USBSCAN)                                                 | No                | Yes (Since Windows 2000)        |
-| WebCam (USBVIDEO)                                                  | No                | Yes (Since Windows Vista)       |
-| Media Transfer Protocol (MTP Initiator)                            | No                | Yes (Since Windows Vista)       |
-| Remote NDIS (RNDIS)                                                | No                | Yes (Since Windows XP)          |
-| IP over USB (IPoverUSB)                                            | No                | Yes (New for Windows 10)        |
+| USB Host class drivers | Windows 10 Mobile | Windows 10 for desktop editions |
+| --- | --- | --- |
+| USB Hubs (USBHUB) | Yes | Yes (Since Windows 2000) |
+| HID - Keyboard/Mice (HidClass, KBDCLass, MouClass, KBDHid, MouHid) | Yes | Yes (Since Windows 2000) |
+| USB Mass Storage (Bulk & UASP) | Yes | Yes (Since Windows 2000) |
+| Generic USB Host Driver (WinUSB) | Yes | Yes (Since Windows Vista) |
+| USB Audio in / out (USBAUDIO) | Yes | Yes (Since Windows XP) |
+| Serial Devices (USBSER) | Yes | Yes (Since Windows 10) |
+| Bluetooth (BTHUSB)  | Yes | Yes (Since Windows XP) |
+| Print (usbprint) | No | Yes (Since Windows XP) |
+| Scanning (USBSCAN) | No | Yes (Since Windows 2000) |
+| WebCam (USBVIDEO) | No | Yes (Since Windows Vista) |
+| Media Transfer Protocol (MTP Initiator) | No | Yes (Since Windows Vista) |
+| Remote NDIS (RNDIS) | No | Yes (Since Windows XP) |
+| IP over USB (IPoverUSB) | No  | Yes (New for Windows 10) |
 
 The Class drivers in the table were selected based on device class telemetry, and based on key scenarios that were selected for Windows 10. We plan on including a limited number of inbox, 3rd party Host drivers, to support key devices on Windows 10 Mobile. And for Windows 10 for desktop editions, these drivers will be available either on the OEM’s website or via Windows Update (WU).
 
@@ -49,13 +49,14 @@ For Windows 10 Mobile, the 3rd party drivers that are not included inbox will no
 
 The following table shows the *function* class drivers that are available on mobile SKUs of Windows.
 
-**Note**  Function drivers are *not* available on Windows 10 for desktop editions.
+> [!NOTE]
+> Function drivers are *not* available on Windows 10 for desktop editions.
 
-| USB Function class drivers                 | Windows 10 Mobile | Windows 10 for desktop editions | Notes                                                                                                                                  |
-|--------------------------------------------|-------------------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Media Transfer Protocol (MTP Responder)    | Yes               | No                              | There are no scenarios for MTP responder on Desktop. P2P scenarios between Desktop systems were enabled via Easy-MigCable over WinUSB. |
-| Video Display out (vidstream)              | Yes               | No                              |                                                                                                                                        |
-| Generic USB Function Driver (GenericUSBFn) | Yes               | No                              | This will be needed by IPoverUSB and other desktop flashing scenarios.                                                                 |
+| USB Function class drivers | Windows 10 Mobile | Windows 10 for desktop editions | Notes |
+| --- | --- | --- | --- |
+| Media Transfer Protocol (MTP Responder) | Yes | No | There are no scenarios for MTP responder on Desktop. P2P scenarios between Desktop systems were enabled via Easy-MigCable over WinUSB. |
+| Video Display out (vidstream) | Yes | No | |
+| Generic USB Function Driver (GenericUSBFn) | Yes | No | This will be needed by IPoverUSB and other desktop flashing scenarios. |
 
 We will monitor device attachment data, to let us know if we need to provide additional class driver support, as the device class popularity list changes over time.
 
@@ -65,7 +66,7 @@ The Microsoft USB Role Switch (URS) driver allows a system implementer to take a
 
 The URS driver is intended to provide dual-role functionality for platforms that use a single USB controller that can operate in both host and peripheral roles over a single port. The *peripheral role* is also known as a *function role*. The URS driver manages the current role of the port, and the loading and unloading of the appropriate software stacks, based on hardware events from the platform.
 
-On a system that has a USB micro-AB connector, the driver makes use of hardware interrupts that indicates the state of the ID pin on the connector. This pin is used to detect whether the controller needs to assume the host role or the function role in a connection. For more information, see the [USB On-The-Go specification](https://www.usb.org/usb-on-the-go). On systems with a USB Type-C connector, the OEM implementer is expected to provide a connector client driver by using the [USB Type-C connector driver programming interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference). The client driver communicates with the Microsoft-provided USB connector Manager class extension (UcmCx) to manage all aspects of the USB Type-C connector, such as CC detection, PD messaging, and others. For role switching, the client driver communicates the state of the USB Type-C connector to the URS driver.
+On a system that has a USB micro-AB connector, the driver makes use of hardware interrupts that indicates the state of the ID pin on the connector. This pin is used to detect whether the controller needs to assume the host role or the function role in a connection. For more information, see the [USB On-The-Go specification](https://www.usb.org/usb-on-the-go). On systems with a USB Type-C connector, the OEM implementer is expected to provide a connector client driver by using the [USB Type-C connector driver programming interfaces](/windows-hardware/drivers/ddi/_usbref/#type-c-driver-reference). The client driver communicates with the Microsoft-provided USB connector Manager class extension (UcmCx) to manage all aspects of the USB Type-C connector, such as CC detection, PD messaging, and others. For role switching, the client driver communicates the state of the USB Type-C connector to the URS driver.
 
 The following diagram shows the USB software driver stack for a dual-role controller that uses the URS driver.
 

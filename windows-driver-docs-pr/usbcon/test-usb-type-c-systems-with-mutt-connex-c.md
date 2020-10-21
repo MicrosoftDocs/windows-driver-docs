@@ -72,7 +72,7 @@ To perform the USB Type-C interoperability test procedures by using USB Type-C C
 
   - Secondary desktop PC or a laptop.
 
-        The proxy controller communicates, with a mobile SUT; the microcontroller to load the firmware.
+        The proxy controller communicates with a mobile SUT, the microcontroller to load the firmware.
 
   - SUT by using a secondary USB port.
   - SUT by using a 3.5mm audio jack.
@@ -308,25 +308,25 @@ Basic demo of the port switching sequence.</td>
 
 Connect to a port
 
-```console
+```
 connexutil.exe /setport 1
 ```
 
 Alternatively use the port name as printed on the board:
 
-```console
+```
 connexutil.exe /setport J3
 ```
 
 Disconnect all ports
 
-```console
+```
 connexutil.exe /setport 0
 ```
 
 Loop through all ports
 
-```console
+```
 for %p in (1 2 3 4)
 do (
     connexutil.exe /setport %p

@@ -31,23 +31,23 @@ Before you begin, make sure that you meet the following requirements:
 - Your host computer has Visual Studio 2019.
 - Your host computer has the latest Windows Driver Kit (WDK) for Windows 10, version 1903.
 
-    The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](https://go.microsoft.com/fwlink/p/?linkid=617585).
+    The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](/windows-hardware/drivers/download-the-wdk).
 
-- Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617701).
-- If you are using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](https://docs.microsoft.com/windows-hardware/drivers/debugger/setting-up-user-mode-debugging-in-visual-studio).
+- Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](/windows-hardware/drivers/debugger/debugger-download-tools).
+- If you are using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](/windows-hardware/drivers/debugger/setting-up-user-mode-debugging-in-visual-studio).
 
 ### Hardware requirements
 
 Get a USB device for which you will be writing the client driver. In most cases, you are provided with a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the USB driver and the related design decisions.
 
-If you are new to USB driver development, use the OSR USB FX2 learning kit to study USB samples included with the WDK. You can get the learning kit from [OSR Online](https://go.microsoft.com/fwlink/p/?linkid=617553). It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
+If you are new to USB driver development, use the [OSR USB FX2 learning kit](https://www.amazon.com/OSR-USB-FX2-Learning-Kit/dp/B07FNSYCLR) to study USB samples included with the WDK. It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
 
 ### Recommended reading
 
-- [Concepts for All Driver Developers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
-- [Device nodes and device stacks](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)
-- [Getting started with Windows drivers](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/index)
-- [User-Mode Driver Framework](https://docs.microsoft.com/windows-hardware/drivers/debugger/user-mode-driver-framework-debugging)
+- [Concepts for All Driver Developers](/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
+- [Device nodes and device stacks](/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)
+- [Getting started with Windows drivers](/windows-hardware/drivers/gettingstarted/index)
+- [User-Mode Driver Framework](/windows-hardware/drivers/debugger/user-mode-driver-framework-debugging)
 - *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](https://go.microsoft.com/fwlink/p/?linkid=617702).
 
 ## Instructions
@@ -72,15 +72,16 @@ The following screen shots show the **New Project** dialog box for the **USB Use
 
 This topic assumes that the name of the project is "MyUSBDriver\_UMDF\_". It contains the following files:
 
-| Files                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Driver.h; Driver.c         | Declares and defines a callback class that implements the [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface. The class defines methods that are invoked by the framework driver object. The main purpose of this class is to create a device object for the client driver.                                                                                                                                                                     |
-| Device.h; Device.c         | Declares and defines a callback class that implements the [**IPnpCallbackHardware**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware) interface. The class defines methods that are invoked by the framework device object. The main purpose of this class is to handle events occurring as a result of Plug and Play (PnP) state changes. The class also allocates and initializes resources required by the client driver as long as it is loaded in the system. |
-| IoQueue.h; IoQueue.c       | Declares and defines a callback class that implements the [**IQueueCallbackDeviceIoControl**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackdeviceiocontrol) interface. The class defines methods that are invoked by the framework queue object. The purpose of this class is to retrieve I/O requests that are queued in the framework.                                                                                                                               |
-| Internal.h                 | Provides common declarations shared by the client driver and user applications that communicate with the USB device. It also declares tracing functions and macros.                                                                                                                                                                                                                                                                          |
-| Dllsup.cpp                 | Contains the implementation of the driver module's entry point.                                                                                                                                                                                                                                                                                                                                                                              |
-| *&lt;Project name&gt;*.inf | INF file that is required to install the client driver on the target computer.                                                                                                                                                                                                                                                                                                                                                               |
-| Exports.def                | DEF file that exports the entry point function name of the driver module.                                                                                                                                                                                                                                                                                                                                                                    |
+| Files | Description |
+| --- | --- |
+| Driver.h; Driver.c | Declares and defines a callback class that implements the [**IDriverEntry**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-idriverentry) interface. The class defines methods that are invoked by the framework driver object. The main purpose of this class is to create a device object for the client driver.                                                                                                                                                                     |
+| Device.h; Device.c | Declares and defines a callback class that implements the [**IPnpCallbackHardware**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipnpcallbackhardware) interface. The class defines methods that are invoked by the framework device object. The main purpose of this class is to handle events occurring as a result of Plug and Play (PnP) state changes. The class also allocates and initializes resources required by the client driver as long as it is loaded in the system. |
+| IoQueue.h; IoQueue.c | Declares and defines a callback class that implements the [**IQueueCallbackDeviceIoControl**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackdeviceiocontrol) interface. The class defines methods that are invoked by the framework queue object. The purpose of this class is to retrieve I/O requests that are queued in the framework.                                                                                                                               |
+| Internal.h | Provides common declarations shared by the client driver and user applications that communicate with the USB device. It also declares tracing functions and macros. |
+| Dllsup.cpp  | Contains the implementation of the driver module's entry point. |
+| *&lt;Project name&gt;*.inf | INF file that is required to install the client driver on the target computer. |
+| Exports.def  | DEF file that exports the entry point function name of the driver module. |
+
 ### <a href="" id="modify-the-inf-file-to-add-information-about-your-device"></a>Step 2: Modify the INF file to add information about your device
 
 <a href="" id="modify"></a>
@@ -141,15 +142,15 @@ All UMDF-based USB client drivers require two Microsoft-provided drivers: the re
 1. Open the driver project or solution in Visual Studio 2019.
 2. Right-click the solution in the **Solution Explorer** and select **Configuration Manager**.
 3. From the **Configuration Manager**, select your **Active Solution Configuration** (for example, **Debug** or **Release**) and your **Active Solution Platform** (for example, **Win32**) that correspond to the type of build you are interested in.
-4. Verify that your device interface GUID is accurate throughout the project. 
-    - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When you create your project with the name "MyUSBDriver\_UMDF\_", Visual Studio 2019 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect parameter "GUID_DEVINTERFACE_MyUSBDriverUMDF". Replace the incorrect parameter with the name defined in Trace.h to ensure that the driver builds properly. 
+4. Verify that your device interface GUID is accurate throughout the project.
+    - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When you create your project with the name "MyUSBDriver\_UMDF\_", Visual Studio 2019 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect parameter "GUID_DEVINTERFACE_MyUSBDriverUMDF". Replace the incorrect parameter with the name defined in Trace.h to ensure that the driver builds properly.
 5. From the **Build** menu, click **Build Solution**.
 
-For more information, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+For more information, see [Building a Driver](/windows-hardware/drivers/develop/building-a-driver).
 
 ### <a href="" id="configure-a-computer-for-testing-and-debugging"></a>Step 4: Configure a computer for testing and debugging
 
-To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
 
 ### <a href="" id="enable-tracing-for-kernel-debugging"></a>Step 5: Enable tracing for kernel debugging
 
@@ -163,7 +164,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
    **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
 
-   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracepdb-commands).
+   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](/windows-hardware/drivers/devtest/tracepdb-commands).
 
    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 
@@ -285,5 +286,5 @@ Whenever an application makes a request for the USB driver stack, the Windows I/
 ## Related topics
 
 [Understanding the UMDF template code for USB client driver](understanding-the-umdf-template-code-for-usb.md)  
-[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](https://go.microsoft.com/fwlink/p/?linkid=617587)  
+[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](/windows-hardware/drivers/usbcon/selective-suspend-in-umdf-drivers)  
 [Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
