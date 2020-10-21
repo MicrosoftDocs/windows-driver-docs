@@ -138,11 +138,11 @@ The [Code Validation Tools](#use-additional-code-validation-tools) section of th
 
 One of the primary responsibilities of a Windows driver is transferring data between user-mode applications and a system's devices. The three methods for accessing data buffers are shown in the following table.
 
-|IOCTL Buffer Type | Summary                                    | For more information |  
-|------------------|--------------------------------------------|-------------------------------------------------------------------------|
-| METHOD_BUFFERED  |Recommended for most situtations            | [Using Buffered I/O](../kernel/using-buffered-i-o.md)
-| METHOD_IN_DIRECT or METHOD_OUT_DIRECT |Used in some high speed HW I/O    |[Using Direct I/O](../kernel/using-direct-i-o.md) |
-| METHOD_NEITHER |Avoid if possible |[Using Neither Buffered Nor Direct I/O](../kernel/using-neither-buffered-nor-direct-i-o.md)|
+| IOCTL Buffer Type                     | Summary                          | For more information                                                                        |
+|---------------------------------------|----------------------------------|---------------------------------------------------------------------------------------------|
+| METHOD_BUFFERED                       | Recommended for most situtations | [Using Buffered I/O](../kernel/using-buffered-i-o.md)                                       |
+| METHOD_IN_DIRECT or METHOD_OUT_DIRECT | Used in some high speed HW I/O   | [Using Direct I/O](../kernel/using-direct-i-o.md)                                           |
+| METHOD_NEITHER                        | Avoid if possible                | [Using Neither Buffered Nor Direct I/O](../kernel/using-neither-buffered-nor-direct-i-o.md) |
 
 In general buffered I/O is recommended as it provides the most secure buffering methods. But even when using buffered I/O there are risks, such as embedded pointers that must be mitigated.
 
@@ -457,7 +457,16 @@ For general information on SAL, refer to this article available from OSR.
 Static Driver Verifier (SDV) uses a set of interface rules and a model of the operating system to determine whether the driver interacts correctly with the Windows operating system. SDV finds defects in driver code that could point to potential bugs in drivers.
 
 For more information, see [Introducing Static Driver Verifier](../devtest/introducing-static-driver-verifier.md)
- and [Static Driver Verifier](../devtest/static-driver-verifier.md). Note that only certain types of drivers are supported by SDV. For more information about the drivers that SDV can verify, see [Supported Drivers](../devtest/supported-drivers.md).
+ and [Static Driver Verifier](../devtest/static-driver-verifier.md). 
+
+Note that only certain types of drivers are supported by SDV. For more information about the drivers that SDV can verify, see [Supported Drivers](../devtest/supported-drivers.md). Refer to the following pages for information on the SDV tests available for the driver type you are working with.
+
+- [Rules for WDM Drivers](../devtest/sdv-rules-for-wdm-drivers.md)
+- [Rules for KMDF Drivers](../devtest/sdv-rules-for-kmdf-drivers.md)
+- [Rules for NDIS Drivers](../devtest/sdv-rules-for-ndis-drivers.md)
+- [Rules for Storport Drivers](../devtest/sdv-rules-for-storport-drivers.md)
+- [Rules for Audio Drivers](../devtest/rules-for-audio-drivers.md)
+- [Rules for AVStream Drivers](../devtest/rules-for-avstream-drivers.md)
 
 To become familiar with SDV, you can use one of the sample drivers (for example, the featured toaster sample: <https://github.com/Microsoft/Windows-driver-samples/tree/master/general/toaster/toastDrv/kmdf/func/featured>).
 
