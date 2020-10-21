@@ -182,7 +182,8 @@ DriverUpdateDatafields(sensorID)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)
+
+[Introduction to the Sensor and Location Platform in Windows](/windows-hardware/drivers/sensors/)
 
 
 

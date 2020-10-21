@@ -236,10 +236,7 @@ To capture events by using the hardware verifier, perform these steps:
 | HubHwVerifierPortOverCurrent                        | The downstream port reported overcurrent state.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | HubHwVerifierControllerOperationFailure             | A controller operation (such as enabling device, configuring endpoints) failed for the device that is attached to the target port. Failures from SET\_ADDRESS and Reset endpoint requests are not captured.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
- 
 
 ## Related topics
-[USB Diagnostics and Test Guide](usb-driver-testing-guide.md)  
 
-
-
+[Overview of Microsoft USB Test Tool (MUTT) devices](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices)

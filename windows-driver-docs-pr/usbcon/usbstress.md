@@ -14,7 +14,6 @@ Those files are included in the [MUTT Software Package](./mutt-software-package.
 
 ## USBStress
 
-
 USBStress is a set of tests focused on the entire USB driver stack and the USB Generic Parent Driver (Usbccgp.sys), and controller and its upstream hubs. USBStress randomly chooses the tests and configures the attached test devices. Due to the random nature of the tests, we recommend that you should run USBStress over a 24 hour time period to allow more test combinations.
 
 The tool performs control, bulk, isochronous, data transfers of various transfer lengths to and from the test device. For a SuperMUTT device, USBTCD transfers data to streams supported by a bulk endpoint.
@@ -49,6 +48,6 @@ Return value: 1
 ```
 
 ## Related topics
-[USB test tools](usb-test-tools.md)  
+
 [Tools in the MUTT software package](mutt-software-package.md)  
 [Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

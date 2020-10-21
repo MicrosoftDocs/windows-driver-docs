@@ -209,4 +209,4 @@ Changes the value received in the <em>OutputBuffer</em> parameter when the clien
 [**USBD\_QueryUsbCapability**](/previous-versions/windows/hardware/drivers/hh406230(v=vs.85))  
 [How to Open and Close Static Streams in a USB Bulk Endpoint](how-to-open-streams-in-a-usb-endpoint.md)  
 [How to Send Chained MDLs](how-to-send-chained-mdls.md)  
-[USB Diagnostics and Test Guide](usb-driver-testing-guide.md)
+[Overview of Microsoft USB Test Tool (MUTT) devices](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices)

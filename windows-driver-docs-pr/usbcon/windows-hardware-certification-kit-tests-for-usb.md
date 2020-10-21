@@ -64,4 +64,5 @@ In addition to all of the USB tests that are automatically selected in HLK Studi
 -   [Device Fundamentals (DevFund)](/windows-hardware/test/hlk/testref/device-devfund-tests)
 
 ## Related topics
-[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)
+
+[Overview of Microsoft USB Test Tool (MUTT) devices](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices)
