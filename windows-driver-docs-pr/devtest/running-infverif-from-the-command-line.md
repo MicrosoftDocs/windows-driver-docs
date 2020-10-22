@@ -8,12 +8,12 @@ ms.localizationpriority: medium
 
 # Running InfVerif from the command line
 
-
 This topic lists the options that are available when you run InfVerif.exe from the command line.
+
 > [!NOTE]
 > InfVerif requires that each combined path and file name must be less than 260 characters.
 
-```
+```syntax
 USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <path>]
                     [/osver TargetOSVersion>] [/product <ias file>] <files>
 
@@ -49,6 +49,10 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <pa
         Validates all include/needs directives against
         the product definition in the ias file.
 
+/recurse
+        Pass a wildcard match instead of a specific INF name (*.inf)
+        and iterate recursively.
+
 <files>
         A space-separated list of INF files to analyze.
         Wildcards (*) may be used.
@@ -66,7 +70,7 @@ For examples of *TargetOSVersion* formatting, see Remarks section of [INF Manufa
 
 To validate multiple INF files, provide multiple filenames or use a wildcard:
 
-```
+```command
 infverif.exe /w test1.inf test2.inf
 infverif.exe /w test*.inf
 ```
