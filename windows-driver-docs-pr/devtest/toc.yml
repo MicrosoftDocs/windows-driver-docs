@@ -820,6 +820,8 @@
           href: ddi-usage-rule-set--wdm-.md
         - name: "DebugBreakUsage"
           href: wdm-debugbreakusage.md
+        - name: "DoubleFetch"
+          href: wdm-doublefetch.md
         - name: "NullCheck"
           href: nullcheckw.md
         - name: "SafeStrings"

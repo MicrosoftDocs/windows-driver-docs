@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 In Windows 8.1, your UWP app can use a device background task to synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also use a device background agent to perform device updates, such as firmware updates. Device background agents are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated.
 
-To perform device sync and update operations, create a device background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) and [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger), respectively. To learn how this is done with the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) and the [Firmware update USB device sample](/samples/browse/), see [Creating a device background task](how-to-create-a-device-background-task.md).
+To perform device sync and update operations, create a device background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) and [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger), respectively. To learn how this is done with the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ), see [Creating a device background task](how-to-create-a-device-background-task.md).
 
 **Note**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth devices, and more. For more info, see [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)).
 
@@ -124,7 +124,7 @@ Consider these important points when using the device background tasks:
 
  
 
-**Tip**  To see how these background tasks work, download a sample. The [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) demonstrates a background task that performs device sync with DeviceUseTrigger. The [Firmware update USB device sample](/samples/browse/) demonstrates a background task that performs a firmware update with DeviceServicingTrigger.
+**Tip**  To see how these background tasks work, download a sample. The [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) demonstrates a background task that performs device sync with DeviceUseTrigger.
 
  
 
@@ -223,7 +223,7 @@ Using the DeviceUseTrigger or DeviceServicingTrigger background tasks from your 
 
     -   When your app exits, your background tasks will be canceled and any existing event handlers will be disconnected from your existing background tasks. This prevents you from determining the state of your background tasks. Unregistering and canceling the background task will allow your cancellation code to cleanly stop your background tasks.
 
-**Tip**  For detailed description of how this is done with the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) and the [Firmware update USB device sample](/samples/browse/), see [Creating a device background task](how-to-create-a-device-background-task.md).
+**Tip**  For detailed description of how this is done with the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ), see [Creating a device background task](how-to-create-a-device-background-task.md).
 
  
 
@@ -239,8 +239,6 @@ The Unregister method additionally takes a Boolean true or false value to indica
 [Creating a device background task](how-to-create-a-device-background-task.md)
 
 [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 )
-
-[Firmware update USB device sample](/samples/browse/)
 
 [Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
 

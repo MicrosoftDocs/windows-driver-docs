@@ -8,17 +8,15 @@ ms.localizationpriority: medium
 
 # Device update methods
 
-
 A sensor driver supports methods that update the sensor device. The pseudocode demonstrates this using the following methods:
 
--   DriverUpdateDeviceCRI
--   DriverUpdateDeviceCS
--   DriverUpdateDeviceLDA
--   DriverUpdateDeviceRS
--   DriverUpdateDevicePS
+- DriverUpdateDeviceCRI
+- DriverUpdateDeviceCS
+- DriverUpdateDeviceLDA
+- DriverUpdateDeviceRS
+- DriverUpdateDevicePS
 
 ## Device reporting reporting updates
-
 
 The **DriverUpdateDeviceCRI**, **DriverUpdateDeviceCS**, and **DriverUpdateDeviceLDA** methods demonstrate how a driver updates the current report interval, change sensitivity, and location data accuracy fields on the device.
 
@@ -96,7 +94,6 @@ effectiveLDA DriverUpdateDeviceLDA(sensorID, requestedLDA)
 
 ## Device interrupt updates
 
-
 The **DriverUpdateDeviceRS** method demonstrates how a driver enables or disables interrupts on the device.
 
 ```cpp
@@ -132,7 +129,6 @@ effectiveRS DriverUpdateDeviceRS(sensorID, requestedRS)
 
 ## Device power-state updates
 
-
 The **DriverUpdateDevicePS** method demonstrates how a driver sets the power state on the device.
 
 ```cpp
@@ -160,7 +156,7 @@ effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
+[Introduction to the Sensor and Location Platform in Windows](/windows-hardware/drivers/sensors/)
 
-
+[Sensor Driver Logic](/windows-hardware/drivers/sensors/driver-logic--pseudo-code-)
