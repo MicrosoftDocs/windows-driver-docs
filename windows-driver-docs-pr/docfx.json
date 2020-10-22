@@ -169,9 +169,9 @@
       "sensitive-language": {
         "exclude": [
           "network/oid-wwan-network-blacklist.md",
-          "ndis-status-wwan-network-blacklist.md",
-          "ntddndis-h.md",
-          "mb-network-blacklist-operations.md"
+          "network/ndis-status-wwan-network-blacklist.md",
+          "network/ntddndis-h.md",
+          "network/mb-network-blacklist-operations.md"
         ]
       }
     }
