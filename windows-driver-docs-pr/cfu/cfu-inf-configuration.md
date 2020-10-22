@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 To configure a custom INF file for CFU, follow the guidance in this topic to provide the correct values and settings for your firmware image files and hardware device.
 
-The [Sample CFU INF file](#sample-cfu-inf-file) included below provides a starting point for your device's custom INF file. The sample INF is the *CfuVirtualHidDeviceFwUpdate.inf* file from the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) sample code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the simulation's INF file to illustrate the configuration concepts discussed in this topic.
+The [Sample CFU INF file](#sample-cfu-inf-file) included below provides a starting point for your device's custom INF file. The sample INF configures the HidCfu driver to enable the firmware update scenario for a virtual CFU Hid device. Refer to the [CFU virtual HID device firmware update simulation](cfu-firmware-update-simulation.md) topic for details on the sample virtual device code and walkthrough that simulates updating firmware on a virtual HID device. The sections below reference the included sample INF file to illustrate the configuration concepts discussed in this topic.
 
 Your actual INF file must be customized and configured specifically for your device firmware and hardware.
 
@@ -46,20 +46,16 @@ This allows you to service your in-market devices through Windows Update. To upd
 
 ## Configure your custom CFU INF file
 
-1. In your custom INF file, insert the hardware IDs of your devices as indicated in this sample.
+1. In your custom INF file, insert the hardware IDs of your devices as indicated in this example.
   
     ```inf
-    ; Target the Hardware ID for your devices.
-    ;
-    [Standard.NT$ARCH$]
-    %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_abc&UP:def_U:ghi ; Your HardwareID- Laptop MCU
-  
-    %ComponentFirmwareUpdate.DeviceDesc%=ComponentFirmwareUpdate, HID\HID\VID_jkl&UP:mno_U:pqr ; Your HardwareID- Dock MCU
+    [Standard.NTamd64]
+    %CfuVirtualHidDeviceFwUpdate.DeviceDesc%=CfuVirtualHidDeviceFwUpdate, HID\VID_045E&UP:FA00_U:00F5 ; HardwareID for VirtualHidDevice MCU
     ```
 
     **INF Hardware ID settings**
 
-    In order for the CFU inbox driver to communicate with the firmware (real/virtual), the hardware ID specified in the INF should match with what is specified in the Hid descriptor configuration in the firmware.
+    In order for the CFU inbox driver to communicate with the firmware, the hardware ID specified in the INF should match with what is specified in the Hid descriptor configuration in the firmware.
 
     As shown below, the *CfuVirtualHidDeviceFwUpdate.inf* values match the values specified in the virtual firmware simulation driver's Hid descriptor.
 
@@ -76,6 +72,8 @@ This allows you to service your in-market devices through Windows Update. To upd
     ```
 
 1. In your custom INF file, update the following entries shown here (including the **SourceDisksFiles** and **CopyFiles** sections) to match the files in your firmware update.
+
+    For example, the virtual CFU Hid device sample supports two components (MCU and Audio). The sample section below specifies the offer and payload files for these components.
 
     ```inf
     ; Specify the location of the firmware offer
@@ -114,11 +112,14 @@ This allows you to service your in-market devices through Windows Update. To upd
     > [!NOTE]
     > When the packages are installed, the OS replaces the `%13%` with the full path to the files before creating the registry values. Thus, the driver able to enumerate the registry and identify all the firmware image and offer files.
 
+    > [!NOTE]
+    >  In the above example, "A410A898-8132-4246-AC1A-30F1E98BB0A4", "Offer", "Payload" should not be changed as the CFU inbox driver will look for these values at runtime.
+
 1. In your custom INF file, specify your device's capabilities with the registry value capability settings described in the table and sample INF section below.
 
-    The CFU inbox driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described in the **CFU registry values** table below.
+    In the above "A410A898-8132-4246-AC1A-30F1E98BB0A4", "Offer", "Payload" should not be changed as the CFU inbox driver will look for these values at runtime.
 
-    For example, the CFU inbox driver requires information about the underlying bus protocol to which the device is connected. The protocol can be specified through registry settings. You may configure each of these registry values per component as needed.
+    INF value capability settings are are specified through registry settings. You may configure each of these registry values per your firmware implementation needs. 
 
     **CFU registry values**
 
@@ -134,7 +135,7 @@ This allows you to service your in-market devices through Windows Update. To upd
 
     **INF value capability settings**
 
-    In order for the CFU inbox driver to communicate with the firmware (real/virtual), the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
+    In order for the CFU inbox driver to communicate with the firmware, the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
 
     In this example, the INF values match the values specified in the virtual firmware simulation driver's Hid descriptor.
 
@@ -294,7 +295,8 @@ HKR,,PayloadOutputValueCapabilityUsageRangeMinimum,0x00010001,0x31
 HKR,,VersionsFeatureValueCapabilityUsageRangeMinimum,0x00010001, 0x42
 
 ; Specify the location of the firmware offer and payload file in the registry.
-; The files are kept in driver store. When deployed, %13% would be expanded to the actual path
+; The files are kept in the driver store.
+; When deployed, %13% would be expanded to the actual path
 ; in driver store.
 ;
 ; You can change subkey name under CFU (e.g. "CfuVirtualHidDevice_MCU"), and specify your own offer
@@ -355,18 +357,6 @@ The firmware file information is set in the INF as registry values.
 **I have many firmware files, multiple offer, payload, for main component A and its subcomponents. How should I make the driver aware of which firmware file is meant for which component?**
 
 The firmware file information is set in the INF as registry values.
-
-**I have inbuilt component A and peripheral component B that needs an update. How should I make the driver aware of this?**
-
-You do not need to make the driver aware of the component in this case. The driver automatically handles this for you.
-
-**Component A uses HID-Over-USB, component B is uses HID-Over-Bluetooth. How should I pass this information to the driver?**
-
-Specify the correct capability by using the registry **Protocol** value.
-
-**I am reusing the same driver for my components, are there any other customizations possible per usage scenarios?**
-
-There are certain optimization settings that the driver allows. Those are configured in the registry.
 
 **I am using the driver for firmware updates.  How do I know an update has succeeded?**
 
