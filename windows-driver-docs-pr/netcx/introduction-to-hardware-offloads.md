@@ -26,6 +26,9 @@ Client drivers advertise a granular set of capabilities to NetAdapterCx for the 
 
 If the hardware is not capable of handling a specific combination, the client driver should neither declare support for that capability nor perform a software fallback itself when it encounters such a packet. Instead, it should let NetAdapterCx to perform any necessary software fallback automatically.
 
+> [!NOTE]
+> If you would like NetAdapterCx to perform software fallback for offloads that are not supported by the hardware, the client driver must include the standardized keywords for that offload in the INF file. For example, if a client driver cannot perform RSC offload at all in hardware and needs NetAdapterCx to perform this offload in software, the *RscIpv4 and *RscIpv6 keywords must be included in the INF.
+
 The following offloads are supported by NetAdapterCx and the Windows TCP/IP stack:
 
 | Offload name | Description |
