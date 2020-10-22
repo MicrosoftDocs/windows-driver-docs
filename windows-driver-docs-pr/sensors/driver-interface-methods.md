@@ -330,4 +330,7 @@ DDIHandleAsyncDataEvent(sensorID, buffer)
 
 ## Related topics
 
+[Introduction to the Sensor and Location Platform in Windows](/windows-hardware/drivers/sensors/)
+
 [Sensor Driver Logic](/windows-hardware/drivers/sensors/driver-logic--pseudo-code-)
+

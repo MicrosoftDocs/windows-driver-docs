@@ -143,7 +143,7 @@ This is not a valid connection.
 - You cannot connect two PCs running Windows 10 for desktop editions.
 - You cannot connect two mobile devices running Windows 10 Mobile.
 
-If the user attempts to make such a connection, Windows shows an error message. For more information, see [Error messages for a USB Type-C Windows system](introduction-to-usb-type-c-connectors.md#-6).
+If the user attempts to make such a connection, Windows shows an error message. For more information, see [Error messages for a USB Type-C Windows system](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2).
 
 The only valid connection is between a Windows Mobile device and Windows desktop device.
 
