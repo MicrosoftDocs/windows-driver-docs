@@ -50,8 +50,7 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <pa
         the product definition in the ias file.
 
 /recurse
-        Pass a wildcard match instead of a specific INF name (*.inf)
-        and iterate recursively.
+        Process INF files that match the specified file pattern in the current directory and all subdirectories.
 
 <files>
         A space-separated list of INF files to analyze.
