@@ -117,9 +117,11 @@ This allows you to service your in-market devices through Windows Update. To upd
 
 1. In your custom INF file, specify your device's capabilities with the registry value capability settings described in the table and sample INF section below.
 
-    In the above "A410A898-8132-4246-AC1A-30F1E98BB0A4", "Offer", "Payload" should not be changed as the CFU inbox driver will look for these values at runtime.
+    The CFU inbox driver provides a way to customize the driver behavior to optimize for certain scenarios. Those settings are controlled through registry settings, described in the CFU registry values table below.
 
-    INF value capability settings are are specified through registry settings. You may configure each of these registry values per your firmware implementation needs. 
+    For example, the CFU inbox driver requires information about the value capability usage details as per the firmware implementation. See the **INF value capability settings** section below for more information and an example on how to do this.
+
+    INF value capability settings are are specified through registry settings. You may configure each of these registry values per your firmware implementation needs.
 
     **CFU registry values**
 
@@ -135,7 +137,7 @@ This allows you to service your in-market devices through Windows Update. To upd
 
     **INF value capability settings**
 
-    In order for the CFU inbox driver to communicate with the firmware, the Value capability Usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
+    In order for the CFU inbox driver to communicate with the firmware, the value capability usages specified in the INF should match with those in Hid descriptor configuration in the firmware.
 
     In this example, the INF values match the values specified in the virtual firmware simulation driver's Hid descriptor.
 
