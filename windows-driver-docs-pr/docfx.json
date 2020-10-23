@@ -168,6 +168,16 @@
     "externalReference": [],
     "template": "op.html",
     "dest": "windows-driver-docs-pr",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "rules": {
+      "sensitive-language": {
+        "exclude": [
+          "network/oid-wwan-network-blacklist.md",
+          "network/ndis-status-wwan-network-blacklist.md",
+          "network/ntddndis-h.md",
+          "network/mb-network-blacklist-operations.md"
+        ]
+      }
+    }
   }
 }
