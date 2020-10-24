@@ -1,0 +1,51 @@
+---
+title: OID_QOS_OFFLOAD_UPDATE_SQ
+description: Overlying drivers issue OID method requests of OID_QOS_OFFLOAD_UPDATE_SQ to update a Scheduler Queue (SQ) on the miniport adapter.
+ms.assetid:
+ms.date: 10/30/2020
+keywords: 
+ -OID_QOS_OFFLOAD_UPDATE_SQ Network Drivers Starting with Windows Vista
+ms.localizationpriority: medium
+---
+
+# OID_QOS_OFFLOAD_UPDATE_SQ
+
+Overlying drivers issue OID method requests of OID_QOS_OFFLOAD_UPDATE_SQ to update a Scheduler Queue (SQ) on the miniport adapter. The caller should set the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to contain a pointer to an [**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters) structure.
+
+The caller should set the **SqId** field of **NDIS_QOS_SQ_PARAMETERS** to the current SQ ID of the SQ it wants to update. The caller should set the rest of the fields to the full set of parameters it desires on this SQ, except the **SqType** field which cannot be updated.
+
+## Remarks
+
+### Return Status Codes
+
+NDIS handles the OID query request of OID_QOS_OFFLOAD_UPDATE_SQ request for miniport drivers, and returns one of the following status codes.
+
+|Status Code|Description|
+|--- |--- |
+|NDIS_STATUS_SUCCESS|The OID request completed successfully.|
+|NDIS_STATUS_NOT_SUPPORTED|The miniport driver does not support the NDIS QoS interface.|
+|NDIS_STATUS_INVALID_LENGTH|The length of the information buffer is less than sizeof([**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters)). NDIS sets the **DATA.QUERY_INFORMATION.BytesNeeded** member in the [**NDIS_OID_REQUEST**](windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.|
+|NDIS_STATUS_BUFFER_TOO_SHORT|The length of the information buffer is not sufficient for the returned data.|
+|NDIS_STATUS_FAILURE|The request failed for other reasons.|
+
+ 
+
+## Requirements
+
+|||
+|--- |--- |
+|Version|Supported in NDIS 6.84 and later.|
+|Header|Ntddndis.h (include Ndis.h)|
+
+## See also
+
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+
+[**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters)
+
+[OID_QOS_OFFLOAD_CREATE_SQ](oid-qos-offload-create-sq.md)
+
+[OID_QOS_OFFLOAD_DELETE_SQ](oid-qos-offload-delete-sq.md)
+
+
+ 
