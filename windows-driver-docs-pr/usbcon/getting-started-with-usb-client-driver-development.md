@@ -104,7 +104,7 @@ Check out posts written by the Microsoft USB Team. The blog focuses on the Windo
 [OSR Online Lists](https://www.osronline.com/)  
 Discussion list managed by [OSR Online](https://www.osronline.com/) for kernel-mode driver developers.
 
-[Windows Dev-Center for Hardware Development](/windows/hardware/)  
+[Windows Dev-Center for Hardware Development](/windows-hardware/drivers/dashboard/)  
 
 [Windows Driver Kit](/windows-hardware/drivers/download-the-wdk), ensure that your product is reliable and compatible with Windows through the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), learn [Windows driver samples](/windows-hardware/drivers/samples/).
 
