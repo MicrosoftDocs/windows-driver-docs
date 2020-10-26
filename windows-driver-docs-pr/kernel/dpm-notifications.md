@@ -17,7 +17,7 @@ In this call, the Notification parameter is set to a PEP_DPM_XXX constant value 
 |----|----|----|
 |[PEP_DPM_PREPARE_DEVICE](#pep_dpm_prepare_device)|0x01|[PEP_PREPARE_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_prepare_device)|
 |[PEP_DPM_ABANDON_DEVICE](#pep_dpm_abandon_device)|0x02|[PEP_ABANDON_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_abandon_device)|
-|[PEP_DPM_REGISTER_DEVICE](#pep_dpm_register_device)|0x03|[PEP_REGISTER_DEVICE_V2](windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v2)|
+|[PEP_DPM_REGISTER_DEVICE](#pep_dpm_register_device)|0x03|[PEP_REGISTER_DEVICE_V2](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v2)|
 |[PEP_DPM_UNREGISTER_DEVICE](#pep_dpm_unregister_device)|0x04|[PEP_UNREGISTER_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_unregister_device)|
 |[PEP_DPM_DEVICE_POWER_STATE](#pep_dpm_device_power_state)|0x05|[PEP_DEVICE_POWER_STATE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_power_state)|
 |[PEP_DPM_COMPONENT_ACTIVE](#pep_dpm_component_active)|0x07|[PEP_COMPONENT_ACTIVE](/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_component_active)|
@@ -107,7 +107,7 @@ The value PEP_DPM_REGISTER_DEVICE.
 
 #### Data (PEP_DPM_REGISTER_DEVICE)
 
-A pointer to a [PEP_REGISTER_DEVICE_V2](windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v2) structure.
+A pointer to a [PEP_REGISTER_DEVICE_V2](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v2) structure.
 
 Tells the PEP that the driver stack for the specified device has registered with the Windows power management framework (PoFx).
 
