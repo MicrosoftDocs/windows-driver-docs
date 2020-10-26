@@ -2,7 +2,7 @@
 title: IrqlIoPassive1 rule (wdm)
 ms.assetid: c8960015-3b7c-4827-82dc-fd1225a376ea
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: IrqlIoPassive1 rule (wdm)"
 keywords: ["IrqlIoPassive1 rule (wdm)"]
 topic_type:
 - apiref
