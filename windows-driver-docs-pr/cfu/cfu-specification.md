@@ -46,41 +46,41 @@ This specification describes a generic HID protocol to update firmware for compo
       - [5.2.1.4 Misc. and Protocol version](#5214-misc-and-protocol-version)
     - [5.2.2 Response](#522-response)
       - [5.2.2.1 Token](#5221-token)
-      - [5.2.2.2 Reserved (B7 – B4)](#5222-reserved-b7--b4)
+      - [5.2.2.2 Reserved (B7 - B4)](#5222-reserved-b7--b4)
       - [5.2.2.3 Reject Reason (RR)](#5223-reject-reason-rr)
       - [5.2.2.4 Status](#5224-status)
     - [5.2.3 Mapping to HID Protocol](#523-mapping-to-hid-protocol)
   - [5.3 FIRMWARE_UPDATE_OFFER - Information](#53-firmware_update_offer---information)
     - [5.3.1 Command](#531-command)
       - [5.3.1.1 Component](#5311-component)
-      - [5.3.1.2 Reserved B7 – B4](#5312-reserved-b7--b4)
-      - [5.3.1.3 Reserved B11 – B8](#5313-reserved-b11--b8)
-      - [5.3.1.4 Reserved B15 – B12](#5314-reserved-b15--b12)
+      - [5.3.1.2 Reserved B7 - B4](#5312-reserved-b7--b4)
+      - [5.3.1.3 Reserved B11 - B8](#5313-reserved-b11--b8)
+      - [5.3.1.4 Reserved B15 - B12](#5314-reserved-b15--b12)
     - [5.3.2 Response](#532-response)
       - [5.3.2.1 Token](#5321-token)
-      - [5.3.2.2 Reserved B7 – B4](#5322-reserved-b7--b4)
+      - [5.3.2.2 Reserved B7 - B4](#5322-reserved-b7--b4)
       - [5.3.2.3 Reject Reason (RR)](#5323-reject-reason-rr)
       - [5.3.2.4 Status](#5324-status)
   - [5.4 FIRMWARE_UPDATE_OFFER - Extended](#54-firmware_update_offer---extended)
     - [5.4.1 Command](#541-command)
       - [5.4.1.1 Component](#5411-component)
-      - [5.4.1.2 Reserved B7 – B4](#5412-reserved-b7--b4)
-      - [5.4.1.3 Reserved B11 – B8](#5413-reserved-b11--b8)
-      - [5.4.1.4 Reserved B15 – B12](#5414-reserved-b15--b12)
+      - [5.4.1.2 Reserved B7 - B4](#5412-reserved-b7--b4)
+      - [5.4.1.3 Reserved B11 - B8](#5413-reserved-b11--b8)
+      - [5.4.1.4 Reserved B15 - B12](#5414-reserved-b15--b12)
     - [5.4.2 Response](#542-response)
       - [5.4.2.1 Token](#5421-token)
-      - [5.4.2.2 Reserved B7 – B4](#5422-reserved-b7--b4)
+      - [5.4.2.2 Reserved B7 - B4](#5422-reserved-b7--b4)
       - [5.4.2.3 Reject Reason](#5423-reject-reason)
       - [5.4.2.4 Status](#5424-status)
   - [5.5 FIRMWARE_UPDATE_CONTENT](#55-firmware_update_content)
     - [5.5.1 Command](#551-command)
-      - [5.5.1.1 Header (B7 – B0)](#5511-header-b7--b0)
+      - [5.5.1.1 Header (B7 - B0)](#5511-header-b7--b0)
       - [5.5.1.2 Data](#5512-data)
     - [5.5.2 Response](#552-response)
       - [5.5.2.1 Sequence Number](#5521-sequence-number)
       - [5.5.2.2 Status](#5522-status)
-      - [5.5.2.3 Reserved B8 – B11](#5523-reserved-b8--b11)
-      - [5.5.2.4 Reserved B12 – B15](#5524-reserved-b12--b15)
+      - [5.5.2.3 Reserved B8 - B11](#5523-reserved-b8--b11)
+      - [5.5.2.4 Reserved B12 - B15](#5524-reserved-b12--b15)
 - [6 Appendix 1: Example Firmware Update Programming Command Sequence](#6-appendix-1-example-firmware-update-programming-command-sequence)
   - [6.1 Example 1](#61-example-1)
   - [6.2 Example 2](#62-example-2)
@@ -269,11 +269,11 @@ Some of the features of the protocol are:
 
 ## 2 Supported Hardware Architecture
 
-To support a flexible hardware design, the protocol supports a multi-component device where each component requires its own firmware image. In the design, one component is the primary component and the dependent sub-components are connected to that primary component. Each component is uniquely described by a component ID.  
+To support a flexible hardware design, the protocol supports a multi-component device where each component requires its own firmware image. In the design, one component is the primary component and the dependent sub-components are connected to that primary component. Each component is uniquely described by a component ID.  
 
-The multi-component device is visible to the operating system as single unit. The host only interacts with the device, typically the primary component using this CFU protocol. The communication between the component and its-subcomponents is beyond the scope of this specification.  
+The multi-component device is visible to the operating system as single unit. The host only interacts with the device, typically the primary component using this CFU protocol. The communication between the component and its-subcomponents is beyond the scope of this specification.  
 
-On a PC, there might be many different devices (where a device may have one or more components in there). In the context of this protocol, the communication to each device is independent. Each device has a corresponding instance of the host.  
+On a PC, there might be many different devices (where a device may have one or more components in there). In the context of this protocol, the communication to each device is independent. Each device has a corresponding instance of the host.  
 
 ![Device Firmware, Primary Component and its Sub-components](images/primary-component.png)
 
@@ -283,17 +283,17 @@ This section lists the perquisites and best practices that must be implemented t
 
 - Atomic image usage
 
-  A firmware image for a component is not used until the entire firmware image has been successfully downloaded. In case the firmware is split into multiple segments, the image must not be used until the final segment is received from the sender. Integrity checks must be are performed on the final image. It is recommended that the transport, being used to deliver the firmware image, has error-correction and retry mechanisms in place to avoid a repeat download in case of transport errors.  
+  A firmware image for a component is not used until the entire firmware image has been successfully downloaded. In case the firmware is split into multiple segments, the image must not be used until the final segment is received from the sender. Integrity checks must be are performed on the final image. It is recommended that the transport, being used to deliver the firmware image, has error-correction and retry mechanisms in place to avoid a repeat download in case of transport errors.  
 
 - Firmware update must not interrupt device operation
 
-  The device accepting the firmware image must be able to operate during the update. The device must have extra memory to store and validate the incoming firmware, while its current firmware is not overwritten.  
+  The device accepting the firmware image must be able to operate during the update. The device must have extra memory to store and validate the incoming firmware, while its current firmware is not overwritten.  
 
 - Authentication and integrity
 
-  The implementor decides that factors that constitute an authentic firmware image. It is recommended that the component's current firmware must at least validate the CRC of the incoming firmware image. The current firmware should also employ digital signature, or, other error detection algorithms. If the validation fails, the firmware rejects the update. Failure Recovery
+  The implementor decides that factors that constitute an authentic firmware image. It is recommended that the component's current firmware must at least validate the CRC of the incoming firmware image. The current firmware should also employ digital signature, or, other error detection algorithms. If the validation fails, the firmware rejects the update. Failure Recovery
 
-  If the firmware image is downloaded and unsuccessful, the device must not invoke the new firmware and continue to operate with the existing firmware.  The host can retry the update. The frequency of retry is implementation specific.
+  If the firmware image is downloaded and unsuccessful, the device must not invoke the new firmware and continue to operate with the existing firmware.  The host can retry the update. The frequency of retry is implementation specific.
 
 - Confidentiality
 
@@ -301,7 +301,7 @@ This section lists the perquisites and best practices that must be implemented t
 
 - Rollback protection
 
-  Rollback policies are enforced by the primary component and are implementation specific.  The current firmware on the component validates incoming firmware images against internal policies such as the version number must be newer, or release type cannot be switched from release to debug, and so on. The protocol permits messaging to indicate that an update is accepted even if it is violating rollback policies.
+  Rollback policies are enforced by the primary component and are implementation specific.  The current firmware on the component validates incoming firmware images against internal policies such as the version number must be newer, or release type cannot be switched from release to debug, and so on. The protocol permits messaging to indicate that an update is accepted even if it is violating rollback policies.
 
 ## 4 CFU Protocol Overview
 
@@ -395,25 +395,25 @@ The host sends an OFFER\_NOTIFY\_ON\_READY command, to which the device does not
 
 ## 5 CFU Protocol Packet Format
 
-The CFU protocol is implemented as set of commands and responses. The protocol is sequential in nature. For each command that the host sends to a component, the component is expected to respond (unless explicitly stated otherwise in this specification). The host does not send the next command, until a valid response is received for the previous command it sent.  
+The CFU protocol is implemented as set of commands and responses. The protocol is sequential in nature. For each command that the host sends to a component, the component is expected to respond (unless explicitly stated otherwise in this specification). The host does not send the next command, until a valid response is received for the previous command it sent.  
 
-In case the component does not respond within a period, or sends an invalid response, the host may restart the process from the beginning. This protocol does not define a specific timeout value.  
+In case the component does not respond within a period, or sends an invalid response, the host may restart the process from the beginning. This protocol does not define a specific timeout value.  
 
 There are commands to get the version information of current firmware on the component; to send the offer and to send the firmware image.
 
-However, the host does not need to withhold an offer based on the response received from the primary component about the queried version information. The information is made discoverable for logging or other purposes.
+However, the host does not need to withhold an offer based on the response received from the primary component about the queried version information. The information is made discoverable for logging or other purposes.
 
 ### 5.1 GET\_FIRMWARE\_VERSION
 
-Gets the current firmware version(s) of the primary component (and its sub-components). The command does not have any arguments.  
+Gets the current firmware version(s) of the primary component (and its sub-components). The command does not have any arguments.
 
 #### 5.1.1 Command
 
-This command is sent by the host to query the version(s) of current firmware(s) on the primary component (and its sub-components). The host may use it to confirm whether the firmware was successfully updated. On receiving this command, the primary component responds with the firmware version for itself and all the sub-components.
+This command is sent by the host to query the version(s) of current firmware(s) on the primary component (and its sub-components). The host may use it to confirm whether the firmware was successfully updated. On receiving this command, the primary component responds with the firmware version for itself and all the sub-components.
 
 #### 5.1.2 Response
 
-The component responds with the firmware version of the primary component and the sub-components. The response size is 60 bytes allowing version information for up to seven components (one primary and up to six sub-components).  
+The component responds with the firmware version of the primary component and the sub-components. The response size is 60 bytes allowing version information for up to seven components (one primary and up to six sub-components).
 
 ###### Table 5.1-1 GET_FIRMWARE_VERSION Response Layout
 
@@ -427,7 +427,7 @@ The component responds with the firmware version of the primary component and th
 
 The header for the response provides the following information.
 
-###### Table 5.1-3 GET_FIRMWARE_VERSION Response – Header Bits
+###### Table 5.1-3 GET_FIRMWARE_VERSION Response - Header Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -452,7 +452,7 @@ Each component specific information is described in two DWORDs as follows:
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
 | 0 | Firmware Version | 32 | Returns the version of the current firmware for that component. This specification does not mandate any specific format for the firmware version. See section Firmware Version for guidelines. |
-| 32 | Bank | 2 | Optional. Depending on the architecture, the component hardware may have multiple banks in which the firmware may be stored. Depending on implementation, the sender may specify the bank in which the firmware currently exists. This field is Conditional Mandatory – support is optional, however must not be used for any other purpose. |
+| 32 | Bank | 2 | Optional. Depending on the architecture, the component hardware may have multiple banks in which the firmware may be stored. Depending on implementation, the sender may specify the bank in which the firmware currently exists. This field is Conditional Mandatory - support is optional, however must not be used for any other purpose. |
 | 34 | Reserved | 2 | Reserved fields. Sender must set these to 0. Receiver must ignore this value. |
 | 36 | Vendor Specific | 4 | Vendor specific field that may be used in an implementation specific manner.<br><br>A vendor could use these bits to encode information such as:<br><br>- Type of the firmware: Pre-release/self-host/production; debug/retail<br><br>- Development phase<br><br>- Product ID, to prevent components from receiving firmware for other products using the same update protocol. |
 | 40 | Component ID | 8 | A unique identifier for the component. |
@@ -460,7 +460,7 @@ Each component specific information is described in two DWORDs as follows:
 
 #### 5.1.3 Mapping to HID
 
-This is implemented as a **HID Get Feature** request with a response size of 60 bytes, in addition to the Report ID. The feature report length accommodates the entire GET\_FIRMWARE\_VERSION response. There is no data associated with the Get Feature request from the host.
+This is implemented as a **HID Get Feature** request with a response size of 60 bytes, in addition to the Report ID. The feature report length accommodates the entire GET\_FIRMWARE\_VERSION response. There is no data associated with the Get Feature request from the host.
 
 ### 5.2 FIRMWARE\_UPDATE\_OFFER
 
@@ -488,12 +488,12 @@ The bits of the Component Information byte are described in this table.
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
-| 0 | Segment Number | 8 | This field is used in case the firmware for a component is segmented into smaller segments. If used, this value indicates the segment that is contained in the subsequent payload packet. For example – if the firmware image for the component is very large and the primary component can only take smaller parts of the image at a time, this field may be used to indicate that this offer is for the *i*-th segment of the complete image. A separate offer may be sent to the primary component that contains the *i*+1th segment of the image and so on. |
+| 0 | Segment Number | 8 | This field is used in case the firmware for a component is segmented into smaller segments. If used, this value indicates the segment that is contained in the subsequent payload packet. For example - if the firmware image for the component is very large and the primary component can only take smaller parts of the image at a time, this field may be used to indicate that this offer is for the *i*-th segment of the complete image. A separate offer may be sent to the primary component that contains the *i*+1th segment of the image and so on. |
 | 8 | Reserved | 6 | Reserved fields. Sender must set these to 0. Receiver must ignore this value. |
 | 14 | V | 1 | Force Ignore Version (V)<br><br>- This flag is intended for pre-release or debug firmware image. It indicates to the component to not reject the firmware based on the firmware version.<br><br>- This flag is intended for the development phase. It can be used to intentionally rollback to a prior firmware version.<br><br>- This flag should be ignored by production firmware. |
 | 15 | I | 1 | Force Immediate Reset (I)<br><br>- This bit value is used to indicate to the component to immediately reset itself after the firmware download is complete and verified to immediately invoke it.<br><br>- This flag is intended for the development phase. |
-| 16 | Component ID | 8 | This byte is used for multi- component scenarios. This field may be used to identify the sub-component for which the offer is intended. If not used the value should be 0. The possible values of component IDs are as follows:<br><br>1 – 0xDF: Valid<br><br>0xE0 – 0xFD: Reserved. Do not use.<br><br>0xFF: The offer is a special offer information packet. See FIRMWARE_UPDATE_OFFER Information for details.<br><br>0xFE : The offer is a special offer command packet. See FIRMWARE_UPDATE_OFFER Extended section for details. |
-| 24 | Token | 8 | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response.<<br><br>This is useful if there is a need for the component to distinguish between the different hosts/types of hosts.<br><br>Exact values to be used are implementation specific. For example, one value may be used for a driver and another for the application. This allows the current device firmware to account for potential multiple senders of CFU commands. One possible implementation may be to accept the first CFU command and reject all other commands with different tokens until the first CFU transactions are complete. |
+| 16 | Component ID | 8 | This byte is used for multi- component scenarios. This field may be used to identify the sub-component for which the offer is intended. If not used the value should be 0. The possible values of component IDs are as follows:<br><br>1 - 0xDF: Valid<br><br>0xE0 - 0xFD: Reserved. Do not use.<br><br>0xFF: The offer is a special offer information packet. See FIRMWARE_UPDATE_OFFER Information for details.<br><br>0xFE : The offer is a special offer command packet. See FIRMWARE_UPDATE_OFFER Extended section for details. |
+| 24 | Token | 8 | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response.<<br><br>This is useful if there is a need for the component to distinguish between the different hosts/types of hosts.<br><br>Exact values to be used are implementation specific. For example, one value may be used for a driver and another for the application. This allows the current device firmware to account for potential multiple senders of CFU commands. One possible implementation may be to accept the first CFU command and reject all other commands with different tokens until the first CFU transactions are complete. |
 
 ##### 5.2.1.2 Firmware Version
 
@@ -552,7 +552,7 @@ The FIRMWARE\_UPDATE\_OFFER Response packet is defined as follows.
 
 The bits of the Token byte are described in this table.
 
-###### Table 5.2-10 FIRMWARE_UPDATE_OFFER Response – Token Bits
+###### Table 5.2-10 FIRMWARE_UPDATE_OFFER Response - Token Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -561,7 +561,7 @@ The bits of the Token byte are described in this table.
 | 16 | Reserved | 8 | Reserved. Do not use. |
 | 24 | Token | 8 | Token to identify the host. |
 
-##### 5.2.2.2 Reserved (B7 – B4)
+##### 5.2.2.2 Reserved (B7 - B4)
 
 Reserved. Do not use.
 
@@ -589,8 +589,8 @@ The possible values for the RR Code byte are described in this table.
 | 0x00 | FIRMWARE\_OFFER\_REJECT\_OLD\_FW | The offer was rejected because the version of the offered firmware is older or same as the current firmware. |
 | 0x01 | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
 | 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
-| 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
-| 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
+| 0x03 - 0x08 | (Reserved) | Reserved. Do not use. |
+| 0x09 - 0xDF | (Reserved) | Reserved. Do not use. |
 | 0xE0 - 0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
 ##### 5.2.2.4 Status
@@ -601,7 +601,7 @@ The possible values for the RR Code byte are described in this table.
 
 The bits of the Status byte are described in this table.
 
-###### Table 5.2-15 FIRMWARE_UPDATE_OFFER Response – Status Bits
+###### Table 5.2-15 FIRMWARE_UPDATE_OFFER Response - Status Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -631,7 +631,7 @@ If the Component ID in the Component Information bytes (see Component Informatio
 
 #### 5.3.1 Command
 
-The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
+The FIRMWARE\_UPDATE\_OFFER -Information Command packet is defined as follows:
 
 ###### Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout
 
@@ -639,13 +639,13 @@ The FIRMWARE\_UPDATE\_OFFER –Information Command packet is defined as follows:
 
 ##### 5.3.1.1 Component
 
-###### Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command – Component Layout
+###### Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command - Component Layout
 
-![FIRMWARE_UPDATE_OFFER - Information Command – Component Layout](images/firmware-update-offer-information-command-component-layout.png)
+![FIRMWARE_UPDATE_OFFER - Information Command - Component Layout](images/firmware-update-offer-information-command-component-layout.png)
 
 The bits of the Component byte are described in this table.
 
-###### Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command – Component Bits
+###### Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command - Component Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -654,7 +654,7 @@ The bits of the Component byte are described in this table.
 | 16 | Component ID | 8 | Set to 0xFF. |
 | 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
-###### Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command – Information Code Values
+###### Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command - Information Code Values
 
 | Status | Name | Description |
 |--|--|--|
@@ -662,21 +662,21 @@ The bits of the Component byte are described in this table.
 | 0x01 | OFFER\_INFO\_START\_OFFER\_LIST | Indicates the beginning of the Offer list from the host in case the Accessory has download rules associated with ensuring one subcomponent is updated prior to another subcomponent in the system. |
 | 0x02 | OFFER\_INFO\_END\_OFFER\_LIST | Indicates the end of the Offer list from the host. |
 
-##### 5.3.1.2 Reserved B7 – B4
+##### 5.3.1.2 Reserved B7 - B4
 
 Reserved. Do not use.
 
-##### 5.3.1.3 Reserved B11 – B8
+##### 5.3.1.3 Reserved B11 - B8
 
 Reserved. Do not use.
 
-##### 5.3.1.4 Reserved B15 – B12
+##### 5.3.1.4 Reserved B15 - B12
 
 Reserved. Do not use.
 
 #### 5.3.2 Response
 
-The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defined as follows.
+The FIRMWARE\_UPDATE\_OFFER - Offer Information Response packet reply is defined as follows.
 
 ###### Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout
 
@@ -690,7 +690,7 @@ The FIRMWARE\_UPDATE\_OFFER – Offer Information Response packet reply is defin
 
 The bits of the Token byte are described in this table.
 
-###### Table 5.3-7 FIRMWARE_UPDATE_OFFER - Information Response – Token Bits
+###### Table 5.3-7 FIRMWARE_UPDATE_OFFER - Information Response - Token Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -699,7 +699,7 @@ The bits of the Token byte are described in this table.
 | 16 | Reserved | 8 | Reserved. Do not use. |
 | 24 | Token | 8 | Token to identify the host |
 
-##### 5.3.2.2 Reserved B7 – B4
+##### 5.3.2.2 Reserved B7 - B4
 
 Reserved. Do not use.
 
@@ -727,8 +727,8 @@ The possible values for the RR Code byte are described in this table.
 | 0x00 | FIRMWARE\_OFFER\_REJECT\_OLD\_FW | The offer was rejected because the version of the offered firmware is older or same as the current firmware. |
 | 0x01 | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
 | 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
-| 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
-| 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
+| 0x03 - 0x08 | (Reserved) | Reserved. Do not use. |
+| 0x09 - 0xDF | (Reserved) | Reserved. Do not use. |
 | 0xE0 — 0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
 ##### 5.3.2.4 Status
@@ -760,13 +760,13 @@ If the Component ID in the Component Information bytes is set to 0xFE, the four 
 
 ##### 5.4.1.1 Component
 
-###### Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout
+###### Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout
 
-![FIRMWARE_UPDATE_OFFER - Extended Command Packet – Command - Component Layout](images/firmware-update-offer-extended-command-packet-command-component-layout.png)
+![FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout](images/firmware-update-offer-extended-command-packet-command-component-layout.png)
 
 The bits of the Component byte are described in this table.
 
-###### Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command – Component Bits
+###### Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command - Component Bits
 
 | Bit Offset | Field | Size | Description |
 |--|--|--|--|
@@ -775,22 +775,22 @@ The bits of the Component byte are described in this table.
 | 16 | Component ID | 8 | Set to 0xFE. |
 | 24 | Token |  | The host inserts a unique token in the offer packet to component. This token must be returned by the component in the offer response. |
 
-###### Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command – Command Code Values
+###### Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command - Command Code Values
 
 | Status | Name | Description |
 |--|--|--|
 | 0x01 | OFFER\_NOTIFY\_ON\_READY | Sent by the host if the offer was previously been rejected by the component. |
 | 0x02 - 0xFF | Reserved | Reserved |
 
-##### 5.4.1.2 Reserved B7 – B4
+##### 5.4.1.2 Reserved B7 - B4
 
 Reserved. Do not use.
 
-##### 5.4.1.3 Reserved B11 – B8
+##### 5.4.1.3 Reserved B11 - B8
 
 Reserved. Do not use.
 
-##### 5.4.1.4 Reserved B15 – B12
+##### 5.4.1.4 Reserved B15 - B12
 
 Reserved. Do not use.
 
@@ -819,7 +819,7 @@ The bits of the Token byte are described in this table.
 | 16 | Reserved | 8 | Reserved. Do not use. |
 | 24 | Token | 8 | Token to identify the host. |
 
-##### 5.4.2.2 Reserved B7 – B4
+##### 5.4.2.2 Reserved B7 - B4
 
 Reserved. Do not use.
 
@@ -847,8 +847,8 @@ The possible values for the RR Code byte are described in this table.
 | 0x00 | FIRMWARE\_OFFER\_REJECT\_OLD\_FW | The offer was rejected because the version of the offered firmware is older or same as the current firmware. |
 | 0x01 | FIRMWARE\_OFFER\_REJECT\_INV\_COMPONENT | The offer was rejected because the offered firmware is not applicable to the product's platform. This can be due to a non-supported component ID or offered image is not compatible with the system hardware. |
 | 0x02 | FIRMWARE\_UPDATE\_OFFER SWAP\_PENDING | The component firmware has been updated however a swap to the new firmware is pending. No further Firmware Update processing can occur until the swap has completed, typically through a reset. |
-| 0x03 – 0x08 | (Reserved) | Reserved. Do not use. |
-| 0x09 – 0xDF | (Reserved) | Reserved. Do not use. |
+| 0x03 - 0x08 | (Reserved) | Reserved. Do not use. |
+| 0x09 - 0xDF | (Reserved) | Reserved. Do not use. |
 | 0xE0 — 0xFF | (Vendor Specific) | These values are used by the designers of the protocol and the meaning is vendor specific. |
 
 ##### 5.4.2.4 Status
@@ -880,7 +880,7 @@ When the primary component receives the last block, the component validates the 
 
 ![FIRMWARE_UPDATE_CONTENT Command Layout](images/firmware-update-content-command-layout.png)
 
-##### 5.5.1.1 Header (B7 – B0)
+##### 5.5.1.1 Header (B7 - B0)
 
 ###### Table 5.5-2 FIRMWARE_UPDATE_CONTENT Command Header Layout
 
@@ -975,11 +975,11 @@ The possible values for the Status byte are described in this table.
 | 0x0A | FIRMWARE_UPDATE_ERROR_NO_OFFER | The FIRMWARE_UPDATE_OFFER Command was received without first receiving a valid and accepted firmware update offer. |
 | 0x0B | FIRMWARE_UPDATE_ERROR_INVALID | General error for the FIRMWARE_UPDATE_OFFER Command, such as an invalid applicable Data Length. |
 
-##### 5.5.2.3 Reserved B8 – B11
+##### 5.5.2.3 Reserved B8 - B11
 
 Reserved. Do not use.
 
-##### 5.5.2.4 Reserved B12 – B15
+##### 5.5.2.4 Reserved B12 - B15
 
 Reserved. Do not use.
 
@@ -989,25 +989,25 @@ Reserved. Do not use.
 
 Consider the following device firmware:
 
-- Primary Component – Component ID 1 – Current firmware version 7.0.1
+- Primary Component - Component ID 1 - Current firmware version 7.0.1
 
-- Sub-component – Component ID 2 – Current firmware version 12.4.54
+- Sub-component - Component ID 2 - Current firmware version 12.4.54
 
-- Sub-component – Component ID 3 – Current firmware version 4.4.2
+- Sub-component - Component ID 3 - Current firmware version 4.4.2
 
-- Sub-component – Component ID 4 – Current firmware version 23.32.9
+- Sub-component - Component ID 4 - Current firmware version 23.32.9
 
-The host has these three firmware images:  
+The host has these three firmware images:  
 
-- Component ID 1 – Firmware version 7.1.3
+- Component ID 1 - Firmware version 7.1.3
 
-- Component ID 2 – Firmware version 12.4.54
+- Component ID 2 - Firmware version 12.4.54
 
-- Component ID 3 – Firmware version 4.5.0
+- Component ID 3 - Firmware version 4.5.0
 
 The sequence will be:
 
-1. Host offers: Component ID 1 – Firmware version 7.1.3
+1. Host offers: Component ID 1 - Firmware version 7.1.3
 
 1. Primary component accepts the offer
 
@@ -1015,11 +1015,11 @@ The sequence will be:
 
 1. Primary component accepts firmware, validates it
 
-1. Host offers: Component ID 2 – Firmware version 12.4.54
+1. Host offers: Component ID 2 - Firmware version 12.4.54
 
-1. Primary component rejects the offer
+1. Primary component rejects the offer
 
-1. Host offers: Component ID 3 – Firmware version 4.5.0
+1. Host offers: Component ID 3 - Firmware version 4.5.0
 
 1. Primary component accepts the offer
 
@@ -1029,15 +1029,15 @@ The sequence will be:
 
 Because all offers were not rejected, the host replays all the offers:
 
-1. Host offers: Component ID 1 – Firmware version 7.1.3
+1. Host offers: Component ID 1 - Firmware version 7.1.3
 
 1. Component rejects
 
-1. Host offers: Component ID 2 – Firmware version 12.4.54
+1. Host offers: Component ID 2 - Firmware version 12.4.54
 
 1. Component rejects
 
-1. Host offers: Component ID 3 – Firmware version 4.5.0
+1. Host offers: Component ID 3 - Firmware version 4.5.0
 
 1. Component rejects
 
@@ -1045,56 +1045,56 @@ Because all offers were not rejected, the host replays all the offers:
 
 Consider the following device firmware:
 
-- Primary Component – Component ID 1 – Current firmware version 7.0.1
+- Primary Component - Component ID 1 - Current firmware version 7.0.1
 
-- Sub-component – Component ID 2 – Current firmware version 12.4.54
+- Sub-component - Component ID 2 - Current firmware version 12.4.54
 
-- Sub-component – Component ID 3 – Current firmware version 7.4.2
+- Sub-component - Component ID 3 - Current firmware version 7.4.2
 
-- Sub-component – Component ID 4 – Current firmware version 23.32.9
+- Sub-component - Component ID 4 - Current firmware version 23.32.9
 
-The host has these three firmware images:  
+The host has these three firmware images:  
 
-- Component ID 1 – Firmware version 8.0.0
+- Component ID 1 - Firmware version 8.0.0
 
-- Component ID 2 – Firmware version 12.4.54
+- Component ID 2 - Firmware version 12.4.54
 
-- Component ID 3 – Firmware version 9.0.0
+- Component ID 3 - Firmware version 9.0.0
 
-In addition, the implementation requires that the firmware version of the sub-components must not be less than the firmware version running on the primary component. The host is not aware of that requirement and it is up-to the primary component to ensure this rule.  
+In addition, the implementation requires that the firmware version of the sub-components must not be less than the firmware version running on the primary component. The host is not aware of that requirement and it is up-to the primary component to ensure this rule.
 
 The sequence will be:
 
-1. Host offers: Component ID 1 – Firmware version 8.0.0
+1. Host offers: Component ID 1 - Firmware version 8.0.0
 
 1. Primary component rejects (because component ID 3 is not yet updated)
 
-1. Host offers: Component ID 2 – Firmware version 12.4.54
+1. Host offers: Component ID 2 - Firmware version 12.4.54
 
 1. Primary component rejects
 
-1. Host offers: Component ID 3 – Firmware version 9.0.0
+1. Host offers: Component ID 3 - Firmware version 9.0.0
 
 1. Primary component accepts offer
 
-1. Host sends the firmware image
+1. Host sends the firmware image
 
 1. Primary component accepts firmware, validates it
 
 Because all offers were not rejected, the host replays all the offers
 
-1. Host offers: Component ID 1 – Firmware version 8.0.0
+1. Host offers: Component ID 1 - Firmware version 8.0.0
 
 1. Primary component accepts offer
 
-1. Host sends the firmware image
+1. Host sends the firmware image
 
 1. Primary component accepts firmware, validates it
 
-1. Host offers: Component ID 2 – Firmware version 12.4.54
+1. Host offers: Component ID 2 - Firmware version 12.4.54
 
 1. Primary component rejects
 
-1. Host offers: Component ID 3 – Firmware version 9.0.0
+1. Host offers: Component ID 3 - Firmware version 9.0.0
 
 1. Primary component rejects
