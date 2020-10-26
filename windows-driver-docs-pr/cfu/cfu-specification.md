@@ -46,41 +46,41 @@ This specification describes a generic HID protocol to update firmware for compo
       - [5.2.1.4 Misc. and Protocol version](#5214-misc-and-protocol-version)
     - [5.2.2 Response](#522-response)
       - [5.2.2.1 Token](#5221-token)
-      - [5.2.2.2 Reserved (B7 - B4)](#5222-reserved-b7--b4)
+      - [5.2.2.2 Reserved (B7 - B4)](#5222-reserved-b7---b4)
       - [5.2.2.3 Reject Reason (RR)](#5223-reject-reason-rr)
       - [5.2.2.4 Status](#5224-status)
     - [5.2.3 Mapping to HID Protocol](#523-mapping-to-hid-protocol)
   - [5.3 FIRMWARE_UPDATE_OFFER - Information](#53-firmware_update_offer---information)
     - [5.3.1 Command](#531-command)
       - [5.3.1.1 Component](#5311-component)
-      - [5.3.1.2 Reserved B7 - B4](#5312-reserved-b7--b4)
-      - [5.3.1.3 Reserved B11 - B8](#5313-reserved-b11--b8)
-      - [5.3.1.4 Reserved B15 - B12](#5314-reserved-b15--b12)
+      - [5.3.1.2 Reserved B7 - B4](#5312-reserved-b7---b4)
+      - [5.3.1.3 Reserved B11 - B8](#5313-reserved-b11---b8)
+      - [5.3.1.4 Reserved B15 - B12](#5314-reserved-b15---b12)
     - [5.3.2 Response](#532-response)
       - [5.3.2.1 Token](#5321-token)
-      - [5.3.2.2 Reserved B7 - B4](#5322-reserved-b7--b4)
+      - [5.3.2.2 Reserved B7 - B4](#5322-reserved-b7---b4)
       - [5.3.2.3 Reject Reason (RR)](#5323-reject-reason-rr)
       - [5.3.2.4 Status](#5324-status)
   - [5.4 FIRMWARE_UPDATE_OFFER - Extended](#54-firmware_update_offer---extended)
     - [5.4.1 Command](#541-command)
       - [5.4.1.1 Component](#5411-component)
-      - [5.4.1.2 Reserved B7 - B4](#5412-reserved-b7--b4)
-      - [5.4.1.3 Reserved B11 - B8](#5413-reserved-b11--b8)
-      - [5.4.1.4 Reserved B15 - B12](#5414-reserved-b15--b12)
+      - [5.4.1.2 Reserved B7 - B4](#5412-reserved-b7---b4)
+      - [5.4.1.3 Reserved B11 - B8](#5413-reserved-b11---b8)
+      - [5.4.1.4 Reserved B15 - B12](#5414-reserved-b15---b12)
     - [5.4.2 Response](#542-response)
       - [5.4.2.1 Token](#5421-token)
-      - [5.4.2.2 Reserved B7 - B4](#5422-reserved-b7--b4)
+      - [5.4.2.2 Reserved B7 - B4](#5422-reserved-b7---b4)
       - [5.4.2.3 Reject Reason](#5423-reject-reason)
       - [5.4.2.4 Status](#5424-status)
   - [5.5 FIRMWARE_UPDATE_CONTENT](#55-firmware_update_content)
     - [5.5.1 Command](#551-command)
-      - [5.5.1.1 Header (B7 - B0)](#5511-header-b7--b0)
+      - [5.5.1.1 Header (B7 - B0)](#5511-header-b7---b0)
       - [5.5.1.2 Data](#5512-data)
     - [5.5.2 Response](#552-response)
       - [5.5.2.1 Sequence Number](#5521-sequence-number)
       - [5.5.2.2 Status](#5522-status)
-      - [5.5.2.3 Reserved B8 - B11](#5523-reserved-b8--b11)
-      - [5.5.2.4 Reserved B12 - B15](#5524-reserved-b12--b15)
+      - [5.5.2.3 Reserved B8 - B11](#5523-reserved-b8---b11)
+      - [5.5.2.4 Reserved B12 - B15](#5524-reserved-b12---b15)
 - [6 Appendix 1: Example Firmware Update Programming Command Sequence](#6-appendix-1-example-firmware-update-programming-command-sequence)
   - [6.1 Example 1](#61-example-1)
   - [6.2 Example 2](#62-example-2)
@@ -91,7 +91,7 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.1-2 GET_FIRMWARE_VERSION Response - Header Layout](#table-51-2-get_firmware_version-response----header-layout)
 
-[Table 5.1-3 GET_FIRMWARE_VERSION Response - Header Bits](#table-51-3-get_firmware_version-response--header-bits)
+[Table 5.1-3 GET_FIRMWARE_VERSION Response - Header Bits](#table-51-3-get_firmware_version-response---header-bits)
 
 [Table 5.1-4 GET_FIRMWARE_VERSION Response - Component Version and Properties Layout](#table-51-4-get_firmware_version-response---component-version-and-properties-layout)
 
@@ -115,7 +115,7 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.2-9 FIRMWARE_UPDATE_OFFER Response - Token Layout](#table-52-9-firmware_update_offer-response---token-layout)
 
-[Table 5.2-10 FIRMWARE_UPDATE_OFFER Response - Token Bits](#table-52-10-firmware_update_offer-response--token-bits)
+[Table 5.2-10 FIRMWARE_UPDATE_OFFER Response - Token Bits](#table-52-10-firmware_update_offer-response---token-bits)
 
 [Table 5.2-11 FIRMWARE_UPDATE_OFFER Response - Reject Reason Layout](#table-52-11-firmware_update_offer-response---reject-reason-layout)
 
@@ -125,23 +125,23 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.2-14 FIRMWARE_UPDATE_OFFER Response Status Layout](#table-52-14-firmware_update_offer-response-status-layout)
 
-[Table 5.2-15 FIRMWARE_UPDATE_OFFER Response - Status Bits](#table-52-15-firmware_update_offer-response--status-bits)
+[Table 5.2-15 FIRMWARE_UPDATE_OFFER Response - Status Bits](#table-52-15-firmware_update_offer-response---status-bits)
 
 [Table 5.2-16 FIRMWARE_UPDATE_OFFER Response Status Values](#table-52-16-firmware_update_offer-response-status-values)
 
 [Table 5.3-1 FIRMWARE_UPDATE_OFFER - Information Command Layout](#table-53-1-firmware_update_offer---information-command-layout)
 
-[Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command - Component Layout](#table-53-2-firmware_update_offer---information-command--component-layout)
+[Table 5.3-2 FIRMWARE_UPDATE_OFFER - Information Command - Component Layout](#table-53-2-firmware_update_offer---information-command---component-layout)
 
-[Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command - Component Bits](#table-53-3-firmware_update_offer---information-command--component-bits)
+[Table 5.3-3 FIRMWARE_UPDATE_OFFER - Information Command - Component Bits](#table-53-3-firmware_update_offer---information-command---component-bits)
 
-[Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command - Information Code Values](#table-53-4-firmware_update_offer---information-command--information-code-values)
+[Table 5.3-4 FIRMWARE_UPDATE_OFFER - Information Command - Information Code Values](#table-53-4-firmware_update_offer---information-command---information-code-values)
 
 [Table 5.3-5 FIRMWARE_UPDATE_OFFER - Information Response Layout](#table-53-5-firmware_update_offer---information-response-layout)
 
 [Table 5.3-6 FIRMWARE_UPDATE_OFFER- Information Packet Response Token Layout](#table-53-6-firmware_update_offer--information-packet-response-token-layout)
 
-[Table 5.3-7 FIRMWARE_UPDATE_OFFER - Information Response - Token Bits](#table-53-7-firmware_update_offer---information-response--token-bits)
+[Table 5.3-7 FIRMWARE_UPDATE_OFFER - Information Response - Token Bits](#table-53-7-firmware_update_offer---information-response---token-bits)
 
 [Table 5.3-8 FIRMWARE_UPDATE_OFFER - Information Response - RR Code Layout](#table-53-8-firmware_update_offer---information-response---rr-code-layout)
 
@@ -155,11 +155,11 @@ This specification describes a generic HID protocol to update firmware for compo
 
 [Table 5.4-1 FIRMWARE_UPDATE_OFFER - Extended Command Layout](#table-54-1-firmware_update_offer---extended-command-layout)
 
-[Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout](#table-54-2-firmware_update_offer---extended-command-packet--command---component-layout)
+[Table 5.4-2 FIRMWARE_UPDATE_OFFER - Extended Command Packet - Command - Component Layout](#table-54-2-firmware_update_offer---extended-command-packet---command---component-layout)
 
-[Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command - Component Bits](#table-54-3-firmware_update_offer---extended-command--component-bits)
+[Table 5.4-3 FIRMWARE_UPDATE_OFFER - Extended Command - Component Bits](#table-54-3-firmware_update_offer---extended-command---component-bits)
 
-[Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command - Command Code Values](#table-54-4-firmware_update_offer---extended-command--command-code-values)
+[Table 5.4-4 FIRMWARE_UPDATE_OFFER - Extended Command - Command Code Values](#table-54-4-firmware_update_offer---extended-command---command-code-values)
 
 [Table 5.4-5 FIRMWARE_UPDATE_OFFER - Extended Command Packet Response Layout](#table-54-5-firmware_update_offer---extended-command-packet-response-layout)
 
