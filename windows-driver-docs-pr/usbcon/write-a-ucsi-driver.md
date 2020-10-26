@@ -109,7 +109,7 @@ In your [**EVT_WDF_DRIVER_DEVICE_ADD**](/windows-hardware/drivers/ddi/wdfdriver/
 
 1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmUcsiDeviceInitInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
 
-2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize.md) to register the client diver with UcmUcsiCx.
+2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize) to register the client diver with UcmUcsiCx.
 
 ## 2. Create the PPM object with UcmUcsiCx
 
