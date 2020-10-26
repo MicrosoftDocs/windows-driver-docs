@@ -15,29 +15,36 @@ In this call, the Notification parameter is set to a PEP_DPM_XXX constant value 
 
 |Notification ID|Value|Associated structure|
 |----|----|----|
-|[PEP_DPM_PREPARE_DEVICE](#PEP_DPM_PREPARE_DEVICE)|0x01|[PEP_PREPARE_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_prepare_device)|
-|[PEP_DPM_REGISTER_DEVICE](#PEP_DPM_REGISTER_DEVICE)|0x03|PEP_REGISTER_DEVICE_V2|
-|[PEP_DPM_UNREGISTER_DEVICE](#PEP_DPM_UNREGISTER_DEVICE)|0x04|PEP_UNREGISTER_DEVICE|
-|[PEP_DPM_DEVICE_POWER_STATE](#PEP_DPM_DEVICE_POWER_STATE)|0x05|PEP_DEVICE_POWER_STATE|
-|[PEP_DPM_COMPONENT_ACTIVE](#PEP_DPM_COMPONENT_ACTIVE)|0x07|PEP_COMPONENT_ACTIVE|
-|[PEP_DPM_WORK](#PEP_DPM_WORK)|0x0D|PEP_WORK|
-|[PEP_DPM_POWER_CONTROL_REQUEST](#PEP_DPM_POWER_CONTROL_REQUEST)|0x0E|PEP_POWER_CONTROL_REQUEST|
-|[PEP_DPM_POWER_CONTROL_COMPLETE](#PEP_DPM_POWER_CONTROL_COMPLETE)|0x0F|PEP_POWER_CONTROL_COMPLETE|
-|[PEP_DPM_SYSTEM_LATENCY_UPDATE](#PEP_DPM_SYSTEM_LATENCY_UPDATE)|0x10|PEP_SYSTEM_LATENCY|
-|[PEP_DPM_DEVICE_STARTED](#PEP_DPM_DEVICE_STARTED)|0x12|PEP_DEVICE_STARTED|
-|[PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE](#PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE)|0x13|PEP_NOTIFY_COMPONENT_IDLE_STATE|
-|[PEP_DPM_REGISTER_DEBUGGER](#PEP_DPM_REGISTER_DEBUGGER)|0x15|PEP_REGISTER_DEBUGGER|
-|[PEP_DPM_REGISTER_CRASHDUMP_DEVICE](#PEP_DPM_REGISTER_CRASHDUMP_DEVICE)|0x19|PEP_REGISTER_CRASHDUMP_DEVICE|
-|[PEP_DPM_DEVICE_IDLE_CONSTRAINTS](#PEP_DPM_DEVICE_IDLE_CONSTRAINTS)|0x1A|PEP_DEVICE_PLATFORM_CONSTRAINTS|
-|[PEP_DPM_COMPONENT_IDLE_CONSTRAINTS](#PEP_DPM_COMPONENT_IDLE_CONSTRAINTS)|0x1B|PEP_COMPONENT_PLATFORM_CONSTRAINTS|
-|[PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES](#PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES)|0x1C|PEP_QUERY_COMPONENT_PERF_CAPABILITIES|
-|[PEP_DPM_QUERY_COMPONENT_PERF_SET](#PEP_DPM_QUERY_COMPONENT_PERF_SET)|0x1D|PEP_QUERY_COMPONENT_PERF_SET|
-|[PEP_DPM_QUERY_COMPONENT_PERF_SET_NAME](#PEP_DPM_QUERY_COMPONENT_PERF_SET_NAME)|0x1E|PEP_QUERY_COMPONENT_PERF_SET_NAME|
-|[PEP_DPM_QUERY_COMPONENT_PERF_STATES](#PEP_DPM_QUERY_COMPONENT_PERF_STATES)|0x1F|PEP_QUERY_COMPONENT_PERF_STATES|
-|[PEP_DPM_REGISTER_COMPONENT_PERF_STATES](#PEP_DPM_REGISTER_COMPONENT_PERF_STATES)|0x20|PEP_REGISTER_COMPONENT_PERF_STATES|
-|[PEP_DPM_REQUEST_COMPONENT_PERF_STATE](#PEP_DPM_REQUEST_COMPONENT_PERF_STATE)|0x21|PEP_REQUEST_COMPONENT_PERF_STATE|
-|[PEP_DPM_QUERY_CURRENT_COMPONENT_PERF_STATE](#PEP_DPM_QUERY_CURRENT_COMPONENT_PERF_STATE)|0x22|PEP_QUERY_CURRENT_COMPONENT_PERF_STATE|
-|[PEP_DPM_QUERY_DEBUGGER_TRANSITION_REQUIREMENTS](#PEP_DPM_QUERY_DEBUGGER_TRANSITION_REQUIREMENTS)|0x23|PEP_DEBUGGER_TRANSITION_REQUIREMENTS|
+|[PEP_DPM_PREPARE_DEVICE](#pep_dpm_prepare_device)|0x01|[PEP_PREPARE_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_prepare_device)|
+|[PEP_DPM_ABANDON_DEVICE](#pep_dpm_abandon_device)|0x02|[PEP_ABANDON_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_abandon_device)|
+|[PEP_DPM_REGISTER_DEVICE](#pep_dpm_register_device)|0x03|[PEP_REGISTER_DEVICE_V2](windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v2)|
+|[PEP_DPM_UNREGISTER_DEVICE](#pep_dpm_unregister_device)|0x04|[PEP_UNREGISTER_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_unregister_device)|
+|[PEP_DPM_DEVICE_POWER_STATE](#pep_dpm_device_power_state)|0x05|[PEP_DEVICE_POWER_STATE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_power_state)|
+|[PEP_DPM_COMPONENT_ACTIVE](#pep_dpm_component_active)|0x07|[PEP_COMPONENT_ACTIVE](/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_component_active)|
+|[PEP_DPM_WORK](#pep_dpm_work)|0x0D|[PEP_WORK](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_work)|
+|[PEP_DPM_POWER_CONTROL_REQUEST](#pep_dpm_power_control_request)|0x0E|[PEP_POWER_CONTROL_REQUEST](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_power_control_request)|
+|[PEP_DPM_POWER_CONTROL_COMPLETE](#pep_dpm_power_control_complete)|0x0F|[PEP_POWER_CONTROL_COMPLETE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_power_control_complete)|
+|[PEP_DPM_SYSTEM_LATENCY_UPDATE](#pep_dpm_system_latency_update)|0x10|[PEP_SYSTEM_LATENCY](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_system_latency)|
+|[PEP_DPM_DEVICE_STARTED](#pep_dpm_device_started)|0x12|[PEP_DEVICE_STARTED](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_started)|
+|[PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE](#pep_dpm_notify_component_idle_state)|0x13|[PEP_NOTIFY_COMPONENT_IDLE_STATE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_notify_component_idle_state)|
+|[PEP_DPM_REGISTER_DEBUGGER](#pep_dpm_register_debugger)|0x15|[PEP_REGISTER_DEBUGGER](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_debugger)|
+|[PEP_DPM_LOW_POWER_EPOCH](#pep_dpm_low_power_epoch)|0x18|[PEP_LOW_POWER_EPOCH](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_low_power_epoch)|
+|[PEP_DPM_REGISTER_CRASHDUMP_DEVICE](#pep_dpm_register_crashdump_device)|0x19|[PEP_REGISTER_CRASHDUMP_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device)|
+|[PEP_DPM_DEVICE_IDLE_CONSTRAINTS](#pep_dpm_device_idle_constraints)|0x1A|[PEP_DEVICE_PLATFORM_CONSTRAINTS](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_platform_constraints)|
+|[PEP_DPM_COMPONENT_IDLE_CONSTRAINTS](#pep_dpm_component_idle_constraints)|0x1B|[PEP_COMPONENT_PLATFORM_CONSTRAINTS](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_component_platform_constraints)|
+|[PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES](#pep_dpm_query_component_perf_capabilities)|0x1C|[PEP_QUERY_COMPONENT_PERF_CAPABILITIES](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_capabilities)|
+|[PEP_DPM_QUERY_COMPONENT_PERF_SET](#pep_dpm_query_component_perf_set)|0x1D|[PEP_QUERY_COMPONENT_PERF_SET](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_set)|
+|[PEP_DPM_QUERY_COMPONENT_PERF_SET_NAME](#pep_dpm_query_component_perf_set_name)|0x1E|[PEP_QUERY_COMPONENT_PERF_SET_NAME](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_set_name)|
+|[PEP_DPM_QUERY_COMPONENT_PERF_STATES](#pep_dpm_query_component_perf_states)|0x1F|[PEP_QUERY_COMPONENT_PERF_STATES](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_states)|
+|[PEP_DPM_REGISTER_COMPONENT_PERF_STATES](#pep_dpm_register_component_perf_states)|0x20|[PEP_REGISTER_COMPONENT_PERF_STATES](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_component_perf_states)|
+|[PEP_DPM_REQUEST_COMPONENT_PERF_STATE](#pep_dpm_request_component_perf_state)|0x21|[PEP_REQUEST_COMPONENT_PERF_STATE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_request_component_perf_state)|
+|[PEP_DPM_QUERY_CURRENT_COMPONENT_PERF_STATE](#pep_dpm_query_current_component_perf_state)|0x22|[PEP_QUERY_CURRENT_COMPONENT_PERF_STATE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_current_component_perf_state)|
+|[PEP_DPM_QUERY_DEBUGGER_TRANSITION_REQUIREMENTS](#pep_dpm_query_debugger_transition_requirements)|0x23|[PEP_DEBUGGER_TRANSITION_REQUIREMENTS](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_debugger_transition_requirements)|
+|[PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT](#pep_dpm_query_soc_subsystem_count)|0x24|[PEP_QUERY_SOC_SUBSYSTEM_COUNT](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_soc_subsystem_count)|
+|[PEP_DPM_QUERY_SOC_SUBSYSTEM](#pep_dpm_query_soc_subsystem)|0x25|[PEP_QUERY_SOC_SUBSYSTEM](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_soc_subsystem)|
+|[PEP_DPM_RESET_SOC_SUBSYSTEM_ACCOUNTING](#pep_dpm_reset_soc_subsystem_accounting)|0x26|[PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_reset_soc_subsystem_accounting)|
+|[PEP_DPM_QUERY_SOC_SUBSYSTEM_BLOCKING_TIME](#pep_dpm_query_soc_subsystem_blocking_time)|0x27|[PEP_QUERY_SOC_SUBSYSTEM_BLOCKING_TIME](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_soc_subsystem_blocking_time)|
+|[PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA](#pep_dpm_query_soc_subsystem_metadata)|0x28|[PEP_QUERY_SOC_SUBSYSTEM_METADATA](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_soc_subsystem_metadata)|
 
 ## Notification Ids
 
@@ -77,7 +84,7 @@ The value PEP_DPM_ABANDON_DEVICE.
 
 #### Data (PEP_DPM_ABANDON_DEVICE)
 
-A pointer to a PEP_ABANDON_DEVICE structure.
+A pointer to a [PEP_ABANDON_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_abandon_device) structure.
  Tells the PEP that the specified device is no longer being used by the operating system.
 
 The Windows power management framework (PoFx) sends this notification to the PEP after the operating system removes a device's driver stack. This notification allows the PEP to turn off any external power or clock resources that are used to operate the device, and to remove this device from future decision-making processes. If the device must be started again later, the PEP will first receive a PEP_DPM_PREPARE_DEVICE notification.
@@ -100,7 +107,7 @@ The value PEP_DPM_REGISTER_DEVICE.
 
 #### Data (PEP_DPM_REGISTER_DEVICE)
 
-A pointer to a PEP_REGISTER_DEVICE_V2 structure.
+A pointer to a [PEP_REGISTER_DEVICE_V2](windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v2) structure.
 
 Tells the PEP that the driver stack for the specified device has registered with the Windows power management framework (PoFx).
 
@@ -124,7 +131,7 @@ The value PEP_DPM_UNREGISTER_DEVICE.
 
 #### Data (PEP_DPM_UNREGISTER_DEVICE)
 
-A pointer to a PEP_UNREGISTER_DEVICE structure.
+A pointer to a [PEP_UNREGISTER_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_unregister_device) structure.
 
 Tells the PEP that owns the specified device that the device's driver stack has withdrawn its registration from the Windows power management framework (PoFx).
 
@@ -148,7 +155,7 @@ The value PEP_DPM_DEVICE_POWER_STATE.
 
 #### Data (PEP_DPM_DEVICE_POWER_STATE)
 
-A pointer to a PEP_DEVICE_POWER_STATE structure.
+A pointer to a [PEP_DEVICE_POWER_STATE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_power_state) structure.
 
 Sent to the PEP each time the device's driver stack either requests a change to a new Dx power state, or a previously requested transition to a Dx power state completes.
 
@@ -166,7 +173,7 @@ The value PEP_DPM_COMPONENT_ACTIVE.
 
 #### Data (PEP_DPM_COMPONENT_ACTIVE)
 
-A pointer to a PEP_COMPONENT_ACTIVE structure that identifies the component and that indicates whether this component is making a transition to the active condition or to the idle condition.
+A pointer to a [PEP_COMPONENT_ACTIVE](/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_component_active) structure that identifies the component and that indicates whether this component is making a transition to the active condition or to the idle condition.
 
 Informs the PEP that a component needs to make a transition from the idle condition to the active condition, or vice versa.
 
@@ -194,7 +201,7 @@ The value PEP_DPM_WORK.
 
 #### Data (PEP_DPM_WORK)
 
-A pointer to a PEP_WORK structure.
+A pointer to a [PEP_WORK](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_work) structure.
 
 Sent to the PEP once each time the PEP calls the RequestWorker routine to request an item of work from the Windows power management framework (PoFx).
 
@@ -212,7 +219,7 @@ The value PEP_DPM_POWER_CONTROL_REQUEST.
 
 #### Data (PEP_DPM_POWER_CONTROL_REQUEST)
 
-A pointer to a PEP_POWER_CONTROL_REQUEST structure.
+A pointer to a [PEP_POWER_CONTROL_REQUEST](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_power_control_request) structure.
 
 Informs the PEP that a driver has called the PoFxPowerControl API to send a control code directly to the PEP.
 
@@ -233,7 +240,7 @@ The value PEP_DPM_POWER_CONTROL_COMPLETE.
 
 #### Data (PEP_DPM_POWER_CONTROL_COMPLETE)
 
-A pointer to a PEP_POWER_CONTROL_COMPLETE structure.
+A pointer to a [PEP_POWER_CONTROL_COMPLETE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_power_control_complete) structure.
 
 Informs the PEP that a driver has completed a power control request that was previously issued by the PEP
 
@@ -252,7 +259,7 @@ The value PEP_DPM_SYSTEM_LATENCY_UPDATE.
 
 #### Data (PEP_DPM_SYSTEM_LATENCY_UPDATE)
 
-A pointer to a PEP_SYSTEM_LATENCY structure.
+A pointer to a [PEP_SYSTEM_LATENCY](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_system_latency) structure.
 
 Informs the PEP that the OS has updated the overall system latency tolerance.
 
@@ -270,7 +277,7 @@ The value PEP_DPM_DEVICE_STARTED.
 
 #### Data (PEP_DPM_DEVICE_STARTED)
 
-A pointer to a PEP_DEVICE_STARTED structure.
+A pointer to a [PEP_DEVICE_STARTED](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_started) structure.
 
 Informs the PEP that the device has started so that it is available to receive power control transactions.
 
@@ -292,7 +299,7 @@ The value PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE.
 
 #### Data (PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE)
 
-A pointer to a PEP_NOTIFY_COMPONENT_IDLE_STATE structure.
+A pointer to a [PEP_NOTIFY_COMPONENT_IDLE_STATE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_notify_component_idle_state) structure.
 
 Sent to the PEP when the OS issues an idle state transition for a given component.
 
@@ -319,13 +326,25 @@ The value PEP_DPM_REGISTER_DEBUGGER.
 
 #### Data (PEP_DPM_REGISTER_DEBUGGER)
 
-A pointer to a PEP_REGISTER_DEBUGGER structure.
+A pointer to a [PEP_REGISTER_DEBUGGER](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_debugger) structure.
 
 Informs the PEP that a registered device may be used as a debug port.
 
 The Windows power management framework (PoFx) sends this notification to notify the PEP that a registered device may be used as a debug port.
 
 For a PEP_DPM_REGISTER_DEBUGGER notification, the AcceptDeviceNotification routine is called at IRQL <= DISPATCH_LEVEL.
+
+### PEP_DPM_LOW_POWER_EPOCH
+
+#### Notification (PEP_DPM_LOW_POWER_EPOCH)
+
+The value PEP_DPM_LOW_POWER_EPOCH.
+
+#### Data (PEP_DPM_LOW_POWER_EPOCH)
+
+A pointer to a [PEP_LOW_POWER_EPOCH](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_low_power_epoch) structure.
+
+This notification is deprecated.
 
 ### PEP_DPM_REGISTER_CRASHDUMP_DEVICE
 
@@ -335,7 +354,7 @@ The value PEP_DPM_REGISTER_CRASHDUMP_DEVICE.
 
 #### Data (PEP_DPM_REGISTER_CRASHDUMP_DEVICE)
 
-A pointer to a PEP_REGISTER_CRASHDUMP_DEVICE structure.
+A pointer to a [PEP_REGISTER_CRASHDUMP_DEVICE](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device) structure.
 
 The Windows power management framework (PoFx) sends this notification when a device registers as a crashdump handler.
 
@@ -355,7 +374,7 @@ The value PEP_DPM_DEVICE_IDLE_CONSTRAINTS.
 
 #### Data (PEP_DPM_DEVICE_IDLE_CONSTRAINTS)
 
-A pointer to a PEP_DEVICE_PLATFORM_CONSTRAINTS structure.
+A pointer to a [PEP_DEVICE_PLATFORM_CONSTRAINTS](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_platform_constraints) structure.
  Sent to the PEP to query for dependencies between device D-states and platform idle states.
 
 The Windows power management framework (PoFx) sends this notification to the PEP to query for dependencies between device D-states and platform idle states. The PEP uses this notification to return the lightest D-state the device can still be in and enter each platform idle state. The OS will guarantee the device is in the minimum D-state before entering an associated platform idle state. If a platform idle state does not depend on this device being in any D-state, the PEP should specify a minimum D-state of PowerDeviceD0. If no platform idle states depend on this device being in a particular D-state, this notification can be ignored.
@@ -374,7 +393,7 @@ The value PEP_DPM_COMPONENT_IDLE_CONSTRAINTS.
 
 #### Data (PEP_DPM_COMPONENT_IDLE_CONSTRAINTS)
 
-A pointer to a PEP_COMPONENT_PLATFORM_CONSTRAINTS structure.
+A pointer to a [PEP_COMPONENT_PLATFORM_CONSTRAINTS](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_component_platform_constraints) structure.
 
 Sent to the PEP to query for dependencies between component F-states and platform idle states.
 
@@ -394,7 +413,7 @@ The value PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES.
 
 #### Data (PEP_DPM_QUERY_COMPONENT_PERF_CAPABILITIES)
 
-A pointer to a PEP_QUERY_COMPONENT_PERF_CAPABILITIES structure.
+A pointer to a [PEP_QUERY_COMPONENT_PERF_CAPABILITIES](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_capabilities) structure.
 
 Informs the PEP that it is being queried for the number of performance state (P-state) sets that are defined for a component.
 
@@ -410,7 +429,7 @@ The value PEP_DPM_QUERY_COMPONENT_PERF_SET.
 
 #### Data (PEP_DPM_QUERY_COMPONENT_PERF_SET)
 
-A pointer to a PEP_QUERY_COMPONENT_PERF_SET structure.
+A pointer to a [PEP_QUERY_COMPONENT_PERF_SET](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_set) structure.
 
 Informs the PEP that it is being queried for information about a set of performance state values (P-state set) for a component.
 
@@ -426,7 +445,7 @@ The value PEP_DPM_QUERY_COMPONENT_PERF_SET_NAME.
 
 #### Data (OPEP_DPM_QUERY_COMPONENT_PERF_SET_NAME)
 
-A pointer to a PEP_QUERY_COMPONENT_PERF_SET_NAME structure.
+A pointer to a [PEP_QUERY_COMPONENT_PERF_SET_NAME](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_set_name) structure.
 
 Informs the PEP that it is being queried for information about a set of performance state values (P-state set) for a component.
 
@@ -442,7 +461,7 @@ The value PEP_DPM_QUERY_COMPONENT_PERF_STATES.
 
 #### Data (PEP_DPM_QUERY_COMPONENT_PERF_STATES)
 
-A pointer to a PEP_QUERY_COMPONENT_PERF_STATES structure.
+A pointer to a [PEP_QUERY_COMPONENT_PERF_STATES](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_component_perf_states) structure.
 
 Informs the PEP that it is being queried for a list of discrete performance state (P-state) values for a specified P-state set.
 
@@ -458,7 +477,7 @@ The value PEP_DPM_REGISTER_COMPONENT_PERF_STATES.
 
 #### Data (PEP_DPM_REGISTER_COMPONENT_PERF_STATES)
 
-A pointer to a PEP_REGISTER_COMPONENT_PERF_STATES structure.
+A pointer to a [PEP_REGISTER_COMPONENT_PERF_STATES](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_component_perf_states) structure.
 
 Informs the PEP about the performance states (P-states) of the specified component.
 
@@ -506,7 +525,7 @@ The value PEP_DPM_QUERY_DEBUGGER_TRANSITION_REQUIREMENTS.
 
 #### Data (PEP_DPM_QUERY_DEBUGGER_TRANSITION_REQUIREMENTS)
 
-A pointer to a PEP_DEBUGGER_TRANSITION_REQUIREMENTS structure.
+A pointer to a [PEP_DEBUGGER_TRANSITION_REQUIREMENTS](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_debugger_transition_requirements) structure.
 
 Sent to the PEP to query for the set of coordinated or platform states which require the debugger to be powered off.
 
@@ -516,18 +535,6 @@ This notification is sent to each debugger device after the PEP has accepted a P
 
 To send a PEP_DPM_QUERY_DEBUGGER_TRANSITION_REQUIREMENTS notification, PoFx calls the PEP's AcceptDeviceNotification callback routine. For this notification, the AcceptDeviceNotification routine is always called at IRQL = DISPATCH_LEVEL.
 
-### PEP_DPM_LOW_POWER_EPOCH
-
-#### Notification (PEP_DPM_LOW_POWER_EPOCH)
-
-The value PEP_DPM_LOW_POWER_EPOCH.
-
-#### Data (PEP_DPM_LOW_POWER_EPOCH)
-
-A pointer to a PEP_LOW_POWER_EPOCH structure.
-
-This notification is deprecated.
-
 ### PEP_DPM_QUERY_SOC_SUBSYSTEM
 
 #### Notification (PEP_DPM_QUERY_SOC_SUBSYSTEM)
@@ -536,7 +543,7 @@ The value PEP_DPM_QUERY_SOC_SUBSYSTEM.
 
 #### Data (PEP_DPM_QUERY_SOC_SUBSYSTEM)
 
-A pointer to a PEP_QUERY_SOC_SUBSYSTEM structure.
+A pointer to a [PEP_QUERY_SOC_SUBSYSTEM](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_soc_subsystem) structure.
 
 Sent to the PEP to collect basic information about a particular system on a chip (SoC) subsystem.
 
@@ -556,7 +563,7 @@ The value PEP_DPM_QUERY_SOC_SUBSYSTEM_BLOCKING_TIME.
 
 #### Data (PEP_DPM_QUERY_SOC_SUBSYSTEM_BLOCKING_TIME)
 
-A pointer to a PEP_QUERY_SOC_SUBSYSTEM_BLOCKING_TIME structure.
+A pointer to a [PEP_QUERY_SOC_SUBSYSTEM_BLOCKING_TIME](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_soc_subsystem_blocking_time) structure.
 
 Sent to the PEP when the OS wants to collect the tally of time a particular system on a chip (SoC) subsystem has blocked entry into a particular platform idle state without the OS's knowledge.
 
@@ -575,7 +582,7 @@ The value PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT.
 
 #### Data (PEP_DPM_QUERY_SOC_SUBSYSTEM_COUNT)
 
-A pointer to a PEP_QUERY_SOC_SUBSYSTEM_COUNT structure.
+A pointer to a [PEP_QUERY_SOC_SUBSYSTEM_COUNT](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_query_soc_subsystem_count) structure.
 
 Sent to the PEP after platform idle states have been initialized to tell the OS whether the PEP supports system on a chip (SoC) subsystem accounting for a given platform idle state.
 
@@ -613,7 +620,7 @@ The value PEP_DPM_RESET_SOC_SUBSYSTEM_ACCOUNTING.
 
 #### Data (PEP_DPM_RESET_SOC_SUBSYSTEM_ACCOUNTING)
 
-A pointer to a A pointer to a PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING structure. structure.
+A pointer to a A pointer to a [PEP_RESET_SOC_SUBSYSTEM_ACCOUNTING](/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_reset_soc_subsystem_accounting) structure. structure.
 
 Sent to the PEP to clear all subsystem blocking time and metadata accounting, perform any additional initialization required, and restart the accounting.
 
