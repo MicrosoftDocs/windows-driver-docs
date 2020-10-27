@@ -121,7 +121,7 @@ This allows you to service your in-market devices through Windows Update. To upd
 
     For example, the CFU inbox driver requires information about the value capability usage details as per the firmware implementation. See the **INF value capability settings** section below for more information and an example on how to do this.
 
-    INF value capability settings are are specified through registry settings. You may configure each of these registry values per your firmware implementation needs.
+    You may configure each of these registry values per your firmware implementation needs.
 
     **CFU registry values**
 
