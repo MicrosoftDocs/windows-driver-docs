@@ -69,7 +69,7 @@ After creating the *adxl345acc.pkg.xml* file as shown in the preceding steps, yo
 
 If you installed the WDK to the default location, then you can find **pkggen.exe** in the following location: *%WPDKCONTENTROOT%\Tools\bin\i386*
 
-Refer to [Command-line arguments for package generator](/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator) for instructions on how to create a package for your mobile device. See [Creating Mobile Pacakages](/windows-hardware/drivers/sensors/creating-a-mobile-package) for a more comprehensive introduction.
+Refer to [Creating Mobile Packages](/windows-hardware/drivers/sensors/creating-a-mobile-package) for info on installing a sample driver on a mobile device.
 
 ## Related topics
 

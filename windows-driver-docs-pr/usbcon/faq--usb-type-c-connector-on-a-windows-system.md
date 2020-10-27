@@ -109,7 +109,7 @@ To test your implementation, follow the guidelines given in [USB Type-C manual i
 
 ## Conditions and UI for the different errors
 
-Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2#devicenotwork).
+Windows 10 can show a set of USB Type-C error messages to help educate users about the limitations with different combinations of USB Type-C hardware and software. For example, the user might get "Device is charging slowly" message if the charger connected to the USB Type-C connector is not powerful enough, not compatible with the system, or is connected to a non-charging port. For more information, see [Troubleshoot messages for a USB Type-C Windows system](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2).
 
 ## Connecting a non-PD port to a PD provider and a PD consumer to a system that is not a PD provider
 
@@ -120,7 +120,7 @@ The non-PD port attempts to charge the system by using USB Type-C current levels
 The alternate mode feature allows non-USB protocols (such as Thunderbolt, SuperMHL) to run over the USB cable, while simultaneously preserving USB 2.0 and charging functionality. If a user connects a USB Type-C alternate mode device or adapter that is not supported by the attached PC or phone running Windows 10, an error condition is detected and a message is shown to the user.
 
 - If the device or adapter exposes a Billboard device, the user sees information about the error condition to help the troubleshoot issues. Windows 10 provides an in-box driver for a Billboard device and notifies the user that an error has occurred.
-- The user might see an error notification, "Try improving the USB connection". For more information, see [Fix USB-C Problems](/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2).
+- The user might see an error notification, "Try improving the USB connection". For more information, see [Fix USB-C Problems](https://support.microsoft.com/windows/fix-usb-c-problems-f4e0e529-74f5-cdae-3194-43743f30eed2).
 
 For the best results, make sure that the alternate mode device or adapter’s requirements are met by PC or phone or cable.
 
