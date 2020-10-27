@@ -2,7 +2,7 @@
 title: Global Navigation Satellite System (GNSS) driver architecture
 description: Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
 ms.assetid: 11B54F92-DC84-4D74-9BBE-C85047AD2167
-ms.date: 05/17/2018
+ms.date: 10/27/2020
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 Provides an overview of Global Navigation Satellite System (GNSS) UMDF 2.0 driver architecture, I/O considerations, and discusses several types of tracking and fix sessions.
 
-## Architecure overview
+## Architecture overview
 
 The following high-level component block diagram shows how the Global Navigation Satellite System (GNSS) UMDF 2.0 driver integrates with the Windows 10 platform.
 
@@ -107,7 +107,7 @@ The act of retrieving position information from the GNSS driver happens through 
 1. **Get device position (fix data):** Once a fix session is started, the GNSS adapter issues control code [**IOCTL\_GNSS\_GET\_FIXDATA**](/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_get_fixdata) to start waiting for a fix from the driver. When a new position information is available from the engine , the GNSS driver responds to this pending get fix request.
 
     > [!NOTE]
-    > If fix session type is LKG fix (rather than current fix), the position information comes from the driver’s cache.
+    > If fix session type is LKG fix (rather than current fix), the position information comes from the driver's cache.
 
     The GNSS adapter makes sure that an asynchronous I/O request is always available for the GNSS driver to return the fix data when available. Depending on the nature of the fix, if more fix data is expected, the GNSS adapter issues another I/O request (using the same IOCTL) and this sequence continues till no more data will be available or the fix session is stopped.
 
@@ -135,7 +135,7 @@ The geofencing offloading support involves the following requirements:
 
 - Ideally, the GNSS hardware should understand the initial geofence tracking state for each geofence and use it to only report changes from this initial state. If the GNSS hardware does not support this functionality it will report the initial state to the HLOS every time a geofence is created.
 
-- The GNSS hardware tracks the device’s current position in a power-efficient way and wakes up the AP whenever the device has entered and/or exited a tracked geofence. The GNSS driver passes the geofence alerts to the HLOS.
+- The GNSS hardware tracks the device's current position in a power-efficient way and wakes up the AP whenever the device has entered and/or exited a tracked geofence. The GNSS driver passes the geofence alerts to the HLOS.
 
 - Under low satellite signal and other transient error conditions, the GNSS engine may be unable to reliably track the existing geofences. The GNSS engine shall be able to detect the tracking interruptions and the GNSS driver shall pass the tracking status error alert to the HLOS. The HLOS switches to the default AP-based geofence tracking till the GNSS hardware is able to recover and track geofences again.
 
@@ -433,7 +433,7 @@ The following table provides some scenarios for handling single shot and time-ba
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>Case 1</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -451,7 +451,7 @@ The following table provides some scenarios for handling single shot and time-ba
 <li><p>Session closed immediately after stop is received.</p></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 2</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -470,7 +470,7 @@ The following table provides some scenarios for handling single shot and time-ba
 <li><p>Session closed immediately after stop is received.</p></li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 3</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -488,7 +488,7 @@ The following table provides some scenarios for handling single shot and time-ba
 <li><p>Session closed immediately after stop is received.</p></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 4</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -506,7 +506,7 @@ The following table provides some scenarios for handling single shot and time-ba
 <li><p>Session closed immediately after stop is received.</p></li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 5</p></td>
 <td><p></p></td>
 <td><p>X</p></td>
@@ -523,7 +523,7 @@ The following table provides some scenarios for handling single shot and time-ba
 <li><p>Session closed immediately after stop is received.</p></li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 6</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -541,7 +541,7 @@ The following table provides some scenarios for handling single shot and time-ba
 <li><p>Session closed immediately after stop is received.</p></li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 7</p></td>
 <td><p>X</p></td>
 <td><p>X</p></td>
@@ -582,35 +582,35 @@ If there are simultaneously both a time-based and a distance-based tracking sess
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td><p>Case 1</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p>Not applicable</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 2</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p>Not applicable</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 3</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p>High</p></td>
 <td><p>High</p></td>
 <td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 4</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p>High</p></td>
 <td><p>High</p></td>
 <td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 5</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p>Medium/Low</p></td>
@@ -618,49 +618,49 @@ If there are simultaneously both a time-based and a distance-based tracking sess
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p>
 <p><strong>DBT or TBT session behavior:</strong> It is OK for this session to temporarily receive high accuracy results. However, after the SS session is served, the accuracy of this session should return to Medium/Low.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 6</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p>Medium/Low</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 7</p></td>
 <td><p>Not applicable</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 8</p></td>
 <td><p>Not applicable</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 9</p></td>
 <td><p>High</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p>High</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session was already getting high accuracy fixes or intermediate fixes, so no changes.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 10</p></td>
 <td><p>High</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
 <td><p>High then changes to Medium/Low after the SS session is complete</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session can continue getting high accuracy fixes or intermediate fixes, until the SS session is complete. Then it shall change to medium/low accuracy fixes.</p></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><p>Case 11</p></td>
 <td><p>Medium/Low</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p>Medium/Low --&gt; High</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
-<tr class="even">
+<tr>
 <td><p>Case 12</p></td>
 <td><p>Medium/Low</p></td>
 <td><p>High --&gt; Medium/Low</p></td>
