@@ -2,7 +2,7 @@
 title: OutputBufferAPI rule (kmdf)
 ms.assetid: 868f08f8-b6c1-480e-a47e-de7b0c138b98
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: OutputBufferAPI rule (kmdf)"
 keywords: ["OutputBufferAPI rule (kmdf)"]
 topic_type:
 - apiref
