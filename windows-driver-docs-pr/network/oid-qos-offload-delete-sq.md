@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # OID_QOS_OFFLOAD_DELETE_SQ
 
-Overlying drivers issue OID method requests of OID_QOS_OFFLOAD_DELETE_SQ to delete a Scheduler Queue (SQ) on the miniport adapter. The caller should set the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to contain a pointer to an NDIS_QOS_SQ_ID type.
+Overlying drivers issue OID method requests of OID_QOS_OFFLOAD_DELETE_SQ to delete a Scheduler Queue (SQ) on the miniport adapter. The caller should set the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to contain a pointer to an **NDIS_QOS_SQ_ID**.
 
 ## Remarks
 
@@ -29,7 +29,7 @@ NDIS handles the OID query request of OID_QOS_OFFLOAD_DELETE_SQ request for mini
  
 ## Requirements
 
-|||
+|Requirement|Value|
 |--- |--- |
 |Version|Supported in NDIS 6.84 and later.|
 |Header|Ntddndis.h (include Ndis.h)|

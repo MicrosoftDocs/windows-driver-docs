@@ -35,7 +35,7 @@ NDIS handles the OID query request of OID_QOS_OFFLOAD_CURRENT_CAPABILITIES reque
 
 ## Requirements
 
-|||
+|Requirement|Value|
 |--- |--- |
 |Version|Supported in NDIS 6.84 and later.|
 |Header|Ntddndis.h (include Ndis.h)|
