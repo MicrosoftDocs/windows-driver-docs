@@ -16,7 +16,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
 ## Remarks
 
-NDIS allocates and assigns the **NDIS_QOS_SQ_ID** for an SQ. This identifier is unique per miniport adapter. The value **zero** is not a valid SQ ID, and means that no SQ is to be used.
+**NDIS_QOS_SQ_ID** is a ULONG value that NDIS allocates and assigns for an SQ. This identifier is unique per miniport adapter. The value **zero** is not a valid SQ ID, and means that no SQ is to be used.
 
 ### Return Status Codes
 
