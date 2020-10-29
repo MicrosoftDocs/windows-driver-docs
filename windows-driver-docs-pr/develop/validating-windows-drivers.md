@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Validating Windows Drivers
 
-Use the InfVerif and ApiValidator tools to test your Windows Driver for compliance with the requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your Windows Driver for compliance with the requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
 
 ## InfVerif
 
@@ -45,7 +45,7 @@ shutdown /r /t 0
 
 ### Expected Behavior - Telemetry Mode
 
-During initial stages of driver bring-up, the **recommended behavior** for these checks is **telemetry mode**.This is the default behavior and will provide a way for developers to view all violations without a bugcheck disrupting progress. 
+During initial stages of driver bring-up, the **recommended behavior** for these checks is **telemetry mode**. This is the default behavior and will provide a way for developers to view all violations without a bugcheck disrupting progress. 
 
 It is recommended that DV driver isolation checks are enabled using the syntax specified in the section above with a kernel debugger attached.  **After a reboot has enabled the DV settings, you will be able to see violations in the kernel debugger output**.  
 
@@ -53,12 +53,14 @@ Below are a couple example scenarios of a driver violating driver isolation requ
 
 *Scenario*: ZwCreateKey using full absolute path:
 
-```“DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key '\Registry\Machine\SYSTEM’”
+```
+DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key '\Registry\Machine\SYSTEM’
 ```
 
 *Scenario*: ZwCreateKey using path relative to a handle that is not from approved API: 
 
-```“DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key\REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist'”
+```
+DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key\REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist'
 ```
 
 Leverage telemetry mode to establish a baseline of all violations for your component and begin to fix them one-by-one, testing as you go.
@@ -70,7 +72,7 @@ Further along in the driver development process, it can be valuable to enable th
 This will generate a memory dump that gives precise details of where the violation occurred. To enable DV in bugcheck mode, use the following syntax:
 
 ```
-verifier /onecheck/rc 33 36 /driver myDriver1.sys
+verifier /onecheck /rc 33 36 /driver myDriver1.sys
 ```
 
 This mode is useful when the driver is nearing production-readiness and is undergoing final stages of validation and testing.
