@@ -58,5 +58,5 @@ The first column indicates the selection state in the **Driver Delivery Options*
 |Regular Automatic Update only|No|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
 |Dynamic Update only|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Only in Windows 10, version 1909 and earlier|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
 |Manual in Windows 10, version 1909 and earlier|No|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|N/A|
-|Manual starting in Windows 10, version 2004 and later|No|No|No|No|Yes|
+|Manual starting in Windows 10, version 2004|No|No|No|No|Yes|
 
