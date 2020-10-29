@@ -18,7 +18,7 @@ The caller should set the **SqId** field of **NDIS_QOS_SQ_PARAMETERS** to the cu
 
 ### Return Status Codes
 
-NDIS handles the OID query request of OID_QOS_OFFLOAD_UPDATE_SQ request for miniport drivers, and returns one of the following status codes.
+NDIS handles the OID query request of OID_QOS_OFFLOAD_UPDATE_SQ request for miniport drivers and returns one of the following status codes.
 
 |Status Code|Description|
 |--- |--- |

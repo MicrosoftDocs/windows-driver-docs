@@ -20,7 +20,7 @@ If the **NDIS_OID_REQUEST** buffer of the OID query contains a valid VPortId, th
 
 ### Return Status Codes
 
-NDIS handles the OID query request of OID_QOS_OFFLOAD_SQ_STATS request for miniport drivers, and returns one of the following status codes.
+NDIS handles the OID query request of OID_QOS_OFFLOAD_SQ_STATS request for miniport drivers and returns one of the following status codes.
 
 |Status Code|Description|
 |--- |--- |

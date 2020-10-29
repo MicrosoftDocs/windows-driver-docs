@@ -18,7 +18,7 @@ After a successful return from the OID query request, the **InformationBuffer** 
 
 ### Return Status Codes
 
-NDIS handles the OID query request of OID_QOS_OFFLOAD_ENUM_SQS request for miniport drivers, and returns one of the following status codes.
+NDIS handles the OID query request of OID_QOS_OFFLOAD_ENUM_SQS request for miniport drivers and returns one of the following status codes.
 
 |Status Code|Description|
 |--- |--- |
