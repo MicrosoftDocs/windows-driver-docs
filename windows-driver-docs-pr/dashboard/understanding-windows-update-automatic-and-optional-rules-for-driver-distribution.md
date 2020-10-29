@@ -52,11 +52,11 @@ Here's a table that summarizes the information above.
 
 The first column indicates the selection state in the **Driver Delivery Options** section. The first checkbox (**Automatically delivered during Windows Updates**) is indicated by Dynamic Update, and the second (**Automatically delivered to all applicable systems**) is indicated by Regular **Automatic** Update. **Manual** indicates **Optional/Manual** drivers, and Windows Update is abbreviated WU.
 
-|Driver Delivery Options|OS Upgrades|Connect New Device|Device Manager|Windows Update daily scan or **Check for Updates** button|Windows Update Optional page|
+|Driver delivery options|OS upgrades|Connecting new device|Device Manager|WU scan|"Optional updates" page|
 |-|-|-|-|-|-|
 |Automatic (default)|Yes|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
 |Regular Automatic Update only|No|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
 |Dynamic Update only|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Only in Windows 10, version 1909 and earlier|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
-|Manual in Windows 10, version 1909 and earlier|No|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|No|
-|Manual starting in Windows 10, version 2004|No|No|No|No|No|
+|Manual in Windows 10, version 1909 and earlier|No|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|Yes|Only if the local driver is generic or missing, and WU has no applicable **Automatic** driver|N/A|
+|Manual starting in Windows 10, version 2004 and later|No|No|No|No|Yes|
 
