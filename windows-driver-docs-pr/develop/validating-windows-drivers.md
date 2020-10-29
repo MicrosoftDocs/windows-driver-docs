@@ -23,63 +23,47 @@ For more details, see [Running InfVerif from the command line](../devtest/runnin
 
 ## Driver Verifier Driver Isolation Checks
 
-[Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) (DV) is a tool that ships with Windows that is used to monitor drivers for improper function calls or actions that may corrupt the system.  Starting in Windows 10 Preview Builds 19568 and above, Driver Verifier has new functionality to support developers of Windows Drivers by monitoring for violations of Driver Isolation requirements.  Driver Verifier will monitor for improper registry reads and writes that are not allowed for isolated driver packages. Use this tool early on in driver development to understandand and fix where your component is violating driver isolation requirements.
+To qualify as a Windows Driver, a driver must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 10 Preview Build 19568, [Driver Verifier](../devtest/driver-verifier.md) (DV) monitors registry reads and writes that are not allowed for isolated driver packages.
 
-### Syntax
+You can either view violations as they happen in a kernel debugger, or you can configure DV to halt the system and generates a memory dump with details when a violation occurs. You might start driver development with the first method, then switch to the second as your driver nears completion.
 
-```
+To view violations as they occur, first connect a kernel debugger and then use the following commands. After a reboot has enabled the DV settings, you can monitor violations in kernel debugger output.
+
+To enable driver isolation checks on a single driver:
+
+```command
 verifier /rc 33 36 /driver myDriver.sys
 ```
 
-This will enable the driver isolation checks on your targeted driver (myDriver.sys).  You can also select multiple drivers by separating the list with a space:
+To check more than one driver, separate each driver name with a space:
 
-```
+```command
 verifier /rc 33 36 /driver myDriver1.sys myDriver2.sys
 ```
 
-A reboot is required for the verification settings to be enabled.  You can do so by specifying via the command line:
-
-```
-shutdown /r /t 0
-```
-
-### Expected Behavior - Telemetry Mode
-
-During initial stages of driver bring-up, the **recommended behavior** for these checks is **telemetry mode**. This is the default behavior and will provide a way for developers to view all violations without a bugcheck disrupting progress. 
-
-It is recommended that DV driver isolation checks are enabled using the syntax specified in the section above with a kernel debugger attached.  **After a reboot has enabled the DV settings, you will be able to see violations in the kernel debugger output**.  
-
-Below are a couple example scenarios of a driver violating driver isolation requirements and what typical output would look like:
-
-*Scenario*: ZwCreateKey using full absolute path:
-
-```
-DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key '\Registry\Machine\SYSTEM’
-```
-
-*Scenario*: ZwCreateKey using path relative to a handle that is not from approved API: 
-
-```
-DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key\REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist'
-```
-
-Leverage telemetry mode to establish a baseline of all violations for your component and begin to fix them one-by-one, testing as you go.
-
-### Expected Behavior - Bugcheck Mode
-
-Further along in the driver development process, it can be valuable to enable the driver isolation checks in a mode that will make a violation obvious.  DV can be configured to induce a bugcheck when a violation occurs. 
-
-This will generate a memory dump that gives precise details of where the violation occurred. To enable DV in bugcheck mode, use the following syntax:
+To configure DV to bugcheck when a violation occurs, use the following syntax:
 
 ```
 verifier /onecheck /rc 33 36 /driver myDriver1.sys
 ```
 
-This mode is useful when the driver is nearing production-readiness and is undergoing final stages of validation and testing.
+You'll need to reboot to enable the verification settings. To do this from the command line, specify:
 
-### Maximizing Code Paths
+```command
+shutdown /r /t 0
+```
 
-DV driver isolation checks can be enabled during an IHV’s execution of their existing testing frameworks.  This will help maximize the code paths exercised by the driver being tested. [Device Fundamentals](https://docs.microsoft.com/windows-hardware/drivers/devtest/run-devfund-tests-via-the-command-line) tests via the command line are a good baseline of tests to exercise typical code paths for your driver.  Developers can enable these tests with DV driver isolation checks to maximize the potential of catching driver isolation violations as early as possible.
+Here are a few examples of error messages:
+
+Example: **ZwCreateKey** provides full absolute path:
+
+`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key \Registry\Machine\SYSTEM`
+
+Example: **ZwCreateKey** provides path relative to a handle that is not from an approved API:
+
+`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key \REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist`
+
+Consider enabling [Device Fundamentals tests](../devtest/run-devfund-tests-via-the-command-line.md) with DV driver isolation checks to help catch driver isolation violations early.
 
 ## ApiValidator
 
@@ -132,10 +116,10 @@ ApiValidation: NOT all binaries are Universal
 
 ### Running ApiValidator from the Command Prompt
 
-You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to **C:\Program Files (x86)\Windows Kits\10\bin\<arch>** and **C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\<arch>**. 
+You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to **C:\Program Files (x86)\Windows Kits\10\bin\<arch>** and **C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\<arch>**.
 
 **Important Notes:**
-* ApiValidator requires the following files: ApiValidator.exe, Aitstatic.exe, Microsoft.Kits.Drivers.ApiValidator.dll, and UniversalDDIs.xml. 
+* ApiValidator requires the following files: ApiValidator.exe, Aitstatic.exe, Microsoft.Kits.Drivers.ApiValidator.dll, and UniversalDDIs.xml.
 * The UniversalDDIs.xml must match the binary architecture being validated, for example for an x64 driver use the x64 UniversalDDI.xml
 * ApiValidator only tests one architecture at a time
 * See Known ApiValidator issues below for additional info
