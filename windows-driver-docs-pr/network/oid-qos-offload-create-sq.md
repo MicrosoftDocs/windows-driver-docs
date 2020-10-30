@@ -12,15 +12,13 @@ ms.localizationpriority: medium
 
 Overlying drivers issue OID set requests of OID_QOS_OFFLOAD_CREATE_SQ to create a new Scheduler Queue (SQ) on the miniport adapter. The caller sets the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to contain a pointer to an [**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters) structure. **NDIS_QOS_SQ_PARAMETERS** contains the parameters of the new SQ.
 
-After a successful return from the OID query request, the **InformationBuffer** member of the **NDIS_OID_REQUEST** structure contains a pointer to an **NDIS_QOS_SQ_PARAMETERS** structure that specifies the SQ ID (**NDIS_QOS_SQ_ID**) of the new SQ.
-
 ## Remarks
 
 **NDIS_QOS_SQ_ID** is a ULONG value that NDIS allocates and assigns for an SQ. This identifier is unique per miniport adapter. The value **NDIS_QOS_DEFAULT_SQ_ID** is not a valid SQ ID and means that no SQ is to be used.
 
 ### Return Status Codes
 
-NDIS handles the OID query request of OID_QOS_OFFLOAD_CREATE_SQ request for miniport drivers and returns one of the following status codes.
+NDIS handles the OID set request of OID_QOS_OFFLOAD_CREATE_SQ request for miniport drivers and returns one of the following status codes.
 
 |Status Code|Description|
 |--- |--- |

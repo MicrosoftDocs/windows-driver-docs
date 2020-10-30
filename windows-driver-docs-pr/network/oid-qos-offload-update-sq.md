@@ -18,15 +18,14 @@ The caller should set the **SqId** field of **NDIS_QOS_SQ_PARAMETERS** to the cu
 
 ### Return Status Codes
 
-NDIS handles the OID query request of OID_QOS_OFFLOAD_UPDATE_SQ request for miniport drivers and returns one of the following status codes.
+NDIS handles the OID method request of OID_QOS_OFFLOAD_UPDATE_SQ request for miniport drivers and returns one of the following status codes.
 
 |Status Code|Description|
 |--- |--- |
 |NDIS_STATUS_SUCCESS|The OID request completed successfully.|
 |NDIS_STATUS_NOT_SUPPORTED|The miniport driver does not support the NDIS QoS interface.|
-|NDIS_STATUS_INVALID_LENGTH|The length of the information buffer is less than sizeof([**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters)). NDIS sets the **DATA.QUERY_INFORMATION.BytesNeeded** member in the [**NDIS_OID_REQUEST**](windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.|
-|NDIS_STATUS_BUFFER_TOO_SHORT|The length of the information buffer is not sufficient for the returned data.|
-|NDIS_STATUS_FAILURE|The request failed for other reasons.|
+|NDIS_STATUS_INVALID_PARAMETER|The length of the **InformationBuffer** is less than NDIS_SIZEOF_QOS_SQ_PARAMETERS_REVISION_1.|
+|NDIS_STATUS_Xxx|The request failed for other reasons.|
 
  
 
