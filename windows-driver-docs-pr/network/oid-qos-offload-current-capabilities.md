@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # OID_QOS_OFFLOAD_CURRENT_CAPABILITIES
 
 
-An overlying driver issues an OID query request of OID_QOS_OFFLOAD_CURRENT_CAPABILITIES to obtain the currently enabled Virtual Machine Quality of Service (vmQoS) offload hardware capabilities of a miniport adapter.
+An overlying driver issues an OID query request of OID_QOS_OFFLOAD_CURRENT_CAPABILITIES to obtain the currently enabled vmQoS offload hardware capabilities of a miniport adapter.
 
 After a successful return from the OID query request, the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_offload_capabilities) structure.
 
@@ -27,9 +27,8 @@ NDIS handles the OID query request of OID_QOS_OFFLOAD_CURRENT_CAPABILITIES reque
 |--- |--- |
 |NDIS_STATUS_SUCCESS|The OID request completed successfully.|
 |NDIS_STATUS_NOT_SUPPORTED|The miniport driver does not support the NDIS QoS interface.|
-|NDIS_STATUS_INVALID_LENGTH|The length of the information buffer is less than sizeof([**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_offload_capabilities)). NDIS sets the **DATA.QUERY_INFORMATION.BytesNeeded** member in the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.|
 |NDIS_STATUS_BUFFER_TOO_SHORT|The length of the information buffer is not sufficient for the returned data.|
-|NDIS_STATUS_FAILURE|The request failed for other reasons.|
+|NDIS_STATUS_Xxx|The request failed for other reasons.|
 
  
 
