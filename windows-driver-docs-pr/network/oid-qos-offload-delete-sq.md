@@ -31,7 +31,7 @@ NDIS handles the OID query request of OID_QOS_OFFLOAD_DELETE_SQ request for mini
 
 |Requirement|Value|
 |--- |--- |
-|Version|Supported in NDIS 6.84 and later.|
+|Version|Supported in NDIS 6.85 and later.|
 |Header|Ntddndis.h (include Ndis.h)|
 
 ## See also
