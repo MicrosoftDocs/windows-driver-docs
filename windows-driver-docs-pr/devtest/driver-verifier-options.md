@@ -63,6 +63,8 @@ Rule classes are marked with (\*) require I/O Verification (5) that will be auto
 | VM switch verification | 25 |
 | Code integrity checks | 26 |
 | Additional IRQL checking | 35 |
+| Driver Isolation checks (requires 36) | 33 |
+| DIF | 36
 
 ## Optional feature and rule class descriptions
 
@@ -179,6 +181,10 @@ WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Dri
 Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. It consists of two rules:
 - The [IrqlIoRtlZwPassive](wdm-irqliortlzwpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
 - The The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
+
+[Driver Isolation Checks](https://docs.microsoft.com/windows-hardware/drivers/develop/validating-windows-drivers#driver-verifier-driver-isolation-checks)
+
+Driver Isolation checks are critical for validating the runtime driver package isolation requirements of [Windows Drivers](https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-windows-drivers).  The checks monitor registry reads and writes that are not allowed for isolated driver packages.
 
 ## Standard settings
 
