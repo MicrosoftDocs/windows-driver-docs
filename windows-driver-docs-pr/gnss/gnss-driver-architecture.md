@@ -413,154 +413,15 @@ The following acronyms are used in this section:
 
 The following table provides some scenarios for handling single shot and time-based tracking sessions simultaneously:
 
-<table style="width:100%;">
-<colgroup>
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-<col width="16%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Case</th>
-<th>SS active?</th>
-<th>TBT active?</th>
-<th>Case details</th>
-<th>Acceptable interval of fixes</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Case 1</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time of the TBT periodic session started with remaining timeout &gt;= interval</p></td>
-<td><p>Same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent.</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p>Case 2</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time of the TBT periodic session started with remaining timeout &lt; interval</p></td>
-<td><p>Interval remains the same as the SS timeout, until the SS session is satisfied.</p>
-<p>Then the interval can be updated to be the same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p>Case 3</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session started while there is an ongoing TBT periodic session started with timeout &gt;= interval</p></td>
-<td><p>Same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p>Case 4</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session started while there is an ongoing TBT periodic session started with timeout &lt; interval</p></td>
-<td><p>Interval changes to be the same as the SS timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval.</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent.</p></li>
-<li><p>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p>Case 5</p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p>TBT periodic session started with interval modified</p></td>
-<td><p>Session with modem is updated to the new interval to be the same as TBT interval. If needed the modem session will be restarted.</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Not applicable</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent.</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p>Case 6</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout &gt;= interval</p></td>
-<td><p>Same as TBT interval</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-<tr>
-<td><p>Case 7</p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p>SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout &lt; interval</p></td>
-<td><p>Interval changes to be the same as the SS remaining timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval.</p></td>
-<td><p>SS session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent until the timeout.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul>
-<p>TBT session behavior:</p>
-<ul>
-<li><p>Intermediate and final fixes are sent</p></li>
-<li><p>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</p></li>
-<li><p>Session closed immediately after stop is received.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Case | SS active? | TBT active? | Case details | Acceptable interval of fixes | Comments |
+|:-|:-|:-|:-|:-|:-|
+| 1 | X | X | SS session ongoing at the time of the TBT periodic session started with remaining timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received. |
+| 2 | X | X | SS session ongoing at the time of the TBT periodic session started with remaining timeout < interval | Interval remains the same as the SS timeout, until the SS session is satisfied.<br>Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li></ul> |
+| 3 | X | X | SS session started while there is an ongoing TBT periodic session started with timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li></ul> |
+| 4 | X | X | SS session started while there is an ongoing TBT periodic session started with timeout < interval | Interval changes to be the same as the SS timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li> |
+| 5 |  | X | TBT periodic session started with interval modified | Session with modem is updated to the new interval to be the same as TBT interval. If needed the modem session will be restarted. | SS session behavior:<br><ul><li>Not applicable</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent.</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li> |
+| 6 | X | X | SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout >= interval | Same as TBT interval | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>Session closed immediately after stop is received.</li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval.</li><li>Session closed immediately after stop is received.</li></ul> |
+| 7 | X | X | SS session ongoing at the time at which an ongoing TBT periodic session receives a change of interval, with remaining timeout < interval | Interval changes to be the same as the SS remaining timeout, until the SS session is satisfied. Then the interval can be updated to be the same as TBT interval. | SS session behavior:<br><ul><li>Intermediate and final fixes are sent until the timeout.</li><li>ession closed immediately after stop is received./li></ul><br>TBT session behavior:<br><ul><li>Intermediate and final fixes are sent</li><li>Fixes received approximately as per the interval, but could be more frequent while the SS session is being served.</li><li>Session closed immediately after stop is received.</li>  |
 
 If there are simultaneously both a time-based and a distance-based tracking session, the GNSS engine accuracy tracking can be set to work with the smallest of the two. The following table also provide some guidelines for the case of disparate values for the accuracy required when there are simultaneous single shot and tracking sessions:
 
@@ -584,87 +445,87 @@ If there are simultaneously both a time-based and a distance-based tracking sess
 <tbody>
 <tr>
 <td><p>Case 1</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
+<td><p>Medium/Low --> High</p></td>
 <td><p>Not applicable</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
+<td><p>Medium/Low --> High</p></td>
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
 <tr>
 <td><p>Case 2</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p>Not applicable</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
 <tr>
 <td><p>Case 3</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
+<td><p>Medium/Low --> High</p></td>
 <td><p>High</p></td>
 <td><p>High</p></td>
 <td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
 </tr>
 <tr>
 <td><p>Case 4</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p>High</p></td>
 <td><p>High</p></td>
 <td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
 </tr>
 <tr>
 <td><p>Case 5</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
+<td><p>Medium/Low --> High</p></td>
 <td><p>Medium/Low</p></td>
-<td><p>Medium/Low --&gt; High then back to Medium/Low after the SS session is complete</p></td>
+<td><p>Medium/Low --> High then back to Medium/Low after the SS session is complete</p></td>
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p>
 <p><strong>DBT or TBT session behavior:</strong> It is OK for this session to temporarily receive high accuracy results. However, after the SS session is served, the accuracy of this session should return to Medium/Low.</p></td>
 </tr>
 <tr>
 <td><p>Case 6</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p>Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
 <tr>
 <td><p>Case 7</p></td>
 <td><p>Not applicable</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
+<td><p>Medium/Low --> High</p></td>
+<td><p>Medium/Low --> High</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
 <tr>
 <td><p>Case 8</p></td>
 <td><p>Not applicable</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
 <tr>
 <td><p>Case 9</p></td>
 <td><p>High</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
+<td><p>Medium/Low --> High</p></td>
 <td><p>High</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session was already getting high accuracy fixes or intermediate fixes, so no changes.</p></td>
 </tr>
 <tr>
 <td><p>Case 10</p></td>
 <td><p>High</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p>High then changes to Medium/Low after the SS session is complete</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session can continue getting high accuracy fixes or intermediate fixes, until the SS session is complete. Then it shall change to medium/low accuracy fixes.</p></td>
 </tr>
 <tr>
 <td><p>Case 11</p></td>
 <td><p>Medium/Low</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
-<td><p>Medium/Low --&gt; High</p></td>
+<td><p>Medium/Low --> High</p></td>
+<td><p>Medium/Low --> High</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
 <tr>
 <td><p>Case 12</p></td>
 <td><p>Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
-<td><p>High --&gt; Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
+<td><p>High --> Medium/Low</p></td>
 <td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
 </tr>
 </tbody>
