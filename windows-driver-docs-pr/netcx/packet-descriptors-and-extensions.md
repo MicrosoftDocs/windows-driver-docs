@@ -29,7 +29,7 @@ Together, these descriptors and extensions hold all the metadata about a network
 
 The second figure shows a packet stored across two memory fragments, with both RSC and checksum offload enabled.
 
-![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments_edit.png)
+![2 fragments packet layout](images/packet_layout_2_extensions_2_fragments.png)
 
 
 ## Packet descriptor storage and access
