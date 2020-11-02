@@ -425,108 +425,17 @@ The following table provides some scenarios for handling single shot and time-ba
 
 If there are simultaneously both a time-based and a distance-based tracking session, the GNSS engine accuracy tracking can be set to work with the smallest of the two. The following table also provide some guidelines for the case of disparate values for the accuracy required when there are simultaneous single shot and tracking sessions:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Case</th>
-<th>SS accuracy</th>
-<th>DBT or TBT accuracy</th>
-<th>Overall GNSS engine accuracy</th>
-<th>Comments</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><p>Case 1</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p>Not applicable</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr>
-<td><p>Case 2</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p>Not applicable</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr>
-<td><p>Case 3</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p>High</p></td>
-<td><p>High</p></td>
-<td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
-</tr>
-<tr>
-<td><p>Case 4</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p>High</p></td>
-<td><p>High</p></td>
-<td><p><strong>SS session behavior:</strong> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained.</p></td>
-</tr>
-<tr>
-<td><p>Case 5</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>Medium/Low --> High then back to Medium/Low after the SS session is complete</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.</p>
-<p><strong>DBT or TBT session behavior:</strong> It is OK for this session to temporarily receive high accuracy results. However, after the SS session is served, the accuracy of this session should return to Medium/Low.</p></td>
-</tr>
-<tr>
-<td><p>Case 6</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p><strong>SS session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr>
-<td><p>Case 7</p></td>
-<td><p>Not applicable</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr>
-<td><p>Case 8</p></td>
-<td><p>Not applicable</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr>
-<td><p>Case 9</p></td>
-<td><p>High</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p>High</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session was already getting high accuracy fixes or intermediate fixes, so no changes.</p></td>
-</tr>
-<tr>
-<td><p>Case 10</p></td>
-<td><p>High</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p>High then changes to Medium/Low after the SS session is complete</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session can continue getting high accuracy fixes or intermediate fixes, until the SS session is complete. Then it shall change to medium/low accuracy fixes.</p></td>
-</tr>
-<tr>
-<td><p>Case 11</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p>Medium/Low --> High</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-<tr>
-<td><p>Case 12</p></td>
-<td><p>Medium/Low</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p>High --> Medium/Low</p></td>
-<td><p><strong>DBT or TBT session behavior:</strong> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available.</p></td>
-</tr>
-</tbody>
-</table>
+| Case | SS accuracy | DBT or TBT accuracy | Overall GNSS engine accuracy | Comments |
+|--|--|--|--|--|
+| 1 | Medium/Low --> High | Not applicable | Medium/Low --> High | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available. |
+| 2 | High --> Medium/Low | Not applicable | High --> Medium/Low | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |
+| 3 | Medium/Low --> High | High | High | <b>SS session behavior:</b> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained. |
+| 4 | High --> Medium/Low | High | High | <b>SS session behavior:</b> Given that a high accuracy session already exists for the DBT or TBT session, the SS session just provides intermediate further fixes to the HLOS until the final accuracy desired is obtained or a final fix is obtained. |
+| 5 | Medium/Low --> High | Medium/Low | Medium/Low --> High then back to Medium/Low after the SS session is complete | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy result. Intermediate fixes are provided to the HLOS as they are available.<br><br><b>DBT or TBT session behavior:</b> It is OK for this session to temporarily receive high accuracy results. However, after the SS session is served, the accuracy of this session should return to Medium/Low. |
+| 6 | High --> Medium/Low | Medium/Low | High --> Medium/Low | <b>SS session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |
+| 7 | Not applicable | Medium/Low --> High | Medium/Low --> High | b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available. |
+| 8 | Not applicable | High --> Medium/Low | High --> Medium/Low | <b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |
+| 9 | High | Medium/Low --> High | High | <b>DBT or TBT session behavior:</b> Session was already getting high accuracy fixes or intermediate fixes, so no changes. |
+| 10 | High | High --> Medium/Low | High then changes to Medium/Low after the SS session is complete | <b>DBT or TBT session behavior:</b> Session can continue getting high accuracy fixes or intermediate fixes, until the SS session is complete. Then it shall change to medium/low accuracy fixes. |
+| 11 | Medium/Low< | Medium/Low --> High | Medium/Low --> High | <b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain high accuracy results. Intermediate fixes are provided to the HLOS as they are available. |
+| 12 | Medium/Low | High --> Medium/Low | High --> Medium/Low | <b>DBT or TBT session behavior:</b> Session with GNSS device is refreshed or restarted to obtain medium/low accuracy result. If a fix meeting the requirements is available already, this is returned as a final fix. Otherwise, intermediate fixes are provided to the HLOS as they are available. |
