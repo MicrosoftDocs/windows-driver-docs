@@ -76,5 +76,3 @@ Refer to [Creating Mobile Packages](/windows-hardware/drivers/sensors/creating-a
 [Creating mobile packages](/windows-hardware/drivers/sensors/creating-a-mobile-package)
 
 [Review the INX file](review-and-revise-the-inf-file.md)
-
-[Command-line arguments for package generator](/windows-hardware/manufacture/mobile/command-line-arguments-for-package-generator)
