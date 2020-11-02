@@ -1,7 +1,7 @@
 ---
 title: Using Windows Update to Install Drivers
 description: This topic describes how you can control when Windows Update distributes your driver.
-ms.date: 05/28/2019
+ms.date: 11/02/2020
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -22,40 +22,43 @@ When the second checkbox is selected, the driver is downloaded and installed aut
 
 For more info about the **Manual** option, see [Publish a driver to Windows Update](publish-a-driver-to-windows-update.md).
 
-## Connecting new devices
+## User plugs in a device
 
-When a device is connected to a Windows system, [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available on the computer. If one exists, Windows installs it on the device. Otherwise, Windows searches Windows Update for a compatible driver, first matching the highest-ranking **Automatic** driver on Windows Update.
+When a device is connected to a Windows system:
 
-In Windows 10, version 1909 and earlier, if no **Automatic** driver is available for the device, Windows proceeds to the highest-ranking **Manual** driver.
+* [Plug and Play (PnP)](../kernel/introduction-to-plug-and-play.md) looks for a compatible driver already available on the computer. If one exists, Windows installs it on the device. Then, during the next daily scan of Windows Update, Windows searches for a more up-to-date version of the driver. This can take up to 24 hours from when the device is plugged in.
 
-Starting with Windows 10, version 2004, Windows does not search for a **Manual** driver when an **Automatic** driver is not available.
+* If there is no compatible driver on the computer, Windows searches Windows Update for the highest-ranking **Automatic** driver.
+
+When searching Windows Update:
+
+* In Windows 10, version 1909 and earlier, if no **Automatic** driver is available for the device, Windows proceeds to the highest-ranking **Manual** driver.
+
+* Starting in Windows 10, version 2004, Windows does not search for a **Manual** driver when an **Automatic** driver is not available.
 
 ## Device Manager
 
-In Windows 10, version 1909 and earlier, when a user searches for updated drivers in Device Manager, Windows attempts to install the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Manual**.
+In Device Manager, when a user selects **Update driver**:
 
-Starting with Windows 10 version 2004, when a user searches for updated drivers in Device Manager, Windows only searches the local computer.
+* In Windows 10, version 1909 and earlier, Windows installs the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Manual**.
+* Starting in Windows 10 version 2004, Windows only searches the local computer.
 
-## Windows Update scan
+## Windows Update
 
-During a Windows Update scan (be it scheduled or user-initiated,) Windows Update distributes only the highest-ranking **Automatic** drivers that apply to the system's devices.
+During a Windows Update scan (scheduled or user-initiated):
 
-In all versions of Windows 10, upon failing to find a driver, Device Manager recommends the user to try Windows Update. In version 1909 and earlier, this recommendation merely helped making sure that the Windows Update agent is in working condition. Starting with version 2004, it has become a functional recommmendation for reaching the **Automatic**, and eventually, the **Manual** drivers.
+* In Windows 10, version 1909 and earlier, Windows Update automatically distributes **Manual** drivers in either of the following scenarios:
 
-## "Optional updates" page
+    * A device has no applicable drivers available in the Driver Store (raising a "driver not found" error), and there is no applicable **Automatic** driver
+    * A device has only a generic driver in the Driver Store, which provides only basic device functionality, and there is no applicable **Automatic** driver
 
-In Windows 10, version 1909 and earlier, Windows Update automatically distributes **Manual** drivers in either of the following scenarios:
-
-* A device has no applicable drivers available in the Driver Store (raising a "driver not found" error), and there is no applicable **Automatic** driver
-* A device has only a generic driver in the Driver Store, which provides only basic device functionality, and there is no applicable **Automatic** driver
-
-Starting with Windows 10, version 2004, the Windows Update agent page in the Settings app has an "Optional updates" sub-page. This page distributes **Manual** drivers.
+* Starting in Windows 10, version 2004, Windows Update distributes only the highest-ranking **Automatic** drivers for a system's devices. To access **Manual** drivers, go to **Settings->Windows Update** and select **View optional updates->Driver updates**.
 
 ## Summary
 
-Here's a table that summarizes the information above. "WU" stands for "Windows Update"
+The following table summarizes the information above. Windows Update is abbreviated WU.
 
-|Driver delivery options|OS upgrades|Connecting new device|Device Manager|WU scan|"Optional updates" page|
+|Driver delivery options|OS upgrades|Connecting new device|Device Manager|WU scan|WU Optional updates page|
 |-|-|-|-|-|-|
 |Automatic (both checkboxes)|Yes|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
 |Automatic (to all applicable systems)|No|Only if the local driver is generic or missing|Only in Windows 10, version 1909 and earlier|Yes|No|
