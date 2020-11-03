@@ -34,7 +34,7 @@ When searching Windows Update:
 
 * In Windows 10, version 1909 and earlier, if no **Automatic** driver is available for the device, Windows proceeds to the highest-ranking **Manual** driver.
 
-* Starting in Windows 10, version 2004, Windows does not search for a **Manual** driver when an **Automatic** driver is not available.
+* Starting in Windows 10, version 2004, Windows does not search for a **Manual** driver when an **Automatic** driver is not available. For info on how to access **Manual** drivers, see the [Windows Update](#windows-update) section of this page.
 
 ## Device Manager
 
@@ -42,6 +42,11 @@ In Device Manager, when a user selects **Update driver**:
 
 * In Windows 10, version 1909 and earlier, Windows installs the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Manual**.
 * Starting in Windows 10 version 2004, Windows only searches the local computer.
+
+When it fails to find a driver, Device Manager shows a button labeled **Search for updated drivers on Windows Update**, which opens the Settings app to the Windows Update page.
+
+* Starting in Windows 10, version 2004, click this button and then select **View optional updates->Driver updates** to download **Manual** drivers.
+* In earlier versions of Windows, Device Manager downloads **Manual** drivers on its own.
 
 ## Windows Update
 
@@ -52,7 +57,7 @@ During a Windows Update scan (scheduled or user-initiated):
     * A device has no applicable drivers available in the Driver Store (raising a "driver not found" error), and there is no applicable **Automatic** driver
     * A device has only a generic driver in the Driver Store, which provides only basic device functionality, and there is no applicable **Automatic** driver
 
-* Starting in Windows 10, version 2004, Windows Update distributes only the highest-ranking **Automatic** drivers for a system's devices. To access **Manual** drivers, go to **Settings->Windows Update** and select **View optional updates->Driver updates**.
+* Starting in Windows 10, version 2004, Windows Update distributes only **Automatic** drivers for a system's devices. When **Manual** drivers are available for devices on the computer, the Windows Update page in the Settings app displays **View optional updates** .
 
 ## Summary
 
