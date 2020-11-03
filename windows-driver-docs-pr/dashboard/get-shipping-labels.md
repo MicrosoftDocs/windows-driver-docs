@@ -291,7 +291,7 @@ The hardware ID object should contain a valid combination of bundle ID, PNP ID, 
 
 ### CHIDs object
 
-This object represents the CHID (computer hardware ID) which needs to be targeted by the shipping label. Refer [using CHIDs](./using-chids.md) for more details.
+This object represents the CHID (computer hardware ID) which needs to be targeted by the shipping label. Refer to [using CHIDs](./using-chids.md) for more details.
 
 ```json
 {
@@ -305,7 +305,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 |chid|GUID|The CHID which needs to be targeted|
-|distributionState|string|Represents the current targeting status of this CHID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
+|distributionState|string|Optional value representing the current targeting status of this CHID. Defaults to Unknown if not defined. Possible values (description in parentheses):<ul><li>Unknown</li><li>PendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>Added</li><li>PendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>PendingRecovery</li><li>Recovered</li></ul>|
 |action|string|This is applicable only while Update/patch of a shipping label. The possible values are: <ul><li>add</li><li>remove</li></ul> |
 
 ### In Service Publish Information object
