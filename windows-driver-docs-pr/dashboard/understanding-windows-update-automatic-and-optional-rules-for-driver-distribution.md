@@ -43,9 +43,9 @@ In Device Manager, when a user selects **Update driver**:
 * In Windows 10, version 1909 and earlier, Windows installs the highest-ranking driver from Windows Update, regardless of whether it is classified as **Automatic** or **Manual**.
 * Starting in Windows 10 version 2004, Windows only searches the local computer.
 
-When it fails to find a driver, Device Manager shows a button labeled **Search for updated drivers on Windows Update**, which opens the Settings app to the Windows Update page.
+When it fails to find a driver, Device Manager shows a button labeled **Search for updated drivers on Windows Update**, which opens the Settings app to the Windows Update page. To find this button, right-click a device and select **Properties**. On the **Driver** tab, select **Update Driver** and then **Search automatically for drivers**.
 
-* Starting in Windows 10, version 2004, click this button and then select **View optional updates->Driver updates** to download **Manual** drivers.
+* Starting in Windows 10, version 2004, click **Search for updated drivers on Windows Update** and then select **View optional updates->Driver updates** to download **Manual** drivers.
 * In earlier versions of Windows, Device Manager downloads **Manual** drivers on its own.
 
 ## Windows Update
