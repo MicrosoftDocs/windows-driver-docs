@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-The Windows Sockets switch always uses the [WSK address families](ws2def-h.md(v=vs.85)) to interact with a SAN service provider, not the SAN's native address family. Therefore, a proxy driver for a SAN service provider must translate between WSK address families and native addresses accordingly.
+The Windows Sockets switch always uses the [WSK address families](ws2def-h.md) to interact with a SAN service provider, not the SAN's native address family. Therefore, a proxy driver for a SAN service provider must translate between WSK address families and native addresses accordingly.
 
 A proxy driver uses TDI Plug and Play (PnP) notifications to maintain the list of IP addresses assigned to each NIC under its control, as described in [Registering for SAN NIC Notifications](registering-for-san-nic-notifications.md). The proxy driver uses this list to translate between native SAN addresses and IP addresses.
 
