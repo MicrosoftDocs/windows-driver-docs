@@ -1,5 +1,5 @@
 ---
-title: IddCx 1.6 updates
+title: Updates for IddCx versions 1.6 and later
 description: IddCx version 1.6 updates for console and remote indirect display drivers
 ms.assetid: 41e9f99f-2466-47df-893a-3cd7c1b5ed10
 ms.date: 10/20/2020
@@ -13,7 +13,7 @@ keywords:
 ms.localizationpriority: medium
 ---
 
-# IddCx 1.6 updates
+# Updates for IddCx versions 1.6 and later
 
 The following updates in IddCx version 1.6 apply to both console and remote indirect display drivers (IDDs).
 
@@ -48,4 +48,4 @@ Starting with IddCx 1.6, the [**IDDCX_ADAPTER_FLAGS_PREFER_PHYSICALLY_CONTIGUOUS
 
 Display drivers can request that primary surfaces be allocated in physically contiguous system memory by setting the [**IDDCX_ADAPTER_FLAGS_PREFER_PHYSICALLY_CONTIGUOUS**](/windows-hardware/drivers/ddi/iddcx/ne-iddcx-iddcx_adapter_flags) flag in [**IDDCX_ADAPTER_CAPS**](/windows-hardware/drivers/ddi/iddcx/ns-iddcx-iddcx_adapter_caps). This allows a driver to directly scan out a surface without an intermediate copy.
 
-The driver's request during initialization is not guaranteed to succeed. If the request does not succeed, the call to [**IddCxAdapterInitAsync**](nf-iddcx-iddcxadapterinitasync.md) will not fail. Instead, once the driver has performed a [**IddCxSwapChainReleaseAndAcquireBuffer**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer) (or [**IddCxSwapChainReleaseAndAcquireSystemBuffer**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer)), it should call [**IddCxSwapChainGetPhysicallyContiguousAddress**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaingetphysicallycontiguousaddress) to retrieve the physical address of the surface. **IddCxSwapChainGetPhysicallyContiguousAddress** will first wait for any pending render commands, then flush and invalidate the CPU caches associated with the address range where the surface is stored. However, if the initial request for the surfaces to be allocated in physically contiguous memory failed then **IddCxSwapChainGetPhysicallyContiguousAddress** will return E_NOINTERFACE.
+The driver's request during initialization is not guaranteed to succeed. If the request does not succeed, the call to [**IddCxAdapterInitAsync**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxadapterinitasync) will not fail. Instead, once the driver has performed a [**IddCxSwapChainReleaseAndAcquireBuffer**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer) (or [**IddCxSwapChainReleaseAndAcquireSystemBuffer**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer)), it should call [**IddCxSwapChainGetPhysicallyContiguousAddress**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaingetphysicallycontiguousaddress) to retrieve the physical address of the surface. **IddCxSwapChainGetPhysicallyContiguousAddress** will first wait for any pending render commands, then flush and invalidate the CPU caches associated with the address range where the surface is stored. However, if the initial request for the surfaces to be allocated in physically contiguous memory failed then **IddCxSwapChainGetPhysicallyContiguousAddress** will return E_NOINTERFACE.
