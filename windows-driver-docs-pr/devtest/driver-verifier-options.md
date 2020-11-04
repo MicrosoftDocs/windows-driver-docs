@@ -182,9 +182,9 @@ Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PAS
 - The [IrqlIoRtlZwPassive](wdm-irqliortlzwpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
 - The The [IrqlNtifsApcPassive](wdm-irqlntifsapcpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing either at IRQL = PASSIVE_LEVEL or at IRQL <= APC_LEVEL.
 
-[Driver Isolation Checks](/windows-hardware/drivers/develop/validating-windows-drivers#driver-verifier-driver-isolation-checks)
+[Driver Isolation Checks](../develop/validating-windows-drivers.md#driver-verifier-driver-isolation-checks)
 
-Driver Isolation checks are critical for validating the runtime driver package isolation requirements of Windows Drivers For more information, see [Getting started with Windows Drivers](/windows-hardware/drivers/develop/getting-started-with-windows-drivers).  The checks monitor registry reads and writes that are not allowed for isolated driver packages.
+Driver Isolation checks are critical for validating the runtime driver package isolation requirements of Windows Drivers For more information, see [Getting started with Windows Drivers](../develop/getting-started-with-windows-drivers.md).  The checks monitor registry reads and writes that are not allowed for isolated driver packages.
 
 ## Standard settings
 

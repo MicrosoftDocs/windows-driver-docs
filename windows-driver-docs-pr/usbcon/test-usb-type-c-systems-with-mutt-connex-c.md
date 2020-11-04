@@ -596,7 +596,7 @@ The onboard LCD on the USB Type-C ConnEx displays power (volts, amps, and direct
 
 ## Using ETW to log issues
 
-See [How to capture a USB event trace with Logman](/windows-hardware/drivers/usbcon/how-to-capture-a-usb-event-trace)
+See [How to capture a USB event trace with Logman](./how-to-capture-a-usb-event-trace.md)
 
 ## Reporting test results
 

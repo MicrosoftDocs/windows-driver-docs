@@ -18,7 +18,7 @@ ms.localizationpriority: High
 
 Microsoft-provided in-box driver (Usbser.sys) for your Communications and CDC Control device.
 
-In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver Framework](/windows-hardware/drivers/wdf/) that improves the overall stability of the driver.
+In Windows 10, the driver has been rewritten by using the [Kernel-Mode Driver Framework](../wdf/index.md) that improves the overall stability of the driver.
 
 - Improved PnP and power management by the driver (such as, handling surprise removal).
 - Added power management features such as [USB Selective Suspend](usb-selective-suspend.md).
@@ -42,7 +42,7 @@ In Windows 10, a new INF, Usbser.inf, has been added to %Systemroot%\\Inf that 
 
 - If you want to load Usbser.sys automatically, set the class code to 02 and subclass code to 02 in the [Device Descriptor](usb-device-descriptors.md). For more information, see [USB communications device class](https://www.usb.org/document-library/class-definitions-communication-devices-12). With this approach, you are not required to distribute INF files for your device because the system uses Usbser.inf.
 - If your device specifies class code 02 but a subclass code value other than 02, Usbser.sys does not load automatically. Pnp Manager tries to find a driver. If a suitable driver is not found, the device might not have a driver loaded. In this case, you might have to load your own driver or write an INF that references another in-box driver.
-- If your device specifies class and subclass codes to 02, and you want to load another driver instead of Usbser.sys, you have to write an INF that specifies the hardware ID of the device and the driver to install. For examples, look through the INF files included with [sample drivers](/windows-hardware/drivers/samples/universal-serial-bus--usb--driver-samples#:~:text=Universal%20Serial%20Bus%20%28USB%29%20driver%20samples%20%20,filter%20d%20...%20%209%20more%20rows%20) and find devices similar to your device. For information about INF sections, see [Overview of INF Files](/windows-hardware/drivers/install/overview-of-inf-files).
+- If your device specifies class and subclass codes to 02, and you want to load another driver instead of Usbser.sys, you have to write an INF that specifies the hardware ID of the device and the driver to install. For examples, look through the INF files included with [sample drivers](../samples/universal-serial-bus--usb--driver-samples.md#:~:text=Universal%20Serial%20Bus%20%28USB%29%20driver%20samples%20%20,filter%20d%20...%20%209%20more%20rows%20) and find devices similar to your device. For information about INF sections, see [Overview of INF Files](../install/overview-of-inf-files.md).
 
 > [!NOTE]
 > Microsoft encourages you to use in-box drivers whenever possible. On mobile editions of Windows, such as Windows 10 Mobile, only drivers that are part of the operating system are loaded. Unlike desktop editions, it is not possible to load a driver through an external driver package. With the new in-box INF, Usbser.sys is automatically loaded if a USB-to-serial device is detected on the mobile device.
@@ -88,7 +88,7 @@ That entry can be added in one of two ways:
 - Write an INF that references the install INF and add the registry entry in the **HW.AddReg** section.
 - Describe the registry entry in an extended properties OS feature descriptor. Add a custom property section that sets the **bPropertyName** field to a Unicode string, "IdleUsbSelectiveSuspendPolicy" and **wPropertyNameLength** to 62 bytes. Set the **bPropertyData** field to "0x00000001" or "0x00000000". The property values are stored as little-endian 32-bit integers.
 
-    For more information, see [Microsoft OS Descriptors](/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
+    For more information, see [Microsoft OS Descriptors](./microsoft-defined-usb-descriptors.md).
 
 ## Develop Windows applications for a USB CDC device
 
@@ -109,4 +109,4 @@ If you install Usbser.sys for the USB CDC device, here are the application progr
 
 ## Related topics
 
-[USB device class drivers included in Windows](supported-usb-classes.md)  
+[USB device class drivers included in Windows](supported-usb-classes.md)

@@ -368,6 +368,6 @@ The firmware update status is updated by the driver in the registry as part of b
 
 Learn about developing Windows drivers by using Windows Driver Foundation (WDF):
 
-- [Developing Drivers with Windows Driver Foundation](/windows-hardware/drivers/wdf/developing-drivers-with-wdf), written by Penny Orwick and Guy Smith
+- [Developing Drivers with Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md), written by Penny Orwick and Guy Smith
 
-- [Using WDF to Develop a Driver](/windows-hardware/drivers/wdf/using-the-framework-to-develop-a-driver)
+- [Using WDF to Develop a Driver](../wdf/using-the-framework-to-develop-a-driver.md)

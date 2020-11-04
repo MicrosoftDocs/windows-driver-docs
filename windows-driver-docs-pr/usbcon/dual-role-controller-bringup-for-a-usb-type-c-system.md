@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 ## Important APIs
 
-- [USB dual-role controller driver programming reference](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/mt628026(v=vs.85))
+- [USB dual-role controller driver programming reference](/previous-versions/windows/hardware/drivers/mt628026(v=vs.85))
 
 The USB role-switch drivers (URS) are a set of WDF class extension and its client driver that handle the role-switching capability of a dual-role controller. If your system has a dual role controller, you can switch the role of the system depending on the device that is attached to the partner port of the USB Type-C connector of the system. This allows interesting scenarios such as wired docking.
 
@@ -52,4 +52,4 @@ In order to use URS, you must make ACPI modifications. Replace the device on whi
 
 ## Related topics
 
-[USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)  
+[USB Dual Role Driver Stack Architecture](usb-dual-role-driver-stack-architecture.md)
