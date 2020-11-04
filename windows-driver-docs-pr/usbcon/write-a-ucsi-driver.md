@@ -101,7 +101,7 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
   - The header file, Ucmucsicx.h.
   - The client driver runs in kernel mode and binds to  KMDF 1.27 library.
 
-- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md#:~:text=The%20Developing%20Drivers%20with%20Windows%20Driver%20Foundation%20book,then%20describes%20the%20WDF%20architecture%20and%20programming%20model.) written by Penny Orwick and Guy Smith.
+- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md) written by Penny Orwick and Guy Smith.
 
 ## 1. Register your client driver with UcmUcsiCx
 
