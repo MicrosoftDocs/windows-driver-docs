@@ -21,7 +21,7 @@ The [**NDIS_QOS_OFFLOAD_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/n
 
 ### Return Status Codes
 
-NDIS handles the OID query request of OID_QOS_OFFLOAD_CURRENT_CAPABILITIES request for miniport drivers and returns one of the following status codes.
+NDIS handles the OID query request of OID_QOS_OFFLOAD_CURRENT_CAPABILITIES for miniport drivers and returns one of the following status codes.
 
 |Status Code|Description|
 |--- |--- |

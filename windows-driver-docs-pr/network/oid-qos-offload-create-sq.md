@@ -18,7 +18,7 @@ Overlying drivers issue OID set requests of OID_QOS_OFFLOAD_CREATE_SQ to create 
 
 ### Return Status Codes
 
-NDIS handles the OID set request of OID_QOS_OFFLOAD_CREATE_SQ request for miniport drivers and returns one of the following status codes.
+NDIS handles the OID set request of OID_QOS_OFFLOAD_CREATE_SQ for miniport drivers and returns one of the following status codes.
 
 |Status Code|Description|
 |--- |--- |
