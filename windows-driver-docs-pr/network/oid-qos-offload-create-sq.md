@@ -24,7 +24,6 @@ NDIS handles the OID set request of OID_QOS_OFFLOAD_CREATE_SQ request for minipo
 |--- |--- |
 |NDIS_STATUS_SUCCESS|The OID request completed successfully.|
 |NDIS_STATUS_INVALID_PARAMETER|The length of the **InformationBuffer** is less than NDIS_SIZEOF_QOS_SQ_PARAMETERS_REVISION_1 or the **SqId** field of [**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters) in the **InformationBuffer** is **NDIS_QOS_DEFAULT_SQ_ID**. |
-|NDIS_STATUS_BUFFER_TOO_SHORT|The length of the information buffer is not sufficient for the returned data.|
 |NDIS_STATUS_Xxx|The request failed for other reasons.|
 
  
