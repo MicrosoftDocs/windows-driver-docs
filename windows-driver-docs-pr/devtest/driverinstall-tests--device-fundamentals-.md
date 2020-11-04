@@ -28,12 +28,12 @@ This test does the following:
 
 1. Verifies that the test device and its descendants are not reporting any device problem codes.
 2. Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
-3. Reinstalls the original driver on the test device using [**IWDTFDriverSetupAction2::UpdateDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver) method.
+3. Reinstalls the original driver on the test device using [**IWDTFDriverSetupAction2::UpdateDriver**](/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver) method.
 4. Verifies that the test device and its descendants are not reporting any device problem codes.
 5. Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
 6. Reboots the system if step \#3 requires a reboot.
-7. Installs NULL driver on the test device using [**IWDTFDriverSetupAction2::UnInstallDriverPermanently**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-uninstalldriverpermanently) method Reboots the system if a reboot is required.
-8. Reinstalls the original driver on device under test using [**IWDTFDriverSetupAction2::UpdateDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver) method.
+7. Installs NULL driver on the test device using [**IWDTFDriverSetupAction2::UnInstallDriverPermanently**](/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-uninstalldriverpermanently) method Reboots the system if a reboot is required.
+8. Reinstalls the original driver on device under test using [**IWDTFDriverSetupAction2::UpdateDriver**](/windows-hardware/drivers/ddi/wdtfdriversetupdeviceaction/nf-wdtfdriversetupdeviceaction-iwdtfdriversetupaction2-updatedriver) method.
 9. Verifies that the test device and its descendants are not reporting any device problem codes.
 10. Tests I/O on the test device and its descendants using WDTF Simple I/O plugins. See [Provided WDTF Simple I/O plug-ins](../wdtf/provided-wdtf-simpleio-plug-ins.md) for more information.
 11. Repeats step 1 - 10 several times.

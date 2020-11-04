@@ -29,9 +29,9 @@ For information about the NTSTATUS values that drivers can set in the I/O status
 
 For more information about various kinds of drivers and the requests that each is required to support, see the following:
 
-[Serial Devices and Drivers](/windows-hardware/drivers/serports/using-serial-sys-and-serenum-sys)
+[Serial Devices and Drivers](../serports/using-serial-sys-and-serenum-sys.md)
 
-[System-Supplied Parallel Drivers](/windows-hardware/drivers/parports/system-supplied-parallel-drivers)
+[System-Supplied Parallel Drivers](../parports/system-supplied-parallel-drivers.md)
 
 [Storage Drivers](../storage/storage-drivers.md)
 
@@ -44,6 +44,4 @@ For more information about various kinds of drivers and the requests that each i
 [Access Attribute Memory of a PCMCIA Device](../pcmcia/access-attribute-memory-of-a-pcmcia-device.md)
 
 For all other types of drivers, consult the documentation for the appropriate driver type.
-
- 
 

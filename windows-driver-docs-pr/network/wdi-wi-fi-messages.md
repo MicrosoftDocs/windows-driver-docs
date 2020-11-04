@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 All WDI command messages must start with a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header) structure. The command header is followed by zero or more type-length-value (TLV) structures.
 
-The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-change-operation-mode), [WDI Property OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-abort-task), and [WDI Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-action-frame-received).
+The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](./oid-wdi-task-change-operation-mode.md), [WDI Property OIDs](./oid-wdi-abort-task.md), and [WDI Status Indications](./ndis-status-wdi-indication-action-frame-received.md).
 
 ## TLVs
 
@@ -65,6 +65,4 @@ In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](/windows-hard
  
 
 For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](./wdi-tlv-connect-parameters.md).
-
- 
 

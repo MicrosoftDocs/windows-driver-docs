@@ -95,19 +95,19 @@ If the client driver enters a Dx state because of S0-Idle, WDF brings the driver
 
 - Install Windows 10 for desktop editions (Home, Pro, Enterprise, and Education).
 
-- [Install](/windows-hardware/drivers/download-the-wdk) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
+- [Install](../download-the-wdk.md) the latest Windows Driver Kit (WDK) on your development computer. The kit has the required header files and libraries for writing the client driver, specifically, you'll need:
 
   - The stub library, (UcmUcsiCxStub.lib). The library translates calls made by the client driver and pass them up to the class extension.
   - The header file, Ucmucsicx.h.
   - The client driver runs in kernel mode and binds to  KMDF 1.27 library.
 
-- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation](/windows-hardware/drivers/wdf/developing-drivers-with-wdf#:~:text=The%20Developing%20Drivers%20with%20Windows%20Driver%20Foundation%20book,then%20describes%20the%20WDF%20architecture%20and%20programming%20model.) written by Penny Orwick and Guy Smith.
+- Familiarize yourself with Windows Driver Foundation (WDF). Recommended reading: [Developing Drivers with Windows Driver Foundation](../wdf/developing-drivers-with-wdf.md) written by Penny Orwick and Guy Smith.
 
 ## 1. Register your client driver with UcmUcsiCx
 
 In your [**EVT_WDF_DRIVER_DEVICE_ADD**](/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add) implementation.
 
-1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmUcsiDeviceInitInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) opaque structure. The call associates the client driver with the framework.
+1. After you have set the Plug and Play and power management event callback functions ([**WdfDeviceInitSetPnpPowerEventCallbacks**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks)), call [**UcmUcsiDeviceInitInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitinitialize) to initialize the [**WDFDEVICE_INIT**](../wdf/wdfdevice_init.md) opaque structure. The call associates the client driver with the framework.
 
 2. After creating the framework device object (WDFDEVICE), call [**UcmUcsiDeviceInitialize**](/windows-hardware/drivers/ddi/ucmucsidevice/nf-ucmucsidevice-ucmucsideviceinitialize) to register the client diver with UcmUcsiCx.
 
@@ -217,7 +217,7 @@ Consider this example sequence of the events that occurs when a USB Type-C partn
 In this example, the payload also indicated that a change in power delivery negotiation status between the firmware and the port partner was successful. The OPM state machine sends another UCSI command: Get PDOs.
 Similar to Get Connector Status command, when Get PDOs command completes successfully, the OPM state machine notifies UCM of this event.
 
-The client driver's handler for [EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control) is similar to this example code. For information about handling requests, see [Request Handlers](/windows-hardware/drivers/wdf/request-handlers)
+The client driver's handler for [EVT_WDF_IO_QUEUE_IO_DEVICE_CONTROL](/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_device_control) is similar to this example code. For information about handling requests, see [Request Handlers](../wdf/request-handlers.md)
 
 ```cpp
 void EvtIoDeviceControl(

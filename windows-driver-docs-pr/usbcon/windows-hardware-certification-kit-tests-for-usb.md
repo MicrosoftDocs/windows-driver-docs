@@ -60,4 +60,4 @@ In addition to all of the USB tests that are automatically selected in HLK Studi
 
 ## Related topics
 
-[Overview of Microsoft USB Test Tool (MUTT) devices](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices)
+[Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)

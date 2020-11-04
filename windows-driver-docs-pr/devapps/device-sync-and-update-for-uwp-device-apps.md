@@ -37,12 +37,12 @@ When users move your UWP app off-screen, Windows suspends your app in-memory. Th
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><a href="https://go.microsoft.com/fwlink/p/?LinkID=308967" data-raw-source="[DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger)">DeviceUseTrigger</a></td>
+<td align="left"><a href="/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger" data-raw-source="[DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger)">DeviceUseTrigger</a></td>
 <td align="left"></td>
 <td align="left">Enables long running sync operations to or from your peripheral device while your app is suspended. Syncing your device in the background requires that your user has approved background syncing by your app. Your device must also be connected to or paired with the PC, with active I/O, and is allowed a maximum of 10 minutes of background activity. More detail on policy enforcement is described later in this topic.</td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://go.microsoft.com/fwlink/p/?LinkID=308965" data-raw-source="[DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger)">DeviceServicingTrigger</a></td>
+<td align="left"><a href="/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger" data-raw-source="[DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger)">DeviceServicingTrigger</a></td>
 <td align="left"><img src="images/ap-tools.png" alt="DeviceServicingTrigger requires device metadata." /></td>
 <td align="left">Enables long running device updates, for example settings transfers or firmware updates, while your app is suspended. Updating your device in the background requires user approval each time the background task is used. Unlike the DeviceUseTrigger background task, the DeviceServicingTrigger background task allows for device reboot and disconnect and allows a maximum of 30 minutes of background activity. More detail on policy enforcement is described later in this topic.</td>
 </tr>
@@ -243,6 +243,4 @@ The Unregister method additionally takes a Boolean true or false value to indica
 [Launching, resuming, and multitasking](/previous-versions/windows/apps/hh770837(v=win.10))
 
 [Supporting your app with background tasks](/previous-versions/windows/apps/hh977056(v=win.10))
-
- 
 

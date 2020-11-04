@@ -30,7 +30,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 
 1. Get the tools required to write a Windows desktop app for devices
 
-    - Follow the instructions at [Downloading the Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+    - Follow the instructions at [Downloading the Windows Driver Kit](../download-the-wdk.md).
 
 2. Get a test USB device and its hardware specification.
 
@@ -38,7 +38,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 
     - OSR USB FX2 learning kit available from the [Open System Resources (OSR)](https://www.osr.com/online-seminars/) store. The kit is the most suitable to study USB samples included in this documentation set.
 
-    - Microsoft USB Test Tool (MUTT) devices available from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). This device requires firmware from Microsoft available at [Download MUTT Software Package](/windows-hardware/drivers/usbcon/mutt-software-package#download-mutt-software-package).
+    - Microsoft USB Test Tool (MUTT) devices available from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). This device requires firmware from Microsoft available at [Download MUTT Software Package](./mutt-software-package.md#download-mutt-software-package).
 
 3. Write a skeleton app that obtains a handle to the device.
 
@@ -46,7 +46,7 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 
     - Write based on the WinUSB template included in Visual Studio. For more information see [Write a Windows desktop app based on the WinUSB template](how-to-write-a-windows-desktop-app-that-communicates-with-a-usb-device.md).
 
-    - Call [SetupAPI](/windows-hardware/drivers/install/setupapi) routines to get a handle to the device and open it by calling [WinUsb_Initialize](/windows/desktop/api/winusb/nf-winusb-winusb_initialize). For more information see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+    - Call [SetupAPI](../install/setupapi.md) routines to get a handle to the device and open it by calling [WinUsb_Initialize](/windows/desktop/api/winusb/nf-winusb-winusb_initialize). For more information see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 4. Install Winusb.sys for your device.
 
@@ -72,4 +72,4 @@ It is simpler to use WinUSB functions to communicate with a device than it is to
 
 [Developing Windows applications for USB devices](developing-windows-applications-that-communicate-with-a-usb-device.md)  
 
-[Universal Serial Bus (USB)](https://docs.microsoft.com/windows-hardware/drivers/)  
+[Universal Serial Bus (USB)](../index.yml)

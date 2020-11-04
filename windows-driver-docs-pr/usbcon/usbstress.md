@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 USBStress is the combination of a user-mode application (usbstress.exe) and driver installation package for the kernel-mode driver, usbstress.sys.
 
-Those files are included in the [MUTT Software Package](/windows-hardware/drivers/usbcon/mutt-software-package).
+Those files are included in the [MUTT Software Package](./mutt-software-package.md).
 
 ## USBStress
 
@@ -49,4 +49,4 @@ Return value: 1
 ## Related topics
 
 [Tools in the MUTT software package](mutt-software-package.md)  
-[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)  
+[Microsoft USB Test Tool (MUTT) devices](microsoft-usb-test-tool--mutt--devices.md)

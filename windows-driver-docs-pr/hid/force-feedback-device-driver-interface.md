@@ -24,7 +24,7 @@ The two generic values are a binary value containing version information and a *
 
 A new **OEMForceFeedback** key has been defined to hold force feedback specific keys and values. Under this key is an **Effects** subkey that contains two values for each effect.
 
-Under the **Effects** subkey is a list of subkeys, one for each effect. The name of each subkey is a globally unique identifier (GUID) in the form "{12345678-1234-1234-1234-123456789012}". Beneath the key named "{...}" are two values. The default value is the string friendly name for the effect. The **Attributes** value is the [**DIEFFECTATTRIBUTES**](https://docs.microsoft.com/windows/desktop/api/dinputd/ns-dinputd-dieffectattributes) structure.
+Under the **Effects** subkey is a list of subkeys, one for each effect. The name of each subkey is a globally unique identifier (GUID) in the form "{12345678-1234-1234-1234-123456789012}". Beneath the key named "{...}" are two values. The default value is the string friendly name for the effect. The **Attributes** value is the [**DIEFFECTATTRIBUTES**](/windows/desktop/api/dinputd/ns-dinputd-dieffectattributes) structure.
 
 ```cpp
 "{guid1}"
@@ -45,7 +45,7 @@ The **OEMForceFeedback** key also includes a value that contains the device attr
 
 The name of the optional values indicate which form of interface is used. If the **CLSID** value is present, it should be a string value containing the GUID in the form "{12345678-1234-1234-1234-123456789012}" for the COM object that provides the driver interface. If the **VJoyD** value is present, it should be a zero-length binary value, which indicates that the VJoyD minidriver associated with the device to be used should provide extra callbacks for the driver interface. A value is added to indicate that the Human Interface Device (HID) provides the driver interface when that is implemented.
 
-If a device supports a hardware effect that does not fall into any of the predefined categories (DIEFT\_CONSTANTFORCE, DIEFT\_RAMPFORCE, DIEFT\_PERIODIC, DIEFT\_CONDITION, or DIEFT\_CUSTOMFORCE), then the [**DIEFFECTATTRIBUTES**](https://docs.microsoft.com/windows/desktop/api/dinputd/ns-dinputd-dieffectattributes) structure for the effect should specify DIEFT\_HARDWARE as the effect type.
+If a device supports a hardware effect that does not fall into any of the predefined categories (DIEFT\_CONSTANTFORCE, DIEFT\_RAMPFORCE, DIEFT\_PERIODIC, DIEFT\_CONDITION, or DIEFT\_CUSTOMFORCE), then the [**DIEFFECTATTRIBUTES**](/windows/desktop/api/dinputd/ns-dinputd-dieffectattributes) structure for the effect should specify DIEFT\_HARDWARE as the effect type.
 
 A device can support a hardware effect that falls into one of the predefined categories (listed in the preceding paragraph) but also receive additional parameters that are not part of the standard type-specific data structures (DICONSTANTFORCE, DIRAMPFORCE, DIPERIODIC, DICONDITION, or DICUSTOMFORCE). For information about these structures, see the DirectInput section of the DirectX Software Development Kit (SDK). In these cases, the effect should be listed twice as follows:
 
@@ -59,25 +59,25 @@ In this manner, an application designed for your hardware can use the second eff
 
 If the force-feedback driver is COM-based, an instance of the driver is created by DirectInput. If the interface specified is "VJoyD", then the VJoyD minidriver is loaded by VJoyD. Both driver paths support the following exported methods:
 
-[*DestroyEffect*](https://docs.microsoft.com/previous-versions/ff538410(v=vs.85))
+[*DestroyEffect*](/previous-versions/ff538410(v=vs.85))
 
-[*Initialize*](https://docs.microsoft.com/previous-versions/ff541025(v=vs.85))
+[*Initialize*](/previous-versions/ff541025(v=vs.85))
 
-[*DownloadEffect*](https://docs.microsoft.com/previous-versions/ff538601(v=vs.85))
+[*DownloadEffect*](/previous-versions/ff538601(v=vs.85))
 
-[*GetEffectStatus*](https://docs.microsoft.com/previous-versions/ff538772(v=vs.85))
+[*GetEffectStatus*](/previous-versions/ff538772(v=vs.85))
 
-[*GetForceFeedbackState*](https://docs.microsoft.com/previous-versions/ff538776(v=vs.85))
+[*GetForceFeedbackState*](/previous-versions/ff538776(v=vs.85))
 
-[*Escape*](https://docs.microsoft.com/previous-versions/ff538680(v=vs.85))
+[*Escape*](/previous-versions/ff538680(v=vs.85))
 
-[*SendForceFeedbackCommand*](https://docs.microsoft.com/previous-versions/ff543387(v=vs.85))
+[*SendForceFeedbackCommand*](/previous-versions/ff543387(v=vs.85))
 
-[*SetGain*](https://docs.microsoft.com/previous-versions/ff543406(v=vs.85))
+[*SetGain*](/previous-versions/ff543406(v=vs.85))
 
-[*StartEffect*](https://docs.microsoft.com/previous-versions/ff543458(v=vs.85))
+[*StartEffect*](/previous-versions/ff543458(v=vs.85))
 
-[*StopEffect*](https://docs.microsoft.com/previous-versions/ff543460(v=vs.85))
+[*StopEffect*](/previous-versions/ff543460(v=vs.85))
 
 This functionality is supported by all force feedback devices.
 
@@ -93,4 +93,4 @@ In particular, if the effect driver DLL creates a worker thread, the effect driv
 
 All magnitude and gain values used by DirectInput are uniform and linear across the range. Any nonlinearity in the physical device must be handled by the device driver so that the application sees a linear device.
 
-The user-mode force feedback functions that are exposed by the [IDirectInputEffectDriver](https://docs.microsoft.com/windows/desktop/api/dinputd/nn-dinputd-idirectinputeffectdriver)interface must be implemented by a force-feedback effect driver DLL. For more information about these functions, see IDirectInputEffectDriver.
+The user-mode force feedback functions that are exposed by the [IDirectInputEffectDriver](/windows/desktop/api/dinputd/nn-dinputd-idirectinputeffectdriver)interface must be implemented by a force-feedback effect driver DLL. For more information about these functions, see IDirectInputEffectDriver.

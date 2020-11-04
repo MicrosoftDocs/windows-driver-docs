@@ -232,4 +232,4 @@ To capture events by using the hardware verifier, perform these steps:
 
 ## Related topics
 
-[Overview of Microsoft USB Test Tool (MUTT) devices](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices)
+[Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)
