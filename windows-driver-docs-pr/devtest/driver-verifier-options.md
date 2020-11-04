@@ -176,7 +176,7 @@ When using virtualization-based security to isolate Code Integrity, the only way
 
 WDF Verification checks if a kernel-mode driver is following the Kernel-Mode Driver Framework (KMDF) requirements properly.
 
-[Additional IRQL checking]()
+Additional IRQL checking
 
 Additional IRQL checking augments the DDI Compliance Checking IRQL rules for PASSIVE_LEVEL. It consists of two rules:
 - The [IrqlIoRtlZwPassive](wdm-irqliortlzwpassive.md) rule specifies that the driver calls the DDIs listed in the rule only when it is executing at IRQL = PASSIVE_LEVEL.
