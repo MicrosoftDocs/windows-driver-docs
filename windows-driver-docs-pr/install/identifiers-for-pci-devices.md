@@ -59,7 +59,7 @@ Where:
 
 The following is an example of a hardware ID for a display adapter on a portable computer. The format of this hardware ID is PCI\\VEN_v(4)&DEV_d(4)&SUBSYS_s(4)n(4)&REV_r(2):
 
-`PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000&REV_04`
+`PCI\\VEN_1414&DEV_00E0&SUBSYS_00000000&REV_04`
 
 The following is the hardware ID for the display adapter in the previous example with the revision information removed. The format of this hardware ID is PCI\\VEN_<em>v(4)</em>&DEV_<em>d(4)</em>&SUBSYS_*s(4)n(4).*
 
