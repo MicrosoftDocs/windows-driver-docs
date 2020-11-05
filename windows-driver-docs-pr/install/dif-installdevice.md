@@ -100,7 +100,7 @@ In its postprocessing pass, the device is up and running unless the DI_NEEDREBOO
 
 If the installer returns a Win32 error code, Windows abandons the installation.
 
-If Windows cannot locate an INF file for a new device, it sends DIF_INSTALLDEVICE in an attempt to install a *null driver*. The default handler (**SetupDiInstallDevice** or is a non-PnP device (reported by [**IoReportDetectedDevice**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportdetecteddevice)), In the latter case, Windows installs a null driver for the device.
+If Windows cannot locate an INF file for a new device, it sends DIF_INSTALLDEVICE in an attempt to install a *null driver*. The default handler ([**SetupDiInstallDevice**](https://msdn.microsoft.com/library/windows/hardware/ff552039)) checks whether the device either supports *raw mode* or is a non-PnP device (reported by [**IoReportDetectedDevice**](https://msdn.microsoft.com/library/windows/hardware/ff549597)), In the latter case, Windows installs a null driver for the device.
 
 If this attempt fails, Windows sends DIF_INSTALLDEVICE again, this time with the DI_FLAGSEX_SETFAILEDINSTALL flag set in the [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure. In this case, the default handler just sets the FAILEDINSTALL flag in the device's **ConfigFlags** registry value. If the DI_FLAGSEX_SETFAILEDINSTALL flag is set, class installers must return NO_ERROR or ERROR_DI_DO_DEFAULT and co-installers must return NO_ERROR.
 

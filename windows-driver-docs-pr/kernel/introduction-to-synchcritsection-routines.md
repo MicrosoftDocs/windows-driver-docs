@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 *Critical sections* are sections of code that require exclusive access to hardware resources or driver data. That is, the code must not be interrupted by other code that can reference the same resources or data, and the resources or data must not be referenced by more than one processor at a time.
 
-Critical sections should be confined to ISRs and *SynchCritSection* value and acquiring a spin lock. After a *SynchCritSection* routine returns, the system releases the spin lock and lowers the processor's IRQL.
+Critical sections should be confined to ISRs and [*SynchCritSection*](https://msdn.microsoft.com/library/windows/hardware/ff563928) routines. The system calls these routines only after raising the current processor's IRQL to the device's *DIRQL* value and acquiring a spin lock. After a *SynchCritSection* routine returns, the system releases the spin lock and lowers the processor's IRQL.
 
 Raising the processor's IRQL to the device's DIRQL value prevents the current processor from being interrupted, except by a higher-priority device. Acquiring a spin lock prevents other processors from executing any critical section code associated with that spin lock. (This spin lock is sometimes called an *interrupt spin lock*.)
 

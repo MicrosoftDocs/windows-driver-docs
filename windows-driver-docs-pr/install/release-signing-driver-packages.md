@@ -35,7 +35,7 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 ### <a href="" id="pnp-kernel-mode-boot-start-driver"></a> PnP Kernel-Mode Boot-Start Driver
 
-To comply with the kernel-mode code signing policy file as follows:
+To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) of 64-bit versions of Windows Vista and later versions of Windows, embed a signature in the *boot-start driver* file as follows:
 
 1.  [Release-sign the driver file](release-signing-a-driver-file.md) with a [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
@@ -81,7 +81,7 @@ The kernel-mode code signing policy on 64-bit versions of Windows Vista and late
 
 To comply with the PnP device installation signing requirements, you must obtain a signed catalog file or sign the catalog file of the driver package.
 
-If the Hardware Certification Kit (HCK).
+If the [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has a test program for the driver, obtain a [WHQL release signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) in the same manner as described in this section for signing the catalog file of a PnP kernel-mode *boot-start driver*.
 
 ### <a href="" id="non-pnp-kernel-mode-driver-that-is-not-a-boot-start-driver"></a> Non-PnP Kernel-Mode Driver that is not a Boot-Start Driver
 

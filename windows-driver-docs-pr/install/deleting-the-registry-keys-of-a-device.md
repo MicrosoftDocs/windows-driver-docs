@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 # Deleting the Registry Keys of a Device
 
 
-You should not use **SetupDiDeleteDevRegKey** or *hardware keys* for the device for the following reasons:
+You should not use [**SetupDiDeleteDevRegKey**](https://msdn.microsoft.com/library/windows/hardware/ff550991) to delete the *software keys* or *hardware keys* for the device for the following reasons:
 
 -   [**SetupDiDeleteDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdideletedevregkey) removes all custom settings in registry keys. This includes the following:
 

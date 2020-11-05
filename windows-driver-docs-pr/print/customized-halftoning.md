@@ -37,7 +37,7 @@ You can specify halftone patterns in a resource DLL, or you can generate them by
 
 The [**IPrintOemUni::HalftonePattern**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-halftonepattern) method's purpose is to return a usable halftone pattern to Unidrv, which in turn passes it to GDI. The method can either decode a pattern that is stored in a resource DLL in an encrypted form, or it can generate a pattern during execution.
 
-If you implement the **IPrintOemUni::HalftonePattern** file must include an \*HTCallbackID attribute in each halftoning \*Option entry that specifies a halftoning method for which a customized pattern is used.
+If you implement the [**IPrintOemUni::HalftonePattern**](https://msdn.microsoft.com/library/windows/hardware/ff554258) method, your *GPD* file must include an \*HTCallbackID attribute in each halftoning \*Option entry that specifies a halftoning method for which a customized pattern is used.
 
 For more information about this attribute, see [Option Attributes for the Halftone Feature](option-attributes-for-the-halftone-feature.md).
 

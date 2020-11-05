@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_the_texture_format_list_gg"></span><span id="DDK_THE_TEXTURE_FORMAT_LIST_GG"></span>
 
 
-Direct 8.0 introduces a new mechanism for describing pixel formats. In previous versions of DirectDraw and Direct3D pixel formats were described by a data structure (**DDPIXELFORMAT** (Direct3D pixel formats are simply FOURCCs with all but the least significant bytes being zero).
+Direct 8.0 introduces a new mechanism for describing pixel formats. In previous versions of DirectDraw and Direct3D pixel formats were described by a data structure ([**DDPIXELFORMAT**](https://msdn.microsoft.com/library/windows/hardware/ff550274)) that contained information about the number of bits per color channel and bitmasks for each color channel (along with flags and size field). Pixel formats in DirectX 8.0 are simple DWORDs that identify a particular pixel format and are compatible with *FOURCCs* (Direct3D pixel formats are simply FOURCCs with all but the least significant bytes being zero).
 
 The DDPIXELFORMAT data structure is no longer exposed through API level interfaces. However, it is still used at the DDI level. The driver reports its supported texture formats through a texture format array that consists of surface descriptions with their embedded DDPIXELFORMAT data structures. However, the embedded pixel format structures can now be used to report new style pixel formats. To specify a new style pixel format using the DDPIXELFORMAT data structure, set the **dwFlags** field of the structure to the value DDPF\_D3DFORMAT and store the new pixel format identifier in the **dwFourCC** field.
 

@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_vga_compatible_miniport_driver_s_hwvidstartio_gg"></span><span id="DDK_VGA_COMPATIBLE_MINIPORT_DRIVER_S_HWVIDSTARTIO_GG"></span>
 
 
-When the user switches a full-screen MS-DOS application back to running in a window, a VGA-compatible miniport driver's *HwVidStartIO* with the I/O control code IOCTL\_VIDEO\_SAVE\_HARDWARE\_STATE. The miniport driver must store the state of the adapter in case the user switches the application to full-screen mode again.
+When the user switches a full-screen MS-DOS application back to running in a window, a VGA-compatible miniport driver's [*HwVidStartIO*](https://msdn.microsoft.com/library/windows/hardware/ff567367) function is sent a *VRP* with the I/O control code IOCTL\_VIDEO\_SAVE\_HARDWARE\_STATE. The miniport driver must store the state of the adapter in case the user switches the application to full-screen mode again.
 
 Note that the miniport driver's *SvgaHwIoPortXxx* function might have buffered a sequence of application **IN**s and/or **OUT**s, as described in [Validating Instructions in SvgaHwIoPortXxx](validating-instructions-in-svgahwioportxxx.md), when its *HwVidStartIO* function is called to save the adapter state. In these circumstances, the miniport driver should save the current state, including the buffered instructions, so that the *SvgaHwIoPortXxx* functions can resume validation operations exactly where they left off if the user switches the application to full-screen mode again.
 

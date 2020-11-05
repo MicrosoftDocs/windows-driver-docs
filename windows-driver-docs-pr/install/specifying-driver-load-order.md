@@ -67,7 +67,7 @@ To reinforce the importance of setting the correct **StartType** value, the foll
 
 3.  After all the boot drivers have loaded and the boot devices are started, the PnP manager configures the rest of the PnP devices and loads their drivers.
 
-    The PnP manager walks the device tree that are not yet started (that is, any nonstarted devnodes from the previous step). As each device starts, the PnP manager enumerates the children of the device, if any.
+    The PnP manager walks the [device tree](https://msdn.microsoft.com/library/windows/hardware/ff543194) and loads the drivers for the *devnodes* that are not yet started (that is, any nonstarted devnodes from the previous step). As each device starts, the PnP manager enumerates the children of the device, if any.
 
     As it configures these devices, the PnP manager loads the drivers for the devices, *regardless* of the drivers' **StartType** values (except when **StartType** is SERVICE_DISABLED) before proceeding to start the devices. Many of these drivers are SERVICE_DEMAND_START drivers.
 

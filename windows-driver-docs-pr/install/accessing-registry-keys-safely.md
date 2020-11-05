@@ -22,7 +22,7 @@ Many of the problems seen with external components are caused by using the KEY_A
 
 Follow these guidelines to safely access registry keys:
 
--   Use the SetupAPI and *software keys* for a device.
+-   Use the [SetupAPI](setupapi.md) functions only to open registry keys, especially the *hardware keys* and *software keys* for a device.
 
     These functions address common problems that result from restrictions on access permissions.
 

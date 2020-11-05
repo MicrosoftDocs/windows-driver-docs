@@ -48,7 +48,7 @@ NTSTATUS
   }
 ```
 
-This function calls the PortCls function **PcAddAdapterDevice** and associates it with the *physical device object (PDO)* that is supplied by the system. The new FDO is created with an extension that PortCls uses to store context information about the device. This context includes the `MyStartDevice` function pointer that is supplied by `MyAddDevice`.
+This function calls the PortCls function [**PcAddAdapterDevice**](https://msdn.microsoft.com/library/windows/hardware/ff537683), which creates the specified adapter device, associates a driver with the device, and stores a pointer to the adapter driver's `MyStartDevice` function, which is called when the operating system starts the device (see [Starting a Device](https://msdn.microsoft.com/library/windows/hardware/ff563849)). The **PcAddAdapterDevice** routine creates a *functional device object (FDO)* and associates it with the *physical device object (PDO)* that is supplied by the system. The new FDO is created with an extension that PortCls uses to store context information about the device. This context includes the `MyStartDevice` function pointer that is supplied by `MyAddDevice`.
 
 After the operating system determines what resources (interrupts, DMA channels, I/O port addresses, and so on) to assign to the device, it sends the device a request to start ([**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md)). In response to this request, the request handler in the PortCls driver calls the adapter driver's `MyStartDevice` function, which is shown in the following example code:
 

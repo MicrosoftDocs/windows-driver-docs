@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Overview of the Removable Device Capability
 
 
-The removable device capability is a bit (**Removable**) that bus drivers set in the **DEVICE_CAPABILITIES**.
+The removable device capability is a bit (**Removable**) that bus drivers set in the [**DEVICE_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff543095) structure in response to the [**IRP_MN_QUERY_CAPABILITIES**](https://msdn.microsoft.com/library/windows/hardware/ff551664) function code for a specified device node (*devnode*).
 
 Bus drivers set the removable device capability for a devnode when the devnode and all its child devnodes make up a device that can be physically removed, disconnected, or unplugged from its parent devnode while the computer is running. Typically, a devnode should be marked as removable if it is the topmost devnode in a devnode topology.
 

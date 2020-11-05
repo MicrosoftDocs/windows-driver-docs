@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_motion_vectors_gly"></span><span id="DDK_MOTION_VECTORS_GLY"></span>
 
 
-If the picture is not an intra picture (the **bPicIntra** member of the **DXVA\_PictureParameters** or *P picture*). Additionally, if macroblock-based reference-picture selection (as defined in H.263 Annex U) is in use, then a reference-picture selection index for each motion vector is also included in the macroblock control-command structure.
+If the picture is not an intra picture (the **bPicIntra** member of the [**DXVA\_PictureParameters**](https://msdn.microsoft.com/library/windows/hardware/ff564012) structure is zero), motion vectors are included in the macroblock control command structure. The number of motion vectors that are included in the structure depends upon the type of picture (for example, *B picture* or *P picture*). Additionally, if macroblock-based reference-picture selection (as defined in H.263 Annex U) is in use, then a reference-picture selection index for each motion vector is also included in the macroblock control-command structure.
 
 The space reserved for motion vectors in each macroblock control command structure is generally the amount needed for four motion vectors. Each motion vector is specified using a [**DXVA\_MVvalue**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mvvalue) structure. These usual cases include the two preceding nonintra cases. The remaining cases (not explicitly defined in the *dxva.h* header file) are as follows:
 

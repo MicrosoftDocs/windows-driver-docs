@@ -19,7 +19,7 @@ Beginning with Windows Vista, [**PoRequestPowerIrp**](/windows-hardware/drivers/
 
 The system limits the number of active power IRPs as follows:
 
--   No more than one system power IRP (**IRP\_MN\_SET\_POWER**) at any given time.
+-   No more than one system power IRP ([**IRP\_MN\_SET\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551744), [**IRP\_MN\_QUERY\_POWER**](https://msdn.microsoft.com/library/windows/hardware/ff551699)) can be active for each physical device object (PDO) at any given time.
 
 -   No more than one device set-power IRP (**IRP\_MN\_SET\_POWER)** can be active for each PDO at any given time.
 

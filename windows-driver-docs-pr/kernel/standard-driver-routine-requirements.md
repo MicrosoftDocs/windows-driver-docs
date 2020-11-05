@@ -21,7 +21,7 @@ Keep the following points in mind when designing a kernel-mode driver:
 
 -   Every WDM driver must have an [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) routine. The driver must place the *Unload* routine's entry point in the driver's driver object. The responsibilities of a [PnP driver's Unload routine](pnp-driver-s-unload-routine.md) are minimal, but a [non-PnP driver's unload routine](non-pnp-driver-s-unload-routine.md) is responsible for releasing any system resources that the driver is using.
 
--   Every WDM driver must have an *AddDevice* of the driver object. An *AddDevice* routine is responsible for creating and initializing device objects for each PnP device the driver controls.
+-   Every WDM driver must have an [*AddDevice*](https://msdn.microsoft.com/library/windows/hardware/ff540521) routine and define its entry point in the *driver extension* of the driver object. An *AddDevice* routine is responsible for creating and initializing device objects for each PnP device the driver controls.
 
 -   A driver can have a [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio) routine, which the I/O manager calls to start I/O operations for IRPs the driver has queued to a system-supplied IRP queue. Any driver that does not have a *StartIo* routine must either set up and manage internal queues for the IRPs it receives, or it must complete every IRP within its dispatch routines. Higher-level drivers might not have a *StartIo* routine, if they simply pass IRPs to lower-level drivers directly from their dispatch routines.
 

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Calling the Default DIF Code Handlers
 
 
-Default DIF code handlers perform system-defined default operations for DIF codes and *co-installer* have first processed the DIF request, but before **SetupDiCallClassInstaller** recalls the co-installers that registered for post-processing of the request.
+Default DIF code handlers perform system-defined default operations for [DIF codes](https://msdn.microsoft.com/library/windows/hardware/ff541307). As described in [Handling DIF Codes](handling-dif-codes.md), [**SetupDiCallClassInstaller**](https://msdn.microsoft.com/library/windows/hardware/ff550922) calls the default handler for a DIF request after the *class installer* and *co-installer* have first processed the DIF request, but before **SetupDiCallClassInstaller** recalls the co-installers that registered for post-processing of the request.
 
 **Note**  The operation of **SetupDiCallClassInstaller** cannot be configured to recall the class installer to post-process a DIF request.
 

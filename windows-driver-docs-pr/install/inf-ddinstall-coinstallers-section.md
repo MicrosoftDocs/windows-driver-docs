@@ -166,7 +166,7 @@ Such a supplemental device-class co-installer must not replace any already regis
 
  
 
-The INF for a supplemental device-class co-installer can be activated by a right-click install or through a call to **SetupInstallFromInfSection**.
+The INF for a supplemental device-class co-installer can be activated by a right-click install or through a call to [**SetupInstallFromInfSection**](https://msdn.microsoft.com/library/windows/desktop/aa377401) made by a *device installation application*.
 
 Examples
 --------

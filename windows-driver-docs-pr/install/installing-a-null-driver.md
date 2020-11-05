@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-You might install a "null driver" (that is, nonexistent driver) for a device if the device is not used on the machine and should not be started. Such devices do not typically exist on a machine, but if they do, you can install a null driver. Additionally, the system installs null drivers for devices that do not have a function driver.
+You might install a "null driver" (that is, nonexistent driver) for a device if the device is not used on the machine and should not be started. Such devices do not typically exist on a machine, but if they do, you can install a null driver. Additionally, the system installs null drivers for devices that do not have a [function driver](https://msdn.microsoft.com/library/windows/hardware/ff546516), if they are capable of executing in *raw mode*.
 
 To specify a null driver in an INF file, use entries like the following:
 
