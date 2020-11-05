@@ -288,7 +288,7 @@ public:
 
 ## Device callback source code
 
-The *framework device object* is an instance of the framework class that represents the device object that is loaded in the device stack of the client driver. For information about the functionality of a device object, see [Device Nodes and Device Stacks](/windows-hardware/drivers/debugger/device-node-and-stack-debugger-commands).
+The *framework device object* is an instance of the framework class that represents the device object that is loaded in the device stack of the client driver. For information about the functionality of a device object, see [Device Nodes and Device Stacks](../debugger/device-node-and-stack-debugger-commands.md).
 
 The complete source code for the device object is located in Device.h and Device.c.
 
@@ -372,7 +372,7 @@ Exit:
 
 In the preceding code example, the client driver creates the device object and registers its device callback. Before creating the device object, the driver specifies its configuration preference by calling methods on the [**IWDFDeviceInitialize**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize) interface pointer. That is the same pointer passed by the framework in its previous call to the client driver's [**IDriverEntry::OnDeviceAdd**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-idriverentry-ondeviceadd) method.
 
-The client driver specifies that it will be the power policy owner for the device object. As the power policy owner, the client driver determines the appropriate power state that the device should enter when the system power state changes. The driver is also responsible for sending relevant requests to the device in order to make the power state transition. By default, a UMDF-based client driver is not the power policy owner; the framework handles all power state transitions. The framework automatically sends the device to **D3** when the system enters a sleep state, and conversely brings the device back to **D0** when the system enters the working state of **S0**. For more information, see [Power Policy Ownership in UMDF](/windows-hardware/drivers/wdf/power-policy-ownership-in-umdf).
+The client driver specifies that it will be the power policy owner for the device object. As the power policy owner, the client driver determines the appropriate power state that the device should enter when the system power state changes. The driver is also responsible for sending relevant requests to the device in order to make the power state transition. By default, a UMDF-based client driver is not the power policy owner; the framework handles all power state transitions. The framework automatically sends the device to **D3** when the system enters a sleep state, and conversely brings the device back to **D0** when the system enters the working state of **S0**. For more information, see [Power Policy Ownership in UMDF](../wdf/power-policy-ownership-in-umdf.md).
 
 Another configuration option is to specify whether the client driver is the filter driver or the function driver for the device. Notice that in the code example, the client driver does not explicitly specify its preference. That means the client driver is the function driver and the framework should create an FDO in the device stack. If the client driver wants to be the filter driver, then the driver must call the [**IWDFDeviceInitialize::SetFilter**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setfilter) method. In that case, the framework creates a FiDO in the device stack.
 
@@ -528,7 +528,7 @@ After the client driver creates the USB target device object, the driver calls [
 - Format and send I/O control requests to the default endpoint.
 - Set the power policy for the entire USB device.
 
-For more information, see [Working with USB Devices in UMDF](/windows-hardware/drivers/wdf/working-with-usb-devices-in-umdf-1-x-drivers).
+For more information, see [Working with USB Devices in UMDF](../wdf/working-with-usb-devices-in-umdf-1-x-drivers.md).
 The following code example shows the implementation for [**IPnpCallbackHardware::OnReleaseHardware**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware-onreleasehardware).
 
 ```ManagedCPlusPlus
@@ -773,7 +773,7 @@ In the [**IWDFDevice::CreateIoQueue**](/windows-hardware/drivers/ddi/wudfddi/nf-
 
 A single framework queue object can handle several types of requests, such as read, write, and device I/O control, and so on. A client driver based on the template code can process only device I/O control requests. For that, the client driver's queue callback class implements the [**IQueueCallbackDeviceIoControl**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackdeviceiocontrol) interface and its [**IQueueCallbackDeviceIoControl::OnDeviceIoControl**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackdeviceiocontrol-ondeviceiocontrol) method. This allows the framework to invoke the client driver's implementation of **IQueueCallbackDeviceIoControl::OnDeviceIoControl** when the framework processes a device I/O control request.
 
-For other types of requests, the client driver must implement the corresponding **IQueueCallbackXxx** interface. For example, if the client driver wants to handle read requests, the queue callback class must implement the [**IQueueCallbackRead**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackread) interface and its [**IQueueCallbackRead::OnRead**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackread-onread) method. For information about the types of requests and callback interfaces, see [I/O Queue Event Callback Functions](/windows-hardware/drivers/wdf/i-o-queue-event-callback-functions).
+For other types of requests, the client driver must implement the corresponding **IQueueCallbackXxx** interface. For example, if the client driver wants to handle read requests, the queue callback class must implement the [**IQueueCallbackRead**](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackread) interface and its [**IQueueCallbackRead::OnRead**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackread-onread) method. For information about the types of requests and callback interfaces, see [I/O Queue Event Callback Functions](../wdf/i-o-queue-event-callback-functions.md).
 
 The following code example shows the [**IQueueCallbackDeviceIoControl::OnDeviceIoControl**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackdeviceiocontrol-ondeviceiocontrol) implementation.
 

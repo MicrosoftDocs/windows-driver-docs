@@ -469,7 +469,7 @@ UCHAR Example2_MSOS20DescriptorSet_UVCFaceAuthForFutureWindows[0x3C] =
 }
 ```
 
-When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in [DShow Bridge implementation guidance for UVC devices](/windows-hardware/drivers/stream/dshow-bridge-implementation-guidance-for-usb-video-class-devices).
+When UVC-CPV2FaceAuth registry entry is added, devices do not need to publish the EnableDshowRedirection registry entry as described in [DShow Bridge implementation guidance for UVC devices](./dshow-bridge-implementation-guidance-for-usb-video-class-devices.md).
 
 However, if the device vendor must support older versions of Windows and/or need to enable MJPEG decompression within Frame Server, the EnableDshowRedirection registry entry must be added.
 

@@ -84,7 +84,7 @@ You can submit USB devices for Windows Certification qualification to meet the n
 
   The following steps describe how to perform the required USB-IF tests to qualify a device for Windows Certification.
 
-  1. Download the USB Command Verifier test tool (USB3CV) and the interoperability test documents from [USB Software and Hardware Tools](https://usb.org/usb32tools).
+  1. Download the USB Command Verifier test tool (USB3CV) from [USB Software and Hardware Tools](https://usb.org/usb32tools) and the [interoperability test documents](https://usb.org/usb-32#anchor_32interop).
 
   2. Run the USB-IF tests for the USB hardware as specified in the following tables:
 

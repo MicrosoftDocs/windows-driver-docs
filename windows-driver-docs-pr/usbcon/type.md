@@ -142,7 +142,7 @@ Applies to: System, dock, device
 Repeat this test for other available system power states: Sleep (S3), Hibernate (S4), and Hybrid Sleep.
 
 > [!NOTE]
-> Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](/windows-hardware/drivers/devtest/pwrtest).
+> Use pwrtest.exe, included in the Windows Driver Kit (WDK), to simplify the transition to power states. For more information, see [PwrTest](../devtest/pwrtest.md).
 
 ## <a href="" id="ft4"></a>FT Case 4: Selective Suspend
 
@@ -159,7 +159,7 @@ Applies to: Dock, device
 Additional information of selective suspend can be found from the following sources:
 
 - [Enabling selective suspend for HID](/previous-versions/windows/hardware/design/dn613941(v=vs.85)?redirectedfrom=MSDN)
-- [Selective suspend for HID over USB devices](/windows-hardware/drivers/hid/selective-suspend-for-hid-over-usb-devices)
+- [Selective suspend for HID over USB devices](../hid/selective-suspend-for-hid-over-usb-devices.md)
 - [Demystifying selective suspend](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/demystifying-usb-selective-suspend/ba-p/270736)
 
 ## <a href="" id="ft5"></a>FT Case 5: Dock Identification

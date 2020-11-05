@@ -30,7 +30,7 @@ An IHV can use Microsoft OS descriptors to store the information in firmware ins
 [Microsoft OS 1.0 Descriptors Specification](/previous-versions/gg463179(v=msdn.10)?redirectedfrom=MSDN)  
 This document introduces Microsoft OS descriptors. It includes a specification for the OS string descriptor, extended properties OS feature descriptor, and OS feature descriptors formats.
 
-[Microsoft OS 2.0 Descriptors Specification](/windows-hardware/drivers/usbcon/microsoft-os-2-0-descriptors-specification)  
+[Microsoft OS 2.0 Descriptors Specification](./microsoft-os-2-0-descriptors-specification.md)  
 This document defines and describes the implementation of version 2.0 of the Microsoft OS Descriptors. The goal of Microsoft OS 2.0 Descriptors is to address the limitations and reliability problems with version 1.0 of OS descriptors and enable new Windows-specific functionality for USB devices.
 
 [Loading Winusb.sys as the function driver by using Microsoft OS descriptors](automatic-installation-of-winusb.md)  
@@ -38,7 +38,7 @@ The IHV can define certain Microsoft operating system (OS) feature descriptors t
 
 ## Setting a container ID
 
-[Container IDs for USB Devices](/windows-hardware/drivers/install/container-ids-for-usb-devices)  
+[Container IDs for USB Devices](../install/how-usb-devices-are-assigned-container-ids.md)  
 Describes how Container IDs for Universal Serial Bus (USB) devices are generated.
 
 [USB ContainerIDs in Windows](usb-containerids-in-windows.md)  
@@ -49,7 +49,7 @@ The blog post describes how a device must report a container ID such that Window
 
 ## Implementing power management
 
-[Link Power management in USB 3.0 Hardware](/windows-hardware/drivers/usbcon/usb-3-0-lpm-mechanism-)  
+[Link Power management in USB 3.0 Hardware](./usb-3-0-lpm-mechanism-.md)  
 This document provides guidelines for hardware vendors and OEMs to implement power management for USB devices by using Link Power Management (LPM) in conjunction with Selective Suspend. It explains hardware transitions from U1 to U2 and provides information about common pitfalls in LPM implementation in USB controllers, hubs, and devices.
 
 [Demystifying selective suspend](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/demystifying-usb-selective-suspend/ba-p/270736)  
@@ -60,15 +60,15 @@ This blog post describes how the USB driver stack handles function and selective
 [USB Event Tracing for Windows](usb-event-tracing-for-windows.md)  
 Event Tracing for Windows (ETW) is a general-purpose, high-speed tracing facility that is provided by the operating system. It includes information on how to install the tools, create trace files, and analyze the events in a USB trace file.
 
-[WPP Software Tracing](/windows-hardware/drivers/devtest/wpp-software-tracing)  
+[WPP Software Tracing](../devtest/wpp-software-tracing.md)  
 How to use the default operation of the Windows software trace preprocessor (WPP) to trace the operation of a software component (trace provider).
 
-[USB 3.0 Extensions](/windows-hardware/drivers/debugger/usb-3-extensions) (usb3kd.dll)  
+[USB 3.0 Extensions](../debugger/usb-3-extensions.md) (usb3kd.dll)  
 These commands display information from data structures maintained by three drivers in the USB 3.0 stack: the USB 3.0 hub driver, the USB host controller extension driver, and the USB 3.0 host controller driver.
 
-[USB 2.0 Extensions](/windows-hardware/drivers/debugger/usb-2-0-extensions) (usb2kd.dll)  
+[USB 2.0 Extensions](../debugger/usb-2-0-extensions.md) (usb2kd.dll)  
 These commands display information from data structures maintained by drivers in the USB 2.0 stack: the USB 2.0 hub driver and the USB 2.0 host controller driver.
 
 ## Related topics
 
-[Universal Serial Bus (USB)](/windows-hardware/drivers/)  
+[Universal Serial Bus (USB)](../index.yml)

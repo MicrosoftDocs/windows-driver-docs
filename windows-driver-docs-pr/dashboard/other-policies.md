@@ -15,5 +15,4 @@ Some existing policies that lead to the driver submission being rejected include
 * OEMs can only target hardware IDs that target their own systems.
 
 ## Other Policies
-* [Extension INF targeting evaluation rules defined](https://docs.microsoft.com/windows-hardware/drivers/dashboard/extension-inf-targeting-rules)
-
+* [Extension INF targeting evaluation rules defined](./extension-inf-targeting-rules.md)

@@ -31,13 +31,13 @@ Run BCDEdit command lines to enable or disable the loading of test-signed code. 
 
 To enable test-signed code, use the following BCDEdit command line:
 
-```cpp
+```cmd
 Bcdedit.exe -set TESTSIGNING ON
 ```
 
 To disable use of test-signed code, use the following BCDEdit command line:
 
-```cpp
+```cmd
 Bcdedit.exe -set TESTSIGNING OFF
 ```
 

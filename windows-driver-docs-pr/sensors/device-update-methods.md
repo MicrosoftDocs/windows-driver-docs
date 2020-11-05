@@ -157,6 +157,6 @@ effectivePS DriverUpdateDevicePS(sensorID, requestedPS)
 
 ## Related topics
 
-[Introduction to the Sensor and Location Platform in Windows](/windows-hardware/drivers/sensors/)
+[Introduction to the Sensor and Location Platform in Windows](./index.md)
 
-[Sensor Driver Logic](/windows-hardware/drivers/sensors/driver-logic--pseudo-code-)
+[Sensor Driver Logic](./driver-logic--pseudo-code-.md)

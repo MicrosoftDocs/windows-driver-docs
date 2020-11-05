@@ -142,7 +142,7 @@ Use this test suite for general reliability testing of all device types. You mus
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309665" data-raw-source="[Device.Fundamentals Reliability Testing Prerequisites](/previous-versions/windows/hardware/hck/jj191690(v=vs.85))">Device.Fundamentals Reliability Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/jj191690(v=vs.85)" data-raw-source="[Device.Fundamentals Reliability Testing Prerequisites](/previous-versions/windows/hardware/hck/jj191690(v=vs.85))">Device.Fundamentals Reliability Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
@@ -172,7 +172,7 @@ Use this test suite to test graphics adapters or chipsets. You must follow the h
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><a href="https://go.microsoft.com/fwlink/p/?linkid=309671" data-raw-source="[Graphic Adapter or Chipset Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998923(v=vs.85))">Graphic Adapter or Chipset Testing Prerequisites</a></td>
+<td align="left"><a href="/previous-versions/windows/hardware/hck/hh998923(v=vs.85)" data-raw-source="[Graphic Adapter or Chipset Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998923(v=vs.85))">Graphic Adapter or Chipset Testing Prerequisites</a></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
@@ -230,7 +230,7 @@ Use this test suite to test Mobile Broadband CDMA devices. Follow the guidelines
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309676" data-raw-source="[Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85))">Mobile Broadband Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/hh998960(v=vs.85)" data-raw-source="[Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85))">Mobile Broadband Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
@@ -259,7 +259,7 @@ Use this test suite to test Mobile Broadband GSM devices. Follow the guidelines 
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309676" data-raw-source="[Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85))">Mobile Broadband Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/hh998960(v=vs.85)" data-raw-source="[Mobile Broadband Testing Prerequisites](/previous-versions/windows/hardware/hck/hh998960(v=vs.85))">Mobile Broadband Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>
@@ -288,7 +288,7 @@ Use this test suite to test Wireless LAN (802.11) devices. Follow the guidelines
 <tbody>
 <tr class="odd">
 <td align="left"><strong>Hardware, software, and test requirements</strong></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?linkid=309679" data-raw-source="[Wireless LAN (802.11) Testing Prerequisites](/previous-versions/windows/hardware/hck/jj123847(v=vs.85))">Wireless LAN (802.11) Testing Prerequisites</a></p></td>
+<td align="left"><p><a href="/previous-versions/windows/hardware/hck/jj123847(v=vs.85)" data-raw-source="[Wireless LAN (802.11) Testing Prerequisites](/previous-versions/windows/hardware/hck/jj123847(v=vs.85))">Wireless LAN (802.11) Testing Prerequisites</a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Test descriptions</strong></td>

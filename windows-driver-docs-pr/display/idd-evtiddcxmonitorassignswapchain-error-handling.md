@@ -23,7 +23,7 @@ Starting with Windows 10, version 1903, IddCx error handling for this callback c
 Once the IDD successfully returns from [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) it owns the **hSwapChain** object.
 If the driver encounters an error that prevents it from continuing to process the frame, it can call [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to release ownership. The OS will detect the deletion and cause a new swapchain to be created.
 
-If the driver knows it cannot recover from this error it should call [**IddCxReportCriticalError**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-pfn_iddcxreportcriticalerror) to stop the device.
+If the driver knows it cannot recover from this error it should call [**IddCxReportCriticalError**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxreportcriticalerror) to stop the device.
 
 ## Suggested approach to handle swapchain errors
 
@@ -47,7 +47,7 @@ The driver should fix the issue while processing the frame. This action might re
 
 ### Permanent issues specific to your solution
 
-The driver should call [**IddCxReportCriticalError**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-pfn_iddcxreportcriticalerror) using a major code equal to or above 0x100 and using unique major/minor codes to represent the type of error to help customer/telemetry investigations.
+The driver should call [**IddCxReportCriticalError**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxreportcriticalerror) using a major code equal to or above 0x100 and using unique major/minor codes to represent the type of error to help customer/telemetry investigations.
 
 ### DirectX error
 
@@ -61,6 +61,6 @@ is in a error state it will never recover and needs to be recreated.
 | Current stage | Driver action if it detects too many consecutive swapchain DirectX errors |
 | ------------- | ------------------------------------------------------------------------- |
 | Render adapter LUID provided in [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) is a hardware adapter | Use Dxgi to find the LUID of the software adapter and call [**IddCxAdapterSetRenderAdapter**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxadaptersetrenderadapter) to request that the OS use the software adapter for rendering the desktop. |
-| Render adapter LUID provided in **EvtIddCxMonitorAssignSwapChain** is a software  adapter | The driver should call [**IddCxReportCriticalError**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-pfn_iddcxreportcriticalerror) using a major code equal or above 0x100 and using unique major/minor codes to represent the type of error to help customer/telemetry investigations |
+| Render adapter LUID provided in **EvtIddCxMonitorAssignSwapChain** is a software  adapter | The driver should call [**IddCxReportCriticalError**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxreportcriticalerror) using a major code equal or above 0x100 and using unique major/minor codes to represent the type of error to help customer/telemetry investigations |
 
 For example, the driver could consider five consecutive DirectX failures in [**EvtIddCxMonitorAssignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain) or five failures while processing frames with 1 minute as criteria to take the recovery action for the current stage in table above.

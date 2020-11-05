@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Cohort Failure Report
 
-Beginning June 15, 2020, Driver Servicing began [evaluating driver quality by targeting cohorts](https://docs.microsoft.com/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary#evaluating-by-targeting-cohort). To improve on this process, starting October 30, 2020, if your driver is cancelled due to a cohort failure you will start to receive a new report detailing the specifics of the [failure](https://docs.microsoft.com/windows-hardware/drivers/dashboard/overview-of-microsoft-driver-measure-dictionary#evaluating-by-targeting-cohort).
+Beginning June 15, 2020, Driver Servicing began [evaluating driver quality by targeting cohorts](./overview-of-microsoft-driver-measure-dictionary.md#evaluating-by-targeting-cohort). To improve on this process, starting October 30, 2020, if your driver is cancelled due to a cohort failure you will start to receive a new report detailing the specifics of the [failure](./overview-of-microsoft-driver-measure-dictionary.md#evaluating-by-targeting-cohort).
 
 ## Location of the Report
 

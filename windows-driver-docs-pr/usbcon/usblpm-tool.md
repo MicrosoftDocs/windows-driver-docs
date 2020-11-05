@@ -80,6 +80,6 @@ After you have finished testing with USBLPM, enable selective suspend for the hu
 
 ## Related topics
 
-[Overview of Microsoft USB Test Tool (MUTT) devices](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices)
+[Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)
 
 [Tools in the MUTT software package](mutt-software-package.md)
