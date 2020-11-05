@@ -63,7 +63,7 @@ The following is an example of a hardware ID for a display adapter on a portable
 
 The following is the hardware ID for the display adapter in the previous example with the revision information removed. The format of this hardware ID is PCI\\VEN_<em>v(4)</em>&DEV_<em>d(4)</em>&SUBSYS_*s(4)n(4).*
 
-`PCI\\VEN_102C&DEV_00E0&SUBSYS_00000000`
+`PCI\\VEN_1414&DEV_00E0&SUBSYS_00000000`
 
 >[!NOTE]
 >In Windows 10, some IDs that previously appeared in the Hardware IDs list now appear in the list of Compatible IDs.
@@ -103,21 +103,21 @@ Where:
 For the example of a display adapter on a portable computer, any of the following compatible IDs would match the information in an INF file for that adapter:
 
 ```cpp
-PCI\\VEN_102C&DEV_00E0&REV_04
+PCI\\VEN_1414&DEV_00E0&REV_04
 
-PCI\\VEN_102C&DEV_00E0
+PCI\\VEN_1414&DEV_00E0
 
-PCI\\VEN_102C&DEV_00E0&REV_04&CC_0300
+PCI\\VEN_1414&DEV_00E0&REV_04&CC_0300
 
-PCI\\VEN_102C&DEV_00E0&CC_030000
+PCI\\VEN_1414&DEV_00E0&CC_030000
 
-PCI\\VEN_102C&DEV_00E0&CC_0300
+PCI\\VEN_1414&DEV_00E0&CC_0300
 
-PCI\\VEN_102C&CC_030000
+PCI\\VEN_1414&CC_030000
 
-PCI\\VEN_102C&CC_0300
+PCI\\VEN_1414&CC_0300
 
-PCI\\VEN_102C
+PCI\\VEN_1414
 
 PCI\\CC_030000
 
