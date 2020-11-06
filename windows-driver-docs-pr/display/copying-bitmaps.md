@@ -45,7 +45,7 @@ The [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt) function prov
 
 Optionally, a block transfer handled by [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt) can be masked and involve color index translation. A translation vector assists in color index translation for palettes. The transfer might need to be arbitrarily clipped by a display driver, using a series of clip rectangles. The required region and information are furnished by GDI.
 
-Implementing [**DrvBitBlt**](https://msdn.microsoft.com/library/windows/hardware/ff556180) represents a significant portion of the work involved in writing a driver for a raster display driver that does not have a standard-format *frame buffer*. The Microsoft VGA driver that is furnished with the Windows Driver Kit (WDK) provides sample code that supports the basic function for a planar device. Implementing **DrvBitBlt** for other devices may be less complex.
+Implementing [**DrvBitBlt**](/windows/win32/api/winddi/nf-winddi-drvbitblt) represents a significant portion of the work involved in writing a driver for a raster display driver that does not have a standard-format *frame buffer*. The Microsoft VGA driver that is furnished with the Windows Driver Kit (WDK) provides sample code that supports the basic function for a planar device. Implementing **DrvBitBlt** for other devices may be less complex.
 
 ### <span id="drvcopybits"></span><span id="DRVCOPYBITS"></span> DrvCopyBits
 
@@ -98,6 +98,4 @@ From left to right, the preceding figure shows the source bitmap, the destinatio
 When the blt operation takes place, these four regions are not copied, which causes any pixel pattern in the destination bitmap under these regions to remain visible. Any pixel pattern under the other regions (the four corners and the center) is overwritten in the transparent blt.
 
 This is illustrated in the right-most image: the portions of the letter 'M' in the four corners and the center were overwritten with the colors in the source bitmap. The portions of the letter 'M' under the four regions whose color is the same as that in *iTransColor* remain visible.
-
- 
 
