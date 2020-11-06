@@ -16,43 +16,21 @@ Documentation updated to WDI version 1.1.9.
 | Topic | Description |
 | --- | --- |
 | [WDI message structure](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-wi-fi-messages#tlvs) | Modified TLV structure an aggregate container to allow for variable-size KCK/KEK |
-| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | New TLV added. |
-| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | New TLV added. |
-| [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | New TLV added. |
-| [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | New TLV added. |
-| [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | New TLV added. |
-| [WDI_TLV_KCK_CONTENT](wdl-tlv-kck-content.md) | New TLV added. |
-| [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | New TLV type added |
+| [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) | Newly added TLV. |
+| [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) | Newly Added TLV. |
+| [WDI_TLV_KEK_CONTENT](wdi-tlv-kek-content.md) | Newly Added TLV. |
+| [WDI_TLV_PROTOCOL_OFFLOAD](wdi-tlv-protocol-offload-id.md) | Newly Added TLV. |
+| [WDI_TLV_REPLAY_COUNTER](wdi-tlv-replay-counter.md) | Newly Added TLV. |
+| [WDI_TLV_KCK_CONTENT](wdl-tlv-kck-content.md) | Newly Added TLV. |
+| [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly Added TLV type. |
+| [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | Newly Added TLV type. |
 | [WDI_SET_CONFIGURED_CIPHER_KEY](wdi-tlv-configured-cipher-key.md) | Added entries for [WDI_TLV_CIPHER_KEY_GCMP_256_KEY](wdi-tlv-cipher-key-gcmp-256-key.md) and [WDI_TLV_CIPHER_KEY_BIP_GMAC_256_KEY](wdi-tlv-cipher-key-bip-gmac-256-key.md) |
-| [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) | New TLV type added |
 | [WDI_TLV_CONNECT_PARAMETERS](wdi-tlv-connect-parameters.md) | Added reference for new TLV type [WDI_TLV_OWE_DH_IE](wdi-tlv-owe-dh-ie.md) |
-| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | Added Host-WPA3-FIPS mode |
-
-NOTE: this needs more information regarding the notes for the FIPS mode, as well as links to the new TLV type. Is a FIPS mode article required? Can we reference a future version of Windows, and if so, what is the verbiage? 
-
-## Ref Changes? 
-**In Section 8.3.10**
-- added new WDI_AUTH_ALGORITHM: WDI_AUTH_ALGO_OWE (Waiting to see if just a ref change)
-
-**In Section 8.3.10: Added new Auth Algo:**
-- WDI_AUTH_ALGO_WPA3
-
-**In Section 8.3.11: Added new Ciphers:** (Waiting to see if ref change only)
-- WDI_CIPHER_ALGO_GCMP_256
-- WDI_CIPHER_ALGO_BIP_GMAC_256
-
-## In Progress
-
-**WPA3 SAE Capability requirement**
-**In Section 12.12.3 WDI_STATION_ATTRIBUTES Structure**
-- Driver must indicate support for WDI_AUTH_ALGO_WPA3_SAE auth and WDI_CIPHER_ALGO_CCMP cipher pairs in the unicast and multicast algo pairs. It must also indicate support for WDI_AUTH_ALGO_WPA3_SAE auth and WDI_CIPHER_ALGO_BIP cipher in the Multicast Management algo pairs
-
-**FTM related changes**
-- Adding a new ScanTrigger enum value to indicate that the scan was due to discovering APs for FTMs.
-- Updating the description of WDI_TASK_REQUEST_FTM to make clear the expected behavior of LE that maintain a BSS list cache.
-- Adding a BandwidthUsed field to the FTM response and its corresponding enumeration.
-- Making RTT field a signed integer to be able to provide negative values.
-- Adding a PropagationProperty field to the FTM respone and its corresponding enumeration.
+| [WDI_TLV_STATION_CAPABILITIES](wdi-tlv-station-capabilities.md) | **Host-WPA3-FIPS** mode added |
+| [WDI_TASK_REQUEST_FTM](/windows-hardware/drivers/network/oid-wdi-task-request-ftm | **ScanTrigger** enum value added</br></br>Description updated for LE with BSS list cache |
+| [WDI_TLV_FTM_RESPONSE](/windows-hardware/drivers/network/wdi-tlv-ftm-response) | **BandwidthUsed** field added</br></br>**PropegationProperty** field added</br></br>**RTT** field changed to signed integer |
+| [WDI_AUTH_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) | Added new WDI_AUTH_ALGORITHM **WDI_AUTH_ALGO_OWE** |
+| [WDI_CIPHER_ALGORITHM](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_cipher_algorithm) | **WDI_CIPHER_ALGO_GCMP_256** new cipher added</br></br>**WDI_CIPHER_ALGO_BIP_GMAC_256** new cipher added |
 
 ## Windows 10, version 1903
 
@@ -131,7 +109,6 @@ Documentation updated to WDI version 1.1.5.
 
 ## Windows 10, version 1607
 
-
 Documentation updated to WDI version 1.0.21.
 
 <table>
@@ -201,10 +178,7 @@ Documentation updated to WDI version 1.0.21.
 </tbody>
 </table>
 
- 
-
 ## March 2016
-
 
 <table>
 <colgroup>
@@ -229,10 +203,7 @@ Documentation updated to WDI version 1.0.21.
 </tbody>
 </table>
 
- 
-
 ## Windows 10, version 1511
-
 
 Documentation updated to WDI version 1.0.10.
 
@@ -276,10 +247,6 @@ Documentation updated to WDI version 1.0.10.
 </tbody>
 </table>
 
- 
-
 ## Windows 10
 
-
 Initial version.
-
