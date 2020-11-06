@@ -6,7 +6,6 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # UWP device apps
@@ -19,7 +18,7 @@ Device manufacturers can create a UWP device app that serves as a companion to t
 
 This section describes what UWP device apps are and how device manufacturers can create them. If you're new to UWP device apps, take a look at [Getting started](getting-started.md).
 
-If you're looking for info about UWP mobile broadband apps, see [Mobile Broadband](https://go.microsoft.com/fwlink/p/?LinkID=301754).
+If you're looking for info about UWP mobile broadband apps, see [Mobile Broadband](../mobilebroadband/index.md).
 
 ## <span id="in_this_section"></span>In this section
 
@@ -87,10 +86,4 @@ If you're looking for info about UWP mobile broadband apps, see [Mobile Broadban
  
 
  
-
- 
-
-
-
-
 

@@ -33,7 +33,7 @@ The **\\Callback\\PowerState** callback object provides for notification when on
 
 The **\\Callback\\ProcessorAdd** callback provides notification when a new processor is added to the system.
 
-To use a system-defined callback, a driver initializes an attribute block ([**InitializeObjectAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/nf-wudfwdm-initializeobjectattributes)) with the callback's name, then opens the callback object ([**ExCreateCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback)), just as for a driver-defined callback. The driver should not request that the callback object be created.
+To use a system-defined callback, a driver initializes an attribute block by calling [**InitializeObjectAttributes**](/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes) with the callback's name, then opens the callback object ([**ExCreateCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-excreatecallback)), just as for a driver-defined callback. The driver should not request that the callback object be created.
 
 With the handle returned by **ExCreateCallback**, the driver calls [**ExRegisterCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exregistercallback) to register a notification routine, passing a pointer to an arbitrary context and a pointer to its routine. A driver can register its callback routine any time. When the specified condition occurs, the system calls the registered callback routine at IRQL&lt;=DISPATCH\_LEVEL.
 

@@ -187,7 +187,5 @@ VOID IrpCancelRoutine(IN PDEVICE_OBJECT DeviceObject, IN PIRP Irp)
 
 The I/O manager always acquires the global cancel spin lock before it calls a *Cancel* routine, so the first task of the *Cancel* routine is to release this spin lock. It then acquires the spin lock that protects the driver's queue of IRPs, removes the current IRP from the queue, releases its spin lock, completes the IRP with STATUS\_CANCELLED and no priority boost, and returns.
 
-For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](https://go.microsoft.com/fwlink/p/?linkid=59531) white paper.
-
- 
+For more information about canceling spin locks, see the [Cancel Logic in Windows Drivers](/previous-versions/windows/hardware/design/dn653289(v=vs.85)) white paper.
 

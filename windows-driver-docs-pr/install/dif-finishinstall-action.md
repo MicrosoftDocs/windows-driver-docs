@@ -65,10 +65,10 @@ If a user is signed in without administrative privileges, Windows prompts the us
 A handle to the [device information set](./device-information-sets.md) that contains the device being installed.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-A pointer to an [**SP_DEVINFO_DATA**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that represents the device being installed.
+A pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that represents the device being installed.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters (a [**SP_DEVINSTALL_PARAMS**](/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a) structure) associated with *DeviceInfoData*.
+There are device installation parameters (a [**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a) structure) associated with *DeviceInfoData*.
 
 <a href="" id="class-installation-parameters"></a>Class Installation Parameters  
 None

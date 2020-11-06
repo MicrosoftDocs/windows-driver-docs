@@ -32,15 +32,15 @@ TrueType font drivers must support the functions listed in the following table.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgettruetypefile" data-raw-source="[&lt;strong&gt;DrvGetTrueTypeFile&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvgettruetypefile)"><strong>DrvGetTrueTypeFile</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-drvgettruetypefile" data-raw-source="[&lt;strong&gt;DrvGetTrueTypeFile&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvgettruetypefile)"><strong>DrvGetTrueTypeFile</strong></a></p></td>
 <td align="left"><p>Gives GDI efficient access to the memory-mapped TrueType font file.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerytruetypeoutline" data-raw-source="[&lt;strong&gt;DrvQueryTrueTypeOutline&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvquerytruetypeoutline)"><strong>DrvQueryTrueTypeOutline</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-drvquerytruetypeoutline" data-raw-source="[&lt;strong&gt;DrvQueryTrueTypeOutline&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvquerytruetypeoutline)"><strong>DrvQueryTrueTypeOutline</strong></a></p></td>
 <td align="left"><p>Returns glyph handles in native TrueType format.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerytruetypetable" data-raw-source="[&lt;strong&gt;DrvQueryTrueTypeTable&lt;/strong&gt;](/windows/desktop/api/winddi/nf-winddi-drvquerytruetypetable)"><strong>DrvQueryTrueTypeTable</strong></a></p></td>
+<td align="left"><p><a href="/windows/win32/api/winddi/nf-winddi-drvquerytruetypetable" data-raw-source="[&lt;strong&gt;DrvQueryTrueTypeTable&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvquerytruetypetable)"><strong>DrvQueryTrueTypeTable</strong></a></p></td>
 <td align="left"><p>Gives GDI access to specific files in the TrueType font file format.</p></td>
 </tr>
 </tbody>
@@ -49,6 +49,4 @@ TrueType font drivers must support the functions listed in the following table.
  
 
 All these functions provide GDI with information about TrueType font files. *DrvQueryTrueTypeTable* should give GDI access to specific tables in the TrueType font-file format. *DrvQueryTrueTypeOutline* must send GDI glyph outlines in native TrueType format. *DrvGetTrueTypeFile* returns to GDI the TrueType driver's private entry point that allows GDI efficient access to the memory mapped TrueType font file.
-
- 
 

@@ -96,7 +96,5 @@ As soon as Windows has found one or more matching [driver packages](driver-packa
 
 Once Windows has selected a driver for the device, Windows installs the driver as described in [Step 3: The Driver for the Device is Installed](step-3--the-driver-for-the-device-is-installed.md).
 
-For more information about how drivers are selected for a device, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
-
- 
+For more information about how drivers are selected for a device, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 

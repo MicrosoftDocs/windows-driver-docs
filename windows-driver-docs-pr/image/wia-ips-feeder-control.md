@@ -48,7 +48,7 @@ The following table describes the valid values for the **WIA\_IPS\_FEEDER\_CONTR
 <tbody>
 <tr class="odd">
 <td><p>WIA_FEEDER_CONTROL_AUTO</p></td>
-<td><p>The device controls the feeder motor operation. The feeder is started and stopped for each scan job (<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> call). This is the required default value if the property is supported.</p></td>
+<td><p>The device controls the feeder motor operation. The feeder is started and stopped for each scan job (<a href="/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata" data-raw-source="[&lt;strong&gt;IWiaMiniDrv::drvAcquireItemData&lt;/strong&gt;](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvacquireitemdata)"><strong>IWiaMiniDrv::drvAcquireItemData</strong></a> call). This is the required default value if the property is supported.</p></td>
 </tr>
 <tr class="even">
 <td><p>WIA_FEEDER_CONTROL_MANUAL</p></td>
@@ -82,6 +82,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

@@ -71,7 +71,7 @@ When the PnP manager sends this IRP, it supplies the driver stack with a resourc
 
 -   Boot configuration (modified from a resource list to a resource requirements list)
 
-If a function driver handles this IRP, it must set a completion routine and handle the IRP on its way back up the device stack. See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for information about handling a PnP IRP on its way back up the device stack.
+If a function driver handles this IRP, it must set a completion routine and handle the IRP on its way back up the device stack. See [Plug and Play](./introduction-to-plug-and-play.md) for information about handling a PnP IRP on its way back up the device stack.
 
 If the function driver is not changing the size of the current list pointed to by **Irp-&gt;IoStatus.Information**, the driver can modify the list in place. If the driver needs to change the size of the requirements list, the driver must allocate a new [**IO\_RESOURCE\_REQUIREMENTS\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_requirements_list) list from paged memory and free the previous list. The PnP manager frees the returned structure when it is no longer needed.
 
@@ -81,7 +81,7 @@ If the function driver for the device does not handle this IRP, the PnP manager 
 
 A function driver must be prepared to handle this IRP for a device at any time after the driver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine has been called for the device.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Sending This IRP**
 

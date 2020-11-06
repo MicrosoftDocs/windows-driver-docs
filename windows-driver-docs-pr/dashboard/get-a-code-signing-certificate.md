@@ -40,6 +40,10 @@ Once the certificate authority has verified your contact information and your ce
 > [!NOTE]
 > You must use the same computer and browser to retrieve your certificate.
 
+## Step 4: Add the certificates to your account on Partner Center
+
+For step-by-step instructions, see [Add or Update a code signing certificate](update-a-code-signing-certificate.md).
+
 ## Next steps
 
 - If you’re setting up a new Partner Center account, follow the steps in [Register for the Hardware Program](register-for-the-hardware-program.md).

@@ -22,6 +22,10 @@ ms.localizationpriority: high
 
 # Windows Device Console (Devcon.exe)
 
+> [!NOTE]
+> Please use the PnPUtil tool instead of DevCon.
+> 
+
 
 DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows. You can use DevCon to enable, disable, install, configure, and remove devices.
 
@@ -41,7 +45,7 @@ DevCon runs on Microsoft Windows 2000 and later versions of Windows.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
+<td align="left"><p>DevCon (Devcon.exe) is included when you install the WDK, Visual Studio, and the Windows SDK for desktop apps. For information about downloading the kits, see <a href="/windows-hardware/drivers/download-the-wdk" data-raw-source="[Windows Hardware Downloads](../download-the-wdk.md)">Windows Hardware Downloads</a>.</p>
 <p><strong>Windows Driver Kit (WDK) 8 and Windows Driver Kit (WDK) 8.1</strong> (installation path)</p>
 <p>%WindowsSdkDir%\tools\x64\devcon.exe</p>
 <p>%WindowsSdkDir%\tools\x86\devcon.exe</p>
@@ -112,6 +116,4 @@ The DevCon source code is also available so that you can examine the methods tha
 [DevCon Commands](devcon-general-commands.md)
 
 [DevCon Examples](devcon-examples.md)
-
- 
 

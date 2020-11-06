@@ -33,9 +33,4 @@ When testing your driver, you should:
     -   [Tools for Verifying Drivers](../devtest/tools-for-verifying-drivers.md)
     -   [Tools for Testing Drivers](../devtest/tools-for-testing-drivers.md)
 
-To thoroughly test your driver, you must use both the framework's driver verification features and the driver verification tools.
-
-For general information about testing your driver using Microsoft Visual Studio and the Windows Driver Kit (WDK), see [Testing a Driver](../develop/testing-a-driver.md) and [Testing a WDF Driver]().
-
- 
-
+To thoroughly test your driver, you must use both the framework's driver verification features and the driver verification tools. 

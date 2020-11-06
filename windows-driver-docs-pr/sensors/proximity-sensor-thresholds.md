@@ -18,4 +18,4 @@ That said, proximity sensor drivers must always report one sample reading immedi
 ## Related topics
 
 
-[PROPVARIANT structure](https://go.microsoft.com/fwlink/p/?linkid=313395)
+[PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)

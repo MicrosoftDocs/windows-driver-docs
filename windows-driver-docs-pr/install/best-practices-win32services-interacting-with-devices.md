@@ -56,7 +56,7 @@ Once you have registered for notifications, you can find your desired device int
 >[!NOTE] 
 >Note, there is a chance that the interface arrives between registering for notifications and finding the desired device interface.  In that case, the interface will be listed in both the notification callback and the list of interfaces.
 
-Once you have found the desired device interface, open a handle to the interface via [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea).  
+Once you have found the desired device interface, open a handle to the interface via [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilea).  
 
 The next step is to register for secondary per-interface notifications to operate and manage the device. This can be done using **CM_Register_Notification** with the **CM_NOTIFY_FILTER_TYPE_DEVICEHANDLE** flag.  This will ensure that when a device is going away, the handle can be released accordingly.
 

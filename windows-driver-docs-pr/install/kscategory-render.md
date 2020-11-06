@@ -50,7 +50,7 @@ Remarks
 
 Drivers for KS audio adapter devices register an instance of KSCATEGORY_RENDER to indicate that the devices support the KSCATEGORY_RENDER functional category.
 
-For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) in the WDK.
+For information about how to register this functional category in an INF file, see the INF file *Ac97smpl.inf* that is included with the [AC'97 sample driver](/samples/browse/) in the WDK.
 
 For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md) and [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
@@ -69,6 +69,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
 

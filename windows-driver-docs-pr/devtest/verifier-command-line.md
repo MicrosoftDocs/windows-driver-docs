@@ -372,7 +372,7 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>32768</p></td>
 <td align="left"><p>0x8000 (bit 15)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="concurrency-stress-test.md" data-raw-source="[Power Framework Delay Fuzzing](concurrency-stress-test.md)">Power Framework Delay Fuzzing</a> (Starting with Windows 8)</p></td>
+<td align="left"><p><a href="concurrency-stress-test.md" data-raw-source="[Power Framework Delay Fuzzing](concurrency-stress-test.md)">Power Framework Delay Fuzzing</a> (Starting with Windows 8) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>65536</p></td>
@@ -390,13 +390,13 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>262144</p></td>
 <td align="left"><p>0x40000 (bit 18)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="systematic-low-resource-simulation.md" data-raw-source="[Systematic low resources simulation](systematic-low-resource-simulation.md)">Systematic low resources simulation</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>524288</p></td>
 <td align="left"><p>0x80000 (bit 19)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="ddi-compliance-checking.md#ddi_compliance_checking_additional" data-raw-source="[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional)">DDI compliance checking (additional)</a> (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="ddi-compliance-checking.md#ddi_compliance_checking_additional" data-raw-source="[DDI compliance checking (additional)](ddi-compliance-checking.md#ddi_compliance_checking_additional)">DDI compliance checking (additional)</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>2097152</p></td>
@@ -408,7 +408,7 @@ Activates the specified options after the next reboot. In Windows 2000, this num
 <td align="left"><p>8388608</p></td>
 <td align="left"><p>0x800000 (bit 23)</p></td>
 <td align="left"></td>
-<td align="left"><p><a href="kernel-synchronization-delay-fuzzing.md" data-raw-source="[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md)">Kernel synchronization delay fuzzing</a> (Starting with Windows 8.1)</p></td>
+<td align="left"><p><a href="kernel-synchronization-delay-fuzzing.md" data-raw-source="[Kernel synchronization delay fuzzing](kernel-synchronization-delay-fuzzing.md)">Kernel synchronization delay fuzzing</a> (Starting with Windows 8.1) <b>(Deprecated in Windows 10 Insider Preview Build 19042 and above)</b></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>16777216</p></td>
@@ -553,11 +553,11 @@ Options for rules that can be disabled (advanced).
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>default</strong> <em>ID</em></p></td>
-<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Sets rule <em>ID</em> to its default state. For the supported rules, the rule <em>ID</em> is the <a href="/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>disable</strong> <em>ID</em></p></td>
-<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
+<td align="left"><p>Disables specified rule <em>ID</em>. For the supported rules, the rule <em>ID</em> is the <a href="/windows-hardware/drivers/debugger/bug-check-0xc4--driver-verifier-detected-violation" data-raw-source="[&lt;strong&gt;Bug Check 0xC4&lt;/strong&gt;](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)"><strong>Bug Check 0xC4</strong></a> (DRIVER_VERIFIER_DETECTED_VIOLATION) parameter 1 value.</p></td>
 </tr>
 </tbody>
 </table>
@@ -568,7 +568,7 @@ Options for rules that can be disabled (advanced).
 (Windows XP and later) Activates the "standard" or default Driver Verifier options after the next boot. The standard options in Windows XP are [Special Pool](special-pool.md), [Force IRQL Checking](force-irql-checking.md), [Pool Tracking](pool-tracking.md), [I/O Verification](i-o-verification.md), [Deadlock Detection](deadlock-detection.md), and [DMA Verification](dma-verification.md). This is equivalent to **/flags 0xBB**. Starting with Windows Vista, the standard options also include [Security Checks](security-checks.md) and [Miscellaneous Checks](miscellaneous-checks.md). This is equivalent to **/flags 0x9BB**. Starting with Windows 8, the standard options also include [DDI compliance checking](ddi-compliance-checking.md). This is equivalent to **/flags 0x209BB**.
 
 > [!NOTE]
-> Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included. See [Driver Verifier Command Syntax]() for more information.
+> Starting in Windows 10 versions after 1803, using **/flags 0x209BB** will no longer automatically enable WDF verification. Use the **/standard** syntax to enable standard options, with WDF verification included.
 
 <span id="________volatile______"></span><span id="________VOLATILE______"></span> **/volatile**   
 Changes the settings without rebooting the computer. Volatile settings take effect immediately.

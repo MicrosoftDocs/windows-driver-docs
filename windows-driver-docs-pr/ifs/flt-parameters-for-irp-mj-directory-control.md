@@ -58,7 +58,7 @@ Union component used for IRP_MN_QUERY_DIRECTORY operations.
 Length, in bytes, of the buffer that the **QueryDirectory.DirectoryBuffer** member points to.
 
 **FileName**  
-Pointer to a [**UNICODE_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that contains the name of a file within the specified directory.
+Pointer to a [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure that contains the name of a file within the specified directory.
 
 **FileInformationClass**  
 Specifies one of the values described below.

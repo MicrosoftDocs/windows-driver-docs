@@ -18,7 +18,7 @@ The sensor and location platform in Windows provides the following features to h
 
 - Windows provides disclosure messages to the user. These messages help users understand how using location data can result in the disclosure of personally identifiable information.
 
-- Desktop apps that use the Location API can call the [**RequestPermissions**](/windows/desktop/api/locationapi/nf-locationapi-ilocation-requestpermissions) method to open a system dialog box that prompts users to enable location.
+- Desktop apps that use the Location API can call the [**RequestPermissions**](/windows/win32/api/locationapi/nf-locationapi-ilocation-requestpermissions) method to open a system dialog box that prompts users to enable location.
 
 - Location drivers use the sensor class extension. The class extension processes all I/O requests and makes sure that only programs that have user permission can access location data.
 

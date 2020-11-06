@@ -67,7 +67,7 @@ GUID_DEVINTERFACE_MODEM in *Ntddmodm.h* will be defined correctly only if the co
 
 For information about modem devices, see [Modem Devices Design Guide](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)).
 
-For an example of using this device interface class, see the [FakeModem - Unimodem controller-less modem sample driver](https://go.microsoft.com/fwlink/p/?linkid=256110) sample that is provided in the WDK.
+For an example of using this device interface class, see the [FakeModem - Unimodem controller-less modem sample driver](/samples/browse/) sample that is provided in the WDK.
 
 [**GUID_CLASS_MODEM**](guid-class-modem.md) is an obsolete identifier for this device interface class; for new instances of this class, use GUID_DEVINTERFACE_MODEM instead.
 
@@ -95,6 +95,4 @@ Requirements
 
 
 [**GUID_CLASS_MODEM**](guid-class-modem.md)
-
- 
 

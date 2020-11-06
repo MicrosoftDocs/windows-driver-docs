@@ -26,13 +26,7 @@ A *text log header* consists of the first few log entries in a SetupAPI text log
 [BeginLog]
 ```
 
-The information in a text log header is a subset of the information that is returned by a call to [GetVersionEx](https://go.microsoft.com/fwlink/p/?linkid=179601) in an [OVSERVERSIONINFOEX](https://go.microsoft.com/fwlink/p/?linkid=179602) structure. For more information, see the Microsoft Windows SDK.
+The information in a text log header is a subset of the information that is returned by a call to [GetVersionEx](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getversionexa) in an [OVSERVERSIONINFOEX](/windows/win32/api/winnt/ns-winnt-osversioninfoexa) structure. For more information, see the Microsoft Windows SDK.
 
  
-
- 
-
-
-
-
 

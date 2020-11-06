@@ -44,7 +44,7 @@ Initializes the miniport object.
 
 Creates a new stream object.
 
-The stream interface, [IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream), inherits the methods in the [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveCyclicStream provides the following additional methods:
+The stream interface, [IMiniportWaveCyclicStream](/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavecyclicstream), inherits the methods in the [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface. IMiniportWaveCyclicStream provides the following additional methods:
 
 [**IMiniportWaveCyclicStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecyclicstream-getposition)
 

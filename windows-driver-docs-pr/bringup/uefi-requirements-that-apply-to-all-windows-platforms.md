@@ -305,7 +305,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <td><p>The following requirements do not imply a need for a TCG TPM implementation; they do however imply a need for equivalent functionality for the affected areas.</p>
 <p>The platform support may be provided by a firmware implementation of a TPM executing in the secure execution environment, layering on top of the cryptographic acceleration engine and leveraging the isolated storage. Microsoft may be able to provide reference software for such a TPM implementation for use by the vendor. This is subject to further discussions.</p>
 <ul>
-<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the <a href="https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
+<li><p>Requirement 22: MANDATORY. The platform shall conform to the EFI protocol specified in the <a href="/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 <li><p>Requirement 23: MANDATORY. The platform shall adhere to the TCG EFI Platform Specification with the following additions:</p>
 <ul>
 <li><p>On platforms supporting the interface defined in TrEE EFI Protocol, the digest of PK<em><sub>pub</sub></em> shall be extended to TPM PCR[03] as an EV_EFI_VARIABLE_CONFIG event.</p></li>
@@ -341,7 +341,7 @@ Windows has security requirements in the areas of Secure Boot, Measured Boot, Cr
 <li><p>Microsoft has defined protocol for gathering entropy from a UEFI platform. While not a UEFI requirement, this protocol is required by Windows on SoC platforms. For more information about this protocol, see <a href="uefi-entropy-gathering-protocol.md" data-raw-source="[UEFI entropy gathering protocol](uefi-entropy-gathering-protocol.md)">UEFI entropy gathering protocol</a>.</p></li>
 <li><p>UEFI Signature Database Updates. A new mechanism for updating Authenticated Variables has been adopted in section 27 of UEFI 2.3.1. This mechanism is required by Windows.</p></li>
 <li><p>Trusted Execution Environment. Microsoft has developed an EFI protocol for interacting with a Trusted Execution Environment (TrEE), similar in functionality to a subset of a Trusted Computing Group (TCG) Trusted Platform Module (TPM). The EFI protocol leverages to a large degree, "TCG EFI Protocol," Version 1.2 Revision 1.00, June 9, 2006, by the Trusted Computing Group.</p>
-<p>For details, refer to <a href="https://docs.microsoft.com/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
+<p>For details, refer to <a href="/previous-versions/windows/hardware/hck/jj923068(v=vs.85)" data-raw-source="[UEFI Trusted Execution Environment EFI Protocol](/previous-versions/windows/hardware/hck/jj923068(v=vs.85))">UEFI Trusted Execution Environment EFI Protocol</a>.</p></li>
 </ul></td>
 </tr>
 </tbody>

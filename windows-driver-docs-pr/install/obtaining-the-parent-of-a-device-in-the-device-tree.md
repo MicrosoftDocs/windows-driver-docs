@@ -24,17 +24,17 @@ This topic describes how to obtain an **SP_DEVINFO_DATA**) in the device tree.
 
 **To obtain an SP_DEVINFO_DATA structure for the immediate parent of a device in the device tree**
 
-1.  Verify that the device has a devnode in the [device tree](../kernel/device-tree.md) by calling [**CM_Get_DevNode_Status**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) for the device:
+1.  Verify that the device has a devnode in the [device tree](../kernel/device-tree.md) by calling [**CM_Get_DevNode_Status**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_devnode_status) for the device:
     -   If the device has a devnode, the function returns CR_SUCCESS.
     -   If the device does not have a devnode, the function returns CR_NO_SUCH_DEVINST.
 
-2.  If the device has a devnode, call [**CM_Get_Parent**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to obtain a device instance handle for the parent of the device.
+2.  If the device has a devnode, call [**CM_Get_Parent**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_parent) to obtain a device instance handle for the parent of the device.
 
     (If a device does not have a devnode, **CM_Get_Parent** returns a device instance handle for the root device).
 
-3.  Using the device instance handle for the parent device, call [**CM_Get_Device_ID**](/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to obtain the device instance ID for the parent device.
+3.  Using the device instance handle for the parent device, call [**CM_Get_Device_ID**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_get_device_idw) to obtain the device instance ID for the parent device.
 
-4.  Using the device instance ID for the parent device, call [**SetupDiOpenDeviceInfo**](/windows/desktop/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an SP_DEVINFO_DATA structure for the parent device.
+4.  Using the device instance ID for the parent device, call [**SetupDiOpenDeviceInfo**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendeviceinfoa) to obtain an SP_DEVINFO_DATA structure for the parent device.
 
 **To obtain the SP_DEVINFO_DATA structures for a connected sequence of ancestors of a device in the device tree**
 

@@ -39,10 +39,3 @@ If your app is not trusted, the property returns an empty collection instead of 
 
 This can happen if no network hardware is detected, or if the network hardware does not have an accessible SIM. A simple way to determine the exact reason why the returned collection is empty is to look at the WWAN logs. After you have collected the logs, search the text log file for entries that contain the text **AvailableNetworkAccountIds**.
 
-## <span id="related_topics"></span>Related topics
-
-
-[Common tasks for mobile broadband Windows Runtime APIs]()
-
- 
-

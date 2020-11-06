@@ -1,6 +1,5 @@
 ---
 title: Bluetooth Driver Testing Resources
-author: windows-driver-content
 description: Overview of bluetooth driver testing resources.
 ms.assetid: d045b771-b536-457c-8b7b-ecb6517bf0a9
 ms.date: 2/14/2020

@@ -120,9 +120,9 @@ void OnInterruptDataReceivedEvent(UsbInterruptInPipe^ /* sender */, UsbInterrupt
 
 To register the event handler for the [**DataReceived**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe#Windows_Devices_Usb_UsbInterruptInPipe_DataReceived) event, obtain a reference to the [**UsbInterruptInPipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptInPipe) by using any these properties:
 
--   [**UsbDevice.DefaultInterface.InterruptInPipes\[n\]**](https://msdn.microsoft.com/library/windows/apps/dn264292) if your interrupt endpoint is present in the first USB interface.
--   [**UsbDevice.Configuration.UsbInterfaces\[m\].InterruptInPipes\[n\]**](https://msdn.microsoft.com/library/windows/apps/dn264292) for enumerating all interrupt IN pipes per interface, supported by the device.
--   [**UsbInterface.InterfaceSettings\[m\].InterruptInEndpoints \[n\].Pipe**](https://msdn.microsoft.com/library/windows/apps/dn264292) for enumerating interrupt IN pipes defined by settings of an interface.
+-   [**UsbDevice.DefaultInterface.InterruptInPipes\[n\]**](/uwp/api/Windows.Devices.Usb.UsbInterface) if your interrupt endpoint is present in the first USB interface.
+-   [**UsbDevice.Configuration.UsbInterfaces\[m\].InterruptInPipes\[n\]**](/uwp/api/Windows.Devices.Usb.UsbInterface) for enumerating all interrupt IN pipes per interface, supported by the device.
+-   [**UsbInterface.InterfaceSettings\[m\].InterruptInEndpoints \[n\].Pipe**](/uwp/api/Windows.Devices.Usb.UsbInterface) for enumerating interrupt IN pipes defined by settings of an interface.
 -   [**UsbEndpointDescriptor.AsInterruptInEndpointDescriptor.Pipe**](/uwp/api/Windows.Devices.Usb.UsbInterruptInEndpointDescriptor#Windows_Devices_Usb_UsbInterruptInEndpointDescriptor_Pipe) for getting the pipe object from the endpoint descriptor for the interrupt IN endpoint.
 
 **Note**  Avoid getting the pipe object by enumerating interrupt endpoints of an interface setting that is not currently selected. To transfer data, pipes must be associated with endpoints in the active setting.

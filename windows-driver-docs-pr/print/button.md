@@ -15,13 +15,17 @@ ms.localizationpriority: medium
 
 # button element
 
-
 The required **button** element specifies the characteristics of a button in a message box that is displayed on the client computer.
 
-The **button** element is defined in the *asyncui* namespace at this URI: [https://schemas.microsoft.com/2003/print/asyncui/v1/request](https://schemas.microsoft.com/2003/print/asyncui/v1/request). (This resource may not be available in some languages and countries.)
+The **button** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <button

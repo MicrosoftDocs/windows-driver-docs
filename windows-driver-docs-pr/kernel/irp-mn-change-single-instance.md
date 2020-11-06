@@ -1,6 +1,6 @@
 ---
 title: IRP_MN_CHANGE_SINGLE_INSTANCE
-description: All drivers that support WMI must handle this IRP.
+description: Learn about the 'IRP_MN_CHANGE_SINGLE_INSTANCE'. All of the drivers that support WMI must handle this IRP.
 ms.date: 08/12/2017
 ms.assetid: 180d40a4-b300-4801-b9da-9239500ca15f
 keywords:

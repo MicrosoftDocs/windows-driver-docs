@@ -35,7 +35,7 @@ Get a USB device for which you will be writing the client driver. In most cases,
 
 If you are new to USB driver development, use the OSR USB FX2 learning kit to study USB samples included with the WDK. You can get the learning kit from [OSR Online](https://www.osronline.com/). It contains the USB FX2 device and all the required hardware specifications to implement a client driver.
 
-You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](https://jjgtechnologies.com/mutt.md). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
+You can also get a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/mutt.htm). The device does not have installed firmware installed. To install firmware, download the MUTT software package from [this Web site](./index.md) and run MUTTUtil.exe. For more information, see the documentation included with the package.
 
 **Recommended reading**
 
@@ -107,11 +107,11 @@ To provide the hardware ID string:
 3.  From the **Configuration Manager**, select the **Active Solution Configuration** (for example, **Windows 8 Debug** or **Windows 8 Release**) and the **Active Solution Platform** (for example, Win32) that correspond to the type of build you're interested in.
 4.  From the **Build** menu, select **Build Solution**.
 
-For more information, see [Building a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/building-a-driver).
+For more information, see [Building a Driver](../develop/building-a-driver.md).
 
 ### <a href="" id="configure-a-computer-for-testing-and-debugging"></a>Step 4: Configure a computer for testing and debugging
 
-To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 
 ### <a href="" id="enable-tracing-for-kernel-debugging"></a>Step 5: Enable tracing for kernel debugging
 
@@ -125,7 +125,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
    **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
 
-   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracepdb-commands).
+   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](../devtest/tracepdb-commands.md).
 
    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 

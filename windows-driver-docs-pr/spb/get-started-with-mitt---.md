@@ -49,7 +49,7 @@ To run MITT tests, you need a computer that will run as the host and system unde
 
 To run the MITT tests, you need Windows Driver Test Framework (WDTF). When you install the Windows Driver Kit (WDK), the runtime is installed automatically. For complete installation instructions, follow the steps described in [WDTF Runtime Library](/windows-hardware/drivers/ddi/index).
 
-**Download location**: [WDK and WinDbg downloads](https://go.microsoft.com/fwlink/p/?LinkId=733614)
+**Download location**: [WDK and WinDbg downloads](../download-the-wdk.md)
 
 The runtime is installed here %ProgramFiles(x86)%\\Windows Kits\\8.1\\Testing\\Runtimes\\TAEF
 
@@ -76,7 +76,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
     **MuttUtil.exe -List**
 
-    ![mitt firmware upgrade](images/mitt-setup1.png)
+    ![Screenshot that shows the "MuttUtil.exe -list" command run in "Administrator: Command Prompt".](images/mitt-setup1.png)
 
     The preceding output shows that the WinUSB loaded as the device driver for the board.
 
@@ -86,7 +86,7 @@ The system under test must be connected to a kernel debugger. Debugging tools ar
 
     If you are using the FPGA development board, the EEPROM can take up to 5 minutes to program. MuttUtil compares the version of the firmware on the board with the firmware version contained within MuttUtil. The firmware is updated only if MuttUtil has newer firmware.
 
-    ![mitt firmware upgrade](images/mitt-setup2.png)
+    ![Screenshot that shows the "MuttUtil.exe -UpdateFirmware" command run in "Administrator: Command Prompt".](images/mitt-setup2.png)
 
     The preceding output shows a successful installation of the first firmware image.
 

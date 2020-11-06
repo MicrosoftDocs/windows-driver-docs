@@ -10,11 +10,10 @@ ms.localizationpriority: medium
 
 # XML reference
 
-
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://www.microsoft.com/download/details.aspx?id=42273). \]
+This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8.
 
 You can create your own command-line tool to create device metadata packages. For more information about the XML schema and elements, see:
 
--   [Device Metadata Package Schema Reference for Windows 8](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85))
+- [Device Metadata Package Schema Reference for Windows 8](/previous-versions/windows/hardware/metadata/dn465877(v=vs.85))
 
--  [Overview of Device Metadata Packages](../install/overview-of-device-metadata-packages.md)
+-[Overview of Device Metadata Packages](../install/overview-of-device-metadata-packages.md)

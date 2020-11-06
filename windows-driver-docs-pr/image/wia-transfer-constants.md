@@ -37,7 +37,7 @@ The following table shows which WIA item type bits relate to stream-based data t
 <tbody>
 <tr class="odd">
 <td><p><strong>WiaItemTypeTransfer</strong></p></td>
-<td><p>This <a href="https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-flags" data-raw-source="[&lt;strong&gt;WIA_IPA_ITEM_FLAGS&lt;/strong&gt;](./wia-ipa-item-flags.md)"><strong>WIA_IPA_ITEM_FLAGS</strong></a> bit should be set on all items that are capable of transferring data; that is, an application can initiate a download or upload on items that have this bit set.</p></td>
+<td><p>This <a href="/windows-hardware/drivers/image/wia-ipa-item-flags" data-raw-source="[&lt;strong&gt;WIA_IPA_ITEM_FLAGS&lt;/strong&gt;](./wia-ipa-item-flags.md)"><strong>WIA_IPA_ITEM_FLAGS</strong></a> bit should be set on all items that are capable of transferring data; that is, an application can initiate a download or upload on items that have this bit set.</p></td>
 </tr>
 </tbody>
 </table>
@@ -131,6 +131,4 @@ The following table shows the flags that may be passed into [**IWiaMiniDrv::drvA
  
 
 For more information about the **IWiaTransfer** and **IWiaTransferCallback** interfaces, see the Microsoft Windows SDK documentation.
-
- 
 

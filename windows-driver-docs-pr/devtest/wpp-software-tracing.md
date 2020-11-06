@@ -40,7 +40,7 @@ WPP software tracing supplements and enhances [WMI event tracing](../kernel/wmi-
 <td align="left"><p>WPP software tracing is primarily intended for debugging code during development. If you want to publish events that can be consumed by applications interested in structured ETW events, in addition to tracing during development, use the following:</p>
 <ul>
 <li>For kernel-mode drivers, use the <a href="event-tracing-for-windows--etw-.md" data-raw-source="[Event Tracing for Windows (ETW)](event-tracing-for-windows--etw-.md)">Event Tracing for Windows (ETW)</a> API.</li>
-<li>For user-mode drivers or applications, use the <a href="https://docs.microsoft.com/windows/desktop/ETW/event-tracing-portal" data-raw-source="[Event Tracing](/windows/desktop/ETW/event-tracing-portal)">Event Tracing</a> (Windows Desktop) API.</li>
+<li>For user-mode drivers or applications, use the <a href="/windows/desktop/ETW/event-tracing-portal" data-raw-source="[Event Tracing](/windows/desktop/ETW/event-tracing-portal)">Event Tracing</a> (Windows Desktop) API.</li>
 </ul>
 For more information, see <a href="tools-for-software-tracing.md" data-raw-source="[When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?](tools-for-software-tracing.md)">When should I use WPP Software Tracing or the Event Tracing for Windows (ETW) API?</a></td>
 </tr>
@@ -88,6 +88,4 @@ For information about the [WMI library support routines](/windows-hardware/drive
 [**WmiTraceMessage**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessage)
 
 [**WmiTraceMessageVa**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmitracemessageva)
-
- 
 

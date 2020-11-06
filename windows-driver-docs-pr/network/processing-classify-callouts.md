@@ -25,7 +25,7 @@ The implementation of a callout's *classifyFn* callout function depends on what 
 
 [Using a Callout for Deep Inspection of Stream Data](using-a-callout-for-deep-inspection-of-stream-data.md)
 
-[Inspecting Packet and Stream Data](inspecting-packet-and-stream-data.md)
+[Inspecting Packet and Stream Data](packet-inspection-points.md)
 
 [Modifying Stream Data](modifying-stream-data.md)
 

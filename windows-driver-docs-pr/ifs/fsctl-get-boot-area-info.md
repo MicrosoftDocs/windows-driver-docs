@@ -66,7 +66,7 @@ Status block
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>STATUS_SUCCESS</strong></p></td>
-<td align="left"><p>The operation was successful. OutputBuffer contains a pointer to a <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_boot_area_info" data-raw-source="[&lt;strong&gt;BOOT_AREA_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_boot_area_info)"><strong>BOOT_AREA_INFO</strong></a> structure.</p></td>
+<td align="left"><p>The operation was successful. OutputBuffer contains a pointer to a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_boot_area_info" data-raw-source="[&lt;strong&gt;BOOT_AREA_INFO&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_boot_area_info)"><strong>BOOT_AREA_INFO</strong></a> structure.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>STATUS_INVALID_PARAMETER</strong></p></td>
@@ -113,7 +113,5 @@ Requirements
 ## See also
 
 
-[**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol)
-
- 
+[**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol)
 

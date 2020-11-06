@@ -23,7 +23,7 @@ pwrtest.exe /monitor  [/t:n] [/?]
 **/t:**<em>n</em>  
 Specifies the total time (in minutes) for the scenario to run (the default value for *n* is 30 minutes).
 
-### Examples
+## Examples
 
 ```command
 pwrtest.exe /device 

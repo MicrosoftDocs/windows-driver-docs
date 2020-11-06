@@ -37,3 +37,8 @@ For additional information, see [Retrieving the Status and Problem Code for a De
 ## For driver developers
 
 One of the drivers in the device stack failed the [start IRP](../kernel/irp-mn-start-device.md). The [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device should indicate the failure code.
+
+If one of the drivers in the device's driver stack is a UMDF driver and the [**DEVPKEY_Device_ProblemStatus**](devpkey-device-problemstatus.md) property on the device is STATUS_DRIVER_PROCESS_TERMINATED, this information may be helpful for the owner of the driver to diagnose the problem:
+* [Determining Why the Reflector Terminated the Host Process](../wdf/determining-why-the-reflector-terminated-the-host-process.md)
+* [Troubleshooting UMDF 2.0 Driver Crashes](../wdf/debugging-umdf-2-0-drivers.md)
+

@@ -151,7 +151,7 @@ Except for device-specific values and several issues that are noted in the follo
 
 -   **USB\_Install.HW**: This section is the key in the .inf file. It specifies the device interface globally unique identifier (GUID) for your device. The **AddReg** directive sets the specified interface GUID in a standard registry value. When Winusb.sys is loaded as the device's function driver, it reads the registry value DeviceInterfaceGUIDs key and uses the specified GUID to represent the device interface. You should replace the GUID in this example with one that you create specifically for your device. If the protocols for the device change, create a new device interface GUID.
 
-    **Note**  User-mode software must call [**SetupDiGetClassDevs**](/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb\_Initialize**](/windows/desktop/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+    **Note**  User-mode software must call [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) to enumerate the registered device interfaces that are associated with one of the device interface classes specified under the DeviceInterfaceGUIDs key. **SetupDiGetClassDevs** returns the device handle for the device that the user-mode software must then pass to the [**WinUsb\_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize) routine to obtain a WinUSB handle for the device interface. For more info about these routines, see [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 The following INF installs WinUSB as the OSR USB FX2 board's function driver on a x64-based system. The example shows INF with WDF coinstallers.
 
@@ -268,7 +268,7 @@ To use WinUSB as the device's function driver, you create a driver package. The 
 **Note**  Make sure that the driver package contents meet these requirements:
 -   The KMDF and WinUSB co-installer files must be obtained from the same version of the Windows Driver Kit (WDK).
 -   The co-installer files must be obtained from the latest version of the WDK, so that the driver supports all the latest Windows releases.
--   The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](https://go.microsoft.com/fwlink/p/?linkid=129409) on the Windows Dev Center - Hardware site.
+-   The contents of the driver package must be digitally signed with a Winqual release signature. For more info about how to create and test signed catalog files, see [Kernel-Mode Code Signing Walkthrough](/windows-hardware/test/hlk/) on the Windows Dev Center - Hardware site.
 
  
 

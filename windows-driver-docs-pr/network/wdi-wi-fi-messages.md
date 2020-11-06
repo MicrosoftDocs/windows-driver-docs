@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 All WDI command messages must start with a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header) structure. The command header is followed by zero or more type-length-value (TLV) structures.
 
-The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-task-oids), [WDI Property OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-property-oids), and [WDI Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-status-indications).
+The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](./oid-wdi-task-change-operation-mode.md), [WDI Property OIDs](./oid-wdi-abort-task.md), and [WDI Status Indications](./ndis-status-wdi-indication-action-frame-received.md).
 
 ## TLVs
 

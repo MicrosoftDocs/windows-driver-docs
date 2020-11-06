@@ -126,17 +126,17 @@ The class and filter service callbacks are called in the following way:
 
 I8042prt supports the following internal device control requests to query information about a keyboard device, and to set parameters on a keyboard device:
 
-[**IOCTL\_KEYBOARD\_QUERY\_ATTRIBUTES**](/windows/desktop/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_attributes)
+[**IOCTL\_KEYBOARD\_QUERY\_ATTRIBUTES**](/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_attributes)
 
-[**IOCTL\_KEYBOARD\_QUERY\_INDICATOR\_TRANSLATION**](/windows/desktop/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_indicator_translation)
+[**IOCTL\_KEYBOARD\_QUERY\_INDICATOR\_TRANSLATION**](/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_indicator_translation)
 
-[**IOCTL\_KEYBOARD\_QUERY\_INDICATORS**](/windows/desktop/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_indicators)
+[**IOCTL\_KEYBOARD\_QUERY\_INDICATORS**](/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_indicators)
 
-[**IOCTL\_KEYBOARD\_QUERY\_TYPEMATIC**](/windows/desktop/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_typematic)
+[**IOCTL\_KEYBOARD\_QUERY\_TYPEMATIC**](/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_query_typematic)
 
-[**IOCTL\_KEYBOARD\_SET\_INDICATORS**](/windows/desktop/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_set_indicators)
+[**IOCTL\_KEYBOARD\_SET\_INDICATORS**](/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_set_indicators)
 
-[**IOCTL\_KEYBOARD\_SET\_TYPEMATIC**](/windows/desktop/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_set_typematic)
+[**IOCTL\_KEYBOARD\_SET\_TYPEMATIC**](/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_set_typematic)
 
 For more information about all keyboard device control requests, see [Human Interface Devices Reference](/windows/win32/api/_hid/).
 

@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 When defining new IOCTLs, it is important to remember the following rules:
 
--   If a new IOCTL will be available to user-mode software components, the IOCTL must be used with [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) requests. User-mode components send **IRP\_MJ\_DEVICE\_CONTROL** requests by calling the [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol), which is a Win32 function.
+-   If a new IOCTL will be available to user-mode software components, the IOCTL must be used with [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) requests. User-mode components send **IRP\_MJ\_DEVICE\_CONTROL** requests by calling the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol), which is a Win32 function.
 -   If a new IOCTL will be available only to kernel-mode driver components, the IOCTL must be used with [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](./irp-mj-internal-device-control.md) requests. Kernel-mode components create **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests by calling **IoBuildDeviceIoControlRequest**. For more information, see [Creating IOCTL Requests in Drivers](creating-ioctl-requests-in-drivers.md).
 
 An I/O control code is a 32-bit value that consists of several fields. The following figure illustrates the layout of I/O control codes.
@@ -39,7 +39,7 @@ Identifies the device type. This value must match the value that is set in the *
 Identifies the function to be performed by the driver. Values of less than 0x800 are reserved for Microsoft. Values of 0x800 and higher can be used by vendors. Note that the vendor-assigned values set the **Custom** bit.
 
 <a href="" id="transfertype"></a>*TransferType*  
-Indicates how the system will pass data between the caller of [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) (or [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)) and the driver that handles the IRP.
+Indicates how the system will pass data between the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) (or [**IoBuildDeviceIoControlRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest)) and the driver that handles the IRP.
 
 Use one of the following system-defined constants:
 
@@ -53,16 +53,16 @@ For more information about buffered I/O, see [Using Buffered I/O](using-buffered
 <a href="" id="method-in-direct-or-method-out-direct"></a>METHOD\_IN\_DIRECT or METHOD\_OUT\_DIRECT  
 Specifies the [direct I/O](methods-for-accessing-data-buffers.md) method, which is typically used for reading or writing large amounts of data, using DMA or PIO, that must be transferred quickly.
 
-Specify METHOD\_IN\_DIRECT if the caller of [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will pass data to the driver.
+Specify METHOD\_IN\_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will pass data to the driver.
 
-Specify METHOD\_OUT\_DIRECT if the caller of [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will receive data from the driver.
+Specify METHOD\_OUT\_DIRECT if the caller of [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest** will receive data from the driver.
 
 For information about how the system specifies data buffers for METHOD\_IN\_DIRECT and METHOD\_OUT\_DIRECT I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
 
 For more information about direct I/O, see [Using Direct I/O](using-direct-i-o.md).
 
 <a href="" id="method-neither"></a>METHOD\_NEITHER  
-Specifies [neither buffered nor direct I/O](using-neither-buffered-nor-direct-i-o.md). The I/O manager does not provide any system buffers or MDLs. The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to [**DeviceIoControl**](/windows/desktop/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
+Specifies [neither buffered nor direct I/O](using-neither-buffered-nor-direct-i-o.md). The I/O manager does not provide any system buffers or MDLs. The IRP supplies the user-mode virtual addresses of the input and output buffers that were specified to [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol) or **IoBuildDeviceIoControlRequest**, without validating or mapping them.
 
 For information about how the system specifies data buffers for METHOD\_NEITHER I/O control codes, see [Buffer Descriptions for I/O Control Codes](buffer-descriptions-for-i-o-control-codes.md).
 
