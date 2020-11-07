@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-The IPrintCoreUI2 COM Interface files. Six of these methods are supported in the [IPrintCorePS2 COM Interface](iprintcoreps2-com-interface.md). This section describes the PPD-specific behavior of these methods.
+The [IPrintCoreUI2 COM Interface](iprintcoreui2-com-interface.md) supports nine methods that a user interface plug-in can call to access information in *PPD* files. Six of these methods are supported in the [IPrintCorePS2 COM Interface](iprintcoreps2-com-interface.md). This section describes the PPD-specific behavior of these methods.
 
 ### IPrintCoreUI2 Interface PPD Methods
 

@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-A *function driver* is the main driver for a device (see the Possible Driver Layers). The PnP manager loads at most one function driver for a device. A function driver can service one or more devices.
+A *function driver* is the main driver for a device (see the [Possible Driver Layers](types-of-wdm-drivers.md#possible-driver-layers) figure). A function driver is typically written by the device vendor and is required (unless the device is being used in *raw mode*). The PnP manager loads at most one function driver for a device. A function driver can service one or more devices.
 
 A function driver provides the operational interface for its device. Typically the function driver handles reads and writes to the device and manages device power policy.
 

@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 
 
-This topic describes how to obtain an **SP_DEVINFO_DATA**) in the device tree.
+This topic describes how to obtain an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure for the parent of a device that has a device node (*devnode*) in the device tree.
 
 **To obtain an SP_DEVINFO_DATA structure for the immediate parent of a device in the device tree**
 

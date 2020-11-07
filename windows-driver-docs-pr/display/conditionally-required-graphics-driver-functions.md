@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_conditionally_required_graphics_driver_functions_gg"></span><span id="DDK_CONDITIONALLY_REQUIRED_GRAPHICS_DRIVER_FUNCTIONS_GG"></span>
 
 
-Besides the functions that are always required, certain other functions may be required, depending on how a driver is implemented. The conditionally-required functions are listed in the following table. If the driver manages its own primary surface (using the **EngCreateDeviceSurface** usually allow GDI to manage most or all of these operations. Displays that support settable palettes must also support the [**DrvSetPalette**](/windows/win32/api/winddi/nf-winddi-drvsetpalette) function.
+Besides the functions that are always required, certain other functions may be required, depending on how a driver is implemented. The conditionally-required functions are listed in the following table. If the driver manages its own primary surface (using the [**EngCreateDeviceSurface**](/windows/win32/api/winddi/nf-winddi-engcreatedevicesurface) function to get a handle to the surface), or its own offscreen bitmaps, the driver must also support several [drawing functions](optional-display-driver-functions.md). Drivers writing to standard format *DIBs* usually allow GDI to manage most or all of these operations. Displays that support settable palettes must also support the [**DrvSetPalette**](/windows/win32/api/winddi/nf-winddi-drvsetpalette) function.
 
 It is more common for a printer driver than a display driver to define or draw fonts. A display driver is not required to handle fonts. If the hardware has a resident font, the driver must supply information to GDI about this font. This information includes font metrics, mappings from Unicode to individual glyph identities, individual glyph attributes, and kerning tables.
 
@@ -130,6 +130,4 @@ It is more common for a printer driver than a display driver to define or draw f
 </tr>
 </tbody>
 </table>
-
- 
 
