@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-Each time you specify a printer command file for a Unidrv minidriver, you can use one of the following two methods:
+Each time you specify a [printer command](printer-commands.md) in a *GPD* file for a Unidrv minidriver, you can use one of the following two methods:
 
 -   Place the command string in the GPD file.
 

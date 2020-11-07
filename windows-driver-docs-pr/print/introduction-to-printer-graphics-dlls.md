@@ -22,7 +22,7 @@ Printer graphics DLLs implement Drv-prefixed graphics DDI functions that are des
 
 -   Deliver a rendered data stream to the spooler.
 
-    Printer graphics DLLs typically produce an output stream in a RAW data type.
+    Printer graphics DLLs typically produce an output stream in a [RAW data type](raw-data-type.md) (including command sequences) that the spooler can send to printer hardware through *print monitors*.
 
 The amount of rendering assistance that a printer graphics DLL must provide is printer type-specific, depending on the hardware's drawing capabilities, and includes the following scenarios:
 

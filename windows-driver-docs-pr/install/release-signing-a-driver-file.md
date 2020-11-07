@@ -11,7 +11,8 @@ ms.localizationpriority: medium
 
 # Release-Signing a Driver File
 
-Use the following **SignTool** for 64-bit versions of Windows Vista and later versions of Windows must have an embedded SPC signature.
+
+Use the following [**SignTool**](../devtest/signtool.md) command to embed a [Software Publisher Certificate (SPC)](software-publisher-certificate.md) signature in a driver file. To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md), *boot-start driver* for 64-bit versions of Windows Vista and later versions of Windows must have an embedded SPC signature.
 
 ```cpp
 SignTool sign /v /ac CrossCertificateFile /s SPCCertificateStore /n SPCCertificateName /t http://timestamp.digicert.com DriverFileName.sys

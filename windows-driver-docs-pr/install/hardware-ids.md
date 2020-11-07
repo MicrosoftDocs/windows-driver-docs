@@ -9,7 +9,7 @@ ms.localizationpriority: High
 # Hardware ID
 
 
-A hardware ID is a vendor-defined identification string that Windows uses to match a device to an INF file. In most cases, a device has associated with it a list of hardware IDs. (However, there are exceptions − see Identifiers for 1394 Devices reports a list of hardware IDs for a device, the hardware IDs should be listed in order of decreasing suitability.
+A hardware ID is a vendor-defined identification string that Windows uses to match a device to an INF file. In most cases, a device has associated with it a list of hardware IDs. (However, there are exceptions − see Identifiers for 1394 Devices). When an *enumerator* reports a list of hardware IDs for a device, the hardware IDs should be listed in order of decreasing suitability.
 
 
 

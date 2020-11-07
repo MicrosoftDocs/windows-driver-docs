@@ -72,3 +72,11 @@ During device installation, Windows cannot track additional processes and is una
 
 In most cases, *co-installers* should not start other processes or services. However, installers can start other processes safely by calling [CreateProcess](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa) from a function or dialog that is displayed through a [finish-install action](finish-install-actions--windows-vista-and-later-.md). The installer must not let the user continue in the dialog or procedure until the created process has exited.
 
+ 
+
+ 
+
+
+
+
+

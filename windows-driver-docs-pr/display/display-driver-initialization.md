@@ -27,6 +27,8 @@ The basic display driver initialization procedure, in which the desktop is creat
 
    Because a driver must support more than one PDEV, it should not use global variables.
 
+   GDI automatically enables DirectDraw after calling [**DrvEnableSurface**](/windows/win32/api/winddi/nf-winddi-drvenablesurface). After DirectDraw is initialized, the driver can use DirectDraw's *heap manager* to perform *off-screen memory* management. See [DirectDraw and GDI](directdraw-and-gdi.md) for details.
+
    The following figure illustrates logical versus physical devices.
 
    ![diagram illustrating logical versus physical devices](images/202-03.png)
