@@ -69,5 +69,5 @@ The following is a list of registry keys associated with the PS/2 port driver.
 
 For additional information, please see:
 
-* https://docs.microsoft.com/windows/desktop/sysinfo/about-the-registry
-* https://docs.microsoft.com/windows/desktop/sysinfo/registry-reference
+* [About the Registry](/windows/desktop/sysinfo/about-the-registry)
+* [Registry Reference](/windows/desktop/sysinfo/registry-reference)
