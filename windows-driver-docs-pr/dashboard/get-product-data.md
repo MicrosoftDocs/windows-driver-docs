@@ -117,7 +117,7 @@ This resource represents a submission of a product.
       "method": "GET"
     }
   ],
-  "commitStatus": "commitPending",
+  "commitStatus": "CommitPending",
   "isExtensionInf": true,
   "isUniversal": true,
   "isDeclarativeInf": true,
@@ -126,20 +126,22 @@ This resource represents a submission of a product.
 }
 ```
 
-This resource has the following values
+This resource has the following values:
 
 | Value | Type | Description |
 |:--|:--|:--|
 | Id | long | The ID of the submission |
 | Productid | long | The private product ID to which this submission is associated |
+| workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
 | Links | array of objects | Refer to [link object](#link-object)  for more details |
-| Name | string | The name of the submission |
-| Type | string | Indicates whether the submission is an initial or derived submission. Possible values are <ul><li>initial</li><li>derived</li></ul> |
+| commitStatus | See [Manage Product Submissions](manage-product-submissions.md) for more details. |
 | isExtensionInf | Boolean | Indicates whether the submission is an extension driver |
 | isUniversal | Boolean | Indicates whether the submission passes the Universal API test. A driver is DCHU compliant if it is Decalarative and Universal |
 | isDeclarativeInf | Boolean | Indicates whether the submission passes the Declarative INVerif test. A driver is DCHU compliant if it is Decalarative and Universal |
-| workflowstatus | object | This is available only when retrieving details of a specific submission. This object depicts the status of the workflow for this submission. Refer [workflow status object](#workflow-status-object)  for more details  |
+| Name | string | The name of the submission |
+| Type | string | Indicates whether the submission is an initial or derived submission. Possible values are <ul><li>initial</li><li>derived</li></ul> |
 | downloads | object | This is available only when retrieving details of a specific submission only. This object depicts the downloads available for the submission. Refer [download object](#download-object)  for more details. |
+
 
 ### Workflow Status object
 
