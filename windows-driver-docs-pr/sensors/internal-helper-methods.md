@@ -8,17 +8,15 @@ ms.localizationpriority: medium
 
 # Driver update methods
 
-
 A sensor driver supports internal methods that handle updates to the current report interval, change sensitivity, and so on. The pseudocode demonstrates this using the following methods:
 
--   DriverUpdateCRI(sensorID)
--   DriverUpdateCS(sensorID)
--   DriverUpdateLDA(sensorID)
--   DriverUpdateSensorState(sensorID, state, events)
--   DriverUpdateDatafields(sensorID)
+- DriverUpdateCRI(sensorID)
+- DriverUpdateCS(sensorID)
+- DriverUpdateLDA(sensorID)
+- DriverUpdateSensorState(sensorID, state, events)
+- DriverUpdateDatafields(sensorID)
 
 ## Sensor reporting-field updates
-
 
 The **DriverUpdateCRI**, **DriverUpdateCS**, and **DriverUpdateLDA** methods demonstrate how a driver updates the current report interval, change sensitivity, and location data accuracy fields.
 
@@ -86,7 +84,6 @@ DriverUpdateLDA(sensorID)
 
 ## Sensor state updates
 
-
 The **DriverUpdateSensorState** method demonstrates how a driver updates the sensor event reporting and power states.
 
 ```cpp
@@ -137,7 +134,6 @@ DriverUpdateSensorState(sensorID)
 
 ## Data field updates
 
-
 The **DriverUpdateDatafields** method demonstrates how a driver updates its data fields.
 
 ```cpp
@@ -182,7 +178,7 @@ DriverUpdateDatafields(sensorID)
 ```
 
 ## Related topics
-[Sensor Driver Development Basics](sensor-driver-development-basics.md)
 
+[Introduction to the Sensor and Location Platform in Windows](./index.md)
 
-
+[Sensor Driver Logic](./driver-logic--pseudo-code-.md)

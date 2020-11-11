@@ -7,13 +7,11 @@ ms.localizationpriority: medium
 
 # First steps for USB client driver development
 
-
-This section introduces you to USB driver development. The section applies to you if you are new to driver development; want to implement a driver for a USB device, for which Microsoft does not provide an in-box driver. Such a driver is termed as a *USB client driver* in this documentation set. The topics in this section describe high-level USB concepts and provide step-by-step instructions about performing common tasks of a USB client driver. For detailed information about those concepts, see USB specifications at [USB Documents](https://go.microsoft.com/fwlink/p/?linkid=617552).
+This section introduces you to USB driver development. The section applies to you if you are new to driver development; want to implement a driver for a USB device, for which Microsoft does not provide an in-box driver. Such a driver is termed as a *USB client driver* in this documentation set. The topics in this section describe high-level USB concepts and provide step-by-step instructions about performing common tasks of a USB client driver. For detailed information about those concepts see USB specifications at [USB Documents](https://usb.org/documents).
 
 As a driver developer, you must have coding experience in the C programming language, and understand the concepts of function pointers, callback functions, and event handlers. If you are going to write a driver based on the User-Mode Driver Framework, make sure that you familiarize yourself with C++ and COM.
 
 ## Learning path for USB client driver developers
-
 
 <table>
 <colgroup>
@@ -28,20 +26,20 @@ As a driver developer, you must have coding experience in the C programming lang
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Step 1</strong>—Read the <a href="https://go.microsoft.com/fwlink/p/?linkid=617552" data-raw-source="[Official USB specification version 2.0 and 3.0](https://go.microsoft.com/fwlink/p/?linkid=617552)">Official USB specification version 2.0 and 3.0</a>.</p></td>
+<td><p><strong>Step 1</strong>—Read the [USB Specification 3.2](https://usb.org/document-library/usb-32-specification-released-september-22-2017-and-ecns).</p></td>
 <td>Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It's important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects.</td>
 </tr>
 <tr class="even">
 <td><p><strong>Step 2</strong>—Obtain a test USB device.</p></td>
 <td><ul>
 <li>Have a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the device driver and the related design decisions.</li>
-<li>Have the OSR USB FX2 learning kit if you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set. You can get the learning kit from <a href="https://go.microsoft.com/fwlink/p/?linkid=617553" data-raw-source="[OSR Online](https://go.microsoft.com/fwlink/p/?linkid=617553)">OSR Online</a>.</li>
-<li>Have a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from <a href="https://go.microsoft.com/fwlink/p/?linkid=617554" data-raw-source="[JJG Technologies](https://go.microsoft.com/fwlink/p/?linkid=617554)">JJG Technologies</a>. The device does not have installed firmware installed. To install firmware, <a href="/windows-hardware/drivers/usbcon/" data-raw-source="[download the MUTT software package](./index.md)">download the MUTT software package</a>, and run MUTTUtil.exe. For more information, see the documentation included with the package.</li>
+<li>Have the [OSR USB FX2 learning kit](https://www.amazon.com/OSR-USB-FX2-Learning-Kit/dp/B07FNSYCLR) if you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set.</li>
+<li>Have a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). The device does not have installed firmware installed. To install firmware, download the [MUTT software package](./microsoft-usb-test-tool--mutt--devices.md). For more information, see the documentation included with the package.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Step 3</strong>—Study your <a href="usb-device-layout.md" data-raw-source="[USB device layout](usb-device-layout.md)">USB device layout</a> and the related <a href="usb-descriptors.md" data-raw-source="[USB descriptors](usb-descriptors.md)">USB descriptors</a>.</p></td>
-<td>Describe your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using <a href="/windows-hardware/drivers/debugger/usbview" data-raw-source="[USBView](../debugger/usbview.md)">USBView</a>, you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</td>
+<td>Describe your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using [USBView](../debugger/usbview.md), you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</td>
 </tr>
 <tr class="even">
 <td><p><strong>Step 4</strong>—<a href="winusb-considerations.md" data-raw-source="[Choose a driver model for developing a USB client driver](winusb-considerations.md)">Choose a driver model for developing a USB client driver</a>.</p></td>
@@ -66,9 +64,9 @@ As a driver developer, you must have coding experience in the C programming lang
 <tr class="even">
 <td><p><strong>Step 6</strong>—Prepare your development and debugging environment.</p>
 <ul>
-<li><a href="https://go.microsoft.com/fwlink/p/?linkid=617580" data-raw-source="[Install the latest Windows Driver Kit (WDK)](https://go.microsoft.com/fwlink/p/?linkid=617580)">Install the latest Windows Driver Kit (WDK)</a>.</li>
-<li><a href="https://go.microsoft.com/fwlink/p/?linkid=617580" data-raw-source="[Install Microsoft Visual Studio 2012](https://go.microsoft.com/fwlink/p/?linkid=617580)">Install Microsoft Visual Studio 2012</a>.</li>
-<li><a href="/windows-hardware/drivers/debugger/getting-set-up-for-debugging" data-raw-source="[Get Set Up for Debugging](../debugger/getting-set-up-for-debugging.md)">Get Set Up for Debugging</a>.</li>
+<li>Install the latest [Windows Driver Kit (WDK)](../download-the-wdk.md)</a>.</li>
+<li>Install Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/)</a>.</li>
+<li>[Get Set Up for Debugging](../debugger/getting-set-up-for-debugging.md)</a>.</li>
 <li>Make sure that you have the <a href="headers-and-libraries-for-a-usb-client-driver.md" data-raw-source="[Headers and libraries required by a USB client driver](headers-and-libraries-for-a-usb-client-driver.md)">Headers and libraries required by a USB client driver</a>.</li>
 </ul></td>
 <td><ul>
@@ -98,24 +96,20 @@ As a driver developer, you must have coding experience in the C programming lang
 </tbody>
 </table>
 
- 
-
 ## Community Resources for USB
 
-
-<a href="" id="microsoft-windows-usb-core-team-blog"></a>[Microsoft Windows USB Core Team Blog](https://go.microsoft.com/fwlink/p/?linkid=617581)  
+[Microsoft Windows USB Core Team Blog](https://techcommunity.microsoft.com/t5/microsoft-usb-blog/bg-p/MicrosoftUSBBlog)
 Check out posts written by the Microsoft USB Team. The blog focuses on the Windows USB driver stack that works with various USB Host controllers and USB hubs found in Windows PC. A useful resource for USB client driver developers and USB hardware designers understand the driver stack implementation, resolve common issues, and explain how to use tools for gathering traces and log files.
 
-<a href="" id="osr-online-lists---ntdev"></a>[OSR Online Lists - ntdev](https://go.microsoft.com/fwlink/p/?linkid=617582)  
-Discussion list managed by [OSR Online](https://go.microsoft.com/fwlink/p/?linkid=617590) for kernel-mode driver developers.
+[OSR Online Lists](https://www.osronline.com/)  
+Discussion list managed by [OSR Online](https://www.osronline.com/) for kernel-mode driver developers.
 
-<a href="" id="usb-technologies"></a>[USB Technologies](../index.yml)  
-Miscellaneous resources based on frequently asked questions from developers who are new to developing USB devices and drivers that work with Windows operating systems.
+[Windows Dev-Center for Hardware Development](../dashboard/index.yml)  
 
-<a href="" id="windows-dev-center-for-hardware-development"></a>[Windows Dev-Center for Hardware Development](https://go.microsoft.com/fwlink/p/?linkid=617584)  
-[Download the latest tools for driver development](https://go.microsoft.com/fwlink/p/?linkid=617585), ensure that your product is reliable and compatible with Windows through the [Windows Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)), learn [Windows driver samples](https://go.microsoft.com/fwlink/p/?LinkId=616507).
+[Windows Driver Kit](../download-the-wdk.md), ensure that your product is reliable and compatible with Windows through the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), learn [Windows driver samples](../samples/index.md).
 
 ## Related topics
+
 [Universal Serial Bus (USB) Drivers](../index.yml)  
-[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](https://go.microsoft.com/fwlink/p/?linkid=617587)  
+[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](./selective-suspend-in-umdf-drivers.md)  
 [USB Driver Development Guide](usb-driver-development-guide.md)

@@ -154,8 +154,6 @@ When the client driver reports the following properties, the client driver must 
 
 [PROPVARIANT structure](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
-[Sensor properties]()
-
 [**SENSOR\_STATE**](/windows-hardware/drivers/ddi/sensorsdef/ne-sensorsdef-sensor_state)
 
 [Sensor type GUIDs](./about-sensor-constants.md)

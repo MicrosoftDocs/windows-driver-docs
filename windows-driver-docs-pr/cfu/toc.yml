@@ -1,0 +1,15 @@
+- name: "Component Firmware Update (CFU)"
+# Auto-expanded node
+  items: 
+  - name: "Component Firmware Update (CFU)"
+    href: index.md
+  - name: "CFU firmware implementation guide"
+    href: cfu-firmware-implementation-guide.md
+  - name: "CFU INF configuration"
+    href: cfu-inf-configuration.md
+  - name: "CFU protocol specification"
+    href: cfu-specification.md
+  - name: "CFU standalone tool"
+    href: cfu-standalone-tool.md
+  - name: "CFU virtual HID device firmware update simulation"
+    href: cfu-firmware-update-simulation.md

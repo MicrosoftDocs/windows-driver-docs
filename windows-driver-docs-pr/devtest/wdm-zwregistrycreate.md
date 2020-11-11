@@ -2,7 +2,7 @@
 title: ZwRegistryCreate rule (wdm)
 ms.assetid: 7855d9f0-c8f2-42a3-941b-623038c03840
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: ZwRegistryCreate rule (wdm)"
 keywords: ["ZwRegistryCreate rule (wdm)"]
 topic_type:
 - apiref

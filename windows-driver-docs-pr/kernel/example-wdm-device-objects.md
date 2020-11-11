@@ -25,7 +25,7 @@ An optional filter driver added to the configuration would create a filter devic
 
 As shown previously in the [Keyboard and Mouse Driver Layers](sample-device-and-driver-configuration.md#keyboard-and-mouse-driver-layers) figure, each port driver is a bus (lowest-level) driver, so every port driver of a device that generates interrupts must set up interrupt object(s) and register an ISR.
 
-A dual-device port driver, like the i8042 driver for the keyboard and auxiliary device controller shown in the Keyboard and Mouse Hardware Configurations if each device uses a different interrupt vector. When writing such a driver, you can either implement separate ISRs for each device or implement a single ISR for both devices.
+A dual-device port driver, like the i8042 driver for the keyboard and auxiliary device controller shown in the [Keyboard and Mouse Hardware Configurations](sample-device-and-driver-configuration.md#keyboard-and-mouse-hardware-configurations) figure, must set up device-specific *interrupt objects* if each device uses a different interrupt vector. When writing such a driver, you can either implement separate ISRs for each device or implement a single ISR for both devices.
 
  
 

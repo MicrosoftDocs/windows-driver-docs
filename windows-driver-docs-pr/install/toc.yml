@@ -178,6 +178,8 @@
       href: introduction-to-test-signing.md
     - name: "How to Test-Sign a Driver Package"
       href: how-to-test-sign-a-driver-package.md
+    - name: "How to Install a Test-signed Driver Required for Windows Setup and Boot"
+      href: how-to-install-test-signed-driver-for-setup-and-boot.md
     - name: "Creating Test Certificates"
       href: creating-test-certificates.md
     - name: "Installing Test Certificates"

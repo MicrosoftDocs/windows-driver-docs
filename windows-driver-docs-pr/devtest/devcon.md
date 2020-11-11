@@ -22,6 +22,10 @@ ms.localizationpriority: high
 
 # Windows Device Console (Devcon.exe)
 
+> [!NOTE]
+> Please use the PnPUtil tool instead of DevCon.
+> 
+
 
 DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows. You can use DevCon to enable, disable, install, configure, and remove devices.
 

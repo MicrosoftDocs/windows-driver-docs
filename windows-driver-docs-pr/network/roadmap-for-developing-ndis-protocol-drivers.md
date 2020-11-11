@@ -36,7 +36,7 @@ To create a Network Driver Interface Specification (NDIS) protocol driver packag
 
 - Step 5: Read the protocol driver introduction topics.
   [Introduction to NDIS Protocol Drivers](introduction-to-ndis-protocol-drivers.md)
-  [Protocol Driver Design Concepts](protocol-driver-design-concepts.md)
+  [Protocol Driver Design Concepts](pageable-and-discardable-code-in-a-protocol-driver.md)
 - Step 6: Read the [writing protocol drivers section](initializing-a-protocol-driver.md).
 
   This section provides an overview of the primary protocol driver interfaces. These interfaces included functions that protocol drivers provide (*ProtocolXxx* functions) and NDIS calls to initiate operations. NDIS provides **Ndis*Xxx*** functions that protocol drivers call to perform NDIS operations.

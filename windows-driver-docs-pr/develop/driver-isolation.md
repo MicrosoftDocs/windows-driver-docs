@@ -238,10 +238,10 @@ For example, for a company name of Contoso, a kernel-mode driver could write a c
 
 ### DriverData
 
-The `DriverData` directory is available in Windows 10, version 1803 and later. This directory is accessible by both user-mode and kernel-mode components through different mechanisms.
+The `DriverData` directory is available in Windows 10, version 1803 and later, and is accessible to administrators and UMDF drivers.
 
-kernel-mode drivers should access the `DriverData` directory by using a system-supplied symbolic link called `\DriverData`.
-user-mode programs should access the `DriverData` directory by using the environment variable `%DriverData%`.
+Kernel-mode drivers access the `DriverData` directory by using a system-supplied symbolic link called `\DriverData`.
+User-mode programs access the `DriverData` directory by using the environment variable `%DriverData%`.
 
 ### ProgramData
 

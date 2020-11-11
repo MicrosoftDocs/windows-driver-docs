@@ -2,7 +2,7 @@
 title: ForwardedAtBadIrql rule (wdm)
 ms.assetid: d2d91fb9-330b-420b-8409-509cfb47fe07
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: ForwardedAtBadIrql rule (wdm)"
 keywords: ["ForwardedAtBadIrql rule (wdm)"]
 topic_type:
 - apiref

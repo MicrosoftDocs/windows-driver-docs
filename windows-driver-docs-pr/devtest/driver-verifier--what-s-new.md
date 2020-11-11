@@ -142,9 +142,6 @@ Driver Verifier features also include:
   * *Flags* set with 0x8 causes the display to include a log of the most recent IRQL changes made by the drivers being verified
   * If *Flags* equals exactly 0x4 or 0x8, the Quantity parameter specifies the number of records or log entries to include in the display
   * The **?** parameter shows a brief help text
-* **New !gdikdx.verifier extensions**
-
-    A new **!gdikdx.verifier** extension, **!gdikdx.verifier -s**, lists statistics about the GDI callback functions called during low resources simulation for graphics drivers.
 
 * Online Help for Driver Verifier Manager Online Help for Driver Verifier Manager can be displayed in either of the following ways:
   * Select and hold (or right-click) an item in the Driver Verifier Manager window and choose **What's This?** from the pop-up menu.

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 # Storport driver miniport routines
 
-A miniport driver that works with the Storport driver must contain implementations of the routine descriptions listed in this section, and it must expose them through a [HW_INITIALIZATION_DATA](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data) structure during the miniport driver's initialization phase.
+A miniport driver that works with the Storport driver must contain implementations of the routine descriptions listed in this section, and it must expose them through a [HW_INITIALIZATION_DATA](/windows-hardware/drivers/ddi/storport/ns-storport-_hw_initialization_data-r1) structure during the miniport driver's initialization phase.
 
 The Storport miniport driver routines are in most respects equivalent to their SCSI port counterparts (see [SCSI Miniport Driver Routines](scsi-miniport-driver-routines.md) for more information). However, there are important differences between the design of the SCSI port driver and that of the Storport driver, and these routines must accommodate those differences.
 

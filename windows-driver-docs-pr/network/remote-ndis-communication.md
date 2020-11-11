@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 This section includes the following topics:
 
-[Remote NDIS Control Messages](remote-ndis-control-messages.md)
+[Remote NDIS Control Messages](remote-ndis-initialize-msg.md)
 
 [Remote NDIS Data Message](remote-ndis-data-message.md)
 

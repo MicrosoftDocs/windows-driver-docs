@@ -27,10 +27,5 @@ Design considerations include the following:
 
     ![account overview](images/mb-fig2-accountoverview.png)
 
-## <span id="related_topics"></span>Related topics
 
-
-[Mobile broadband app scenarios]()
-
- 
 

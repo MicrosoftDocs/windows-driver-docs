@@ -143,8 +143,6 @@ Time stamp:         0000000000000857
     fffff88005f086db nsiproxy!NsippDispatchDeviceControl+0xa3
 ```
 
-When using Driver Verifier to test graphics drivers, use the [**!gdikdx.verifier**](-gdikdx-verifier.md) extension instead of **!verifier**.
-
 The values of 4, 8, and 0x20, 0x40, 0x80, and 0x100 are special values for *Flags*. If these values are used, the special arguments listed in the **Parameters** section can be used, and the display will include only the information associated with that flag value.
 
 If any other value for *Flags* is used, even if one or more of these bits are set, only the *Flags* and *Image* arguments are permitted. In this situation, in addition to all the other information displayed, **!verifier** will display the Driver Verifier options that are active, along with statistics on pool allocations, IRQL raises, spin locks, and trims.

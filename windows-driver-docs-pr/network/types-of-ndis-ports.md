@@ -41,8 +41,6 @@ The characteristics of an NDIS port vary from one port application to another. F
 ## Related topics
 
 
-[NDIS Ports](ndis-ports.md)
-
 [Overview of NDIS Ports](overview-of-ndis-ports.md)
 
  

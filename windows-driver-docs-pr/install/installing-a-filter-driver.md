@@ -59,7 +59,7 @@ ServiceBinary  = %12%\cdaudio.sys
 
 ### <a href="" id="ddk-installing-a-class-filter-driver-dg"></a>Installing a Class Filter Driver
 
-To install a class-wide upper- or lower-filter for a device setup class that installs the necessary services. The application can then register the service as being an upper- or lower-filter for the desired device setup classes. To copy the service binaries, the application can use **SetupInstallFilesFromInfSection**. To install the services, the application can use **SetupInstallServicesFromInfSection**. To register the services as upper- and/or lower-filters for particular device setup classes, the application calls **SetupInstallFromInfSection** for each device setup class of interest, using the registry key handle they retrieved from [**SetupDiOpenClassRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkey) for the *RelativeKeyRoot* parameter. For example, consider the following INF sections:
+To install a class-wide upper- or lower-filter for a [device setup class](./overview-of-device-setup-classes.md), you can supply a *device installation application* that installs the necessary services. The application can then register the service as being an upper- or lower-filter for the desired device setup classes. To copy the service binaries, the application can use **SetupInstallFilesFromInfSection**. To install the services, the application can use **SetupInstallServicesFromInfSection**. To register the services as upper- and/or lower-filters for particular device setup classes, the application calls **SetupInstallFromInfSection** for each device setup class of interest, using the registry key handle they retrieved from [**SetupDiOpenClassRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopenclassregkey) for the *RelativeKeyRoot* parameter. For example, consider the following INF sections:
 
 ```cpp
 :
@@ -99,6 +99,4 @@ The device installation application would:
 3.  Call **SetupInstallFromInfSection** for the \[upperfilter_inst\] section, once for each class key it wants to register the *upperfilt* service for.
 
 Each call would specify **SPINST_REGISTRY** for the *Flags* argument, to indicate that only registry modifications need to be performed.
-
- 
 

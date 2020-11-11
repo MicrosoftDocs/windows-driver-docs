@@ -13,8 +13,7 @@ ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---
 
-# DXVA\_DeinterlaceBobDeviceClass::DeinterlaceBltEx method
-
+# DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx method
 
 The sample **DeinterlaceBltEx** function performs deinterlace or frame-rate conversion, combines the deinterlaced or frame-rate converted video with supplied video substreams, and writes the combined output to a destination surface.
 
@@ -44,7 +43,7 @@ Supplies the location of the output frame within the sequence of input frames. I
 If a frame-rate conversion is requested, the *rtTargetFrame* time might be different from any of the **rtStart** times or midpoint times of the samples.
 
 *lprcTargetRect* \[in\]
-Supplies a pointer to a [**RECT**](/windows/win32/api/windef/ns-windef-tagrect) structure that describes the location within the destination surface to which **DeinterlaceBltEx** must write. The driver uses *lprcTargetRect* to determine which pixels to write to. Note that the output image is restricted to the pixels within the rectangle at *lprcTargetRect*. That is, every pixel within the rectangle at *lprcTargetRect* must be written to, and pixels outside the rectangle at *lprcTargetRect* must not be modified.
+Supplies a pointer to a [**RECT**](/windows/win32/api/windef/ns-windef-rect) structure that describes the location within the destination surface to which **DeinterlaceBltEx** must write. The driver uses *lprcTargetRect* to determine which pixels to write to. Note that the output image is restricted to the pixels within the rectangle at *lprcTargetRect*. That is, every pixel within the rectangle at *lprcTargetRect* must be written to, and pixels outside the rectangle at *lprcTargetRect* must not be modified.
 
 *BackgroundColor* \[in\]
 Supplies a [**DXVA\_AYUVsample2**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_ayuvsample2) structure that identifies the color and opacity level of the background upon which all video stream and substreams are composed. For Microsoft Windows Server 2003 SP1 and Windows XP SP2, the opacity level is not used and should be ignored by the driver.
@@ -168,4 +167,3 @@ Requirements
 [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks)
 
 [**DD\_RENDERMOCOMPDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata)
-
