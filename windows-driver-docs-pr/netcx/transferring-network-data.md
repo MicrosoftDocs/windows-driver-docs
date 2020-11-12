@@ -21,3 +21,4 @@ The following topics explain in detail how to transfer network data in your NetA
 - [Transmit and receive queues](transmit-and-receive-queues.md)
 - [Introduction to net rings](introduction-to-net-rings.md)
 - [Network data buffer management](network-data-buffer-management.md)
+- [Introduction to hardware offloads](introduction-to-hardware-offloads.md)
