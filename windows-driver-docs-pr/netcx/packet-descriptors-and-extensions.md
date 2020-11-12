@@ -79,7 +79,7 @@ The extensibility feature outlined previously provides benefits to help client d
 
 The first step in working with packet extensions in your NIC client driver is to declare your supported hardware offloads. When you advertise support for offloads such as checksum and LSO, NetAdapterCx automatically registers the associated packet extensions on your behalf.
 
-For a code example of advertising hardware offloads for checksum and LSO, see [NetAdapterCx hardware offloads](netadaptercx-hardware-offloads.md).
+For a code example of advertising hardware offloads, see [Introduction to  hardware offloads](introduction-to-hardware-offloads.md).
 
 ### Querying packet extension offsets for datapath queues
 
