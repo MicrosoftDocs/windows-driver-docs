@@ -19,7 +19,7 @@ Beginning with Windows Vista, [**PoRequestPowerIrp**](/windows-hardware/drivers/
 
 The system limits the number of active power IRPs as follows:
 
--   No more than one system power IRP (**IRP\_MN\_SET\_POWER**) at any given time.
+-   No more than one system power IRP ([**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md), [**IRP\_MN\_QUERY\_POWER**](./irp-mn-query-power.md)) can be active for each physical device object (PDO) at any given time.
 
 -   No more than one device set-power IRP (**IRP\_MN\_SET\_POWER)** can be active for each PDO at any given time.
 
@@ -28,6 +28,4 @@ The system limits the number of active power IRPs as follows:
 To ensure that two inrush devices do not attempt to power up simultaneously, the power manager keeps track of active inrush power IRPs across the whole system and allows only one to be active at a time. An additional inrush IRP cannot start until the active inrush IRP has completed.
 
 Because of these restrictions on inrush IRPs, a device power IRP might block while an inrush IRP for another device completes. Driver writers should be aware of this behavior while debugging.
-
- 
 

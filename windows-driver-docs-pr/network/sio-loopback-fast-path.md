@@ -140,7 +140,7 @@ Requirements
 ## See also
 
 
-[**SIO\_LOOPBACK\_FAST\_PATH (SDK)**](/previous-versions/windows/desktop/legacy/jj841212(v=vs.85))
+[**SIO\_LOOPBACK\_FAST\_PATH (SDK)**](/windows/win32/winsock/sio-loopback-fast-path)
 
 [Using IRPs with Winsock Kernel Functions](./using-irps-with-winsock-kernel-functions.md)
 

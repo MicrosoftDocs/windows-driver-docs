@@ -13,7 +13,7 @@ NDIS Quality of Service (QoS) parameters specify the policies and settings of tr
 
 -   Priority level and flow control settings. These settings define the IEEE 802.1p priority level and optional flow control algorithms for the transmit, or *egress*, traffic.
 
-    For more information, see [Priority Levels and Flow Control](priority-levels-and-flow-control.md).
+    For more information, see [Priority Levels and Flow Control](ieee-802-1p-priority-levels.md).
 
 -   Traffic selection algorithm (TSA) settings. These settings define how the network adapter selects egress traffic from its transmit queues. For example, the adapter could use the strict priority TSA and select egress packets based only on IEEE 802.1p priority. The adapter could also use the Enhanced Transmission Selection (ETS) TSA that moderates egress traffic among traffic classes based on their bandwidth allocation.
 

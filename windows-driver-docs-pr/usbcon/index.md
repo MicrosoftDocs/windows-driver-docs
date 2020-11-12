@@ -9,7 +9,6 @@ ms.technology: windows-devices
 
 # Universal Serial Bus (USB)
 
-
 Universal Serial Bus (USB) provides an expandable, hot-pluggable Plug and Play serial interface that ensures a standard, low-cost connection for peripheral devices such as keyboards, mice, joysticks, printers, scanners, storage devices, modems, and video conferencing cameras. Migration to USB is recommended for all peripheral devices that use legacy ports such as PS/2, serial, and parallel ports.
 
 The USB-IF is a Special Interest Groups (SIGs) that maintains the [Official USB Specification](https://www.usb.org/documents), test specifications and tools.
@@ -90,8 +89,9 @@ Windows operating systems include native support for USB host controllers, hubs,
 </li>
 </ul>
 <strong>Testing USB devices with Windows</strong>
-<p></p>
-<a href="usb-driver-testing-guide.md" data-raw-source="[Testing USB hardware, drivers, and apps in Windows](usb-driver-testing-guide.md)">Testing USB hardware, drivers, and apps in Windows</a>
+
+[Overview of Microsoft USB Test Tool (MUTT) devices](./microsoft-usb-test-tool--mutt--devices.md)
+
 <p>Get information about the tools that you can use to test your USB hardware or software, capture traces of operations and other system events, and observe how the USB driver stack responds to a request sent by a client driver or an application.</p>
 <p>Read an overview of tests in the Hardware Certification Kit that enable hardware vendors and device manufacturers to prepare their USB devices and host controllers for Windows Hardware Certification submission.</p>
 <p><strong>Other Resources for USB</strong></p>
@@ -223,6 +223,3 @@ Windows operating systems include native support for USB host controllers, hubs,
 </tr>
 </tbody>
 </table>
-
- 
-

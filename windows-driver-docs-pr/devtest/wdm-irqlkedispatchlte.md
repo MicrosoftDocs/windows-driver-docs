@@ -2,7 +2,7 @@
 title: IrqlKeDispatchLte rule (wdm)
 ms.assetid: 425a20ea-c9e3-45f4-a517-6bad9ab0de98
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: IrqlKeDispatchLte rule (wdm)"
 keywords: ["IrqlKeDispatchLte rule (wdm)"]
 topic_type:
 - apiref

@@ -78,7 +78,7 @@ This class includes hard disk controllers, including ATA/ATAPI controllers but n
 **Human Interface Devices (HID)**  
 Class = HIDClass  
 ClassGuid = {745a17a0-74d3-11d0-b6fe-00a0c90f57da}  
-This class includes interactive input devices that are operated by the system-supplied [HID class driver](/previous-versions/jj126193(v=vs.85)). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
+This class includes interactive input devices that are operated by the system-supplied [HID class driver](../hid/hid-architecture.md). This includes USB devices that comply with the [USB HID Standard](../hid/hid-over-usb.md) and non-USB devices that use a HID minidriver. For more information, see [HIDClass Device Setup Class](../hid/minidriver-operations.md). (See also the Keyboard or Mouse classes later in this list.)  
   
 **IEEE 1284.4 Devices**  
 Class = Dot4  
@@ -140,7 +140,7 @@ This class includes memory devices, such as flash memory cards.
 <a href="" id="modem-"></a>**Modem**  
 Class = Modem  
 ClassGuid = {4d36e96d-e325-11ce-bfc1-08002be10318}  
-This class includes modem devices or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](/previous-versions/windows/hardware/modem/ff541218(v=vs.85)).  
+This class includes [modem devices](/previous-versions/windows/hardware/modem/ff542476(v=vs.85)). An INF file for a device of this class specifies the features and configuration of the device and stores this information in the registry. An INF file for a device of this class can also be used to install device drivers for a *controllerless modem* or a *software modem*. These devices split the functionality between the modem device and the device driver. For more information about modem INF files and Microsoft Windows Driver Model (WDM) modem devices, see [Overview of Modem INF Files](/previous-versions/windows/hardware/modem/ff542559(v=vs.85)) and [Adding WDM Modem Support](/previous-versions/windows/hardware/modem/ff541218(v=vs.85)).  
   
 <a href="" id="monitor-"></a>**Monitor**  
 Class = Monitor  
@@ -281,6 +281,5 @@ ClassGuid = {eec5ad98-8080-425f-922a-dabf3de3f69a}
    
   
 
-  
   
   

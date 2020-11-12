@@ -19,7 +19,7 @@ ms.localizationpriority: medium
 
 
 
-Vendor-supplied font installation software is required for cartridge fonts that are not described by font cartridge file. These fonts must be described using [Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg) (.uff files). Creating .uff files is the responsibility of vendor-supplied font installers.
+Vendor-supplied font installation software is required for cartridge fonts that are not described by [font cartridge](font-cartridges.md) entries in a printer's *GPD* file. These fonts must be described using [Unidrv font format files](customized-font-management.md#ddk-unidrv-font-format-files-gg) (.uff files). Creating .uff files is the responsibility of vendor-supplied font installers.
 
 Vendor-supplied font installers should also provide support for downloadable *PCL* soft fonts.
 

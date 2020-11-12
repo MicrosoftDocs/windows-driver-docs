@@ -2,7 +2,7 @@
 title: NoIoQueuePurgeSynchronously rule (kmdf)
 ms.assetid: 9255C644-1141-4D9A-8B84-BF98FB9E262A
 ms.date: 05/21/2018
-description: 
+description: "Learn more about: NoIoQueuePurgeSynchronously rule (kmdf)"
 keywords: ["NoIoQueuePurgeSynchronously rule (kmdf)"]
 topic_type:
 - apiref

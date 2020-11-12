@@ -98,7 +98,7 @@ For the best results, make sure that the alternate mode device or adapter’s re
 <p></p></td>
 <td><p>Your Alternate Mode adapter or device must implement a Billboard device that indicates whether or not an Alternate Mode negotiation was successful.</p>
 <p>If your alternate mode adapter or device implements other USB functionality, updating the contents of your Billboard descriptor will require you to disconnect and reconnect the device, possibly interrupting functionality (such as a file transfer, if your device is a USB mass storage device). To avoid that, the Billboard specification recommends that you use an integrated hub in your device, and have the Billboard device appear as a separate USB device on one of its ports.</p>
-<p>For more information, see <a href="https://go.microsoft.com/fwlink/p/?linkid=620207" data-raw-source="[USB Device Class Definition for Billboard Devices specification](https://go.microsoft.com/fwlink/p/?linkid=620207)">USB Device Class Definition for Billboard Devices specification</a>.</p></td>
+<p>For more information, see <a href="https://www.usb.org/document-library/billboard-device-class-spec-revision-121-and-adopters-agreement" data-raw-source="[USB Device Class Definition for Billboard Devices specification](https://www.usb.org/document-library/billboard-device-class-spec-revision-121-and-adopters-agreement)">USB Device Class Definition for Billboard Devices specification</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><strong>USB dual role</strong>

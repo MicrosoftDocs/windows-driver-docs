@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 
 # Validating Windows Drivers
 
-Use the InfVerif and ApiValidator tools to test your Windows Driver for compliance with the requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
+Use the InfVerif, Driver Verifier Driver Isolation Checks, and ApiValidator tools to test your Windows Driver for compliance with the requirements described in [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md).
 
 ## InfVerif
 
@@ -19,7 +19,51 @@ Use InfVerif with `/w` and `/v` to verify that a Windows Driver:
 * Meets the **declarative (D)** principle of [DCH Design Principles](dch-principles-best-practices.md)
 * Complies with the [driver package isolation](driver-isolation.md) requirement of [Getting Started with Windows Drivers](getting-started-with-windows-drivers.md)
 
-For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md) for 
+For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
+
+## Driver Verifier Driver Isolation Checks
+
+To qualify as a Windows Driver, a driver must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 10 Preview Build 19568, [Driver Verifier](../devtest/driver-verifier.md) (DV) monitors registry reads and writes that are not allowed for isolated driver packages.
+
+You can either view violations as they happen in a kernel debugger, or you can configure DV to halt the system and generates a memory dump with details when a violation occurs. You might start driver development with the first method, then switch to the second as your driver nears completion.
+
+To view violations as they occur, first connect a kernel debugger and then use the following commands. After a reboot has enabled the DV settings, you can monitor violations in kernel debugger output.
+
+To enable driver isolation checks on a single driver:
+
+```command
+verifier /rc 33 36 /driver myDriver.sys
+```
+
+To check more than one driver, separate each driver name with a space:
+
+```command
+verifier /rc 33 36 /driver myDriver1.sys myDriver2.sys
+```
+
+To configure DV to bugcheck when a violation occurs, use the following syntax:
+
+```
+verifier /onecheck /rc 33 36 /driver myDriver1.sys
+```
+
+You'll need to reboot to enable the verification settings. To do this from the command line, specify:
+
+```command
+shutdown /r /t 0
+```
+
+Here are a few examples of error messages:
+
+Example: **ZwCreateKey** provides full absolute path:
+
+`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should not use absolute paths. Detected creation of unisolated registry key \Registry\Machine\SYSTEM`
+
+Example: **ZwCreateKey** provides path relative to a handle that is not from an approved API:
+
+`DRIVER_ISOLATION_VIOLATION: <driver name>: Registry operations should only use key handles returned from WDF or WDM APIs. Detected creation of unisolated registry key \REGISTRY\MACHINE\SYSTEM\SomeKeyThatShouldNotExist`
+
+Consider enabling [Device Fundamentals tests](../devtest/run-devfund-tests-via-the-command-line.md) with DV driver isolation checks to help catch driver isolation violations early.
 
 ## ApiValidator
 
@@ -72,10 +116,10 @@ ApiValidation: NOT all binaries are Universal
 
 ### Running ApiValidator from the Command Prompt
 
-You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to **C:\Program Files (x86)\Windows Kits\10\bin\<arch>** and **C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\<arch>**. 
+You can also run Apivalidator.exe from the command prompt. In your WDK installation, navigate to **C:\Program Files (x86)\Windows Kits\10\bin\<arch>** and **C:\Program Files (x86)\Windows Kits\10\build\universalDDIs\<arch>**.
 
 **Important Notes:**
-* ApiValidator requires the following files: ApiValidator.exe, Aitstatic.exe, Microsoft.Kits.Drivers.ApiValidator.dll, and UniversalDDIs.xml. 
+* ApiValidator requires the following files: ApiValidator.exe, Aitstatic.exe, Microsoft.Kits.Drivers.ApiValidator.dll, and UniversalDDIs.xml.
 * The UniversalDDIs.xml must match the binary architecture being validated, for example for an x64 driver use the x64 UniversalDDI.xml
 * ApiValidator only tests one architecture at a time
 * See Known ApiValidator issues below for additional info

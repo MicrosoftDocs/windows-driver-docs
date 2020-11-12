@@ -43,12 +43,10 @@ By editing boot options, you can:
 
 This section includes:
 
-- [Introduction to Boot Options]()
 - [Overview of Boot Options in Windows](boot-options-in-windows.md).
 - [Boot Options Identifiers](boot-options-identifiers.md)
 - [Editing Boot Options](editing-boot-options.md)
 - [BCD Boot Options Reference](/windows-hardware/drivers/ddi/index)
 - [Using Boot Parameters](using-boot-parameters.md)
-- [Bypassing Boot Options]()
 - [BCD Boot Options Reference](bcd-boot-options-reference.md)
 - [Boot Options in Previous Versions of Windows](boot-options-in-previous-versions-of-windows.md)

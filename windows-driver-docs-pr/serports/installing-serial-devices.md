@@ -24,4 +24,4 @@ There are no other serial-specific requirements for installing serial devices.
 
 For general information about installing devices, see the [Device Installation Design Guide](../install/index.md) section.
 
-For more information about serial devices, see [Serial Devices and Drivers](/previous-versions/ff547451(v=vs.85)).
+For more information about serial devices, see [Serial Devices and Drivers](using-serial-sys-and-serenum-sys.md).

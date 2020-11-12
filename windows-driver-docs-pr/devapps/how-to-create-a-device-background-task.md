@@ -11,11 +11,11 @@ ms.localizationpriority: medium
 
 In Windows 8.1, your UWP app can synchronize data on your peripheral device. If your app is associated with device metadata, that UWP device app can also perform device updates, such as firmware updates. This topic describes how to create a device background task that uses the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) or [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger). Device background agents that use these triggers are subject to policies that ensure user consent and help preserve battery life while devices are being synced and updated. For more info about device background tasks, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
-**Note**  This topic corresponds to the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ). The Custom USB device sample demonstrates a background task that performs device sync with the DeviceUseTrigger. To see an example of a background task that performs a firmware update with the DeviceServicingTrigger, download the [Firmware update USB device sample](/samples/browse/).
+**Note**  This topic corresponds to the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975). The Custom USB device sample demonstrates a background task that performs device sync with the DeviceUseTrigger.
 
 
 
-Although the device background task in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 ) features a DeviceUseTrigger, everything discussed in this topic can also be applied to device background tasks that use DeviceServicingTrigger. The only difference between using the two triggers are the policy checks made by Windows.
+Although the device background task in the [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975) features a DeviceUseTrigger, everything discussed in this topic can also be applied to device background tasks that use DeviceServicingTrigger. The only difference between using the two triggers are the policy checks made by Windows.
 
 ## <span id="The_app_manifest"></span><span id="the_app_manifest"></span><span id="THE_APP_MANIFEST"></span>The app manifest
 
@@ -103,8 +103,6 @@ The foreground app in the [Custom USB device sample](https://go.microsoft.com/fw
 
 
 [Custom USB device sample](https://go.microsoft.com/fwlink/p/?LinkId=301975 )
-
-[Firmware update USB device sample](/samples/browse/)
 
 [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md)
 

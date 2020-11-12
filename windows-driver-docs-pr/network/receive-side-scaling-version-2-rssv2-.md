@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Receive Side Scaling Version 2 (RSSv2)
 
-[Receive Side Scaling]() improves the system performance related to handling of network data on multiprocessor systems. NDIS 6.80 and later support RSS Version 2 (RSSv2), which extends RSS by offering dynamic, per-VPort spreading of queues.
+Receive Side Scaling improves the system performance related to handling of network data on multiprocessor systems. NDIS 6.80 and later support RSS Version 2 (RSSv2), which extends RSS by offering dynamic, per-VPort spreading of queues.
 
 ## Overview
 

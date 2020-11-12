@@ -71,8 +71,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | NF Section Containing AddReg Directive                                     | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF ***DDInstall*** |
-| INF ***DDInstall*.HW** |
+| INF [***DDInstall***](inf-ddinstall-section.md) section                   | The device's *software key* |
+| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's *hardware key* |
 | INF [***DDInstall*.Services**](inf-ddinstall-services-section.md) section | The **Services** key                                                                  |
 
  

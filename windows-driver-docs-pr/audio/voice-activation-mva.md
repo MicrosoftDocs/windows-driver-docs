@@ -131,7 +131,7 @@ At keyword detection time, a PNP notification containing KSNOTIFICATIONID_SoundD
 KSNOTIFICATIONID_SoundDetector is defined in ksmedia.h as shown here.
 
 ```cpp
-// The payload of this notification is a SOUNDDETECTOR_DETECTIONHEADER
+// The payload of this notification is a SOUNDDETECTOR_PATTERNHEADER
 #define STATIC_KSNOTIFICATIONID_SoundDetector\
     0x6389d844, 0xbb32, 0x4c4c, 0xa8, 0x2, 0xf4, 0xb4, 0xb7, 0x7a, 0xfe, 0xad
 DEFINE_GUIDSTRUCT("6389D844-BB32-4C4C-A802-F4B4B77AFEAD", KSNOTIFICATIONID_SoundDetector);
