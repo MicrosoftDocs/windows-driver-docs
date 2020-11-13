@@ -21,6 +21,27 @@ Use InfVerif with `/w` and `/v` to verify that a Windows Driver:
 
 For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
 
+### Supporting Down-Level OS Versions
+
+InfVerif can only apply one ruleset (“/w”, “/k”, etc.) per run.  If you have designed a Windows Driver INF that supports down-level OS versions which do not support newly released isolated INF syntax, you must do the following to validate your INF:
+
+1. Decorate each INF install section with appropriate [OS decorations](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section).  Isolated INF syntax should be decorated with the latest OS version and non-isolated INF syntax added for supporting down-level OS versions should be decorated with the OS versions it supports.
+
+2. Run InfVerif sequentially:
+
+```
+infverif /k <INF file>
+infverif /w NTAMD64.10.0.0.<build number where w is a requirement> <INF file>
+```
+
+If there are no errors, then the INF adheres to the driver package isolation requirement of Windows Drivers.
+
+An example of how to use OS decorations can be seen on [this page](https://docs.microsoft.com/windows-hardware/drivers/install/sample-inf-models-sections-for-one-or-more-target-operating-system).
+
+This step is especially important for isolated INF syntax that is new.  For example, starting in Windows 10 Version 1809, there is new isolated [INF syntax](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive) for registering [ETW event providers](https://docs.microsoft.com/windows-hardware/test/wpt/eventprovider).  
+
+If your Windows Driver INF needs to support an OS version before Windows 10 Version 1809, OS decoration is needed for both install sections: the section that uses the legacy INF syntax of registering ETW event providers and the section that uses the isolated INF syntax to register ETW event providers.
+
 ## Driver Verifier Driver Isolation Checks
 
 To qualify as a Windows Driver, a driver must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 10 Preview Build 19568, [Driver Verifier](../devtest/driver-verifier.md) (DV) monitors registry reads and writes that are not allowed for isolated driver packages.
