@@ -123,6 +123,11 @@ Drivers can still be signed with a 3rd party issued code signing certificate. Ho
 |Windows Server 2008 and later, Windows 7, Windows 8| WHQL or cross-signed drivers| WHQL or drivers cross-signed before July 1 2021|
 |Windows 10| WHQL or attested | WHQL or attested |
 
+If you have challenges signing your driver with WHQL, please report the specifics using one of the following:
+
+* Use the Microsoft Collaborate portal, available through the [Microsoft Partner Center Dashboard](https://partner.microsoft.com/dashboard/collaborate), to create a feedback bug.
+* Go to [Windows hardware engineering support](https://developer.microsoft.com/windows/hardware/support), select the **Contact us** tab, and in the **Developer support topic** dropdown, select **HLK/HCK**. Then select **Submit an incident**.
+
 
 ## Related information
 
