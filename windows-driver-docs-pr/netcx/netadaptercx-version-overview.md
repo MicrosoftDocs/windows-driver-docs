@@ -17,9 +17,9 @@ The current version of NetAdapterCx is **2.0**.
 
 Windows OS support for NetAdapterCx versions are described in the following table.
 
-| Operating system | Supported NetAdapterCx version | Version notes |
-| --- | --- | --- |
-| Windows 10, version 2004 | 2.0 | Initial release |
+| Operating system | KMDF version | Supported NetAdapterCx version | Version notes |
+| --- | --- | --- | --- |
+| Windows 10, version 2004 | 1.31 | 2.0 | Initial release |
 
 > [!IMPORTANT]
 > NetAdapterCx client drivers written in previous versions will not work in the latest version of Windows until they are retargeted to the current version.
