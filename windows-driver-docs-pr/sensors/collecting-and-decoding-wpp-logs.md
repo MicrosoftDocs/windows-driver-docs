@@ -161,5 +161,5 @@ The following are WPP macros with their associated trace levels and trace flags.
 
 The tracefmt tool is used to decode ETL logs. For more information about this tool, see [Tracefmt](../devtest/tracefmt.md).
 
-If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md.
+If you want to do more extensive testing of your sensor driver, see [Test your universal sensor driver](test-your-universal-sensor-driver.md)
 
