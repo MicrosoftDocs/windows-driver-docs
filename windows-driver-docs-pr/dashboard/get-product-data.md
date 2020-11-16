@@ -196,7 +196,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 | Items | array | An array of download types and the URL for each. Please refer below for details |
-| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (in case of new submission, it points to the SAS URI for uploading the package)</li><li>"derivedPackage" – shell for derived submissions</li><li>"signedPackage" – package signed by Microsoft</li><li>"certificationReport" – certification report for the signed product</li></ul>|
+| Type | string | The type of package available for download. Possible values are:<ul><li>"initialPackage" – package uploaded by user (in case of new submission, it points to the SAS URI for uploading the package)</li><li>"derivedPackage" – shell for derived submissions</li><li>"signedPackage" – package signed by Microsoft</li><li>"certificationReport" – certification report for the signed product</li><li>driverMetadata - link points to a file which allows to download of driver metadata. For more details refer [driver package metadata](driver-package-metadata.md).</li><li>ExternalNotes</li><li>Unknown</li></ul>|
 | Messages | array | An array of strings to provide messages about the downloadable files |
 
 ### Link object
@@ -216,7 +216,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 | Href | String | The URL to access the resource via API |
-| Rel | String | Type of the resource. Possible values are:<ul><li>self – Link points to itself</li><li>next_link – Link points to next resource typically used for pagination</li><li>get_submissions – link points to all submissions of a product</li><li>commit_submission – link points to commit of a submission </li><li>update_submission – link points to update of the submission </li><li>update_shippinglabel – link points to update of the shipping label  </li><li>driverMetadata - link points to a file which allows to download of driver metadata. For more details refer [driver package metadata](driver-package-metadata.md).</li></ul>|
+| Rel | String | Type of the resource. Possible values are:<ul><li>self – Link points to itself</li><li>next_link – Link points to next resource typically used for pagination</li><li>get_submissions – link points to all submissions of a product</li><li>commit_submission – link points to commit of a submission </li><li>update_submission – link points to update of the submission </li><li>update_shippinglabel – link points to update of the shipping label  </li></ul>|
 | Method | String | Type of the http method to be used when invoking the URL. Possible values are<ul><li>GET</li><li>POST</li><li>PATCH</li></ul>|
 
 ### Additional Attribute object

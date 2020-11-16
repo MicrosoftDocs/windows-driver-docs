@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/network/netadaptercx-hardware-offloads.md",
+            "redirect_URL":  "/windows-hardware/drivers/netcx/introduction-to-hardware-offloads",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/network/ndis-version-guide.md",
             "redirect_URL":  "/windows-hardware/drivers/network/overview-of-ndis-versions",
             "redirect_document_id":  false
