@@ -27,7 +27,7 @@ As an option, the driver can implement any or all of the following three functio
 - [*EvtSerCx2CustomReceiveTransactionInitialize*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_custom_receive_transaction_initialize)
 - [*EvtSerCx2CustomReceiveTransactionCleanup*](/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_custom_receive_transaction_cleanup)
 
-The **SerCx2CustomReceiveTransactionCreate** method creates a custom-receive object and supplies the calling driver with a [**SERCX2CUSTOMRECEIVETRANSACTION**](/windows-hardware/drivers/serports/sercx2-object-handles#sercx2customreceivetransaction-object-handle) handle to this object. The driver's *EvtSerCx2CustomReceiveTransaction*Xxx** functions all take this handle as their first parameter. The following SerCx2 methods take this handle as their first parameter:
+The **SerCx2CustomReceiveTransactionCreate** method creates a custom-receive object and supplies the calling driver with a [**SERCX2CUSTOMRECEIVETRANSACTION**](./sercx2-object-handles.md#sercx2customreceivetransaction-object-handle) handle to this object. The driver's *EvtSerCx2CustomReceiveTransaction*Xxx** functions all take this handle as their first parameter. The following SerCx2 methods take this handle as their first parameter:
 
 - [**SerCx2CustomReceiveTransactionNewDataNotification**](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactionnewdatanotification)
 - [**SerCx2CustomReceiveTransactionReportProgress**](/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactionreportprogress)

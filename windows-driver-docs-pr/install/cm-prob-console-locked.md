@@ -26,5 +26,5 @@ This Device Manager error message indicates that the device is blocked from enum
 
 ### Recommended Resolution
 
-For more info on Kernel DMA Protection, see https://docs.microsoft.com/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.
+For more info on Kernel DMA Protection, see [Kernel DMA Protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt).
 

@@ -10,9 +10,6 @@ ms.localizationpriority: medium
 # Defining I/O Control Codes
 
 
-
-
-
 When defining new IOCTLs, it is important to remember the following rules:
 
 -   If a new IOCTL will be available to user-mode software components, the IOCTL must be used with [**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md) requests. User-mode components send **IRP\_MJ\_DEVICE\_CONTROL** requests by calling the [**DeviceIoControl**](/windows/win32/api/ioapiset/nf-ioapiset-deviceiocontrol), which is a Win32 function.
@@ -96,9 +93,9 @@ Other system-defined I/O control codes require the caller to have read access ri
         FILE_READ_DATA | FILE_WRITE_DATA)
 ```
 
-**Note**   Before specifying FILE\_ANY\_ACCESS for a new IOCTL code, you must be absolutely certain that allowing unrestricted access to your device does not create a possible path for malicious users to compromise the system.
+> [!NOTE]
+> Before specifying FILE\_ANY\_ACCESS for a new IOCTL code, you must be absolutely certain that allowing unrestricted access to your device does not create a possible path for malicious users to compromise the system.
 
- 
 
 Drivers can use [**IoValidateDeviceIoControlAccess**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iovalidatedeviceiocontrolaccess) to perform stricter access checking than that provided by an IOCTL's *RequiredAccess* bits.
 

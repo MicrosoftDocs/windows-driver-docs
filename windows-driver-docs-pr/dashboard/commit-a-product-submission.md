@@ -56,7 +56,7 @@ The following example demonstrates the JSON response body returned by a successf
 
 ```json
 {
-  "commitStatus": "commitStarted",
+  "commitStatus": "CommitPending",
 }
 ```
 
@@ -64,7 +64,7 @@ The following example demonstrates the JSON response body returned by a successf
 
 | Value | Type | Description |
 |:--|:--|:--|
-| commitStatus | string | The status of the submission. The value returned would be CommitStarted |
+| commitStatus | string | The status of the submission. The value returned would be CommitPending |
 
 After this step, use the method [get submission details](get-a-submission.md)  to get the status of the submission.
 

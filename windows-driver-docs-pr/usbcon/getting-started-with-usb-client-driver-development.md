@@ -34,12 +34,12 @@ As a driver developer, you must have coding experience in the C programming lang
 <td><ul>
 <li>Have a USB device and its hardware specification. The specification describes device capabilities and the supported vendor commands. Use the specification to determine the functionality of the device driver and the related design decisions.</li>
 <li>Have the [OSR USB FX2 learning kit](https://www.amazon.com/OSR-USB-FX2-Learning-Kit/dp/B07FNSYCLR) if you are new to USB driver development. The kit is the most suitable to study USB samples included in this documentation set.</li>
-<li>Have a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). The device does not have installed firmware installed. To install firmware, download the [MUTT software package](/windows-hardware/drivers/usbcon/microsoft-usb-test-tool--mutt--devices). For more information, see the documentation included with the package.</li>
+<li>Have a Microsoft USB Test Tool (MUTT) devices. MUTT hardware can be purchased from [JJG Technologies](http://www.jjgtechnologies.com/Mutt20.htm). The device does not have installed firmware installed. To install firmware, download the [MUTT software package](./microsoft-usb-test-tool--mutt--devices.md). For more information, see the documentation included with the package.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Step 3</strong>—Study your <a href="usb-device-layout.md" data-raw-source="[USB device layout](usb-device-layout.md)">USB device layout</a> and the related <a href="usb-descriptors.md" data-raw-source="[USB descriptors](usb-descriptors.md)">USB descriptors</a>.</p></td>
-<td>Describe your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using [USBView](/windows-hardware/drivers/debugger/usbview), you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</td>
+<td>Describe your device capabilities by reading the configuration descriptor, interface descriptors for each supported alternate settings, and their endpoint descriptors. By using [USBView](../debugger/usbview.md), you can browse all USB controllers and the USB devices connected to them, and also inspect the device configuration.</td>
 </tr>
 <tr class="even">
 <td><p><strong>Step 4</strong>—<a href="winusb-considerations.md" data-raw-source="[Choose a driver model for developing a USB client driver](winusb-considerations.md)">Choose a driver model for developing a USB client driver</a>.</p></td>
@@ -64,9 +64,9 @@ As a driver developer, you must have coding experience in the C programming lang
 <tr class="even">
 <td><p><strong>Step 6</strong>—Prepare your development and debugging environment.</p>
 <ul>
-<li>Install the latest [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk)</a>.</li>
+<li>Install the latest [Windows Driver Kit (WDK)](../download-the-wdk.md)</a>.</li>
 <li>Install Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/)</a>.</li>
-<li>[Get Set Up for Debugging](/windows-hardware/drivers/debugger/getting-set-up-for-debugging)</a>.</li>
+<li>[Get Set Up for Debugging](../debugger/getting-set-up-for-debugging.md)</a>.</li>
 <li>Make sure that you have the <a href="headers-and-libraries-for-a-usb-client-driver.md" data-raw-source="[Headers and libraries required by a USB client driver](headers-and-libraries-for-a-usb-client-driver.md)">Headers and libraries required by a USB client driver</a>.</li>
 </ul></td>
 <td><ul>
@@ -104,12 +104,12 @@ Check out posts written by the Microsoft USB Team. The blog focuses on the Windo
 [OSR Online Lists](https://www.osronline.com/)  
 Discussion list managed by [OSR Online](https://www.osronline.com/) for kernel-mode driver developers.
 
-[Windows Dev-Center for Hardware Development](/windows-hardware/drivers/dashboard/)  
+[Windows Dev-Center for Hardware Development](../dashboard/index.yml)  
 
-[Windows Driver Kit](/windows-hardware/drivers/download-the-wdk), ensure that your product is reliable and compatible with Windows through the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), learn [Windows driver samples](/windows-hardware/drivers/samples/).
+[Windows Driver Kit](../download-the-wdk.md), ensure that your product is reliable and compatible with Windows through the [Windows Hardware Lab Kit](/windows-hardware/test/hlk/), learn [Windows driver samples](../samples/index.md).
 
 ## Related topics
 
-[Universal Serial Bus (USB) Drivers](/windows-hardware/drivers/)  
-[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](/windows-hardware/drivers/usbcon/selective-suspend-in-umdf-drivers)  
-[USB Driver Development Guide](usb-driver-development-guide.md)  
+[Universal Serial Bus (USB) Drivers](../index.yml)  
+[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](./selective-suspend-in-umdf-drivers.md)  
+[USB Driver Development Guide](usb-driver-development-guide.md)

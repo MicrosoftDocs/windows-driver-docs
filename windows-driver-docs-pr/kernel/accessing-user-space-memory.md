@@ -10,9 +10,6 @@ ms.localizationpriority: medium
 # Accessing User-Space Memory
 
 
-
-
-
 A driver cannot directly access memory through user-mode virtual addresses unless it is running in the context of the user-mode thread that caused the driver's current I/O operation and it is using that thread's virtual addresses.
 
 Only highest-level drivers, such as FSDs, can be sure their dispatch routines will be called in the context of such a user-mode thread. A highest-level driver can call [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages) to lock down a user buffer before setting up an IRP for lower drivers.

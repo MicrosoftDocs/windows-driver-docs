@@ -23,7 +23,7 @@ This guide includes the following sections:
 
 [Introduction to Network Drivers](introduction-to-network-drivers.md)
 
-[NDIS version guide](ndis-version-guide.md)
+[NDIS version guide](./overview-of-ndis-versions.md)
 
 [NDIS Core Functionality](roadmap-for-developing-ndis-miniport-drivers.md)
 
@@ -49,10 +49,4 @@ This guide includes the following sections:
 
 [Previous Versions of Network Drivers](network-drivers-prior-to-windows-vista.md)
  
-
- 
-
-
-
-
 

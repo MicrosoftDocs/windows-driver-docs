@@ -4568,13 +4568,6 @@
           href: -nstree.md
         - name: "!rsdt"
           href: -rsdt.md
-      - name: "Graphics Driver Extensions (Gdikdx.dll)"
-# Auto-expanded node
-        items: 
-        - name: "Graphics Driver Extensions (Gdikdx.dll)"
-          href: graphics-driver-extensions--gdikdx-dll-.md
-        - name: "!gdikdx.verifier"
-          href: -gdikdx-verifier.md
       - name: "Kernel Streaming Extensions (Ks.dll)"
 # Auto-expanded node
         items: 

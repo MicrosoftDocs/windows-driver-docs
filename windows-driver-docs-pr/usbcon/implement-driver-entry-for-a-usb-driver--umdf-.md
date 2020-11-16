@@ -31,10 +31,10 @@ Before you begin, make sure that you meet the following requirements:
 - Your host computer has Visual Studio 2019.
 - Your host computer has the latest Windows Driver Kit (WDK) for Windows 10, version 1903.
 
-    The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](/windows-hardware/drivers/download-the-wdk).
+    The kit include headers, libraries, tools, documentation, and the debugging tools required to develop, build, and debug a USB client driver. You can get the latest version of the WDK from [How to Get the WDK](../download-the-wdk.md).
 
-- Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](/windows-hardware/drivers/debugger/debugger-download-tools).
-- If you are using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](/windows-hardware/drivers/debugger/setting-up-user-mode-debugging-in-visual-studio).
+- Your host computer has the latest version of debugging tools for Windows. You can get the latest version from the WDK or you can [Download and Install Debugging Tools for Windows](../debugger/debugger-download-tools.md).
+- If you are using two computers, you must configure the host and target computers for user-mode debugging. For more information, see [Setting Up User-Mode Debugging in Visual Studio](../debugger/setting-up-user-mode-debugging-in-visual-studio.md).
 
 ### Hardware requirements
 
@@ -44,11 +44,11 @@ If you are new to USB driver development, use the [OSR USB FX2 learning kit](htt
 
 ### Recommended reading
 
-- [Concepts for All Driver Developers](/windows-hardware/drivers/gettingstarted/concepts-and-knowledge-for-all-driver-developers)
-- [Device nodes and device stacks](/windows-hardware/drivers/gettingstarted/device-nodes-and-device-stacks)
-- [Getting started with Windows drivers](/windows-hardware/drivers/gettingstarted/index)
-- [User-Mode Driver Framework](/windows-hardware/drivers/debugger/user-mode-driver-framework-debugging)
-- *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](https://go.microsoft.com/fwlink/p/?linkid=617702).
+- [Concepts for All Driver Developers](../gettingstarted/concepts-and-knowledge-for-all-driver-developers.md)
+- [Device nodes and device stacks](../gettingstarted/device-nodes-and-device-stacks.md)
+- [Getting started with Windows drivers](../gettingstarted/index.md)
+- [User-Mode Driver Framework](../debugger/user-mode-driver-framework-debugging.md)
+- *Developing Drivers with Windows Driver Foundation*, written by Penny Orwick and Guy Smith. For more information, see [Developing Drivers with WDF](../wdf/developing-drivers-with-wdf.md).
 
 ## Instructions
 
@@ -132,7 +132,7 @@ All UMDF-based USB client drivers require two Microsoft-provided drivers: the re
 
     `AddService=WinUsb,0x000001f8,WinUsb_ServiceInstall  ; this service is installed because its a filter.`
 
-- WinUSB—The installation package must contain coinstallers for Winusb.sys because for the client driver, WinUSB is the gateway to the kernel-mode USB driver stack. Another component that gets loaded is a user-mode DLL, named WinUsb.dll, in the client driver's host process (Wudfhost.exe). Winusb.dll exposes [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) that simplify the communication process between the client driver and WinUSB.
+- WinUSB—The installation package must contain coinstallers for Winusb.sys because for the client driver, WinUSB is the gateway to the kernel-mode USB driver stack. Another component that gets loaded is a user-mode DLL, named WinUsb.dll, in the client driver's host process (Wudfhost.exe). Winusb.dll exposes [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) that simplify the communication process between the client driver and WinUSB.
 
 ### <a href="" id="build-the-usb-client-driver-code"></a>Step 3: Build the USB client driver code
 
@@ -146,11 +146,11 @@ All UMDF-based USB client drivers require two Microsoft-provided drivers: the re
     - The device interface GUID is defined in Trace.h and is referenced from `MyUSBDriverUMDFCreateDevice` in Device.c. When you create your project with the name "MyUSBDriver\_UMDF\_", Visual Studio 2019 defines the device interface GUID with the name `GUID_DEVINTERFACE_MyUSBDriver_UMDF_` but calls `WdfDeviceCreateDeviceInterface` with the incorrect parameter "GUID_DEVINTERFACE_MyUSBDriverUMDF". Replace the incorrect parameter with the name defined in Trace.h to ensure that the driver builds properly.
 5. From the **Build** menu, click **Build Solution**.
 
-For more information, see [Building a Driver](/windows-hardware/drivers/develop/building-a-driver).
+For more information, see [Building a Driver](../develop/building-a-driver.md).
 
 ### <a href="" id="configure-a-computer-for-testing-and-debugging"></a>Step 4: Configure a computer for testing and debugging
 
-To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
+To test and debug a driver, you run the debugger on the host computer and the driver on the target computer. So far, you have used Visual Studio on the host computer to build a driver. Next you need to configure a target computer. To configure a target computer, follow the instructions in [Provision a computer for driver deployment and testing](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
 
 ### <a href="" id="enable-tracing-for-kernel-debugging"></a>Step 5: Enable tracing for kernel debugging
 
@@ -164,7 +164,7 @@ The template code contains several trace messages (TraceEvents) that can help yo
 
    **tracepdb -f \[PDBFiles\] -p \[TMFDirectory\]**
 
-   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](/windows-hardware/drivers/devtest/tracepdb-commands).
+   The **-f** option specifies the location and the name of the PDB symbol file. The **-p** option specifies the location for the TMF files that are created by Tracepdb. For more information, see [**Tracepdb Commands**](../devtest/tracepdb-commands.md).
 
    At the specified location you'll see three files (one per .c file in the project). They are given GUID file names.
 
@@ -277,7 +277,7 @@ The purpose of each module is described here:
 - Client driver—the user-mode function driver for the USB device.
 - UMDF—the framework module that handles most interactions with Windows on the behalf of the client driver. It exposes the user-mode device driver interfaces (DDIs) that the client driver can use to perform common driver tasks.
 - Dispatcher—mechanism that runs in the host process; determines how to forward a request to the kernel mode after it has been processed by user-mode drivers and has reached the bottom of the user-mode stack. In the illustration, the dispatcher forwards the request to the user-mode DLL, Winusb.dll.
-- Winusb.dll—a Microsoft-provided user-mode DLL that exposes [WinUSB Functions](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) that simplify the communication process between the client driver and WinUSB (Winusb.sys, loaded in kernel mode).
+- Winusb.dll—a Microsoft-provided user-mode DLL that exposes [WinUSB Functions](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)#winusb) that simplify the communication process between the client driver and WinUSB (Winusb.sys, loaded in kernel mode).
 - Winusb.sys—a Microsoft-provided driver that is required by all UMDF client drivers for USB devices. The driver must be installed below the reflector and acts as the gateway to the USB driver stack in the kernel-mode. For more information, see [WinUSB](winusb.md).
 - USB driver stack—a set of drivers, provided by Microsoft, that handle protocol-level communication with the USB device. For more information, see [USB host-side drivers in Windows](usb-3-0-driver-stack-architecture.md).
 
@@ -286,5 +286,5 @@ Whenever an application makes a request for the USB driver stack, the Windows I/
 ## Related topics
 
 [Understanding the UMDF template code for USB client driver](understanding-the-umdf-template-code-for-usb.md)  
-[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](/windows-hardware/drivers/usbcon/selective-suspend-in-umdf-drivers)  
-[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)  
+[How to enable USB selective suspend and system wake in the UMDF driver for a USB device](./selective-suspend-in-umdf-drivers.md)  
+[Getting started with USB client driver development](getting-started-with-usb-client-driver-development.md)

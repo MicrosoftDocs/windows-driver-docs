@@ -51,7 +51,7 @@ The device driver software interface (DDSI) functions are the interface between 
 -   [EvtSensorSetBatchLatency](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config)
     This is a callback function that sets the batch latency for a specified sensor. The driver should set the Batch Latency to a value that is less than or equal to the *BatchLatencyMs* parameter, depending on buffer availability.
 
-The driver must also implement all the required DDSI functions. For more information, see [_SENSOR_CONTROLLER_CONFIG structure](https://docs.microsoft.com/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
+The driver must also implement all the required DDSI functions. For more information, see [_SENSOR_CONTROLLER_CONFIG structure](/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config).
 
 It is optional for the sensor class extension to specify batch latency. The default batch latency for all sensors is zero (0), which is used to indicate that samples will not be batched. Sensor samples will be delivered in batches, only if the class extension calls **EvtSensorSetBatchLatency** to set a batch latency value. Otherwise, the samples will be delivered normally at the periodic data interval rate.
 
@@ -122,6 +122,4 @@ The following diagram illustrates the different configurations described in the 
 **Buffer-full behavior in hardware**
 
 Under normal circumstances the driver is supposed to read the hardware buffer at least once every time interval equal to *BatchLatencyMs*, to ensure that no data is dropped or lost. When the hardware FIFO buffer fills up, it should wrap around and behave like a circular buffer, overwriting older events.
-
- 
 

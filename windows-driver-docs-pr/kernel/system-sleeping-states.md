@@ -25,7 +25,7 @@ Use `powercfg /a` to enumerate all available sleep states on a system. A user ca
 
 Typically, when the user presses the sleep button, the system goes to the S3 system power state.
 
-To restrict the system to a subset of Sx states, a user can provide **MaxSleep** and **MinSleep** fields in https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-system_power_policy (and also https://docs.microsoft.com/windows/win32/api/winnt/ns-winnt-administrator_power_policy). 
+To restrict the system to a subset of Sx states, a user can provide **MaxSleep** and **MinSleep** fields in [SYSTEM_POWER_POLICY structure](/windows/win32/api/winnt/ns-winnt-system_power_policy). Also see [ADMINISTRATOR_POWER_POLICY structure](/windows/win32/api/winnt/ns-winnt-administrator_power_policy). 
 
 ### System Power State S1
 

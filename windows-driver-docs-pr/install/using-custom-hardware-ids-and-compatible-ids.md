@@ -17,7 +17,7 @@ enumerator\enumerator-specific-device-ID
 
 Where:
 
--   *Enumerator* identifies the bus driver that detects and reports child devices on a bus to the PnP manager.
+-   *Enumerator* identifies the *enumerator* (bus driver) that detects and reports child devices on a bus to the PnP manager.
 
 -   *enumerator-specific-device-ID* is a device identifier specific to the bus driver.
 

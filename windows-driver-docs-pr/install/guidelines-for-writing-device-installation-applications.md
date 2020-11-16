@@ -44,7 +44,7 @@ Device installation applications *must not* do the following:
 
 -   Force any unnecessary system restarts. Restarts are generally not required for installing PnP devices or software applications. The *bRebootRequired* parameter of the [**UpdateDriverForPlugAndPlayDevices**](/windows/win32/api/newdev/nf-newdev-updatedriverforplugandplaydevicesa) function indicates the need for a restart.
 
--   Use RunOnce registry keys, because this requires a system restart.
+-   Use RunOnce registry keys to start *device installation applications*, because this requires a system restart.
 
 -   Use a device or class co-installer, or a class installer, to start a device installation application, because the state of the system during device installation cannot be guaranteed to be safe for installing software applications. Specifically, if the device installation application runs during a server-side installation, the system will stop responding.
 

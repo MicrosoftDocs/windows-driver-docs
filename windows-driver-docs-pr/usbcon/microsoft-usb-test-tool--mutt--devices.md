@@ -115,4 +115,4 @@ The USB Type-C Connection Exerciser (USB Type-C ConnEx) is a custom shield that 
 
 ## Related topics
 
-[USB](https://docs.microsoft.com/windows-hardware/drivers/)  
+[USB](../index.yml)
