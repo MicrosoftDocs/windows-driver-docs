@@ -19,7 +19,7 @@ A *text log section* includes a section header that opens the section, a section
 The following example of a text log section shows the general format of a typical section, where the fields in italic font style are placeholders for section-specific text, and the remaining text in bold font style is generic text supplied by SetupAPI. The first two log entries comprise the section header and the last two log entries comprise the section footer.
 
 ```cpp
->>>  [section_title - instance_identifer]
+>>>  [section_title - instance_identifier]
 >>> time_stamp Section start
  section body log entry
  section body log entry
