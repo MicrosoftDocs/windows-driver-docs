@@ -6,7 +6,7 @@ ms.date: 11/18/2020
 ms.localizationpriority: medium
 ---
 
-# Get a product
+# Get a product by name
 
 Use this method in the Microsoft Hardware API to retrieve data for a specific product name.
 
