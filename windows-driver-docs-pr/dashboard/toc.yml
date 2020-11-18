@@ -238,6 +238,8 @@
       href: get-all-products.md
     - name: "Get a product"
       href: get-a-product.md
+    - name: "Get a product by name"
+      href: get-a-product-by-name.md
     - name: "Get all submissions"
       href: get-all-submissions.md
     - name: "Get a submission"
