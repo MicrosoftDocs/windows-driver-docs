@@ -368,17 +368,17 @@
                         {
                             "source_path":  "windows-driver-docs-pr/develop/windows-10-editions-for-universal-drivers.md",
                             "redirect_URL":  "/windows-hardware/drivers/develop/target-platforms",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/develop/troubleshooting-the-device-fundamental-tests.md",
                             "redirect_URL":  "/windows-hardware/drivers/develop/troubleshooting-configuration-of-driver-deployment--testing-and-debugging",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/develop/getting-started-with-universal-drivers.md",
                             "redirect_URL":  "/windows-hardware/drivers/develop/getting-started-with-windows-drivers",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/develop/universal-driver-scenarios.md",
@@ -394,47 +394,47 @@
                         {
                              "source_path":  "windows-driver-docs-pr/develop/validating-universal-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/develop/validating-windows-drivers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                             "source_path":  "windows-driver-docs-pr/install/where-setup-searches-for-drivers.md",
                             "redirect_URL":  "/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/install/setupapi-functions-that-simplify-driver-installation.md",
                              "redirect_URL":  "/windows-hardware/drivers/install/functions-that-simplify-driver-installation",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/wdf/wdf-objects.md",
                              "redirect_URL":  "/windows-hardware/drivers/wdf/introduction-to-framework-objects",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/wdf/wdf-general-object-macros.md",
                              "redirect_URL":  "/windows-hardware/drivers/wdf/wdf-declare-context-type",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/wdf/synchronization-techniques-for-wdf-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/wdf/using-automatic-synchronization",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/wdf/wdf-support-objects.md",
                              "redirect_URL":  "/windows-hardware/drivers/wdf/using-memory-buffers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/wdf/using-the-registry-in-wdf-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/wdf/introduction-to-registry-keys-for-drivers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/wdf/security-issues-for-kmdf-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/administration.md",
@@ -739,7 +739,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/develop/visual-studio-driver-development-environment.md",
                              "redirect_URL":  "/windows-hardware/drivers/develop/index",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28114---copying-a-whole-irp-leaves-certain-fields-initialized-that-sho.md",
@@ -1514,12 +1514,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/install/using-a-configurable-inf-file.md",
                              "redirect_URL":  "/windows-hardware/drivers/install/using-a-universal-inf-file",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/install/creating-an-extensible-inf-file.md",
                              "redirect_URL":  "/windows-hardware/drivers/install/using-an-extension-inf-file",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
@@ -1529,12 +1529,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/install/Windows10SDriverGuidelines.md",
                              "redirect_URL":  "/windows-hardware/drivers/install/Windows10SDriverRequirements",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/wdf/what-s-new-for-wdf-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/wdf/index",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/ndis-versions-in-network-drivers.md",
@@ -1674,7 +1674,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/install/adding-software-components-with-an-inf-file.md",
                              "redirect_URL":  "/windows-hardware/drivers/install/using-a-component-inf-file",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/netpowersettingsgetenabledprotocoloffloads.md",
@@ -1684,7 +1684,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/develop/installing-the-enterprise-wdk.md",
                              "redirect_URL":  "/windows-hardware/drivers/develop/using-the-enterprise-wdk",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/porting-ndis-to-netadapter-cx.md",
@@ -8089,7 +8089,7 @@
                          {
                             "source_path":  "windows-driver-docs-pr/install/allsignersequal-group-policy--windows-vista-and-later-.md",
                             "redirect_url":  "/windows-hardware/drivers/install/allsigningequal-group-policy",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/netcx/handling-control-requests.md",
@@ -8144,12 +8144,12 @@
                         {
                             "source_path":  "windows-driver-docs-pr/kernel/ntstatus-values.md",
                             "redirect_url":  "/windows-hardware/drivers/kernel/using-ntstatus-values",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/kernel/using-i-o-control-codes.md",
                             "redirect_url":  "/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/devtest/reading-and-filtering-debugging-messages.md",
