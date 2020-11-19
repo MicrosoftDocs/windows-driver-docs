@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 All debugger extensions should be compiled and built by using Visual Studio. The Build utility is no longer used with debugger extensions.
 
-For documentation on building projects in Visual Studio refer to [Visual Studio projects - C++](/cpp/build/creating-and-managing-visual-cpp-projects?view=vs-2017).
+For documentation on building projects in Visual Studio refer to [Visual Studio projects - C++](/cpp/build/creating-and-managing-visual-cpp-projects).
 
 To build an extension, use the following procedure:
 
