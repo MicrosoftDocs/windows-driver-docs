@@ -689,7 +689,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/windows-store-mobile-broadband-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/how-to-connect-to-a-usb-device--windows-store-app-.md",
@@ -1539,17 +1539,17 @@
                          {
                              "source_path":  "windows-driver-docs-pr/network/ndis-versions-in-network-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/overview-of-ndis-versions",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/cosa---faq.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/cosa-overview",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/apn-database.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/apn-database-overview",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/apn-database-submission.md",
@@ -1559,22 +1559,22 @@
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/planning-your-apn-database-submission.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/planning-your-desktop-cosa-apn-database-submission",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/testing-your-apn-database-submission.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/testing-your-cosa-apn-database-submission",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/submitting-the-apn-database-update.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/submitting-the-cosa-apn-database-update",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis--rndis.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-communication",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-control-messages2.md",
@@ -1584,12 +1584,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-initialize-msg2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-initialize-msg",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-initialize-cmplt2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-initialize-cmplt",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-halt-msg2.md",
@@ -1599,67 +1599,67 @@
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-query-msg2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-query-msg",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-query-cmplt2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-query-cmplt",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-set-msg2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-set-msg",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-set-cmplt2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-set-cmplt",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-reset-msg2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-reset-msg",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-reset-cmplt2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-reset-cmplt",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-indicate-status-msg2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-indicate-status-msg",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-keepalive-msg2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-keepalive-msg",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-keepalive-cmplt2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-keepalive-cmplt",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-data-message2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-data-message",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/remote-ndis-packet-msg2.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/remote-ndis-packet-msg",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/testing-your-cosa-apn-database-submission.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/testing-your-desktop-cosa-apn-database-submission",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/submitting-the-cosa-apn-database-update.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/submitting-the-desktop-cosa-apn-database-update",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/custom-capabilities-for-universal-windows-platform-apps.md",
@@ -1679,7 +1679,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/netpowersettingsgetenabledprotocoloffloads.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/netpowersettingsgetenabledprotocoloffloadflags",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/develop/installing-the-enterprise-wdk.md",
@@ -1689,37 +1689,37 @@
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/porting-ndis-to-netadapter-cx.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/porting-ndis-miniport-drivers-to-netadaptercx",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/debugging-netadaptercx-client-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/debugging-a-netadaptercx-client-driver",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/power-up-sequence-for-ndis-wdf-client-driver.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/power-up-sequence-for-a-netadaptercx-client-driver",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/power-down-sequence-for-ndis-wdf-client-driver.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/power-down-sequence-for-a-netadaptercx-client-driver",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/class-extension--net--limitations.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/netadaptercx-limitations",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/netconfigurationquerynetworkaddress.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/netconfigurationquerylinklayeraddress",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/netrxqueueconfiguredmaallocator.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/netrxqueueinitsetdmaallocatorconfig",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/sdk-topics-for-network-drivers.md",
@@ -1729,7 +1729,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/network/mb-uicc-reset-and-modem-reset-operations.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/mb-low-level-uicc-access",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/mb-uicc-reset-operations.md",
@@ -3214,7 +3214,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx-.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/mobile-broadband-mbb-wdf-class-extension-mbbcx",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/native-802-11-wireless-lan4.md",
@@ -5214,12 +5214,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/device-initialization.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/device-and-adapter-initialization",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/summary-of-objects.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/summary-of-netadaptercx-objects",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/install/using-difxapi-to-uninstall-driver-packages.md",
@@ -6474,7 +6474,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/network/mb-protocol-configuration-operations--pco-.md",
                              "redirect_URL":  "/windows-hardware/drivers/network/mb-protocol-configuration-options-pco-operations",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/stream/ksproperty-cameracontrol-extended-focusmode2.md",
@@ -6484,7 +6484,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/using-the-ring-buffer.md",
                              "redirect_URL":  "/windows-hardware/drivers/netcx/introduction-to-net-rings",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/audio/drm-requirements-for-gfx-drivers.md",
@@ -8094,7 +8094,7 @@
                         {
                             "source_path":  "windows-driver-docs-pr/netcx/handling-control-requests.md",
                             "redirect_url":  "/windows-hardware/drivers/netcx/",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/install/providing-device-property-pages.md",
