@@ -474,7 +474,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/create-and-manage-your-profile.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/register-for-the-hardware-program",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/manage-legal-agreements.md",
@@ -514,12 +514,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/get-started.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/get-started-with-the-hardware-dashboard",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/manage-hardware-submissions.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/manage-your-hardware-submissions",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/test-sign-your-driver--legacy-.md",
@@ -529,7 +529,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/dashboard-faq.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/hardware-dashboard-faq",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/driver-distribution.md",
@@ -614,12 +614,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-driver-developers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/using-a-custom-capability-to-pair-hsa-with-driver.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/hardware-support-app--hsa--steps-for-app-developers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/hardware-access-for-universal-windows-platform-apps.md",
@@ -644,47 +644,47 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/auto-install-for-windows-store-device-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/auto-install-for-uwp-device-apps",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/autoplay-for-windows-store-device-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/autoplay-for-uwp-device-apps",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/build-a-windows-store-device-app-step-by-step.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/build-a-uwp-device-app-step-by-step",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/device-sync-and-update-for-windows-store-device-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/device-sync-and-update-for-uwp-device-apps",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/meet-windows-store-device-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/meet-uwp-device-apps",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/step-1--create-a-windows-store-device-app.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/step-1--create-a-uwp-device-app",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/windows-store-device-apps-for-printers.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/uwp-device-apps-for-printers",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/windows-store-device-apps-for-specialized-devices.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/windows-store-device-apps-for-webcams.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/uwp-device-apps-for-webcams",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/windows-store-mobile-broadband-apps.md",
@@ -1489,12 +1489,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/uefi-firmware-signing.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/lsa-and-uefi-file-signing",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/lsa-plug-in-signing.md",
@@ -1509,7 +1509,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/nfc/p2p-rf-data-exchagne-sequence.md",
                              "redirect_URL":  "/windows-hardware/drivers/nfc/p2p-rf-data-exchange-sequence",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/install/using-a-configurable-inf-file.md",
@@ -1524,7 +1524,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/nfc/tag-rf-data-exchagne-sequence.md",
                              "redirect_URL":  "/windows-hardware/drivers/nfc/tag-rf-data-exchange-sequence",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/install/Windows10SDriverGuidelines.md",
@@ -1664,12 +1664,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/custom-capabilities-for-universal-windows-platform-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/creating-a-custom-capability-to-pair-driver-with-hsa",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/developing-a-universal-windows-platform-app-with-custom-capabilities.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/using-a-custom-capability-to-pair-hsa-with-driver",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/install/adding-software-components-with-an-inf-file.md",
@@ -1749,7 +1749,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/file-a-new-bug.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/bug-management",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/view-and-manage-your-bugs.md",
@@ -2334,7 +2334,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/extension-inf-files.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/submit-dashboard-extension-inf-files",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/netadaptercx-api-reference.md",
@@ -3169,7 +3169,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/dashboard-submission-rest-api-reference.md",
                              "redirect_URL":  "/windows-hardware/drivers/dashboard/dashboard-api",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/create-a-request.md",
