@@ -63,7 +63,7 @@ If the **Code Analysis Results** shows errors that you determine, after careful 
 
 [How to run Code Analysis for drivers](how-to-run-code-analysis-for-drivers.md)
 
-[Code Analysis tool in Visual Studio](/visualstudio/code-quality/?view=vs-2019)
+[Code Analysis tool in Visual Studio](/visualstudio/code-quality/)
 
 [Code Analysis for Drivers Warnings](prefast-for-drivers-warnings.md)
 
