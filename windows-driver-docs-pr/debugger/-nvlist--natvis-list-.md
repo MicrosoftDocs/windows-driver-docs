@@ -46,7 +46,7 @@ The .nvllist command lists the NatVis files loaded into the debugger environment
 
 ## Additional Information
 
-For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects).
 
 ## See also
 

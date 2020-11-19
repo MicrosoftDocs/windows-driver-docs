@@ -552,17 +552,11 @@ Formatting Methods
 
 **.Replace ( SearchString, ReplaceString )**: Replaces every occurrence of SearchString within the input string with the specified ReplaceString.
 
-
-
-
 String Object Projections
 
 In addition to the methods which are projected directly onto string objects, any object which itself has a string conversion has the following method projected onto it, making it method available for use:
 
-**.ToDisplayString ( )**: Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. For more information, see [Format specifiers for C++ in the Visual Studio debugger](/visualstudio/debugger/format-specifiers-in-cpp?view=vs-2019)
-
-
-
+**.ToDisplayString ( )**: Returns a string conversion of the object. This is the string conversion which would be shown in a dx invocation for the object. You can provide a formatting specifier to format the output of ToDisplayString. For more information, see [Format specifiers for C++ in the Visual Studio debugger](/visualstudio/debugger/format-specifiers-in-cpp)
 
 The following examples illustrate the use of format specifiers.
 
