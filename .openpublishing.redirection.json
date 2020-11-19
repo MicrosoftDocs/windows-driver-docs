@@ -1659,7 +1659,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/submitting-the-cosa-apn-database-update.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/submitting-the-desktop-cosa-apn-database-update",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/custom-capabilities-for-universal-windows-platform-apps.md",
