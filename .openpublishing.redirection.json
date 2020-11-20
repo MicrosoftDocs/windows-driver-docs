@@ -1874,7 +1874,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/3dprint/microsoft-3d-printer-drivers.md",
                              "redirect_URL":  "/windows-hardware/drivers/3dprint/index",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/network/net-buffer-checksum-bias.md",
@@ -6479,7 +6479,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/stream/ksproperty-cameracontrol-extended-focusmode2.md",
                              "redirect_URL":  "/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/netcx/using-the-ring-buffer.md",
