@@ -97,28 +97,16 @@ To request an offer block:
 
 > End user scenario: Description of how end user scenario is impacted, i.e. Garbled video playback after feature os update with graphics driver version X
 
-> Estimated impact (number of in-market devices): 
-
-> Detailed Repro steps:
-
-> Block criteria (e.g., driver name + version, BIOS, HWIDs, etc): 
-
-> Name and path of driver binary:
-
->  Found in OS version:
-
-> Workaround (if any):
-
-> Related OS bug (if any):
-
-> Driver owner: Name of IHV/ISV/partner creating fixed driver version
-
-> Requested lifetime of block – i.e. 30 days
-
-> Access to a device in Redmond, WA (Y/N/NA)
-
-> Repro rate (%)
-
-> Is this a regression caused by an OS change? [Release/Release]
-
-> Business impact (sales volume)  
+> Estimated impact (number of in-market devices): <br />
+> Detailed Repro steps:<br />
+> Block criteria (e.g., driver name + version, BIOS, HWIDs, etc): <br />
+> Name and path of driver binary:<br />
+>  Found in OS version:<br />
+> Workaround (if any):<br />
+> Related OS bug (if any):<br />
+> Driver owner: Name of IHV/ISV/partner creating fixed driver version <br />
+> Requested lifetime of block – i.e. 30 days<br />
+> Access to a device in Redmond, WA (Y/N/NA)<br />
+> Repro rate (%)<br />
+> Is this a regression caused by an OS change? [Release/Release]<br />
+> Business impact (sales volume) 
