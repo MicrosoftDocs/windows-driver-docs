@@ -20,7 +20,7 @@ Filter drivers create buffers to copy network data obtained from other drivers, 
 
 If a filter driver does not create buffers, the driver does not manage buffer pools. Such a driver simply passes on the buffers that it receives from other drivers.
 
-A filter driver that creates buffers to support send or receive operations must manage [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure pools and [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure pools.
+A filter driver that creates buffers to support send or receive operations must manage [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure pools and [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure pools.
 
 To create these pools, drivers call the following functions:
 

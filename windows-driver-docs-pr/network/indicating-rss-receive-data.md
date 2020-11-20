@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 A miniport driver indicates received data by calling the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function from its [*MiniportInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc) function.
 
-After the NIC computes the RSS hash value successfully, the driver should store the hash type, hashing function, and hash value in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure with the following macros:
+After the NIC computes the RSS hash value successfully, the driver should store the hash type, hashing function, and hash value in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure with the following macros:
 
 [**NET\_BUFFER\_LIST\_SET\_HASH\_TYPE**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_set_hash_type)
 

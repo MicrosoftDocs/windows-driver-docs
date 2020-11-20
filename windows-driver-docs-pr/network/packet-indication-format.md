@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 # Packet Indication Format
 
 
-Network data is indicated in WFP as NDIS net buffer lists ([**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)). The **Next** member of the **NET\_BUFFER\_LIST** structure can be used to describe a *chain* of net buffer lists. WFP only indicates a single net buffer list to callouts (that is, netBufferList-&gt;Next == **NULL**), except for the following cases:
+Network data is indicated in WFP as NDIS net buffer lists ([**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)). The **Next** member of the **NET\_BUFFER\_LIST** structure can be used to describe a *chain* of net buffer lists. WFP only indicates a single net buffer list to callouts (that is, netBufferList-&gt;Next == **NULL**), except for the following cases:
 
 -   WFP can indicate net buffer list chains to callouts from the Stream layer.
 
@@ -21,7 +21,7 @@ Although a net buffer list can describe a whole packet, for different types of l
 
 Offsets into the net buffer lists are indicated to callouts by using the **ipHeaderSize** and **transportHeaderSize** members of the [**FWPS\_INCOMING\_METADATA\_VALUES0**](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_incoming_metadata_values0_) structure. Callouts can use the NDIS functions [**NdisRetreatNetBufferDataStart**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisretreatnetbufferdatastart) and [**NdisAdvanceNetBufferDataStart**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisadvancenetbufferdatastart) to adjust the offset of the indicated net buffer lists. However in this case, the callout must undo the offset adjustment before it returns from the [*classifyFn*](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) function.
 
-In a call to the *classifyFn* function for outgoing data, a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) can contain more than one [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure, each of which describes an IP packet. If some packets (for example, net buffers) in a net buffer list are acceptable, but others are not, a callout driver must do the following:
+In a call to the *classifyFn* function for outgoing data, a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) can contain more than one [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure, each of which describes an IP packet. If some packets (for example, net buffers) in a net buffer list are acceptable, but others are not, a callout driver must do the following:
 
 1.  Clone and block the whole net buffer list.
 

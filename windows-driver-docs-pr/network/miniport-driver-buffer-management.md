@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-Miniport drivers typically call [**NdisAllocateNetBufferListPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool) from [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) to create a pool of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures. Miniport drivers use these structures to indicate received data.
+Miniport drivers typically call [**NdisAllocateNetBufferListPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool) from [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) to create a pool of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures. Miniport drivers use these structures to indicate received data.
 
 Typically, a miniport driver that allocates a NET\_BUFFER\_LIST structure will allocate and queue one [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure on that NET\_BUFFER\_LIST structure. It is more efficient to preallocate NET\_BUFFER structures when you allocate a pool of NET\_BUFFER\_LIST structures than to allocate NET\_BUFFER\_LIST structures and NET\_BUFFER structures separately.
 

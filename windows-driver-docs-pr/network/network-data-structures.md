@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 Network data consists of packets of data that are sent or received over the network. NDIS provides data structures to describe and organize such data. The primary network data structures for NDIS 6.0 and later are:
 
 -   [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer)
--   [**NET\_BUFFER LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)
+-   [**NET\_BUFFER LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)
 -   [**NET\_BUFFER\_LIST\_CONTEXT**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list_context)
 
 The following figure illustrates the relationships between these structures.
@@ -33,7 +33,7 @@ In NDIS 6.0 and later, the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/
 
 Multiple NET\_BUFFER structures can be attached to a NET\_BUFFER\_LIST structure. The NET\_BUFFER structures are organized as a NULL-terminated singly linked list. Only the driver that originates a NET\_BUFFER\_LIST structure, or NDIS, should modify the linked list directly to insert and delete NET\_BUFFER structures.
 
-[**NET\_BUFFER LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures contain information that describes all the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures that are attached to a list. If a driver requires additional space for context information, the driver can store such information in the NET\_BUFFER\_LIST\_CONTEXT structures. NDIS provides functions to allocate, free and access the data in the NET\_BUFFER\_LIST\_CONTEXT structures.
+[**NET\_BUFFER LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures contain information that describes all the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures that are attached to a list. If a driver requires additional space for context information, the driver can store such information in the NET\_BUFFER\_LIST\_CONTEXT structures. NDIS provides functions to allocate, free and access the data in the NET\_BUFFER\_LIST\_CONTEXT structures.
 
 Multiple NET\_BUFFER\_LIST structures can be attached to form a list of NET\_BUFFER\_LIST structures. The NET\_BUFFER\_LIST structures are organized as a NULL-terminated singly linked list. Drivers can modify the linked list directly to insert and delete NET\_BUFFER\_LIST structures.
 
@@ -44,7 +44,7 @@ Multiple NET\_BUFFER\_LIST structures can be attached to form a list of NET\_BUF
 
 [NET\_BUFFER Structure](net-buffer-structure.md)
 
-[**NET\_BUFFER LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)
+[**NET\_BUFFER LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)
 
 [NET\_BUFFER\_LIST Structure](net-buffer-list-structure.md)
 

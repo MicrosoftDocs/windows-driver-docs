@@ -434,7 +434,7 @@ Parameter 1 indicates the type of violation. The meaning of the other parameters
 <tr class="even">
 <td align="left"><p>0x27</p></td>
 <td align="left"><p>NDIS_BUGCHECK_LEAKED_NBL</p>
-<p>A driver has leaked a <strong><a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list" data-raw-source="[NET_BUFFER_LIST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)">NET_BUFFER_LIST</a></strong> structure. Check with <strong><a href="-ndiskd-pendingnbls.md" data-raw-source="[!ndiskd.pendingnbls](-ndiskd-pendingnbls.md)">!ndiskd.pendingnbls</a></strong> to see any NBLs that are still pending on this driver.</p></td>
+<p>A driver has leaked a <strong><a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list" data-raw-source="[NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)">NET_BUFFER_LIST</a></strong> structure. Check with <strong><a href="-ndiskd-pendingnbls.md" data-raw-source="[!ndiskd.pendingnbls](-ndiskd-pendingnbls.md)">!ndiskd.pendingnbls</a></strong> to see any NBLs that are still pending on this driver.</p></td>
 <td align="left"><p>Where the leak was detected. Possible values:</p>
 <ul>
 <li><p>0x01 : The leak was detected by the NBL tracker. The driver that is currently deregistering or unbinding is the most likely cause. Look at the callstack of the bugchecking thread. Drivers must not unbind or deregister while they still hold active NBLs.</p></li>

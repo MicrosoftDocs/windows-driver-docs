@@ -28,7 +28,7 @@ When a miniport driver receives a request to free a queue, it does the following
 
 -   Generates a status indication to indicate that the DMA is stopped.
 
--   Waits for all outstanding [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures, which are associated with the queue, to be returned.
+-   Waits for all outstanding [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures, which are associated with the queue, to be returned.
 
 -   Frees the associated shared memory and hardware resources.
 

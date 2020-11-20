@@ -18,7 +18,7 @@ The following figure illustrates a protocol driver send operation, which involve
 
 ![diagram illustrating a protocol driver send operation, which involves a protocol driver, ndis, and underlying drivers in a driver stack](images/protocolsend.png)
 
-Protocol drivers call the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function to send the network data that is defined in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures.
+Protocol drivers call the [**NdisSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists) function to send the network data that is defined in a list of [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures.
 
 A protocol driver must set the **SourceHandle** member of each NET\_BUFFER\_LIST structure to the same value that it passes to the *NdisBindingHandle* parameter. The binding handle provides the information that NDIS requires to return the NET\_BUFFER\_LIST structure to the protocol driver after the underlying miniport driver calls [**NdisMSendNetBufferListsComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsendnetbufferlistscomplete).
 

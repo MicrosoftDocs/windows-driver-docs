@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 
 
-Retreat operations can increase the size of the used data space in a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
+Retreat operations can increase the size of the used data space in a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure.
 
 NDIS provides the following retreat functions:
 

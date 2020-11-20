@@ -15,7 +15,7 @@ MB miniport drivers that support Raw IP packet frames in their send/receive data
 
 -   For IPv4 packets:
 
-    The **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure must be set to NDIS\_NBL\_FLAGS\_IS\_IPV4.
+    The **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure must be set to NDIS\_NBL\_FLAGS\_IS\_IPV4.
 
     The **NetBufferListFrameType** member of the NET\_BUFFER\_LIST structure must be set to 0x0800 (Ethertype IPv4) in network byte order.
 

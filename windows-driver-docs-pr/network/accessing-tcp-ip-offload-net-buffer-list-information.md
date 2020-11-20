@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 # Accessing TCP/IP Offload NET\_BUFFER\_LIST Information
 
-NDIS versions 6.0 and later provide TCP/IP offload out-of-band (OOB) data in the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure, which specifies a linked list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures. The **NetBufferListInfo** member is an array of values that contain information that is common to all of the NET\_BUFFER structures in the list.
+NDIS versions 6.0 and later provide TCP/IP offload out-of-band (OOB) data in the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure, which specifies a linked list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures. The **NetBufferListInfo** member is an array of values that contain information that is common to all of the NET\_BUFFER structures in the list.
 
 Use the following identifiers with the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_info) macro to set and get the TCP/IP offload OOB data in the **NetBufferListInfo** array:
 
@@ -47,7 +47,7 @@ An NDIS 6.0 and later miniport driver that supports LSOV2 and LSOV1 must check t
 
 For LSOv1, before a miniport driver completes the send of a large TCP packet that it has segmented into smaller packets by using LSO, the driver writes the number of TCP payload bytes that it sent in the segmented packets in the **TcpPayload** member of NDIS\_TCP\_LARGE\_SEND\_OFFLOAD\_NET\_BUFFER\_LIST\_INFO.
 
-If a miniport driver specifies the NDIS\_ENCAPSULATION\_IEEE\_802\_3\_P\_AND\_Q flag in its capabilities, the driver can perform task offload services for [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures that contain the VLAN header in the buffer data. In the case of received data, this flag indicates that the miniport driver will perform the receive checksum calculation and put the VLAN header in the Ethernet packet.
+If a miniport driver specifies the NDIS\_ENCAPSULATION\_IEEE\_802\_3\_P\_AND\_Q flag in its capabilities, the driver can perform task offload services for [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures that contain the VLAN header in the buffer data. In the case of received data, this flag indicates that the miniport driver will perform the receive checksum calculation and put the VLAN header in the Ethernet packet.
 
 If a miniport driver specifies the NDIS\_ENCAPSULATION\_IEEE\_802\_3\_P\_AND\_Q\_IN\_OOB flag in its capabilities, the driver can perform offload on NET\_BUFFER\_LIST structures that contain the VLAN header in the **Ieee8021QnetBufferListInfo** OOB data. In the receive checksum offload case, the miniport inserts the VLAN header into the **Ieee8021QnetBufferListInfo** OOB data.
 

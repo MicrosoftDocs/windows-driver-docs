@@ -27,7 +27,7 @@ If a NIC splits an Ethernet frame at the beginning of the upper-layer-protocol h
 
  
 
-If the header-data split provider splits the frame at the beginning of the upper-layer-protocol header, the indicated [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_SPLIT\_AT\_UPPER\_LAYER\_PROTOCOL\_HEADER flag set in the **NblFlags** member. For more information about setting header-data split NET\_BUFFER\_LIST flags, see [Setting NET\_BUFFER\_LIST Information](setting-net-buffer-list-information.md).
+If the header-data split provider splits the frame at the beginning of the upper-layer-protocol header, the indicated [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures must have the NDIS\_NBL\_FLAGS\_SPLIT\_AT\_UPPER\_LAYER\_PROTOCOL\_HEADER flag set in the **NblFlags** member. For more information about setting header-data split NET\_BUFFER\_LIST flags, see [Setting NET\_BUFFER\_LIST Information](setting-net-buffer-list-information.md).
 
 The NIC must not split a frame if the resulting header buffer has a greater length than the maximum header size. For more information about splitting frames when the maximum header size is exceeded, see [Allocating the Header Buffer](allocating-the-header-buffer.md).
 

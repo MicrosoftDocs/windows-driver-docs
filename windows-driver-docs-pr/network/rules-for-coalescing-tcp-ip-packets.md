@@ -101,7 +101,7 @@ The TCP timestamp option is the only option that may be legally coalesced. Coale
 >[!NOTE]
 >The check **SEG.TSval** &gt;= **H.TSval** must be performed using modulo-232 arithmetic similar to that used for TCP sequence numbers. See [RFC 793](https://www.ietf.org/rfc/rfc793.txt), section 3.3.
 
-When indicating a coalesced segment, the following out-of-band information must be indicated as follows by setting the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure that describes the coalesced segment:
+When indicating a coalesced segment, the following out-of-band information must be indicated as follows by setting the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure that describes the coalesced segment:
 
 - The number of segments that were coalesced must be stored into the **NetBufferListInfo**\[**TcpRecvSegCoalesceInfo**\].**CoalescedSegCount** member. This number only represents data segments that were coalesced. Pure ACK coalescing is forbidden and window update segments must not be counted as part of this field.
 
