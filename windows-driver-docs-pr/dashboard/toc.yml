@@ -35,7 +35,7 @@
       - name: "Extension INF Targeting Rules"
         href: extension-inf-targeting-rules.md
       - name: "Driver Release Cadence"
-        href: driver-release-candence.md
+        href: driver-release-cadence.md
     - name: "Microsoft driver measures"
       href: overview-of-microsoft-driver-measure-dictionary.md
     - name: "Driver measure attributes"

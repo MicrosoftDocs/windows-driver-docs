@@ -33,7 +33,7 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 |----|----|----|
 |2 days before | Feature OS Rollout | 2 days after |
 
-    A. If there are known issues for feature update and driver compatibility, partners can request feature update offer block mitigation while a compatible driver update is being validated and posted to WU. For more information see: [Feature Update Windows Update (WU) Offer Block Mitigation Request](#featureUpdates) 
+> A. If there are known issues for feature update and driver compatibility, partners can request feature update offer block mitigation while a compatible driver update is being validated and posted to WU. For more information see: [Feature Update Windows Update (WU) Offer Block Mitigation Request](#featureUpdates)
 
 3. **Weekends**: Driver needing “Microsoft Approval” will not be released from Friday until Sunday 5PM Pacific Time, unless the next day is in a deferral period.
 
@@ -70,7 +70,7 @@ We recognize the need for partners to release critical/security driver updates d
 * Reason for “Urgent Driver release request”
 * Impact to end-users if driver release is delayed
 
-For additional information to contact Hardware Dev Center Support, please see the [**How Do I contact Hardware Dev Center Dashboard Support?**](https://docs.microsoft.com/en-us/windows-hardware/drivers/dashboard/hardware-dashboard-faq).
+For additional information to contact Hardware Dev Center Support, please see the [**How Do I contact Hardware Dev Center Dashboard Support?**](./hardware-dashboard-faq.md).
 
  
 ## Appendix
@@ -90,7 +90,7 @@ In order to ensure that end users have a good post-update experience, when a dri
 |Windows Update (WU) offer block|A temporary hold on offering an OS upgrade to a device. These devices are blocked until the fix is released via servicing, at which point the device is then unblocked. This does not impact media installs.|An issue that directly impacts the OS after upgrade, such as a driver crash, BSOD or data loss, security issues, connectivity loss, etc, for which a fix is in progress.|
 
 To request an offer block:
-1)	File a new feedback on [MS Collaborate in the EEAP Engagement](https://partner.microsoft.com/en-us/dashboard/collaborate/feedback/wits/bugs/create).
+1)	File a new feedback on [MS Collaborate in the EEAP Engagement](https://partner.microsoft.com/dashboard/collaborate/feedback/wits/bugs/create).
 2)	Title must begin with **[WU offer block request] [IHV/ISV - Driver Name] [Impacted driver versions]**, i.e. [WU Offer block request] [Contoso – contoso.sys] [1.1 through 1.5]
 3)	Provide the following information in the **Repro Steps**
 
