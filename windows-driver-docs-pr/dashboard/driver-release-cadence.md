@@ -13,9 +13,9 @@ Windows as a Service has a well-established OS update release cadence.
     **Latest Cumulative Update (LCU)**: Monthly Quality and Security updates released during the second week.  This is also known as the “B” release and is offered to all eligible Windows 10 devices through Windows Update (WU) scans.
     **Feature Updates**: Provide the latest feature experiences and quality fixes.
 
-We have a shared goal of keeping devices up to date while providing users a high-quality experience.  Recently when a driver update is released alongside OS updates, it has resulted in a poor experience and significantly impacted end-users. Occasionally, we have had other driver release incidents which occur outside of normal business hours (Redmond time) which impact our ability to intervene and prevent additional devices from receiving “poor” drivers. Additionally, we have received many requests to have a predictable driver release cadence from many partners.
+We have a shared goal of keeping devices up to date while providing users a high-quality experience.  Recently when a driver update is released alongside OS updates, it has resulted in a poor experience and significantly impacted end-users. Occasionally, we have had other driver release incidents which occur outside of normal business hours (Redmond time) which impact our ability to intervene and prevent additional devices from receiving "poor" drivers. Additionally, we have received many requests to have a predictable driver release cadence from many partners.
 
-To ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes and provide ecosystem partners a predictable driver release cadence; we are making the following changes for releasing drivers marked as needing “Microsoft Approval”. Today, this includes:
+To ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes and provide ecosystem partners a predictable driver release cadence; we are making the following changes for releasing drivers marked as needing "Microsoft Approval". Today, this includes:
 * Flighted drivers:  Drivers (Shipping Label) marked as **Automatic** = Critical Update (CU) or Dynamic Update (DU) or both 
 * Optional driver classes which always go through Shiproom approval
 
@@ -59,7 +59,7 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 
 5. **US Winter Holiday timeframe release moratorium**: During the US Winter Holiday season, for approximately two weeks driver shiproom will not be releasing ANY drivers, for calendar year 2020 this is December 17, 2020 through January 1, 2021 and for CY2021 this will be December 16, 2021 through January 1, 2022. 
 
-Please see the 2021 driver deferral periods in the Appendix calendars for additional dates. 
+See the [2021 driver deferral periods](#calendar) calendars for additional dates. 
  
 ## Call to Action
 We believe that creating a predictable driver release cadence will result in better update user experience across both Windows 10 OS and driver updates. We encourage ecosystem partners to _plan for their driver flighting and publication releases_ in alignment with above cadence and help us improve the experience of our mutual users and customers. 
@@ -78,11 +78,12 @@ For additional information to contact Hardware Dev Center Support, please see th
 What does this deferral mean for newly submitted drivers or drivers currently In-Flight?
 * This deferral is for the actual “Release” of a driver needing “Microsoft Approval” (marked as Automatic or Dynamic Update) to WU.  Newly submitted drivers and drivers currently In-Flight will proceed as they normally do.  
 
-### 2021 Driver Deferral Calendar:
+### <a id="calendar"></a>2021 Driver Deferral Calendar:
 ** This calendar is subject to changes based on OS release timelines.
  
 ![Image 2021 Driver Release Calendar](images/2021driverReleaseCalendar.png)
-### Feature Update Windows Update (WU) Offer Block Mitigation Request
+
+### <a id="featureUpdates"></a>Feature Update Windows Update (WU) Offer Block Mitigation Request
 In order to ensure that end users have a good post-update experience, when a driver has a known incompatibility with a feature update. Partners can request a temporary WU offer block (~30 – 60 days) so that Windows Update will not offer the feature update to devices running a driver version with a known incompatibility. The offer block will be removed once a partner has posted an updated driver (as Automatic and/or Dynamic) via Hardware Dev Center portal.
 
 |Mitigation type|Description|Criteria for application|
