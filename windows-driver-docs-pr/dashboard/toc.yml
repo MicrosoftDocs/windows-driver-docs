@@ -144,8 +144,6 @@
             href: user-mode-reliability-for-crashes-in-windows-components.md
           - name: "Number of user mode crashes in Collaboration and Communications Applications"
             href: graphics-user-mode-crashes-collaboration-standard.md
-          - name: "Percent of YouTube video playback failures in Microsoft Edge and Internet Explorer"
-            href: percent-of-youtube-video-playback-failures-in-microsoft-edge-and-internet-explorer.md
           - name: "Percent of devices with WinML Runtime Errors"
             href: pct-devices-winml-runtime-error.md
         - name: "Ecosystem audience measures"
