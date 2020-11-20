@@ -604,12 +604,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/boot-options-in-windows-vista-and-later.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/boot-options-in-windows",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28101---the-drivers-module-has-inferred-that-the-current-function-is-a.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28101-wrong-function-type",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devapps/creating-a-custom-capability-to-pair-driver-with-hsa.md",
@@ -629,7 +629,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/debugger/debugging-windows-store-apps-using-the-windows-debugger.md",
                              "redirect_URL":  "/windows-hardware/drivers/debugger/debugging-uwp-apps-using-the-windows-debugger",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                             "source_path":  "windows-driver-docs-pr/usbcon/capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md",
@@ -729,12 +729,12 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28110---drivers-must-protect-floating-point-hardware-state--see-use-of.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28110-floating-point-hardware-protect ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28111---the-irql-where-the-floating-point-state-was-saved-does-not-mat.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28111-floating-point-irql-mismatch ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/develop/visual-studio-driver-development-environment.md",
@@ -744,107 +744,107 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28114---copying-a-whole-irp-leaves-certain-fields-initialized-that-sho.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28114-improper-irp-stack-copy ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28118---irq-exceeds-caller.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28118-irq-exceeds-caller ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28120---the-function--function--is-not-permitted-to-be-called-at-the-c.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28120-irql-execution-too-low ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28121---the-function--function--is-not-permitted-to-be-called-at-the-c.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28121-irq-execution-too-high ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28122---the-function--function--is-not-permitted-to-be-called-at-a-low.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28122-inconsistent-irq-level-calls-low ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28123---the-function--function--is-not-permitted-to-be-called-at-a-hig.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28123-inconsistent-irq-level-calls-high ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28124---the-call-to--function--causes-the-irq-level-to-be-set-below-th.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28124-call-below-minimum-irq-level ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28126---the-accessmode-parameter-to-obreferenceobject--should-be-irp--.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28126-accessmode-param-incorrect ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28127---the-function-being-used-as-a--function--routine-does-not-exact.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28127-function-routine-mismatch ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28128---an-access-to--field--has-been-made-directly--it-should-be-made.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28128-structure-member-directly-accessed ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28129---an-assignment-has-been-made-to--operand--which-should-only-be-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28129-assignment-made-to-operand ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28131---the-driverentry-routine-should-save-a-copy-of-the-argument--ar.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28131-driverentry-saving-pointer-to-buffer ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28132---taking-the-size-of-pointer--operand-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28132-driver-taking-the-size-of-pointer ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28133---ioinitializetimer-is-best-called-from-adddevice.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28133-ioinitializetimer-is-best-called-from-add-device ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28134---the-type-of-a-pool-tag-should-be-integral--not-a-string-or-str.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28134-pool-tag-type-should-be-integral ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28135---if-the-first-argument-to-kewaitforsingleobject-is-a-local-vari.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28135-first-argument-to-kewaitforsingleobject ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28139---the-argument--operand--should-exactly-match-the-type--typename.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28139-argument-operand-should-exactly-match ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28141---the-argument--expression--causes-the-irq-level-to-be-set-below.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28141-argument-lowers-irq-level ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28143---a-dispatch-routine-that-calls-iomarkirppending-must-also-retur.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28143-iomarkirppending-must-return-statuspending ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28144---within-a-cancel-routine--at-the-point-of-exit--the-irql-in-irp.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28144-cancelirql-should-be-current-irql ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28145---the-opaque-mdl-structure-should-not-be-modified-by-a-driver.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28145-opaque-mdl-structure-should-not-be-modified ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28146---kernel-mode-drivers-should-use-ntstrsafe-h--not-strsafe-h.md",
@@ -854,392 +854,392 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28147---the-use-of-a-default-pool-tag----kdd--or---mdw---for-calls-to-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28147-improper-use-of-default-pool-tag ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28150---the-function--function--causes-the-irq-level-to-be-set-above-t.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28150-function-causes-irq-level-to-be-set-above-max ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28151---the-value-of--irql--is-not-a-legal-value-for-an-irql.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28151-illegal-irql-value ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28152---the-return-from-an-adddevice-like-function-unexpectedly--clear.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28152-do-device-initializing-flag-not-cleared ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28153---the-value-for-an-irql-from-annotation--type--could-not-be-eval.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28153-irql-annotation-eval-context ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28156---the-actual-irql--actual--is-inconsistent-with-the-required-irq.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28156-irql-inconsistent-with-required-irq-value ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28157---the-irql-in--function--was-never-restored.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28157-function-irql-never-restored ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28158---no-irql-was-saved-into--variable-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28158-no-irql-was-saved ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28161---exiting-without-acquiring-the-right-to-use-floating-hardware.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28161-exiting-without-right-to-use-floating-hardware ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28162---exiting-while-holding-the-right-to-use-floating-point-hardware.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28162-exiting-while-holding-right-to-use-floating-hardware ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28165---the-function-pointer-of-class--class1--does-not-match-the-func.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28165-class-function-pointer-mismatch ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28166---this-function--function--does-not-restore-the-irql-to-the-valu.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28166-function-does-not-restore-irql-value ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28167---this-function--function--changes-the-irql-and-does-not-restore.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28167-function-changes-irql-without-restore ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28168---the-dispatch-function--function--does-not-have-a---drv-dispatc.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28168-dispatch-function-dispatch-annotation ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28169---the-dispatch-function--function--does-not-have-any---drv-dispa.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28169-dispatch-function-does-not-have-proper-annotation ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28170---the-current-function--function--has-been-declared-to-be-in-a-p.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28170-pageable-code-macro-not-found ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28171---the-current-function--function--has-more-than-one-instance-of-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28171-function-has-more-than-one-page-macro-instance ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28172---the-current-function--function--has-paged-code-or-paged-code-l.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28172-function-macros-not-in-paged-segment ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28173--the-current-function-appears-to-incorrectly-adapt-to-physical-m.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28173-function-incorrectly-adapts-to-memory-above-4gb ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28175---the--member--member-of--struct--should-not-be-accessed-by-a-dr.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28175struct-member-should-not-be-accessed-by-driver ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28176---the--member--member-of--struct--should-not-be-modified-by-a-dr.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28176-struct-member-should-not-be-modified-by-driver ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28260---a-syntax-error-in-the-annotations-was-found-for-function--func.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28260-syntax-error-in-function-property ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28266--28267----a-syntax-error-in-the-annotations-was-found-for-functi.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28266-function-property-syntax-error ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28268---the-function-class--class--on-the-function-does-not-match-the-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28268-function-class-does-not-match-typedef ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28601---avoid-blocking-on-hwnd-broadcast.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28601-avoid-blocking-on-hwnd-broadcast ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28602---avoid-calling-sendmessagetimeout-with-hwnd-broadcast.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28602-avoid-calling-sendmessagetimeout-with-hwnd-broadcast ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28604---avoid-calling-sendmessagetimeout-with-smto-abortifhung-with-a-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28604-smto-abortifhung-with-0-timeout- ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28615---must-call-resetstkoflw-in-the-except---block-when-calling-allo.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28615-must-call-resetstkoflw-in-except-block ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28616---multithreaded-av-condition--after-interlockeddecrement-this-m-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28616-multithreaded-av-condition ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28617---avoid-using-the-return-value-of--beginthread-----use--beginthr.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28617-avoid-using-the-return-value-of-beginthread ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28623---unsigned-cast-of-getmessagepos---coordinates--use-get-x-lparam.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28623-unsigned-cast-of-getmessagepos-coordinates ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28624---no-call-to-release---to-match-incremented-refcount-from-lresul.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28624-no-release-call-to-match-incremented-refcount ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28625---function-call-used-to-clear-sensitive-data-will-be-optimized-a.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28625-sensitive-data-may-be-retained ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28636---calling-localfree-on-non-allocated-pointer-obtained-from-calls.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28636-calling-localfree-on-non-allocated-pointer ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28637---calling--function--in-a-global-initializer-is-unsafe.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28637-calling-function-in-a-global-initializer-is-unsafe ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28638-----function---delayload-stub-is-missing-a-matching-declaration-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28638-function-delayload-stub-is-missing-declaration- ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28639---calling-close-handle-with-string---string--.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28639-calling-close-handle-with-string ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28640-----function---delayload-stub-should-be-a-static-function.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28640-delayload-function-stub-should-be-a-static-function ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28645---messagebox-was-called-using-the-question-mark-message-symbol-w.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28645-messagebox-called-using-the-question-mark-symbol ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28648---pulseevent-is-an-unreliable-function--do-not-use-it.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28648-pulseevent-is-an-unreliable-function ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28649---automatic-or-global-stack-arrays-are-never-null--checking-that.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28649-automatic-or-global-stack-arrays-are-never-null ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28650---the-type-for-which--0-is-being-used-does-not-treat-it-as-failu.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28650-generic-value-is-not-treated-as-failure ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28714---cast-between-semantically-different-integer-types--ntstatus-to.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28714-ntstatus-cast-between-semantically-different-integer-types ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28715---cast-between-semantically-different-integer-types--boolean-to-.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28715-boolean-cast-between-semantically-different-integer-types ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28716---compiler-inserted-cast-between-semantically-different-integral.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28716-compiler-inserted-cast-between-semantically-different-integral ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28717---invalid-variant-type.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28717-invalid-variant-type ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28719---banned-api-usage----function--is-a-banned-api-as-listed-in-don.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28719-banned-api-usage-use-updated-function-replacement ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28720---banned-api-usage---function--is-a-banned-api-as-listed-in-dont.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28720-banned-api-usage-use-updated-function-replacement ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28721----deprecated-performance-counter-architecture.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28721-deprecated-performance-counter-architecture ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28726---banned-api-usage---function--is-a-banned-api-as-listed-in-dont.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28726-banned-api-usage-use-updated-function-replacement ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28727---banned-api-usage---function--is-a-banned-api-as-listed-in-dont.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28727-banned-api-usage-use-updated-function-replacement ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28728---banned-api-usage---function--is-a-banned-api-as-listed-in-dont.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28728-banned-api-usage-use-updated-function-replacement ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28730---possible-assignment-of---0--directly-to-a-pointer--p---0--shou.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28730-possible-null-character-assignment ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28735---banned-crimson-api-usage----function--is-a-banned-crimson-api.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28735-banned-crimson-api-usage ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28736---banned-api-argument-usage---function--has-a-banned-crimson--or.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28736-legacy-crimson-or-perflib-banned-argument-used ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28177.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28177-function-annotated-with-more-than-one-class ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28644.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28644-return-value-from-dpa-insertptr-not-checked ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28651.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28651-member-function-pointers-cause-write-pages-copy ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28652.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28652-overloaded-bitwise-operators-cause-write-pages-copy ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28718.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28718-unannotated-buffer ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28722.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28722-unannotated-function-declaration-buffer ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28723.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28723-unannotated-buffer-without-declaration ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28725.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28725-use-watson-instead ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28740.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28740-unannotated-unsigned-buffer ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28741.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28741-unannotated-non-constant-string-buffer-in-function ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28742.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28742-unnanotated-non-constant-buffer-in-function ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28750.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28750-banned-istrlen-usage ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28751.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28751-banned-exallocatepool-usage ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28752.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28752-banned-kernel32-advapi32-usage ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c28753.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/28753-relying-on-undefined-order-of-evalutation-params ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c30029.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/30029-memory-allocating-function-requests-executable-memory ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c30030.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/30030-parameter-indicates-executable-memory ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c30031.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/30031-pool-n-optin-called-before-entry-function ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c30032.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/30032-forcing-request-of-executable-memory ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c30033.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/30033-executable-allocation-detected-with-pool-nx-optin ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c30034.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/30034-passing-flag-value-to-allocating-function ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/c30035.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/30035-function-call-must-be-made-inside-init-function ",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/obtaining-the-checked-build.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/installing-the-checked-build",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/usbcon/initial-setup-by-software.md",
@@ -8154,7 +8154,7 @@
                         {
                             "source_path":  "windows-driver-docs-pr/devtest/reading-and-filtering-debugging-messages.md",
                             "redirect_url":  "/windows-hardware/drivers/debugger/reading-and-filtering-debugging-messages",
-                            "redirect_document_id":  true
+                            "redirect_document_id":  false
                         },
                         {
                             "source_path":  "windows-driver-docs-pr/kernel/managing-power-for-individual-devices.md",
