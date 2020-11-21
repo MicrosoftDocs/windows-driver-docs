@@ -1,13 +1,13 @@
 ---  
-title: Class and ClassGuid entries for INF Version Section  
-description: Class and ClassGuid entries for INF Version Section 
+title: System-Defined Device Setup Classes Available to Vendors  
+description: System-Defined Device Setup Classes Available to Vendors 
 ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
 ms.date: 08/27/2020
 ms.localizationpriority: medium
 ms.custom: contperfq1
 ---  
 
-# Class and ClassGuid entries for INF Version Section  
+# System-Defined Device Setup Classes Available to Vendors  
 
 If you're writing a Windows device driver for a specific category of device, you can use the following list to select the right pre-defined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
 
