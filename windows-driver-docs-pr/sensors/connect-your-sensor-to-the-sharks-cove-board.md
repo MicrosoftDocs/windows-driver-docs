@@ -36,8 +36,6 @@ Here are some examples of how information from the ADXL345 data sheet, and the S
 
 The connection decisions outlined in the preceding bullets were based on information from the *Theory of Operation* section (page 6) and the *Serial Communications* section (page 8) of the ADXL345 data sheet.
 
-For more detailed technical information about the Sharks Cove board, see [Sharks Cove Schematic](https://firmware.intel.com/sites/default/files/Sharks_Cove_Schematic.pdf).
-
 After successfully connecting your sensor test board to Sharks Cove, read the next topic for guidance on how to [write and deploy your universal sensor driver](write-and-deploy-your-universal-sensor-driver.md).
 
  

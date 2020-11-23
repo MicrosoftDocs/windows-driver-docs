@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 The following are definitions for terms related to the Windows Hardware Error Architecture (WHEA).
 
 <a href="" id="advanced-configuration-and-power-interface--acpi-"></a>Advanced Configuration and Power Interface (ACPI)  
-An industry-standard interface for operating system-directed device configuration and power management. For more information about ACPI, see the [ACPI Specification](https://go.microsoft.com/fwlink/p/?linkid=69483).
+An industry-standard interface for operating system-directed device configuration and power management. For more information about ACPI, see the [ACPI Specification](https://uefi.org/sites/default/files/resources/ACPI_6_3_final_Jan30.pdf).
 
 <a href="" id="baseboard-management-controller--bmc-"></a>Baseboard Management Controller (BMC)  
 A set of hardware components on the motherboard that manages platform-specific functions, such as monitoring and handling certain environmental error conditions.

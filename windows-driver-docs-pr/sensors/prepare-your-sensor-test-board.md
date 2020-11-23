@@ -50,8 +50,6 @@ Here’s a table from the *Sharks Cove Technical Specifications Rev. 1.0*, showi
 
  
 
-For more detailed technical information about the Sharks Cove board, see [Sharks Cove Schematic](https://firmware.intel.com/sites/default/files/Sharks_Cove_Schematic.pdf).
-
 And if, for example, you had chosen to build a universal sensor driver for the ADXL345 accelerometer, then the following diagram from page 5 of the ADXL345 Digital Accelerometer data sheet (along with Table 4 on the same page) shows you the pins available for connecting the accelerometer board to Sharks Cove.
 
 ![adxl345 accelerometer pin configuration.](images/adxl345-pins.png)
