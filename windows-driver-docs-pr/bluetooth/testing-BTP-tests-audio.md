@@ -41,3 +41,8 @@ To capture the Bluetooth logs, follow the instructions for the [busiotools for W
 ## Known issues
 
 - Stress tests: Tests run in a tight loop using an LE radio may cause pairing or unpairing to fail.
+- BM64 EVB has the following 4 known test failures: 
+    - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeUpTest`
+    - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeDownTest`
+    - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeUpTest`
+    - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeDownTest`
