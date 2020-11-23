@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform - Human Device Adapter
 description: Bluetooth Test Platform (BTP) Human Device Adapter (HDA) Setup and Pairing 
-ms.assetid: b5b039bb-af0f-446f-9657-aa0e137a3437
 ms.date: 11/13/2020
 ms.localizationpriority: medium
 
