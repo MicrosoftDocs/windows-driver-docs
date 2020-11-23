@@ -31,7 +31,6 @@ name=JuliasSurface
 baseband=le
 le_address=40ca6ca8e7ce (or 40:ca:6c:a8:e7:ce)
 ```
-
 ## Running Audio Tests with the HDA 
 
 Navigate to the folder where the BTP package was extracted. It will typically be under C:\BTP. In a folder named after the version of the package, you will find the scripts referenced below. Then run either: 
