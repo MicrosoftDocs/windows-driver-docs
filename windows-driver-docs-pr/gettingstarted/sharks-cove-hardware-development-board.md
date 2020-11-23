@@ -15,10 +15,6 @@ Sharks Cove is a [hardware development board](./windows-compatible-hardware-deve
 
 The Intel Sharks Cove board supports driver development for devices that use a variety of interfaces, including GPIO, I2C, I2S, UART, SDIO, and USB. You can also use the Sharks Cove board to develop drivers for cameras and touch screens.
 
-For downloads related to the Sharks Cove board, see [Sharks Cove UEFI Firmware](https://go.microsoft.com/fwlink/p?linkid=403167).
-
-For detailed specifications, see [Sharks Cove Technical Specifications](https://go.microsoft.com/fwlink/p?linkid=403169).
-
 ## Before you start
 
 The instructions given here require that you are running Windows 10, Windows 8.1, or Windows 7. These instructions do not work if you are running Windows 8.
@@ -102,7 +98,7 @@ Double click your ISO file, and copy these files to *Root*\\Setup.
 >[!NOTE]
 >If you are running Windows 7, right-click the ISO file, and choose **Burn disk image** . Burn the image to a recordable DVD. Then copy the files from the DVD to *Root*\\Setup.
 
-Get the [Sharks Cove board support package (BSP)](https://go.microsoft.com/fwlink/p?linkid=506954). Copy all the files in the package to *Root*\\SharksCoveBsp.
+Get the Sharks Cove board support package (BSP). Copy all the files in the package to *Root*\\SharksCoveBsp.
 
 Get the [WDK Development Boards Add-on Kit](https://go.microsoft.com/fwlink/p/?linkid=403174). Open the **SourceCode** tab. Click **Download** (not the Downloads tab) to get the kit scripts. Open the Scripts folder, and copy these two items to *Root*.
 
