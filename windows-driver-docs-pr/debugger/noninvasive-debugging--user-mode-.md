@@ -29,7 +29,6 @@ For more information about how to determine the process ID and the process name,
 
 For information about starting and stopping a noninvasive debugging session, see the following topics:
 
--   [Debugging a User-Mode Process Using Visual Studio](debugging-a-user-mode-process-using-visual-studio.md)
 -   [Debugging a User-Mode Process Using WinDbg](debugging-a-user-mode-process-using-windbg.md)
 -   [Debugging a User-Mode Process Using CDB](debugging-a-user-mode-process-using-cdb.md)
 

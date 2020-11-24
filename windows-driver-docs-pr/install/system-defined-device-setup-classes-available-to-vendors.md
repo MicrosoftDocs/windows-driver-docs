@@ -1,15 +1,18 @@
 ---  
-title: Class and ClassGuid entries for INF Version Section  
-description: Class and ClassGuid entries for INF Version Section 
+title: System-Defined Device Setup Classes Available to Vendors  
+description: System-Defined Device Setup Classes Available to Vendors 
 ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
-ms.date: 08/27/2020
+ms.date: 11/20/2020
 ms.localizationpriority: medium
 ms.custom: contperfq1
 ---  
 
-# Class and ClassGuid entries for INF Version Section  
+# System-Defined Device Setup Classes Available to Vendors  
 
 If you're writing a Windows device driver for a specific category of device, you can use the following list to select the right pre-defined values to use for the `Class` and `ClassGuid` entries in the [Version Section](inf-version-section.md) of the driver's INF file.
+
+> [!NOTE]
+> If you're looking for info on reserved classes and GUIDs, see [System-Defined Device Setup Classes Reserved for System Use](system-defined-device-setup-classes-reserved-for-system-use.md).
 
 To see how these entries appear in an INF file, check out [cdrom.inf](https://github.com/microsoft/Windows-driver-samples/blob/aaeca58c5e7b67740a603a3150db225670b42bb6/storage/class/cdrom/src/cdrom.inf#L7-L8) in the [Windows driver samples](https://github.com/microsoft/Windows-driver-samples) repo.
 

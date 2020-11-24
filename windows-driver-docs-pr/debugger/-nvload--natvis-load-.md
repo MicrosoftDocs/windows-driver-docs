@@ -57,7 +57,7 @@ The **ModuleName** is the name of a module in the target process being debugged.
 
 ## Additional Information
 
-For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects).
 
 ## See also
 
