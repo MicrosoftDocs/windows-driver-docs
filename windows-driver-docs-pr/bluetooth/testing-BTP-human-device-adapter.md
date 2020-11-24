@@ -24,7 +24,7 @@ baseband=BR
 br_address=B4:F1:DA:96:C0:A4
 ```
 
-## HDA Pairing tests
+## HDA pairing tests
 
 Navigate to the folder where the BTP software package was extracted, typically `C:\BTP`. The scripts referenced below will be in a subfolder of the package directory. Run the appropriate script for the desired command environment:
 
