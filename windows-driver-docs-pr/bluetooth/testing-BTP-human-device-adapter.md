@@ -34,8 +34,8 @@ Navigate to the folder where the BTP software package was extracted, typically `
 
 | Command environment | Script |
 | --- | --- |
-| Elevated command prompt | `RunAudioTests.bat HDA,conf_file=<configuration file name>` |
-| Elevated PowerShell console | `RunAudioTests.ps1 HDA,conf_file=<configuration file name>` |
+| Elevated command prompt | `RunPairingTests.bat HDA,conf_file=<configuration file name>` |
+| Elevated PowerShell console | `RunPairingTests.ps1 HDA,conf_file=<configuration file name>` |
 
 The optional parameter `-VerboseLogs` can be added to provide a more verbose output of inner operations of BTP to assist with debugging.
 
@@ -44,68 +44,49 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
 1. The script will respond as below and ask if the device has been paired before. If 'y' is entered it will delete the pairing; if 'n' is entered the process will continue with no action.
 
     ```console
-     [BluetoothTestHelpers::AudioDevice::AudioDevice]: Using remote device named: MyTestDevice
-     Is MyTestDevice paired to the device with address D83BBFAC3207 Public?
-     Enter (y/n):
+    Verify: SUCCEEDED(WEX::TestExecution::RuntimeParameters::TryGetValue(deviceParameterName.c_str(), deviceParametersStr)): Getting required runtime parameter 'central'
+    [BluetoothTests::PairingTestsImpl::PairingTestsImpl]: Using central device named: MyCentralDevice
+    [BluetoothTests::PairingTestsImpl::PairingTestsImpl]: Using peripheral device named: MyTestDevice
+    [BluetoothTestHelpers::Pairing::Unpair]: Unpairing device with address B4F1DA96C0A4 from the device with address D83BBFAC35607
+    [BluetoothTestHelpers::Pairing::Unpair]: Unpaired successfully
+    [BluetoothTestHelpers::Pairing::WaitForDisconnection]: Waiting for disconnection of device with address B4F1DA96C0A4
+    [BluetoothTestHelpers::Pairing::WaitForDisconnection]: Asserted: connectionModule.WaitForDisconnection(otherDeviceAddress, c_disconnectionAfterUnpairingTimeout)
+    [BluetoothTestHelpers::Pairing::WaitForDisconnection]: Disconnected successfully
+    Is MyTestDevice paired to the device with address D83BBFAC35607?
+    Enter (y/n): y
     ```
-
-```bash
-Verify: SUCCEEDED(WEX::TestExecution::RuntimeParameters::TryGetValue(deviceParameterName.c_str(), deviceParametersStr)): Getting required runtime parameter 'central'
-[BluetoothTests::PairingTestsImpl::PairingTestsImpl]: Using central device named: MyCentralDevice
-[BluetoothTests::PairingTestsImpl::PairingTestsImpl]: Using peripheral device named: MyTestDevice
-[BluetoothTestHelpers::Pairing::Unpair]: Unpairing device with address B4F1DA96C0A4 from the device with address D83BBFAC35607
-[BluetoothTestHelpers::Pairing::Unpair]: Unpaired successfully
-[BluetoothTestHelpers::Pairing::WaitForDisconnection]: Waiting for disconnection of device with address B4F1DA96C0A4
-[BluetoothTestHelpers::Pairing::WaitForDisconnection]: Asserted: connectionModule.WaitForDisconnection(otherDeviceAddress, c_disconnectionAfterUnpairingTimeout)
-[BluetoothTestHelpers::Pairing::WaitForDisconnection]: Disconnected successfully
-Is MyTestDevice paired to the device with address D83BBFAC35607?
-Enter (y/n): y
-```
 
 - The test will then ask if the device has been paired before. If “y” is entered it will delete the pairing. If “n” the process will continue with no action. 
  
-```bash
-[BluetoothTestHelpers::Pairing::Unpair]: Unapiring device with address D83BBFAC35607 Public from the device with address D83BBFAC35607 Public
-If possible, delete the pairing on MyTestDevice
-Press any key to continue
-```
+    ```console
+    [BluetoothTestHelpers::Pairing::Unpair]: Unapiring device with address D83BBFAC35607 Public from the device with address D83BBFAC35607 Public
+    If possible, delete the pairing on MyTestDevice
+    Press any key to continue
+    ```
 
 - Here is an example of the HDA deleting the pairing. It will prompt you to also delete any pairing information on the device (here named “MyTestDevice”). Press any key to continue once any pairing information has been deleted. 
 
-### Step 2 
-
-```
-StartGroup: BluetoothTests::TaefPairingTests::OutgoingJustWorksPairingTest
-[BluetoothTests::PairingTestsImpl::OutgoingJustWorksPairingTest]: Will attempt an outgoing pairing to the peripheral device and validate that a JustWorks ceremony was used
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: (originDeviceAssociationModule) != nullptr
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->CanInitiatePairing()
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->CanCheckPairingStatus()
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: !(originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress))
-If not already, put MyTestDevice in BR pairing mode
-Press any key to continue . . .
-```
+2. 
+    ```console
+    StartGroup: BluetoothTests::TaefPairingTests::OutgoingJustWorksPairingTest
+    [BluetoothTests::PairingTestsImpl::OutgoingJustWorksPairingTest]: Will attempt an outgoing pairing to the peripheral device and validate that a JustWorks ceremony was used
+    [BluetoothTestHelpers::Pairing::Pair]: Asserted: (originDeviceAssociationModule) != nullptr
+    [BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->CanInitiatePairing()
+    [BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->CanCheckPairingStatus()
+    [BluetoothTestHelpers::Pairing::Pair]: Asserted: !(originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress))
+    If not already, put MyTestDevice in BR pairing mode
+    Press any key to continue . . .
+    ```
 
 - The test then begins the pairing process by running a few checks. Next, the test prompts the user to enter their device (here named “MyTestDevice”) into “<Band> Pairing Mode”. Press any key to continue once this has been done. 
 
-### Step 3 
-
-```bash
-[BluetoothTestHelpers::Pairing::Pair]: Initiating pairing request from device with address D83BBFAC35607 to device with address B4F1DA96C0A4
-[BluetoothTestHelpers::Pairing::DefaultPairingCeremonyHandler::OnJustWorks]: JustWorks ceremony used
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress)
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUsed().has_value()
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUsed().value() == expectedCeremony
-[BluetoothTestHelpers::Pairing::Pair]: Paired successfully
-If the device is in pairing mode, exit pairing mode if possible.
-Press any key to continue . . .
-```
-
+3. 
     ```console
-    [BluetoothTestHelpers::AudioDevice::Pairing::Pair]:Initiating Pairing request from device with address D83BBFAC3207 Public to device with address GA0DGC9C4893 Public
+    [BluetoothTestHelpers::Pairing::Pair]: Initiating pairing request from device with address D83BBFAC35607 to device with address B4F1DA96C0A4
     [BluetoothTestHelpers::Pairing::DefaultPairingCeremonyHandler::OnJustWorks]: JustWorks ceremony used
-    BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress)
+    [BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress)
     [BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUsed().has_value()
-    [BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUser().value() == expectedCeremony
+    [BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUsed().value() == expectedCeremony
     [BluetoothTestHelpers::Pairing::Pair]: Paired successfully
     If the device is in pairing mode, exit pairing mode if possible.
     Press any key to continue . . .
