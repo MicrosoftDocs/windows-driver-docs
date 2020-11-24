@@ -18,60 +18,66 @@ The HDA enables manual user testing between a Windows Device and your prototypin
 
 ## HDA Configuration File Step by Step 
 
-Create a configuration file named after your test device. For example: JuliasSurface.txt 
+Create a configuration file named after your test device. For example: Sarah_Phone.txt 
 
 Note: The name of the file does not matter. 
 
 Contents of the Configuration File: 
-```bash
-sink=hda
-source=windows
-name=JuliasSurface
-baseband=le
-le_address=40ca6ca8e7ce (or 40:ca:6c:a8:e7:ce)
+
+```
+name=Sarah_Phone
+baseband=BR
+br_address=B4:F1:DA:96:C0:A4
 ```
 ## Running Audio Tests with the HDA 
 
 Navigate to the folder where the BTP package was extracted. It will typically be under C:\BTP. In a folder named after the version of the package, you will find the scripts referenced below. Then run either: 
 
-`RunAudioTests.bat HDA,conf_file=<configuration file name>` from an elevated command prompt  
+`RunPairingTests.bat HDA,conf_file=<configuration file name>` from an elevated command prompt  
 
 or 
 
-`RunAudioTests.ps1 HDA,conf_file=<configuration file name>` from an elevated PowerShell console 
+`RunPairingTests.ps1 HDA,conf_file=<configuration file name>` from an elevated PowerShell console 
 
-You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP to assist with debugging. 
+You can also include the optional parameter `-VerboseLogs` at the end to get a more verbose output of inner operations of BTP to assist with debugging failures locally. 
 
 ## HDA Manual Pairing Step by Step 
 
 ### Step 1 
 
 ```bash
- [BluetoothTestHelpers::AudioDevice::AudioDevice]: Using remote device named: MyTestDevice
- Is MyTestDevice paired to the device with address D83BBFAC3207 Public?
- Enter (y/n):
+Verify: SUCCEEDED(WEX::TestExecution::RuntimeParameters::TryGetValue(deviceParameterName.c_str(), deviceParametersStr)): Getting required runtime parameter 'central'
+[BluetoothTests::PairingTestsImpl::PairingTestsImpl]: Using central device named: MyTestDevice
+[BluetoothTests::PairingTestsImpl::PairingTestsImpl]: Using peripheral device named: Sarahs_Phone
+[BluetoothTestHelpers::Pairing::Unpair]: Unpairing device with address B4F1DA96C0A4 from the device with address D83BBFAC35607
+[BluetoothTestHelpers::Pairing::Unpair]: Unpaired successfully
+[BluetoothTestHelpers::Pairing::WaitForDisconnection]: Waiting for disconnection of device with address B4F1DA96C0A4
+[BluetoothTestHelpers::Pairing::WaitForDisconnection]: Asserted: connectionModule.WaitForDisconnection(otherDeviceAddress, c_disconnectionAfterUnpairingTimeout)
+[BluetoothTestHelpers::Pairing::WaitForDisconnection]: Disconnected successfully
+Is Sarahs_Phone paired to the device with address D83BBFAC35607?
+Enter (y/n): y
 ```
 
 - The test will then ask if the device has been paired before. If “y” is entered it will delete the pairing. If “n” the process will continue with no action. 
  
 ```bash
-[BluetoothTestHelpers::Pairing::Unpair]: Unapiring device with address D83BBFAC3207 Public from the device with address GA0DGC9C4893 Public
+[BluetoothTestHelpers::Pairing::Unpair]: Unapiring device with address D83BBFAC35607 Public from the device with address D83BBFAC35607 Public
 If possible, delete the pairing on MyTestDevice
 Press any key to continue
 ```
-
 
 - Here is an example of the HDA deleting the pairing. It will prompt you to also delete any pairing information on the device (here named “MyTestDevice”). Press any key to continue once any pairing information has been deleted. 
 
 ### Step 2 
 
-```bash
-[BluetoothTestHelpers::AudioDevice::AudioDevice]: Will attempt an outgoing pairing to the remote device and validate that a JustWorks Ceremony was used
+```
+StartGroup: BluetoothTests::TaefPairingTests::OutgoingJustWorksPairingTest
+[BluetoothTests::PairingTestsImpl::OutgoingJustWorksPairingTest]: Will attempt an outgoing pairing to the peripheral device and validate that a JustWorks ceremony was used
 [BluetoothTestHelpers::Pairing::Pair]: Asserted: (originDeviceAssociationModule) != nullptr
 [BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->CanInitiatePairing()
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModuleCanCheckPairingStatus()
+[BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->CanCheckPairingStatus()
 [BluetoothTestHelpers::Pairing::Pair]: Asserted: !(originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress))
-If not already, put MyTestDevice in LE pairing mode.
+If not already, put Sarahs_Phone in BR pairing mode
 Press any key to continue . . .
 ```
 
@@ -80,11 +86,11 @@ Press any key to continue . . .
 ### Step 3 
 
 ```bash
-[BluetoothTestHelpers::AudioDevice::Pairing::Pair]:Initiating Pairing request from device with address D83BBFAC3207 Public to device with address GA0DGC9C4893 Public 
+[BluetoothTestHelpers::Pairing::Pair]: Initiating pairing request from device with address D83BBFAC35607 to device with address B4F1DA96C0A4
 [BluetoothTestHelpers::Pairing::DefaultPairingCeremonyHandler::OnJustWorks]: JustWorks ceremony used
-BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress)
+[BluetoothTestHelpers::Pairing::Pair]: Asserted: originDeviceAssociationModule->IsPairedTo(destinationDeviceAddress)
 [BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUsed().has_value()
-[BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUser().value() == expectedCeremony
+[BluetoothTestHelpers::Pairing::Pair]: Asserted: ceremonyHandler.GetLastCeremonyUsed().value() == expectedCeremony
 [BluetoothTestHelpers::Pairing::Pair]: Paired successfully
 If the device is in pairing mode, exit pairing mode if possible.
 Press any key to continue . . .
