@@ -16,13 +16,9 @@ Install the software as described in [BTP Software Setup](testing-BTP-setup.md#s
 
 ## HDA configuration file
 
-Create a configuration file named after your test device. For example: *mytestdevice.txt*
+Create a configuration file as below named after your test device, for example: *mytestdevice.txt*. Note that the file and extension are not important.
 
-Note: The name of the file does not matter. 
-
-Contents of the Configuration File: 
-
-```
+```console
 name=myTestDevice
 baseband=BR
 br_address=B4:F1:DA:96:C0:A4
@@ -56,17 +52,16 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Enter (y/n): y
     ```
 
-- The test will then ask if the device has been paired before. If “y” is entered it will delete the pairing. If “n” the process will continue with no action. 
- 
+    Below is an example of the HDA deleting the pairing. It will prompt also delete any pairing information on the device (here named “MyTestDevice”). Press any key to continue once any pairing information has been deleted.
+
     ```console
     [BluetoothTestHelpers::Pairing::Unpair]: Unpairing device with address D83BBFAC35607 Public from the device with address D83BBFAC35607 Public
     If possible, delete the pairing on MyTestDevice
     Press any key to continue
     ```
 
-- Here is an example of the HDA deleting the pairing. It will prompt you to also delete any pairing information on the device (here named “MyTestDevice”). Press any key to continue once any pairing information has been deleted. 
+2. The script then begins the pairing process by running checks, then prompting the user to enter their device (here named “MyTestDevice”) into “*Band* Pairing Mode”. Press any key to continue once this has been done.
 
-2. 
     ```console
     StartGroup: BluetoothTests::TaefPairingTests::OutgoingJustWorksPairingTest
     [BluetoothTests::PairingTestsImpl::OutgoingJustWorksPairingTest]: Will attempt an outgoing pairing to the peripheral device and validate that a JustWorks ceremony was used
@@ -78,9 +73,8 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
     Press any key to continue . . .
     ```
 
-- The test then begins the pairing process by running a few checks. Next, the test prompts the user to enter their device (here named “MyTestDevice”) into “<Band> Pairing Mode”. Press any key to continue once this has been done. 
+3. The script will then initiate pairing. If pairing was successful the output will look exactly as below. Respond to any notifications on the device or on the test PC to confirm and finish pairing. The test then prompts to take the device out of pairing mode. Press any key to continue once this has been done.
 
-3. 
     ```console
     [BluetoothTestHelpers::Pairing::Pair]: Initiating pairing request from device with address D83BBFAC35607 to device with address B4F1DA96C0A4
     [BluetoothTestHelpers::Pairing::DefaultPairingCeremonyHandler::OnJustWorks]: JustWorks ceremony used
@@ -96,7 +90,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
 
 ## HDA log capture
 
-If problems are encountered, Bluetooth logs can be captured Bluetooth logs by following instructions at [Busiotools for Windows Repo on GitHub for Log Capturing](https://github.com/Microsoft/busiotools/tree/master/bluetooth/tracing), or the `-VerboseLogs` option can be used when starting the tests.
+If problems are encountered Bluetooth logs can be captured Bluetooth logs by following instructions at [Busiotools for Windows Repo on GitHub for Log Capturing](https://github.com/Microsoft/busiotools/tree/master/bluetooth/tracing), or by using the scrip option `-VerboseLogs` when starting the tests.
 
 ## See also
 
