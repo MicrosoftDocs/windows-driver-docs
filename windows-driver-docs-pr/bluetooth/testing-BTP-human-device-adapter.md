@@ -28,7 +28,7 @@ baseband=BR
 br_address=B4:F1:DA:96:C0:A4
 ```
 
-## HDA audio tests
+## HDA Pairing tests
 
 Navigate to the folder where the BTP software package was extracted, typically `C:\BTP`. The scripts referenced below will be in a subfolder of the package directory. Run the appropriate script for the desired command environment:
 
@@ -59,7 +59,7 @@ The optional parameter `-VerboseLogs` can be added to provide a more verbose out
 - The test will then ask if the device has been paired before. If “y” is entered it will delete the pairing. If “n” the process will continue with no action. 
  
     ```console
-    [BluetoothTestHelpers::Pairing::Unpair]: Unapiring device with address D83BBFAC35607 Public from the device with address D83BBFAC35607 Public
+    [BluetoothTestHelpers::Pairing::Unpair]: Unpairing device with address D83BBFAC35607 Public from the device with address D83BBFAC35607 Public
     If possible, delete the pairing on MyTestDevice
     Press any key to continue
     ```
