@@ -123,7 +123,9 @@ After the target PC restarts, the debugger should connect automatically.
 
 ### USB device not recognized
 
-If a windows notification appears on the host with the text "USB device not recognized" when inserting the debug cable it is possible that a known USB 3.1 to 3.1 compatibility issue is being hit. This issue affects debug configurations when the debug cable is connected to a USB 3.1 controller on the host and an Intel (Icelake or Tigerlake) 3.1 USB controller on the target.
+If a windows notification appears on the host with the text "USB device not recognized" when inserting the debug cable it is possible that a known USB 3.1 to 3.1 compatibility issue is being hit. This issue affects debug configurations when the debug cable is connected to a USB 3.1 controller on the host and an Intel (Ice Lake or Tiger Lake) 3.1 USB controller on the target.
+
+For more information and processor model listings see [Ice Lake (microprocessor) - Wikipedia](https://en.wikipedia.org/wiki/Ice_Lake_(microprocessor)) and or [Tiger Lake (microprocessor) - Wikipedia](https://en.wikipedia.org/wiki/Tiger_Lake_(microprocessor)). To find the processor model of the target machine, open the Settings app and go to "System" then "About". "Processor" will be listed under "Device specifications".
 
 To verify this is the problem occurring, open device manager and look for "USB Debug Connection Device" under "Universal Serial Bus controllers". If this device cannot be found, check for an "Unknown device" under "Other devices". Right click on the device to open its properties page. The device status text box will have the text "Windows has stopped this device because it has reported problems. (Code 43)" and "The USB device returned an invalid USB BOS descriptor".
 
