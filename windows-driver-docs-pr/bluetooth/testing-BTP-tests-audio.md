@@ -14,7 +14,7 @@ The BTP audio tests will test the ability of the local system to pair with a rem
 
 When using a radio with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate radio(s) are correctly plugged in to the Traduci. Currently the RN52 radio can **only** be plugged into JA. More detailed information on setting up can be found at [Setting up BTP](testing-BTP-setup.md).
 
-When using the BM-64-EVB, two red LEDs should be on (one of which may turn off after a bit). Confirm the switches, jumpers, and ports are configured for testing as decribed in the [BM-64-EVB board overview](testing-BTP-hw-bm64.md#getting-started). 
+When using the BM-64-EVB, two red LEDs should be on (one of which may turn off after a bit). Confirm the switches, jumpers, and ports are configured for testing as decribed in the [BM-64-EVB board overview](testing-BTP-hw-bm64.md#getting-started).
 
 Features and purchasing information for supported radios can be found at [Supported BTP Hardware](testing-BTP-hw.md).
 
@@ -40,8 +40,8 @@ To capture the Bluetooth logs, follow the instructions for the [busiotools for W
 ## Known issues
 
 - Stress tests: Tests run in a tight loop using an LE radio may cause pairing or unpairing to fail.
-- BM64 EVB has the following 4 known test failures: 
-    - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeUpTest`
-    - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeDownTest`
-    - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeUpTest`
-    - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeDownTest`
+- BM64 EVB has the following 4 known test failures:
+  - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeUpTest`
+  - `BluetoothTests::TaefAudioTests::VoiceSinkVolumeDownTest`
+  - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeUpTest`
+  - `BluetoothTests::TaefAudioTests::VoiceSourceVolumeDownTest`
