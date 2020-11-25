@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 The FSCTL_SET_REPARSE_POINT_EX control code sets a reparse point on a file or directory.
 
-To perform this operation, call [**ZwFsControlFile**](nf-ntifs-zwfscontrolfile.md) with the following parameters.
+To perform this operation, call [**ZwFsControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwfscontrolfile) with the following parameters.
 
 Minifilters should use [**FltTagFile**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-flttagfile) instead of FSCTL_SET_REPARSE_POINT_EX to set a reparse point.
 
@@ -46,7 +46,7 @@ Not used with this operation; set to zero.
 
 ## Status block
 
-[**ZwFsControlFile**](nf-ntifs-zwfscontrolfile.md) returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
+[**ZwFsControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwfscontrolfile) returns STATUS_SUCCESS or an appropriate NTSTATUS value such as one of the following:
 
 | Value | Description |
 | ----- | ----------- |
@@ -83,4 +83,4 @@ Not used with this operation; set to zero.
 
 [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer)
 
-[**ZwFsControlFile**](nf-ntifs-zwfscontrolfile.md)
+[**ZwFsControlFile**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwfscontrolfile)
