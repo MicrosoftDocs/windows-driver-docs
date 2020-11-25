@@ -8370,6 +8370,12 @@
                             "source_path":  "windows-driver-docs-pr/sensors/introduction-to-the-sensor-and-location-platform-in-windows.md",
                             "redirect_url":  "/windows-hardware/drivers/sensors/index",
                             "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/spb/testing-with-multi-interface-test-tool--mitt-.md",
+                            "redirect_url":  "/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--",
+                            "redirect_document_id":  false
                         }
+
                      ]
 }
