@@ -8372,10 +8372,19 @@
                             "redirect_document_id":  false
                         },
                         {
+                            "source_path":  "windows-driver-docs-pr/nfc/tap-and-do.md",
+                            "redirect_url":  "/windows-hardware/drivers/nfc/tap-and-do-scenarios",
+                            "redirect_document_id":  false
+                        },
+                        {
+                            "source_path":  "windows-driver-docs-pr/nfc/protocol-support.md",
+                            "redirect_url":  "/windows-hardware/drivers/nfc/ndef-protocol",
+                            "redirect_document_id":  false
+                        },
+                        {
                             "source_path":  "windows-driver-docs-pr/spb/testing-with-multi-interface-test-tool--mitt-.md",
                             "redirect_url":  "/windows-hardware/drivers/spb/multi-interface-test-tool--mitt--",
                             "redirect_document_id":  false
                         }
-
                      ]
 }
