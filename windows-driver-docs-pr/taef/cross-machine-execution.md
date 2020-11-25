@@ -29,7 +29,7 @@ The following requirements are necessary in order to execute tests remotely:
 -   On the host machine, the local user can execute Te.exe, or, alternately, you may add generic credentials for the local user to the credential manager.
 
     ``` syntax
-    cmdkey /generic:<targetmachine> /user:<user_name> /pass:<password>
+    cmdkey /generic:<targetmachine> /user:<user_name> /pass:[PLACEHOLDER]
     ```
 
 -   If you are running on a domain-joined machine, the domain-joined machine must have an IPSec boundary exclusion.

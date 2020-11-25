@@ -69,7 +69,7 @@ By default, this message type is disabled. You can enable it by using provisioni
         <AccessString>Contoso.com</AccessString>
         <UserLogonCred>
           <UserName>User</UserName>
-          <Password>pass</Password>
+          <Password>[PLACEHOLDER]</Password>
         </UserLogonCred>
       </Context>
     </DefaultProfile>
@@ -190,7 +190,7 @@ Windows accepts an XML-based provisioning file from you. A sample version of the
                 <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
                 <UserLogonCred>
                     <UserName>user</UserName>
-                    <Password>password</Password>
+                    <Password>[PLACEHOLDER]</Password>
                 </UserLogonCred>
             </Context>
         </DefaultProfile>
