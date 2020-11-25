@@ -1482,7 +1482,7 @@
                              "redirect_document_id":  false
                          },
                          {
-                             "source_path":  "windows-driver-docs-pr/display/performing-copp-operations2.md",
+                             "source_path":  "windows-driver-docs-pr/display/performing-copp-operations.md",
                              "redirect_URL":  "/windows-hardware/drivers/display/performing-copp-operations-example",
                              "redirect_document_id":  true
                          },

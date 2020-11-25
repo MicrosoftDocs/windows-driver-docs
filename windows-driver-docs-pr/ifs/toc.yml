@@ -844,6 +844,8 @@
       href: fsctl-set-refs-smr-volume-gc-parameters.md
     - name: "FSCTL_SET_REPARSE_POINT"
       href: fsctl-set-reparse-point.md
+    - name: "FSCTL_SET_REPARSE_POINT_EX"
+      href: fsctl-set-reparse-point-ex.md
     - name: "FSCTL_SET_ZERO_DATA"
       href: fsctl-set-zero-data.md
     - name: "FSCTL_SUSPEND_OVERLAY"
