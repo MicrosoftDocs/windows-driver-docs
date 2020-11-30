@@ -348,8 +348,6 @@ If you need to turn on test signing manually, here are the steps:
 
 ## Step 7: Connect your device to the Sharks Cove board
 
-Get the [specification for the Sharks Cove headers and pins](https://go.microsoft.com/fwlink/p?linkid=506966).
-
 Use the specification to determine which pins to use for your device. For example, suppose you want to connect the ADXL345 accelerometer to an I2C bus. In the specification, you can see that the J1C1 header has the pins you need. Here are some, but not all, of the pins you would use on the J1C1 header.
 
 | Pin | Pin name        | Comments                            | ACPI object      |
