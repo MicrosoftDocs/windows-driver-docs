@@ -6,7 +6,7 @@ ms.date: 11/17/2020
 ms.localizationpriority: medium
 ---
 
-# Driver Shiproom Release Cadence Windows 2021 
+# Driver Shiproom Release Cadence Windows
 Last Updated: November 18, 2020
 
 Windows as a Service has a well-established OS update release cadence.
