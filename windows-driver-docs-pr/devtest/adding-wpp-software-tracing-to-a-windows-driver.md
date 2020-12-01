@@ -43,7 +43,8 @@ For convenience, the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/p
             WPP_DEFINE_BIT(NameOfTraceFlag2)  \
             .............................   \
             .............................   \
-            WPP_DEFINE_BIT(NameOfTraceFlag31) 
+            WPP_DEFINE_BIT(NameOfTraceFlag31) \
+            )
     ```
 
     For example, the following code uses myDriverTraceGuid as the *GUIDFriendlyName*. Note that *ControlGUID* has a slightly different format than the standard form of a 32-digit hexadecimal GUID. The *ControlGUID* has the five fields, but they are separated by commas and bracketed by parentheses, instead of the usual hyphens and curly braces. For example, you specify (**(84bdb2e9,829e,41b3,b891,02f454bc2bd7)** instead of {84bdb2e9-829e-41b3-b891-02f454bc2bd7}.
@@ -61,7 +62,7 @@ For convenience, the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/p
             )                             
     ```
 
-    **Tip**  You can copy this code snippet into a header file. Be sure to change the control GUID and the friendly name. You can use GUIDgen.exe to generate the control GUID. The Guidgen.exe is included with Visual Studio (**Tools &gt; Create GUID**). You could also use the Uuidgen.exe tool, which is available from the Visual Studio Command prompt window (type **uuigen.exe /?** for more information).
+    **Tip**  You can copy this code snippet into a header file. Be sure to change the control GUID and the friendly name. You can use GUIDgen.exe to generate the control GUID. The Guidgen.exe is included with Visual Studio (**Tools &gt; Create GUID**). You could also use the Uuidgen.exe tool, which is available from the Visual Studio Command prompt window (type **uuidgen.exe /?** for more information).
 
 
 
