@@ -21,6 +21,21 @@ Use InfVerif with `/w` and `/v` to verify that a Windows Driver:
 
 For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
 
+### Targeting current and earlier versions of Windows
+
+Each run of InfVerif tests a single ruleset, for example `/w` (Windows driver compatibility) or `/k` (Hardware Dev Center submission).  If your INF contains syntax introduced in a more recent version of Windows and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries and then run InfVerif multiple times, for example:
+
+```inf
+infverif /k <INF file>
+infverif /w NTAMD64.10.0.0.<build number where w is a requirement> <INF file>
+```
+
+If there are no errors, the INF meets the [Driver Package Isolation](driver-isolation.md) requirement of Windows Drivers.
+
+For example, the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) is available starting in Windows 10, version 1809. To use this directive in an INF targeting an OS version before Windows 10, version 1809, decorate both the install section using legacy INF syntax for registering ETW event providers as well as the install section using the updated syntax.
+
+For sample code showing how to use OS decorations, see [Sample INF Models Sections for One or More Target Operating Systems](../install/sample-inf-models-sections-for-one-or-more-target-operating-system.md).
+
 ## Driver Verifier Driver Isolation Checks
 
 To qualify as a Windows Driver, a driver must meet [Driver Package Isolation](driver-isolation.md) requirements. Starting in Windows 10 Preview Build 19568, [Driver Verifier](../devtest/driver-verifier.md) (DV) monitors registry reads and writes that are not allowed for isolated driver packages.
