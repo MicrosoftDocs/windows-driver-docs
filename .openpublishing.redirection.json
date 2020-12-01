@@ -632,16 +632,6 @@
                              "redirect_document_id":  false
                          },
                          {
-                            "source_path":  "windows-driver-docs-pr/usbcon/capture-and-view-ing-usb-traces-with-microsoft-message-analyzer-.md",
-                            "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-event-tracing-for-windows",
-                            "redirect_document_id":  true
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/writing-usb-device-companion-apps-for-uwp.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/writing-usb-device-companion-apps-for-microsoft-store",
-                             "redirect_document_id":  true
-                         },
-                         {
                              "source_path":  "windows-driver-docs-pr/devapps/auto-install-for-windows-store-device-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/devapps/auto-install-for-uwp-device-apps",
                              "redirect_document_id":  false
@@ -690,41 +680,6 @@
                              "source_path":  "windows-driver-docs-pr/mobilebroadband/windows-store-mobile-broadband-apps.md",
                              "redirect_URL":  "/windows-hardware/drivers/mobilebroadband/uwp-mobile-broadband-apps",
                              "redirect_document_id":  false
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/how-to-connect-to-a-usb-device--windows-store-app-.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/how-to-connect-to-a-usb-device--uwp-app-",
-                             "redirect_document_id":  true
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/how-to-get-usb-descriptors--windows-store-app-.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/how-to-get-usb-descriptors--uwp-app-",
-                             "redirect_document_id":  true
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/how-to-select-a-usb-interface-setting--windows-store-app-.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/how-to-select-a-usb-interface-setting--uwp-app-",
-                             "redirect_document_id":  true
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/how-to-send-a-usb-bulk-transfer--windows-store-app-.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/how-to-send-a-usb-bulk-transfer--uwp-app-",
-                             "redirect_document_id":  true
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/how-to-send-a-usb-control-transfer--windows-store-app-.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/how-to-send-a-usb-control-transfer--uwp-app-",
-                             "redirect_document_id":  true
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/how-to-send-a-usb-interrupt-transfer--windows-store-app-.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/how-to-send-a-usb-interrupt-transfer--uwp-app-",
-                             "redirect_document_id":  true
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/usbcon/writing-usb-device-companion-apps-for-windows-store.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/writing-usb-device-companion-apps-for-uwp",
-                             "redirect_document_id":  true
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/28110---drivers-must-protect-floating-point-hardware-state--see-use-of.md",
@@ -1242,11 +1197,6 @@
                              "redirect_document_id":  false
                          },
                          {
-                             "source_path":  "windows-driver-docs-pr/usbcon/initial-setup-by-software.md",
-                             "redirect_URL":  "/windows-hardware/drivers/usbcon/u1-and-u2-transitions",
-                             "redirect_document_id":  true
-                         },
-                         {
                              "source_path":  "windows-driver-docs-pr/usbcon/why-is-my-usb-driver-getting-out-of-bandwidth-errors-.md",
                              "redirect_URL":  "/windows-hardware/drivers/usbcon/usb-bandwidth-allocation",
                              "redirect_document_id":  false
@@ -1460,11 +1410,6 @@
                             "source_path":  "windows-driver-docs-pr/install/signing-drivers-during-development-and-test--windows-vista-and-later-.md",
                             "redirect_URL":  "/windows-hardware/drivers/install/signing-drivers-during-development-and-test",
                              "redirect_document_id":  false
-                         },
-                         {
-                             "source_path":  "windows-driver-docs-pr/sensors/architecture-overview.md",
-                             "redirect_URL":  "/windows-hardware/drivers/sensors/architecture-overview-for-sensor-drivers",
-                             "redirect_document_id":  true
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/display/enabling-debug-output-for-the-video-memory-manager.md",
