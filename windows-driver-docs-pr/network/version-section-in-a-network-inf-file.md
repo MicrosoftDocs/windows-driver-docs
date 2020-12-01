@@ -106,7 +106,7 @@ The **Signature** entry must be **$Windows NT$**.
 
 ### PnpLockDown
 
-The **PnpLockDown** entry should be set to 1 to prevents applications from directly modifying the files that your driver package's INF file specifies. For more information about this entry, see [**INF Version Section**](../install/inf-version-section.md).
+The **PnpLockDown** entry should be set to 1 to prevent applications from directly modifying the files that your driver package's INF file specifies. For more information about this entry, see [**INF Version Section**](../install/inf-version-section.md).
 
 ### CatalogFile
 
