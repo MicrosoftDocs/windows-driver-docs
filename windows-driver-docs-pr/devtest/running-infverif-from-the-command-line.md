@@ -21,7 +21,7 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <pa
         Display verbose file logging details.
 
 /k
-        Reports errors for Windows Update submission. (mode)
+        Reports errors for Hardware Dev Center submission. (mode; checks error codes 1100-1299)
 
 /u
         Reports errors if INF is not Universal. (mode)
@@ -58,6 +58,8 @@ USAGE: InfVerif.exe [/v] [/u | /universal] [/w] [/k] [/info] [/stampinf] [/l <pa
 
 Only one mode option may be passed at a time.
 ```
+
+For info on error codes, see [INF Validation Errors and Warnings](./inf-validation-errors-and-warnings.md)
 
 The verbose option adds a line to the output that specifies if the INF is valid or not.  Certain arguments are tagged as modes, where only one should be passed.
 

@@ -23,7 +23,7 @@ For more details, see [Running InfVerif from the command line](../devtest/runnin
 
 ### Targeting current and earlier versions of Windows
 
-Each run of InfVerif tests a single ruleset, for example `/w` (Windows driver compatibility) or `/k` (Windows Update compatibility).  If your INF contains syntax introduced in a more recent version of Windows and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries and then run InfVerif multiple times, for example:
+Each run of InfVerif tests a single ruleset, for example `/w` (Windows driver compatibility) or `/k` (Hardware Dev Center submission).  If your INF contains syntax introduced in a more recent version of Windows and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries and then run InfVerif multiple times, for example:
 
 ```inf
 infverif /k <INF file>
