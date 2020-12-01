@@ -21,26 +21,20 @@ Use InfVerif with `/w` and `/v` to verify that a Windows Driver:
 
 For more details, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
 
-### Supporting Down-Level OS Versions
+### Targeting current and earlier versions of Windows
 
-InfVerif can only apply one ruleset (“/w”, “/k”, etc.) per run.  If you have designed a Windows Driver INF that supports down-level OS versions which do not support newly released isolated INF syntax, you must do the following to validate your INF:
+Each run of InfVerif tests a single ruleset, for example `/w` (Windows driver compatibility) or `/k` (Windows Update compatibility).  If your INF contains syntax introduced in a more recent version of Windows and you also want to target previous Windows versions, use [INF decorations](../install/inf-manufacturer-section.md) to mark version-specific INF entries and then run InfVerif multiple times, for example:
 
-1. Decorate each INF install section with appropriate [OS decorations](https://docs.microsoft.com/windows-hardware/drivers/install/inf-manufacturer-section).  Isolated INF syntax should be decorated with the latest OS version and non-isolated INF syntax added for supporting down-level OS versions should be decorated with the OS versions it supports.
-
-2. Run InfVerif sequentially:
-
-```
+```inf
 infverif /k <INF file>
 infverif /w NTAMD64.10.0.0.<build number where w is a requirement> <INF file>
 ```
 
-If there are no errors, then the INF adheres to the driver package isolation requirement of Windows Drivers.
+If there are no errors, the INF meets the [Driver Package Isolation](driver-isolation.md) requirement of Windows Drivers.
 
-An example of how to use OS decorations can be seen on [this page](https://docs.microsoft.com/windows-hardware/drivers/install/sample-inf-models-sections-for-one-or-more-target-operating-system).
+For example, the [INF AddEventProvider Directive](../install/inf-addeventprovider-directive.md) is available starting in Windows 10, version 1809. To use this directive in an INF targeting an OS version before Windows 10, version 1809, decorate both the install section using legacy INF syntax for registering ETW event providers as well as the install section using the updated syntax.
 
-This step is especially important for isolated INF syntax that is new.  For example, starting in Windows 10 Version 1809, there is new isolated [INF syntax](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addeventprovider-directive) for registering [ETW event providers](https://docs.microsoft.com/windows-hardware/test/wpt/eventprovider).  
-
-If your Windows Driver INF needs to support an OS version before Windows 10 Version 1809, OS decoration is needed for both install sections: the section that uses the legacy INF syntax of registering ETW event providers and the section that uses the isolated INF syntax to register ETW event providers.
+For sample code showing how to use OS decorations, see [Sample INF Models Sections for One or More Target Operating Systems](../install/sample-inf-models-sections-for-one-or-more-target-operating-system.md).
 
 ## Driver Verifier Driver Isolation Checks
 
