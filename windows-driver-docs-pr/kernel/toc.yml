@@ -1309,6 +1309,7 @@
     - name: "Using TmXxx Routines"
       href: using-tmxxx-routines.md
   - name: "Dynamic Hardware Partitioning Techniques"
+    items:
     - name: "Introduction to Dynamic Hardware Partitioning"
       href: introduction-to-dynamic-hardware-partitioning.md
     - name: "Dynamic Hardware Partitioning Architecture"
