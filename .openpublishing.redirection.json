@@ -1,6 +1,11 @@
 {
     "redirections":  [
         {
+            "source_path":  "windows-driver-docs-pr/kernel/dynamic-hardware-partitioning-techniques.md",
+            "redirect_URL":  "/windows-hardware/drivers/kernel/introduction-to-dynamic-hardware-partitioning",
+            "redirect_document_id":  false
+        },
+        {
             "source_path":  "windows-driver-docs-pr/netcx/netadaptercx-hardware-offloads.md",
             "redirect_URL":  "/windows-hardware/drivers/netcx/introduction-to-hardware-offloads",
             "redirect_document_id":  false
