@@ -1802,7 +1802,7 @@
         - name: "PagedCode"
           href: storport-pagedcode.md
         - name: "StorPortStatusPending"
-          href: storport-storportstatuspending.md
+          href: storport-storportstatuspending.md  
   - name: "Static Driver Verifier"
 # Auto-expanded node
     items: 
@@ -1813,6 +1813,7 @@
     - name: "Static Driver Verifier commands (MSBuild)"
       href: -static-driver-verifier-commands--msbuild-.md
     - name: "Introducing Static Driver Verifier"
+      href: introducing-static-driver-verifier.md
 # Auto-expanded node
       items: 
       - name: "Introducing Static Driver Verifier"
@@ -1999,6 +2000,11 @@
           href: the-process-cannot-access-the-file---path---because-it-is-being-used-b.md
       - name: "Static Driver Verifier Diagnostics"
         href: static-driver-verifier-diagnostics.md
+  - name: "CodeQL and the Static Tools Logo Test"
+# Auto-expanded node
+    items: 
+    - name: "CodeQL and Static Tools Logo Test"
+      href: static-tools-and-codeql.md  
   - name: "WDF Verifier Control Application"
 # Auto-expanded node
     items: 
