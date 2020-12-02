@@ -33,10 +33,10 @@ File handle for the file or directory on which to set a reparse point. This para
 Control code for the operation. Use FSCTL_SET_REPARSE_POINT_EX for this operation.
 
 *InputBuffer*  
-Pointer to a caller-allocated [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer) structure that contains the reparse point data.
+Pointer to a caller-allocated [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer) or [**REPARSE_DATA_BUFFER_EX**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer_ex) structure that contains the reparse point data.
 
 *InputBufferLength*  
-Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. For a REPARSE_GUID_DATA_BUFFER structure, this value must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. For a REPARSE_DATA_BUFFER structure, this value must be at least REPARSE_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE.
+Size, in bytes, of the buffer pointed to by the *InputBuffer* parameter. For a REPARSE_GUID_DATA_BUFFER structure, this value must be at least REPARSE_GUID_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE. For a REPARSE_DATA_BUFFER_EX structure, this value must be at least REPARSE_DATA_BUFFER_HEADER_SIZE, plus the size of the user-defined data, and it must be less than or equal to MAXIMUM_REPARSE_DATA_BUFFER_SIZE.
 
 *OutputBuffer*  
 Not used with this operation; set to **NULL**.
@@ -79,7 +79,7 @@ Not used with this operation; set to zero.
 
 [**IsReparseTagNameSurrogate**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-isreparsetagnamesurrogate)
 
-[**REPARSE_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer)
+[**REPARSE_DATA_BUFFER_EX**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_data_buffer_ex)
 
 [**REPARSE_GUID_DATA_BUFFER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_reparse_guid_data_buffer)
 
