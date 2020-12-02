@@ -24,9 +24,9 @@ This Device Manager error message indicates that the driver could not be loaded.
 
 Reinstall or obtain a new driver.
 
-Reasons for this error include the following:
+Some of the more common reasons for this error include the following:
 
 - A driver file that is not present, a binary file that is corrupted, a file I/O problem, or a driver that references an entry point in another binary that could not be loaded.
 
-- The driver does not comply with [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md).
+- The system has [Hypervisor-Protected Code Integrity](https://docs.microsoft.com/windows-hardware/test/hlk/testref/driver-compatibility-with-device-guard) enabled and the driver is not compatible with that feature.
 
