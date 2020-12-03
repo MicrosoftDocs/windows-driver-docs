@@ -9,11 +9,13 @@ ms.localizationpriority: medium
 # Driver Shiproom Release Cadence Windows
 Last Updated: November 18, 2020
 
+This page provides information on the operation schedule for driver shiproom. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
+
+We have a shared goal of keeping devices up to date while providing users a high-quality experience.  Recently when a driver update is released alongside OS updates, it has resulted in a poor experience and significantly impacted end-users. Occasionally, we have had other driver release incidents which occur outside of normal business hours (Redmond time) which impact our ability to intervene and prevent additional devices from receiving "poor" drivers. Additionally, we have received many requests to have a predictable driver release cadence from many partners.
+
 Windows as a Service has a well-established OS update release cadence.
     **Latest Cumulative Update (LCU)**: Monthly Quality and Security updates released during the second week.  This is also known as the “B” release and is offered to all eligible Windows 10 devices through Windows Update (WU) scans.
     **Feature Updates**: Provide the latest feature experiences and quality fixes.
-
-We have a shared goal of keeping devices up to date while providing users a high-quality experience.  Recently when a driver update is released alongside OS updates, it has resulted in a poor experience and significantly impacted end-users. Occasionally, we have had other driver release incidents which occur outside of normal business hours (Redmond time) which impact our ability to intervene and prevent additional devices from receiving "poor" drivers. Additionally, we have received many requests to have a predictable driver release cadence from many partners.
 
 To ensure we release quality drivers, reduce the risk of releasing drivers at the same time as OS changes and provide ecosystem partners a predictable driver release cadence; we are making the following changes for releasing drivers marked as needing "Microsoft Approval". Today, this includes:
 * Flighted drivers:  Drivers (Shipping Label) marked as **Automatic** = Critical Update (CU) or Dynamic Update (DU) or both 
@@ -33,7 +35,7 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 |----|----|----|
 |2 days before | Feature OS Rollout | 2 days after |
 
-> A. If there are known issues for feature update and driver compatibility, partners can request feature update offer block mitigation while a compatible driver update is being validated and posted to WU. For more information see: [Feature Update Windows Update (WU) Offer Block Mitigation Request](#featureUpdates)
+> A. If there are known issues for feature update and driver compatibility, partners can request feature update offer block mitigation while a compatible driver update is being validated and posted to WU.
 
 3. **Weekends**: Driver needing “Microsoft Approval” will not be released from Friday until Sunday 5PM Pacific Time, unless the next day is in a deferral period.
 
@@ -61,52 +63,16 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 
 See the [2021 driver deferral periods](#calendar) calendars for additional dates. 
  
-## Call to Action
-We believe that creating a predictable driver release cadence will result in better update user experience across both Windows 10 OS and driver updates. We encourage ecosystem partners to _plan for their driver flighting and publication releases_ in alignment with above cadence and help us improve the experience of our mutual users and customers. 
-
-### Exception Process
-We recognize the need for partners to release critical/security driver updates during the limited driver release windows and these will be handled via an exception process. For any drivers needing immediate release, please open a Hardware Dev Center Partner Support Request (ticket) with the keywords **“Driver release deferral exception request”** added to the title. Please also, include the following information in the ticket:
-* Shipping Label ID(s)
-* Reason for “Urgent Driver release request”
-* Impact to end-users if driver release is delayed
-
-For additional information to contact Hardware Dev Center Support, please see the [**How Do I contact Hardware Dev Center Dashboard Support?**](./hardware-dashboard-faq.md).
-
+> 📘 Note
+>
+> We believe that creating a predictable driver release cadence will result in better update user experience across both Windows 10 OS and driver updates. We encourage ecosystem partners to _plan for their driver flighting and publication releases_ in alignment with above cadence and help us improve the experience of our mutual users and customers. 
  
 ## Appendix
 ### FAQ:
 What does this deferral mean for newly submitted drivers or drivers currently In-Flight?
 * This deferral is for the actual “Release” of a driver needing “Microsoft Approval” (marked as Automatic or Dynamic Update) to WU.  Newly submitted drivers and drivers currently In-Flight will proceed as they normally do.  
 
-### <a id="calendar"></a>2021 Driver Deferral Calendar:
+<a id="calendar"></a>What is the latest deferral calendar?
 ** This calendar is subject to changes based on OS release timelines.
  
 ![Image 2021 Driver Release Calendar](images/2021driverReleaseCalendar.png)
-
-### <a id="featureUpdates"></a>Feature Update Windows Update (WU) Offer Block Mitigation Request
-In order to ensure that end users have a good post-update experience, when a driver has a known incompatibility with a feature update. Partners can request a temporary WU offer block (~30 – 60 days) so that Windows Update will not offer the feature update to devices running a driver version with a known incompatibility. The offer block will be removed once a partner has posted an updated driver (as Automatic and/or Dynamic) via Hardware Dev Center portal.
-
-|Mitigation type|Description|Criteria for application|
-|-------|-------|--------| 
-|Windows Update (WU) offer block|A temporary hold on offering an OS upgrade to a device. These devices are blocked until the fix is released via servicing, at which point the device is then unblocked. This does not impact media installs.|An issue that directly impacts the OS after upgrade, such as a driver crash, BSOD or data loss, security issues, connectivity loss, etc, for which a fix is in progress.|
-
-To request an offer block:
-1)	File a new feedback on [MS Collaborate in the EEAP Engagement](https://partner.microsoft.com/dashboard/collaborate/feedback/wits/bugs/create).
-2)	Title must begin with **[WU offer block request] [IHV/ISV - Driver Name] [Impacted driver versions]**, i.e. [WU Offer block request] [Contoso – contoso.sys] [1.1 through 1.5]
-3)	Provide the following information in the **Repro Steps**
-
-> End user scenario: Description of how end user scenario is impacted, i.e. Garbled video playback after feature os update with graphics driver version X
-
-> Estimated impact (number of in-market devices): <br />
-> Detailed Repro steps:<br />
-> Block criteria (e.g., driver name + version, BIOS, HWIDs, etc): <br />
-> Name and path of driver binary:<br />
->  Found in OS version:<br />
-> Workaround (if any):<br />
-> Related OS bug (if any):<br />
-> Driver owner: Name of IHV/ISV/partner creating fixed driver version <br />
-> Requested lifetime of block – i.e. 30 days<br />
-> Access to a device in Redmond, WA (Y/N/NA)<br />
-> Repro rate (%)<br />
-> Is this a regression caused by an OS change? [Release/Release]<br />
-> Business impact (sales volume) 
