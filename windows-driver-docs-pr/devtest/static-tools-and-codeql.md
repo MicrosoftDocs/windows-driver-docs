@@ -5,7 +5,7 @@ ms.assetid: 134a5889-8ab9-4954-a10f-ac6fbafcd207
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 12/01/2020
+ms.date: 12/03/2020
 ms.localizationpriority: medium
 ---
 
@@ -123,7 +123,7 @@ CodeQl uses the MSBuild compiler to process the C++ code to prepare it to be ana
 
 ### Example
 
-Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](/develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned.
+Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](../develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned.
 
 This example will process the evaluate the kmdfecho.sln driver sample, which is available on github.
 
@@ -259,10 +259,10 @@ In order to review the results, install the [Microsoft SARIF Viewer for Visual S
 
 ## Driver Verification Log (DVL) Consumption of SARIF Output
 
-Microsoft will enforce the requirement of running CodeQL queries with the Static Tools Logo Test.  The Static Tools Logo Test uses a [Driver Verification Log (DVL)](/develop/creating-a-driver-verification-log.md) to gather results from different static analyses run on driver source code.  This DVL is then parsed as part of the Static Tools Logo Test used in an HLK test.
+Microsoft will enforce the requirement of running CodeQL queries with the Static Tools Logo Test.  The Static Tools Logo Test uses a [Driver Verification Log (DVL)](../develop/creating-a-driver-verification-log.md) to gather results from different static analyses run on driver source code.  This DVL is then parsed as part of the Static Tools Logo Test used in an HLK test.
 
 CodeQL results follow the same model of using a DVL to show that the driver being certified ran the appropriate CodeQL queries in order to pass the HLK test for certification.
 
 Place the .sarif file in the same directory as the .vcxproj file for which a DVL is being generated.  The exact name of the results file does not matter, as long as the file ends with *".sarif"*. The ability to submit a SARIF results file is available in the WDK, preview build 20190 and later.
 
-Instructions for how to generate a DVL can be found on [Creating a Driver Verification Log](/develop/creating-a-driver-verification-log.md). Guidance for where to place the DVL for consumption by the Static Tools Logo HLK Test can be found in [Running the test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
+Instructions for how to generate a DVL can be found on [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md). Guidance for where to place the DVL for consumption by the Static Tools Logo HLK Test can be found in [Running the test](https://docs.microsoft.com/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
