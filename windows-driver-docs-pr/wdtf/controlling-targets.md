@@ -36,7 +36,6 @@ The [**Action Interfaces**](/windows-hardware/drivers/ddi/index) are identified 
 You can add interfaces and implementations of interfaces to WDTF through a plug-in model. For more information about this model, see [Extending the Framework](extending-the-framework.md).
 
 ## Related topics
-[**Action Interfaces**](/windows-hardware/drivers/ddi/index)  
 [Extending the Framework](extending-the-framework.md)  
 [**GetInterface**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getinterface)  
 [**GetInterfaces**](/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftargets2-getinterfaces)  
