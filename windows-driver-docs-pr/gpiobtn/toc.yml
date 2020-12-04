@@ -49,8 +49,6 @@
       href: windows-button-sample-code.md
     - name: "ACPI descriptor samples"
       href: acpi-descriptor-samples.md
-    - name: "HID button report descriptors"
-      href: hid-button-report-descriptors.md
   - name: "Implement the unattended Windows Setup setting"
     href: implement-the-unattended-windows-setup-setting.md
   - name: "Logging and investigations"
