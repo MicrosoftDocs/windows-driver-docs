@@ -1,7 +1,6 @@
 ---
 title: C30029
 description: Warning C30029 Calling a memory allocating function that requests executable memory.
-ms.assetid: E32E6EDB-010A-4E7F-8505-1E7557BB3FDF
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

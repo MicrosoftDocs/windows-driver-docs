@@ -1,7 +1,6 @@
 ---
 title: Extended Capabilities from a WDM Audio Driver
 description: Extended Capabilities from a WDM Audio Driver
-ms.assetid: 8ee081ee-623d-4eaf-953f-20ccfbbe9800
 keywords:
 - WDM audio extensions WDK , about legacy support extensions
 - WDM audio extensions WDK , device IDs

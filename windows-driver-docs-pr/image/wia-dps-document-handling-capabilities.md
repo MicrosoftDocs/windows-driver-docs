@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES
 description: The WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES property contains the capabilities of a scanner.
-ms.assetid: 19c9cbd0-19ef-4d44-85f1-25e71f9a92bc
 keywords: ["WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref

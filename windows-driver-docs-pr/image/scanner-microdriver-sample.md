@@ -1,7 +1,6 @@
 ---
 title: Scanner Microdriver Sample
 description: Scanner Microdriver Sample
-ms.assetid: 1b50d057-1585-4f2d-b3dc-0d5cad5533ba
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

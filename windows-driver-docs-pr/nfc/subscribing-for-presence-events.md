@@ -1,7 +1,6 @@
 ---
 title: Subscribing for presence events
 description: Subscribing for presence events
-ms.assetid: 4AA6C7DA-5301-4356-8AF9-5567322FAB46
 keywords:
 - NFC
 - near field communications

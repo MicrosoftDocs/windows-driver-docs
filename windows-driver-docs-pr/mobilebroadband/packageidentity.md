@@ -1,7 +1,6 @@
 ---
 title: PackageIdentity
 description: PackageIdentity
-ms.assetid: b5533962-ea42-416e-bbd8-ce9dce1a9a40
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

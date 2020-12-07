@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for NDIS Selective Suspend
 description: Standardized INF Keywords for NDIS Selective Suspend
-ms.assetid: A45EE23D-1C60-4DA4-82A5-89DB5CE48E21
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

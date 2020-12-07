@@ -1,7 +1,6 @@
 ---
 title: Unloading Video Hardware
 description: Unloading Video Hardware
-ms.assetid: 31bea975-1c4b-4157-aec9-49bb7ad69cd0
 keywords:
 - display drivers WDK Windows 2000 , video hardware unloads
 - video hardware unloads WDK Windows 2000 display

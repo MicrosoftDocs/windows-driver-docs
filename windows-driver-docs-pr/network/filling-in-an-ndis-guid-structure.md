@@ -1,7 +1,6 @@
 ---
 title: Filling in an NDIS_GUID Structure
 description: Filling in an NDIS_GUID Structure
-ms.assetid: 971f6f25-fd2b-4a1e-9378-6270a094f4ff
 keywords:
 - NDIS_GUID
 - WMI WDK networking , GUIDs

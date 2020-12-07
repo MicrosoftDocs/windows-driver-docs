@@ -1,7 +1,6 @@
 ---
 title: Drawing Monochrome Pointers
 description: Drawing Monochrome Pointers
-ms.assetid: b3e436d2-b804-42fb-89ca-ecf66dcb584e
 keywords:
 - drawing pointers WDK Windows 2000 display
 - display drivers WDK Windows 2000 , pointers

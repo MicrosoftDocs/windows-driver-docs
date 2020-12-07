@@ -1,7 +1,6 @@
 ---
 title: WMI Class Names and Base Classes
 description: WMI Class Names and Base Classes
-ms.assetid: 6c3f74a3-e596-4694-8619-db38d67e030c
 keywords: ["base classes WDK WMI", "names WDK WMI", "classes WDK WMI", "WMI WDK kernel , classes"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

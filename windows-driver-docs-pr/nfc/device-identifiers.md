@@ -1,7 +1,6 @@
 ---
 title: NFP device identifiers
 description: NFP device identifiers
-ms.assetid: B387D3F8-A9A7-47F0-B5E3-8437581947E4
 keywords:
 - NFC
 - near field communications

@@ -1,7 +1,6 @@
 ---
 title: WHEA Management Operations
 description: WHEA Management Operations
-ms.assetid: 74b57d81-c6ee-4823-b877-53c25d2eaa8a
 keywords:
 - WHEA WDK , management operations
 - Windows Hardware Error Architecture WDK , management operations

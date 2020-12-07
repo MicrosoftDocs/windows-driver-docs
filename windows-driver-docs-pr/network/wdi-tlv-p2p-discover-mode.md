@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_DISCOVER_MODE
 description: WDI_TLV_P2P_DISCOVER_MODE is a TLV that contains Wi-Fi Direct discovery mode information for OID_WDI_TASK_P2P_DISCOVER.
-ms.assetid: 430DDDBE-C861-4E85-BFAB-31670F77696D
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DISCOVER_MODE Network Drivers Starting with Windows Vista

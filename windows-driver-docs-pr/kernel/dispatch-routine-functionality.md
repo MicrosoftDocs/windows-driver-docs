@@ -1,7 +1,6 @@
 ---
 title: Dispatch Routine Functionality
 description: Dispatch Routine Functionality
-ms.assetid: cfc191af-2b65-465b-972e-9617a8f7d8b7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

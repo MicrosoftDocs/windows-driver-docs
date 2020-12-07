@@ -1,7 +1,6 @@
 ---
 title: Version Numbers for Audio Drivers
 description: Version Numbers for Audio Drivers
-ms.assetid: 6d621021-eb45-40ab-9452-97c9be2bbdd8
 keywords:
 - version numbers WDK audio
 - audio miniport drivers WDK , version numbers

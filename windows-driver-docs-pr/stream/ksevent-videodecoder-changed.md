@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VIDEODECODER\_CHANGED
 description: The KSEVENT\_VIDEODECODER\_CHANGED event propagates an action, such as the selection of a new physical input connector, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-ms.assetid: cb197233-fce3-4580-95d3-94605fd1f3e4
 keywords: ["KSEVENT_VIDEODECODER_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref

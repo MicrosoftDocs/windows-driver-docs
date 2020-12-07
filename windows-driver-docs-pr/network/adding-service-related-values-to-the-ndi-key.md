@@ -1,7 +1,6 @@
 ---
 title: Adding Service-Related Values to the Ndi Key
 description: Adding Service-Related Values to the Ndi Key
-ms.assetid: f967396c-6695-458c-a081-ef382ed7c9dd
 keywords:
 - add-registry-sections WDK networking , Ndi values and keys
 - Nido keys and values WDK networking

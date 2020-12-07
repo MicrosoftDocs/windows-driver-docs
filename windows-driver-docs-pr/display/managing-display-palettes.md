@@ -1,7 +1,6 @@
 ---
 title: Managing Display Palettes
 description: Managing Display Palettes
-ms.assetid: a0ff1a9c-82dc-4317-a0ec-c387027a52ba
 keywords:
 - display drivers WDK Windows 2000 , palettes
 - color lookup tables WDK Windows 2000 display

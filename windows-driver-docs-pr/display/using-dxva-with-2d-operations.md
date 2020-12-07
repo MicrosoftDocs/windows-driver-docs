@@ -1,7 +1,6 @@
 ---
 title: Using DXVA with 2D Operations
 description: Using DXVA with 2D Operations
-ms.assetid: a864941d-69ac-48a4-85a2-7e05cd3c9617
 keywords:
 - two-dimensional operations WDK DirectX 9.0 , DXVA
 - 2D operations WDK DirectX 9.0 , DXVA

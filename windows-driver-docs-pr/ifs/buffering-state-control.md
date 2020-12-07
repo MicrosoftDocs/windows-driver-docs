@@ -1,7 +1,6 @@
 ---
 title: Buffering State Control
 description: Buffering State Control
-ms.assetid: 16590332-9d0d-4d8b-8304-a3fa9269c0e2
 keywords:
 - RDBSS WDK file systems , buffering state
 - Redirected Drive Buffering Subsystem WDK file systems , buffering state

@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS 6.1
 description: Introduction to NDIS 6.1
-ms.assetid: c15d1ba9-dc35-443e-931d-f67c004f41e9
 keywords:
 - network drivers WDK , NDIS
 - NDIS WDK , about NDIS

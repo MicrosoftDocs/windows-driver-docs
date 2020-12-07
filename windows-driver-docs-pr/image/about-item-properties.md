@@ -1,7 +1,6 @@
 ---
 title: About item properties
 description: About item properties
-ms.assetid: f8d00e29-ce7d-4949-a713-07755f495d6a
 ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: CoNDIS Client Registration
 description: CoNDIS Client Registration
-ms.assetid: 335dd117-f6c8-4416-8527-ff64c1a5f3ee
 keywords:
 - client registration WDK CoNDIS
 - registering entry points

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_BATTERY\_STATUS
 description: The WIA\_DPC\_BATTERY\_STATUS property defines the percentage of battery power that is left to operate a camera device.
-ms.assetid: d6e50c77-9c30-4091-9d6e-7215907ba87b
 keywords: ["WIA_DPC_BATTERY_STATUS Imaging Devices"]
 topic_type:
 - apiref

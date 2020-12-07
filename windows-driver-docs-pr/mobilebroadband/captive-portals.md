@@ -1,7 +1,6 @@
 ---
 title: Captive portals
 description: Captive portals
-ms.assetid: 6f710440-3012-4bf4-92cc-3743b0f4fd34
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SIGNAL_STATE
 description: OID_WWAN_SIGNAL_STATE returns or sets the current signal state.
-ms.assetid: 6f5d8fd6-b4cf-4058-a27e-d4f7cea19f47
 ms.date: 04/05/2019
 keywords: 
  -OID_WWAN_SIGNAL_STATE Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Location driver guidelines for power and performance
 description: The following sections describe guidelines to ensure that your location driver conserves power and provides data efficiently.
-ms.assetid: 81B9A3A1-D273-48C8-A808-CDB1533A1B6A
 ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---

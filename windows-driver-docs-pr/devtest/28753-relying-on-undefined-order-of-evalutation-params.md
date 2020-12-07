@@ -1,7 +1,6 @@
 ---
 title: C28753
 description: Warning C28753 Relying on undefined order of evaluation of parameters.
-ms.assetid: D8879714-63A2-4F36-B08A-1E487ACB5BC1
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_MDL_READ union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_MDL\_READ.
-ms.assetid: d07d3ba2-a405-481c-986b-7e26cda61909
 keywords: ["FLT_PARAMETERS for IRP_MJ_MDL_READ union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

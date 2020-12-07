@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting Device and Driver Installations
 description: Troubleshooting Device and Driver Installations
-ms.assetid: 1ffad62b-140d-4a0a-9174-245e0344e605
 keywords:
 - Device setup WDK device installations , troubleshooting
 - device installations WDK , troubleshooting

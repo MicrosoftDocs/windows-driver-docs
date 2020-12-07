@@ -1,7 +1,6 @@
 ---
 title: Filtering condition flags
 description: This section describes filtering condition flags.
-ms.assetid: a2493fc5-614f-47df-a818-cdec06dc9f4a
 keywords:
 - Filtering condition flags network drivers
 ms.date: 01/07/2019

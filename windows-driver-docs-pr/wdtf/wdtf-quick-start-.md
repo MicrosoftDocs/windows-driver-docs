@@ -1,7 +1,6 @@
 ---
 title: WDTF Quick Start
 description: The Windows Driver Kit provides an integrated solution for writing, deploying, and running tests that use the Windows Driver Test Framework (WDTF).
-ms.assetid: 77402D9A-DD21-4B7F-B052-43DB8C04EA1B
 ms.date: 10/22/2018
 ms.localizationpriority: medium
 ---

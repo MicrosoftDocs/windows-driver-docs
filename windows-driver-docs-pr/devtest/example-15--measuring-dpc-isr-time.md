@@ -1,7 +1,6 @@
 ---
 title: Example 15 Measuring DPC/ISR Time
 description: Example 15 Measuring DPC/ISR Time
-ms.assetid: 47936b8b-fd04-44dc-9cd9-77e9d89b4499
 keywords:
 - deferred procedure calls WDK software tracing
 - DPCs WDK software tracing

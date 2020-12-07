@@ -1,7 +1,6 @@
 ---
 title: Disk Integrity Checking
 description: Disk Integrity Checking
-ms.assetid: bb838594-637c-4fc4-b2ec-964b69faabcf
 keywords:
 - Disk Integrity Checking feature WDK Driver Verifier
 - disk storage accuracy WDK Driver Verifier

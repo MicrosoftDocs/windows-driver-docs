@@ -1,7 +1,6 @@
 ---
 title: Locking and Unlocking a Parallel Port
 description: Locking and Unlocking a Parallel Port for Use by a Parallel Device
-ms.assetid: dbfa962e-9de8-4a9c-b962-24b53c41f35d
 keywords:
 - parallel devices WDK , port locking/unlocking
 - locking WDK parallel devices

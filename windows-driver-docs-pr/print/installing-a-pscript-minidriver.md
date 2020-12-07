@@ -1,7 +1,6 @@
 ---
 title: Installing a Pscript Minidriver
 description: Installing a Pscript Minidriver
-ms.assetid: 9c48b2b0-c293-4606-bbaa-3fcaca01c300
 keywords:
 - minidrivers WDK Pscript , installing
 - INF files WDK print , Pscript

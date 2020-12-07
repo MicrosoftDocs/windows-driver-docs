@@ -1,7 +1,6 @@
 ---
 title: dtx (Display Type - Extended Debugger Object Model Information)
 description: The dtx command displays extended symbolic type information using the debugger object model. The dtx command is similar to the dt (Display Type) command.
-ms.assetid: 758D752E-65A0-4F1D-BB56-06E4ECEC6D48
 keywords: ["dtx (Display Type - Extended Debugger Object Model Information) Windows Debugging"]
 ms.date: 09/17/2017
 topic_type:

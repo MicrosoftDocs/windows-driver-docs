@@ -1,7 +1,6 @@
 ---
 title: Binding a Socket to a Transport Address
 description: Binding a Socket to a Transport Address
-ms.assetid: b76bb601-536f-43de-b91c-932f4f08c274
 keywords:
 - Winsock Kernel WDK networking , local transport addresses
 - WSK WDK networking , local transport addresses

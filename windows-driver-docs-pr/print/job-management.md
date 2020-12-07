@@ -1,7 +1,6 @@
 ---
 title: Job Management
 description: A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
-ms.assetid: D1236DD2-D4AD-4615-9036-7EC75D6CADCE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

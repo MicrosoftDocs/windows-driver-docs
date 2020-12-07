@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_LINK_SPEED
 description: This topic describes the OID_GEN_CO_LINK_SPEED object identifier (OID).
-ms.assetid: a88ef1b9-b3f0-403e-8188-85aead46663f
 keywords:
 - OID_GEN_CO_LINK_SPEED
 ms.date: 11/02/2017

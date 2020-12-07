@@ -1,7 +1,6 @@
 ---
 title: DeviceState
 description: DeviceState
-ms.assetid: 4cf650ea-cccf-411c-809f-0a01e2ceb067
 keywords: ["DeviceState"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

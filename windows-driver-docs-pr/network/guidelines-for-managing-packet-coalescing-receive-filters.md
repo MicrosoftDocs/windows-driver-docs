@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Managing Packet Coalescing Receive Filters
 description: Guidelines for Managing Packet Coalescing Receive Filters
-ms.assetid: 7FA44368-1641-478A-927B-020619F39A0D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

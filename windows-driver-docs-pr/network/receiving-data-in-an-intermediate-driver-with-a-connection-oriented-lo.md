@@ -1,7 +1,6 @@
 ---
 title: Connection-oriented lower edge intermediate driver data reception
 description: Receiving Data in an Intermediate Driver with a Connection-Oriented Lower Edge
-ms.assetid: c14b4e8a-cfa2-4771-83b2-aa20fda79d39
 keywords:
 - intermediate drivers WDK networking , receive operations
 - NDIS intermediate drivers WDK , receive operations

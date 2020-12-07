@@ -1,7 +1,6 @@
 ---
 title: Introduction to the Mobile Broadband (MBB) WDF class extension (MBBCx)
 description: An overview of the Mobile Broadband (MBB) WDF class extension (MBBCx).
-ms.assetid: FA4D1C2D-270B-40C4-A922-8ABDDE4D8444
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
 ms.date: 07/01/2019

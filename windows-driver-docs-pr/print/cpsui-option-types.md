@@ -1,7 +1,6 @@
 ---
 title: CPSUI Option Types
 description: CPSUI Option Types
-ms.assetid: 3b3c002c-a201-4f81-b208-30864343409b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

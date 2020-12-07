@@ -1,7 +1,6 @@
 ---
 title: Controlling a KD Connection Server Session
 description: Controlling a KD Connection Server Session
-ms.assetid: d927575f-f408-48d0-81f4-0711a09b0015
 keywords: ["KD connection server, controlling a session"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

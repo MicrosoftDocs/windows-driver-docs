@@ -1,7 +1,6 @@
 ---
 title: Motion Compensation Code Template
 description: Motion Compensation Code Template
-ms.assetid: 2632f84d-7ebb-4c55-9ba7-996f0cb891bd
 keywords:
 - motion-compensation code template WDK DirectX VA
 - ProcAmp WDK DirectX VA , motion-compensation code template

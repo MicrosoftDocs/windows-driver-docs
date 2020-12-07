@@ -1,7 +1,6 @@
 ---
 title: COPP Status Events
 description: COPP Status Events
-ms.assetid: e9d6bb04-9abd-4864-b359-3c8331843968
 keywords:
 - copy protection WDK COPP , status
 - video copy protection WDK COPP , status

@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_GUID
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_GUID identifier represents the base-data-type identifier that indicates that the data type is a GUID-typed globally unique identifier (GUID).
-ms.assetid: 77080860-c2b3-4c7c-8ab8-e0b02582ffbb
 keywords: ["DEVPROP_TYPE_GUID Device and Driver Installation"]
 topic_type:
 - apiref

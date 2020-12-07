@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_SET\_PROPERTY
 description: AVCSTRM\_SET\_PROPERTY
-ms.assetid: 5053eed7-23cf-46e7-bcd4-6eb2038d65bb
 keywords: ["AVCSTRM_SET_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

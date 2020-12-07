@@ -1,7 +1,6 @@
 ---
 title: Definitions
 description: Definitions
-ms.assetid: 904b7dd3-472d-4286-81c1-2af1109e2139
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT
 description: The KSPROPERTY\_SOUNDDETECTOR\_STREAMINGSUPPORT property indicates whether or not streaming is supported.
-ms.assetid: 3B9B43C0-31EE-4490-AD29-98DA81D1664E
 keywords: ["KSPROPERTY_SOUNDDETECTOR_STREAMINGSUPPORT Audio Devices"]
 topic_type:
 - apiref

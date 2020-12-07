@@ -1,7 +1,6 @@
 ---
 title: Supporting Power Management for DMA Devices
 description: Supporting Power Management for DMA Devices
-ms.assetid: abbb8f60-560f-41c9-85c5-1ec82078b99e
 keywords:
 - DMA operations WDK KMDF , power management
 - bus-master DMA WDK KMDF , power management

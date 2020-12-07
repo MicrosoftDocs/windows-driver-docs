@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_INVALID_DATA
 description: CM_PROB_INVALID_DATA
-ms.assetid: c9a43ace-e8e6-4cf4-8d71-aa27fb2f09a4
 keywords:
 - CM_PROB_INVALID_DATA
 ms.date: 04/20/2017

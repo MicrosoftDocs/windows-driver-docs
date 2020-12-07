@@ -1,7 +1,6 @@
 ---
 title: View WinDbg Command Line
 description: View WinDbg Command Line
-ms.assetid: 8127d6c9-ad63-47cb-8975-b2671d896e44
 keywords: ["View WinDbg Command Line"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

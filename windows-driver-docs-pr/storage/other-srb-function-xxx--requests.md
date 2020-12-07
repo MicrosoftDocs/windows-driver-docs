@@ -1,7 +1,6 @@
 ---
 title: Other SRB_FUNCTION_XXX Requests
 description: Other SRB_FUNCTION_XXX Requests
-ms.assetid: b0430d8e-e5cd-4f17-b77f-ec608b1469da
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo

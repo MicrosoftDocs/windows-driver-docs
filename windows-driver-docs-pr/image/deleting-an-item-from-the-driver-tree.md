@@ -1,7 +1,6 @@
 ---
 title: Deleting an Item from the Driver Tree
 description: Deleting an Item from the Driver Tree
-ms.assetid: eea7565c-be15-4610-a1b4-16596d1daca2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

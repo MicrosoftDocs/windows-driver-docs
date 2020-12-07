@@ -1,5 +1,4 @@
 ---
-ms.assetid: 2274e848-2a0b-445c-82cd-7bcd9e23078a
 title: Debugging a Driver
 description: Typically, debugging a kernel-mode driver requires two computers.
 ms.date: 08/22/2019

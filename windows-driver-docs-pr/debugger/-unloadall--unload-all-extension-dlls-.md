@@ -1,7 +1,6 @@
 ---
 title: .unloadall (Unload All Extension DLLs)
 description: The .unloadall command unloads all extension DLLs from the debugger on the host system.
-ms.assetid: 0d0c98bd-af53-4755-ae3b-35d79b37dea0
 keywords: ["Unload All Extension DLLs (.unloadall) command", "extension commands ( commands), Unload All Extension DLLs (.unloadall) command", ".unloadall (Unload All Extension DLLs) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

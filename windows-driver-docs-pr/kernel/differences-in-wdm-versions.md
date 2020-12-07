@@ -1,7 +1,6 @@
 ---
 title: Differences in WDM Versions
 description: Differences in WDM Versions
-ms.assetid: 735b01c4-4eff-4c8e-ab60-3813d1830112
 keywords: ["WDM drivers WDK kernel , versions", "versions WDK WDM", "compatibility WDK WDM", "cross-system compatibility WDK WDM", "Plug and Play WDK WDM", "driver support routines WDK WDM", "power management WDK WDM"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

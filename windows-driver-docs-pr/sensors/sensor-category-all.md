@@ -1,7 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_ALL
 description: The SENSOR\_CATEGORY\_ALL category represents the set of all platform-defined sensor categories.
-ms.assetid: 9a4524d2-055c-46e0-9650-66e6f2872fbc
 keywords: SENSOR_CATEGORY_ALL Sensor Devices
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: AVStream Descriptors
 description: AVStream Descriptors
-ms.assetid: fd436406-311b-4537-994d-fbd8d92d4673
 keywords:
 - AVStream descriptors WDK
 - descriptors WDK AVStream

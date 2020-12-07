@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Manufacturer
 description: DEVPKEY_Device_Manufacturer
-ms.assetid: 28da7262-bdb6-40da-a2f8-30dcbd4f5e6c
 keywords: ["DEVPKEY_Device_Manufacturer Device and Driver Installation"]
 topic_type:
 - apiref

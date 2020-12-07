@@ -1,7 +1,6 @@
 ---
 title: Processing in the 8-bit YUV Color Space
 description: Processing in the 8-bit YUV Color Space
-ms.assetid: fbf62dc6-b5bf-43f6-baa8-c6d1cee80f9b
 keywords:
 - ProcAmp WDK DirectX VA , YUV color space
 - YUV formats WDK DirectX VA

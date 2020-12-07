@@ -1,7 +1,6 @@
 ---
 title: OID_802_3_MAC_OPTIONS
 description: OID_802_3_MAC_OPTIONS
-ms.assetid: 9c1f29ad-6a2c-4cb4-b402-bd86e851dc2d
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_MAC_OPTIONS Network Drivers Starting with Windows Vista

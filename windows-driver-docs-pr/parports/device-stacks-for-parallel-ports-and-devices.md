@@ -1,7 +1,6 @@
 ---
 title: Device Stacks for Parallel Ports and Devices
 description: Device Stacks for Parallel Ports and Devices
-ms.assetid: 80222ed9-f900-4d97-b459-2d8ca780e1d1
 keywords:
 - system-supplied parallel drivers WDK , device stacks
 - device stacks WDK parallel drivers

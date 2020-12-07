@@ -1,7 +1,6 @@
 ---
 title: AddEuro
 description: AddEuro
-ms.assetid: 1d27fbb0-787f-4fb2-8a1c-3c68598d6d41
 keywords:
 - minidrivers WDK Pscript , AddEuro feature
 - AddEuro feature WDK print

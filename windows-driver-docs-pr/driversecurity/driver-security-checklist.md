@@ -1,7 +1,6 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.date: 03/13/2020
 ms.localizationpriority: medium
 ---

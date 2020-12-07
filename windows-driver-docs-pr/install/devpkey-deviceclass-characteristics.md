@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_Characteristics
 description: DEVPKEY_DeviceClass_Characteristics
-ms.assetid: dd50a97b-7230-46a5-b6d2-0f741d7ae5d4
 keywords: ["DEVPKEY_DeviceClass_Characteristics Device and Driver Installation"]
 topic_type:
 - apiref

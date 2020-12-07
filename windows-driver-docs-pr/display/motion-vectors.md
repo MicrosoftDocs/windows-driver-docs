@@ -1,7 +1,6 @@
 ---
 title: Motion Vectors
 description: Motion Vectors
-ms.assetid: 463a2434-7f3e-4960-a595-8ca2ccc21504
 keywords:
 - macroblocks WDK DirectX VA , motion vectors
 - motion vectors WDK DirectX VA

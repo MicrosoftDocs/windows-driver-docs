@@ -1,7 +1,6 @@
 ---
 title: Print Driver Packages
 description: Print Driver Packages
-ms.assetid: 902e1634-e705-4902-baab-a93818288b08
 keywords:
 - installing drivers WDK printer , packages
 - printer driver installations WDK , packages

@@ -1,7 +1,6 @@
 ---
 title: Using Four Uncompressed Surfaces for Decoding
 description: Using Four Uncompressed Surfaces for Decoding
-ms.assetid: ceeea614-6793-4a75-8334-7dd062ac0b46
 keywords:
 - video decoding WDK DirectX VA , sequence requirements
 - decoding video WDK DirectX VA , sequence requirements

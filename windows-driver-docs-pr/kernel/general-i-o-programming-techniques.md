@@ -1,7 +1,6 @@
 ---
 title: General I/O Programming Techniques
 description: General I/O Programming Techniques
-ms.assetid: c310829f-e102-4a96-aa3e-39136b8a641b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

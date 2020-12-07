@@ -1,7 +1,6 @@
 ---
 title: IrqlExFree2 rule (wdm)
 description: The IrqlExFree2 rule specifies that ExFreePool and ExFreePoolWithTag are called at proper IRQL.
-ms.assetid: D1E5BCF7-E4E4-4E43-8381-C16CB24F3B4B
 ms.date: 05/21/2018
 keywords: ["IrqlExFree2 rule (wdm)"]
 topic_type:

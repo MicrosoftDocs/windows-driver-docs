@@ -1,7 +1,6 @@
 ---
 title: FilmScanModesSupported element
 description: The required FilmScanModesSupported element contains a list of film exposure types that the film scanning option supports.
-ms.assetid: bcc1335f-4465-4bc1-a804-b6e8729ec616
 keywords: ["FilmScanModesSupported element Imaging Devices"]
 topic_type:
 - apiref

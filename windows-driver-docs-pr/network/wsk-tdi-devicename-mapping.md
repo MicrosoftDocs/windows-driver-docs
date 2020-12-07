@@ -1,7 +1,6 @@
 ---
 title: WSK_TDI_DEVICENAME_MAPPING
 description: WSK_TDI_DEVICENAME_MAPPING
-ms.assetid: 7636fa80-3908-4808-8fb8-6227ec6e023b
 ms.date: 07/18/2017
 keywords:
  - WSK_TDI_DEVICENAME_MAPPING Network Drivers Starting with Windows Vista

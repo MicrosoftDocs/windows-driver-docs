@@ -1,7 +1,6 @@
 ---
 title: Introduction to the Windows Hardware Error Architecture (WHEA)
 description: Introduction to the Windows Hardware Error Architecture (WHEA)
-ms.assetid: 5a0bbf8c-d644-4a64-9a7e-400d5de2c8fa
 keywords:
 - Windows Hardware Error Architecture WDK , about Windows Hardware Error Architecture
 - WHEA WDK , about Windows Hardware Error Architecture

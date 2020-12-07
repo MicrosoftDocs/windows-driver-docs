@@ -1,7 +1,6 @@
 ---
 title: Querying Packet Coalescing Capabilities
 description: Querying Packet Coalescing Capabilities
-ms.assetid: CD1839B5-2279-4E8C-ADD8-7869A3123B86
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

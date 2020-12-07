@@ -1,7 +1,6 @@
 ---
 title: Sensor types
 description: Universal Sensor Type GUIDs
-ms.assetid: AD1112ED-4EA8-429D-82E6-D1878447D5E3
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

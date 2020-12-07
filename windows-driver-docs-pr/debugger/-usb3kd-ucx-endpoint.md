@@ -1,7 +1,6 @@
 ---
 title: usb3kd.ucx_endpoint
 description: The usb3kd.ucx_endpoint command displays information about an endpoint on a USB device in the USB 3.0 tree. The display is based on data maintained by UcxVersion.sys.
-ms.assetid: 37667665-ACA1-48D3-B79E-5B9BBD689034
 keywords: ["usb3kd.ucx_endpoint Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

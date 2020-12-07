@@ -1,7 +1,6 @@
 ---
 title: Execution Groups
 description: Execution Groups
-ms.assetid: CC196843-A225-4193-9386-EE024B5D0B68
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

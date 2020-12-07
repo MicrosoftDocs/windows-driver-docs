@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS
 description: The KSPROPERTY\_SOUNDDETECTOR\_SUPPORTEDPATTERNS property is used to get a list of GUIDs that identify the types of supported patterns.
-ms.assetid: 8D840204-ADE8-4146-B88C-C0750B8FC33A
 keywords: ["KSPROPERTY_SOUNDDETECTOR_SUPPORTEDPATTERNS Audio Devices"]
 topic_type:
 - apiref

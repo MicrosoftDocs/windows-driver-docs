@@ -1,7 +1,6 @@
 ---
 title: OID_NIC_SWITCH_ALLOCATE_VF
 description: An overlying driver issues an object identifier (OID) method request of OID_NIC_SWITCH_ALLOCATE_VF to allocate resources for a PCI Express (PCIe) Virtual Function (VF).
-ms.assetid: CB88CE0C-705F-406B-90FE-FB206D6F4864
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_ALLOCATE_VF Network Drivers Starting with Windows Vista

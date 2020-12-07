@@ -1,7 +1,6 @@
 ---
 title: Top-Level Collections
 description: Top-Level Collections
-ms.assetid: dcbee8e3-d03a-45c8-92e4-0897b9f55177
 keywords:
 - top-level collections WDK HID
 ms.date: 04/20/2017

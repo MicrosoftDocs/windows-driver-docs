@@ -1,7 +1,6 @@
 ---
 title: Enabling an Error Source
 description: Enabling an Error Source
-ms.assetid: a65357fa-e600-47fe-8719-b67c36542711
 keywords:
 - error sources WDK WHEA , enabling
 - Windows Hardware Error Architecture WDK , enabling error sources

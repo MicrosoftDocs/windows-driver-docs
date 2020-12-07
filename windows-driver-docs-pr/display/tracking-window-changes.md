@@ -1,7 +1,6 @@
 ---
 title: Tracking Window Changes
 description: Tracking Window Changes
-ms.assetid: 76539ee8-439a-4c6a-b16a-3998e341f954
 keywords:
 - display drivers WDK Windows 2000 , window changes
 - window change tracking WDK Windows 2000 display

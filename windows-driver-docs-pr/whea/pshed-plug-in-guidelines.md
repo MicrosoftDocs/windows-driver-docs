@@ -1,7 +1,6 @@
 ---
 title: PSHED Plug-In Guidelines
 description: PSHED Plug-In Guidelines
-ms.assetid: 2d17ebef-9474-4825-be09-c924ebd60c44
 keywords:
 - platform-specific hardware error driver plug-ins WDK WHEA , guidelines
 - PSHED plug-ins WDK WHEA , guidelines

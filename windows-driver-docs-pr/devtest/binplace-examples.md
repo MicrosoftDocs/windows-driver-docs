@@ -1,7 +1,6 @@
 ---
 title: BinPlace Examples
 description: BinPlace Examples
-ms.assetid: 4f15f332-84ea-4dc1-989e-7c55b07c3ab5
 keywords:
 - BinPlace WDK , examples
 - examples WDK BinPlace

@@ -1,7 +1,6 @@
 ---
 title: Installing ICC Profiles
 description: Installing ICC Profiles
-ms.assetid: d9253ee8-c414-46a9-899f-46ae32cee41a
 keywords:
 - color management WDK print , installing ICC profiles
 - ICC profiles WDK print

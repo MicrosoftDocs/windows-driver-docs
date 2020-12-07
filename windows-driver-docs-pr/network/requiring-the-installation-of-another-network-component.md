@@ -1,7 +1,6 @@
 ---
 title: Requiring the Installation of Another Network Component
 description: Requiring the Installation of Another Network Component
-ms.assetid: 30e6db7f-46f4-414f-a485-051b007f0eb6
 keywords:
 - add-registry-sections WDK networking , component dependencies
 - component IDs WDK networking

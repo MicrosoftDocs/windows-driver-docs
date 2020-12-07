@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 2696d5c4-e1a1-4d9f-b5f5-e2083b548c65
 keywords: ["get_PortName method Print Devices", "get_PortName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PortName method"]
 topic_type:
 - apiref

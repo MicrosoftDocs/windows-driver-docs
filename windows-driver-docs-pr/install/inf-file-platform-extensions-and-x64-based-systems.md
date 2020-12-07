@@ -1,7 +1,6 @@
 ---
 title: INF File Platform Extensions and x64-Based Systems
 description: INF File Platform Extensions and x64-Based Systems
-ms.assetid: 062c58f7-3519-4835-9597-ab6be5ff5fe8
 keywords:
 - x64 INF file platform extensions WDK device installations
 ms.date: 04/20/2017

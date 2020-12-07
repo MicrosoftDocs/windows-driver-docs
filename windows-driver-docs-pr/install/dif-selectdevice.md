@@ -1,7 +1,6 @@
 ---
 title: DIF_SELECTDEVICE
 description: DIF_SELECTDEVICE
-ms.assetid: c1266182-b88f-406a-876c-e0f15050fdf3
 keywords: ["DIF_SELECTDEVICE Device and Driver Installation"]
 topic_type:
 - apiref

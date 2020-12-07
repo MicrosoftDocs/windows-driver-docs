@@ -1,7 +1,6 @@
 ---
 title: NFP device interface
 description: A client application communicates with the proximity device through a defined set of I/O control codes sent to an open handle.
-ms.assetid: ED63FDCF-3253-4976-8571-82F4824923C5
 keywords:
 - NFC
 - near field communications

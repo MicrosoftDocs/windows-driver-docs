@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 74dffe85-0e6d-4c2c-a933-2afb68624c76
 keywords: ["get_MaximumResolution method Print Devices", "get_MaximumResolution method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_MaximumResolution method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: C28165
 description: Warning C28165 The function pointer of class does not match the function class.
-ms.assetid: 0fc2b542-058c-4e98-b08e-2661c65e2dd0
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

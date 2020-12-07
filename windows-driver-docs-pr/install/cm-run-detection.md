@@ -1,7 +1,6 @@
 ---
 title: CM_Run_Detection
 description: CM_Run_Detection
-ms.assetid: c1e146a4-96ce-4e67-a585-0c51132ce7d5
 keywords: ["CM_Run_Detection Device and Driver Installation"]
 topic_type:
 - apiref

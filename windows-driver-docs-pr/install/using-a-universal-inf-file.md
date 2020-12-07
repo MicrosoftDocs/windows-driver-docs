@@ -1,7 +1,6 @@
 ---
 title: Using a Universal INF File
 description: If you are building a universal or mobile driver package, you must use a universal INF file.
-ms.assetid: 2CBEB814-974D-4E8B-A44A-2CFAA8D4C94E
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS
 description: Clients use KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS to set the list of packet identifiers in a particular program.
-ms.assetid: 5cc049f7-df97-4739-8ec4-22ab646781a6
 keywords: ["KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS Streaming Media Devices"]
 topic_type:
 - apiref

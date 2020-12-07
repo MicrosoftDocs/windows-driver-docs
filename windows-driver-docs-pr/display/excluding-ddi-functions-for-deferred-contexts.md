@@ -1,7 +1,6 @@
 ---
 title: Excluding DDI Functions for Deferred Contexts
 description: Excluding DDI Functions for Deferred Contexts
-ms.assetid: f6e7898a-7fb8-4a70-ab2e-3372a28db6f4
 keywords:
 - Direct3D version 11 WDK Windows 7 display , deferred contexts, excluding DDI functions
 - Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, excluding DDI functions

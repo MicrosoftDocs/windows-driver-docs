@@ -1,7 +1,6 @@
 ---
 title: Download the Windows Driver Kit (WDK)
 description: Download instructions for the latest released version of the Windows Driver Kit (WDK)
-ms.assetid: 7b5e253b-3bcd-41e3-a646-0f95ce416f87
 keywords:
 - Windows Driver Kit
 - WDK

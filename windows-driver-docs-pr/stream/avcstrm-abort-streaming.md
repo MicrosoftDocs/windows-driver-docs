@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_ABORT\_STREAMING
 description: AVCSTRM\_ABORT\_STREAMING
-ms.assetid: 9a136511-c838-456f-87c5-a4639be0c299
 keywords: ["AVCSTRM_ABORT_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref

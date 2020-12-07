@@ -1,7 +1,6 @@
 ---
 title: Theory of Operation
 description: This theory of operation topic explains the theory behind the inner working of the new Windows 8.1.
-ms.assetid: 5897946A-5319-404B-BE9E-91FF8801652F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

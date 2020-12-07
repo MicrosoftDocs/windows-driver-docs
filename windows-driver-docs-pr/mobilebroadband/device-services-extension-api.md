@@ -1,7 +1,6 @@
 ---
 title: Device Services Extension API
 description: Device Services Extension API
-ms.assetid: e1539ae1-78fd-4d79-81bf-4030e69e191c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: CancelSpinLock rule (storport)
 description: The CancelSpinLock Rule (Storport) rule verifies that each call to IoAcquireCancelSpinLock is promptly followed by a call to IoReleaseCancelSpinLock.
-ms.assetid: 36DF0FF0-03CB-4AA1-BD3A-0B7B32AEE3DD
 ms.date: 05/21/2018
 keywords: ["CancelSpinLock rule (storport)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: JobStateReason element
 description: The optional JobStateReason element specifies one reason why a job is in its current state.
-ms.assetid: daaa288b-fa56-4d29-92f6-0283fbbd2fe8
 keywords: ["JobStateReason element Imaging Devices"]
 topic_type:
 - apiref

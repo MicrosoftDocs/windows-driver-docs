@@ -1,7 +1,6 @@
 ---
 title: Supporting Video Capture and Other Child Devices
 description: Supporting Video Capture and Other Child Devices
-ms.assetid: 15575700-7525-459e-a099-158f0c13899c
 keywords:
 - video capture WDK display
 - capturing video WDK display

@@ -1,7 +1,6 @@
 ---
 title: Place File Syntax
 description: The place file is a text file that BinPlace reads to determine the class subdirectories that are associated with a file it is placing.
-ms.assetid: 49f58ed1-9a4d-4e3e-9248-eebd95271374
 keywords:
 - Place File Syntax Driver Development Tools
 topic_type:

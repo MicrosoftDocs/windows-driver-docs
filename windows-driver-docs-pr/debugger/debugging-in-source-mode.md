@@ -1,7 +1,6 @@
 ---
 title: Debugging in Source Mode
 description: Debugging in Source Mode
-ms.assetid: b236f53b-2429-4085-b008-6648d1474ec2
 keywords: ["source debugging", "source mode", "source debugging, overview", "Build utility (build.exe), avoiding optimization"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

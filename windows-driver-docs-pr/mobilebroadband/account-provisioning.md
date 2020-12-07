@@ -1,7 +1,6 @@
 ---
 title: Account provisioning
 description: Account provisioning
-ms.assetid: 3ffcd769-253f-4918-8095-a9206445a201
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

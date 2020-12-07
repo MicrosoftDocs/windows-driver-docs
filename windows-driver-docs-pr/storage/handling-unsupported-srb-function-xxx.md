@@ -1,7 +1,6 @@
 ---
 title: Handling Unsupported SRB_FUNCTION_XXX
 description: Handling Unsupported SRB_FUNCTION_XXX
-ms.assetid: 95b9288c-290f-4908-9de3-11d68ed624e2
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo

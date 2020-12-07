@@ -1,7 +1,6 @@
 ---
 title: Device Tree
 description: Device Tree
-ms.assetid: 3220389a-06cc-4a43-8164-b785d1a16365
 keywords: ["devnodes WDK PnP", "nonpresent devices WDK", "PnP WDK kernel , device trees", "Plug and Play WDK kernel , device trees", "removal relations WDK PnP", "ejection relations WDK PnP", "device trees WDK PnP", "trees WDK PnP", "device nodes WDK PnP", "child devices WDK PnP", "hierarchy WDK PnP", "relationships WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

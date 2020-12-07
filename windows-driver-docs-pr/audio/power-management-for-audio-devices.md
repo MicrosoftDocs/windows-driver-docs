@@ -1,7 +1,6 @@
 ---
 title: Power Management for Audio Devices
 description: Power Management for Audio Devices
-ms.assetid: 3d3d63af-5790-4760-9099-7116ed5a5446
 keywords:
 - audio drivers WDK , power management
 - audio miniport drivers WDK , power management

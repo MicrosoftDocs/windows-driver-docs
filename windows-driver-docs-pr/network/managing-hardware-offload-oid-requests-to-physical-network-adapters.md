@@ -1,7 +1,6 @@
 ---
 title: Managing Hardware Offload OID Requests to Physical Network Adapters
 description: Managing Hardware Offload OID Requests to Physical Network Adapters
-ms.assetid: A646CBB8-89AD-4C08-BECB-1E54E4D74311
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

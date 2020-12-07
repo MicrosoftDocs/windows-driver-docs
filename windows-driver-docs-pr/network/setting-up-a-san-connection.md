@@ -1,7 +1,6 @@
 ---
 title: Setting Up a SAN Connection
 description: Setting Up a SAN Connection
-ms.assetid: f5d5e759-d77c-4db8-9b63-fb4c79344dff
 keywords:
 - Windows Sockets Direct WDK , connection setup
 - connections WDK SANs

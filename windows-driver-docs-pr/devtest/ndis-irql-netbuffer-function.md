@@ -1,7 +1,6 @@
 ---
 title: Irql\_NetBuffer\_Function rule (ndis)
 description: The Irql\_NetBuffer\_Function rule specifies that the NET\_BUFFER-related functions must be called at correct IRQL levels.
-ms.assetid: e3b43ba1-3b58-4bc8-9d90-7be31c9e0a09
 ms.date: 05/21/2018
 keywords: ["Irql_NetBuffer_Function rule (ndis)"]
 topic_type:

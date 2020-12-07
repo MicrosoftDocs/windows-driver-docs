@@ -1,7 +1,6 @@
 ---
 title: Implementing CoNDIS WAN Miniport Drivers
 description: Implementing CoNDIS WAN Miniport Drivers
-ms.assetid: a971908d-8f61-4657-80e8-7dd49a9d962b
 keywords:
 - CoNDIS WAN drivers WDK networking , implementing
 - WAN miniport drivers WDK networking , implementing drivers

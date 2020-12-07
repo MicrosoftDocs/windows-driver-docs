@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_LANGUAGE\_CODE
 description: The KSPROPERTY\_AC3\_LANGUAGE\_CODE property specifies the language code of the AC-3-encoded stream.
-ms.assetid: 42c0fb44-437c-4fa9-95ee-823880028369
 keywords: ["KSPROPERTY_AC3_LANGUAGE_CODE Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Network Services
 description: Installation Requirements for Network Services
-ms.assetid: e43f9ccb-308d-435f-b99b-bb7dcbacfcac
 keywords:
 - network services installation requirements WDK
 - service installation requirements WDK networking

@@ -1,7 +1,6 @@
 ---
 title: DCISetSrcDestClip
 description: DCISetSrcDestClip
-ms.assetid: b527c974-7a65-4c3b-9048-0096398e90f1
 keywords: ["DCISetSrcDestClip Display Devices"]
 topic_type:
 - apiref

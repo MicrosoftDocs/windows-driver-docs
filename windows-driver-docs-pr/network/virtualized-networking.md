@@ -1,7 +1,6 @@
 ---
 title: Virtualized Networking Topics
 description: Virtualized Networking Topics
-ms.assetid: 5CDB7E42-BCD6-4385-AC99-6659261C2B2C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

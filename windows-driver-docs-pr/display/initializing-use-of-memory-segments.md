@@ -1,7 +1,6 @@
 ---
 title: Initializing Use of Memory Segments
 description: Initializing Use of Memory Segments
-ms.assetid: 8e4cf1dc-c428-4564-9a16-925e17e6d488
 keywords:
 - memory segments WDK display , initializing
 - GPU address space WDK display

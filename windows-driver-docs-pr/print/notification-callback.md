@@ -1,7 +1,6 @@
 ---
 title: Notification Callback
 description: Notification Callback
-ms.assetid: cf884097-45a4-4ef3-8ebb-64c006838235
 keywords:
 - spooler notification WDK print , callback
 - print spooler notification WDK , callback

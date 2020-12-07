@@ -1,7 +1,6 @@
 ---
 title: DeploymentItem Metadata
 description: DeploymentItem Metadata
-ms.assetid: 7F18CD71-F000-4231-9093-82980EB7584D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Smart Card Reader States
 description: Smart Card Reader States
-ms.assetid: 7596ba27-206a-4590-aec0-c9009e7a12b6
 keywords:
 - smart card drivers WDK , reader states
 - reader states WDK smart card

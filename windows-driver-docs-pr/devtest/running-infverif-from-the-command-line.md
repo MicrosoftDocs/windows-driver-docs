@@ -1,7 +1,6 @@
 ---
 title: Running InfVerif from the command line
 description: This topic lists the options that are available when you run InfVerif.exe from the command line.
-ms.assetid: CC2DB624-FFEE-4049-ACE7-4A24B330BADB
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---

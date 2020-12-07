@@ -1,7 +1,6 @@
 ---
 title: DriverEntry of IDE Controller Minidriver function
 description: DriverEntry initializes the minidriver.
-ms.assetid: 124f6273-ab15-426b-abce-a4d8e68e09c7
 keywords: ["DriverEntry function Storage Devices"]
 topic_type:
 - apiref

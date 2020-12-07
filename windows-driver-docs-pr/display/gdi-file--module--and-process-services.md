@@ -1,7 +1,6 @@
 ---
 title: GDI File, Module, and Process Services
 description: GDI File, Module, and Process Services
-ms.assetid: abf37bed-cad9-4fbc-95fe-346b0c07c81b
 keywords:
 - GDI WDK Windows 2000 display , module services
 - graphics drivers WDK Windows 2000 display , module services

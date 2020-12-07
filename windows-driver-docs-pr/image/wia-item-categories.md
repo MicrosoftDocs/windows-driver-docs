@@ -1,7 +1,6 @@
 ---
 title: WIA Item Categories
 description: WIA Item Categories
-ms.assetid: b201e365-60d8-4c3b-a9cf-4bbaa318337f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

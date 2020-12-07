@@ -1,7 +1,6 @@
 ---
 title: DxgkDdiMovePageDirectory function
 description: The DxgkDdiMovePageDirectory function is reserved for system use. Do not implement it in your driver.
-ms.assetid: 25972570-174d-40dc-bfbc-e9eb395dcb0e
 keywords: ["DxgkDdiMovePageDirectory function Display Devices"]
 topic_type:
 - apiref

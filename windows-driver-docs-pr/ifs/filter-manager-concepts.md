@@ -1,7 +1,6 @@
 ---
 title: Filter Manager Concepts
 description: Filter Manager Concepts
-ms.assetid: 5b11671f-02fd-4d0e-8199-c345bbf2591c
 keywords:
 - filter manager WDK file system minifilter , about filter manager
 - altitudes WDK file system minifilter

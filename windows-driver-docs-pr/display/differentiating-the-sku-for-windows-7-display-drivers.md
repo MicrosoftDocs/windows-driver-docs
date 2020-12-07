@@ -1,7 +1,6 @@
 ---
 title: Differentiating the SKU for Windows 7 Display Drivers
 description: Differentiating the SKU for Windows 7 Display Drivers
-ms.assetid: 3cf72bd5-21bc-4a7f-8c2f-98f8e70d8248
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

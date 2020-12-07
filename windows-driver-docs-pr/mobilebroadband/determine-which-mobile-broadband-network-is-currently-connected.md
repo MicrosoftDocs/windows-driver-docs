@@ -1,7 +1,6 @@
 ---
 title: Determine which mobile broadband network is currently connected
 description: Determine which mobile broadband network is currently connected
-ms.assetid: 65a47e79-3976-4f72-b810-982e7222fee3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

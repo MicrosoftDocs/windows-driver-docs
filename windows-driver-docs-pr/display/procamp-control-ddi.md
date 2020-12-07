@@ -1,7 +1,6 @@
 ---
 title: ProcAmp Control DDI
 description: ProcAmp Control DDI
-ms.assetid: 102e21eb-bad4-4ab5-8630-9ac37c33f20a
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

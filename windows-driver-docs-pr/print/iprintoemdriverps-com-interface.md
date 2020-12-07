@@ -1,7 +1,6 @@
 ---
 title: IPrintOemDriverPS COM Interface
 description: IPrintOemDriverPS COM Interface
-ms.assetid: 32975728-501f-45ac-a53d-34cf286bc433
 keywords:
 - IPrintOemDriverPS
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: .scriptload (Load Script)
 description: The .scriptload command will load and execute the specified script file.
-ms.assetid: 1D4C9587-1491-4D34-9D09-45587B272641
 keywords: [".scriptload (Load Script) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

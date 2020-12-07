@@ -1,7 +1,6 @@
 ---
 title: Receive Segment Coalescing offload
 description: Receive Segment Coalescing (RSC) offload usage, rules, and examples in NetAdapterCx.
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Receive Segment Coalescing offload, RSC
 ms.date: 10/13/2020

@@ -1,7 +1,6 @@
 ---
 title: Ungrouping Trace Sessions
 description: Ungrouping Trace Sessions
-ms.assetid: 8ff4d692-85c9-4282-8046-a54170fd9dbc
 keywords:
 - grouping trace sessions
 - trace sessions WDK , groups

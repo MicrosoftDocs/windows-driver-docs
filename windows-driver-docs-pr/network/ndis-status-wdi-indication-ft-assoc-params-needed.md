@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED to request parameters for 802.11r roaming.ObjectPort .
-ms.assetid: AB745908-AA7B-416A-9C97-B376293F3DEE
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED Network Drivers Starting with Windows Vista

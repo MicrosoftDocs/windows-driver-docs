@@ -1,7 +1,6 @@
 ---
 title: Trace Consumer
 description: Trace Consumer
-ms.assetid: b0bc9ed9-7dc8-4881-843e-34113c1df521
 keywords:
 - trace consumers WDK
 - receiving trace messages

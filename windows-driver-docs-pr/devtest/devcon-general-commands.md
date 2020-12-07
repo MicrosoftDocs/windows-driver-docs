@@ -1,7 +1,6 @@
 ---
 title: Device Console (DevCon.exe) Commands
 description: DevCon (DevCon.exe) is a command line tool that can display detailed information about devices on computers running Windows. You can also use DevCon to enable, disable, install, configure, and remove devices. DevCon uses the following syntax.
-ms.assetid: b397c407-db1f-4e2a-8beb-4fe989bd06e0
 keywords:
 - Device Console (DevCon.exe) Commands Driver Development Tools
 topic_type:

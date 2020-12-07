@@ -1,7 +1,6 @@
 ---
 title: th (Trace to Next Branching Instruction)
 description: The th command executes the program until it reaches any kind of branching instruction, including conditional or unconditional branches, calls, returns, and system calls.
-ms.assetid: 42b7ceb6-c507-45b3-9186-0a4014b68a28
 keywords: ["th (Trace to Next Branching Instruction) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Passing and Failing a Verification
 description: Passing and Failing a Verification
-ms.assetid: 2639358b-eb6a-49b7-b23a-877a452917dc
 keywords:
 - Static Driver Verifier WDK , verification results
 - StaticDV WDK , verification results

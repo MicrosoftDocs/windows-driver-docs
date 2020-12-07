@@ -1,7 +1,6 @@
 ---
 title: SoftwareInfo XML Example
 description: SoftwareInfo XML Example
-ms.assetid: 3ee92b21-ed4e-4ed9-9199-3f43f2f8ec00
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

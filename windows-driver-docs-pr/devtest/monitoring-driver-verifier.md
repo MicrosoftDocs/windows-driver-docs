@@ -1,7 +1,6 @@
 ---
 title: Monitoring Driver Verifier
 description: Monitoring Driver Verifier
-ms.assetid: 58b672b8-66f3-436b-900b-11bb94575fb6
 keywords:
 - Driver Verifier WDK , monitoring
 - Driver Verifier Manager

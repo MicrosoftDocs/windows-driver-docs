@@ -1,7 +1,6 @@
 ---
 title: WHEA Hardware Error Event Processing Applications
 description: WHEA Hardware Error Event Processing Applications
-ms.assetid: df1790ec-5a7f-41c2-94df-757621e67ade
 keywords:
 - Windows Hardware Error Architecture WDK , event processing applications
 - WHEA WDK , event processing applications

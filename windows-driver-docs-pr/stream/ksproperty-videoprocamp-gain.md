@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_GAIN
 description: The KSPROPERTY\_VIDEOPROCAMP\_GAIN property sets or gets the camera gain. This property is optional.
-ms.assetid: 46ed6ba1-1413-4466-9125-2d0a3fd51def
 keywords: ["KSPROPERTY_VIDEOPROCAMP_GAIN Streaming Media Devices"]
 topic_type:
 - apiref

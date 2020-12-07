@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ProblemStatus
 description: DEVPKEY_Device_ProblemStatus
-ms.assetid: 477f835c-6094-4fba-80af-f6032bca7f85
 keywords: ["DEVPKEY_Device_ProblemStatus Device and Driver Installation"]
 topic_type:
 - apiref

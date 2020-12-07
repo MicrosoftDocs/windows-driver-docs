@@ -1,7 +1,6 @@
 ---
 title: Symbol Options
 description: Symbol Options
-ms.assetid: 4a501ea3-431c-4c11-8826-154eb8799a64
 keywords: ["symbols, setting symbol options", "symbols, SYMOPT_XXXX", "noisy symbol loading", "CV record"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

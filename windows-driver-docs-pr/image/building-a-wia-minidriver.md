@@ -1,7 +1,6 @@
 ---
 title: Building a WIA Minidriver
 description: Building a WIA Minidriver
-ms.assetid: 7a13d355-f42e-406d-8cba-4739df1af9fa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

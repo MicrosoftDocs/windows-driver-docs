@@ -1,7 +1,6 @@
 ---
 title: MIDI Transport
 description: MIDI Transport
-ms.assetid: ce9ec589-0aea-4ed9-a60d-50f2ddfb0c13
 keywords:
 - port drivers WDK audio , synthesizers
 - miniport drivers WDK audio , synthesizers

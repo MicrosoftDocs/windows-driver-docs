@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_QUERY_OPEN union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_QUERY_OPEN.
-ms.assetid: 5B78E1D8-F724-404D-8750-3D52BB9B4910
 keywords: ["FLT_PARAMETERS for IRP_MJ_QUERY_OPEN union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

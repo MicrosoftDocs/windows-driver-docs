@@ -1,7 +1,6 @@
 ---
 title: SRB\_OPEN\_DEVICE\_INSTANCE
 description: SRB\_OPEN\_DEVICE\_INSTANCE
-ms.assetid: 71f57abd-7875-4c7a-bbb3-c5c45c9a83ab
 keywords: ["SRB_OPEN_DEVICE_INSTANCE Streaming Media Devices"]
 topic_type:
 - apiref

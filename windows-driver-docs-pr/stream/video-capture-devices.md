@@ -1,7 +1,6 @@
 ---
 title: Video Capture Devices
 description: Video Capture Devices
-ms.assetid: ed02e6c8-fd82-488b-a0dc-8e83a842bcc4
 keywords:
 - capturing video WDK AVStream
 ms.date: 04/20/2017

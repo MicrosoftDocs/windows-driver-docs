@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ResourcePickerExceptions
 description: DEVPKEY_Device_ResourcePickerExceptions
-ms.assetid: 65a2c709-fe3a-44e2-90f9-4ad6dbcb50bd
 keywords: ["DEVPKEY_Device_ResourcePickerExceptions Device and Driver Installation"]
 topic_type:
 - apiref

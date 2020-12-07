@@ -1,7 +1,6 @@
 ---
 title: DIF_NEWDEVICEWIZARD_SELECT
 description: DIF_NEWDEVICEWIZARD_SELECT
-ms.assetid: b6b2eaf7-c87f-45d6-8845-6d03bde9a802
 keywords: ["DIF_NEWDEVICEWIZARD_SELECT Device and Driver Installation"]
 topic_type:
 - apiref

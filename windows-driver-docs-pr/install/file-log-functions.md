@@ -1,7 +1,6 @@
 ---
 title: File Log Functions
 description: File Log Functions
-ms.assetid: 7d9fe4c9-834f-4dcc-a216-dc6a98ee2fd3
 keywords:
 - SetupAPI functions WDK , log files
 - log files WDK SetupAPI

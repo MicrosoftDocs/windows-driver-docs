@@ -1,7 +1,6 @@
 ---
 title: Printer INF File Entries
 description: Printer INF File Entries
-ms.assetid: 897072bb-e481-4c8d-a2bf-57b19c69ac0e
 keywords:
 - INF files WDK print , entries
 - dependent files WDK printer

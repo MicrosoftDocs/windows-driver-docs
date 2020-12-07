@@ -1,7 +1,6 @@
 ---
 title: UMDF Based on COM Subset
 description: UMDF Based on COM Subset
-ms.assetid: 918459a9-a6a2-40b8-8b97-3aabe3e49bfb
 keywords:
 - UMDF objects WDK , COM subset
 - framework objects WDK UMDF , COM subset

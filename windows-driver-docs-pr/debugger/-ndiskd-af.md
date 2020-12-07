@@ -1,7 +1,6 @@
 ---
 title: ndiskd.af
 description: The ndiskd.af extension displays a Connection-Oriented NDIS (CoNDIS) address family (AF).
-ms.assetid: 737AB46E-DFAA-42D6-A9BD-B7223167D0DD
 keywords: ["ndiskd.af Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:

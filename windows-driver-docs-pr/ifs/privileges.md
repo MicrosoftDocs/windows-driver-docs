@@ -1,7 +1,6 @@
 ---
 title: Managing privileges in a file system
 description: Describes how to manage privileges in a file system
-ms.assetid: a8df1a44-6fb7-4c16-a29d-785d06dd50e4
 keywords:
 - security WDK file systems , privileges
 - privileges WDK file systems

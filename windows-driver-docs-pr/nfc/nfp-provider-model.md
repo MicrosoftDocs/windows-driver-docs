@@ -1,7 +1,6 @@
 ---
 title: NFP provider model
 description: The Near Field Proximity (NFP) provider driver model provides a common surface for Windows to use NFP capabilities and to enable NFP scenarios and use cases.
-ms.assetid: AD8DC80F-5CE2-4547-B951-A82A280F18ED
 keywords:
 - NFC
 - near field communications

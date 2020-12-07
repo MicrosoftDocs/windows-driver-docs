@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Exclusive
 description: DEVPKEY_Device_Exclusive
-ms.assetid: c54c2fe3-cf57-4603-a701-8ddbc28aa47d
 keywords: ["DEVPKEY_Device_Exclusive Device and Driver Installation"]
 topic_type:
 - apiref

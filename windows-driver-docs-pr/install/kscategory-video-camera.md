@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_VIDEO_CAMERA
 description: KSCATEGORY_VIDEO_CAMERA
-ms.assetid: 188FC545-C2DB-4938-88B2-AAB2A473E36E
 keywords: ["KSCATEGORY_VIDEO_CAMERA Device and Driver Installation"]
 topic_type:
 - apiref

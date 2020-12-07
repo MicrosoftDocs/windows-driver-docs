@@ -1,7 +1,6 @@
 ---
 title: Live Kernel-Mode Debugging Using KD
 description: Live Kernel-Mode Debugging Using KD
-ms.assetid: 4C3DB315-CF92-44FC-A54C-0C100A32EB3C
 ms.date: 06/21/2018
 ms.localizationpriority: medium
 ---

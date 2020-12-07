@@ -1,7 +1,6 @@
 ---
 title: Copying Volume Textures in the DP2 Stream
 description: Copying Volume Textures in the DP2 Stream
-ms.assetid: c7f982d8-d35b-4462-a0cf-49dfb82860f8
 keywords:
 - textures WDK DirectX 8.0
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures

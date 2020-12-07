@@ -1,7 +1,6 @@
 ---
 title: Dispatch Routine IRQL and Thread Context
 description: Dispatch Routine IRQL and Thread Context
-ms.assetid: 95f3a976-c97a-4c8a-979b-14a0ddd823a2
 keywords:
 - IRP dispatch routines WDK file system , IRQL
 - IRP dispatch routines WDK file system , thread context

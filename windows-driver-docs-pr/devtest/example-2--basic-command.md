@@ -1,7 +1,6 @@
 ---
 title: Example 2 Basic Command
 description: Example 2 Basic Command
-ms.assetid: 5e66b7f4-5cf6-4bfc-b432-d531ac6ac53c
 keywords:
 - Tracefmt WDK , commands
 - commands WDK Tracefmt

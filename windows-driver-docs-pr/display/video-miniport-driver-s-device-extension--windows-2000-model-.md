@@ -1,7 +1,6 @@
 ---
 title: Video Miniport Driver's Device Extension (XDDM)
 description: Video Miniport Driver's Device Extension (Windows 2000 Model)
-ms.assetid: 4d7841d1-39e2-4bdf-b79b-3feb363a0fe5
 keywords:
 - video miniport drivers WDK Windows 2000 , device extensions
 - device extensions WDK video miniport

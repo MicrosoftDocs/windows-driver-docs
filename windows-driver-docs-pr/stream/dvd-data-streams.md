@@ -1,7 +1,6 @@
 ---
 title: DVD Data Streams
 description: DVD Data Streams
-ms.assetid: 77e38075-5e28-4d9d-a2ca-caa274bde4db
 keywords:
 - DVD decoder minidrivers WDK , data streams
 - decoder minidrivers WDK DVD , data streams

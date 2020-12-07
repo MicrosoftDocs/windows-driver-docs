@@ -1,7 +1,6 @@
 ---
 title: Disk-Space List Functions
 description: Disk-Space List Functions
-ms.assetid: 850e9f41-b534-49f3-891d-c12c1126e52f
 keywords:
 - SetupAPI functions WDK , disk-space lists
 - disk-space lists WDK SetupAPI

@@ -1,7 +1,6 @@
 ---
 title: Using Shared Memory in Network Drivers
 description: Using Shared Memory in Network Drivers
-ms.assetid: f7dfe785-6c1a-4f56-9018-76be9cdec7fc
 keywords:
 - network drivers WDK , shared memory
 - memory WDK networking

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON
 description: The KSPROPERTY\_DVDSUBPIC\_COMPOSIT\_ON property enables or disables the display of the subpicture.
-ms.assetid: f9dcf8ca-44fb-45e2-9993-813439c742ef
 keywords: ["KSPROPERTY_DVDSUBPIC_COMPOSIT_ON Streaming Media Devices"]
 topic_type:
 - apiref

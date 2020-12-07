@@ -1,7 +1,6 @@
 ---
 title: Internal and External Version Numbers
 description: Internal and External Version Numbers
-ms.assetid: 705a2e5f-11b8-499c-815d-a2a54e907980
 keywords:
 - version numbers WDK audio
 - audio miniport drivers WDK , version numbers

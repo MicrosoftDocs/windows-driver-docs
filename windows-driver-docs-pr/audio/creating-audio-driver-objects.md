@@ -1,7 +1,6 @@
 ---
 title: Creating Audio Driver Objects
 description: Creating Audio Driver Objects
-ms.assetid: c5d1b1b6-fc47-4227-bcca-1119488dce3b
 keywords:
 - audio driver objects WDK
 - COM object creation WDK audio

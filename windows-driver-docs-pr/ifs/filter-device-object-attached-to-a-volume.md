@@ -1,7 +1,6 @@
 ---
 title: Filter Device Object Attached to a Volume
 description: Filter Device Object Attached to a Volume
-ms.assetid: cf152065-fc03-4f5f-b65b-13a76e83d745
 keywords:
 - filter device objects WDK file system
 - filter drivers WDK file system , device object I/O requests

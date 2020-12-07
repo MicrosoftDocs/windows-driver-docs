@@ -1,7 +1,6 @@
 ---
 title: GDL Keywords
 description: GDL Keywords
-ms.assetid: 3baf187b-b108-49f7-8f8a-bce93eba15c7
 keywords:
 - GDL WDK , keywords
 - keywords WDK GDL , about GDL keywords

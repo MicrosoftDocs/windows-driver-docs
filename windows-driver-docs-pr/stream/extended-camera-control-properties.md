@@ -1,6 +1,5 @@
 ---
 title: Extended Camera Control Properties
-ms.assetid: 27D94D73-D190-4C01-B082-7798CA71EDB4
 description: The extended camera control interface is used to control camera features during image capture.
 ms.date: 04/20/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_DYNAMIC\_FORMAT\_CHANGE
 description: Clients enable the KSEVENT\_DYNAMIC\_FORMAT\_CHANGE event to signal that a dynamic format change has occurred.
-ms.assetid: 7f8cf67b-274b-4342-a9f7-7fab5345bbc9
 keywords: ["KSEVENT_DYNAMIC_FORMAT_CHANGE Streaming Media Devices"]
 topic_type:
 - apiref

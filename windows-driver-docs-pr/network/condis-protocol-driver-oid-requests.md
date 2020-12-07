@@ -1,7 +1,6 @@
 ---
 title: CoNDIS Protocol Driver OID Requests
 description: CoNDIS Protocol Driver OID Requests
-ms.assetid: 1338d199-2cd8-430a-a0a5-95aaea04c384
 keywords:
 - protocol drivers WDK networking , CoNDIS
 - NDIS protocol drivers WDK , CoNDIS

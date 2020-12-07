@@ -1,7 +1,6 @@
 ---
 title: Printer Dirids
 description: Printer Dirids
-ms.assetid: 104af180-c739-4733-b21b-448cfe15ab71
 keywords:
 - INF files WDK print , dirids
 - dirids WDK

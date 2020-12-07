@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_NETWORK_PROVIDER
 description: KSCATEGORY_BDA_NETWORK_PROVIDER
-ms.assetid: a73f7ea3-19bf-4328-a96f-f28ee91db242
 keywords: ["KSCATEGORY_BDA_NETWORK_PROVIDER Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_ORIENTATION
 description: The WIA\_IPS\_ORIENTATION property describes the current orientation of the document to scan. The WIA minidriver creates and maintains this property.
-ms.assetid: e963d0d1-020c-4ec1-8b67-a89b1fd3e545
 keywords: ["WIA_IPS_ORIENTATION Imaging Devices"]
 topic_type:
 - apiref

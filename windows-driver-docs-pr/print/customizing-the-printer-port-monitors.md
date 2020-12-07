@@ -1,7 +1,6 @@
 ---
 title: Customizing the Printer Port Monitors
 description: Customizing the Printer Port Monitors
-ms.assetid: e5d4166a-2593-43fd-b476-c54642e2d099
 keywords:
 - in-box autoconfiguration support WDK printer , customizing printer port monitors
 - bidi extension files WDK printer autoconfig

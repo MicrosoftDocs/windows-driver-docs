@@ -1,7 +1,6 @@
 ---
 title: Monitoring Global Counters
 description: Monitoring Global Counters
-ms.assetid: ca8f2b87-bb62-4389-bd59-1ed8ef6ac730
 keywords:
 - global counters WDK Driver Verifier
 - Driver Verifier WDK , counters

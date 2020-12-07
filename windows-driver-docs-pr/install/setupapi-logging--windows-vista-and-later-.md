@@ -1,7 +1,6 @@
 ---
 title: SetupAPI Logging
 description: SetupAPI Logging
-ms.assetid: 25beff4d-742a-4d46-bb91-16b3e14f2d6c
 keywords:
 - SetupAPI WDK , logging
 - logging WDK SetupAPI

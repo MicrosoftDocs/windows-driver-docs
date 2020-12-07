@@ -1,7 +1,6 @@
 ---
 title: Overview of Storage Virtual Miniport Drivers
 description: Overview of Storage Virtual Miniport Drivers
-ms.assetid: 5aee56e6-610c-4718-8566-9285682049cb
 keywords:
 - storage virtual miniport drivers WDK , about
 - virtual miniport drivers WDK

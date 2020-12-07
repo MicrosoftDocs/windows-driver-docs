@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_TVAUDIO\_CHANGED
 description: The KSEVENT\_TVAUDIO\_CHANGED event propagates an action, such as a newly tuned-to channel supports stereo audio, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-ms.assetid: 98d77001-9844-4893-9a23-9c06f7d75841
 keywords: ["KSEVENT_TVAUDIO_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref

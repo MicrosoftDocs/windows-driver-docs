@@ -1,7 +1,6 @@
 ---
 title: Point Sprites
 description: Point Sprites
-ms.assetid: 1841d68a-68c3-4522-8935-46bab9bb7c47
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , point sprites
 - point sprites WDK DirectX 8.0

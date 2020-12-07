@@ -1,7 +1,6 @@
 ---
 title: WDI_PEER_ID
 description: This topic describes the WDI_PEER_ID data type for WDI miniport drivers.
-ms.assetid: 2D8700BC-7FED-4343-AC3F-8C43B0BE40FF
 keywords:
 - WDI_PEER_ID, WDK WDI_PEER_ID network drivers
 ms.date: 11/27/2017

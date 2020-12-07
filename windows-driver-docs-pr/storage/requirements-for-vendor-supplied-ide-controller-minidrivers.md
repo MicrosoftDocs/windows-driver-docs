@@ -1,7 +1,6 @@
 ---
 title: Introduction to Vendor-Supplied IDE Controller Minidrivers
 description: Requirements for Vendor-Supplied IDE Controller Minidrivers
-ms.assetid: a1584665-8788-49a4-b86f-50c265e7ce7a
 keywords:
 - IDE controller minidrivers WDK storage , vendor-supplied
 - storage IDE controller minidrivers WDK , vendor-supplied

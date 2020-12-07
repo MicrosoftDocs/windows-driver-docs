@@ -1,7 +1,6 @@
 ---
 title: DirectShow Filter to Stream Class Minidriver Communication
 description: DirectShow Filter to Stream Class Minidriver Communication
-ms.assetid: d2122827-758c-4557-b2fd-8774179b5da4
 keywords:
 - filter graph configurations WDK video capture , DirectShow
 - DirectShow WDK video capture

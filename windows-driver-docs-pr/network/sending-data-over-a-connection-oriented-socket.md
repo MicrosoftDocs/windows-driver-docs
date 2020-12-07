@@ -1,7 +1,6 @@
 ---
 title: Sending Data over a Connection-Oriented Socket
 description: Sending Data over a Connection-Oriented Socket
-ms.assetid: 290f3a8a-6bdc-4dd9-a9bf-4eede37bf1e5
 keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - WskSend

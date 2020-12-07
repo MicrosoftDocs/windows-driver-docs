@@ -1,7 +1,6 @@
 ---
 title: ParentObjectCheck rule (kmdf)
 description: The ParentObjectCheck rule specifies that driver should call WdfMemoryCreate specifying a parent object using a WDF\_OBJECT\_ATTRIBUTES structure.
-ms.assetid: E0597996-9067-40C3-8DE9-1048B2227F07
 ms.date: 05/21/2018
 keywords: ["ParentObjectCheck rule (kmdf)"]
 topic_type:

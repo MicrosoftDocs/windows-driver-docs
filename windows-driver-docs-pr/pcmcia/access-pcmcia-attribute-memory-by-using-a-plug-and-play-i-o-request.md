@@ -1,7 +1,6 @@
 ---
 title: Access Memory by Using a PnP I/O Request
 description: Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request
-ms.assetid: ee2f9d9f-9e2b-4ecf-ba6d-4baad3653301
 keywords:
 - attribute memory WDK PCMCIA bus , Plug and Play I/O requests
 - Plug and Play WDK PCMCIA bus

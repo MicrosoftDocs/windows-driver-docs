@@ -1,7 +1,6 @@
 ---
 title: How do I include a trace statement in a C/C++ macro
 description: How do I include a trace statement in a C/C++ macro
-ms.assetid: 1ab7f87e-7dbc-49a1-b3a2-24e4d525dc8b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

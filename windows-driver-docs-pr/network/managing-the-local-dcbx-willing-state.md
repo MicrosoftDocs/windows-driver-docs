@@ -1,7 +1,6 @@
 ---
 title: Managing the Local DCBX Willing State
 description: Managing the Local DCBX Willing State
-ms.assetid: B37CA18B-FCCD-414D-95AB-0C54B9F1F421
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

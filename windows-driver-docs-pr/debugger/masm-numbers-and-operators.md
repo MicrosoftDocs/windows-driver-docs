@@ -1,7 +1,6 @@
 ---
 title: MASM Numbers and Operators
 description: MASM Numbers and Operators
-ms.assetid: 9aeb3ef2-d83a-4f99-9a55-4bbd8a7e11b5
 keywords: ["expressions, MASM expression syntax", "numerical expressions (MASM)", "MASM expressions, numbers", "MASM expressions, operators", "operators (MASM)", "(MASM prefix)", "binary operators", "shift operators", "unary operators"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

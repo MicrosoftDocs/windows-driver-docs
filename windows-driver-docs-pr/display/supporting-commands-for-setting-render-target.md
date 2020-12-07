@@ -1,7 +1,6 @@
 ---
 title: Supporting Commands for Setting Render Target
 description: Supporting Commands for Setting Render Target
-ms.assetid: 5bb94964-e99e-4b38-b480-f7c0a45b100f
 keywords:
 - render targets WDK DirectX 9.0
 ms.date: 04/20/2017

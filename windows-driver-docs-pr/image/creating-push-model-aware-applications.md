@@ -1,7 +1,6 @@
 ---
 title: Creating Push-Model Aware Applications
 description: Creating Push-Model Aware Applications
-ms.assetid: 0f554b2c-0217-4109-8ef6-99c5400dfed6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

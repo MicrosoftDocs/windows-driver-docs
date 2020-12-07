@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_General
 description: KSPROPSETID\_General
-ms.assetid: d95e0bdd-a2c8-4c4e-a20b-ddbb1776884d
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

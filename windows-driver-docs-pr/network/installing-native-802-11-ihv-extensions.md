@@ -1,7 +1,6 @@
 ---
 title: Installing Native 802.11 IHV Extensions
 description: Installing Native 802.11 IHV Extensions
-ms.assetid: 73e45572-6f48-43da-9456-4de5e1f1901f
 keywords:
 - IHV extensions WDK Native 802.11 , installing
 - installing Native 802.11 IHV extensions

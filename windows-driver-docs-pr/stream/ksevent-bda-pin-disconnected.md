@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PIN\_DISCONNECTED
 description: Clients use KSEVENT\_BDA\_PIN\_DISCONNECTED to request notification when a pin becomes disconnected.
-ms.assetid: b3209e9d-21e3-4ade-a6da-9d17ecf31c74
 keywords: ["KSEVENT_BDA_PIN_DISCONNECTED Streaming Media Devices"]
 topic_type:
 - apiref

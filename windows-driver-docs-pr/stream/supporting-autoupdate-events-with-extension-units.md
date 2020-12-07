@@ -1,7 +1,6 @@
 ---
 title: Supporting Autoupdate Events with Extension Units
 description: Supporting Autoupdate Events with Extension Units
-ms.assetid: 3dc75f48-adc7-4443-8090-2e61b3306798
 keywords:
 - autoupdate events WDK USB Video Class
 - autoupdate events WDK USB Video Class , extension units

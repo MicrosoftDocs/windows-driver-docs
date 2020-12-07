@@ -1,7 +1,6 @@
 ---
 title: C28153
 description: Warning C28153 The value for an IRQL from annotation could not be evaluated in this context.
-ms.assetid: 384d0925-b23b-4ba7-b5fb-34bb7106ca3f
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

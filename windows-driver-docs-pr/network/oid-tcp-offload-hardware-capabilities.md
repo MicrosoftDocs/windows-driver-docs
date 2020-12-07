@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES
 description: This topic describes the OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES object identifier (OID). 
-ms.assetid: 9958F93C-0D68-428B-A25C-7FF6E4F37702
 keywords:
 - OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES, WDK OIDs, WDK networking object identifiers, WDK networking OIDs
 ms.date: 11/01/2017

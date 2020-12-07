@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x52 MAILSLOT_FILE_SYSTEM
 description: The MAILSLOT_FILE_SYSTEM bug check has a value of 0x00000052.This bug check appears very infrequently.
-ms.assetid: 9596eea9-d19e-4e67-b7a3-0d6b7fd34f17
 keywords: ["Bug Check 0x52 MAILSLOT_FILE_SYSTEM", "MAILSLOT_FILE_SYSTEM"]
 ms.date: 05/23/2017
 topic_type:

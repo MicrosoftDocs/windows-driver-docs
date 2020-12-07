@@ -1,7 +1,6 @@
 ---
 title: GUID_PARALLEL_DEVICE
 description: GUID_PARALLEL_DEVICE
-ms.assetid: 274d8851-923c-4576-9e95-ff6bec1cf517
 keywords: ["GUID_PARALLEL_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref

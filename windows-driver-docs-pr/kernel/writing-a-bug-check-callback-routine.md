@@ -1,7 +1,6 @@
 ---
 title: Writing a Bug Check Reason Callback Routine
 description: Writing a Bug Check Callback Routine
-ms.assetid: 62aefe67-e197-4c45-b994-19bd7369dbc1
 keywords: ["bug check callback routines WDK kernel", "callback routines WDK bug checks", "registering callback routines", "KeRegisterBugCheckCallback", "BugCheckCallback"]
 ms.date: 05/02/2019
 ms.localizationpriority: medium

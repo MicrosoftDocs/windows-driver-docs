@@ -1,7 +1,6 @@
 ---
 title: obtrace
 description: The obtrace extension displays object reference tracing data for the specified object.
-ms.assetid: 6a124f9f-1c2f-4303-b84f-0032fb912cc1
 keywords: ["obtrace Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

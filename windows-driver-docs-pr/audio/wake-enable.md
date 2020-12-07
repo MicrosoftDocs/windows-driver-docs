@@ -1,7 +1,6 @@
 ---
 title: Wake Enable
 description: Wake Enable
-ms.assetid: f4a2d4b1-d3a0-449a-ac65-a448d2bcab5c
 keywords:
 - HD Audio, wake enable
 - High Definition Audio (HD Audio), wake enable

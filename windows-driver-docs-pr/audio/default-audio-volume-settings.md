@@ -1,7 +1,6 @@
 ---
 title: Default Audio Volume Settings
 description: Default Audio Volume Settings
-ms.assetid: 5d694aa2-5a47-44c5-92d5-ec8c4885820f
 keywords:
 - audio adapters WDK , volume settings
 - adapter drivers WDK audio , volume settings

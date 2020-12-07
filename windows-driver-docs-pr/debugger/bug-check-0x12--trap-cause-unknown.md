@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x12 TRAP_CAUSE_UNKNOWN
 description: The TRAP_CAUSE_UNKNOWN bug check has a value of 0x00000012. This indicates that an unknown exception has occurred.
-ms.assetid: 43cbcc34-9df0-4d5f-b823-1cc3cafaa811
 keywords: ["Bug Check 0x12 TRAP_CAUSE_UNKNOWN", "TRAP_CAUSE_UNKNOWN"]
 ms.date: 06/26/2018
 topic_type:

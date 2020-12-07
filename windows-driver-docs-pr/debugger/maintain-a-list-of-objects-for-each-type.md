@@ -1,7 +1,6 @@
 ---
 title: Maintain a list of objects for each type
 description: Maintain a list of objects for each type
-ms.assetid: 845ba6cb-60b3-4053-9d54-f43ed344f82d
 keywords: ["Maintain a list of objects for each type (global flag)"]
 ms.date: 10/25/2018
 ms.localizationpriority: medium

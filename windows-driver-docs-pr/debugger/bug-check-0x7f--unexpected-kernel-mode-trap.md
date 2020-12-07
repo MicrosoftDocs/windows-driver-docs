@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP
 description: The UNEXPECTED_KERNEL_MODE_TRAP bug check has a value of 0x0000007F.
-ms.assetid: f4fcc2a1-891b-44e9-94bf-e712019f538f
 keywords: ["Bug Check 0x7F UNEXPECTED_KERNEL_MODE_TRAP", "UNEXPECTED_KERNEL_MODE_TRAP"]
 ms.date: 05/23/2017
 topic_type:

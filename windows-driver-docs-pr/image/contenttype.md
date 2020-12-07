@@ -1,7 +1,6 @@
 ---
 title: ContentType element
 description: The optional ContentType element specifies the main characteristics of the original document.
-ms.assetid: 0e91e4ec-5569-452f-b929-9d2923f3147d
 keywords: ["ContentType element Imaging Devices"]
 topic_type:
 - apiref

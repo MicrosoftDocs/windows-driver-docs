@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_INSTANCE\_INFO
 description: The KSPROPERTY\_SYSAUDIO\_INSTANCE\_INFO property opens a virtual audio device and specifies the configuration flags for that device.
-ms.assetid: ef60c188-704f-4dbb-bf6d-cdf3152c209b
 keywords: ["KSPROPERTY_SYSAUDIO_INSTANCE_INFO Audio Devices"]
 topic_type:
 - apiref

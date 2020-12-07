@@ -1,7 +1,6 @@
 ---
 title: Problems with Logical Operators in GDL Preprocessing
 description: Problems with Logical Operators in GDL Preprocessing
-ms.assetid: 8ba1758c-8b8e-4eb2-8625-ffee213025aa
 keywords:
 - preprocessor directives WDK GDL , problems with preprocessing
 - directives WDK GDL , source file preprocessor directives

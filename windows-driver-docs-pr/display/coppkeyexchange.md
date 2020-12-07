@@ -1,7 +1,6 @@
 ---
 title: COPPKeyExchange function
 description: The sample COPPKeyExchange function retrieves the digital certificate used by the graphics hardware.
-ms.assetid: ecf26fc7-fba0-4dcf-9b63-9808b8efec13
 keywords:
 - copy protection WDK COPP , video miniport driver code template
 - video copy protection WDK COPP , video miniport driver code template

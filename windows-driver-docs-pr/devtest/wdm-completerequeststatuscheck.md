@@ -1,7 +1,6 @@
 ---
 title: CompleteRequestStatusCheck rule (wdm)
 description: The CompleteRequestStatusCheck rule verifies that the I/O status value in the IRP matches the status value returned by the lower driver.
-ms.assetid: 3B61137E-1D10-443B-A653-B32D638B17DB
 ms.date: 05/21/2018
 keywords: ["CompleteRequestStatusCheck rule (wdm)"]
 topic_type:

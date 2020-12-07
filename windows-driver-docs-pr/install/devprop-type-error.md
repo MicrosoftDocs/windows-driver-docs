@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_ERROR
 description: The DEVPROP_TYPE_ERROR identifier represents the base-data-type identifier for the Microsoft Win32 error code values that are defined in WINERROR.H.
-ms.assetid: fe8fa3de-a984-4c6f-902f-5eda24402a65
 keywords: ["DEVPROP_TYPE_ERROR Device and Driver Installation"]
 topic_type:
 - apiref

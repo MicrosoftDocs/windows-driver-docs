@@ -1,7 +1,6 @@
 ---
 title: Handling Unsupported IOCTL_VIDEO_XXX Requests
 description: Handling Unsupported IOCTL_VIDEO_XXX Requests
-ms.assetid: e3a96cc2-bb7f-4060-bf71-d8a63b918329
 keywords:
 - video miniport drivers WDK Windows 2000 , processing requests
 - request processing WDK video miniport

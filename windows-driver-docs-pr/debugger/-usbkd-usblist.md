@@ -1,7 +1,6 @@
 ---
 title: usbkd.usblist
 description: The usbkd.usblist command displays a linked list of structures of a specified type.
-ms.assetid: 503466EE-2246-4CE3-BCE7-6DC7D42DB86A
 keywords: ["usbkd.usblist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

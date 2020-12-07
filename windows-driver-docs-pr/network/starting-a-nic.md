@@ -1,7 +1,6 @@
 ---
 title: Starting a NIC
 description: Starting a NIC
-ms.assetid: 8463edba-1502-44b7-a9bd-30763b9e7679
 keywords:
 - NICs WDK networking , starting
 - network interface cards WDK networking , starting

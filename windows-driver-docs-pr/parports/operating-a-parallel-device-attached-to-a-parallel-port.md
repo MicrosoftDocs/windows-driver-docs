@@ -1,7 +1,6 @@
 ---
 title: Operating a Parallel Device Attached to a Parallel Port
 description: Operating a Parallel Device Attached to a Parallel Port
-ms.assetid: 5ad36162-efbe-4be8-954c-964ef12c539a
 keywords:
 - parallel ports WDK , parallel device operation
 - parallel devices WDK

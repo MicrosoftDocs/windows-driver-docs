@@ -1,7 +1,6 @@
 ---
 title: Blitting
 description: Blitting
-ms.assetid: d9cbe939-957d-48e0-8427-d2c1ca0a9dd6
 keywords:
 - blt WDK DirectDraw
 - drawing blt WDK DirectDraw , about blitting

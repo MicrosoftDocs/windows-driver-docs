@@ -1,7 +1,6 @@
 ---
 title: Workspace Contents
 description: Workspace Contents
-ms.assetid: aa0a3bab-2907-4bcf-9a48-5669c423447a
 keywords: ["workspaces, contents of workspaces", "workspaces, automatically starting a session"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

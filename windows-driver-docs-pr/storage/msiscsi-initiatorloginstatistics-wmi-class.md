@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorLoginStatistics WMI Class
 description: MSiSCSI\_InitiatorLoginStatistics WMI Class
-ms.assetid: cbbfdc11-2c8a-4afa-b62f-187f8c959750
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: Log Tokens
 description: Log Tokens
-ms.assetid: f666d457-eb0a-4482-a8ac-e2921ab8c5a9
 keywords:
 - log tokens WDK SetupAPI
 - text logs WDK SetupAPI , log tokens

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_NAME
 description: WDI_TLV_P2P_SERVICE_NAME is a TLV that contains the name of a service.
-ms.assetid: 6394F781-BFE7-4009-8F5E-72D7C8CCF036
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_NAME Network Drivers Starting with Windows Vista

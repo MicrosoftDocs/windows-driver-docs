@@ -1,7 +1,6 @@
 ---
 title: GDI Support Services
 description: GDI Support Services
-ms.assetid: a5521f9f-ddf6-4892-bf6d-aebb7936df11
 keywords:
 - GDI WDK Windows 2000 display , service routines
 - graphics drivers WDK Windows 2000 display , service routines

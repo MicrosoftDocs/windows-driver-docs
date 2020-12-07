@@ -1,7 +1,6 @@
 ---
 title: WIA Device Messages
 description: WIA Device Messages
-ms.assetid: b498a75d-1252-4f13-ae62-9a53491c2bde
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

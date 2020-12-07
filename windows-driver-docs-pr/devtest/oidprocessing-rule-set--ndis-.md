@@ -1,7 +1,6 @@
 ---
 title: OidProcessing rule set (NDIS)
 description: Use these rules to verify that your driver correctly processes OID requests.
-ms.assetid: 0E12778B-BB86-4387-9B8A-19E3876D6F8C
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

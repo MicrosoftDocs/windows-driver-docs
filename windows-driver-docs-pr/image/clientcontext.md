@@ -1,7 +1,6 @@
 ---
 title: ClientContext element
 description: The required ClientContext element specifies a client-specific string.
-ms.assetid: 09bc5f5b-6198-4553-9f6f-8219e620f634
 keywords: ["ClientContext element Imaging Devices"]
 topic_type:
 - apiref

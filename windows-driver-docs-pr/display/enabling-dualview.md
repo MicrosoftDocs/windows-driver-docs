@@ -1,7 +1,6 @@
 ---
 title: Enabling DualView
 description: Enabling DualView
-ms.assetid: 7779c74d-2076-419d-94e4-07c36501524e
 keywords:
 - DualView WDK video miniport
 ms.date: 04/20/2017

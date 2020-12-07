@@ -1,7 +1,6 @@
 ---
 title: Checking for Traverse Privilege on IRP_MJ_CREATE
 description: Checking for Traverse Privilege on IRP_MJ_CREATE
-ms.assetid: 9ba743d6-8e78-4f9a-9cb8-cb98f734c290
 keywords:
 - IRP_MJ_CREATE
 - traverse privileges WDK file systems

@@ -1,7 +1,6 @@
 ---
 title: R  (Windows Debugger Glossary)
 description: Glossary page - R
-ms.assetid: 77bd1a66-39b3-4990-801e-4192a6e9cf47
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

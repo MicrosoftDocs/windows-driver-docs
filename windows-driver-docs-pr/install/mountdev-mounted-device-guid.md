@@ -1,7 +1,6 @@
 ---
 title: MOUNTDEV_MOUNTED_DEVICE_GUID
 description: MOUNTDEV_MOUNTED_DEVICE_GUID
-ms.assetid: 48d127ed-414b-40bb-8a35-6472c8783b81
 keywords: ["MOUNTDEV_MOUNTED_DEVICE_GUID Device and Driver Installation"]
 topic_type:
 - apiref

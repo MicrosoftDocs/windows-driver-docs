@@ -1,7 +1,6 @@
 ---
 title: Best Practices for Specifying Model IDs
 description: Best Practices for Specifying Model IDs
-ms.assetid: ed0cdfb4-1de8-4b4f-8bab-7c5e06cf96f6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

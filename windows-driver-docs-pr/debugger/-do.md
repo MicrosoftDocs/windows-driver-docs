@@ -1,7 +1,6 @@
 ---
 title: .do
 description: The .do token behaves like the do keyword in C, except that the word "while" is not used before the condition.
-ms.assetid: 254413bd-7fa5-4401-b242-470f9c0cf11a
 keywords: [".do Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

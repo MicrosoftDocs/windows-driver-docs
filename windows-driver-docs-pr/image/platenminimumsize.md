@@ -1,7 +1,6 @@
 ---
 title: PlatenMinimumSize element
 description: The required PlatenMinimumSize element specifies the smallest size document that an end user can scan on the flatbed platen.
-ms.assetid: 8db5092f-415c-4942-a4a7-733a381afd16
 keywords: ["PlatenMinimumSize element Imaging Devices"]
 topic_type:
 - apiref

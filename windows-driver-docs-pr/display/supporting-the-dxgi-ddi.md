@@ -1,7 +1,6 @@
 ---
 title: Supporting the DXGI DDI
 description: Supporting the DXGI DDI
-ms.assetid: 3a49d7cb-984f-4e4f-a549-5c0442e1c45a
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

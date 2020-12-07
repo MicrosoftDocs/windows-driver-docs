@@ -1,7 +1,6 @@
 ---
 title: Stream Class and Minidriver Interface
 description: Stream Class and Minidriver Interface
-ms.assetid: d85510e6-1fd7-442a-bd88-f32b6c13ff75
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , stream class interface
 - streaming minidrivers WDK Windows 2000 Kernel , stream class interface

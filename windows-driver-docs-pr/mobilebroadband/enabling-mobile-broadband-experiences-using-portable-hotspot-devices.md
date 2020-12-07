@@ -1,7 +1,6 @@
 ---
 title: Introduction to enabling MB experiences using portable hotspot devices
 description: Introduction to enabling mobile broadband (MB) experiences using portable hotspot devices
-ms.assetid: bfd53d0d-d9cb-4b6a-bbad-549139c5a1ae
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

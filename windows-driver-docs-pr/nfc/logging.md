@@ -1,6 +1,5 @@
 ---
 title: Logging
-ms.assetid: CB7FE988-6E5A-4669-9FFB-A2B3F8DAF30F
 keywords:
 - NFC
 - near field communications

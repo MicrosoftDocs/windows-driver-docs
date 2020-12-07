@@ -1,7 +1,6 @@
 ---
 title: Metadata field L2 identifiers
 description: This section describes metadata field L2 identifiers for Windows Filtering Platform callout drivers.
-ms.assetid: 4A03C593-3760-48F0-A082-A9D1AD90EAD6
 keywords:
 - Metadata field L2 identifiers network drivers
 ms.date: 11/09/2017

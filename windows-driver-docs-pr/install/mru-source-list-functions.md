@@ -1,7 +1,6 @@
 ---
 title: MRU Source List Functions
 description: MRU Source List Functions
-ms.assetid: 62c6b144-5883-45cf-a114-7b82453f275f
 keywords:
 - SetupAPI functions WDK , most recently used source lists
 - most recently used source lists WDK SetupAPI

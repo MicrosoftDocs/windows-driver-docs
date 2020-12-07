@@ -1,7 +1,6 @@
 ---
 title: Speaker Fill
 description: Speaker Fill
-ms.assetid: 22e25de6-e21d-4fec-8438-5a44f0109e9c
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---

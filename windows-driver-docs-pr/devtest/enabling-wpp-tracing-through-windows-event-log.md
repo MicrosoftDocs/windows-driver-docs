@@ -1,7 +1,6 @@
 ---
 title: How Do I Enable WPP Tracing Through the Windows Event Log Service
 description: The Windows Event Log service supports WPP logging and decoding. This topic describes how to enable WPP tracing through the Windows Event Log service.
-ms.assetid: cd5dad3e-fa25-4ec2-bc17-9332b4c00d17
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

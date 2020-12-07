@@ -1,7 +1,6 @@
 ---
 title: Presentation
 description: Presentation
-ms.assetid: 23a01b5b-0654-4c43-ac96-a75810fa20df
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , presentation
 - presentation WDK DirectX 8.0

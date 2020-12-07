@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the OutputBin Feature
 description: Option Attributes for the OutputBin Feature
-ms.assetid: 492dbaeb-2930-4dfe-b14d-959bbc07233f
 keywords:
 - OutputBin Feature
 ms.date: 04/20/2017

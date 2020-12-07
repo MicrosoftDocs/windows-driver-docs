@@ -1,7 +1,6 @@
 ---
 title: Direct3D Texture Management
 description: Direct3D Texture Management
-ms.assetid: d67ce56b-ed76-413f-b09f-e25400f1ac6d
 keywords:
 - texture management WDK Direct3D
 - Direct3D WDK Windows 2000 display , texture management

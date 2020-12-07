@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_SERVICES
 description: OID_WWAN_DEVICE_SERVICES returns the list of device services supported by the miniport driver.NDIS_WWAN_DEVICE_SERVICES structure that indicates the supported device service GUIDs.
-ms.assetid: 79DB0FC0-9AAA-465D-9479-9AD41BE9F4B4
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_SERVICES Network Drivers Starting with Windows Vista

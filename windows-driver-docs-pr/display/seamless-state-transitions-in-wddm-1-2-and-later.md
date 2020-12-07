@@ -1,7 +1,6 @@
 ---
 title: Providing seamless state transitions in WDDM 1.2 and later
 description: several features help to minimize screen flashes during the boot process, transitions from lower power states, and transitions back to operating system control.
-ms.assetid: CD2208AA-62B6-4BAD-BE7C-0791B13D1E96
 keywords:
 - state transitions WDK display
 - resume from hibernation WDK display

@@ -1,7 +1,6 @@
 ---
 title: Building and Loading a WDF Driver
 description: This topic describes how to select a target operating system and framework version for a driver project in Visual Studio. It also describes the co-installer and how to determine if you should include this component in your driver package.
-ms.assetid: 82c77b1f-4bf0-46d9-bae3-822e9be5a7fb
 keywords:
 - kernel-mode drivers WDK KMDF , building drivers
 - KMDF WDK , building drivers

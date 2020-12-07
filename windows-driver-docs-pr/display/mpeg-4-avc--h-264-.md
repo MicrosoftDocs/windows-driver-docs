@@ -1,7 +1,6 @@
 ---
 title: MPEG-4 AVC (H.264)
 description: MPEG-4 AVC (H.264)
-ms.assetid: 15bf39bd-8554-4ef5-8208-9c12c558ec9b
 keywords:
 - MPEG-4 AVC (H.264) WDK DirectX VA
 - Advanced Video Coding (AVC) WDK DirectX VA

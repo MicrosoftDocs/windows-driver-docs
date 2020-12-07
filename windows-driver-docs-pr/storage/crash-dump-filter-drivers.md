@@ -1,7 +1,6 @@
 ---
 title: Introduction to Crash Dump Filter Drivers
 description: Crash Dump Filter Drivers
-ms.assetid: d91c00d7-ad17-4fa8-9e78-fee0698d9049
 ms.date: 12/15/2019
 ms.localizationpriority: medium
 ---

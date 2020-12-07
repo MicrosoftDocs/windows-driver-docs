@@ -1,7 +1,6 @@
 ---
 title: Filter Module Synchronous OID Requests
 description: This topic describes Filter Module Synchronous OID requests
-ms.assetid: 14C6555D-D8E6-4DEB-96C8-D4F18F06CE6B
 keywords: Filter Module Synchronous OID Requests Interface, Filter Module Synchronous OID call, WDK Filter Module Synchronous OIDs, Filter Module Synchronous OID request
 ms.date: 04/03/2017
 ms.localizationpriority: medium

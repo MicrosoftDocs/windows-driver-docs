@@ -1,7 +1,6 @@
 ---
 title: Updates for IddCx versions 1.4 and later
 description: IddCx version 1.4 updates for indirect display drivers
-ms.assetid: 4220c3cb-57f0-401a-a39f-1d690f717d94
 ms.date: 09/28/2020
 keywords:
 - Indirect display driver, IddCx versions 1.4 and later

@@ -1,7 +1,6 @@
 ---
 title: Target State
 description: Target State
-ms.assetid: befd6c0b-dd16-40a1-bc6b-634b354d2a75
 keywords: ["Debugger Engine API, targets, state"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -4,7 +4,6 @@ description: Returns a value of '2' to inform USBMon that the method call was su
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 1EDF5EFA-1158-4BC7-99AB-3811E4443E62
 keywords: ["Retry method Print Devices", "Retry method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , Retry method"]
 topic_type:
 - apiref

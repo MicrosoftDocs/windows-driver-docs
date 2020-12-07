@@ -1,7 +1,6 @@
 ---
 title: .lines (Toggle Source Line Support)
 description: The .lines command enables or disables support for source-line information.
-ms.assetid: 5d923592-7aba-42a0-893b-2c6621e4b87f
 keywords: [".lines (Toggle Source Line Support) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Managing Resources for Multiple GPU Scenarios
 description: Managing Resources for Multiple GPU Scenarios
-ms.assetid: f3dc10b1-76e9-4f31-b253-149b6300611d
 keywords:
 - GPU WDK Windows 7 display
 - GPU WDK Windows 7 display , multiple

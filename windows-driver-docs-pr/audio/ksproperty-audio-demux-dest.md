@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_DEMUX\_DEST
 description: The KSPROPERTY\_AUDIO\_DEMUX\_DEST property specifies the destination stream to which a demultiplexer directs its input stream. This is a property of a DEMUX node (KSNODETYPE\_DEMUX).
-ms.assetid: 431918da-2267-4fe5-a002-12d16b5f0984
 keywords: ["KSPROPERTY_AUDIO_DEMUX_DEST Audio Devices"]
 topic_type:
 - apiref

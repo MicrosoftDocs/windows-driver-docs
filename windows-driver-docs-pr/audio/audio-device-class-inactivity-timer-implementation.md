@@ -1,7 +1,6 @@
 ---
 title: Audio Device Class Inactivity Timer Implementation
 description: Audio Device Class Inactivity Timer Implementation
-ms.assetid: e7e431ec-626d-4fdb-8705-fc5420c43f17
 keywords:
 - inactivity timers WDK audio
 - timers WDK audio

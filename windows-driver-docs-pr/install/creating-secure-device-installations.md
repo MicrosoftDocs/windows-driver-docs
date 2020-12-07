@@ -1,7 +1,6 @@
 ---
 title: Creating Secure Device Installations
 description: Creating Secure Device Installations
-ms.assetid: e92488c4-1383-4493-b229-61c646546c82
 keywords:
 - Device setup WDK device installations , security
 - device installations WDK , security

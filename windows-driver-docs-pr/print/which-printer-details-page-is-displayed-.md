@@ -1,7 +1,6 @@
 ---
 title: Which Printer Details Page is Displayed
 description: Which Printer Details Page is Displayed
-ms.assetid: f7824350-a6de-45ca-8d72-859edf77e86d
 keywords:
 - customized print Web pages WDK , viewing specific pages
 - viewing printer details page

@@ -1,7 +1,6 @@
 ---
 title: Command and Vertex Buffers
 description: Command and Vertex Buffers
-ms.assetid: e23013d2-d545-42e5-9787-e4a90921153b
 keywords:
 - command buffers WDK Direct3D
 - vertex buffers WDK Direct3D

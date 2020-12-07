@@ -1,7 +1,6 @@
 ---
 title: memusage
 description: The memusage extension displays summary statistics about physical memory use.
-ms.assetid: 32796ada-53ee-465f-b284-db6ee5481878
 keywords: ["memusage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

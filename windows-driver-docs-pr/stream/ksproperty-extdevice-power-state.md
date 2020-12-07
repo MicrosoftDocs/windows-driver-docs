@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_POWER\_STATE
 description: The KSPROPERTY\_EXTDEVICE\_POWER\_STATE property sets or gets the power state of an external device.
-ms.assetid: bfca1f3d-b563-4ddd-b823-85487b4a4093
 keywords: ["KSPROPERTY_EXTDEVICE_POWER_STATE Streaming Media Devices"]
 topic_type:
 - apiref

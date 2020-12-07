@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's ReleaseQueue Routine
 description: Storage Class Driver's ReleaseQueue Routine
-ms.assetid: 4d0f74f2-6c98-4de1-bc28-dfff3c01e319
 keywords:
 - ReleaseQueue
 - queues WDK storage

@@ -1,7 +1,6 @@
 ---
 title: Initializing NDIS Timers
 description: Initializing NDIS Timers
-ms.assetid: 2f304f5c-fa70-441e-853e-a48ad70d61a0
 keywords:
 - timer services WDK NDIS
 - NDIS timer services WDK

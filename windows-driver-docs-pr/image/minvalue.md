@@ -1,7 +1,6 @@
 ---
 title: MinValue element
 description: The required MinValue element specifies the minimum value that the scan device supports for scanner configuration elements that require a range of values.
-ms.assetid: ea20d077-bf2d-42a1-8dba-69e8aaf2881c
 keywords: ["MinValue element Imaging Devices"]
 topic_type:
 - apiref

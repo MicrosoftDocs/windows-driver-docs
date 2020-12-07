@@ -1,7 +1,6 @@
 ---
 title: MB Interface Model supplement
 description: This section provides supplemental information for the MB Interface Model (MBIM)
-ms.assetid: 577BCF39-868B-44F5-A5C0-75E28689C2B6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Setting Device Object Flags for Power Management
 description: Setting Device Object Flags for Power Management
-ms.assetid: 58d1a3a2-c8ea-446c-b1d6-ed00411d1d75
 keywords: ["DO_POWER_PAGABLE", "DO_POWER_INRUSH", "device object flags WDK power management", "object flags WDK power management", "flags WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

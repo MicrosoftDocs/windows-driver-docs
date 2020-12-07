@@ -1,7 +1,6 @@
 ---
 title: Video Miniport Driver Initialization (Windows 2000 Model)
 description: Video Miniport Driver Initialization (Windows 2000 Model)
-ms.assetid: b18b5483-f11f-4533-9434-a3a4a30fb4b2
 keywords:
 - video miniport drivers WDK Windows 2000 , initializing
 - initializing video miniport drivers

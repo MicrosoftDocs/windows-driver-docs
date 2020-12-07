@@ -1,7 +1,6 @@
 ---
 title: Using PnP Hardware Profile Change Notification
 description: Using PnP Hardware Profile Change Notification
-ms.assetid: 341464e4-507d-43da-88a2-5bfecd2dd02a
 keywords: ["notifications WDK PnP , hardware profile changes", "hardware profile change notifications WDK PnP", "EventCategoryHardwareProfileChange notification", "profile change notifications WDK PnP", "machine hardware profile change notifications WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

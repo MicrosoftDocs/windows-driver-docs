@@ -4,7 +4,6 @@ description: Returns the number of pages that have been printed by the print dev
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 5933D374-D134-4731-994A-B16027225CA3
 keywords: ["PrintedPageCount method Print Devices", "PrintedPageCount method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , PrintedPageCount method"]
 topic_type:
 - apiref

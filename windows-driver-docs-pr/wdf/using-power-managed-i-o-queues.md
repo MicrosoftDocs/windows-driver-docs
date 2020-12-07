@@ -1,7 +1,6 @@
 ---
 title: Using Power-Managed I/O Queues
 description: Using Power-Managed I/O Queues
-ms.assetid: 271d55ef-d82e-4ffd-bf41-a602c42c3f0e
 keywords:
 - I/O queues WDK KMDF , power-managed
 - power-managed I/O queues WDK KMDF

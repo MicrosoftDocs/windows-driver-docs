@@ -1,7 +1,6 @@
 ---
 title: Pseudo-Register Syntax
 description: Pseudo-Register Syntax
-ms.assetid: f7dc52ea-e97e-4251-a517-c115cbc7d056
 keywords: ["pseudo-registers", "pseudo-registers, automatic", "pseudo-registers, user defined", "registers, pseudo-registers", "loop variables", "return address", "$to to $t19 pseudo-registers", "$bp ID pseudo-register", "$ea"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

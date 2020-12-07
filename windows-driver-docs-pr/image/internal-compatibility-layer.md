@@ -1,7 +1,6 @@
 ---
 title: Internal Compatibility Layer
 description: Internal Compatibility Layer
-ms.assetid: 6cfb3842-751e-4f4c-9fac-daba70245b81
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

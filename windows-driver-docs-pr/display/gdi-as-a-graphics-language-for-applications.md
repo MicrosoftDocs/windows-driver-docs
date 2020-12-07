@@ -1,7 +1,6 @@
 ---
 title: GDI as a Graphics Language for Applications
 description: GDI as a Graphics Language for Applications
-ms.assetid: fc824284-0400-47b0-ac4e-ff21e1e0ded9
 keywords:
 - GDI WDK Windows 2000 display , graphics language for applications
 - graphics drivers WDK Windows 2000 display , graphics language for applications

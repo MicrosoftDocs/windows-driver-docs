@@ -1,7 +1,6 @@
 ---
 title: lm (List Loaded Modules)
 description: The lm command displays the specified loaded modules. The output includes the status and the path of the module.
-ms.assetid: ee2283bd-4d3f-4e30-8b32-e286a415bb3a
 keywords: ["lm (List Loaded Modules) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

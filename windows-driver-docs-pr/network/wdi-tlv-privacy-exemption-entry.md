@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PRIVACY_EXEMPTION_ENTRY
 description: WDI_TLV_PRIVACY_EXEMPTION_ENTRY is a TLV that contains a privacy exemption entry.
-ms.assetid: 086BD366-F54C-4BF4-8544-CC2AB2472EB2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PRIVACY_EXEMPTION_ENTRY Network Drivers Starting with Windows Vista

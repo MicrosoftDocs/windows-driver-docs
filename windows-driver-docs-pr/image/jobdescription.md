@@ -1,7 +1,6 @@
 ---
 title: JobDescription element
 description: The required JobDescription element contains basic creation information for the currently identified job.
-ms.assetid: 78b77a9b-2fe9-4261-996b-970e97c4c0a9
 keywords: ["JobDescription element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xEF CRITICAL_PROCESS_DIED
 description: The CRITICAL_PROCESS_DIED bug check has a value of 0x000000EF. This indicates that a critical system process died.
-ms.assetid: caa18221-6128-4d77-ab61-ef3c28cfba38
 keywords: ["Bug Check 0xEF CRITICAL_PROCESS_DIED", "CRITICAL_PROCESS_DIED"]
 ms.date: 02/25/2020
 topic_type:

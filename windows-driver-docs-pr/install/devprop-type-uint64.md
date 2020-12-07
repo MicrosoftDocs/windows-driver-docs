@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_UINT64
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a ULONG64-typed unsigned integer.
-ms.assetid: a6dfb90d-0cae-4b63-bc27-57d7b0f6b897
 keywords: ["DEVPROP_TYPE_UINT64 Device and Driver Installation"]
 topic_type:
 - apiref

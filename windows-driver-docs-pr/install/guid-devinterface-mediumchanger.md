@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MEDIUMCHANGER
 description: GUID_DEVINTERFACE_MEDIUMCHANGER
-ms.assetid: d7c41c5c-b03b-459e-81b0-b363b4c174b0
 keywords: ["GUID_DEVINTERFACE_MEDIUMCHANGER Device and Driver Installation"]
 topic_type:
 - apiref

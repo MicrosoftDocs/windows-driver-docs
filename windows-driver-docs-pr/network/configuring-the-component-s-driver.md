@@ -1,7 +1,6 @@
 ---
 title: Configuring the Component's Driver
 description: Configuring the Component's Driver
-ms.assetid: 0aab9bb0-180c-4e21-ac8e-f20db7e8201a
 keywords:
 - notify objects WDK networking , driver configuration
 - network notify objects WDK , driver configuration

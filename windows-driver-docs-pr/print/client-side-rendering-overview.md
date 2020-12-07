@@ -1,7 +1,6 @@
 ---
 title: Client-Side Rendering Overview
 description: Client-Side Rendering Overview
-ms.assetid: 0c73ca03-0fde-423d-80c9-6800468176b5
 keywords:
 - client-side rendering WDK print , about client-side rendering
 ms.date: 04/20/2017

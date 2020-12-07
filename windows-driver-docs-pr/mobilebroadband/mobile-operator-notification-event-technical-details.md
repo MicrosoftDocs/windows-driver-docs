@@ -1,7 +1,6 @@
 ---
 title: Mobile operator notification event technical details
 description: Mobile operator notification event technical details
-ms.assetid: 639f238a-4bb4-4ac0-9b59-92a761dbc351
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Using the Kernel Stack
 description: Using the Kernel Stack
-ms.assetid: f1df01f4-f156-4267-a4a0-c548e16c02ea
 keywords: ["memory management WDK kernel , kernel stack", "kernel-mode stack space WDK", "kernel stack space WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

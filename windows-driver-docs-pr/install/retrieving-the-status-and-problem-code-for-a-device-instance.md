@@ -1,7 +1,6 @@
 ---
 title: Retrieving the Status and Problem Code for a Device Instance
 description: Retrieving the Status and Problem Code for a Device Instance
-ms.assetid: 22ca9ac2-fe67-427d-a6e4-f1d9cbbede52
 ms.date: 02/28/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Streaming Minidrivers
 description: Streaming Minidrivers
-ms.assetid: 9f669a1a-50fd-482f-a5af-28e5685dc68c
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , streaming minidrivers
 - Streaming Model WDK Windows 2000 Kernel , streaming minidrivers

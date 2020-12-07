@@ -1,7 +1,6 @@
 ---
 title: Requirements for Routing PC Card Interrupts
 description: Requirements for Routing PC Card Interrupts
-ms.assetid: dbe01864-f05b-4004-9b04-bdefc5055e78
 keywords:
 - IRQ routing WDK PCMCIA bus
 - PCMCIA WDK buses , IRQ routing

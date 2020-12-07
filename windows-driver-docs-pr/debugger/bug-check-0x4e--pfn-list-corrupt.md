@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x4E PFN_LIST_CORRUPT
 description: The PFN_LIST_CORRUPT bug check has a value of 0x0000004E. This indicates that the page frame number (PFN) list is corrupted.
-ms.assetid: cf78aecb-80d3-4637-a2b5-a2511999c5e3
 keywords: ["Bug Check 0x4E PFN_LIST_CORRUPT", "PFN_LIST_CORRUPT"]
 ms.date: 05/23/2017
 topic_type:

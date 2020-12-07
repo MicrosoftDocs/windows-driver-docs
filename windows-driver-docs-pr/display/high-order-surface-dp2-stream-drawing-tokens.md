@@ -1,7 +1,6 @@
 ---
 title: High Order Surface DP2 Stream Drawing Tokens
 description: High Order Surface DP2 Stream Drawing Tokens
-ms.assetid: cc3ab659-a137-4c64-be1b-251e28873c2a
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , high order surfaces, DP2 stream drawing tokens
 - high order surfaces WDK DirectX 8.0 , DP2 stream drawing tokens

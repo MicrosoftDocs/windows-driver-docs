@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DHP_Rebalance_Policy
 description: DEVPKEY_Device_DHP_Rebalance_Policy
-ms.assetid: a882a114-9d1b-41ca-ab24-c2cdda952177
 keywords: ["DEVPKEY_Device_DHP_Rebalance_Policy Device and Driver Installation"]
 topic_type:
 - apiref

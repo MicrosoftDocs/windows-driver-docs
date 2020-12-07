@@ -1,7 +1,6 @@
 ---
 title: Example Global Logger Provider
 description: Example Global Logger Provider
-ms.assetid: 06de4d6f-747c-4cf9-a325-2b697b72a1e9
 keywords:
 - Global Logger trace session WDK , logging
 - boot-time Global Logger trace session WDK , logging

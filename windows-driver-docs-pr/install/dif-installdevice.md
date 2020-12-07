@@ -1,7 +1,6 @@
 ---
 title: DIF_INSTALLDEVICE
 description: DIF_INSTALLDEVICE
-ms.assetid: 2d369086-c2b6-45a4-a87e-51ff5725938f
 keywords: ["DIF_INSTALLDEVICE Device and Driver Installation"]
 topic_type:
 - apiref

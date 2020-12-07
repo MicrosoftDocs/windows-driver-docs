@@ -1,7 +1,6 @@
 ---
 title: Setting Breakpoints
 description: Setting Breakpoints
-ms.assetid: 9715c35a-0c8c-4e89-be28-2899f21ec964
 keywords: ["Debugger Engine API, setting breakpoints"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

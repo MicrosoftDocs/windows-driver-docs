@@ -1,7 +1,6 @@
 ---
 title: Handling Command and DMA Buffers
 description: Handling Command and DMA Buffers
-ms.assetid: 21564bcb-ba93-446f-bc08-282759263847
 keywords:
 - buffers WDK display
 - command buffers WDK display

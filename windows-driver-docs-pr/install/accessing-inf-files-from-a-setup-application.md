@@ -1,7 +1,6 @@
 ---
 title: Accessing INF Files from a Device Installation Application
 description: Accessing INF Files from a Device Installation Application
-ms.assetid: 4afdfcf6-a220-417a-99de-8879f9329c36
 keywords:
 - INF files WDK device installations , device installation application operations
 ms.date: 04/20/2017

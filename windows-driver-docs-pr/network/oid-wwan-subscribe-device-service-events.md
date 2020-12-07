@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
 description: OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS sets information about the list of device services for which the MB device must send NDIS_STATUS_WWAN_DEVICE_SERVICE_EVENT notifications.
-ms.assetid: 34D38A28-0E81-47B0-9232-F89927DA4B2B
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS Network Drivers Starting with Windows Vista

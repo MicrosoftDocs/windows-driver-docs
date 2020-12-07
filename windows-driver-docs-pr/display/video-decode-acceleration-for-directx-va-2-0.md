@@ -1,7 +1,6 @@
 ---
 title: Video Decode Acceleration for DirectX VA 2.0
 description: Video Decode Acceleration for DirectX VA 2.0
-ms.assetid: c393a16c-24bd-4a76-b502-3e8287085307
 keywords:
 - DirectX Video Acceleration WDK display , video decoding
 - Video Acceleration WDK DirectX , video decoding

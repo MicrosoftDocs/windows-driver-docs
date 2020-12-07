@@ -1,7 +1,6 @@
 ---
 title: Configurations for Creating Snapshots
 description: Configurations for Creating Snapshots
-ms.assetid: d837348e-81e2-432a-b8b2-5df9cc1c7a9a
 keywords:
 - GDL WDK , configurations
 - snapshots WDK GDL , configurations for snapshots

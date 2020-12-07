@@ -1,7 +1,6 @@
 ---
 title: Time-Stamped Events
 description: Time-Stamped Events
-ms.assetid: 8db89e31-bfd7-48cf-9eb2-12ac7784cc31
 keywords:
 - synthesizers WDK audio , time stamps
 - time stamps WDK audio

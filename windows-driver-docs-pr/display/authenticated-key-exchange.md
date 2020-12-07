@@ -1,7 +1,6 @@
 ---
 title: Authenticated Key Exchange
 description: Authenticated Key Exchange
-ms.assetid: cd8c29ab-6276-4236-9b9c-152adf2868c3
 keywords:
 - authenticated key exchange WDK COPP
 - key exchange WDK COPP

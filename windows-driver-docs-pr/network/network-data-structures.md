@@ -1,7 +1,6 @@
 ---
 title: Network Data Structures
 description: Network Data Structures
-ms.assetid: c29aaae6-6f68-404a-90dc-bae005ac9b6e
 keywords:
 - NET_BUFFER
 - NET_BUFFER_LIST

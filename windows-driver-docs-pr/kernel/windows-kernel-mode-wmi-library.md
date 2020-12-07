@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode WMI Library
 description: Windows Kernel-Mode WMI Library
-ms.assetid: ca981f38-8f3b-48cc-969f-ce53b85bba20
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: l+, l- (Set Source Options)
 description: The l+and l- commands set the source line options that control source display and program stepping options.
-ms.assetid: 7b169af0-e799-47eb-b197-c4408a755702
 keywords: ["l+, l- (Set Source Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

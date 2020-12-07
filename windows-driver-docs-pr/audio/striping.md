@@ -1,7 +1,6 @@
 ---
 title: Striping
 description: Striping
-ms.assetid: 29ab650c-0c3b-4693-a277-4d9ba63b7b66
 keywords:
 - striping WDK audio
 - HD Audio, striping

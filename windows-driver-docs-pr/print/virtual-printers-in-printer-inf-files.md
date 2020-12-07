@@ -1,7 +1,6 @@
 ---
 title: Virtual Printers in Printer INF Files
 description: Virtual Printers in Printer INF Files
-ms.assetid: a7308b0f-61b8-4b4d-a116-ce940787882b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

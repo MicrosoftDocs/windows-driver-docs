@@ -1,7 +1,6 @@
 ---
 title: Parallel Device Interfaces, Internal Names, and Symbolic Links
 description: Parallel Device Interfaces, Internal Names, and Symbolic Links
-ms.assetid: 859e20bb-e411-4572-a393-a6faf534cf15
 keywords:
 - system-supplied parallel drivers WDK , device interfaces
 - system-supplied parallel drivers WDK , internal names

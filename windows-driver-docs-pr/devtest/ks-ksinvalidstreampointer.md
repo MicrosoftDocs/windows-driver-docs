@@ -1,7 +1,6 @@
 ---
 title: KsInvalidStreamPointer rule (ks)
 description: This rule verifies if a KS miniport driver provides a valid KS Stream Pointer as a function argument.
-ms.assetid: C9BBF9A6-3F0A-4494-BA13-A9CD55969979
 ms.date: 04/01/2020
 keywords: ["KsInvalidStreamPointer rule (ks)"]
 topic_type:

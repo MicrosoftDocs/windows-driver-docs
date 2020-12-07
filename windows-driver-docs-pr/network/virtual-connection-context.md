@@ -1,7 +1,6 @@
 ---
 title: Virtual Connection Context
 description: Virtual Connection Context
-ms.assetid: 9b318f9d-70f4-41b5-acab-5a193f7d2ab4
 keywords:
 - virtual connections WDK networking , context
 - VCs WDK networking , context

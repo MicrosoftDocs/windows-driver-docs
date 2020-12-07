@@ -1,7 +1,6 @@
 ---
 title: button element
 description: The required button element specifies the characteristics of a button in a message box that is displayed on the client computer.
-ms.assetid: 3e210599-9412-4eea-a024-338e39852199
 keywords: ["button element Print Devices"]
 topic_type:
 - apiref

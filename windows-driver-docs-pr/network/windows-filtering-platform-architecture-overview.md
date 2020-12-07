@@ -1,7 +1,6 @@
 ---
 title: Windows Filtering Platform Architecture Overview
 description: Windows Filtering Platform Architecture Overview
-ms.assetid: a20efbe1-f98c-452d-a134-9f65eb6dbc04
 keywords:
 - Windows Filtering Platform architecture WDK
 - architecture WDK Windows Filtering Platform

@@ -1,7 +1,6 @@
 ---
 title: dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory)
 description: The dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, and dqu commands display the pointer at the specified location, dereference that pointer, and display the associated memory.
-ms.assetid: af3db4e2-e3fc-4c4d-9432-13b87e699716
 keywords: ["dda, ddp, ddu, dpa, dpp, dpu, dqa, dqp, dqu (Display Referenced Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

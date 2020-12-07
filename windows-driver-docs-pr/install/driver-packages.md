@@ -1,7 +1,6 @@
 ---
 title: Driver Packages
 description: Driver Packages
-ms.assetid: e602c0c9-28eb-48bc-8a62-02f33b0c393a
 ms.date: 04/20/2017
 ms.localizationpriority: High
 ---

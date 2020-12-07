@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS
 description: Miniport drivers use the NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS notification to inform the mobile broadband (MB) service about the completion of a previous OID_WWAN_SAR_TRANSMISSION_STATUS Query or Set request.
-ms.assetid: 0F04AC31-A16F-4E6A-A5FF-A69574A300A1
 ms.date: 08/20/2018
 keywords: 
  -NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS Network Drivers Starting with Windows Vista

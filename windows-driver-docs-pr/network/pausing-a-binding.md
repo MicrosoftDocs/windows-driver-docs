@@ -1,7 +1,6 @@
 ---
 title: Pausing a Binding
 description: Pausing a Binding
-ms.assetid: 7f693904-d995-4fcb-8b88-9343a567602e
 keywords:
 - protocol drivers WDK networking , binding pause
 - NDIS protocol drivers WDK , binding pause

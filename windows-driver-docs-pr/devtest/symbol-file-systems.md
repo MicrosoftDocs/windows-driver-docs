@@ -1,7 +1,6 @@
 ---
 title: Symbol File Systems
 description: Symbol File Systems
-ms.assetid: 06f536e2-13d8-4727-9d34-a29a63eb01bc
 keywords:
 - BinPlace WDK , symbol file systems
 - symbol files WDK BinPlace

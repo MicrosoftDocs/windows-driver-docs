@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_AGC
 description: KSNODETYPE\_AGC
-ms.assetid: 54d6bb6a-9c15-4020-bc6e-92b24878e1fd
 keywords: ["KSNODETYPE_AGC Audio Devices"]
 topic_type:
 - apiref

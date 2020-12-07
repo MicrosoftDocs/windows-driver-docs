@@ -1,5 +1,4 @@
 ---
-ms.assetid: DAD531B1-2308-481F-841B-450EEEDA1BB1
 title: Using Microsoft C Runtime with User-Mode Drivers and Desktop Apps
 description: This topic provides information about distributing the C Runtime Libraries with applications and drivers for Windows 8 and Windows 8.1.
 ms.date: 04/20/2017

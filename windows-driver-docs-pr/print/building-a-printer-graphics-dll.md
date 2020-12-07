@@ -1,7 +1,6 @@
 ---
 title: Building a Printer Graphics DLL
 description: Building a Printer Graphics DLL
-ms.assetid: bec1e9cc-a846-43e5-bc9e-e43a151ef6c4
 keywords:
 - printer graphics DLL WDK , building
 - graphics DLL WDK printer , building

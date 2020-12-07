@@ -1,7 +1,6 @@
 ---
 title: search
 description: The search extension searches pages in physical memory for pointer-sized data that matches the specified criteria.
-ms.assetid: 5f9d4e50-c389-4309-8851-0f5069b1b66e
 keywords: ["search Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

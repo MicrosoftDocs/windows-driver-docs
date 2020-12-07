@@ -1,7 +1,6 @@
 ---
 title: Notification Errors
 description: Notification Errors
-ms.assetid: ffead40c-5c1c-45f6-83d2-48e4af357255
 keywords:
 - spooler notification WDK print , errors
 - print spooler notification WDK , errors

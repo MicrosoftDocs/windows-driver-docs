@@ -1,7 +1,6 @@
 ---
 title: AVStream Dispatch Tables
 description: AVStream Dispatch Tables
-ms.assetid: 974ea9ee-bb59-4973-83ef-c61f0240a555
 keywords:
 - dispatch tables WDK AVStream
 - AVStream dispatch tables WDK

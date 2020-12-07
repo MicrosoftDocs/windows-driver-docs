@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 46d44c54-4fd5-489f-9624-1df3c8917237
 keywords: ["get_ErrorDscp method Print Devices", "get_ErrorDscp method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_ErrorDscp method"]
 topic_type:
 - apiref

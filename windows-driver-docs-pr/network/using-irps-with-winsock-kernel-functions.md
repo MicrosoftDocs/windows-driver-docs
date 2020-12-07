@@ -1,7 +1,6 @@
 ---
 title: Using IRPs with Winsock Kernel Functions
 description: Using IRPs with Winsock Kernel Functions
-ms.assetid: eb7af09c-2312-4127-a0dc-324b208c1455
 keywords:
 - Winsock Kernel WDK networking , IRPs
 - WSK WDK networking , IRPs

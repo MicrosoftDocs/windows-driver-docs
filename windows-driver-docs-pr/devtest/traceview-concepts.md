@@ -1,7 +1,6 @@
 ---
 title: TraceView Concepts
 description: TraceView Concepts
-ms.assetid: 4fab2b23-8f7b-407b-b944-41ac8caf1a75
 keywords:
 - TraceView WDK , terminology
 - trace sessions WDK , groups

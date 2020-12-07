@@ -1,7 +1,6 @@
 ---
 title: PWM driver for an on-SoC PWM module 
 description: PWM controller is part of the SoC and memory-mapped to the SoC address space. Write a kernel-mode driver that manipulates the PWM registers and provides access to applications. 
-ms.assetid: 911375A9-6761-45C1-BB5E-79BC0E4409AC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

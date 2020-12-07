@@ -1,7 +1,6 @@
 ---
 title: Calling PoStartNextPowerIrp
 description: Calling PoStartNextPowerIrp
-ms.assetid: 8b3fb578-2ac2-4a04-ac99-1cfd51b07b01
 keywords: ["power IRPs WDK kernel , PoStartNextPowerIrp", "PoStartNextPowerIrp"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Code Example for Implementing Helper Methods
 description: Code Example for Implementing Helper Methods
-ms.assetid: 4f9710c2-3741-4048-9b6c-b21241b72c91
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

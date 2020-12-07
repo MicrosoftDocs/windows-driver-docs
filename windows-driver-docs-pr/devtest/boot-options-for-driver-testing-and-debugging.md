@@ -1,7 +1,6 @@
 ---
 title: Tools for Changing Boot Options for Driver Testing and Debugging
 description: Tools for Changing Boot Options for Driver Testing and Debugging
-ms.assetid: 4fd58868-7a43-42e3-adf9-5a82593c1675
 keywords:
 - tools WDK , boot options
 - driver development tools WDK , boot options

@@ -1,7 +1,6 @@
 ---
 title: ITU-T H.263
 description: ITU-T H.263
-ms.assetid: 08926037-da17-4ab0-81c5-9fd78cb1133c
 keywords:
 - ITU-T H.263 WDK DirectX VA
 - H.263 WDK DirectX VA

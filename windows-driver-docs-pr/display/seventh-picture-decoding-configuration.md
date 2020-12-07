@@ -1,7 +1,6 @@
 ---
 title: Seventh Picture Decoding Configuration
 description: Seventh Picture Decoding Configuration
-ms.assetid: eb52cdb4-4009-4860-80ac-5c2172f8a9b3
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA

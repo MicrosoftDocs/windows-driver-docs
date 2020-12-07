@@ -1,7 +1,6 @@
 ---
 title: Mobile operator hardware overview
 description: Mobile operator hardware overview
-ms.assetid: b2322972-16be-443f-b46a-7834b4d7ead0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

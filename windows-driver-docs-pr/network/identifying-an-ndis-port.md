@@ -1,7 +1,6 @@
 ---
 title: Identifying an NDIS Port
 description: Identifying an NDIS Port
-ms.assetid: 40917e62-5424-4c46-9b5b-a1a15812ef59
 keywords:
 - ports WDK NDIS , identifyng
 - NDIS ports WDK , identifyng

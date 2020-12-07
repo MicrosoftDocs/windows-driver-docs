@@ -1,7 +1,6 @@
 ---
 title: ioresdes
 description: The ioresdes extension displays the IO_RESOURCE_DESCRIPTOR structure at the specified address.
-ms.assetid: a57dd414-16d6-4515-9eee-dac91398906b
 keywords: ["ioresdes Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

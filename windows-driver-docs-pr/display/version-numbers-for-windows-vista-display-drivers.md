@@ -1,7 +1,6 @@
 ---
 title: Version Numbers for WDDM Drivers
 description: Version Numbers for WDDM Drivers
-ms.assetid: 14608626-cd01-4756-8329-187153a8b99a
 keywords:
 - display driver model WDK Windows Vista , version numbers
 - Windows Vista display driver model WDK , version numbers

@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi Hotspot Offloading Reference
 description: Wi-Fi Hotspot Offloading Reference
-ms.assetid: 2e8dd1a1-a0bc-4f8a-a2ef-0e349dc433a1
 ms.date: 07/31/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Installing the Device Metadata Authoring Wizard
 description: Installing the Device Metadata Authoring Wizard
-ms.assetid: 3DA5F7E8-B33B-4D05-9506-DDEE06773A5D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

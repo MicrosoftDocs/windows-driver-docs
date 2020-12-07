@@ -1,7 +1,6 @@
 ---
 title: Video Port DDI Support
 description: Starting with Windows 8, display drivers based on the Windows 2000 Display Driver Model (XDDM) will not install or run, but GDI accessibility drivers and remote display drivers will install and run.
-ms.assetid: 87A98A49-B01B-419D-B570-6ECA60E2C7AF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

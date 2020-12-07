@@ -1,7 +1,6 @@
 ---
 title: ColorEntry element
 description: The required ColorEntry element describes a single color-processing mode that an input source on the scanner supports.
-ms.assetid: a25c6da6-058e-4d10-895c-4507f0562ee8
 keywords: ["ColorEntry element Imaging Devices"]
 topic_type:
 - apiref

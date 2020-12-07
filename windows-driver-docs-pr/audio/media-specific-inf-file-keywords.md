@@ -1,7 +1,6 @@
 ---
 title: Media-Specific INF File Keywords
 description: Media-Specific INF File Keywords
-ms.assetid: abd85943-87b7-4501-b7c5-63a808f39bf0
 keywords:
 - audio adapters WDK , media-specific INF file keywords
 - adapter drivers WDK audio , media-specific INF file keywords

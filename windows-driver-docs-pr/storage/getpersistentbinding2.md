@@ -1,7 +1,6 @@
 ---
 title: GetPersistentBinding2 function
 description: The GetPersistentBinding2 method retrieves the bindings that an HBA miniport driver uses to map the information that an operating system uses to identify its logical units to the Fibre Channel protocol (FCP) identifiers for the logical units.
-ms.assetid: 17734973-fa82-4f54-b882-d9a2f5ce2066
 keywords: ["GetPersistentBinding2 function Storage Devices"]
 topic_type:
 - apiref

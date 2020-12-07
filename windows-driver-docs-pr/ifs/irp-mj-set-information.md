@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_SET_INFORMATION (IFS)
 description: IRP\_MJ\_SET\_INFORMATION
-ms.assetid: cc1b539c-8d39-4f4d-93b1-ce9fcdb8c555
 keywords: ["IRP_MJ_SET_INFORMATION Installable File System Drivers"]
 topic_type:
 - apiref

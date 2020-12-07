@@ -1,7 +1,6 @@
 ---
 title: Avoiding Reboot when Updating a UMDF Driver
 description: Avoiding Reboot when Updating a UMDF Driver
-ms.assetid: B5321732-50FD-4719-BBD0-F0A3BE1EE532
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

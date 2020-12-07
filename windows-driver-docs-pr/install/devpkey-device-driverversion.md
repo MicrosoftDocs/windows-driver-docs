@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverVersion
 description: DEVPKEY_Device_DriverVersion
-ms.assetid: 68df1313-e948-4aea-9b90-c838f7bf228d
 keywords: ["DEVPKEY_Device_DriverVersion Device and Driver Installation"]
 topic_type:
 - apiref

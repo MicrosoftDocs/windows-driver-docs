@@ -1,7 +1,6 @@
 ---
 title: Cloning Stream Pointers
 description: Cloning Stream Pointers
-ms.assetid: bbe01f48-db86-41c9-b7b8-b48a4a295d21
 keywords:
 - stream pointers WDK AVStream , cloning
 - cloning stream pointers WDK AVStream

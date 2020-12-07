@@ -1,7 +1,6 @@
 ---
 title: Providing an IStiUSD Interface
 description: Providing an IStiUSD Interface
-ms.assetid: ed15b56b-0b63-4983-a4ff-df379a2b9de9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Components and Files Used for Network Component Installation
 description: Components and Files Used for Network Component Installation
-ms.assetid: be056ff1-0b92-4e81-a506-7750012aad4e
 keywords:
 - installing network components WDK , components and files used
 - network component installations WDK , components and files used

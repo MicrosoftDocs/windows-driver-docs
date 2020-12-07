@@ -1,7 +1,6 @@
 ---
 title: Running the Default Finish-Install Action
 description: Running the Default Finish-Install Action
-ms.assetid: a66d418e-9a66-4c11-854d-6e597ffa01f7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

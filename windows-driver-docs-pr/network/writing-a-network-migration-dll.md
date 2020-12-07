@@ -1,7 +1,6 @@
 ---
 title: Writing a Network Migration DLL
 description: Writing a Network Migration DLL
-ms.assetid: a6a9e57a-cc39-4cdf-a374-4791ddd4a5da
 keywords:
 - network migration DLL WDK
 - network component upgrades WDK , network migration DLL

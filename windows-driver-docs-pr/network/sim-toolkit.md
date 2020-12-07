@@ -1,7 +1,6 @@
 ---
 title: SIM toolkit Overview
 description: SIM toolkit Overview
-ms.assetid: 39869948-d61c-438c-a90c-05dcb099acad
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

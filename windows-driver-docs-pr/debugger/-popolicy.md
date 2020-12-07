@@ -1,7 +1,6 @@
 ---
 title: popolicy
 description: The popolicy extension displays the power policy of the target computer.
-ms.assetid: 4917e6e8-982f-41d7-acd8-047e590e1253
 keywords: ["popolicy Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

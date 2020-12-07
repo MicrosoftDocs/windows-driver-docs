@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ACTION_FRAME_IES
 description: WDI_TLV_P2P_ACTION_FRAME_IES is a TLV that contains action frame IEs.
-ms.assetid: 7F5DD866-AD7D-4E3E-B352-78FAE4AFD995
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ACTION_FRAME_IES Network Drivers Starting with Windows Vista

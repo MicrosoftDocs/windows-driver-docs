@@ -1,7 +1,6 @@
 ---
 title: Displaying Interleaved Video with VPE
 description: Displaying Interleaved Video with VPE
-ms.assetid: f78ccefb-77e3-43a4-88ad-d98c69259da9
 keywords:
 - DirectX VPE support WDK DirectDraw , displaying interleaved video
 - drawing VPEs WDK DirectDraw , displaying interleaved video

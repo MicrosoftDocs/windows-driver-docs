@@ -1,7 +1,6 @@
 ---
 title: General x64 INF Information
 description: General x64 INF Information
-ms.assetid: a1a96e8f-74d3-403d-994a-b21436d166d2
 keywords:
 - INF files WDK display , 64-bit
 - 64-bit WDK display

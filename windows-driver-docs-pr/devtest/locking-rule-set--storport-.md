@@ -1,7 +1,6 @@
 ---
 title: Locking rule set (Storport)
 description: Learn about using rules (Storport) to verify that your driver correctly manages shared resources, and how to select the Locking rule set.
-ms.assetid: FBB75F07-E689-4B7C-B053-E0B6A3772764
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

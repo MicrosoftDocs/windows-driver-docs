@@ -1,7 +1,6 @@
 ---
 title: 1394 Bridges
 description: 1394 Bridges
-ms.assetid: 208cceaa-dd26-46f9-b015-723c5940b02b
 keywords:
 - IEEE 1394 WDK buses , bridges
 - 1394 WDK buses , bridges

@@ -1,7 +1,6 @@
 ---
 title: Registering a Network Interface
 description: Registering a Network Interface
-ms.assetid: 7e3c3b0f-2013-4133-8b52-fa9e66f963cb
 keywords:
 - NDIS network interfaces WDK , registering
 - network interfaces WDK , registering

@@ -1,7 +1,6 @@
 ---
 title: Video Decoder Change Event
 description: Video Decoder Change Event
-ms.assetid: 94269541-49e5-4273-874a-c6c2643ec2ae
 keywords:
 - video decoder changed event WDK video capture
 - decoder changed event WDK video capture

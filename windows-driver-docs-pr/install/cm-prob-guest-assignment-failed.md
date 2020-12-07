@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_GUEST_ASSIGNMENT_FAILED
 description: CM_PROB_GUEST_ASSIGNMENT_FAILED
-ms.assetid: 9b4b0b7d-4b37-42b0-bba6-06251e53bcfa
 keywords:
 - CM_PROB_GUEST_ASSIGNMENT_FAILED
 ms.date: 02/28/2020

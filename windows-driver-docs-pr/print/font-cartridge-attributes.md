@@ -1,7 +1,6 @@
 ---
 title: Font Cartridge Attributes
 description: Font Cartridge Attributes
-ms.assetid: d1f99322-9c77-428a-beb5-6d0ff166c3e5
 keywords:
 - printer font descriptions WDK Unidrv , cartridges
 - font cartridges WDK Unidrv

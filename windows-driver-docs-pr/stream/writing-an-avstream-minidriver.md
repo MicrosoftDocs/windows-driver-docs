@@ -1,7 +1,6 @@
 ---
 title: Writing an AVStream Minidriver
 description: Writing an AVStream Minidriver
-ms.assetid: 6187fb33-cb61-493b-89f9-32ed76d933b3
 keywords:
 - AVStream WDK , writing minidrivers
 - minidrivers WDK AVStream , writing

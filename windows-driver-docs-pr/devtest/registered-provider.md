@@ -1,7 +1,6 @@
 ---
 title: Registered Provider
 description: Registered Provider
-ms.assetid: d16e91d7-40ce-4a35-b3a7-f46f26a810bb
 keywords:
 - registered providers WDK software tracing
 - trace providers WDK

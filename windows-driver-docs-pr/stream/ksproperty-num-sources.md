@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_NUM\_SOURCES
 description: The KSPROPERTY\_NUM\_SOURCES property specifies the number of input pins on the selector unit.
-ms.assetid: 94d0f926-0551-4fe2-aa7f-2898e04c4b36
 keywords: ["KSPROPERTY_NUM_SOURCES Streaming Media Devices"]
 topic_type:
 - apiref

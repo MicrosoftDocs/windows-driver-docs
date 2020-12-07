@@ -1,7 +1,6 @@
 ---
 title: Registering Your Synthesizer
 description: Registering Your Synthesizer
-ms.assetid: c8cb30ba-97ca-49ee-a6ef-2938a0ab780e
 keywords:
 - DirectMusic custom rendering WDK audio , synthesizers
 - custom rendering in user mode WDK audio , synthesizers

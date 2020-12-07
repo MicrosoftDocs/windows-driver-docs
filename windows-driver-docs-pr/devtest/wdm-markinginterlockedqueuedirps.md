@@ -1,7 +1,6 @@
 ---
 title: MarkingInterlockedQueuedIrps rule (wdm)
 description: The MarkingInterlockedQueuedIrps rule specifies that the driver correctly marks the IRP as pending before it queues it in an interlocked fashion for further processing.
-ms.assetid: a065b28f-f02a-45af-b9d9-754a36519b99
 ms.date: 05/21/2018
 keywords: ["MarkingInterlockedQueuedIrps rule (wdm)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Handling interrupts for NDIS miniport drivers
 description: Discusses the calls that an NDIS miniport driver uses when a NIC or another device generates an interrupt
-ms.assetid: 75dc3676-f88f-4d86-8c77-02f48083de71
 keywords:
 - interrupts WDK networking , handling
 - MiniportInterrupt

@@ -1,7 +1,6 @@
 ---
 title: Vendor-Extended Properties
 description: Vendor-Extended Properties
-ms.assetid: bcc89272-c14d-4d46-a2ca-7da0fb188111
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

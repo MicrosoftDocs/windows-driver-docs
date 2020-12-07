@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_SCAN\_AHEAD
 description: The WIA\_IPS\_SCAN\_AHEAD property is used to enable scan ahead in the hardware device (scan at highest possible speed, buffering scanned images in the scanner's internal memory, transferring buffered images in parallel to the client application at an equal or lower speed). The WIA minidriver creates and maintains this property.
-ms.assetid: 706BA423-399F-4859-BF41-10D3A88B61DD
 keywords: ["WIA_IPS_SCAN_AHEAD Imaging Devices"]
 topic_type:
 - apiref

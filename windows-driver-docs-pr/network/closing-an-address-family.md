@@ -1,7 +1,6 @@
 ---
 title: Closing an Address Family Overview
 description: Closing an Address Family Overview
-ms.assetid: 0533bc31-dd4c-42c4-8170-8201e32e1026
 keywords:
 - address families WDK networking
 - AFs WDK networking

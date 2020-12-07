@@ -1,7 +1,6 @@
 ---
 title: Improved Spooling and Rendering
 description: Improved Spooling and Rendering
-ms.assetid: 0e385282-fbc8-4c4b-9070-19ee8290ddd6
 keywords:
 - XPSDrv printer drivers WDK , spooling
 - XPSDrv printer drivers WDK , rendering

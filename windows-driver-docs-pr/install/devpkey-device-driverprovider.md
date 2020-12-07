@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverProvider
 description: DEVPKEY_Device_DriverProvider
-ms.assetid: cbc1582a-1f43-4239-b00a-f7c99bf2deee
 keywords: ["DEVPKEY_Device_DriverProvider Device and Driver Installation"]
 topic_type:
 - apiref

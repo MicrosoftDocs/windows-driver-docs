@@ -1,7 +1,6 @@
 ---
 title: Trace Viewer
 description: Trace Viewer
-ms.assetid: 080478d8-6c01-48ae-899d-37025e9dee52
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

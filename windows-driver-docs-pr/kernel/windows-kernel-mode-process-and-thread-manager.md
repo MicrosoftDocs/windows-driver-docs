@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Process and Thread Manager
 description: Windows Kernel-Mode Process and Thread Manager
-ms.assetid: 4053c73e-190d-4ffe-8db2-f531d120ba81
 ms.localizationpriority: High
 ms.date: 10/17/2018
 ---

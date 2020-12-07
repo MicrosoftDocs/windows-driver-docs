@@ -1,7 +1,6 @@
 ---
 title: Residency overview
 description: Residency overview
-ms.assetid: E610C2B8-354C-4DF5-8B25-6472A9313B15
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

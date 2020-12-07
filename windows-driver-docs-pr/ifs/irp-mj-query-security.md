@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_QUERY_SECURITY
 description: IRP\_MJ\_QUERY\_SECURITY
-ms.assetid: f0f73bfe-c016-49e2-b725-380f46a9b9d6
 keywords: ["IRP_MJ_QUERY_SECURITY Installable File System Drivers"]
 topic_type:
 - apiref

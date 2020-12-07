@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_BARCODE\_SEARCH\_TIMEOUT
 description: The WIA\_IPS\_BARCODE\_SEARCH\_TIMEOUT property describes the maximum time to search for barcodes on a document page.
-ms.assetid: 3EE6C492-722E-439A-8BB5-03496DAC78D2
 keywords: ["WIA_IPS_BARCODE_SEARCH_TIMEOUT Imaging Devices"]
 topic_type:
 - apiref

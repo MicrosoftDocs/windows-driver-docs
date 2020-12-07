@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode DMA Library
 description: Windows Kernel-Mode DMA Library
-ms.assetid: db6cc33a-474b-44a2-bd55-769ff31abae7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

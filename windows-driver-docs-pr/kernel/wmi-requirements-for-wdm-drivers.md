@@ -1,7 +1,6 @@
 ---
 title: WMI Requirements for WDM Drivers
 description: WMI Requirements for WDM Drivers
-ms.assetid: 8290e570-acd9-4047-bd0b-c1c74847f243
 keywords: ["WMI WDK kernel , WDM drivers", "WDM drivers WDK WMI", "IRPs WDK WMI", "requests WDK WMI", "WMI WDK kernel , requests", "data providers WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

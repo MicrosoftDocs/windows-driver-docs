@@ -1,7 +1,6 @@
 ---
 title: Test automation tools
 description: GPIO test automation uses the MITT platform.
-ms.assetid: F6C4FCC2-210B-4B6E-9D1A-77842E470025
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

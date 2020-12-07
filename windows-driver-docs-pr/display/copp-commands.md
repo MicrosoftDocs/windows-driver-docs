@@ -1,7 +1,6 @@
 ---
 title: COPP Commands
 description: COPP Commands
-ms.assetid: c745b7d9-be59-45f9-90f5-0a7ecef0a292
 keywords:
 - copy protection WDK COPP , commands
 - video copy protection WDK COPP , commands

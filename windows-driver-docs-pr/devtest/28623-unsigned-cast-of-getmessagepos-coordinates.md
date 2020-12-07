@@ -1,7 +1,6 @@
 ---
 title: C28623
 description: Warning C28623 Unsigned cast of GetMessagePos() coordinates. Use GET_X_LPARAM/GET_Y_LPARAM instead of LOWORD/HIWORD.
-ms.assetid: 155da4f5-4e77-451e-b26b-69a39c32effa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 f1_keywords: 

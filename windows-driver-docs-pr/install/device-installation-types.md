@@ -1,7 +1,6 @@
 ---
 title: Device Installation Types
 description: Windows uses INF files to install a driver package on a computer or device. All Windows platforms support universal INF files, while only Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) supports legacy INF files.
-ms.assetid: 23b999de-7151-4b4a-b9fc-331909bb8c06
 keywords:
 - Device setup WDK device installations , types
 - device installations WDK , types

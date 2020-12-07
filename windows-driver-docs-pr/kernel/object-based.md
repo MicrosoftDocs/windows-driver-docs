@@ -1,7 +1,6 @@
 ---
 title: Object-Based
 description: Object-Based
-ms.assetid: 53024912-5e6e-4738-81b5-dacc59c22c3f
 keywords: ["object-based drivers WDK kernel", "object opacity WDK kernel", "opacity WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

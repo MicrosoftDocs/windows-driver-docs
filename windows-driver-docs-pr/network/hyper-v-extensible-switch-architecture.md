@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Architecture Topics
 description: Hyper-V Extensible Switch Architecture Topics
-ms.assetid: AEFF534A-56AF-47AC-AA94-46EA0C2FC50A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

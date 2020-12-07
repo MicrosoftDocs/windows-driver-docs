@@ -1,7 +1,6 @@
 ---
 title: Alpha-Blend Combination
 description: Alpha-Blend Combination
-ms.assetid: 567810da-ad8d-4ceb-b914-868632384d09
 keywords:
 - alpha-blend combination WDK DirectX VA
 - blended pictures WDK DirectX VA

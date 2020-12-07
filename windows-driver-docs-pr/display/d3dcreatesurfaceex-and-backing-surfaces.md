@@ -1,7 +1,6 @@
 ---
 title: D3dCreateSurfaceEx and Backing Surfaces
 description: D3dCreateSurfaceEx and Backing Surfaces
-ms.assetid: aad37654-616f-4cbd-9a9c-07458fb61947
 keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx

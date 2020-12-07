@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PIN
 description: OID_WWAN_PIN sets or returns information related to Personal Identification Numbers (PINs).
-ms.assetid: 5c93ffe0-8067-4022-ba8e-e528e44692e6
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PIN Network Drivers Starting with Windows Vista

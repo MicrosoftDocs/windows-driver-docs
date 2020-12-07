@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_RECEIVE_FILTER_HARDWARE_CAPABILITIES
 description: The miniport driver issues an NDIS_STATUS_RECEIVE_FILTER_HARDWARE_CAPABILITIES status indication when its hardware receive filtering capabilities change.
-ms.assetid: 12F7A736-D85A-4BB6-89E6-55195B76C29F
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_RECEIVE_FILTER_HARDWARE_CAPABILITIES Network Drivers Starting with Windows Vista

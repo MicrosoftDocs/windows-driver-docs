@@ -1,7 +1,6 @@
 ---
 title: Example 12 Starting an NT Kernel Logger Session
 description: Example 12 Starting an NT Kernel Logger Session
-ms.assetid: ce795cd3-4d95-49a1-a8b7-a32c69c776dd
 keywords:
 - trace sessions WDK , NT Kernel Logger
 - NT Kernel Logger trace sessions WDK

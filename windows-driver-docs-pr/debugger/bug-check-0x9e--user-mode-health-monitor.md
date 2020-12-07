@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x9E USER_MODE_HEALTH_MONITOR
 description: The USER_MODE_HEALTH_MONITOR bug check has a value of 0x0000009E. This bug check indicates that one or more critical user-mode components failed to satisfy a health check.
-ms.assetid: 5ad56234-5150-4acb-828d-198c2e5fb9b6
 keywords: ["Bug Check 0x9E USER_MODE_HEALTH_MONITOR", "USER_MODE_HEALTH_MONITOR"]
 ms.date: 12/26/2018
 topic_type:

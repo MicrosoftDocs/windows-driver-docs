@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_SYNTHESIZER
 description: KSNODETYPE\_SYNTHESIZER
-ms.assetid: ef5f5068-c312-4e14-905e-c815d6e9aac2
 keywords: ["KSNODETYPE_SYNTHESIZER Audio Devices"]
 topic_type:
 - apiref

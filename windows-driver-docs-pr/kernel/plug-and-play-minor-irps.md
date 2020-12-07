@@ -2,7 +2,6 @@
 title: Plug and Play Minor IRPs
 description: Plug and Play Minor IRPs
 ms.date: 08/12/2017
-ms.assetid: eeb7dafd-fb44-4fb7-b5f0-314059ee0093
 ms.localizationpriority: medium
 ---
 

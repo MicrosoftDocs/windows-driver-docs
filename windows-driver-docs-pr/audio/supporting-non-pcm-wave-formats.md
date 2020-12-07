@@ -1,7 +1,6 @@
 ---
 title: Supporting Non-PCM Wave Formats
 description: Supporting Non-PCM Wave Formats
-ms.assetid: 76455e1f-4b00-49c4-a4e4-3cb4abe8f445
 keywords:
 - non-PCM audio formats WDK
 - WDM audio drivers WDK , non-PCM wave formats

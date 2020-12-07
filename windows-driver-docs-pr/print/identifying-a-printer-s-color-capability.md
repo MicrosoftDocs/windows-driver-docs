@@ -1,7 +1,6 @@
 ---
 title: Identifying a Printer's Color Capability
 description: Identifying a Printer's Color Capability
-ms.assetid: 24abf76d-c0f9-440e-b825-8b39ea9ab807
 keywords:
 - printer interface DLL WDK , color capability supported
 - color management WDK print , identifying capabilities

@@ -1,7 +1,6 @@
 ---
 title: RunAs Elevated
 description: TAEF ensures that the test is run in an elevated process by spawning an elevated process to run the test if necessary.
-ms.assetid: 6292E431-6EB5-4962-BBB0-B86FC4CE4643
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

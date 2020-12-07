@@ -1,7 +1,6 @@
 ---
 title: Supporting RSS in Intermediate Drivers or Filter Drivers
 description: Supporting RSS in Intermediate Drivers or Filter Drivers
-ms.assetid: 5e1bfbb0-0b7a-4a9d-a228-4089f7208880
 keywords:
 - receive-side scaling WDK networking , intermediate drivers
 - RSS WDK networking , intermediate drivers

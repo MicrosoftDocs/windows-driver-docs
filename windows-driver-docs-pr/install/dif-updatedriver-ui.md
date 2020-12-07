@@ -1,7 +1,6 @@
 ---
 title: DIF_UPDATEDRIVER_UI
 description: DIF_UPDATEDRIVER_UI
-ms.assetid: 60240f12-101b-419b-87c6-fa04d8853133
 keywords: ["DIF_UPDATEDRIVER_UI Device and Driver Installation"]
 topic_type:
 - apiref

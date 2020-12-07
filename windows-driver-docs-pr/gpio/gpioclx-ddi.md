@@ -1,7 +1,6 @@
 ---
 title: GpioClx DDI
 description: The general-purpose I/O (GPIO) controller driver communicates with the GPIO framework extension (GpioClx) through the GpioClx device-driver interface (DDI).
-ms.assetid: AE8883C3-178F-44AB-AB1D-65DEC1472929
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

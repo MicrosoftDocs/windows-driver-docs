@@ -1,7 +1,6 @@
 ---
 title: Acquire and Release Semantics
 description: Acquire and Release Semantics
-ms.assetid: a0852881-c33f-427a-be8a-5b9edac81f9a
 keywords: ["synchronization WDK kernel , acquire semantics", "synchronization WDK kernel , release semantics", "acquire semantics WDK kernel", "release semantics WDK kernel", "semantics WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

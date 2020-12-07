@@ -1,7 +1,6 @@
 ---
 title: 64-Bit WIA Driver Components
 description: 64-Bit WIA Driver Components
-ms.assetid: c5951977-1ac9-4ef3-9427-f964cab9725e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

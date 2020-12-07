@@ -1,7 +1,6 @@
 ---
 title: Conditionally Required Graphics Driver Functions
 description: Conditionally Required Graphics Driver Functions
-ms.assetid: db5816e2-83a1-491d-99f5-d693fefcf1fd
 keywords:
 - GDI WDK Windows 2000 display , functions, conditionally required
 - graphics drivers WDK Windows 2000 display , functions, conditionally required

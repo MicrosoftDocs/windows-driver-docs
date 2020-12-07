@@ -1,7 +1,6 @@
 ---
 title: Querying the Parameters of a Virtual Port
 description: Querying the Parameters of a Virtual Port
-ms.assetid: 482DA041-2C70-438A-8D29-0F338CDCF935
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

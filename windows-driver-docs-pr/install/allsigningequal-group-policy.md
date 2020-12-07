@@ -1,7 +1,6 @@
 ---
 title: AllSigningEqual Group Policy
 description: AllSigningEqual Group Policy
-ms.assetid: b23eed87-76ce-4447-86d2-2be370ee57c5
 keywords:
 - driver selections WDK device installations , AllSigningEqual group policy
 - locating drivers for device installation WDK device installations , AllSigningEqual group policy

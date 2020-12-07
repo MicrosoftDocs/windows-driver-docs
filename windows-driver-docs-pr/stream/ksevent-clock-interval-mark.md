@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CLOCK\_INTERVAL\_MARK
 description: Clients enable the KSEVENT\_CLOCK\_INTERVAL\_MARK event to be notified when an initial time value is reached, and then at fixed time increments after that.
-ms.assetid: 5292606e-d0b3-4e64-a236-c1cecf3fd53a
 keywords: ["KSEVENT_CLOCK_INTERVAL_MARK Streaming Media Devices"]
 topic_type:
 - apiref

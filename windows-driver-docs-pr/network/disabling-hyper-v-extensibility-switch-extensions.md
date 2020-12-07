@@ -1,7 +1,6 @@
 ---
 title: Disabling Hyper-V Extensible Switch Extensions
 description: Disabling Hyper-V Extensible Switch Extensions
-ms.assetid: 3BE5A53E-3F74-4B99-B504-5D7F090343E5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

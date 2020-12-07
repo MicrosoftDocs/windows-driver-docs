@@ -1,7 +1,6 @@
 ---
 title: handle
 description: The handle extension displays information about a handle or handles that one or all processes in the target system own.
-ms.assetid: ae3b7e7e-cdc1-4b83-88d7-63fe207044e3
 keywords: ["handle", "handle, handle extension", "handle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

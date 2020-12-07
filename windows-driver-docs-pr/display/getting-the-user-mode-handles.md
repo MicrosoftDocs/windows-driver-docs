@@ -1,7 +1,6 @@
 ---
 title: Getting the User-Mode Handles
 description: Getting the User-Mode Handles
-ms.assetid: b241bf00-1adb-4ab0-a00e-e922bdc9eee5
 keywords:
 - drawing kernel-mode video transport WDK DirectDraw , user-mode handles
 - DirectDraw kernel-mode video transport WDK Windows 2000 display , user-mode handles

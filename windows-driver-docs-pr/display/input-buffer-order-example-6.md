@@ -1,7 +1,6 @@
 ---
 title: Input Buffer Order Example 6
 description: Input Buffer Order Example 6
-ms.assetid: e94ca05a-5089-460a-bf71-ee6d8cf52f17
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

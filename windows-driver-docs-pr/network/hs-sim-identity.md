@@ -1,7 +1,6 @@
 ---
 title: HS_SIM_IDENTITY structure
 description: The HS_SIM_IDENTITY structure contains SIM identification information required for EAP-SIM or EAP-AKA authentication.
-ms.assetid: b45fac33-79de-4006-9dcb-95725be11ec1
 keywords: 
 - HS_SIM_IDENTITY structure Network Drivers Starting with Windows Vista
 - PHS_SIM_IDENTITY structure pointer Network Drivers Starting with Windows Vista

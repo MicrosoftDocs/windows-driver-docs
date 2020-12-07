@@ -1,7 +1,6 @@
 ---
 title: Specifying AC-3 Data Ranges
 description: Specifying AC-3 Data Ranges
-ms.assetid: 87d59554-43fa-4d61-9829-c38691d0a525
 keywords:
 - S/PDIF pass-through WDK audio
 - AC-3-over-S/PDIF format WDK audio

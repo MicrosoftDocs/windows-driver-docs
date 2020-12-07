@@ -1,7 +1,6 @@
 ---
 title: Dynamic Binding in an Intermediate Driver
 description: Dynamic Binding in an Intermediate Driver
-ms.assetid: 0b825141-2a19-40c6-82cf-8e897a25b0aa
 keywords:
 - intermediate drivers WDK networking , binding
 - NDIS intermediate drivers WDK , binding

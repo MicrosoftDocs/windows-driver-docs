@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Interface Properties before Windows Vista
 description: Accessing Device Interface Properties before Windows Vista
-ms.assetid: 48b47d01-ec07-49ca-a03c-c4c387dcfb19
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

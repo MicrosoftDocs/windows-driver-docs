@@ -1,7 +1,6 @@
 ---
 title: Customizing the Printer Details Web Page
 description: Customizing the Printer Details Web Page
-ms.assetid: 4853d5de-b855-4698-9178-877455e257c5
 keywords:
 - customized print Web pages WDK , creating pages
 - ASP files WDK printer

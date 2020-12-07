@@ -1,7 +1,6 @@
 ---
 title: 64-Bit Compiler
 description: 64-Bit Compiler
-ms.assetid: c119d6b3-03e2-4ffc-b0a9-8077b141a2f1
 keywords: ["64-bit WDK kernel , porting drivers to", "porting drivers to 64-bit Windows", "compilers WDK 64-bit"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

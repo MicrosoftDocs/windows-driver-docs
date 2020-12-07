@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION
 description: The KSPROPERTY\_AUDIOENGINE\_LOOPBACK\_PROTECTION property request allows the audio driver to set the loopback protection status of the audio engine node.
-ms.assetid: E798582C-7662-413C-B25C-6A129FDEEE38
 keywords: ["KSPROPERTY_AUDIOENGINE_LOOPBACK_PROTECTION Audio Devices"]
 topic_type:
 - apiref

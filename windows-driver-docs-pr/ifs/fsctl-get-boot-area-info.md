@@ -1,7 +1,6 @@
 ---
 title: FSCTL_GET_BOOT_AREA_INFO control code
 description: The FSCTL\_GET\_BOOT\_AREA\_INFO control code retrieves the locations of boot sectors for a volume.
-ms.assetid: 0e842609-65f9-4a61-ab7f-f525650dfd14
 keywords: ["FSCTL_GET_BOOT_AREA_INFO control code Installable File System Drivers"]
 topic_type:
 - apiref

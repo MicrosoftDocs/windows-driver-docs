@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xFC ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY
 description: The ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY bug check has a value of 0x000000FC. This indicates that an attempt was made to execute non-executable memory.
-ms.assetid: bece76bd-03ca-40fd-a69b-f6cc05d09806
 keywords: ["Bug Check 0xFC ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY", "ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY"]
 ms.date: 05/23/2017
 topic_type:

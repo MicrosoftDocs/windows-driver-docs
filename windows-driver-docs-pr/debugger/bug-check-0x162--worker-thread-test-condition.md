@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x163 WORKER_THREAD_TEST_CONDITION
 description: The WORKER_THREAD_TEST_CONDITION bug check has a value of 0x00000163. This indicates that a test for kernel worker threads raised a failure.
-ms.assetid: E0FF42E9-4C79-4C44-AD0C-64973884E9BE
 keywords: ["Bug Check 0x163 WORKER_THREAD_TEST_CONDITION", "WORKER_THREAD_TEST_CONDITION"]
 ms.date: 05/23/2017
 topic_type:

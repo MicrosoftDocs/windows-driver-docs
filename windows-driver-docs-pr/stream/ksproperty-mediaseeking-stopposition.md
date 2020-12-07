@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_STOPPOSITION
 description: The KSPROPERTY\_MEDIASEEKING\_STOPPOSITION property retrieves the stop media time on a filter.
-ms.assetid: 5a2d6c47-8419-4f1d-a362-28bf17cbd0a5
 keywords: ["KSPROPERTY_MEDIASEEKING_STOPPOSITION Streaming Media Devices"]
 topic_type:
 - apiref

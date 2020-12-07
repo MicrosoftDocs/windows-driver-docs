@@ -1,7 +1,6 @@
 ---
 title: Custom Switch Property Definition and Registration
 description: Custom Switch Property Definition and Registration
-ms.assetid: DB80E86D-8553-47B5-8AE1-6D430FDDE206
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

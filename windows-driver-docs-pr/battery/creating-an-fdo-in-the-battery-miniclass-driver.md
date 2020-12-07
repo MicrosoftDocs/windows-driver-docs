@@ -1,7 +1,6 @@
 ---
 title: Creating an FDO in the Battery Miniclass Driver
 description: Creating an FDO in the Battery Miniclass Driver
-ms.assetid: 3178710b-8e4a-4f9c-893b-1d06c4a3f7ff
 keywords:
 - battery miniclass drivers WDK , FDOs
 - FDOs WDK battery

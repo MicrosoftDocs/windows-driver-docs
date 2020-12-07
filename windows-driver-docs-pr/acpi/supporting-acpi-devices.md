@@ -1,7 +1,6 @@
 ---
 title: Supporting ACPI Devices
 description: Supporting ACPI Devices
-ms.assetid: ebaf2e66-4f56-48ca-93ca-f34e694c0d73
 keywords:
 - Advanced Configuration and Power Interface Specification WDK
 - ACPI devices WDK

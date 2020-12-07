@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
 description: GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR
-ms.assetid: 163b58b1-9f88-4857-9899-32be5e9ffc3c
 keywords: ["GUID_DEVINTERFACE_SERENUM_BUS_ENUMERATOR Device and Driver Installation"]
 topic_type:
 - apiref

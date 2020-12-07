@@ -1,7 +1,6 @@
 ---
 title: Synchronizing with an MSI Interrupt
 description: Synchronizing with an MSI Interrupt
-ms.assetid: 61745a93-79dc-49ac-9ace-3ecb647b7b9a
 keywords:
 - MSI-X WDK networking , synchronizing interrupts
 - message-signaled interrupts WDK networking , synchronizing interrupts

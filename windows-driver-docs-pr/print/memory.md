@@ -1,7 +1,6 @@
 ---
 title: Memory (print)
 description: The value entries for the memory installed in the print device
-ms.assetid: 9e1ad59f-9a97-49d7-b749-14380067cf64
 ms.date: 07/07/2020
 ms.localizationpriority: medium
 ---

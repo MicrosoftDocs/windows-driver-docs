@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Legacy
 description: DEVPKEY_Device_Legacy
-ms.assetid: a2af9881-3aa3-45a7-9b80-cb507460957e
 keywords: ["DEVPKEY_Device_Legacy Device and Driver Installation"]
 topic_type:
 - apiref

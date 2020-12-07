@@ -1,7 +1,6 @@
 ---
 title: Overview of Single Root I/O Virtualization (SR-IOV)
 description: Overview of Single Root I/O Virtualization (SR-IOV)
-ms.assetid: B241F468-F568-4500-9356-E576CEBA8F3B
 ms.date: 11/17/2020
 ms.localizationpriority: medium
 ms.custom: contperfq2

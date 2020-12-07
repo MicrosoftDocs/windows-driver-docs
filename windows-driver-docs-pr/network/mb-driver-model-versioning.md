@@ -1,7 +1,6 @@
 ---
 title: MB Driver Model Versioning
 description: MB Driver Model Versioning
-ms.assetid: f5778b36-4f84-4cfe-965c-36af225ac0dc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfumdevstack
 description: The wdfkd.wdfumdevstack extension displays detailed information about a UMDF device stack in the implicit process.
-ms.assetid: AB7F2585-B69B-4854-B8BC-438DDA735149
 keywords: ["wdfkd.wdfumdevstack Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

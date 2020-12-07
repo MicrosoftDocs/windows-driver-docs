@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS
 description: The KSPROPERTY\_AUDIOENGINE\_SUPPORTEDDEVICEFORMATS property request retrieves the device formats that are supported by the hardware audio engine.
-ms.assetid: BF602B17-09E2-4003-95F8-CB45605EFA09
 keywords: ["KSPROPERTY_AUDIOENGINE_SUPPORTEDDEVICEFORMATS Audio Devices"]
 topic_type:
 - apiref

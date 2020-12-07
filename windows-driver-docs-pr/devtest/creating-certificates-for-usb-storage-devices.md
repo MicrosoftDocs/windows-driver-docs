@@ -1,7 +1,6 @@
 ---
 title: Creating Certificates for USB Storage Devices
 description: The Enhanced Storage Certificate Management tool can create a self-signed certificate that is imported to an IEEE 1667-compliant USB storage device.
-ms.assetid: c63e69c3-ba60-417e-8838-825d81ac7301
 keywords:
 - Creating Certificates for USB Storage Devices Driver Development Tools
 topic_type:

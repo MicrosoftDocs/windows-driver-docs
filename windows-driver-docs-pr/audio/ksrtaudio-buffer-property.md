@@ -1,7 +1,6 @@
 ---
 title: KSRTAUDIO\_BUFFER\_PROPERTY structure
 description: The KSRTAUDIO\_BUFFER\_PROPERTY structure appends a buffer base address and requested buffer size to a KSPROPERTY structure. This structure is used by the client to request allocation of the audio buffer via KSPROPERTY\_RTAUDIO\_BUFFER.
-ms.assetid: 6fc33d5d-5d7e-4d04-a9b0-864cba961077
 keywords: ["KSRTAUDIO_BUFFER_PROPERTY structure Audio Devices", "PKSRTAUDIO_BUFFER_PROPERTY structure pointer Audio Devices"]
 topic_type:
 - apiref

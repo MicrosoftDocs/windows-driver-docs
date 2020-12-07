@@ -1,7 +1,6 @@
 ---
 title: Get drivers signed by Microsoft for multiple Windows versions
 description: How to get a driver signed by Microsoft for multiple versions of Windows
-ms.assetid: 519384F5-986C-4109-8C91-4352DEFF46F9
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

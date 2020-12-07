@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_PhysicalDeviceLocation
 description: DEVPKEY_Device_PhysicalDeviceLocation
-ms.assetid: DEF01D17-7E32-45BB-8846-D3B3B60506EB
 keywords: ["DEVPKEY_Device_PhysicalDeviceLocation Device and Driver Installation"]
 topic_type:
 - apiref

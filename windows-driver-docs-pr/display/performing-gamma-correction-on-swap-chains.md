@@ -1,7 +1,6 @@
 ---
 title: Performing Gamma Correction on Swap Chains
 description: Performing Gamma Correction on Swap Chains
-ms.assetid: 4912cd15-bd56-43b6-9419-66917bf3f72c
 keywords:
 - gamma correction WDK DirectX 9.0 , swap chains
 - swap chains WDK DirectX 9.0

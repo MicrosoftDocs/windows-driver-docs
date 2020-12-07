@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.MigrateToDevNode Section
 description: INF DDInstall.MigrateToDevNode Section
-ms.assetid: a4edbc9e-a2d0-4012-aca9-0b357939a881
 keywords:
 - INF files WDK non-HID keyboard/mouse
 - DDInstall.MigrateToDevNode section

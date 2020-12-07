@@ -1,7 +1,6 @@
 ---
 title: DxApi Miniport Driver Initialization
 description: DxApi Miniport Driver Initialization
-ms.assetid: 8d2bb81c-618e-43e0-9a1a-ff0ceb732d90
 keywords:
 - DxApi miniport drivers WDK DirectDraw , initializing
 - initializing DxApi miniport drivers

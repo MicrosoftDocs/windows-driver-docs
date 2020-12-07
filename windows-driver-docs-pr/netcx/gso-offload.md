@@ -1,7 +1,6 @@
 ---
 title: Generic Segmentation Offload
 description: Generic Segmentation Offload usage, rules, and examples in NetAdapterCx
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Generic segmentation offload, GSO, Large Segmentation Offload, LSO, UDP Segmentation Offload, USO
 ms.date: 10/08/2020

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_MODEDATAFORMATS
 description: Clients use the KSPROPERTY_PIN_MODEDATAFORMATS property to retrieve a list of the supported formats for each supported mode for pins instantiated by the pin factory.
-ms.assetid: AD028946-2E6C-4385-B336-657FA1743EA8
 keywords: ["KSPROPERTY_PIN_MODEDATAFORMATS Streaming Media Devices"]
 topic_type:
 - apiref

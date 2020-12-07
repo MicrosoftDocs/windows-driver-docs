@@ -1,7 +1,6 @@
 ---
 title: Previous WDK versions and other downloads
 description: Install versions of the Windows Driver Kit (WDK), the Windows Debugger (WinDBG), and more.
-ms.assetid: e07d9f05-f8d0-46e5-82e6-c23baa614bb1
 keywords:
 - Windows Driver Kit
 - previous versions

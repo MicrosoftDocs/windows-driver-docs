@@ -1,7 +1,6 @@
 ---
 title: Ethernet Send and Receive Operations
 description: Ethernet Send and Receive Operations
-ms.assetid: b19e6325-c2ee-47c2-ab82-199406e15b9f
 keywords:
 - network data WDK , sending
 - network data WDK , receiving

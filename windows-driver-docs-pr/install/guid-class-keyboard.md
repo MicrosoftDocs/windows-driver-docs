@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_KEYBOARD
 description: GUID_CLASS_KEYBOARD
-ms.assetid: 9e90d18f-5298-4234-8b05-38e9b8ec5076
 keywords: ["GUID_CLASS_KEYBOARD Device and Driver Installation"]
 topic_type:
 - apiref

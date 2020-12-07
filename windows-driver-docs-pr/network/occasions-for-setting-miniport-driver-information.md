@@ -1,7 +1,6 @@
 ---
 title: Occasions for Setting Miniport Driver Information
 description: Occasions for Setting Miniport Driver Information
-ms.assetid: 46834d76-e1b9-440c-af18-a4b564d1a76e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

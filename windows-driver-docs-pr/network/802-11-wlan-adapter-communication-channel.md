@@ -1,7 +1,6 @@
 ---
 title: 802.11 WLAN Adapter Communication Channel
 description: 802.11 WLAN Adapter Communication Channel
-ms.assetid: 6a4b07a5-3a0a-41cb-a5cf-74d44fb38192
 keywords:
 - adapters WDK 802.11 WLAN , communication channel
 - WLAN adapters WDK , communication channel

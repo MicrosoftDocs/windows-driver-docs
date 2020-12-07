@@ -1,7 +1,6 @@
 ---
 title: Pin Data-Range and Intersection Properties
 description: Pin Data-Range and Intersection Properties
-ms.assetid: 55a749b2-1f54-42f8-876c-f391112d7bab
 keywords:
 - audio properties WDK , pins
 - WDM audio properties WDK , pins

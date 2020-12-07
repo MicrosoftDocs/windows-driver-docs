@@ -1,7 +1,6 @@
 ---
 title: Plug and Play IDs for Printer INF Files
 description: Plug and Play IDs for Printer INF Files
-ms.assetid: 4adb9203-1267-466e-89d8-63988ffa56e9
 keywords:
 - INF files WDK print , Plug and Play IDs
 - PnP ID WDK print

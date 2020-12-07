@@ -1,7 +1,6 @@
 ---
 title: Building EngExtCpp Extensions
 description: Building EngExtCpp Extensions
-ms.assetid: 63d73c4e-03b8-4bbe-9c2e-96cda3ad544c
 keywords: ["EngExtCpp extensions, building"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

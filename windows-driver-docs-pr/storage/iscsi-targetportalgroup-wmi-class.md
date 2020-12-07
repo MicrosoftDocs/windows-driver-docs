@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_TargetPortalGroup WMI Class
 description: ISCSI\_TargetPortalGroup WMI Class
-ms.assetid: dff17d52-b308-49cc-97ec-d54eddb4e747
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

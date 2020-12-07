@@ -1,7 +1,6 @@
 ---
 title: Setting Symbol and Executable Image Paths in KD
 description: Setting Symbol and Executable Image Paths in KD
-ms.assetid: AF1D0A9A-2A5C-4E69-8F8A-EF74027F6742
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Unbinding from an Adapter
 description: Unbinding from an Adapter
-ms.assetid: cea2ce45-df0c-4c75-a780-5810ea01b987
 keywords:
 - protocol drivers WDK networking , unbinding
 - NDIS protocol drivers WDK , unbinding

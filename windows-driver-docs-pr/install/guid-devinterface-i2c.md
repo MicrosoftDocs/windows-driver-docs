@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_I2C
 description: GUID_DEVINTERFACE_I2C
-ms.assetid: 765cecb7-b8ea-48ef-bdab-742da722e169
 keywords: ["GUID_DEVINTERFACE_I2C Device and Driver Installation"]
 topic_type:
 - apiref

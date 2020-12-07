@@ -1,7 +1,6 @@
 ---
 title: Video Miniport Driver Requirements (Windows 2000 Model)
 description: Video Miniport Driver Requirements (Windows 2000 Model)
-ms.assetid: f6ae5b71-97d5-4fd8-bd3d-7ee83f34581e
 keywords:
 - video miniport drivers WDK Windows 2000 , requirements
 ms.date: 04/20/2017

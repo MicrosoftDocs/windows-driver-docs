@@ -1,7 +1,6 @@
 ---
 title: Battery driver samples
 description: The battery driver sample in this directory provides a starting point for writing a custom driver for your device.
-ms.assetid: 0C73DBE1-6214-4E7F-A3EE-AEC87F8BE99C
 ms.date: 11/15/2019
 ms.localizationpriority: medium
 ---

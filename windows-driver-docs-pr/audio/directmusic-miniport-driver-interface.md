@@ -1,7 +1,6 @@
 ---
 title: DirectMusic Miniport Driver Interface
 description: DirectMusic Miniport Driver Interface
-ms.assetid: a3532993-732a-4a7e-82bc-fc4199ec23dd
 keywords:
 - miniport drivers WDK audio , synthesizers
 - synthesizers WDK audio , miniport drivers

@@ -1,7 +1,6 @@
 ---
 title: Receive Side Scaling Support
 description: Receive Side Scaling Support
-ms.assetid: db0d8178-ae6c-4513-9c8c-f10615d1bbce
 keywords:
 - scalable networking WDK
 - receive-side scaling WDK networking

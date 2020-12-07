@@ -1,7 +1,6 @@
 ---
 title: KSMETHODSETID\_BdaDeviceConfiguration
 description: KSMETHODSETID\_BdaDeviceConfiguration
-ms.assetid: a0014869-2ea0-4f55-be3a-da1e624ad61c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

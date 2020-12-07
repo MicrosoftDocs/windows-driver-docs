@@ -1,7 +1,6 @@
 ---
 title: Communicating Through a Secure Channel
 description: Communicating Through a Secure Channel
-ms.assetid: 6c6607fa-bede-4565-9968-02bd35ca68ff
 keywords:
 - copy protection WDK COPP , secure communication channel
 - video copy protection WDK COPP , secure communication channel

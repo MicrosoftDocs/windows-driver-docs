@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Writing Device Installation Applications
 description: Guidelines for Writing Device Installation Applications
-ms.assetid: 7f364b95-98ca-479a-8cdb-5e5e77c70cfa
 keywords:
 - installation applications WDK , guidelines
 - device installation applications WDK , guidelines

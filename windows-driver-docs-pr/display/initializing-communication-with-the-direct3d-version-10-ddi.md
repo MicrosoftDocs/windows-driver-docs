@@ -1,7 +1,6 @@
 ---
 title: Initializing Communication with the Direct3D Version 10 DDI
 description: Initializing Communication with the Direct3D Version 10 DDI
-ms.assetid: dc3cc26f-7295-46d6-9bd7-aae7027ea92c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

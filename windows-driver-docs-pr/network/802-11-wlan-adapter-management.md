@@ -1,7 +1,6 @@
 ---
 title: 802.11 WLAN Adapter Management Topics
 description: 802.11 WLAN Adapter Management Topics
-ms.assetid: 8959ed34-b507-4895-925e-329a9e5b32cd
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , adapter management
 - adapters WDK 802.11 WLAN

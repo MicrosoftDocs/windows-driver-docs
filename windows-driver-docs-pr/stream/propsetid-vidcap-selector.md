@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_SELECTOR
 description: PROPSETID\_VIDCAP\_SELECTOR
-ms.assetid: a7328f22-be49-48ac-b923-15f66dc38ccb
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

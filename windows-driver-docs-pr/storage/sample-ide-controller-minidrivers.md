@@ -1,7 +1,6 @@
 ---
 title: Sample IDE Controller Minidrivers
 description: Sample IDE Controller Minidrivers
-ms.assetid: 3c8779ae-30d7-4ab8-b6d8-a711f917564c
 keywords:
 - IDE controller minidrivers WDK storage , samples
 - storage IDE controller minidrivers WDK , samples

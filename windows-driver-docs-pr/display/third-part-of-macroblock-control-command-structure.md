@@ -1,7 +1,6 @@
 ---
 title: Third Part of Macroblock Control Command Structure
 description: Third Part of Macroblock Control Command Structure
-ms.assetid: 4e378d2f-dbb2-42b6-984e-b231bb806a7c
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017

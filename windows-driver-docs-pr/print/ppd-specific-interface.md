@@ -1,7 +1,6 @@
 ---
 title: PPD-Specific Interface
 description: PPD-Specific Interface
-ms.assetid: 12d5baa2-4fd4-4eca-84c7-1ee168ee8259
 keywords:
 - PostScript Printer Driver WDK print , PPD-specific interface
 - Pscript WDK print , PPD-specific interface

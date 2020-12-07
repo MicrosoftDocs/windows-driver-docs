@@ -1,7 +1,6 @@
 ---
 title: Exposing Filter Topology
 description: Exposing Filter Topology
-ms.assetid: bf791f40-b2fb-48fe-8350-3b926db4ead7
 keywords:
 - topology filters WDK audio
 - filter topology WDK audio

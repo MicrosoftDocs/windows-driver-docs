@@ -1,7 +1,6 @@
 ---
 title: Creating and Binding SAN Sockets
 description: Creating and Binding SAN Sockets
-ms.assetid: 0589bd82-40d3-42df-926c-93093fb0617f
 keywords:
 - SAN connection setup WDK , socket creation and binding
 - SAN sockets WDK SANs

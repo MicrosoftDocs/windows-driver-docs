@@ -1,7 +1,6 @@
 ---
 title: View Menu
 description: View Menu
-ms.assetid: 2ebdff44-5593-46be-8bd8-8ececf8d9031
 keywords: ["View Menu (complete listing)", "graphical interface, view menu"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

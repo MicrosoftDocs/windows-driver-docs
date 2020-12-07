@@ -1,7 +1,6 @@
 ---
 title: Describing Extended Sample Information in AVStream Codecs
 description: Describing Extended Sample Information in AVStream Codecs
-ms.assetid: 04447525-78f5-4c77-9a41-4e6e4729f729
 keywords:
 - AVStream hardware codec support WDK , extended sample information
 ms.date: 04/20/2017

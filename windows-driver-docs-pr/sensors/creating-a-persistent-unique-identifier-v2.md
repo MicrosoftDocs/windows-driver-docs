@@ -1,7 +1,6 @@
 ---
 title: Creating a persistent unique identifier for a universal drivers based sensor
 description: Creating a persistent unique identifier for a universal drivers based driver
-ms.assetid: B0131BC5-F76F-46B0-8BDE-4220D971AA29
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: .srcpath, .lsrcpath (Set Source Path)
 description: The .srcpath and .lsrcpath commands set or display the source file search path.
-ms.assetid: 416c062f-cbf9-4134-aa2c-306147a466b5
 keywords: [".srcpath, .lsrcpath (Set Source Path) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

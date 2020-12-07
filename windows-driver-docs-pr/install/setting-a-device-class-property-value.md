@@ -1,7 +1,6 @@
 ---
 title: Setting a Device Class Property Value
 description: Setting a Device Class Property Value
-ms.assetid: a1d6908d-e43a-413d-965b-3af226d5c26f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

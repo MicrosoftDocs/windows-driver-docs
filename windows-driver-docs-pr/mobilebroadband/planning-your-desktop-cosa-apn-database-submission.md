@@ -1,7 +1,6 @@
 ---
 title: Planning your desktop COSA/APN database submission
 description: Planning your desktop COSA/APN database submission
-ms.assetid: 7e974914-c3e5-409e-b0bf-28d6885585b3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

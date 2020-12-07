@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_RedirectSessionInfo WMI Class
 description: ISCSI\_RedirectSessionInfo WMI Class
-ms.assetid: eb1ec866-2dcd-4099-a24f-ae1d0c702b95
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

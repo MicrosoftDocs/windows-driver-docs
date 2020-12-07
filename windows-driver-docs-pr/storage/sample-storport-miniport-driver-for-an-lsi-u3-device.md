@@ -1,7 +1,6 @@
 ---
 title: About the Sample Storport Miniport Driver for an LSI_U3 Device
 description: Sample Storport Miniport Driver for an LSI_U3 Device
-ms.assetid: 1ac63d07-f85c-492b-9886-f40a19d7c0b2
 ms.date: 12/15/2019
 ms.localizationpriority: medium
 ---

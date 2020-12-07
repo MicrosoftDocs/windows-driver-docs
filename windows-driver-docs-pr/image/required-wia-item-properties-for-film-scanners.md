@@ -1,7 +1,6 @@
 ---
 title: Required WIA Item Properties for Film Scanners
 description: Required WIA Item Properties for Film Scanners
-ms.assetid: f87e1bfc-6d85-4aba-a2ad-e491f997a3ae
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

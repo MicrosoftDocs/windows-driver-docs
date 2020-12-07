@@ -1,7 +1,6 @@
 ---
 title: Pscript User Interface
 description: Pscript User Interface
-ms.assetid: 88c1bb99-bc05-454f-ae36-722e9aa246c6
 keywords:
 - PostScript Printer Driver WDK print , user interface
 - Pscript WDK print , user interface

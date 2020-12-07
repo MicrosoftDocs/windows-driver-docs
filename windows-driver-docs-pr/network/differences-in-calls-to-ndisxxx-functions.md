@@ -1,7 +1,6 @@
 ---
 title: Differences in Calls to NdisXxx Functions
 description: Differences in Calls to NdisXxx Functions
-ms.assetid: 967ad913-24ca-4f05-b10b-1daa88845ed3
 keywords:
 - NdisCmXxx functions WDK networking
 ms.date: 04/20/2017

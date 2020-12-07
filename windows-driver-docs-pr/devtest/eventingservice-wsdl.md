@@ -1,7 +1,6 @@
 ---
 title: EventingService WSDL
 description: EventingService WSDL
-ms.assetid: 2071f4db-6a5a-4e9f-b53f-f50d4d99772a
 keywords:
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL

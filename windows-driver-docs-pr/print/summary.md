@@ -1,7 +1,6 @@
 ---
 title: Summary
 description: Summary
-ms.assetid: 8ed412b2-1e7c-440f-8949-a3b1fff09b16
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

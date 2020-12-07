@@ -1,7 +1,6 @@
 ---
 title: Nondefault Virtual Ports and VMQ
 description: Nondefault Virtual Ports and VMQ
-ms.assetid: 5F6F5378-2CA7-491D-953C-6F98B855B51A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Interpreting HID Reports
 description: Interpreting HID Reports
-ms.assetid: 10f8c3a1-ad60-4c99-a425-fa8c9a3be0e1
 keywords:
 - HID reports WDK , interpreting
 - reports WDK HID , interpreting

@@ -1,7 +1,6 @@
 ---
 title: Managing Security Associations in IPsec Offload Version 2
 description: Managing Security Associations in IPsec Offload Version 2
-ms.assetid: aaa352c1-fb70-4c96-adda-9710347e2442
 keywords:
 - IPsecOV2 WDK TCP/IP transport , security associations
 - security associations WDK IPsec offload

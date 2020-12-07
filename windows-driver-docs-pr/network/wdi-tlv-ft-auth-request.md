@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FT_AUTH_REQUEST
 description: WDI_TLV_FT_AUTH_REQUEST is a TLV that contains the Fast Transition authentication request byte blob.
-ms.assetid: 4107314E-3C0A-4610-A4FB-BCBDBD1A8E65
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_AUTH_REQUEST Network Drivers Starting with Windows Vista

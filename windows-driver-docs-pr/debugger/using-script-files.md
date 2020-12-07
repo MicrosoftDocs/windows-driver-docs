@@ -1,7 +1,6 @@
 ---
 title: Using Script Files
 description: Using Script Files
-ms.assetid: b78a651e-57c8-4863-a8cf-dedd8e308e66
 keywords: ["script file", "script file, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

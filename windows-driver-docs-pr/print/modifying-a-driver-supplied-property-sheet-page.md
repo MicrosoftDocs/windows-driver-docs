@@ -1,7 +1,6 @@
 ---
 title: Modifying a Driver-Supplied Property Sheet Page
 description: Modifying a Driver-Supplied Property Sheet Page
-ms.assetid: 98338017-96a0-414c-9b80-bcb98eff61e5
 keywords:
 - user interface plug-ins WDK print , property sheet pages
 - UI plug-ins WDK print , property sheet pages

@@ -1,7 +1,6 @@
 ---
 title: Memory Access
 description: Memory Access
-ms.assetid: a5265f2c-61b9-4f0f-8cff-05da26010c6a
 keywords: ["Debugger Engine, memory access", "memory access"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

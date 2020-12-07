@@ -1,7 +1,6 @@
 ---
 title: balloonUI element
 description: The optional balloonUI element is used to display a message balloon on the client computer.
-ms.assetid: 8db15dcb-26ed-429e-ad4c-e5dc59f9bbca
 keywords: ["balloonUI element Print Devices"]
 topic_type:
 - apiref

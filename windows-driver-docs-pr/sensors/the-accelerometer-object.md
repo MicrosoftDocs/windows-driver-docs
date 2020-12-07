@@ -1,7 +1,6 @@
 ---
 title: Accelerometer object
 description: The sample driver treats the accelerometer as an object that’s represented by the CAccelerometerDevice class.
-ms.assetid: D8E227E1-FFB5-4F4B-A981-6BD05C8FFAF2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

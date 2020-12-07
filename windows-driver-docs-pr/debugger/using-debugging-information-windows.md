@@ -1,7 +1,6 @@
 ---
 title: Using Debugging Information Windows
 description: Using Debugging Information Windows
-ms.assetid: b7dab453-24ac-4ef4-a48b-e734989b87bf
 keywords: ["debugging information windows"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

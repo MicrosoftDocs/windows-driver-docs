@@ -1,7 +1,6 @@
 ---
 title: Managing the Receive Filters for a Virtual Port
 description: Managing the Receive Filters for a Virtual Port
-ms.assetid: 6FDBB159-3094-42F7-95EB-695B64BD4342
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

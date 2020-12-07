@@ -1,7 +1,6 @@
 ---
 title: Static Tools and CodeQL
 description: Using Static tools and CodeQL on Windows driver source code to discover and repair any issues that are deemed Must-Fix
-ms.assetid: 134a5889-8ab9-4954-a10f-ac6fbafcd207
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK

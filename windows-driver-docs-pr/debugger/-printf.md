@@ -1,7 +1,6 @@
 ---
 title: .printf
 description: The .printf token behaves like the printf statement in C.
-ms.assetid: 16ad25c4-7df3-490e-80da-2beaddec3230
 keywords: [".printf Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

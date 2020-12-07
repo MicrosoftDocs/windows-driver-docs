@@ -1,7 +1,6 @@
 ---
 title: .endsrv (End Debugging Server)
 description: The .endsrv command causes the debugger to cancel an active debugging server.
-ms.assetid: 6be6c774-fe6b-4bd4-8174-55ef207db3e6
 keywords: [".endsrv (End Debugging Server) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

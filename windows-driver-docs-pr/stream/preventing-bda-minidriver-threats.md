@@ -1,7 +1,6 @@
 ---
 title: Preventing BDA Minidriver Threats
 description: Preventing BDA Minidriver Threats
-ms.assetid: 090cd2fb-d35b-4c42-a90d-a0d567d4b93f
 keywords:
 - Broadcast Driver Architecture WDK AVStream , security
 - BDA WDK AVStream , security

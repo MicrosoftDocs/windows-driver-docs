@@ -1,7 +1,6 @@
 ---
 title: TV Connector and Copy Protection in Video Miniport Drivers
 description: TV Connector and Copy Protection Support in Video Miniport Drivers
-ms.assetid: 7d7d44b5-3248-4bee-bc4d-e02fd3c606a7
 keywords:
 - video miniport drivers WDK Windows 2000 , TV connector
 - video miniport drivers WDK Windows 2000 , copy protection support

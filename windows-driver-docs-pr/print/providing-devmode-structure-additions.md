@@ -1,7 +1,6 @@
 ---
 title: Providing DEVMODE Structure Additions
 description: Providing DEVMODE Structure Additions
-ms.assetid: 7ce698f5-14c7-484d-be3d-b41c690b9576
 keywords:
 - user interface plug-ins WDK print , DEVMODEW structure additions
 - UI plug-ins WDK print , DEVMODEW structure additions

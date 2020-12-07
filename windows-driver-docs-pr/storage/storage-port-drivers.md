@@ -1,7 +1,6 @@
 ---
 title: Introduction to Storage Port Drivers
 description: Storage Port Drivers
-ms.assetid: 5ff4916c-7d1f-4b61-a332-6ed89df9db56
 keywords:
 - storage port drivers WDK
 - storage port drivers WDK , about storage port drivers

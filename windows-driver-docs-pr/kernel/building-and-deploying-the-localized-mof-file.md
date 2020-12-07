@@ -1,7 +1,6 @@
 ---
 title: Building and Deploying the Localized MOF File
 description: Building and Deploying the Localized MOF File
-ms.assetid: 3a741dc6-a789-44e1-9d68-cdb41b7161ed
 keywords: ["MOF files WDK WMI", "localizing MOF files", "MUI versions WDK WMI", "master MOF files WDK WMI", "languages WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

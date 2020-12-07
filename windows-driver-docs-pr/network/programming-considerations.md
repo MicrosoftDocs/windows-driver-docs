@@ -1,7 +1,6 @@
 ---
 title: Programming Considerations
 description: Programming Considerations
-ms.assetid: 5f51352a-cfbb-4fa0-98af-953b151a4563
 keywords:
 - Network Module Registrar WDK , programming considerations
 - NMR WDK , programming considerations

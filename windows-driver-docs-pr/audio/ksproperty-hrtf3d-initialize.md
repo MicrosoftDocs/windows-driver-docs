@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_HRTF3D\_INITIALIZE
 description: The KSPROPERTY\_HRTF3D\_INITIALIZE property specifies the parameter values to use to initialize the HRTF algorithm.
-ms.assetid: 45c6c80a-caea-4fb2-a8c8-f64130c0f837
 keywords: ["KSPROPERTY_HRTF3D_INITIALIZE Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Registry Entries for WIA Drivers
 description: Registry Entries for WIA Drivers
-ms.assetid: 5546eeca-f251-4b2f-8539-591b95c093f8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

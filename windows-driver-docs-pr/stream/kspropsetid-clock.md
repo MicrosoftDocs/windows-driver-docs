@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Clock
 description: KSPROPSETID\_Clock
-ms.assetid: 1f76daa9-b400-4506-9221-8506d8b75e1c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

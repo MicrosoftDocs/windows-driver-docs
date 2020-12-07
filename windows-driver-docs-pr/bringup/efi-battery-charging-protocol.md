@@ -1,7 +1,6 @@
 ---
 title: EFI_BATTERY_CHARGING_PROTOCOL
 description: EFI_BATTERY_CHARGING_PROTOCOL
-ms.assetid: 978d063e-f864-44be-9f58-4e4c6b2193b8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

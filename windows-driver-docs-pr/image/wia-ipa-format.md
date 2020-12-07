@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_FORMAT
 description: The WIA\_IPA\_FORMAT property contains the current format of the image that is about to be transferred. The WIA minidriver creates and maintains this property.
-ms.assetid: 5b60b45f-16ad-45c4-97f0-d92099f698b9
 keywords: ["WIA_IPA_FORMAT Imaging Devices"]
 topic_type:
 - apiref

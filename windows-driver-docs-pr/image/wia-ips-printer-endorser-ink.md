@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_INK
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_INK property is used to report the current ink or toner status for the Imprinter/Endorser device.
-ms.assetid: CCD7C10A-7739-4E75-B30C-2C2E7FE90B13
 keywords: ["WIA_IPS_PRINTER_ENDORSER_INK Imaging Devices"]
 topic_type:
 - apiref

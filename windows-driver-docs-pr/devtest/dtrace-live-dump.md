@@ -1,7 +1,6 @@
 ---
 title: DTrace Live Dump
 description: DTrace supports live dump file creation using using LKD(). 
-ms.assetid: bbf23d76-423d-4d1e-afde-83739015bbf1
 keywords:
 - DTrace WDK
 - software tracing WDK , DTrace

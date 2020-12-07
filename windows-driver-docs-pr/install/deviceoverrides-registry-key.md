@@ -1,7 +1,6 @@
 ---
 title: DeviceOverrides Registry Key
 description: DeviceOverrides Registry Key
-ms.assetid: 18f95848-71fe-4884-bcbe-d3cae90fc262
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

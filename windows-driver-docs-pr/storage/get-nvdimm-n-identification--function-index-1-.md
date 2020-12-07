@@ -1,7 +1,6 @@
 ---
 title: Get NVDIMM-N Identification (Function Index 1)
 description: This function returns device-specific information.
-ms.assetid: 350E764D-634C-4C60-9C74-E26B01636C02
 ms.localizationpriority: medium
 ms.date: 01/08/2020
 ---

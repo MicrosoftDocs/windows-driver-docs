@@ -1,7 +1,6 @@
 ---
 title: Coverage Tests (Device Fundamentals)
 description: The Device Fundamental Coverage tests monitor and report on the various I/O request packets (IRPs) that enter or leave a driver stack for specified devices.
-ms.assetid: 950B124B-8B2D-4A54-AFC3-E90BBDD8D1AF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

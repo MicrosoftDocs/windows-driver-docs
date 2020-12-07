@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing NDIS Intermediate Drivers
 description: Roadmap for Developing NDIS Intermediate Drivers
-ms.assetid: d3bd26ff-846f-4bd2-929c-1c15dd61a122
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

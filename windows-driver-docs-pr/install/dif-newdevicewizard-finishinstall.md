@@ -1,7 +1,6 @@
 ---
 title: DIF_NEWDEVICEWIZARD_FINISHINSTALL
 description: DIF_NEWDEVICEWIZARD_FINISHINSTALL
-ms.assetid: 5d27316b-4e47-4e18-95fe-fd4a63a76626
 keywords: ["DIF_NEWDEVICEWIZARD_FINISHINSTALL Device and Driver Installation"]
 topic_type:
 - apiref

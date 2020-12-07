@@ -1,7 +1,6 @@
 ---
 title: Framework Object Hierarchy
 description: Framework Object Hierarchy
-ms.assetid: ffacca8f-4083-4998-83d2-7c31544eb497
 keywords:
 - UMDF objects WDK , hierarchy
 - framework objects WDK UMDF , hierarchy

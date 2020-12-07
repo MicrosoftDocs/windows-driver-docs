@@ -1,7 +1,6 @@
 ---
 title: RemoveLockReleaseRead rule (wdm)
 description: The RemoveLockReleaseRead rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
-ms.assetid: 06412907-B22C-4B18-8809-E00956954F51
 ms.date: 05/21/2018
 keywords: ["RemoveLockReleaseRead rule (wdm)"]
 topic_type:

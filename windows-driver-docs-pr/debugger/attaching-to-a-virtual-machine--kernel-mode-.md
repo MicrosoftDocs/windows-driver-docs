@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging of a Virtual Machine Manually using a Virtual COM Port
 description: Debugging Tools for Windows supports kernel debugging of a virtual machine using a Virtual COM Port.
-ms.assetid: e863e664-8338-4bbe-953b-e000a6843db9
 keywords: ["virtual machine debugging", "Virtual PC debugging", "VMware debugging"]
 ms.date: 04/23/2019
 ms.localizationpriority: medium

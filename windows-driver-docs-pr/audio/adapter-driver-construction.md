@@ -1,7 +1,6 @@
 ---
 title: Adapter Driver Construction
 description: Adapter Driver Construction
-ms.assetid: e4a151b9-57aa-402f-8a0d-70547eb67917
 keywords:
 - audio miniport drivers WDK , adapter drivers
 - miniport drivers WDK audio , adapter drivers

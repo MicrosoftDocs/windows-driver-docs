@@ -1,7 +1,6 @@
 ---
 title: Installing a Multiprotocol WAN NIC
 description: Installing a Multiprotocol WAN NIC
-ms.assetid: 7000040c-8a26-496d-ae26-580aace68160
 keywords:
 - add-registry-sections WDK networking , multiprotocol WAN NIC
 - multiprotocol WAN NIC WDK networking

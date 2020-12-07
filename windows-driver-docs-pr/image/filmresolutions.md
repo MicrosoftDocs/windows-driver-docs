@@ -1,7 +1,6 @@
 ---
 title: FilmResolutions element
 description: The required FilmResolutions element contains a list of resolutions at which the scanner's film scanning input source can scan.
-ms.assetid: a273ac11-e1ae-4329-a6a2-e47accf564a9
 keywords: ["FilmResolutions element Imaging Devices"]
 topic_type:
 - apiref

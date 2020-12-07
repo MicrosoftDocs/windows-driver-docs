@@ -1,7 +1,6 @@
 ---
 title: Device-Specific Contexts
 description: Device-Specific Contexts
-ms.assetid: 29e0d451-57fb-4943-9508-022adffa4650
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Enhanced I/O Verification
 description: Enhanced I/O Verification
-ms.assetid: ce8a0b22-fa27-45e5-b013-b3accf604ed4
 keywords:
 - Enhanced I/O Verification feature WDK Driver Verifier
 - I/O Verification feature WDK Driver Verifier

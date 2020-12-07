@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_CREATE_MAILSLOT
 description: IRP_MJ_CREATE_MAILSLOT
-ms.assetid: 6cd04fd0-ee36-421f-8877-f409aba31b17
 keywords:
 - IRP_MJ_CREATE_MAILSLOT File System Drivers
 topic_type:

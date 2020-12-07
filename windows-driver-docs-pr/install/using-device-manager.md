@@ -1,7 +1,6 @@
 ---
 title: Device Manager for makers of devices and drivers
 description: Device Manager offers ways to troubleshoot installation problems with your drivers and devices.
-ms.assetid: 3c229347-b36f-43e7-9e9c-3ba6ec1e6108
 keywords:
 - Device Manager WDK
 - Device Manager WDK , about Device Manager

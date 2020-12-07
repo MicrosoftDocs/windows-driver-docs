@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_ISO
 description: This property selects the ISO setting for the camera. The ISO setting is chosen from a group of presets or set to automatic.
-ms.assetid: 8BA03479-2AB8-4390-83F0-84C3519DB991
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_ISO Streaming Media Devices"]
 topic_type:
 - apiref

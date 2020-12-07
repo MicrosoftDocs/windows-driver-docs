@@ -1,7 +1,6 @@
 ---
 title: USBCAMD minidriver library
 description: USBCAMD minidriver Library
-ms.assetid: 4447bf3d-5eaa-4de7-96bb-22dae68b44eb
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
 - Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library

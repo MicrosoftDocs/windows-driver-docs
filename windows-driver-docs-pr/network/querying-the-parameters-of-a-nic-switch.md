@@ -1,7 +1,6 @@
 ---
 title: Querying the Parameters of a NIC Switch
 description: Querying the Parameters of a NIC Switch
-ms.assetid: 8C1F0F8A-D290-4552-A324-062DB92F6B5D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

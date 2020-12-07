@@ -1,7 +1,6 @@
 ---
 title: SMS device storage limits
 description: SMS device storage limits
-ms.assetid: b2491562-352e-4881-99c7-98d43aeec64b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

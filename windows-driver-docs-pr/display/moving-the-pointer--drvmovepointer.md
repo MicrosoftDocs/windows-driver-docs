@@ -1,7 +1,6 @@
 ---
 title: Moving the Pointer DrvMovePointer
 description: Moving the Pointer DrvMovePointer
-ms.assetid: cd82cea8-a37e-4e00-9342-9d6491e8c83c
 keywords:
 - drawing pointers WDK Windows 2000 display
 - display drivers WDK Windows 2000 , pointers

@@ -1,7 +1,6 @@
 ---
 title: Introduction to the NDIS PacketDirect Provider Interface
 description: This section provides an introduction to the NDIS PacketDirect Provider Interface (PDPI)
-ms.assetid: E85ED51E-BDE5-43BE-93BA-19F214670B8F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

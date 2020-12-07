@@ -1,7 +1,6 @@
 ---
 title: Creating and Destroying DirectDraw Surfaces
 description: Creating and Destroying DirectDraw Surfaces
-ms.assetid: d5557897-1810-448e-a2a8-aba96643b19c
 keywords:
 - drawing surfaces WDK DirectDraw , creating
 - DirectDraw surfaces WDK Windows 2000 display , creating

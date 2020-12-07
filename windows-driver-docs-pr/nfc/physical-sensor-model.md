@@ -1,7 +1,6 @@
 ---
 title: Physical sensor model
 description: Physical sensor model
-ms.assetid: D3887E09-E0A4-4FBC-9D26-344016047235
 keywords:
 - NFC
 - near field communications

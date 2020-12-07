@@ -1,7 +1,6 @@
 ---
 title: Miniport Driver Property Item Requests
 description: Miniport Driver Property Item Requests
-ms.assetid: 37baad27-539b-46ab-b300-175bc0c2b992
 keywords:
 - property item requests WDK DirectMusic
 - miniport drivers WDK audio , property item requests

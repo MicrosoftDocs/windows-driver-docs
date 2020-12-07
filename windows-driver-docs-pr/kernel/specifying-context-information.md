@@ -1,7 +1,6 @@
 ---
 title: Specifying Context Information
 description: Specifying Context Information
-ms.assetid: 7133529f-5a6c-4df1-8d03-1c79c0d98fa9
 keywords: ["filtering registry calls WDK kernel , context information", "registry filtering drivers WDK kernel , context information", "context information", "context information WDK filter registry call"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

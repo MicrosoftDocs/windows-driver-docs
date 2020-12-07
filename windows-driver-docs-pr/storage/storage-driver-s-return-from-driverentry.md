@@ -1,7 +1,6 @@
 ---
 title: Storage Driver's Return from DriverEntry
 description: Storage Driver's Return from DriverEntry
-ms.assetid: a5772e9c-ec7b-4570-aaae-d2879f7e0bc7
 keywords:
 - return values WDK SCSI
 - ScsiPortInitialize

@@ -1,7 +1,6 @@
 ---
 title: ClientDisplayName element
 description: The required ClientDisplayName element specifies the string that the scanner should display in its user interface.
-ms.assetid: e43e5c51-5f8e-47af-b5da-707b89401935
 keywords: ["ClientDisplayName element Imaging Devices"]
 topic_type:
 - apiref

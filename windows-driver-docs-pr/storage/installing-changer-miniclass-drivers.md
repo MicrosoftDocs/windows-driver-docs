@@ -1,7 +1,6 @@
 ---
 title: Installing Changer Miniclass Drivers
 description: Installing Changer Miniclass Drivers
-ms.assetid: 923e1128-bacc-450b-b250-bc666951965d
 keywords:
 - changer drivers WDK storage , miniclass drivers
 - storage changer drivers WDK , miniclass drivers

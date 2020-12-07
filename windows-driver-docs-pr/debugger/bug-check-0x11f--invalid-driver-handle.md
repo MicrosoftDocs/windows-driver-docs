@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x11F INVALID_DRIVER_HANDLE
 description: The INVALID_DRIVER_HANDLE bug check has a value of 0x0000011F. This indicates that someone has closed the initial handle for a driver between inserting the driver object and referencing the handle.
-ms.assetid: A669256B-737D-4215-8E0E-5500D7704F4E
 keywords: ["Bug Check 0x11F INVALID_DRIVER_HANDLE", "INVALID_DRIVER_HANDLE"]
 ms.date: 01/30/2019
 topic_type:

@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform Setup
 description: How to set up the Microsoft Bluetooth Test Platform Setup 
 ms.date: 2/14/2020
-ms.assetid: 85ac7c5b-b5f7-49e0-85f8-72e191c00974
 ms.localizationpriority: medium
 
 ---

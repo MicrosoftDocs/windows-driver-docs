@@ -1,7 +1,6 @@
 ---
 title: Sending Urgent Data on a SAN
 description: Sending Urgent Data on a SAN
-ms.assetid: 9ff9719a-dd42-4ce7-8c07-370afa17fd7b
 keywords:
 - urgent data WDK SANs
 ms.date: 04/20/2017

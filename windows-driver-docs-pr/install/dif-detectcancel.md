@@ -1,7 +1,6 @@
 ---
 title: DIF_DETECTCANCEL
 description: DIF_DETECTCANCEL
-ms.assetid: 45cd6802-b39c-49ef-9f2d-e2ea8678011b
 keywords: ["DIF_DETECTCANCEL Device and Driver Installation"]
 topic_type:
 - apiref

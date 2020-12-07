@@ -1,7 +1,6 @@
 ---
 title: Operating a Parallel Port
 description: Operating a Parallel Port
-ms.assetid: c9015a01-a7cb-41f4-9710-a868ef19f6d7
 keywords:
 - vendor-supplied parallel drivers WDK , parallel port operation
 - system-supplied function drivers WDK parallel ports

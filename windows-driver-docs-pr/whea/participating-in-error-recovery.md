@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Recovery
 description: Participating in Error Recovery
-ms.assetid: 79f534b2-a5eb-4249-bfff-2f40c25805a6
 keywords:
 - Windows Hardware Error Architecture WDK , error recovery
 - WHEA WDK , error recovery

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_VBICODEC
 description: KSCATEGORY_VBICODEC
-ms.assetid: c69857e5-19ca-44aa-ae42-bc015be2b0f8
 keywords: ["KSCATEGORY_VBICODEC Device and Driver Installation"]
 topic_type:
 - apiref

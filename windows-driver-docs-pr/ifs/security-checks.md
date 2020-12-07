@@ -1,7 +1,6 @@
 ---
 title: Security checks in file systems
 description: Security Checks
-ms.assetid: 2883910a-72f3-4be9-b1dd-6fb02abffe73
 keywords:
 - security WDK file systems , security checks
 - security checks WDK file systems

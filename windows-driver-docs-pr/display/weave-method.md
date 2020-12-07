@@ -1,7 +1,6 @@
 ---
 title: Weave Method
 description: Weave Method
-ms.assetid: d35a08b6-7221-4e1c-895f-446f23096519
 keywords:
 - DirectX VPE support WDK DirectDraw , displaying interleaved video
 - drawing VPEs WDK DirectDraw , displaying interleaved video

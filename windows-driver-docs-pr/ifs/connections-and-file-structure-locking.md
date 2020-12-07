@@ -1,7 +1,6 @@
 ---
 title: Connections and File Structure Locking
 description: Connections and File Structure Locking
-ms.assetid: 7286a34f-db8f-4b0a-ab7f-674b9dc641a8
 keywords:
 - locking WDK RDBSS
 - per-device object tables WDK RDBSS

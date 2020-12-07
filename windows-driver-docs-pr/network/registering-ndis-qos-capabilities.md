@@ -1,7 +1,6 @@
 ---
 title: Registering NDIS QoS Capabilities
 description: Registering NDIS QoS Capabilities
-ms.assetid: 03D70079-37A4-4FAA-BF18-ACED3A9E8267
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
