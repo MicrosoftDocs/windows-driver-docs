@@ -1,7 +1,6 @@
 ---
 title: GDI Services for Paths
 description: GDI Services for Paths
-ms.assetid: 8fc51b7e-d787-48ed-a865-528547abefc5
 keywords:
 - GDI WDK Windows 2000 display , paths
 - graphics drivers WDK Windows 2000 display , paths

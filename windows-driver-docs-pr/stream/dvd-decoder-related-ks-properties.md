@@ -1,7 +1,6 @@
 ---
 title: DVD Decoder Related KS Properties
 description: DVD Decoder Related KS Properties
-ms.assetid: 97ce831e-429b-4097-a9f4-625315fe1247
 keywords:
 - DVD decoder minidrivers WDK , KS properties
 - decoder minidrivers WDK DVD , KS properties

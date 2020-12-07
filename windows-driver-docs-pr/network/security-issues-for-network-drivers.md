@@ -1,7 +1,6 @@
 ---
 title: Security Issues for Network Drivers
 description: This section describes security issues specific to network drivers
-ms.assetid: 04400213-9bd4-4dbe-b302-24917450829f
 keywords:
 - network drivers WDK , security
 - security WDK networking

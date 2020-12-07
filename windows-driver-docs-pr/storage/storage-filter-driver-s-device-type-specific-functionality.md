@@ -1,7 +1,6 @@
 ---
 title: Storage Filter Driver's Device-Type-Specific Functionality
 description: Storage Filter Driver's Device-Type-Specific Functionality
-ms.assetid: ecc0d938-e931-46bd-a1e1-0e6da8e149a4
 keywords:
 - storage filter drivers WDK , device-type-specific functionality
 - filter drivers WDK storage , device-type-specific functionality

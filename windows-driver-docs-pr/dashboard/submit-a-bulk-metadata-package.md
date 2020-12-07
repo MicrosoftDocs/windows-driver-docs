@@ -1,7 +1,6 @@
 ---
 title: Submit a Bulk Metadata Package
 description: Create the components of a bulk metadata package for drivers--device metadata package, device manifest package, and  BulkMetadataSubmission XML document.
-ms.assetid: c8e248d4-a419-48e1-839d-1bbb9adda382
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

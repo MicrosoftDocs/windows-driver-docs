@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_WRITE\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_WRITE\ routine is called by RDBSS to issue a write request to the network mini-redirector.
-ms.assetid: b70838e3-4e80-4ec9-88ba-0f608a1af78e
 keywords: ["MRxLowIOSubmit LOWIO_OP_WRITE routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

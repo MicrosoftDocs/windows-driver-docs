@@ -1,7 +1,6 @@
 ---
 title: Storport Driver
 description: Storport Driver
-ms.assetid: d5bda2f6-c4bb-4b90-a149-131785295687
 keywords:
 - storage port drivers WDK , Storport driver
 - Storport drivers WDK

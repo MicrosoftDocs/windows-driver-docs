@@ -1,7 +1,6 @@
 ---
 title: Minimum Capability Requirements for DirectX 8.0 Drivers
 description: Minimum Capability Requirements for DirectX 8.0 Drivers
-ms.assetid: 8c939013-516c-4048-8de5-e95529891ac9
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , reporting capabilities
 - D3DCAPS8

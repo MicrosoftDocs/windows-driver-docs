@@ -1,7 +1,6 @@
 ---
 title: Introduction to File Systems Security
 description: Introduction to File Systems Security
-ms.assetid: 328568dc-a003-4e00-941a-9ccf15b1c735
 keywords:
 - security WDK file systems , about file system security
 ms.date: 04/20/2017

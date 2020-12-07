@@ -1,7 +1,6 @@
 ---
 title: ConditionId element
 description: The required ConditionId element uniquely identifies the device condition that was just cleared.
-ms.assetid: 4b154fb3-625e-478d-9bb4-92fd7cae0530
 keywords: ["ConditionId element Imaging Devices"]
 topic_type:
 - apiref

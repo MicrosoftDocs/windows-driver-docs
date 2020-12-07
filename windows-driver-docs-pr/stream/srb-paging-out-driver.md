@@ -1,7 +1,6 @@
 ---
 title: SRB\_PAGING\_OUT\_DRIVER
 description: SRB\_PAGING\_OUT\_DRIVER
-ms.assetid: 9bcb9f07-6fea-427b-9ae8-afdc6aec540f
 keywords: ["SRB_PAGING_OUT_DRIVER Streaming Media Devices"]
 topic_type:
 - apiref

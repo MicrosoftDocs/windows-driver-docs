@@ -1,7 +1,6 @@
 ---
 title: Defining custom values for sensor constants (previous version)
 description: Defining custom values for sensor constants (previous version)
-ms.assetid: 0ed635c2-117d-4a49-a565-31e5a0a9861d
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

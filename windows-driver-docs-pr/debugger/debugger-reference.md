@@ -1,7 +1,6 @@
 ---
 title: Debugger Reference
 description: Debugger Reference
-ms.assetid: 72337c77-422f-4dfa-af21-464298975401
 keywords: ["Debugger Reference"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

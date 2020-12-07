@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_CLOCK
 description: KSCATEGORY_CLOCK
-ms.assetid: 1a5afadd-f76f-4184-a93e-af82769ecc1b
 keywords: ["KSCATEGORY_CLOCK Device and Driver Installation"]
 topic_type:
 - apiref

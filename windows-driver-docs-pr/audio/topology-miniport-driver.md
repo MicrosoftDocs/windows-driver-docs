@@ -1,7 +1,6 @@
 ---
 title: Topology Miniport Driver
 description: Topology Miniport Driver
-ms.assetid: 3e0b797e-2fa5-499b-a465-0f51f5433177
 keywords:
 - audio miniport drivers WDK , Topology
 - miniport drivers WDK audio , Topology

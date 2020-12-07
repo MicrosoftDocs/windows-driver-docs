@@ -1,7 +1,6 @@
 ---
 title: WIA Core Components
 description: WIA Core Components
-ms.assetid: 59c02fa2-9116-4b57-a8fa-b977a4d6c714
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---

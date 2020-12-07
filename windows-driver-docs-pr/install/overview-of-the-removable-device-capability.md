@@ -1,7 +1,6 @@
 ---
 title: Overview of the Removable Device Capability
 description: Overview of the Removable Device Capability
-ms.assetid: c6dfb2ac-89a5-40fd-ae9a-1f2800af9ef8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

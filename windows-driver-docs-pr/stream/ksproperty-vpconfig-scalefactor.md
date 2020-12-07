@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_SCALEFACTOR
 description: The KSPROPERTY\_VPCONFIG\_SCALEFACTOR property sets the video port dimensions to user-defined specifications.
-ms.assetid: 0fbfedc8-9dff-4c7c-910f-507b84614e47
 keywords: ["KSPROPERTY_VPCONFIG_SCALEFACTOR Streaming Media Devices"]
 topic_type:
 - apiref

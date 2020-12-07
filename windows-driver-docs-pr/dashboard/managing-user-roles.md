@@ -1,6 +1,5 @@
 ---
 title: Managing User Roles
-ms.assetid: 000D3756-7110-4E9F-91CA-86F91EECCFCA
 ms.topic: article
 description: Managing user roles in the Partner Center
 ms.date: 04/20/2017

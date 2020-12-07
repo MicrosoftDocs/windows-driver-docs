@@ -1,7 +1,6 @@
 ---
 title: Overview of INF Files
 description: Overview of INF Files
-ms.assetid: 94682cba-1f68-416f-af74-99ede81eadc7
 keywords:
 - INF files WDK device installations
 - INF files WDK device installations , creating

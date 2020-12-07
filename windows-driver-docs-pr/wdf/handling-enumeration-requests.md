@@ -1,7 +1,6 @@
 ---
 title: Handling Enumeration Requests
 description: Handling Enumeration Requests
-ms.assetid: 3719ffa7-2daf-4716-a183-531837be99aa
 keywords:
 - enumeration WDK KMDF
 - PnP WDK KMDF , bus enumeration

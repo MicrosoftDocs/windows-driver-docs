@@ -1,7 +1,6 @@
 ---
 title: Handling Device-Managed Surfaces
 description: Handling Device-Managed Surfaces
-ms.assetid: 4403165f-c528-450e-9c96-77a9ce0778aa
 keywords:
 - Unidrv, device-managed surfaces
 - device-managed surfaces WDK Unidrv

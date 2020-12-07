@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_MIXFORMAT
 description: The KSPROPERTY\_AUDIOENGINE\_MIXFORMAT property request retrieves the setting of the mixer in the hardware audio engine.
-ms.assetid: 12353E72-1092-44B4-861A-90C198237670
 keywords: ["KSPROPERTY_AUDIOENGINE_MIXFORMAT Audio Devices"]
 topic_type:
 - apiref

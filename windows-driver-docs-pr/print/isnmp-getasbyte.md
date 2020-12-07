@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 0a9d170d-486f-49e9-a8f9-c0d8b17f681b
 keywords: ["GetAsByte method Print Devices", "GetAsByte method Print Devices , ISNMP interface", "ISNMP interface Print Devices , GetAsByte method"]
 topic_type:
 - apiref

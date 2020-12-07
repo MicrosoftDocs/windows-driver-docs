@@ -1,7 +1,6 @@
 ---
 title: IStiDevice COM Interface
 description: IStiDevice COM Interface
-ms.assetid: b026fb74-9ce6-4d4e-8a5b-402731904064
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

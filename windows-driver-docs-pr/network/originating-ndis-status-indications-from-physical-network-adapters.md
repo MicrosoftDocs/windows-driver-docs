@@ -1,7 +1,6 @@
 ---
 title: Originating NDIS status indications from physical net adapters
 description: Originating NDIS Status Indications from Physical Network Adapters
-ms.assetid: D588CD7E-98A3-4BA8-A467-6492DA2186CA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

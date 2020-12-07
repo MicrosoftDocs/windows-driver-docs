@@ -1,7 +1,6 @@
 ---
 title: GDL Values
 description: GDL Values
-ms.assetid: 0e634646-d334-4b9c-b9d2-36026f617575
 keywords:
 - GDL WDK , values
 - values WDK GDL , about GDL values

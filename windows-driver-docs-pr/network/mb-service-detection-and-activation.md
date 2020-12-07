@@ -1,7 +1,6 @@
 ---
 title: MB Service Detection and Activation
 description: MB Service Detection and Activation
-ms.assetid: 7c53528b-722d-44a1-9eac-ee1fe89f21f3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Writing Indented Log Entries
 description: Writing Indented Log Entries
-ms.assetid: 8ce6b433-a004-43f6-9481-9c23c5e7e8da
 keywords:
 - indented log entries WDK SetupAPI
 - formats WDK SetupAPI logging

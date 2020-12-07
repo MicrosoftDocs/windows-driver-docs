@@ -1,7 +1,6 @@
 ---
 title: Driver Implementation Details
 description: This topic presents the implementation details for an audio driver that is developed for an audio adapter that is capable of processing hardware-offloaded audio streams.
-ms.assetid: FB17FADD-D683-4ECC-95F9-86DF7A289C63
 ms.date: 04/17/2020
 ms.localizationpriority: medium
 ---

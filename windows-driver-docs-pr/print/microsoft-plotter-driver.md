@@ -1,7 +1,6 @@
 ---
 title: Microsoft Plotter Driver
 description: Microsoft Plotter Driver
-ms.assetid: 5c8efa08-8d66-4c0f-b1ba-8384967465d3
 keywords:
 - printer drivers WDK , Plotter Driver
 - Plotter Driver WDK print

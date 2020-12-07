@@ -1,7 +1,6 @@
 ---
 title: CreateScanJobRequest element
 description: The required CreateScanJobRequest operation prepares a scan device to scan.
-ms.assetid: ce3aafe2-71b0-4875-852a-f3ab78684329
 keywords: ["CreateScanJobRequest element Imaging Devices"]
 topic_type:
 - apiref

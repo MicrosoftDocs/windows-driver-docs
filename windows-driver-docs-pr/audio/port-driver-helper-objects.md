@@ -1,7 +1,6 @@
 ---
 title: Port Driver Helper Objects
 description: Port Driver Helper Objects
-ms.assetid: 98a30662-d784-4e66-90bc-9d2042b2c8f8
 keywords:
 - audio miniport drivers WDK , helper objects
 - miniport drivers WDK audio , helper objects

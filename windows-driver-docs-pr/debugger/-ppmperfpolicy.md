@@ -1,7 +1,6 @@
 ---
 title: ppmperfpolicy
 description: The ppmperfpolicy command
-ms.assetid: D81DDC0B-703D-402A-B823-AE5097CE7CDB
 keywords: ["ppmperfpolicy Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

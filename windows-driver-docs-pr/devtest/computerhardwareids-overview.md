@@ -1,7 +1,6 @@
 ---
 title: ComputerHardwareIds Overview
 description: To run ComputerHardwareIds, type a command at the command prompt. Use the following syntax and parameters.
-ms.assetid: 71115590-a798-4b90-b14e-4d64e22016ed
 keywords:
 - ComputerHardwareIds Overview Driver Development Tools
 topic_type:

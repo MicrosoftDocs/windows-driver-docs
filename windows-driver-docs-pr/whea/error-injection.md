@@ -1,7 +1,6 @@
 ---
 title: Error Injection
 description: Error Injection
-ms.assetid: d97d49bc-b216-40d6-afd1-aecff624624d
 keywords:
 - Windows Hardware Error Architecture WDK , error injection
 - WHEA WDK , error injection

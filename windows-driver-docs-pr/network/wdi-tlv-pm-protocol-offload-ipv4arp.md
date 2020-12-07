@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv4ARP
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv4ARP is a TLV that contains IPv4 ARP protocol offload parameters.
-ms.assetid: 03894B22-3D4B-4262-893A-660FC88AA93D
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv4ARP Network Drivers Starting with Windows Vista

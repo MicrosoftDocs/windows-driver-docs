@@ -1,7 +1,6 @@
 ---
 title: Audio Position Property
 description: Audio Position Property
-ms.assetid: 893fea84-9136-4107-96d2-8a4e2ab7bd2a
 keywords:
 - play position WDK audio
 - record position WDK audio

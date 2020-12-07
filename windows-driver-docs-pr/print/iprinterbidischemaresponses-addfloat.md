@@ -4,7 +4,6 @@ description: The AddFloat method adds a new response of type BIDI\_FLOAT to the 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 99A66884-3528-43C3-AC56-CE0AA64AB328
 keywords: ["AddFloat method Print Devices", "AddFloat method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddFloat method"]
 topic_type:
 - apiref

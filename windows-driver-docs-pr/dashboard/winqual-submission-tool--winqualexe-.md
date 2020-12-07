@@ -1,7 +1,6 @@
 ---
 title: Winqual Submission Tool (winqual.exe)
 description: Winqual Submission Tool (winqual.exe)
-ms.assetid: f7a34ee3-0532-465b-acb0-1ff80e2d4cb8
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

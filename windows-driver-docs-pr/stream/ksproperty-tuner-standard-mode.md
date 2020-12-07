@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_STANDARD\_MODE
 description: The KSPROPERTY\_TUNER\_STANDARD\_MODE property retrieves a BOOL value that indicates whether the driver can set the tuning device to automatically detect the tuner standard from the signal itself. This property can be implemented optionally.
-ms.assetid: 9c374778-20fd-427a-864f-f57ec14add07
 keywords: ["KSPROPERTY_TUNER_STANDARD_MODE Streaming Media Devices"]
 topic_type:
 - apiref

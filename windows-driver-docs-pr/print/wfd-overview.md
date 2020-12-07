@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi Direct Printing overview
 description: Provides information on supported user experiences and use cases for a Wi-Fi Direct Printing.
-ms.assetid: 40ED3410-EC46-42C8-B09B-8010639F2268
 ms.date: 06/09/2020
 ms.localizationpriority: medium
 ---

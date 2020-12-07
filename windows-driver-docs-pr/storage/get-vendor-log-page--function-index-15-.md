@@ -1,7 +1,6 @@
 ---
 title: Get Vendor Log Page (Function Index 15)
 description: This function returns the vendor log page.
-ms.assetid: 71BFFD91-FAC2-473C-B453-B54578FAE1A0
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

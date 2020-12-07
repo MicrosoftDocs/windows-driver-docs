@@ -1,7 +1,6 @@
 ---
 title: Control GUID
 description: Control GUID
-ms.assetid: a85a5e1a-c4c1-40d4-a0ef-d8e552590f03
 keywords:
 - control GUIDs WDK
 - GUIDs WDK software tracing

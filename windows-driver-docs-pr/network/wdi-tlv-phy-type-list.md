@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PHY_TYPE_LIST
 description: WDI_TLV_PHY_TYPE_LIST is a TLV that contains an array of PHY types.
-ms.assetid: 4066E4CE-D63E-4499-AE27-11F6BD57795D
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_TYPE_LIST Network Drivers Starting with Windows Vista

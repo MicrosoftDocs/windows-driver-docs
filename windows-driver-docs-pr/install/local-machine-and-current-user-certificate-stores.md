@@ -1,7 +1,6 @@
 ---
 title: Local Machine and Current User Certificate Stores
 description: Local Machine and Current User Certificate Stores
-ms.assetid: b7362f2e-c8ff-42e4-9edc-df4b9967df29
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

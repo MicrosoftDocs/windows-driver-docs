@@ -1,7 +1,6 @@
 ---
 title: Optional WIA Item Properties for Feeder Scanners
 description: Optional WIA Item Properties for Feeder Scanners
-ms.assetid: 2af138ea-c06d-4009-90e2-8a5c7d6242bb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_EXTENSION\_UNIT
 description: PROPSETID\_VIDCAP\_EXTENSION\_UNIT
-ms.assetid: 7aa4742f-e64f-4798-a9e0-8c1f02aa15b3
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

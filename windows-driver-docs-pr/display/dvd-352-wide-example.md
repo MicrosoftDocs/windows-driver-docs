@@ -1,7 +1,6 @@
 ---
 title: DVD 352-Wide Example
 description: DVD 352-Wide Example
-ms.assetid: 22047c8e-30e3-4204-9f7d-b8b97be668ae
 keywords:
 - alpha-blend combination WDK DirectX VA , DVD 352-wide example
 - blended pictures WDK DirectX VA , DVD 352-wide example

@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_TUNER\_INITIATE\_SCAN
 description: The KSEVENT\_TUNER\_INITIATE\_SCAN event requests that the driver initiate a scan operation and notify a user-mode client when the driver's associated tuning device completes the scan operation.
-ms.assetid: 63f6917e-30d2-4734-92fa-49a4291efafd
 keywords: ["KSEVENT_TUNER_INITIATE_SCAN Streaming Media Devices"]
 topic_type:
 - apiref

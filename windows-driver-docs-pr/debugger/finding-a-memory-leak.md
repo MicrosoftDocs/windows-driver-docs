@@ -1,7 +1,6 @@
 ---
 title: Finding a Memory Leak
 description: Finding a Memory Leak
-ms.assetid: 1227c5e8-d83b-4f27-aa69-6e54aebc3ad8
 keywords: ["memory leak", "memory leak, debugging"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

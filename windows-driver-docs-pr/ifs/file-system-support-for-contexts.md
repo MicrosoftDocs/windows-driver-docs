@@ -1,7 +1,6 @@
 ---
 title: File System Support for Contexts
 description: File System Support for Contexts
-ms.assetid: 661ee3ff-3171-4d1e-a8fe-8d1852c5e990
 keywords:
 - contexts WDK file system minifilter , file system support
 ms.date: 04/20/2017

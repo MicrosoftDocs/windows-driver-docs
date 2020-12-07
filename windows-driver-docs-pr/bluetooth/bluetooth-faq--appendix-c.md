@@ -1,7 +1,6 @@
 ---
 title: Bluetooth Appendix
 description: Contains Microsoft-defined Bluetooth HCI extension examples and diagrams.
-ms.assetid: 5C3C2479-03F9-4D33-94DA-3371D84C514B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

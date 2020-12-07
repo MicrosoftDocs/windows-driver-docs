@@ -1,7 +1,6 @@
 ---
 title: DIF_VALIDATEDRIVER
 description: DIF_VALIDATEDRIVER
-ms.assetid: a3ba3ee6-5f1e-47e6-bfc1-b77a42045023
 keywords: ["DIF_VALIDATEDRIVER Device and Driver Installation"]
 topic_type:
 - apiref

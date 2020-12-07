@@ -1,7 +1,6 @@
 ---
 title: Opening the Tracing Flags and Level Selection dialog box
 description: Opening the Tracing Flags and Level Selection dialog box
-ms.assetid: f6ee808e-ea29-492b-b161-0a3b57140214
 keywords:
 - trace flags WDK
 - flags WDK software tracing

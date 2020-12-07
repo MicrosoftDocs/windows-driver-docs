@@ -1,7 +1,6 @@
 ---
 title: KS\_AM\_RATE\_MaxFullDataRate
 description: The KS\_AM\_RATE\_MaxFullDataRate property retrieves the maximum, full data rate, multiplied by 10000 (decimal).
-ms.assetid: 2a331ecd-0b40-4dd9-90f0-7585cd36c41e
 keywords: ["KS_AM_RATE_MaxFullDataRate Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Video Capture Minidriver Event Sets
 description: Video Capture Minidriver Event Sets
-ms.assetid: 85fd6d3c-3f90-427e-b66c-8849d44bad58
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

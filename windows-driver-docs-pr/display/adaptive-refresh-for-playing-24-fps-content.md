@@ -1,7 +1,6 @@
 ---
 title: Adaptive refresh for playing 24 fps video content
 description: When Windows Display Driver Model (WDDM) 1.3 and later drivers play 24 frame per second (fps) video content on 60-Hz monitors, they must implement 48-Hz adaptive refresh to conserve power.
-ms.assetid: CFA1AE0F-B591-4C5E-A97B-8D4E4B475167
 ms.date: 10/19/2018
 ms.topic: article
 ms.prod: windows-hardware

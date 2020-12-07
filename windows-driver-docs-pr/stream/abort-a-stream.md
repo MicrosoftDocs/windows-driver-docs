@@ -1,7 +1,6 @@
 ---
 title: Abort a Stream
 description: Abort a Stream
-ms.assetid: 46c726b6-8553-4588-9be1-2cf7779efec5
 keywords:
 - Avcstrm.sys streaming filter driver WDK , aborting streams
 - abort streams WDK AV/C streaming

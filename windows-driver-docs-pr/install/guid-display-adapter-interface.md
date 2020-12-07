@@ -1,7 +1,6 @@
 ---
 title: GUID_DISPLAY_ADAPTER_INTERFACE
 description: GUID_DISPLAY_ADAPTER_INTERFACE
-ms.assetid: 978dd905-0f1f-4554-8d4a-750093effbf9
 keywords: ["GUID_DISPLAY_ADAPTER_INTERFACE Device and Driver Installation"]
 topic_type:
 - apiref

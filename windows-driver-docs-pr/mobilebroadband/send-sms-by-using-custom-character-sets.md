@@ -1,7 +1,6 @@
 ---
 title: Send SMS by using custom character sets
 description: Send SMS by using custom character sets
-ms.assetid: c1f19c16-66f5-4bcd-ba28-950eaa6472d2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

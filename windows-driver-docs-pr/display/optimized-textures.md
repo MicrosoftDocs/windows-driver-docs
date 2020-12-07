@@ -1,7 +1,6 @@
 ---
 title: Optimized Textures
 description: Optimized Textures
-ms.assetid: 2c1af9c0-f15a-426a-b861-09f3e1c8899e
 keywords:
 - texture management WDK Direct3D , optimized textures
 - Direct3D WDK Windows 2000 display , texture management

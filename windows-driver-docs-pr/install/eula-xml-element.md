@@ -1,7 +1,6 @@
 ---
 title: eula XML Element
 description: eula XML Element
-ms.assetid: ab647583-b0e1-4f40-86af-9b7923f5535c
 keywords: ["eula XML Element Device and Driver Installation"]
 topic_type:
 - apiref

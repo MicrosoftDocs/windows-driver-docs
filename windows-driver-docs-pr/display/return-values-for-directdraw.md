@@ -1,7 +1,6 @@
 ---
 title: Return Values for DirectDraw
 description: Return Values for DirectDraw
-ms.assetid: da4cc7d7-6826-48aa-96c6-004e31fc3e3e
 keywords:
 - return values WDK DirectDraw
 - drawing WDK DirectDraw , return values

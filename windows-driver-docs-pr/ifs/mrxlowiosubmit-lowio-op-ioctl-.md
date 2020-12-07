@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_IOCTL\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_IOCTL\ routine is called by RDBSS to issue an I/O system control request to the network mini-redirector.
-ms.assetid: b416e2b4-6024-45ec-adf5-90743d417ad5
 keywords: ["MRxLowIOSubmit LOWIO_OP_IOCTL routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

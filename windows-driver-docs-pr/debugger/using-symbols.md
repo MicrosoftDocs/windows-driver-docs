@@ -1,7 +1,6 @@
 ---
 title: Using Symbols
 description: Using Symbols
-ms.assetid: 1de1441f-b4d7-49e9-87ad-392a75b3d4be
 keywords: ["Debugger Engine, symbols", "symbols"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

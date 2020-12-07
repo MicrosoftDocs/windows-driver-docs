@@ -1,7 +1,6 @@
 ---
 title: Signal Strength Indication Semantics
 description: Signal Strength Indication Semantics
-ms.assetid: d28476f8-d567-4fe0-9cb9-4a78d8b0e05b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

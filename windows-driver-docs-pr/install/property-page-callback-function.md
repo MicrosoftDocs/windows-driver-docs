@@ -1,7 +1,6 @@
 ---
 title: Property Page Callback Function
 description: Property Page Callback Function
-ms.assetid: 3f4d7247-2a12-4889-9fc0-a28f58046c7b
 keywords:
 - device property pages WDK device installations , callback functions
 - property pages WDK device installations , callback functions

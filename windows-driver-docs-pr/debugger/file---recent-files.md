@@ -1,7 +1,6 @@
 ---
 title: File Recent Files
 description: File Recent Files
-ms.assetid: dd68f4b5-9d50-4d65-8177-2ca039afa8ea
 keywords: ["File Recent Files", "source files and paths, File Recent Files"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

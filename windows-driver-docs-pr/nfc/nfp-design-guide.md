@@ -1,7 +1,6 @@
 ---
 title: Near field proximity design guide
 description: Near field proximity design guide
-ms.assetid: D039E7DE-BE10-4C40-A52C-696BC80DC2F9
 keywords:
 - NFC
 - near field communications

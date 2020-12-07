@@ -1,7 +1,6 @@
 ---
 title: Camera Driver UI Extension Sample
 description: Camera Driver UI Extension Sample
-ms.assetid: 21ddf804-fff5-4cdc-adb5-f85d769ccc1f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

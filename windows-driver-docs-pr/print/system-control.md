@@ -1,7 +1,6 @@
 ---
 title: System Control
 description: System Control
-ms.assetid: 3ac58d53-daa7-4f50-a512-05325b95a17d
 keywords:
 - system-controlled color management WDK print
 - default print color management

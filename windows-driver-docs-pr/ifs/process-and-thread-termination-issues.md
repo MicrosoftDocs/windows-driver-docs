@@ -1,7 +1,6 @@
 ---
 title: Process and Thread Termination Issues
 description: Process and Thread Termination Issues
-ms.assetid: 11b38c60-1bd8-4f1b-a80e-14a93e4ac474
 keywords:
 - security WDK file systems , adding security checks
 - security checks WDK file systems , process and thread terminations

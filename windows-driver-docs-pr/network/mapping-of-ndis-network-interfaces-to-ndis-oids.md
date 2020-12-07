@@ -1,7 +1,6 @@
 ---
 title: Mapping of NDIS Network Interfaces to NDIS OIDs
 description: Mapping of NDIS Network Interfaces to NDIS OIDs
-ms.assetid: 117f94fd-829d-4ad8-be25-a6a90a8d4c50
 keywords:
 - NDIS network interfaces WDK , mapping
 - network interfaces WDK , mapping

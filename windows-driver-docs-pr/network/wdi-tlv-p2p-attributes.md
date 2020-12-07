@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ATTRIBUTES
 description: WDI_TLV_P2P_ATTRIBUTES is a TLV that contains Wi-Fi Direct attributes.
-ms.assetid: 2EC99A30-3D2F-4552-A763-B77E030B5CE5
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ATTRIBUTES Network Drivers Starting with Windows Vista

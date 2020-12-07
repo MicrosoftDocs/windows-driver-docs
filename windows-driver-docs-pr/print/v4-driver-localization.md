@@ -1,7 +1,6 @@
 ---
 title: V4 Printer Driver Localization
 description: Windows 8 has provided standard, localized display strings to support the development of printer extensions and UWP device apps.
-ms.assetid: 5C587AF2-C51E-4728-A214-7FC1F8A6E445
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

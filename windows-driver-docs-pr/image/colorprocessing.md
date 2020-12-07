@@ -1,7 +1,6 @@
 ---
 title: ColorProcessing element
 description: The optional ColorProcessing element specifies the color-processing mode of the input source on the scanner.
-ms.assetid: 10170090-d0d2-44b1-bd0d-3b800669f7cf
 keywords: ["ColorProcessing element Imaging Devices"]
 topic_type:
 - apiref

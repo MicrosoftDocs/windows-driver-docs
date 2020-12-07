@@ -1,7 +1,6 @@
 ---
 title: Binding States of a Protocol Driver
 description: Binding States of a Protocol Driver
-ms.assetid: 15bc6217-e258-4e07-abc8-6c46fd01d85b
 keywords:
 - protocol drivers WDK networking , binding states
 - NDIS protocol drivers WDK , binding states

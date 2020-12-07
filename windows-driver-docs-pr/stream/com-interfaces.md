@@ -1,7 +1,6 @@
 ---
 title: COM Interfaces
 description: The following COM interfaces are defined in headers included in the WDK.Important  Where possible, use of traditional COM provided by the SDK headers is encouraged. For more information, see COM Fundamentals. .
-ms.assetid: 8443D16A-ACE5-4A34-9FB7-CBACA7230116
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

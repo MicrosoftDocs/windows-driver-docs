@@ -1,7 +1,6 @@
 ---
 title: Analog Video Category
 description: Analog Video Category
-ms.assetid: 64564c81-b1e1-482b-ae70-59b229a5e86f
 keywords:
 - stream categories WDK video capture , analog video
 - analog video category WDK video capture

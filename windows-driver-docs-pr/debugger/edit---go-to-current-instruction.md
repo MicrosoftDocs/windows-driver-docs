@@ -1,7 +1,6 @@
 ---
 title: Edit Go to Current Instruction
 description: Edit Go to Current Instruction
-ms.assetid: 7bc57ac1-1de6-4534-836b-132e3b072ae5
 keywords: ["Edit Go to Current Instruction"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

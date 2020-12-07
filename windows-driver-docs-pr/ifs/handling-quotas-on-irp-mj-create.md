@@ -1,7 +1,6 @@
 ---
 title: Handling Quotas on IRP_MJ_CREATE
 description: Handling Quotas on IRP_MJ_CREATE
-ms.assetid: 71cf5e78-c87a-48fe-ba0b-f5efe8166525
 keywords:
 - IRP_MJ_CREATE
 - quotas WDK file systems

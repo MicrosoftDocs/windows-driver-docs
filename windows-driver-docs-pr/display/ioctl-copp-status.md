@@ -1,7 +1,6 @@
 ---
 title: IOCTL\_COPP\_Status control code
 description: Returns status on a protected video session.
-ms.assetid: 58c841f6-0bc8-4c21-9c0e-fd409817ec91
 keywords: ["IOCTL_COPP_Status control code Display Devices"]
 topic_type:
 - apiref

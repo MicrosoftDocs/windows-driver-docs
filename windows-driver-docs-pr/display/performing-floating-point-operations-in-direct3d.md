@@ -1,7 +1,6 @@
 ---
 title: Performing Floating-point Operations in Direct3D
 description: Performing Floating-point Operations in Direct3D
-ms.assetid: 2da736cf-d062-4c5a-b9f5-6b35f199660f
 keywords:
 - floating-point operations WDK Direct3D
 - Direct3D WDK Windows 2000 display , floating-point operations

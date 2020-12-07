@@ -1,7 +1,6 @@
 ---
 title: Publishing NFP messages
 description: Publishing NFP messages
-ms.assetid: 45BE3620-ADF4-413D-90B3-586FCEB5F606
 keywords:
 - NFC
 - near field communications

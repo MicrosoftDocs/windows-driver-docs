@@ -1,7 +1,6 @@
 ---
 title: Monitor Profiles
 description: Monitor Profiles
-ms.assetid: aede7ada-3826-40a4-8b37-18ae242eea77
 keywords:
 - display drivers WDK Windows 2000 , color management
 - color management WDK Windows 2000 display

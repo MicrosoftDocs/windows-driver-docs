@@ -1,7 +1,6 @@
 ---
 title: Compiling an NDIS 6.1 driver
 description: This section explains how to compile an NDIS 6.1 driver
-ms.assetid: 9606a91c-c1cb-4d93-b648-3829d1b51954
 keywords:
 - NDIS WDK , compile flags
 - compile flags WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Properties of Device Objects
 description: Properties of Device Objects
-ms.assetid: 6cd31263-e725-4a62-bec9-f40feb0b66cc
 keywords: ["device objects WDK kernel , properties", "properties WDK device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

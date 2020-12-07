@@ -1,7 +1,6 @@
 ---
 title: Configuring the device
 description: To configure the device, you should have a 3D printer device in the Devices and Printers Control Panel and can print to G-Code using the Microsoft Slicer.
-ms.assetid: 897081C3-47A4-46A0-9A45-A49E4569216D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

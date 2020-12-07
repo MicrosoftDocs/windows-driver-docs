@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PAGE\_HEIGHT
 description: The WIA\_DPS\_PAGE\_HEIGHT property contains the height, in thousandths of an inch (.001), of the currently selected page. The WIA minidriver creates and maintains this property.
-ms.assetid: 93970d9a-96fe-4cf9-98c6-4ddcfd425214
 keywords: ["WIA_DPS_PAGE_HEIGHT Imaging Devices"]
 topic_type:
 - apiref

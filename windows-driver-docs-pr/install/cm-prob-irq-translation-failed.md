@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_IRQ_TRANSLATION_FAILED
 description: CM_PROB_IRQ_TRANSLATION_FAILED
-ms.assetid: fafd40d5-43bf-4243-907a-df523e1b501e
 keywords:
 - CM_PROB_IRQ_TRANSLATION_FAILED
 ms.date: 04/20/2017

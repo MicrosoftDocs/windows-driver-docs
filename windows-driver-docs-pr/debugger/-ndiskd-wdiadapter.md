@@ -1,7 +1,6 @@
 ---
 title: ndiskd.wdiadapter
 description: The ndiskd.wdiadapter extension displays information about a WDIWiFi CAdapter structure. If you run this extension with no parameters, ndiskd will display a list of all WDIWiFi CAdapter structures.
-ms.assetid: 1AC069E8-CF87-459B-9C56-DDC1A6F765A8
 keywords: ["ndiskd.wdiadapter Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:

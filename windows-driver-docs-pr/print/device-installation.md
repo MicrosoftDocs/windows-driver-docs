@@ -1,7 +1,6 @@
 ---
 title: Print device installation
 description: Provides information about initial installation of your port-connected print device, and potential system states when your device is connected for the first time.
-ms.assetid: 47bbe4cd-bcbc-42d5-9513-9ea659c123dc
 keywords:
 - hot-pluggable bus WDK printer
 - printer installation checks WDK

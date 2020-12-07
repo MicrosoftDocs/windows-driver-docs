@@ -1,7 +1,6 @@
 ---
 title: Relative orientation sensor data fields
 description: This topic provides information about the data fields that are specific to the relative orientation sensor.
-ms.assetid: A48B75DD-5424-48CC-AC8B-251874414FCE
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

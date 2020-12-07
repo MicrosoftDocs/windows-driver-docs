@@ -4,7 +4,6 @@ description: The AddString method adds a new response of type BIDI\_STRING to th
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: ACBE70E7-5A2B-4472-B1A3-40722D849119
 keywords: ["AddString method Print Devices", "AddString method Print Devices , IPrinterBidiSchemaResponses interface", "IPrinterBidiSchemaResponses interface Print Devices , AddString method"]
 topic_type:
 - apiref

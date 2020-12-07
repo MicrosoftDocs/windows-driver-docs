@@ -1,7 +1,6 @@
 ---
 title: Miniport Driver Halt Handler
 description: Miniport Driver Halt Handler
-ms.assetid: 63b0b25e-f52f-4486-a57d-448985207fc8
 keywords:
 - MiniportHaltEx
 - halt handler WDK NDIS

@@ -1,7 +1,6 @@
 ---
 title: KS Minidriver Architecture
 description: KS minidriver architecture
-ms.assetid: a9c17040-72a8-4290-831b-7fb46b00f532
 keywords:
 - kernel streaming WDK , architecture
 - KS WDK , architecture

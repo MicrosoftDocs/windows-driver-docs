@@ -1,7 +1,6 @@
 ---
 title: Overriding Monitor EDIDs with an INF
 description: With an INF file you can override the Extended Display Identification Data (EDID) of any monitor.
-ms.assetid: AA7DC29B-54D5-461A-8252-600D84F0F581
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

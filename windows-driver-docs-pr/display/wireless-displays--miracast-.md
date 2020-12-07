@@ -1,7 +1,6 @@
 ---
 title: Wireless displays (Miracast)
 description: Wireless (Miracast) displays can optionally be supported by Windows Display Driver Model (WDDM) 1.3 and later drivers. This capability is new starting with Windows 8.1.
-ms.assetid: 1645E14A-EC4A-4EB8-9AFA-6DF0466D2B1A
 keywords:
 - Wireless displays
 - Miracast

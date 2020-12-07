@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_NULL
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_NULL identifier represents a special base-data-type identifier that indicates that a device property exists. However, that the property has no value that is associated with the property.
-ms.assetid: 0308206d-5664-4288-a761-ca72e533264c
 keywords: ["DEVPROP_TYPE_NULL Device and Driver Installation"]
 topic_type:
 - apiref

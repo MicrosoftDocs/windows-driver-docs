@@ -1,7 +1,6 @@
 ---
 title: State Transitions for PnP Devices
 description: State Transitions for PnP Devices
-ms.assetid: 31969515-899b-407e-ab73-f6f7f36adb85
 keywords: ["PnP WDK kernel , state transitions", "Plug and Play WDK kernel , state transitions", "state transitions WDK PnP", "device states WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

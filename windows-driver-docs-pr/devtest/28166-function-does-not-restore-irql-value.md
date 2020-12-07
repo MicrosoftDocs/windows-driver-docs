@@ -1,7 +1,6 @@
 ---
 title: C28166
 description: Warning C28166 The function does not restore the IRQL to the value that was current at function entry and is required to do so.
-ms.assetid: 5835b2e7-0a66-474c-ba1b-40618403075d
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

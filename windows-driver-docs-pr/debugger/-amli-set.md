@@ -1,7 +1,6 @@
 ---
 title: amli set
 description: The amli set extension sets or displays the AMLI Debugger options.
-ms.assetid: 521fa305-8073-4d94-bc28-fdb35cbc2acd
 keywords: ["amli set Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

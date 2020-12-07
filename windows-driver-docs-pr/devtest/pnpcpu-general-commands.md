@@ -1,7 +1,6 @@
 ---
 title: PNPCPU General Commands
 description: PNPCPU General Commands
-ms.assetid: 8b98149c-6c5a-4c1f-b988-dce86bdc3e29
 keywords:
 - PNPCPU WDK , commands
 ms.date: 04/20/2017

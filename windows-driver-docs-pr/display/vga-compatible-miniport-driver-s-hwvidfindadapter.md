@@ -1,7 +1,6 @@
 ---
 title: VGA-Compatible Miniport Driver's HwVidFindAdapter
 description: VGA-Compatible Miniport Driver's HwVidFindAdapter
-ms.assetid: 4538e95f-e84d-434c-a674-e1d1d4e9e5a0
 keywords:
 - video miniport drivers WDK Windows 2000 , VGA, HwVidFindAdapter
 - VGA WDK video miniport , HwVidFindAdapter

@@ -1,7 +1,6 @@
 ---
 title: Debugging Spooler Components
 description: Debugging Spooler Components
-ms.assetid: ed4dcd29-105c-4562-9741-858cb9542449
 keywords:
 - debugging spooler components WDK printer
 - spooler component debugging WDK print

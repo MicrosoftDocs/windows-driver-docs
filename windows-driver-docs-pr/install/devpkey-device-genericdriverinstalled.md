@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_GenericDriverInstalled
 description: DEVPKEY_Device_GenericDriverInstalled
-ms.assetid: 7809bed7-af11-42b0-bcc8-9492c47d92ab
 keywords: ["DEVPKEY_Device_GenericDriverInstalled Device and Driver Installation"]
 topic_type:
 - apiref

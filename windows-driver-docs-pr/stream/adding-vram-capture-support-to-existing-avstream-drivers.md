@@ -1,7 +1,6 @@
 ---
 title: Adding VRAM Capture Support to Existing AVStream Drivers
 description: Adding VRAM capture support to existing AVStream drivers
-ms.assetid: 10736533-3873-4f1d-91c5-d2e55163daaa
 keywords:
 - VRAM capture WDK AVStream , existing driver support
 ms.date: 06/15/2020

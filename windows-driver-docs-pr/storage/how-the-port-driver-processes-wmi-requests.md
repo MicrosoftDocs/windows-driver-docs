@@ -1,7 +1,6 @@
 ---
 title: How the Port Driver Processes WMI Requests
 description: How the Port Driver Processes WMI Requests
-ms.assetid: 0b56d382-3c4b-4192-be49-3bad50b0a0ed
 keywords:
 - WMI SRBs WDK storage , WMI request processing
 - callback routines WDK WMI SRBs

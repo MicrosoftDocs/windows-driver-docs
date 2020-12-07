@@ -1,7 +1,6 @@
 ---
 title: ACPI Extensions (Acpikd.dll and Kdexts.dll)
 description: ACPI Extensions (Acpikd.dll and Kdexts.dll)
-ms.assetid: 1b1df290-b65b-4066-baf5-0f283990467f
 keywords: ["ACPI debugging, extensions (acpikd.dll and kdexts.dll)", "acpikd.dll (ACPI extensions)", "extensions, ACPI"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

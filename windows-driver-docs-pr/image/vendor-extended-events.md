@@ -1,7 +1,6 @@
 ---
 title: Vendor-Extended Events
 description: Vendor-Extended Events
-ms.assetid: 00131b75-3b15-46f8-b4da-1e1593afb3c0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

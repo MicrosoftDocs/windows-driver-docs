@@ -1,7 +1,6 @@
 ---
 title: GetScannerElementsRequest element
 description: The required GetScannerElementsRequest element enables a client to request information about the scanner.
-ms.assetid: 9b5baed9-0950-4fbd-9e5b-4ad58dedb87e
 keywords: ["GetScannerElementsRequest element Imaging Devices"]
 topic_type:
 - apiref

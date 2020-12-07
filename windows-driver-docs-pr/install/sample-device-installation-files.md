@@ -1,7 +1,6 @@
 ---
 title: Sample Device Installation Files
 description: Sample Device Installation Files
-ms.assetid: bdb463a0-81f9-4e44-a17b-564fd68e9457
 keywords:
 - Device setup WDK device installations , files
 - device installations WDK , files

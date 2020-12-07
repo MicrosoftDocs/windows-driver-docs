@@ -1,7 +1,6 @@
 ---
 title: AV/C Streaming Constants
 description: AV/C Streaming Constants
-ms.assetid: 1c72796b-04b8-4c5b-bfc0-6a5a2f4ceebc
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

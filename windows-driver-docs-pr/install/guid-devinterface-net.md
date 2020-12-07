@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_NET
 description: GUID_DEVINTERFACE_NET
-ms.assetid: e1cdda95-1915-4bbc-86e9-dff99b7fcc7b
 keywords: ["GUID_DEVINTERFACE_NET Device and Driver Installation"]
 topic_type:
 - apiref

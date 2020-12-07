@@ -1,7 +1,6 @@
 ---
 title: AgeStore
 description: AgeStore
-ms.assetid: 000b0f14-04e9-49fd-825c-8e1fd499494f
 keywords: ["AgeStore", "AgeStore, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

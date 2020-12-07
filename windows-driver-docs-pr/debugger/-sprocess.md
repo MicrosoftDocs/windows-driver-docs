@@ -1,7 +1,6 @@
 ---
 title: sprocess
 description: The sprocess extension displays information about the specified session process, or about all processes in the specified session.
-ms.assetid: 03c69f3c-501a-44e4-98e0-bf851ca6d24e
 keywords: ["sprocess Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

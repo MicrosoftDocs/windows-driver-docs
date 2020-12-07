@@ -1,7 +1,6 @@
 ---
 title: WHEA Changes for Windows 7
 description: WHEA Changes for Windows 7
-ms.assetid: d92c2be0-732b-4fcd-b517-5cb9eccf962b
 keywords:
 - Windows Hardware Error Architecture WDK , Windows 7 changes
 - WHEA WDK , Windows 7 changes

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_WIDENESS
 description: The KSPROPERTY\_AUDIO\_WIDENESS property specifies the wideness (apparent width) of the stereo image.
-ms.assetid: 56b18337-c29b-437f-b52f-8d804d857729
 keywords: ["KSPROPERTY_AUDIO_WIDENESS Audio Devices"]
 topic_type:
 - apiref

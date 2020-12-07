@@ -1,7 +1,6 @@
 ---
 title: OID_CO_DELETE_PVC
 description: This topic describes the OID_CO_DELETE_PVC object identifier (OID).
-ms.assetid: 02da08d0-9d08-4a91-b851-50e3c3b065d6
 keywords:
 - OID_CO_DELETE_PVC
 ms.date: 11/03/2017

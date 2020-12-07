@@ -1,7 +1,6 @@
 ---
 title: Reporting Capabilities for Shader Versions
 description: Reporting Capabilities for Shader Versions
-ms.assetid: a82ac539-1386-417a-a64f-0a7ddc6d28d9
 keywords:
 - shaders WDK DirectX 9.0
 - vertex shaders WDK DirectX 9.0

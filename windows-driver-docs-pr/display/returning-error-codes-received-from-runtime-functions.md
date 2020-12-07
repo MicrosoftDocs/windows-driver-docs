@@ -1,7 +1,6 @@
 ---
 title: Returning Error Codes Received from Runtime Functions
 description: Returning Error Codes Received from Runtime Functions
-ms.assetid: 4a2384e8-407f-4248-8b31-7c4e836b15dc
 keywords:
 - user-mode display drivers WDK Windows Vista , runtime function error codes
 - runtime function error codes WDK display

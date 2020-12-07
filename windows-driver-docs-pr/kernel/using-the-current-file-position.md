@@ -1,7 +1,6 @@
 ---
 title: Using the Current File Position
 description: Using the Current File Position
-ms.assetid: d342d973-8fff-4d00-a275-114012c17727
 keywords: ["files WDK kernel", "file objects WDK kernel", "objects WDK file objects", "file handles WDK kernel", "handle to file WDK kernel", "current file positions WDK kernel", "file positions WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

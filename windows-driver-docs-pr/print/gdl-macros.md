@@ -1,7 +1,6 @@
 ---
 title: GDL Macros
 description: GDL Macros
-ms.assetid: 4ac8d76e-b52a-4987-920c-38d375559777
 keywords:
 - GDL WDK , macros
 - macros WDK GDL

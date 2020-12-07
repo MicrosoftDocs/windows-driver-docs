@@ -1,7 +1,6 @@
 ---
 title: Data Indices
 description: Data Indices
-ms.assetid: 84577544-515a-4fdc-86e5-518182c6c461
 keywords:
 - data index WDK HID
 - index WDK HID data

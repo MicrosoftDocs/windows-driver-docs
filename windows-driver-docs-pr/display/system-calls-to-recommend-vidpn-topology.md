@@ -1,7 +1,6 @@
 ---
 title: System Calls to Recommend VidPN Topology
 description: System Calls to Recommend VidPN Topology
-ms.assetid: cc23be93-be31-4069-960c-268a8b151063
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

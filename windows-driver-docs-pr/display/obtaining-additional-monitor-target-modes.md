@@ -1,7 +1,6 @@
 ---
 title: Obtaining Additional Monitor Target Modes
 description: Obtaining Additional Monitor Target Modes
-ms.assetid: fc0e2d43-8fc2-4757-ba77-f72a01e04343
 keywords:
 - monitor target modes WDK display
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Filter, Pin, and Node Properties
 description: Filter, Pin, and Node Properties
-ms.assetid: e0d52e97-459f-4095-9cf5-1474117ce66a
 keywords:
 - audio properties WDK , filters
 - WDM audio properties WDK , filters

@@ -1,7 +1,6 @@
 ---
 title: Filtering data
 description: In order to optimize data throughput and battery life, your sensor device must apply filter criteria to the data-update events so that they are only raised when needed.
-ms.assetid: EDABA09D-2C46-4546-9429-CF6DEFBF69C4
 keywords:
 - change sensitivity
 - sensor change sensitivity

@@ -1,7 +1,6 @@
 ---
 title: Registry Trees and Keys for Devices and Drivers
 description: Registry Trees and Keys for Devices and Drivers
-ms.assetid: 8f6ac7c1-f31a-4d14-8ba7-b432615db073
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

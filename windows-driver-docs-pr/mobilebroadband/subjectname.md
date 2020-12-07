@@ -1,7 +1,6 @@
 ---
 title: SubjectName
 description: SubjectName
-ms.assetid: 1aa9c826-c95a-4e89-931f-4e296122edc3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Changes to Printer Forms in Windows Vista
 description: Changes to Printer Forms in Windows Vista
-ms.assetid: 6e970cbd-1c7f-4c48-8d05-a29f922a3f33
 keywords:
 - printer forms WDK
 - forms WDK printer

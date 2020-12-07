@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY
 description: The KSPROPERTY\_CAMERACONTROL\_AUTO\_EXPOSURE\_PRIORITY property specifies whether the device can dynamically vary the frame rate.
-ms.assetid: 0e20a4ee-b672-4c9a-9003-c2defd378e7c
 keywords: ["KSPROPERTY_CAMERACONTROL_AUTO_EXPOSURE_PRIORITY Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: I/O Resource Usage Reduction
 description: I/O Resource Usage Reduction
-ms.assetid: ad83856c-ad1a-42fc-97f0-7881f745174d
 keywords:
 - I/O resource usage reduction WDK
 - resource usage WDK

@@ -1,7 +1,6 @@
 ---
 title: Accessing Registry Keys Safely
 description: Accessing Registry Keys Safely
-ms.assetid: 81203790-66CB-42ee-82F8-2F0FFF04DF10
 keywords:
 - registry WDK device installations , accessing registry keys safely
 - accessing registry keys safely WDK device installations

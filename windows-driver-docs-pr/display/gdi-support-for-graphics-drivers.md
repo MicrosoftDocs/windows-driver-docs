@@ -1,7 +1,6 @@
 ---
 title: GDI Support for Graphics Drivers
 description: GDI Support for Graphics Drivers
-ms.assetid: ef42cda0-106f-4c1b-babc-29a1070e2a2f
 keywords:
 - GDI WDK Windows 2000 display , reference
 - graphics drivers WDK Windows 2000 display , reference

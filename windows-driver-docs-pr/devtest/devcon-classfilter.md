@@ -1,7 +1,6 @@
 ---
 title: DevCon ClassFilter
 description: Adds, deletes, displays, and changes the order of filter drivers for a device setup class. Valid only on the local computer.
-ms.assetid: c04200c7-2897-46bd-ac5f-f838efef79d9
 keywords:
 - DevCon ClassFilter Driver Development Tools
 topic_type:

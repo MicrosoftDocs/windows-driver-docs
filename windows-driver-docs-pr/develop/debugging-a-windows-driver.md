@@ -1,6 +1,5 @@
 ---
 title: Debugging a Windows driver
-ms.assetid: d2d168fe-8be2-4a3d-bc29-4ab3a306296e
 description: Describes debugging techniques you can use with a Windows driver, in particular the Inflight Trace Recorder.
 ms.date: 04/28/2020
 ms.localizationpriority: medium

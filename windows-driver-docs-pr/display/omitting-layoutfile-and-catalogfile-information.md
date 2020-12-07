@@ -1,7 +1,6 @@
 ---
 title: Omitting LayoutFile and CatalogFile Information
 description: Omitting LayoutFile and CatalogFile Information
-ms.assetid: e34302b9-0fb4-462b-9fa6-5ae51e83cd8b
 keywords:
 - INF files WDK display , LayoutFile directive
 - INF files WDK display , CatalogFile directive

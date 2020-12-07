@@ -1,7 +1,6 @@
 ---
 title: Customizing Other Printer Interface Operations
 description: Customizing Other Printer Interface Operations
-ms.assetid: ae59d2e7-9049-432d-b519-9e7c88af8d48
 keywords:
 - user interface plug-ins WDK print , customization methods
 - UI plug-ins WDK print , customization methods

@@ -1,7 +1,6 @@
 ---
 title: I2C transport
 description: I2C transport
-ms.assetid: A483FAA6-9FA6-4C91-B8D4-021DDBB9B869
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

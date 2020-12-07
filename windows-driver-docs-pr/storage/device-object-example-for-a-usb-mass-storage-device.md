@@ -1,7 +1,6 @@
 ---
 title: Device Object Example for a USB Mass Storage Device
 description: Device Object Example for a USB Mass Storage Device
-ms.assetid: 402b99f2-a253-4a43-9c73-d3d2fd066c23
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage

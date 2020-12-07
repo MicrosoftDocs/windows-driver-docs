@@ -1,7 +1,6 @@
 ---
 title: Creating a Catalog File for a Non-PnP Driver Package
 description: Creating a Catalog File for a Non-PnP Driver Package
-ms.assetid: b40a6f42-53a8-468f-abf1-335c5ead3cbd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

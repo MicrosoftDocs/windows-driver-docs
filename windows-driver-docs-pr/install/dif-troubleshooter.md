@@ -1,7 +1,6 @@
 ---
 title: DIF_TROUBLESHOOTER
 description: DIF_TROUBLESHOOTER
-ms.assetid: e8477d4d-cc81-48aa-9d51-9f37c3cce0cb
 keywords: ["DIF_TROUBLESHOOTER Device and Driver Installation"]
 topic_type:
 - apiref

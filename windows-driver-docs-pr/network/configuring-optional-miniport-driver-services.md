@@ -1,7 +1,6 @@
 ---
 title: Configuring Optional Miniport Driver Services
 description: Configuring Optional Miniport Driver Services
-ms.assetid: 42fe3863-ded0-4a02-9216-86fa4c167a49
 keywords:
 - miniport drivers WDK networking , optional services
 - NDIS miniport drivers WDK , optional services

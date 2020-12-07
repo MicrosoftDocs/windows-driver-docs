@@ -1,7 +1,6 @@
 ---
 title: Completing I/O Requests in UMDF
 description: Completing I/O Requests in UMDF
-ms.assetid: 3f8c7030-7c5d-4f65-8001-592af0b1d2de
 keywords:
 - I/O requests WDK UMDF , completing
 - request processing WDK UMDF , completing requests

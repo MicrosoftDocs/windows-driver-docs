@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE
 description: The KSPROPERTY\_SYSAUDIO\_CREATE\_VIRTUAL\_SOURCE property creates a new virtual source.
-ms.assetid: 771c4084-8007-4280-8451-946a26182740
 keywords: ["KSPROPERTY_SYSAUDIO_CREATE_VIRTUAL_SOURCE Audio Devices"]
 topic_type:
 - apiref

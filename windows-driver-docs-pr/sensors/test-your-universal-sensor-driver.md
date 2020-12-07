@@ -1,7 +1,6 @@
 ---
 title: Test your universal sensor driver
 description: This topic provides suggestions for how to test your universal sensor driver.
-ms.assetid: 46F50544-B130-4690-8047-6FBB6DD4749F
 ms.date: 11/08/2018
 ms.localizationpriority: medium
 ---

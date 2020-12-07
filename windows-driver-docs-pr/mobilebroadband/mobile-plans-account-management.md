@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans account management
 description: This topic describes the Windows account management experience with Mobile Plans.
-ms.assetid: E97AD441-86F7-439C-9800-7DD93AAC0545
 keywords:
 - Windows Mobile Plans account management, Mobile Plans mobile operators
 ms.date: 03/15/2019

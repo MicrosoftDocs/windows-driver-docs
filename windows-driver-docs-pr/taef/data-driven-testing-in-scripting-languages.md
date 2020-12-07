@@ -1,7 +1,6 @@
 ---
 title: Data-driven Testing in Scripting Languages
 description: Data-driven Testing in Scripting Languages
-ms.assetid: CF60C594-8877-4f09-AF82-9F4CA27123C7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

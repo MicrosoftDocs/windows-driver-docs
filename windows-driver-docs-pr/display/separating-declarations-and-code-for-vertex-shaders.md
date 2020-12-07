@@ -1,7 +1,6 @@
 ---
 title: Separating Declarations and Code for Vertex Shaders
 description: Separating Declarations and Code for Vertex Shaders
-ms.assetid: 6da26a8f-553b-4995-9dda-66a7fd6d478b
 keywords:
 - vertex shader declarations WDK DirectX 9.0 , separating declarations and code
 - shader declarations WDK DirectX 9.0 , separating declarations and code

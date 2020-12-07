@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_TEXT
 description: KSCATEGORY_TEXT
-ms.assetid: 05a027ee-b342-4200-b753-33942a77e455
 keywords: ["KSCATEGORY_TEXT Device and Driver Installation"]
 topic_type:
 - apiref

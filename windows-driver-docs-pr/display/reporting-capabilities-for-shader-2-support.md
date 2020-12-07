@@ -1,7 +1,6 @@
 ---
 title: Reporting Capabilities for Shader 2 Support
 description: Reporting Capabilities for Shader 2 Support
-ms.assetid: 27397e32-cdc0-47b5-b9b5-a4b22ed971f3
 keywords:
 - shaders WDK DirectX 9.0 , shader 2.0 support
 - vertex shaders WDK DirectX 9.0 , shader 2.0 support

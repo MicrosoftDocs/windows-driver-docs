@@ -1,7 +1,6 @@
 ---
 title: Submit Data Buffer
 description: Submit Data Buffer
-ms.assetid: 151f5139-3706-4255-9d71-d8e6e3416b7c
 keywords:
 - Avcstrm.sys streaming filter driver WDK , data buffer submissions
 - data buffers WDK AV/C streaming

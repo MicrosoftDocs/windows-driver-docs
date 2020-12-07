@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS
 description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS is a TLV that contains association request parameters.
-ms.assetid: DC3439A2-2221-4489-AB38-3752624EA4B2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INCOMING_ASSOCIATION_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista

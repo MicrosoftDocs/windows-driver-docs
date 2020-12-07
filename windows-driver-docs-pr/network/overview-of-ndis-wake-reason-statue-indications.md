@@ -1,7 +1,6 @@
 ---
 title: Overview of NDIS Wake Reason Status Indications
 description: Overview of NDIS Wake Reason Status Indications
-ms.assetid: 94B54281-7A7E-4DBA-85AE-313EEF09E733
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

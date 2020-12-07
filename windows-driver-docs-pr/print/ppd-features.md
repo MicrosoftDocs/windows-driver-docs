@@ -1,7 +1,6 @@
 ---
 title: PPD Features
 description: PPD Features
-ms.assetid: ee78031a-2138-4d0c-ac8a-5328aa54d904
 keywords:
 - PPD files WDK Pscript
 - non-PPD features WDK Pscript

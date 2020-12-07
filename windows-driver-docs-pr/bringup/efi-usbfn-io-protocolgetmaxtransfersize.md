@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetMaxTransferSize
 description: EFI_USBFN_IO_PROTOCOL.GetMaxTransferSize
-ms.assetid: 61160708-029b-4691-87fe-22d06424220d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

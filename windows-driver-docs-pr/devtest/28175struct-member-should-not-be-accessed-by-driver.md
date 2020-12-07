@@ -1,7 +1,6 @@
 ---
 title: C28175
 description: Warning C28175 The member of struct should not be accessed by a driver.
-ms.assetid: 259a90d7-29ef-4a27-a921-8fff93b325bd
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

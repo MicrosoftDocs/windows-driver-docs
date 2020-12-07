@@ -1,7 +1,6 @@
 ---
 title: Miscellaneous GDL Directives
 description: Miscellaneous GDL Directives
-ms.assetid: 8a1c4bdf-7a84-44b5-8dad-4518edc2b560
 keywords:
 - directives WDK GDL , miscellaneous directives
 - source files WDK GDL , miscellaneous directives

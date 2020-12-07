@@ -1,7 +1,6 @@
 ---
 title: Offloading IPsec Tasks in the Send Path
 description: Offloading IPsec Tasks in the Send Path
-ms.assetid: b95878e0-0aee-43cb-a64c-b5d8e07cb1b4
 keywords:
 - ESP-protected packets WDK IPsec offload , send path offload
 - AH-protected packets WDK IPsec offload , send path offload

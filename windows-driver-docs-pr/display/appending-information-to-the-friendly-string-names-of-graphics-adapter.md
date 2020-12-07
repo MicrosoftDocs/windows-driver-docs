@@ -1,7 +1,6 @@
 ---
 title: Append Info to Graphics Adapter Friendly String Names
 description: You must append information to the string names of graphics adapters.
-ms.assetid: 660104ba-b082-407b-afdc-3e02f4c3d087
 keywords:
 - INF files WDK display , friendly string names
 - friendly string names WDK display

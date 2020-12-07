@@ -1,7 +1,6 @@
 ---
 title: Survey of Verification Tools
 description: Survey of Verification Tools
-ms.assetid: d36e041f-efa5-450f-b4de-c84c4880e44d
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK

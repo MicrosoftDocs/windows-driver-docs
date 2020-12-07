@@ -1,7 +1,6 @@
 ---
 title: Vendor-Extended Features
 description: Vendor-Extended Features
-ms.assetid: 8063622e-efc4-4940-893f-2916bf297d12
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

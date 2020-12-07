@@ -1,7 +1,6 @@
 ---
 title: SRB\_UNKNOWN\_STREAM\_COMMAND
 description: SRB\_UNKNOWN\_STREAM\_COMMAND
-ms.assetid: 968a52ab-478e-4efe-ae8a-438ea3f7b71d
 keywords: ["SRB_UNKNOWN_STREAM_COMMAND Streaming Media Devices"]
 topic_type:
 - apiref

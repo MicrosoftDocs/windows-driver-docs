@@ -1,7 +1,6 @@
 ---
 title: Page Event Callbacks
 description: Page Event Callbacks
-ms.assetid: 891f62ec-d009-42c8-8143-73bfe737a946
 keywords:
 - callback functions WDK CPSUI
 - Common Property Sheet User Interface WDK print , callbacks

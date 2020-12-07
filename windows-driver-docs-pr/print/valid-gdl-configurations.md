@@ -1,7 +1,6 @@
 ---
 title: Valid GDL Configurations
 description: Valid GDL Configurations
-ms.assetid: 68dbe7f7-4f6d-46e5-b2f1-27b123c4bedb
 keywords:
 - GDL WDK , configurations
 - parser WDK GDL , validating configurations

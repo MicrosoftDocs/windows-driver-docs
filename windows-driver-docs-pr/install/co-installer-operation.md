@@ -1,7 +1,6 @@
 ---
 title: Co-installer Operation
 description: Co-installer Operation
-ms.assetid: a7f52125-b435-4963-85dc-712700ba9fe9
 keywords:
 - co-installers WDK device installations , how it works
 - co-installers WDK device installations , examples

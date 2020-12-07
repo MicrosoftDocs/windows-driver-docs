@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEODECODER\_VCR\_TIMING
 description: The KSPROPERTY\_VIDEODECODER\_VCR\_TIMING property controls whether the VCR is expecting video from a tape source or a broadcast source. This property is optional.
-ms.assetid: 66d194e4-df9e-4f8a-9767-414311c205da
 keywords: ["KSPROPERTY_VIDEODECODER_VCR_TIMING Streaming Media Devices"]
 topic_type:
 - apiref

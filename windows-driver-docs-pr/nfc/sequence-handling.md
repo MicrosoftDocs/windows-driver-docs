@@ -1,7 +1,6 @@
 ---
 title: NFC CX sequence handling
 description: Information about supporting non-standard NCI extensions by registering specific driver sequences exposed by the NFC CX.
-ms.assetid: D0BE9827-2A15-4AA5-ADB9-80071ED37583
 keywords:
 - NFC
 - near field communications

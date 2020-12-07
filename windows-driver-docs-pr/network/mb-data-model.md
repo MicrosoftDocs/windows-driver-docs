@@ -1,7 +1,6 @@
 ---
 title: MB Data Model
 description: MB Data Model
-ms.assetid: 922b6b55-c332-4721-bbd1-571b0e154df3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Properties for All WIA Minidrivers
 description: Properties for All WIA Minidrivers
-ms.assetid: ba85dbbd-2333-4f4f-b12a-84985773eef6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

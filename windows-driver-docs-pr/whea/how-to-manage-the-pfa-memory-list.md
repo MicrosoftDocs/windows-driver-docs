@@ -1,7 +1,6 @@
 ---
 title: How to Manage the PFA Memory List
 description: How to Manage the PFA Memory List
-ms.assetid: 28463f91-275b-4ad4-af64-59bed7fd3806
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

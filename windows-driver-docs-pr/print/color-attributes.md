@@ -1,7 +1,6 @@
 ---
 title: Color Attributes
 description: Color Attributes
-ms.assetid: c8de0186-9cf5-43e5-81e7-33351a34c13c
 keywords:
 - color attributes WDK Unidrv
 - general printer attributes WDK Unidrv , color

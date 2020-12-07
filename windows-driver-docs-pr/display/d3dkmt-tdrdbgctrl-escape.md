@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_TDRDBGCTRL\_ESCAPE structure
 description: Learn about the D3DKMT\_TDRDBGCTRL\_ESCAPE structure, which is reserved for system use. Do not use in your driver.
-ms.assetid: dcb558ed-8072-4454-8aea-d966a65b5d63
 keywords: ["D3DKMT_TDRDBGCTRL_ESCAPE structure Display Devices"]
 topic_type:
 - apiref

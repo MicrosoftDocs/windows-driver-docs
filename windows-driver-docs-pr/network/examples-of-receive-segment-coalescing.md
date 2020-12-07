@@ -1,7 +1,6 @@
 ---
 title: Examples of Receive Segment Coalescing
 description: This section illustrates the coalescing algorithm by using examples of segments that are received in order and processed in a single deferred procedure call (DPC).
-ms.assetid: BC4C3216-683B-4E86-B2DF-F75FFCA7DACC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

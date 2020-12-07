@@ -1,7 +1,6 @@
 ---
 title: Saving Energy with VSync Control
 description: Saving Energy with VSync Control
-ms.assetid: d7ee7461-0d2a-4103-9225-57ca10a75a7a
 keywords:
 - display driver model WDK Windows Vista , saving energy
 - Windows Vista display driver model WDK , saving energy

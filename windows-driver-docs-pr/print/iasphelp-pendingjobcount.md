@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e0d00abd-0b2a-403c-a7b2-f1f2587b977f
 keywords: ["get_PendingJobCount method Print Devices", "get_PendingJobCount method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_PendingJobCount method"]
 topic_type:
 - apiref

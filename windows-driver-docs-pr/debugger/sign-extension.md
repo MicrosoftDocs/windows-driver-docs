@@ -1,7 +1,6 @@
 ---
 title: Sign Extension
 description: Sign Extension
-ms.assetid: 58e84d09-ab70-4cb2-b12f-4addb34f69d6
 keywords: ["sign extension of numbers", "sign extension of registers", "MASM expressions, sign extension", "registers, sign extension"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

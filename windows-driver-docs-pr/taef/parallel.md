@@ -1,7 +1,6 @@
 ---
 title: Parallel
 description: Parallel
-ms.assetid: E2AF7B3A-B614-4fe1-9CFB-0860F68E895C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

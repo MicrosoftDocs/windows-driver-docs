@@ -1,7 +1,6 @@
 ---
 title: Debugging the Service Application Automatically
 description: Debugging the Service Application Automatically
-ms.assetid: 3168b5c1-30fa-4ff5-b871-736dcdeb8f31
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

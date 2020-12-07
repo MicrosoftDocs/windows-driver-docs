@@ -1,7 +1,6 @@
 ---
 title: NumberOfLines element
 description: The required NumberOfLines element describes the exact height, in pixels, of the final output image.
-ms.assetid: 9f7f96d4-fd88-4d14-b000-7abefe96775f
 keywords: ["NumberOfLines element Imaging Devices"]
 topic_type:
 - apiref

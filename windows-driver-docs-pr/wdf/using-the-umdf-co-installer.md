@@ -1,7 +1,6 @@
 ---
 title: Using the UMDF Co-installer
 description: Using the UMDF Co-installer
-ms.assetid: e5ec2122-1602-487b-baad-4a3d9e47cf58
 keywords:
 - UMDF coinstallers WDK
 - coinstallers WDK UMDF

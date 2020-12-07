@@ -4,7 +4,6 @@ description: The IPrinterScriptUsbJobContext interface is passed as a parameter 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 236F6B00-39D8-4084-BAE0-C349AD550040
 keywords: ["IPrinterScriptUsbJobContext interface Print Devices", "IPrinterScriptUsbJobContext interface Print Devices , described"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Error Records
 description: Error Records
-ms.assetid: 080da29a-b5cb-45a5-848d-048d9612ee2a
 keywords:
 - Windows Hardware Error Architecture WDK , error records
 - WHEA WDK , error records

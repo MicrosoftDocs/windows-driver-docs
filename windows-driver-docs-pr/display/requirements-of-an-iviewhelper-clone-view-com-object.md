@@ -1,7 +1,6 @@
 ---
 title: Requirements of an IViewHelper Clone-View COM Object
 description: Requirements of an IViewHelper Clone-View COM Object
-ms.assetid: ef599874-64c5-480e-a7bc-666ababd4d08
 keywords:
 - TMM WDK display , IViewHelper requirements
 - monitor configurations WDK display , IViewHelper requirements

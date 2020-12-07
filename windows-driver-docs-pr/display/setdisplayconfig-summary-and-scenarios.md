@@ -1,7 +1,6 @@
 ---
 title: SetDisplayConfig Summary and Scenarios
 description: SetDisplayConfig Summary and Scenarios
-ms.assetid: f9bce5d4-b511-475c-8e0a-eb60765a3326
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, SetDisplayConfig
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs, SetDisplayConfig

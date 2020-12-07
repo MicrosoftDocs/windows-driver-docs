@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_VIDEOSTABILIZATION
 description: This extended property control is used to control digital video stabilization in driver\\MFT0.
-ms.assetid: 60F7D1B2-02F1-459A-8F6A-FC61D65705E1
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_VIDEOSTABILIZATION Streaming Media Devices"]
 topic_type:
 - apiref

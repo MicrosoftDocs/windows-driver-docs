@@ -1,7 +1,6 @@
 ---
 title: Calling a PCMCIA_INTERFACE_STANDARD Interface Routine
 description: Calling a PCMCIA_INTERFACE_STANDARD Interface Routine
-ms.assetid: 468d2037-a7d5-4851-9f41-d1e6c9006750
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

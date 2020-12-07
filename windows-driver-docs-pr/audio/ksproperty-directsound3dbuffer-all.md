@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_ALL
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_ALL property is used to get or set all the DirectSound 3D-buffer properties for the specified buffer.
-ms.assetid: 7c62a0f2-080b-42cd-a30e-7ceb5edad894
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_ALL Audio Devices"]
 topic_type:
 - apiref

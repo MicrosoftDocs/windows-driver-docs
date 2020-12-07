@@ -1,7 +1,6 @@
 ---
 title: GuardedRegions rule (wdm)
 description: The GuardedRegions rule verifies that calls to KeEnterGuardedRegion and KeLeaveGuardedRegion are used in strict alternation.
-ms.assetid: CF98BF68-905C-48D2-AE72-08DD5559AA0D
 ms.date: 05/21/2018
 keywords: ["GuardedRegions rule (wdm)"]
 topic_type:

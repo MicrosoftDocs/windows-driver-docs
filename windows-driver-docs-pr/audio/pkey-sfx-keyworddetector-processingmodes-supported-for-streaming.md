@@ -1,7 +1,6 @@
 ---
 title: PKEY\_SFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 10 and later, the PKEY\_SFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming property key identifies the keyword detector streaming processing modes supported by the driver.
-ms.assetid: E87B3A94-66AF-4557-AB0D-A4D8B0E976E6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

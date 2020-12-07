@@ -1,7 +1,6 @@
 ---
 title: Introduction to Command and DMA Buffers
 description: Introduction to Command and DMA Buffers
-ms.assetid: e9fa38a2-3243-4578-83c3-4559ec3480a7
 keywords:
 - command buffers WDK display , about command buffers
 - DMA buffers WDK display , about DMA buffers

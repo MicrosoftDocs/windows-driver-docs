@@ -1,7 +1,6 @@
 ---
 title: Performing COPP Operations Example
 description: An example for performing COPP Operations
-ms.assetid: ba5c98d3-63d1-4e2d-ba11-6054c1623e80
 keywords:
 - copy protection WDK COPP , COPP operation example code
 - video copy protection WDK COPP , COPP operation example code

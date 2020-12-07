@@ -1,7 +1,6 @@
 ---
 title: Printer Capability Attributes
 description: Printer Capability Attributes
-ms.assetid: 3ee98eee-8f46-4bf0-ac2c-f47f8402fa86
 keywords:
 - printer capability attributes WDK Unidrv
 - general printer attributes WDK Unidrv , printer capability

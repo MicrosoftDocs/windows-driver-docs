@@ -1,7 +1,6 @@
 ---
 title: Calling ScsiPortInitialize
 description: Calling ScsiPortInitialize
-ms.assetid: a736f279-9ade-4043-90f7-209fca260a39
 keywords:
 - ScsiPortInitialize
 - initializing SCSI miniport drivers

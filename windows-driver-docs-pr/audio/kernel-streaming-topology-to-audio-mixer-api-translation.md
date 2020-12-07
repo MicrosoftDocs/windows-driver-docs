@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Topology to Audio Mixer API Translation
 description: Kernel Streaming Topology to Audio Mixer API Translation
-ms.assetid: ee89dc67-c9f3-41cd-8a09-0c46d636fe64
 keywords:
 - mixer API WDK audio
 - kernel streaming WDK audio

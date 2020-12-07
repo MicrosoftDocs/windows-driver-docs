@@ -1,7 +1,6 @@
 ---
 title: Specifying the Upgrade DLL in a Netmap.inf File
 description: Specifying the Upgrade DLL in a Netmap.inf File
-ms.assetid: 01735a7d-ee33-427d-befa-7429fd64353b
 keywords:
 - network component upgrades WDK , netmap.inf files
 - upgrading network components WDK , netmap.inf files

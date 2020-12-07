@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_COMMUNICATIONSTRANSFORM
 description: KSCATEGORY_COMMUNICATIONSTRANSFORM
-ms.assetid: a958c5a6-18a3-43e0-a6ac-84a879a981da
 keywords: ["KSCATEGORY_COMMUNICATIONSTRANSFORM Device and Driver Installation"]
 topic_type:
 - apiref

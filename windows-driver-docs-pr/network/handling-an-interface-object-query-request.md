@@ -1,7 +1,6 @@
 ---
 title: Handling an Interface Object Query Request
 description: Handling an Interface Object Query Request
-ms.assetid: c4dc4d9e-52ea-477f-9bc8-cf04ccaa73b2
 keywords:
 - NDIS network interfaces WDK , query requests
 - network interfaces WDK , query requests

@@ -1,7 +1,6 @@
 ---
 title: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
 description: Handling the OID_NIC_SWITCH_CREATE_SWITCH Request
-ms.assetid: 5C0BC300-8904-483A-A66B-8F5CFE0829B1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

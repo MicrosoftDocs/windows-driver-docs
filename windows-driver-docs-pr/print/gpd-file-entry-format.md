@@ -1,7 +1,6 @@
 ---
 title: GPD File Entry Format
 description: GPD File Entry Format
-ms.assetid: 44057b4d-5ea1-426f-ae87-047b650cbf65
 keywords:
 - GPD file entries WDK Unidrv , formats
 - formats WDK GPD files

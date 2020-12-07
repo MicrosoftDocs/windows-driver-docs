@@ -1,7 +1,6 @@
 ---
 title: SpinLockBalanced rule (ndis)
 description: The SpinLockBalanced rule verifies that the number of calls to functions that acquire a SpinLock are equal to the number of calls to functions that release the same SpinLock.
-ms.assetid: 61abb66e-b271-4102-828b-7e5ce77295c4
 ms.date: 05/21/2018
 keywords: ["SpinLockBalanced rule (ndis)"]
 topic_type:

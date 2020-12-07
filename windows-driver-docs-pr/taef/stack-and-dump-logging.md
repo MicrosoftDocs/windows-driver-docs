@@ -1,7 +1,6 @@
 ---
 title: Stack and Dump Logging
 description: Stack and Dump Logging
-ms.assetid: 5FE6AA76-5299-4d5d-9154-6DB34D93EECB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

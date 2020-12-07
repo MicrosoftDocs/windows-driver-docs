@@ -1,7 +1,6 @@
 ---
 title: Data-Intersection Handlers
 description: Data-Intersection Handlers
-ms.assetid: 7206afdb-8a34-4b5a-8cea-87119f426161
 keywords:
 - WDM audio drivers WDK , data-intersection handlers
 - audio drivers WDK , data-intersection handlers

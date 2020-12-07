@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_AUDIO\_KEYWORDDETECTOR
 description: The KSNODETYPE\_AUDIO\_KEYWORDDETECTOR audio endpoint is a new endpoint that is available with Windows 10 and later versions of Windows. The KSNODETYPE\_AUDIO\_KEYWORDDETECTOR allows an audio capture driver to support a detector.
-ms.assetid: 7D4CD2B7-F4B4-4A81-B18A-2B7E86D1EF80
 keywords: ["KSNODETYPE_AUDIO_KEYWORDDETECTOR Audio Devices"]
 topic_type:
 - apiref

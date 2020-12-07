@@ -1,7 +1,6 @@
 ---
 title: Processing the Surprise Removal of a NIC (Windows Vista)
 description: Processing the Surprise Removal of a NIC (Windows Vista)
-ms.assetid: 940E6109-0A4C-4F4C-8201-F28BB789D7AE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

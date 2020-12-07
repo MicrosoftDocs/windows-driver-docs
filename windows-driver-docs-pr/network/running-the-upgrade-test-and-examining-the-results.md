@@ -1,7 +1,6 @@
 ---
 title: Running the Upgrade Test and Examining the Results
 description: Running the Upgrade Test and Examining the Results
-ms.assetid: 82a2427e-94ed-4f7e-93e7-7952ca0d98e8
 keywords:
 - testing network component upgrades WDK
 - upgrade tests WDK networking

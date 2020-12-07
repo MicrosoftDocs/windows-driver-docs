@@ -1,7 +1,6 @@
 ---
 title: Geometry Shader Stage
 description: Geometry Shader Stage
-ms.assetid: 390eb917-3289-4b6e-be23-8db24cdd2bd7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

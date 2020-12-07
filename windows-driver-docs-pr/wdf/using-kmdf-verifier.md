@@ -1,7 +1,6 @@
 ---
 title: Using KMDF Verifier
 description: Using KMDF Verifier
-ms.assetid: ab6a0149-9341-435b-b7e7-9c5d6520ebd8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

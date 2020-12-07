@@ -1,7 +1,6 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_READ operation
 description: Checking the Oplock State of an IRP_MJ_READ operation
-ms.assetid: 9b4d1ba9-0838-44f1-8328-f60bfb3910ee
 ms.date: 11/25/2019
 ms.localizationpriority: medium
 ---

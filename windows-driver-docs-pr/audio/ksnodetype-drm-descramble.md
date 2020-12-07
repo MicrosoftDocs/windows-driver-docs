@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_DRM\_DESCRAMBLE
 description: KSNODETYPE\_DRM\_DESCRAMBLE
-ms.assetid: 87ce2470-76f7-4f48-bc5f-7b28df8eb06a
 keywords: ["KSNODETYPE_DRM_DESCRAMBLE Audio Devices"]
 topic_type:
 - apiref

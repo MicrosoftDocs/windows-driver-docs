@@ -1,7 +1,6 @@
 ---
 title: rsdt
 description: The rsdt extension displays the ACPI Root System Description Table.
-ms.assetid: e6576028-0982-4021-a0c9-4baecd6533e4
 keywords: ["rsdt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

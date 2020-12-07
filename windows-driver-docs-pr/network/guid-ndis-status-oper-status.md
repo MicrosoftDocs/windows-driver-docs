@@ -1,7 +1,6 @@
 ---
 title: GUID_NDIS_STATUS_OPER_STATUS
 description: This topic describes the GUID_NDIS_STATUS_OPER_STATUS GUID for the NDIS WMI interface.
-ms.assetid: e4e13f9d-6298-47b0-9cb1-70fea87db59a
 keywords:
 - GUID_NDIS_STATUS_OPER_STATUS, WDK GUID_NDIS_STATUS_OPER_STATUS network drivers
 ms.date: 11/22/2017

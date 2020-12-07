@@ -1,7 +1,6 @@
 ---
 title: OID_CO_SIGNALING_DISABLED
 description: This topic describes the OID_CO_SIGNALING_DISABLED object identifier (OID).
-ms.assetid: 8206ca17-5758-46a2-a525-d6ed9911de1b
 keywords:
 - OID_CO_SIGNALING_DISABLED
 ms.date: 11/03/2017

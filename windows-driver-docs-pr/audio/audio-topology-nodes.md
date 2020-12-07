@@ -1,7 +1,6 @@
 ---
 title: Audio Topology Nodes
 description: Audio Topology Nodes
-ms.assetid: d999955b-d620-41c9-b42d-6870ce1d4b93
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

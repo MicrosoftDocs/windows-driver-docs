@@ -1,7 +1,6 @@
 ---
 title: Rules for Modifying Device Properties
 description: Rules for Modifying Device Properties
-ms.assetid: EB554B5C-310A-4b2c-A2D5-22A113415400
 keywords:
 - device properties WDK device installations , rules for modifying
 - device properties WDK device installations , modifying

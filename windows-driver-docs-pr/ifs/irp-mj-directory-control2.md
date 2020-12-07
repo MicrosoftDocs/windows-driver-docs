@@ -1,7 +1,6 @@
 ---
 title: Security checks on IRP_MJ_DIRECTORY_CONTROL
 description: Describes how a file system does security checks on IRP_MJ_DIRECTORY_CONTROL
-ms.assetid: 27c2de1c-5550-4211-97cc-4c66f18d3b99
 keywords:
 - IRP_MJ_DIRECTORY_CONTROL
 - security WDK file systems , adding security checks

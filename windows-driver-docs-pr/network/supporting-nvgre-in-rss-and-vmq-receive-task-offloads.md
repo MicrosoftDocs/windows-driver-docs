@@ -1,7 +1,6 @@
 ---
 title: Supporting NVGRE in RSS and VMQ Receive Task Offloads
 description: This section describes supporting NVGRE in RSS and VMQ receive task offloads
-ms.assetid: 42660D55-31C0-4101-9EA1-159EBB76B019
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

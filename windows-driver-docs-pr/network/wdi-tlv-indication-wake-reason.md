@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_INDICATION_WAKE_REASON
 description: WDI_TLV_INDICATION_WAKE_REASON is a TLV that contains a wake reason for NDIS_STATUS_WDI_INDICATION_WAKE_REASON.
-ms.assetid: 3D3F93EA-4733-44FC-9CB3-721F0552F3E2
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INDICATION_WAKE_REASON Network Drivers Starting with Windows Vista

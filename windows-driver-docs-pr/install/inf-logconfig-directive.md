@@ -1,7 +1,6 @@
 ---
 title: INF LogConfig Directive
 description: A LogConfig directive references one or more INF-writer-defined sections, each of which specifies a logical configuration of hardware resources.
-ms.assetid: 6b60c3eb-bf70-42f7-bed7-a856fd626d8c
 keywords:
 - INF LogConfig Directive Device and Driver Installation
 topic_type:

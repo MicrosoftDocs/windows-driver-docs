@@ -1,7 +1,6 @@
 ---
 title: WdfRequestSendSyncAtDispatch rule (kmdf)
 description: The WdfRequestSendSyncAtDispatch rule verifies that the WdfRequestSend function is sent at the correct IRQL priority level.
-ms.assetid: D8A30F95-3E6C-4ED8-B112-F033555D97A7
 ms.date: 05/21/2018
 keywords: ["WdfRequestSendSyncAtDispatch rule (kmdf)"]
 topic_type:

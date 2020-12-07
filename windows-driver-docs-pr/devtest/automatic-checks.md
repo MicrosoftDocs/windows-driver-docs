@@ -1,7 +1,6 @@
 ---
 title: Automatic Checks
 description: Automatic Checks
-ms.assetid: ec3cb6a4-d990-4830-914c-064f6c79371a
 keywords:
 - automatic checks WDK Driver Verifier
 - IRQL monitoring WDK Driver Verifier

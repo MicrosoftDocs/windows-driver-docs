@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS INF Template
 description: Remote NDIS INF Template
-ms.assetid: bbbd3aef-230f-4286-bea2-bb583789865e
 keywords:
 - Remote NDIS WDK networking , INF template
 ms.date: 04/20/2017

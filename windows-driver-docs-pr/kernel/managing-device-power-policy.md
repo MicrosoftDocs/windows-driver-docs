@@ -1,7 +1,6 @@
 ---
 title: Managing Device Power Policy
 description: Managing Device Power Policy
-ms.assetid: f6f9ab40-4d51-4181-ac11-ff7af42370af
 keywords: ["device power policy WDK kernel", "power policy WDK kernel", "device power policy owners WDK kernel", "function drivers WDK power management", "device power states WDK kernel", "initial device power state WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

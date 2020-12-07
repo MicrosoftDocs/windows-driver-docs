@@ -1,7 +1,6 @@
 ---
 title: NetAdapterCx hardware offloads
 description: Overview of hardware offloads in NetAdapterCx
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads
 ms.date: 10/09/2020

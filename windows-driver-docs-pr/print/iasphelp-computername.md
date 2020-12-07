@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 20fbd286-5b09-4c30-ae6c-4245854bc7b3
 keywords: ["get_ComputerName method Print Devices", "get_ComputerName method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_ComputerName method"]
 topic_type:
 - apiref

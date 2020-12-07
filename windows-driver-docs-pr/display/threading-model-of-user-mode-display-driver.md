@@ -1,7 +1,6 @@
 ---
 title: Threading Model of User-Mode Display Driver
 description: Threading Model of User-Mode Display Driver
-ms.assetid: 43bb6032-5f34-434b-8404-aef6a424a2ee
 keywords:
 - threading WDK display , user-mode drivers
 - synchronization WDK display , user-mode drivers

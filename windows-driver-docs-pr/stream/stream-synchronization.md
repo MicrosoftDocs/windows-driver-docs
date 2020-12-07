@@ -1,7 +1,6 @@
 ---
 title: Stream Synchronization
 description: Stream Synchronization
-ms.assetid: bbf589f1-ca4b-41a2-970d-b31c7761eb1a
 keywords:
 - synchronization WDK DVD decoder
 - stream synchronization WDK DVD decoder

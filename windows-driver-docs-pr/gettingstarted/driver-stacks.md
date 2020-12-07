@@ -1,7 +1,6 @@
 ---
 title: Driver stacks
 description: Most of the requests that are sent to device drivers are packaged in I/O request packets (IRPs).
-ms.assetid: 8D55CB83-C50A-48B8-9379-ECF2CF30AEE5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

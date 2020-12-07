@@ -1,7 +1,6 @@
 ---
 title: '[Version] section directives'
 description: This topic describes [Version] section directives in the INF.
-ms.assetid: 76AC10DC-AECC-4C35-8BEE-4B2E8B06FEE0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

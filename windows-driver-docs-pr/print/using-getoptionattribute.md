@@ -1,7 +1,6 @@
 ---
 title: Using GetOptionAttribute
 description: Using GetOptionAttribute
-ms.assetid: d35f0811-d572-422c-8672-ffd29bf69efa
 keywords:
 - GetOptionAttribute
 ms.date: 04/20/2017

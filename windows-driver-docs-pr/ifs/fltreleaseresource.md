@@ -1,7 +1,6 @@
 ---
 title: FltReleaseResource routine
 description: The FltReleaseResource routine releases a specified resource owned by the current thread.
-ms.assetid: 2884c596-77ec-4cba-b6cb-000d96cc6342
 keywords: ["FltReleaseResource routine Installable File System Drivers"]
 topic_type:
 - apiref

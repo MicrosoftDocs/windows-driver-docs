@@ -1,7 +1,6 @@
 ---
 title: .expr (Choose Expression Evaluator)
 description: The .expr command specifies the default expression evaluator.
-ms.assetid: 96d246c2-10fe-4688-a04f-1325ac51e4b3
 keywords: [".expr (Choose Expression Evaluator) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

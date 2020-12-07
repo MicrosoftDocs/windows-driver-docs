@@ -1,7 +1,6 @@
 ---
 title: Client Objects
 description: Client Objects
-ms.assetid: 173a67f1-093e-4462-8e2c-41d0f10106d0
 keywords: ["Debugger Engine, client objects", "client objects"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

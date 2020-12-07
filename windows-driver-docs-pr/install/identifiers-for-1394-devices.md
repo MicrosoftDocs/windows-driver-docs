@@ -1,7 +1,6 @@
 ---
 title: Identifiers for 1394 Devices
 description: Identifiers for 1394 Devices
-ms.assetid: 6ab2538a-af4c-4c46-bda5-abb431c5bd6b
 keywords:
 - device identification strings WDK , 1394 devices
 - identification strings WDK device , 1394 devices

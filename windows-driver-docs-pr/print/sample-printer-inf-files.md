@@ -1,7 +1,6 @@
 ---
 title: Sample Printer INF Files
 description: Sample Printer INF Files
-ms.assetid: e57f11fe-b114-46e4-a4ae-b48f04613da7
 keywords:
 - INF files WDK print , samples
 ms.date: 04/20/2017

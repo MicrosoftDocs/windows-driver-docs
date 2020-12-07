@@ -1,7 +1,6 @@
 ---
 title: Print Capabilities
 description: Print Capabilities
-ms.assetid: 8ccbdab3-5be4-4ee1-9798-3b90e8b5b4d4
 keywords:
 - Print Capabilities WDK , about Print Capabilities
 - XML PrintCapabilities WDK print

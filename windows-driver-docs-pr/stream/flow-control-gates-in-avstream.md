@@ -1,7 +1,6 @@
 ---
 title: Flow Control Gates in AVStream
 description: Flow Control Gates in AVStream
-ms.assetid: c5592f92-a432-44e3-afe0-60fcf917a443
 keywords:
 - AVStream logic gates WDK
 - logic gates WDK AVStream

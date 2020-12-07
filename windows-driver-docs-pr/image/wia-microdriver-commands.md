@@ -1,7 +1,6 @@
 ---
 title: WIA Microdriver Commands
 description: WIA Microdriver Commands
-ms.assetid: 54d0c35b-d8b3-4e38-85cf-d5b4f80f6daa
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

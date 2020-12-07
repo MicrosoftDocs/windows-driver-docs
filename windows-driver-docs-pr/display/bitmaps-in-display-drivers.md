@@ -1,7 +1,6 @@
 ---
 title: Bitmaps in Display Drivers
 description: Bitmaps in Display Drivers
-ms.assetid: 3f0ed208-1cfb-4583-beaf-894cd210b459
 keywords:
 - display drivers WDK Windows 2000 , bitmaps
 - bitmaps WDK Windows 2000 display

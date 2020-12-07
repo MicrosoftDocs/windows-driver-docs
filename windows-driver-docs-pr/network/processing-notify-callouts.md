@@ -1,7 +1,6 @@
 ---
 title: Processing Notify Callouts
 description: Processing Notify Callouts
-ms.assetid: d686989e-97f0-4095-b172-1c2ccf7a26e6
 keywords:
 - Windows Filtering Platform callout drivers WDK , notify callouts
 - callout drivers WDK Windows Filtering Platform , notify callouts

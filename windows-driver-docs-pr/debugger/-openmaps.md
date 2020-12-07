@@ -1,7 +1,6 @@
 ---
 title: openmaps
 description: The openmaps extension displays the referenced buffer control blocks (BCBs) and virtual address control blocks (VACBs) for the specified shared cache map.
-ms.assetid: 4ecce331-c18e-462a-807a-b8929059b897
 keywords: ["BCB (buffer control block)", "VACB (virtual address control block)", "shared cache map", "cache manager", "openmaps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

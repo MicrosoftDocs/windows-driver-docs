@@ -1,7 +1,6 @@
 ---
 title: Identifying Backup Files for Existing Boot Entries
 description: Identifying Backup Files for Existing Boot Entries
-ms.assetid: 8f7e13b4-32f9-4b54-a8ab-db8148434ae8
 keywords:
 - NVRAM boot options WDK , backup file searches
 - EFI NVRAM boot options WDK , backup file searches

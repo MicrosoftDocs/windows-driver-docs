@@ -1,7 +1,6 @@
 ---
 title: ValidTicket element
 description: The required ValidTicket element indicates whether a client's ScanTicket was valid.
-ms.assetid: 8c2f35b5-1b1e-49a4-8aab-4d57ff9f1803
 keywords: ["ValidTicket element Imaging Devices"]
 topic_type:
 - apiref

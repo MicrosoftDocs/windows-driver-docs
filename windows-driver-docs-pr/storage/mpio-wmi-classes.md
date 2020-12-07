@@ -1,7 +1,6 @@
 ---
 title: MPIO WMI Classes
 description: MPIO WMI Classes
-ms.assetid: c1719f9e-7b45-4de5-b847-6041b89e2677
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

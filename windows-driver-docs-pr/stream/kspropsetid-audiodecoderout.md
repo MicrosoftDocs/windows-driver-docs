@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_AudioDecoderOut
 description: KSPROPSETID\_AudioDecoderOut
-ms.assetid: 80292a43-305f-4c3c-aab1-e38f2eb749d1
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Functions Defined by Printer Graphics DLLs
 description: Functions Defined by Printer Graphics DLLs
-ms.assetid: b0c9ce45-76c4-4058-af3f-7b9d230bcf94
 keywords:
 - printer graphics DLL WDK , functions
 - functions WDK printer graphics DLL

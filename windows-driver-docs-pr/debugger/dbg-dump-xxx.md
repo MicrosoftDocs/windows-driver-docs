@@ -1,7 +1,6 @@
 ---
 title: DBG\_DUMP\_XXX
 description: DBG\_DUMP\_XXX
-ms.assetid: d34ecf95-3aea-4850-a2de-76f239e8b8a0
 ms.date: 12/07/2017
 keywords: ["DBG_DUMP_XXX Windows Debugging"]
 topic_type:

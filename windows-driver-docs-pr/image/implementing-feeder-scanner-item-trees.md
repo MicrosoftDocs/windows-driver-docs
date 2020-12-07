@@ -1,7 +1,6 @@
 ---
 title: Implementing Feeder Scanner Item Trees
 description: Implementing Feeder Scanner Item Trees
-ms.assetid: 2e81b2f1-01b9-4636-b50c-fee70fbcd871
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Mapping for a Legacy Application and Windows Vista Driver
 description: Mapping for a Legacy Application and Windows Vista Driver
-ms.assetid: 6f4ebcc7-ecf0-4e0b-bcef-e5b72dc472dc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

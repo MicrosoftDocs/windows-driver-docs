@@ -1,7 +1,6 @@
 ---
 title: Windows Display Driver Model (WDDM) Design Guide
 description: The Windows Display Driver Model (WDDM) is available starting with Windows Vista and is required starting with Windows 8. This section discusses requirements, specifications, and behavior for WDDM drivers.
-ms.assetid: d9dc0d48-aea4-4614-a23b-e2449800469f
 keywords:
 - WDDM Design Guide WDK
 - display driver model WDK Windows Vista

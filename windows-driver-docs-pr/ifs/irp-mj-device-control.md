@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_DEVICE_CONTROL (IFS)
 description: IRP\_MJ\_DEVICE\_CONTROL
-ms.assetid: 7a7f7372-ed69-42c1-95e2-b5a593d77d22
 keywords: ["IRP_MJ_DEVICE_CONTROL Installable File System Drivers"]
 topic_type:
 - apiref

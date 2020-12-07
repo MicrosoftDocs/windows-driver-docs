@@ -1,7 +1,6 @@
 ---
 title: Processing Texture Stages
 description: Processing Texture Stages
-ms.assetid: e22f5e2f-f17c-4a84-941b-c38e14b28550
 keywords:
 - multiple textures WDK Direct3D , texture stages
 - texture stages WDK Direct3D

@@ -1,7 +1,6 @@
 ---
 title: Identifying Source Disks and Files
 description: Identifying Source Disks and Files
-ms.assetid: 0eb8fe7f-1e44-4f3d-8567-31a2cd659805
 keywords:
 - INF files WDK display , identifying source disks or files
 - source disks WDK display

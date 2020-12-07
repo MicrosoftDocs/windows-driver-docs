@@ -1,7 +1,6 @@
 ---
 title: LanguageNeutralIdentifier
 description: LanguageNeutralIdentifier
-ms.assetid: 38713565-464c-4b12-9076-331ae43e01e8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

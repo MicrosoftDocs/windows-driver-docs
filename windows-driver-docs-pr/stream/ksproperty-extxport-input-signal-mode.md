@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_INPUT\_SIGNAL\_MODE
 description: The KSPROPERTY\_EXTXPORT\_INPUT\_SIGNAL\_MODE property sets or gets an external device's current input signal mode. For example DV-SD/NTSC/PAL, DV-SL/NTSC/PAL, MPEG2-TS, etc.
-ms.assetid: 3af5c2fb-c7dc-4dfb-b66d-fc16091fa5ad
 keywords: ["KSPROPERTY_EXTXPORT_INPUT_SIGNAL_MODE Streaming Media Devices"]
 topic_type:
 - apiref

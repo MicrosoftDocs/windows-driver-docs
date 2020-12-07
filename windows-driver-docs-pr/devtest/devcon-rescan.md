@@ -1,7 +1,6 @@
 ---
 title: DevCon Rescan
 description: Uses Windows Plug and Play features to update the device list for the computer. Valid on local and remote computers.
-ms.assetid: 08762f30-a276-4ef4-8936-dfb1e1f692ca
 keywords:
 - DevCon Rescan Driver Development Tools
 topic_type:

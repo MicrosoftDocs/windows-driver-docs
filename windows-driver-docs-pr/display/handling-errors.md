@@ -1,7 +1,6 @@
 ---
 title: Handling Errors
 description: Handling Errors
-ms.assetid: ac4e056e-3304-4934-887a-5cc2b87989bd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

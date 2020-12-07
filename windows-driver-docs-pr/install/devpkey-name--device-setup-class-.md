@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_NAME (Device Setup Class)
 description: DEVPKEY_NAME (Device Setup Class)
-ms.assetid: cc953918-f11a-464c-95cc-ee2a9aa68b7a
 keywords: ["DEVPKEY_NAME (Device Setup Class) Device and Driver Installation"]
 topic_type:
 - apiref

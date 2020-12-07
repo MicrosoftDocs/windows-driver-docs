@@ -1,7 +1,6 @@
 ---
 title: Video Capture Minidriver Property Sets
 description: Video Capture Minidriver Property Sets
-ms.assetid: adbf62c4-1c66-46e9-ae8e-867a88bb107c
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

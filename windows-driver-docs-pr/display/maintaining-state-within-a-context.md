@@ -1,7 +1,6 @@
 ---
 title: Maintaining State Within a Context
 description: Maintaining State Within a Context
-ms.assetid: dabf6aa7-f127-419c-9245-5270768fef5b
 keywords:
 - context WDK Direct3D , maintaining state
 - states WDK Direct3D

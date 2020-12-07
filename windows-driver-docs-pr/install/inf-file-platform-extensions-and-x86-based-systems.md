@@ -1,7 +1,6 @@
 ---
 title: INF File Platform Extensions and x86-Based Systems
 description: INF File Platform Extensions and x86-Based Systems
-ms.assetid: d0e1c6ba-32c4-413d-b0d9-620e3617a62b
 keywords:
 - x86 INF file platform extensions WDK
 ms.date: 04/20/2017

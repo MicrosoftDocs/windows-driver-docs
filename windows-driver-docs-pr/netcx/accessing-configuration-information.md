@@ -1,7 +1,6 @@
 ---
 title: Accessing configuration information
 description: Accessing configuration information
-ms.assetid: ABEC75AE-9CE3-4574-B388-BC48D2BC8154
 keywords:
 - NetAdapterCx accessing configuration information, NetCx accessing configuration information
 ms.date: 06/05/2017

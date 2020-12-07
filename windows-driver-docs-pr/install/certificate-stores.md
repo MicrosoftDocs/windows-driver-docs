@@ -1,7 +1,6 @@
 ---
 title: Certificate Stores
 description: Certificate Stores
-ms.assetid: 7c29bf08-c5d2-40c3-b849-0b8c2f8d67f2
 keywords:
 - certificate stores WDK
 ms.date: 04/20/2017

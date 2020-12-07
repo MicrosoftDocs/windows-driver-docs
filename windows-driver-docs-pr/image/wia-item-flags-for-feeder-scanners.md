@@ -1,7 +1,6 @@
 ---
 title: WIA Item Flags for Feeder Scanners
 description: WIA Item Flags for Feeder Scanners
-ms.assetid: b1256646-be6c-436c-86da-9dff43ef9867
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

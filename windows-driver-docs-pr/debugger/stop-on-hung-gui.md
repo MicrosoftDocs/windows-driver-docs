@@ -1,7 +1,6 @@
 ---
 title: Stop on hung GUI
 description: Stop on hung GUI
-ms.assetid: f1c1a045-e5ca-4274-9b47-b64d389b5fe5
 keywords: ["Stop on hung GUI (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

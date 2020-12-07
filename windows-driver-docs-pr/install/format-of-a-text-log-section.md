@@ -1,7 +1,6 @@
 ---
 title: Format of a Text Log Section
 description: Format of a Text Log Section
-ms.assetid: e0f7227c-6cd8-4c66-a38b-104f222847bc
 keywords:
 - sections WDK SetupAPI logging
 - formats WDK SetupAPI logging

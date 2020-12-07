@@ -1,7 +1,6 @@
 ---
 title: WIA Driver Error Reporting for Windows Me and Windows XP
 description: WIA Driver Error Reporting for Windows Me and Windows XP
-ms.assetid: 5f696e16-0c22-4d71-98d2-d642e721ac8c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

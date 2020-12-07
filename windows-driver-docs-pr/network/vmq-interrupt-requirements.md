@@ -1,7 +1,6 @@
 ---
 title: VMQ Interrupt Requirements
 description: VMQ Interrupt Requirements
-ms.assetid: 7ECC9031-D41B-4664-963D-F1C20B297B7C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

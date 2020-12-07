@@ -1,7 +1,6 @@
 ---
 title: callback
 description: The callback extension displays the callback data related to the trap for the specified thread.
-ms.assetid: afbd7884-d63d-4e37-a437-91bc910a3ae2
 keywords: ["callback data for system traps", "callback Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

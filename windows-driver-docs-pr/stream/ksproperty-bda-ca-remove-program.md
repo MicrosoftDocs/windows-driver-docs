@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM
 description: Clients use KSPROPERTY\_BDA\_CA\_REMOVE\_PROGRAM to prevent access to a specific program.
-ms.assetid: 07792113-6d47-4836-8db2-6960fb14ab87
 keywords: ["KSPROPERTY_BDA_CA_REMOVE_PROGRAM Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Interpreting a Bug Check Code
 description: When Microsoft Windows encounters a condition that compromises safe system operation, the system halts.
-ms.assetid: b5c8e18e-c2d3-47d9-b2bd-38aaaedcfde9
 keywords:
 - tools WDK , bug check codes
 - driver development tools WDK , bug check codes

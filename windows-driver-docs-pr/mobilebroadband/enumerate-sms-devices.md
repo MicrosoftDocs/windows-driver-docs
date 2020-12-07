@@ -1,7 +1,6 @@
 ---
 title: Enumerate SMS devices
 description: Enumerate SMS devices
-ms.assetid: d0d57a4f-df83-4f3b-b7b4-417ad4e11350
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: wmitrace.dumpmini
 description: The wmitrace.dumpmini extension displays the system trace fragment, which is stored in a dump file.
-ms.assetid: c6b4c09f-3a73-4467-849b-8570477bc9af
 keywords: ["wmitrace.dumpmini Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

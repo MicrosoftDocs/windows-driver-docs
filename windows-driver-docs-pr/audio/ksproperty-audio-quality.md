@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_QUALITY
 description: The KSPROPERTY\_AUDIO\_QUALITY property specifies the quality level of a node's output stream. This is a property of an SRC node (KSNODETYPE\_SRC).
-ms.assetid: ef57de3b-f7ac-4ecd-915e-27f34fcc2028
 keywords: ["KSPROPERTY_AUDIO_QUALITY Audio Devices"]
 topic_type:
 - apiref

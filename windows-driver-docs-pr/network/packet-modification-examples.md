@@ -1,7 +1,6 @@
 ---
 title: Packet Modification Examples
 description: Packet Modification Examples
-ms.assetid: dec76575-041b-4cbd-8042-184b15354f61
 keywords:
 - packet modification WDK Windows Filtering Platform
 ms.date: 04/20/2017

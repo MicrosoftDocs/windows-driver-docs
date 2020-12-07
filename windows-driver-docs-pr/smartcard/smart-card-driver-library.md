@@ -1,7 +1,6 @@
 ---
 title: Smart Card Driver Library
 description: Smart Card Driver Library
-ms.assetid: 12f67a8d-9281-4f79-88c0-e1c9dff5a05d
 keywords:
 - smart card drivers WDK , library
 - library WDK smart card

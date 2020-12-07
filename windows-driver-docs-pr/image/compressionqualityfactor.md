@@ -1,7 +1,6 @@
 ---
 title: CompressionQualityFactor element
 description: The optional CompressionQualityFactor element specifies an idealized integer amount of image quality, on a scale from 0 through 100.
-ms.assetid: e66ab41d-3f77-4c60-b0bf-d050f467c6b4
 keywords: ["CompressionQualityFactor element Imaging Devices"]
 topic_type:
 - apiref

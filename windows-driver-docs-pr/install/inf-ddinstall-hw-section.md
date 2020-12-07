@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.HW Section
 description: DDInstall.HW sections are typically used for installing multifunction devices, for installing PnP filter drivers, and for setting up any user-accessible device-specific but driver-independent information in the registry, whether with explicit AddReg directives or with Include and Needs entries.
-ms.assetid: 417a4ab0-9723-4b3b-aa8c-342598874d61
 keywords:
 - INF DDInstall.HW Section Device and Driver Installation
 topic_type:

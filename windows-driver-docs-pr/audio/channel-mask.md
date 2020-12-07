@@ -1,7 +1,6 @@
 ---
 title: Channel Mask
 description: Channel Mask
-ms.assetid: 875ed000-ac53-4365-8381-3fe08d45cbcc
 keywords:
 - data formats WDK audio
 - formats WDK audio , data

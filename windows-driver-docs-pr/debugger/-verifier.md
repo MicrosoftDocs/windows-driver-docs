@@ -1,7 +1,6 @@
 ---
 title: verifier
 description: The verifier extension displays the status of Driver Verifier and its actions.
-ms.assetid: e84993e1-da10-4041-8fc7-7f40806ee454
 keywords: ["Driver Verifier", "verifier Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:

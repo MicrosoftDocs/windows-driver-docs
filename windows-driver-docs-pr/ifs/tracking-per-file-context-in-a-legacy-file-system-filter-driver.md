@@ -1,7 +1,6 @@
 ---
 title: Tracking Per-File Context in a Legacy File System Filter Driver
 description: Tracking Per-File Context in a Legacy File System Filter Driver
-ms.assetid: 6be3ff10-47e4-47f5-8f15-88a80a16f451
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_LNB\_LOF\_HIGH\_BAND
 description: Clients use KSPROPERTY\_BDA\_LNB\_LOF\_HIGH\_BAND to inform the RF tuner node about the local oscillator frequency (LOF) that is used by the low-noise block (LNB) device for shifting the frequency of incoming high-band RF signals.
-ms.assetid: 77ee5ad8-330e-47a6-8fdb-6a4f9b3eef1d
 keywords: ["KSPROPERTY_BDA_LNB_LOF_HIGH_BAND Streaming Media Devices"]
 topic_type:
 - apiref

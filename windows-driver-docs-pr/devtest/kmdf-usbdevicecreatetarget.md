@@ -1,7 +1,6 @@
 ---
 title: UsbDeviceCreateTarget rule (kmdf)
 description: The UsbDeviceCreateTarget rule specifies that multiple WDFUSBDEVICE objects are not created while WDFUSBDEVICE object(s) that are currently in the device context are leaked.
-ms.assetid: c2617c2b-553e-44fa-abd5-6bfe6d545612
 ms.date: 05/21/2018
 keywords: ["UsbDeviceCreateTarget rule (kmdf)"]
 topic_type:

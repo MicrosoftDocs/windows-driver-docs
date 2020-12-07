@@ -1,7 +1,6 @@
 ---
 title: Changes from Direct3D 10
 description: Changes from Direct3D 10
-ms.assetid: 014a5e44-f8c4-45c0-96e8-d82f37b8b28d
 keywords:
 - Direct3D version 11 WDK Windows 7 display , changes from Direct3D version 10
 - Direct3D version 11 WDK Windows Server 2008 R2 display , changes from Direct3D version 10

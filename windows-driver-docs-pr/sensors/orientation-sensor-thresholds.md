@@ -1,7 +1,6 @@
 ---
 title: Orientation sensor thresholds
 description: This topic provides information about the orientation sensor thresholds.
-ms.assetid: BC7B76C3-F6D3-48FC-AA22-A91519A0A0D8
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

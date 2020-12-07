@@ -1,7 +1,6 @@
 ---
 title: GDL Template Qualification
 description: GDL Template Qualification
-ms.assetid: 6a0fef55-4097-4d5b-b192-ce8a03b9c41f
 keywords:
 - templates WDK GDL , associating templates with keywords
 - keywords WDK GDL , associating templates with keywords

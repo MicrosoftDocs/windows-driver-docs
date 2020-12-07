@@ -1,7 +1,6 @@
 ---
 title: Obtaining Collection Information
 description: Obtaining Collection Information
-ms.assetid: 0568993b-ff50-48ac-a875-95ab643d6c28
 keywords:
 - collections WDK HID , informatin gathering
 - HID collections WDK , information gathering

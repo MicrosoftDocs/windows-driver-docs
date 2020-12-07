@@ -1,7 +1,6 @@
 ---
 title: Supporting Banked Frame Buffers
 description: Supporting Banked Frame Buffers
-ms.assetid: edb0421b-fd1d-43da-9c1f-3414182282fb
 keywords:
 - display drivers WDK Windows 2000 , banked frame buffers
 - banked frame buffers WDK Windows 2000 display

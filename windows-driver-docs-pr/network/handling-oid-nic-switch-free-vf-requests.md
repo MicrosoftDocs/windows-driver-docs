@@ -1,7 +1,6 @@
 ---
 title: Handling OID_NIC_SWITCH_FREE_VF Requests
 description: Handling OID_NIC_SWITCH_FREE_VF Requests
-ms.assetid: 56134421-6D3C-4A40-B7EE-FDB729D46DEB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

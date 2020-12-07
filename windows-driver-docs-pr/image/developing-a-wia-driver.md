@@ -1,7 +1,6 @@
 ---
 title: Developing a WIA Driver
 description: Developing a WIA Driver
-ms.assetid: 0497e93a-e7c5-4d89-bfa9-b2f277e471a0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

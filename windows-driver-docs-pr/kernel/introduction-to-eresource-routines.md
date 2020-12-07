@@ -1,7 +1,6 @@
 ---
 title: Introduction to ERESOURCE Routines
 description: Introduction to ERESOURCE Routines
-ms.assetid: 5c7759db-aeb5-47f3-8adc-ddedb74b5cb4
 keywords: ["ERESOURCE structures", "exclusive waiters WDK kernel", "shared waiters WDK kernel", "exclusive/shared synchronization WDK kernel", "synchronization WDK kernel , exclusive/shared", "waiters WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

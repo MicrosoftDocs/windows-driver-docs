@@ -1,7 +1,6 @@
 ---
 title: Windows Network Architecture and the OSI Model
 description: Windows Network Architecture and the OSI Model
-ms.assetid: d57cadc7-c443-441d-b693-d85ffabe9f7f
 keywords:
 - OSI reference model WDK networking
 - transport layer WDK networking

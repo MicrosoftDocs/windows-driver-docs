@@ -1,7 +1,6 @@
 ---
 title: MSFC\_HBAAdapterMethods WMI Class
 description: MSFC\_HBAAdapterMethods WMI Class
-ms.assetid: 2fb2b055-475e-47bf-bd36-3901120e8992
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

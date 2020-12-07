@@ -1,7 +1,6 @@
 ---
 title: .locale (Set Locale)
 description: The .locale command sets the locale or displays the current locale.
-ms.assetid: 66c2a522-886f-41ef-ab90-176a3e0b7d88
 keywords: [".locale (Set Locale) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

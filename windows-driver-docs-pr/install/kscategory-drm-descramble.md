@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_DRM_DESCRAMBLE
 description: KSCATEGORY_DRM_DESCRAMBLE
-ms.assetid: 3bb6887f-4fc9-452e-bceb-35fe26844ac5
 keywords: ["KSCATEGORY_DRM_DESCRAMBLE Device and Driver Installation"]
 topic_type:
 - apiref

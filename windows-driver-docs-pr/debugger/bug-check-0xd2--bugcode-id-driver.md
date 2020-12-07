@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD2 BUGCODE_ID_DRIVER
 description: The BUGCODE_ID_DRIVER bug check has a value of 0x000000D2. This indicates that a problem occurred with an NDIS driver.
-ms.assetid: 697d128c-c79d-454a-a3e7-e9b85e3ab4bc
 keywords: ["Bug Check 0xD2 BUGCODE_ID_DRIVER", "BUGCODE_ID_DRIVER"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Video Memory Management and GPU Scheduling
 description: Video Memory Management and GPU Scheduling
-ms.assetid: 33fc9f0a-57ed-479f-9cb0-3f3f540047ab
 keywords:
 - display driver model WDK Windows Vista , video memory management
 - Windows Vista display driver model WDK , video memory management

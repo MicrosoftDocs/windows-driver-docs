@@ -1,7 +1,6 @@
 ---
 title: Debugging a Stack Overflow
 description: Debugging a Stack Overflow
-ms.assetid: fc67effa-88c9-4915-a5a8-8c094595c6c5
 keywords: ["stack overflow", "call stack, debugging a stack overflow"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

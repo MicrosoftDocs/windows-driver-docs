@@ -1,7 +1,6 @@
 ---
 title: INF File Entries
 description: INF File Entries
-ms.assetid: 8af2cbe7-f249-4e2f-940f-b50bc451cabe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

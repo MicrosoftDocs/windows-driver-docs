@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_SET_POWER
 description: OID_PNP_SET_POWER
-ms.assetid: 21232db2-7484-4878-a2f9-5131c18ecf57
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_SET_POWER Network Drivers Starting with Windows Vista

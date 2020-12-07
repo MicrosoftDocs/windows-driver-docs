@@ -1,7 +1,6 @@
 ---
 title: Handling Two Monitor Configurations
 description: Handling Two Monitor Configurations
-ms.assetid: 224ebc3f-dace-4b41-bfc8-6fd81c8b309d
 keywords:
 - TMM WDK display , two monitor configurations
 - monitor configurations WDK display , two monitors

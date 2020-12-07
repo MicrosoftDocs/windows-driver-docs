@@ -1,7 +1,6 @@
 ---
 title: DCISetDestination
 description: DCISetDestination
-ms.assetid: 7a9b3ead-c520-4856-a183-44e7c85ba0e1
 keywords: ["DCISetDestination Display Devices"]
 topic_type:
 - apiref

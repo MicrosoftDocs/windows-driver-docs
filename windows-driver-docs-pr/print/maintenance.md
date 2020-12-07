@@ -1,7 +1,6 @@
 ---
 title: Maintenance
 description: Maintenance
-ms.assetid: 228759ed-f6de-4680-adf2-ca88b83ff4a0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Improved End-User Experience
 description: Improved End-User Experience
-ms.assetid: d87062f2-2832-4443-b9f0-97e34f79c47f
 keywords:
 - Print Tickets WDK , XPSDrv
 - XPSDrv printer drivers WDK , end-user improvements

@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_RELEASE
 description: AVC\_FUNCTION\_RELEASE
-ms.assetid: 77a35af2-ddf4-454b-a3a9-f5b7312fa64a
 keywords: ["AVC_FUNCTION_RELEASE Streaming Media Devices"]
 topic_type:
 - apiref

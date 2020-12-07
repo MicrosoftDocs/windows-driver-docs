@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x12D VOLSNAP_OVERLAPPED_TABLE_ACCESS
 description: The VOLSNAP_OVERLAPPED_TABLE_ACCESS bug check has a value of 0x0000012D that indicates that volsnap tried to access a common table from two different threads.
-ms.assetid: F1D378E9-CD5D-4DA3-A200-DAED66284534
 keywords: ["Bug Check 0x12D VOLSNAP_OVERLAPPED_TABLE_ACCESS", "VOLSNAP_OVERLAPPED_TABLE_ACCESS"]
 ms.date: 05/23/2017
 topic_type:

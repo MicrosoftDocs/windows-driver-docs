@@ -1,7 +1,6 @@
 ---
 title: PKEY\_FX\_Offload\_StreamEffectClsid
 description: In Windows 10, version 1511 and later, the PKEY\_FX\_Offload\_StreamEffectClsid property key identifies the stream effect (SFX) supported by the driver that will be loaded during offload playback.
-ms.assetid: 2258E1F8-A96E-4991-B882-00197C2DB0B3
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

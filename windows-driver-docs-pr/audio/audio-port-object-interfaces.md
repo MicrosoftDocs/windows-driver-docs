@@ -1,7 +1,6 @@
 ---
 title: Audio Port Object Interfaces
 description: Audio Port Object Interfaces
-ms.assetid: 16026a03-4859-4fe8-a106-0d8a2b2a7f14
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

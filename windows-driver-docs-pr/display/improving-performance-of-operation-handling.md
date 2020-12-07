@@ -1,7 +1,6 @@
 ---
 title: Improving Performance of Operation Handling
 description: Improving Performance of Operation Handling
-ms.assetid: 14b5aa90-15ee-40c6-8f5b-e776b07932ab
 keywords:
 - Direct3D WDK Windows 2000 display , operation codes
 - operation codes WDK Direct3D

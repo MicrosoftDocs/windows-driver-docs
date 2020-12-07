@@ -1,7 +1,6 @@
 ---
 title: ew Keyword for PPD Schema
 description: ew Keyword for PPD Schema
-ms.assetid: 05caa402-4949-4c0f-913c-1c87e65c30d7
 keywords:
 - root-level keywords WDK printer autoconfiguration
 - PPD files WDK autoconfiguration , keywords

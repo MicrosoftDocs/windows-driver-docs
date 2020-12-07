@@ -1,7 +1,6 @@
 ---
 title: MediaBack element
 description: The optional MediaBack element contains all parameters that are specific to the scanning of the back side of the physical media.
-ms.assetid: d736c76f-7ea7-49ca-9ad9-df35924fc7b4
 keywords: ["MediaBack element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_DetailedDescription
 description: DEVPKEY_DrvPkg_DetailedDescription
-ms.assetid: ee9080d1-8c66-42b3-af48-cb1fbfc332e2
 keywords: ["DEVPKEY_DrvPkg_DetailedDescription Device and Driver Installation"]
 topic_type:
 - apiref

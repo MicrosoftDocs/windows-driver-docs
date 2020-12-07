@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PRODUCT\_GUID
 description: Learn about the KSPROPERTY\_AUDIO\_PRODUCT\_GUID parameter. This parameter name is reserved for future use.
-ms.assetid: 891b0062-3879-4402-999b-85759c7920a8
 keywords: ["KSPROPERTY_AUDIO_PRODUCT_GUID Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Local Print Provider
 description: Local Print Provider
-ms.assetid: c6f9ba42-5f0f-4919-bfac-e4cd1045de4d
 keywords:
 - print providers WDK , local print providers
 - local print providers WDK

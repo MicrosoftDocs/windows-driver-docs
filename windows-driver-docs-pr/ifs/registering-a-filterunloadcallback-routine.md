@@ -1,7 +1,6 @@
 ---
 title: Registering a FilterUnloadCallback Routine
 description: Registering a FilterUnloadCallback Routine
-ms.assetid: 0f4eac6d-08ef-47d5-8c1f-5397f058ecb2
 keywords:
 - file system minifilter drivers WDK , FilterUnloadCallback routine
 - minifilter drivers WDK , FilterUnloadCallback routine

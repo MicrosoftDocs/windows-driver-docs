@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Interrupt Code
 description: Learn about synchronizing interrupt code. See factors that complicate driver code for hardware interrupts and view rules used to avoid those complications.
-ms.assetid: a24477dc-f75d-4ab6-8695-d8a85247e276
 keywords:
 - hardware interrupts WDK KMDF , synchronization
 - interrupts WDK KMDF , synchronization

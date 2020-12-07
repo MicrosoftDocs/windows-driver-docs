@@ -1,7 +1,6 @@
 ---
 title: Driver Stack Management
 description: Driver Stack Management
-ms.assetid: 61d17e92-a1bf-42d9-b241-400b43b0ec0a
 keywords:
 - driver stacks WDK networking , managing
 - miniport adapters WDK networking , driver stacks

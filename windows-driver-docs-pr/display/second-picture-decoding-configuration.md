@@ -1,7 +1,6 @@
 ---
 title: Second Picture Decoding Configuration
 description: Second Picture Decoding Configuration
-ms.assetid: 01208797-2cf9-439b-b250-25f8ca3565d6
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA

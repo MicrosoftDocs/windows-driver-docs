@@ -1,7 +1,6 @@
 ---
 title: COM-Based Rendering Plug-Ins
 description: COM-Based Rendering Plug-Ins
-ms.assetid: c80d6c2b-ba4d-4bd1-bd3a-8c1b0bf29884
 keywords:
 - COM-based rendering plug-ins WDK print
 - rendering plug-ins WDK print , COM-based

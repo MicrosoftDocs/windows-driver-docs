@@ -1,7 +1,6 @@
 ---
 title: Debugging Still Image Components
 description: Debugging Still Image Components
-ms.assetid: 587b8db7-7fca-4b70-8901-3adbde07718f
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: GDI Hardware Acceleration
 description: GDI Hardware Acceleration
-ms.assetid: 03db58e6-a6d5-4b6f-ba71-d22a985f9c57
 keywords:
 - miniport drivers WDK display
 - GDI hardware acceleration WDK display

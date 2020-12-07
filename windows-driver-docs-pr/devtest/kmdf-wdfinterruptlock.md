@@ -1,7 +1,6 @@
 ---
 title: WdfInterruptLock rule (kmdf)
 description: The WdfInterruptLock rule specifies that calls to the WdfInterruptAcquireLock method is used in strict alternation with calls to WdfInterruptReleaseLock.
-ms.assetid: bf105e83-dc63-44b1-ba9d-e4d81210fa1a
 ms.date: 05/21/2018
 keywords: ["WdfInterruptLock rule (kmdf)"]
 topic_type:

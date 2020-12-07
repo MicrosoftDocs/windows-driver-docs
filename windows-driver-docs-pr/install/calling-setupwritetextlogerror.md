@@ -1,7 +1,6 @@
 ---
 title: Calling SetupWriteTextLogError
 description: Calling SetupWriteTextLogError
-ms.assetid: 55edc72a-2d53-4084-a1e4-e7e6515a4990
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

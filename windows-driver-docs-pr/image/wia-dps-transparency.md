@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_TRANSPARENCY
 description: The WIA\_DPS\_TRANSPARENCY property is obsolete and should not be used.
-ms.assetid: c3781d8e-d19d-4482-a4c1-3d613b04f14c
 keywords: ["WIA_DPS_TRANSPARENCY Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Record Persistence
 description: Participating in Error Record Persistence
-ms.assetid: 06cbcccf-7cda-468d-aa6e-b8ecf95adf16
 keywords:
 - Windows Hardware Error Architecture WDK , error record persistence
 - WHEA WDK , error record persistence

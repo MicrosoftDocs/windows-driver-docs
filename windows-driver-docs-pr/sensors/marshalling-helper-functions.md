@@ -1,7 +1,6 @@
 ---
 title: Marshalling helper functions
 description: This topic provides information about the marshaling helper functions in the sensorsutils.h header file.
-ms.assetid: AE5C70E4-1971-4BAF-AE7D-315A15F030DD
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

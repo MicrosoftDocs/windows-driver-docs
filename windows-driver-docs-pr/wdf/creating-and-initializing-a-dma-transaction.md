@@ -1,7 +1,6 @@
 ---
 title: Creating and Initializing a DMA Transaction
 description: Creating and Initializing a DMA Transaction
-ms.assetid: 1982c3fa-9e4a-4b26-8902-321223d9159f
 keywords:
 - DMA transactions WDK KMDF , initializing
 - DMA operations WDK KMDF , transactions

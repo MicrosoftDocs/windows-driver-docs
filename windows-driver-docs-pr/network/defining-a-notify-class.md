@@ -1,7 +1,6 @@
 ---
 title: Defining a Notify Class
 description: Defining a Notify Class
-ms.assetid: e21cf020-0bf8-4091-aac4-6324a680194a
 keywords:
 - notify objects WDK networking , notify classes
 - network notify objects WDK , notify classes

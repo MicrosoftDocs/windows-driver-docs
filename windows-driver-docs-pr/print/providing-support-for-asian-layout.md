@@ -1,7 +1,6 @@
 ---
 title: Providing Support for Asian Layout
 description: Providing Support for Asian Layout
-ms.assetid: 38c7dfca-ce30-4967-84a4-e2f40bba8c57
 keywords:
 - print processors WDK , Asian languages
 - Asian languages WDK print

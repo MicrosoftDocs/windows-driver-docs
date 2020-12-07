@@ -1,7 +1,6 @@
 ---
 title: Live Local Debugging
 description: Live Local Debugging
-ms.assetid: ec76a71e-f173-4b66-beaf-d57a1c991acd
 keywords: ["kernel streaming debugging, live local debugging"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

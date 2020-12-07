@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MOUSE
 description: GUID_DEVINTERFACE_MOUSE
-ms.assetid: c5aff960-a78d-4429-ba3f-f2f91d9a56fa
 keywords: ["GUID_DEVINTERFACE_MOUSE Device and Driver Installation"]
 topic_type:
 - apiref

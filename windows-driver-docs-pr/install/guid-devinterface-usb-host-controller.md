@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_USB_HOST_CONTROLLER
 description: GUID_DEVINTERFACE_USB_HOST_CONTROLLER
-ms.assetid: 4afa1ada-ff57-4585-9117-10595310b976
 keywords: ["GUID_DEVINTERFACE_USB_HOST_CONTROLLER Device and Driver Installation"]
 topic_type:
 - apiref

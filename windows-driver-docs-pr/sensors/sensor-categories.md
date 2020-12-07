@@ -1,7 +1,6 @@
 ---
 title: Sensor categories
 description: Sensor categories
-ms.assetid: 609C57BA-1C3E-435B-BAAE-C01C3669D59D
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

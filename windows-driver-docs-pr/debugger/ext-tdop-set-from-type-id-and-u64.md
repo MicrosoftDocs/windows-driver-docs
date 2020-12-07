@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_SET\_FROM\_TYPE\_ID\_AND\_U64
 description: The EXT\_TDOP\_SET\_FROM\_TYPE\_ID\_AND\_U64 sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation creates a typed data description from a data type and a memory location.
-ms.assetid: 5b1ee241-6f35-4bbf-b4e0-3cefa5a39dde
 keywords: ["EXT_TDOP_SET_FROM_TYPE_ID_AND_U64 Windows Debugging"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DirectSound Stream Data Format
 description: DirectSound Stream Data Format
-ms.assetid: 41d3d5ad-7336-4ecf-b6e2-a24ee4ec731f
 keywords:
 - DirectSound WDK audio , stream data formats
 ms.date: 04/20/2017

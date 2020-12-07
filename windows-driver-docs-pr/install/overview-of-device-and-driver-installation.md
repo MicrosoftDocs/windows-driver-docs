@@ -1,7 +1,6 @@
 ---
 title: Overview of Device and Driver Installation
 description: Overview of Device and Driver Installation
-ms.assetid: 5f29635b-c41b-40d1-8b83-b7f5bc71413b
 keywords:
 - Device setup WDK device installations , about device installations
 - device installations WDK , about device installations

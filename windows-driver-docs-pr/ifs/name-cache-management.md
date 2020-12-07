@@ -1,7 +1,6 @@
 ---
 title: Name Cache Management
 description: Name Cache Management
-ms.assetid: 3e1b1419-320e-44e0-a6c2-823517cf07c7
 keywords:
 - RDBSS WDK file systems , name cache
 - Redirected Drive Buffering Subsystem WDK file systems , name cache

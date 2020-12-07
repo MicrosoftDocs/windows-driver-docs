@@ -1,7 +1,6 @@
 ---
 title: Signing Drivers for Public Release
 description: Signing Drivers for Public Release
-ms.assetid: 29e465b4-42f2-4c41-afa7-3f0adf579b0c
 keywords:
 - driver signing WDK , public release
 - signing drivers WDK , public release

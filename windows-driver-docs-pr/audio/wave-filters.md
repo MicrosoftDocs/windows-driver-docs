@@ -1,7 +1,6 @@
 ---
 title: Wave Filters
 description: Wave Filters
-ms.assetid: 9e364c8f-55c3-4ec9-a9ce-9ee0f6a0746b
 keywords:
 - audio filters WDK audio , wave
 - wave filters WDK audio

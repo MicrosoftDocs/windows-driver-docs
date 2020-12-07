@@ -1,7 +1,6 @@
 ---
 title: Considerations for writing a sensor driver
 description: Considerations for writing a sensor driver
-ms.assetid: fec3cfe8-43ad-481a-833a-6f38d04bfdef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

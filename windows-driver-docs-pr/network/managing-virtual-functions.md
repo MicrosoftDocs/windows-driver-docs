@@ -1,7 +1,6 @@
 ---
 title: Managing Virtual Functions
 description: Managing Virtual Functions
-ms.assetid: 6B08B04D-C9A1-4159-9866-D179012191B2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: C28639
 description: Warning C28639 Calling close handle with string.
-ms.assetid: 346b9798-3719-4b8e-8edd-f8ee3b751cef
 ms.date: 04/20/2017
 ms.localizationpriority: medium 
 f1_keywords: 

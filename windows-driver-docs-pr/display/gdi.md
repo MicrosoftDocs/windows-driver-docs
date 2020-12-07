@@ -1,7 +1,6 @@
 ---
 title: GDI
 description: GDI
-ms.assetid: b92146b6-5252-45d3-a684-623f72f02b86
 keywords:
 - graphics WDK Windows 2000 display
 - Windows 2000 display driver model WDK , GDI

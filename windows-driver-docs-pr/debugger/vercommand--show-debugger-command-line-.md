@@ -1,7 +1,6 @@
 ---
 title: vercommand (Show Debugger Command Line)
 description: The vercommand command displays the command that opened the debugger.
-ms.assetid: cfac4fb6-8a70-4eeb-a755-caffc6d146e3
 keywords: ["vercommand (Show Debugger Command Line) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

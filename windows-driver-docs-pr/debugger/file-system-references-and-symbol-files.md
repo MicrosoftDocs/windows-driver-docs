@@ -1,7 +1,6 @@
 ---
 title: File System References and Symbol Files
 description: File System References and Symbol Files
-ms.assetid: c667380f-2942-453c-9ec8-70d3e1355e72
 keywords: ["SymStore, short file names", "short file names and SymStore"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

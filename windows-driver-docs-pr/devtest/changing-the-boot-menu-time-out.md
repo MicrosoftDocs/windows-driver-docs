@@ -1,7 +1,6 @@
 ---
 title: Changing the Boot Menu Time-out
 description: Changing the Boot Menu Time-out
-ms.assetid: 447fe656-4bb5-454e-bc89-bab58c8ffaea
 keywords:
 - Boot.ini files WDK , menu time-outs
 - boot options WDK , menu time-outs

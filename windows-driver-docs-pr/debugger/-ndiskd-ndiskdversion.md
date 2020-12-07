@@ -1,7 +1,6 @@
 ---
 title: ndiskd.ndiskdversion
 description: The ndiskd.ndiskdversion extension displays information about ndiskd itself.
-ms.assetid: 12EB9E0F-7D2F-447B-B678-1E23EFF522FE
 keywords: ["ndiskd.ndiskdversion Windows Debugging"]
 ms.date: 06/11/2020
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Implementation Notes for Segmentation Filters
 description: Implementation Notes for Segmentation Filters
-ms.assetid: c4caf8dd-8108-4bc7-b02f-1e180fedb95f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

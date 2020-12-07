@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES
 description: The KSPROPERTY\_AUDIOSIGNALPROCESSING\_MODES property returns the list of audio signal processing modes supported by a pin factory.
-ms.assetid: 95536F80-D4E0-48CB-8DB2-603C4CEF0053
 keywords: ["KSPROPERTY_AUDIOSIGNALPROCESSING_MODES Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Introduction to Segmentation Filters
 description: Introduction to Segmentation Filters
-ms.assetid: 3f73aa08-c3ef-4e97-9e3e-a1f0325cd599
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

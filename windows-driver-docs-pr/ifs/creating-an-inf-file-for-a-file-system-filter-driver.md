@@ -1,7 +1,6 @@
 ---
 title: Creating an INF File for a legacy file system driver
 description: How to create an INF File for a legacy file system driver
-ms.assetid: 1e8d0e59-eabd-4bdb-9675-e693a0b364ca
 keywords:
 - INF files WDK file system , creating
 ms.date: 04/20/2017

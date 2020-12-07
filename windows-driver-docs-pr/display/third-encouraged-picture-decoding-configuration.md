@@ -1,7 +1,6 @@
 ---
 title: Third Encouraged Picture Decoding Configuration
 description: Third Encouraged Picture Decoding Configuration
-ms.assetid: 9f905030-9fc9-4a5f-8cf5-a36c7861be52
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA

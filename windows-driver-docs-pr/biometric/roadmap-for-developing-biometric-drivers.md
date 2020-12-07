@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing Biometric Drivers
 description: Roadmap for Developing Biometric Drivers
-ms.assetid: 8ed13c75-86d1-4ac0-9f44-05162521b915
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

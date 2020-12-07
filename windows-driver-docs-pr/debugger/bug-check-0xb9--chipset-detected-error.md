@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xB9 CHIPSET_DETECTED_ERROR
 description: The CHIPSET_DETECTED_ERROR bug check has a value of 0x000000B9.This bug check appears very infrequently.
-ms.assetid: 21d92ea9-dae3-41f1-b0e7-3701c420f7ca
 keywords: ["Bug Check 0xB9 CHIPSET_DETECTED_ERROR", "CHIPSET_DETECTED_ERROR"]
 ms.date: 05/23/2017
 topic_type:

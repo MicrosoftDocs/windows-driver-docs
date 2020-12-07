@@ -1,7 +1,6 @@
 ---
 title: Multimatrix Vertex Blending Algorithm
 description: Multimatrix Vertex Blending Algorithm
-ms.assetid: 78ea0a92-a026-4c8d-a0ff-8be17b0a6424
 keywords:
 - multimatrix vertex blending WDK Direct3D , algorithm
 ms.date: 04/20/2017

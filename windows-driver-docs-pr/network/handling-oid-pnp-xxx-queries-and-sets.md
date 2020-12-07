@@ -1,7 +1,6 @@
 ---
 title: Handling OID_PNP_Xxx Queries and Sets
 description: Handling OID_PNP_Xxx Queries and Sets
-ms.assetid: 2d5db7fb-2a27-4359-9d75-35939e72de69
 keywords:
 - OID_PNP_Xxx
 - query operations WDK NDIS intermediate

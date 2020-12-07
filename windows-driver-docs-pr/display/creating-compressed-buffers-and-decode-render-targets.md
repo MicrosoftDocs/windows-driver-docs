@@ -1,7 +1,6 @@
 ---
 title: Creating Compressed Buffers and Decode Render Targets
 description: Creating Compressed Buffers and Decode Render Targets
-ms.assetid: 4d386b72-24d9-424b-8d48-7eaf75aab76c
 keywords:
 - video decoding WDK DirectX VA , render targets
 - decoding video WDK DirectX VA , render targets

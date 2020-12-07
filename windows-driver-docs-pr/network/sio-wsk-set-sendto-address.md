@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_SET_SENDTO_ADDRESS
 description: SIO_WSK_SET_SENDTO_ADDRESS
-ms.assetid: 2dd149d2-adc6-4e03-92de-ed76aa048886
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_SENDTO_ADDRESS Network Drivers Starting with Windows Vista

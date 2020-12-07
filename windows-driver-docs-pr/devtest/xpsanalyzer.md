@@ -1,7 +1,6 @@
 ---
 title: XpsAnalyzer
 description: XpsAnalyzer
-ms.assetid: 5d8b2318-303a-4e44-bfd2-aa41a67a9ea5
 keywords:
 - XpsAnalyzer WDK
 ms.date: 09/17/2018

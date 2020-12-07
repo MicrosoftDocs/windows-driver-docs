@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_CAPABILITIES
 description: The KSPROPERTY\_EXTXPORT\_CAPABILITIES property retrieves an external device's transport-specific capabilities.
-ms.assetid: 5394d05c-0c3e-4413-a61e-21445117a350
 keywords: ["KSPROPERTY_EXTXPORT_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref

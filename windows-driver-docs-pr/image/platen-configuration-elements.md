@@ -1,7 +1,6 @@
 ---
 title: Platen Configuration Elements
 description: Platen Configuration Elements
-ms.assetid: 8f3d61cc-1aee-4f2d-82c3-1bd357c8e771
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WDTF Architecture
 description: WDTF Architecture
-ms.assetid: 8c110e97-6870-41f1-a4f3-4d44b2974c1a
 keywords:
 - Windows Device Testing Framework WDK , architecture
 - WDTF WDK , architecture

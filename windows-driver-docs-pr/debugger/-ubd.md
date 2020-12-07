@@ -1,7 +1,6 @@
 ---
 title: ubd
 description: The ubd extension temporarily disables a user-space breakpoint.
-ms.assetid: a639c5e0-111c-45c7-ac7d-6b7e70c1de4f
 keywords: ["ubd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

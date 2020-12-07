@@ -1,7 +1,6 @@
 ---
 title: Driver Features
 description: Driver Features
-ms.assetid: 56efebda-970f-4885-9c5f-1eac97aecfdd
 ms.date: 01/30/2019
 ms.localizationpriority: medium
 ---

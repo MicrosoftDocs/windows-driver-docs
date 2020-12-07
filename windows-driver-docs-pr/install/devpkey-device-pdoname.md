@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_PDOName
 description: DEVPKEY_Device_PDOName
-ms.assetid: 1f2bc1e0-a671-47f6-9fbb-d0482b5abeca
 keywords: ["DEVPKEY_Device_PDOName Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Registering Fast I/O Dispatch Routines
 description: Registering Fast I/O Dispatch Routines
-ms.assetid: e559d3f2-be33-4a35-8931-4716e6082fc9
 keywords:
 - registering fast I/O dispatch routines
 - dispatch routines WDK file system

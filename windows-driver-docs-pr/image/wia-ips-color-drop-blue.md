@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_COLOR\_DROP\_BLUE
 description: The WIA\_IPS\_COLOR\_DROP\_BLUE property is used to configure the amount of color drop-out for the Blue color channel (B in RGB), as a percentage in a range from 0 (no dropout) to 100 (full channel dropout).
-ms.assetid: AA3E633C-766A-4935-B942-6938D543F801
 keywords: ["WIA_IPS_COLOR_DROP_BLUE Imaging Devices"]
 topic_type:
 - apiref

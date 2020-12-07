@@ -1,7 +1,6 @@
 ---
 title: Updates for Earlier DirectX DDK Versions
 description: Updates for Earlier DirectX DDK Versions
-ms.assetid: dd05c0ca-faf4-4591-b699-afdab2085108
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

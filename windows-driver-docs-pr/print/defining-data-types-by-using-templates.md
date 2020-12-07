@@ -1,7 +1,6 @@
 ---
 title: Defining Data Types by Using Templates
 description: Defining Data Types by Using Templates
-ms.assetid: 9768f0da-b6cb-4f92-9ab4-2c95fedcb44c
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , defining data types by using templates

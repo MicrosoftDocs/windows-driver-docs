@@ -1,7 +1,6 @@
 ---
 title: Supporting Initialization and Termination Functions
 description: Supporting Initialization and Termination Functions
-ms.assetid: 306be966-be23-4680-aeda-32e9cb1ac4a9
 keywords:
 - drawing WDK GDI , initialization
 - drawing WDK GDI , initialization, about

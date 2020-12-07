@@ -1,7 +1,6 @@
 ---
 title: Initialization Sequence for PF Miniport Drivers
 description: Initialization Sequence for PF Miniport Drivers
-ms.assetid: A8891D72-314D-4648-ABCA-E917C3091FF6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

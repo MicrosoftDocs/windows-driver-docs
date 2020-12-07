@@ -1,7 +1,6 @@
 ---
 title: MIDI Port Driver
 description: MIDI Port Driver
-ms.assetid: 4b403569-75c8-4cf4-bda1-efa9e004b529
 keywords:
 - MIDI port driver WDK audio
 - PortCls WDK audio , port drivers

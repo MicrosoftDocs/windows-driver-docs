@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for DeinterlaceBltEx
 description: Reporting Support for DeinterlaceBltEx
-ms.assetid: 9cf8d05c-ef59-44a4-a377-66282e7888d5
 keywords:
 - DeinterlaceBltEx, reporting
 - DXVA_VideoProcess_SubStreamsExtended

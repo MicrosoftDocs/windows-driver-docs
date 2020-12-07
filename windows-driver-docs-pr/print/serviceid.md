@@ -1,7 +1,6 @@
 ---
 title: ServiceID
 description: ServiceID
-ms.assetid: ef7ff736-e5ec-47cf-b3b6-64988f43f594
 keywords:
 - WSDMON port monitors WDK , ServiceID command
 - ServiceID

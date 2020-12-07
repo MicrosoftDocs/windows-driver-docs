@@ -1,7 +1,6 @@
 ---
 title: Supporting Vendor-Defined Paper Sizes
 description: Supporting Vendor-Defined Paper Sizes
-ms.assetid: 5c356857-ef43-41e4-a4ed-fae6655bd9ce
 keywords:
 - vendor-supplied paper sizes WDK Unidrv
 - nonstandard paper sizes WDK Unidrv

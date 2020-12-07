@@ -1,7 +1,6 @@
 ---
 title: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
 description: Using the CONNECT_FULLY_SPECIFIED Version of IoConnectInterruptEx
-ms.assetid: 5b75c32e-77e5-4761-b709-fedb8e33b57a
 keywords: ["IoConnectInterruptEx", "CONNECT_FULLY_SPECIFIED", "manual interrupt detections WDK kernel", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "FullySpecified"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

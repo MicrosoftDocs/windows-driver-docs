@@ -1,7 +1,6 @@
 ---
 title: Optional WIA Child Item Properties for Scanner Storage
 description: Optional WIA Child Item Properties for Scanner Storage
-ms.assetid: 3683e5ed-0a0a-479f-90ed-8d0d17833260
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

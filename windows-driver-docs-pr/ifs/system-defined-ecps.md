@@ -1,7 +1,6 @@
 ---
 title: System-Defined ECPs
 description: System-Defined ECPs
-ms.assetid: 6acb4be4-a7aa-431d-b2d8-3ef6d41cb4ef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

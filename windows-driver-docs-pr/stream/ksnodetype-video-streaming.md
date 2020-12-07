@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_STREAMING
 description: KSNODETYPE\_VIDEO\_STREAMING
-ms.assetid: cb959466-9c37-4063-83b3-7bce517230f6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

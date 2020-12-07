@@ -1,7 +1,6 @@
 ---
 title: Texturing Requirements
 description: Texturing Requirements
-ms.assetid: 5fb64c9e-1c6d-4a8a-9a8f-7d4ed6d5c301
 keywords:
 - texture sizes WDK Direct3D
 - texture filtering WDK Direct3D

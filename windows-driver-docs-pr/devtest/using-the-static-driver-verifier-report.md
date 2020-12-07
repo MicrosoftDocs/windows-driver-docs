@@ -1,7 +1,6 @@
 ---
 title: Using the Static Driver Verifier Report
 description: Using the Static Driver Verifier Report
-ms.assetid: ca6eaa53-cee5-4caf-b1e1-035ea800779b
 keywords:
 - Static Driver Verifier WDK , verification results
 - StaticDV WDK , verification results

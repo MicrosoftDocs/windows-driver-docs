@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_NEED_CLASS_CONFIG
 description: CM_PROB_NEED_CLASS_CONFIG
-ms.assetid: e9604fcb-61c2-4b94-af53-c9278bc05dd0
 keywords:
 - CM_PROB_NEED_CLASS_CONFIG
 ms.date: 02/28/2020

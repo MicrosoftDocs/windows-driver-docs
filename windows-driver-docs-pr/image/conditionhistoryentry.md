@@ -1,7 +1,6 @@
 ---
 title: ConditionHistoryEntry element
 description: The required ConditionHistoryEntry element provides details about one of the past conditions on the scanner.
-ms.assetid: 2a5d52c2-6389-4afe-be6c-4645d62ccda0
 keywords: ["ConditionHistoryEntry element Imaging Devices"]
 topic_type:
 - apiref

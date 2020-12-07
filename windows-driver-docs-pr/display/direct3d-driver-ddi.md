@@ -1,7 +1,6 @@
 ---
 title: Direct3D Driver DDI
 description: Direct3D Driver DDI
-ms.assetid: afa1ca68-1bc2-4a41-b8e4-c09f0a009cfe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

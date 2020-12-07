@@ -2,7 +2,6 @@
 title: IRP_MJ_READ
 description: Every device driver that transfers data from its device to the system must handle read requests in a DispatchRead or DispatchReadWrite routine, as must any higher-level driver layered over such a device driver.
 ms.date: 08/12/2017
-ms.assetid: 5ae4c6c5-d8f2-4dc5-8cfd-ecb751fc88be
 keywords:
  - IRP_MJ_READ Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

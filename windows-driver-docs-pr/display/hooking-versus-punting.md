@@ -1,7 +1,6 @@
 ---
 title: Hooking Versus Punting
 description: Hooking Versus Punting
-ms.assetid: 52544915-8392-4eb1-8186-6a7fbad8ed4a
 keywords:
 - surface negotiation WDK GDI , hooking
 - surface negotiation WDK GDI , punting

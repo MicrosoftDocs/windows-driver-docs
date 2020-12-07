@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_DEVICE_INFO_ID
 description: EFI_USBFN_DEVICE_INFO_ID
-ms.assetid: bc0391b4-876a-4c3c-920c-a16a781a84b0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

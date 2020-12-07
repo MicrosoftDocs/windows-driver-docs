@@ -1,7 +1,6 @@
 ---
 title: Arranging Windows
 description: Arranging Windows
-ms.assetid: f6c0b778-42a8-4073-8cdb-c4b801e59274
 keywords: ["debugging information windows, suggestions for docking"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

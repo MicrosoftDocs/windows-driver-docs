@@ -1,7 +1,6 @@
 ---
 title: Installing a New Device Setup Class for a Bus
 description: Installing a New Device Setup Class for a Bus
-ms.assetid: a94899b6-02e0-4181-bb14-5552806a8c9e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

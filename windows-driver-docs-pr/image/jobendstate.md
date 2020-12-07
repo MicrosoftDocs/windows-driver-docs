@@ -1,7 +1,6 @@
 ---
 title: JobEndState element
 description: The required JobEndState element describes the final state of the current scan job.
-ms.assetid: c69b5988-ca0d-441f-9b65-e5692a17ccb3
 keywords: ["JobEndState element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: PreviousMode
 description: PreviousMode
-ms.assetid: 1251cca9-604c-48c0-a136-21dd1fe4fa72
 keywords: ["PreviousMode", "RequestorMode"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

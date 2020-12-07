@@ -1,7 +1,6 @@
 ---
 title: Irql\_Miniport\_Driver\_Function rule (ndis)
 description: The Irql\_Miniport\_Driver\_Function rule specifies that the NDIS functions for miniport drivers must be called at correct IRQL levels.
-ms.assetid: b82627db-63bd-413f-9d7f-dbb611cf2c50
 ms.date: 05/21/2018
 keywords: ["Irql_Miniport_Driver_Function rule (ndis)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_QUALITY
 description: KSCATEGORY_QUALITY
-ms.assetid: fc23e069-b514-41a3-b3c2-c65b35b2e431
 keywords: ["KSCATEGORY_QUALITY Device and Driver Installation"]
 topic_type:
 - apiref

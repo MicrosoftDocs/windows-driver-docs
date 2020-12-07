@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL
 description: KSNODETYPE\_ACOUSTIC\_ECHO\_CANCEL
-ms.assetid: 5f70b9ad-d569-404a-bf6d-01be689e2d56
 keywords: ["KSNODETYPE_ACOUSTIC_ECHO_CANCEL Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: AddTarget function
 description: The AddTarget WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated targets.
-ms.assetid: 9aac339b-a9b4-4de7-99dd-fa5f8889a686
 keywords: ["AddTarget function Storage Devices"]
 topic_type:
 - apiref

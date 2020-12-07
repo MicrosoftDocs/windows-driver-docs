@@ -1,7 +1,6 @@
 ---
 title: Verifying the Implementation of Container IDs
 description: Verifying the Implementation of Container IDs
-ms.assetid: 961f3c69-8010-4bf5-9bdf-cc01ff40546a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

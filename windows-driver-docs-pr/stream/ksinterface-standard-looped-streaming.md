@@ -1,7 +1,6 @@
 ---
 title: KSINTERFACE\_STANDARD\_LOOPED\_STREAMING
 description: KSINTERFACE\_STANDARD\_LOOPED\_STREAMING
-ms.assetid: c12e7085-fa13-48d3-b4ed-ea0a708f026b
 keywords: ["KSINTERFACE_STANDARD_LOOPED_STREAMING Streaming Media Devices"]
 topic_type:
 - apiref

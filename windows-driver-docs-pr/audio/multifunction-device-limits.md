@@ -1,7 +1,6 @@
 ---
 title: Multifunction Device Limits
 description: Multifunction Device Limits
-ms.assetid: 9375c451-b83f-4655-b1e2-cbd693eaaf5f
 keywords:
 - multifunction audio devices WDK , limits
 ms.date: 04/20/2017

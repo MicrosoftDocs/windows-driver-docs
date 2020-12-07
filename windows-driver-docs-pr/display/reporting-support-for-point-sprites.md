@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for Point Sprites
 description: Reporting Support for Point Sprites
-ms.assetid: 57241e2d-a636-454b-8497-17978b6ec285
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , point sprites
 - point sprites WDK DirectX 8.0

@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_INTERRUPT_MODERATION
 description: As a query, NDIS and overlying drivers use the OID_GEN_INTERRUPT_MODERATION OID to determine if interrupt moderation is enabled on a miniport adapter.
-ms.assetid: 4d9d2bda-f0b3-42d5-bb49-93a9b256f5ad
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_INTERRUPT_MODERATION Network Drivers Starting with Windows Vista

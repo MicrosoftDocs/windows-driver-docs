@@ -1,7 +1,6 @@
 ---
 title: Obtaining Preparsed Data
 description: Obtaining Preparsed Data
-ms.assetid: 7a2bdbd1-a970-421f-bbaa-40fe589bb49a
 keywords:
 - collections WDK HID , preparsed data
 - HID collections WDK , preparsed data

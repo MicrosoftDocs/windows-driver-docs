@@ -1,7 +1,6 @@
 ---
 title: Handling a System Set-Power IRP in a Filter Driver
 description: Handling a System Set-Power IRP in a Filter Driver
-ms.assetid: a6e364fc-f173-47ce-b36b-84f802cefcc3
 keywords: ["set-power IRPs WDK power management", "filter drivers WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

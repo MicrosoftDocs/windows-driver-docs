@@ -1,7 +1,6 @@
 ---
 title: Sample Port Monitor
 description: Sample Port Monitor
-ms.assetid: dac754bf-f39d-439c-974b-889436211ef3
 keywords:
 - port monitors WDK print , samples
 ms.date: 08/25/2020

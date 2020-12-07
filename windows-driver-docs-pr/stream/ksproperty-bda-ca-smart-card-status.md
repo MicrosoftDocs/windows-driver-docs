@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS
 description: Clients use KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS to determine status on the smart card reader associated with an ECM map node.
-ms.assetid: a53cea17-0463-4909-839b-6e8ad67dac82
 keywords: ["KSPROPERTY_BDA_CA_SMART_CARD_STATUS Streaming Media Devices"]
 topic_type:
 - apiref

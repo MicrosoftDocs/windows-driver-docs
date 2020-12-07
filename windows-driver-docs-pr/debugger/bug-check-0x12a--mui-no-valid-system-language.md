@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x12A MUI_NO_VALID_SYSTEM_LANGUAGE
 description: The MUI_NO_VALID_SYSTEM_LANGUAGE bug check has a value of 0x0000012A. This indicates that Windows did not find any installed, licensed language packs for the system default UI language.
-ms.assetid: 6424FC7D-BD39-4F35-9E72-E9730D27CC24
 keywords: ["Bug Check 0x12A MUI_NO_VALID_SYSTEM_LANGUAGE", "MUI_NO_VALID_SYSTEM_LANGUAGE"]
 ms.date: 05/23/2017
 topic_type:

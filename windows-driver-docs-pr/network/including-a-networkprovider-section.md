@@ -1,7 +1,6 @@
 ---
 title: Including a NetworkProvider Section
 description: Including a NetworkProvider Section
-ms.assetid: 8972f926-c4f5-4a2f-8f2d-f9353fdbd83f
 keywords:
 - INF files WDK network , NetworkProvider section
 - network INF files WDK , NetworkProvider section

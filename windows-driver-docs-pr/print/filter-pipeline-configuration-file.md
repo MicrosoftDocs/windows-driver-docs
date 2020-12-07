@@ -1,7 +1,6 @@
 ---
 title: Filter Pipeline Configuration File
 description: Filter Pipeline Configuration File
-ms.assetid: 586247bd-6d06-4728-a5f0-ee3fe1d09321
 keywords:
 - XPSDrv printer drivers WDK , render modules
 - render modules WDK XPSDrv , filter pipeline configuration files

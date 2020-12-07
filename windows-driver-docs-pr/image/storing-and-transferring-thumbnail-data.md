@@ -1,7 +1,6 @@
 ---
 title: Storing and Transferring Thumbnail Data
 description: Storing and Transferring Thumbnail Data
-ms.assetid: 4c27f93f-859e-42e3-95ea-9bfd8d0329d6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

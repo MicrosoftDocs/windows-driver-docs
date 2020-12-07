@@ -1,6 +1,5 @@
 ---
 title: InputBufferAPI rule (kmdf)
-ms.assetid: 11388ffa-633d-4129-9693-a351ec8b0735
 ms.date: 05/21/2018
 description: "Learn more about: InputBufferAPI rule (kmdf)"
 keywords: ["InputBufferAPI rule (kmdf)"]

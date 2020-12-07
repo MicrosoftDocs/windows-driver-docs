@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /displayorder
 description: The displayorder command sets the display order to be used by the boot manager.
-ms.assetid: 6e2fcde1-f2f8-434d-80d5-d74f32831bfe
 ms.date: 09/23/2020
 keywords: ["BCDEdit /displayorder Driver Development Tools"]
 topic_type:

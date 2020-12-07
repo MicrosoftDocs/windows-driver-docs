@@ -1,7 +1,6 @@
 ---
 title: Updating Device Firmware using Windows Update
 description: This topic describes how to update your device's firmware using the Windows Update (WU) service.
-ms.assetid: 778c5ab5-572f-43b9-8e9a-9dd608de17a9
 ms.date: 08/24/2017
 ms.localizationpriority: medium
 ---

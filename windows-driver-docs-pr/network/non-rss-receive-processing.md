@@ -1,7 +1,6 @@
 ---
 title: Non-RSS Receive Processing
 description: Non-RSS Receive Processing
-ms.assetid: 9fe262c3-9ce5-4625-8d29-ff7dc4ccb90a
 keywords:
 - receive-side scaling WDK networking , non-RSS receive processing
 - RSS WDK networking , non-RSS receive processing

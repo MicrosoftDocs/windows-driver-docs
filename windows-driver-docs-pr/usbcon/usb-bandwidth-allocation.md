@@ -2,7 +2,6 @@
 description: This section provides guidance concerning the careful management of USB bandwidth.
 title: USB Bandwidth Allocation
 ms.date: 04/20/2017
-ms.assetid: a1533825-a28f-45eb-9a54-c7298022c385
 ms.localizationpriority: medium
 ---
 

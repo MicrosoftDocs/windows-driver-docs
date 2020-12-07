@@ -1,7 +1,6 @@
 ---
 title: Reparse point tag request
 description: Describes how to obtain a Reparse Point tag, for those file system filter drivers that need one.
-ms.assetid: B4E4382B-4FB8-4E21-8FC4-EDDE8DD4AC77
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

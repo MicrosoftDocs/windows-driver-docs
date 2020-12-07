@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_ALL
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ALL property is used to set or get all the DirectSound 3D-listener properties for the specified listener ID.
-ms.assetid: cdf98ed6-cd8e-480c-b766-c348f41919ef
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ALL Audio Devices"]
 topic_type:
 - apiref

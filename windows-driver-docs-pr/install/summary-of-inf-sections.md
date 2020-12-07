@@ -1,7 +1,6 @@
 ---
 title: Summary of INF Sections
 description: Summary of INF Sections
-ms.assetid: a9d4691b-4429-456b-a5d2-482ccd0a2845
 keywords:
 - INF files WDK device installations , sections
 - sections WDK INF files

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x11D EVENT_TRACING_FATAL_ERROR
 description: The EVENT_TRACING_FATAL_ERROR bug check has a value of 0x0000011D. This bug check indicates that the Event Tracing subsystem has encountered an unexpected fatal error.
-ms.assetid: 5d9dee69-d6b5-426c-9165-e2b955a9cd41
 keywords: ["Bug Check 0x11D EVENT_TRACING_FATAL_ERROR", "EVENT_TRACING_FATAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:

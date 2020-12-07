@@ -1,7 +1,6 @@
 ---
 title: Introduction to Mutex Objects
 description: Introduction to Mutex Objects
-ms.assetid: c35b4341-09dd-411d-b933-6c762fecd23c
 keywords: ["kernel dispatcher objects WDK , mutex objects", "dispatcher objects WDK kernel , mutex objects", "mutex objects WDK kernel", "mutually exclusive access WDK kernel", "waiting on mutex objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

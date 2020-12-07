@@ -1,7 +1,6 @@
 ---
 title: Packet Flow over a Virtual Port
 description: Packet Flow over a Virtual Port
-ms.assetid: 1E4B1987-3288-4082-B8A8-0F275C61597F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

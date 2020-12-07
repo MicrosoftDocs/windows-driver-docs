@@ -1,7 +1,6 @@
 ---
 title: Using SymChk
 description: Using SymChk
-ms.assetid: 60c3df99-a842-4e46-a504-8e2b54030eef
 keywords: ["SymChk, using"]
 ms.date: 10/08/2017
 ms.localizationpriority: medium

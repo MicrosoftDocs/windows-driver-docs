@@ -1,7 +1,6 @@
 ---
 title: Specifying Segments When Creating Allocations
 description: Specifying Segments When Creating Allocations
-ms.assetid: 31bfbfd9-89e5-42fe-90bc-8ff54bac4f8b
 keywords:
 - memory segments WDK display , allocation creation
 - allocations WDK display

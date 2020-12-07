@@ -1,7 +1,6 @@
 ---
 title: USB Bidi Extender
 description: Describes Bidi support for USB device using a combination of a Bidi XML file and a Javascript file known as a USB Bidi extender.
-ms.assetid: C4012369-F1C6-4EBC-8DAE-F4E551DE782D
 ms.date: 06/11/2018
 ms.localizationpriority: medium
 ---

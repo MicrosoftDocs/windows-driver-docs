@@ -1,7 +1,6 @@
 ---
 title: Exposing Multichannel Nodes
 description: Exposing Multichannel Nodes
-ms.assetid: 48ee3b33-fb97-4e71-bf6f-5dbdb76aa7f8
 keywords:
 - audio properties WDK , multichannel nodes
 - WDM audio properties WDK , multichannel nodes

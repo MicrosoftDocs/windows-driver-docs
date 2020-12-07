@@ -1,7 +1,6 @@
 ---
 title: Windows Display Driver Model (WDDM) Operation Flow
 description: Windows Display Driver Model (WDDM) Operation Flow
-ms.assetid: 8d2af92c-392a-457d-af9f-796e1050031d
 keywords:
 - display driver model WDK Windows Vista , operation flow
 - Windows Vista display driver model WDK , operation flow

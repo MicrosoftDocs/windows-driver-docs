@@ -1,7 +1,6 @@
 ---
 title: Standard Variables
 description: Standard Variables
-ms.assetid: d3f85c0f-7387-4301-8b1e-904471aed4b0
 keywords:
 - GPD file entries WDK Unidrv , standard variables
 - variables WDK GPD files

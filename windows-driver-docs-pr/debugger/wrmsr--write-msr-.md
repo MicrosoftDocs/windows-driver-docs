@@ -1,7 +1,6 @@
 ---
 title: wrmsr (Write MSR)
 description: The wrmsr command writes a value to a Model-Specific Register (MSR) at the specified address.
-ms.assetid: fe90b984-e2d6-4af7-b708-56fbcd2bbadd
 keywords: ["wrmsr (Write MSR) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

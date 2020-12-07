@@ -1,7 +1,6 @@
 ---
 title: Introduction to Receive Side Scaling
 description: Introduction to Receive Side Scaling
-ms.assetid: 492628a7-ca2e-40cd-bf81-53a925130422
 keywords:
 - receive-side scaling WDK networking , about receive-side scaling
 - RSS WDK networking , about receive-side scaling

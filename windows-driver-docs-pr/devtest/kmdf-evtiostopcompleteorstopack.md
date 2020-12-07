@@ -1,7 +1,6 @@
 ---
 title: EvtIoStopCompleteOrStopAck rule (kmdf)
 description: The EvtIoStopCompleteOrStopAck rule specifies that within the EvtIoStop callback function the driver calls one of the following methods for each I/O request that is presented by the framework.
-ms.assetid: d534a08e-4bee-4ec6-ac6b-03a6454fb60f
 ms.date: 05/21/2018
 keywords: ["EvtIoStopCompleteOrStopAck rule (kmdf)"]
 topic_type:

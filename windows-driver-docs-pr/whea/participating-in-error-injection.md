@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Injection
 description: Participating in Error Injection
-ms.assetid: 0bd9efbd-e98d-457a-a28f-e09dcb5ae24d
 keywords:
 - Windows Hardware Error Architecture WDK , error injection
 - WHEA WDK , error injection

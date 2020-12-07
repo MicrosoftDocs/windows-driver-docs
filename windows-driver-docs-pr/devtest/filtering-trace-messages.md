@@ -1,7 +1,6 @@
 ---
 title: Filtering Trace Messages
 description: Filtering Trace Messages
-ms.assetid: 6e4be7ea-1a3f-4fb2-900d-b857cd635fde
 keywords:
 - TraceView WDK , filtering messages
 - filtering trace messages WDK

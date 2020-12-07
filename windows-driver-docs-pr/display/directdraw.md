@@ -1,7 +1,6 @@
 ---
 title: DirectDraw
 description: DirectDraw
-ms.assetid: b7f1194e-0f5e-444e-a71c-6a4a836547d9
 keywords:
 - DirectDraw WDK Windows 2000 display
 - Windows 2000 display driver model WDK , DirectDraw

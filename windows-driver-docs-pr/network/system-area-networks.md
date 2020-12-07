@@ -1,7 +1,6 @@
 ---
 title: System Area Networks Overview
 description: System Area Networks Overview
-ms.assetid: 6fbcc1d5-151d-4f17-8df9-79a463e3c149
 keywords:
 - system area networks WDK
 - SAN WDK

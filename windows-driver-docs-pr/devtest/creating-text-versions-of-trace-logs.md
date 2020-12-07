@@ -1,7 +1,6 @@
 ---
 title: Creating Text Versions of Trace Logs
 description: Creating Text Versions of Trace Logs
-ms.assetid: 15d15da3-e381-4b5f-81f2-300aa87e11db
 keywords:
 - TraceView WDK , text version trace logs
 - trace logs WDK TraceView , text versions

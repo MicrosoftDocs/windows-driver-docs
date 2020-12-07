@@ -1,7 +1,6 @@
 ---
 title: EFI_USB_DEVICE_INFO
 description: EFI_USB_DEVICE_INFO
-ms.assetid: b44f77fc-f496-488f-b53a-b54420da9360
 ms.date: 05/21/2020
 ms.localizationpriority: medium
 ---

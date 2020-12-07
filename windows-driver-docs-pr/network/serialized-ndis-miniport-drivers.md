@@ -1,7 +1,6 @@
 ---
 title: Serialized NDIS Miniport Drivers
 description: Serialized NDIS Miniport Drivers
-ms.assetid: 6b9b94ad-5d5d-465a-90bc-47095f6e2b9c
 keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types

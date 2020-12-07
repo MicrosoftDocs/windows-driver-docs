@@ -1,7 +1,6 @@
 ---
 title: Using the XPS Rasterization Service
 description: Using the XPS Rasterization Service
-ms.assetid: a6a3746a-3638-464b-bca0-60003f37af76
 ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---

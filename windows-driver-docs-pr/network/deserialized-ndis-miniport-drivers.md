@@ -1,7 +1,6 @@
 ---
 title: Deserialized NDIS Miniport Drivers
 description: Deserialized NDIS Miniport Drivers
-ms.assetid: d133370a-48f4-425b-a2bd-d95ec8b5c369
 keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types

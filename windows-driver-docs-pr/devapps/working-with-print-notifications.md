@@ -1,7 +1,6 @@
 ---
 title: Working with print notifications in a UWP device app
 description: This topic introduces print notifications, and shows how the C# version of the Print settings and print notifications sample uses a background task to respond to print notification.
-ms.assetid: 39A06A8A-5603-44AB-8884-C12B8E2F1A45
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

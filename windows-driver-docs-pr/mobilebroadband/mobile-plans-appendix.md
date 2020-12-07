@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans general appendix
 description: This topic describes appendix information for the Mobile Plans program.
-ms.assetid: B3B478DB-78F4-4031-B041-DCBAACC15D6F
 keywords:
 - Windows Mobile Plans appendix, Mobile Plans appendix mobile operators
 ms.date: 07/05/2019

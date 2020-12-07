@@ -1,7 +1,6 @@
 ---
 title: Edit Cut
 description: Edit Cut
-ms.assetid: e1cb2415-64a5-4c8a-902a-dbf78019243c
 keywords: ["Edit Cut", "text, Edit Cut"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

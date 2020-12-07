@@ -1,7 +1,6 @@
 ---
 title: Activity detection sensor data fields
 description: This topic provides information about the data fields that are specific to the activity detection sensor.
-ms.assetid: D123C082-9E20-44C2-A9F2-DAC0E09F61B7
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

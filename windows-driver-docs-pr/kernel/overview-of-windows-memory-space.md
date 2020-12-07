@@ -1,7 +1,6 @@
 ---
 title: Overview of Windows Memory Space
 description: Overview of Windows Memory Space
-ms.assetid: b49a35c2-6da6-4239-a67b-542d42a5c9e4
 keywords: ["memory management WDK kernel , about memory space", "memory space WDK kernel", "physical memory WDK kernel", "virtual memory WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

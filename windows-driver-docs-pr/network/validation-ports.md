@@ -1,7 +1,6 @@
 ---
 title: Validation Ports
 description: Validation Ports
-ms.assetid: 67556275-EF02-4996-A3A2-E9D5D6FCD1AF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

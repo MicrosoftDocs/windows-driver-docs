@@ -1,7 +1,6 @@
 ---
 title: SRB\_NOTIFY\_IDLE\_STATE
 description: The class driver sends this request to the minidriver immediately before sending the first open request or last close request. The minidriver can use SRB\_NOTIFY\_IDLE\_STATE as a notification to wake from USB Selective Suspend.
-ms.assetid: 7a2950a4-bd9f-4765-bb60-9e3aeeff49fb
 keywords: ["SRB_NOTIFY_IDLE_STATE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: triage
 description: triage
-ms.assetid: 5b52c470-0955-4ea6-859e-ac57447f6a2e
 keywords: ["triage extension (obsolete)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

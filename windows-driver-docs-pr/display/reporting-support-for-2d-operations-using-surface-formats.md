@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for 2D Operations Using Surface Formats
 description: Reporting Support for 2D Operations Using Surface Formats
-ms.assetid: c7737daf-3342-48dc-a365-f789b7203013
 keywords:
 - two-dimensional operations WDK DirectX 9.0 , surface formats
 - 2D operations WDK DirectX 9.0 , surface formats

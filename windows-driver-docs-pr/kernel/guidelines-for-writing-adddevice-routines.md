@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Writing AddDevice Routines
 description: Guidelines for Writing AddDevice Routines
-ms.assetid: 8df36af5-158c-4c14-9fc2-2c3f997c2098
 keywords: ["AddDevice routines WDK kernel , design guidelines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

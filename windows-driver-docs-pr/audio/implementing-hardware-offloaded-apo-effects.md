@@ -1,7 +1,6 @@
 ---
 title: Implementing Hardware Offloaded APO Effects
 description: Hardware offloading of audio processing objects (APOs) provides possible performance enhancements, as well as power savings.
-ms.assetid: 159DFFD2-2434-4EDC-A83C-455BA80F74C6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

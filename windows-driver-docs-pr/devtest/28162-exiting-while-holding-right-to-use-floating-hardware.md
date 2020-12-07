@@ -1,7 +1,6 @@
 ---
 title: C28162
 description: Warning C28162 Exiting while holding the right to use floating-point hardware.
-ms.assetid: e5e12470-4b38-457e-91a2-aae4b21ee466
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

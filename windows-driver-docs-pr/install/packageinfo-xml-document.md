@@ -1,7 +1,6 @@
 ---
 title: PackageInfo XML Document
 description: PackageInfo XML Document
-ms.assetid: 1fa9b8a5-d6ab-4952-8e2d-7cb7ccc88804
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

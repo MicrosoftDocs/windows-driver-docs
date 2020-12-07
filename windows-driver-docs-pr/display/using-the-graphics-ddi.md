@@ -1,7 +1,6 @@
 ---
 title: Using the Graphics DDI
 description: Using the Graphics DDI
-ms.assetid: e48d117b-8c1c-4617-84f8-b0b489b1083a
 keywords:
 - drawing WDK GDI , DDI
 - GDI WDK Windows 2000 display , DDI

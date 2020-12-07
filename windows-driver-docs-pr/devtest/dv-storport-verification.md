@@ -1,7 +1,6 @@
 ---
 title: Storport Verification
 description: Storport Verification
-ms.assetid: 3731C877-1A69-447C-A5DB-0BDD1B753D3D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

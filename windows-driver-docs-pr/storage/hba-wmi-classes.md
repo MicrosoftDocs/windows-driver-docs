@@ -1,7 +1,6 @@
 ---
 title: HBA WMI Classes
 description: HBA WMI Classes
-ms.assetid: 95ab50a0-8310-4b21-a986-9d3e924038d8
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

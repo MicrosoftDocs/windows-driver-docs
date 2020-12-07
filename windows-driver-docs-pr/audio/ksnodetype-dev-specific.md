@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_DEV\_SPECIFIC
 description: KSNODETYPE\_DEV\_SPECIFIC
-ms.assetid: a95f7950-836b-4a37-a431-eeb2201fe57d
 keywords: ["KSNODETYPE_DEV_SPECIFIC Audio Devices"]
 topic_type:
 - apiref

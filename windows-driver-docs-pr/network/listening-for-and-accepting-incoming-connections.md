@@ -1,7 +1,6 @@
 ---
 title: Listening for and Accepting Incoming Connections
 description: Listening for and Accepting Incoming Connections
-ms.assetid: 3ec7d6d0-8b8c-4d98-9e2a-e42b52dcd544
 keywords:
 - Winsock Kernel WDK networking , incoming connections
 - WSK WDK networking , incoming connections

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_MULTI\_FEED
 description: The WIA\_IPS\_MULTI\_FEED property is used to configure the action to be performed by the WIA minidriver when a multiple feed condition is detected at the device. The WIA minidriver creates and maintains this property.
-ms.assetid: 8BD92273-218B-4381-BCAF-ED9D227B6B94
 keywords: ["WIA_IPS_MULTI_FEED Imaging Devices"]
 topic_type:
 - apiref

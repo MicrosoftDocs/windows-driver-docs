@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_CAPTURE
 description: KSCATEGORY_CAPTURE
-ms.assetid: b33e9a04-00f2-4cfa-911e-55461ce5aae7
 keywords: ["KSCATEGORY_CAPTURE Device and Driver Installation"]
 topic_type:
 - apiref

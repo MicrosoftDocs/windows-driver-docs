@@ -1,7 +1,6 @@
 ---
 title: Resetting a Virtual Function
 description: Resetting a Virtual Function
-ms.assetid: 4B7A4E02-6383-45FB-9F75-D17C047C40D0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

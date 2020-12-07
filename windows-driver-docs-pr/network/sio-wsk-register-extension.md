@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_REGISTER_EXTENSION
 description: SIO_WSK_REGISTER_EXTENSION
-ms.assetid: e7fd6d68-85e8-4c5f-b67f-2193d200130d
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_REGISTER_EXTENSION Network Drivers Starting with Windows Vista

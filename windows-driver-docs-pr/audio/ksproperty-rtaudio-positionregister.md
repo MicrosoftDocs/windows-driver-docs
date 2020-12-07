@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_POSITIONREGISTER
 description: The KSPROPERTY\_RTAUDIO\_POSITIONREGISTER property maps the position register of an audio device for a particular stream into a virtual memory location that the client can access.The following table summarizes the features of this property.
-ms.assetid: 812072ec-d2a5-4e84-aebe-f24ca0d3cb21
 keywords: ["KSPROPERTY_RTAUDIO_POSITIONREGISTER Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Retrieving Device Setup Information
 description: Retrieving Device Setup Information
-ms.assetid: 95e88e4a-5a31-4d82-99ea-c9a4d7766c0f
 keywords:
 - audio adapters WDK , retrieving setup information
 - adapter drivers WDK audio , retrieving setup information

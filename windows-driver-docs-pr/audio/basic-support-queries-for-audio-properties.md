@@ -1,7 +1,6 @@
 ---
 title: Basic Support Queries for Audio Properties
 description: Basic Support Queries for Audio Properties
-ms.assetid: d08b6f86-e4fd-4b2c-bfaa-191bcbac3ff8
 keywords:
 - audio properties WDK , basic-support queries
 - WDM audio properties WDK , basic-support queries

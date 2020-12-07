@@ -1,7 +1,6 @@
 ---
 title: Configuring a Window
 description: Configuring a Window
-ms.assetid: d801b181-d1d5-419b-811d-38df538e36ef
 keywords: ["debugging information windows, configuring"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

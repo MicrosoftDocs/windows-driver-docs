@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 45457eb9-a791-450f-b3fd-f4e7dabc7a70
 keywords: ["Close method Print Devices", "Close method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , Close method"]
 topic_type:
 - apiref

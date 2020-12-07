@@ -1,7 +1,6 @@
 ---
 title: CCD Summaries and Scenarios
 description: CCD Summaries and Scenarios
-ms.assetid: 79d7a312-d498-493d-b0b6-416a10b84827
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, summaries and scenarios
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs, summaries and scenarios

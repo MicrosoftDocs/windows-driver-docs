@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_BdaLNBInfo
 description: KSPROPSETID\_BdaLNBInfo
-ms.assetid: 2b385e93-2d0d-44ca-9cfc-58afea946db6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

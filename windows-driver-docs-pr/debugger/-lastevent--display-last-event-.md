@@ -1,7 +1,6 @@
 ---
 title: .lastevent (Display Last Event)
 description: The .lastevent command displays the most recent exception or event that occurred.
-ms.assetid: 6f722c22-cb0f-4a10-b719-a168f7ba0943
 keywords: [".lastevent (Display Last Event) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

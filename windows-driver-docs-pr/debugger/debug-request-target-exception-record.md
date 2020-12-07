@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_RECORD
 description: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_RECORD
-ms.assetid: 4bfd3d22-00ab-407c-9a83-ce37c8421491
 keywords: ["DEBUG_REQUEST_TARGET_EXCEPTION_RECORD Windows Debugging"]
 topic_type:
 - apiref

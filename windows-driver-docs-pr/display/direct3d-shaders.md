@@ -1,7 +1,6 @@
 ---
 title: Direct3D Shaders
 description: Direct3D Shaders
-ms.assetid: 23b38ffb-ce15-4e61-bf7f-7f71848e077f
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , shaders
 - shaders WDK DirectX 8.0

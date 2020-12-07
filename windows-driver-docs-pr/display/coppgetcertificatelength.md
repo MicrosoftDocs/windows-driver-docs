@@ -1,7 +1,6 @@
 ---
 title: COPPGetCertificateLength function
 description: The sample COPPGetCertificateLength function retrieves the size, in bytes, of the certificate used by the graphics hardware.
-ms.assetid: 4a043c47-a5d2-4a7e-911c-9f57f7aa82cf
 keywords:
 - copy protection WDK COPP , video miniport driver code template
 - video copy protection WDK COPP , video miniport driver code template

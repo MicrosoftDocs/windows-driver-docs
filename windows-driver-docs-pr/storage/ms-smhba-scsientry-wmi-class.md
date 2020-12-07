@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_SCSIENTRY WMI Class
 description: MS\_SMHBA\_SCSIENTRY WMI Class
-ms.assetid: 8ac7a979-b3fe-4da6-a8e7-301c64b27e46
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

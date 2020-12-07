@@ -1,7 +1,6 @@
 ---
 title: 32-Bit Pointers and 64-Bit Pointers
 description: 32-Bit Pointers and 64-Bit Pointers
-ms.assetid: 641443b9-465f-4c7e-a13d-47a991304b46
 keywords: ["WdbgExts extensions, 32-bit pointers", "WdbgExts extensions, 64-bit pointers"]
 ms.date: 11/02/2018
 ms.localizationpriority: medium

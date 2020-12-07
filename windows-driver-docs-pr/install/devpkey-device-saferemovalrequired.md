@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SafeRemovalRequired
 description: DEVPKEY_Device_SafeRemovalRequired
-ms.assetid: a162e259-21aa-40d9-a65a-af175a59df6a
 keywords: ["DEVPKEY_Device_SafeRemovalRequired Device and Driver Installation"]
 topic_type:
 - apiref

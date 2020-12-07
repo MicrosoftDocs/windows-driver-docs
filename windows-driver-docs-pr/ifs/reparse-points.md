@@ -1,7 +1,6 @@
 ---
 title: About reparse points
 description: Describes file system filter driver reparse points
-ms.assetid: 50a4f124-024f-4b91-a51e-4f8c86e532ee
 keywords:
 - WDK file systems filter driver , reparse points
 - reparse points WDK file systems

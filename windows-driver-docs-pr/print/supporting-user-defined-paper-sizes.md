@@ -1,7 +1,6 @@
 ---
 title: Supporting User-Defined Paper Sizes
 description: Supporting User-Defined Paper Sizes
-ms.assetid: f9c0b759-687e-4d92-80ce-330e30cbc41c
 keywords:
 - user-defined paper sizes WDK Unidrv
 - customized paper sizes WDK Unidrv

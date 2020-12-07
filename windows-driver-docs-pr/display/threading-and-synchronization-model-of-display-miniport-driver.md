@@ -1,7 +1,6 @@
 ---
 title: Threading and Sync Model of Display Miniport Driver
 description: Threading and Synchronization Model of Display Miniport Driver
-ms.assetid: 4e5cf498-a2d1-44d5-b7a3-427f48b5da50
 keywords:
 - threading WDK display , miniport drivers
 - synchronization WDK display , miniport drivers

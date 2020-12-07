@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPV\_IMAGES\_DIRECTORY
 description: The WIA\_DPV\_IMAGES\_DIRECTORY property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 52838f61-86cf-4306-b938-509d9fdf6d6d
 keywords: ["WIA_DPV_IMAGES_DIRECTORY Imaging Devices"]
 topic_type:
 - apiref

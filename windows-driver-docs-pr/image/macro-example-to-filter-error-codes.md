@@ -1,7 +1,6 @@
 ---
 title: Macro Example to Filter Error Codes
 description: Macro Example to Filter Error Codes
-ms.assetid: 68aa0a75-82c7-4dd9-8f8f-eca5de6ea102
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

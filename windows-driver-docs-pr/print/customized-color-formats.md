@@ -1,7 +1,6 @@
 ---
 title: Customized Color Formats
 description: Customized Color Formats
-ms.assetid: 309d33e8-6338-4c32-8e03-d6cbf3371e16
 keywords:
 - Unidrv, color formats
 - color formats WDK Unidrv

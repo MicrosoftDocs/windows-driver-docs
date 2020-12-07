@@ -1,7 +1,6 @@
 ---
 title: Choosing a driver model
 description: Microsoft Windows provides a variety of driver models that you can use to write drivers.
-ms.assetid: 67de6453-969e-4b4d-a72e-de132b20b022
 keywords:
 - driver model
 - driver design

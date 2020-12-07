@@ -1,7 +1,6 @@
 ---
 title: DIF_NEWDEVICEWIZARD_PREANALYZE
 description: DIF_NEWDEVICEWIZARD_PREANALYZE
-ms.assetid: 6731a916-488a-4fb2-84d9-4b3cb9b8b160
 keywords: ["DIF_NEWDEVICEWIZARD_PREANALYZE Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: HID Architecture
 description: The architecture of the HID driver stack in Windows is built on the class driver named hidclass.sys.
-ms.assetid: FCDDCD6A-8808-44D5-B300-3869DD9FD46C
 keywords:
 - HID class driver
 - hidclass.sys

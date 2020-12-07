@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_CHECK\_CHANGES
 description: Clients use KSMETHOD\_BDA\_CHECK\_CHANGES to determine whether a list of requested changes will work.
-ms.assetid: 00a2d0ca-0ede-4ae5-ab2a-95d19143ea7c
 keywords: ["KSMETHOD_BDA_CHECK_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref

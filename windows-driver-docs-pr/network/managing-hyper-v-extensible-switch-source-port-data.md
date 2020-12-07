@@ -1,7 +1,6 @@
 ---
 title: Managing Hyper-V Extensible Switch Source Port Data
 description: Managing Hyper-V Extensible Switch Source Port Data
-ms.assetid: 885A2D15-BEFC-4FB0-AFE4-B472448E0FEA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

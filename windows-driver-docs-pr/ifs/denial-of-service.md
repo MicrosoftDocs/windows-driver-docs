@@ -1,7 +1,6 @@
 ---
 title: Denial of Service
 description: Denial of Service
-ms.assetid: b8b28d42-b680-482a-a7a1-6b2f5614ebfb
 keywords:
 - threat models WDK file systems , denial of service
 - security threat models WDK file systems , denial of service

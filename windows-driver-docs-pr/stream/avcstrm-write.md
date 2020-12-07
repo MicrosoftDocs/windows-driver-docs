@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_WRITE
 description: AVCSTRM\_WRITE
-ms.assetid: de11778d-21ab-40ae-8e7f-5229acfeea42
 keywords: ["AVCSTRM_WRITE Streaming Media Devices"]
 topic_type:
 - apiref

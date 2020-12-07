@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_TILT
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_TILT property to get or set a camera's tilt setting. This property is optional.
-ms.assetid: 265315ce-6f35-4f5a-907f-b5595e7fb5af
 keywords: ["KSPROPERTY_CAMERACONTROL_TILT Streaming Media Devices"]
 topic_type:
 - apiref

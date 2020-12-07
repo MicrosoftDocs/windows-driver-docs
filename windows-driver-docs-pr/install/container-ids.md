@@ -1,7 +1,6 @@
 ---
 title: Container ID
 description: A container ID is a system-supplied device identification string that uniquely groups the functional devices associated with a single-function or multifunction device installed in the computer.
-ms.assetid: 66e0c68a-c7bd-4d85-a438-0342c5943562
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

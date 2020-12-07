@@ -1,7 +1,6 @@
 ---
 title: GUI Mode Phase of the Network Upgrade Process
 description: GUI Mode Phase of the Network Upgrade Process
-ms.assetid: 35c382aa-5905-4a22-b9fa-b876d1373b94
 keywords:
 - network component upgrades WDK , phases
 - upgrading network components WDK , phases

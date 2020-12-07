@@ -1,7 +1,6 @@
 ---
 title: Virtual Audio Devices
 description: Virtual audio devices represent the filter graphs that render and capture audio content. The system audio driver (SysAudio) uses the available hardware and software components to determine the filter graphs to build.
-ms.assetid: 0f8ddd2d-f852-4b35-8a18-16416081d3c0
 keywords:
 - virtual audio devices WDK
 - SysAudio

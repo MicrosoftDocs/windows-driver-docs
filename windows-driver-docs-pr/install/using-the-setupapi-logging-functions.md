@@ -1,7 +1,6 @@
 ---
 title: Using the SetupAPI Logging Functions
 description: Using the SetupAPI Logging Functions
-ms.assetid: a2ba0da4-b891-4ff9-827b-0d64a7a02c0d
 keywords:
 - SetupAPI logging WDK Windows Vista , functions
 - functions WDK SetupAPI

@@ -1,7 +1,6 @@
 ---
 title: Responding to an OID_CO_TAPI_LINE_CAPS Query
 description: Responding to an OID_CO_TAPI_LINE_CAPS Query
-ms.assetid: b1ca65c6-ecce-4d2c-b7ca-03b6a334f97b
 keywords:
 - voice streaming WDK networking , support specification
 - OID_CO_TAPI_LINE_CAPS

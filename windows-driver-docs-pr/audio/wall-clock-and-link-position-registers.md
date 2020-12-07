@@ -1,7 +1,6 @@
 ---
 title: Wall Clock and Link Position Registers
 description: Wall Clock and Link Position Registers
-ms.assetid: 6764affc-a4f0-4568-aa27-7f12e86b818b
 keywords:
 - wall clock registers WDK audio
 - link position registers WDK audio

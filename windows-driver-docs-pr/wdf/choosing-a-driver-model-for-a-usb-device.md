@@ -1,7 +1,6 @@
 ---
 title: Choosing a Driver Model for a USB Device
 description: Choosing a Driver Model for a USB Device
-ms.assetid: 7272c491-bb41-4827-98be-17f1c784d2dd
 keywords:
 - user-mode drivers WDK UMDF , USB devices
 - UMDF WDK , USB devices

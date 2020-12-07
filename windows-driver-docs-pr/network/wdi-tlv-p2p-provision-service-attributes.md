@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES
 description: WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES is a TLV that contains Wi-Fi Direct Provision Service attributes.
-ms.assetid: CA318E91-660A-4F17-827B-F27E18643CC6
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_PROVISION_SERVICE_ATTRIBUTES Network Drivers Starting with Windows Vista

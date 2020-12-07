@@ -1,7 +1,6 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
 description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Initialize
-ms.assetid: e27ed767-7854-4b2f-8043-35c39357eee4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

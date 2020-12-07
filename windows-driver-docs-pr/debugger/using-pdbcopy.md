@@ -1,7 +1,6 @@
 ---
 title: Using PDBCopy
 description: Using PDBCopy
-ms.assetid: f8207b09-5a1b-4ff3-b99d-20daa88cfe10
 keywords: ["PDBCopy, using"]
 ms.date: 10/25/2019
 ms.localizationpriority: medium

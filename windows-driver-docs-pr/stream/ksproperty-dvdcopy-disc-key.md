@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDCOPY\_DISC\_KEY
 description: The KSPROPERTY\_DVDCOPY\_DISC\_KEY property retrieves the disc key information for the DVD copyright protection authentication process.
-ms.assetid: 6108040e-b549-4cdc-ae1c-8f453fe5c8c1
 keywords: ["KSPROPERTY_DVDCOPY_DISC_KEY Streaming Media Devices"]
 topic_type:
 - apiref

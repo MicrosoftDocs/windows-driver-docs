@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEMS\_STORED
 description: The WIA\_IPA\_ITEMS\_STORED property specifies how many items are stored in the storage (WIA\_CATEGORY\_FOLDER) item. The WIA minidriver creates and maintains this WIA property.
-ms.assetid: 436c49dd-a22a-41bf-8d9c-ed473c87e68c
 keywords: ["WIA_IPA_ITEMS_STORED Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Modifying Registry Values in a Device's Software Key
 description: Modifying Registry Values in a Device's Software Key
-ms.assetid: 4DBDB53D-CA64-4c19-84A5-FBE1529FD0C5
 keywords:
 - registry WDK device installations , modifying registry values in a device's software key
 - modifying registry values WDK device installations , device software key

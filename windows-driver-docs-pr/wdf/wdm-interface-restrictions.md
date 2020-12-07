@@ -1,7 +1,6 @@
 ---
 title: WDM Interface Restrictions
 description: WDM Interface Restrictions
-ms.assetid: 89f3793e-8561-4d8a-a01a-1ff7aecca64a
 keywords:
 - KMDF WDK , WDM
 - Kernel-Mode Driver Framework WDK , WDM

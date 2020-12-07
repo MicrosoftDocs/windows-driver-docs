@@ -1,7 +1,6 @@
 ---
 title: PnPUtil Return Values
 description: PnPUtil Return Values
-ms.assetid: c26ecf54-b3d4-4559-9ec1-ff535cf03d77
 ms.date: 10/13/2020
 ms.localizationpriority: medium
 ---

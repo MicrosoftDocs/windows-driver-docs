@@ -1,7 +1,6 @@
 ---
 title: Network layer discard reasons
 description: This section describes Network layer discard reasons for Windows Filtering Platform callout drivers. |
-ms.assetid: 30066077-53ac-43bb-8c8b-67af210f747e
 keywords:
 - Network layer discard reasons network drivers
 ms.date: 11/09/2017

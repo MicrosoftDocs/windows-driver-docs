@@ -1,7 +1,6 @@
 ---
 title: WdfObjectReference macro
 description: The WdfObjectReference macro increments the reference count for a specified framework object.
-ms.assetid: 8e024197-d366-4665-994b-4e03f559e017
 keywords:
  - WdfObjectReference macro
 ms.date: 08/23/2017

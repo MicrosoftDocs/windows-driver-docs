@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_HardwareIds
 description: DEVPKEY_Device_HardwareIds
-ms.assetid: 4bfd50b3-027f-4f79-8bff-d0c92c1b2386
 keywords: ["DEVPKEY_Device_HardwareIds Device and Driver Installation"]
 topic_type:
 - apiref

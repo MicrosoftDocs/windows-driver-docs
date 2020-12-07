@@ -1,7 +1,6 @@
 ---
 title: Print files to the WSD sample
 description: This section describes how to print to the WSD sample.
-ms.assetid: E03A957E-C96A-4B35-BFDD-10C1D5A4CCD5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

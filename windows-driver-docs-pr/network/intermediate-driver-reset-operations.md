@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Reset Operations
 description: Intermediate Driver Reset Operations
-ms.assetid: 473dce77-4636-40da-ac38-cda1676eba3f
 keywords:
 - intermediate drivers WDK networking , reset operations
 - NDIS intermediate drivers WDK , reset operations

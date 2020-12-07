@@ -1,7 +1,6 @@
 ---
 title: Direct3D rendering performance improvements
 description: Windows Display Driver Model (WDDM) 1.3 and later drivers can support Microsoft Direct3D rendering performance improvements that let Direct3D 9 hardware make better use of hardware command buffers and counters and make efficient copies of system memory to subresources. These capabilities, which mirror some of the capabilities available for Direct3D Version 10 hardware, are new starting with Windows 8.1.
-ms.assetid: F9AAE489-EC45-4EE6-875E-E084BB3054EE
 ms.date: 10/20/2018
 ms.localizationpriority: medium
 ---

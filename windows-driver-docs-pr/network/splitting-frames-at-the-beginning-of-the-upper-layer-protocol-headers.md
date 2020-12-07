@@ -1,7 +1,6 @@
 ---
 title: Splitting frames at the upper-layer protocol header beginning
 description: Splitting Frames at the Beginning of the Upper Layer-Protocol Headers
-ms.assetid: 2559ac20-46dc-4116-9d12-b2cd634e501b
 keywords:
 - Ethernet frame splitting WDK networking , beginning of upper-layer protocol
 - upper-layer protocols WDK header-data split

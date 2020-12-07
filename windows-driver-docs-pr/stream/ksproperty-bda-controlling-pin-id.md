@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CONTROLLING\_PIN\_ID
 description: Clients use KSPROPERTY\_BDA\_CONTROLLING\_PIN\_ID to retrieve the controlling pin for a node in the BDA template connection list.
-ms.assetid: d40454a3-0938-4efb-8b06-06b599be8b20
 keywords: ["KSPROPERTY_BDA_CONTROLLING_PIN_ID Streaming Media Devices"]
 topic_type:
 - apiref

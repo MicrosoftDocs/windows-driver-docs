@@ -1,7 +1,6 @@
 ---
 title: Required and Optional OIDs for Power Management
 description: Required and Optional OIDs for Power Management
-ms.assetid: 147e35b2-dfa5-4238-82e6-5c48ffa30af5
 keywords:
 - OIDs WDK networking , power management
 - wake-up capabilities WDK networking , OIDs
