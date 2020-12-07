@@ -1,7 +1,6 @@
 ---
 title: Packet-Based Bus-Master DMA
 description: Packet-Based Bus-Master DMA
-ms.assetid: f94b9ca9-6e29-4801-a092-30af19345f6d
 keywords:
 - bus-master DMA WDK video miniport , packet based
 - DMA bus-master WDK video miniport , packet based

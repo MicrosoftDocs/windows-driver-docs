@@ -1,7 +1,6 @@
 ---
 title: UEFI requirements for Windows on SoC platforms
 description: This topic describes UEFI requirements that apply to Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile.
-ms.assetid: 7A0B901E-1252-4F8F-B1CB-BA1AB7B01112
 ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---

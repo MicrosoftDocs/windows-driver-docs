@@ -1,7 +1,6 @@
 ---
 title: WDI doc change history
 description: This section lists documentation change history for WDI documentation pages
-ms.assetid: 29268059-9C33-4768-8F80-195CB28B4663
 ms.date: 02/21/2019
 ms.localizationpriority: medium
 ms.custom: 19H1

@@ -1,7 +1,6 @@
 ---
 title: Supporting Command Lists
 description: Supporting Command Lists
-ms.assetid: 7bede247-680d-4fd3-a10b-6ef63f0a88ec
 keywords:
 - Direct3D version 11 WDK Windows 7 display , command lists
 - Direct3D version 11 WDK Windows Server 2008 R2 display , command lists

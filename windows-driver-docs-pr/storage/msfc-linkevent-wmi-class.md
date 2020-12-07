@@ -1,7 +1,6 @@
 ---
 title: MSFC\_LinkEvent WMI Class
 description: MSFC\_LinkEvent WMI Class
-ms.assetid: 9507fb1a-ce2a-4ce9-8272-77c8c9d0a92c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: MakeCat
 description: MakeCat
-ms.assetid: 348c5069-0360-4ff9-897e-9a8832ac196c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

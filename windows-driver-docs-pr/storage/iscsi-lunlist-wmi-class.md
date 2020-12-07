@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_LUNList WMI Class
 description: ISCSI\_LUNList WMI Class
-ms.assetid: 2ad0dabe-54b3-4075-966b-491e078f2c8b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

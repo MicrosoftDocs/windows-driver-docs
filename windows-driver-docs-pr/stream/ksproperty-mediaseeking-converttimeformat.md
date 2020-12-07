@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT
 description: The KSPROPERTY\_MEDIASEEKING\_CONVERTTIMEFORMAT property converts the specified media time from one supported format to another.
-ms.assetid: a465bfcf-85eb-4b14-b614-e26edff6f9bb
 keywords: ["KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

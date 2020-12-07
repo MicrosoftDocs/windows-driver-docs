@@ -1,7 +1,6 @@
 ---
 title: Specifying WMA Pro Data Ranges
 description: Specifying WMA Pro Data Ranges
-ms.assetid: c7e9bc68-cec2-4a34-9ef0-ce3c9a4cc987
 keywords:
 - S/PDIF pass-through WDK audio
 - WMA Pro-over-S/PDIF format WDK audio

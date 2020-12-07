@@ -1,7 +1,6 @@
 ---
 title: Range Template Data Type Issues
 description: Range Template Data Type Issues
-ms.assetid: 36cc91dc-5edc-4786-b3c9-f60bff06997d
 keywords:
 - data types WDK GDL , problems with template data types
 - range data type WDK GDL

@@ -1,7 +1,6 @@
 ---
 title: Device experience scenarios for document devices
 description: Device experience scenarios for document devices
-ms.assetid: 8e01e9d7-5017-4e0a-90b8-4a025e25a60b
 ms.date: 01/30/2019
 ms.localizationpriority: medium
 ---

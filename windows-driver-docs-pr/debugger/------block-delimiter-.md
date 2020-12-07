@@ -1,7 +1,6 @@
 ---
 title: (Block Delimiter)
 description: A pair of braces ( ) is used to surround a block of statements within a debugger command program.
-ms.assetid: 1391fa51-61ce-40e5-8bf5-b5a2215c2bd9
 keywords: ["(Block Delimiter) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

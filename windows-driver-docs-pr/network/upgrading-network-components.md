@@ -1,7 +1,6 @@
 ---
 title: Process for upgrading network components
 description: Process for upgrading network components
-ms.assetid: ddd1eda0-7bed-44e7-8636-8db3508825f5
 keywords:
 - network component upgrades WDK
 - upgrading network components WDK

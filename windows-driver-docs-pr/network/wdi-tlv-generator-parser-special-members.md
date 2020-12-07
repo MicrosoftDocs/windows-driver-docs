@@ -1,7 +1,6 @@
 ---
 title: WDI TLV generator/parser special members
 description: This section describes special members for the WDI TLV generator/parser
-ms.assetid: 2FD485E5-E2F9-4B21-A777-ABA9693B1223
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Registering Callback Functions in Video Miniport Drivers
 description: Individually Registered Callback Functions in Video Miniport Drivers
-ms.assetid: 18469b9b-aca4-4225-97d0-8cafe64b8e1f
 keywords:
 - video miniport drivers WDK Windows 2000 , callback functions
 - callback functions WDK video miniport

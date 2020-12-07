@@ -1,7 +1,6 @@
 ---
 title: devobj
 description: The devobj extension displays detailed information about a DEVICE_OBJECT structure.
-ms.assetid: cf722d95-fbd3-4d80-8679-f8fb348ab4b0
 keywords: ["devobj Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: SIM toolkit commands
 description: SIM toolkit commands
-ms.assetid: 7c13c27a-7a2d-4eae-a64e-1133aa533343
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

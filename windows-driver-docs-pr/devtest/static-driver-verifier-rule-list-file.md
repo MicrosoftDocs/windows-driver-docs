@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier Rule List File
 description: Static Driver Verifier Rule List File
-ms.assetid: 941df64c-b66b-4e7b-b340-9ef6b57d895d
 keywords:
 - Static Driver Verifier WDK , input files
 - StaticDV WDK , input files

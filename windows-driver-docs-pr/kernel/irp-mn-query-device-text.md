@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_DEVICE_TEXT
 description: The PnP manager uses this IRP to get a device's description or location information.Bus drivers must handle this request for their child devices if the bus supports this information. Function and filter drivers do not handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 07661709-8929-4567-a05f-96d995862ee6
 keywords:
  - IRP_MN_QUERY_DEVICE_TEXT Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

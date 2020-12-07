@@ -1,7 +1,6 @@
 ---
 title: Determining NIC Switch Capabilities
 description: Determining NIC Switch Capabilities
-ms.assetid: 5E627E52-2D47-4EA0-80D9-6979891CCE96
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

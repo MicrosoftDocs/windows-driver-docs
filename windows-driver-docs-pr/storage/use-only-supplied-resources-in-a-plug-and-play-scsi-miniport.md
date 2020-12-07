@@ -1,7 +1,6 @@
 ---
 title: Use Only Supplied Resources in a Plug and Play SCSI Miniport
 description: Use Only Supplied Resources in a Plug and Play SCSI Miniport
-ms.assetid: 26c688dc-b6af-4a0c-8401-d53e653d90b3
 keywords:
 - SCSI miniport drivers WDK storage , PnP
 - PnP WDK SCSI

@@ -1,7 +1,6 @@
 ---
 title: vtop
 description: The vtop extension converts a virtual address to the corresponding physical address, and displays other page table and page directory information.
-ms.assetid: 41f4accc-3eb9-4406-a6cc-a05022166e14
 keywords: ["vtop Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

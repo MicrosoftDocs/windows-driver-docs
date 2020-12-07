@@ -1,7 +1,6 @@
 ---
 title: ndiskd.ifprovider
 description: The ndiskd.ifprovider extension displays information about an NDIS interface provider (IfProvider). 
-ms.assetid: 89C406E5-81D3-42AA-BA15-3D7C093BCD3C
 keywords: ["ndiskd.ifprovider Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:

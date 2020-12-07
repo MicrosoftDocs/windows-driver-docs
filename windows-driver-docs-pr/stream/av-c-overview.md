@@ -1,7 +1,6 @@
 ---
 title: AV/C Overview
 description: AV/C overview
-ms.assetid: ff9e6dfc-7ab4-4b56-8b47-d3ea46b579e0
 keywords:
 - AV/C WDK , about AV/C
 - Avc.sys function driver WDK

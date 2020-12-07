@@ -1,7 +1,6 @@
 ---
 title: Using Source Files
 description: Using Source Files
-ms.assetid: c6dfcb37-140f-43d8-aa15-14f0317b5e19
 keywords: ["Debugger Engine API, source"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Using GetFeatureAttribute
 description: Using GetFeatureAttribute
-ms.assetid: e5050cb1-c178-405d-bb0e-fd7827198bca
 keywords:
 - GetFeatureAttribute
 ms.date: 04/20/2017

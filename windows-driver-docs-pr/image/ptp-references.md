@@ -1,7 +1,6 @@
 ---
 title: PTP References
 description: PTP References
-ms.assetid: 4d044986-9c82-423f-8702-fc2a7ede5c51
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

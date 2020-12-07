@@ -1,7 +1,6 @@
 ---
 title: Bluetooth Printing
 description: Bluetooth Printing
-ms.assetid: 6c40c142-9b52-4878-a84b-82d411086304
 keywords:
 - printer drivers WDK , Bluetooth
 - Bluetooth WDK , printing

@@ -1,7 +1,6 @@
 ---
 title: Using I2C to Communicate with a Child Device
 description: Using I2C to Communicate with a Child Device
-ms.assetid: 5eea2257-49ca-4d76-a6a1-91401595750f
 keywords:
 - I2C WDK video miniport
 - video miniport drivers WDK Windows 2000 , child devices

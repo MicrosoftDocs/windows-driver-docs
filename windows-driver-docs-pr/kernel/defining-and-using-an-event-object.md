@@ -1,7 +1,6 @@
 ---
 title: Defining and Using an Event Object
 description: Defining and Using an Event Object
-ms.assetid: 4b7807f0-bbea-4402-b028-9ac73724717f
 keywords: ["event objects WDK kernel", "waiting on event objects", "synchronization events WDK kernel", "notification events WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_STATE
 description: Clients use the KSPROPERTY\_CLOCK\_STATE property to determine the streaming state of a pin.
-ms.assetid: c041b896-524b-4a7a-bb2c-9061c08f763c
 keywords: ["KSPROPERTY_CLOCK_STATE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: JobHistory element (optional)
 description: The optional JobHistory element contains information about scan jobs that have recently completed processing.
-ms.assetid: 7f46044e-ac34-4181-9a35-62dea5ec8c82
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:
 - apiref

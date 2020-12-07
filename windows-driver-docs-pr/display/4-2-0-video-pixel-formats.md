@@ -1,7 +1,6 @@
 ---
 title: 4 2 0 Video Pixel Formats
 description: 4 2 0 Video Pixel Formats
-ms.assetid: fb83336b-ff71-4f54-b833-324da60e7f9e
 keywords:
 - uncompressed video pixel formats WDK DirectX VA
 - pixel formats for uncompressed video WDK DirectX VA

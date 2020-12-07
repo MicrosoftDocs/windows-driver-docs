@@ -1,7 +1,6 @@
 ---
 title: Enabling Message-Signaled Interrupts in the Registry
 description: Enabling Message-Signaled Interrupts in the Registry
-ms.assetid: 802ad994-51e7-4aef-a0f0-865dfaf4e6ce
 keywords: ["message-signaled interrupts WDK kernel , enabling", "enabling message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

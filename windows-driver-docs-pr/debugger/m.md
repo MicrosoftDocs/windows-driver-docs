@@ -1,7 +1,6 @@
 ---
 title: M (Windows Debugger Glossary)
 description: Glossary page - M
-ms.assetid: 41d36320-1a5b-4919-bad8-e6d6e62ec355
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

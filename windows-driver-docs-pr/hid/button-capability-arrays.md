@@ -1,7 +1,6 @@
 ---
 title: Button Capability Arrays
 description: Button Capability Arrays
-ms.assetid: 139324e5-4d46-4d00-9f5a-fd0313fc109a
 keywords:
 - button capability arrays WDK HID
 - arrays WDK HID

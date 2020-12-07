@@ -1,7 +1,6 @@
 ---
 title: Forwarding DRM Content IDs
 description: Forwarding DRM Content IDs
-ms.assetid: 62bcc44f-303a-4e72-8140-4b9bee59c252
 keywords:
 - Digital Rights Management WDK audio , secure data paths
 - DRM WDK audio , secure data paths

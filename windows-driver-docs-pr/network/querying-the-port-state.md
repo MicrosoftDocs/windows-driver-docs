@@ -1,7 +1,6 @@
 ---
 title: Querying the Port State
 description: Querying the Port State
-ms.assetid: 3659d99b-1bbd-453c-8a56-b968d1748c1f
 keywords:
 - port states WDK NDIS
 - querying NDIS port states

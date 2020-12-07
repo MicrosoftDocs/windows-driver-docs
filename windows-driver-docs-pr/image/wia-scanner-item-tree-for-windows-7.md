@@ -1,7 +1,6 @@
 ---
 title: WIA Scanner Item Tree for Windows 7
 description: WIA Scanner Item Tree for Windows 7
-ms.assetid: 8269e385-aa65-443b-aa9e-3cc74fe3fb01
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD0 DRIVER_CORRUPTED_MMPOOL
 description: The DRIVER_CORRUPTED_MMPOOL bug check has a value of 0x000000D0. This indicates that the system attempted to access invalid memory at a process IRQL that was too high.
-ms.assetid: fad53a11-d4db-4f2c-b03e-19c5db47975b
 keywords: ["Bug Check 0xD0 DRIVER_CORRUPTED_MMPOOL", "DRIVER_CORRUPTED_MMPOOL"]
 ms.date: 05/23/2017
 topic_type:

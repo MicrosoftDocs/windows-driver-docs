@@ -1,7 +1,6 @@
 ---
 title: How the DMRC Selects a Device Metadata Package
 description: How the DMRC Selects a Device Metadata Package
-ms.assetid: dbedc995-520a-4b54-8613-d5a7810ab99c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

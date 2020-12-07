@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V6_PARAMETERS
 description: WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V6_PARAMETERS is a TLV that is used by OID_WDI_SET_ENCAPSULATION_OFFLOAD to indicate if IPv6 offloading should be started.
-ms.assetid: 7036AFD0-197E-4A94-8580-A42889BE6798
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SET_ENCAPSULATION_OFFLOAD_V6_PARAMETERS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: RemovePersistentEntry function
 description: The RemovePersistentEntry method removes a binding from the list of bindings associated with the indicated port.
-ms.assetid: f192367e-2e17-44e4-aa0b-7d23cd828b11
 keywords: ["RemovePersistentEntry function Storage Devices"]
 topic_type:
 - apiref

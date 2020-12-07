@@ -1,7 +1,6 @@
 ---
 title: Reserving Processors for Applications
 description: Reserving Processors for Applications
-ms.assetid: e09790e9-29a7-4ff6-a122-b4bd99de8bc7
 keywords:
 - CPU configuration WDK RSS
 - reserving processors for applications WDK RSS

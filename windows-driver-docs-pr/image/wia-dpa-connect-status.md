@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPA\_CONNECT\_STATUS
 description: The WIA\_DPA\_CONNECT\_STATUS property contains the current connection status for a device. The WIA minidriver creates and maintains this property.
-ms.assetid: 524fb89a-47a0-44a7-8f21-36e0abcfdd5c
 keywords: ["WIA_DPA_CONNECT_STATUS Imaging Devices"]
 topic_type:
 - apiref

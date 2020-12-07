@@ -1,7 +1,6 @@
 ---
 title: Calling the Deinterlace DDI from a User-Mode Component
 description: Calling the Deinterlace DDI from a User-Mode Component
-ms.assetid: 3ec18c7e-02dc-4607-b280-3ca1bc5d2839
 keywords:
 - calling deinterlace DDI WDK DirectX VA
 - user-mode component calls WDK DirectX VA

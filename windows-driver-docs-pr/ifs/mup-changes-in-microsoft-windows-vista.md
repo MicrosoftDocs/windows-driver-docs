@@ -1,7 +1,6 @@
 ---
 title: MUP Changes in Microsoft Windows Vista
 description: MUP Changes in Microsoft Windows Vista
-ms.assetid: 8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec
 keywords:
 - kernel network redirectors WDK , MUP
 - MUP WDK network redirectors

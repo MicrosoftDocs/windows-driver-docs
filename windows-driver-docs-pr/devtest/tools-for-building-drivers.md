@@ -1,7 +1,6 @@
 ---
 title: Tools for Building Drivers
 description: Tools for Building Drivers
-ms.assetid: 4e7dce6a-4ac2-4d09-89d8-1394a8e61ea8
 keywords:
 - tools WDK , building drivers
 - driver development tools WDK , building drivers

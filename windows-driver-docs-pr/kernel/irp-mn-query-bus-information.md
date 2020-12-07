@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_BUS_INFORMATION
 description: The PnP manager uses this IRP to request the type and instance number of a device's parent bus.Bus drivers should handle this request for their child devices (PDOs). Function and filter drivers do not handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: a7ea1a81-7f03-41c7-8861-a2e1813c15cf
 keywords:
  - IRP_MN_QUERY_BUS_INFORMATION Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

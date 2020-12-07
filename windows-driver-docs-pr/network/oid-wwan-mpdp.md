@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_MPDP
 description: OID_WWAN_MPDP sets or queries information about Multiple Packet Data Protocol (MPDP) interfaces for the MB device representing the primary PDP context/EPS bearer.
-ms.assetid: 2A8E496A-212A-4999-A82C-9B97CEEC2C7E
 keywords:
 - OID_WWAN_MPDP, MPDP OID
 ms.date: 06/25/2018

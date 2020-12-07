@@ -1,7 +1,6 @@
 ---
 title: Processing Classify Callouts Asynchronously
 description: Processing Classify Callouts Asynchronously
-ms.assetid: 1026f917-7b21-4b01-8cfd-4d14e92106fe
 keywords:
 - asynchronous processing of WFP classify callouts WDK Windows Filtering Platform
 - Windows Filtering Platform Callout Drivers WDK , asynchronous processing of classify callouts

@@ -1,7 +1,6 @@
 ---
 title: Bidi Extension Example for WSD Port Monitor
 description: Bidi Extension Example for WSD Port Monitor
-ms.assetid: a04f16d5-ae99-4df5-bb55-aef95bd03588
 keywords:
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files

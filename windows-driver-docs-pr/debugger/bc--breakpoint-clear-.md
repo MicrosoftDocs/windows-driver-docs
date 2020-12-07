@@ -1,7 +1,6 @@
 ---
 title: bc (Breakpoint Clear)
 description: The bc command permanently removes previously set breakpoints from the system.
-ms.assetid: 7bff5261-179f-4fd6-b427-de74e830a8c7
 keywords: ["bc (Breakpoint Clear) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

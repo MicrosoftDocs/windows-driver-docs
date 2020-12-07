@@ -4,7 +4,6 @@ description: Returns an object that can supply return code values that an IHV ha
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 0FD3A103-970E-4EB8-9867-7EC21273269C
 keywords: ["ReturnCodes method Print Devices", "ReturnCodes method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , ReturnCodes method"]
 topic_type:
 - apiref

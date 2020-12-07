@@ -1,7 +1,6 @@
 ---
 title: Converting the Direct3D Fixed-Function State
 description: Converting the Direct3D Fixed-Function State
-ms.assetid: bc93d65e-ac16-470d-8c52-db8b1cc74456
 keywords:
 - user-mode display drivers WDK Windows Vista , convert Direct3D fixed-function state
 - fixed-function state conversions WDK display

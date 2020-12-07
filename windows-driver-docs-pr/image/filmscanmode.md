@@ -1,7 +1,6 @@
 ---
 title: FilmScanMode element
 description: The optional FilmScanMode element specifies the exposure type of the film to be scanned.
-ms.assetid: 134ca8f2-1d4f-4617-b706-8732b972f493
 keywords: ["FilmScanMode element Imaging Devices"]
 topic_type:
 - apiref

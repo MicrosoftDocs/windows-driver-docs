@@ -1,7 +1,6 @@
 ---
 title: Create the LocaleInfo.xml Submission File
 description: Create the LocaleInfo.xml Submission File
-ms.assetid: 2b16b045-4d34-418c-8f68-7f688adf8e7e
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

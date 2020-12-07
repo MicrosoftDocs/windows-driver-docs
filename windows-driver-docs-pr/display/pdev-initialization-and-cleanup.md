@@ -1,7 +1,6 @@
 ---
 title: PDEV Initialization and Cleanup
 description: PDEV Initialization and Cleanup
-ms.assetid: 26651869-861a-4be8-bc6c-df3704ca714e
 keywords:
 - drawing WDK GDI , initialization, PDEV initialization
 - initializing graphics drivers WDK Windows 2000 display , PDEV

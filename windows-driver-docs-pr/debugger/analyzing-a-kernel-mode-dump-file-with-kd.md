@@ -1,7 +1,6 @@
 ---
 title: Analyzing a Kernel-Mode Dump File with KD
 description: Analyzing a Kernel-Mode Dump File with KD
-ms.assetid: 7e8fbf6e-0adc-434c-ba93-f83f49a4af92
 keywords: ["KD, analyzing a dump file", "CAB file containing a dump file, analyzing kernel-mode dump file with KD"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

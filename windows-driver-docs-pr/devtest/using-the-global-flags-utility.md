@@ -1,7 +1,6 @@
 ---
 title: Using the Global Flags Utility
 description: Using the Global Flags Utility
-ms.assetid: 934272e9-867c-4eb4-8bc1-e65e5b3f2aeb
 keywords:
 - Global Flags utility
 - Driver Verifier WDK , Global Flags utility

@@ -1,7 +1,6 @@
 ---
 title: SRB\_OPEN\_STREAM
 description: SRB\_OPEN\_STREAM
-ms.assetid: 53732add-e304-4128-9235-525ff073d777
 keywords: ["SRB_OPEN_STREAM Streaming Media Devices"]
 topic_type:
 - apiref

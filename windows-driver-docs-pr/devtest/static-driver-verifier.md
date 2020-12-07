@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier
 description: Static Driver Verifier
-ms.assetid: 74feeb16-387c-4796-987a-aff3fb79b556
 keywords:
 - verifying drivers WDK , Static Driver Verifier
 - driver verification WDK , Static Driver Verifier

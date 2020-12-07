@@ -1,7 +1,6 @@
 ---
 title: Cross Architecture Execution
 description: Cross Architecture Execution
-ms.assetid: 6E7F53A0-7C6A-4063-8300-31E1853EDD04
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

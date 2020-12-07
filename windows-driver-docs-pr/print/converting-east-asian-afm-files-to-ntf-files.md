@@ -1,7 +1,6 @@
 ---
 title: Converting East Asian AFM Files to NTF Files
 description: Converting East Asian AFM Files to NTF Files
-ms.assetid: 0932068a-9101-4cdc-8c80-b2d3a4b507ba
 keywords:
 - minidrivers WDK Pscript , converting AFM files
 - NTF files

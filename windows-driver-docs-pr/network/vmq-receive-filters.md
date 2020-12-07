@@ -1,7 +1,6 @@
 ---
 title: VMQ Receive Filters
 description: VMQ Receive Filters
-ms.assetid: b5dbd716-1d92-400c-b612-a70de690baef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

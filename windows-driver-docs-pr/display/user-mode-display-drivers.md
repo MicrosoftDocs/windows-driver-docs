@@ -1,7 +1,6 @@
 ---
 title: User-Mode Display Drivers
 description: User-Mode Display Drivers
-ms.assetid: cb4e8fb9-a2f0-43b2-ae9e-ccffa850ccd7
 keywords:
 - display driver model WDK Windows Vista , user-mode display drivers
 - Windows Vista display driver model WDK , user-mode display drivers

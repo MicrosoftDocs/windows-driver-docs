@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_FriendlyName
 description: DEVPKEY_Device_FriendlyName
-ms.assetid: 0acea25e-5068-441b-be6b-fa863d1bdba2
 keywords: ["DEVPKEY_Device_FriendlyName Device and Driver Installation"]
 topic_type:
 - apiref

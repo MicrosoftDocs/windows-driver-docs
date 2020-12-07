@@ -1,7 +1,6 @@
 ---
 title: SRB\_SET\_STREAM\_STATE
 description: SRB\_SET\_STREAM\_STATE
-ms.assetid: 8dd1237c-3b3e-4207-96b8-22311968c3a0
 keywords: ["SRB_SET_STREAM_STATE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Trace Session List Columns
 description: Trace Session List Columns
-ms.assetid: 2e9d7636-3cff-459c-827a-719062bb778c
 keywords:
 - Trace Session List WDK
 ms.date: 04/20/2017

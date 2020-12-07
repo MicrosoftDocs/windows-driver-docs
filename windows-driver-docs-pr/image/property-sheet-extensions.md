@@ -1,7 +1,6 @@
 ---
 title: Property Sheet Extensions
 description: Property Sheet Extensions
-ms.assetid: 36254759-882c-45af-92df-e0769b65ec55
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

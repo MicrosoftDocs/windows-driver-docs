@@ -1,7 +1,6 @@
 ---
 title: EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState
 description: EFI_DISPLAY_POWER_PROTOCOL.GetDisplayPowerState
-ms.assetid: 8c5fe55f-903e-4ef0-b3cf-8b764af767cf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

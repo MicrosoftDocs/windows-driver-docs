@@ -1,7 +1,6 @@
 ---
 title: Example 4 Updating a Trace Session
 description: Example 4 Updating a Trace Session
-ms.assetid: d0ff9508-cc34-43eb-975f-7f5ce3c0acf6
 keywords:
 - trace sessions WDK , updating
 - updating trace sessions

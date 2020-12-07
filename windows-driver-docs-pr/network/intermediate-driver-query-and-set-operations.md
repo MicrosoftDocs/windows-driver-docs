@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Query and Set Operations
 description: Intermediate Driver Query and Set Operations
-ms.assetid: 68576241-20c1-4df4-ab2e-20ab89e67763
 keywords:
 - intermediate drivers WDK networking , query operations
 - NDIS intermediate drivers WDK , query operations

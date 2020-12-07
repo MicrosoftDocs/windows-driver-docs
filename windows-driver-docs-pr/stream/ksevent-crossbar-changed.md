@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CROSSBAR\_CHANGED
 description: The KSEVENT\_CROSSBAR\_CHANGED event propagates an action, such as a new routing configuration, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-ms.assetid: b67d95a3-7c30-49ae-a2df-eb88491c2e97
 keywords: ["KSEVENT_CROSSBAR_CHANGED Streaming Media Devices"]
 topic_type:
 - apiref

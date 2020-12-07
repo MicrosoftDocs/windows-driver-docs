@@ -1,7 +1,6 @@
 ---
 title: Example boilerplate for issuing a Regular OID request
 description: This topic describes example boilerplate code for issuing a Regular OID request
-ms.assetid: 0805FC9D-1161-4333-BCDF-BE2E6B996BD7
 ms.date: 09/28/2017
 ms.localizationpriority: medium
 ---

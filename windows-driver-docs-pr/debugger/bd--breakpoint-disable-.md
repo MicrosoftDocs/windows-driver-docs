@@ -1,7 +1,6 @@
 ---
 title: bd (Breakpoint Disable)
 description: The bd command disables, but does not delete, previously set breakpoints.
-ms.assetid: 9b408f4a-6036-41d7-b89a-3e7841c50a90
 keywords: ["bd (Breakpoint Disable) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

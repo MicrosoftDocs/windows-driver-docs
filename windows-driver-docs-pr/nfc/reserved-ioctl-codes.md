@@ -1,6 +1,5 @@
 ---
 title: Reserved IOCTL codes
-ms.assetid: A2A67F8E-0A29-429E-935C-39368EFD9772
 keywords:
 - NFC
 - near field communications

@@ -1,7 +1,6 @@
 ---
 title: PUNLOCK\_ROUTINE function pointer
 description: A filter (legacy filter or minifilter) can register a PUNLOCK\_ROUTINE-typed routine as the filter's UnlockRoutine callback routine for a FILE\_LOCK structure.
-ms.assetid: e188bc88-e3dd-49d3-9c79-8eb408cd0338
 keywords: ["PUNLOCK_ROUTINE function pointer Installable File System Drivers"]
 topic_type:
 - apiref

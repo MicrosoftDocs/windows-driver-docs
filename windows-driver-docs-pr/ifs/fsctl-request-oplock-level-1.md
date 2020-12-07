@@ -1,7 +1,6 @@
 ---
 title: FSCTL_REQUEST_OPLOCK_LEVEL_1 control code
 description: The FSCTL\_REQUEST\_OPLOCK\_LEVEL\_1 control code requests a level 1 opportunistic lock (oplock) on a file.
-ms.assetid: 67ffb92c-d638-46fc-9afb-9f1322db2f3b
 keywords: ["FSCTL_REQUEST_OPLOCK_LEVEL_1 control code Installable File System Drivers"]
 topic_type:
 - apiref

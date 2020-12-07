@@ -1,7 +1,6 @@
 ---
 title: Storage Filter Driver's DriverEntry Routine
 description: Storage Filter Driver's DriverEntry Routine
-ms.assetid: 801daf42-259d-45ab-a5c5-88acb2d35bef
 keywords:
 - storage filter drivers WDK , DriverEntry
 - filter drivers WDK storage , DriverEntry

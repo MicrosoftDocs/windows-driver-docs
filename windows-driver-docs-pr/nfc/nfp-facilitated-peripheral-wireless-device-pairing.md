@@ -1,7 +1,6 @@
 ---
 title: NFP-facilitated peripheral wireless device pairing
 description: NFP-facilitated peripheral wireless device pairing
-ms.assetid: 7B57019F-C80A-4E74-BBC2-A26BEDEB20DD
 keywords:
 - NFC
 - near field communications

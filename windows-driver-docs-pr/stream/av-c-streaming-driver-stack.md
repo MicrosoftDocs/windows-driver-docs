@@ -1,7 +1,6 @@
 ---
 title: AV/C Streaming Driver Stack
 description: AV/C Streaming Driver Stack
-ms.assetid: 2584c74c-ddd6-43cc-9a8c-cd7f43802c4c
 keywords:
 - AV/C WDK , Stream filter driver
 - Stream filter driver WDK AV/C

@@ -1,7 +1,6 @@
 ---
 title: MS\_SM\_EventControl WMI Class
 description: MS\_SM\_EventControl WMI Class
-ms.assetid: d5c6a308-2782-4846-81f9-f4932d8caac6
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

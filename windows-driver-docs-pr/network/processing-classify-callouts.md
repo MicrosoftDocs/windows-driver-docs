@@ -1,7 +1,6 @@
 ---
 title: Processing Classify Callouts
 description: Processing Classify Callouts
-ms.assetid: 284aeda0-8275-440f-abf4-84a0c61cc4f4
 keywords:
 - Windows Filtering Platform callout drivers WDK , classify callouts
 - callout drivers WDK Windows Filtering Platform , classify callouts

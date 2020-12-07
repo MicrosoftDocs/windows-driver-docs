@@ -1,7 +1,6 @@
 ---
 title: How do I initialize WPP software tracing in a user-mode DLL
 description: How do I initialize WPP software tracing in a user-mode DLL
-ms.assetid: 386ed1ba-8a6e-469d-9a03-c8879efd2613
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: ScannerDescription element
 description: ScannerDescription element
-ms.assetid: 4429702e-18de-4b7c-83a2-ac405517e730
 keywords: ["ScannerDescription element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_PM_CAPABILITIES_CHANGE
 description: The NDIS_STATUS_PM_CAPABILITIES_CHANGE status indicates a change in the power management capabilities of a network adapter to overlying drivers.
-ms.assetid: 28a2ed15-606a-4a40-b975-b766815a02cc
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PM_CAPABILITIES_CHANGE Network Drivers Starting with Windows Vista

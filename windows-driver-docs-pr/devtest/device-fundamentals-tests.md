@@ -1,7 +1,6 @@
 ---
 title: Device Fundamentals Tests
 description: Descriptions of device fundamental tests.
-ms.assetid: 1963B6BD-158C-4946-8FBA-55DE0C98BE44
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

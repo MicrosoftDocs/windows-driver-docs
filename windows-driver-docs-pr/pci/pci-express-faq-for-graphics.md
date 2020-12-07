@@ -1,7 +1,6 @@
 ---
 title: PCI Express FAQ for Graphics
 description: This paper provides information about PCI Express Graphics for Microsoft Windows operating systems, and answers frequently asked questions.
-ms.assetid: 30FC1CF9-B642-4E00-869C-63009BA3F128
 ms.date: 06/30/2004
 ms.localizationpriority: medium
 ---

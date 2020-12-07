@@ -4,7 +4,6 @@ description: The IPrinterScriptUsbWritePrintDataProgress interface is passed as 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: E22725DA-2BD5-4FBC-A3E4-A3C5678A9E57
 keywords: ["IPrinterScriptUsbWritePrintDataProgress interface Print Devices", "IPrinterScriptUsbWritePrintDataProgress interface Print Devices , described"]
 topic_type:
 - apiref

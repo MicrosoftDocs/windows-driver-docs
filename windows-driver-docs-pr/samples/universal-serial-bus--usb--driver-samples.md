@@ -1,7 +1,6 @@
 ---
 title: Universal Serial Bus (USB) driver samples
 description: The driver samples in this directory provide a starting point for writing a custom USB driver for your device.
-ms.assetid: 4A61F62B-9C23-4265-8AB4-D3AB45F512DF
 ms.date: 12/03/2019
 ms.localizationpriority: medium
 ---

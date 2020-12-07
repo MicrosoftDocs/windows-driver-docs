@@ -1,7 +1,6 @@
 ---
 title: Requirements and Restrictions That Apply to IPsec Offloads
 description: Requirements and Restrictions That Apply to IPsec Offloads
-ms.assetid: c016d6dd-f760-4340-8d56-9bd69e4fe84e
 keywords:
 - ESP-protected packets WDK IPsec offload , requirements
 - AH-protected packets WDK IPsec offload , requirements

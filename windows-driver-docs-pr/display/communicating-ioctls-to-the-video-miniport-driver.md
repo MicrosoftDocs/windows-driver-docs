@@ -1,7 +1,6 @@
 ---
 title: Communicating IOCTLs to the Video Miniport Driver
 description: Communicating IOCTLs to the Video Miniport Driver
-ms.assetid: 9f9ad20e-d8cf-485d-adad-c04eeb40b705
 keywords:
 - video miniport drivers WDK Windows 2000 , IOCTLs
 - IOCTLs WDK Windows 2000 display

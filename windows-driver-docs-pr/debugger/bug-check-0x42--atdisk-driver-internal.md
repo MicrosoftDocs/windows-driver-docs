@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x42 ATDISK_DRIVER_INTERNAL
 description: The ATDISK_DRIVER_INTERNAL bug check has a value of 0x00000042.This bug check appears very infrequently.
-ms.assetid: 422c8fc9-e980-4879-abf7-d30c69086069
 keywords: ["Bug Check 0x42 ATDISK_DRIVER_INTERNAL", "ATDISK_DRIVER_INTERNAL"]
 ms.date: 05/23/2017
 topic_type:

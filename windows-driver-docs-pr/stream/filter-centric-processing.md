@@ -1,7 +1,6 @@
 ---
 title: Filter-Centric Processing
 description: Filter-centric processing
-ms.assetid: e56c5102-7ea6-4687-ae5e-1550db9500f0
 keywords:
 - filter-centric filters WDK AVStream
 - AVStream filter-centric filters WDK

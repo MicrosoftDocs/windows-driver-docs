@@ -1,7 +1,6 @@
 ---
 title: FSCTL_MARK_AS_SYSTEM_HIVE control code
 description: The FSCTL\_MARK\_AS\_SYSTEM\_HIVE control code informs the file system that the specified file contains the registry's system hive.
-ms.assetid: de3cb340-2485-4bc5-bc2a-3c34cee2d6b3
 keywords: ["FSCTL_MARK_AS_SYSTEM_HIVE control code Installable File System Drivers"]
 topic_type:
 - apiref

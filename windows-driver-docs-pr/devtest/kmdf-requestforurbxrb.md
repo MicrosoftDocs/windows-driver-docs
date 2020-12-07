@@ -1,6 +1,5 @@
 ---
 title: RequestForUrbXrb rule (kmdf)
-ms.assetid: 8BFFB73D-106A-4CD0-93F2-D295D969729E
 ms.date: 05/21/2018
 description: "Learn more about: RequestForUrbXrb rule (kmdf)"
 keywords: ["RequestForUrbXrb rule (kmdf)"]

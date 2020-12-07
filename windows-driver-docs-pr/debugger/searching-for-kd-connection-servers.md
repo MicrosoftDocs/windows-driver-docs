@@ -1,7 +1,6 @@
 ---
 title: Searching for KD Connection Servers
 description: You can use KD or CDB with the -QR command-line option to obtain a list of available KD connection servers that are running on a network server.
-ms.assetid: 24ff0e2f-d40a-4f52-91ef-e766b9387a8a
 keywords: ["Searching for KD Connection Servers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

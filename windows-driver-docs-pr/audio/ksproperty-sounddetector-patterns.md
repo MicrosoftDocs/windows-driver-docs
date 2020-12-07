@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_PATTERNS
 description: The KSPROPERTY\_SOUNDDETECTOR\_PATTERNS property is set by the operating system to configure the keywords to be detected.
-ms.assetid: 7A6AF4F6-5F5F-4A3D-AF61-B3E4374B33AD
 keywords: ["KSPROPERTY_SOUNDDETECTOR_PATTERNS Audio Devices"]
 topic_type:
 - apiref

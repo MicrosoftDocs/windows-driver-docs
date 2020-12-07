@@ -1,7 +1,6 @@
 ---
 title: Adding Event Tracing to Kernel-Mode Drivers
 description: Adding Event Tracing to Kernel-Mode Drivers
-ms.assetid: 74fdb4b2-aad1-4d8a-b146-40a92e1fdbb5
 keywords:
 - Event Tracing for Windows WDK , kernel-mode
 - ETW WDK , kernel-mode

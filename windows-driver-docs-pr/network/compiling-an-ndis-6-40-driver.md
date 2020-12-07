@@ -1,7 +1,6 @@
 ---
 title: Compiling an NDIS 6.40 driver
 description: This section explains how to compile an NDIS 6.40 driver
-ms.assetid: AF027939-06C7-435C-90D9-82272CED6A84
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

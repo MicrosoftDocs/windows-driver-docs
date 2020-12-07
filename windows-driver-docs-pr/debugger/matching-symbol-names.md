@@ -1,7 +1,6 @@
 ---
 title: Matching Symbol Names
 description: Matching Symbol Names
-ms.assetid: 34e2401e-9074-4adc-9644-48ad768c7c2f
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing WFP Callout Drivers
 description: Roadmap for Developing WFP Callout Drivers
-ms.assetid: 98c857d9-e4a6-4a7f-8427-642763864f3e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

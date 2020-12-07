@@ -1,7 +1,6 @@
 ---
 title: Creating a L2CAP Client Connection to a Remote Device
 description: Creating a L2CAP Client Connection to a Remote Device
-ms.assetid: b279db4b-3a4e-407e-ae9b-7330af1905b4
 keywords:
 - SDP WDK Bluetooth
 - Service Discovery Protocol WDK Bluetooth

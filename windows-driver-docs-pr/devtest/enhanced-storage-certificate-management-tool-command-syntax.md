@@ -1,7 +1,6 @@
 ---
 title: Enhanced Storage Certificate Management Tool Command Syntax
 description: The Enhanced Storage Certificate Management tool provides certificate management operations by using different command-line switches.
-ms.assetid: 4b46bdac-77e3-4b73-8942-64d902d53564
 keywords:
 - Enhanced Storage Certificate Management Tool Command Syntax Driver Development Tools
 topic_type:

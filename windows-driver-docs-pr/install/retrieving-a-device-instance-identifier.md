@@ -1,7 +1,6 @@
 ---
 title: Retrieving a Device Instance Identifier
 description: Retrieving a Device Instance Identifier
-ms.assetid: 6382fdf6-109a-430a-b6b5-322d3eebc4a1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_REALTIME
 description: KSCATEGORY_REALTIME
-ms.assetid: c9b0a31a-50d9-47bc-9345-5d73a95238c3
 keywords: ["KSCATEGORY_REALTIME Device and Driver Installation"]
 topic_type:
 - apiref

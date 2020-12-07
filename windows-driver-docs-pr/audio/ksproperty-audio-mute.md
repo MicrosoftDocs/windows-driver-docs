@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MUTE
 description: The KSPROPERTY\_AUDIO\_MUTE property specifies whether a channel on a mute node (KSNODETYPE\_MUTE) is muted or not.
-ms.assetid: 3c8d7a09-521d-47fd-8441-866a0d12540f
 keywords: ["KSPROPERTY_AUDIO_MUTE Audio Devices"]
 topic_type:
 - apiref

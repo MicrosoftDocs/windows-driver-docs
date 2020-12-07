@@ -1,7 +1,6 @@
 ---
 title: .symfix (Set Symbol Store Path)
 description: The .symfix command automatically sets the symbol path to point to the Microsoft symbol store.
-ms.assetid: 9ad80217-e2d1-4776-a620-f2735b2c8f84
 keywords: ["Set Symbol Store Path (.symfix) command", "SymSrv, Set Symbol Store Path (.symfix) command", ".symfix (Set Symbol Store Path) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Calculating Graphics Memory
 description: Calculating Graphics Memory
-ms.assetid: 030a332b-d1f0-4a86-b11f-cfd2fbe42ac2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

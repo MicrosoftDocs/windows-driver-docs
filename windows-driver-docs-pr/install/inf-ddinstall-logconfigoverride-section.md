@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.LogConfigOverride Section
 description: DDInstall.LogConfigOverride sections are used to create an override configuration to override hardware resource requirements.
-ms.assetid: 7ee8d221-7cdb-4373-aa8b-2d5164f6a636
 keywords:
 - INF DDInstall.LogConfigOverride Section Device and Driver Installation
 topic_type:

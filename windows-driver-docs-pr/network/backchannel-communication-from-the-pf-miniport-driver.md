@@ -1,7 +1,6 @@
 ---
 title: Backchannel Communication from the PF Miniport Driver
 description: Backchannel Communication from the PF Miniport Driver
-ms.assetid: 819FC32C-D50C-480F-AE6E-078E4ECD3400
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

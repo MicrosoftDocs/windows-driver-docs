@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_OPM
 description: GUID_DEVINTERFACE_OPM
-ms.assetid: bd999b09-d531-4b89-a306-83e1ca7cac64
 keywords: ["GUID_DEVINTERFACE_OPM Device and Driver Installation"]
 topic_type:
 - apiref

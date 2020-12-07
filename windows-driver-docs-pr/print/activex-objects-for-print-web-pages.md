@@ -1,7 +1,6 @@
 ---
 title: ActiveX Objects for Print Web Pages
 description: ActiveX Objects for Print Web Pages
-ms.assetid: 85c37895-542f-4399-bf87-517eaab99a09
 keywords:
 - print Web pages WDK , ActiveX objects
 - Web pages WDK printer , ActiveX objects

@@ -1,7 +1,6 @@
 ---
 title: SetFC3MgmtInfo function
 description: The SetFC3MgmtInfo WMI method sets FC3 management information that is associated with a Fibre Channel adapter.
-ms.assetid: 180f9945-3b2e-494e-8e6d-648ff4369c3b
 keywords: ["SetFC3MgmtInfo function Storage Devices"]
 topic_type:
 - apiref

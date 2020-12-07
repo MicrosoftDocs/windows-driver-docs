@@ -1,7 +1,6 @@
 ---
 title: QueryDisplayConfig Summary and Scenarios
 description: QueryDisplayConfig Summary and Scenarios
-ms.assetid: a556b3d7-3cac-49b1-99db-7ce8a844a8a8
 keywords:
 - connecting displays WDK Windows 7 display , CCD APIs, QueryDisplayConfig
 - connecting displays WDK Windows Server 2008 R2 display , CCD APIs, QueryDisplayConfig

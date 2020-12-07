@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS Network Interfaces
 description: Introduction to NDIS Network Interfaces
-ms.assetid: a1d062d4-3d4b-4244-b851-667d708810db
 keywords:
 - NDIS WDK , network interfaces
 - NDIS network interfaces WDK

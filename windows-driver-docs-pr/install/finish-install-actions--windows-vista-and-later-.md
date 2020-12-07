@@ -1,7 +1,6 @@
 ---
 title: Finish-Install Actions
 description: Finish-Install Actions
-ms.assetid: 52c7f166-ee74-46b6-815b-5d360d829b4c
 keywords:
 - finish-install actions WDK device installations
 - installer finish-install actions WDK device installations

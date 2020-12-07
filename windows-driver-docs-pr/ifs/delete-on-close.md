@@ -1,7 +1,6 @@
 ---
 title: Delete on Close
 description: Delete on Close
-ms.assetid: 340e470f-7791-4677-9369-75ed8fa9f8ad
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , delete on close

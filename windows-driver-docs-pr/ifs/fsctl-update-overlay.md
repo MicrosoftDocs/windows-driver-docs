@@ -1,7 +1,6 @@
 ---
 title: FSCTL_UPDATE_OVERLAY control code
 description: The FSCTL\_UPDATE\_OVERLAY control code updates a new data source identifier for a backing source attached to a volume.
-ms.assetid: 2A420AE7-68CA-4B6A-82D2-C4C39A892F16
 keywords: ["FSCTL_UPDATE_OVERLAY control code Installable File System Drivers"]
 topic_type:
 - apiref

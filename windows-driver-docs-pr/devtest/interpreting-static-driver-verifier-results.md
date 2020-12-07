@@ -1,7 +1,6 @@
 ---
 title: Interpreting Static Driver Verifier Results
 description: Interpreting Static Driver Verifier Results
-ms.assetid: ec7e3b90-5d55-411a-8cfe-a1c9c4029694
 keywords:
 - Static Driver Verifier WDK , display options
 - StaticDV WDK , display options

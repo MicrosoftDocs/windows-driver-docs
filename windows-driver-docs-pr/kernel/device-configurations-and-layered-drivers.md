@@ -1,7 +1,6 @@
 ---
 title: Device Configurations and Layered Drivers
 description: For the most common kinds of devices, the Windows Driver Kit (WDK) supplies a sample set of fully functional system drivers.
-ms.assetid: 1baaac5a-8eea-42df-bad6-fe620ac32a6c
 keywords: ["WDM drivers WDK kernel , configurations", "WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "replacing drivers", "reusable drivers WDK WDM"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: forceIfDriverIsNotBetter XML Element
 description: forceIfDriverIsNotBetter XML Element
-ms.assetid: ba83c8fd-cc8e-44fd-96ed-855bb42c2493
 keywords: ["forceIfDriverIsNotBetter XML Element Device and Driver Installation"]
 topic_type:
 - apiref

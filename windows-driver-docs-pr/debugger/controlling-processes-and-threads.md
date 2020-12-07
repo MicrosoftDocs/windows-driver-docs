@@ -1,7 +1,6 @@
 ---
 title: Controlling Processes and Threads
 description: Controlling Processes and Threads
-ms.assetid: f5a50b54-443e-425e-98cb-cff8d31ac897
 keywords: ["process", "process, choosing", "thread", "thread, choosing", "thread, freezing", "thread, unfreezing (thawing)", "thread, suspending", "suspend count of threads", "freezing threads"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

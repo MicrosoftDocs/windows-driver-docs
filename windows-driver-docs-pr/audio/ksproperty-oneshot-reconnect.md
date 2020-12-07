@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_ONESHOT\_RECONNECT
 description: The KSPROPERTY\_ONESHOT\_RECONNECT property is used to prompt the audio driver to attempt to connect to the Bluetooth audio device.
-ms.assetid: 54122a02-87e9-4953-aa78-4b9b31447a26
 keywords: ["KSPROPERTY_ONESHOT_RECONNECT Audio Devices"]
 topic_type:
 - apiref

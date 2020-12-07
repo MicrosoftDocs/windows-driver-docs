@@ -1,7 +1,6 @@
 ---
 title: Requesting Special Pool by Allocation Size
 description: Requesting Special Pool by Allocation Size
-ms.assetid: 040d1a1a-1849-4253-8d4b-6c57a8643225
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

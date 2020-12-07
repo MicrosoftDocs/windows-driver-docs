@@ -1,7 +1,6 @@
 ---
 title: Returning Status from Completion Routines
 description: Returning Status from Completion Routines
-ms.assetid: fb12720b-10fe-43ab-ade7-c1b09d00d922
 keywords:
 - IRP completion routines WDK file system , returning status
 - status values WDK file system

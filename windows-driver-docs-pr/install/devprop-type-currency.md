@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_CURRENCY
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_CURRENCY identifier represents the base-data-type identifier that indicates that the data type is a CURRENCY-typed value.
-ms.assetid: e79d4351-79a0-4e7a-9290-dd02d317a958
 keywords: ["DEVPROP_TYPE_CURRENCY Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverRank
 description: DEVPKEY_Device_DriverRank
-ms.assetid: 9a6a8e9f-fd3c-4a64-b0d2-565cda0dae52
 keywords: ["DEVPKEY_Device_DriverRank Device and Driver Installation"]
 topic_type:
 - apiref

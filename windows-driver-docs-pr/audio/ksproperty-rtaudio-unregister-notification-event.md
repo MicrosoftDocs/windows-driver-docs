@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT
 description: The KSPROPERTY\_RTAUDIO\_UNREGISTER\_NOTIFICATION\_EVENT property unregisters a user-mode event from DMA-driven event notification.The following table summarizes the features of this property.
-ms.assetid: 76ed7dfe-465a-4fdf-97e6-7a65b8971aee
 keywords: ["KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT Audio Devices"]
 topic_type:
 - apiref

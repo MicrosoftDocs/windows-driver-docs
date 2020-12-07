@@ -1,7 +1,6 @@
 ---
 title: Event Tracing for Windows (ETW)
 description: Event Tracing for Windows (ETW)
-ms.assetid: 9b30132a-2bf7-42c0-b316-551a4bdfed32
 keywords:
 - Event Tracing for Windows WDK
 - ETW WDK

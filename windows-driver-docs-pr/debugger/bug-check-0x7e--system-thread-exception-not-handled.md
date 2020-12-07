@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x7E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
 description: The SYSTEM_THREAD_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000007E. This bug check indicates that a system thread generated an exception that the error handler did not catch.
-ms.assetid: 2ecea74f-21d6-4436-beed-d8cf8ef6b169
 keywords: ["Bug Check 0x7E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED", "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED"]
 ms.date: 03/15/2019
 topic_type:

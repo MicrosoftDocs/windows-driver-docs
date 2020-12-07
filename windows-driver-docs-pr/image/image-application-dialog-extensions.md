@@ -1,7 +1,6 @@
 ---
 title: Image Application Dialog Extensions
 description: Image Application Dialog Extensions
-ms.assetid: 4bb7d2f9-58c3-4cfa-aa6b-a4bd9335d2ac
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

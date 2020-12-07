@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x16C INVALID_RUNDOWN_PROTECTION_FLAGS
 description: The INVALID_RUNDOWN_PROTECTION_FLAGS bug check has a value of 0x0000016C. This indicates that the flags supplied to one of the rundown protection APIs were invalid.
-ms.assetid: D14307A3-1D52-4B4E-85B2-2CD0B2442695
 keywords: ["Bug Check 0x16C INVALID_RUNDOWN_PROTECTION_FLAGS", "INVALID_RUNDOWN_PROTECTION_FLAGS"]
 ms.date: 05/23/2017
 topic_type:

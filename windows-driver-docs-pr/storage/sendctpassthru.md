@@ -1,7 +1,6 @@
 ---
 title: SendCTPassThru function
 description: The SendCTPassThru WMI method sends a common transport (CT) passthrough command to the indicated port.
-ms.assetid: 7f512980-5aff-4359-b52e-7fcef9627e1f
 keywords: ["SendCTPassThru function Storage Devices"]
 topic_type:
 - apiref

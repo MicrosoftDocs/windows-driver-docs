@@ -1,7 +1,6 @@
 ---
 title: Configurable
 description: Configurable
-ms.assetid: 0dcdc2eb-0a27-4739-be9d-48a0382347cf
 keywords: ["hardware-configurable devices WDK kernel", "software-configurable drivers WDK kernel", "configurable devices and drivers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

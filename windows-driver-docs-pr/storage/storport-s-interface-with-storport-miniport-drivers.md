@@ -1,7 +1,6 @@
 ---
 title: Storport's Interface with Storport Miniport Drivers
 description: Storport's Interface with Storport Miniport Drivers
-ms.assetid: 8e09d6a6-7e4f-44fc-a2b0-5f21b4ac0593
 ms.date: 06/18/2019
 ms.localizationpriority: medium
 ---

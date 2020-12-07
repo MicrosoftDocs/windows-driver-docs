@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FT_SNONCE
 description: WDI_TLV_FT_SNONCE is an unused TLV.
-ms.assetid: 43702677-C19B-4185-AFCD-9D8BF0CA31F9
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_SNONCE Network Drivers Starting with Windows Vista

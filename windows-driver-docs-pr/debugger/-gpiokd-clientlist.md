@@ -1,7 +1,6 @@
 ---
 title: gpiokd.clientlist
 description: The gpiokd.clientlist command displays all registered GPIO controllers.
-ms.assetid: 4951C2D2-FA98-4600-A98D-1BC98080D2EB
 keywords: ["gpiokd.clientlist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

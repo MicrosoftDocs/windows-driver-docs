@@ -1,7 +1,6 @@
 ---
 title: Enabling Fault Injection
 description: Enabling Fault Injection
-ms.assetid: 451a5e9e-bc5c-4148-b475-7f38c535cf6a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

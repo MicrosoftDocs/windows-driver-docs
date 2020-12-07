@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_CONTROL\_CHANGE
 description: The KSEVENT\_CONTROL\_CHANGE event indicates that a change in control value has occurred at a node that represents a hardware volume-control knob, mute switch, or other type of manual control.Usage Summary TableTargetEvent Descriptor TypeEvent Value TypePinKSE\_NODEKSEVENTDATA The event value type (operation data) is a KSEVENTDATA structure that specifies the type of notification to use for an event.
-ms.assetid: 32d8e14c-f21d-4bac-8d98-8aca40e30b60
 keywords: ["KSEVENT_CONTROL_CHANGE Audio Devices"]
 topic_type:
 - apiref

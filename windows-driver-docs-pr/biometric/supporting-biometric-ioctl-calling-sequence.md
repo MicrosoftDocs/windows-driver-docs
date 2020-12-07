@@ -1,7 +1,6 @@
 ---
 title: Supporting Biometric IOCTL Calling Sequence
 description: Supporting Biometric IOCTL Calling Sequence
-ms.assetid: e6555895-8936-4f5d-8f2b-05b5283edbee
 keywords:
 - biometric drivers WDK , supporting IOCTLs
 - supporting IOCTLs WDK biometric

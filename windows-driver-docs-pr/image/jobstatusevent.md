@@ -1,7 +1,6 @@
 ---
 title: JobStatusEvent element
 description: The required JobStatusEvent element informs the client that a job's status has changed.
-ms.assetid: 8cb510ef-9622-48d0-859d-e52c9b5b8190
 keywords: ["JobStatusEvent element Imaging Devices"]
 topic_type:
 - apiref

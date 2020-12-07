@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_COPY
 description: The EXT\_TDOP\_COPY sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation makes a copy of a typed data description.
-ms.assetid: 2de920de-db93-408d-8e80-a29c4e2930a0
 keywords: ["EXT_TDOP_COPY Windows Debugging"]
 topic_type:
 - apiref

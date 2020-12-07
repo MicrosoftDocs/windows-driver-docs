@@ -1,7 +1,6 @@
 ---
 title: WDI TLV generator interface overview
 description: This section describes an overview of function models for the WDI TLV generator interface
-ms.assetid: 8A344BF7-932E-4404-9B3E-E7D3C33722C3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

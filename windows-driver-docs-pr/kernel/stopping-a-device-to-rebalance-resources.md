@@ -1,7 +1,6 @@
 ---
 title: Stopping a Device to Rebalance Resources
 description: Stopping a Device to Rebalance Resources
-ms.assetid: eed28d41-8a9d-4b9e-90d7-ea4ddeeaad2d
 keywords: ["rebalancing resources WDK PnP", "resource rebalancing WDK PnP", "pausing PnP devices"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

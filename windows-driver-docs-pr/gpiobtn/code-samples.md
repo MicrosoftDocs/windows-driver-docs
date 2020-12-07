@@ -1,7 +1,6 @@
 ---
 title: Code samples
 description: This section includes code samples and sample descriptors for interface implementation.
-ms.assetid: B7E31E44-87AB-4C6E-9A7C-AC85D3CEA4A4
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

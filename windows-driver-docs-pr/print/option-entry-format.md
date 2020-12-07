@@ -1,7 +1,6 @@
 ---
 title: Option Entry Format
 description: Option Entry Format
-ms.assetid: defc035a-d571-4bf1-abeb-c7528ba23b81
 keywords:
 - printer options WDK Unidrv , entry format
 - formats WDK printer options

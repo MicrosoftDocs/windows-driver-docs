@@ -1,7 +1,6 @@
 ---
 title: Filter Factories
 description: Filter Factories
-ms.assetid: e836f941-274f-4e27-8069-753ef9ef2a06
 keywords:
 - audio filters WDK audio , filter factories
 - filter factories WDK audio

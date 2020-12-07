@@ -1,7 +1,6 @@
 ---
 title: IrqlKeRaiseLower rule (wdm)
 description: The IrqlKeRaiseLower rule specifies that the driver does the following when raising and lowering the IRQL When the driver calls KeRaiseIrql, it is executing at an IRQL that is lower than or equal to the value of the NewIrql parameter.The driver calls KeLowerIrql only after calling KeRaiseIrql or KeRaiseIrqlToDpcLevel.
-ms.assetid: 61f7e5bc-ccc5-4ee6-a580-9935a01f96e6
 ms.date: 05/21/2018
 keywords: ["IrqlKeRaiseLower rule (wdm)"]
 topic_type:

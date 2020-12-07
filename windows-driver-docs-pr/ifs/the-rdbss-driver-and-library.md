@@ -1,7 +1,6 @@
 ---
 title: The RDBSS Driver and Library
 description: The RDBSS Driver and Library
-ms.assetid: fb2d1939-7af5-474c-8247-e5d48b4bbed6
 keywords:
 - network redirectors WDK , RDBSS
 - redirector drivers WDK , RDBSS

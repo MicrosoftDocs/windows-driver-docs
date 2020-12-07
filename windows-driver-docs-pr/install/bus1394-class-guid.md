@@ -1,7 +1,6 @@
 ---
 title: BUS1394_CLASS_GUID
 description: BUS1394_CLASS_GUID
-ms.assetid: 5452c829-b1d2-4a15-93ef-3d82ac6c04d0
 keywords: ["BUS1394_CLASS_GUID Device and Driver Installation"]
 topic_type:
 - apiref

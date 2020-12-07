@@ -1,7 +1,6 @@
 ---
 title: Still Image SCSI I/O Structures
 description: Still Image SCSI I/O Structures
-ms.assetid: 2cf17295-e3af-4109-bfdd-118aecf80bbe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

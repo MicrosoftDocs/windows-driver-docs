@@ -1,7 +1,6 @@
 ---
 title: Logger
 description: Logger
-ms.assetid: ad9d18b4-cb7f-40e1-98a3-a78f978b8937
 keywords: ["Logger, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

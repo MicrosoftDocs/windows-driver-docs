@@ -1,7 +1,6 @@
 ---
 title: How File System Filter Drivers Are Different from Device Drivers
 description: How File System Filter Drivers Are Different from Device Drivers
-ms.assetid: 64a59564-a4d7-4174-82d3-60bd1a30b2d8
 keywords:
 - filter drivers WDK file system , vs. device drivers
 - file system filter drivers WDK , vs. device drivers

@@ -1,7 +1,6 @@
 ---
 title: Enumerating Installed Device Interfaces
 description: Enumerating Installed Device Interfaces
-ms.assetid: 14A9E6DD-58A9-4af0-B469-7CCF4596BE27
 keywords:
 - enumerating installed device interfaces WDK
 - installed device interfaces WDK

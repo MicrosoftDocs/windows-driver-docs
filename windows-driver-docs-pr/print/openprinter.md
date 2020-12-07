@@ -1,7 +1,6 @@
 ---
 title: OpenPrinter
 description: OpenPrinter
-ms.assetid: 8bbb46a8-2bba-4d15-a2e2-4770b52d2505
 keywords:
 - OpenPrinter
 ms.date: 04/20/2017

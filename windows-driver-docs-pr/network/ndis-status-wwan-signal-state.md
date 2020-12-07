@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_SIGNAL_STATE
 description: Miniport drivers use the NDIS_STATUS_WWAN_SIGNAL_STATE notification to send a signal strength notification when measured signal strength travels outside the threshold within a pre-defined interval.
-ms.assetid: b5d6b2a6-ed19-45d9-85ca-ac66e38f41fd
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_SIGNAL_STATE Network Drivers Starting with Windows Vista

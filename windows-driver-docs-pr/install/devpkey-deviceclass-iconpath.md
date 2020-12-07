@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_IconPath
 description: DEVPKEY_DeviceClass_IconPath
-ms.assetid: c81ea18d-dd21-4b5e-8aba-52f7ad6931bf
 keywords: ["DEVPKEY_DeviceClass_IconPath Device and Driver Installation"]
 topic_type:
 - apiref

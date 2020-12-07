@@ -1,7 +1,6 @@
 ---
 title: Isochronous Talk Options for IEEE 1394 Devices
 description: Isochronous Talk Options for IEEE 1394 Devices
-ms.assetid: b3df5dd5-9903-48b4-9cb2-17b8d3a08f8f
 keywords:
 - isochronous I/O WDK IEEE 1394 bus , talk options
 - talk options WDK IEEE 1394 bus

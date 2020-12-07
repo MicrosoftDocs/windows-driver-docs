@@ -1,7 +1,6 @@
 ---
 title: Setting the Parameters of a NIC Switch
 description: Setting the Parameters of a NIC Switch
-ms.assetid: 79B4B0B7-32AB-4AE4-ACD2-CE17C93573BA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

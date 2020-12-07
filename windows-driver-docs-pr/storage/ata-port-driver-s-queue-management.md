@@ -1,7 +1,6 @@
 ---
 title: ATA Port Driver's Queue Management
 description: ATA Port Driver's Queue Management
-ms.assetid: feba86a6-2b89-41c9-9b14-b76c2522a332
 keywords:
 - ATA Port drivers WDK , queues
 - queues WDK ATA Port driver

@@ -1,7 +1,6 @@
 ---
 title: Using the Checked Build of Windows
 description: Using the Checked Build of Windows
-ms.assetid: 0666cdab-21d3-4eff-ba57-4a73dcbaa742
 ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---

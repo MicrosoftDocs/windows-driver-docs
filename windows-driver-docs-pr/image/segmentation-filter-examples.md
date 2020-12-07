@@ -1,7 +1,6 @@
 ---
 title: Segmentation Filter Examples
 description: Segmentation Filter Examples
-ms.assetid: 4e2ab26b-c544-4cf0-801b-89e014a9d58f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

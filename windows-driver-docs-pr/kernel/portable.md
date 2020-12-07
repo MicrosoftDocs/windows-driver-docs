@@ -1,7 +1,6 @@
 ---
 title: Portable
 description: Portable
-ms.assetid: 3ce16503-e375-44c1-82a7-796286c1a253
 keywords: ["portable drivers WDK kernel", "platform-dependent definitions WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

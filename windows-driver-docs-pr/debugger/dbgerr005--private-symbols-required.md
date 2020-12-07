@@ -1,7 +1,6 @@
 ---
 title: dbgerr005 Private Symbols Required
 description: dbgerr005 Private Symbols Required
-ms.assetid: 0e3b9c98-1f02-4fff-9a91-d3a7470df882
 keywords: ["dbgerr005", "Private symbols required (dbgerr005)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

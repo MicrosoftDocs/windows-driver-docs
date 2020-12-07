@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_EQUALIZER
 description: KSNODETYPE\_EQUALIZER
-ms.assetid: 03812936-57ba-4762-b716-858b7f14908f
 keywords: ["KSNODETYPE_EQUALIZER Audio Devices"]
 topic_type:
 - apiref

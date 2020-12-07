@@ -1,7 +1,6 @@
 ---
 title: Container IDs for Bluetooth Devices
 description: Container IDs for Bluetooth Devices
-ms.assetid: 7e9c40d9-ed19-4ad2-a749-6e3f4aaca2de
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Creating Sockets
 description: Creating Sockets
-ms.assetid: 84cd0503-15bd-401f-836c-1fdc8425d073
 keywords:
 - Winsock Kernel WDK networking , socket creation
 - WSK WDK networking , socket creation

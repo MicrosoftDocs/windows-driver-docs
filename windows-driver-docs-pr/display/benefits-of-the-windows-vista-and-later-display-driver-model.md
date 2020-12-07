@@ -1,7 +1,6 @@
 ---
 title: Benefits of the Windows Display Driver Model (WDDM)
 description: Benefits of the Windows Display Driver Model (WDDM)
-ms.assetid: 0e8cd1a9-7137-4fd2-91ab-56768713c9f1
 keywords:
 - display driver model WDK Windows Vista , benefits
 - Windows Vista display driver model WDK , benefits

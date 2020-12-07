@@ -1,7 +1,6 @@
 ---
 title: Multiplane overlay resource creation
 description: When multiplane overlays are used, these requirements apply to allocations that are created within Microsoft DirectX apps.
-ms.assetid: B3E9BEF8-5CB8-45A3-9491-19AB1EA3D74F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

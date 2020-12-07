@@ -1,7 +1,6 @@
 ---
 title: Modifying Parameters
 description: Modifying Parameters
-ms.assetid: 01accd7f-7aa6-4f83-b8b4-81c04cd48dac
 keywords:
 - filter manager WDK file system minifilter , modifying parameters
 - swap buffers WDK file system minifilter

@@ -1,7 +1,6 @@
 ---
 title: Setting the Event Level for a Text Log
 description: Setting the Event Level for a Text Log
-ms.assetid: 3dfd2df3-179e-434c-97fb-fd8329198f8a
 keywords:
 - event levels WDK SetupAPI logging
 - text logs WDK SetupAPI , event levels

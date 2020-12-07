@@ -1,7 +1,6 @@
 ---
 title: I/O Request Processing Operation Flow
 description: I/O Request Processing Operation Flow
-ms.assetid: 3a7162d2-0a8c-4748-b320-bfe64ec93c9d
 keywords:
 - operation flow WDK UMDF
 - I/O requests WDK UMDF , operation flow

@@ -1,7 +1,6 @@
 ---
 title: Including GUIDs in Driver Code
 description: Including GUIDs in Driver Code
-ms.assetid: 9235f9e6-9c40-4c4b-a98b-99e6b46a11ce
 keywords: ["globally unique identifiers WDK kernel", "GUIDs WDK kernel", "identifiers WDK GUIDs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

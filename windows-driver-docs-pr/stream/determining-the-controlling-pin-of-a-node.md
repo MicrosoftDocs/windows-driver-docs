@@ -1,7 +1,6 @@
 ---
 title: Determining the Controlling Pin of a Node
 description: Determining the Controlling Pin of a Node
-ms.assetid: be1236e2-c710-4833-863e-54e826e53f92
 keywords:
 - method sets WDK BDA , node controlling pin
 - property sets WDK BDA , node controlling pin

@@ -1,7 +1,6 @@
 ---
 title: Pool Tracking
 description: Pool Tracking monitors the memory allocations made by the driver.
-ms.assetid: 5b8aa775-d908-4a7a-b54f-6c63ac1ebd13
 keywords:
 - Memory Pool Tracking feature WDK Driver Verifier
 - Pool Tracking feature WDK Driver Verifier

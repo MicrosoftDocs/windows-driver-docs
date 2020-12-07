@@ -1,7 +1,6 @@
 ---
 title: Debugging Windows Vista
 description: To use WinDbg to debug Windows Vista, get the Windows 7 Debugging Tools for Windows package, which is included in the SDK for Windows 7.
-ms.assetid: 1E4FC9D9-7F84-4F67-8FBC-4283C69AB0AC
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

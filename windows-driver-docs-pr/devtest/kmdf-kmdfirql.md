@@ -1,7 +1,6 @@
 ---
 title: KmdfIrql rule (kmdf)
 description: The KmdfIrql rule specifies that a driver calls a framework method at an IRQL that is less than or equal to the maximum IRQL for that method.
-ms.assetid: 1baee41d-2c56-45b8-a1c5-7786ffe20769
 ms.date: 05/21/2018
 keywords: ["KmdfIrql rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Rendering to Multiple Targets Simultaneously
 description: Rendering to Multiple Targets Simultaneously
-ms.assetid: 72c56ea6-d5da-420a-91f4-c7fa09daf67e
 keywords:
 - rendering multiple targets WDK DirectX 9.0
 - multiple render targets WDK DirectX 9.0

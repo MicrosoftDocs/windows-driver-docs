@@ -1,7 +1,6 @@
 ---
 title: Developing apps using multiple PDP contexts
 description: Developing apps using multiple PDP contexts
-ms.assetid: 6a977a69-397d-4922-890d-1810dd54dff4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

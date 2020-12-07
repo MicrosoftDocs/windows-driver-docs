@@ -1,7 +1,6 @@
 ---
 title: Initializing a Miniport-Intermediate Driver
 description: Initializing a Miniport-Intermediate Driver
-ms.assetid: b0beea1f-7374-49e9-9650-0bdb37902469
 keywords:
 - NDIS intermediate drivers WDK , initializing
 - intermediate drivers WDK networking , initializing

@@ -1,7 +1,6 @@
 ---
 title: A Wave Sink for Kernel-Mode Software Synthesizers
 description: A Wave Sink for Kernel-Mode Software Synthesizers
-ms.assetid: 37ba9ad5-8b35-4252-a6fd-46dead924294
 keywords:
 - wave sinks WDK audio , kernel-mode software synthesizers
 - MIDI transport WDK audio

@@ -1,7 +1,6 @@
 ---
 title: Device Support
 description: Device Support
-ms.assetid: 41316BB1-0AE0-4100-AE7B-0014FE9FD0E7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

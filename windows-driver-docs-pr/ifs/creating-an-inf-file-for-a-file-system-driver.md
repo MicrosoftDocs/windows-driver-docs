@@ -1,7 +1,6 @@
 ---
 title: Creating an INF File for a File System Driver
 description: Creating an INF File for a File System Driver
-ms.assetid: 4b67159f-a5a5-46da-9500-a9c6b6995da4
 keywords:
 - INF files WDK file system , creating
 - SetupAPI WDK file system

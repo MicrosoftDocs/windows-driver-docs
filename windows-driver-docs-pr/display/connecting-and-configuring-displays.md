@@ -1,7 +1,6 @@
 ---
 title: Connecting and Configuring Displays
 description: Connecting and Configuring Displays
-ms.assetid: 8c16f99e-c7fd-46e2-b102-f5f0a297fbec
 keywords:
 - displays WDK Windows 7 display
 - displays WDK Windows Server 2008 R2 display

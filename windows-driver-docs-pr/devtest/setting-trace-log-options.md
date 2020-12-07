@@ -1,7 +1,6 @@
 ---
 title: Setting Trace Log Options
 description: Setting Trace Log Options
-ms.assetid: 3790a3af-69bd-4ccc-a116-0df6312f378a
 keywords:
 - summary message files WDK TraceView
 - listing message files WDK

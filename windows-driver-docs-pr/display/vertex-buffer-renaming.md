@@ -1,7 +1,6 @@
 ---
 title: Vertex Buffer Renaming
 description: Vertex Buffer Renaming
-ms.assetid: b76552b4-77a9-43f4-984b-10de92dffa83
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , vertex buffers, renaming
 - vertex buffers WDK DirectX 8.0 , renaming

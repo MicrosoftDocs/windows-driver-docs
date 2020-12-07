@@ -1,7 +1,6 @@
 ---
 title: Converting a Windows NT 4.0 SCSI Miniport for Plug and Play Overview
 description: Converting a Windows NT 4.0 SCSI Miniport for Plug and Play Overview
-ms.assetid: 46e5eb41-ff41-4054-856b-cc32f286e543
 keywords:
 - SCSI miniport drivers WDK storage , PnP
 - PnP WDK SCSI

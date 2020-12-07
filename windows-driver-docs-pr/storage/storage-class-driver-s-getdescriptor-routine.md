@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's GetDescriptor Routine
 description: Storage Class Driver's GetDescriptor Routine
-ms.assetid: d1ddcfe8-f276-4e45-82b7-0f07f0526c71
 keywords:
 - GetDescriptor
 ms.date: 04/20/2017

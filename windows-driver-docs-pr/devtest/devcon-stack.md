@@ -1,7 +1,6 @@
 ---
 title: DevCon Stack
 description: Displays the expected driver stack for the specified devices, and the GUID and the name of the device setup class for each device.
-ms.assetid: c06436d2-da66-4eb2-89ed-a1832967cdbb
 keywords:
 - DevCon Stack Driver Development Tools
 topic_type:

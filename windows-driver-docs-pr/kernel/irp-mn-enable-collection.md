@@ -2,7 +2,6 @@
 title: IRP_MN_ENABLE_COLLECTION
 description: Any WMI driver that registers one or more of its data blocks as potentially time-consuming, or expensive, to collect must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: dc6c3ceb-a992-4e7b-ab25-d91c00af655a
 keywords:
  - IRP_MN_ENABLE_COLLECTION Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

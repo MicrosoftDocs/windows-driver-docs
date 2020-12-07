@@ -1,7 +1,6 @@
 ---
 title: Writing a Device Installation Application
 description: Writing a Device Installation Application
-ms.assetid: 9927e2e0-6c8e-437f-98ce-595bd304ec72
 keywords:
 - installation applications WDK , about writing installation applications
 - device installation applications WDK , about writing installation applications

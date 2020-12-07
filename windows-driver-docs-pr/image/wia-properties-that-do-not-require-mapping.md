@@ -1,7 +1,6 @@
 ---
 title: WIA Properties That Do Not Require Mapping
 description: WIA Properties That Do Not Require Mapping
-ms.assetid: 094c3b3e-17c7-439f-a945-175835bbf4ce
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Converting a Windows NT 4.0 Miniport Driver to Windows 2000
 description: Converting a Windows NT 4.0 Miniport Driver to Windows 2000
-ms.assetid: a55192c6-3de4-4433-8825-3393f2bce04a
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions, converting a Windows NT 4.0 driver
 - converting video miniport drivers WDK Windows 2000

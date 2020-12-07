@@ -1,7 +1,6 @@
 ---
 title: Preparsed Data
 description: Preparsed Data
-ms.assetid: 50ac2877-4c45-4d55-b5cc-013486892fbf
 keywords:
 - parsed data WDK HID
 - preparsed data WDK HID

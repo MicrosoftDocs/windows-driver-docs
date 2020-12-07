@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_RTT
 description: WDI_TLV_RTT is a TLV that contains the measured roundtrip time (RTT), in picoseconds, for a Fine Timing Measurement (FTM) request. 
-ms.assetid: 82543997-30D3-469B-8EDE-31AF528BDDE4
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_RTT Network Drivers Starting with Windows Vista

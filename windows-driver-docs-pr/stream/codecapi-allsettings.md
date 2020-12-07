@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_ALLSETTINGS
 description: CODECAPI\_ALLSETTINGS
-ms.assetid: 0ae11200-af21-476a-89a8-515bd98920a0
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

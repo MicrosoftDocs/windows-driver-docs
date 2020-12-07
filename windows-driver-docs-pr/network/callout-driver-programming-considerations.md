@@ -1,7 +1,6 @@
 ---
 title: Callout Driver Programming Considerations
 description: Callout Driver Programming Considerations
-ms.assetid: e470202a-bc3b-41ac-8156-8aac8cd976cd
 keywords:
 - Windows Filtering Platform callout drivers WDK , programming considerations
 - callout drivers WDK Windows Filtering Platform , programming considerations

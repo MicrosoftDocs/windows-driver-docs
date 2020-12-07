@@ -1,7 +1,6 @@
 ---
 title: Map the ProcAmp Control DDI to DirectDraw and DirectX VA
 description: Access the ProcAmp control functionality through DirectDraw's [motion compensation callback functions](motion-compensation-callbacks.md), and map it to the [ProcAmp control DDI](./procamp-control-ddi.md).
-ms.assetid: ca2b92d9-7f3d-45b9-8841-43915dd4237d
 keywords:
 - ProcAmp WDK DirectX VA , mapping ProcAmp control DDI
 - mapping ProcAmp control DDI

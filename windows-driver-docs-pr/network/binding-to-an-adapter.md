@@ -1,7 +1,6 @@
 ---
 title: Binding to an Adapter
 description: Binding to an Adapter
-ms.assetid: 583b7c73-fbc7-4d25-95f7-973cede61ec8
 keywords:
 - protocol drivers WDK networking , binding to adapter
 - NDIS protocol drivers WDK , binding to adapter

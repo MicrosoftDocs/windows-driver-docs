@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_DEVICE_CAPS
 description: OID_WWAN_DEVICE_CAPS returns the capabilities of the MB device, including the cellular technology it supports, the classes of packet data it supports, the radio frequencies it supports, the type of voice service it provides, and whether it uses a Subscriber Identity Module (SIM card). The supported cellular technology and whether the device uses a SIM are particularly important because network provider selection and SIM user interfaces depend on the values of these two capabilities. The manufacturer and firmware revision are returned as optional fields. Set requests are not supported. Miniport drivers must process query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request, and later sending a NDIS_STATUS_WWAN_DEVICE_CAPS status notification containing a NDIS_WWAN_DEVICE_CAPS structure that indicates the capabilities of the MB device when completing query requests.
-ms.assetid: bcf04d0b-70f3-48b7-a505-c82e50edadb2
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DEVICE_CAPS Network Drivers Starting with Windows Vista

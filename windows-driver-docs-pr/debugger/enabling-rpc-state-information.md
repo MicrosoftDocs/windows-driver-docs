@@ -1,7 +1,6 @@
 ---
 title: Enabling RPC State Information
 description: Enabling RPC State Information
-ms.assetid: 8804d941-c241-44cb-8d91-05b94a875d94
 keywords: ["RPC debugging, enabling RPC state information"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

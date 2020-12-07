@@ -1,7 +1,6 @@
 ---
 title: Types of APCs
 description: Types of APCs
-ms.assetid: 74ed953c-1b2a-40b9-9df3-16869b198b38
 keywords: ["asynchronous procedure calls WDK kernel", "APCs WDK kernel", "user APCs WDK kernel", "normal kernel APCs WDK kernel", "special kernel APCs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

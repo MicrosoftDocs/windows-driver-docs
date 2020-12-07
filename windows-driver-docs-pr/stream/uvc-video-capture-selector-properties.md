@@ -1,7 +1,6 @@
 ---
 title: UVC Video Capture Selector Properties
 description: UVC Video Capture Selector Properties
-ms.assetid: f3af81a1-5c9b-4af6-a931-5146ef187b36
 keywords:
 - UVC video capture selector properties WDK video capture
 - selector properties WDK video capture

@@ -1,7 +1,6 @@
 ---
 title: D3DRENDERSTATETYPE Changes
 description: D3DRENDERSTATETYPE Changes
-ms.assetid: b62bc1f9-b9f1-40f1-aed1-752285adb3c4
 keywords:
 - multimatrix vertex blending WDK Direct3D , D3DRENDERSTATETYPE
 - D3DRENDERSTATETYPE

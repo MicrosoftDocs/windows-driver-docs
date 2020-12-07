@@ -1,7 +1,6 @@
 ---
 title: Synchronizing with the Target Computer
 description: Synchronizing with the Target Computer
-ms.assetid: bc9bbe35-6665-49ee-ba95-16ff03e25e96
 keywords: ["synchronizing with the target computer", "synchronizing with the target computer, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

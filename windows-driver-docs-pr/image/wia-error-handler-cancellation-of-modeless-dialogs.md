@@ -1,7 +1,6 @@
 ---
 title: WIA Error Handler Cancellation of Modeless Dialogs
 description: WIA Error Handler Cancellation of Modeless Dialogs
-ms.assetid: eca6c3a3-c196-4d28-925a-c8f5d5d8601b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

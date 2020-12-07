@@ -1,7 +1,6 @@
 ---
 title: PoolMon Requirements
 description: PoolMon Requirements
-ms.assetid: 5ee1ed1c-5392-4ce4-8edb-e600b93f82d7
 keywords:
 - PoolMon WDK , requirements
 - Memory Pool Monitor WDK , requirements

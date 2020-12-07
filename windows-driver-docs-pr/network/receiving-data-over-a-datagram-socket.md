@@ -1,7 +1,6 @@
 ---
 title: Receiving Data over a Datagram Socket
 description: Receiving Data over a Datagram Socket
-ms.assetid: 650b7688-967e-4ce6-80ad-8f7b6e1ec009
 keywords:
 - receiving datagrams
 - datagram sockets WDK Winsock Kernel

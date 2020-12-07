@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS control code
 description: The DEBUG\_REQUEST\_GET\_ADDITIONAL\_CREATE\_OPTIONS Request operation returns the default process creation options.
-ms.assetid: ad4c98d9-ca4e-4ee3-a177-2fe04a8f22e2
 keywords: ["DEBUG_REQUEST_GET_ADDITIONAL_CREATE_OPTIONS control code Windows Debugging"]
 topic_type:
 - apiref

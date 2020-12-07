@@ -1,7 +1,6 @@
 ---
 title: Trace Flags
 description: Trace Flags
-ms.assetid: a94159ab-ce21-4604-beb8-ee01e333505e
 keywords:
 - trace flags WDK
 - flags WDK software tracing

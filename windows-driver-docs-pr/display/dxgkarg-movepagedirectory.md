@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_MOVEPAGEDIRECTORY structure
 description: The DXGKARG\_MOVEPAGEDIRECTORY structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 81db1be9-4673-4353-b85f-8c6b87da1fc2
 keywords: ["_DXGKARG_MOVEPAGEDIRECTORY structure Display Devices", "DXGKARG_MOVEPAGEDIRECTORY structure Display Devices"]
 topic_type:
 - apiref

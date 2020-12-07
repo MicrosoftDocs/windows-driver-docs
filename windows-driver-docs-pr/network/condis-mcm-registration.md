@@ -1,7 +1,6 @@
 ---
 title: CoNDIS MCM Registration
 description: CoNDIS MCM Registration
-ms.assetid: 7dfb86c5-e7b6-4b9d-8f29-a6d247500c3e
 keywords:
 - MCMs WDK networking , registering CoNDIS miniport call managers
 - miniport call managers WDK networking , registering CoNDIS miniport call managers

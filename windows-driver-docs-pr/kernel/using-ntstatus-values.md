@@ -1,7 +1,6 @@
 ---
 title: Using NTSTATUS Values
 description: Using NTSTATUS Values
-ms.assetid: fe823930-e3ff-4c95-a640-bb6470c95d1d
 keywords: ["NTSTATUS values WDK kernel", "driver support routines WDK kernel", "return values WDK kernel", "testing return values WDK NTSTATUS values", "success values WDK NTSTATUS values", "informational values WDK NTSTATUS values", "warnings WDK NTSTATUS values", "error values WDK NTSTATUS values", "status information WDK NTSTATUS values", "checking return values"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

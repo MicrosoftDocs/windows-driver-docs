@@ -1,7 +1,6 @@
 ---
 title: PnP Device Installation Signing Requirements
 description: PnP Device Installation Signing Requirements
-ms.assetid: 92527b24-b29a-4a78-886d-fafd620090d1
 keywords:
 - driver signing WDK , PnP device installations
 - signing drivers WDK , PnP device installations

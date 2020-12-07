@@ -1,7 +1,6 @@
 ---
 title: Providing IoTimer Context Information
 description: Providing IoTimer Context Information
-ms.assetid: a92a7c3d-1602-430b-8ae1-c79bfc9ac7f9
 keywords: ["IoTimer", "IoInitializeTimer"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

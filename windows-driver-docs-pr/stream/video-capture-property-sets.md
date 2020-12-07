@@ -1,7 +1,6 @@
 ---
 title: Video Capture Property Sets
 description: Video Capture Property Sets
-ms.assetid: 23f61735-ae04-4143-8bd5-b713a2ab0e90
 keywords:
 - video capture WDK AVStream , property sets
 - capturing video WDK AVStream , property sets

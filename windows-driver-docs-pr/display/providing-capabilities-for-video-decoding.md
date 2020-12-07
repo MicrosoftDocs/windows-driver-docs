@@ -1,7 +1,6 @@
 ---
 title: Providing Capabilities for Video Decoding
 description: Providing Capabilities for Video Decoding
-ms.assetid: bffcc0da-7b1a-4f70-98f5-4841c8df9f12
 keywords:
 - video decoding WDK DirectX VA , capabilities provided per request type
 - decoding video WDK DirectX VA , capabilities provided per request type

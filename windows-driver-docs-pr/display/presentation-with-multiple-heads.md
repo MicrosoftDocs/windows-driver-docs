@@ -1,7 +1,6 @@
 ---
 title: Presentation with Multiple Heads
 description: Presentation with Multiple Heads
-ms.assetid: 60405ea7-91d5-4deb-9161-8890faa7e897
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , presentation
 - presentation WDK DirectX 9.0

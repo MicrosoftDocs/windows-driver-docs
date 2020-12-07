@@ -1,7 +1,6 @@
 ---
 title: BDA Stream Format GUIDs
 description: BDA Stream Format GUIDs
-ms.assetid: 216fb02c-b49b-4b9f-b7a5-220c718fb202
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

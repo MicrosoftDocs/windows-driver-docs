@@ -1,7 +1,6 @@
 ---
 title: Function Drivers
 description: Function Drivers
-ms.assetid: a6ac329b-ffb0-4bd3-9d54-195fa025d532
 keywords: ["function drivers WDK WDM", "raw mode WDK WDM", "WDM function drivers WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: SPI tests in MITT
 description: SPI test modules that are included in the MITT software package.
-ms.assetid: 8240841C-FFA0-48EC-AB7E-4E15E262C23D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

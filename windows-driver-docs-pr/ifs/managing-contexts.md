@@ -1,7 +1,6 @@
 ---
 title: Managing Contexts
 description: Managing Contexts
-ms.assetid: 1ad33c6c-a5dd-4b65-bfcc-a40453d3a6b5
 keywords:
 - filter manager WDK file system minifilter , contexts
 - file system minifilter drivers WDK , contexts

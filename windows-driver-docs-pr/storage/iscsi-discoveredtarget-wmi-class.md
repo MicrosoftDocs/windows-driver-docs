@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_DiscoveredTarget WMI Class
 description: ISCSI\_DiscoveredTarget WMI Class
-ms.assetid: d2d1941e-a67a-498e-9ead-ce0f45147ba0
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

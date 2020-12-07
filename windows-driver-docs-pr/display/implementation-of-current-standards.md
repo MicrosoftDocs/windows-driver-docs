@@ -1,7 +1,6 @@
 ---
 title: Implementation of Current Standards
 description: Implementation of Current Standards
-ms.assetid: b81c95f6-e6bc-4a2b-b3b8-e41451d5c0ef
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , standards
 - Video Acceleration WDK DirectX , standards

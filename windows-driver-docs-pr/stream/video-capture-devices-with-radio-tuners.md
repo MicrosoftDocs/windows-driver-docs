@@ -1,7 +1,6 @@
 ---
 title: Video Capture Devices with Radio Tuners
 description: Video Capture Devices with Radio Tuners
-ms.assetid: 36e3ca98-cb1b-46cc-809a-8c9ad08a53c8
 keywords:
 - radio tuners WDK video capture
 - PLL offsets WDK video capture

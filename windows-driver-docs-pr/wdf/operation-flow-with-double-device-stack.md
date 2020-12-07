@@ -1,7 +1,6 @@
 ---
 title: Operation Flow with Double Device Stack
 description: Operation Flow with Double Device Stack
-ms.assetid: a717b9c0-b24a-4347-8b0a-254a17238b5f
 keywords:
 - operation flow WDK UMDF
 - I/O requests WDK UMDF , operation flow

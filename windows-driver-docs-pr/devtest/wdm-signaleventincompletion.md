@@ -1,7 +1,6 @@
 ---
 title: SignalEventInCompletion rule (wdm)
 description: The SignalEventInCompletion rule specifies that when processing an asynchronous IRP, the driver needs to call the KeSetEvent in the completion routine when the Irp- PendingReturned flag is set.
-ms.assetid: CF79EB38-82B0-4CD5-B629-8B8D84EB60CA
 ms.date: 05/21/2018
 keywords: ["SignalEventInCompletion rule (wdm)"]
 topic_type:

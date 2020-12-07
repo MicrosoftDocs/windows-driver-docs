@@ -1,7 +1,6 @@
 ---
 title: DriverEntry of Tape Miniclass Driver routine
 description: DriverEntry initializes a tape miniclass driver. This routine is required.
-ms.assetid: dc082f31-5ec5-491e-a347-8f8e485c042b
 keywords: ["DriverEntry routine Storage Devices"]
 topic_type:
 - apiref

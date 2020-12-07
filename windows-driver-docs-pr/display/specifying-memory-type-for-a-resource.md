@@ -1,7 +1,6 @@
 ---
 title: Specifying Memory Type for a Resource
 description: Specifying Memory Type for a Resource
-ms.assetid: b4691de0-d3c9-4a6f-a9f4-aafb22ea3e97
 keywords:
 - video memory types WDK display
 - memory types WDK display

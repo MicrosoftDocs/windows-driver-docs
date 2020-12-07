@@ -1,7 +1,6 @@
 ---
 title: DIF_DETECT
 description: DIF_DETECT
-ms.assetid: 866a99fc-f48e-447d-b5eb-6339dc98d3f2
 keywords: ["DIF_DETECT Device and Driver Installation"]
 topic_type:
 - apiref

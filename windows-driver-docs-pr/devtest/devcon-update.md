@@ -1,7 +1,6 @@
 ---
 title: DevCon Update
 description: Forcibly replaces the current device drivers for a specified device with drivers listed in the specified INF file. Valid only on the local computer.
-ms.assetid: c07d7abe-31d8-4a8d-87da-8db649710c15
 keywords:
 - DevCon Update Driver Development Tools
 topic_type:

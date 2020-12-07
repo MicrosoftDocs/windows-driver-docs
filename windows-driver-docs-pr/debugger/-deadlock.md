@@ -1,7 +1,6 @@
 ---
 title: deadlock
 description: The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier.
-ms.assetid: c0e6074f-8afe-4526-a30f-427aac67ab99
 keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

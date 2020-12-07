@@ -1,7 +1,6 @@
 ---
 title: IrqlExPassive rule (wdm)
 description: The IrqlExPassive rule specifies that the driver calls the following executive support routines only at IRQL PASSIVE_LEVEL. The IrqlExPassive rule also specifies that the driver calls ExRaiseStatus at IRQL APC_LEVEL.
-ms.assetid: 92d73bd9-ce79-4be8-9ea2-a5aef2ea6edb
 ms.date: 05/21/2018
 keywords: ["IrqlExPassive rule (wdm)"]
 topic_type:

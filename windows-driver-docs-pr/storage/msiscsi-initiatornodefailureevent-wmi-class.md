@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_InitiatorNodeFailureEvent WMI Class
 description: MSiSCSI\_InitiatorNodeFailureEvent WMI Class
-ms.assetid: 2e542667-4da8-447b-b625-2cd27d52da61
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

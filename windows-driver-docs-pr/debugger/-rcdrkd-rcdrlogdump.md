@@ -1,7 +1,6 @@
 ---
 title: rcdrkd.rcdrlogdump
 description: The rcdrkd.rcdrlogdump extension displays the trace messages from all recorder buffers of a driver or set of drivers.
-ms.assetid: 18A25B5A-F22E-4A01-A130-885D5CA34D4D
 keywords: ["rcdrkd.rcdrlogdump Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

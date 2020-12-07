@@ -1,7 +1,6 @@
 ---
 title: Remote Session Commands
 description: Remote Session Commands
-ms.assetid: 8c7da3e9-c983-4253-92fb-ce64f22cdc6c
 keywords: ["Remote Tool, remote session commands"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

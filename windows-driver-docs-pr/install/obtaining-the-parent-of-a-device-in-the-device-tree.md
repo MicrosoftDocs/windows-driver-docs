@@ -1,7 +1,6 @@
 ---
 title: Obtaining the Parent of a Device in the Device Tree
 description: Obtaining the Parent of a Device in the Device Tree
-ms.assetid: 0ac1ccbb-c926-4d14-975e-127159309361
 keywords:
 - SetupAPI functions WDK , determining parents
 - parent device determining WDK SetupAPI

@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the Resolution Feature
 description: Option Attributes for the Resolution Feature
-ms.assetid: f04cd119-38c7-465c-b4fd-d657aa5bfacd
 keywords:
 - Resolution Feature
 ms.date: 04/20/2017

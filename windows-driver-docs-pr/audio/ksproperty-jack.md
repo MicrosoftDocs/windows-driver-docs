@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_JACK enumeration
 description: The KSPROPERTY\_JACK enumeration defines new property IDs that are used by audio jack structures.
-ms.assetid: d20a0b08-f20e-43a2-9ff5-eb0b9d1ea54e
 keywords: ["KSPROPERTY_JACK enumeration Audio Devices"]
 topic_type:
 - apiref

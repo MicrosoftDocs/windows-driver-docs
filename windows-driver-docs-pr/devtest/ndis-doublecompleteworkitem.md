@@ -1,7 +1,6 @@
 ---
 title: DoubleCompleteWorkItem rule (ndis)
 description: The DoubleCompleteWorkItem rule specifies that NDIS drivers must not complete an OID request multiple times when the completion is deferred in a work item.
-ms.assetid: 7add7473-0324-42e9-83bc-8f563410e44f
 ms.date: 05/21/2018
 keywords: ["DoubleCompleteWorkItem rule (ndis)"]
 topic_type:

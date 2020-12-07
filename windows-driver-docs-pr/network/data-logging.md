@@ -1,7 +1,6 @@
 ---
 title: Data Logging
 description: Data Logging
-ms.assetid: 1e4f00e0-0fc6-459d-bbdd-02fbca5b9945
 keywords:
 - classify callouts WDK Windows Filtering Platform , data logging
 - logging WDK Windows Filtering Platform

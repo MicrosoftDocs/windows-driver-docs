@@ -1,7 +1,6 @@
 ---
 title: GDL Comments
 description: GDL Comments
-ms.assetid: d7103c5b-87dd-46e9-972a-188758ee3447
 keywords:
 - constructs WDK GDL , comments
 - comments WDK GDL

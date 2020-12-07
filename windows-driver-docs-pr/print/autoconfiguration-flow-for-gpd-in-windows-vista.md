@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration Flow for GPD in Windows Vista
 description: Autoconfiguration Flow for GPD in Windows Vista
-ms.assetid: 41468218-fa05-4431-a57d-3056449f2e2e
 keywords:
 - GPD files WDK GDL extensions , autoconfiguration flow
 - in-box autoconfiguration support WDK printer , sequence of steps

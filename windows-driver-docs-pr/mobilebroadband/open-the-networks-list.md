@@ -1,7 +1,6 @@
 ---
 title: Open the networks list
 description: Open the networks list
-ms.assetid: 55935290-ebcb-4105-9b51-c862654f9f56
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

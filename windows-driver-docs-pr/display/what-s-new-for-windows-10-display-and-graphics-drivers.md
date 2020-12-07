@@ -1,7 +1,6 @@
 ---
 title: What's new for Windows 10 display and graphics drivers
 description: Describes new features in Windows 10 for display drivers
-ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
 ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---

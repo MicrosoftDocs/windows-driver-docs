@@ -1,7 +1,6 @@
 ---
 title: Interfaces Implemented at Both Ends of the Notification Channel
 description: Interfaces Implemented at Both Ends of the Notification Channel
-ms.assetid: cc6f1b06-c185-4915-a212-d0b3a2702d5d
 keywords:
 - spooler notification WDK print , channel
 - print spooler notification WDK , channel

@@ -1,7 +1,6 @@
 ---
 title: Deactivating a VC
 description: Deactivating a VC
-ms.assetid: 094e339c-b5a7-4894-9a3d-145231311647
 keywords:
 - virtual connections WDK CoNDIS , deactivating
 - deactivating virtual connections

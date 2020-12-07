@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the Memory Feature
 description: Option Attributes for the Memory Feature
-ms.assetid: 17646f6e-b234-4a17-ba24-4bc7f6f85ace
 keywords:
 - Memory Feature WDK print
 ms.date: 04/20/2017

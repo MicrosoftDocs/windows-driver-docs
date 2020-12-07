@@ -1,7 +1,6 @@
 ---
 title: Verifying the Release-Signature
 description: Verifying the Release-Signature
-ms.assetid: 28ed3bb6-dc57-42f9-8bd5-7118619f3bf5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

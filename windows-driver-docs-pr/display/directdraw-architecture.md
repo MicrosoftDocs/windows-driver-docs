@@ -1,7 +1,6 @@
 ---
 title: DirectDraw Architecture
 description: DirectDraw Architecture
-ms.assetid: 3bdde4f0-7502-4ca0-80bd-c4d3d93b85fd
 keywords:
 - GDI WDK DirectDraw
 - drawing WDK DirectDraw , architecture

@@ -1,7 +1,6 @@
 ---
 title: DirectDraw and D3D Callback Support Using DdGetDriverInfo
 description: The display driver can implement the DdGetDriverInfo function to indicate various DirectDraw and Direct3D callback support.
-ms.assetid: 7054564e-4520-4900-946a-95c92908667c
 keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , Windows 2000
 - callback functions WDK DirectDraw

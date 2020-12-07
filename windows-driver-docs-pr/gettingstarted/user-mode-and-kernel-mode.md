@@ -1,7 +1,6 @@
 ---
 title: User mode and kernel mode
 description: User mode and kernel mode
-ms.assetid: 9988ff75-f84e-404e-8c2b-0f8325fbbc63
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

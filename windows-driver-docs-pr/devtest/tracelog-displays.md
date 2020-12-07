@@ -1,7 +1,6 @@
 ---
 title: Tracelog Displays
 description: Tracelog Displays
-ms.assetid: 663af703-dacb-44ca-8b45-f324fa54ab6c
 keywords:
 - Tracelog WDK , displays
 ms.date: 04/20/2017

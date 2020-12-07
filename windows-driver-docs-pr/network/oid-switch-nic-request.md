@@ -1,7 +1,6 @@
 ---
 title: OID_SWITCH_NIC_REQUEST
 description: An object identifier (OID) method request of OID_SWITCH_NIC_REQUEST is used to encapsulate and forward OID requests to the Hyper-V extensible switch external network adapter.
-ms.assetid: 7EF4D950-D18E-400A-B1DD-39768A16E4C4
 ms.date: 08/08/2017
 keywords: 
  -OID_SWITCH_NIC_REQUEST Network Drivers Starting with Windows Vista

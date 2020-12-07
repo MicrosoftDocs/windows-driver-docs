@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_STORAGEPORT
 description: GUID_DEVINTERFACE_STORAGEPORT
-ms.assetid: 58146169-102b-4355-82d0-ea60979bf901
 keywords: ["GUID_DEVINTERFACE_STORAGEPORT Device and Driver Installation"]
 topic_type:
 - apiref

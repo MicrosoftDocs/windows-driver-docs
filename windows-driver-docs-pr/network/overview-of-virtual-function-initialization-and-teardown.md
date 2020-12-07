@@ -1,7 +1,6 @@
 ---
 title: Overview of Virtual Function Initialization and Teardown
 description: Overview of Virtual Function Initialization and Teardown
-ms.assetid: 2684A93A-40C2-49DA-925D-2BAACA9F8CD9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

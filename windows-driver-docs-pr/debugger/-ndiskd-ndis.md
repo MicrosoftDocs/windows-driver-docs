@@ -1,7 +1,6 @@
 ---
 title: ndiskd.ndis
 description: The ndiskd.ndis extension displays build information about ndis.sys.
-ms.assetid: d852d6cc-7eba-4dad-aba5-3a2c9eac2f46
 keywords: ["ndiskd.ndis Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

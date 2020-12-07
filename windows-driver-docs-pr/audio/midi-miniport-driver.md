@@ -1,7 +1,6 @@
 ---
 title: MIDI Miniport Driver
 description: MIDI Miniport Driver
-ms.assetid: 38aeba40-35da-4bfd-a8fe-cf8f7e96f286
 keywords:
 - audio miniport drivers WDK , MIDI
 - miniport drivers WDK audio , MIDI

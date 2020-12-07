@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ContainerId
 description: DEVPKEY_Device_ContainerId
-ms.assetid: 9d5be913-b699-4d8f-aa3f-53ad5dbe6482
 keywords: ["DEVPKEY_Device_ContainerId Device and Driver Installation"]
 topic_type:
 - apiref

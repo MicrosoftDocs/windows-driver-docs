@@ -1,7 +1,6 @@
 ---
 title: Print Schema
 description: Print Schema
-ms.assetid: 6e2d69b7-1c06-4f26-8a4b-944b452d8017
 keywords:
 - Print Schema WDK
 - printer drivers WDK , Print Schema

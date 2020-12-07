@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_DATAFLOW
 description: The KSPROPERTY\_PIN\_DATAFLOW property specifies the direction of data flow on pins instantiated by the pin factory. Sink pins are entry points into a filter; source pins output from a filter.
-ms.assetid: 3132b344-c4f3-48dc-9829-f4e97d0f18fc
 keywords: ["KSPROPERTY_PIN_DATAFLOW Streaming Media Devices"]
 topic_type:
 - apiref

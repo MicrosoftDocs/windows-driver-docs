@@ -1,7 +1,6 @@
 ---
 title: Checking for Other Special Cases on IRP_MJ_CREATE
 description: Checking for Other Special Cases on IRP_MJ_CREATE
-ms.assetid: e6af44c2-fd39-469b-8530-cf88edb329f7
 keywords:
 - IRP_MJ_CREATE
 - security checks WDK file systems , IRP_MJ_CREATE

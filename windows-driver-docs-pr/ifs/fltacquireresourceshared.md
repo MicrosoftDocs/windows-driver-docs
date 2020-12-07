@@ -1,7 +1,6 @@
 ---
 title: FltAcquireResourceShared routine
 description: The FltAcquireResourceShared routine acquires the given resource for shared access by the calling thread.
-ms.assetid: 5232cdba-1050-46b6-8c21-177d4cd1721d
 keywords: ["FltAcquireResourceShared routine Installable File System Drivers"]
 topic_type:
 - apiref

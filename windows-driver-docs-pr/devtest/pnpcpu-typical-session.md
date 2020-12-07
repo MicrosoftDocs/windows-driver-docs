@@ -1,7 +1,6 @@
 ---
 title: PNPCPU Typical Session
 description: PNPCPU Typical Session
-ms.assetid: d0c1b6aa-fe23-4d01-aecf-897aba3672c9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

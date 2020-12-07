@@ -1,7 +1,6 @@
 ---
 title: Scaling the Desktop Image
 description: Scaling the Desktop Image
-ms.assetid: e27c7510-45b0-46e6-878f-b901cdd1cd57
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts, scaling the desktop image
 - connecting displays WDK Windows Server 2008 R2 display , CCD concepts, scaling the desktop image

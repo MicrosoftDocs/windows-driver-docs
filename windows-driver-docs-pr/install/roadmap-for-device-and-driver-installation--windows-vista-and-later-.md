@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Device and Driver Installation
 description: Roadmap for Device and Driver Installation
-ms.assetid: d6cb6d8c-226f-4b6f-989a-36184236f826
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

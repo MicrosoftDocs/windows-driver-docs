@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeMipMapSize method
 description: The CPixel ComputeMipMapSize method determines the amount of memory required to allocate a mipmap texture.
-ms.assetid: f60883df-9200-4ae7-b130-21a6892e14be
 keywords: ["ComputeMipMapSize method Display Devices", "ComputeMipMapSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipMapSize method"]
 topic_type:
 - apiref

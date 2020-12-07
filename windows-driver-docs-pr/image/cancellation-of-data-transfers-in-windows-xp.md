@@ -1,7 +1,6 @@
 ---
 title: Cancellation of Data Transfers in Windows XP
 description: Cancellation of Data Transfers in Windows XP
-ms.assetid: 971979a5-950b-49d4-9adb-cd4589a00426
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

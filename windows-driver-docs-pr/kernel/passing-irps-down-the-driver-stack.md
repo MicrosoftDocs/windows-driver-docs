@@ -1,7 +1,6 @@
 ---
 title: Passing IRPs down the Driver Stack
 description: Passing IRPs down the Driver Stack
-ms.assetid: 69d912c5-83cf-4651-b379-de6baea8ddd0
 keywords: ["IRPs WDK kernel , passing down stack", "passing IRPs down driver stack WDK", "transferring IRPs down driver stack", "I/O stack locations WDK kernel", "stack locations WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

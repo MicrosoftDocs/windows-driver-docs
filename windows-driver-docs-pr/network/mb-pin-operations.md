@@ -1,7 +1,6 @@
 ---
 title: MB PIN Operations
 description: MB PIN Operations
-ms.assetid: ca9e1537-29e8-4849-a634-5c2177886321
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

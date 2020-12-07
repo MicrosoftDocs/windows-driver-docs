@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x76 PROCESS_HAS_LOCKED_PAGES
 description: The PROCESS_HAS_LOCKED_PAGES bug check has a value of 0x00000076. This bug check indicates that a driver failed to release locked pages after an I/O operation.
-ms.assetid: 25c63e2e-6d2a-401a-b523-ffa70e9f75df
 keywords: ["Bug Check 0x76 PROCESS_HAS_LOCKED_PAGES", "PROCESS_HAS_LOCKED_PAGES"]
 ms.date: 05/23/2017
 topic_type:

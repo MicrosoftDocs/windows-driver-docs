@@ -1,7 +1,6 @@
 ---
 title: Bug Checks from KMDF Drivers
 description: Bug Checks from KMDF Drivers
-ms.assetid: 4fde9586-3455-4692-8eeb-bbf64c0a437e
 keywords:
 - debugging drivers WDK KMDF , bug checks
 - bug check WDK KMDF

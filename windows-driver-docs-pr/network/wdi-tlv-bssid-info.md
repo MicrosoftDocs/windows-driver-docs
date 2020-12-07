@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BSSID_INFO
 description: WDI_TLV_BSSID_INFO is a TLV that contains BSSID information.
-ms.assetid: C9E2B2D5-16CA-438D-AD86-1FA4F4F11CD1
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSSID_INFO Network Drivers Starting with Windows Vista

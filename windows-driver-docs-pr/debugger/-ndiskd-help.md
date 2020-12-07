@@ -1,7 +1,6 @@
 ---
 title: ndiskd.help
 description: The ndiskd.help command displays a list of available ndiskd commands with a brief description of each one.
-ms.assetid: ba9a1364-173b-4258-9894-09271e47786e
 keywords: ["ndiskd.help Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:

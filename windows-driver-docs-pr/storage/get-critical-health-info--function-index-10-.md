@@ -1,7 +1,6 @@
 ---
 title: Get Critical Health Info (Function Index 10)
 description: This function returns critical health-related information.
-ms.assetid: 2083628D-FB46-4104-9F70-F7124B35DD04
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: Removing IEEE 1394 Virtual Devices
 description: Removing IEEE 1394 Virtual Devices
-ms.assetid: ea2d4b9e-7774-42dc-98dd-d95298012d72
 keywords:
 - emulation drivers WDK IEEE 1394 bus
 - hardware emulation drivers WDK IEEE 1394 bus

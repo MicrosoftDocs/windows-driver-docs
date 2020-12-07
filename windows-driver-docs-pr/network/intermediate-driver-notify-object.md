@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Notify Object
 description: Intermediate Driver Notify Object
-ms.assetid: 756e02ff-5e30-4511-af4c-b7be9830898c
 keywords:
 - notify objects WDK networking , intermediate drivers
 ms.date: 04/20/2017

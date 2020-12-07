@@ -1,7 +1,6 @@
 ---
 title: Tap and Do scenarios
 description: Tap and Do scenarios
-ms.assetid: EBBDBC58-236A-4020-92C9-69406362097F
 keywords:
 - NFC
 - near field communications

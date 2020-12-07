@@ -1,7 +1,6 @@
 ---
 title: Tracepdb Overview
 description: Tracepdb Overview
-ms.assetid: ec13726f-65e6-4aef-b2b1-a4bddcd73a37
 keywords:
 - Tracepdb WDK
 - trace message control files WDK

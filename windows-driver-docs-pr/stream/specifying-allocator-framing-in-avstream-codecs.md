@@ -1,7 +1,6 @@
 ---
 title: Specifying Allocator Framing in AVStream Codecs
 description: Specifying Allocator Framing in AVStream Codecs
-ms.assetid: e5b042ae-9b9c-48e9-9f0c-449e205316a9
 keywords:
 - AVStream hardware codec support WDK , specifying allocator framing
 ms.date: 04/20/2017

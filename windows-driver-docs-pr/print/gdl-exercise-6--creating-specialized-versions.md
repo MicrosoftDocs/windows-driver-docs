@@ -1,7 +1,6 @@
 ---
 title: GDL Exercise 6 Creating Specialized Versions
 description: GDL Exercise 6 Creating Specialized Versions
-ms.assetid: d9e60958-58b6-4ffe-a955-bc1b13b6a649
 keywords:
 - GDL WDK , examples
 - examples WDK GDL

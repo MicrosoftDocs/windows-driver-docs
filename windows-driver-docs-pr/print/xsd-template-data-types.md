@@ -1,7 +1,6 @@
 ---
 title: XSD Template Data Types
 description: XSD Template Data Types
-ms.assetid: 96d3a75a-fa15-47bb-8331-e3994d25c42d
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , primitive

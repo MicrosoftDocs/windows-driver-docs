@@ -1,7 +1,6 @@
 ---
 title: DMA Channel Objects
 description: DMA Channel Objects
-ms.assetid: 2064bbdf-62b7-454f-8764-b2aa21636c02
 keywords:
 - helper objects WDK audio , DMA channel objects
 - DMA channel objects WDK audio

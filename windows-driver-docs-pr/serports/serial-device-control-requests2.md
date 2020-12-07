@@ -1,7 +1,6 @@
 ---
 title: Serial Device Control Requests
 description: Serial Device Control Requests
-ms.assetid: 12dab038-e4da-47b5-ada8-e1c7ee980cde
 keywords:
 - serial devices WDK , device control requests
 - device control requests WDK serial devices

@@ -1,7 +1,6 @@
 ---
 title: INF SourceDisksFiles Section
 description: The SourceDisksFiles section names source files, installation disks, and directory paths used during installation.
-ms.assetid: 4a20b2e7-3371-47c1-8f51-bcc7af044382
 keywords:
 - INF SourceDisksFiles Section Device and Driver Installation
 topic_type:

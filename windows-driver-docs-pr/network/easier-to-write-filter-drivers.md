@@ -1,7 +1,6 @@
 ---
 title: Easier-to-Write Filter Drivers
 description: Easier-to-Write Filter Drivers
-ms.assetid: 77cb7a9a-f823-4dfa-a0fc-11c174f34250
 keywords:
 - filter drivers WDK networking , writing filter drivers
 - NDIS filter drivers WDK , writing filter drivers

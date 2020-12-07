@@ -1,7 +1,6 @@
 ---
 title: HD Audio DDI Programming Guidelines
 description: HD Audio DDI Programming Guidelines
-ms.assetid: 289bdf85-9138-4920-a61f-050c51077d3e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

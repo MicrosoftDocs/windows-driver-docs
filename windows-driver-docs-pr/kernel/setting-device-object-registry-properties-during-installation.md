@@ -1,7 +1,6 @@
 ---
 title: Setting Device Object Registry Properties During Installation
 description: Setting Device Object Registry Properties During Installation
-ms.assetid: 29d40398-09b9-4e64-aa47-da229066bffd
 keywords: ["device objects WDK kernel , registry", "registry WDK device objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

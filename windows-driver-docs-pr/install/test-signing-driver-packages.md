@@ -1,7 +1,6 @@
 ---
 title: Test-Signing Driver Packages
 description: Test-Signing Driver Packages
-ms.assetid: 84727762-5ba0-48ea-8d5a-7ac54aadbb7e
 keywords:
 - driver signing WDK , driver packages
 - signing drivers WDK , driver packages

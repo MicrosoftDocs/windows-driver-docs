@@ -1,7 +1,6 @@
 ---
 title: GDL Value Macros
 description: GDL Value Macros
-ms.assetid: 171245ef-d9ab-4c1d-86b9-f53ae10033b3
 keywords:
 - GDL WDK , macros
 - macros WDK GDL , value macros

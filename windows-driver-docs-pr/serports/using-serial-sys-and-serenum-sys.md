@@ -1,7 +1,6 @@
 ---
 title: Using Serial.sys and Serenum.sys
 description: Using Serial.sys and Serenum.sys
-ms.assetid: 2dcf22c8-0666-4b58-8fd3-97a4d17eaa2a
 keywords:
 - serial ports WDK
 - serial devices WDK

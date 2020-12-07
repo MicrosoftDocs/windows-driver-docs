@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_PRESENT\_MULTIPLANE\_OVERLAY structure
 description: Learn about the D3DKMT\_PRESENT\_MULTIPLANE\_OVERLAY structure, which is reserved for system use. Do not use in your driver.
-ms.assetid: 2526ccce-826a-4e8f-ab15-639510b1d5cf
 keywords: ["D3DKMT_PRESENT_MULTIPLANE_OVERLAY structure Display Devices"]
 topic_type:
 - apiref

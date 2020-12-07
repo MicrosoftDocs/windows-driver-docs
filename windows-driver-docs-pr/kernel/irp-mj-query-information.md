@@ -2,7 +2,6 @@
 title: IRP_MJ_QUERY_INFORMATION
 description: Drivers can optionally handle an IRP_MJ_QUERY_INFORMATION request.
 ms.date: 08/12/2017
-ms.assetid: 317f82b1-88d3-4618-9282-140eca2178b5
 keywords:
  - IRP_MJ_QUERY_INFORMATION Kernel-Mode Driver Architecture
 ms.localizationpriority: medium

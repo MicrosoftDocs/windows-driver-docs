@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION
 description: The WIA\_IPS\_SUPPORTS\_CHILD\_ITEM\_CREATION property indicates if a device supports the creation of child items.
-ms.assetid: 77358889-d2c4-410f-b553-2dae2f7b27e3
 keywords: ["WIA_IPS_SUPPORTS_CHILD_ITEM_CREATION Imaging Devices"]
 topic_type:
 - apiref

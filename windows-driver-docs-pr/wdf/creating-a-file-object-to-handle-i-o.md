@@ -1,7 +1,6 @@
 ---
 title: Creating a File Object to Handle I/O
 description: Creating a File Object to Handle I/O
-ms.assetid: 3cd826fc-5c67-4ab4-800a-b5aa4bd5244f
 keywords:
 - file object to handle I/O WDK UMDF
 - file object to handle I/O WDK UMDF , creating

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_BRIGHTNESS
 description: The WIA\_IPS\_BRIGHTNESS property contains the current hardware brightness setting for a device.
-ms.assetid: 3954cf52-3bb1-4b76-9ff4-a638e1ddde83
 keywords: ["WIA_IPS_BRIGHTNESS Imaging Devices"]
 topic_type:
 - apiref

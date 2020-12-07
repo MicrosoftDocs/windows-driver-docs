@@ -1,7 +1,6 @@
 ---
 title: Overview of the Logging Manifest
 description: Overview of the Logging Manifest
-ms.assetid: abf550c5-6b70-4043-b2e9-d3dc5096cc4e
 keywords: ["LogViewer, manifest", "LogViewer, manifest, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

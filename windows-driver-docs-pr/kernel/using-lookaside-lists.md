@@ -1,7 +1,6 @@
 ---
 title: Using Lookaside Lists
 description: Using Lookaside Lists
-ms.assetid: 07a75b8b-04b9-48ea-bda4-53889dd661a9
 keywords: ["memory management WDK kernel , lookaside lists", "lookaside lists WDK kernel", "fixed-size buffer allocations WDK kernel", "ExXxxLookasideList routines WDK", "entries WDK lookaside", "nonpaged lookaside lists WDK kernel", "paged lookaside lists WDK kernel", "Allocate routine WDK memory", "Free routine WDK memory"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

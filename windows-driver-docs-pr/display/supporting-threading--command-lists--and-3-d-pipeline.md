@@ -1,7 +1,6 @@
 ---
 title: Supporting Threading, Command Lists, and 3-D Pipeline
 description: Supporting Threading, Command Lists, and 3-D Pipeline
-ms.assetid: 2c5adc7d-b8ac-48d2-9777-b3d9fbba829a
 keywords:
 - Direct3D version 11 WDK Windows 7 display , threading support
 - Direct3D version 11 WDK Windows Server 2008 R2 display , threading support

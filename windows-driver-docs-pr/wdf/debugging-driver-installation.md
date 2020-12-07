@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting KMDF and UMDF Driver Installation
 description: Troubleshooting KMDF and UMDF Driver Installation
-ms.assetid: b0b71adc-cb6e-4b84-a5bf-bd1269bcf315
 keywords:
 - Kernel-Mode Driver Framework WDK , installing drivers
 - framework-based drivers WDK KMDF , installing

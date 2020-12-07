@@ -1,7 +1,6 @@
 ---
 title: How to Enable Debugging of a UMDF Driver
 description: How to Enable Debugging of a UMDF Driver
-ms.assetid: ea37eb7b-09fa-4c8d-aff7-273b07bc0007
 keywords:
 - debuggers WDK UMDF
 - debuggers WDK UMDF , enabling

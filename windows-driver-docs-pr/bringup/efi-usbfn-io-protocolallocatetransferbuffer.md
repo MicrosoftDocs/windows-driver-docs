@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
 description: EFI_USBFN_IO_PROTOCOL.AllocateTransferBuffer
-ms.assetid: dbaa4f18-97b5-4867-9e03-de19b2253722
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

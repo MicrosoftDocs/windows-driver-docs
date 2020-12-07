@@ -1,7 +1,6 @@
 ---
 title: Sample Code to Create Custom Properties
 description: Sample Code to Create Custom Properties
-ms.assetid: cf3e5e5b-8853-43a3-857f-87945cea2aa7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

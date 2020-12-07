@@ -1,7 +1,6 @@
 ---
 title: ForwardedAtBadIrqlFsdAsync rule (wdm)
 description: The ForwardedAtBadIrqlFsdAsync rule specifies that the driver call IoCallDriver and PoCallDriver at IRQL DISPATCH\_LEVEL, unless the IRP major function code being forwarded is one of the following IRP\_MJ\_POWERIRP\_MJ\_READIRP\_MJ\_WRITEIRP\_MJ\_DEVICE\_CONTROLIRP\_MJ\_INTERNAL\_DEVICE\_CONTROL.
-ms.assetid: 9961AE5F-0B36-4E04-A349-CA0461B3E3DC
 ms.date: 05/21/2018
 keywords: ["ForwardedAtBadIrqlFsdAsync rule (wdm)"]
 topic_type:

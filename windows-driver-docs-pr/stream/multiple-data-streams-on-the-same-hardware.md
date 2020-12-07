@@ -1,7 +1,6 @@
 ---
 title: Multiple Data Streams on the same Hardware
 description: Multiple Data Streams on the same Hardware
-ms.assetid: 23133022-6d00-44ad-8c0d-24715204cacc
 keywords:
 - multiple data streams WDK DVD decoder
 - stream numbers supported WDK DVD decoder

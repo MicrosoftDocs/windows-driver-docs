@@ -1,7 +1,6 @@
 ---
 title: Debugging Techniques
 description: This section discusses two types of debugging techniques standard and specialized.
-ms.assetid: 7de0283e-82fe-4443-bb11-e6378d2bb533
 keywords: ["debugging techniques"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

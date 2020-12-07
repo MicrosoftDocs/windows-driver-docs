@@ -1,7 +1,6 @@
 ---
 title: NDIS Power Management Overview
 description: NDIS Power Management Overview
-ms.assetid: 8ae3803f-c3e4-4499-9e61-678f4ab61fbc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

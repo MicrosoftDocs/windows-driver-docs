@@ -1,7 +1,6 @@
 ---
 title: FVF (Flexible Vertex Format)
 description: FVF (Flexible Vertex Format)
-ms.assetid: 206f4275-bcb8-4e8e-9c11-c6fb5d9c561d
 keywords:
 - vertex format WDK Direct3D
 - flexible vertex format WDK Direct3D

@@ -1,7 +1,6 @@
 ---
 title: Standard USB Identifiers
 description: Standard USB Identifiers
-ms.assetid: 39acb62b-83f2-4d14-a678-c37817193f01
 keywords:
 - USB identifiers WDK device installations
 - single-interface devices WDK USB

@@ -1,7 +1,6 @@
 ---
 title: Neither I/O Operations
 description: Neither I/O Operations
-ms.assetid: c8fc4742-e220-45c4-9113-ec5658bc09cc
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , neither I/O operations

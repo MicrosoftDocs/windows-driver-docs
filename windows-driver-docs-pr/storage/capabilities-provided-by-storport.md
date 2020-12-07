@@ -1,7 +1,6 @@
 ---
 title: Capabilities Provided by Storport
 description: Capabilities Provided by Storport
-ms.assetid: 30b4d2e4-2004-4d71-8c91-f066e52dd256
 ms.date: 10/08/2019
 ms.localizationpriority: medium
 ---

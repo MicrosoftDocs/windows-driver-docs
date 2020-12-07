@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE enumeration
 description: The properties contained in the KSPROPSETID\_AudioEngine property set are defined by this enumeration and must be supported by a KSNODETYPE\_AUDIO\_ENGINE node.
-ms.assetid: F20C05A3-C8A0-4061-93B9-03FD19D37C82
 keywords: ["KSPROPERTY_AUDIOENGINE enumeration Audio Devices"]
 topic_type:
 - apiref

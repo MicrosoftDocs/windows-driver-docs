@@ -1,7 +1,6 @@
 ---
 title: OID_NIC_SWITCH_PARAMETERS
 description: An overlying driver issues an object identifier (OID) method request of OID_NIC_SWITCH_PARAMETERS to obtain the current configuration parameters of a specified NIC switch on a network adapter.
-ms.assetid: 3F2FF2C0-8710-4243-8583-CD80F244FCFB
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_PARAMETERS Network Drivers Starting with Windows Vista

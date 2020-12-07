@@ -1,7 +1,6 @@
 ---
 title: Packet Injection Functions
 description: Packet Injection Functions
-ms.assetid: ebbcafb6-7fbf-40e6-8806-0131aa1d4df5
 keywords:
 - packet injection functions WDK Windows Filtering Platform
 - injection functions WDK Windows Filtering Platform

@@ -1,7 +1,6 @@
 ---
 title: Initializing a Filter Driver
 description: Initializing a Filter Driver
-ms.assetid: e24b18b5-76d3-4d56-bf60-0dea91ba014e
 keywords:
 - filter drivers WDK networking , initializing
 - NDIS filter drivers WDK , initializing

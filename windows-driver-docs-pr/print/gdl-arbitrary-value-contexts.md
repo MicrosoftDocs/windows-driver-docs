@@ -1,7 +1,6 @@
 ---
 title: GDL Arbitrary Value Contexts
 description: GDL Arbitrary Value Contexts
-ms.assetid: 6de79b2b-5f0f-4d6c-8a95-d9ef2266c2ef
 keywords:
 - GDL WDK , contexts
 - contexts WDK GDL , arbitrary value contexts

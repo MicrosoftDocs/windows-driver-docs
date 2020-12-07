@@ -1,7 +1,6 @@
 ---
 title: Setting Copy Protection Hardware
 description: Setting Copy Protection Hardware
-ms.assetid: c9733d74-faa8-44af-8de7-9530ebcfe949
 keywords:
 - copy protection WDK video miniport , setting
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: tc (Trace to Next Call)
 description: The tc command executes the program until a call instruction is reached.
-ms.assetid: cdeb448e-1032-46b1-a791-2fb84005fce4
 keywords: ["tc (Trace to Next Call) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

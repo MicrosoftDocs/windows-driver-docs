@@ -1,7 +1,6 @@
 ---
 title: WDTF Object Logging
 description: WDTF Object Logging
-ms.assetid: A99E62D1-31A2-46B5-841B-F3969854E39A
 keywords:
 - logging WDK WDTF
 - tracing WDK WDTF

@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_StreamAllocator
 description: The KSEVENTSETID\_StreamAllocator event set specifies two events.
-ms.assetid: 2ca3914c-b3f3-467d-86ef-fe3331421e27
 keywords: ["KSEVENTSETID_StreamAllocator Streaming Media Devices"]
 topic_type:
 - apiref

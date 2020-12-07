@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_TRANSPARENCY\_SELECT
 description: The WIA\_DPS\_TRANSPARENCY\_SELECT property is obsolete and should not be used.
-ms.assetid: 486a5a59-b314-4171-90e7-1eeeed7d5e3d
 keywords: ["WIA_DPS_TRANSPARENCY_SELECT Imaging Devices"]
 topic_type:
 - apiref

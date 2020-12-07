@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans scenarios
 description: This topic describes the basic end user facing scenarios that mobile operators can implement.
-ms.assetid: 24050B13-4A1A-466F-974B-40B34EDB16DC
 keywords:
 - Windows Mobile Plans scenarios, Mobile Plans implementation mobile operators
 ms.date: 05/31/2019

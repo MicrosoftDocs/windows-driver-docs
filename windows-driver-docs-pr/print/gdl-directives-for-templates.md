@@ -1,7 +1,6 @@
 ---
 title: GDL Directives for Templates
 description: GDL Directives for Templates
-ms.assetid: c68650ae-d6ee-4ae3-afa2-655f2bcad916
 keywords:
 - directives WDK GDL , template directives
 - source files WDK GDL , template directives

@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_QUERY_VOLUME_INFORMATION
 description: IRP\_MJ\_QUERY\_VOLUME\_INFORMATION
-ms.assetid: 1e762c75-70bd-4397-b244-df97b317b3bf
 keywords: ["IRP_MJ_QUERY_VOLUME_INFORMATION Installable File System Drivers"]
 topic_type:
 - apiref

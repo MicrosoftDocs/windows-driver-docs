@@ -1,7 +1,6 @@
 ---
 title: Symbol path for Windows debuggers
 description: The symbol path specifies locations where the Windows debuggers (WinDbg, KD, CDB, NTST) look for symbol files. 
-ms.assetid: 705df98f-717f-40ad-a424-101826970691
 keywords: symbol files and paths, symbols, lazy symbol loading, deferred symbol loading, symbol path
 ms.date: 10/23/2019
 ms.localizationpriority: high 

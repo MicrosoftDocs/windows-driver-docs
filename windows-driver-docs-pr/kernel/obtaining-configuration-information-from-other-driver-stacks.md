@@ -1,7 +1,6 @@
 ---
 title: Obtaining Configuration Information from Other Driver Stacks
 description: Obtaining Configuration Information from Other Driver Stacks
-ms.assetid: ca0f3d51-24c6-44df-828f-6aeb2565c1ae
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "driver stacks WDK configuration info", "BUS_INTERFACE_STANDARD"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

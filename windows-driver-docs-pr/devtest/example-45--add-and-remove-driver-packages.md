@@ -1,7 +1,6 @@
 ---
 title: Example 45 Add and Remove Driver Packages
 description: Example 45 Add and Remove Driver Packages
-ms.assetid: 36da02d7-0b8f-40ed-a594-0e2374595782
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Dump-File Targets
 description: Dump-File Targets
-ms.assetid: 83fb6753-a6c1-4899-9b06-a6331b3c31a8
 keywords: ["targets, dump files", "dump files"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

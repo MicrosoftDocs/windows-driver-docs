@@ -1,7 +1,6 @@
 ---
 title: Casting Ability of XR Formats
 description: Casting Ability of XR Formats
-ms.assetid: 18f9ce6e-df8e-4e57-b86f-338baadcb1b2
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , XR format casting ability
 - extended format WDK Windows 7 display , XR format casting ability

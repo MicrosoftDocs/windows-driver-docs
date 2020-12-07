@@ -1,7 +1,6 @@
 ---
 title: DMus Port Driver
 description: DMus Port Driver
-ms.assetid: 19828364-1b0d-4fc0-b142-9d776cbf1ada
 keywords:
 - DirectMusic WDK audio , port drivers
 - DMus port drivers WDK audio

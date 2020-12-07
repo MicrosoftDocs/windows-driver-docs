@@ -1,7 +1,6 @@
 ---
 title: Writing Data Records to a CLFS Stream
 description: Writing Data Records to a CLFS Stream
-ms.assetid: 22bd6d39-b777-4a62-85b1-3d03a7144f7a
 keywords: ["Common Log File System WDK kernel , data records", "CLFS WDK kernel , data records", "data records WDK CLFS", "reserved space WDK CLFS", "aligned entries WDK CLFS", "writing data records", "buffers WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

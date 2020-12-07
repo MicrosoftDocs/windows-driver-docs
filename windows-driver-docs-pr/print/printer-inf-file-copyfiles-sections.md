@@ -1,7 +1,6 @@
 ---
 title: Printer INF File CopyFiles Sections
 description: Printer INF File CopyFiles Sections
-ms.assetid: 92c96019-d2dd-4b2c-818a-80ae091ec662
 keywords:
 - INF files WDK print , CopyFiles sections
 - sections WDK printer

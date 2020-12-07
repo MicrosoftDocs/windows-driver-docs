@@ -1,7 +1,6 @@
 ---
 title: FilmMaximumSize element
 description: The required FilmMaximumSize element specifies the largest size original that an end user can scan with the film scanning input source.
-ms.assetid: 936c3c4e-5b09-433e-876c-9eda438dde9c
 keywords: ["FilmMaximumSize element Imaging Devices"]
 topic_type:
 - apiref

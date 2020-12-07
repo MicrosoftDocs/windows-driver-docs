@@ -1,7 +1,6 @@
 ---
 title: Using the TraceView Window
 description: Using the TraceView Window
-ms.assetid: 398cdbb7-d540-4348-91b0-59af5f656b6f
 keywords:
 - TraceView WDK , window
 - trace sessions WDK , displaying

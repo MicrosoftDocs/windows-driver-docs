@@ -1,7 +1,6 @@
 ---
 title: Registry Key Object Routines
 description: Registry Key Object Routines
-ms.assetid: 9db6ff0d-8371-41bc-82c4-1bb56f5430f2
 keywords: ["registry WDK kernel , object routines", "driver registry information WDK kernel , object routines", "object routines WDK kernel", "registry-key objects WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

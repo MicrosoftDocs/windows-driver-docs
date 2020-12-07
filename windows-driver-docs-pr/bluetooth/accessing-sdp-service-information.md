@@ -1,7 +1,6 @@
 ---
 title: Accessing SDP Service Information
 description: Accessing SDP Service Information
-ms.assetid: 0b327fbd-1101-4566-ac2f-3d039eed6835
 keywords:
 - Bluetooth WDK , SDP server communication
 - SDP WDK Bluetooth

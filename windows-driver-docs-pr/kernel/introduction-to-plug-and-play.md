@@ -1,7 +1,6 @@
 ---
 title: Introduction to Plug and Play
 description: Introduction to Plug and Play
-ms.assetid: 2ad9663b-ea47-4f7a-a382-53de3719214b
 keywords: ["PnP WDK kernel , about Plug and Play", "Plug and Play WDK kernel , about Plug and Play"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

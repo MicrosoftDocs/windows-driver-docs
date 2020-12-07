@@ -1,7 +1,6 @@
 ---
 title: Macroblock Prediction
 description: Macroblock Prediction
-ms.assetid: 95e779ab-b110-4636-9475-6881dba89649
 keywords:
 - MCP WDK DirectX VA
 - motion compensation WDK DirectX VA

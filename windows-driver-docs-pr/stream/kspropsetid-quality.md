@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Quality
 description: KSPROPSETID\_Quality
-ms.assetid: 56005b14-1293-483a-8803-dffc6bfc746d
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

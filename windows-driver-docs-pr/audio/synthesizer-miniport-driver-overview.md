@@ -1,7 +1,6 @@
 ---
 title: Synthesizer Miniport Driver Overview
 description: Synthesizer Miniport Driver Overview
-ms.assetid: dbd6b95e-f8c8-49f1-ad90-b34821772391
 keywords:
 - miniport drivers WDK audio , synthesizers
 - synthesizers WDK audio , miniport drivers

@@ -1,7 +1,6 @@
 ---
 title: .bugcheck (Display Bug Check Data)
 description: The .bugcheck command displays the data from a bug check on the target computer.
-ms.assetid: 4b453b5a-4a3c-4056-92e7-b6a17f987fa4
 keywords: [".bugcheck (Display Bug Check Data) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_STEREO\_WIDE
 description: KSNODETYPE\_STEREO\_WIDE
-ms.assetid: aef36aba-4d78-4051-9859-417b840a83b4
 keywords: ["KSNODETYPE_STEREO_WIDE Audio Devices"]
 topic_type:
 - apiref

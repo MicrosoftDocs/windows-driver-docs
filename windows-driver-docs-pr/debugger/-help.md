@@ -1,7 +1,6 @@
 ---
 title: help
 description: The help extension displays help text that describes the extension commands exported from the extension DLL.
-ms.assetid: 9d01856e-4906-43cb-a445-71cce011a973
 keywords: ["help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

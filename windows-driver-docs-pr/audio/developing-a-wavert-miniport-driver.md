@@ -1,7 +1,6 @@
 ---
 title: Developing a WaveRT Miniport Driver
 description: Developing a WaveRT Miniport Driver
-ms.assetid: d2d37c9e-fbfb-4bf3-bd7d-c8e19070a3f1
 ms.date: 07/03/2017
 ms.localizationpriority: medium
 ---

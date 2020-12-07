@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_COPYRIGHT\_INFO
 description: The WIA\_DPC\_COPYRIGHT\_INFO property contains the copyright notification.
-ms.assetid: 6945f121-46db-4287-a31a-80c26bd852da
 keywords: ["WIA_DPC_COPYRIGHT_INFO Imaging Devices"]
 topic_type:
 - apiref

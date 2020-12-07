@@ -1,7 +1,6 @@
 ---
 title: DrvAckIoStop rule (kmdf)
 description: The DrvAckIoStop rule verifies that the driver is aware of pending requests while its power-managed queue is getting powered-down and the driver acknowledges, completes, or cancels the pending requests accordingly.
-ms.assetid: 4C6F8919-C3DF-4DE2-94EF-45475CE9E0C0
 ms.date: 05/21/2018
 keywords: ["DrvAckIoStop rule (kmdf)"]
 topic_type:

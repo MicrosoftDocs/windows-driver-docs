@@ -1,7 +1,6 @@
 ---
 title: DCIEnum
 description: DCIEnum
-ms.assetid: 641af20a-9b0d-4aaf-a871-f8a295f0bcb4
 keywords: ["DCIEnum Display Devices"]
 topic_type:
 - apiref

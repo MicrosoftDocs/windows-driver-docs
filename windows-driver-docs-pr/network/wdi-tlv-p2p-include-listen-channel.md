@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL
 description: WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL is a TLV that specifies whether the probe request should include the Listen Channel attribute during discovery.
-ms.assetid: 75662669-102A-4186-951C-58D1B36D1686
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INCLUDE_LISTEN_CHANNEL Network Drivers Starting with Windows Vista

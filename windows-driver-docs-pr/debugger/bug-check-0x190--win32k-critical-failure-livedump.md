@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x190 WIN32K_CRITICAL_FAILURE_LIVEDUMP
 description: The WIN32K_CRITICAL_FAILURE_LIVEDUMP bug check has a value of 0x00000190. This indicates that Win32k has encountered a critical failure. A live dump is captured to collect the debug information.
-ms.assetid: 39C0145D-08FE-4BBC-A729-9E70198CF87F
 keywords: ["Bug Check 0x190 WIN32K_CRITICAL_FAILURE_LIVEDUMP", "WIN32K_CRITICAL_FAILURE_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:

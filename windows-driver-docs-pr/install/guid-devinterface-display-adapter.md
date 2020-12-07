@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_DISPLAY_ADAPTER
 description: GUID_DEVINTERFACE_DISPLAY_ADAPTER
-ms.assetid: 22f705b0-bc79-43e8-8445-adf611ae1429
 keywords: ["GUID_DEVINTERFACE_DISPLAY_ADAPTER Device and Driver Installation"]
 topic_type:
 - apiref

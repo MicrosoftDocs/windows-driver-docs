@@ -1,7 +1,6 @@
 ---
 title: How Windows selects a driver for a device
 description: How Windows selects a driver for a device
-ms.assetid: 4c193b97-7b70-425f-99f2-ba976a4cc40a
 keywords:
 - driver selections WDK device installations , where Device setupsearches
 ms.date: 03/02/2020

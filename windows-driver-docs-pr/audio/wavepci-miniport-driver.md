@@ -1,7 +1,6 @@
 ---
 title: WavePci Miniport Driver
 description: WavePci Miniport Driver
-ms.assetid: 8a166087-d158-4d49-a917-2a5a78b43cb4
 keywords:
 - audio miniport drivers WDK , WavePci
 - miniport drivers WDK audio , WavePci

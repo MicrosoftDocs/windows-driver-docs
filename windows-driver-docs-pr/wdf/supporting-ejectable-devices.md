@@ -1,7 +1,6 @@
 ---
 title: Supporting Ejectable Devices
 description: Supporting Ejectable Devices
-ms.assetid: 7820bb71-7218-4c5f-af2b-f41e1b5f696d
 keywords:
 - PnP WDK KMDF , ejectable devices
 - Plug and Play WDK KMDF , ejectable devices

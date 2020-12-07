@@ -1,7 +1,6 @@
 ---
 title: Specifying Driver Load Order
 description: Specifying Driver Load Order
-ms.assetid: 2e06671a-5664-4042-bc7a-e8ab12938cea
 keywords:
 - INF files WDK device installations , driver load order
 - driver load order WDK INF files

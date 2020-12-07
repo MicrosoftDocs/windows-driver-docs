@@ -1,7 +1,6 @@
 ---
 title: UsePositionLock
 description: The UsePositionLock registry value changes how PortCls serializes its I/O.
-ms.assetid: AD5AF873-4129-4C82-B251-0469CF6149E9
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

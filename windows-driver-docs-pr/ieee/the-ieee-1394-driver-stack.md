@@ -1,7 +1,6 @@
 ---
 title: The IEEE 1394 Driver Stack
 description: The IEEE 1394 Driver Stack
-ms.assetid: 3c8c218e-d814-451c-9a39-fe7fe5fb7aaf
 keywords:
 - IEEE 1394 WDK buses , driver stacks
 - 1394 WDK buses , driver stacks

@@ -1,7 +1,6 @@
 ---
 title: Windows Vista Default APOs
 description: Windows Default APOs
-ms.assetid: 713d848c-4b74-4682-a625-eba5f9f24bb7
 keywords:
 - APO WDK
 - Enhancements tab WDK

@@ -1,7 +1,6 @@
 ---
 title: Creating a New Device Setup Class
 description: Creating a New Device Setup Class
-ms.assetid: 3235d1e9-f6f7-4efe-a50c-5ea7a9956e7e
 keywords:
 - device setup classes WDK device installations
 - setup classes WDK device installations

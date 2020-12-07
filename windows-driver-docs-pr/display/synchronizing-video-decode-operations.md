@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Video Decode Operations
 description: Synchronizing Video Decode Operations
-ms.assetid: 4c88bf8f-0f10-4281-b856-a0e056d69d0e
 keywords:
 - video decoding WDK DirectX VA , synchronization
 - decoding video WDK DirectX VA , synchronization

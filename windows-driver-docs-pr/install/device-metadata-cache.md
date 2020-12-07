@@ -1,7 +1,6 @@
 ---
 title: Device Metadata Cache
 description: Device Metadata Cache
-ms.assetid: 0b20e1e0-9137-4572-8a5b-6bde63c34ce4
 keywords:
 - device metadata cache WDK
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Verifying the Signature of a Test-Signed Catalog File
 description: Verifying the Signature of a Test-Signed Catalog File
-ms.assetid: fa627f5b-977e-49ca-b099-358ed686eef7
 keywords:
 - verifying test signatures
 - checking test signatures

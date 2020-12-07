@@ -1,7 +1,6 @@
 ---
 title: PnPUtil
 description: PnPUtil
-ms.assetid: 3678fd41-c3ee-4538-b783-6f099ac104a6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

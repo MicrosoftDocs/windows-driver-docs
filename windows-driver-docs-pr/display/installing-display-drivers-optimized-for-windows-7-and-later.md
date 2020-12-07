@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Display Drivers
 description: Installation Requirements for Display Drivers Optimized for Windows 7 and Later
-ms.assetid: 6dcf7c03-e39c-4c1c-b892-2e3e2c8c4b20
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

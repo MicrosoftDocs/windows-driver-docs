@@ -1,7 +1,6 @@
 ---
 title: General Install Information
 description: General Install Information
-ms.assetid: e177ae15-4ef8-4d0f-804b-67cf232c6e7e
 keywords:
 - INF files WDK display , about driver installations
 - out-of-box display drivers WDK Windows Vista

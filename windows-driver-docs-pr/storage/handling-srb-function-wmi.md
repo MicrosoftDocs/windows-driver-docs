@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_WMI
 description: Handling SRB_FUNCTION_WMI
-ms.assetid: df20b9dc-1b67-4044-8abe-3cf5714076b3
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo

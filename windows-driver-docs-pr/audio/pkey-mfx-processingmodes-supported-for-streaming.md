@@ -1,7 +1,6 @@
 ---
 title: PKEY\_MFX\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 8.1 and later, the PKEY\_MFX\_ProcessingModes\_Supported\_For\_Streaming property key identifies the mode effect processing modes supported for streaming supported by the driver.
-ms.assetid: BE23FA51-FCA0-4391-B2AB-447C6096C75B
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

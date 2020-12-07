@@ -1,7 +1,6 @@
 ---
 title: Adding Bidirectional Communication
 description: Adding Bidirectional Communication
-ms.assetid: 30767eda-e456-4928-afac-40edd2ab48fc
 keywords:
 - print spooler customizing WDK , bidirectional communication
 - spooler customizing WDK print , bidirectional communication

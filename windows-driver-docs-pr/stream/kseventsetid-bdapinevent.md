@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_BdaPinEvent
 description: KSEVENTSETID\_BdaPinEvent
-ms.assetid: f81b9973-f4ae-4b39-a4e1-bbaff21c5d41
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

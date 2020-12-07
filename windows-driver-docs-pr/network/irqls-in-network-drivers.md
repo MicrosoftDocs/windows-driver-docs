@@ -1,7 +1,6 @@
 ---
 title: IRQLs in Network Drivers
 description: IRQLs in Network Drivers
-ms.assetid: d8720084-460e-4b62-90de-abfd96cd6364
 keywords:
 - network drivers WDK , IRQLs
 - IRQLs WDK networking

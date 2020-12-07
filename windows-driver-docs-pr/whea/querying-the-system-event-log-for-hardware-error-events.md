@@ -1,7 +1,6 @@
 ---
 title: Querying the System Event Log for Hardware Error Events
 description: Querying the System Event Log for Hardware Error Events
-ms.assetid: e2290a1b-6fde-4843-9c52-17279f93a887
 keywords:
 - events WDK WHEA , querying system event log
 - querying system event log WDK WHEA

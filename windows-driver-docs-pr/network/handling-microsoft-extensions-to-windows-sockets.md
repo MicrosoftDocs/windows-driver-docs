@@ -1,7 +1,6 @@
 ---
 title: Handling Microsoft Extensions to Windows Sockets
 description: Handling Microsoft Extensions to Windows Sockets
-ms.assetid: e5209a63-519b-42bd-882b-a1c3d2074deb
 keywords:
 - extensions WDK Windows Sockets
 - Windows Sockets Direct WDK , extensions

@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Network Filter Drivers
 description: Installation Requirements for Network Filter Drivers
-ms.assetid: 7fb31e18-a2f0-48fe-b0a8-cf4aca7d27d5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

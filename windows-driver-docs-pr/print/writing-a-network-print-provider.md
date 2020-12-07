@@ -1,7 +1,6 @@
 ---
 title: Writing a Network Print Provider
 description: Writing a Network Print Provider
-ms.assetid: 9dbe8a00-6b5f-41ae-8ab5-218dcbe37833
 keywords:
 - print spooler customizing WDK , print providers
 - spooler customizing WDK print , print providers

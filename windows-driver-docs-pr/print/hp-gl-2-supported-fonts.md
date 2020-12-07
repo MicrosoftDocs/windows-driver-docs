@@ -1,7 +1,6 @@
 ---
 title: HP-GL/2 Supported Fonts
 description: HP-GL/2 Supported Fonts
-ms.assetid: e7ddc9d0-3007-4c63-9176-3507909282f7
 keywords:
 - HP-GL/2 monochrome WDK Unidrv , fonts
 - PCL-5e WDK Unidrv , fonts

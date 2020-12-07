@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_HRTF3D\_FILTER\_FORMAT
 description: The KSPROPERTY\_HRTF3D\_FILTER\_FORMAT property retrieves the filter format used by the HRTF algorithm.
-ms.assetid: 7e4e869e-60ae-4266-93e4-0b6118951417
 keywords: ["KSPROPERTY_HRTF3D_FILTER_FORMAT Audio Devices"]
 topic_type:
 - apiref

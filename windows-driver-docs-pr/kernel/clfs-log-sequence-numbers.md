@@ -1,7 +1,6 @@
 ---
 title: CLFS Log Sequence Numbers
 description: CLFS Log Sequence Numbers
-ms.assetid: 4637fa0c-2f19-4f0c-bf13-f4ccac2e7284
 keywords: ["Common Log File System WDK kernel , log sequence numbers", "CLFS WDK kernel , log sequence numbers", "log sequence numbers WDK CLFS", "LSNs WDK CLFS", "base LSNs WDK CLFS", "last LSNs WDK CLFS", "previous LSNs WDK CLFS", "undo-next LSNs WDK CLFS", "active stream portion WDK CLFS", "stream active portion WDK CLFS", "streams WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Instance ID
 description: An instance ID is a device identification string that distinguishes a device from other devices of the same type on a computer.
-ms.assetid: 093063a6-1855-4e36-9465-1eedaa3cd0f9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

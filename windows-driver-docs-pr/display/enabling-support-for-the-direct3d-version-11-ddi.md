@@ -1,7 +1,6 @@
 ---
 title: Enabling Support for the Direct3D Version 11 DDI
 description: Enabling Support for the Direct3D Version 11 DDI
-ms.assetid: 997d6b06-110b-403d-bcf5-350a26ecffbd
 keywords:
 - Direct3D version 11 WDK Windows 7 display , enabling DDI support
 - Direct3D version 11 WDK Windows Server 2008 R2 display , enabling DDI support

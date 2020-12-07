@@ -1,7 +1,6 @@
 ---
 title: Testing Biometric Drivers
 description: Testing Biometric Drivers
-ms.assetid: 4ffcdb49-db38-4d11-82e7-04674c2ed92a
 keywords:
 - biometric drivers WDK , testing
 - testing biometric drivers WDK biometric

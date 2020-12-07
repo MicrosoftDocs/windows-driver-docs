@@ -1,7 +1,6 @@
 ---
 title: Building, Troubleshooting and Debugging WIA Minidrivers
 description: Building, Troubleshooting and Debugging WIA Minidrivers
-ms.assetid: ed1e5809-aa4a-47d3-9673-eb6b63a034af
 ms.date: 01/24/2018
 ms.localizationpriority: medium
 ---

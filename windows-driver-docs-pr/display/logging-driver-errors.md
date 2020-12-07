@@ -1,7 +1,6 @@
 ---
 title: Logging Driver Errors
 description: Logging Driver Errors
-ms.assetid: 7deb2a9a-70aa-4660-a0c8-e118e03eef3b
 keywords:
 - error logs WDK display
 - errors WDK display

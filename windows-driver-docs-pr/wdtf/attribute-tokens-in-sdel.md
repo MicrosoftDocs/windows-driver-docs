@@ -1,7 +1,6 @@
 ---
 title: Attribute Tokens in SDEL
 description: Describes SDEL attribute tokens used to define characteristics of target devices and computers.
-ms.assetid: C11d22D4-31E2-99E8-841F-A8249539A39F
 keywords:
 - SDEL
 - attribute tokens

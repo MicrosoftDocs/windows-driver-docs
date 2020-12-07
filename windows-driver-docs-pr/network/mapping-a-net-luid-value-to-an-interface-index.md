@@ -1,7 +1,6 @@
 ---
 title: Mapping a NET_LUID Value to an Interface Index
 description: Mapping a NET_LUID Value to an Interface Index
-ms.assetid: a535d886-186e-4abe-9ca0-ebef262614b3
 keywords:
 - NDIS network interfaces WDK , NET_LUID
 - network interfaces WDK , NET_LUID

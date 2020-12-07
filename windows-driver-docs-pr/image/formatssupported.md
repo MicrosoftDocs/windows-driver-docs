@@ -1,7 +1,6 @@
 ---
 title: FormatsSupported element
 description: The required FormatsSupported element is a collection of elements that list the document file formats that the scanner supports.
-ms.assetid: bb4b6630-f865-4ec7-b7d1-8be424eea345
 keywords: ["FormatsSupported element Imaging Devices"]
 topic_type:
 - apiref

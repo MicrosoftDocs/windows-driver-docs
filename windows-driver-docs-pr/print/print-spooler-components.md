@@ -1,7 +1,6 @@
 ---
 title: Print Spooler Components
 description: Print Spooler Components
-ms.assetid: 42b5e6cf-b434-4734-86f3-b3b9d15ea468
 keywords:
 - print spooler customizing WDK
 - spooler customizing WDK print

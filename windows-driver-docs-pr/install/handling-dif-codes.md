@@ -1,7 +1,6 @@
 ---
 title: Handling DIF Codes
 description: Handling DIF Codes
-ms.assetid: cb54bc04-4cd4-4eec-ad74-2abbf601de54
 keywords:
 - co-installers WDK device installations , DIF codes
 - DIF codes WDK device installations

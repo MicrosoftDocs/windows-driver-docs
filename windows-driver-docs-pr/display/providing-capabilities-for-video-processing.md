@@ -1,7 +1,6 @@
 ---
 title: Providing Capabilities for Video Processing
 description: Providing Capabilities for Video Processing
-ms.assetid: 27507971-1545-44d9-885a-295b9357bdfe
 keywords:
 - video processing WDK DirectX VA , capabilities provided by request type
 - D3DDDICAPS_GETVIDEOPROCESSORDEVICEGUIDCOUNT

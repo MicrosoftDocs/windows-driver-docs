@@ -1,7 +1,6 @@
 ---
 title: Timecode Properties
 description: Timecode Properties
-ms.assetid: e8359778-8cc6-4f19-b869-f9597dae0502
 keywords:
 - timecode properties WDK video capture
 - PROPSETID_TIMECODE_READER

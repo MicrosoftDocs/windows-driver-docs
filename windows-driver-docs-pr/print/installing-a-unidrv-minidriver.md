@@ -1,7 +1,6 @@
 ---
 title: Installing a Unidrv Minidriver
 description: Installing a Unidrv Minidriver
-ms.assetid: 0efead8f-c413-4ec1-b940-89b57f95345e
 keywords:
 - Unidrv, minidrivers
 - minidrivers WDK Unidrv

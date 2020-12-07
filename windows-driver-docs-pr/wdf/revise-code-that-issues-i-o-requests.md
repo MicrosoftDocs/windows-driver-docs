@@ -1,7 +1,6 @@
 ---
 title: Revise Code That Issues I/O Requests
 description: Revise Code That Issues I/O Requests
-ms.assetid: 39E4B6B2-45C8-42B7-811A-EEDCCCB056EF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

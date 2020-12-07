@@ -1,7 +1,6 @@
 ---
 title: StorPortBuildIo rule (storport)
 description: This rule verifies that if the StorPort miniport's StorPortBuildIo routine returns FALSE, the SRB in question is not passed to StartIo.
-ms.assetid: C35954F9-9C59-408B-BF80-2B8DCD328F9C
 ms.date: 05/21/2018
 keywords: ["StorPortBuildIo rule (storport)"]
 topic_type:

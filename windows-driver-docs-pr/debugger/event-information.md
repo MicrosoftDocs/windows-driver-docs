@@ -1,7 +1,6 @@
 ---
 title: Event Information
 description: Event Information
-ms.assetid: e6621b5d-f1af-4021-8832-43f79835a6c1
 keywords: ["targets, events"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

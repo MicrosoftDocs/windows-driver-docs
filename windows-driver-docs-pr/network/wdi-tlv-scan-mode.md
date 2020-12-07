@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SCAN_MODE
 description: WDI_TLV_SCAN_MODE is a TLV that contains scan mode parameters.
-ms.assetid: 9F954B66-4F1D-48F2-9316-BE623DF0CAE6
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SCAN_MODE Network Drivers Starting with Windows Vista

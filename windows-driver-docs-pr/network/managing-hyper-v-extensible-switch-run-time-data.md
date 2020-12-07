@@ -1,7 +1,6 @@
 ---
 title: Managing Hyper-V Extensible Switch Run-Time Data
 description: Managing Hyper-V Extensible Switch Run-Time Data
-ms.assetid: 08A353F5-D8CB-4645-9337-8169D302F6F2
 ms.date: 12/04/2018
 ms.localizationpriority: medium
 ---

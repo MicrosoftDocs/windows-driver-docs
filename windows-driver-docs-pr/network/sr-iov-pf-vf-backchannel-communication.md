@@ -1,7 +1,6 @@
 ---
 title: SR-IOV PF/VF Backchannel Communication Overview
 description: SR-IOV PF/VF Backchannel Communication Overview
-ms.assetid: 66D40452-1286-449E-BD6B-AFAD466E03A1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

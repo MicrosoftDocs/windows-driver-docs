@@ -1,7 +1,6 @@
 ---
 title: Known Issues with Client-Side Rendering
 description: Known Issues with Client-Side Rendering
-ms.assetid: ad17639d-6671-466b-8f72-e635e79fd1cc
 keywords:
 - client-side rendering WDK print , known issues
 ms.date: 01/24/2019

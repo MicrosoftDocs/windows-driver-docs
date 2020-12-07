@@ -1,7 +1,6 @@
 ---
 title: Field-Structured Pictures
 description: Field-Structured Pictures
-ms.assetid: fa058a30-74a2-4e8b-aa65-98ac5aa43e57
 keywords:
 - MPEG-2 WDK DirectX VA
 - field motion compensation WDK DirectX VA

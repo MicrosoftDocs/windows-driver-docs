@@ -1,7 +1,6 @@
 ---
 title: Compound Template Data Type Issues
 description: Compound Template Data Type Issues
-ms.assetid: 61f26465-c79d-42e3-94c8-26c2c61ecb98
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , problems with template data types

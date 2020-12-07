@@ -1,7 +1,6 @@
 ---
 title: Stopping a Device after a Failed Start (Windows 98/Me)
 description: Stopping a Device after a Failed Start (Windows 98/Me)
-ms.assetid: 373a1797-6479-4b99-b577-c74494f1774c
 keywords: ["failed starts WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

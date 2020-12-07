@@ -1,7 +1,6 @@
 ---
 title: Extending the Framework
 description: Extending the Framework
-ms.assetid: 37a0fd70-0c88-414f-b4e3-afd641f1c667
 keywords:
 - Windows Device Testing Framework WDK , extending WDTF
 - WDTF WDK , extending WDTF

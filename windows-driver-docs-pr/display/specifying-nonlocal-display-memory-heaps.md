@@ -1,7 +1,6 @@
 ---
 title: Specifying Nonlocal Display Memory Heaps
 description: Specifying Nonlocal Display Memory Heaps
-ms.assetid: 4320b6e7-81ef-4bb4-bda8-680467b6421f
 keywords:
 - heaps WDK DirectDraw
 - display memory WDK DirectDraw , heaps

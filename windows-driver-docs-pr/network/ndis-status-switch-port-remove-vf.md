@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_SWITCH_PORT_REMOVE_VF
 description: The NDIS_STATUS_SWITCH_PORT_REMOVE_VF status indication is issued by a Hyper-V extensible switch forwarding extension to remove the binding between a virtual machine (VM) network adapter and a PCI Express (PCIe) virtual function (VF).
-ms.assetid: D6A52183-C9C6-4F0B-9E25-6C5C16CBEFFE
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_SWITCH_PORT_REMOVE_VF Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: RemoveLockForwardDeviceControl2 rule (wdm)
 description: The RemoveLockForwardDeviceControl2 rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used correctly when the driver uses IoCallDriver to forward an IRP to a another device.
-ms.assetid: 4BC5E149-5D5A-4421-9CD2-0CB95276950A
 ms.date: 05/21/2018
 keywords: ["RemoveLockForwardDeviceControl2 rule (wdm)"]
 topic_type:

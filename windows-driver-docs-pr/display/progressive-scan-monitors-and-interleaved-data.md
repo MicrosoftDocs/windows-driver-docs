@@ -1,7 +1,6 @@
 ---
 title: Progressive Scan Monitors and Interleaved Data
 description: Progressive Scan Monitors and Interleaved Data
-ms.assetid: 324d8b1f-5b7d-46b6-854a-e93b10db24e5
 keywords:
 - interlaced video WDK video port extensions
 - DirectX VPE support WDK DirectDraw , interlaced video

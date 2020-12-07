@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RECEIVE_BUFFER_SPACE
 description: As a query, the OID_GEN_RECEIVE_BUFFER_SPACE OID specifies the amount of memory on the NIC that is available for buffering receive data.
-ms.assetid: 6eec18fa-22cd-4f65-acf4-0dd438dea2ff
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RECEIVE_BUFFER_SPACE Network Drivers Starting with Windows Vista

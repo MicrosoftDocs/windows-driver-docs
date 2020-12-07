@@ -1,7 +1,6 @@
 ---
 title: Sample Application for UVC Extension Units
 description: Sample application for UVC extension units
-ms.assetid: f900b0b1-3469-442f-8593-2094a0966d4a
 keywords:
 - extension units WDK USB Video Class , samples, sample application
 - sample code WDK USB Video Class , UVC extension units

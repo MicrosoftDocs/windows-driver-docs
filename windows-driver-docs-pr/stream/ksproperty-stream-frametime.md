@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_FRAMETIME
 description: The KSPROPERTY\_STREAM\_FRAMETIME property allows a client to determine the duration of the next frame based on the particular media stream, and use that information to step-frame a sequence.
-ms.assetid: 0cc218eb-1f21-4b45-ac48-b3e308bddfaf
 keywords: ["KSPROPERTY_STREAM_FRAMETIME Streaming Media Devices"]
 topic_type:
 - apiref

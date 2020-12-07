@@ -1,7 +1,6 @@
 ---
 title: Framework Base Object
 description: Framework Base Object
-ms.assetid: 9d400192-faf0-4d8f-849b-6b955105e21a
 keywords:
 - UMDF objects WDK , base objects
 - framework objects WDK UMDF , base objects

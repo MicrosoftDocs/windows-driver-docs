@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_SCANMODE
 description: The KSPROPERTY\_CAMERACONTROL\_SCANMODE property specifies the scanning mode of the camera sensor.
-ms.assetid: ab5659b9-a94b-4127-a26e-49aac8de6fa8
 keywords: ["KSPROPERTY_CAMERACONTROL_SCANMODE Streaming Media Devices"]
 topic_type:
 - apiref

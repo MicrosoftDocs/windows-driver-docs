@@ -1,7 +1,6 @@
 ---
 title: Building for OneCore
 description: You can build a single binary that targets pre-Windows 10 and OneCore editions.
-ms.assetid: ee46801a-4fa5-465a-aa81-5e76eb83d315
 ms.date: 04/28/2020
 ms.localizationpriority: medium
 ---

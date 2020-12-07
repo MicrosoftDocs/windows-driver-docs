@@ -1,7 +1,6 @@
 ---
 title: Traffic Class Priority Assignment
 description: Traffic Class Priority Assignment
-ms.assetid: 846AC7E6-28D9-4610-9493-BE547869AB15
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

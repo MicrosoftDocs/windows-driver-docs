@@ -1,7 +1,6 @@
 ---
 title: HBAFCPID WMI Class
 description: HBAFCPID WMI Class
-ms.assetid: 6b0d0f79-a7a8-4341-955b-2c3068936a1d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

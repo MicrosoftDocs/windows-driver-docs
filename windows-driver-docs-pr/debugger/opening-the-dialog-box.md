@@ -1,7 +1,6 @@
 ---
 title: Opening the Dialog Box
 description: Opening the Dialog Box
-ms.assetid: 7cb5a947-0830-4208-a6de-cdb7812179c0
 keywords: ["GFlags, dialog box (opening)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

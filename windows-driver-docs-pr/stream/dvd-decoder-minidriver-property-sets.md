@@ -1,7 +1,6 @@
 ---
 title: DVD Decoder Minidriver Property Sets
 description: DVD Decoder Minidriver Property Sets
-ms.assetid: c24685bd-ea20-4cc2-b419-feb1fa2ea03e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

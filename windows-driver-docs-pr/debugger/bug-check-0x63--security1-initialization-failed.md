@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x63 SECURITY1_INITIALIZATION_FAILED
 description: The SECURITY1_INITIALIZATION_FAILED bug check has a value of 0x00000063.This bug check appears very infrequently.
-ms.assetid: 907be187-8703-46f3-bf17-01cd048f8ab6
 keywords: ["Bug Check 0x63 SECURITY1_INITIALIZATION_FAILED", "SECURITY1_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:

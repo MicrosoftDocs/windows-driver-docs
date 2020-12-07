@@ -1,7 +1,6 @@
 ---
 title: Using Breakpoints with the Debugger Engine API
 description: Using Breakpoints Debugger Engine API - Setting and Controlling 
-ms.assetid: d1880895-dc01-429b-af48-762cb24539f1
 keywords: ["Debugger Engine, breakpoints", "breakpoints"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: vpb
 description: The vpb extension displays a volume parameter block (VPB).
-ms.assetid: 978d4ec8-6141-4656-9e5c-266de91c9440
 keywords: ["vpb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Minidrivers and the HID class driver
 description: Operation of the HID class driver
-ms.assetid: 3A8F5545-F8EB-47E2-989D-7DE83E32110E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

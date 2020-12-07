@@ -1,7 +1,6 @@
 ---
 title: Implementing IOCTLs for a SAN Service Provider
 description: Implementing IOCTLs for a SAN Service Provider
-ms.assetid: 7d4c7039-6b42-4620-aee5-9189b4acd030
 keywords:
 - proxy drivers WDK SANs , IOCTLs
 - SAN proxy drivers WDK , IOCTLs

@@ -1,7 +1,6 @@
 ---
 title: Supporting Rotation
 description: Supporting Rotation
-ms.assetid: b85f3130-e69d-4a5f-b58e-d2138ea994dd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

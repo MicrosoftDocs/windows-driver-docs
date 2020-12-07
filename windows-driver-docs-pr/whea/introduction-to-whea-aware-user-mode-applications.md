@@ -1,7 +1,6 @@
 ---
 title: Introduction to WHEA-Aware User-Mode Applications
 description: Introduction to WHEA-Aware User-Mode Applications
-ms.assetid: cf2de8fa-191b-4dae-aaac-5d6d74f94ca7
 keywords:
 - Windows Hardware Error Architecture WDK , user-mode applications
 - WHEA WDK , user-mode applications

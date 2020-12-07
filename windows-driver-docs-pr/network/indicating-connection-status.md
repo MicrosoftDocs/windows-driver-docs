@@ -1,7 +1,6 @@
 ---
 title: Indicating Connection Status
 description: Indicating Connection Status
-ms.assetid: 8a511c14-6b09-47fe-90de-6a90dab93171
 keywords:
 - WMI WDK networking , media connection status
 - miniport drivers WDK networking , media connection status

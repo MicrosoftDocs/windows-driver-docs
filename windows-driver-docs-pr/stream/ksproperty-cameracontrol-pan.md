@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PAN
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_PAN property to get or set a camera's pan setting. This property is optional.
-ms.assetid: 765eecbf-ecde-4268-9ab5-c0c099c06d2f
 keywords: ["KSPROPERTY_CAMERACONTROL_PAN Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: File system sample code
 description: File system sample code
-ms.assetid: a64d83c6-d4cd-432d-bc1a-a3ff4656527c
 keywords:
 - drivers WDK file system
 - file system drivers WDK

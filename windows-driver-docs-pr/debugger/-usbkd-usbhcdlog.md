@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhcdlog
 description: The usbkd.usbhcdlog command displays a portion of the debug log for a USB host controller.
-ms.assetid: 78FDC557-7791-422A-AB7B-5C9B6A1DF481
 keywords: ["usbkd.usbhcdlog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

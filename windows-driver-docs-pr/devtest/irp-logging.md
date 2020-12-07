@@ -1,7 +1,6 @@
 ---
 title: IRP Logging
 description: The IRP Logging feature of Driver Verifier monitors a driver's use of IRPs and makes a record of IRP usage. This record is stored as WMI information.
-ms.assetid: 368356df-7fa7-4555-b5cf-59c26d70075e
 keywords:
 - IRP Logging feature WDK Driver Verifier
 - DC2WMIParser tool

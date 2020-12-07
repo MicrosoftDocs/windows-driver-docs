@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION
 description: The UNEXPECTED_STORE_EXCEPTION bug check has a value of 0x00000154. This indicates that the kernel memory store component caught an unexpected exception.
-ms.assetid: 5D51212E-459C-4F58-9321-5E55FD793401
 keywords: ["Bug Check 0x154 UNEXPECTED_STORE_EXCEPTION", "UNEXPECTED_STORE_EXCEPTION"]
 ms.date: 02/27/2020
 topic_type:

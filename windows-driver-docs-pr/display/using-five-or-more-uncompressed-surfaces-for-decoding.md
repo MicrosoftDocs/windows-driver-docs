@@ -1,7 +1,6 @@
 ---
 title: Using Five or More Uncompressed Surfaces for Decoding
 description: Using Five or More Uncompressed Surfaces for Decoding
-ms.assetid: 7cd09d7a-6700-4079-97bd-0b0151705b82
 keywords:
 - video decoding WDK DirectX VA , sequence requirements
 - decoding video WDK DirectX VA , sequence requirements

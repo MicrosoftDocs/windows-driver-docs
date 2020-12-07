@@ -1,7 +1,6 @@
 ---
 title: SIO_ADDRESS_LIST_CHANGE
 description: SIO_ADDRESS_LIST_CHANGE
-ms.assetid: d451208d-c850-4f2f-9ee0-d34139454ed4
 ms.date: 08/08/2017
 keywords: 
  -SIO_ADDRESS_LIST_CHANGE Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Print Ticket Support in the XPSDrv Render Module
 description: Print Ticket Support in the XPSDrv Render Module
-ms.assetid: ea9bb6a1-b878-4402-a865-adc65d480373
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

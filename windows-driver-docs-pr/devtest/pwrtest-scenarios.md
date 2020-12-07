@@ -1,7 +1,6 @@
 ---
 title: PwrTest Scenarios
 description: PwrTest Scenarios
-ms.assetid: 4d21e08b-d687-47dc-995e-9d2128cf6853
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ms.custom: 19H1

@@ -1,7 +1,6 @@
 ---
 title: Functional Topology
 description: Functional Topology
-ms.assetid: f25b3581-5561-4668-8549-65506b03815d
 keywords:
 - functional topology WDK BDA
 - control nodes WDK BDA

@@ -1,7 +1,6 @@
 ---
 title: SpinlockRelease rule (kmdf)
 description: The SpinlockRelease rule specifies that calls to KeAcquireSpinLock, KeAcquireSpinLockRaiseToDpc, and KeReleaseSpinLock are used in a balanced way within a KMDF callback. At the end of any KMDF callback routine, the driver should not hold the spin lock.
-ms.assetid: 23BEB857-309D-4C11-A361-D72F87C84154
 ms.date: 05/21/2018
 keywords: ["SpinlockRelease rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Participating in Error Source Discovery
 description: Participating in Error Source Discovery
-ms.assetid: 349c8f06-be79-4a40-8b9f-cbefc563f6de
 keywords:
 - Windows Hardware Error Architecture WDK , error source discovery
 - WHEA WDK , error source discovery

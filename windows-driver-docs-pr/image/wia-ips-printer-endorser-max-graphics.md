@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_MAX\_GRAPHICS property describes the maximum number of images that the Imprinter/Endorser item can print or endorse on each page.
-ms.assetid: A8FB39D2-659C-45E9-BE5E-627E594B9D3A
 keywords: ["WIA_IPS_PRINTER_ENDORSER_MAX_GRAPHICS Imaging Devices"]
 topic_type:
 - apiref

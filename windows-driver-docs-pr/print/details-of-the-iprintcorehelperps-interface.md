@@ -1,7 +1,6 @@
 ---
 title: Details of the IPrintCoreHelperPS Interface
 description: Details of the IPrintCoreHelperPS Interface
-ms.assetid: 0e00012c-6ced-4369-b367-675465e29d93
 keywords:
 - IPrintCoreHelperPS
 ms.date: 04/20/2017

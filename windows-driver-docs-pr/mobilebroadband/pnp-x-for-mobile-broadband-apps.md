@@ -1,7 +1,6 @@
 ---
 title: PnP-X for mobile broadband apps
 description: PnP-X for mobile broadband apps
-ms.assetid: f8f4756e-00b6-4778-9d67-73653865cf54
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

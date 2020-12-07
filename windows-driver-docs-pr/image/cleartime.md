@@ -1,7 +1,6 @@
 ---
 title: ClearTime element
 description: The required ClearTime element specifies the time at which a condition was cleared.
-ms.assetid: 9b5fe054-f3fa-402a-8337-8fd181679080
 keywords: ["ClearTime element Imaging Devices"]
 topic_type:
 - apiref

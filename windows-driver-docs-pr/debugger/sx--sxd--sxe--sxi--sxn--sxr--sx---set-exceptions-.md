@@ -1,7 +1,6 @@
 ---
 title: sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions)
 description: The sx* commands control the action that the debugger takes when an exception occurs in the application that is being debugged, or when certain events occur.
-ms.assetid: fdb5059f-e7d9-4e14-aa3d-030e72c30732
 keywords: ["sx, sxd, sxe, sxi, sxn, sxr, sx- (Set Exceptions) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

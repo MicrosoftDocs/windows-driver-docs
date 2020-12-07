@@ -1,7 +1,6 @@
 ---
 title: Obsolete Graphics DDI Functions
 description: Obsolete Graphics DDI Functions
-ms.assetid: 9259f05a-bb8b-4468-bf23-ed63b06fb5e2
 keywords:
 - GDI WDK Windows 2000 display , obsolete reference
 - graphics drivers WDK Windows 2000 display , obsolete reference

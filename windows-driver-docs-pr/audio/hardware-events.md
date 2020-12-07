@@ -1,7 +1,6 @@
 ---
 title: Hardware Events
 description: Hardware Events
-ms.assetid: b91e02dd-0de4-4de3-ade6-778339ce47a8
 keywords:
 - audio events WDK , hardware
 - WDM audio events WDK

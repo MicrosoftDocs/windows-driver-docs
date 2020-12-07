@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ResourcePickerTags
 description: DEVPKEY_Device_ResourcePickerTags
-ms.assetid: 9ad9dddf-3211-4296-a806-1639cfc0f644
 keywords: ["DEVPKEY_Device_ResourcePickerTags Device and Driver Installation"]
 topic_type:
 - apiref

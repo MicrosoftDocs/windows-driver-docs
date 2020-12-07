@@ -1,7 +1,6 @@
 ---
 title: ; (Command Separator)
 description: The semicolon ( ; ) character is used to separate multiple commands on a single line.
-ms.assetid: efa59a34-1d1d-4df4-bbb9-b8066c6f3b3c
 keywords: ["; (Command Separator) Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

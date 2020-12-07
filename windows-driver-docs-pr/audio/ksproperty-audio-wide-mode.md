@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_WIDE\_MODE
 description: This parameter name is reserved for future use.
-ms.assetid: 0b27b613-77d0-4bbf-94ae-9f2bac399c56
 keywords: ["KSPROPERTY_AUDIO_WIDE_MODE Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: INF DefaultInstall Section
 description: An INF file's DefaultInstall section is accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
-ms.assetid: 41412124-38d9-43c0-9954-d34b242a3922
 keywords:
 - INF DefaultInstall Section Device and Driver Installation
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: DocumentSizeAutoDetectSupported element
 description: The required DocumentSizeAutoDetectSupported element indicates whether the scan device can detect the size of the original media.
-ms.assetid: 38baea3d-85bf-44e1-86bf-349d17981efa
 keywords: ["DocumentSizeAutoDetectSupported element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Ensuring that Completion Processing is Performed at Safe IRQL
 description: Ensuring that Completion Processing is Performed at Safe IRQL
-ms.assetid: 54487fba-2ced-4bcd-afa6-d56b351aa7d6
 keywords:
 - postoperation callback routines WDK file system minifilter , completion processing
 - completing I/O requests WDK file system

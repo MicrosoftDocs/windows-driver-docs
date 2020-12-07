@@ -1,7 +1,6 @@
 ---
 title: list
 description: The list extension executes the specified debugger commands repeatedly, once for every element in a linked list.
-ms.assetid: 763742f3-1cb8-4263-861b-b9d01483245e
 keywords: ["list Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

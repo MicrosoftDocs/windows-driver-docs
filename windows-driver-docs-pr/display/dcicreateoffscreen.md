@@ -1,7 +1,6 @@
 ---
 title: DCICreateOffscreen
 description: DCICreateOffscreen
-ms.assetid: 9df82029-b641-4a3b-a4f4-9b884e8b5512
 keywords: ["DCICreateOffscreen Display Devices"]
 topic_type:
 - apiref

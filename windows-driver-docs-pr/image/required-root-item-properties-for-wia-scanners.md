@@ -1,7 +1,6 @@
 ---
 title: Required Root Item Properties for WIA Scanners
 description: Required Root Item Properties for WIA Scanners
-ms.assetid: 9eea80a3-a657-4ba1-8ea0-301fc799ada3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

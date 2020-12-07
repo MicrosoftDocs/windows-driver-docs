@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_CREATE_NAMED_PIPE
 description: IRP_MJ_CREATE_NAMED_PIPE
-ms.assetid: 0efa732c-b6e8-4ddf-a897-389153b69ab3
 keywords: ["IRP_MJ_CREATE_NAMED_PIPE File System Drivers"]
 topic_type:
 - apiref

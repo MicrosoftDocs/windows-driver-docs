@@ -1,7 +1,6 @@
 ---
 title: Introduction to Network Drivers Topics
 description: Introduction to Network Drivers
-ms.assetid: a3160487-666b-470d-a551-d04b0723d0e7
 keywords:
 - network drivers WDK , about network drivers
 ms.date: 04/20/2017

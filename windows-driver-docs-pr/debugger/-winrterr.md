@@ -1,7 +1,6 @@
 ---
 title: winrterr
 description: The winrterr sets the debugger reporting mode for Windows Runtime errors.
-ms.assetid: 72E3EF7A-6055-405F-9E24-C9B81C07B8A7
 keywords: ["winrterr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

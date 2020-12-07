@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans catalog
 description: Mobile Plans catalog
-ms.assetid: ddc77035-fa0a-4866-b850-aa7926a398ac
 keywords:
 - Windows Mobile Plans mobile operators
 ms.date: 07/31/2019

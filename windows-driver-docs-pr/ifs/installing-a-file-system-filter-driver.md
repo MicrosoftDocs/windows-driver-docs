@@ -1,7 +1,6 @@
 ---
 title: Installing a File System Filter Driver
 description: Installing a File System Filter Driver
-ms.assetid: c8a7fd20-8baa-449a-afa6-9692da706df4
 keywords:
 - filter drivers WDK file system , installing
 - file system filter drivers WDK , installing

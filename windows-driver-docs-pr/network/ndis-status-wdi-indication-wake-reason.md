@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_WAKE_REASON
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_WAKE_REASON to indicate the reason for a wake when the NIC wakes the host. The wake reason is used for debugging purposes and has no functional effect.
-ms.assetid: 5f2eb569-be1e-4f24-92f5-8405ffc7b061
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_WAKE_REASON Network Drivers Starting with Windows Vista

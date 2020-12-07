@@ -1,7 +1,6 @@
 ---
 title: ChildLocationPaths Registry Subkey
 description: ChildLocationPaths Registry Subkey
-ms.assetid: 9c485981-e9f8-420d-9a87-d298b55356c4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

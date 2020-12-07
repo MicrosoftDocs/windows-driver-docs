@@ -1,7 +1,6 @@
 ---
 title: Index of Windows Driver Kit Tools
 description: Index of Windows Driver Kit Tools
-ms.assetid: 26db88c4-8fb8-4308-ab8a-1a1eef5e19d8
 keywords:
 - Disabler tool
 - DbgCon tool

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO
 description: The KSPROPERTY\_EXTXPORT\_MEDIUM\_INFO property retrieves information about an external device's medium.
-ms.assetid: 04b98c50-ebb0-4224-b476-d261b7c5dd79
 keywords: ["KSPROPERTY_EXTXPORT_MEDIUM_INFO Streaming Media Devices"]
 topic_type:
 - apiref

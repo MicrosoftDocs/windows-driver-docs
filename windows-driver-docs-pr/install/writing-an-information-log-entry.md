@@ -1,7 +1,6 @@
 ---
 title: Writing an Information Log Entry
 description: Writing an Information Log Entry
-ms.assetid: 624d2a3e-2a11-47fd-941e-1ab59e299821
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

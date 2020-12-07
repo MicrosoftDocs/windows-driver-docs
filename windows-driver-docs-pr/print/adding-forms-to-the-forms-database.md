@@ -1,7 +1,6 @@
 ---
 title: Adding Forms to the Forms Database
 description: Adding Forms to the Forms Database
-ms.assetid: ac306f05-6150-4e47-9272-e81e658a1ea6
 keywords:
 - additional forms WDK Unidrv
 - adding forms to Unidrv printer driver

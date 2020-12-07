@@ -1,7 +1,6 @@
 ---
 title: Adding Print Ticket Support to Print Drivers
 description: Adding Print Ticket Support to Print Drivers
-ms.assetid: ef4db930-2b4c-40b9-b1f4-85767b7f6855
 keywords:
 - printer driver customizing WDK , Print Tickets
 - customizing printer drivers WDK , Print Tickets

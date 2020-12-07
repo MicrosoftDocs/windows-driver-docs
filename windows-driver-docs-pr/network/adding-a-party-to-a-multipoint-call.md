@@ -1,7 +1,6 @@
 ---
 title: Adding a Party to a Multipoint Call
 description: Adding a Party to a Multipoint Call
-ms.assetid: 2d6b8ebe-8028-46d0-91bd-7f95b0375cc4
 keywords:
 - parties WDK CoNDIS
 - multipoint calls WDK CoNDIS

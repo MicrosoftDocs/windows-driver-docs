@@ -1,7 +1,6 @@
 ---
 title: Setting CoNDIS WAN Miniport Driver Information
 description: Setting CoNDIS WAN Miniport Driver Information
-ms.assetid: 950cb2cb-7f02-4f3c-924a-0d1e7bb19b55
 keywords:
 - CoNDIS WAN drivers WDK networking , information setting
 - OID_WAN_CO_SET_LINK_INFO

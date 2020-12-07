@@ -1,7 +1,6 @@
 ---
 title: Locking Memory
 description: Locking Memory
-ms.assetid: bf14e0f7-13cc-4e55-bbb1-a6b6f6b6271f
 keywords:
 - locking memory WDK display
 - GPU stall prevention WDK display

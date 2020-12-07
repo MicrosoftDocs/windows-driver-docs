@@ -1,7 +1,6 @@
 ---
 title: Handling a System Set-Power IRP in a Device Power Policy Owner
 description: Handling a System Set-Power IRP in a Device Power Policy Owner
-ms.assetid: f6206455-142b-4f3f-ae5a-d8e79386bce3
 keywords: ["set-power IRPs WDK power management", "device power policy owners WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

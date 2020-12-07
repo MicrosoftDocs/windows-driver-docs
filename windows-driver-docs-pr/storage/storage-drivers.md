@@ -1,7 +1,6 @@
 ---
 title: About Storage Drivers
 description: Storage Drivers
-ms.assetid: 5512a8f1-20ad-4b78-a60e-7418ac7f2117
 keywords:
 - storage drivers WDK
 ms.date: 10/08/2019

@@ -1,7 +1,6 @@
 ---
 title: Rules for coalescing TCP/IP segments
 description: This section defines the rules for coalescing TCP/IP segments in miniport drivers
-ms.assetid: EC3C72EB-20A6-4D48-8E8C-F70EE4483193
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

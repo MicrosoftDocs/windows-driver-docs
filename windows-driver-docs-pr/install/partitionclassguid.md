@@ -1,7 +1,6 @@
 ---
 title: PartitionClassGuid
 description: PartitionClassGuid
-ms.assetid: 2f8ec440-5f52-41f6-b37b-a1bb030957b0
 keywords: ["PartitionClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

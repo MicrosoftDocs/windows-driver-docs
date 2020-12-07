@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Driver's HwScsiStartIo Routine
 description: SCSI Miniport Driver's HwScsiStartIo Routine
-ms.assetid: cb818e5f-b91f-44cb-972b-22f75459edeb
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo

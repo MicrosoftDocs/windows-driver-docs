@@ -1,7 +1,6 @@
 ---
 title: Initial View
 description: Initial View
-ms.assetid: e6873ddd-8554-4fd0-97d8-4eccac9bf7a2
 keywords:
 - TraceView WDK , window
 - trace sessions WDK , displaying

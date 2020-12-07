@@ -1,7 +1,6 @@
 ---
 title: DSM\_QuerySupportedLBPolicies WMI Class
 description: DSM\_QuerySupportedLBPolicies WMI Class
-ms.assetid: fab4d9e6-68fb-42f8-89e5-a5f5b2580964
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

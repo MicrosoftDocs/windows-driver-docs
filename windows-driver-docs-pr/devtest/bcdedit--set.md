@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /set
 description: The BCDEdit /set command sets a boot entry option value in the Windows boot configuration data store (BCD) for Windows.
-ms.assetid: e66d9c55-9a44-4de2-a1a4-634c7d550735
 ms.date: 09/25/2020
 keywords: ["BCDEdit /set Driver Development Tools"]
 topic_type:

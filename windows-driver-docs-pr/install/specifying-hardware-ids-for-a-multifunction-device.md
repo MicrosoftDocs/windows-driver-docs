@@ -1,7 +1,6 @@
 ---
 title: Specifying Hardware IDs for a Multifunction Device
 description: Specifying Hardware IDs for a Multifunction Device
-ms.assetid: e45f7564-89a7-49c0-8011-69e5da3d5651
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

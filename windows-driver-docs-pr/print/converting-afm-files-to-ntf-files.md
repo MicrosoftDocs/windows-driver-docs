@@ -1,7 +1,6 @@
 ---
 title: Converting AFM Files to NTF Files
 description: Converting AFM Files to NTF Files
-ms.assetid: 5c6c8843-c1b8-4cbd-81db-8a54cc377020
 keywords:
 - minidrivers WDK Pscript , converting AFM files
 - NTF files

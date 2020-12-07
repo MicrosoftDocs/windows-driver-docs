@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x16 CID_HANDLE_CREATION
 description: The CID_HANDLE_CREATION bug check has a value of 0x00000016.This bug check appears very infrequently.
-ms.assetid: 99b4d1c7-8639-4e4c-905e-b9a351c101a1
 keywords: ["Bug Check 0x16 CID_HANDLE_CREATION", "CID_HANDLE_CREATION"]
 ms.date: 05/23/2017
 topic_type:

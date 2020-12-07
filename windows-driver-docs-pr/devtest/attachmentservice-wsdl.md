@@ -1,7 +1,6 @@
 ---
 title: AttachmentService WSDL
 description: AttachmentService WSDL
-ms.assetid: 1a886bd8-5eb4-4990-9d39-bacbbbbe3d3d
 keywords:
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL

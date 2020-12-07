@@ -1,7 +1,6 @@
 ---
 title: Handling Existing Monitor Configurations
 description: Handling Existing Monitor Configurations
-ms.assetid: b2da12ea-cbcd-4754-a65f-e54ed305f5d7
 keywords:
 - monitor configurations WDK display , restore previous
 - monitor configurations WDK display , existing monitors

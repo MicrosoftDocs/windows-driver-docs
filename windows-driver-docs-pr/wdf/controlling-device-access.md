@@ -1,7 +1,6 @@
 ---
 title: Controlling Device Access
 description: Controlling Device Access
-ms.assetid: E4FF73B3-87D0-458E-A042-E5A8F3DB1677
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

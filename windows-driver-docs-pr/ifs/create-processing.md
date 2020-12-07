@@ -1,7 +1,6 @@
 ---
 title: Create Processing
 description: Create Processing
-ms.assetid: c15a56d2-47db-4124-8250-f25f69d2d4e3
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , create processing

@@ -1,7 +1,6 @@
 ---
 title: Mode Indicator and Anamorphic Format
 description: Mode Indicator and Anamorphic Format
-ms.assetid: b297c62e-3b7e-47de-95a5-c25e8fc5ad56
 keywords:
 - DirectX VPE support WDK DirectDraw , displaying interleaved video
 - drawing VPEs WDK DirectDraw , displaying interleaved video

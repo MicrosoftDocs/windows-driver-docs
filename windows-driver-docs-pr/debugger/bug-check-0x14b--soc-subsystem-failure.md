@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x14B SOC_SUBSYSTEM_FAILURE
 description: The SOC_SUBSYSTEM_FAILURE bug check has a value of 0x0000014B. This indicates that an unrecoverable error was encountered in a System on a Chip (SoC) subsystem.
-ms.assetid: CC42D634-90CE-43F1-8552-E5DE711D2117
 keywords: ["Bug Check 0x14B SOC_SUBSYSTEM_FAILURE", "Bug Check 0x14B SOC_SUBSYSTEM_FAILURE"]
 ms.date: 05/23/2017
 topic_type:

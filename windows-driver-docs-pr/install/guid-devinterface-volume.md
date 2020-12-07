@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_VOLUME
 description: GUID_DEVINTERFACE_VOLUME
-ms.assetid: 34802df4-8a8f-48ea-a146-d2ad4ae4709a
 keywords: ["GUID_DEVINTERFACE_VOLUME Device and Driver Installation"]
 topic_type:
 - apiref

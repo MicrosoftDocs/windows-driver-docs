@@ -1,7 +1,6 @@
 ---
 title: Restrictions on Miniport Drivers that Manage the Boot Drive
 description: Restrictions on Miniport Drivers that Manage the Boot Drive
-ms.assetid: 78375e9b-8be9-4e64-b90e-cc8c4ab1751b
 keywords:
 - storage miniport drivers WDK , boot drives
 - miniport drivers WDK storage , boot drives

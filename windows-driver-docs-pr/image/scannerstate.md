@@ -1,7 +1,6 @@
 ---
 title: ScannerState element
 description: The required ScannerState element identifies the current state of the scanning portion of the scan device.
-ms.assetid: 64cd5319-a52d-4ff3-976c-060886381d11
 keywords: ["ScannerState element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: OID_NIC_SWITCH_DELETE_SWITCH
 description: NDIS issues an object identifier (OID) set request of OID_NIC_SWITCH_DELETE_SWITCH to delete a NIC switch from a network adapter.
-ms.assetid: 5785B30F-B67F-4D5A-A93A-243D33B9CAE8
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_DELETE_SWITCH Network Drivers Starting with Windows Vista

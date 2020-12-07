@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CONFIGURED_MAC_ADDRESS
 description: WDI_TLV_CONFIGURED_MAC_ADDRESS is a TLV that contains a custom MAC address.
-ms.assetid: 2AB4AFF3-70E9-4E4B-885D-2578A5810A38
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CONFIGURED_MAC_ADDRESS Network Drivers Starting with Windows Vista

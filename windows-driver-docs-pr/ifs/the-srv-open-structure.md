@@ -1,7 +1,6 @@
 ---
 title: The SRV_OPEN Structure
 description: The SRV_OPEN Structure
-ms.assetid: 6cf4c6f6-a21f-4919-92b5-2403b650d8d0
 keywords:
 - server open WDK RDBSS
 - open servers WDK RDBSS

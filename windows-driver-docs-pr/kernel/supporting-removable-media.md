@@ -1,7 +1,6 @@
 ---
 title: Supporting Removable Media
 description: Supporting Removable Media
-ms.assetid: f70c404c-8a38-4f53-8681-6efb52b30656
 keywords: ["removable media WDK kernel", "removable media WDK kernel , about removable-media devices", "IRPs WDK kernel , removable media", "kernel-mode drivers WDK , removable media"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

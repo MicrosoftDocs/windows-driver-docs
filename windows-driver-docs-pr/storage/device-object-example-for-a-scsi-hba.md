@@ -1,7 +1,6 @@
 ---
 title: Device Object Example for a SCSI HBA
 description: Device Object Example for a SCSI HBA
-ms.assetid: 695ccf9a-a18f-4f1f-bfdc-24fefc2846b4
 keywords:
 - storage drivers WDK , device objects
 - device objects WDK storage

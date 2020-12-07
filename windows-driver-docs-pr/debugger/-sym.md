@@ -1,7 +1,6 @@
 ---
 title: sym
 description: The sym extension controls noisy symbol loading and symbol prompts.
-ms.assetid: 84551b24-740c-4289-acc4-8a0053f80b41
 keywords: ["symbols, noisy symbol loading", "symbols, prompts", "sym Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

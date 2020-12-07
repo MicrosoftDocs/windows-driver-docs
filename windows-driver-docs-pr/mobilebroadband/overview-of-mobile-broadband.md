@@ -1,7 +1,6 @@
 ---
 title: Overview of mobile broadband
 description: Overview of mobile broadband
-ms.assetid: 5193927b-7367-468e-8012-c41f6bd743a3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WindowsUri protocol
 description: WindowsUri protocol
-ms.assetid: 79589ECE-9DF9-40C8-897D-95B432C4C9C8
 keywords:
 - NFC
 - near field communications

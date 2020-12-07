@@ -1,7 +1,6 @@
 ---
 title: Version Information Requirements for NDIS
 description: Version Information Requirements for NDIS
-ms.assetid: b2850077-271f-4bb6-8710-ae9415ad5eda
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

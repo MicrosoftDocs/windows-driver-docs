@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration in an IHV Driver
 description: Autoconfiguration in an IHV Driver
-ms.assetid: 81febae0-6fab-4226-9e98-7705d606caf4
 keywords:
 - IHV driver autoconfiguration WDK printer
 - autoconfiguration WDK printer , IHV drivers

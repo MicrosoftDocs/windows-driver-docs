@@ -1,7 +1,6 @@
 ---
 title: PcIrqlIport rule (audio)
 description: The PcIrqlIport rule specifies that a PortCls miniport driver must call PortCls IPort interfaces at the correct IRQL level.
-ms.assetid: 59E22F37-3377-4B98-8613-EF5ED0CB63D9
 ms.date: 05/21/2018
 keywords: ["PcIrqlIport rule (audio)"]
 topic_type:

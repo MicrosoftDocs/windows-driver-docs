@@ -1,7 +1,6 @@
 ---
 title: Using TmXxx Routines
 description: Using TmXxx Routines
-ms.assetid: 8bc763e9-e67c-4810-9901-e5dc1a1cfd0c
 keywords: ["Kernel Transaction Manager WDK , TmXxx routines", "KTM WDK , TmXxx routines", "TmXxx routines WDK KTM"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Registering an ISR
 description: Registering an ISR
-ms.assetid: 903e5664-2193-4456-b133-bb979d700bdf
 keywords: ["interrupt service routines WDK kernel , registering ISRs", "interrupt objects WDK kernel , registering ISRs", "ISRs WDK kernel , registering ISRs", "registering ISRs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

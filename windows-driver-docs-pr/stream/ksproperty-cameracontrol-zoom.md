@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_ZOOM
 description: User-mode clients use the KSPROPERTY\_CAMERACONTROL\_ZOOM property to get or set a camera's zoom setting. This property is optional.
-ms.assetid: eceebcee-e7dc-41df-ac44-3b9a9adb0341
 keywords: ["KSPROPERTY_CAMERACONTROL_ZOOM Streaming Media Devices"]
 topic_type:
 - apiref

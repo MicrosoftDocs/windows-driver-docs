@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x48 CANCEL_STATE_IN_COMPLETED_IRP
 description: The CANCEL_STATE_IN_COMPLETED_IRP bug check has a value of 0x00000048. This indicates that an I/O request packet (IRP) was completed, and then was subsequently canceled.
-ms.assetid: e706cf9b-8800-41ce-9bad-e4b9a8503051
 keywords: ["Bug Check 0x48 CANCEL_STATE_IN_COMPLETED_IRP", "CANCEL_STATE_IN_COMPLETED_IRP"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Bandwidth Allocation
 description: Bandwidth Allocation
-ms.assetid: 775B4085-6028-441F-9D52-341077FF1647
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

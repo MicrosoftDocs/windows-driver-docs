@@ -1,7 +1,6 @@
 ---
 title: ACLs and the Device Stack
 description: ACLs and the Device Stack
-ms.assetid: DAFC851D-E808-4588-86D2-E608584FD05B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

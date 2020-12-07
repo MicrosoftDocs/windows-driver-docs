@@ -1,7 +1,6 @@
 ---
 title: Audio Data Formats
 description: Audio Data Formats
-ms.assetid: e16c10ea-0193-4cf4-91a3-4f8d4a0d5cf6
 keywords:
 - data formats WDK audio
 - formats WDK audio , data

@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_BRIGHTNESS
 description: GUID_DEVINTERFACE_BRIGHTNESS
-ms.assetid: a31b4e12-3702-4a24-98c0-cf8ae7d86a75
 keywords: ["GUID_DEVINTERFACE_BRIGHTNESS Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,6 +1,5 @@
 ---
 title: Calling DisplayConfig functions for a Miracast target
-ms.assetid: D408986B-B33B-4A96-B93C-2A2F301E74AF
 description: Calling DisplayConfig functions for a Miracast target
 ms.date: 04/20/2017
 ms.localizationpriority: medium

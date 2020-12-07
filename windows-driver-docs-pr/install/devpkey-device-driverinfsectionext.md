@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverInfSectionExt
 description: DEVPKEY_Device_DriverInfSectionExt
-ms.assetid: bf6260b4-5df3-4f85-8319-0f864c017e3d
 keywords: ["DEVPKEY_Device_DriverInfSectionExt Device and Driver Installation"]
 topic_type:
 - apiref

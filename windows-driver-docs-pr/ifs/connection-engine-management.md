@@ -1,7 +1,6 @@
 ---
 title: Connection Engine Management
 description: Connection Engine Management
-ms.assetid: 00ac74c5-2a69-493f-ad9b-6fa2f9082ac1
 keywords:
 - RDBSS WDK file systems , connection engine management
 - Redirected Drive Buffering Subsystem WDK file systems , connection engine management

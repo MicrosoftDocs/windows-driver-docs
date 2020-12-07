@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIDFILTER\_MAP\_PIDS
 description: Clients use KSPROPERTY\_BDA\_PIDFILTER\_MAP\_PIDS to inform the PID filter node about the list of MPEG2 PIDs of transport stream packets that should be passed to the downstream filter or node.
-ms.assetid: 33d2775c-308a-4af0-81ae-b174990926ad
 keywords: ["KSPROPERTY_BDA_PIDFILTER_MAP_PIDS Streaming Media Devices"]
 topic_type:
 - apiref

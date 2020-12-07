@@ -1,7 +1,6 @@
 ---
 title: Completing IRPs
 description: Completing IRPs
-ms.assetid: 4b4be95e-ebf5-4726-87fc-20c3e6c94f52
 keywords: ["IRPs WDK kernel , completing", "completing IRPs WDK kernel", "finished IRPs WDK kernel", "I/O WDK kernel , operation completed", "completing IRPs WDK kernel , about completing IRPs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

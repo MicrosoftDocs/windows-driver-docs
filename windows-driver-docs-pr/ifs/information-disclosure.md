@@ -1,7 +1,6 @@
 ---
 title: Information Disclosure
 description: Information Disclosure
-ms.assetid: e5794acb-44f7-4775-854b-69884f60658a
 keywords:
 - threat models WDK file systems , information disclosure
 - security threat models WDK file systems , information disclosure

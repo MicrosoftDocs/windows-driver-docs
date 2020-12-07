@@ -1,7 +1,6 @@
 ---
 title: Setting the Number of RSS Processors
 description: Setting the Number of RSS Processors
-ms.assetid: c13db4a1-e345-4368-9bcd-afbd2fd8db7a
 keywords:
 - processors WDK RSS
 - CPU configuration WDK RSS

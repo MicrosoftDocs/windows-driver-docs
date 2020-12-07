@@ -1,7 +1,6 @@
 ---
 title: Considerations for convertibles
 description: This topic discusses timing and performance considerations for convertibles.
-ms.assetid: 2353023A-989A-4836-A39C-0B5F749E7FF2
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

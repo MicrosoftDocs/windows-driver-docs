@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_CDCHANGER
 description: GUID_DEVINTERFACE_CDCHANGER
-ms.assetid: 9bcbe3d5-2057-44cb-a495-6edee14a9cbb
 keywords: ["GUID_DEVINTERFACE_CDCHANGER Device and Driver Installation"]
 topic_type:
 - apiref

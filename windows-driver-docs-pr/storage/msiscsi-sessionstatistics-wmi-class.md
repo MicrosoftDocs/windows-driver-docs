@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_SessionStatistics WMI Class
 description: MSiSCSI\_SessionStatistics WMI Class
-ms.assetid: fc9afa1b-dad3-4f3d-9fe2-e37d402f7bef
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

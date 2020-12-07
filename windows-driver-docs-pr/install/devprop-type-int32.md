@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_INT32
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT32 identifier represents the base-data-type identifier that indicates that the data type is a LONG-typed signed integer.
-ms.assetid: 55a26644-1779-4330-8a45-52b06b634544
 keywords: ["DEVPROP_TYPE_INT32 Device and Driver Installation"]
 topic_type:
 - apiref

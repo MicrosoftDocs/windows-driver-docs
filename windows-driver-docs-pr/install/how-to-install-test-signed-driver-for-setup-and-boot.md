@@ -1,7 +1,6 @@
 ---
 title: How to Install a Test-signed Driver Required for Windows Setup and Boot
 description: Describes how to install a test-signed driver on a computer running Windows Server or after Windows Setup
-ms.assetid: 533d1ccb-412b-4e49-aa56-45e6df3f6f66
 ms.date: 10/06/2020
 ---
 

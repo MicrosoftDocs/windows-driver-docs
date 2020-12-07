@@ -1,7 +1,6 @@
 ---
 title: DCICreateOverlay
 description: DCICreateOverlay
-ms.assetid: 4ab7f0ad-6e2e-4e08-90a4-06dc1b5098e5
 keywords: ["DCICreateOverlay Display Devices"]
 topic_type:
 - apiref

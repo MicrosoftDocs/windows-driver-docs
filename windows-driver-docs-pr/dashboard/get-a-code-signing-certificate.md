@@ -1,7 +1,6 @@
 ---
 title: Get a code signing certificate
 description: Get a code signing certificate
-ms.assetid: 6CF4111A-C645-40F5-8D45-55F46B3C0740
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

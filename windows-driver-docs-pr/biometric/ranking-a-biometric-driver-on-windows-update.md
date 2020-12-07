@@ -1,7 +1,6 @@
 ---
 title: Ranking a Biometric Driver on Windows Update
 description: Ranking a Biometric Driver on Windows Update
-ms.assetid: fc8634ab-0ecd-4390-9834-825f60fe68ce
 keywords:
 - biometric drivers WDK , ranking on Windows Update
 - ranking biometric drivers WDK biometric

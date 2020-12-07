@@ -1,7 +1,6 @@
 ---
 title: OPLOCK_KEY_ECP_CONTEXT structure
 description: The OPLOCK_KEY_ECP_CONTEXT structure is used to attach an oplock key to a file.
-ms.assetid: 029dd105-162a-4674-a3d5-b54a91fa4be2
 keywords: ["OPLOCK_KEY_ECP_CONTEXT structure Installable File System Drivers", "POPLOCK_KEY_ECP_CONTEXT structure pointer Installable File System Drivers"]
 topic_type:
 - apiref

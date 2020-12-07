@@ -1,7 +1,6 @@
 ---
 title: Registry Entries for Still Image Devices
 description: Registry Entries for Still Image Devices
-ms.assetid: cedc8afc-54c4-485e-989c-481fe30d899b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

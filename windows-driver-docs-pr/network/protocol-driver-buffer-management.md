@@ -1,7 +1,6 @@
 ---
 title: Protocol Driver Buffer Management
 description: Protocol Driver Buffer Management
-ms.assetid: 1f91b58e-d432-46c8-994e-d95c3aadfe43
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

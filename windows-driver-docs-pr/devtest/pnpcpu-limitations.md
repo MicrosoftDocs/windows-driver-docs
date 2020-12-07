@@ -1,7 +1,6 @@
 ---
 title: PNPCPU Limitations
 description: PNPCPU Limitations
-ms.assetid: e25a54e7-cf6f-4723-9bf3-3b68cce8ec7e
 keywords:
 - PNPCPU WDK , limitations
 ms.date: 04/20/2017

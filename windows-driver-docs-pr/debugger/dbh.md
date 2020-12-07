@@ -1,7 +1,6 @@
 ---
 title: DBH
 description: DBH
-ms.assetid: b5cdc9ef-eca8-4b23-8fbe-06532ffcc12c
 keywords: ["DBH", "DBH, overview", "symbols, DBH"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

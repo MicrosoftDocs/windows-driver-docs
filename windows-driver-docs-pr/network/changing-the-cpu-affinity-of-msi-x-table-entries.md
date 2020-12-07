@@ -1,7 +1,6 @@
 ---
 title: Changing the CPU Affinity of MSI-X Table Entries
 description: Changing the CPU Affinity of MSI-X Table Entries
-ms.assetid: 46ce91ad-76eb-4d05-af9d-a295c665640a
 keywords:
 - MSI-X WDK networking , MSI-X table entry CPU affinity
 - message-signaled interrupts WDK networking , MSI-X table entry CPU affinity

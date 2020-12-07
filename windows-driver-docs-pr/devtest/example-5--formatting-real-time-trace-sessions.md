@@ -1,7 +1,6 @@
 ---
 title: Example 5 Formatting Real-Time Trace Sessions
 description: Example 5 Formatting Real-Time Trace Sessions
-ms.assetid: 340453ab-4736-4191-b9d4-08ee7d9190fe
 keywords:
 - Tracefmt WDK , real-time trace sessions
 - real-time trace sessions WDK

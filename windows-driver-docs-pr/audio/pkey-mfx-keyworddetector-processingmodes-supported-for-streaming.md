@@ -1,7 +1,6 @@
 ---
 title: PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming
 description: In Windows 10 and later, the PKEY\_MFX\_KeywordDetector\_ProcessingModes\_Supported\_For\_Streaming property key identifies the keyword detector mode effect processing modes supported for streaming supported by the driver.
-ms.assetid: 17DEDF05-482C-44A8-91E8-50AF252F540D
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

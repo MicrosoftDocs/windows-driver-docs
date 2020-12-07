@@ -1,7 +1,6 @@
 ---
 title: GDL HexSubStrings
 description: GDL HexSubStrings
-ms.assetid: 7451fd1f-a765-486a-bd90-bc01eac2c388
 keywords:
 - constructs WDK GDL , strings
 - GDL WDK , strings

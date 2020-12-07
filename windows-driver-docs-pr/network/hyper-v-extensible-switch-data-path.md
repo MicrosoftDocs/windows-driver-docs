@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Data Path Topics
 description: Hyper-V Extensible Switch Data Path Topics
-ms.assetid: 5E7F135B-3086-415F-8D39-98CDBED8EBB4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

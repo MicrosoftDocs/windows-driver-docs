@@ -1,7 +1,6 @@
 ---
 title: Container IDs Generated from the Removable Device Capability
 description: Container IDs Generated from the Removable Device Capability
-ms.assetid: e09b1ee5-9ccd-428a-8af3-79f138eb07f9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

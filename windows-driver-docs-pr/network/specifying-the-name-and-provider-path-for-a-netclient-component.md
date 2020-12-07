@@ -1,7 +1,6 @@
 ---
 title: Specifying the Name and Provider Path for a NetClient Component
 description: Specifying the Name and Provider Path for a NetClient Component
-ms.assetid: 4c9c2162-8e7e-44dc-a97c-81074071664b
 keywords:
 - add-registry-sections WDK networking , NetClient component name and path
 - NetClient component name and path WDK networking

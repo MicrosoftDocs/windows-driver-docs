@@ -1,7 +1,6 @@
 ---
 title: Supporting Plug and Play in a SCSI Miniport Driver
 description: Supporting Plug and Play in a SCSI Miniport Driver
-ms.assetid: c8b148ac-b1ab-4870-8818-5ef1c2d68599
 keywords:
 - SCSI miniport drivers WDK storage , PnP
 - PnP WDK SCSI

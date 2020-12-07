@@ -1,7 +1,6 @@
 ---
 title: Film Scanner Architecture
 description: Film Scanner Architecture
-ms.assetid: fe3a2c23-a520-4701-8178-02f50ac08767
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

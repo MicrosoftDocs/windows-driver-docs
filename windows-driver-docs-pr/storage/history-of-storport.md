@@ -1,7 +1,6 @@
 ---
 title: History of Storport
 description: History of Storport
-ms.assetid: 1ddf45e1-06bb-42c6-9409-0f54143bb350
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

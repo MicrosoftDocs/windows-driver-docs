@@ -1,7 +1,6 @@
 ---
 title: Creating IRPs for Lower-Level Drivers
 description: Creating IRPs for Lower-Level Drivers
-ms.assetid: 2d298eb1-6169-4742-80c1-200223a2d4fa
 keywords: ["IRPs WDK kernel , creating", "asynchronous requests WDK IRPs", "IRPs WDK kernel , asynchronous requests"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

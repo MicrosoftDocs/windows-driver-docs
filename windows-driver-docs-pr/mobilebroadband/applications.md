@@ -1,7 +1,6 @@
 ---
 title: Applications
 description: Applications
-ms.assetid: 40d73650-556e-4221-a679-0b8e9ead4df5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

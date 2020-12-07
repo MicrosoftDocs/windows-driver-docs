@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_VISIBLE_PROVIDERS
 description: OID_WWAN_VISIBLE_PROVIDERS returns a list of network providers currently visible within the MB device's range.
-ms.assetid: 4dfd4477-6332-4163-8b3e-a1604b11d175
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_VISIBLE_PROVIDERS Network Drivers Starting with Windows Vista

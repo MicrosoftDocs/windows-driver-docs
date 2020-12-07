@@ -1,7 +1,6 @@
 ---
 title: Can I use enumerations in my tracing code
 description: Can I use enumerations in my tracing code
-ms.assetid: c42ab1ad-6b8f-458f-ba29-e3553095c853
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

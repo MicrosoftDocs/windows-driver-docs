@@ -1,7 +1,6 @@
 ---
 title: .elsif
 description: The .elsif token behaves like the else if keyword combination in C.
-ms.assetid: f5612326-9fcf-4f2e-9692-cc75e7ff4664
 keywords: [".elsif Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Obtaining Information About a Parallel Port
 description: Obtaining Information About a Parallel Port
-ms.assetid: d8ae2296-05b6-419a-93cc-00fcb12d41fe
 keywords:
 - parallel ports WDK , obtaining information
 ms.date: 04/20/2017

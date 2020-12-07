@@ -1,7 +1,6 @@
 ---
 title: Using Automatic Synchronization
 description: Using Automatic Synchronization
-ms.assetid: be7d3c0e-c3cf-4104-ab81-5ecdcb9163c8
 keywords:
 - synchronization WDK KMDF
 - automatic synchronization WDK KMDF

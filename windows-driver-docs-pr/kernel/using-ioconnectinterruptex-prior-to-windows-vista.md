@@ -1,7 +1,6 @@
 ---
 title: Using IoConnectInterruptEx Prior to Windows Vista
 description: Using IoConnectInterruptEx Prior to Windows Vista
-ms.assetid: a08b2869-93f8-440b-9fbe-068604c6007d
 keywords: ["IoConnectInterruptEx", "iointex.h", "line-based interrupts WDK kernel", "message-signaled interrupts WDK kernel", "CONNECT_LINE_BASED", "CONNECT_MESSAGE_BASED", "CONNECT_FULLY_SPECIFIED"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: File Queuing Functions
 description: File Queuing Functions
-ms.assetid: ad777cd9-99ca-4468-b1fa-608503f96cd4
 keywords:
 - SetupAPI functions WDK , file queuing
 - file queuing WDK SetupAPI

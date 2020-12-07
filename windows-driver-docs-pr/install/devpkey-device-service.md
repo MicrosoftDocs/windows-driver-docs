@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Service
 description: DEVPKEY_Device_Service
-ms.assetid: 665d4c58-53c0-4f18-9a2f-2798676cb097
 keywords: ["DEVPKEY_Device_Service Device and Driver Installation"]
 topic_type:
 - apiref

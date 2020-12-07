@@ -1,7 +1,6 @@
 ---
 title: Video Capture Events
 description: Video Capture Events
-ms.assetid: 9d40b9f7-41c1-4410-afc7-9b4ff1c2fe7e
 keywords:
 - events WDK video capture
 - KSEVENTSETID_VIDCAPNotify
