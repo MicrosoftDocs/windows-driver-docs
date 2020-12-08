@@ -59,6 +59,6 @@ To create a biometric driver, follow these steps:
 
     The final step is to sign and distribute the driver. You must sign your engine adapter on both 32-bit and 64-bit platforms.
 
-    If your driver meets the quality standards that are defined for the Microsoft Hardware Certification Program, you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Manage driver distribution with shipping labels](../dashboard/manage-driver-distribution-by-submission).
+    If your driver meets the quality standards that are defined for the Microsoft Hardware Certification Program, you can distribute it through the Microsoft Windows Update program. For more information about how to distribute a driver, see [Manage driver distribution with shipping labels](../dashboard/manage-driver-distribution-by-submission.md).
 
 These are the basic steps. Additional steps might be necessary based on the needs of your individual driver.

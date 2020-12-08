@@ -11,7 +11,7 @@ The following table summarizes device and system power states that the Bluetooth
 
 ## Device Power States
 
-|System power states| |Device power states| | |
+|System power states|Device power state D0|Device power state D2|Device power state D3||
 |----|----|----|----|----|
 | |D0 (Active)|D2 (sleep) – some power is maintained to the Bluetooth chip for persisting its internal state.|D3 (Off) - Power is removed (*)|
 |S0 (Active)|Active|Sleep if armed for wake|Radio RM off|
@@ -63,4 +63,4 @@ The system is off, and the Bluetooth radio is assumed to be off or in a low powe
 
 ## Radio Management
 
-Going forward, Radio Management (RM) will be standardized for Bluetooth 4.0 radios. The Bluetooth stack will send down an HCI\_RESET command, which the radio is expected to respond by putting the radio in no transmission mode and the device in D3 power state. The stack will then surprise remove all child devnodes, effectively putting the radio in "airplane" mode. The serial bus driver will stay loaded while in the Radio off state, so it can receive a request from the stack to turn the radio back on. The inbox stack will handle the re-enumeration of devnodes. For more details on implementation of radio management, please refer to the [Bluetooth Software Radio Switch Function Prototypes](bluetooth-software-radio-switch-function-prototypes).
+Going forward, Radio Management (RM) will be standardized for Bluetooth 4.0 radios. The Bluetooth stack will send down an HCI\_RESET command, which the radio is expected to respond by putting the radio in no transmission mode and the device in D3 power state. The stack will then surprise remove all child devnodes, effectively putting the radio in "airplane" mode. The serial bus driver will stay loaded while in the Radio off state, so it can receive a request from the stack to turn the radio back on. The inbox stack will handle the re-enumeration of devnodes. For more details on implementation of radio management, please refer to the [Bluetooth Software Radio Switch Function Prototypes](bluetooth-software-radio-switch-function-prototypes.md).
