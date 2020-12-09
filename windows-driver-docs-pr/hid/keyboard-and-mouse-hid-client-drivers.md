@@ -38,6 +38,7 @@ The figure above includes the following components:
 - MOUHID.sys – HID client mapper driver for mice/touchpads. Converts HID usages into mouse commands (X/Y, buttons, wheel) to interface with the existing keyboard class driver.
 - KBDCLASS.sys – The [keyboard class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all keyboards and keypads on the system in a secure manner.
 - MOUCLASS.sys – The [mouse class driver](keyboard-and-mouse-class-drivers.md) maintains functionality for all mice / touchpads on the system. The driver does support both absolute and relative pointing devices. This is not the driver for touchscreens as that is managed by a different driver in Windows.
+- HIDCLASS.sys - The [HID class driver](hid-architecture.md#the-hid-class-driver). The HID Class driver is the glue between KBDHID.sys and MOUHID.sys HID clients and various transports (USB, Bluetooth, etc).
 
 The system builds the driver stack as follows:
 
