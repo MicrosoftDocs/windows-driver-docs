@@ -10,7 +10,7 @@ keywords:
 - Windows network architecture WDK
 ms.date: 09/04/2020
 ms.localizationpriority: medium
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ---
 
 # Windows Network Architecture and the OSI Model

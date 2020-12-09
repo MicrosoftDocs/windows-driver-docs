@@ -8,7 +8,7 @@ keywords:
 - task offload WDK TCP/IP transport , disabling services
 ms.date: 10/30/2020
 ms.localizationpriority: medium
-ms.custom: contperfq2 
+ms.custom: contperf-fy21q2 
 ---
 
 # Using Registry Values to Enable and Disable Task Offloading

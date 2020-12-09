@@ -10,7 +10,7 @@ api_name:
 api_type:
 - NA
 ms.localizationpriority: high
-ms.custom: contperfq2 
+ms.custom: contperf-fy21q2 
 ---
 
 # BCDEdit /set
