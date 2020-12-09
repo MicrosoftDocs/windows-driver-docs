@@ -24,7 +24,7 @@ The HID class driver does the following:
 
     The HID class driver transparently manages and routes all communication between upper-level drivers and applications and the underlying input devices that support HID collections. It manages the different data protocols that are used by different input devices and input queues that support more than one open file on the same HID collection.
 
-    The upper-level interface to HID collections consists of the [HID class driver IOCTLs](/windows-hardware/drivers/ddi/index), the [HIDClass support routines](/windows-hardware/drivers/ddi/index), and the [HIDClass structures](/windows-hardware/drivers/ddi/index).
+    The upper-level interface to HID collections consists of the [HID class driver IOCTLs](/windows-hardware/drivers/ddi/_hid/#hid-class-driver-ioctls), the [HIDClass support routines](/windows-hardware/drivers/ddi/_hid/#hidclass-support-routines), and the [HIDClass structures](/windows-hardware/drivers/ddi/_hid/#structures).
 
 -   Communicates with a HID minidriver by calling the minidriver's standard driver routines.
 
