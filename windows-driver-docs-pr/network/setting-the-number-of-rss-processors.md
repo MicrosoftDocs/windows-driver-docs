@@ -6,7 +6,7 @@ keywords:
 - CPU configuration WDK RSS
 ms.date: 09/21/2020
 ms.localizationpriority: medium
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ---
 
 # Setting the Number of RSS Processors

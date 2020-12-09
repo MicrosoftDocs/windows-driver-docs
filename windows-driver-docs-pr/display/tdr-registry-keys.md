@@ -13,7 +13,7 @@ keywords:
 - TDR tests, Windows Hardware Lab Kit
 ms.date: 10/06/2020
 ms.localizationpriority: medium
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ---
 
 # Testing and debugging TDR
