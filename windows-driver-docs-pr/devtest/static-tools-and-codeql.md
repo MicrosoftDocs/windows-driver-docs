@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 12/03/2020
+ms.date: 12/09/2020
 ms.localizationpriority: medium
 ---
 
@@ -92,7 +92,7 @@ C:\codeql-home\>git clone https://github.com/github/codeql.git
 
 > [!NOTE]
 > Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.
-> Step 3 from the instructions above will be updated in the near future to specify a repository that contains a query suite with only driver-relevant queries
+> Step 2 from the instructions above will be updated in the near future to specify a repository that contains a query suite with only driver-relevant queries.
 
 This page assumes a Windows development environment and that the repository will be installed under *C:\codeql-home*.
 
