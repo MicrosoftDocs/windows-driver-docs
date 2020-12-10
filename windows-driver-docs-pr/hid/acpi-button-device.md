@@ -24,7 +24,7 @@ For more information about the generic button device, visit the [Unified Extensi
 
 Example for describing buttons in ACPI for device running Windows 10 Core OS.
 
-```ASL/cpp
+```console
 // Sample Buttons in ACPI for Windows 10.
 
 Device(BTNS)
@@ -117,7 +117,7 @@ Device(BTNS)
 
 Example for describing buttons in ACPI for device running Windows 10 desktop editions (Home, Pro, Enterprise, and Education).
 
-```ASL
+```console
 Device(BTNS)
 {
     Name(_HID, "ACPI0011")
