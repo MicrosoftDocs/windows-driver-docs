@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 # Using TmXxx Routines
 
 
-Most [KTM routines](/windows-hardware/drivers/ddi/index) use a naming format of **Zw*Xxx***. These routines are handle-based. That is, at least one of their input or output parameters is a handle to a KTM object.
+Most KTM routines use a naming format of **Zw*Xxx***. These routines are handle-based. That is, at least one of their input or output parameters is a handle to a KTM object.
 
 KTM also provides a smaller number of routines that use a naming format of **Tm*Xxx***. These routines are pointer-based. At least one of their input or output parameters is a pointer to a KTM object.
 

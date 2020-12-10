@@ -16,7 +16,7 @@ The simplest way to ensure cross-system compatibility is to write a driver that 
 
 ### WDM Differences in Driver Support Routines
 
-The Windows Driver Kit (WDK) reference page for each [driver support routine](/windows-hardware/drivers/ddi/index) indicates if the routine is restricted to specific versions of WDM, or if its behavior is different on different operating system versions. Before using any driver support routine in a cross-system driver, be sure to understand any version-specific restrictions or behaviors.
+The Windows Driver Kit (WDK) reference page for each driver support routine indicates if the routine is restricted to specific versions of WDM, or if its behavior is different on different operating system versions. Before using any driver support routine in a cross-system driver, be sure to understand any version-specific restrictions or behaviors.
 
 ### WDM Differences in Plug and Play
 

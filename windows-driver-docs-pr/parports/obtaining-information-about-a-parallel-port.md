@@ -19,7 +19,7 @@ Before a client uses a parallel port, it can obtain information about the follow
 
 -   Hardware capabilities of the parallel port
 
--   [Parallel port callback routines](/windows-hardware/drivers/ddi/index) that a kernel-mode driver can use
+-   [Parallel port callback routines](/windows-hardware/drivers/ddi/_parports/) that a kernel-mode driver can use
 
 A client uses the following internal device control requests to obtain the above information:
 

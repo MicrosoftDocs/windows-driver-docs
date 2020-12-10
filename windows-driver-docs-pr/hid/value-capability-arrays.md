@@ -18,7 +18,7 @@ ms.localizationpriority: medium
 
 A *value capability array* contains information about the value usages supported by a [top-level collection](top-level-collections.md) for a specific type of HID report. Information about a collection's value capability arrays is contained in its [**HIDP\_CAPS**](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_caps) structure.
 
-A user-mode application or kernel-mode driver uses one of the following [HIDClass support routines](/windows-hardware/drivers/ddi/index) to obtain button capability information:
+A user-mode application or kernel-mode driver uses one of the following [HIDClass support routines](/windows-hardware/drivers/ddi/_hid) to obtain button capability information:
 
 -   [**HidP\_GetValueCaps**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps) returns a value capability array describing all the values that are contained in a caller-specified report type.
 

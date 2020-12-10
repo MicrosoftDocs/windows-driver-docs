@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-The [remove lock routines](/windows-hardware/drivers/ddi/index) provide a way to track the number of outstanding I/O operations on a device, and to determine when it is safe to detach and delete a driver's device object. The system provides these routines to driver writers as an alternative to implementing their own tracking mechanism.
+The remove lock routines provide a way to track the number of outstanding I/O operations on a device, and to determine when it is safe to detach and delete a driver's device object. The system provides these routines to driver writers as an alternative to implementing their own tracking mechanism.
 
 A driver can use this mechanism for two purposes:
 
