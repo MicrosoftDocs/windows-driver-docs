@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 *Transaction objects* represent transactions. A transactional client creates a transaction, performs some work, and the either commits or rolls back the transaction.
 
-KTM provides a set of [transaction object routines](/windows-hardware/drivers/ddi/index) that kernel-mode transactional clients can call. KTM also provides a similar set of user-mode routines that user-mode applications can call. For more information about the user-mode routines, see the Microsoft Windows SDK.
+KTM provides a set of transaction object routines that kernel-mode transactional clients can call. KTM also provides a similar set of user-mode routines that user-mode applications can call. For more information about the user-mode routines, see the Microsoft Windows SDK.
 
 KTM creates a transaction object when a client calls [**ZwCreateTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction). The client can call either [**ZwCommitTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcommittransaction) or [**ZwRollbackTransaction**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbacktransaction) to commit or roll back the transaction.
 

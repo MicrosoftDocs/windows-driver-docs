@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 For information about debugging a computer as it boots, see the following topics.
 
 -   [**BCDEdit /bootdebug**](../devtest/bcdedit--bootdebug.md)
--   [BCD Boot Options Reference](/windows-hardware/drivers/ddi/index)
+-   [BCD Boot Options Reference](/windows-hardware/drivers/devtest/bcd-boot-options-reference)
 
  
 

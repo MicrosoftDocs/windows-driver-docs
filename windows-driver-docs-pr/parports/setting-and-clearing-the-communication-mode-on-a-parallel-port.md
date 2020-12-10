@@ -20,7 +20,7 @@ A client sets the communication mode on a parallel port by using the following i
 
 [**IOCTL\_INTERNAL\_PARALLEL\_CLEAR\_CHIP\_MODE**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_parallel_clear_chip_mode)
 
-A kernel-mode driver can also use the system-supplied [parallel device callback routines](/windows-hardware/drivers/ddi/index) obtained with an [**IOCTL\_INTERNAL\_GET\_PARALLEL\_PNP\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_get_parallel_pnp_info) request. This request returns a [**PARALLEL\_PNP\_INFORMATION**](/windows-hardware/drivers/ddi/parallel/ns-parallel-_parallel_pnp_information) structure that includes the following pointers to system-supplied callbacks:
+A kernel-mode driver can also use the system-supplied [parallel device callback routines](/windows-hardware/drivers/ddi/_parports/) obtained with an [**IOCTL\_INTERNAL\_GET\_PARALLEL\_PNP\_INFO**](/windows-hardware/drivers/ddi/parallel/ni-parallel-ioctl_internal_get_parallel_pnp_info) request. This request returns a [**PARALLEL\_PNP\_INFORMATION**](/windows-hardware/drivers/ddi/parallel/ns-parallel-_parallel_pnp_information) structure that includes the following pointers to system-supplied callbacks:
 
 -   The **TrySetChipMode** member is a pointer to a [*PPARALLEL\_SET\_CHIP\_MODE*](/windows-hardware/drivers/ddi/parallel/nc-parallel-pparallel_set_chip_mode) callback, which sets the operating mode of a parallel port.
 

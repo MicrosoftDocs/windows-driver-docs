@@ -18,7 +18,7 @@ Some of these system-defined I/O control codes are used by higher-level drivers 
 
 For certain system-supplied drivers designed to interoperate with and support new drivers, the operating system also defines a set of I/O control codes for **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests. In most cases, these public I/O control codes allow add-on higher-level drivers to interoperate with an underlying device driver.
 
-As an example, the system-supplied parallel drivers support a set of internal I/O control codes that vendor-supplied drivers send in **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests. For more information, see [Internal Device Control Requests for Parallel Ports](/windows-hardware/drivers/ddi/index) and [Internal Device Control Requests for Parallel Devices](/windows-hardware/drivers/ddi/index).
+As an example, the system-supplied parallel drivers support a set of internal I/O control codes that vendor-supplied drivers send in **IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL** requests. For more information, see [Internal Device Control Requests for Parallel Ports](/windows-hardware/drivers/ddi/parallel) and [Internal Device Control Requests for Parallel Devices](/windows-hardware/drivers/ddi/index).
 
 Almost all operations requested through system-defined I/O control codes use buffered I/O, because this type of request seldom requires the transfer of large amounts of data. That is, even drivers that set up their device objects for direct I/O are sent IRPs for device control requests with data to be transferred into or out of the buffer at **Irp-&gt;AssociatedIrp.SystemBuffer** (except for certain types of highest-level device drivers with closely coupled Win32 multimedia drivers).
 

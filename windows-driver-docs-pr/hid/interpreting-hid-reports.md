@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # Interpreting HID Reports
 
-This section describes how user-mode applications and kernel-mode drivers use the **HidP\_*Xxx*** [HIDClass support routines](/windows-hardware/drivers/ddi/index) to interpret control data in a HID report.
+This section describes how user-mode applications and kernel-mode drivers use the **HidP\_*Xxx*** [HIDClass support routines](/windows-hardware/drivers/ddi/_hid) to interpret control data in a HID report.
 
 ## Extracting Value Data by Specifying Its Usage
 
