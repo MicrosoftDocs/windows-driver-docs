@@ -70,7 +70,7 @@ Here are some general pointers to help you decide which implementation you shoul
 ## Universal Windows drivers for HID buttons
 
 
-Starting with Windows 10, the HID driver programming interfaces are part of OneCoreUAP-based editions of Windows. By using that common set of interfaces, you can write a button driver by using [Virtual HID Framework](/windows-hardware/drivers/ddi/index) or [Transport Minidrivers](transport-minidrivers.md) interfaces. Those drivers will run on both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile, as well as other Windows 10 versions.
+Starting with Windows 10, the HID driver programming interfaces are part of OneCoreUAP-based editions of Windows. By using that common set of interfaces, you can write a button driver by using [Virtual HID Framework](/windows-hardware/drivers/ddi/_hid) or [Transport Minidrivers](transport-minidrivers.md) interfaces. Those drivers will run on both Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) and Windows 10 Mobile, as well as other Windows 10 versions.
 
 For step-by-step guidance, see [Getting Started with Universal Windows drivers](/windows-hardware/drivers).
 

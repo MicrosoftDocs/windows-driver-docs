@@ -47,4 +47,4 @@ To register a device component for performance state management by PoFx, a drive
 4.  The driver is informed by the [**ComponentPerfStateCallback**](/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_perf_state_callback) routine whether the PEP succeeded or denied the performance state change. If the PEP succeeded the change, the driver then performs whatever work it needs to take to change the performance state from its perspective. If the PEP denied the change, the driver may choose to do nothing or retry the request again with the same or an alternate performance state.
 
 ## Related topics
-[Device Power Management Reference](/windows-hardware/drivers/ddi/index)
+[Device Power Management Reference](/windows-hardware/drivers/_kernel/#power-management-routines)
