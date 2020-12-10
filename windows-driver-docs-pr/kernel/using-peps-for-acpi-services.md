@@ -37,4 +37,4 @@ PEPs are responsible for scheduling work that cannot be performed synchronously 
 [**PEP\_NOTIFY\_ACPI\_WORK**](/windows-hardware/drivers/ddi/index)  
 [*RequestWorker*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pofxcallbackrequestworker)  
 [*AcceptDeviceNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifydpm)  
-[ACPI notifications](/windows-hardware/drivers/ddi/index)
+[ACPI notifications](/windows-hardware/drivers/ddi/_acpi)

@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-Many kernel-mode [standard driver routines](./introduction-to-standard-driver-routines.md) and [driver support routines](/windows-hardware/drivers/ddi/index) use the NTSTATUS type for return values. Additionally, drivers provide an NTSTATUS-typed value in an IRP's [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure when [completing IRPs](completing-irps.md). The NTSTATUS type is defined in Ntdef.h, and system-supplied status codes are defined in Ntstatus.h. (Vendors can also define private status codes, although they rarely need to. For more information, see [Defining New NTSTATUS Values](defining-new-ntstatus-values.md).)
+Many kernel-mode [standard driver routines](./introduction-to-standard-driver-routines.md) and driver support routines use the NTSTATUS type for return values. Additionally, drivers provide an NTSTATUS-typed value in an IRP's [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure when [completing IRPs](completing-irps.md). The NTSTATUS type is defined in Ntdef.h, and system-supplied status codes are defined in Ntstatus.h. (Vendors can also define private status codes, although they rarely need to. For more information, see [Defining New NTSTATUS Values](defining-new-ntstatus-values.md).)
 
 NTSTATUS values are divided into four types: success values, informational values, warnings, and error values.
 

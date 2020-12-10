@@ -355,6 +355,6 @@ For more information, see [Reading and Writing a Parallel Device](./reading-and-
 
 [Operating a Parallel Device Attached to a Parallel Port](./operating-a-parallel-device-attached-to-a-parallel-port.md)
 
-[Parallel device callback routines](/windows-hardware/drivers/ddi/index)
+[Parallel device callback routines](/windows-hardware/drivers/ddi/_parports)
 
 [Reading and Writing a Parallel Device](./reading-and-writing-a-parallel-device.md)

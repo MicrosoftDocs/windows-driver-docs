@@ -24,7 +24,7 @@ When the driver calls [*PoFxRegisterDevice*](/windows-hardware/drivers/ddi/wdfde
 -   [Reporting Device Powered On When System Returns to S0](reporting-device-powered-on.md)
 -   [Supporting Idle Power-Down on Multiple-Component Devices](supporting-idle-power-down-on-multiple-component-devices.md)
 
-In addition, the driver can call [power framework routines](/windows-hardware/drivers/ddi/index) directly to send power control requests and specify latency, residency, and wake requirements.
+In addition, the driver can call [power framework routines](/windows-hardware/drivers/ddi/_kernel/#power-management-routines) directly to send power control requests and specify latency, residency, and wake requirements.
 
 For more information about PoFx, see [Overview of the Power Management Framework](../kernel/overview-of-the-power-management-framework.md).
 

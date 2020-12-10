@@ -64,5 +64,4 @@ If tag writing is supported at all by the NFP provider, the driver must meet all
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

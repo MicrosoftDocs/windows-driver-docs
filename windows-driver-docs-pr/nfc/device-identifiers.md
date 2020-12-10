@@ -33,5 +33,4 @@ If the device is advertised as NFC, the driver MUST populate DEVPKEY\_NFP\_Capab
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

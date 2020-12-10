@@ -13,7 +13,7 @@ The main purpose of the *transaction manager object* is to create and maintain a
 
 The transaction manager object also contains a [virtual clock value](using-virtual-clock-values.md) that KTM maintains and uses to sequence information in the object's log stream.
 
-KTM provides a set of [transaction manager object routines](/windows-hardware/drivers/ddi/index) that kernel-mode [TPS components](understanding-tps-components.md) can call. KTM also provides a similar set of user-mode routines that user-mode applications can call. For more information about the user-mode routines, see the Microsoft Windows SDK.
+KTM provides a set of transaction manager object routines that kernel-mode [TPS components](understanding-tps-components.md) can call. KTM also provides a similar set of user-mode routines that user-mode applications can call. For more information about the user-mode routines, see the Microsoft Windows SDK.
 
 KTM creates a transaction manager object when a resource manager calls [**ZwCreateTransactionManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransactionmanager). Typically, each resource manager in a TPS creates a transaction manager object. But you can also design a TPS in which several resource managers share a single transaction manager object.
 

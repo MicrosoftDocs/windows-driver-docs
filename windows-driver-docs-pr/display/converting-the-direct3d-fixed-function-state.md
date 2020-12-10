@@ -60,7 +60,7 @@ How the fixed-function vertex and pixel shader converters work depend on the ver
 
 ### <span id="unused_user_mode_display_driver_functions"></span><span id="UNUSED_USER_MODE_DISPLAY_DRIVER_FUNCTIONS"></span>Unused User-Mode Display Driver Functions
 
-The following [user-mode display driver functions](/windows-hardware/drivers/ddi/index) are not called by the Direct3D runtime when the fixed-function vertex shader converter is enabled:
+The following [user-mode display driver functions](/windows-hardware/drivers/ddi/_display/#functions) are not called by the Direct3D runtime when the fixed-function vertex shader converter is enabled:
 
 -   [**MultiplyTransform**](/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_multiplytransform)
 

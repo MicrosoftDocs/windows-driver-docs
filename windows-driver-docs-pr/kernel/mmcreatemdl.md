@@ -173,7 +173,6 @@ The following obsolete routines are exported to support existing binaries:
 
 ## Related topics
 [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel)  
-[Buffer Management](/windows-hardware/drivers/ddi/index)  
 [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))  
 [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85))  
 [**ExConvertExclusiveToSharedLite**](/previous-versions/ff544558(v=vs.85))  

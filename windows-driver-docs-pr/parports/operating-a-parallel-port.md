@@ -41,7 +41,7 @@ For more information about system support for parallel ports, see:
 
 [System-Supplied Parallel Drivers](system-supplied-parallel-drivers.md)
 
-[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/index)
+[Client Interfaces to System-Supplied Parallel Drivers](/windows-hardware/drivers/ddi/_parports)
 
  
 

@@ -80,7 +80,7 @@ For more information about ETW, see [Event Tracing for Windows](/windows-hardwar
 
 **Note** WPP trace providers can only be enabled by one trace session at a time. See [WPP Providers](/windows/desktop/ETW/about-event-tracing#providers) for more information.
 
-For information about the [WMI library support routines](/windows-hardware/drivers/ddi/index) that support WPP software tracing, see:
+For information about the WMI library support routines that support WPP software tracing, see:
 
 [**WmiQueryTraceInformation**](/windows-hardware/drivers/ddi/wdm/nf-wdm-wmiquerytraceinformation)
 

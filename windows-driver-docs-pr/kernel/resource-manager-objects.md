@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 *Resource manager objects* represent resource managers. Each resource manager must call [**ZwCreateResourceManager**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager) to register itself to KTM.
 
-KTM provides a set of [resource manager object routines](/windows-hardware/drivers/ddi/index) that kernel-mode resource managers can call. KTM also provides a similar set of user-mode routines that user-mode applications can call. For more information about the user-mode routines, see the Microsoft Windows SDK.
+KTM provides a set of resource manager object routines that kernel-mode resource managers can call. KTM also provides a similar set of user-mode routines that user-mode applications can call. For more information about the user-mode routines, see the Microsoft Windows SDK.
 
 KTM creates a resource manager object when a resource manager calls **ZwCreateResourceManager**.
 
