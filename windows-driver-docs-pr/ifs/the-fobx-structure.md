@@ -1,7 +1,6 @@
 ---
 title: The FOBX Structure
 description: The FOBX Structure
-ms.assetid: 95177b38-4ca5-49ed-9f9d-bafedd156044
 keywords:
 - reference counts WDK RDBSS
 - FOBX structure

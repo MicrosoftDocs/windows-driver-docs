@@ -1,7 +1,6 @@
 ---
 title: Surface Formats as FOURCCs
 description: Surface Formats as FOURCCs
-ms.assetid: 947b73c9-3f1d-485e-9966-815b40a06342
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , texture format lists
 - texture format lists WDK DirectX 8.0

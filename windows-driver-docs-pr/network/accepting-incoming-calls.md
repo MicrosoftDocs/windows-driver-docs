@@ -1,7 +1,6 @@
 ---
 title: Accepting Incoming Calls
 description: Accepting Incoming Calls
-ms.assetid: bca837dc-b3de-4aca-9fc2-aed2faab1377
 keywords:
 - CoNDIS WAN drivers WDK networking , incoming calls
 - telephonic services WDK WAN , incoming calls

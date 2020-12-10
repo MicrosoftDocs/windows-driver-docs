@@ -1,7 +1,6 @@
 ---
 title: Defining Accelerator Capabilities
 description: Defining Accelerator Capabilities
-ms.assetid: 1f590cfd-74b8-4a08-848d-fcbb2c0c9486
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , accelerator capabilities
 - Video Acceleration WDK DirectX , accelerator capabilities

@@ -1,7 +1,6 @@
 ---
 title: NDIS Configuration Functions
 description: NDIS Configuration Functions
-ms.assetid: 248e08d0-6145-499a-b307-2a5ffbd3733f
 keywords:
 - configuration functions WDK NDIS
 ms.date: 04/20/2017

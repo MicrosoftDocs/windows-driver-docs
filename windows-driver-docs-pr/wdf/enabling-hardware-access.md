@@ -1,7 +1,6 @@
 ---
 title: Enabling Hardware Access
 description: Enabling Hardware Access
-ms.assetid: 89D8A4B9-4D61-4968-BC78-156717B3EED9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

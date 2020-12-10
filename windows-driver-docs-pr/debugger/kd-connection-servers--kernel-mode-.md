@@ -1,7 +1,6 @@
 ---
 title: KD Connection Servers (Kernel Mode)
 description: KD Connection Servers (Kernel Mode)
-ms.assetid: fe0c9110-8fbf-46ae-ae1d-75ab5231aef3
 keywords: ["remote debugging through a KD connection server", "KD connection server", "KD connection server, overview", "smart client (kernel mode)", "KdSrv", "KdSrv, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

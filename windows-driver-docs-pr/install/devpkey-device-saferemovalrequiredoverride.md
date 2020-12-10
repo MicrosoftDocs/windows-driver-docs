@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SafeRemovalRequiredOverride
 description: DEVPKEY_Device_SafeRemovalRequiredOverride
-ms.assetid: 8289effe-3849-41bf-b870-69e3d8cb8850
 keywords: ["DEVPKEY_Device_SafeRemovalRequiredOverride Device and Driver Installation"]
 topic_type:
 - apiref

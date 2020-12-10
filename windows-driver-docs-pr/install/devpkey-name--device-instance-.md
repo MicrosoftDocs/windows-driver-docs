@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_NAME (Device Instance)
 description: DEVPKEY_NAME (Device Instance)
-ms.assetid: 4968a215-7e22-4d17-938c-4aa5289b2803
 keywords: ["DEVPKEY_NAME (Device Instance) Device and Driver Installation"]
 topic_type:
 - apiref

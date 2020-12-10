@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_SET\_ADDITIONAL\_CREATE\_OPTIONS
 description: DEBUG\_REQUEST\_SET\_ADDITIONAL\_CREATE\_OPTIONS
-ms.assetid: e80f8575-b7f9-466a-8087-b3cb103503f7
 keywords: ["DEBUG_REQUEST_SET_ADDITIONAL_CREATE_OPTIONS Windows Debugging"]
 topic_type:
 - apiref

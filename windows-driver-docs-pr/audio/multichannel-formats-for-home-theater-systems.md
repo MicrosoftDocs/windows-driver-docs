@@ -1,7 +1,6 @@
 ---
 title: Multichannel Formats for Home-Theater Systems
 description: Multichannel Formats for Home-Theater Systems
-ms.assetid: b8bd1dc7-c9a8-4f4f-8014-d31f1ae5361a
 keywords:
 - data formats WDK audio
 - formats WDK audio , data

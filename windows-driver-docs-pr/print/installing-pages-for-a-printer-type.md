@@ -1,7 +1,6 @@
 ---
 title: Installing Pages for a Printer Type
 description: Installing Pages for a Printer Type
-ms.assetid: 6c878612-d490-4791-a284-c48f1db0cde8
 keywords:
 - installing customized print Web pages WDK
 - customized print Web pages WDK , installing

@@ -1,7 +1,6 @@
 ---
 title: Introduction to net rings
 description: This topic describes net rings.
-ms.assetid: 8A56AA21-264C-4C1A-887E-92C9071E8AB8
 keywords:
 - NetAdapterCx Introduction to net rings, NetCx Introduction to net rings, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
 ms.date: 10/29/2019

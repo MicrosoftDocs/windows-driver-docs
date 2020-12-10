@@ -1,7 +1,6 @@
 ---
 title: Introduction to Driver Notification
 description: Introduction to Driver Notification
-ms.assetid: c0c09480-628a-4f12-b6a3-881cc3e12fd5
 keywords: ["driver notification WDK dynamic hardware partitioning , synchronous", "driver notification WDK dynamic hardware partitioning , asynchronous", "driver notification WDK dynamic hardware partitioning , memory notification"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

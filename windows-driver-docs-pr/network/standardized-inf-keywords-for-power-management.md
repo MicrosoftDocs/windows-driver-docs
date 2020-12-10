@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for Power Management
 description: Standardized INF Keywords for Power Management
-ms.assetid: bec8dd96-f64a-40eb-ade9-73c9a66a756e
 ms.date: 08/01/2019
 ms.localizationpriority: medium
 ---

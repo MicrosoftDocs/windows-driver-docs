@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_CONNECTINFO
 description: AVC\_FUNCTION\_GET\_CONNECTINFO
-ms.assetid: d4230024-a765-47f0-9958-9f71761f7b85
 keywords: ["AVC_FUNCTION_GET_CONNECTINFO Streaming Media Devices"]
 topic_type:
 - apiref

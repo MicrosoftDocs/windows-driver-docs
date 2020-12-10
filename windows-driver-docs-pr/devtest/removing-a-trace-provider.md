@@ -1,7 +1,6 @@
 ---
 title: Removing a Trace Provider
 description: Removing a Trace Provider
-ms.assetid: 3ea38137-9196-46a6-8cb5-04722cd43086
 keywords:
 - trace providers WDK
 - providers WDK software tracing

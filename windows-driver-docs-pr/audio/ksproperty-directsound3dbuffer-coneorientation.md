@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEORIENTATION
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEORIENTATION property specifies the orientation of the sound-projection cone for a 3D sound buffer.
-ms.assetid: c1253114-a2e4-48ff-8219-d932f182478e
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_CONEORIENTATION Audio Devices"]
 topic_type:
 - apiref

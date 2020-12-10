@@ -1,7 +1,6 @@
 ---
 title: thread
 description: The thread extension displays summary information about a thread on the target system, including the ETHREAD block. This command can be used only during kernel-mode debugging.
-ms.assetid: 5d3cf2f7-02bf-4a94-b542-826ad2b66a6f
 keywords: ["thread Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

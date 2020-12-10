@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_GM
 description: KSPROPSETID\_GM
-ms.assetid: e06adfad-2fc0-4d63-bd2e-28876fe3ada7
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

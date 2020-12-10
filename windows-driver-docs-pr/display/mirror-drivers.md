@@ -1,7 +1,6 @@
 ---
 title: Mirror Drivers
 description: Mirror Drivers
-ms.assetid: 7231375a-969b-4c55-83d4-96ba5caade20
 keywords:
 - display drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display

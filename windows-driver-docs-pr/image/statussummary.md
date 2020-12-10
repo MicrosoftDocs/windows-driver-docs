@@ -1,7 +1,6 @@
 ---
 title: StatusSummary element
 description: The required StatusSummary element contains a summary of the scan device's current status.
-ms.assetid: cb361b3b-bd73-449d-9f31-0c1aea882330
 keywords: ["StatusSummary element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: UE hang detection and recovery flow
 description: This diagram shows the UE hang detection and reset flow.
-ms.assetid: 49B73223-91BA-4140-BB2B-8AB0CB355406
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: How the Checked Build Indicates a Problem
 description: How the Checked Build Indicates a Problem
-ms.assetid: 373519e0-bca9-434e-8cc3-e11c2d4b42a4
 keywords:
 - checked builds WDK , problem notifications
 - notifications WDK checked builds

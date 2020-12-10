@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_MULTI\_FEED\_SENSITIVITY
 description: The WIA\_IPS\_MULTI\_FEED\_SENSITIVITY property is used to change the multi-feed detection trigger to a lower or higher value between the lowest and highest sensitivity supported by the device. The WIA minidriver creates and maintains this property.
-ms.assetid: 04AC211B-89D5-417F-9089-1E3F30E22211
 keywords: ["WIA_IPS_MULTI_FEED_SENSITIVITY Imaging Devices"]
 topic_type:
 - apiref

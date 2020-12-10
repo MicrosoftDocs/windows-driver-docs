@@ -1,7 +1,6 @@
 ---
 title: How NDIS Sets the Power Policy for a Network Adapter
 description: How NDIS Sets the Power Policy for a Network Adapter
-ms.assetid: ede0e33d-16f9-45ec-9e9d-b188f6360b2f
 keywords:
 - network interface cards WDK networking , power policy
 - NICs WDK networking , power policy

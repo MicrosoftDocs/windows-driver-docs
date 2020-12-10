@@ -1,7 +1,6 @@
 ---
 title: MB Packet Service Attach Operations
 description: MB Packet Service Attach Operations
-ms.assetid: 1a04ad29-4aa1-45fb-b554-1e18a93e91af
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

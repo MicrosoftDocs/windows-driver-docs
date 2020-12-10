@@ -1,7 +1,6 @@
 ---
 title: GDI Support for Surfaces
 description: GDI Support for Surfaces
-ms.assetid: 78c1e09d-8c3e-4c5d-b670-2e4adf77814f
 keywords:
 - DrvEnableSurface
 - DrvDisableSurface

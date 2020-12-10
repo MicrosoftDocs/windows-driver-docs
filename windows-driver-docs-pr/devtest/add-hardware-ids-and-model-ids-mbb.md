@@ -1,7 +1,6 @@
 ---
 title: Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
 description: Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: 1A540E7F-CA03-4CFA-8711-6CDBD7E152AD
 keywords:
 - Add Hardware IDs in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017

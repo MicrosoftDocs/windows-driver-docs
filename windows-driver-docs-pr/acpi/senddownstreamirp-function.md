@@ -1,7 +1,6 @@
 ---
 title: SendDownStreamIrp Function
 description: SendDownStreamIrp Function
-ms.assetid: 09a06041-5b26-4796-b9b8-d7d27321d955
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WDTF Architecture and Overview
 description: Learn how the Microsoft Windows Device Testing Framework (WDTF) enables you to create, manage, reuse, and extend device-centric, scenario-based automated tests.
-ms.assetid: 7e7660ec-1f17-4987-82c0-f62cca3a99b9
 keywords:
 - Windows Device Testing Framework WDK
 - WDTF WDK

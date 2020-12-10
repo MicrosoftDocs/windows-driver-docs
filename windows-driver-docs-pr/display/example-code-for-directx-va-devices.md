@@ -1,7 +1,6 @@
 ---
 title: Example Code for DirectX VA Devices
 description: Example Code for DirectX VA Devices
-ms.assetid: 3afdb99b-8a26-4caf-8285-1aff791a8123
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , example code
 - Video Acceleration WDK DirectX , example code

@@ -1,7 +1,6 @@
 ---
 title: OID_CO_DELETE_ADDRESS
 description: This topic describes the OID_CO_DELETE_ADDRESS object identifier (OID).
-ms.assetid: 987c839b-f673-4c7a-90b4-fc5f93454b2e
 keywords:
 - OID_CO_DELETE_ADDRESS
 ms.date: 11/03/2017

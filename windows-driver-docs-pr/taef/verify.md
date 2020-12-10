@@ -1,7 +1,6 @@
 ---
 title: Verify Framework
 description: Verify Framework
-ms.assetid: A954B5E2-E3C7-4021-BE53-AE1257139607
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_MUTE\_TX
 description: The KSPROPERTY\_TELEPHONY\_MUTE\_TX property is used to control whether to mute the data being transmitted from the local microphone to the remote end.
-ms.assetid: FB59AFB8-A11D-4E8D-9C39-131F1D807D4A
 keywords: ["KSPROPERTY_TELEPHONY_MUTE_TX Audio Devices"]
 topic_type:
 - apiref

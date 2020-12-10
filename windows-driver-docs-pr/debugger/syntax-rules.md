@@ -1,7 +1,6 @@
 ---
 title: Syntax Rules
 description: This section describes the syntax rules that you must follow to use debugger commands.
-ms.assetid: bd1605f9-8e98-4d80-8742-acba222872ef
 keywords: commands, syntax rules, meta-commands 
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: OID_QOS_OPERATIONAL_PARAMETERS
 description: An overlying driver issues an object identifier (OID) query request of OID_QOS_OPERATIONAL_PARAMETERS to obtain the current NDIS Quality of Service (QoS) operational parameters for a network adapter.
-ms.assetid: 546EE7C6-BCED-4FF9-9B87-A36199B1B31C
 ms.date: 08/08/2017
 keywords: 
  -OID_QOS_OPERATIONAL_PARAMETERS Network Drivers Starting with Windows Vista

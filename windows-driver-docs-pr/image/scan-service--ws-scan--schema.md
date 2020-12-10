@@ -1,7 +1,6 @@
 ---
 title: Scan Service (WS-Scan) Schema
 description: Scan Service (WS-Scan) Schema
-ms.assetid: 4a1f3f82-b345-4e08-ac5e-69bd5fee1b83
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

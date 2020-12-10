@@ -1,7 +1,6 @@
 ---
 title: Using Timers
 description: Describes how to use the framework's built-in timer support. Applies to both KMDF drivers as well as UMDF drivers starting in version 2.
-ms.assetid: f3bca5bf-fa5f-4b8f-ad28-26d29fc33963
 keywords:
 - timers WDK KMDF
 - framework objects WDK KMDF , timer objects

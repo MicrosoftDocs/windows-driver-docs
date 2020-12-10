@@ -1,7 +1,6 @@
 ---
 title: Accessing Hardware and Handling Interrupts
 description: Accessing Hardware and Handling Interrupts
-ms.assetid: 25D526CF-7C37-4D10-B099-352933F92F98
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

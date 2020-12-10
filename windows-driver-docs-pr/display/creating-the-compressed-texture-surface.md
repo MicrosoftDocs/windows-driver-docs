@@ -1,7 +1,6 @@
 ---
 title: Creating the Compressed Texture Surface
 description: Creating the Compressed Texture Surface
-ms.assetid: 6d1cc079-642c-4662-ae72-c0362d8a5b2a
 keywords:
 - drawing compressed textures WDK DirectDraw , creating
 - DirectDraw compressed textures WDK Windows 2000 display , creating

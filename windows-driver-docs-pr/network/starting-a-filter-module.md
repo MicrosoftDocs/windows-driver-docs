@@ -1,7 +1,6 @@
 ---
 title: Starting a Filter Module
 description: Starting a Filter Module
-ms.assetid: 493cb922-22bc-4845-b5a2-6f610559534d
 keywords:
 - filter modules WDK networking , starting
 - starting filter modules

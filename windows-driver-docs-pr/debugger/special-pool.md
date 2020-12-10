@@ -1,7 +1,6 @@
 ---
 title: Special Pool
 description: Special Pool
-ms.assetid: 8904913d-78ed-4e5f-acef-3c21eeb87b8d
 keywords: ["Special Pool", "Special Pool, overview", "GFlags, Special Pool"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

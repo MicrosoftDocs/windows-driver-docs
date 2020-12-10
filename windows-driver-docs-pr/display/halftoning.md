@@ -1,7 +1,6 @@
 ---
 title: Halftoning
 description: Halftoning
-ms.assetid: 94cf0d87-055d-470e-94ca-225d519aeb14
 keywords:
 - GDI WDK Windows 2000 display , halftoning
 - graphics drivers WDK Windows 2000 display , halftoning

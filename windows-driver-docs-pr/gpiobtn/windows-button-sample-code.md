@@ -1,7 +1,6 @@
 ---
 title: Windows button sample code
 description: This topic contains a code sample that toggles the identified Windows button down and then up.
-ms.assetid: DB43A64C-66A0-43BD-A657-D4EE11159543
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

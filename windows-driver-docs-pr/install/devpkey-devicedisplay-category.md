@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceDisplay_Category
 description: DEVPKEY_DeviceDisplay_Category
-ms.assetid: 4f1999cd-e3b7-4755-ab48-1feabbc9d245
 keywords: ["DEVPKEY_DeviceDisplay_Category Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD
 description: OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD removes the protocol offload specified by the protocol offload ID.
-ms.assetid: 47850c43-4d10-48f5-b2e9-1f94f23eabf2
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD Network Drivers Starting with Windows Vista

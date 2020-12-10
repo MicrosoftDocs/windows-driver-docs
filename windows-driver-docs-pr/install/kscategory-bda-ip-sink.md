@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BDA_IP_SINK
 description: KSCATEGORY_BDA_IP_SINK
-ms.assetid: 7c9627b3-2d6b-471c-9101-0768890bfe10
 keywords: ["KSCATEGORY_BDA_IP_SINK Device and Driver Installation"]
 topic_type:
 - apiref

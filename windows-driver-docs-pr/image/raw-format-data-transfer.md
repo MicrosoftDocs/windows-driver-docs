@@ -1,7 +1,6 @@
 ---
 title: RAW Format Data Transfer
 description: RAW Format Data Transfer
-ms.assetid: 8541b5ce-fd55-47b0-9687-162fb2b4e6aa
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: TMM Terminology
 description: TMM Terminology
-ms.assetid: ab1176b0-66a0-4ac3-96ce-7ca3809d9d0a
 keywords:
 - TMM WDK display , terminology
 - TMM WDK display , clone view

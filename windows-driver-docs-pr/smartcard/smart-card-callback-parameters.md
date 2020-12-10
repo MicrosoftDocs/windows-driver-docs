@@ -1,7 +1,6 @@
 ---
 title: Smart Card Callback Parameters
 description: Smart Card Callback Parameters
-ms.assetid: 6fd1590b-0600-4065-b1cc-71d8aed3f98a
 keywords:
 - IOCTLs WDK smart card
 - callback parameters WDK smart card

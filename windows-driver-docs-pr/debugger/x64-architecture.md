@@ -1,7 +1,6 @@
 ---
 title: x64 Architecture
 description: x64 Architecture
-ms.assetid: 6c0d92d5-cb16-4909-bae5-39fc5c15f736
 keywords: ["x64 processor, architecture", "registers, on an x64 processor", "x64 processor, registers"]
 ms.date: 03/16/2018
 ms.localizationpriority: medium

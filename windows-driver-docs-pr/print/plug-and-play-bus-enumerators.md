@@ -1,7 +1,6 @@
 ---
 title: Plug and Play Bus Enumerators
 description: Plug and Play Bus Enumerators
-ms.assetid: 6cfab5a2-7d5c-42c2-86d7-5585e5853a1f
 keywords:
 - Plug and Play bus enumeration WDK print
 - bus enumeration WDK print

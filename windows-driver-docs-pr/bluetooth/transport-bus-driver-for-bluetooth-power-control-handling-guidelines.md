@@ -1,7 +1,6 @@
 ---
 title: Transport Bus Driver for Bluetooth Power Control Handling Guidelines
 description: IHVs need to implement a transport bus driver in order to support Bluetooth functionality of a multifunction controller often integrated in a System on Chip (SoC) system.
-ms.assetid: 00792128-320E-45C1-9F58-343B72565CA7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

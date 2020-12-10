@@ -1,7 +1,6 @@
 ---
 title: WDI general datapath interfaces
 description: This section describes general WDI datapath interfaces
-ms.assetid: 5B40171C-4E5F-4C35-A6E7-1EA5181C02E8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

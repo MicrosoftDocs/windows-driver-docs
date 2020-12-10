@@ -1,7 +1,6 @@
 ---
 title: TVOT\_UDARROW
 description: TVOT\_UDARROW
-ms.assetid: c1182cc5-5d82-4db5-8ef2-7d2601499e72
 keywords: ["TVOT_UDARROW Print Devices"]
 topic_type:
 - apiref

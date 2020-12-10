@@ -1,7 +1,6 @@
 ---
 title: Removing a Plug and Play Serial Device on an RS-232 Port
 description: Removing a Plug and Play Serial Device on an RS-232 Port
-ms.assetid: a9019445-3013-49b2-94fd-1ab8a85c3d7a
 keywords:
 - RS-232 ports WDK serial devices
 - Serenum driver WDK , Plug and Play devices

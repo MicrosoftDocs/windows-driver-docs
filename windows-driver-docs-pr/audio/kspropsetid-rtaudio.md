@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_RTAudio
 description: KSPROPSETID\_RTAudio
-ms.assetid: a243637a-7b6b-4675-99ef-a365f5fb7d00
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

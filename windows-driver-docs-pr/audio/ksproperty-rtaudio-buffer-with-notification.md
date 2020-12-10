@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION
 description: The KSPROPERTY\_RTAUDIO\_BUFFER\_WITH\_NOTIFICATION property specifies a driver-allocated cyclic buffer for audio data and identifies event notification requirements.The following table summarizes the features of this property.
-ms.assetid: a66727ae-03d6-41b5-b5c9-3b04352b3b83
 keywords: ["KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION Audio Devices"]
 topic_type:
 - apiref

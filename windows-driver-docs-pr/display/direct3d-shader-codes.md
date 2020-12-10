@@ -1,7 +1,6 @@
 ---
 title: Direct3D Shader Codes
 description: Direct3D Shader Codes
-ms.assetid: 30d14bbe-10fe-46fc-99b3-ab2f989abb29
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

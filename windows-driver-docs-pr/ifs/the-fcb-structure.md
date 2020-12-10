@@ -1,7 +1,6 @@
 ---
 title: The FCB Structure
 description: The FCB Structure
-ms.assetid: feb38b24-c028-4c8d-be45-11d9a4659f8d
 keywords:
 - file control block structure WDK RDBSS
 - FCB WDK RDBSS

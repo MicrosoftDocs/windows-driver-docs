@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_POWER_MANAGMENT_CAPABILITIES
 description: WDI_TLV_POWER_MANAGMENT_CAPABILITIES is an unused TLV.
-ms.assetid: 6DD19576-4762-4460-8134-45D4270D9FAE
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_POWER_MANAGMENT_CAPABILITIES Network Drivers Starting with Windows Vista

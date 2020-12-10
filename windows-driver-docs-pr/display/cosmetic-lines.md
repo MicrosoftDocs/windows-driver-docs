@@ -1,7 +1,6 @@
 ---
 title: Cosmetic Lines
 description: Cosmetic Lines
-ms.assetid: eb9651dd-cc77-469f-8441-4bb958bd374d
 keywords:
 - lines WDK GDI , cosmetic
 - GDI WDK Windows 2000 display , lines, cosmetic

@@ -1,7 +1,6 @@
 ---
 title: Tape Miniclass Driver Routines
 description: Tape Miniclass Driver Routines
-ms.assetid: 7a641199-2607-4980-bd8b-ec3856b311ef
 keywords:
 - tape drivers WDK storage , optional routines
 - storage tape drivers WDK , optional routines

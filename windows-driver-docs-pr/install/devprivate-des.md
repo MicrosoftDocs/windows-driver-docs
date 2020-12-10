@@ -1,7 +1,6 @@
 ---
 title: DEVPRIVATE_DES
 description: DEVPRIVATE_DES
-ms.assetid: a1964e7a-8aa8-417f-9cb2-4264bf6bfd45
 keywords: ["DEVPRIVATE_DES Device and Driver Installation"]
 topic_type:
 - apiref

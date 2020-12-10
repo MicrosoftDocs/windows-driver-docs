@@ -1,7 +1,6 @@
 ---
 title: Loading Test Signed Code
 description: Describes how to enable loading of test signed drivers using the TESTSIGNING option with BCDEdit tool
-ms.assetid: 4898595e-20c9-4607-aad7-792f7d1074e4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

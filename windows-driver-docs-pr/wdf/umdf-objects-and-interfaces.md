@@ -1,7 +1,6 @@
 ---
 title: UMDF Objects and Interfaces
 description: UMDF Objects and Interfaces
-ms.assetid: da816fef-a24f-4456-9d4a-36f291afe8b5
 keywords:
 - User-Mode Driver Framework WDK , objects
 - user-mode drivers WDK UMDF , objects

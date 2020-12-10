@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x3 INVALID_AFFINITY_SET
 description: The INVALID_AFFINITY_SET bug check has a value of 0x00000003.This bug check appears very infrequently.
-ms.assetid: e58a872e-8cf8-4d3c-ae54-fe19fadcd57e
 keywords: ["Bug Check 0x3 INVALID_AFFINITY_SET", "INVALID_AFFINITY_SET"]
 ms.date: 05/23/2017
 topic_type:

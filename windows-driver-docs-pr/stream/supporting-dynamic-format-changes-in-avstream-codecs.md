@@ -1,7 +1,6 @@
 ---
 title: Supporting Dynamic Format Changes in AVStream Codecs
 description: Supporting Dynamic Format Changes in AVStream Codecs
-ms.assetid: ae222512-fd19-404a-aaf8-6fbfa2a3349e
 keywords:
 - hardware codec support WDK AVStream , dynamic format change
 - supporting dynamic format change WDK AVStream

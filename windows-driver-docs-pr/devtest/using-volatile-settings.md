@@ -1,7 +1,6 @@
 ---
 title: Using Volatile Settings
 description: Using Volatile Settings
-ms.assetid: 16fb8c2a-60d8-4c0a-879d-447a1cda5415
 keywords:
 - Driver Verifier WDK , volatile settings
 - volatile settings WDK Driver Verifier

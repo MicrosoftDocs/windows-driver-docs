@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VIDCAPTOSTI\_EXT\_TRIGGER
 description: The KSEVENT\_VIDCAPTOSTI\_EXT\_TRIGGER event propagates an action, such as a when a trigger button is pressed on a video capture device, from the kernel-mode video capture minidriver to DirectShow in user-mode.
-ms.assetid: 97f67d22-20c4-460c-9022-04e55e74f6f9
 keywords: ["KSEVENT_VIDCAPTOSTI_EXT_TRIGGER Streaming Media Devices"]
 topic_type:
 - apiref

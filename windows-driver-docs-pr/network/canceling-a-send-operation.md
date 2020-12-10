@@ -1,7 +1,6 @@
 ---
 title: Canceling a Send Operation
 description: Canceling a Send Operation
-ms.assetid: 5bd7a815-4e4d-4259-b322-f4f8d07f2e1a
 keywords:
 - network data WDK , sending
 - data WDK networking , sending

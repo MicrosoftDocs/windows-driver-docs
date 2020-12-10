@@ -1,7 +1,6 @@
 ---
 title: Audio Device Class Inactivity Timer Implementation
 description: Audio Device Class Inactivity Timer Implementation
-ms.assetid: e7e431ec-626d-4fdb-8705-fc5420c43f17
 keywords:
 - inactivity timers WDK audio
 - timers WDK audio
@@ -36,7 +35,7 @@ Vendors can override the default values of the following power-idle parameters:
     \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy\PowerSettings\ConservationIdleTime
     ```
 
-    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](/previous-versions/ff553419(v=vs.85))) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
+    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
 
 -   *PerformanceIdleTime*
 

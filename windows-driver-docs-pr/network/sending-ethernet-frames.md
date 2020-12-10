@@ -1,7 +1,6 @@
 ---
 title: Sending Ethernet Frames
 description: Sending Ethernet Frames
-ms.assetid: 9d1037b9-ef5c-4ed8-9204-5729eff2cea3
 keywords:
 - Ethernet WDK networking
 - frames WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Debugging Device Installations with the Kernel Debugger (KD)
 description: Debugging Device Installations with the Kernel Debugger (KD)
-ms.assetid: 0967d375-2602-44d2-b4ac-8d1e112afc3f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

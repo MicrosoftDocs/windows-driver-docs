@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_FMRX\_VOLUME
 description: The KSPROPERTY\_FMRX\_VOLUME property controls the volume of the FM radio.
-ms.assetid: 28650DEB-EA09-4E30-A1A7-179D1E1A641F
 keywords: ["KSPROPERTY_FMRX_VOLUME Audio Devices"]
 topic_type:
 - apiref

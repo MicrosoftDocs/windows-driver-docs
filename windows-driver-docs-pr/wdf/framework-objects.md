@@ -1,7 +1,6 @@
 ---
 title: Framework Objects
 description: Framework Objects
-ms.assetid: bd9ec812-205d-4f9a-b85b-4e3a2f7556bd
 keywords:
 - UMDF objects WDK , listed
 - framework objects WDK UMDF , listed

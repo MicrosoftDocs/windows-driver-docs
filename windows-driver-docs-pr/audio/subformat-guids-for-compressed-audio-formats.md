@@ -1,7 +1,6 @@
 ---
 title: Subformat GUIDs for Compressed Audio Formats
 description: Subformat GUIDs for Compressed Audio Formats
-ms.assetid: f9595d6c-952c-4266-8eb5-5c8581051d28
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

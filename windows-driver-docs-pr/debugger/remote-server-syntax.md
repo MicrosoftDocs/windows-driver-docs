@@ -1,7 +1,6 @@
 ---
 title: Remote Server Syntax
 description: To start the server side of the Remote tool, use the following syntax at the command line.
-ms.assetid: fecc9f43-6946-4d99-840b-a85c75ac397c
 keywords: ["Remote Server Syntax Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: ExposureSettings element
 description: The required ExposureSettings element contains individual adjustment values that the WSD Scan Service should apply to the image data after acquisition.
-ms.assetid: 3d886178-da25-4f72-b4d3-7ae61308e459
 keywords: ["ExposureSettings element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DIF_REMOVE
 description: DIF_REMOVE
-ms.assetid: 14429756-c059-46d7-bd1c-0ae57d1ec8b5
 keywords: ["DIF_REMOVE Device and Driver Installation"]
 topic_type:
 - apiref

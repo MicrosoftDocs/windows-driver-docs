@@ -1,7 +1,6 @@
 ---
 title: File Open Source File
 description: File Open Source File
-ms.assetid: 27007865-7517-40df-a30a-26ecf3cec9f5
 keywords: ["File Open Source File", "source debugging, File Open Source File"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

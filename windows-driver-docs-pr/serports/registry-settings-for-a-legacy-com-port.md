@@ -1,7 +1,6 @@
 ---
 title: Registry Settings for a Legacy COM Port
 description: Registry Settings for a Legacy COM Port
-ms.assetid: 043ac1f5-eeb1-4828-8417-b3c6d76b4322
 keywords:
 - Serial driver WDK , COM ports
 - COM ports WDK serial devices

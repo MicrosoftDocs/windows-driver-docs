@@ -1,7 +1,6 @@
 ---
 title: Invoking a Device Properties Dialog Box from Command-line Prompt
 description: Invoking a Device Properties Dialog Box from a Command-line Prompt
-ms.assetid: 616c93ee-8360-4bab-8e08-48a55cd617f1
 keywords:
 - device properties dialog box WDK device installations
 - invoking device properties dialog box

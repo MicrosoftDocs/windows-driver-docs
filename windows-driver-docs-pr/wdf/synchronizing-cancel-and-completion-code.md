@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Cancel and Completion Code
 description: Synchronizing Cancel and Completion Code
-ms.assetid: 4c302fc5-cb14-46e5-80c8-8dbf62486905
 keywords:
 - request processing WDK KMDF , canceling requests
 - I/O requests WDK KMDF , canceling

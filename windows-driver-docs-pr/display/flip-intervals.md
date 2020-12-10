@@ -1,7 +1,6 @@
 ---
 title: Flip Intervals
 description: Flip Intervals
-ms.assetid: 9372d63c-e2a7-4f70-a4f0-c50df9183f75
 keywords:
 - drawing page flips WDK DirectDraw , intervals
 - DirectDraw flipping WDK Windows 2000 display , intervals

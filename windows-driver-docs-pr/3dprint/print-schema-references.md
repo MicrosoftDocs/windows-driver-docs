@@ -1,7 +1,6 @@
 ---
 title: Print schema references
 description: The following list provides references and links to industry standards, specifications, and technical articles.
-ms.assetid: D25FB8AF-D227-4940-8740-D1AFF9BE3AC3
 ms.date: 05/18/2020
 ms.localizationpriority: medium
 ---

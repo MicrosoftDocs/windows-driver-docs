@@ -1,7 +1,6 @@
 ---
 title: ChildListConfiguration rule (kmdf)
 description: The ChildListConfiguration rule specifies that drivers that support Dynamic Enumeration must call WdfFdoInitSetDefaultChildListConfig before calling the WdfDeviceCreate function.
-ms.assetid: B6A6A775-F2FC-4E73-9B4A-D29BF8CCB649
 ms.date: 05/21/2018
 keywords: ["ChildListConfiguration rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Reporting NDIS Selective Suspend Capabilities
 description: Reporting NDIS Selective Suspend Capabilities
-ms.assetid: 8A738A51-D116-4DDC-96B7-17D046B6890D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

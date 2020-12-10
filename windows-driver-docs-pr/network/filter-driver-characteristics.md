@@ -1,7 +1,6 @@
 ---
 title: Filter Driver Characteristics
 description: Filter Driver Characteristics
-ms.assetid: 95e302c1-687e-4a30-b3bc-9d272c688cba
 keywords:
 - filter drivers WDK networking , characteristics
 - NDIS filter drivers WDK , characteristics

@@ -1,7 +1,6 @@
 ---
 title: Sample Print Provider
 description: Sample Print Provider
-ms.assetid: fdb6979a-3566-4280-bee7-b58cc39af6f8
 keywords:
 - print providers WDK , samples
 ms.date: 04/20/2017

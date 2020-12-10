@@ -1,7 +1,6 @@
 ---
 title: WDF Drivers Tab
 description: This topic provides detailed information about WDF Verifier's WDF Drivers page.
-ms.assetid: e1e1d92e-1173-48ef-b985-688ebfb08bdc
 keywords:
 - WDF Verifier control application WDK
 - WDF Verifier WDK

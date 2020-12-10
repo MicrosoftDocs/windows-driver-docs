@@ -1,7 +1,6 @@
 ---
 title: StoragePortClassGuid
 description: StoragePortClassGuid
-ms.assetid: 62175051-2453-411a-b033-f750376a703c
 keywords: ["StoragePortClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

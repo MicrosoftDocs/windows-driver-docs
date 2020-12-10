@@ -1,7 +1,6 @@
 ---
 title: Array Template Data Types
 description: Array Template Data Types
-ms.assetid: d6be4ec3-1980-4e55-bd52-5249cd93deb8
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , compound

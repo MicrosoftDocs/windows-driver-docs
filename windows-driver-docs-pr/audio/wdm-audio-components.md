@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Components
 description: WDM Audio Components
-ms.assetid: 629d32ff-56ec-4128-9974-d56fd8336766
 keywords:
 - WDM audio components WDK
 - audio components WDK

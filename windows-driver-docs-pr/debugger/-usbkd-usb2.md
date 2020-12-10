@@ -1,7 +1,6 @@
 ---
 title: usbkd.usb2
 description: The usbkd.usb2 command displays a list of USB endpoints that have USB 2.0 scheduling information.
-ms.assetid: 48DC685A-3624-4DAD-8077-FB7C4BE4BE93
 keywords: ["usbkd.usb2 Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

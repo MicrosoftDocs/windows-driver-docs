@@ -1,7 +1,6 @@
 ---
 title: GDL Directives for Namespaces
 description: GDL Directives for Namespaces
-ms.assetid: 8927291e-60d8-4a7b-9393-8650c142227d
 keywords:
 - directives WDK GDL , namespace directives
 - source files WDK GDL , namespace directives

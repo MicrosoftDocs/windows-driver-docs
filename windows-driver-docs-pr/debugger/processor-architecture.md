@@ -1,7 +1,6 @@
 ---
 title: Processor Architecture
 description: Processor Architecture
-ms.assetid: 96006d9c-86d3-4744-b100-754e7041d6e4
 keywords: ["processor architecture", "architecture of processors", "CPU architecture"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

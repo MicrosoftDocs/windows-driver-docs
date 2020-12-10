@@ -1,7 +1,6 @@
 ---
 title: VJoyD Minidriver Override
 description: VJoyD Minidriver Override
-ms.assetid: a77d2464-7785-44a9-b527-2224d261feac
 keywords:
 - joysticks WDK HID , overrides
 - virtual joystick drivers WDK HID , overrides

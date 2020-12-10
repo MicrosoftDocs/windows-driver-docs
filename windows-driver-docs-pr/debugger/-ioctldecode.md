@@ -1,7 +1,6 @@
 ---
 title: ioctldecode
 description: The ioctldecode extension displays the Device Type, Required Access, Function Code and Transfer Type as specified by the given IOCTL code. 
-ms.assetid: 50B12034-E5C7-43F2-A31E-AAC824A05D46
 keywords: ["ioctldecode Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

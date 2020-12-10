@@ -112,6 +112,8 @@
         href: testing-BTP-hw-audio.md
       - name: "BM-64-EVB board"
         href: testing-BTP-hw-bm64.md
+      - name: "Human Device Adapter"
+        href: testing-BTP-human-device-adapter.md
     - name: "BTP Tests"
       items:
       - name: "Currently Available BTP Tests"

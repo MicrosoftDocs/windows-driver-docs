@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_ESCALANTE_PLATFORM_DRIVER
 description: KSCATEGORY_ESCALANTE_PLATFORM_DRIVER
-ms.assetid: 3d017b2d-449a-4433-aa29-f70695610ace
 keywords: ["KSCATEGORY_ESCALANTE_PLATFORM_DRIVER Device and Driver Installation"]
 topic_type:
 - apiref

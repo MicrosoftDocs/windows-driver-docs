@@ -1,5 +1,4 @@
 ---
-ms.assetid: C5CD87E3-26C0-48AA-B75E-1EFFB0B5519D
 title: Creating a Driver From Existing Source Files
 description: The WDK is integrated with Microsoft Visual Studio, and uses the same compiler and build tools that you use to build Visual Studio solutions and projects.
 ms.date: 04/20/2017

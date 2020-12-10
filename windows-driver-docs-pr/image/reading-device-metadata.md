@@ -1,7 +1,6 @@
 ---
 title: Reading Device Metadata
 description: Reading Device Metadata
-ms.assetid: 402de9de-8bfe-4cc2-9b8e-06e0ad925eb1
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

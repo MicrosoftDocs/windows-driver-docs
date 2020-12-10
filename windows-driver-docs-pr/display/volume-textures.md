@@ -1,7 +1,6 @@
 ---
 title: Volume Textures
 description: Volume Textures
-ms.assetid: 11a079f7-d809-48a9-85e8-aa9fb4305075
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , volume textures
 - volume textures WDK DirectX 8.0

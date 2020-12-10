@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi Direct
 description: Wi-Fi Direct
-ms.assetid: 52D09B1D-5832-48C9-B200-46B8DDC14BE5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration
 description: Learn about the OUTPUTDUPL\_CONTEXT\_DEBUG\_STATUS enumeration, which is reserved for system use. Do not use in your driver.
-ms.assetid: 3720b101-cac4-4f81-ae71-088ab03f8756
 keywords: ["OUTPUTDUPL_CONTEXT_DEBUG_STATUS enumeration Display Devices"]
 topic_type:
 - apiref

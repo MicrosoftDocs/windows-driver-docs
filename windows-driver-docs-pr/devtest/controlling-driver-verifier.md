@@ -1,7 +1,6 @@
 ---
 title: Controlling Driver Verifier
 description: Controlling Driver Verifier
-ms.assetid: c829023c-725a-4e55-9844-5cdb6ef222e0
 keywords:
 - Driver Verifier WDK , controlling
 - Driver Verifier Manager

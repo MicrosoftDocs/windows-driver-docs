@@ -1,7 +1,6 @@
 ---
 title: Validating and Certifying Hardware Codecs
 description: Validating and certifying hardware codecs
-ms.assetid: 8cf96aac-78ba-41f0-b9d0-48948f704262
 keywords:
 - hardware codecs WDK AVStream , validating
 - hardware codecs WDK AVStream , certifying

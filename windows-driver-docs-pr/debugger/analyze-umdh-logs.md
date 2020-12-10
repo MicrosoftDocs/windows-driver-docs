@@ -1,7 +1,6 @@
 ---
 title: Analyze UMDH Logs
 description: Use the following commands to analyze User-Mode Dump Heap (UMDH) logs that were created by running UMDH with the syntax described in Analyze a Running Process.
-ms.assetid: 66e559b2-0335-4a1d-ba6c-dde6b826dc5f
 keywords: ["Analyze UMDH Logs Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

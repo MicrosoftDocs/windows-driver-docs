@@ -1,7 +1,6 @@
 ---
 title: Evaluating Changes to Network Configuration
 description: Evaluating Changes to Network Configuration
-ms.assetid: 7e73fbb4-8d7d-44fb-96c9-aa748c207553
 keywords:
 - notify objects WDK networking , change processing
 - network notify objects WDK , change processing

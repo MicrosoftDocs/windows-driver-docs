@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_DESKEW\_Y
 description: The WIA\_IPS\_DESKEW\_Y property, together with the WIA\_IPS\_DESKEW\_X property, describes the upper two corners of a skewed image. The WIA minidriver creates and maintains this property.
-ms.assetid: 25aca00f-4048-4784-90a1-f1ad8c2de16a
 keywords: ["WIA_IPS_DESKEW_Y Imaging Devices"]
 topic_type:
 - apiref

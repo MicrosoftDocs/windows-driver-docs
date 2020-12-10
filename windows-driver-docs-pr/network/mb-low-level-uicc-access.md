@@ -1,7 +1,6 @@
 ---
 title: MB low level UICC access
 description: MB low level UICC access
-ms.assetid: AD0E9F20-9C95-4102-94EF-054D45E2C597
 keywords:
 - MB low level UICC access, Mobile Broadband low level UICC access, Mobile Broadband miniport driver low level UICC, MB UICC ATR, MB UICC Answer to Reset, MB UICC open channel, MB UICC close channel, MB UICC APDU, MB UICC terminal capability, MB UICC reset
 ms.date: 12/05/2017

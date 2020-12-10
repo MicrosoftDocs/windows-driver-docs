@@ -1,7 +1,6 @@
 ---
 title: Windows Sockets SPI Functions Required for SANs
 description: Windows Sockets SPI Functions Required for SANs
-ms.assetid: b41bd7e0-bb6c-4933-a5d0-18e4d067601b
 keywords:
 - SAN service providers WDK , required functions
 - functions WDK SANs

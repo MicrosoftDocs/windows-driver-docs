@@ -1,7 +1,6 @@
 ---
 title: JobOriginatingUserName element
 description: The required JobOriginatingUserName element specifies the name of the user who submitted the scan job.
-ms.assetid: ba2dd472-1ac0-40bd-816c-02abc093b6ed
 keywords: ["JobOriginatingUserName element Imaging Devices"]
 topic_type:
 - apiref

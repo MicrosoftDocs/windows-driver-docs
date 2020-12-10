@@ -1,7 +1,6 @@
 ---
 title: Changing the Friendly Name of a Boot Entry
 description: Changing the Friendly Name of a Boot Entry
-ms.assetid: 28f4f449-9027-453e-877a-d656539296c0
 keywords:
 - names WDK boot options
 - friendly names WDK boot options

@@ -1,7 +1,6 @@
 ---
 title: Power Framework Delay Fuzzing
 description: The Power Framework Delay Fuzzing option randomizes thread schedules to help detect concurrency bugs in drivers that use the power management framework (PoFx).
-ms.assetid: A33DEA5B-4758-456A-B4CF-F036CB511A1F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

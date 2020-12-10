@@ -1,7 +1,6 @@
 ---
 title: Handling Notifications
 description: Handling Notifications
-ms.assetid: ace7f59d-fe9f-4810-91db-2cf20c9591cf
 keywords: ["filtering registry calls WDK kernel , notification options", "registry filtering drivers WDK kernel , notification options", "notifications WDK filter registry call", "filtering registry calls WDK kernel , monitoring calls", "registry filtering drivers WDK kernel , monitoring calls", "filtering registry calls WDK kernel , blocking calls", "registry filtering drivers WDK kernel , blocking calls", "filtering registry calls WDK kernel , modifying calls", "registry filtering drivers WDK kernel , modifying calls", "blocking calls WDK filter registry call", "monitoring registry calls"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

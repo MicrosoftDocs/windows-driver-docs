@@ -1,7 +1,6 @@
 ---
 title: ENCAPIPARAM\_BITRATE
 description: ENCAPIPARAM\_BITRATE
-ms.assetid: a0fba9b3-7ce3-407d-b53f-fd54a50cbdcb
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

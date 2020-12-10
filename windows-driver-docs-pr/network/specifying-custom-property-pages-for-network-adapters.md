@@ -1,7 +1,6 @@
 ---
 title: Specifying Custom Property Pages for Network Adapters
 description: Specifying Custom Property Pages for Network Adapters
-ms.assetid: c9d54e9b-3d11-46d1-9c24-86a802c64a7a
 keywords:
 - add-registry-sections WDK networking , custom property pages
 - custom property pages WDK networking

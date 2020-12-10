@@ -1,7 +1,6 @@
 ---
 title: Handling Packet Coalescing Receive Filters
 description: Handling Packet Coalescing Receive Filters
-ms.assetid: 83FF780F-6B8F-4222-90F0-42037FFF7653
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

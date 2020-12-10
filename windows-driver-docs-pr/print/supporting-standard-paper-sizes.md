@@ -1,7 +1,6 @@
 ---
 title: Supporting Standard Paper Sizes
 description: Supporting Standard Paper Sizes
-ms.assetid: 04f8fbdb-88f8-4595-b5d2-74315c02bb41
 keywords:
 - standard paper sizes WDK Unidrv
 ms.date: 04/20/2017

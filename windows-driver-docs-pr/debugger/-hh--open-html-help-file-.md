@@ -1,7 +1,6 @@
 ---
 title: .hh (Open HTML Help File)
 description: The .hh command opens the Debugging Tools for Windows documentation.
-ms.assetid: 6c6d5b33-ad54-4325-93d7-ed63f9f012e8
 keywords: [".hh (Open HTML Help File) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

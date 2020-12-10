@@ -1,7 +1,6 @@
 ---
 title: WaveRT Miniport Driver
 description: WaveRT Miniport Driver
-ms.assetid: 154dc921-424f-4021-8f17-5482ceef99a8
 ms.date: 10/01/2020
 ms.localizationpriority: medium
 ---

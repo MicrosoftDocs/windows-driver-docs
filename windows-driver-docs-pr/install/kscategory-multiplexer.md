@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_MULTIPLEXER
 description: KSCATEGORY_MULTIPLEXER
-ms.assetid: 3023769a-9b98-4c12-90b1-f83294a45ab0
 keywords: ["KSCATEGORY_MULTIPLEXER Device and Driver Installation"]
 topic_type:
 - apiref

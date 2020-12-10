@@ -1,7 +1,6 @@
 ---
 title: Breakpoint Syntax
 description: This topic covers breakpoint syntax
-ms.assetid: 86228b87-9ca3-4d0c-be9e-63446ac6ce31
 keywords: debugger, breakpoints on methods, breakpoints, syntax rules for commands, b (breakpoint identifier), literal MASM identifier, templated functions
 ms.date: 05/23/2017
 ms.localizationpriority: medium

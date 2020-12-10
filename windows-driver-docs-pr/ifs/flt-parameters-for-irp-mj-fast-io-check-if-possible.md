@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_FAST_IO_CHECK_IF_POSSIBLE union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_FAST\_IO\_CHECK\_IF\_POSSIBLE.
-ms.assetid: 1de62b03-4073-40d6-9094-609431e19e5b
 keywords: ["FLT_PARAMETERS for IRP_MJ_FAST_IO_CHECK_IF_POSSIBLE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

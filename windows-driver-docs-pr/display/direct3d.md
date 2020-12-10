@@ -1,7 +1,6 @@
 ---
 title: Direct3D DDI
 description: Direct3D DDI
-ms.assetid: 5b6f7c06-7f54-4fc4-9b94-5fb425b5b3c8
 keywords:
 - Direct3D WDK Windows 2000 display
 - Direct3D WDK Windows 2000 display , about Direct3D

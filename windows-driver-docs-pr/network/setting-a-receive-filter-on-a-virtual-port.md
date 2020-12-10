@@ -1,7 +1,6 @@
 ---
 title: Setting a Receive Filter on a Virtual Port
 description: Setting a Receive Filter on a Virtual Port
-ms.assetid: F0137D59-1701-4DFC-BB30-27E477FC0706
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSMETHODSETID\_StreamAllocator
 description: KSMETHODSETID\_StreamAllocator
-ms.assetid: 21097c03-9299-41a6-a0de-48be72f38778
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

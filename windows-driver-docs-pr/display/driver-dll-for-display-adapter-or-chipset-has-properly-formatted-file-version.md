@@ -1,7 +1,6 @@
 ---
 title: File Version Formatting for Display Driver DLLs
 description: This topic describes the proper formatting for display driver DLLs for display adapters and chipsets.
-ms.assetid: E39B2A48-D3F8-4EA5-BCF3-23B1053E8D96
 ms.date: 12/06/2018
 ms.localizationpriority: medium
 ms.custom: seodec18

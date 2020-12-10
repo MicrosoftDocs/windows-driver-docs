@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_UICC_RESET_INFO
 description: NDIS_STATUS_WWAN_UICC_RESET_INFO
-ms.assetid: ADA3ADC9-82AD-423A-ABA4-902EAF5F5C74
 keywords:
 - NDIS_STATUS_WWAN_UICC_RESET_INFO, UICC reset status notification, Mobile Broadband UICC reset status notification, MB UICC reset status notification
 ms.date: 08/18/2017

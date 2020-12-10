@@ -1,7 +1,6 @@
 ---
 title: Deinterlacing and Frame-Rate Conversion
 description: Deinterlacing and Frame-Rate Conversion
-ms.assetid: 73435a68-532a-4a15-b2b9-a6165cadb8fe
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , frame-rate conversion
 - Video Acceleration WDK DirectX , frame-rate conversion

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST
 description: WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST is a TLV that contains a list of secondary device types.
-ms.assetid: 278F3D2B-6729-4F7A-B3B2-B12D79C04530
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SECONDARY_DEVICE_TYPE_LIST Network Drivers Starting with Windows Vista

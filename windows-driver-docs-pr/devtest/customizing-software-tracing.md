@@ -1,7 +1,6 @@
 ---
 title: Customizing Software Tracing
 description: Customizing Software Tracing
-ms.assetid: ae547a51-b8a5-4e61-8da4-24aa247a360d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

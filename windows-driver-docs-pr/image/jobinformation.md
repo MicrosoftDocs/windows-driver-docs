@@ -1,7 +1,6 @@
 ---
 title: JobInformation element
 description: The optional JobInformation element describes the intended use of the job.
-ms.assetid: 0e5d41a0-49df-43db-a2e6-3639e60d2378
 keywords: ["JobInformation element Imaging Devices"]
 topic_type:
 - apiref

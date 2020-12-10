@@ -1,7 +1,6 @@
 ---
 title: Migrating to the Windows Display Driver Model (WDDM)
 description: Migrating to the Windows Display Driver Model (WDDM)
-ms.assetid: 7f926aa7-1698-4a4e-a1ce-54a316bdc0cd
 keywords:
 - display driver model WDK Windows Vista , migrating
 - Windows Vista display driver model WDK , migrating

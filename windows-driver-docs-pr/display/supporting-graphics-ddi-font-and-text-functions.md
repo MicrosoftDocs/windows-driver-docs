@@ -1,7 +1,6 @@
 ---
 title: Supporting Graphics DDI Font and Text Functions
 description: Supporting Graphics DDI Font and Text Functions
-ms.assetid: c8abf3bd-7a5a-4a48-988e-a1de1b426656
 keywords:
 - fonts WDK graphics
 - GDI WDK Windows 2000 display , fonts

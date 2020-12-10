@@ -1,7 +1,6 @@
 ---
 title: Installing Core System Components for an Audio Adapter
 description: Installing Core System Components for an Audio Adapter
-ms.assetid: fc14867e-cae8-4381-bcd3-ec2230050cf6
 keywords:
 - audio adapters WDK , system components
 - adapter drivers WDK audio , system components

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xDC DRIVER_INVALID_STACK_ACCESS
 description: The DRIVER_INVALID_STACK_ACCESS bug check has a value of 0x000000DC. This indicates that a driver accessed a stack address that lies below the stack pointer of the stack's thread.
-ms.assetid: efc2201f-b2e5-458b-a2b0-26abaa46f1a4
 keywords: ["Bug Check 0xDC DRIVER_INVALID_STACK_ACCESS", "DRIVER_INVALID_STACK_ACCESS"]
 ms.date: 05/23/2017
 topic_type:

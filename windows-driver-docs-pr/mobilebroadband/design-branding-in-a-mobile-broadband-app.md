@@ -1,7 +1,6 @@
 ---
 title: Design branding in a mobile broadband app
 description: Design branding in a mobile broadband app
-ms.assetid: 0badd121-ce1d-4be2-a9f0-e062631c00c8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Controlling the Target
 description: Controlling the Target
-ms.assetid: bc08b925-2a55-4af6-a5e2-949637a4c7ee
 keywords: ["controlling the target", "controlling the target, overview", "starting and stopping the target", "execution of the target"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

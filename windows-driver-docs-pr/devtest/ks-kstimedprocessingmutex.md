@@ -1,7 +1,6 @@
 ---
 title: KsTimedProcessingMutex rule ()
 description: The KsTimedProcessingMutex rule specifies that a KS miniport driver should not hold a processing mutex for more than 100 milliseconds.
-ms.assetid: 18246AAE-6328-4171-973E-4C762CF719AE
 ms.date: 05/21/2018
 keywords: ["KsTimedProcessingMutex rule ()"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Initializing a Miniport Driver
 description: Initializing a Miniport Driver
-ms.assetid: cda2437c-b292-4d21-b200-89c7b55cd46c
 keywords:
 - miniport drivers WDK networking , initializing
 - initializing miniport drivers

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_PICT\_WIDTH
 description: The WIA\_DPC\_PICT\_WIDTH property describes the width, in pixels, to use for newly captured images.
-ms.assetid: 08ff2ef6-1c65-4a46-bf17-f7c5126279d4
 keywords: ["WIA_DPC_PICT_WIDTH Imaging Devices"]
 topic_type:
 - apiref

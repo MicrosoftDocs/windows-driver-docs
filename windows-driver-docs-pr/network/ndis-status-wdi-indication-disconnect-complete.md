@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_DISCONNECT_COMPLETE
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_DISCONNECT_COMPLETE to indicate the completion of OID_WDI_TASK_DISCONNECT.
-ms.assetid: 07f14f77-04e9-4991-9a50-9e2d13afcfe9
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_DISCONNECT_COMPLETE Network Drivers Starting with Windows Vista

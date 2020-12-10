@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xD9 LOCKED_PAGES_TRACKER_CORRUPTION
 description: The LOCKED_PAGES_TRACKER_CORRUPTION bug check has a value of 0x000000D9. This indicates that the internal locked-page tracking structures have been corrupted.
-ms.assetid: 81011ce6-159c-448f-9f68-7b1eb949ff68
 keywords: ["Bug Check 0xD9 LOCKED_PAGES_TRACKER_CORRUPTION", "LOCKED_PAGES_TRACKER_CORRUPTION"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Release-Signing Driver Packages
 description: Release-Signing Driver Packages
-ms.assetid: 57125c3b-55f0-4b60-b4d9-1408e26faccb
 keywords:
 - driver signing WDK , driver packages
 - signing drivers WDK , driver packages

@@ -1,7 +1,6 @@
 ---
 title: DuplexUnit
 description: DuplexUnit
-ms.assetid: cad41b5a-b594-474a-9ec4-27b4550882cb
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

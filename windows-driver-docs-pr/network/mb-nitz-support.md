@@ -1,7 +1,6 @@
 ---
 title: MB NITZ support
 description: MB NITZ support
-ms.assetid: 94FE0380-C5EA-49F7-A649-0524C27F1A35
 keywords:
 - MB NITZ support, Mobile Broadband NITZ support
 ms.date: 03/13/2019

@@ -1,7 +1,6 @@
 ---
 title: Monitor Class Function Driver
 description: Monitor Class Function Driver
-ms.assetid: d16c3dcc-2fbf-4579-8962-1b89e6e7b347
 keywords:
 - multiple monitors WDK
 - Monitor class function drivers WDK

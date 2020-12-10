@@ -1,7 +1,6 @@
 ---
 title: Changing Bindings for a Component
 description: Changing Bindings for a Component
-ms.assetid: 2e59a160-d8d9-4739-a8fa-919760f8eb05
 keywords:
 - notify objects WDK networking , binding changes
 - network notify objects WDK , binding changes

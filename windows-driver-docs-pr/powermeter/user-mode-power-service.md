@@ -1,7 +1,6 @@
 ---
 title: User-Mode Power Service
 description: User-Mode Power Service
-ms.assetid: 57f3affd-18cc-440c-ba18-9ba89fd3c84f
 keywords:
 - Power Metering and Budgeting WDK , User-Mode Power Service
 - User-Mode Power Service WDK Power Meter

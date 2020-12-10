@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_SHARPNESS
 description: The WIA\_DPC\_SHARPNESS property indicates the perceived sharpness of a captured image.
-ms.assetid: 6fb78506-f4fe-481c-b1ea-0f4fedcdca1a
 keywords: ["WIA_DPC_SHARPNESS Imaging Devices"]
 topic_type:
 - apiref

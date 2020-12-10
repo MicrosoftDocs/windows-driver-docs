@@ -1,7 +1,6 @@
 ---
 title: GDL Programming Guide
 description: GDL Programming Guide
-ms.assetid: ca524040-453f-4ea2-991c-5d031b3725e7
 keywords:
 - GDL WDK , programming with GDL
 - programming with GDL WDK

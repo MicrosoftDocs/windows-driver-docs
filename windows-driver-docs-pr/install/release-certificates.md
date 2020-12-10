@@ -1,7 +1,6 @@
 ---
 title: Release Certificates
 description: Release Certificates
-ms.assetid: 61bd5002-b3b6-4f11-b0c2-80eeaf2fec39
 keywords:
 - public release driver signing WDK , release certificates
 - release signing WDK , release certificates

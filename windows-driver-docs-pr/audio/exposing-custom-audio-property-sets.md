@@ -1,7 +1,6 @@
 ---
 title: Exposing Custom Audio Property Sets
 description: Exposing Custom Audio Property Sets
-ms.assetid: dc45f0fb-f462-4d20-967a-0665e18019e4
 keywords:
 - hardware acceleration WDK DirectSound , custom audio property sets
 - custom audio property sets WDK

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_DefaultService
 description: DEVPKEY_DeviceClass_DefaultService
-ms.assetid: 19d1a9ea-3bde-4230-af1a-b67b5a29e6f4
 keywords: ["DEVPKEY_DeviceClass_DefaultService Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Controlling Threads and Processes
 description: Controlling Threads and Processes
-ms.assetid: 6182ca34-ee5e-47e9-82fe-29266397e3a8
 keywords: ["Debugger Engine API, threads and processes"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Indicating Received Data from a Miniport Driver
 description: Indicating Received Data from a Miniport Driver
-ms.assetid: da5d31e9-5212-4c6c-bac2-81432a46c303
 keywords:
 - receiving data WDK networking
 - NdisMIndicateReceiveNetBufferLists

@@ -1,7 +1,6 @@
 ---
 title: Implementing a Cancel Routine
 description: Implementing a Cancel Routine
-ms.assetid: 243b623b-317c-4084-a753-940c91c4cc50
 keywords: ["canceling IRPs, guidelines", "Cancel routines, guidelines"]
 ms.date: 05/09/2018
 ms.localizationpriority: medium

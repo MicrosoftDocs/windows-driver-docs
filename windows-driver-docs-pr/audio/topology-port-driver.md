@@ -1,7 +1,6 @@
 ---
 title: Topology Port Driver
 description: Topology Port Driver
-ms.assetid: f671f557-552e-4575-babf-869c8c0b8f08
 keywords:
 - Topology port driver WDK audio
 - PortCls WDK audio , port drivers

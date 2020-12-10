@@ -1,7 +1,6 @@
 ---
 title: NFC architecture
 description: The high-level architecture diagram of the NFC stack on Windows is shown further below. NFC UMDF drivers will implement the DDIs described in this specification.
-ms.assetid: 0FA2BE92-05E1-40D1-AD1D-AE9ADF425E67
 keywords:
 - NFC
 - near field communications

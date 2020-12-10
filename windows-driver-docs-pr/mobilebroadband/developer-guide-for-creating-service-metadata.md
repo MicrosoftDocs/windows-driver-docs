@@ -1,7 +1,6 @@
 ---
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
-ms.assetid: 2d250bce-2dd2-4bd8-aa0f-432dde7783e1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

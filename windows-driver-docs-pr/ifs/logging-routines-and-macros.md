@@ -1,7 +1,6 @@
 ---
 title: Logging Routines and Macros
 description: Logging Routines and Macros
-ms.assetid: 343605bc-7992-4e9c-a9af-f57bb958a38b
 keywords:
 - RDBSS WDK file systems , logging
 - Redirected Drive Buffering Subsystem WDK file systems , logging

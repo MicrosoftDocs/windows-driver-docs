@@ -1,7 +1,6 @@
 ---
 title: System-Defined IOCTL_VIDEO_XXX Requests
 description: System-Defined IOCTL_VIDEO_XXX Requests
-ms.assetid: 30309de1-c991-402d-a701-7e88c3367d24
 keywords:
 - video miniport drivers WDK Windows 2000 , processing requests
 - request processing WDK video miniport

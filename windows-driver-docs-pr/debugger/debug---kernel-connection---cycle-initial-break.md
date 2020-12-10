@@ -1,7 +1,6 @@
 ---
 title: Debug Kernel Connection Cycle Initial Break
 description: Debug Kernel Connection Cycle Initial Break
-ms.assetid: e4dbb810-d9b3-4721-89ec-af4b5e244cc0
 keywords: ["Debug Kernel Connection Cycle Initial Break"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

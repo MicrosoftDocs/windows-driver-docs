@@ -1,7 +1,6 @@
 ---
 title: Windows Filtering Platform Callout Driver Topics
 description: Windows Filtering Platform Callout Driver Topics
-ms.assetid: 494dd2be-ac1b-432b-8966-278534eca162
 keywords:
 - Windows Filtering Platform callout drivers WDK
 - callout drivers WDK Windows Filtering Platform

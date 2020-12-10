@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS is a TLV that contains IPv6 NS protocol offload parameters.
-ms.assetid: 0385449B-82C6-44B4-BBD3-A708ADE54AC4
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_PROTOCOL_OFFLOAD_IPv6NS Network Drivers Starting with Windows Vista

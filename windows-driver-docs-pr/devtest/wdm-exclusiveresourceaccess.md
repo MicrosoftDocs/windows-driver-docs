@@ -1,7 +1,6 @@
 ---
 title: ExclusiveResourceAccess rule (wdm)
 description: The ExclusiveResourceAccess rule specifies that the driver calls ExAcquireResourceExclusiveLite before calling ExReleaseResourceLite or ExReleaseResourceForThreadLite and specifies that the driver calls ExReleaseResourceLite or ExReleaseResourceForThreadLite before any subsequent calls to ExAcquireResourceExclusiveLite.
-ms.assetid: 3de539c0-5af2-4ced-8111-44918f4effc4
 ms.date: 05/21/2018
 keywords: ["ExclusiveResourceAccess rule (wdm)"]
 topic_type:

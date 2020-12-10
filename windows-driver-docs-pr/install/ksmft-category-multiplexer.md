@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_MULTIPLEXER
 description: KSMFT_CATEGORY_MULTIPLEXER
-ms.assetid: 79849eeb-7e5d-45bb-a0e4-cd6f413aa3dc
 keywords: ["KSMFT_CATEGORY_MULTIPLEXER Device and Driver Installation"]
 topic_type:
 - apiref

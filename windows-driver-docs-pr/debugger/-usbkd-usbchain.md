@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbchain
 description: The usbkd.usbchain command displays a USB device chain starting at a specified PDO, and going back to the root hub.
-ms.assetid: 0D69E29E-3886-436F-B5EE-E4F297D9CE36
 keywords: ["usbkd.usbchain Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

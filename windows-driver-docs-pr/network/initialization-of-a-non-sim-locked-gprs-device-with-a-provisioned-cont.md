@@ -1,7 +1,6 @@
 ---
 title: Initializing a non-SIM-locked GPRS device (provisioned context)
 description: Initialization of a Non-SIM-Locked GPRS Device with a Provisioned Context
-ms.assetid: 0bbd4842-72ad-445b-9f28-b28e8740f263
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Analyze a Running Process
 description: Use the following commands to record and analyze the heap memory allocations in a running process. This analysis focuses on stack traces.
-ms.assetid: 65a8b510-f5f1-4622-87ff-b44d5855787d
 keywords: ["Analyze a Running Process Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

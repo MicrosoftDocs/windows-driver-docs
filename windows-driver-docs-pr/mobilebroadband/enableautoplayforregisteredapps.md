@@ -1,7 +1,6 @@
 ---
 title: EnableAutoPlayForRegisteredApps
 description: EnableAutoPlayForRegisteredApps
-ms.assetid: 8f4b1a6a-262a-4ebc-808b-8e998fd78f99
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

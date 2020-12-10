@@ -1,7 +1,6 @@
 ---
 title: Understanding When Remove IRPs Are Issued
 description: Understanding When Remove IRPs Are Issued
-ms.assetid: e92e30ce-ca0d-4f00-b54a-778bafba15b3
 keywords: ["remove IRPs WDK PnP", "IRPs WDK PnP", "I/O request packets WDK PnP"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

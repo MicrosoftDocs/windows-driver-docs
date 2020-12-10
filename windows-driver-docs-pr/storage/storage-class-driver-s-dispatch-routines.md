@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's Dispatch Routines
 description: Storage Class Driver's Dispatch Routines
-ms.assetid: 99713661-5e99-4110-b369-afc084a2aaef
 keywords:
 - dispatch routines WDK storage
 ms.date: 04/20/2017

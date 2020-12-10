@@ -1,7 +1,6 @@
 ---
 title: HID Usages
 description: HID usages identify the intended use of HID controls and what the controls actually measure.
-ms.assetid: 84fed314-3554-4291-b51c-734d874a4bab
 keywords:
 - Human Interface Devices WDK , usages
 - HID WDK , usages

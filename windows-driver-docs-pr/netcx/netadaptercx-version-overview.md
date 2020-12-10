@@ -1,7 +1,6 @@
 ---
 title: NetAdapterCx version overview
 description: This topic lists versions of the Network Adapter WDF Class Extension (NetAdapterCx).
-ms.assetid: 14847DED-FC24-4020-8526-D5F3A85882EB
 keywords:
 - Version overview Network Adapter Class Extension, version overview NetAdapterCx, version overview NetCx
 ms.date: 11/04/2019

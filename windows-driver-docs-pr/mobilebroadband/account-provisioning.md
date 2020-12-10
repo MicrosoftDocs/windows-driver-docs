@@ -1,7 +1,6 @@
 ---
 title: Account provisioning
 description: Account provisioning
-ms.assetid: 3ffcd769-253f-4918-8095-a9206445a201
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -116,7 +115,7 @@ Defines subscriber information on the mobile operator network. There are two dif
             <AccessString>contoso.com</AccessString>
             <UserLogonCred>
               <UserName>mbuser</UserName>
-              <Password>mbpass</Password>
+              <Password>[PLACEHOLDER]</Password>
             </UserLogonCred>
           </Context>
         </DefaultProfile>
@@ -264,7 +263,7 @@ This profile configures Windows to connect to an open network and uses Wireless 
       </authEncryption>
       <HotspotProfile xmlns="http://www.microsoft.com/networking/WLAN/HotspotProfile/v1">
         <UserName>WisprUser1</UserName>
-        <Password>password1</Password>
+        <Password>[PLACEHOLDER]</Password>
         <TrustedDomains>
           <TrustedDomain>www.contosoportal.com</TrustedDomain>
         </TrustedDomains>
@@ -414,8 +413,8 @@ Alternatively, the mobile broadband app can provide a new provisioning file at a
 <RefreshParameters>
       <DelayInDays>30</DelayInDays>
       <RefreshURL>https://www.contoso.com/refresh</RefreshURL>
-      <Username>foo</Username>
-      <Password>bar</Password>
+      <Username>[PLACEHOLDER]</Username>
+      <Password>[PLACEHOLDER]</Password>
     </RefreshParameters>
 ```
 
@@ -517,7 +516,7 @@ You can define a provisioning XML document by using an **MBNProfile** section.
               <AccessString>apn</AccessString>
               <UserLogonCred>
                   <UserName>username</UserName>
-                  <Password>password</Password>
+                  <Password>[PLACEHOLDER]</Password>
               </UserLogonCred>
           </Context>
       </DefaultProfile>
@@ -589,8 +588,8 @@ You can use either of the following two ways to enable hotspot authentication:
               </authEncryption>
               <HotspotProfile xmlns="http://www.microsoft.com/networking/WLAN/HotspotProfile/v1">
                 <BasicAuth>
-                  <UserName>Alice</UserName>
-                  <Password>secret</Password>
+                  <UserName>[PLACEHOLDER]</UserName>
+                  <Password>[PLACEHOLDER]</Password>
                 </BasicAuth>
                 <TrustedDomains>
                   <TrustedDomain>hotspot.contoso.com</TrustedDomain>

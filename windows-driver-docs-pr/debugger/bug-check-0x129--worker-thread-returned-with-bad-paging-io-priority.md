@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x129 WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY
 description: The WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY bug check has a value of 0x00000129 that indicates that a worker threads Paging IOPriority was wrongly modified.
-ms.assetid: E662D301-6B4D-4E92-BED3-4BB0731DBFD0
 keywords: ["Bug Check 0x129 WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY", "WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY"]
 ms.date: 05/23/2017
 topic_type:

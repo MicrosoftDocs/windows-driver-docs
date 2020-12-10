@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_CAMERAANGLEOFFSET
 description: The camera angle offset property provides read-only information about the pitch and yaw angle of the camera position. The pitch and yaw angle is defined to be an offset from horizontal and vertical axis.
-ms.assetid: 06F62EB9-DAF7-486F-9940-24EA2224BCB0
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET Streaming Media Devices"]
 topic_type:
 - apiref

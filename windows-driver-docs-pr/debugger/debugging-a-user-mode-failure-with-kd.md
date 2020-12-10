@@ -1,7 +1,6 @@
 ---
 title: Debugging a User-Mode Failure with KD
 description: Debugging a User-Mode Failure with KD
-ms.assetid: c7ef3c04-45bf-4e7b-bcc6-35fe2ffa43d1
 keywords: ["KD, user-mode debugging with KD"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

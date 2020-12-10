@@ -1,7 +1,6 @@
 ---
 title: Realizing Brushes
 description: Realizing Brushes
-ms.assetid: e6a7c008-50b2-4411-b8f8-99a3ca99e9f4
 keywords:
 - GDI WDK Windows 2000 display , patterns
 - graphics drivers WDK Windows 2000 display , patterns

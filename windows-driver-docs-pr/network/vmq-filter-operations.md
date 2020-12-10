@@ -1,7 +1,6 @@
 ---
 title: VMQ Filter Operations
 description: VMQ Filter Operations
-ms.assetid: e8a977e8-2622-461b-9ca0-4834d33d76c0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

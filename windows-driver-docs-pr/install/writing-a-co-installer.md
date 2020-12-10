@@ -1,7 +1,6 @@
 ---
 title: Writing a Co-installer
 description: Writing a Co-installer
-ms.assetid: d5637321-9cff-4b24-8941-d3ca16b0d8c1
 keywords:
 - Device setup WDK device installations , co-installers
 - device installations WDK , co-installers

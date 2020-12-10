@@ -1,7 +1,6 @@
 ---
 title: Surface Team Driver Development Best Practices
 description: Surface Team Driver Development Best Practices - Common mistakes made by driver developers to avoid.
-ms.assetid: f4847954-8e29-48bb-b9ae-873fc7c29b2d
 keywords: ["driver development best practices"]
 ms.date: 08/06/2019
 ms.localizationpriority: medium

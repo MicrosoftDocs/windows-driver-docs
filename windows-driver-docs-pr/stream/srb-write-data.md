@@ -1,7 +1,6 @@
 ---
 title: SRB\_WRITE\_DATA
 description: SRB\_WRITE\_DATA
-ms.assetid: f7867185-3f1b-4c83-b23a-5b2b4ce6e484
 keywords: ["SRB_WRITE_DATA Streaming Media Devices"]
 topic_type:
 - apiref

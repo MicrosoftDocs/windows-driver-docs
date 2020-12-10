@@ -1,7 +1,6 @@
 ---
 title: Reassembled NET_BUFFER_LIST Structures
 description: Reassembled NET_BUFFER_LIST Structures
-ms.assetid: 0bfbfef3-c3ac-4add-b3b8-a4c3a96c8baa
 keywords:
 - NET_BUFFER_LIST
 - reassembled structures WDK networking

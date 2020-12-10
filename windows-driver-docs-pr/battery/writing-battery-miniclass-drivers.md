@@ -1,7 +1,6 @@
 ---
 title: Writing Battery Miniclass Drivers
 description: Writing Battery Miniclass Drivers
-ms.assetid: 4135af1a-1448-46ad-af6f-26ce8aee6b1d
 keywords:
 - battery miniclass drivers WDK
 - battery miniclass drivers WDK , about writing battery miniclass drivers

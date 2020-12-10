@@ -1,7 +1,6 @@
 ---
 title: Quality of Service
 description: Quality of Service
-ms.assetid: e7a4413c-633b-4634-a647-c84b8c97cbea
 keywords:
 - connection-oriented NDIS WDK , quality of service
 - CoNDIS WDK networking , quality of service

@@ -1,7 +1,6 @@
 ---
 title: Registering Callouts with the Filter Engine
 description: Registering Callouts with the Filter Engine
-ms.assetid: a5bade33-e3d1-4e1d-8503-51485097046e
 keywords:
 - Windows Filtering Platform callout drivers WDK , initializing
 - callout drivers WDK Windows Filtering Platform , initializing

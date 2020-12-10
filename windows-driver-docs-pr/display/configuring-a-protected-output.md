@@ -1,7 +1,6 @@
 ---
 title: Configuring a Protected Output
 description: Configuring a Protected Output
-ms.assetid: ff740b37-6e4a-4243-8e83-97dc2a46e3f1
 keywords:
 - OPM WDK display , configuring protected outputs
 ms.date: 04/20/2017

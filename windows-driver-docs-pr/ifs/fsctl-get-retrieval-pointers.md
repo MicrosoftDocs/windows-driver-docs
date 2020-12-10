@@ -1,7 +1,6 @@
 ---
 title: FSCTL_GET_RETRIEVAL_POINTERS control code
 description: The FSCTL\_GET\_RETRIEVAL\_POINTERS control code retrieves a variably sized data structure that describes the allocation and location on disk of a specific file.
-ms.assetid: d77790c8-9fe6-4b36-995e-40a7ea54c18a
 keywords: ["FSCTL_GET_RETRIEVAL_POINTERS control code Installable File System Drivers"]
 topic_type:
 - apiref

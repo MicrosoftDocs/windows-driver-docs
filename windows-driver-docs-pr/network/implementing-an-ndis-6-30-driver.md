@@ -1,7 +1,6 @@
 ---
 title: Implementing an NDIS 6.30 Driver
 description: Implementing an NDIS 6.30 Driver
-ms.assetid: B1B48ED9-10F1-45F2-AA7C-270B637B5A36
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

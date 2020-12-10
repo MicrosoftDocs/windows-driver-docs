@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_FMRX\_ANTENNAENDPOINTID
 description: The KSTOPOLOGY\_ENDPOINTID property contains information about the endpoint to be used as FM antenna.
-ms.assetid: 96B831E8-2372-413E-A9DE-63248F4F5863
 keywords: ["KSPROPERTY_FMRX_ANTENNAENDPOINTID Audio Devices"]
 topic_type:
 - apiref

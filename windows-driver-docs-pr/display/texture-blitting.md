@@ -1,7 +1,6 @@
 ---
 title: Texture Blitting
 description: Texture Blitting
-ms.assetid: 5a2e49c1-e99d-4b0d-a46c-b22b3dcefaf8
 keywords:
 - blt WDK Direct3D
 - texture management WDK Direct3D , blitting

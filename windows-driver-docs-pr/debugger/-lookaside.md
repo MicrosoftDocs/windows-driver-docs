@@ -1,7 +1,6 @@
 ---
 title: lookaside
 description: The lookaside extension displays information about look-aside lists, resets the counters of look-aside lists, or modifies the depth of a look-aside list.
-ms.assetid: ec343563-f293-4ddf-96c8-69fc7b9b4377
 keywords: ["lookaside list", "lookaside Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Configuration Manager
 description: Windows Kernel-Mode Configuration Manager
-ms.assetid: 0499121b-6f0b-464f-b422-610122fb7d3b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

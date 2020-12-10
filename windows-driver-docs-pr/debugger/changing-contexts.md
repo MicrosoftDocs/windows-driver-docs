@@ -1,7 +1,6 @@
 ---
 title: Changing Contexts
 description: Changing Contexts
-ms.assetid: 3690903c-4281-4c65-98b0-00ca22206168
 keywords: ["context", "logon session, context", "context, session context", "session, context", "user sessions", "session"]
 ms.date: 08/02/2018
 ms.localizationpriority: medium

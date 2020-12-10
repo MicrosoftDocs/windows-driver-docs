@@ -1,7 +1,6 @@
 ---
 title: Supplying Battery Device Notification
 description: Supplying Battery Device Notification
-ms.assetid: 7104c43b-84f1-496d-9552-608101f5b379
 keywords:
 - battery notifications WDK
 - battery miniclass drivers WDK , notifications

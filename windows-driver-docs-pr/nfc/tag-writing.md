@@ -1,7 +1,6 @@
 ---
 title: Tag writing
 description: Tag writing
-ms.assetid: 916150D9-9A98-4463-81BE-7F46DF2694F4
 keywords:
 - NFC
 - near field communications

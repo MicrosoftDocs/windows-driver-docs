@@ -1,7 +1,6 @@
 ---
 title: What is the performance cost of software tracing
 description: What is the performance cost of software tracing
-ms.assetid: 4337a619-58aa-4ad2-8873-6cbf5d84d074
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Querying TV Connector and Copy Protection Hardware
 description: Querying TV Connector and Copy Protection Hardware
-ms.assetid: 7812a3ba-42f1-4872-bfe8-08933802f0c1
 keywords:
 - TV connector WDK video miniport
 - copy protection WDK video miniport , querying

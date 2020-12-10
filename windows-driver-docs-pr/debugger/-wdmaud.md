@@ -1,7 +1,6 @@
 ---
 title: wdmaud
 description: Displays a variety of WDM Audio (WDMAud) structures.
-ms.assetid: fa41e3e2-a767-4c8c-9604-e3ea924ac571
 keywords: ["wdmaud Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

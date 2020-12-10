@@ -1,7 +1,6 @@
 ---
 title: Conditional Metadata
 description: Conditional Metadata
-ms.assetid: A1C223AB-E9BB-480e-B9ED-75989FD34479
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

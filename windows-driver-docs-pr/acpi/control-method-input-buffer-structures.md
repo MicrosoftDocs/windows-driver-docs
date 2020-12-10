@@ -1,7 +1,6 @@
 ---
 title: Control Method Input Buffer Structures
 description: Control Method Input Buffer Structures
-ms.assetid: 41d4c53f-9dc7-4723-9707-ae48ff07f5f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

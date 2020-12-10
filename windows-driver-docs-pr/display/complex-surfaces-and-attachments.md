@@ -1,7 +1,6 @@
 ---
 title: Complex Surfaces and Attachments
 description: Complex Surfaces and Attachments
-ms.assetid: fb75c534-b1ff-44d3-a8dc-dcf0f221b6ad
 keywords:
 - drawing surfaces WDK DirectDraw , complex
 - DirectDraw surfaces WDK Windows 2000 display , complex

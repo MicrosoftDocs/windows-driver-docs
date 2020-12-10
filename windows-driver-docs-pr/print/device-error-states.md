@@ -1,7 +1,6 @@
 ---
 title: Device Error States
 description: Device Error States
-ms.assetid: 7d0fee11-0fdf-4490-88d0-fb074cbf4082
 keywords:
 - error states WDK printer
 - printer error states WDK

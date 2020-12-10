@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_FILTER_LIST
 description: WDI_TLV_P2P_DEVICE_FILTER_LIST is a TLV that contains a list of Wi-Fi Direct devices and Group Owners to search for during Wi-Fi Direct device discovery.
-ms.assetid: 56D1E6BD-41E3-4869-A821-334012B781A7
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_FILTER_LIST Network Drivers Starting with Windows Vista

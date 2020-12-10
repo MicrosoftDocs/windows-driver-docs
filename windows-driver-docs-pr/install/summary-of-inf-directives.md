@@ -1,7 +1,6 @@
 ---
 title: Summary of INF Directives
 description: Summary of INF Directives
-ms.assetid: 6212502c-183c-4abb-9e56-59dba15fc685
 keywords:
 - INF files WDK device installations , directives
 - directives WDK INF files

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DELETE_CIPHER_KEY_INFO
 description: WDI_TLV_DELETE_CIPHER_KEY_INFO is a TLV that contains information to identify a single cipher key to remove with OID_WDI_SET_DELETE_CIPHER_KEYS.
-ms.assetid: 5AD84E05-9A25-4FE8-BDF4-CCBA89D09A3F
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DELETE_CIPHER_KEY_INFO Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Setting Contexts
 description: Setting Contexts
-ms.assetid: 3daa23e6-14d7-4d35-8bc8-695296cd289d
 keywords:
 - contexts WDK file system minifilter , setting
 - attaching contexts

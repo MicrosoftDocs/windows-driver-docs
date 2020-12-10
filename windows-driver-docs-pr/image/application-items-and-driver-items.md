@@ -1,7 +1,6 @@
 ---
 title: Application Items and Driver Items
 description: Application Items and Driver Items
-ms.assetid: 33b602dc-4a0b-47e1-90e2-b77ecc05f66d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

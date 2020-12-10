@@ -1,7 +1,6 @@
 ---
 title: PwrTest Connected Standby Scenario
 description: The PwrTest Connected Standby Scenario (/cs) facilitates automated testing of connected standby transitions.
-ms.assetid: 2601603D-F9AF-4DEB-9A1B-F5A091A51B2B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

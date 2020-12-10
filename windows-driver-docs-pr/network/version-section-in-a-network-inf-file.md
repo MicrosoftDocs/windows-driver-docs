@@ -1,7 +1,6 @@
 ---
 title: Version Section in a Network INF File
 description: Version Section in a Network INF File
-ms.assetid: c76151e9-fef2-4bfe-8587-d58d95d234bc
 keywords:
 - INF files WDK network , Version section
 - network INF files WDK , Version section
@@ -106,7 +105,7 @@ The **Signature** entry must be **$Windows NT$**.
 
 ### PnpLockDown
 
-The **PnpLockDown** entry should be set to 1 to prevents applications from directly modifying the files that your driver package's INF file specifies. For more information about this entry, see [**INF Version Section**](../install/inf-version-section.md).
+The **PnpLockDown** entry should be set to 1 to prevent applications from directly modifying the files that your driver package's INF file specifies. For more information about this entry, see [**INF Version Section**](../install/inf-version-section.md).
 
 ### CatalogFile
 

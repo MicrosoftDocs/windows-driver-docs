@@ -1,7 +1,6 @@
 ---
 title: wmitrace.searchpath
 description: The wmitrace.searchpath extension specifies the location of the trace message format files for messages in the trace buffers.
-ms.assetid: 528c997c-007c-4046-92cc-169c7720b3fe
 keywords: ["wmitrace.searchpath Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

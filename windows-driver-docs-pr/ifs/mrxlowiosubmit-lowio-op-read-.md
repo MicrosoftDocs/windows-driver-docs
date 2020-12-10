@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_READ\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_READ\ routine is called by RDBSS to issue a read request to the network mini-redirector.
-ms.assetid: 26a173d8-e3ab-4c63-8390-133afd35b51a
 keywords: ["MRxLowIOSubmit LOWIO_OP_READ routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

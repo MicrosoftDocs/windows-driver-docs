@@ -1,7 +1,6 @@
 ---
 title: DispatchDeviceControl and DispatchInternalDeviceControl Routines
 description: DispatchDeviceControl and DispatchInternalDeviceControl Routines
-ms.assetid: 0bf8868e-bc5a-4fa7-9ff6-270f7a7bc850
 keywords: ["dispatch routines WDK kernel , DispatchDeviceControl routine", "dispatch routines WDK kernel , DispatchInternalDeviceControl routine", "DispatchDeviceControl routine", "DispatchInternalDeviceControl routine", "IRP_MJ_DEVICE_CONTROL I/O function code", "IRP_MJ_INTERNAL_DEVICE_CONTROL I/O function code", "internal device control dispatch routines WDK kernel", "device control dispatch routines WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

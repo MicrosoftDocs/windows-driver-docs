@@ -1,7 +1,6 @@
 ---
 title: Writing Class Installers and Co-Installers
 description: Writing Class Installers and Co-Installers
-ms.assetid: DA52A2C4-81D7-4e95-97CD-D5A1C625CE02
 keywords:
 - class installers WDK device installations , writing
 - writing class installers WDK device installations

@@ -1,7 +1,6 @@
 ---
 title: INF Models Section
 description: A Models section identifies a device, references its DDInstall section, and specifies a hardware identifier for the device.
-ms.assetid: b870e8fb-21b4-439b-b858-c45bf9be2ec1
 keywords:
 - INF Models Section Device and Driver Installation
 topic_type:

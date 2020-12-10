@@ -1,7 +1,6 @@
 ---
 title: chksym
 description: The chksym extension tests the validity of a module against a symbol file.
-ms.assetid: 52ea75cb-44a2-4c84-a3af-b3fc027348f4
 keywords: ["chksym Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

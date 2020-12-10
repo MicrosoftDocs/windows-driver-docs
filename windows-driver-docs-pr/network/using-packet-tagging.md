@@ -1,7 +1,6 @@
 ---
 title: Using Packet Tagging
 description: Using Packet Tagging
-ms.assetid: a151256b-d69f-4abb-bf68-644f157dfdd7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

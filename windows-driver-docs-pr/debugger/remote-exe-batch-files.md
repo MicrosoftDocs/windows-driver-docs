@@ -1,7 +1,6 @@
 ---
 title: Remote.exe Batch Files
 description: Remote.exe Batch Files
-ms.assetid: e774d39f-4625-41e7-9309-9dbdd46e986e
 keywords: ["remote debugging through remote.exe, batch files"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

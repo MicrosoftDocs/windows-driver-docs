@@ -1,7 +1,6 @@
 ---
 title: OEM guidance on settings for the Windows 10 in-box camera app
 description: The new in-box camera app for Windows 10 is designed to work well with the wide variety of hardware supported by the Windows platform without any configuration required by the OEM.
-ms.assetid: 567D2083-9837-44A6-97FB-AD0C9B9EB067
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

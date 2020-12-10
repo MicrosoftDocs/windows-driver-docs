@@ -1,7 +1,6 @@
 ---
 title: Virtual Machine Queue (VMQ) Overview
 description: Virtual Machine Queue (VMQ) Overview
-ms.assetid: c502c7d6-bdf1-4656-b5a5-339250910f08
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

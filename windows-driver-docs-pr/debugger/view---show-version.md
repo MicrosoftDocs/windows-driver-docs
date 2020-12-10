@@ -1,7 +1,6 @@
 ---
 title: View Show Version
 description: View Show Version
-ms.assetid: d4a61e8a-600e-4dd5-a0dc-0da05923f3f1
 keywords: ["View Show Version"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

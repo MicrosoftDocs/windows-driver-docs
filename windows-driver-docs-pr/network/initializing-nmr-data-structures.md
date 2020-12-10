@@ -1,7 +1,6 @@
 ---
 title: Initializing NMR Data Structures
 description: Initializing NMR Data Structures
-ms.assetid: 84241ff4-f6ae-4c71-a9e3-1a6615e41293
 keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel

@@ -1,7 +1,6 @@
 ---
 title: WSK_TDI_BEHAVIOR
 description: WSK_TDI_BEHAVIOR
-ms.assetid: 84e4c8c3-2c31-4db5-bb25-309c6bb176ff
 ms.date: 07/18/2017
 keywords:
  - WSK_TDI_BEHAVIOR Network Drivers Starting with Windows Vista

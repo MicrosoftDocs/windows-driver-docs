@@ -1,7 +1,6 @@
 ---
 title: Communicating with SDP Servers Overview
 description: Communicating with SDP Servers Overview
-ms.assetid: 833f2eea-d7e6-4f19-979e-3bb4db47fa43
 keywords:
 - Bluetooth WDK , SDP server communication
 - SDP WDK Bluetooth

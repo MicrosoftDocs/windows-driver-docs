@@ -1,7 +1,6 @@
 ---
 title: Introduction to Printer Graphics DLLs
 description: Introduction to Printer Graphics DLLs
-ms.assetid: 3f7ce476-6bef-4a80-ae2a-2a63e891dda1
 keywords:
 - printer graphics DLL WDK , about printer graphics DLL
 - graphics DLL WDK printer , about printer graphics DLL

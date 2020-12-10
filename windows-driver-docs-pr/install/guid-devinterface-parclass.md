@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_PARCLASS
 description: GUID_DEVINTERFACE_PARCLASS
-ms.assetid: d55195d4-f4f5-464f-a1ca-5fe0eafccb2a
 keywords: ["GUID_DEVINTERFACE_PARCLASS Device and Driver Installation"]
 topic_type:
 - apiref

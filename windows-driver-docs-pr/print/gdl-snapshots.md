@@ -1,7 +1,6 @@
 ---
 title: GDL Snapshots
 description: GDL Snapshots
-ms.assetid: 2e6a7693-2db8-4fa5-a4e7-d069313b68bf
 keywords:
 - GDL WDK , snapshots
 - snapshots WDK GDL

@@ -1,7 +1,6 @@
 ---
 title: FormatValue element
 description: The required FormatValue element specifies a single supported file format and compression type.
-ms.assetid: 0331f44d-6343-45f7-85a7-303733f3ee75
 keywords: ["FormatValue element Imaging Devices"]
 topic_type:
 - apiref

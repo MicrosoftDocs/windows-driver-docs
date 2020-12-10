@@ -1,7 +1,6 @@
 ---
 title: Surface Negotiation
 description: Surface Negotiation
-ms.assetid: af368be6-ea32-49ea-b49e-7e3c9a30facb
 keywords:
 - surface negotiation WDK GDI
 - GDI WDK Windows 2000 display , surfaces

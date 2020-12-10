@@ -1,7 +1,6 @@
 ---
 title: DLS Download Support
 description: DLS Download Support
-ms.assetid: be080b53-0a9d-47fc-b07b-88052efdf9a8
 keywords:
 - downloadable sounds WDK audio
 - DirectMusic custom rendering WDK audio , downloadable sounds

@@ -1,7 +1,6 @@
 ---
 title: Fragmented NET_BUFFER_LIST Structures
 description: Fragmented NET_BUFFER_LIST Structures
-ms.assetid: a72bc0cf-8c92-4c3e-ad10-710e5b93c74c
 keywords:
 - NET_BUFFER_LIST
 - fragmented structures WDK networking

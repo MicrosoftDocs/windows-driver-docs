@@ -1,7 +1,6 @@
 ---
 title: Retreat and Advance Operations
 description: Retreat and Advance Operations
-ms.assetid: 90d4acae-e66c-486b-8b38-59f7fe159047
 keywords:
 - network data WDK , advance operations
 - network data WDK , retreat operations

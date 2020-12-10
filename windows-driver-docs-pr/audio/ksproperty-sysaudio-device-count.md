@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT
 description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_COUNT property retrieves a count specifying the number of virtual audio devices that a DirectSound application program has to choose from.
-ms.assetid: c70b6b5e-78fc-4f03-99cf-892297e592be
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_COUNT Audio Devices"]
 topic_type:
 - apiref

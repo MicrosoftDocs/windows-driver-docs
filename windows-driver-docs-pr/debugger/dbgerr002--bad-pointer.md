@@ -1,7 +1,6 @@
 ---
 title: dbgerr002 Bad Pointer
 description: dbgerr002 Bad Pointer
-ms.assetid: d5f2404e-3e7d-4de2-a772-0d42169eb9ad
 keywords: ["dbgerr002", "Bad pointer (dbgerr002)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

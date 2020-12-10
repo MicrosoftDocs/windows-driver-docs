@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_RELEASE_FOR_MOD_WRITE union
 description: The following union component is used when the MajorFunction field of the FLT\_IO\_PARAMETER\_BLOCK structure for the operation is IRP\_MJ\_RELEASE\_FOR\_MOD\_WRITE.
-ms.assetid: 66b43d77-5e46-48b6-b86c-4ed21959ab49
 keywords: ["FLT_PARAMETERS for IRP_MJ_RELEASE_FOR_MOD_WRITE union Installable File System Drivers", "FLT_PARAMETERS union Installable File System Drivers", "PFLT_PARAMETERS union pointer Installable File System Drivers"]
 topic_type:
 - apiref

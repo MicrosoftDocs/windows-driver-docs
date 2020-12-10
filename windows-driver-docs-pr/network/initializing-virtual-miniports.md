@@ -1,7 +1,6 @@
 ---
 title: Initializing Virtual Miniports
 description: Initializing Virtual Miniports
-ms.assetid: b712fe29-fd56-4abd-bab6-e335350a20c2
 keywords:
 - underlying adapter opening WDK networking
 - opening underlying adapters

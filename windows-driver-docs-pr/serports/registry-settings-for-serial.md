@@ -1,7 +1,6 @@
 ---
 title: Registry Settings for Serial
 description: Registry Settings for Serial
-ms.assetid: be64d9d7-6d6b-4430-96a3-ac071d48b121
 keywords:
 - Serial driver WDK , registry settings
 - registry WDK serial devices

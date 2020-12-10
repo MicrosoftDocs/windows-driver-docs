@@ -1,7 +1,6 @@
 ---
 title: FSCTL_DUPLICATE_EXTENTS_TO_FILE_EX control code
 description: The FSCTL\_DUPLICATE\_EXTENTS\_TO\_FILE\_EX control code instructs the file system to copy a range of file bytes on behalf of an application. The destination file may be the same as, or different from, the source file.
-ms.assetid: B13C6415-5593-43CF-90AC-7D2DC844EC41
 keywords: ["FSCTL_DUPLICATE_EXTENTS_TO_FILE_EX control code Installable File System Drivers"]
 topic_type:
 - apiref

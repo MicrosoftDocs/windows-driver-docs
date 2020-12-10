@@ -1,7 +1,6 @@
 ---
 title: Transmitting Network Data Through an Intermediate Driver
 description: Transmitting Network Data Through an Intermediate Driver
-ms.assetid: 90759322-810b-47fd-896c-465c96be4cdd
 keywords:
 - intermediate drivers WDK networking , transmitting data
 - NDIS intermediate drivers WDK , transmitting data

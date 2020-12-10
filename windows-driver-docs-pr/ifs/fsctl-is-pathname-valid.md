@@ -1,7 +1,6 @@
 ---
 title: FSCTL_IS_PATHNAME_VALID control code
 description: The FSCTL\_IS\_PATHNAME\_VALID control code performs static analysis of the supplied pathname and returns a status value that indicates whether the pathname is well formed (for example, no illegal characters, acceptable path length, and so on).
-ms.assetid: 3f95ae2c-a376-4c68-9e84-dde22aa7e315
 keywords: ["FSCTL_IS_PATHNAME_VALID control code Installable File System Drivers"]
 topic_type:
 - apiref

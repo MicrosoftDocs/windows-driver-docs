@@ -1,7 +1,6 @@
 ---
 title: Handling Wake-Up Events
 description: Handling Wake-Up Events
-ms.assetid: 4989d5a4-158c-41db-ab2d-fc995b67a822
 keywords:
 - wake-up capabilities WDK networking , handling wake-up events
 - bus-specific wake-up lines WDK networking

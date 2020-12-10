@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: a58cc911-dc09-4847-b4b7-cf97326cd444
 keywords: ["GetTree method Print Devices", "GetTree method Print Devices , ISNMP interface", "ISNMP interface Print Devices , GetTree method"]
 topic_type:
 - apiref

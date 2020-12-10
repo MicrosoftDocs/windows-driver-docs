@@ -1,7 +1,6 @@
 ---
 title: Versioned Interfaces
 description: Versioned Interfaces
-ms.assetid: 9512bfff-9225-45a3-b8c3-73469a1fe870
 keywords:
 - NDIS WDK , versioning
 - versioning WDK networking

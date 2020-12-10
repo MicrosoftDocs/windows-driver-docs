@@ -1,7 +1,6 @@
 ---
 title: Defining a Callback Object
 description: Defining a Callback Object
-ms.assetid: 9717795b-dd62-4f17-b931-5ca2b1237e60
 keywords: ["callback objects WDK kernel", "registering callback notifications"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

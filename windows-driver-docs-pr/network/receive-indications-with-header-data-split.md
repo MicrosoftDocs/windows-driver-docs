@@ -1,7 +1,6 @@
 ---
 title: Receive Indications with Header-Data Split
 description: Receive Indications with Header-Data Split
-ms.assetid: 76abeac8-ca6e-40b1-a46e-83ae90d9192e
 keywords:
 - header-data split WDK , receive indications
 - received data formats WDK header-data split

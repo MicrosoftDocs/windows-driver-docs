@@ -1,7 +1,6 @@
 ---
 title: sq (Set Quiet Mode)
 description: The sq command turns quiet mode on or off.
-ms.assetid: db8a266c-e2e5-4de7-8154-993a78585f04
 keywords: ["sq (Set Quiet Mode) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

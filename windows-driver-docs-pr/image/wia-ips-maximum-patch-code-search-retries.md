@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES
 description: The WIA\_IPS\_MAXIMUM\_PATCH\_CODE\_SEARCH\_RETRIES property describes the maximum number of retries the reader attempts if no patch code can be found when patch code detection is enabled.
-ms.assetid: F6CBEC7E-B44D-4524-9F75-8CBF413FCAF6
 keywords: ["WIA_IPS_MAXIMUM_PATCH_CODE_SEARCH_RETRIES Imaging Devices"]
 topic_type:
 - apiref

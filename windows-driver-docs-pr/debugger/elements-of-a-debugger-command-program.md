@@ -1,7 +1,6 @@
 ---
 title: Elements of a Debugger Command Program
 description: Elements of a Debugger Command Program
-ms.assetid: f964e358-2f3f-4780-87ea-e1374ae861e6
 keywords: ["debugger command program, elements"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

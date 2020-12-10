@@ -1,7 +1,6 @@
 ---
 title: How to Release-Sign a Driver Package
 description: How to Release-Sign a Driver Package
-ms.assetid: f02c0a50-01f1-456c-b432-c4d9e8cbc566
 keywords:
 - release-signing drivers WDK
 - driver signing WDK , release-signing packages

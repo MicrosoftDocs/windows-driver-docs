@@ -1,7 +1,6 @@
 ---
 title: Testing and debugging TDR
 description: Registry keys and WHLK tests for testing and debugging TDR (timeout detection and recovery)
-ms.assetid: 77b8b2aa-0821-4297-a1e4-57894bd4181f
 keywords:
 - TDR debugging, driver development
 - Timeout detection and recovery debugging, driver development
@@ -14,7 +13,7 @@ keywords:
 - TDR tests, Windows Hardware Lab Kit
 ms.date: 10/06/2020
 ms.localizationpriority: medium
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ---
 
 # Testing and debugging TDR

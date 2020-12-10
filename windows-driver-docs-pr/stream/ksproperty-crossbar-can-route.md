@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CROSSBAR\_CAN\_ROUTE
 description: The KSPROPERTY\_CROSSBAR\_CAN\_ROUTE property retrieves whether the device is capable of supporting a specified routing. This property must be implemented.
-ms.assetid: bb966d0a-6ecf-4bbb-a881-30d468abe220
 keywords: ["KSPROPERTY_CROSSBAR_CAN_ROUTE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: JobToken element
 description: The required JobToken element contains the device-created token for a new scan job.
-ms.assetid: 09446fc0-074a-4f54-93fa-55b4dd467fad
 keywords: ["JobToken element Imaging Devices"]
 topic_type:
 - apiref

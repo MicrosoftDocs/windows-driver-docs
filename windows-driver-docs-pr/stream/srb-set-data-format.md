@@ -1,7 +1,6 @@
 ---
 title: SRB\_SET\_DATA\_FORMAT
 description: SRB\_SET\_DATA\_FORMAT
-ms.assetid: a111ab92-a0a0-464e-ac13-f5be33ecd064
 keywords: ["SRB_SET_DATA_FORMAT Streaming Media Devices"]
 topic_type:
 - apiref

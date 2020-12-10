@@ -1,7 +1,6 @@
 ---
 title: Macroblock Control Command Buffers
 description: Macroblock Control Command Buffers
-ms.assetid: ed6905f6-7e7c-47d2-8f6e-95cfa03e21cb
 keywords:
 - macroblocks WDK DirectX VA , command buffers
 - command buffers WDK DirectX VA

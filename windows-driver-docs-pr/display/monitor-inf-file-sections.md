@@ -1,7 +1,6 @@
 ---
 title: Monitor INF File Sections
 description: Monitor INF File Sections
-ms.assetid: f5208b6a-00b0-446e-82f7-eb26082ed9a5
 keywords:
 - monitor INF file sections WDK Windows 2000 display
 - INF files WDK Windows 2000 display

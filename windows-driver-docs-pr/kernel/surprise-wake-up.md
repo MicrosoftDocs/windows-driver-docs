@@ -1,7 +1,6 @@
 ---
 title: Surprise Wake-Up
 description: A surprise wake-up is an unexpected transition to D0.
-ms.assetid: 07D3EC05-A1C9-40C5-90FC-E25B5A66B064
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

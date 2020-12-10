@@ -1,7 +1,6 @@
 ---
 title: Multiple DataSources
 description: Multiple DataSources
-ms.assetid: FD0B252F-1D70-4840-986F-94FF80D42246
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

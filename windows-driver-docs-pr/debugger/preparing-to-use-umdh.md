@@ -1,7 +1,6 @@
 ---
 title: Preparing to Use UMDH
 description: Preparing to Use UMDH
-ms.assetid: 9adebe43-3167-4e1a-ac98-db19ace944be
 keywords: ["UMDH, preparing to use UMDH", "UMDH, disabling BSTR caching", "SetNoOaCache function", "OANOCACHE environment variable", "stack trace database"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

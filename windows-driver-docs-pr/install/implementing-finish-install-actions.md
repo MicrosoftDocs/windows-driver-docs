@@ -1,7 +1,6 @@
 ---
 title: Implementing Finish-Install Actions
 description: Implementing Finish-Install Actions
-ms.assetid: accdf2f5-f324-41dc-afc1-18e03b422fcc
 keywords:
 - finish-install actions WDK device installations
 - actions WDK finish-install

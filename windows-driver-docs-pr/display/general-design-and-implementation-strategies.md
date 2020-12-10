@@ -1,7 +1,6 @@
 ---
 title: General Design and Implementation Strategies
 description: General Design and Implementation Strategies
-ms.assetid: c631062c-87ec-4bad-9de2-1844d0c81661
 keywords:
 - display driver model WDK Windows 2000 , strategies
 - Windows 2000 display driver model WDK , strategies

@@ -1,7 +1,6 @@
 ---
 title: Storport Event Log Extensions
 description: Storport Event Log Extensions
-ms.assetid: 03b0bdef-cefa-4ad8-b9bf-a5f6b5f64cc6
 ms.date: 06/13/2019
 ms.localizationpriority: medium
 ---

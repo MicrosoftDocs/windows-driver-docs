@@ -1,7 +1,6 @@
 ---
 title: Device-Supplied Halftoning
 description: Device-Supplied Halftoning
-ms.assetid: d1d7963e-c23e-4cb5-a33f-43fec5dc74d2
 keywords:
 - device-supplied halftoning WDK Unidrv
 ms.date: 04/20/2017

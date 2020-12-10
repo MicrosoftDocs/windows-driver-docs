@@ -1,7 +1,6 @@
 ---
 title: Allocating an Adapter Channel for Common-Buffer System DMA
 description: Allocating an Adapter Channel for Common-Buffer System DMA
-ms.assetid: 3b426b5e-e555-458c-8e16-0d59a7cb9bd6
 keywords: ["allocating adapter channels", "adapter channel allocations WDK kernel", "AllocateAdapterChannel", "system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Symbol Status Abbreviations
 description: Symbol Status Abbreviations
-ms.assetid: 198453f2-fc9a-4313-875e-ac963b843df9
 keywords: ["symbols, symbol status abbreviations", "deferred (symbol status abbreviation)", "(symbol status abbreviation)", "T (symbol status abbreviation)", "C (symbol status abbreviation)", "DIA (symbol status abbreviation)", "Export (symbol status abbreviation)", "PERF (symbol status abbreviation)", "PDB (symbol status abbreviation)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

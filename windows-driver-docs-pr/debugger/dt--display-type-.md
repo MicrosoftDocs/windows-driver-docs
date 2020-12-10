@@ -1,7 +1,6 @@
 ---
 title: dt (Display Type)
 description: The dt command displays information about a local variable, global variable or data type. This can display information about simple data types, as well as structures and unions.
-ms.assetid: 82aba13e-6604-46ca-b3e5-bb865ecf3f1f
 keywords: ["dt (Display Type) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

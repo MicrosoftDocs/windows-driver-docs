@@ -1,7 +1,6 @@
 ---
 title: How to do printer maintenance in a UWP device app
 description: In Windows 8.1, UWP device apps can perform printer maintenance, such as aligning print heads and cleaning nozzles.
-ms.assetid: 52141F66-872A-4381-92C8-B04ABDABA7AD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

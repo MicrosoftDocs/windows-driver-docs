@@ -1,7 +1,6 @@
 ---
 title: MB Device Readiness
 description: MB Device Readiness
-ms.assetid: 67a67ff7-dcff-4aec-bea9-7b1be9593649
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

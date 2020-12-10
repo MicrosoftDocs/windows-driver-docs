@@ -1,7 +1,6 @@
 ---
 title: Activating an NDIS Port
 description: Activating an NDIS Port
-ms.assetid: 0f3bfda2-8faa-4a92-a76b-0c0c361bd667
 keywords:
 - ports WDK NDIS , activating
 - NDIS ports WDK , activating

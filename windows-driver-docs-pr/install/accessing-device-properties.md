@@ -1,7 +1,6 @@
 ---
 title: Accessing Device Properties
 description: Accessing Device Properties
-ms.assetid: 7D3F3164-E530-49fb-BCCD-9C024543FA95
 keywords:
 - device properties WDK device installations , accessing
 - accessing device properties WDK device installations

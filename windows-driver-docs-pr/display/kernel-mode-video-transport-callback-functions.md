@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode Video Transport Callback Functions
 description: Kernel-Mode Video Transport Callback Functions
-ms.assetid: 1edd5b68-91da-4846-87bd-6fcabb9e5abf
 keywords:
 - DxApi miniport drivers WDK DirectDraw , kernel-mode video transport callback functions
 - kernel-mode video transport WDK DirectDraw , callback functions

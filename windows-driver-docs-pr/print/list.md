@@ -1,7 +1,6 @@
 ---
 title: List
 description: List
-ms.assetid: 4cf1c1ea-f890-4f9d-96ea-b79790f6bc60
 keywords:
 - List construct
 ms.date: 06/08/2020

@@ -1,7 +1,6 @@
 ---
 title: Sample INF Models Sections for Only One Target Operating System
 description: Sample INF Models Sections for Only One Target Operating System
-ms.assetid: 4cad05f6-ec88-4bc8-b69a-0d6b06dfeec0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: usb3kd.xhci_registers
 description: The usb3kd.xhci_registers extension displays the registers of a USB 3.0 host controller.
-ms.assetid: C695C23D-B617-4D1E-87F8-62CF99426CA3
 keywords: ["usb3kd.xhci_registers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

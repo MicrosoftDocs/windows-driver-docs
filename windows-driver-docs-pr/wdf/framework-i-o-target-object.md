@@ -1,7 +1,6 @@
 ---
 title: Framework I/O Target Object
 description: Framework I/O Target Object
-ms.assetid: 355a1818-88c9-4989-9141-8445f511f501
 keywords:
 - UMDF objects WDK , I/O target objects
 - framework objects WDK UMDF , I/O target objects

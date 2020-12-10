@@ -1,7 +1,6 @@
 ---
 title: Timings for diagnose call
 description: The timing requirements of Diagnose to collect debug information are as follows.
-ms.assetid: A21687FE-1398-4722-89E3-BFB511AA48E3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

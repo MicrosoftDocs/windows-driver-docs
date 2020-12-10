@@ -1,7 +1,6 @@
 ---
 title: Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets
 description: Traversing NATs and NAPTs with UDP-Encapsulated ESP Packets
-ms.assetid: 9bfd6a7c-2c24-419e-b82d-ef6ef8fe1fa5
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , transversing NATs and NAPTs
 - network address translators WDK IPsec offload

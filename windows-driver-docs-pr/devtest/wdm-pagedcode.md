@@ -1,7 +1,6 @@
 ---
 title: PagedCode rule (wdm)
 description: The PagedCode rule specifies that the driver calls the PAGED\_CODE macro only when it is executing at IRQL�  APC\_LEVEL.
-ms.assetid: de272bc2-8391-41b1-9526-3e135a586258
 ms.date: 05/21/2018
 keywords: ["PagedCode rule (wdm)"]
 topic_type:

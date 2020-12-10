@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_SYSAUDIO
 description: KSCATEGORY_SYSAUDIO
-ms.assetid: 48b67af6-ad0f-4cd2-b094-56d4708cb9c7
 keywords: ["KSCATEGORY_SYSAUDIO Device and Driver Installation"]
 topic_type:
 - apiref

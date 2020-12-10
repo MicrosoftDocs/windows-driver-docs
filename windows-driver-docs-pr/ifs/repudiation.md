@@ -1,7 +1,6 @@
 ---
 title: Repudiation
 description: Repudiation
-ms.assetid: ccb50b6c-9e7d-4a90-a049-6c62b1b57376
 keywords:
 - threat models WDK file systems , repudiation
 - security threat models WDK file systems , repudiation

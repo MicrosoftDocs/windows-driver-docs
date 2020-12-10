@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB
 description: WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB is a TLV that contains information about a device service received from the IHV driver.
-ms.assetid: D07CDC24-849F-447A-8447-FD2D37178C42
 ms.date: 06/15/2018
 keywords:
  - WDI_TLV_DEVICE_SERVICE_PARAMS_DATA_BLOB Network Drivers Starting with Windows Vista

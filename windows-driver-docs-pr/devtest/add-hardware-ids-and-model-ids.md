@@ -1,7 +1,6 @@
 ---
 title: Add Hardware and Model IDs in the Device Metadata Authoring Wizard
 description: Add Hardware and Model IDs in the Device Metadata Authoring Wizard
-ms.assetid: 1BF563AE-B37B-4105-BA76-2D13F88B2BBD
 keywords:
 - Add Hardware and Model IDs in the Device Metadata Authoring Wizard
 ms.date: 04/20/2017

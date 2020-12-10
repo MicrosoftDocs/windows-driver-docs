@@ -1,7 +1,6 @@
 ---
 title: MB Operation Flowchart Topics
 description: MB Operation Flowchart Topics
-ms.assetid: 0d450af1-6e39-4492-b112-9db7b6597539
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

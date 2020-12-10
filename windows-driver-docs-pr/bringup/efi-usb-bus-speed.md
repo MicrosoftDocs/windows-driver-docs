@@ -1,7 +1,6 @@
 ---
 title: EFI_USB_BUS_SPEED
 description: EFI_USB_BUS_SPEED
-ms.assetid: 2888cff6-db12-47ea-866f-de218e2b08e5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

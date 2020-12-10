@@ -1,7 +1,6 @@
 ---
 title: Graphics Adapter Output Requirements to Support COPP
 description: Graphics Adapter Output Requirements to Support COPP
-ms.assetid: e557487d-dba5-4185-9c35-da3185c291f6
 keywords:
 - copy protection WDK COPP , graphics adapter output requirements
 - video copy protection WDK COPP , graphics adapter output requirements

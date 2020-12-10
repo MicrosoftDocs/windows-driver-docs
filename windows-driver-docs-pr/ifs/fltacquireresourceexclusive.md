@@ -1,7 +1,6 @@
 ---
 title: FltAcquireResourceExclusive routine
 description: The FltAcquireResourceExclusive routine acquires the given resource for exclusive access by the calling thread.
-ms.assetid: 3736582e-33eb-4967-acfa-4b9d2b8cd87f
 keywords: ["FltAcquireResourceExclusive routine Installable File System Drivers"]
 topic_type:
 - apiref

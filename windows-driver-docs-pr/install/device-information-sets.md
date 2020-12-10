@@ -1,7 +1,6 @@
 ---
 title: Device Information Sets
 description: Device Information Sets
-ms.assetid: 20539c63-10b1-408a-8c60-da444f54b64e
 keywords:
 - device information elements WDK device installations
 - device information sets WDK device installations

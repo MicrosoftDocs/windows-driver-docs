@@ -1,7 +1,6 @@
 ---
 title: Installing a Battery Driver
 description: Installing a Battery Driver
-ms.assetid: 09db4d88-0cac-4171-8d05-d15a2cf4dab4
 keywords:
 - battery miniclass drivers WDK , installing
 - battery class drivers WDK , installing

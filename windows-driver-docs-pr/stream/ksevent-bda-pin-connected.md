@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_BDA\_PIN\_CONNECTED
 description: Clients use KSEVENT\_BDA\_PIN\_CONNECTED to request notification when a pin becomes connected.
-ms.assetid: f17df59d-8904-45a0-bb6b-795b343fd629
 keywords: ["KSEVENT_BDA_PIN_CONNECTED Streaming Media Devices"]
 topic_type:
 - apiref

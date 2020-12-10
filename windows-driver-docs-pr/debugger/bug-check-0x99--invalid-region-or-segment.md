@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x99 INVALID_REGION_OR_SEGMENT
 description: The INVALID_REGION_OR_SEGMENT bug check has a value of 0x00000099. This bug check indicates that ExInitializeRegion or ExInterlockedExtendRegion was called with an invalid set of parameters.
-ms.assetid: 353b9028-7ba4-405e-9ac9-f3c12fd595ab
 keywords: ["Bug Check 0x99 INVALID_REGION_OR_SEGMENT", "INVALID_REGION_OR_SEGMENT"]
 ms.date: 05/23/2017
 topic_type:

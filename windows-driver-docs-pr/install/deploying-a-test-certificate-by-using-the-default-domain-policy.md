@@ -1,7 +1,6 @@
 ---
 title: Deploying a Test Certificate by Using the Default Domain Policy
 description: Deploying a Test Certificate by Using the Default Domain Policy
-ms.assetid: eafa4e20-94c5-49d6-a192-2fc7c9f1e64f
 keywords:
 - MakeCert test certificates WDK
 - Trusted Root Certification Authorities certificate store WDK

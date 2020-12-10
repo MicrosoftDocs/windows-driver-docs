@@ -1,7 +1,6 @@
 ---
 title: Sharks Cove hardware development board
 description: Sharks Cove is a hardware development board that you can use to develop hardware and drivers for Windows.
-ms.assetid: D86546BB-B613-4CEE-9A76-3FD269137EE9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,10 +13,6 @@ ms.localizationpriority: medium
 Sharks Cove is a [hardware development board](./windows-compatible-hardware-development-boards.md) that you can use to develop hardware and drivers for Windows.
 
 The Intel Sharks Cove board supports driver development for devices that use a variety of interfaces, including GPIO, I2C, I2S, UART, SDIO, and USB. You can also use the Sharks Cove board to develop drivers for cameras and touch screens.
-
-For downloads related to the Sharks Cove board, see [Sharks Cove UEFI Firmware](https://go.microsoft.com/fwlink/p?linkid=403167).
-
-For detailed specifications, see [Sharks Cove Technical Specifications](https://go.microsoft.com/fwlink/p?linkid=403169).
 
 ## Before you start
 
@@ -102,7 +97,7 @@ Double click your ISO file, and copy these files to *Root*\\Setup.
 >[!NOTE]
 >If you are running Windows 7, right-click the ISO file, and choose **Burn disk image** . Burn the image to a recordable DVD. Then copy the files from the DVD to *Root*\\Setup.
 
-Get the [Sharks Cove board support package (BSP)](https://go.microsoft.com/fwlink/p?linkid=506954). Copy all the files in the package to *Root*\\SharksCoveBsp.
+Get the Sharks Cove board support package (BSP). Copy all the files in the package to *Root*\\SharksCoveBsp.
 
 Get the [WDK Development Boards Add-on Kit](https://go.microsoft.com/fwlink/p/?linkid=403174). Open the **SourceCode** tab. Click **Download** (not the Downloads tab) to get the kit scripts. Open the Scripts folder, and copy these two items to *Root*.
 
@@ -351,8 +346,6 @@ If you need to turn on test signing manually, here are the steps:
     Restart the Sharks Cove board.
 
 ## Step 7: Connect your device to the Sharks Cove board
-
-Get the [specification for the Sharks Cove headers and pins](https://go.microsoft.com/fwlink/p?linkid=506966).
 
 Use the specification to determine which pins to use for your device. For example, suppose you want to connect the ADXL345 accelerometer to an I2C bus. In the specification, you can see that the J1C1 header has the pins you need. Here are some, but not all, of the pins you would use on the J1C1 header.
 

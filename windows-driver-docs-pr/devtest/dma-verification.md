@@ -1,7 +1,6 @@
 ---
 title: DMA Verification
 description: DMA Verification
-ms.assetid: ffcb718a-63f5-49ff-9d36-67b2aa59761f
 keywords:
 - DMA Verification feature WDK Driver Verifier
 - HAL Verification WDK Driver Verifier

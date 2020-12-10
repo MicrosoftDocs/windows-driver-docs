@@ -1,7 +1,6 @@
 ---
 title: How to Create a Boot-Time Global Logger Session
 description: How to Create a Boot-Time Global Logger Session
-ms.assetid: ddd9e1b1-d732-4ef1-a0e0-4d8e95660d7c
 keywords:
 - Global Logger trace session WDK , creating
 - boot-time Global Logger trace session WDK , creating

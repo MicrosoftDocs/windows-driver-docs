@@ -1,7 +1,6 @@
 ---
 title: Windows Hardware Error Architecture-Aware User-Mode Applications
 description: Windows Hardware Error Architecture-Aware User-Mode Applications
-ms.assetid: fb559ac3-1f8d-48b7-8ebe-018623ab8d09
 keywords:
 - user-mode applications WDK WHEA
 - WHEA WDK , user-mode applications

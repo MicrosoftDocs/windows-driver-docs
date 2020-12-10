@@ -1,7 +1,6 @@
 ---
 title: SRB\_GET\_DATA\_FORMAT
 description: SRB\_GET\_DATA\_FORMAT
-ms.assetid: 6346d719-395d-4847-af80-6c65e15af250
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

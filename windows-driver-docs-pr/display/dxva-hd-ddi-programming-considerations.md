@@ -1,7 +1,6 @@
 ---
 title: DXVA-HD DDI Programming Considerations
 description: DXVA-HD DDI Programming Considerations
-ms.assetid: 84576a8d-67e1-480a-9323-ef34b0900d22
 keywords:
 - DXVA-HD DDI WDK Windows 7 display , programming considerations
 - DXVA-HD DDI WDK Server 2008 R2 display , programming considerations

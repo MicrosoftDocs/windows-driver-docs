@@ -1,7 +1,6 @@
 ---
 title: CM_WaitNoPendingInstallEvents
 description: CM_WaitNoPendingInstallEvents
-ms.assetid: b9922576-9e7e-454f-88e0-948a1e16523f
 keywords: ["CM_WaitNoPendingInstallEvents Device and Driver Installation"]
 topic_type:
 - apiref

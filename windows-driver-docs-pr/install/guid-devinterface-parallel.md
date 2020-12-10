@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_PARALLEL
 description: GUID_DEVINTERFACE_PARALLEL
-ms.assetid: 3c7c27ba-aad6-4ca5-ba26-fba206f967b9
 keywords: ["GUID_DEVINTERFACE_PARALLEL Device and Driver Installation"]
 topic_type:
 - apiref

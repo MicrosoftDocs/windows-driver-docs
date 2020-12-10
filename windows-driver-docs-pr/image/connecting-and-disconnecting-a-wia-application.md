@@ -1,7 +1,6 @@
 ---
 title: Connecting and Disconnecting a WIA Application
 description: Connecting and Disconnecting a WIA Application
-ms.assetid: 3360b707-2167-4c51-af86-4edece3b557f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_BdaCAEvent
 description: KSEVENTSETID\_BdaCAEvent
-ms.assetid: e748a8a1-9aa4-41da-8cc2-02beb89a8887
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

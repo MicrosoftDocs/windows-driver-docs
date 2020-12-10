@@ -1,7 +1,6 @@
 ---
 title: Printer INF Files
 description: Printer INF Files
-ms.assetid: 33f1c836-0846-49d5-8ab5-baadf9e0678c
 keywords:
 - installing drivers WDK printer , INF files
 - printer driver installations WDK , INF files

@@ -1,7 +1,6 @@
 ---
 title: Supporting Brightness Controls on Integrated Display Panels
 description: Supporting Brightness Controls on Integrated Display Panels
-ms.assetid: d32ee274-569e-4adc-a723-28dc756fb177
 keywords:
 - brightness WDK display
 - ACPI-based brightness hot-keys WDK display

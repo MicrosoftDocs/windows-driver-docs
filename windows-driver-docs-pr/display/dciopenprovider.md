@@ -1,7 +1,6 @@
 ---
 title: DCIOpenProvider
 description: DCIOpenProvider
-ms.assetid: 0c6f5813-46a8-4cc0-9a50-e5c9109352e9
 keywords: ["DCIOpenProvider Display Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Format of a Text Log Section Header
 description: Format of a Text Log Section Header
-ms.assetid: ec46a540-e888-426d-85fc-6ad2d756c7b8
 keywords:
 - section headers WDK SetupAPI logging
 - formats WDK SetupAPI logging

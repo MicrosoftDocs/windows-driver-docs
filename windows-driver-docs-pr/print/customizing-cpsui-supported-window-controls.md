@@ -1,7 +1,6 @@
 ---
 title: Customizing CPSUI-Supported Window Controls
 description: Customizing CPSUI-Supported Window Controls
-ms.assetid: b9ced902-6368-4b3b-a974-81e7d38c0ced
 keywords:
 - Common Property Sheet User Interface WDK print , window controls
 - CPSUI WDK print , window controls

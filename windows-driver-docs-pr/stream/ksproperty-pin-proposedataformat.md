@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_PROPOSEDATAFORMAT
 description: Clients use the KSPROPERTY\_PIN\_PROPOSEDATAFORMAT property to determine if pins instantiated by the pin factory support a specific data format.
-ms.assetid: f1657fd1-0988-48b8-95d0-c6026965848b
 keywords: ["KSPROPERTY_PIN_PROPOSEDATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

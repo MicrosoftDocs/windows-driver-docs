@@ -1,7 +1,6 @@
 ---
 title: Extended Surface Description Structure
 description: Extended Surface Description Structure
-ms.assetid: 51936b15-590c-4113-a393-1a8306c24e7f
 keywords:
 - drawing extended surface capabilities WDK DirectDraw , description structure
 - DirectDraw extended surface capabilities WDK Windows 2000 display , description structure

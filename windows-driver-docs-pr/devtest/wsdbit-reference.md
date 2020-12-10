@@ -1,7 +1,6 @@
 ---
 title: WSDBIT Reference
 description: WSDBIT Reference
-ms.assetid: 69d9e7db-fceb-4d1b-a22b-fe63756048d7
 keywords:
 - WSDBIT tool WDK , sample
 - WSDAPI Basic Interoperability Tool WDK , sample

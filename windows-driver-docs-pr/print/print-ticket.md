@@ -1,7 +1,6 @@
 ---
 title: Print Ticket
 description: Print Ticket
-ms.assetid: dd18d0ef-c1f7-4a35-a420-2da102fb07f4
 keywords:
 - PrintTicket documents WDK
 - Print Tickets WDK , PrintTicket documents

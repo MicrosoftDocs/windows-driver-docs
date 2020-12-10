@@ -1,7 +1,6 @@
 ---
 title: Multiple Audio Subdevices
 description: Multiple Audio Subdevices
-ms.assetid: 1654a2b3-7bec-4438-8cb5-b3136c8e66cc
 keywords:
 - multifunction audio devices WDK , subdevices
 - multiple subdevices WDK audio

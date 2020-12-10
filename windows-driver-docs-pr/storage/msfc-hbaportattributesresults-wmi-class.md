@@ -1,7 +1,6 @@
 ---
 title: MSFC\_HBAPortAttributesResults WMI Class
 description: MSFC\_HBAPortAttributesResults WMI Class
-ms.assetid: f268a653-e3ee-47d0-9af8-925dc0545a2b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: VidPN Objects and Interfaces
 description: VidPN Objects and Interfaces
-ms.assetid: 5dedac8c-9a99-4b3a-81be-39819135cd97
 keywords:
 - video present networks WDK display , objects
 - VidPN WDK display , objects

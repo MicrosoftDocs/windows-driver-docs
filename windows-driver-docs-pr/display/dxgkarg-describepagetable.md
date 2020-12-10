@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_DESCRIBEPAGETABLE structure
 description: The DXGKARG\_DESCRIBEPAGETABLE structure is reserved for system use. Do not use it in your driver.
-ms.assetid: f439ba7c-216e-4286-9a63-d8f596996ac2
 keywords: ["_DXGKARG_DESCRIBEPAGETABLE structure Display Devices", "DXGKARG_DESCRIBEPAGETABLE structure Display Devices"]
 topic_type:
 - apiref

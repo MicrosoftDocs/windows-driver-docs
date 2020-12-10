@@ -1,7 +1,6 @@
 ---
 title: Macroblock Control Commands
 description: Macroblock Control Commands
-ms.assetid: be70ec8f-1821-4075-b5e3-b7574fbe4e27
 keywords:
 - macroblocks WDK DirectX VA , commands
 - DXVA_MBctrl_I_HostResidDiff_1

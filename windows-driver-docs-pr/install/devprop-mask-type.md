@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_MASK_TYPE
 description: In Windows Vista and later versions of Windows, the DEVPROP_MASK_TYPE mask can be combined in a bitwise AND with a property-data-type identifier to extract the base-data-type identifier from a property-data-type identifier.
-ms.assetid: 5d1d5cb2-d967-47b4-bde7-fdf4248b1913
 keywords: ["DEVPROP_MASK_TYPE Device and Driver Installation"]
 topic_type:
 - apiref

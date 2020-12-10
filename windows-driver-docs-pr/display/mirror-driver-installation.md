@@ -1,7 +1,6 @@
 ---
 title: Mirror Driver Installation
 description: Mirror Driver Installation
-ms.assetid: 13b0ce22-f833-482c-815b-a596098ee6bc
 keywords:
 - display drivers WDK Windows 2000 , mirror drivers
 - mirror drivers WDK Windows 2000 display

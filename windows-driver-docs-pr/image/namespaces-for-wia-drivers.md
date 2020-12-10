@@ -1,7 +1,6 @@
 ---
 title: Namespaces for WIA Drivers
 description: Namespaces for WIA Drivers
-ms.assetid: 67260a25-6233-4738-a08f-26223cc8e563
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

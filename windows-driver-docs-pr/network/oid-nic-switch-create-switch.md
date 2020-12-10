@@ -1,7 +1,6 @@
 ---
 title: OID_NIC_SWITCH_CREATE_SWITCH
 description: NDIS issues an object identifier (OID) method request of OID_NIC_SWITCH_CREATE_SWITCH to create a NIC switch on a network adapter.
-ms.assetid: 16FFC6A4-11A6-45A1-ABCF-8C1EBE3FD953
 ms.date: 08/08/2017
 keywords: 
  -OID_NIC_SWITCH_CREATE_SWITCH Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Hybrid system DDI
 description: Starting with Windows 8.1, these user-mode and kernel-mode structures and enumerations of the display device driver interface (DDI) are updated to handle cross-adapter resources on a hybrid system D3D10_DDI_RESOURCE_MISC_FLAGD3DDDI_RESOURCEFLAGS2D3DDDI_SYNCHRONIZATIONOBJECT_FLAGSD3DKMDT_GDISURFACEDATAD3DKMDT_GDISURFACETYPEDXGK_DRIVERCAPSDXGK_VIDMMCAPSThis function, new for Windows 8.1, is implemented by the user-mode display driver QueryDListForApplication1.
-ms.assetid: 8AABE677-2C2D-4CFD-AF22-06D65524A158
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

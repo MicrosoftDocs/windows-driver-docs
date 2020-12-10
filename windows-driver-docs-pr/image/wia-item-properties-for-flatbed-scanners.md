@@ -1,7 +1,6 @@
 ---
 title: WIA Item Properties for Flatbed Scanners
 description: WIA Item Properties for Flatbed Scanners
-ms.assetid: 464549e5-8cdf-4e85-91a9-fa9a12f2a53b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

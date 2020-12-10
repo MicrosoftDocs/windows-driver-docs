@@ -1,7 +1,6 @@
 ---
 title: PnP and Power Management Scenarios
 description: PnP and Power Management Scenarios
-ms.assetid: 9175ce95-196d-44bd-b31c-88386fa0d3d3
 keywords:
 - PnP WDK KMDF , scenarios
 - Plug and Play WDK KMDF , scenarios

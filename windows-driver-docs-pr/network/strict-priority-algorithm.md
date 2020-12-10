@@ -1,7 +1,6 @@
 ---
 title: Strict Priority Algorithm
 description: Strict Priority Algorithm
-ms.assetid: 7C7A34CA-673C-4EFC-970D-08458AA83EAD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

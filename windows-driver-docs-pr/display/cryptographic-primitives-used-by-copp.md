@@ -1,7 +1,6 @@
 ---
 title: Cryptographic Primitives Used by COPP
 description: Cryptographic Primitives Used by COPP
-ms.assetid: a14f6f4c-75fd-41a3-93f8-86c9908a2343
 keywords:
 - copy protection WDK COPP , cryptography
 - video copy protection WDK COPP , cryptography

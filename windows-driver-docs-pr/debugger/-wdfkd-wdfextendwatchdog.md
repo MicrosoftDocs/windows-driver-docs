@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfextendwatchdog
 description: The wdfkd.wdfextendwatchdog extension extends the time-out period (from 10 minutes to 24 hours) of the framework's watchdog timer during power transitions.
-ms.assetid: 6feb922f-0016-468c-8dd2-963db6874977
 keywords: ["wdfkd.wdfextendwatchdog Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

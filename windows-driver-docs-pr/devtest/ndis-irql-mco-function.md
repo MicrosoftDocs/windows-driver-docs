@@ -1,7 +1,6 @@
 ---
 title: Irql\_MCO\_Function rule (ndis)
 description: The Irql\_MCO\_Function rule specifies that the NDIS MCO DDIs for miniport drivers must be called at correct IRQL levels.
-ms.assetid: 4a6643a2-d831-4b60-a9d6-decf494a2ffc
 ms.date: 05/21/2018
 keywords: ["Irql_MCO_Function rule (ndis)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: ClearPathHealthCounters function
 description: The ClearPathHealthCounters method is used to clear all gathered MPIO health statistics for a particular path of an MPIO disk.
-ms.assetid: 97f110c9-50c4-4570-ad5e-d1d17b711c6a
 keywords: ["ClearPathHealthCounters function Storage Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: MPIO\_CONTROLLER\_CONFIGURATION WMI Class
 description: MPIO\_CONTROLLER\_CONFIGURATION WMI Class
-ms.assetid: c11429d6-b016-464e-a7b4-03b6cdc8ddb7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

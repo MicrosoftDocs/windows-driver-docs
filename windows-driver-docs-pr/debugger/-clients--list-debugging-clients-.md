@@ -1,7 +1,6 @@
 ---
 title: .clients (List Debugging Clients)
 description: The .clients command lists all debugging clients currently connected to the debugging session.
-ms.assetid: a5f760d7-f454-49c5-853d-bcb545c0b05e
 keywords: [".clients (List Debugging Clients) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

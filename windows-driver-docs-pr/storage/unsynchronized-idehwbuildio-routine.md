@@ -1,7 +1,6 @@
 ---
 title: Unsynchronized IdeHwBuildIo Routine
 description: Unsynchronized IdeHwBuildIo Routine
-ms.assetid: 47e32f05-5c89-4423-b515-c774b94a9b84
 keywords:
 - ATA Port drivers WDK , synchronization
 - synchronization WDK ATA Port driver

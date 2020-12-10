@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_TASK_OFFLOAD
 description: This topic describes the OID_TCP_TASK_OFFLOAD object identifier (OID).
-ms.assetid: 4e16cdb7-b899-43b6-a94b-d691622be105
 keywords:
 - OID_TCP_TASK_OFFLOAD
 ms.date: 11/06/2017

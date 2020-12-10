@@ -1,7 +1,6 @@
 ---
 title: HOTSPOT_PLUGIN_APIS structure
 description: The HOTSPOT_PLUGIN_APIS structure contains the Hotspot plugin APIs function table.
-ms.assetid: eee56f84-2c7f-4218-b7ec-b4fc0181d767
 keywords: 
 - HOTSPOT_PLUGIN_APIS structure Network Drivers Starting with Windows Vista
 - PHOTSPOT_PLUGIN_APIS structure pointer Network Drivers Starting with Windows Vista

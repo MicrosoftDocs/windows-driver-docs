@@ -1,7 +1,6 @@
 ---
 title: Output File Options
 description: Output File Options
-ms.assetid: f53785d8-2a91-47da-945c-8c52d6345ae9
 keywords:
 - trace sessions WDK , advanced options
 - summary message files WDK TraceView

@@ -1,7 +1,6 @@
 ---
 title: Providing Event Notification
 description: Providing Event Notification
-ms.assetid: 53ca7ef0-fa8b-4ae1-9b5e-b145c2d02db2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

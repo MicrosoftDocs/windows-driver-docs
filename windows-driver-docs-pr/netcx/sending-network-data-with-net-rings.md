@@ -1,7 +1,6 @@
 ---
 title: Sending network data using net rings
 description: This topic describes how NetAdapterCx client drivers use net rings and net ring iterators to send network data.
-ms.assetid: 2F3DA1A5-D0C1-4928-80B2-AF41F949FF14
 keywords:
 - NetAdapterCx Net rings and net ring iterators, NetCx Net rings and net ring iterators, NetAdapterCx PCI devices net ring, NetAdapterCx asynchronous I/O
 ms.date: 11/01/2019

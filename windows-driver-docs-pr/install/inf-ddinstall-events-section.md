@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall.Events Section
 description: Each per-Models DDInstall.Events section contains one or more INF AddEventProvider directives that reference additional INF-writer-defined sections in an INF file.
-ms.assetid: 
 keywords:
 - INF DDInstall.Events Section Device and Driver Installation
 topic_type:

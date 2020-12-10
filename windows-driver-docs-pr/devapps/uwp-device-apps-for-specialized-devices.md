@@ -1,7 +1,6 @@
 ---
 title: UWP device apps for internal devices
 description: This topic introduces the ways that UWP device apps can access internal devices.
-ms.assetid: 864EDABF-C734-425D-A532-A01E545E4E51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

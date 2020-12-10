@@ -1,7 +1,6 @@
 ---
 title: Verifying the Signature of a Release-Signed Driver File
 description: Verifying the Signature of a Release-Signed Driver File
-ms.assetid: 70876389-6493-4c16-8a82-ca72fc23325c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

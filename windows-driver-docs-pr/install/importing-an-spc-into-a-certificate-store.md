@@ -1,7 +1,6 @@
 ---
 title: Importing an SPC into a Certificate Store
 description: Importing an SPC into a Certificate Store
-ms.assetid: 4640b48c-e56f-4c6b-8943-f8b6fc3e37d7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

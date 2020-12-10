@@ -1,7 +1,6 @@
 ---
 title: Setting the Directory Path of the Text Logs
 description: Setting the Directory Path of the Text Logs
-ms.assetid: d56a8f6c-365b-427d-b965-65616ede3d7e
 keywords:
 - text logs WDK SetupAPI , directory path
 - directory paths WDK SetupAPI logging

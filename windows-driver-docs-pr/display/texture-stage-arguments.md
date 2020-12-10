@@ -1,7 +1,6 @@
 ---
 title: Texture Stage Arguments
 description: Texture Stage Arguments
-ms.assetid: 434a0b88-2fb6-43e3-8a54-48f134a0dbff
 keywords:
 - multiple textures WDK Direct3D , texture stages
 - texture stages WDK Direct3D

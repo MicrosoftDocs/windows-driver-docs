@@ -1,7 +1,6 @@
 ---
 title: Customized Font Installers for Unidrv
 description: Customized Font Installers for Unidrv
-ms.assetid: d753368d-b1c8-454e-a02b-131dc778e723
 keywords:
 - printer driver customizing WDK , installing components
 - customizing printer drivers WDK , installing components

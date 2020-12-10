@@ -1,7 +1,6 @@
 ---
 title: Controlling a General I/O Target's State
 description: Controlling a General I/O Target's State
-ms.assetid: 37f756bf-b655-428e-b72c-f86c71f1a2db
 keywords:
 - general I/O targets WDK KMDF , states
 - started I/O target state WDK KMDF

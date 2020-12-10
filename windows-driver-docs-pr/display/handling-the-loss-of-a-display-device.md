@@ -1,7 +1,6 @@
 ---
 title: Handling the Loss of a Display Device
 description: Handling the Loss of a Display Device
-ms.assetid: 7af8d7e6-733d-4976-a516-7b41fa74dd5d
 keywords:
 - OPM WDK display , loss of device
 ms.date: 04/20/2017

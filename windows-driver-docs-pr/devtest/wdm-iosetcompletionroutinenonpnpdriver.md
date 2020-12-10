@@ -1,7 +1,6 @@
 ---
 title: IoSetCompletionRoutineNonPnpDriver rule (wdm)
 description: The IoSetCompletionRoutineNonPnpDriver rule specifies that drivers that are not PnP drivers should use IoSetCompletionRoutineEx not IoSetCompletionRoutine.
-ms.assetid: E4C6415B-DCB5-4AE2-9112-BC314D443C73
 ms.date: 05/21/2018
 keywords: ["IoSetCompletionRoutineNonPnpDriver rule (wdm)"]
 topic_type:

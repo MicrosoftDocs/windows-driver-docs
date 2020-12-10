@@ -1,7 +1,6 @@
 ---
 title: Overview of the Boot.ini File
 description: The Boot.ini file is a text file that contains the boot options for computers with BIOS firmware running NT-based operating system prior to Windows Vista. It is located at the root of the system partition, typically c:\Boot.ini.
-ms.assetid: bc9bb063-4caa-42fe-bb3d-dc588fbbb8d9
 keywords:
 - Boot.ini files WDK , about Boot.ini files
 - boot loader section WDK boot options

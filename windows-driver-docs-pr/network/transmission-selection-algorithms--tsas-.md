@@ -1,7 +1,6 @@
 ---
 title: Transmission Selection Algorithms (TSAs)
 description: Transmission Selection Algorithms (TSAs)
-ms.assetid: D977C1AA-088A-4E3E-A856-A9AA22DE4BBD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

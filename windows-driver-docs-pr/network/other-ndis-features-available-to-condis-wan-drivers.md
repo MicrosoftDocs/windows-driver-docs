@@ -1,7 +1,6 @@
 ---
 title: Other NDIS Features Available to CoNDIS WAN Drivers
 description: Other NDIS Features Available to CoNDIS WAN Drivers
-ms.assetid: eb002029-d7da-45ff-9308-f61d90f751d0
 keywords:
 - CoNDIS WAN drivers WDK networking , features
 ms.date: 04/20/2017

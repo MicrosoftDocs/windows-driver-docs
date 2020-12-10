@@ -1,7 +1,6 @@
 ---
 title: Making Drivers Pageable
 description: Making Drivers Pageable
-ms.assetid: 0b3c1e00-2416-4534-9934-bb05f91c7482
 keywords: ["memory management WDK kernel , pageable drivers", "pageable drivers WDK kernel", "pageable drivers WDK kernel , about pageable drivers", "paged out drivers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

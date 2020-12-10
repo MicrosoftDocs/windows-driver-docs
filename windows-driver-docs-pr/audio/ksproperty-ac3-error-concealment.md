@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_ERROR\_CONCEALMENT
 description: The KSPROPERTY\_AC3\_ERROR\_CONCEALMENT property specifies the manner in which errors in the AC-3-encoded stream should be concealed during playback.
-ms.assetid: bdf3dd8f-0757-4679-b051-63736503c5b4
 keywords: ["KSPROPERTY_AC3_ERROR_CONCEALMENT Audio Devices"]
 topic_type:
 - apiref

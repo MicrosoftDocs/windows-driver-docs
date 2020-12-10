@@ -1,7 +1,6 @@
 ---
 title: Enumerate available mobile broadband accounts
 description: Enumerate available mobile broadband accounts
-ms.assetid: 6dcf4789-09e8-43d2-9617-a026cbe0dfbb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

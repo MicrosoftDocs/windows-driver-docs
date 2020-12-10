@@ -1,7 +1,6 @@
 ---
 title: IRP_MJ_SET_EA
 description: IRP\_MJ\_SET\_EA
-ms.assetid: f9e1f867-a473-46ac-a1c0-63534c4c0755
 keywords: ["IRP_MJ_SET_EA Installable File System Drivers"]
 topic_type:
 - apiref

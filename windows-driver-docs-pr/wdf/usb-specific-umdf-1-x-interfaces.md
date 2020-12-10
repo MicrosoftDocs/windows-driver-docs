@@ -1,7 +1,6 @@
 ---
 title: USB-Specific UMDF 1.x Interfaces
 description: USB-Specific UMDF 1.x Interfaces
-ms.assetid: b458d96d-e15e-4a9b-a26e-490620cec38e
 keywords:
 - UMDF WDK , UMDF-USB object model
 - User-Mode Driver Framework WDK , UMDF-USB object model

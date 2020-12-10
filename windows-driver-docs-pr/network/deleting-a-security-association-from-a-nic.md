@@ -1,7 +1,6 @@
 ---
 title: Deleting a Security Association from a NIC
 description: Deleting a Security Association from a NIC
-ms.assetid: 739a3fef-f0b4-4d7c-9d92-df52fd27915d
 keywords:
 - security associations WDK IPsec offload
 - SAs WDK IPsec offload

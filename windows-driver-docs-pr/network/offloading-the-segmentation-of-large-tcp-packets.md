@@ -1,7 +1,6 @@
 ---
 title: Offloading the Segmentation of Large TCP Packets
 description: Offloading the Segmentation of Large TCP Packets
-ms.assetid: 6ae162fb-a8fc-47b8-80ae-ff39f3059d53
 keywords:
 - task offload WDK TCP/IP transport , large packet segmentation
 - large TCP packet segmentation WDK networking

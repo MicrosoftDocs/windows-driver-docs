@@ -1,7 +1,6 @@
 ---
 title: Working with USB Interfaces
 description: Working with USB Interfaces
-ms.assetid: 6a1801e4-bd46-4a78-8c30-7dc62e41a37a
 keywords:
 - USB I/O targets WDK KMDF , USB interfaces
 - USB interfaces WDK KMDF

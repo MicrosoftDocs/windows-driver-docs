@@ -1,7 +1,6 @@
 ---
 title: Modifying Packet Coalescing Receive Filters
 description: Modifying Packet Coalescing Receive Filters
-ms.assetid: 082A969F-2977-482A-B060-ED8D353EC2E9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

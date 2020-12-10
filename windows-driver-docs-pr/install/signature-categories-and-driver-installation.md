@@ -1,7 +1,6 @@
 ---
 title: Signature Categories and Driver Installation
 description: Signature Categories and Driver Installation
-ms.assetid: d5b0e3a3-51c3-40d8-a2dc-c9392feff2cb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

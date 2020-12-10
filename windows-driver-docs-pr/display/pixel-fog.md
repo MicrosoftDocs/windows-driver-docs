@@ -1,7 +1,6 @@
 ---
 title: Pixel Fog
 description: Pixel Fog
-ms.assetid: 40896f51-87f5-44e9-9199-e92f51a1e8f1
 keywords:
 - global fog WDK Direct3D
 - table fog WDK Direct3D

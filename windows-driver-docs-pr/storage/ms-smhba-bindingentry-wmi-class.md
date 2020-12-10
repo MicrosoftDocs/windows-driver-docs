@@ -1,7 +1,6 @@
 ---
 title: MS\_SMHBA\_BINDINGENTRY WMI Class
 description: MS\_SMHBA\_BINDINGENTRY WMI Class
-ms.assetid: b7b2315f-21db-41a4-8390-3c413cb39f5b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

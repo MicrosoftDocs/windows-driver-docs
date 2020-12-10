@@ -1,7 +1,6 @@
 ---
 title: OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE
 description: NDIS protocol drivers issue object identifier (OID) method requests of OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE to notify the miniport driver that an allocation has completed for the current batch of receive queues.
-ms.assetid: d09fcab5-4c3b-432a-ba9e-fd4269537de6
 ms.date: 08/08/2017
 keywords: 
  -OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE Network Drivers Starting with Windows Vista

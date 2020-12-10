@@ -1,7 +1,6 @@
 ---
 title: Reordering Textures In Nonlocal Display Memory
 description: Reordering Textures In Nonlocal Display Memory
-ms.assetid: b4b4c478-7034-4ff9-8cb2-f86baffd89f7
 keywords:
 - display memory WDK DirectDraw , reordering textures
 - nonlocal display memory WDK DirectDraw , reordering textures

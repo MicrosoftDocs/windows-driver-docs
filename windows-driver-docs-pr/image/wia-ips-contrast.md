@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_CONTRAST
 description: The WIA\_IPS\_CONTRAST property contains the current hardware contrast setting for a device.
-ms.assetid: 7fecfd43-212c-40e6-8520-ef1819448895
 keywords: ["WIA_IPS_CONTRAST Imaging Devices"]
 topic_type:
 - apiref

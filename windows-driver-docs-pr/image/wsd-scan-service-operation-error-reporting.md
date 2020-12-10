@@ -1,7 +1,6 @@
 ---
 title: WSD Scan Service Operation Error Reporting
 description: WSD Scan Service Operation Error Reporting
-ms.assetid: 78cf0cf9-f792-4dc9-b0df-c45b408b85ab
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

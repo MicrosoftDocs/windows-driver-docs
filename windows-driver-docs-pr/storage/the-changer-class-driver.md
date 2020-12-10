@@ -1,7 +1,6 @@
 ---
 title: About the Changer Class Driver
 description: The Changer Class Driver
-ms.assetid: c1c2330c-9cfc-432f-945c-630dc16aa54d
 keywords:
 - changer drivers WDK storage , class drivers
 - storage changer drivers WDK , class drivers

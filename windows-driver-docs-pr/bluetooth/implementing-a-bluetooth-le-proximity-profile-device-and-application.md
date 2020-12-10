@@ -1,7 +1,6 @@
 ---
 title: Bluetooth LE Proximity Profile Overview
 description: Proximity detection is a common use of Bluetooth Low Energy (LE).
-ms.assetid: 4BF27CBE-C89A-48DC-8536-1A5111CDB0C4
 ms.date: 07/01/2019
 ms.localizationpriority: medium
 ---

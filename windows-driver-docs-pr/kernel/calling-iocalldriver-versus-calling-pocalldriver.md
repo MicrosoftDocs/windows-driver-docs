@@ -1,7 +1,6 @@
 ---
 title: Calling IoCallDriver versus Calling PoCallDriver
 description: Calling IoCallDriver versus Calling PoCallDriver
-ms.assetid: a47e2310-e89b-4552-bbe3-d4984ae8b564
 keywords: ["PoCallDriver", "active power IRPs WDK kernel", "power IRPs WDK kernel , IoCallDriver versus PoCallDriver"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

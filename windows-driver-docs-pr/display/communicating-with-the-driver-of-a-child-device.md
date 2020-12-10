@@ -1,7 +1,6 @@
 ---
 title: Communicating with the Driver of a Child Device
 description: Communicating with the Driver of a Child Device
-ms.assetid: f1311941-bfba-44a4-867c-95fcbef19510
 keywords:
 - video miniport drivers WDK Windows 2000 , child devices
 - child devices WDK video miniport , communicating with the driver

@@ -1,7 +1,6 @@
 ---
 title: HBAFCPBindingEntry2 WMI Class
 description: HBAFCPBindingEntry2 WMI Class
-ms.assetid: b9423b59-1d55-4487-bebb-e3eb786fc1be
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

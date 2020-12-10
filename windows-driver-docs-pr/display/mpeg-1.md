@@ -1,7 +1,6 @@
 ---
 title: MPEG-1
 description: MPEG-1
-ms.assetid: be4db8ea-98fa-4693-a2ff-888499e97f38
 keywords:
 - MPEG-1 WDK DirectX VA
 - backward prediction WDK DirectX VA

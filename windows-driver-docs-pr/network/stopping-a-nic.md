@@ -1,7 +1,6 @@
 ---
 title: Stopping a NIC
 description: Stopping a NIC
-ms.assetid: 033b45bd-fbe9-4a40-84e6-b9447370b17f
 keywords:
 - NICs WDK networking , stopping
 - network interface cards WDK networking , stopping

@@ -1,7 +1,6 @@
 ---
 title: Example 2 Basic Start Command with Provider
 description: Example 2 Basic Start Command with Provider
-ms.assetid: 86730943-107e-441a-a860-4df540bc0426
 keywords:
 - trace sessions WDK , starting
 - start command

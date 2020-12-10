@@ -1,7 +1,6 @@
 ---
 title: Read and Write Attribute Memory
 description: Read and Write Attribute Memory
-ms.assetid: 8e430057-b68a-4edc-8755-1d7255412269
 keywords:
 - PCMCIA WDK buses , attribute memory
 - attribute memory WDK PCMCIA bus , read and write

@@ -1,7 +1,6 @@
 ---
 title: File System Object Creation and Deletion
 description: File System Object Creation and Deletion
-ms.assetid: 71e342cf-455f-4b01-af55-12568bf06728
 keywords:
 - mini-redirectors WDK , object creation
 - mini-redirectors WDK , object deletion

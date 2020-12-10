@@ -1,7 +1,6 @@
 ---
 title: Stress Testing
 description: Stress Testing
-ms.assetid: 14d20ce2-7d98-4fa3-b639-a4e9b7b07a72
 keywords:
 - stress testing WDK printer
 - bus stress testing WDK printer

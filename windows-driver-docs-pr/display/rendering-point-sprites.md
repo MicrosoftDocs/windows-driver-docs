@@ -1,7 +1,6 @@
 ---
 title: Rendering Point Sprites
 description: Rendering Point Sprites
-ms.assetid: f2bdfd93-5b79-4f48-87b6-a76847892f5e
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , point sprites
 - point sprites WDK DirectX 8.0

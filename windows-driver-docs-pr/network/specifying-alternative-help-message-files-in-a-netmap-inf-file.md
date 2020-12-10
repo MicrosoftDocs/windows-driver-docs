@@ -1,7 +1,6 @@
 ---
 title: Specifying Alternative Help Message Files in a Netmap.inf File
 description: Specifying Alternative Help Message Files in a Netmap.inf File
-ms.assetid: 66ab7124-803a-4497-b5e0-98b47006dfb6
 keywords:
 - network component upgrades WDK , netmap.inf files
 - upgrading network components WDK , netmap.inf files

@@ -1,7 +1,6 @@
 ---
 title: amli u
 description: The amli u extension unassembles AML code.
-ms.assetid: 0a8b160f-9aae-4ef0-a569-8e701de9679c
 keywords: ["amli u Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

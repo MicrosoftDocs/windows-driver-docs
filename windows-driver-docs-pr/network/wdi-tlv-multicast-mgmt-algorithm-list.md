@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST
 description: WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST is a TLV that contains an array of multicast management algorithm pairs.
-ms.assetid: 96EAD5FE-71C7-4B3E-BB52-06FA50F375D8
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_MULTICAST_MGMT_ALGORITHM_LIST Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: RSS Hashing Types
 description: RSS Hashing Types
-ms.assetid: 21ea384c-5fe2-46c1-9e01-30513f505672
 keywords:
 - receive-side scaling WDK networking , hash
 - RSS WDK networking , hash

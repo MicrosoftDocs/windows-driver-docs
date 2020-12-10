@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Synth\_Dls
 description: KSPROPSETID\_Synth\_Dls
-ms.assetid: 8d6038bf-1ec4-4120-9815-d1e6b7994f33
 keywords: ["KSPROPSETID_Synth_Dls"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

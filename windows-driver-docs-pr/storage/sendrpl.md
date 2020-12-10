@@ -1,7 +1,6 @@
 ---
 title: SendRPL function
 description: The SendRPL WMI method sends a read port list (RPL) command through the indicated port to indicated destination port.
-ms.assetid: 3cf3dfe2-6ff9-431f-b6bf-66ef8dd77df3
 keywords: ["SendRPL function Storage Devices"]
 topic_type:
 - apiref

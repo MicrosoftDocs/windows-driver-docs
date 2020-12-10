@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_DEVICE\_PREEMPTED
 description: The KSEVENT\_DEVICE\_PREEMPTED event is triggered when a device has been preempted.
-ms.assetid: A51B7109-AFBE-4849-9655-F913FB7851F1
 keywords: ["KSEVENT_DEVICE_PREEMPTED Streaming Media Devices"]
 topic_type:
 - apiref

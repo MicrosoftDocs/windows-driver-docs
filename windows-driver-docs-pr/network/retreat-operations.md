@@ -1,7 +1,6 @@
 ---
 title: Retreat Operations
 description: Retreat Operations
-ms.assetid: fdf1228b-ccae-4079-b968-b4dbb5665555
 keywords:
 - network data WDK , retreat operations
 - data WDK networking , retreat operations

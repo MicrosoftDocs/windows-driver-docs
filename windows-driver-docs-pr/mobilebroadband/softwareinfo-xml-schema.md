@@ -1,7 +1,6 @@
 ---
 title: SoftwareInfo XML schema overview
 description: SoftwareInfo XML schema overview
-ms.assetid: 6e2e2b5a-c04e-4dfd-adbd-158b391aea3e
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

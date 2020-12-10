@@ -1,7 +1,6 @@
 ---
 title: Accessing Configuration Information for a Filter Driver
 description: Accessing Configuration Information for a Filter Driver
-ms.assetid: 7d6bd7d4-3c06-4fc3-874b-fb8369ac227e
 keywords:
 - filter drivers WDK networking , configuration information
 - NDIS filter drivers WDK , configuration information

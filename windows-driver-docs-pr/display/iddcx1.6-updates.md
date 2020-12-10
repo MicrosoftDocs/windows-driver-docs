@@ -1,7 +1,6 @@
 ---
 title: Updates for IddCx versions 1.6 and later
 description: IddCx version 1.6 updates for console and remote indirect display drivers
-ms.assetid: 41e9f99f-2466-47df-893a-3cd7c1b5ed10
 ms.date: 10/20/2020
 keywords:
 - Console and remote indirect display driver, IddCx versions 1.6 and later

@@ -1,7 +1,6 @@
 ---
 title: DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 description: DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
-ms.assetid: 2aef590f-2328-4175-ab60-c72b1fd83db7
 keywords:
 - Direct3D version 10.1 WDK Windows 7 display , DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
 - extended format WDK Windows 7 display , DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM

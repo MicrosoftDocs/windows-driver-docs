@@ -1,7 +1,6 @@
 ---
 title: Driver development changes for Windows 10, version 1709
 description: Learn about new features for driver development in Windows 10, such as new content sets for Windows debugger.
-ms.assetid: 68a5a513-0dab-40f7-b67f-29b76061e1ab
 ms.date: 04/15/2020
 author: EliotSeattle
 ms.localizationpriority: medium

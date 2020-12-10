@@ -1,7 +1,6 @@
 ---
 title: FSCTL_OPLOCK_BREAK_ACKNOWLEDGE control code
 description: The FSCTL\_OPLOCK\_BREAK\_ACKNOWLEDGE control code responds to notification that an exclusive (level 1, batch, or filter) opportunistic lock (oplock) on a file has been broken.
-ms.assetid: 067aa36b-fa5b-4bc8-bcec-e221509c0d4d
 keywords: ["FSCTL_OPLOCK_BREAK_ACKNOWLEDGE control code Installable File System Drivers"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DirectDraw Driver Initialization
 description: DirectDraw Driver Initialization
-ms.assetid: 1302d951-1848-4af5-a406-dfac267f43e4
 keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , about DirectDraw driver initialization
 - initializing DirectDraw drivers

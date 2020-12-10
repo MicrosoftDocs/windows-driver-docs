@@ -1,7 +1,6 @@
 ---
 title: Setting Up Kernel-Mode Debugging over a USB 3.0 Cable Manually
 description: Debugging Tools for Windows supports kernel debugging over a USB 3.0 cable. This topic describes how to set up USB 3.0 debugging manually.
-ms.assetid: 9A9F5DA0-B98A-4C19-A723-67D06B2409B5
 ms.date: 05/07/2020
 ms.localizationpriority: medium
 ---
@@ -118,6 +117,24 @@ On the host computer, open a Command Prompt window and enter the following comma
 Once the debugger is connected, reboot the target computer. One way to do reboot the PC, is to use the `shutdown -r -t 0` command from an administrator's command prompt.
 
 After the target PC restarts, the debugger should connect automatically.
+
+## Troubleshooting
+
+### USB device not recognized
+
+If a windows notification appears on the host with the text "USB device not recognized" when inserting the debug cable it is possible that a known USB 3.1 to 3.1 compatibility issue is being hit. This issue affects debug configurations when the debug cable is connected to a USB 3.1 controller on the host and an Intel (Ice Lake or Tiger Lake) 3.1 USB controller on the target.
+
+For more information and processor model listings see [Ice Lake (microprocessor) - Wikipedia](https://en.wikipedia.org/wiki/Ice_Lake_(microprocessor)) and or [Tiger Lake (microprocessor) - Wikipedia](https://en.wikipedia.org/wiki/Tiger_Lake_(microprocessor)). To find the processor model of the target machine, open the Settings app and go to "System" then "About". "Processor" will be listed under "Device specifications".
+
+To verify this is the problem occurring, open device manager and look for "USB Debug Connection Device" under "Universal Serial Bus controllers". If this device cannot be found, check for an "Unknown device" under "Other devices". Right click on the device to open its properties page. The device status text box will have the text "Windows has stopped this device because it has reported problems. (Code 43)" and "The USB device returned an invalid USB BOS descriptor".
+
+To work around this problem, run these commands from an administrator command prompt to make changes to the registry:
+```
+reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\349500E00000 /v SkipBOSDescriptorQuery /t REG_DWORD /d 1 /f
+reg add HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\usbflags\045E06560000 /v SkipBOSDescriptorQuery /t REG_DWORD /d 1 /f
+```
+
+Then, remove and re-insert the debug cable.
 
 ## Related topics
 

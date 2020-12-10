@@ -1,7 +1,6 @@
 ---
 title: GUID_BTHPORT_DEVICE_INTERFACE
 description: GUID_BTHPORT_DEVICE_INTERFACE
-ms.assetid: 2e23912c-ab5b-4c4d-94c7-e763544cc2f5
 keywords: ["GUID_BTHPORT_DEVICE_INTERFACE Device and Driver Installation"]
 topic_type:
 - apiref

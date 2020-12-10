@@ -1,7 +1,6 @@
 ---
 title: Running test passes
 description: The MITT platform can test GPIO buttons by offering both test automation and the option to customize the GPIO patterns that are sent for targeted investigations.
-ms.assetid: E24AD015-1E14-4EF9-8443-D0F38FA3321E
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

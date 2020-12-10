@@ -1,7 +1,6 @@
 ---
 title: Subscribing for messages
 description: Subscribing for messages
-ms.assetid: CF0D5CE0-A0E0-47D4-88E6-FBE186F78626
 keywords:
 - NFC
 - near field communications

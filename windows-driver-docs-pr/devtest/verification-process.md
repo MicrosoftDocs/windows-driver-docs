@@ -1,7 +1,6 @@
 ---
 title: Verification Process
 description: Verification Process
-ms.assetid: 3803771b-94ef-4e02-9d08-8703283b3f99
 keywords:
 - Static Driver Verifier WDK , verification process
 - StaticDV WDK , verification process

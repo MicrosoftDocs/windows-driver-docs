@@ -1,7 +1,6 @@
 ---
 title: Enumerating Ports
 description: Enumerating Ports
-ms.assetid: b38c5556-5124-45ea-af2f-4a4cd9313cc7
 keywords:
 - enumerating NDIS ports WDK NDIS
 - ports WDK NDIS , OID requests

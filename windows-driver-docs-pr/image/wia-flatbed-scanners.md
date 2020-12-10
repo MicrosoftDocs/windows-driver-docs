@@ -1,7 +1,6 @@
 ---
 title: WIA Flatbed Scanners
 description: WIA Flatbed Scanners
-ms.assetid: 8ff6342b-94b1-404e-9d04-b513511f65dc
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

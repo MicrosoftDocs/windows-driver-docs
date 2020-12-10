@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_BATTERY
 description: GUID_DEVICE_BATTERY
-ms.assetid: 8391b167-0d17-46bf-9320-4fceed54aead
 keywords: ["GUID_DEVICE_BATTERY Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PAGE\_SIZE
 description: The WIA\_DPS\_PAGE\_SIZE property contains the size of the page that is currently selected to be scanned.
-ms.assetid: 16e32b83-26b8-4283-a937-9fbbe77b42b8
 keywords: ["WIA_DPS_PAGE_SIZE Imaging Devices"]
 topic_type:
 - apiref

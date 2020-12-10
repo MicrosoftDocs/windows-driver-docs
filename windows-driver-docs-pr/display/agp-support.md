@@ -1,7 +1,6 @@
 ---
 title: AGP Support
 description: AGP Support
-ms.assetid: 05a2f942-4374-421e-8292-d122f9fe3571
 keywords:
 - AGP WDK DirectDraw , about AGP support
 - drawing AGP support WDK DirectDraw , about AGP support

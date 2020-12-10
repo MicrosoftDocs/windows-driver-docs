@@ -1,7 +1,6 @@
 ---
 title: Automatic Document Feeder Commands
 description: Automatic Document Feeder Commands
-ms.assetid: dd6664d6-4853-4f97-85cc-39a7879d523e
 ms.date: 11/09/2020
 ms.localizationpriority: medium
 ---

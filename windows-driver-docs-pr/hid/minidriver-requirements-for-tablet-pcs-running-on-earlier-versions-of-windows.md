@@ -1,7 +1,6 @@
 ---
 title: Minidriver requirements for tablet PCs
 description: Describes the general requirements for vendor-supplied HID minidrivers for pen devices and button devices.
-ms.assetid: 89BE7E13-4D46-4265-9522-D5A51999F633
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

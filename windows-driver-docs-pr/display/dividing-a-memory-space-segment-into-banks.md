@@ -1,7 +1,6 @@
 ---
 title: Dividing a Memory-Space Segment into Banks
 description: Dividing a Memory-Space Segment into Banks
-ms.assetid: 7fdbe511-ae92-44c2-9651-51b3ead11425
 keywords:
 - memory segments WDK display , banks
 - banked memory WDK display

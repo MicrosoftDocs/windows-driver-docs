@@ -1,7 +1,6 @@
 ---
 title: SetPresharedKeyForId
 description: SetPresharedKeyForId
-ms.assetid: d966fd05-31ac-4774-b970-e4ce3d02a5ba
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

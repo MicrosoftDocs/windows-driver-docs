@@ -1,7 +1,6 @@
 ---
 title: Interface Identifiers for Printer Drivers
 description: Interface Identifiers for Printer Drivers
-ms.assetid: 8182cba5-4461-4ca0-8b01-342519609b1f
 keywords:
 - COM interfaces WDK print , interface identifiers
 - interface identifiers WDK print

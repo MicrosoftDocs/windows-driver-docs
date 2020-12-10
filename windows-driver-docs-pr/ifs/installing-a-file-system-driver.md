@@ -1,7 +1,6 @@
 ---
 title: Installing a File System Driver
 description: Installing a File System Driver
-ms.assetid: 1297b565-ac85-4248-927a-ab91b6cb3ab0
 keywords:
 - drivers WDK file system , installing
 - file system drivers WDK , installing

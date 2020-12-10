@@ -1,7 +1,6 @@
 ---
 title: Saving Defect Traces
 description: Saving Defect Traces in Static Driver Verifier
-ms.assetid: 6d54a532-75ff-4226-86a7-cdc2046b0b5b
 keywords:
 - Static Driver Verifier WDK , Static Driver Verifier Report
 - StaticDV WDK , Static Driver Verifier Report

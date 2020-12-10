@@ -1,7 +1,6 @@
 ---
 title: Web Services for Devices Print Service Schema
 description: Web Services for Devices Print Service Schema
-ms.assetid: 6a629b69-73a9-4d78-ace1-4cb2c807db14
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

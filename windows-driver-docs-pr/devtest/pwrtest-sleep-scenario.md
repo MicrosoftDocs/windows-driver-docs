@@ -1,7 +1,6 @@
 ---
 title: PwrTest Sleep Scenario
 description: The PwrTest Sleep Scenario facilitates automated testing of sleep and resume transitions.
-ms.assetid: 2003ff3e-bc29-4741-a0a6-371948982679
 ms.date: 06/24/2020
 ms.localizationpriority: medium
 ---

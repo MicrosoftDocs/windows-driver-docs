@@ -1,7 +1,6 @@
 ---
 title: A Device Enters a Low-Power State
 description: Learn what happens to a device when it enters a low-power state. For example, when a device is idle while the system is still in its working state.
-ms.assetid: 07d7c460-4316-40a9-b502-f7c1bd1182c2
 keywords:
 - power management WDK KMDF , low-power states
 - low-power states WDK KMDF

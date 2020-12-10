@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_AdapterEvent WMI Class
 description: MSiSCSI\_AdapterEvent WMI Class
-ms.assetid: 9c57e2d6-0d88-4a48-99c6-866c9d107d79
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

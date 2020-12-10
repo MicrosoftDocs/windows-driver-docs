@@ -1,7 +1,6 @@
 ---
 title: Smart Card Driver Debugging
 description: Smart Card Driver Debugging
-ms.assetid: 701528f6-d8ba-4a73-ad68-cb35497a3474
 keywords:
 - smart card drivers WDK , debugging
 - debugging drivers WDK smart card

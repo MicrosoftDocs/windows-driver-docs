@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_PEAKMETER
 description: KSNODETYPE\_PEAKMETER
-ms.assetid: 11c886eb-dd63-44dd-9bca-dd19a8dd6948
 keywords: ["KSNODETYPE_PEAKMETER Audio Devices"]
 topic_type:
 - apiref

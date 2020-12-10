@@ -1,7 +1,6 @@
 ---
 title: ChangeQueueState rule (kmdf)
 description: The ChangeQueueState rule specifies that the WDF driver doesn't try to change the state of the Queue from concurrent threads or doesn’t call state changing DDIs one after another from within the same thread.
-ms.assetid: C05A04E8-F8F2-4339-AAB7-FD62BE1DAAA2
 ms.date: 05/21/2018
 keywords: ["ChangeQueueState rule (kmdf)"]
 topic_type:

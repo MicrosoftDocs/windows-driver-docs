@@ -1,7 +1,6 @@
 ---
 title: Film Configuration Elements
 description: Film Configuration Elements
-ms.assetid: bb7329c6-a987-4cf8-a5cd-c1da9cd5095b
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

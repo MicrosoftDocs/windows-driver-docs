@@ -1,7 +1,6 @@
 ---
 title: Specifying Filter Driver Binding Relationships
 description: Specifying Filter Driver Binding Relationships
-ms.assetid: 0f0b81f4-2ac1-456c-aef0-73f3bbb7ce0e
 keywords:
 - filter drivers WDK networking , binding relationships
 - NDIS filter drivers WDK , binding relationships

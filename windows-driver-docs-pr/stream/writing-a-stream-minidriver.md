@@ -1,7 +1,6 @@
 ---
 title: Writing a Stream Minidriver
 description: Writing a Stream Minidriver
-ms.assetid: 83540dff-3774-4197-8ba1-d28e12b4e366
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , writing
 - streaming minidrivers WDK Windows 2000 Kernel , writing

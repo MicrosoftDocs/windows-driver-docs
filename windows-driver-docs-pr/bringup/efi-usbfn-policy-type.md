@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_POLICY_TYPE
 description: EFI_USBFN_POLICY_TYPE
-ms.assetid: 51f615d4-a226-45d5-b5e9-fea4859640a9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

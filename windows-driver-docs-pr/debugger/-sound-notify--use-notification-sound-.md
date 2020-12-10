@@ -1,7 +1,6 @@
 ---
 title: .sound_notify (Use Notification Sound)
 description: The .sound_notify command causes a sound to be played when WinDbg enters the wait-for-command state.
-ms.assetid: 72ef33ea-1c75-4add-80eb-a0d824571948
 keywords: [".sound_notify (Use Notification Sound) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Filter Control Mutex in AVStream
 description: Filter Control Mutex in AVStream
-ms.assetid: 402795a0-e567-4e7e-a7d8-b2ce29ffb8fd
 keywords:
 - filter control mutex WDK AVStream
 - AVStream mutexes WDK

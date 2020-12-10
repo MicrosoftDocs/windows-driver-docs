@@ -1,7 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_ELECTRICAL
 description: The SENSOR\_CATEGORY\_ELECTRICAL category contains sensors that provide information about electrical systems.
-ms.assetid: b14cf399-7b95-4b32-8371-21f45175ed2b
 keywords: ["SENSOR_CATEGORY_ELECTRICAL Sensor Devices"]
 topic_type:
 - apiref

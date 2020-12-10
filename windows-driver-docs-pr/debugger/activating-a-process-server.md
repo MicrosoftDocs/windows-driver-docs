@@ -1,7 +1,6 @@
 ---
 title: Activating a Process Server
 description: To activate a process server, open an elevated Command Prompt window (Run as Administrator), and enter the dbgsrv command.
-ms.assetid: 566a4f64-8a14-469b-b50c-20e3c00aa2f8
 keywords: ["Activating a Process Server Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

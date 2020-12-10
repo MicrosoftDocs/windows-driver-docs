@@ -1,7 +1,6 @@
 ---
 title: Reading the LogViewer Display
 description: Reading the LogViewer Display
-ms.assetid: 425aff5d-780e-4600-a43a-8012d70263f1
 keywords: ["LogViewer, display"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

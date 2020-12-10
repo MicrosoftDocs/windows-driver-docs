@@ -1,7 +1,6 @@
 ---
 title: Customizing the Network Upgrade Process
 description: Customizing the Network Upgrade Process
-ms.assetid: c754317c-fe31-4a61-9c73-93ae71f64b03
 keywords:
 - network component upgrades WDK , customizing
 - upgrading network components WDK , customizing

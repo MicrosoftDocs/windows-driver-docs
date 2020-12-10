@@ -1,7 +1,6 @@
 ---
 title: Callout Driver Installation
 description: Callout Driver Installation
-ms.assetid: 5288918b-316b-46a0-bc68-74cca0c7599c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

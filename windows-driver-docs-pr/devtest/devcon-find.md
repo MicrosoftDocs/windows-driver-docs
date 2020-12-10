@@ -1,7 +1,6 @@
 ---
 title: DevCon Find
 description: Finds all devices that are currently attached to the computer. Displays the device instance ID and device description. Valid on local and remote computers.
-ms.assetid: ecd72b34-4117-4360-95d2-e87702f025a1
 keywords:
 - DevCon Find Driver Development Tools
 topic_type:

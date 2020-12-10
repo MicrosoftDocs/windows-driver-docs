@@ -1,7 +1,6 @@
 ---
 title: WMI Architecture
 description: WMI Architecture
-ms.assetid: cdc8f318-1931-426e-bd9c-da7aa6a11036
 keywords: ["WMI WDK kernel , architecture"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

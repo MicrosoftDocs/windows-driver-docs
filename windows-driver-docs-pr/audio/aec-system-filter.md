@@ -1,7 +1,6 @@
 ---
 title: AEC System Filter
 description: AEC System Filter
-ms.assetid: 45865e8c-7080-428f-b436-6004a8d5c011
 keywords:
 - acoustic echo cancellation WDK audio
 - AEC WDK audio

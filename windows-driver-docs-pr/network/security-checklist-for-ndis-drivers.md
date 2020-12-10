@@ -1,7 +1,6 @@
 ---
 title: Security Checklist for NDIS Drivers
 description: Security Checklist for NDIS Drivers
-ms.assetid: a7dee05d-6697-4061-a754-1d3854d7caea
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

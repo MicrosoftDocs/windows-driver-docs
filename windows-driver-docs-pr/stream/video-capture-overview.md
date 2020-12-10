@@ -1,7 +1,6 @@
 ---
 title: Video Capture Overview
 description: Video Capture Overview
-ms.assetid: 3f299905-beab-48e2-b5c9-9850452115c6
 keywords:
 - video capture WDK AVStream , about video capture
 - capturing video WDK AVStream , about video capture

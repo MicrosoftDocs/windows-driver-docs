@@ -1,7 +1,6 @@
 ---
 title: LowerLogoVersion
 description: LowerLogoVersion
-ms.assetid: b11b9190-9e3f-473d-b78f-b472601c60e2
 keywords:
 - LowerLogoVersion
 ms.date: 04/20/2017

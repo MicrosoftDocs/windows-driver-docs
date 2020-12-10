@@ -1,7 +1,6 @@
 ---
 title: ConditionClearTime element
 description: The required ConditionClearTime element specifies the date and time at which a scan device condition was cleared.
-ms.assetid: c3a00770-278a-4840-bf6d-644fbd7c25e1
 keywords: ["ConditionClearTime element Imaging Devices"]
 topic_type:
 - apiref

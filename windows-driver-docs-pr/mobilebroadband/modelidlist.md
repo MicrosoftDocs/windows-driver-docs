@@ -1,7 +1,6 @@
 ---
 title: ModelIDList
 description: ModelIDList
-ms.assetid: b7c6a100-95bf-421c-9a84-71623c0276fe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Initializing a Virtual Miniport
 description: Initializing a Virtual Miniport
-ms.assetid: 5f2e23a9-375b-4b0d-95d2-5a3af1acb3be
 keywords:
 - initializing virtual miniports
 - virtual miniports WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Attaching the Filter Device Object to the Target Device Object
 description: Attaching the Filter Device Object to the Target Device Object
-ms.assetid: 1df293db-417a-4fee-afb8-06ab527331fb
 keywords:
 - filter drivers WDK file system , attaching filters
 - file system filter drivers WDK , attaching filters

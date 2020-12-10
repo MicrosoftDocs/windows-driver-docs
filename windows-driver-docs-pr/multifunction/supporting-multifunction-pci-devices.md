@@ -1,7 +1,6 @@
 ---
 title: Supporting Multifunction PCI Devices
 description: Supporting Multifunction PCI Devices
-ms.assetid: 57cbbcdb-7201-4bf4-a2a0-e613607e4509
 keywords:
 - multifunction devices WDK , PCI
 - PCI multifunction standard WDK

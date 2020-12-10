@@ -1,7 +1,6 @@
 ---
 title: eSIM management on Windows for mobile operators and OEMs
 description: eSIM management on Windows for mobile operators and OEMs
-ms.assetid: 7D37D297-76FD-46DA-ACC3-73E4BF970524
 ms.date: 05/23/2019
 ms.localizationpriority: medium
 ---

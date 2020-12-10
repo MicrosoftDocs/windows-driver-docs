@@ -1,7 +1,6 @@
 ---
 title: Debug Port Table 2 (DBG2)
 description: The Debug Port ACPI Table is used in platform firmware to describe the debug ports available on the system.
-ms.assetid:
 keywords:
 - DBG2
 - DBGP

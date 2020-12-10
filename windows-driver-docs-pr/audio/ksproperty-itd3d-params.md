@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_ITD3D\_PARAMS
 description: The KSPROPERTY\_ITD3D\_PARAMS property is used to set the parameters used by a 3D node's ITD algorithm.
-ms.assetid: c6f87087-3c91-46a4-b40e-078d0a015c4c
 keywords: ["KSPROPERTY_ITD3D_PARAMS Audio Devices"]
 topic_type:
 - apiref

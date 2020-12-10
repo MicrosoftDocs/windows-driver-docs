@@ -1,7 +1,6 @@
 ---
 title: Magnetometer thresholds
 description: This topic provides information about the magnetometer thresholds.
-ms.assetid: F245AD4C-F63C-48A7-9AEB-7414047E0627
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

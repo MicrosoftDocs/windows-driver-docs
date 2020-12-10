@@ -1,7 +1,6 @@
 ---
 title: WHQL Release Signature
 description: WHQL Release Signature
-ms.assetid: edc815d4-596c-4f50-9bff-029b8ea19a0a
 keywords:
 - driver signing WDK , WHQL digital signatures
 - signing drivers WDK , WHQL digital signatures

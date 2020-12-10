@@ -1,7 +1,6 @@
 ---
 title: DirectMusic WDM Kernel Streaming Background
 description: DirectMusic WDM Kernel Streaming Background
-ms.assetid: 851fa156-590a-43fb-9c49-df528f0ea608
 keywords:
 - DirectMusic kernel-mode WDK audio , WDM kernel streaming
 - kernel-mode synths WDK audio , WDM kernel streaming

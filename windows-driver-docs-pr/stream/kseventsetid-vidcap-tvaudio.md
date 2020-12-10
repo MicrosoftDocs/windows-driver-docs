@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_VIDCAP\_TVAUDIO
 description: KSEVENTSETID\_VIDCAP\_TVAUDIO
-ms.assetid: 5a79d509-d382-4120-83cc-cf9048c5589e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

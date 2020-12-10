@@ -1,7 +1,6 @@
 ---
 title: Sensor testing sources
 description: This section provides useful links to sensor testing materials.
-ms.assetid: d045b771-b536-457c-897b-ecb6517bf0a9
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Objects
 description: Winsock Kernel Objects
-ms.assetid: 1ce9bd19-9159-4a73-96f6-6e2adac886b9
 keywords:
 - Winsock Kernel WDK networking , objects
 - WSK WDK networking , objects

@@ -1,7 +1,6 @@
 ---
 title: Providing Storage for Spin Locks and Protected Data
 description: Providing Storage for Spin Locks and Protected Data
-ms.assetid: bde18474-10c3-4d9a-b120-6cbd5fc675cc
 keywords: ["storage WDK spin locks", "storing spin-lock-protected data", "spin locks WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

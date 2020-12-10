@@ -1,7 +1,6 @@
 ---
 title: MPEG2_B
 description: MPEG2_B
-ms.assetid: 7d67f0ef-a5eb-40db-9f00-6f652d28e530
 keywords:
 - MPEG2_B restricted profile WDK DirectX VA
 ms.date: 04/20/2017

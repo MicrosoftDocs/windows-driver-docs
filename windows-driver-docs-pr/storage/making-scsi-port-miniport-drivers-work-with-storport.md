@@ -1,7 +1,6 @@
 ---
 title: Making SCSI Port Miniport Drivers Work with Storport
 description: Making SCSI Port Miniport Drivers Work with Storport
-ms.assetid: d2e8daaf-47e2-4a6c-9992-517dc107d4bd
 keywords:
 - Storport drivers WDK , SCSI Port miniport drivers
 - SCSI Port drivers WDK storage , Storport drivers

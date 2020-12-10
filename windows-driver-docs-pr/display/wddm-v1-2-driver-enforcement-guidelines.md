@@ -1,7 +1,6 @@
 ---
 title: WDDM 1.2 driver enforcement guidelines
 description: This section describes WDDM 1.2 driver enforcement guidelines.
-ms.assetid: FD7D5519-DB2D-40D7-B6FA-1AD88E70B15A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

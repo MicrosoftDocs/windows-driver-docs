@@ -1,7 +1,6 @@
 ---
 title: Upgrading Network Components
 description: Upgrading Network Components
-ms.assetid: c183cd0a-53a7-4172-9cf8-70a93877c8a8
 keywords:
 - notify objects WDK networking , upgrading network components
 - network notify objects WDK , upgrading network components

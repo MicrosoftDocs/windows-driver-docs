@@ -1,7 +1,6 @@
 ---
 title: Writing Postoperation Callback Routines
 description: Writing Postoperation Callback Routines
-ms.assetid: 4940e38d-107b-45c4-aa71-6e8543330f39
 keywords:
 - postoperation callback routines WDK file system minifilter , writing
 - writing callback routines

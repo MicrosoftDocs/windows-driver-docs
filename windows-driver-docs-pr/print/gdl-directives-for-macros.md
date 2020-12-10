@@ -1,7 +1,6 @@
 ---
 title: GDL Directives for Macros
 description: GDL Directives for Macros
-ms.assetid: b3bf8686-ccbb-4c57-a896-16c6db6f131d
 keywords:
 - directives WDK GDL , macro directives
 - source files WDK GDL , macro directives

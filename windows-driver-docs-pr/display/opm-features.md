@@ -1,7 +1,6 @@
 ---
 title: OPM Features
 description: OPM Features
-ms.assetid: a2fc9d0c-d85c-484e-8cf2-09b2a84801f8
 keywords:
 - OPM WDK display , features
 - OPM WDK display , COPP and OPM comparison

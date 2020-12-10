@@ -1,13 +1,11 @@
 ---
-title: SPB controller drivers
+title: Overview of SPB controller drivers
 description: An SPB controller is a device that controls a simple peripheral bus (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB.
-ms.assetid: 046353F9-315F-4328-8ECA-1C23AF87B4B4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# SPB controller drivers
-
+# Overview of SPB controller drivers
 
 An SPB controller is a device that controls a [simple peripheral bus](/previous-versions/hh450903(v=vs.85)) (SPB) and that transfers data to and from the peripheral devices that are connected to the SPB. The hardware vendor for an SPB controller provides an SPB controller driver to manage the hardware functions in the controller.
 
@@ -30,52 +28,3 @@ The SPB controller driver directly accesses the hardware registers of the SPB co
 In response to an I/O request to transfer data to or from an SPB-connected peripheral device, the SPB controller driver initiates the bus transfer, marks the I/O request as pending, and returns without waiting for the transfer to complete. Later, when the SPB controller hardware finishes the transfer, the controller signals an interrupt, and the ISR in the SPB controller driver either completes the pending I/O request or initiates the next transfer in the requested I/O operation.
 
 Only drivers can send I/O requests directly to an SPB controller. When a user-mode application transfers data to or from an SPB-connected peripheral device, the application must rely on the SPB peripheral device driver to send the corresponding read or write requests to the SPB controller.
-
-## In this section
-
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="/windows-hardware/drivers/spb/spb-framework-extension" data-raw-source="[SPB Framework Extension (SpbCx)](./spb-framework-extension.md)">SPB Framework Extension (SpbCx)</a></p></td>
-<td><p>Starting with Windows 8, the SPB framework extension (SpbCx) is a system-supplied extension to the <a href="/windows-hardware/drivers/wdf/what-s-new-for-wdf-drivers" data-raw-source="[Kernel-Mode Driver Framework](../wdf/index.md)">Kernel-Mode Driver Framework</a> (KMDF). SpbCx works together with an <a href="/previous-versions/hh698221(v=vs.85)" data-raw-source="[SPB controller driver](/previous-versions/hh698221(v=vs.85))">SPB controller driver</a> to perform I/O operations on peripheral devices that are connected to a <a href="/previous-versions/hh450903(v=vs.85)" data-raw-source="[simple peripheral bus](/previous-versions/hh450903(v=vs.85))">simple peripheral bus</a> (SPB), such as I²C or SPI.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="/windows-hardware/drivers/spb/spbcx-interfaces" data-raw-source="[SpbCx Interfaces](./spbcx-interfaces.md)">SpbCx Interfaces</a></p></td>
-<td><p>The SPB framework extension (SpbCx) has two interfaces. The first is an I/O request interface through which SpbCx accepts I/O requests that clients (peripheral drivers) of the SPB controller send to peripheral devices that are attached to the bus. The second interface is a device driver interface (DDI) through which SpbCx communicates with the SPB controller driver.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="/windows-hardware/drivers/spb/i-o-transfer-sequences" data-raw-source="[I/O Transfer Sequences](./i-o-transfer-sequences.md)">I/O Transfer Sequences</a></p></td>
-<td><p>The SPB framework extension (SpbCx) supports I/O transfer sequences. An I/O transfer sequence is an ordered set of bus transfers (read and write operations) that is performed as a single, atomic bus operation. All of the transfers in an I/O transfer sequence access the same target device on the bus.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="/windows-hardware/drivers/spb/handling-client-implemented-sequences" data-raw-source="[Handling Client-Implemented Sequences](./handling-client-implemented-sequences.md)">Handling Client-Implemented Sequences</a></p></td>
-<td><p>The optional <a href="/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_lock" data-raw-source="[&lt;em&gt;EvtSpbControllerLock&lt;/em&gt;](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_lock)"><em>EvtSpbControllerLock</em></a> and <a href="/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_unlock" data-raw-source="[&lt;em&gt;EvtSpbControllerUnlock&lt;/em&gt;](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_unlock)"><em>EvtSpbControllerUnlock</em></a> event callback functions perform complementary operations. The <em>EvtSpbControllerLock</em> function is a handler for <a href="https://msdn.microsoft.com/library/windows/hardware/hh450858" data-raw-source="[&lt;strong&gt;IOCTL_SPB_LOCK_CONTROLLER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450858)"><strong>IOCTL_SPB_LOCK_CONTROLLER</strong></a> requests. The <em>EvtSpbControllerUnlock</em> function is a handler for <a href="https://msdn.microsoft.com/library/windows/hardware/hh450859" data-raw-source="[&lt;strong&gt;IOCTL_SPB_UNLOCK_CONTROLLER&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh450859)"><strong>IOCTL_SPB_UNLOCK_CONTROLLER</strong></a> requests. A client (that is, the driver for a peripheral device on the bus) sends these requests to start and end <a href="/windows-hardware/drivers/spb/i-o-transfer-sequences" data-raw-source="[I/O transfer sequences](./i-o-transfer-sequences.md)">I/O transfer sequences</a>. Most SPB controller drivers do not support <strong>IOCTL_SPB_LOCK_CONTROLLER</strong> and <strong>IOCTL_SPB_UNLOCK_CONTROLLER</strong> requests and, therefore, do not implement <em>EvtSpbControllerLock</em> and <em>EvtSpbControllerUnlock</em> functions.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="/windows-hardware/drivers/spb/using-the-spb-transfer-list-structure" data-raw-source="[Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs](./using-the-spb-transfer-list-structure.md)">Using the SPB_TRANSFER_LIST Structure for Custom IOCTLs</a></p></td>
-<td><p>If your simple peripheral bus (SPB) controller driver supports one or more custom I/O control (IOCTL) requests, use the <a href="/windows-hardware/drivers/ddi/spb/ns-spb-spb_transfer_list" data-raw-source="[&lt;strong&gt;SPB_TRANSFER_LIST&lt;/strong&gt;](/windows-hardware/drivers/ddi/spb/ns-spb-spb_transfer_list)"><strong>SPB_TRANSFER_LIST</strong></a> structure to describe the read and write buffers in these requests. This structure provides a uniform way to describe the buffers in a request, and avoids the buffer-copying overhead associated with METHOD_BUFFERED I/O operations.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="/windows-hardware/drivers/spb/handling-ioctl-spb-full-duplex-requests" data-raw-source="[Handling IOCTL_SPB_FULL_DUPLEX Requests](./handling-ioctl-spb-full-duplex-requests.md)">Handling IOCTL_SPB_FULL_DUPLEX Requests</a></p></td>
-<td><p>Some buses, such as SPI, enable read and write transfers to simultaneously occur between the bus controller and a device on the bus. To support these full-duplex transfers, the definition of the simple peripheral bus (SPB) I/O request interface includes, as an option, the <a href="https://msdn.microsoft.com/library/windows/hardware/hh974774" data-raw-source="[&lt;strong&gt;IOCTL_SPB_FULL_DUPLEX&lt;/strong&gt;](https://msdn.microsoft.com/library/windows/hardware/hh974774)"><strong>IOCTL_SPB_FULL_DUPLEX</strong></a> I/O control code (IOCTL). Only SPB controller drivers for bus controllers that implement full-duplex transfers in hardware should support the <strong>IOCTL_SPB_FULL_DUPLEX</strong> IOCTL.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="/windows-hardware/drivers/spb/how-to-get-the-connection-settings-for-a-device" data-raw-source="[How to Get the Connection Settings for a Device](./how-to-get-the-connection-settings-for-a-device.md)">How to Get the Connection Settings for a Device</a></p></td>
-<td><p>If your SPB controller driver registers an <a href="/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_connect" data-raw-source="[&lt;em&gt;EvtSpbTargetConnect&lt;/em&gt;](/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_target_connect)"><em>EvtSpbTargetConnect</em></a> callback function, the <a href="/windows-hardware/drivers/spb/spb-framework-extension" data-raw-source="[SPB framework extension](./spb-framework-extension.md)">SPB framework extension</a> (SpbCx) calls this function when a client (peripheral driver) of the controller sends an <a href="/windows-hardware/drivers/kernel/irp-mj-create" data-raw-source="[&lt;strong&gt;IRP_MJ_CREATE&lt;/strong&gt;](../kernel/irp-mj-create.md)"><strong>IRP_MJ_CREATE</strong></a> request to open a logical connection to a target device on the bus. In response to the <em>EvtSpbTargetConnect</em> callback, the SPB controller driver should call the <a href="/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbtargetgetconnectionparameters" data-raw-source="[&lt;strong&gt;SpbTargetGetConnectionParameters&lt;/strong&gt;](/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbtargetgetconnectionparameters)"><strong>SpbTargetGetConnectionParameters</strong></a> method to get the connection settings for the target device. The SPB controller driver stores these settings and uses them later to access the device in response to I/O requests from the client.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-

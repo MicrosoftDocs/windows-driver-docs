@@ -1,7 +1,6 @@
 ---
 title: NetAdapterCx limitations
 description: NetAdapterCx limitations
-ms.assetid: 2333F2D9-A369-4124-9365-ABC49E8B5595
 keywords:
 - Network Adapter WDF Class Extension limitations, NetAdapterCx limitations, NetCx limitations
 ms.date: 06/05/2017

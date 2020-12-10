@@ -1,7 +1,6 @@
 ---
 title: Windows kernel routines reserved for system use
 description: Windows kernel routines reserved for system use
-ms.assetid: 78b0562a-903a-467d-9bf0-f5499ae47063
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

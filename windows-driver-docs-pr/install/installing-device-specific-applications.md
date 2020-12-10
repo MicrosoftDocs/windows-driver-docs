@@ -1,7 +1,6 @@
 ---
 title: Installing Device-Specific Applications
 description: Installing Device-Specific Applications
-ms.assetid: 47e54ea6-f391-420a-aa69-caf7225b1147
 keywords:
 - installation applications WDK , device-specific applications
 - device installation applications WDK , device-specific applications

@@ -1,7 +1,6 @@
 ---
 title: ComputerHardwareIds
 description: ComputerHardwareIds
-ms.assetid: ee2c53d3-680d-4988-8eb9-a3713ea47ca4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

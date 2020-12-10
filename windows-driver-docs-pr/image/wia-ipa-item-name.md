@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_NAME
 description: The WIA\_IPA\_ITEM\_NAME property contains a WIA item name.
-ms.assetid: becdd9c6-8202-4c0e-a530-043c1b8421fa
 keywords: ["WIA_IPA_ITEM_NAME Imaging Devices"]
 topic_type:
 - apiref

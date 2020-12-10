@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_EXT\_PLUG\_COUNTS
 description: AVC\_FUNCTION\_GET\_EXT\_PLUG\_COUNTS
-ms.assetid: dced18ac-dc26-4c47-bc92-a3f3daec505b
 keywords: ["AVC_FUNCTION_GET_EXT_PLUG_COUNTS Streaming Media Devices"]
 topic_type:
 - apiref

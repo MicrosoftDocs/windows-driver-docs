@@ -1,7 +1,6 @@
 ---
 title: Copying Bitmaps
 description: Copying Bitmaps
-ms.assetid: 76e07c66-7e57-42d7-b6da-c13c8e9a8dee
 keywords:
 - GDI WDK Windows 2000 display , bitmaps
 - graphics drivers WDK Windows 2000 display , bitmaps

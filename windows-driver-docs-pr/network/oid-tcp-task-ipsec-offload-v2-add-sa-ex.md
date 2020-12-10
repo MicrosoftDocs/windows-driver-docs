@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX
 description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX OID to request that a miniport driver add the specified security associations (SAs) to a NIC.
-ms.assetid: 9D356CFA-3353-4E62-9B1C-0FF650DCE75C
 ms.date: 08/08/2017
 keywords: 
  -OID_TCP_TASK_IPSEC_OFFLOAD_V2_ADD_SA_EX Network Drivers Starting with Windows Vista

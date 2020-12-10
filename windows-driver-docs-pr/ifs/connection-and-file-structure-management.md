@@ -1,7 +1,6 @@
 ---
 title: Connection and File Structure Management
 description: Connection and File Structure Management
-ms.assetid: 3695cab3-6751-48ee-8b11-e70c2bceab29
 keywords:
 - data structures WDK file systems
 - RDBSS WDK file systems , connection and file structures

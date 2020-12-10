@@ -1,7 +1,6 @@
 ---
 title: TVOT\_CHKBOX
 description: TVOT\_CHKBOX
-ms.assetid: 66e9879e-c101-4367-b1ee-0746e6a71bc3
 keywords: ["TVOT_CHKBOX Print Devices"]
 topic_type:
 - apiref

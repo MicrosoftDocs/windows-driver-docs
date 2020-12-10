@@ -1,7 +1,6 @@
 ---
 title: package XML Element
 description: The package XML element specifies an INF file for a driver package.Element Tag package XML AttributespathThe path to an INF file for a driver package.
-ms.assetid: c7089e58-50c7-46ec-a9bf-c8e2d2bd354a
 keywords: ["package XML Element Device and Driver Installation"]
 topic_type:
 - apiref

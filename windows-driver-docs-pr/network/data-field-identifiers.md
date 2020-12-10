@@ -1,7 +1,6 @@
 ---
 title: Data field identifiers
 description: This section describes Data field identifiers for Windows Filtering Platform callout drivers.
-ms.assetid: 6e617ef4-807b-4564-8b95-b289edfee8d2
 keywords:
 - Data field identifiers network drivers
 ms.date: 11/28/2017

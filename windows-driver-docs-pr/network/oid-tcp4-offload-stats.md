@@ -1,7 +1,6 @@
 ---
 title: OID_TCP4_OFFLOAD_STATS
 description: This topic describes the OID_TCP4_OFFLOAD_STATS object identifier (OID).
-ms.assetid: e6933a86-0ff3-48ff-a0e3-3bfc32b19df3
 keywords:
 - OID_TCP4_OFFLOAD_STATS
 ms.date: 11/06/2017

@@ -1,7 +1,6 @@
 ---
 title: Sixth Picture Decoding Configuration
 description: Sixth Picture Decoding Configuration
-ms.assetid: 3d4f70c7-bdad-4511-a180-2825c4bafd5f
 keywords:
 - compressed picture decoding set WDK DirectX VA
 - picture decoding set WDK DirectX VA

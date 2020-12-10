@@ -1,7 +1,6 @@
 ---
 title: Stream Class Debugging
 description: Stream Class Debugging
-ms.assetid: 544b922b-58e4-4cbb-a76c-d8e13ae17e55
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , debugging
 - streaming minidrivers WDK Windows 2000 Kernel , debugging

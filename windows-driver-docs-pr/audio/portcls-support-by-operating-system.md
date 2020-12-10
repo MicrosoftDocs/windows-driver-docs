@@ -1,7 +1,6 @@
 ---
 title: PortCls Support by Operating System
 description: PortCls Support by Operating System
-ms.assetid: 87291410-41fa-49d2-a1e2-6d5d9b90deaf
 keywords:
 - audio miniport drivers WDK , Port Class
 - miniport drivers WDK audio , Port Class

@@ -1,7 +1,6 @@
 ---
 title: Handling SCSI Pass-Through Requests
 description: Handling SCSI Pass-Through Requests
-ms.assetid: 61f8dc02-b5ae-4be5-b7e1-d8207304ef7c
 keywords:
 - peripherals WDK storage , SCSI pass-through requests
 - storage peripherals WDK , SCSI pass-through requests

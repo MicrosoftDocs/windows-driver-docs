@@ -1,7 +1,6 @@
 ---
 title: Recommended DirectX 9.0 Driver Support
 description: Recommended DirectX 9.0 Driver Support
-ms.assetid: 57b4dac8-c694-47ec-b5f9-19247b4de433
 keywords:
 - unused channel defaults WDK DirectX 9.0
 - channel defaults WDK DirectX 9.0

@@ -1,7 +1,6 @@
 ---
 title: Customizing a Theme
 description: Customizing a Theme
-ms.assetid: 3dddbf19-34ec-4cb0-b427-854ae7622fa1
 keywords: ["themes, customizing"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

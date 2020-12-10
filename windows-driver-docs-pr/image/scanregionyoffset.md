@@ -1,7 +1,6 @@
 ---
 title: ScanRegionYOffset element
 description: The optional ScanRegionYOffset element specifies the distance from the slow scan lead edge to the beginning of the scan region.
-ms.assetid: fb1b6402-917a-486b-a762-219cc3e8aa82
 keywords: ["ScanRegionYOffset element Imaging Devices"]
 topic_type:
 - apiref

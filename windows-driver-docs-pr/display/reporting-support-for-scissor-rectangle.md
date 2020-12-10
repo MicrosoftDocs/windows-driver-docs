@@ -1,7 +1,6 @@
 ---
 title: Reporting Support for Scissor Rectangle
 description: Reporting Support for Scissor Rectangle
-ms.assetid: fd44bdf4-b7ca-43da-92ea-7ca18185b5d4
 keywords:
 - scissor rectangle WDK DirectX 9.0 , reporting support
 - rectangular clipping region WDK DirectX 9.0 , reporting support

@@ -1,7 +1,6 @@
 ---
 title: GUID_AVC_CLASS
 description: GUID_AVC_CLASS
-ms.assetid: 1aa323d3-7d68-4c50-af68-01bda3792fec
 keywords: ["GUID_AVC_CLASS Device and Driver Installation"]
 topic_type:
 - apiref

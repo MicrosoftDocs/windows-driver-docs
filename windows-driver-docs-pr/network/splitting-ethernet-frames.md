@@ -1,7 +1,6 @@
 ---
 title: Splitting Ethernet Frames Overview
 description: Splitting Ethernet Frames Overview
-ms.assetid: 7b857dee-2805-4004-8f31-452f0cff0e0c
 keywords:
 - header-data split WDK , Ethernet frame splitting
 - splitting Ethernet frames

@@ -1,7 +1,6 @@
 ---
 title: rtlavl
 description: The rtlavl extension displays the entries of an RTL_AVL_TABLE structure.
-ms.assetid: b1e19b13-8bb6-4f40-8d51-368fafc38ebc
 keywords: ["avl tables", "rtlavl Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

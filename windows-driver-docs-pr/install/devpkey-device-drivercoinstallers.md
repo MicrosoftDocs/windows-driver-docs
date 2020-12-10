@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DriverCoInstallers
 description: DEVPKEY_Device_DriverCoInstallers
-ms.assetid: ba85a906-adfa-42f9-b52a-e8a48c8d5076
 keywords: ["DEVPKEY_Device_DriverCoInstallers Device and Driver Installation"]
 topic_type:
 - apiref

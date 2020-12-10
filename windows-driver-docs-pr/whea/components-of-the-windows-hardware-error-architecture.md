@@ -1,7 +1,6 @@
 ---
 title: Components of the Windows Hardware Error Architecture
 description: Components of the Windows Hardware Error Architecture
-ms.assetid: d038f2ce-7012-4b8d-bf2b-a722548a32ca
 keywords:
 - Windows Hardware Error Architecture WDK , components
 - WHEA WDK , components

@@ -1,7 +1,6 @@
 ---
 title: Example 7 Stopping All Trace Sessions
 description: Example 7 Stopping All Trace Sessions
-ms.assetid: a832bf9a-ab7e-4ec0-823b-52bc6016e791
 keywords:
 - trace sessions WDK , stopping
 - stopping trace sessions

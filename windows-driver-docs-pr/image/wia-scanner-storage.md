@@ -1,7 +1,6 @@
 ---
 title: WIA Scanner Storage
 description: WIA Scanner Storage
-ms.assetid: d47d2c30-1f2f-4baf-927c-eda30377ab6b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

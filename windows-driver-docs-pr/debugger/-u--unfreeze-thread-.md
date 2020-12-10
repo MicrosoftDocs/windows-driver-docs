@@ -1,7 +1,6 @@
 ---
 title: ~u (Unfreeze Thread)
 description: The ~u command unfreezes the specified thread.Do not confuse this command with the U (Unassemble) command.
-ms.assetid: 6ac3c84a-3734-4b16-a239-4233e186c2df
 keywords: ["~u (Unfreeze Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

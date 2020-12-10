@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeMipVolumeOffset method
 description: The CPixel ComputeMipVolumeOffset method determines the subvolume offset of a mipmap volume texture.
-ms.assetid: 4fb2f49a-2c1a-4b07-bbd3-76c4e345b243
 keywords: ["ComputeMipVolumeOffset method Display Devices", "ComputeMipVolumeOffset method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipVolumeOffset method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented Operations Performed by Call Managers
 description: Connection-Oriented Operations Performed by Call Managers
-ms.assetid: 6df23eb2-df02-4d24-88b3-c02b87edb38b
 keywords:
 - connection-oriented NDIS WDK , call managers
 - CoNDIS WDK networking , call managers

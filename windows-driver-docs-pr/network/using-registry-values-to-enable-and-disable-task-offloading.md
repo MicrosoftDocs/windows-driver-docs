@@ -1,7 +1,6 @@
 ---
 title: Using Registry Values to Enable and Disable Task Offloading
 description: Using Registry Values to Enable and Disable Task Offloading
-ms.assetid: 32efd685-365c-4347-9599-fe429569d35b
 keywords:
 - task offload WDK TCP/IP transport , registry values
 - registry WDK TCP/IP offload
@@ -9,7 +8,7 @@ keywords:
 - task offload WDK TCP/IP transport , disabling services
 ms.date: 10/30/2020
 ms.localizationpriority: medium
-ms.custom: contperfq2 
+ms.custom: contperf-fy21q2 
 ---
 
 # Using Registry Values to Enable and Disable Task Offloading

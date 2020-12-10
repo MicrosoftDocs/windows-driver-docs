@@ -1,7 +1,6 @@
 ---
 title: System-Defined Device Setup Classes Reserved for System Use
 description: System-Defined Device Setup Classes Reserved for System Use
-ms.assetid: 519a8833-8ed0-40c8-b7cb-a86f13191227
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

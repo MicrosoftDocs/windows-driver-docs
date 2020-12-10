@@ -1,7 +1,6 @@
 ---
 title: Advanced Remote Debugging Scenarios
 description: Advanced Remote Debugging Scenarios
-ms.assetid: 9f0e3b01-9ec2-44aa-a6bf-0216ed5aaaa8
 keywords: ["remote debugging, advanced"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

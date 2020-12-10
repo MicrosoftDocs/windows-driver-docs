@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_PDE structure
 description: The DXGK\_PDE structure is reserved for system use. Do not use it in your driver.
-ms.assetid: e2cd4541-beda-4c61-bdba-a86ae3888501
 keywords: ["_DXGK_PDE structure Display Devices", "DXGK_PDE structure Display Devices"]
 topic_type:
 - apiref

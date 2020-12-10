@@ -1,7 +1,6 @@
 ---
 title: ENTER (Repeat Last Command)
 description: The ENTER key repeats the last command that you typed.
-ms.assetid: 058e455a-8934-4b28-8cf0-2d3f09a7e7cc
 keywords: ["ENTER (Repeat Last Command) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

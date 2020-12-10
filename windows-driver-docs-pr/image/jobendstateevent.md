@@ -1,7 +1,6 @@
 ---
 title: JobEndStateEvent element
 description: The required JobEndStateEvent element informs the client that the scanner has finished processing a job.
-ms.assetid: 2d5307fb-9c64-413d-8c5c-439012a44a19
 keywords: ["JobEndStateEvent element Imaging Devices"]
 topic_type:
 - apiref

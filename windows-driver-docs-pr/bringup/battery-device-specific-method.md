@@ -1,7 +1,6 @@
 ---
 title: Battery Device-Specific Method
 description: This topic describes _DSM control method and parameters for passive thermal battery management.
-ms.assetid: 622803F4-2548-4E8A-A330-179ABDF374AD
 ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---

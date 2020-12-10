@@ -1,7 +1,6 @@
 ---
 title: Video Compression Properties
 description: Video Compression Properties
-ms.assetid: 2fd69425-7c36-4766-88e6-7f02d5fa6659
 keywords:
 - video compression properties WDK video capture
 - compression properties WDK video capture

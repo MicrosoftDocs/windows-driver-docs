@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_AudioEffectsDiscovery
 description: The KSPROPSETID\_AudioEffectsDiscovery property set is implemented by audio device drivers that use Microsoft’s generic proxy audio processing object (APO).
-ms.assetid: 68229885-1446-4BF0-B4E1-96A777006567
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

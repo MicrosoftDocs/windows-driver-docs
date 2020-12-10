@@ -1,7 +1,6 @@
 ---
 title: Spooler Notification Terminology
 description: Spooler Notification Terminology
-ms.assetid: 7d4888b1-cb5f-4095-9e1b-c330c04e4971
 keywords:
 - spooler notification WDK print , terminology
 - print spooler notification WDK , terminology

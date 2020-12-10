@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE
 description: The KSPROPERTY\_SYSAUDIO\_ATTACH\_VIRTUAL\_SOURCE property attaches a virtual source to a pin instance on a virtual audio device.
-ms.assetid: cb677eb2-b58d-4f36-b729-d0bfc06db07f
 keywords: ["KSPROPERTY_SYSAUDIO_ATTACH_VIRTUAL_SOURCE Audio Devices"]
 topic_type:
 - apiref

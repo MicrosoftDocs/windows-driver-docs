@@ -1,7 +1,6 @@
 ---
 title: WriteReqs rule (kmdf)
 description: The WriteReqs rule specifies that a write request is not passed to inappropriate KMDF methods.
-ms.assetid: 8f5718ec-ab3a-4e4f-8401-9113bf0d9552
 ms.date: 05/21/2018
 keywords: ["WriteReqs rule (kmdf)"]
 topic_type:

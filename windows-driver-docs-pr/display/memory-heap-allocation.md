@@ -1,7 +1,6 @@
 ---
 title: Memory Heap Allocation
 description: Memory Heap Allocation
-ms.assetid: 669dce85-ed37-4d47-88d6-115cb3a2e419
 keywords:
 - stride WDK DirectDraw
 - pitch WDK DirectDraw

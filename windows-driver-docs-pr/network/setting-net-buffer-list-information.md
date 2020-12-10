@@ -1,7 +1,6 @@
 ---
 title: Setting NET_BUFFER_LIST Information
 description: Setting NET_BUFFER_LIST Information
-ms.assetid: 28f50ab4-043b-47bb-af70-e8c892288f21
 keywords:
 - NET_BUFFER_LIST
 - header-data split WDK , NET_BUFFER_LIST

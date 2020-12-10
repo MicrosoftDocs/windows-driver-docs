@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE
 description: The KSPROPERTY\_SYSAUDIO\_DEVICE\_INSTANCE property specifies the current instance of a virtual audio device.
-ms.assetid: 67cdc1ec-c696-454f-a3cc-1b50418c4056
 keywords: ["KSPROPERTY_SYSAUDIO_DEVICE_INSTANCE Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Live Migration Support
 description: Hyper-V Extensible Switch Live Migration Support
-ms.assetid: 4AFC9E3F-C9C5-4693-BA8C-BC7122A4055F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

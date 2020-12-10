@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_TKIP_MIC_FAILURE_INFO
 description: WDI_TLV_TKIP_MIC_FAILURE_INFO is a TLV that contains TKIP-MIC failure information.
-ms.assetid: BBF168BE-6223-4C54-AFF5-17878D07EFBD
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_TKIP_MIC_FAILURE_INFO Network Drivers Starting with Windows Vista

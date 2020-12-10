@@ -1,7 +1,6 @@
 ---
 title: DirectDraw Driver Fundamentals
 description: DirectDraw Driver Fundamentals
-ms.assetid: 45cf2d9a-3365-4ff4-b4d6-ee57cc763351
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

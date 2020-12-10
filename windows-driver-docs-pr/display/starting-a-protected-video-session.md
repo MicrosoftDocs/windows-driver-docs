@@ -1,7 +1,6 @@
 ---
 title: Starting a Protected Video Session
 description: Starting a Protected Video Session
-ms.assetid: c92f2d1a-ac15-49d4-858b-ff207ff4810c
 keywords:
 - copy protection WDK COPP , starting protected video session
 - video copy protection WDK COPP , starting protected video session

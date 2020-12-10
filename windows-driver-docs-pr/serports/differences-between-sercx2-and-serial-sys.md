@@ -1,7 +1,6 @@
 ---
 title: Differences Between SerCx2.sys and Serial.sys
 description: Although the inbox Sercx2.sys and Serial.sys driver components both implement the serial I/O request interface, these components are not interchangeable. They are designed to meet different sets of requirements.
-ms.assetid: 62FA69BB-FE04-4B5E-96CC-13764ED83AE6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

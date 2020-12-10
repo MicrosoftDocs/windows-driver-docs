@@ -1,7 +1,6 @@
 ---
 title: CPSUI Message Handler
 description: CPSUI Message Handler
-ms.assetid: 4a6434e9-d65e-4ddd-836e-d6101532bbb8
 keywords:
 - page event callbacks WDK CPSUI
 - event callbacks WDK CPSUI

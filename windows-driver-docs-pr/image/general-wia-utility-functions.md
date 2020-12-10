@@ -1,7 +1,6 @@
 ---
 title: General WIA Utility Functions
 description: General WIA Utility Functions
-ms.assetid: 235c07a1-4903-4df6-b29f-0ecc342782b4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

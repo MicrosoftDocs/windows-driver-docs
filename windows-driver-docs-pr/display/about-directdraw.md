@@ -1,7 +1,6 @@
 ---
 title: About DirectDraw
 description: About DirectDraw
-ms.assetid: f2ab4863-8ec8-4eaf-b59f-635570aef470
 keywords:
 - drawing WDK DirectDraw , about DirectDraw
 - DirectDraw WDK Windows 2000 display , about DirectDraw

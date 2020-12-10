@@ -1,7 +1,6 @@
 ---
 title: Registering Hardware Information
 description: Registering Hardware Information
-ms.assetid: 1fec9fcf-3ec7-4926-9ceb-ef1f7f42e963
 keywords:
 - registry WDK display
 - hardware information in registry WDK display

@@ -1,7 +1,6 @@
 ---
 title: Virtual Machine Queue (VMQ) in NDIS 6.20
 description: Virtual Machine Queue (VMQ) in NDIS 6.20
-ms.assetid: fb48b019-4646-426d-b10e-d760788f9985
 keywords:
 - NDIS 6.20 WDK , virtual machine queue (VMQ)
 - virtual machine queue (VMQ) WDK NDIS 6.20

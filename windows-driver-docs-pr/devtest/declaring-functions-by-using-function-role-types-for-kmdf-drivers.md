@@ -1,7 +1,6 @@
 ---
 title: Declaring Functions by Using Function Role Types for KMDF Drivers
 description: Declaring Functions by Using Function Role Types for KMDF Drivers
-ms.assetid: 73a408ba-0219-4fde-8dad-ca330e4e67c3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

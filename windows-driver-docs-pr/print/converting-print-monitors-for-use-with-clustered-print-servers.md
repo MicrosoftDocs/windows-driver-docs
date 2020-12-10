@@ -1,7 +1,6 @@
 ---
 title: Converting Print Monitors for Use with Clustered Print Servers
 description: Converting Print Monitors for Use with Clustered Print Servers
-ms.assetid: 6b374d61-bb2b-42a4-9609-3cde9b82bb2b
 keywords:
 - print monitors WDK , clustered print servers
 - clustered print servers WDK

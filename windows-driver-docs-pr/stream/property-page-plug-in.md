@@ -1,7 +1,6 @@
 ---
 title: Property Page Plug-in
 description: Property Page Plug-in
-ms.assetid: cf5f5861-1670-413c-9c42-c1b6eb6d719a
 keywords:
 - Kernel Streaming Proxy WDK AVStream , property page
 - property page WDK AVStream

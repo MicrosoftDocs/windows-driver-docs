@@ -1,7 +1,6 @@
 ---
 title: Specifying Feature and Option Display Order
 description: Specifying Feature and Option Display Order
-ms.assetid: 51e18121-540b-40f0-85f8-eb2755a583f7
 keywords:
 - Unidrv, feature and option display order
 - display order of features/options WDK Unidrv

@@ -1,7 +1,6 @@
 ---
 title: Understanding TYMED
 description: Understanding TYMED
-ms.assetid: 36110923-c346-4367-8b7d-ef4d003ed88c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

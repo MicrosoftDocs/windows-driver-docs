@@ -1,7 +1,6 @@
 ---
 title: Controlling Breakpoint Flags and Parameters
 description: Controlling Breakpoint Flags and Parameters
-ms.assetid: ed702f01-2a30-4ffb-a804-167cf3b19936
 keywords: ["breakpoints, flags and parameters", "DEBUG_BREAK_READ", "DEBUG_BREAK_WRITE", "DEBUG_BREAK_EXECUTE", "DEBUG_BREAK_IO"]
 ms.date: 05/13/2020
 ms.localizationpriority: medium

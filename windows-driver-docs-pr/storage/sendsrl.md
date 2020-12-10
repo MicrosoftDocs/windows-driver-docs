@@ -1,7 +1,6 @@
 ---
 title: SendSRL function
 description: The SendSRL WMI method sends a scan remote loop (SRL) command through the indicated port to the indicated domain controller.
-ms.assetid: b191fc8c-2765-4e39-aab7-e950ae1d46b0
 keywords: ["SendSRL function Storage Devices"]
 topic_type:
 - apiref

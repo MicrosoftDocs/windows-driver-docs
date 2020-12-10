@@ -1,7 +1,6 @@
 ---
 title: DEVPRIVATE_RESOURCE
 description: DEVPRIVATE_RESOURCE
-ms.assetid: 842d9092-f7b6-4111-88d9-64a580007295
 keywords: ["DEVPRIVATE_RESOURCE Device and Driver Installation"]
 topic_type:
 - apiref

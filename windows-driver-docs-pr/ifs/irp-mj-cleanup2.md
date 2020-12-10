@@ -1,7 +1,6 @@
 ---
 title: Checking the Oplock State of an IRP_MJ_CLEANUP operation
 description: Checking the Oplock State of an IRP_MJ_CLEANUP operation
-ms.assetid: 5e078575-cbb8-4460-9986-4c546b8c20be
 ms.date: 11/25/2019
 ms.localizationpriority: medium
 ---

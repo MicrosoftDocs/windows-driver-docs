@@ -1,7 +1,6 @@
 ---
 title: Example 10 Starting a Real-Time Trace Session
 description: Example 10 Starting a Real-Time Trace Session
-ms.assetid: 1dfa8cf1-dd51-4415-b6d4-84241db2aa03
 keywords:
 - trace sessions WDK , real-time
 - real-time trace sessions WDK

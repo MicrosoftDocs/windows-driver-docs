@@ -1,7 +1,6 @@
 ---
 title: SM\_GetBindingSupport function
 description: The SM\_GetBindingSupport method retrieves the binding capabilities that are currently enabled for the indicated port.
-ms.assetid: 0ca24cdf-b589-4096-a490-2acfdd576a91
 keywords: ["SM_GetBindingSupport function Storage Devices"]
 topic_type:
 - apiref

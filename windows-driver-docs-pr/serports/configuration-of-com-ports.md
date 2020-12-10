@@ -1,7 +1,6 @@
 ---
 title: Configuration of COM Ports
 description: Configuration of COM Ports
-ms.assetid: 519ca9c8-bc67-4a85-87ae-6015c6212dea
 keywords:
 - COM ports WDK serial devices
 - serial devices WDK , COM ports

@@ -1,7 +1,6 @@
 ---
 title: Controlling the Pointer DrvSetPointerShape
 description: Controlling the Pointer DrvSetPointerShape
-ms.assetid: 14d782de-5da8-40e9-a3e3-91d2588146e0
 keywords:
 - drawing pointers WDK Windows 2000 display
 - display drivers WDK Windows 2000 , pointers

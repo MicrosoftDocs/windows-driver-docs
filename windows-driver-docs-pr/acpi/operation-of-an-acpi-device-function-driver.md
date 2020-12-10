@@ -1,7 +1,6 @@
 ---
 title: Operation of an ACPI Device Function Driver
 description: Operation of an ACPI Device Function Driver
-ms.assetid: 56c63373-5094-4ae5-a7b0-56d61e3fa9b1
 keywords:
 - ACPI devices WDK , function driver operation
 - vendor-supplied function drivers WDK ACPI

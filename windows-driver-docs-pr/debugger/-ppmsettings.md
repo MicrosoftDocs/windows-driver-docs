@@ -1,7 +1,6 @@
 ---
 title: ppmsettings
 description: The ppmsettings command
-ms.assetid: 673F3F48-9328-45AF-8DB8-2CAB6E86D1B4
 keywords: ["ppmsettings Windows Debugging"]
 ms.date: 06/08/2017
 topic_type:

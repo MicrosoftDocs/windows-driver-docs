@@ -1,7 +1,6 @@
 ---
 title: Advance Operations
 description: Advance Operations
-ms.assetid: 42554221-201d-4014-900d-435a47b3afa1
 keywords:
 - network data WDK , advance operations
 - data WDK networking , advance operations

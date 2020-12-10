@@ -1,7 +1,6 @@
 ---
 title: Registering Miniport Driver Functions for WDM Lower Edge
 description: Registering Miniport Driver Functions for WDM Lower Edge
-ms.assetid: 68048d36-d57c-4ad9-a15e-92b1d7866d4a
 keywords:
 - NDIS-WDM miniport drivers WDK networking , registering functions
 - NDIS-WDM miniport drivers WDK networking , entry-point functions

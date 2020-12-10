@@ -1,7 +1,6 @@
 ---
 title: Setting Up the System DMA Controller for Common-Buffer DMA
 description: Setting Up the System DMA Controller for Common-Buffer DMA
-ms.assetid: 279776e0-dead-4763-9aae-33950837c27c
 keywords: ["system DMA WDK kernel , common buffer", "common buffer DMA WDK kernel", "DMA transfers WDK kernel , common buffer", "AllocateAdapterChannel", "MapTransfer"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Choosing the Best Remote Debugging Method
 description: Choosing the Best Remote Debugging Method
-ms.assetid: af048b78-cb80-44d2-854f-11e0991e3353
 keywords: ["remote debugging, choosing the best method"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

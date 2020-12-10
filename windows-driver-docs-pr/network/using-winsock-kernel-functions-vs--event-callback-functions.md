@@ -1,7 +1,6 @@
 ---
 title: Using Winsock Kernel Functions vs. Event Callback Functions
 description: Using Winsock Kernel Functions vs.
-ms.assetid: 63a3f933-f74a-4cb8-a7a9-9498e1c17afa
 keywords:
 - Winsock Kernel WDK networking , functions
 - WSK WDK networking , functions

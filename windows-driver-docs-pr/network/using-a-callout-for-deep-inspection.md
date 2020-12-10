@@ -1,7 +1,6 @@
 ---
 title: Using a Callout for Deep Inspection
 description: Using a Callout for Deep Inspection
-ms.assetid: 464c74ae-5e37-41f1-b305-ef57039b28ba
 keywords:
 - classify callouts WDK Windows Filtering Platform , deep inspection
 - deep inspection WDK Windows Filtering Platform

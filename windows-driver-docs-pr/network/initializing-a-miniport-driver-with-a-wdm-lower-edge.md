@@ -1,7 +1,6 @@
 ---
 title: Initializing a Miniport Driver with a WDM Lower Edge
 description: Initializing a Miniport Driver with a WDM Lower Edge
-ms.assetid: 1c5b0ec0-5d63-423d-af21-ffd8990f6160
 keywords:
 - NDIS-WDM miniport drivers WDK networking , initializing
 - NDIS-WDM miniport drivers WDK networking , upper edge of

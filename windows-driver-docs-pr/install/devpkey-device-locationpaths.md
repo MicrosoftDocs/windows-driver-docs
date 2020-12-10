@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_LocationPaths
 description: DEVPKEY_Device_LocationPaths
-ms.assetid: 36320528-d306-441f-a7ae-5a75d982b32a
 keywords: ["DEVPKEY_Device_LocationPaths Device and Driver Installation"]
 topic_type:
 - apiref

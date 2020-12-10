@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented NDIS Miniport Drivers
 description: Connection-Oriented NDIS Miniport Drivers
-ms.assetid: 58f9bed1-274c-4f60-87cd-f0b44871eb60
 keywords:
 - miniport drivers WDK networking , types
 - NDIS miniport drivers WDK , types

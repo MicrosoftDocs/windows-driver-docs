@@ -1,7 +1,6 @@
 ---
 title: DCICloseProvider
 description: DCICloseProvider
-ms.assetid: 5db7a946-f8fc-41ba-9389-8eb3d384d6aa
 keywords: ["DCICloseProvider Display Devices"]
 topic_type:
 - apiref

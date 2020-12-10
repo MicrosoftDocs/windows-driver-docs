@@ -1,7 +1,6 @@
 ---
 title: Master Clock
 description: Master Clock
-ms.assetid: 87a99371-9c72-4310-bcc7-02af19207b3e
 keywords:
 - DVD decoder minidrivers WDK , master clock
 - decoder minidrivers WDK DVD , master clock

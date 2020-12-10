@@ -1,7 +1,6 @@
 ---
 title: Configure PnP Serial Devices to an RS-232 Port
 description: Configuration of Plug and Play Serial Device Connected to an RS-232 Port
-ms.assetid: b6a851e2-0fcf-4d64-80ac-51928b823077
 keywords:
 - Plug and Play serial devices WDK
 - serial devices WDK , Plug and Play

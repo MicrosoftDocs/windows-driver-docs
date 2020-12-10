@@ -1,7 +1,6 @@
 ---
 title: ndiskd.protocol
 description: The ndiskd.protocol command displays information about an NDIS protocol driver. 
-ms.assetid: c1d349d5-b0ba-4665-a399-1bc5cd55dde6
 keywords: ["ndiskd.protocol Windows Debugging"]
 ms.date: 06/26/2020
 topic_type:

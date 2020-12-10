@@ -1,7 +1,6 @@
 ---
 title: Additional Encouraged Configuration Set
 description: Additional Encouraged Configuration Set
-ms.assetid: f79e4edc-74c7-4b28-aefe-5ba933ff06c3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSMETHODSETID\_BdaChangeSync
 description: KSMETHODSETID\_BdaChangeSync
-ms.assetid: 260b227d-0d49-4efa-8f8c-4c66886cf9f6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: C28114
 description: Warning C28114 Copying a whole IRP stack entry leaves certain fields initialized that should be cleared or updated.
-ms.assetid: 39e3e313-e40f-4cb9-a534-c9e74fd1e88b
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

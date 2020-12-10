@@ -1,7 +1,6 @@
 ---
 title: New DDSCAPS2 Flags
 description: New DDSCAPS2 Flags
-ms.assetid: a5171865-7339-422f-8470-154a0aadc496
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , presentation
 - presentation WDK DirectX 8.0

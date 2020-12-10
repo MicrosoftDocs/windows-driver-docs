@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_GET_BSS_ENTRY_LIST
 description: OID_WDI_GET_BSS_ENTRY_LIST is used to ask the adapter to indicate the list of BSS networks that have been cached by the port.
-ms.assetid: 0eaa2b3a-6a1f-49e1-9556-81691892e666
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_GET_BSS_ENTRY_LIST Network Drivers Starting with Windows Vista

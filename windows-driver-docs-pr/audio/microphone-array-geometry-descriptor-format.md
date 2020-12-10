@@ -1,7 +1,6 @@
 ---
 title: Microphone Array Geometry Descriptor Format
 description: Microphone Array Geometry Descriptor Format
-ms.assetid: 83fae1e2-cc67-4322-8250-f642508383ef
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

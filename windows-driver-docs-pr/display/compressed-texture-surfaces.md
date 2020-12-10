@@ -1,7 +1,6 @@
 ---
 title: Compressed Texture Surfaces
 description: Compressed Texture Surfaces
-ms.assetid: 72096a2a-5a4b-4800-bd99-6d403c54889d
 keywords:
 - drawing compressed textures WDK DirectDraw , about compressed texture surfaces
 - DirectDraw compressed textures WDK Windows 2000 display , about compressed texture surfaces

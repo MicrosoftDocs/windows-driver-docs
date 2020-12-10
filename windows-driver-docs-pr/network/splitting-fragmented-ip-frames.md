@@ -1,7 +1,6 @@
 ---
 title: Splitting Fragmented IP Frames
 description: Splitting Fragmented IP Frames
-ms.assetid: faee7ec8-a49e-4107-a83f-d97391d69b43
 keywords:
 - Ethernet frame splitting WDK networking , fragmented IP frames
 - fragmented IP frames WDK header-data split

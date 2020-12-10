@@ -1,7 +1,6 @@
 ---
 title: Device Mutex in AVStream
 description: Device Mutex in AVStream
-ms.assetid: cec2a040-59d6-44ef-aef1-04f434811d60
 keywords:
 - AVStream mutexes WDK
 - mutexes WDK AVStream

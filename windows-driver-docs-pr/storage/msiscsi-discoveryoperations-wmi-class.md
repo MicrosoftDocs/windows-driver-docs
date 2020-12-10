@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_DiscoveryOperations WMI Class
 description: MSiSCSI\_DiscoveryOperations WMI Class
-ms.assetid: 6d626158-8c92-483e-95b7-c0b9fc897c66
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

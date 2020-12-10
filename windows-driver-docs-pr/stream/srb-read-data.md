@@ -1,7 +1,6 @@
 ---
 title: SRB\_READ\_DATA
 description: SRB\_READ\_DATA
-ms.assetid: b59d705d-5215-42ee-85cf-369a2e69f99b
 keywords: ["SRB_READ_DATA Streaming Media Devices"]
 topic_type:
 - apiref

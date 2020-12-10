@@ -1,7 +1,6 @@
 ---
 title: Using Safe String Functions
 description: Using Safe String Functions
-ms.assetid: a84008e8-e490-4640-a734-ef55cfbdfea3
 keywords: ["safe string functions WDK", "string manipulation functions WDK", "buffers WDK safe string functions"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

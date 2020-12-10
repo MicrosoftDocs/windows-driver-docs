@@ -1,7 +1,6 @@
 ---
 title: ~s (Set Current Thread)
 description: The ~s command sets or displays the current thread number.
-ms.assetid: 689d578b-8d31-4049-a374-19ae94d452a9
 keywords: ["~s (Set Current Thread) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

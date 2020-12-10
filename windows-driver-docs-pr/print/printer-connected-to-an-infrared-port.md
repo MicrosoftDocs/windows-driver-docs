@@ -1,7 +1,6 @@
 ---
 title: Printer Connected to an Infrared Port
 description: Printer Connected to an Infrared Port
-ms.assetid: 8545cf66-9b5c-41e8-82e0-e0edd75ad41b
 keywords:
 - infrared ports WDK printer
 - IR ports WDK printer

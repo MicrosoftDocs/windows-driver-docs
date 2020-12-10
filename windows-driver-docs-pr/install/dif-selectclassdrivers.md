@@ -1,7 +1,6 @@
 ---
 title: DIF_SELECTCLASSDRIVERS
 description: DIF_SELECTCLASSDRIVERS
-ms.assetid: 392a52f4-8a2e-464c-b04a-9760cff172f0
 keywords: ["DIF_SELECTCLASSDRIVERS Device and Driver Installation"]
 topic_type:
 - apiref

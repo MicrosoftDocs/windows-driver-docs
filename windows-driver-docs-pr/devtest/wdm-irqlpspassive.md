@@ -1,6 +1,5 @@
 ---
 title: IrqlPsPassive rule (wdm)
-ms.assetid: db84c945-7695-4691-8294-095bbc74ef8a
 ms.date: 05/21/2018
 description: "Learn more about: IrqlPsPassive rule (wdm)"
 keywords: ["IrqlPsPassive rule (wdm)"]

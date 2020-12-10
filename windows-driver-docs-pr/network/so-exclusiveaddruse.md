@@ -1,7 +1,6 @@
 ---
 title: SO_EXCLUSIVEADDRUSE
 description: SO_EXCLUSIVEADDRUSE
-ms.assetid: d281086f-4d8b-4e1e-b2bd-7b0a20338222
 ms.date: 08/08/2017
 keywords: 
  -SO_EXCLUSIVEADDRUSE Network Drivers Starting with Windows Vista

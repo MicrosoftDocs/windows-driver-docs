@@ -1,7 +1,6 @@
 ---
 title: Joining a Trace Session
 description: Joining a Trace Session
-ms.assetid: 0fd065e4-004f-426a-bdb1-4b2e7d219e20
 keywords:
 - trace sessions WDK , joining
 - tracing WDK , in-progress sessions

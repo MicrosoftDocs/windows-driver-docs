@@ -1,7 +1,6 @@
 ---
 title: About the Sensor Class Extension
 description: About the Sensor Class Extension
-ms.assetid: 4b55e5fe-2947-4511-ba2d-479d5fd83ebe
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

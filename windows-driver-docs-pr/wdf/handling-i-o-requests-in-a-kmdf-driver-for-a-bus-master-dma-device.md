@@ -1,7 +1,6 @@
 ---
 title: Handling I/O Requests in a KMDF Driver for a Bus-Master DMA Device
 description: This topics in this section describe how a KMDF driver for a bus-master DMA device processes an I/O request. If you are writing a KMDF driver that implements system-mode DMA, see Supporting System-Mode DMA.
-ms.assetid: c94819c5-212d-404f-a7c7-b736e0832282
 keywords:
 - DMA operations WDK KMDF , I/O requests
 - bus-master DMA WDK KMDF , I/O requests

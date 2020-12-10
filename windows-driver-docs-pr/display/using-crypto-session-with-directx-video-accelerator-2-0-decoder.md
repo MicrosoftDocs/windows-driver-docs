@@ -1,7 +1,6 @@
 ---
 title: Using Crypto Session with DXVA 2.0 Decoder
 description: Using Crypto Session with DirectX Video Accelerator 2.0 Decoder
-ms.assetid: 2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3
 keywords:
 - DXVA 2.0 decoder WDK Windows 7 display
 - DXVA 2.0 decoder WDK Windows Server 2008 R2 display

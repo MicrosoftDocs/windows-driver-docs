@@ -1,7 +1,6 @@
 ---
 title: Volume Mount Example
 description: Volume Mount Example
-ms.assetid: d6645d05-a945-4454-ac7c-122219bbdc50
 keywords:
 - filter drivers WDK file system , volume mount process
 - file system filter drivers WDK , volume mount process

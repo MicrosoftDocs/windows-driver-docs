@@ -1,7 +1,6 @@
 ---
 title: Message GUID
 description: Message GUID
-ms.assetid: 3a51d730-61a4-44d9-aaf6-117736412efe
 keywords:
 - message GUIDs WDK
 - GUIDs WDK software tracing

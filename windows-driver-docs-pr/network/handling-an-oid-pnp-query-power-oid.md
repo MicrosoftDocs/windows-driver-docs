@@ -1,7 +1,6 @@
 ---
 title: Handling an OID_PNP_QUERY_POWER OID
 description: Handling an OID_PNP_QUERY_POWER OID
-ms.assetid: aec9393a-debb-41eb-a8a0-b3d1936d707b
 keywords:
 - OID_PNP_QUERY_POWER
 - network interface cards WDK networking , transitioning power states

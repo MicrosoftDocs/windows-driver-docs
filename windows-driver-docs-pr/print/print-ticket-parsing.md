@@ -1,7 +1,6 @@
 ---
 title: Print Ticket Parsing
 description: Print Ticket Parsing
-ms.assetid: 8328110a-abb4-47aa-ab1d-730e4a2ce7bd
 keywords:
 - XPSDrv printer drivers WDK , render modules
 - render modules WDK XPSDrv , Print Tickets

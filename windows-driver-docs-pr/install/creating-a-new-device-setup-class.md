@@ -1,7 +1,6 @@
 ---
 title: Creating a New Device Setup Class
 description: Creating a New Device Setup Class
-ms.assetid: 3235d1e9-f6f7-4efe-a50c-5ea7a9956e7e
 keywords:
 - device setup classes WDK device installations
 - setup classes WDK device installations
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 
 
-You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](/previous-versions/ff553419(v=vs.85)).
+You should only create a new device setup class if absolutely necessary. It is usually possible to assign your device to one of the [system-defined device setup classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use).
 
 If your device meets both of the following criteria, you should assign it to an existing device setup class:
 
