@@ -61,4 +61,3 @@ This section provides general guidance on the development of a hardware notifica
 ## <span id="related_topics"></span>Related topics
 [Hardware notifications](hardware-notifications-support.md)
 
-[Hardware notifications reference](/windows-hardware/drivers/ddi/index)

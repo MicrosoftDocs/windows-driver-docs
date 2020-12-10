@@ -49,8 +49,8 @@ We will use the [CodeQL command line tools (CLI)](https://help.semmle.com/codeql
 C:\> mkdir C:\codeql-home
 ```
 
-2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/tag/v2.3.2)
-3. Download the appropriate zip file. For example for 64 bit Windows "codeql-win64.zip".
+2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/)
+3. Download the latest zip file. For example for 64 bit Windows "codeql-win64.zip".
 4. Unzip the downloaded zip file to a directory, for example,  C:\codeql-home\codeql-win64
 5. Confirm that the CodeCL command works by displaying the help.
 

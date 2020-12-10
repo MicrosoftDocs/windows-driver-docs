@@ -59,7 +59,7 @@ You can also call [**WdfUsbTargetDeviceSelectConfig**](/windows-hardware/drivers
 
 For related information, see:
 
--   [How to select a configuration for a USB device](/windows-hardware/drivers/ddi/index)
+-   [How to select a configuration for a USB device](/windows-hardware/drivers/usbcon/how-to-select-a-configuration-for-a-usb-device)
 -   [How to select an alternate setting in a USB interface](../usbcon/index.md)
 
 ## <a href="" id="obtaining-device-information"></a> Obtaining Device Information

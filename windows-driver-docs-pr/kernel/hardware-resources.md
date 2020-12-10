@@ -26,7 +26,7 @@ When the PnP manager assigns resources to a device, it keeps track of these assi
 
 Kernel-mode code specifies resource lists by using [**CM\_RESOURCE\_LIST**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list) structures (either as input to system routines or in response to IRPs). User-mode code specifies resource lists using [PnP configuration manager structures](/previous-versions/ff549718(v=vs.85)) as input to [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)).
 
-The PnP manager stores resource requirements lists and resource lists in the registry, where they can be viewed by using Regedit.exe. Drivers can access these lists indirectly through [Plug and Play routines](/windows-hardware/drivers/ddi/index) and [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md). User-mode applications can use [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)). (Drivers and applications must not directly access these lists using registry functions because the storage format is subject to change in a future release.)
+The PnP manager stores resource requirements lists and resource lists in the registry, where they can be viewed by using Regedit.exe. Drivers can access these lists indirectly through Plug and Play routines and [Plug and Play Minor IRPs](./plug-and-play-minor-irps.md). User-mode applications can use [PnP configuration manager functions](/previous-versions/ff549713(v=vs.85)). (Drivers and applications must not directly access these lists using registry functions because the storage format is subject to change in a future release.)
 
 ### <a href="" id="ddk-logical-configurations-kg"></a>Logical Configurations
 

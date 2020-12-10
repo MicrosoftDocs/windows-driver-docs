@@ -27,4 +27,4 @@ NFP providers pre-stage their communication using a pub/sub model whose transmis
 
 [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
 
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

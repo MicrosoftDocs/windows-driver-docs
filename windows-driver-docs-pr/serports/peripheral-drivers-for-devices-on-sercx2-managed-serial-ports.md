@@ -44,7 +44,7 @@ In addition, Windows defines a set of device I/O control requests (IOCTLs) that 
 SerCx2 supports many of the same serial IOCTLs as the inbox serial driver, Serial.sys, and version 1 of the serial framework extension (SerCx). For more information:
 
 - See the table in [Serial I/O Request Interface](serial-i-o-request-interface.md) to determine whether SerCx2 supports a particular serial IOCTL.
-- See [Serial Device Control Requests](/windows-hardware/drivers/ddi/index) for detailed descriptions of all the serial IOCTLs that are defined by the Windows serial I/O request interface.
+- See [Serial Device Control Requests](/windows-hardware/drivers/ddi/ntddser) for detailed descriptions of all the serial IOCTLs that are defined by the Windows serial I/O request interface.
 - See [Serial Controller Drivers Overview](serial-drivers-overview.md) for a brief introduction to Serial.sys, SerCx, and SerCx2.
 
 ## Interrupt path

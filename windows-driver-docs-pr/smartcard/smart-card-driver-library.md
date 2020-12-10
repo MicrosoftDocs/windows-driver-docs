@@ -32,7 +32,7 @@ Microsoft provides a driver library that contains a set of routines that standar
 
 The [WDM Smart Card Driver Routines](/previous-versions/ff549046(v=vs.85)) section, lists the driver library routines and identifies which routine performs each action.
 
-The driver library processes most of the IOCTL requests that the resource manager sends to the reader driver. The [Smart Card Driver IOCTLs](/windows-hardware/drivers/ddi/index) section, lists the IOCTLs that the driver library processes on behalf of the reader driver.
+The driver library processes most of the IOCTL requests that the resource manager sends to the reader driver. The [Smart Card Driver IOCTLs](/windows-hardware/drivers/ddi/winsmcrd) section, lists the IOCTLs that the driver library processes on behalf of the reader driver.
 
 The following files are used by the smart card driver library and by drivers that call smart card driver library routines.
 

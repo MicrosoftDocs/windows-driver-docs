@@ -49,7 +49,7 @@ If the rule monitors a particular argument in a function call (typically, a poin
 
 If the driver does specify the entry points and it does call the functions that the rule monitors, this result might indicate that SDV did not find or did not correctly interpret the entry point. To confirm that this situation occurred, examine and, if necessary, correct the [Sdv-map.h](sdv-map-h.md) file. For information about this procedure, see [Scanning the Driver](scanning-the-driver.md).
 
-For more information about each rule, see the [Static Driver Verifier Rules](/windows-hardware/drivers/ddi/index) reference.
+For more information about each rule, see the [Static Driver Verifier Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules) reference.
 
 To examine the driver further, run a verification using different rules.
 
