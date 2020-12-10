@@ -29,8 +29,7 @@ If you are implementing a GPIO button, describe the button in the system ACPI so
 
 - [ACPI button device](acpi-button-device.md)
 - [Button Behavior](../gpiobtn/button-behavior.md)
-- [Sample buttons ACPI for phone/tablet](acpi-button-devicemd#sample-acpi-button-device-for-windows-10-core-os-editions)
-- [Sample buttons ACPI for desktop](acpi-button-device.md#acpi-button-desktop)
+- [Sample buttons ACPI for Windows 10 Core Editions](acpi-button-device.md#sample-acpi-button-device-for-windows-10-core-os-editions)
 
 Microsoft encourages you to use the in-box transport-minidrivers whenever possible.
 
