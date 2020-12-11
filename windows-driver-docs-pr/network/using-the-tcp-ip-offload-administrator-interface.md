@@ -28,7 +28,7 @@ Before user-mode applications (or overlying drivers) set [OID\_TCP\_OFFLOAD\_PAR
 
 If the hardware capabilities change (for example, because a MUX intermediate driver switches to a difference underlying miniport adapter), the intermediate driver must report any changes in offload hardware capabilities with the [**NDIS\_STATUS\_TASK\_OFFLOAD\_HARDWARE\_CAPABILITIES**](./ndis-status-task-offload-hardware-capabilities.md) or [**NDIS\_STATUS\_TCP\_CONNECTION\_OFFLOAD\_HARDWARE\_CAPABILITIES**](./ndis-status-tcp-connection-offload-hardware-capabilities.md) status indication.
 
-NDIS and overlying drivers can use the [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md) OID to set or query the task offload encapsulation settings of an underlying miniport adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_offload_encapsulation) structure.
+NDIS and overlying drivers can use the [OID\_OFFLOAD\_ENCAPSULATION](./oid-offload-encapsulation.md) OID to set or query the task offload encapsulation settings of an underlying miniport adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [**NDIS\_OFFLOAD\_ENCAPSULATION**](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation) structure.
 
  
 

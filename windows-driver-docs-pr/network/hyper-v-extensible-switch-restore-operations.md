@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 When a Hyper-V child partition is restarted after it was stopped or live migrated, the run-time state of the partition is restored. During the restore operation, a Hyper-V extensible switch extension driver can restore run-time data about an extensible switch network adapter (NIC).
 
-When a restore operation is being performed on a Hyper-V child partition, the extensible switch interface signals the protocol edge of the extensible switch to issue an OID set request of [OID\_SWITCH\_NIC\_RESTORE](./oid-switch-nic-save.md). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for the OID\_SWITCH\_NIC\_RESTORE request contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure.
+When a restore operation is being performed on a Hyper-V child partition, the extensible switch interface signals the protocol edge of the extensible switch to issue an OID set request of [OID\_SWITCH\_NIC\_RESTORE](./oid-switch-nic-save.md). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the OID\_SWITCH\_NIC\_RESTORE request contains a pointer to an [**NDIS\_SWITCH\_NIC\_SAVE\_STATE**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state) structure.
 
 When it handles this OID request, the extension restores the run-time data for the network adapter. This run-time data was previously saved through OID requests of [OID\_SWITCH\_NIC\_SAVE](./oid-switch-nic-save.md) and OID\_SWITCH\_NIC\_SAVE\_COMPLETE.
 

@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 NDIS calls a CoNDIS miniport driver's [**MiniportCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request) function to submit an OID request to query or set information in the driver. NDIS calls *MiniportCoOidRequest* either on its own behalf or on behalf of an overlying driver that called the [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) function.
 
-NDIS passes *MiniportCoOidRequest* a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure that contains the request information. The request structure contains an OID\_*Xxx* identifier that indicates the type of request and other members to define the request data.
+NDIS passes *MiniportCoOidRequest* a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure that contains the request information. The request structure contains an OID\_*Xxx* identifier that indicates the type of request and other members to define the request data.
 
 The **Timeout** member specifies a time-out, in seconds, for the request. NDIS can reset the driver or cancel the request if the time-out expires before the driver completes the request.
 

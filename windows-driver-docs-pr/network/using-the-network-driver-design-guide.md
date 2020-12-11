@@ -33,7 +33,7 @@ This network driver design guide documents the following Network Driver Interfac
 
     For more information about NDIS 6.1, see [Introduction to NDIS 6.1](introduction-to-ndis-6-1.md).
 
--   NDIS 6.0, which is supported on Windows Vista and later versions of Windows. NDIS 6.0 includes support for filter drivers and many additional services that were not provided by earlier NDIS versions. NDIS 6.0 includes major updates to driver initialization and network data management including required support for driver reconfiguration at runtime and the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) architecture for handling network packet data. For more information about supporting runtime reconfiguration, see [Driver Stack Management](driver-stack-management.md). For more information about how to handle network packet data in NDIS 6.0 see [NET\_BUFFER Architecture](net-buffer-architecture.md).
+-   NDIS 6.0, which is supported on Windows Vista and later versions of Windows. NDIS 6.0 includes support for filter drivers and many additional services that were not provided by earlier NDIS versions. NDIS 6.0 includes major updates to driver initialization and network data management including required support for driver reconfiguration at runtime and the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) architecture for handling network packet data. For more information about supporting runtime reconfiguration, see [Driver Stack Management](driver-stack-management.md). For more information about how to handle network packet data in NDIS 6.0 see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
     For more information about NDIS 6.0, see [Introduction to NDIS 6.0](introduction-to-ndis-6-0.md).
 

@@ -17,15 +17,15 @@ ms.localizationpriority: medium
 
 
 
-NDIS 6.0 and later [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures are analogous to the [**NDIS\_PACKET**](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structures used by NDIS 5.*x* and earlier drivers. Each NET\_BUFFER structure packages a packet of network data.
+NDIS 6.0 and later [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures are analogous to the [**NDIS\_PACKET**](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structures used by NDIS 5.*x* and earlier drivers. Each NET\_BUFFER structure packages a packet of network data.
 
 The following figure shows the fields in a NET\_BUFFER structure.
 
 ![diagram illustrating the fields in a net\-buffer structure](images/netbuffer.png)
 
-The NET\_BUFFER structure includes a [**NET\_BUFFER\_HEADER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_header) structure in the **NetBufferHeader** member. The NET\_BUFFER\_HEADER structure includes a [**NET\_BUFFER\_DATA**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_data) structure in the **NetBufferData** member. You should use NDIS macros to access NET\_BUFFER structure members. For a complete list of these macros, see the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure reference page.
+The NET\_BUFFER structure includes a [**NET\_BUFFER\_HEADER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_header) structure in the **NetBufferHeader** member. The NET\_BUFFER\_HEADER structure includes a [**NET\_BUFFER\_DATA**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data) structure in the **NetBufferData** member. You should use NDIS macros to access NET\_BUFFER structure members. For a complete list of these macros, see the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure reference page.
 
-Some of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure members are only used by NDIS. The members that drivers typically use are:
+Some of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure members are only used by NDIS. The members that drivers typically use are:
 
 <a href="" id="protocolreserved"></a>**ProtocolReserved**  
 Reserved for use by protocol drivers.
@@ -59,7 +59,7 @@ NDIS provides functions to manage the data space in the MDL chain. How drivers u
 
 Drivers perform retreat and advance operations to increase and decrease the *used data space*. For more information about retreat and advance operations, see [Retreat and Advance Operations](retreat-and-advance-operations.md).
 
-The following terms and definitions describe elements of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) data space:
+The following terms and definitions describe elements of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) data space:
 
 <a href="" id="used-data-space"></a>Used data space  
 *Used data space* contains data that the current driver is using at the current time. Drivers increase *used data space* with retreat operations and reduce *used data space* with advance operations.

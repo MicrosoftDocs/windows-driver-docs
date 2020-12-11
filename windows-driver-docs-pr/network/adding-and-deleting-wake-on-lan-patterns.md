@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-To add a wake-on-LAN (WOL) pattern, NDIS protocol drivers issue an OID set request of [OID\_PM\_ADD\_WOL\_PATTERN](./oid-pm-add-wol-pattern.md). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure. Protocol drivers should specify a WOL packet if that WOL packet is supported by a network adapter. When the network adapter does not support the WOL packet, the protocol driver should use the WOL bitmap wake method.
+To add a wake-on-LAN (WOL) pattern, NDIS protocol drivers issue an OID set request of [OID\_PM\_ADD\_WOL\_PATTERN](./oid-pm-add-wol-pattern.md). The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure. Protocol drivers should specify a WOL packet if that WOL packet is supported by a network adapter. When the network adapter does not support the WOL packet, the protocol driver should use the WOL bitmap wake method.
 
 NDIS\_PM\_WOL\_PATTERN includes the following information:
 
@@ -47,7 +47,7 @@ Contains a WOL bitmap pattern specification.
 
 NDIS assigns an identifier that is unique for network adapter to every WOL pattern. The pattern identifier is a unique value for each of the patterns that are set on a network adapter. However, the pattern identifier is not globally unique across all network adapters. NDIS passes the identifier to the underlying network adapter when NDIS sends the [OID\_PM\_ADD\_WOL\_PATTERN](./oid-pm-add-wol-pattern.md) OID request to the miniport driver. If adding the WOL pattern is successful, NDIS returns the identifier to the overlying driver that added the WOL pattern. The overlying driver uses the identifier to remove a previously added WOL pattern. The pattern identifier is also used in status indications to the overlying drivers when a WOL pattern is removed from a network adapter.
 
-Protocol drivers must issue the OID set request of [OID\_PM\_REMOVE\_WOL\_PATTERN](./oid-pm-remove-wol-pattern.md) to remove all of the patterns that they added to a network adapter before they close a binding to that network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a pattern identifier.
+Protocol drivers must issue the OID set request of [OID\_PM\_REMOVE\_WOL\_PATTERN](./oid-pm-remove-wol-pattern.md) to remove all of the patterns that they added to a network adapter before they close a binding to that network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a pattern identifier.
 
 User-mode applications use the GUID\_PM\_REMOVE\_WOL\_PATTERN WMI GUID to remove a previously added WOL pattern from a network adapter. NDIS translates this WMI request to the OID set request of [OID\_PM\_REMOVE\_WOL\_PATTERN](./oid-pm-remove-wol-pattern.md) for the network adapter. NDIS deletes all of the WOL patterns that an application added from the network adapter before it halts the network adapter.
 

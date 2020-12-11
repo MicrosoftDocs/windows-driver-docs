@@ -38,7 +38,7 @@ Before it issues the object identifier (OID) method request of [OID\_NIC\_SWITCH
 
 The overlying driver issues the OID method request of [OID\_NIC\_SWITCH\_ALLOCATE\_VF](./oid-nic-switch-allocate-vf.md) by following these steps:
 
-1.  The overlying driver initializes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for the OID method request. The driver sets the **InformationBuffer** member to a pointer to an initialized [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
+1.  The overlying driver initializes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the OID method request. The driver sets the **InformationBuffer** member to a pointer to an initialized [**NDIS\_NIC\_SWITCH\_VF\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vf_parameters) structure.
 
 2.  The overlying driver calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) to issue the OID request to the underlying PF miniport driver.
 

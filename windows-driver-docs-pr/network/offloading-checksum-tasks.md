@@ -13,9 +13,9 @@ ms.localizationpriority: medium
 NDIS supports offloading TCP/IP checksum tasks at run time.
 
 > [!NOTE]
-> Checksum offload out-of-band (OOB) data is stored in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) information array. For more information about OOB data, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
+> Checksum offload out-of-band (OOB) data is stored in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) information array. For more information about OOB data, see [Accessing TCP/IP Offload NET\_BUFFER\_LIST Information](accessing-tcp-ip-offload-net-buffer-list-information.md).
 
-Before passing to the miniport driver a NET\_BUFFER\_LIST structure for a packet on which the miniport driver will perform checksum tasks, the TCP/IP transport specifies the checksum information that is associated with the NET\_BUFFER\_LIST structure. This information is specified by an [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_ip_checksum_net_buffer_list_info) structure, which is part of the NET\_BUFFER\_LIST information (out-of-band data) that is associated with the NET\_BUFFER\_LIST structure.
+Before passing to the miniport driver a NET\_BUFFER\_LIST structure for a packet on which the miniport driver will perform checksum tasks, the TCP/IP transport specifies the checksum information that is associated with the NET\_BUFFER\_LIST structure. This information is specified by an [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblchecksum/ns-nblchecksum-ndis_tcp_ip_checksum_net_buffer_list_info) structure, which is part of the NET\_BUFFER\_LIST information (out-of-band data) that is associated with the NET\_BUFFER\_LIST structure.
 
 Before offloading the checksum calculation for a TCP packet, the TCP/IP transport calculates the one's complement sum for the TCP pseudoheader. The TCP/IP transport calculates the one's complement sum across all fields in the pseudoheader, including Source IP Address, Destination IP Address, Protocol, and the TCP length for TCP packets. The TCP/IP transport enters the one's complement sum for the pseudoheader in the Checksum field of the TCP header.
 
@@ -28,7 +28,7 @@ Note that the TCP/IP transport always ensures that the checksum field in the IP 
 
 After it receives the NET\_BUFFER\_LIST structure in its [*MiniportSendNetBufferLists*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_send_net_buffer_lists) or [**MiniportCoSendNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_send_net_buffer_lists) function, a miniport driver typically does the following checksum processing:
 
-1.  The miniport driver calls the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_info) macro with an *\_Id* of **TcpIpChecksumNetBufferListInfo** to obtain an [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_tcp_ip_checksum_net_buffer_list_info) structure.
+1.  The miniport driver calls the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_info) macro with an *\_Id* of **TcpIpChecksumNetBufferListInfo** to obtain an [**NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblchecksum/ns-nblchecksum-ndis_tcp_ip_checksum_net_buffer_list_info) structure.
 
 2.  The miniport driver tests the **IsIPv4** and **IsIPv6** flags in the NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO structure. If both the **IsIPv4** and **IsIPv6** flags are not set, the NIC should not perform any checksum operations on the packet.
 
@@ -36,7 +36,7 @@ After it receives the NET\_BUFFER\_LIST structure in its [*MiniportSendNetBuffer
 
 4.  The miniport driver passes the packet to the NIC, which calculates the appropriate checksums for the packet. If a packet has both a tunnel IP header and a transport IP header, a NIC that supports IP checksum offloads performs IP checksum tasks only on the tunnel header. The TCP/IP transport performs IP checksum tasks on the transport IP header.
 
-Before indicating a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure for a receive packet on which it performs checksum tasks, the miniport driver validates the appropriate checksums and sets the appropriate *Xxx***ChecksumFailed** or *Xxx***ChecksumSucceeded** flags in the NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO structure.
+Before indicating a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure for a receive packet on which it performs checksum tasks, the miniport driver validates the appropriate checksums and sets the appropriate *Xxx***ChecksumFailed** or *Xxx***ChecksumSucceeded** flags in the NDIS\_TCP\_IP\_CHECKSUM\_NET\_BUFFER\_LIST\_INFO structure.
 
 Turning off Address Checksum Offloads when Large Send Offload (LSO) is enabled does not prevent the miniport driver from computing and inserting checksums in the packets generated by the LSO feature. To disable Address Checksum Offloads in this case the user must also disable LSO.
 

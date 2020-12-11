@@ -17,7 +17,7 @@ NDIS 6.30 and later miniport drivers that provide NDK services must support this
 Remarks
 -------
 
-NDIS issues this OID to obtain the list of active Network Direct listeners and shared endpoints from an adapter. The adapter is required to return the list of listeners and shared endpoints in the [**NDIS\_NDK\_LOCAL\_ENDPOINTS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_local_endpoints) structure at **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure.
+NDIS issues this OID to obtain the list of active Network Direct listeners and shared endpoints from an adapter. The adapter is required to return the list of listeners and shared endpoints in the [**NDIS\_NDK\_LOCAL\_ENDPOINTS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_local_endpoints) structure at **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure.
 
 This structure is variable-sized based on the number of local endpoints that are returned. The size of the local endpoint array, as element count, is specified in the **Count** member.
 
@@ -54,7 +54,7 @@ Requirements
 
 [**NDIS\_NDK\_LOCAL\_ENDPOINTS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_local_endpoints)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
  
 

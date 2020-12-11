@@ -23,17 +23,17 @@ The Windows TCP/IP protocol driver imposes a set of requirements for receiving E
 
 Drivers that originate Ethernet receive indications must support the following requirements:
 
--   The driver must allocate a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure for the received Ethernet frame. Each **NET\_BUFFER\_LIST** structure must include the out-of-band (OOB) data that is defined in the **NetBufferListInfo** member of the **NET\_BUFFER\_LIST** required for the particular use.
+-   The driver must allocate a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure for the received Ethernet frame. Each **NET\_BUFFER\_LIST** structure must include the out-of-band (OOB) data that is defined in the **NetBufferListInfo** member of the **NET\_BUFFER\_LIST** required for the particular use.
 
--   The driver must allocate a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure for the frame and link it to a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. The Ethernet miniport must assign exactly one **NET\_BUFFER** structure to a **NET\_BUFFER\_LIST** structure when indicating received data. This restriction applies only to the Ethernet receive path. It is not applicable to the other media types, such as the native 802.11 wireless LAN interface. or NDIS in general.
+-   The driver must allocate a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure for the frame and link it to a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. The Ethernet miniport must assign exactly one **NET\_BUFFER** structure to a **NET\_BUFFER\_LIST** structure when indicating received data. This restriction applies only to the Ethernet receive path. It is not applicable to the other media types, such as the native 802.11 wireless LAN interface. or NDIS in general.
 
--   Starting with NDIS 6.1, under certain scenarios, a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure can be associated with multiple memory descriptor lists (MDLs) for the received Ethernet frame. Even though a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure must contain a single **NET\_BUFFER** structure, using multiple MDLs allows the driver to split the received packet data into separate buffers.
+-   Starting with NDIS 6.1, under certain scenarios, a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure can be associated with multiple memory descriptor lists (MDLs) for the received Ethernet frame. Even though a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure must contain a single **NET\_BUFFER** structure, using multiple MDLs allows the driver to split the received packet data into separate buffers.
 
-    For example, Ethernet drivers that support the header-data split interface split a received Ethernet frame by using a linked list of multiple MDLs that are associated with a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure. For more information, see [Header-Data Split](header-data-split.md).
+    For example, Ethernet drivers that support the header-data split interface split a received Ethernet frame by using a linked list of multiple MDLs that are associated with a single [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure. For more information, see [Header-Data Split](header-data-split.md).
 
-    For simplicity and performance reasons, we highly recommend that drivers that don't support header-data split use only one MDL for each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure.
+    For simplicity and performance reasons, we highly recommend that drivers that don't support header-data split use only one MDL for each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure.
 
-    **Note**  In NDIS 6.0 for Windows Vista, each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure must contain only one MDL.
+    **Note**  In NDIS 6.0 for Windows Vista, each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure must contain only one MDL.
 
      
 

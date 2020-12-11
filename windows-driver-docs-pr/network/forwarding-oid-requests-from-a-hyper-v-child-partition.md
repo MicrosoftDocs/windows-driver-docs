@@ -28,7 +28,7 @@ When these multicast OID requests arrive at the extensible switch interface, the
 
 -   The **DestinationPortId** and **DestinationNicIndex** members are set to zero. This specifies that the encapsulated OID request is to be delivered to extensions in the control path.
 
--   The **OidRequest** member is set to the address of an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for the encapsulated OID request.
+-   The **OidRequest** member is set to the address of an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the encapsulated OID request.
 
 The protocol edge then issues the [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) request to forward the encapsulated OID request down the extensible switch control path. Underlying forwarding extensions can inspect these encapsulated OID requests and retain the multicast address information that they specify. For example, the extension may need this information if it originates multicast packets that it forwards to an extensible switch port.
 

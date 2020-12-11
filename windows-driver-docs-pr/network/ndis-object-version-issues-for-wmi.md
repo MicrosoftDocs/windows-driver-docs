@@ -21,7 +21,7 @@ The NDIS\_WMI\_Xxx\_HEADER structures have a new revision when more members are 
 
 When applications access the WMI information for a query operation, they must check the version in the returned buffer before they access any data. For a set operation, applications must check the **SupportedRevision** member in the NDIS\_WMI\_OUTPUT\_INFO structure to determine which version the underlying driver has accepted.
 
-Many WMI objects contain the **MSNdis\_ObjectHeader** property, which is equivalent to the [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) structure. When populating the **MSNdis\_ObjectHeader** property, set the **Type** and **Revision** fields as documented in the **NDIS\_OBJECT\_HEADER** topic. To ensure seamless portability to 64-bit systems, set the **Size** field to `0xFFFF`.
+Many WMI objects contain the **MSNdis\_ObjectHeader** property, which is equivalent to the [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header) structure. When populating the **MSNdis\_ObjectHeader** property, set the **Type** and **Revision** fields as documented in the **NDIS\_OBJECT\_HEADER** topic. To ensure seamless portability to 64-bit systems, set the **Size** field to `0xFFFF`.
 
 ## Related topics
 

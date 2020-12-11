@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 This **NdisOidDoubleRequest** rule verifies that:
 
--   Minport driver must complete the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) that is currently pending.
+-   Minport driver must complete the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) that is currently pending.
 
 **Driver model: NDIS**
 

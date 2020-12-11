@@ -63,7 +63,7 @@ If it does not exist, you can create a value with the name **AllowFlowControlUnd
 A value that indicates whether the device has enabled or disabled the ability to insert the 802.1Q tags for packet priority and virtual LANs (VLANs). This keyword does not indicate whether the device enabled or disabled packet priority or VLAN tags. Instead, it describes the following:
 
 - Whether the device inserts 802.1Q tags during a send operation
-- Whether 802.1Q tag information is available in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) out-of-band (OOB) information
+- Whether 802.1Q tag information is available in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) out-of-band (OOB) information
 - Whether the device copies 802.1Q tags to OOB during receive operations
 
 The miniport driver should remove the 802.1Q header from all receive packets regardless of the **\*PriorityVLANTag** setting. If the 802.1Q header is left in a packet, other drivers might not be able to parse the packet correctly.

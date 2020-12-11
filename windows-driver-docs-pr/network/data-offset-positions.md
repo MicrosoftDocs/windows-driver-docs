@@ -9,18 +9,18 @@ ms.localizationpriority: medium
 
 # Data offset positions
 
-When the filter engine calls a callout driver's [classifyFn](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function, it passes a pointer to a structure in the *layerData* parameter. For the layers that filter packet data, the pointer references a [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. Depending on the filtering layer at which the *classifyFn* callout function is called, the filter engine passes a pointer in the layerData* parameter to one of the following structures:
+When the filter engine calls a callout driver's [classifyFn](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function, it passes a pointer to a structure in the *layerData* parameter. For the layers that filter packet data, the pointer references a [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. Depending on the filtering layer at which the *classifyFn* callout function is called, the filter engine passes a pointer in the layerData* parameter to one of the following structures:
 
 - For the stream layer, the *layerData* parameter contains a pointer to an [FWPS_STREAM_CALLOUT_IO_PACKET0](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_) structure. The streamData member of this structure contains a pointer to an [FWPS_STREAM_DATA0](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_data0_) structure. 
 
-    The **netBufferListChain** member of the [FWPS_STREAM_DATA0](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_data0_) structure contains a pointer to a [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. 
+    The **netBufferListChain** member of the [FWPS_STREAM_DATA0](/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_data0_) structure contains a pointer to a [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. 
 
-- For all the other layers, the *layerData* parameter contains a pointer to a [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
+- For all the other layers, the *layerData* parameter contains a pointer to a [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure.
 
 > [!NOTE]
 > The *layerData* parameter might be NULL, depending on the layer being filtered and the conditions under which the driver's [classifyFn](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function is called.
  
-The [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure contains a linked list of [NET_BUFFER](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures. Within the [NET_BUFFER_DATA](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_data) structure of each **NET_BUFFER** structure, the **DataOffset** member points to a specific position in the packet data. The position that the **DataOffset** member points to depends on the filtering layer at which the filter engine calls the callout driver's *classifyFn* callout function. 
+The [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure contains a linked list of [NET_BUFFER](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures. Within the [NET_BUFFER_DATA](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data) structure of each **NET_BUFFER** structure, the **DataOffset** member points to a specific position in the packet data. The position that the **DataOffset** member points to depends on the filtering layer at which the filter engine calls the callout driver's *classifyFn* callout function. 
 
 For each filtering layer, the position in the packet data as specified by the **DataOffset** member is defined as follows:
 
@@ -416,7 +416,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 </td>
 <td>
 <p>Not applicable.</p>
-<div class="alert"><b>Note</b>  For these filtering layers, the <i><em>layerData</em></i> parameter contains a pointer to an <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0"><b>FWPS_CONNECT_REQUEST0</b></a> structure. This structure does  not reference a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
+<div class="alert"><b>Note</b>  For these filtering layers, the <i><em>layerData</em></i> parameter contains a pointer to an <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_connect_request0"><b>FWPS_CONNECT_REQUEST0</b></a> structure. This structure does  not reference a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
 <div> </div>
 </td>
 </tr>
@@ -427,7 +427,7 @@ FWPS_LAYER_NAME_RESOLUTION_CACHE_V6</p>
 </td>
 <td>
 <p>Not applicable.</p>
-<div class="alert"><b>Note</b>  For these filtering layers, the  <i><em>layerData</em></i> parameter contains a pointer to an <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0"><b>FWPS_BIND_REQUEST0</b></a> structure. This structure does  not reference a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
+<div class="alert"><b>Note</b>  For these filtering layers, the  <i><em>layerData</em></i> parameter contains a pointer to an <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-_fwps_bind_request0"><b>FWPS_BIND_REQUEST0</b></a> structure. This structure does  not reference a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list"><b>NET_BUFFER_LIST</b></a> structure that describes packet data.</div>
 <div> </div>
 </td>
 </tr>

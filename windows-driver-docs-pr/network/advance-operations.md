@@ -20,13 +20,13 @@ ms.localizationpriority: medium
 
 
 
-Advance operations decrease the size of the used data space in a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
+Advance operations decrease the size of the used data space in a [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure or in all of the NET\_BUFFER structures in a [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure.
 
 Drivers use the following advance functions:
 
-[**NdisAdvanceNetBufferDataStart**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisadvancenetbufferdatastart)
+[**NdisAdvanceNetBufferDataStart**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisadvancenetbufferdatastart)
 
-[**NdisAdvanceNetBufferListDataStart**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisadvancenetbufferlistdatastart)
+[**NdisAdvanceNetBufferListDataStart**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisadvancenetbufferlistdatastart)
 
 Advance operations can sometimes free MDLs that are associated with a NET\_BUFFER structure. To provide the mechanism for freeing MDLs, a driver can provide an optional entry point for a [**NetFreeMdl**](/windows-hardware/drivers/ddi/ndis/nc-ndis-net_buffer_free_mdl_handler) functions. If the entry point is **NULL**, NDIS uses a default method to allocate MDLs. MDLs must only be freed within a *NetFreeMdl* using that reciprocal of the mechanism that was used to allocate the MDL in the [**NetAllocateMdl**](/windows-hardware/drivers/ddi/ndis/nc-ndis-net_buffer_allocate_mdl_handler) function.
 

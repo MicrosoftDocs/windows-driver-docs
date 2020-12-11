@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-A header-data split provider must set the header-data split flags in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures for receive indications. For split frames, a NIC must also provide the physical address of the data portion of the received frame in the **DataPhysicalAddress** member of each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure.
+A header-data split provider must set the header-data split flags in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures for receive indications. For split frames, a NIC must also provide the physical address of the data portion of the received frame in the **DataPhysicalAddress** member of each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure.
 
 **Note**  A miniport driver can set the **DataPhysicalAddress** member of the NET\_BUFFER structure, even if the NET\_BUFFER is not associated with a split frame. In this case, **DataPhysicalAddress** contains the physical address of the header MDL.
 
@@ -26,7 +26,7 @@ The header-data split provider combines the flags in the **NblFlags** member wit
 The header-data split provider can set the following flags even if it does not split a frame:
 
 <a href="" id="ndis-nbl-flags-is-ipv4"></a>NDIS\_NBL\_FLAGS\_IS\_IPV4  
-All of the frames in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) are IPv4 frames. If this flag is set, the NDIS\_NBL\_FLAGS\_IS\_IPV6 flag must not be set.
+All of the frames in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) are IPv4 frames. If this flag is set, the NDIS\_NBL\_FLAGS\_IS\_IPV6 flag must not be set.
 
 <a href="" id="ndis-nbl-flags-is-ipv6"></a>NDIS\_NBL\_FLAGS\_IS\_IPV6  
 All of the frames in the NET\_BUFFER\_LIST are IPv6 frames. If this flag is set, the NDIS\_NBL\_FLAGS\_IS\_IPV4 flag must not be set.
@@ -35,14 +35,14 @@ All of the frames in the NET\_BUFFER\_LIST are IPv6 frames. If this flag is set,
 All of the frames in the NET\_BUFFER\_LIST are TCP frames. If this flag is set, NDIS\_NBL\_FLAGS\_IS\_UDP must not be set. And either NDIS\_NBL\_FLAGS\_IS\_IPV4 or NDIS\_NBL\_FLAGS\_IS\_IPV6 must be set.
 
 <a href="" id="ndis-nbl-flags-is-udp"></a>NDIS\_NBL\_FLAGS\_IS\_UDP  
-All of the frames in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) are UDP frames. If this flag is set, NDIS\_NBL\_FLAGS\_IS\_TCP must not be set. And either NDIS\_NBL\_FLAGS\_IS\_IPV4 or NDIS\_NBL\_FLAGS\_IS\_IPV6 must be set.
+All of the frames in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) are UDP frames. If this flag is set, NDIS\_NBL\_FLAGS\_IS\_TCP must not be set. And either NDIS\_NBL\_FLAGS\_IS\_IPV4 or NDIS\_NBL\_FLAGS\_IS\_IPV6 must be set.
 
 Any NDIS driver can set the preceding flags for debugging, testing, or other purposes. If a driver sets these flags, the values must accurately describe the contents of the received frame. Setting these flags is recommended.
 
 The header-data split provider can set the following header-data split flags:
 
 <a href="" id="ndis-nbl-flags-hd-split"></a>NDIS\_NBL\_FLAGS\_HD\_SPLIT  
-The header and data are split in all of the Ethernet frames that are associated with the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure.
+The header and data are split in all of the Ethernet frames that are associated with the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure.
 
 <a href="" id="ndis-nbl-flags-split-at-upper-layer-protocol-header"></a>NDIS\_NBL\_FLAGS\_SPLIT\_AT\_UPPER\_LAYER\_PROTOCOL\_HEADER  
 All of the frames in the NET\_BUFFER\_LIST structure are split at the [beginning of the upper-layer-protocol header](splitting-frames-at-the-beginning-of-the-upper-layer-protocol-headers.md). If this flag is set, either NDIS\_NBL\_FLAGS\_IS\_IPV4 or NDIS\_NBL\_FLAGS\_IS\_IPV6 must be set. Also, either NDIS\_NBL\_FLAGS\_IS\_TCP or NDIS\_NBL\_FLAGS\_IS\_UDP can be set. And NDIS\_NBL\_FLAGS\_SPLIT\_AT\_UPPER\_LAYER\_PROTOCOL\_PAYLOAD must not be set.

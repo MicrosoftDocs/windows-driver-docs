@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-Overlying drivers can issue an [OID\_GEN\_PORT\_STATE](./oid-gen-port-state.md) OID query request to get the current state of the port that is specified in the **PortNumber** member of an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure. NDIS handles this OID, and miniport drivers do not receive this OID query. NDIS receives port state information in the [**NDIS\_PORT\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_characteristics) structure.
+Overlying drivers can issue an [OID\_GEN\_PORT\_STATE](./oid-gen-port-state.md) OID query request to get the current state of the port that is specified in the **PortNumber** member of an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure. NDIS handles this OID, and miniport drivers do not receive this OID query. NDIS receives port state information in the [**NDIS\_PORT\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_port_characteristics) structure.
 
 The OID\_GEN\_PORT\_STATE OID is supported in NDIS 6.0 and later versions.
 

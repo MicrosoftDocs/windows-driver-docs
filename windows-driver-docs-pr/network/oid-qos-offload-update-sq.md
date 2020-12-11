@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 # OID_QOS_OFFLOAD_UPDATE_SQ
 
-Overlying drivers issue OID set requests of OID_QOS_OFFLOAD_UPDATE_SQ to update a Scheduler Queue (SQ) on the miniport adapter. The caller should set the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to contain a pointer to an [**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters) structure.
+Overlying drivers issue OID set requests of OID_QOS_OFFLOAD_UPDATE_SQ to update a Scheduler Queue (SQ) on the miniport adapter. The caller should set the **InformationBuffer** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to contain a pointer to an [**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters) structure.
 
 The caller should set the **SqId** field of **NDIS_QOS_SQ_PARAMETERS** to the current SQ ID of the SQ it wants to update. The caller should set the rest of the fields to the full set of parameters it desires on this SQ, except the **SqType** field which cannot be updated.
 
@@ -38,7 +38,7 @@ NDIS handles the OID set request of OID_QOS_OFFLOAD_UPDATE_SQ for miniport drive
 
 ## See also
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS_QOS_SQ_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-ndis_qos_sq_parameters)
 

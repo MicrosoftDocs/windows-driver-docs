@@ -26,7 +26,7 @@ Extensions must follow these guidelines for packet management in the extensible 
 
 -   On the extensible switch ingress data path, filtering and forwarding extensions can do the following:
 
-    -   Filtering extensions can filter packet traffic and enforce only custom port or switch policies for packet delivery through the extensible switch. When the extension filters packets in the ingress data path, it can only apply filtering rules based only on the source port and network adapter connection from which the packet originated. This information is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure and can be obtained by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_switch_forwarding_detail) macro.
+    -   Filtering extensions can filter packet traffic and enforce only custom port or switch policies for packet delivery through the extensible switch. When the extension filters packets in the ingress data path, it can only apply filtering rules based only on the source port and network adapter connection from which the packet originated. This information is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure and can be obtained by using the [**NET\_BUFFER\_LIST\_SWITCH\_FORWARDING\_DETAIL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_switch_forwarding_detail) macro.
 
         **Note**  Packets obtained on the ingress data path do not contain destination ports. Filtering packets based on destination ports can only be done on packets obtained on the egress data path.
 
@@ -38,7 +38,7 @@ Extensions must follow these guidelines for packet management in the extensible 
 
     -   Filtering extensions can filter packet traffic and enforce only custom port or switch policies for packet delivery through the extensible switch. When the filtering extension filters packets in the egress data path, it can apply filtering rules based only on the destination ports for a packet.
 
-        Destination port data is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. Extensions obtain this information by calling the [*GetNetBufferListDestinations*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_get_net_buffer_list_destinations) function.
+        Destination port data is stored in the OOB data of a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. Extensions obtain this information by calling the [*GetNetBufferListDestinations*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_get_net_buffer_list_destinations) function.
 
     -   Forwarding extensions can filter packet traffic and enforce custom and standard port or switch policies for packet delivery through the extensible switch. When the forwarding extension filters packets in the egress data path, it can apply filtering rules based on the source or destination ports for a packet.
 
@@ -70,11 +70,11 @@ Extensions must follow these guidelines for packet management in the extensible 
 
 -   In the standard NDIS data path, non-extensible switch OOB data often has different formats depending on whether the packet is being indicated as a send or a receive. For example, the [**NDIS\_IPSEC\_OFFLOAD\_V2\_HEADER\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_ipsec_offload_v2_header_net_buffer_list_info) OOB data is a union of send-and receive–specific structures.
 
-    In the extensible switch data path, all packets move through the extension driver stack as both sends and receives. Because of this, the non-extensible switch OOB data within the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure will be in either a send or receive format through the duration of the flow through the driver stack.
+    In the extensible switch data path, all packets move through the extension driver stack as both sends and receives. Because of this, the non-extensible switch OOB data within the packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure will be in either a send or receive format through the duration of the flow through the driver stack.
 
     The format of this OOB data depends upon the source extensible switch port from which the packet arrived at the extensible switch. If the source port is connected to the external network adapter, the non-extensible switch OOB data will be in a receive format. For other ports, this OOB data will be in a send format.
 
-    **Note**  If the extension clones a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure, it must take the non-extensible switch OOB data into consideration if it adds or modifies the OOB data. The extension must call [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) to copy the OOB data associated with the extensible switch data path from a source packet to a cloned packet. This function will maintain the OOB send or receive format when the data is copied to the cloned packet.
+    **Note**  If the extension clones a packet's [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure, it must take the non-extensible switch OOB data into consideration if it adds or modifies the OOB data. The extension must call [*CopyNetBufferListInfo*](/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_copy_net_buffer_list_info) to copy the OOB data associated with the extensible switch data path from a source packet to a cloned packet. This function will maintain the OOB send or receive format when the data is copied to the cloned packet.
 
      
 

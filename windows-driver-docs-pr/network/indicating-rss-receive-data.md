@@ -17,13 +17,13 @@ ms.localizationpriority: medium
 
 A miniport driver indicates received data by calling the [**NdisMIndicateReceiveNetBufferLists**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists) function from its [*MiniportInterruptDPC*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_interrupt_dpc) function.
 
-After the NIC computes the RSS hash value successfully, the driver should store the hash type, hashing function, and hash value in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure with the following macros:
+After the NIC computes the RSS hash value successfully, the driver should store the hash type, hashing function, and hash value in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure with the following macros:
 
-[**NET\_BUFFER\_LIST\_SET\_HASH\_TYPE**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_set_hash_type)
+[**NET\_BUFFER\_LIST\_SET\_HASH\_TYPE**](/windows-hardware/drivers/ddi/nblhash/nf-nblhash-net_buffer_list_set_hash_type)
 
-[**NET\_BUFFER\_LIST\_SET\_HASH\_FUNCTION**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_set_hash_function)
+[**NET\_BUFFER\_LIST\_SET\_HASH\_FUNCTION**](/windows-hardware/drivers/ddi/nblhash/nf-nblhash-net_buffer_list_set_hash_function)
 
-[**NET\_BUFFER\_LIST\_SET\_HASH\_VALUE**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_set_hash_value)
+[**NET\_BUFFER\_LIST\_SET\_HASH\_VALUE**](/windows-hardware/drivers/ddi/nblhash/nf-nblhash-net_buffer_list_set_hash_value)
 
 The hash type identifies the area of the received packet that the hash should be calculated over. For more information about the hash type, see [RSS Hashing Types](rss-hashing-types.md). The hashing function identifies the function that is used to calculate the hash value. For more information about hashing functions, see [RSS Hashing Functions](rss-hashing-functions.md). The protocol driver selects the hash type and function at initialization. For more information, see [RSS Configuration](rss-configuration.md).
 
