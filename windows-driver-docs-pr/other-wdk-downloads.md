@@ -27,12 +27,22 @@ Enterprise WDK (EWDK), and additional downloads for support purposes. To
 use these earlier versions, you must *first* install the version of
 Visual Studio that is appropriate for your targeted platform.
 
+## Runtime requirements
+
+You can run the Windows 10, version 1903 WDK on Windows 7 and later, and use it to develop drivers for these operating systems:
+
+|Client OS|Server OS|
+|-|-|
+|Windows 10|Windows Server 2019, Windows Server 2016|
+|Windows 8.1|Windows Server 2012 R2|
+Windows 8|Windows Server 2012|
+Windows 7|Windows Server 2008 R2 SP1|
+
 ## Step 1: Install Visual Studio
 
-Development of drivers is supported for specific versions of Visual
-Studio. To develop a driver for a specific version of Windows, you must
-use one of the versions of Visual Studio that are identified (and linked
-for download) in the following table.
+The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
+
+The following table indicates which Visual Studio version is required for the different releases of the WDK.
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
