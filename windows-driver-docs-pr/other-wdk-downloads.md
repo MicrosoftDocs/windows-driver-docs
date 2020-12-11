@@ -39,9 +39,10 @@ Windows 8|Windows Server 2012|
 Windows 7|Windows Server 2008 R2 SP1|
 
 ## Step 1: Install Visual Studio
+
 The WDK requires Visual Studio. For more information about system requirements for Visual Studio, see [Visual Studio 2019 System Requirements](/visualstudio/releases/2019/system-requirements).
 
-The following table showcases which Visual Studio version is required for the different releases of the WDK.
+The following table indicates which Visual Studio version is required for the different releases of the WDK.
 
 | Targeted versions of Windows      | Edition(s) of Visual Studio            |
 |--------------------------|----------------------------------------|
