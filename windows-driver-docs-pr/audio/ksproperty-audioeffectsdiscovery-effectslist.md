@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST
 description: The KSPROPERTY\_AUDIOEFFECTSDISCOVERY\_EFFECTSLIST property specifies whether a channel on a mute node (KSNODETYPE\_MUTE) is muted or not.
-ms.assetid: 53FDAFE2-8E5C-42C7-A8F3-13666BA90D98
 keywords: ["KSPROPERTY_AUDIOEFFECTSDISCOVERY_EFFECTSLIST Audio Devices"]
 topic_type:
 - apiref

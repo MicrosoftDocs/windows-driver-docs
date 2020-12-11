@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_PROCESSING
 description: KSNODETYPE\_VIDEO\_PROCESSING
-ms.assetid: e297c6c0-e4ff-420c-b22c-5185e97e6a6f
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DXVA-HD DDI
 description: DXVA-HD DDI
-ms.assetid: 8b44a5b7-dc86-46eb-83e1-39caa72ffa34
 keywords:
 - DXVA-HD DDI WDK Windows 7 display
 - DXVA-HD DDI WDK Server 2008 R2 display

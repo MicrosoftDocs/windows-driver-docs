@@ -94,7 +94,7 @@ To implementation the proposed solutions in the preceding table, read these topi
 
 [Write a USB function client driver](developing-windows-drivers-for-usb-function-controllers.md)  
 
-[USB function controller programming reference](/windows-hardware/drivers/ddi/index)
+[USB function controller programming reference](/windows-hardware/drivers/ddi/usbfnbase)
 
 ## Related topics
 

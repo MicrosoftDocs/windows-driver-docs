@@ -1,7 +1,6 @@
 ---
 title: Examples of Graphics Memory Reporting
 description: Examples of Graphics Memory Reporting
-ms.assetid: 3dc0e7ae-db6f-4440-8c9c-7227f409f81f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

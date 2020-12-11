@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_LID
 description: GUID_DEVICE_LID
-ms.assetid: e879b1bf-3f5f-4b6d-956b-006091377194
 keywords: ["GUID_DEVICE_LID Device and Driver Installation"]
 topic_type:
 - apiref

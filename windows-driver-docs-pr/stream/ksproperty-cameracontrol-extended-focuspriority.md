@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSPRIORITY property ID defined in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration is used to configure the focus priority.
-ms.assetid: 7E3558A1-0D0D-4470-B9C9-61EA359E92C5
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSPRIORITY Streaming Media Devices"]
 topic_type:
 - apiref

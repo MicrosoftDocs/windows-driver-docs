@@ -1,7 +1,6 @@
 ---
 title: ks.devhdr
 description: The ks.devhdr extension displays the kernel streaming device header associated with the given WDM object.
-ms.assetid: 1418ccfe-3842-422c-b2ce-124d0019d7b8
 keywords: ["ks.devhdr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

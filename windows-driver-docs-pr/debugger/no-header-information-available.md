@@ -1,7 +1,6 @@
 ---
 title: No Header Information Available
 description: No Header Information Available
-ms.assetid: cafc98c0-cae7-4140-8be7-6a535523f0e3
 keywords: ["No header information available (warning)", "header information not available (warning)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

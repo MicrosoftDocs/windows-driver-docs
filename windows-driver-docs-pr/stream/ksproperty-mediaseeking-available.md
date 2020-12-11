@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_AVAILABLE
 description: The KSPROPERTY\_MEDIASEEKING\_AVAILABLE property retrieves the media time span that is currently available on a filter.
-ms.assetid: df59f32e-2783-418d-85b9-f9285034c6fa
 keywords: ["KSPROPERTY_MEDIASEEKING_AVAILABLE Streaming Media Devices"]
 topic_type:
 - apiref

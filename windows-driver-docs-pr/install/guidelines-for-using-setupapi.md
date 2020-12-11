@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Using SetupAPI
 description: Guidelines for Using SetupAPI
-ms.assetid: a5005a4e-206a-4971-b89d-0d8f833d38c8
 keywords:
 - SetupAPI functions WDK , guidelines
 - device installation functions WDK SetupAPI

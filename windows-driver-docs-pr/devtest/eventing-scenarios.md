@@ -1,7 +1,6 @@
 ---
 title: Eventing Scenarios
 description: Eventing Scenarios
-ms.assetid: 6f7832ed-2b0b-4857-b47e-7db492a53855
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios

@@ -1,7 +1,6 @@
 ---
 title: Disabling the Watchdog Timer While Testing Display Drivers
 description: Disabling the Watchdog Timer While Testing Display Drivers
-ms.assetid: dc0c9e64-044b-4b2c-8011-9bdbf121307c
 keywords:
 - display drivers WDK Windows 2000 , debugging
 - debugging drivers WDK Windows 2000 display

@@ -1,7 +1,6 @@
 ---
 title: Conditional Statements
 description: Conditional Statements
-ms.assetid: eea2f9c1-a73b-46ed-a778-ece6bed615ac
 keywords:
 - Unidrv, conditional statements
 - GPD files WDK Unidrv , conditional statements

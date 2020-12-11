@@ -1,7 +1,6 @@
 ---
 title: DriverEntry's Required Responsibilities
 description: DriverEntry's Required Responsibilities
-ms.assetid: 6e997875-e7b7-43e2-8398-f0574f3a5816
 keywords: ["DriverEntry WDK kernel , required responsibilities"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

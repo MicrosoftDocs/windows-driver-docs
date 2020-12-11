@@ -1,7 +1,6 @@
 ---
 title: Version 3 of the DMA Operations Interface
 description: Version 3 of the DMA operations interface is available starting with Windows 8.
-ms.assetid: EFB59930-7D58-4E6E-8242-66A326E239E5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: COPP Processing
 description: COPP Processing
-ms.assetid: c9ff0fd3-c063-4450-ae66-54153b3dc53c
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , COPP
 - Video Acceleration WDK DirectX , COPP

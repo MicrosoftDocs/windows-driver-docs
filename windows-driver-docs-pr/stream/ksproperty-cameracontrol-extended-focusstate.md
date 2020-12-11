@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE
 description: The KSPROPERTY\_CAMERACONTROL\_EXTENDED\_FOCUSSTATE property ID that is defined in the KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PROPERTY enumeration is used to get the focus state from the driver. This is a read-only filter-level property.
-ms.assetid: 53D54443-59AD-4078-BD13-CB193B89E488
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSSTATE Streaming Media Devices"]
 topic_type:
 - apiref

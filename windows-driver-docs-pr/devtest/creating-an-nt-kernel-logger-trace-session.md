@@ -1,7 +1,6 @@
 ---
 title: Creating an NT Kernel Logger Trace Session
 description: Creating an NT Kernel Logger Trace Session
-ms.assetid: 606156b9-8ad9-4510-9929-4f0e3b7a3134
 keywords:
 - trace sessions WDK , NT Kernel Logger
 - NT Kernel Logger trace sessions WDK

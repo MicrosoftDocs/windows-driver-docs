@@ -1,7 +1,6 @@
 ---
 title: Native 802.11 IHV UI Extensions DLL Topics
 description: Native 802.11 IHV UI Extensions DLL Topics
-ms.assetid: f2015385-a9ee-42a2-a2fb-b4316bdbf368
 keywords:
 - IHV extensions WDK Native 802.11 , UI DLL
 - IHV UI Extensions DLL WDK Native 802.11

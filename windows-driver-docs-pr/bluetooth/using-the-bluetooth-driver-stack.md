@@ -1,7 +1,6 @@
 ---
 title: How to use the Bluetooth Driver Stack
 description: How to use the Bluetooth Driver Stack
-ms.assetid: c8a68c30-4cd6-4ee2-a653-7e0c1a28f4cf
 keywords:
 - Bluetooth WDK , driver stack
 - driver stacks WDK Bluetooth

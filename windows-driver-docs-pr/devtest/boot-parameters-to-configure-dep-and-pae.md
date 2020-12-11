@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Configure DEP and PAE
 description: Boot Parameters to Configure DEP and PAE
-ms.assetid: cb8b6298-e679-4ca3-8b94-4f0c6af23a3f
 keywords:
 - boot parameters WDK
 - boot entry parameters WDK

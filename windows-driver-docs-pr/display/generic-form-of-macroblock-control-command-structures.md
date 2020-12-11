@@ -1,7 +1,6 @@
 ---
 title: Generic Form of Macroblock Control Command Structures
 description: Generic Form of Macroblock Control Command Structures
-ms.assetid: 44009238-0a8e-4018-9b50-06729640f5e4
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017

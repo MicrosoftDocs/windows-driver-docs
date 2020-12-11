@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_VOLUMELEVEL
 description: The KSPROPERTY\_AUDIO\_VOLUMELEVEL property specifies the volume level of a channel in a volume node (KSNODETYPE\_VOLUME).
-ms.assetid: 5b420c71-fc82-413d-a93d-e8f3408cc8d7
 keywords: ["KSPROPERTY_AUDIO_VOLUMELEVEL Audio Devices"]
 topic_type:
 - apiref

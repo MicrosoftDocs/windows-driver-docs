@@ -1,7 +1,6 @@
 ---
 title: VPE Callback Functions
 description: VPE Callback Functions
-ms.assetid: c36e99a5-0657-4945-b5e8-21d875e9d1ec
 keywords:
 - DirectX VPE support WDK DirectDraw , initialization
 - drawing VPEs WDK DirectDraw , initialization

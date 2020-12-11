@@ -1,7 +1,6 @@
 ---
 title: Enumerating Filters on a VMQ
 description: Enumerating Filters on a VMQ
-ms.assetid: 6d5d8cb6-7bdf-488b-8fcd-7c6e78c4fb24
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

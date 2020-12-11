@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_ROOM\_TYPE
 description: The KSPROPERTY\_AC3\_ROOM\_TYPE property specifies the type and calibration of the mixing room in which the final audio session was produced.
-ms.assetid: 4e160fda-01f2-4517-bbc3-a9ae5b19f6c2
 keywords: ["KSPROPERTY_AC3_ROOM_TYPE Audio Devices"]
 topic_type:
 - apiref

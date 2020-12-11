@@ -1,7 +1,6 @@
 ---
 title: Printer Driver Architecture
 description: Printer Driver Architecture
-ms.assetid: 68a61007-8f0d-4fd4-b4a7-c8acbc101236
 keywords:
 - print jobs WDK , printer drivers
 - jobs WDK print , printer drivers

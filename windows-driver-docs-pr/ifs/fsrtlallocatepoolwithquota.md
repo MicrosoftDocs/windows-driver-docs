@@ -1,7 +1,6 @@
 ---
 title: FsRtlAllocatePoolWithQuota
 description: Obsolete.
-ms.assetid: 71ef108c-7f51-4f61-b7d2-91059da56df0
 keywords: ["FsRtlAllocatePoolWithQuota Installable File System Drivers"]
 topic_type:
 - apiref

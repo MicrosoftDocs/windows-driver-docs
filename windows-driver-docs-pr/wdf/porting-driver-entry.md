@@ -1,7 +1,6 @@
 ---
 title: Porting DriverEntry
 description: Porting DriverEntry
-ms.assetid: E880A45A-136C-480E-BE66-B61558F98227
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

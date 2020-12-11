@@ -1,7 +1,6 @@
 ---
 title: Points to Consider About Device Objects
 description: Points to Consider About Device Objects
-ms.assetid: 4c54340b-3b4c-4c67-b28d-fac769e4feb7
 keywords: ["device objects WDK kernel , design considerations"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

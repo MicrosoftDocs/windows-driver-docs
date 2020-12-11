@@ -1,7 +1,6 @@
 ---
 title: Test-Signing a Driver through an Embedded Signature
 description: Test-Signing a Driver through an Embedded Signature
-ms.assetid: 862e89e0-f84a-4058-a32f-09ae3043b884
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

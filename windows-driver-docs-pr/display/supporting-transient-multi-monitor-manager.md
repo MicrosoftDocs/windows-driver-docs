@@ -1,7 +1,6 @@
 ---
 title: Supporting Transient Multi-Monitor Manager
 description: Supporting Transient Multi-Monitor Manager
-ms.assetid: 5091fe00-76d9-4585-9ef0-4b5b7ab8bc06
 keywords:
 - Transient Multi-Monitor Manager WDK display
 - TMM WDK display

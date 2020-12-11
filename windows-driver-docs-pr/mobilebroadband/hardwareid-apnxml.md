@@ -1,7 +1,6 @@
 ---
 title: HardwareId (APN element)
 description: HardwareId (APN element)
-ms.assetid: 9c09915c-d0f6-4ddf-b2e1-79f00599c3a0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

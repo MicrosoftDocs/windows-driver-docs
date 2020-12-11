@@ -1,7 +1,6 @@
 ---
 title: Bidirectional Communication Schema Hierarchy
 description: Bidirectional Communication Schema Hierarchy
-ms.assetid: b3435c17-f72b-4925-8d13-bd3e71b4947e
 keywords:
 - bidirectional communication schema WDK print
 - bidi communication schema WDK print

@@ -1,7 +1,6 @@
 ---
 title: StorPortFindAdapter rule (storport)
 description: The HwStorFindAdapter routine must set the MaximumTransferLength and the NumberOfPhysicalBreaks fields in the PORT\_CONFIGURATION\_INFORMATION structure.
-ms.assetid: 8BE79E99-078E-4CCE-A6C1-0DEB1F1252DA
 ms.date: 05/21/2018
 keywords: ["StorPortFindAdapter rule (storport)"]
 topic_type:

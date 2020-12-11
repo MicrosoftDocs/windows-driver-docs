@@ -1,7 +1,6 @@
 ---
 title: Extensible Wave-Format Descriptors
 description: Extensible Wave-Format Descriptors
-ms.assetid: b80e651b-fb97-4502-8526-e844425805dc
 keywords:
 - wave-format descriptors WDK audio
 - wave-format descriptors

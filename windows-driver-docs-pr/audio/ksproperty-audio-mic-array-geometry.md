@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY
 description: The KSPROPERTY\_AUDIO\_MIC\_ARRAY\_GEOMETRY property specifies the geometry of the microphone array.
-ms.assetid: c9153c65-06d1-4968-8d70-64aafc760a8c
 keywords: ["KSPROPERTY_AUDIO_MIC_ARRAY_GEOMETRY Audio Devices"]
 topic_type:
 - apiref

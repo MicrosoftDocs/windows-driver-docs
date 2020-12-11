@@ -1,7 +1,6 @@
 ---
 title: Debugging Resources
 description: Use Debugging Tools for Windows to debug drivers, applications, and services on Windows systems.
-ms.assetid: F2111416-EC6C-4967-B123-9A6101040561
 ms.date: 12/09/2019
 ms.localizationpriority: medium
 ---

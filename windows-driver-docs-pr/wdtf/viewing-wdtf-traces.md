@@ -1,7 +1,6 @@
 ---
 title: Enabling and Viewing WDTF Traces
 description: Enabling and Viewing WDTF Traces
-ms.assetid: 9bed6042-3691-4a5e-a143-51acf746b1ae
 keywords:
 - Windows Device Testing Framework WDK , tracing events
 - WDTF WDK , tracing events

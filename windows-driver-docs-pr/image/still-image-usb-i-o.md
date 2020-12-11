@@ -1,7 +1,6 @@
 ---
 title: Still Image USB I/O
 description: Still Image USB I/O
-ms.assetid: 93b320b3-1a3f-4ed9-8692-d0d94a3b69bd
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

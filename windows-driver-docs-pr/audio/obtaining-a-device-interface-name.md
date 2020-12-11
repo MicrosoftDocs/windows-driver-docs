@@ -1,7 +1,6 @@
 ---
 title: Obtaining a Device Interface Name
 description: Obtaining a Device Interface Name
-ms.assetid: 2ad0bafa-c836-4dca-9287-72cdbddec7d0
 keywords:
 - WDM audio extensions WDK , device interface names
 - device interface names WDK audio

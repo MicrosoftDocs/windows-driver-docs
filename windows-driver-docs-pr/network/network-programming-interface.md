@@ -1,7 +1,6 @@
 ---
 title: Network Programming Interface
 description: Network Programming Interface
-ms.assetid: 74d706e1-5398-4685-b3ab-7b4c4b6b5588
 keywords:
 - NPI WDK Network Module Registrar
 - client characteristics structure WDK Network Module Registrar

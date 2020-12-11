@@ -1,7 +1,6 @@
 ---
 title: Windows 2000 Driver Initialization
 description: Windows 2000 Driver Initialization
-ms.assetid: 82222357-1e5a-4aec-879a-68f19f3faa4f
 keywords:
 - DirectDraw driver initialization WDK Windows 2000 display , Windows 2000
 - Windows 2000 display driver model WDK , DirectDraw

@@ -1,7 +1,6 @@
 ---
 title: Post-Association Operations Overview
 description: Post-Association Operations Overview
-ms.assetid: e4c7ea7a-53ad-41b2-bf3f-03c770e58043
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , post-association operations
 - post-association operations WDK Native 802.11 IHV Extensions DLL

@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_REMOVE_WAKE_UP_PATTERN
 description: OID_PNP_REMOVE_WAKE_UP_PATTERN
-ms.assetid: 493019d0-9cd9-4712-8d18-5ee0264be9e1
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_REMOVE_WAKE_UP_PATTERN Network Drivers Starting with Windows Vista

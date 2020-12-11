@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH
 description: The KSPROPERTY\_SYSAUDIO\_SELECT\_GRAPH property is used to explicitly include an optional node in the graph that SysAudio builds for a pin instance on a virtual audio device.
-ms.assetid: 1107e20e-9ba8-4fda-8457-c357426a9cda
 keywords: ["KSPROPERTY_SYSAUDIO_SELECT_GRAPH Audio Devices"]
 topic_type:
 - apiref

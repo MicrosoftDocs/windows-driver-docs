@@ -1,7 +1,6 @@
 ---
 title: Offloading TCP/IP Connections
 description: Offloading TCP/IP Connections
-ms.assetid: 3c9b74ca-d624-4f0b-be8b-4a71016d53d4
 keywords:
 - connection offload WDK TCP/IP transport , TCP chimney offload services
 - TCP chimney offload services WDK TCP/IP transport

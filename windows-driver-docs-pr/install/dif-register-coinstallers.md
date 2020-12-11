@@ -1,7 +1,6 @@
 ---
 title: DIF_REGISTER_COINSTALLERS
 description: DIF_REGISTER_COINSTALLERS
-ms.assetid: 9b75470b-9f65-47ec-b738-9664f3e766d1
 keywords: ["DIF_REGISTER_COINSTALLERS Device and Driver Installation"]
 topic_type:
 - apiref

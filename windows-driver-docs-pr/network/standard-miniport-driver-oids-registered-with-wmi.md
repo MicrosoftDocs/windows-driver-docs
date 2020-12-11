@@ -1,7 +1,6 @@
 ---
 title: Standard Miniport Driver OIDs Registered with WMI
 description: Standard Miniport Driver OIDs Registered with WMI
-ms.assetid: 87529f7f-8d62-4067-b008-7c4a04d7a7c6
 keywords:
 - miniport adapters WDK networking , WMI
 - adapters WDK networking , WMI

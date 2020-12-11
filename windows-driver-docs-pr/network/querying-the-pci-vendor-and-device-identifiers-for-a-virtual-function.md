@@ -1,7 +1,6 @@
 ---
 title: Querying the PCI vendor and device IDs for a virtual function
 description: Querying the PCI Vendor and Device Identifiers for a Virtual Function
-ms.assetid: A2FB0A35-A89B-4028-92BA-E75739B080FD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

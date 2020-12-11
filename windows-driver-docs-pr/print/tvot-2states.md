@@ -1,7 +1,6 @@
 ---
 title: TVOT\_2STATES
 description: TVOT\_2STATES
-ms.assetid: e8d89cf6-275d-4a2a-8a8e-8799988c31e2
 keywords: ["TVOT_2STATES Print Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_VIDEO
 description: KSCATEGORY_VIDEO
-ms.assetid: cdcdb22b-3969-4c58-a8ce-a9d0b4b64e3b
 keywords: ["KSCATEGORY_VIDEO Device and Driver Installation"]
 topic_type:
 - apiref

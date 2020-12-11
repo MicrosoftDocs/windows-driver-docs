@@ -1,7 +1,6 @@
 ---
 title: View Source language file extensions
 description: View Source language file extensions
-ms.assetid: 98deead3-1d4f-41b0-be71-0bae4c0f5c81
 keywords: ["View Source Language File Extensions"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,6 +1,5 @@
 ---
 title: YUV format ranges in Windows 8.1
-ms.assetid: D76FFB8C-CA42-446E-826F-52982B1849E5
 description: How User-mode display drivers take advantage of YUV video formats
 keywords:
 - full-range YUV WDK display

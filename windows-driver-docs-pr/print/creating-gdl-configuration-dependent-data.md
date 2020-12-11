@@ -1,7 +1,6 @@
 ---
 title: Creating GDL Configuration-Dependent Data
 description: Creating GDL Configuration-Dependent Data
-ms.assetid: 5b00903c-a637-4f83-96b8-92fe850d309e
 keywords:
 - GDL WDK , configurations
 - configurations WDK GDL , creating configuration-dependent data

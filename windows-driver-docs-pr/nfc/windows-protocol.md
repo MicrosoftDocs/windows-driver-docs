@@ -1,7 +1,6 @@
 ---
 title: Windows protocol
 description: Windows protocol
-ms.assetid: 9D28589E-FA19-43F2-BE22-438795807657
 keywords:
 - NFC
 - near field communications

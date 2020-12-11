@@ -1,7 +1,6 @@
 ---
 title: Scanner Status Elements
 description: Scanner Status Elements
-ms.assetid: 9c616805-a25b-4fd3-bc84-4bf40b58cab6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

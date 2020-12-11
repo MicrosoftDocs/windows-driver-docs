@@ -1,7 +1,6 @@
 ---
 title: Handling OID Query and Set Requests in an NDIS Interface Provider
 description: Handling OID Query and Set Requests in an NDIS Interface Provider
-ms.assetid: 9ce51fc8-426f-4d36-8ee7-0a93b7b8439c
 keywords:
 - NDIS network interfaces WDK , interface providers
 - network interfaces WDK , interface providers

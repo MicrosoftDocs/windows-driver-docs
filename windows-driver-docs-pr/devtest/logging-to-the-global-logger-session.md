@@ -1,7 +1,6 @@
 ---
 title: Logging to the Global Logger Session
 description: Logging to the Global Logger Session
-ms.assetid: 48dfe101-b083-4d70-b85f-2e115f7e1dfa
 keywords:
 - tracing during boot WDK , Global Logger trace session
 - boot-time tracing WDK , Global Logger trace session

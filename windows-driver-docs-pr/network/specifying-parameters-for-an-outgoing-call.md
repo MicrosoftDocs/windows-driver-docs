@@ -1,7 +1,6 @@
 ---
 title: Specifying Parameters for an Outgoing Call
 description: Specifying Parameters for an Outgoing Call
-ms.assetid: 6e11dcd7-33ae-4b9e-8609-1baccec691d5
 keywords:
 - CoNDIS WAN drivers WDK networking , outgoing calls
 - telephonic services WDK WAN , outgoing calls

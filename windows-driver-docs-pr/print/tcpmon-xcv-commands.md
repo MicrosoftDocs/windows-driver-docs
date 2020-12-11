@@ -1,7 +1,6 @@
 ---
 title: TCPMON Xcv Commands
 description: TCPMON Xcv Commands
-ms.assetid: 89aebc89-d81e-4d86-942e-d13b16c55fb3
 keywords:
 - print monitors WDK , TCPMON Xcv
 - transceive (Xcv) commands WDK print

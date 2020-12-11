@@ -1,7 +1,6 @@
 ---
 title: Implementing IAdapterPowerManagement
 description: Implementing IAdapterPowerManagement
-ms.assetid: 654b86a7-845c-415b-99e4-c7be92cb9b9c
 keywords:
 - IAdapterPowerManagement
 - adapter drivers WDK audio , power management

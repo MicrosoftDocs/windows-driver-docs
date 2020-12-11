@@ -1,7 +1,6 @@
 ---
 title: Locking Swizzled Allocations
 description: Locking Swizzled Allocations
-ms.assetid: c9be52d9-36b2-4a0f-9629-01b31293af38
 keywords:
 - swizzled allocation locking WDK display
 - locking swizzled allocations WDK display

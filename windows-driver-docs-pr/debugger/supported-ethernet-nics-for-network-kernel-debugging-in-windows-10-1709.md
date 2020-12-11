@@ -1,7 +1,6 @@
 ---
 title: Supported Ethernet NICs for Network Kernel Debugging in Windows 10 version 1709 (Redstone 3) Build 16299
 description: Learn about kernel debugging over an Ethernet network cable when the target computer is running Windows 10, version 1709.
-ms.assetid: 13CC3084-A223-4CDC-8612-2A3851369FB0
 ms.date: 06/18/2020
 ms.localizationpriority: medium
 ---

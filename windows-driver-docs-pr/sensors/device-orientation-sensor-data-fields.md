@@ -1,7 +1,6 @@
 ---
 title: Orientation sensor data fields
 description: This topic provides information about the data fields that are specific to the orientation sensor.
-ms.assetid: 4B1FA56E-6956-4BC9-B929-3D78EF933057
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

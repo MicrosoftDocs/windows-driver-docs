@@ -1,7 +1,6 @@
 ---
 title: Handling Compressed Texture Surfaces Created In SysMem
 description: Handling Compressed Texture Surfaces Created In System Memory
-ms.assetid: 773962ce-f459-4dc5-8311-c43ae33cfb7c
 keywords:
 - drawing compressed textures WDK DirectDraw , system memory considerations
 - DirectDraw compressed textures WDK Windows 2000 display , system memory considerations

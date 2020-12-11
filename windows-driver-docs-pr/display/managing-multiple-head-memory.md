@@ -1,7 +1,6 @@
 ---
 title: Managing Multiple-Head Memory
 description: Managing Multiple-Head Memory
-ms.assetid: 37cda124-0c3b-4af4-92b8-329440dd3221
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , memory management
 ms.date: 04/20/2017

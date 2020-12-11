@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_TVAUDIO
 description: KSCATEGORY_TVAUDIO
-ms.assetid: a3fac238-2712-4eef-b768-4bc2ac43ec4c
 keywords: ["KSCATEGORY_TVAUDIO Device and Driver Installation"]
 topic_type:
 - apiref

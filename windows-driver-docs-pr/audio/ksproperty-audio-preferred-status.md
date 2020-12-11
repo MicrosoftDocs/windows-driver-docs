@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_PREFERRED\_STATUS
 description: The KSPROPERTY\_AUDIO\_PREFERRED\_STATUS property informs a device that it is the system's preferred audio device.
-ms.assetid: a0e89143-ead1-4e0d-a550-398ec1abf9e9
 keywords: ["KSPROPERTY_AUDIO_PREFERRED_STATUS Audio Devices"]
 topic_type:
 - apiref

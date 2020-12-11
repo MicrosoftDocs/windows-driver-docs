@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_JACK\_SINK\_INFO
 description: The KSPROPERTY\_JACK\_SINK\_INFO property is implemented as a pin-wise property that is accessed by using the filter handle.
-ms.assetid: a51c03fa-91e4-49f2-ad76-35133c3b09ba
 keywords: ["KSPROPERTY_JACK_SINK_INFO Audio Devices"]
 topic_type:
 - apiref

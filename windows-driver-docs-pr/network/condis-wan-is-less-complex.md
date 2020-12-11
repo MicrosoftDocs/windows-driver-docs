@@ -1,7 +1,6 @@
 ---
 title: CoNDIS WAN Is Less Complex
 description: CoNDIS WAN Is Less Complex
-ms.assetid: 750f321a-72c9-4d90-b02e-cbe5177dc2af
 keywords:
 - CoNDIS WAN drivers WDK networking , benefits
 ms.date: 04/20/2017

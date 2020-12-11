@@ -1,7 +1,6 @@
 ---
 title: Enabling Smart Card Event Logging in the Registry
 description: Enabling Smart Card Event Logging in the Registry
-ms.assetid: b07ff2d7-9025-424e-a57e-eb37ae4091f4
 keywords:
 - smart card drivers WDK , registry
 - registry WDK smart card

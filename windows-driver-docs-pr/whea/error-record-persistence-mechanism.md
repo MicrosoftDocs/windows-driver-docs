@@ -1,7 +1,6 @@
 ---
 title: Error Record Persistence Mechanism
 description: Error Record Persistence Mechanism
-ms.assetid: f361c966-7ed4-4676-afa9-75268196c0e4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

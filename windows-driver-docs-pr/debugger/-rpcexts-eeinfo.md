@@ -1,7 +1,6 @@
 ---
 title: rpcexts.eeinfo
 description: The rpcexts.eeinfo extension displays the extended error information chain.
-ms.assetid: dc842236-bdbf-42aa-911d-6eb5eb1798ee
 keywords: ["rpcexts.eeinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

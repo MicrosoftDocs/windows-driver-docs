@@ -1,7 +1,6 @@
 ---
 title: Required Graphics Driver Functions
 description: Required Graphics Driver Functions
-ms.assetid: 3a7a7516-b758-4499-bd9d-216fef7b3c8c
 keywords:
 - GDI WDK Windows 2000 display , functions, required
 - graphics drivers WDK Windows 2000 display , functions, required

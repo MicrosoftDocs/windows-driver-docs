@@ -1,7 +1,6 @@
 ---
 title: Driver annotations for interlocked operands
 description: Driver annotations for interlocked operands
-ms.assetid: 33C85016-765B-42BF-9F38-BB682951B20C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

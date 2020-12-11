@@ -1,7 +1,6 @@
 ---
 title: Selection
 description: Selection
-ms.assetid: 5DFE5B52-4D58-491c-9363-95E4A2FD680C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

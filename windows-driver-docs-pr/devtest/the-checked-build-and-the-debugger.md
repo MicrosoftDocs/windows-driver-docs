@@ -1,7 +1,6 @@
 ---
 title: The Checked Build and the Debugger
 description: The Checked Build and the Debugger
-ms.assetid: 851d9b5b-cd1c-4b1e-b3ec-d13645795705
 keywords:
 - checked builds WDK , debuggers
 - debuggers WDK checked builds

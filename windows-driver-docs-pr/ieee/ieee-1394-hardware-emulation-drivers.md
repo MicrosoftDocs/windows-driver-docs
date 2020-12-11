@@ -1,7 +1,6 @@
 ---
 title: IEEE 1394 Hardware Emulation Drivers
 description: IEEE 1394 Hardware Emulation Drivers
-ms.assetid: 44141072-e425-4983-9234-3ad79daa2017
 keywords:
 - IEEE 1394 WDK buses , emulation drivers
 - 1394 WDK buses , emulation drivers

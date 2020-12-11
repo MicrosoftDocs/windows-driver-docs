@@ -2,7 +2,6 @@
 title: NDIS general statistics OIDs
 description: This section describes general statistics OIDs for all NDIS drivers
 keywords: ["NDIS general statistics OIDs", "WDK NDIS general statistics OIDs", "WDK general statistics OIDs"]
-ms.assetid: 364BEF6E-489C-427A-9ACC-D18F29F22B0F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

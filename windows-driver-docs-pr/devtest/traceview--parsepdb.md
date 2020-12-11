@@ -1,7 +1,6 @@
 ---
 title: TraceView -parsepdb
 description: Use a TraceView -parsepdb command to create trace message format files from data in a PDB symbol file.
-ms.assetid: d193aa3c-17ee-4fcf-a4ee-afb50c78ec54
 keywords:
 - TraceView -parsepdb Driver Development Tools
 topic_type:

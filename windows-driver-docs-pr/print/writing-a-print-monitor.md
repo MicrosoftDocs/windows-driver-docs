@@ -1,7 +1,6 @@
 ---
 title: Writing a Print Monitor
 description: Writing a Print Monitor
-ms.assetid: ca5600fc-9e2c-4735-90c4-9509c31dee29
 keywords:
 - print spooler customizing WDK , print monitors
 - spooler customizing WDK print , print monitors

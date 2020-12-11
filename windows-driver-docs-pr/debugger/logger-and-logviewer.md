@@ -1,7 +1,6 @@
 ---
 title: Logger and LogViewer
 description: Logger and LogViewer
-ms.assetid: 10f2d006-6ebc-4098-a401-afc6351ff3dd
 keywords: ["Logger", "LogViewer"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

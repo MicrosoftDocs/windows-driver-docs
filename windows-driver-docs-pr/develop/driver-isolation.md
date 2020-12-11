@@ -2,7 +2,6 @@
 title: Driver Package Isolation
 description: This page describes driver isolation, a requirement for a Windows Driver.
 ms.date: 10/01/2019
-ms.assetid: 3955fb29-ee49-4c3e-ac6d-700dcba3f884
 ms.localizationpriority: medium
 ---
 

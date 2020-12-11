@@ -1,7 +1,6 @@
 ---
 title: DocumentName element
 description: The required DocumentName element contains the name of the document that the client supplies.
-ms.assetid: 7d6d7dcd-db5d-420d-9e5f-3badeb0a511c
 keywords: ["DocumentName element Imaging Devices"]
 topic_type:
 - apiref

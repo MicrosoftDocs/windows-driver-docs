@@ -1,7 +1,6 @@
 ---
 title: Latency Clocks
 description: Latency Clocks
-ms.assetid: 3cdd4c69-d99d-48bc-a1d9-9da2a2511e94
 keywords:
 - synthesizers WDK audio , latency clocks
 - latency WDK audio , clocks

@@ -1,7 +1,6 @@
 ---
 title: DirectDraw and GDI
 description: DirectDraw and GDI
-ms.assetid: 22106821-dac1-4c99-bf2c-c051b5a8893a
 keywords:
 - display drivers WDK Windows 2000 , DirectDraw
 - DirectDraw WDK Windows 2000 display , GDI

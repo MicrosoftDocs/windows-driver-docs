@@ -1,7 +1,6 @@
 ---
 title: Supporting GetDriverInfo2
 description: Supporting GetDriverInfo2
-ms.assetid: 5e2dd363-9e72-4674-940e-8b4f06f6eb14
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , GetDriverInfo2
 - GetDriverInfo2

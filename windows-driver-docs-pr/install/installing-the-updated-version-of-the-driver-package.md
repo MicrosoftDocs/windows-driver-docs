@@ -1,7 +1,6 @@
 ---
 title: Installing the Updated Version of the Driver Package
 description: Installing the Updated Version of the Driver Package
-ms.assetid: c2138956-a036-410d-b34e-b7b6efbcbace
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

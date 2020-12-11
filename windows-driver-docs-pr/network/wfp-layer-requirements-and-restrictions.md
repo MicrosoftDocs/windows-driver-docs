@@ -1,7 +1,6 @@
 ---
 title: WFP Layer Requirements and Restrictions
 description: WFP Layer Requirements and Restrictions
-ms.assetid: 3677cc12-3242-4fbd-809d-303b9d324139
 keywords:
 - processing packets WDK Windows Filtering Platform
 - packet processing WDK Windows Filtering Platform

@@ -1,7 +1,6 @@
 ---
 title: Controlling Image Quality
 description: Controlling Image Quality
-ms.assetid: b6d25178-6726-4ce0-ab34-efeedc618044
 keywords:
 - Unidrv, image quality
 - image quality options WDK Unidrv

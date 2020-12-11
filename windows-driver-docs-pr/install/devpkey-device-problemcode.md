@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ProblemCode
 description: DEVPKEY_Device_ProblemCode
-ms.assetid: 545fb6f7-660e-4df8-80cd-48b36910a518
 keywords: ["DEVPKEY_Device_ProblemCode Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Using GetOptions and SetOptions
 description: Using GetOptions and SetOptions
-ms.assetid: c8b5c235-0b74-47c8-b6ba-eba810a8467b
 keywords:
 - GetOptions
 - SetOptions

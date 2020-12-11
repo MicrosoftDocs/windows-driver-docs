@@ -1,7 +1,6 @@
 ---
 title: File Source File Path
 description: File Source File Path
-ms.assetid: 2fa7cbc1-a1e6-411b-95d2-18fd183ee117
 keywords: ["File Source File Path", "source files and paths, File Source File Path"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

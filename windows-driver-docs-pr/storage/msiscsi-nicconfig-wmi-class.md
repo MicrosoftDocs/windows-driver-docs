@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_NICConfig WMI Class
 description: MSiSCSI\_NICConfig WMI Class
-ms.assetid: 9b7a466d-a9bb-41c5-8f38-e5baf21e863a
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

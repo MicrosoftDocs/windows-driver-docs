@@ -1,7 +1,6 @@
 ---
 title: bthkd.bthtree
 description: The bthkd.bthtree command displays the complete Bluetooth device tree.
-ms.assetid: A51F4747-0013-4483-92B2-D14B3917CC72
 keywords: ["bthkd.bthtree Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

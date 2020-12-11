@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfsearchpath
 description: The wdfkd.wdfsearchpath extension sets the search path to formatting files for Kernel-Mode Driver Framework (KMDF) error log records.
-ms.assetid: cb52dc07-00b3-47d3-8636-4a6cd5ff3e29
 keywords: ["wdfkd.wdfsearchpath Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

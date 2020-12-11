@@ -1,7 +1,6 @@
 ---
 title: DRM Overview
 description: DRM Overview
-ms.assetid: 81f47eca-aa8a-43c4-96c9-7446cba50d00
 keywords:
 - Digital Rights Management WDK audio , about DRM
 - DRM WDK audio , about DRM

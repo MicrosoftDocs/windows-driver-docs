@@ -1,7 +1,6 @@
 ---
 title: Managing Custom Port Feature Status Information
 description: Managing Custom Port Feature Status Information
-ms.assetid: C989888B-1636-488A-80BF-13D136312417
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

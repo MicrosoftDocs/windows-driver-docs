@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_GET\_REQUEST
 description: AVC\_FUNCTION\_GET\_REQUEST
-ms.assetid: b29df7a8-782b-4014-b47e-7cf917f8e99d
 keywords: ["AVC_FUNCTION_GET_REQUEST Streaming Media Devices"]
 topic_type:
 - apiref

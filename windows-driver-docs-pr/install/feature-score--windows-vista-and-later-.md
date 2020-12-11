@@ -1,7 +1,6 @@
 ---
 title: Feature Score
 description: Feature Score
-ms.assetid: cc7f2cd1-85aa-43be-9c4e-abdba3a4310a
 keywords:
 - feature score WDK device installations
 ms.date: 04/20/2017

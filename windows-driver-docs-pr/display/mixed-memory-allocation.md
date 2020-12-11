@@ -1,7 +1,6 @@
 ---
 title: Mixed Memory Allocation
 description: Mixed Memory Allocation
-ms.assetid: 171efa48-bd1e-4545-a5c2-0b3ad4383448
 keywords:
 - mixed memory allocation WDK DirectDraw
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: ndiskd.netreport
 description: The ndiskd.netreport extension generates a visual report of the entire network stack.
-ms.assetid: 0FC134A8-8D91-4299-8D15-4E8EDD9ED855
 keywords: ["ndiskd.netreport Windows Debugging"]
 ms.date: 06/23/2020
 topic_type:

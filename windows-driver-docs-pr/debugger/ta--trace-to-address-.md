@@ -1,7 +1,6 @@
 ---
 title: ta (Trace to Address)
 description: The ta command executes the program until the specified address is reached, displaying each step (including steps within called functions).
-ms.assetid: 99741659-dd43-44ea-ac27-06d821b47fbe
 keywords: ["ta (Trace to Address) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

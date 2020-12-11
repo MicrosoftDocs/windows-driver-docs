@@ -1,7 +1,6 @@
 ---
 title: APN example
 description: APN example
-ms.assetid: 3cf74bc4-a334-4213-8138-ebfc91b459e8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

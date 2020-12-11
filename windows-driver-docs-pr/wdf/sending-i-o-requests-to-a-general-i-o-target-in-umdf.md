@@ -1,7 +1,6 @@
 ---
 title: Sending I/O Requests to a General I/O Target in UMDF
 description: Sending I/O Requests to a General I/O Target in UMDF
-ms.assetid: f373afa8-292a-47bb-af6f-5035287d1e8c
 keywords:
 - general I/O targets WDK UMDF , sending I/O requests to
 - sending I/O requests WDK UMDF

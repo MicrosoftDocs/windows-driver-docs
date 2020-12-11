@@ -1,7 +1,6 @@
 ---
 title: Pending an I/O Operation in a Preoperation Callback Routine
 description: Pending an I/O Operation in a Preoperation Callback Routine
-ms.assetid: 39b04911-c0d9-42ec-b93e-b440b12f9e41
 keywords:
 - preoperation callback routines WDK file system minifilter , pending operations
 - pending I/O operations in callback routines WDK file system

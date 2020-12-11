@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_LOUDNESS
 description: The KSPROPERTY\_AUDIO\_LOUDNESS property specifies whether loudness (overall dynamic range and bass boost) is enabled or disabled for a channel in a loudness node (KSNODETYPE\_LOUDNESS).
-ms.assetid: bc567e98-8a04-44f0-9ddf-7b71abf659a5
 keywords: ["KSPROPERTY_AUDIO_LOUDNESS Audio Devices"]
 topic_type:
 - apiref

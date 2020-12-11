@@ -1,7 +1,6 @@
 ---
 title: Port Monitor Client DLL Functions
 description: Port Monitor Client DLL Functions
-ms.assetid: 41efab1a-0638-4925-90a2-cf68d2306ca6
 keywords:
 - port monitors WDK print , functions
 - client DLL port monitor functions WDK

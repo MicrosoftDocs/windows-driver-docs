@@ -1,7 +1,6 @@
 ---
 title: Introduction to Deferred Contexts
 description: Introduction to Deferred Contexts
-ms.assetid: a417bcc7-ca86-4853-baa3-415214da348f
 keywords:
 - Direct3D version 11 WDK Windows 7 display , deferred contexts, introduction
 - Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts, introduction

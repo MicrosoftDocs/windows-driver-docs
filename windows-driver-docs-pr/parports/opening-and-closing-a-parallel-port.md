@@ -1,7 +1,6 @@
 ---
 title: Opening and Closing a Parallel Port
 description: Opening and Closing a Parallel Port
-ms.assetid: 2183ffd9-8265-4848-b5d1-703643e0d0e6
 keywords:
 - parallel ports WDK , opening
 - parallel ports WDK , closing

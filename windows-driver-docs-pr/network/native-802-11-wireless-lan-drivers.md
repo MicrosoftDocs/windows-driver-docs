@@ -1,7 +1,6 @@
 ---
 title: Native 802.11 Wireless LAN Drivers
 description: Native 802.11 Wireless LAN Drivers
-ms.assetid: 3AD87D44-A99E-4264-98BD-2F756708C5C1
 keywords:
 - Native 802.11 Wireless LAN Drivers WDK, Native Wi-Fi network drivers, Native 802.11 wlan drivers
 ms.date: 05/08/2018

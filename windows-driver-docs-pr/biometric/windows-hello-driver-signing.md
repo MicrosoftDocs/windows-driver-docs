@@ -1,7 +1,6 @@
 ---
 title: Windows Hello fingerprint driver signature process
 description: Windows Hello fingerprint driver signature process
-ms.assetid: 803f4326-32ce-44b4-a2fb-6c6f245c3728
 keywords:
 - biometric drivers WDK , windows hello
 - signing biometric drivers

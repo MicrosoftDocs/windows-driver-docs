@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_UINT32
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_UINT32 identifier represents the base-data-type identifier that indicates that the data type is a ULONG-typed unsigned integer.
-ms.assetid: 671474dd-66be-4c35-8f1a-273f61c6343c
 keywords: ["DEVPROP_TYPE_UINT32 Device and Driver Installation"]
 topic_type:
 - apiref

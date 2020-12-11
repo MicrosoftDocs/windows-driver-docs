@@ -1,7 +1,6 @@
 ---
 title: Starting a DMA Transaction
 description: Starting a DMA Transaction
-ms.assetid: fa26ef08-01c0-4502-9cb3-865000242e4a
 keywords:
 - DMA transactions WDK KMDF , starting
 - DMA operations WDK KMDF , transactions

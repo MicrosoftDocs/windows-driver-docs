@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceInterface_ClassGuid
 description: DEVPKEY_DeviceInterface_ClassGuid
-ms.assetid: f7346189-9986-4b26-b059-b1a58c8313d1
 keywords: ["DEVPKEY_DeviceInterface_ClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

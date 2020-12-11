@@ -1,7 +1,6 @@
 ---
 title: Supporting a Device
 description: Supporting a Device
-ms.assetid: 5f60d3aa-6061-40f7-8108-d752534b88ed
 keywords:
 - audio miniport drivers WDK , device support
 - miniport drivers WDK audio , device support

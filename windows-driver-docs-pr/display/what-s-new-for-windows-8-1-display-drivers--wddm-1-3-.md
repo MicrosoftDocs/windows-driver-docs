@@ -1,7 +1,6 @@
 ---
 title: What's new for Windows 8.1 display drivers (WDDM 1.3)
 description: This topic lists display driver features that are new or updated for Windows 8.1. Windows 8.1 introduces version 1.3 of the Windows Display Driver Model (WDDM).
-ms.assetid: 0B699676-A43B-4E53-9598-CE2930E126AB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

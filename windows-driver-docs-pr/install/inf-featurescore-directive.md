@@ -1,7 +1,6 @@
 ---
 title: INF FeatureScore Directive
 description: The FeatureScore directive provides an additional ranking criterion for drivers based on the features that a driver supports.
-ms.assetid: 78e1c2cf-b3e9-43ea-b435-979360cc3e28
 keywords:
 - INF FeatureScore Directive Device and Driver Installation
 topic_type:

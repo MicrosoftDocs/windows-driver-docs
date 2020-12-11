@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfumtriage
 description: The wdfkd.wdfumtriage extension displays information UMDF devices on the system, including device objects, loaded drivers and class extensions, PnP device stack, dispatched IRPs.
-ms.assetid: E25DAE56-E42A-4A56-B36F-8B0B1D826524
 keywords: ["wdfkd.wdfumtriage Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

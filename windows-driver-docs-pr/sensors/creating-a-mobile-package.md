@@ -1,7 +1,6 @@
 ---
 title: Creating a mobile package
 description: This topic provides information about creating a package for installing the sample driver on a mobile device.
-ms.assetid: E929D80D-17BF-4079-8CF9-972020306358
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

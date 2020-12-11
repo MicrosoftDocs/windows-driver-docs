@@ -1,7 +1,6 @@
 ---
 title: RemoveLockCheck rule (wdm)
 description: The RemoveLockCheck rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLockAndWait are used correctly when processing IRP\_MJ\_PNP with MinorFunction IRP\_MN\_REMOVE\_DEVICE.
-ms.assetid: 837E94CC-9BEF-45B9-AADE-6BD21063034D
 ms.date: 05/21/2018
 keywords: ["RemoveLockCheck rule (wdm)"]
 topic_type:

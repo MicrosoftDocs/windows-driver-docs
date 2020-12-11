@@ -1,7 +1,6 @@
 ---
 title: Hardware Transform and Lighting
 description: Hardware Transform and Lighting
-ms.assetid: b45aa56e-2d8c-412a-b581-a1e2002d4fac
 keywords:
 - Direct3D WDK Windows 2000 display , hardware tansform and lighting
 - texture transforms WDK Direct3D

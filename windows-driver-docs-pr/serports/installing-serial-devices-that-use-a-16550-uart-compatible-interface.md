@@ -1,7 +1,6 @@
 ---
 title: Install Serial Devices with a 16550 UART-Compatible Interface
 description: Installing Serial Devices that Use a 16550 UART-Compatible Interface
-ms.assetid: d80db651-b890-44dc-98ad-32e72e244d8c
 keywords:
 - Serial driver WDK , 16550 UART-compatible interfaces
 - universal asynchronous receiver-transmitters WDK serial devices

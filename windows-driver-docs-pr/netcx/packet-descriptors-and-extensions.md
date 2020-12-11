@@ -1,7 +1,6 @@
 ---
 title: Packet descriptors and extensions
 description: Packet descriptors and extensions
-ms.assetid: 7B2357AE-F446-4AE8-A873-E13DF04D8D71
 keywords:
 - WDF Network Adapter Class Extension Packet descriptors and extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
 ms.date: 11/04/2019

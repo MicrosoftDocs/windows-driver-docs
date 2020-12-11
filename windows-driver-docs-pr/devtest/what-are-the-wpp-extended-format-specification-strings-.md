@@ -1,7 +1,6 @@
 ---
 title: What are the WPP extended format specification strings
 description: What are the WPP extended format specification strings
-ms.assetid: f05117c0-cb4b-483a-a141-08423555170a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

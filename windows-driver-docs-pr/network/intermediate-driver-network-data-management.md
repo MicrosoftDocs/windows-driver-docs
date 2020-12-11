@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Network Data Management
 description: Intermediate Driver Network Data Management
-ms.assetid: 12f708b9-32f2-470c-bc4d-7c1b0c1012b1
 keywords:
 - intermediate drivers WDK networking , network data management
 - NDIS intermediate drivers WDK , network data management

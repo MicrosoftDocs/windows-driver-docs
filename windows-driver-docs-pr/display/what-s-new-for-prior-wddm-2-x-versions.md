@@ -1,7 +1,6 @@
 ---
 title: Features added in prior WDDM 2.X versions
 description: Describes features in prior Windows 10 releases for display and graphics drivers
-ms.assetid: 22793a7e-38fc-4cd8-aafd-09dfed48cb02
 ms.date: 03/24/2020
 ms.localizationpriority: medium
 ms.custom: seodec18, 19H1

@@ -1,7 +1,6 @@
 ---
 title: MB 5G data class support
 description: MB 5G data class support
-ms.assetid: 16531A63-76EC-4722-8817-FA8DB3B2B82F
 keywords:
 - MB 5G data class support, Mobile Broadband 5G data class support
 ms.date: 04/17/2019

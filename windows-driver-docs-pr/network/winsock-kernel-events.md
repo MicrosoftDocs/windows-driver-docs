@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Events
 description: Winsock Kernel Events
-ms.assetid: 84f7b547-cfbf-468b-b80e-1441c8aa3cf3
 keywords:
 - Winsock Kernel WDK networking , events
 - WSK WDK networking , events

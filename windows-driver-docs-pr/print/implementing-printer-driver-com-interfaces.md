@@ -1,7 +1,6 @@
 ---
 title: Implementing Printer Driver COM Interfaces
 description: Implementing Printer Driver COM Interfaces
-ms.assetid: 39f873e9-7f72-420c-b6d6-dce31840aa16
 keywords:
 - printer driver customizing WDK , COM interfaces
 - customizing printer drivers WDK , COM interfaces

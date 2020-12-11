@@ -1,7 +1,6 @@
 ---
 title: SCSI Port Driver Overview
 description: SCSI Port Driver Overview
-ms.assetid: e97ea5f2-7f20-4d3d-82a2-7d83e1eba30e
 keywords:
 - storage port drivers WDK , SCSI Port driver
 - SCSI Port drivers WDK storage

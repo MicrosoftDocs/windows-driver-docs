@@ -1,7 +1,6 @@
 ---
 title: BDA Node Category GUIDs
 description: BDA Node Category GUIDs
-ms.assetid: cf439881-d20d-4efc-8ea3-3752e117b14d
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Set File Information Processing
 description: Set File Information Processing
-ms.assetid: bda94e8d-0be1-4730-a82e-4aa4d3763cce
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , set file information processing

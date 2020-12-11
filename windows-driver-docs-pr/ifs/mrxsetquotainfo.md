@@ -1,7 +1,6 @@
 ---
 title: MRxSetQuotaInfo routine
 description: TheMRxSetQuotaInfo routine is called by RDBSS to request that a network mini-redirector set quota information on a file system object.
-ms.assetid: 43d8669f-d122-4385-87a3-bf31bac9dfd2
 keywords: ["MRxSetQuotaInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

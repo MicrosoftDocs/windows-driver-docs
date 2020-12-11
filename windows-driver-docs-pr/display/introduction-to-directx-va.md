@@ -1,7 +1,6 @@
 ---
 title: Introduction to DirectX VA
 description: Introduction to DirectX VA
-ms.assetid: e7d4faf7-f6ec-49ec-8116-faeed1ddd01c
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , about DirectX Video Acceleration
 - Video Acceleration WDK DirectX , about DirectX Video Acceleration

@@ -1,7 +1,6 @@
 ---
 title: Example 13 Creating a Global Logger Session
 description: Example 13 Creating a Global Logger Session
-ms.assetid: 11574df3-817e-4bf3-a849-dd5ac723fb1d
 keywords:
 - trace sessions WDK , Global Logger
 - Global Logger trace session WDK , examples

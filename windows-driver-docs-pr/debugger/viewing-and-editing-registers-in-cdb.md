@@ -1,7 +1,6 @@
 ---
 title: Viewing and Editing Registers in CDB
 description: In CDB, you can view registers by entering the r (Registers) command in the Debugger Command window. You can customize the display by using several options or by using the rm (Register Mask) command.
-ms.assetid: 33A2AF32-B4A6-430A-AD08-73B51D5D6301
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_TRANSPONDER to inform the tuner node of the appropriate transponder number.
-ms.assetid: 00445260-a317-4341-baab-d1391f6748e4
 keywords: ["KSPROPERTY_BDA_RF_TUNER_TRANSPONDER Streaming Media Devices"]
 topic_type:
 - apiref

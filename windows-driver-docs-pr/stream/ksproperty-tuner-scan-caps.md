@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_SCAN\_CAPS
 description: The KSPROPERTY\_TUNER\_SCAN\_CAPS property describes the scanning capabilities of the tuning device, including the network types that the device supports.
-ms.assetid: 339d5f6b-81ac-419e-9821-a7f1642e1aa8
 keywords: ["KSPROPERTY_TUNER_SCAN_CAPS Streaming Media Devices"]
 topic_type:
 - apiref

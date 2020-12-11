@@ -1,7 +1,6 @@
 ---
 title: Registering NDIS Selective Suspend Handler Functions
 description: Registering NDIS Selective Suspend Handler Functions
-ms.assetid: D4125F14-8356-4D9E-A287-D35D3BF69182
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

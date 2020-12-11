@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_MUTE
 description: KSNODETYPE\_MUTE
-ms.assetid: 814d0a57-621f-435f-b4ee-b1c459791875
 keywords: ["KSNODETYPE_MUTE Audio Devices"]
 topic_type:
 - apiref

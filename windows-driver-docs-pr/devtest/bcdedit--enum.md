@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /enum
 description: The BCDEdit /enum command lists entries in Boot Configuration Data (BCD) store. 
-ms.assetid: 73bec802-9ab1-4979-a337-3f7423efaced
 ms.date: 09/24/2020
 keywords: ["BCDEdit /enum Driver Development Tools"]
 topic_type:

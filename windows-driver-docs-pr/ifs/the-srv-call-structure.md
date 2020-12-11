@@ -1,7 +1,6 @@
 ---
 title: The SRV_CALL Structure
 description: The SRV_CALL Structure
-ms.assetid: 9a3bb194-0289-47f4-a5c8-848d8d82cdd7
 keywords:
 - SRV_CALL structure
 - server call context structure WDK RDBSS

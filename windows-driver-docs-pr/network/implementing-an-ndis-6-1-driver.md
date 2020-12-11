@@ -1,7 +1,6 @@
 ---
 title: Implementing an NDIS 6.1 Driver
 description: Implementing an NDIS 6.1 Driver
-ms.assetid: a2b5d722-88b3-4321-9d0d-451f465194d1
 keywords:
 - NDIS WDK , versions in network drivers
 ms.date: 04/20/2017

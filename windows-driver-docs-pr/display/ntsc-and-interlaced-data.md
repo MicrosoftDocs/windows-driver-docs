@@ -1,7 +1,6 @@
 ---
 title: NTSC and Interlaced Data
 description: NTSC and Interlaced Data
-ms.assetid: 216b6219-aeb8-4e8a-8ac4-cd4d25a93e13
 keywords:
 - interlaced video WDK video port extensions
 - DirectX VPE support WDK DirectDraw , interlaced video

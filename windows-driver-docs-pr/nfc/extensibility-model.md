@@ -1,7 +1,6 @@
 ---
 title: NFC class extension extensibility model
 description: The NFC class extension driver enables developers to add chipset-specific NCI proprietary extensions that aren’t covered by the NCI specification.
-ms.assetid: 8CCCE7BF-595A-4F30-9924-B5BD45D6137F
 keywords:
 - NFC
 - near field communications

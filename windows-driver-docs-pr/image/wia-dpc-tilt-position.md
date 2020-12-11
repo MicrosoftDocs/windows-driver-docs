@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_TILT\_POSITION
 description: The WIA\_DPC\_TILT\_POSITION property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: 98d2de64-db91-4930-abc1-aea41dc799c1
 keywords: ["WIA_DPC_TILT_POSITION Imaging Devices"]
 topic_type:
 - apiref

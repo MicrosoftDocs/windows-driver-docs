@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_SYNTHESIZER
 description: KSCATEGORY_SYNTHESIZER
-ms.assetid: 07713c80-adff-4c3d-a9df-2c2865ef78d9
 keywords: ["KSCATEGORY_SYNTHESIZER Device and Driver Installation"]
 topic_type:
 - apiref

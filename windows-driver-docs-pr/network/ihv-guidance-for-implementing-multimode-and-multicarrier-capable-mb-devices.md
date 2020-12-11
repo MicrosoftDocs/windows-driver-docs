@@ -1,7 +1,6 @@
 ---
 title: IHV guidance for implementing multiple Radio Access Technologies
 description: This topic provides information about implementing support for multiple Radio Access Technologies (RAT) and multiple operators in Windows.
-ms.assetid: 17BB2478-F98D-4AE6-A62D-F65E2E1DCDFF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

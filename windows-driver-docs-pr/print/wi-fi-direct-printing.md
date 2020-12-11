@@ -1,7 +1,6 @@
 ---
 title: Wi-Fi Direct Printing
 description: Windows 8.1 and later versions of Windows support printing over Wi-Fi Direct (WFD).
-ms.assetid: B2FC1293-F9E4-43A4-84BF-21EF8C3D27E0
 ms.date: 06/15/2020
 ms.localizationpriority: medium
 ---

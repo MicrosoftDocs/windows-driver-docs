@@ -1,7 +1,6 @@
 ---
 title: VPE Functions in DirectDraw API and Driver
 description: VPE Functions in DirectDraw API and Driver
-ms.assetid: 7e899f20-4082-4438-b7f2-198d1a4ad344
 keywords:
 - DirectX VPE support WDK DirectDraw , functions
 - drawing VPEs WDK DirectDraw , functions

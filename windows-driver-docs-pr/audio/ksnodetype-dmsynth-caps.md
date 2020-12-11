@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_DMSYNTH\_CAPS
 description: KSNODETYPE\_DMSYNTH\_CAPS
-ms.assetid: 47a96b09-dc35-4e23-bf93-0afdf3c44df0
 keywords: ["KSNODETYPE_DMSYNTH_CAPS Audio Devices"]
 topic_type:
 - apiref

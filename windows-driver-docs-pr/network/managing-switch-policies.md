@@ -1,7 +1,6 @@
 ---
 title: Managing Switch Policies
 description: Managing Switch Policies
-ms.assetid: F2261CA6-2D7A-4499-82F9-7E2D7C9C908D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

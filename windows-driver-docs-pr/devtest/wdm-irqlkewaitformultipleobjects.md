@@ -1,7 +1,6 @@
 ---
 title: IrqlKeWaitForMultipleObjects rule (wdm)
 description: The IrqlKeWaitForMultipleObjects rule specifies that callers of the KeWaitForMultipleObjects routine must be running at proper IRQL based upon the Timeout parameter.
-ms.assetid: FC3E3544-95FB-4283-B030-66D74D0F7848
 ms.date: 05/21/2018
 keywords: ["IrqlKeWaitForMultipleObjects rule (wdm)"]
 topic_type:

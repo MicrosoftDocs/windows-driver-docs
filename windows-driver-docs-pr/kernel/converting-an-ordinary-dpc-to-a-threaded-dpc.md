@@ -1,7 +1,6 @@
 ---
 title: Converting an Ordinary DPC to a Threaded DPC
 description: Converting an Ordinary DPC to a Threaded DPC
-ms.assetid: 89a7a408-e01b-4543-9775-5ef542d05b75
 keywords: ["threaded DPCs WDK kernel", "converting DPCs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

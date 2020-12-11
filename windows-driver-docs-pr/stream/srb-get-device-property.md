@@ -1,7 +1,6 @@
 ---
 title: SRB\_GET\_DEVICE\_PROPERTY
 description: SRB\_GET\_DEVICE\_PROPERTY
-ms.assetid: 2a0a3b8a-7252-4ba5-a1a5-ffef0f0f5715
 keywords: ["SRB_GET_DEVICE_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

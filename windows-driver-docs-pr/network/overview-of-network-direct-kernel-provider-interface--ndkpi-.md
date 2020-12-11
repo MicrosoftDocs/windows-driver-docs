@@ -1,7 +1,6 @@
 ---
 title: Overview of Network Direct Kernel Provider Interface (NDKPI)
 description: This section provides an overview of Network Direct Kernel Provider Interface (NDKPI)
-ms.assetid: D9667238-FD2E-44DE-920F-FA4CF3365D93
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

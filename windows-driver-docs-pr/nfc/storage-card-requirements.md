@@ -1,7 +1,6 @@
 ---
 title: Storage card requirements
 description: This topic describes the APDU requirements for storage cards
-ms.assetid:
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP
 description: Clients use KSPROPERTY\_BDA\_VOID\_TRANSFORM\_STOP to stop operation of a node.
-ms.assetid: fa9a7cb3-b802-4417-a2cc-9061f95cce67
 keywords: ["KSPROPERTY_BDA_VOID_TRANSFORM_STOP Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Boot Options in EFI NVRAM
 description: Computers with Extensible Firmware Interface (EFI) firmware store boot options in NVRAM, but retains its state even when you turn off the computer.
-ms.assetid: 99247d03-1723-4a2b-8ef4-c1f39687642f
 keywords:
 - NVRAM boot options WDK
 - EFI NVRAM boot options WDK

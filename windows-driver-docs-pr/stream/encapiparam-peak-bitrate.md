@@ -1,7 +1,6 @@
 ---
 title: ENCAPIPARAM\_PEAK\_BITRATE
 description: ENCAPIPARAM\_PEAK\_BITRATE
-ms.assetid: 444a20e0-f3af-4dbc-9272-44e992e059e8
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Object Handle and Event Order
 description: Object Handle and Event Order
-ms.assetid: 5abbcda2-66cc-4460-99b6-e7796e65af68
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

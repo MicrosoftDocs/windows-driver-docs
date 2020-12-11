@@ -1,7 +1,6 @@
 ---
 title: Controlling Targets
 description: Controlling Targets
-ms.assetid: b329e9a2-7d24-4612-9aa1-9d7955a61473
 keywords:
 - Windows Device Testing Framework WDK , action interfaces
 - WDTF WDK , action interfaces

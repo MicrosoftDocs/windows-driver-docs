@@ -1,7 +1,6 @@
 ---
 title: GetBindingCapability function
 description: The GetBindingCapability method retrieves the binding capabilities for the indicated port.
-ms.assetid: 8db1a3cc-5b79-4de9-a4cd-c75ac72c3785
 keywords: ["GetBindingCapability function Storage Devices"]
 topic_type:
 - apiref

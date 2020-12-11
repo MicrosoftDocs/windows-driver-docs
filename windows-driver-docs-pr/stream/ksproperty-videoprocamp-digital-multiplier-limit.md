@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER\_LIMIT
 description: The KSPROPERTY\_VIDEOPROCAMP\_DIGITAL\_MULTIPLIER\_LIMIT property specifies the upper limit for the amount of digital zoom that can be applied to the image.
-ms.assetid: 66cc1dd5-3e07-47d8-bb30-b64b90b07ad9
 keywords: ["KSPROPERTY_VIDEOPROCAMP_DIGITAL_MULTIPLIER_LIMIT Streaming Media Devices"]
 topic_type:
 - apiref

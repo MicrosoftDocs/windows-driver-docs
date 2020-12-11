@@ -1,7 +1,6 @@
 ---
 title: Customizing Print Web Pages
 description: Customizing Print Web Pages
-ms.assetid: 7592e530-9f87-4d4e-a8aa-d2125014971a
 keywords:
 - Internet printing WDK , customizing print Web pages
 - print Web pages WDK , customizing

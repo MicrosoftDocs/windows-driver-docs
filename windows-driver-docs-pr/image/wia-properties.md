@@ -1,7 +1,6 @@
 ---
 title: WIA Properties
 description: WIA Properties
-ms.assetid: 3b9d4d90-775b-450e-b5d1-646ea45253d7
 ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---

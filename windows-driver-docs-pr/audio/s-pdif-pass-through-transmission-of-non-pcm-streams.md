@@ -1,7 +1,6 @@
 ---
 title: S/PDIF Pass-Through Transmission of Non-PCM Streams
 description: S/PDIF Pass-Through Transmission of Non-PCM Streams
-ms.assetid: c06b880e-20d1-417b-9868-a4fb3b418dbf
 keywords:
 - S/PDIF pass-through WDK audio
 - AC-3-over-S/PDIF format WDK audio

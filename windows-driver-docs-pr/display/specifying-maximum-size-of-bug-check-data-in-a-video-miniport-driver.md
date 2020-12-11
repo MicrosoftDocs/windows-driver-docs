@@ -1,7 +1,6 @@
 ---
 title: The Max Size of Bug-check Data in a Video Miniport Driver
 description: Specifying Maximum Size of Bug-check Data in a Video Miniport Driver
-ms.assetid: 1644fe85-b5f5-44b5-96b7-258f43607171
 keywords:
 - BugcheckDataSize
 - video miniport driver bug-check data WDK DirectX 9.0

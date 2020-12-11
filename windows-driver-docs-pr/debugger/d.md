@@ -1,7 +1,6 @@
 ---
 title: D (Windows Debugger Glossary)
 description: Glossary page - D
-ms.assetid: e4d53375-c82e-493b-9ccb-444c211fbc79
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

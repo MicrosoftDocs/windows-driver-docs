@@ -1,7 +1,6 @@
 ---
 title: Texture Stage Operations
 description: Texture Stage Operations
-ms.assetid: da2213bb-41f1-440b-8f69-19f69e739954
 keywords:
 - multiple textures WDK Direct3D , texture stages
 - texture stages WDK Direct3D

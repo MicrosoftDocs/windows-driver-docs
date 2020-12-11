@@ -1,7 +1,6 @@
 ---
 title: Driver security checklist
 description: This article provides a driver security checklist for driver developers.
-ms.assetid: 25375E02-FCA1-4E94-8D9A-AA396C909278
 ms.date: 03/13/2020
 ms.localizationpriority: medium
 ---
@@ -256,9 +255,9 @@ For more information about handling IRPs correctly, see [Additional Errors in Ha
 
 - Use safe string functions. For more information, see [Using Safe String Functions](../kernel/using-safe-string-functions.md).
 
-- Use safe arithmetic functions. For more information, see [Arithmetic Functions](/windows-hardware/drivers/ddi/index) in [Safe Integer Library Routines](/windows-hardware/drivers/ddi/index)
+- Use safe arithmetic functions. For more information, see [Safe Integer Library Routines](/windows-hardware/drivers/ddi/_kernel/#safe-integer-library-routines)
 
-- Use safe conversion functions. For more information, see [Conversion Functions](/windows-hardware/drivers/ddi/index) in [Safe Integer Library Routines](/windows-hardware/drivers/ddi/index)
+- Use safe conversion functions.
 
 ### Additional code vulnerabilities
 

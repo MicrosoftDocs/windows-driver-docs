@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIDFILTER\_LIST\_PIDS
 description: Clients use KSPROPERTY\_BDA\_PIDFILTER\_LIST\_PIDS to retrieve from a PID filter node the list of its PIDs that identify groups of packets that the node delivers from the input stream to the output stream.
-ms.assetid: fc7dc0af-af74-4bd1-b99c-f06de25aae3c
 keywords: ["KSPROPERTY_BDA_PIDFILTER_LIST_PIDS Streaming Media Devices"]
 topic_type:
 - apiref

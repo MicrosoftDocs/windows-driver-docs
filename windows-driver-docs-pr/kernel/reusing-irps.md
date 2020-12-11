@@ -1,7 +1,6 @@
 ---
 title: Reusing IRPs
 description: Reusing IRPs
-ms.assetid: 19b09cf8-b88d-4808-9af0-038d3d02dceb
 keywords: ["IRPs WDK kernel , reusing", "reusing IRPs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

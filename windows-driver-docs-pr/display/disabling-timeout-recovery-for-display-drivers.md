@@ -1,7 +1,6 @@
 ---
 title: Disabling Timeout Recovery for Display Drivers
 description: Disabling Timeout Recovery for Display Drivers
-ms.assetid: 71fa0273-be21-4603-8491-09078a38cdf2
 keywords:
 - display drivers WDK Windows 2000 , timeout recovery
 - timeout recovery WDK Windows 2000 display

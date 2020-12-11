@@ -1,7 +1,6 @@
 ---
 title: Enabling and Disabling Connection Offload Services
 description: Enabling and Disabling Connection Offload Services
-ms.assetid: 3d353f87-1cd7-483a-b8eb-d45ec3b8f94e
 keywords:
 - connection offload WDK TCP/IP transport , enabling services
 - connection offload WDK TCP/IP transport , disabling services

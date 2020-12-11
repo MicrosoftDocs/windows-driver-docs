@@ -1,7 +1,6 @@
 ---
 title: Obtaining Bluetooth Address of HF Device
 description: The Obtaining Bluetooth Address of HF Device topic demonstrate how the audio driver can obtain the Bluetooth address of a paired Hands-free (HF) device.
-ms.assetid: A3A33459-869A-4F75-B1B9-A3D59863E82C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

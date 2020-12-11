@@ -1,7 +1,6 @@
 ---
 title: Device Installations and System Restarts
 description: Device Installations and System Restarts
-ms.assetid: c09d2150-60ae-4912-86f5-6489c818853e
 keywords:
 - device installations WDK , reboots
 - installing devices WDK , reboots

@@ -1,7 +1,6 @@
 ---
 title: File System Security Issues
 description: File System Security Issues
-ms.assetid: 8c6d6a73-6f88-4b79-8381-5724004a529c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

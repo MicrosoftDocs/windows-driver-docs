@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_FULL\_ITEM\_NAME
 description: The WIA\_IPA\_FULL\_ITEM\_NAME property contains the full item name (the item name with path information).
-ms.assetid: ba034507-264a-4960-80ab-d5cb0daa5c1a
 keywords: ["WIA_IPA_FULL_ITEM_NAME Imaging Devices"]
 topic_type:
 - apiref

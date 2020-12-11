@@ -1,7 +1,6 @@
 ---
 title: How are Trace-If expressions used
 description: How are Trace-If expressions used
-ms.assetid: 05fc8225-ba4e-4718-a5e1-c9e49ec931b7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

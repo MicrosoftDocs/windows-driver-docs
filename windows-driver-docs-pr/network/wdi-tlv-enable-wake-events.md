@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ENABLE_WAKE_EVENTS
 description: WDI_TLV_ENABLE_WAKE_EVENTS is a TLV that contains the enabled wake events.
-ms.assetid: 5F348D9A-5575-46EE-A524-687E9D030754
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ENABLE_WAKE_EVENTS Network Drivers Starting with Windows Vista

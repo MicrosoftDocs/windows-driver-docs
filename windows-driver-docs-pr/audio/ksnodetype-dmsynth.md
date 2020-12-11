@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_DMSYNTH
 description: KSNODETYPE\_DMSYNTH
-ms.assetid: 91bc56f5-6342-4e87-8cb5-b68d04912bb5
 keywords: ["KSNODETYPE_DMSYNTH Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Contrast element
 description: The optional Contrast element specifies the relative amount to reduce or enhance the contrast of the scanned document.
-ms.assetid: c40e824f-4e10-4590-a524-ff69a21a4499
 keywords: ["Contrast element Imaging Devices"]
 topic_type:
 - apiref

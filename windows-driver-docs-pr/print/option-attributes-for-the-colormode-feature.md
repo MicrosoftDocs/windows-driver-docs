@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the ColorMode Feature
 description: Option Attributes for the ColorMode Feature
-ms.assetid: e6f68a50-f044-406e-b92c-8449d126bceb
 keywords:
 - ColorMode Feature
 ms.date: 04/20/2017

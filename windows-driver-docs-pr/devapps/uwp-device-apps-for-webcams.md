@@ -1,7 +1,6 @@
 ---
 title: UWP device apps for cameras
 description: This section introduces UWP device apps for cameras.
-ms.assetid: 6CF13679-BCF3-443C-A864-4BBC54B8DA1C
 ms.date: 09/14/2018
 ms.localizationpriority: medium
 ---

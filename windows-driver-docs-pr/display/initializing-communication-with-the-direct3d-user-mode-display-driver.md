@@ -1,7 +1,6 @@
 ---
 title: Initializing D3D User-Mode Display Driver Communications
 description: Initializing Communication with the Direct3D User-Mode Display Driver
-ms.assetid: 96e85df4-e340-4017-b348-7c24349ffe69
 keywords:
 - user-mode display drivers WDK Windows Vista , initializing
 - Direct3D WDK display

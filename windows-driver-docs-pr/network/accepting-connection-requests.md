@@ -1,7 +1,6 @@
 ---
 title: Accepting Connection Requests
 description: Accepting Connection Requests
-ms.assetid: 2233daa7-c5c5-49be-b76e-61a90a496447
 keywords:
 - SAN connection setup WDK , accepting connection requests
 - incoming connection requests WDK SANs

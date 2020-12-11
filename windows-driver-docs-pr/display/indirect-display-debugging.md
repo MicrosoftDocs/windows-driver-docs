@@ -1,7 +1,6 @@
 ---
 title: Debugging indirect display drivers
 description: Describes debugging techniques for indirect display drivers
-ms.assetid: a343812d-03d0-4a95-9c36-7e6b5a404088
 ms.date: 07/17/2020
 keywords:
 - Indirect display drivers, debugging

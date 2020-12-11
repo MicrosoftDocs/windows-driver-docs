@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_INPUT
 description: GUID_CLASS_INPUT
-ms.assetid: 71619883-6ef8-411b-862d-a7cbf12e22bd
 keywords: ["GUID_CLASS_INPUT Device and Driver Installation"]
 topic_type:
 - apiref

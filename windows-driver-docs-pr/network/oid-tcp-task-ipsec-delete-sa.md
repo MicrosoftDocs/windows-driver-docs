@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_TASK_IPSEC_DELETE_SA
 description: This topic describes the OID_TCP_TASK_IPSEC_DELETE_SA object identifier (OID).
-ms.assetid: 5f3b1f30-ab44-4d1c-96ff-b70ae6cfe324
 keywords:
 - OID_TCP_TASK_IPSEC_DELETE_SA
 ms.date: 11/06/2017

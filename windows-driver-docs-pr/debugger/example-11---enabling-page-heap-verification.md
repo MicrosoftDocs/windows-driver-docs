@@ -1,7 +1,6 @@
 ---
 title: Example 11 Enabling Page Heap Verification
 description: Example 11 Enabling Page Heap Verification
-ms.assetid: 5d0303a9-29f7-4759-ae7b-ad670eaee0ee
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

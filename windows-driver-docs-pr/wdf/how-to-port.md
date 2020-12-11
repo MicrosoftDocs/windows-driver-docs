@@ -1,7 +1,6 @@
 ---
 title: Steps in Porting
 description: Steps in Porting
-ms.assetid: D8B7E534-7CFC-45EC-93E9-4B046598D82B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

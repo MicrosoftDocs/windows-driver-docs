@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS To USB Mapping
 description: Remote NDIS To USB Mapping
-ms.assetid: 6dcebd63-dce9-47a9-a19c-52f8dab63202
 keywords:
 - USB WDK networking
 - Remote NDIS WDK networking , mapping to USB

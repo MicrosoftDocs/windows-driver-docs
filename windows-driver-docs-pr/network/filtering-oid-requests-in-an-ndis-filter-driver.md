@@ -1,7 +1,6 @@
 ---
 title: Filtering OID Requests in an NDIS Filter Driver
 description: Filtering OID Requests in an NDIS Filter Driver
-ms.assetid: 88bb8318-f19c-4d98-bb06-6120e6adb51d
 keywords:
 - OIDs WDK networking , filter drivers
 - filtering OID requests in filter driver

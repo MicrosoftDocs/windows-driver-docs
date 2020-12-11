@@ -1,7 +1,6 @@
 ---
 title: Best Practices
 description: Best Practices
-ms.assetid: c01b3fd9-7f4e-4d1a-a726-b31b0eebf094
 keywords:
 - contexts WDK file system minifilter , best practices
 ms.date: 04/20/2017

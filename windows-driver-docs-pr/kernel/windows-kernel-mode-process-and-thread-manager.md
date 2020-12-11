@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode Process and Thread Manager
 description: Windows Kernel-Mode Process and Thread Manager
-ms.assetid: 4053c73e-190d-4ffe-8db2-f531d120ba81
 ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
@@ -52,7 +51,7 @@ Starting in Windows 10, the Windows Subsystem for Linux (WSL) enables a user to
 
 One of the components is a *subsystem process* that hosts the unmodified user-mode Linux binary, such as /bin/bash. Subsystem processes do not contain data structures associated with Win32 processes, such as Process Environment Block (PEB) and Thread Environment Block (TEB). For a subsystem process, system calls and user mode exceptions are dispatched to a paired driver.
 
-Here are the changes to the [Process and Thread Manager Routines](/windows-hardware/drivers/ddi/index) in order to support subsystem processes:
+Here are the changes to the [Process and Thread Manager Routines](/windows-hardware/drivers/ddi/_kernel) in order to support subsystem processes:
 
 -   The WSL type is indicated by the **SubsystemInformationTypeWSL** value in the [**SUBSYSTEM\_INFORMATION\_TYPE**](/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_subsystem_information_type) enumeration. Drivers can call [**NtQueryInformationProcess**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationprocess) and [**NtQueryInformationThread**](/windows/win32/api/winternl/nf-winternl-ntqueryinformationthread) to determine the underlying subsystem. Those calls return **SubsystemInformationTypeWSL** for WSL.
 -   Other kernel mode drivers can get notified about subsystem process creation/deletion by registering their callback routine through the [**PsSetCreateProcessNotifyRoutineEx2**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2) call. To get notifications about thread creation/deletion, drivers can call [**PsSetCreateThreadNotifyRoutineEx**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreatethreadnotifyroutineex), and specify **PsCreateThreadNotifySubsystems** as the type of notification.

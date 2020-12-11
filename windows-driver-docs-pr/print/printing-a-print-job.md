@@ -1,7 +1,6 @@
 ---
 title: Printing a Print Job
 description: Printing a Print Job
-ms.assetid: 2e881f99-9dbe-4e89-8628-feb05137c9b0
 keywords:
 - print monitors WDK , printing print jobs
 - print jobs WDK , printing

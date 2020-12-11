@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Two or More Streams
 description: Synchronizing Two or More Streams
-ms.assetid: c25f4ca2-8a9f-43bc-a1bf-b71826b446ff
 keywords:
 - HD Audio, synchronizing streams
 - High Definition Audio (HD Audio), synchronizing streams

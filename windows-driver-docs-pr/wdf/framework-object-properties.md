@@ -1,7 +1,6 @@
 ---
 title: Framework Object Properties
 description: Framework Object Properties
-ms.assetid: d95a7f51-fe22-4cd6-8c46-6d571f7d9169
 keywords:
 - framework objects WDK KMDF , properties
 - properties WDK KMDF

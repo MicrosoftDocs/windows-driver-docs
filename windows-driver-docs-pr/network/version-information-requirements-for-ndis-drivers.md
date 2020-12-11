@@ -1,7 +1,6 @@
 ---
 title: Version Information Requirements for NDIS Drivers
 description: Version Information Requirements for NDIS Drivers
-ms.assetid: a05e7dde-d1f9-458d-8d7b-ead9bb9af7af
 keywords:
 - NDIS version information WDK , NDIS responsibilities
 ms.date: 04/20/2017

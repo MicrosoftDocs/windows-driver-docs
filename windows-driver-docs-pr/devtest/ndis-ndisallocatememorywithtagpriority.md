@@ -1,7 +1,6 @@
 ---
 title: NdisAllocateMemoryWithTagPriority rule (ndis)
 description: The NdisAllocateMemoryWithTagPriority rule specifies that a driver must not call NdisAllocateMemoryWithTagPriority without providing a Tag.Every memory allocation should use a unique pool tag to ensure that kernel debuggers and Driver Verifier can identify a distinct allocated block of memory.
-ms.assetid: e27fe997-366d-4fe1-ad1e-3f145dc55f30
 ms.date: 05/21/2018
 keywords: ["NdisAllocateMemoryWithTagPriority rule (ndis)"]
 topic_type:

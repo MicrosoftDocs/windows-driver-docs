@@ -1,7 +1,6 @@
 ---
 title: GPD/PPD-Based Feature Description Changes
 description: GPD/PPD-Based Feature Description Changes
-ms.assetid: 22333d78-f78f-4031-a9f3-50b43ec746b6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Assigning Security to a New File on IRP_MJ_CREATE
 description: Assigning Security to a New File on IRP_MJ_CREATE
-ms.assetid: f01a09c4-f71f-4b9e-99c8-9bc7ca5ca316
 keywords:
 - IRP_MJ_CREATE
 - new file security WDK file systems

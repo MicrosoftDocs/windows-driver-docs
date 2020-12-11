@@ -1,7 +1,6 @@
 ---
 title: Color Fills and Pattern Fills
 description: Color Fills and Pattern Fills
-ms.assetid: 6e597405-e40f-4cb8-b177-896681745e00
 keywords:
 - drawing blt WDK DirectDraw , color fills
 - DirectDraw blitting WDK Windows 2000 display , color fills

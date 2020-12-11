@@ -1,7 +1,6 @@
 ---
 title: GDL Tutorials
 description: GDL Tutorials
-ms.assetid: 79c73df6-0890-436c-827d-6fccbd14b503
 keywords:
 - GDL WDK , examples
 - examples WDK GDL

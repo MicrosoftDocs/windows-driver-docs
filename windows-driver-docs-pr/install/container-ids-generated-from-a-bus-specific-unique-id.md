@@ -1,7 +1,6 @@
 ---
 title: Container IDs Generated from a Bus-Specific Unique ID
 description: Container IDs Generated from a Bus-Specific Unique ID
-ms.assetid: 06bd4f06-51f2-4983-9ddc-bff27eaa367e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

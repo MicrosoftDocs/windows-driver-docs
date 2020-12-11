@@ -1,7 +1,6 @@
 ---
 title: Pairs
 description: Pairs
-ms.assetid: 156e6b10-74c2-4702-b0be-b9d209c02070
 keywords:
 - GPD file entries WDK Unidrv , pairs
 - pairs WDK GPD files

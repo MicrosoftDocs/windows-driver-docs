@@ -1,7 +1,6 @@
 ---
 title: Cancel Routines in Drivers without StartIo Routines
 description: Cancel Routines in Drivers without StartIo Routines
-ms.assetid: c6e1a05e-28ed-4f42-8678-55f01303b312
 keywords: ["canceling IRPs, StartIo routines", "Cancel routines, StartIo routines", "StartIo routines, Cancel routines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

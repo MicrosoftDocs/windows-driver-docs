@@ -1,7 +1,6 @@
 ---
 title: Invariant MDL Checking for Driver
 description: The Invariant MDL Checking for Driver option monitors how the driver handles invariant MDL buffers on a per-driver basis.
-ms.assetid: 2FA69B7C-3EF4-4660-84D4-5108C97E395F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

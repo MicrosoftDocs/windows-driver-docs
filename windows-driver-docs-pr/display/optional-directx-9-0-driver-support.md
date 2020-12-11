@@ -1,7 +1,6 @@
 ---
 title: Optional DirectX 9.0 Driver Support
 description: Optional DirectX 9.0 Driver Support
-ms.assetid: 9caa1ac9-0444-4c0b-8dbf-fa34a6b62fc1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

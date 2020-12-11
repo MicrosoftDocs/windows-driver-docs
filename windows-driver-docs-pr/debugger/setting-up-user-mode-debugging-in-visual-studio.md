@@ -1,7 +1,6 @@
 ---
 title: Setting Up User-Mode Debugging in Visual Studio
 description: There are two user-mode debuggers available in the Microsoft Visual Studio environment.
-ms.assetid: D36220DF-1ACB-4D8B-BC4C-1A6FCB54CA15
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---

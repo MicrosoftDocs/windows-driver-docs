@@ -1,7 +1,6 @@
 ---
 title: SR-IOV VF Failover and Live Migration Support
 description: SR-IOV VF Failover and Live Migration Support
-ms.assetid: 93D6EFC7-B701-4D10-8114-FA437E80096B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

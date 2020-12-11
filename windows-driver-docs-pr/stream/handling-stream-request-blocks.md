@@ -1,7 +1,6 @@
 ---
 title: Handling Stream Request Blocks
 description: Handling Stream Request Blocks
-ms.assetid: fb4fda0d-54e9-4f1b-a78c-276e770189d5
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , SRBs
 - streaming minidrivers WDK Windows 2000 Kernel , SRBs

@@ -1,7 +1,6 @@
 ---
 title: Branding Control Panel with Bitmaps or Icons
 description: Branding Control Panel with Bitmaps or Icons
-ms.assetid: 1520cf9e-6813-41aa-aa88-39a1a6c27f74
 keywords:
 - audio adapters WDK , control-panel branding
 - adapter drivers WDK audio , control-panel branding

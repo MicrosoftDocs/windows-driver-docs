@@ -1,7 +1,6 @@
 ---
 title: Using a Symbol Server
 description: Using a Symbol Server
-ms.assetid: 6c1687c7-7b9d-45f7-8778-c7284c4a8222
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

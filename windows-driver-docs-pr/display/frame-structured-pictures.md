@@ -1,7 +1,6 @@
 ---
 title: Frame-Structured Pictures
 description: Frame-Structured Pictures
-ms.assetid: 6449492e-06b5-4b8b-9e0d-a2e80272f062
 keywords:
 - MPEG-2 WDK DirectX VA
 - frame motion compensation WDK DirectX VA

@@ -1,7 +1,6 @@
 ---
 title: KSJACK\_DESCRIPTION2 structure
 description: The KSJACK\_DESCRIPTION2 structure specifies the capabilities and the current state of a jack that supports jack presence detection.
-ms.assetid: 0db29870-20d0-459b-a531-3dea5d073183
 keywords: ["KSJACK_DESCRIPTION2 structure Audio Devices", "PKSJACK_DESCRIPTION2 structure pointer Audio Devices"]
 topic_type:
 - apiref

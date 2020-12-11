@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC2 BAD_POOL_CALLER
 description: The BAD_POOL_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
-ms.assetid: 64803335-ab93-4c4d-9b30-2ec15a13303f
 keywords: ["Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
 ms.date: 05/23/2017
 topic_type:

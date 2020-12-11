@@ -1,7 +1,6 @@
 ---
 title: WDI TLV generator/parser memory interface
 description: The parser and generator internally use C++ with new/delete.
-ms.assetid: 318519FF-AF1F-4D86-96A9-ED0918D91310
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

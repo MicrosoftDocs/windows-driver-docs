@@ -1,7 +1,6 @@
 ---
 title: Introduction to Changer Drivers
 description: Changer Drivers
-ms.assetid: 47310de7-e69d-4f06-9995-3d95783d607a
 keywords:
 - changer drivers WDK storage
 - storage changer drivers WDK

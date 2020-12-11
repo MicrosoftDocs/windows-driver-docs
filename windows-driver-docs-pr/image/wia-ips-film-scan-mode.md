@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_FILM\_SCAN\_MODE
 description: The WIA\_IPS\_FILM\_SCAN\_MODE property contains the current film scan configuration settings. The WIA minidriver creates and maintains this property.
-ms.assetid: 3bbe362e-1868-4327-a862-8711f09969f7
 keywords: ["WIA_IPS_FILM_SCAN_MODE Imaging Devices"]
 topic_type:
 - apiref

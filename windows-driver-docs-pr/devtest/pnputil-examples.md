@@ -1,7 +1,6 @@
 ---
 title: PnPUtil Examples
 description: PnPUtil Examples
-ms.assetid: 4805edb9-e4f8-441d-a7f4-0c962ddeae4e
 ms.date: 01/31/2018
 ms.localizationpriority: medium
 ---

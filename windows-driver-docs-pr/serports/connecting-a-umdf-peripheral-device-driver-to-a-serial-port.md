@@ -1,7 +1,6 @@
 ---
 title: Connecting a UMDF Peripheral Driver to a Serial Port
 description: The UMDF driver for a peripheral device on a SerCx2-managed serial port requires certain hardware resources to operate the device. Included in these resources is the information that the driver needs to open a logical connection to the serial port.
-ms.assetid: 75FC5E79-59E9-4C07-9119-A4FE81CC318E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

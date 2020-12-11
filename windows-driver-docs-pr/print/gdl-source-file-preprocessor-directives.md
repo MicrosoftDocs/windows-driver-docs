@@ -1,7 +1,6 @@
 ---
 title: GDL Source File Preprocessor Directives
 description: GDL Source File Preprocessor Directives
-ms.assetid: cc0f807f-5c06-4add-bed1-c15c8251dc98
 keywords:
 - directives WDK GDL , source file preprocessor directives
 - source files WDK GDL , preprocessor directives

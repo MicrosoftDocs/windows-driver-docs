@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's ClaimDevice Routine
 description: Storage Class Driver's ClaimDevice Routine
-ms.assetid: 175b9be6-34a5-4d20-970c-aa9a6880c242
 keywords:
 - ClaimDevice
 - claiming storage devices

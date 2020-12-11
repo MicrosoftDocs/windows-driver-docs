@@ -1,7 +1,6 @@
 ---
 title: Adding Dependencies to the Configuration-Dependent Data
 description: Adding Dependencies to the Configuration-Dependent Data
-ms.assetid: 16e15147-6e83-4675-b050-cf13dcd6b397
 keywords:
 - GDL WDK , configurations
 - configurations WDK GDL , adding dependencies

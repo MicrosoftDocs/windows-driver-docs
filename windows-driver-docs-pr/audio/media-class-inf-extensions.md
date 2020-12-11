@@ -1,7 +1,6 @@
 ---
 title: Audio INF File Settings
 description: Audio INF File Settings
-ms.assetid: dcfa18cb-05c6-4192-9478-469258fb9719
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: OperatorList
 description: OperatorList
-ms.assetid: 28006331-aa65-4b33-ae94-a027c8a60d48
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

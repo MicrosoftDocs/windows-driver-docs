@@ -1,7 +1,6 @@
 ---
 title: Subscribing for presence events
 description: Subscribing for presence events
-ms.assetid: 4AA6C7DA-5301-4356-8AF9-5567322FAB46
 keywords:
 - NFC
 - near field communications
@@ -53,5 +52,4 @@ The driver MUST accept and report duplicate subscriptions, even if subscribed by
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

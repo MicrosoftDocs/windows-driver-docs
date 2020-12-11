@@ -1,7 +1,6 @@
 ---
 title: Working with USB Devices
 description: This topic describes the operations that a Kernel-Mode Driver Framework (KMDF) or User-Mode Driver Framework (UMDF) driver starting in version 2 can perform using the USB device object methods provided by Windows Driver Frameworks (WDF).
-ms.assetid: 8e06f3c4-1a58-4b9f-ae89-ff4e37eb8f0a
 keywords:
 - USB I/O targets WDK KMDF , framework USB device objects
 - framework objects WDK KMDF , USB device objects
@@ -60,7 +59,7 @@ You can also call [**WdfUsbTargetDeviceSelectConfig**](/windows-hardware/drivers
 
 For related information, see:
 
--   [How to select a configuration for a USB device](/windows-hardware/drivers/ddi/index)
+-   [How to select a configuration for a USB device](/windows-hardware/drivers/usbcon/how-to-select-a-configuration-for-a-usb-device)
 -   [How to select an alternate setting in a USB interface](../usbcon/index.md)
 
 ## <a href="" id="obtaining-device-information"></a> Obtaining Device Information

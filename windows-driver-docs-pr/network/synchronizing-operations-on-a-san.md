@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Operations on a SAN
 description: Synchronizing Operations on a SAN
-ms.assetid: 9bbceecc-652e-44a7-b969-57578d2ebe68
 keywords:
 - synchronization WDK SANs
 - SAN synchronizations WDK

@@ -1,7 +1,6 @@
 ---
 title: IRP-Based I/O Operations That Obey Device Object Flags
 description: IRP-Based I/O Operations That Obey Device Object Flags
-ms.assetid: d322aeda-a753-4616-8a35-1a5ae5a37cf2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

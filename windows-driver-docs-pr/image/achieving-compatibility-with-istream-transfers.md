@@ -1,7 +1,6 @@
 ---
 title: Achieving Compatibility with IStream Transfers
 description: Achieving Compatibility with IStream Transfers
-ms.assetid: fdd0dce8-8f21-466b-bd2d-48da34914a23
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

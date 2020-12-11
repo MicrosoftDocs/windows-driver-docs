@@ -1,7 +1,6 @@
 ---
 title: ndiskd.dbgsystems
 description: The ndiskd.dbgsystems extension displays and optionally changes the NDIS subsystems that have debug traces enabled.  ndiskd.dbgsystems has been superceded by WPP and Driver Verifier.
-ms.assetid: f36a26b6-18a8-4a01-96c7-99826e6b662f
 keywords: ["ndiskd.dbgsystems Windows Debugging"]
 ms.date: 06/15/2020
 topic_type:

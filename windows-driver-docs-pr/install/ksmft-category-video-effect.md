@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_VIDEO_EFFECT
 description: KSMFT_CATEGORY_VIDEO_EFFECT
-ms.assetid: 81286240-d6eb-4872-a06c-34046767a2cc
 keywords: ["KSMFT_CATEGORY_VIDEO_EFFECT Device and Driver Installation"]
 topic_type:
 - apiref

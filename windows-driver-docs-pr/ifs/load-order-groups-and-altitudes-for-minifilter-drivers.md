@@ -1,7 +1,6 @@
 ---
 title: Load order groups and altitudes for filter drivers
 description: Describes load order groups and altitudes for filter drivers
-ms.assetid: be8f18fe-c80b-44a3-b0c3-f2f630142180
 keywords:
 - altitudes WDK file system minifilter
 - altitudes WDK file system filter driver

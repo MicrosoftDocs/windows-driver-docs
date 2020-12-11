@@ -1,7 +1,6 @@
 ---
 title: PIO Techniques
 description: PIO Techniques
-ms.assetid: bd673e43-c864-416b-b0d0-23c4ba1b870c
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

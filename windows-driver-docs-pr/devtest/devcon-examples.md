@@ -1,7 +1,6 @@
 ---
 title: Device Console (DevCon.exe) Examples
 description: Device Console (DevCon.exe) Examples
-ms.assetid: 5af1e777-04ba-4e83-b239-f568a02a9460
 keywords:
 - DevCon WDK , examples
 - Device Console WDK , examples

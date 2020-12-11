@@ -1,7 +1,6 @@
 ---
 title: Adding GDL Extensions to an Existing GPD File
 description: Adding GDL Extensions to an Existing GPD File
-ms.assetid: 5ba2a447-e133-47bb-aa1e-93abe75c6eef
 keywords:
 - in-box autoconfiguration support WDK printer , GDL extensions
 - GDL files WDK printer

@@ -1,7 +1,6 @@
 ---
 title: WIA Minidriver Interfaces
 description: WIA Minidriver Interfaces
-ms.assetid: 6d069584-f9e1-4312-b8f2-1ef3d518faeb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

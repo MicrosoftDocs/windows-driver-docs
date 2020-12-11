@@ -1,7 +1,6 @@
 ---
 title: Obtaining and Updating VM Queue Parameters
 description: Obtaining and Updating VM Queue Parameters
-ms.assetid: 42beceec-95ae-48e3-985f-b6ee8a84d68b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

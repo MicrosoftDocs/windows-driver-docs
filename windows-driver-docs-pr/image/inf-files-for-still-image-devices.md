@@ -1,7 +1,6 @@
 ---
 title: INF Files for Still Image Devices
 description: INF Files for Still Image Devices
-ms.assetid: f68ba904-9049-4f7e-9903-fdf6f413a1a5
 ms.date: 03/21/2019
 ms.localizationpriority: medium
 ---

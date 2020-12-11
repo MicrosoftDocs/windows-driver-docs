@@ -1,7 +1,6 @@
 ---
 title: A User Plugs in a Device (UMDF 1)
 description: A User Plugs in a Device
-ms.assetid: 1968270b-ce57-4a8c-8b7a-bbd4a972435d
 keywords:
 - power management scenarios WDK UMDF , plugging in a device
 - plugging in a device scenario WDK UMDF

@@ -1,7 +1,6 @@
 ---
 title: Windows Device Experience List
 description: Windows Device Experience List
-ms.assetid: 6325401e-4c8d-4b24-b910-ee3652470e31
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

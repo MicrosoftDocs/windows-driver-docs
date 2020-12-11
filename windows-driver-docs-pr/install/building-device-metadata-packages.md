@@ -1,7 +1,6 @@
 ---
 title: Building Device Metadata Packages
 description: Building Device Metadata Packages
-ms.assetid: 8b95a88e-430c-4250-959f-43536fdc1824
 keywords:
 - device metadata packages WDK , building
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Disk Prompting and Error Handling Functions
 description: Disk Prompting and Error Handling Functions
-ms.assetid: e1afeeb3-02f0-4570-9910-f948646f07bf
 keywords:
 - SetupAPI functions WDK , disk prompting
 - SetupAPI functions WDK , error handling

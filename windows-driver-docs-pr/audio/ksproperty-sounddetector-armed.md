@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_ARMED
 description: The KSPROPERTY\_SOUNDDETECTOR\_ARMED property is the current arming state of the detector.
-ms.assetid: 3B9B43C0-31EE-4490-AD29-98DA81D1664F
 keywords: ["KSPROPERTY_SOUNDDETECTOR_ARMED Audio Devices"]
 topic_type:
 - apiref

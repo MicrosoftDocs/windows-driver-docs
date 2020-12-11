@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_SYS_BUTTON
 description: GUID_DEVICE_SYS_BUTTON
-ms.assetid: 6d07e015-3ea5-4951-ab2d-9c110edef1c5
 keywords: ["GUID_DEVICE_SYS_BUTTON Device and Driver Installation"]
 topic_type:
 - apiref

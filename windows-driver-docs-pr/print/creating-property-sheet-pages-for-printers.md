@@ -1,7 +1,6 @@
 ---
 title: Creating Property Sheet Pages for Printers
 description: Creating Property Sheet Pages for Printers
-ms.assetid: b9b7aa52-39b7-4809-acdf-e72293da37e1
 keywords:
 - printer interface DLL WDK , property sheet pages
 - property sheet pages WDK print , creating

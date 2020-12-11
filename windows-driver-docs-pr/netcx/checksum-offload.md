@@ -1,7 +1,6 @@
 ---
 title: Checksum offload
 description: Checksum offload usage, rules, and examples in NetAdapterCx
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Checksum Offload
 ms.date: 08/10/2020
@@ -30,6 +29,8 @@ Turning off checksum offloads when [Generic Segmentation Offload](gso-offload.md
 NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities. The driver doesn't need to take any further action.
 
 The checksum keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the checksum offload with a registry key setting. Grouped keywords are not supported.
+
+The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-value-types).
 
 ## Configuring checksum offload
 

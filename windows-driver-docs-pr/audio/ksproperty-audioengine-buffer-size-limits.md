@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE
 description: The KSPROPERTY\_AUDIOENGINE\_BUFFER\_SIZE\_RANGE property indicates the minimum and maximum size of buffer that the hardware audio engine can support for a given data format, at the instance when it is called. The buffer size is specified in bytes.
-ms.assetid: 6A5DF24C-A328-4814-A410-2B1E13402A2B
 keywords: ["KSPROPERTY_AUDIOENGINE_BUFFER_SIZE_RANGE Audio Devices"]
 topic_type:
 - apiref

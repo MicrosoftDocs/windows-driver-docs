@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_SIDESHOW
 description: GUID_DEVINTERFACE_SIDESHOW
-ms.assetid: 74afef18-bfb3-457c-8112-29dadd0c7e66
 keywords: ["GUID_DEVINTERFACE_SIDESHOW Device and Driver Installation"]
 topic_type:
 - apiref

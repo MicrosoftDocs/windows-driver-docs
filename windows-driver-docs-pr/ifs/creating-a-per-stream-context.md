@@ -1,7 +1,6 @@
 ---
 title: Creating a Per-Stream Context
 description: Creating a Per-Stream Context
-ms.assetid: e33dba3b-50f7-43d8-b7e8-b7c2c9034d51
 keywords:
 - filter drivers WDK file system , per-stream context tracking
 - file system filter drivers WDK , per-stream context tracking

@@ -1,7 +1,6 @@
 ---
 title: Memory Buffer Life Cycle
 description: Memory Buffer Life Cycle
-ms.assetid: abf43bf5-a4a3-4aeb-9ec5-3458252933d5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

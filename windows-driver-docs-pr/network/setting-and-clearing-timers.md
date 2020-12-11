@@ -1,7 +1,6 @@
 ---
 title: Setting and Clearing Timers
 description: Setting and Clearing Timers
-ms.assetid: 75f348f7-173f-4799-88aa-1ca50a6df023
 keywords:
 - timer services WDK NDIS
 - NDIS timer services WDK

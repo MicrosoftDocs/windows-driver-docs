@@ -1,7 +1,6 @@
 ---
 title: Requirements for Feeder Scanners Child Items
 description: Requirements for Feeder Scanners Child Items
-ms.assetid: 069ce228-ac73-42b5-9f1b-528ee6fe6a92
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

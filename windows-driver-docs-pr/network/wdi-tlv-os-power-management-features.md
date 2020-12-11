@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_OS_POWER_MANAGEMENT_FEATURES
 description: WDI_TLV_OS_POWER_MANAGEMENT_FEATURES is a TLV that contains flags for OS power management features.
-ms.assetid: 4F104956-1B26-47DF-A58F-53C24B75DB77
 ms.date: 03/30/2018
 keywords:
  - WDI_TLV_OS_POWER_MANAGEMENT_FEATURES Network Drivers Starting with Windows Vista

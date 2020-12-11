@@ -1,7 +1,6 @@
 ---
 title: Setting and Getting a Log Token for a Thread
 description: Setting and Getting a Log Token for a Thread
-ms.assetid: 6c701b91-ae0a-48ba-a1e0-711fc21eaf60
 keywords:
 - text logs WDK SetupAPI , log context
 - log context WDK SetupAPI

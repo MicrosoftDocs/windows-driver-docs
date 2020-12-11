@@ -1,7 +1,6 @@
 ---
 title: Using a NET_LUID Index
 description: Using a NET_LUID Index
-ms.assetid: 21e0a73b-a02c-4ab4-b7c2-efcb8bfc806d
 keywords:
 - NDIS network interfaces WDK , NET_LUID
 - network interfaces WDK , NET_LUID

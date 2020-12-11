@@ -1,7 +1,6 @@
 ---
 title: Implementing IPv6 NS Offload
 description: This section describes how to implement IPv6 neighbor solicitation (NS) offload
-ms.assetid: 48AACE46-4D39-49ED-90AD-F73E27D0CDBE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

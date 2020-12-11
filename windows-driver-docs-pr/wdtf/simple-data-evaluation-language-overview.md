@@ -1,7 +1,6 @@
 ---
 title: Simple Data Evaluation Language Overview
 description: WDTF includes a simple query language to simplify the task of collecting targets based on attributes or relationships.
-ms.assetid: 84c2a1d6-6bec-4aeb-b858-c29f50d74390
 keywords:
 - Windows Device Testing Framework WDK , SDEL
 - WDTF WDK , SDEL

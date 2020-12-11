@@ -1,7 +1,6 @@
 ---
 title: Forwarding OID Requests to Physical Network Adapters
 description: Forwarding OID Requests to Physical Network Adapters
-ms.assetid: 2A6AA842-FFC2-4CEF-BA56-2FDB277E37C9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Retrieving Graphics Memory Numbers
 description: Retrieving Graphics Memory Numbers
-ms.assetid: ec704093-ad9a-4717-8e9e-537a2848b1c7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

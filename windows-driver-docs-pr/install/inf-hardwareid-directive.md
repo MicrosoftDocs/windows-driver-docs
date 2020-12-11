@@ -1,7 +1,6 @@
 ---
 title: INF HardwareId Directive
 description: The Found New Hardware Wizard and Hardware Update Wizard support INF HardwareId directives in the [DeviceInstall] section of an Autorun.inf file.
-ms.assetid: aceb4db2-ae00-47f3-994a-49541437e260
 keywords:
 - INF HardwareId Directive Device and Driver Installation
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: XpsAnalyzer Rules
 description: XpsAnalyzer Rules
-ms.assetid: 4f617665-4cc4-475d-ae66-abc2f00309fd
 keywords:
 - XpsAnalyzer WDK , rules
 ms.date: 09/17/2018

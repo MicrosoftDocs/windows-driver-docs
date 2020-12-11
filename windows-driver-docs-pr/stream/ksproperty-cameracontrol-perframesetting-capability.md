@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY
 description: The KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY property ID that is defined in KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY is used to get the per-frame capabilities from the driver.
-ms.assetid: 9EB8AB4C-56C0-4F70-AFFE-76444FAADFF8
 keywords: ["KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY Streaming Media Devices"]
 topic_type:
 - apiref

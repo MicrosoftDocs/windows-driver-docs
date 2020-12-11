@@ -1,7 +1,6 @@
 ---
 title: Routines Provided by RDBSS
 description: Routines Provided by RDBSS
-ms.assetid: 37631760-ac89-4ef0-ad7c-ed3e68aa1ceb
 keywords:
 - RDBSS WDK file systems , routines
 - Redirected Drive Buffering Subsystem WDK file systems , routines

@@ -1,7 +1,6 @@
 ---
 title: Understanding the Source Code Pane
 description: Understanding the Source Code Pane
-ms.assetid: 70be3322-fdbc-4d7e-880d-dcbc0fecc39f
 keywords:
 - Static Driver Verifier Report WDK , Source Code pane
 - Source Code pane WDK Static Driver Verifier

@@ -1,7 +1,6 @@
 ---
 title: Modifying Registry Keys by Class Installers and Co-installers
 description: Modifying Registry Keys by Class Installers and Co-installers
-ms.assetid: A7F41F97-5E06-41d8-B80F-DDBC41A62BB3
 keywords:
 - registry WDK device installations , modifying registry keys
 - registry WDK device installations , modifying registry keys, class installers

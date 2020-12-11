@@ -1,7 +1,6 @@
 ---
 title: Format of a Text Log Header
 description: Format of a Text Log Header
-ms.assetid: d4a50905-215f-4156-b5cf-f160c757bb90
 keywords:
 - headers WDK SetupAPI logging
 - formats WDK SetupAPI logging

@@ -1,7 +1,6 @@
 ---
 title: Locking and Unlocking Stream Pointers
 description: Locking and Unlocking Stream Pointers
-ms.assetid: 3826a5bc-4ba5-4ada-a8aa-e7bbd949187e
 keywords:
 - stream pointers WDK AVStream , locked and unlocked
 - locked stream pointers WDK AVStream

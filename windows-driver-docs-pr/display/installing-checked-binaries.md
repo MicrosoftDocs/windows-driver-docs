@@ -1,7 +1,6 @@
 ---
 title: Installing Checked Binaries
 description: Installing Checked Binaries
-ms.assetid: a289206a-e793-48a6-875c-f0204edfaaf3
 keywords:
 - checked binaries WDK display
 - binaries WDK display

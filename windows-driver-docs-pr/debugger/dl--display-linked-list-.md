@@ -1,7 +1,6 @@
 ---
 title: dl (Display Linked List)
 description: The dl command displays a LIST_ENTRY or SINGLE_LIST_ENTRY linked list.
-ms.assetid: fbf03e78-d4b3-4dd9-904b-3f44a1a86cff
 keywords: ["dl (Display Linked List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

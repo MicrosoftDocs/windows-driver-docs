@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_MULTIPLANE\_OVERLAY\_FLAGS enumeration
 description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_FLAGS enumeration, which is reserved for system use. Do not use in your driver.
-ms.assetid: e4199b1a-b339-4b0d-8540-2c582675f24f
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_FLAGS enumeration Display Devices"]
 topic_type:
 - apiref

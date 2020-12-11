@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_ZOOM\_RELATIVE
 description: The KSPROPERTY\_CAMERACONTROL\_ZOOM\_RELATIVE property specifies the zoom status of the camera.
-ms.assetid: 686bfb4f-fe93-456a-bd50-7ebd99a146eb
 keywords: ["KSPROPERTY_CAMERACONTROL_ZOOM_RELATIVE Streaming Media Devices"]
 topic_type:
 - apiref

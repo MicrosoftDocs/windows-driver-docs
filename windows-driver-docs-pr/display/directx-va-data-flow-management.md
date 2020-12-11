@@ -1,7 +1,6 @@
 ---
 title: DirectX VA Data Flow Management
 description: DirectX VA Data Flow Management
-ms.assetid: ce6c4c2d-c290-4cc1-9f95-43480cd025ab
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , data flow
 - Video Acceleration WDK DirectX , data flow

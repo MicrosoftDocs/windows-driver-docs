@@ -1,7 +1,6 @@
 ---
 title: Magnetic stripe reader events
 description: Learn about the magnetic stripe reader events that are passed from the device driver to the Point of Service (POS) API layer by using ReadFile.
-ms.assetid: '48ce9fcb-5ea2-4045-92df-990d94e5e98b'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

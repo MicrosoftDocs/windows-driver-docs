@@ -1,7 +1,6 @@
 ---
 title: Improvements in Configuration Formats
 description: Configuration formats in v4 printer drivers have been improved to allow control over copy count and punctuation substitutions.
-ms.assetid: 66FC6BAF-26DD-4E18-B8C9-0BF494346917
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

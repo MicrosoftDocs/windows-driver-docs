@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_ModelId
 description: DEVPKEY_Device_ModelId
-ms.assetid: 6066f18b-40bf-4b36-9821-5e886e166256
 keywords: ["DEVPKEY_Device_ModelId Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPC\_AUDIO\_DATA
 description: The WIA\_IPC\_AUDIO\_DATA property is obsolete and should not be used.
-ms.assetid: 360ad9ad-9a66-42c0-8b22-f0a58ba9b99d
 keywords: ["WIA_IPC_AUDIO_DATA Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Adding a NIC
 description: Adding a NIC
-ms.assetid: 3da89acc-5504-4362-b148-e8228795721f
 keywords:
 - NICs WDK networking , adding
 - network interface cards WDK networking , adding

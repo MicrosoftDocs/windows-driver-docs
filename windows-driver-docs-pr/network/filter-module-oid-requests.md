@@ -1,7 +1,6 @@
 ---
 title: Filter Module OID Requests
 description: Filter Module OID Requests
-ms.assetid: 6de5ec1c-8e12-4f50-8708-ec136cafd9c2
 keywords:
 - filter modules WDK networking , OID requests
 - filter drivers WDK networking , OID requests

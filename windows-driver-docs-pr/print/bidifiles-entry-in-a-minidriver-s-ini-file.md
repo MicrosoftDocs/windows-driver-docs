@@ -1,7 +1,6 @@
 ---
 title: BidiFiles Entry in a Minidriver's INI File
 description: BidiFiles Entry in a Minidriver's INI File
-ms.assetid: 953a29d2-f778-410e-bc8a-a09e294f2473
 keywords:
 - BidiFiles section
 - INF files WDK print , bidi extension file information

@@ -1,7 +1,6 @@
 ---
 title: Framework I/O Queue Object
 description: Framework I/O Queue Object
-ms.assetid: b343c61a-8252-4e46-9013-bef29d9ec360
 keywords:
 - UMDF objects WDK , I/O queue objects
 - framework objects WDK UMDF , I/O queue objects

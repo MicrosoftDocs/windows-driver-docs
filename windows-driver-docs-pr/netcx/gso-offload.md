@@ -1,7 +1,6 @@
 ---
 title: Generic Segmentation Offload
 description: Generic Segmentation Offload usage, rules, and examples in NetAdapterCx
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Generic segmentation offload, GSO, Large Segmentation Offload, LSO, UDP Segmentation Offload, USO
 ms.date: 10/08/2020
@@ -28,6 +27,8 @@ NetAdapterCx checks the registry keywords and honors them when enabling the acti
 The LSO keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the LSO offload with a registry key setting.
 
 The USO keywords specified in [UDP Segmentation Offload (USO)](../network/udp-segmentation-offload-uso-.md) can be used to enable/disable the USO offload with a registry key setting.
+
+The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-value-types).
 
 ## Configuring GSO
 

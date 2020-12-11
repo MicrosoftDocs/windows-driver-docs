@@ -1,7 +1,6 @@
 ---
 title: SRB\_PROPOSE\_STREAM\_RATE
 description: SRB\_PROPOSE\_STREAM\_RATE
-ms.assetid: 2077ecb5-6b85-4a51-9a53-cece3695d75e
 keywords: ["SRB_PROPOSE_STREAM_RATE Streaming Media Devices"]
 topic_type:
 - apiref

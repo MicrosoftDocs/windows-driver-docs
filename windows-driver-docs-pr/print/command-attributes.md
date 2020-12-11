@@ -1,7 +1,6 @@
 ---
 title: Command Attributes
 description: Command Attributes
-ms.assetid: 8ce2c668-a130-428e-bf5f-0eab2dcd3fdb
 keywords:
 - printer attributes WDK Unidrv , commands
 - commands WDK Unidrv

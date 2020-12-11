@@ -1,7 +1,6 @@
 ---
 title: Deinterlace DDI
 description: Deinterlace DDI
-ms.assetid: 06b85f76-950a-4a9b-af6b-ded823bfda6a
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

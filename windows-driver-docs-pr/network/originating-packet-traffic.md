@@ -1,7 +1,6 @@
 ---
 title: Originating Packet Traffic
 description: Originating Packet Traffic
-ms.assetid: 613C7E82-387D-47AE-A699-A799087D3C1D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

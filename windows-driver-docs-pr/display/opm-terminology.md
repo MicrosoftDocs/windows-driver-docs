@@ -1,7 +1,6 @@
 ---
 title: OPM Terminology
 description: OPM Terminology
-ms.assetid: 9cf9ddd2-53d2-42f6-a4aa-7c0a66a4781b
 keywords:
 - OPM WDK display , terminology
 - connectors WDK display

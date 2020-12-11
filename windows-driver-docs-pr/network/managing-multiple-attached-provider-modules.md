@@ -1,7 +1,6 @@
 ---
 title: Managing Multiple Attached Provider Modules
 description: Managing Multiple Attached Provider Modules
-ms.assetid: 307cfbf8-e5a3-4c01-abf5-5b2eea250d77
 keywords:
 - provider modules WDK Network Module Registrar , multiple attached
 - client modules WDK Network Module Registrar , multiple attached

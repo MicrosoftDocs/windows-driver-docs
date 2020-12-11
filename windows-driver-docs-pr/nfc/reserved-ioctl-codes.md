@@ -1,6 +1,5 @@
 ---
 title: Reserved IOCTL codes
-ms.assetid: A2A67F8E-0A29-429E-935C-39368EFD9772
 keywords:
 - NFC
 - near field communications
@@ -27,5 +26,4 @@ CTL\_CODE(FILE\_DEVICE\_NFP, 0x0100, \*, \*) through CTL\_CODE(FILE\_DEVICE\_NFP
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

@@ -1,7 +1,6 @@
 ---
 title: finishText XML Element
 description: finishText XML Element
-ms.assetid: b8c63f75-e0d3-458f-9265-a19d6f64ac6b
 keywords: ["finishText XML Element Device and Driver Installation"]
 topic_type:
 - apiref

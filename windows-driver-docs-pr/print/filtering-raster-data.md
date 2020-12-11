@@ -1,7 +1,6 @@
 ---
 title: Filtering Raster Data
 description: Filtering Raster Data
-ms.assetid: 179a2dc0-8794-4934-99b9-eb3f7900536c
 keywords:
 - Unidrv, raster data filtering
 - GPD files WDK Unidrv , raster data filtering

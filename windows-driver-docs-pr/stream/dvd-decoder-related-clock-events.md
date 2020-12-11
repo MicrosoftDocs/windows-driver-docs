@@ -1,7 +1,6 @@
 ---
 title: DVD Decoder Related Clock Events
 description: DVD Decoder Related Clock Events
-ms.assetid: c3ed0ee4-95a3-4596-9f29-86397b0d8753
 keywords:
 - DVD decoder minidrivers WDK , master clock
 - decoder minidrivers WDK DVD , master clock

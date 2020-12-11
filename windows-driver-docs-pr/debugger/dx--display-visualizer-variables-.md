@@ -1,7 +1,6 @@
 ---
 title: dx (Display Debugger Object Model Expression)
 description: The dx command displays a C++ expression using the NatVis extension model. The dx command works with debugger objects.
-ms.assetid: 93047911-5195-4FB9-A015-5349084EDC0A
 keywords: ["dx (Display Debugger Object Model Expression) Windows Debugging"]
 ms.date: 05/28/2019
 topic_type:

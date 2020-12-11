@@ -1,7 +1,6 @@
 ---
 title: Setting Symbol and Executable Image Paths in Visual Studio
 description: The procedure covers Setting Symbol and Executable Image Paths in Visual Studio
-ms.assetid: BFFF9BBC-C926-4974-A43E-C3A2DDA74AA4
 ms.date: 05/11/2018
 ms.localizationpriority: medium
 ---

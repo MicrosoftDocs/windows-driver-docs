@@ -1,7 +1,6 @@
 ---
 title: Crash Dump and Hibernation Support
 description: Crash Dump and Hibernation Support
-ms.assetid: 6f5e6f4e-b734-45fe-80d5-fd7b81c9b329
 keywords:
 - crash dump WDK
 ms.date: 04/20/2017

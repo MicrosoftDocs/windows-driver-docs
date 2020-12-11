@@ -1,7 +1,6 @@
 ---
 title: I/O Queue Event Callback Functions
 description: I/O Queue Event Callback Functions
-ms.assetid: 5aa63c47-493d-4583-9eaa-1e50fdc089dd
 keywords:
 - I/O queues WDK UMDF
 - queues WDK UMDF

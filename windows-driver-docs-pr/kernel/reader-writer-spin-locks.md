@@ -1,7 +1,6 @@
 ---
 title: Reader/Writer Spin Locks
 description: Starting with Windows Vista with Service Pack 1 (SP1), a set of related routines use spin locks to support synchronized access to data structures that are shared by readers and writers.
-ms.assetid: E2853F35-590E-4EF5-8647-1261BC4B8D15
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

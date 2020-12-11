@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MUX\_SOURCE
 description: The KSPROPERTY\_AUDIO\_MUX\_SOURCE property specifies the source for the output stream of a multiplexer. This is a property of a MUX node (KSNODETYPE\_MUX).
-ms.assetid: 631d12f2-3f30-4d3e-a0b2-731634858897
 keywords: ["KSPROPERTY_AUDIO_MUX_SOURCE Audio Devices"]
 topic_type:
 - apiref

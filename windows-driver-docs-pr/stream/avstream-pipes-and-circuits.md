@@ -1,7 +1,6 @@
 ---
 title: AVStream Pipes and Circuits
 description: AVStream Pipes and Circuits
-ms.assetid: 7e4db0da-7faf-4155-ab9d-f8651db834ec
 keywords:
 - AVStream allocators WDK
 - allocators WDK AVStream

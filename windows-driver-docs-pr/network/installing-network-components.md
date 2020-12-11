@@ -1,7 +1,6 @@
 ---
 title: Installing Network Components
 description: Installing Network Components
-ms.assetid: b4e5d73a-4943-498d-bf59-a08e3732baa8
 keywords:
 - notify objects WDK networking , installing network components
 - network notify objects WDK , installing network components

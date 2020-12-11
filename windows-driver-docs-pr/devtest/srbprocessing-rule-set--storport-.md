@@ -1,7 +1,6 @@
 ---
 title: SrbProcessing rule set (Storport)
 description: Use these rules to verify that your driver correctly processes SRB requests.
-ms.assetid: A3BF2AA3-207F-4D74-94B0-6CA215341340
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

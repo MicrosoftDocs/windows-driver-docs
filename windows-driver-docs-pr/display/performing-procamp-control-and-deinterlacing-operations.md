@@ -1,7 +1,6 @@
 ---
 title: Performing ProcAmp Control and Deinterlacing Operations
 description: Performing ProcAmp Control and Deinterlacing Operations
-ms.assetid: efef9bb0-4e98-47f9-80bd-e07c8d3b22e5
 keywords:
 - ProcAmp WDK DirectX VA , deinterlacing operations
 - deinterlacing WDK DirectX VA , ProcAmp

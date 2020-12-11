@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOMODULE enumeration
 description: The KSPROPERTY\_AUDIOMODULE enumeration defines constants that are used by audio drivers to communicate information about partner defined audio modules.
-ms.assetid: 94873A4A-A40F-40A7-B7A2-B693A5253714
 keywords: ["KSPROPERTY_AUDIOMODULE enumeration Audio Devices"]
 topic_type:
 - apiref

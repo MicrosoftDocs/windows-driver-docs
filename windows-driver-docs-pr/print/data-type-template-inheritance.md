@@ -1,7 +1,6 @@
 ---
 title: Data Type Template Inheritance
 description: Data Type Template Inheritance
-ms.assetid: c2ecc091-8fdc-4666-9cdf-629903f13f6f
 keywords:
 - templates WDK GDL , data types
 - data types WDK GDL , template inheritance

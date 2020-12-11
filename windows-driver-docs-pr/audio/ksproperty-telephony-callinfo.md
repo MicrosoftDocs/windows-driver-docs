@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_CALLINFO
 description: The KSPROPERTY\_TELEPHONY\_CALLINFO property is used to retrieve current call information, such as call state and call type.
-ms.assetid: EEBA38F6-86EC-4C2C-930C-A848153AD918
 keywords: ["KSPROPERTY_TELEPHONY_CALLINFO Audio Devices"]
 topic_type:
 - apiref

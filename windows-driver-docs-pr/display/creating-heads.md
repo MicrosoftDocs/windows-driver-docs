@@ -1,7 +1,6 @@
 ---
 title: Creating Heads
 description: Creating Heads
-ms.assetid: 0b6d4aa0-e3c9-45df-998d-d6dfca5ab720
 keywords:
 - heads WDK DirectX 9.0
 - multiple-head hardware WDK DirectX 9.0 , creating heads

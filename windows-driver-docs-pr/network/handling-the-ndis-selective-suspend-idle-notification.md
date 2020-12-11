@@ -1,7 +1,6 @@
 ---
 title: Handling the NDIS Selective Suspend Idle Notification
 description: Handling the NDIS Selective Suspend Idle Notification
-ms.assetid: 02D13260-5816-4621-8527-E1E79C9AE975
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

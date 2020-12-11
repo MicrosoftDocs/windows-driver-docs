@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_MUX
 description: KSNODETYPE\_MUX
-ms.assetid: c22054fe-7ede-4694-8ae1-6e18e1270185
 keywords: ["KSNODETYPE_MUX Audio Devices"]
 topic_type:
 - apiref

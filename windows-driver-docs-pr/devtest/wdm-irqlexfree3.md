@@ -1,7 +1,6 @@
 ---
 title: IrqlExFree3 rule (wdm)
 description: The IrqlExFree3 rule specifies that ExFreePool and ExFreePoolWithTag are called at proper IRQL.
-ms.assetid: D3916378-2032-4575-941F-F1EA9A3678F8
 ms.date: 05/21/2018
 keywords: ["IrqlExFree3 rule (wdm)"]
 topic_type:

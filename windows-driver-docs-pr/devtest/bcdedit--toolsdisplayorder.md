@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /toolsdisplayorder
 description: The BCDEdit /toolsdisplayorder command sets the display order to be used by the boot manager when displaying the tools menu.
-ms.assetid: a849ce02-c392-4982-9b93-7a1d70a77b9d
 ms.date: 09/23/2020
 keywords: ["BCDEdit /toolsdisplayorder Driver Development Tools"]
 topic_type:

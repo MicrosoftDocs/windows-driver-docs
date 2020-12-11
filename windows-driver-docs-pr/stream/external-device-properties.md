@@ -1,7 +1,6 @@
 ---
 title: External Device Properties
 description: External Device Properties
-ms.assetid: 633b24c7-a1da-4748-aaa2-864a01a3fd98
 keywords:
 - external device properties WDK video capture
 - PROPSETID_EXT_DEVICE

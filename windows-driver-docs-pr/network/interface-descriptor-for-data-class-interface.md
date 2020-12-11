@@ -1,7 +1,6 @@
 ---
 title: Interface Descriptor for Data Class Interface
 description: Interface Descriptor for Data Class Interface
-ms.assetid: 258dde6f-952a-4b92-8b76-e26da1b51480
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

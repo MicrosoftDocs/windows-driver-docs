@@ -1,7 +1,6 @@
 ---
 title: What is the TMC file
 description: What is the TMC file
-ms.assetid: 5927d6be-93af-4ab2-bdc1-387fabc9c5ca
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

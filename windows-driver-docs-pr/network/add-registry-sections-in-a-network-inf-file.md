@@ -1,7 +1,6 @@
 ---
 title: Add-registry-sections in a Network INF File
 description: Add-registry-sections in a Network INF File
-ms.assetid: 43c39389-5d01-49e9-a792-e853136068b4
 keywords:
 - INF files WDK network , add-registry-sections
 - network INF files WDK , add-registry-sections

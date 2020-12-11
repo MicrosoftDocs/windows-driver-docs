@@ -1,7 +1,6 @@
 ---
 title: c (Compare Memory)
 description: The c command compares the values held in two memory areas.
-ms.assetid: caa02ec3-35d6-4d41-a777-daa264b0dd18
 keywords: ["c (Compare Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

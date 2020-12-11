@@ -1,7 +1,6 @@
 ---
 title: Security Guidelines for Offload-Capable Miniport Drivers Overview
 description: Security Guidelines for Offload-Capable Miniport Drivers Overview
-ms.assetid: 178be416-3936-4e17-b055-134897b3e2eb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

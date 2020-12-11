@@ -1,7 +1,6 @@
 ---
 title: Returning Printer-Specific Information
 description: Returning Printer-Specific Information
-ms.assetid: 7a47b395-4b01-437f-bed7-967b31b5841e
 keywords:
 - printer graphics DLL WDK , return printer-specific information
 - graphics DLL WDK printer , return printer-specific information

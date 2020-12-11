@@ -1,7 +1,6 @@
 ---
 title: Light sensor data fields
 description: This topic provides information about the data fields that are specific to the light sensor.
-ms.assetid: 96572A6A-CACC-4B79-B63C-5554C07F7C83
 ms.date: 01/04/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS Virtual Machine Queue (VMQ)
 description: Introduction to NDIS Virtual Machine Queue (VMQ)
-ms.assetid: 03c6bbd1-bd4f-415f-b4ed-c6e812c50f8d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

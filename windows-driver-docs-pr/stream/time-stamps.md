@@ -1,7 +1,6 @@
 ---
 title: Time Stamps
 description: Time Stamps
-ms.assetid: a97a57df-294a-4cbb-85d3-56d33ece65c9
 keywords:
 - video capture WDK AVStream , time stamps
 - capturing video WDK AVStream , time stamps

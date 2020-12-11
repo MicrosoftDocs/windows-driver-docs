@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_GET\_DEREFERENCE
 description: The EXT\_TDOP\_GET\_DEREFERENCE sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation dereferences a pointer and returns the value it points to.
-ms.assetid: 0b5eed03-4241-4038-8950-12c82c2d086f
 keywords: ["EXT_TDOP_GET_DEREFERENCE Windows Debugging"]
 topic_type:
 - apiref

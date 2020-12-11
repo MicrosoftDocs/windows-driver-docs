@@ -1,7 +1,6 @@
 ---
 title: Privacy and Security in the Sensor and Location Platform
 description: Privacy and Security in the Sensor and Location Platform
-ms.assetid: 9defb163-4de6-46cc-b817-d3e6291137be
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Thread Synchronization and TDR
 description: Thread Synchronization and TDR
-ms.assetid: 3690ad06-002a-4939-9b04-b87245678464
 keywords:
 - threading WDK display , TDR
 - synchronization WDK display , TDR

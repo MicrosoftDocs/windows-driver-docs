@@ -1,7 +1,6 @@
 ---
 title: HID Application Programming Interface (API)
 description: Introduction to Human Interface Devices (HID) API.
-ms.assetid: 477FF911-5A17-4EA5-9403-1D7B4E8B3BA5
 keywords:
 - Human Interface Devices
 - HID

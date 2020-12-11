@@ -1,7 +1,6 @@
 ---
 title: x86 Instructions
 description: x86 Instructions
-ms.assetid: 237796d5-ef82-4eab-8d56-3191b3e63597
 keywords: ["x86 processor, instructions", "x86 processor, arithmetic"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

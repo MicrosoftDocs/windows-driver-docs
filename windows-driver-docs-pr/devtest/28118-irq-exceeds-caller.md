@@ -1,7 +1,6 @@
 ---
 title: C28118
 description: irq-exceeds-caller
-ms.assetid: 
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

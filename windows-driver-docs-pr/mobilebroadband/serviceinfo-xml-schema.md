@@ -1,7 +1,6 @@
 ---
 title: ServiceInfo XML schema overview
 description: ServiceInfo XML schema overview
-ms.assetid: e59aa675-fea2-4c2d-90f8-4979aac1c7e8
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

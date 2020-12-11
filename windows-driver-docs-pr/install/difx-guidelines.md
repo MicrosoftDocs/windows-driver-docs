@@ -1,7 +1,6 @@
 ---
 title: DIFx Guidelines
 description: DIFx Guidelines
-ms.assetid: de34f810-0e90-4626-b84d-160ac61541ad
 ms.date: 05/24/2018
 ms.localizationpriority: medium
 ---

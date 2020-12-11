@@ -1,7 +1,6 @@
 ---
 title: Pre-Association Operations Topics
 description: Pre-Association Operations Topics
-ms.assetid: fc9a8548-24f0-48f9-9e3f-ad85a90f91ed
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , pre-association operations
 - Native 802.11 IHV Extensions DLL WDK , pre-association operations

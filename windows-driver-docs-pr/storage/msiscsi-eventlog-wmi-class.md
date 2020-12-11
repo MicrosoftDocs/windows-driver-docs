@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_EventLog WMI Class
 description: MSiSCSI\_EventLog WMI Class
-ms.assetid: 8fe6c3fd-bb4f-46ac-a69c-5508467b4c70
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

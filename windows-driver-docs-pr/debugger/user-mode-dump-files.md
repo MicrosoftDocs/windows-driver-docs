@@ -1,7 +1,6 @@
 ---
 title: User-Mode Dump Files
 description: User-Mode Dump Files
-ms.assetid: bef29d75-6620-4219-b402-36fbddc4fe1f
 keywords: ["dump file, user-mode"]
 ms.date: 12/03/2019
 ms.localizationpriority: medium

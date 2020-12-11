@@ -1,7 +1,6 @@
 ---
 title: Audio Filters
 description: Audio Filters
-ms.assetid: d4b14327-2870-4d4d-a575-68725421da95
 keywords:
 - audio filters WDK audio
 - audio filters WDK audio , about audio filters

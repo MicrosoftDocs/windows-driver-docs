@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CHECKSUM_OFFLOAD_V4_TX_PARAMETERS (0xD1)
 description: WDI_TLV_CHECKSUM_OFFLOAD_V4_TX_PARAMETERS is a TLV that contains parameters for Tx checksum offload for IPv4.
-ms.assetid: EA862CDA-5FF4-4C5F-A522-224714640F34
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CHECKSUM_OFFLOAD_V4_TX_PARAMETERS (0xD1) Network Drivers Starting with Windows Vista

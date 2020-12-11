@@ -1,7 +1,6 @@
 ---
 title: Writing 64-Bit Printer Drivers
 description: Writing 64-Bit Printer Drivers
-ms.assetid: 41f1a521-980e-4ccd-a395-e1d1bf0114d1
 keywords:
 - printer drivers WDK , 64-bit
 - 64-bit WDK printer

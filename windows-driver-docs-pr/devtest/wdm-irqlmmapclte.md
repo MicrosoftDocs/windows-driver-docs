@@ -1,6 +1,5 @@
 ---
 title: IrqlMmApcLte rule (wdm)
-ms.assetid: 075f5710-b2bf-4546-9648-661a3c8521f8
 ms.date: 05/21/2018
 description: "Learn more about: IrqlMmApcLte rule (wdm)"
 keywords: ["IrqlMmApcLte rule (wdm)"]

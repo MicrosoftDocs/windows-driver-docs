@@ -1,7 +1,6 @@
 ---
 title: Combining Types of Task Offloads
 description: Combining Types of Task Offloads
-ms.assetid: 33f8ba3c-09ab-4041-9641-d4207b98c8b7
 keywords:
 - task offload WDK TCP/IP transport , combining offload types
 - combining task offload types WDK TCP/IP offload

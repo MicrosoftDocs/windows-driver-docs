@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for RSC
 description: Standardized INF Keywords for RSC
-ms.assetid: 7418E02F-FD5A-4E58-AAA5-3055B98ED264
 keywords:
 - receive-side coalescing WDK networking , standardized INF keywords
 - RSC WDK networking , standardized INF keywords

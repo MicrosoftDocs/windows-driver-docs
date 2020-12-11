@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_QUALITY\_REPORT
 description: The KSPROPERTY\_QUALITY\_REPORT property is an optional property that should be implemented if the pin supports quality management.
-ms.assetid: 9879a28d-aa92-4583-be63-03fed67c8416
 keywords: ["KSPROPERTY_QUALITY_REPORT Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Evaluating Expressions
 description: Evaluating Expressions
-ms.assetid: f2fbdac1-2c20-4132-b43e-4c7a90a2f5b7
 keywords: ["expressions, overview", "expressions, different types", "MASM expressions, when to use", "C++ expressions, when to use", "MASM expressions, overview", "C++ expressions, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: InputSize element
 description: The optional InputSize element specifies the size of the original scan media.
-ms.assetid: 406cfff9-7357-467f-a07a-340e32d9220f
 keywords: ["InputSize element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Driver's HwScsiFindAdapter Routine
 description: SCSI Miniport Driver's HwScsiFindAdapter Routine
-ms.assetid: c89ad751-ff29-4aa7-b907-cb490d060906
 keywords:
 - HwScsiFindAdapter
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter

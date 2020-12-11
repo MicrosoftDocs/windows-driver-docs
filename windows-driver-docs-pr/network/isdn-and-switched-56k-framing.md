@@ -1,7 +1,6 @@
 ---
 title: ISDN and Switched 56K Framing
 description: ISDN and Switched 56K Framing
-ms.assetid: e0532ded-c429-4f3a-b3c9-fd8ccc6b1b65
 keywords:
 - packet framing WDK WAN , ISDN framing
 - ISDN framing WDK WAN

@@ -1,7 +1,6 @@
 ---
 title: Configuration of Serial Devices and Drivers
 description: Configuration of Serial Devices and Drivers
-ms.assetid: a3b5c58a-e66a-4e8c-ab59-7684c12f8e8b
 keywords:
 - serial devices WDK , configurations
 - serial drivers WDK

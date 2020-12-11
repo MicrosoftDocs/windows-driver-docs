@@ -1,7 +1,6 @@
 ---
 title: error
 description: The error extension decodes and displays information about an error value.
-ms.assetid: 4999ab4b-2f55-47d4-b9a7-6f1231271fcc
 keywords: ["error codes", "Win32 error codes", "WinSock error codes", "error Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

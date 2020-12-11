@@ -1,7 +1,6 @@
 ---
 title: Driver Support for Legacy Audio Interfaces
 description: Driver Support for Legacy Audio Interfaces
-ms.assetid: c1b81c58-de05-45e7-94ab-5d174d51dfd6
 keywords:
 - WDM audio drivers WDK , legacy interfaces
 - audio drivers WDK , legacy interfaces

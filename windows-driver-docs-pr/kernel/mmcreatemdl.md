@@ -1,7 +1,6 @@
 ---
 title: Windows kernel obsolete routines
 description: Windows kernel obsolete routines
-ms.assetid: 876f48be-1d8f-4c65-bc84-e35c31919c47
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -174,7 +173,6 @@ The following obsolete routines are exported to support existing binaries:
 
 ## Related topics
 [**AllocateAdapterChannel**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel)  
-[Buffer Management](/windows-hardware/drivers/ddi/index)  
 [**ExAcquireResourceExclusiveLite**](/previous-versions/ff544351(v=vs.85))  
 [**ExAcquireResourceSharedLite**](/previous-versions/ff544363(v=vs.85))  
 [**ExConvertExclusiveToSharedLite**](/previous-versions/ff544558(v=vs.85))  

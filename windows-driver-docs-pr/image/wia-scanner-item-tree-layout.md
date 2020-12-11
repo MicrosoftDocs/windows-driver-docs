@@ -1,7 +1,6 @@
 ---
 title: WIA Scanner Item Tree Layout
 description: WIA Scanner Item Tree Layout
-ms.assetid: 8d4e5bad-9dab-404d-944d-a98d98698b62
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

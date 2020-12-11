@@ -1,7 +1,6 @@
 ---
 title: Service metadata overview
 description: Service metadata overview
-ms.assetid: daf5db05-cf39-4ff2-a2f1-0ffd718c638e
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

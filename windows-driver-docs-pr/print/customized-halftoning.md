@@ -1,7 +1,6 @@
 ---
 title: Customized Halftoning
 description: Customized Halftoning
-ms.assetid: cc14ff92-743b-42ca-b70f-0df768762f01
 keywords:
 - Unidrv, halftoning
 - halftoning WDK Unidrv

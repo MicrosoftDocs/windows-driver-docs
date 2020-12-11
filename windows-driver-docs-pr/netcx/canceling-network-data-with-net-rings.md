@@ -1,7 +1,6 @@
 ---
 title: Canceling network data using net rings
 description: This topic describes how NetAdapterCx client drivers use net rings and net ring iterators to cancel network data.
-ms.assetid: 009CC1D7-5168-4D7B-9284-04F922D37434
 keywords:
 - NetAdapterCx Net rings and net ring iterators cancel, NetAdapterCx cancel packet queue
 ms.date: 11/01/2019

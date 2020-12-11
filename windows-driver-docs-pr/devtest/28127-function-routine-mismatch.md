@@ -1,7 +1,6 @@
 ---
 title: C28127
 description: Warning C28127 The function being used as a routine does not exactly match the type expected.
-ms.assetid: ae8f554b-c1e1-42a7-b1ad-c5554af25953
 keywords:
 - warnings listed WDK PREfast for Drivers
 - errors listed WDK PREfast for Drivers

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT
 description: The KSPROPERTY\_RTAUDIO\_REGISTER\_NOTIFICATION\_EVENT property registers a user-mode event for DMA-driven event notification.
-ms.assetid: 8fd5883a-ff86-4d27-af44-a82511c9e8eb
 keywords: ["KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT Audio Devices"]
 topic_type:
 - apiref

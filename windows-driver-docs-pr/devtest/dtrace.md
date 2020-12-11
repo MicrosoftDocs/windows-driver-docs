@@ -1,7 +1,6 @@
 ---
 title: DTrace on Windows
 description: DTrace is a command-line tool tool to display system information and events.
-ms.assetid: abf23d76-423d-4d1e-afde-83739015bbfe
 keywords:
 - DTrace WDK
 - software tracing WDK , DTrace

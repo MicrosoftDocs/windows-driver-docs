@@ -1,7 +1,6 @@
 ---
 title: Accessing the Preferred Device ID
 description: Accessing the Preferred Device ID
-ms.assetid: ef964ce5-8bcc-4ab0-9522-b05a8a6bdf74
 keywords:
 - preferred device IDs WDK audio
 - WDM audio extensions WDK , preferred device IDs

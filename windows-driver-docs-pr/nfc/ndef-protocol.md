@@ -1,7 +1,6 @@
 ---
 title: NDEF protocol
 description: NDEF protocol
-ms.assetid: 5AF082EC-70D6-4117-BFCE-B28A8DBAC210
 keywords:
 - NFC
 - near field communications
@@ -134,5 +133,4 @@ The driver MUST match subscriptions for “NDEF:Unknown” ONLY with NDEF messag
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

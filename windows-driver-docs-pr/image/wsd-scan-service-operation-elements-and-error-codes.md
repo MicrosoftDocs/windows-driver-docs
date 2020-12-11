@@ -1,7 +1,6 @@
 ---
 title: WSD Scan Service Operation Elements and Error Codes
 description: WSD Scan Service Operation Elements and Error Codes
-ms.assetid: c3dde1b9-fb81-4e33-8970-ec20bb83e13f
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

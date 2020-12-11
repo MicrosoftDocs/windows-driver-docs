@@ -1,7 +1,6 @@
 ---
 title: Determining an SPC's Cross-Certificate
 description: Determining an SPC's Cross-Certificate
-ms.assetid: e54c6c69-6b80-4a03-b4ff-e46d565a56d9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

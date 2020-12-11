@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OIS
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_OIS is a property ID that is used to control optical image stabilization (OIS) on the driver.
-ms.assetid: CF4F1283-1517-4F93-8554-FBD4B068A655
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_OIS Streaming Media Devices"]
 topic_type:
 - apiref

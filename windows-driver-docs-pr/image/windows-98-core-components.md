@@ -1,7 +1,6 @@
 ---
 title: Windows 98 Core Components
 description: Windows 98 Core Components
-ms.assetid: 59e2c077-c6f5-4965-891b-4601623ca47b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

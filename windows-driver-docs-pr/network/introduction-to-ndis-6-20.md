@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS 6.20
 description: Introduction to NDIS 6.20
-ms.assetid: a0a25173-5f57-4317-b963-20ba9bb3f95b
 keywords:
 - NDIS 6.20 WDK
 - NDIS 6.20 WDK , about

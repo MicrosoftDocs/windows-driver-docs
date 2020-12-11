@@ -1,7 +1,6 @@
 ---
 title: Supporting CMYK Color Space
 description: Supporting CMYK Color Space
-ms.assetid: b8ac5f1a-c903-4313-b7de-0335f4c44367
 keywords:
 - CMYK color space WDK print
 - BR_CMYKCOLOR

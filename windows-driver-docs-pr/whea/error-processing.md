@@ -1,7 +1,6 @@
 ---
 title: Error Processing
 description: Error Processing
-ms.assetid: d9cb2f62-1ccf-4ab6-b547-dc54f6d07820
 keywords:
 - Windows Hardware Error Architecture WDK , error processing
 - WHEA WDK , error processing

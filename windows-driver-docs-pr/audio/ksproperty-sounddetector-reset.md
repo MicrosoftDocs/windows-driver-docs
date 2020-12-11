@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_SOUNDDETECTOR\_RESET
 description: The KSPROPERTY\_SOUNDDETECTOR\_RESET property resets the detector to an unarmed state with no pattern set.
-ms.assetid: 3B9B43C0-31EE-4490-AD29-98DA81D1664D
 keywords: ["KSPROPERTY_SOUNDDETECTOR_RESET Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Fast User Switching
 description: Fast User Switching
-ms.assetid: 79e13d56-f71f-4a7d-9069-de4821d29d94
 keywords:
 - display driver model WDK Windows 2000 , Fast User Switching
 - Windows 2000 display driver model WDK , Fast User Switching

@@ -1,7 +1,6 @@
 ---
 title: SpbAccelerometer driver cookbook
 description: SpbAccelerometer driver cookbook
-ms.assetid: 3E7875E1-0810-4698-A5E1-7A4C6C366967
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

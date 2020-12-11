@@ -1,7 +1,6 @@
 ---
 title: GetActiveJobsResponse element
 description: The required GetActiveJobsResponse element returns a summary of job-related variables for all currently active scan jobs.
-ms.assetid: 77efef7f-451d-49f8-80c1-6ab12c98ee7b
 keywords: ["GetActiveJobsResponse element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Performance bottlenecks in a virtualized networking environment
 description: Potential Performance Bottlenecks in an NDIS Virtualized Networking Environment
-ms.assetid: D295E450-C8AF-43A9-B169-5387EB2A2CF0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

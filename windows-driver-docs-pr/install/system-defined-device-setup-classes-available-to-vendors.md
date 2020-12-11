@@ -1,10 +1,9 @@
 ---  
 title: System-Defined Device Setup Classes Available to Vendors  
 description: System-Defined Device Setup Classes Available to Vendors 
-ms.assetid: d4b8a964-f843-4960-9077-46746af27a61
 ms.date: 11/20/2020
 ms.localizationpriority: medium
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 ---  
 
 # System-Defined Device Setup Classes Available to Vendors  

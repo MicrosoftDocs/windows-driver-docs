@@ -1,7 +1,6 @@
 ---
 title: Forwarding Packets to Hyper-V Extensible Switch Ports
 description: Forwarding Packets to Hyper-V Extensible Switch Ports
-ms.assetid: C8DA9064-21EE-45F4-BE6D-D24851C5480B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: MRxShouldTryToCollapseThisOpen routine
 description: The MRxShouldTryToCollapseThisOpen routine is called by RDBSS to request that a network mini-redirector indicate if RDBSS should try and collapse an open request onto an existing file system object.
-ms.assetid: a68755c1-73f5-4134-b506-2a0163637a13
 keywords: ["MRxShouldTryToCollapseThisOpen routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

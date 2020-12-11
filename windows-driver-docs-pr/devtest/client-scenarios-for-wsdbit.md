@@ -1,7 +1,6 @@
 ---
 title: Client Scenarios for WSDBIT
 description: Client Scenarios for WSDBIT
-ms.assetid: fb692c83-b384-492d-84fb-10e00db9f30f
 keywords:
 - WSDBIT tool WDK , test scenarios
 - WSDAPI Basic Interoperability Tool WDK , test scenarios

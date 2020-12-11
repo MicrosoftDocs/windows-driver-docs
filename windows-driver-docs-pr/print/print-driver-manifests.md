@@ -1,7 +1,6 @@
 ---
 title: Print Driver Manifests
 description: Print Driver Manifests
-ms.assetid: fca0c211-1daa-4295-a03e-c0038b66a898
 keywords:
 - installing drivers WDK printer , manifests
 - printer driver installations WDK , manifests

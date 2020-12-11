@@ -1,7 +1,6 @@
 ---
 title: Defining the geolocation sensor as an object
 description: The sensors geolocation driver sample treats its simulated geolocation-sensor as an object.
-ms.assetid: CDAA93A1-9B20-4602-9A8A-A2C7CF52B576
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

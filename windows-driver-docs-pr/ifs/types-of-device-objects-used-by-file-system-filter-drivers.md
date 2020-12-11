@@ -1,7 +1,6 @@
 ---
 title: Types of Device Objects Used by File System Filter Drivers
 description: Types of Device Objects Used by File System Filter Drivers
-ms.assetid: e5662c95-71a0-49f8-a9d5-a03e2de1f426
 keywords:
 - target device objects WDK file system
 - filter device objects WDK file system

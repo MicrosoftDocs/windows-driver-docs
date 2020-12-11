@@ -1,7 +1,6 @@
 ---
 title: SRB\_OPEN\_MASTER\_CLOCK
 description: SRB\_OPEN\_MASTER\_CLOCK
-ms.assetid: 1ccad1bc-27e7-4038-b341-389240051fb8
 keywords: ["SRB_OPEN_MASTER_CLOCK Streaming Media Devices"]
 topic_type:
 - apiref

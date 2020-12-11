@@ -1,7 +1,6 @@
 ---
 title: HFP Device Removal
 description: The HFP device removal topic discusses what happens when a Bluetooth hands-free profile (HFP) device is removed from (leaves) the audio system.
-ms.assetid: 99B6C09E-2467-4124-9F9A-5116586BB38C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Setting Scissor Rectangle
 description: Setting Scissor Rectangle
-ms.assetid: e85b4987-26b7-4005-b8eb-81ca36a9a777
 keywords:
 - scissor rectangle WDK DirectX 9.0
 - rectangular clipping region WDK DirectX 9.0

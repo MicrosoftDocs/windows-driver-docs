@@ -1,7 +1,6 @@
 ---
 title: Writing Preoperation and Postoperation Callback Routines
 description: Writing Preoperation and Postoperation Callback Routines
-ms.assetid: ad706d01-7a14-4730-8189-c465637987dc
 keywords:
 - file system minifilter drivers WDK , preoperation callback routine
 - minifilter drivers WDK , preoperation callback routine

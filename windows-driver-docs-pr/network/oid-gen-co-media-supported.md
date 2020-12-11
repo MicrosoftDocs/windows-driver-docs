@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_MEDIA_SUPPORTED
 description: This topic describes the OID_GEN_CO_MEDIA_SUPPORTED object identifier (OID).
-ms.assetid: 688d5054-f92d-4054-bf6e-dcf43fcfeb06
 keywords:
 - OID_GEN_CO_MEDIA_SUPPORTED
 ms.date: 11/02/2017

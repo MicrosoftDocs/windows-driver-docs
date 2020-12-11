@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_LoopedStreaming
 description: KSEVENTSETID\_LoopedStreaming
-ms.assetid: 88baf1f0-d18f-4601-9ba3-fea957712cd6
 keywords: ["KSEVENTSETID_LoopedStreaming"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

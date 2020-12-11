@@ -1,7 +1,6 @@
 ---
 title: Get and Set the Stream State
 description: Get and Set the Stream State
-ms.assetid: e2fde528-d0cf-4ffe-945a-8672b76db61f
 keywords:
 - Avcstrm.sys streaming filter driver WDK , stream states
 - stream states WDK AV/C streaming

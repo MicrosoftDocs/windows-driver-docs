@@ -1,7 +1,6 @@
 ---
 title: Overview of the ACPI 4.0 Power Metering Objects
 description: Overview of the ACPI 4.0 Power Metering Objects
-ms.assetid: 91488b88-bbdc-40e9-9095-2ea3fb7d69ad
 keywords:
 - Power Metering and Budgeting WDK , ACPI 4.0 power metering objects
 - ACPI 4.0 Power Metering objects WDK

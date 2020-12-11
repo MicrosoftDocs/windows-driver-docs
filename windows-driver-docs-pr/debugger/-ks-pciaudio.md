@@ -1,7 +1,6 @@
 ---
 title: ks.pciaudio
 description: The ks.pciaudio extension displays a list of FDOs currently attached to PortCls.
-ms.assetid: 30d74f14-1cff-4b18-996a-8c91c20edebe
 keywords: ["ks.pciaudio Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

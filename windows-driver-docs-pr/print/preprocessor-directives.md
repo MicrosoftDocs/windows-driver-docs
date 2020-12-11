@@ -1,7 +1,6 @@
 ---
 title: Preprocessor Directives
 description: Preprocessor Directives
-ms.assetid: 5731b159-c6f9-47a8-8eaa-a1b0b6c12132
 keywords:
 - GPD file entries WDK Unidrv , preprocessor directives
 - preprocessor directives WDK GPD files

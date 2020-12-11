@@ -1,7 +1,6 @@
 ---
 title: FSCTL_GET_RETRIEVAL_POINTER_BASE control code
 description: The FSCTL\_GET\_RETRIEVAL\_POINTER\_BASE returns the sector offset to the first logical cluster number (LCN) of the file system relative to the start of the volume.
-ms.assetid: 2c342e58-ef9a-487a-beb9-4353dcbc8115
 keywords: ["FSCTL_GET_RETRIEVAL_POINTER_BASE control code Installable File System Drivers"]
 topic_type:
 - apiref

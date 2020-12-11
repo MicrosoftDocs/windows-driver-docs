@@ -1,7 +1,6 @@
 ---
 title: HP-GL/2 Monochrome (PCL-5e) Vector Graphics Support
 description: HP-GL/2 Monochrome (PCL-5e) Vector Graphics Support
-ms.assetid: 00a8704c-c7aa-4ecd-9c99-03ef6c75574d
 keywords:
 - vector graphics WDK Unidrv , HP-GL/2 monochrome
 - HP-GL/2 monochrome WDK Unidrv

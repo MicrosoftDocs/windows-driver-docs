@@ -1,7 +1,6 @@
 ---
 title: Installing IEEE 1394 Device Drivers
 description: Installing IEEE 1394 Device Drivers
-ms.assetid: 3f99bec7-e657-4de7-bce4-36a779cc0442
 keywords:
 - IEEE 1394 WDK buses , driver installations
 - 1394 WDK buses , driver installations

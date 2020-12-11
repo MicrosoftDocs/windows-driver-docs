@@ -1,7 +1,6 @@
 ---
 title: Master Units
 description: Master Units
-ms.assetid: 6c3abf16-1206-4b90-a7e9-c8a581191502
 keywords:
 - GPD files WDK Unidrv , master units
 - master units WDK GPD files

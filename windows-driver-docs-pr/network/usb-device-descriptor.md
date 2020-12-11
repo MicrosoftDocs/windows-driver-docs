@@ -1,7 +1,6 @@
 ---
 title: USB Device Descriptor
 description: USB Device Descriptor
-ms.assetid: ef2a3e43-0e55-4e8e-ad86-efcbe153c847
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

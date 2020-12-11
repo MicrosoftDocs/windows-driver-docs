@@ -1,7 +1,6 @@
 ---
 title: USB-Specific UMDF 1.x Interfaces
 description: USB-Specific UMDF 1.x Interfaces
-ms.assetid: b458d96d-e15e-4a9b-a26e-490620cec38e
 keywords:
 - UMDF WDK , UMDF-USB object model
 - User-Mode Driver Framework WDK , UMDF-USB object model
@@ -20,7 +19,7 @@ A USB device can have one or more configurations. Each configuration can have on
 
 A pipe is a software abstraction of a connection between the host controller and an endpoint in the current alternate setting. A pipe can be a target for I/O, and is exposed in UMDF by the [IWDFUsbTargetPipe](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe) interface.
 
-The USB-specific UMDF interfaces are built on top of the [WinUSB](/windows-hardware/drivers/ddi/index) architecture. By design, WinUSB allows access only to the first configuration of a multiple configuration device. Therefore, the WinUSB interface does not expose the ability to submit a select-configuration request. Consequently, the I/O target functionality in UMDF does not support selecting any device configuration other than the first.
+The USB-specific UMDF interfaces are built on top of the [WinUSB](/windows-hardware/drivers/usbcon/winusb) architecture. By design, WinUSB allows access only to the first configuration of a multiple configuration device. Therefore, the WinUSB interface does not expose the ability to submit a select-configuration request. Consequently, the I/O target functionality in UMDF does not support selecting any device configuration other than the first.
 
 The USB-specific UMDF interfaces have an object hierarchy that is similar to that of the general USB model. A UMDF driver creates a target device object, which is exposed by the [IWDFUsbTargetDevice](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetdevice) interface. The driver can then use methods of IWDFUsbTargetDevice to access USB interfaces, which are exposed by instances of [IWDFUsbInterface](/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbinterface). The driver can call IWDFUsbInterface methods to manipulate settings and endpoints.
 

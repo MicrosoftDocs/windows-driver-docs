@@ -1,11 +1,10 @@
 ---
 title: Static Tools and CodeQL
 description: Using Static tools and CodeQL on Windows driver source code to discover and repair any issues that are deemed Must-Fix
-ms.assetid: 134a5889-8ab9-4954-a10f-ac6fbafcd207
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 12/03/2020
+ms.date: 12/10/2020
 ms.localizationpriority: medium
 ---
 
@@ -25,7 +24,7 @@ This topic describes how to:
 
 > [!IMPORTANT]
 > This information is preliminary and will be updated as the query rule set distribution is finalized.
-> 
+>
 
 ## Concepts for CodeQL
 
@@ -50,9 +49,9 @@ We will use the [CodeQL command line tools (CLI)](https://help.semmle.com/codeql
 C:\> mkdir C:\codeql-home
 ```
 
-2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/tag/v2.3.2)
-3. Download the appropriate zip file. For example for 64 bit Windows "codeql-win64.zip".
-4. Unzip the downloaded zip file to a directory, for example,  C:\codeql-home\codeql-win64
+2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/)
+3. Download the latest version of the zip file. For example for 64 bit Windows "codeql-win64.zip".
+4. Unzip the downloaded zip file to a directory, for example,  `C:\codeql-home\codeql-win64`.
 5. Confirm that the CodeCL command works by displaying the help.
 
 ```command
@@ -93,7 +92,7 @@ C:\codeql-home\>git clone https://github.com/github/codeql.git
 
 > [!NOTE]
 > Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.
-> Step 3 from the instructions above will be updated in the near future to specify a repository that contains a query suite with only driver-relevant queries
+> Step 2 from the instructions above will be updated in the near future to specify a repository that contains a query suite with only driver-relevant queries.
 
 This page assumes a Windows development environment and that the repository will be installed under *C:\codeql-home*.
 
@@ -144,6 +143,17 @@ This example uses this argument to find and build the driver project. The msbuil
 ```command
 msbuild /t:rebuild "C:\codeql-home\drivers\kmdf\kmdfecho.sln"
 ```
+
+## Summary of directory locations
+
+At this point in our example setup, the following directories will be present.
+
+| Description            | Location                           |
+|------------------------|------------------------------------|
+| Codeql.exe             | C:\codeql-home\codeql-win64\codeql |
+| C++ Rules              | C:\codeql-home\codeql\cpp          |
+| Databases              | C:\codeql-home\databases           |
+| Driver code under test | C:\codeql-home\drivers\kmdf        |
 
 ## Perform Analysis
 
@@ -201,6 +211,24 @@ You can specify a timeout for the entire operation with the *"–timeout=[second
 Currently, the command above demonstrates how to run only one query, *"TooFewArguments.ql"*.  It is possible to run multiple queries at once by listing all queries sequentially in one command.  
 
 In the near future, a driver specific *query suite* which contains all relevant driver queries will be provided. For more information, see [query suites](https://help.semmle.com/codeql/codeql-cli/procedures/query-suites.html).
+
+## Troubleshooting
+
+For database version mismatches issues, the following tools may be helpful.
+
+Use the codeql version command to display the version of the codeql exe.
+
+```command
+C:\codeql-home\codeql-win64\codeql>codeql version
+CodeQL command-line toolchain release 2.4.0.
+Copyright (C) 2019-2020 GitHub, Inc.
+Unpacked in: C:\codeql-home\codeql-win64\codeql
+   Analysis results depend critically on separately distributed query and
+   extractor modules. To list modules that are visible to the toolchain,
+   use 'codeql resolve qlpacks' and 'codeql resolve languages'.
+```
+
+The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://help.semmle.com/codeql/codeql-cli/commands/database-upgrade.html).
 
 ## Queries
 

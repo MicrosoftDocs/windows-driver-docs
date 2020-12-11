@@ -1,7 +1,6 @@
 ---
 title: Print Capabilities Architecture
 description: Print Capabilities Architecture
-ms.assetid: d19438ca-8c88-4835-8445-2799387e0912
 keywords:
 - Print Capabilities WDK , architecture
 ms.date: 04/20/2017

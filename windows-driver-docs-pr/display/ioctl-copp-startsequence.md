@@ -1,7 +1,6 @@
 ---
 title: IOCTL\_COPP\_StartSequence control code
 description: Sets the current video session to protected mode.
-ms.assetid: a28e22d0-b54d-45d2-b32c-b0d96960a8a2
 keywords: ["IOCTL_COPP_StartSequence control code Display Devices"]
 topic_type:
 - apiref

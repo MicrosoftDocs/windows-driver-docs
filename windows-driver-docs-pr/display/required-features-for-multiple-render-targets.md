@@ -1,7 +1,6 @@
 ---
 title: Required Features for Multiple Render Targets
 description: Required Features for Multiple Render Targets
-ms.assetid: fa807bde-8c3b-4ba8-b899-cdcd0b8d2458
 keywords:
 - rendering multiple targets WDK DirectX 9.0 , required features
 - multiple render targets WDK DirectX 9.0 , required features

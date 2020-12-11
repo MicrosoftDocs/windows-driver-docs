@@ -1,7 +1,6 @@
 ---
 title: Using Interrupt Resource Descriptors
 description: Using Interrupt Resource Descriptors
-ms.assetid: 0e9aa9a1-c1aa-42e1-9c0b-a91a2424ad1a
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

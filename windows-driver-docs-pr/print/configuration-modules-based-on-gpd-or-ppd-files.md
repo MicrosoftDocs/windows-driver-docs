@@ -1,7 +1,6 @@
 ---
 title: Configuration Modules Based on GPD or PPD Files
 description: Configuration Modules Based on GPD or PPD Files
-ms.assetid: b0aeea58-1c58-475e-8d4a-597778e42a7c
 keywords:
 - Version 3 XPS drivers WDK XPSDrv , GPD files
 - Version 3 XPS drivers WDK XPSDrv , PPD files

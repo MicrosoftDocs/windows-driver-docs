@@ -1,7 +1,6 @@
 ---
 title: Pipelines for Direct3D Version 11
 description: Pipelines for Direct3D Version 11
-ms.assetid: 7d724751-761e-409c-8398-d1b5d58c057c
 keywords:
 - Direct3D version 11 WDK Windows 7 display , pipelines for
 - Direct3D version 11 WDK Windows Server 2008 R2 display , pipelines for

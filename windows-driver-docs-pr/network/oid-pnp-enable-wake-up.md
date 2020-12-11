@@ -1,7 +1,6 @@
 ---
 title: OID_PNP_ENABLE_WAKE_UP
 description: OID_PNP_ENABLE_WAKE_UP
-ms.assetid: 9afe774b-a429-413f-a7b6-3a3d79d2b95f
 ms.date: 08/08/2017
 keywords: 
  -OID_PNP_ENABLE_WAKE_UP Network Drivers Starting with Windows Vista

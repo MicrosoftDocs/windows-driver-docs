@@ -1,7 +1,6 @@
 ---
 title: Handling PnP Events and Power Management Events in an Intermediate Driver
 description: Handling PnP Events and Power Management Events in an Intermediate Driver
-ms.assetid: 0b4cf76f-a31d-4cf6-8486-090393404af9
 keywords:
 - intermediate drivers WDK networking , events
 - NDIS intermediate drivers WDK , events

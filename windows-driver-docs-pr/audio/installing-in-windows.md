@@ -1,7 +1,6 @@
 ---
 title: Installing in Windows
 description: Installing in Windows
-ms.assetid: 790caffd-ebb0-4ba1-b31c-b03d3c83bc59
 keywords:
 - audio adapters WDK , system components
 - adapter drivers WDK audio , system components

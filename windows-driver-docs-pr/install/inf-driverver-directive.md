@@ -1,7 +1,6 @@
 ---
 title: INF DriverVer Directive
 description: A DriverVer directive specifies version information for drivers installed by this INF.
-ms.assetid: b8c17839-a027-4fb6-b017-8e9a3fd0d694
 keywords:
 - INF DriverVer Directive Device and Driver Installation
 topic_type:

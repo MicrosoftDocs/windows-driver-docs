@@ -1,7 +1,6 @@
 ---
 title: Full-Screen-Mode Behavior
 description: Full-Screen-Mode Behavior
-ms.assetid: 43e7fec0-4e4d-401c-80c7-3e0710313214
 keywords:
 - full-screen rotation WDK display
 ms.date: 04/20/2017

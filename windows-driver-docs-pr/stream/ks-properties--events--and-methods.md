@@ -1,7 +1,6 @@
 ---
 title: KS Properties, Events, and Methods
 description: KS Properties, Events, and Methods
-ms.assetid: 933bbe81-92d8-4bcc-b935-9ae929464ca1
 keywords:
 - kernel streaming WDK , properties
 - KS properties WDK kernel streaming

@@ -1,7 +1,6 @@
 ---
 title: Handling Protection Levels with OPM
 description: Handling Protection Levels with OPM
-ms.assetid: 2d3e5d07-8d6f-44fb-985a-96990538ed29
 keywords:
 - protection levels WDK display , types of
 - protection levels WDK display , ACP

@@ -1,7 +1,6 @@
 ---
 title: Supplying Video Substream and Destination Surfaces
 description: Supplying Video Substream and Destination Surfaces
-ms.assetid: 53528c49-11d1-4e53-b700-f6d8d760bcfe
 keywords:
 - DeinterlaceBltEx, destination surfaces
 - DeinterlaceBltEx, substream surfaces

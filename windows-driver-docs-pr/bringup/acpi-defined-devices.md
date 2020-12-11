@@ -1,7 +1,6 @@
 ---
 title: ACPI-defined devices
 description: The ACPI 5.0 specification defines a number of device types to represent and control typical platform features.
-ms.assetid: 10BD17C9-E8FE-41E0-BD8C-E622B60E6BB6
 ms.date: 08/25/2020
 ms.localizationpriority: medium
 ---

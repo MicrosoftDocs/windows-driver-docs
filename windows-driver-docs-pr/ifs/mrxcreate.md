@@ -1,7 +1,6 @@
 ---
 title: MRxCreate routine
 description: TheMRxCreate routine is called by RDBSS to request that the network mini-redirector create a file system object.
-ms.assetid: d1b664cf-37b6-4c65-8634-21695af2db21
 keywords: ["MRxCreate routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

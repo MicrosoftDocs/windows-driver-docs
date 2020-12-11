@@ -1,7 +1,6 @@
 ---
 title: Enforcing a Secure Read For a HID Collection
 description: Enforcing a Secure Read For a HID Collection
-ms.assetid: be3c7d1b-195c-4b7f-a404-070b3b265333
 keywords:
 - collections WDK HID , secure reads
 - HID collections WDK , secure reads

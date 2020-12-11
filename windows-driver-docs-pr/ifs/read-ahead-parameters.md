@@ -1,7 +1,6 @@
 ---
 title: Read ahead parameters
 description: read-ahead parameters for  read-ahead granularity and pipelined read-ahead.
-ms.assetid:
 keywords: ["read-ahead parameters"]
 topic_type:
 - apiref

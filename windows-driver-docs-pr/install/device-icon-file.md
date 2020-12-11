@@ -1,7 +1,6 @@
 ---
 title: Device Icon File
 description: Device Icon File
-ms.assetid: bd1272d5-f673-4138-887d-94653cf41829
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

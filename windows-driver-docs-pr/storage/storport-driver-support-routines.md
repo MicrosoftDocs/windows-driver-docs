@@ -1,7 +1,6 @@
 ---
 title: Storport driver support routines
 description: Learn about the Storport driver routines, such as direct memory access and I/O request processing support routines.
-ms.assetid: 15f20a83-43cc-40d4-8fa6-031affca5ee2
 keywords:
 - Storport driver support routines
 - storage WDK

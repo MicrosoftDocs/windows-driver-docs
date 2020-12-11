@@ -1,7 +1,6 @@
 ---
 title: Multiple-Component Device, one or more Functional Power States
 description: Supporting Multiple-Component Devices with Single or Multiple Functional Power States
-ms.assetid: D601A0F6-A035-4161-879A-D495518E7EC6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ When the driver calls [*PoFxRegisterDevice*](/windows-hardware/drivers/ddi/wdfde
 -   [Reporting Device Powered On When System Returns to S0](reporting-device-powered-on.md)
 -   [Supporting Idle Power-Down on Multiple-Component Devices](supporting-idle-power-down-on-multiple-component-devices.md)
 
-In addition, the driver can call [power framework routines](/windows-hardware/drivers/ddi/index) directly to send power control requests and specify latency, residency, and wake requirements.
+In addition, the driver can call [power framework routines](/windows-hardware/drivers/ddi/_kernel/#power-management-routines) directly to send power control requests and specify latency, residency, and wake requirements.
 
 For more information about PoFx, see [Overview of the Power Management Framework](../kernel/overview-of-the-power-management-framework.md).
 

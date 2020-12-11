@@ -1,7 +1,6 @@
 ---
 title: SD Card Driver Stack
 description: SD Card Driver Stack
-ms.assetid: 196739bb-530f-4a60-98a0-ece0b4c5ef34
 keywords:
 - SD WDK buses , driver stacks
 - driver stacks WDK SD bus

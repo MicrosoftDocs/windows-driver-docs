@@ -1,7 +1,6 @@
 ---
 title: Setting and Clearing a Communication Mode for a Parallel Device
 description: Setting and Clearing a Communication Mode for a Parallel Device
-ms.assetid: 2ff53ed0-dbb7-4c8f-b6e4-5f7d20124a7c
 keywords:
 - parallel devices WDK , communication modes
 - communication modes WDK parallel devices

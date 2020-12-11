@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_IO_CONTROL
 description: Handling SRB_FUNCTION_IO_CONTROL
-ms.assetid: 92d09a49-d8e8-4d97-b334-c42d5b04ee8d
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo

@@ -1,7 +1,6 @@
 ---
 title: Extended Blt Flags
 description: Extended Blt Flags
-ms.assetid: 9c2f7013-dd58-4a61-b452-d263f5caf0d0
 keywords:
 - extended blt flags WDK DirectX 9.0
 - DDBLT_EXTENDED_FLAGS

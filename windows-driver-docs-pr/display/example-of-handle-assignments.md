@@ -1,7 +1,6 @@
 ---
 title: Example of Handle Assignments
 description: Example of Handle Assignments
-ms.assetid: 44239e13-ebe7-48c4-83b2-40f603dc1c98
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , handle assignments
 ms.date: 04/20/2017

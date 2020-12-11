@@ -1,7 +1,6 @@
 ---
 title: Device paging queues
 description: Various services exposed by the video memory manager can take a non-trivial amount of time to finish.
-ms.assetid: AF79ED24-1CE5-4F12-A345-8554AD29057F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

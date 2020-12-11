@@ -1,7 +1,6 @@
 ---
 title: Using Debugger Command Programs
 description: Using Debugger Command Programs
-ms.assetid: b73b1b4a-601f-4027-a511-6f96e9dc9504
 keywords: ["debugger command program", "debugger command program, operation"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

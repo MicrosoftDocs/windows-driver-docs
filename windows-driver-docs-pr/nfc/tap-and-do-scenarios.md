@@ -1,7 +1,6 @@
 ---
 title: Tap and Do scenarios
 description: Tap and Do scenarios
-ms.assetid: EBBDBC58-236A-4020-92C9-69406362097F
 keywords:
 - NFC
 - near field communications
@@ -42,4 +41,4 @@ See [Tap and Do Use Cases](tap-and-do-use-cases.md) for and explanation of vario
 
 [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
 
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

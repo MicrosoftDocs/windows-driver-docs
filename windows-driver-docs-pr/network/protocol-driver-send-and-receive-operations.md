@@ -1,7 +1,6 @@
 ---
 title: Protocol Driver Send and Receive Operations
 description: Protocol Driver Send and Receive Operations
-ms.assetid: c621d673-167e-41e1-a121-68e0d0bc6f8a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

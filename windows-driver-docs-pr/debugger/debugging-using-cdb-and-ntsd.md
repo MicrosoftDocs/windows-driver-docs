@@ -1,7 +1,6 @@
 ---
 title: Debugging Using CDB and NTSD
 description: This section describes how to perform basic debugging tasks using the Microsoft Console Debugger (CDB) and Microsoft NT Symbolic Debugger (NTSD).
-ms.assetid: 770D8A69-9B0C-4745-B7E8-D461760C851B
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

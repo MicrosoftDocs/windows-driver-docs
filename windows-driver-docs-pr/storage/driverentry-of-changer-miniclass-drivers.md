@@ -1,7 +1,6 @@
 ---
 title: DriverEntry of Changer Miniclass Drivers routine
 description: In Microsoft Windows 2000, changer miniclass drivers do not have a DriverEntry routine, but in Windows XP and later operating systems a miniclass driver must have a DriverEntry routine with the following characteristics.
-ms.assetid: f7954e15-f995-44da-92fd-979248c69553
 keywords: ["DriverEntry routine Storage Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.GetEndpointStallState
 description: EFI_USBFN_IO_PROTOCOL.GetEndpointStallState
-ms.assetid: abf53ee7-8460-4861-a82d-827ad1dc6c40
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

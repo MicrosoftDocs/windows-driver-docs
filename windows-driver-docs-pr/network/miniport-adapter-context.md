@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter Context
 description: Miniport Adapter Context
-ms.assetid: cb43d02d-cf52-46a4-b56d-aa3afcbd0ca5
 keywords:
 - logical adapters WDK networking
 - context WDK miniport adapter

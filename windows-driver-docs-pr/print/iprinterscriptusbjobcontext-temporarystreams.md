@@ -4,7 +4,6 @@ description: Returns an array of IPrinterScriptableSequentialStream interfaces f
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: ED9AFB90-287B-4030-AC20-ECCA9841D27E
 keywords: ["TemporaryStreams method Print Devices", "TemporaryStreams method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , TemporaryStreams method"]
 topic_type:
 - apiref

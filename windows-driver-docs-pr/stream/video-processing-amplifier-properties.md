@@ -1,7 +1,6 @@
 ---
 title: Video Processing Amplifier Properties
 description: Video Processing Amplifier Properties
-ms.assetid: 1adc4fcc-c9a2-41a8-90db-1030ba7c257f
 keywords:
 - video processing amplifier properties WDK video capture
 - amplification properties WDK video capture

@@ -1,7 +1,6 @@
 ---
 title: MetadataKey
 description: MetadataKey
-ms.assetid: 1915db47-98bb-40f5-be3b-75e9af80f506
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

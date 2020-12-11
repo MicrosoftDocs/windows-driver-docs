@@ -1,7 +1,6 @@
 ---
 title: Determining Whether a Leak Exists
 description: Determining Whether a Leak Exists
-ms.assetid: a29db56e-6507-48f4-ad30-eb0a849f8673
 keywords: ["memory leak, detection"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

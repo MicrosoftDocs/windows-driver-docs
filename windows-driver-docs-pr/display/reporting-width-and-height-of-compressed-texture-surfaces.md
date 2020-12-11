@@ -1,7 +1,6 @@
 ---
 title: Reporting Width and Height of Compressed Texture Surfaces
 description: Reporting Width and Height of Compressed Texture Surfaces
-ms.assetid: 262262b6-9fef-4f28-beec-373f78a10f8f
 keywords:
 - surfaces WDK DirectDraw , compressed textures
 - textures WDK DirectDraw , compressed

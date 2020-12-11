@@ -1,7 +1,6 @@
 ---
 title: Loading Highlight Data
 description: Loading Highlight Data
-ms.assetid: d893fdbe-847d-45a7-b2b2-62da505c8aeb
 keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading

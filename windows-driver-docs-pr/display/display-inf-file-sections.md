@@ -1,7 +1,6 @@
 ---
 title: Display INF File Sections
 description: Display INF File Sections
-ms.assetid: 2075a10f-a504-4bdc-8112-9c583c5084bb
 keywords:
 - sideband addressing WDK Windows 2000 display
 - AGP transfer rates WDK Windows 2000 display

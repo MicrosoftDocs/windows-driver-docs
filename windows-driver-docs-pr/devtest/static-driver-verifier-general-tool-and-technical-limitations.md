@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier General Tool and Technical Limitations
 description: Static Driver Verifier General Tool and Technical Limitations
-ms.assetid: d263dee5-2408-4772-96d7-d1895a445fab
 keywords:
 - Static Driver Verifier WDK , limitations
 - StaticDV WDK , limitations

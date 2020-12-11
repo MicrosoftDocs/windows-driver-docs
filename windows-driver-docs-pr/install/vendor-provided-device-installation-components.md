@@ -1,7 +1,6 @@
 ---
 title: Vendor-Provided Device Installation Components
 description: Vendor-Provided Device Installation Components
-ms.assetid: d86bdf75-9726-4b44-8753-7e9c19e88a61
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

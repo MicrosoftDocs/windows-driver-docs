@@ -1,7 +1,6 @@
 ---
 title: PKEY\_FX\_KeywordDetector\_EndpointEffectClsid
 description: In Windows 10 and later, the PKEY\_FX\_KeywordDetector\_EndpointEffectClsid property key identifies the keyword detector end point effect (EFX) in place.
-ms.assetid: 2D776DB4-A317-4097-B188-65CA495D0F89
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

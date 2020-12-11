@@ -1,7 +1,6 @@
 ---
 title: requestOpen element
 description: The requestOpen element is used to open an event notification message on the client computer.
-ms.assetid: c1797295-9aca-4986-bd9d-482bb7049942
 keywords: ["requestOpen element Print Devices"]
 topic_type:
 - apiref

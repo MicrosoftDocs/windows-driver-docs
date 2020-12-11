@@ -1,7 +1,6 @@
 ---
 title: Video Port Driver Support for Bug Check Callbacks
 description: Video Port Driver Support for Bug Check Callbacks
-ms.assetid: 181fd4f2-feed-4759-80a7-aec97b9094b3
 keywords:
 - video miniport drivers WDK Windows 2000 , bug check callbacks
 - bug check callbacks WDK video miniport

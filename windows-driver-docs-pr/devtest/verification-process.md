@@ -1,7 +1,6 @@
 ---
 title: Verification Process
 description: Verification Process
-ms.assetid: 3803771b-94ef-4e02-9d08-8703283b3f99
 keywords:
 - Static Driver Verifier WDK , verification process
 - StaticDV WDK , verification process
@@ -30,7 +29,7 @@ During the **Scan** step, SDV scans your driver's code for function role type de
 
 ### <span id="check"></span><span id="CHECK"></span>Check
 
-During the **Check** step, SDV prepares for and verifies the driver by using the rules that you selected for the verification. For more information about the rules that you can select, see [Static Driver Verifier Rules](/windows-hardware/drivers/ddi/index).
+During the **Check** step, SDV prepares for and verifies the driver by using the rules that you selected for the verification. For more information about the rules that you can select, see [Static Driver Verifier Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules).
 
 SDV begins by determining if the selected rules require additional components of the operating system model. If they do, SDV copies the additional operating system model files into the driver's sources directory.
 

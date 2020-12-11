@@ -1,7 +1,6 @@
 ---
 title: Specifics for waveOut Clients
 description: Specifics for waveOut Clients
-ms.assetid: e2cfc59a-0c36-4b57-99e2-b7bed503bc12
 keywords:
 - waveOut non-PCM wave formats WDK audio
 - non-PCM audio formats WDK , waveOut

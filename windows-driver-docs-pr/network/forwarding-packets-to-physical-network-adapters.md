@@ -1,7 +1,6 @@
 ---
 title: Forwarding Packets to Physical Network Adapters
 description: Forwarding Packets to Physical Network Adapters
-ms.assetid: 14A78DB2-6643-471D-97B9-4D8524EC3E73
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_WAVE\_INPUT\_CAPABILITIES
 description: The KSPROPERTY\_WAVE\_INPUT\_CAPABILITIES property returns a wave device's input capabilities.
-ms.assetid: 84ed0f41-52b6-40e0-b334-c336e158cbfc
 keywords: ["KSPROPERTY_WAVE_INPUT_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref

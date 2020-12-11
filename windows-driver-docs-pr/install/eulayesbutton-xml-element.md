@@ -1,7 +1,6 @@
 ---
 title: eulaYesButton XML Element
 description: eulaYesButton XML Element
-ms.assetid: 7d91d3ec-af0a-4b6a-83d8-fa14a527378b
 keywords: ["eulaYesButton XML Element Device and Driver Installation"]
 topic_type:
 - apiref

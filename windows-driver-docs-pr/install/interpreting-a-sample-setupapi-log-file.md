@@ -1,7 +1,6 @@
 ---
 title: Interpreting a Sample SetupAPI Log File
 description: Interpreting a Sample SetupAPI Log File
-ms.assetid: 86bef34e-1ff3-4777-9b7c-0f08645ff89f
 keywords:
 - sample logs WDK SetupAPI
 ms.date: 04/20/2017

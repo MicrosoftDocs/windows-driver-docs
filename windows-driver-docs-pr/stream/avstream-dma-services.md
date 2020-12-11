@@ -1,7 +1,6 @@
 ---
 title: AVStream DMA Services
 description: AVStream DMA Services
-ms.assetid: ba1c525b-26b0-4778-b58b-f4169cfb972e
 keywords:
 - AVStream WDK , hardware
 - hardware WDK AVStream

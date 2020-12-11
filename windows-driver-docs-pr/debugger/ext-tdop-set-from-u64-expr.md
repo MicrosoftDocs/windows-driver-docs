@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_SET\_FROM\_U64\_EXPR
 description: The EXT\_TDOP\_SET\_FROM\_U64\_EXPR sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSIRequest operation returns a typed data description that represents the value of an expression.
-ms.assetid: 3d0007f8-09c7-4333-a1f0-090918c9f8fa
 keywords: ["EXT_TDOP_SET_FROM_U64_EXPR Windows Debugging"]
 topic_type:
 - apiref

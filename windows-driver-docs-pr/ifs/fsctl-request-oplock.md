@@ -1,7 +1,6 @@
 ---
 title: FSCTL_REQUEST_OPLOCK control code
 description: The FSCTL\_REQUEST\_OPLOCK control code requests an opportunistic lock (oplock) on a file, or acknowledges that an oplock break has occurred.
-ms.assetid: a36f2a13-d450-4903-b999-6ba574ab3f6e
 keywords: ["FSCTL_REQUEST_OPLOCK control code Installable File System Drivers"]
 topic_type:
 - apiref

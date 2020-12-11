@@ -1,7 +1,6 @@
 ---
 title: Overview of the Windows I/O Model
 description: Overview of the Windows I/O Model
-ms.assetid: 17a012b7-946e-4f42-8d80-e270bc26de06
 keywords: ["IRPs WDK kernel , about Windows I/O model", "Windows I/O model WDK", "I/O WDK kernel , model"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

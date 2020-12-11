@@ -1,7 +1,6 @@
 ---
 title: Virtual Machine Network Adapters
 description: Virtual Machine Network Adapters
-ms.assetid: 8A2A708C-AB43-4D9F-A7CB-2AC4438BCD54
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

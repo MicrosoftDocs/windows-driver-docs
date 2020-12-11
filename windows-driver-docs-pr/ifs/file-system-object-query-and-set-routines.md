@@ -1,7 +1,6 @@
 ---
 title: File System Object Query and Set Routines
 description: File System Object Query and Set Routines
-ms.assetid: 34b97a6e-a155-443c-94dd-4d8f1fc4b430
 keywords:
 - mini-redirectors WDK , query operations
 - mini-redirectors WDK , set operations

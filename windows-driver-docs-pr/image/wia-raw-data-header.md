@@ -1,7 +1,6 @@
 ---
 title: WIA RAW Data Header
 description: WIA RAW Data Header
-ms.assetid: a2cb3835-7879-4f69-9784-9487df40730a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

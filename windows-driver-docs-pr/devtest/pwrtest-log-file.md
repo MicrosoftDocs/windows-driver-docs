@@ -1,7 +1,6 @@
 ---
 title: PwrTest Log File
 description: PwrTest Log File
-ms.assetid: f4782b27-25e0-4ec3-bf0b-82a614815f90
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

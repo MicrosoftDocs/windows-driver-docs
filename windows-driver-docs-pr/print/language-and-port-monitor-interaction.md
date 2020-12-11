@@ -1,7 +1,6 @@
 ---
 title: Language and Port Monitor Interaction
 description: Language and Port Monitor Interaction
-ms.assetid: 6c3c55fc-40f3-43d7-b8a2-20fed8d28813
 keywords:
 - print monitors WDK , language monitors
 - print monitors WDK , port monitors

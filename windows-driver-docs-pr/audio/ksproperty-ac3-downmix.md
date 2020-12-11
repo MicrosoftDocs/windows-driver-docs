@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AC3\_DOWNMIX
 description: The KSPROPERTY\_AC3\_DOWNMIX property specifies whether the program channels in an AC-3-encoded stream need to be downmixed to accommodate the speaker configuration.
-ms.assetid: 1d47f890-f7da-423f-adef-72b06a0f79d8
 keywords: ["KSPROPERTY_AC3_DOWNMIX Audio Devices"]
 topic_type:
 - apiref

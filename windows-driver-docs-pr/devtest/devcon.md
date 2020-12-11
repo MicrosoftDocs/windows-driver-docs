@@ -1,7 +1,6 @@
 ---
 title: Windows Device Console (Devcon.exe)
 description: DevCon (Devcon.exe), the Device Console, is a command-line tool that displays detailed information about devices on computers running Windows.
-ms.assetid: ac74200e-e2ae-40db-9fb7-5ea2e7760613
 keywords:
 - DevCon WDK
 - Device Console WDK

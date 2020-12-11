@@ -1,7 +1,6 @@
 ---
 title: MB base stations information query support
 description: MB base stations information query support
-ms.assetid: 200954a6-0f6c-4c00-86cb-510399f7b713
 keywords:
 - MB base stations information query, Mobile Broadband base stations information query
 ms.date: 08/14/2017

@@ -1,7 +1,6 @@
 ---
 title: SetupAPI Logging (Windows Server 2003, Windows XP, Windows 2000)
 description: SetupAPI Logging (Windows Server 2003, Windows XP, and Windows 2000)
-ms.assetid: 5b35fad3-09d6-4b2f-9831-661fe69f2f99
 keywords:
 - SetupAPI WDK device installations , logging
 - logging WDK SetupAPI

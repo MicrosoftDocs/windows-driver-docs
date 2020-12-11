@@ -1,7 +1,6 @@
 ---
 title: INF AddInterface Directive
 description: One or more AddInterface directives can be specified within an INF DDInstall.Interfaces section.
-ms.assetid: 9bd3e051-51f9-4624-802b-b841b25d6616
 keywords:
 - INF AddInterface Directive Device and Driver Installation
 topic_type:

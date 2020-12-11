@@ -1,7 +1,6 @@
 ---
 title: Media Validation
 description: Media Validation
-ms.assetid: 609ac09b-88be-49a6-8b87-9fd453c21446
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , media validation

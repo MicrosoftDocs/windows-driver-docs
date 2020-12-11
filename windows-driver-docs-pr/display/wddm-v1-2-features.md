@@ -1,7 +1,6 @@
 ---
 title: WDDM 1.2 features
 description: This topic describes the Windows Display Driver Model (WDDM) Version 1.2 feature set, which includes several new enhancements that improve performance, reliability, and the overall end-user experience.
-ms.assetid: 65072545-76F0-43A8-9E46-703CA99BFE90
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

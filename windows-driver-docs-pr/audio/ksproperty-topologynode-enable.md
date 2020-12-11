@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGYNODE\_ENABLE
 description: The KSPROPERTY\_TOPOLOGYNODE\_ENABLE property is used to turn on or off the topology nodes in an already built topology.
-ms.assetid: 6b9f7a92-97dc-476b-962a-40ccf1987154
 keywords: ["KSPROPERTY_TOPOLOGYNODE_ENABLE Audio Devices"]
 topic_type:
 - apiref

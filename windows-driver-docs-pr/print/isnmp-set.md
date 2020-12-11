@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 7eac82e7-3f19-4eda-8706-eac6aa2b8dae
 keywords: ["Set method Print Devices", "Set method Print Devices , ISNMP interface", "ISNMP interface Print Devices , Set method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Edit Display Selected Type
 description: Edit Display Selected Type
-ms.assetid: 45073276-df6c-47d4-b614-acd4437f5b73
 keywords: ["Edit Display Selected Type", "data types, Edit Display Selected Type"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

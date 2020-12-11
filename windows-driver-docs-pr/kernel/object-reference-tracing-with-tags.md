@@ -1,7 +1,6 @@
 ---
 title: Object Reference Tracing with Tags
 description: Object Reference Tracing with Tags
-ms.assetid: f6c3d7b2-09b1-4055-b066-cce8831efab2
 keywords: ["object referencing with tags WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

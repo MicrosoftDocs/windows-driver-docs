@@ -1,7 +1,6 @@
 ---
 title: Deregistering a Network Interface
 description: Deregistering a Network Interface
-ms.assetid: 8d290a6a-008d-434b-bcbf-c4efade3d017
 keywords:
 - NDIS network interfaces WDK , deregistering
 - network interfaces WDK , deregistering

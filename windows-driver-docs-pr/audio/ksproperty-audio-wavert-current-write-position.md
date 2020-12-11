@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION
 description: The KSPROPERTY\_AUDIO\_WAVERT\_CURRENT\_WRITE\_POSITION property request specifies the current write position of the WaveRT buffer in bytes. The offload driver can use this write position information to know how much valid data is in the WaveRT buffer.
-ms.assetid: 05C62E23-2460-4E92-BEE8-08D31A8BFD86
 keywords: ["KSPROPERTY_AUDIO_WAVERT_CURRENT_WRITE_POSITION Audio Devices"]
 topic_type:
 - apiref

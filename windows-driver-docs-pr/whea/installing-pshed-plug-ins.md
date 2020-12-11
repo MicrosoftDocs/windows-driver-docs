@@ -1,7 +1,6 @@
 ---
 title: Installing PSHED Plug-Ins
 description: Installing PSHED Plug-Ins
-ms.assetid: a7f75bc0-b87a-42fa-bc46-f68b3dc31d2d
 keywords:
 - PSHED plug-ins WDK WHEA , installing
 - platform-specific hardware error driver plug-ins WDK WHEA , installing

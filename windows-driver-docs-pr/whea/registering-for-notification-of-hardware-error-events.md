@@ -1,7 +1,6 @@
 ---
 title: Registering for Notification of Hardware Error Events
 description: Registering for Notification of Hardware Error Events
-ms.assetid: 86816fc7-fa69-4ecf-9d50-822b0fa6992d
 keywords:
 - events WDK WHEA , registering for notifications
 - registering hardware event notifications

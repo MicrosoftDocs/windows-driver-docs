@@ -1,7 +1,6 @@
 ---
 title: Review the hotspot authentication sample
 description: Review the hotspot authentication sample
-ms.assetid: 8ff2ed49-489e-4865-9eb5-0739c4e7a627
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

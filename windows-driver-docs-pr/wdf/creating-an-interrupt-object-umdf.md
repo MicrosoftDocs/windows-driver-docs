@@ -1,7 +1,6 @@
 ---
 title: Creating an Interrupt Object (UMDF 1)
 description: Creating an Interrupt Object
-ms.assetid: D281F2E8-3ADA-4F4E-B345-CE72FA3C69EC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

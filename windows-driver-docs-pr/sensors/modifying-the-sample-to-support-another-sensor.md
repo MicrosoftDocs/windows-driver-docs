@@ -1,7 +1,6 @@
 ---
 title: Modify the sample to support another sensor
 description: Modify the sample to support another sensor
-ms.assetid: E759E022-C1E6-4403-B3DC-82A269E04B93
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

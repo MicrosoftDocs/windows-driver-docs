@@ -1,7 +1,6 @@
 ---
 title: NFP message subscriptions
 description: NFP message subscriptions
-ms.assetid: ECE9C495-978F-4BD7-95BC-B68432F9B81E
 keywords:
 - NFC
 - near field communications
@@ -122,5 +121,4 @@ The driver MUST accept and report duplicate subscriptions, even if subscribed by
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

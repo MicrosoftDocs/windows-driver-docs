@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FT_MDE
 description: WDI_TLV_FT_MDE is a TLV that contains the MDIE of a BSS entry.
-ms.assetid: 2D075487-9B1E-4DEE-B3C3-3208C1CBAB64
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_MDE Network Drivers Starting with Windows Vista

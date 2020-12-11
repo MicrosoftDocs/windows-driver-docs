@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_UINumberDescFormat
 description: DEVPKEY_Device_UINumberDescFormat
-ms.assetid: 6720b35e-a65b-4935-8010-aef53e3951e9
 keywords: ["DEVPKEY_Device_UINumberDescFormat Device and Driver Installation"]
 topic_type:
 - apiref

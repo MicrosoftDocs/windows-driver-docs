@@ -1,7 +1,6 @@
 ---
 title: Driver Verifier What's New
 description: Driver Verifier is available in all versions of Windows starting with Windows 2000. Each version introduces new features and checks for finding bugs in Windows drivers. This section summarizes the changes and provides links to related documentation.
-ms.assetid: EAC30108-F8A2-4914-9218-2E0672982B7E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,10 +26,10 @@ ms.localizationpriority: medium
 
 Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
 
-* New [Rules for Audio Drivers](/windows-hardware/drivers/ddi/index)
-* New [Rules for AVStream Drivers](/windows-hardware/drivers/ddi/index)
-* Four new [Rules for KMDF Drivers](/windows-hardware/drivers/ddi/index)
-* Three new [Rules for NDIS Drivers](/windows-hardware/drivers/ddi/index)
+* New [Rules for Audio Drivers](/windows-hardware/drivers/devtest/rules-for-audio-drivers)
+* New [Rules for AVStream Drivers](/windows-hardware/drivers/devtest/rules-for-avstream-drivers)
+* Four new [Rules for KMDF Drivers](/windows-hardware/drivers/devtest/sdv-rules-for-kmdf-drivers)
+* Three new [Rules for NDIS Drivers](/windows-hardware/drivers/devtest/sdv-rules-for-ndis-drivers)
 
 ## Driver Verifier in Windows 8-1 (*Updated: June 17, 2013*)
 

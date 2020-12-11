@@ -1,7 +1,6 @@
 ---
 title: Installing Legacy COM Ports
 description: Installing Legacy COM Ports
-ms.assetid: 9cf2a22c-fb4e-4f15-8410-021d2b4f2ce1
 keywords:
 - legacy COM ports WDK serial devices
 ms.date: 04/20/2017

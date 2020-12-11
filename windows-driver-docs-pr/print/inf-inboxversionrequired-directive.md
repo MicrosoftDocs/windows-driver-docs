@@ -1,7 +1,6 @@
 ---
 title: INF InboxVersionRequired Directive
 description: INF InboxVersionRequired Directive
-ms.assetid: 75a07ca7-d279-4815-b644-10b58753f885
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

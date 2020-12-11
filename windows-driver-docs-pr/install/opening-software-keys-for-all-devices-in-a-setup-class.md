@@ -1,7 +1,6 @@
 ---
 title: Opening Software Keys for All Devices in a Setup Class
 description: Opening Software Keys for All Devices in a Setup Class
-ms.assetid: B601982E-FCD6-4932-813C-A68B2F15FC5C
 keywords:
 - software keys WDK device installations , opening for all devices in a setup class
 - setup classes WDK device installations , opening software keys for devices

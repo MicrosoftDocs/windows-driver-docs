@@ -1,7 +1,6 @@
 ---
 title: Debug Kernel Connection Resynchronize
 description: Debug Kernel Connection Resynchronize
-ms.assetid: b388dd9e-8d5c-4e29-8e81-a2be7c95437c
 keywords: ["Debug Kernel Connection Resynchronize", "synchronizing with the target computer, Debug Kernel Connection Resynchronize"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

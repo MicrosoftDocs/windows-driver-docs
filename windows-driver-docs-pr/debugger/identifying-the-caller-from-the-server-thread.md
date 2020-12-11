@@ -1,7 +1,6 @@
 ---
 title: Identifying the Caller From the Server Thread
 description: Identifying the Caller From the Server Thread
-ms.assetid: d19dc242-1043-4e61-9fcb-eadac0ab63c8
 keywords: ["RPC debugging, identifying the caller"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

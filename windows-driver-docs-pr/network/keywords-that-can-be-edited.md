@@ -1,7 +1,6 @@
 ---
 title: Keywords That Can Be Edited
 description: Keywords That Can Be Edited
-ms.assetid: 88c3a285-941a-4c91-9e61-25c445d07344
 keywords:
 - installation keywords WDK networking , editing
 - editing installation keywords

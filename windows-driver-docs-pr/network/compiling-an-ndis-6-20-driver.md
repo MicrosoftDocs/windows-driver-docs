@@ -1,7 +1,6 @@
 ---
 title: Compiling an NDIS 6.20 driver
 description: This section explains how to compile an NDIS 6.20 driver
-ms.assetid: 07940d98-63fb-4629-943c-f56ebdfcdd76
 keywords:
 - NDIS 6.20 WDK , compiling a driver
 - compiling an NDIS 6.20 driver WDK

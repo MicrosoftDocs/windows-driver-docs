@@ -1,7 +1,6 @@
 ---
 title: Introduction to Point and Print
 description: Introduction to Point and Print
-ms.assetid: 03902c64-29d7-4b59-a604-e282e4a2c7ae
 keywords:
 - Point and Print WDK , about Point and Print
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Defining I/O Control Codes
 description: Defining I/O Control Codes
-ms.assetid: 967b0199-e9a0-4c8d-9130-c81436c59ca3
 keywords: ["I/O control codes WDK kernel , defining", "control codes WDK IOCTLs , defining", "IOCTLs WDK kernel , defining", "CTL_CODE macro", "IOCTLs WDK user-mode", "user-mode components WDK IOCTLs", "I/O control codes WDK user-mode", "control codes WDK user-mode", "layouts WDK IOCTLs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

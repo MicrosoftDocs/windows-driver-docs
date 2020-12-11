@@ -1,7 +1,6 @@
 ---
 title: Basic Installation Operations
 description: Basic Installation Operations
-ms.assetid: 9bf1a3e1-6c2a-4f8c-8694-6e859a73d9a6
 keywords:
 - SetupAPI functions WDK , basic installation operations
 - device installation functions WDK SetupAPI

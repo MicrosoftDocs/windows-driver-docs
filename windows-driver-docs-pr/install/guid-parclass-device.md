@@ -1,7 +1,6 @@
 ---
 title: GUID_PARCLASS_DEVICE
 description: GUID_PARCLASS_DEVICE
-ms.assetid: ce2c312f-4af3-464b-995f-e5907830a7dc
 keywords: ["GUID_PARCLASS_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref

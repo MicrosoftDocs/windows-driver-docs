@@ -1,7 +1,6 @@
 ---
 title: IrqlExApcLte3 rule (wdm)
 description: The IrqlExApcLte3 rule specifies that the driver calls the following executive support routines only at IRQL APC_LEVEL.
-ms.assetid: 80668699-dfca-4fb9-8ffe-d20be00542dc
 ms.date: 05/21/2018
 keywords: ["IrqlExApcLte3 rule (wdm)"]
 topic_type:

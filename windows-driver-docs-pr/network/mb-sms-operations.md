@@ -1,7 +1,6 @@
 ---
 title: MB SMS Operations
 description: MB SMS Operations
-ms.assetid: 9a21495c-ec3d-4277-b880-dbf5b081814a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

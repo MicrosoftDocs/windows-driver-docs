@@ -1,7 +1,6 @@
 ---
 title: Query Implemented Functions (Function Index 0)
 description: This function returns the functions supported by this interface version.
-ms.assetid: AFF735D7-BB3F-4532-8BF4-F616C081921C
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

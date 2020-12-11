@@ -1,7 +1,6 @@
 ---
 title: Power-Down and Removal Sequence for a Bus Driver
 description: Power-Down and Removal Sequence for a Bus Driver
-ms.assetid: 71397945-D9DB-43E2-AE06-548684F72B63
 ms.date: 03/28/2019
 ms.localizationpriority: medium
 ---

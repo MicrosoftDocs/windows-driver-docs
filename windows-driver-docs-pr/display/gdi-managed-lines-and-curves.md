@@ -1,7 +1,6 @@
 ---
 title: GDI-Managed Lines and Curves
 description: GDI-Managed Lines and Curves
-ms.assetid: 1a7625ec-6994-488c-a722-cf436a83e213
 keywords:
 - GDI WDK Windows 2000 display , rendering engine
 - graphics drivers WDK Windows 2000 display , rendering engine

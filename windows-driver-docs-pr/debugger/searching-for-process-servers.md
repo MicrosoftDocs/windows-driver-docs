@@ -1,7 +1,6 @@
 ---
 title: Searching for Process Servers
 description: You can use KD or CDB with the -QR command-line option to obtain a list of available process servers that are running on a network server computer.
-ms.assetid: 2f0cd4df-f18a-4222-ab90-7aba0f177eff
 keywords: ["Searching for Process Servers Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

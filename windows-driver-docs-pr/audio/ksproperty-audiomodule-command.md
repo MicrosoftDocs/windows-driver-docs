@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOMODULE\_COMMAND
 description: The KSPROPERTY\_AUDIOMODULE\_COMMAND property is a command property used to get and set buffers and instructions on the hardware (pin handle) or software cache (filter handle).
-ms.assetid: 90C69481-A3DF-4801-8733-C417950880E5
 keywords: ["KSPROPERTY_AUDIOMODULE_COMMAND Audio Devices"]
 topic_type:
 - apiref

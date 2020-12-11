@@ -1,7 +1,6 @@
 ---
 title: Drawing Lines and Curves
 description: Drawing Lines and Curves
-ms.assetid: 0816fb69-7811-4319-b050-00ded21a10d4
 keywords:
 - lines WDK GDI
 - GDI WDK Windows 2000 display , lines

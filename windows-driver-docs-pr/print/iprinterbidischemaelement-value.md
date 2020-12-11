@@ -4,7 +4,6 @@ description: The Value method returns the Bidi Schema element value.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: F989AFEF-795D-4C1A-880D-58CBC2D2B021
 keywords: ["Value method Print Devices", "Value method Print Devices , IPrinterBidiSchemaElement interface", "IPrinterBidiSchemaElement interface Print Devices , Value method"]
 topic_type:
 - apiref

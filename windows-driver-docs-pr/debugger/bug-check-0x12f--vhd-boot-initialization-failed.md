@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x12F VHD_BOOT_INITIALIZATION_FAILED
 description: The VHD_BOOT_INITIALIZATION_FAILED bug check has a value of 0x0000012F. This indicates that an initialization failure occurred while attempting to boot from a VHD.
-ms.assetid: CC4CD97B-FCBA-4B73-AB9E-D56387D4CB07
 keywords: ["Bug Check 0x12F VHD_BOOT_INITIALIZATION_FAILED", "VHD_BOOT_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:

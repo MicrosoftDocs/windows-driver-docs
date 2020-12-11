@@ -1,7 +1,6 @@
 ---
 title: LastModifiedDate
 description: LastModifiedDate
-ms.assetid: e0ef7ca0-0c3d-4e71-af2e-ead90013e561
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

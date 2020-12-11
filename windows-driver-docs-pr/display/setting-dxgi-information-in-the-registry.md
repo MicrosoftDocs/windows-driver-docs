@@ -1,7 +1,6 @@
 ---
 title: Setting DXGI Information in the Registry
 description: Setting DXGI Information in the Registry
-ms.assetid: 2d116c89-02dd-4104-be75-70a00fa5e06a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR
 description: The WHEA_UNCORRECTABLE_ERROR bug check has a value of 0x00000124. This bug check indicates that a fatal hardware error has occurred. 
-ms.assetid: b3b7c6dd-3891-4ccb-96d1-49e8a2de34c8
 keywords: ["Bug Check 0x124 WHEA_UNCORRECTABLE_ERROR", "WHEA_UNCORRECTABLE_ERROR"]
 ms.date: 05/23/2017
 topic_type:

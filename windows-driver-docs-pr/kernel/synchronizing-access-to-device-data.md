@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Access to Device Data
 description: Synchronizing Access to Device Data
-ms.assetid: aaed8006-6773-4d20-b3a0-b48131f728c6
 keywords: ["interrupt service routines WDK kernel , synchronization", "ISRs WDK kernel , synchronization", "interrupt objects WDK kernel , synchronization", "synchronization WDK kernel , interrupts", "single interrupt vectors WDK kernel", "critical section routines WDK kernel", "interrupt spin locks WDK kernel", "spin locks WDK kernel", "synchronization WDK kernel , device data access", "SynchCritSection", "SynchronizeIrql", "SpinLock parameter"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

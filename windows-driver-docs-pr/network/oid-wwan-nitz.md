@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_NITZ
 description: OID_WWAN_NITZ is used to query the current network time with Network Identity and Time Zone (NITZ).
-ms.assetid: 5AC5842E-CBD1-47E0-88D2-D3F58CC6F142
 ms.date: 04/11/2019
 keywords: 
 - OID_WWAN_NITZ Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_PIDFILTER\_UNMAP\_PIDS
 description: Clients use KSPROPERTY\_BDA\_PIDFILTER\_UNMAP\_PIDS to inform the PID filter node about packets identified with specific PIDs to filter from the input stream (that is, stop passing from input to output).
-ms.assetid: 111d8857-84f4-4a7f-8771-ea6537c4c592
 keywords: ["KSPROPERTY_BDA_PIDFILTER_UNMAP_PIDS Streaming Media Devices"]
 topic_type:
 - apiref

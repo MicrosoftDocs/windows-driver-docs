@@ -1,7 +1,6 @@
 ---
 title: Global and Local Options Files
 description: Global and Local Options Files
-ms.assetid: 9b367e9f-f711-4b76-b331-7563edebb79c
 keywords:
 - options files WDK Static Driver Verifier
 - global options files WDK Static Driver Verifier

@@ -1,7 +1,6 @@
 ---
 title: New DP2 Stream Drawing Tokens
 description: New DP2 Stream Drawing Tokens
-ms.assetid: 09f3e5a4-60ed-4649-a30b-de4b320a54de
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , DP2 drawing tokens
 - DP2 drawing tokens WDK DirectX 8.0

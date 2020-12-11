@@ -1,7 +1,6 @@
 ---
 title: Scanner Storage Architecture
 description: Scanner Storage Architecture
-ms.assetid: 90b2367f-c611-47c6-bd60-4125bd7ca709
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

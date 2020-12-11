@@ -1,7 +1,6 @@
 ---
 title: Shading Requirements
 description: Shading Requirements
-ms.assetid: 6c4f3dee-a955-4140-8b64-e9289094f530
 keywords:
 - shading WDK Direct3D
 - flat shading WDK Direct3D

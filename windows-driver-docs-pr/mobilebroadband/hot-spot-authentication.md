@@ -1,7 +1,6 @@
 ---
 title: Hot spot authentication
 description: Hot spot authentication
-ms.assetid: 6de07795-1ddb-43ff-97d9-b3a938d5a149
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

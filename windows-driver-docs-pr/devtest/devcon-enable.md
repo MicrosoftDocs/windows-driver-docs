@@ -1,7 +1,6 @@
 ---
 title: DevCon Enable
 description: Enables devices on the computer. Valid only on the local computer.To enable a device means that the device driver is loaded into memory and the device is ready for use.
-ms.assetid: 2fb2cb9b-ba37-4946-b78b-0cd2aaaadcb4
 keywords:
 - DevCon Enable Driver Development Tools
 topic_type:

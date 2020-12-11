@@ -1,7 +1,6 @@
 ---
 title: PSHED Plug-In Installation
 description: PSHED Plug-In Installation
-ms.assetid: 0c84c7c1-f976-4731-9f2b-46a95186eb18
 keywords:
 - Windows Hardware Error Architecture WDK , installing platform-specific hardware error driver plug-ins
 - WHEA WDK , installing platform-specific hardware error driver plug-ins

@@ -1,7 +1,6 @@
 ---
 title: SysTray and SndVol32
 description: SysTray and SndVol32
-ms.assetid: 53f8c5be-d0a5-4364-8fac-813cf9f8318c
 keywords:
 - SysTray WDK audio
 - SndVol32 WDK audio

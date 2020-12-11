@@ -1,7 +1,6 @@
 ---
 title: diskspace
 description: The diskspace extension displays the amount of free space on a hard disk of the target computer.
-ms.assetid: 9153cdc0-addf-4804-a898-1e4280ac60ea
 keywords: ["diskspace Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

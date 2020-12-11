@@ -1,7 +1,6 @@
 ---
 title: Reporting Wake Reason Status Indication Capabilities
 description: Reporting Wake Reason Status Indication Capabilities
-ms.assetid: A72D04F7-EB09-4B1B-9AF5-7FEBC2514CE9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

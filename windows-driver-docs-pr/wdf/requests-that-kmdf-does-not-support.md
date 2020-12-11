@@ -1,7 +1,6 @@
 ---
 title: Requests That KMDF Does Not Support
 description: Requests That KMDF Does Not Support
-ms.assetid: 1C23BD32-FD55-4D35-B23D-0B320E3DEDF3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

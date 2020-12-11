@@ -1,7 +1,6 @@
 ---
 title: Handling Protection Levels
 description: Handling Protection Levels
-ms.assetid: d8237a48-9e1c-4b9e-8f55-70820ff08460
 keywords:
 - copy protection WDK COPP , protection levels
 - video copy protection WDK COPP , protection levels

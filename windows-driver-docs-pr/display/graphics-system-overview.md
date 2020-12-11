@@ -1,7 +1,6 @@
 ---
 title: Graphics System Overview
 description: Graphics System Overview
-ms.assetid: d120a9df-d8ed-4862-b421-2e7545be1ed0
 keywords:
 - GDI WDK Windows 2000 display , about graphics system
 - graphics drivers WDK Windows 2000 display , about graphics system

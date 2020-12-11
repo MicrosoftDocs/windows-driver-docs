@@ -1,7 +1,6 @@
 ---
 title: Creating Device Objects in a Filter Driver
 description: Creating Device Objects in a Filter Driver
-ms.assetid: f5a4851d-7caf-467d-9500-11f341fdf680
 keywords:
 - PnP WDK KMDF , filter drivers
 - Plug and Play WDK KMDF , filter drivers

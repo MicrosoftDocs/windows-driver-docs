@@ -1,7 +1,6 @@
 ---
 title: DXGKDDI\_CREATEALLOCATION2 callback function
 description: The DxgkDdiCreateAllocation2 function is reserved for system use. Do not implement it in your driver.
-ms.assetid: c22e176e-cde5-4edf-8f53-1d7874c7d5da
 keywords: ["DxgkDdiCreateAllocation2 callback function Display Devices", "DXGKDDI_CREATEALLOCATION2"]
 topic_type:
 - apiref

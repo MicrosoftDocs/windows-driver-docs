@@ -1,7 +1,6 @@
 ---
 title: Styled Cosmetic Lines
 description: Styled Cosmetic Lines
-ms.assetid: 07e72190-7c8e-471e-9851-ccc037312c5c
 keywords:
 - lines WDK GDI , styled cosmetic
 - GDI WDK Windows 2000 display , lines, styled cosmetic

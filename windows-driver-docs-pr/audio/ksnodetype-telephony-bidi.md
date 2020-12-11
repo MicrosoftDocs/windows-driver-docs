@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_TELEPHONY\_BIDI
 description: The KSNODETYPE\_TELEPHONY\_BIDI node represents both sides (bi-directional) of a phone call.
-ms.assetid: 748AC39F-0C15-44A3-BF7B-109A1CB7D145
 keywords: ["KSNODETYPE_TELEPHONY_BIDI Audio Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOTHUMBNAIL
 description: This property gets or sets the thumbnail capability for the camera.
-ms.assetid: 859620FD-02ED-4AA1-83B7-B92517F23B0C
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOTHUMBNAIL Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Attaching the WSK Client to the WSK Subsystem
 description: Attaching the WSK Client to the WSK Subsystem
-ms.assetid: 752d204f-3022-48b0-9237-707b753a7ad3
 keywords:
 - Network Module Registrar WDK Winsock Kernel
 - NMR WDK Winsock Kernel

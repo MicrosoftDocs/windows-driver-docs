@@ -1,7 +1,6 @@
 ---
 title: Handling Multiple Locks
 description: Handling Multiple Locks
-ms.assetid: d62b9577-d78f-431d-a5bf-c06c9be345c0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

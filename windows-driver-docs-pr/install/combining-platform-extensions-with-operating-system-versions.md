@@ -1,7 +1,6 @@
 ---
 title: Combining Platform Extensions with Operating System Versions
 description: Combining Platform Extensions with Operating System Versions
-ms.assetid: ef3b7138-b68a-4dba-b011-fcb93e3072a3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Range Based Fog
 description: Range Based Fog
-ms.assetid: 6410dd21-bb9d-4985-a765-03898d9b5d0b
 keywords:
 - range-based fog WDK Direct3D
 - fogging WDK Direct3D

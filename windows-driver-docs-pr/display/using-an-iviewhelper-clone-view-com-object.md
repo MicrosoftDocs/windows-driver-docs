@@ -1,7 +1,6 @@
 ---
 title: Using an IViewHelper Clone-View COM Object
 description: Using an IViewHelper Clone-View COM Object
-ms.assetid: 2f264c5d-0e12-4116-9561-16dce99ce1fe
 keywords:
 - TMM WDK display , about IViewHelper
 - monitor configurations WDK display , about IViewHelper

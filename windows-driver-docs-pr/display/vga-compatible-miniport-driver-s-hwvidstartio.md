@@ -1,7 +1,6 @@
 ---
 title: VGA-Compatible Miniport Driver's HwVidStartIO
 description: VGA-Compatible Miniport Driver's HwVidStartIO
-ms.assetid: e5a81f87-b220-4497-aed3-8c4d08504340
 keywords:
 - video miniport drivers WDK Windows 2000 , VGA, HwVidStartIO
 - VGA WDK video miniport , HwVidStartIO

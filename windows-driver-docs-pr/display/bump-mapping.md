@@ -1,7 +1,6 @@
 ---
 title: Bump Mapping
 description: Bump Mapping
-ms.assetid: 38c7da06-cfe6-4285-8958-3d1eb22b1bcd
 keywords:
 - Direct3D WDK Windows 2000 display , bump mapping
 - bump mapping WDK Direct3D
