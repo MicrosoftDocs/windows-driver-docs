@@ -17,7 +17,7 @@ The OID\_PNP\_ADD\_WAKE\_UP\_PATTERN OID is sent by a protocol driver to a minip
 
 A protocol that enables pattern-match wake-up for a miniport driver (see [OID\_PNP\_ENABLE\_WAKE\_UP](oid-pnp-enable-wake-up.md)) uses OID\_PNP\_ADD\_WAKE\_UP\_PATTERN to specify a wake-up pattern. The wake-up pattern can be stored in host memory or on the network adapter, depending on the capabilities of the network adapter.
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains the following:
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains the following:
 
 -   An [**NDIS\_PM\_PACKET\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_packet_pattern) structure that provides information about the pattern and its mask.
 

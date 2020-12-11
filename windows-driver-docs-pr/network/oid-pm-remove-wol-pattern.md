@@ -10,14 +10,14 @@ ms.localizationpriority: medium
 # OID\_PM\_REMOVE\_WOL\_PATTERN
 
 
-As a set, NDIS and protocol drivers use the OID\_PM\_REMOVE\_WOL\_PATTERN OID to remove a power management wake on LAN (WOL) pattern from a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a ULONG pattern identifier.
+As a set, NDIS and protocol drivers use the OID\_PM\_REMOVE\_WOL\_PATTERN OID to remove a power management wake on LAN (WOL) pattern from a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a ULONG pattern identifier.
 
 Remarks
 -------
 
 NDIS and protocol drivers use OID\_PM\_REMOVE\_WOL\_PATTERN to remove a wake on LAN (WOL) pattern from the underlying network adapter.
 
-The **DATA.SET\_INFORMATION.InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure must point to a ULONG value for a previously added WOL pattern identifier. NDIS set this pattern identifier in the **PatternId** member of the [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure when NDIS sent the prior [OID\_PM\_ADD\_WOL\_PATTERN](oid-pm-add-wol-pattern.md) OID request to the underlying network adapter.
+The **DATA.SET\_INFORMATION.InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure must point to a ULONG value for a previously added WOL pattern identifier. NDIS set this pattern identifier in the **PatternId** member of the [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure when NDIS sent the prior [OID\_PM\_ADD\_WOL\_PATTERN](oid-pm-add-wol-pattern.md) OID request to the underlying network adapter.
 
 ### Return Status Codes
 
@@ -84,7 +84,7 @@ NDIS returns one of the following status codes for this request:
 </tr>
 <tr class="even">
 <td><p><strong>NDIS_STATUS_INVALID_LENGTH</strong></p></td>
-<td><p>The information buffer is too small. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
+<td><p>The information buffer is too small. NDIS sets the <strong>DATA.SET_INFORMATION.BytesNeeded</strong> member in the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request" data-raw-source="[&lt;strong&gt;NDIS_OID_REQUEST&lt;/strong&gt;](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)"><strong>NDIS_OID_REQUEST</strong></a> structure to the minimum buffer size that is required.</p></td>
 </tr>
 </tbody>
 </table>
@@ -114,7 +114,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern)
 

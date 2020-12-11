@@ -73,8 +73,8 @@ The following data structures are new in NDIS 6.50.
 The following data structures were updated in NDIS 6.50.
 
 - [NET_PNP_EVENT_NOTIFICATION](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification)
-- [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
-- [NDIS_NET_BUFFER_LIST_INFO](/windows-hardware/drivers/ddi/ndis/ne-ndis-_ndis_net_buffer_list_info)
+- [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
+- [NDIS_NET_BUFFER_LIST_INFO](/windows-hardware/drivers/ddi/nblinfo/ne-nblinfo-ndis_net_buffer_list_info)
 - [NdisMGetDeviceProperty](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismgetdeviceproperty)
 - [NDIS_SWITCH_OPTIONAL_HANDLERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_optional_handlers)
 - [NDIS_SWITCH_NIC_SAVE_STATE](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_nic_save_state)

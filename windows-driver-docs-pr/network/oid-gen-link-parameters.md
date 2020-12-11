@@ -39,7 +39,7 @@ The NDIS\_LINK\_PARAMETERS structure is defined as follows:
 This structure contains the following members:
 
 <a href="" id="header"></a>**Header**  
-The [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header) structure for the NDIS\_LINK\_PARAMETERS structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_LINK\_PARAMETERS\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_LINK\_PARAMETERS\_REVISION\_1.
+The [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header) structure for the NDIS\_LINK\_PARAMETERS structure. Set the **Type** member of the structure that **Header** specifies to NDIS\_OBJECT\_TYPE\_DEFAULT, the **Revision** member to NDIS\_LINK\_PARAMETERS\_REVISION\_1, and the **Size** member to NDIS\_SIZEOF\_LINK\_PARAMETERS\_REVISION\_1.
 
 <a href="" id="mediaduplexstate"></a>**MediaDuplexState**  
 The media duplex state. This value is the same as the value that is returned by the [OID\_GEN\_MEDIA\_DUPLEX\_STATE](oid-gen-media-duplex-state.md) OID.
@@ -108,7 +108,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header)
+[**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header)
 
 [**NDIS\_STATUS\_LINK\_STATE**](./ndis-status-link-state.md)
 

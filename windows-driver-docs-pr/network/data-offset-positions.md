@@ -20,7 +20,7 @@ When the filter engine calls a callout driver's [classifyFn](/windows-hardware/d
 > [!NOTE]
 > The *layerData* parameter might be NULL, depending on the layer being filtered and the conditions under which the driver's [classifyFn](/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn0) callout function is called.
  
-The [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure contains a linked list of [NET_BUFFER](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures. Within the [NET_BUFFER_DATA](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_data) structure of each **NET_BUFFER** structure, the **DataOffset** member points to a specific position in the packet data. The position that the **DataOffset** member points to depends on the filtering layer at which the filter engine calls the callout driver's *classifyFn* callout function. 
+The [NET_BUFFER_LIST](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure contains a linked list of [NET_BUFFER](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures. Within the [NET_BUFFER_DATA](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data) structure of each **NET_BUFFER** structure, the **DataOffset** member points to a specific position in the packet data. The position that the **DataOffset** member points to depends on the filtering layer at which the filter engine calls the callout driver's *classifyFn* callout function. 
 
 For each filtering layer, the position in the packet data as specified by the **DataOffset** member is defined as follows:
 

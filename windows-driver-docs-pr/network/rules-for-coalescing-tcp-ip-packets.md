@@ -110,7 +110,7 @@ When indicating a coalesced segment, the following out-of-band information must 
 
 The **DupAckCount** and **RscTcpTimestampDelta** members are interpreted if and only if the **CoalescedSegCount** member is greater than zero. If the **CoalescedSegCount** is zero, the segment is treated as a non-coalesced non-RSC segment.
 
-For information about the contents of the **NetBufferListInfo** member, see [**NDIS\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ne-ndis-_ndis_net_buffer_list_info) and [**NDIS\_RSC\_NBL\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_rsc_nbl_info).
+For information about the contents of the **NetBufferListInfo** member, see [**NDIS\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblinfo/ne-nblinfo-ndis_net_buffer_list_info) and [**NDIS\_RSC\_NBL\_INFO**](/windows-hardware/drivers/ddi/nblrsc/ns-nblrsc-ndis_rsc_nbl_info).
 
 The PSH bit should be ORed for all coalesced segments. In other words, if the PSH bit was set in any of the individual segments, the miniport driver should set the PSH bit in the SCU.
 

@@ -20,7 +20,7 @@ An *upper-layer protocol* is an IP transport protocol such as TCP, UDP, or ICMP.
 
  
 
-If a NIC splits an Ethernet frame at the beginning of the upper-layer-protocol header, the indicated [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) must contain exactly two MDLs. The buffer that the first MDL describes must begin with the first byte of the Ethernet frame (MAC header) and the buffer that the second MDL describes must start with the first byte of the upper-layer-protocol header.
+If a NIC splits an Ethernet frame at the beginning of the upper-layer-protocol header, the indicated [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) must contain exactly two MDLs. The buffer that the first MDL describes must begin with the first byte of the Ethernet frame (MAC header) and the buffer that the second MDL describes must start with the first byte of the upper-layer-protocol header.
 
 **Note**  The NIC can split TCP and UDP frames at the TCP or UDP payload. For more information, see [Splitting Frames at the TCP Payload](splitting-frames-at-the-tcp-payload.md) and [Splitting Frames at the UDP Payload](splitting-frames-at-the-udp-payload.md).
 

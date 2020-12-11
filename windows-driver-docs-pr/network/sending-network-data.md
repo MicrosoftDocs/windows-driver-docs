@@ -26,7 +26,7 @@ All NET\_BUFFER-based send operations are asynchronous. The miniport driver call
 
 Protocol drivers can reclaim the ownership of the NET\_BUFFER\_LIST structures and all associated structures and data as soon as the NDIS calls the protocol driver's *ProtocolSendNetBufferListsComplete* function.
 
-The miniport driver or NDIS can return the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures in any order. Protocol drivers are guaranteed that the list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures attached to each NET\_BUFFER\_LIST structure has not been modified.
+The miniport driver or NDIS can return the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures in any order. Protocol drivers are guaranteed that the list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures attached to each NET\_BUFFER\_LIST structure has not been modified.
 
 Any NDIS driver can separate the NET\_BUFFER structures in a NET\_BUFFER\_LIST structure. Any NDIS driver can also separate the MDLs in a NET\_BUFFER structure. However, the driver must always return the NET\_BUFFER\_LIST structures with the NET\_BUFFER structures and MDLs in the original form. For example, an intermediate driver might separate a NET\_BUFFER\_LIST into two new NET\_BUFFER\_LIST structures and pass on part of the original data to the next driver. However, when the intermediate driver completes the processing of the original NET\_BUFFER\_LIST it must return the complete NET\_BUFFER\_LIST with the original NET\_BUFFER structures and MDLs.
 

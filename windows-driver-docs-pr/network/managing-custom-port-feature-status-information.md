@@ -13,7 +13,7 @@ The Hyper-V extensible switch interface uses the following object identifier (OI
 <a href="" id="oid-switch-port-feature-status-query"></a>[OID\_SWITCH\_PORT\_FEATURE\_STATUS\_QUERY](./oid-switch-port-feature-status-query.md)  
 This OID method request is issued by the protocol edge of the extensible switch to obtain the custom feature status information for a specified port property.
 
-After a successful return from this OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a buffer. This buffer contains the following data:
+After a successful return from this OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to a buffer. This buffer contains the following data:
 
 -   An [**NDIS\_SWITCH\_PORT\_FEATURE\_STATUS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_feature_status_parameters) structure that specifies the custom feature status information that is to be returned.
 
@@ -31,7 +31,7 @@ The extensible switch extension must follow these guidelines when it receives an
 
 -   If the extension handles the OID method request, it must return the feature status information that matches the parameters specified by the [**NDIS\_SWITCH\_PORT\_FEATURE\_STATUS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_feature_status_parameters) structure.
 
-    If the feature status buffer is too small, the extension must fail the OID request with NDIS\_STATUS\_INVALID\_LENGTH. The extension must set the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to the minimum buffer size that is required.
+    If the feature status buffer is too small, the extension must fail the OID request with NDIS\_STATUS\_INVALID\_LENGTH. The extension must set the **DATA.SET\_INFORMATION.BytesNeeded** member in the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure to the minimum buffer size that is required.
 
     Otherwise, the extension must return the feature status information and complete the OID request with NDIS\_STATUS\_SUCCESS.
 

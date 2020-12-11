@@ -21,7 +21,7 @@ Versioned structures contain a header that specifies the version of the structur
 
 This versioning simplifies backward compatibility and extends the life of NDIS 6.0 and later drivers. Also, NDIS drivers can support more than one version of NDIS.
 
-For more information, see [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header).
+For more information, see [**NDIS\_OBJECT\_HEADER**](/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header).
 
  
 

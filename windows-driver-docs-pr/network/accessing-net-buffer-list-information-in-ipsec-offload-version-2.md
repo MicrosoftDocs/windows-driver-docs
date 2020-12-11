@@ -15,9 +15,9 @@ ms.localizationpriority: medium
 
 
 
-NDIS provides out-of-band (OOB) data in the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure, which specifies a linked list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures. The **NetBufferListInfo** member is an array of values that contain information that is common to all of the NET\_BUFFER structures in the list.
+NDIS provides out-of-band (OOB) data in the **NetBufferListInfo** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure, which specifies a linked list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures. The **NetBufferListInfo** member is an array of values that contain information that is common to all of the NET\_BUFFER structures in the list.
 
-Use the following identifiers with the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_info) macro to set and get the IPsec offload version 2 (IPsecOV2) OOB data in the **NetBufferListInfo** array:
+Use the following identifiers with the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_info) macro to set and get the IPsec offload version 2 (IPsecOV2) OOB data in the **NetBufferListInfo** array:
 
 <a href="" id="ipsecoffloadv2netbufferlistinfo"></a>**IPsecOffloadV2NetBufferListInfo**  
 Specifies IPsecOV2 information that is used in offloading IPsec tasks from the TCP/IP protocol to a NIC. When you specify **IPsecOffloadV2NetBufferListInfo**, NET\_BUFFER\_LIST\_INFO returns an [**NDIS\_IPSEC\_OFFLOAD\_V2\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info) structure.

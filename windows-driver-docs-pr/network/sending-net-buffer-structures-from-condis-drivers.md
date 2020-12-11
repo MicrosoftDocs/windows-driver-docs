@@ -21,7 +21,7 @@ All NET\_BUFFER-based send operations are asynchronous. Therefore, the miniport 
 
 Protocol drivers can reclaim the ownership of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures and all associated structures and data as soon as NDIS calls the protocol driver's *ProtocolCoSendNetBufferListsComplete* function.
 
-The miniport driver or NDIS can return the NET\_BUFFER\_LIST structures in any order. But protocol drivers are guaranteed that the list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures that are attached to each NET\_BUFFER\_LIST structure has not been modified.
+The miniport driver or NDIS can return the NET\_BUFFER\_LIST structures in any order. But protocol drivers are guaranteed that the list of [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures that are attached to each NET\_BUFFER\_LIST structure has not been modified.
 
 Protocols drivers set the **SourceHandle** member in the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure to the same value as the *NdisVcHandle* parameter of **NdisCoSendNetBufferLists**. NDIS uses the **SourceHandle** member to return the NET\_BUFFER\_LIST structures to the protocol driver that sent the NET\_BUFFER\_LIST structures.
 

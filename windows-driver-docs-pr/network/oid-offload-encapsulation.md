@@ -15,7 +15,7 @@ As a set request, overlying drivers use the OID_OFFLOAD_ENCAPSULATION OID to set
 
 ## Remarks
 
-The InformationBuffer member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [NDIS_OFFLOAD_ENCAPSULATION](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation) structure.
+The InformationBuffer member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [NDIS_OFFLOAD_ENCAPSULATION](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation) structure.
 
 ### Miniport drivers
 
@@ -51,7 +51,7 @@ Protocol drivers must be prepared to handle any NDIS_STATUS_Xxx failure code. If
 
 [NDIS_BIND_PARAMETERS](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)  
 [NDIS_OFFLOAD_ENCAPSULATION](/windows-hardware/drivers/ddi/encapsulationconfig/ns-encapsulationconfig-ndis_offload_encapsulation)  
-[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)  
+[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)  
 [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md)  
 [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md)
 

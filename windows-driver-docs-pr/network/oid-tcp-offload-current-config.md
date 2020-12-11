@@ -17,7 +17,7 @@ Set requests are not supported.
 
 NDIS handles this OID for miniport drivers. Miniport drivers report miniport adapter offload capabilities to NDIS. For information about passing task offload configuration settings to NDIS from a miniport driver and from NDIS to overlying drivers, see NDIS_OFFLOAD.
 
-The **InformationBuffer** member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains an [NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure. The **NDIS_OFFLOAD** structure includes the following miniport adapter capabilities:
+The **InformationBuffer** member of the [NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains an [NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure. The **NDIS_OFFLOAD** structure includes the following miniport adapter capabilities:
 
 - The header information, which includes the task offload version.
 - The checksum offload information, in an [NDIS_TCP_IP_CHECKSUM_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload) structure.
@@ -35,7 +35,7 @@ Miniport drivers should automatically enable all of the task offload capabilitie
 
 [NDIS_IPSEC_OFFLOAD_V1](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ipsec_offload_v1)  
 [NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload)  
-[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)  
+[NDIS_OID_REQUEST](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)  
 [NDIS_TCP_IP_CHECKSUM_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)  
 [NDIS_TCP_LARGE_SEND_OFFLOAD_V2](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_large_send_offload_v2)
 [NDIS_IPSEC_OFFLOAD_V1](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ipsec_offload_v1)  

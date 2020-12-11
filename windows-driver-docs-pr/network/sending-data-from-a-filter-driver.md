@@ -25,7 +25,7 @@ Filter drivers call the [**NdisFSendNetBufferLists**](/windows-hardware/drivers/
 
 A filter driver must set the **SourceHandle** member of each NET\_BUFFER\_LIST structure that it creates to the same value that it passes to the *NdisFilterHandle* parameter of **NdisFSendNetBufferLists**. NDIS drivers should not modify the **SourceHandle** member for NET\_BUFFER\_LIST structures that the driver did not originate.
 
-Before calling **NdisFSendNetBufferLists**, a filter driver can set information that accompanies the send request with the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_info) macro. The underlying drivers can retrieve this information with the NET\_BUFFER\_LIST\_INFO macro.
+Before calling **NdisFSendNetBufferLists**, a filter driver can set information that accompanies the send request with the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_info) macro. The underlying drivers can retrieve this information with the NET\_BUFFER\_LIST\_INFO macro.
 
 As soon as a filter driver calls **NdisFSendNetBufferLists**, it relinquishes ownership of the NET\_BUFFER\_LIST structures and all associated resources. NDIS can handle the send request or pass the request to underlying drivers.
 
@@ -35,7 +35,7 @@ Until NDIS calls *FilterSendNetBufferListsComplete*, the current status of a sen
 
 *FilterSendNetBufferListsComplete* performs whatever postprocessing is necessary to complete a send operation.
 
-When NDIS calls *FilterSendNetBufferListsComplete*, the filter driver regains ownership of all the resources associated with the NET\_BUFFER\_LIST structures that are specified by the *NetBufferLists* parameter. *FilterSendNetBufferListsComplete* can either free these resources (for example, by calling the [**NdisFreeNetBuffer**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreenetbuffer) and [**NdisFreeNetBufferList**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreenetbufferlist) functions) or prepare them for reuse in a subsequent call to **NdisFSendNetBufferLists**.
+When NDIS calls *FilterSendNetBufferListsComplete*, the filter driver regains ownership of all the resources associated with the NET\_BUFFER\_LIST structures that are specified by the *NetBufferLists* parameter. *FilterSendNetBufferListsComplete* can either free these resources (for example, by calling the [**NdisFreeNetBuffer**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisfreenetbuffer) and [**NdisFreeNetBufferList**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisfreenetbufferlist) functions) or prepare them for reuse in a subsequent call to **NdisFSendNetBufferLists**.
 
 NDIS always submits filter-supplied network data to the underlying drivers in the filter-driver-determined order as passed to **NdisFSendNetBufferLists**. However, after sending the data in the specified order, the underlying drivers can return the buffers in any order.
 

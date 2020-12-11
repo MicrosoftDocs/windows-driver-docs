@@ -24,13 +24,13 @@ MB miniport drivers that support Raw IP packet frames in their send/receive data
 
     The **NetBufferListFrameType** member of the NET\_BUFFER\_LIST structure must be set to 0x86dd (Ethertype IPv6) in network byte order.
 
-Miniport drivers can use the [**NdisSetNblFlag**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetnblflag) macro to set flags in the net buffer list. The following line demonstrates how to set IPv4 packet flag in the net buffer list:
+Miniport drivers can use the [**NdisSetNblFlag**](/windows-hardware/drivers/ddi/ndinblaccessors/nf-nblaccessors-ndissetnblflag) macro to set flags in the net buffer list. The following line demonstrates how to set IPv4 packet flag in the net buffer list:
 
 ```C++
 NdisSetNblFlag(pNbl, NDIS_NBL_FLAGS_IS_IPV4);
 ```
 
-Miniport drivers can use the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_info) to get and set information in a net buffer list. The following line demonstrates how to modify the **NetBufferListFrameType** OOB in the network buffer list for IPV4 packets:
+Miniport drivers can use the [**NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_info) to get and set information in a net buffer list. The following line demonstrates how to modify the **NetBufferListFrameType** OOB in the network buffer list for IPV4 packets:
 
 ```C++
 Value = ConvertToNetworkByteOrder(0x0800);

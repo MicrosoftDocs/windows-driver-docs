@@ -15,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-A header-data split provider must set the header-data split flags in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures for receive indications. For split frames, a NIC must also provide the physical address of the data portion of the received frame in the **DataPhysicalAddress** member of each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure.
+A header-data split provider must set the header-data split flags in the **NblFlags** member of the [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structures for receive indications. For split frames, a NIC must also provide the physical address of the data portion of the received frame in the **DataPhysicalAddress** member of each [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structure.
 
 **Note**  A miniport driver can set the **DataPhysicalAddress** member of the NET\_BUFFER structure, even if the NET\_BUFFER is not associated with a split frame. In this case, **DataPhysicalAddress** contains the physical address of the header MDL.
 
