@@ -30,6 +30,8 @@ NetAdapterCx checks the registry keywords and honors them when enabling the acti
 
 The checksum keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the checksum offload with a registry key setting. Grouped keywords are not supported.
 
+The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-value-types).
+
 ## Configuring checksum offload
 
 Client drivers first advertise their hardware's checksum offload capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
