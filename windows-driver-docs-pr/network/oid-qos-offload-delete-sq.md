@@ -36,7 +36,7 @@ NDIS handles the OID set request of OID_QOS_OFFLOAD_DELETE_SQ for miniport drive
 
 ## See also
 
-[**NDIS\_OID\_REQUEST**](windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [OID_QOS_OFFLOAD_CREATE_SQ](oid-qos-offload-create-sq.md)
 
