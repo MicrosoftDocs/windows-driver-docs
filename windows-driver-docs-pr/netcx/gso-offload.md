@@ -28,6 +28,8 @@ The LSO keywords specified in [Using Registry Values to Enable and Disable Task 
 
 The USO keywords specified in [UDP Segmentation Offload (USO)](../network/udp-segmentation-offload-uso-.md) can be used to enable/disable the USO offload with a registry key setting.
 
+The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-value-types).
+
 ## Configuring GSO
 
 Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
