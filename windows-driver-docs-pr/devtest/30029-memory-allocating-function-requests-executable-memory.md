@@ -1,7 +1,7 @@
 ---
 title: C30029
 description: Warning C30029 Calling a memory allocating function that requests executable memory.
-ms.date: 04/20/2017
+ms.date: 12/10/2020
 ms.localizationpriority: medium 
 f1_keywords: 
   - "C30029"
@@ -24,7 +24,7 @@ The following code generates warning C30029:
 ```
 MmMapIoSpace(  PhysicalAddress,
         numberOfBytes,
-        PAGE_NOCACHE);
+        MmNonCached);
 ```
 
 The following code avoids this warning:

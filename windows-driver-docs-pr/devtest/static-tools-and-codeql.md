@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 12/09/2020
+ms.date: 12/10/2020
 ms.localizationpriority: medium
 ---
 
@@ -24,7 +24,7 @@ This topic describes how to:
 
 > [!IMPORTANT]
 > This information is preliminary and will be updated as the query rule set distribution is finalized.
-> 
+>
 
 ## Concepts for CodeQL
 
@@ -50,8 +50,8 @@ C:\> mkdir C:\codeql-home
 ```
 
 2. Navigate to the Github [CodeQL Download Page](https://github.com/github/codeql-cli-binaries/releases/)
-3. Download the latest zip file. For example for 64 bit Windows "codeql-win64.zip".
-4. Unzip the downloaded zip file to a directory, for example,  C:\codeql-home\codeql-win64
+3. Download the latest version of the zip file. For example for 64 bit Windows "codeql-win64.zip".
+4. Unzip the downloaded zip file to a directory, for example,  `C:\codeql-home\codeql-win64`.
 5. Confirm that the CodeCL command works by displaying the help.
 
 ```command
@@ -144,6 +144,17 @@ This example uses this argument to find and build the driver project. The msbuil
 msbuild /t:rebuild "C:\codeql-home\drivers\kmdf\kmdfecho.sln"
 ```
 
+## Summary of directory locations
+
+At this point in our example setup, the following directories will be present.
+
+| Description            | Location                           |
+|------------------------|------------------------------------|
+| Codeql.exe             | C:\codeql-home\codeql-win64\codeql |
+| C++ Rules              | C:\codeql-home\codeql\cpp          |
+| Databases              | C:\codeql-home\databases           |
+| Driver code under test | C:\codeql-home\drivers\kmdf        |
+
 ## Perform Analysis
 
 At this point, the set-up is complete and the next step is to perform the actual analysis on the driver source code.
@@ -200,6 +211,24 @@ You can specify a timeout for the entire operation with the *"–timeout=[second
 Currently, the command above demonstrates how to run only one query, *"TooFewArguments.ql"*.  It is possible to run multiple queries at once by listing all queries sequentially in one command.  
 
 In the near future, a driver specific *query suite* which contains all relevant driver queries will be provided. For more information, see [query suites](https://help.semmle.com/codeql/codeql-cli/procedures/query-suites.html).
+
+## Troubleshooting
+
+For database version mismatches issues, the following tools may be helpful.
+
+Use the codeql version command to display the version of the codeql exe.
+
+```command
+C:\codeql-home\codeql-win64\codeql>codeql version
+CodeQL command-line toolchain release 2.4.0.
+Copyright (C) 2019-2020 GitHub, Inc.
+Unpacked in: C:\codeql-home\codeql-win64\codeql
+   Analysis results depend critically on separately distributed query and
+   extractor modules. To list modules that are visible to the toolchain,
+   use 'codeql resolve qlpacks' and 'codeql resolve languages'.
+```
+
+The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://help.semmle.com/codeql/codeql-cli/commands/database-upgrade.html).
 
 ## Queries
 
