@@ -40,7 +40,7 @@ Microsoft encourages you to use the in-box transport-minidrivers whenever possib
 If you are implementing a non-GPIO button such as a stream of data in the HID format that needs to be injected by another software component, you can choose to write a kernel-mode driver. Starting in Windows 10, you can write a HID source driver by calling programming interfaces that communicate with Virtual HID Framework (VHF) and gets and sets HID Reports to and from the HID class driver.
 
 - [How to write a HID source driver that interacts with Virtual HID Framework (VHF)](virtual-hid-framework--vhf-.md)
-- [Virtual HID Framework Reference](/windows-hardware/drivers/virtual-hid-framework--vhf-)
+- [Virtual HID Framework Reference](/windows-hardware/drivers/ddi/_hid/)
 
 Alternately, you can write a kernel-mode HID transport minidriver as supported by the earlier versions of Windows. However, we do not recommend this approach because poorly written KMDF HID transport minidrivers can crash the system.
 

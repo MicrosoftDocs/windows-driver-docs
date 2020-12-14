@@ -35,7 +35,7 @@ The following system components are available for use with serial controller dev
     - [Operation of Serenum and Serial](operation-of-serenum-and-serial.md)
     - [Registry Settings for Serial](registry-settings-for-serial.md)
     - [Registry Settings for Serenum](registry-settings-for-serenum.md)
-    - [Serial Driver Reference](/windows-hardware/drivers/_serports)
+    - [Serial Driver Reference](/windows-hardware/drivers/ddi/_serports)
     - [Serenum Driver Reference](/windows-hardware/drivers/ddi/ntddser)
     - Data definitions in the Ntddser.h header file in the WDK.
 

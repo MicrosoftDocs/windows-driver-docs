@@ -102,7 +102,7 @@ In addition, this driver can create child objects of the **SPBTARGET** object, s
 
 [IRP_MJ_CREATE](../ifs/irp-mj-create.md)
 
-[SerCx2 Driver Support Methods](/windows-hardware/drivers/sercx)
+[SerCx2 Driver Support Methods](/windows-hardware/drivers/ddi/sercx)
 
 [SpbControllerSetRequestAttributes](/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbcontrollersetrequestattributes)
 
