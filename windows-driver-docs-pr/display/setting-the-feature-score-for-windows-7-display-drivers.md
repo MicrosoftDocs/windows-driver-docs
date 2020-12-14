@@ -30,7 +30,7 @@ score</th>
 <tbody>
 <tr class="odd">
 <td align="left"><p>E6</p></td>
-<td align="left"><p>Vendor-supplied drivers that are written to the Windows Display Driver Model (WDDM) are optimized for the model's Windows 7 features, are packaged in a Windows 7 driver package that is qualified by the Windows Hardware Quality Labs (WHQL), and are included in the Windows <a href="https://go.microsoft.com/fwlink/p/?linkid=138031" data-raw-source="[Compatibility Center](https://go.microsoft.com/fwlink/p/?linkid=138031)">Compatibility Center</a> tested products list</p></td>
+<td align="left"><p>Vendor-supplied drivers that are written to the Windows Display Driver Model (WDDM) are optimized for the model's Windows 7 features, and are packaged in a Windows 7 driver package that is qualified by the Windows Hardware Quality Labs (WHQL)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>E6</p></td>
@@ -50,7 +50,7 @@ score</th>
 </tr>
 <tr class="even">
 <td align="left"><p>F6</p></td>
-<td align="left"><p>Vendor-supplied drivers that are written to WDDM with a Windows Vista driver package that is qualified by WHQL and included in the Windows <a href="https://go.microsoft.com/fwlink/p/?linkid=138031" data-raw-source="[Vista Compatibility Center](https://go.microsoft.com/fwlink/p/?linkid=138031)">Vista Compatibility Center</a> tested products list</p></td>
+<td align="left"><p>Vendor-supplied drivers that are written to WDDM with a Windows Vista driver package that is qualified by WHQL</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>F8</p></td>
