@@ -2,12 +2,12 @@
 title: Driver Release Cadence
 description: Policy around when drivers are released
 ms.topic: article
-ms.date: 11/17/2020
+ms.date: 12/14/2020
 ms.localizationpriority: medium
 ---
 
 # Driver Shiproom Release Cadence Windows
-Last Updated: November 18, 2020
+Last Updated: December 14, 2020
 
 This page provides information on the operation schedule for driver shiproom. In order to provide the best experience for Windows users, there are certain times where aspects of publication operations are suspended.
 
@@ -44,9 +44,9 @@ To ensure we release quality drivers, reduce the risk of releasing drivers at th
 |No release for “Microsoft Approval” drivers | Release after 
 5PM Pacific time |
 
-4. **US Microsoft Holidays**: Drivers needing “Microsoft Approval” will not be released on Microsoft US Holidays
+4. **Certain US Holidays**: Drivers needing “Microsoft Approval” will not be released on certain US Holidays
 
-|US Microsoft Holidays | 2020 |	2021 |
+|US Holidays | 2020 |	2021 |
 |----|----|----|
 |New Year's Day | Tuesday Jan 01 | Friday Jan 01 |
 |Martin Luther King Day | Monday Jan 20 | Monday Jan 18 |
@@ -69,10 +69,10 @@ See the [2021 driver deferral periods](#calendar) calendars for additional dates
  
 ## Appendix
 ### FAQ:
-What does this deferral mean for newly submitted drivers or drivers currently In-Flight?
+1. What does this deferral mean for newly submitted drivers or drivers currently In-Flight?
 * This deferral is for the actual “Release” of a driver needing “Microsoft Approval” (marked as Automatic or Dynamic Update) to WU.  Newly submitted drivers and drivers currently In-Flight will proceed as they normally do.  
 
-<a id="calendar"></a>What is the latest deferral calendar?
+2. <a id="calendar"></a>What is the latest deferral calendar?
 ** This calendar is subject to changes based on OS release timelines.
  
-![Image 2021 Driver Release Calendar](images/2021driverReleaseCalendar.png)
+![2021 Driver Release Calendar showing excluded dates as described above](images/2021driverReleaseCalendar.png)
