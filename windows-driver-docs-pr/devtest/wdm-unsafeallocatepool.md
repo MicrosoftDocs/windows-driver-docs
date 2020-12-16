@@ -1,7 +1,7 @@
 ---
 title: UnSafeAllocatePoolrule (wdm)
 description: Learn about the UnSafeAllocatePoolrule (wdm). 
-ms.date: 12/15/2020
+ms.date: 12/16/2020
 keywords: ["UnSafeAllocatePoolrule (wdm)"]
 topic_type:
 - apiref
@@ -44,7 +44,7 @@ If you are building a driver that targets versions of Windows after Windows 10, 
 
 The new APIs will zero pool allocations by default, to help avoid possible memory disclosure bugs.  
 
-### ExAllocatePoolWithTag
+### ExAllocatePool/ExAllocatePoolWithTag
 
 ```cpp
 // Old code
@@ -157,6 +157,7 @@ Refer to the latest wdm.h header for the implementation code for these code wrap
 ```cpp
 // Old code
 PVOID Allocation = ExAllocatePoolWithTag(PagedPool, 100, 'abcd');
+RtlZeroMemory(Allocation, 100);
 
 // New code
 
