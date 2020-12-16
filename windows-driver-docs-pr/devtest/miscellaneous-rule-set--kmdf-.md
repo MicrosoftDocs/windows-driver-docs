@@ -49,6 +49,10 @@ Use these rules to verify that your driver correctly follows a general set of re
 <td align="left"><p><a href="kmdf-nonpnpdrvpowerpolicyownerapi.md" data-raw-source="[&lt;strong&gt;NonPnPDrvPowerPolicyOwnerAPI&lt;/strong&gt;](kmdf-nonpnpdrvpowerpolicyownerapi.md)"><strong>NonPnPDrvPowerPolicyOwnerAPI</strong></a></p></td>
 <td align="left"><p>The <a href="kmdf-nonpnpdrvpowerpolicyownerapi.md" data-raw-source="[&lt;strong&gt;NonPnPDrvPowerPolicyOwnerAPI&lt;/strong&gt;](kmdf-nonpnpdrvpowerpolicyownerapi.md)"><strong>NonPnPDrvPowerPolicyOwnerAPI</strong></a> rule specifies that non-PnP drivers cannot call certain DDIs related to power management.</p></td>
 </tr>
+<tr class="odd">
+<td align="left"><p><a href="kmdf-unsafeallocatepool.md" data-raw-source="[&lt;strong&gt;UnSafeAllocatePool&lt;/strong&gt;](kmdf-unsafeallocatepool.md)"><strong>UnSafeAllocatePool</strong></a></p></td>
+<td align="left"><p>The <a href="kmdf-unsafeallocatepool.md" data-raw-source="[&lt;strong&gt;UnSafeAllocatePool&lt;/strong&gt;](kmdf-unsafeallocatepool.md)"><strong>UnSafeAllocatePool</strong></a> rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory.</p></td>
+</tr>
 </tbody>
 </table>
 
