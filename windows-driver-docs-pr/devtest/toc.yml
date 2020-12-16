@@ -1171,6 +1171,8 @@
           href: wdm-pnpsamedeviceobject.md
         - name: "TargetRelationNeedsRef"
           href: wdm-targetrelationneedsref.md
+        - name: "UnSafeAllocatePool"
+          href: wdm-unsafeallocatepool.md
         - name: "ZwRegistryCreate"
           href: wdm-zwregistrycreate.md
         - name: "ZwRegistryOpen"
@@ -1374,6 +1376,8 @@
           href: kmdf-nonfdonotpowerpolicyownerapi.md
         - name: "NonPnPDrvPowerPolicyOwnerAPI"
           href: kmdf-nonpnpdrvpowerpolicyownerapi.md
+        - name: "UnSafeAllocatePool"
+          href: kmdf-unsafeallocatepool.md
       - name: "RequestProcessing rule set (KMDF)"
 # Auto-expanded node
         items: 
