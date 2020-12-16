@@ -47,7 +47,7 @@ When you install Visual Studio 2019, select the **Desktop development with C++**
 
 In **Visual Studio Installer**, on the **Individual components** tab, search for Windows 10 SDK (10.0.19041.0), select this version and continue with install. Note that Visual Studio will automatically install Windows 10 SDK (10.0.19041.1) on your machine.
 
-If you already have Visual Studio 2019 installed, you can install the **Windows 10 SDK (10.0.19041.1)** by using the **Modify** button in Visual Studio install.
+If you already have Visual Studio 2019 installed, you can install the **Windows 10 SDK (10.0.19041.685)** by using the **Modify** button in Visual Studio install.
 
 WDK has Spectre mitigation enabled by default but requires spectre mitigated libraries to be installed with Visual Studio for each architecture you are developing for. Additionally, developing drivers for ARM/ARM64 require the build tools for these architectures to also be installed with Visual Studio. To locate these items you will need to know the latest version of MSVC installed on your system.
 
@@ -74,7 +74,7 @@ The WDK Visual Studio extension is included in the default WDK installation.
 
 ## Enterprise WDK (EWDK) for Windows 10, version 2004
 
-The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.3.0 and MSVC toolset v14.23.  To get started, mount the ISO and run **LaunchBuildEnv**.
+The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.7.0 and MSVC toolset v14.23.  To get started, mount the ISO and run **LaunchBuildEnv**.
 
 The EWDK also requires the .NET Framework version 4.7.2. For more information about other requirements for the .NET Framework, see [.NET Framework system requirements](/dotnet/framework/get-started/system-requirements).
 
