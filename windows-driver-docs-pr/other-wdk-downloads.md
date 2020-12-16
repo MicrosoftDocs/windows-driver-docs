@@ -89,6 +89,7 @@ develop, build, package, deploy, test, and debug drivers.
 
 | Versions of Windows      | WDK and related downloads                       |
 |--------------------------|-------------------------------------------------|
+| Windows 10, version 2004 | WDK for Windows 10, version 2004 (10.1094.1)* See Note below |
 | Windows 10, version 1903 | [WDK for Windows 10, version 1903](https://go.microsoft.com/fwlink/?linkid=2085767) |
 | Windows 10, version 1809 | [WDK for Windows 10, version 1809](https://go.microsoft.com/fwlink/?linkid=2026156) |
 | Windows 10, version 1803 | [WDK for Windows 10, version 1803](https://go.microsoft.com/fwlink/?linkid=873060) |
@@ -99,6 +100,7 @@ develop, build, package, deploy, test, and debug drivers.
 | Windows 8                | [WDK 8](https://go.microsoft.com/fwlink/p/?LinkID=324284) (English only) <br/>[WDK 8 redistributable components](https://go.microsoft.com/fwlink/p/?LinkID=253170) (English only) <br/>[WDK 8 Samples](https://go.microsoft.com/fwlink/p/?LinkId=616509) |
 | Windows 7 | [WDK 7.1.0](https://www.microsoft.com/download/confirmation.aspx?id=11800) |
 
+Note: Please review this [forum post](https://social.msdn.microsoft.com/Forums/en-US/96c770a9-19a3-42d0-8d0e-bd200285d980/hardware-development-kits-for-windows-10-version-2004?forum=wdk) that addresses a bug with ExAllocatePoolZero.
 
 > [!IMPORTANT]
 > If you have installed the WDK for Windows 10, version 1703 on a system that had the WDK for Windows 10, version 1607 installed, some files from the earlier version of the WDK might have been removed. To restore these files:
