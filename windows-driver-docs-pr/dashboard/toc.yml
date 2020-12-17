@@ -24,6 +24,8 @@
     href: attestation-signing-a-kernel-driver-for-public-release.md
   - name: "How to get a driver signed by Microsoft for multiple versions of Windows"
     href: get-drivers-signed-by-microsoft-for-multiple-windows-versions.md
+  - name: "Validating driver updates for Modern Standby systems "
+    href: validating-driver-updates-for-modern-standby-systems.md
   - name: "Driver Flighting"
     items:
     - name: "Overview of driver flighting"
