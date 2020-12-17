@@ -8,17 +8,17 @@ ms.localizationpriority: medium
 
 # Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 
-The following DDIs are deprecated starting with  Windows 10, version 2004
+The following DDIs are deprecated starting with  Windows 10, version 2004 and should be replaced as described in this topic.
 
 [ExAllocatePool](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)
 
 [ExAllocatePoolWithTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
-[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota) 
+[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)
 
 [ExAllocatePoolWithQuotaTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
-[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) 
+[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
 
 ## Driver updates for versions of Windows later than Windows 10, version 2004
 
@@ -78,7 +78,7 @@ PVOID Allocation = ExAllocatePool3(POOL_FLAG_PAGED, 100, 'abcd', &params, 1);
 
 If you are building a driver that targets versions of Windows prior to Windows 10, version 2004, you must use the following force inline wrapper functions.
 
-You must also #define POOL_ZERO_DOWN_LEVEL_SUPPORT and call [ExInitializeDriverRuntime](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializedriverruntime) during driver initialization before calling the pool allocation functions.
+You must also #define POOL_ZERO_DOWN_LEVEL_SUPPORT and call [ExInitializeDriverRuntime](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializedriverruntime) during driver initialization, before calling the pool allocation functions.
 
 ### Locally defined inline functions
 
@@ -164,17 +164,20 @@ PVOID Allocation = ExAllocatePoolZero(PagedPool, 100, 'abcd');
 
 ## Driver verifier UnSafeAllocatePool rules
 
-The **UnSafeAllocatePool** rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory.
-
-This rule is available in preview WDK builds 20236 and above.
-
+The driver verifier [UnSafeAllocatePool](/windows-hardware/drivers/devtest/unsafeallocatepool) rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
 
 ## See Also
 
-[**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
+[ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) 
 
+[ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3)
 
+[ExAllocatePool](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)
 
+[ExAllocatePoolWithTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
- 
+[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)
 
+[ExAllocatePoolWithQuotaTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
+
+[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
