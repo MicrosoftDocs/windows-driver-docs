@@ -16,7 +16,7 @@ ms.custom: 19H1
 The WDK is used to develop, test, and deploy Windows drivers.
 
 * [Learn what's new in driver development](what-s-new-in-driver-development.md)
-* [Review known issues](https://go.microsoft.com/fwlink/?linkid=872986)
+* [Review known issues](wdk-known-issues.md)
 
 [Join the Windows Insider Program](https://insider.windows.com/) to get [WDK Insider Preview builds](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). For installation instructions for the Windows Insider Preview builds, see [Installing preview versions of the Windows Driver Kit (WDK)](installing-preview-versions-wdk.md).
 
