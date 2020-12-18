@@ -59,9 +59,9 @@ Windows supports the following top-level collections:
 
 | **Usage Page** | **Usage** | **Windows 7** | **Windows 8** | **Windows 10** | **Notes** | **Access Mode** |
 | --- | --- | --- | --- | --- | --- | --- |
-| 0x0001 | 0x0001 - 0x0002 | Yes | Yes | Yes | Mouse class driver and mapper driver | Exclusive |
+| 0x0001 | 0x0001 - 0x0002 | Yes | Yes | Yes | [Mouse class driver and mapper driver](keyboard-and-mouse-class-drivers.md) | Exclusive |
 | 0x0001 | 0x0004 - 0x0005 | Yes | Yes | Yes | Game Controllers | Shared |
-| 0x0001 | 0x0006 - 0x0007 | Yes | Yes | Yes | Keyboard / Keypad class driver and mapper driver | Exclusive |
+| 0x0001 | 0x0006 - 0x0007 | Yes | Yes | Yes | [Keyboard / Keypad class driver and mapper driver](keyboard-and-mouse-class-drivers.md) | Exclusive |
 | 0x0001 | 0x000C | No | Yes | Yes | Flight Mode Switch | Shared |
 | 0x0001 | 0x0080 | Yes | Yes | Yes | System Controls (Power) | Shared |
 | 0x000C | 0x0001 | Yes | Yes | Yes (For both Windows 10 and Windows 10 Mobile) | Consumer Controls | Shared (For both Windows 10 and Windows 10 Mobile) |
@@ -87,29 +87,6 @@ The HID class driver is designed to use HID minidrivers to access a hardware inp
 
 ### HID Transports Supported in Windows
 
-Windows supports the following transports.
-
-| Transport    | Windows 7 | Windows 8 | Notes                                                                                                 |
-|--------------|-----------|-----------|-------------------------------------------------------------------------------------------------------|
-| USB          | Yes       | Yes       | Support for USB HID 1.11+ is provided on Windows operating systems dating back to Windows 2000.       |
-| Bluetooth    | Yes       | Yes       | Support for Bluetooth HID 1.1+ is provided on Windows operating systems dating back to Windows Vista. |
-| Bluetooth LE | No        | Yes       | Windows 8 introduces support for HID over Bluetooth LE.                                               |
-| I2C          | No        | Yes       | Windows 8 introduces support for HID over I2C                                                         |
-
-Previous versions of Windows (prior to Windows 7) also included support for the following.
-
-- HidGame.sys - HID minidriver for game port (I/O port 201) devices. The HID class driver creates a functional device object (FDO) for a game port device, and creates a physical device object (PDO) for each HID collection that the game port device supports.
-- Gameenum.sys – The gameport bus driver. The game port bus driver creates a PDO for each game port device that is daisy-chained to a game port.
-
-They are now considered legacy as the hardware is not found on modern machines (replaced by USB and other modern transports).
-
-## Recommended transports for keyboards, mice, and touchpads
-
-The following table shows the recommended transports for keyboards, mice, and touchpad devices on portable (such as laptops and slates) and non-portable systems (such as all-in-one and desktops).
-
-| System Type                  | Portable                                 | Non-portable                                |
-|------------------------------|------------------------------------------|---------------------------------------------|
-| Legacy systems               | Internal: PS/2, External: USB, Bluetooth | Internal: N/A, External: USB, Bluetooth     |
-| System on Chip (SoC) systems | Internal: I2C, External: USB, Bluetooth  | Internal: I2C, USB External: USB, Bluetooth |
+See [this page](hid-transports.md) for a list of supported HID Transports.
 
 [**USB Generic HID Test**](/windows-hardware/test/hlk/testref/f7949ab5-dd13-4c74-876f-6d54ff85e213) in the Windows Hardware Lab Kit (HLK) covers HidUsb and HidClass drivers. There is no HLK test for third-party HID mini drivers.
