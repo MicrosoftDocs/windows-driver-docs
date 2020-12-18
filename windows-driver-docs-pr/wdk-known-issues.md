@@ -32,7 +32,7 @@ While the WDK install will enable Spectre mitigation by default for all drivers,
 
 When selecting [Windows SDK Version] to '10.0 (latest installed version)' with WDK 10.0.19041.0 causes the "A WDK corresponding to target version '10.0.19041.0' was not found" error even if the SDK version is installed.
 
-**Workaround:** In the properties page for the driver project (Configuration Properties >General) set Windows SDK Version to $(LatestTargetPlatformVersion). If this option is not available to select then select the option ‘inherit from parent or project default’
+**Workaround:** In the properties page for the driver project (Configuration Properties >General) set Windows SDK Version to $(LatestTargetPlatformVersion). If this option is not available to select then select the option **inherit from parent or project default**.
 
 ### EWDK and SDV running on Server have .NET requirements
 
@@ -43,7 +43,11 @@ Running Static Driver Verifier from the EWDK requires .Net Framework 4.7.2. Depe
 When attempting to create a Driver Verification Log (DVL), the following error will be presented:
 
 ```console
-Unhandled Exception: System.IO.FileNotFoundException: Could not load file or assembly 'System.Runtime, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.
+Unhandled Exception: System.IO.FileNotFoundException: 
+Could not load file or assembly 
+'System.Runtime, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' 
+or one of its dependencies. 
+The system cannot find the file specified.
 ```
 
 This can occur in both the command-line and GUI environments.  This issue is resolved in a future version of the WDK and can be seen in the [Windows Insider Preview WDK](https://www.microsoft.com/software-download/windowsinsiderpreviewWDK). Unfortunately, no workaround exists for the current version.
@@ -70,7 +74,7 @@ In WDK for Windows 10, version 1809, changes were made to WDTF in order to suppo
 
 #### Alterative for down-level testing
 
-The WDTF tests in WDK for Windows 10, version 1803 can be run on previous Windows versions
+The WDTF tests in WDK for Windows 10, version 1803 can be run on previous Windows versions.
 
 ### APIValidator
 
@@ -78,13 +82,13 @@ On an x86 arch machine APIValidator is unable to run against x64 binaries. If bu
 
 **Workaround:**
 
-1. Go to the properties page of the driver solution
+1. Go to the properties page of the driver solution.
 
-2. Select APIValidator, then General and change Run ApiValidator from Yes to No
+2. Select **APIValidator**, then **General**, and then change **Run ApiValidator** from **Yes** to **No**.
 
 ### WDK running on Windows 7 systems requires KB 3033929
 
-WDK will require installing Microsoft Security Advisory 3033929 (KB3033929) prior to installing the WDK on systems running Windows 7.  KB3033929 can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46148)
+You must install Microsoft Security Advisory 3033929 (KB3033929) prior to installing the WDK on systems running Windows 7.  KB3033929 can be downloaded from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=46148).
 
 ### Installing the WDK generates an error from Visual Studio that the add-in component is already installed
 
