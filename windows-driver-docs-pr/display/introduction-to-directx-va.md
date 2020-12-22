@@ -11,23 +11,19 @@ ms.localizationpriority: medium
 
 # Introduction to DirectX VA
 
-
-## <span id="ddk_introduction_to_directx_va_gg"></span><span id="DDK_INTRODUCTION_TO_DIRECTX_VA_GG"></span>
-
-
-DirectX VA allows video processing operations that are frequently executed and simple to be performed by a hardware accelerator. Confining less complex video processing operations to the accelerator allows video decoding acceleration to be accomplished for various video standards with minimal customization to the accelerator. Video processing operations that are less frequently executed and more complex, such as bitstream parsing and variable-length decoding (VLD), can be performed on the host CPU.
+DirectX Video Acceleration (VA) allows video processing operations that are frequently executed and simple to be performed by a hardware accelerator. Confining less complex video processing operations to the accelerator allows video decoding acceleration to be accomplished for various video standards with minimal customization to the accelerator. Video processing operations that are less frequently executed and more complex, such as bitstream parsing and variable-length decoding (VLD), can be performed on the host CPU.
 
 The DirectX VA API and corresponding [motion compensation](motion-compensation.md) DDI provide support for the following operations:
 
--   [Alpha blending](/windows-hardware/drivers/ddi/index) for purposes such as DVD subpicture support.
+- [Alpha blending](directx-va-operations.md) for purposes such as DVD subpicture support.
 
--   [Encryption](encryption-support.md) for applications that require it.
+- [Encryption](encryption-support.md) for applications that require it.
 
--   [Deinterlacing and frame-rate conversion](deinterlacing-and-frame-rate-conversion.md) of video content.
+- [Deinterlacing and frame-rate conversion](deinterlacing-and-frame-rate-conversion.md) of video content.
 
--   [ProcAmp](procamp-control-processing.md) control and post processing of video content.
+- [ProcAmp](procamp-control-processing.md) control and post processing of video content.
 
--   Protecting video content from unauthorized copying and displaying through the [Certified Output Protection Protocol](copp-processing.md).
+- Protecting video content from unauthorized copying and displaying through the [Certified Output Protection Protocol](copp-processing.md).
 
 The information presented here is applicable to both application and device driver developers. The format specified defines how information is exchanged between the user-mode host decoder and the kernel-mode device driver. In most cases, the data is transferred from the host to the device driver but, in some cases, data is sent in the other direction.
 
@@ -42,6 +38,3 @@ The [ProcAmp control DDI](procamp-control-processing.md) extends DirectX VA to s
 The [Implementation of Current Standards](implementation-of-current-standards.md) topic details the hardware accelerator and software decoder requirements that must be met for the following, motion-compensated video codec standards: ITU-T H.261, MPEG-1, MPEG-2 (H.262), ITU-T H.263, MPEG-4, MPEG-4 AVC (H.264), and VC-1.
 
 There are no tools supplied with DirectX VA. For more information about tools supplied for Windows media support, see the Windows Media Porting Kit.
-
- 
-
