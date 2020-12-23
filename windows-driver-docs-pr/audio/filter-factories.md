@@ -49,7 +49,5 @@ An audio filter exposes the structure of the underlying audio device as a collec
 
 To obtain the filter descriptor from the miniport driver, the port driver calls the [**IMiniport::GetDescription**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiport-getdescription) method.
 
-For an example of how a driver sets up its PCFILTER\_DESCRIPTOR structure, see the header file Table.h in the sb16 sample audio driver in the Windows Driver Kit (WDK).
-
- 
+For an example of how a driver sets up its PCFILTER\_DESCRIPTOR structure, see the Sysvad sample driver, which is discussed in [Sample Audio Drivers](sample-audio-drivers.md).
 

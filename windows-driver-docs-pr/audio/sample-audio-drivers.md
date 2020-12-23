@@ -11,6 +11,7 @@ keywords:
 - Gfx sample audio driver WDK audio
 - Mpu401 sample audio driver WDK audio
 - Msvad sample audio driver WDK audio
+- Sysvad sample audio driver WDK audio
 - Sb16 sample audio driver WDK audio
 - Stdunk sample audio driver WDK audio
 ms.date: 04/20/2017
