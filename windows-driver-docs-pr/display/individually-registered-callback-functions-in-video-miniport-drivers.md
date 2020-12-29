@@ -16,9 +16,9 @@ ms.custom: seodec18
 
 In certain instances, communication between the vendor-supplied video miniport driver and the system-supplied video port driver proceeds as follows:
 
-1.  The video miniport driver calls a function in the video port driver.
+1. The video miniport driver calls a function in the video port driver.
 
-2.  Before the video port driver function completes, it calls back into the video miniport driver for assistance.
+2. Before the video port driver function completes, it calls back into the video miniport driver for assistance.
 
 When the video miniport driver calls the video port driver function, it passes a pointer to the callback function. For example, when the video miniport driver calls [**VideoPortStartDma**](/windows-hardware/drivers/ddi/video/nf-video-videoportstartdma), it passes a pointer to an *HwVidExecuteDma* callback function (implemented by the video miniport driver).
 
@@ -26,4 +26,4 @@ When the video miniport driver passes the address of a callback function to a vi
 
 In some instances, it makes sense for the video miniport driver to implement several functions, each of which can serve as the callback function for a particular video port driver function. For example, the video miniport driver might implement several variations of the *HwVidQueryDeviceCallback* function and pass the variation of choice in a particular call to [**VideoPortGetDeviceData**](/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicedata).
 
-For a list of callback functions that can be implemented by the video miniport driver and For information about how those callback functions are registered, see [Individually Registered Video Miniport Driver Functions](/windows-hardware/drivers/ddi/index).
+For a list of callback functions that can be implemented by the video miniport driver, see [**VIDEO_HW_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/video/ns-video-_video_hw_initialization_data).
