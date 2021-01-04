@@ -1439,7 +1439,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/display/performing-copp-operations.md",
                              "redirect_URL":  "/windows-hardware/drivers/display/performing-copp-operations-example",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/dashboard/walkthrough--how-to-get-a-driver-signed-by-microsoft-for-multiple-versions-of-windows.md",
@@ -8024,7 +8024,7 @@
                          {
                              "source_path":  "windows-driver-docs-pr/devtest/introduction-to-boot-options.md",
                              "redirect_URL":  "/windows-hardware/drivers/devtest/boot-options-for-driver-testing-and-debugging",
-                             "redirect_document_id":  true
+                             "redirect_document_id":  false
                          },
                          {
                              "source_path":  "windows-driver-docs-pr/develop/attestation-signing-a-kernel-driver-for-public-release.md",
