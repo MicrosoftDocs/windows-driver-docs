@@ -33,4 +33,4 @@ When a driver fails to install correctly, the targeted component can lose functi
 
 ### Final Calculation
 
-*PNP Success Rate= Succesful Installs / Total Installs*
+*PNP Success Rate= Successful Installs / Total Installs*
