@@ -10,13 +10,13 @@ The APIs provide the following abilities:
 
 - Provide ability to discover NIC hardware’s timestamping capabilities.
 
-- Provide ability to associate NIC hardware clock’s timestamps to PTP version 2 traffic running over UDP (using the standard UDP ports defined for PTP i.e. 319 and 320).
+- Provide ability to associate NIC hardware clock’s timestamps to PTP version 2 traffic running over UDP (using the standard UDP ports defined for PTP, for example 319 and 320).
 
 - Provide ability to use the network hardware’s clock as a free running clock by being able to query the network hardware’s clock to enable establishment of a relation between the network hardware clock and a system clock.
 
 The target of these APIs is Ethernet hardware. The API is intended to work both with NICs which have support specifically for generating hardware timestamps for PTP traffic, as well as with NICs which can generate hardware timestamps for all traffic and so would work with PTP traffic as well.
 
-As mentioned above, the main scenario intended to be supported is PTP version 2. All references to PTP throughout the document should be assumed to apply to PTP version 2 wherever the version of PTP is not explicitly specified.
+(As mentioned above, the main scenario intended to be supported is PTP version 2. All references to PTP throughout the document should be assumed to apply to PTP version 2 wherever the version of PTP is not explicitly specified.) - remove, though wording helpful
 
 From INF page: "**Exactly which hardware timestamping capabilities should be enabled** depends on the capabilities of the NIC hardware. As outlined on (ADD LINK), **the main scenario** which needs to be addressed is PTP version 2 over UDP (for both IPv4 and IPv6) operating in 2 step mode. This is the scenario that the **\*PtpHardwareTimestamp** keyword addresses. Supporting hardware timestamping for PTP version 2 over UDP (in 2 step mode) for both Rx and Tx direction should be the main consideration when determining which hardware timestamping capabilities in hardware should be enabled when this keyword is set to enabled." (Maybe just add second sentence)
 

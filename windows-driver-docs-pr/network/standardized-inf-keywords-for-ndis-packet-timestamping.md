@@ -24,16 +24,16 @@ The **\*PtpHardwareTimestamp** keyword corresponds to the hardware capability to
 
 The default setting for the **\*PtpHardwareTimestamp** keyword is disabled and all types of hardware timestamping support in the NIC hardware should be disabled by default.
 
-### Start: edit around notes, fix references to ptp over udp blah blah..., look for antything that sould be aded to reporting caps/config page. 
+## how miniport informs ndis which timestamping capabilites are ecurrently enabled(add to page on reporting current config? fix udp over  references)
+The miniport generates the [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md) status indication to inform NDIS of the various timestamping capabilities which are currently enabled.
 
-## how miniport informs ndis which timestamping capabilites are ecurrently enabled(move to page on reporting current config)
-The miniport generates the [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md) status indication to inform NDIS of the various timestamping capabilities which are currently enabled. 
-
-The flags within the TimestampFlags field in the NDIS_TIMESTAMP_CAPABILITIES structure which correspond to hardware timestamping are `PtpV2OverUdpIPv4EventMsgReceiveHw`, `PtpV2OverUdpIPv4AllMsgReceiveHw`, `PtpV2OverUdpIPv4EventMsgTransmitHw`, `PtpV2OverUdpIPv4AllMsgTransmitHw`, `PtpV2OverUdpIPv6EventMsgReceiveHw`, `PtpV2OverUdpIPv6AllMsgReceiveHw`, `PtpV2OverUdpIPv6EventMsgTransmitHw`, `PtpV2OverUdpIPv6AllMsgTransmitHw`, `AllReceiveHw`, `AllTransmitHw` and `TaggedTransmitHw`. The **CrossTimestamp** field in the NDIS_TIMESTAMP_CAPABILITIES structure for NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG status indicates if hardware cross timestamping is enabled. -* add list to overview?*
+The flags within the **TimestampFlags** field in the [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure that correspond to hardware timestamping are `PtpV2OverUdpIPv4EventMsgReceiveHw`, `PtpV2OverUdpIPv4AllMsgReceiveHw`, `PtpV2OverUdpIPv4EventMsgTransmitHw`, `PtpV2OverUdpIPv4AllMsgTransmitHw`, `PtpV2OverUdpIPv6EventMsgReceiveHw`, `PtpV2OverUdpIPv6AllMsgReceiveHw`, `PtpV2OverUdpIPv6EventMsgTransmitHw`, `PtpV2OverUdpIPv6AllMsgTransmitHw`, `AllReceiveHw`, `AllTransmitHw` and `TaggedTransmitHw`. The **CrossTimestamp** field in the [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure for **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indicates if hardware cross timestamping is enabled. -* add list to overview? with descriptions.. separatee hw, sw, cross*
 
 If the **\*PtpHardwareTimestamp** keyword indicates that hardware timestamping is enabled, the relevant hardware timestamping capabilities of the NIC hardware should be enabled and the miniport driver should report which hardware timestamping capabilities have been enabled by generating the [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md) status indication.
 
-**Exactly which hardware timestamping capabilities should be enabled** depends on the capabilities of the NIC hardware. As outlined on (ADD LINK), **the main scenario** which needs to be addressed is PTP version 2 over UDP (for both IPv4 and IPv6) operating in 2 step mode. This is the scenario that the **\*PtpHardwareTimestamp** keyword addresses. Supporting hardware timestamping for PTP version 2 over UDP (in 2 step mode) for both Rx and Tx direction should be the main consideration when determining which hardware timestamping capabilities in hardware should be enabled when this keyword is set to enabled. -(<make less wordy?) *also add some info to overview and/or current config page ("For more info on which caps shuold be enabled, see...)  *
+### Determining which hardware timestamping capabilities to enable
+
+Exactly which hardware timestamping capabilities should be enabled depends on the capabilities of the NIC hardware. As outlined on (ADD LINK), **the main scenario** which needs to be addressed is PTP version 2 over UDP (for both IPv4 and IPv6) operating in 2 step mode. This is the scenario that the **\*PtpHardwareTimestamp** keyword addresses. Supporting hardware timestamping for PTP version 2 over UDP (in 2 step mode) for both Rx and Tx direction should be the main consideration when determining which hardware timestamping capabilities in hardware should be enabled when this keyword is set to enabled. -(<make less wordy? "addressed?") *also add some info to overview and/or current config page ("For more info on which caps shuold be enabled, see...)  *
 
 For example, if the NIC hardware only supports `PtpV2OverUDPIPv4EventMsgReceiveHw`, `PtpV2OverUDPIPv6EventMsgReceiveHw` and `TaggedTransmitHw` capabilities and the **\*PtpHardwareTimestamp** keyword is enabled, then the miniport can turn on these hardware timestamping capabilities.
 
@@ -44,16 +44,16 @@ It's possible that the NIC hardware supports multiple forms of hardware timestam
 If the **\*PtpHardwareTimestamp** keyword is enabled, then at least some form of capability to generate hardware timestamps for both Rx and Tx for PTPv2 over UDP should be turned on.
 
 > [!NOTE]
-> PTP over raw Ethernet is not supported. The IHV needs to determine what the most efficient way of handling PTP over raw Ethernet packets when supporting PTP over UDP scenario is enabled. **RESTATE!!!**
+> PTP over raw Ethernet is not supported. The IHV needs to determine what the most efficient way of handling PTP over raw Ethernet packets when supporting PTP over UDP is enabled.
 
 > [!NOTE]
 > No support is needed for PTP version 1. If the NIC hardware also supports PTP version 1, then the IHV needs to determine the most efficient way of handling PTP version 1 packets when supporting PTP version 2.
 
-**Are these the most important things to note?**
-
 If the **\*PtpHardwareTimestamp** keyword is enabled, the hardware cross timestamping capability should also be turned on if the hardware supports it.
 
-In all cases, the NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG status indication generated by the miniport should accurately report which hardware timestamping capabilities have been enabled or disabled.
+In all cases, the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication generated by the miniport should accurately report which hardware timestamping capabilities have been enabled or disabled.
+
+### INF entries for *PtpHardwareTimestamp
 
 The **\*PtpHardwareTimestamp** INF keyword is an enumeration keyword. Enumeration standardized INF keywords have the following attributes:
 
@@ -76,15 +76,17 @@ The following table describes the possible INF entries for the **\*PtpHardwareTi
 
 ## \*SoftwareTimestamp INF keyword
 
-The *SoftwareTimestamp keyword corresponds to the types of software timestamping the miniport is capable of, and using the configured value for this keyword the miniport should be able to determine which of the supported software timestamping capabilities are currently enabled. The possible Enum values for this keyword which can be present in the inf file for a miniport are described below.
+The **\*SoftwareTimestamp** keyword corresponds to the types of software timestamping the miniport driver is capable of. The miniport driver uses the configured value for this keyword to determine which of the supported software timestamping capabilities are currently enabled.
 
-The default setting for the software timestamping keyword is disabled and all types of software timestamping support in the miniport should be disabled by default.
+The default setting for the **\*SoftwareTimestamp** keyword is disabled and all types of software timestamping support in the miniport should be disabled by default.
 
-As mentioned above, the miniport generates the NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG status indication to inform NDIS of the various timestamping capabilities which are currently enabled. The fields within the TimestampFlags field in the NDIS_TIMESTAMP_CAPABILITIES structure which correspond to software timestamping are AllReceiveSw, AllTransmitSw and TaggedTransmitSw.
+The miniport generates the [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md) status indication to inform NDIS of the various timestamping capabilities which are currently enabled.
 
-If the *SoftwareTimestamp keyword contains a value which corresponds to some form of software timestamping being enabled, then the miniport should enable the configured software timestamping capabilities and the NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG status indication generated by the miniport should report accurately which software timestamping capabilities have been enabled.
+The flags within the **TimestampFlags** field in the [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure that correspond to software timestamping are `AllReceiveSw`, `AllTransmitSw` and `TaggedTransmitSw`.
 
-If the miniport does not support any type of software timestamping than the *SoftwareTimestamp keyword should not be included in its inf file.
+If the **\*SoftwareTimestamp** keyword contains a value that indicates that some configuration of software timestamping is enabled, then the miniport should enable the configured software timestamping capabilities and the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication that the miniport generates should accurately report which software timestamping capabilities have been enabled.
+
+If the miniport does not support any type of software timestamping then the **\*SoftwareTimestamp** keyword should not be included in its INF file.
 
 The **\*SoftwareTimestamp** INF keyword is an enumeration keyword. Enumeration standardized INF keywords have the following attributes:
 
