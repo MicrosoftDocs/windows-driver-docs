@@ -21,7 +21,7 @@ A value that describes whether the device should be enabled to wake the computer
 A value that describes whether the device should be enabled to wake the computer when the device receives a *magic paket* and the system is in the *S0ix* power state. This does not apply when the system is in the *S4* power state.
 
 > [!NOTE]
-> **\*ModernStandbyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later. It's for traditional NDIS miniport driver only.
+> **\*ModernStandbyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later. It's for traditional NDIS miniport driver use only.
 
 > [!NOTE]
 > **\*ModernStandbyWoLMagicPacket** is deprecated in [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) and must not be used by its client drivers.
