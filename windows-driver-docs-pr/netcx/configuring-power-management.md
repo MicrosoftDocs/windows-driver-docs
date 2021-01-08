@@ -197,7 +197,7 @@ SubkeyName: The name of the keyword that you must specify in the INF file and th
 
 ParamDesc: The display text that is associated with SubkeyName.
 
-Value: The enumeration integer value that is associated with each option in the list. This value is stored in NDI\params\ SubkeyName\Value.
+Value: The enumeration integer value that is associated with each option in the list.
 
 EnumDesc: The display text that is associated with each value that appears in the menu.
 
