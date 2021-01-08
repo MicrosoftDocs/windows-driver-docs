@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Standardized INF Keywords for Power Management
 
-The power management standardized keywords are defined in the device driver INF file. The operating system reads these standardized keywords and adjusts the current power management capabilities of the device. The device driver should always indicate the device's hardware power management capabilities to NDIS in the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
+The power management standardized keywords are defined in the device driver INF file. The operating system reads these standardized keywords and adjusts the current power management capabilities of the device. The traditional NDIS miniport device driver should always indicate the device's hardware power management capabilities to NDIS in the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
 
 The following standardized INF keywords are defined to enable or disable support for power management features of network adapters.
 
@@ -21,10 +21,16 @@ A value that describes whether the device should be enabled to wake the computer
 A value that describes whether the device should be enabled to wake the computer when the device receives a *magic paket* and the system is in the *S0ix* power state. This does not apply when the system is in the *S4* power state.
 
 > [!NOTE]
-> **\*ModernStandbyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later.
+> **\*ModernStandbyWoLMagicPacket** is supported in NDIS 6.60 and later, or Windows 10, version 1607 and later. It's for traditional NDIS miniport driver only.
+
+> [!NOTE]
+> **\*ModernStandbyWoLMagicPacket** is deprecated in [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) and must not be used by its client drivers.
 
 <a href="" id="-devicesleepondisconnect"></a>**\*DeviceSleepOnDisconnect**  
 A value that describes whether the device should be enabled to put the device into a low-power state (sleep state) when media is disconnected and return to a full-power state (wake state) when media is connected again.
+
+> [!NOTE]
+> **\*DeviceSleepOnDisconnect** is deprecated in [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) and must not be used by its client drivers.
 
 <a href="" id="-pmarpoffload"></a>**\*PMARPOffload**  
 A value that describes whether the device should be enabled to offload the Address Resolution Protocol (ARP) when the system enters a sleep state.
