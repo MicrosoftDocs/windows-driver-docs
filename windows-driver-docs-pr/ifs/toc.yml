@@ -395,6 +395,8 @@
             href: irp-mj-file-system-control2.md
         - name: "Acknowledging oplock breaks"
           href: acknowledging-oplock-breaks.md
+        - name: "Oplock synchronization"
+          href: oplock-synchronization.md
   - name: "Kernel network redirector driver components"
     items:
     - name: "The RDBSS driver and library"

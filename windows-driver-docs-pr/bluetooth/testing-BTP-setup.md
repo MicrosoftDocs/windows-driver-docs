@@ -31,7 +31,7 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 ## Software Setup
 
-1. Download the [Windows Driver Kit](../download-the-wdk.md#download-icon-step-2-install-wdk-for-windows-10-version-2004).
+1. Download the [Windows Driver Kit](../download-the-wdk.md).
 
 2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\10\Testing\Runtimes` directory.
 
