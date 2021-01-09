@@ -2,7 +2,7 @@
 title: Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 description: Learn about Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "ExAllocatePool3", "ExAllocatePool2"]
-ms.date: 12/16/2020
+ms.date: 01/08/2021
 ms.localizationpriority: medium
 ---
 
@@ -164,7 +164,7 @@ PVOID Allocation = ExAllocatePoolZero(PagedPool, 100, 'abcd');
 
 ## Driver verifier UnSafeAllocatePool rules
 
-The driver verifier [UnSafeAllocatePool](/windows-hardware/drivers/devtest/unsafeallocatepool) rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
+The driver verifier [UnSafeAllocatePool](/windows-hardware/drivers/devtest/kmdf-unsafeallocatepool) rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
 
 ## See Also
 
