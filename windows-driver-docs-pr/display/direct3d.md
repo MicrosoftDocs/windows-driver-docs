@@ -30,7 +30,7 @@ Contains prototypes for callbacks that are implemented by the driver and definit
 [*d3d9types.h*](/windows-hardware/drivers/ddi/d3d9types)
 Contains Direct3D type definitions used by both applications and drivers. Except for D3DHAL_DP2OPERATION, all other Direct3D enumerated types are defined in this header.
 
-[*d3dcaps.h*](/windows-hardware/drivers/ddi/d3dcap)
+[*d3dcaps.h*](/windows-hardware/drivers/ddi/d3dcaps)
 Contains structures and definitions that describe capabilities of various aspects of Direct3D drivers.
 
 *ddrawint.h*  
