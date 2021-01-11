@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 
 |Topic|Description|
 |----|----|
-|[Tap and Do](tap-and-do.md)|Tap and Do is a gesture that is a natural interaction between people in close proximity used to trigger doing something together between the devices they are holding.|
+|[Tap and Do](./tap-and-do-scenarios.md)|Tap and Do is a gesture that is a natural interaction between people in close proximity used to trigger doing something together between the devices they are holding.|
 |[NFP provider model](nfp-provider-model.md)|The Near Field Proximity (NFP) provider driver model provides a common surface for Windows to use NFP capabilities and to enable NFP scenarios and use cases.|
 |[NFP device driver requirements](nfp-device-driver-requirements.md)|Provides information about NFP device driver requirements.|
 

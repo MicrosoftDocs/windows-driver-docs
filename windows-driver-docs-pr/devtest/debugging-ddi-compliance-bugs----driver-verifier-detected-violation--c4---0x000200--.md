@@ -136,7 +136,7 @@ Fixing these bug checks that have Arg1 values in the range 0x00020000 to 0x00020
 
 In the example we've used here (0x20004), a memory allocation of any sort in the ISR is going to violate the IRQL rules set for the [**ExAllocatePoolWithTagPriority**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) routine.
 
-In general, you should review the documentation about the routine for information about IRQL and proper usage. Review the specific [DDI Compliance Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules) that test the function. In this case, the rule is [**IrqlExAllocatePool**](./wdm-irqlexallocatepool.md).
+In general, you should review the documentation about the routine for information about IRQL and proper usage. Review the specific [DDI Compliance Rules](./static-driver-verifier-rules.md) that test the function. In this case, the rule is [**IrqlExAllocatePool**](./wdm-irqlexallocatepool.md).
 
 Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver source code, using the same rule(s). Static Driver Verifier is a tool that scans Windows driver source code and reports on possible issues by simulating the exercising of various code paths. Static Driver Verifier is an excellent development-time utility to help identify these kinds of issues.
 
@@ -145,11 +145,9 @@ Use [Static Driver Verifier](static-driver-verifier.md) to analyze your driver s
 
 [DDI compliance checking](ddi-compliance-checking.md)
 
-[DDI Compliance Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules)
+[DDI Compliance Rules](./static-driver-verifier-rules.md)
 
 [Static Driver Verifier](static-driver-verifier.md)
 
 [**Bug Check 0xC4: DRIVER\_VERIFIER\_DETECTED\_VIOLATION**](../debugger/bug-check-0xc4--driver-verifier-detected-violation.md)
-
- 
 

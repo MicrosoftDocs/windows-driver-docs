@@ -29,7 +29,7 @@ During the **Scan** step, SDV scans your driver's code for function role type de
 
 ### <span id="check"></span><span id="CHECK"></span>Check
 
-During the **Check** step, SDV prepares for and verifies the driver by using the rules that you selected for the verification. For more information about the rules that you can select, see [Static Driver Verifier Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules).
+During the **Check** step, SDV prepares for and verifies the driver by using the rules that you selected for the verification. For more information about the rules that you can select, see [Static Driver Verifier Rules](./static-driver-verifier-rules.md).
 
 SDV begins by determining if the selected rules require additional components of the operating system model. If they do, SDV copies the additional operating system model files into the driver's sources directory.
 
@@ -42,6 +42,4 @@ During this step, SDV creates a subdirectory for each rule that it verified in t
 ### <span id="comment"></span><span id="COMMENT"></span>Comment
 
 While SDV performs the steps in the verification process, it writes status messages to the command line, along with error messages that report errors that arise in each step. For information about the status messages, see [Command-Line Output](command-line-output.md). For information about the error messages, see [Static Driver Verifier Error Messages](static-driver-verifier-error-messages.md). For information about enabling diagnostics to help you and Microsoft troubleshoot problems with SDV, see [Static Driver Verifier Diagnostics](static-driver-verifier-diagnostics.md).
-
- 
 
