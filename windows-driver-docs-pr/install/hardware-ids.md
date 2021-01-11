@@ -10,6 +10,16 @@ ms.localizationpriority: High
 
 A hardware ID is a vendor-defined identification string that Windows uses to match a device to an INF file. In most cases, a device has more than one hardware ID associated with it. Typically, a list of hardware IDs is sorted from most to least suitable for a device.
 
+To find hardware ID for a given device, follow these steps:
+
+1. Open Device Manager.
+2. Find the device in the tree.
+3. Right-click the device and select **Properties**.
+4. Select the Details tab.
+5. In the **Property** drop-down, select **Hardware Ids** or **Compatible Ids**.
+
+## Creating a hardware ID for a device
+
 Typically, when you create a new hardware ID for your device, you'll use one of the following generic formats:
 
 `<enumerator>\<enumerator-specific-device-ID>`
