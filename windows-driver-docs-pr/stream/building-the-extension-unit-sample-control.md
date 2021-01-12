@@ -4,7 +4,7 @@ description: Building the Extension Unit Sample Control
 keywords:
 - Extension Unit controls WDK USB Video Class
 - controls WDK USB Video Class
-ms.date: 01/30/2019
+ms.date: 01/12/2021
 ms.localizationpriority: medium
 ---
 
@@ -102,7 +102,7 @@ Use these steps to build the control:
     - Use the second GUID as the IID for your extension unit. Replace the y-based GUID placeholders with the new GUID in *Interface.idl* and *Xuplgin.inf*.
     - Use the third GUID as the class GUID (clsid) for your extension unit. Replace the z-based GUID placeholder with the new GUID in *Xuplgin.inf, Xuproxy.h*, and *Xusample.rgs.*
 
-6. Copy *Extend.def* from the WIA extend sample and edit it. *Uvcxuplugn.def* should contain:
+6. Create *Uvcxuplgn.def* as follows:
 
     ```cpp
     LIBRARY uvcxuplgn
