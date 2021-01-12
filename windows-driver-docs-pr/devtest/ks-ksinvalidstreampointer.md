@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The **KsInvalidStreamPointer** rule verifies if a KS miniport driver provides a valid KS Stream Pointer as a function argument. Typical violations are caused by incorrect pointer handling or a pointer corruption caused by incorrect use of memory.
 
-A valid stream pointer is a leading or trailing edge stream pointer or a stream pointer that has been cloned via [KsStreamPointerClone](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone). For more information see [Leading and Trailing Edge Stream Pointers](/windows-hardware/drivers/stream/leading-and-trailing-edge-stream-pointers).
+A valid stream pointer is a leading or trailing edge stream pointer or a stream pointer that has been cloned via [KsStreamPointerClone](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerclone). For more information see [Leading and Trailing Edge Stream Pointers](../stream/leading-and-trailing-edge-stream-pointers.md).
 
 This rule also verifies that [KsStreamPointerDelete](/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete) has not been used to attempt to delete a non-cloned stream pointer.
 

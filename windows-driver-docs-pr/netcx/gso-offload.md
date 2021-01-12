@@ -32,7 +32,7 @@ The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-valu
 
 ## Configuring GSO
 
-Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
+Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
 
 To configure GSO, the client driver:
 

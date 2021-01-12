@@ -62,6 +62,6 @@ For information about compiling ACPI Source Language (ASL) into AML, see [Micros
 
 Version 5.0 of the Microsoft ASL compiler supports features in the [ACPI 5.0 specification](https://uefi.org/specifications).
 
-The ASL compiler is distributed with the [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+The ASL compiler is distributed with the [Windows Driver Kit (WDK)](../download-the-wdk.md).
 
 The ASL compiler (asl.exe) is located in the Tools\\arm\\ACPIVerify, Tools\\arm64\\ACPIVerify, Tools\\x86\\ACPIVerify, and Tools\\x64\\ACPIVerify directories of the installed WDK, for example, C:\Program Files (x86)\Windows Kits\10\Tools\x86\ACPIVerify.
