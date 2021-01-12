@@ -30,7 +30,7 @@ This section includes:
 
 [Survey of Verification Tools](survey-of-verification-tools.md)
 
-[DDI Compliance Rules](/windows-hardware/drivers/devtest/static-driver-verifier-rules)
+[DDI Compliance Rules](./static-driver-verifier-rules.md)
 
 [Checked Build of Windows](checked-build-of-windows.md)
 

@@ -57,7 +57,7 @@ The device class code, subclass code, and protocol code are determined by the *b
 
 ### Multiple-Interface USB Devices
 
-Devices with multiple interfaces are called *composite* devices. Starting with Windows 2000, when a new [USB composite device](/windows-hardware/drivers/usbcon/register-a-composite-driver) is plugged into a computer, the USB hub driver creates a physical device object (PDO) and notifies the operating system that its set of child devices has changed. After querying the hub driver for the hardware identifiers associated with the new PDO, the operating system searches the appropriate INF files to find a match for the identifiers. If it finds a match other than *USB\\COMPOSITE*, it loads the driver indicated in the INF file. However, if no other match is found, the operating system uses the compatible ID *USB\\COMPOSITE*, for which it loads the USB Generic Parent driver. The Generic Parent driver then creates a separate PDO and generates a separate set of hardware identifiers for each interface of the composite device.
+Devices with multiple interfaces are called *composite* devices. Starting with Windows 2000, when a new [USB composite device](../usbcon/register-a-composite-driver.md) is plugged into a computer, the USB hub driver creates a physical device object (PDO) and notifies the operating system that its set of child devices has changed. After querying the hub driver for the hardware identifiers associated with the new PDO, the operating system searches the appropriate INF files to find a match for the identifiers. If it finds a match other than *USB\\COMPOSITE*, it loads the driver indicated in the INF file. However, if no other match is found, the operating system uses the compatible ID *USB\\COMPOSITE*, for which it loads the USB Generic Parent driver. The Generic Parent driver then creates a separate PDO and generates a separate set of hardware identifiers for each interface of the composite device.
 
 Each interface has a device ID of the following form:
 
@@ -90,6 +90,4 @@ Where:
 -   *p(2)* is the protocol code.
 
 The device class code, subclass code, and protocol code are determined by the *bInterfaceClass, bInterfaceSubClass, and bInterfaceProtocol* fields of the interface descriptor, respectively. These are 2-digit numbers.
-
- 
 
