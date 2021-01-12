@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 You can use a log file to record information about the files copied to a system during an installation. The log file can be either the system log or your own installation log file.
 
-The following table lists the functions that can be used to manipulate log files. For more information about function descriptions, see the [Microsoft Windows SDK documentation](https://go.microsoft.com/fwlink/p/?linkid=131248).
+The following table lists the functions that can be used to manipulate log files. For more information about function descriptions, see the [Microsoft Windows SDK documentation](/documentation/).
 
 <table>
 <colgroup>
@@ -56,6 +56,4 @@ The following table lists the functions that can be used to manipulate log files
 </tr>
 </tbody>
 </table>
-
- 
 

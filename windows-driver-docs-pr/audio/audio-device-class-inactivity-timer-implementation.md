@@ -35,7 +35,7 @@ Vendors can override the default values of the following power-idle parameters:
     \HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\xxxx\yyyy\PowerSettings\ConservationIdleTime
     ```
 
-    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
+    Note that *xxxx* represents the Media class GUID (see [System-Supplied Device Setup Classes](../install/system-defined-device-setup-classes-reserved-for-system-use.md)) and *yyyy* represents the name of the driver's subkey under the Media class GUID. The value of the key specifies the time-out interval in seconds.
 
 -   *PerformanceIdleTime*
 
@@ -79,6 +79,4 @@ HKR represents the driver's root key in the registry:
 ```
 
 Again, *xxxx* represents the Media class GUID and *yyyy* represents the name of the driver's subkey. The **PowerSettings** subkey is specified relative to the path name for the root key.
-
- 
 

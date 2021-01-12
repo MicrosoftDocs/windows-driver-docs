@@ -92,8 +92,8 @@ By default, the framework reports an error if your driver specifies a read buffe
 
 For related information, see:
 
--   [How to send USB bulk transfer requests](/windows-hardware/drivers/usbcon/usb-bulk-and-interrupt-transfer)
--   [How to transfer data to USB isochronous endpoints](/windows-hardware/drivers/usbcon/transfer-data-to-isochronous-endpoints)
+-   [How to send USB bulk transfer requests](../usbcon/usb-bulk-and-interrupt-transfer.md)
+-   [How to transfer data to USB isochronous endpoints](../usbcon/transfer-data-to-isochronous-endpoints.md)
 -   [How to use the continuous reader for reading data from a USB pipe](../usbcon/index.md)
 
 ### <a href="" id="writing-to-a-pipe"></a> Writing to a Pipe
@@ -108,7 +108,7 @@ To write data to a USB output pipe, your driver can use one (or both) of the fol
 
     To write data asynchronously to a USB input pipe, your driver can call the [**WdfUsbTargetPipeFormatRequestForWrite**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipeformatrequestforwrite) method to build a write request. Then the driver can call [**WdfRequestSend**](/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsend) to send the request asynchronously.
 
-For related information, see [How to send USB bulk transfer requests](/windows-hardware/drivers/usbcon/usb-bulk-and-interrupt-transfer).
+For related information, see [How to send USB bulk transfer requests](../usbcon/usb-bulk-and-interrupt-transfer.md).
 
 ### <a href="" id="stopping-and-resetting-a-pipe"></a> Stopping and Resetting a Pipe
 
@@ -176,6 +176,4 @@ Formats an I/O request that contains a URB. The driver can call [**WdfRequestSen
 
 <a href="" id="---------wdfusbtargetpipewdmgetpipehandle--kmdf-only-"></a>[**WdfUsbTargetPipeWdmGetPipeHandle (KMDF only)**](/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipewdmgetpipehandle)  
 Returns a device's USBD pipe handle. Some URBs require this handle.
-
- 
 
