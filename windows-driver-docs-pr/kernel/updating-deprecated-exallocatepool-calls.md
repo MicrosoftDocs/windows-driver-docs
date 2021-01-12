@@ -2,7 +2,7 @@
 title: Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 description: Learn about Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "ExAllocatePool3", "ExAllocatePool2"]
-ms.date: 01/08/2021
+ms.date: 01/11/2021
 ms.localizationpriority: medium
 ---
 
@@ -20,9 +20,9 @@ The following DDIs are deprecated starting with  Windows 10, version 2004 and sh
 
 [ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
 
-## Driver updates for versions of Windows later than Windows 10, version 2004
+## Driver updates for versions of Windows 10, version 2004 and later
 
-If you are building a driver that targets versions of Windows after Windows 10, version 2004, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
+If you are building a driver that targets Windows 10, version 2004 and later, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
 
 | Old API                       | New API                                                                     |
 |-------------------------------|-----------------------------------------------------------------------------|
