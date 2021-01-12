@@ -12,15 +12,15 @@ ms.localizationpriority: medium
 
 If you are building applications or drivers for Windows 10, you only need to read this section. If you are using a version of Visual Studio earlier than Visual Studio 2015, skip this section and start with [Redistributing the C Runtime (applies to before Visual Studio 2015)](#redistributing-the-c-runtime-applies-to-before-visual-studio-2015).
 
-Starting in Visual Studio 2015, there is one C runtime, the Universal C Runtime (UCRT), used by both Visual Studio and Windows. There is no longer a runtime redistribution requirement.
+Starting in Visual Studio 2015, the Universal C Runtime (UCRT) encompasses the C runtime. The other pieces required for a complete program (C/C++ Language Features, C++ Library) are provided by Visual Studio in the VC++ Redistributable. To avoid a runtime redistribution requirement, those pieces are statically linked.
 
 > [!WARNING]
-> When building a user-mode driver project in Visual Studio, if you set **PlatformToolset**  to `WindowsUserModeDriver10.0`, the toolset ignores any runtime library specified in the project and instead links statically against the VC++ Runtime DLLs and dynamically against the UCRT.  This hybrid linking behavior cannot be overridden.
+> When building a user-mode driver project in Visual Studio, if you set **PlatformToolset**  to `WindowsUserModeDriver10.0`, the toolset ignores any runtime library specified in the project and instead links statically against the VC++ Runtime and dynamically against the UCRT.  This hybrid linking behavior cannot be overridden.
 
 If you need to make modifications (for example include another DLL), use the following procedure to reconfigure hybrid linking:
 
 1. Set to link statically in general: **Properties > C/C++ > Code Generation > Runtime Library = Multi-threaded (/MT)**
-2. Remove the statically linked UCRT.
+2. Remove the statically linked UCRT: **Properties > Linker > Input > Ignore Specific Default Libraries += libucrt.lib**
 3. Add the dynamically linked UCRT: **Properties > Linker > Input > Additional Dependencies += ucrt.lib**, **Properties > Linker > Input > Ignore Specific Default Libraries += libucrt.lib**
 
 ## Redistributing the C Runtime (applies to before Visual Studio 2015)
@@ -32,8 +32,8 @@ Visual Studio installs the latest version of the VCRT into the `System32` direct
 
 If your user-mode driver or desktop application uses the VCRT, you must distribute the appropriate dynamic-link libraries. Use the Visual C++ Redistributable Package (`VCRedist_x86.exe`, `VCRedist_x64.exe`, `VCRedist_arm.exe`). Chain the redistributable package in with other binaries, and the redistributable package will receive automatic updates.
 
-If you want to achieve isolation or avoid the dependency on the VC++ Redistributable, you can link statically to the CRT instead. In this case, the CRT would need to be updated manually.
-Alternatively, non-driver projects are usually able to copy the specific Visual C/C++ DLLs to the *application local folder* (where the application is installed) along with their other binaries; app-local deployment is not appropriate for a driver.
+If you want to achieve isolation or avoid the dependency on the VC++ Redistributable, you can link statically to the CRT instead. 
+While non-driver projects are usually able to copy the specific Visual C/C++ DLLs to the *application local folder* (where the application is installed) to avoid a dependency on the VC++ Redistributable, app-local deployment is not appropriate for a driver.
 
 Do not copy individual CRT components to `System32` instead of using a redistributable package. This may cause the CRT not to be serviced automatically, and potentially to be overwritten.
 
@@ -62,7 +62,7 @@ Msvcr120.dll = 2
 
 For UMDF drivers:
 
--   Statically link your driver against the CRT to include the runtime in the binary. In this case, you do not need to redistribute the CRT. A user-mode driver should not use dynamic runtime libraries.
+-   Statically link your driver against the CRT to include the runtime in the binary. In this case, you do not need to redistribute the CRT.
 
 ## Linking your code with the C Runtime libraries (applies to before Visual Studio 2015)
 
