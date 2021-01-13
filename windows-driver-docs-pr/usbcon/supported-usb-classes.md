@@ -34,7 +34,7 @@ The current list of USB class specifications and class codes is documented in th
 
 Windows categorizes devices by *device setup classes*, which indicate the functionality of the device.
 
-Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use).
+Microsoft defines setup classes for most devices. IHVs and OEMs can define new device setup classes, but only if none of the existing classes apply. For more information, see [System-Defined Device Setup Classes](../install/system-defined-device-setup-classes-reserved-for-system-use.md).
 
 Two important device setup classes for USB devices are as follows:
 
