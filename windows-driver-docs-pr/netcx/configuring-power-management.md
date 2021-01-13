@@ -207,7 +207,7 @@ The following table describes the possible INF entries for the **\*IdleRestricti
 
 |SubkeyName|ParamDesc|Value|EnumDesc|
 |--- |--- |--- |--- |
-|**_*IdleRestriction_**|Wake on pattern match|0 (Default)|No Restriction|
+|**_*IdleRestriction_**|idle power down restriction|0 (Default)|No Restriction|
 |||1|Only idle when user is not present|
 
 ## Power management scenarios for Modern Standby system
