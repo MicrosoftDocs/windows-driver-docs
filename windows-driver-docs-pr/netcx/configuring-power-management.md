@@ -16,7 +16,7 @@ A typical networking device supports 3 common power management features:
 - The networking device can enter a lower-power (Dx) state when instructed by the OS.
   - The client driver registers optional WDF event callbacks to receive notification of power transitions, as described in [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
 
-  - If the network device can enter its Dx state while the system remains in its working (S0) state then the client driver should support idle power-down. See [Supporting Idle Power-Down](../wdf/supporting-idle-power-down.md).
+  - If the network device can enter its Dx state while the system remains in its working (S0) state then the client driver should support idle power-down. See [Supporting Idle Power-Down](../wdf/supporting-idle-power-down.md). Besides the standard user control available to all WDF devices, NetAdapterCx allows additional network specific idle control in the form of [Standardized INF Keywords for Power Management](../network/standardized-inf-keywords-for-power-management.md). See the [User Control of Network Device Idle and Wake Behavior](#user-control-of-network-device-idle-and-wake-behavior) section below.
 
 - When the networking device is in the Dx state, it can trigger a wake-up signal if a pre-configured wake condition has occurred.
   - For details on how a WDF device can wake the system from a system-wide low-power state see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
@@ -183,6 +183,32 @@ If the [**NET_WAKE_SOURCE_TYPE**](/windows-hardware/drivers/ddi/netwakesource/ne
 - **NetWakeSourceTypePacketFilterMatch**, call [**NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_wake_reason_filter_packet_init)  to initialize the **NET_ADAPTER_WAKE_REASON_PACKET** structure. Call **NetAdapterReportWakeReasonPacket** to report this wake reason.
 
 - **NetWakeSourceTypeMediaChange**, call [**NetAdapterReportWakeReasonMediaChange**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterreportwakereasonmediachange) to report this wake reason.
+
+## User Control of Network Device Idle and Wake Behavior
+
+In addition to the standard WDF process for giving user control over the device idle and wake behavior as described in [User Control of Device Idle and Wake Behavior](../wdf/user-control-of-device-idle-and-wake-behavior.md), NetAdapterCx also defines network device specific standardized INF keywords for allowing more control:
+
+**\*IdleRestriction**  
+If a network device has both idle power down and wake on packet filter capabilities, this setting allows the user to decide when the device idle power down can happen.
+
+**\*IdleRestriction** is an enumeration standardized INF keyword and has the following attributes:
+
+SubkeyName: The name of the keyword that you must specify in the INF file and that appears in the registry.
+
+ParamDesc: The display text that is associated with SubkeyName.
+
+Value: The enumeration integer value that is associated with each option in the list.
+
+EnumDesc: The display text that is associated with each value that appears in the menu.
+
+Default: The default value for the menu.
+
+The following table describes the possible INF entries for the **\*IdleRestriction** keyword.
+
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**_*IdleRestriction_**|idle power down restriction|0 (Default)|No Restriction|
+|||1|Only idle when user is not present|
 
 ## Power management scenarios for Modern Standby system
 
