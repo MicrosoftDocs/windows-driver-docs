@@ -38,7 +38,8 @@ Usage: btetlparse [-cfa <output_cfa_filename>] [-hci <output_hci_filename>]
 ```
 
 ## Usage example
+Move the ETL file collected by [Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md) to the same folder as BTETLParse within the extracted BTP package. Then run:
 
-btetlparse -cfa BthTracing.cfa -hci BthTracing.hci -pcap BthTracing.pcap -pcapng BthTracing.pcapng BthTracing.etl
+- `btetlparse -cfa BthTracing.cfa -hci BthTracing.hci -pcap BthTracing.pcap -pcapng BthTracing.pcapng BthTracing.etl` from a command prompt/PowerShell console
 
-Parses BthTracing.etl into all available filetypes.
+This command parses BthTracing.etl into all available filetypes. See Command Line Options above for how to open each file type.

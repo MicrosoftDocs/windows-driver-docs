@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 The Bluetooth Virtual Sniffer allows the user to view live hci traces in the
 Frontline Protocol Analysis System, in the Ellisys Bluetooth Analyzer, or in Wireshark.
 
-**Note:** Wireshark is reccomended.
+**Note:** Wireshark is recommended.
 
 ## Command Line Options
 ```
@@ -32,19 +32,28 @@ btvs.exe [-Mode Frontline|Ellisys|Wireshark] [-Address 127.0.0.1] [-Port 24352] 
     Remote      (Wireshark only) Specifies whether Wireshark will be on the same machine
                     or run remotely. Off will try to start Wireshark on the same machine. (Default: off)
 ```
+All of these usages require opening a command prompt or Powershell console and navigating to btvs application inside the extracted BTP folder.
 
-## Frontline Protocol Analysis System operation
+## Wireshark operation
 
 ### Prerequisites:
-1. Install [Frontline Protocol Analysis System](http://www.fte.com/) on the
-    machine to be traced.
+1. Install [Wireshark](https://www.wireshark.org/).  
+    Note: This does not need to be installed on the machine to be traced.  
+    Note: The first time btvs runs in wireshark mode it'll ask if it can be let through the firewall. Respond yes.  
+    Note: If btvs doesn't work or you said no to btvs getting though your firewall, then check your firewall.
 
-### Usage:
-1. Run btvs.exe on the same machine. No command line options are necessary. This
-    launches the Frontline Protocol Analysis System.
-2. Click the `Start Capture` button (Red button on the tool bar).
-3. Click `View->Frame Display` to show HCI traces.
-
+### Usage for Wireshark on same machine (Recommended):
+1. Run btvs.exe using the command prompt\PowerShell console:  
+    `btvs.exe -Mode Wireshark`
+2. If Wireshark is installed, Wireshark will automatically open.  
+    Otherwise, manually start Wireshark and provide the default TCP pipe as the interface:  
+    `wireshark -k -i TCP@127.0.0.1:24352`
+### Usage for Wireshark on separate machine:
+1. Run btvs.exe using the command prompt\Powershell console:  
+    `btvs.exe -Mode Wireshark -Remote on`
+2. Run wireshark and pass in the ip address of the first machine and chosen port via command line parameters:  
+    `wireshark -k -i TCP@<ip address>:<port>`  
+    Note: port defaults to 24352
 
 ## Ellisys Bluetooth Analyzer operation
 
@@ -63,30 +72,20 @@ btvs.exe [-Mode Frontline|Ellisys|Wireshark] [-Address 127.0.0.1] [-Port 24352] 
 1. Start Ellisys Bluetooth Analyzer.
 2. Select the `HCI Overview (injection)` overview tab.
 3. Click `Record`.
-4. Run btvs.exe in Ellisys mode on the machine to be traced:
-    btvs.exe -Mode Ellisys
+4. Run btvs.exe in Ellisys mode on the machine to be traced:  
+    `btvs.exe -Mode Ellisys`  
     a. Optionally, if the Ellisys Bluetooth Analyzer is running on a different
         machine, or if the listen port was changed, provide the Address or Port
         on the command line (see Command Line Options, above).
 
-
-## Wireshark operation
+## Frontline Protocol Analysis System operation
 
 ### Prerequisites:
-1. Install [Wireshark](https://www.wireshark.org/).  
-    Note: This does not need to be installed on the machine to be traced.  
-    Note: The first time btvs runs with wireshark mode it'll ask if it can be let through the firewall. Respond yes.  
-    Note: If btvs doesn't work or you said no to btvs getting though your firewall, then check your firewall.
+1. Install [Frontline Protocol Analysis System](http://www.fte.com/) on the
+    machine to be traced.
 
-### Usage for Wireshark on same machine:
-1. Run btvs.exe:  
-    btvs.exe -Mode Wireshark
-2. If Wireshark is installed, Wireshark will automatically open.  
-    Otherwise, manually start Wireshark and provide the default TCP pipe as the interface:
-    wireshark -k -i TCP@127.0.0.1:24352  
-### Usage for Wireshark on separate machine:
-1. Run btvs.exe:  
-    btvs.exe -Mode Wireshark -Remote on
-2. Run wireshark and pass in ip address of first machine and chosen port via command line parameters:  
-    wireshark -k -i TCP@\<ip address>:\<port>  
-    Note: port defaults to 24352
+### Usage:
+1. Run `btvs.exe` on the same machine using the command prompt\Powershell console. No command line options are necessary. This
+    launches the Frontline Protocol Analysis System.
+2. Click the `Start Capture` button (Red button on the tool bar).
+3. Click `View->Frame Display` to show HCI traces.
