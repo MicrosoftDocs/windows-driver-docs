@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 The Bluetooth ETL parse tool parses a provided ETL file and extracts hci traces.
 
-This tool is meant for parsing ETL files collected using [The Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
+This tool is meant for parsing ETL files collected using the [Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
 [Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt)
 is a way to parse additional logs from the ETL file. 
@@ -31,10 +31,10 @@ Usage: btetlparse [-cfa <output_cfa_filename>] [-hci <output_hci_filename>]
         
     -pcapng <filename>      Wireshark (https://www.wireshark.org/) is used for opening this file type.
 
-    <input_etl_filename>    The is the filename of the etl file we are trying to parse.
+    <input_etl_filename>    The is the filename of the ETL file we are trying to parse.
                                 Default is c:\temp\btetw.etl
 
-    <additional_input_etl_filenames>    BTETLParse can parse multiple etl files at a time.
+    <additional_input_etl_filenames>    BTETLParse can parse multiple ETL files at a time.
 ```
 
 ## Usage example

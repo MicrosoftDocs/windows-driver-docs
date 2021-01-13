@@ -79,7 +79,7 @@ btvs.exe [-Mode Frontline|Ellisys|Wireshark] [-Address 127.0.0.1] [-Port 24352] 
     Note: If btvs doesn't work or you said no to btvs getting though your firewall, then check your firewall.
 
 ### Usage for Wireshark on same machine:
-1. Run btvs.exe:
+1. Run btvs.exe:  
     btvs.exe -Mode Wireshark
 2. If Wireshark is installed, Wireshark will automatically open.  
     Otherwise, manually start Wireshark and provide the default TCP pipe as the interface:
