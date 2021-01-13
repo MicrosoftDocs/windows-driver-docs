@@ -5,7 +5,7 @@ ms.date: 1/12/2021
 ms.localizationpriority: medium
 
 ---
-## Bluetooth Virtual Sniffer (btvs.exe)
+# Bluetooth Virtual Sniffer (btvs.exe)
 
 The Bluetooth Virtual Sniffer allows the user to view live hci traces in the
 Frontline Protocol Analysis System, in the Ellisys Bluetooth Analyzer, or in Wireshark.
@@ -13,25 +13,25 @@ Frontline Protocol Analysis System, in the Ellisys Bluetooth Analyzer, or in Wir
 **Note:** Wireshark is reccomended.
 
 ## Command Line Options
+```
+btvs.exe [-Mode Frontline|Ellisys|Wireshark] [-Address 127.0.0.1] [-Port 24352] [-Service 1|2|3] [-Remote off|on]
 
-    btvs.exe [-Mode Frontline|Ellisys|Wireshark] [-Address 127.0.0.1] [-Port 24352] [-Service 1|2|3] [-Remote off|on]
+    Mode        Optionally specify whether btvs.exe should generate traces
+                    for Frontline, Ellisys, or Wireshark. (Default: Frontline)
 
-        Mode        Optionally specify whether btvs.exe should generate traces
-                        for Frontline, Ellisys, or Wireshark. (Default: Frontline)
+    Address     (Ellisys mode only) Specifies the IP address of the machine
+                    running Ellisys Bluetooth Analyzer. (Default: 127.0.0.1)
 
-        Address     (Ellisys mode only) Specifies the IP address of the machine
-                        running Ellisys Bluetooth Analyzer. (Default: 127.0.0.1)
+    Port        (Ellisys or Wireshark only) Specifies the UDP listen port of the
+                    Ellisys Bluetooth Analyzer injection API\Specifies the TCP port
+                    for Wireshark. (Default: 24352)
 
-        Port        (Ellisys or Wireshark only) Specifies the UDP listen port of the
-                        Ellisys Bluetooth Analyzer injection API\Specifies the TCP port
-                        for Wireshark. (Default: 24352)
+    Service     (Ellisys mode only) Specifies the HCI Injection Service.
+                    1: Primary. 2: Secondary. 3: Tertiary. (Default: 1)
 
-        Service     (Ellisys mode only) Specifies the HCI Injection Service.
-                        1: Primary. 2: Secondary. 3: Tertiary. (Default: 1)
-
-        Remote      (Wireshark only) Specifies whether Wireshark will be on the same machine
-                        or run remotely. Off will try to start Wireshark on the same machine. (Default: off)
-
+    Remote      (Wireshark only) Specifies whether Wireshark will be on the same machine
+                    or run remotely. Off will try to start Wireshark on the same machine. (Default: off)
+```
 
 ## Frontline Protocol Analysis System operation
 

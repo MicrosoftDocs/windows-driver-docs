@@ -54,5 +54,5 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 | AudioHidScenarioTests | - Test binary for Bluetooth Audio and HID scenario tests.</br>- Can be run using TAEF.</br> | TaefAudioHidScenarioTests.dll |
 | BatteryTests | - Test binary for Bluetooth battery tests.</br>- Can be run using TAEF.</br> | TaefBatteryTests.dll |
 | TraduciCmd | - Command line tool for querying and changing the state of the Traduci, including debug commands.</br>- Used for firmware update to Traduci hardware.</br> | TraduciCmd.exe |
-| BTETLParse | - Command line diagnostic tool for parsing etl files into HCI traces.</br>| BTETLParse.exe |
-| BTVS | - Gui tool for capturing HCI traces live. </br>- Sends data to additional tool to parse and display the HCI traces (such as Wireshark).| btvs.exe |
+| BTETLParse | - Command line diagnostic tool for parsing ETL files into HCI traces.</br>| BTETLParse.exe |
+| BTVS | - Gui tool for capturing HCI traces live. </br>- Sends captured HCI trace to additional tool to parse and display (such as Wireshark).| btvs.exe |
