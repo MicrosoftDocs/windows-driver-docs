@@ -1,7 +1,6 @@
 ---
 title: Registry Settings
 description: Registry Settings
-ms.assetid: a2536911-0467-4bd0-a63b-55341f0d7567
 keywords:
 - joysticks WDK HID , registry settings
 - virtual joystick drivers WDK HID , registry settings

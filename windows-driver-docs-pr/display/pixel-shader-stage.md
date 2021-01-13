@@ -1,7 +1,6 @@
 ---
 title: Pixel Shader Stage
 description: Pixel Shader Stage
-ms.assetid: 969b6cb9-7b03-4c9f-bf4a-e8d9b442c847
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

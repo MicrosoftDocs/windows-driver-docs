@@ -1,7 +1,6 @@
 ---
 title: Flipping to the GDI Surface
 description: Flipping to the GDI Surface
-ms.assetid: e74e108d-f88c-4e42-9136-ef087378807a
 keywords:
 - drawing page flips WDK DirectDraw , GDI surface
 - DirectDraw flipping WDK Windows 2000 display , GDI surface

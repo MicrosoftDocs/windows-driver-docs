@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION
 description: The SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION bug check has a value of 0x000000C1. This indicates that the driver wrote to an invalid section of the special pool.
-ms.assetid: 4d5a3d95-de39-4e15-aba8-33257a6f0677
 keywords: ["Bug Check 0xC1 SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION", "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION"]
 ms.date: 05/23/2017
 topic_type:

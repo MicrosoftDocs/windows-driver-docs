@@ -1,7 +1,6 @@
 ---
 title: GDL Templates
 description: GDL Templates
-ms.assetid: 9cce885d-395e-4f8d-8076-951d75d82410
 keywords:
 - GDL WDK , templates
 - templates WDK GDL

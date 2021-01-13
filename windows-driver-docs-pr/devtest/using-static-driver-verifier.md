@@ -1,7 +1,6 @@
 ---
 title: Using Static Driver Verifier
 description: Using Static Driver Verifier
-ms.assetid: 25530e74-a9d2-4e38-a8b8-7bd85e99f171
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

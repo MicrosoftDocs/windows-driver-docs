@@ -1,7 +1,6 @@
 ---
 title: Surface Team Driver Development Best Practices
 description: Surface Team Driver Development Best Practices - Common mistakes made by driver developers to avoid.
-ms.assetid: f4847954-8e29-48bb-b9ae-873fc7c29b2d
 keywords: ["driver development best practices"]
 ms.date: 08/06/2019
 ms.localizationpriority: medium
@@ -127,7 +126,7 @@ provided software device creation interfaces to PNP and power dependencies in an
 8. Don’t create macros that have a return call. See [Functions (C++)](/cpp/cpp/functions-cpp).
 9. No or incomplete Source Code Annotations (SAL). See [SAL 2.0 Annotations for Windows Drivers](../devtest/sal-2-annotations-for-windows-drivers.md).
 10. Using macros instead of inline functions.
-11. Using macros for constants in place of [constexpr](/cpp/cpp/constexpr-cpp?view=vs-2019)
+11. Using macros for constants in place of [constexpr](/cpp/cpp/constexpr-cpp)
 when using C++
 12. Compiling your driver with the C compiler, instead of the C++ compiler to ensure you get strong type checking.
 

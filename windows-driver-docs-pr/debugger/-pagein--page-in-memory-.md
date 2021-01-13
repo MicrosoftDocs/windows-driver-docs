@@ -1,7 +1,6 @@
 ---
 title: .pagein (Page In Memory)
 description: The .pagein command pages in the specified region of memory.
-ms.assetid: 5fb8f9d2-d07a-49c3-b844-aade9bdba367
 keywords: ["Page In Memory (.pagein) command", "memory, Page In Memory (.pagein) command", ".pagein (Page In Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

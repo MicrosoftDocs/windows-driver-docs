@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Enable Debugging
 description: Boot Parameters to Enable Debugging
-ms.assetid: acbe2fcd-6f8f-49c8-9de6-1617a1723cf5
 keywords:
 - boot parameters WDK
 - boot entry parameters WDK

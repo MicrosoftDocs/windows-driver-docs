@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_LowerFilters
 description: DEVPKEY_DeviceClass_LowerFilters
-ms.assetid: 39bc784e-a8be-4921-9a12-f423fe502019
 keywords: ["DEVPKEY_DeviceClass_LowerFilters Device and Driver Installation"]
 topic_type:
 - apiref

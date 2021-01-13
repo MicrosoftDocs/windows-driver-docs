@@ -1,7 +1,6 @@
 ---
 title: GDI Memory Services
 description: GDI Memory Services
-ms.assetid: 60b45f8f-766b-498c-a0c2-3e93ea4b43b9
 keywords:
 - GDI WDK Windows 2000 display , memory services
 - graphics drivers WDK Windows 2000 display , memory services

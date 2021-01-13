@@ -1,7 +1,6 @@
 ---
 title: ndiskd.ndisref
 description: The ndiskd.ndisref extension displays a debug log of a tracked reference count.
-ms.assetid: 6860A567-1017-4184-B8DF-157467360FB9
 keywords: ["ndiskd.ndisref Windows Debugging"]
 ms.date: 06/18/2020
 topic_type:

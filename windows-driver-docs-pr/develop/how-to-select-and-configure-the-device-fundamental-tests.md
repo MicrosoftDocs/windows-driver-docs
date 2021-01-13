@@ -1,5 +1,4 @@
 ---
-ms.assetid: DDAF6D33-46D8-4A04-A3DC-C9FE26ABD003
 title: How to select and configure the Device Fundamentals tests
 description: The WDK for Windows 8 provides a driver testing framework that includes a set of tests called the Device Fundamentals tests.
 ms.date: 04/20/2017
@@ -38,7 +37,7 @@ The [Device Fundamentals Tests](../devtest/device-fundamentals-tests.md) include
 
 You can edit the run-time parameters for many of the Device Fundamentals tests. In the Driver Test Group window, an arrow (») next to a test name indicates that the test has parameters that you can change. Select the arrow (») to display the run-time parameters.
 
-One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](../wdtf/index.md) [SDEL](/windows-hardware/drivers/ddi/index) query that identifies the target devices. You can specify a particular device for testing, for example:
+One of the most useful parameters is *DQ*, which specifies the target device to test. The default value (**IsDevice**) tests all of the devices on the target computer. The *DQ* parameter takes a [**WDTF**](../wdtf/index.md) [SDEL](../wdtf/simple-data-evaluation-language-overview.md) query that identifies the target devices. You can specify a particular device for testing, for example:
 
 **DeviceID=’USB\\ROOT\_HUB\\4&1CD5D022&0’** selects only the device for testing with the specified **DeviceID**.
 

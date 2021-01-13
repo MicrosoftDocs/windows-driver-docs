@@ -1,7 +1,6 @@
 ---
 title: eulaHeaderTitle XML Element
 description: eulaHeaderTitle XML Element
-ms.assetid: 65b8e793-ed7b-4d2c-8a55-9860e6188b77
 keywords: ["eulaHeaderTitle XML Element Device and Driver Installation"]
 topic_type:
 - apiref

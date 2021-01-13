@@ -1,7 +1,6 @@
 ---
 title: Supporting Multifunction Devices On Other Buses
 description: Supporting Multifunction Devices On Other Buses
-ms.assetid: 5fc78dc5-0553-4557-b188-a34810305061
 keywords:
 - multifunction devices WDK , other buses
 - PnP WDK multifunction devices

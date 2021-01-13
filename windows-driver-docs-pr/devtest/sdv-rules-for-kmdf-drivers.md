@@ -1,7 +1,6 @@
 ---
 title: Rules for KMDF Drivers
 description: Rules for KMDF Drivers
-ms.assetid: 63ac4df5-b2dc-43da-abaa-49c5de036d79
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

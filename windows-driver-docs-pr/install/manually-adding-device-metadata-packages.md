@@ -1,7 +1,6 @@
 ---
 title: Manually Adding Device Metadata Packages
 description: Manually Adding Device Metadata Packages
-ms.assetid: 1d0cee1f-8aa7-4fa9-b3c7-797cd09a07f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

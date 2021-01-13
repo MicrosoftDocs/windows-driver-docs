@@ -1,7 +1,6 @@
 ---
 title: NetAdapterCx hardware offloads
 description: Overview of hardware offloads in NetAdapterCx
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads
 ms.date: 10/09/2020
@@ -10,13 +9,20 @@ ms.custom: Fe
 
 # Introduction to NetAdapterCx hardware offloads
 
+> [!WARNING]
+> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>
+> NetAdapterCx is preview only in Windows 10, version 2004.
+>
+> Currently, NetAdapterCx client drivers cannot be certified.
+
 To increase its performance, the Windows TCP/IP stack can offload some tasks to a network interface card (NIC) that has the appropriate task offload capabilities.
 
 NetAdapterCx focuses on ease of offload configuration and management of offload capabilities. Client drivers only need to specify a simple configuration for their hardware offload capabilities and register callbacks to be notified of changes in capabilities. 
 
 This guidance provides an overview of key concepts for hardware offloads in NetAdapterCx.
 
-- Hardware offload capabilities are advertised by the network adapter hardware during initialization and must be advertised before calling [**NetAdapterStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart).
+- Hardware offload capabilities are advertised by the network adapter hardware during initialization and must be advertised before calling [**NetAdapterStart**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapterstart).
 - The driver doesn't need to check standard registry keywords. NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities.
 - The *active* offload capabilities of the network adapter are those that the network adapter is currently programmed to perform. These are a subset of the hardware capabilities advertised by the client driver previously.
 - The TCP/IP stack or an overlying protocol driver can request a change in active capabilities of the network adapter. Client drivers register callbacks with NetAdapterCx to be notified of changes in the active offload capabilities.
@@ -38,4 +44,3 @@ The following offloads are supported by NetAdapterCx and the Windows TCP/IP stac
 | [Receive Segment Coalescing (RSC)](rsc-offload.md) | Offloading coalescing of a sequence of received TCP segments for IPv4 and IPv6. |
 
 For more information on configuring offloads and updating offloads when the TCP/IP stack or an overlying protocol driver requests a change to the net adapter's active capabilities, visit the corresponding offload reference page.
-

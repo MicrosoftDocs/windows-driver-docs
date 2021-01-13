@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_POSITION
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_POSITION property is used to configure the position of the image (graphics) relative to the text content to be printed/endorsed. The WIA minidriver creates and maintains this property.
-ms.assetid: CB7B84F0-A585-49AB-ADDE-039C2D415E72
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS_POSITION Imaging Devices"]
 topic_type:
 - apiref

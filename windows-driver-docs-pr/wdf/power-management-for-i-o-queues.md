@@ -1,7 +1,6 @@
 ---
 title: Power Management for I/O Queues
 description: Power Management for I/O Queues
-ms.assetid: 2e1bf9d2-615b-49b0-b677-f41b23c42eda
 keywords:
 - power management WDK KMDF , I/O queues
 - I/O queues WDK KMDF , power management

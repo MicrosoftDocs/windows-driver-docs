@@ -1,7 +1,6 @@
 ---
 title: WdfObjectDereference macro
 description: The WdfObjectDereference macro decrements the reference count for a specified framework object.
-ms.assetid: e945202c-7e6b-47b7-9216-d7a3a694489e
 keywords:
  - WdfObjectDereference macro
 ms.date: 08/23/2017

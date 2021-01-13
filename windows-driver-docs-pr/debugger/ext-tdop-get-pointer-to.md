@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_GET\_POINTER\_TO
 description: The EXT\_TDOP\_GET\_POINTER\_TO sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns a new typed data description that represents a pointer to specified typed data.
-ms.assetid: 05db8e07-b94f-4cf3-b01b-a918b737ecf4
 keywords: ["EXT_TDOP_GET_POINTER_TO Windows Debugging"]
 topic_type:
 - apiref

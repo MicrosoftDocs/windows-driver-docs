@@ -1,7 +1,6 @@
 ---
 title: Introduction to NDIS Selective Suspend
 description: Introduction to NDIS Selective Suspend
-ms.assetid: B0D44AE3-5197-4264-9838-83FB5EFEB0B0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

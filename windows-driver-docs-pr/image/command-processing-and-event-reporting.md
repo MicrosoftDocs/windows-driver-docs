@@ -1,7 +1,6 @@
 ---
 title: Command Processing and Event Reporting
 description: Command Processing and Event Reporting
-ms.assetid: f51c082d-1be5-4f34-b7a6-82235e8c14f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

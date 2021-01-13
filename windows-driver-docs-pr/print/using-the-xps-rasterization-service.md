@@ -1,7 +1,6 @@
 ---
 title: Using the XPS Rasterization Service
 description: Using the XPS Rasterization Service
-ms.assetid: a6a3746a-3638-464b-bca0-60003f37af76
 ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
@@ -103,7 +102,7 @@ The XPSDrv filter follows these steps to create an XPS rasterizer object:
 
 When the XPS rasterizer object is no longer needed, the filter should release the object by calling the **Release** method on the object's **IXpsRasterizer** interface. For an example implementation of an XPSDrv filter that uses the XPS rasterization service, see the XpsRasFilter sample driver in the WDK.
 
-For use with XPS Rasterization Service, canvases and visual brushes within a fixed page can be nested up to a limit of 64 levels. For more information about canvases and visual brushes, download the [XML Paper Specification](https://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/XPS_1_0.exe).
+For use with XPS Rasterization Service, canvases and visual brushes within a fixed page can be nested up to a limit of 64 levels. For more information about canvases and visual brushes, download the [XML Paper Specification](https://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/xps_1_0.zip).
 
 ## Bitmap Resolution and Pixel Format
 

@@ -1,7 +1,6 @@
 ---
 title: Remote NDIS Messaging
 description: Remote NDIS Messaging
-ms.assetid: 6364a9a1-c65f-463d-971b-cf94cd2a5cde
 keywords:
 - Remote NDIS WDK networking , messaging
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Proprietary Data-Intersection Handlers
 description: Proprietary Data-Intersection Handlers
-ms.assetid: 8ed497d3-2344-4979-9859-e66a4713e6c5
 keywords:
 - data-intersection handlers WDK audio , proprietary
 - proprietary data-intersection handlers WDK audio

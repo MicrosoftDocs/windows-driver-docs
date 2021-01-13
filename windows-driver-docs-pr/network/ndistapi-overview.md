@@ -1,7 +1,6 @@
 ---
 title: NDISTAPI Overview
 description: NDISTAPI Overview
-ms.assetid: d92c58c2-b237-435d-9843-40c217e67d4a
 keywords:
 - NDISTAPI WDK networking
 - architecture WDK WAN , NDISTAPI

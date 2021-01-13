@@ -1,7 +1,6 @@
 ---
 title: Property Sheet Options
 description: Property Sheet Options
-ms.assetid: 572330d6-1a1b-46fd-bfb4-be2b0990bca4
 keywords:
 - Common Property Sheet User Interface WDK print , property sheet options
 - CPSUI WDK print , property sheet options

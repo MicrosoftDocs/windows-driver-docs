@@ -1,7 +1,6 @@
 ---
 title: usb3kd.device_info
 description: The usb3kd.device_info command displays information about a USB device in the USB 3.0 tree.
-ms.assetid: BD6D1562-2606-42C1-9EE6-D38D93D685DE
 keywords: ["usb3kd.device_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_DATARANGES
 description: Clients use the KSPROPERTY\_PIN\_DATARANGES property to determine the data ranges supported by pins instantiated by the pin factory.
-ms.assetid: 90dd82c4-36a2-4fd3-b842-bbd9588a2740
 keywords: ["KSPROPERTY_PIN_DATARANGES Streaming Media Devices"]
 topic_type:
 - apiref

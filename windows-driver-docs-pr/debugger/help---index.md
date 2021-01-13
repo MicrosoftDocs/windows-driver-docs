@@ -1,7 +1,6 @@
 ---
 title: Help Index
 description: Help Index
-ms.assetid: 72d2baa5-83f5-4033-ba57-63d8b0acc5a3
 keywords: ["Help Index", "help file, Help Index"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_CDROM
 description: GUID_DEVINTERFACE_CDROM
-ms.assetid: ecc31c09-27f5-4a80-8aa6-adc70d8a76c3
 keywords: ["GUID_DEVINTERFACE_CDROM Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: EFI_USB_SUPERSPEED_CONFIG_INFO
 description: EFI_USB_SUPERSPEED_CONFIG_INFO
-ms.assetid: 9827B0A9-AC69-43FA-922F-384E3AE140F7
 ms.date: 05/21/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Keeping a Log File in KD
 description: Keeping a Log File in KD
-ms.assetid: 8A260D7F-5E05-4DD0-9CDF-56D3A0C4C2B6
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -395,6 +395,8 @@
             href: irp-mj-file-system-control2.md
         - name: "Acknowledging oplock breaks"
           href: acknowledging-oplock-breaks.md
+        - name: "Oplock synchronization"
+          href: oplock-synchronization.md
   - name: "Kernel network redirector driver components"
     items:
     - name: "The RDBSS driver and library"
@@ -844,6 +846,8 @@
       href: fsctl-set-refs-smr-volume-gc-parameters.md
     - name: "FSCTL_SET_REPARSE_POINT"
       href: fsctl-set-reparse-point.md
+    - name: "FSCTL_SET_REPARSE_POINT_EX"
+      href: fsctl-set-reparse-point-ex.md
     - name: "FSCTL_SET_ZERO_DATA"
       href: fsctl-set-zero-data.md
     - name: "FSCTL_SUSPEND_OVERLAY"

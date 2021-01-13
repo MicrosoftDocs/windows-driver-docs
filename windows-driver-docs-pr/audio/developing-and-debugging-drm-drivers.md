@@ -1,7 +1,6 @@
 ---
 title: Developing and Debugging DRM Drivers
 description: Developing and Debugging DRM Drivers
-ms.assetid: 3450717a-fd27-4bea-8740-9d47b420ed32
 keywords:
 - Digital Rights Management WDK audio , recommendations
 - DRM WDK audio , recommendations

@@ -1,7 +1,6 @@
 ---
 title: Configurability
 description: This topic discuses extensibility points available to the NFC client driver, enabling the client driver to configure the parameters of many of its operations.
-ms.assetid: 29C6C96E-9F20-4750-ABDD-103871B405FA
 keywords:
 - NFC
 - near field communications

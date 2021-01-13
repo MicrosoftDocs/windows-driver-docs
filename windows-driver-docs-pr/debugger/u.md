@@ -1,7 +1,6 @@
 ---
 title: U (Windows Debugger Glossary)
 description: Glossary page - U
-ms.assetid: f3866ed9-eb94-4433-8a73-3b37f7e67303
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhcdpow
 description: The usbkd.usbhcdpow command displays the power state history for a USB host controller or root hub.
-ms.assetid: 49D803E3-0D65-48D4-98C5-BFE4DB2C2985
 keywords: ["usbkd.usbhcdpow Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

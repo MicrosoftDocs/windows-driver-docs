@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_MEDIA_IN_USE
 description: This topic describes the OID_GEN_CO_MEDIA_IN_USE object identifier (OID).
-ms.assetid: 59a2c981-87a5-4df9-af26-3c5a5eadc17a
 keywords:
 - OID_GEN_CO_MEDIA_IN_USE
 ms.date: 11/02/2017

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SAR_TRANSMISSION_STATUS
 description: OID_WWAN_SAR_TRANSMISSION_STATUS enables or disables notifications from a mobile broadband (MB) modem on Specific Absorption Rate (SAR) transmission state.
-ms.assetid: 83DFEECD-468A-4A76-B881-DA22FBB3F3A6
 ms.date: 08/20/2018
 keywords: 
  -OID_WWAN_SAR_TRANSMISSION_STATUS Network Drivers Starting with Windows Vista

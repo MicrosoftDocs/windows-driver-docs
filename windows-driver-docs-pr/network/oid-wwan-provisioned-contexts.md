@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PROVISIONED_CONTEXTS
 description: OID_WWAN_PROVISIONED_CONTEXTS reads or updates the provisioned context entries stored on the MB device or the Subscriber Identity Module (SIM).
-ms.assetid: 7634fc32-9059-4f89-a591-7aa663b0c188
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_PROVISIONED_CONTEXTS Network Drivers Starting with Windows Vista

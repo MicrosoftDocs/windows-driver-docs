@@ -1,7 +1,6 @@
 ---
 title: NdisMFreeSharedMemory rule (ndis)
 description: NdisMFreeSharedMemory cannot be called from a MiniportShutdownEx function.
-ms.assetid: 86109F0F-38ED-4A20-9BFF-7738D7944DD8
 ms.date: 05/21/2018
 keywords: ["NdisMFreeSharedMemory rule (ndis)"]
 topic_type:

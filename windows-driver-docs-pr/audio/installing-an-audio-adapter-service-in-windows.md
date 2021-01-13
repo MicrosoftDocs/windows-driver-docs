@@ -1,7 +1,6 @@
 ---
 title: Installing an Audio Adapter Service
 description: Installing an Audio Adapter Service
-ms.assetid: 465005da-bf06-497b-801c-fe5aa19a3974
 keywords:
 - audio adapters WDK , service installations
 - adapter drivers WDK audio , service installations

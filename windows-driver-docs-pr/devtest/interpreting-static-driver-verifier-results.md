@@ -1,7 +1,6 @@
 ---
 title: Interpreting Static Driver Verifier Results
 description: Interpreting Static Driver Verifier Results
-ms.assetid: ec7e3b90-5d55-411a-8cfe-a1c9c4029694
 keywords:
 - Static Driver Verifier WDK , display options
 - StaticDV WDK , display options
@@ -50,7 +49,7 @@ If the rule monitors a particular argument in a function call (typically, a poin
 
 If the driver does specify the entry points and it does call the functions that the rule monitors, this result might indicate that SDV did not find or did not correctly interpret the entry point. To confirm that this situation occurred, examine and, if necessary, correct the [Sdv-map.h](sdv-map-h.md) file. For information about this procedure, see [Scanning the Driver](scanning-the-driver.md).
 
-For more information about each rule, see the [Static Driver Verifier Rules](/windows-hardware/drivers/ddi/index) reference.
+For more information about each rule, see the [Static Driver Verifier Rules](./static-driver-verifier-rules.md) reference.
 
 To examine the driver further, run a verification using different rules.
 
@@ -73,6 +72,4 @@ A spaceout is considered to be an inconclusive result. If SDV reports a spaceout
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other**  
 
 The number of times that SDV encountered an internal error from which it could not recover.  See the [Static Driver Verifier Error Messages](./static-driver-verifier-error-messages.md) page for more information on errors and debugging.
-
- 
 

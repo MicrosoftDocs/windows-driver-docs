@@ -1,7 +1,6 @@
 ---
 title: DDI usage rule set (KMDF)
 description: Use these rules to verify that your driver correctly uses KMDF DDIs correctly.
-ms.assetid: 0A3A012C-A1BB-43A5-B38D-4E98928D07E5
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

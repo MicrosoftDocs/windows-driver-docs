@@ -1,7 +1,6 @@
 ---
 title: Mapping WIA Properties with the Same IDs but Different Names
 description: Mapping WIA Properties with the Same IDs but Different Names
-ms.assetid: 0321db59-74a1-4294-bbaf-ec0b9317464b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

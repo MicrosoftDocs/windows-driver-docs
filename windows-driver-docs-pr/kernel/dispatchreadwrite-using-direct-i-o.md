@@ -1,7 +1,6 @@
 ---
 title: DispatchReadWrite Using Direct I/O
 description: DispatchReadWrite Using Direct I/O
-ms.assetid: 5174fe1f-aee5-4c8a-87a1-7f185ed4e242
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "direct I/O WDK kernel", "I/O WDK kernel , direct I/O"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

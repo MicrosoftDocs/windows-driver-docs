@@ -1,7 +1,6 @@
 ---
 title: Block Macros
 description: Block Macros
-ms.assetid: da2f6161-072a-4d3c-94a8-1020520de524
 keywords:
 - block macros WDK GPD files
 - referencing macros

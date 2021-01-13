@@ -1,7 +1,6 @@
 ---
 title: Critical Section Time Outs
 description: Critical Section Time Outs
-ms.assetid: 736ec6e9-e822-49aa-8f1c-7e5e43779dbd
 keywords: ["critical section, debugging critical section time outs"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_TAPE
 description: GUID_DEVINTERFACE_TAPE
-ms.assetid: af19bdf6-5205-4fc1-842f-081e34ea2337
 keywords: ["GUID_DEVINTERFACE_TAPE Device and Driver Installation"]
 topic_type:
 - apiref

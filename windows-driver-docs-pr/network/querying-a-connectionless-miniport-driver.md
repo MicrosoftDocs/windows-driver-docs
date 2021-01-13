@@ -1,7 +1,6 @@
 ---
 title: Querying a Connectionless Miniport Driver
 description: Querying a Connectionless Miniport Driver
-ms.assetid: a556d7ba-52ea-443b-994b-4c517e80ac55
 keywords:
 - connectionless drivers WDK networking
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 
 
-To query OIDs that a connectionless miniport driver maintains, a bound protocol calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) and passes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure that specifies the object (OID) that is being queried and that points to a buffer into which NDIS eventually writes the requested information.
+To query OIDs that a connectionless miniport driver maintains, a bound protocol calls [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) and passes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure that specifies the object (OID) that is being queried and that points to a buffer into which NDIS eventually writes the requested information.
 
 If NDIS does not respond for the miniport driver, the call to **NdisOidRequest** causes NDIS to call the miniport driver's [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function, which returns the requested information to NDIS. *MiniportOidRequest* can complete synchronously or asynchronously with a call to [**NdisMOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismoidrequestcomplete).
 

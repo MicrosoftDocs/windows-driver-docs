@@ -1,7 +1,6 @@
 ---
 title: Using PEPs for ACPI services
 description: This topic provides information about using platform extension plug-ins (PEPs) for ACPI services.
-ms.assetid: 80ED3B80-A1FF-4A41-BA88-EC1C832C4639
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -38,4 +37,4 @@ PEPs are responsible for scheduling work that cannot be performed synchronously 
 [**PEP\_NOTIFY\_ACPI\_WORK**](/windows-hardware/drivers/ddi/index)  
 [*RequestWorker*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pofxcallbackrequestworker)  
 [*AcceptDeviceNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifydpm)  
-[ACPI notifications](/windows-hardware/drivers/ddi/index)
+[ACPI notifications](/windows-hardware/drivers/ddi/_acpi)

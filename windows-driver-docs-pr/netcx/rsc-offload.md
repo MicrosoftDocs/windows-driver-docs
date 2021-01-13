@@ -1,7 +1,6 @@
 ---
 title: Receive Segment Coalescing offload
 description: Receive Segment Coalescing (RSC) offload usage, rules, and examples in NetAdapterCx.
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Receive Segment Coalescing offload, RSC
 ms.date: 10/13/2020
@@ -9,6 +8,13 @@ ms.custom: Fe
 ---
 
 # Receive Segment Coalescing (RSC) offload
+
+> [!WARNING]
+> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>
+> NetAdapterCx is preview only in Windows 10, version 2004.
+>
+> Currently, NetAdapterCx client drivers cannot be certified.
 
 When receiving data, most layers in the TCP/IP stack must look at each segment's header information separately. This creates a large amount of overhead when large amounts of data are being received.
 
@@ -22,6 +28,8 @@ For more details on RSC, see [Overview of Receive Segment Coalescing](../network
 NetAdapterCx checks the registry keywords and honors them when enabling the active offload capabilities. The driver doesn't need to take any further action.
 
 The RSC keywords specified in [Standardized INF Keywords for RSC](../network/standardized-inf-keywords-for-rsc.md) can be used to enable/disable the RSC offload with a registry key setting.
+
+The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-value-types).
 
 ## Configuring RSC offload
 

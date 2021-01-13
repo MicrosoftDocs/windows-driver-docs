@@ -1,7 +1,6 @@
 ---
 title: Interaction Between OBMC and INTER4V in H.263
 description: Interaction Between OBMC and INTER4V in H.263
-ms.assetid: 096c723d-ec16-49f7-acaa-62ed228338c3
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017

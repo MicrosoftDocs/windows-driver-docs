@@ -1,7 +1,6 @@
 ---
 title: Writing Restart Records to a CLFS Stream
 description: Writing Restart Records to a CLFS Stream
-ms.assetid: ae341d7e-37b2-4880-948c-e78e29278c64
 keywords: ["Common Log File System WDK kernel , restart records", "CLFS WDK kernel , restart records", "restart records WDK CLFS", "checkpoints WDK CLFS"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

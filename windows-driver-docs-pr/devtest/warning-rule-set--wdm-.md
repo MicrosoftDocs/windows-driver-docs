@@ -1,7 +1,6 @@
 ---
 title: Warning rule set (WDM)
 description: Use these rules to verify that your driver can correctly processes IRPs in various contexts and follows Microsoft recommended best practices.
-ms.assetid: 29374BBE-D1DF-48C0-80A9-96CBAC6D8A22
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: UMDH Commands
 description: UMDH Commands
-ms.assetid: 85508eb6-b041-4d2d-a431-d8bcfe874141
 keywords: ["UMDH, UMDH commands"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

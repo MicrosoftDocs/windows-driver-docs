@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_HWLATENCY
 description: The KSPROPERTY\_RTAUDIO\_HWLATENCY property retrieves a description of the stream latency of the audio hardware and its associated data path. The following table summarizes the features of this property.
-ms.assetid: 5083f281-853a-464e-95d3-0fe14fe00c1c
 keywords: ["KSPROPERTY_RTAUDIO_HWLATENCY Audio Devices"]
 topic_type:
 - apiref

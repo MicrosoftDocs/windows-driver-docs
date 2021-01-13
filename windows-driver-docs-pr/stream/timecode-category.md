@@ -1,7 +1,6 @@
 ---
 title: Timecode Category
 description: Timecode Category
-ms.assetid: 273e0233-357e-4e13-bf8e-77ca36834ee7
 keywords:
 - stream categories WDK video capture , imecode
 - Timecode category WDK video capture

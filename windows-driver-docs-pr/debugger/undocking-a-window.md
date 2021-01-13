@@ -1,7 +1,6 @@
 ---
 title: Undocking a Window
 description: Undocking a Window
-ms.assetid: e035b511-949f-4ce1-a948-a8b35fd6562f
 keywords: ["debugging information windows, undocking windows", "undocked windows", "undocking windows"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

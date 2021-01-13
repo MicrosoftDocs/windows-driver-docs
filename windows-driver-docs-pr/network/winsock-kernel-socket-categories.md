@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Socket Categories
 description: Winsock Kernel Socket Categories
-ms.assetid: e99cbef5-c484-43ee-be02-8088f51117ef
 keywords:
 - Winsock Kernel WDK networking , socket categories
 - WSK WDK networking , socket categories

@@ -1,7 +1,6 @@
 ---
 title: Commercial Test Certificate
 description: Commercial Test Certificate
-ms.assetid: cedceb0c-d39e-45e2-aa42-62cd7b8bed1c
 keywords:
 - commercial test certificates WDK
 ms.date: 04/20/2017

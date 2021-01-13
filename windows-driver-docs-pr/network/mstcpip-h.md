@@ -1,7 +1,6 @@
 ---
 title: Mstcpip.h
 description: This section contains kernel mode network driver topics for the Mstcpip.h header.
-ms.assetid: 5623EB2D-CA8D-4176-922E-29B8C66AA2CF
 keywords:
 - Mstcpip.h network drivers
 ms.date: 08/08/2017

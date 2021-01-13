@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_INSTANCE_NAME_HASH
 description: WDI_TLV_P2P_INSTANCE_NAME_HASH is a TLV that contains the hash of "Instance Name, Service Type".
-ms.assetid: A29D0339-93A8-43EB-8C22-DD7A7DC2147C
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_INSTANCE_NAME_HASH Network Drivers Starting with Windows Vista

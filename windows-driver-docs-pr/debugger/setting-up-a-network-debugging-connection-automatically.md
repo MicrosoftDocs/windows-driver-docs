@@ -1,9 +1,8 @@
 ---
 title: Setting Up KDNET Network Kernel Debugging Automatically
 description: Use KDNET to configure network kernel debugging automatically for the Windows debugging tools.
-ms.assetid: B4A79B2E-D4B1-42CA-9121-DEC923C76927
 keywords: ["Network debugging", "Ethernet debugging", "WinDbg", "KDNET"]
-ms.date: 09/12/2019
+ms.date: 11/11/2020
 ms.localizationpriority: medium
 ---
 
@@ -13,29 +12,28 @@ Debugging Tools for Windows supports kernel debugging over a network. This topic
 
 The computer that runs the debugger is called the *host computer*, and the computer being debugged is called the *target computer*. The host computer must be running Windows 7 or later, and the target computer must be running Windows 8 or later.
 
-## <span id="Determining_the_IP_Address_of_the_Host_Computer"></span><span id="determining_the_ip_address_of_the_host_computer"></span><span id="DETERMINING_THE_IP_ADDRESS_OF_THE_HOST_COMPUTER"></span>Determining the IP Address of the Host Computer
+## Determining the IP Address of the Host Computer
 
-1. Confirm that the target and host PCs are connected to a network hub or switch using an appropriate network cable. 
+1. Confirm that the target and host PCs are connected to a network hub or switch using an appropriate network cable.
 
-2. On the host computer, open a Command Prompt window and enter *IPConfig* to display the IP configuration. 
+2. On the host computer, open a Command Prompt window and enter *IPConfig* to display the IP configuration.
 
 3. In the command output, locate the IPv4 address of the Ethernet adapter.
 
-    ```console
-    ...
+```console
+...
 
-    Ethernet adapter Ethernet:
-    ...
+Ethernet adapter Ethernet:
+...
 
-    IPv4 Address. . . . . . . . . . . : <YourHostIPAddress>
-    ...
+IPv4 Address. . . . . . . . . . . : <YourHostIPAddress>
+...
 
-    ```
-4. Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
+```
 
- 
+4.Make a note of the IPv4 address of the network adapter that you intend to use for debugging.
 
-## <span id="Setting_Up_the_Target_Computer"></span><span id="setting_up_the_target_computer"></span><span id="SETTING_UP_THE_TARGET_COMPUTER"></span>Setting Up the Host and Target Computers
+## Setting Up the Host and Target Computers
 
 Use the kdnet.exe utility to automatically configure the  debugger settings on the target PC,  by following these steps.
 
@@ -85,16 +83,17 @@ Use the kdnet.exe utility to automatically configure the  debugger settings on t
 
 8. Copy the returned key into a notepad .txt file.
 
-
-## <span id="Using_WinDbg"></span><span id="using_windbg"></span><span id="USING_WINDBG"></span> Using WinDbg
+## Connecting WinDbg to the target for kernel debugging
 
 On the host computer, open WinDbg. On the **File** menu, choose **Kernel Debug**. In the Kernel Debugging dialog box, open the **Net** tab. Paste in your port number and key that you saved to in the notepad .txt file earlier. Select **OK**.
 
 You can also start a WinDbg session by opening a Command Prompt window and entering the following command, where <YourPort> is the port you selected above, and <YourKey> is the key that was returned by kdnet.exe above. Paste in the key in that you saved to in the notepad .txt file earlier.
 
    ```console
-  windbg -k net:port=<YourDebugPort>,key=<YourKey> 
+  windbg -k -d net:port=<YourDebugPort>,key=<YourKey> 
    ```
+
+The optional -d parameter shown in the example, enables early break in. For more information, see [WinDbg Command-Line Options](windbg-command-line-options.md).
 
 If you are prompted about allowing WinDbg to access the port through the firewall, allow WinDbg to access the port for **all three** of the different network types.
 
@@ -111,7 +110,7 @@ At this point the debugger will be waiting for the target to reconnect and text 
    Waiting to reconnect...
    ```
 
-## <span id="Restarting_Target"></span><span id="restarting_target"></span><span id="RESTARTING_TARGET"></span> Restarting the Target PC
+## Restarting the Target PC
 
 Once the debugger is at the "Waiting to reconnect..." stage, reboot the target computer. One way to do restart the PC, is to use this command from an administrator's command prompt.
 
@@ -121,7 +120,7 @@ Once the debugger is at the "Waiting to reconnect..." stage, reboot the target c
 
 After the target PC restarts, the debugger should connect automatically.
 
-## <span id="troubleshooting_tips"></span><span id="TROUBLESHOOTING_TIPS"></span>Troubleshooting Tips
+## Troubleshooting Tips
 
 **Debugging application must be allowed through firewall**
 
@@ -141,9 +140,9 @@ The  debugger  must have access through the firewall. Use Control Panel to allow
 
 If the debugger times out and does not connect, use the ping command on the target PC to verify connectivity. 
 
-   ```console
-   C:\>Ping <HostComputerIPAddress> 
-   ```
+```console
+   C:\>Ping <HostComputerIPAddress>
+```
 
 **Choosing a Port for Network Debugging**
 
@@ -155,11 +154,65 @@ You can choose any port number from 49152 through 65535. The recommended range i
 
 **Supported Network Adapters**
 
-If "Network debugging is not supported on any of the NICs in this machine" is displayed when you run kdnet.exe, it means that the network adapter is not supported. 
+If "Network debugging is not supported on any of the NICs in this machine" is displayed when you run kdnet.exe, it means that the network adapter is not supported.
 
 The host computer can use any network adapter, but the target computer must use a network adapter that is supported by Debugging Tools for Windows. For a list of supported network adapters, see [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md) and [Supported Ethernet NICs for Network Kernel Debugging in Windows 8.1](supported-ethernet-nics-for-network-kernel-debugging-in-windows-8-1.md).
 
-## <span id="related_topics"></span>Related topics
+## Enable additional debugging types
+
+Begining with Windows 10 October 2020 Update (20H2), the following options are supported to enable four types of debugging.
+
+*b* - enables bootmgr debugging. For more information see [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md).
+
+*w* - enables winload debugging. For more information see [BCDEdit /bootdebug](../devtest/bcdedit--bootdebug.md).
+
+*h* - enables hypervisor debugging. For more information see [BCDEdit /hypervisorsettings](../devtest/bcdedit--hypervisorsettings.md).
+
+*k* - enables kernel debugging. For more information see [Getting Started with WinDbg (Kernel-Mode)](getting-started-with-windbg--kernel-mode-.md).
+
+Any combination of debug types may be specified.
+
+If no debug types are specified then kernel debugging will be enabled.
+
+If both hypervisor and kernel debug are enabled the hypervisor port will be set to the value port+1.
+
+### Example usage
+
+Use the - bkw option to enable bootmgr, kernel and winload debugging.
+
+```console
+C:\>kdnet.exe <HostComputerIPAddress> <YourDebugPort> -bkw
+
+Enabling network debugging on Intel(R) 82577LM Gigabit Network Connection.
+Key=2steg4fzbj2sz.23418vzkd4ko3.1g34ou07z4pev.1sp3yo9yz874p
+```
+
+### Summary of debugging type options
+
+| KNDET Option | Description                  | Equivalent set command           |
+|--------------|------------------------------|----------------------------------|
+| *b*          | enables bootmgr debugging    | bcdedit /bootdebug {bootmgr} on  |
+| *h*          | enables hypervisor debugging | bcdedit /set hypervisordebug on  |
+| *k*          | enables kernel debugging     | bcdedit /debug on                |
+| *w*          | enables winload debugging    | bcdedit /bootdebug on            |
+
+## Specify bus parameters
+
+If kdnet is not able to automatically determine the bus parameters for your transport, specify them on the command line with /busparams option using this syntax.
+
+`kdnet.exe /busparams [b.d.f] [host] [port] [-[b][h][k][w]]`
+
+[b.d.f] specifies the bus parameters of the device to configure.
+
+Use Device Manager on the target computer to determine the PCI bus, device, and function numbers for the adapter you want to use for debugging. For bus parameters, enter *b*.*d*.*f* where *b*, *d*, and *f* are the bus number, device number, and function number of the adapter. These values are displayed in Device Manager under *Location* on the *General* tab.  
+
+For example:
+
+```console
+C:\>kdnet.exe /busparams 0.29.7 <HostComputerIPAddress> <YourDebugPort> -bkw
+```
+
+## Related topics
 
 [Supported Ethernet NICs for Network Kernel Debugging in Windows 10](supported-ethernet-nics-for-network-kernel-debugging-in-windows-10.md)
 

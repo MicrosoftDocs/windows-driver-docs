@@ -1,7 +1,6 @@
 ---
 title: Managing and Optimizing Fonts
 description: Managing and Optimizing Fonts
-ms.assetid: 5cfc2174-c605-4399-97a6-62f51df21c16
 keywords:
 - fonts WDK graphics , managing and optimizing
 - GDI WDK Windows 2000 display , fonts, managing and optimizing

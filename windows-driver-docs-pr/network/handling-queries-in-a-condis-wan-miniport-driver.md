@@ -1,7 +1,6 @@
 ---
 title: Handling Queries in a CoNDIS WAN Miniport Driver
 description: Handling Queries in a CoNDIS WAN Miniport Driver
-ms.assetid: 634618ce-3168-4729-b74a-e69f27b62ef4
 keywords:
 - CoNDIS WAN drivers WDK networking , query handling
 - OID_WAN_CO_GET_INFO
@@ -24,7 +23,7 @@ After the NDISWAN intermediate driver forwards the query request, NDIS calls the
 
 If the CoNDIS WAN miniport driver completes *MiniportCoOidRequest* asynchronously by returning a status of NDIS\_STATUS\_PENDING, it must complete the query later by calling [**NdisCoOidRequestComplete**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequestcomplete).
 
-When NDIS calls *MiniportCoOidRequest*, NDIS passes a pointer to the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure that contains the query OID and a buffer to hold the information retrieved from the miniport driver. The miniport driver controls this buffer until the request completes. If the number of bytes specified in the **InformationBufferLength** member of NDIS\_OID\_REQUEST is insufficient for the information that the OID requires, the miniport driver should fail the query request and set the **BytesNeeded** member of NDIS\_OID\_REQUEST to the number of bytes that the OID requires.
+When NDIS calls *MiniportCoOidRequest*, NDIS passes a pointer to the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure that contains the query OID and a buffer to hold the information retrieved from the miniport driver. The miniport driver controls this buffer until the request completes. If the number of bytes specified in the **InformationBufferLength** member of NDIS\_OID\_REQUEST is insufficient for the information that the OID requires, the miniport driver should fail the query request and set the **BytesNeeded** member of NDIS\_OID\_REQUEST to the number of bytes that the OID requires.
 
 No other requests will be submitted to the particular WAN miniport driver until the current query request completes.
 

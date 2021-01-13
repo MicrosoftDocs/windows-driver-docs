@@ -1,7 +1,6 @@
 ---
 title: System Power Actions
 description: System Power Actions
-ms.assetid: e8ab99d4-c18d-4ba8-bfe8-8eebb881c384
 keywords: ["system power actions WDK power management", "system power states WDK kernel , power actions", "power actions WDK power management", "POWER_ACTION"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

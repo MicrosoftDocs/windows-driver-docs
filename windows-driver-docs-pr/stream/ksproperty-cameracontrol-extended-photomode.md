@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_PHOTOMODE
 description: This property sets or retrieves the photo mode setting for the camera.
-ms.assetid: C9596B85-A07B-4DF7-852F-C9EBF43E1E44
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_PHOTOMODE Streaming Media Devices"]
 topic_type:
 - apiref

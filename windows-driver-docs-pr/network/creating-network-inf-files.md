@@ -1,7 +1,6 @@
 ---
 title: Creating Network INF Files
 description: Creating Network INF Files
-ms.assetid: 6ac4195c-202e-42f2-815e-e8a800aac146
 keywords:
 - INF files WDK network , about INF files
 - network INF files WDK , about INF files

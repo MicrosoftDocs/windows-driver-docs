@@ -1,7 +1,6 @@
 ---
 title: Accessing Registry Entry Values Under the Class Registry Key
 description: Accessing Registry Entry Values Under the Class Registry Key
-ms.assetid: 771b5751-db9f-43fa-90d1-1c43918a3a80
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

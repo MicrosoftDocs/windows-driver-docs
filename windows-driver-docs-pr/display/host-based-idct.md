@@ -1,7 +1,6 @@
 ---
 title: Host-Based IDCT
 description: Host-Based IDCT
-ms.assetid: 9f44e734-8cbc-4317-bd72-66d4ac7cd4de
 keywords:
 - macroblocks WDK DirectX VA , IDCT
 - low-level IDCT WDK DirectX VA

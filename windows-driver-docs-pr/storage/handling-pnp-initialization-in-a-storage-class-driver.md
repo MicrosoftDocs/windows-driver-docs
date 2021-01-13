@@ -1,7 +1,6 @@
 ---
 title: Handling PnP Initialization in a Storage Class Driver
 description: Handling PnP Initialization in a Storage Class Driver
-ms.assetid: 472e52c8-a214-418b-a82f-fd4a9bcc894e
 keywords:
 - storage class drivers WDK , PnP
 - class drivers WDK storage , PnP

@@ -1,7 +1,6 @@
 ---
 title: Protocol Binding States and Operations
 description: Protocol Binding States and Operations
-ms.assetid: 669b3de1-7f6b-4e63-8943-c8eaadfa80fc
 keywords:
 - protocol drivers WDK networking , binding operational states
 - NDIS protocol drivers WDK , binding operation states

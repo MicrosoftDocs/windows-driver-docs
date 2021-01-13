@@ -1,7 +1,6 @@
 ---
 title: Sample Audio Drivers
 description: Sample Audio Drivers
-ms.assetid: bea50e70-e1ec-4a66-9bfc-8bd644b07ce7
 keywords:
 - WDM audio drivers WDK , sample drivers
 - audio drivers WDK , sample drivers
@@ -12,6 +11,7 @@ keywords:
 - Gfx sample audio driver WDK audio
 - Mpu401 sample audio driver WDK audio
 - Msvad sample audio driver WDK audio
+- Sysvad sample audio driver WDK audio
 - Sb16 sample audio driver WDK audio
 - Stdunk sample audio driver WDK audio
 ms.date: 04/20/2017

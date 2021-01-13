@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_PROXY
 description: KSCATEGORY_PROXY
-ms.assetid: 35ab8abc-9416-4f7f-bf57-099f78fe82dd
 keywords: ["KSCATEGORY_PROXY Device and Driver Installation"]
 topic_type:
 - apiref

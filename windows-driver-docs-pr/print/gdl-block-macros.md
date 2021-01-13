@@ -1,7 +1,6 @@
 ---
 title: GDL Block Macros
 description: GDL Block Macros
-ms.assetid: c8b8e38d-237f-4c54-a394-148d211237ce
 keywords:
 - GDL WDK , macros
 - macros WDK GDL , block macros

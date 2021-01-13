@@ -1,7 +1,6 @@
 ---
 title: Get RPC Client Call Information
 description: Get RPC Client Call Information
-ms.assetid: 8b23428d-50e7-4613-a0ce-d1da5fa96ddf
 keywords: ["RPC client call information", "CCALL (client call)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

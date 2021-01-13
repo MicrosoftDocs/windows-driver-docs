@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_PowerData
 description: DEVPKEY_Device_PowerData
-ms.assetid: a5ebb465-674c-483a-ae2c-c46c30a67662
 keywords: ["DEVPKEY_Device_PowerData Device and Driver Installation"]
 topic_type:
 - apiref

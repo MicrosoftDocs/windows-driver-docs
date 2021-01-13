@@ -1,7 +1,6 @@
 ---
 title: Multimatrix Vertex Blending
 description: Multimatrix Vertex Blending
-ms.assetid: d7348609-324d-4852-b217-4c298b8aaab7
 keywords:
 - lending WDK Direct3D
 - vertex blending WDK Direct3D

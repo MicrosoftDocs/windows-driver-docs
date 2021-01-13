@@ -1,7 +1,6 @@
 ---
 title: Overview of System Battery Management
 description: Overview of System Battery Management
-ms.assetid: ac34b0e1-e6a4-4e22-9164-6e942c1595b6
 keywords:
 - battery management WDK
 - battery miniclass drivers WDK , battery management

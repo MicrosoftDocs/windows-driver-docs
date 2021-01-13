@@ -1,7 +1,6 @@
 ---
 title: Introduction to Rendering Plug-Ins
 description: Introduction to Rendering Plug-Ins
-ms.assetid: 7e6756ca-822a-4386-bcbd-363a10b1b2a3
 keywords:
 - rendering plug-ins WDK print , about rendering plug-ins
 ms.date: 04/20/2017

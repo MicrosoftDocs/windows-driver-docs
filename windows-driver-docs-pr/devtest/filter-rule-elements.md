@@ -1,7 +1,6 @@
 ---
 title: Filter Rule Elements
 description: Filter Rule Elements
-ms.assetid: 448da1f1-5eea-4159-ba19-cda14ebebae6
 keywords:
 - filtering trace messages, changeable elements WDK
 - trace message filters WDK , changeable elements

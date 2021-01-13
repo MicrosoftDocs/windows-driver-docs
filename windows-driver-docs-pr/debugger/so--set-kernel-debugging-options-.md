@@ -1,7 +1,6 @@
 ---
 title: so (Set Kernel Debugging Options)
 description: The so command sets or displays the kernel debugging options.
-ms.assetid: b40260c7-6e60-4198-988f-bcafecb165bc
 keywords: ["so (Set Kernel Debugging Options) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

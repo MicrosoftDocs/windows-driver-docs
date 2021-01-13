@@ -1,7 +1,6 @@
 ---
 title: XML Schema Linebreak Translations
 description: XML Schema Linebreak Translations
-ms.assetid: c277984f-8e7a-4d17-98ab-66c3f6f80473
 keywords:
 - linebreak sequence WDK GDL
 - GDL WDK , schemas

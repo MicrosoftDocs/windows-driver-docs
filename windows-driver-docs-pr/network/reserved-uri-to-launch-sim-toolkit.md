@@ -1,7 +1,6 @@
 ---
 title: Reserved URI to launch SIM toolkit
 description: Reserved URI to launch SIM toolkit
-ms.assetid: d194b37e-427b-4fe2-a49a-050d06a7d3b9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

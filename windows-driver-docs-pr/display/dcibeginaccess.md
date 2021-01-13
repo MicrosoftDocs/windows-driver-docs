@@ -1,7 +1,6 @@
 ---
 title: DCIBeginAccess
 description: DCIBeginAccess
-ms.assetid: c4b1e516-c087-474a-80f9-d7af8adb2e06
 keywords: ["DCIBeginAccess Display Devices"]
 topic_type:
 - apiref

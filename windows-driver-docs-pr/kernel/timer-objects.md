@@ -1,7 +1,6 @@
 ---
 title: Timer Objects
 description: Any driver can use a timer object within a nonarbitrary thread context to time-out operations in the driver's other routines, or to schedule operations to be performed periodically.
-ms.assetid: A4844F19-3BEC-48C0-A5BF-E17CCEEC1601
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

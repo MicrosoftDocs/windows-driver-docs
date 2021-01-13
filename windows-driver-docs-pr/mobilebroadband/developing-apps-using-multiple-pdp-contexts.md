@@ -1,7 +1,6 @@
 ---
 title: Developing apps using multiple PDP contexts
 description: Developing apps using multiple PDP contexts
-ms.assetid: 6a977a69-397d-4922-890d-1810dd54dff4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -84,7 +83,7 @@ var currentConnectionSession = null;
 var apnContext                      =   new connectivity.CellularApnContext();
 apnContext.accessName               =   "myAPN.com";
 apnContext.userName                 =   "APNusername"
-apnContext.password                 =   "APNPassword";
+apnContext.password                 =   "[PLACEHOLDER]";
 apnContext.isCompressionEnabled     =   false;
 apnContext.authenticationType       =   connectivity.CellularApnAuthenticationType.none;
 
@@ -132,7 +131,7 @@ var apnContext = new connectivity.CellularApnContext();
 var apnContext = new connectivity.CellularApnContext();
 apnContext.accessName = "myAPN.com";
 apnContext.userName = "APNusername"
-apnContext.password = "APNPassword";
+apnContext.password = "[PLACEHOLDER]";
 apnContext.isCompressionEnabled = false;
 apnContext.authenticationType = connectivity.CellularApnAuthenticationType.none;
 
@@ -276,7 +275,7 @@ function onFailure()
   var apnContext                      =   new connectivity.CellularApnContext();
   apnContext.accessPointName          =   "myAPN.com";
   apnContext.userName                 =   "APNusername"
-  apnContext.password                 =   "APNPassword";
+  apnContext.password                 =   "[PLACEHOLDER]";
   apnContext.isCompressionEnabled     =   false;
   apnContext.authenticationType       =   connectivity.CellularApnAuthenticationType.none;
 
@@ -354,7 +353,7 @@ var apnContext                      =   new connectivity.CellularApnContext();
 apnContext.providerId               =   "23545";
 apnContext.accessPointName          =   "myAPN.com";
 apnContext.userName                 =   "APNusername"
-apnContext.password                 =   "";
+apnContext.password                 =   "[PLACEHOLDER]";
 apnContext.isCompressionEnabled     =  false;
 apnContext.authenticationType       =   connectivity.CellularApnAuthenticationType.none;
 
@@ -479,7 +478,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
               <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
               <UserLogonCred>
                 <UserName>user1</UserName>
-                <Password>password1</Password>
+                <Password>[PLACEHOLDER]</Password>
               </UserLogonCred>
             </Context>
             <AppIDList>
@@ -497,7 +496,7 @@ The following sample XML file demonstrates how to use Windows provisioning metad
               <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred. -->
               <UserLogonCred>
                 <UserName>user2</UserName>
-                <Password>password2</Password>
+                <Password>[PLACEHOLDER]</Password>
               </UserLogonCred>
             </Context>
             <AppIDList>

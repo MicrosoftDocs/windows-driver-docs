@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xF4 CRITICAL_OBJECT_TERMINATION
 description: The CRITICAL_OBJECT_TERMINATION bug check has a value of 0x000000F4. This indicates that a process or thread crucial to system operation has unexpectedly exited or been terminated.
-ms.assetid: 51a73ada-5e82-45a2-ad2a-8ef53f96318c
 keywords: ["Bug Check 0xF4 CRITICAL_OBJECT_TERMINATION", "CRITICAL_OBJECT_TERMINATION"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Serial Port Console Redirection Table (SPCR)
 description: The Serial Port Console Redirection Table that is used to indicate whether a serial port or a non-legacy UART interface is available for use with Microsoft® Windows® Emergency Management Services (EMS).
-ms.assetid: cbcd2e71-881a-44f6-b3d8-5d2aadb02b27
 keywords:
 - SPCR
 - EMS

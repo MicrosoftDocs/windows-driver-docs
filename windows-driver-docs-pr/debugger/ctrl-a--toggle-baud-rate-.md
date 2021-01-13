@@ -1,7 +1,6 @@
 ---
 title: CTRL+A (Toggle Baud Rate)
 description: The CTRL+A key toggles the baud rate used in the kernel debugging connection.
-ms.assetid: 77a95ca1-073c-480a-abda-f484adbc1d23
 keywords: ["CTRL+A (Toggle Baud Rate) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: HBA\_BIND\_TYPE
 description: HBA\_BIND\_TYPE
-ms.assetid: a5388574-f48a-4bdc-9ffe-408fa6de1eeb
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: Stream Latency During Playback
 description: Stream Latency During Playback
-ms.assetid: 70b41245-f463-4225-b79c-0ee65d8a0132
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DRM Requirements
 description: DRM Requirements
-ms.assetid: 312b943b-f280-4b29-a5d4-e78c7088bb22
 keywords:
 - WHQL testing WDK audio
 - Digital Rights Management WDK audio , compliance testing

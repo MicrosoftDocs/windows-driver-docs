@@ -1,7 +1,6 @@
 ---
 title: icon XML Element
 description: icon XML Element
-ms.assetid: 1d5acaf7-ef90-40f7-a2f9-f1002207f3fb
 keywords: ["icon XML Element Device and Driver Installation"]
 topic_type:
 - apiref

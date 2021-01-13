@@ -1,7 +1,6 @@
 ---
 title: Canceling IRPs
 description: Canceling IRPs
-ms.assetid: da199435-f6c3-44f4-b1ed-0280f39ee452
 keywords: ["IRPs WDK kernel , canceling", "canceling IRPs", "Cancel routines", "user-canceled I/O requests WDK kernel", "completing IRPs WDK kernel , canceling IRPs", "unprocessed IRP cancellations WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

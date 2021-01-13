@@ -1,7 +1,6 @@
 ---
 title: Overview of the Enhanced Storage Certificate Management Tool
 description: Overview of the Enhanced Storage Certificate Management Tool
-ms.assetid: 963e6510-d62f-421f-9c3d-781092f98969
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WSDBIT Testing Environment
 description: WSDBIT Testing Environment
-ms.assetid: 6fa6f6f7-859a-4424-a71d-600f82b23f89
 keywords:
 - WSDBIT tool WDK , testing environment
 - WSDAPI Basic Interoperability Tool WDK , testing environment

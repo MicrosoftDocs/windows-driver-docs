@@ -1,7 +1,6 @@
 ---
 title: Mobile operator notification event technical details
 description: Mobile operator notification event technical details
-ms.assetid: 639f238a-4bb4-4ac0-9b59-92a761dbc351
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -69,7 +68,7 @@ By default, this message type is disabled. You can enable it by using provisioni
         <AccessString>Contoso.com</AccessString>
         <UserLogonCred>
           <UserName>User</UserName>
-          <Password>pass</Password>
+          <Password>[PLACEHOLDER]</Password>
         </UserLogonCred>
       </Context>
     </DefaultProfile>
@@ -190,7 +189,7 @@ Windows accepts an XML-based provisioning file from you. A sample version of the
                 <!-- Adjust the UserLogonCred to fit your UserLogonCred. Refer to the documentation about UserLogonCred's. -->
                 <UserLogonCred>
                     <UserName>user</UserName>
-                    <Password>password</Password>
+                    <Password>[PLACEHOLDER]</Password>
                 </UserLogonCred>
             </Context>
         </DefaultProfile>

@@ -1,7 +1,6 @@
 ---
 title: Stream Pointers
 description: Stream Pointers
-ms.assetid: 4bac68a0-34d2-431a-9ed9-8a42751a736f
 keywords:
 - stream pointers WDK AVStream
 - AVStream stream pointers WDK

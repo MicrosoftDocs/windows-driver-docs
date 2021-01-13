@@ -1,7 +1,6 @@
 ---
 title: Installing a Filter Driver
 description: Installing a Filter Driver
-ms.assetid: 48ffa6db-3254-4108-b8bb-5884b9168a9d
 keywords:
 - Device setup WDK device installations , filter drivers
 - device installations WDK , filter drivers

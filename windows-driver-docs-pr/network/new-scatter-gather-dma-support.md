@@ -1,7 +1,6 @@
 ---
 title: New Scatter/Gather DMA Support
 description: New Scatter/Gather DMA Support
-ms.assetid: ac7cd98b-1211-4538-a54b-7362fa1d81b0
 keywords:
 - scatter/gather DMA WDK networking
 - miniport drivers WDK networking , scatter/gather DMA
@@ -24,7 +23,7 @@ This provides the following benefits:
 
 -   A miniport driver can optimize the transmission of small or highly fragmented packets by copying them to a preallocated buffer, thereby eliminating the need for mapping. This eliminates unnecessary processing.
 
--   NDIS can safely pass multiple [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structures to the miniport driver in one function call. This results in fewer calls to the miniport driver and thus improves system performance.
+-   NDIS can safely pass multiple [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) structures to the miniport driver in one function call. This results in fewer calls to the miniport driver and thus improves system performance.
 
 -   Because a miniport driver can preallocate memory for a scatter/gather list, NDIS does not have to allocate memory for the scatter/gather list at run time.
 

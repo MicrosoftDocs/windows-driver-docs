@@ -1,7 +1,6 @@
 ---
 title: Protocol Offloads for NDIS Power Management
 description: Protocol Offloads for NDIS Power Management
-ms.assetid: 191aa59d-1772-4824-ad15-e813f2e154e0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Roadmap for Developing Network Drivers with Winsock Kernel
 description: Roadmap for Developing Network Drivers with Winsock Kernel
-ms.assetid: f94952c3-02b1-4bd2-bd73-e6d6d42a06fb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

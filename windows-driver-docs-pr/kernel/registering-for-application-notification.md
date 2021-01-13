@@ -1,7 +1,6 @@
 ---
 title: Registering for Application Notification
 description: Registering for Application Notification
-ms.assetid: e8f76014-6068-4012-96c6-88ea2bbd9bbf
 keywords: ["dynamic hardware partitioning WDK , application notification", "hardware partitioning WDK dynamic , application notification", "partitions WDK dynamic hardware , application notification", "application notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , application", "registering for application notifications WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

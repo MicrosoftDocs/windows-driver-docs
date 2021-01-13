@@ -1,7 +1,6 @@
 ---
 title: CCD Concepts
 description: CCD Concepts
-ms.assetid: edc11b8d-64cb-49b0-9257-81c1ecf06a84
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts
 - connecting displays WDK Windows Server 2008 R2 display , CCD concepts

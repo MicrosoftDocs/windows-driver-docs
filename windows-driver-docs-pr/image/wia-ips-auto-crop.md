@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_AUTO\_CROP
 description: The WIA\_IPS\_AUTO\_CROP property is used to enable automatic detection and cropping by the device of the scan region. The WIA minidriver creates and maintains this property.
-ms.assetid: 5D7D2911-1535-4E67-9EBF-2B59D87F4F1B
 keywords: ["WIA_IPS_AUTO_CROP Imaging Devices"]
 topic_type:
 - apiref

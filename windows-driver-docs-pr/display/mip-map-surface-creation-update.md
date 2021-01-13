@@ -1,7 +1,6 @@
 ---
 title: MIP Map Surface Creation Update
 description: MIP Map Surface Creation Update
-ms.assetid: a89a11ed-d450-43bb-b0cd-75132d19dbc3
 keywords:
 - MIP map surfaces WDK Direct3D
 - D3DRENDERSTATE_MIPMAPLODBIAS

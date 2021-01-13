@@ -1,7 +1,6 @@
 ---
 title: Processing Shader Codes
 description: Processing Shader Codes
-ms.assetid: c858766c-b414-4971-b4d9-23ec94aca8ea
 keywords:
 - user-mode display drivers WDK Windows Vista , shader codes
 - shader codes WDK display

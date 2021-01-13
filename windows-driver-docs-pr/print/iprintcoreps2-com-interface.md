@@ -1,7 +1,6 @@
 ---
 title: IPrintCorePS2 COM Interface
 description: IPrintCorePS2 COM Interface
-ms.assetid: d5eb6962-2201-405f-9a22-2b11fb6d0360
 keywords:
 - IPrintCorePS2
 ms.date: 04/20/2017

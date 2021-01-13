@@ -1,7 +1,6 @@
 ---
 title: Geolocation sample driver file list
 description: The source file of the geolocation driver sample includes the following categories of files.
-ms.assetid: 8A9A1102-921B-40FF-94F2-FA9E3C1CE662
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

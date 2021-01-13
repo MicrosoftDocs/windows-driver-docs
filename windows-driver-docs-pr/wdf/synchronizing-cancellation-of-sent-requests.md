@@ -1,7 +1,6 @@
 ---
 title: Synchronizing Cancellation of Sent Requests
 description: Synchronizing Cancellation of Sent Requests
-ms.assetid: e7ec65c9-bc7b-46ea-853d-3e23b1763666
 keywords:
 - request processing WDK KMDF , canceling requests
 - I/O requests WDK KMDF , canceling

@@ -1,7 +1,6 @@
 ---
 title: DeviceInfo
 description: DeviceInfo
-ms.assetid: be2ee9e7-bd94-4f96-8d93-3b6f5fd9350e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

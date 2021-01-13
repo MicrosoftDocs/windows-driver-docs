@@ -1,7 +1,6 @@
 ---
 title: Storage Class Driver's General Functionality
 description: Storage Class Driver's General Functionality
-ms.assetid: 4fc92d20-5570-4680-bc7b-f6e84524a672
 keywords:
 - storage class drivers WDK , functionality
 - class drivers WDK storage , functionality

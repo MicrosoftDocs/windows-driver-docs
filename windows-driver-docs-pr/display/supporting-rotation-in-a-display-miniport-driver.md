@@ -1,7 +1,6 @@
 ---
 title: Supporting Rotation in a Display Miniport Driver
 description: Supporting Rotation in a Display Miniport Driver
-ms.assetid: 0c9bdd42-aeaf-4cc8-a979-9ed8eeda3811
 keywords:
 - miniport drivers WDK display , rotation
 - rotation WDK display

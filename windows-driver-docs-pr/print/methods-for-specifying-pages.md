@@ -1,7 +1,6 @@
 ---
 title: Methods for Specifying Pages
 description: Methods for Specifying Pages
-ms.assetid: 76006a2b-37b9-4490-913e-dcfc01812d43
 keywords:
 - Common Property Sheet User Interface WDK print , specifying pages
 - CPSUI WDK print , specifying pages

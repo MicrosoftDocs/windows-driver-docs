@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_RENDER
 description: KSCATEGORY_RENDER
-ms.assetid: 467e3192-46c4-4ef4-88cf-0a870efc1725
 keywords: ["KSCATEGORY_RENDER Device and Driver Installation"]
 topic_type:
 - apiref

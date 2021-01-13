@@ -1,7 +1,6 @@
 ---
 title: One-to-One ID Mapping
 description: One-to-One ID Mapping
-ms.assetid: fd9a98a4-5796-4d39-a83b-427b320b32da
 keywords:
 - mapping network component IDs
 - ID mapping WDK netmap.inf

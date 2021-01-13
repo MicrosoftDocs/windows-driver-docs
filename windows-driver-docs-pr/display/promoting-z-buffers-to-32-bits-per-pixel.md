@@ -1,7 +1,6 @@
 ---
 title: Promoting Z Buffers to 32 Bits Per Pixel
 description: Promoting Z Buffers to 32 Bits Per Pixel
-ms.assetid: 6b7dddab-e154-44e8-a4e3-45bd706ed638
 keywords:
 - z buffers WDK DirectX 9.0
 - color buffers WDK DirectX 9.0

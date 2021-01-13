@@ -1,7 +1,6 @@
 ---
 title: Adding Image Format Support
 description: Adding Image Format Support
-ms.assetid: 1ffa7c0d-23ec-402a-a0b5-fb5596a851bf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

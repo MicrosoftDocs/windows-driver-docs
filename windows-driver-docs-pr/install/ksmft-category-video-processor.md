@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_VIDEO_PROCESSOR
 description: KSMFT_CATEGORY_VIDEO_PROCESSOR
-ms.assetid: 9d27cea3-0d4f-4812-9e87-0b2295c99a5f
 keywords: ["KSMFT_CATEGORY_VIDEO_PROCESSOR Device and Driver Installation"]
 topic_type:
 - apiref

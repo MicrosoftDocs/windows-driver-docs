@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_PARAMETERS
 description: WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_PARAMETERS is a TLV that contains Wi-Fi Direct Group Owner negotiation request parameters.
-ms.assetid: C0B1832A-D315-47F8-87B8-73373CF55D44
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_GO_NEGOTIATION_REQUEST_PARAMETERS Network Drivers Starting with Windows Vista

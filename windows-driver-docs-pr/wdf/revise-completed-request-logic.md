@@ -1,7 +1,6 @@
 ---
 title: Revise Code That Handles Completed Requests
 description: Revise Code That Handles Completed Requests
-ms.assetid: 0DD48424-A728-4887-9F26-46B7004CB12C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

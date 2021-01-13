@@ -1,7 +1,6 @@
 ---
 title: Accessing Profile and Context Data
 description: Accessing Profile and Context Data
-ms.assetid: 88463b20-e61b-4258-b5ff-9b6880c1d0f6
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , profile data
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , context data

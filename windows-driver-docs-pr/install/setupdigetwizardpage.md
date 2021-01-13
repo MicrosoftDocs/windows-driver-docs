@@ -1,7 +1,6 @@
 ---
 title: SetupDiGetWizardPage
 description: SetupDiGetWizardPage
-ms.assetid: c43ee948-10aa-4b8f-91d0-0f3baf8ccf16
 keywords: ["SetupDiGetWizardPage Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: IoBuildDeviceControlNoFree rule (wdm)
 description: The IoBuildDeviceControlNoFree rule specifies that a driver that calls IoBuildDeviceIoControlRequest must not call IoFreeIrp.
-ms.assetid: 36DAB9A8-2B6F-43EE-86CC-97B66FE0AEB8
 ms.date: 05/21/2018
 keywords: ["IoBuildDeviceControlNoFree rule (wdm)"]
 topic_type:

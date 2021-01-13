@@ -1,7 +1,6 @@
 ---
 title: ndiskd.wdiminidriver
 description: The ndiskd.wdiminidriver extension displays information about one or more CMiniportDriver structures. 
-ms.assetid: C7022CD7-6F3A-485B-8686-A686A5305DA5
 keywords: ["ndiskd.wdiminidriver Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Adding the WDI TLV generator/parser to your driver
 description: To add the WDI TLV generator/parser to your driver, follow these steps.
-ms.assetid: 625FDE43-7A42-4840-9AFD-B8F5850F845E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

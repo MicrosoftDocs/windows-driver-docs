@@ -1,7 +1,6 @@
 ---
 title: Low Power for Wake on LAN
 description: Low Power for Wake on LAN
-ms.assetid: 9ab8fa19-e75a-4266-accf-4e8b2964f82e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

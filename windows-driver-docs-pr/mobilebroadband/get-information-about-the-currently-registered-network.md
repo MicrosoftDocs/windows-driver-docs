@@ -1,7 +1,6 @@
 ---
 title: Get information about the currently registered network
 description: Get information about the currently registered network
-ms.assetid: 94321933-fc93-4203-8de1-e715d66fd1e3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

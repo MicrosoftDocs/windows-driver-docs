@@ -1,7 +1,6 @@
 ---
 title: Using CVS
 description: Using CVS
-ms.assetid: 4ad1202e-0be5-4adc-af8b-6b8d7cb34b04
 keywords: ["Concurrent Versions System (CVS)", "source servers, CVS", "SrcSrv, CVS", "Concurrent Versions System (CVS), overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

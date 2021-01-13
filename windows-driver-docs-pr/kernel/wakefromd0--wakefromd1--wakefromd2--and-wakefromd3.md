@@ -1,7 +1,6 @@
 ---
 title: WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
 description: WakeFromD0, WakeFromD1, WakeFromD2, and WakeFromD3
-ms.assetid: f01aaceb-babf-42da-bc4b-1a846c84a313
 keywords: ["WakeFromD0", "WakeFromD1", "WakeFromD2", "WakeFromD3"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

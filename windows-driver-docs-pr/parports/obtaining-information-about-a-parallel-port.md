@@ -1,7 +1,6 @@
 ---
 title: Obtaining Information About a Parallel Port
 description: Obtaining Information About a Parallel Port
-ms.assetid: d8ae2296-05b6-419a-93cc-00fcb12d41fe
 keywords:
 - parallel ports WDK , obtaining information
 ms.date: 04/20/2017
@@ -20,7 +19,7 @@ Before a client uses a parallel port, it can obtain information about the follow
 
 -   Hardware capabilities of the parallel port
 
--   [Parallel port callback routines](/windows-hardware/drivers/ddi/index) that a kernel-mode driver can use
+-   [Parallel port callback routines](/windows-hardware/drivers/ddi/_parports/) that a kernel-mode driver can use
 
 A client uses the following internal device control requests to obtain the above information:
 

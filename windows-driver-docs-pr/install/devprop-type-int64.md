@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_INT64
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a LONG64-typed signed integer.
-ms.assetid: a7ead755-385e-4efe-832d-885fff10e42f
 keywords: ["DEVPROP_TYPE_INT64 Device and Driver Installation"]
 topic_type:
 - apiref

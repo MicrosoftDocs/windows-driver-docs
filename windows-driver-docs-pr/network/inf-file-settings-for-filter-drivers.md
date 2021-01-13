@@ -1,7 +1,6 @@
 ---
 title: INF File Settings for Filter Drivers
 description: INF File Settings for Filter Drivers
-ms.assetid: e2714e67-62ac-4d9a-bec3-971d1c8b5bd8
 keywords:
 - INF files WDK network , filter drivers
 ms.date: 04/20/2017

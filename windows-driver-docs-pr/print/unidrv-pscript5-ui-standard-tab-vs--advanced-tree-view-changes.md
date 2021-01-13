@@ -1,7 +1,6 @@
 ---
 title: Unidrv/PScript5 UI Standard Tab vs. Advanced Tree View Changes
 description: Unidrv/PScript5 UI Standard Tab vs.
-ms.assetid: 07374e07-f0ca-4e97-8e5f-e5fe54d14af4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

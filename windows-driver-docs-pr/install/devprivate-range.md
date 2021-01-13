@@ -1,7 +1,6 @@
 ---
 title: DEVPRIVATE_RANGE
 description: DEVPRIVATE_RANGE
-ms.assetid: 4004c9a5-f761-4662-9fd6-bcd7ab50f562
 keywords: ["DEVPRIVATE_RANGE Device and Driver Installation"]
 topic_type:
 - apiref

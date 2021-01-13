@@ -1,7 +1,6 @@
 ---
 title: Framework Object Creation Errors
 description: Framework Object Creation Errors
-ms.assetid: f5345c88-1c3a-4b32-9c93-c252713f7641
 keywords:
 - framework objects WDK KMDF , creation errors
 - errors WDK KMDF

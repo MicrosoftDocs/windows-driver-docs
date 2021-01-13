@@ -1,7 +1,6 @@
 ---
 title: Installing and Configuring Still Image Components
 description: Installing and Configuring Still Image Components
-ms.assetid: 18d32f09-28e0-40f2-a9cb-962de0554b74
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

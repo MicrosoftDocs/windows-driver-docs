@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH
 description: Clients use KSPROPERTY\_BDA\_RF\_TUNER\_BANDWIDTH to control the bandwidth setting of the tuner node.
-ms.assetid: 34feb05d-c1dc-4ce1-86bf-d7d33920befd
 keywords: ["KSPROPERTY_BDA_RF_TUNER_BANDWIDTH Streaming Media Devices"]
 topic_type:
 - apiref

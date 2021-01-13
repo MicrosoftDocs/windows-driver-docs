@@ -1,7 +1,6 @@
 ---
 title: PCM Stream Data Format
 description: PCM Stream Data Format
-ms.assetid: 86599e55-e771-4d6e-ad59-6dc905c53cd8
 keywords:
 - PCM stream data formats WDK
 ms.date: 04/20/2017

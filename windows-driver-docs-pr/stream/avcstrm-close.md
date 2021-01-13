@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_CLOSE
 description: AVCSTRM\_CLOSE
-ms.assetid: 2487ba06-3577-409e-ba82-f9a0d3453c5d
 keywords: ["AVCSTRM_CLOSE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfusbpipe
 description: The wudfext.wudfusbpipe extension displays information about a USB pipe object.
-ms.assetid: a80f01e1-9c2c-4674-a067-0ff7e006713a
 keywords: ["wudfext.wudfusbpipe Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

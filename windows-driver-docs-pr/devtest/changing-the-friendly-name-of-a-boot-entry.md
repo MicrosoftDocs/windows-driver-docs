@@ -1,7 +1,6 @@
 ---
 title: Changing the Friendly Name of a Boot Entry
 description: Changing the Friendly Name of a Boot Entry
-ms.assetid: 28f4f449-9027-453e-877a-d656539296c0
 keywords:
 - names WDK boot options
 - friendly names WDK boot options
@@ -51,7 +50,7 @@ To change the friendly name of a boot entry for Windows, use BCDEdit.
 To change the description of a boot entry as it appears on the boot menu, you can use the **/set** *IDdescription* option. The command uses the following syntax. The ID is the GUID that is associated with the boot entry (or one of the well-known identifiers, for example, {current}).
 
 > [!NOTE]
-> If you are using [Windows PowerShell](/powershell/module/Microsoft.PowerShell.Core/?view=powershell-6), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
+> If you are using [Windows PowerShell](/powershell/scripting/overview), you must use quotes around the boot entry identifier, for example: **"{49916baf-0e08-11db-9af4-000bdbd316a0}"** or **"{current}"**.
 
 
 ```console

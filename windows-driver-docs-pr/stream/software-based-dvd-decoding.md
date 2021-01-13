@@ -1,7 +1,6 @@
 ---
 title: Software-based DVD Decoding
 description: Software-based DVD Decoding
-ms.assetid: 23181ace-563b-4920-b4c3-4fc4452a10b3
 keywords:
 - DVD decoder minidrivers WDK , software-based DVD decoding
 - decoder minidrivers WDK DVD , software-based DVD decoding

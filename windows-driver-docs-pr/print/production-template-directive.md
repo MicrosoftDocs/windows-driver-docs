@@ -1,7 +1,6 @@
 ---
 title: Production Template Directive
 description: Production Template Directive
-ms.assetid: 5deae299-389a-4de4-8f2f-7c247f045ada
 keywords:
 - Production directive WDK GDL
 - constructs WDK GDL , valid combinations

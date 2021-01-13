@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDSUBPIC\_PALETTE
 description: The KSPROPERTY\_DVDSUBPIC\_PALETTE property specifies the color palette that the subpicture stream uses.
-ms.assetid: 9dafb956-4adf-45ec-b997-8ed35991f7d8
 keywords: ["KSPROPERTY_DVDSUBPIC_PALETTE Streaming Media Devices"]
 topic_type:
 - apiref

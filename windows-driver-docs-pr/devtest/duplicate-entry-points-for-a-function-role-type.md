@@ -1,7 +1,6 @@
 ---
 title: Duplicate Entry Points for a Function Role Type
 description: Duplicate Entry Points for a Function Role Type
-ms.assetid: cf6604da-bd79-4adf-a08f-9b903aa91133
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

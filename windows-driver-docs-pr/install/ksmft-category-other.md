@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_OTHER
 description: KSMFT_CATEGORY_OTHER
-ms.assetid: db50ab63-9c6d-4345-8b1c-377a2645dde3
 keywords: ["KSMFT_CATEGORY_OTHER Device and Driver Installation"]
 topic_type:
 - apiref

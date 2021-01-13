@@ -1,7 +1,6 @@
 ---
 title: Returning Control from HwScsiFindAdapter
 description: Returning Control from HwScsiFindAdapter
-ms.assetid: 689eae76-9b5b-438f-bbdc-5ee11c6fe737
 keywords:
 - HwScsiFindAdapter
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter

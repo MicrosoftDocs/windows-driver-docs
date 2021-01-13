@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_SCAN\_AVAILABLE\_ITEM
 description: The WIA\_DPS\_SCAN\_AVAILABLE\_ITEM property provides the name of the input source for a push-scan operation that the application performs under program control. The WIA minidriver creates and maintains this property.
-ms.assetid: 747cd5bb-4746-4086-8a87-08a6728125bc
 keywords: ["WIA_DPS_SCAN_AVAILABLE_ITEM Imaging Devices"]
 topic_type:
 - apiref

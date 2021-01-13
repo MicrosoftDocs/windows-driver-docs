@@ -1,7 +1,6 @@
 ---
 title: SetBindingSupport function
 description: The SetBindingSupport method sets the binding capabilities that are currently enabled for the indicated port.
-ms.assetid: 52a469df-b184-460b-b515-a0b6eb946f1f
 keywords: ["SetBindingSupport function Storage Devices"]
 topic_type:
 - apiref

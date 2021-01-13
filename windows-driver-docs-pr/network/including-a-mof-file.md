@@ -1,7 +1,6 @@
 ---
 title: Including a MOF File
 description: Including a MOF File
-ms.assetid: 87ef7156-d204-4797-b805-a50d9a4c509d
 keywords:
 - custom GUIDs WDK networking
 - WMI WDK networking , GUIDs

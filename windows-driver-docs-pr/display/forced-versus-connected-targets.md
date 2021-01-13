@@ -1,7 +1,6 @@
 ---
 title: Forced Versus Connected Targets
 description: Forced Versus Connected Targets
-ms.assetid: 690e585b-3c90-4373-844d-42afe033b59b
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts, forced versus connected targets
 - connecting displays WDK Windows Server 2008 R2 display , CCD concepts, forced versus connected targets

@@ -1,7 +1,6 @@
 ---
 title: Saving Energy with VSync Control
 description: Saving Energy with VSync Control
-ms.assetid: d7ee7461-0d2a-4103-9225-57ca10a75a7a
 keywords:
 - display driver model WDK Windows Vista , saving energy
 - Windows Vista display driver model WDK , saving energy
@@ -29,7 +28,7 @@ A Windows Vista with SP1 or later system with a driver that follows the WDDM an
 
 ## Display-Only VSync Requirements for Windows 8 and later versions
 
-In Windows 8 and later versions of the Windows operating system, it's optional for a [kernel mode display-only driver (KMDOD)](/windows-hardware/drivers/ddi/index) to support VSync functionality, as follows:
+In Windows 8 and later versions of the Windows operating system, it's optional for a kernel mode display-only driver (KMDOD) to support VSync functionality, as follows:
 
 - **Display-only driver supports VSync control**
 

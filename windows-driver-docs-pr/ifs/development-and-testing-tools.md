@@ -1,7 +1,6 @@
 ---
 title: Development and Testing Tools
 description: Development and Testing Tools
-ms.assetid: 6cc81509-27e1-4d5b-996c-6a7bbfd0ddcf
 keywords:
 - filter manager WDK file system minifilter , tools
 - Fltmc.exe WDK file system minifilter

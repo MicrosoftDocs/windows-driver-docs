@@ -1,7 +1,6 @@
 ---
 title: Creating Contexts
 description: Creating Contexts
-ms.assetid: da62d79d-064b-4ea4-abed-ffb13a9cc13d
 keywords:
 - contexts WDK file system minifilter , creating
 ms.date: 04/20/2017

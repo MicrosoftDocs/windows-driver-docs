@@ -79,7 +79,7 @@ The tests and utilities will use only the elements required and will ignore all 
 
 #### Configuring the SDEL query
 
-The [SDEL language](/windows-hardware/drivers/ddi/index) is used to create the query that returns the devices targeted by the tests and utilities. Bring the following SDEL-related parameters together using AND statements to create the complete query:
+The [SDEL language](../wdtf/simple-data-evaluation-language-overview.md) is used to create the query that returns the devices targeted by the tests and utilities. Bring the following SDEL-related parameters together using AND statements to create the complete query:
 
 **SDEL**: The value *IsDevice* specifies the complete set of devices on the system.  Typically, this parameter is not edited unless you only want to test a specific driver or device.  The next SDEL-related parameters will create a subset of devices from this superset by specifying drivers or devices which should be excluded from testing, so this parameter can be left unchanged.
 
@@ -224,7 +224,7 @@ The following error message is indicative of a poorly formed SDEL query containe
     EndGroup: PNP_DisableEnable_With_IO_BeforeAndAfter::PNP_DisableEnable_With_IO_BeforeAndAfter_DataDriven_Test#0 [Failed]
 ```
 
-The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](/windows-hardware/drivers/ddi/index) and look for a malformed query that could be causing this error.
+The HRESULT '0x80070057' means "E_INVALIDARG: One or more arguments are not valid". Carefully check the WDTFTest.xml configuration file against the [SDEL documentation](../wdtf/simple-data-evaluation-language-overview.md) and look for a malformed query that could be causing this error.
 
 ### Test is Blocked Because it Might Reboot the Machine
 

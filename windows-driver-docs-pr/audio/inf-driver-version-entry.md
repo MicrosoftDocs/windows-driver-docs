@@ -1,7 +1,6 @@
 ---
 title: INF Driver-Version Entry
 description: INF Driver-Version Entry
-ms.assetid: 092cd9ed-8988-4ffd-9958-1267f3c52819
 keywords:
 - version numbers WDK audio
 - INF files WDK audio

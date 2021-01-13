@@ -1,7 +1,6 @@
 ---
 title: Dealing with Unavailable Symbol Stores
 description: Dealing with Unavailable Symbol Stores
-ms.assetid: 42e3518b-b139-49cd-96cc-ea31f6df7964
 keywords: ["SymProxy, unavailable stores"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

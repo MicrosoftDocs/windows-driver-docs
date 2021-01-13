@@ -1,7 +1,6 @@
 ---
 title: DXGKDDI\_UPDATEPAGETABLE callback function
 description: The DxgkDdiUpdatePageTable function is reserved for system use. Do not implement it in your driver.
-ms.assetid: 08328e82-d1cc-4c50-bc96-7382232676ab
 keywords: ["DxgkDdiUpdatePageTable callback function Display Devices", "DXGKDDI_UPDATEPAGETABLE"]
 topic_type:
 - apiref

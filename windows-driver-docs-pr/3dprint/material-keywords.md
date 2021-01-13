@@ -1,7 +1,6 @@
 ---
 title: Material keywords
 description: These keywords describe the raw material in the device used to create 3D objects.
-ms.assetid: B2264CA8-64F9-4A20-AC55-46A0C48EDF3C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

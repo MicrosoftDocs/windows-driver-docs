@@ -1,7 +1,6 @@
 ---
 title: Publishing NFP messages
 description: Publishing NFP messages
-ms.assetid: 45BE3620-ADF4-413D-90B3-586FCEB5F606
 keywords:
 - NFC
 - near field communications
@@ -112,5 +111,4 @@ The driver must set the “CompleteEventImmediately” counter to zero and must 
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

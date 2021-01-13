@@ -1,7 +1,6 @@
 ---
 title: Button behavior
 description: This topic describes the expected behavior of hardware buttons.
-ms.assetid: 057A4F21-3514-4CCA-BCE2-279E8228B5A9
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

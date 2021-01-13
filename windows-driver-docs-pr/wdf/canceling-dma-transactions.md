@@ -1,7 +1,6 @@
 ---
 title: Canceling DMA Transactions
 description: Canceling DMA Transactions
-ms.assetid: 1E1D659D-80C9-45B1-B96F-78E5A1EE4F6B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

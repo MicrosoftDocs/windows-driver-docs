@@ -1,7 +1,6 @@
 ---
 title: Write a MBB-NetAdapterCx client driver
 description: Describes the behavior of MBB-NetAdapter class extension and tasks that a client driver must perform for the MBB moderm.
-ms.assetid: FE69E832-848F-475A-9BF1-BBB198D08A86
 keywords:
 - Mobile Broadband (MBB) WDF class extension, MBBCx, Mobile Broadband NetAdapterCx
 ms.date: 03/19/2018

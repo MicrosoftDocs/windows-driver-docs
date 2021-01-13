@@ -1,7 +1,6 @@
 ---
 title: Obtaining an HDAUDIO_BUS_INTERFACE DDI Object
 description: Obtaining an HDAUDIO_BUS_INTERFACE DDI Object
-ms.assetid: 78667254-62a6-41fe-af36-43dbdea63aa8
 keywords:
 - HDAUDIO_BUS_INTERFACE structure
 ms.date: 04/20/2017

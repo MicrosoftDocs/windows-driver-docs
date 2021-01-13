@@ -1,7 +1,6 @@
 ---
 title: ShowDeviceInDisconnectedState
 description: ShowDeviceInDisconnectedState
-ms.assetid: f2f517dd-68e5-4013-83ee-777579562db3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

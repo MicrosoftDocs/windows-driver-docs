@@ -1,7 +1,6 @@
 ---
 title: COPP Processing
 description: COPP Processing
-ms.assetid: c9ff0fd3-c063-4450-ae66-54153b3dc53c
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , COPP
 - Video Acceleration WDK DirectX , COPP
@@ -39,15 +38,9 @@ The following topics describe the COPP DDI and how to support COPP:
 
 [Returning Error Codes from COPP Functions](returning-error-codes-from-copp-functions.md)
 
-[Performing COPP Operations](performing-copp-operations.md)
+[Performing COPP Operations](./performing-copp-operations-example.md)
 
 [Implementation Tips and Requirements for COPP](implementation-tips-and-requirements-for-copp.md)
 
  
-
- 
-
-
-
-
 

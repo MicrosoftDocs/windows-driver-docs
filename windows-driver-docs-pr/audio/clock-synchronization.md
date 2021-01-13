@@ -1,7 +1,6 @@
 ---
 title: Clock Synchronization
 description: Clock Synchronization
-ms.assetid: dc0071b0-a22c-4bb5-90ea-a69e5dcdba6f
 keywords:
 - synthesizers WDK audio , clock synchronization
 - clocks WDK audio , synchronization

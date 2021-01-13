@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC2 BAD_POOL_CALLER
 description: The BAD_POOL_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
-ms.assetid: 64803335-ab93-4c4d-9b30-2ec15a13303f
 keywords: ["Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
 ms.date: 05/23/2017
 topic_type:
@@ -229,7 +228,7 @@ Activate Driver Verifier with memory pool options enabled, to obtain more inform
 
 **Driver Verifier**
 
-Driver Verifier is a tool that runs in real time to examine the behavior of drivers. If it see errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
+Driver Verifier is a tool that runs in real time to examine the behavior of drivers. If it see errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifier* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 **Windows Memory Diagnostics**
 

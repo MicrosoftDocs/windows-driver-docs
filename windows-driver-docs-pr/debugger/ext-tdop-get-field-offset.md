@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_GET\_FIELD\_OFFSET
 description: The EXT\_TDOP\_GET\_FIELD\_OFFSET sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns the offset of a member within a structure.
-ms.assetid: 2703d518-1bc3-42a2-9a22-f9ea88a12c05
 keywords: ["EXT_TDOP_GET_FIELD_OFFSET Windows Debugging"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SAE_CONFIRM_RESPONSE
 description: WDI_TLV_SAE_CONFIRM_RESPONSE is a TLV that contains the Simultaneous Authentication of Equals (SAE) Confirm response frame.
-ms.assetid: 42ACD823-3FFB-442F-B81C-82446C3606FF
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_CONFIRM_RESPONSE Network Drivers Starting with Windows Vista

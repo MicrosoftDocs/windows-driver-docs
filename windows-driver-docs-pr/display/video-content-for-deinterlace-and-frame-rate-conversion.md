@@ -1,7 +1,6 @@
 ---
 title: Video Content for Deinterlace and Frame-Rate Conversion
 description: Video Content for Deinterlace and Frame-Rate Conversion
-ms.assetid: 627b394e-c2e1-4327-adaa-0c3436ba3d1a
 keywords:
 - deinterlacing WDK DirectX VA , received video content
 - frame-rate conversion WDK DirectX VA

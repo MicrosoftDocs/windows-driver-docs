@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_HALTED
 description: CM_PROB_HALTED
-ms.assetid: 06838356-5dc9-4396-b2a5-0003d4098859
 keywords:
 - CM_PROB_HALTED
 ms.date: 04/20/2017

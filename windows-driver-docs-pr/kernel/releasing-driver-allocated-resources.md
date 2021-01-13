@@ -1,7 +1,6 @@
 ---
 title: Releasing Driver-Allocated Resources
 description: Releasing Driver-Allocated Resources
-ms.assetid: b286b4b0-54f2-4798-a77b-c08743502552
 keywords: ["Unload routines WDK kernel , non-PnP drivers", "non-PnP Unload routine WDK kernel", "releasing driver-allocated resources", "driver-allocated resource releases WDK kernel", "resource releasing WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

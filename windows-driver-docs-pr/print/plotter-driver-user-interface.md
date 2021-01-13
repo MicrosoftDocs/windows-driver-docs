@@ -1,7 +1,6 @@
 ---
 title: Plotter Driver User Interface
 description: Plotter Driver User Interface
-ms.assetid: 681e9215-d34b-4991-9c0f-b9dbe23412f6
 keywords:
 - Plotter Driver WDK print , user interface
 - MSPlot WDK print , user interface

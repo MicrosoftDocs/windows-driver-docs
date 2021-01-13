@@ -1,7 +1,6 @@
 ---
 title: hidkd.help
 description: The hidkd.help command displays help for the HID debugger extension commands.
-ms.assetid: 1CCE25B1-E6D4-4402-83FB-214C92650739
 keywords: ["hidkd.help Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

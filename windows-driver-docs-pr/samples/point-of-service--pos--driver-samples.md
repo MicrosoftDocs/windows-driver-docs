@@ -1,7 +1,6 @@
 ---
 title: Point of service (POS) driver samples
 description: The driver samples in this directory provide a starting point for writing a custom POS driver for your device.
-ms.assetid: 5147739F-2BC7-4AAC-959A-19702F6DB73E
 ms.date: 11/19/2019
 ms.localizationpriority: medium
 ---

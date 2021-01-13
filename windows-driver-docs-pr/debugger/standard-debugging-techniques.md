@@ -1,7 +1,6 @@
 ---
 title: Standard Debugging Techniques
 description: This section discusses standard debugging techniques that you can apply across different technologies and different types of code.
-ms.assetid: D7752D63-E2A7-418C-A06F-6D5CCF3EDAEB
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

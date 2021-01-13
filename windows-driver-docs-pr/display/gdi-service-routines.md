@@ -1,7 +1,6 @@
 ---
 title: GDI Service Routines
 description: GDI Service Routines
-ms.assetid: ca4fbb84-33a8-498f-8549-c8aaf87429fd
 keywords:
 - GDI WDK Windows 2000 display , service routines
 - graphics drivers WDK Windows 2000 display , service routines

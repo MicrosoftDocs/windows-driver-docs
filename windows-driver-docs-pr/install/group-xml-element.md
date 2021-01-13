@@ -1,7 +1,6 @@
 ---
 title: group XML Element
 description: group XML Element
-ms.assetid: 8035fd60-065c-4282-a18c-34e6a5201e56
 keywords: ["group XML Element Device and Driver Installation"]
 topic_type:
 - apiref

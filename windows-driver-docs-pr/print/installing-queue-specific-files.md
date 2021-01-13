@@ -1,7 +1,6 @@
 ---
 title: Installing Queue-Specific Files
 description: Installing Queue-Specific Files
-ms.assetid: 86cb16d5-6035-4a4d-a6b7-f27ebd3e9f5c
 keywords:
 - Point and Print WDK , queue-specific files
 - queue-specific files WDK printer

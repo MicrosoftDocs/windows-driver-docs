@@ -1,7 +1,6 @@
 ---
 title: Querying the Parameters of a Virtual Port
 description: Querying the Parameters of a Virtual Port
-ms.assetid: 482DA041-2C70-438A-8D29-0F338CDCF935
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ Before the overlying driver issues this OID method request, it must initialize a
 
     -   From a previous OID method request of [OID\_NIC\_SWITCH\_ENUM\_VPORTS](./oid-nic-switch-enum-vports.md).
 
-After a successful return from this OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure. This structure contains the parameters for the specified VPort.
+After a successful return from this OID method request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure. This structure contains the parameters for the specified VPort.
 
 NDIS handles the [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](./oid-nic-switch-vport-parameters.md) request for miniport drivers. NDIS returns the information from an internal cache of the data that it maintains from inspecting the following sources:
 

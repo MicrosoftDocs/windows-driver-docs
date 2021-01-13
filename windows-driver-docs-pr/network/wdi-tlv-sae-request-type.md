@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SAE_REQUEST_TYPE
 description: WDI_TLV_SAE_REQUEST_TYPE is a TLV that contains the type of Simultaneous Authentication of Equals (SAE) request frame to send to a target BSSID.
-ms.assetid: 90F0F7DA-DACA-49EF-86E8-CE4206D83882
 ms.date: 02/15/2019
 keywords:
  - WDI_TLV_SAE_REQUEST_TYPE Network Drivers Starting with Windows Vista

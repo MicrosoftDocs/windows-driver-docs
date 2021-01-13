@@ -1,7 +1,6 @@
 ---
 title: Standard GDL Parsing
 description: Standard GDL Parsing
-ms.assetid: 089bba58-e29f-428a-ab54-4413edca1d0c
 keywords:
 - GDL WDK , parser
 - parser WDK GDL , standard parsing

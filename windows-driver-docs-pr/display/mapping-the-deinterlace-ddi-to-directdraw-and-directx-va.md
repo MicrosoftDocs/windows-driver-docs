@@ -1,7 +1,6 @@
 ---
 title: Mapping the Deinterlace DDI to DirectDraw and DirectX VA
 description: Mapping the Deinterlace DDI to DirectDraw and DirectX VA
-ms.assetid: a060265f-e1a2-416c-8533-6971cc9e2156
 keywords:
 - deinterlacing WDK DirectX VA , mapping deinterlacing DDI
 - mapping deinterlacing DDI

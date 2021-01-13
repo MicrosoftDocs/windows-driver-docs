@@ -1,7 +1,6 @@
 ---
 title: Custom Port Property Definition and Registration
 description: Custom Port Property Definition and Registration
-ms.assetid: 55FCA402-191B-4DC9-A126-77AA15183E90
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

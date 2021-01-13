@@ -1,7 +1,6 @@
 ---
 title: Creating a WIA Camera Item Tree Layout
 description: Creating a WIA Camera Item Tree Layout
-ms.assetid: 83b496dc-8c47-46fb-b703-837eb536cb66
 ms.date: 06/09/2020
 ms.localizationpriority: medium
 ---

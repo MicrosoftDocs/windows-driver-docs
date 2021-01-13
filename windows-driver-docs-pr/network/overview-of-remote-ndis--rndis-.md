@@ -1,7 +1,6 @@
 ---
 title: Overview of Remote NDIS (RNDIS)
 description: Overview of Remote NDIS (RNDIS)
-ms.assetid: 03da539d-9613-4454-8f79-514e76767af6
 keywords:
 - Remote NDIS WDK networking , architecture
 - Remote NDIS WDK networking , USB transport
@@ -56,7 +55,5 @@ This section includes the following additional topics:
 ## Related topics
 
 
-[USB class drivers included in Windows](/windows-hardware/drivers/ddi/index)
-
- 
+[USB class drivers included in Windows](../usbcon/supported-usb-classes.md)
 

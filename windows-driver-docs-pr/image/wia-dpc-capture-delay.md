@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_CAPTURE\_DELAY
 description: The WIA\_DPC\_CAPTURE\_DELAY property contains a value that represents the amount of time delay, in milliseconds, that should be inserted between the capture trigger and the actual initiation of a data capture.
-ms.assetid: dc633117-88b1-4f09-ae64-160a53f75f73
 keywords: ["WIA_DPC_CAPTURE_DELAY Imaging Devices"]
 topic_type:
 - apiref

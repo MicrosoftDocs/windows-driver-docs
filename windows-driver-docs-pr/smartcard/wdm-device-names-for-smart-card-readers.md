@@ -1,7 +1,6 @@
 ---
 title: WDM Device Names for Smart Card Readers
 description: WDM Device Names for Smart Card Readers
-ms.assetid: 06f15b0d-d759-4cfe-a558-883f7f0d2581
 keywords:
 - smart card drivers WDK , device names
 - device names WDK smart card

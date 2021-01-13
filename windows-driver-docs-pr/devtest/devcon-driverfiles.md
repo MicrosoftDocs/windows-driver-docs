@@ -1,7 +1,6 @@
 ---
 title: DevCon DriverFiles
 description: Displays the full path and file name of installed INF files and device driver files for the specified devices. Valid only on the local computer.
-ms.assetid: 8f8394e4-1ee4-4356-9f4d-ecc70deeaab1
 keywords:
 - DevCon DriverFiles Driver Development Tools
 topic_type:

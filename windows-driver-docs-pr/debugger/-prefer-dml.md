@@ -1,7 +1,6 @@
 ---
 title: .prefer_dml (Prefer Debugger Markup Language)
 description: The .prefer_dml command sets the default behavior for commands that are capable of providing output in the Debugger Markup Language (DML) format.
-ms.assetid: BBB96770-A575-4E31-AE8B-9226BB61727D
 keywords: [".prefer_dml (Prefer Debugger Markup Language) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

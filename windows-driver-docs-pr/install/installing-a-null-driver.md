@@ -1,7 +1,6 @@
 ---
 title: Installing a Null Driver
 description: Installing a Null Driver
-ms.assetid: 8684eade-3f25-48fe-94e7-a7e76d8072ad
 keywords:
 - Device setup WDK device installations , null drivers
 - device installations WDK , null drivers

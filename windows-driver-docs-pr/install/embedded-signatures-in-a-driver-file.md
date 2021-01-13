@@ -1,7 +1,6 @@
 ---
 title: Embedded Signatures in a Driver File
 description: Embedded Signatures in a Driver File
-ms.assetid: 21941c7b-4f9a-424c-9984-3048a53398b6
 keywords:
 - embedded signatures WDK driver signing
 - driver signing WDK , embedded

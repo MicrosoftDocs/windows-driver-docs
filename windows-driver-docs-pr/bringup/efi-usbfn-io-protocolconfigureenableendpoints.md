@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
 description: EFI_USBFN_IO_PROTOCOL.ConfigureEnableEndpoints
-ms.assetid: 31bc58a0-ec2b-4b5e-ad1b-e6107cc083b1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

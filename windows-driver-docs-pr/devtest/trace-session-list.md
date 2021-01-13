@@ -1,7 +1,6 @@
 ---
 title: Trace Session List
 description: Trace Session List
-ms.assetid: 96709994-6b69-4e39-9da7-1144d6cea28c
 keywords:
 - TraceView WDK , window
 - Trace Session List WDK

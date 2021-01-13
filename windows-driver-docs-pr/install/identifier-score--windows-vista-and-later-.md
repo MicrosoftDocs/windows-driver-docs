@@ -1,7 +1,6 @@
 ---
 title: Identifier Score
 description: Identifier Score
-ms.assetid: c291205f-5152-419c-b6fa-0f720a5b628f
 keywords:
 - identifier score WDK device installations
 - device identification strings WDK , identifier score driver ranking

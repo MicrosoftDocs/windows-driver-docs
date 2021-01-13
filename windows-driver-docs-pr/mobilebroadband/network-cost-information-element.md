@@ -1,7 +1,6 @@
 ---
 title: Network cost information element
 description: Network cost information element
-ms.assetid: 973294b5-0c4f-4056-ad28-62c58f10c232
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

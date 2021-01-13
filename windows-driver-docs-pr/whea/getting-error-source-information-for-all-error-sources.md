@@ -1,7 +1,6 @@
 ---
 title: Getting Error Source Information for All Error Sources
 description: Getting Error Source Information for All Error Sources
-ms.assetid: 78e3a015-128d-44d1-b0ec-4da43c359090
 keywords:
 - error sources WDK WHEA , getting information
 - errors WDK WHEA , error sources

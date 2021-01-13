@@ -1,7 +1,6 @@
 ---
 title: Forwarding Extensions
 description: Forwarding Extensions
-ms.assetid: 7ABBB3F3-66F5-4651-8A5A-94940F3FD82D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

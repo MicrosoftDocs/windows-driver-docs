@@ -1,7 +1,6 @@
 ---
 title: USB Audio Not Playing 
 description: Audio Drivers Event Sets
-ms.assetid: ee800f71-9c90-4084-b879-32300e6706fc
 ms.date: 12/19/2019
 ms.localizationpriority: medium
 ---

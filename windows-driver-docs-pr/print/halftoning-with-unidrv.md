@@ -1,7 +1,6 @@
 ---
 title: Halftoning with Unidrv
 description: Halftoning with Unidrv
-ms.assetid: 42d1ca77-f8af-4212-a5a7-fb147d86b689
 keywords:
 - Unidrv, halftoning
 - halftoning WDK Unidrv

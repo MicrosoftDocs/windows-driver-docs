@@ -1,7 +1,6 @@
 ---
 title: Reporting a NIC's IPsec Capabilities
 description: Reporting a NIC's IPsec Capabilities
-ms.assetid: 6ed02d4a-9b5e-4245-a3f9-f0b5fc8366a7
 keywords:
 - task offload WDK TCP/IP transport , IPsec tasks
 - IPsec offload WDK TCP/IP transport , capabilities
@@ -21,7 +20,7 @@ An NDIS miniport driver specifies the current Internet protocol security (IPsec)
 
 Miniport drivers must report changes in the IPsec offload capabilities, if any, in the [**NDIS\_STATUS\_TASK\_OFFLOAD\_CURRENT\_CONFIG**](./ndis-status-task-offload-current-config.md) status indication.
 
-In response to a query of [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](./oid-tcp-offload-current-config.md), NDIS includes the NDIS\_IPSEC\_OFFLOAD\_V1 structure in the [**NDIS\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure that NDIS returns in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure. NDIS uses the information that the miniport driver provided.
+In response to a query of [OID\_TCP\_OFFLOAD\_CURRENT\_CONFIG](./oid-tcp-offload-current-config.md), NDIS includes the NDIS\_IPSEC\_OFFLOAD\_V1 structure in the [**NDIS\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure that NDIS returns in the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure. NDIS uses the information that the miniport driver provided.
 
 A miniport driver indicates the following information in the NDIS\_IPSEC\_OFFLOAD\_V1 structure:
 

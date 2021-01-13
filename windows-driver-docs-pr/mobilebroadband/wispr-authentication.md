@@ -1,7 +1,6 @@
 ---
 title: WISPr authentication overview
 description: WISPr authentication overview
-ms.assetid: 49782d7f-c2f9-408d-971c-1af4d93d4d8d
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

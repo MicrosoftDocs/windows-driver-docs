@@ -1,7 +1,6 @@
 ---
 title: Version 3 XPSDrv Print Driver Components
 description: Version 3 XPSDrv Print Driver Components
-ms.assetid: 7eced017-a6a6-4fa5-8965-ff6655f86b8c
 keywords:
 - XPSDrv printer drivers WDK , configuration modules
 - configuration modules WDK XPSDrv , Version 3 XPS drivers

@@ -1,7 +1,6 @@
 ---
 title: Authentication and Identification
 description: Authentication and Identification
-ms.assetid: fe118cf3-05ce-43b1-b878-4bb99b97dc2e
 keywords:
 - security WDK file systems , minimizing threats
 - authentication WDK file systems

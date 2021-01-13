@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_DRIVER_VERSION
 description: This topic describes the OID_GEN_CO_DRIVER_VERSION object identifier (OID).
-ms.assetid: 00ad3552-9e03-4697-bba3-13ec60b2e73d
 keywords:
 - OID_GEN_CO_DRIVER_VERSION
 ms.date: 11/02/2017

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_VIRTUAL
 description: KSCATEGORY_VIRTUAL
-ms.assetid: 065bd2b1-4863-49ff-b6e7-f09c4234adad
 keywords: ["KSCATEGORY_VIRTUAL Device and Driver Installation"]
 topic_type:
 - apiref

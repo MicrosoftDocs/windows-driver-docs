@@ -1,7 +1,6 @@
 ---
 title: Building IddCx 1.4 drivers
 description: How to build IddCx version 1.4 indirect display drivers
-ms.assetid: 4e065381-f1cd-401a-9844-f85eaf414b5f
 ms.date: 09/28/2020
 keywords:
 - Building indirect display drivers, version 1.4

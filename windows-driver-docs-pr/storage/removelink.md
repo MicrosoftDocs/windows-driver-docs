@@ -1,7 +1,6 @@
 ---
 title: RemoveLink function
 description: The RemoveLink WMI method configures the WMI provider so that it stops passing fabric link event information to the WMI client.
-ms.assetid: 8c9f78ba-fdb8-4d6c-ab99-3492e0887572
 keywords: ["RemoveLink function Storage Devices"]
 topic_type:
 - apiref

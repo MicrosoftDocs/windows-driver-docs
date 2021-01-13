@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode Code Signing Requirements
 description: Kernel-Mode Code Signing Requirements
-ms.assetid: da02fcb3-d073-42cd-8247-71e2e9e93f65
 keywords:
 - driver signing WDK , kernel-mode code signing requirements
 - signing drivers WDK , kernel-mode code signing requirements

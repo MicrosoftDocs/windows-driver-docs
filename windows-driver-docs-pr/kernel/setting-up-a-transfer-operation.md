@@ -1,7 +1,6 @@
 ---
 title: Setting Up a Transfer Operation
 description: Setting Up a Transfer Operation
-ms.assetid: cabac16d-b946-4b96-af2c-5fd0a0d848da
 keywords: ["bus-master DMA WDK kernel", "DMA transfers WDK kernel , bus-master DMA", "adapter objects WDK kernel , bus-master DMA", "logical address ranges WDK DMA", "addresses WDK DMA", "transfer operations WDK DMA"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

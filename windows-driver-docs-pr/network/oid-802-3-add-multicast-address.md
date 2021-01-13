@@ -1,7 +1,6 @@
 ---
 title: OID_802_3_ADD_MULTICAST_ADDRESS
 description: As a set request, NDIS and overlying protocol drivers use the OID_802_3_ADD_MULTICAST_ADDRESS OID request to add an 802.3 multicast address to the multicast address list of a miniport adapter.
-ms.assetid: e3e6defe-e65f-46bb-9cd6-cb65ffa7d7f0
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_ADD_MULTICAST_ADDRESS Network Drivers Starting with Windows Vista
@@ -24,7 +23,7 @@ Not requested.
 Remarks
 -------
 
-The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains the 6-byte address to be added to the multicast address list.
+The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains the 6-byte address to be added to the multicast address list.
 
 The OID\_802\_3\_ADD\_MULTICAST\_ADDRESS OID request can add only one address. To add more than one address, the overlying driver must issue multiple OID\_802\_3\_ADD\_MULTICAST\_ADDRESS OID requests.
 
@@ -57,7 +56,7 @@ Requirements
 
 [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes)
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes)
 

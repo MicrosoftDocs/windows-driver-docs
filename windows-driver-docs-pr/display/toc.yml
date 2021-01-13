@@ -2499,8 +2499,6 @@
       - name: "Performing COPP Operations"
 # Auto-expanded node
         items: 
-        - name: "Performing COPP Operations"
-          href: performing-copp-operations.md
         - name: "Starting a Protected Video Session"
           href: starting-a-protected-video-session.md
         - name: "Handling Protection Levels"

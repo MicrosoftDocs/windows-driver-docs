@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfdevice
 description: The wdfkd.wdfdevice extension displays information that is associated with a WDFDEVICE-typed object handle.
-ms.assetid: c6dd98e5-a0ed-437d-a313-5d8a416105dd
 keywords: ["wdfkd.wdfdevice Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

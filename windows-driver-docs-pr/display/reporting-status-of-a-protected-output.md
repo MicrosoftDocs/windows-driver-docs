@@ -1,7 +1,6 @@
 ---
 title: Reporting Status of a Protected Output
 description: Reporting Status of a Protected Output
-ms.assetid: 9945ae9c-1c11-4266-8a5c-d0ffe5ba4b5f
 keywords:
 - OPM WDK display , status of protected output
 ms.date: 04/20/2017

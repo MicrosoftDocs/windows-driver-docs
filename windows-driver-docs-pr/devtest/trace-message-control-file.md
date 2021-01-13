@@ -1,7 +1,6 @@
 ---
 title: Trace Message Control File
 description: Trace Message Control File
-ms.assetid: 4904a1d2-1314-49ad-bd57-ec976b18de13
 keywords:
 - trace message control files WDK
 - TMC files WDK

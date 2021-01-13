@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_MEDIASEEKING\_TIMEFORMAT
 description: The KSPROPERTY\_MEDIASEEKING\_TIMEFORMAT property retrieves the current media time format for a filter.
-ms.assetid: 3a7b6873-7351-4e87-8fa7-a804894c56bb
 keywords: ["KSPROPERTY_MEDIASEEKING_TIMEFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_BASE_STATIONS_INFO
 description: OID_WWAN_BASE_STATIONS_INFO
-ms.assetid: 041CFD25-7CEA-4041-B723-E42FB8189461
 keywords:
 - MB base stations info OID, Mobile Broadband base stations info OID, Mobile Broadband miniport driver base stations info OID
 ms.date: 08/21/2017

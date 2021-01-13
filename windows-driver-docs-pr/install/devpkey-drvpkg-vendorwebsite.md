@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_VendorWebSite
 description: DEVPKEY_DrvPkg_VendorWebSite
-ms.assetid: 5a460073-64ec-4f86-af18-ddd065ed03b1
 keywords: ["DEVPKEY_DrvPkg_VendorWebSite Device and Driver Installation"]
 topic_type:
 - apiref

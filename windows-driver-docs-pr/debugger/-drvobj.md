@@ -1,7 +1,6 @@
 ---
 title: drvobj
 description: The drvobj extension displays detailed information about a DRIVER_OBJECT.
-ms.assetid: 98f3cacf-311c-4000-8336-4964cc2cb9b0
 keywords: ["drvobj Windows Debugging"]
 ms.date: 11/16/2018
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: About file system filter drivers
 description: About file system filter drivers
-ms.assetid: 4bff8ad6-624a-429d-b9ec-3f96c3c7c99d
 keywords:
 - filter drivers WDK file system , about file system filter drivers
 - file system filter drivers WDK , about file system filter drivers

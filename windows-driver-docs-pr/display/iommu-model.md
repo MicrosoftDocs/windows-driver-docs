@@ -1,7 +1,6 @@
 ---
 title: IoMmu model
 description: In the IoMmu model each process has a single virtual address space that is shared between the CPU and graphics processing unit (GPU) and is managed by the OS memory manager.
-ms.assetid: D8D5A2A8-F43A-4EC5-9355-C144EC15E754
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

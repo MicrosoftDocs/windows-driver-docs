@@ -1,7 +1,6 @@
 ---
 title: EFI_RNG_PROTOCOL
 description: The EFI_RNG_PROTOCOL is used to obtain a Random Number Generation (RNG) value from an EFI driver.
-ms.assetid: 927E2C40-973B-49AB-ACD5-2A3532827D74
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

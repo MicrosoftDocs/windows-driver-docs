@@ -1,7 +1,6 @@
 ---
 title: igrep
 description: The igrep extension searches for a pattern in disassembly.
-ms.assetid: f76aa84b-6d52-4b36-b2d0-d4a8d47d510e
 keywords: ["igrep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

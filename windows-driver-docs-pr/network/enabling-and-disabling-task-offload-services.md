@@ -1,7 +1,6 @@
 ---
 title: Enabling and Disabling Task Offload Services
 description: A protocol driver can enable or disable task offload services for an underlying miniport adapter by issuing an OID_OFFLOAD_ENCAPSULATION OID set request.
-ms.assetid: cc803af4-d4ed-4b51-9e0e-77443e0eb023
 keywords:
 - task offload WDK TCP/IP transport , enabling services
 - task offload WDK TCP/IP transport , disabling services

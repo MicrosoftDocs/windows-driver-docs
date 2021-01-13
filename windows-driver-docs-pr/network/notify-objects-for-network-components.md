@@ -1,7 +1,6 @@
 ---
 title: Notify Objects for Network Components
 description: Notify Objects for Network Components
-ms.assetid: 5b5c5da2-7163-44cf-8e8a-c736278f2535
 keywords:
 - notify objects WDK networking
 - network notify objects WDK

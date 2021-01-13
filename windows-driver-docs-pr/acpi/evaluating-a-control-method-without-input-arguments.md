@@ -1,7 +1,6 @@
 ---
 title: Evaluating a Control Method Without Input Arguments
 description: Evaluating a Control Method Without Input Arguments
-ms.assetid: dd989b4d-46db-4fe3-aa7b-8dbfe37057cb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

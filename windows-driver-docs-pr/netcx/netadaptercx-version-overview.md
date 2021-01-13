@@ -1,7 +1,6 @@
 ---
 title: NetAdapterCx version overview
 description: This topic lists versions of the Network Adapter WDF Class Extension (NetAdapterCx).
-ms.assetid: 14847DED-FC24-4020-8526-D5F3A85882EB
 keywords:
 - Version overview Network Adapter Class Extension, version overview NetAdapterCx, version overview NetCx
 ms.date: 11/04/2019
@@ -17,9 +16,9 @@ The current version of NetAdapterCx is **2.0**.
 
 Windows OS support for NetAdapterCx versions are described in the following table.
 
-| Operating system | Supported NetAdapterCx version | Version notes |
-| --- | --- | --- |
-| Windows 10, version 2004 | 2.0 | Initial release |
+| Operating system | KMDF version | Supported NetAdapterCx version | Version notes |
+| --- | --- | --- | --- |
+| Windows 10, version 2004 | 1.31 | 2.0 | Initial release |
 
 > [!IMPORTANT]
 > NetAdapterCx client drivers written in previous versions will not work in the latest version of Windows until they are retargeted to the current version.

@@ -1,7 +1,6 @@
 ---
 title: Registry Entries for Plug and Play SCSI Miniport Drivers
 description: Registry Entries for Plug and Play SCSI Miniport Drivers
-ms.assetid: d4c7c8ee-9d04-4fd4-9b70-2630d2ce6401
 keywords:
 - SCSI miniport drivers WDK storage , PnP
 - PnP WDK SCSI

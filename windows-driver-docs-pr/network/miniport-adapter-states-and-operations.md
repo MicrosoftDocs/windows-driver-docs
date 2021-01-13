@@ -1,7 +1,6 @@
 ---
 title: Miniport Adapter States and Operations
 description: Miniport Adapter States and Operations
-ms.assetid: b47e2cbe-9da3-4600-9afe-b082e60b87fb
 keywords:
 - miniport adapters WDK networking , states
 - adapters WDK networking , states

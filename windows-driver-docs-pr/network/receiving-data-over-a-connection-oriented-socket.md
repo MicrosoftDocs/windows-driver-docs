@@ -1,7 +1,6 @@
 ---
 title: Receiving Data over a Connection-Oriented Socket
 description: Receiving Data over a Connection-Oriented Socket
-ms.assetid: 189fa236-25d6-4eea-ad77-df76363576db
 keywords:
 - connection-oriented sockets WDK Winsock Kernel
 - WskReceive

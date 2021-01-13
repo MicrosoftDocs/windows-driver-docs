@@ -1,7 +1,6 @@
 ---
 title: Required Root Item Properties for Feeder Scanners
 description: Required Root Item Properties for Feeder Scanners
-ms.assetid: 51dfdc28-675f-4ee1-a36c-850327b3c3b0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

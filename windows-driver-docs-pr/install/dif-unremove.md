@@ -1,7 +1,6 @@
 ---
 title: DIF_UNREMOVE
 description: DIF_UNREMOVE
-ms.assetid: 01e39f77-3ee8-44c4-ba1a-19d4356b26ce
 keywords: ["DIF_UNREMOVE Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Removing a Trace Session
 description: Removing a Trace Session
-ms.assetid: cc40ed01-2f1b-48b3-80da-b0711036dc77
 keywords:
 - trace sessions WDK , removing
 - removing trace sessions

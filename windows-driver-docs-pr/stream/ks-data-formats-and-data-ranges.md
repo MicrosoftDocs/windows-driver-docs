@@ -1,7 +1,6 @@
 ---
 title: KS Data Formats and Data Ranges
 description: KS Data Formats and Data Ranges
-ms.assetid: 44b55a5a-ec58-4c1e-b780-e20829fe3edf
 keywords:
 - data formats WDK kernel streaming
 - formats WDK kernel streaming

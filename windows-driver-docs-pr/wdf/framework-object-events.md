@@ -1,7 +1,6 @@
 ---
 title: Framework Object Events
 description: Framework Object Events
-ms.assetid: 1bccdd47-8ad6-4607-947f-18c5d2e03038
 keywords:
 - framework objects WDK KMDF , events
 - events WDK KMDF

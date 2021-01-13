@@ -1,7 +1,6 @@
 ---
 title: Requesting User Interaction
 description: Requesting User Interaction
-ms.assetid: 888faeb0-1984-4b0f-b955-2772a6bd86f7
 keywords:
 - user interaction WDK Native 802.11 IHV Extensions DLL
 - requesting user interaction WDK Native 802.11 IHV Extensions DLL

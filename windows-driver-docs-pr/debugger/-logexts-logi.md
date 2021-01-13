@@ -1,7 +1,6 @@
 ---
 title: logexts.logi
 description: The logexts.logi extension initializes logging by injecting Logger into the target application.
-ms.assetid: c02d2799-c83a-455d-90c0-401244062365
 keywords: ["logexts.logi Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

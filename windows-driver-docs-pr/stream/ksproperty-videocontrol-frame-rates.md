@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES
 description: The KSPROPERTY\_VIDEOCONTROL\_FRAME\_RATES property enumerates the available frame rates. This property is optional.
-ms.assetid: f2b6fabc-c03b-4fa5-9e5b-43d7a1c26578
 keywords: ["KSPROPERTY_VIDEOCONTROL_FRAME_RATES Streaming Media Devices"]
 topic_type:
 - apiref

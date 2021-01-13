@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP
 description: The SOC_SUBSYSTEM_FAILURE_LIVEDUMP bug code has a value of 0x0000015D.
-ms.assetid: F7903E88-1706-46E6-A5D0-6972702058A8
 keywords: ["Bug Check 0x15D SOC_SUBSYSTEM_FAILURE_LIVEDUMP", "Bug Check 0x14B SOC_SUBSYSTEM_FAILURE"]
 ms.date: 05/23/2017
 topic_type:

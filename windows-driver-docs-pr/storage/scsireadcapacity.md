@@ -1,7 +1,6 @@
 ---
 title: ScsiReadCapacity function
 description: The ScsiReadCapacity WMI method sends a SCSI read capacity command to the indicated device.
-ms.assetid: 2e865ed8-a835-40e7-8ba3-babb9d18eb23
 keywords: ["ScsiReadCapacity function Storage Devices"]
 topic_type:
 - apiref

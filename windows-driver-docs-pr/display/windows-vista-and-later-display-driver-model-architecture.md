@@ -1,7 +1,6 @@
 ---
 title: Windows Display Driver Model (WDDM) Architecture
 description: Windows Display Driver Model (WDDM) Architecture
-ms.assetid: 1ae66fd3-8497-4098-9899-c2363671c2b0
 keywords:
 - display driver model WDK Windows Vista , architecture
 - Windows Vista display driver model WDK , architecture

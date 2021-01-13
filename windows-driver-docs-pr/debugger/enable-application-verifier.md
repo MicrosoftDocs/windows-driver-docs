@@ -1,7 +1,6 @@
 ---
 title: Enable application verifier
 description: Enable application verifier
-ms.assetid: a91e244e-e3b6-4975-8385-1da06cc3ae83
 keywords: ["Enable application verifier (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

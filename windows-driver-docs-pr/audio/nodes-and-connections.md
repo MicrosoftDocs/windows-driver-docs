@@ -1,7 +1,6 @@
 ---
 title: Nodes and Connections
 description: Nodes and Connections
-ms.assetid: 829b1067-8246-49fc-94f1-4988e61defac
 keywords:
 - audio filters WDK audio , nodes
 - audio filters WDK audio , connections

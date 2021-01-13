@@ -1,7 +1,6 @@
 ---
 title: Detaching a Provider Module from a Client Module
 description: Detaching a Provider Module from a Client Module
-ms.assetid: 011d0770-6942-480e-95ee-88a2903822b2
 keywords:
 - provider modules WDK Network Module Registrar , detaching
 - network modules WDK Network Module Registrar , detachment

@@ -1,7 +1,6 @@
 ---
 title: MUP and DFS Interactions
 description: MUP and DFS Interactions
-ms.assetid: 39c1f1e3-fb2d-46e7-b3dc-3d4bfab9608c
 keywords:
 - DFS WDK network redirectors
 - Distributed File System WDK network redirectors

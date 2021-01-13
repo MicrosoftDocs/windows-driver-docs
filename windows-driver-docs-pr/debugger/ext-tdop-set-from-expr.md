@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_SET\_FROM\_EXPR
 description: The EXT\_TDOP\_SET\_FROM\_EXPR sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns a typed data description that represents the value of an expression.
-ms.assetid: 51d5884e-da7f-4bce-ba49-12500208d117
 keywords: ["EXT_TDOP_SET_FROM_EXPR Windows Debugging"]
 topic_type:
 - apiref

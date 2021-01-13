@@ -1,7 +1,6 @@
 ---
 title: RequestedPowerIrp rule (wdm)
 description: The RequestedPowerIrp rule specifies that driver calls PoRequestPowerIrp with the \ Irp pointer variable set to NULL.
-ms.assetid: 4ac70417-b111-4450-8886-63ae6b9d832e
 ms.date: 05/21/2018
 keywords: ["RequestedPowerIrp rule (wdm)"]
 topic_type:

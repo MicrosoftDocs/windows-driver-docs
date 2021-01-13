@@ -1,7 +1,6 @@
 ---
 title: RSS with Message Signaled Interrupts
 description: RSS with Message Signaled Interrupts
-ms.assetid: 3c1776cf-f870-4910-88b2-9b5a9544cdf8
 keywords:
 - receive-side scaling WDK networking , message signaled interrupts
 - RSS WDK networking , message signaled interrupts

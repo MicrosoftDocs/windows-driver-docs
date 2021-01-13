@@ -1,7 +1,6 @@
 ---
 title: Device Stage for Document Devices
 description: Device Stage for Document Devices
-ms.assetid: 7188573a-d214-4f57-8b92-013c06e53d9e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

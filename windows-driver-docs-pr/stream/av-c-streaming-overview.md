@@ -1,7 +1,6 @@
 ---
 title: AV/C Streaming Overview
 description: AV/C Streaming Overview
-ms.assetid: c500fad7-26b7-4507-953e-258dd9c91253
 keywords:
 - AV/C WDK , Stream filter driver
 - Stream filter driver WDK AV/C

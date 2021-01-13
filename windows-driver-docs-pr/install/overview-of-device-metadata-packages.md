@@ -1,7 +1,6 @@
 ---
 title: Overview of Device Metadata Packages
 description: Overview of Device Metadata Packages
-ms.assetid: 1b17bdab-44e4-498b-ab80-f28fa94d9821
 keywords:
 - device metadata packages WDK , about
 ms.date: 04/20/2017

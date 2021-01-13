@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_GCMP_KEY
 description: WDI_TLV_CIPHER_KEY_GCMP_KEY (0x12F) is an unused TLV.
-ms.assetid: 5F857D71-10B0-48B9-861F-382228E9B7AD
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_GCMP_KEY Network Drivers Starting with Windows Vista

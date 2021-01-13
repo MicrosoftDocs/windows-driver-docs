@@ -1,7 +1,6 @@
 ---
 title: High-Fidelity Print Output
 description: High-Fidelity Print Output
-ms.assetid: 37ff186e-d078-40f4-b7dc-9bf75e0b2847
 keywords:
 - color fidelity WDK XPSDrv
 - print fidelity WDK XPSDrv

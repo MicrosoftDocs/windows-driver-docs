@@ -1,7 +1,6 @@
 ---
 title: Creating INF Files for Multiple Platforms and Operating Systems
 description: Creating INF Files for Multiple Platforms and Operating Systems
-ms.assetid: 61996c72-c5a7-4ff0-aeb3-6e77b77542c8
 keywords:
 - INF files WDK device installations , multiple platforms and operating systems
 - multiple operating systems WDK , INF files

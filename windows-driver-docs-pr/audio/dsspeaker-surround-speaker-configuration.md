@@ -1,7 +1,6 @@
 ---
 title: DSSPEAKER_SURROUND Speaker Configuration
 description: DSSPEAKER_SURROUND Speaker Configuration
-ms.assetid: de8f861b-f190-4915-b3f0-95d39965b612
 keywords:
 - DSSPEAKER_SURROUND speaker configuration WDK audio
 ms.date: 04/20/2017

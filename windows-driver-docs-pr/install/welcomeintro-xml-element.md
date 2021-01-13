@@ -1,7 +1,6 @@
 ---
 title: welcomeIntro XML Element
 description: welcomeIntro XML Element
-ms.assetid: d0325d14-c31a-453d-b28e-4bdb646d0711
 keywords: ["welcomeIntro XML Element Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: ACPI system description tables
 description: Implementation of the Advanced Configuration and Power Interface (ACPI) Hardware Specification is not required on SoC-based platforms, but much of the ACPI Software Specification is (or can be) required.
-ms.assetid: 6EFCD288-031D-46BB-ABF3-8ADB53E7B4B1
 ms.date: 10/02/2020
 ms.localizationpriority: medium
 ---

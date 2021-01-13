@@ -1,7 +1,6 @@
 ---
 title: cchelp
 description: The cchelp extension displays some brief Help text in the Debugger command window for some of the cache management extensions.
-ms.assetid: ad9b217b-22fc-433a-87ba-47e5ac5537ec
 keywords: ["cache manager", "cchelp Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

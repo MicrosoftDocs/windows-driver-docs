@@ -1,7 +1,6 @@
 ---
 title: Dedicated Film Scanners
 description: Dedicated Film Scanners
-ms.assetid: 1f8b73eb-a81a-4db3-b5be-b0a01a12696a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

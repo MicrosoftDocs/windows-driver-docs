@@ -1,7 +1,6 @@
 ---
 title: JobHistory element (required)
 description: The required JobHistory element contains a list of JobSummary elements that describe the most recently completed jobs in the scan device.
-ms.assetid: d1439e56-b2fe-4db8-b063-56537a3346c6
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:
 - apiref

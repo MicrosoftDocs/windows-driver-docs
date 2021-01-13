@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_FMRX\_STATE
 description: The KSPROPERTY\_FMRX\_STATE property specifies whether FM radio is enabled.
-ms.assetid: A975221C-3300-4A44-9E8C-9AB4B4C54C32
 keywords: ["KSPROPERTY_FMRX_STATE Audio Devices"]
 topic_type:
 - apiref

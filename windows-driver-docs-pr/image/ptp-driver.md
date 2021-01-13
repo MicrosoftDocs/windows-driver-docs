@@ -1,7 +1,6 @@
 ---
 title: PTP Driver
 description: PTP Driver
-ms.assetid: c8bfdea9-0778-498f-a87d-d2766c9c02cc
 ms.date: 08/09/2017
 ms.localizationpriority: medium
 ---

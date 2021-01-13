@@ -1,7 +1,6 @@
 ---
 title: Operations That Can Be IRP-Based or Fast I/O
 description: Operations That Can Be IRP-Based or Fast I/O
-ms.assetid: 768f5744-1aea-4fa8-b81b-d2670d6c878e
 keywords:
 - fast I/O buffers WDK file system
 - Flags member WDK file system

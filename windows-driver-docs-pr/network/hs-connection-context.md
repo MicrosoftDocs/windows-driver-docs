@@ -1,7 +1,6 @@
 ---
 title: HS_CONNECTION_CONTEXT structure
 description: The HS_CONNECTION_CONTEXT structure contains the information required by the plugin for post connect authentication.
-ms.assetid: 22b219fc-691b-4813-a523-a76de037e64d
 keywords: 
 - HS_CONNECTION_CONTEXT structure Network Drivers Starting with Windows Vista
 - PHS_CONNECTION_CONTEXT structure pointer Network Drivers Starting with Windows Vista

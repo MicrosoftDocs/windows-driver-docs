@@ -1,7 +1,6 @@
 ---
 title: Stream Class Registry Values
 description: Stream Class Registry Values
-ms.assetid: a6800f53-4d55-4a28-839b-47f0cecc17bf
 keywords:
 - Stream.sys class driver WDK Windows 2000 Kernel , registry
 - streaming minidrivers WDK Windows 2000 Kernel , registry

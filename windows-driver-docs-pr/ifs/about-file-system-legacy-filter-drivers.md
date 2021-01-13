@@ -1,7 +1,6 @@
 ---
 title: About File System Legacy Filter Drivers
 description: About File System Legacy Filter Drivers
-ms.assetid: 8de28cd6-40be-48db-a839-335a85e48fc4
 keywords:
 - legacy filter drivers WDK file system , about legacy file system filter drivers
 - file system legacy filter drivers WDK , about file system legacy filter drivers

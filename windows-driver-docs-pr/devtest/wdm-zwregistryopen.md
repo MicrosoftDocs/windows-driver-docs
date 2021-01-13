@@ -1,6 +1,5 @@
 ---
 title: ZwRegistryOpen rule (wdm)
-ms.assetid: c98682c3-0d38-4d5b-9649-7574106f9ce3
 ms.date: 05/21/2018
 description: "Learn more about: ZwRegistryOpen rule (wdm)"
 keywords: ["ZwRegistryOpen rule (wdm)"]

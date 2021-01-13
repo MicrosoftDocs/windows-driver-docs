@@ -1,7 +1,6 @@
 ---
 title: Winsock Kernel Architecture
 description: Winsock Kernel Architecture
-ms.assetid: 3a43c200-4180-4d1b-8ca6-ee82a84b9194
 keywords:
 - Winsock Kernel WDK networking , architecture
 - WSK WDK networking , architecture

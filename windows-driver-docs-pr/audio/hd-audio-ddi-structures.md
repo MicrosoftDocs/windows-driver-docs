@@ -1,7 +1,6 @@
 ---
 title: HD Audio DDI Structures
 description: HD Audio DDI Structures
-ms.assetid: 2aa6d4be-5ebb-4f9f-956a-2491ce483bfa
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

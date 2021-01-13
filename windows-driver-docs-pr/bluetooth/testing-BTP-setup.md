@@ -2,7 +2,6 @@
 title: Microsoft Bluetooth Test Platform Setup
 description: How to set up the Microsoft Bluetooth Test Platform Setup 
 ms.date: 2/14/2020
-ms.assetid: 85ac7c5b-b5f7-49e0-85f8-72e191c00974
 ms.localizationpriority: medium
 
 ---
@@ -32,7 +31,7 @@ To plug a peripheral radio into a port on the Traduci, orient the Traduci so tha
 
 ## Software Setup
 
-1. Download the [Windows Driver Kit](../download-the-wdk.md#download-icon-step-2-install-wdk-for-windows-10-version-2004).
+1. Download the [Windows Driver Kit](../download-the-wdk.md).
 
 2. After the WDK is installed the [Test Authoring and Execution Framework (TAEF)](../taef/index.md) installation files (*.msi and *.cab files) are located in the `%ProgramFiles%\Windows Kits\10\Testing\Runtimes` directory.
 

@@ -1,7 +1,6 @@
 ---
 title: Driver Coverage Toolkit
 description: The Driver Coverage toolkit monitors and reports on the various I/O request packets (IRPs) that enter or leave a driver stack for specified devices.
-ms.assetid: b35ca87e-9ec7-4e25-89ce-0e7c121f6445
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Config.DriverKey Section of a TxtSetup.oem File
 description: A Config.DriverKey section specifies values to be set in the registry for particular component options.
-ms.assetid: 0b9fe0ff-2b97-416e-8ced-62b59eabf94a
 keywords: ["Config.DriverKey Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref

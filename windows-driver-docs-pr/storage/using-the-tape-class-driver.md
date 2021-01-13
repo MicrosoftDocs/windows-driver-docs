@@ -1,7 +1,6 @@
 ---
 title: Using the Tape Class Driver
 description: Using the Tape Class Driver
-ms.assetid: 72ed3fd9-d46f-400e-9816-f9f48b5a85c0
 keywords:
 - tape drivers WDK storage , about tape drivers
 - storage tape drivers WDK , about tape drivers
@@ -35,7 +34,7 @@ The tape class driver:
 
 -   Allocates driver context areas for tape miniclass drivers (minitape extension and command extension).
 
-See [Tape Class Driver Routines](/windows-hardware/drivers/ddi/index) for descriptions of the **TapeClass***Xxx* routines that can be called by a tape miniclass driver.
+See [Tape Class Driver Routines](/windows-hardware/drivers/ddi/minitape) for descriptions of the **TapeClass***Xxx* routines that can be called by a tape miniclass driver.
 
  
 

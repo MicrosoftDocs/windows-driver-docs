@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_ORIENTATION
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_ORIENTATION property specifies the orientation of a 3D listener.
-ms.assetid: 324b0def-e989-4dd1-9266-17d018dd512c
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_ORIENTATION Audio Devices"]
 topic_type:
 - apiref

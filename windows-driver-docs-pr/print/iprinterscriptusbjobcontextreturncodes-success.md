@@ -4,7 +4,6 @@ description: Returns a value of zero (0) to inform USBMon that the function call
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 783F9BCA-468E-4505-A6F3-9592D400E62C
 keywords: ["Success method Print Devices", "Success method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , Success method"]
 topic_type:
 - apiref

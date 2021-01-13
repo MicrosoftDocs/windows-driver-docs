@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_MID
 description: The KSPROPERTY\_AUDIO\_MID property specifies the mid-frequency level of a channel in a tone node (KSNODETYPE\_TONE).
-ms.assetid: cb2555d4-5224-42a6-b364-70de91a44924
 keywords: ["KSPROPERTY_AUDIO_MID Audio Devices"]
 topic_type:
 - apiref

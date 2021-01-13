@@ -1,7 +1,6 @@
 ---
 title: Power Meter Interface
 description: Power Meter Interface
-ms.assetid: be3ffb33-f1da-403d-b888-378ffd5cac8a
 keywords:
 - Power Metering and Budgeting WDK , interface
 - Power Meter Interface WDK

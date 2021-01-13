@@ -1,7 +1,6 @@
 ---
 title: Additional Printer Topics
 description: Additional Printer Topics
-ms.assetid: e2d2b399-0a84-430f-8ffc-e1cf9562d601
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

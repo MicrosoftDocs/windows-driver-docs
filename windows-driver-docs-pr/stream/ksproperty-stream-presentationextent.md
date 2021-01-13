@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_PRESENTATIONEXTENT
 description: The clients sends a KSPROPERTY\_STREAM\_PRESENTATIONEXTENT request to query the stream extent.
-ms.assetid: 36b66035-f935-4264-8555-d949865d708e
 keywords: ["KSPROPERTY_STREAM_PRESENTATIONEXTENT Streaming Media Devices"]
 topic_type:
 - apiref

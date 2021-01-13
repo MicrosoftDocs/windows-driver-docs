@@ -1,7 +1,6 @@
 ---
 title: OID_PM_ADD_WOL_PATTERN
 description: As a set, NDIS protocol drivers use the OID_PM_ADD_WOL_PATTERN OID to add a power management wake-on-LAN pattern to a network adapter. The InformationBuffer member of the NDIS_OID_REQUEST structure contains a pointer to an NDIS_PM_WOL_PATTERN structure.
-ms.assetid: 1005cebb-8ead-4d16-b3ea-5a74da0b054f
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_ADD_WOL_PATTERN Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # OID\_PM\_ADD\_WOL\_PATTERN
 
 
-As a set, NDIS protocol drivers use the OID\_PM\_ADD\_WOL\_PATTERN OID to add a power management wake-on-LAN pattern to a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure.
+As a set, NDIS protocol drivers use the OID\_PM\_ADD\_WOL\_PATTERN OID to add a power management wake-on-LAN pattern to a network adapter. The **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure contains a pointer to an [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure.
 
 Remarks
 -------
@@ -79,7 +78,7 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request)
 
 [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern)
 

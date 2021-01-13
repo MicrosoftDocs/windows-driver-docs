@@ -1,7 +1,6 @@
 ---
 title: Unidrv User Interface
 description: Unidrv User Interface
-ms.assetid: b1f34ebf-8c8a-4b43-ba48-26bcf6352360
 keywords:
 - Unidrv, user interface
 - user interface WDK Unidrv

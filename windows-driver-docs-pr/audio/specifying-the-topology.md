@@ -1,7 +1,6 @@
 ---
 title: Specifying the Topology
 description: Specifying the Topology
-ms.assetid: 265cbd87-d40f-4ead-ba6e-a1cef51baf95
 keywords:
 - WDM audio drivers WDK , topology
 - audio drivers WDK , topology

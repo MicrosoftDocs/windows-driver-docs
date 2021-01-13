@@ -1,7 +1,6 @@
 ---
 title: Supporting PnP and Power Management in Software-only Drivers
 description: Supporting PnP and Power Management in Software-only Drivers
-ms.assetid: bcfca8b2-68d6-4875-8687-27351becd6f4
 keywords:
 - PnP WDK KMDF , software-only drivers
 - Plug and Play WDK KMDF , software-only drivers

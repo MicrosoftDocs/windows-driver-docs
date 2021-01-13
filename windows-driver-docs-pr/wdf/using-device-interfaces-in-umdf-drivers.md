@@ -1,7 +1,6 @@
 ---
 title: Using Device Interfaces in UMDF Drivers
 description: Using Device Interfaces in UMDF Drivers
-ms.assetid: acb6da80-bd04-48f0-b42a-96463f091b0a
 keywords:
 - user-mode drivers WDK UMDF , device interfaces
 - UMDF WDK , device interfaces

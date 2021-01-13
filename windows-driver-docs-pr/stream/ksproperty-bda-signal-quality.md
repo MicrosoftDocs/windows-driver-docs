@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_QUALITY
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_QUALITY to determine the amount of data successfully extracted from the signal as a percent.
-ms.assetid: 8967400d-3a10-475a-997a-d756837c3438
 keywords: ["KSPROPERTY_BDA_SIGNAL_QUALITY Streaming Media Devices"]
 topic_type:
 - apiref

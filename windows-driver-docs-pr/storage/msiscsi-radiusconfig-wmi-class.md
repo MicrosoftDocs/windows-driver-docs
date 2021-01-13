@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_RADIUSConfig WMI Class
 description: MSiSCSI\_RADIUSConfig WMI Class
-ms.assetid: e0fd1fea-3d8c-4d25-a9fd-0e115ecb8163
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: analyze
 description: The analyze extension displays information about the current exception or bug check.
-ms.assetid: dec760fb-0af6-4504-9855-8fe63c1c9783
 keywords: ["analyze Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

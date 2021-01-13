@@ -1,7 +1,6 @@
 ---
 title: NDPROXY Overview
 description: NDPROXY Overview
-ms.assetid: 98d01249-8a6d-42b3-a91c-811352c8b638
 keywords:
 - NDPROXY WDK networking
 - NDISWAN WDK networking

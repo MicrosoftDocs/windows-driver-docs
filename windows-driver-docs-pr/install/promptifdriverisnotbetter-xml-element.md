@@ -1,7 +1,6 @@
 ---
 title: promptIfDriverIsNotBetter XML Element
 description: promptIfDriverIsNotBetter XML Element
-ms.assetid: e5808c64-daa8-4aad-9a63-7ff79b0c2e49
 keywords: ["promptIfDriverIsNotBetter XML Element Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Getting the Updated Core Driver Package
 description: Getting the Updated Core Driver Package
-ms.assetid: 7fac00e4-1d3e-4bb7-95cd-298176de374d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Debugging
 description: Kernel Streaming Debugging
-ms.assetid: d7728973-76d3-4d1e-84f9-bef88c4949da
 keywords: ["kernel streaming debugging"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

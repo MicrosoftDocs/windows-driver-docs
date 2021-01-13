@@ -1,7 +1,6 @@
 ---
 title: Interrupt Sync Objects
 description: Interrupt Sync Objects
-ms.assetid: c9e228e0-6178-442d-a82a-6b14ed67c9d2
 keywords:
 - helper objects WDK audio , interrupt sync objects
 - interrupt sync objects WDK audio

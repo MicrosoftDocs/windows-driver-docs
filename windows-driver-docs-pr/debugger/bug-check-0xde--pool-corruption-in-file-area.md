@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xDE POOL_CORRUPTION_IN_FILE_AREA
 description: The POOL_CORRUPTION_IN_FILE_AREA bug check has a value of 0x000000DE. This indicates that a driver has corrupted pool memory that is used for holding pages destined for disk.
-ms.assetid: 6394e0fa-76ee-4924-8aa3-d10a4d57c6e8
 keywords: ["Bug Check 0xDE POOL_CORRUPTION_IN_FILE_AREA", "POOL_CORRUPTION_IN_FILE_AREA"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Accessing and Modifying Files
 description: Accessing and Modifying Files
-ms.assetid: DD5A527F-5F8D-4892-A2D5-C0279913B6A3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

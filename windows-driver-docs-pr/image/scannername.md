@@ -1,7 +1,6 @@
 ---
 title: ScannerName element
 description: The required ScannerName element specifies the administratively assigned user-friendly name of the scanner.
-ms.assetid: 013a1cb8-4b59-4271-a7bd-eb8d741643e5
 keywords: ["ScannerName element Imaging Devices"]
 topic_type:
 - apiref

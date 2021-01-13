@@ -1,7 +1,6 @@
 ---
 title: Installed (TCP/IP)
 description: The TCP/IP Installed construct contains the object ID (OID) of the MIB table's row and a list of lookup values.
-ms.assetid: 4e14d8c1-7c66-4035-845d-f3f92dad8c4f
 keywords:
 - Installed construct
 ms.date: 04/20/2017

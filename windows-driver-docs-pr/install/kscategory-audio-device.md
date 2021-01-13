@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_AUDIO_DEVICE
 description: KSCATEGORY_AUDIO_DEVICE
-ms.assetid: db31154c-3e0c-4bcb-9928-02f2068f2499
 keywords: ["KSCATEGORY_AUDIO_DEVICE Device and Driver Installation"]
 topic_type:
 - apiref

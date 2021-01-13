@@ -1,7 +1,6 @@
 ---
 title: Allocating an Interface Index
 description: Allocating an Interface Index
-ms.assetid: f1315da2-16da-4320-9d0d-1270396af38b
 keywords:
 - NDIS network interfaces WDK , interface index allocation
 - network interfaces WDK , interface index allocation

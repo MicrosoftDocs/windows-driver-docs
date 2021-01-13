@@ -1,7 +1,6 @@
 ---
 title: Managing Memory Sections
 description: Managing Memory Sections
-ms.assetid: 620ba31d-596f-493a-b97f-65a27d50cc9a
 keywords: ["memory sections WDK kernel", "section objects WDK kernel", "views WDK memory section", "mapping section views"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

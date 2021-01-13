@@ -1,7 +1,6 @@
 ---
 title: Using Safe Integer Functions
 description: The ntintsafe library provides a set of C functions that perform safe integer arithmetic operations with bounds checking to prevent overflows and underflows in kernel-mode code.
-ms.assetid: AFB7A078-814D-49EF-ABF9-2C621590F43B
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

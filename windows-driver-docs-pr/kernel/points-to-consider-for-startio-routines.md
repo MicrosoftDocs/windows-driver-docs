@@ -1,7 +1,6 @@
 ---
 title: Points to Consider for StartIo Routines
 description: Points to Consider for StartIo Routines
-ms.assetid: 389240d0-682f-48b3-940f-c107e9f60155
 keywords: ["StartIo routines, about StartIo routines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

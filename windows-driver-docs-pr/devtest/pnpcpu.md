@@ -1,7 +1,6 @@
 ---
 title: PNPCPU
 description: PNPCPU
-ms.assetid: 397283e6-0691-4e55-9507-483bb311b524
 keywords:
 - driver testing WDK , PNPCPU
 - testing drivers WDK , PNPCPU

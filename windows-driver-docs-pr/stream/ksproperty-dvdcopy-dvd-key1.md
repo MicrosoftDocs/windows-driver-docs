@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DVDCOPY\_DVD\_KEY1
 description: The KSPROPERTY\_DVDCOPY\_DVD\_KEY1 property retrieves the first bus key that is provided later to the decoder as part of the DVD copyright protection authentication process.
-ms.assetid: df4fd5a0-d890-4695-b8ec-951dd0e4e1d5
 keywords: ["KSPROPERTY_DVDCOPY_DVD_KEY1 Streaming Media Devices"]
 topic_type:
 - apiref

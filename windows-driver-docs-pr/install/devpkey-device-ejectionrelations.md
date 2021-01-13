@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_EjectionRelations
 description: DEVPKEY_Device_EjectionRelations
-ms.assetid: 3b3a0d6f-4163-40a8-817d-924f63871e51
 keywords: ["DEVPKEY_Device_EjectionRelations Device and Driver Installation"]
 topic_type:
 - apiref

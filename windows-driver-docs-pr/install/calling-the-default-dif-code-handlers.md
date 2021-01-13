@@ -1,7 +1,6 @@
 ---
 title: Calling the Default DIF Code Handlers
 description: Calling the Default DIF Code Handlers
-ms.assetid: bc168c30-2269-4760-bc0a-e3e6ee3ce720
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Loading the Notify Object DLL and Class Object
 description: Loading the Notify Object DLL and Class Object
-ms.assetid: 846c0ed8-5299-4803-983a-9347e912d96b
 keywords:
 - notify objects WDK networking , loading objects
 - network notify objects WDK , loading objects

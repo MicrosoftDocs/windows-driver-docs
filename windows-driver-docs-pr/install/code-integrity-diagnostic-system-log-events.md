@@ -1,7 +1,6 @@
 ---
 title: Code Integrity Diagnostic System Log Events
 description: Code Integrity Diagnostic System Log Events
-ms.assetid: 4aa8db3e-033c-4f38-a813-623518e36485
 keywords:
 - Code Integrity WDK driver signing
 - events WDK driver signing

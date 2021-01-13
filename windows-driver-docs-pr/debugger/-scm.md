@@ -1,7 +1,6 @@
 ---
 title: scm
 description: The scm extension displays the specified shared cache map.
-ms.assetid: 4333ee14-ca28-43af-b132-210996328af2
 keywords: ["shared cache map", "cache manager", "scm Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

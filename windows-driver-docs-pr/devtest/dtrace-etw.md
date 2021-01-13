@@ -1,7 +1,6 @@
 ---
 title: DTrace ETW
 description: DTrace supports Event Tracing for Windows (ETW) using the D programing language. 
-ms.assetid: abf23d76-423d-4d1e-afde-83739015bbf1
 keywords:
 - DTrace WDK
 - software tracing WDK , DTrace

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES
 description: The WIA\_IPS\_ENABLED\_PATCH\_CODE\_TYPES property is used to select the enabled patch codes for which the Patch Code Reader will search in the current session.
-ms.assetid: 278C93EF-661E-41B2-8882-DF05A2FB9723
 keywords: ["WIA_IPS_ENABLED_PATCH_CODE_TYPES Imaging Devices"]
 topic_type:
 - apiref

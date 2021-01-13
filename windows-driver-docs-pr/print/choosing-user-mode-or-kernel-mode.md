@@ -1,7 +1,6 @@
 ---
 title: Choosing User Mode or Kernel Mode
 description: Choosing User Mode or Kernel Mode
-ms.assetid: 1e63d01e-8cf2-488a-89e8-d4a3ff5cfe19
 keywords:
 - printer graphics DLL WDK , user-mode vs. kernel-mode
 - graphics DLL WDK printer , user-mode vs. kernel-mode

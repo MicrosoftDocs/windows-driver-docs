@@ -1,7 +1,6 @@
 ---
 title: Trace Log
 description: Trace Log
-ms.assetid: c15fcfec-b584-4cb8-bc48-9ff122f5a8fc
 keywords:
 - event trace logs WDK
 - log files WDK tracing

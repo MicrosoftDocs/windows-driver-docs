@@ -1,7 +1,6 @@
 ---
 title: TWAIN Compatibility
 description: TWAIN Compatibility
-ms.assetid: 270e62dd-590c-4495-be22-002957932031
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80
 description: This topic describes Receive Side Scaling Version 2 (RSSv2) in NDIS 6.80
-ms.assetid: 39FAE4C5-D4AA-4B99-A9B6-82E2D9C86FCC
 keywords: Receive Side Scaling Version 2 in NDIS 6.80, RSSv2 in NDIS 6.80, Receive Side Scaling Version 2 WDK NDIS 6.80, RSSv2 network drivers NDIS 6.80
 ms.date: 10/11/2017
 ms.localizationpriority: medium

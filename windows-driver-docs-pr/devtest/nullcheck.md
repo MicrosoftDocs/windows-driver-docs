@@ -1,7 +1,6 @@
 ---
 title: NullCheck rule (kmdf)
 description: Learn about the NullCheck rule (kmdf). This rule verifies that a NULL value inside the driver code is not dereferenced later in the driver.
-ms.assetid: 1928828F-F427-4921-A4E1-1BFC51A01C58
 ms.date: 05/21/2018
 keywords: ["NullCheck rule (kmdf)"]
 topic_type:

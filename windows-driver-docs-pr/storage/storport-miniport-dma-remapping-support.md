@@ -1,7 +1,6 @@
 ---
 title: DMA remapping support in Storport miniport drivers
 description:  DMA remapping support in Storport miniport drivers
-ms.assetid: 9d1e1549-8b11-4a9a-b068-7b1d75c58e52
 ms.date: 07/10/2020
 ms.localizationpriority: medium
 ---

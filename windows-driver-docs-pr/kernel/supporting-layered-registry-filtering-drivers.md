@@ -1,7 +1,6 @@
 ---
 title: Supporting Layered Registry Filtering Drivers
 description: Supporting Layered Registry Filtering Drivers
-ms.assetid: 5adeecdb-c26e-4502-87b4-bfb02a4aaba8
 keywords: ["filtering registry calls WDK kernel , layered", "registry filtering drivers WDK kernel , layered", "layered registry filtering drivers WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

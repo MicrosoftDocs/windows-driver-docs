@@ -1,7 +1,6 @@
 ---
 title: Converting Between Format Tags and Subformat GUIDs
 description: Converting Between Format Tags and Subformat GUIDs
-ms.assetid: 299ad5d3-df62-41cf-a18f-daa83cc60ef3
 keywords:
 - non-PCM audio formats WDK , subformat GUID conversions
 - subformat GUIDs WDK audio

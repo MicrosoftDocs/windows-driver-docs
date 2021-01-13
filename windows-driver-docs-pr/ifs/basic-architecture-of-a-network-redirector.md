@@ -1,7 +1,6 @@
 ---
 title: Basic Architecture of a Network Redirector
 description: Basic Architecture of a Network Redirector
-ms.assetid: 60a7c79d-b89f-4c8b-9619-bd48c9e1efac
 keywords:
 - network redirectors WDK , architecture
 - redirector drivers WDK , architecture

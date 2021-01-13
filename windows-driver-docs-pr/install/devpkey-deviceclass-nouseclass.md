@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DeviceClass_NoUseClass
 description: DEVPKEY_DeviceClass_NoUseClass
-ms.assetid: 9b720e2d-0d81-42a4-acea-931428547231
 keywords: ["DEVPKEY_DeviceClass_NoUseClass Device and Driver Installation"]
 topic_type:
 - apiref

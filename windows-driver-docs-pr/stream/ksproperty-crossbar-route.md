@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CROSSBAR\_ROUTE
 description: The KSPROPERTY\_CROSSBAR\_ROUTE property queries whether a particular routing is possible and to route a video or audio stream by specifying an output pin index and an input pin index. This property must be implemented.
-ms.assetid: 2c64575c-49c6-437b-924e-042ee0f15d9b
 keywords: ["KSPROPERTY_CROSSBAR_ROUTE Streaming Media Devices"]
 topic_type:
 - apiref

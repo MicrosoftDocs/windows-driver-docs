@@ -1,7 +1,6 @@
 ---
 title: Sample CPSUI Application
 description: Sample CPSUI Application
-ms.assetid: 895afbfe-c18a-4bcc-b815-8cb323bbac80
 keywords:
 - Common Property Sheet User Interface WDK print , samples
 - CPSUI WDK print , samples

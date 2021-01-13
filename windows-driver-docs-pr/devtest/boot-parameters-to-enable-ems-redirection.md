@@ -1,7 +1,6 @@
 ---
 title: Boot Parameters to Enable EMS Redirection
 description: Boot Parameters to Enable EMS Redirection
-ms.assetid: b93fd580-0e1d-4b1e-8358-1c6ce7e2eb5e
 keywords:
 - boot parameters WDK
 - boot entry parameters WDK

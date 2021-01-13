@@ -1,7 +1,6 @@
 ---
 title: Migrating to the Windows Display Driver Model (WDDM)
 description: Migrating to the Windows Display Driver Model (WDDM)
-ms.assetid: 7f926aa7-1698-4a4e-a1ce-54a316bdc0cd
 keywords:
 - display driver model WDK Windows Vista , migrating
 - Windows Vista display driver model WDK , migrating
@@ -41,7 +40,7 @@ Although driver writers can reuse low-level hardware-dependent code in their WDD
 
 -   Most of the remaining user-mode display driver functions implement the same functionality that the kernel-mode display driver for XDDM implemented in the following:
     -   The [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function and [**DP2**](/windows-hardware/drivers/ddi/d3dhal/ne-d3dhal-_d3dhal_dp2operation) operation codes
-    -   The [motion compensation callback functions](/windows-hardware/drivers/ddi/index) and [DirectX Video Acceleration structures](/windows-hardware/drivers/ddi/index)
+    -   The [motion compensation callback functions](/windows-hardware/drivers/ddi/_display/#functions) and [DirectX Video Acceleration structures](/windows-hardware/drivers/ddi/_display/#structures)
 
  
 

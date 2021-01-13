@@ -1,7 +1,6 @@
 ---
 title: Introduction to Extra Create Parameters
 description: Introduction to Extra Create Parameters
-ms.assetid: e32aeec6-1a0a-4d21-8358-89d9fc0a15eb
 ms.date: 10/16/2019
 ms.localizationpriority: medium
 ---

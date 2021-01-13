@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 49b9705f-ba7c-4239-823b-7d738f4318b9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

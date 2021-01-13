@@ -1,7 +1,6 @@
 ---
 title: FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE union
 description: The following union component is used when the MajorFunction field of the FLT_IO_PARAMETER_BLOCK structure for the operation is IRP_MJ_CREATE_NAMED_PIPE.
-ms.assetid: cbe7e523-3ae2-424b-a2e2-edaeb64c15c5
 keywords:
 - FLT_PARAMETERS for IRP_MJ_CREATE_NAMED_PIPE union File System Drivers
 - FLT_PARAMETERS union File System Drivers

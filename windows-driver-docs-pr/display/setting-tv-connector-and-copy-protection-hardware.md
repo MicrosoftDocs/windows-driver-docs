@@ -1,7 +1,6 @@
 ---
 title: Setting TV Connector and Copy Protection Hardware
 description: Setting TV Connector and Copy Protection Hardware
-ms.assetid: 2de45c31-6a44-4a57-84b9-3cb21c905f4b
 keywords:
 - TV connector WDK video miniport
 - copy protection WDK video miniport , setting

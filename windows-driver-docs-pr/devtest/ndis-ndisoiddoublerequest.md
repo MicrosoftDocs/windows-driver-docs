@@ -1,7 +1,6 @@
 ---
 title: NdisOidDoubleRequest rule (ndis)
 description: This NdisOidDoubleRequest rule verifies that Minport driver must complete the NDIS\_OID\_REQUEST that is currently pending.
-ms.assetid: 67B179ED-EEAF-4717-B714-9601BE806269
 ms.date: 05/21/2018
 keywords: ["NdisOidDoubleRequest rule (ndis)"]
 topic_type:
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 This **NdisOidDoubleRequest** rule verifies that:
 
--   Minport driver must complete the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) that is currently pending.
+-   Minport driver must complete the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) that is currently pending.
 
 **Driver model: NDIS**
 

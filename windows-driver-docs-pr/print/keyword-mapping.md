@@ -1,7 +1,6 @@
 ---
 title: Keyword Mapping
 description: Keyword Mapping
-ms.assetid: eb2cbe3c-b516-4db3-92ad-5eafd7181624
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

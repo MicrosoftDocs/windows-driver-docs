@@ -1,7 +1,6 @@
 ---
 title: Initializing a Miniport Adapter
 description: Initializing a Miniport Adapter
-ms.assetid: 6d7a23dc-cc09-46d3-89d3-34e8e8f17a51
 keywords:
 - miniport adapters WDK networking , initializing
 - adatpers WDK networking , initializing
@@ -42,7 +41,7 @@ Typically, [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-m
 
 1.  Nonpaged pool memory.
 
-2.  [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) and [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) pools (see [Miniport Driver Send and Receive Operations](miniport-driver-send-and-receive-operations.md)).
+2.  [**NET\_BUFFER**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer) and [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) pools (see [Miniport Driver Send and Receive Operations](miniport-driver-send-and-receive-operations.md)).
 
 3.  Spin locks.
 

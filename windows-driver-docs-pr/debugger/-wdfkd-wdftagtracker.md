@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdftagtracker
 description: The wdfkd.wdftagtracker extension displays all available tag information (including tag value, line, file, and time) for a specified tag tracker.
-ms.assetid: d8720446-58c1-4792-9e16-0facfe8fa39f
 keywords: ["wdfkd.wdftagtracker Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

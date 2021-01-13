@@ -1,7 +1,6 @@
 ---
 title: ndiskd.compartments
 description: The ndiskd.compartments extension displays all network compartments.
-ms.assetid: F9BF319D-77E9-4D12-84E9-655058F57AC4
 keywords: ["ndiskd.compartments Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

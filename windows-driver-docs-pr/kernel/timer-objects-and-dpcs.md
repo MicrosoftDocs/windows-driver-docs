@@ -1,7 +1,6 @@
 ---
 title: KeXxxTimer Routines, KTIMER Objects, and DPCs
 description: Starting with Windows 2000, a set of KeXxxTimer routines is available to manage timers.
-ms.assetid: b58487de-6e9e-45f4-acb8-9233c8718ee2
 keywords: ["timers WDK kernel", "timer objects WDK kernel", "timer objects WDK kernel , about timer objects", "deferred procedure calls WDK kernel", "DPCs WDK kernel", "kernel dispatcher objects WDK , timer objects", "dispatcher objects WDK kernel , timer objects", "notification timers WDK kernel", "synchronization timers WDK kernel", "KTIMER", "KeXxxTimer routines", "KeInitializeTimer", "KeInitializeTimerEx", "KeSetTimer", "KeSetTimerEx", "CustomTimerDpc", "timeout intervals WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

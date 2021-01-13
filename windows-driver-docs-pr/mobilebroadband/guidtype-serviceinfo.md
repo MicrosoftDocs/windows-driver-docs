@@ -1,7 +1,6 @@
 ---
 title: GUIDType (ServiceInfo)
 description: GUIDType (ServiceInfo)
-ms.assetid: a08d4c7c-c282-4870-b836-6788ffa2d088
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_MULTICAST_CIPHER_ALGO_LIST
 description: WDI_TLV_MULTICAST_CIPHER_ALGO_LIST is a TLV that contains a list of multicast cipher algorithms.
-ms.assetid: 55CDD295-6BDA-4F3A-B01F-FC9D5FB38355
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_MULTICAST_CIPHER_ALGO_LIST Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: DevCon Classes
 description: Lists all device setup classes, including classes that devices on the system do not use. Valid on local and remote computers.
-ms.assetid: 05b9339c-30d1-45df-8f43-20a07e520a42
 keywords:
 - DevCon Classes Driver Development Tools
 topic_type:

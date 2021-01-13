@@ -1,7 +1,6 @@
 ---
 title: Restricting Waits in Vista
 description: Restricting Waits in Vista
-ms.assetid: edcc25d0-bcf6-48f0-832e-3f911bd42142
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: Special Effects in Display Drivers
 description: Special Effects in Display Drivers
-ms.assetid: f44a89df-6412-442c-8491-3e2f2bbd826f
 keywords:
 - display drivers WDK Windows 2000 , special effects
 - special effects WDK Windows 2000 display

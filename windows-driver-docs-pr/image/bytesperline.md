@@ -1,7 +1,6 @@
 ---
 title: BytesPerLine element
 description: The required BytesPerLine element specifies the number of bytes per scan line in the resultant image file.
-ms.assetid: 026187db-16b7-48fc-a9e4-fa32cdc73d98
 keywords: ["BytesPerLine element Imaging Devices"]
 topic_type:
 - apiref

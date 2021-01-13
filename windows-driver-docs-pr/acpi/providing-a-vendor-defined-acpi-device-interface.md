@@ -1,7 +1,6 @@
 ---
 title: Providing a Vendor-Defined ACPI Device Interface
 description: Providing a Vendor-Defined ACPI Device Interface
-ms.assetid: 5a7fd03b-6d4f-481b-8e4e-0e1deaf88583
 keywords:
 - ACPI devices WDK , device interfaces
 - vendor-defined device interfaces WDK ACPI

@@ -1,7 +1,6 @@
 ---
 title: .prompt_allow (Control Prompt Display)
 description: The .prompt_allow command controls what information is displayed during stepping and tracing and whenever the target's execution stops.
-ms.assetid: 916114f9-0a68-4423-ba28-a5f0da8a1af9
 keywords: [".prompt_allow (Control Prompt Display) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

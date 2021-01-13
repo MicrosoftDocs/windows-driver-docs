@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_GET\_ARRAY\_ELEMENT
 description: The EXT\_TDOP\_GET\_ARRAY\_ELEMENT sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns an element from an array.
-ms.assetid: 67c87b14-3580-4507-884e-b02576ce7be2
 keywords: ["EXT_TDOP_GET_ARRAY_ELEMENT Windows Debugging"]
 topic_type:
 - apiref

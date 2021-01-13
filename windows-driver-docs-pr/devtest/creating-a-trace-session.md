@@ -1,7 +1,6 @@
 ---
 title: Creating a Trace Session
 description: Creating a Trace Session
-ms.assetid: 26f75b02-d830-4e3c-bbc9-03144d194e05
 keywords:
 - real-time trace sessions WDK
 - trace log sessions WDK

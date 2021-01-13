@@ -1,7 +1,6 @@
 ---
 title: Handling Unsupported or Unrecognized Power IRPs
 description: Handling Unsupported or Unrecognized Power IRPs
-ms.assetid: 0664389c-f746-4025-969f-8c3b07139026
 keywords: ["power IRPs WDK kernel , unsupported", "unsupported power IRPs WDK kernel", "unrecognized power IRPs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

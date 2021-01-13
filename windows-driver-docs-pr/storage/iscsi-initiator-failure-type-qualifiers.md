@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_INITIATOR\_FAILURE\_TYPE\_QUALIFIERS
 description: ISCSI\_INITIATOR\_FAILURE\_TYPE\_QUALIFIERS
-ms.assetid: b8983c80-6d3f-404d-a0b3-74e44e43d39e
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

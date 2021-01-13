@@ -1,7 +1,6 @@
 ---
 title: Managing Hardware Offload OID Requests to Physical Network Adapters
 description: Managing Hardware Offload OID Requests to Physical Network Adapters
-ms.assetid: A646CBB8-89AD-4C08-BECB-1E54E4D74311
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -114,7 +113,7 @@ The forwarding extension must follow these guidelines for handling hardware offl
 
     The **SourceNicIndex** member must be set to **NDIS\_SWITCH\_DEFAULT\_NIC\_INDEX**.
 
--   When the extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request, it must set the *OidRequest* parameter to a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for an [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) OID request.
+-   When the extension calls [**NdisFOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfoidrequest) to forward the OID request, it must set the *OidRequest* parameter to a pointer to an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for an [OID\_SWITCH\_NIC\_REQUEST](./oid-switch-nic-request.md) OID request.
 
 For more information on how the extension filters OID requests, see [Filtering OID Requests in an NDIS Filter Driver](filtering-oid-requests-in-an-ndis-filter-driver.md).
 

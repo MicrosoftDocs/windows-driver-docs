@@ -1,7 +1,6 @@
 ---
 title: Force Feedback Device Driver Interface
 description: Force Feedback Device Driver Interface
-ms.assetid: 59668521-84b9-4a1a-980b-6de57422a2c5
 keywords:
 - force feedback drivers WDK HID
 - virtual joystick drivers WDK HID , force feedback

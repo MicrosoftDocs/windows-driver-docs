@@ -1,7 +1,6 @@
 ---
 title: Light-weight Data-driven Testing
 description: Light-weight Data-driven Testing
-ms.assetid: A7070E38-A545-4156-B441-C0E6ACE569F5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

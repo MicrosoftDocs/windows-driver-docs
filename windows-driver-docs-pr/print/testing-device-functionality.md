@@ -1,7 +1,6 @@
 ---
 title: Testing Device Functionality
 description: Testing Device Functionality
-ms.assetid: 51b3e55d-b071-4dbe-b687-5e3ed25aed20
 keywords:
 - testing device functionality WDK printer
 - device functionality testing WDK printer

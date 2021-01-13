@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_INTERFACE_CAPABILITIES
 description: WDI_TLV_INTERFACE_CAPABILITIES is a TLV that contains the capabilities of the Wi-Fi interface.
-ms.assetid: 308331DD-FEEB-4C49-BEBD-117AE58D4792
 ms.date: 02/14/2019
 keywords:
  - WDI_TLV_INTERFACE_CAPABILITIES Network Drivers Starting with Windows Vista

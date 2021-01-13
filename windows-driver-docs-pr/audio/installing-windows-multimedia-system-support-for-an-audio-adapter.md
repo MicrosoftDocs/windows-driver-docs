@@ -1,7 +1,6 @@
 ---
 title: Installing Windows Multimedia System Support for an Audio Adapter
 description: Installing Windows Multimedia System Support for an Audio Adapter
-ms.assetid: 5846404f-3a6a-4e55-ba83-18404ea7cace
 keywords:
 - audio adapters WDK , multimedia support
 - adapter drivers WDK audio , multimedia support

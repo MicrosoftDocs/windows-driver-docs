@@ -1,7 +1,6 @@
 ---
 title: Design account balance and usage info in a mobile broadband app
 description: Design account balance and usage info in a mobile broadband app
-ms.assetid: aec4e4b3-d207-4319-a134-29b4a773c3a6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

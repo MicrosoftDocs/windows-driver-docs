@@ -1,7 +1,6 @@
 ---
 title: Reading Bug Check Callback Data
 description: Reading Bug Check Callback Data
-ms.assetid: 638074bb-5133-4edc-86c5-33aafa837a0c
 keywords: ["callback data for bug checks", "callback data for bug checks, displaying callback data", "callback data for bug checks, displaying secondary data", "secondary bug check callback data", "bug check, callback routines", "dbgeng.h header file, IDebugDataSpaces3", "dbgeng.h header file, ReadTagged", "dbgeng.h header file, StartEnumTagged", "dbgeng.h header file, GetNextTagged"]
 ms.date: 06/05/2020
 ms.localizationpriority: medium

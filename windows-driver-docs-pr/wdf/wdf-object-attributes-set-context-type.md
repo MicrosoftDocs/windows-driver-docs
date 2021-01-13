@@ -1,7 +1,6 @@
 ---
 title: WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro
 description: The WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro inserts an object's driver-defined context information into the object's WDF_OBJECT_ATTRIBUTES structure.
-ms.assetid: cac8b8f4-cc6b-4e6c-ad0b-dee58e4673ff
 keywords:
  - WDF_OBJECT_ATTRIBUTES_SET_CONTEXT_TYPE macro
 ms.date: 08/23/2017

@@ -1,7 +1,6 @@
 ---
 title: Cube Environment Map Support
 description: Cube Environment Map Support
-ms.assetid: 41666b17-39b0-4022-925f-538455e41f3a
 keywords:
 - mapping cube environments
 - environment mapping WDK Direct3D

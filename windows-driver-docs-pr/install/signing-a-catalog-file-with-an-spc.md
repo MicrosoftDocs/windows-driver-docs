@@ -1,7 +1,6 @@
 ---
 title: Signing a Catalog File with an SPC
 description: Signing a Catalog File with an SPC
-ms.assetid: 8fe1fc32-73c9-4c09-96bd-93effb35c061
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

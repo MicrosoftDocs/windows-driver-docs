@@ -1,7 +1,6 @@
 ---
 title: Capture and view TraceLogging data
 description: Capture and view TraceLogging data
-ms.assetid: E5C18352-B05B-42BF-B5B8-12ABA0E6131C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

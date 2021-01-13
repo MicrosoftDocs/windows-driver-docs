@@ -1,7 +1,6 @@
 ---
 title: Option File Examples
 description: Option File Examples
-ms.assetid: 632c37a8-a1cc-419a-917f-94e9308c4993
 keywords:
 - options files WDK Static Driver Verifier
 ms.date: 04/20/2017

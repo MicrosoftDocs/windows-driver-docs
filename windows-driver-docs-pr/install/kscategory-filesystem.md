@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_FILESYSTEM
 description: KSCATEGORY_FILESYSTEM
-ms.assetid: a3d6a3dc-926a-415a-80ef-c7d2f11ed4bf
 keywords: ["KSCATEGORY_FILESYSTEM Device and Driver Installation"]
 topic_type:
 - apiref

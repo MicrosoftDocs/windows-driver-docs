@@ -1,7 +1,6 @@
 ---
 title: Calling the ProcAmp Control DDI from a User-Mode Component
 description: Calling the ProcAmp Control DDI from a User-Mode Component
-ms.assetid: 1e4e19bb-eb4b-4db6-8947-429a1a414e4a
 keywords:
 - calling ProcAmp control DDI WDK DirectX VA
 - user-mode component calls WDK DirectX VA

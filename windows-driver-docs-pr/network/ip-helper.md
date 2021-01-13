@@ -1,7 +1,6 @@
 ---
 title: IP Helper Overview
 description: IP Helper Overview
-ms.assetid: c7cf1f47-ee0d-4c89-883b-717b719fcc2a
 keywords:
 - IP Helper WDK networking
 - IP Helper WDK networking , about

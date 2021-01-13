@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTDEVICE\_CAPABILITIES
 description: The KSPROPERTY\_EXTDEVICE\_CAPABILITIES property retrieves the capabilities of an external device.
-ms.assetid: c408b4cf-2fd9-41b2-b182-47baa551fd93
 keywords: ["KSPROPERTY_EXTDEVICE_CAPABILITIES Streaming Media Devices"]
 topic_type:
 - apiref

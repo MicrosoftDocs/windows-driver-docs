@@ -1,7 +1,6 @@
 ---
 title: Storage Filter Driver's IoCompletion Routines
 description: Storage Filter Driver's IoCompletion Routines
-ms.assetid: 1a27598b-7113-4f95-8777-bbb10003c268
 keywords:
 - storage filter drivers WDK , IoCompletion
 - filter drivers WDK storage , IoCompletion

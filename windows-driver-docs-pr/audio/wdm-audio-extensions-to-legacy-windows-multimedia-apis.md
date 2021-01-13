@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Extensions to Legacy Windows Multimedia APIs
 description: WDM Audio Extensions to Legacy Windows Multimedia APIs
-ms.assetid: a1009b7f-3720-454f-a128-ae148f781edc
 keywords:
 - WDM audio extensions WDK
 - extended audio capabilities WDK audio

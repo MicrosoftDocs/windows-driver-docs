@@ -1,7 +1,6 @@
 ---
 title: Disks Section of a TxtSetup.oem File
 description: The Disks section identifies the disks in the device installation kit.
-ms.assetid: 0a1c0bf1-b4b9-45bc-af48-26f19bc72061
 keywords: ["Disks Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref

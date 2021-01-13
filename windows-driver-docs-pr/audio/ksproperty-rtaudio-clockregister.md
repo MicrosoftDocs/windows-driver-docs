@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_RTAUDIO\_CLOCKREGISTER
 description: The KSPROPERTY\_RTAUDIO\_CLOCKREGISTER property maps the wall clock register of the audio device into a virtual memory location that the client can access. The following table summarizes the features of this property.
-ms.assetid: a35b5830-55e4-4e92-a4f1-df9edcc2f5bb
 keywords: ["KSPROPERTY_RTAUDIO_CLOCKREGISTER Audio Devices"]
 topic_type:
 - apiref

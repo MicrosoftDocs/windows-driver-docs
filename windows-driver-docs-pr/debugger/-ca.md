@@ -1,7 +1,6 @@
 ---
 title: ca
 description: The ca extension displays information about a control area.
-ms.assetid: 7e9164a5-238e-4327-bd2a-a814bff5f7db
 keywords: ["control area", "ca Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

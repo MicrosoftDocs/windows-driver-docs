@@ -1,7 +1,6 @@
 ---
 title: SyncReqSend rule (kmdf)
 description: The SyncReqSend rule specifies that all synchronous send requests are done by using synchronous-specific KMDF device driver interface methods, and that the methods have a nonzero timeout value set.
-ms.assetid: 74d6536e-b5b9-4773-9059-b2cb2e7b474d
 ms.date: 05/21/2018
 keywords: ["SyncReqSend rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Managing Dynamic Topologies
 description: Managing Dynamic Topologies
-ms.assetid: 324c372b-c8d6-4eed-b4ea-071b3d5412b1
 keywords:
 - dynamic topologies WDK audio
 - jack-presence detection WDK audio

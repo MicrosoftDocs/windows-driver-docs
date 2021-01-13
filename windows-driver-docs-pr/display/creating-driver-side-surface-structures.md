@@ -1,7 +1,6 @@
 ---
 title: Creating Driver-Side Surface Structures
 description: Creating Driver-Side Surface Structures
-ms.assetid: d5e2e6ee-8853-4a17-b1c6-48c75474b2b7
 keywords:
 - context WDK Direct3D , driver-side surface structures
 - driver-side surface structures WDK Direct3D

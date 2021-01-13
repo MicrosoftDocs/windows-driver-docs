@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbdevh
 description: The usbkd.usbdevh command displays information about a USB device handle.
-ms.assetid: 463DAA72-F3EB-4C76-BB63-DA2EFA1EE9B1
 keywords: ["usbkd.usbdevh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

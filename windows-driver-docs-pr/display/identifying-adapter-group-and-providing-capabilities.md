@@ -1,7 +1,6 @@
 ---
 title: Identifying Adapter Group and Providing Capabilities
 description: Identifying Adapter Group and Providing Capabilities
-ms.assetid: 44a2ac71-8852-472f-82a2-7bd4d7dffa1a
 keywords:
 - multiple-head hardware WDK DirectX 9.0 , configuring
 - multiple-head hardware WDK DirectX 9.0 , adapters

@@ -1,7 +1,6 @@
 ---
 title: Creating Device Objects in a Bus Driver
 description: Creating Device Objects in a Bus Driver
-ms.assetid: 36b4d24c-9f5e-4853-bf70-c94613e01f2b
 keywords:
 - PnP WDK KMDF , bus drivers
 - Plug and Play WDK KMDF , bus drivers

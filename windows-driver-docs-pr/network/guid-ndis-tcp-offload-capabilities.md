@@ -1,7 +1,6 @@
 ---
 title: GUID_NDIS_TCP_OFFLOAD_CAPABILITIES
 description: This topic describes the GUID_NDIS_TCP_OFFLOAD_CAPABILITIES GUID for the NDIS WMI interface.
-ms.assetid: 93b8af60-3c15-4eea-a0ea-ce1c71f0b60c
 keywords:
 - GUID_NDIS_TCP_OFFLOAD_CAPABILITIES, WDK GUID_NDIS_TCP_OFFLOAD_CAPABILITIES network drivers
 ms.date: 11/22/2017

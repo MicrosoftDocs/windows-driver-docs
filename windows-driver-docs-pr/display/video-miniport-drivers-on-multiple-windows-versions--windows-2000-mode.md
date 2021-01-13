@@ -1,7 +1,6 @@
 ---
 title: Video Miniport Drivers on Multiple Windows Versions (XDDM)
 description: Video Miniport Drivers on Multiple Windows Versions (Windows 2000 Model)
-ms.assetid: fbaf3345-544e-4ba0-98c9-720941422bd2
 keywords:
 - video miniport drivers WDK Windows 2000 , multiple Windows versions
 ms.date: 12/06/2018

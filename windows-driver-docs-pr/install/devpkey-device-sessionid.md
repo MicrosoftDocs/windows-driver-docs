@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_SessionId
 description: DEVPKEY_Device_SessionId
-ms.assetid: 0e5815b3-0427-4f07-9ec1-a21976d5d933
 keywords: ["DEVPKEY_Device_SessionId Device and Driver Installation"]
 topic_type:
 - apiref

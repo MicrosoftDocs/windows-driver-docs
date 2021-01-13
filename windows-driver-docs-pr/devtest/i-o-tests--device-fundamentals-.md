@@ -1,7 +1,6 @@
 ---
 title: I/O Tests (Device Fundamentals)
 description: The Device Fundamentals I/O tests perform basic I/O testing on the specified devices.
-ms.assetid: 4FF125BE-846A-4A93-9B4F-C6BC469EA0AF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

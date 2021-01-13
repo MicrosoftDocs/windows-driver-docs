@@ -1,7 +1,6 @@
 ---
 title: Rectangle Area Fill Commands
 description: Rectangle Area Fill Commands
-ms.assetid: b9401126-4173-4187-960a-dc5ce69d3522
 keywords:
 - rectangular area fill commands WDK Unidrv
 - filling rectangular areas WDK Unidrv

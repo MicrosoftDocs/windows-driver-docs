@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_BusTypeGuid
 description: DEVPKEY_Device_BusTypeGuid
-ms.assetid: a68e7ff2-9afa-48d5-9764-3c400561024e
 keywords: ["DEVPKEY_Device_BusTypeGuid Device and Driver Installation"]
 topic_type:
 - apiref

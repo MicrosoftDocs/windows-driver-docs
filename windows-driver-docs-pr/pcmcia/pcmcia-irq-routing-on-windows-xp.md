@@ -1,7 +1,6 @@
 ---
 title: PCMCIA IRQ Routing on Windows XP
 description: PCMCIA IRQ Routing on Windows XP
-ms.assetid: 9b3501ce-c536-4ec7-bb01-c449d3900fee
 keywords:
 - PCIC bridges WDK PCMCIA bus
 - PCI-to-PCMCIA bridges WDK PCMCIA bus

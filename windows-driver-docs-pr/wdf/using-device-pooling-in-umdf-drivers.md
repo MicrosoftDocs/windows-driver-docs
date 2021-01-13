@@ -1,7 +1,6 @@
 ---
 title: Using Device Pooling in UMDF Drivers
 description: Using Device Pooling in UMDF Drivers
-ms.assetid: EC36CB33-3877-445B-8AC6-1D41E6397FF9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

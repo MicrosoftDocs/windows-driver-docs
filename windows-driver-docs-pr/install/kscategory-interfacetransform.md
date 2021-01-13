@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_INTERFACETRANSFORM
 description: KSCATEGORY_INTERFACETRANSFORM
-ms.assetid: a33b5de9-6b51-41a6-bb06-392e1438f0cc
 keywords: ["KSCATEGORY_INTERFACETRANSFORM Device and Driver Installation"]
 topic_type:
 - apiref

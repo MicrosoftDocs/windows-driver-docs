@@ -1,7 +1,6 @@
 ---
 title: Trace Message Lists
 description: Trace Message Lists
-ms.assetid: 32dcd09d-1046-4785-91bc-ccdd79452c7d
 keywords:
 - TraceView WDK , window
 - Trace Message Lists WDK

@@ -1,7 +1,6 @@
 ---
 title: D3dCreateSurfaceEx Handles
 description: D3dCreateSurfaceEx Handles
-ms.assetid: ada78f89-422b-470d-9423-09968ae113e8
 keywords:
 - context WDK Direct3D , D3dCreateSurfaceEx
 - D3dCreateSurfaceEx

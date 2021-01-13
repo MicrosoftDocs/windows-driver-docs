@@ -1,7 +1,6 @@
 ---
 title: Side Effects of Using the Checked Build
 description: Side Effects of Using the Checked Build
-ms.assetid: 8c08d4f3-1221-4858-afd4-249d966c14a7
 keywords:
 - checked builds WDK , performance impact
 ms.date: 05/08/2020

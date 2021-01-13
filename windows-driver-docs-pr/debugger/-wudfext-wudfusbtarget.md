@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfusbtarget
 description: The wudfext.wudfusbtarget extension displays information about a USB I/O target.
-ms.assetid: 2e01830f-56dc-435a-81e9-14e2b4d093d2
 keywords: ["wudfext.wudfusbtarget Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

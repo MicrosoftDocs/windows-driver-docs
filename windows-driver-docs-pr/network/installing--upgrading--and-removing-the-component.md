@@ -1,7 +1,6 @@
 ---
 title: Installing, Upgrading, and Removing the Component
 description: Installing, Upgrading, and Removing the Component
-ms.assetid: 7069e7a0-0c7e-4f7c-a764-a83e758df1bf
 keywords:
 - notify objects WDK networking , removing network components
 - network notify objects WDK , removing network components

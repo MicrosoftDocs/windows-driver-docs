@@ -1,7 +1,6 @@
 ---
 title: Maintaining Cache Coherency
 description: Maintaining Cache Coherency
-ms.assetid: 70b4b313-ce33-4562-aa0d-127a91706409
 keywords: ["I/O WDK kernel , cache coherency", "cache coherency WDK kernel", "integrity WDK I/O", "data transfers WDK kernel , cache coherency", "transferring data WDK kernel , cache coherency", "memory management WDK kernel , cache coherency", "processor cache WDK I/O"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: IStream Data Transfers
 description: IStream Data Transfers
-ms.assetid: 348871d7-137b-4921-aeb0-ac689f4385c3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

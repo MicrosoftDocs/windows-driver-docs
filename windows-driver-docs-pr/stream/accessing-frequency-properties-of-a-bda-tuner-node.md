@@ -1,7 +1,6 @@
 ---
 title: Accessing Frequency Properties of a BDA Tuner Node
 description: Accessing Frequency Properties of a BDA Tuner Node
-ms.assetid: 47c24e99-c82c-4bc8-af36-bd7f728634ba
 keywords:
 - method sets WDK BDA , RF tuner node
 - property sets WDK BDA , RF tuner node

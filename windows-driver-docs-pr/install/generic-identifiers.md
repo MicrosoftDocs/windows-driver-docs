@@ -1,7 +1,6 @@
 ---
 title: Generic Identifiers
 description: Generic Identifiers
-ms.assetid: 75dab2fc-e897-4bce-b719-98ad89817fca
 keywords:
 - device identification strings WDK , generic
 - identification strings WDK device , generic

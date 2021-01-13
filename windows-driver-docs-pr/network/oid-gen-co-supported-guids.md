@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_CO_SUPPORTED_GUIDS
 description: This topic describes the OID_GEN_CO_SUPPORTED_GUIDS object identifier (OID).
-ms.assetid: d82d6ecb-f70b-4fc2-97eb-331aafe1fe57
 keywords:
 - OID_GEN_CO_SUPPORTED_GUIDS
 ms.date: 11/02/2017

@@ -1,7 +1,6 @@
 ---
 title: Establishing a Connection with a Destination
 description: Establishing a Connection with a Destination
-ms.assetid: 1258ee32-3914-4832-b98b-361dace0abaf
 keywords:
 - Winsock Kernel WDK networking , remote transport addresses
 - WSK WDK networking , remote transport addresses

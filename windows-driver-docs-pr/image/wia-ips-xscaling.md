@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_XSCALING
 description: The WIA\_IPS\_XSCALING property indicates if scaling along the x-axis should be applied to a scan. The WIA minidriver creates and maintains this property.
-ms.assetid: 608ac942-4a37-4490-8715-a1e2ebc4dc64
 keywords: ["WIA_IPS_XSCALING Imaging Devices"]
 topic_type:
 - apiref

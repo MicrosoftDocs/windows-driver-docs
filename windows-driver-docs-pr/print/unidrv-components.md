@@ -1,7 +1,6 @@
 ---
 title: Unidrv Components
 description: Unidrv Components
-ms.assetid: 358eed9e-05e3-4670-b6b1-d5413c46edf0
 keywords:
 - Unidrv, components
 - Unidrv WDK print

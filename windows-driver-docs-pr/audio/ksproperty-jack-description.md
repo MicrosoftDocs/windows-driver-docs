@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_JACK\_DESCRIPTION
 description: The KSPROPERTY\_JACK\_DESCRIPTION property is implemented as a multi-item, pin-wise property that is accessed through the filter handle.
-ms.assetid: 005c7edc-8eb2-4387-b818-edef9b9dd4ee
 keywords: ["KSPROPERTY_JACK_DESCRIPTION Audio Devices"]
 topic_type:
 - apiref

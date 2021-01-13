@@ -1,7 +1,6 @@
 ---
 title: Application (SoftwareInfo)
 description: Application (SoftwareInfo)
-ms.assetid: 1f16a690-4453-4563-a4b1-44bbd5d02f47
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: DDI Compliance Rules
 description: DDI Compliance Rules
-ms.assetid: f020fff9-f880-4aa8-b422-5452728d2fdd
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

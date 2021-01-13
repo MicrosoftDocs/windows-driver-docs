@@ -1,7 +1,6 @@
 ---
 title: Initializing and Calling IDE Minidriver Routines
 description: Initializing and Calling IDE Minidriver Routines
-ms.assetid: ae7b19a9-0a2e-4231-b008-879b7f6c8566
 keywords:
 - IDE controller minidrivers WDK storage , initializing
 - storage IDE controller minidrivers WDK , initializing

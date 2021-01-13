@@ -1,7 +1,6 @@
 ---
 title: Control Nodes, Filters and Hardware
 description: Control Nodes, Filters and Hardware
-ms.assetid: c299f5d9-634f-46c9-becf-cf59aaa0257f
 keywords:
 - functional topology WDK BDA
 - demodulator control nodes WDK BDA

@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier Output Files
 description: Static Driver Verifier Output Files
-ms.assetid: 54784603-23a3-42b0-b5ba-6fe403ef6403
 keywords:
 - Static Driver Verifier WDK , output files
 - StaticDV WDK , output files

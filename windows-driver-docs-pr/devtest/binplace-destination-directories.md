@@ -1,7 +1,6 @@
 ---
 title: BinPlace Destination Directories
 description: BinPlace Destination Directories
-ms.assetid: 7a5a2324-b2a1-488b-b8de-cb5a6319d3ec
 keywords:
 - BinPlace WDK , destination directories
 - destination directories WDK BinPlace

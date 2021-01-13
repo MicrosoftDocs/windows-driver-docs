@@ -1,7 +1,6 @@
 ---
 title: ScanDestinations element
 description: The required ScanDestinations element is a collection of all of the scan destinations that a client wants to register with the scan device.
-ms.assetid: 50f87269-4d95-4653-ba93-aa752bdc9168
 keywords: ["ScanDestinations element Imaging Devices"]
 topic_type:
 - apiref

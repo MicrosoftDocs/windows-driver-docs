@@ -1,7 +1,6 @@
 ---
 title: time
 description: time
-ms.assetid: 63d19145-0f18-472c-a3ba-280de346b200
 keywords: ["time extension (obsolete)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: SimpleService WSDL
 description: SimpleService WSDL
-ms.assetid: 4fb5fcb7-9821-47c8-ae0d-3e73f8ee30c5
 keywords:
 - WSDBIT tool WDK , WSDL
 - WSDAPI Basic Interoperability Tool WDK , WSDL

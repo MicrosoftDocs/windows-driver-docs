@@ -35,7 +35,7 @@ ms.localizationpriority: medium
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=617155" data-raw-source="[Download kits and tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=617155)">Download kits and tools for Windows</a></p></td>
 <td><p><strong>Get started...</strong></p>
 <p>Read the official specification that describes the expected behavior of different components (device, host controller, and hub) of the architecture.</p>
-<a href="https://go.microsoft.com/fwlink/p/?linkid=618273" data-raw-source="[xHCI for Universal Serial Bus: Specification]( https://go.microsoft.com/fwlink/p/?linkid=618273)">xHCI for Universal Serial Bus: Specification</a>
+<a href="https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/extensible-host-controler-interface-usb-xhci.html" data-raw-source="[xHCI for Universal Serial Bus: Specification](https://www.intel.com/content/www/us/en/products/docs/io/universal-serial-bus/extensible-host-controler-interface-usb-xhci.html)">xHCI for Universal Serial Bus: Specification</a>
 <a href="https://go.microsoft.com/fwlink/p/?linkid=224892" data-raw-source="[Official Universal Serial Bus Documents]( https://go.microsoft.com/fwlink/p/?linkid=224892)">Official Universal Serial Bus Documents</a>
 <p><strong>Understand the architecture of UCX</strong></p>
 <p>Familiarize yourself with the Microsoft-provided USB driver stack:</p>

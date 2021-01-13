@@ -1,7 +1,6 @@
 ---
 title: AVStream Minidrivers Design Guide
 description: AVStream Minidrivers Design Guide
-ms.assetid: ad717dca-55fe-428a-8d5c-239324251eda
 keywords:
 - streaming media WDK , AVStream minidrivers
 - media streaming WDK , AVStream minidrivers

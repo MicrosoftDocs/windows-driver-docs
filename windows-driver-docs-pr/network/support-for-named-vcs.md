@@ -1,7 +1,6 @@
 ---
 title: Support for Named VCs
 description: Support for Named VCs
-ms.assetid: 797f737c-91e7-410b-91d5-5575d5b19e86
 keywords:
 - WMI WDK networking , virtual connections
 - call managers WDK networking , naming virtual connections

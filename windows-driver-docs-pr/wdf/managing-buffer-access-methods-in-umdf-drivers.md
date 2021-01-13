@@ -1,7 +1,6 @@
 ---
 title: Managing Buffer Access Methods in UMDF Drivers
 description: If you are writing a UMDF driver, you can specify preferences for the buffer access method that the framework uses for read and write requests, as well as device I/O control requests.
-ms.assetid: BDB78BCD-1964-431B-BE99-CABA6DF44D7A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

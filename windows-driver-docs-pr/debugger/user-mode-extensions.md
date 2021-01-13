@@ -1,7 +1,6 @@
 ---
 title: User-Mode Extensions
 description: User-Mode Extensions
-ms.assetid: 83b0aca1-ad08-4384-a035-3d7bd2c1b4fe
 keywords: ["extension commands ( commands), user-mode extensions", "ntsdexts.dll (user-mode extensions)", "uext.dll (user-mode extensions)", "user-mode extensions (ntsdexts.dll and uext.dll)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: I2C Write (Function Index 28)
 description: This function writes an Inter-Integrated Circuit (I2C) register.
-ms.assetid: 72DE8C76-B910-4979-BCEC-7CFFABA4CC19
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

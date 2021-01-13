@@ -1,7 +1,6 @@
 ---
 title: In-Box Support for Autoconfiguration
 description: In-Box Support for Autoconfiguration
-ms.assetid: cd2faef4-96ba-4d11-99f6-90e41ae2e283
 keywords:
 - autoconfiguration WDK printer , in-box support
 - printer autoconfiguration WDK printer , in-box support

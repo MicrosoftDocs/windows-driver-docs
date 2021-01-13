@@ -1,7 +1,6 @@
 ---
 title: Checksum offload
 description: Checksum offload usage, rules, and examples in NetAdapterCx
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Checksum Offload
 ms.date: 08/10/2020
@@ -9,6 +8,13 @@ ms.custom: Fe
 ---
 
 # Checksum offload
+
+> [!WARNING]
+> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>
+> NetAdapterCx is preview only in Windows 10, version 2004.
+>
+> Currently, NetAdapterCx client drivers cannot be certified.
 
 NetAdapterCx supports offloading TCP/IP checksum tasks at run time.
 
@@ -24,29 +30,31 @@ NetAdapterCx checks the registry keywords and honors them when enabling the acti
 
 The checksum keywords specified in [Using Registry Values to Enable and Disable Task Offloading](../network/using-registry-values-to-enable-and-disable-task-offloading.md) can be used to enable/disable the checksum offload with a registry key setting. Grouped keywords are not supported.
 
+The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-value-types).
+
 ## Configuring checksum offload
 
 Client drivers first advertise their hardware's checksum offload capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
 
 To configure transmit (Tx) checksum offload, the client driver:
 
-1. Allocates a [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_offload_tx_checksum_capabilities) structure.
+1. Allocates a [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_tx_checksum_capabilities) structure.
 
-1. Calls [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_tx_checksum_capabilities_init) to initialize the structure.
+1. Calls [**NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-net_adapter_offload_tx_checksum_capabilities_init) to initialize the structure.
 
-1. Calls [**NetAdapterOffloadSetTxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadtxsetchecksumcapabilities) to register the structure with NetAdapterCx.
+1. Calls [**NetAdapterOffloadSetTxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsettxchecksumcapabilities) to register the structure with NetAdapterCx.
  
-During the call to **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_TX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_tx_checksum) callback. The system invokes this callback later if active offload capabilities change.
+During the call to **NET_ADAPTER_OFFLOAD_TX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_TX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_tx_checksum) callback. The system invokes this callback later if active offload capabilities change.
 
 To configure receive (Rx) checksum offload, the client driver:
 
-1. Allocates a [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapter/ns-netadapter-_net_adapter_offload_rx_checksum_capabilities) structure.
+1. Allocates a [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES**](/windows-hardware/drivers/ddi/netadapteroffload/ns-netadapteroffload-_net_adapter_offload_rx_checksum_capabilities) structure.
 
-1. Calls [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-net_adapter_offload_rx_checksum_capabilities_init) to initialize the structure.
+1. Calls [**NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-net_adapter_offload_rx_checksum_capabilities_init) to initialize the structure.
 
-1. Calls [**NetAdapterOffloadSetRxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapter/nf-netadapter-netadapteroffloadsetrxchecksumcapabilities) to register the structure with NetAdapterCx.
+1. Calls [**NetAdapterOffloadSetRxChecksumCapabilities**](/windows-hardware/drivers/ddi/netadapteroffload/nf-netadapteroffload-netadapteroffloadsetrxchecksumcapabilities) to register the structure with NetAdapterCx.
 
-During the call to **NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_RX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_rx_checksum) callback. The system invokes this callback later if active offload capabilities change.
+During the call to **NET_ADAPTER_OFFLOAD_RX_CHECKSUM_CAPABILITIES_INIT** the client driver provides a pointer to the [*EVT_NET_ADAPTER_OFFLOAD_SET_RX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_rx_checksum) callback. The system invokes this callback later if active offload capabilities change.
 
 ### Rules for indicating hardware transmit checksum capabilities
 
@@ -108,7 +116,7 @@ MyAdapterSetOffloadCapabilities(
 
 ## Updating hardware offloads
 
-If the TCP/IP stack or an overlying protocol driver requests a change to the net adapter's active capabilities, NetAdapterCx invokes the client driver's [*EVT_NET_ADAPTER_OFFLOAD_SET_TX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_tx_checksum) or [*EVT_NET_ADAPTER_OFFLOAD_SET_RX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapter/nc-netadapter-evt_net_adapter_offload_set_rx_checksum) callback that was registered during adapter initialization. In these functions, the system supplies updated capabilities in the NETOFFLOAD object which the client driver queries to update its offload capabilities.
+If the TCP/IP stack or an overlying protocol driver requests a change to the net adapter's active capabilities, NetAdapterCx invokes the client driver's [*EVT_NET_ADAPTER_OFFLOAD_SET_TX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_tx_checksum) or [*EVT_NET_ADAPTER_OFFLOAD_SET_RX_CHECKSUM*](/windows-hardware/drivers/ddi/netadapteroffload/nc-netadapteroffload-evt_net_adapter_offload_set_rx_checksum) callback that was registered during adapter initialization. In these functions, the system supplies updated capabilities in the NETOFFLOAD object which the client driver queries to update its offload capabilities.
 
 Client drivers can call the following functions to determine which checksum offloads are enabled:
 

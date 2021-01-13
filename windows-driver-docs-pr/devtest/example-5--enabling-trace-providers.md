@@ -1,7 +1,6 @@
 ---
 title: Example 5 Enabling Trace Providers
 description: Example 5 Enabling Trace Providers
-ms.assetid: 405aea85-0248-4fd3-82eb-1beb76cc8a1b
 keywords:
 - Tracelog WDK , providers
 - providers WDK software tracing

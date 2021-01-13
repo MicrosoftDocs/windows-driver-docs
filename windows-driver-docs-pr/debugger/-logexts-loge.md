@@ -1,7 +1,6 @@
 ---
 title: logexts.loge
 description: The logexts.loge extension enables logging. If logging has not been initialized, it will be initialized and enabled.
-ms.assetid: d8b621f1-19e7-4c42-a428-8572d29b666f
 keywords: ["logexts.loge Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

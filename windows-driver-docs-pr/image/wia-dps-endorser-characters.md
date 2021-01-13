@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_ENDORSER\_CHARACTERS
 description: The WIA\_DPS\_ENDORSER\_CHARACTERS property contains all of the valid characters that an application can use to create valid endorser strings.
-ms.assetid: 7bf0676b-df85-486b-a448-ab7275ac846d
 keywords: ["WIA_DPS_ENDORSER_CHARACTERS Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_PLANAR
 description: The WIA\_IPA\_PLANAR property contains image data packing options. The WIA minidriver creates and maintains this property.
-ms.assetid: df4013db-8f9e-428a-83dd-c344f7998034
 keywords: ["WIA_IPA_PLANAR Imaging Devices"]
 topic_type:
 - apiref

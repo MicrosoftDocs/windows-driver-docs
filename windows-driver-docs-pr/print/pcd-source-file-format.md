@@ -1,7 +1,6 @@
 ---
 title: PCD Source File Format
 description: PCD Source File Format
-ms.assetid: 8651d6ca-7cd7-4c07-aa66-2766dd2222e0
 keywords:
 - Plotter Driver WDK print , minidrivers
 - MSPlot WDK print , minidrivers

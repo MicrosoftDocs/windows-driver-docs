@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x9 IRQL_NOT_GREATER_OR_EQUAL
 description: The IRQL_NOT_GREATER_OR_EQUAL bug check has a value of 0x00000009.This bug check appears very infrequently.
-ms.assetid: d48f1681-df49-4cc3-a22d-84e090e7d774
 keywords: ["Bug Check 0x9 IRQL_NOT_GREATER_OR_EQUAL", "IRQL_NOT_GREATER_OR_EQUAL"]
 ms.date: 05/23/2017
 topic_type:

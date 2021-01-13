@@ -1,7 +1,6 @@
 ---
 title: Send Operations
 description: Send Operations
-ms.assetid: 84af0abc-c8f2-47d4-b368-7b0216600c95
 keywords:
 - send operations WDK Native 802.11 IHV Extensions DLL
 ms.date: 04/20/2017

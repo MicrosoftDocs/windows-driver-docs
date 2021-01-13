@@ -1,7 +1,6 @@
 ---
 title: OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA
 description: As a set, the TCP/IP transport uses the OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA OID to request that a miniport driver delete the specified security associations (SAs) from a NIC.
-ms.assetid: 9b2c702c-beaa-4caf-97c5-d80a2632e4d3
 ms.date: 08/08/2017
 keywords: 
  -OID_TCP_TASK_IPSEC_OFFLOAD_V2_DELETE_SA Network Drivers Starting with Windows Vista
@@ -28,7 +27,7 @@ When a miniport driver receives this request, the driver should delete the speci
 
 The miniport driver receives an [**IPSEC\_OFFLOAD\_V2\_DELETE\_SA**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ipsec_offload_v2_delete_sa) structure that contains a handle to an SA bundle and a pointer to the next **IPSEC\_OFFLOAD\_V2\_DELETE\_SA** structure in a linked list.
 
-The miniport driver can set **SaDeleteReq** in the [**NDIS\_IPSEC\_OFFLOAD\_V2\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info) structure for a receive [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structure. The TCP/IP transport subsequently issues OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA once to delete the inbound SA that the packet was received over and once again to delete the outbound SA that corresponds to the deleted inbound SA. The NIC must not remove either of these SAs before receiving the corresponding OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA request.
+The miniport driver can set **SaDeleteReq** in the [**NDIS\_IPSEC\_OFFLOAD\_V2\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info) structure for a receive [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list) structure. The TCP/IP transport subsequently issues OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA once to delete the inbound SA that the packet was received over and once again to delete the outbound SA that corresponds to the deleted inbound SA. The NIC must not remove either of these SAs before receiving the corresponding OID\_TCP\_TASK\_IPSEC\_OFFLOAD\_V2\_DELETE\_SA request.
 
 ### Return status codes
 
@@ -94,5 +93,5 @@ Requirements
 
 [**NDIS\_IPSEC\_OFFLOAD\_V2\_NET\_BUFFER\_LIST\_INFO**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_ipsec_offload_v2_net_buffer_list_info)
 
-[**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list)
+[**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list)
 

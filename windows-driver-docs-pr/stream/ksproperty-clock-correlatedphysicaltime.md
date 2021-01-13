@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME
 description: Clients use the KSPROPERTY\_CLOCK\_CORRELATEDPHYSICALTIME property to compare the current physical time on a clock to the current system time.
-ms.assetid: 49f74411-1489-4864-9213-e1894128e355
 keywords: ["KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME Streaming Media Devices"]
 topic_type:
 - apiref

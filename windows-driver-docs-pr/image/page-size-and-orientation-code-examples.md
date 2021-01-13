@@ -1,7 +1,6 @@
 ---
 title: Page Size and Orientation Code Examples
 description: Page Size and Orientation Code Examples
-ms.assetid: 28425df2-131b-4fbc-ae44-043be2fb4813
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

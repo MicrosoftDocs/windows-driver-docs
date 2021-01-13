@@ -1,7 +1,6 @@
 ---
 title: Plotter Driver Capabilities
 description: Plotter Driver Capabilities
-ms.assetid: 9fc32297-504c-453d-967b-ca4a4e56eaa2
 keywords:
 - Plotter Driver WDK print , capabilities
 - MSPlot WDK print , capabilities

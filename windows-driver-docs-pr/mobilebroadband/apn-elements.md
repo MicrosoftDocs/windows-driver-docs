@@ -1,7 +1,6 @@
 ---
 title: APN elements overview
 description: APN elements overview
-ms.assetid: 551e713e-7ac9-477f-966e-214b63f94507
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

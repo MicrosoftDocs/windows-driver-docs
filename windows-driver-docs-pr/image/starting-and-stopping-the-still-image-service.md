@@ -1,7 +1,6 @@
 ---
 title: Starting and Stopping the Still Image Service
 description: Starting and Stopping the Still Image Service
-ms.assetid: 52770566-1d03-4ae8-9925-240fffcc5f57
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting HID Reports
 description: Troubleshooting HID Reports
-ms.assetid: 8fbf641b-461b-44c2-9cc5-c1547abc75d6
 keywords:
 - HID reports WDK , troubleshooting
 - reports WDK HID , troubleshooting

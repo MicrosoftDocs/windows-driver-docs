@@ -1,7 +1,6 @@
 ---
 title: Using Device Interfaces (WDF)
 description: Using Device Interfaces
-ms.assetid: 98199220-947e-462e-a50c-85d81ca50108
 keywords:
 - device interfaces WDK KMDF
 - registering device interfaces WDK KMDF

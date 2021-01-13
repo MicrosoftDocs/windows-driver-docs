@@ -1,7 +1,6 @@
 ---
 title: Setting a Device Instance Property Value
 description: Setting a Device Instance Property Value
-ms.assetid: 45f63ee3-278e-4b8c-a666-c860074fa172
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -4,7 +4,6 @@ description: Returns the property bag associated with the current print job.
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 6309CCD2-D53A-4B21-970E-AF19D1DACEE3
 keywords: ["JobPropertyBag method Print Devices", "JobPropertyBag method Print Devices , IPrinterScriptUsbJobContext interface", "IPrinterScriptUsbJobContext interface Print Devices , JobPropertyBag method"]
 topic_type:
 - apiref

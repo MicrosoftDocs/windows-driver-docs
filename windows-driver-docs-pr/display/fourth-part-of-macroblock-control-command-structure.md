@@ -1,7 +1,6 @@
 ---
 title: Fourth Part of Macroblock Control Command Structure
 description: Fourth Part of Macroblock Control Command Structure
-ms.assetid: 26540693-09a2-4664-b0ac-4cc69e909e99
 keywords:
 - macroblocks WDK DirectX VA , generic command structure
 ms.date: 04/20/2017

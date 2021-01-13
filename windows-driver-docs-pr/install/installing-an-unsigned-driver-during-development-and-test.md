@@ -1,7 +1,6 @@
 ---
 title: Installing an Unsigned Driver during Development and Test
 description: Installing an Unsigned Driver during Development and Test
-ms.assetid: b7b08d5a-40cf-498f-8645-6b02d803f62f
 keywords:
 - driver signing WDK , unsigned drivers
 - signing drivers WDK , unsigned drivers

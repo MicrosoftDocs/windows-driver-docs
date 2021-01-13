@@ -1,7 +1,6 @@
 ---
 title: KsFilterMutex rule ()
 description: The KsFilterMutex rule specifies that a KS miniport driver acquires and releases the filter mutex in the correct sequence.
-ms.assetid: 09927C42-2F05-49F6-AFE1-E45049ED2805
 ms.date: 05/21/2018
 keywords: ["KsFilterMutex rule ()"]
 topic_type:

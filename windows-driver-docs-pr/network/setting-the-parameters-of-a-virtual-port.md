@@ -1,7 +1,6 @@
 ---
 title: Setting the Parameters of a Virtual Port
 description: Setting the Parameters of a Virtual Port
-ms.assetid: 92CBE5B2-897D-4B34-9AB9-8207C42A72BF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 An overlying driver can change the parameters for a virtual port (VPort) on a NIC switch on a network adapter that supports single root I/O virtualization (SR-IOV). The driver issues an object identifier (OID) set request of [OID\_NIC\_SWITCH\_VPORT\_PARAMETERS](./oid-nic-switch-vport-parameters.md) to change these parameters.
 
-Before the overlying driver issues this OID set request, it must initialize an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure with the parameters to be changed on the VPort. The driver then initializes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure for the OID request, and sets the **InformationBuffer** member to a pointer to the **NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS** structure.
+Before the overlying driver issues this OID set request, it must initialize an [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure with the parameters to be changed on the VPort. The driver then initializes an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request) structure for the OID request, and sets the **InformationBuffer** member to a pointer to the **NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS** structure.
 
 Only a limited subset of configuration parameters for a VPort can be changed. The overlying driver specifies the parameter to change by setting the following members of the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure:
 

@@ -1,7 +1,6 @@
 ---
 title: Customized OIDs and Status Indications
 description: Customized OIDs and Status Indications
-ms.assetid: 675aff2c-8e4a-4a02-8d08-0f59b8fcd4a2
 keywords:
 - status indications WDK networking , WMI
 - WMI WDK networking , status indications

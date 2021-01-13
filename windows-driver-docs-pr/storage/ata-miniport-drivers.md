@@ -1,7 +1,6 @@
 ---
 title: ATA Miniport Drivers
 description: ATA Miniport Drivers
-ms.assetid: 4e5cf0e3-72c5-43df-b61e-0039c3666de4
 keywords:
 - ATA miniport drivers WDK
 - storage ATA miniport drivers WDK

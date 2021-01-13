@@ -1,7 +1,6 @@
 ---
 title: Idle Power Management Hard Disk Drive Idle Timeout
 description: Idle Power Management Hard Disk Drive Idle Timeout
-ms.assetid: 1dcc261a-803c-4c0e-a68e-29b00f46cd32
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

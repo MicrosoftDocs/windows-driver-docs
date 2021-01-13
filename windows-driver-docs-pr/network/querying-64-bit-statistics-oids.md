@@ -1,7 +1,6 @@
 ---
 title: Querying 64-Bit Statistics OIDs
 description: Querying 64-Bit Statistics OIDs
-ms.assetid: dc43c33d-12a7-4468-9980-a9015f43e068
 keywords:
 - statistics OIDs WDK networking
 - 64-bit statistics OIDs WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Output Buffer Size
 description: Output Buffer Size
-ms.assetid: 386cc6f7-2fab-474a-b997-9ba2457ada0c
 keywords:
 - data-intersection handlers WDK audio , output buffer size
 - output buffers WDK audio

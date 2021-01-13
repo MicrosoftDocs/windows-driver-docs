@@ -1,7 +1,6 @@
 ---
 title: Inflight Trace Recorder (IFR) for logging traces
 description: Inflight Trace Recorder (IFR) allows a trace provider, such as a kernel-mode driver, to record trace logs and store WPP log messages in buffers.
-ms.assetid: D11FA28E-3B0C-4D9D-AEDA-8A80DE58091C
 ms.date: 03/30/2020
 ms.localizationpriority: medium
 ---

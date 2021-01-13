@@ -1,7 +1,6 @@
 ---
 title: Dispatching Methods for I/O Requests
 description: Dispatching Methods for I/O Requests
-ms.assetid: 3e91aa7c-bccf-4eeb-8b68-b1277a690f8c
 keywords:
 - I/O queues WDK KMDF , creating
 - I/O queues WDK KMDF , dispatching methods

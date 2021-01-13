@@ -1,7 +1,6 @@
 ---
 title: Installing a Bluetooth Device
 description: Installing a Bluetooth Device
-ms.assetid: 2bf2b2df-260c-42a5-9ee9-6db91f304036
 keywords:
 - Bluetooth WDK , bluetooth driver installations
 - client-side profile drivers WDK Bluetooth

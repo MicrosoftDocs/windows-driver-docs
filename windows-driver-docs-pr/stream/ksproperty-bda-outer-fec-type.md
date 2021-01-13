@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_OUTER\_FEC\_TYPE
 description: Clients use KSPROPERTY\_BDA\_OUTER\_FEC\_TYPE to control the outer forward error correction (FEC) type of a demodulator node.
-ms.assetid: 952fd2d6-20c8-4fb3-a92a-1e6bcedfd68b
 keywords: ["KSPROPERTY_BDA_OUTER_FEC_TYPE Streaming Media Devices"]
 topic_type:
 - apiref

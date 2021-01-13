@@ -1,7 +1,6 @@
 ---
 title: Retrieving a Device Interface Property Value
 description: Retrieving a Device Interface Property Value
-ms.assetid: 2a845adc-6965-420d-9e0a-20935d20577a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

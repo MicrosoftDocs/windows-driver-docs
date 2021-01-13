@@ -1,7 +1,6 @@
 ---
 title: Using BDA Property and Method Sets
 description: Using BDA Property and Method Sets
-ms.assetid: d4e55f32-620b-4978-9935-ebd4c2c3ed39
 keywords:
 - Broadcast Driver Architecture WDK AVStream , property sets
 - BDA WDK AVStream , property sets

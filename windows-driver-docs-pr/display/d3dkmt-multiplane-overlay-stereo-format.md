@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT enumeration
 description: Learn about the D3DKMT\_MULTIPLANE\_OVERLAY\_STEREO\_FORMAT enumeration, which is reserved for system use. Do not use in your driver.
-ms.assetid: dd26ac4b-ecef-4b4d-a050-d3e429ff0542
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_STEREO_FORMAT enumeration Display Devices"]
 topic_type:
 - apiref

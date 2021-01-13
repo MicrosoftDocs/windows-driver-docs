@@ -1,7 +1,6 @@
 ---
 title: MB Device-based Reset and Recovery
 description: MB Device-based Reset and Recovery
-ms.assetid: CA75B63B-53EE-41BF-B2B6-E008F5598399
 keywords:
 - MB Device-based Reset and Recovery, Mobile Broadband Device-based Reset and Recovery, Mobile Broadband miniport driver Device-based Reset and Recovery
 ms.date: 08/09/2018

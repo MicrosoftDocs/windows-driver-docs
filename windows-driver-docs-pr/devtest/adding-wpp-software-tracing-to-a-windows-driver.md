@@ -1,7 +1,6 @@
 ---
 title: Adding WPP Software Tracing to a Windows Driver
 description: To use WPP software tracing in a trace provider, such as a kernel-mode driver or a user-mode application, you need to add code (or instrument) the driver source files and modify the driver project. This section will describe those steps.
-ms.assetid: 487BA8AA-950A-4F3C-9E3E-EBE1DA35D4B1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,7 +42,8 @@ For convenience, the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/p
             WPP_DEFINE_BIT(NameOfTraceFlag2)  \
             .............................   \
             .............................   \
-            WPP_DEFINE_BIT(NameOfTraceFlag31) 
+            WPP_DEFINE_BIT(NameOfTraceFlag31) \
+            )
     ```
 
     For example, the following code uses myDriverTraceGuid as the *GUIDFriendlyName*. Note that *ControlGUID* has a slightly different format than the standard form of a 32-digit hexadecimal GUID. The *ControlGUID* has the five fields, but they are separated by commas and bracketed by parentheses, instead of the usual hyphens and curly braces. For example, you specify (**(84bdb2e9,829e,41b3,b891,02f454bc2bd7)** instead of {84bdb2e9-829e-41b3-b891-02f454bc2bd7}.
@@ -61,7 +61,7 @@ For convenience, the [WPP\_CONTROL\_GUIDS](/previous-versions/windows/hardware/p
             )                             
     ```
 
-    **Tip**  You can copy this code snippet into a header file. Be sure to change the control GUID and the friendly name. You can use GUIDgen.exe to generate the control GUID. The Guidgen.exe is included with Visual Studio (**Tools &gt; Create GUID**). You could also use the Uuidgen.exe tool, which is available from the Visual Studio Command prompt window (type **uuigen.exe /?** for more information).
+    **Tip**  You can copy this code snippet into a header file. Be sure to change the control GUID and the friendly name. You can use GUIDgen.exe to generate the control GUID. The Guidgen.exe is included with Visual Studio (**Tools &gt; Create GUID**). You could also use the Uuidgen.exe tool, which is available from the Visual Studio Command prompt window (type **uuidgen.exe /?** for more information).
 
 
 
@@ -111,11 +111,11 @@ Each trace message function that you use must have a corresponding pair of macro
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><span id="WPP_CONDITIONS_LOGGER"></span><span id="wpp_conditions_logger"></span><strong>WPP_<em>CONDITIONS</em><em>LOGGER</strong></p></td>
+<td align="left"><p><span id="WPP_CONDITIONS_LOGGER"></span><span id="wpp_conditions_logger"></span><strong>WPP_<em>CONDITIONS</em>_LOGGER</strong></p></td>
 <td align="left"><p>Used to find the trace session associated with the provider and returns a handle to the session.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><span id="WPP_CONDITIONS_ENABLED"></span><span id="wpp_conditions_enabled"></span><strong>WPP</em><em>CONDITIONS</em>_ENABLED</strong></p></td>
+<td align="left"><p><span id="WPP_CONDITIONS_ENABLED"></span><span id="wpp_conditions_enabled"></span><strong>WPP_<em>CONDITIONS</em>_ENABLED</strong></p></td>
 <td align="left"><p>Used to determine whether logging is enabled with the specified condition.</p></td>
 </tr>
 </tbody>

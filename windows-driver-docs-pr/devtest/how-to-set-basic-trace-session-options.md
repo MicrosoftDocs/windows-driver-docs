@@ -1,7 +1,6 @@
 ---
 title: How to Set Basic Trace Session Options
 description: How to Set Basic Trace Session Options
-ms.assetid: e19207df-ff4d-4083-85cf-b5b5b3e62f2c
 keywords:
 - trace sessions WDK , basic options
 - tracing WDK , basic options

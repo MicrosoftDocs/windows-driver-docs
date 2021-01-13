@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_TRANSPORT_HEADER_OFFSET
 description: As a set, the OID_GEN_TRANSPORT_HEADER_OFFSET OID indicates the size of additional headers for packets that a particular transport sends and receives.
-ms.assetid: 00b00c5b-cdf3-4b87-8914-e87876c9ae23
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_TRANSPORT_HEADER_OFFSET Network Drivers Starting with Windows Vista

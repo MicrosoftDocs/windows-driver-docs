@@ -1,7 +1,6 @@
 ---
 title: Handling Overlapped I/O Operations
 description: Handling Overlapped I/O Operations
-ms.assetid: d13a9fa2-9f68-4c35-af79-dd3f8cec2805
 keywords: ["deferred procedure calls WDK kernel", "DPCs WDK kernel", "DpcForIsr", "CustomDpc", "overlapped I/O WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

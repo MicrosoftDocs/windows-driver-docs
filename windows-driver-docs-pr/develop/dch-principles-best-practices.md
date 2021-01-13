@@ -1,5 +1,4 @@
 ---
-ms.assetid: 5865ded8-5b50-4646-a993-613b91d360fb
 title: DCH Design Principles and Best Practices
 description: Describes DCH principles for Windows drivers.
 ms.date: 04/28/2020

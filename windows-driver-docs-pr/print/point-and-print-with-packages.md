@@ -1,7 +1,6 @@
 ---
 title: Point and Print with Packages
 description: Point and Print with Packages
-ms.assetid: ea160ffc-fca3-49e4-894d-67bdc65cda38
 keywords:
 - Point and Print WDK , security
 - User Account Control WDK printer

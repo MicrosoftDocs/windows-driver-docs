@@ -1,7 +1,6 @@
 ---
 title: Debugging Managed Code Using the Windows Debugger
 description: You can use the windows debuggers (WinDbg, CDB, and NTSD) to debug target applications that contain managed code.
-ms.assetid: eb4cc883-71ac-4a57-8654-07c3120310c0
 keywords: debugging, debug, Windbg, managed code debugging, .NET common language runtime, common language runtime, CLR , JIT compiler, JITted code
 ms.date: 05/23/2017
 ms.localizationpriority: medium

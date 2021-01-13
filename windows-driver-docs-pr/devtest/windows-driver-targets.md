@@ -1,7 +1,6 @@
 ---
 title: Windows driver targets
 description: The WindowsDriver.Common.targets, WindowsDriver.masm.targets, and WindowsDriver.arm.targets files provide the targets that are necessary to build a driver.
-ms.assetid: 9D04792B-2736-4871-A53E-6B90509133A7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

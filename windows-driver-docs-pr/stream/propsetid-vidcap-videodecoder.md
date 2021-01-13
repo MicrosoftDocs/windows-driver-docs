@@ -1,7 +1,6 @@
 ---
 title: PROPSETID\_VIDCAP\_VIDEODECODER
 description: PROPSETID\_VIDCAP\_VIDEODECODER
-ms.assetid: 86b581b7-51fd-4662-8291-4c5baf9d3b16
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

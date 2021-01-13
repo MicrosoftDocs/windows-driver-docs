@@ -1,7 +1,6 @@
 ---
 title: Tracing During Boot
 description: Tracing During Boot
-ms.assetid: 79594c33-5755-4484-aaf5-ac409b05ddcc
 keywords:
 - software tracing WDK , during boot
 - tracing WDK , during boot

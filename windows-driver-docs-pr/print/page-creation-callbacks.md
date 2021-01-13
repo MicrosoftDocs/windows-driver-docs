@@ -1,7 +1,6 @@
 ---
 title: Page Creation Callbacks
 description: Page Creation Callbacks
-ms.assetid: ec514d17-415e-417b-bb29-b37be43c3cf6
 keywords:
 - callback functions WDK CPSUI
 - Common Property Sheet User Interface WDK print , callbacks

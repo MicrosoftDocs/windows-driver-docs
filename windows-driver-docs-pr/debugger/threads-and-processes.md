@@ -1,7 +1,6 @@
 ---
 title: Threads and Processes
 description: Threads and Processes
-ms.assetid: 7ba8226c-3fb3-4ed6-8f87-69a7999e34ad
 keywords: ["Debugger Engine, threads and processes"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

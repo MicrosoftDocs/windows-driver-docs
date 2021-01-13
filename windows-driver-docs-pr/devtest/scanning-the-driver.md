@@ -1,7 +1,6 @@
 ---
 title: Scanning the Driver
 description: Scanning the Driver
-ms.assetid: c36960b4-d97e-49b7-a7ad-e71b0820db8a
 keywords:
 - Static Driver Verifier WDK , DriverEntry routine scans
 - StaticDV WDK , DriverEntry routine scans

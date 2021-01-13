@@ -1,7 +1,6 @@
 ---
 title: Select locales and package type in Mobile Broadband Metadata Authoring Wizard
 description: Select locales and package type in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: B2C9AEE8-6278-4870-A977-15FE1B59C9FD
 keywords:
 - Select locales and package type in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017

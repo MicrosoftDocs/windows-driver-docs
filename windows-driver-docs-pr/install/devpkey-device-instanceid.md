@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_InstanceId
 description: DEVPKEY_Device_InstanceId
-ms.assetid: 74c78289-e140-46da-8005-ef6f441f78ec
 keywords: ["DEVPKEY_Device_InstanceId Device and Driver Installation"]
 topic_type:
 - apiref

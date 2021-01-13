@@ -1,6 +1,5 @@
 ---
 title: IrqlIoPassive4 rule (wdm)
-ms.assetid: 2bdfa09d-0777-4eaf-85ff-d5accc0f31de
 ms.date: 05/21/2018
 description: "Learn more about: IrqlIoPassive4 rule (wdm)"
 keywords: ["IrqlIoPassive4 rule (wdm)"]

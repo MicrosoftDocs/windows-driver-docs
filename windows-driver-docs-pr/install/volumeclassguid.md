@@ -1,7 +1,6 @@
 ---
 title: VolumeClassGuid
 description: VolumeClassGuid
-ms.assetid: 30d0db03-fbea-4245-b8d7-ca3a06a54861
 keywords: ["VolumeClassGuid Device and Driver Installation"]
 topic_type:
 - apiref

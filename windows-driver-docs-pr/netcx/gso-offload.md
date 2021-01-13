@@ -1,7 +1,6 @@
 ---
 title: Generic Segmentation Offload
 description: Generic Segmentation Offload usage, rules, and examples in NetAdapterCx
-ms.assetid:
 keywords:
 - WDF Network Adapter Class Extension Offloads, NetAdapterCx hardware offloads, NetAdapterCx Offloads, NetAdapter Offloads, Generic segmentation offload, GSO, Large Segmentation Offload, LSO, UDP Segmentation Offload, USO
 ms.date: 10/08/2020
@@ -9,6 +8,13 @@ ms.custom: Fe
 ---
 
 # Generic Segmentation Offload
+
+> [!WARNING]
+> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>
+> NetAdapterCx is preview only in Windows 10, version 2004.
+>
+> Currently, NetAdapterCx client drivers cannot be certified.
 
 Generic Segmentation Offload (GSO) collectively represents [Large Send Offload (LSO)](../network/offloading-the-segmentation-of-large-tcp-packets.md) and [UDP Send Offload (USO)](../network/udp-segmentation-offload-uso-.md). 
 
@@ -22,9 +28,11 @@ The LSO keywords specified in [Using Registry Values to Enable and Disable Task 
 
 The USO keywords specified in [UDP Segmentation Offload (USO)](../network/udp-segmentation-offload-uso-.md) can be used to enable/disable the USO offload with a registry key setting.
 
+The keyword values must be of type [REG_SZ](/windows/win32/sysinfo/registry-value-types).
+
 ## Configuring GSO
 
-Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
+Client drivers first advertise their hardware's GSO capabilities during net adapter initialization. This might occur within their [*EvtDevicePrepareHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware) callback before starting a net adapter.
 
 To configure GSO, the client driver:
 

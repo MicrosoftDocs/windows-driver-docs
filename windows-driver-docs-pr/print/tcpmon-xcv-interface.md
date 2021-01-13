@@ -1,7 +1,6 @@
 ---
 title: TCPMON Xcv Interface
 description: TCPMON Xcv Interface
-ms.assetid: 7b2b1cff-ab8f-44e0-9327-dc60a0072bf5
 keywords:
 - print monitors WDK , TCPMON Xcv
 - transceive (Xcv) interface WDK print

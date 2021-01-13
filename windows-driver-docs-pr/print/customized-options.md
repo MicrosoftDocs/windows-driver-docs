@@ -1,7 +1,6 @@
 ---
 title: Customized Options
 description: Customized Options
-ms.assetid: 8b54c59e-b469-488a-ae31-52045c00c971
 keywords:
 - printer options WDK Unidrv , customized
 - customized printer options WDK Unidrv

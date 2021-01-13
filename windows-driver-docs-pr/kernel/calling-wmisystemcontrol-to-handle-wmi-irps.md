@@ -1,7 +1,6 @@
 ---
 title: Calling WmiSystemControl to Handle WMI IRPs
 description: Calling WmiSystemControl to Handle WMI IRPs
-ms.assetid: a2fa53e2-6468-4c3c-8b41-9a97305abc43
 keywords: ["WMI WDK kernel , requests", "requests WDK WMI", "IRPs WDK WMI", "WmiSystemControl"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-WMI library routines simplify handling of WMI requests because instead of processing each such request, a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol). In the **WmiSystemControl** call, the driver passes an initialized [**WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context) structure that contains entry points to the driver's [WMI library callback routines](/windows-hardware/drivers/ddi/index) (*DpWmiXxx* routines) and information about the driver's data blocks and event blocks.
+WMI library routines simplify handling of WMI requests because instead of processing each such request, a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol). In the **WmiSystemControl** call, the driver passes an initialized [**WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context) structure that contains entry points to the driver's [WMI library callback routines](/windows-hardware/drivers/ddi/wmilib) (*DpWmiXxx* routines) and information about the driver's data blocks and event blocks.
 
 Because the WMI library provides no mechanism for passing dynamic instance names or a static instance name list, a driver can use the WMI library to handle requests involving only data blocks with static instance names based on a PDO or a single base name string. For more information about static and dynamic instance names, see [Defining WMI Instance Names](defining-wmi-instance-names.md). Nothing prevents a driver from using the WMI library to handle requests for such blocks and processing requests for other blocks in its [*DispatchSystemControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine. For more information, see [Processing WMI IRPs in a DispatchSystemControl Routine](processing-wmi-irps-in-a-dispatchsystemcontrol-routine.md).
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TUNER\_STANDARD
 description: The KSPROPERTY\_TUNER\_STANDARD property retrieves the current analog video standard. This property must be implemented.
-ms.assetid: b20dd01c-bd6b-4908-a3c4-eb2914eb54d0
 keywords: ["KSPROPERTY_TUNER_STANDARD Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEANGLES
 description: The KSPROPERTY\_DIRECTSOUND3DBUFFER\_CONEANGLES property specifies the inside and outside cone angles of the sound projection cone for a 3D sound buffer.
-ms.assetid: a3978aaf-218c-4021-abf0-e426eacf52c7
 keywords: ["KSPROPERTY_DIRECTSOUND3DBUFFER_CONEANGLES Audio Devices"]
 topic_type:
 - apiref

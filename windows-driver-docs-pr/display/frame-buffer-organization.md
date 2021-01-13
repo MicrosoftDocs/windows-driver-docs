@@ -1,7 +1,6 @@
 ---
 title: Frame Buffer Organization
 description: Frame Buffer Organization
-ms.assetid: 2a9ce844-84c5-4517-acf7-c7e67a1e5e07
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , video decoding
 - Video Acceleration WDK DirectX , video decoding

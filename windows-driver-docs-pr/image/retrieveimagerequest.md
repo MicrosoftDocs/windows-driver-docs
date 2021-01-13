@@ -1,7 +1,6 @@
 ---
 title: RetrieveImageRequest element
 description: The required RetrieveImageRequest operation element contains the client's request to retrieve scan data from the device after a scan job has been created.
-ms.assetid: 4f6d6bd0-b323-4f95-b380-2be9cec1ee6e
 keywords: ["RetrieveImageRequest element Imaging Devices"]
 topic_type:
 - apiref

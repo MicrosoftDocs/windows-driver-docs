@@ -1,7 +1,6 @@
 ---
 title: KDbgCtrl Command-Line Options
 description: The KDbgCtrl command line uses the following syntax
-ms.assetid: 0367a09d-c475-4aeb-8f88-47d51ec7e9d5
 keywords: ["KDbgCtrl Command-Line Options Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

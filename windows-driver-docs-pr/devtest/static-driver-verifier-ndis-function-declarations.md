@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier NDIS Function Declarations
 description: Static Driver Verifier NDIS Function Declarations
-ms.assetid: f8d11a99-0fd0-45cf-b583-8f8833b21f79
 keywords:
 - SDV WDK , NDIS
 - NDIS rules for SDV

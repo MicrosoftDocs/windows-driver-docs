@@ -1,7 +1,6 @@
 ---
 title: Requesting the Display of a Custom UI
 description: Requesting the Display of a Custom UI
-ms.assetid: 4b7366d9-e55a-4b24-b75f-a5f133b80ca7
 keywords:
 - custom UI WDK Native 802.11 IHV UI Extensions DLL , requesting display
 ms.date: 04/20/2017

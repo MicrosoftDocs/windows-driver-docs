@@ -1,7 +1,6 @@
 ---
 title: Driver Signing Policy
 description: Driver Signing Policy
-ms.assetid: c3ba672c-5bf2-4885-a85e-fa6d8a47ca54
 keywords:
 - driver signing WDK , kernel-mode code signing policy
 - signing drivers WDK , kernel-mode code signing policy

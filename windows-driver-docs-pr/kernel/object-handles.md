@@ -1,7 +1,6 @@
 ---
 title: Object Handles
 description: Object Handles
-ms.assetid: deeeb3c0-54e4-4727-ac43-6da79be515d7
 keywords: ["object handles WDK user-mode", "object handles WDK kernel", "handles WDK user-mode", "handles WDK kernel", "private object handles WDK", "shared object handles WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: Using GDI Functions in Print Processors
 description: Using GDI Functions in Print Processors
-ms.assetid: 2ad62308-ab42-4475-ac42-f753d5091251
 keywords:
 - EMF record playback WDK print processor
 - GDI functions WDK print processor

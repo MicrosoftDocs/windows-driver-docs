@@ -1,7 +1,6 @@
 ---
 title: amli find
 description: The amli find extension finds an ACPI namespace object.
-ms.assetid: bacb1be2-f079-49da-a8d2-1e9821b20ed3
 keywords: ["amli find Windows Debugging"]
 ms.date: 09/17/2018
 topic_type:

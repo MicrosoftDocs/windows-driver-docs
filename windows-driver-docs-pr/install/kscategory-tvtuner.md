@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_TVTUNER
 description: KSCATEGORY_TVTUNER
-ms.assetid: 44d9d407-a94c-40de-b749-af50bc5718f4
 keywords: ["KSCATEGORY_TVTUNER Device and Driver Installation"]
 topic_type:
 - apiref

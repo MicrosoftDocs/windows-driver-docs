@@ -1,7 +1,6 @@
 ---
 title: CancelJobResponse element
 description: The required CancelJobResponse operation element acknowledges a client's job cancelation request.
-ms.assetid: 754b6cf0-3581-4530-9ad6-6b3a19b540f1
 keywords: ["CancelJobResponse element Imaging Devices"]
 topic_type:
 - apiref

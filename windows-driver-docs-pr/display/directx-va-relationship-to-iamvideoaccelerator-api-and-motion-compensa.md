@@ -1,7 +1,6 @@
 ---
 title: DXVA in IAMVideoAccelerator API and Motion Compensation DDI
 description: DirectX VA Relationship to IAMVideoAccelerator API and Motion Compensation DDI
-ms.assetid: 8bfa198f-b29f-491f-8133-a1f3b41e0cbe
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , IAMVideoAccelerator
 - Video Acceleration WDK DirectX , IAMVideoAccelerator

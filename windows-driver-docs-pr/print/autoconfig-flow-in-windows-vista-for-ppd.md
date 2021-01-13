@@ -1,7 +1,6 @@
 ---
 title: Autoconfig Flow in Windows Vista for PPD
 description: Autoconfig Flow in Windows Vista for PPD
-ms.assetid: 60675cd3-fe98-4772-aa1b-a73529480d8a
 keywords:
 - PPD files WDK autoconfiguration , sequence of steps
 - in-box autoconfiguration support WDK printer , sequence of steps

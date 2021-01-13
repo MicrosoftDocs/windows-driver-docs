@@ -1,7 +1,6 @@
 ---
 title: Example code for displaying an app on a portrait device
 description: Here is code that you can use to make your app display correctly on a portrait device.
-ms.assetid: 5653E920-A068-4EBA-869E-0E2D65118B33
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Registering Context Types
 description: Registering Context Types
-ms.assetid: ddf03426-5c49-4621-b81d-59d1cb002ae9
 keywords:
 - contexts WDK file system minifilter , registering types
 - registering context types

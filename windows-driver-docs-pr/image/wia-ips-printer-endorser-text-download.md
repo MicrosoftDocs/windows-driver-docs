@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_TEXT\_DOWNLOAD
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_TEXT\_DOWNLOAD property is used to report whether the Imprinter/Endorser item supports download text data transfers. The WIA minidriver creates and maintains this property.
-ms.assetid: AEFF6C6F-8DA9-4AFF-8614-A1134C7C499C
 keywords: ["WIA_IPS_PRINTER_ENDORSER_TEXT_DOWNLOAD Imaging Devices"]
 topic_type:
 - apiref

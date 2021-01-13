@@ -1,7 +1,6 @@
 ---
 title: Get Injected Errors (Function Index 18)
 description: This function returns information about errors currently being injected.
-ms.assetid: 60D4E64C-ABB6-4B24-971F-594306D8C07C
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

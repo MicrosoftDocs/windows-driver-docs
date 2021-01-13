@@ -1,7 +1,6 @@
 ---
 title: Accelerated State Management
 description: Accelerated State Management
-ms.assetid: 276d3cdb-34bf-49e8-aae5-94315746c5ff
 keywords:
 - accelerated state management WDK Direct3D
 - states WDK Direct3D

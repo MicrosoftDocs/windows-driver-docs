@@ -1,7 +1,6 @@
 ---
 title: Audio Endpoints, Properties and Events
 description: Audio Endpoints, Properties and Events
-ms.assetid: ffc5834f-30c8-40b5-b57b-fe784331690c
 keywords:
 - audio events WDK
 - audio properties WDK

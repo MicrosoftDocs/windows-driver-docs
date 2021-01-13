@@ -1,7 +1,6 @@
 ---
 title: Cellular COM API design guide
 description: This section provides information on the cellular COM API.
-ms.assetid: 93aa20d0-d8c3-40ec-baf1-fab56ff5686d
 keywords:
 - Cellular COM API design guide network drivers
 ms.date: 11/07/2017

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_UICC_FILE_STATUS
 description: OID_WWAN_UICC_FILE_STATUS retrieves information about a specified UICC file.
-ms.assetid: 1FD3E140-1CE3-416C-8CB4-27012363B60B
 ms.date: 04/09/2019
 keywords: 
  -OID_WWAN_UICC_FILE_STATUS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Creating and Using a DirectX VA 2.0 Extension Device
 description: Creating and Using a DirectX VA 2.0 Extension Device
-ms.assetid: 650a77a5-67c3-4b11-93c8-24232905eb43
 keywords:
 - DirectX Video Acceleration WDK display , extended support
 - Video Acceleration WDK DirectX , extended support

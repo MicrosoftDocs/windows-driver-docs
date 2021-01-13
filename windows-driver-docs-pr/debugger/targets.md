@@ -1,7 +1,6 @@
 ---
 title: Targets
 description: Targets
-ms.assetid: 103d9b0a-2d51-404e-b8b9-513465427f7b
 keywords: ["Debugger Engine, targets"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

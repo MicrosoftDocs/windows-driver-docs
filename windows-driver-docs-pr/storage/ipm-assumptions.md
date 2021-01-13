@@ -1,7 +1,6 @@
 ---
 title: Idle Power Management Assumptions
 description: Idle Power Management Assumptions
-ms.assetid: 3c8d8121-9987-43d3-b573-4ca1d26fef7d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: How are flag values assigned
 description: How are flag values assigned
-ms.assetid: de74e2d9-0ebf-4125-9dbb-42f7755010f4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

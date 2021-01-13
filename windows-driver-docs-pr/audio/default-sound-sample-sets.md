@@ -1,7 +1,6 @@
 ---
 title: Default Sound Sample Sets
 description: Default Sound Sample Sets
-ms.assetid: 9ffcb7ef-173f-4db9-85e8-2af7eb64cb75
 keywords:
 - hardware acceleration WDK audio
 - miniport drivers WDK audio , kernel-mode hardware acceleration

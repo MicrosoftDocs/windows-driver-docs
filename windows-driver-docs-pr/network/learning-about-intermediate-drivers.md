@@ -1,7 +1,6 @@
 ---
 title: Learning About Intermediate Drivers
 description: Learning About Intermediate Drivers
-ms.assetid: 9ce2594a-cdae-4b3e-91f7-c61f860a325e
 keywords:
 - connectionless drivers WDK networking
 - connection-oriented drivers WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Convertible testing
 description: This topic describes tests for convertibles.
-ms.assetid: 8974F615-B979-4EF0-9E24-3AEA375516E4
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

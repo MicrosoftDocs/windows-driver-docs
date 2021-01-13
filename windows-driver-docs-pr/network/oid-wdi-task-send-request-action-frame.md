@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME
 description: OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME requests that the device sends an Action Frame Request to another device.
-ms.assetid: CAC86B50-BE85-4650-B6D3-738B4E960587
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_SEND_REQUEST_ACTION_FRAME Network Drivers Starting with Windows Vista

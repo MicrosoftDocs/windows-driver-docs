@@ -1,7 +1,6 @@
 ---
 title: DispatchReadWrite Using Buffered I/O
 description: DispatchReadWrite Using Buffered I/O
-ms.assetid: bb8ce47d-5722-4050-9492-bec154744597
 keywords: ["DispatchReadWrite routine", "dispatch routines WDK kernel , DispatchReadWrite routine", "read/write dispatch routines WDK kernel", "IRP_MJ_WRITE I/O function codes", "IRP_MJ_READ I/O function codes", "data transfers WDK kernel , read/write dispatch routines", "transferring data WDK kernel , read/write dispatch routines", "buffered I/O WDK kernel", "I/O WDK kernel , buffered"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

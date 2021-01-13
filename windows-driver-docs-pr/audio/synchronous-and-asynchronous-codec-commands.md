@@ -1,7 +1,6 @@
 ---
 title: Synchronous and Asynchronous Codec Commands
 description: Synchronous and Asynchronous Codec Commands
-ms.assetid: c37cc94d-37eb-4a3e-b7ae-63fed8827d21
 keywords:
 - TransferCodecVerbs
 - codec commands WDK audio

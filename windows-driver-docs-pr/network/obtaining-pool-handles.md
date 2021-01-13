@@ -1,7 +1,6 @@
 ---
 title: Obtaining Pool Handles
 description: Obtaining Pool Handles
-ms.assetid: 752b0d64-2ca3-4dc0-a6cd-642e96af1f8f
 keywords:
 - pool handles WDK networking
 - protocol drivers WDK networking , pool handles
@@ -21,9 +20,9 @@ ms.localizationpriority: medium
 
 The following NDIS pool allocation functions require a handle to allocate resources:
 
--   [**NdisAllocateNetBufferPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferpool)
+-   [**NdisAllocateNetBufferPool**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisallocatenetbufferpool)
 
--   [**NdisAllocateNetBufferListPool**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool)
+-   [**NdisAllocateNetBufferListPool**](/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisallocatenetbufferlistpool)
 
 NDIS 6.0 drivers obtain a handle as follows:
 

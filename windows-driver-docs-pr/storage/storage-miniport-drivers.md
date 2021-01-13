@@ -1,7 +1,6 @@
 ---
 title: Introduction to Storage Miniport Drivers
 description: Storage Miniport Drivers
-ms.assetid: 374d8370-02a9-43ab-ab47-27fa9f4051ea
 keywords:
 - storage miniport drivers WDK
 - miniport drivers WDK storage

@@ -1,7 +1,6 @@
 ---
 title: Callout Driver Programming Considerations
 description: Callout Driver Programming Considerations
-ms.assetid: e470202a-bc3b-41ac-8156-8aac8cd976cd
 keywords:
 - Windows Filtering Platform callout drivers WDK , programming considerations
 - callout drivers WDK Windows Filtering Platform , programming considerations
@@ -45,7 +44,7 @@ Because of the TCP stack's locking behavior, a callout at the transport layer ca
 
 ### Outgoing IP Header Alignment
 
-The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRENT\_MDL**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_current_mdl)([**NET\_BUFFER\_LIST\_FIRST\_NB**](/windows-hardware/drivers/ddi/ndis/nf-ndis-net_buffer_list_first_nb)(*netBufferList*))) must be pointer-aligned when one of the [packet injection functions](packet-injection-functions.md) is used to inject packet data into an outgoing path. Because an incoming packet's IP header MDL may be pointer-aligned, a callout must rebuild the IP header (if not already aligned) when injecting an incoming packet into an outgoing path.
+The MDL that describes the IP header in a net buffer list ([**NET\_BUFFER\_CURRENT\_MDL**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_current_mdl)([**NET\_BUFFER\_LIST\_FIRST\_NB**](/windows-hardware/drivers/ddi/nblaccessors/nf-nblaccessors-net_buffer_list_first_nb)(*netBufferList*))) must be pointer-aligned when one of the [packet injection functions](packet-injection-functions.md) is used to inject packet data into an outgoing path. Because an incoming packet's IP header MDL may be pointer-aligned, a callout must rebuild the IP header (if not already aligned) when injecting an incoming packet into an outgoing path.
 
 ## Related topics
 

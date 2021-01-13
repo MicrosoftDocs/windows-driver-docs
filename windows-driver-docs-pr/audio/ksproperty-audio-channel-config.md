@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG
 description: The KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the actual spatial placement of channels in the audio stream that a node outputs.
-ms.assetid: 5ce9bf4a-c84e-4d7e-8e75-896c88ec1a72
 keywords: ["KSPROPERTY_AUDIO_CHANNEL_CONFIG Audio Devices"]
 topic_type:
 - apiref

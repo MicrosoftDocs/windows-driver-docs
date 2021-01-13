@@ -1,7 +1,6 @@
 ---
 title: AVCSTRM\_OPEN
 description: AVCSTRM\_OPEN
-ms.assetid: d352615b-8ab8-40ac-b165-479686abd587
 keywords: ["AVCSTRM_OPEN Streaming Media Devices"]
 topic_type:
 - apiref

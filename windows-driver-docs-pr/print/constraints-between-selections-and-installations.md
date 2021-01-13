@@ -1,7 +1,6 @@
 ---
 title: Constraints between Selections and Installations
 description: Constraints between Selections and Installations
-ms.assetid: abb6004f-daae-4f28-b36c-102d0b8c9f55
 keywords:
 - installation constraints WDK Unidrv
 - selection constraints WDK Unidrv

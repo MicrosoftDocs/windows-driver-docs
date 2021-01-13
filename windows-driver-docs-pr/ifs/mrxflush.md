@@ -1,7 +1,6 @@
 ---
 title: MRxFlush routine
 description: The MRxFlush routine is called by RDBSS to request that a network mini-redirector write the contents of a file system object to storage. RDBSS issues this call in response to receiving an IRP\_MJ\_FLUSH\_BUFFERS request.
-ms.assetid: b133a91f-3f8c-45af-a02c-58d894a2fa2e
 keywords: ["MRxFlush routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Supporting Deferred Contexts
 description: Supporting Deferred Contexts
-ms.assetid: eb217c92-0c71-4379-8004-9c3dda0a9630
 keywords:
 - Direct3D version 11 WDK Windows 7 display , deferred contexts
 - Direct3D version 11 WDK Windows Server 2008 R2 display , deferred contexts

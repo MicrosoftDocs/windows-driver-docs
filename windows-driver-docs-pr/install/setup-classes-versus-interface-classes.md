@@ -1,7 +1,6 @@
 ---
 title: Windows Classes vs. Interface Classes
 description: Windows Classes vs.
-ms.assetid: 3df99388-6fcf-44bb-a6c9-99281a8879d7
 keywords:
 - device interface classes WDK device installations
 - device setup classes WDK device installations

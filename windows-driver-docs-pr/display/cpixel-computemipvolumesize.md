@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeMipVolumeSize method
 description: The CPixel ComputeMipVolumeSize method determines the amount of memory required to allocate a mipmap texture volume.
-ms.assetid: f759421a-a41e-4705-8a18-124f7efb059b
 keywords: ["ComputeMipVolumeSize method Display Devices", "ComputeMipVolumeSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeMipVolumeSize method"]
 topic_type:
 - apiref
