@@ -45,7 +45,7 @@ A value that describes whether the device should be enabled to offload group tem
 <a href="" id="-eee"></a>**\*EEE**  
 A value that describes whether the device should enable IEEE 802.3az Energy-Efficient Ethernet.
 
-The columns in the table at the end of this topic describe the following attributes for enumeration keywords :
+The columns in the table at the end of this topic describe the following attributes for enumeration keywords:
 
 <a href="" id="subkeyname"></a>SubkeyName  
 The name of the keyword that you must specify in the INF file and that appears in the registry.
