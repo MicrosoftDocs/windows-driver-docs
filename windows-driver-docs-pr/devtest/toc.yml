@@ -2008,7 +2008,18 @@
 # Auto-expanded node
     items: 
     - name: "CodeQL and Static Tools Logo Test"
-      href: static-tools-and-codeql.md  
+      href: static-tools-and-codeql.md
+    - name: "Supplemental Windows Driver CodeQL Queries"
+# Auto-expanded node
+      items: 
+      - name: "Supplemental Windows Driver CodeQL Queries"
+        href: codeql-windows-driver-rules.md
+      - name: "Probable UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-probableuseafterfree.md
+      - name: "UseAfterFree (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-useafterfree.md
+      - name: "WdkDeprecatedApi (Windows Driver CodeQL Query)"
+        href: codeql-windows-driver-wdkdeprecatedapi.md
   - name: "WDF Verifier Control Application"
 # Auto-expanded node
     items: 

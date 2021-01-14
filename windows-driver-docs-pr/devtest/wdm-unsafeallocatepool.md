@@ -55,7 +55,7 @@ RtlZeroMemory(Allocation, 100);
 PVOID Allocation = ExAllocatePool2(POOL_FLAG_PAGED, 100, 'abcd');
 ```
 
-The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument. Update any associated code to use the new [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument.
+The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](../kernel/pool_flags.md) argument. Update any associated code to use the new [POOL_FLAGS](../kernel/pool_flags.md) argument.
 
 ### ExAllocatePoolWithQuota/ExAllocatePoolWithQuotaTag
 
