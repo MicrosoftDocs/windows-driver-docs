@@ -1,8 +1,8 @@
 ---
-title: UnSafeAllocatePoolrule (wdm)
-description: Learn about the UnSafeAllocatePoolrule (wdm). 
-ms.date: 01/12/2021
-keywords: ["UnSafeAllocatePoolrule (wdm)"]
+title: UnSafeAllocatePool rule (wdm)
+description: Learn about the UnSafeAllocatePool rule (wdm). 
+ms.date: 01/14/2021
+keywords: ["UnSafeAllocatePool rule (wdm)"]
 topic_type:
 - apiref
 api_name:
@@ -12,7 +12,7 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# UnSafeAllocatePoolrule (wdm)
+# UnSafeAllocatePool rule (wdm)
 
 The **UnSafeAllocatePool** rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory.
 
