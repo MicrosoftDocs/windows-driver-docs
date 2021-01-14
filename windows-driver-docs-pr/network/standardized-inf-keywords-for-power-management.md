@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 
 The power management standardized keywords are defined in the device driver INF file. The operating system reads these standardized keywords and adjusts the current power management capabilities of the device. 
 
-Both traditional NDIS miniport device drivers and [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) client drivers use these power management keywords. However, some keywords are used exclusively by NDIS drivers while others are used exclusively by NetAdapterCx drivers as the following sections describe:
+Both [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) client drivers and traditional NDIS miniport device drivers use these power management keywords. However, some keywords are used exclusively by NetAdapterCx drivers while others are used exclusively by NDIS drivers as the following sections describe:
 
-* [Power management keywords for NDIS and NetAdapterCx](#power-management-keywords-for-ndis-and-netadaptercx)
-
-* [Power management keywords exclusive to NDIS](#power-management-keywords-exclusive-to-ndis)
+* [Power management keywords for NetAdapterCx and NDIS](#power-management-keywords-for-netadaptercx-and-ndis)
 
 * [Power management keywords exclusive to NetAdapterCx](#power-management-keywords-exclusive-to-netadaptercx)
+
+* [Power management keywords exclusive to NDIS](#power-management-keywords-exclusive-to-ndis)
 
 The traditional NDIS miniport device driver should always indicate the device's hardware power management capabilities to NDIS in the [**NDIS\_MINIPORT\_ADAPTER\_GENERAL\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes) structure.
 
@@ -23,9 +23,9 @@ The traditional NDIS miniport device driver should always indicate the device's 
 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
-## Power management keywords for NDIS and NetAdapterCx
+## Power management keywords for NetAdapterCx and NDIS
 
-The following standardized INF keywords are defined to enable or disable support for power management features of network adapters. They are used by both traditional NDIS miniport device drivers and NetAdapterCx client drivers.
+The following standardized INF keywords are defined to enable or disable support for power management features of network adapters. They are used by both NetAdapterCx client drivers and traditional NDIS miniport device drivers.
 
 <a href="" id="-wakeonpattern"></a>**\*WakeOnPattern**  
 A value that describes whether the device should be enabled to wake the computer when a network packet matches a specified pattern.
@@ -77,6 +77,24 @@ The following table describes the possible INF entries for the power management 
 |***EEE**|Energy-Efficient Ethernet|0|Disabled|
 |||1 (Default)|Enabled|
 
+## Power management keywords exclusive to NetAdapterCx
+
+The following power management keywords are for NetAdapterCx client driver use only. 
+
+In addition to the standard WDF process for giving user control over the device idle and wake behavior as described in [User Control of Device Idle and Wake Behavior](../wdf/user-control-of-device-idle-and-wake-behavior.md), NetAdapterCx also defines a network device specific standardized INF keyword for allowing more control.
+
+**\*IdleRestriction**  
+If a network device has both idle power down and wake on packet filter capabilities, this setting allows the user to decide when the device idle power down can happen.
+
+**\*IdleRestriction** is an enumeration standardized INF keyword and has the following attributes:
+
+The following table describes the possible INF entries for the **\*IdleRestriction** keyword.
+
+|SubkeyName|ParamDesc|Value|EnumDesc|
+|--- |--- |--- |--- |
+|**_*IdleRestriction_**|idle power down restriction|0 (Default)|No Restriction|
+|||1|Only idle when user is not present|
+
 
 ## Power management keywords exclusive to NDIS
 
@@ -100,22 +118,4 @@ The following table describes the possible INF entries for the power management 
 |**_DeviceSleepOnDisconnect_**|Device sleep on disconnect|0|Disabled|
 |||1 (Default)|Enabled|
  
-
-## Power management keywords exclusive to NetAdapterCx
-
-The following power management keywords are for NetAdapterCx client driver use only. 
-
-In addition to the standard WDF process for giving user control over the device idle and wake behavior as described in [User Control of Device Idle and Wake Behavior](../wdf/user-control-of-device-idle-and-wake-behavior.md), NetAdapterCx also defines a network device specific standardized INF keyword for allowing more control.
-
-**\*IdleRestriction**  
-If a network device has both idle power down and wake on packet filter capabilities, this setting allows the user to decide when the device idle power down can happen.
-
-**\*IdleRestriction** is an enumeration standardized INF keyword and has the following attributes:
-
-The following table describes the possible INF entries for the **\*IdleRestriction** keyword.
-
-|SubkeyName|ParamDesc|Value|EnumDesc|
-|--- |--- |--- |--- |
-|**_*IdleRestriction_**|idle power down restriction|0 (Default)|No Restriction|
-|||1|Only idle when user is not present|
 
