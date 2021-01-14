@@ -81,7 +81,7 @@ All of these usages require opening a command prompt or Powershell console and n
 ## Frontline Protocol Analysis System operation
 
 ### Prerequisites:
-1. Install [Frontline Protocol Analysis System](http://www.fte.com/) on the
+1. Install [Frontline Protocol Analysis System](https://www.fte.com/products/ProtocolExpert.aspx) on the
     machine to be traced.
 
 ### Usage:

@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 ---
 # Bluetooth ETL parser (BTETLParse.exe)
 
-The Bluetooth ETL parse tool parses a provided ETL file and extracts hci traces.
+The Bluetooth ETL parse tool parses a provided ETL file containing compressed Bluetooth data and extracts hci traces.
 
 This tool is meant for parsing ETL files collected using the [Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
@@ -22,7 +22,7 @@ Usage: btetlparse [-cfa <output_cfa_filename>] [-hci <output_hci_filename>]
 
     -cfa through -pcapng flags parse the etl file into different file types.
 
-    -cfa <filename>         Frontline Protocol Analysis System (http://www.fte.com/) is used
+    -cfa <filename>         Frontline Protocol Analysis System (https://www.fte.com/products/ProtocolExpert.aspx) is used
                                 for displaying reading/displaying this information.
 
     -hci <filename>         This file type is mostly for scripts to consume and Notepad can open it.
