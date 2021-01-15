@@ -325,25 +325,25 @@ The queries that Microsoft recommends running on *all* driver source code are:
 
 | ID                       | Location   |
 | ------------------------ | ---------- |
-| [cpp/too-few-arguments](https://help.semmle.com/wiki/display/CCPPOBJ/Call+to+function+with+fewer+arguments+than+declared+parameters)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* |
-| [cpp/bad-additionoverflow-check](https://help.semmle.com/wiki/display/CCPPOBJ/Bad+check+for+overflow+of+integer+addition)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* |
-| [cpp/pointer-overflowcheck](https://help.semmle.com/wiki/display/CCPPOBJ/Pointer+overflow+check)   | *cpp/ql/src/Likely Bugs/Memory Management/PointerOverflow.ql* | 
-| [cpp/hresult-booleanconversion](https://help.semmle.com/wiki/display/CCPPOBJ/Cast+between+HRESULT+and+a+Boolean+type)   | *cpp/ql/src/Security/CWE/CWE-253/HResultBooleanConversion.ql* | 
-| [cpp/incorrect-string-typeconversion](https://help.semmle.com/wiki/pages/viewpage.action?pageId=29392920)   | *cpp/ql/src/Security/CWE/CWE-704/WcharCharConversion.ql* |
-| [cpp/integermultiplication-cast-to-long](https://help.semmle.com/wiki/display/CCPPOBJ/Multiplication+result+converted+to+larger+type)   | *cpp/ql/src/Likely Bugs/Arithmetic/IntMultToLong.ql* |
-| [cpp/signed-overflowcheck](https://help.semmle.com/wiki/display/CCPPOBJ/Signed+overflow+check)   | *cpp/ql/src/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* |
-| [cpp/upcast-array-pointerarithmetic](https://help.semmle.com/wiki/display/CCPPOBJ/Upcast+array+used+in+pointer+arithmetic)   | *cpp/ql/src/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* |
-| [cpp/comparison-withwider-type](https://help.semmle.com/wiki/display/CCPPOBJ/Comparison+of+narrow+type+with+wide+type+in+loop+condition)   | *cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql* |
-| [cpp/suspicious-add-sizeof](https://help.semmle.com/wiki/display/CCPPOBJ/Suspicious+add+with+sizeof)   | *cpp/ql/src/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* |
-| [cpp/potentiallydangerous-function](https://help.semmle.com/wiki/display/CCPPOBJ/Use+of+potentially+dangerous+function)   | *cpp/ql/src/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* |
-| [cpp/incorrect-notoperator-usage](https://help.semmle.com/wiki/display/CCPPOBJ/Incorrect+%27not%27+operator+usage)   | *cpp/ql/src/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | 
-| [cpp/offset-use-beforerange-check](https://help.semmle.com/wiki/display/CCPPOBJ/Array+offset+used+before+range+check)  | *cpp/ql/src/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql*   |
-| [cpp/suspicious-sizeof](https://help.semmle.com/wiki/display/CCPPOBJ/Suspicious+add+with+sizeof)   | *cpp/ql/src/Likely Bugs/Memory Management/SuspiciousSizeof.ql* |
-| [cpp/uninitialized-local](https://help.semmle.com/wiki/display/CCPPOBJ/Potentially+uninitialized+local+variable)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* |
-| [cpp/unterminatedvariadic-call](https://help.semmle.com/wiki/display/CCPPOBJ/Call+to+function+with+fewer+arguments+than+declared+parameters)   | *cpp/ql/src/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* |
-| [cpp/suspicious-pointerscaling](https://help.semmle.com/wiki/display/CCPPOBJ/Suspicious+pointer+scaling)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScaling.ql* |
-| [cpp/suspicious-pointerscaling-void](https://help.semmle.com/wiki/display/CCPPOBJ/Suspicious+pointer+scaling+to+void)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* |
-| [cpp/conditionally-uninitialized-variable](https://help.semmle.com/wiki/display/CCPPOBJ/Conditionally+uninitialized+variable)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | 
+| [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* |
+| [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* |
+| [cpp/pointer-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-pointer-overflow-check/)   | *cpp/ql/src/Likely Bugs/Memory Management/PointerOverflow.ql* | 
+| [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)   | *cpp/ql/src/Security/CWE/CWE-253/HResultBooleanConversion.ql* | 
+| [cpp/incorrect-string-type-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-incorrect-string-type-conversion/)   | *cpp/ql/src/Security/CWE/CWE-704/WcharCharConversion.ql* |
+| [cpp/integer-multiplication-cast-to-long](https://codeql.github.com/codeql-query-help/cpp/cpp-integer-multiplication-cast-to-long/)   | *cpp/ql/src/Likely Bugs/Arithmetic/IntMultToLong.ql* |
+| [cpp/signed-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-signed-overflow-check/)   | *cpp/ql/src/Likely Bugs/Arithmetic/SignedOverflowCheck.ql* |
+| [cpp/upcast-array-pointer-arithmetic](https://codeql.github.com/codeql-query-help/cpp/cpp-upcast-array-pointer-arithmetic/)   | *cpp/ql/src/Likely Bugs/Conversion/CastArrayPointerArithmetic.ql* |
+| [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)   | *cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql* |
+| [cpp/suspicious-add-sizeof](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/)   | *cpp/ql/src/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql* |
+| [cpp/potentially-dangerous-function](https://codeql.github.com/codeql-query-help/cpp/cpp-potentially-dangerous-function/)   | *cpp/ql/src/Security/CWE/CWE-676/PotentiallyDangerousFunction.ql* |
+| [cpp/incorrect-not-operator-usage](https://codeql.github.com/codeql-standard-libraries/cpp/Likely%20Bugs/Likely%20Typos/IncorrectNotOperatorUsage.ql/module.IncorrectNotOperatorUsage.html)   | *cpp/ql/src/Likely Bugs/Likely Typos/IncorrectNotOperatorUsage.ql* | 
+| [cpp/offset-use-before-range-check](https://help.semmle.com/wiki/display/CCPPOBJ/Array+offset+used+before+range+check)  | *cpp/ql/src/Best Practices/Likely Errors/OffsetUseBeforeRangeCheck.ql*   |
+| [cpp/suspicious-add-sizeof](https://codeql.github.com/codeql-query-help/cpp/cpp-suspicious-add-sizeof/)   | *cpp/ql/src/Likely Bugs/Memory Management/SuspiciousSizeof.ql* |
+| [cpp/uninitialized-local](https://codeql.github.com/codeql-standard-libraries/cpp/Likely%20Bugs/Memory%20Management/UninitializedLocal.ql/module.UninitializedLocal.html)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* |
+| [cpp/unterminated-variadic-call](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-121/UnterminatedVarargsCall.ql/module.UnterminatedVarargsCall.html)   | *cpp/ql/src/Security/CWE/CWE-121/UnterminatedVarargsCall.ql* |
+| [cpp/suspicious-pointer-scaling](https://help.semmle.com/wiki/display/CCPPOBJ/Suspicious+pointer+scaling)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScaling.ql* |
+| [cpp/suspicious-pointer-scaling-void](https://help.semmle.com/wiki/display/CCPPOBJ/Suspicious+pointer+scaling+to+void)   | *cpp/ql/src/Security/CWE/CWE-468/IncorrectPointerScalingVoid.ql* |
+| [cpp/conditionally-uninitialized-variable](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql/module.ConditionallyUninitializedVariable.html)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | 
 | [cpp/use-after-free](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-useafterfree)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree\UseAfterFree.ql* |
 | [cpp/probable-use-after-free](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-probableuseafterfree)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Likely Bugs/Memory Management/UseAfterFree/ProbableUseAfterFree.ql* |
 | [cpp/windows/wdk/deprecated-api](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* |
@@ -356,14 +356,14 @@ The subset of queries below are currently deemed as **"Must-Fix"** for WHCP cert
 
 | ID            | Location   |
 | ------------- | ---------- |
-| [cpp/too-few-arguments](https://help.semmle.com/wiki/display/CCPPOBJ/Call+to+function+with+fewer+arguments+than+declared+parameters)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* |
-| [cpp/bad-additionoverflow-check](https://help.semmle.com/wiki/display/CCPPOBJ/Bad+check+for+overflow+of+integer+addition)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* |
-| [cpp/pointer-overflowcheck](https://help.semmle.com/wiki/display/CCPPOBJ/Pointer+overflow+check)   | *cpp/ql/src/Likely Bugs/Memory Management/PointerOverflow.ql* |
-| [cpp/hresult-booleanconversion](https://help.semmle.com/wiki/display/CCPPOBJ/Cast+between+HRESULT+and+a+Boolean+type)   | *cpp/ql/src/Security/CWE/CWE-253/HResultBooleanConversion.ql* | 
-| [cpp/incorrect-string-typeconversion](https://help.semmle.com/wiki/pages/viewpage.action?pageId=29392920)   | *cpp/ql/src/Security/CWE/CWE-704/WcharCharConversion.ql* | 
-| [cpp/conditionally-uninitialized-variable](https://help.semmle.com/wiki/display/CCPPOBJ/Conditionally+uninitialized+variable)   | */cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | 
-| [cpp/comparison-withwider-type](https://help.semmle.com/wiki/display/CCPPOBJ/Comparison+of+narrow+type+with+wide+type+in+loop+condition)   | *cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql* |
-| [cpp/uninitialized-local](https://help.semmle.com/wiki/display/CCPPOBJ/Potentially+uninitialized+local+variable)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* |
+| [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* |
+| [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* |
+| [cpp/pointer-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-pointer-overflow-check/)   | *cpp/ql/src/Likely Bugs/Memory Management/PointerOverflow.ql*|
+| [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)   | *cpp/ql/src/Security/CWE/CWE-253/HResultBooleanConversion.ql* | 
+| [cpp/incorrect-string-type-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-incorrect-string-type-conversion/)   | *cpp/ql/src/Security/CWE/CWE-704/WcharCharConversion.ql* | 
+| [cpp/conditionally-uninitialized-variable](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql/module.ConditionallyUninitializedVariable.html)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | 
+| [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)   | *cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql*  |
+| [cpp/uninitialized-local](https://codeql.github.com/codeql-standard-libraries/cpp/Likely%20Bugs/Memory%20Management/UninitializedLocal.ql/module.UninitializedLocal.html)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* |
 | [cpp/windows/wdk/deprecated-api](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* |
 
 These queries are a part of the *windows_driver_mustfix.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
