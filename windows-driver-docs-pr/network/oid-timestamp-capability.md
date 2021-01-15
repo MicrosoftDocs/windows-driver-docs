@@ -27,4 +27,6 @@ NDIS will handle this OID for the miniport driver based on the information the m
 
 [OID_TIMESTAMP_CURRENT_CONFIG](oid-timestamp-current-config.md)
 
+[OID_TIMESTAMP_GET_CROSSTIMESTAMP](oid-timestamp-get-crosstimestamp.md)
+
 [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)

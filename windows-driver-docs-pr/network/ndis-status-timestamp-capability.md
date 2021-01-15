@@ -11,15 +11,26 @@ ms.localizationpriority: medium
 
 Miniport drivers use the **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication to report the NIC's hardware timestamping capabilities and the miniport driver's software timestamping capabilities to NDIS and overlying drivers.
 
-This status indication represents the timestamping capabilities of the hardware and miniport driver, not which capability is currently enabled or disabled. See [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md)(ADD LINK) for more information on reporting current timestamping capabilities.
+This status indication represents the timestamping capabilities of the hardware and miniport driver, not which capability is currently enabled or disabled. For more information on reporting current timestamping capabilities, see [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md).
 
 ## Remarks
 
-During initialization, the miniport driver should indicate its hardware and software timestamp capabilities from within its [**MiniportInitializeEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function.
+During initialization, the miniport driver should indicate its hardware and software timestamp capabilities from within its [**MiniportInitializeEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. The driver should:
 
-Miniport drivers generate **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indications by calling the [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) function. The **StatusBuffer** field of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure should point to an [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure. For more information on how to set the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure, see [**Reporting NDIS timestamping capabilities](ADD LINK)
+1. Initialize an [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure with the NIC's hardware and software timestamp capabilities.
+The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  as follows:
+    * The miniport driver uses the **TimestampFlags** field to indicate the hardware and software timestamp capabilities of the NIC hardware and miniport.
 
-The miniport driver must also generate the **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication whenever it detects a change in underlying hardware capabilities.
+    * The **CrossTimestamp** field should be set to **TRUE** if hardware cross timestamps are supported or **FALSE** if they are not.
+
+    * The **HardwareClockFrequencyHz** field should contain the nominal operating frequency of the hardware clock used for timestamping by the NIC. This data may be used to display the nominal clock frequency to end users for informational purposes.
+
+    * The **Type** field in the **Header** field should be set to **NDIS_OBJECT_TYPE_DEFAULT** and the **Revision** to **NDIS_TIMESTAMP_CAPABILITIES_REVISION_1**.
+
+1. Generate an **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication by calling [**NdisMIndicateStatusEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatestatusex) to report the timestamping capabilities. The **StatusBuffer** field of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure should point to the initialized **NDIS_TIMESTAMP_CAPABILITIES** structure.
+
+The miniport driver must also generate the [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md) status indication whenever it detects a change in underlying hardware capabilities.
+
 
 ## Requirements
 
@@ -28,6 +39,8 @@ The miniport driver must also generate the **NDIS_STATUS_TIMESTAMP_CAPABILITY** 
 **Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
+
+[Reporting NDIS timestamping capabilities and current configuration](reporting-ndis-timestamping-capabilities.md)
 
 [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities)
 
