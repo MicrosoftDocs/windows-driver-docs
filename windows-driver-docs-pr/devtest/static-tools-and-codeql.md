@@ -115,6 +115,10 @@ codeql database create --help
 
 In this example, CodeQL uses the MSBuild compiler to process the C++ code to prepare it to be analyzed.
 
+
+> [!NOTE]
+> CodeQL does not require MSBuild or Visual Studio to be used. See [supported languges and frameworks](https://codeql.github.com/docs/codeql-overview/supported-languages-and-frameworks/) for a list of which compilers are supported.
+
 ### Example
 
 Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](../develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned.
