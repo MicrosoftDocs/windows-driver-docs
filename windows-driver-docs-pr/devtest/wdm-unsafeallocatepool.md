@@ -1,7 +1,7 @@
 ---
 title: UnSafeAllocatePool rule (wdm)
 description: Learn about the UnSafeAllocatePool rule (wdm). 
-ms.date: 01/14/2021
+ms.date: 01/15/2021
 keywords: ["UnSafeAllocatePool rule (wdm)"]
 topic_type:
 - apiref
@@ -32,7 +32,7 @@ This rule is available in preview WDK builds 20236 and above.
 
 ## Driver updates for versions of Windows 10, version 2004 and later
 
-If you are building a driver that targets versions of Windows after Windows 10, version 2004, and later, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
+If you are building a driver that targets Windows 10, version 2004 and later, use the replacement APIs [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3) instead.
 
 | Old API                       | New API                                                                     |
 |-------------------------------|-----------------------------------------------------------------------------|
