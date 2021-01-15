@@ -1,34 +1,24 @@
 ---
-title: UnSafeAllocatePool rule (wdm)
-description: Learn about the UnSafeAllocatePool rule (wdm). 
-ms.date: 01/15/2021
-keywords: ["UnSafeAllocatePool rule (wdm)"]
-topic_type:
-- apiref
-api_name:
-- UnSafeAllocate
-api_type:
-- NA
+title: Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
+description: Learn about Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
+keywords: ["memory management WDK kernel , system-allocated space", "system-allocated space WDK kernel", "allocating system-space memory", "allocating I/O buffer memory", "ExAllocatePool3", "ExAllocatePool2"]
+ms.date: 01/11/2021
 ms.localizationpriority: medium
 ---
 
-# UnSafeAllocatePool rule (wdm)
+# Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3
 
-The **UnSafeAllocatePool** rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory.
-
-The UnsafeAllocatePool rule specifies that the driver should not call:
+The following DDIs are deprecated starting with  Windows 10, version 2004 and should be replaced as described in this topic.
 
 [ExAllocatePool](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)
 
 [ExAllocatePoolWithTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
-[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota) 
+[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)
 
 [ExAllocatePoolWithQuotaTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
-[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority) 
-
-This rule is available in preview WDK builds 20236 and above.
+[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
 
 ## Driver updates for versions of Windows 10, version 2004 and later
 
@@ -55,7 +45,7 @@ RtlZeroMemory(Allocation, 100);
 PVOID Allocation = ExAllocatePool2(POOL_FLAG_PAGED, 100, 'abcd');
 ```
 
-The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](../kernel/pool_flags.md) argument. Update any associated code to use the new [POOL_FLAGS](../kernel/pool_flags.md) argument.
+The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument. Update any associated code to use the new [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument.
 
 ### ExAllocatePoolWithQuota/ExAllocatePoolWithQuotaTag
 
@@ -88,7 +78,7 @@ PVOID Allocation = ExAllocatePool3(POOL_FLAG_PAGED, 100, 'abcd', &params, 1);
 
 If you are building a driver that targets versions of Windows prior to Windows 10, version 2004, you must use the following force inline wrapper functions.
 
-You must also #define POOL_ZERO_DOWN_LEVEL_SUPPORT and call [ExInitializeDriverRuntime](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializedriverruntime) during driver initialization before calling the pool allocation functions.
+You must also #define POOL_ZERO_DOWN_LEVEL_SUPPORT and call [ExInitializeDriverRuntime](/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializedriverruntime) during driver initialization, before calling the pool allocation functions.
 
 ### Locally defined inline functions
 
@@ -172,17 +162,22 @@ ExInitializeDriverRuntime(0);
 PVOID Allocation = ExAllocatePoolZero(PagedPool, 100, 'abcd');
 ```
 
-**Driver model: WDM, Generic**
+## Driver verifier UnSafeAllocatePool rules
 
-## How to test
+The driver verifier [UnSafeAllocatePool](/windows-hardware/drivers/devtest/kmdf-unsafeallocatepool) rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
 
-At compile time:
+## See Also
 
-1. Run [Static Driver Verifier](./static-driver-verifier.md) and specify the **UnSafeAllocatePool** rule.
-2. Use the following steps (found in [Using Static Driver Verifier to Find Defects in Windows Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md)) to run an analysis of your code:
+[ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) 
 
-    - [Prepare your code (use role type declarations).](./using-static-driver-verifier-to-find-defects-in-drivers.md#preparing-your-source-code)
-    - [Run Static Driver Verifier.](./using-static-driver-verifier-to-find-defects-in-drivers.md#running-static-driver-verifier)
-    - [View and analyze the results.](./using-static-driver-verifier-to-find-defects-in-drivers.md#viewing-and-analyzing-the-results)
+[ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3)
 
-For more information, see [Using Static Driver Verifier to Find Defects in Drivers](./using-static-driver-verifier-to-find-defects-in-drivers.md).
+[ExAllocatePool](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool)
+
+[ExAllocatePoolWithTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
+
+[ExAllocatePoolWithQuota](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)
+
+[ExAllocatePoolWithQuotaTag](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
+
+[ExAllocatePoolWithTagPriority](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority)
