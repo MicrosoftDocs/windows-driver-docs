@@ -87,7 +87,7 @@ conceptualContent:
         - text: Test for performance and compatibility
           url: /windows-hardware/test
           itemType: overview
-        - text: HLK
+        - text: Test with the Hardware Lab Kit (HLK)
           url: /windows-hardware/test/hlk
           itemType: overview
 
