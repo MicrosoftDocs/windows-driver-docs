@@ -15,9 +15,9 @@ If you are building applications or drivers for Windows 10, you only need to rea
 Starting in Visual Studio 2015, the Universal C Runtime (UCRT) encompasses the C runtime. The other pieces required for a complete program (C/C++ Language Features, C++ Library) are provided by Visual Studio in the VC++ Redistributable. To avoid a runtime redistribution requirement, those pieces are statically linked.
 
 > [!WARNING]
-> When building a user-mode driver project in Visual Studio, if you set **PlatformToolset**  to `WindowsUserModeDriver10.0`, the toolset ignores any runtime library specified in the project and instead links statically against the VC++ Runtime and dynamically against the UCRT.  This hybrid linking behavior cannot be overridden.
+> When building a user-mode driver project in Visual Studio, if you set **PlatformToolset**  to `WindowsUserModeDriver10.0`, the toolset ignores any runtime library specified in the project and instead links statically against the VC++ Runtime and dynamically against the UCRT.  When using this toolset, this hybrid linking behavior cannot be reconfigured.
 
-If you need to make modifications (for example include another DLL), use the following procedure to reconfigure hybrid linking:
+If you're not using the `WindowsUserModeDriver10.0` toolset, use the following procedure to make modifications (for example include another DLL):
 
 1. Set to link statically in general: **Properties > C/C++ > Code Generation > Runtime Library = Multi-threaded (/MT)**
 2. Remove the statically linked UCRT: **Properties > Linker > Input > Ignore Specific Default Libraries += libucrt.lib**
