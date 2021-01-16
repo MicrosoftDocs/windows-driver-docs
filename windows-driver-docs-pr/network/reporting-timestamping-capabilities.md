@@ -1,11 +1,11 @@
 ---
-title: Reporting NDIS timestamping capabilities and current configuration
+title: Reporting timestamping capabilities and current configuration
 description: Miniport drivers use status indications to report the timestamping capabilities and their current configuration to the operating system.
 ms.date: 01/31/2021
 ms.localizationpriority: medium
 ---
 
-# Reporting NDIS timestamping capabilities and current configuration
+# Reporting timestamping capabilities and current configuration
 
 Miniport drivers need to indicate the NIC's hardware timestamping capabilities and the miniport driver's software timestamping capabilities to NDIS and overlying drivers. They also need to report the which capabilities are currently enabled or disabled. Miniport drivers use status indications to report the timestamping capabilities and their current configuration to the operating system.
 
@@ -23,4 +23,4 @@ If the miniport driver indicates a change in the NIC’s hardware timestamping c
 
 The miniport driver must also generate the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication whenever it detects a change in the current timestamping configuration.
 
-The support for NDIS timestamping capabilities is enabled or disabled through the setting of the **\*PtpHardwareTimestamp** and **\*SoftwareTimestamp** standardized INF keywords. For more information, see [**Standardized INF Keywords for NDIS packet timestamping**](standardized-inf-keywords-for-ndis-packet-timestamping.md).
+The support for timestamping capabilities is enabled or disabled through the setting of the **\*PtpHardwareTimestamp** and **\*SoftwareTimestamp** standardized INF keywords. For more information, see [**Standardized INF Keywords for NDIS packet timestamping**](standardized-inf-keywords-for-ndis-packet-timestamping.md).

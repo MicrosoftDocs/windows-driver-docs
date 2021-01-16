@@ -40,7 +40,7 @@ The miniport driver must also generate the [**NDIS_STATUS_TIMESTAMP_CAPABILITY**
 
 ## See also
 
-[Reporting NDIS timestamping capabilities and current configuration](reporting-ndis-timestamping-capabilities.md)
+[Reporting timestamping capabilities and current configuration](reporting-timestamping-capabilities.md)
 
 [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities)
 
