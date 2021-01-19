@@ -1163,7 +1163,7 @@
   - name: "NDIS packet timestamping"
     items: 
     - name: "Overview of NDIS packet timestamping"
-      href: overview-of-ndis-packet-timestamping.mdreporting-timestamping-capabilities.md
+      href: overview-of-ndis-packet-timestamping.md
     - name: "Reporting timestamping capabilities"
       href: reporting-timestamping-capabilities.md
     - name: "NDIS packet timestamping status indications"
