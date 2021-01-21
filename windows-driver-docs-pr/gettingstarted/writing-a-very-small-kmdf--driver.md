@@ -60,6 +60,10 @@ Now that you've created your empty Hello World project and added the Driver.c so
     #include <wdf.h>
     ```
 
+    > [!TIP]
+    > If you can't add `Ntddk.h`, open **Configuration -> C/C++ -> General -> Additional Include Directories** and add `C:\Program Files (x86)\Windows Kits\10\Include\<build#>\km`, replacing `<build#>` with the appropriate directory in your WDK installation.
+    > 
+
     [Ntddk.h](/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
 
 2. Next, provide declarations for the two callbacks you'll use:
