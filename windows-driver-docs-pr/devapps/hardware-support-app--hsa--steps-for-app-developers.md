@@ -37,7 +37,7 @@ To create a Microsoft Store account, go to the [UWP apps sign up page](https://g
 
 If your app will communicate with a driver, you can use [Windows.Devices.Custom](/uwp/api/windows.devices.custom), which is part of the WinRT API, and therefore available in JavaScript, C#, and C++.
 
-If your app will communicate with an NT service, then you need to use the RPC APIs.  Because RPC APIs are Win32 APIs that are not available in WinRT, you need to either use C++, or wrap the RPC calls using .NET interop (PInvoke).  For more info, see [Calling Native Functions from Managed Code](/cpp/dotnet/calling-native-functions-from-managed-code).
+If your app will communicate with an NT service, then you need to use the RPC APIs.  Because RPC APIs are Win32 APIs that are not available in WinRT, you need to either use C++, C++/CLI, or wrap the RPC calls using .NET interop (PInvoke).  For more info, see [Calling Native Functions from Managed Code](/cpp/dotnet/calling-native-functions-from-managed-code) and [.NET programming with C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp?view=msvc-160).
 
 ## Contact the custom capability owner
 
