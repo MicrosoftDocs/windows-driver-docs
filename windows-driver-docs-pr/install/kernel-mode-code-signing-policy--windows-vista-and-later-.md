@@ -81,6 +81,8 @@ In some cases, you may want to distribute a driver internally within a company r
 7. If the submission is approved, the Hardware Dev Center returns the driver with a Microsoft signature.
 8. Distribute the driver internally.
 
+This procedure applies to all supported versions of windows.
+
 ## See Also
 
 * [Installing an Unsigned Driver Package during Development and Test](installing-an-unsigned-driver-during-development-and-test.md)
