@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID_TIMESTAMP_GET_CROSSTIMESTAMP
 
-An overlying driver issues an object identifier (OID) query request of OID_TIMESTAMP_GET_CROSSTIMESTAMP to obtain the cross timestamp from the NIC hardware. Precision Time Protocol (PTP) version 2 applications use the information provided in this OID to establish a relation between the NIC’s hardware clock and a system clock. 
+An overlying driver issues an object identifier (OID) query request of OID_TIMESTAMP_GET_CROSSTIMESTAMP to obtain a cross timestamp from the NIC hardware. A cross timestamp is the set of a NIC hardware timestamp and system timestamp(s) obtained very close to each other. Precision Time Protocol (PTP) version 2 applications use the information provided in this OID to establish a relation between the NIC’s hardware clock and a system clock.
 
 This OID must be supported if the miniport sets the **CrossTimestamp** field as **TRUE** in the [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure as part of the current configuration. If the cross timestamping ability is disabled, then the OID should be completed with an appropriate error code (for example, NDIS_STATUS_NOT_SUPPORTED).
 

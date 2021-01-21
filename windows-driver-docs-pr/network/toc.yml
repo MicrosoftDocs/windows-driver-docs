@@ -1164,6 +1164,8 @@
     items: 
     - name: "Overview of NDIS packet timestamping"
       href: overview-of-ndis-packet-timestamping.md
+    - name: "Attaching timestamps to packets"
+      href: attaching-timestamps-to-packets.md
     - name: "Reporting timestamping capabilities"
       href: reporting-timestamping-capabilities.md
     - name: "NDIS packet timestamping status indications"

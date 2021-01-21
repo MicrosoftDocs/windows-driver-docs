@@ -9,20 +9,20 @@ ms.localizationpriority: medium
 
 # NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG
 
-Miniport drivers use the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication to report the current timestamping configuration of the NIC hardware to NDIS and overlying drivers. 
+Miniport drivers use the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG** status indication to report the current timestamping configuration of the NIC hardware and miniport driver to NDIS and overlying drivers. 
 
-This status indication represents which timestamping capabilities are currently enabled or disabled. For information about the status indication that is used to report the timestamping capabilities, see [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md). 
+This status indication represents which timestamping capabilities are currently enabled or disabled. For information about the status indication driver use to report the timestamping capabilities, see [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md). 
 
 ## Remarks
 
-During initialization, the miniport driver should indicate  current timestamping configuration from within its [**MiniportInitializeEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. The driver should:
+During initialization, the miniport driver should indicate the current timestamping configuration from within its [**MiniportInitializeEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function. The driver should:
 
 1. Initialize an [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure with the current timestamping configuration.
 The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  as follows:
    * The miniport driver uses the **TimestampFlags** field to indicate its current timestamping configuration.
 
     > [!NOTE]
-    > To determine which timestamping capabilities are currently enabled or disabled, the miniport reads the current values of the timestamping related keywords **\*PtpHardwareTimestamp** and **\*SoftwareTimestamp**. For more information on  using these keywords to enable the timestamping capabilities that the miniport and NIC hardware support, see [Standardized INF keywords for NDIS packet timestamping](standardized-inf-keywords-for-ndis-packet-timestamping.md).
+    > To determine which timestamping capabilities are currently enabled or disabled, the miniport reads the current values of the timestamping related keywords **\*PtpHardwareTimestamp** and **\*SoftwareTimestamp**. For more on using these keywords and how to determine which hardware timestamping capabilities to enable, see [Standardized INF keywords for NDIS packet timestamping](standardized-inf-keywords-for-ndis-packet-timestamping.md).
 
     > [!NOTE] 
     > If an implementation finds both hardware and software timestamps as enabled through the keywords, then the miniport should only generate hardware timestamps and disable software timestamps.

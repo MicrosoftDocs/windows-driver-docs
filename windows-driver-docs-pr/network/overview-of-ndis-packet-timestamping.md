@@ -29,6 +29,8 @@ The following sections describe the NDIS packet timestamping interface:
 
 [Reporting timestamping capabilities and current configuration](reporting-timestamping-capabilities.md)
 
+[Attaching timestamps to packets](attaching-timestamps-to-packets.md)
+
 [Querying timestamping capabilities and configuration](querying-timestamping-capabilities-and-configuration.md)
 
 [Standardized INF keywords for NDIS packet timestamping](standardized-inf-keywords-for-ndis-packet-timestamping.md)
