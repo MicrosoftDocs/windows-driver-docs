@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG
 description: Miniport drivers use the NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG status indication to report the current timestamping configuration of the NIC hardware.
-ms.date: 12/31/2020
+ms.date: 01/31/2021
 keywords:
  - NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -19,7 +19,7 @@ During initialization, the miniport driver should indicate the current timestamp
 
 1. Initialize an [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure with the current timestamping configuration.
 The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  as follows:
-   * The miniport driver uses the **TimestampFlags** field to indicate its current timestamping configuration.
+   * The miniport driver uses the **TimestampFlags** field to indicate its current timestamping configuration. Each flag in the [**NDIS_TIMESTAMP_CAPABILITY_FLAGS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capability_flags) structure should be set to **TRUE** if the corresponding timestamping capability is currently enabled or **FALSE** if it is not.
 
     > [!NOTE]
     > To determine which timestamping capabilities are currently enabled or disabled, the miniport reads the current values of the timestamping related keywords **\*PtpHardwareTimestamp** and **\*SoftwareTimestamp**. For more on using these keywords and how to determine which hardware timestamping capabilities to enable, see [Standardized INF keywords for NDIS packet timestamping](standardized-inf-keywords-for-ndis-packet-timestamping.md).
@@ -27,7 +27,7 @@ The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  a
     > [!NOTE] 
     > If an implementation finds both hardware and software timestamps as enabled through the keywords, then the miniport should only generate hardware timestamps and disable software timestamps.
 
-    * The **CrossTimestamp** field should be set to **TRUE** if hardware cross timestamps are enabled in the current configuration, or **FALSE** if they are not.
+    * The **CrossTimestamp** field should be set to **TRUE** if hardware cross timestamps are enabled in the current configuration or **FALSE** if they are not.
 
     * The **HardwareClockFrequencyHz** field must contain the current operating frequency of the NIC’s hardware clock.
 
@@ -54,6 +54,8 @@ The miniport driver must also generate the **NDIS_STATUS_TIMESTAMP_CURRENT_CONFI
 [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md)
 
 [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities)
+
+[**NDIS_TIMESTAMP_CAPABILITY_FLAGS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capability_flags)
 
 [**MiniportInitializeEx**](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize)
 

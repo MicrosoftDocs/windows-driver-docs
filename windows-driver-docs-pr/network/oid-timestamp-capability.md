@@ -1,7 +1,7 @@
 ---
 title: OID_TIMESTAMP_CAPABILITY
 description: An overlying driver issues an OID query request of OID_TIMESTAMP_CAPABILITY to obtain the timestamping capabilities of the NIC and the miniport driver.
-ms.date: 12/31/2020
+ms.date: 01/31/2021
 keywords: 
  -OID_TIMESTAMP_CAPABILITY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

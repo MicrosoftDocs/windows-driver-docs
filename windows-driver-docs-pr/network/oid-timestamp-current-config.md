@@ -1,7 +1,7 @@
 ---
 title: OID_TIMESTAMP_CURRENT_CONFIG
 description: An overlying driver issues an OID query request of OID_TIMESTAMP_CURRENT_CONFIG to obtain the current timestamping configuration of the NIC.
-ms.date: 12/31/2020
+ms.date: 01/31/2021
 keywords: 
  -OID_TIMESTAMP_CURRENT_CONFIG Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium

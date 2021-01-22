@@ -1,7 +1,7 @@
 ---
 title: NDIS_STATUS_TIMESTAMP_CAPABILITY
 description: Miniport drivers use the NDIS_STATUS_TIMESTAMP_CAPABILITY status indication to report the NIC and miniport driver timestamping capabilities.
-ms.date: 12/31/2020
+ms.date: 01/31/2021
 keywords:
  - NDIS_STATUS_TIMESTAMP_CAPABILITY Network Drivers Starting with Windows Vista
 ms.localizationpriority: medium
@@ -21,7 +21,10 @@ During initialization, the miniport driver should indicate its hardware and soft
 The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  as follows:
     * The miniport driver uses the **TimestampFlags** field to indicate the hardware and software timestamp capabilities of the NIC hardware and miniport.
 
-    * The **CrossTimestamp** field should be set to **TRUE** if hardware cross timestamps are supported or **FALSE** if they are not.
+    > [!NOTE]
+An implementation must support hardware timestamps and cross timestamps. Supporting software timestamps is optional.
+
+    * The miniport driver must set the **CrossTimestamp** field to **TRUE**.
 
     * The **HardwareClockFrequencyHz** field should contain the nominal operating frequency of the hardware clock used for timestamping by the NIC. This data may be used to display the nominal clock frequency to end users for informational purposes.
 
