@@ -75,13 +75,11 @@ In some cases, you may want to distribute a driver internally within a company r
 1. [Register for the Hardware Dev Center](../dashboard/register-for-the-hardware-program.md).
 2. Review the [Hardware dashboard FAQ](../dashboard/hardware-dashboard-faq.md) and sign appropriate agreements.
 3. Upload codesign certificates.
-4. Sign drivers locally using a non-EV codesign certificate.
+4. Sign drivers locally using any codesign certificate that you have already registered in Partner Center.
 5. Package drivers in a CAB and sign the CAB using the above codesign certificate.
 6. Submit the CAB to the Hardware Dev Center for signing.
 7. If the submission is approved, the Hardware Dev Center returns the driver with a Microsoft signature.
 8. Distribute the driver internally.
-
-This procedure applies to all supported versions of windows.
 
 ## See Also
 
