@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 An overlying driver issues an object identifier (OID) query request of OID_TIMESTAMP_GET_CROSSTIMESTAMP to obtain a cross timestamp from the NIC hardware. A cross timestamp is the set of a NIC hardware timestamp and system timestamp(s) obtained very close to each other. Precision Time Protocol (PTP) version 2 applications use the information provided in this OID to establish a relation between the NIC’s hardware clock and a system clock.
 
-This OID must be supported if the miniport sets the **CrossTimestamp** field as **TRUE** in the [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure as part of the current configuration. If the cross timestamping ability is disabled, then the OID should be completed with an appropriate error code (for example, NDIS_STATUS_NOT_SUPPORTED).
+The miniport driver must support this OID if it sets the **CrossTimestamp** field to **TRUE** in the [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure as part of the current configuration. For more details on reporting the current configuration, see the [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md) status indication. If the cross timestamping ability is disabled, then the OID should be completed with an appropriate error code (for example, NDIS_STATUS_NOT_SUPPORTED).
 
 The **RequestType** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure will be **NdisRequestQueryInformation**.
 
@@ -28,6 +28,16 @@ The **Flags** field in the **NDIS_HARDWARE_CROSSTIMESTAMP** structure is reserve
 The miniport driver and hardware are free to optimize the collection of these timestamps depending on any advanced hardware capabilities. However, the **SystemTimestamp1** and **SystemTimestamp2** values returned on OID completion must accurately correspond to the performance counter (QPC) value at the time of capture. The **HardwareClockTimestamp** must correspond to the NIC’s hardware clock value at the point of capture. If a particular implementation can more accurately determine two timestamps rather than three (for example, one system timestamp and the corresponding NIC hardware clock timestamp), then it should set the **SystemTimestamp2** field to the same value as **SystemTimestamp1**.
 
 The miniport driver should not set the **SystemTimestamp1**, **HardwareClockTimestamp**, or **SystemTimestamp2** values to **zero**.
+
+### Return Status Codes
+
+The miniport driver returns one of the following status codes for the OID query request of OID_TIMESTAMP_GET_CROSSTIMESTAMP.
+
+|Status Code|Description|
+|--- |--- |
+|NDIS_STATUS_SUCCESS|The OID request completed successfully.|
+|NDIS_STATUS_NOT_SUPPORTED|The miniport driver either does not support cross timestamping or the cross timestamping ability is disabled.|
+|NDIS_STATUS_FAILURE|The request failed for other reasons.|
 
 
 ## Requirements

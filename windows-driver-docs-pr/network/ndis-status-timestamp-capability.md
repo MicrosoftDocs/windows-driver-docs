@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 
 Miniport drivers use the **NDIS_STATUS_TIMESTAMP_CAPABILITY** status indication to report the NIC's hardware timestamping capabilities and the miniport driver's software timestamping capabilities to NDIS and overlying drivers.
 
-This status indication represents the timestamping capabilities of the hardware and miniport driver, not which capability is currently enabled or disabled. For more information on reporting current timestamping capabilities, see [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md).
+This status indication represents the timestamping capabilities of the hardware and miniport driver, not which capability is currently enabled or disabled. For more information on reporting the current timestamping configuration, see [**NDIS_STATUS_TIMESTAMP_CURRENT_CONFIG**](ndis-status-timestamp-current-config.md).
 
 ## Remarks
 
@@ -19,12 +19,12 @@ During initialization, the miniport driver should indicate its hardware and soft
 
 1. Initialize an [**NDIS_TIMESTAMP_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_timestamp_capabilities) structure with the NIC's hardware and software timestamp capabilities.
 The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  as follows:
-    * The miniport driver uses the **TimestampFlags** field to indicate the hardware and software timestamp capabilities of the NIC hardware and miniport.
+    * The  driver uses the **TimestampFlags** field to indicate the hardware and software timestamp capabilities.
 
     > [!NOTE]
 An implementation must support hardware timestamps and cross timestamps. Supporting software timestamps is optional.
 
-    * The miniport driver must set the **CrossTimestamp** field to **TRUE**.
+    * The driver must set the **CrossTimestamp** field to **TRUE**.
 
     * The **HardwareClockFrequencyHz** field should contain the nominal operating frequency of the hardware clock used for timestamping by the NIC. This data may be used to display the nominal clock frequency to end users for informational purposes.
 

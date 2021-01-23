@@ -13,7 +13,7 @@ An overlying driver issues an object identifier (OID) query request of OID_TIMES
 
 The **RequestType** member of the [**NDIS_OID_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure will be **NdisRequestQueryInformation**.
 
-NDIS will handle this OID for the miniport driver based on the information the miniport driver provided in the [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md) status indication.
+NDIS handles this OID for the miniport driver based on the information the miniport driver provided in the [**NDIS_STATUS_TIMESTAMP_CAPABILITY**](ndis-status-timestamp-capability.md) status indication.
 
 ## Requirements
 
