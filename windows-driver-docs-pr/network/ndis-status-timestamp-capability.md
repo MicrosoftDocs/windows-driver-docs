@@ -22,7 +22,7 @@ The  driver sets the members of the **NDIS_TIMESTAMP_CAPABILITIES** structure  a
     * The  driver uses the **TimestampFlags** field to indicate the hardware and software timestamp capabilities.
 
     > [!NOTE]
-An implementation must support hardware timestamps and cross timestamps. Supporting software timestamps is optional.
+    > An implementation must support hardware timestamps and cross timestamps. Supporting software timestamps is optional.
 
     * The driver must set the **CrossTimestamp** field to **TRUE**.
 
