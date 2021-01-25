@@ -1,13 +1,13 @@
 ---
-title: Testing with Sensor Explorer
-description: Using Sensor Explorer for sensor testing and logging
+title: Testing with SensorExplorer
+description: Using SensorExplorer for sensor testing and logging
 ms.date: 02/01/2021
 ms.localizationpriority: medium
 ---
 
-# Sensor Explorer Overview
+# SensorExplorer Overview
 
-SensorExplorer is an app available on the [Microsoft Store](https://www.microsoft.com/p/sensorexplorer/9pgl3xpq1tpx?activetab=pivot:overviewtab) and the app package can be accessed through [GitHub](https://github.com/microsoft/busiotools/tree/master/sensors/Tools/SensorExplorer). Sensor Explorer offers tests to quickly verify the installation of supported sensors such as orientation sensors (accelerometer, simple orientation sensors, etc.) and provide detailed tables and plots that enable monitoring different sensors. Sensor Explorer also provides logging that can be reviewed for debugging.
+SensorExplorer is an app available on the [Microsoft Store](https://www.microsoft.com/p/sensorexplorer/9pgl3xpq1tpx?activetab=pivot:overviewtab) and the app package can be accessed through [GitHub](https://github.com/microsoft/busiotools/tree/master/sensors/Tools/SensorExplorer). SensorExplorer offers tests to quickly verify the installation of supported sensors such as orientation sensors (accelerometer, simple orientation sensors, etc.) and provide detailed tables and plots that enable monitoring different sensors. SensorExplorer also provides logging that can be reviewed for debugging.
 
 There are three modes available via the menu bar on the left-hand side in SensorExplorer:
 
@@ -19,13 +19,13 @@ There are three modes available via the menu bar on the left-hand side in Sensor
 
 - **MALT:** Used for connecting to and controlling a [MALT (Microsoft Ambient Light Tool)](/windows-hardware/drivers/sensors/testing-malt-building-a-light-testing-tool), a simple low-cost light testing apparatus. The tool combines a microcontroller, light sensors, and a controllable light panel to calibrate light sensors and visually measure a panel's light curve.
 
-## How to test your sensors with Sensor Explorer
+## How to test your sensors with SensorExplorer
 
 Tests available for each sensor can be explored by scrolling the top menu bar, highlighted in the screen shot below as a red box.
 
 ![SensorExplorer Tests](images/sensor-explorer-tests.png)
 
-### Sensor Explorer orientation test
+### SensorExplorer orientation test
 
 This test asks you to orient the device in different directions and then checks the sensor reading accordingly. A pass/fail result will be displayed at the end of the test.
 
