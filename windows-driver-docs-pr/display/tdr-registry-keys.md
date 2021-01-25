@@ -40,13 +40,15 @@ ValueType : REG_DWORD
 ValueData : TdrLevelXxx (see the following table)
 ```
 
-Where TdrLevel*Xxx* can be one of the following values:
 | Value | Meaning |
 | ----- | ------- |
 | TdrLevelOff (0) | Detection disabled |
 | TdrLevelBugcheck (1) | Bug check on detected timeout; for example, no recovery. |
 | TdrLevelRecoverVGA (2) | Recover to VGA (not implemented). |
 | TdrLevelRecover (3) | Recover on timeout. This is the default value. |
+
+> [NOTE]
+> Where TdrLevel*Xxx* can be one of the values in above table.
 
 ### TdrDelay
 
