@@ -2,15 +2,15 @@
 title: MASM Numbers and Operators
 description: MASM Numbers and Operators
 keywords: ["expressions, MASM expression syntax", "numerical expressions (MASM)", "MASM expressions, numbers", "MASM expressions, operators", "operators (MASM)", "(MASM prefix)", "binary operators", "shift operators", "unary operators"]
-ms.date: 05/23/2017
+ms.date: 01/26/2021
 ms.localizationpriority: medium
 ---
 
 # MASM Numbers and Operators
 
-Before version 4.0 of the Debugging Tools for Windows package, NTSD, CDB, KD, and WinDbg used only Microsoft Macro Assembler (MASM) expression syntax.
+This topic describes the use of Microsoft Macro Assembler (MASM) expression syntax with the Windows Debugging tools.
 
-## Numbers in MASM Expressions
+## Numbers in Debugger MASM Expressions
 
 You can put numbers in MASM expressions in base 16, 10, 8, or 2.
 
@@ -22,7 +22,7 @@ If you do not add a number after the prefix in an expression, the number is read
 
 You can enter hexadecimal 64-bit values in the **xxxxxxxx\`xxxxxxxx** format. You can also omit the grave accent (\`). If you include the grave accent, [automatic sign extension](sign-extension.md) is disabled.
 
-## Symbols in MASM Expressions
+## Symbols in Debugger MASM Expressions
 
 In MASM expressions, the numeric value of any symbol is its memory address. Depending on what the symbol refers to, this address is the address of a global variable, local variable, function, segment, module, or any other recognized label.
 
