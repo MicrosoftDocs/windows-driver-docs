@@ -170,15 +170,7 @@
     "dest": "windows-driver-docs-pr",
     "markdownEngineName": "markdig",
     "rules": {
-      "sensitive-language": {
-        "exclude": [
-          "network/oid-wwan-network-blacklist.md",
-          "network/ndis-status-wwan-network-blacklist.md",
-          "network/ntddndis-h.md",
-          "network/mb-network-blacklist-operations.md"
-        ]
-      },
-            "sensitive-language-bl": {
+       "sensitive-language-bl": {
         "exclude": [
           "network/oid-wwan-network-blacklist.md",
           "network/ndis-status-wwan-network-blacklist.md",
