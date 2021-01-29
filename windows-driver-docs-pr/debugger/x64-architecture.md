@@ -2,7 +2,7 @@
 title: x64 Architecture
 description: x64 Architecture
 keywords: ["x64 processor, architecture", "registers, on an x64 processor", "x64 processor, registers"]
-ms.date: 03/16/2018
+ms.date: 01/28/2021
 ms.localizationpriority: medium
 ---
 
@@ -16,7 +16,7 @@ The x64 architecture is a backwards-compatible extension of x86. It provides a l
 
 The term "x64" includes both AMD 64 and Intel64. The instruction sets are close to identical.
 
-### <span id="Registers"></span><span id="registers"></span><span id="REGISTERS"></span>Registers
+## <span id="Registers"></span><span id="registers"></span><span id="REGISTERS"></span>Registers
 
 x64 extends x86's 8 general-purpose registers to be 64-bit, and adds 8 new 64-bit registers. The 64-bit registers have names beginning with "r", so for example the 64-bit extension of **eax** is called **rax**. The new registers are named **r8** through **r15**.
 
@@ -153,7 +153,7 @@ The x64 processor also provides several sets of floating-point registers:
 
 -   The original set of eight 128-bit SSE registers is increased to sixteen.
 
-### <span id="Calling_Conventions"></span><span id="calling_conventions"></span><span id="CALLING_CONVENTIONS"></span>Calling Conventions
+## <span id="Calling_Conventions"></span><span id="calling_conventions"></span><span id="CALLING_CONVENTIONS"></span>Calling Conventions
 
 Unlike the x86, the C/C++ compiler only supports one calling convention on x64. This calling convention takes advantage of the increased number of registers available on x64:
 
@@ -171,9 +171,9 @@ Unlike the x86, the C/C++ compiler only supports one calling convention on x64. 
 
 -   **rbx**, **rbp**, **rdi**, **rsi**, **r12**-**r15** are nonvolatile.
 
-The calling convention for C++ is very similar: the **this** pointer is passed as an implicit first parameter. The next three parameters are passed in registers, while the rest are passed on the stack.
+The calling convention for C++ is very similar: the **this** pointer is passed as an implicit first parameter. The next three parameters are passed in remaining registers, while the rest are passed on the stack.
 
-### <span id="Addressing_Modes"></span><span id="addressing_modes"></span><span id="ADDRESSING_MODES"></span>Addressing Modes
+## <span id="Addressing_Modes"></span><span id="addressing_modes"></span><span id="ADDRESSING_MODES"></span>Addressing Modes
 
 The addressing modes in 64-bit mode are similar to, but not identical to, x86.
 
@@ -185,10 +185,14 @@ The addressing modes in 64-bit mode are similar to, but not identical to, x86.
 
 Instructions, such as **jmp**, **call**, **push**, and **pop**, that implicitly refer to the instruction pointer and the stack pointer treat them as 64 bits registers on x64.
 
- 
 ## See Also
 
 [X86-64 Wikipedia](https://en.wikipedia.org/wiki/X86-64)
 
 [AMD 64 Developer Resources](https://developer.amd.com/resources/)
 
+[Intel - Introduction to x64 Assembly](https://software.intel.com/content/www/us/en/develop/articles/introduction-to-x64-assembly.html)
+
+[x64 Primer - Everything You Need To Know To Start Programming 64-Bit Windows Systems - Matt Pietrek](/archive/msdn-magazine/2006/may/x64-starting-out-in-64-bit-windows-systems-with-visual-c)
+
+[The history of calling conventions, part 5: amd64 Raymond Chen](https://devblogs.microsoft.com/oldnewthing/20040114-00/?p=41053)
