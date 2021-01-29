@@ -2,20 +2,18 @@
 title: Finding the Process ID
 description: Finding the Process ID
 keywords: ["process, process ID (PID)", "PID (process ID)", "TList, related techniques", "Task Manager"]
-ms.date: 01/14/2021
+ms.date: 01/29/2021
 ms.localizationpriority: medium
 ms.custom: contperf-fy21q3
 ---
 
 # Finding the process ID
 
-## <span id="ddk_finding_the_process_id_dbg"></span><span id="DDK_FINDING_THE_PROCESS_ID_DBG"></span>
-
 Each process running in Windows is assigned a unique decimal number called the process ID (PID). This number is used in a number of ways, for example to specify the process when attaching a debugger to it.
 
 This topic describes how you can determine the PID for a given app using Task Manager, the tasklist Windows command, the TList utility, or the debugger.
 
-## <span id="task_manager"></span><span id="TASK_MANAGER"></span>Task Manager
+## Task Manager
 
 Task Manager can be opened in a number of ways, but the simplest is to select Ctrl+Alt+Delete, and then select **Task Manager**.
 
@@ -27,7 +25,7 @@ Click on any column name to sort. You can right click a process name to see more
 
 Some kernel errors may cause delays in Task Manager's graphical interface.
 
-## <span id="the_tasklist_command"></span><span id="THE_TASKLIST_COMMAND"></span>The **tasklist** command
+## The **tasklist** command
 
 Use the built in Windows **tasklist** command from a command prompt to display all processes, their PIDs, and a variety of other details.
 
@@ -48,7 +46,7 @@ wininit.exe                    980 Services                   0      6,572 K
 
 Use `tasklist /?` to display command line help.
 
-## <span id="tlist"></span><span id="TLIST"></span>TList utility
+## TList utility
 
 Task List Viewer (TList), or tlist.exe, is a command-line utility that displays the list of tasks, or user-mode processes, currently running on the local computer. TList is included in the Debugging Tools for Windows. For information on how to download and install the debugging tools, see [Download Debugging Tools for Windows](debugger-download-tools.md).
 
@@ -78,10 +76,24 @@ wininit.exe (980)
 
 For more information, see [TList](tlist.md).
 
-## <span id="the__tlist_debugger_command"></span><span id="THE__TLIST_DEBUGGER_COMMAND"></span>The **.tlist** debugger command
+## The **.tlist** debugger command
 
 If there's already a user-mode debugger running on the system in question, the [**.tlist (List Process IDs)**](-tlist--list-process-ids-.md) command will display a list of all PIDs on that system.
 
-## <span id="csrss_and_user_mode_drivers"></span><span id="CSRSS_AND_USER_MODE_DRIVERS"></span>CSRSS and user-mode drivers
+## PowerShell Get-Process command
+
+To work with automation scripts, use the Get-Process PowerShell command. Specify a specific process name, to see the process ID for that process.
+
+```powershell
+C:\> Get-Process explorer
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+   2520     404   108948     179284   1,702.95   7656   1 explorer
+```
+
+For more information, see [Get-Process](/powershell/module/microsoft.powershell.management/get-process).
+
+## CSRSS and user-mode drivers
 
 To debug a user-mode driver running on another computer, debug the Client Server Run-Time Subsystem (CSRSS) process. For more information, see [Debugging CSRSS](debugging-csrss.md).
