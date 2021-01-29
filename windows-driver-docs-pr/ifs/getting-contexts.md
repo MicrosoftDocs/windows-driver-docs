@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 # Getting Contexts
 
-Once a minifilter driver has [set a context](setting-context.md) for an object, it can get the context by calling one of the following get routines:
+Once a minifilter driver has [set a context](setting-contexts.md) for an object, it can get the context by calling one of the following get routines:
 
 - [**FltGetContexts**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetcontexts)
 - [**FltGetContextsEx**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetcontextsex)

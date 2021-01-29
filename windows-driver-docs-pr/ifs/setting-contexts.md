@@ -37,7 +37,7 @@ The set routine does the following, depending on the value of the *Operation* pa
     - Deletes the existing context, sets the new context, and increments the reference count on the new context.
     - If the *OldContext* parameter is non-**NULL**, it receives a pointer to the deleted context. When this pointer is no longer needed, the minifilter driver must release it by calling **FltReleaseContext**.
 
-Once a context type has been set, a minifilter can [get a context](getting-context.md) during subsequent I/O operation(s) to determine whether it needs to take any action.
+Once a context type has been set, a minifilter can [get a context](getting-contexts.md) during subsequent I/O operation(s) to determine whether it needs to take any action.
 
 Every successful context set must eventually be [deleted](deleting-contexts.md).
 
