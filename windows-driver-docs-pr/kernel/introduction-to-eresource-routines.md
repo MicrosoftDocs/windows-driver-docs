@@ -36,7 +36,7 @@ Drivers can perform the following basic operations on an ERESOURCE:
 
 The *Wait* parameter of [**ExAcquireResourceSharedLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquireresourcesharedlite) and [**ExAcquireResourceExclusiveLite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exacquireresourceexclusivelite) determines whether the current thread waits for the ERESOURCE to be acquired. If you specify a value of **FALSE** and the ERESOURCE cannot be acquired, then the routine returns **FALSE**. If you specify a value of **TRUE**, then the current thread is put on the appropriate wait list for the ERESOURCE.
 
-### Examining the State of an ERESOURCE Structure
+## Examining the State of an ERESOURCE Structure
 
 A driver can also determine the current state of an ERESOURCE, as follows:
 
