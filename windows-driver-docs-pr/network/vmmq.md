@@ -6,13 +6,14 @@ Virtual Machine Multiple Queues (VMMQ), formerly known as Hardware vRSS, is a NI
 
 VMMQ is available for the VPorts exposed in the host (root partition) regardless of whether the NIC is operating in SR-IOV or VMQ mode. VMMQ is a feature available to NDIS 6.60 drivers.
 
-# RSS Keywords
+# Handling RSS INF keywords for VMMQ
 
-If VMMQ is supported by the NIC, all [RSS keywords](standardized-inf-keywords-for-rss.md) should also be supported to provide future compatibility, even if not currently used by the OS. The keywords function should remain consistent with its current use unless explicitly changed in this document for HW vRSS purposes.
+If a network adapter supports VMMQ, all [Standardized INF Keywords for RSS](standardized-inf-keywords-for-rss.md) should be supported to provide future compatibility even if the OS doesn't not currently use them all.
+The keywords' functions should remain consistent with their normal use for RSS except for the following: (other exceptions?)
 
--   **\*RSSProfile**: In NDIS 6.60, we expect the “Closest Processor” profile to be supported and used as a policy for VMMQ.
+-   **\*RSSProfile**: The “ClosestProcessor” profile should be supported and used as a policy for VMMQ.
 
--   **\*MaxRssProcessors**: When HW vRSS is active, this keyword should not restrict the number of MSIx interrupt messages reported in NDIS\_RECEIVE\_SCALE\_CAPABILITIES.
+-   **\*MaxRssProcessors**: When VMMQ is active, this keyword should not restrict the number of MSIx interrupt messages reported in [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities).
 
 # Advertising Hardware vRSS capabilities
 
