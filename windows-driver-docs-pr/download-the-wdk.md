@@ -78,6 +78,9 @@ This SDK is strongly recommended and will eventually be made available thru Visu
 
 The WDK Visual Studio extension is included in the default WDK installation.
 
+> [!TIP]
+> If you can't find driver project templates in Visual Studio, the WDK Visual Studio extension didn't install properly. To resolve this, run the WDK.vsix file from this location: C:\Program Files (x86)\Windows Kits\10\Vsix\VS2019\WDK.vsix.
+
 ## Enterprise WDK (EWDK) for Windows 10, version 2004
 
 The EWDK is a standalone, self-contained command-line environment for building drivers. It includes the Visual Studio Build Tools, the SDK, and the WDK.  The latest public version of the EWDK contains Visual Studio 2019 Build Tools 16.7.0 and MSVC toolset v14.23.  To get started, mount the ISO and run **LaunchBuildEnv**.
