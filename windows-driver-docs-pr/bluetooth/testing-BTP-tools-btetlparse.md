@@ -1,13 +1,13 @@
 ---
 title: Microsoft Bluetooth Test Platform - BTETLParse
-description: Bluetooth Test Platform (BTP) Bluetooth ETL parser.
+description: Bluetooth Test Platform (BTP) Bluetooth ETL parse.
 ms.date: 1/12/2021
 ms.localizationpriority: medium
 
 ---
-# Bluetooth ETL parser (BTETLParse.exe)
+# Bluetooth ETL parse (BTETLParse.exe)
 
-The Bluetooth ETL parse tool parses a provided ETL file containing compressed Bluetooth data and extracts hci traces.
+The Bluetooth ETL parse tool extracts HCI traces from ETL files containing compressed Bluetooth data.
 
 This tool is meant for parsing ETL files collected using the [Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
@@ -22,14 +22,13 @@ Usage: btetlparse [-cfa <output_cfa_filename>] [-hci <output_hci_filename>]
 
     -cfa through -pcapng flags parse the etl file into different file types.
 
-    -cfa <filename>         Frontline Protocol Analysis System (https://www.fte.com/products/ProtocolExpert.aspx) is used
-                                for displaying reading/displaying this information.
+    -cfa <filename>         Data file readable by Frontline protocol analyzers.
 
-    -hci <filename>         This file type is mostly for scripts to consume and Notepad can open it.
+    -hci <filename>         Data file in plain text format.
 
-    -pcap <filename>        Wireshark (https://www.wireshark.org/) is used for opening this file type.
+    -pcap <filename>        Data file readable by Wireshark protocol analyzers.
         
-    -pcapng <filename>      Wireshark (https://www.wireshark.org/) is used for opening this file type.
+    -pcapng <filename>      Data file readable by Wireshark protocol analyzers.
 
     <input_etl_filename>    The is the filename of the ETL file we are trying to parse.
                                 Default is c:\temp\btetw.etl
