@@ -13,6 +13,14 @@ As a driver developer, you must have coding experience in the C programming lang
 
 ## Learning path for USB client driver developers
 
+| Learning Step | After completing the step, you should be able to... |
+| --- | --- |
+| **Step 1**: Read the [USB Specification 3.2](https://usb.org/document-library/usb-32-specification-released-september-22-2017-and-ecns). | Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It's important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects. |
+
+
+
+
+
 <table>
 <colgroup>
 <col width="50%" />
@@ -26,8 +34,9 @@ As a driver developer, you must have coding experience in the C programming lang
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Step 1</strong>—Read the [USB Specification 3.2](https://usb.org/document-library/usb-32-specification-released-september-22-2017-and-ecns).</p></td>
-<td>Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It's important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects.</td>
+<td><p><strong>Step 1</strong>—Read the [USB Specification 3.2](https://usb.org/document-library/usb-32-specification-released-september-22-2017-and-ecns) | Learn about the industry specification and different components (device, host controller, and hub) of the architecture. It's important to understand the data flow model, how the host and device communicate with each other, and the format of the requests that the device expects. |
+
+
 </tr>
 <tr class="even">
 <td><p><strong>Step 2</strong>—Obtain a test USB device.</p></td>
