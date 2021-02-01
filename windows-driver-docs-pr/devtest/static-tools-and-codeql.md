@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 Microsoft is committed to mitigating the attack surface for the Windows operating system, and ensuring that third party drivers meet a strong security bar is critical to accomplishing that goal.  One step in setting this security bar that Microsoft is taking is adding a new requirement to the [Windows Hardware Compatibility Program](/windows-hardware/design/compatibility) (WHCP).  This requirement states that all driver submissions must use the [CodeQL](https://securitylab.github.com/tools/codeql) engine on driver source code and fix any violations that are deemed **“Must-Fix”**.
 
-[CodeQL](https://semmle.com/codeql), from [Semmle](https://semmle.com/), is a powerful static analysis technology for securing software. The combination of an extensive suite of high-value security queries and a robust platform make it an invaluable tool for securing third party driver code.
+[CodeQL](https://securitylab.github.com/tools/codeql), by GitHub, is a powerful static analysis technology for securing software. The combination of an extensive suite of high-value security queries and a robust platform make it an invaluable tool for securing third party driver code.
 
 The requirement to analyze the driver source code and fix any **“Must-Fix”** violations will be enforced by the [Static Tools Logo Test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae).
 
@@ -27,13 +27,13 @@ This topic describes how to:
 **CodeQL** is the analysis engine used by developers to perform security analysis.  A **CodeQL database** is a directory containing:
 
 - Queryable data, extracted from driver source code.
-- A source reference, for displaying query results directly in source code.  A **query** can be thought of as a “check” or “rule”.  Each query represents a distinct security vulnerability that is being searched for. For more information, see [Writing queries](https://help.semmle.com/QL/learn-ql/writing-queries/writing-queries.html) in the CodeQL docs.
+- A source reference, for displaying query results directly in source code.  A **query** can be thought of as a “check” or “rule”.  Each query represents a distinct security vulnerability that is being searched for. For more information, see [Writing queries](https://codeql.github.com/docs/writing-codeql-queries/codeql-queries/) in the CodeQL docs.
 - Query results.
 - Log files generated during database creation, query execution, and other operations.
 
-This topic details how to perform analysis using CodeQL command line interface (CLI) with a focus on driver developers for Windows.  Supplementary documentation can be found at [CodeQL Getting Started](https://help.semmle.com/codeql/codeql-cli/procedures/get-started.html).
+This topic details how to perform analysis using CodeQL command line interface (CLI) with a focus on driver developers for Windows.  Supplementary documentation can be found at [CodeQL Getting Started](https://codeql.github.com/docs/codeql-cli/getting-started-with-the-codeql-cli/).
 
-We will use the [CodeQL command line tools (CLI)](https://help.semmle.com/codeql/codeql-cli.html) to create a CodeQL database from a variety of compiled and interpreted languages, and then analyze that database using a driver-specific [query suite](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/).
+We will use the [CodeQL command line tools (CLI)](https://codeql.github.com/docs/codeql-cli/) to create a CodeQL database from a variety of compiled and interpreted languages, and then analyze that database using a driver-specific [query suite](https://codeql.github.com/docs/codeql-cli/creating-codeql-query-suites/).
 
 ## CodeQL Windows Setup
 
@@ -291,7 +291,7 @@ Shutting down query evaluator.
 Interpreting results.
 ```
 
-You can specify a timeout for the entire operation with the *"–timeout=[seconds]"* flag.  This can be useful for analysis on queries without being limited by a single, long-running query.  More options to tweak analysis optimizations are described in [database analyze](https://help.semmle.com/codeql/codeql-cli/commands/database-analyze.html). 
+You can specify a timeout for the entire operation with the *"–timeout=[seconds]"* flag.  This can be useful for analysis on queries without being limited by a single, long-running query.  More options to tweak analysis optimizations are described in [database analyze](https://codeql.github.com/docs/codeql-cli/analyzing-databases-with-the-codeql-cli/). 
 
 ## Query Suites
 
@@ -315,7 +315,7 @@ Unpacked in: C:\codeql-home\codeql\
    use 'codeql resolve qlpacks' and 'codeql resolve languages'.
 ```
 
-The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://help.semmle.com/codeql/codeql-cli/commands/database-upgrade.html).
+The database upgrade command will update a database. Be aware that this is a one way upgrade and is not reversible. For more information, see [database upgrade](https://codeql.github.com/docs/codeql-cli/upgrading-codeql-databases/).
 
 ## Queries
 
@@ -369,7 +369,7 @@ These queries are a part of the *windows_driver_mustfix.qls* query suite in the 
 
 ## View Analysis
 
-The results of running the analysis command in the previous section can be viewed in a [SARIF](https://help.semmle.com/codeql/glossary.html#sarif-results-file) file format.  Details regarding SARIF output can be found at [SARIF Overview](https://help.semmle.com/codeql/codeql-cli/reference/sarif-overview.html).
+The results of running the analysis command in the previous section can be viewed in a [SARIF](https://codeql.github.com/docs/codeql-overview/codeql-glossary/#sarif-file) file format.  Details regarding SARIF output can be found at [SARIF Overview](https://codeql.github.com/docs/codeql-cli/sarif-output/#sarif-output).
 
 The SARIF file contains a **result** section for each query that was run and includes details regarding the completed analysis.  For example, if the query found a vulnerability, the SARIF file will include details as to what the vulnerability is and where it found the defect. If no vulnerabilities are found, the results section will be blank.
 
