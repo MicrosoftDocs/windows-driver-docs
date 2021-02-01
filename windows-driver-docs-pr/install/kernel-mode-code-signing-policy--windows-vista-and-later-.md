@@ -49,7 +49,7 @@ Before Windows 10, version 1607, the following types of drivers require an Authe
 
 * Kernel-mode device drivers
 * User-mode device drivers
-* Drivers that stream protected content. This includes audio drivers that use Protected User Mode Audio (PUMA) and Protected Audio Path (PAP), and video device drivers that handle protected video path-output protection management (PVP-OPM) commands. For more information, see [Code-signing for Protected Media Components](https://go.microsoft.com/fwlink/p/?linkid=74262).
+* Drivers that stream protected content. This includes audio drivers that use Protected User Mode Audio (PUMA) and Protected Audio Path (PAP), and video device drivers that handle protected video path-output protection management (PVP-OPM) commands. For more information, see [Code-signing for Protected Media Components](https://download.microsoft.com/download/a/f/7/af7777e5-7dcd-4800-8a0a-b18336565f5b/pmp-sign.doc).
 
 ## Signing requirements by version
 
