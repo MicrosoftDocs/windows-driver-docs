@@ -20,7 +20,7 @@ ms.custom: contperf-fy21q2
 
 ## TDR tests in WHLK
 
-The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-specific tests that developers can use for testing and debugging purposes. For example, you can manually trigger a GPU TDR using the [**SimulatePreemption TDR**](/windows-hardware/test/hlk/testref/86be5032-cfcd-4ee5-a515-0e3ebc0cb6f4). See [**Device.Graphics**](/windows-hardware/test/hlk/testref/device-graphics) for more information about the various TDR-related tests.
+The [Windows Hardware Lab Kit](/windows-hardware/test/hlk/) (WHLK) contains TDR-specific tests that driver developers can use for testing and debugging purposes. For example, developers can manually trigger a GPU TDR using the [**SimulatePreemption TDR**](/windows-hardware/test/hlk/testref/86be5032-cfcd-4ee5-a515-0e3ebc0cb6f4). See [**Device.Graphics**](/windows-hardware/test/hlk/testref/device-graphics) for more information about the various TDR-related tests.
 
 ## TDR registry keys for testing and debugging
 
@@ -41,6 +41,7 @@ ValueData : TdrLevelXxx (see the following table)
 ```
 
 Where TdrLevel*Xxx* can be one of the following values:
+
 | Value | Meaning |
 | ----- | ------- |
 | TdrLevelOff (0) | Detection disabled |
