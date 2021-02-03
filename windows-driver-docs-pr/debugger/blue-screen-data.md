@@ -2,7 +2,7 @@
 title: Blue Screen Data
 description: When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check or stop error.
 keywords: ["Blue Screen Data Windows Debugging"]
-ms.date: 03/30/2020
+ms.date: 01/29/2021
 topic_type:
 - apiref
 api_name:
@@ -14,10 +14,7 @@ ms.localizationpriority: medium
 
 # Blue Screen Data
 
-
 **Note**  This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://support.microsoft.com/help/14238/windows-10-troubleshoot-blue-screen-errors).
-
- 
 
 **Note**   If you are an IT professional or support agent, see this article for additional information, [Troubleshoot "blue screen" or Stop error problems before you contact Microsoft Support](https://support.microsoft.com/help/3106831/).
 
@@ -45,10 +42,7 @@ If a [kernel-mode dump file](kernel-mode-dump-files.md) has been written, this w
 
 There is a stop code hex value associated with each stop code as listed in [Bug Check Code Reference](bug-check-code-reference2.md).
 
-## <span id="ddk_blue_screen_data_dbg"></span><span id="DDK_BLUE_SCREEN_DATA_DBG"></span>
-
-
-### <span id="Gathering_the_Stop_Code_Parameters"></span><span id="gathering_the_stop_code_parameters"></span><span id="GATHERING_THE_STOP_CODE_PARAMETERS"></span>Gathering the Stop Code Parameters
+## Gathering the Stop Code Parameters
 
 Each bug check code has four associated parameters that provide additional information. The parameters are described in [Bug Check Code Reference](bug-check-code-reference2.md) for each stop code.
 
@@ -83,7 +77,7 @@ There are multiple ways to gather the four stop code parameters.
 
 If a debugger is attached, a bug check will cause the target computer to break into the debugger. In this case, the blue screen may not appear immediately, the full details on this crash will be sent to the debugger and appear in the debugger window. To see this information a second time, use the [**.bugcheck (Display Bug Check Data)**](-bugcheck--display-bug-check-data-.md) command or the [**!analyze**](-analyze.md) extension command.
 
-**Kernel Debugging and Crash Dump Analysis**
+## Kernel Debugging and Crash Dump Analysis
 
 Kernel debugging is especially useful when other troubleshooting techniques fail, or for a recurring problem. Remember to capture the exact text in the bug check information section of the error message. To isolate a complex problem and develop a viable workaround, it is useful to record the exact actions that lead to the failure.
 
@@ -101,12 +95,11 @@ For more information see the following topics:
 
 The Defrag Tools show on Channel 9 - <https://channel9.msdn.com/Shows/Defrag-Tools>
 
-### <span id="Using_Driver_Verifier_to_Gather_Information"></span><span id="using_driver_verifier_to_gather_information"></span><span id="USING_DRIVER_VERIFIER_TO_GATHER_INFORMATION"></span>Using Driver Verifier to Gather Information
+## Using Driver Verifier to Gather Information
 
 It is estimated that about three quarters of blue screens are caused by faulting drivers. Driver Verifier is a tool that runs in real time to examine the behavior of drivers. For example, Driver Verifier checks the use of memory resources, such as memory pools. If it see errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifier* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
-## <span id="Tips_for_Software_Engineers"></span><span id="tips_for_software_engineers"></span><span id="TIPS_FOR_SOFTWARE_ENGINEERS"></span>Tips for Software Engineers
-
+## Tips for Software Engineers
 
 When a bug check occurs as a result of code you have written, you should use the kernel debugger to analyze the problem, and then fix the bugs in your code. For full details, see the individual bug check code in the [Bug Check Code Reference](bug-check-code-reference2.md) section.
 
@@ -133,6 +126,7 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 -   Run a virus detection program. Viruses can infect all types of hard disks formatted for Windows, and resulting disk corruption can generate system bug check codes. Make sure the virus detection program checks the Master Boot Record for infections.
 
 -   Use the scan disk utility to confirm that there are no file system errors. Select and hold (or right-click) on the drive you want to scan and select **Properties**. Select **Tools**. Select the **Check now** button.
+
 -   Use the System File Checker tool to repair missing or corrupted system files. The System File Checker is a utility in Windows that allows users to scan for corruptions in Windows system files and restore corrupted files. Use the following command to run the System File Checker tool (SFC.exe).
 
     ```console
@@ -149,18 +143,11 @@ For general troubleshooting of Windows bug check codes, follow these suggestions
 
 -   Disable BIOS memory options such as caching or shadowing.
 
--   For PCs, make sure that all expansion boards are is properly seated and all cables are completely connected.
+-   For PCs, make sure that all expansion boards are properly seated and all cables are completely connected.
 
 **Using Safe Mode**
 
 Consider using Safe Mode when removing or disabling components. Using Safe Mode loads only the minimum required drivers and system services during the Windows startup. To enter Safe Mode, use **Update and Security** in Settings. Select **Recovery**-&gt;**Advanced startup** to boot to maintenance mode. At the resulting menu, choose **Troubleshoot**-&gt; **Advanced Options** -&gt; **Startup Settings** -&gt; **Restart**. After Windows restarts to the **Startup Settings** screen, select option, 4, 5 or 6 to boot to Safe Mode.
 
 Safe Mode may be available by pressing a function key on boot, for example F8. Refer to information from the manufacturer for specific startup options.
-
-## <span id="Forced_KeBugCheck"></span><span id="forced_kebugcheck"></span><span id="FORCED_KEBUGCHECK"></span>Forced KeBugCheck
-
-
-To deliberately cause a bug check from a kernel-mode driver, you need to pass the bug check's symbolic name to the **KeBugCheck** or **KeBugCheckEx** function. This should only be done in circumstances where no other option is available. For more details on these functions, see the Windows Driver Kit.
-
- 
 
