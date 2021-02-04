@@ -368,7 +368,7 @@ These queries are a part of the *windows_driver_mustfix.qls* query suite in the 
 
 ## View Analysis
 
-The results of running the analysis command in the previous section can be viewed in a [SARIF](https://codeql.github.com/docs/codeql-overview/codeql-glossary/#sarif-file) file format.  Details regarding SARIF output can be found at [SARIF Overview](https://codeql.github.com/docs/codeql-cli/sarif-output/#sarif-output).
+The results of running the analysis command in the previous section can be viewed in a [SARIF](https://codeql.github.com/docs/codeql-overview/codeql-glossary/#sarif-file) file format.  Details regarding SARIF output can be found at [SARIF Output](https://codeql.github.com/docs/codeql-cli/sarif-output/). Information on the SARIF Standard is available at [OASIS Static Analysis Results Interchange Format (SARIF)](https://github.com/oasis-tcs/sarif-spec).
 
 The SARIF file contains a **result** section for each query that was run and includes details regarding the completed analysis.  For example, if the query found a vulnerability, the SARIF file will include details as to what the vulnerability is and where it found the defect. If no vulnerabilities are found, the results section will be blank.
 
@@ -392,7 +392,7 @@ Instructions for how to generate a DVL can be found on [Creating a Driver Verifi
 
 If you are building the driver using Visual Studio, you can configure the CodeQL queries to run as a post build event.
 
-In this example, a small batch file is created in the target location and called as a post build event. For more information about Visual Studio C++ build events, see [Specifying build events](/cpp/build/specifying-build-event).
+In this example, a small batch file is created in the target location and called as a post build event. For more information about Visual Studio C++ build events, see [Specifying build events](/cpp/build/specifying-build-events).
 
 1. Create a small batch file that re-creates the CodeQL database and then runs the desired queries using that up to date database.  In this example, the batch file will be named `RunCodeQLRebuildQuery.bat`. Modify the paths shown in the example  batch file to match your directory locations.
 
@@ -435,7 +435,7 @@ SET ERRORLEVEL = 0
 1>">>> Loading SARIF Results in Visual Studio <<<"
 ```
 
-7. Review the SARIF file results and work to remediate any issues that are identified. For more information, see [View Analysis](#view-analysis) later in this topic.
+7. Review the SARIF file results and work to remediate any issues that are identified. For more information, see [View Analysis](#view-analysis) earlier in this topic.
 
 
 
