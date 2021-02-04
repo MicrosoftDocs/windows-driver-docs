@@ -103,6 +103,22 @@ Each base class within a type is described by a base class object having propert
 
 All of these entries are present during phase 2 initialization.
 
+## Code Example
+
+For a code example, see the ImageInfo.js script. For more information on cod samples, see [JavaScript Debugger Example Scripts](javascript-debugger-example-scripts.md).
+
+```javascript
+// fieldType references basic types that should be present in **ANY** symbolic information.
+// Just grab the first module as the "reference module" for this purpose.  We cannot grab
+// "ntdll" generically as we want to avoid a situation in which the debugger opens a module (-z ...)
+// from failing.
+//
+var moduleName = contextInheritorModule.__ComparisonName;
+var typeObject = host.getModuleType(moduleName, field.fieldType, contextInheritorModule);
+var result = host.createTypedObject(addr, typeObject);
+
+```
+
 ## <span id="related_topics"></span>Related topics
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md)
