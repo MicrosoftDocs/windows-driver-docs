@@ -19,6 +19,10 @@ This section will cover how to set up and use a BM-64-EVB-C2 for testing with BT
 
 ## Getting Started
 
+> [!CAUTION]
+
+> Remove JP33 (if installed) before plugging board in to avoid destroying the board.
+
 In order to use the BM-64-EVB with BTP the firmware and EEPROM settings for the BM64 must be updated from the factory default.Additionally, the PIC microcontroller should also be updated to ensure stability.
 Download and extract the newest BM64 software kit from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64) on the *Documents / Software Libraries/Firmware* tab (DSPK v2.1.3 was used for this development).
 

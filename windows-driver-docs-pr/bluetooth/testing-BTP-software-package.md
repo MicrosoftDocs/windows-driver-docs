@@ -21,6 +21,7 @@ The Bluetooth Test Platform (BTP) software package contains tools for testing th
 
 | Version | Changes |
 |---------|---------|
+|1.5.0     | <ul><li>Added BTVS and BTETLParse diagnostic tools.</li><li>Several fixes and improvements to test reliability.</li></ul> |
 |1.4.0     | <ul><li>Added keyboard latency test to HID tests.</li><li>Added mouse tests to HID tests.</li><li>Added audio + HID scenario tests.</li><li>Added battery tests.</li><li>Fixed issue causing tests to fail to load when running in older Windows releases.</li><li>Fixed scripts that failed when running on non-native CMD/PowerShell environments.</li><li>Several fixes and improvements to test reliability.</li></ul> |
 |1.3.1     | <ul><li>Added audio tests capable of exercising A2DP and HFP.</li><li>Added audio volume validation and glitch detection via an FPGA on the Traduci.</li><li>Renamed tests to shorter and more user friendly names.</li><li>Several fixes and improvements to test reliability.</li></ul> |
 |1.2.1     | <ul><li>Moving BTP from private preview to public.</li><li>Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</li><li>Several fixes and improvements to test reliability.</li></ul>|
@@ -54,3 +55,5 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 | AudioHidScenarioTests | <ul><li>Test binary for Bluetooth Audio and HID scenario tests.</li><li>Can be run using TAEF.</li></ul> | TaefAudioHidScenarioTests.dll |
 | BatteryTests | <ul><li>Test binary for Bluetooth battery tests.</li><li>Can be run using TAEF.</li></ul> | TaefBatteryTests.dll |
 | TraduciCmd | <ul><li>Command line tool for querying and changing the state of the Traduci, including debug commands.</li><li>Used for firmware update to Traduci hardware.</li></ul> | TraduciCmd.exe |
+| BTETLParse | <ul><li>Command line tool for extracting HCI traces from supported ETL files.</li></ul> | BTETLParse.exe |
+| BTVS | <ul><li>Graphical tool for streaming live HCI traces in supported formats (such as Ellisys, Frontline, and Wireshark).</li><li>Only available for the x86 architecture.</li></ul> | btvs.exe |
