@@ -6,44 +6,50 @@ Virtual Machine Multiple Queues (VMMQ), formerly known as Hardware vRSS, is a ne
 
 VMMQ is available for the VPorts exposed in the host (root partition) regardless of whether the NIC is operating in SR-IOV or VMQ mode. VMMQ is a feature available to NDIS 6.60 drivers.
 
-# Handling RSS INF keywords for VMMQ
-
-If a NIC supports VMMQ, all [Standardized INF Keywords for RSS](standardized-inf-keywords-for-rss.md) should also be supported to provide future compatibility even if the OS doesn't not currently use them all.
-You should use the keywords as normal for RSS functionality except for: (other exceptions?)
-
--   **\*RSSProfile**: The “ClosestProcessor” profile should be supported and used as a policy for VMMQ.
-
--   **\*MaxRssProcessors**: When VMMQ is active, this keyword should not restrict the number of MSIx interrupt messages reported in [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities).
-
 # Advertising VMMQ capabilities
+
+Miniport drivers register the [Virtual Machine Multiple Queues (VMMQ)](ADD LINK) capability of a network interface card (NIC) during network adapter initialization.
 
 If the NIC supports VMMQ, the default VPort and at least one non-default VPort must support VMMQ.
 
-Miniport drivers advertise the NIC's VMMQ capability through an [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. The miniport driver must set the following fields as described:
+During miniport adapter initialization, the miniport driver must examine the **\*RssOnHostVPorts** INF keyword in order to determine if it should enable the VMMQ feature on the NIC. For more information on handling RSS keywords for VMMQ, see [Standardized INF keywords for VMMQ](ADD LINK).
+
+Additionally, the stack can only activate VMMQ on the NIC if the miniport adapter supports creating a NIC switch. NDIS can create a NIC switch on the miniport adapter when either the **\*SriovPreferred** INF keyword is set to **one** or **\*SriovPreferred** is set to **zero** and **\*RssOrVmqPreference** is set to **one**. For more information, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md) and [Standardized INF Keywords for VMQ](standardized-inf-keywords-for-vmq.md). 
+
+When the miniport driver configures the parameters for the NIC switch, it must set the fields of the [**NDIS\_NIC\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_parameters) structure as follows:
+
+1. Set the **Revision** member of **Header** to   **NDIS\_NIC\_SWITCH\_PARAMETERS\_REVISION\_2**.
+
+2. Set **NumQueuePairsForDefaultVPort** to the number of queue pairs assigned to a default VPort.
+
+Miniport drivers advertise the NIC's VMMQ capability during initialization through the [**NDIS\_NIC\_SWITCH\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_capabilities) structure. The miniport driver must initialize **NDIS\_NIC\_SWITCH\_CAPABILITIES** as follows:
 
 1. Set the **Revision** member of **Header** to **NDIS\_NIC\_SWITCH\_CAPABILITIES\_REVISION\_3**.
 
 2. Set the **NicSwitchCapabilities** flags as follows:
 
-    -  The driver must set NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL in order to specify that non-default VPorts can be created on the PF.
+   - Set NDIS\_NIC\_SWITCH\_CAPS\_SINGLE\_VPORT\_POOL to **one** to indicate that non-default VPorts can be created on the PF. The driver must set this flag. 
 
-    - If the driver sets NDIS\_NIC\_SWITCH\_CAPS\_ASYMMETRIC\_QUEUE\_PAIRS\_FOR\_NONDEFAULT\_VPORT\_SUPPORTED, NDIS can allocate an arbitrary number of VMMQ queues on each VPort. Otherwise, all non-default VPorts have the same maximum number of VMMQ queues as defined by the **MaxNumQueuePairsPerNonDefaultVPort** field. 
+   - Set NDIS\_NIC\_SWITCH\_CAPS\_ASYMMETRIC\_QUEUE\_PAIRS\_FOR\_NONDEFAULT\_VPORT\_SUPPORTED to indicate that NDIS can allocate an arbitrary number of VMMQ queues on each VPort. Otherwise, all non-default VPorts have the same maximum number of VMMQ queues as defined by the **MaxNumQueuePairsPerNonDefaultVPort** field. 
 
-    - If the driver sets NDIS\_NIC\_SWITCH\_CAPS\_RSS\_ON\_PF\_VPORTS\_ SUPPORTED, the NIC supports VMMQ for PF VPorts.
+    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_ON\_PF\_VPORTS\_SUPPORTED to **one** to indicate that the NIC supports VMMQ for PF VPorts.
+    
+    > [!NOTE]
+    > If any of the following five per PF VPort flags are not set, higher level drivers will use the values the miniport driver set when it specified the RSS parameters of the PF VPorts (including the default VPort).
 
-    - NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PARAMETERS\_PER\_PF\_VPORT\_SUPPORTED is superseded by the five flags below. The driver must set this flag to **zero** if any of the following five flags are set to **zero**.
+    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SUPPORTED to **one** to indicate that the NIC is able to maintain per PF VPort indirection tables. This flag must be set.
 
-      - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SUPPORTED to **one** if the NIC is able to maintain per PF VPort indirection tables.
+    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_FUNCTION\_SUPPORTED to **one** if the NIC supports setting a different hash function per PF VPort. If this flag is set, NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_KEY\_SUPPORTED must also be set.
 
-      - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_FUNCTION\_SUPPORTED to **one** if the NIC supports setting a different hash function per PF VPort. If this flag is set, NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_KEY\_SUPPORTED must be set as well.
+    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_TYPE\_SUPPORTED to **one** if the NIC supports setting a different hash type per PF VPort. 
 
-      - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_TYPE\_SUPPORTED to **one** if the NIC supports setting a different hash type per PF VPort. 
+    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_KEY\_SUPPORTED to **one** if the NIC supports setting a different hash secret key per PF VPort. This flag must be set if NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_FUNCTION\_SUPPORTED is set.
+  
+   > [!NOTE]
+   > NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_FUNCTION\_SUPPORTED, NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_TYPE\_SUPPORTED, and NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_KEY\_SUPPORTED must all be set to **zero** or all set to **one**. If they're all set to **zero**, software will re-calculate the hash. 
+    
 
-      - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_KEY\_SUPPORTED to **one** if the NIC supports setting a different hash secret key per PF VPort. This flag must be set if NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_FUNCTION\_SUPPORTED is set.
-
-      - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SIZE\_RESTRICTED to **one** if the NIC has a limitation on indirection table size for PF VPorts. This flag forces the issuer of an RSS OID to use a per-PF VPort indirection table with a size equal to number of VPort queues rounded up to the next power of two. This only applies to PF VPorts and doesn' t apply to VF VPorts. This flag can be combined with the NDIS_NIC_SWITCH_CAPS_ASYMMETRIC_QUEUE_PAIRS_FOR_NONDEFAULT_VPORT_SUPPORTED flag (different PF VPorts can have different numbers of queues). The flag prevents VMMQ users from performing fine-grained queue steering.
-
-      If any of these five per PF VPort flags are not set, when setting the RSS parameters of the PF VPorts including the default VPort, higher level drivers will use the same corresponding values. (what?)
+    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SIZE\_RESTRICTED to **one** if the NIC has a limitation on indirection table size for PF VPorts. This flag forces the issuer of an RSS OID to use a per-PF VPort indirection table with a size equal to number of VPort queues rounded up to the next power of two. This only applies to PF VPorts and doesn' t apply to VF VPorts. This flag can be combined with the NDIS_NIC_SWITCH_CAPS_ASYMMETRIC_QUEUE_PAIRS_FOR_NONDEFAULT_VPORT_SUPPORTED flag (different PF VPorts can have different numbers of queues). The flag prevents VMMQ users from performing fine-grained queue steering.
 
 1. Set **MaxNumVPorts** to specify the maximum number of VPorts.
 
@@ -59,38 +65,41 @@ Miniport drivers advertise the NIC's VMMQ capability through an [**NDIS\_NIC\_SW
 
 1. Set **MaxNumQueuePairsForDefaultVPort** to specify the maximum number of queue pairs that can be assigned to a default VPort during NIC Switch creation.
 
-The minimum VMMQ capability requirements in NDIS 6.60 are:
+After the VMMQ capabilities are advertised, NDIS is responsible for handling the [OID_GEN_RECEIVE_SCALE_CAPABILITIES](/windows-hardware/drivers/network/oid-gen-receive-scale-capabilities) OID when it is called on either the default VPort or a non-default VPort. When the miniport driver returns the RSS capabilities in the [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities) structure, it should not constrain the **NumberOfInterruptMessages** fields  by any of the standard RSS keywords (such as **\*MaxRssProcessors**). The upper level will incorporate this number into the host CPU allocation algorithm.
 
--   NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SUPPORTED to be set to”1”. In other words NDIS 6.60 requires support of per VPort indirection table.
+# Standardized INF keywords for VMMQ
 
--   The following three flags are either all set to “0” or all set to “1”: NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_FUNCTION\_SUPPORTED, NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_TYPE\_SUPPORTED, NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_KEY\_SUPPORTED.
+The **\*RssOnHostVPorts** standardized INF keyword is defined to enable or disable support for the network adapter [Virtual Machine Multiple Queues (VMMQ)](ADD LINK) feature.
 
--   If the three flags above are all set to “0”, software will re-calculate the hash.
+The **\*RssOnHostVPorts** INF keyword is an enumeration keyword. Enumeration standardized INF keywords have the following attributes:
 
--   NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PARAMETERS\_PER\_PF\_VPORT\_SUPPORTED to be set accordingly.
+SubkeyName: The name of the keyword that you must specify in the INF file.
 
--   [**NDIS\_NIC\_SWITCH\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_parameters)
+ParamDesc: The display text that is associated with the SubkeyName. 
 
-    -   **Header**-&gt;**Revision** – Set to  **NDIS\_NIC\_SWITCH\_PARAMETERS\_REVISION\_2**.
+Value: The enumeration integer value that is associated with each SubkeyName in the list. 
 
-    -   **NumQueuePairsForDefaultVPort** - Number of queue pairs assigned to a default VPort. New Field in NDIS 6.60.
+EnumDesc: The display text that is associated with each value that appears in the menu.
 
-During miniport adapter initialization, the miniport driver must examine the new **\*RssOnHostVPorts** keyword in order to determine if it should enable the VMMQ feature on the NIC.
+Default: The default value for the menu.
 
-| SubbkeyName       | ParamDesc          | Value       | EnumDesc |
+The following table describes the possible INF entries for the **\*RssOnHostVPorts** INF keyword.
+
+| SubkeyName       | ParamDesc          | Value       | EnumDesc |
 |-------------------|--------------------|-------------|----------|
 | \*RssOnHostVPorts | Virtual Switch RSS | 0 (Default) | Disabled |
 |                   |                    | 1           | Enabled  |
 
-Additionally, the stack can only activate VMMQ on the NIC if the miniport adapter supports creating a NIC switch. NDIS may attempt to create a NIC switch on the miniport adapter when either the **\*SriovPreferred** reserved registry keyword is set to 1 or **\*SriovPreferred** is set to 0 and **\*RssOrVmqPreferred** is set to 1.
+During miniport adapter initialization, the miniport driver must examine the **\*RssOnHostVPorts** keyword in order to determine if it should enable the VMMQ feature on the NIC.
 
-After capabilities are advertised as described above, NDIS is responsible for handling the [OID_GEN_RECEIVE_SCALE_CAPABILITIES](/windows-hardware/drivers/network/oid-gen-receive-scale-capabilities) OID when called on either default or non-default VPort.
+## Handling RSS INF keywords for VMMQ
 
--   [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities) -> **NumberOfInterruptMessages**
+If a NIC supports VMMQ, all [Standardized INF Keywords for RSS](standardized-inf-keywords-for-rss.md) should also be supported to provide future compatibility even if the OS doesn't not currently use them all.
+You should use the keywords as normal for RSS functionality except for:
 
-    -   When **\*RssOnHostVPorts** keyword is present, miniport should not constrain this field by any of the standard RSS keywords (like **\*MaxRssProcessors**)
+-   **\*RSSProfile**: The “ClosestProcessor” profile should be supported and used as a policy for VMMQ.
 
-    -   Upper level will incorporate this number into host CPU allocation algorithm
+-   **\*MaxRssProcessors**: When VMMQ is active, this keyword should not restrict the number of MSIx interrupt messages reported in [**NDIS\_RECEIVE\_SCALE\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_capabilities).
 
 # Allocation of VPorts
 
