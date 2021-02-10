@@ -16,7 +16,3 @@ These are the currently supported tests. Additional tests are planned and under 
 - [Audio Tests](testing-BTP-tests-audio.md)
 - [Audio and HID Scenario Tests](testing-BTP-tests-audio-hid.md)
 - [Battery Tests](testing-BTP-tests-battery.md)
-
->[!NOTE]
-> 
-> We recommend using build 21313 or later for the audio and audio HID tests.

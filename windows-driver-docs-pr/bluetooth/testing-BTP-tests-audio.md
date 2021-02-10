@@ -11,10 +11,6 @@ ms.localizationpriority: medium
 
 The BTP audio tests will test the ability of the local system to pair with a remote radio over BR/EDR and validate audio functionality including volume validation and audio glitch detection.
 
->[!NOTE]
-> 
-> We recommend using build 21313 or later for audio tests.
-
 ## Setting Up
 
 When using a radio with the Traduci, first check that the green power indicator, an optional yellow test LED, and 3 orange LEDs on the Traduci are on. Confirm that the SUT's Bluetooth radio is powered on and that the appropriate radio(s) are correctly plugged in to the Traduci. Currently the RN52 radio can **only** be plugged into JA. More detailed information on setting up can be found at [Setting up BTP](testing-BTP-setup.md).
