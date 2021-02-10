@@ -15,13 +15,13 @@ The BTP software package contains several tools to be used for testing Bluetooth
 
 The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included.
 
-[![Download the Bluetooth Test Platform Software Package](images/download.png)](//download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.4.0.msi)  Download the Bluetooth Test Platform Software Package.
+[![Download the Bluetooth Test Platform Software Package](images/download.png)](//download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.5.1msi)  Download the Bluetooth Test Platform Software Package.
 
 ## Version Updates
 
 | Version | Changes |
 |---------|---------|
-|1.5.0     | <ul><li>Added BTVS and BTETLParse diagnostic tools.</li><li>Several fixes and improvements to test reliability.</li></ul> |
+|1.5.1     | <ul><li>Added BTVS and BTETLParse diagnostic tools.</li><li>Several fixes and improvements to test reliability.</li></ul> |
 |1.4.0     | <ul><li>Added keyboard latency test to HID tests.</li><li>Added mouse tests to HID tests.</li><li>Added audio + HID scenario tests.</li><li>Added battery tests.</li><li>Fixed issue causing tests to fail to load when running in older Windows releases.</li><li>Fixed scripts that failed when running on non-native CMD/PowerShell environments.</li><li>Several fixes and improvements to test reliability.</li></ul> |
 |1.3.1     | <ul><li>Added audio tests capable of exercising A2DP and HFP.</li><li>Added audio volume validation and glitch detection via an FPGA on the Traduci.</li><li>Renamed tests to shorter and more user friendly names.</li><li>Several fixes and improvements to test reliability.</li></ul> |
 |1.2.1     | <ul><li>Moving BTP from private preview to public.</li><li>Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</li><li>Several fixes and improvements to test reliability.</li></ul>|
