@@ -4,7 +4,7 @@ description: Using Static tools and CodeQL on Windows driver source code to disc
 keywords:
 - dynamic verification tools WDK
 - static verification tools WDK
-ms.date: 12/10/2020
+ms.date: 02/03/2021
 ms.localizationpriority: medium
 ---
 
@@ -121,7 +121,7 @@ In this example, CodeQL uses the MSBuild compiler to process the C++ code to pre
 
 ### Example
 
-Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](../develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned.
+Using a command line environment that is used for building driver source code, such as the [Enterprise Windows Driver Kit (EWDK)](../develop/using-the-enterprise-wdk.md), navigate to the CodeQL tools folder where the repository was cloned. If you are building the driver using Visual Studio, you can configure the CodeQL queries to run as a post build event as discussed in [Visual Studio Post-Build Event](#visual-studio-post-build-event) in this topic.
 
 This example will process the evaluate the kmdfecho.sln driver sample, which is available on GitHub.
 
@@ -154,7 +154,6 @@ At this point in our example setup, the following directories will be present.
 | Databases              | C:\codeql-home\databases           |
 | Driver code under test | C:\codeql-home\drivers\kmdf        |
 | Query suites with driver-specific queries | C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\windows-drivers\suites      |
-
 
 ## Perform Analysis
 
@@ -369,7 +368,7 @@ These queries are a part of the *windows_driver_mustfix.qls* query suite in the 
 
 ## View Analysis
 
-The results of running the analysis command in the previous section can be viewed in a [SARIF](https://codeql.github.com/docs/codeql-overview/codeql-glossary/#sarif-file) file format.  Details regarding SARIF output can be found at [SARIF Overview](https://codeql.github.com/docs/codeql-cli/sarif-output/#sarif-output).
+The results of running the analysis command in the previous section can be viewed in a [SARIF](https://codeql.github.com/docs/codeql-overview/codeql-glossary/#sarif-file) file format.  Details regarding SARIF output can be found at [SARIF Output](https://codeql.github.com/docs/codeql-cli/sarif-output/). Information on the SARIF Standard is available at [OASIS Static Analysis Results Interchange Format (SARIF)](https://github.com/oasis-tcs/sarif-spec).
 
 The SARIF file contains a **result** section for each query that was run and includes details regarding the completed analysis.  For example, if the query found a vulnerability, the SARIF file will include details as to what the vulnerability is and where it found the defect. If no vulnerabilities are found, the results section will be blank.
 
@@ -388,3 +387,55 @@ CodeQL results follow the same model of using a DVL to show that the driver bein
 Place the .sarif file in the same directory as the .vcxproj file for which a DVL is being generated.  The exact name of the results file does not matter, as long as the file ends with *".sarif"*. The ability to submit a SARIF results file is available in the WDK, preview build 20190 and later.
 
 Instructions for how to generate a DVL can be found on [Creating a Driver Verification Log](../develop/creating-a-driver-verification-log.md). Guidance for where to place the DVL for consumption by the Static Tools Logo HLK Test can be found in [Running the test](/windows-hardware/test/hlk/testref/6ab6df93-423c-4af6-ad48-8ea1049155ae#running-the-test).
+
+## Visual Studio Post-Build Event
+
+If you are building the driver using Visual Studio, you can configure the CodeQL queries to run as a post build event.
+
+In this example, a small batch file is created in the target location and called as a post build event. For more information about Visual Studio C++ build events, see [Specifying build events](/cpp/build/specifying-build-events).
+
+1. Create a small batch file that re-creates the CodeQL database and then runs the desired queries using that up to date database.  In this example, the batch file will be named `RunCodeQLRebuildQuery.bat`. Modify the paths shown in the example  batch file to match your directory locations.
+
+```command
+ECHO ">>> Running CodeQL Security Rule V 1.0 <<<"
+ECHO ">>> Removing previously created rules database <<<"
+rmdir /s/q C:\codeql-home\databases\kmdf
+CALL C:\codeql-home\codeql\codeql\codeql.cmd database create -l=cpp -s="C:\codeql-home\drivers\kmdf" -c "msbuild /p:Configuration=Release /p:Platform=x64 C:\codeql-home\drivers\kmdf\kmdfecho.sln /t:rebuild /p:PostBuildEventUseInBuild=false " "C:\codeql-home\databases\kmdf" -j 0
+CALL C:\codeql-home\codeql\codeql\codeql database analyze "C:\codeql-home\databases\kmdf" "C:\codeql-home\Windows-Driver-Developer-Supplemental-Tools\codeql\codeql-queries\cpp\ql\src\Likely Bugs\Underspecified Functions" --format=sarifv2.1.0 --output=C:\codeql-home\databases\kmdf.sarif -j 0 --rerun
+ECHO ">>> Loading SARIF Results in Visual Studio <<<"
+CALL devenv /Edit C:\codeql-home\databases\kmdf.sarif
+SET ERRORLEVEL = 0
+```
+
+2. The [devenv.exe / Edit](/visualstudio/ide/reference/edit-devenv-exe) option is used in the batch file to open the SARIF results file in the existing instance of Visual Studio. To view the SARIF results install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer). Refer to the instructions on that page for more information.
+
+3. In the driver project, navigate to project properties. In the  **Configuration** pull down, select the build configuration that you wish to check with CodeQL. For example for the *Release* configuration. Because creating the CodeQL database and running the queries takes a few minutes, you may decide to not run CodeQL on the Debug configurations of your project.
+
+4. Select **Build Events** and **Post-Build Event** in the driver project properties.
+
+5. Provide a path to the batch file and a description of the post build event.
+
+![Visual Studio post build event configuration showing a batch file configured as a command line option](images/codeql-visual-studio-post-build-event.png)
+
+6. When the project builds, at the end of the build output, the results from the running the batch file will be displayed.
+
+```command
+...
+
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.ql.
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.ql.
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.ql.
+1>Starting evaluation of codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.ql.
+1>[1/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooManyArguments.bqrs.
+1>[2/4 eval 4.4s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\TooFewArguments.bqrs.
+1>[3/4 eval 4.5s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\ImplicitFunctionDeclaration.bqrs.
+1>[4/4 eval 5.2s] Evaluation done; writing results to codeql-cpp\Likely Bugs\Underspecified Functions\MistypedFunctionArguments.bqrs.
+1>Shutting down query evaluator.
+1>Interpreting results.
+1>">>> Loading SARIF Results in Visual Studio <<<"
+```
+
+7. Review the SARIF file results and work to remediate any issues that are identified. For more information, see [View Analysis](#view-analysis) earlier in this topic.
+
+
+
