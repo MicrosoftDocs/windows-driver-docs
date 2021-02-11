@@ -14,7 +14,17 @@ The following figure shows the network packet receive path within the VMMQ inter
 
 ![diagram illustrating network packet data paths with vmmq](images/vmmq-architecture.png)
 
-On the receive path, when a packet arrives at a NIC that supports VMMQ the NIC matches the destination MAC address to find the target VPort. The NIC then uses the [RSS parameters](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) of the VPort (the secret key, hash function, and hash type) to calculate the RSS hash value of the packet. The NIC uses this hash value to index the indirection table associated with the VPort. The values in the indirection table are used to assign the received data to a CPU. The target CPU is interrupted and the received packet is indicated to the host network stack. When indicating a received NBL, the miniport adapter sets the VPort ID and RSS related out-of-band (OOB) fields to the appropriate values.
+On the receive path, when a packet arrives at a NIC that supports VMMQ the NIC:
+
+1. Matches the destination MAC address to find the target VPort. 
+
+1. Uses the [RSS parameters](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) of the VPort (the secret key, hash function, and hash type) to calculate the RSS hash value of the packet. 
+
+1. Uses the hash value to index the indirection table associated with the VPort. The values in the indirection table are used to assign the received data to a CPU.
+
+1. Interrupts the target CPU and the received packet is indicated to the host network stack. 
+
+When indicating a received NBL, the miniport adapter sets the VPort ID and RSS related out-of-band (OOB) fields to the appropriate values.
 
 On the transmit path, the NIC must use the RSS hash value in the packet (if present) as an index into the RSS indirection table for the VPort. The NIC uses this indirection table value to determine the processor that handles the transmit complete interrupts and DPCs for the packet.
 
