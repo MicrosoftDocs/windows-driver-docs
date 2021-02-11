@@ -1,7 +1,6 @@
 ---
 title: Using TraceView
 description: Using TraceView
-ms.assetid: 2feedbe0-ee42-487d-b8b9-06c2bc4532ee
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Specifying GDI Hardware-Accelerated Rendering Operations
 description: Specifying GDI Hardware-Accelerated Rendering Operations
-ms.assetid: 71eb9cdf-0448-48d1-835a-84bbbba13670
 keywords:
 - rendering operations with GDI hardware acceleration WDK display
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Installing Pages for a Port Monitor
 description: Installing Pages for a Port Monitor
-ms.assetid: acb1a6f9-65d1-4097-b702-28dc4da8e4cf
 keywords:
 - installing customized print Web pages WDK
 - customized print Web pages WDK , installing

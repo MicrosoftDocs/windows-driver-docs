@@ -1,7 +1,6 @@
 ---
 title: Proximity Sensor Property
 description: This property is an optional enumeration property.
-ms.assetid: 574955CC-F8BF-4E8C-9A9A-E06802C5DB0C
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

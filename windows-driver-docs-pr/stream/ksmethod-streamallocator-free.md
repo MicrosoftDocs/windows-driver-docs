@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_STREAMALLOCATOR\_FREE
 description: The KSMETHOD\_STREAMALLOCATOR\_FREE method is used by a client to free a frame back to the given allocator.
-ms.assetid: 90d42ae6-4aa2-46fd-b10c-7f07b77c86f1
 keywords: ["KSMETHOD_STREAMALLOCATOR_FREE Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Buffering Isochronous DMA Transfers for IEEE 1394 Devices
 description: Buffering Isochronous DMA Transfers for IEEE 1394 Devices
-ms.assetid: 5a08303b-8a4a-4c55-ba48-c4d5ea06157e
 keywords:
 - isochronous I/O WDK IEEE 1394 bus , buffering DMA transfers
 - buffers WDK IEEE 1394 bus

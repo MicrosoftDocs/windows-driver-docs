@@ -1,7 +1,6 @@
 ---
 title: ScanRegionHeight element
 description: The required ScanRegionHeight element specifies the height of the scan region in the slow scan direction.
-ms.assetid: b0b5b385-d0dc-4e12-b21e-e45b317f40e0
 keywords: ["ScanRegionHeight element Imaging Devices"]
 topic_type:
 - apiref

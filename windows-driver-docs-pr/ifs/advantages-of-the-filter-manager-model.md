@@ -1,7 +1,6 @@
 ---
 title: Advantages of the Filter Manager Model
 description: Advantages of the Filter Manager Model
-ms.assetid: 8e3449dc-7c78-4f78-97c4-89b20001e91b
 keywords:
 - filter manager WDK file system minifilter , advantages
 ms.date: 10/16/2019

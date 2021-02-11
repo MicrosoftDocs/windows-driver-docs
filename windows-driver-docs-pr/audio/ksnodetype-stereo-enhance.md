@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_STEREO\_ENHANCE
 description: KSNODETYPE\_STEREO\_ENHANCE
-ms.assetid: 2abf791c-ca07-4b3b-88b4-38d815df2736
 keywords: ["KSNODETYPE_STEREO_ENHANCE Audio Devices"]
 topic_type:
 - apiref

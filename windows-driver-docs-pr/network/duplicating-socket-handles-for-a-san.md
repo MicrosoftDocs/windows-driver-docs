@@ -1,7 +1,6 @@
 ---
 title: Duplicating Socket Handles for a SAN
 description: Duplicating Socket Handles for a SAN
-ms.assetid: d8e8cb6d-fcdb-4121-9a44-a2bc884ab620
 keywords:
 - Windows Sockets Direct WDK , socket handles
 - SAN sockets WDK , duplicating socket handles

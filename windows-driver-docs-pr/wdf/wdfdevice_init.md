@@ -1,7 +1,6 @@
 ---
 title: WDFDEVICE_INIT structure
 description: The WDFDEVICE_INIT structure is an opaque structure that is defined and allocated by the framework.
-ms.assetid: 38a8d316-6d66-4c1a-bb1c-93e2893542e8
 keywords:
  - WDFDEVICE_INIT structure
 ms.date: 02/23/2018

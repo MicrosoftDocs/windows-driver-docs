@@ -1,7 +1,6 @@
 ---
 title: Notification Channel
 description: Notification Channel
-ms.assetid: 3161342a-0737-4f3b-bb16-32d6949bceea
 keywords:
 - spooler notification WDK print , channel
 - print spooler notification WDK , channel

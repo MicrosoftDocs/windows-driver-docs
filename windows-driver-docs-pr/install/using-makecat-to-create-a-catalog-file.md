@@ -1,7 +1,6 @@
 ---
 title: Using MakeCat to Create a Catalog File
 description: Using MakeCat to Create a Catalog File
-ms.assetid: c9f9360b-2b1d-4060-af4d-8d281319e181
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

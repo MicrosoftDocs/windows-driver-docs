@@ -1,7 +1,6 @@
 ---
 title: SM\_GetBindingCapability function
 description: The SM\_GetBindingCapability method retrieves the binding capabilities for the indicated port.
-ms.assetid: 11b7df8b-2694-4c49-a97a-ed475f3e841f
 keywords: ["SM_GetBindingCapability function Storage Devices"]
 topic_type:
 - apiref

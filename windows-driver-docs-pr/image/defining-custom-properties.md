@@ -1,7 +1,6 @@
 ---
 title: Defining Custom Properties
 description: Defining Custom Properties
-ms.assetid: c3b69482-12ad-4b9f-8c0c-5ce315032d51
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

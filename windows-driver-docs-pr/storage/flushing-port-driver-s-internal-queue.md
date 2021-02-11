@@ -1,7 +1,6 @@
 ---
 title: Flushing Port Driver's Internal Queue
 description: Flushing Port Driver's Internal Queue
-ms.assetid: b0e6762e-0380-4ff5-aac7-36bdb5a60aa7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

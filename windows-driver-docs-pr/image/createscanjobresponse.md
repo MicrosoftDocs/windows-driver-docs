@@ -1,7 +1,6 @@
 ---
 title: CreateScanJobResponse element
 description: The required CreateScanJobResponse element contains the WSD Scan Service's response to a client's scan request.
-ms.assetid: a832bdc2-9c47-41da-ac78-a844b8f84ec1
 keywords: ["CreateScanJobResponse element Imaging Devices"]
 topic_type:
 - apiref

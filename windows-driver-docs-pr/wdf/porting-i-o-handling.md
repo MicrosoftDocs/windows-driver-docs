@@ -1,7 +1,6 @@
 ---
 title: Porting I/O
 description: Porting I/O
-ms.assetid: D65B85C4-401F-4143-9626-5C16E24925A0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

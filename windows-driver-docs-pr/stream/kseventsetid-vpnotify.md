@@ -1,7 +1,6 @@
 ---
 title: KSEVENTSETID\_VPNotify
 description: KSEVENTSETID\_VPNotify
-ms.assetid: 97511a75-b66b-40c1-b508-a82e3a10832e
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

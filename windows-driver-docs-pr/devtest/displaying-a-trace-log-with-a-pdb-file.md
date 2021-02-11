@@ -1,7 +1,6 @@
 ---
 title: Displaying a Trace Log with a PDB File
 description: Displaying a Trace Log with a PDB File
-ms.assetid: 267a5d34-6fd0-43b6-aa07-5154bdb2b9a7
 keywords:
 - program database symbol files WDK
 - PDB symbol files WDK

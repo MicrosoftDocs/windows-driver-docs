@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_EMPTY
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_EMPTY identifier represents a special base-data-type identifier that indicates that a property does not exist.
-ms.assetid: 23d48659-e512-4557-a78b-d3afca7020a3
 keywords: ["DEVPROP_TYPE_EMPTY Device and Driver Installation"]
 topic_type:
 - apiref

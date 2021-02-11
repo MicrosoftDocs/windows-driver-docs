@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_STRING_LIST
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_STRING_LIST property type represents the base-data-type identifier that indicates that the data type is a [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types)-typed list of Unicode strings.
-ms.assetid: 91cfba02-cdd4-4918-8fc1-7e7793058074
 keywords: ["DEVPROP_TYPE_STRING_LIST Device and Driver Installation"]
 topic_type:
 - apiref

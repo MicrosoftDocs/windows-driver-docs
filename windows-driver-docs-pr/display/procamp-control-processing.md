@@ -1,7 +1,6 @@
 ---
 title: ProcAmp Control Processing
 description: ProcAmp Control Processing
-ms.assetid: feb66d91-1b25-415b-83f4-a75361b9dc11
 keywords:
 - DirectX Video Acceleration WDK Windows 2000 display , ProcAmp
 - Video Acceleration WDK DirectX , ProcAmp

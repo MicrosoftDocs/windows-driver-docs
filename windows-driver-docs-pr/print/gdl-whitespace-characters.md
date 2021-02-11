@@ -1,7 +1,6 @@
 ---
 title: GDL Whitespace Characters
 description: GDL Whitespace Characters
-ms.assetid: 703c41c0-3e12-465a-823f-c32990a52382
 keywords:
 - constructs WDK GDL , whitespace characters
 - continuation linebreak WDK GDL

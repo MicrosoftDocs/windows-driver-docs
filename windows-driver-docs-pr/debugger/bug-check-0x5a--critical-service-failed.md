@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x5A CRITICAL_SERVICE_FAILED
 description: The CRITICAL_SERVICE_FAILED bug check has a value of 0x0000005A.This bug check appears very infrequently.
-ms.assetid: 9a0657b0-943b-4c25-bb30-f04377fdaee9
 keywords: ["Bug Check 0x5A CRITICAL_SERVICE_FAILED", "CRITICAL_SERVICE_FAILED"]
 ms.date: 05/23/2017
 topic_type:

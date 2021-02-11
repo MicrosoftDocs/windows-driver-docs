@@ -1,7 +1,6 @@
 ---
 title: Macroblock Control Commands
 description: Macroblock Control Commands
-ms.assetid: be70ec8f-1821-4075-b5e3-b7574fbe4e27
 keywords:
 - macroblocks WDK DirectX VA , commands
 - DXVA_MBctrl_I_HostResidDiff_1
@@ -42,7 +41,7 @@ The values for these structure members and flags are shown in the following sect
 
 ### <span id="DXVA_MBctrl_I_HostResidDiff_1"></span><span id="dxva_mbctrl_i_hostresiddiff_1"></span><span id="DXVA_MBCTRL_I_HOSTRESIDDIFF_1"></span>DXVA\_MBctrl\_I\_HostResidDiff\_1
 
-The **DXVA\_MBctrl\_I\_HostResidDiff\_1**. The following structure members and flags must equal the indicated values:
+The [**DXVA\_MBctrl\_I\_HostResidDiff\_1**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_mbctrl_i_hostresiddiff_1) structure is used for intra pictures with host-based *residual difference decoding*. The following structure members and flags must equal the indicated values:
 
 -   **bPicIntra** must equal 1 (intra pictures).
 
@@ -90,7 +89,7 @@ The [**DXVA\_MBctrl\_P\_OffHostIDCT\_1**](/windows-hardware/drivers/ddi/dxva/ns-
 
 The following structure members and flags must equal the indicated values:
 
--   **bPicIntra** member of the **DXVA\_PictureParameters** or concealment motion vectors in *I pictures*).
+-   **bPicIntra** member of the [**DXVA\_PictureParameters**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters) structure must equal zero (decoding for P and *B pictures* or concealment motion vectors in *I pictures*).
 
 -   **bChromaFormat** must equal 1 (4:2:0 sampling).
 
@@ -103,6 +102,4 @@ The following structure members and flags must equal the indicated values:
 -   At least one of **bPicBinPB** (B-picture in PB-frame motion compensation not used) and **bPic4MVallowed** (four forward-reference motion vectors per macroblock not used) must equal zero.
 
 -   **bConfigResidDiffHost** must equal zero (off-host residual difference decoding).
-
- 
 

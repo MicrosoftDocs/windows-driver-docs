@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhuberr
 description: The usbkd.usbhuberr command displays a USB hub error record.
-ms.assetid: 5BB87FA2-0531-400C-95B3-325EE4DDB649
 keywords: ["usbkd.usbhuberr Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

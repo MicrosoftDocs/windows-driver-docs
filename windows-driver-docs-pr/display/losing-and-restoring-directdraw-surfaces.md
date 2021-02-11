@@ -1,7 +1,6 @@
 ---
 title: Losing and Restoring DirectDraw Surfaces
 description: Losing and Restoring DirectDraw Surfaces
-ms.assetid: 74203932-8a30-44ea-8d0d-45265dd2e74a
 keywords:
 - drawing surfaces WDK DirectDraw , losing
 - DirectDraw surfaces WDK Windows 2000 display , losing

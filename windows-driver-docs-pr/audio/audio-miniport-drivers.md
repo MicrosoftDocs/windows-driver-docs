@@ -1,7 +1,6 @@
 ---
 title: Audio Miniport Drivers
 description: Audio Miniport Drivers
-ms.assetid: cf52759e-5da6-41a2-994d-4be15de9ae3d
 keywords:
 - WDM audio drivers WDK , miniport drivers
 - audio drivers WDK , miniport drivers

@@ -1,8 +1,7 @@
 ---
 title: Example 45 Add and Remove Driver Packages
 description: Example 45 Add and Remove Driver Packages
-ms.assetid: 36da02d7-0b8f-40ed-a594-0e2374595782
-ms.date: 04/20/2017
+ms.date: 01/25/2021
 ms.localizationpriority: medium
 ---
 
@@ -28,12 +27,10 @@ Driver Package 'oem2.inf' added.
 Before copying it to the driver store, Windows compares the binary version of the INF file to the binary versions of the INF files in the driver store to be sure that it is not adding a duplicate file. For example, if you repeat the command to add Toaster.inf to the driver store, DevCon does not create a new OEM\*.inf file. It just reports the name of the existing file, as shown in the following DevCon output.
 
 ```
-devcon dp_add C:\WinDDK\5322\src\general\toaste
-r\inf\i386\toaster.inf
+devcon dp_add C:\WinDDK\5322\src\general\toaster\inf\i386\toaster.inf
 Driver Package 'oem2.inf' added.
 
-devcon dp_add C:\WinDDK\5322\src\general\toaste
-r\inf\i386\toaster.inf
+devcon dp_add C:\WinDDK\5322\src\general\toaster\inf\i386\toaster.inf
 Driver Package 'oem2.inf' added.
 ```
 
@@ -53,8 +50,6 @@ The following 3rd party Driver Packages are on this machine:
 oem2.inf
     Provider: Microsoft
     Class: unknown
-    Date: 12/10/2004
-    Version: 2.0.1403.0
 ```
 
 This information indicates that the driver package supplied by Microsoft with the unspecified device class (Toaster) is named OEM2.inf. You can use this information to delete the driver package associated with the file.
@@ -74,8 +69,7 @@ Driver Package 'oem2.inf' deleted.
 The OEM\*.inf file name is required in the [**DevCon Dp\_delete**](devcon-dp-delete.md) command. If you try to use the original name of the INF file, the command fails, as shown in the following DevCon output.
 
 ```
-devcon dp_delete C:\WinDDK\5322\src\general\toa
-ster.inf
+devcon dp_delete C:\WinDDK\5322\src\general\toaster.inf
 Deleting the specified Driver Package from the machine failed.
 devcon failed.
 ```

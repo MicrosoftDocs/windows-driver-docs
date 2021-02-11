@@ -1,7 +1,6 @@
 ---
 title: Color Management for Displays
 description: Color Management for Displays
-ms.assetid: a0c3f35f-3741-4d5a-b7ae-dd177c719508
 keywords:
 - display drivers WDK Windows 2000 , color management
 - color management WDK Windows 2000 display

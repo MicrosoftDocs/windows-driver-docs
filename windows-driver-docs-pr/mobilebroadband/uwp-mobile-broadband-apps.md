@@ -1,7 +1,6 @@
 ---
 title: UWP mobile broadband apps overview
 description: UWP mobile broadband apps overview
-ms.assetid: bb02397b-0da5-4e09-be1c-8812abec6fd5
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

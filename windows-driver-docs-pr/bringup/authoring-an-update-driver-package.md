@@ -1,7 +1,6 @@
 ---
 title: Authoring an update driver package
 description: This topic provides information about authoring an update driver package and provides example INF file settings and configurations.
-ms.assetid: 9018900A-3670-4C78-9094-1DDAB82847DD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

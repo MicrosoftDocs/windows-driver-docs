@@ -1,7 +1,6 @@
 ---
 title: USBCAMD2 Features
 description: USBCAMD2 Features
-ms.assetid: e800948a-6903-496e-9561-697ff5ccd1d7
 keywords:
 - Windows 2000 Kernel Streaming Model WDK , USBCAMD2 minidriver library
 - Streaming Model WDK Windows 2000 Kernel , USBCAMD2 minidriver library

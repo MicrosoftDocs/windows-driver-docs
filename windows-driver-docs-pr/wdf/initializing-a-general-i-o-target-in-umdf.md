@@ -1,7 +1,6 @@
 ---
 title: Initializing a General I/O Target in UMDF
 description: Initializing a General I/O Target in UMDF
-ms.assetid: cf1b39c3-4c82-411b-8eef-117ac0fe793e
 keywords:
 - general I/O targets WDK UMDF , initializing
 - initializing general I/O targets WDK UMDF

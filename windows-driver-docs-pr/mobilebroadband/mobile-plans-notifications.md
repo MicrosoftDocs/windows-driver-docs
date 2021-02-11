@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans Notifications
 description: This topic describes how to configure toast notifications in Mobile Plans.
-ms.assetid: 20A59FB6-9EEF-4B55-940C-79B6FB2C99CA
 keywords:
 - Windows Mobile Plans toast notifications
 ms.date: 06/11/2019

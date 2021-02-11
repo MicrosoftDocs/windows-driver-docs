@@ -1,7 +1,6 @@
 ---
 title: ContrastSupported element
 description: The required ContrastSupported element specifies whether the scan device supports user control of the scan contrast setting.
-ms.assetid: 9b865f9f-b5f6-4bb3-9f24-3df896845e96
 keywords: ["ContrastSupported element Imaging Devices"]
 topic_type:
 - apiref

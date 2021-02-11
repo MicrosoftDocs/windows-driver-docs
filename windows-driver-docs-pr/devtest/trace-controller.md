@@ -1,7 +1,6 @@
 ---
 title: Trace Controller
 description: Trace Controller
-ms.assetid: 4c2e88ba-c07e-4079-a401-20040f558971
 keywords:
 - trace controllers WDK
 - controllers WDK software tracing

@@ -1,7 +1,6 @@
 ---
 title: Connect to hardware
 description: This topic shows you how the sensor driver determines the assigned hardware resources and connects to the I2C driver controller.
-ms.assetid: 88D9162B-2B99-4608-B31A-48B1810747A9
 ms.date: 07/20/2018
 ms.localizationpriority: medium
 ---

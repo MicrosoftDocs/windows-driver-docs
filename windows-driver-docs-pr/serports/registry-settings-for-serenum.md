@@ -1,7 +1,6 @@
 ---
 title: Registry Settings for Serenum
 description: Registry Settings for Serenum
-ms.assetid: c8a8f1b7-ea58-49ed-98e0-40297ec9a769
 keywords:
 - Serenum driver WDK , registry settings
 - registry WDK serial devices

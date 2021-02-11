@@ -1,7 +1,6 @@
 ---
 title: ScalingWidth element (output document)
 description: The required ScalingWidth element contains the range of allowable values for scaling the width of the output document.
-ms.assetid: 8b15f4b9-8537-479e-8745-0c8b35883bf5
 keywords: ["ScalingWidth element Imaging Devices"]
 topic_type:
 - apiref

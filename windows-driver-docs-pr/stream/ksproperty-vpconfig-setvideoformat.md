@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT
 description: The KSPROPERTY\_VPCONFIG\_SETVIDEOFORMAT property sets the video format. The format must match one that an earlier KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT Get request returned.
-ms.assetid: f701ad32-ba85-4766-ac6b-11744af8fc0d
 keywords: ["KSPROPERTY_VPCONFIG_SETVIDEOFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

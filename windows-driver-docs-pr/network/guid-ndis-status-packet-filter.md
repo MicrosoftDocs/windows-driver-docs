@@ -1,7 +1,6 @@
 ---
 title: GUID_NDIS_STATUS_PACKET_FILTER
 description: This topic describes the GUID_NDIS_STATUS_PACKET_FILTER GUID for the NDIS WMI interface.
-ms.assetid: d842862b-5b9f-46bf-aaa9-4542b3a3e047
 keywords:
 - GUID_NDIS_STATUS_PACKET_FILTER, WDK GUID_NDIS_STATUS_PACKET_FILTER network drivers
 ms.date: 11/22/2017

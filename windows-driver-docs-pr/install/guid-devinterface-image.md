@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_IMAGE
 description: GUID_DEVINTERFACE_IMAGE
-ms.assetid: 2768f0ef-3765-4a66-b480-0f75a7c49c3c
 keywords: ["GUID_DEVINTERFACE_IMAGE Device and Driver Installation"]
 topic_type:
 - apiref

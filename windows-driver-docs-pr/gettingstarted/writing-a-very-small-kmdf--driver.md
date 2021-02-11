@@ -1,7 +1,6 @@
 ---
 title: Write a Hello World Windows Driver (KMDF)
 description: This topic describes how to write a Windows driver using Kernel-Mode Driver Framework (KMDF). You'll start with a Microsoft Visual Studio template and then deploy and install your driver on a separate computer.
-ms.assetid: B4200732-67B5-4BD9-8852-81387912A9A4
 keywords:
 - KMDF Hello World
 ms.date: 04/20/2018
@@ -60,6 +59,10 @@ Now that you've created your empty Hello World project and added the Driver.c so
     #include <ntddk.h>
     #include <wdf.h>
     ```
+
+    > [!TIP]
+    > If you can't add `Ntddk.h`, open **Configuration -> C/C++ -> General -> Additional Include Directories** and add `C:\Program Files (x86)\Windows Kits\10\Include\<build#>\km`, replacing `<build#>` with the appropriate directory in your WDK installation.
+    > 
 
     [Ntddk.h](/windows-hardware/drivers/ddi/ntddk) contains core Windows kernel definitions for all drivers, while [Wdf.h](/windows-hardware/drivers/ddi/_wdf) contains definitions for drivers based on the Windows Driver Framework (WDF). 
 

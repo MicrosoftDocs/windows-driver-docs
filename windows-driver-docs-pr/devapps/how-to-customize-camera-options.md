@@ -1,7 +1,6 @@
 ---
 title: How to customize camera options with a UWP device app
 description: In Windows 8.1, UWP device apps let device manufacturers customize the flyout that displays more camera options in some camera apps.
-ms.assetid: 4BA34A3F-3C0D-4DDC-BA0A-E62AE9A6A93A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -47,7 +46,7 @@ Before you get started:
 1. Get your development PC set up. See [Getting started](getting-started.md) for info about downloading the tools and creating a developer account.
 2. Associate your app with the store. See [Create a UWP device app](step-1--create-a-uwp-device-app.md) for info about that.
 3. Create device metadata for your printer that associates it with your app. See [Create device metadata](step-2--create-device-metadata.md) for more about that.
-4. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](https://go.microsoft.com/fwlink/p/?LinkID=299845).
+4. Build the UI for the main page of your app. All UWP device apps can be launched from Start, where they'll be displayed full-screen. Use the Start experience to highlight your product or services in a way that matches the specific branding and features of your devices. There are no special restrictions on the type of UI controls it can use. To get started with the design of the full-screen experience, see the [Microsoft Store design principles](/windows/uwp/design/).
 
 ## Step 1: Register the extension
 

@@ -1,7 +1,6 @@
 ---
-title: Managing Contexts in a Minifilter Driver
-description: Managing Contexts in a Minifilter Driver
-ms.assetid: c7186886-f083-45c9-a39d-3f8ce7df35bb
+title: About minifilter contexts
+description: Defines minifilter context and lists types of minifilter contexts
 keywords:
 - file system minifilter drivers WDK , contexts
 - minifilter drivers WDK , context
@@ -11,56 +10,41 @@ ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# Managing Contexts in a Minifilter Driver
+# About minifilter contexts
 
+A *context* is a structure that is defined by the minifilter driver and that can be associated with a filter manager object.
+The filter manager provides support that allows minifilter drivers to associate contexts with objects to preserve state across I/O operations.
 
-## <span id="ddk_writing_a_driverentry_routine_for_a_minifilter_driver_if"></span><span id="DDK_WRITING_A_DRIVERENTRY_ROUTINE_FOR_A_MINIFILTER_DRIVER_IF"></span>
+## Types of contexts
 
+Minifilters can create and set contexts for the following objects:
 
-A *context* is a structure that is defined by the minifilter driver and that can be associated with a filter manager object. Minifilter drivers can create and set contexts for the following objects:
+- Files (Windows Vista and later)
+- Instances
+- Streams
+- Stream handles (file objects)
+- Transactions (Windows Vista and later)
+- Volumes
 
--   Files (Windows Vista and later only.)
+Volume contexts must be allocated from nonpaged pool. All other context types can be allocated from paged or nonpaged pool.
 
--   Instances
+## Filter driver context sample code
 
--   Volumes
+See the [CTX sample](https://github.com/microsoft/Windows-driver-samples/tree/master/filesys/miniFilter/ctx) for an example of a minifilter driver that uses contexts.
 
--   Streams
+## How to manage contexts
 
--   Stream handles (file objects)
+The following sections describe how to manage filter contexts:
 
--   Transactions (Windows Vista and later only.)
+- [Registering Context Types](registering-context-types.md)
+- [Creating Contexts](creating-contexts.md)
+- [Setting Contexts](setting-contexts.md)
+- [Getting Contexts](getting-contexts.md)
+- [Referencing Contexts](referencing-contexts.md)
+- [Releasing Contexts](releasing-contexts.md)
+- [Deleting Contexts](deleting-contexts.md)
+- [Freeing Contexts](freeing-contexts.md)
+- [File System Support for Contexts](file-system-support-for-contexts.md)
+- [Best Practices](best-practices.md)
 
-Except for volume contexts, which must be allocated from nonpaged pool, contexts can be allocated from paged or nonpaged pool.
-
-The filter manager deletes contexts automatically when the objects that they are attached to are deleted, when a minifilter driver instance is detached from a volume, or when the minifilter driver is unloaded.
-
-This section includes:
-
-[Registering Context Types](registering-context-types.md)
-
-[Creating Contexts](creating-contexts.md)
-
-[Setting Contexts](setting-contexts.md)
-
-[Getting Contexts](getting-contexts.md)
-
-[Referencing Contexts](referencing-contexts.md)
-
-[Releasing Contexts](releasing-contexts.md)
-
-[Deleting Contexts](deleting-contexts.md)
-
-[Freeing Contexts](freeing-contexts.md)
-
-[File System Support for Contexts](file-system-support-for-contexts.md)
-
-[Best Practices](best-practices.md)
-
- 
-
- 
-
-
-
-
+For information regarding the support provided by the filter manager, see [Supporting minifilter contexts](managing-contexts.md).

@@ -1,7 +1,6 @@
 ---
 title: al (List Aliases)
 description: The al command displays a list of all currently defined user-named aliases.
-ms.assetid: 40e20edb-4545-4c5a-bb56-61e00b064efc
 keywords: ["al (List Aliases) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

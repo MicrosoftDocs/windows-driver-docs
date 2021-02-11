@@ -1,7 +1,6 @@
 ---
 title: Handling OID_NIC_SWITCH_ALLOCATE_VF Requests
 description: Handling OID_NIC_SWITCH_ALLOCATE_VF Requests
-ms.assetid: B48A19D5-A768-4614-961D-1BD00762B6D0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

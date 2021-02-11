@@ -1,7 +1,6 @@
 ---
 title: Camera Control Properties
 description: Camera Control Properties
-ms.assetid: 36a57245-e89e-4418-b0c4-a4c1479413b2
 keywords:
 - camera control properties WDK video capture
 - control properties WDK video capture

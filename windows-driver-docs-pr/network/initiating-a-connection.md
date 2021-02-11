@@ -1,7 +1,6 @@
 ---
 title: Initiating a Connection
 description: Initiating a Connection
-ms.assetid: 5e5ab033-b01a-45e2-acd4-7ea8931a621d
 keywords:
 - SAN connection setup WDK , initiating connections
 - initiating SAN connections

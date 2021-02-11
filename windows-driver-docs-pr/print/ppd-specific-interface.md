@@ -1,7 +1,6 @@
 ---
 title: PPD-Specific Interface
 description: PPD-Specific Interface
-ms.assetid: 12d5baa2-4fd4-4eca-84c7-1ee168ee8259
 keywords:
 - PostScript Printer Driver WDK print , PPD-specific interface
 - Pscript WDK print , PPD-specific interface
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-The IPrintCoreUI2 COM Interface files. Six of these methods are supported in the [IPrintCorePS2 COM Interface](iprintcoreps2-com-interface.md). This section describes the PPD-specific behavior of these methods.
+The [IPrintCoreUI2 COM Interface](iprintcoreui2-com-interface.md) supports nine methods that a user interface plug-in can call to access information in *PPD* files. Six of these methods are supported in the [IPrintCorePS2 COM Interface](iprintcoreps2-com-interface.md). This section describes the PPD-specific behavior of these methods.
 
 ### IPrintCoreUI2 Interface PPD Methods
 

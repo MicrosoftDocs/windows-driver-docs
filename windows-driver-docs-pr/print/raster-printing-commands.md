@@ -1,7 +1,6 @@
 ---
 title: Raster Printing Commands
 description: Raster Printing Commands
-ms.assetid: e46d85b8-e3fa-437e-8b39-26525cea02d3
 keywords:
 - raster printing commands WDK Unidrv
 - printer commands WDK Unidrv , raster

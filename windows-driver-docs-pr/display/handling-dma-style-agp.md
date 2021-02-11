@@ -1,7 +1,6 @@
 ---
 title: Handling DMA-style AGP
 description: Handling DMA-style AGP
-ms.assetid: f43f662f-0036-4725-ad6b-5b836b23a734
 keywords:
 - DMA-style AGP WDK DirectDraw
 - display memory WDK DirectDraw , DMA-style AGP

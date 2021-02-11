@@ -1,7 +1,6 @@
 ---
 title: WdfIoQueueRetrieveFoundRequest rule (kmdf)
 description: The WdfIoQueueRetrieveFoundRequest rule specifies that WdfIoQueueRetrieveFoundRequest method is called only after WdfIoQueueFindRequest is called and returned STATUS\_SUCCESS and no WdfObjectDereference is called on the same request.
-ms.assetid: CF545174-5E6D-429B-AC6D-BA7A84852FC1
 ms.date: 05/21/2018
 keywords: ["WdfIoQueueRetrieveFoundRequest rule (kmdf)"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_SERVICE_STATUS
 description: WDI_TLV_P2P_SERVICE_STATUS is a TLV that contains the Service Status of a service.
-ms.assetid: C7001661-8496-4C5B-9AD2-EF92332AF377
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_SERVICE_STATUS Network Drivers Starting with Windows Vista

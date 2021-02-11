@@ -1,7 +1,6 @@
 ---
 title: Ksmedia.h
 description: This section contains reference topics for the Ksmedia.h header.
-ms.assetid: D5654BC1-45F5-4EC9-9E93-60318EF4C159
 ms.date: 11/27/2018
 ms.localizationpriority: medium
 ---

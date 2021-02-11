@@ -1,7 +1,6 @@
 ---
 title: 802.11 WLAN Adapter Arrival
 description: 802.11 WLAN Adapter Arrival
-ms.assetid: 4d533f32-0f98-4a65-ac1b-7a470e54ad29
 keywords:
 - adapters WDK 802.11 WLAN , arrivals
 - WLAN adapters WDK , arrivals

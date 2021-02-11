@@ -1,7 +1,6 @@
 ---
 title: Responding to Sets and Queries in an Intermediate Driver
 description: Responding to Sets and Queries in an Intermediate Driver
-ms.assetid: ccc99542-4a36-4bf9-8a19-4e7d385399da
 keywords:
 - query operations WDK NDIS intermediate
 - set operations WDK NDIS intermediate

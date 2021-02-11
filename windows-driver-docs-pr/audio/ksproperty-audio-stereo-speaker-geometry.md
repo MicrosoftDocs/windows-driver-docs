@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY
 description: The KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY property is used in combination with KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG to implement the DirectSound speaker-configuration property for hardware-accelerated 3D audio.
-ms.assetid: 4a870368-6a9b-41bc-80c3-da6ad1f2454b
 keywords: ["KSPROPERTY_AUDIO_STEREO_SPEAKER_GEOMETRY Audio Devices"]
 topic_type:
 - apiref

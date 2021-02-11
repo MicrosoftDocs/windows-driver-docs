@@ -1,7 +1,6 @@
 ---
 title: Learning About Filter Drivers
 description: Learning About Filter Drivers
-ms.assetid: 029bbf2b-7286-494c-96e4-f6f99a97436d
 keywords:
 - connectionless drivers WDK networking
 - network drivers WDK , types

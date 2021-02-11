@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e837f8f2-68a5-4f9a-a253-dfcf33ea7047
 keywords: ["get_Duplex method Print Devices", "get_Duplex method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Duplex method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Minidrivers and the HID class driver
 description: Operation of the HID class driver
-ms.assetid: 3A8F5545-F8EB-47E2-989D-7DE83E32110E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ The HID class driver does the following:
 
     The HID class driver transparently manages and routes all communication between upper-level drivers and applications and the underlying input devices that support HID collections. It manages the different data protocols that are used by different input devices and input queues that support more than one open file on the same HID collection.
 
-    The upper-level interface to HID collections consists of the [HID class driver IOCTLs](/windows-hardware/drivers/ddi/index), the [HIDClass support routines](/windows-hardware/drivers/ddi/index), and the [HIDClass structures](/windows-hardware/drivers/ddi/index).
+    The upper-level interface to HID collections consists of the [HID class driver IOCTLs](/windows-hardware/drivers/ddi/_hid/#hid-class-driver-ioctls), the [HIDClass support routines](/windows-hardware/drivers/ddi/_hid/#hidclass-support-routines), and the [HIDClass structures](/windows-hardware/drivers/ddi/_hid/#structures).
 
 -   Communicates with a HID minidriver by calling the minidriver's standard driver routines.
 
@@ -125,7 +124,7 @@ A HID minidriver device extension is device-specific, and is only used by a HID 
 
 ### <a href="" id="using-the-hid-device-extension-structure"></a>Using the HID\_DEVICE\_EXTENSION structure
 
-A HID minidriver must use a **HID\_DEVICE\_EXTENSION**). The HID class driver sets the members of this structure when it initializes the FDO. A HID minidriver must not change the information in this structure.
+A HID minidriver must use a [**HID\_DEVICE\_EXTENSION**](/windows-hardware/drivers/ddi/hidport/ns-hidport-_hid_device_extension) structure as the layout for the device extension created by the HID class driver for a functional device object (*FDO*). The HID class driver sets the members of this structure when it initializes the FDO. A HID minidriver must not change the information in this structure.
 
 A HID\_DEVICE\_EXTENSION structure contains the following members:
 
@@ -252,6 +251,4 @@ In compliance with WDM requirements, a HID minidriver sends power requests down 
 -   Sends the power IRP down the FDO's device stack
 
 Typically, the HID minidriver passes power requests down the device stack without additional processing.
-
- 
 

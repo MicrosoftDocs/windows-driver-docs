@@ -1,7 +1,6 @@
 ---
 title: Language Monitor Functions
 description: Language Monitor Functions
-ms.assetid: ffe1a52f-69cc-4346-945f-3f1bc0a1a91e
 keywords:
 - language monitors WDK print , functions
 ms.date: 04/20/2017

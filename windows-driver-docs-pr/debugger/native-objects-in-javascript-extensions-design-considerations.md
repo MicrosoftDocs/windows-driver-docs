@@ -1,7 +1,6 @@
 ---
 title: Native Debugger Objects in JavaScript Extensions - Design and Testing Considerations
 description: Native debugger objects represent various constructs of the debugger environment. This topic describes design and testing considerations for native debugger objects in JavaScript extensions.
-ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEEA
 ms.date: 09/07/2019
 ms.localizationpriority: medium
 ---

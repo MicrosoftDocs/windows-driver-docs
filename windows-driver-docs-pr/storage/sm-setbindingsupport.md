@@ -1,7 +1,6 @@
 ---
 title: SM\_SetBindingSupport function
 description: The SM\_SetBindingSupport method sets the binding capabilities for the indicated port.
-ms.assetid: 31a37fa5-db3c-4944-bf93-e221fb42dc6d
 keywords: ["SM_SetBindingSupport function Storage Devices"]
 topic_type:
 - apiref

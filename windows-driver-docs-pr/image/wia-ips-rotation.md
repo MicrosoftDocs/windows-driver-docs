@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_ROTATION
 description: The WIA\_IPS\_ROTATION property contains the current rotation setting for image rotation, if it is implemented. The WIA minidriver creates and maintains this property.
-ms.assetid: 5d117d55-b7e4-46eb-aeb5-54636749081f
 keywords: ["WIA_IPS_ROTATION Imaging Devices"]
 topic_type:
 - apiref

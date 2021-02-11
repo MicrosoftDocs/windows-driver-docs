@@ -1,7 +1,6 @@
 ---
 title: ElementData for ScannerElements element
 description: The required ElementData element contains the data that is returned for a scanner-related schema request.
-ms.assetid: 852a7f8a-cd87-467b-8793-8a7d7943f2a9
 keywords: ["ElementData for ScannerElements element Imaging Devices"]
 topic_type:
 - apiref

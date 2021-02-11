@@ -1,12 +1,13 @@
 ---
 title: Buy hardware for using MITT
 description: To you use Multiple Interface Test Tool (MITT), order you need a MITT board and bus-specific adapter boards that plug into ports on the MITT board. The type of adapter board depends on the bus you want to test.
-ms.assetid: 268217FF-0F0B-4175-B2DE-A45FAF94EA79
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Buy hardware for using MITT
+
+The Multiple Interface Test Tool (MITT) is a test tool for validating hardware and software for simple peripheral buses, such as UART, I2C, SPI, and GPIO. MITT uses the FPGA development board and includes a software package with firmware, test binaries, and drivers that provide an inexpensive test solution.
 
 To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-specific adapter boards that plug into ports on the MITT board. The type of adapter board depends on the bus you want to test.
 
@@ -54,4 +55,4 @@ To use the Multiple Interface Test Tool (MITT), you need a MITT board and bus-sp
 
 ## Related topics
 
-[Testing with Multi Interface Test Tool (MITT)](./testing-with-multi-interface-test-tool--mitt-.md)
+[Testing with Multi Interface Test Tool (MITT)]()

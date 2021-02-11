@@ -1,7 +1,6 @@
 ---
 title: Filters Used with the Video Capture Devices
 description: Filters Used with the Video Capture Devices
-ms.assetid: 797f855d-5c6f-45bc-8b4a-f03543fa196d
 keywords:
 - filter graph configurations WDK video capture , DirectShow
 - DirectShow WDK video capture

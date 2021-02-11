@@ -1,7 +1,6 @@
 ---
 title: Examining the Stack Trace
 description: Examining the Stack Trace
-ms.assetid: ca203f29-841f-411e-915a-81abaa96a8e6
 keywords: ["Debugger Engine API, stack trace"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

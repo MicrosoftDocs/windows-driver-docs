@@ -1,7 +1,6 @@
 ---
 title: customUI element
 description: The optional customUI element specifies a custom user interface to be displayed on a client computer.
-ms.assetid: 4408dcf2-0928-4ecb-97eb-0027eceef457
 keywords: ["customUI element Print Devices"]
 topic_type:
 - apiref

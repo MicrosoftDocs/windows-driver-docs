@@ -1,7 +1,6 @@
 ---
 title: WDI message structure
 description: This section describes the structure for WDI command messages
-ms.assetid: 09663C5F-A458-479F-B450-A994486A6C18
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

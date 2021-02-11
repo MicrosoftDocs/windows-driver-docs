@@ -1,7 +1,6 @@
 ---
 title: Scanner Configuration Elements
 description: Scanner Configuration Elements
-ms.assetid: f8adb58e-389e-4411-bbc0-3f74bba691df
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

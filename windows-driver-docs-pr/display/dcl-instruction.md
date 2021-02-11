@@ -1,7 +1,6 @@
 ---
 title: DCL Instruction Format
 description: DCL Instruction Format
-ms.assetid: 2833fe6a-f430-4a34-936f-04e997063671
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

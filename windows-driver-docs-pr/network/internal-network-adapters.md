@@ -1,7 +1,6 @@
 ---
 title: Internal Network Adapters
 description: Internal Network Adapters
-ms.assetid: 4E4B0EC9-8E4C-47FC-B608-EC6D18367A79
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

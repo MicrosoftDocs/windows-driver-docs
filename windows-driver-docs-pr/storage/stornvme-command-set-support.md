@@ -1,7 +1,6 @@
 ---
 title: StorNVMe command set support
 description: Describes the command set support provided by StoreNVMe
-ms.assetid: c0bcee11-ea66-4726-99a2-ad18256cf616
 ms.date: 08/07/2020
 ms.localizationpriority: medium
 ---

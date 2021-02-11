@@ -1,7 +1,6 @@
 ---
 title: Porting a Driver from WDM to WDF
 description: The topics in this section describe how to convert an existing WDM driver to a Kernel-Mode Driver Framework (KMDF) driver or a User-Mode Driver Framework (UMDF) version 2 driver.
-ms.assetid: 3B4D677D-2FCC-45A1-95B4-DA9CA9D7B452
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

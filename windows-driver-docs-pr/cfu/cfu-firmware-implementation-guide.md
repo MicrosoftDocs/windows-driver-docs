@@ -12,6 +12,9 @@ ms.localizationpriority: medium
 
 Component Firmware Update (CFU) is a protocol and a process for submitting new firmware images to be installed on the target device.
 
+> [!NOTE]
+> CFU is available in Windows 10, version 2004 (Windows 10 May 2020 Update) and later versions.
+
 CFU submissions to the resident firmware are file pairs, one file is the offer part, the other file is the content part. Each CFU submission (each offer and content pair) is required to be created off-line before the submission is sent to the firmware that implements the CFU process.
 
 In the sample [Firmware](https://github.com/Microsoft/CFU/tree/master/Firmware) source code in the CFU repository on GitHub, the general implementation agnostic common code for CFU is contained in `ComponentFwUpdate.c`. All other files are helper files that can be updated or modified to the developer's unique implementation.

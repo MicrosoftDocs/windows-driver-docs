@@ -1,7 +1,6 @@
 ---
 title: Network Module Attachment
 description: Network Module Attachment
-ms.assetid: 4b3602dd-a9cf-4cb6-bfeb-d2d74d2f391d
 keywords:
 - network modules WDK Network Module Registrar , attachment
 - provider modules WDK Network Module Registrar , attachment

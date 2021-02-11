@@ -1,7 +1,6 @@
 ---
 title: Introduction to User Interface Plug-Ins
 description: Introduction to User Interface Plug-Ins
-ms.assetid: 7f01bd14-bcc5-4c26-a9b8-a12aa1ffe242
 keywords:
 - user interface plug-ins WDK print , about user interface plug-ins
 - UI plug-ins WDK print , about user interface plug-ins

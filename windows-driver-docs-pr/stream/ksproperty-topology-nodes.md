@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TOPOLOGY\_NODES
 description: KSPROPERTY\_TOPOLOGY\_NODES provides a list of the topology nodes and node types GUIDs supported by the filter.
-ms.assetid: 3b07b4d5-b222-44f1-be62-3addf3a87847
 keywords: ["KSPROPERTY_TOPOLOGY_NODES Streaming Media Devices"]
 topic_type:
 - apiref

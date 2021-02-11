@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_SRC
 description: KSNODETYPE\_SRC
-ms.assetid: 461ce0a2-02c3-4e05-a47d-7c36370de86d
 keywords: ["KSNODETYPE_SRC Audio Devices"]
 topic_type:
 - apiref

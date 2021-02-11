@@ -1,7 +1,6 @@
 ---
 title: Co-installer Operation
 description: Co-installer Operation
-ms.assetid: a7f52125-b435-4963-85dc-712700ba9fe9
 keywords:
 - co-installers WDK device installations , how it works
 - co-installers WDK device installations , examples
@@ -23,7 +22,7 @@ Co-installers are called by SetupAPI, as shown in the following figure.
 
 ![diagram illustrating how co-installers participate in device installation](images/coinsts.png)
 
-The unshaded boxes represent the components that the operating system supplies for the [system-supplied device setup classes](/previous-versions/ff553419(v=vs.85)). The shaded boxes represent the components that you can provide. If you create a custom device setup class, you can also supply a class installer. However, you rarely need to create a new device setup class, because almost every device can be associated with one of the system-supplied device setup classes. For more information about Windows components, see [Device Installation Overview](overview-of-device-and-driver-installation.md).
+The unshaded boxes represent the components that the operating system supplies for the [system-supplied device setup classes](./system-defined-device-setup-classes-reserved-for-system-use.md). The shaded boxes represent the components that you can provide. If you create a custom device setup class, you can also supply a class installer. However, you rarely need to create a new device setup class, because almost every device can be associated with one of the system-supplied device setup classes. For more information about Windows components, see [Device Installation Overview](overview-of-device-and-driver-installation.md).
 
 Co-installers can be provided for a specific device (*device-specific co-installer*) or for a device setup class (*class co-installer*). SetupAPI calls a device-specific co-installer only when installing the device for which the co-installer is registered. The operating system and vendors can register zero or more device-specific co-installers for a device. SetupAPI calls a class co-installer when installing any device of the device setup class for which the co-installer is registered. The operating system and vendors can register one or more class co-installers for a device setup class. In addition, a class co-installer can be registered for one or more setup classes.
 
@@ -84,6 +83,4 @@ Co-installer postprocessing is similar to driver [**IoCompletion**](/windows-har
 For postprocessing, **SetupDiCallClassInstaller** calls co-installers in reverse order. If all the co-installers in the previous figure had returned ERROR_DI_POSTPROCESSING_REQUIRED, **SetupDiCallClassInstaller** would call Device_Coinstaller_1 first for postprocessing, followed by Class_Coinstaller_2, and then Class_Coinstaller_1. Class Installers do not request postprocessing; only co-installers do.
 
 A co-installer that requests postprocessing is called even if a previous co-installer failed the install request.
-
- 
 

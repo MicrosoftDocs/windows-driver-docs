@@ -1,7 +1,6 @@
 ---
 title: PCI-Based TV Capture
 description: PCI-Based TV Capture
-ms.assetid: ae97d5f7-82de-4d6e-9835-ff4c7427f333
 keywords:
 - filter graph configurations WDK video capture , PCI-based TV capture
 - PCI-based TV capture WDK video capture

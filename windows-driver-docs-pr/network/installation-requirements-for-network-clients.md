@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Network Clients
 description: Installation Requirements for Network Clients
-ms.assetid: 175f9006-d77b-41ff-875e-c64842ff5cb9
 keywords:
 - network client installation requirements WDK
 - client installation requirements WDK networking

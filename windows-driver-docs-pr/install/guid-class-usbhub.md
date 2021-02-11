@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_USBHUB
 description: GUID_CLASS_USBHUB
-ms.assetid: 77232e67-9c8d-4054-b020-2739457d678d
 keywords: ["GUID_CLASS_USBHUB Device and Driver Installation"]
 topic_type:
 - apiref

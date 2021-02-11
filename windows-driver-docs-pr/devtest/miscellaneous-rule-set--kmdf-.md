@@ -1,7 +1,6 @@
 ---
 title: Miscellaneous rule set (KMDF)
 description: Use these rules to verify that your driver correctly follows a general set of requirements for the proper handling of device objects, keys, and that the driver does not makes calls to DDIs that are not appropriate for a non-PnP driver or for a non-FDO driver that is not a power policy owner.
-ms.assetid: B8F9FBE1-ED27-47EC-ACFC-8BD354A5E72D
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -49,6 +48,10 @@ Use these rules to verify that your driver correctly follows a general set of re
 <tr class="even">
 <td align="left"><p><a href="kmdf-nonpnpdrvpowerpolicyownerapi.md" data-raw-source="[&lt;strong&gt;NonPnPDrvPowerPolicyOwnerAPI&lt;/strong&gt;](kmdf-nonpnpdrvpowerpolicyownerapi.md)"><strong>NonPnPDrvPowerPolicyOwnerAPI</strong></a></p></td>
 <td align="left"><p>The <a href="kmdf-nonpnpdrvpowerpolicyownerapi.md" data-raw-source="[&lt;strong&gt;NonPnPDrvPowerPolicyOwnerAPI&lt;/strong&gt;](kmdf-nonpnpdrvpowerpolicyownerapi.md)"><strong>NonPnPDrvPowerPolicyOwnerAPI</strong></a> rule specifies that non-PnP drivers cannot call certain DDIs related to power management.</p></td>
+</tr>
+<tr class="odd">
+<td align="left"><p><a href="kmdf-unsafeallocatepool.md" data-raw-source="[&lt;strong&gt;UnSafeAllocatePool&lt;/strong&gt;](kmdf-unsafeallocatepool.md)"><strong>UnSafeAllocatePool</strong></a></p></td>
+<td align="left"><p>The <a href="kmdf-unsafeallocatepool.md" data-raw-source="[&lt;strong&gt;UnSafeAllocatePool&lt;/strong&gt;](kmdf-unsafeallocatepool.md)"><strong>UnSafeAllocatePool</strong></a> rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory.</p></td>
 </tr>
 </tbody>
 </table>

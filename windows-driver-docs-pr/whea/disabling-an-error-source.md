@@ -1,7 +1,6 @@
 ---
 title: Disabling an Error Source
 description: Disabling an Error Source
-ms.assetid: a481ac98-0ff1-4583-a81a-1d2e4f968111
 keywords:
 - error sources WDK WHEA , disabling
 - Windows Hardware Error Architecture WDK , disabling error sources

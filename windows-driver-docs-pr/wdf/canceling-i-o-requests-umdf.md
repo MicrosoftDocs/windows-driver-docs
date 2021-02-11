@@ -1,7 +1,6 @@
 ---
 title: Canceling I/O Requests in UMDF
 description: Canceling I/O Requests in UMDF
-ms.assetid: 4f69903b-00ef-4b47-a564-aaa7d076481b
 keywords:
 - I/O requests WDK UMDF , canceling
 - request processing WDK UMDF , canceling requests

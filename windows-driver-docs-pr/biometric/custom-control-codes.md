@@ -1,7 +1,6 @@
 ---
 title: Custom Control Codes
 description: vendors can define custom control codes
-ms.assetid: 66eebb4b-ee1e-42d2-9a4b-98a79a0f7b75
 keywords:
 - biometric drivers WDK , control codes
 ms.date: 11/13/2017

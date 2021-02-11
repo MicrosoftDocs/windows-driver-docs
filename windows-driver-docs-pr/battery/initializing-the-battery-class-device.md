@@ -1,7 +1,6 @@
 ---
 title: Initializing the Battery Class Device
 description: Initializing the Battery Class Device
-ms.assetid: d385533e-790a-47b3-a3d2-d620cbd40a4d
 keywords:
 - battery class drivers WDK , device initializations
 - battery miniclass drivers WDK , registering

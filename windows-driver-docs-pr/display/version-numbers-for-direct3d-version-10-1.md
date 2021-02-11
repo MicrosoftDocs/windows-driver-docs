@@ -1,7 +1,6 @@
 ---
 title: Version Numbers for Direct3D Version 10.1
 description: Version Numbers for Direct3D Version 10.1
-ms.assetid: a121900a-49e9-40f6-a3a6-d391e3bf1e37
 keywords:
 - Direct3D version 10.1 WDK display , version numbers
 - version numbers WDK display

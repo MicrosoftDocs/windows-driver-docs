@@ -4,7 +4,6 @@ description: Returns a value of '4' to inform USBMon that the print job must be 
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 6E56330E-BDD9-4EDC-A006-CA1D8A58DE32
 keywords: ["AbortTheJob method Print Devices", "AbortTheJob method Print Devices , IPrinterScriptUsbJobContextReturnCodes interface", "IPrinterScriptUsbJobContextReturnCodes interface Print Devices , AbortTheJob method"]
 topic_type:
 - apiref

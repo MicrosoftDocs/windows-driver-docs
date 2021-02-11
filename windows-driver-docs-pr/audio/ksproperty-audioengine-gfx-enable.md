@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_GFXENABLE
 description: The KSPROPERTY\_AUDIOENGINE\_GFXENABLE property request allows the audio driver to retrieve or alter the state of the audio engine node, regarding its global effect processing abilities.
-ms.assetid: 313A5919-FA92-484D-B5AB-A1417A0A2076
 keywords: ["KSPROPERTY_AUDIOENGINE_GFXENABLE Audio Devices"]
 topic_type:
 - apiref

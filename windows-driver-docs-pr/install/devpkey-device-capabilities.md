@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Capabilities
 description: DEVPKEY_Device_Capabilities
-ms.assetid: 8bda0c77-b711-41a9-9feb-52b22de224f0
 keywords: ["DEVPKEY_Device_Capabilities Device and Driver Installation"]
 topic_type:
 - apiref

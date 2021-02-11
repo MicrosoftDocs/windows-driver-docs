@@ -1,7 +1,6 @@
 ---
 title: Issuing Commands to Communicate with Devices
 description: Issuing Commands to Communicate with Devices
-ms.assetid: 8bea8be8-998d-4f90-92ab-4f0f8be1d01f
 keywords:
 - NDIS-WDM miniport drivers WDK networking , device communication
 - lower edge of NDIS miniport drivers WDK networking , device communication

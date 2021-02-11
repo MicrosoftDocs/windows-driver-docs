@@ -1,7 +1,6 @@
 ---
 title: Calculate characters and segments of a draft SMS
 description: Calculate characters and segments of a draft SMS
-ms.assetid: abbec0b0-dfa8-43e9-8b48-e99680d56b42
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

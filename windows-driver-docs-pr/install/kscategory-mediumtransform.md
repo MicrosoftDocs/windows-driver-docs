@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_MEDIUMTRANSFORM
 description: KSCATEGORY_MEDIUMTRANSFORM
-ms.assetid: a57c0dd5-48b1-4f58-ac3a-e1f175a228f0
 keywords: ["KSCATEGORY_MEDIUMTRANSFORM Device and Driver Installation"]
 topic_type:
 - apiref

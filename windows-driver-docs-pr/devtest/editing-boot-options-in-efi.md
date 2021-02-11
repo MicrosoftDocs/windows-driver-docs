@@ -1,7 +1,6 @@
 ---
 title: Editing Boot Options in EFI
 description: Editing Boot Options in EFI
-ms.assetid: 0fdd01b3-7475-4959-87d8-5ec8ae65fea0
 keywords:
 - NVRAM boot options WDK , editing
 - EFI NVRAM boot options WDK , editing

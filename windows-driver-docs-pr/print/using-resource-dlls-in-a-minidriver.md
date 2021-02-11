@@ -1,7 +1,6 @@
 ---
 title: Using Resource DLLs in a Minidriver
 description: Using Resource DLLs in a Minidriver
-ms.assetid: b63c48bb-3321-45e0-b37c-a9612a95cc24
 keywords:
 - GPD files WDK Unidrv , resource DLLs
 - resource DLLs WDK Unidrv

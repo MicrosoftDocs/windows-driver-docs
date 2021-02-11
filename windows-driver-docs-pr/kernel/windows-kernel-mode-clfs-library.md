@@ -1,7 +1,6 @@
 ---
 title: Windows Kernel-Mode CLFS Library
 description: Windows Kernel-Mode CLFS Library
-ms.assetid: 4da3cb49-dc20-4713-813b-ff458c99ab90
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

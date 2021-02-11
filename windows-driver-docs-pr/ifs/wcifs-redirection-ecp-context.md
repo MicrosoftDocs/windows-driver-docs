@@ -1,7 +1,6 @@
 ---
 title: WCIFS\_REDIRECTION\_ECP\_CONTEXT structure
 description: Describes the redirection state of a file for a specific create operation.
-ms.assetid: 6101490D-54B9-4A34-ADB5-9CC2B855691D
 keywords: ["WCIFS_REDIRECTION_ECP_CONTEXT structure Installable File System Drivers", "PWCIFS_REDIRECTION_ECP_CONTEXT structure pointer Installable File System Drivers"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Code integrity checks
 description: Code integrity checks for Driver Verifier
-ms.assetid: ad6c4762-354d-446d-bcda-a2e99c37c589
 keywords:
 - Code integrity checks for Driver Verifier
 ms.date: 09/14/2017 

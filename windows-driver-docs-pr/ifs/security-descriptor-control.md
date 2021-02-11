@@ -1,7 +1,6 @@
 ---
 title: SECURITY\_DESCRIPTOR\_CONTROL
 description: SECURITY\_DESCRIPTOR\_CONTROL
-ms.assetid: 6a7fe617-156d-4eb0-83f7-df78104acbde
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

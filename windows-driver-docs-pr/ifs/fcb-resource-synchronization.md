@@ -1,7 +1,6 @@
 ---
 title: FCB Resource Synchronization
 description: FCB Resource Synchronization
-ms.assetid: 8355907e-e313-4e54-a63f-a82d9ce0d31b
 keywords:
 - RDBSS WDK file systems , FCB resource synchronization
 - Redirected Drive Buffering Subsystem WDK file systems , FCB resource synchronization

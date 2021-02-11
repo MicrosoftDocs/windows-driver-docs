@@ -1,7 +1,6 @@
 ---
 title: Location (staple)
 description: This property contains all the value entries that pertain to the location of staples on output pages.
-ms.assetid: cbe6ec7f-36dd-484e-8db6-42e91e69577c
 ms.date: 07/07/2020
 ms.localizationpriority: medium
 ---

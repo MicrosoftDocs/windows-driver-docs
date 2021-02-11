@@ -1,7 +1,6 @@
 ---
 title: INF Version Section
 description: By convention, the Version section appears first in INF files. Every INF file must have this section.
-ms.assetid: 53e30950-28a3-4ae3-a351-a917b02c84a5
 keywords:
 - INF Version Section Device and Driver Installation
 topic_type:
@@ -64,7 +63,7 @@ Some class installers put additional requirements on how the signature value mus
 An INF must supply OS-specific installation information by appending system-defined extensions to its *DDInstall* sections, whether the *signature-name* is <strong>$Windows NT$</strong>or **$Chicago$**. (See [Creating INF Files for Multiple Platforms and Operating Systems](creating-inf-files-for-multiple-platforms-and-operating-systems.md) for a discussion of these extensions.)
 
 <a href="" id="class-class-name"></a>**Class=**<em>class-name</em>  
-For any standard type of device, this specifies the name of the [device setup class](./overview-of-device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in *Devguid.h*. For more information, see [System-Supplied Device Setup Classes](/previous-versions/ff553419(v=vs.85)).
+For any standard type of device, this specifies the name of the [device setup class](./overview-of-device-setup-classes.md) for the type of device that is installed by using this INF file. This name is usually one of the system-defined class names, such as **Net** or **Display,** which are listed in *Devguid.h*. For more information, see [System-Supplied Device Setup Classes](./system-defined-device-setup-classes-reserved-for-system-use.md).
 
 If an INF specifies a **Class,** it should also specify the corresponding system-defined GUID value for its **ClassGUID** entry. Specifying the matching GUID value for a device of any predefined device setup class can install the device and its drivers faster because this helps the system setup code to optimize its INF searching.
 
@@ -218,6 +217,4 @@ Floppy_Description = "Adaptec Drivers Disk"
 [**SourceDisksFiles**](inf-sourcedisksfiles-section.md)
 
 [**Strings**](inf-strings-section.md)
-
- 
 

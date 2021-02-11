@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_VIDEO\_ENCODER
 description: CODECAPI\_VIDEO\_ENCODER
-ms.assetid: e08f26ff-1e11-42a4-a9f8-3af9b885a901
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

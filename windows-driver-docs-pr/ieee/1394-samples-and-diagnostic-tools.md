@@ -1,7 +1,6 @@
 ---
 title: 1394 Samples and Diagnostic Tools
 description: 1394 Samples and Diagnostic Tools
-ms.assetid: e3ce71da-8c24-405b-b734-98a8c4f45e6b
 keywords:
 - IEEE 1394 WDK buses , samples
 - 1394 WDK buses , samples

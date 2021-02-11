@@ -1,7 +1,6 @@
 ---
 title: Ks.h
 description: This section contains reference topics for the Ks.h header.
-ms.assetid: 8A4058E3-4232-4C0E-80AE-C361F6613425
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

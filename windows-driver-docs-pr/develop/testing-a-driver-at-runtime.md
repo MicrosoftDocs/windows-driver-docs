@@ -1,5 +1,4 @@
 ---
-ms.assetid: 50BF5B17-B7F0-49F2-9ED6-652DB32D638E
 title: How to test a driver at runtime using Visual Studio
 description: You can use WDK extensions in Visual Studio to conveniently build, deploy, install, and test a driver on a test computer on your network.
 ms.date: 04/20/2017

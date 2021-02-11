@@ -1,7 +1,6 @@
 ---
 title: Tracelog Examples
 description: Tracelog Examples
-ms.assetid: 71c31672-1832-442e-b0b8-b64fcc4a5c6f
 keywords:
 - Tracelog WDK , examples
 - examples WDK Tracelog

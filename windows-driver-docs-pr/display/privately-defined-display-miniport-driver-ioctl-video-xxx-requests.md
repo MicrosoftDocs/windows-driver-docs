@@ -1,7 +1,6 @@
 ---
 title: Private Display-Miniport Driver IOCTL_VIDEO_XXX Requests
 description: A miniport driver can define one or more private I/O control codes for its corresponding display driver.
-ms.assetid: 45d8c9bc-993c-4fd3-949d-dfb30bb685d7
 keywords:
 - video miniport drivers WDK Windows 2000 , processing requests
 - request processing WDK video miniport

@@ -1,7 +1,6 @@
 ---
 title: Microsoft Bluetooth Test Platform - Audio and HID scenario tests
 description: Bluetooth Test Platform (BTP) Audio and HID Scenario tests.
-ms.assetid: b5b039bb-af0f-446f-9657-aa0e137a3437
 ms.date: 2/14/2020
 ms.localizationpriority: medium
 

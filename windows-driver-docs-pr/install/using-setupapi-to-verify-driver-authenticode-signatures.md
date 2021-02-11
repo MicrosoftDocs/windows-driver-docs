@@ -1,7 +1,6 @@
 ---
 title: Using SetupAPI To Verify Driver Authenticode Signatures
 description: Using SetupAPI To Verify Driver Authenticode Signatures
-ms.assetid: 2019d77d-2d98-4bae-8d9d-aa41e47f3811
 keywords:
 - SetupAPI functions WDK , verifying signatures
 - Authenticode signatures WDK

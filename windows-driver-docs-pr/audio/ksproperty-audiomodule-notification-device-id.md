@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID
 description: The KSPROPERTY\_AUDIOMODULE\_NOTIFICATION\_DEVICE\_ID retrieves the audio module notification device identifier GUID.
-ms.assetid: CD9C5FCD-FB2A-4B21-A15E-BA520C3311A7
 keywords: ["KSPROPERTY_AUDIOMODULE_NOTIFICATION_DEVICE_ID Audio Devices"]
 topic_type:
 - apiref

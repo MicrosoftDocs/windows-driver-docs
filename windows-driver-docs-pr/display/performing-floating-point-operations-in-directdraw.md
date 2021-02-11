@@ -1,7 +1,6 @@
 ---
 title: Performing Floating-point Operations in DirectDraw
 description: Performing Floating-point Operations in DirectDraw
-ms.assetid: 2ce638e8-2d32-4692-8093-adb413bfbe52
 keywords:
 - floating-point operations WDK DirectDraw
 - drawing WDK DirectDraw , floating-point operations

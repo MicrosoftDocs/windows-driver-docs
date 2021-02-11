@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_POSITIONEX
 description: The KSPROPERTY\_AUDIO\_POSITIONEX property provides the caller with the stream position and the associated timestamp information for a kernel streaming (KS)-based audio driver.
-ms.assetid: 660b1ee9-7c52-4d95-8df9-b1c0dce320e3
 keywords: ["KSPROPERTY_AUDIO_POSITIONEX Audio Devices"]
 topic_type:
 - apiref

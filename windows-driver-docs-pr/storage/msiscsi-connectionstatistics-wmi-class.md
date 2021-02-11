@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_ConnectionStatistics WMI Class
 description: MSiSCSI\_ConnectionStatistics WMI Class
-ms.assetid: f12dfa6a-0999-40a3-9e15-bb65dc086911
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: DCISetClipList
 description: DCISetClipList
-ms.assetid: 1efc3768-fe98-4bb3-8b3c-68e361a2573b
 keywords: ["DCISetClipList Display Devices"]
 topic_type:
 - apiref

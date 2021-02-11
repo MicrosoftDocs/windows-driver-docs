@@ -1,7 +1,6 @@
 ---
 title: DevCon Status
 description: Displays the status (running, stopped, or disabled) of the driver for devices on the computer. Valid on local and remote computers.
-ms.assetid: 97da6df4-ad93-440a-9136-13f2b79cbe9c
 keywords:
 - DevCon Status Driver Development Tools
 topic_type:

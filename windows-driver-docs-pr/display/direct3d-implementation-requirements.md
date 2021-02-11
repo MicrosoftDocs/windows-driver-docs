@@ -1,7 +1,6 @@
 ---
 title: Direct3D Implementation Requirements
 description: Direct3D Implementation Requirements
-ms.assetid: 292af6f5-bccb-4b5e-932a-bdc15763f89a
 keywords:
 - Direct3D WDK Windows 2000 display , requirements
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Save and Restore Operations Overview
 description: Hyper-V Extensible Switch Save and Restore Operations Overview
-ms.assetid: 7F3A77E0-F1E9-49E4-8C78-62B8F412353D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Displaying a UI in Operating Systems Prior to Windows Vista
 description: Displaying a UI in Operating Systems Prior to Windows Vista
-ms.assetid: de62310e-b10a-49b0-9bcc-b918318b2728
 keywords:
 - print spooler customizing WDK , pre-Windows Vista UI display
 - spooler customizing WDK print , pre-Windows Vista UI display

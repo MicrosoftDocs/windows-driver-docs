@@ -1,7 +1,6 @@
 ---
 title: NDIS Management Information and OIDs
 description: NDIS Management Information and OIDs
-ms.assetid: 5737634e-ee80-44d4-9dc8-c2ef97670809
 keywords:
 - WMI WDK networking , management information base
 - management information base WDK networking

@@ -1,7 +1,6 @@
 ---
 title: What are PRE / POST macros
 description: What are PRE / POST macros
-ms.assetid: f5acb047-def3-443a-b220-77543f9a71e3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

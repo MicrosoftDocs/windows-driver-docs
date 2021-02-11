@@ -1,7 +1,6 @@
 ---
 title: Publish a driver to Windows Update
 description: To publish a driver to Windows Update, create a hardware submission and then follow the steps below.
-ms.assetid: E62AADCF-E481-40CA-98F1-BE4629C3EE35
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium

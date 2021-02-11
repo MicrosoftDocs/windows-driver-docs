@@ -1,7 +1,6 @@
 ---
 title: Using the Debugger Engine API
 description: Using the Debugger Engine API
-ms.assetid: 64785cb6-819c-4a27-b2be-71cc489418ab
 keywords: ["Debugger Engine, API", "Debugger Engine API"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

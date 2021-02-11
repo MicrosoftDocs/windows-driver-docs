@@ -1,7 +1,6 @@
 ---
 title: Calling ExSetTimerResolution While Processing a Power IRP
 description: Calling ExSetTimerResolution While Processing a Power IRP
-ms.assetid: 999a76ab-1586-4157-bfa7-8cc5dd517c71
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

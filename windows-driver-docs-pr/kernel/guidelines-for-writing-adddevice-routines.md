@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Writing AddDevice Routines
 description: Guidelines for Writing AddDevice Routines
-ms.assetid: 8df36af5-158c-4c14-9fc2-2c3f997c2098
 keywords: ["AddDevice routines WDK kernel , design guidelines"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -37,5 +36,5 @@ Consider the following design guidelines when writing an [*AddDevice*](/windows-
 
     If one driver for a device sets this characteristic, the PnP manager propagates it to all the device objects for the device.
 
- 
-
+>[!IMPORTANT]
+> The ExAllocatePool DDIs discussed in this topic have been deprecated in Windows 10, version 2004 and have been replaced by [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3). For more information, see [Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3](updating-deprecated-exallocatepool-calls.md).

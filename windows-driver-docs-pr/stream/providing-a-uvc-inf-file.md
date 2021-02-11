@@ -1,7 +1,6 @@
 ---
 title: Providing a UVC INF File
 description: Providing a UVC INF File
-ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
 keywords:
 - INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class

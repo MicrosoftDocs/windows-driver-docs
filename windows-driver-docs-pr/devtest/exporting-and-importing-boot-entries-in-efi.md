@@ -1,7 +1,6 @@
 ---
 title: Exporting and Importing Boot Entries in EFI
 description: Exporting and Importing Boot Entries in EFI
-ms.assetid: bd019064-cb8c-434c-b471-192168564540
 keywords:
 - NVRAM boot options WDK , exporting
 - EFI NVRAM boot options WDK , exporting

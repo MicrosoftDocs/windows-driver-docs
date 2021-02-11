@@ -1,7 +1,6 @@
 ---
 title: IEC-61883 Protocol Driver
 description: IEC-61883 Protocol Driver
-ms.assetid: d1e639f0-a22f-4005-86a7-fdbfe509265b
 keywords:
 - IEC-61883 client drivers WDK IEEE 1394 bus
 - 61883 WDK IEEE 1394 bus

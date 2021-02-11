@@ -1,7 +1,6 @@
 ---
 title: Network Drivers Prior to Windows Vista
 description: Network Drivers Prior to Windows Vista
-ms.assetid: 92BD380D-D69A-4ECE-846D-946E9ED6195F
 keywords:
 - Network Drivers Prior to Windows Vista WDK, NDIS 5.1 network drivers, Windows 2000 network drivers, Windows XP network drivers
 ms.date: 12/07/2017

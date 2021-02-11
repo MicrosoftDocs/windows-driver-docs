@@ -1,7 +1,6 @@
 ---
 title: Irql\_Interfaces\_Function rule (ndis)
 description: The Irql\_Interfaces\_Function rule specifies that the NDIS network interface functions must be called at correct IRQL levels.
-ms.assetid: cea79975-4b14-4c7e-acfe-0bb10679e25b
 ms.date: 05/21/2018
 keywords: ["Irql_Interfaces_Function rule (ndis)"]
 topic_type:

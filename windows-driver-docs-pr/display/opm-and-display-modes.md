@@ -1,7 +1,6 @@
 ---
 title: OPM and Display Modes
 description: OPM and Display Modes
-ms.assetid: d412a32b-7afd-4f48-9b8e-7cf66533349f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

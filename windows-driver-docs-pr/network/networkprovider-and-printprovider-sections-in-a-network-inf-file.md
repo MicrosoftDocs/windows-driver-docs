@@ -1,7 +1,6 @@
 ---
 title: NetworkProvider and PrintProvider Sections in a Network INF File
 description: NetworkProvider and PrintProvider Sections in a Network INF File
-ms.assetid: 9ce32644-2b11-4c03-9743-d678ff8de229
 keywords:
 - INF files WDK network , PrintProvider section
 - network INF files WDK , PrintProvider section

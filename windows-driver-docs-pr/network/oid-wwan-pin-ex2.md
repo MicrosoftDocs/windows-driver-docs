@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PIN_EX2
 description: OID_WWAN_PIN_EX2 accesses a UICC linear fixed or cyclic file, the structure type of which is WwanUiccFileStructureCyclic or WwanUiccFileStructureLinear.
-ms.assetid: F5D0A1B8-4D7E-469A-B738-2965D254868E
 ms.date: 04/10/2019
 keywords: 
 - OID_WWAN_PIN_EX2 Network Drivers Starting with Windows Vista

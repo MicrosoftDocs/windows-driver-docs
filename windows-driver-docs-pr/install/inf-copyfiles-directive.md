@@ -1,7 +1,6 @@
 ---
 title: INF CopyFiles Directive
 description: A CopyFiles directive can do either of the following
-ms.assetid: 65756b1c-ea61-4bb4-90ac-4d96ceaf9665
 keywords:
 - INF CopyFiles Directive Device and Driver Installation
 topic_type:
@@ -92,7 +91,7 @@ Do not replace an existing file in the destination directory with a source file 
 <a href="" id="0x00000020--copyflg-no-version-dialog--"></a>**0x00000020** (COPYFLG_NO_VERSION_DIALOG)   
 Do not write over a file in the destination directory with the source file if the existing file is newer than the source file.
 
-The newer check is done using the file version, as extracted from the VS_VERSIONINFO file version resource. For more info, see https://docs.microsoft.com/windows/desktop/menurc/version-information. If the target file is not an executable or resource image, or the file does not contain file version information, then device install assumes that the target file is older. 
+The newer check is done using the file version, as extracted from the VS_VERSIONINFO file version resource. For more info, see [Version Information](/windows/desktop/menurc/version-information). If the target file is not an executable or resource image, or the file does not contain file version information, then device install assumes that the target file is older. 
 
 <a href="" id="0x00000040---copyflg-overwrite-older-only-"></a>**0x00000040** (COPYFLG_OVERWRITE_OLDER_ONLY)  
 Copy the source file to the destination directory only if the file on the destination is superseded by a newer version. This flag is irrelevant to digitally signed INF files. The version check uses the same procedure as that described above in COPYFLG_NO_VERSION_DIALOG.

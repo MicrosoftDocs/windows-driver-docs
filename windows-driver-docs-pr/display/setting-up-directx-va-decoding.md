@@ -1,7 +1,6 @@
 ---
 title: Setting Up DirectX VA Decoding
 description: Setting Up DirectX VA Decoding
-ms.assetid: 8841c366-df00-4e88-9f50-85345ba77e03
 keywords:
 - video decoding WDK DirectX VA , setting up
 - decoding video WDK DirectX VA , setting up

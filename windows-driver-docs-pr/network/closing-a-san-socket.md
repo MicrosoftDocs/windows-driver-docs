@@ -1,7 +1,6 @@
 ---
 title: Closing a SAN Socket
 description: Closing a SAN Socket
-ms.assetid: 49224987-ed46-4631-a47b-70cd855cfa40
 keywords:
 - SAN sockets WDK , closing
 - closing SAN sockets

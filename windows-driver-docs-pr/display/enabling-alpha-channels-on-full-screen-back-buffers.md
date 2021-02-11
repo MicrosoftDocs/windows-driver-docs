@@ -1,7 +1,6 @@
 ---
 title: Enabling Alpha Channels On Full-Screen Back Buffers
 description: Enabling Alpha Channels On Full-Screen Back Buffers
-ms.assetid: 9d922464-fb1b-459b-9363-61afff7c51e3
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , alpha channels on full-screen back buffers
 - flipping chain WDK DirectX 8.0

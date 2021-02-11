@@ -1,7 +1,6 @@
 ---
 title: Status Section
 description: Status Section
-ms.assetid: 3cb36ca5-37dc-4f2b-947f-acc6f2da1103
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

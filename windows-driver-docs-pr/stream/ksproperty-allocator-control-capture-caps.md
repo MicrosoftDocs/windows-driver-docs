@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_CAPS
 description: The KSPROPERTY\_ALLOCATOR\_CONTROL\_CAPTURE\_CAPS property informs the Overlay Mixer of the capture capabilities of the video port (that is if capture support is available).
-ms.assetid: 9e2947a3-ef5b-4a2a-a607-6c0c4be44b1c
 keywords: ["KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_CAPS Streaming Media Devices"]
 topic_type:
 - apiref

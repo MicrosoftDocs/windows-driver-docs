@@ -1,7 +1,6 @@
 ---
 title: Processing Changer Device-Control Requests
 description: Processing Changer Device-Control Requests
-ms.assetid: 3ee275c7-f2e4-47db-bd4b-db5c0c8ad399
 keywords:
 - changer drivers WDK storage , request processing
 - storage changer drivers WDK , request processing

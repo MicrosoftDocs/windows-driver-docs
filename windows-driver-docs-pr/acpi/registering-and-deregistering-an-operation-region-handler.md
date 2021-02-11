@@ -1,7 +1,6 @@
 ---
 title: Registering and Deregistering an Operation Region Handler
 description: Registering and Deregistering an Operation Region Handler
-ms.assetid: de40488d-7935-431c-b1f4-87f8aff1125b
 keywords:
 - ACPI devices WDK , operation regions
 - operation regions WDK ACPI

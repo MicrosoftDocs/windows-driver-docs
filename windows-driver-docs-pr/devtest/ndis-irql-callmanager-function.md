@@ -1,7 +1,6 @@
 ---
 title: Irql\_CallManager\_Function rule (ndis)
 description: The Irql\_CallManager\_Function rule specifies that the NDIS functions for the NDIS CallManager must be called at correct IRQL levels.
-ms.assetid: 3e026fb0-8c5f-40cc-affb-3b35f17f40f7
 ms.date: 05/21/2018
 keywords: ["Irql_CallManager_Function rule (ndis)"]
 topic_type:

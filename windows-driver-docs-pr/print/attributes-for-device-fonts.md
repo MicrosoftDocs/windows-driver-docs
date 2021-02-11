@@ -1,7 +1,6 @@
 ---
 title: Attributes for Device Fonts
 description: Attributes for Device Fonts
-ms.assetid: 748faa90-9c31-44c2-8bb3-641a1f95eab1
 keywords:
 - device fonts WDK Unidrv
 - font attributes WDK Unidrv

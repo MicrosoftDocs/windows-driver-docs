@@ -1,7 +1,6 @@
 ---
 title: Introduction to WMI
 description: Introduction to WMI
-ms.assetid: 9ee0ecbb-05fc-42ab-8bad-7c647f30c82c
 keywords: ["WMI WDK kernel , about Windows Management Instrumentation"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

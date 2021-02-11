@@ -1,7 +1,6 @@
 ---
 title: NFP power management
 description: NFP power management
-ms.assetid: A47F4B01-A912-410A-8CF8-656D2C125148
 keywords:
 - NFC
 - near field communications
@@ -23,5 +22,4 @@ The NFP driver will receive an [**IOCTL\_NFP\_ENABLE**](/windows-hardware/driver
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

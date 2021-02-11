@@ -1,7 +1,6 @@
 ---
 title: Attaching a Debugger to the Print Filter Pipeline Service
 description: Attaching a Debugger to the Print Filter Pipeline Service
-ms.assetid: d2e032f8-bdce-415a-8cf4-d9816b7c9de5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

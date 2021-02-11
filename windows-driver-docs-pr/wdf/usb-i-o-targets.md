@@ -1,7 +1,6 @@
 ---
 title: USB I/O Targets
 description: This section describes how KMDF and UMDF 2 drivers interact with universal serial bus (USB) devices.
-ms.assetid: 195c0f4b-7f33-428a-8de7-32643ad854c6
 keywords:
 - I/O targets WDK KMDF , USB
 - USB I/O targets WDK KMDF
@@ -24,7 +23,7 @@ Each USB device, and each pipe that a USB device interface supports, has a separ
 
 The framework communicates with a USB device's I/O target by sending USB request blocks ([**URBs**](/windows-hardware/drivers/ddi/usb/ns-usb-_urb)). The framework provides object methods that hide the URBs from your driver so that the driver does not have to build and send them itself. If you would prefer that your driver build URBs, a KMDF driver can use an additional set of object methods that build and send URBs.
 
-For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](/windows-hardware/drivers/ddi/index).
+For information about how to determine what type of driver you need for your USB device, see [Choosing a driver model for developing a USB client driver](../usbcon/winusb-considerations.md).
 
 This section includes:
 
@@ -33,6 +32,4 @@ This section includes:
 -   [Working with USB Interfaces](working-with-usb-interfaces.md)
 
 -   [Working with USB Pipes](working-with-usb-pipes.md)
-
- 
 

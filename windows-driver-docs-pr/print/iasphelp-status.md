@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: cff9dd7d-722b-4917-84ca-d6b17e8e64a4
 keywords: ["get_Status method Print Devices", "get_Status method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_Status method"]
 topic_type:
 - apiref

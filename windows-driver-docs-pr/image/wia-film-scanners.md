@@ -1,7 +1,6 @@
 ---
 title: WIA Film Scanners
 description: WIA Film Scanners
-ms.assetid: 2f754ae6-42e1-4398-9220-cddf090810f8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

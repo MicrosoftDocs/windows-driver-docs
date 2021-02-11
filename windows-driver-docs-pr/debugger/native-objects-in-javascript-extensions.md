@@ -1,8 +1,7 @@
 ---
 title: Native Debugger Objects in JavaScript Extensions
 description: Native debugger objects represent various constructs and behaviors of the debugger environment. The objects can be passed into (or acquired in) JavaScript extensions.
-ms.assetid: A8E12564-D083-43A7-920E-22C4D627FEE8
-ms.date: 09/07/2019
+ms.date: 02/02/2021
 ms.localizationpriority: medium
 ---
 
@@ -117,10 +116,8 @@ The following debugger extension points are integral to the debugger and availab
 
 **Debugger.Models.Module**: An individual module within the address space of a process
 
-
  
-
-**Addtional Data Model Objects**
+**Additional Data Model Objects**
 
 In addition, there are some additional data model objects that are defined by the core data model.
 
@@ -137,7 +134,6 @@ In addition, there are some additional data model objects that are defined by th
 **DataModel.Models.Concepts.Iterable**: Applied to every object which is iterable
 
 **DataModel.Models.Concepts.StringDisplayable**: Applied to every object which has a display string conversion
-
 
  
 
@@ -188,7 +184,6 @@ There can be multiple processes (whether attached to such in user mode or under 
 
 `this.__process = process;`
 
- 
 
 ```javascript
 class comNamespace
@@ -359,10 +354,9 @@ Here is the process information available in user mode before loading this exten
     Modules  
 ```
 
-Load the JavaScript scripting provider and the extension.
+Load the JavaScript extension.
 
 ```dbgcmd
-0:000:x86> !load jsprovider.dll
 0:000:x86> .scriptload C:\JSExtensions\GipTableAbstractor.js
 JavaScript script successfully loaded from 'C:\JSExtensions\GipTableAbstractor.js'
 ```
@@ -452,6 +446,8 @@ Debugger.Sessions.First().Processes.First().Threads.Duplicate(2),d              
     [3]              : intelppm!MWaitIdle+0x18 (fffff805`0e351348) 
 …
 ```
+
+
 
 ## <span id="related_topics"></span>Related topics
 

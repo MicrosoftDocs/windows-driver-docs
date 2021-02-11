@@ -1,7 +1,6 @@
 ---
 title: Request Handlers
 description: Request Handlers
-ms.assetid: bfc543bf-18a8-4e2c-ba7a-d0a21cefb038
 keywords:
 - I/O queues WDK KMDF , creating
 - I/O queues WDK KMDF , request handlers

@@ -1,7 +1,6 @@
 ---
 title: TList
 description: TList (Task List Viewer), Tlist.exe, displays the processes running on the local computer along with useful information about each process.
-ms.assetid: 4cba525f-12f0-45c9-8dee-c3e0ab9fd944
 keywords: TList, Task List Viewer, Task List Viewer, See TList
 ms.date: 05/23/2017
 ms.localizationpriority: medium

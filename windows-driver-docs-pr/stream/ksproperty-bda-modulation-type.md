@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_MODULATION\_TYPE
 description: Clients use KSPROPERTY\_BDA\_MODULATION\_TYPE to control the demodulator type such as QPSK or 8VSB.
-ms.assetid: 7c7dd8a4-4aa2-4e62-9b08-05c202df957d
 keywords: ["KSPROPERTY_BDA_MODULATION_TYPE Streaming Media Devices"]
 topic_type:
 - apiref

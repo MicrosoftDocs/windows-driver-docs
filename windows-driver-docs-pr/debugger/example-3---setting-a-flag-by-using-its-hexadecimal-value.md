@@ -1,7 +1,6 @@
 ---
 title: Example 3 Setting a Flag by Using Its Hexadecimal Value
 description: Example 3 Setting a Flag by Using Its Hexadecimal Value
-ms.assetid: 64fa0b2e-9fe7-47d0-bf83-8ae7c06252b6
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

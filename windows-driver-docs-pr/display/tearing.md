@@ -1,7 +1,6 @@
 ---
 title: Tearing
 description: Tearing
-ms.assetid: b4c21592-cbdf-4dd6-9457-71d53b9f7b32
 keywords:
 - tears WDK DirectDraw
 - drawing page flips WDK DirectDraw , tearing

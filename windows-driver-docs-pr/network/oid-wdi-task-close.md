@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_CLOSE
 description: OID_WDI_TASK_CLOSE requests that the IHV component closes the adapter. This includes disabling interrupts and shutting down hardware. During a halt, this task is passed to the IHV through the CloseAdapterHandler handler registered by the IHV.
-ms.assetid: 407d1dfa-18f7-4e22-8f7e-51fd610210af
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_CLOSE Network Drivers Starting with Windows Vista

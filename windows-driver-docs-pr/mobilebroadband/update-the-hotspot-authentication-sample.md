@@ -1,7 +1,6 @@
 ---
 title: Update the hotspot authentication sample
 description: Update the hotspot authentication sample
-ms.assetid: 68ebcdee-7b21-4177-b032-ba725ad2aee4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

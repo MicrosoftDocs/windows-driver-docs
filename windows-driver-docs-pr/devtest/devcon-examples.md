@@ -1,7 +1,6 @@
 ---
 title: Device Console (DevCon.exe) Examples
 description: Device Console (DevCon.exe) Examples
-ms.assetid: 5af1e777-04ba-4e83-b239-f568a02a9460
 keywords:
 - DevCon WDK , examples
 - Device Console WDK , examples
@@ -963,7 +962,7 @@ The following list shows the filter drivers for the DiskDrive class before the c
     Disklog
 ```
 
-The first subcommand, <strong>@Disklog</strong>, uses the positioning operator (**@**) to place the virtual cursor on the Disklog filter driver. The second subcommand, **-MyFilter**, uses the add-before operator (**-**) to add MyFilter.sys before Disklog.sys.
+The first subcommand, **@Disklog**, uses the positioning operator (**@**) to place the virtual cursor on the Disklog filter driver. The second subcommand, **-MyFilter**, uses the add-before operator (**-**) to add MyFilter.sys before Disklog.sys.
 
 The command also uses the **/r** parameter, which reboots the system if it is necessary to make the class filter change effective.
 
@@ -978,7 +977,7 @@ Class filters changed. Class devices must be restarted for changes to take effec
     Disklog
 ```
 
-You can also use the following command to add the MyFilter driver and to place it between PartMgr and Disklog. In this example, the first subcommand, <strong>@PartMgr</strong>, positions the virtual cursor on the PartMgr filter driver. The second subcommand, **+MyFilter**, uses the add-after operator (+) to add MyFilter.sys after PartMgr.
+You can also use the following command to add the MyFilter driver and to place it between PartMgr and Disklog. In this example, the first subcommand, **@PartMgr**, positions the virtual cursor on the PartMgr filter driver. The second subcommand, **+MyFilter**, uses the add-after operator (+) to add MyFilter.sys after PartMgr.
 
 ```
 devcon /r classfilter DiskDrive upper @PartMgr +MyFilter
@@ -1233,9 +1232,7 @@ Finally, add network configuration settings to the unattended setup file and run
 
 The following command uses the [**DevCon Remove**](devcon-remove.md) operation to remove all USB devices from the computer. It identifies the devices by a device instance ID pattern that matches any device instance ID (registry path) that begins with the "USB\\" string. The at character (**@**) distinguishes the device instance ID from a hardware ID or compatible ID. The command also includes the **/r** parameter that reboots the system if it is required to make the remove procedure effective.
 
-**Warning**   Before removing any devices by using a pattern, determine which devices are affected. To do so, use the pattern in a display command, such as <strong>devcon status @usb\\\</strong>* or <strong>devcon hwids @usb\\\</strong>*.
-
- 
+**Warning**   Before removing any devices by using a pattern, determine which devices are affected. To do so, use the pattern in a display command, such as `devcon status @usb\*` or `devcon hwids @usb\*`.
 
 ```
 devcon /r remove @usb\*
@@ -1254,9 +1251,7 @@ USB\VID_045E&PID_0039\5&29F428A4&0&2                  : Removed
 
 The following command uses the [**DevCon Remove**](devcon-remove.md) operation to uninstall the NDISWAN miniport driver from the local computer. The command specifies the Net class and then refines the search by specifying devices in the class whose hardware ID or compatible ID include "ndiswan." The command also includes the **/r** parameter, which reboots the system if rebooting is required to make the remove procedure effective.
 
-**Warning**   Before removing any devices by using a pattern, determine which devices will be affected. To do so, use the pattern in a display command, such as **devcon status =net \*ndiswan\\*** or **devcon hwids =net \*ndiswan\\***.
-
- 
+**Warning**   Before removing any devices by using a pattern, determine which devices will be affected. To do so, use the pattern in a display command, such as `devcon status =net *ndiswan` or `devcon hwids =net *ndiswan*`.
 
 ```
 devcon /r remove =net *ndiswan*
@@ -1291,7 +1286,7 @@ devcon /m:\\server01 rescan
 
 ### <span id="ddk_example_38_restart_a_device_tools"></span><span id="DDK_EXAMPLE_38_RESTART_A_DEVICE_TOOLS"></span><a name="ddk_example_38_restart_a_device_tools"></a>Example 38: Restart a device
 
-The following command uses the [**DevCon Restart**](devcon-restart.md) operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, **ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as an device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
+The following command uses the [**DevCon Restart**](devcon-restart.md) operation to restart the loopback adapter on the local computer. The command limits the search to the Net setup class and, within that class, specifies the device instance ID of the loopback adapter, @\'**ROOT\\\*MSLOOP\\0000**. The at character (**@**) identifies the string as an device instance ID. The single quote character (**'**), which requests a literal search, prevents DevCon from interpreting the asterisk in the ID as a wildcard character.
 
 ```
 devcon restart =net @'ROOT\*MSLOOP\0000
@@ -1342,7 +1337,7 @@ Modified 1 hardware ID(s).
 
 The following command uses the [**DevCon SetHwID**](devcon-sethwid.md) operation to add the hardware ID, legacy, to the list of hardware IDs for all legacy devices on the Server1 remote computer.
 
-The command uses the **-** symbol parameter to add the new hardware ID to the end of the hardware ID list for the device, in case a preferred hardware ID has been created for one of the devices. It uses the **/m** parameter to specify the remote computer. It also uses a device instance ID pattern, <strong>@ROOT\\LEGACY\</strong><em>, to identify the legacy devices on the computer, that is, all devices whose device instance ID begins with **ROOT\\LEGACY</em>*.
+The command uses the **-** symbol parameter to add the new hardware ID to the end of the hardware ID list for the device, in case a preferred hardware ID has been created for one of the devices. It uses the **/m** parameter to specify the remote computer. It also uses a device instance ID pattern, `@ROOT\LEGACY\*`, to identify the legacy devices on the computer, that is, all devices whose device instance ID begins with `ROOT\LEGACY*`.
 
 ```
 devcon /m:\\Server1 sethwid @ROOT\LEGACY* := -legacy

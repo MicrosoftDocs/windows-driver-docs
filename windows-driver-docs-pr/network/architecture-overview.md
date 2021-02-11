@@ -1,7 +1,6 @@
 ---
 title: Architecture overview for the Network Module Registrar
 description: Explains a basic architectural overview for the Network Module Registrar
-ms.assetid: 7e2c51ed-ecec-4b17-8a6f-42a51acedc95
 keywords:
 - Network Module Registrar WDK , architecture
 - NMR WDK , architecture

@@ -1,7 +1,6 @@
 ---
 title: GDI/Driver Division of Labor
 description: GDI/Driver Division of Labor
-ms.assetid: 280addc6-3fc2-4763-ba87-5e9c5e83d22e
 keywords:
 - GDI WDK Windows 2000 display , driver division of labor
 - graphics drivers WDK Windows 2000 display , driver division of labor

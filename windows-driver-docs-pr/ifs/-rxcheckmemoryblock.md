@@ -1,7 +1,6 @@
 ---
 title: \_RxCheckMemoryBlock routine
 description: \_RxCheckMemoryBlock checks a memory block for a special RX\_POOL\_HEADER header signature.
-ms.assetid: 972cef55-e541-450c-8128-1d026042c4ca
 keywords: ["_RxCheckMemoryBlock routine Installable File System Drivers"]
 topic_type:
 - apiref

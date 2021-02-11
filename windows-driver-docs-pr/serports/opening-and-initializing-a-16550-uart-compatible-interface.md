@@ -1,7 +1,6 @@
 ---
 title: Opening and Initializing a 16550 UART-Compatible Interface
 description: Opening and Initializing a 16550 UART-Compatible Interface
-ms.assetid: 341cc1cb-bbcf-4514-8f5d-8970e49923c2
 keywords:
 - Serial driver WDK , 16550 UART-compatible interfaces
 - universal asynchronous receiver-transmitters WDK serial devices

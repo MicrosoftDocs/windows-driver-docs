@@ -1,7 +1,6 @@
 ---
 title: Basic Software Tracing
 description: Basic Software Tracing
-ms.assetid: 52b95ffe-2b99-4dcc-a668-ecb55b02838e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

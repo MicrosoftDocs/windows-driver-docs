@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT
 description: The KSPROPERTY\_VPCONFIG\_GETVIDEOFORMAT property retrieves an array of supported pixel formats.
-ms.assetid: 74cc8cbc-cd81-43e1-ba15-3105a4c70808
 keywords: ["KSPROPERTY_VPCONFIG_GETVIDEOFORMAT Streaming Media Devices"]
 topic_type:
 - apiref

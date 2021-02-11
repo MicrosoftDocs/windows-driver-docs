@@ -1,7 +1,6 @@
 ---
 title: Getting Error Injection Capabilities
 description: Getting Error Injection Capabilities
-ms.assetid: d4ff0d9c-bb17-4dff-8008-bf8d59e44621
 keywords:
 - error injection capabilities WDK WHEA
 - retrieving error injection capabilities WDK WHEA

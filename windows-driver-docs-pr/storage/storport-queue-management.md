@@ -1,7 +1,6 @@
 ---
 title: Storport Queue Management
 description: Storport Queue Management
-ms.assetid: 29fddcac-abc9-4aa4-8485-56120805ae34
 keywords:
 - Storport drivers WDK , queue management
 - queues WDK Storport

@@ -1,7 +1,6 @@
 ---
 title: Public and Private Symbols
 description: Public and Private Symbols
-ms.assetid: 61ed583d-8b97-4929-8d86-1a6353c13304
 keywords: ["symbols, public", "symbols, private", "public symbols", "private symbols", "retail symbols", "export symbols", "symbol file, full symbol file", "symbol file, stripped symbol file", "full symbol file"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

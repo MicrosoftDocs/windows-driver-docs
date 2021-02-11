@@ -1,7 +1,6 @@
 ---
 title: Using WPP Software Tracing in KMDF Drivers
 description: Using WPP Software Tracing in KMDF Drivers
-ms.assetid: dad7aa8d-4ced-47b3-80d2-ec9cfb355783
 keywords:
 - software tracing WDK , framework-based drivers
 - debugging drivers WDK KMDF , software tracing

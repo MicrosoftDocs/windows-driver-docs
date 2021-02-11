@@ -1,7 +1,6 @@
 ---
 title: Height element
 description: The Height element specifies a height value that the scan device supports for scanner configuration elements that require a height.
-ms.assetid: 1161c92e-e135-4921-b55d-b27e98d5caec
 keywords: ["Height element Imaging Devices"]
 topic_type:
 - apiref

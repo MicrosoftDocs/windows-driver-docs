@@ -1,8 +1,7 @@
 ---
 title: Setting Up Network Debugging of a Virtual Machine with KDNET
 description: This topic describes how to configure a kernel debugging connection to a Hyper-V virtual machine.
-ms.assetid: E4C4D2A1-2FB0-4028-8A52-30B8F4F738D0
-ms.date: 09/21/2020
+ms.date: 01/21/2021
 ms.localizationpriority: medium
 ---
 
@@ -157,6 +156,9 @@ Once the debugger is connected, reboot the target computer. To force the VM to c
 When the target virtual machine is restarted, the debugger in the host OS should connect. 
 
 After connecting to the VM, hit break on your debugger and you can start debugging. 
+
+To support the debugging connection a Kernel Debug Network Adapter is added and visible in network properties, after the VM is rebooted.
+
 
 ## Troubleshooting KDNET Virtual Machine Network Debugging
 

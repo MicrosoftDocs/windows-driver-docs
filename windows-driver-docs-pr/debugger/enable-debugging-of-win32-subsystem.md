@@ -1,7 +1,6 @@
 ---
 title: Enable debugging of Win32 subsystem
 description: Enable debugging of Win32 subsystem
-ms.assetid: ea9d1c96-413e-42b7-a0c2-b114aa6de2a6
 keywords: ["Enable debugging of Win32 subsystem (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

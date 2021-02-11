@@ -1,7 +1,6 @@
 ---
 title: What's new for UWP device apps
 description: This section provides a glimpse of what's new for UWP device apps.
-ms.assetid: AF18ACFD-EA38-4ABD-9369-3974C019E132
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

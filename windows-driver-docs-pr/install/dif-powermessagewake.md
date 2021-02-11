@@ -1,7 +1,6 @@
 ---
 title: DIF_POWERMESSAGEWAKE
 description: DIF_POWERMESSAGEWAKE
-ms.assetid: 73f6e763-0900-4297-ac88-20bbb3ac424d
 keywords: ["DIF_POWERMESSAGEWAKE Device and Driver Installation"]
 topic_type:
 - apiref

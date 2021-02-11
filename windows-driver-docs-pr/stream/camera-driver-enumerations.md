@@ -1,7 +1,6 @@
 ---
 title: New camera driver enumerations for Windows 10
 description: This following camera driver enumerations are new for Windows 10.
-ms.assetid: 86C050F2-52CE-432E-B9F2-DDD61C47D9B2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

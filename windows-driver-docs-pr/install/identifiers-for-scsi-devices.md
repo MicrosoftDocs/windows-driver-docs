@@ -1,7 +1,6 @@
 ---
 title: Identifiers for SCSI Devices
 description: Identifiers for SCSI Devices
-ms.assetid: 8bc68813-5096-40b2-bbd1-0aebb5a3326d
 keywords:
 - device identification strings WDK , SCSI devices
 - identification strings WDK device , SCSI devices

@@ -1,7 +1,6 @@
 ---
 title: Using the analyze Extension
 description: Using the analyze Extension
-ms.assetid: 0aa74153-e992-4d1c-b734-ccc60cff452c
 keywords: ["analyze extension, examples"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

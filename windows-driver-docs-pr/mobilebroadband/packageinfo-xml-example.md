@@ -1,7 +1,6 @@
 ---
 title: PackageInfo XML Example
 description: PackageInfo XML Example
-ms.assetid: 4e514e79-d450-4cae-a40d-16ce86f95e43
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

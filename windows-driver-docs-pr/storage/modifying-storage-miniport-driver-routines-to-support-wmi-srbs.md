@@ -1,7 +1,6 @@
 ---
 title: Modifying Storage Miniport Driver Routines to Support WMI SRBs
 description: Modifying Storage Miniport Driver Routines to Support WMI SRBs
-ms.assetid: c3a222e8-dd02-4e45-b3e2-cec35d3abfdc
 keywords:
 - WMI SRBs WDK storage , modifying routines to support
 ms.date: 10/08/2019

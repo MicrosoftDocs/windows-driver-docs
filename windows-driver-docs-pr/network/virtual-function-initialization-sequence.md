@@ -1,7 +1,6 @@
 ---
 title: Virtual Function Initialization Sequence
 description: Virtual Function Initialization Sequence
-ms.assetid: 352E12EC-FAF0-4566-8632-B6DA97ACCAD9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

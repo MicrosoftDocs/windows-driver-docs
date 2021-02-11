@@ -1,7 +1,6 @@
 ---
 title: ds, dS (Display String)
 description: The ds and dS commands display a STRING, ANSI_STRING, or UNICODE_STRING structure.
-ms.assetid: cb05e89c-6c83-476b-a577-a6aeefd8cdd6
 keywords: ["ds, dS (Display String) Windows Debugging"]
 ms.date: 05/03/2018
 topic_type:

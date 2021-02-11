@@ -1,7 +1,6 @@
 ---
 title: Window Open Dock
 description: Window Open Dock
-ms.assetid: 2cf9d55d-6a4c-45c3-b4c8-e6cb5d12b7a4
 keywords: ["Window Open Dock", "docking windows, Window Open Dock"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

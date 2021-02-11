@@ -1,6 +1,5 @@
 ---
 title: Driver interface methods
-ms.assetid: 675F4188-3B9A-421B-98EF-FE063B550231
 description: Interface methods supported by the sensor driver.
 ms.date: 04/20/2017
 ms.localizationpriority: medium

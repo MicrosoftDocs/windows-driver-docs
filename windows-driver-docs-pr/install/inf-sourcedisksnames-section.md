@@ -1,7 +1,6 @@
 ---
 title: INF SourceDisksNames Section
 description: A SourceDisksNames section identifies the distribution disks or CD-ROM discs that contain the source files to be transferred to the target computer during installation.
-ms.assetid: ad69521c-5185-4c7b-a851-eb825b468459
 keywords:
 - INF SourceDisksNames Section Device and Driver Installation
 topic_type:
@@ -62,7 +61,7 @@ This entry is no longer supported for Windows 2000 and later versions of Windows
 <a href="" id="path"></a>*path*  
 This optional value specifies the directory path on the distribution disk that contains source files. The *path* is relative to the *installation root* and is expressed as **\\**<em>dirname1</em>**\\**<em>dirname2</em>... and so forth. If this value is omitted from an entry, files are assumed to be in the installation root of the distribution disk.
 
-You can use an **INF SourceDisksFiles section** must reside either in the given path directory or in the installation root.
+You can use an [**INF SourceDisksFiles section**](inf-sourcedisksfiles-section.md) to specify subdirectories, relative to a given path directory, that contain source files. However, tag files and *cabinet file* must reside either in the given path directory or in the installation root.
 
 <a href="" id="flags"></a>*flags*  
 Starting with Windows XP, setting this to **0x10** forces Windows to use *tag-or-cab-file* as a cabinet file name, and to use *tag-file* as a tag file name. Otherwise, *flags* is for internal use only.

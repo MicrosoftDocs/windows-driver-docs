@@ -1,7 +1,6 @@
 ---
 title: CPSUI-Supported Window Controls
 description: CPSUI-Supported Window Controls
-ms.assetid: 557aa4e6-e48e-44fe-b833-93728426b056
 keywords:
 - Common Property Sheet User Interface WDK print , window controls
 - CPSUI WDK print , window controls

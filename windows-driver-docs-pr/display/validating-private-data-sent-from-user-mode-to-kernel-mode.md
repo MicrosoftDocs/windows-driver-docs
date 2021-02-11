@@ -1,7 +1,6 @@
 ---
 title: Validating Private Data Sent from User Mode to Kernel Mode
 description: Validating Private Data Sent from User Mode to Kernel Mode
-ms.assetid: 7022af7b-80e7-41a5-bd53-32d7eafc4062
 keywords:
 - validating private data WDK display
 - private data validation WDK display

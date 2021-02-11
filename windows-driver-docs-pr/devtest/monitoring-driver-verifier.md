@@ -1,7 +1,6 @@
 ---
 title: Monitoring Driver Verifier
 description: Monitoring Driver Verifier
-ms.assetid: 58b672b8-66f3-436b-900b-11bb94575fb6
 keywords:
 - Driver Verifier WDK , monitoring
 - Driver Verifier Manager
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 The Verifier utility has several ways to monitor the actions of Driver Verifier and of the drivers being verified.
 
-The kernel debugger extension **!verifier** can also be used to monitor and report on a number of statistics related to Driver Verifier's activities. When verifying graphics drivers, the **!gdikdx.verifier** extension should be used instead. For information about debugger extensions, see [Windows Debugging](../debugger/index.md).
+The kernel debugger extension **!verifier** can also be used to monitor and report on a number of statistics related to Driver Verifier's activities.  For information about debugger extensions, see [Windows Debugging](../debugger/index.md).
 
 This section includes:
 

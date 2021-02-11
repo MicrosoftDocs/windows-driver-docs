@@ -1,7 +1,6 @@
 ---
 title: Unidrv-Specific Customized Rendering
 description: Unidrv-Specific Customized Rendering
-ms.assetid: aff39531-ca40-4985-b458-c6217f8a2e5c
 keywords:
 - rendering plug-ins WDK print , Unidrv
 - Unidrv, customized rendering options

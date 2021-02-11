@@ -1,7 +1,6 @@
 ---
 title: Specify applications in the Mobile Broadband Metadata Authoring Wizard
 description: Specify applications in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: 58E95326-94C4-444F-BFE2-0E7DC8112119
 keywords:
 - Specify applications in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017

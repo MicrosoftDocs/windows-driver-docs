@@ -1,7 +1,6 @@
 ---
 title: Accessing User Buffers
 description: Accessing User Buffers
-ms.assetid: 5ab32074-0949-4cdc-8a95-1bded0085ce1
 keywords:
 - filter manager WDK file system minifilter , user buffers
 - buffers WDK file system minifilter

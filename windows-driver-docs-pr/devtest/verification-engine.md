@@ -1,7 +1,6 @@
 ---
 title: Verification Engine
 description: Verification Engine
-ms.assetid: 5ac8e62d-5e78-4e4b-bc30-1b9aeb628def
 keywords:
 - Static Driver Verifier WDK , verification engine
 - StaticDV WDK , verification engine

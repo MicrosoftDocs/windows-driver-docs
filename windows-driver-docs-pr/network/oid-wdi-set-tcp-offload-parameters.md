@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_TCP_OFFLOAD_PARAMETERS
 description: OID_WDI_SET_TCP_OFFLOAD_PARAMETERS is sent down to the device from the OS to set the TCP offload parameters.
-ms.assetid: B615066B-3871-4445-8397-B41CB66EEF35
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_TCP_OFFLOAD_PARAMETERS Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: Selecting a Stream Format
 description: Selecting a Stream Format
-ms.assetid: 876eca52-4d5e-45bd-90df-ff4b6405078d
 keywords:
 - video capture WDK AVStream , stream formats
 - capturing video WDK AVStream , stream formats

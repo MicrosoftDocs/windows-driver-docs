@@ -1,7 +1,6 @@
 ---
 title: Enumerating Virtual Ports on a Network Adapter
 description: Enumerating Virtual Ports on a Network Adapter
-ms.assetid: 437C3356-4CC7-4128-9E61-FD01157F4FD9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

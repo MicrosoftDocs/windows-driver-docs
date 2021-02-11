@@ -1,7 +1,6 @@
 ---
 title: Print Providers
 description: Print Providers
-ms.assetid: dfc951fc-602f-49c2-a91b-0cd979587a9a
 keywords:
 - print providers WDK
 - spooler print providers WDK print

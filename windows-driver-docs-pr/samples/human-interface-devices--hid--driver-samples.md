@@ -1,7 +1,6 @@
 ---
 title: Human interface devices (HID) driver samples
 description: The driver samples in this directory provide a starting point for writing a custom HID driver for your device.
-ms.assetid: 38C52EAD-9DC6-4575-A9FF-1472FDDC2702
 ms.date: 11/19/2019
 ms.localizationpriority: medium
 ---

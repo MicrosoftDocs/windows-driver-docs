@@ -1,7 +1,6 @@
 ---
 title: Operations on Video Substream and Destination Surfaces
 description: The VMR on Microsoft Windows Server 2003 SP1 and later and Windows XP SP2 and later must be able to perform certain operations on video substream and destination surfaces.
-ms.assetid: ad0214b9-5d75-455f-8748-ff7c5a3d89db
 keywords:
 - DeinterlaceBltEx, destination surfaces
 - DeinterlaceBltEx, substream surfaces

@@ -1,7 +1,6 @@
 ---
 title: Writing Log Entries in a Text Log
 description: Writing Log Entries in a Text Log
-ms.assetid: e969f8dd-ad19-42d5-8218-3df0633cc304
 keywords:
 - text logs WDK SetupAPI , writing entries
 - sections WDK SetupAPI logging

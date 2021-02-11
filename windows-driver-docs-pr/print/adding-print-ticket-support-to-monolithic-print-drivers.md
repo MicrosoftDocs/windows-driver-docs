@@ -1,7 +1,6 @@
 ---
 title: Adding Print Ticket Support to Monolithic Print Drivers
 description: Adding Print Ticket Support to Monolithic Print Drivers
-ms.assetid: 82c65b9a-6e7b-4acd-93aa-33d696ddc421
 keywords:
 - printer interface DLL WDK , Print Ticket support
 - monolithic print drivers WDK

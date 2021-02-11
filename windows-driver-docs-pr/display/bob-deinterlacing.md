@@ -1,7 +1,6 @@
 ---
 title: Bob Deinterlacing
 description: Bob Deinterlacing
-ms.assetid: 90add8a2-7182-457d-bcde-f1a2540cc31c
 keywords:
 - bob deinterlacing WDK DirectX VA
 - deinterlacing WDK DirectX VA , bob

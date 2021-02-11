@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_STRING_INDIRECT
 description: The DEVPROP_TYPE_STRING_INDIRECT identifier represents the base-data-type identifier for a NULL-terminated Unicode string that contains an indirect string reference.
-ms.assetid: c3a4f627-02d7-47ba-aa62-5d6b0e8dd9cd
 keywords: ["DEVPROP_TYPE_STRING_INDIRECT Device and Driver Installation"]
 topic_type:
 - apiref

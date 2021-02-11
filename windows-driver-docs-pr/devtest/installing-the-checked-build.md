@@ -1,7 +1,6 @@
 ---
 title: Installing the Checked Build of Windows
 description: Installing the Checked Build of Windows
-ms.assetid: 88bbd0a2-2b72-4000-87ba-cbdafeb4c609
 ms.date: 05/08/2020
 ms.localizationpriority: medium
 ---

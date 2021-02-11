@@ -1,7 +1,6 @@
 ---
 title: What is the text that precedes each trace message
 description: What is the text that precedes each trace message
-ms.assetid: bff8eb0b-f571-405f-b930-3003e2c50621
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

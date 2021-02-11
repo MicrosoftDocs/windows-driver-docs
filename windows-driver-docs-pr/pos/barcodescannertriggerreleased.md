@@ -1,7 +1,6 @@
 ---
 title: BarcodeScannerTriggerReleased
 description: The BarcodeScannerTriggerReleased event occurs when the barcode scanner trigger is released.
-ms.assetid: '49b655c3-2652-4225-ba4c-5404da672b8e'
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---

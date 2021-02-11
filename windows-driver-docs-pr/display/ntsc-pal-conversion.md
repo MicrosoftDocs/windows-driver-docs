@@ -1,7 +1,6 @@
 ---
 title: NTSC/PAL Conversion
 description: NTSC/PAL Conversion
-ms.assetid: 2ae22ebd-e75a-4f9c-b50e-d0ddfe05d987
 keywords:
 - interlaced video WDK video port extensions
 - DirectX VPE support WDK DirectDraw , interlaced video

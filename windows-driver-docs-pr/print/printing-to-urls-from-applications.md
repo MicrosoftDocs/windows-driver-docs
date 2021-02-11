@@ -1,7 +1,6 @@
 ---
 title: Printing to URLs from Applications
 description: Printing to URLs from Applications
-ms.assetid: bc9aedb4-1d64-4b70-b14b-1392f914a635
 keywords:
 - Internet printing WDK , printing to URLs
 - URL-identified print queue WDK

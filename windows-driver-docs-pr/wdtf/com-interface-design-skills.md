@@ -1,7 +1,6 @@
 ---
 title: COM Interface Design Skills
 description: COM Interface Design Skills
-ms.assetid: 3a3adbc2-af6f-4495-8993-fd25d56ffad6
 keywords:
 - Windows Device Testing Framework WDK , action interfaces
 - WDTF WDK , action interfaces

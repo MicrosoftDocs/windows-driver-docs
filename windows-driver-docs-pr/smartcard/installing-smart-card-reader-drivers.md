@@ -1,7 +1,6 @@
 ---
 title: Installing Smart Card Reader Drivers
 description: Installing Smart Card Reader Drivers
-ms.assetid: 6e641718-d6d0-4f09-8935-6b381ad0c085
 keywords:
 - smart card drivers WDK , installing
 - vendor-supplied drivers WDK smart card , installing

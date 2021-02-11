@@ -1,7 +1,6 @@
 ---
 title: Broadcast Driver Architecture Drivers
 description: Broadcast Driver Architecture Drivers
-ms.assetid: 23597c6d-791c-45d4-a1cd-8c26d9d888fb
 keywords:
 - AVStream WDK , Broadcast Driver Architecture
 - Broadcast Driver Architecture WDK AVStream

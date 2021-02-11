@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x1B PFN_SHARE_COUNT
 description: The PFN_SHARE_COUNT bug check has a value of 0x0000001B. It indicates that a memory management page frame number (PFN) database element has a corrupted share count. This bug check appears very infrequently.
-ms.assetid: 7af4f639-2412-4312-84a7-66354d300ec6
 keywords: ["Bug Check 0x1B PFN_SHARE_COUNT", "PFN_SHARE_COUNT"]
 ms.date: 09/14/2017
 topic_type:

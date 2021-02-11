@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_PORT_TYPE
 description: EFI_USBFN_PORT_TYPE
-ms.assetid: 2596dd4f-26bd-454b-9550-a89c7e1f790b
 ms.date: 05/21/2020
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: File Map Network Drive
 description: File Map Network Drive
-ms.assetid: 55a5523f-5735-4b44-8d98-ded9932e630a
 keywords: ["File Map Network Drive", "shell commands, File Map Network Drive"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

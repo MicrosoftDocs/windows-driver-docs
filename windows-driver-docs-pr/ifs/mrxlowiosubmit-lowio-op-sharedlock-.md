@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_SHAREDLOCK\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_SHAREDLOCK\ routine is called by RDBSS to request that a network redirector open a shared lock on a file object.
-ms.assetid: 963ec2d1-5e24-4002-a8c9-44faf1515b9f
 keywords: ["MRxLowIOSubmit LOWIO_OP_SHAREDLOCK routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref

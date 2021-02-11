@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_PORT\_NAME
 description: The WIA\_DIP\_PORT\_NAME property contains an installed device's port name, which is assigned by the kernel-mode driver that operates the device. The WIA service creates and maintains this property.
-ms.assetid: ccb5d335-de56-477f-909c-cb2e55a0889a
 keywords: ["WIA_DIP_PORT_NAME Imaging Devices"]
 topic_type:
 - apiref

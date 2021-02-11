@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode Extensions
 description: Kernel-Mode Extensions
-ms.assetid: e8e1e692-d991-427f-a2e7-b9eb1893fe83
 keywords: ["extension commands ( commands), kernel-mode extensions", "kdextx86.dll (kernel-mode extensions)", "kdexts.dll (kernel-mode extensions)", "kext.dll (kernel-mode extensions)", "kernel-mode extensions (kdext .dll and kext.dll)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

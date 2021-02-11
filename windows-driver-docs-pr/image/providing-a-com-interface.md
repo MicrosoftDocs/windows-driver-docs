@@ -1,7 +1,6 @@
 ---
 title: Providing a COM Interface
 description: Providing a COM Interface
-ms.assetid: c3e1578e-26f1-4fe3-b56d-a2baacb8e4c0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

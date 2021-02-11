@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BRIDGE
 description: KSCATEGORY_BRIDGE
-ms.assetid: 7973cac5-2b74-4af1-8912-370e922e5f4d
 keywords: ["KSCATEGORY_BRIDGE Device and Driver Installation"]
 topic_type:
 - apiref

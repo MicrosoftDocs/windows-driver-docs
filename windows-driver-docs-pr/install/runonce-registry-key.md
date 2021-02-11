@@ -1,7 +1,6 @@
 ---
 title: RunOnce Registry Key
 description: RunOnce Registry Key
-ms.assetid: dbeb7be7-4d38-49e2-944c-ea95d9914ebe
 keywords:
 - RunOnce registry key
 - registry WDK device installations

@@ -1,7 +1,6 @@
 ---
 title: WDI TLV parser interface overview
 description: This section describes an overview of the WDI TLV parser interface
-ms.assetid: FD204F24-0336-4A54-992C-ACF46565D8D1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

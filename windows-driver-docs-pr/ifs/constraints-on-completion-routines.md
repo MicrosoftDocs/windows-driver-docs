@@ -1,7 +1,6 @@
 ---
 title: Constraints on Completion Routines
 description: Constraints on Completion Routines
-ms.assetid: 3873fd27-cfa8-414d-9437-c0789b20ff27
 keywords:
 - IRP completion routines WDK file system , constraints
 ms.date: 04/20/2017

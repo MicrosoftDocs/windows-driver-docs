@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT
 description: WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT is a TLV that contains device context for the BSS entry.
-ms.assetid: 5672294B-C6C0-43A3-9553-D6309F64F4A6
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_ENTRY_DEVICE_CONTEXT Network Drivers Starting with Windows Vista

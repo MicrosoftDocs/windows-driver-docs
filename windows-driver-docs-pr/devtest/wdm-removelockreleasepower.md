@@ -1,7 +1,6 @@
 ---
 title: RemoveLockReleasePower rule (wdm)
 description: The RemoveLockReleasePower rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
-ms.assetid: B327CE08-000E-43E1-8E92-BD4961E0C1C5
 ms.date: 05/21/2018
 keywords: ["RemoveLockReleasePower rule (wdm)"]
 topic_type:

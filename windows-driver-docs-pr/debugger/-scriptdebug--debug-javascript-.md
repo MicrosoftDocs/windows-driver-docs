@@ -2,7 +2,7 @@
 title: .scriptdebug (Debug JavaScript)
 description: Use the .scriptdebug command to debug JavaScript scripts.
 keywords: [".scriptdebug Debug JavaScript Windows Debugging"]
-ms.date: 12/28/2017
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,13 +67,7 @@ Remarks
 
 Before you debug a JavaScript completed the following steps.
 
-1. Load the JavaScript scripting provider using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. 
-
-    ```dbgcmd
-    0:000> .load jsprovider.dll
-    ```
-
-2. Load the sample script.
+1. Load the sample script.
 
     ```dbgcmd
     0:000> .scriptload C:\MyScripts\DebuggableSample.js

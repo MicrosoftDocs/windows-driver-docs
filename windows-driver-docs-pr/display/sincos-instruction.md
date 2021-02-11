@@ -1,7 +1,6 @@
 ---
 title: SINCOS Instruction Format
 description: SINCOS Instruction Format
-ms.assetid: df9b51ef-5a9f-4222-a0be-a40d5b577f9a
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

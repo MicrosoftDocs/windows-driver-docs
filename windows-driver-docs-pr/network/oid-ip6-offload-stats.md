@@ -1,7 +1,6 @@
 ---
 title: OID_IP6_OFFLOAD_STATS
 description: This topic describes the OID_IP6_OFFLOAD_STATS object identifier (OID).
-ms.assetid: 94bfc254-bc83-481f-a2d7-46c1e31e23a7
 keywords:
 - OID_IP6_OFFLOAD_STATS
 ms.date: 11/06/2017

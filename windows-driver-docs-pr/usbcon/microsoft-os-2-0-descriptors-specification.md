@@ -1,7 +1,6 @@
 ---
 title: Microsoft OS 2.0 Descriptors Specification
 description: Microsoft OS 2.0 Descriptors Specification
-ms.assetid: C5C5B14A-F39E-4A15-B8BC-615BD11FB630
 ms.date: 07/08/2019
 ms.localizationpriority: medium
 ---

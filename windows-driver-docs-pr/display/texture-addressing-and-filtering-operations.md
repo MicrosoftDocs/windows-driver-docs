@@ -1,7 +1,6 @@
 ---
 title: Texture Addressing and Filtering Operations
 description: Texture Addressing and Filtering Operations
-ms.assetid: d468c83e-2e9c-4e4b-885e-0427714dd8a3
 keywords:
 - multiple textures WDK Direct3D , addressing
 - multiple textures WDK Direct3D , filtering

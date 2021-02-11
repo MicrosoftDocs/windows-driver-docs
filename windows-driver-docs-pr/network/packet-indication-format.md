@@ -1,7 +1,6 @@
 ---
 title: Packet Indication Format
 description: Packet Indication Format
-ms.assetid: 37ee6db6-2f0e-4987-85e9-5362d23d7b27
 keywords:
 - packet indication WDK Windows Filtering Platform
 ms.date: 04/20/2017

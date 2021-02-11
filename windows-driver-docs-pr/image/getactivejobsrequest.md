@@ -1,7 +1,6 @@
 ---
 title: GetActiveJobsRequest element
 description: The required GetActiveJobsRequest element requests a summary of all currently active jobs in the scan device.
-ms.assetid: 4dc7bc64-b62f-4634-8f0e-64039b9f8609
 keywords: ["GetActiveJobsRequest element Imaging Devices"]
 topic_type:
 - apiref

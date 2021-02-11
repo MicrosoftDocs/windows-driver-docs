@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_INFO structure
 description: Learn about the D3DKMT\_OUTDUPL\_POINTER\_SHAPE\_INFO structure, which is reserved for system use. Do not use in your driver.
-ms.assetid: fc72fe82-8807-44ac-b9da-8f84d38c45bf
 keywords: ["D3DKMT_OUTDUPL_POINTER_SHAPE_INFO structure Display Devices"]
 topic_type:
 - apiref

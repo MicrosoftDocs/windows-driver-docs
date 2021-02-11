@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_INVERT
 description: The WIA\_IPS\_INVERT property is reserved by Microsoft for future use and is not implemented at this time.
-ms.assetid: c860f460-8390-431f-aaee-0eef7821a10c
 keywords: ["WIA_IPS_INVERT Imaging Devices"]
 topic_type:
 - apiref

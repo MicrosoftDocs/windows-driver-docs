@@ -1,7 +1,6 @@
 ---
 title: Power-Down and Removal Sequence for a Function or Filter Driver
 description: Power-Down and Removal Sequence for a Function or Filter Driver
-ms.assetid: E5A22C91-5967-42D6-A991-42B46C72ED82
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

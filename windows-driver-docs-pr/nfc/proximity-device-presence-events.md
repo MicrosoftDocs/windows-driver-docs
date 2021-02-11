@@ -1,7 +1,6 @@
 ---
 title: Proximity device presence events
 description: Proximity device presence events
-ms.assetid: 8E0E44D5-E6DD-4385-988E-EFDAA75C6D59
 keywords:
 - NFC
 - near field communications
@@ -23,5 +22,4 @@ The NFP provider also needs to track the presence of proximate devices in order 
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

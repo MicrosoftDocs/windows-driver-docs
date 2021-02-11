@@ -1,7 +1,6 @@
 ---
 title: Package (SoftwareInfo)
 description: Package (SoftwareInfo)
-ms.assetid: f15f0ffe-593d-4007-8002-4d593d18dd9a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

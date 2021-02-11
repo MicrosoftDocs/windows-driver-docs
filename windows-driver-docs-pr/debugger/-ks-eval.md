@@ -1,7 +1,6 @@
 ---
 title: ks.eval
 description: The ks.eval extension evaluates an expression using an extension-specific expression evaluator.
-ms.assetid: 68c9cfb0-ff87-47ea-bd0d-5f45c1de0639
 keywords: ["ks.eval Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

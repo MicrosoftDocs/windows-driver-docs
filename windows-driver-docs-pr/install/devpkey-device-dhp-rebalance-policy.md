@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DHP_Rebalance_Policy
 description: DEVPKEY_Device_DHP_Rebalance_Policy
-ms.assetid: a882a114-9d1b-41ca-ab24-c2cdda952177
 keywords: ["DEVPKEY_Device_DHP_Rebalance_Policy Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_DHP_Rebalance_Policy
 
 
-The DEVPKEY_Device_DHP_Rebalance_Policy device property represents a value that indicates whether a device will participate in resource rebalancing following a [dynamic hardware partitioning (DHP)](../kernel/dynamic-hardware-partitioning-techniques.md) processor hot-add operation.
+The DEVPKEY_Device_DHP_Rebalance_Policy device property represents a value that indicates whether a device will participate in resource rebalancing following a [dynamic hardware partitioning (DHP)](../kernel/introduction-to-dynamic-hardware-partitioning.md) processor hot-add operation.
 
 <table>
 <colgroup>
@@ -100,6 +99,4 @@ Requirements
 [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
 [**SetupDiSetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdisetdevicepropertyw)
-
- 
 

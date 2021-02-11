@@ -1,7 +1,6 @@
 ---
 title: Functions that Simplify Driver Installation
 description: Functions that Simplify Driver Installation
-ms.assetid: 7201b260-6239-4c76-8d48-7e2df9c662cd
 keywords:
 - Functions WDK , simplifying driver installations
 - DiInstallDevice

@@ -1,7 +1,6 @@
 ---
 title: Sending I/O Requests to General I/O Targets
 description: Sending I/O Requests to General I/O Targets
-ms.assetid: 3fa897f5-2de8-484b-becb-c2de23fb5e8c
 keywords:
 - general I/O targets WDK KMDF , sending I/O requests to
 - sending I/O requests WDK KMDF

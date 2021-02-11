@@ -1,7 +1,6 @@
 ---
 title: Allocation Schemes
 description: Allocation Schemes
-ms.assetid: bd51205d-53e6-42d0-b5e3-36968acba3a3
 keywords:
 - allocation options WDK kernel streaming
 ms.date: 04/20/2017

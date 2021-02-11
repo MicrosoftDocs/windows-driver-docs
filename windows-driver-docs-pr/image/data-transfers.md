@@ -1,7 +1,6 @@
 ---
 title: Data Transfers
 description: Data Transfers
-ms.assetid: 55ef8125-40d3-44f3-8520-cc3a0912c3d2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

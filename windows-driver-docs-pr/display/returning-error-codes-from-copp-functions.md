@@ -1,7 +1,6 @@
 ---
 title: Returning Error Codes from COPP Functions
 description: Returning Error Codes from COPP Functions
-ms.assetid: a42fba73-59b2-4106-ba2b-9e96cd8524c8
 keywords:
 - copy protection WDK COPP , error codes
 - video copy protection WDK COPP , error codes

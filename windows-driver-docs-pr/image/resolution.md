@@ -1,7 +1,6 @@
 ---
 title: Resolution element
 description: The optional Resolution element specifies the resolution of the scanned image.
-ms.assetid: d46c197d-40ed-4623-a842-7ee5cb9e8367
 keywords: ["Resolution element Imaging Devices"]
 topic_type:
 - apiref

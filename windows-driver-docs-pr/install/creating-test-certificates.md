@@ -1,7 +1,6 @@
 ---
 title: Creating Test Certificates
 description: Creating Test Certificates
-ms.assetid: 4e6daa96-029c-4e1c-b483-b900cb836858
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

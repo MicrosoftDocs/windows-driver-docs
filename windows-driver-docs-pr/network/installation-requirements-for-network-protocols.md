@@ -1,7 +1,6 @@
 ---
 title: Installation Requirements for Network Protocols
 description: Installation Requirements for Network Protocols
-ms.assetid: 6383fec5-29ce-4aa4-8fc3-c8d95f7bd02b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

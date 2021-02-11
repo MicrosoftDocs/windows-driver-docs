@@ -1,7 +1,6 @@
 ---
 title: Authoring Tests in C#
 description: Authoring Tests in C#
-ms.assetid: 4DD1D673-FEAF-44a4-8BAD-0E55318DC64B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Security During Remote Debugging
 description: Security During Remote Debugging
-ms.assetid: 55e570d2-b005-4c09-ac8f-0632233a64bd
 keywords: ["security considerations, remote debugging", "remote debugging through remote.exe, security considerations", "remote debugging through the debugger, security considerations", "process server, security considerations"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

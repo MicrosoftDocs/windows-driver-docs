@@ -1,7 +1,6 @@
 ---
 title: CM_PROB_TRANSLATION_FAILED
 description: CM_PROB_TRANSLATION_FAILED
-ms.assetid: b131327a-93ff-476b-8257-09a3dfc424be
 keywords:
 - CM_PROB_TRANSLATION_FAILED
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Initiating Filtering
 description: Initiating Filtering
-ms.assetid: 79ae93bc-0a6d-412a-80ca-ec4f907fb814
 keywords:
 - filtering I/O operations WDK file system minifilter
 ms.date: 04/20/2017

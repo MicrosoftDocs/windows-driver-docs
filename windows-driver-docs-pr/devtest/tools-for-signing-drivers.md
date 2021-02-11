@@ -1,7 +1,6 @@
 ---
 title: Tools for Signing Drivers
 description: Tools for Signing Drivers
-ms.assetid: 2654388d-b39e-4009-bcba-56b318fd5119
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

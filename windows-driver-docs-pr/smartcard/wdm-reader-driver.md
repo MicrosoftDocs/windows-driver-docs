@@ -1,7 +1,6 @@
 ---
 title: WDM Reader Driver
 description: WDM Reader Driver
-ms.assetid: ead76f5f-1d28-4343-99c0-e7974fa4c3da
 keywords:
 - vendor-supplied drivers WDK smart card , required routines
 - WDM WDK smart card

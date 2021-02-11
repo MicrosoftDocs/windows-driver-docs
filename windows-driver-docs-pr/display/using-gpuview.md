@@ -1,7 +1,6 @@
 ---
 title: Using GPUView
 description: Using GPUView
-ms.assetid: 55f589fd-e3ea-4fd2-9e8d-c225c2c3dbb5
 ms.date: 01/23/2019
 ms.localizationpriority: medium
 ---

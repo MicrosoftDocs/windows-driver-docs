@@ -1,7 +1,6 @@
 ---
 title: Initializing a Subunit Driver and Establishing Pin Connections
 description: Initializing a Subunit Driver and Establishing Pin Connections
-ms.assetid: 08c7a604-3aa5-4ee0-be55-b58bea0e6df1
 keywords:
 - Avc.sys function driver WDK , initializing subunit drivers
 - Avc.sys function driver WDK , pin connections

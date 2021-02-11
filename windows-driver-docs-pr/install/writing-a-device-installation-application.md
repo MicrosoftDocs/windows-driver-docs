@@ -1,7 +1,6 @@
 ---
 title: Writing a Device Installation Application
 description: Writing a Device Installation Application
-ms.assetid: 9927e2e0-6c8e-437f-98ce-595bd304ec72
 keywords:
 - installation applications WDK , about writing installation applications
 - device installation applications WDK , about writing installation applications
@@ -25,8 +24,7 @@ ms.localizationpriority: medium
 **Note**  Features described in this section are not supported in universal or mobile driver packages. See [Using a Universal INF File](using-a-universal-inf-file.md).
 
  
-
-If your driver package that installs those components. The device installation application and distribution medium should be compatible with AutoRun, so that AutoRun starts the application automatically when a user inserts your distribution medium. For more information about AutoRun, see [Creating an AutoRun-Enabled Application](/previous-versions/windows/desktop/legacy/cc144206(v=vs.85)).
+If your driver package includes drivers and INF files that replace "inbox" drivers and INF files, or if your package includes device-specific applications, it should include a *device installation application* that installs those components. The device installation application and distribution medium should be compatible with AutoRun, so that AutoRun starts the application automatically when a user inserts your distribution medium. For more information about AutoRun, see [Creating an AutoRun-Enabled Application](/previous-versions/windows/desktop/legacy/cc144206(v=vs.85)).
 
 For guidelines about how to write a device installation application, see [Guidelines for Writing Device Installation Applications](guidelines-for-writing-device-installation-applications.md).
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_COPY\_PROTECTION
 description: The KSPROPERTY\_AUDIO\_COPY\_PROTECTION property specifies the copy-protection status of an audio stream.
-ms.assetid: 68896bd4-9ffe-4632-a3b2-441b5d04208a
 keywords: ["KSPROPERTY_AUDIO_COPY_PROTECTION Audio Devices"]
 topic_type:
 - apiref

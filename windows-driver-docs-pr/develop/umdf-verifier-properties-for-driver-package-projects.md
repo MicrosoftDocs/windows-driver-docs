@@ -1,5 +1,4 @@
 ---
-ms.assetid: 5BF7AB90-FF2E-4679-8C84-2E8091917F5D
 title: UMDF Verifier Properties for Driver Package Projects
 description: Sets the properties for the UMDF Verifier on a test computer. You can use these settings when you build and deploy a driver to a test computer.
 ms.date: 04/20/2017

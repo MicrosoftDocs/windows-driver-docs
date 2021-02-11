@@ -1,7 +1,6 @@
 ---
 title: Important Breakpoints for Analyzing Reproducible Problems
 description: Important Breakpoints for Analyzing Reproducible Problems
-ms.assetid: 3f501bbe-990a-4f46-ba88-c1fc4b73537f
 keywords: ["SCSI Miniport Debugging, breakpoints and reproducible problems"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

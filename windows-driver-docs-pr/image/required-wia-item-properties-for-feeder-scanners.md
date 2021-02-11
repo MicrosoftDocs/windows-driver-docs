@@ -1,7 +1,6 @@
 ---
 title: Required WIA Item Properties for Feeder Scanners
 description: Required WIA Item Properties for Feeder Scanners
-ms.assetid: f9868f05-3c1f-4042-9820-9c1c38af3432
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

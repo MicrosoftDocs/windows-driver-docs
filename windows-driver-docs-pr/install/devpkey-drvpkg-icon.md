@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_DrvPkg_Icon
 description: DEVPKEY_DrvPkg_Icon
-ms.assetid: 30aa817c-9dda-4504-b51a-78ef91d0cf01
 keywords: ["DEVPKEY_DrvPkg_Icon Device and Driver Installation"]
 topic_type:
 - apiref

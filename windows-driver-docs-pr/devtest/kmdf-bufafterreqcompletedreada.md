@@ -1,7 +1,6 @@
 ---
 title: BufAfterReqCompletedReadA rule (kmdf)
 description: The BufAfterReqCompletedReadA rule specifies that within the EvtIoRead callback function, the I/O request buffer retrieved cannot be accessed after the I/O request is completed. There are 14 DDIs that serve as possible buffer access methods.
-ms.assetid: 37b5e86e-79fe-496a-99a1-d8071c788f4d
 ms.date: 05/21/2018
 keywords: ["BufAfterReqCompletedReadA rule (kmdf)"]
 topic_type:

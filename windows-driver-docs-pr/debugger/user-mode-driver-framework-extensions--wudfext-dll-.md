@@ -1,7 +1,6 @@
 ---
 title: User-Mode Driver Framework Extensions (Wudfext.dll)
 description: User-Mode Driver Framework Extensions (Wudfext.dll)
-ms.assetid: 56b1c794-5740-44fd-9e5b-691fbfefe5a9
 keywords: ["user-mode driver framework extensions (wudfext.dll)", "user-mode driver framework debugging, extensions (wudfext.dll)", "wudfext.dll (user-mode driver framework extensions)", "extensions, user-mode driver framework"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

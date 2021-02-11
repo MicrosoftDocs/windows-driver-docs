@@ -1,7 +1,6 @@
 ---
 title: Offloaded Data Transfers
 description: Transferring data between computers or within the same computer is a frequent file system activity.
-ms.assetid: 66006CC0-8902-47CD-8E7C-187FE5BA71EF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

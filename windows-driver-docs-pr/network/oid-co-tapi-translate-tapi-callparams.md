@@ -1,7 +1,6 @@
 ---
 title: OID_CO_TAPI_TRANSLATE_TAPI_CALLPARAMS
 description: This topic describes the OID_CO_TAPI_TRANSLATE_TAPI_CALLPARAMS object identifier (OID).
-ms.assetid: bee8871d-9166-4c5a-8428-964f8b321cf1
 keywords:
 - OID_CO_TAPI_TRANSLATE_TAPI_CALLPARAMS
 ms.date: 11/03/2017

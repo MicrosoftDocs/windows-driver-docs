@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DevNodeStatus
 description: DEVPKEY_Device_DevNodeStatus
-ms.assetid: 538a78f0-c704-444e-8314-38b2e0421c39
 keywords: ["DEVPKEY_Device_DevNodeStatus Device and Driver Installation"]
 topic_type:
 - apiref

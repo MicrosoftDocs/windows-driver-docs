@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_DOT11_RESET
 description: OID_WDI_TASK_DOT11_RESET requests that the IHV component resets the MAC and PHY state on a specified port.
-ms.assetid: 5fcac1da-0776-47a5-87b7-8e831f968f7c
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_DOT11_RESET Network Drivers Starting with Windows Vista

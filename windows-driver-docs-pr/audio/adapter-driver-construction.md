@@ -1,7 +1,6 @@
 ---
 title: Adapter Driver Construction
 description: Adapter Driver Construction
-ms.assetid: e4a151b9-57aa-402f-8a0d-70547eb67917
 keywords:
 - audio miniport drivers WDK , adapter drivers
 - miniport drivers WDK audio , adapter drivers
@@ -30,7 +29,7 @@ Driver support for a particular audio adapter card takes the form of an adapter 
 
 The hardware vendor supplies both the general adapter code and the code for any miniport drivers that are not provided by the system.
 
-For an example of the general adapter code, see the implementation of the **CAdapterCommon** interface in the Sb16, Msvad, and Ac97 sample audio drivers in the Microsoft Windows Driver Kit (WDK).
+For an example of the general adapter code, see the implementation of the **CAdapterCommon** interface in the Sysvad sample driver, which is discussed in [Sample Audio Drivers](sample-audio-drivers.md).
 
 By using a layered approach, the vendor can write an adapter driver that operates on one of several levels, depending on the adapter's hardware functionality. When determining the level of support that a given hardware function requires, the vendor should first determine whether a system-supplied miniport driver already exists that supports the function (see the [**PcNewMiniport**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewminiport) function's list of system-supplied miniport drivers). If not, the vendor must implement a proprietary miniport driver but might still be able to use one of the system-supplied port drivers (see the [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) function's list of system-supplied port drivers).
 

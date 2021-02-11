@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_TRANSFER_STATUS
 description: EFI_USBFN_TRANSFER_STATUS
-ms.assetid: 60631dad-a617-4ed4-a975-5e480cf324e3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_DIRECTSOUND3DLISTENER\_DISTANCEFACTOR
 description: The KSPROPERTY\_DIRECTSOUND3DLISTENER\_DISTANCEFACTOR property specifies the distance factor that should be applied to any distance values.
-ms.assetid: 38daa5d8-d70f-4484-bf5a-a9a365296313
 keywords: ["KSPROPERTY_DIRECTSOUND3DLISTENER_DISTANCEFACTOR Audio Devices"]
 topic_type:
 - apiref

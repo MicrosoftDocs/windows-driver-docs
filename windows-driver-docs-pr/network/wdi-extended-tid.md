@@ -1,7 +1,6 @@
 ---
 title: WDI_EXTENDED_TID
 description: This topic describes the WDI_EXTENDED_TID data type for WDI miniport drivers.
-ms.assetid: C7ECB1BD-CB4A-4FD7-8222-9C9E25C15910
 keywords:
 - WDI_EXTENDED_TID, WDK WDI_EXTENDED_TID network drivers
 ms.date: 11/27/2017

@@ -1,7 +1,6 @@
 ---
 title: Creating a NIC Switch
 description: Creating a NIC Switch
-ms.assetid: 5A184EBD-95F4-4C11-AACD-49DF04578CA0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

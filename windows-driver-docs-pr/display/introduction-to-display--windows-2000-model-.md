@@ -1,7 +1,6 @@
 ---
 title: Introduction to Display (Windows 2000 Model)
 description: Introduction to Display (Windows 2000 Model)
-ms.assetid: c1083cce-2113-4286-88aa-9b3bd5157027
 keywords:
 - display driver model WDK Windows 2000 , about display driver model
 - Windows 2000 display driver model WDK , about display driver model

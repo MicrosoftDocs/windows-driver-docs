@@ -1,7 +1,6 @@
 ---
 title: dh
 description: The dh extension displays the headers for the specified image.
-ms.assetid: 1b4f94ae-42cc-4381-a2d1-c2f248e4d5a6
 keywords: ["NTFS file object", "dh Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

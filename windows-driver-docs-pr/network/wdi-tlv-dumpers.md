@@ -1,7 +1,6 @@
 ---
 title: WDI TLV dumpers
 description: The parser generator library has routines to decode TLV byte arrays into trace statements.
-ms.assetid: 4F8B53E5-1F51-4119-AC06-7A710340E4A4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: INF BitReg Directive
 description: A BitReg directive references one or more INF-writer-defined sections used to set or clear bits within an existing [REG_BINARY](/windows/desktop/SysInfo/registry-value-types)-type value entry in the registry. However, this directive is very rarely used in device/driver INF files.
-ms.assetid: d9dc601a-e0bb-488f-8bed-221ad600a88c
 keywords:
 - INF BitReg Directive Device and Driver Installation
 topic_type:
@@ -79,8 +78,8 @@ Relative root − that is, keys that are specified by using this abbreviation ar
 
 | INF Section Containing BitReg Directive                                    | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF ***DDInstall*** |
-| INF ***DDInstall*.HW** |
+| INF [***DDInstall***](inf-ddinstall-section.md) section                   | The device's *software key* |
+| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's *hardware key* |
 | INF [***DDInstall*.Service**](inf-ddinstall-services-section.md)s section | The **Services** key                                                                  |
 
  

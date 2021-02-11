@@ -1,7 +1,6 @@
 ---
 title: Hardware-First Installation
 description: Hardware-First Installation
-ms.assetid: 42e47250-3600-4479-8e49-483c7470935d
 keywords:
 - installation applications WDK , hardware-first installations
 - device installation applications WDK , hardware-first installations

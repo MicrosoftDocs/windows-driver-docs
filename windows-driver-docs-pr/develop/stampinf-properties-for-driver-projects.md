@@ -1,5 +1,4 @@
 ---
-ms.assetid: 18A9ACEF-51F8-4BC0-B305-F58287AD321C
 title: Stampinf Properties for Driver Projects
 description: Sets the properties for the Stampinf tool. You can use Stampinf to update common INF and INX file directives when you build the driver.
 ms.date: 04/20/2017
@@ -54,7 +53,7 @@ If you want to add this property page to your project, so that you can run the S
 <li><p>If the STAMPINF_VERSION environment variable is not specified, Stampinf extracts the version number from the ntverp.h file.</p></li>
 </ul>
 <div class="alert">
-<strong>Note</strong>  By default, the STAMPINF_VERSION environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015)">How to: Use Environment Variables in a Build</a>.
+<strong>Note</strong>  By default, the STAMPINF_VERSION environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="/visualstudio/msbuild/how-to-use-environment-variables-in-a-build" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)">How to: Use Environment Variables in a Build</a>.
 </div>
 <div>
  
@@ -76,7 +75,7 @@ If you want to add this property page to your project, so that you can run the S
 </ul>
 <p>This setting is equivalent to specifying the <a href="/windows-hardware/drivers/devtest/stampinf" data-raw-source="[Stampinf](../devtest/stampinf.md)">Stampinf</a> option <strong>-d [</strong><em>date</em><strong>|</em>]</strong>.</p>
 <div class="alert">
-<strong>Note</strong>  By default, the STAMPINF_DATE environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015)">How to: Use Environment Variables in a Build</a>.
+<strong>Note</strong>  By default, the STAMPINF_DATE environment variable is not set when you build a driver unless you set it as a system environment variable. To specify this environment variable within the Visual Studio build environment, see <a href="/visualstudio/msbuild/how-to-use-environment-variables-in-a-build" data-raw-source="[How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)">How to: Use Environment Variables in a Build</a>.
 </div>
 <div>
  
@@ -130,4 +129,4 @@ If you want to add this property page to your project, so that you can run the S
 * [**INF Version section**](../install/inf-version-section.md)
 * [WDK and Visual Studio build environment](../devtest/wdk-and-visual-studio-build-environment.md)
 * [Stampinf task](https://msdn.microsoft.com/Library/Windows/Hardware/Ff552786_task)
-* [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build?view=vs-2015)
+* [How to: Use Environment Variables in a Build](/visualstudio/msbuild/how-to-use-environment-variables-in-a-build)

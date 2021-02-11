@@ -1,7 +1,6 @@
 ---
 title: Guidelines for Porting Legacy Filter Drivers
 description: Guidelines for Porting Legacy Filter Drivers
-ms.assetid: 6dd9637e-e9b3-4434-996c-c3f8ce6584c4
 keywords:
 - filter manager WDK file system minifilter , porting legacy drivers
 - porting legacy filter drivers

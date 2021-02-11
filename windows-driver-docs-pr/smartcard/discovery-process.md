@@ -1,7 +1,6 @@
 ---
 title: Discovery Process
 description: Discovery Process
-ms.assetid: 6B94CAF1-D998-4EAF-8ABB-80A21193B50F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

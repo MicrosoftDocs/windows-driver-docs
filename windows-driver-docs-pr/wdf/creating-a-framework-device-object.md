@@ -1,7 +1,6 @@
 ---
 title: Creating a Framework Device Object
 description: Creating a Framework Device Object
-ms.assetid: 25023c19-a153-4bd4-9fb6-3a1bf85860aa
 keywords:
 - PnP WDK KMDF , device objects
 - Plug and Play WDK KMDF , device objects

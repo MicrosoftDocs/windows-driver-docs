@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP
 description: Clients use KSPROPERTY\_BDA\_NULL\_TRANSFORM\_STOP to restart the transform that the node performed on the signal before that transform was disabled with the KSPROPERTY\_BDA\_NULL\_TRANSFORM\_START property.
-ms.assetid: 4bf0bc50-8a08-4ded-b7e8-cf9a8191cc35
 keywords: ["KSPROPERTY_BDA_NULL_TRANSFORM_STOP Streaming Media Devices"]
 topic_type:
 - apiref

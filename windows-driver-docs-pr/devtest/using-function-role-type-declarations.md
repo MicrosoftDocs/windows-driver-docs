@@ -1,7 +1,6 @@
 ---
 title: Using Function Role Type Declarations
 description: Using Function Role Type Declarations
-ms.assetid: aaa37aa7-808c-48aa-bd83-96b9aeb00234
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Physical Configuration of Devices Attached to a Parallel Port
 description: Physical Configuration of Devices Attached to a Parallel Port
-ms.assetid: ae90fcc6-7ea8-4cb1-89a1-1fbf1ad5c05e
 keywords:
 - IEEE 1284 WDK
 - parallel ports WDK , device configurations

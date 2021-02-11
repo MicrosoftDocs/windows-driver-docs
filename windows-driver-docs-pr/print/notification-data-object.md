@@ -1,7 +1,6 @@
 ---
 title: Notification Data Object
 description: Notification Data Object
-ms.assetid: 6ba8840d-a693-485c-81da-81205e511120
 keywords:
 - spooler notification WDK print , data object
 - print spooler notification WDK , data object

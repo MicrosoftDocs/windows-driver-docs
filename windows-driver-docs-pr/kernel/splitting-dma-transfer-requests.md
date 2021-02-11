@@ -1,7 +1,6 @@
 ---
 title: Splitting DMA Transfer Requests
 description: Splitting DMA Transfer Requests
-ms.assetid: 7d5b1649-1021-4876-a9c0-e6b156785ef2
 keywords: ["I/O WDK kernel , splitting transfer requests", "splitting transfer requests", "transfer request splitting WDK kernel", "data transfers WDK kernel , splitting requests", "transferring data WDK kernel , splitting requests"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

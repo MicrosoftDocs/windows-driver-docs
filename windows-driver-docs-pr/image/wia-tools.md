@@ -1,7 +1,6 @@
 ---
 title: WIA Tools
 description: WIA Tools
-ms.assetid: 17939e85-b69b-4d89-9f97-a4f061b8dd5b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

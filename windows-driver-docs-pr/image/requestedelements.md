@@ -1,7 +1,6 @@
 ---
 title: RequestedElements element
 description: The required RequestedElements element identifies the elements that the client wants data for when it calls GetScannerElementsRequest or GetJobElementsRequest.
-ms.assetid: 0023afc1-723d-4b6a-9f1a-0bc21a309a65
 keywords: ["RequestedElements element Imaging Devices"]
 topic_type:
 - apiref

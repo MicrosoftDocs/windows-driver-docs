@@ -1,7 +1,6 @@
 ---
 title: RemoveLockReleaseDeviceControl rule (wdm)
 description: The RemoveLockReleaseDeviceControl rule verifies that calls to IoAcquireRemoveLock and IoReleaseRemoveLock are used in strict alternation. Moreover, at the end of the dispatch routine the driver should not hold the remove lock.
-ms.assetid: 88D45CFD-E725-4EEE-AEC5-5209344662B6
 ms.date: 05/21/2018
 keywords: ["RemoveLockReleaseDeviceControl rule (wdm)"]
 topic_type:

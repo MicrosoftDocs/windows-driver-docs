@@ -1,7 +1,6 @@
 ---
 title: Streaming Media Samples
 description: Streaming media samples
-ms.assetid: 797763a6-cd13-4d76-8ddb-75d812a8dde3
 keywords:
 - streaming media samples WDK
 - samples WDK streaming media

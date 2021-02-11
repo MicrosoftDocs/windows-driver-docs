@@ -1,7 +1,6 @@
 ---
 title: Intel's HD Audio Architecture
 description: Intel's HD Audio Architecture
-ms.assetid: 86cba795-847c-4f54-93f8-e34ae73dc708
 keywords:
 - HD Audio, architecture
 - High Definition Audio (HD Audio), architecture

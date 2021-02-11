@@ -1,7 +1,6 @@
 ---
 title: SCSI Miniport Drivers
 description: SCSI Miniport Drivers
-ms.assetid: d9268be8-a68d-4617-b323-349ce7c62f3f
 keywords:
 - SCSI miniport drivers WDK storage
 - storage miniport drivers WDK , SCSI miniport drivers

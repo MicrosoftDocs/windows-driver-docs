@@ -1,7 +1,6 @@
 ---
 title: NDIS I/O Work Items
 description: NDIS I/O Work Items
-ms.assetid: 4f966ff3-2092-495f-863f-50f079085fa6
 keywords:
 - I/O work items WDK NDIS
 - I/O WDK kernel , NDIS

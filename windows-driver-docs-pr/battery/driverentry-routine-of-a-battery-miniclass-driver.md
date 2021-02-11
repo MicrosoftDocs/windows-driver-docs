@@ -1,7 +1,6 @@
 ---
 title: DriverEntry Routine of a Battery Miniclass Driver
 description: DriverEntry Routine of a Battery Miniclass Driver
-ms.assetid: dc7c9f75-835b-4646-b30b-24c9dcb6ed2d
 keywords:
 - battery miniclass drivers WDK , routines
 - DriverEntry WDK battery

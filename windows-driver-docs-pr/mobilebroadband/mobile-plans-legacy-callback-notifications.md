@@ -1,7 +1,6 @@
 ---
 title: Mobile Plans legacy callback notifications
 description: This topic describes the Callback notifications support by Mobile Plans app
-ms.assetid: 5077A3EA 379C 4EB5 A05B BA1585E9594D
 keywords:
 - Windows Mobile Plans Legacy Callback notifications, Mobile Plans Legacy implementation mobile operators
 ms.date: 05/24/2019

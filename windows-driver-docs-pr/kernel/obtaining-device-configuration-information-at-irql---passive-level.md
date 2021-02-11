@@ -1,7 +1,6 @@
 ---
 title: Obtaining Device Configuration Information at IRQL PASSIVE_LEVEL
 description: Obtaining Device Configuration Information at IRQL PASSIVE_LEVEL
-ms.assetid: 672fb3d8-6e64-425b-a035-8f8ecfd624f1
 keywords: ["I/O WDK kernel , device configuration space", "device configuration space WDK I/O", "configuration space WDK I/O", "space WDK I/O", "PASSIVE_LEVEL WDK", "driver stacks WDK configuration info"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

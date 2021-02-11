@@ -1,7 +1,6 @@
 ---
 title: Upper and lower edges of drivers
 description: The sequence of drivers that participate in an I/O request is called the driver stack for the request. 
-ms.assetid: EA1C36F4-B9BD-4A9E-A6D4-6B4EC5455030
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

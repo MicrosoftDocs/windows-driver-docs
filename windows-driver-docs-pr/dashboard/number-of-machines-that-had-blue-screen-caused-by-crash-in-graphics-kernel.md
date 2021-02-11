@@ -21,7 +21,7 @@ During a user’s session, a crash in the display kernel causes a blue screen, w
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|5,000 machines|
 |**Passing criteria**|<=10/10,000 machines have a crash in the display kernel|
-|**Measure ID**|7533022|
+|**Measure ID**|7533022 or 26590240|
 
 ## Calculation
 

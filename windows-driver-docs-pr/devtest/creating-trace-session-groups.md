@@ -1,7 +1,6 @@
 ---
 title: Creating Trace Session Groups
 description: Creating Trace Session Groups
-ms.assetid: e7b8b439-3695-4d00-9e03-d9524dff0615
 keywords:
 - grouping trace sessions
 - trace sessions WDK , groups

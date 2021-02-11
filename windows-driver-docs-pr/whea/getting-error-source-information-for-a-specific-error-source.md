@@ -1,7 +1,6 @@
 ---
 title: Getting Error Source Information for a Specific Error Source
 description: Getting Error Source Information for a Specific Error Source
-ms.assetid: 9979d654-8214-4e2d-9c6e-fc29a7f4ab40
 keywords:
 - error sources WDK WHEA , getting information
 - errors WDK WHEA , error sources

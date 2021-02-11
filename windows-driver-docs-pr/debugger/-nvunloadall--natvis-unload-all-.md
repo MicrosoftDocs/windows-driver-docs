@@ -1,7 +1,6 @@
 ---
 title: .nvunloadall (NatVis Unload All)
 description: The .nvunloadall command unloads all of the NatVis files from the debugger environment.
-ms.assetid: E018D09A-1B52-4D9E-944E-7F61841EAE1A
 keywords: [".nvunloadall (NatVis Unload All) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -46,7 +45,7 @@ The .nvunloadall command unloads all of the NatVis files from the debugger envir
 
 ## Additional Information
 
-For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015).
+For more information, see [Create Custom Views of Native Objects](/visualstudio/debugger/create-custom-views-of-native-objects).
 
 ## See also
 

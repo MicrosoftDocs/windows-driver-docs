@@ -1,7 +1,6 @@
 ---
 title: System-Wide Unique Device IDs
 description: System-Wide Unique Device IDs
-ms.assetid: 628577b6-05fe-4b63-929f-6d63e93c9266
 keywords:
 - audio adapters WDK , unique device IDs
 - adapter drivers WDK audio , unique device IDs

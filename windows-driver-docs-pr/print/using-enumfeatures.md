@@ -1,7 +1,6 @@
 ---
 title: Using EnumFeatures
 description: Using EnumFeatures
-ms.assetid: 4a87cedf-066a-445b-ad3e-71699c9d3e07
 keywords:
 - EnumFeatures
 ms.date: 04/20/2017

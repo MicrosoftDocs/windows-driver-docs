@@ -1,7 +1,6 @@
 ---
 title: Supporting an Operation Region
 description: Supporting an Operation Region
-ms.assetid: 262a7201-d89e-4639-9630-a51aaa28db34
 keywords:
 - ACPI devices WDK , operation regions
 - operation regions WDK ACPI

@@ -1,7 +1,6 @@
 ---
 title: Getting Started with WinDbg (Kernel-Mode)
 description: This topic provides hands-on exercises that will help you get started using WinDbg as a kernel-mode debugger.
-ms.assetid: 1B61591F-0D48-4FBD-B242-68BB90D27FAF
 ms.date: 06/02/2020
 ms.localizationpriority: medium
 ---

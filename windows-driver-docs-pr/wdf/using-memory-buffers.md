@@ -1,7 +1,6 @@
 ---
 title: Using Memory Buffers
 description: Using Memory Buffers
-ms.assetid: f5699837-f1ba-4088-82b3-d7e27341fb46
 keywords:
 - memory buffers WDK KMDF
 - buffers WDK KMDF
@@ -68,6 +67,9 @@ Most framework-based drivers do not use MDLs.
 A driver that requires local, internal buffer space that it will not pass to the framework does not have to create memory objects to represent the buffers. The driver can call [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) to allocate internal buffers. When the driver has finished using the buffer, it must call [**ExFreePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exfreepoolwithtag).
 
 However, drivers can also use memory objects for local buffers. An advantage to using memory buffers, instead of calling [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag), is that the framework automatically deletes memory objects and their buffers when each object's parent object is deleted.
+
+>[!IMPORTANT]
+> The ExAllocatePool DDIs discussed in this topic have been deprecated in Windows 10, version 2004 and have been replaced by [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3). For more information, see [Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3](/windows-hardware/drivers/kernel/updating-deprecated-exallocatepool-calls).
 
 ### Aligning Buffers
 

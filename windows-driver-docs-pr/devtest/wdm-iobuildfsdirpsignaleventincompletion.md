@@ -1,7 +1,6 @@
 ---
 title: IoBuildFsdIrpSignalEventInCompletion rule
 description: The IoBuildFsdIrpSignalEventInCompletion rule specifies that the driver should call KeSetEvent in the completion routine when the Irp- PendingReturned flag is set and the completion routine is processing a locally created asynchronous IRP.
-ms.assetid: EBD84765-B517-447B-A6EF-0966054E7131
 ms.date: 05/21/2018
 keywords: ["IoBuildFsdIrpSignalEventInCompletion rule"]
 topic_type:

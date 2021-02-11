@@ -1,7 +1,6 @@
 ---
 title: Enabling Event Categories for a Text Log
 description: Enabling Event Categories for a Text Log
-ms.assetid: 555f698b-69e2-469b-b958-185cb35eeb5a
 keywords:
 - event categories WDK SetupAPI logging
 - text logs WDK SetupAPI , event categories

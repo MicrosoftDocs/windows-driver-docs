@@ -1,7 +1,6 @@
 ---
 title: Notification Operations
 description: Notification Operations
-ms.assetid: f985691b-9f58-4d32-b1b5-8897e31a8d28
 keywords:
 - IHV Extensions DLL WDK Native 802.11 , notification operations
 - Native 802.11 IHV Extensions DLL WDK , notification operations

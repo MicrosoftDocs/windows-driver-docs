@@ -1,7 +1,6 @@
 ---
 title: AV/C Protocol Driver Function Codes
 description: AV/C Protocol Driver Function Codes
-ms.assetid: 96f1900f-89cd-4f9e-bd73-463255cf4dcd
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

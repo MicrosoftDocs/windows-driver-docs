@@ -1,7 +1,6 @@
 ---
 title: Index Buffers
 description: Index Buffers
-ms.assetid: 5bf7dc12-d988-4194-a81f-52c9c5356610
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , index buffers
 - index buffers WDK Directx 8.0

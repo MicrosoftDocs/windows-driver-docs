@@ -1,7 +1,6 @@
 ---
 title: Implementing Audio Processing Objects
 description: This topic describes how to implement an audio processing object (APO). For general information about APOs, see Audio Processing Object Architecture.
-ms.assetid: 822FAF10-DAB3-48D1-B782-0C80B072D3FB
 ms.date: 06/12/2020
 ms.localizationpriority: medium
 ---
@@ -99,7 +98,6 @@ The other projects in the Sysvad sample are summarized below.
 
 |**Project**|**Description**|
 |----|----|
-| PhoneAudioSample       | Sample code for a mobile audio driver.     |
 | TabletAudioSample      | Sample code for an alternate audio driver. |
 | KeywordDetectorAdapter | Sample code for a keyword detector adapter |
 | EndpointsCommon        | Sample code for common endpoints.          |

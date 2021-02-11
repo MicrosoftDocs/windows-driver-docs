@@ -1,7 +1,6 @@
 ---
 title: Controlling Processes and Threads in WinDbg
 description: Controlling Processes and Threads in WinDbg
-ms.assetid: d4755889-9a65-4e81-b3a3-e0bbc6324d3e
 keywords: ["debugging information windows, Processes and Threads window", "Processes and Threads window", "process, Processes and Threads window", "thread, Processes and Threads window"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

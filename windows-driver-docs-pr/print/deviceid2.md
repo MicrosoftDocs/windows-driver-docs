@@ -1,7 +1,6 @@
 ---
 title: DeviceID
 description: DeviceID
-ms.assetid: 0fb02802-a7b6-4efa-b9b1-6d73059b425f
 keywords:
 - WSDMON port monitors WDK , DeviceID command
 - DeviceID

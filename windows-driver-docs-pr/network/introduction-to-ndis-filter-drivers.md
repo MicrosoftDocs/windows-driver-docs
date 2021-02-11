@@ -1,7 +1,6 @@
 ---
 title: Getting started with NDIS Filter Drivers
 description: Getting started with NDIS Filter Drivers
-ms.assetid: dcf9b992-4812-43d7-9170-1a565d8db8fb
 keywords:
 - filter drivers WDK networking , about filter drivers
 - NDIS filter drivers WDK , about filter drivers

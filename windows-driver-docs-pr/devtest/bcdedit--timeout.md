@@ -1,7 +1,6 @@
 ---
 title: BCDEdit /timeout
 description: The **BCDEdit /timeout** command sets the time to wait, in seconds, before the boot manager selects a default entry. 
-ms.assetid: d8f238ae-fb0f-4c62-b149-0e066bfa4d5f
 ms.date: 09/23/2020
 keywords: ["BCDEdit /timeout Driver Development Tools"]
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: INF AddReg Directive
 description: An AddReg directive references one or more INF-writer-defined add-registry-sections that are used to modify or create registry information.
-ms.assetid: e8162e20-0d8c-4400-9f4d-5f4abe81305b
 keywords:
 - INF AddReg Directive Device and Driver Installation
 topic_type:
@@ -80,8 +79,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | INF Section Containing AddReg Directive                        | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF ***DDInstall*** |
-| INF ***DDInstall*.HW** |
+| INF [***DDInstall***](inf-ddinstall-section.md) section       | The device's *software key* |
+| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section | The device's *hardware key* |
 | INF *\[service-install-section\]* section                      | The **Services** key                                                                  |
 | INF *\[event-log-install\]* section                            | The **EventLog** key                                                                  |
 | INF *\[add-interface-section\]* section                        | The device interface's registry key                                                    |

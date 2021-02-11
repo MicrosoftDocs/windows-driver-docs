@@ -1,7 +1,6 @@
 ---
 title: Modifying the Parameters for an I/O Operation
 description: Modifying the Parameters for an I/O Operation
-ms.assetid: 8e25842f-6f10-412f-8cb2-156bea7d7983
 keywords:
 - preoperation callback routines WDK file system minifilter , modifying parameters
 - postoperation callback routines WDK file system minifilter , modifying parameters

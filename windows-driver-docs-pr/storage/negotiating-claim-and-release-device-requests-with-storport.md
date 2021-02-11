@@ -1,7 +1,6 @@
 ---
 title: Negotiating Claim and Release Device Requests with Storport
 description: Negotiating Claim and Release Device Requests with Storport
-ms.assetid: 9212f2b0-6319-47a6-8c61-02002ad81178
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

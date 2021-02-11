@@ -1,7 +1,6 @@
 ---
 title: GDL Construct Unions
 description: GDL Construct Unions
-ms.assetid: 0ca237fe-7f47-4b9c-8963-676a2afd1140
 keywords:
 - constructs WDK GDL , unions
 - logical constructs WDK GDL

@@ -1,7 +1,6 @@
 ---
 title: DoubleCompletion rule (kmdf)
 description: The DoubleCompletion rule specifies that drivers must not complete an I/O request twice.
-ms.assetid: F005501B-29B5-42CE-8CAD-EDA00E1E5D82
 ms.date: 05/21/2018
 keywords: ["DoubleCompletion rule (kmdf)"]
 topic_type:

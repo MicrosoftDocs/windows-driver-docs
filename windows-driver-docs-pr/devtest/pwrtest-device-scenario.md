@@ -1,7 +1,6 @@
 ---
 title: PwrTest Device Scenario
 description: The PwrTest Device Scenario monitors device idle statistics.
-ms.assetid: 75C53B6E-3D1F-4E9D-A99E-3060A9CC37BC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

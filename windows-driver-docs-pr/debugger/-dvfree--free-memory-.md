@@ -1,7 +1,6 @@
 ---
 title: .dvfree (Free Memory)
 description: The .dvfree command frees a memory allocation owned by the target process.
-ms.assetid: 46845a5c-6ec4-4ae4-b89d-886df367dc5e
 keywords: [".dvfree (Free Memory) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

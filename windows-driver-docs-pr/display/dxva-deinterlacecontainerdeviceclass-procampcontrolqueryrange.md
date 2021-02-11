@@ -1,7 +1,6 @@
 ---
 title: ProcAmpControlQueryRange method
 description: The sample DXVA\_DeinterlaceContainerDeviceClass::ProcAmpControlQueryRange function allows the VMR to query the driver to determine the minimum, maximum, step size, and default value for each ProcAmp property.
-ms.assetid: 13fd5d4b-f753-4a2c-80e0-c9614d7ebd3d
 keywords: ["ProcAmpControlQueryRange method Display Devices", "ProcAmpControlQueryRange method Display Devices , DXVA_DeinterlaceContainerDeviceClass interface", "DXVA_DeinterlaceContainerDeviceClass interface Display Devices , ProcAmpControlQueryRange method"]
 topic_type:
 - apiref

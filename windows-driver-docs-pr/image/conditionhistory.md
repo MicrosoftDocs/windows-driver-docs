@@ -1,7 +1,6 @@
 ---
 title: ConditionHistory element
 description: The optional ConditionHistory element is a collection of ConditionHistoryEntry elements that provide details about recent conditions and errors on the scanner.
-ms.assetid: 3725a635-6571-4a34-b8f9-9fe6881bd6da
 keywords: ["ConditionHistory element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DoubleFetch rule (wdm)
 description: Learn about the DoubleFetch rule (wdm). 
-ms.assetid: 2DCDB0E1-AE62-4951-8029-E9557BCC0DDB
 ms.date: 10/21/2020
 keywords: ["DoubleFetch rule (wdm)"]
 topic_type:

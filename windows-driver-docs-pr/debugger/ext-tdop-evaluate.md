@@ -1,7 +1,6 @@
 ---
 title: EXT\_TDOP\_EVALUATE
 description: The EXT\_TDOP\_EVALUATE sub-operation of the DEBUG\_REQUEST\_EXT\_TYPED\_DATA\_ANSI Request operation returns the typed data description that represents the value of an expression.
-ms.assetid: 2df6cf92-6889-4407-93c0-4c777a68cbc8
 keywords: ["EXT_TDOP_EVALUATE Windows Debugging"]
 topic_type:
 - apiref

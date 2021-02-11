@@ -1,7 +1,6 @@
 ---
 title: FilmMinimumSize element
 description: The required FilmMinimumSize element specifies the smallest size original that an end user can scan with the film scanning option.
-ms.assetid: bce03ce1-9f2f-489f-ae71-a81474895410
 keywords: ["FilmMinimumSize element Imaging Devices"]
 topic_type:
 - apiref

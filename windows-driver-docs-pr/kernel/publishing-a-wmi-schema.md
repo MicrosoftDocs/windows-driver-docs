@@ -1,7 +1,6 @@
 ---
 title: Publishing a WMI Schema
 description: Publishing a WMI Schema
-ms.assetid: db2b8086-71e4-4532-a0ae-75983691a5a6
 keywords: ["WMI WDK kernel , publishing schema", "publishing WMI schema WDK", "schema publishing WDK WMI", "MOF files WDK WMI", "binary MOF WDK WMI"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

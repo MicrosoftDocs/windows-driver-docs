@@ -1,7 +1,6 @@
 ---
 title: StorPortSpinLock rule (storport)
 description: This rule verifies that locks that are acquired via StorPortAcquireSpinLock are promptly released via StorPortReleaseSpinLock.
-ms.assetid: B7B918A0-3042-4961-8D33-EFDC15819D1F
 ms.date: 05/21/2018
 keywords: ["StorPortSpinLock rule (storport)"]
 topic_type:

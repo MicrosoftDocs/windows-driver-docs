@@ -1,7 +1,6 @@
 ---
 title: INF UnregisterDlls Directive
 description: An UnregisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
-ms.assetid: 11d29c7f-9bd8-4097-9842-ce7431389241
 keywords:
 - INF UnregisterDlls Directive Device and Driver Installation
 topic_type:

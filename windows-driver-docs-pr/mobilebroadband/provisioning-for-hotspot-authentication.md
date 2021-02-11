@@ -1,7 +1,6 @@
 ---
 title: Provisioning for hotspot authentication
 description: Provisioning for hotspot authentication
-ms.assetid: bfb4e1ec-9887-4b25-bfcc-be642b1a0101
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

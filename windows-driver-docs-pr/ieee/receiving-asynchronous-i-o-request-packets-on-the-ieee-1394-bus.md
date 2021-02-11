@@ -1,7 +1,6 @@
 ---
 title: Receiving Asynchronous I/O Request Packets on the IEEE 1394 Bus
 description: The computer itself is a node on the IEEE 1394 bus, and therefore can receive asynchronous I/O requests.
-ms.assetid: 7b8eaf40-7fdc-4c25-86a7-8377d2d51877
 keywords:
 - receiving asynchronous I/O requests
 - allocating address ranges
@@ -180,7 +179,7 @@ The client driver must perform the following tasks in the driver's asynchronous 
 
 ## Asynchronous receive in the pre-notification case
 
-The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism. For more information, see [Knowledge Base: IEEE 1394 Async Receive Response not sent using Pre-Notification (2635883)](https://support.microsoft.com/help/2635883/ieee-1394-async-receive-response-not-sent-using-pre-notification).
+The legacy 1394 bus driver fails to complete asynchronous receive transactions by using the pre-notification mechanism.
 
 For the new 1394 bus driver, the expected behavior of the client driver's notification callback routine in the pre-notification case is as follows:
 
@@ -191,7 +190,7 @@ For the new 1394 bus driver, the expected behavior of the client driver's notifi
 * The **ResponsePacket** and **ResponseEvent** members of [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) contain pointers to pointers. Therefore, you must reference the pointers to your response packet and response event appropriately.
 * The **ResponseLength** member of [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) is a pointer to a ULONG variable. Therefore, you must dereference the member appropriately when setting the response data length for requests such as for read & lock requests).
 * The 1394 client driver is responsible for allocating memory for the response packet and response event (from nonpaged pool), and releasing that memory after the response has been delivered. It is recommended that a work item is queued and the work item should wait on response event. That event is signaled by the 1394 bus driver after the response has been delivered. The client driver can then release the memory within the work item.
-* The **ResponseCode** member in the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must be set to one of the RCODE values defined in 1394.h. If **ResponseCode** is set to any value other than RCODE\_RESPONSE\_COMPLETE, the 1394 bus driver sends an error response packet. In the case of a read or lock request, the request does not return any data. In Windows 7, can leak memory, for more information see [Knowledge Base: Memory Leak in IEEE 1394 Bus Driver Performing Asynchronous Notification Callbacks (2023232)](https://support.microsoft.com/help/2023232).
+* The **ResponseCode** member in the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must be set to one of the RCODE values defined in 1394.h. If **ResponseCode** is set to any value other than RCODE\_RESPONSE\_COMPLETE, the 1394 bus driver sends an error response packet. In the case of a read or lock request, the request does not return any data.
 * For read and lock requests, the **ResponsePacket** member of the [**NOTIFICATION\_INFO**](/windows-hardware/drivers/ddi/1394/ns-1394-_notification_info_w2k) structure must point to the data to be returned in the asynchronous response packet.
 
 The following code examples shows the work item implementation and the client driver's notification routine.

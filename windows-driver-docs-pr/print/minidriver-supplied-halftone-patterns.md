@@ -1,7 +1,6 @@
 ---
 title: Minidriver-Supplied Halftone Patterns
 description: Minidriver-Supplied Halftone Patterns
-ms.assetid: db2e1c5c-f337-4875-980d-a75a54a4cece
 keywords:
 - GDI-supplied halftoning WDK Unidrv
 - minidriver-supplied halftoning WDK Unidrv

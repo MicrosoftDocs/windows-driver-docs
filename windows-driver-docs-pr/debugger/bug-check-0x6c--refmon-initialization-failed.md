@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x6C REFMON_INITIALIZATION_FAILED
 description: The REFMON_INITIALIZATION_FAILED bug check has a value of 0x0000006C.This bug check appears very infrequently.
-ms.assetid: a312eb27-56dd-45e5-97d1-8ab4846fd31a
 keywords: ["Bug Check 0x6C REFMON_INITIALIZATION_FAILED", "REFMON_INITIALIZATION_FAILED"]
 ms.date: 05/23/2017
 topic_type:

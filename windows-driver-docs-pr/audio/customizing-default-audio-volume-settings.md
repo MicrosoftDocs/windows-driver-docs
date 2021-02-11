@@ -1,7 +1,6 @@
 ---
 title: Customizing HD Audio Driver Volume Settings
 description: The ability to customize the in box HD audio default audio volume and microphone boost levels to suit a specific PC, provides OEMs with some flexibility in their audio adapter installation parameters.
-ms.assetid: 0C86C869-447E-4A77-A723-5D9A17D95C7C
 keywords:
 - audio volume settings
 - audio adapters WDK , volume settings

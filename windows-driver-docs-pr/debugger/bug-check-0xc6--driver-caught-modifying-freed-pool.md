@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC6 DRIVER_CAUGHT_MODIFYING_FREED_POOL
 description: The DRIVER_CAUGHT_MODIFYING_FREED_POOL bug check has a value of 0x000000C6. This indicates that the driver attempted to access a freed memory pool.
-ms.assetid: a5df3612-549d-4cf1-b3e1-4e5efad8ce88
 keywords: ["Bug Check 0xC6 DRIVER_CAUGHT_MODIFYING_FREED_POOL", "DRIVER_CAUGHT_MODIFYING_FREED_POOL"]
 ms.date: 05/23/2017
 topic_type:

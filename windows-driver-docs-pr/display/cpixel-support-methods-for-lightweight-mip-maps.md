@@ -1,7 +1,6 @@
 ---
 title: CPixel Support Methods for Lightweight MIP Maps
 description: CPixel Support Methods for Lightweight MIP Maps
-ms.assetid: 79204a0c-c3a8-4059-a1be-9febf20a8cbd
 keywords: ["CPixel interface, described"]
 ms.date: 01/05/2018
 ms.localizationpriority: medium

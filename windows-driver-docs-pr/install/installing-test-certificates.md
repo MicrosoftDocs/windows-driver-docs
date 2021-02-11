@@ -1,7 +1,6 @@
 ---
 title: Installing Test Certificates
 description: Installing Test Certificates
-ms.assetid: 4c306390-32cc-4c7a-9f61-48e8af385a6d
 ms.date: 07/20/2020
 ms.localizationpriority: medium
 ---

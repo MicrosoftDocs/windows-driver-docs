@@ -1,7 +1,6 @@
 ---
 title: Handling File Pointers
 description: Handling File Pointers
-ms.assetid: 9bc03ae0-3e03-492a-b8d7-760eeb18106a
 keywords: ["SymProxy, file pointers"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

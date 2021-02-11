@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_BSS_SELECTION_PARAMETERS
 description: WDI_TLV_BSS_SELECTION_PARAMETERS is a TLV that contains WDI_BSS_SELECTION_FLAGS that are used by host for BSS selection.
-ms.assetid: 5EDA0FAC-DF2E-437B-BB4F-F69468CE856E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_BSS_SELECTION_PARAMETERS Network Drivers Starting with Windows Vista

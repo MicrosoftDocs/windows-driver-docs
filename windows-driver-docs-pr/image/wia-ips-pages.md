@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PAGES
 description: The WIA\_IPS\_PAGES property contains the current number of pages to acquire from an automatic document feeder.
-ms.assetid: 638f816b-0efd-4885-b285-4fa6a42272bc
 keywords: ["WIA_IPS_PAGES Imaging Devices"]
 topic_type:
 - apiref

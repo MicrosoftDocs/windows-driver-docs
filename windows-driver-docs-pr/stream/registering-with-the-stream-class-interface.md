@@ -1,7 +1,6 @@
 ---
 title: Registering with the Stream Class Interface
 description: Registering with the Stream Class Interface
-ms.assetid: dfc94f8d-0c0a-44ed-a4f8-791ce49aba2d
 keywords:
 - video capture WDK AVStream , registering Stream class interface
 - capturing video WDK AVStream , registering Stream class interface

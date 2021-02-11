@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xF2 HARDWARE_INTERRUPT_STORM
 description: The HARDWARE_INTERRUPT_STORM bug check has a value of 0x000000F2. This indicates that the kernel detected an interrupt storm.
-ms.assetid: 04751AB2-E9B3-40AD-A872-8DDA9B96C6CA
 keywords: ["Bug Check 0xF2 HARDWARE_INTERRUPT_STORM", "HARDWARE_INTERRUPT_STORM"]
 ms.date: 05/23/2017
 topic_type:

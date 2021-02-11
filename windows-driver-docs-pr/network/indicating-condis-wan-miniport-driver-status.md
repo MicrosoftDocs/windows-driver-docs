@@ -1,7 +1,6 @@
 ---
 title: Indicating CoNDIS WAN Miniport Driver Status
 description: Indicating CoNDIS WAN Miniport Driver Status
-ms.assetid: c12492d7-e25d-4c80-8f2d-1e89931577ed
 keywords:
 - CoNDIS WAN drivers WDK networking , status
 - status indications WDK networking , CoNDIS WAN miniport drivers

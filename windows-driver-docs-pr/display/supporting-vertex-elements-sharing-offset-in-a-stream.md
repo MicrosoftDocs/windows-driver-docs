@@ -1,7 +1,6 @@
 ---
 title: Supporting Vertex Elements Sharing Offset in a Stream
 description: Supporting Vertex Elements Sharing Offset in a Stream
-ms.assetid: 52b2d891-15a1-4b82-aaf2-634f33202974
 keywords:
 - vertex shader declarations WDK DirectX 9.0 , sharing the offset in a stream
 - shader declarations WDK DirectX 9.0 , sharing the offset in a stream

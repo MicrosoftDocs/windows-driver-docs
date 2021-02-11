@@ -1,7 +1,6 @@
 ---
 title: Tap and Do scenarios
 description: Tap and Do scenarios
-ms.assetid: EBBDBC58-236A-4020-92C9-69406362097F
 keywords:
 - NFC
 - near field communications
@@ -14,9 +13,13 @@ ms.localizationpriority: medium
 
 # Tap and Do scenarios
 
+*Tap and Do* is a gesture that is a natural interaction between people in close proximity used to trigger doing something together between the devices they are holding.
+
+Starting with Windows 8, a new gesture is introduced for real world interaction called *Tap and Do*. *Tap and Do* works within a narrow physical volume (on the order of centimeters) so it is very intentional. A programming model maps this intentionality to the triggering of actions between devices within the physical environment. The underlying system of Near Field Proximity (NFP) is primarily modeled on technologies that use electromagnetic fields, such as NFC, but the platform is flexible and other innovative systems that meet the NFP requirements are supported. Windows provides a user model based on NFP that is easy to understand, lightweight, and intuitive. Windows includes with a number of built-in experiences that leverage NFP. The API is available for third-party development.
+
 There are two user scenarios areas supported for *Tap and Do* in Windows.
 
-### Peripheral Wireless Device Setup
+## Peripheral Wireless Device Setup
 
 Before users can use peripheral devices with Windows, they must logically connect, pair, and setup the devices on the computer. They can do this either with cables or over a wireless network.
 
@@ -24,7 +27,7 @@ While using cables is intuitive and effective, this often give a poor user exper
 
 With Tap and Do, the user just taps the peripheral wireless device to the computer. This single action works to trigger the automatic wireless setup of the device without any other steps. The simplicity of this experience eliminates common user difficulties associated with device setup.
 
-### Ad-Hoc Interaction in the Real World
+## Ad-Hoc Interaction in the Real World
 
 Windows does not provide a common way for users to interact with other users or the physical environment through their devices. For one user to discover another user immediately nearby, and to interact with what they are doing, both users must typically connect through apps that have a proprietary rendezvous mechanism through the Internet. This approach typically requires a preexisting relationship for each user with the app or service in question, and also typically requires the users to exchange some kind of identifier with each other in order to support the rendezvous.
 
@@ -38,4 +41,4 @@ See [Tap and Do Use Cases](tap-and-do-use-cases.md) for and explanation of vario
 
 [NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
 
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field proximity DDI reference](/windows-hardware/drivers/ddi/_nfpdrivers)

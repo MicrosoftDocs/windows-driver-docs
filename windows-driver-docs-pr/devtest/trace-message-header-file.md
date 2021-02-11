@@ -1,7 +1,6 @@
 ---
 title: Trace Message Header File
 description: Trace Message Header File
-ms.assetid: 835162c0-6596-42ae-bc6d-824dd6c3f69f
 keywords:
 - trace message header files WDK
 - TMH files WDK

@@ -1,7 +1,6 @@
 ---
 title: Assigning Precedence to Protection Levels
 description: Assigning Precedence to Protection Levels
-ms.assetid: 87a63d30-4aa2-4835-87bc-1acb062bde26
 keywords:
 - protection levels WDK display , assigning precedence
 - protection levels WDK display , ACP precedence

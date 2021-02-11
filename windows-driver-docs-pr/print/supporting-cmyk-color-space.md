@@ -1,7 +1,6 @@
 ---
 title: Supporting CMYK Color Space
 description: Supporting CMYK Color Space
-ms.assetid: b8ac5f1a-c903-4313-b7de-0335f4c44367
 keywords:
 - CMYK color space WDK print
 - BR_CMYKCOLOR
@@ -16,7 +15,7 @@ ms.localizationpriority: medium
 
 
 
-Regardless of whether color management is being handled by the application, system, driver, or device, a printer graphics DLL color space. This is done by setting the GCAPS\_CMYKCOLOR flag in the [**DEVINFO**](/windows/win32/api/winddi/ns-winddi-devinfo) structure. If this flag is set and CMYK profiles are in use, then GDI sends CMYK color data, instead of RGB data, to the printer graphics DLL for bitmaps, brushes, and pens. GDI also sets the following flags:
+Regardless of whether color management is being handled by the application, system, driver, or device, a [printer graphics DLL](printer-graphics-dll.md) must indicate whether it supports the *CMYK* color space. This is done by setting the GCAPS\_CMYKCOLOR flag in the [**DEVINFO**](/windows/win32/api/winddi/ns-winddi-devinfo) structure. If this flag is set and CMYK profiles are in use, then GDI sends CMYK color data, instead of RGB data, to the printer graphics DLL for bitmaps, brushes, and pens. GDI also sets the following flags:
 
 -   The BR\_CMYKCOLOR flag in the **flColorType** member of the [**BRUSHOBJ**](/windows/win32/api/winddi/ns-winddi-brushobj) structure.
 

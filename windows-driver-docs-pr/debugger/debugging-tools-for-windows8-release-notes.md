@@ -1,7 +1,6 @@
 ---
 title: Debugging Tools For Windows8 Release Notes
 description: Debugging Tools For Windows8 Release Notes
-ms.assetid: 15776778-691F-4F76-92CE-2DB266AD31E8
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

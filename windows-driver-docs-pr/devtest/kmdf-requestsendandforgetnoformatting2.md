@@ -1,7 +1,6 @@
 ---
 title: RequestSendAndForgetNoFormatting2 rule (kmdf)
 description: The RequestSendAndForgetNoFormatting2 rule verifies that the driver doesn't format a request using the I/O target formatting functions before sending it to an I/O target with the send option WDF\_REQUEST\_SEND\_OPTION\_SEND\_AND\_FORGET.
-ms.assetid: 1F50CCE7-62A2-44BB-B7B2-86A7AE8EC4CB
 ms.date: 05/21/2018
 keywords: ["RequestSendAndForgetNoFormatting2 rule (kmdf)"]
 topic_type:

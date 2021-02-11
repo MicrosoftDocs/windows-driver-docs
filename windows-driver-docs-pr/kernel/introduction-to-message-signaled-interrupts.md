@@ -1,7 +1,6 @@
 ---
 title: Introduction to Message-Signaled Interrupts
 description: Introduction to Message-Signaled Interrupts
-ms.assetid: 035207a1-762d-463e-822e-64ac4833afa4
 keywords: ["message-signaled interrupts WDK kernel", "MSIs WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

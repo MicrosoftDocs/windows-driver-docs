@@ -1,7 +1,6 @@
 ---
 title: Challenging a Disconnected Scanner with the WSD Challenger
 description: Challenging a Disconnected Scanner with the WSD Challenger
-ms.assetid: f938a235-0360-43f9-9f84-6b9cb6ca9245
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

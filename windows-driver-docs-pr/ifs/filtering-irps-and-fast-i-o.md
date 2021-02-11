@@ -1,7 +1,6 @@
 ---
 title: Filtering IRPs and Fast I/O
 description: Filtering IRPs and Fast I/O
-ms.assetid: fad124b0-525d-4ff9-8f2c-3817fc76685c
 keywords:
 - filter drivers WDK file system , IRP filtering
 - file system filter drivers WDK , IRP filtering

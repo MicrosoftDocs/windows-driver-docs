@@ -1,7 +1,6 @@
 ---
 title: Checking the Oplock State of IRP_MJ_FILE_SYSTEM_CONTROL
 description: Checking the Oplock State of an IRP_MJ_FILE_SYSTEM_CONTROL operation
-ms.assetid: 3651d9ed-6b6f-4b60-9dfa-1c5c0c78b1a1
 ms.date: 11/25/2019
 ms.localizationpriority: medium
 ---

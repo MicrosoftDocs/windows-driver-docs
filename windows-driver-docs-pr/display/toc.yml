@@ -694,6 +694,8 @@
         href: iddcx1.4-updates-for-remote-idds.md
       - name: "Building IddCx v1.4 drivers"
         href: building-iddcx1.4-drivers.md
+    - name: "IddCx v1.6 updates"
+      href: iddcx1.6-updates.md
     - name: "EvtIddCxMonitorAssignSwapChain error handling"
       href: idd-evtiddcxmonitorassignswapchain-error-handling.md
     - name: "Debugging indirect display drivers"
@@ -2497,8 +2499,6 @@
       - name: "Performing COPP Operations"
 # Auto-expanded node
         items: 
-        - name: "Performing COPP Operations"
-          href: performing-copp-operations.md
         - name: "Starting a Protected Video Session"
           href: starting-a-protected-video-session.md
         - name: "Handling Protection Levels"

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_STREAM\_RATE
 description: The KSPROPERTY\_STREAM\_RATE property works in conjunction with KSPROPERTY\_STREAM\_RATECAPABILITY and is used to set the rate of a segment after querying the capability of the pin.
-ms.assetid: 125dcd39-fb67-4d9f-81af-b7f4c0e566cc
 keywords: ["KSPROPERTY_STREAM_RATE Streaming Media Devices"]
 topic_type:
 - apiref

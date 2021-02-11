@@ -1,7 +1,6 @@
 ---
 title: Miscellaneous Routines
 description: Miscellaneous Routines
-ms.assetid: e065c86c-a784-49e1-a1d9-e2bcff3fcae4
 keywords:
 - RDBSS WDK file systems , miscellaneous routines
 - Redirected Drive Buffering Subsystem WDK file systems , miscellaneous routines

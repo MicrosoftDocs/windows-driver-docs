@@ -1,7 +1,6 @@
 ---
 title: FsRtlExitFileSystem function
 description: The FsRtlExitFileSystem macro re-enables the delivery of normal kernel-mode APCs that were disabled by a preceding call to FsRtlEnterFileSystem.
-ms.assetid: 763ceb1c-f614-4268-a7fe-73de0c354c71
 keywords: ["FsRtlExitFileSystem function Installable File System Drivers"]
 topic_type:
 - apiref

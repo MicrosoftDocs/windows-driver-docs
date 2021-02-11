@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SPECTRAL\_INVERSION
 description: Clients use KSPROPERTY\_BDA\_SPECTRAL\_INVERSION to control the setting for spectral inversion of a demodulator node.
-ms.assetid: a51dee0b-4a45-4159-978b-27ff6e2333e2
 keywords: ["KSPROPERTY_BDA_SPECTRAL_INVERSION Streaming Media Devices"]
 topic_type:
 - apiref

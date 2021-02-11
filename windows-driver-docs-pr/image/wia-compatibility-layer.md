@@ -1,7 +1,6 @@
 ---
 title: WIA Compatibility Layer
 description: WIA Compatibility Layer
-ms.assetid: 9c53fef9-0eef-4821-be59-6ecadf7f17c6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

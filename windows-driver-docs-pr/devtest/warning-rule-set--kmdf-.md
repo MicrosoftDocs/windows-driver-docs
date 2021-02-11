@@ -1,7 +1,6 @@
 ---
 title: Warning rule set (KMDF)
 description: Learn about using rules (KDMF) to verify that your driver can correctly processes IRPs in various contexts and follow Microsoft recommended best practices.
-ms.assetid: 0C012253-9FBD-4B5C-9A93-AF72405EF3E4
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---

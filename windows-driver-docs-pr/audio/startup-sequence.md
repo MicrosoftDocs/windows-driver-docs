@@ -1,7 +1,6 @@
 ---
 title: Startup Sequence
 description: Startup Sequence
-ms.assetid: bf88b9de-f4c4-4f9c-9355-603789b9ad3d
 keywords:
 - adapter drivers WDK audio , startup sequences
 - startup sequences WDK audio
@@ -48,7 +47,7 @@ NTSTATUS
   }
 ```
 
-This function calls the PortCls function **PcAddAdapterDevice** and associates it with the *physical device object (PDO)* that is supplied by the system. The new FDO is created with an extension that PortCls uses to store context information about the device. This context includes the `MyStartDevice` function pointer that is supplied by `MyAddDevice`.
+This function calls the PortCls function [**PcAddAdapterDevice**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcaddadapterdevice), which creates the specified adapter device, associates a driver with the device, and stores a pointer to the adapter driver's `MyStartDevice` function, which is called when the operating system starts the device (see [Starting a Device](../kernel/starting-a-device.md)). The **PcAddAdapterDevice** routine creates a *functional device object (FDO)* and associates it with the *physical device object (PDO)* that is supplied by the system. The new FDO is created with an extension that PortCls uses to store context information about the device. This context includes the `MyStartDevice` function pointer that is supplied by `MyAddDevice`.
 
 After the operating system determines what resources (interrupts, DMA channels, I/O port addresses, and so on) to assign to the device, it sends the device a request to start ([**IRP\_MN\_START\_DEVICE**](../kernel/irp-mn-start-device.md)). In response to this request, the request handler in the PortCls driver calls the adapter driver's `MyStartDevice` function, which is shown in the following example code:
 
@@ -67,6 +66,4 @@ NTSTATUS
 The request handler supplies `MyStartDevice` with pointers to the device object, IRP\_MN\_START\_DEVICE request, and resource list (see [IResourceList](/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist)). The `MyStartDevice` function partitions the resource list into the resources that are required for each miniport driver that needs to be started. The function then starts each miniport driver and returns control to PortCls, which completes the IRP and returns control to the operating system.
 
 For more examples of driver startup code, see the sample audio adapter drivers in the Microsoft Windows Driver Kit (WDK).
-
- 
 

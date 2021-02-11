@@ -1,7 +1,6 @@
 ---
 title: Perform Deinterlacing with Substream Compositing Operations
 description: Performing Deinterlacing with Substream Compositing Operations
-ms.assetid: e6759e88-5cbb-4372-8a92-312f1684b99d
 keywords:
 - deinterlacing WDK DirectX VA , combining substream compositing
 - combining substream compositing WDK DirectX VA

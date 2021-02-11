@@ -1,7 +1,6 @@
 ---
 title: GDI Support for Palettes
 description: GDI Support for Palettes
-ms.assetid: 8c6ebf1e-6c83-45d9-bf83-f0684d28fc32
 keywords:
 - DrvEnablePDEV
 - GDI WDK Windows 2000 display , colors

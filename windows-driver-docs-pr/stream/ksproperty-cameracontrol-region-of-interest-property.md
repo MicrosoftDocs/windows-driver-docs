@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_REGION\_OF\_INTEREST\_PROPERTY
 description: User-mode clients use this property to get or set a camera's region of interest characteristics. This property is optional.
-ms.assetid: 70EC5974-58A6-4106-AAFA-A7656E17E6CB
 keywords: ["KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

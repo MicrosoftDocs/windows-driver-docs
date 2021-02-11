@@ -1,7 +1,6 @@
 ---
 title: Creating a Transactional Client
 description: Creating a Transactional Client
-ms.assetid: 75d4758b-dfba-431b-9bfa-9dcb98c2a7cc
 keywords: ["transactional clients WDK KTM", "transactional clients WDK KTM , creating transactional clients"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

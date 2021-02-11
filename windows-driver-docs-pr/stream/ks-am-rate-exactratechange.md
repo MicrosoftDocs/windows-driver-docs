@@ -1,7 +1,6 @@
 ---
 title: KS\_AM\_RATE\_ExactRateChange
 description: The KS\_AM\_RATE\_ExactRateChange property is not yet implemented.
-ms.assetid: c96fe88c-04c5-47d9-a9dd-18d06388300e
 keywords: ["KS_AM_RATE_ExactRateChange Streaming Media Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_STRING
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_STRING property type represents the base-data-type identifier that indicates that the data type is a NULL-terminated Unicode string.
-ms.assetid: b578fa1f-b55d-4ad2-bdc4-a796b5d7b811
 keywords: ["DEVPROP_TYPE_STRING Device and Driver Installation"]
 topic_type:
 - apiref

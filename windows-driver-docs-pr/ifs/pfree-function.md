@@ -1,7 +1,6 @@
 ---
 title: PFREE_FUNCTION function pointer
 description: A PFREE_FUNCTION typed routine can be registered by a file system legacy filter driver as the filter's FreeCallback callback routine.
-ms.assetid: 291b57d9-3bef-4acb-a571-86b67a03cd08
 keywords: ["PFREE_FUNCTION function pointer Installable File System Drivers"]
 topic_type:
 - apiref

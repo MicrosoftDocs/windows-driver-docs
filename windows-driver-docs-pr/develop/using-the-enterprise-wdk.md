@@ -42,4 +42,4 @@ Where `<drive\dir>` is the location that the files were extracted to, for exampl
 
 ## See Also
 
-[ MSBuild Reference](/visualstudio/msbuild/msbuild-reference?view=vs-2015)
+[MSBuild Reference](/visualstudio/msbuild/msbuild-reference)

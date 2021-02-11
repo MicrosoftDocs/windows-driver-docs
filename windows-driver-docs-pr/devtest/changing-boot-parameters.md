@@ -1,7 +1,6 @@
 ---
 title: Changing Boot Parameters
 description: Changing Boot Parameters
-ms.assetid: e835e1e9-ad80-462b-b55f-2fa0e55009a5
 keywords:
 - boot entry parameters WDK
 - boot parameters WDK

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_VALID\_CHARACTERS property lists the characters (letters, digits, punctuation marks, and so on) that are valid for the WIA\_IPS\_PRINTER\_ENDORSER\_STRING values that can be configured for the Imprinter/Endorser.
-ms.assetid: 763355B8-7CA0-4B3F-87B1-BD51F24CF78C
 keywords: ["WIA_IPS_PRINTER_ENDORSER_VALID_CHARACTERS Imaging Devices"]
 topic_type:
 - apiref

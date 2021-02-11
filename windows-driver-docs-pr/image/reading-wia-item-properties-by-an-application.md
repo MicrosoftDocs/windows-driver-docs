@@ -1,7 +1,6 @@
 ---
 title: Reading WIA Item Properties by an Application
 description: Reading WIA Item Properties by an Application
-ms.assetid: e09f604e-451e-40dc-bc12-a077d4d263ee
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

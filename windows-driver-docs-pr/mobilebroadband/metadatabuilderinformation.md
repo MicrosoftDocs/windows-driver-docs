@@ -1,7 +1,6 @@
 ---
 title: MetadataBuilderInformation
 description: MetadataBuilderInformation
-ms.assetid: 94403994-2165-405e-bfa0-974af8e241fe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

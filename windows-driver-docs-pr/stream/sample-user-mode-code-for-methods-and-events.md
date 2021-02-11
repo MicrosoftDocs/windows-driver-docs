@@ -1,7 +1,6 @@
 ---
 title: Sample User-Mode Code for Methods and Events
 description: Sample User-Mode Code for Methods and Events
-ms.assetid: 0d564eb7-8e81-43bd-b539-f1240b3a21de
 keywords:
 - events WDK AVStream
 - AVStream events WDK

@@ -1,7 +1,6 @@
 ---
 title: Setting Advanced Trace Session Options
 description: Setting Advanced Trace Session Options
-ms.assetid: e5bad52f-aef3-4202-9501-6960fa3143e7
 keywords:
 - trace sessions WDK , options
 ms.date: 04/20/2017

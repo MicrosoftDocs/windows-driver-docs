@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SMS_CONFIGURATION
 description: OID_WWAN_SMS_CONFIGURATION sets or returns a MB device's SMS text message configuration.
-ms.assetid: 3292a91d-4aa8-4c57-9223-d7d984dc5d69
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_CONFIGURATION Network Drivers Starting with Windows Vista

@@ -1,7 +1,6 @@
 ---
 title: customData element
 description: The optional customData element specifies a custom data source for this asynchronous notification XML schema.
-ms.assetid: 5e14a627-72c0-440d-b616-6963c3d69d2b
 keywords: ["customData element Print Devices"]
 topic_type:
 - apiref

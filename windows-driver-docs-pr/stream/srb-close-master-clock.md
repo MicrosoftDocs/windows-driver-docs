@@ -1,7 +1,6 @@
 ---
 title: SRB\_CLOSE\_MASTER\_CLOCK
 description: SRB\_CLOSE\_MASTER\_CLOCK
-ms.assetid: 5d49f64a-22e0-4fec-a9f5-4ce5169fa305
 keywords: ["SRB_CLOSE_MASTER_CLOCK Streaming Media Devices"]
 topic_type:
 - apiref

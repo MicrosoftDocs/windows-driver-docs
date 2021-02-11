@@ -1,7 +1,6 @@
 ---
 title: DCICreatePrimary
 description: DCICreatePrimary
-ms.assetid: 764efbbd-8fdb-4c1e-9bff-e83bff0116ba
 keywords: ["DCICreatePrimary Display Devices"]
 topic_type:
 - apiref

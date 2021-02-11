@@ -1,7 +1,6 @@
 ---
 title: Implementation Tips and Requirements for WDM Lower Edge
 description: Implementation Tips and Requirements for WDM Lower Edge
-ms.assetid: 760c62ec-eeca-4b62-97ec-7cda5ee353a8
 keywords:
 - NDIS-WDM miniport drivers WDK networking , implemention tips
 - lower edge of NDIS miniport drivers WDK networking , driver implemention

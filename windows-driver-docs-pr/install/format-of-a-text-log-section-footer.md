@@ -1,7 +1,6 @@
 ---
 title: Format of a Text Log Section Footer
 description: Format of a Text Log Section Footer
-ms.assetid: 3b804934-a695-4091-a3ef-03f7598cbe63
 keywords:
 - section footer WDK SetupAPI
 - formats WDK SetupAPI logging

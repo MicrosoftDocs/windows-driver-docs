@@ -1,7 +1,6 @@
 ---
 title: Routines Implemented by the Kernel Network Mini-Redirector
 description: Routines Implemented by the Kernel Network Mini-Redirector
-ms.assetid: bd1a8989-100d-4b7b-9a61-521af6433b00
 keywords:
 - mini-redirectors WDK , routines implemented
 ms.date: 04/20/2017

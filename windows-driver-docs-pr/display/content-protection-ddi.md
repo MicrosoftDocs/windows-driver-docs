@@ -1,7 +1,6 @@
 ---
 title: Content Protection DDI
 description: Content Protection DDI
-ms.assetid: 770e0fce-d3b5-4599-8165-eadf3f23f9dc
 keywords:
 - protecting video content WDK Windows 7 display , Content Protection DDI
 - protecting video content WDK Windows Server 2008 R2 display , Content Protection DDI

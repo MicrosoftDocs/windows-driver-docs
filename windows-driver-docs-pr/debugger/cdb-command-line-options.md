@@ -1,7 +1,6 @@
 ---
 title: CDB Command-Line Options
 description: First-time users of CDB or NTSD should begin with the Debugging Using CDB and NTSD section.
-ms.assetid: 34dbb695-19e4-4efc-83c7-3a94e5fcf269
 keywords: ["CDB Command-Line Options Windows Debugging"]
 ms.date: 08/01/2018
 topic_type:

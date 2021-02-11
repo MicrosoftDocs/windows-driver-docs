@@ -1,7 +1,6 @@
 ---
 title: Driver Verifier What's New
 description: Driver Verifier is available in all versions of Windows starting with Windows 2000. Each version introduces new features and checks for finding bugs in Windows drivers. This section summarizes the changes and provides links to related documentation.
-ms.assetid: EAC30108-F8A2-4914-9218-2E0672982B7E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -27,10 +26,10 @@ ms.localizationpriority: medium
 
 Starting with Windows 10, driver verifier includes new driver validation rules for the following technologies:
 
-* New [Rules for Audio Drivers](/windows-hardware/drivers/ddi/index)
-* New [Rules for AVStream Drivers](/windows-hardware/drivers/ddi/index)
-* Four new [Rules for KMDF Drivers](/windows-hardware/drivers/ddi/index)
-* Three new [Rules for NDIS Drivers](/windows-hardware/drivers/ddi/index)
+* New [Rules for Audio Drivers](./rules-for-audio-drivers.md)
+* New [Rules for AVStream Drivers](./rules-for-avstream-drivers.md)
+* Four new [Rules for KMDF Drivers](./sdv-rules-for-kmdf-drivers.md)
+* Three new [Rules for NDIS Drivers](./sdv-rules-for-ndis-drivers.md)
 
 ## Driver Verifier in Windows 8-1 (*Updated: June 17, 2013*)
 
@@ -142,9 +141,6 @@ Driver Verifier features also include:
   * *Flags* set with 0x8 causes the display to include a log of the most recent IRQL changes made by the drivers being verified
   * If *Flags* equals exactly 0x4 or 0x8, the Quantity parameter specifies the number of records or log entries to include in the display
   * The **?** parameter shows a brief help text
-* **New !gdikdx.verifier extensions**
-
-    A new **!gdikdx.verifier** extension, **!gdikdx.verifier -s**, lists statistics about the GDI callback functions called during low resources simulation for graphics drivers.
 
 * Online Help for Driver Verifier Manager Online Help for Driver Verifier Manager can be displayed in either of the following ways:
   * Select and hold (or right-click) an item in the Driver Verifier Manager window and choose **What's This?** from the pop-up menu.

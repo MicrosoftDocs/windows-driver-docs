@@ -1,7 +1,6 @@
 ---
 title: Stampinf task
 description: The Windows Driver Kit (WDK) provides the StampInf task so that you can run the stampinf.exe tool when you build your driver using MSBuild. For information about the stampinf.exe tool, see Stampinf.
-ms.assetid: 4BD937D3-97C7-408D-9372-F01CBB7B0B62
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

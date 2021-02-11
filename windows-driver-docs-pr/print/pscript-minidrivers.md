@@ -1,7 +1,6 @@
 ---
 title: Pscript Minidrivers
 description: Pscript Minidrivers
-ms.assetid: b1108a6b-e0cc-413c-b3ea-53a1aa3156c0
 keywords:
 - PostScript Printer Driver WDK print , minidrivers
 - Pscript WDK print , minidrivers

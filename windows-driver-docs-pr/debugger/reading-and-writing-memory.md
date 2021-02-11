@@ -1,7 +1,6 @@
 ---
 title: Reading and Writing Memory
 description: Reading and Writing Memory
-ms.assetid: bbe054a1-9522-4275-b550-9a6fc4e4b448
 keywords: ["memory", "memory, reading", "memory, writing", "reading memory", "writing memory"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

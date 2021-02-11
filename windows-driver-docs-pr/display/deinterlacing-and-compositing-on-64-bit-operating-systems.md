@@ -1,7 +1,6 @@
 ---
 title: Deinterlacing and Compositing on 64-bit Operating Systems
 description: Deinterlacing and Compositing on 64-bit Operating Systems
-ms.assetid: af95b9f8-1329-4cba-a70f-4f1884f6a0f9
 keywords:
 - deinterlacing WDK DirectX VA , 64-bit
 - 64-bit WDK DirectX VA

@@ -1,7 +1,6 @@
 ---
 title: Devices Using WDF Tab
 description: This topic discusses WDF Verifier's Devices using WDF page.
-ms.assetid: 06144cf4-bb6f-4b5b-ac0d-f4fae89a04a9
 keywords:
 - WDF Verifier WDK , managing KMDF settings
 - KMDF verifier settings WDK WDF

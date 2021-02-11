@@ -1,7 +1,6 @@
 ---
 title: Index of Windows Driver Kit Tools
 description: Index of Windows Driver Kit Tools
-ms.assetid: 26db88c4-8fb8-4308-ab8a-1a1eef5e19d8
 keywords:
 - Disabler tool
 - DbgCon tool
@@ -116,7 +115,7 @@ The information in the following tables describes the tools that are useful for 
 |InfVerif (InfVerif.exe)</br>**WDK tool:** Yes|c:\Program Files(x86)\Windows Kits\10\tools\arm\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\arm64\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x86\infverif.exe</br>c:\Program Files(x86)\Windows Kits\10\tools\x64\infverif.exe|Tests a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.</br>WDK Documentation:</br>[InfVerif](infverif.md)|
 |MakeCat (MakeCat.exe)</br>**WDK tool:** Yes|WDKPath\bin\amd64\MakeCat.exe</br>WDKPath\bin\ia64\MakeCat.exe</br>WDKPath\bin\x86\MakeCat.exe|Creates a [catalog file](../install/catalog-files.md) for a [driver package](../install/driver-packages.md).</br>WDK Documentation:</br>[MakeCat](makecat.md)|
 |MakeCert (MakeCert.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\bin\x64\MakeCert.exe</br>%WindowsSdkDir%\bin\x86\MakeCert.exe|Creates an X.509 certificate that is signed by a system test root key or by another specified key.</br>WDK Documentation:</br>[MakeCert](makecert.md)|
-|MSBuild (MSBuild.exe)/br>**WDK tool:** No|Installed with Visual Studio|Builds the samples, drivers, and associated software components that are supplied in the Microsoft WDK.</br>[MSBuild]( /visualstudio/msbuild/msbuild?view=vs-2015)|
+|MSBuild (MSBuild.exe)/br>**WDK tool:** No|Installed with Visual Studio|Builds the samples, drivers, and associated software components that are supplied in the Microsoft WDK.</br>[MSBuild]( /visualstudio/msbuild/msbuild)|
 |PnpCpu (PnPCpu.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\PnPCpu.exe</br>%WindowsSdkDir%\tools\x86\PnPCpu.exe|Simulates a hot add of processors to a running instance of Windows Server 2008.</br>WDK Documentation:</br>[PNPCPU](pnpcpu.md)|
 |PnPUtil (PnPUtil.exe)</br>**WDK tool:** No|%Windir%\system32\pnputil.exe|A command-line tool that installs or deletes [driver packages](../install/driver-packages.md) from the Windows driver store.</br>WDK Documentation:</br>[PnPUtil](pnputil.md)|
 |PoolMon (Poolmon.exe)</br>**WDK tool:** Yes|%WindowsSdkDir%\tools\x64\poolmon.exe</br>%WindowsSdkDir%\tools\x86\poolmon.exe|Displays data that the operating system collects about memory allocations from the system's paged and nonpaged kernel pools, and the memory pools used for Terminal Services sessions. The data is grouped by pool allocation tag.</br>WDK Documentation:</br>[PoolMon](poolmon.md)|

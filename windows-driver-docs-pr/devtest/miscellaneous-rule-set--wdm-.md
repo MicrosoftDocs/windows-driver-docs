@@ -1,7 +1,6 @@
 ---
 title: Miscellaneous rule set (WDM)
 description: Use these rules to verify that your driver correctly follows a general set of requirements for the proper handling of registry keys, strings and device object pointers.
-ms.assetid: 50E8BFFE-AC38-4023-9FFB-DC53B749A603
 ms.date: 05/21/2018
 ms.localizationpriority: medium
 ---
@@ -48,10 +47,14 @@ Use these rules to verify that your driver correctly follows a general set of re
 </ul></td>
 </tr>
 <tr class="odd">
+<td align="left"><p><a href="wdm-unsafeallocatepool.md" data-raw-source="[&lt;strong&gt;UnSafeAllocatePool&lt;/strong&gt;](wdm-unsafeallocatepool.md)"><strong>UnSafeAllocatePool</strong></a></p></td>
+<td align="left"><p><a href="wdm-unsafeallocatepool.md" data-raw-source="[&lt;strong&gt;UnSafeAllocatePool&lt;/strong&gt;](wdm-unsafeallocatepool.md)"><strong>UnSafeAllocatePool</strong></a> is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory.</p></td>
+</tr>
+<tr class="even">
 <td align="left"><p><a href="wdm-zwregistrycreate.md" data-raw-source="[&lt;strong&gt;ZwRegistryCreate&lt;/strong&gt;](wdm-zwregistrycreate.md)"><strong>ZwRegistryCreate</strong></a></p></td>
 <td align="left"><p>The <a href="wdm-zwregistrycreate.md" data-raw-source="[&lt;strong&gt;ZwRegistryCreate&lt;/strong&gt;](wdm-zwregistrycreate.md)"><strong>ZwRegistryCreate</strong></a> rule specifies that after calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey" data-raw-source="[&lt;strong&gt;ZwCreateKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey)"><strong>ZwCreateKey</strong></a>, the driver can call the following registry functions only while holding an open handle to the registry key (that is, before any calls to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose" data-raw-source="[&lt;strong&gt;ZwClose&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose)"><strong>ZwClose</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey" data-raw-source="[&lt;strong&gt;ZwDeleteKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey)"><strong>ZwDeleteKey</strong></a> to close or delete the handle to the registry key):</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p><a href="wdm-zwregistryopen.md" data-raw-source="[&lt;strong&gt;ZwRegistryOpen&lt;/strong&gt;](wdm-zwregistryopen.md)"><strong>ZwRegistryOpen</strong></a></p></td>
 <td align="left"><p>The <a href="storport-zwregistryopen.md" data-raw-source="[&lt;strong&gt;ZwRegistryOpen&lt;/strong&gt;](storport-zwregistryopen.md)"><strong>ZwRegistryOpen</strong></a> rule specifies that after calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenkey" data-raw-source="[&lt;strong&gt;ZwOpenKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwopenkey)"><strong>ZwOpenKey</strong></a>, the driver calls the following registry functions only while holding an open handle to a registry key (that is, before calling <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose" data-raw-source="[&lt;strong&gt;ZwClose&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose)"><strong>ZwClose</strong></a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey" data-raw-source="[&lt;strong&gt;ZwDeleteKey&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey)"><strong>ZwDeleteKey</strong></a>):</p></td>
 </tr>

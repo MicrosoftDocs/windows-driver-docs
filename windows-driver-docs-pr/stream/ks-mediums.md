@@ -1,7 +1,6 @@
 ---
 title: KS Mediums
 description: KS Mediums
-ms.assetid: c94c738c-66c6-491b-9157-28cccf95af4d
 keywords:
 - mediums WDK kernel streaming
 - KSPIN_MEDIUM

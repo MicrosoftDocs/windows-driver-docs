@@ -1,7 +1,6 @@
 ---
 title: How Container IDs are Generated
 description: How Container IDs are Generated
-ms.assetid: baa3c045-05ee-4012-97a3-c6e575c897be
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

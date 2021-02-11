@@ -1,7 +1,6 @@
 ---
 title: Pscript Components
 description: Pscript Components
-ms.assetid: 9f3bd004-e62c-42b6-99da-045c12e088a3
 keywords:
 - PostScript Printer Driver WDK print , components
 - Pscript WDK print , components
@@ -31,7 +30,7 @@ User-mode DLL that exports Win32 GDI functions.
 NT-based operating system executive code that implements GDI functionality.
 
 <a href="" id="minidriver-text-files"></a>**Minidriver Text Files**  
-Text-based Pscript minidrivers files.
+Text-based [Pscript minidrivers](pscript-minidrivers.md), created using *PPD* files.
 
 <a href="" id="binary-data-files"></a>**Binary Data Files**  
 Temporary files (with a .bpd extension) that Pscript creates after parsing information contained in minidriver text files.

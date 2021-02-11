@@ -1,7 +1,6 @@
 ---
 title: SpinLockSafe rule (storport)
 description: This rule verifies that the IoStartNextPacket and IoCompleteRequest routines are not called while holding a spin lock.
-ms.assetid: 12D36178-C00D-44A7-9DA0-E0663DF1FFDC
 ms.date: 05/21/2018
 keywords: ["SpinLockSafe rule (storport)"]
 topic_type:

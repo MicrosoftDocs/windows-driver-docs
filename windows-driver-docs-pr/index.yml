@@ -84,11 +84,11 @@ conceptualContent:
         - text: Manufacture
           url: /windows-hardware/manufacture
           itemType: overview
-        - text: Service
-          url: /windows-hardware/service
-          itemType: overview
         - text: Test for performance and compatibility
           url: /windows-hardware/test
+          itemType: overview
+        - text: Test with the Hardware Lab Kit (HLK)
+          url: /windows-hardware/test/hlk
           itemType: overview
 
 tools:
@@ -142,9 +142,6 @@ additionalContent:
         - title: Overview of Driver Technologies
           summary: Entryway to specific Windows driver models, from Bluetooth to USB and more.
           url: ./device-and-driver-technologies.md
-        - title: Windows symbol packages
-          summary: Symbol files make it easier to debug your code.
-          url: ./debugger/debugger-download-symbols.md
         - title: Bug Check Code Reference
           summary: This section contains descriptions of common bug check codes, including the parameters displayed with the error code on the blue bug check screen.
           url: ./debugger/bug-check-code-reference2.md

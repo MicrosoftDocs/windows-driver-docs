@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Proxy Plug-ins Design Guide
 description: Kernel Streaming Proxy Plug-ins Design Guide
-ms.assetid: 9a2b83ab-f54c-421b-bc9b-7dad63cd8cb5
 keywords:
 - Kernel Streaming Proxy WDK AVStream , plug-ins
 ms.date: 04/20/2017

@@ -1,8 +1,7 @@
 ---
 title: JavaScript Debugger Example Scripts
 description: This topic provides the information on user and kernel mode JavaScript code samples, such as the Data Filtering Plug and Play Device Tree sample.
-ms.assetid: F477430B-10C7-4039-9C5F-25556C306643
-ms.date: 02/27/2019
+ms.date: 02/02/2021
 ms.localizationpriority: medium
 ---
 
@@ -46,13 +45,7 @@ function sayHi()
 }
 ```
 
-3. Use the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command to load the JavaScript provider.
-
-```dbgcmd
-0:000> .load jsprovider.dll
-```
-
-4. Use the [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
+3. Use the [**.scriptrun (Run Script)**](-scriptrun--run-script-.md)command to load and execute the script. The .scriptrun command will run code at the root/top and the code under the function names *initializeScript* and *invokeScript*.
 
 ```dbgcmd
 0:000> .scriptrun c:\WinDbg\Scripts\HelloWorld.js
@@ -60,7 +53,7 @@ JavaScript script successfully loaded from 'c:\WinDbg\Scripts\HelloWorld.js'
 ***> Hello World! 
 ```
 
-5. If the script contains a uniquely named function, use the dx command to execute that function, that is located in Debugger.State.Scripts.*ScriptName*.Contents.*FunctionName*.
+4. If the script contains a uniquely named function, use the dx command to execute that function, that is located in Debugger.State.Scripts.*ScriptName*.Contents.*FunctionName*.
 
 ```dbgcmd
 0:001> dx Debugger.State.Scripts.HelloWorld.Contents.sayHi()

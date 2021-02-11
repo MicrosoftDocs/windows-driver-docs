@@ -1,7 +1,6 @@
 ---
 title: ppmidle
 description: The ppmidle command
-ms.assetid: 40037C2E-DE68-42BB-AFEB-C012F042082D
 keywords: ["ppmidle Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

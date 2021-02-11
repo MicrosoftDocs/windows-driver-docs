@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_DEVICE\_LOST
 description: The KSEVENT\_DEVICE\_LOST event is triggered when a camera device is removed from the system \ 8212;for example, when a USB cable that connects a camera is unplugged.
-ms.assetid: 28E21A2D-63CC-4991-AEBA-694773FC009A
 keywords: ["KSEVENT_DEVICE_LOST Streaming Media Devices"]
 topic_type:
 - apiref

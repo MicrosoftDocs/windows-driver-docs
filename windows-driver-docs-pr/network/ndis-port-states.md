@@ -1,7 +1,6 @@
 ---
 title: NDIS Port States
 description: NDIS Port States
-ms.assetid: bb13edd2-815b-488a-b36c-21a48809a143
 keywords:
 - ports WDK NDIS , states
 - NDIS ports WDK , states

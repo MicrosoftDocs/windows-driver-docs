@@ -1,7 +1,6 @@
 ---
 title: Printer Driver Architecture
 description: Printer Driver Architecture
-ms.assetid: 68a61007-8f0d-4fd4-b4a7-c8acbc101236
 keywords:
 - print jobs WDK , printer drivers
 - jobs WDK print , printer drivers
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as EMF, or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
+Print jobs are created by applications through calls to Microsoft Win32 GDI or, in Windows Vista, Windows Presentation Foundation (WPF) functions. The Win32 functions spool application data as [EMF](emf-data-type.md) records for later playback by the EMF *print processor*, or they can immediately render a printable image for each document page. The WPF functions spool application data as an XPS spool file.
 
 Prior to Windows Vista, applications communicated printer settings to the printer by using a [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure. In Windows Vista, the Print Ticket and Print Capabilities technologies communicate printer settings so that printer settings are more compatible across printers and applications.
 

@@ -1,7 +1,6 @@
 ---
 title: Easier Initialization
 description: Easier Initialization
-ms.assetid: 34f939fd-2bcc-482b-b877-42cc57bdf59b
 keywords:
 - NDIS WDK , initializing drivers
 - initializing drivers WDK networking

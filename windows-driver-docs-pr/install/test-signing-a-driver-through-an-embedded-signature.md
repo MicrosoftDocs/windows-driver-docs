@@ -1,7 +1,6 @@
 ---
 title: Test-Signing a Driver through an Embedded Signature
 description: Test-Signing a Driver through an Embedded Signature
-ms.assetid: 862e89e0-f84a-4058-a32f-09ae3043b884
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ A signed [catalog file](catalog-files.md) is all that you must have to correctly
 
 Embedded-signing of kernel-mode binaries (for example, drivers and associated .dll files) are required whenever:
 
-- The driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements must have an embedded signature. This is required regardless of whether the driver's driver package has a digitally-signed catalog file.
+-   The driver is a boot-start driver. In 64-bit versions of Windows Vista and later versions of Windows, the kernel-mode code signing requirements state that a *boot-start driver* must have an embedded signature. This is required regardless of whether the driver's driver package has a digitally-signed catalog file.
 
 - The driver is installed through a driver package that does not include a catalog file.
 

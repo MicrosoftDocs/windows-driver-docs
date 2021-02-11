@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_NAME (Device Interface)
 description: DEVPKEY_NAME (Device Interface)
-ms.assetid: 276862d0-8ab9-4914-9e57-834cc17d0e59
 keywords: ["DEVPKEY_NAME (Device Interface) Device and Driver Installation"]
 topic_type:
 - apiref

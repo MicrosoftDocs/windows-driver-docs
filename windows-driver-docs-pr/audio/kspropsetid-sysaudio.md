@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Sysaudio
 description: KSPROPSETID\_Sysaudio
-ms.assetid: 817cbda5-9d37-4c12-8749-98a86540609f
 keywords: ["KSPROPSETID_Sysaudio"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

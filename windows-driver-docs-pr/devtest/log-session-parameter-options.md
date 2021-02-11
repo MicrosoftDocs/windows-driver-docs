@@ -1,7 +1,6 @@
 ---
 title: Log Session Parameter Options
 description: Log Session Parameter Options
-ms.assetid: 5398dfa7-abeb-443b-ab64-73b6599c8e73
 keywords:
 - trace sessions WDK , advanced options
 - trace sessions WDK , log session parameter options

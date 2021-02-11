@@ -1,7 +1,6 @@
 ---
 title: Print Ticket Organization
 description: Print Ticket Organization
-ms.assetid: 3e30eb53-2f62-469d-a27c-dc256df37126
 keywords:
 - Print Tickets WDK , organization
 - hierarchy WDK Print Ticket

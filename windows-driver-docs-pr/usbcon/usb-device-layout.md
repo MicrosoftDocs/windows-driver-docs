@@ -38,7 +38,7 @@ In this example, the diagram shows the default endpoint. Configuration 0 has two
 
 Endpoints can't be shared between two interfaces within a configuration. The device uses the endpoint address to determine the target endpoint for a data transfer or endpoint operation, such as pipe reset. All those operations are initiated by the host.
 
-Before you start using the device, get information about the device layout. [USBView](/windows-hardware/drivers/ddi/index) is an application that enables you to browse all USB controllers and the USB devices that are connected to them. For each connected device, you can view the device, configuration, interface, and endpoint descriptors to get an idea about the capability of the device.
+Before you start using the device, get information about the device layout. [USBView](../debugger/usbview.md) is an application that enables you to browse all USB controllers and the USB devices that are connected to them. For each connected device, you can view the device, configuration, interface, and endpoint descriptors to get an idea about the capability of the device.
 
 Next, see [Standard USB descriptors](standard-usb-descriptors.md).
 

@@ -1,7 +1,6 @@
 ---
 title: Example 12 Using Page Heap Verification to Find a Bug
 description: Example 12 Using Page Heap Verification to Find a Bug
-ms.assetid: aa3f5c53-8522-48be-a3cd-49b740803fe3
 ms.date: 10/12/2018
 ms.localizationpriority: medium
 ---

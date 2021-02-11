@@ -1,7 +1,6 @@
 ---
 title: Relationship of Mode Information to Path Information
 description: Relationship of Mode Information to Path Information
-ms.assetid: 214717dd-1c01-4daf-9296-586299668d3a
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts, mode and path information
 - connecting displays WDK Windows Server 2008 R2 display , CCD concepts, mode and path information

@@ -1,7 +1,6 @@
 ---
 title: AV/C Streaming INF Example
 description: AV/C Streaming INF Example
-ms.assetid: c8a2c9cd-c71b-4fd1-80f5-34d13837865e
 keywords:
 - AV/C WDK , Stream filter driver
 - Stream filter driver WDK AV/C

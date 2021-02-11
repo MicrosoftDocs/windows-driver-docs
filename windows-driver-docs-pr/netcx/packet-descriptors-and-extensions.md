@@ -1,7 +1,6 @@
 ---
 title: Packet descriptors and extensions
 description: Packet descriptors and extensions
-ms.assetid: 7B2357AE-F446-4AE8-A873-E13DF04D8D71
 keywords:
 - WDF Network Adapter Class Extension Packet descriptors and extensions, NetAdapterCx datapath descriptors, multi-ring buffers, NetAdapterCx packet descriptors, NetAdapterCx packet extensions
 ms.date: 11/04/2019
@@ -79,7 +78,7 @@ The extensibility feature outlined previously provides benefits to help client d
 
 The first step in working with packet extensions in your NIC client driver is to declare your supported hardware offloads. When you advertise support for offloads such as checksum and LSO, NetAdapterCx automatically registers the associated packet extensions on your behalf.
 
-For a code example of advertising hardware offloads for checksum and LSO, see [NetAdapterCx hardware offloads](netadaptercx-hardware-offloads.md).
+For a code example of advertising hardware offloads, see [Introduction to  hardware offloads](introduction-to-hardware-offloads.md).
 
 ### Querying packet extension offsets for datapath queues
 

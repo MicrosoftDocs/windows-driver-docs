@@ -1,7 +1,6 @@
 ---
 title: Using Spin Locks An Example
 description: Using Spin Locks An Example
-ms.assetid: 0f3cd7fe-d3e6-4024-9b2f-7140c6ddd1ea
 keywords: ["spin locks WDK kernel", "interrupt spin locks WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

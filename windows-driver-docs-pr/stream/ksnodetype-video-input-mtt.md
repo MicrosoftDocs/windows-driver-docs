@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_VIDEO\_INPUT\_MTT
 description: KSNODETYPE\_VIDEO\_INPUT\_MTT
-ms.assetid: c5661830-9dcf-48b0-b450-2640e4768add
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

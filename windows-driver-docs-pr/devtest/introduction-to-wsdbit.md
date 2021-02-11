@@ -1,7 +1,6 @@
 ---
 title: Introduction to WSDBIT
 description: Introduction to WSDBIT
-ms.assetid: 8a8ee9de-95b2-43df-ba96-3b09fcd5751c
 keywords:
 - WSDBIT tool WDK , about
 - WSDAPI Basic Interoperability Tool WDK , about

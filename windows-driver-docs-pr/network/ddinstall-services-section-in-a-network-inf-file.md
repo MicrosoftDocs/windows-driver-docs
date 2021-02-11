@@ -1,7 +1,6 @@
 ---
 title: DDInstall.Services Section in a Network INF File
 description: DDInstall.Services Section in a Network INF File
-ms.assetid: 5d5cc0ac-fbe2-4791-9c74-fdf9906faff6
 keywords:
 - INF files WDK network , DDInstall.Services section
 - network INF files WDK , DDInstall.Services section

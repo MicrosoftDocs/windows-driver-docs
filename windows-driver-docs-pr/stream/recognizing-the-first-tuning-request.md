@@ -1,7 +1,6 @@
 ---
 title: Recognizing the First Tuning Request
 description: Recognizing the First Tuning Request
-ms.assetid: dc18a056-16f8-4b99-97e3-52c92464a2b2
 keywords:
 - first tuning requests WDK video capture
 - recognizing first tuning requests WDK video capture

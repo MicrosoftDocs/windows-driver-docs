@@ -1,7 +1,6 @@
 ---
 title: Display Driver Initialization
 description: Display Driver Initialization
-ms.assetid: a4cc7780-b6fb-486a-b54b-96c90d4fe1f5
 keywords:
 - display drivers WDK Windows 2000 , initializing
 - initializing display drivers
@@ -26,6 +25,8 @@ The basic display driver initialization procedure, in which the desktop is creat
 3. The display driver represents a logical device controlled by GDI. As shown in the following figure, a single logical device can manage several physical devices, each characterized by type of hardware, logical address, and surfaces supported. The display driver allocates the memory to support the device it creates. A display driver may be called upon to manage more than one *PDEV* for the same physical device, although only one PDEV can be enabled at a time for a given physical device. Each PDEV is created in a separate GDI call to [**DrvEnablePDEV**](/windows/win32/api/winddi/nf-winddi-drvenablepdev), and each call creates another PDEV that is used with a different surface.
 
    Because a driver must support more than one PDEV, it should not use global variables.
+
+   GDI automatically enables DirectDraw after calling [**DrvEnableSurface**](/windows/win32/api/winddi/nf-winddi-drvenablesurface). After DirectDraw is initialized, the driver can use DirectDraw's *heap manager* to perform *off-screen memory* management. See [DirectDraw and GDI](directdraw-and-gdi.md) for details.
 
    The following figure illustrates logical versus physical devices.
 

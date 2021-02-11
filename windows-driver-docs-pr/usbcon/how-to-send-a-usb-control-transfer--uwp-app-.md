@@ -76,7 +76,7 @@ To send control transfers, you must have a [**UsbDevice**](/uwp/api/Windows.Devi
 
 To initiate a control transfer, call the an override of [**SendControlInTransferAsync**](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlInTransferAsync_Windows_Devices_Usb_UsbSetupPacket_Windows_Storage_Streams_IBuffer_) or [**SendControlOutTransferAsync**](/uwp/api/Windows.Devices.Usb.UsbDevice#Windows_Devices_Usb_UsbDevice_SendControlOutTransferAsync_Windows_Devices_Usb_UsbSetupPacket_Windows_Storage_Streams_IBuffer_). If the transfer uses data packets, then call **SendControlOutTransferAsync (UsbSetupPacket, IBuffer)**, **SendControlInTransferAsync (UsbSetupPacket, IBuffer)**. Those methods take an additional parameter that contains the data to write or receives data from the device. Use the flowchart to determine which override to call.
 
-The call starts and asynchronous operation. When the operation completes, the call returns [**IAsyncOperation**](/uwp/api/windows.foundation.iasyncoperation-1.getresults?view=winrt-19041) object that contains results of the operation. For an OUT transfer, the object returns the number of bytes sent in a transfer. For an IN transfer, the object contains the buffer that contains data that was read from the device.
+The call starts and asynchronous operation. When the operation completes, the call returns [**IAsyncOperation**](/uwp/api/windows.foundation.iasyncoperation-1.getresults?view=winrt-19041&preserve-view=true) object that contains results of the operation. For an OUT transfer, the object returns the number of bytes sent in a transfer. For an IN transfer, the object contains the buffer that contains data that was read from the device.
 
 ## USB control transfer code example
 

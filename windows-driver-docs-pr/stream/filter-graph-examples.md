@@ -1,7 +1,6 @@
 ---
 title: Filter Graph Examples
 description: Filter Graph Examples
-ms.assetid: 7888da79-b21d-4935-ac6c-25ef2f947931
 keywords:
 - video capture WDK AVStream , filter graph configurations
 - capturing video WDK AVStream , filter graph configurations

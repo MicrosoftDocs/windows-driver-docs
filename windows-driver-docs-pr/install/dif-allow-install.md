@@ -1,7 +1,6 @@
 ---
 title: DIF_ALLOW_INSTALL
 description: DIF_ALLOW_INSTALL
-ms.assetid: 0bcda90e-f9f1-4965-a08b-d884077a2e8b
 keywords: ["DIF_ALLOW_INSTALL Device and Driver Installation"]
 topic_type:
 - apiref

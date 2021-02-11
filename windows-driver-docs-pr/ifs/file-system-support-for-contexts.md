@@ -1,7 +1,6 @@
 ---
 title: File System Support for Contexts
 description: File System Support for Contexts
-ms.assetid: 661ee3ff-3171-4d1e-a8fe-8d1852c5e990
 keywords:
 - contexts WDK file system minifilter , file system support
 ms.date: 04/20/2017
@@ -10,9 +9,9 @@ ms.localizationpriority: medium
 
 # File System Support for Contexts
 
-To support file contexts (if applicable), stream contexts, and file object (stream handle) contexts, a file system must use the [**FSRTL\_ADVANCED\_FCB\_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure. All Microsoft Windows file systems use this structure, and all third-party file system developers are strongly encouraged to do so as well. For more information, see [**FsRtlSetupAdvancedHeader**](/previous-versions/ff547257(v=vs.85)) and **FSRTL\_ADVANCED\_FCB\_HEADER**.
+To support file contexts (if applicable), stream contexts, and file object (stream handle) contexts, a file system must use the [**FSRTL_ADVANCED_FCB_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header) structure. All Microsoft Windows file systems use this structure, and all third-party file system developers are strongly encouraged to do so as well. For more information, see [**FsRtlSetupAdvancedHeader**](/previous-versions/ff547257(v=vs.85)) and **FSRTL_ADVANCED_FCB_HEADER**.
 
-The NTFS and FAT file systems do not support file, stream, or file object contexts on paging files, in the pre-create or post-close path, or for [**IRP\_MJ\_NETWORK\_QUERY\_OPEN**](./flt-parameters-for-irp-mj-network-query-open.md) operations.
+The NTFS and FAT file systems do not support file, stream, or file object contexts on paging files, in the pre-create or post-close path, or for [**IRP_MJ_NETWORK_QUERY_OPEN**](./flt-parameters-for-irp-mj-network-query-open.md) operations.
 
 A minifilter driver can determine whether a file system supports stream contexts and file object contexts for a given file object by calling [**FltSupportsStreamContexts**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsupportsstreamcontexts) and [**FltSupportsStreamHandleContexts**](/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsupportsstreamhandlecontexts), respectively.
 
@@ -26,6 +25,6 @@ To support file contexts, a file system must:
 
 * Embed a **FileContextSupportPointer** member of type PVOID in its file context structure, usually the file context block (FCB). The file system must initialize this member to **NULL**.
 
-* Use **FsRtlSetupAdvancedHeaderEx** (instead of [**FsRtlSetupAdvancedHeader**](/previous-versions/ff547257(v=vs.85))) to initialize its stream context structure, passing a valid pointer to the **FileContextSupportPointer** member (embedded in the corresponding file context structure) for the *FileContextSupportPointer* parameter. For more information, see **FsRtlSetupAdvancedHeaderEx** and [**FSRTL\_ADVANCED\_FCB\_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header).
+* Use **FsRtlSetupAdvancedHeaderEx** (instead of [**FsRtlSetupAdvancedHeader**](/previous-versions/ff547257(v=vs.85))) to initialize its stream context structure, passing a valid pointer to the **FileContextSupportPointer** member (embedded in the corresponding file context structure) for the *FileContextSupportPointer* parameter. For more information, see **FsRtlSetupAdvancedHeaderEx** and [**FSRTL_ADVANCED_FCB_HEADER**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_fsrtl_advanced_fcb_header).
 
 * Call **FsRtlTeardownPerFileContexts** to free all file context structures that filter and minifilter drivers have associated with a file when the file system deletes its file context structure for the file.

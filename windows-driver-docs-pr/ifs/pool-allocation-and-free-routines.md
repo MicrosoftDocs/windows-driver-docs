@@ -1,7 +1,6 @@
 ---
 title: Pool Allocation and Free Routines
 description: Pool Allocation and Free Routines
-ms.assetid: 757eebc0-ebd4-49a1-acea-6c27956b4b23
 keywords:
 - RDBSS WDK file systems , pool allocations
 - Redirected Drive Buffering Subsystem WDK file systems , pool allocations

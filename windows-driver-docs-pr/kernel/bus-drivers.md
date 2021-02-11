@@ -1,7 +1,6 @@
 ---
 title: Bus Drivers
 description: Bus Drivers
-ms.assetid: d1a92c06-882d-49dc-befa-5b9a9e8aecd7
 keywords: ["bus drivers WDK WDM", "enumerating bus devices WDK WDM", "bus controllers WDK WDM", "adapters WDK WDM", "bridges WDK WDM", "WDM bus drivers WDK"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -31,7 +30,7 @@ During enumeration, a bus driver identifies the devices on its bus and creates d
 
 A bus driver performs certain operations on behalf of the devices on its bus, including accessing device registers to physically change the power state of a device. For example, when the device goes to sleep, the bus driver sets device registers to put the device in the proper device power state.
 
-Note, however, that a bus driver does not handle read and write requests for the child devices that are connect to its bus. Read and write requests to a child device are handled by the child device's function driver does the parent bus driver handle reads and writes for the device.
+Note, however, that a bus driver does not handle read and write requests for the child devices that are connected to its bus. Read and write requests to a child device are handled by the child device's [function driver](function-drivers.md). Only if the child device is being used in *raw mode* does the parent bus driver handle reads and writes for the device.
 
 Because a bus driver acts as the function driver for its controller, adapter, or bridge, it also manages device power policy for these components.
 

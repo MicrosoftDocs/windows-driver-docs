@@ -1,14 +1,13 @@
 ---
 title: Authenticode Signing of Third-party CSPs
 description: Third-party Authenticode signing for custom Cryptographic Service Providers (CSPs) has been available beginning with Windows Vista, and has been back ported to Windows XP SP3 and Windows Server 2003 SP2 as of May, 2013 via this download.
-ms.assetid: DBAA575A-F0B5-4725-A7B1-D6EA84977212
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Authenticode Signing of Third-party CSPs
 
-Third-party Authenticode signing for custom Cryptographic Service Providers (CSPs) has been available beginning with Windows Vista, and has been back ported to Windows XP SP3 and Windows Server 2003 SP2 as of May, 2013 via [this download](https://support.microsoft.com/help/2836198).
+Third-party Authenticode signing for custom Cryptographic Service Providers (CSPs) is available in Windows Vista and later.
 
 Consequently, Microsoft will no longer sign CSPs, and the manual CSP signing service has been retired. Emails and CSPs sent to cspsign@microsoft.com or cecspsig@microsoft.com to be signed will no longer be processed by Microsoft.
 

@@ -1,7 +1,6 @@
 ---
 title: Setting Up the Test System
 description: Setting Up the Test System
-ms.assetid: 99c591e0-fe01-4db9-af95-4ce458625bfb
 keywords:
 - testing network component upgrades WDK
 - upgrade tests WDK networking

@@ -1,7 +1,6 @@
 ---
 title: Miniport Driver with a WDM Lower Edge
 description: Miniport Driver with a WDM Lower Edge
-ms.assetid: e3acbcfe-b63d-441d-ab5f-26ee54a5d3ec
 keywords:
 - NDIS-WDM miniport drivers WDK networking , about NDIS-WDM miniport drivers
 - NDIS-WDM miniport drivers WDK networking , components
@@ -43,7 +42,5 @@ Other vendor-supplied USB client drivers.
 [USB Routines](/previous-versions/windows/hardware/drivers/ff540046(v=vs.85)) and [I/O requests](/previous-versions/ff537421(v=vs.85)) that USB client drivers can use to interface with the USB driver stack.
 
 <a href="" id="usb-driver-stack"></a>USB Driver Stack  
-Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](/windows-hardware/drivers/ddi/index).
-
- 
+Driver stack for USB devices. For more information, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 

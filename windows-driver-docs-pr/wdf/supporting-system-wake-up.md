@@ -1,7 +1,6 @@
 ---
 title: Supporting System Wake-Up
 description: Supporting System Wake-Up
-ms.assetid: 519dcd1a-9975-48b1-a032-04348b903ac5
 keywords:
 - system wake-up WDK KMDF
 - power management WDK KMDF , wake-up capabilities

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_GLOBALCINSTANCES
 description: The client uses the KSPROPERTY\_PIN\_GLOBALCINSTANCES to determine the current number of pins instantiated by a pin factory, as well as the maximum number of pins this pin factory can instantiate. This property is optional.
-ms.assetid: 888b8ddf-aa36-4e2f-a74c-ab4ee693bb36
 keywords: ["KSPROPERTY_PIN_GLOBALCINSTANCES Streaming Media Devices"]
 topic_type:
 - apiref

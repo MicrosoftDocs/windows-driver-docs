@@ -1,7 +1,6 @@
 ---
 title: CcIsThereDirtyLoggedPages routine
 description: The CcIsThereDirtyLoggedPages routine determines whether a volume contains any files that have dirty log data in the system cache.
-ms.assetid: B8FDD817-87E6-4D82-B668-7F1078041281
 keywords: ["CcIsThereDirtyLoggedPages routine Installable File System Drivers"]
 topic_type:
 - apiref

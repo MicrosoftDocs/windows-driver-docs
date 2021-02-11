@@ -1,7 +1,6 @@
 ---
 title: mapped_file
 description: The mapped_file extension displays the name of the file that backs the file mapping that contains a specified address.
-ms.assetid: 1d6d4d14-01ca-47ce-a044-778c9a56e9a5
 keywords: ["mapped_file Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

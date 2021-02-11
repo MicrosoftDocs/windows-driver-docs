@@ -1,7 +1,6 @@
 ---
 title: INF DelReg Directive
 description: A DelReg directive references one or more INF-writer-defined sections describing keys and/or value entries to be removed from the registry.
-ms.assetid: a456327f-9b2c-42e6-a575-47ad788aa8b1
 keywords:
 - INF DelReg Directive Device and Driver Installation
 topic_type:
@@ -71,8 +70,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | NF Section Containing AddReg Directive                                     | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF ***DDInstall*** |
-| INF ***DDInstall*.HW** |
+| INF [***DDInstall***](inf-ddinstall-section.md) section                   | The device's *software key* |
+| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section             | The device's *hardware key* |
 | INF [***DDInstall*.Services**](inf-ddinstall-services-section.md) section | The **Services** key                                                                  |
 
  

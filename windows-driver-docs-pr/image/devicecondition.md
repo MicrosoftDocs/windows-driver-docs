@@ -1,7 +1,6 @@
 ---
 title: DeviceCondition element
 description: The optional DeviceCondition element provides details about one of the scanner's currently active conditions.
-ms.assetid: 5e68462f-afa9-40d4-843a-7d15fb7c98e3
 keywords: ["DeviceCondition element Imaging Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: UEFI simple I/O protocol
 description: UEFI simple I/O protocol
-ms.assetid: 0cb55bf5-71e9-4b59-aef1-7d74eb331a18
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

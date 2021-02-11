@@ -1,7 +1,6 @@
 ---
 title: DirectSound Node-Ordering Requirements
 description: DirectSound Node-Ordering Requirements
-ms.assetid: baca55f5-c669-4bd2-82b5-3985030864f2
 keywords:
 - hardware acceleration WDK DirectSound , node-ordering requirements
 - node-ordering requirements WDK DirectSound

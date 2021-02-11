@@ -1,7 +1,6 @@
 ---
 title: What's new for Windows 10 display and graphics drivers
 description: Describes new features in Windows 10 for display drivers
-ms.assetid: 619175D4-98DA-4B17-8F6F-71B13A31374D
 ms.date: 05/12/2020
 ms.localizationpriority: medium
 ---
@@ -28,7 +27,7 @@ WDDM 2.7 brings along some new features and improvements which build on the init
 
 - Applications can call DispatchRays through ExecuteIndirect, allowing raytracing work to be configured on the GPU. This could be useful for applications that seek to cull, sort, or adjust raytracing work and they use shaders for doing that. Going along with this, there is now a D3D12DDI_INDIRECT_ARGUMENT_TYPE enumeration value. When using indirect raytracing dispatch, each element of the execute-indirect buffer is of type [**D3D12DDIARG_DISPATCH_RAYS_0054**](/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddiarg_dispatch_rays_0054).
 
-- The overhead of creating pipeline state to account for different shader combinations is one of those difficult problems in 3D computer graphics. DXR 1.1 includes something that can help: add-to-state-object. AddToStateObject(), as it is exposed in the API, allows applications to add shaders to an existing state object with CPU overhead proportional only to what is being added. Going along with this, there are two device DDI functions: [**PFND3D12DDI_ADD_TO_STATE_OBJECT_0072**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_add_to_state_object_0072) and PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_calc_private_add_to_state_object_size_0072).
+- The overhead of creating pipeline state to account for different shader combinations is one of those difficult problems in 3D computer graphics. DXR 1.1 includes something that can help: add-to-state-object. AddToStateObject(), as it is exposed in the API, allows applications to add shaders to an existing state object with CPU overhead proportional only to what is being added. Going along with this, there are two device DDI functions: [**PFND3D12DDI_ADD_TO_STATE_OBJECT_0072**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_add_to_state_object_0072) and [**PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072**](/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_calc_private_add_to_state_object_size_0072).
 
 For general capability-reporting, there's a new enumeration value [**D3D12DDI_RAYTRACING_TIER_1_1**](/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_raytracing_tier) used for reporting tier 1.1.
 

@@ -1,13 +1,14 @@
 ---
 title: Standardized INF Keywords for NDIS Selective Suspend
 description: Standardized INF Keywords for NDIS Selective Suspend
-ms.assetid: A45EE23D-1C60-4DA4-82A5-89DB5CE48E21
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Standardized INF Keywords for NDIS Selective Suspend
 
+> [!NOTE]
+> Selective Suspend related keywords are for traditional NDIS miniport driver use only. They are deprecated in [Network Adapter WDF Class Extension (NetAdapterCx)](../netcx/index.md) and must not be used by its client drivers.
 
 The following standardized INF keywords are defined to enable, disable, and configure parameters for NDIS selective suspend on a miniport driver:
 

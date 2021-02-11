@@ -1,7 +1,6 @@
 ---
 title: HS_HOST_ALLOCATE_MEMORY function
 description: The HS_HOST_ALLOCATE_MEMORY function returns an amount of memory specified by the caller.
-ms.assetid: afa59680-d85b-4be5-8642-152ff653a0b0
 keywords: 
 - (WINAPI HS_HOST_ALLOCATE_MEMORY) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017

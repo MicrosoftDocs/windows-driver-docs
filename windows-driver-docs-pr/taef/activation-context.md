@@ -1,7 +1,6 @@
 ---
 title: Activation Context
 description: Activation Context
-ms.assetid: 76584379-2AEF-47e0-B14E-C7698903658F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

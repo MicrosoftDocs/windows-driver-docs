@@ -1,7 +1,6 @@
 ---
 title: AV/C Streaming Format GUIDs
 description: AV/C Streaming Format GUIDs
-ms.assetid: 60f1fd59-e760-4be4-8990-e49628b76d15
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

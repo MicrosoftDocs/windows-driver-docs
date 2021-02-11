@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_COMMAND
 description: AVC\_FUNCTION\_COMMAND
-ms.assetid: 5e1f7f93-83ef-4015-a952-f7efd93ccee5
 keywords: ["AVC_FUNCTION_COMMAND Streaming Media Devices"]
 topic_type:
 - apiref

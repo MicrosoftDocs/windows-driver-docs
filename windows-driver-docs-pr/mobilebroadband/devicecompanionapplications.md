@@ -1,7 +1,6 @@
 ---
 title: DeviceCompanionApplications
 description: DeviceCompanionApplications
-ms.assetid: 3e0b21a8-aa1f-4f7a-84fc-447bba172794
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

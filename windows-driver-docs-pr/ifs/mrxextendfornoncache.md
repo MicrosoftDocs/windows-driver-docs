@@ -1,7 +1,6 @@
 ---
 title: MRxExtendForNonCache routine
 description: The MRxExtendForNonCache routine is called by RDBSS to request that a network mini-redirector extend a file when the file is not being cached by the cache manager.
-ms.assetid: 80ec5142-7188-45ba-a1cb-73be99ce1ac4
 keywords: ["MRxExtendForNonCache routine Installable File System Drivers", "PMRX_EXTENDFILE_CALLDOWN"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: RetrieveImageResponse element
 description: The required RetrieveImageResponse operation element returns the scan data to the client.
-ms.assetid: f63398c4-bbae-42ca-94c5-059b066c65cb
 keywords: ["RetrieveImageResponse element Imaging Devices"]
 topic_type:
 - apiref

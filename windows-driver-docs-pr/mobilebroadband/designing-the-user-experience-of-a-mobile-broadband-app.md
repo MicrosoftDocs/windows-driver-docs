@@ -1,7 +1,6 @@
 ---
 title: Introduction to designing the user experience of a mobile broadband app
 description: Introduction to designing the user experience of a mobile broadband app
-ms.assetid: c84e2814-69ba-4cd0-ba11-1b035ccdfbde
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

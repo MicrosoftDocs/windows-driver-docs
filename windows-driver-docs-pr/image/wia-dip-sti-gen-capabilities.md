@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_STI\_GEN\_CAPABILITIES
 description: The WIA\_DIP\_STI\_GEN\_CAPABILITIES property contains the generic STI capabilities for a device, which are obtained from the driver's INF file. The WIA service creates and maintains this property.
-ms.assetid: 9429d065-43ed-41b9-a525-267ec44a94e7
 keywords: ["WIA_DIP_STI_GEN_CAPABILITIES Imaging Devices"]
 topic_type:
 - apiref

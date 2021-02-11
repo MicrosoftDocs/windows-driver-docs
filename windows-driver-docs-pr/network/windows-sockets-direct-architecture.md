@@ -1,7 +1,6 @@
 ---
 title: Windows Sockets Direct Architecture
 description: Windows Sockets Direct Architecture
-ms.assetid: 2f6ac4a7-76fe-45b4-8b5b-3a5f1d5c0553
 keywords:
 - Windows Sockets Direct WDK , architecture
 - TCP/IP WDK SANs

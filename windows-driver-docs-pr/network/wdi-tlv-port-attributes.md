@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PORT_ATTRIBUTES
 description: WDI_TLV_PORT_ATTRIBUTES is a TLV that contains port attributes.
-ms.assetid: F5A0BC8D-1B86-41C2-A530-860E15775695
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PORT_ATTRIBUTES Network Drivers Starting with Windows Vista

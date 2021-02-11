@@ -1,7 +1,6 @@
 ---
 title: Print Ticket and Print Capabilities Provider Interface
 description: Print Ticket and Print Capabilities Provider Interface Implemented by Printer Drivers
-ms.assetid: a14c1173-0419-44c7-bc8f-7197590083b3
 keywords:
 - printer interface DLL WDK , Print Ticket support
 - printer interface DLL WDK , Print Capabilities support

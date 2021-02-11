@@ -1,7 +1,6 @@
 ---
 title: Monitor INF File Sections
 description: Monitor INF File Sections
-ms.assetid: f5208b6a-00b0-446e-82f7-eb26082ed9a5
 keywords:
 - monitor INF file sections WDK Windows 2000 display
 - INF files WDK Windows 2000 display
@@ -103,7 +102,7 @@ An INF writer-defined section can have any name, provided it is unique within th
     HKR,,DPMS,,1
     ```
 
--   **AddReg**). Therefore, **MODES** key INF values should be used only if a problem exists with the EDID or in the interpretation of the EDID.
+-   [**AddReg**](../install/inf-addreg-directive.md) section -- You can specify entries under a **MODES** key in an add-registry section of a monitor INF to identify the monitor's supported resolutions and timings. If the INF specifies modes in this way, the modes' entries will override the values that are specified in the monitor's Extended Display Information Data (*EDID*). Therefore, **MODES** key INF values should be used only if a problem exists with the EDID or in the interpretation of the EDID.
 
     Each subkey to the **MODES** key specifies a resolution and can contain up to nine values that are used to specify specific timings or timing ranges. The resolution for each subkey name must be a combination of two integer values--width and height--separated by a comma. The specific timings are named from **Mode1** to **Mode9**. The naming must be contiguous. The string values allow frequencies for horizontal and vertical sync pulses to be specified, either as single values or as ranges, where a range is given as a minimum value, followed by a dash (-), followed by a maximum value. The frequency values are currently interpreted only as integers with any digits that follow the decimal place ignored. The string allows the polarity of the horizontal and vertical sync pulses to be specified. However, these polarity values are currently ignored. Only the maximum horizontal sync pulse value is required in each string. For example, the following shows that for each subkey string, the information in square brackets is optional:
 

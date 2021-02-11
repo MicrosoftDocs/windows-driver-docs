@@ -1,7 +1,6 @@
 ---
 title: Event Reporting
 description: Event Reporting
-ms.assetid: 4c3ffa7e-d0b3-483c-9f6b-3fe8ae997cf0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Hot Replace of Partition Units
 description: Hot Replace of Partition Units
-ms.assetid: 6d50dc7d-6c3b-41e5-b6eb-aead9833dd1e
 keywords: ["dynamic hardware partitioning WDK , hot replace", "hardware partitioning WDK dynamic , hot replace", "partitioning WDK dynamic hardware , hot replace", "hot replace WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

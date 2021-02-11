@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CROSSBAR\_CAPS
 description: The KSPROPERTY\_CROSSBAR\_CAPS property retrieves the crossbar capabilities of the device (the number of input and output pins on the crossbar). This property must be implemented.
-ms.assetid: f7dd806c-065d-48c7-ab58-3f5ef95451d5
 keywords: ["KSPROPERTY_CROSSBAR_CAPS Streaming Media Devices"]
 topic_type:
 - apiref

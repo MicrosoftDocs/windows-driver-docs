@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch Send and Receive Flags
 description: Hyper-V Extensible Switch Send and Receive Flags
-ms.assetid: FBA506EC-4E9F-4964-9C9C-FF4910DDA908
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

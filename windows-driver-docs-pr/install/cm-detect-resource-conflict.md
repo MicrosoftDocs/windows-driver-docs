@@ -1,7 +1,6 @@
 ---
 title: CM_Detect_Resource_Conflict
 description: CM_Detect_Resource_Conflict
-ms.assetid: c2e5fd52-dbbd-48a0-9936-87f300fb9189
 keywords: ["CM_Detect_Resource_Conflict Device and Driver Installation"]
 topic_type:
 - apiref

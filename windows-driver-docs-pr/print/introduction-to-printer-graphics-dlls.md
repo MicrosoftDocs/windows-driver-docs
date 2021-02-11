@@ -1,7 +1,6 @@
 ---
 title: Introduction to Printer Graphics DLLs
 description: Introduction to Printer Graphics DLLs
-ms.assetid: 3f7ce476-6bef-4a80-ae2a-2a63e891dda1
 keywords:
 - printer graphics DLL WDK , about printer graphics DLL
 - graphics DLL WDK printer , about printer graphics DLL
@@ -22,7 +21,7 @@ Printer graphics DLLs implement Drv-prefixed graphics DDI functions that are des
 
 -   Deliver a rendered data stream to the spooler.
 
-    Printer graphics DLLs typically produce an output stream in a RAW data type.
+    Printer graphics DLLs typically produce an output stream in a [RAW data type](raw-data-type.md) (including command sequences) that the spooler can send to printer hardware through *print monitors*.
 
 The amount of rendering assistance that a printer graphics DLL must provide is printer type-specific, depending on the hardware's drawing capabilities, and includes the following scenarios:
 

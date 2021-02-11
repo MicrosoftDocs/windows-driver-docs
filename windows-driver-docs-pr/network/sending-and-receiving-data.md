@@ -1,7 +1,6 @@
 ---
 title: Sending and receiving data over WSK sockets
 description: Sending and receiving data over WSK sockets
-ms.assetid: f9c9e9c0-6d49-412d-be53-5f92bf55d328
 keywords:
 - Winsock Kernel WDK networking , sending and receiving data
 - WSK WDK networking , sending and receiving data

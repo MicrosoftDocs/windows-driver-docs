@@ -1,7 +1,6 @@
 ---
 title: Design services and goods pages in a mobile broadband app
 description: Design services and goods pages in a mobile broadband app
-ms.assetid: 7c13a42f-b808-4f33-a740-a8596b3520f7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

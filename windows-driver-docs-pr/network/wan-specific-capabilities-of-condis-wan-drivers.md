@@ -1,7 +1,6 @@
 ---
 title: WAN-Specific Capabilities of CoNDIS WAN Drivers
 description: WAN-Specific Capabilities of CoNDIS WAN Drivers
-ms.assetid: c4e8e0ae-7dd5-4c4e-900a-b1f7e5eecb16
 keywords:
 - CoNDIS WAN drivers WDK networking , vs. non-WAN CoNDIS drivers
 - non-WAN CoNDIS drivers WDK networking

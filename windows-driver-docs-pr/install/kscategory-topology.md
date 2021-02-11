@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_TOPOLOGY
 description: KSCATEGORY_TOPOLOGY
-ms.assetid: 20c4ccf1-81bb-4209-9842-4de295fe3a00
 keywords: ["KSCATEGORY_TOPOLOGY Device and Driver Installation"]
 topic_type:
 - apiref

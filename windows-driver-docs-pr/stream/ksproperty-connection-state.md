@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_STATE
 description: The KSPROPERTY\_CONNECTION\_STATE property sets the current run state of the pin.
-ms.assetid: f1a9e101-1398-4f16-bae9-f827e7d0c433
 keywords: ["KSPROPERTY_CONNECTION_STATE Streaming Media Devices"]
 topic_type:
 - apiref

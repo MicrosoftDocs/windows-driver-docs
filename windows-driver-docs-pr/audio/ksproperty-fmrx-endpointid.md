@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_FMRX\_ENDPOINTID
 description: The KSTOPOLOGY\_ENDPOINTID property contains the endpoint ID for the FM radio output/render endpoint.
-ms.assetid: C71DA54C-069D-43F6-8107-AF109D4CA967
 keywords: ["KSPROPERTY_FMRX_ENDPOINTID Audio Devices"]
 topic_type:
 - apiref

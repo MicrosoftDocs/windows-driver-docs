@@ -1,7 +1,6 @@
 ---
 title: Verifying Validity of Render Target
 description: Verifying Validity of Render Target
-ms.assetid: 316ecd58-996a-4277-b2dc-4424c96d8a56
 keywords:
 - render targets WDK DirectX 9.0 , verifying validity
 - validating render targets WDK DirectX 9.0

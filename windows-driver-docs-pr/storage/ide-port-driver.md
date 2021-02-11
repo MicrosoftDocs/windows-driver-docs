@@ -1,7 +1,6 @@
 ---
 title: IDE Port Driver
 description: IDE Port Driver
-ms.assetid: 8e292680-6fa7-4f6b-b4ec-6f0f0d795d03
 ms.date: 10/08/2019
 ms.localizationpriority: medium
 ---

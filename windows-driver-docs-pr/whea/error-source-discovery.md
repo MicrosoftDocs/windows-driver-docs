@@ -1,7 +1,6 @@
 ---
 title: Error Source Discovery
 description: Error Source Discovery
-ms.assetid: 58b7501d-b51a-436f-ac29-8d03161d0956
 keywords:
 - Windows Hardware Error Architecture WDK , error source discovery
 - WHEA WDK , error source discovery

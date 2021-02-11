@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_DmaRemappingPolicy
 description: DEVPKEY_Device_DmaRemappingPolicy
-ms.assetid: 3553debf-dec8-4135-9bd7-6ce2941afa52
 keywords: ["DEVPKEY_Device_DmaRemappingPolicy Device and Driver Installation"]
 topic_type:
 - apiref

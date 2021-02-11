@@ -1,7 +1,6 @@
 ---
 title: Threading and Synchronization First Level
 description: Threading and Synchronization First Level
-ms.assetid: 9fce6a18-2a66-4518-b05b-e85bdaa3951f
 keywords:
 - threading WDK display , first level
 - synchronization WDK display , first level

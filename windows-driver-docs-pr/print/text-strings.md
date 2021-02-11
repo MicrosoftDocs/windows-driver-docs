@@ -1,7 +1,6 @@
 ---
 title: Text Strings
 description: Text Strings
-ms.assetid: 773c977b-aac4-4c7c-8bab-aa2c69b2a89a
 keywords:
 - GPD file entries WDK Unidrv , text strings
 - text strings WDK GPD files

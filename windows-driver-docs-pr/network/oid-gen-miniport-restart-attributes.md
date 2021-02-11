@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MINIPORT_RESTART_ATTRIBUTES
 description: The OID_GEN_MINIPORT_RESTART_ATTRIBUTES OID identifies general attributes for the propagation of miniport adapter restart attributes in an NDIS driver stack.
-ms.assetid: 239993f6-2176-4925-aadc-44e0df66f56b
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MINIPORT_RESTART_ATTRIBUTES Network Drivers Starting with Windows Vista

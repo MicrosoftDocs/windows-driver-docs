@@ -1,13 +1,12 @@
 ---
 title: Timeout detection and recovery (TDR)
 description: Describes timeout detection and recovery (TDR) for the Windows Display Driver Model (WDDM)
-ms.assetid: f410eec7-026f-41e0-8c60-72f651659ead
 keywords:
 - TDR (timeout detection and recovery) WDK display
 - TDR (timeout detection and recovery) WDK graphics
 ms.date: 10/06/2020
 ms.localizationpriority: medium
-ms.custom: contperfq2
+ms.custom: contperf-fy21q2
 ---
 
 # Timeout detection and recovery (TDR)

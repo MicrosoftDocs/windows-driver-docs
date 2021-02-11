@@ -1,7 +1,6 @@
 ---
 title: PCMCIA_INTERFACE_STANDARD Interface for Memory Cards
 description: PCMCIA_INTERFACE_STANDARD Interface for Memory Cards
-ms.assetid: 3bb48ba8-388d-46c9-96a7-4cd0829e6f78
 keywords:
 - PCMCIA WDK buses , PCMCIA_INTERFACE_STANDARD interface
 - PCMCIA_INTERFACE_STANDARD

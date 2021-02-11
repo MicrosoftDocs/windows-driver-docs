@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_FLASH\_PROPERTY
 description: User-mode clients use this property to get or set a camera's flash control characteristics. This property is optional.
-ms.assetid: 33B4B9DF-D3B4-4990-A625-D632F30284AA
 keywords: ["KSPROPERTY_CAMERACONTROL_FLASH_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref

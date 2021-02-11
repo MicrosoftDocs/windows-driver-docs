@@ -1,7 +1,6 @@
 ---
 title: Simplified Reset Handling
 description: Simplified Reset Handling
-ms.assetid: ac07bfe3-9144-422a-96ca-d2ca2cc6861d
 keywords:
 - NDIS miniport drivers WDK , resetting miniport adapters
 - resetting miniport adapters

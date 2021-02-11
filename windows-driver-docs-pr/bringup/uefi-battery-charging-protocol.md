@@ -1,7 +1,6 @@
 ---
 title: UEFI battery charging protocol
 description: UEFI battery charging protocol
-ms.assetid: 5e9ef620-2ca1-4579-a715-19eec8933d57
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

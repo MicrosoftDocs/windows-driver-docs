@@ -1,7 +1,6 @@
 ---
 title: DVD 4 3 Pan-Scan Within 16 9 Pictures Example
 description: DVD 4 3 Pan-Scan Within 16 9 Pictures Example
-ms.assetid: f00489e7-809d-4a5b-87c8-b2421bd6ca93
 keywords:
 - alpha-blend combination WDK DirectX VA , DVD 4 3 pan-scan example
 - blended pictures WDK DirectX VA , DVD 4 3 pan-scan example

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_FLAGS
 description: The WIA\_IPA\_ITEM\_FLAGS property contains the descriptive flags for a WIA item.
-ms.assetid: ee25fb38-eafa-49a9-83ab-4f99bc25f4e9
 keywords: ["WIA_IPA_ITEM_FLAGS Imaging Devices"]
 topic_type:
 - apiref

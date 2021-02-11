@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_EXTXPORT\_OUTPUT\_SIGNAL\_MODE
 description: The KSPROPERTY\_EXTXPORT\_OUTPUT\_SIGNAL\_MODE property sets or gets an external device's output signal mode. For example DV-SD/NTSC/PAL, DV-SL/NTSC/PAL, MPEG2-TS, etc.
-ms.assetid: 9cd1bf2a-c241-491a-af22-5cf7b654169d
 keywords: ["KSPROPERTY_EXTXPORT_OUTPUT_SIGNAL_MODE Streaming Media Devices"]
 topic_type:
 - apiref

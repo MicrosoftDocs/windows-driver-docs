@@ -1,7 +1,6 @@
 ---
 title: SENSOR\_CATEGORY\_LOCATION
 description: The SENSOR\_CATEGORY\_LOCATION category contains sensors that provide geographic location information.
-ms.assetid: 19B76F17-0575-42F2-ADEF-15932DCE7E06
 topic_type:
 - apiref
 api_name:

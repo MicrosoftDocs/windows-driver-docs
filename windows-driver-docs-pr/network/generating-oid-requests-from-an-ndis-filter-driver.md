@@ -1,7 +1,6 @@
 ---
 title: Generating OID Requests from an NDIS Filter Driver
 description: Generating OID Requests from an NDIS Filter Driver
-ms.assetid: 6567bf98-bf56-4337-8670-af4c78d2c947
 keywords:
 - OIDs WDK networking , filter drivers
 ms.date: 04/20/2017

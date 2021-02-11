@@ -1,7 +1,6 @@
 ---
 title: WDDM 2.1 Features
 description: This section provides details about new features and enhancements in Windows Display Driver Model (WDDM) version 2.1.
-ms.assetid: 7dc0d0ad-98da-4bd6-bed9-f70525b682bc
 ms.date: 01/10/2019
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: iSCSI WMI Classes
 description: iSCSI WMI Classes
-ms.assetid: a3742c51-b38e-4ac2-923d-3f48a561b04d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

@@ -1,7 +1,6 @@
 ---
 title: Filter Specific Allocators
 description: Filter Specific Allocators
-ms.assetid: 581f3000-4e66-4ba0-979d-b187115a30b2
 keywords:
 - filter specific allocators WDK kernel streaming
 - filter allocators WDK kernel streaming

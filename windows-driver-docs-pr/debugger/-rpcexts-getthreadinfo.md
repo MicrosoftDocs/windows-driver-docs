@@ -1,7 +1,6 @@
 ---
 title: rpcexts.getthreadinfo
 description: The rpcexts.getthreadinfo extension searches the system's RPC state information for thread information.
-ms.assetid: 904605e7-c53b-4e29-874f-7a055fc7a02b
 keywords: ["rpcexts.getthreadinfo Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

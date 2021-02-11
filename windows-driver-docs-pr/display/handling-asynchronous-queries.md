@@ -1,7 +1,6 @@
 ---
 title: Handling Asynchronous Queries
 description: Handling Asynchronous Queries
-ms.assetid: b5e289db-eb9f-46e6-b221-4aa6661a9ce1
 keywords:
 - asynchronous query operations WDK DirectX 9.0
 - query operations WDK DirectX 9.0 , asynchronous

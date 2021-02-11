@@ -1,7 +1,6 @@
 ---
 title: Verb
 description: Verb
-ms.assetid: 38edbb37-5fd4-4301-adc0-4a66a7e8a564
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

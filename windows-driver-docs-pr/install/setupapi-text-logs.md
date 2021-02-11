@@ -1,7 +1,6 @@
 ---
 title: SetupAPI Text Logs
 description: SetupAPI Text Logs
-ms.assetid: db2460f3-b716-4687-9b07-2047f74332d8
 keywords:
 - text logs WDK SetupAPI
 - device installation text logs WDK

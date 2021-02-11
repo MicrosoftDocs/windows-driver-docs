@@ -1,7 +1,6 @@
 ---
 title: Pausing a Filter Module
 description: Pausing a Filter Module
-ms.assetid: da75b92d-b662-416a-b350-e5384b870b7f
 keywords:
 - filter modules WDK networking , pausing
 - pausing filter modules

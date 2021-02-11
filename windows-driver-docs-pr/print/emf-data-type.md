@@ -1,7 +1,6 @@
 ---
 title: EMF Data Type
 description: EMF Data Type
-ms.assetid: d5a05778-3637-4dba-b036-5f0fc236d52d
 keywords:
 - print processors WDK , data types
 - data types WDK print processor

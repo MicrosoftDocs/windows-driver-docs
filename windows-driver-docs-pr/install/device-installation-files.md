@@ -1,7 +1,6 @@
 ---
 title: Device Installation Files
 description: Device Installation Files
-ms.assetid: a4a53040-ff53-49ba-a4a5-aba5f13119ef
 keywords:
 - Device setup WDK device installations , files
 - device installations WDK , files

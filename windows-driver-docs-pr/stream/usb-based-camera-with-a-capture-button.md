@@ -1,7 +1,6 @@
 ---
 title: USB-Based Camera with a Capture Button
 description: USB-based camera with a capture button
-ms.assetid: abbd824c-1ade-4dbc-8807-e558c444a3ea
 keywords:
 - filter graph configurations WDK video capture , USB-based cameras with capture button
 - still pins WDK video capture

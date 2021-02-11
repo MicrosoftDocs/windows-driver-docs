@@ -1,7 +1,6 @@
 ---
 title: Framework DMA Objects
 description: Framework DMA Objects
-ms.assetid: a5073bb0-a8c9-49fc-b280-e781f9f9c256
 keywords:
 - DMA operations WDK KMDF , objects
 - bus-master DMA WDK KMDF , objects

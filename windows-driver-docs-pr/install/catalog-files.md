@@ -1,7 +1,6 @@
 ---
 title: Catalog Files and Digital Signatures
 description: Catalog Files and Digital Signatures
-ms.assetid: e5504823-1c7e-4cbf-9d42-49e09aeae9d4
 keywords:
 - thumbprints WDK driver signing
 - signed catalog files WDK driver signing

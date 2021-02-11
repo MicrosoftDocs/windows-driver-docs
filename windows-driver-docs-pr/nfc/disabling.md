@@ -1,7 +1,6 @@
 ---
 title: Disabling NFP
 description: A client can temporarily disable subscriptions, publications, and presence.
-ms.assetid: 94BE6D24-60AD-45BD-AF2D-388022114975
 keywords:
 - NFC
 - near field communications
@@ -23,5 +22,4 @@ Temporarily disabling subscriptions, publications, and presence is done by sendi
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](/windows-hardware/drivers/ddi/index)
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

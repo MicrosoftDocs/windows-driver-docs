@@ -1,7 +1,6 @@
 ---
 title: TrueType Font Driver Functions
 description: TrueType Font Driver Functions
-ms.assetid: 9ed59393-c4a6-4d3f-9a18-c9e5493c2dc9
 keywords:
 - fonts WDK graphics , TrueType driver functions
 - GDI WDK Windows 2000 display , fonts, TrueType driver functions

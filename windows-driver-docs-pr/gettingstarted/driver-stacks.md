@@ -1,7 +1,6 @@
 ---
 title: Driver stacks
 description: Most of the requests that are sent to device drivers are packaged in I/O request packets (IRPs).
-ms.assetid: 8D55CB83-C50A-48B8-9379-ECF2CF30AEE5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -55,7 +54,7 @@ Consider the drivers in the third section. These drivers are a subset of a large
 
 A block diagram that shows all of the drivers for a particular technology or a particular component or portion of the operating system is called a *technology driver stack*. Typically, technology driver stacks are given names like the USB Core Driver Stack, the Storage Stack, the 1394 Driver Stack, and the Audio Driver Stack.
 
-**Note**  The USB core block diagram in this topic shows one of several possible ways to illustrate the technology driver stacks for USB 1.0 and 2.0. For the official diagrams of the USB 1.0, 2.0, and 3.0 driver stacks, see [USB Driver Stack Architecture](/windows-hardware/drivers/ddi/index).
+**Note**  The USB core block diagram in this topic shows one of several possible ways to illustrate the technology driver stacks for USB 1.0 and 2.0. For the official diagrams of the USB 1.0, 2.0, and 3.0 driver stacks, see [USB Driver Stack Architecture](../usbcon/usb-3-0-driver-stack-architecture.md).
 
  
 
@@ -67,6 +66,4 @@ A block diagram that shows all of the drivers for a particular technology or a p
 [Minidrivers and driver pairs](minidrivers-and-driver-pairs.md)
 
 [Concepts for all driver developers](concepts-and-knowledge-for-all-driver-developers.md)
-
- 
 
