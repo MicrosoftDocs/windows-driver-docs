@@ -18,6 +18,10 @@ This section will cover how to set up and use a BM-64-EVB-C2 for testing with BT
 
 ## Getting Started
 
+> [!CAUTION]
+>
+> Before powering on the board via USB or Barrel connector, remove the jumper on JP33, if it is installed. Failure to do so may result in a boot loop that prevents enumeration during future power ups and may render the board unusable for the purposes of BTP testing.
+
 In order to use the BM-64-EVB with BTP the firmware and EEPROM settings for the BM64 must be updated from the factory default.Additionally, the PIC microcontroller should also be updated to ensure stability.
 Download and extract the newest BM64 software kit from [**Microchip**](https://www.microchip.com/wwwproducts/en/BM64) on the *Documents / Software Libraries/Firmware* tab (DSPK v2.1.3 was used for this development).
 
