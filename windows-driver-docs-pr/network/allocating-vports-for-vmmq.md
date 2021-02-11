@@ -8,9 +8,9 @@ ms.localizationpriority: medium
 
 # Allocating VPorts for VMMQ
 
-NDIS allocates VPorts when the [Virtual Machine Multiple Queues (VMMQ)](ADD LINK) capability is present in the following way.
+NDIS allocates VPorts when the [Virtual Machine Multiple Queues (VMMQ)](overview-of-virtual-machine-multiple-queues.md) capability is present in the following way.
 
-NDIS creates a non-default VPort on the miniport adapter by issuing the [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md) OID request. When creating an RSS Physical Function (PF) VPort, NDIS will initialize the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure as follows:
+NDIS creates a non-default VPort on the miniport adapter by issuing the [OID\_NIC\_SWITCH\_CREATE\_VPORT](oid-nic-switch-create-vport.md) OID request. When creating an RSS physical function (PF) VPort, NDIS will initialize the [**NDIS\_NIC\_SWITCH\_VPORT\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_nic_switch_vport_parameters) structure as follows:
 
 - NDIS sets the **AttachedFunctionId** field to **NDIS\_PF\_FUNCTION\_ID**.
 
