@@ -14,16 +14,16 @@ The BTP software package contains several tools to be used for testing Bluetooth
 
 The Bluetooth Test Platform (BTP) software package contains tools for testing the interoperability of Bluetooth enabled peripherals and systems with the Windows Bluetooth stack. The included documentation provides a brief overview of the ways to configure the hardware and suggests topologies for best test coverage. Procedural information about how to run the tests and collect trace events from the Bluetooth Windows stack are included.
 
-[![Download the Bluetooth Test Platform Software Package](images/download.png)](//download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.4.3.msi)  Download the Bluetooth Test Platform Software Package.
+[![Download the Bluetooth Test Platform Software Package](images/download.png)](//download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.5.1.msi)  Download the Bluetooth Test Platform Software Package.
 
 ## Version Updates
 
 | Version | Changes |
 |---------|---------|
-| 1.4.3     | - Added HFP interrupting A2DP test.</br>- Made improvements to error logs.</br>- Made improvements to audio volume and glitch detection.</br>- Made Bluefruit preferred connection interval faster.</br>- Several fixes and improvements to test reliability.</br> |
-| 1.4.0     | - Added keyboard latency test to HID tests.</br>- Added mouse tests to HID tests.</br>- Added audio + HID scenario tests.</br>- Added battery tests.</br>- Fixed issue causing tests to fail to load when running in older Windows releases.</br>- Fixed scripts that failed when running on non-native CMD/PowerShell environments.</br>- Several fixes and improvements to test reliability.</br> |
-| 1.3.1     | - Added audio tests capable of exercising A2DP and HFP.</br>- Added audio volume validation and glitch detection via an FPGA on the Traduci.</br>- Renamed tests to shorter and more user friendly names.</br>- Several fixes and improvements to test reliability.</br> |
-| 1.2.1     | - Moving BTP from private preview to public.</br>- Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</br>- Several fixes and improvements to test reliability.</br>|
+|1.5.1     | - Added BTVS and BTETLParse diagnostic tools.</br>- Several fixes and improvements to test reliability. |
+|1.4.0     | - Added keyboard latency test to HID tests.</br> - Added mouse tests to HID tests.</br> - Added audio + HID scenario tests. </br> - Added battery tests.</br> - Fixed issue causing tests to fail to load when running in older Windows releases.</br> - Fixed scripts that failed when running on non-native CMD/PowerShell environments.</br> - Several fixes and improvements to test reliability. |
+|1.3.1     | -  Added audio tests capable of exercising A2DP and HFP.</br> - Added audio volume validation and glitch detection via an FPGA on the Traduci.</br> - Renamed tests to shorter and more user friendly names.</br> - Several fixes and improvements to test reliability. |
+|1.2.1     | - Moving BTP from private preview to public.</br> - Added experimental SleepTests demonstrating a new capability of the Traduci of executing delayed commands.</br> - Several fixes and improvements to test reliability. |
 
 ## Tools in the package
 
@@ -45,12 +45,14 @@ The files listed in this table are available in X86, AMD64, and ARM64 architectu
 
 | Test Tool | Description | Filename |
 | --- | --- | --- |
-| BtpDevicePlugin | - Binary needed to support tests that use a local Windows Bluetooth radio.</br> | Microsoft.Bluetooth.TestPlatform.BtpDevicePlugin.dll |
-| GenericSerialIO | - Binary needed to support BTP devices that use Windows serial communication.</br> | Microsoft.Bluetooth.TestPlatform.GenericSerialIO.dll |
-| HidTests | - Test binary for Bluetooth HID tests.</br>- Can be run using TAEF or via the provided scripts.</br> | TaefHidTests.dll |
-| PairingTests | - Test binary for Bluetooth Pairing tests.</br>- Can be run using TAEF or via the provided scripts.</br> | TaefPairingTests.dll |
-| SleepTests | - Experimental test binary for Bluetooth Sleep tests.</br>- Can be run using TAEF.</br>-  **Note:** This is not currently fully supported.</br> | TaefSleepTests.dll |
-| AudioTests | - Test binary for Bluetooth Audio tests.</br>- Can be run using TAEF.</br> | TaefAudioTests.dll |
-| AudioHidScenarioTests | - Test binary for Bluetooth Audio and HID scenario tests.</br>- Can be run using TAEF.</br> | TaefAudioHidScenarioTests.dll |
-| BatteryTests | - Test binary for Bluetooth battery tests.</br>- Can be run using TAEF.</br> | TaefBatteryTests.dll |
-| TraduciCmd | - Command line tool for querying and changing the state of the Traduci, including debug commands.</br>- Used for firmware update to Traduci hardware.</br> | TraduciCmd.exe |
+| BtpDevicePlugin | - Binary needed to support tests that use a local Windows Bluetooth radio. | Microsoft.Bluetooth.TestPlatform.BtpDevicePlugin.dll |
+| GenericSerialIO | - Binary needed to support BTP devices that use Windows serial communication. | Microsoft.Bluetooth.TestPlatform.GenericSerialIO.dll |
+| HidTests | - Test binary for Bluetooth HID tests.</br> - Can be run using TAEF or via the provided scripts. | TaefHidTests.dll |
+| PairingTests | - Test binary for Bluetooth Pairing tests.</br> - Can be run using TAEF or via the provided scripts. | TaefPairingTests.dll |
+| SleepTests | - Experimental test binary for Bluetooth Sleep tests.</br> - Can be run using TAEF. </br>**Note:** This is not currently fully supported. | TaefSleepTests.dll |
+| AudioTests | -  Test binary for Bluetooth Audio tests.</br> - Can be run using TAEF. | TaefAudioTests.dll |
+| AudioHidScenarioTests | - Test binary for Bluetooth Audio and HID scenario tests.</br> - Can be run using TAEF. | TaefAudioHidScenarioTests.dll |
+| BatteryTests | - Test binary for Bluetooth battery tests.</br> - Can be run using TAEF. | TaefBatteryTests.dll |
+| TraduciCmd | - Command line tool for querying and changing the state of the Traduci, including debug commands.</br> - Used for firmware update to Traduci hardware. | TraduciCmd.exe |
+| BTETLParse | - Command line tool for extracting HCI traces from supported ETL files. | BTETLParse.exe |
+| BTVS | - Graphical tool for streaming live HCI traces in supported formats (such as Ellisys, Frontline, and Wireshark).</br> - Only available for the x86 architecture. | btvs.exe |
