@@ -37,6 +37,8 @@ When using the BM-64-EVB, red and blue LEDs will flash in patterns for indicting
 
 To capture the Bluetooth logs, follow the instructions for the [busiotools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
+To parse the Bluetooth logs, follow the instructions for the [BTETLParse tool](testing-BTP-tools-btetlparse.md).
+
 ## Known issues
 
 - BM64 EVB has the following 4 known test failures:

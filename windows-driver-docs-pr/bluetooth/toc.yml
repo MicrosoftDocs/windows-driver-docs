@@ -128,5 +128,12 @@
         href: testing-BTP-tests-audio-hid.md
       - name: "Testing Bluetooth Battery"
         href: testing-BTP-tests-battery.md
+    - name: "BTP Diagnostic Tools"
+      items:
+      - name: "Bluetooth ETL Parse"
+        href: testing-BTP-tools-btetlparse.md
+      - name: "Bluetooth Virtual Sniffer"
+        href: testing-BTP-tools-btvs.md
 - name: "Bluetooth Radio Reset and Recovery"
   href: bluetooth-radio-error-recovery.md
+  
