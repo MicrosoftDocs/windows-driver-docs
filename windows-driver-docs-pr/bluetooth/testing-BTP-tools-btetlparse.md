@@ -12,13 +12,14 @@ The Bluetooth ETL parse tool extracts HCI traces from ETL files containing compr
 This tool is meant for parsing ETL files collected using the [Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md).
 
 [Tracefmt](https://docs.microsoft.com/windows-hardware/drivers/devtest/tracefmt)
-is a way to parse additional logs from the ETL file. 
+is a way to parse additional logs from the ETL file.
 
-## Command Line Options
-```
+## ETL parse command line options
+
+```console
 Usage: btetlparse [-cfa <output_cfa_filename>] [-hci <output_hci_filename>]
 [-pcap <output_pcap_filename>] [-pcapng <output_pcapng_filename>]
-[<input_etl_filename>] [<additional_input_etl_filenames>...]s
+[<input_etl_filename>] [<additional_input_etl_filenames>]
 
     -cfa through -pcapng flags parse the etl file into different file types.
 
@@ -36,7 +37,8 @@ Usage: btetlparse [-cfa <output_cfa_filename>] [-hci <output_hci_filename>]
     <additional_input_etl_filenames>    BTETLParse can parse multiple ETL files at a time.
 ```
 
-## Usage example
+## ETL parse Usage example
+
 Move the ETL file collected by [Bus tools for Windows Repo on GitHub](https://github.com/microsoft/busiotools/blob/master/bluetooth/tracing/readme.md) to the same folder as BTETLParse within the extracted BTP package. Then run:
 
 - `btetlparse -cfa BthTracing.cfa -hci BthTracing.hci -pcap BthTracing.pcap -pcapng BthTracing.pcapng BthTracing.etl` from a command prompt/PowerShell console
