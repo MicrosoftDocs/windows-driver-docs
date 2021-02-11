@@ -2,7 +2,7 @@
 title: Debug Drivers - Step-by-Step Lab (Sysvad Kernel Mode)
 description: This lab provides hands-on exercises that demonstrate how to debug the Sysvad audio kernel-mode device driver.
 keywords: ["debug lab", "step-by-step", "SYSVAD"]
-ms.date: 07/20/2020
+ms.date: 01/20/2021
 ms.localizationpriority: medium
 ---
 
@@ -54,11 +54,9 @@ This lab walk you through the process of debugging a kernel-mode driver. The exe
 
 ## <span id="echo_driver_lab"></span>Echo driver lab
 
-
 The Echo driver is a simpler driver then the Sysvad audio driver. If you are new to WinDbg, you may want to consider first completing the [Debug Universal Drivers - Step-by-Step Lab (Echo kernel mode)](debug-universal-drivers---step-by-step-lab--echo-kernel-mode-.md). This lab reuses the setup directions from that lab, so if you have completed that lab you can skip sections 1 and 2 here.
 
 ## <span id="connectto"></span>Section 1: Connect to a kernel-mode WinDbg session
-
 
 *In Section 1, you will configure network debugging on the host and target system.*
 
@@ -283,7 +281,7 @@ fffff801`094d9000 fffff801`09561000   CI         (export symbols)       CI.dll
 
 **Note**  Output that has been omitted is indicated with "… " in this lab.
 
- 
+
 
 Because we have yet to set the symbol path and loaded symbols, limited information is available in the debugger.
 
@@ -300,7 +298,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     You can use a browser to view the Sysvad sample and Readme.md file here:
 
-    [https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad](https://github.com/Microsoft/Windows-driver-samples/blob/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf/ReadMe.md)
+    [https://github.com/Microsoft/Windows-driver-samples/tree/master/audio/sysvad](https://github.com/microsoft/Windows-driver-samples/tree/master/audio/sysvad)
 
     ![github repo showing general folder and download zip button](images/sysvad-lab-github.png)
 
@@ -320,13 +318,13 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     In Visual Studio, select **File** &gt; **Open** &gt; **Project/Solution...** and navigate to the folder that contains the extracted files (for example, *C:\\WDK\_Samples\\Sysvad*). Double-click the *Syvad* solution file.
 
-    In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has a number of projects and what is included in the sample changes from time to time. 
+    In Visual Studio locate the Solution Explorer. (If this is not already open, choose **Solution Explorer** from the **View** menu.) In Solution Explorer, you can see one solution that has a number of projects. 
         
-    ![visual studio with the device.c file loaded from the sysvad project](images/sysvad-lab-visual-studio-solution.png)
+    ![visual studio with the adapter.cpp file loaded from the sysvad project](images/sysvad-lab-visual-studio-solution.png)
 
 3.  **Set the sample's configuration and platform**
 
-    In Solution Explorer, select and hold (or right-click) **Solution 'sysvad' (7 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the four projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
+    In Solution Explorer, select and hold (or right-click) **Solution 'sysvad' (7 of 7 projects)**, and choose **Configuration Manager**. Make sure that the configuration and platform settings are the same for the four projects. By default, the configuration is set to "Win10 Debug", and the platform is set to "Win64" for all the projects. If you make any configuration and/or platform changes for one project, you must make the same changes for the remaining three projects.
 
     **Note**  This lab assumes that 64 bit Windows is being used. If you are using 32 bit Windows, build the driver for 32 bit.
 
@@ -348,7 +346,7 @@ To download and build the Sysvad sample audio driver, perform the following step
 
     Navigate to the folder that contains the built files for the TabletAudioSample driver:
 
-    *C:\\WDK\_Samples\\Sysvad\\TabletAudioSample\\x64\\Debug*. The folder will contain the TabletAudioSample .SYS driver, symbol pdp file and the inf file. You will also need to locate the SwapAPO, and KeywordDetectorContosoAdapter dlls and symbol files.
+    *C:\\WDK\_Samples\\Sysvad\\TabletAudioSample\\x64\\Debug*. The folder will contain the TabletAudioSample .SYS driver, symbol pdp file and the inf file. You will also need to locate the DelayAPO, KWSApo and KeywordDetectorContosoAdapter dlls and symbol files.
 
     To install the driver, you will need the following files.
 
@@ -357,10 +355,12 @@ To download and build the Sysvad sample audio driver, perform the following step
     | TabletAudioSample.sys             | The driver file.                                                                  |
     | TabletAudioSample.pdb             | The driver symbol file.                                                           |
     | tabletaudiosample.inf             | An information (INF) file that contains information needed to install the driver. |
-    | KeywordDetectorContosoAdapter.dl  | A sample keyword detector.                                                        |
+    | KeywordDetectorContosoAdapter.dll | A sample keyword detector.                                                        |
     | KeywordDetectorContosoAdapter.pdb | The sample keyword detector symbol file.                                          |
-    | lSwapAPO.dll                      | A sample driver extension for a UI to manage APOs.                                |
-    | lSwapAPO.pdb                      | The APO UI symbol file.                                                           |
+    | DelayAPO.dll                      | A sample delay APO.                                                               |
+    | DelayAPO.pdb                      | The delay APO symbol file.                                                        |
+    | KWSApo.dll                        | A sample keyword spotter APO.                                                     |
+    | KWSApo.pdb                        | The keyword spotter symbol file.                                                  |
     | TabletAudioSample.cer             | The TabletAudioSample certificate file.                                           |
 
      

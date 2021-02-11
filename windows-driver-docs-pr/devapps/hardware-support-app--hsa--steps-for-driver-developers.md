@@ -95,6 +95,40 @@ Replace `zzzzzzzz-zzzz-zzzz-zzzz-zzzzzzzzzzzz` with the GUID for the interface t
 
 For an example of the driver code shown immediately above, see the [Driver package installation toolkit for universal drivers](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/DCHU).
 
+To set the property in kernel mode, use code like the following:
+
+```cpp
+#if defined(NTDDI_WIN10_RS2) && (NTDDI_VERSION >= NTDDI_WIN10_RS2)
+
+//
+// Adding Custom Capability:
+//
+// Adds a custom capability to device interface instance that allows a Windows
+// Store device app to access this interface using Windows.Devices.Custom namespace.
+// This capability can be defined either in INF or here as shown below. In order
+// to define it from the INF, uncomment the section "OsrUsb Interface installation"
+// from the INF and remove the block of code below.
+//
+
+static const wchar_t customCapabilities[] = L"microsoft.hsaTestCustomCapability_q536wpkpf5cy2\0";
+
+status = g_pIoSetDeviceInterfacePropertyData(&symbolicLinkName,
+                                              &DEVPKEY_DeviceInterface_UnrestrictedAppCapabilities,
+                                              0,
+                                              0,
+                                              DEVPROP_TYPE_STRING_LIST,
+                                              sizeof(customCapabilities),
+                                              (PVOID)&customCapabilities);
+
+if (!NT_SUCCESS(status)) {
+    TraceEvents(TRACE_LEVEL_ERROR, DBG_PNP,
+                "IoSetDeviceInterfacePropertyData failed to set custom capability property  %!STATUS!\n", status);
+    goto Error;
+}
+
+#endif
+```
+
 ## Preparing the Signed Custom Capability Descriptor (SCCD) file
 
 A Signed Custom Capability Descriptor (SCCD) file is a signed XML file authorizing the use of one or more custom capabilities.  The owner of the driver or RPC endpoint grants the custom capability to the app developer by providing this file.

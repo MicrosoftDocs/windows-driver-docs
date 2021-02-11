@@ -2,7 +2,7 @@
 title: Debug Windows Drivers - Step-by-Step Lab (Echo Kernel Mode)
 description: This lab introduces the WinDbg kernel debugger. WinDbg is used to debug the echo kernel mode sample driver code.
 keywords: ["debug lab", "step-by-step", "ECHO"]
-ms.date: 07/20/2020
+ms.date: 01/20/2021
 ms.localizationpriority: medium
 ---
 
@@ -331,11 +331,11 @@ To download and build the Echo sample audio driver, perform the following steps.
 
     You can use a browser to view the echo sample in GitHub here:
 
-    [https://github.com/Microsoft/Windows-driver-samples/tree/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf](https://github.com/Microsoft/Windows-driver-samples/blob/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf/ReadMe.md)
+    [https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/echo/kmdf/)
 
     You can read about the sample here:
 
-    <https://github.com/Microsoft/Windows-driver-samples/blob/97cf5197cf5b882b2c689d8dc2b555f2edf8f418/general/echo/kmdf/ReadMe.md>
+    <https://github.com/microsoft/Windows-driver-samples/blob/master/general/echo/kmdf/README.md>
 
     You can browse all of the Windows driver samples here:
 

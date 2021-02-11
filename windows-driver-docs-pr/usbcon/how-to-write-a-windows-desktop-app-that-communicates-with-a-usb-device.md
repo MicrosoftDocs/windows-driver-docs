@@ -147,7 +147,7 @@ The preceding instructions debug the application by using **Debugging Tools for 
 5. On the host computer, in Visual Studio, right-click the **USB Application1 Package** project, and select **Unload Project**.
 6. Select and hold (or right-click) the **USB Application1** project, in project properties expand the **Configuration Properties** node and select **Debugging**.
 7. Change **Debugger to launch** to **Remote Windows Debugger**.
-8. Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](/visualstudio/debugger/remote-debugging?view=vs-2015). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
+8. Change the project settings to run the executable on a remote computer by following the instructions given in [Remote Debugging of a Project Built Locally](/visualstudio/debugger/remote-debugging?view=vs-2015&preserve-view=true). Make sure that **Working Directory** and **Remote Command** properties reflect the folder on the target computer.
 9. To debug the application, in the **Build** menu, select **Start Debugging**, or press **F5.**
 
 - **Single computer setup:**

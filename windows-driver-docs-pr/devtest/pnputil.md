@@ -23,6 +23,3 @@ PnPUtil is included in every version of Windows, starting with Windows Vista (in
 
 - Open a **Command Prompt** window (**Run as administrator**).
 - Type `pnputil /?` to view command options. See [**PnPUtil Command Syntax**](pnputil-command-syntax.md) for more information.
-
-> [!NOTE]
-> PnPUtil is supported on Windows Vista and later versions of Windows. PnPUtil is not available for Windows XP, however, you can use the [Driver Install Frameworks (DIFx)](../install/difx-guidelines.md) tools to create and customize the installation of driver packages.

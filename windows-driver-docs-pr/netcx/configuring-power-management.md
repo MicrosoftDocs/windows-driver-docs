@@ -16,7 +16,7 @@ A typical networking device supports 3 common power management features:
 - The networking device can enter a lower-power (Dx) state when instructed by the OS.
   - The client driver registers optional WDF event callbacks to receive notification of power transitions, as described in [Supporting PnP and Power Management in Function Drivers](../wdf/supporting-pnp-and-power-management-in-function-drivers.md).
 
-  - If the network device can enter its Dx state while the system remains in its working (S0) state then the client driver should support idle power-down. See [Supporting Idle Power-Down](../wdf/supporting-idle-power-down.md).
+  - If the network device can enter its Dx state while the system remains in its working (S0) state then the client driver should support idle power-down. See [Supporting Idle Power-Down](../wdf/supporting-idle-power-down.md). Besides the standard [User Control of Device Idle and Wake Behavior](../wdf/user-control-of-device-idle-and-wake-behavior.md) available to all WDF devices, NetAdapterCx allows additional network specific idle control through **\*IdleRestriction** as defined in [Standardized INF Keywords for Power Management](../network/standardized-inf-keywords-for-power-management.md).
 
 - When the networking device is in the Dx state, it can trigger a wake-up signal if a pre-configured wake condition has occurred.
   - For details on how a WDF device can wake the system from a system-wide low-power state see [Supporting System Wake-Up](../wdf/supporting-system-wake-up.md).
