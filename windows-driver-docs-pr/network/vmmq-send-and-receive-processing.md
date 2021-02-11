@@ -20,9 +20,9 @@ On the receive path, when a packet arrives at a NIC that supports VMMQ the NIC:
 
 1. Uses the [RSS parameters](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_scale_parameters) of the VPort (the secret key, hash function, and hash type) to calculate the RSS hash value of the packet. 
 
-1. Uses the hash value to index the indirection table associated with the VPort. The values in the indirection table are used to assign the received data to a CPU.
+1. Uses the hash value to index the indirection table associated with the VPort. The values in the indirection table are used to assign the received data to a processor.
 
-1. Interrupts the target CPU and the received packet is indicated to the host network stack. 
+1. Interrupts the target processor and the received packet is indicated to the host network stack. 
 
 When indicating a received NBL, the miniport adapter sets the VPort ID and RSS related out-of-band (OOB) fields to the appropriate values.
 

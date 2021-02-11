@@ -16,7 +16,7 @@ VMMQ efficiently distributes network traffic within the NIC hardware. You can as
 
 VMMQ is available for the VPorts exposed in the parent partition regardless of whether the NIC is operating in [SR-IOV](overview-of-single-root-i-o-virtualization--sr-iov-.md) or [Virtual Machine Queue (VMQ)](virtual-machine-queue--vmq-.md) mode.
 
-## Expected Feature Interactions
+## Expected feature interactions
 
 - [Network Virtualization using Generic Routing Encapsulation (NVGRE)](network-virtualization-using-generic-routing-encapsulation--nvgre--task-offload.md) and [Virtual Extensive Local Area Network (VXLAN)](/windows-server/networking/sdn/technologies/hyper-v-network-virtualization/whats-new-hyperv-network-virtualization-windows-server#VXLAN): The NIC will calculate the hash for spreading receive queues based on the inner headers of the packets.
 
