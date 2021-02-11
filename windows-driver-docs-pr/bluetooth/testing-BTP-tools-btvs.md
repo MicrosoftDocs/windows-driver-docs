@@ -10,7 +10,8 @@ ms.localizationpriority: medium
 The Bluetooth Virtual Sniffer allows the user to view live HCI traces in the
 Frontline Protocol Analysis System, in the Ellisys Bluetooth Analyzer, or in Wireshark.
 
-**Note:** Wireshark is recommended.
+[!NOTE]
+> Wireshark is recommended.
 
 ## Command Line Options
 ```

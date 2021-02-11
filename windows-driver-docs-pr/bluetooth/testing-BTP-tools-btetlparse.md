@@ -41,4 +41,4 @@ Move the ETL file collected by [Bus tools for Windows Repo on GitHub](https://gi
 
 - `btetlparse -cfa BthTracing.cfa -hci BthTracing.hci -pcap BthTracing.pcap -pcapng BthTracing.pcapng BthTracing.etl` from a command prompt/PowerShell console
 
-This command parses BthTracing.etl into all available filetypes. See Command Line Options above for descriptions of each file type.
+This command parses `BthTracing.etl` into all available filetypes. See Command Line Options above for descriptions of each file type.
