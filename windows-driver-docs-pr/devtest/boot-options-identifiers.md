@@ -129,7 +129,7 @@ inherit                 {globalsettings}
 
 ```
 
-Use the bcdedit /all command to see all of the settings.  
+Use the bcdedit /enum all command to see all of the settings.  
 
 ```console
 C:\>bcdedit /enum all
