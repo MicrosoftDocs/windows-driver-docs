@@ -47,7 +47,7 @@ To create a driver package that follows DCH design principles, follow these step
 
 *  Create an INF file for your driver:
     1.  Review the [list of INF sections and directives that are valid in Windows Driver packages](../install/using-a-universal-inf-file.md#which-inf-sections-are-invalid-in-a-universal-inf-file).
-    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file follows Declarative (D) requirements for Windows Drivers.  It should pass the "w" flag.
+    2.  Use the [InfVerif](../devtest/infverif.md) tool to verify that your driver package's INF file follows Declarative (D) requirements for Windows Drivers.  It should pass `infverif /w`.
 *  Ensure that any optional component packages that do not contain core driver functionality are separated from the base driver package.    
 *  Hardware support applications associated with your driver package must be distributed through the Microsoft Store.
 
