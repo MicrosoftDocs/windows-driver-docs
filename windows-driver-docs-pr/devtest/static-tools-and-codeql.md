@@ -87,7 +87,7 @@ C:\codeql-home\>git clone https://github.com/microsoft/Windows-Driver-Developer-
 ```
 
 > [!NOTE]
-> Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.
+> Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
 This page assumes a Windows development environment and that the repository will be installed under *C:\codeql-home*.
 
