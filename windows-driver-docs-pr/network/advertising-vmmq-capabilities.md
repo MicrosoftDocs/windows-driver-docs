@@ -50,7 +50,7 @@ Miniport drivers advertise the NIC's VMMQ capability through the [**NDIS\_NIC\_S
 
     - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_HASH\_KEY\_SUPPORTED to **one** if the NIC supports setting a different hash secret key per PF VPort.
 
-    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SIZE\_RESTRICTED to **one** if the NIC has a limitation on indirection table size for PF VPorts. This flag prevents VMMQ users from performing fine-grained queue steering.
+    - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SIZE\_RESTRICTED to **one** if the NIC has a limitation on indirection table size for PF VPorts. This flag forces the issuer of an RSS OID to use a per-PF VPort indirection table size equal to the number of VPort queues rounded up to the next power of two. This flag can be combined with the NDIS_NIC_SWITCH_CAPS_ASYMMETRIC_QUEUE_PAIRS_FOR_NONDEFAULT_VPORT_SUPPORTED flag (different PF VPorts can have different numbers of queues). This flag prevents VMMQ users from performing fine-grained queue steering.
 
 1. Set **MaxNumVPorts** to specify the maximum number of VPorts.
 
