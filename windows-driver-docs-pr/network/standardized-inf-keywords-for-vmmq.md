@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 
 # Standardized INF keywords for VMMQ
 
-The **\*RssOnHostVPorts** standardized INF keyword is defined to enable or disable support for the network adapter [Virtual Machine Multiple Queues (VMMQ)](ADD LINK) feature.
+The **\*RssOnHostVPorts** standardized INF keyword is defined to enable or disable support for the network adapter [Virtual Machine Multiple Queues (VMMQ)](overview-of-virtual-machine-multiple-queues.md) feature.
 
 The **\*RssOnHostVPorts** INF keyword is an enumeration keyword. Enumeration standardized INF keywords have the following attributes:
 

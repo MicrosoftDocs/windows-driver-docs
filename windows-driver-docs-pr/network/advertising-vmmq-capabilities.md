@@ -8,12 +8,12 @@ ms.localizationpriority: medium
 
 # Advertising VMMQ capabilities
 
-Miniport drivers register the Virtual Machine Multiple Queues (VMMQ) capability of a NIC during miniport adapter initialization.
+Miniport drivers register the [Virtual Machine Multiple Queues (VMMQ)](overview-of-virtual-machine-multiple-queues.md) capability of a NIC during miniport adapter initialization.
 
 > [!NOTE]
 > If the NIC supports VMMQ, the default VPort and at least one non-default VPort must support VMMQ.
 
-During initialization, the miniport driver must examine the **\*RssOnHostVPorts** INF keyword in order to determine if it should enable the VMMQ feature on the NIC. For more information on handling RSS keywords for VMMQ, see [Standardized INF keywords for VMMQ](ADD LINK). 
+During initialization, the miniport driver must examine the **\*RssOnHostVPorts** INF keyword in order to determine if it should enable the VMMQ feature on the NIC. For more information on handling RSS keywords for VMMQ, see [Standardized INF keywords for VMMQ](standardized-inf-keywords-for-vmmq.md). 
 
 Additionally, the stack can only activate VMMQ on the NIC if the miniport adapter supports creating a NIC switch. NDIS can create a NIC switch on the miniport adapter when either the **\*SriovPreferred** INF keyword is set to **one** or **\*SriovPreferred** is set to **zero** and **\*RssOrVmqPreference** is set to **one**. For more information, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md) and [Standardized INF Keywords for VMQ](standardized-inf-keywords-for-vmq.md). 
 
@@ -36,7 +36,7 @@ Miniport drivers advertise the NIC's VMMQ capability through the [**NDIS\_NIC\_S
     - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_ON\_PF\_VPORTS\_SUPPORTED to **one** to indicate that the NIC supports VMMQ for PF VPorts.
     
     > [!NOTE]
-    > If any of the following five per PF VPort flags are not set, higher level drivers will use the values that the miniport driver set when it specified the RSS parameters of the PF VPorts (including the default VPort).
+    > If any of the following four per PF VPort flags are not set, higher level drivers will use the values that are specified when the RSS parameters of the PF VPorts are set (including the default VPort). For more information see [Enabling, disabling, and updating VMMQ on a VPort](updating-vmmq-on-a-vport.md).
 
     - Set NDIS\_NIC\_SWITCH\_CAPS\_RSS\_PER\_PF\_VPORT\_INDIRECTION\_TABLE\_SUPPORTED to **one** to indicate that the NIC is able to maintain per PF VPort indirection tables. This flag must be set.
     
