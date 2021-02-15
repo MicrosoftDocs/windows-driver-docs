@@ -1,7 +1,7 @@
 ---
 title: Loading Test Signed Code
 description: Describes how to enable loading of test signed drivers using the TESTSIGNING option with BCDEdit tool
-ms.date: 04/20/2017
+ms.date: 02/15/2021
 ms.localizationpriority: medium
 ---
 
@@ -25,12 +25,11 @@ To use BCDEdit, you must be a member of the Administrators group on the system a
 
 Run BCDEdit command lines to enable or disable the loading of test-signed code. For a change to take effect, whether enabling or disabling the option, you must restart the computer after changing the configuration.
 
-> [!Note]
-> Before setting BCDEdit options you might need to disable or suspend BitLocker and Secure Boot on the computer.
-
 To enable test-signed code, use the following BCDEdit command line:
 
 ```cmd
+:: If this command results in "The value is protected by Secure Boot policy and cannot be modified or deleted"
+:: Then reboot the PC, go into BIOS settings, and disable Secure Boot. BitLocker may also affect your ability to modify this setting.
 Bcdedit.exe -set TESTSIGNING ON
 ```
 
