@@ -439,5 +439,16 @@ SET ERRORLEVEL = 0
 
 7. Review the SARIF file results and work to remediate any issues that are identified. For more information, see [View Analysis](#view-analysis) earlier in this topic.
 
+## Frequently Asked Questions (FAQ's)
+
+### When?
+
+### Why?
+
+### License?
+
+### How to Pass HLK?
+
+### False Positives?
 
 
