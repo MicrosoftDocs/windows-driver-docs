@@ -24,7 +24,7 @@ For more information about creating and working with Time Travel trace files, se
 The timelines window can display the following events:
 
 - Exceptions (you can further filter on a specific exception code)
-- Breakpoints (timelines for breakpoints are also automatically added when adding a breakpoint)
+- Breakpoints
 - Function Calls (search in the form of module!function)
 - Memory Accesses (read / write / execute between two memory addresses)
 
@@ -46,7 +46,7 @@ You can also add a new timeline for a specific exception type.
 
 ### Breakpoints
 
-Timelines for breakpoints are automatically added to the timeline when a breakpoint is added. This can be done for example using the [bp Set Breakpoint command](bp--bu--bm--set-breakpoint-.md). When you hover over a breakpoint the address and the instruction pointer associated with the breakpoint is displayed.
+After adding a breakpoint, you can display the positions of when that breakpoint is hit on a timeline. This can be done for example using the [bp Set Breakpoint command](bp--bu--bm--set-breakpoint-.md). When you hover over a breakpoint the address and the instruction pointer associated with the breakpoint is displayed.
 
 ![Timeline in debugger showing about 30 breakpoint dots](images/windbgx-timeline-breakpoints.png)
 
