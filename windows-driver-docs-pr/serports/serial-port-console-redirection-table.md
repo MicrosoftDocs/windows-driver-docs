@@ -25,7 +25,7 @@ This table must be located in system memory with other ACPI tables, and it must 
 | **Field** | **Byte Length** | **Byte Offset** | **Description** |
 |-----------|-----------------|-----------------|-----------------|
 | Header |  |  |  |
-| Signature | 4 | 0 | ‘SPCR’. Signature for the Serial Port Console Redirection Table. |
+| Signature | 4 | 0 | 'SPCR'. Signature for the Serial Port Console Redirection Table. |
 | Length | 4 | 4 | Length, in bytes, of the entire Serial Port Console Redirection Table. |
 | Revision | 1 | 8 | 2 |
 | Checksum | 1 | 9 | Entire table must sum to zero. |
