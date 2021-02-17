@@ -22,7 +22,7 @@ To resolve this issue, ensure the following:
 - The **HID descriptor address** (for the device) in the BIOS must be accurate.
 - The GPIO Interrupt must be correctly identified and marked as **Exclusive, Level, ActiveLow**.
 
-Refer to Section 13 of the [HID I2C Protocol Spec](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn642101(v=vs.85)) for more detail.
+Refer to Section 13 of the [HID I2C Protocol Spec](/previous-versions/windows/hardware/design/dn642101(v=vs.85)) for more detail.
 
 ## Invalid report descriptor
 

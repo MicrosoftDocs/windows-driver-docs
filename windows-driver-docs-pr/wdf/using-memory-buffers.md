@@ -69,11 +69,9 @@ A driver that requires local, internal buffer space that it will not pass to the
 However, drivers can also use memory objects for local buffers. An advantage to using memory buffers, instead of calling [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag), is that the framework automatically deletes memory objects and their buffers when each object's parent object is deleted.
 
 >[!IMPORTANT]
-> The ExAllocatePool DDIs discussed in this topic have been deprecated in Windows 10, version 2004 and have been replaced by [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3). For more information, see [Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3](/windows-hardware/drivers/kernel/updating-deprecated-exallocatepool-calls).
+> The ExAllocatePool DDIs discussed in this topic have been deprecated in Windows 10, version 2004 and have been replaced by [ExAllocatePool2](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool2) and [ExAllocatePool3](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool3). For more information, see [Updating deprecated ExAllocatePool calls to ExAllocatePool2 and ExAllocatePool3](../kernel/updating-deprecated-exallocatepool-calls.md).
 
 ### Aligning Buffers
 
 Your driver can use the [**WDF\_ALIGN\_SIZE\_UP**](/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_align_size_up) or [**WDF\_ALIGN\_SIZE\_DOWN**](/windows-hardware/drivers/ddi/wdfcore/nf-wdfcore-wdf_align_size_down) function to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
-
- 
 
