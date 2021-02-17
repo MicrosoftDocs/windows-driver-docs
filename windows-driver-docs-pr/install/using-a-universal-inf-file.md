@@ -13,7 +13,8 @@ A universal INF file installs predictably, with the same result each time. The r
 
 A driver package with a universal INF file can be configured in advance and added to an offline system.
 
-To test if your INF is universal, use `infverif /u`. The `/u` option tests the "D" (Declarative) requirement of [DCH Design Principles and Best Practices](../develop/dch-principles-best-practices.md). 
+To test if your INF is universal, use `infverif /u`.
+ 
 A [Windows Driver](../develop/getting-started-with-windows-drivers.md) must pass `infverif /w`, which tests `/u` as well as [Driver Package Isolation](../develop/driver-isolation.md).
 
 For a list of InfVerif options, see [Running InfVerif from the command line](../devtest/running-infverif-from-the-command-line.md).
