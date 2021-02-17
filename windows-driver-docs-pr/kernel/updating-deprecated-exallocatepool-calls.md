@@ -45,7 +45,7 @@ RtlZeroMemory(Allocation, 100);
 PVOID Allocation = ExAllocatePool2(POOL_FLAG_PAGED, 100, 'abcd');
 ```
 
-The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument. Update any associated code to use the new [POOL_FLAGS](/windows-hardware/drivers/kernel/pool_flags) argument.
+The old pool allocation APIs accept a [POOL_TYPE](/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type) argument, but the new allocation APIs accept a [POOL_FLAGS](./pool_flags.md) argument. Update any associated code to use the new [POOL_FLAGS](./pool_flags.md) argument.
 
 ### ExAllocatePoolWithQuota/ExAllocatePoolWithQuotaTag
 
@@ -164,7 +164,7 @@ PVOID Allocation = ExAllocatePoolZero(PagedPool, 100, 'abcd');
 
 ## Driver verifier UnSafeAllocatePool rules
 
-The driver verifier [UnSafeAllocatePool](/windows-hardware/drivers/devtest/kmdf-unsafeallocatepool) rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
+The driver verifier [UnSafeAllocatePool](../devtest/kmdf-unsafeallocatepool.md) rule is an important security rule that checks that a driver is not using deprecated DDIs to allocate memory. This rule is available in preview WDK builds 20236 and above.
 
 ## See Also
 

@@ -89,5 +89,5 @@ If the driver is not the PPO, the framework takes no further actions because onl
 [Plug and Play - Architecture and Driver Support](/previous-versions/windows/hardware/design/dn614609(v=vs.85))  
 [PnP and Power Management in KMDF Drivers](../wdf/index.md)  
 [When WDF Drivers Can Use Power-Managed I/O Queues](/previous-versions/windows/hardware/design/dn614013(v=vs.85))  
-[Writing USB Drivers with WDF](/windows-hardware/drivers/wdf/working-with-usb-devices)  
+[Writing USB Drivers with WDF](../wdf/working-with-usb-devices.md)  
 [Overview of implementing power management in USB client drivers](./usb-power-management.md)
