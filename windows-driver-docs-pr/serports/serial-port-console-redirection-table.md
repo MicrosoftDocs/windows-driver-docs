@@ -46,8 +46,8 @@ This table must be located in system memory with other ACPI tables, and it must 
 | Flow Control | 1 | 61 | <ul><li>0 = Hardware Flow Control</li><li>1-255 = Reserved</li></ul> |
 | Terminal Type | 1 | 62 | The terminal protocol the BIOS was using for console redirection: <ul><li>0 = VT100</li><li>1 = Extended VT100 (VT100+)</li><li>2 = VT-UTF8</li><li>3 = ANSI<li>4-255 = Reserved </li></ul> |
 | Language | 1 | 63 | Language which the BIOS was redirecting. Must be 0. |
-| PCI Device ID | 2 | 64 | Designates device ID of a PCI device that contains a UART to be used as a headless port. Must be 0xFFFF if it is not a PCI device. |
-| PCI Vendor ID | 2 | 66 | Designates vendor ID of a PCI device that contains a UART to be used as a headless port. Must be 0xFFFF if it is not a PCI device. |
+| PCI Device ID | 2 | 64 | Designates the Device ID of a PCI device that contains a UART to be used as a headless port.<p>Must be 0xFFFF if it is not a PCI device.</p> |
+| PCI Vendor ID | 2 | 66 | Designates the Vendor ID of a PCI device that contains a UART to be used as a headless port.<p>Must be 0xFFFF if it is not a PCI device.</p> |
 | PCI Bus Number | 1 | 68 | PCI Bus Number if table describes a PCI device.<p>Must be 0x00 if it is not a PCI device.</p> |
 | PCI Device Number | 1 | 69 | PCI Device Number if table describes a PCI device.<p>Must be 0x00 if it is not a PCI device.</p> |
 | PCI Function Number | 1 | 70 | PCI Function Number if table describes a PCI device.<p>Must be 0x00 if it is not a PCI device.</p> |
