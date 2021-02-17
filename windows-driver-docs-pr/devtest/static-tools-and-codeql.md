@@ -363,7 +363,6 @@ The subset of queries below are currently deemed as **"Must-Fix"** for WHCP cert
 | [cpp/incorrect-string-type-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-incorrect-string-type-conversion/)   | *cpp/ql/src/Security/CWE/CWE-704/WcharCharConversion.ql* | 
 | [cpp/conditionally-uninitialized-variable](https://codeql.github.com/codeql-standard-libraries/cpp/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql/module.ConditionallyUninitializedVariable.html)   | *cpp/ql/src/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql.* | 
 | [cpp/comparison-with-wider-type](https://codeql.github.com/codeql-query-help/cpp/cpp-comparison-with-wider-type/)   | *cpp/ql/src/Security/CWE/CWE-190/ComparisonWithWiderType.ql*  |
-| [cpp/uninitialized-local](https://codeql.github.com/codeql-standard-libraries/cpp/Likely%20Bugs/Memory%20Management/UninitializedLocal.ql/module.UninitializedLocal.html)   | *cpp/ql/src/Likely Bugs/Memory Management/UninitializedLocal.ql* |
 | [cpp/windows/wdk/deprecated-api](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-wdkdeprecatedapi)   | *Windows-Driver-Developer-Supplemental-Tools/codeql/windows-drivers/queries/Windows/wdk/wdk-deprecated-api.ql* |
 
 These queries are a part of the *windows_driver_mustfix.qls* query suite in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).
