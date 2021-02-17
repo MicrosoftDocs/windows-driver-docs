@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 
 ## Overview
 
-This [CodeQL query](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql) has lower precision than the high-precision [UseAfterFree](https://docs.microsoft.com/windows-hardware/drivers/devtest/codeql-windows-driver-useafterfree) CodeQL query. It detects some additional scenarios, but also has a higher rate of false positives.
+This [CodeQL query](./static-tools-and-codeql.md) has lower precision than the high-precision [UseAfterFree](./codeql-windows-driver-useafterfree.md) CodeQL query. It detects some additional scenarios, but also has a higher rate of false positives.
 
 A [UseAfterFree defect](http://cwe.mitre.org/data/definitions/416.html) occurs when an allocated memory block is used after it has been freed (also known as a "dangling pointer").
 
@@ -69,5 +69,4 @@ if (Status == 0 && pSomePointer != NULL)
 
 ## Additional Details
 
-This query can be found in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  See the [CodeQL and the Static Tools Logo Test](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-tools-and-codeql) page for details on how Windows Driver developers can download and run CodeQL.
-
+This query can be found in the [Microsoft GitHub CodeQL repository](https://github.com/microsoft/Windows-Driver-Developer-Supplemental-Tools).  See the [CodeQL and the Static Tools Logo Test](./static-tools-and-codeql.md) page for details on how Windows Driver developers can download and run CodeQL.
