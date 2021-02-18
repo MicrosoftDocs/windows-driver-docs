@@ -9,7 +9,9 @@ ms.localizationpriority: medium
 # Using NTSTATUS Values
 
 
-
+> [!NOTE]
+> If you are looking for a table of mappings of NTSTATUS values to the corresponding Win32 error codes, see [NTSTATUS to Win32 Error Code Mappings](https://www.osr.com/blog/2020/04/23/ntstatus-to-win32-error-code-mappings/).
+> 
 
 
 Many kernel-mode [standard driver routines](./introduction-to-standard-driver-routines.md) and driver support routines use the NTSTATUS type for return values. Additionally, drivers provide an NTSTATUS-typed value in an IRP's [**IO\_STATUS\_BLOCK**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block) structure when [completing IRPs](completing-irps.md). The NTSTATUS type is defined in Ntdef.h, and system-supplied status codes are defined in Ntstatus.h. (Vendors can also define private status codes, although they rarely need to. For more information, see [Defining New NTSTATUS Values](defining-new-ntstatus-values.md).)
