@@ -324,9 +324,9 @@ This page will be updated to indicate which queries are officially deemed **"Mus
 
 The queries that Microsoft recommends running on *all* driver source code are:
 
-| ID                       | Location   |
-| ------------------------ | ---------- |
-| [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* |
+| ID                       | Location   | Common Weakness Enumeration   |
+| ------------------------ | ---------- | ----------------------------- |
+| [cpp/too-few-arguments](https://codeql.github.com/codeql-query-help/cpp/cpp-too-few-arguments/)   | *cpp/ql/src/Likely Bugs/Underspecified Functions/TooFewArguments.ql* | N/A |
 | [cpp/bad-addition-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-bad-addition-overflow-check/)   | *cpp/ql/src/Likely Bugs/Arithmetic/BadAdditionOverflowCheck.ql* |
 | [cpp/pointer-overflow-check](https://codeql.github.com/codeql-query-help/cpp/cpp-pointer-overflow-check/)   | *cpp/ql/src/Likely Bugs/Memory Management/PointerOverflow.ql* | 
 | [cpp/hresult-boolean-conversion](https://codeql.github.com/codeql-query-help/cpp/cpp-hresult-boolean-conversion/)   | *cpp/ql/src/Security/CWE/CWE-253/HResultBooleanConversion.ql* | 
@@ -446,7 +446,7 @@ SET ERRORLEVEL = 0
 
 ### When?
 
-This will be required for WHCP 2021
+This will be required for WHCP 2021.  See WHCP requirements for further details.
 
 ### Why?
 
