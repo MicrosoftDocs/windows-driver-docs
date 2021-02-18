@@ -380,7 +380,8 @@ The SARIF file contains a **result** section for each query that was run and inc
 
 In order to review the results, install the [Microsoft SARIF Viewer for Visual Studio](https://marketplace.visualstudio.com/items?itemName=WDGIS.MicrosoftSarifViewer) and follow the instructions on that page.  Alternatively, you can install the [SARIF extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-SarifVSCode.sarif-viewer).
 
-**insert note about ignoring warning vs. error metadata**
+> [!NOTE]
+> It is important to note that the classification of "error", "warning", or "problem" should be ignored for drivers certifying with the Static Tools Logo Test.  A driver that ha a defect from a query that is marked "Must-Fix" will not pass the Static Tools Logo Test regardless of the query classification in the raw query file (ie. "warning")
 
 ## Driver Verification Log (DVL) Consumption of SARIF Output
 
