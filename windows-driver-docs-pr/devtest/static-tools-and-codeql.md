@@ -446,15 +446,28 @@ SET ERRORLEVEL = 0
 
 ### When?
 
+This will be required for WHCP 2021
+
 ### Why?
 
 Main reason:
 
+1. Security is incredibly important.
+2. CodeQL is used at Microsoft extensively
+3. CodeQL queries are actively developed by security engineers at Microsoft.
+4. CodeQL queries are open-source, can leverage the extensive open-source security community
+
 ### License?
+
+Usage of CodeQL for the purpose of WHCP testing is acceptable under the **[Hardware Lab Kit (HLK)](/windows-hardware/test/hlk/) End User License Agreement**.  For WHCP participants, the HLK's EULA overwrites GitHub's CodeQL Terms and Conditions.  The HLK EULA states that CodeQL **can be used** during automated analysis, CI or CD, as part of normal engineering processes for the purposes of analyzing drivers to be submitted and certified as part of the WHCP.
 
 ### How to Pass HLK?
 
+The Static Tools Logo Test in the HLK.
+
 ### False Positives?
+
+Goal is to minimize false positives, but they will happen.  The set of "must-fix" is intended to include almost 0 false positives.  If you experience something else, email stlogohelp@microsoft.com.
 
 ### Feedback?	
 
