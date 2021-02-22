@@ -3,9 +3,13 @@ description: This section provides information about choosing the correct mechan
 title: USB Selective Suspend
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q3
 ---
 
 # USB Selective Suspend
+
+> [!NOTE]
+> This article is for device driver developers. If you're experiencing difficulty with a USB device, please see [Troubleshoot common USB problems](https://support.microsoft.com/windows/troubleshoot-common-usb-problems-5e9a9b49-ad43-702e-083e-6107e95deb88)
 
 This section provides information about choosing the correct mechanism for the selective suspend feature.
 
