@@ -3,6 +3,7 @@ description: This section provides information about choosing the correct mechan
 title: USB Selective Suspend
 ms.date: 04/20/2017
 ms.localizationpriority: medium
+ms.custom: contperf-fy21q3
 ---
 
 # USB Selective Suspend
