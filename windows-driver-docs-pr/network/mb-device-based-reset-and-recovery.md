@@ -3,7 +3,7 @@ title: MB Device-based Reset and Recovery
 description: MB Device-based Reset and Recovery
 keywords:
 - MB Device-based Reset and Recovery, Mobile Broadband Device-based Reset and Recovery, Mobile Broadband miniport driver Device-based Reset and Recovery
-ms.date: 08/09/2018
+ms.date: 03/01/2021
 ms.localizationpriority: medium
 ---
 
@@ -25,8 +25,8 @@ MB Device-based Reset and Recovery detects and attempts to remedy the following 
 
 | Area of failure        | Failure description                                         |
 |------------------------|-------------------------------------------------------------|
-| Control path           | <ul><li>A hang condition detected on MBIM protocol path. For more information about hang detection, see [MB hang detection](mb-hang-detection.md).</li><li>Failures due to MBB reponding with incorrect state and/or information.</li></ul> |
-| Data path              | <ul><li>Device-side failure resulting in data path failures. For example, endpoints not reponding to data traffic, corrupted data from PHY, etc.</li><li>Modem/network-side failure. For example, the network not repsonding to IP traffic, DNS failure, packet loss, etc.</li></ul> |
+| Control path           | <ul><li>A hang condition detected on MBIM protocol path. For more information about hang detection, see [MB hang detection](mb-hang-detection.md).</li><li>Failures due to MBB responding with incorrect state and/or information.</li></ul> |
+| Data path              | <ul><li>Device-side failure resulting in data path failures. For example, endpoints not responding to data traffic, corrupted data from PHY, etc.</li><li>Modem/network-side failure. For example, the network not responding to IP traffic, DNS failure, packet loss, etc.</li></ul> |
 
 Some failures are not actionable from a recovery perspective, including but not limited to:
 
@@ -71,6 +71,113 @@ For UDE client drivers that enable an MBIM function, Windows 10, version 1809 in
 The following flow diagram illustrates the UDE device reset process.
 
 ![Flow for reset recovery flow for UDECx client drivers](images/mb-self-healing-udecx-reset.png "Call flow for reset recovery for UDECx client drivers.")
+
+
+## RnR triggers
+WWAN Service organizes actionable failures into RnR triggers:
+1. Bad connectivity
+2. Radio state set/query failures/time-outs
+3. Consecutive OID request time-outs
+4. Initialization failures
+
+### RnR Trigger #1 - Bad connectivity
+* Bad connectivity
+* Limited Internet connectivity
+* Lost Internet connectivity
+* Routes not received correctly
+* Routes unreachable
+* Dead gateway
+* DNS query failing
+    
+WCM detects based on various sources (NCSI etc.).
+
+WCM publishes WNF_WCM_INTERFACE_CONNECTION_STATE.
+```
+struct WCM_WNF_INTERFACE_CONNECTION_STATE_INFO
+{
+    GUID InterfaceGuid;
+    WCM_MEDIA_TYPE MediaType = wcm_media_unknown;
+    // ConnectionState is one of the WCM_WNF_INTERFACE_CONNECTIVITY_STATE_* values
+    DWORD ConnectionState = 0;
+    // TimeInBadStateMs tracks how long a connection is in a Bad state
+    // It will reset back to zero when in a good state
+    DWORD TimeInBadStateMs = 0;
+    // ConnectivityTriggers is a bitmask of WCM_WNF_INTERFACE_CONNECTIVITY_TRIGGER_* flags
+    DWORD ConnectivityTriggers = 0; 
+    // fWasConnectedGood will be TRUE if a connection is ever in a good state over the lifetime of an L2 connection
+    // Once it is set to TRUE, it will never go FALSE until the interface disconnects
+    BOOLEAN fWasConnectedGood = FALSE;
+    // When processing the WNF, walk the array of WCM_WNF_INTERFACE_CONNECTION_STATE_INFO structs
+    // until you reach the struct with afLastArrayValues == TRUE
+    BOOLEAN fLastArrayValue = TRUE;
+};
+```
+Recovery Process:
+* Reset PDP context up to three times (see FSM transition diagram)
+* Toggle APM once
+* PnP disable and enable MBB device once
+* Invoke FLDR once if supported
+* Invoke PLDR once if supported
+
+The process stops as soon as L3 connectivity is good.
+
+Verification of outcome: L3 connectivity is good.
+ 
+### RnR trigger #2  - Radio state set/query failure or time-out
+* No response or failure response for setting or querying radio state.
+* OID_WWAN_RADIO_STATE set or query requests.
+* Should never happen.
+* Once it happens, OS and modem may end up in an inconsistent state.
+* Indicates serious problem(s) in the modem.
+* CWwanExecutor detects it and internally reports to CWwanResetRecovery.
+
+Recovery process:
+* Invoke PLDR if supported
+* Otherwise, invoke PnP disable/enable
+
+Verification of outcome: Send OID_WWAN_RADIO_STATE query and verify response.
+
+### RnR trigger #3 - Time-out of consecutive OID requests
+* TXM times all outstanding OID requests and expects responses for each.
+* If a “configurable” number of consecutive OID requests receive no response in time, TXM detects it and internally reports to CWwanResetRecovery.
+* OIDs may be grouped in high/medium/low latency groups:
+	* OID requests that are have no interaction with MO will have lower latency.
+	* OID requests that result in interaction with MO will have medium latency.
+	* OID_WWAN_CONNECT activation/deactivation request: ~180 seconds.
+
+Recovery process:
+* Invoke PLDR if supported
+* Otherwise, invoke PnP disable/enable
+
+Verification of outcome: Send OID_WWAN_RADIO_STATE query and verify response.
+
+### RnR Trigger #4 - Initialization failures
+* Time-out of the device caps or device capsEx query during the initialization upon MB device arrival
+* CWwanManager detects and acts on it
+
+Recovery process:
+- Invoke PLDR if supported
+- Otherwise, invoke PnP disable/enable
+
+Verification of outcome: none
+
+After PLDR or PnP disable/enable, the device departs and then re-arrives. Initialization upon arrival follows.
+
+### Primary flows
+#### RnR for bad connectivity
+![RnR for bad connectivity](images\RnR_bad_connectivity.png?raw=true "RNR_bad_connectivity")
+#### PLDR for radio power set failure
+![PLDR for radio power set failure](images\PLDR_radio_power_set_failure.png?raw=true "PLDR_radio_power_set_failure")
+#### PnP disable/enable for radio state set failure
+![PnP of radio state set failure](images\PnP_radio_state_set_failure.png?raw=true "PnP_radio_state_set_failure")
+#### PLDR for time-outs of consecutive OID requests 
+![PLDR of timeouts consecutive OID requests](images\PLDR_timeouts_consecutive_OID_requests.png?raw=true "PLDR_timeouts_consecutive_OID_requests")
+#### PnP disable/enable for time-outs of consecutive OID requests 
+![PnP of timeouts consecutive OID requests](images\PnP_timeouts_consecutive_OID_requests.png?raw=true "PnP_timeouts_consecutive_OID_requests")
+#### PLDR for initialization failure
+![PLDR of initialization failure](images\PLDR_initialization_failure.png?raw=true "PLDR_initialization_failure")
+#### PnP disable/enable for initialization failure
+![PnP of initialization failure](images\PnP_initialization_failure.png?raw=true "PnP_initialization_failure")
 
 
 ## Requirements for MB Device-based Reset and Recovery
@@ -143,6 +250,17 @@ Device(USB1)  
 ```
 
 Alternatively, PLDR can be achieved by putting the device into the D3Cold power state and back to D0, essentially power cycling the device. In this case, having `_PR3` declared in the device scope is sufficient to support PLDR. ACPI will use `_PR3` to determine reset dependencies between devices if no `_PRR` is referenced in the device scope. For more information, see [Resetting and recovering a device](../kernel/resetting-and-recovering-a-device.md). 
+
+## Sample Log
+```
+NTS]WWAN Service event: [Info] WwanTimerWrapper::StartTimer:  Timer (ID = 0) Start Completed
+[0]0E98.34E4::11/27/2019-05:37:55.622 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] WwanTxmEvaluateArmTimer: TXM timer armed for 60 seconds Interface: {{8a664721-db25-4157-8395-5d21e0560fa4}}
+[0]0E98.34E4::11/27/2019-05:37:55.622 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] _sendReq: ASYNC OID (pTx->handle: 00000000000000B0 Code: 1) sent
+[0]0E98.34E4::11/27/2019-05:37:55.622 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] CWwanExecutor::RegWriteStoredRadioState: Try to set the subkey to 0x0 for ArrivalRadioState Interface: {{8a664721-db25-4157-8395-5d21e0560fa4}}
+[0]0E98.34E4::11/27/2019-05:37:55.623 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] CWwanResetRecovery::EvaluateAndTryHighImpactRnRMethod:  Attempted to turn off radio via MBB (reqId 0x10c): request ID 0x1 prev stage 0 APMToggling 0; PnPDisabling 0; PLDR 0; FLDR 0 Interface: {{8a664721-db25-4157-8395-5d21e0560fa4}}
+[0]0E98.34E4::11/27/2019-05:37:55.623 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] WwanTimerWrapper::StartTimer:  Timer (ID = 6) Start Completed
+[0]0E98.34E4::11/27/2019-05:37:55.623 [Microsoft-Windows-WWAN-SVC-EVENTS]WWAN Service event: [Info] CWwanResetRecovery::fsmEventHandler:  exit with state: 7, event: 4, RnR stage: 2 Potent RnR: 0 Interface: {{8a664721-db25-4157-8395-5d21e0560fa4}}
+```
 
 ## Related links
 
