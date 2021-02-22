@@ -4,10 +4,11 @@ description: The FileSystem namespace provides the  properties and methods for m
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---
+# The FileSystem Namespace
+
 > [!IMPORTANT]
 >  This interface is under active development and will change.
 >
-# The FileSystem Namespace
 ## Summary
 The FileSystem namespace provides the  properties and methods for manipulating the file system. This can be used from JavaScript for reading or writing files that are needed to support your debugger extension.
 

@@ -1,7 +1,6 @@
 ---
 title: SIO_WSK_SET_REMOTE_ADDRESS
 description: SIO_WSK_SET_REMOTE_ADDRESS
-ms.assetid: 1db11c7a-c9ce-428e-b4da-4a49904a9e4c
 ms.date: 07/18/2017
 keywords:
  - SIO_WSK_SET_REMOTE_ADDRESS Network Drivers Starting with Windows Vista
@@ -15,11 +14,11 @@ The SIO\_WSK\_SET\_REMOTE\_ADDRESS socket I/O control operation allows a WSK app
 
 If a WSK application sets a fixed remote transport address for a datagram socket, all datagrams that are sent over the socket are sent to the fixed remote transport address, and only datagrams that are received from the fixed remote transport address are accepted.
 
-A WSK application can override a fixed remote transport address when it sends a datagram over the socket by specifying an alternative remote transport address in the *RemoteAddress* parameter when calling the [**WskSendTo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_to) function. In this situation, the datagram is sent to the alternative remote transport address instead of the fixed remote transport address. However, any responses that are sent back from an alternative remote transport address will not be accepted.
+A WSK application can override a fixed remote transport address when it sends a datagram over the socket by specifying an alternative remote transport address in the *RemoteAddress* parameter when calling the [**WskSendTo**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send_to) function. In this situation, the datagram is sent to the alternative remote transport address instead of the fixed remote transport address. However, any responses that are sent back from an alternative remote transport address will not be accepted.
 
 If a WSK application uses this socket I/O control operation to specify a fixed remote transport address, it must do so after the datagram socket has been bound to a local transport address.
 
-To set a fixed remote transport address for a datagram socket, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To set a fixed remote transport address for a datagram socket, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>

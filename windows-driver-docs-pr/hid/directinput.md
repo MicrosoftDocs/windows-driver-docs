@@ -1,7 +1,6 @@
 ---
 title: DirectInput Overview
 description: DirectInput Overview
-ms.assetid: 4a69905b-017b-46d7-8b15-c9089a77e795
 keywords:
 - Human Interface Devices WDK , DirectInput
 - HID WDK , DirectInput

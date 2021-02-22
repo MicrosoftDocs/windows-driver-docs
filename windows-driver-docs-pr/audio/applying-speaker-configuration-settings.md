@@ -1,7 +1,6 @@
 ---
 title: Applying Speaker-Configuration Settings
 description: Applying Speaker-Configuration Settings
-ms.assetid: 98fe96cc-8436-4400-9b39-86d188e085c9
 keywords:
 - failed speaker-configuration requests WDK audio
 ms.date: 04/20/2017
@@ -28,13 +27,13 @@ A user can change the configuration through the speaker-configuration dialog in 
 
 2.  On the **Audio** tab, select a device from the **Sound Playback** list.
 
-3.  Click the **Advanced** button.
+3.  Select the **Advanced** button.
 
-4.  Click the **Speakers** tab.
+4.  Select the **Speakers** tab.
 
 At this point, you should see the label **Speaker Setup** next to a list of the speaker configurations that you can select from.
 
-DirectSound uses a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) set-property request to send the speaker-configuration information to a 3D node or DAC node ([**KSNODETYPE\_3D\_EFFECTS**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-3d-effects) or [**KSNODETYPE\_DAC**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksnodetype-dac)) in an audio filter graph. For a 3D node, the target for the property request is actually the pin (3D-stream object) that feeds the node. For a DAC node, the target is the filter object that contains the DAC node. In either case, the speaker-configuration setting is global and affects the audio device as a whole. All audio applications that subsequently run are subject to the new setting until DirectSound changes the setting again.
+DirectSound uses a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) set-property request to send the speaker-configuration information to a 3D node or DAC node ([**KSNODETYPE\_3D\_EFFECTS**](./ksnodetype-3d-effects.md) or [**KSNODETYPE\_DAC**](./ksnodetype-dac.md)) in an audio filter graph. For a 3D node, the target for the property request is actually the pin (3D-stream object) that feeds the node. For a DAC node, the target is the filter object that contains the DAC node. In either case, the speaker-configuration setting is global and affects the audio device as a whole. All audio applications that subsequently run are subject to the new setting until DirectSound changes the setting again.
 
 Note that only versions of DirectSound that ship with Windows Me, and with Windows XP and later, send speaker-configuration property requests to DAC nodes--earlier versions of DirectSound do not support this feature. However, all versions of DirectSound send these requests to 3D nodes.
 
@@ -61,9 +60,4 @@ At boot time, an audio adapter driver initializes the hardware's speaker configu
 Immediately after installing an audio device or when a speaker-configuration error occurs, the DirectSound speaker configuration defaults to stereo.
 
  
-
- 
-
-
-
 

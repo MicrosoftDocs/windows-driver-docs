@@ -1,7 +1,6 @@
 ---
 title: Introduction to Adapter Objects
 description: Introduction to Adapter Objects
-ms.assetid: a1a0d516-dee0-484a-b971-c7a595fef155
 keywords: ["AdapterControl routines, about AdapterControl routines", "DMA transfers WDK kernel , adapter objects", "adapter objects WDK kernel , about adapter objects"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ Two kinds of lowest-level drivers must use adapter objects:
 
 Drivers provide storage, usually in a device extension, for a pointer to the adapter object.
 
-To carry out DMA transfers, drivers of devices that use either of these DMA methods usually have an [*AdapterControl*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine and call system-supplied support routines that manipulate adapter objects. (Drivers that do not require *AdapterControl* routines include those that [use scatter/gather DMA](using-scatter-gather-dma.md) and those that [use common-buffer, bus-master DMA](using-common-buffer-bus-master-dma.md).)
+To carry out DMA transfers, drivers of devices that use either of these DMA methods usually have an [*AdapterControl*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control) routine and call system-supplied support routines that manipulate adapter objects. (Drivers that do not require *AdapterControl* routines include those that [use scatter/gather DMA](using-scatter-gather-dma.md) and those that [use common-buffer, bus-master DMA](using-common-buffer-bus-master-dma.md).)
 
 As part of device start-up operations, drivers that handle DMA operations call the I/O manager, which in turn calls the platform-specific HAL to create a set of adapter objects. On any Windows platform, the set of adapter objects usually includes an adapter object for:
 
@@ -31,14 +30,13 @@ As part of device start-up operations, drivers that handle DMA operations call t
 
 -   Each bus-master DMA device in the machine.
 
-(For SCSI devices capable of bus-master DMA, the SCSI port driver sets up adapter objects for HBA-specific SCSI miniport drivers. The miniport driver's [*HwScsiFindAdapter*](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) routine supplies the port driver with adapter-specific data.)
+(For SCSI devices capable of bus-master DMA, the SCSI port driver sets up adapter objects for HBA-specific SCSI miniport drivers. The miniport driver's [*HwScsiFindAdapter*](/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)) routine supplies the port driver with adapter-specific data.)
 
-See [Using System DMA](using-system-dma.md) and [Using Bus-Master DMA](using-bus-master-dma.md) for more information about when and how drivers use adapter objects and *AdapterControl* routines.
+See this section as well as [Using Bus-Master DMA](using-bus-master-dma.md) for more information about when and how drivers use adapter objects and *AdapterControl* routines.
+
+## Related topics
+
+[Enabling DMA Remapping for device drivers](../pci/enabling-dma-remapping-for-device-drivers.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: OID_CO_TAPI_ADDRESS_CAPS
 description: This topic describes the OID_CO_TAPI_ADDRESS_CAPS object identifier (OID).
-ms.assetid: c0e44c1b-89d1-4c50-a1fc-8322bb1d00c2
 keywords:
 - OID_CO_TAPI_ADDRESS_CAPS
 ms.date: 11/03/2017
@@ -49,8 +48,6 @@ The call manager or MCM driver returns the address capabilities for a specified 
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

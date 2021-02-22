@@ -1,7 +1,6 @@
 ---
 title: Diagnosing problems running WDTF-based tests
 description: To help you troubleshoot problems running WDTF-based test, you can use a debugger.
-ms.assetid: 24257B50-ED9C-4D45-A245-1EC855463D33
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,8 +13,8 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
 ## Diagnose problems with unresponsive WDTF-based tests (run from Visual Studio)
 
 
-1.  Configure and connect a kernel debugger to the computer that is running the WDTF-based test. See [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1) or [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1).
-2.  Search for Te.exe process and switch context to that process. For information about Te.exe, see [Test Authoring and Execution Framework (TAEF)](https://docs.microsoft.com/windows-hardware/drivers/taef/index).
+1.  Configure and connect a kernel debugger to the computer that is running the WDTF-based test. See [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md) or [Provision a computer for driver deployment and testing (WDK 8)](../gettingstarted/provision-a-target-computer-wdk-8-1.md).
+2.  Search for Te.exe process and switch context to that process. For information about Te.exe, see [Test Authoring and Execution Framework (TAEF)](../taef/index.md).
 
     ``` syntax
     !process 0 0 Te.exe 
@@ -33,7 +32,7 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
     ·         
     ```
 
-3.  Run the [**!process**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process) command to identify the threads running under Te.exe.
+3.  Run the [**!process**](../debugger/-process.md) command to identify the threads running under Te.exe.
 
     ``` syntax
     !process fffffa80093c6340
@@ -48,17 +47,12 @@ To help you troubleshoot problems running WDTF-based test, you can use a debugge
 
 You can diagnose problems with these commands.
 
-[**!powertriage**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-powertriage) (provides information about system and device power related components)
-[**!devnode**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-devnode) (to display information about the PnP tree)
-[**!process**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process) (to examine processes to locate associated threads)
-[**!thread**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-thread) (to view information about threads)
-[**!wdfkd.wdfdevice**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdevice) (for WDF driver information)
+[**!powertriage**](../debugger/-powertriage.md) (provides information about system and device power related components)
+[**!devnode**](../debugger/-devnode.md) (to display information about the PnP tree)
+[**!process**](../debugger/-process.md) (to examine processes to locate associated threads)
+[**!thread**](../debugger/-thread.md) (to view information about threads)
+[**!wdfkd.wdfdevice**](../debugger/-wdfkd-wdfdevice.md) (for WDF driver information)
 After confirming that there are active PnP or power management threads that are stuck (examine TickCount for this), follow up with the right component owners. (You can locate the component owners from looking at the stacks of the stuck threads).
 
  
-
- 
-
-
-
 

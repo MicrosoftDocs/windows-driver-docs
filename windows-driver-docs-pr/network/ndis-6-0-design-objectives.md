@@ -1,7 +1,6 @@
 ---
 title: NDIS 6.0 Design Objectives
 description: NDIS 6.0 Design Objectives
-ms.assetid: 1b59bc97-be79-47ba-8e39-208a9d38f6b9
 keywords:
 - NDIS WDK , about NDIS
 ms.date: 04/20/2017

@@ -1,7 +1,6 @@
 ---
 title: Handling SRB_FUNCTION_PROTOCOL_COMMAND
 description: Handling SRB_FUNCTION_PROTOCOL_COMMAND
-ms.assetid: 12e9791b-8ddf-4d42-9d89-243bc38eeeb7
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 A miniport driver handles SRB_FUNCTION_PROTOCOL_COMMAND requests when the HBA is to provide dedicated support for a user-mode application. Supporting this request allows a set of driver-defined ("private") protocol commands to be sent directly to the miniport driver.
 
-For SRBs with the **Function** member set to SRB_FUNCTION_PROTOCOL_COMMAND, the **DataBuffer** member contains a pointer to a system-defined [STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_protocol_command) structure.
+For SRBs with the **Function** member set to SRB_FUNCTION_PROTOCOL_COMMAND, the **DataBuffer** member contains a pointer to a system-defined [STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_protocol_command) structure.
 
 The miniport should do the following:
 
@@ -28,16 +27,16 @@ The miniport should do the following:
 
 ## See Also
 
-[IOCTL_STORAGE_PROTOCOL_COMMAND (*winioctl.h*)](https://docs.microsoft.com/windows/desktop/api/winioctl/ni-winioctl-ioctl_storage_protocol_command)
+[IOCTL_STORAGE_PROTOCOL_COMMAND (*winioctl.h*)](/windows/win32/api/winioctl/ni-winioctl-ioctl_storage_protocol_command)
 
-[IOCTL_STORAGE_PROTOCOL_COMMAND (*ntddstor.h*)](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command)
+[IOCTL_STORAGE_PROTOCOL_COMMAND (*ntddstor.h*)](/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_protocol_command)
 
-[HwStorStartIo](https://docs.microsoft.com/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio)
+[HwStorStartIo](/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio)
 
-[SRB_IO_CONTROL](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control)
+[SRB_IO_CONTROL](/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_srb_io_control)
 
-[SCSI_REQUEST_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block)
+[SCSI_REQUEST_BLOCK](/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block)
 
-[STORAGE_PROTOCOL_COMMAND](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_protocol_command)
+[STORAGE_PROTOCOL_COMMAND](/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_protocol_command)
 
-[STORAGE_REQUEST_BLOCK](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block)
+[STORAGE_REQUEST_BLOCK](/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block)

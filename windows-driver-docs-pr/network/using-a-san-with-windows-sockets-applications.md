@@ -1,7 +1,6 @@
 ---
 title: Using a SAN with Windows Sockets Applications
 description: Using a SAN with Windows Sockets Applications
-ms.assetid: 140505dd-2e3c-48b2-94c0-911ea460068c
 keywords:
 - system area networks WDK , Windows Sockets applications
 - SAN WDK , Windows Sockets applications

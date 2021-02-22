@@ -1,7 +1,6 @@
 ---
 title: GDL Elements
 description: GDL Elements
-ms.assetid: 9584b9aa-befe-45a3-9cf4-996e40083d3d
 keywords:
 - GDL WDK , elements
 - printer drivers WDK , Generic Description Language

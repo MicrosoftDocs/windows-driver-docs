@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_DISABLED_SERVICE
 description: CM_PROB_DISABLED_SERVICE
-ms.assetid: b2447b01-c25d-4761-bc96-291d508feb15
 keywords:
 - CM_PROB_DISABLED_SERVICE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DISABLED_SERVICE
+# Code 32 - CM_PROB_DISABLED_SERVICE
 
-This function is reserved for system use.
-
-The driver has been disabled.
+This Device Manager error message indicates that the driver has been disabled.
 
 ## Error Code
 

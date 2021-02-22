@@ -1,7 +1,6 @@
 ---
 title: Data Intersection
 description: Data Intersection
-ms.assetid: a1588ce0-a091-4bfd-98a9-4d78e2fc847f
 keywords:
 - data-intersection handlers WDK audio , about data intersection
 - data intersections WDK audio
@@ -23,7 +22,7 @@ In an audio filter graph, an audio stream can flow from the source pin of one fi
 
 For example, in Windows Server 2003, Windows XP, Windows 2000, and Windows Me/98, the [SysAudio system driver](kernel-mode-wdm-audio-components.md#sysaudio_system_driver) uses the data-intersection technique to construct an audio filter graph by connecting pairs of filter pins that support compatible audio data formats.
 
-A [pin factory](pin-factories.md) specifies the set of formats that each pin supports as an array of data ranges, where each data range is a structure of type [**KSDATARANGE\_AUDIO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio). A data range specifies a general format type, which can be [**KSDATAFORMAT\_WAVEFORMATEX**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) or [**KSDATAFORMAT\_DSOUND**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_dsound). In addition, the data range specifies a range of values for each of the following parameters:
+A [pin factory](pin-factories.md) specifies the set of formats that each pin supports as an array of data ranges, where each data range is a structure of type [**KSDATARANGE\_AUDIO**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_audio). A data range specifies a general format type, which can be [**KSDATAFORMAT\_WAVEFORMATEX**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex) or [**KSDATAFORMAT\_DSOUND**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_dsound). In addition, the data range specifies a range of values for each of the following parameters:
 
 -   Bits per sample
 
@@ -51,7 +50,7 @@ Upon finding a pair of intersecting data ranges for the two pins, the handler se
 
 -   The number of channels is selected from the region in which the two number-of-channels ranges overlap.
 
-For example, when negotiating a common format for an audio port driver's sink pin and the source pin of another filter (typically, the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver)), SysAudio first obtains the source pin's data-range array. SysAudio then sends a [**KSPROPERTY\_PIN\_DATAINTERSECTION**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-pin-dataintersection) request to the sink pin and includes the source pin's data-range array with this request. The kernel-streaming layer intercepts the request and iteratively calls the port driver's data-intersection handler once for each successive element in the source pin's data-range array, beginning with the first element, until the handler succeeds in finding a data intersection.
+For example, when negotiating a common format for an audio port driver's sink pin and the source pin of another filter (typically, the [KMixer system driver](kernel-mode-wdm-audio-components.md#kmixer_system_driver)), SysAudio first obtains the source pin's data-range array. SysAudio then sends a [**KSPROPERTY\_PIN\_DATAINTERSECTION**](../stream/ksproperty-pin-dataintersection.md) request to the sink pin and includes the source pin's data-range array with this request. The kernel-streaming layer intercepts the request and iteratively calls the port driver's data-intersection handler once for each successive element in the source pin's data-range array, beginning with the first element, until the handler succeeds in finding a data intersection.
 
 With each call that SysAudio makes to the port driver's data-intersection handler, the handler first obtains the sink pin's data-range array from the miniport driver. It then iterates through the array, beginning with the first element, until it succeeds in finding an intersection between a sink-pin data range and the current source-pin data range. The handler selects a common format that lies within the intersection and outputs this format to the caller.
 
@@ -66,9 +65,4 @@ To summarize, the search for an intersection between a source-pin data range and
 The search stops upon finding the first data intersection. This process tends to favor the elements toward the beginning of each pin's data-range array. When specifying an array of data ranges for a pin, an adapter driver should order the array elements by placing data ranges for preferred formats toward the beginning of the array.
 
  
-
- 
-
-
-
 

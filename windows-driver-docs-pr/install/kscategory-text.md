@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_TEXT
 description: KSCATEGORY_TEXT
-ms.assetid: 05a027ee-b342-4200-b753-33942a77e455
 keywords: ["KSCATEGORY_TEXT Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_TEXT
 
 
-The KSCATEGORY_TEXT [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that supports text data.
+The KSCATEGORY_TEXT [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that supports text data.
 
 <table>
 <colgroup>
@@ -67,10 +66,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

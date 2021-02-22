@@ -1,7 +1,6 @@
 ---
 title: ioreslist
 description: The ioreslist extension displays an IO_RESOURCE_REQUIREMENTS_LIST structure.
-ms.assetid: cb599656-2e0a-41ec-8358-a42047974dea
 keywords: ["ioreslist Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

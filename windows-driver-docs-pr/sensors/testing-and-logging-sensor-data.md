@@ -1,7 +1,6 @@
 ---
 title: Testing Sensor Property Support
 description: Use the Sensor Diagnostic Tool to test whether your driver and firmware support property retrieval.
-ms.assetid: 6E8C2162-F7BD-4544-8869-00FA4E4925E0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

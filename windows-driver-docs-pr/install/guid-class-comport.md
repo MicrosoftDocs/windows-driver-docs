@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_COMPORT
 description: GUID_CLASS_COMPORT
-ms.assetid: 116d05aa-d327-4661-8e59-20134d9c2a1b
 keywords: ["GUID_CLASS_COMPORT Device and Driver Installation"]
 topic_type:
 - apiref

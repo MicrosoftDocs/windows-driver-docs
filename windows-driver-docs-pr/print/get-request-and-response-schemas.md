@@ -1,7 +1,6 @@
 ---
 title: Get Request and Response Schemas
 description: The Get request schema and corresponding response schema definition, and an example of each, are below.
-ms.assetid: 48980220-4DD6-4785-AAC1-850F8FBE49EC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,7 +16,7 @@ A Get request and response is used to query the printer for one or more of its c
 In this example, there are three queries. The first query points to a particular Bidirectional Communications Schema value and the second to a Bidirectional Communications Schema property that defines a subtree. The third is a deliberate error: there is no &lt;Foo&gt; property in the Bidirectional Communications Schema. (The response to this request is in the following section [The Get Response Schema](#the-get-response-schema).)
 
 ```xml
-<bidi:Get xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
+<bidi:Get xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Query schema='\Printer.Configuration.DuplexUnit:Installed'/>
   <Query schema='\Printer.Configuration.HardDisk'/>
   <Query schema='\Printer.Foo'/>
@@ -28,9 +27,9 @@ Formal Definition of the Get Request Schema
 
 ```xml
 <?xml version='1.0'?>
-<schema targetNamespace="http://schemas.microsoft.com/windows/2005/03/printing/bidi"
-  xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
-  xmlns ='http://www.w3.org/2001/XMLSchema'>
+<schema targetNamespace="https://schemas.microsoft.com/windows/2005/03/printing/bidi"
+  xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi" 
+  xmlns ='https://www.w3.org/2001/XMLSchema'>
   <element name='Get'>
     <complexType>
       <sequence maxOccurs='unbounded'>
@@ -57,7 +56,7 @@ Formal Definition of the Get Request Schema
 This example is the response to the Get request above. For the queries that succeded, the result is the value of the particular schema. The third query failed, so the result is an error code. Note that since the second query requested a property that has children, the response provides the name and value of all of the children.
 
 ```xml
-<bidi:Get xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
+<bidi:Get xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Query schema='\Printer.Configuration.DuplexUnit:Installed'/>
     <Schema name='\Printer.Configuration.DuplexUnit:Installed'>
       <BIDI_BOOL>true</BIDI_BOOL>
@@ -84,9 +83,9 @@ Formal Definition of the Get Response Schema
 
 ```xml
 <?xml version='1.0'?>
-<schema targetNamespace="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
-  xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi" 
-  xmlns ='http://www.w3.org/2001/XMLSchema'>
+<schema targetNamespace="https://schemas.microsoft.com/windows/2005/03/printing/bidi" 
+  xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi" 
+  xmlns ='https://www.w3.org/2001/XMLSchema'>
   <element name='Get'>
     <complexType>
       <sequence maxOccurs='unbounded'>
@@ -134,6 +133,6 @@ Formal Definition of the Get Response Schema
 
 [Bidirectional Communication Schema](bidirectional-communication-schema.md)  
 
-[SendRecvXMLStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
+[SendRecvXMLStream](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
 
-[SendRecvXMLString](https://docs.microsoft.com/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)  
+[SendRecvXMLString](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)

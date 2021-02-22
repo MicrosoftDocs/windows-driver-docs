@@ -1,7 +1,6 @@
 ---
 title: GUID_CLASS_USB_HOST_CONTROLLER
 description: GUID_CLASS_USB_HOST_CONTROLLER
-ms.assetid: d2140a9e-95bc-48dd-a80b-3b098937edb3
 keywords: ["GUID_CLASS_USB_HOST_CONTROLLER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,12 +17,12 @@ ms.date: 10/17/2018
 # GUID_CLASS_USB_HOST_CONTROLLER
 
 
-GUID_CLASS_USB_HOST_CONTROLLER is an obsolete identifier for the [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) for [USB](https://docs.microsoft.com/windows-hardware/drivers/) host controller devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md) class identifier for new instances of this class.
+GUID_CLASS_USB_HOST_CONTROLLER is an obsolete identifier for the [device interface class](./overview-of-device-interface-classes.md) for [USB](../index.yml) host controller devices. Starting with Microsoft Windows 2000, use the [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md) class identifier for new instances of this class.
 
 Remarks
 -------
 
-The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](https://go.microsoft.com/fwlink/p/?linkid=256205). The USBVIEW sample uses GUID_CLASS_USB_HOST_CONTROLLER to enumerate instances of the GUID_CLASS_USB_HOST_CONTROLLER device interface class.
+The Microsoft Windows Driver Kit (WDK) includes the [USBVIEW sample application](/samples/browse/). The USBVIEW sample uses GUID_CLASS_USB_HOST_CONTROLLER to enumerate instances of the GUID_CLASS_USB_HOST_CONTROLLER device interface class.
 
 Requirements
 ------------
@@ -49,13 +48,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_USB_HOST_CONTROLLER**](guid-devinterface-usb-host-controller.md)
-
- 
-
- 
-
-
-
-
-
 

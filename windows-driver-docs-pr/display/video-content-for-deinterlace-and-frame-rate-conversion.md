@@ -1,7 +1,6 @@
 ---
 title: Video Content for Deinterlace and Frame-Rate Conversion
 description: Video Content for Deinterlace and Frame-Rate Conversion
-ms.assetid: 627b394e-c2e1-4327-adaa-0c3436ba3d1a
 keywords:
 - deinterlacing WDK DirectX VA , received video content
 - frame-rate conversion WDK DirectX VA
@@ -18,13 +17,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_video_content_for_deinterlace_and_frame_rate_conversion_gg"></span><span id="DDK_VIDEO_CONTENT_FOR_DEINTERLACE_AND_FRAME_RATE_CONVERSION_GG"></span>
 
 
-The driver receives a description of video content so that it can determine how it should deinterlace or frame-rate convert such content. The driver receives this video content as a pointer to a [**DXVA\_VideoDesc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure in the following function calls:
+The driver receives a description of video content so that it can determine how it should deinterlace or frame-rate convert such content. The driver receives this video content as a pointer to a [**DXVA\_VideoDesc**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc) structure in the following function calls:
 
--   [**DeinterlaceQueryAvailableModes**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes)
+-   [**DeinterlaceQueryAvailableModes**](./dxva-deinterlacecontainerdeviceclass-deinterlacequeryavailablemodes.md)
 
--   [**DeinterlaceQueryModeCaps**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps)
+-   [**DeinterlaceQueryModeCaps**](./dxva-deinterlacecontainerdeviceclass-deinterlacequerymodecaps.md)
 
--   [**DeinterlaceOpenStream**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlaceopenstream)
+-   [**DeinterlaceOpenStream**](./dxva-deinterlacebobdeviceclass-deinterlaceopenstream.md)
 
 The following examples indicate how the driver performs deinterlacing and frame-rate conversion on the received video content.
 
@@ -54,7 +53,7 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to deint
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>SampleFormat</strong></p></td>
-<td align="left"><p><strong>DXVA_SampleFieldInterleavedOddFirst</strong> enumerator in <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a></p></td>
+<td align="left"><p><strong>DXVA_SampleFieldInterleavedOddFirst</strong> enumerator in <a href="/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a></p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>d3dFormat</strong></p></td>
@@ -165,7 +164,7 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to perfo
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>SampleFormat</strong></p></td>
-<td align="left"><p><strong>DXVA_SampleProgressiveFrame</strong> enumerator in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a> enumeration</p></td>
+<td align="left"><p><strong>DXVA_SampleProgressiveFrame</strong> enumerator in the <a href="/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat" data-raw-source="[&lt;strong&gt;DXVA_SampleFormat&lt;/strong&gt;](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat)"><strong>DXVA_SampleFormat</strong></a> enumeration</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>d3dFormat</strong></p></td>
@@ -191,12 +190,4 @@ The DXVA\_VideoDesc structure is filled as follows to direct the driver to perfo
 </table>
 
  
-
- 
-
- 
-
-
-
-
 

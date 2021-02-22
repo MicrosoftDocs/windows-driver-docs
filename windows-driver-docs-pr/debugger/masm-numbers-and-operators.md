@@ -1,21 +1,16 @@
 ---
 title: MASM Numbers and Operators
 description: MASM Numbers and Operators
-ms.assetid: 9aeb3ef2-d83a-4f99-9a55-4bbd8a7e11b5
 keywords: ["expressions, MASM expression syntax", "numerical expressions (MASM)", "MASM expressions, numbers", "MASM expressions, operators", "operators (MASM)", "(MASM prefix)", "binary operators", "shift operators", "unary operators"]
-ms.date: 05/23/2017
+ms.date: 01/26/2021
 ms.localizationpriority: medium
 ---
 
 # MASM Numbers and Operators
 
+This topic describes the use of Microsoft Macro Assembler (MASM) expression syntax with the Windows Debugging tools.
 
-## <span id="ddk_masm_numbers_and_operators_dbg"></span><span id="DDK_MASM_NUMBERS_AND_OPERATORS_DBG"></span>
-
-
-Before version 4.0 of the Debugging Tools for Windows package, NTSD, CDB, KD, and WinDbg used only Microsoft Macro Assembler (MASM) expression syntax.
-
-### <span id="numbers_in_masm_expressions"></span><span id="NUMBERS_IN_MASM_EXPRESSIONS"></span>Numbers in MASM Expressions
+## Numbers in Debugger MASM Expressions
 
 You can put numbers in MASM expressions in base 16, 10, 8, or 2.
 
@@ -27,7 +22,7 @@ If you do not add a number after the prefix in an expression, the number is read
 
 You can enter hexadecimal 64-bit values in the **xxxxxxxx\`xxxxxxxx** format. You can also omit the grave accent (\`). If you include the grave accent, [automatic sign extension](sign-extension.md) is disabled.
 
-### <span id="symbols_in_masm_expressions"></span><span id="SYMBOLS_IN_MASM_EXPRESSIONS"></span>Symbols in MASM Expressions
+## Symbols in Debugger MASM Expressions
 
 In MASM expressions, the numeric value of any symbol is its memory address. Depending on what the symbol refers to, this address is the address of a global variable, local variable, function, segment, module, or any other recognized label.
 
@@ -37,7 +32,7 @@ Use two colons (::) or two underscores (\_\_) to indicate the members of a class
 
 Use a grave accent (\`) or an apostrophe (') in a symbol name only if you add a module name and exclamation point before the symbol.
 
-### <span id="numeric_operators_in_masm_expressions"></span><span id="NUMERIC_OPERATORS_IN_MASM_EXPRESSIONS"></span>Numeric Operators in MASM Expressions
+## Numeric Operators in MASM Expressions
 
 You can modify any component of an expression by using a unary operator. You can combine any two components by using a binary operator. Unary operators take precedence over binary operators. When you use multiple binary operators, the operators follow the fixed precedence rules that are described in the following tables.
 
@@ -117,7 +112,7 @@ You can use the following unary operators.
 </tr>
 <tr class="even">
 <td align="left"><p><strong>poi</strong></p></td>
-<td align="left"><p>Pointer-sized data from the specified address. The pointer size is 32 bits or 64 bits. In kernel debugging, this size is based on the processor of the <em>target</em> computer. In user-mode debugging on an Itanium-based computer, this size is 32 bits or 64 bits, depending on the target application. Therefore, <strong>poi</strong> is the best operator to use if you want pointer-sized data.</p></td>
+<td align="left"><p>Pointer-sized data from the specified address. The pointer size is 32 bits or 64 bits. In kernel debugging, this size is based on the processor of the <em>target</em> computer. Therefore, <strong>poi</strong> is the best operator to use if you want pointer-sized data.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>$ppoi</strong></p></td>
@@ -126,7 +121,6 @@ You can use the following unary operators.
 </tbody>
 </table>
 
- 
 
 You can use the following binary operators. The operators in each cell take precedence over those in lower cells. Operators in the same cell are of the same precedence and are parsed from left to right.
 
@@ -193,7 +187,6 @@ You can use the following binary operators. The operators in each cell take prec
 </tbody>
 </table>
 
- 
 
 The &lt;, &gt;, =, ==, and != comparison operators evaluate to 1 if the expression is true or zero if the expression is false. A single equal sign (=) is the same as a double equal sign (==). You cannot use side effects or assignments within a MASM expression.
 
@@ -244,9 +237,7 @@ You can also use the following additional operators in MASM expressions.
 </tbody>
 </table>
 
- 
-
-### <span id="registers_and_pseudo_registers_in_masm_expressions"></span><span id="REGISTERS_AND_PSEUDO_REGISTERS_IN_MASM_EXPRESSIONS"></span>Registers and Pseudo-Registers in MASM Expressions
+## Registers and Pseudo-Registers in MASM Expressions
 
 You can use registers and pseudo-registers within MASM expressions. You can add an at sign (@) before all registers and pseudo-registers. The at sign causes the debugger to access the value more quickly. This at sign is unnecessary for the most common x86-based registers. For other registers and pseudo-registers, we recommend that you add the at sign, but it is not actually required. If you omit the at sign for the less common registers, the debugger tries to parse the text as a hexadecimal number, then as a symbol, and finally as a register.
 
@@ -254,15 +245,7 @@ You can also use a period (.) to indicate the current instruction pointer. You s
 
 For more information about registers and pseudo-registers, see [Register Syntax](register-syntax.md) and [Pseudo-Register Syntax](pseudo-register-syntax.md).
 
-### <span id="source_line_numbers_in_masm_expressions"></span><span id="SOURCE_LINE_NUMBERS_IN_MASM_EXPRESSIONS"></span>Source Line Numbers in MASM Expressions
+## Source Line Numbers in MASM Expressions
 
 You can use source file and line number expressions within MASM expressions. You must enclose these expressions by using grave accents (\`). For more information about the syntax, see [Source Line Syntax](source-line-syntax.md).
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL
 description: The WIA\_IPA\_RAW\_BITS\_PER\_CHANNEL property contains the number of bits in each color channel.
-ms.assetid: 541d5409-b095-4bf0-bdc7-cc56d416ed43
 keywords: ["WIA_IPA_RAW_BITS_PER_CHANNEL Imaging Devices"]
 topic_type:
 - apiref

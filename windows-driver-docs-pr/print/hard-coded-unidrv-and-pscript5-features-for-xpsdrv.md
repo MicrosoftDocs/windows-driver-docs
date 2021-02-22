@@ -1,7 +1,6 @@
 ---
 title: Hard-Coded UniDrv and PScript5 Features for XPSDrv
 description: Hard-Coded UniDrv and PScript5 Features for XPSDrv
-ms.assetid: d2922bc4-83d7-40da-adee-15c0810f2321
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

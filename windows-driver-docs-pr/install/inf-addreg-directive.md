@@ -1,7 +1,6 @@
 ---
 title: INF AddReg Directive
 description: An AddReg directive references one or more INF-writer-defined add-registry-sections that are used to modify or create registry information.
-ms.assetid: e8162e20-0d8c-4400-9f4d-5f4abe81305b
 keywords:
 - INF AddReg Directive Device and Driver Installation
 topic_type:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 An **AddReg** directive references one or more INF-writer-defined *add-registry-sections* that are used to modify or create registry information.
 
-```ini
+```inf
 [DDInstall] | 
 [DDInstall.HW] | 
 [DDInstall.CoInstallers] | 
@@ -46,7 +45,7 @@ Each *add-registry section* can have entries to do the following:
 
 Each named *add-registry section* referenced by an **AddReg** directive has the following format:
 
-```ini
+```inf
 [add-registry-section]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
 reg-root, [subkey],[value-entry-name],[flags],[value][,[value]]
@@ -80,8 +79,8 @@ Relative root, in which keys that are specified by using this abbreviation are r
 
 | INF Section Containing AddReg Directive                        | Registry Key Referenced by HKR                                                        |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| INF ***DDInstall*** |
-| INF ***DDInstall*.HW** |
+| INF [***DDInstall***](inf-ddinstall-section.md) section       | The device's *software key* |
+| INF [***DDInstall*.HW**](inf-ddinstall-hw-section.md) section | The device's *hardware key* |
 | INF *\[service-install-section\]* section                      | The **Services** key                                                                  |
 | INF *\[event-log-install\]* section                            | The **EventLog** key                                                                  |
 | INF *\[add-interface-section\]* section                        | The device interface's registry key                                                    |
@@ -138,26 +137,26 @@ Reset to the supplied *value* only if the specified *value-entry-name* already e
 (Windows XP and later versions of Windows.) Make the specified change in the 32-bit registry. If not specified, the change is made to the native registry.
 
 <a href="" id="0x00000000--flg-addreg-type-sz-"></a>**0x00000000** (FLG_ADDREG_TYPE_SZ)  
-The given value entry and/or value is of type [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
+The given value entry and/or value is of type [REG_SZ](/windows/desktop/SysInfo/registry-value-types).
 
 **Note**  This value is the default type for a specified value entry, so the flags value can be omitted from any r*eg-root=* line in an *add-registry-section* that operates on a value entry of this type.
 
  
 
 <a href="" id="0x00010000--flg-addreg-type-multi-sz-"></a>**0x00010000** (FLG_ADDREG_TYPE_MULTI_SZ)  
-The given value entry and/or value is of the registry type [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). The value field that follows can be a list of strings separated by commas. This specification does not require any NULL terminator for a given string value.
+The given value entry and/or value is of the registry type [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types). The value field that follows can be a list of strings separated by commas. This specification does not require any NULL terminator for a given string value.
 
 <a href="" id="0x00020000--flg-addreg-type-expand-sz--"></a>**0x00020000** (FLG_ADDREG_TYPE_EXPAND_SZ)   
-The given *value-entry-name* and/or *value* is of the registry type [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
+The given *value-entry-name* and/or *value* is of the registry type [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types).
 
-<a href="" id="0x00010001--flg-addreg-type-dword---flg-addreg-type-dword-"></a>**0x00010001** (FLG_ADDREG_TYPE_DWORD) (FLG_ADDREG_TYPE_DWORD)  
-The given *value-entry-name* and/or *value* is of the registry type [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
+<a href="" id="0x00010001--flg-addreg-type-dword---flg-addreg-type-dword-"></a>**0x00010001** (FLG_ADDREG_TYPE_DWORD)  
+The given *value-entry-name* and/or *value* is of the registry type [REG_DWORD](/windows/desktop/SysInfo/registry-value-types).
 
 <a href="" id="0x00020001--flg-addreg-type-none-"></a>**0x00020001** (FLG_ADDREG_TYPE_NONE)  
-The given *value-entry-name* and/or *value* is of the registry type [REG_NONE](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
+The given *value-entry-name* and/or *value* is of the registry type [REG_NONE](/windows/desktop/SysInfo/registry-value-types).
 
 <a href="" id="value"></a>*value*  
-This optionally specifies a new value for the specified *value-entry-name* to be added to the given registry key. Such a *value* can be a "replacement" value for an existing named value entry in an existing key, a value to be appended (*flag* value **0x00010008**) to an existing named [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)-type value entry in an existing key, a new value entry to be written into an existing key, or the initial value entry for a new *subkey* to be added to the registry.
+This optionally specifies a new value for the specified *value-entry-name* to be added to the given registry key. Such a *value* can be a "replacement" value for an existing named value entry in an existing key, a value to be appended (*flag* value **0x00010008**) to an existing named [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types)-type value entry in an existing key, a new value entry to be written into an existing key, or the initial value entry for a new *subkey* to be added to the registry.
 
 The expression of such a *value* depends on the registry type specified for the *flag*, as follows:
 
@@ -176,7 +175,7 @@ If an <em>add-registry-section</em>**.security** section is specified, the follo
 
 Do *not* specify ACE strings that grant write access to nonprivileged users.
 
-For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](https://docs.microsoft.com/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
+For information about security descriptor strings, see [Security Descriptor Definition Language (Windows)](/windows/desktop/SecAuthZ/security-descriptor-definition-language). For information about the format of security descriptor strings, see Security Descriptor Definition Language (Windows).
 
 For more information about how to specify security descriptors, see [Creating Secure Device Installations](creating-secure-device-installations.md).
 
@@ -197,17 +196,17 @@ Each *add-registry-section* name must be unique to the INF file, but it can be r
 
 To represent a number of a registry type other than one of the predefined REG_*XXX* types, specify a new type number in the high word of the *flag* ORed with FLG_ADDREG_BINVALUETYPE in its low word. The data for such a *value* must be specified in binary format as a sequence of bytes separated by commas. For example, to store 16 bytes of data of a new registry data type, such as 0x38, as a value entry, the add-registry section entry would be something like the following:
 
-```ini
+```inf
 HKR,,MYValue,0x00380001,1,0,2,3,4,5,6,7,8,9,A,B,C,D,E,F
 ```
 
-This technique can be used to define new registry types for numeric values, but not for values of type [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), [REG_MULTI_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), [REG_NONE](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types), or [REG_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more info about these types, see [Registry value types](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types).
+This technique can be used to define new registry types for numeric values, but not for values of type [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types), [REG_MULTI_SZ](/windows/desktop/SysInfo/registry-value-types), [REG_NONE](/windows/desktop/SysInfo/registry-value-types), or [REG_SZ](/windows/desktop/SysInfo/registry-value-types). For more info about these types, see [Registry value types](/windows/desktop/SysInfo/registry-value-types).
 
 ### Special *value-entry-name* Keywords
 
 Special keywords are defined for use in the HKR **AddReg** entries. The format for the entries that use these keywords is as follows:
 
-```ini
+```inf
 [HKR,,DeviceCharacteristics,0x10001,characteristics] 
 [HKR,,DeviceType,0x10001,device-type] 
 [HKR,,Security,,security-descriptor-string] 
@@ -227,7 +226,7 @@ A **DeviceCharacteristics** HKR **AddReg** entry specifies characteristics for t
 
 Only the following values can be specified in an INF:
 
-```ini
+```inf
 #define FILE_REMOVABLE_MEDIA            0x00000001
 #define FILE_READ_ONLY_DEVICE           0x00000002
 #define FILE_FLOPPY_DISKETTE            0x00000004
@@ -235,16 +234,16 @@ Only the following values can be specified in an INF:
 #define FILE_DEVICE_SECURE_OPEN         0x00000100
 ```
 
-For a description of these values, see [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice).
+For a description of these values, see [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice).
 
 The characteristics values, which are specified by using a **DeviceCharacteristics** entry, are ORed with those specified in each call to **IoCreateDevice** that creates a device object on the device stack. The OR operation occurs after all device objects are added, but before the device is started.
 
 The *characteristics* value (including a value of zero) overrides any class-wide device characteristics that were specified in the associated class installer INF.
 
-For more information about device characteristics, see [Specifying Device Characteristics](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-characteristics).
+For more information about device characteristics, see [Specifying Device Characteristics](../kernel/specifying-device-characteristics.md).
 
 <a href="" id="devicetype"></a>**DeviceType**  
-A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types). For more information, see [Specifying Device Types](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-device-types).
+A **DeviceType** HKR **AddReg** entry specifies a device type for the device. The device-type is the numeric value of a FILE_DEVICE_*XXX* constant defined in *Wdm.h* or *Ntddk.h*. The flag value of 0x10001 specifies that the device-type value is a [REG_DWORD](/windows/desktop/SysInfo/registry-value-types). For more information, see [Specifying Device Types](../kernel/specifying-device-types.md).
 
 A class-installer INF should specify the device type that applies to all, or almost all, of the devices in the class. For example, if the devices in the class are of type FILE_DEVICE_CD_ROM, specify a *device-type* of 0x02. If a device INF specifies a value for **DeviceType**, it overrides the value set by the class installer, if any. If the class or device INF specifies a **DeviceType** value, the PnP manager applies that type to the *physical device object (PDO)* created by the device's bus driver.
 
@@ -264,7 +263,7 @@ An **UpperFilters** HKR **AddReg** entry specifies a PnP upper-filter driver. Th
 A **LowerFilters** HKR **AddReg** entry specifies a PnP lower-filter driver. This entry in a <em>DDInstall</em>**.HW section** defines one or more device-specific lower-filter drivers. In a **ClassInstall32** section, this entry defines one or more class-wide lower-filter drivers.
 
 <a href="" id="exclusive"></a>**Exclusive**  
-An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an *exclusive device*. Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/specifying-exclusive-access-to-device-objects).
+An **Exclusive** HKR **AddReg** entry, if it exists and is set to "1", specifies that the device is an *exclusive device*. Otherwise the device is not treated as exclusive. For more information, see [Specifying Exclusive Access to Device Objects](../kernel/specifying-exclusive-access-to-device-objects.md).
 
 <a href="" id="enumproppages32"></a>**EnumPropPages32**  
 An **EnumPropPages32** HKR **AddReg** entry specifies the name of a dynamic-link library (*DLL*) file that is a device-specific property page provider. It also specifies the name of the **ExtensionPropSheetPageProc** callback function as implemented by the DLL. For more information about property pages and functions, see the Microsoft Windows Software Development Kit (SDK) for Windows 7 and .NET Framework 4.0.
@@ -274,7 +273,7 @@ An **EnumPropPages32** HKR **AddReg** entry specifies the name of a dynamic-link
  
 
 <a href="" id="locationinformationoverride"></a>**LocationInformationOverride**  
-(Windows XP and later versions of Windows) A **LocationInformationOverride** HKR **AddReg** entry can be used to specify a text string that describes a device's physical location. It overrides the **LocationInformation** string that the device's bus driver supplies in response to an [**IRP_MN_QUERY_DEVICE_TEXT**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-text) request.
+(Windows XP and later versions of Windows) A **LocationInformationOverride** HKR **AddReg** entry can be used to specify a text string that describes a device's physical location. It overrides the **LocationInformation** string that the device's bus driver supplies in response to an [**IRP_MN_QUERY_DEVICE_TEXT**](../kernel/irp-mn-query-device-text.md) request.
 
 <a href="" id="resourcepickertags"></a>**ResourcePickerTags**  
 A **ResourcePickerTags** HKR **AddReg** entry specifies resource picker tags for a device.
@@ -287,7 +286,7 @@ Examples
 
 An **AddReg** directive referenced the (SCSI) Miniport_EventLog_AddReg section in this example, under an INF-writer-defined section referenced by the **AddService** directive in a <em>DDInstall</em>**.Services** section of this INF.
 
-```ini
+```inf
 [Miniport_EventLog_AddReg]
 HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll" 
 ; double quotation marks delimiters in preceding entry prevent truncation 
@@ -295,6 +294,8 @@ HKR,,EventMessageFile,0x00020000,"%%SystemRoot%%\System32\IoLogMsg.dll"
  
 HKR,,TypesSupported,0x00010001,7 
 ```
+
+Note that you can either specify flag values in hexadecimal format, as shown in the example, or you can define string placeholders such as `%FLG_ADDREG_TYPE_DWORD%` in the [Strings] section of each INF file.
 
 ## See also
 
@@ -324,11 +325,4 @@ HKR,,TypesSupported,0x00010001,7
 [**Strings**](inf-strings-section.md)
 
  
-
- 
-
-
-
-
-
 

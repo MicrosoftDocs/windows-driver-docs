@@ -1,7 +1,6 @@
 ---
 title: Device Stacks for an ACPI Device
 description: Device Stacks for an ACPI Device
-ms.assetid: f177d29f-eaf9-4126-8cb3-9355d977bfb0
 keywords:
 - ACPI devices WDK , device stacks
 - device stacks WDK ACPI
@@ -33,16 +32,11 @@ If the device is not a hardware device integrated into the system board, the ACP
 
 ### System-Supplied Root Bus Driver and ACPI Driver
 
-Microsoft supplies the root bus driver and the [ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver). On systems that have an ACPI BIOS, the HAL causes the ACPI driver to be loaded during system startup at the base of the device tree, where it acts as the interface between the operating system and the BIOS. The ACPI driver is transparent to other drivers.
+Microsoft supplies the root bus driver and the [ACPI driver](../kernel/acpi-driver.md). On systems that have an ACPI BIOS, the HAL causes the ACPI driver to be loaded during system startup at the base of the device tree, where it acts as the interface between the operating system and the BIOS. The ACPI driver is transparent to other drivers.
 
 ### Vendor-Supplied Function Driver
 
 A vendor can supply an optional WDM function driver for an ACPI device. The function driver implements the device's operation region and the related device-specific operation.
 
  
-
- 
-
-
-
 

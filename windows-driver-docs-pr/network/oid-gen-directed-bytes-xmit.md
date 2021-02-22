@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_DIRECTED_BYTES_XMIT
 description: As a query, the OID_GEN_DIRECTED_BYTES_XMIT OID specifies the number of bytes in directed packets that are transmitted without errors.
-ms.assetid: 645215fb-457e-43cd-b45e-e34f313af46e
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_DIRECTED_BYTES_XMIT Network Drivers Starting with Windows Vista
@@ -33,7 +32,7 @@ Optional.
 Remarks
 -------
 
-For general information about statistics OIDs, see [General Statistics](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-general-statistics-oids).
+For general information about statistics OIDs, see [General Statistics](./ndis-general-statistics-oids.md).
 
 Requirements
 ------------
@@ -57,9 +56,4 @@ Requirements
 [OID\_GEN\_STATISTICS](oid-gen-statistics.md)
 
  
-
- 
-
-
-
 

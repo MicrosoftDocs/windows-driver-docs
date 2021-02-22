@@ -1,7 +1,6 @@
 ---
 title: calldata
 description: The calldata extension displays performance information in the form of procedure call statistics from the named table.
-ms.assetid: 50f63fd3-a0fa-44f0-a7aa-752ae098f4e8
 keywords: ["calldata Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

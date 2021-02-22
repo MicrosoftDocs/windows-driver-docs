@@ -1,7 +1,6 @@
 ---
 title: Test-Signing Driver Packages
 description: Test-Signing Driver Packages
-ms.assetid: 84727762-5ba0-48ea-8d5a-7ac54aadbb7e
 keywords:
 - driver signing WDK , driver packages
 - signing drivers WDK , driver packages
@@ -21,9 +20,9 @@ ms.localizationpriority: medium
 
 In this section, a computer that test-signs drivers for release on Windows Vista and later versions of Windows is referred to as the *signing computer*. The signing computer must be running Windows XP SP2 or later versions of Windows. For example, a driver intended for release on Windows 7 can be signed on a computer running Windows Vista.
 
-In order to use the [driver signing tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-signing-drivers), the signing computer must have the Windows Vista and later versions of the WDK installed.
+In order to use the [driver signing tools](../devtest/tools-for-signing-drivers.md), the signing computer must have the Windows Vista and later versions of the WDK installed.
 
-**Note**  You must use the version of the [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of the SignTool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
+**Note**  You must use the version of the [**SignTool**](../devtest/signtool.md) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of the SignTool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
 
  
 
@@ -35,7 +34,7 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 ### <a href="" id="pnp-kernel-mode-boot-start-driver"></a> PnP Kernel-Mode Boot-Start Driver
 
-To comply with the kernel-mode code signing policy file as follows:
+To comply with the kernel-mode code signing policy of 64-bit versions of Windows Vista and later versions of Windows, embed a signature in the *boot-start driver* file as follows:
 
 1.  [Test-sign the driver file](test-signing-a-driver-file.md).
 
@@ -73,7 +72,7 @@ The kernel-mode code signing policy on 64-bit versions of Windows Vista and late
 
 For a PnP kernel-mode driver that is not a *boot-start driver*, signing the catalog file for the driver package complies with the kernel-mode code signing policy on 64-bit versions of Windows Vista and later versions of Windows, as well as the PnP device installation signing requirements for all versions of Windows Vista and later.
 
-You can submit a request to have the Windows Hardware Quality Labs (WHQL) test-sign.
+You can submit a request to have the Windows Hardware Quality Labs (WHQL) test-sign the catalog file. Alternatively, you can test-sign a catalog file yourself with a test certificate in the same manner as described in this section for test-signing the catalog file of a PnP kernel-mode *boot-start driver*.
 
 ### <a href="" id="non-pnp-kernel-mode-driver-that-is-not-a-boot-start-driver"></a> Non-PnP Kernel-Mode Driver that is not a Boot-Start Driver
 
@@ -83,7 +82,7 @@ Starting with Windows Vista, embedding a signature in a driver file is optional 
 
 The PnP device installation signing requirements do not apply to non-PnP drivers.
 
-**Note**   Using embedded signatures is generally simpler and more efficient than using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://docs.microsoft.com/windows-hardware/drivers).
+**Note**   Using embedded signatures is generally simpler and more efficient than using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](/windows-hardware/drivers).
 
  
 
@@ -102,10 +101,4 @@ The PnP device installation signing requirements do not apply to non-PnP drivers
 3.  [Verify the signature of the test-signed catalog file](verifying-the-signature-of-a-test-signed-catalog-file.md).
 
  
-
- 
-
-
-
-
 

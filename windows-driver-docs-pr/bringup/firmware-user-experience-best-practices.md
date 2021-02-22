@@ -21,18 +21,14 @@ The **Related resources** links contain the most recent information on firmware 
 
 ## Related resources
 
-[Windows UEFI firmware update platform](https://docs.microsoft.com/windows-hardware/drivers/bringup/windows-uefi-firmware-update-platform)
+[Windows UEFI firmware update platform](./windows-uefi-firmware-update-platform.md)
 
-[Seamless crisis prevention and recovery](https://docs.microsoft.com/windows-hardware/drivers/bringup/seamless-crisis-prevention-and-recovery)
+[Seamless crisis prevention and recovery](./seamless-crisis-prevention-and-recovery.md)
 
-[User experience for UEFI firmware updates](https://docs.microsoft.com/windows-hardware/drivers/bringup/user-experience-for-uefi-firmware-updates)
+[User experience for UEFI firmware updates](./user-experience-for-uefi-firmware-updates.md)
 
-[Boot screen components](https://docs.microsoft.com/windows-hardware/drivers/bringup/boot-screen-components)
+[Boot screen components](./boot-screen-components.md)
 
-[ESRT table definition](https://docs.microsoft.com/windows-hardware/drivers/bringup/esrt-table-definition)
+[ESRT table definition](./esrt-table-definition.md)
 
-[Validating Windows UEFI Firmware Update Platform Functionality](https://docs.microsoft.com/windows-hardware/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality)
-
-
-
-
+[Validating Windows UEFI Firmware Update Platform Functionality](/windows-hardware/manufacture/desktop/validating-windows-uefi-firmware-update-platform-functionality)

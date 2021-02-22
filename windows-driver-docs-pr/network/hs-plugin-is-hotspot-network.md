@@ -1,7 +1,6 @@
 ---
 title: HS_PLUGIN_IS_HOTSPOT_NETWORK function
 description: The HS_PLUGIN_IS_HOTSPOT_NETWORK function is called by the host to determine if a specified network is a hotspot network.
-ms.assetid: 24a26ee0-9eb1-49fa-95da-40315a4aab3a
 keywords: 
 - typedef DWORD (WINAPI HS_PLUGIN_IS_HOTSPOT_NETWORK) function Network Drivers Starting with Windows Vista
 ms.date: 07/31/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # HS\_PLUGIN\_IS\_HOTSPOT\_NETWORK function
 
-[!include[Wi-Fi Hotspot Offloading deprecation](wi-fi-hotspot-offloading-deprecation.md)]
+[!include[Wi-Fi Hotspot Offloading deprecation](../includes/wi-fi-hotspot-offloading-deprecation.md)]
 
 
 The **HS\_PLUGIN\_IS\_HOTSPOT\_NETWORK** function is called by the host to determine if a specified network is a hotspot network.

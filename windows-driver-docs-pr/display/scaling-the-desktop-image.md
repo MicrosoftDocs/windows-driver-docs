@@ -1,7 +1,6 @@
 ---
 title: Scaling the Desktop Image
 description: Scaling the Desktop Image
-ms.assetid: e27c7510-45b0-46e6-878f-b901cdd1cd57
 keywords:
 - connecting displays WDK Windows 7 display , CCD concepts, scaling the desktop image
 - connecting displays WDK Windows Server 2008 R2 display , CCD concepts, scaling the desktop image
@@ -20,28 +19,28 @@ ms.localizationpriority: medium
 
 This section applies only to Windows 7 and later, and Windows Server 2008 R2 and later versions of the Windows operating system.
 
-A caller can use the [**SetDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) CCD function to scale the desktop image to the monitor. If the desktop and monitor use the same resolution, **SetDisplayConfig** is not required to scale the desktop image to the monitor. This **SetDisplayConfig** operation is known as identify scaling. If the desktop and monitor resolution are different, **SetDisplayConfig** applies one of the following types of scaling. The monitor resolution is defined by the [**DISPLAYCONFIG\_TARGET\_MODE**](https://docs.microsoft.com/windows/desktop/api/wingdi/ns-wingdi-displayconfig_target_mode) structure.
+A caller can use the [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) CCD function to scale the desktop image to the monitor. If the desktop and monitor use the same resolution, **SetDisplayConfig** is not required to scale the desktop image to the monitor. This **SetDisplayConfig** operation is known as identify scaling. If the desktop and monitor resolution are different, **SetDisplayConfig** applies one of the following types of scaling. The monitor resolution is defined by the [**DISPLAYCONFIG\_TARGET\_MODE**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_target_mode) structure.
 
 <span id="Centered"></span><span id="centered"></span><span id="CENTERED"></span>**Centered**  
-Centered scaling is a mode in which the desktop is displayed on the monitor without any scaling at all. When [**SetDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) applies centered scaling, black bands might be visible above and below the desktop. The following figure shows centered scaling.
+Centered scaling is a mode in which the desktop is displayed on the monitor without any scaling at all. When [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) applies centered scaling, black bands might be visible above and below the desktop. The following figure shows centered scaling.
 
 ![figure illustrating centered scaling](images/ccd-center-scale.png)
 
 <span id="Stretched"></span><span id="stretched"></span><span id="STRETCHED"></span>**Stretched**  
-Stretched scaling is a mode in which the desktop is horizontally and vertically stretched on the monitor to ensure that the entire display is used. When [**SetDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) applies stretched scaling, no black bands are visible above and below the desktop. However, the desktop might appear distorted. The following figure shows stretched scaling.
+Stretched scaling is a mode in which the desktop is horizontally and vertically stretched on the monitor to ensure that the entire display is used. When [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) applies stretched scaling, no black bands are visible above and below the desktop. However, the desktop might appear distorted. The following figure shows stretched scaling.
 
 ![figure illustrating stretched scaling](images/ccd-stretch-scale.png)
 
 <span id="Aspect-Ratio-Preserving_Stretched"></span><span id="aspect-ratio-preserving_stretched"></span><span id="ASPECT-RATIO-PRESERVING_STRETCHED"></span>**Aspect-Ratio-Preserving Stretched**  
-Aspect-ratio-preserving stretched scaling is a mode in which the desktop is stretched horizontally and vertically as much as possible while maintaining the aspect ratio. When [**SetDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) applies aspect-ratio-preserving stretched scaling, black bands might be visible either *above and below* or *left and right of* the desktop. However, black bands cannot be visible both *above and below* and *left and right of* the desktop. Because users are expected to prefer this type of scaling, **SetDisplayConfig** applies this type of scaling as the default. The following figure shows aspect-ratio-preserving stretched scaling.
+Aspect-ratio-preserving stretched scaling is a mode in which the desktop is stretched horizontally and vertically as much as possible while maintaining the aspect ratio. When [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) applies aspect-ratio-preserving stretched scaling, black bands might be visible either *above and below* or *left and right of* the desktop. However, black bands cannot be visible both *above and below* and *left and right of* the desktop. Because users are expected to prefer this type of scaling, **SetDisplayConfig** applies this type of scaling as the default. The following figure shows aspect-ratio-preserving stretched scaling.
 
 ![figure illustrating aspect-ratio-preserving stretched scaling](images/ccd-arpstretch-scale.png)
 
-Scaling depends on the source and target modes that are used for a path. In addition, the caller can call [**SetDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) without specifying the target mode information (that is, setting the *modeInfoArray* parameter is optional and can be set to **NULL**). Therefore, the caller cannot typically predict if **SetDisplayConfig** must perform any scaling. Furthermore, no API exists to get the full list of scaling types that the graphics adapter supports. The [**EnumDisplaySettings**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-enumdisplaysettingsa) Win32 function (described in the Windows SDK documentation) returns DMDFO\_DEFAULT in the **dmDisplayFixedOutput** member of the **DEVMODE** structure that the *lpDevMode* parameter points to when the caller requests the new Windows 7 scaling types.
+Scaling depends on the source and target modes that are used for a path. In addition, the caller can call [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) without specifying the target mode information (that is, setting the *modeInfoArray* parameter is optional and can be set to **NULL**). Therefore, the caller cannot typically predict if **SetDisplayConfig** must perform any scaling. Furthermore, no API exists to get the full list of scaling types that the graphics adapter supports. The [**EnumDisplaySettings**](/windows/win32/api/winuser/nf-winuser-enumdisplaysettingsa) Win32 function (described in the Windows SDK documentation) returns DMDFO\_DEFAULT in the **dmDisplayFixedOutput** member of the **DEVMODE** structure that the *lpDevMode* parameter points to when the caller requests the new Windows 7 scaling types.
 
-The scaling that a caller passes to [**SetDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) is a scaling intent rather than an explicit request to perform a scaling operation. If scaling is required (for example, source and target resolutions differ), **SetDisplayConfig** uses the scaling that the caller supplies. If the supplied scaling is not supported, **SetDisplayConfig** uses the graphics adapter's default scaling. When the source and target resolutions that the caller passes to **SetDisplayConfig** are the same, **SetDisplayConfig** always sets identify scaling.
+The scaling that a caller passes to [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) is a scaling intent rather than an explicit request to perform a scaling operation. If scaling is required (for example, source and target resolutions differ), **SetDisplayConfig** uses the scaling that the caller supplies. If the supplied scaling is not supported, **SetDisplayConfig** uses the graphics adapter's default scaling. When the source and target resolutions that the caller passes to **SetDisplayConfig** are the same, **SetDisplayConfig** always sets identify scaling.
 
-The following table shows the different [**SetDisplayConfig**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-setdisplayconfig) scaling requests.
+The following table shows the different [**SetDisplayConfig**](/windows/win32/api/winuser/nf-winuser-setdisplayconfig) scaling requests.
 
 <table>
 <colgroup>
@@ -82,7 +81,7 @@ The following table shows the different [**SetDisplayConfig**](https://docs.micr
 <tr class="odd">
 <td align="left"><p>AdapterDefault</p></td>
 <td align="left"><p>The adapter default scaling value</p>
-<p>Currently, on tablet systems, the default is stretched. On non-tablet systems with graphics adapters that support the <a href="windows-vista-display-driver-model-design-guide.md" data-raw-source="[Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md)">Windows Display Driver Model (WDDM)</a>, the default is defined by the driver. On non-tablet systems with graphics adapters that support the Windows Display Driver Model (WDDM) with <a href="https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development" data-raw-source="[features new for Windows 7](https://docs.microsoft.com/windows-hardware/drivers/what-s-new-in-driver-development)">features new for Windows 7</a>, the default is DC_ASPECTRATIOCENTEREDMAX.</p></td>
+<p>Currently, on tablet systems, the default is stretched. On non-tablet systems with graphics adapters that support the <a href="windows-vista-display-driver-model-design-guide.md" data-raw-source="[Windows Display Driver Model (WDDM)](windows-vista-display-driver-model-design-guide.md)">Windows Display Driver Model (WDDM)</a>, the default is defined by the driver. On non-tablet systems with graphics adapters that support the Windows Display Driver Model (WDDM) with <a href="/windows-hardware/drivers/what-s-new-in-driver-development" data-raw-source="[features new for Windows 7](../what-s-new-in-driver-development.md)">features new for Windows 7</a>, the default is DC_ASPECTRATIOCENTEREDMAX.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>DatabaseValue</p></td>
@@ -218,7 +217,7 @@ DatabaseValue
 
  
 
-The following table shows how the scaling that a caller can pass to the legacy [**ChangeDisplaySettingsEx**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-changedisplaysettingsexa)API (described in the Windows SDK documentation) maps to the scaling set.
+The following table shows how the scaling that a caller can pass to the legacy [**ChangeDisplaySettingsEx**](/windows/win32/api/winuser/nf-winuser-changedisplaysettingsexa)API (described in the Windows SDK documentation) maps to the scaling set.
 
 Scaling flag passed to ChangeDisplaySettingsEx
 The resultant source mode and target mode have same resolution
@@ -293,7 +292,7 @@ DatabaseValue
 
  
 
-The following table shows how display configuration scaling is translated and returned from [**EnumDisplaySettings**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-enumdisplaysettingsa).
+The following table shows how display configuration scaling is translated and returned from [**EnumDisplaySettings**](/windows/win32/api/winuser/nf-winuser-enumdisplaysettingsa).
 
 <table>
 <colgroup>
@@ -338,7 +337,7 @@ The following table shows how display configuration scaling is translated and re
 
 ### <span id="directx_games_and_scaling"></span><span id="DIRECTX_GAMES_AND_SCALING"></span>DirectX Games and Scaling
 
-Microsoft DirectX 9L and earlier runtimes require that applications always call the [**ChangeDisplaySettingsEx**](https://docs.microsoft.com/windows/desktop/api/winuser/nf-winuser-changedisplaysettingsexa) function without DM\_DISPLAYFIXEDOUTPUT set in the **dmFields** member of the DEVMODE structure that the *lpDevMode* parameter points to. DirectX 10 and later runtimes allow applications to choose the scaling that those applications pass to **ChangeDisplaySettingsEx**. The following table shows the mapping of scaling values to scaling flags that are passed to **ChangeDisplaySettingsEx**.
+Microsoft DirectX 9L and earlier runtimes require that applications always call the [**ChangeDisplaySettingsEx**](/windows/win32/api/winuser/nf-winuser-changedisplaysettingsexa) function without DM\_DISPLAYFIXEDOUTPUT set in the **dmFields** member of the DEVMODE structure that the *lpDevMode* parameter points to. DirectX 10 and later runtimes allow applications to choose the scaling that those applications pass to **ChangeDisplaySettingsEx**. The following table shows the mapping of scaling values to scaling flags that are passed to **ChangeDisplaySettingsEx**.
 
 <table>
 <colgroup>
@@ -370,12 +369,4 @@ Microsoft DirectX 9L and earlier runtimes require that applications always call 
  
 
 By using this information in combination with the preceding scaling tables, you can determine the expected scaling from a DirectX application.
-
- 
-
- 
-
-
-
-
 

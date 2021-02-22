@@ -1,7 +1,6 @@
 ---
 title: OID_CO_TAPI_TRANSLATE_TAPI_SAP
 description: This topic describes the OID_CO_TAPI_TRANSLATE_TAPI_SAP object identifier (OID).
-ms.assetid: 701a1d02-8528-4b61-adbb-97c817194ac7
 keywords:
 - OID_CO_TAPI_TRANSLATE_TAPI_SAP
 ms.date: 11/03/2017
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # OID_CO_TAPI_TRANSLATE_TAPI_SAP
 
-The OID_CO_TAPI_TRANSLATE_TAPI_SAP OID requests a call manager or integrated MCM driver to prepare one or more SAPs from TAPI call parameters. The client that queries this OID uses an NDIS SAP returned by the call manager or MCM driver as an input (formatted as a [CO_SAP](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545392(v=vs.85)) structure) to [NdisClRegisterSap](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclregistersap), which the client calls to register a SAP on which to receive incoming calls.
+The OID_CO_TAPI_TRANSLATE_TAPI_SAP OID requests a call manager or integrated MCM driver to prepare one or more SAPs from TAPI call parameters. The client that queries this OID uses an NDIS SAP returned by the call manager or MCM driver as an input (formatted as a [CO_SAP](/previous-versions/windows/hardware/network/ff545392(v=vs.85)) structure) to [NdisClRegisterSap](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclregistersap), which the client calls to register a SAP on which to receive incoming calls.
 
 This request uses a CO_TAPI_TRANSLATE_SAP structure, which is defined as follows:
 
@@ -84,15 +83,12 @@ The media mode of the call is VoiceView.
 This is reserved. The client must set this field to 0.
 
 **NumberOfSaps**  
-Specifies the number of [NDIS_VAR_DATA_DESC](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structures contained in the buffer at **NdisSapParams**.
+Specifies the number of [NDIS_VAR_DATA_DESC](/previous-versions/windows/hardware/network/ff559020(v=vs.85)) structures contained in the buffer at **NdisSapParams**.
 
 **NdisSapParams**  
-Specifies a variable-length array that contains one or more NDIS_VAR_DATA_DESC structures. Each NDIS_VAR_DATA_DESC structure contains an offset to, as well as the length of, a [CO_SAP](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545392(v=vs.85)) structure. Each CO_SAP structure specifies a service access point (SAP) on which a connection-oriented client can receive incoming calls.
+Specifies a variable-length array that contains one or more NDIS_VAR_DATA_DESC structures. Each NDIS_VAR_DATA_DESC structure contains an offset to, as well as the length of, a [CO_SAP](/previous-versions/windows/hardware/network/ff545392(v=vs.85)) structure. Each CO_SAP structure specifies a service access point (SAP) on which a connection-oriented client can receive incoming calls.
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
-
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)

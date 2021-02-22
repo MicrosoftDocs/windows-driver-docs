@@ -1,7 +1,6 @@
 ---
 title: Conforming to the DXGI DDI
 description: Conforming to the DXGI DDI
-ms.assetid: 1c789f57-003e-4b29-9a81-dbf194670664
 keywords:
 - Direct3D version 11 WDK Windows 7 display , DXGI DDI conformance
 - Direct3D version 11 WDK Windows Server 2008 R2 display , DXGI DDI conformance
@@ -32,7 +31,7 @@ Because Direct3D version 11 devices must support presentation from any scan-out 
 
 -   DXGI\_FORMAT\_B8G8R8X8\_UNORM
 
-There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_USAGE\_BACKBUFFER (from the [DXGI\_USAGE](https://go.microsoft.com/fwlink/p/?linkid=122799) enumeration) is set, the following are the only other DXGI usages that are allowed:
+There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_USAGE\_BACKBUFFER (from the [DXGI\_USAGE](/windows/win32/direct3ddxgi/dxgi-usage) enumeration) is set, the following are the only other DXGI usages that are allowed:
 
 -   DXGI\_USAGE\_SHADERINPUT, which maps to D3D11\_BIND\_SHADER\_RESOURCE
 
@@ -41,10 +40,4 @@ There are back buffer restrictions with the Direct3D version 11 DDI. If DXGI\_US
 Note that no CPU access flags are allowed for back buffers.
 
  
-
- 
-
-
-
-
 

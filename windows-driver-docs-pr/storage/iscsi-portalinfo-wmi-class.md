@@ -1,7 +1,6 @@
 ---
 title: ISCSI\_PortalInfo WMI Class
 description: ISCSI\_PortalInfo WMI Class
-ms.assetid: b38aa87c-00a5-483e-aa44-23f359783829
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -60,13 +59,7 @@ class ISCSI_PortalInfo
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_PortalInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_portalinfo) data structure.
+When the WMI tool suite compiles the preceding class definition, it produces the [**ISCSI\_PortalInfo**](/windows-hardware/drivers/ddi/iscsimgt/ns-iscsimgt-_iscsi_portalinfo) data structure.
 
  
-
- 
-
-
-
-
 

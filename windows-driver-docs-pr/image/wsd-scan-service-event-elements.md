@@ -1,7 +1,6 @@
 ---
 title: WSD Scan Service Event Elements
 description: WSD Scan Service Event Elements
-ms.assetid: 87141df8-a0cf-484c-a0ec-12129ad5fa3a
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

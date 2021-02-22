@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SMS_STATUS
 description: OID_WWAN_SMS_STATUS reports the status of the MB device's message store.
-ms.assetid: a43451e6-f589-4963-acc7-855555655d37
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SMS_STATUS Network Drivers Starting with Windows Vista
@@ -22,7 +21,7 @@ Miniport drivers must process query requests asynchronously, initially returning
 Remarks
 -------
 
-For more information about using this OID, see [WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations).
+For more information about using this OID, see [WWAN SMS Operations](./mb-sms-operations.md).
 
 When processing this OID, miniport drivers can access the Subscriber Identity Module (SIM card), but should not access the provider network.
 
@@ -51,14 +50,9 @@ Requirements
 ## See also
 
 
-[WWAN SMS Operations](https://docs.microsoft.com/windows-hardware/drivers/network/mb-sms-operations)
+[WWAN SMS Operations](./mb-sms-operations.md)
 
 [**NDIS\_STATUS\_WWAN\_SMS\_STATUS**](ndis-status-wwan-sms-status.md)
 
  
-
- 
-
-
-
 

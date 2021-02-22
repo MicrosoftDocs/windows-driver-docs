@@ -1,7 +1,6 @@
 ---
 title: GUID_IO_VOLUME_DEVICE_INTERFACE
 description: GUID_IO_VOLUME_DEVICE_INTERFACE
-ms.assetid: 8c623d9c-bc55-4dce-a78a-0b23f8e5b4b5
 keywords: ["GUID_IO_VOLUME_DEVICE_INTERFACE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_IO_VOLUME_DEVICE_INTERFACE
 
 
-The GUID_IO_VOLUME_DEVICE_INTERFACE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for volume devices.
+The GUID_IO_VOLUME_DEVICE_INTERFACE [device interface class](./overview-of-device-interface-classes.md) is defined for volume devices.
 
 <table>
 <colgroup>
@@ -72,11 +71,4 @@ Requirements
 [**GUID_DEVINTERFACE_VOLUME**](guid-devinterface-volume.md)
 
  
-
- 
-
-
-
-
-
 

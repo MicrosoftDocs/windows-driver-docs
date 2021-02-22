@@ -1,7 +1,6 @@
 ---
 title: Configuring a Computer to Support Release-Signing
 description: Configuring a Computer to Support Release-Signing
-ms.assetid: 90115bb8-6ca0-4c08-b69c-f3f5388d3ff6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

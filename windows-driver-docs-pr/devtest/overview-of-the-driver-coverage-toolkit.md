@@ -1,7 +1,6 @@
 ---
 title: Overview of the Driver Coverage Toolkit
 description: Overview of the Driver Coverage Toolkit
-ms.assetid: eead0c9a-fc26-4777-b19a-e97b898e28a2
 keywords:
 - Driver Coverage Toolkit WDK , about the Driver Coverage Toolkit
 ms.date: 04/20/2017
@@ -20,7 +19,7 @@ The Driver Coverage toolkit monitor and report on the I/O request packets (IRPs)
 The Driver Coverage toolkit collects and reports IRP coverage data based on three metrics:
 
 <span id="Major__MJ__IRP_Function_Codes"></span><span id="major__mj__irp_function_codes"></span><span id="MAJOR__MJ__IRP_FUNCTION_CODES"></span>Major (MJ) IRP Function Codes  
-The count of the MJ function codes of IRPs that were active within a driver stack for a device. The Driver Coverage toolkit collects data for 12 MJ function codes. For more information about these function codes, see [IRP Major Function Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-major-function-codes).
+The count of the MJ function codes of IRPs that were active within a driver stack for a device. The Driver Coverage toolkit collects data for 12 MJ function codes. For more information about these function codes, see [IRP Major Function Codes](../kernel/irp-major-function-codes.md).
 
 <span id="Major__MJ__and_Minor__MN__IRP_Function_Codes"></span><span id="major__mj__and_minor__mn__irp_function_codes"></span><span id="MAJOR__MJ__AND_MINOR__MN__IRP_FUNCTION_CODES"></span>Major (MJ) and Minor (MN) IRP Function Codes  
 The count of the MJ IRP function codes, along with their subordinate MN function codes, of IRPs that were active within a driver stack for a device. The Driver Coverage toolkit collects data for 52 MJ and MN function codes.
@@ -28,7 +27,7 @@ The count of the MJ IRP function codes, along with their subordinate MN function
 <span id="IRP_Pairs"></span><span id="irp_pairs"></span><span id="IRP_PAIRS"></span>IRP Pairs  
 The count of the MJ and MJ/MN IRP function codes that were concurrently active within a driver stack for a device. This count reflects the number of times separate IRPs entered or left the driver stack at the same time. The Driver Coverage toolkit collects data for 1099 MJ and MN function code pairs.
 
-For more information about the IRP function codes, see [IRP Function Codes](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550706(v=vs.85)).
+For more information about the IRP function codes, see [IRP Function Codes](/previous-versions/windows/hardware/drivers/ff550706(v=vs.85)).
 
 ### <span id="irp_coverage_data"></span><span id="IRP_COVERAGE_DATA"></span>IRP Coverage Data
 
@@ -264,10 +263,4 @@ Getting coverage data
 ```
 
  
-
- 
-
-
-
-
 

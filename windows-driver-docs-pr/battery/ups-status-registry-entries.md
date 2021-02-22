@@ -1,7 +1,6 @@
 ---
 title: UPS Status Registry Entries
 description: UPS minidrivers must set certain UPS Status Registry Entries
-ms.assetid: c24ef185-ba8d-4cfd-9d33-b70682905f00
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

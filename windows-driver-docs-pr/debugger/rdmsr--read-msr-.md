@@ -1,7 +1,6 @@
 ---
 title: rdmsr (Read MSR)
 description: The rdmsr command reads a Model-Specific Register (MSR) value from the specified address.
-ms.assetid: 693f1be5-f215-4719-ae6f-30e367cefd77
 keywords: ["rdmsr (Read MSR) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -56,7 +55,7 @@ Specifies the address of the MSR.
 Remarks
 -------
 
-The **rdmsr** command can display MSR's on x86-based, Itanium-based, and x64-based platforms. The MSR definitions are platform-specific.
+The **rdmsr** command can display MSR's on x86-based and x64-based platforms. The MSR definitions are platform-specific.
 
 ## <span id="see_also"></span>See also
 

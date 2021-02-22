@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_FLOAT
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a FLOAT-typed IEEE floating-point number.
-ms.assetid: b83a0510-674e-4141-9d3f-25efcb08aea0
 keywords: ["DEVPROP_TYPE_FLOAT Device and Driver Installation"]
 topic_type:
 - apiref

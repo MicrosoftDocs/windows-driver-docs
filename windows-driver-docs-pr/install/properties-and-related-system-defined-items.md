@@ -1,7 +1,6 @@
 ---
 title: Properties and Related System-Defined Items
 description: Properties and Related System-Defined Items
-ms.assetid: 87787a84-6403-4246-abf5-49747b883202
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ In Windows Vista and later versions of Windows, the unified device property mode
 
 -   The [system-defined properties](system-defined-device-properties2.md) and their corresponding [property keys](property-keys.md), [property data types](property-data-type-identifiers.md), and property values.
 
--   The SPDRP_*Xxx* device instance property identifiers and the SPCRP_*Xxx* device setup class property identifiers that are defined in *Setupapi.h.* The CM_DRP_*Xxx* device instance property identifiers and the CM_CRP_*Xxx*[device setup class](device-setup-classes.md) identifiers that are defined in *Cfgmgr32.h*.
+-   The SPDRP_*Xxx* device instance property identifiers and the SPCRP_*Xxx* device setup class property identifiers that are defined in *Setupapi.h.* The CM_DRP_*Xxx* device instance property identifiers and the CM_CRP_*Xxx*[device setup class](./overview-of-device-setup-classes.md) identifiers that are defined in *Cfgmgr32.h*.
 
 -   The REGSTR_VAL_*Xxx* registry entry value identifiers that pertain to device installation and management. These identifiers are defined in *Regstr.h*.
 
@@ -23,19 +22,13 @@ In Windows Vista and later versions of Windows, the unified device property mode
 
 For information about the correspondence between the system-defined items that are associated with the device properties, see the following topics:
 
-[Device Instance Properties](https://docs.microsoft.com/previous-versions/ff541334(v=vs.85))
+[Device Instance Properties](/previous-versions/ff541334(v=vs.85))
 
-[Device Setup Class Properties](https://docs.microsoft.com/previous-versions/ff542239(v=vs.85))
+[Device Setup Class Properties](/previous-versions/ff542239(v=vs.85))
 
-[Device Interface Class Properties](https://docs.microsoft.com/previous-versions/ff541406(v=vs.85))
+[Device Interface Class Properties](/previous-versions/ff541406(v=vs.85))
 
-[Device Interface Properties](https://docs.microsoft.com/previous-versions/ff541409(v=vs.85))
-
- 
+[Device Interface Properties](/previous-versions/ff541409(v=vs.85))
 
  
-
-
-
-
 

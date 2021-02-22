@@ -1,7 +1,6 @@
 ---
 title: Alpha-Blend Data Loading
 description: Alpha-Blend Data Loading
-ms.assetid: d61fbb07-a6b0-4623-bb5b-1c1218f570ae
 keywords:
 - alpha-blend data loading WDK DirectX VA
 - blended pictures WDK DirectX VA , alpha-blend data loading
@@ -23,13 +22,7 @@ When the [bDXVA\_Func variable](bdxva-func-variable.md) is equal to 2, the opera
 
 -   An AYUV graphic surface
 
-The [**DXVA\_ConfigAlphaLoad**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) structure determines which of these methods is used.
+The [**DXVA\_ConfigAlphaLoad**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configalphaload) structure determines which of these methods is used.
 
  
-
- 
-
-
-
-
 

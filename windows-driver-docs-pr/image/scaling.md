@@ -1,7 +1,6 @@
 ---
 title: Scaling element
 description: The optional Scaling element specifies the scaling of both the width and height of the scanned document.
-ms.assetid: 43769ebf-f883-418a-a0b3-87d5b23601f9
 keywords: ["Scaling element Imaging Devices"]
 topic_type:
 - apiref

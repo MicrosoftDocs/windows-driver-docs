@@ -1,7 +1,6 @@
 ---
 title: Retrieving Network Configuration Interface Pointers
 description: Retrieving Network Configuration Interface Pointers
-ms.assetid: ac3638a1-d039-478e-baec-c73d4d1b6751
 keywords:
 - notify objects WDK networking , interface pointers
 - network notify objects WDK , interface pointers
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 
 
 
-When the network configuration subsystem initializes an instance of the notify object as described in [Creating and Initializing an Instance of a Notify Object](creating-and-initializing-an-instance-of-a-notify-object.md), the object receives [**INetCfgComponent**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547715(v=vs.85)) and [**INetCfg**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff547694(v=vs.85)) interface pointers. **INetCfgComponent** points to the notify object's component interface that the object can use to access and control the component. **INetCfg** points to the root network configuration interface that the notify object can use to access all aspects of network configuration. The following code uses these **INetCfgComponent** and **INetCfg** interface pointers to retrieve other network configuration interfaces that the notify object might require.
+When the network configuration subsystem initializes an instance of the notify object as described in [Creating and Initializing an Instance of a Notify Object](creating-and-initializing-an-instance-of-a-notify-object.md), the object receives [**INetCfgComponent**](/previous-versions/windows/hardware/network/ff547715(v=vs.85)) and [**INetCfg**](/previous-versions/windows/hardware/network/ff547694(v=vs.85)) interface pointers. **INetCfgComponent** points to the notify object's component interface that the object can use to access and control the component. **INetCfg** points to the root network configuration interface that the notify object can use to access all aspects of network configuration. The following code uses these **INetCfgComponent** and **INetCfg** interface pointers to retrieve other network configuration interfaces that the notify object might require.
 
 ```C++
 // Using the notify object's component interface that the notify 
@@ -101,10 +100,4 @@ hr = pncfgclsSetup->Install(TEXT("MS_TCPIP"), pOboToken, dwSetupFlags,
 ```
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Printer Driver Testing and Debugging
 description: Printer Driver Testing and Debugging
-ms.assetid: cf6250c7-d4ae-4498-8de2-3c41e4ae3dd5
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: GetPresharedKeyForId
 description: GetPresharedKeyForId
-ms.assetid: cd83d1dc-7aa8-4514-a108-50aee91d272b
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -15,13 +14,7 @@ When an initiator uses a preshared key in a key exchange, it associates the key 
 
 However, not every authentication negotiation uses preshared keys. The **GetPresharedKeyForId** method allows a user-mode service or management application to determine if the IKE identification payload for a particular identifier is configured with a preshared key.
 
-This WMI method belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **GetPresharedKeyForId** method, see the member descriptions for the [**GetPresharedKeyForId\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_getpresharedkeyforid_in) and [**GetPresharedKeyForId\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_getpresharedkeyforid_out) structures.
+This WMI method belongs to the unpublished [MSiSCSI\_SecurityConfigOperations WMI class](msiscsi-securityconfigoperations-wmi-class.md). For a description of the parameters of the **GetPresharedKeyForId** method, see the member descriptions for the [**GetPresharedKeyForId\_IN**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_getpresharedkeyforid_in) and [**GetPresharedKeyForId\_OUT**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_getpresharedkeyforid_out) structures.
 
  
-
- 
-
-
-
-
 

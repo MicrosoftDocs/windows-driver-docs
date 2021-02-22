@@ -1,7 +1,6 @@
 ---
 title: Static Driver Verifier Reference
 description: Static Driver Verifier Reference
-ms.assetid: 94cdf0b8-d3e0-4720-a003-73e63367c38a
 keywords:
 - Static Driver Verifier WDK , reference
 - StaticDV WDK , reference
@@ -28,14 +27,5 @@ This section includes:
 ## <span id="related_topics"></span>Related topics
 
 
-[DDI Compliance Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
-
- 
-
- 
-
-
-
-
-
+[DDI Compliance Rules](./static-driver-verifier-rules.md)
 

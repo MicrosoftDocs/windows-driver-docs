@@ -1,7 +1,6 @@
 ---
 title: Strict Priority Algorithm
 description: Strict Priority Algorithm
-ms.assetid: 7C7A34CA-673C-4EFC-970D-08458AA83EAD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ Strict priority is a transmission selection algorithm (TSA) that is specified in
 
 When the network adapter employs the strict priority TSA, it selects packets for transmission based solely on the packet's specified IEEE 802.1p priority level. As a result, packets with higher priority levels are always transmitted before packets with lower priority levels.
 
-The miniport driver specifies its support for the strict priority TSA by setting NDIS\_QOS\_CAPABILITIES\_STRICT\_TSA\_SUPPORTED in the **Flags** member of the [**NDIS\_QOS\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure. The driver uses this structure to register its NDIS QoS and DCB capabilities in the call to [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes).
+The miniport driver specifies its support for the strict priority TSA by setting NDIS\_QOS\_CAPABILITIES\_STRICT\_TSA\_SUPPORTED in the **Flags** member of the [**NDIS\_QOS\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_capabilities) structure. The driver uses this structure to register its NDIS QoS and DCB capabilities in the call to [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes).
 
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
@@ -22,10 +21,4 @@ For more information about priority levels, see [IEEE 802.1p Priority Levels](ie
  
 
  
-
- 
-
-
-
-
 

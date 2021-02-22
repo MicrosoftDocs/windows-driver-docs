@@ -1,7 +1,6 @@
 ---
 title: RxAssert routine
 description: RxAssert sends an ASSERT string on checked builds of RDBSS to a kernel debugger if one is installed. For retail builds of RDBSS, calls to this routine will bug check.
-ms.assetid: 3ef01569-74ef-4f35-acaf-9c01f2b9d9a7
 keywords: ["RxAssert routine Installable File System Drivers"]
 topic_type:
 - apiref
@@ -86,18 +85,9 @@ Requirements
 ## See also
 
 
-[**ASSERT**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85))
+[**ASSERT**](/previous-versions/windows/hardware/previsioning-framework/ff542107(v=vs.85))
 
-[RtlAssert](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)
+[RtlAssert]()
 
 [**RxDbgBreakPoint**](rxdbgbreakpoint.md)
-
- 
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: IWiaUIExtension COM Interface
 description: IWiaUIExtension COM Interface
-ms.assetid: 10a8e981-889a-46f0-8bf5-da75632d4d94
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-If you implement the [IWiaUIExtension interface](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545078(v=vs.85)), you can implement none, some, or all the **IWiaUIExtension** methods. If a particular method returns E\_NOTIMPL, the system-provided alternative, and one is available, it is used instead.
+If you implement the [IWiaUIExtension interface](/previous-versions/windows/hardware/drivers/ff545078(v=vs.85)), you can implement none, some, or all the **IWiaUIExtension** methods. If a particular method returns E\_NOTIMPL, the system-provided alternative, and one is available, it is used instead.
 
 The **IWiaUIExtension** interface provides the following methods:
 
@@ -29,15 +28,15 @@ The **IWiaUIExtension** interface provides the following methods:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)" data-raw-source="[&lt;strong&gt;IWiaUIExtension::DeviceDialog&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545069(v=vs.85))"><strong>IWiaUIExtension::DeviceDialog</strong></a></p></td>
+<td><p><a href="/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)" data-raw-source="[&lt;strong&gt;IWiaUIExtension::DeviceDialog&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff545069(v=vs.85))"><strong>IWiaUIExtension::DeviceDialog</strong></a></p></td>
 <td><p>Provides a custom user interface that replaces the default system user interface.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545073(v=vs.85)" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceBitmapLogo&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545073(v=vs.85))"><strong>IWiaUIExtension::GetDeviceBitmapLogo</strong></a></p></td>
+<td><p><a href="/previous-versions/windows/hardware/drivers/ff545073(v=vs.85)" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceBitmapLogo&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff545073(v=vs.85))"><strong>IWiaUIExtension::GetDeviceBitmapLogo</strong></a></p></td>
 <td><p>Gets a custom bitmap logo for the device.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545075(v=vs.85)" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceIcon&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545075(v=vs.85))"><strong>IWiaUIExtension::GetDeviceIcon</strong></a></p></td>
+<td><p><a href="/previous-versions/windows/hardware/drivers/ff545075(v=vs.85)" data-raw-source="[&lt;strong&gt;IWiaUIExtension::GetDeviceIcon&lt;/strong&gt;](/previous-versions/windows/hardware/drivers/ff545075(v=vs.85))"><strong>IWiaUIExtension::GetDeviceIcon</strong></a></p></td>
 <td><p>Gets a custom device icon.</p></td>
 </tr>
 </tbody>
@@ -45,7 +44,7 @@ The **IWiaUIExtension** interface provides the following methods:
 
  
 
-[**IWiaUIExtension::DeviceDialog**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)) accepts a pointer to a [**DEVICEDIALOGDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiadevd/ns-wiadevd-tagdevicedialogdata) structure (declared in *wiadevd.h*), which contains all the data needed to implement the device dialog box.
+[**IWiaUIExtension::DeviceDialog**](/previous-versions/windows/hardware/drivers/ff545069(v=vs.85)) accepts a pointer to a [**DEVICEDIALOGDATA**](/windows-hardware/drivers/ddi/wiadevd/ns-wiadevd-tagdevicedialogdata) structure (declared in *wiadevd.h*), which contains all the data needed to implement the device dialog box.
 
 The device dialog must be implemented as a modal Win32 dialog box, subject to the following four constraints:
 
@@ -57,18 +56,11 @@ The device dialog must be implemented as a modal Win32 dialog box, subject to th
 
 4.  Take care to ensure that memory or resource leaks are not introduced in this component, because it runs in-process in the application.
 
-[**IWiaUIExtension::GetDeviceIcon**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545075(v=vs.85)) allows the application to use a driver-specified icon. To avoid resource leaks, this icon should be loaded with **LoadImage**, using the LR\_SHARED flag (see the Windows SDK documentation).
+[**IWiaUIExtension::GetDeviceIcon**](/previous-versions/windows/hardware/drivers/ff545075(v=vs.85)) allows the application to use a driver-specified icon. To avoid resource leaks, this icon should be loaded with **LoadImage**, using the LR\_SHARED flag (see the Windows SDK documentation).
 
-[**IWiaUIExtension::GetDeviceBitmapLogo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff545073(v=vs.85)) allows the application to present device and vendor logos as appropriate. Currently, no system components use this method. The bitmap should be a DIB-allocated bitmap using **CreateDIBSection**, or loaded using **LoadImage** with the LR\_CREATEDIBSECTION flag (see the Windows SDK documentation for more information). This allows the application to extract any palette information and adapt to the current or changing display color depths.
+[**IWiaUIExtension::GetDeviceBitmapLogo**](/previous-versions/windows/hardware/drivers/ff545073(v=vs.85)) allows the application to present device and vendor logos as appropriate. Currently, no system components use this method. The bitmap should be a DIB-allocated bitmap using **CreateDIBSection**, or loaded using **LoadImage** with the LR\_CREATEDIBSECTION flag (see the Windows SDK documentation for more information). This allows the application to extract any palette information and adapt to the current or changing display color depths.
 
 To implement a custom scanning dialog box in a WIA scanner driver, use the **IWiaUIExtension::DeviceDialog** method (with the four constraints listed above) to create a Win32 modal dialog box and pass the DEVICEDIALOGDATA structure to the *dwInitParam* parameter of the DialogBoxParam function as an LPARAM.
 
 It is important to remember that the device dialog box itself does not manage the data transfers. The dialog box merely returns a pointer to an array of **IWiaItem** interface pointers (with properties set) from the driver to the application. It is then up to the application to negotiate the transfer mechanism and format.
-
- 
-
- 
-
-
-
 

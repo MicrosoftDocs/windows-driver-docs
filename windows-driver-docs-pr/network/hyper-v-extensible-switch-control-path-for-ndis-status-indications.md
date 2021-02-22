@@ -1,7 +1,6 @@
 ---
 title: Hyper-V Extensible Switch control path for NDIS status indication
 description: Hyper-V Extensible Switch Control Path for NDIS Status Indications
-ms.assetid: D52FAC95-64EC-4A99-807A-B39DB136D8F9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,17 +32,17 @@ The following figure shows the extensible switch control path for NDIS status in
 
 The extensible switch supports NDIS status indications from the underlying physical adapter or extensible switch team in the following ways:
 
--   When an NDIS status indication arrives at the extensible switch interface, it encapsulates the indication inside an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. Then, the miniport edge of the extensible switch issues an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication that contains this structure.
+-   When an NDIS status indication arrives at the extensible switch interface, it encapsulates the indication inside an [**NDIS\_SWITCH\_NIC\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication) structure. Then, the miniport edge of the extensible switch issues an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) indication that contains this structure.
 
     When a forwarding extension receives this indication, it can duplicate the indication to change the encapsulated data. This allows the forwarding extension to change the indicated status or capabilities of the underlying extensible switch team.
 
--   A forwarding extension that operates as a teaming provider can participate in the configuration of the adapter team for hardware offloads by initiating [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indications that are related to the offload technology.
+-   A forwarding extension that operates as a teaming provider can participate in the configuration of the adapter team for hardware offloads by initiating [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) indications that are related to the offload technology.
 
-    For example, the provider can initiate an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication with an encapsulated [**NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-receive-filter-current-capabilities) indication to modify the offload capabilities for the virtual machine queue (VMQ) on the adapter team.
+    For example, the provider can initiate an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) indication with an encapsulated [**NDIS\_STATUS\_RECEIVE\_FILTER\_CURRENT\_CAPABILITIES**](./ndis-status-receive-filter-current-capabilities.md) indication to modify the offload capabilities for the virtual machine queue (VMQ) on the adapter team.
 
--   Teaming providers can also initiate an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indication to modify other network adapter configurations other than an extensible switch team.
+-   Teaming providers can also initiate an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) indication to modify other network adapter configurations other than an extensible switch team.
 
-    For example, the extension can initiate an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) with an encapsulated [**NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-port-remove-vf) indication. This indication removes the binding between a virtual machine (VM) network adapter and a PCI Express (PCIe) virtual function (VF). The VF is exposed by an underlying physical network adapter that supports the single root I/O virtualization (SR-IOV) interface.
+    For example, the extension can initiate an [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) with an encapsulated [**NDIS\_STATUS\_SWITCH\_PORT\_REMOVE\_VF**](./ndis-status-switch-port-remove-vf.md) indication. This indication removes the binding between a virtual machine (VM) network adapter and a PCI Express (PCIe) virtual function (VF). The VF is exposed by an underlying physical network adapter that supports the single root I/O virtualization (SR-IOV) interface.
 
     After this binding is removed, packets are delivered through an extensible switch port instead of directly between the VM network adapter and the VF of the underlying SR-IOV physical adapter. This allows the extensible switch port policies to be applied to packets that are received or sent over the extensible switch port.
 
@@ -51,13 +50,7 @@ The extensible switch supports NDIS status indications from the underlying physi
 
  
 
-For more information on how forwarding extensions can initiate [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-switch-nic-status) indications, see [Managing NDIS Status Indications from Physical Network Adapters](managing-ndis-status-indications-from-physical-network-adapters.md).
+For more information on how forwarding extensions can initiate [**NDIS\_STATUS\_SWITCH\_NIC\_STATUS**](./ndis-status-switch-nic-status.md) indications, see [Managing NDIS Status Indications from Physical Network Adapters](managing-ndis-status-indications-from-physical-network-adapters.md).
 
  
-
- 
-
-
-
-
 

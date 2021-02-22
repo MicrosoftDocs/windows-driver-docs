@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_SUM
 description: KSNODETYPE\_SUM
-ms.assetid: f663ee51-5fe1-4ebf-bdd9-b958301d2634
 keywords: ["KSNODETYPE_SUM Audio Devices"]
 topic_type:
 - apiref

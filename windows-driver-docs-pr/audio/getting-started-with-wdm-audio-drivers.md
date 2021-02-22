@@ -1,7 +1,6 @@
 ---
 title: WDM Audio Drivers Overview
 description: Windows Driver Model (WDM) audio drivers make use of the kernel streaming (KS) components, which operate in kernel mode and are part of the operating system.
-ms.assetid: 573a9b6d-6c50-40a6-9241-470ab418eb66
 keywords:
 - WDM audio drivers WDK
 - audio drivers WDK , about audio drivers
@@ -15,13 +14,13 @@ ms.localizationpriority: medium
 # WDM Audio Drivers Overview
 
 
-[Windows Driver Model](https://docs.microsoft.com/windows-hardware/drivers/kernel/windows-driver-model) (WDM) audio drivers make use of the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/kernel-streaming) (KS) components, which operate in kernel mode and are part of the operating system.
+[Windows Driver Model](../kernel/writing-wdm-drivers.md) (WDM) audio drivers make use of the [kernel streaming](../stream/kernel-streaming.md) (KS) components, which operate in kernel mode and are part of the operating system.
 
 Hardware vendors should make several design decisions before beginning development of a Windows-based audio hardware device.
 
 The first decision is whether to design an audio device that requires a vendor-supplied custom driver. Windows contains operating-system support for PCI, USB, and IEEE 1394 devices that conform to the Microsoft [Universal Audio Architecture](universal-audio-architecture.md) (UAA) guidelines. The vendor does not need to provide a custom driver for a UAA-compatible audio device.
 
-However, if a vendor-supplied custom audio driver is necessary, the vendor must choose whether the driver should be designed to work in conjunction with the PortCls system driver (Portcls.sys) or the AVStream class system driver (Ks.sys). Both PortCls and AVStream are part of the Windows operating system. PortCls is the correct choice for most audio adapters. For more information about PortCls, see [Introduction to Port Class](introduction-to-port-class.md). For more information about AVStream, see [AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview).
+However, if a vendor-supplied custom audio driver is necessary, the vendor must choose whether the driver should be designed to work in conjunction with the PortCls system driver (Portcls.sys) or the AVStream class system driver (Ks.sys). Both PortCls and AVStream are part of the Windows operating system. PortCls is the correct choice for most audio adapters. For more information about PortCls, see [Introduction to Port Class](introduction-to-port-class.md). For more information about AVStream, see [AVStream Overview](../stream/avstream-overview.md).
 
 When designing a custom adapter driver that uses PortCls, the devices on the audio adapter are made available to applications using WaveRT. For more information, see [Introducing the WaveRT Port Driver](introducing-the-wavert-port-driver.md).
 
@@ -40,11 +39,4 @@ This section includes the following topics:
 [Specifying the Topology](specifying-the-topology.md)
 
 [Specifying Pin Data Ranges](specifying-pin-data-ranges.md)
-
- 
-
- 
-
-
-
 

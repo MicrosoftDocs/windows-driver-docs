@@ -1,7 +1,6 @@
 ---
 title: Autoconfigure the Printer's Memory for PPD
 description: Autoconfigure the Printer's Memory for PPD
-ms.assetid: 75df1026-896f-4840-a69d-975f813ca636
 keywords:
 - memory WDK printer autoconfig
 - PPD files WDK autoconfiguration , memory

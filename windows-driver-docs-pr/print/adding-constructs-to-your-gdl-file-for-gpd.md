@@ -1,7 +1,6 @@
 ---
 title: Adding Constructs to Your GDL File for GPD
 description: Adding Constructs to Your GDL File for GPD
-ms.assetid: a0ce5a46-152f-47f3-9246-c272224d4be9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

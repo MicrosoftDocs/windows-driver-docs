@@ -1,7 +1,6 @@
 ---
 title: Combined Language and Port Monitor
 description: Combined Language and Port Monitor
-ms.assetid: 5da362cf-92b8-4c78-80b2-57106b978600
 keywords:
 - print monitors WDK , language monitors
 - print monitors WDK , port monitors

@@ -1,7 +1,6 @@
 ---
 title: Access Co-installers Registry Entry Value of Device Setup Class
 description: Accessing the Co-installers Registry Entry Value of a Device Setup Class
-ms.assetid: 731d29df-6fdd-4f25-9758-d7306fef7ec0
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Accessing the Co-installers Registry Entry Value of a Device Setup Class
 
 
-In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes a [device setup class property](accessing-device-setup-class-properties.md) that represents the co-installers that are installed for the class. The unified device property model uses the [**DEVPKEY_DeviceClass_ClassCoInstallers**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-deviceclass-classcoinstallers) [property key](property-keys.md) to represent this property.
+In Windows Vista and later versions of Windows, the [unified device property model](unified-device-property-model--windows-vista-and-later-.md) includes a [device setup class property](accessing-device-setup-class-properties.md) that represents the co-installers that are installed for the class. The unified device property model uses the [**DEVPKEY_DeviceClass_ClassCoInstallers**](./devpkey-deviceclass-classcoinstallers.md) [property key](property-keys.md) to represent this property.
 
 Windows Server 2003, Windows XP, and Windows 2000 also support this property. However, these earlier versions of Windows do not support the property key of the unified device property model. Instead, these versions of Windows represent this property by using a corresponding system-defined registry entry value. To maintain compatibility with these earlier versions of Windows, Windows Vista and later versions also support this system-defined registry entry value. However, you should use the property key to access these properties on Windows Vista and later versions.
 
@@ -22,10 +21,4 @@ On Windows Server 2003, Windows XP, and Windows 2000, you can set or retrieve th
 For information about registering a class co-installer, see [Registering a Class Co-installer](registering-a-class-co-installer.md).
 
  
-
- 
-
-
-
-
 

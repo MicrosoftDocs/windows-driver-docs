@@ -1,7 +1,6 @@
 ---
 title: Providing Support for Asian Layout
 description: Providing Support for Asian Layout
-ms.assetid: 38c7dfca-ce30-4967-84a4-e2f40bba8c57
 keywords:
 - print processors WDK , Asian languages
 - Asian languages WDK print
@@ -28,12 +27,7 @@ The Microsoft Windows print processor supports Asian languages that read from ri
 
 -   **Booklet Edge**: When printing a booklet, in which sheets are folded and pages are laid out side-by-side, users can order the booklet pages from right to left. The following diagram shows the page layout for a booklet by using the BOOKLET\_EDGE\_RIGHT flag.![diagram illustrating the page layout for a booklet by using the booklet\-edge\-right flag](images/asian-booklet.png)
 
-The flags that enable you to change the N-up direction and booklet edge in a driver to support an Asian layout are available in Windows Vista. For details about how to set these values, see [**DrvQueryJobAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvqueryjobattributes) and [**ATTRIBUTE\_INFO\_4**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_4).
+The flags that enable you to change the N-up direction and booklet edge in a driver to support an Asian layout are available in Windows Vista. For details about how to set these values, see [**DrvQueryJobAttributes**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvqueryjobattributes) and [**ATTRIBUTE\_INFO\_4**](/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_4).
 
  
-
- 
-
-
-
 

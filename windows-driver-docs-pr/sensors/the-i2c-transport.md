@@ -1,7 +1,6 @@
 ---
 title: I2C transport
 description: I2C transport
-ms.assetid: A483FAA6-9FA6-4C91-B8D4-021DDBB9B869
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ The I²C (Inter-IC) transport is a two-wire serial transport that was introduced
 
 The two wires on the I2C bus correspond to a clock-line (SCL) and a serial data-line (SDA). For more information about the I2C transport, see to the I2C Bus Specification.
 
-Sensors that support the I2C transport often support a set of registers. The master uses these registers to configure and control the slave device. For the ADXL345, the registers correspond to specific device properties, capabilities, or functionality. Some of the registers are read only; others are read/write. For example, register 0x2D (POWER\_CTL) lets the master set an auto-sleep mode on the sensor—this mode sets the device to a low power state after a certain period of inactivity. (For more information about the ADXL345s registers and commands see to the manufacturer's datasheet.)
+Sensors that support the I2C transport often support a set of registers. The master uses these registers to configure and control the subordinate device. For the ADXL345, the registers correspond to specific device properties, capabilities, or functionality. Some of the registers are read only; others are read/write. For example, register 0x2D (POWER\_CTL) lets the master set an auto-sleep mode on the sensor—this mode sets the device to a low power state after a certain period of inactivity. (For more information about the ADXL345s registers and commands see to the manufacturer's datasheet.)
 
 The sample driver has a method that writes values to a given register (**CAcclelerometerDevice::WriteRegister**) and one that reads values from a register (**CAccelerometerDevicce::ReadRegister**). They take arguments that identify the register being written to (or read from), a pointer to the data being written or read, and a buffer length for the data buffer.
 

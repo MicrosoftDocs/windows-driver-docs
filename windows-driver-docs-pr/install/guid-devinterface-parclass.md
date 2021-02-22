@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_PARCLASS
 description: GUID_DEVINTERFACE_PARCLASS
-ms.assetid: d55195d4-f4f5-464f-a1ca-5fe0eafccb2a
 keywords: ["GUID_DEVINTERFACE_PARCLASS Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_PARCLASS
 
 
-The GUID_DEVINTERFACE_PARCLASS [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for devices that are attached to a [parallel port](https://docs.microsoft.com/previous-versions/ff544263(v=vs.85)).
+The GUID_DEVINTERFACE_PARCLASS [device interface class](./overview-of-device-interface-classes.md) is defined for devices that are attached to a [parallel port](/previous-versions/ff544263(v=vs.85)).
 
 <table>
 <colgroup>
@@ -52,7 +51,7 @@ Drivers for parallel devices that are attached to parallel ports register instan
 
 The system-supplied bus driver for parallel ports creates an instance of this device interface class for each hardware device that is attached to a parallel port.
 
-For information about parallel devices and drivers, see [Parallel Devices Design Guide](https://docs.microsoft.com/previous-versions/ff544263(v=vs.85)).
+For information about parallel devices and drivers, see [Parallel Devices Design Guide](/previous-versions/ff544263(v=vs.85)).
 
 For information about the device interface class for parallel ports, see [**GUID_DEVINTERFACE_PARALLEL**](guid-devinterface-parallel.md).
 
@@ -86,11 +85,4 @@ Requirements
 [**GUID_PARCLASS_DEVICE**](guid-parclass-device.md)
 
  
-
- 
-
-
-
-
-
 

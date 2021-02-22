@@ -1,7 +1,6 @@
 ---
 title: ScannerElements element
 description: The required ScannerElements contains all of the scanner information that is being returned to a client.
-ms.assetid: 7e1b6e49-34a3-486f-83f2-472b181399d0
 keywords: ["ScannerElements element Imaging Devices"]
 topic_type:
 - apiref

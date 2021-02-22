@@ -1,7 +1,6 @@
 ---
 title: Plug and play device
 description: The presence of an ESRT configuration table will direct Windows to enumerate a separate PnP device instance for each firmware resource.
-ms.assetid: 85EE32E7-1871-490D-9FF6-07E0891C78E3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

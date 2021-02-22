@@ -1,7 +1,6 @@
 ---
 title: DestinationResponse element
 description: The required DestinationResponse element contains the response information for a single ScanDestination registration.
-ms.assetid: 388304ca-4d62-40cf-ad68-13607a836caf
 keywords: ["DestinationResponse element Imaging Devices"]
 topic_type:
 - apiref

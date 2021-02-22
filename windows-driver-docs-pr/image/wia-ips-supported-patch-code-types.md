@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES
 description: The WIA minidriver uses the WIA\_IPS\_SUPPORTED\_PATCH\_CODE\_TYPES property to list all patch code types that are supported (understood) by the Patch Code Reader.
-ms.assetid: DA55BFFD-64E9-4D96-AB04-F2112E1F117B
 keywords: ["WIA_IPS_SUPPORTED_PATCH_CODE_TYPES Imaging Devices"]
 topic_type:
 - apiref

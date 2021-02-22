@@ -1,7 +1,6 @@
 ---
 title: Card Requirements
 description: Card Requirements
-ms.assetid: 3BE887F9-4B35-4A83-9E98-DD7555DF2953
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -31,16 +30,10 @@ For a card to be useful for cryptographic operations, it must have an identity t
 1.  Create the card ID file, “cardid”, in the root directory of the card with everyone having Read and the administrator having Write permissions. This file contains a unique 16-byte binary identifier for the card. It is never updated or overwritten unless the card is entirely recycled.
 2.  Create the cache file, “cardcf”, in the root directory, with everyone having Read/Write permission. Initial contents are 6 bytes with values of zero.
 3.  Create the application map, “cardapps”, in the root directory, with everyone having Read and users having Write permissions. Initial contents are an 8 byte record that consists of the string “mscp” followed by 4 zero bytes.
-4.  Create the Base CSP/CNG KSP application by a call to [**CardCreateDirectory**](https://docs.microsoft.com/previous-versions/dn468710(v=vs.85)), referring to application “mscp”, with everyone having Read and the users having Write permissions.
+4.  Create the Base CSP/CNG KSP application by a call to [**CardCreateDirectory**](/previous-versions/dn468710(v=vs.85)), referring to application “mscp”, with everyone having Read and the users having Write permissions.
 5.  Create the certificate map file, “cmapfile”, in the “mscp” directory with everyone having Read and users having Write permissions. It is initially empty.
 
 Technically, a card is “created” after step 2, but we define that all cards shall reserve the Microsoft “mscp” application, whether it is actually used. This explains the unusual facts that the “mscp” application is always created and that a file is created within the “mscp” application. As card creation is expected to be implemented by functions within the card management DLL that Microsoft supplies, this information is provided as reference information for card minidriver authors to be able to properly support these operations in that context.
 
  
-
- 
-
-
-
-
 

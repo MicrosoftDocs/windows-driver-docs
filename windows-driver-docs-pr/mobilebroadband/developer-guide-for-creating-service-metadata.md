@@ -1,17 +1,16 @@
 ---
 title: Developer guide for creating service metadata
 description: Developer guide for creating service metadata
-ms.assetid: 2d250bce-2dd2-4bd8-aa0f-432dde7783e1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Developer guide for creating service metadata
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 
-This guide walks you through the process of creating a service metadata package on the Windows Dev Center hardware dashboard, previously known as Sysdev (<http://sysdev.microsoft.com>). Service metadata is required to connect a mobile broadband app to your hardware device. When a user plugs a mobile broadband device into their computer, the associated service metadata is downloaded and then the mobile broadband app is automatically downloaded.
+This guide walks you through the process of creating a service metadata package on the Windows Dev Center hardware dashboard, previously known as [Sysdev](https://partner.microsoft.com/dashboard). Service metadata is required to connect a mobile broadband app to your hardware device. When a user plugs a mobile broadband device into their computer, the associated service metadata is downloaded and then the mobile broadband app is automatically downloaded.
 
 You can leverage service metadata to create a deeply integrated experience with Windows. Service metadata packages allow you to include branding information, such as icons and your operator name, configure settings and permissions for accessing SIM hardware and personal hotspots, and provision mobile broadband apps to work with your mobile broadband device.
 
@@ -27,7 +26,7 @@ To create a successful service metadata package, you must complete the steps inc
 
 ### <span id="Register_your_company_with_the_Windows_Dev_Center_hardware_dashboard"></span><span id="register_your_company_with_the_windows_dev_center_hardware_dashboard"></span><span id="REGISTER_YOUR_COMPANY_WITH_THE_WINDOWS_DEV_CENTER_HARDWARE_DASHBOARD"></span>Register your company with the Windows Dev Center hardware dashboard
 
--   Your company has an active account on the Windows Dev Center hardware dashboard. If your company does not have an account on the Windows Dev Center hardware dashboard, you can create a new account and add your user account to you company. For more info, see [Administration](https://docs.microsoft.com/windows-hardware/drivers/dashboard/administration) in the Windows Dev Center hardware dashboard help.
+-   Your company has an active account on the Windows Dev Center hardware dashboard. If your company does not have an account on the Windows Dev Center hardware dashboard, you can create a new account and add your user account to you company. For more info, see [Administration](../dashboard/get-started-with-the-hardware-dashboard.md) in the Windows Dev Center hardware dashboard help.
 
 -   Your company has a VeriSign code signing certificate to sign the packages.
 
@@ -63,7 +62,7 @@ You should receive an acknowledgement emails with 24 hours that your request was
 
 Before you create your service metadata package, ensure that your mobile broadband app has been developed and associated with the Microsoft Store. This app should provide key experiences, such as plan purchase, data usage, help and support, as well as highlighting value-added services from the operator. For more info about creating the mobile broadband app, see the following links:
 
--   [Mobile broadband WinRT API overview](mobile-broadband-winrt-api-overview.md)
+-   [Mobile broadband WinRT API overview](list-of-mobile-broadband-windows-runtime-apis.md)
 
 -   [Mobile operator hardware overview](mobile-operator-hardware-overview.md)
 
@@ -163,7 +162,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
 **To create a service metadata package**
 
-1.  Navigate to <http://sysdev.microsoft.com>.
+1.  Navigate to sysdev.microsoft.com.
 
 2.  Under the **Device metadata** heading, click **Create mobile broadband experience**.
 
@@ -185,7 +184,7 @@ Service metadata is created by using the Service Metadata Wizard in the Windows 
 
     ![the service info step of the wizard](images/mbae-sxs81-serviceinfostep.png)
 
-4.  On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [COSA/APN database submission](cosa-apn-database-submission.md).
+4.  On the **Hardware info** page, select the information that should be used to identify your experience. Once a check box is selected, you can add the appropriate network ranges. The ID generated should exist in the Windows APN database so the right subscriber is identified. For more information about the APN database, see [COSA/APN database submission](planning-your-desktop-cosa-apn-database-submission.md).
 
     -   If you are a GSM Provider that uses the International Mobile Subscriber Identity (IMSI), select the **IMSI** check box under the **GSM** heading. In the **Provider ID** box, enter the GSM service provider ID. Under the **IMSI/ICCID Ranges** heading, enter the range, and then click **Add**.
 
@@ -253,7 +252,7 @@ After test signing is enabled, copy the \*.devicemetadata-ms file from the servi
 
 ### <span id="Test_a_service_metadata_package_in_preview_mode"></span><span id="test_a_service_metadata_package_in_preview_mode"></span><span id="TEST_A_SERVICE_METADATA_PACKAGE_IN_PREVIEW_MODE"></span>Test a service metadata package in preview mode
 
-If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+If the service metadata package is in preview mode, you must create the PreviewKey registry entry on your test computer. For more info about configuring the PreviewKey registry entry, see [Creating a Preview Package](../dashboard/index.yml).
 
 **Note**  
 You do not have to enable test signing to test a service metadata package that is in preview mode.
@@ -713,12 +712,3 @@ Use the following links to learn more about mobile broadband in Windows 8.1 and 
 -   [APN database overview](apn-database-overview.md)
 
 -   [Service metadata](service-metadata.md)
-
-
-
-
-
-
-
-
-

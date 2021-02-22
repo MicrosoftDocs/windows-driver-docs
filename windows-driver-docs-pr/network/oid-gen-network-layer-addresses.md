@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_NETWORK_LAYER_ADDRESSES
 description: As a set, the OID_GEN_NETWORK_LAYER_ADDRESSES OID notifies underlying miniport driver and other layered drivers about the list of network-layer addresses that are associated with bound instances.
-ms.assetid: 4a75c2ca-1a58-462e-876a-a65cfe63441e
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_NETWORK_LAYER_ADDRESSES Network Drivers Starting with Windows Vista
@@ -33,7 +32,7 @@ Optional.
 Remarks
 -------
 
-A bound instance is the binding between the calling transport and a driver set up by a call to [**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex). Transports use TRANSPORT\_ADDRESS and TA\_ADDRESS structures to notify underlying miniport drivers and other layered drivers about the list of network-layer addresses. Miniport drivers and other layered drivers use compatible NETWORK\_ADDRESS\_LIST and NETWORK\_ADDRESS structures, defined as follows, to set the list of network-layer addresses on a bound interface.
+A bound instance is the binding between the calling transport and a driver set up by a call to [**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex). Transports use TRANSPORT\_ADDRESS and TA\_ADDRESS structures to notify underlying miniport drivers and other layered drivers about the list of network-layer addresses. Miniport drivers and other layered drivers use compatible NETWORK\_ADDRESS\_LIST and NETWORK\_ADDRESS structures, defined as follows, to set the list of network-layer addresses on a bound interface.
 
 ```C++
 typedef struct _NETWORK_ADDRESS_LIST {
@@ -85,7 +84,7 @@ Specifies the protocol type that sends this OID and this network-layer address. 
 <a href="" id="address"></a>**Address**  
 Array of bytes that specify this network-layer address. The **AddressLength** member specifies the number of bytes in this array.
 
-The transport can call the [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) function and can pass an [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure that is filled with the OID\_GEN\_NETWORK\_LAYER\_ADDRESSES code. This call notifies a bound instance of a change in the addresses that are associated with that instance. In this call, the transport also passes the bound instance in the *NdisBindingHandle* parameter. The bound instance is the binding set up between the transport and the underlying miniport driver or other layered driver. For this call, the transport should fill the **InformationBuffer** member of NDIS\_OID\_REQUEST with a pointer to a TRANSPORT\_ADDRESS structure. TRANSPORT\_ADDRESS corresponds to a NETWORK\_ADDRESS\_LIST structure and should contain the list of network-layer addresses.
+The transport can call the [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest) function and can pass an [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure that is filled with the OID\_GEN\_NETWORK\_LAYER\_ADDRESSES code. This call notifies a bound instance of a change in the addresses that are associated with that instance. In this call, the transport also passes the bound instance in the *NdisBindingHandle* parameter. The bound instance is the binding set up between the transport and the underlying miniport driver or other layered driver. For this call, the transport should fill the **InformationBuffer** member of NDIS\_OID\_REQUEST with a pointer to a TRANSPORT\_ADDRESS structure. TRANSPORT\_ADDRESS corresponds to a NETWORK\_ADDRESS\_LIST structure and should contain the list of network-layer addresses.
 
 Suppose a transport passes addresses through an intermediate driver down to an underlying miniport driver. If the intermediate driver also requires the addresses, it should take note of them before passing them on to the underlying miniport driver. An underlying miniport driver, especially an old driver, can return a status value of NDIS\_STATUS\_NOT\_SUPPORTED or NDIS\_STATUS\_SUCCESS. The underlying miniport driver propagates the status of the operation back up towards the transport. If the intermediate driver must continue receiving address notifications, and if it is necessary, the intermediate driver should change the status to NDIS\_STATUS\_SUCCESS.Otherwise, the transport might interpret NDIS\_STATUS\_NOT\_SUPPORTED as an indication that the underlying miniport driver does not require that the transport issue additional address updates. If NDIS\_STATUS\_SUCCESS is returned, transports are obligated to continue notifying underlying drivers of any change in associated addresses, including addition and deletion of addresses.
 
@@ -110,16 +109,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
-[**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest)
+[**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest)
 
-[**NdisOpenAdapterEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex)
-
- 
+[**NdisOpenAdapterEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex)
 
  
-
-
-
 

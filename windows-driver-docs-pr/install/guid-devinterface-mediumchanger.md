@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_MEDIUMCHANGER
 description: GUID_DEVINTERFACE_MEDIUMCHANGER
-ms.assetid: d7c41c5c-b03b-459e-81b0-b363b4c174b0
 keywords: ["GUID_DEVINTERFACE_MEDIUMCHANGER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_MEDIUMCHANGER
 
 
-The GUID_DEVINTERFACE_MEDIUMCHANGER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for medium changer devices.
+The GUID_DEVINTERFACE_MEDIUMCHANGER [device interface class](./overview-of-device-interface-classes.md) is defined for medium changer devices.
 
 <table>
 <colgroup>
@@ -48,9 +47,9 @@ The GUID_DEVINTERFACE_MEDIUMCHANGER [device interface class](https://docs.micros
 Remarks
 -------
 
-The system-supplied medium [changer drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/changer-drivers) register an instance of GUID_DEVINTERFACE_MEDIUMCHANGER to notify the operating system and applications of the presence of medium changer devices.
+The system-supplied medium [changer drivers](../storage/changer-drivers.md) register an instance of GUID_DEVINTERFACE_MEDIUMCHANGER to notify the operating system and applications of the presence of medium changer devices.
 
-For more information about storage drivers, see [Storage Drivers](https://docs.microsoft.com/windows-hardware/drivers/storage/storage-drivers).
+For more information about storage drivers, see [Storage Drivers](../storage/storage-drivers.md).
 
 Requirements
 ------------
@@ -74,11 +73,4 @@ Requirements
 [**MediumChangerClassGuid**](mediumchangerclassguid.md)
 
  
-
- 
-
-
-
-
-
 

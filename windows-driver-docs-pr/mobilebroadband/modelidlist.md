@@ -1,14 +1,13 @@
 ---
 title: ModelIDList
 description: ModelIDList
-ms.assetid: b7c6a100-95bf-421c-9a84-71623c0276fe
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # ModelIDList
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The ModelIDList element specifies one or more GUIDs. Each GUID is specified through a [ModelID](modelid.md) element, and identifies a physical device specified within the device metadata package.
 

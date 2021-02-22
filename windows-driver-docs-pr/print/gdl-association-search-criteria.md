@@ -1,7 +1,6 @@
 ---
 title: GDL Association Search Criteria
 description: GDL Association Search Criteria
-ms.assetid: f591e944-a6dc-406a-a15e-7af0cc70d7f5
 keywords:
 - templates WDK GDL , associating templates with keywords
 - keywords WDK GDL , associating templates with keywords

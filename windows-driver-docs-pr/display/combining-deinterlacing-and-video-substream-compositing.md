@@ -1,7 +1,6 @@
 ---
 title: Combining Deinterlacing and Video Substream Compositing
 description: Combining Deinterlacing and Video Substream Compositing
-ms.assetid: d62fe460-104d-4aff-a88c-3dc5829321fa
 keywords:
 - DeinterlaceBltEx
 - deinterlacing WDK DirectX VA , combining substream compositing
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 This section applies only to Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later, and Windows XP with Service Pack 2 (SP2) and later.
 
-To improve video quality on hardware with limited memory bandwidth, driver writers can implement the [**DeinterlaceBltEx**](https://docs.microsoft.com/windows-hardware/drivers/display/dxva-deinterlacebobdeviceclass-deinterlacebltex) function in their display drivers. The **DeinterlaceBltEx** function combines, within the YUV color space, operations that composite the video substreams on top of the video stream with operations that deinterlace and/or frame-rate convert each video frame. Driver writers are encouraged to support the **DeinterlaceBltEx** function in their drivers for all of their deinterlacing modes.
+To improve video quality on hardware with limited memory bandwidth, driver writers can implement the [**DeinterlaceBltEx**](./dxva-deinterlacebobdeviceclass-deinterlacebltex.md) function in their display drivers. The **DeinterlaceBltEx** function combines, within the YUV color space, operations that composite the video substreams on top of the video stream with operations that deinterlace and/or frame-rate convert each video frame. Driver writers are encouraged to support the **DeinterlaceBltEx** function in their drivers for all of their deinterlacing modes.
 
 The following topics describe how to support **DeinterlaceBltEx**:
 
@@ -42,10 +41,4 @@ The following topics describe how to support **DeinterlaceBltEx**:
 [Deinterlacing and Compositing on 64-bit Operating Systems](deinterlacing-and-compositing-on-64-bit-operating-systems.md)
 
  
-
- 
-
-
-
-
 

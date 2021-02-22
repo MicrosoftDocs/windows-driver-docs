@@ -1,7 +1,6 @@
 ---
 title: Asynchronous I/O Programming
 description: Asynchronous I/O Programming
-ms.assetid: f50c98ab-3aae-43f6-be91-2ae587105767
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

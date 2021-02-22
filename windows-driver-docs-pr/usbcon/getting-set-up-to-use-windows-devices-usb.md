@@ -1,5 +1,5 @@
 ---
-Description: Starting in Windows 8.1, the set of WinUSB Functions have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
+description: Starting in Windows 8.1, the set of WinUSB Functions have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
 title: Send USB isochronous transfers from a WinUSB desktop app
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 
 **Important APIs**
 
--   [**WinUsb\_QueryPipeEx**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_querypipeex)
--   [**WinUsb\_WriteIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipeasap)
--   [**WinUsb\_ReadIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipeasap)
+-   [**WinUsb\_QueryPipeEx**](/windows/win32/api/winusb/nf-winusb-winusb_querypipeex)
+-   [**WinUsb\_WriteIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipeasap)
+-   [**WinUsb\_ReadIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipeasap)
 
 Starting in Windows 8.1, the set of [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md) have APIs that allow a desktop application to transfer data to and from isochronous endpoints of a USB device. For such an application, the Microsoft-provided Winusb.sys must be the device driver.
 
@@ -47,33 +47,33 @@ The app can choose to specify the frame in one of two ways:
 
 The examples in this topic demonstrate the use of these [WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md):
 
--   [**WinUsb\_QueryPipeEx**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_querypipeex)
--   [**WinUsb\_RegisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_registerisochbuffer)
--   [**WinUsb\_UnregisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_unregisterisochbuffer)
--   [**WinUsb\_WriteIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipeasap)
--   [**WinUsb\_ReadIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipeasap)
--   [**WinUsb\_WriteIsochPipe**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipe)
--   [**WinUsb\_ReadIsochPipe**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipe)
--   [**WinUsb\_GetCurrentFrameNumber**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getcurrentframenumber)
--   [**WinUsb\_GetAdjustedFrameNumber**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getadjustedframenumber)
+-   [**WinUsb\_QueryPipeEx**](/windows/win32/api/winusb/nf-winusb-winusb_querypipeex)
+-   [**WinUsb\_RegisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_registerisochbuffer)
+-   [**WinUsb\_UnregisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_unregisterisochbuffer)
+-   [**WinUsb\_WriteIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipeasap)
+-   [**WinUsb\_ReadIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipeasap)
+-   [**WinUsb\_WriteIsochPipe**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipe)
+-   [**WinUsb\_ReadIsochPipe**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipe)
+-   [**WinUsb\_GetCurrentFrameNumber**](/windows/win32/api/winusb/nf-winusb-winusb_getcurrentframenumber)
+-   [**WinUsb\_GetAdjustedFrameNumber**](/windows/win32/api/winusb/nf-winusb-winusb_getadjustedframenumber)
 
 In this topic, we'll read and write 30 milliseconds of data in three transfers to a high speed device. The pipe is capable of transferring 1024 bytes in each service interval. Because the polling interval is 1, data is transferred in every microframe of a frame. Total of 30 frames will carry 30\*8\*1024 bytes.
 
-The function calls for sending read and write transfers are similar. The app allocates a transfer buffer big enough to hold all three transfers. The app registers the buffer for a particular pipe by calling [**WinUsb\_RegisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_registerisochbuffer). The call returns a registration handle which is used to send the transfer. The buffer is reused for subsequent transfers and offset in the buffer is adjusted to send or receive the next set of data.
+The function calls for sending read and write transfers are similar. The app allocates a transfer buffer big enough to hold all three transfers. The app registers the buffer for a particular pipe by calling [**WinUsb\_RegisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_registerisochbuffer). The call returns a registration handle which is used to send the transfer. The buffer is reused for subsequent transfers and offset in the buffer is adjusted to send or receive the next set of data.
 
-All transfers in the example are sent asynchronously. For this, the app allocates an array of [**OVERLAPPED**](https://docs.microsoft.com/windows/desktop/api/shobjidl/ns-shobjidl-_overlapped) structure with three elements, one for each transfer. The app provides events so that it can get notified when transfers complete and retrieve the results of the operation. For this, in each **OVERLAPPED** structure in the array, the app allocates an event and sets the handle in the **hEvent** member.
+All transfers in the example are sent asynchronously. For this, the app allocates an array of [**OVERLAPPED**](/windows/win32/api/shobjidl/ns-shobjidl-overlapped) structure with three elements, one for each transfer. The app provides events so that it can get notified when transfers complete and retrieve the results of the operation. For this, in each **OVERLAPPED** structure in the array, the app allocates an event and sets the handle in the **hEvent** member.
 
-This image shows three read transfers by using the [**WinUsb\_ReadIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipeasap) function. The call specifies offset and length of each transfer. The *ContinueStream* parameter value is FALSE to indicate a new stream. After that, the app requests that subsequent transfers are scheduled immediately following the last frame of the previous request to allow for continuous streaming of data. The number of isochronous packets are calculated as packets per frame \* number of frames; 8\*10. For this call, the app need not worry about calculating start frame number.
+This image shows three read transfers by using the [**WinUsb\_ReadIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipeasap) function. The call specifies offset and length of each transfer. The *ContinueStream* parameter value is FALSE to indicate a new stream. After that, the app requests that subsequent transfers are scheduled immediately following the last frame of the previous request to allow for continuous streaming of data. The number of isochronous packets are calculated as packets per frame \* number of frames; 8\*10. For this call, the app need not worry about calculating start frame number.
 
 ![winusb function for isochronous read transfer](images/isoch-app-read.png)
 
-This image shows three write transfers by using the [**WinUsb\_WriteIsochPipe**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipe) function. The call specifies offset and length of each transfer. In this case, the app must calculate the frame number in which the host controller can start sending data. On output, the function receives the frame number of the frame that follows the last frame used in the previous transfer. To get the current frame, the app calls [**WinUsb\_GetCurrentFrameNumber**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getcurrentframenumber). At this point, the app must make sure that the start frame of the next transfer is later than the current frame, so that the USB driver stack does not drop late packets. To do so, the app calls [**WinUsb\_GetAdjustedFrameNumber**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getadjustedframenumber) to get a realistic current frame number (this is later than the received current frame number). To be on the safe side, the app adds five more frames, and then sends the transfer.
+This image shows three write transfers by using the [**WinUsb\_WriteIsochPipe**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipe) function. The call specifies offset and length of each transfer. In this case, the app must calculate the frame number in which the host controller can start sending data. On output, the function receives the frame number of the frame that follows the last frame used in the previous transfer. To get the current frame, the app calls [**WinUsb\_GetCurrentFrameNumber**](/windows/win32/api/winusb/nf-winusb-winusb_getcurrentframenumber). At this point, the app must make sure that the start frame of the next transfer is later than the current frame, so that the USB driver stack does not drop late packets. To do so, the app calls [**WinUsb\_GetAdjustedFrameNumber**](/windows/win32/api/winusb/nf-winusb-winusb_getadjustedframenumber) to get a realistic current frame number (this is later than the received current frame number). To be on the safe side, the app adds five more frames, and then sends the transfer.
 
 ![winusb function for isochronous write transfer](images/isoch-app-write.png)
 
-After each transfer completes, the app gets the results of the transfer by calling [**WinUsb\_GetOverlappedResult**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getoverlappedresult). The *bWait* parameter is set to TRUE so that the call does not return until the operation has completed. For read and write transfers, the *lpNumberOfBytesTransferred* parameter is always 0. For a write transfer, the app assumes that if the operation completed successfully, all bytes were transferred. For a read transfer, the **Length** member of each isochronous packet ([**USBD\_ISO\_PACKET\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_iso_packet_descriptor)), contains the number bytes transferred in that packet, per interval. To get the total length, the app adds all **Length** values.
+After each transfer completes, the app gets the results of the transfer by calling [**WinUsb\_GetOverlappedResult**](/windows/win32/api/winusb/nf-winusb-winusb_getoverlappedresult). The *bWait* parameter is set to TRUE so that the call does not return until the operation has completed. For read and write transfers, the *lpNumberOfBytesTransferred* parameter is always 0. For a write transfer, the app assumes that if the operation completed successfully, all bytes were transferred. For a read transfer, the **Length** member of each isochronous packet ([**USBD\_ISO\_PACKET\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_iso_packet_descriptor)), contains the number bytes transferred in that packet, per interval. To get the total length, the app adds all **Length** values.
 
-When finished, the app releases the isochronous buffer handles by calling [**WinUsb\_UnregisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_unregisterisochbuffer).
+When finished, the app releases the isochronous buffer handles by calling [**WinUsb\_UnregisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_unregisterisochbuffer).
 
 ## Before you start...
 
@@ -82,16 +82,16 @@ Make sure that,
 
 -   The device driver is the Microsoft-provided driver: WinUSB (Winusb.sys). That driver is included in the \\Windows\\System32\\ folder. For more information, see [WinUSB (Winusb.sys) Installation](winusb-installation.md).
 
--   You have previously obtained a WinUSB interface handle to device by calling [**WinUsb\_Initialize**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_initialize). All operations are performed by using that handle. Read [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
+-   You have previously obtained a WinUSB interface handle to device by calling [**WinUsb\_Initialize**](/windows/win32/api/winusb/nf-winusb-winusb_initialize). All operations are performed by using that handle. Read [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md).
 
 -   The active interface setting has isochronous endpoints. Otherwise, you cannot access the pipes for the target endpoints.
 
 ## Step 1: Find the isochronous pipe in the active setting
 
 
-1.  Get the USB interface that has the isochronous endpoints by calling [**WinUsb\_QueryInterfaceSettings**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_queryinterfacesettings).
+1.  Get the USB interface that has the isochronous endpoints by calling [**WinUsb\_QueryInterfaceSettings**](/windows/win32/api/winusb/nf-winusb-winusb_queryinterfacesettings).
 2.  Enumerate the pipes of the interface setting that defines the endpoints.
-3.  For each endpoint get the associated pipe properties in a [**WINUSB\_PIPE\_INFORMATION\_EX**](https://docs.microsoft.com/windows/desktop/api/winusbio/ns-winusbio-_winusb_pipe_information_ex) structure by calling [**WinUsb\_QueryPipeEx**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_querypipeex). The retrieved **WINUSB\_PIPE\_INFORMATION\_EX** structure that contains information about the isochronous pipe. The structure contains information about the pipe, its type, id, and so on.
+3.  For each endpoint get the associated pipe properties in a [**WINUSB\_PIPE\_INFORMATION\_EX**](/windows/win32/api/winusbio/ns-winusbio-winusb_pipe_information_ex) structure by calling [**WinUsb\_QueryPipeEx**](/windows/win32/api/winusb/nf-winusb-winusb_querypipeex). The retrieved **WINUSB\_PIPE\_INFORMATION\_EX** structure that contains information about the isochronous pipe. The structure contains information about the pipe, its type, id, and so on.
 4.  Check the structure members to determine whether it's the pipe that must be used for transfers. If it is, store the **PipeId** value. In the template code, add members to the DEVICE\_DATA structure, defined in Device.h.
 
 This example shows how to determine whether the active setting has isochronous endpoints and obtain information about them. In this example the device is a SuperMUTT device. The device has two isochronous endpoints in the default interface, alternate setting 1.
@@ -167,11 +167,11 @@ The SuperMUTT device defines its isochronous endpoints in the default interface,
 ## Step 2: Get interval information about the isochronous pipe
 
 
-Next, get more information about the pipe that you obtained in call to [**WinUsb\_QueryPipeEx**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_querypipeex).
+Next, get more information about the pipe that you obtained in call to [**WinUsb\_QueryPipeEx**](/windows/win32/api/winusb/nf-winusb-winusb_querypipeex).
 
 -   **Transfer size**
 
-    1.  From the retrieved [**WINUSB\_PIPE\_INFORMATION\_EX**](https://docs.microsoft.com/windows/desktop/api/winusbio/ns-winusbio-_winusb_pipe_information_ex) structure, obtain the **MaximumBytesPerInterval** and **Interval** values.
+    1.  From the retrieved [**WINUSB\_PIPE\_INFORMATION\_EX**](/windows/win32/api/winusbio/ns-winusbio-winusb_pipe_information_ex) structure, obtain the **MaximumBytesPerInterval** and **Interval** values.
     2.  Depending on the amount of isochronous data you want to send or receive, calculate the transfer size. For example, consider this calculation:
 
         ` TransferSize = ISOCH_DATA_SIZE_MS * pipeInfoEx.MaximumBytesPerInterval * (8 / pipeInfoEx.Interval);             `
@@ -250,7 +250,7 @@ else if (pipe.PipeType == UsbdPipeTypeIsochronous)
 ...
 ```
 
-In the preceding code, the app gets **Interval** and **MaximumBytesPerInterval** from [**WINUSB\_PIPE\_INFORMATION\_EX**](https://docs.microsoft.com/windows/desktop/api/winusbio/ns-winusbio-_winusb_pipe_information_ex) to calculate the transfer size and number of isochronous packets required for the read transfer. For both isochronous endpoints, **Interval** is 1. That value indicates that all microframes of the frame carry data. Based on that, to send 10 milliseconds of data, you need 10 frames, total transfer size is 10\*1024\*8 bytes and 80 isochronous packets, each 1024 bytes long.
+In the preceding code, the app gets **Interval** and **MaximumBytesPerInterval** from [**WINUSB\_PIPE\_INFORMATION\_EX**](/windows/win32/api/winusbio/ns-winusbio-winusb_pipe_information_ex) to calculate the transfer size and number of isochronous packets required for the read transfer. For both isochronous endpoints, **Interval** is 1. That value indicates that all microframes of the frame carry data. Based on that, to send 10 milliseconds of data, you need 10 frames, total transfer size is 10\*1024\*8 bytes and 80 isochronous packets, each 1024 bytes long.
 
 ## Step 3: Send a write transfer to send data to an isochronous OUT endpoint
 
@@ -258,11 +258,11 @@ In the preceding code, the app gets **Interval** and **MaximumBytesPerInterval**
 This procedure summarizes the steps for writing data to an isochronous endpoint.
 
 1.  Allocate a buffer that contains the data to send.
-2.  If you are sending the data asynchronously, allocate and initialize an [**OVERLAPPED**](https://docs.microsoft.com/windows/desktop/api/shobjidl/ns-shobjidl-_overlapped) structure that contains a handle to a caller-allocated event object. The structure must be initialized to zero, otherwise the call fails.
-3.  Register the buffer by calling [**WinUsb\_RegisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_registerisochbuffer).
-4.  Start the transfer by calling [**WinUsb\_WriteIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipeasap). If you want to manually specify the frame in which data will be transferred, call [**WinUsb\_WriteIsochPipe**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_writeisochpipe) instead.
-5.  Get results of the transfer by calling [**WinUsb\_GetOverlappedResult**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getoverlappedresult).
-6.  When finished, release the buffer handle by calling [**WinUsb\_UnregisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_unregisterisochbuffer), the overlapped event handle, and the transfer buffer.
+2.  If you are sending the data asynchronously, allocate and initialize an [**OVERLAPPED**](/windows/win32/api/shobjidl/ns-shobjidl-overlapped) structure that contains a handle to a caller-allocated event object. The structure must be initialized to zero, otherwise the call fails.
+3.  Register the buffer by calling [**WinUsb\_RegisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_registerisochbuffer).
+4.  Start the transfer by calling [**WinUsb\_WriteIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipeasap). If you want to manually specify the frame in which data will be transferred, call [**WinUsb\_WriteIsochPipe**](/windows/win32/api/winusb/nf-winusb-winusb_writeisochpipe) instead.
+5.  Get results of the transfer by calling [**WinUsb\_GetOverlappedResult**](/windows/win32/api/winusb/nf-winusb-winusb_getoverlappedresult).
+6.  When finished, release the buffer handle by calling [**WinUsb\_UnregisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_unregisterisochbuffer), the overlapped event handle, and the transfer buffer.
 
 Here is an example that shows how to send a write transfer.
 
@@ -464,12 +464,12 @@ Error:
 This procedure summarizes the steps for reading data from an isochronous endpoint.
 
 1.  Allocate a transfer buffer that will receive data at the end of the transfer. The size of the buffer must be based on the transfer size calculate in step 2. The transfer buffer must end at a frame boundary.
-2.  If you are sending the data asynchronously, allocate an [**OVERLAPPED**](https://docs.microsoft.com/windows/desktop/api/shobjidl/ns-shobjidl-_overlapped) structure that contains a handle to a caller-allocated event object. The structure must be initialized to zero, otherwise the call fails.
-3.  Register the buffer by calling [**WinUsb\_RegisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_registerisochbuffer).
-4.  Based on the number isochronous packets calculated in step 2, allocate an array of isochronous packets ([**USBD\_ISO\_PACKET\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_iso_packet_descriptor)).
-5.  Start the transfer by calling [**WinUsb\_ReadIsochPipeAsap**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipeasap). If you want to manually specify the start frame in which data will be transferred, call [**WinUsb\_ReadIsochPipe**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_readisochpipe) instead.
-6.  Get results of the transfer by calling [**WinUsb\_GetOverlappedResult**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_getoverlappedresult).
-7.  When finished, release the buffer handle by calling [**WinUsb\_UnregisterIsochBuffer**](https://docs.microsoft.com/windows/desktop/api/winusb/nf-winusb-winusb_unregisterisochbuffer), the overlapped event handle, the array of isochronous packets, and the transfer buffer.
+2.  If you are sending the data asynchronously, allocate an [**OVERLAPPED**](/windows/win32/api/shobjidl/ns-shobjidl-overlapped) structure that contains a handle to a caller-allocated event object. The structure must be initialized to zero, otherwise the call fails.
+3.  Register the buffer by calling [**WinUsb\_RegisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_registerisochbuffer).
+4.  Based on the number isochronous packets calculated in step 2, allocate an array of isochronous packets ([**USBD\_ISO\_PACKET\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_iso_packet_descriptor)).
+5.  Start the transfer by calling [**WinUsb\_ReadIsochPipeAsap**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipeasap). If you want to manually specify the start frame in which data will be transferred, call [**WinUsb\_ReadIsochPipe**](/windows/win32/api/winusb/nf-winusb-winusb_readisochpipe) instead.
+6.  Get results of the transfer by calling [**WinUsb\_GetOverlappedResult**](/windows/win32/api/winusb/nf-winusb-winusb_getoverlappedresult).
+7.  When finished, release the buffer handle by calling [**WinUsb\_UnregisterIsochBuffer**](/windows/win32/api/winusb/nf-winusb-winusb_unregisterisochbuffer), the overlapped event handle, the array of isochronous packets, and the transfer buffer.
 
 Here is an example that shows how to send a read transfer by calling WinUsb\_ReadIsochPipeAsap and WinUsb\_ReadIsochPipe.
 
@@ -681,7 +681,4 @@ Error:
 
 ## Related topics
 [How to Access a USB Device by Using WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
-[WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)  
-
-
-
+[WinUSB Functions](using-winusb-api-to-communicate-with-a-usb-device.md)

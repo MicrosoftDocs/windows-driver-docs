@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_NECESSARYINSTANCES
 description: This property returns the minimum number of pins that the pin factory must instantiate before the filter can perform I/O operations.
-ms.assetid: d30d7546-3d16-42df-b640-a8ec37bca35c
 keywords: ["KSPROPERTY_PIN_NECESSARYINSTANCES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ This property returns the minimum number of pins that the pin factory must insta
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin" data-raw-source="[&lt;strong&gt;KSP_PIN&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)"><strong>KSP_PIN</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -83,14 +82,5 @@ Requirements
 ## See also
 
 
-[**KSP\_PIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
-
- 
-
- 
-
-
-
-
-
+[**KSP\_PIN**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin)
 

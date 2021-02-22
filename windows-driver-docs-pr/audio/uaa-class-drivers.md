@@ -1,7 +1,6 @@
 ---
 title: UAA Class Drivers
 description: UAA Class Drivers
-ms.assetid: 57f8f6fe-53a9-4ef1-b4f6-715232e88fdf
 keywords:
 - HD Audio, Universal Audio Architecture
 - High Definition Audio (HD Audio), Universal Audio Architecture
@@ -21,7 +20,7 @@ In Windows Vista, Microsoft provides UAA class drivers for audio devices that co
 
 -   The requirements for the HD Audio codec (to be published).
 
-For information about the requirements for UAA devices on external buses or information about UAA class drivers, see the white paper titled *Universal Audio Architecture* at the [audio technology](https://go.microsoft.com/fwlink/p/?linkid=8751) website.
+For information about the requirements for UAA devices on external buses or information about UAA class drivers, see the [Universal Audio Architecture](/previous-versions/windows/hardware/design/dn640534(v=vs.85)) white paper.
 
 The remainder of this discussion refers only to the version of the UAA class driver that controls an audio device that connects to an internal bus, implements the HD Audio hardware registers, and controls a UAA-compliant HD Audio codec. This class driver is a child of the HD Audio bus driver and uses the bus driver's baseline HD Audio DDI to program the UAA-compliant hardware.
 
@@ -50,9 +49,4 @@ This class driver does not provide:
 -   A plug-in model for third-party code for either programming the codecs or providing software effects.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x81 SPIN_LOCK_INIT_FAILURE
 description: The SPIN_LOCK_INIT_FAILURE bug check has a value of 0x00000081.This bug check appears very infrequently.
-ms.assetid: 0af215f5-e7f6-47bd-86e7-9cb3dd1524be
 keywords: ["Bug Check 0x81 SPIN_LOCK_INIT_FAILURE", "SPIN_LOCK_INIT_FAILURE"]
 ms.date: 05/23/2017
 topic_type:

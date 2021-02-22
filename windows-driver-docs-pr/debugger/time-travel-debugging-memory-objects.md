@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ---
 
 # TTD Memory Objects
+
 ## Description
 *TTD Memory* is a method that takes beginAddress, endAddress and dataAccessMask parameters and returns a collection of memory objects that contain memory access information.
 
@@ -109,14 +110,9 @@ In this example all of the postions in the trace where the four bytes of memory 
     Value            : 0x55
 ```
 
-
-
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
 

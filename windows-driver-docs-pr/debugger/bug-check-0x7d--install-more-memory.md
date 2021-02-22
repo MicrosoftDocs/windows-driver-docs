@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x7D INSTALL_MORE_MEMORY
 description: The INSTALL_MORE_MEMORY bug check has a value of 0x0000007D. This bug check indicates that there is not enough memory to start up the Microsoft Windows operating system.
-ms.assetid: 560cfa2b-f000-4dc9-8505-f539f3f56fd6
 keywords: ["Bug Check 0x7D INSTALL_MORE_MEMORY", "INSTALL_MORE_MEMORY"]
 ms.date: 05/23/2017
 topic_type:

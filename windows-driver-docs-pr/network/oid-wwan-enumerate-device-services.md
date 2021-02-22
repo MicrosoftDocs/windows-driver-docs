@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_ENUMERATE_DEVICE_SERVICES
 description: OID_WWAN_ENUMERATE_DEVICE_SERVICES returns the list of device services supported by the miniport driver.NDIS_STATUS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS status notification containing a NDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure that provides the list of supported device service GUIDs.
-ms.assetid: 12AB2235-DDF8-44CB-BD3D-61D0FFCB4080
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_ENUMERATE_DEVICE_SERVICES Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ OID\_WWAN\_ENUMERATE\_DEVICE\_SERVICES returns the list of device services suppo
 
 Set requests are not supported.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands) status notification containing a [**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services) structure that provides the list of supported device service GUIDs.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request, and later sending a [**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](./ndis-status-wwan-device-service-supported-commands.md) status notification containing a [**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services) structure that provides the list of supported device service GUIDs.
 
 Requirements
 ------------
@@ -40,14 +39,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-device-service-supported-commands)
+[**NDIS\_STATUS\_WWAN\_DEVICE\_SERVICE\_SUPPORTED\_COMMANDS**](./ndis-status-wwan-device-service-supported-commands.md)
 
-[**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services)
-
- 
+[**NDIS\_WWAN\_SUPPORTED\_DEVICE\_SERVICES**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_supported_device_services)
 
  
-
-
-
 

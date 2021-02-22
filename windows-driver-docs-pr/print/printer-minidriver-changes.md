@@ -1,7 +1,6 @@
 ---
 title: Printer Minidriver Changes
 description: Printer Minidriver Changes
-ms.assetid: 8f427642-a758-48bf-96e1-95a27adbaf23
 keywords:
 - in-box autoconfiguration support WDK printer , minidriver changes
 - GPD files WDK print , in-box autoconfiguration support

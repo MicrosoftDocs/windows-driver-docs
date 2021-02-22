@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ACCESS\_RIGHTS
 description: The WIA\_IPA\_ACCESS\_RIGHTS property contains the access rights for a WIA item.
-ms.assetid: 5bfa9406-2cb6-4c8b-ab25-6f8f55d941d4
 keywords: ["WIA_IPA_ACCESS_RIGHTS Imaging Devices"]
 topic_type:
 - apiref

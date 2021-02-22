@@ -1,7 +1,6 @@
 ---
 title: WDI transmit operations and offloads
 description: WDI operates in one of two Tx modes Port queuing and PeerTID queuing.
-ms.assetid: 9ADBDAD5-4AFA-4AFA-A829-96EB28CEBAA1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -41,7 +40,7 @@ The following is a list of TX operations and offloads.
 <td align="left"><p>Checksum, LSO.</p></td>
 <td align="left"><p>Checksum is a configurable offload at boot-up. Each frame has flags to specify the applicable checksum operations.</p>
 <p>WDI handles LSO segmentation transparently from the TAL/Target if applicable.</p></td>
-<td align="left"><p>Checksum: The target passes to WDI its checksum offload capabilities as part of device caps during bringup. For capability information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload" data-raw-source="[&lt;strong&gt;NDIS_TCP_IP_CHECKSUM_OFFLOAD&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)"><strong>NDIS_TCP_IP_CHECKSUM_OFFLOAD</strong></a>.</p>
+<td align="left"><p>Checksum: The target passes to WDI its checksum offload capabilities as part of device caps during bringup. For capability information, see <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload" data-raw-source="[&lt;strong&gt;NDIS_TCP_IP_CHECKSUM_OFFLOAD&lt;/strong&gt;](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)"><strong>NDIS_TCP_IP_CHECKSUM_OFFLOAD</strong></a>.</p>
 <p>WDI handles LSO segmentation transparently from the TAL/Target if applicable.</p></td>
 </tr>
 <tr class="even">
@@ -119,7 +118,7 @@ The following is a list of TX operations and offloads.
 ## Operation in Host-Implemented FIPS mode
 
 
-If the host provides FIPS for a given connection (host FIPS mode is set to true in [**WDI\_TLV\_CONNECTION\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connection-settings)), the host encrypts the packets before they are submitted to the target. The target transmits the packets without additional changes that affect the data integrity of the packets. For example, the target must not perform transmit MSDU aggregation in this mode.
+If the host provides FIPS for a given connection (host FIPS mode is set to true in [**WDI\_TLV\_CONNECTION\_SETTINGS**](./wdi-tlv-connection-settings.md)), the host encrypts the packets before they are submitted to the target. The target transmits the packets without additional changes that affect the data integrity of the packets. For example, the target must not perform transmit MSDU aggregation in this mode.
 
 In the more common case where host-FIPS mode is not enabled (target-implemented encryption mode), the header 802.11 header is followed by the unencrypted payload data. If the packet requires encryption before transmission, the target encrypts the packet. It also performs QoS prioritization of packets, and may perform TCP layer offload operations (such as checksum or large send). For this send processing, the target may need to add additional headers into the packet (for example, QoS, HT headers, or IV).
 
@@ -157,20 +156,11 @@ The network data is submitted in 802.11 packet format to the port (target device
 ## Related topics
 
 
-[**NDIS\_TCP\_IP\_CHECKSUM\_OFFLOAD**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)
+[**NDIS\_TCP\_IP\_CHECKSUM\_OFFLOAD**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_tcp_ip_checksum_offload)
 
 [WDI data transfer](wdi-data-transfer.md)
 
-[**WDI\_TLV\_CONNECTION\_SETTINGS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connection-settings)
+[**WDI\_TLV\_CONNECTION\_SETTINGS**](./wdi-tlv-connection-settings.md)
 
-[**WDI\_TXRX\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities)
-
- 
-
- 
-
-
-
-
-
+[**WDI\_TXRX\_CAPABILITIES**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities)
 

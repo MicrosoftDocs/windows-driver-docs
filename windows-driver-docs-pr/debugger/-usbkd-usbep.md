@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbep
 description: The usbkd.usbep command displays information about a USB endpoint.
-ms.assetid: FEF66394-0502-4F3F-ACBE-57AA1945CC74
 keywords: ["usbkd.usbep Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -47,7 +46,7 @@ Here is one way to find the address of a **usbport!\_HCD\_ENDPOINT** structure. 
 
 In the preceding output, the address of the device extension of the FDO is displayed as the argument of the [DML](debugger-markup-language-commands.md) command **!ehci\_info ffffe00001ca11a0**.
 
-Either click the DML command or pass the address of the device extension to [**!usbhcdext**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-usbkd-usbhcdext) to get the global endpoint list.
+Either click the DML command or pass the address of the device extension to [**!usbhcdext**](-usbkd-usbhcdext.md) to get the global endpoint list.
 
 ```dbgcmd
 0: kd> !usbkd.usbhcdext ffffe00001ca11a0
@@ -102,14 +101,7 @@ RootHub Endpoint
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Installing a WIA Error Handling Driver Extension
 description: Installing a WIA Error Handling Driver Extension
-ms.assetid: 8a16b0db-25ed-4512-8b45-0256fed6b83e
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

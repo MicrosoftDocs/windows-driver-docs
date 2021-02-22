@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting the Implementation of Container IDs
 description: Troubleshooting the Implementation of Container IDs
-ms.assetid: 9c992f5a-73b6-4567-977f-1cd92862bf60
 keywords:
 - container IDs WDK , troubleshooting
 ms.date: 04/20/2017
@@ -36,17 +35,11 @@ In such a case, you should examine the following:
 
     Make sure that the format of the container ID or unique identifier in the hardware complies with the format requirements for the given bus. For more information, see [Container IDs Generated from a Bus-Specific Unique ID](container-ids-generated-from-a-bus-specific-unique-id.md).
 
-    If devnodes for the device are enumerated by a custom bus driver, check that the bus driver correctly responds to the [**IRP_MN_QUERY_ID**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-id) request for **BusQueryContainerID**.
+    If devnodes for the device are enumerated by a custom bus driver, check that the bus driver correctly responds to the [**IRP_MN_QUERY_ID**](../kernel/irp-mn-query-id.md) request for **BusQueryContainerID**.
 
 -   Is the device concurrently connected to the computer by more than one bus?
 
     If the device is concurrently connected to the computer by two or more buses, two or more instances of the device can appear in the Devices and Printers UI. These instances can have one or more device instances for each bus to which the device is attached. To resolve this problem, make sure that the device reports a container ID or a device-specific unique identifier, and reports the same value on each bus.
 
  
-
- 
-
-
-
-
 

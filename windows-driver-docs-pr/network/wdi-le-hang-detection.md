@@ -1,7 +1,6 @@
 ---
 title: LE hang detection
 description: This section describes LE hang detection in WDI
-ms.assetid: 9C0BB4B8-184A-4C1A-8B47-C30C8318AEEB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,14 +15,14 @@ The indication should be on the Adapter port (for example, portid=0xFFFF). By de
 When the LE or firmware watchdog timer detects that the firmware stalled, the expectations from the UE are as follows.
 
 1.  If in D0,
-    1.  The LE indicates [NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-firmware-stalled).
+    1.  The LE indicates [NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED](./ndis-status-wdi-indication-firmware-stalled.md).
     2.  At the return from the indication, the LE returns (if any) the stalled WDI command.
     3.  The UE starts the Reset Recovery (RR) procedure.
 
 2.  If in Dx, this can only happen with firmware detected stall.
     1.  Firmware raises wake interrupt.
     2.  On receiving a D0 command, indicates the wake reason of why the firmware stalled.
-    3.  After returning D0 WDI OID, the LE indicates [NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-firmware-stalled).
+    3.  After returning D0 WDI OID, the LE indicates [NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED](./ndis-status-wdi-indication-firmware-stalled.md).
     4.  Finish the procedure as in D0: 1a, 1b, and 1c.
 
 ![wdi le hang detection](images/wdi-le-hang-detection-flow.png)
@@ -54,16 +53,9 @@ This is informational for IHVs. In addition to UE and LE detected hangs, other O
 ## Related topics
 
 
-[NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wdi-indication-firmware-stalled)
+[NDIS\_STATUS\_WDI\_INDICATION\_FIRMWARE\_STALLED](./ndis-status-wdi-indication-firmware-stalled.md)
 
-[**WDI\_TLV\_INDICATION\_WAKE\_REASON**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-indication-wake-reason)
-
- 
+[**WDI\_TLV\_INDICATION\_WAKE\_REASON**](./wdi-tlv-indication-wake-reason.md)
 
  
-
-
-
-
-
 

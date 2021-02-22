@@ -1,7 +1,6 @@
 ---
 title: MB UICC application and file system access
 description: MB UICC application and file system access
-ms.assetid: 9A9BFCCE-2481-412F-AEBB-9919F6916224
 keywords:
 - MB UICC application and file system access, Mobile Broadband UICC application and file system access
 ms.date: 03/07/2019
@@ -50,7 +49,7 @@ The following table specifies the UUID and command code for each CID, as well as
 | MBIM_CID_MS_UICC_FILE_STATUS | UUID_MS_UICC_LOW_LEVEL | 8 | N | Y | N |
 | MBIM_CID_MS_UICC_ACCESS_BINARY | UUID_MS_UICC_LOW_LEVEL | 9 | Y | Y | N |
 | MBIM_CID_MS_UICC_ACCESS_RECORD | UUID_MS_UICC_LOW_LEVEL | 10 | Y | Y | N |
-| MBIM_CID_MS_PIN_EX | UUID_BASIC_CONNECT_EXTENSIONS | 15 | Y | Y | N |
+| MBIM_CID_MS_PIN_EX | UUID_BASIC_CONNECT_EXTENSIONS | 14 | Y | Y | N |
 
 ## MBIM_CID_MS_UICC_APP_LIST
 
@@ -58,7 +57,7 @@ This CID retrieves a list of applications in a UICC and information about them. 
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | Empty | Not applicable |
 | Response | Not applicable | MBIM_UICC_APP_LIST | Not applicable |
@@ -142,7 +141,7 @@ This CID retrieves information about a specified UICC file.
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | Not applicable | MBIM_UICC_FILE_PATH | Not applicable |
 | Response | Not applicable | MBIM_UICC_FILE_STATUS | Not applicable |
@@ -266,10 +265,10 @@ This CID sends a specific command to access a UICC binary file, with structure t
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_UICC_ACCESS_BINARY | MBIM_UICC_ACCESS_BINARY | Not applicable |
-| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
+| Command | Not applicable | MBIM_UICC_ACCESS_BINARY | Not applicable |
+| Response | Not applicable | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
@@ -294,7 +293,7 @@ Reads a binary file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM
 
 ### Set
 
-Updates a transparent file. The InformationBuffer for MBIM_COMMAND_MSG contains an MBIM_UICC_ACCESS_BINARY structure. An MBIM_UICC_RESPONSE structure is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+Not applicable.
 
 ### Response
 
@@ -334,10 +333,10 @@ This CID sends a specific command to access a UICC linear fixed or cyclic file, 
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
-| Command | MBIM_UICC_ACCESS_RECORD | MBIM_UICC_ACCESS_RECORD | Not applicable |
-| Response | MBIM_UICC_RESPONSE | MBIM_UICC_RESPONSE | Not applicable |
+| Command | Not applicable | MBIM_UICC_ACCESS_RECORD | Not applicable |
+| Response | Not applicable | MBIM_UICC_RESPONSE | Not applicable |
 
 ### Query
 
@@ -361,7 +360,7 @@ Reads contents of a record. The InformationBuffer for MBIM_COMMAND_MSG contains 
 
 ### Set
 
-Updates a linear fixed or cyclic file. The InformationBuffer for MBIM_COMMAND_MSG contains the following MBIM_UICC_ACCESS_RECORD structure. MBIM_UICC_RESPONSE is returned in the InformationBuffer of MBIM_COMMAND_DONE.
+Not applicable.
 
 ### Response
 
@@ -392,7 +391,7 @@ Just like MBIM_CID_MS_PIN, with MBIM_CID_MS_PIN_EX the device only reports one P
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_SET_PIN_EX | MBIM_PIN_APP | Not applicable |
 | Response | MBIM_PIN_INFO_EX | MBIM_PIN_INFO_EX | Not applicable |

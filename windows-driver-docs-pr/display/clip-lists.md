@@ -1,7 +1,6 @@
 ---
 title: Clip Lists
 description: Clip Lists
-ms.assetid: 73383093-ab83-4955-b017-cc370009fd0e
 keywords:
 - surfaces WDK DirectDraw , blitting
 - drawing blt WDK DirectDraw , clip lists
@@ -20,13 +19,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_clip_lists_gg"></span><span id="DDK_CLIP_LISTS_GG"></span>
 
 
-Clipped blts are never passed to the driver on Microsoft Windows 2000 and later. The **IsClipped** member of [**DD\_BLTDATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_bltdata) is always **FALSE**, and the clipped list is always **NULL**.
+Clipped blts are never passed to the driver on Microsoft Windows 2000 and later. The **IsClipped** member of [**DD\_BLTDATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_bltdata) is always **FALSE**, and the clipped list is always **NULL**.
 
  
-
- 
-
-
-
-
 

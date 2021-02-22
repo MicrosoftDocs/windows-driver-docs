@@ -1,7 +1,6 @@
 ---
 title: KeXxxTimer Routines, KTIMER Objects, and DPCs
 description: Starting with Windows 2000, a set of KeXxxTimer routines is available to manage timers.
-ms.assetid: b58487de-6e9e-45f4-acb8-9233c8718ee2
 keywords: ["timers WDK kernel", "timer objects WDK kernel", "timer objects WDK kernel , about timer objects", "deferred procedure calls WDK kernel", "DPCs WDK kernel", "kernel dispatcher objects WDK , timer objects", "dispatcher objects WDK kernel , timer objects", "notification timers WDK kernel", "synchronization timers WDK kernel", "KTIMER", "KeXxxTimer routines", "KeInitializeTimer", "KeInitializeTimerEx", "KeSetTimer", "KeSetTimerEx", "CustomTimerDpc", "timeout intervals WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -10,12 +9,12 @@ ms.localizationpriority: medium
 # KeXxxTimer Routines, KTIMER Objects, and DPCs
 
 
-Starting with Windows 2000, a set of **Ke*Xxx*Timer** routines is available to manage timers. These routines use timer objects that are based on the [**KTIMER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure. To create a timer object, a driver first allocates storage for a **KTIMER** structure. Then the driver calls a routine such as [**KeInitializeTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimer) or [**KeInitializeTimerEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimerex) to initialize this structure.
+Starting with Windows 2000, a set of **Ke*Xxx*Timer** routines is available to manage timers. These routines use timer objects that are based on the [**KTIMER**](./eprocess.md) structure. To create a timer object, a driver first allocates storage for a **KTIMER** structure. Then the driver calls a routine such as [**KeInitializeTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimer) or [**KeInitializeTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimerex) to initialize this structure.
 
 
 
 
-A timer can be set to expire just once, or to expire repeatedly after a given interval. [**KeSetTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer) always sets a timer that will expire just once. [**KeSetTimerEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex) accepts an optional *Period* parameter, which specifies a recurring timer interval.
+A timer can be set to expire just once, or to expire repeatedly after a given interval. [**KeSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer) always sets a timer that will expire just once. [**KeSetTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex) accepts an optional *Period* parameter, which specifies a recurring timer interval.
 
 An optional [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine (a type of deferred procedure call) can be associated with either a notification timer or a synchronization timer. This routine executes when the specified time interval expires. For more information, see [Using Timer Objects](using-timer-objects.md).
 
@@ -35,9 +34,4 @@ The following topics provide more information about timer objects and DPCs:
 [Providing CustomTimerDpc Context Information](providing-customtimerdpc-context-information.md)
 [Using a CustomTimerDpc Routine](using-a-customtimerdpc-routine.md)
  
-
- 
-
-
-
 

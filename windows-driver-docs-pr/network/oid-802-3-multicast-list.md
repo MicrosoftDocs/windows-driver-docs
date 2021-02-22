@@ -1,7 +1,6 @@
 ---
 title: OID_802_3_MULTICAST_LIST
 description: As a set request, NDIS and overlying protocol drivers use the OID_802_3_MULTICAST_LIST OID request to replace the current multicast address list on a miniport adapter.
-ms.assetid: 601f38e1-26ae-4d72-9d72-91bd58f81bba
 ms.date: 08/08/2017
 keywords: 
  -OID_802_3_MULTICAST_LIST Network Drivers Starting with Windows Vista
@@ -22,7 +21,7 @@ NDIS handles OID\_802\_3\_MULTICAST\_LIST query requests for miniport drivers, s
 
 Miniport drivers that support multicast address lists must support OID\_802\_3\_MULTICAST\_LIST set requests.
 
-For a set request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains the multicast address list as an array of addresses.
+For a set request, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains the multicast address list as an array of addresses.
 
 -   Each address is an array of 6 bytes.
 -   The **InformationBufferLength** member contains the length, in bytes, of the **InformationBuffer** array.
@@ -71,9 +70,4 @@ Requirements
 [OID\_GEN\_CURRENT\_PACKET\_FILTER](oid-gen-current-packet-filter.md)
 
  
-
- 
-
-
-
 

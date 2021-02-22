@@ -1,7 +1,6 @@
 ---
 title: Installing a Print Processor
 description: Installing a Print Processor
-ms.assetid: 4e9e1148-16a3-42f6-a262-1eef014636d0
 keywords:
 - print processors WDK , installing
 - installing print processors WDK
@@ -27,7 +26,7 @@ When an installation application calls the spooler's **AddPrinter** function, us
 
 If the Plug and Play (PnP) manager detects and installs a print queue on a system running either Windows 2000 or Windows XP, and if the INF file used to install the print queue contains a PrintProcessor entry other than the default Windows print processor, WinPrint, the print processor will not be associated with the print queue. However, the print processor will be installed. (Note that if you install the print queue using the Add Printer wizard, the print processor is correctly associated with the print queue. Note also that the PnP manager in Microsoft Windows Server 2003 and later correctly associates a print processor with the print queue.)
 
-To associate the print processor with the print queue for Plug and Play installations on Windows 2000 and Windows XP, include a PRINTER\_EVENT\_INITIALIZE case in the printer interface DLL's [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent) function. For Microsoft Windows Server 2003 and later, it is not necessary to add a PRINTER\_EVENT\_INITIALIZE case in the **DrvPrinterEvent** function.
+To associate the print processor with the print queue for Plug and Play installations on Windows 2000 and Windows XP, include a PRINTER\_EVENT\_INITIALIZE case in the printer interface DLL's [**DrvPrinterEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent) function. For Microsoft Windows Server 2003 and later, it is not necessary to add a PRINTER\_EVENT\_INITIALIZE case in the **DrvPrinterEvent** function.
 
 The following code example sets the **pPrintProcessor** member of the PRINTER\_INFO\_2 structure to the name of your print processor, and then calls the **SetPrinter** function (described in the Windows SDK documentation) to update the printer's settings. Note that the name of the print processor in *gszPrintProc* must be the same as that in the PrintProcessor entry in your INF file.
 
@@ -97,7 +96,7 @@ DrvPrinterEvent(
 
 ### <a href="" id="associating-a-print-processor-with-a-print-queue-during-printer-driver"></a>Associating a Print Processor with a Print Queue During Printer Driver Upgrade
 
-When a printer driver is updated, the print processor of the updated print queue is not changed. If the new printer driver requires a particular print processor, the printer interface DLL's [**DrvUpgradePrinter**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvupgradeprinter) function must set the **pPrintProcessor** member of the PRINTER\_INFO\_2 structure to the name of the new print processor. After this occurs, this function calls **SetPrinter** to update the printer's settings. The spooler calls the **DrvUpgradePrinter** function once for each printer, which ensures that all printers using that driver also use the required print processor. The following code example demonstrates these points.
+When a printer driver is updated, the print processor of the updated print queue is not changed. If the new printer driver requires a particular print processor, the printer interface DLL's [**DrvUpgradePrinter**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvupgradeprinter) function must set the **pPrintProcessor** member of the PRINTER\_INFO\_2 structure to the name of the new print processor. After this occurs, this function calls **SetPrinter** to update the printer's settings. The spooler calls the **DrvUpgradePrinter** function once for each printer, which ensures that all printers using that driver also use the required print processor. The following code example demonstrates these points.
 
 ```cpp
 BOOL
@@ -162,9 +161,4 @@ DrvUpgradePrinter(
 ```
 
  
-
- 
-
-
-
 

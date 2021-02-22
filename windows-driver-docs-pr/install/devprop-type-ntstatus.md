@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_NTSTATUS
 description: The DEVPROP_TYPE_NTSTATUS identifier represents the base-data-type identifier for the NTSTATUS status code values that are defined in Ntstatus.h.
-ms.assetid: 7593d24d-8e89-409e-9047-0c14268b8e62
 keywords: ["DEVPROP_TYPE_NTSTATUS Device and Driver Installation"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ The DEVPROP_TYPE_NTSTATUS identifier represents the base-data-type identifier fo
 Remarks
 -------
 
-In Windows Vista and later versions of Windows, the [unified device property model](https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-) also defines a [**DEVPROP_TYPE_ERROR**](devprop-type-error.md) base-data-type identifier for Microsoft Win32 error code values.
+In Windows Vista and later versions of Windows, the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md) also defines a [**DEVPROP_TYPE_ERROR**](devprop-type-error.md) base-data-type identifier for Microsoft Win32 error code values.
 
 You can combine DEVPROP_TYPE_NTSTATUS only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -79,11 +78,4 @@ Requirements
 [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md)
 
  
-
- 
-
-
-
-
-
 

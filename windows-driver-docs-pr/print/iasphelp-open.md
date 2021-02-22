@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: f4e39b76-3118-41d8-a5f8-501d884cbcdb
 keywords: ["Open method Print Devices", "Open method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , Open method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: SM\_SetPersistentBinding function
 description: The SM\_SetPersistentBinding method sets the bindings that are used by the HBA miniport driver to map the OS-specific LUN information to the fibre channel protocol (FCP) identifiers for the logical units.
-ms.assetid: 722f7216-9ff4-4f12-a4fe-e1f8f9e594e1
 keywords: ["SM_SetPersistentBinding function Storage Devices"]
 topic_type:
 - apiref
@@ -94,16 +93,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SetPersistentBinding\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_in)
+[**SM\_SetPersistentBinding\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_in)
 
-[**SM\_SetPersistentBinding\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_out)
-
- 
+[**SM\_SetPersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_setpersistentbinding_out)
 
  
-
-
-
-
-
 

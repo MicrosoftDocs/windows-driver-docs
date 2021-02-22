@@ -1,7 +1,6 @@
 ---
 title: dp ( ntsdexts.dp)
 description: The dp extension in Ntsdexts.dll displays a CSR process.
-ms.assetid: 9e489cfc-2105-4605-b94d-88eea7883420
 keywords: ["dp ( ntsdexts.dp) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Object Bags
 description: Object Bags
-ms.assetid: b7ee5756-1c79-4ead-9999-d13be9a0d3d9
 keywords:
 - AVStream object bags WDK
 - object bags WDK AVStream
@@ -23,15 +22,15 @@ ms.localizationpriority: medium
 
 AVStream manages a construct referred to as an object bag for each AVStream object visible to the minidriver. An object bag is a generic container for holding dynamically allocated memory associated with a given object.
 
-The following structures have members of type KSOBJECT\_BAG, which is equivalent to PVOID: [**KSDEVICE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice), [**KSFILTERFACTORY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory), [**KSFILTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter), and [**KSPIN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-_kspin).
+The following structures have members of type KSOBJECT\_BAG, which is equivalent to PVOID: [**KSDEVICE**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice), [**KSFILTERFACTORY**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory), [**KSFILTER**](/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter), and [**KSPIN**](/windows-hardware/drivers/ddi/ks/ns-ks-_kspin).
 
 Uses of object bags include:
 
 -   Memory management.
 
-    Minidrivers can use object bags for memory management to reduce cleanup work. In order to do this, a minidriver must first call [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) to allocate dynamic memory and associate it with a given object. The minidriver then adds the allocated memory to the object bag by calling [**KsAddItemToObjectBag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksadditemtoobjectbag).
+    Minidrivers can use object bags for memory management to reduce cleanup work. In order to do this, a minidriver must first call [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) to allocate dynamic memory and associate it with a given object. The minidriver then adds the allocated memory to the object bag by calling [**KsAddItemToObjectBag**](/windows-hardware/drivers/ddi/ks/nf-ks-ksadditemtoobjectbag).
 
-    When the minidriver calls **KsAddItemToObjectBag**, AVStream associates a default cleanup function (typically [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool)) with the object. Alternatively, the minidriver can include a pointer to a minidriver-provided cleanup routine in the *Free* parameter of **KsAddItemToObjectBag**. When an object is closed, AVStream removes every item from the object bag and calls the associated cleanup routines.
+    When the minidriver calls **KsAddItemToObjectBag**, AVStream associates a default cleanup function (typically [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool)) with the object. Alternatively, the minidriver can include a pointer to a minidriver-provided cleanup routine in the *Free* parameter of **KsAddItemToObjectBag**. When an object is closed, AVStream removes every item from the object bag and calls the associated cleanup routines.
 
 -   Sharing dynamically allocated data among several AVStream objects.
 
@@ -39,16 +38,11 @@ Uses of object bags include:
 
 -   Determining which structures can be edited with descriptors.
 
-    If a minidriver dynamically allocates a descriptor or a descriptor substructure, the minidriver places the descriptor in the relevant object bag. The [**\_KsEdit**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-_ksedit) function then uses this information to determine whether a given structure can be edited.
+    If a minidriver dynamically allocates a descriptor or a descriptor substructure, the minidriver places the descriptor in the relevant object bag. The [**\_KsEdit**](/windows-hardware/drivers/ddi/ks/nf-ks-_ksedit) function then uses this information to determine whether a given structure can be edited.
 
 AVStream automatically removes items from an object bag if the owning object is deleted.
 
-Minidrivers can remove individual items from an object bag by calling [**KsRemoveItemFromObjectBag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksremoveitemfromobjectbag) or [**KsDiscard**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nf-ks-ksdiscard).
+Minidrivers can remove individual items from an object bag by calling [**KsRemoveItemFromObjectBag**](/windows-hardware/drivers/ddi/ks/nf-ks-ksremoveitemfromobjectbag) or [**KsDiscard**](/windows-hardware/drivers/ddi/ks/nf-ks-ksdiscard).
 
  
-
- 
-
-
-
 

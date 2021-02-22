@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for RSS
 description: Standardized INF Keywords for RSS
-ms.assetid: 0ea0d6f7-0dc5-40dd-a706-4712e19dbfdb
 keywords:
 - receive-side scaling WDK networking , standardized INF keywords
 - RSS WDK networking , standardized INF keywords
@@ -122,7 +121,7 @@ The preferred NUMA node that is used for the memory allocations of the network a
 
 A driver for a PCI expansion card should not specify the NUMA node ID statically in its INF, since the closest node depends on which PCI slot the card is plugged into.  Only specify **\*NumaNodeId** if the network adapter is integrated into the system, the NUMA node is known in advance, and the node cannot be determined at runtime by querying ACPI.
 
-**Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
+**Note**  If this keyword is present and its value is less than the number of NUMA nodes in the computer, NDIS uses this value in the **PreferredNumaNode** member in the [**NDIS\_RSS\_PROCESSOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
 
  
 
@@ -277,10 +276,4 @@ If the **\*NumaNodeId** keyword is not present, then NDIS automatically selects 
 For more information about standardized INF keywords, see [Standardized INF Keywords for Network Devices](standardized-inf-keywords-for-network-devices.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Te.exe Command Options
 description: Te.exe Command Options
-ms.assetid: E9A9292D-FA30-410d-9322-BD0F321314F9
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -58,7 +57,7 @@ Keeps the console running te.exe 'topmost' in the desktop z-order for the durati
 
 ### /dpiaware
 
-Executes tests in a process marked as DPI-aware, see [High DPI](https://docs.microsoft.com/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows). This can also be set via metadata ("DpiAware").
+Executes tests in a process marked as DPI-aware, see [High DPI](/windows/desktop/hidpi/high-dpi-desktop-application-development-on-windows). This can also be set via metadata ("DpiAware").
 
 ### /inproc
 
@@ -266,9 +265,13 @@ te.exe \*.dll /runon:TestMachine1
 The selection criteria to be used when selecting tests from each test binary. Selection criteria is composed of one or more of the following:
 
 @\[property name\] = \[value as string\]
+
 @\[property name\] &gt;= \[value as float or integer\]
+
 @\[property name\] &gt; \[value as float or integer\]
+
 @\[property name\] &lt;= \[value as float or integer\]
+
 @\[property name\] &lt; \[value as float or integer\]
 
 * *Property values as strings must be within single quotes.*

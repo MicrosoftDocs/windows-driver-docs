@@ -6,7 +6,6 @@ ms.date: 04/20/2017
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
-author: EliotSeattle
 ---
 
 # Partner app development
@@ -19,5 +18,5 @@ Partners have the ability to create special use applications for things like the
 |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Background tasks and custom triggers for device drivers](background-tasks-and-oem-triggers.md) | Learn how to use tasks and triggers in conjunction with your device drivers and apps.                     |
 | [Create a partner settings app](create-a-system-settings-application.md)                        | Learn how to create an OEM settings apps for custom hardware components to help differentiate your brand. |
-| [Mobile Broadband](https://docs.microsoft.com/windows-hardware/drivers/mobilebroadband/index)                                                    | Learn more about mobile broadband and how to configure mobile broadband experiences for your customers.   |
+| [Mobile Broadband](../mobilebroadband/index.md)                                                    | Learn more about mobile broadband and how to configure mobile broadband experiences for your customers.   |
 | [Wi-fi Direct](wi-fi-direct.md) | Learn more about Wi-Fi Direct and the Wi-Fi Direct Services API in Windows.

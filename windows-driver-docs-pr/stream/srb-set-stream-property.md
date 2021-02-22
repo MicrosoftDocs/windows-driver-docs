@@ -1,7 +1,6 @@
 ---
 title: SRB\_SET\_STREAM\_PROPERTY
 description: SRB\_SET\_STREAM\_PROPERTY
-ms.assetid: 33a44732-a75c-4394-9839-f3c7d71d01e1
 keywords: ["SRB_SET_STREAM_PROPERTY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -36,7 +35,7 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The class driver passes the parameters of the operation in the *pSrb*-&gt;**CommandData**.**PropertyInfo** buffer, a structure of the form [**STREAM\_PROPERTY\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_stream_property_descriptor). The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure.
+The class driver passes the parameters of the operation in the *pSrb*-&gt;**CommandData**.**PropertyInfo** buffer, a structure of the form [**STREAM\_PROPERTY\_DESCRIPTOR**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_stream_property_descriptor). The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure.
 
 The **Property** member of STREAM\_PROPERTY\_DESCRIPTOR describes the property in question, while the **PropertyInfo** member specifies a buffer from which to copy the property data. If the buffer is too small, the minidriver should set the **Status** member pointed to by *pSrb* to STATUS\_BUFFER\_OVERFLOW.
 
@@ -45,14 +44,7 @@ The **Property** member of STREAM\_PROPERTY\_DESCRIPTOR describes the property i
 
 [**SRB\_GET\_STREAM\_PROPERTY**](srb-get-stream-property.md)
 
-[**STREAM\_PROPERTY\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_stream_property_descriptor)
+[**STREAM\_PROPERTY\_DESCRIPTOR**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_stream_property_descriptor)
 
  
-
- 
-
-
-
-
-
 

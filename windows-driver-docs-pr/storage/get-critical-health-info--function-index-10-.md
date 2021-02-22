@@ -1,7 +1,6 @@
 ---
 title: Get Critical Health Info (Function Index 10)
 description: This function returns critical health-related information.
-ms.assetid: 2083628D-FB46-4104-9F70-F7124B35DD04
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function returns critical health-related information. Call [Get NVDIMM-N Health Info (Function Index 11)](get-nvdimm-n-health-info--function-index-11-.md) and [Get Energy Source Health Info (Function Index 12)](get-energy-source-health-info--function-index-12-.md) to obtain further health-related information.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: WDF_PTR_ADD_OFFSET macro
 description: The WDF_PTR_ADD_OFFSET macro adds an offset value to an address and returns the resulting address.
-ms.assetid: 21402be4-ef71-4828-b588-d178d66472e5
 keywords:
  - WDF_PTR_ADD_OFFSET macro
 ms.date: 08/23/2017
@@ -49,7 +48,7 @@ The macro is defined as follows:
         WDF_PTR_ADD_OFFSET_TYPE(_ptr, _offset, PVOID)
 ```
 
-Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In the example, the driver calls **WDF_PTR_ADD_OFFSET** to add an offset to an address to determine a destination buffer address to pass to the [**WDF_WMI_BUFFER_APPEND_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdf_wmi_buffer_append_string) function.
+Here is an example from the Toaster sample (toaster\\func\\featured\\wmi.c). In the example, the driver calls **WDF_PTR_ADD_OFFSET** to add an offset to an address to determine a destination buffer address to pass to the [**WDF_WMI_BUFFER_APPEND_STRING**](/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdf_wmi_buffer_append_string) function.
 
 ```cpp
         //
@@ -108,13 +107,3 @@ Requirements
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-

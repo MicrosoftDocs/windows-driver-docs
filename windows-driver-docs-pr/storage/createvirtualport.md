@@ -1,7 +1,6 @@
 ---
 title: CreateVirtualPort method
 description: The CreateVirtualPort method creates a virtual port with a specific world wide port name (WWPN) .
-ms.assetid: B4274FB7-2850-4E17-ACDE-5592B0390E8B
 keywords: ["CreateVirtualPort method Storage Devices"]
 topic_type:
 - apiref
@@ -57,14 +56,7 @@ Not applicable to WMI methods.
 ## <span id="see_also"></span>See also
 
 
-[NPIV Status Codes](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/dn386176(v=vs.85))
+[NPIV Status Codes](/previous-versions/windows/hardware/drivers/dn386176(v=vs.85))
 
  
-
- 
-
-
-
-
-
 

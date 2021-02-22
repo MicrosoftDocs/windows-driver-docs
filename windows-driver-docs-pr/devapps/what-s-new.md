@@ -1,7 +1,6 @@
 ---
 title: What's new for UWP device apps
 description: This section provides a glimpse of what's new for UWP device apps.
-ms.assetid: AF18ACFD-EA38-4ABD-9369-3974C019E132
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 
 This section provides a glimpse of what's new for UWP device apps. For more info about device apps, see [Meet UWP device apps](meet-uwp-device-apps.md).
 
-**Tip**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth GATT, Bluetooth RFCOMM, Wi-Fi Direct devices, and more. For more info, see [Integrating devices](https://go.microsoft.com/fwlink/p/?LinkId=533279).
+**Tip**  Windows Runtime device APIs don't require device metadata. That means your app doesn't need to be a UWP device app to use them. UWP apps can use these APIs to access USB, Human Interface Devices (HID), Bluetooth GATT, Bluetooth RFCOMM, Wi-Fi Direct devices, and more. For more info, see [Integrating devices](/previous-versions/windows/apps/dn263141(v=win.10)).
 
  
 
@@ -32,9 +31,9 @@ Windows 8.1 introduces a new device metadata wizard. Easily create device metad
 ## <span id="_Background_tasks_for_device_sync_and_update"></span><span id="_background_tasks_for_device_sync_and_update"></span><span id="_BACKGROUND_TASKS_FOR_DEVICE_SYNC_AND_UPDATE"></span> Background tasks for device sync and update
 
 
-In Windows 8.1, UWP device apps can perform multi-step device operations in a background task so that they can run to completion even if the app is moved to the background and suspended. This is necessary to allow reliable device servicing (changes to persistent settings or firmware) and content synchronization, without requiring the user to sit and watch a progress bar. Use the [DeviceServicingTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308965) for device servicing and the [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967) for content synchronization. Note that these background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization. For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
+In Windows 8.1, UWP device apps can perform multi-step device operations in a background task so that they can run to completion even if the app is moved to the background and suspended. This is necessary to allow reliable device servicing (changes to persistent settings or firmware) and content synchronization, without requiring the user to sit and watch a progress bar. Use the [DeviceServicingTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceServicingTrigger) for device servicing and the [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger) for content synchronization. Note that these background tasks constrain the amount of time the app can run in the background and are not intended to allow indefinite operation or infinite synchronization. For more info, see [Device sync and update for UWP device apps](device-sync-and-update-for-uwp-device-apps.md).
 
-**Note**  The [DeviceUseTrigger](https://go.microsoft.com/fwlink/p/?LinkID=308967), for device sync, doesn't require device metadata.
+**Note**  The [DeviceUseTrigger](/uwp/api/Windows.ApplicationModel.Background.DeviceUseTrigger), for device sync, doesn't require device metadata.
 
  
 
@@ -58,10 +57,4 @@ To provide an experience consistent with other UWP apps installed on Windows 8.
 The Windows 8.1 built-in Camera app no longer includes an **Options** button. This means that a customized camera-options flyout from a UWP device app won't appear in that app. However, any other UWP app that uses the **Windows.Media.Capture.CameraCaptureUI** class can still expose a customized flyout for **More options**, when installed.
 
  
-
- 
-
-
-
-
 

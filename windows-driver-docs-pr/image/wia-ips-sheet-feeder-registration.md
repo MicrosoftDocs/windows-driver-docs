@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION
 description: The WIA\_IPS\_SHEET\_FEEDER\_REGISTRATION property contains the registration, or alignment and edge detection, for documents that are placed on the flatbed of a scanner. The WIA minidriver creates and maintains this property.
-ms.assetid: d97d5784-3360-48a3-a24e-97b4238c42f5
 keywords: ["WIA_IPS_SHEET_FEEDER_REGISTRATION Imaging Devices"]
 topic_type:
 - apiref

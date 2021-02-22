@@ -1,7 +1,6 @@
 ---
 title: GPD/PPD-Based Feature Description Changes
 description: GPD/PPD-Based Feature Description Changes
-ms.assetid: 22333d78-f78f-4031-a9f3-50b43ec746b6
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -58,13 +57,10 @@ By using the **PrintSchemaKeywordMap** or **MSPrintSchemaKeywordMap** keyword, t
 
 In a core driver's DEVMODE structure, settings for these custom GPD or PPD features are stored in the option array.
 
-**Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment).
+**Note**   For Windows 7, the **MxdcGetPDEVAdjustment** function has new parameters for landscape rotation. For more information, see [**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment).
 
  
 
 ## Related topics
-[**MxdcXDCGetPDEVAdjustment**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment)  
-[V4 Printer Driver Localization](v4-driver-localization.md)  
-
-
-
+[**MxdcXDCGetPDEVAdjustment**](/windows-hardware/drivers/ddi/mxdc/nf-mxdc-mxdcgetpdevadjustment)  
+[V4 Printer Driver Localization](v4-driver-localization.md)

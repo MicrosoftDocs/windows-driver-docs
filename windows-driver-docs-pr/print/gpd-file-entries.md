@@ -1,7 +1,6 @@
 ---
 title: GPD File Entries
 description: GPD File Entries
-ms.assetid: b563e7b5-8b04-4757-877e-c2b856817d39
 keywords:
 - GPD files WDK Unidrv , entries
 - entries WDK GPD files

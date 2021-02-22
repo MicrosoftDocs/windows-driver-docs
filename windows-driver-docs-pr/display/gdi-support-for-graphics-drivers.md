@@ -1,7 +1,6 @@
 ---
 title: GDI Support for Graphics Drivers
 description: GDI Support for Graphics Drivers
-ms.assetid: ef42cda0-106f-4c1b-babc-29a1070e2a2f
 keywords:
 - GDI WDK Windows 2000 display , reference
 - graphics drivers WDK Windows 2000 display , reference
@@ -20,13 +19,7 @@ This section describes the Microsoft Windows NT-based operating system graphics 
 
 References to GDI in this section are implicit references to kernel-mode GDI; Microsoft Win32 GDI will be explicitly identified. Kernel-mode GDI is also known as the Graphics Engine.
 
-GDI function and structure references are documented in the [Display Devices Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) section. Most of the GDI function declarations and structure definitions can be found in *Winddi.h*. For display drivers, the Microsoft DirectDraw heap manager functions are declared in *Dmemmgr.h*. Both files are shipped with the Windows Driver Kit (WDK).
+GDI function and structure references are documented in the [Display Devices Reference](/windows-hardware/drivers/ddi/_display) section. Most of the GDI function declarations and structure definitions can be found in *Winddi.h*. For display drivers, the Microsoft DirectDraw heap manager functions are declared in *Dmemmgr.h*. Both files are shipped with the Windows Driver Kit (WDK).
 
  
-
- 
-
-
-
-
 

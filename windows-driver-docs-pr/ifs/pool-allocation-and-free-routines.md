@@ -1,7 +1,6 @@
 ---
 title: Pool Allocation and Free Routines
 description: Pool Allocation and Free Routines
-ms.assetid: 757eebc0-ebd4-49a1-acea-6c27956b4b23
 keywords:
 - RDBSS WDK file systems , pool allocations
 - Redirected Drive Buffering Subsystem WDK file systems , pool allocations
@@ -23,7 +22,7 @@ RDBSS provides a number of routines to use for pool allocation. Normally, these 
 
 On a checked build, these routines were designed to add wrappers around the normal kernel allocation and free routines. These wrappers for pool allocation and free routines provide additional debugging information and call a set of routines that perform various kinds of checking and guarding before calling the kernel pool allocation and free routines. However, these features are not currently implemented in these allocation and free routines, but might be added in future releases.
 
-On a free build, these routines become direct calls to the kernel allocation and free routines, [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool).
+On a free build, these routines become direct calls to the kernel allocation and free routines, [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) and [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool).
 
 The following table lists the RDBSS pool allocation and free routines.
 
@@ -40,17 +39,17 @@ The following table lists the RDBSS pool allocation and free routines.
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/-rxallocatepoolwithtag" data-raw-source="[&lt;strong&gt;_RxAllocatePoolWithTag&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/-rxallocatepoolwithtag)"><strong>_RxAllocatePoolWithTag</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ifs/-rxallocatepoolwithtag" data-raw-source="[&lt;strong&gt;_RxAllocatePoolWithTag&lt;/strong&gt;](./-rxallocatepoolwithtag.md)"><strong>_RxAllocatePoolWithTag</strong></a></p></td>
 <td align="left"><p>This routine allocates memory from a pool with a four-byte tag at the beginning of the block that can help catch memory problems.</p>
 <p>It is recommended that the <strong>RxAllocatePoolWithTag</strong> macro be called instead of using this routine directly.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/-rxcheckmemoryblock" data-raw-source="[&lt;strong&gt;_RxCheckMemoryBlock&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/-rxcheckmemoryblock)"><strong>_RxCheckMemoryBlock</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ifs/-rxcheckmemoryblock" data-raw-source="[&lt;strong&gt;_RxCheckMemoryBlock&lt;/strong&gt;](./-rxcheckmemoryblock.md)"><strong>_RxCheckMemoryBlock</strong></a></p></td>
 <td align="left"><p>This routine checks a memory block for a special RX_POOL_HEADER header signature. Note that a network mini-redirector driver would need to add this special signature block to memory allocated in order to use the routine.</p>
 <p>This routine should not be used since this special header block has not been implemented.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ifs/-rxfreepool" data-raw-source="[&lt;strong&gt;_RxFreePool&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ifs/-rxfreepool)"><strong>_RxFreePool</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ifs/-rxfreepool" data-raw-source="[&lt;strong&gt;_RxFreePool&lt;/strong&gt;](./-rxfreepool.md)"><strong>_RxFreePool</strong></a></p></td>
 <td align="left"><p>This routine frees a memory pool.</p>
 <p>It is recommended that the <strong>RxFreePool</strong> macro be called instead of using this routine directly.</p></td>
 </tr>
@@ -92,11 +91,4 @@ A number of macros, which are defined in the *ntrxdef.h* header file, call these
 </table>
 
  
-
- 
-
- 
-
-
-
 

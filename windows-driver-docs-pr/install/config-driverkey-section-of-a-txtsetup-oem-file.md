@@ -1,7 +1,6 @@
 ---
 title: Config.DriverKey Section of a TxtSetup.oem File
 description: A Config.DriverKey section specifies values to be set in the registry for particular component options.
-ms.assetid: 0b9fe0ff-2b97-416e-8ced-62b59eabf94a
 keywords: ["Config.DriverKey Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref
@@ -46,7 +45,7 @@ For example:
 value = parameters,NumberOfButtons,REG_DWORD,2
 ```
 
-<a href="" id="reg-sz-or-reg-expand-sz"></a>REG_SZ or [REG_EXPAND_SZ](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types)  
+<a href="" id="reg-sz-or-reg-expand-sz"></a>REG_SZ or [REG_EXPAND_SZ](/windows/desktop/SysInfo/registry-value-types)  
 One *value* is allowed; it is interpreted as the null-terminated string to be stored.
 
 For example:
@@ -86,10 +85,4 @@ value = parameters\PnpInterface,5,REG_DWORD,1
 ```
 
  
-
- 
-
-
-
-
 

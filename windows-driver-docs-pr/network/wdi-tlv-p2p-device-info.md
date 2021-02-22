@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_DEVICE_INFO
 description: WDI_TLV_P2P_DEVICE_INFO is a TLV that contains Wi-Fi Direct device information.
-ms.assetid: 6B68F334-4C21-4088-AD47-9EB41F9A1CB8
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_DEVICE_INFO Network Drivers Starting with Windows Vista

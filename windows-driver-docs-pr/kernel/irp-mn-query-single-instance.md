@@ -1,8 +1,7 @@
 ---
 title: IRP_MN_QUERY_SINGLE_INSTANCE
-description: All drivers that support WMI must handle this IRP.
+description: Learn about the 'IRP_MN_QUERY_SINGLE_INSTANCE' kernel-mode driver architecture. All drivers that support WMI must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: 104b6b3e-aa5d-437f-8236-02e4abb1ba46
 keywords:
  - IRP_MN_QUERY_SINGLE_INSTANCE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -11,14 +10,15 @@ ms.localizationpriority: medium
 # IRP\_MN\_QUERY\_SINGLE\_INSTANCE
 
 
-All drivers that support WMI must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
+All drivers that support WMI must handle this IRP. A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
-If a driver calls [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_QUERY\_SINGLE\_INSTANCE** request, WMI in turn calls that driver's [*DpWmiQueryDataBlock*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
+If a driver calls [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) to handle an **IRP\_MN\_QUERY\_SINGLE\_INSTANCE** request, WMI in turn calls that driver's [*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
 
 Major Code
 ----------
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
+
 When Sent
 ---------
 
@@ -35,12 +35,12 @@ WMI sends this IRP at IRQL = PASSIVE\_LEVEL in an arbitrary thread context.
 
 **Parameters.WMI.DataPath** points to a GUID that identifies the data block to query.
 
-**Parameters.WMI.BufferSize** indicates the maximum size of the nonpaged buffer at **Parameters.WMI.Buffer**, which points to a [**WNODE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) structure that identifies the instance to query.
+**Parameters.WMI.BufferSize** indicates the maximum size of the nonpaged buffer at **Parameters.WMI.Buffer**, which points to a [**WNODE\_SINGLE\_INSTANCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) structure that identifies the instance to query.
 
 ## Output Parameters
 
 
-If the driver handles WMI IRPs by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI fills in a [**WNODE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) structure with data provided by the driver's [*DpWmiQueryDataBlock*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
+If the driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI fills in a [**WNODE\_SINGLE\_INSTANCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) structure with data provided by the driver's [*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
 
 Otherwise, the driver fills in the **WNODE\_SINGLE\_INSTANCE** structure at **Parameters.WMI.Buffer** as follows:
 
@@ -50,12 +50,12 @@ Otherwise, the driver fills in the **WNODE\_SINGLE\_INSTANCE** structure at **Pa
 
 -   Writes the instance data to **Parameters.WMI.Buffer** starting at **DataBlockOffset**. The driver must not change the input value of **DataBlockOffset**.
 
-If the buffer at **Parameters.WMI.Buffer** is too small to receive all of the data, the driver fills in the needed size in a [**WNODE\_TOO\_SMALL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_too_small) structure at **Parameters.WMI.Buffer**. If the buffer is smaller than **sizeof**(**WNODE\_TOO\_SMALL**), the driver fails the IRP and returns STATUS\_BUFFER\_TOO\_SMALL.
+If the buffer at **Parameters.WMI.Buffer** is too small to receive all of the data, the driver fills in the needed size in a [**WNODE\_TOO\_SMALL**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_too_small) structure at **Parameters.WMI.Buffer**. If the buffer is smaller than **sizeof**(**WNODE\_TOO\_SMALL**), the driver fails the IRP and returns STATUS\_BUFFER\_TOO\_SMALL.
 
 ## I/O Status Block
 
 
-If the driver handles the IRP by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
+If the driver handles the IRP by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
 
 Otherwise, the driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as the following:
 
@@ -70,23 +70,23 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to the value entered 
 Operation
 ---------
 
-A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
+A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
-If a driver handles WMI IRPs by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), **WmiSystemControl** calls the driver's [*DpWmiQueryDataBlock*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
+If a driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), **WmiSystemControl** calls the driver's [*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback) routine.
 
-If a driver handles an **IRP\_MN\_QUERY\_SINGLE\_INSTANCE** request itself, it should do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed in its call to [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next lower driver in the device stack.
+If a driver handles an **IRP\_MN\_QUERY\_SINGLE\_INSTANCE** request itself, it should do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed in its call to [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next lower driver in the device stack.
 
 Before handling the request, the driver must determine whether **Parameters.WMI.DataPath** points to a GUID that the driver supports. If not, the driver must fail the IRP and return STATUS\_WMI\_GUID\_NOT\_FOUND.
 
 The driver is responsible for validating all input values. Specifically, the driver must do the following if it handles the IRP request itself:
 
--   For static names, verify that the **InstanceIndex** member of the [**WNODE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) structure is within the range of instance indexes supported by the driver for the data block.
+-   For static names, verify that the **InstanceIndex** member of the [**WNODE\_SINGLE\_INSTANCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) structure is within the range of instance indexes supported by the driver for the data block.
 
 -   For dynamic names, verify that the instance name string identifies a data block instance supported by the driver.
 
 -   Verify that **Parameters.WMI.BufferSize** specifies a buffer that is large enough to receive all the data that the driver will return.
 
-If the driver supports the data block, it checks the input [**WNODE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) at **Parameters.WMI.Buffer** for the instance name, as follows:
+If the driver supports the data block, it checks the input [**WNODE\_SINGLE\_INSTANCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance) at **Parameters.WMI.Buffer** for the instance name, as follows:
 
 -   If WNODE\_FLAG\_STATIC\_INSTANCE\_NAMES is set in **WnodeHeader.Flags**, the driver uses **InstanceIndex** as an index into the driver's list of static instance names for that block. WMI obtains the index from registration data provided by the driver when it registered the block.
 
@@ -117,20 +117,15 @@ Requirements
 ## See also
 
 
-[*DpWmiQueryDataBlock*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback)
+[*DpWmiQueryDataBlock*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_datablock_callback)
 
-[**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol)
+[**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol)
 
-[**WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context)
+[**WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context)
 
-[**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
+[**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
 
-[**WNODE\_SINGLE\_INSTANCE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance)
-
- 
+[**WNODE\_SINGLE\_INSTANCE**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_single_instance)
 
  
-
-
-
 

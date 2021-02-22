@@ -1,7 +1,6 @@
 ---
 title: DocumentParameters element
 description: The optional DocumentParameters element specifies the image processing functions to apply to documents in a job.
-ms.assetid: 3b76bf47-a674-4925-aa0f-b2310e1ad1ce
 keywords: ["DocumentParameters element Imaging Devices"]
 topic_type:
 - apiref

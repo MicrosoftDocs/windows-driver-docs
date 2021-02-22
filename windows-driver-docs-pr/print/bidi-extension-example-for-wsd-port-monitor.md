@@ -1,7 +1,6 @@
 ---
 title: Bidi Extension Example for WSD Port Monitor
 description: Bidi Extension Example for WSD Port Monitor
-ms.assetid: a04f16d5-ae99-4df5-bb55-aef95bd03588
 keywords:
 - bidi extension files WDK printer autoconfig
 - in-box autoconfiguration support WDK printer , bidi extension files
@@ -17,9 +16,9 @@ The following code example is a sample XML file that extends the bidi communicat
 
 ```xml
 <?xml version='1.0'?>
-<bidi:Definition xmlns:bidi='http://schemas.microsoft.com/windows/2005/03/printing/bidi'>
+<bidi:Definition xmlns:bidi='https://schemas.microsoft.com/windows/2005/03/printing/bidi'>
 
-  <Schema xmlns:nprt='http://schemas.microsoft.com/windows/2006/08/wdp/print'>
+  <Schema xmlns:nprt='https://schemas.microsoft.com/windows/2006/08/wdp/print'>
     <Property name='Printer'>
       <Property name='DeviceInfo'>
         <Value name='FriendlyName' query='nprt:PrinterDescription' filter='nprt:PrinterDescription/nprt:PrinterName' type='BIDI_STRING' xmllang='true'/>

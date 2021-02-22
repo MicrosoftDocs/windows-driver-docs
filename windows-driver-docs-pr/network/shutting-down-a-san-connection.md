@@ -1,7 +1,6 @@
 ---
 title: Shutting Down a SAN Connection
 description: Shutting Down a SAN Connection
-ms.assetid: 1ef509e4-fc8c-4feb-ae65-3c0f19033f34
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

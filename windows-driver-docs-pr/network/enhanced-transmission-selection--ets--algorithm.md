@@ -1,7 +1,6 @@
 ---
 title: Enhanced Transmission Selection (ETS) Algorithm
 description: Enhanced Transmission Selection (ETS) Algorithm
-ms.assetid: 952ECB1E-96AD-4717-8E49-68558E7E9AD4
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ Transmission selection based solely on IEEE 802.1p priority levels can lead to s
 
 Each traffic class is allocated a percentage of the available bandwidth on the data link between directly connected peers. If a traffic class doesn't use its allocated bandwidth, ETS allows other traffic classes to use the available bandwidth that the traffic class is not using.
 
-NDIS Quality of Service (QoS) traffic classes are defined through OID method requests of [OID\_QOS\_PARAMETERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-qos-parameters). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure which specifies the following traffic class attributes:
+NDIS Quality of Service (QoS) traffic classes are defined through OID method requests of [OID\_QOS\_PARAMETERS](./oid-qos-parameters.md). This OID request contains an [**NDIS\_QOS\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_parameters) structure which specifies the following traffic class attributes:
 
 -   The number of traffic classes that is specified by the **NumTrafficClasses** member.
 
@@ -32,10 +31,4 @@ NDIS Quality of Service (QoS) traffic classes are defined through OID method req
 For more information about priority levels, see [IEEE 802.1p Priority Levels](ieee-802-1p-priority-levels.md).
 
  
-
- 
-
-
-
-
 

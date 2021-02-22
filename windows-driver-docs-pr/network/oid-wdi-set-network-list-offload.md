@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_NETWORK_LIST_OFFLOAD
 description: OID_WDI_SET_NETWORK_LIST_OFFLOAD sets a list of preferred SSIDs for the firmware to scan for APs.
-ms.assetid: 2df9ee2b-78df-4f92-9b40-5945ecc81c7e
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_NETWORK_LIST_OFFLOAD Network Drivers Starting with Windows Vista
@@ -38,7 +37,7 @@ The request to the firmware has a list of channel hints for all offload SSIDs. T
 
 In each scan period, the firmware scans for SSIDs that match the criteria on the list of channels, but not necessary constrained on the list of channels. The discovered AP information should be cached for the host to retrieve. The firmware indicates NLO discovery when at least one BSSID matches the SSID, algorithm, and cipher, but the channel match is not required.
 
-Each OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD that the UE sends to the LE represents a fresh NLO scan request. Any previous such requests or states are renewed. LE scans for NLO and only indicates once for a found AP per request. The UE replumbs (12 times; this is subject to change) NLO at Dx transitions if a found AP is not connected successfully (due to reasons such as: an AP is found but devices move around, the AP signal fades, and the connection fails; or prolong EAP authentication fails partway through). The LE and firmware should delay the NLO scan schedule based on the delay configuration in [**WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-network-list-offload-config). This is a number that the UE uses to conform to the schedule of the operating system's original NLO command.
+Each OID\_WDI\_SET\_NETWORK\_LIST\_OFFLOAD that the UE sends to the LE represents a fresh NLO scan request. Any previous such requests or states are renewed. LE scans for NLO and only indicates once for a found AP per request. The UE replumbs (12 times; this is subject to change) NLO at Dx transitions if a found AP is not connected successfully (due to reasons such as: an AP is found but devices move around, the AP signal fades, and the connection fails; or prolong EAP authentication fails partway through). The LE and firmware should delay the NLO scan schedule based on the delay configuration in [**WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_CONFIG**](./wdi-tlv-network-list-offload-config.md). This is a number that the UE uses to conform to the schedule of the operating system's original NLO command.
 
 The default scan type for NLO is WDI\_SCAN\_TYPE\_AUTO. When actively scanning a channel, the firmware should use the wildcard SSID. Visible APs should be compared with SSIDs on the offload list to decide a match. This is to reduce privacy exposure.
 
@@ -58,7 +57,7 @@ Indicating NLO discovery has two cases.
 
 | TLV                                                                                                  | Multiple TLV instances allowed | Optional | Description         |
 |------------------------------------------------------------------------------------------------------|--------------------------------|----------|---------------------|
-| [**WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-network-list-offload-parameters) |                                |          | The NLO parameters. |
+| [**WDI\_TLV\_NETWORK\_LIST\_OFFLOAD\_PARAMETERS**](./wdi-tlv-network-list-offload-parameters.md) |                                |          | The NLO parameters. |
 
  
 
@@ -92,9 +91,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

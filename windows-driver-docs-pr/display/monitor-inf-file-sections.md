@@ -1,7 +1,6 @@
 ---
 title: Monitor INF File Sections
 description: Monitor INF File Sections
-ms.assetid: f5208b6a-00b0-446e-82f7-eb26082ed9a5
 keywords:
 - monitor INF file sections WDK Windows 2000 display
 - INF files WDK Windows 2000 display
@@ -21,7 +20,7 @@ ms.localizationpriority: medium
 
 Monitors must be installed in NT-based operating systems using an INF file. The Windows Driver Kit (WDK) provides a sample monitor INF file, *monsamp.inf*, that you should use as a template to generate an INF file for your monitor. You cannot use the *geninf.exe* tool described in [Creating Graphics INF Files](creating-graphics-inf-files.md) to generate a monitor INF.
 
-The rest of this topic comments on some of the sections in *monsamp.inf* that are of specific interest to monitor INF writers. For more general information about INF files, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+The rest of this topic comments on some of the sections in *monsamp.inf* that are of specific interest to monitor INF writers. For more general information about INF files, see [INF File Sections and Directives](../install/index.md).
 
 You can also use an INF file to override the monitor Extended Display Identification Data (EDID). See [Overriding Monitor EDIDs with an INF](overriding-monitor-edids.md).
 
@@ -34,7 +33,7 @@ Files that must be copied during monitor installation should be placed in the **
 profile1.icm=1
 ```
 
-For more general information, see [**INF SourceDisksFiles Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-sourcedisksfiles-section). See [Monitor Profiles](monitor-profiles.md) for more information about color management and profiles.
+For more general information, see [**INF SourceDisksFiles Section**](../install/inf-sourcedisksfiles-section.md). See [Monitor Profiles](monitor-profiles.md) for more information about color management and profiles.
 
 ### <span id="Models_Section"></span><span id="models_section"></span><span id="MODELS_SECTION"></span>Models Section
 
@@ -54,7 +53,7 @@ Each model is represented by a single line. Each line contains three elements:
 
 -   Hardware identification -- for example, the expression **Monitor\\MON12AB** combines the device class (Monitor) and the device identification (MON12AB) as it appears in the device's *EDID*.
 
-For more general information, see [**INF Models Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-models-section).
+For more general information, see [**INF Models Section**](../install/inf-models-section.md).
 
 ### <span id="DDInstall_Section"></span><span id="ddinstall_section"></span><span id="DDINSTALL_SECTION"></span>DDInstall Section
 
@@ -67,13 +66,13 @@ AddReg=ACME-1234.AddReg, 1280, DPMS
 CopyFiles=ACME-1234.CopyFiles
 ```
 
--   [**DelReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delreg-directive) directive--provides a link to the **DEL\_CURRENT\_REG** section, which details the registry keys to be deleted.
+-   [**DelReg**](../install/inf-delreg-directive.md) directive--provides a link to the **DEL\_CURRENT\_REG** section, which details the registry keys to be deleted.
 
--   [**AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive--provides links to three sections in which registry keys to be added are detailed. These sections are **ACME-1234.AddReg**, **1280**, and **DPMS**.
+-   [**AddReg**](../install/inf-addreg-directive.md) directive--provides links to three sections in which registry keys to be added are detailed. These sections are **ACME-1234.AddReg**, **1280**, and **DPMS**.
 
--   [**CopyFiles**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive--provides a link to the **ACME-1234.CopyFiles** section, which specifies the files to be copied from the distribution disk or disks.
+-   [**CopyFiles**](../install/inf-copyfiles-directive.md) directive--provides a link to the **ACME-1234.CopyFiles** section, which specifies the files to be copied from the distribution disk or disks.
 
-For more general information, see [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section).
+For more general information, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md).
 
 ### <span id="INF_Writer-Defined_Sections"></span><span id="inf_writer-defined_sections"></span><span id="INF_WRITER-DEFINED_SECTIONS"></span>INF Writer-Defined Sections
 
@@ -103,7 +102,7 @@ An INF writer-defined section can have any name, provided it is unique within th
     HKR,,DPMS,,1
     ```
 
--   **AddReg**). Therefore, **MODES** key INF values should be used only if a problem exists with the EDID or in the interpretation of the EDID.
+-   [**AddReg**](../install/inf-addreg-directive.md) section -- You can specify entries under a **MODES** key in an add-registry section of a monitor INF to identify the monitor's supported resolutions and timings. If the INF specifies modes in this way, the modes' entries will override the values that are specified in the monitor's Extended Display Information Data (*EDID*). Therefore, **MODES** key INF values should be used only if a problem exists with the EDID or in the interpretation of the EDID.
 
     Each subkey to the **MODES** key specifies a resolution and can contain up to nine values that are used to specify specific timings or timing ranges. The resolution for each subkey name must be a combination of two integer values--width and height--separated by a comma. The specific timings are named from **Mode1** to **Mode9**. The naming must be contiguous. The string values allow frequencies for horizontal and vertical sync pulses to be specified, either as single values or as ranges, where a range is given as a minimum value, followed by a dash (-), followed by a maximum value. The frequency values are currently interpreted only as integers with any digits that follow the decimal place ignored. The string allows the polarity of the horizontal and vertical sync pulses to be specified. However, these polarity values are currently ignored. Only the maximum horizontal sync pulse value is required in each string. For example, the following shows that for each subkey string, the information in square brackets is optional:
 
@@ -131,4 +130,3 @@ An INF writer-defined section can have any name, provided it is unique within th
     ```
 
     For a monitor that meets the sRGB specification, which is preferred, no monitor profile is needed.
-

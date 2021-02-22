@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_SLOT_INFO
 description: OID_WWAN_SLOT_INFO retrieves a high-level aggregated status of a specified UICC slot and the card within it (if any). It may also be used to deliver an unsolicited notification when the status of one of the slots changes.
-ms.assetid: 6267D480-5055-4A7A-B2A0-F4DF9154DCD7
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_SLOT_INFO Network Drivers Starting with Windows Vista
@@ -13,9 +12,9 @@ ms.localizationpriority: medium
 
 OID\_WWAN\_SLOT\_INFO retrieves a high-level aggregated status of a specified UICC slot and the card within it (if any). It may also be used to deliver an unsolicited notification when the status of one of the slots changes.
 
-Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [**NDIS\_STATUS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-slot-info-status) status notification containing an [**NDIS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure, which in turn contains a [**WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_slot_info) structure, to provide information about the overall modem system capability.
+Miniport drivers must process query requests asynchronously, initially returning NDIS\_STATUS\_INDICATION\_REQUIRED to the original request before later sending an [**NDIS\_STATUS\_WWAN\_SLOT\_INFO**](./ndis-status-wwan-slot-info-status.md) status notification containing an [**NDIS\_WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure, which in turn contains a [**WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_slot_info) structure, to provide information about the overall modem system capability.
 
-Query requests specify [**NDIS\_WWAN\_GET\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_get_slot_info) structure as input. The miniport driver should return the slot status according to the slot ID specified in the **SlotIndex** member of the [**WWAN\_GET\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_get_slot_info) structure.
+Query requests specify [**NDIS\_WWAN\_GET\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_get_slot_info) structure as input. The miniport driver should return the slot status according to the slot ID specified in the **SlotIndex** member of the [**WWAN\_GET\_SLOT\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_get_slot_info) structure.
 
 The following diagram illustrates a query request.
 
@@ -23,7 +22,7 @@ The following diagram illustrates a query request.
 
 Set requests are not applicable.
 
-An [**NDIS\_STATUS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-slot-info-status) notification with a [**NDIS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure is sent to host when the slot/card state changes.
+An [**NDIS\_STATUS\_WWAN\_SLOT\_INFO**](./ndis-status-wwan-slot-info-status.md) notification with a [**NDIS\_WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info) structure is sent to host when the slot/card state changes.
 
 Remarks
 -------
@@ -57,24 +56,19 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-slot-info-status)
+[**NDIS\_STATUS\_WWAN\_SLOT\_INFO**](./ndis-status-wwan-slot-info-status.md)
 
-[**NDIS\_WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info)
+[**NDIS\_WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_slot_info)
 
-[**WWAN\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_slot_info)
+[**WWAN\_SLOT\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_slot_info)
 
-[**NDIS\_WWAN\_GET\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_get_slot_info)
+[**NDIS\_WWAN\_GET\_SLOT\_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_get_slot_info)
 
-[**WWAN\_GET\_SLOT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_get_slot_info)
+[**WWAN\_GET\_SLOT\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_get_slot_info)
 
-[**WWAN\_UICCSLOT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_uiccslot_state)
+[**WWAN\_UICCSLOT\_STATE**](/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_uiccslot_state)
 
 [OID\_WWAN\_READY\_INFO](oid-wwan-ready-info.md)
 
  
-
- 
-
-
-
 

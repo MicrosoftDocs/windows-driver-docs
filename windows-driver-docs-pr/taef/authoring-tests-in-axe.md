@@ -1,20 +1,17 @@
 ---
 title: Authoring Tests in AXE
 description: Authoring Tests in AXE
-ms.assetid: B042FE1B-98E4-48ae-BE2C-15C71EC6640A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Authoring Tests in AXE
 
-
 TAEF supports authoring tests that are executed with the Assessment Execution Engine (AXE).
 
 AXE support in TAEF enables TAEF to execute AXE assessment manifests. It is primarily designed to wrap legacy tests, written as command line EXEs, into XML-based AXE assessment manifests. In this way, these legacy tests become executable with TAEF without having to rewrite the tests to TAEF native, managed, or script tests.
 
-## <span id="AXE_Tests_Layout"></span><span id="axe_tests_layout"></span><span id="AXE_TESTS_LAYOUT"></span>AXE Tests Layout
-
+## AXE Tests Layout
 
 Although regular TAEF test files can contain multiple test classes and tests, TAEF AXE tests (tests that are defined by an AXE assessment manifest) can contain only a single test because the manifest wraps a single executable. Thus, when viewing tests in a TAEF AXE test file, you will always see that the test file (which is the AXE assessment manifest you are viewing), contains a single test class and a single test:
 
@@ -31,13 +28,11 @@ Test Authoring and Execution Framework v2.7 Build 6.2.7918.0 (1320) For x64
 
 AXE tests also do not support any setup or cleanup methods.
 
-## <span id="Authoring_AXE_Tests"></span><span id="authoring_axe_tests"></span><span id="AUTHORING_AXE_TESTS"></span>Authoring AXE Tests
-
+## Authoring AXE Tests
 
 For AXE tests, TAEF uses the AXE assessment manifest file format.
 
-## <span id="Minimal_AXE_Test_File"></span><span id="minimal_axe_test_file"></span><span id="MINIMAL_AXE_TEST_FILE"></span>Minimal AXE Test File
-
+## Minimal AXE Test File
 
 The AXE assessment manifest schema is designed to support very rich descriptions of complex assessment for sophisticated scenarios. However, the manifests can also be very simple as there are very few mandatory nodes. The following example shows a minimal manifest that includes all of the mandatory tags.
 
@@ -123,8 +118,7 @@ This assessment wraps a simple and existing test EXE named **AssessmentSample.ex
 
 Finally, **lines 28 - 32** instruct AXE to use the Win32 API CreateProcess() to execute **AssessmentSample.exe**.
 
-## <span id="Using_Metadata_in_AXE_Test_File"></span><span id="using_metadata_in_axe_test_file"></span><span id="USING_METADATA_IN_AXE_TEST_FILE"></span>Using Metadata in AXE Test File
-
+## Using Metadata in AXE Test File
 
 As with any other TAEF test, you can also apply metadata to a TAEF AXE test. Consider the example that is shown below.
 
@@ -201,17 +195,16 @@ Test Authoring and Execution Framework v2.7 Build 6.2.7918.0 (1320) For x64
 
 ```
 
-## <span id="AXE_Tests_Metadata_Support_Limitations"></span><span id="axe_tests_metadata_support_limitations"></span><span id="AXE_TESTS_METADATA_SUPPORT_LIMITATIONS"></span>AXE Tests Metadata Support Limitations
+## AXE Tests Metadata Support Limitations
 
+>[!NOTE]
+>Not all TAEF standard test metadata can be used with TAEF AXE tests.
 
-Note: Not all TAEF standard test metadata can be used with TAEF AXE tests.
+- All metadata aimed at modifying the environment in which the process executes, like **ActivationContext** and **ThreadingModel**, will not work with AXE tests. AXE does not use TAEF's process to execute the tests, but creates a new process in which it runs the executable program that is specified by the AXE test file (AXE assessment manifest). For the same reason, data driven TAEF testing (**DataSource** property) does not work with AXE TAEF tests, either.
+- Similarly, because the TAEF AXE test files can encapsulate only a single test, the TAEF metadata that modifies the behavior of a test with regards to other tests, like **ExecutionGroup**, will also not work.
+- Due to the AXE architecture, AXE can only run elevated processes. Therefore, as you saw from TAEF AXE tests' properties above, every TAEF AXE test has **Property\[RunAs\] = Elevated** applied.
 
--   All metadata aimed at modifying the environment in which the process executes, like **ActivationContext** and **ThreadingModel**, will not work with AXE tests. AXE does not use TAEF's process to execute the tests, but creates a new process in which it runs the executable program that is specified by the AXE test file (AXE assessment manifest). For the same reason, data driven TAEF testing (**DataSource** property) does not work with AXE TAEF tests, either.
--   Similarly, because the TAEF AXE test files can encapsulate only a single test, the TAEF metadata that modifies the behavior of a test with regards to other tests, like **ExecutionGroup**, will also not work.
--   Due to the AXE architecture, AXE can only run elevated processes. Therefore, as you saw from TAEF AXE tests' properties above, every TAEF AXE test has **Property\[RunAs\] = Elevated** applied.
-
-## <span id="AXE_Test_File_with_Runtime_Parameters"></span><span id="axe_test_file_with_runtime_parameters"></span><span id="AXE_TEST_FILE_WITH_RUNTIME_PARAMETERS"></span>AXE Test File with Runtime Parameters
-
+## AXE Test File with Runtime Parameters
 
 TAEF AXE tests also support runtime parameters. To use TAEF's runtime parameters with AXE tests, the parameter names that are to be passed to the executable program need to be defined in the AXE test file.
 
@@ -328,23 +321,12 @@ EndGroup: ExplicitRuntimeParameters::ExplicitRuntimeParameters [Passed]
 
 ```
 
-## <span id="AXE_Test_Cross_Machine_Execution"></span><span id="axe_test_cross_machine_execution"></span><span id="AXE_TEST_CROSS_MACHINE_EXECUTION"></span>AXE Test Cross Machine Execution
-
+## AXE Test Cross Machine Execution
 
 [For a cross machine execution scenario](cross-machine-execution.md), TAEF tries to determine the test dependencies that need to be deployed along with the test for successful test execution. In the case of an AXE test file, TAEF will copy all the files that are in the same folder with a TAEF AXE test to a remote machine for execution.
 
 Cross machine execution of AXE tests to an ARM platform is not currently supported.
 
-## <span id="TAEF_AXE_Support_Dependencies"></span><span id="taef_axe_support_dependencies"></span><span id="TAEF_AXE_SUPPORT_DEPENDENCIES"></span>TAEF AXE Support Dependencies
-
+## TAEF AXE Support Dependencies
 
 AXE does not ship with Windows. To be able to execute AXE tests, you need to copy **axecore.dll** and **Microsoft.Assessment.dll** to either TAEF or your TAEF AXE test directory.
-
-
-
-
-
-
-
-
-

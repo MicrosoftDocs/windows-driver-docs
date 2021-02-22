@@ -1,7 +1,6 @@
 ---
 title: SM\_GetPersistentBinding function
 description: The SM\_GetPersistentBinding method retrieves the bindings that an HBA miniport driver uses. These bindings map the OS-specific LUN information to the fibre channel protocol (FCP) identifiers for the logical units.
-ms.assetid: 74a67e91-c3b3-462a-8810-a9eae64e02a7
 keywords: ["SM_GetPersistentBinding function Storage Devices"]
 topic_type:
 - apiref
@@ -94,16 +93,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_GetPersistentBinding\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_in)
+[**SM\_GetPersistentBinding\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_in)
 
-[**SM\_GetPersistentBinding\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_out)
-
- 
+[**SM\_GetPersistentBinding\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_getpersistentbinding_out)
 
  
-
-
-
-
-
 

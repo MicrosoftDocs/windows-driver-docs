@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_Hrtf3d
 description: KSPROPSETID\_Hrtf3d
-ms.assetid: 8045991b-0409-445a-bd35-d9b8644f770e
 keywords: ["KSPROPSETID_Hrtf3d"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium
@@ -19,9 +18,9 @@ Not all 3D nodes support HRTF processing. A client can send a basic-support quer
 
 The definition of this property set assumes that the HRTF algorithm is implemented with infinite impulse response (IIR) filters that represent the effects of an audio source at a single position.
 
-Digital filters typically have an initial transient response. When moving a source from one position to the next, the filter coefficients change and the HRTF algorithm cross-fades the outputs from the filter at the old position to the filter at the new position. The **FilterTransientMuteLength** member of the [**KSDS3D\_HRTF\_INIT\_MSG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksds3d_hrtf_init_msg) structure specifies the number of samples by which to delay the cross fade in order to avoid rendering the new filter's initial transient. During this time, the output comes from the old filters only. The **FilterOverlapBufferLength** member (same structure) specifies the total number of samples over which to mute and cross-fade the filter outputs.
+Digital filters typically have an initial transient response. When moving a source from one position to the next, the filter coefficients change and the HRTF algorithm cross-fades the outputs from the filter at the old position to the filter at the new position. The **FilterTransientMuteLength** member of the [**KSDS3D\_HRTF\_INIT\_MSG**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksds3d_hrtf_init_msg) structure specifies the number of samples by which to delay the cross fade in order to avoid rendering the new filter's initial transient. During this time, the output comes from the old filters only. The **FilterOverlapBufferLength** member (same structure) specifies the total number of samples over which to mute and cross-fade the filter outputs.
 
-When the source moves from the right half-plane to the left, the filters switch. This switch might cause an audible pop. The **SwapChannels** member of the [**KSDS3D\_HRTF\_PARAMS\_MSG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksds3d_hrtf_params_msg) structure tells the HRTF algorithm to swap the outputs to reverse the location of the source to the other half-plane. The **CrossFadeOutput** member (same structure) tells the algorithm to cross-fade the output channels after a transition across azimuth angle zero. The **OutputOverlapBufferLength** member of KSDS3D\_HRTF\_INIT\_MSG specifies the number of samples over which to cross-fade when this transition occurs.
+When the source moves from the right half-plane to the left, the filters switch. This switch might cause an audible pop. The **SwapChannels** member of the [**KSDS3D\_HRTF\_PARAMS\_MSG**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksds3d_hrtf_params_msg) structure tells the HRTF algorithm to swap the outputs to reverse the location of the source to the other half-plane. The **CrossFadeOutput** member (same structure) tells the algorithm to cross-fade the output channels after a transition across azimuth angle zero. The **OutputOverlapBufferLength** member of KSDS3D\_HRTF\_INIT\_MSG specifies the number of samples over which to cross-fade when this transition occurs.
 
 Because of symmetry, only half of the filter coefficients need to be downloaded to the HRTF algorithm when the azimuth angle is zero. The **ZeroAzimuth** member of KSDS3D\_HRTF\_PARAMS\_MSG indicates when this condition occurs.
 
@@ -36,10 +35,4 @@ The `KSPROPSETID_Hrtf3d` property set contains the following three members:
 [**KSPROPERTY\_HRTF3D\_PARAMS**](ksproperty-hrtf3d-params.md)
 
  
-
- 
-
-
-
-
 

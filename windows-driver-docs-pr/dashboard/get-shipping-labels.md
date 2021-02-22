@@ -11,19 +11,19 @@ For an introduction to Microsoft Hardware APIs, including prerequisites for usin
 Use the following methods in *Microsoft Hardware APIs* to get data for shipping labels of hardware products registered to your Hardware Dev Center Account.
 
 ```html
-https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
+https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/
 ```
 
 Before you can use these methods, the product and submission must already exist in your Dev Center account. To create or manage submissions for products, see the methods in [Manage product submissions](manage-product-submissions.md).
 
 |Description|Method|URI|
 |-|-|-|
-|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
-|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`|
+|[Get data for all shipping labels of a submission](get-all-shipping-labels.md)|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
+|[Get data for a specific shipping label of a submission](get-a-shipping-label.md)|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/{shippingLabelId}`|
 
 ## Prerequisites
 
-If you have not done so already, complete all the [Prerequisites](https://docs.microsoft.com/windows-hardware/drivers/dashboard/dashboard-api#complete-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Hardware APIs before trying to use any of these methods.
+If you have not done so already, complete all the [Prerequisites](./dashboard-api.md#complete-the-prerequisites-for-using-the-microsoft-hardware-api) for the Microsoft Hardware APIs before trying to use any of these methods.
 
 ## Data resources
 
@@ -101,7 +101,7 @@ This resource represents a shipping label created for a submission of your produ
   },
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978422",
+      "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978422",
       "rel": "self",
       "method": "GET"
     }
@@ -265,7 +265,7 @@ This object has the following values
 
 ### Hardware ID object
 
-This object represents the details of the hardware ID which needs to be targeted by the shipping label. Refer [hardware IDs](https://docs.microsoft.com/windows-hardware/drivers/install/hardware-ids) for more details.
+This object represents the details of the hardware ID which needs to be targeted by the shipping label. Refer [hardware IDs](../install/hardware-ids.md) for more details.
 
 ```json
 {
@@ -291,7 +291,7 @@ The hardware ID object should contain a valid combination of bundle ID, PNP ID, 
 
 ### CHIDs object
 
-This object represents the CHID (computer hardware ID) which needs to be targeted by the shipping label. Refer [using CHIDs](https://docs.microsoft.com/windows-hardware/drivers/dashboard/using-chids) for more details.
+This object represents the CHID (computer hardware ID) which needs to be targeted by the shipping label. Refer to [using CHIDs](./using-chids.md) for more details.
 
 ```json
 {
@@ -305,7 +305,7 @@ This object has the following values
 | Value | Type | Description |
 |:--|:--|:--|
 |chid|GUID|The CHID which needs to be targeted|
-|distributionState|string|Represents the current targeting status of this CHID. Possible values are (description in paranthesis):<ul><li>pendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>pendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>added (*This hardware ID has been succesfully added as target in this shipping label*)</li><li>notSet (*No action has been taken or status has not been set on this hardware ID*)</li></ul>|
+|distributionState|string|Optional value representing the current targeting status of this CHID. Defaults to Unknown if not defined. Possible values (description in parentheses):<ul><li>Unknown</li><li>PendingAdd (*Add has been requested for this hardware ID and is in progress*)</li><li>Added</li><li>PendingRemove (*A remove (expire) has been requested for this hardware ID and is in progress*)</li><li>PendingRecovery</li><li>Recovered</li></ul>|
 |action|string|This is applicable only while Update/patch of a shipping label. The possible values are: <ul><li>add</li><li>remove</li></ul> |
 
 ### In Service Publish Information object
@@ -325,7 +325,7 @@ This object has the following values
 |flooring|string|Use this option when you want a driver to be offered only at and above the listed Windows 10 operating system. For example, selecting an RS4 flooring would mean only systems running Windows 10 1803 (RS4) and later will be offered this driver. Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li><li>19H1</li></ul> Note that the possible values will expand to include the current version of the OS. |
 |ceiling|string|*Access to this feature is limited*. Use this option when you want a driver to be offered only for the listed operating system and earlier systems. For example, selecting an RS3 ceiling on a Windows 10 1607 RS1 certified driver would mean your driver would never be offered to systems running Windows 10 1803 (RS4) or above.Possible values are: <ul><li>TH</li><li>RS1</li><li>RS2</li><li>RS3</li><li>RS4</li><li>RS5</li><li>19H1</li></ul> Note that the possible values will expand to include the current version of the OS. |
 
-For more info about these values, see [Limiting driver distribution by Windows versions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/limit-driver-distribution).
+For more info about these values, see [Limiting driver distribution by Windows versions](./limit-driver-distribution.md).
 
 ### Co-Engineering Driver Publish Information object
 
@@ -343,7 +343,7 @@ This object has the following values
 |flooringBuildNumber|number|The build number of the release when you want a driver to only be offered at and above this build number. For example, if the floor needs to be 10.1.17135, the input needs to be 17135. The major version (10.1) always defaults to the appropriate version automatically.|
 |ceiling|number|The build number of the release when you want a driver to only be offered at or below this build number. For example, if the ceiling needs to be 10.1.17139, the input needs to be 17139. The major version (10.1) always defaults to the appropriate version automatically.|
 
-For more info, see [Limiting driver distribution by Windows versions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/limit-driver-distribution).
+For more info, see [Limiting driver distribution by Windows versions](./limit-driver-distribution.md).
 
 ### Shipping Label Workflow Status object
 
@@ -361,9 +361,12 @@ This object has the following values
 
 | Value | Type | Description |
 |:--|:--|:--|
-| currentStep | string | The name of the current step in the overall workflow for this entity. <br>For shipping labels that are published to windows update, the possible values are (description in parenthesis):<ul><li>Created (*Creating shipping label*)</li><li>PreProcessShippingLabel (*Validating targeting information*)</li><li>FinalizePreProcessing (*Invoking appropriate next step after pre-prpcess*)</li><li>PublishJobValidation (*Verifying if package ingestion/submission is complete*)</li><li>UpdateGeneration (*Generating publishing details for WU*)</li><li>MicrosoftApproval (*Promotion/flighting*)</li><li>Publishing (*Pushing publishing details to WU*)</li><li>FinalizePublishing (*Completing publishing process*)</li></ul> For shipping labels that are shared with other partners, the possible values are (description in parenthesis): <ul><li>Created (*Creating shipping label*)</li><li>PreProcessShippingLabel (*Validating targeting information*)</li><li>FinalizePreProcessing (*Invoking appropriate next step after pre-prpcess*)</li><li>PublishJobValidation (*Verifying if package ingestion/submission is complete*)</li><li>ProcessSharing (*Generating sharing details for receiver*)</li><li>FinalizeSharing (*Completing sharing process*)</li></ul>|
+| currentStep | string | The name of the current step in the overall workflow for this entity. <br>For shipping labels that are published to Windows Update, the possible values are (description in parenthesis):<ul><li>Created (*Creating shipping label*)</li><li>PreProcessShippingLabel (*Validating targeting information*)</li><li>FinalizePreProcessing (*Invoking appropriate next step after pre-prpcess*)</li><li>PublishJobValidation (*Verifying if package ingestion/submission is complete*)</li><li>UpdateGeneration (*Generating publishing details for WU*)</li><li>MicrosoftApproval (*Promotion/flighting*)</li><li>Publishing (*Pushing publishing details to WU*)</li><li>FinalizePublishing (*Completing publishing process*)</li></ul> For shipping labels that are shared with other partners, the possible values are (description in parenthesis): <ul><li>Created (*Creating shipping label*)</li><li>PreProcessShippingLabel (*Validating targeting information*)</li><li>FinalizePreProcessing (*Invoking appropriate next step after pre-prpcess*)</li><li>PublishJobValidation (*Verifying if package ingestion/submission is complete*)</li><li>ProcessSharing (*Generating sharing details for receiver*)</li><li>FinalizeSharing (*Completing sharing process*)</li></ul>|
 | State | string | The state of the current step. Possible values are:<ul><li>notStarted</li><li>started</li><li>failed</li><li>completed</li></ul> |
 | Messages | array | An array of strings to provide messages about current step (especially in case of failure) |
+
+> [!NOTE]
+> There is no value for currentStep that maps to Gradual Rollout.
 
 ## Error codes
 

@@ -1,7 +1,6 @@
 ---
 title: WDM Driver Layers An Example
 description: WDM Driver Layers An Example
-ms.assetid: 64eaa850-6394-4832-b11f-ce4db7f7c37d
 keywords: ["WDM drivers WDK kernel , layered drivers", "layered drivers WDK kernel", "driver layers WDK WDM", "joysticks WDK WDM"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_ITEM\_CATEGORY
 description: The WIA\_IPA\_ITEM\_CATEGORY property contains grouped categories for WIA items.
-ms.assetid: 0dde5e1c-ac30-4129-96fb-89ce1950c29b
 keywords: ["WIA_IPA_ITEM_CATEGORY Imaging Devices"]
 topic_type:
 - apiref
@@ -76,9 +75,9 @@ A patch code reader item that is a programmable data source, transfer enabled to
 The root item for the device.
 
 <span id="WIA_CATEGORY_AUTO"></span><span id="wia_category_auto"></span>WIA\_CATEGORY\_AUTO  
-In Windows 7 and later, an [auto item](https://docs.microsoft.com/windows-hardware/drivers/image/auto-item) has the WIA properties that are required to support [auto-configured scanning](https://docs.microsoft.com/windows-hardware/drivers/image/auto-configured-scanning).
+In Windows 7 and later, an [auto item](./auto-item.md) has the WIA properties that are required to support [auto-configured scanning](./auto-configured-scanning.md).
 
-The preceding categories define how a WIA item should be treated or used. For example, if the item represents a finished file, you can assume that the data is static and located on the device. If the item represents a feeder, you can expect it to contain the required document-feeder properties and to operate like a document feeder. For more information about these categories, see [WIA Item Categories](https://docs.microsoft.com/windows-hardware/drivers/image/wia-item-categories).
+The preceding categories define how a WIA item should be treated or used. For example, if the item represents a finished file, you can assume that the data is static and located on the device. If the item represents a feeder, you can expect it to contain the required document-feeder properties and to operate like a document feeder. For more information about these categories, see [WIA Item Categories](./wia-item-categories.md).
 
 The following table shows the WIA grouped categories and their item flags. This table does not include a full list of all of the WIA item flags that WIA defines. For a complete list of these flags, see [**WIA\_IPA\_ITEM\_FLAGS**](wia-ipa-item-flags.md).
 
@@ -290,7 +289,7 @@ The following table shows the WIA grouped categories and their WIA properties an
 </tr>
 <tr class="odd">
 <td><p>WIA_CATEGORY_AUTO</p></td>
-<td><p>Properties include those for auto-configured scanning. For more information, see <a href="https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item" data-raw-source="[WIA Properties Supported by an Auto Item](https://docs.microsoft.com/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item)">WIA Properties Supported by an Auto Item</a>.</p></td>
+<td><p>Properties include those for auto-configured scanning. For more information, see <a href="/windows-hardware/drivers/image/wia-properties-supported-by-an-auto-item" data-raw-source="[WIA Properties Supported by an Auto Item](./wia-properties-supported-by-an-auto-item.md)">WIA Properties Supported by an Auto Item</a>.</p></td>
 <td><p>WIA auto item that represents the scanner's auto-configured scanning settings.</p></td>
 </tr>
 </tbody>
@@ -322,13 +321,4 @@ Requirements
 
 
 [**WIA\_IPA\_ITEM\_FLAGS**](wia-ipa-item-flags.md)
-
- 
-
- 
-
-
-
-
-
 

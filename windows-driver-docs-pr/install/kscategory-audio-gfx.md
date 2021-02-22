@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_AUDIO_GFX
 description: KSCATEGORY_AUDIO_GFX
-ms.assetid: 6346d7c6-9ea9-450f-af6a-44dec22bf936
 keywords: ["KSCATEGORY_AUDIO_GFX Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_AUDIO_GFX
 
 
-The KSCATEGORY_AUDIO_GFX [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that supports a [global effects (GFX) filter](https://docs.microsoft.com/windows-hardware/drivers/audio/gfx-filters).
+The KSCATEGORY_AUDIO_GFX [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that supports a [global effects (GFX) filter](../audio/index.md).
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for KS audio adapter devices register instances of KSCATEGORY_AUDIO_GFX to indicate to the operating system that the devices support the KSCATEGORY_AUDIO_GFX functional category.
 
-For information about other device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter).
+For information about other device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
 Requirements
 ------------
@@ -73,10 +72,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

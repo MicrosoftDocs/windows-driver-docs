@@ -1,7 +1,6 @@
 ---
 title: usb3kd.hub_info
 description: The usb3kd.device_info command displays information about a hub in the USB 3.0 tree.
-ms.assetid: B46B48C1-C14A-410D-9C34-F8AB1640682C
 keywords: ["usb3kd.hub_info Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -98,14 +97,7 @@ Hub Event History:
 
 [**!usb3kd.hub\_info\_from\_fdo**](-usb3kd-hub-info-from-fdo.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

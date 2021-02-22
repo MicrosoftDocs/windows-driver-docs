@@ -1,7 +1,6 @@
 ---
 title: Activating a Debugging Client
 description: Once the debugging server has been activated, you can start a debugging client on another computer and connect to the debugging session.
-ms.assetid: 45a7baa7-08dc-47ae-a137-874aaa4ec8aa
 keywords: ["Activating a Debugging Client Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

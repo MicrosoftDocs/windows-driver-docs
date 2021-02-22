@@ -1,7 +1,6 @@
 ---
 title: INF DDInstall Section
 description: Each per-Models DDInstall section contains an optional DriverVer directive and one or more directives referencing additional named sections in the INF file, shown here with the most frequently specified INF directives, CopyFiles and AddReg, listed first.
-ms.assetid: 79cba88d-fda1-4b91-bf51-98afd7224bc9
 keywords:
 - INF DDInstall Section Device and Driver Installation
 topic_type:
@@ -21,7 +20,7 @@ Each per-Models *DDInstall* section contains an optional **DriverVer** directive
 
 The sections referenced by these directives contain instructions for installing driver files and writing any device-specific and/or driver-specific information into the registry.
 
-```ini
+```inf
 [install-section-name] | 
 [install-section-name.nt] | 
 [install-section-name.ntx86] | 
@@ -89,7 +88,7 @@ This optional entry specifies one or more additional system-supplied INF files t
 
 For example, the system INF files for device drivers that depend on the system's kernel-streaming support specify this entry as follows:
 
-```ini
+```inf
 Include= ks.inf[, [kscaptur.inf,] [ksfilter.inf]]...
 ```
 
@@ -100,7 +99,7 @@ This optional entry specifies sections within system-supplied INF files that mus
 
 For example, the INF files for device drivers that have the preceding **Include** entry specify this entry as follows:
 
-```ini
+```inf
 Needs= KS.Registration[, KSCAPTUR.Registration | KSCAPTUR.Registration.NT, MSPCLOCK.Installation]
 ```
 
@@ -135,7 +134,7 @@ For device instance properties that were introduced earlier on Windows Server 20
 
  
 
-(Windows Vista and later) This directive provides an additional ranking criterion for drivers that are based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](device-setup-classes.md) that distinguishes between drivers based on class-specific criteria.
+(Windows Vista and later) This directive provides an additional ranking criterion for drivers that are based on the features that a driver supports. For example, feature scores might be defined for a [device setup class](./overview-of-device-setup-classes.md) that distinguishes between drivers based on class-specific criteria.
 
 For more information about how drivers are ranked, see [How Windows Ranks Drivers (Windows Vista and Later)](how-setup-ranks-drivers--windows-vista-and-later-.md).
 
@@ -146,7 +145,7 @@ For more information about this directive, see [**INF FeatureScore Directive**](
  
 
 <a href="" id="bitreg-bit-registry-section--bit-registry-section----"></a>**BitReg=**<em>bit-registry-section</em>\[**,**<em>bit-registry-section</em>\]...  
-This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) are modified.
+This directive references one or more INF-writer-defined sections in which existing registry value entries of type [REG_BINARY](/windows/desktop/SysInfo/registry-value-types) are modified.
 
 An **HKR** specification in such a bit-registry section designates the **..Class\\**<em>SetupClassGUID</em>**\\**<em>device-instance-id</em> registry path of the user-accessible driver. This type of **HKR** specification is also referred to as a. "software key".
 
@@ -231,21 +230,21 @@ Each section name must be unique within the INF file and must follow the general
 
 Any **AddReg** directive specified in a *DDInstall* section is assumed to reference an add-registry section that cannot be used to store information about upper or lower-filter drivers, about multifunction devices, or about driver-independent but device-specific parameters. If a device/driver INF must store this type of information in the registry, it must use an **AddReg** directive in its undecorated and decorated <em>DDInstall</em>**.HW** sections, if any, to reference another INF-writer-defined *add-registry-section*.
 
-Depending on the [device setup class](device-setup-classes.md) that was specified in the [**INF Version section**](inf-version-section.md), additional class-specific directives can be specified in a *DDInstall* section. For more information about class-specific directives, see the following topics:
+Depending on the [device setup class](./overview-of-device-setup-classes.md) that was specified in the [**INF Version section**](inf-version-section.md), additional class-specific directives can be specified in a *DDInstall* section. For more information about class-specific directives, see the following topics:
 
--   [Building an INF File for a Windows SideShow-Compatible Device](https://docs.microsoft.com/windows-hardware/drivers/)
--   [DDInstall Section in a Network INF File](https://docs.microsoft.com/windows-hardware/drivers/network/ddinstall-services-section-in-a-network-inf-file)
--   [INF Files for Still Image Devices](https://docs.microsoft.com/windows-hardware/drivers/image/inf-files-for-still-image-devices)
--   [INF Files for WIA Devices](https://docs.microsoft.com/windows-hardware/drivers/image/inf-files-for-wia-devices)
--   [Installation Requirements for Network Components](https://docs.microsoft.com/windows-hardware/drivers/network/installation-requirements-for-network-components)
--   [Specifying WDF Directives in INF Files](https://docs.microsoft.com/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files)
+-   [Building an INF File for a Windows SideShow-Compatible Device](../index.yml)
+-   [DDInstall Section in a Network INF File](../network/ddinstall-services-section-in-a-network-inf-file.md)
+-   [INF Files for Still Image Devices](../image/inf-files-for-still-image-devices.md)
+-   [INF Files for WIA Devices](../image/inf-files-for-wia-devices.md)
+-   [Installation Requirements for Network Components](../network/installation-requirements-for-network-adapters.md)
+-   [Specifying WDF Directives in INF Files](../wdf/specifying-wdf-directives-in-inf-files.md)
 
 Examples
 --------
 
 This example shows the expansion of the *DDInstall* sections, **Ser_Inst** and **Inp_Inst**. These sections are referenced in the example for the [**INF *Models* section**](inf-models-section.md).
 
-```ini
+```inf
 [Ser_Inst]
 CopyFiles=Ser_CopyFiles, mouclass_CopyFiles
 
@@ -264,7 +263,7 @@ inport.sys
 
 The following example provides a general illustration of using platform extensions:
 
-```ini
+```inf
 [Manufacturer]
 %MSFT% = Microsoft
 
@@ -294,7 +293,7 @@ The following example provides a general illustration of using platform extensio
 
 The following example shows the *DDInstall* section of an INF file that installs a system-supplied WDM driver for an audio device on various operating system platforms:
 
-```ini
+```inf
 [WDMPNPB003_Device.NT]
 DriverVer=01/14/1999,5.0
 Include=ks.inf, wdmaudio.inf
@@ -307,7 +306,7 @@ AddReg=WDM_SB16.AddReg
 
 The following example shows the sections referenced by the preceding **Needs** entry in the system-supplied *ks.inf* and *wdmaudio.inf* files. In the preceding example, these files are specified in the **Includes** entry. When the operating system's device installer and/or media class installer process this device's <em>install-section-name</em>**.nt** section, these next two sections are also processed.
 
-```ini
+```inf
 [KS.Registration]
 ; following AddReg= is actually a single line in the ks.inf file
 AddReg=ProxyRegistration,CategoryRegistration,\
@@ -348,13 +347,4 @@ CopyFiles=WDM.CopyFiles.Sys, WDM.CopyFiles.Drv
 [**DelProperty**](inf-delproperty-directive.md)
 
 [**FeatureScore**](inf-featurescore-directive.md)
-
- 
-
- 
-
-
-
-
-
 

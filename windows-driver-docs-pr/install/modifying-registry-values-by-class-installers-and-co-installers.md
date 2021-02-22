@@ -1,7 +1,6 @@
 ---
 title: Modifying Registry Values by Class Installers and Co-installers
 description: Modifying Registry Values by Class Installers and Co-installers
-ms.assetid: 2D4B907A-622B-4b1b-A692-8E858F770F70
 keywords:
 - registry WDK device installations , modifying registry values
 - registry WDK device installations , modifying registry values, class installers
@@ -33,21 +32,15 @@ The following are exceptions to this rule:
 
     Class installers and co-installers must follow the restrictions about how to use the [RunOnce registry key](runonce-registry-key.md) in [INF files](overview-of-inf-files.md). In particular, this registry key must be used only for the installation of software-only devices that are enumerated by using the software device enumerator (SWENUM).
 
--   Class installers and co-installers can modify the **CoInstallers32** and **EnumPropPages32** registry values in the device's *software key* when the installer handles [**DIF_REGISTER_COINSTALLERS**](https://docs.microsoft.com/windows-hardware/drivers/install/dif-register-coinstallers) requests.
+
+
+
+-   Class installers and co-installers can modify the **CoInstallers32** and **EnumPropPages32** registry values in the device's *software key* when the installer handles [**DIF_REGISTER_COINSTALLERS**](./dif-register-coinstallers.md) requests.
 
 The following guidelines should be followed to safely modify registry values by class installers or co-installers:
 
--   Class installers and co-installers must first use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey) to open handles to the registry keys that will be modified. After a handle has been opened, class installers and co-installers can use the standard registry functions to modify registry values.
+-   Class installers and co-installers must first use [**SetupDiCreateDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedevregkeya) or [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey) to open handles to the registry keys that will be modified. After a handle has been opened, class installers and co-installers can use the standard registry functions to modify registry values.
 
--   Class installers and co-installers must not use **SetupDiDeleteDevRegKey** or *hardware keys* for the device. For more information, see [Deleting the Registry Keys of a Device](deleting-the-registry-keys-of-a-device.md).
+-   Class installers and co-installers must not use [**SetupDiDeleteDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdideletedevregkey) to delete *software keys* or *hardware keys* for the device.
 
-For more information about the standard registry functions, see [Registry Functions](https://go.microsoft.com/fwlink/p/?linkid=194529).
-
- 
-
- 
-
-
-
-
-
+For more information about the standard registry functions, see [Registry Functions](/windows/win32/sysinfo/registry-functions).

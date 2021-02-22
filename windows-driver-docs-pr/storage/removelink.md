@@ -1,7 +1,6 @@
 ---
 title: RemoveLink function
 description: The RemoveLink WMI method configures the WMI provider so that it stops passing fabric link event information to the WMI client.
-ms.assetid: 8c9f78ba-fdb8-4d6c-ab99-3492e0887572
 keywords: ["RemoveLink function Storage Devices"]
 topic_type:
 - apiref
@@ -33,7 +32,7 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**RemoveLink\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removelink_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**RemoveLink\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removelink_out) structure.
 
 Return value
 ------------
@@ -68,14 +67,7 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**RemoveLink\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removelink_out)
+[**RemoveLink\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_removelink_out)
 
  
-
- 
-
-
-
-
-
 

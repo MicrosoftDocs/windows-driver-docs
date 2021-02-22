@@ -1,7 +1,6 @@
 ---
 title: Get IMEI, ICCID, IMSI, and telephone numbers for the MB device
 description: Get the IMEI, ICCID, IMSI and telephone numbers for the mobile broadband device
-ms.assetid: b604d08c-7e6f-4dad-9e1d-3f24a0da5760
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -63,14 +62,7 @@ account.currentDeviceInformation.mobileEquipmentId
 ## <span id="related_topics"></span>Related topics
 
 
-[Common tasks for mobile broadband Windows Runtime APIs](common-tasks-for-mobile-broadband-windows-runtime-apis.md)
+[Common tasks for mobile broadband Windows Runtime APIs](./create-a-mobilebroadbandaccount-object.md)
 
  
-
- 
-
-
-
-
-
 

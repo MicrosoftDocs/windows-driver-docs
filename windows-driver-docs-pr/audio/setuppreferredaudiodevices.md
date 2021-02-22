@@ -1,7 +1,6 @@
 ---
 title: SetupPreferredAudioDevices
 description: SetupPreferredAudioDevices
-ms.assetid: cc6b7da4-335d-4629-ba54-32aa32a1eb09
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -14,11 +13,11 @@ ms.localizationpriority: medium
 
 The SetupPreferredAudioDevices keyword denotes the preferred audio device, which is the device that the audio system enables by default when the system contains one or more audio devices. This keyword is media-class specific and is supported by Microsoft Windows Millennium Edition/Windows 98, Microsoft Windows 2000, Windows XP, and Windows Vista. SetupPreferredAudioDevicesis not supported in Windows 7.
 
-When creating an audio device, an application program can elect to use the default (or preferred) device instead of explicitly specifying a device. (For example, see the descriptions of the [**waveOutOpen**](https://docs.microsoft.com/previous-versions/dd743866(v=vs.85)) and **DirectSoundCreate** functions in the Microsoft Windows SDK documentation.)
+When creating an audio device, an application program can elect to use the default (or preferred) device instead of explicitly specifying a device. (For example, see the descriptions of the [**waveOutOpen**](/previous-versions/dd743866(v=vs.85)) and **DirectSoundCreate** functions in the Microsoft Windows SDK documentation.)
 
 The audio system keeps track of the current preferred audio device in the system registry. When a user upgrades a system by installing a new audio device, the proprietary INF file that installs the device typically updates the registry to designate the new device as the preferred audio device.
 
-The SetupPreferredAudioDevices keyword can appear within a registry-update directive in the **add-registry-section** (see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)) of an INF file for an audio device. This directive has the following format:
+The SetupPreferredAudioDevices keyword can appear within a registry-update directive in the **add-registry-section** (see [**INF AddReg Directive**](../install/inf-addreg-directive.md)) of an INF file for an audio device. This directive has the following format:
 
 *reg-rootkey*, \[*reg-subkey*\]SetupPreferredAudioDevices \[*flags*\], \[*dword-value*\]
 
@@ -46,10 +45,4 @@ The directive at the end of the example specifies that the device named "XYZ-Aud
 With the current implementation of the SetupPreferredAudioDevices keyword in Windows Vista, any audio endpoint with its *dword-value* set to an odd number can be set as the default device. To make sure that the correct endpoint is set as the default device, make sure that the KS filter that contains the relevant endpoint is exposed last. You have to do this because of the algorithm that the AudioEndpointBuilder service uses to populate property stores and setting default devices.
 
  
-
- 
-
-
-
-
 

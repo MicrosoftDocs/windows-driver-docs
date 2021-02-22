@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhubext
 description: The usbkd.usbhubext command displays information about a USB hub..
-ms.assetid: 1EC75753-3743-4384-8068-E796083D8239
 keywords: ["usbkd.usbhubext Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -223,14 +222,7 @@ ProductId:Cruzer
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

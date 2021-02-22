@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_TargetMappings WMI Class
 description: MSiSCSI\_TargetMappings WMI Class
-ms.assetid: 12bfe80a-8431-4607-99f5-ddd6815aecc6
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -20,7 +19,7 @@ There should be one instance of the MSiSCSI\_TargetMappings WMI class for each l
 
 The MSiSCSI\_TargetMappings class is unpublished and is defined in *Operations.mof*.
 
-When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_TargetMappings**](https://docs.microsoft.com/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_msiscsi_targetmappings) data structure.
+When the WMI tool suite compiles this class definition, it produces the [**MSiSCSI\_TargetMappings**](/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_msiscsi_targetmappings) data structure.
 
 Initiators are required to implement the MSiSCSI\_TargetMappings class.
 
@@ -29,10 +28,4 @@ The iSCSI initiator service relies on the MSiSCSI\_TargetMappings class to commu
 Initiators must register the MSiSCSI\_TargetMappings class using the name of the PDO for the HBA.
 
  
-
- 
-
-
-
-
 

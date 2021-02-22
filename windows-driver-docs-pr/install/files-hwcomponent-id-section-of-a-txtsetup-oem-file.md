@@ -1,7 +1,6 @@
 ---
 title: Files.HwComponent.ID Section of a TxtSetup.oem File
 description: A Files.HwComponent.ID section lists the files to be copied if the user selects a particular component option. One of these sections must be present for each option listed in each HwComponent section.
-ms.assetid: a2c48a94-18a9-4efe-bdff-6c08bbbbabf9
 keywords: ["Files.HwComponent.ID Section of a TxtSetup.oem File Device and Driver Installation"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_VIRTUAL
 description: KSCATEGORY_VIRTUAL
-ms.assetid: 065bd2b1-4863-49ff-b6e7-f09c4234adad
 keywords: ["KSCATEGORY_VIRTUAL Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_VIRTUAL
 
 
-The KSCATEGORY_VIRTUAL [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) represents a [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) category that is reserved for exclusive use by the system-supplied [WDM audio components](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components).
+The KSCATEGORY_VIRTUAL [device interface class](./overview-of-device-interface-classes.md) represents a [kernel streaming](../stream/streaming-minidrivers2.md) (KS) category that is reserved for exclusive use by the system-supplied [WDM audio components](../audio/kernel-mode-wdm-audio-components.md).
 
 <table>
 <colgroup>
@@ -62,10 +61,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

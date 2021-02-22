@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_SWMIDI
 description: KSNODETYPE\_SWMIDI
-ms.assetid: 88866be1-e6da-4252-a31b-bc1a8d558683
 keywords: ["KSNODETYPE_SWMIDI Audio Devices"]
 topic_type:
 - apiref

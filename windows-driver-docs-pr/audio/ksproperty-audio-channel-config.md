@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG
 description: The KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the actual spatial placement of channels in the audio stream that a node outputs.
-ms.assetid: 5ce9bf4a-c84e-4d7e-8e75-896c88ec1a72
 keywords: ["KSPROPERTY_AUDIO_CHANNEL_CONFIG Audio Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ The KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the actual spatial pla
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter/Pin</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config" data-raw-source="[&lt;strong&gt;KSAUDIO_CHANNEL_CONFIG&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config)"><strong>KSAUDIO_CHANNEL_CONFIG</strong></a></p></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config" data-raw-source="[&lt;strong&gt;KSAUDIO_CHANNEL_CONFIG&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config)"><strong>KSAUDIO_CHANNEL_CONFIG</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -64,9 +63,9 @@ A KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property request returns STATUS\_SUCCESS to
 Remarks
 -------
 
-When used as a property of a DAC node ([**KSNODETYPE\_DAC**](ksnodetype-dac.md)) or 3D node ([**KSNODETYPE\_3D\_EFFECTS**](ksnodetype-3d-effects.md)), the KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the DirectSound speaker configuration. For stereo speaker configurations, this property is used in conjunction with the [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](ksproperty-audio-stereo-speaker-geometry.md) property, which distinguishes between headphones and several stereo speaker configurations. For more information about speaker configurations, see [DirectSound Speaker-Configuration Settings](https://docs.microsoft.com/windows-hardware/drivers/audio/directsound-speaker-configuration-settings).
+When used as a property of a DAC node ([**KSNODETYPE\_DAC**](ksnodetype-dac.md)) or 3D node ([**KSNODETYPE\_3D\_EFFECTS**](ksnodetype-3d-effects.md)), the KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property specifies the DirectSound speaker configuration. For stereo speaker configurations, this property is used in conjunction with the [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](ksproperty-audio-stereo-speaker-geometry.md) property, which distinguishes between headphones and several stereo speaker configurations. For more information about speaker configurations, see [DirectSound Speaker-Configuration Settings](./directsound-speaker-configuration-settings.md).
 
-DirectSound also uses the KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property to query a "pan" node for its channel configuration. A pan node is the second volume node ([**KSNODETYPE\_VOLUME**](ksnodetype-volume.md)) on a mixer pin that meets the [DirectSound node-ordering requirements](https://docs.microsoft.com/windows-hardware/drivers/audio/directsound-node-ordering-requirements). DirectSound implementation of the **IDirectSoundBuffer::SetPan** method (described in the Microsoft Windows SDK documentation) uses the pan node's [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](ksproperty-audio-volumelevel.md) property to control panning.
+DirectSound also uses the KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG property to query a "pan" node for its channel configuration. A pan node is the second volume node ([**KSNODETYPE\_VOLUME**](ksnodetype-volume.md)) on a mixer pin that meets the [DirectSound node-ordering requirements](./directsound-node-ordering-requirements.md). DirectSound implementation of the **IDirectSoundBuffer::SetPan** method (described in the Microsoft Windows SDK documentation) uses the pan node's [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](ksproperty-audio-volumelevel.md) property to control panning.
 
 DirectSound treats KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG as a filter property on a DAC node, and as a pin property on volume and 3D nodes.
 
@@ -91,9 +90,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 
-[**KSAUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config)
+[**KSAUDIO\_CHANNEL\_CONFIG**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config)
 
 [**KSNODETYPE\_DAC**](ksnodetype-dac.md)
 
@@ -106,13 +105,4 @@ Requirements
 [**KSPROPERTY\_AUDIO\_STEREO\_SPEAKER\_GEOMETRY**](ksproperty-audio-stereo-speaker-geometry.md)
 
 [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](ksproperty-audio-volumelevel.md)
-
- 
-
- 
-
-
-
-
-
 

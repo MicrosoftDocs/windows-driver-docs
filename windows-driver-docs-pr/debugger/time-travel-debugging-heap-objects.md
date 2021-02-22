@@ -6,9 +6,9 @@ ms.localizationpriority: medium
 ---
 
 # TTD Heap Objects
+
 ## Description
 *TTD Heap* objects are used to give information about heap calls that occur over the course of a trace.
-
 
 ## Properties
 Every heap object will have these properties.
@@ -71,16 +71,8 @@ dx -r1 @$cursession.TTD.Data.Heap()[2].@"Parameters"
     [0x3]            : 0x0
 ```
 
-
-
-
-
 ## See Also
 
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-

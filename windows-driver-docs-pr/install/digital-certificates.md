@@ -1,7 +1,6 @@
 ---
 title: Digital Certificates
 description: Digital Certificates
-ms.assetid: 90427be5-7b61-4ed6-ab5d-847b64c7dcf0
 keywords:
 - digital certificates WDK
 - driver package digital certificates WDK

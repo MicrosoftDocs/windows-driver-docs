@@ -1,7 +1,6 @@
 ---
 title: EFI_RNG_SERVICE_BINDING_PROTOCOL
 description: Used to locate RNG services provided by a driver, and to create and destroy instances so that multiple drivers can use the underlying RNG services.
-ms.assetid: 3CAD0FD8-DD26-4D26-A9E9-4B2750985E00
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: AF_INET
 description: AF_INET
-ms.assetid: 59e12f8d-02eb-413c-bc04-6b9b6e4adde6
 ms.date: 08/08/2017
 keywords: 
  -AF_INET Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ The AF\_INET address family is the address family for IPv4.
 
 ### Socket Address Structure
 
-An IPv4 transport address is specified with the [**SOCKADDR\_IN**](https://docs.microsoft.com/windows/desktop/api/ws2def/ns-ws2def-sockaddr_in) structure.
+An IPv4 transport address is specified with the [**SOCKADDR\_IN**](/windows/win32/api/ws2def/ns-ws2def-sockaddr_in) structure.
 
 ### Socket Types
 
@@ -30,7 +29,7 @@ Supports unreliable connectionless datagram communication.
 <a href="" id="sock-raw"></a>SOCK\_RAW  
 Supports raw access to the transport protocol.
 
-A WSK application specifies a socket type when it calls the [**WskSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
+A WSK application specifies a socket type when it calls the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
 
 ### Protocols
 
@@ -101,13 +100,13 @@ Raw IP packets
 
 Additional protocols are supported through the use of raw sockets.
 
-A WSK application specifies a protocol when it calls the [**WskSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
+A WSK application specifies a protocol when it calls the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) function or the [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function to create a new socket.
 
-A WSK application also specifies a protocol (as the *Level* parameter) when it calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function to set or retrieve transport protocol level or network protocol level socket options.
+A WSK application also specifies a protocol (as the *Level* parameter) when it calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function to set or retrieve transport protocol level or network protocol level socket options.
 
 ### Combinations
 
-IPv4 supports the following combinations of socket types and protocols for each WSK [socket category](https://docs.microsoft.com/windows-hardware/drivers/network/winsock-kernel-socket-categories):
+IPv4 supports the following combinations of socket types and protocols for each WSK [socket category](./winsock-kernel-socket-categories.md):
 
 Basic Sockets
 SOCK\_STREAM + IPPROTO\_TCP
@@ -143,9 +142,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSMFT_CATEGORY_VIDEO_DECODER
 description: KSMFT_CATEGORY_VIDEO_DECODER
-ms.assetid: 56f2c39a-dea6-4dc0-84bb-f052d27fb084
 keywords: ["KSMFT_CATEGORY_VIDEO_DECODER Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSMFT_CATEGORY_VIDEO_DECODER
 
 
-The KSMFT_CATEGORY_VIDEO_DECODER [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [Kernel Streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/kernel-streaming) (KS) functional category for a video device.
+The KSMFT_CATEGORY_VIDEO_DECODER [device interface class](./overview-of-device-interface-classes.md) is defined for the [Kernel Streaming](../stream/kernel-streaming.md) (KS) functional category for a video device.
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 AVStream drivers that have MFT codec support register instances of this device interface class to indicate to the operating system that the devices support the KSMFT_CATEGORY_VIDEO_DECODER functional category.
 
-For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](https://docs.microsoft.com/windows-hardware/drivers/stream/getting-started-with-hardware-codec-support-in-avstream).
+For more information about device interface classes for AVStream devices with hardware codec support, see [Getting Started with Hardware Codec Support in AVStream](../stream/getting-started-with-hardware-codec-support-in-avstream.md).
 
 For more information about how to register this functional category in an INF file, see the *Hiddigi.inf* file, which is included with the *src\\input\\hiddigi* sample drivers in the WDK.
 
@@ -71,10 +70,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

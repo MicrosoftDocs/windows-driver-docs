@@ -1,7 +1,6 @@
 ---
 title: Associating a Per-Stream Context With a File Stream
 description: Associating a Per-Stream Context With a File Stream
-ms.assetid: 99c93574-2ba6-417a-89a4-a5b9a350a8da
 keywords:
 - filter drivers WDK file system , per-stream context tracking
 - file system filter drivers WDK , per-stream context tracking
@@ -18,20 +17,15 @@ ms.localizationpriority: medium
 ## <span id="ddk_associating_a_per_stream_context_with_a_file_stream_if"></span><span id="DDK_ASSOCIATING_A_PER_STREAM_CONTEXT_WITH_A_FILE_STREAM_IF"></span>
 
 
-A per-stream context structure can be associated with a file stream only after the file system has successfully processed the [**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create) request to open the stream. This is because it is only after the file system has processed the create request that the file object's FsContext pointer can be considered valid by a file system filter driver. Because the FsContext pointer uniquely identifies a file stream, it is needed to determine whether the file object represents a file stream that the filter has already seen -- and for which the filter has already created a per-stream context. For this reason, it is not unusual for a filter to create a per-stream context in the create dispatch (or "pre-Create") path, only to delete it in the create completion (or "post-Create") path because it turns out to be a duplicate.
+A per-stream context structure can be associated with a file stream only after the file system has successfully processed the [**IRP\_MJ\_CREATE**](./irp-mj-create.md) request to open the stream. This is because it is only after the file system has processed the create request that the file object's FsContext pointer can be considered valid by a file system filter driver. Because the FsContext pointer uniquely identifies a file stream, it is needed to determine whether the file object represents a file stream that the filter has already seen -- and for which the filter has already created a per-stream context. For this reason, it is not unusual for a filter to create a per-stream context in the create dispatch (or "pre-Create") path, only to delete it in the create completion (or "post-Create") path because it turns out to be a duplicate.
 
-To check whether it has already associated another per-stream context with the same file stream, a file system filter driver calls [**FsRtlLookupPerStreamContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtllookupperstreamcontext).
+To check whether it has already associated another per-stream context with the same file stream, a file system filter driver calls [**FsRtlLookupPerStreamContext**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtllookupperstreamcontext).
 
-If [**FsRtlLookupPerStreamContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtllookupperstreamcontext) finds an existing per-stream context for the same file stream, the filter should delete the newly created per-stream context.
+If [**FsRtlLookupPerStreamContext**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtllookupperstreamcontext) finds an existing per-stream context for the same file stream, the filter should delete the newly created per-stream context.
 
-If [**FsRtlLookupPerStreamContext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtllookupperstreamcontext) does not find a per-stream context that your filter has already created previously for the file stream, the filter can call [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194) to associate the newly created stream context with the file stream.
+If [**FsRtlLookupPerStreamContext**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtllookupperstreamcontext) does not find a per-stream context that your filter has already created previously for the file stream, the filter can call [**FsRtlInsertPerStreamContext**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinsertperstreamcontext) to associate the newly created stream context with the file stream.
 
-After [**FsRtlInsertPerStreamContext**](https://msdn.microsoft.com/library/windows/hardware/ff546194) is called for a per-stream context, the file system assumes responsibility for deleting and freeing it. If your filter driver allocates a per-stream context and does not call **FsRtlInsertPerStreamContext** for it, your filter driver is still responsible for freeing it by calling [**ExFreePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool).
-
- 
+After [**FsRtlInsertPerStreamContext**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinsertperstreamcontext) is called for a per-stream context, the file system assumes responsibility for deleting and freeing it. If your filter driver allocates a per-stream context and does not call **FsRtlInsertPerStreamContext** for it, your filter driver is still responsible for freeing it by calling [**ExFreePool**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool).
 
  
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: C++ Numbers and Operators
 description: C++ Numbers and Operators
-ms.assetid: e5d3ac7f-fd79-48bb-b927-9ad72570dcbe
 keywords: ["expressions, C++ expression syntax", "C++ expressions, numbers", "C++ expressions, operators", "numerical expressions, C++", "operators, C++", "precedence rules (C++)", "methods", "methods, syntax", "members of classes"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -190,11 +189,12 @@ You can use the following operators. The operators in each cell take precedence 
 <td align="left"><p>Logical OR</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p><em>LValue</em> <strong>=</strong><em>Value</em></p>
-<p><em>LValue</em> <strong></em>=</strong> <em>Value</em></p>
+<td align="left">
+<p><em>LValue</em> <strong>=</strong> <em>Value</em></p>
+<p><em>LValue</em> <strong>*=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>/=</strong> <em>Value</em></p>
-<p><em>LValue</em> <strong>%=</strong><em>Value</em></p>
-<p><em>LValue</em> <strong>+=</strong><em>Value</em></p>
+<p><em>LValue</em> <strong>%=</strong> <em>Value</em></p>
+<p><em>LValue</em> <strong>+=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>-=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>&lt;&lt;=</strong> <em>Value</em></p>
 <p><em>LValue</em> <strong>&gt;&gt;=</strong> <em>Value</em></p>

@@ -1,7 +1,6 @@
 ---
 title: Updating the IP headers for coalesced segments
 description: This section describes how to update the IP headers for coalesced segments
-ms.assetid: 18F2944A-D5A7-41BB-885F-EC183A00F7CE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

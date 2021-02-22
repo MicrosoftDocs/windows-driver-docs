@@ -1,7 +1,6 @@
 ---
 title: Why a UMDF Driver Consumes Excessive Memory
 description: Describes how to use Wudfext.dll to determine why a UMDF version 1 driver consumes an excessive amount of memory.
-ms.assetid: 01316c4e-24e8-467c-af52-900b3fe042db
 keywords:
 - debugging scenarios WDK UMDF , UMDF driver consumes excessive memory
 - UMDF WDK , debugging scenarios, UMDF driver consumes excessive memory
@@ -12,11 +11,11 @@ ms.localizationpriority: medium
 
 # Determining Why a UMDF Driver Consumes an Excessive Amount of Memory
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 This topic describes how you can use the Wudfext.dll debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 driver to determine why a UMDF driver consumes an excessive amount of memory.
 
-Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](https://docs.microsoft.com/windows-hardware/drivers/debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-).
+Starting with UMDF version 2, you should instead use the Wdfkd.dll debugger extensions. For more info, see [Windows Driver Framework Extensions (Wdfkd.dll)](../debugger/kernel-mode-driver-framework-extensions--wdfkd-dll-.md).
 
 To investigate memory usage, use the following steps:
 
@@ -33,13 +32,7 @@ To investigate memory usage, use the following steps:
     These objects might be in the object tree and would therefore eventually be freed. However, they are being accumulated unnecessarily. These objects might require:
 
     -   Corrections to their parent objects.
-    -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-deletewdfobject) method.
+    -   Explicit deletion by using the [**IWDFObject::DeleteWdfObject**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-deletewdfobject) method.
 
  
-
- 
-
-
-
-
 

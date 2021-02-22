@@ -1,7 +1,6 @@
 ---
 title: ScanDestination element
 description: The required ScanDestination element specifies a single scan destination on the client.
-ms.assetid: 3cd685b2-36b2-4f28-a80f-a68204631e0c
 keywords: ["ScanDestination element Imaging Devices"]
 topic_type:
 - apiref

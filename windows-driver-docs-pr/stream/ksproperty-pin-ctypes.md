@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_PIN\_CTYPES
 description: Clients use the KSPROPERTY\_PIN\_CTYPES property to determine how many pin types a KS filter supports.
-ms.assetid: 2aa93591-9fe6-453f-bc50-871972cb3e50
 keywords: ["KSPROPERTY_PIN_CTYPES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ Clients use the KSPROPERTY\_PIN\_CTYPES property to determine how many pin types
 <td><p>Yes</p></td>
 <td><p>No</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
 <td><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -81,14 +80,5 @@ Requirements
 ## See also
 
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
-
- 
-
- 
-
-
-
-
-
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 

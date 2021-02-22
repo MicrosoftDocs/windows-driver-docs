@@ -1,7 +1,6 @@
 ---
 title: Opening a Device's Software Key
 description: Opening a Device's Software Key
-ms.assetid: CA9EC186-7991-4cc5-B49E-DFE87A13BCFA
 keywords:
 - software keys WDK device installations , opening
 - opening software keys WDK device installations
@@ -20,19 +19,13 @@ You must not directly open a device's *software key*. As with any registry key, 
 
 To open a device's software key, follow these guidelines:
 
--   To open an existing software key, use [**SetupDiOpenDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiopendevregkey). To create a software key, use [**SetupDiCreateDevRegKey**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicreatedevregkeya). In either case, you must set the *KeyType* parameter to DIREG_DRV.
+-   To open an existing software key, use [**SetupDiOpenDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdiopendevregkey). To create a software key, use [**SetupDiCreateDevRegKey**](/windows/win32/api/setupapi/nf-setupapi-setupdicreatedevregkeya). In either case, you must set the *KeyType* parameter to DIREG_DRV.
 
     **Note**  You must set the *samDesired* parameter to the minimal access permissions that are required. You must not set this parameter to KEY_ALL_ACCESS. For more information about how to specify access permissions for registry access, see [Accessing Registry Keys Safely](accessing-registry-keys-safely.md).
 
      
 
--   Kernel-mode callers should use [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) and set the *DevInstKeyType* parameter to PLUGPLAY_REGKEY_DRIVER.
+-   Kernel-mode callers should use [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) and set the *DevInstKeyType* parameter to PLUGPLAY_REGKEY_DRIVER.
 
  
-
- 
-
-
-
-
 

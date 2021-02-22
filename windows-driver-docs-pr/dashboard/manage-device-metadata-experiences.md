@@ -1,7 +1,6 @@
 ---
 title: Manage Device Metadata Experiences
 description: Manage Device Metadata Experiences
-ms.assetid: aede9597-4b67-4c1a-8ae4-924d39c88b53
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -143,7 +142,7 @@ On the **Manage experiences** page, you can add, remove, or promote (from previe
 
 3. To update an existing package, select the package, click **Delete**, and then create and upload a new package.
 
-    For more information about creating a new package, see the [Device Metadata Authoring Wizard](https://docs.microsoft.com/windows-hardware/drivers/devtest/device-metadata-authoring-wizard-portal), available in the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk).
+    For more information about creating a new package, see the [Device Metadata Authoring Wizard](../devtest/device-metadata-authoring-wizard-portal.md), available in the [Windows Driver Kit](../download-the-wdk.md).
 
 4. To add a new package, under **Add more metadata**, browse for the file or files that you want to add, create a friendly name if you want, and then click **Submit**.
 

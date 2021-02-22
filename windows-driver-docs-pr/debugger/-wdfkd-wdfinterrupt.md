@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfinterrupt
 description: The wdfkd.wdfinterrupt extension displays information about a WDFINTERRUPT object.
-ms.assetid: 3e032095-94fe-41d5-aeed-645d6b544105
 keywords: ["wdfkd.wdfinterrupt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

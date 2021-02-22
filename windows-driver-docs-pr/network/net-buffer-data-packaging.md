@@ -1,7 +1,6 @@
 ---
 title: NET_BUFFER Data Packaging
 description: NET_BUFFER Data Packaging
-ms.assetid: f0d539ab-c6ed-4cd9-9891-ef4235016d50
 keywords:
 - NDIS WDK , sending and receiving data
 - data packaging WDK networking
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-Data packaging was redesigned in NDIS 6.0. The send and receive architecture that is based on the [**NDIS\_PACKET**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure has been replaced with an architecture that is based on [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) and [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures. A NET\_BUFFER structure is the functional equivalent of an NDIS\_PACKET structure. A NET\_BUFFER structure specifies a buffer (MDL chain) for network data, as well as reserved space for NDIS, protocol drivers, and miniport drivers. NET\_BUFFER structures can be linked together in a list that is described by a NET\_BUFFER\_LIST structure. A NET\_BUFFER\_LIST structure also provides storage for out-of-band (OOB) data that applies to all the NET\_BUFFER structures in the list.
+Data packaging was redesigned in NDIS 6.0. The send and receive architecture that is based on the [**NDIS\_PACKET**](/previous-versions/windows/hardware/network/ff557086(v=vs.85)) structure has been replaced with an architecture that is based on [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) and [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list) structures. A NET\_BUFFER structure is the functional equivalent of an NDIS\_PACKET structure. A NET\_BUFFER structure specifies a buffer (MDL chain) for network data, as well as reserved space for NDIS, protocol drivers, and miniport drivers. NET\_BUFFER structures can be linked together in a list that is described by a NET\_BUFFER\_LIST structure. A NET\_BUFFER\_LIST structure also provides storage for out-of-band (OOB) data that applies to all the NET\_BUFFER structures in the list.
 
 All components in the Microsoft next generation network driver stack, including the TCP/IP transport and Winsock, use NET\_BUFFER data packaging. Uniform data packaging throughout the driver stack eliminates the need to repackage data, simplifies data handling, and reduces the number of function calls.
 
@@ -30,10 +29,4 @@ NDIS propagates a driver's data backfill requirements to higher-level drivers. W
 For more information about the NET\_BUFFER architecture, see [NET\_BUFFER Architecture](net-buffer-architecture.md).
 
  
-
- 
-
-
-
-
 

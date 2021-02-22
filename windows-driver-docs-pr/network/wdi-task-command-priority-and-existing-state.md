@@ -1,7 +1,6 @@
 ---
 title: WDI task command priority and existing state
 description: When the adapter is in a particular state, new commands may come down to it that could affect the existing state (for example, a scan that affects existing connections).
-ms.assetid: 11EE42BF-2C44-4601-B262-570E6D154151
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

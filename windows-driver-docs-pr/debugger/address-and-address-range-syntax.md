@@ -1,8 +1,7 @@
 ---
 title: Address and Address Range Syntax
 description: Address and Address Range Syntax
-ms.assetid: 3d4f41f1-07ec-484d-a748-27fbbb9bd0b2
-ms.date: 11/28/2017
+ms.date: 07/24/2020
 ms.localizationpriority: medium
 ---
 
@@ -149,11 +148,6 @@ There are two other ways to specify the value (the **L***Size* range specifier):
 
 Some commands that ask for address ranges accept a single address as the argument. In this situation, the command uses some default object count to compute the size of the range. Typically, commands for which the address range is the final parameter permit this syntax. For the exact syntax and the default range size for each command, see the reference topics for each command.
 
- 
+## See Also
 
- 
-
-
-
-
-
+To display information about memory, use the [!address](-address.md) command. To search memory, use the [s (Search Memory)](s--search-memory-.md) command. To display the contents of memory use the [d, da, db, dc, dd, dD, df, dp, dq, du, dw (Display Memory)](d--da--db--dc--dd--dd--df--dp--dq--du--dw--dw--dyb--dyd--display-memor.md) command. For information on how you can view and edit memory using a Memory window see [Using a Memory Window](memory-window.md).

@@ -1,7 +1,6 @@
 ---
 title: Pscript-Supported Escapes
 description: Pscript-Supported Escapes
-ms.assetid: c0133355-fa3b-4117-bd38-b6a8b3898f94
 keywords:
 - PostScript Printer Driver WDK print , escapes
 - Pscript WDK print , escapes
@@ -37,12 +36,12 @@ The Pscript5 printer driver supports the following escapes.
 <tr class="even">
 <td><p>CHECKJPEGFORMAT</p></td>
 <td><p>Determine whether a printer can handle a JPEG image. For more information about this escape, see CHECKJPEGFORMAT in the Microsoft Windows SDK documentation.</p>
-<p>This escape produces a call to the <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydevicesupport" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydevicesupport)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
+<p>This escape produces a call to the <a href="/windows/win32/api/winddi/nf-winddi-drvquerydevicesupport" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvquerydevicesupport)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CHECKPNGFORMAT</p></td>
 <td><p>Determine whether a printer can handle a PNG image. For more information about this escape, see CHECKPNGFORMAT in the Windows SDK documentation.</p>
-<p>This escape produces a call to the <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydevicesupport" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvquerydevicesupport)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
+<p>This escape produces a call to the <a href="/windows/win32/api/winddi/nf-winddi-drvquerydevicesupport" data-raw-source="[&lt;strong&gt;DrvQueryDeviceSupport&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvquerydevicesupport)"><strong>DrvQueryDeviceSupport</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p>CLIP_TO_PATH</p></td>
@@ -55,13 +54,13 @@ The Pscript5 printer driver supports the following escapes.
 <tr class="even">
 <td><p>DRAWPATTERNRECT</p></td>
 <td><p>Create a white, grayscale, or solid black rectangle by using the pattern and rule capabilities of Page Control Language (PCL) on Hewlett Packard LaserJet or LaserJet-compatible printers. A grayscale is a gray pattern that contains a specific mixture of black and white pixels. For more information about this escape, see DRAWPATTERNRECT in the Windows SDK documentation.</p>
-<p>This escape is associated with the driver's <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvescape" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvescape)"><strong>DrvEscape</strong></a> function.</p></td>
+<p>This escape is associated with the driver's <a href="/windows/win32/api/winddi/nf-winddi-drvescape" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvescape)"><strong>DrvEscape</strong></a> function.</p></td>
 </tr>
 <tr class="odd">
 <td><p>ENCAPSULATED_POSTSCRIPT</p></td>
 <td><p>Send Encapsulated PostScript (EPS) data to the printer.</p>
 <p>This escape is not supported in Microsoft Windows NT 4.0 printer drivers.</p>
-<p>This escape is associated with the driver's <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdrawescape" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdrawescape)"><strong>DrvDrawEscape</strong></a> function.</p></td>
+<p>This escape is associated with the driver's <a href="/windows/win32/api/winddi/nf-winddi-drvdrawescape" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvdrawescape)"><strong>DrvDrawEscape</strong></a> function.</p></td>
 </tr>
 <tr class="even">
 <td><p>END_PATH</p></td>
@@ -198,11 +197,4 @@ The following escapes are obsolete and provided only for compatibility with 16-b
 </table>
 
  
-
- 
-
- 
-
-
-
 

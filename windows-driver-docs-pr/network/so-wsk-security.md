@@ -1,7 +1,6 @@
 ---
 title: SO_WSK_SECURITY
 description: SO_WSK_SECURITY
-ms.assetid: 169680ba-6486-48fe-89d7-dcd4e5930605
 ms.date: 07/18/2017
 keywords:
  - SO_WSK_SECURITY Network Drivers Starting with Windows Vista
@@ -17,7 +16,7 @@ This socket option applies only to listening sockets, datagram sockets, and conn
 
 If a WSK application uses this socket option to apply a security descriptor to a socket, it must do so before the socket is bound to a local transport address.
 
-To apply a security descriptor to a socket, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To apply a security descriptor to a socket, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -49,7 +48,7 @@ To apply a security descriptor to a socket, a WSK application calls the [**WskCo
 </tr>
 <tr class="odd">
 <td><p><em>InputBuffer</em></p></td>
-<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable must contain a pointer to a cached copy of a security descriptor that was obtained by calling the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client" data-raw-source="[&lt;strong&gt;WskControlClient&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client)"><strong>WskControlClient</strong></a> function with the <a href="wsk-cache-sd.md" data-raw-source="[&lt;strong&gt;WSK_CACHE_SD&lt;/strong&gt;](wsk-cache-sd.md)"><strong>WSK_CACHE_SD</strong></a> control code.</p></td>
+<td><p>A pointer to a PSECURITY_DESCRIPTOR-typed variable. This variable must contain a pointer to a cached copy of a security descriptor that was obtained by calling the <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client" data-raw-source="[&lt;strong&gt;WskControlClient&lt;/strong&gt;](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client)"><strong>WskControlClient</strong></a> function with the <a href="wsk-cache-sd.md" data-raw-source="[&lt;strong&gt;WSK_CACHE_SD&lt;/strong&gt;](wsk-cache-sd.md)"><strong>WSK_CACHE_SD</strong></a> control code.</p></td>
 </tr>
 <tr class="even">
 <td><p><em>OutputSize</em></p></td>
@@ -72,11 +71,11 @@ If a WSK application uses this socket option to apply a security descriptor to a
 
 A WSK application must not release the cached copy of the security descriptor until after the IRP is completed.
 
-A WSK application can also apply a security descriptor to a socket when the socket is initially created by specifying a pointer to a cached copy of a security descriptor in the *SecurityDescriptor* parameter when it calls the [**WskSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) or [**WskSocketConnect**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function.
+A WSK application can also apply a security descriptor to a socket when the socket is initially created by specifying a pointer to a cached copy of a security descriptor in the *SecurityDescriptor* parameter when it calls the [**WskSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket) or [**WskSocketConnect**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect) function.
 
 If a WSK application does not apply a security descriptor to a socket, the WSK subsystem uses a default security descriptor that does not allow sharing of the local transport address.
 
-To retrieve a cached copy of a socket's security descriptor from a socket, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To retrieve a cached copy of a socket's security descriptor from a socket, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -127,7 +126,7 @@ To retrieve a cached copy of a socket's security descriptor from a socket, a WSK
 
 A WSK application must specify a pointer to an IRP when calling the **WskControlSocket** function to retrieve a cached copy of a socket's security descriptor from a socket.
 
-A WSK application must call the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the [**WSK\_RELEASE\_SD**](wsk-release-sd.md) control code to release the cached copy of the security descriptor when it is no longer needed.
+A WSK application must call the [**WskControlClient**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the [**WSK\_RELEASE\_SD**](wsk-release-sd.md) control code to release the cached copy of the security descriptor when it is no longer needed.
 
 For more information about the SECURITY\_DESCRIPTOR structure, see the reference page for SECURITY\_DESCRIPTOR in the Microsoft Windows SDK documentation.
 
@@ -150,11 +149,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
 

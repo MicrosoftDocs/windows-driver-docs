@@ -1,7 +1,6 @@
 ---
 title: CPixel ComputeVolumeSize method
 description: The CPixel ComputeVolumeSize method determines the amount of memory required to allocate a volume.
-ms.assetid: 85e00793-8c30-41a4-91b0-9f0503a6ce09
 keywords: ["ComputeVolumeSize method Display Devices", "ComputeVolumeSize method Display Devices , CPixel interface", "CPixel interface Display Devices , ComputeVolumeSize method"]
 topic_type:
 - apiref

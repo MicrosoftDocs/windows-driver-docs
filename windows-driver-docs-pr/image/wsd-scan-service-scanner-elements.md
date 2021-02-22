@@ -1,7 +1,6 @@
 ---
 title: WSD Scan Service Scanner Elements
 description: WSD Scan Service Scanner Elements
-ms.assetid: 84bb3f19-fc32-4433-b601-ec3db11aacfa
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Ntddndis.h
 description: This section contains kernel mode network driver topics for the Ntddndis.h header.
-ms.assetid: EC2CD8C5-A2E9-4CA3-9229-BF0A955E6F53
 keywords:
 - Ntddndis.h network drivers
 ms.date: 08/08/2017
@@ -11,6 +10,10 @@ ms.custom: 19H1
 
 # Ntddndis.h
 
+> [!IMPORTANT]
+> ### Bias-free communication
+>
+> Microsoft supports a diverse and inclusive environment. This article contains references to terminology that the Microsoft [style guide for bias-free communication](/style-guide/bias-free-communication) recognizes as exclusionary. The word or phrase is used in this article for consistency because it currently appears in the software. When the software is updated to remove the language, this article will be updated to be in alignment.
 
 This section contains kernel mode network driver topics for the Ntddndis.h header. This header is included in the Windows SDK as it is also shared with user mode networking applications.
 
@@ -19,7 +22,7 @@ The Ntddndis.h header contains definitions for constants and types for interfaci
 > [!NOTE]
 > This section's topics contains pages for definitions and OIDs, which are not part of network driver DDI reference. 
 >
-> For DDI reference for this header, see [ntddndis.h header](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis).
+> For DDI reference for this header, see [ntddndis.h header](/windows-hardware/drivers/ddi/ntddndis).
 
 ## In this section
 

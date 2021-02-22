@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_SERVER\_NAME
 description: The WIA\_DIP\_SERVER\_NAME property contains the name of the server that a WIA minidriver is running on.
-ms.assetid: 93fec2b1-dc41-48cf-990b-f6aa99133835
 keywords: ["WIA_DIP_SERVER_NAME Imaging Devices"]
 topic_type:
 - apiref

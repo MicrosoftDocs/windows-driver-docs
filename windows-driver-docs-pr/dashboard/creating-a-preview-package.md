@@ -1,7 +1,6 @@
 ---
 title: Creating a Preview Package
 description: Creating a Preview Package
-ms.assetid: 49880681-480d-4f2d-bf8f-d621ac275244
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -45,8 +44,9 @@ Any preview package submitted by the partner of a company will require the compa
 
 ## Related topics
 
-[Create a Device Metadata Experience](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
 
-[Submit a Device Metadata Package (Dashboard help)](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+[Create a Device Metadata Experience](create-a-device-metadata-experience.md)
 
-[Device Metadata Business Rules](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)
+[Submit a Device Metadata Package (Dashboard help)](submit-a-device-metadata-package--dashboard-help-.md)
+
+[Device Metadata Business Rules](device-metadata-business-rules.md)

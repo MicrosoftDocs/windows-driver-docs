@@ -1,7 +1,6 @@
 ---
 title: Custom Audio Drivers
 description: Custom Audio Drivers
-ms.assetid: d5f19a72-0b43-4fe1-b0e1-0198344b4d19
 keywords:
 - WDM audio drivers WDK , custom
 - audio drivers WDK , custom
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # Custom Audio Drivers
 
 
-Audio devices that are not UAA-compatible require vendor-supplied custom drivers. In addition, a UAA-compatible audio adapter can incorporate proprietary features that are not supported by the UAA class drivers; these features are accessible to applications only if the vendor provides a custom audio driver. Only the standard UAA features are accessible through the system-supplied UAA drivers. For information about UAA-supported features, see the [Universal Audio Architecture](https://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/UAA_Guidelines.doc) white paper.
+Audio devices that are not UAA-compatible require vendor-supplied custom drivers. In addition, a UAA-compatible audio adapter can incorporate proprietary features that are not supported by the UAA class drivers; these features are accessible to applications only if the vendor provides a custom audio driver. Only the standard UAA features are accessible through the system-supplied UAA drivers. For information about UAA-supported features, see the [Universal Audio Architecture](/previous-versions/windows/hardware/design/dn640534(v=vs.85)) white paper.
 
 Two options are available to hardware vendors for writing custom audio drivers: developing a custom audio-adapter driver for use with the PortCls system driver (Portcls.sys), or developing a custom minidriver for use with the AVStream class system driver (Ks.sys).
 
@@ -27,12 +26,7 @@ For nearly all PCI audio adapters that require vendor-supplied custom drivers, v
 
 The AVStream class system driver (Ks.sys) lacks most of the audio-specific support functions that exist in PortCls.
 
-For more information about PortCls, see [Introduction to Port Class](introduction-to-port-class.md). For more information about AVStream, see [AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview).
+For more information about PortCls, see [Introduction to Port Class](introduction-to-port-class.md). For more information about AVStream, see [AVStream Overview](../stream/avstream-overview.md).
 
  
-
- 
-
-
-
 

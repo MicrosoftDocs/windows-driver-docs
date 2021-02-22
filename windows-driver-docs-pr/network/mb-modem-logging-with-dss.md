@@ -1,7 +1,6 @@
 ---
 title: MB modem logging with DSS
 description: MB modem logging with DSS
-ms.assetid: A40EAF7C-A808-4C2D-848C-EAD2D639EB55
 keywords:
 - MB modem logging with DSS, Mobile Broadband modem logging with DSS
 ms.date: 03/21/2019
@@ -70,7 +69,7 @@ This CID is used to configure the logs that are collected by the modem and how o
 
 ### Parameters
 
-|  | Set | Query | Notification |
+| Operation | Set | Query | Notification |
 | --- | --- | --- | --- |
 | Command | MBIM_MODEM_LOGGING_CONFIG | Not Applicable | Not applicable |
 | Response | MBIM_MODEM_LOGGING_CONFIG | MBIM_MODEM_LOGGING_CONFIG | MBIM_MODEM_LOGGING_CONFIG |

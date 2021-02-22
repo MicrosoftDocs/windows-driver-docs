@@ -1,7 +1,6 @@
 ---
 title: Management filtering layer identifiers
 description: This section describes management filtering layer identifiers.
-ms.assetid: 3287d763-9d73-4bf3-8a32-81acb27f0d36
 keywords:
 - Management filtering layer identifiers network drivers
 ms.date: 11/08/2017

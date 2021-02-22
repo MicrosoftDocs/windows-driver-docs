@@ -1,7 +1,6 @@
 ---
 title: Example 3 Specifying a TMF File
 description: Example 3 Specifying a TMF File
-ms.assetid: 202304f0-7f8e-4ad1-b10c-185c33db1498
 keywords:
 - Tracefmt WDK , TMF files
 - TMF files WDK , examples

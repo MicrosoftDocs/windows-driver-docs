@@ -1,7 +1,6 @@
 ---
 title: WIA\_DIP\_DRIVER\_VERSION
 description: The WIA\_DIP\_DRIVER\_VERSION property contains the current DLL version of a WIA minidriver. The WIA service creates and maintains this property.
-ms.assetid: 708d85b0-0daa-40d9-af38-6bf69834750b
 keywords: ["WIA_DIP_DRIVER_VERSION Imaging Devices"]
 topic_type:
 - apiref

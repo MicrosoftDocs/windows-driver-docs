@@ -1,7 +1,6 @@
 ---
 title: Container IDs Generated from Removable Device Capability Override
 description: Container IDs Generated from a Removable Device Capability Override
-ms.assetid: 8b1bf9d4-1aea-4d82-b783-f6dc62b9f8f3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -55,7 +54,7 @@ The override mechanism is a registry-based lookup table that consists of registr
 <tr class="even">
 <td align="left"><p>3</p></td>
 <td align="left"><p><a href="locationpaths-registry-subkey.md" data-raw-source="[LocationPaths](locationpaths-registry-subkey.md)">LocationPaths</a></p></td>
-<td align="left"><p>Specifies that only the location path of the device's parent device node (<a href="https://docs.microsoft.com/windows-hardware/drivers/#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) will have the removable device capability override applied.</p></td>
+<td align="left"><p>Specifies that only the location path of the device's parent device node (<a href="/windows-hardware/drivers/#wdkgloss-devnode" data-raw-source="&lt;em&gt;devnode&lt;/em&gt;"><em>devnode</em></a>) will have the removable device capability override applied.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>3</p></td>
@@ -145,10 +144,4 @@ The following diagram shows the resulting device topology and associated contain
 ![diagram illustrating removable device capability override that marks a devnode as removable](images/containerid-5.png)
 
  
-
- 
-
-
-
-
 

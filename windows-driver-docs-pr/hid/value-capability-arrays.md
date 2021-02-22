@@ -1,7 +1,6 @@
 ---
 title: Value Capability Arrays
 description: Value Capability Arrays
-ms.assetid: d447dda6-a1e5-4e57-b06f-f79f8662c236
 keywords:
 - value capability arrays WDK HID
 - arrays WDK HID
@@ -17,15 +16,15 @@ ms.localizationpriority: medium
 
 
 
-A *value capability array* contains information about the value usages supported by a [top-level collection](top-level-collections.md) for a specific type of HID report. Information about a collection's value capability arrays is contained in its [**HIDP\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_caps) structure.
+A *value capability array* contains information about the value usages supported by a [top-level collection](top-level-collections.md) for a specific type of HID report. Information about a collection's value capability arrays is contained in its [**HIDP\_CAPS**](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_caps) structure.
 
-A user-mode application or kernel-mode driver uses one of the following [HIDClass support routines](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) to obtain button capability information:
+A user-mode application or kernel-mode driver uses one of the following [HIDClass support routines](/windows-hardware/drivers/ddi/_hid) to obtain button capability information:
 
--   [**HidP\_GetValueCaps**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps) returns a value capability array describing all the values that are contained in a caller-specified report type.
+-   [**HidP\_GetValueCaps**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getvaluecaps) returns a value capability array describing all the values that are contained in a caller-specified report type.
 
--   [**HidP\_GetSpecificValueCaps**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificvaluecaps) filters the value capability information it returns by a caller-specified usage page, usage, link collection, and report type.
+-   [**HidP\_GetSpecificValueCaps**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getspecificvaluecaps) filters the value capability information it returns by a caller-specified usage page, usage, link collection, and report type.
 
-A value capability array contains [**HIDP\_VALUE\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_value_caps) structures, each one of which describes the following information about a [HID usage](hid-usages.md) or [usage range](hid-usages.md#usage-range):
+A value capability array contains [**HIDP\_VALUE\_CAPS**](/windows-hardware/drivers/ddi/hidpi/ns-hidpi-_hidp_value_caps) structures, each one of which describes the following information about a [HID usage](hid-usages.md) or [usage range](hid-usages.md#usage-range):
 
 -   The [usage page](hid-usages.md#usage-page) for a usage or usage range
 
@@ -67,12 +66,7 @@ The following figure shows an example of a usage value array that contains five 
 
 In the previous example, the value capability structure for such a usage value array would have its **IsRange** member set to **FALSE**, its **NotRange.Usage** member set to 17, its **ReportCount** member set to 5, and its **BitSize** member set to 6.
 
-If the report count for a usage is 1, use **HidP\_GetUsageValue** to extract the usage value. If the usage's report count is greater than 1, **HidP\_GetUsageValue** only returns the first data item in a usage value array. To extract all the data items in a usage value array, use [**HidP\_GetUsageValueArray**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray).
+If the report count for a usage is 1, use **HidP\_GetUsageValue** to extract the usage value. If the usage's report count is greater than 1, **HidP\_GetUsageValue** only returns the first data item in a usage value array. To extract all the data items in a usage value array, use [**HidP\_GetUsageValueArray**](/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_getusagevaluearray).
 
  
-
- 
-
-
-
 

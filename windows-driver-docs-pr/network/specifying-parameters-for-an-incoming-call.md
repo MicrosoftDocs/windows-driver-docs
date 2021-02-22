@@ -1,7 +1,6 @@
 ---
 title: Specifying Parameters for an Incoming Call
 description: Specifying Parameters for an Incoming Call
-ms.assetid: f1436c05-f475-454c-b68f-e387821834d4
 keywords:
 - CoNDIS WAN drivers WDK networking , incoming calls
 - telephonic services WDK WAN , incoming calls
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 
 
-When indicating an incoming call with **Ndis(M)CmDispatchIncomingCall**, a call manager or MCM that supports voice streaming must specify the following values in the [**CO\_CALL\_MANAGER\_PARAMETERS**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff545381(v=vs.85)) structure:
+When indicating an incoming call with **Ndis(M)CmDispatchIncomingCall**, a call manager or MCM that supports voice streaming must specify the following values in the [**CO\_CALL\_MANAGER\_PARAMETERS**](/previous-versions/windows/hardware/network/ff545381(v=vs.85)) structure:
 
 -   Maximum transmit SDU size (CallMgrParameters-&gt;Transmit.MaxSduSize)
 
@@ -55,17 +54,11 @@ In addition, a call manager or an MCM must specify the following values in the L
 
 -   **ulCalledIDAddressType**
 
-A call manager or MCM that supports an address family other than CO\_ADDRESS\_FAMILY\_TAPI\_PROXY specifies the preceding LINE\_CALL\_INFO members when responding to an [OID\_CO\_TAPI\_TRANSLATE\_NDIS\_CALLPARAMS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-tapi-translate-ndis-callparams) query.
+A call manager or MCM that supports an address family other than CO\_ADDRESS\_FAMILY\_TAPI\_PROXY specifies the preceding LINE\_CALL\_INFO members when responding to an [OID\_CO\_TAPI\_TRANSLATE\_NDIS\_CALLPARAMS](./oid-co-tapi-translate-ndis-callparams.md) query.
 
 A call manager or an MCM that supports the CO\_ADDRESS\_FAMILY\_TAPI\_PROXY family specifies the above-listed LINE\_CALL\_INFO members in the media-specific portion of the CO\_CALL\_MANAGER\_PARAMETERS structure that it supplies to **Ndis(M)CmDispatchIncomingCall**.
 
 For a description of the members in the LINE\_CALL\_INFO structure, see the LINECALLINFO structure in the Microsoft Windows SDK documentation.
 
  
-
- 
-
-
-
-
 

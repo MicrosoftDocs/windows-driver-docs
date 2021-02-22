@@ -1,8 +1,7 @@
 ---
 title: Bug Check 0xC2 BAD_POOL_CALLER
 description: The BAD_POOL_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
-ms.assetid: 64803335-ab93-4c4d-9b30-2ec15a13303f
-keywords: ["(Developer Content) Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
+keywords: ["Bug Check 0xC2 BAD_POOL_CALLER", "BAD_POOL_CALLER"]
 ms.date: 05/23/2017
 topic_type:
 - apiref
@@ -13,17 +12,14 @@ api_type:
 ms.localizationpriority: medium
 ---
 
-# (Developer Content) Bug Check 0xC2: BAD\_POOL\_CALLER
-
+# Bug Check 0xC2: BAD\_POOL\_CALLER
 
 The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that the current thread is making a bad pool request.
 
 > [!IMPORTANT]
 > This topic is for programmers. If you are a customer who has received a blue screen error code while using your computer, see [Troubleshoot blue screen errors](https://www.windows.com/stopcode).
 
-
 ## BAD\_POOL\_CALLER Parameters
-
 
 **Parameter 1** indicates the type of violation.
 
@@ -220,32 +216,20 @@ The BAD\_POOL\_CALLER bug check has a value of 0x000000C2. This indicates that t
 </tbody>
 </table>
 
- 
-
 The \_POOL\_TYPE codes are enumerated in Ntddk.h. In particular, 0 indicates nonpaged pool and 1 indicates paged pool.
 
-Cause
------
+## Cause
 
 An invalid pool request has been made by the current thread. Typically this is at a bad IRQL level or double freeing the same memory allocation, etc.
 
-Resolution
-----------
+## Resolution
 
 Activate Driver Verifier with memory pool options enabled, to obtain more information about these errors and to locate the faulting driver.
 
 **Driver Verifier**
 
-Driver Verifier is a tool that runs in real time to examine the behavior of drivers. If it see errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifer* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier).
+Driver Verifier is a tool that runs in real time to examine the behavior of drivers. If it see errors in the execution of driver code, it proactively creates an exception to allow that part of the driver code to be further scrutinized. The driver verifier manager is built into Windows and is available on all Windows PCs. To start the driver verifier manager, type *Verifier* at a command prompt. You can configure which drivers you would like to verify. The code that verifies drivers adds overhead as it runs, so try and verify the smallest number of drivers as possible. For more information, see [Driver Verifier](../devtest/driver-verifier.md).
 
 **Windows Memory Diagnostics**
 
-In particular, for situations with memory pool corruption, run the Windows Memory Diagnostics tool, to try and isolate the physical memory as a cause. In the control panel search box, type Memory, and then click **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.
-
- 
-
- 
-
-
-
-
+In particular, for situations with memory pool corruption, run the Windows Memory Diagnostics tool, to try and isolate the physical memory as a cause. In the control panel search box, type Memory, and then select **Diagnose your computer's memory problems**.‌ After the test is run, use Event viewer to view the results under the System log. Look for the *MemoryDiagnostics-Results* entry to view the results.

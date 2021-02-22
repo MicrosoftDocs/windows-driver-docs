@@ -1,7 +1,6 @@
 ---
 title: InfVerif
-description: InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.
-ms.assetid: 6F565E1C-C6FC-4637-B476-FE4E4672CCC3
+description: Learn about the InfVerif (InfVerif.exe) tool. You can use this tool to test a driver INF file or find out if the INF file is universal.
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -57,16 +56,9 @@ The InfVerif tool reports the following types of errors/warnings:
 ## <span id="related_topics"></span>Related topics
 
 
-[Installing a Universal Windows driver](https://docs.microsoft.com/windows-hardware/drivers)
+[Getting Started with Universal Windows drivers](../develop/getting-started-with-windows-drivers.md)
 
-[Using a Universal INF File](https://docs.microsoft.com/windows-hardware/drivers/install/using-a-configurable-inf-file)
-
- 
+[Using a Universal INF File](../install/using-a-universal-inf-file.md)
 
  
-
-
-
-
-
 

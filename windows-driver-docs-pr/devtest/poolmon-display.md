@@ -1,7 +1,6 @@
 ---
 title: PoolMon Display
 description: PoolMon Display
-ms.assetid: 1dee4331-a508-4e7f-b621-4d22f6572aec
 keywords:
 - PoolMon WDK , displays
 - Memory Pool Monitor WDK , displays
@@ -60,4 +59,4 @@ The data that PoolMon displays is collected and calculated by Windows whenever p
 
 ## Interpreting Tag Values
 
-All pool memory allocations have tags, but they do not all have characteristic tag values. Pool memory allocations have characteristic tag values when the driver that allocates the memory sets the tag value by using [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) or [**ExAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag). If the driver does not assign a tag value ([**ExAllocatePool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool), [**ExAllocatePoolWithQuota**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)), Windows still creates a tag, but it assigns the default tag value None. As a result, you cannot distinguish the statistics for that driver's allocations from that of other pool allocations.
+All pool memory allocations have tags, but they do not all have characteristic tag values. Pool memory allocations have characteristic tag values when the driver that allocates the memory sets the tag value by using [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag) or [**ExAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag). If the driver does not assign a tag value ([**ExAllocatePool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepool), [**ExAllocatePoolWithQuota**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquota)), Windows still creates a tag, but it assigns the default tag value None. As a result, you cannot distinguish the statistics for that driver's allocations from that of other pool allocations.

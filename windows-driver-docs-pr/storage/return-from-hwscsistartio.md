@@ -1,7 +1,6 @@
 ---
 title: Return from HwScsiStartIo
 description: Return from HwScsiStartIo
-ms.assetid: e3d5e21a-4dc2-41bf-97a2-9ac2aa5a1af2
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -17,13 +16,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_return_from_hwscsistartio_kg"></span><span id="DDK_RETURN_FROM_HWSCSISTARTIO_KG"></span>
 
 
-Every [**HwScsiStartIo**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine must return **TRUE**, indicating that the input request was processed.
+Every [**HwScsiStartIo**](/previous-versions/windows/hardware/drivers/ff557323(v=vs.85)) routine must return **TRUE**, indicating that the input request was processed.
 
 If the *HwScsiStartIo* routine cannot carry out a requested operation when it is called, *HwScsiStartIo* should do the following:
 
 1.  Set the input SRB's **SrbStatus** to SRB\_STATUS\_BUSY.
 
-2.  Call [**ScsiPortNotification**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestComplete** and with the input SRB.
+2.  Call [**ScsiPortNotification**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportnotification) with the *NotificationType***RequestComplete** and with the input SRB.
 
 3.  Call **ScsiPortNotification** with the *NotificationType***NextRequest** if the driver can accept a request to a different target logical unit than the one in the just completed SRB.
 
@@ -36,9 +35,4 @@ Eventually, every miniport driver must call **ScsiPortNotification** twice for e
 The *HwScsiStartIo* routine of a miniport driver that manages its HBA exclusively by polling calls **ScsiPortNotification** with the *NotificationType***RequestTimerCall** and a pointer to its *HwScsiTimer* routine. For more information about the *HwScsiTimer* routine, see [SCSI Miniport Driver's HwScsiTimer Routine](scsi-miniport-driver-s-hwscsitimer-routine.md).
 
  
-
- 
-
-
-
 

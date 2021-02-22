@@ -1,7 +1,6 @@
 ---
 title: Customizing HD Audio Driver Volume Settings
 description: The ability to customize the in box HD audio default audio volume and microphone boost levels to suit a specific PC, provides OEMs with some flexibility in their audio adapter installation parameters.
-ms.assetid: 0C86C869-447E-4A77-A723-5D9A17D95C7C
 keywords:
 - audio volume settings
 - audio adapters WDK , volume settings
@@ -64,9 +63,9 @@ The KS DB stepping values are defined as follows:
 
 +2147483647 is +32767.99998474 decibels (gain)
 
-For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-volumelevel).
+For more information on the unit of measurement that is used (1/65536 dB), see [**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md).
 
-To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](https://go.microsoft.com/fwlink/p/?LinkId=618052).
+To override the wdmudio.inf file, use the Include and Needs directives as shown in this code segment from the *Microsoft Virtual Audio Device Driver Sample* available as part of the [Windows Driver Kit (WDK) 8.1 Samples](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Driver%20Kit%20Sample/Windows%20Driver%20Kit%20(WDK)%208.1%20Samples).
 
 ```inf
 ;Copyright (c) Microsoft Corporation. All rights reserved.
@@ -78,7 +77,7 @@ Needs=KS.Registration, WDMAUDIO.Registration
 ...
 ```
 
-For more information about the Include and Needs directives, see [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) and [Source Media for INF Files](https://docs.microsoft.com/windows-hardware/drivers/install/source-media-for-inf-files).
+For more information about the Include and Needs directives, see [**INF DDInstall Section**](../install/inf-ddinstall-section.md) and [Source Media for INF Files](../install/source-media-for-inf-files.md).
 
 The following is a sample INF wrapper that wraps the INF file for the Audio Class driver.
 
@@ -149,7 +148,7 @@ HKR,DefaultVolumeLevels\18,Boost,1,00,00,0A,00 ; Set to 0x000A0000 to set to 10d
 HdAudModel_DefaultVolume_DeviceDesc = "High Definition Audio Device"
 ```
 
-Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive). The following two registry paths are examples, your registry path will likely be different.
+Because an HKR relative path is specified, the exact driver registry path will be determined based on the specific INF file section that is used. For more information about HKR relative paths, see [**INF AddReg Directive (Windows Drivers)**](../install/inf-addreg-directive.md). The following two registry paths are examples, your registry path will likely be different.
 
 HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96c-e325-11ce-bfc1-08002be10318}\\0002
 
@@ -159,7 +158,4 @@ HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4d36e96c-e325-
 
 ## <span id="related_topics"></span>Related topics
 [Default Audio Volume Settings](default-audio-volume-settings.md)  
-[**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-volumelevel)  
-
-
-
+[**KSPROPERTY\_AUDIO\_VOLUMELEVEL**](./ksproperty-audio-volumelevel.md)

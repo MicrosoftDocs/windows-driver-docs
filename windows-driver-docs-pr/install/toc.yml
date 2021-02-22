@@ -36,8 +36,8 @@
       items: 
       - name: "Overview of the Driver Selection Process"
         href: overview-of-the-driver-selection-process.md
-      - name: "Where Windows Searches for Drivers"
-        href: where-setup-searches-for-drivers.md
+      - name: "How Windows selects a driver for a device"
+        href: how-windows-selects-a-driver-for-a-device.md
     - name: "How Windows Ranks Drivers"
       items: 
         - name: "How Windows Ranks Drivers"
@@ -58,8 +58,8 @@
           href: driver-rank-example--windows-vista-and-later-.md
         - name: "Driver Rank Information in the SetupAPI Log"
           href: driver-rank-information-in-the-setupapi-log.md
-        - name: "AllSignersEqual Group Policy"
-          href: allsignersequal-group-policy--windows-vista-and-later-.md
+        - name: "AllSigningEqual Group Policy"
+          href: allsigningequal-group-policy.md
 - name: "Concepts"
   items: 
   - name: "Driver Packages"
@@ -82,6 +82,8 @@
       href: using-a-universal-inf-file.md
     - name: "Using an Extension INF File"
       href: using-an-extension-inf-file.md
+    - name: "Using an Extension INF File Template"
+      href: using-an-extension-inf-file-template.md
     - name: "Updating Device Firmware using Windows Update"
       href: updating-device-firmware-using-windows-update.md
     - name: "Summary of INF Sections"
@@ -130,7 +132,7 @@
       href: opening-and-closing-an-inf-file.md
     - name: "Retrieving Information from an INF File"
       href: retrieving-information-from-an-inf-file.md
-    - name: "Providing Vendor Icons for the Shell and AutoPlay"
+    - name: "Providing Icons for a Device"
       href: providing-vendor-icons-for-the-shell-and-autoplay.md
   - name: "Driver Signing"
     items: 
@@ -176,8 +178,12 @@
       href: introduction-to-test-signing.md
     - name: "How to Test-Sign a Driver Package"
       href: how-to-test-sign-a-driver-package.md
+    - name: "How to Install a Test-signed Driver Required for Windows Setup and Boot"
+      href: how-to-install-test-signed-driver-for-setup-and-boot.md
     - name: "Creating Test Certificates"
       href: creating-test-certificates.md
+    - name: "Installing Test Certificates"
+      href: installing-test-certificates.md
     - name: "Viewing Test Certificates"
       href: viewing-test-certificates.md
     - name: "Creating a Catalog File for Test-Signing a Driver Package"
@@ -196,8 +202,6 @@
       href: the-testsigning-boot-configuration-option.md
     - name: "Enabling Code Integrity Event Logging and System Auditing"
       href: enabling-code-integrity-event-logging-and-system-auditing.md
-    - name: "Installing Test Certificates"
-      href: installing-test-certificates.md
     - name: "Verifying the Test Signature"
       href: verifying-the-test-signature.md
     - name: "Installing a Test-Signed Driver Package on the Test Computer"
@@ -412,8 +416,8 @@
       href: using-device-installation-functions.md
     - name: "Basic Installation Operations"
       href: basic-installation-operations.md
-    - name: "SetupAPI Functions that Simplify Driver Installation"
-      href: setupapi-functions-that-simplify-driver-installation.md
+    - name: "Functions that Simplify Driver Installation"
+      href: functions-that-simplify-driver-installation.md
     - name: "Using SetupAPI To Verify Driver Authenticode Signatures"
       href: using-setupapi-to-verify-driver-authenticode-signatures.md
     - name: "Determining the Parent of a Device"
@@ -952,6 +956,8 @@
     href: configuring-windows-to-rank-driver-signatures-equally.md
   - name: "Installing the Updated Version of the Driver Package"
     href: installing-the-updated-version-of-the-driver-package.md
+  - name: "Writing Win32 Services to Interact with Devices"
+    href: best-practices-win32services-interacting-with-devices.md
 - name: "Troubleshooting"
   items: 
   - name: "Troubleshooting Device and Driver Installations"
@@ -960,82 +966,88 @@
     href: using-device-manager.md
   - name: "Device Manager Error Messages"
     href: device-manager-error-messages.md
-  - name: "CM_PROB_NOT_CONFIGURED"
+  - name: "Code 1 - CM_PROB_NOT_CONFIGURED"
     href: cm-prob-not-configured.md
-  - name: "CM_PROB_OUT_OF_MEMORY"
+  - name: "Code 3 - CM_PROB_OUT_OF_MEMORY"
     href: cm-prob-out-of-memory.md
-  - name: "CM_PROB_INVALID_DATA"
+  - name: "Code 9 - CM_PROB_INVALID_DATA"
     href: cm-prob-invalid-data.md
-  - name: "CM_PROB_FAILED_START"
+  - name: "Code 10 - CM_PROB_FAILED_START"
     href: cm-prob-failed-start.md
-  - name: "CM_PROB_NORMAL_CONFLICT"
+  - name: "Code 12 - CM_PROB_NORMAL_CONFLICT"
     href: cm-prob-normal-conflict.md
-  - name: "CM_PROB_NEED_RESTART"
+  - name: "Code 14 - CM_PROB_NEED_RESTART"
     href: cm-prob-need-restart.md
-  - name: "CM_PROB_PARTIAL_LOG_CONF"
+  - name: "Code 16 - CM_PROB_PARTIAL_LOG_CONF"
     href: cm-prob-partial-log-conf.md
-  - name: "CM_PROB_REINSTALL"
+  - name: "Code 18 - CM_PROB_REINSTALL"
     href: cm-prob-reinstall.md
-  - name: "CM_PROB_REGISTRY"
+  - name: "Code 19 - CM_PROB_REGISTRY"
     href: cm-prob-registry.md
-  - name: "CM_PROB_WILL_BE_REMOVED"
+  - name: "Code 21 - CM_PROB_WILL_BE_REMOVED"
     href: cm-prob-will-be-removed.md
-  - name: "CM_PROB_DISABLED"
+  - name: "Code 22 - CM_PROB_DISABLED"
     href: cm-prob-disabled.md
-  - name: "CM_PROB_DEVICE_NOT_THERE"
+  - name: "Code 24 - CM_PROB_DEVICE_NOT_THERE"
     href: cm-prob-device-not-there.md
-  - name: "CM_PROB_FAILED_INSTALL"
+  - name: "Code 28 - CM_PROB_FAILED_INSTALL"
     href: cm-prob-failed-install.md
-  - name: "CM_PROB_HARDWARE_DISABLED"
+  - name: "Code 29 - CM_PROB_HARDWARE_DISABLED"
     href: cm-prob-hardware-disabled.md
-  - name: "CM_PROB_FAILED_ADD"
+  - name: "Code 31 - CM_PROB_FAILED_ADD"
     href: cm-prob-failed-add.md
-  - name: "CM_PROB_DISABLED_SERVICE"
+  - name: "Code 32 - CM_PROB_DISABLED_SERVICE"
     href: cm-prob-disabled-service.md
-  - name: "CM_PROB_TRANSLATION_FAILED"
+  - name: "Code 33 - CM_PROB_TRANSLATION_FAILED"
     href: cm-prob-translation-failed.md
-  - name: "CM_PROB_NO_SOFTCONFIG"
+  - name: "Code 34 - CM_PROB_NO_SOFTCONFIG"
     href: cm-prob-no-softconfig.md
-  - name: "CM_PROB_BIOS_TABLE"
+  - name: "Code 35 - CM_PROB_BIOS_TABLE"
     href: cm-prob-bios-table.md
-  - name: "CM_PROB_IRQ_TRANSLATION_FAILED"
+  - name: "Code 36 - CM_PROB_IRQ_TRANSLATION_FAILED"
     href: cm-prob-irq-translation-failed.md
-  - name: "CM_PROB_FAILED_DRIVER_ENTRY"
+  - name: "Code 37 - CM_PROB_FAILED_DRIVER_ENTRY"
     href: cm-prob-failed-driver-entry.md
-  - name: "CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD"
+  - name: "Code 38 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD"
     href: cm-prob-driver-failed-prior-unload.md
-  - name: "CM_PROB_DRIVER_FAILED_LOAD"
+  - name: "Code 39 - CM_PROB_DRIVER_FAILED_LOAD"
     href: cm-prob-driver-failed-load.md
-  - name: "CM_PROB_DRIVER_SERVICE_KEY_INVALID"
+  - name: "Code 40 - CM_PROB_DRIVER_SERVICE_KEY_INVALID"
     href: cm-prob-driver-service-key-invalid.md
-  - name: "CM_PROB_LEGACY_SERVICE_NO_DEVICES"
+  - name: "Code 41 - CM_PROB_LEGACY_SERVICE_NO_DEVICES"
     href: cm-prob-legacy-service-no-devices.md
-  - name: "CM_PROB_DUPLICATE_DEVICE"
+  - name: "Code 42 - CM_PROB_DUPLICATE_DEVICE"
     href: cm-prob-duplicate-device.md
-  - name: "CM_PROB_FAILED_POST_START"
+  - name: "Code 43 - CM_PROB_FAILED_POST_START"
     href: cm-prob-failed-post-start.md
-  - name: "CM_PROB_HALTED"
+  - name: "Code 44 - CM_PROB_HALTED"
     href: cm-prob-halted.md
-  - name: "CM_PROB_PHANTOM"
+  - name: "Code 45 - CM_PROB_PHANTOM"
     href: cm-prob-phantom.md
-  - name: "CM_PROB_SYSTEM_SHUTDOWN"
+  - name: "Code 46 - CM_PROB_SYSTEM_SHUTDOWN"
     href: cm-prob-system-shutdown.md
-  - name: "CM_PROB_HELD_FOR_EJECT"
+  - name: "Code 47 - CM_PROB_HELD_FOR_EJECT"
     href: cm-prob-held-for-eject.md
-  - name: "CM_PROB_DRIVER_BLOCKED"
+  - name: "Code 48 - CM_PROB_DRIVER_BLOCKED"
     href: cm-prob-driver-blocked.md
-  - name: "CM_PROB_REGISTRY_TOO_LARGE"
+  - name: "Code 49 - CM_PROB_REGISTRY_TOO_LARGE"
     href: cm-prob-registry-too-large.md
-  - name: "CM_PROB_SETPROPERTIES_FAILED"
+  - name: "Code 50 - CM_PROB_SETPROPERTIES_FAILED"
     href: cm-prob-setproperties-failed.md
-  - name: "CM_PROB_WAITING_ON_DEPENDENCY"
+  - name: "Code 51 - CM_PROB_WAITING_ON_DEPENDENCY"
     href: cm-prob-waiting-on-dependency.md
-  - name: "CM_PROB_UNSIGNED_DRIVER"
+  - name: "Code 52 - CM_PROB_UNSIGNED_DRIVER"
     href: cm-prob-unsigned-driver.md
-  - name: "CM_PROB_USED_BY_DEBUGGER"
+  - name: "Code 53 - CM_PROB_USED_BY_DEBUGGER"
     href: cm-prob-used-by-debugger.md
-  - name: "CM_PROB_DEVICE_RESET"
+  - name: "Code 54 - CM_PROB_DEVICE_RESET"
     href: cm-prob-device-reset.md
+  - name: "Code 55 - CM_PROB_CONSOLE_LOCKED"
+    href: cm-prob-console-locked.md
+  - name: "Code 56 - CM_PROB_NEED_CLASS_CONFIG"
+    href: cm-prob-need-class-config.md
+  - name: "Code 57 - CM_PROB_GUEST_ASSIGNMENT_FAILED"
+    href: cm-prob-guest-assignment-failed.md
   - name: "Device Manager Details Tab"
     href: device-manager-details-tab.md
   - name: "Viewing Hidden Devices"
@@ -1288,6 +1300,8 @@
     href: devpkey-device-devtype.md
   - name: "DEVPKEY_Device_DHP_Rebalance_Policy"
     href: devpkey-device-dhp-rebalance-policy.md
+  - name: "DEVPKEY_Device_DmaRemappingPolicy"
+    href: devpkey-device-dmaremappingpolicy.md
   - name: "DEVPKEY_Device_Driver"
     href: devpkey-device-driver.md
   - name: "DEVPKEY_Device_DriverCoInstallers"
@@ -1362,6 +1376,8 @@
     href: devpkey-device-powerrelations.md
   - name: "DEVPKEY_Device_ProblemCode"
     href: devpkey-device-problemcode.md
+  - name: "DEVPKEY_Device_ProblemStatus"
+    href: devpkey-device-problemstatus.md
   - name: "DEVPKEY_Device_RemovalPolicy"
     href: devpkey-device-removalpolicy.md
   - name: "DEVPKEY_Device_RemovalPolicyDefault"
@@ -1938,7 +1954,7 @@
     href: suppressaddremoveprograms-xml-element.md
   - name: "suppressWizard XML Element"
     href: suppresswizard-xml-element.md
-  - name: "System-Defined Device Setup Classes Available to Vendors"
+  - name: "Class and ClassGuid entries for INF Version Section"
     href: system-defined-device-setup-classes-available-to-vendors.md
   - name: "System-Defined Device Setup Classes Reserved for System Use"
     href: system-defined-device-setup-classes-reserved-for-system-use.md

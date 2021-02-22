@@ -1,15 +1,15 @@
 ---
 title: TTD Collection Objects
-description: This section describes the range model objects associated with time travel debugging.
+description: Learn about the range model objects associated with time travel debugging. See example usage and view additional available resources.
 ms.date: 09/25/2017
 ms.localizationpriority: medium
 ---
 
-> [!NOTE]
-> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation. 
->
-
 # TTD Collection Objects
+
+> [!NOTE]
+> The information in this topic is preliminary. Updated information will be provided in a later release of the documentation.
+>
 
 ## Description
 
@@ -20,11 +20,7 @@ ms.localizationpriority: medium
 | --- | --- |
 | MinPosition | A [position object](time-travel-debugging-position-objects.md) that describes the earliest position relevant to the range. |
 
-
-
-
 ### TTD Collection Object Methods
-
 
 **Contains(OtherString)** -Method which returns whether the string contains a given sub string.
 
@@ -63,7 +59,3 @@ ms.localizationpriority: medium
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-

@@ -1,7 +1,6 @@
 ---
 title: \_DXGKARG\_UPDATEPAGETABLE structure
 description: The DXGKARG\_UPDATEPAGETABLE structure is reserved for system use. Do not use it in your driver.
-ms.assetid: abd5a200-5f10-4b5d-98e5-f75bc045aff8
 keywords: ["_DXGKARG_UPDATEPAGETABLE structure Display Devices", "DXGKARG_UPDATEPAGETABLE structure Display Devices"]
 topic_type:
 - apiref

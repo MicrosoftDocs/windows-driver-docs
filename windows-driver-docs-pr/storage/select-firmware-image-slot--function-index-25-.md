@@ -1,7 +1,6 @@
 ---
 title: Select Firmware Image Slot (Function Index 25)
 description: This function selects which firmware image is active.
-ms.assetid: 65B8BF11-4377-455A-9A08-0C15FADC0BBC
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function selects which firmware image is active. The selected image shall be loaded when the device resets.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 
@@ -48,8 +47,8 @@ This function selects which firmware image is active. The selected image shall b
 
  
 
-&gt; \[!Note\]   
-&gt;The firmware shall write the **Firmware Slot** value to the lower 4 bits of the \**FW\_SLOT\_INFO* (3, 0x42) register.
+> [!NOTE]
+> The firmware shall write the **Firmware Slot** value to the lower 4 bits of the \**FW\_SLOT\_INFO* (3, 0x42) register.
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: iSCSI WMI Classes That Report Performance Statistics
 description: iSCSI WMI Classes That Report Performance Statistics
-ms.assetid: c4d52902-9165-4351-96d6-77dc17bdb64f
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

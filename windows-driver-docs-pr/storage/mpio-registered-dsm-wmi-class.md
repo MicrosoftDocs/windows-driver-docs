@@ -1,7 +1,6 @@
 ---
 title: MPIO\_REGISTERED\_DSM WMI Class
 description: MPIO\_REGISTERED\_DSM WMI Class
-ms.assetid: 3be335bd-e5d8-4611-9ccf-bd7fb0457b61
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -39,13 +38,7 @@ class MPIO_REGISTERED_DSM
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_REGISTERED\_DSM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_registered_dsm) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**MPIO\_REGISTERED\_DSM**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_registered_dsm) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

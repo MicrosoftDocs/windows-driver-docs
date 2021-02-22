@@ -1,7 +1,6 @@
 ---
 title: MRxQueryVolumeInfo routine
 description: The MRxQueryVolumeInfo routine is called by RDBSS to request that a network mini-redirector query volume information.
-ms.assetid: 28e36992-2b6b-4484-9e7e-2cea7a2953e9
 keywords: ["MRxQueryVolumeInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxQueryVolumeInfo routine
 
 
-The *MRxQueryVolumeInfo* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector query volume information.
+The *MRxQueryVolumeInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector query volume information.
 
 Syntax
 ------
@@ -111,7 +110,7 @@ The **Info.Buffer** member is set to **Irp-&gt;AssociatedIrp.SystemBuffer**.
 
 The **Info.LengthRemaining** member is set to **IrpSp-&gt;Parameters.QueryVolume.Length**.
 
-For an IRP\_MJ\_QUERY\_VOLUME\_INFORMATION request, if the **PostRequest** member of the RX\_CONTEXT structure is **TRUE** on return from *MRxQueryVolumeInfo*, RDBSS will call [**RxFsdPostRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest) to post the request. For this case, the IRP\_MJ\_QUERY\_VOLUME\_INFORMATION request will pass the RX\_CONTEXT structure to queue RX\_CONTEXT to a worker queue for processing by the file system process (FSP).
+For an IRP\_MJ\_QUERY\_VOLUME\_INFORMATION request, if the **PostRequest** member of the RX\_CONTEXT structure is **TRUE** on return from *MRxQueryVolumeInfo*, RDBSS will call [**RxFsdPostRequest**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest) to post the request. For this case, the IRP\_MJ\_QUERY\_VOLUME\_INFORMATION request will pass the RX\_CONTEXT structure to queue RX\_CONTEXT to a worker queue for processing by the file system process (FSP).
 
 If the **PostRequest** member of the RX\_CONTEXT structure is **FALSE** on return from *MRxQueryVolumeInfo*, the network mini-redirector must set the **Info.LengthRemaining** member of the RX\_CONTEXT structure to the length of the volume information returned. RDBSS sets the **IoStatus.Information** member of the IRP to **IrpSp-&gt;Parameters.QueryVolume.Length** minus the **Info.LengthRemaining** member of the RX\_CONTEXT structure.
 
@@ -168,7 +167,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -192,14 +191,7 @@ Requirements
 
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
-[**RxFsdPostRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest)
+[**RxFsdPostRequest**](/windows-hardware/drivers/ddi/rxprocs/nf-rxprocs-rxfsdpostrequest)
 
  
-
- 
-
-
-
-
-
 

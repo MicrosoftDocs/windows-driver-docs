@@ -1,16 +1,9 @@
 - name: "Audio Drivers Design Guide"
-# Auto-expanded node
-  items: 
-  - name: "Audio Drivers Design Guide"
-    href: index.md
-  - name: "Windows 10: What's New for Audio"
-    href: windows-threshold--what-s-new-for-audio.md
-  - name: "Windows Audio Architecture"
-    href: windows-audio-architecture.md
-  - name: "Roadmap for Developing WDM Audio Drivers"
-    href: roadmap-for-developing-wdm-audio-drivers.md
-  - name: "Custom Audio Driver Type Decision Tree"
-    href: custom-audio-driver-type-decision-tree.md
+  href: index.md
+- name: "Windows 10: What's New for Audio"
+  href: windows-threshold--what-s-new-for-audio.md
+- name: "Windows Audio Architecture"
+  href: windows-audio-architecture.md
 - name: "WDM Audio Drivers Overview"
 # Auto-expanded node
   items: 
@@ -20,6 +13,10 @@
     href: audio-universal-drivers.md
   - name: "Universal Audio Architecture"
     href: universal-audio-architecture.md
+  - name: "Roadmap for Developing WDM Audio Drivers"
+    href: roadmap-for-developing-wdm-audio-drivers.md
+  - name: "Custom Audio Driver Type Decision Tree"
+    href: custom-audio-driver-type-decision-tree.md
   - name: "Audio Signal Processing Modes"
     href: audio-signal-processing-modes.md
   - name: "Custom Audio Drivers"
@@ -870,6 +867,13 @@
         href: obtaining-a-device-interface-name.md
       - name: "Music Technology GUIDs"
         href: music-technology-guids.md
+- name: "Audio Devices Troubleshooting"
+# Auto-expanded node
+  items: 
+  - name: "Audio Devices Troubleshooting Overview"
+    href: audio-devices-troubleshooting.md
+  - name: "USB Audio Device Not Playing"
+    href: usb-audio-not-playing.md
 - name: "Audio Devices DDI Reference Overview"
 # Auto-expanded node
   items: 
@@ -1345,6 +1349,8 @@
       href: ksproperty-audio-wide-mode.md
     - name: "KSPROPERTY_AUDIO_WIDENESS"
       href: ksproperty-audio-wideness.md
+    - name: "KSPROPERTY_AUDIOEFFECTSDISCOVERY_EFFECTSLIST"
+      href: ksproperty-audioeffectsdiscovery-effectslist.md
     - name: "KSPROPERTY_AUDIOENGINE"
       href: ksproperty-audioengine.md
     - name: "KSPROPERTY_AUDIOENGINE_BUFFER_SIZE_RANGE"

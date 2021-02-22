@@ -1,7 +1,6 @@
 ---
 title: Testing BDA Drivers Using BDA Filters
 description: Testing BDA Drivers Using BDA Filters
-ms.assetid: 136810b7-9378-482b-8e21-a7eae0142909
 keywords:
 - Broadcast Driver Architecture WDK AVStream , testing drivers
 - BDA WDK AVStream , testing drivers

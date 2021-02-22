@@ -2,7 +2,7 @@
 title: .scriptdebug (Debug JavaScript)
 description: Use the .scriptdebug command to debug JavaScript scripts.
 keywords: [".scriptdebug Debug JavaScript Windows Debugging"]
-ms.date: 12/28/2017
+ms.date: 02/02/2021
 ms.topic: article
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,13 +67,7 @@ Remarks
 
 Before you debug a JavaScript completed the following steps.
 
-1. Load the JavaScript scripting provider using the [**.load (Load Extension DLL)**](-load---loadby--load-extension-dll-.md) command. 
-
-    ```dbgcmd
-    0:000> .load jsprovider.dll
-    ```
-
-2. Load the sample script.
+1. Load the sample script.
 
     ```dbgcmd
     0:000> .scriptload C:\MyScripts\DebuggableSample.js
@@ -189,25 +183,31 @@ someObj          : {...}
 Use the following breakpoint commands to work with additional breakpoints.
 
 
-|           |                                |
-|-----------|--------------------------------|
-| bp <bpid> |        Set a breakpoint        |
-| bd <bpid> |     Disable the breakpoint     |
-| be <bpid> |     Enable the breakpoint      |
-| bc <bpid> |      Clear the breakpoint      |
-|    bpc    | Set breakpoint on current line |
-|    bl     |     List the breakpoint(s)     |
+**bp <bpid>**: Set a breakpoint
+
+**bd <bpid>**: Disable the breakpoint
+
+**be <bpid>**: Enable the breakpoint
+
+**bc <bpid>**: Clear the breakpoint
+
+**bpc**: Set breakpoint on current line
+
+**bl**: List the breakpoint(s)
+
 
 ### Flow control - navigation
 
 Use the following commands to move forward in the script.
 
-|   |                           |
-|---|---------------------------|
-|p  | Step over                 |
-|t  | Step in                   |
-|g  | Continue script           |
-|gu | Step out                  |
+**p**: Step over
+
+**t**: Step in
+
+**g**: Continue script
+
+**gu**: Step out
+
 
 
 
@@ -216,11 +216,12 @@ Use the following commands to move forward in the script.
 Use the following commands to work with frames.
 
 
-|                |                                |
-|----------------|--------------------------------|
-| .frame <index> | Switch to frame number <index> |
-|      .f+       |   Switch to next stack frame   |
-|      .f+       | Switch to previous stack frame |
+**.frame <index>**: Switch to frame number <index>
+
+**.f+**: Switch to next stack frame
+
+**.f+**: Switch to previous stack frame
+
 
 ### Quiting
 

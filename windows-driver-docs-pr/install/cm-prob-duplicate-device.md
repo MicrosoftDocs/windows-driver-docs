@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_DUPLICATE_DEVICE
 description: CM_PROB_DUPLICATE_DEVICE
-ms.assetid: db0f6c98-d314-4882-ac8e-c73254f41c98
 keywords:
 - CM_PROB_DUPLICATE_DEVICE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DUPLICATE_DEVICE
+# Code 42 - CM_PROB_DUPLICATE_DEVICE
 
-This function is reserved for system use.
-
-A duplicate device was detected.
+This Device Manager error message indicates that a duplicate device was detected.
 
 ## Error Code
 

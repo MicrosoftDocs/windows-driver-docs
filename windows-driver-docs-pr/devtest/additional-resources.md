@@ -1,7 +1,6 @@
 ---
 title: Additional resources
 description: Additional resources
-ms.assetid: 3C4D4D58-7B81-4791-A040-903BED94B46E
 keywords:
 - device metadata resources
 - device experience resources
@@ -12,24 +11,12 @@ ms.localizationpriority: medium
 
 # Additional resources
 
-
-\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](https://go.microsoft.com/fwlink/p/?LinkId=226411). For more information, see [Windows 8.1 device experience](https://go.microsoft.com/fwlink/p/?linkid=325561). \]
-
-For more information about the device experience in Windows 8, see [Windows 8 Device Experience](https://go.microsoft.com/fwlink/p/?LinkId=227312) and [Device Metadata Package Pipeline white paper](https://go.microsoft.com/fwlink/p/?LinkId=242246).
+\[This topic describes the Device Metadata Authoring tool provided in the Windows Driver Kit (WDK) 8. If you’re developing device experiences for Windows 8.1, use the Device Metadata Authoring Wizard available with [Microsoft Visual Studio 2013 and Windows Driver Kit (WDK) 8.1](../other-wdk-downloads.md).\]
 
 For more information about UWP device apps, see:
 
--   [UWP device app Lifecycle](https://go.microsoft.com/fwlink/p/?LinkId=226757)
--   [UWP device apps for Cameras](https://go.microsoft.com/fwlink/p/?LinkId=241445)
--   [Mobile Broadband: UWP device apps](https://go.microsoft.com/fwlink/p/?LinkId=241446)
--   [Printers: UWP device apps](https://go.microsoft.com/fwlink/p/?LinkId=241444)
--   [Specialized devices: UWP device apps](https://go.microsoft.com/fwlink/p/?LinkId=241447)
-
- 
-
- 
-
-
-
-
-
+- [UWP device app Lifecycle](../devapps/the-workflow.md)
+- [UWP device apps for Cameras](../devapps/uwp-device-apps-for-webcams.md)
+- [Mobile Broadband: UWP device apps](../mobilebroadband/uwp-mobile-broadband-apps.md)
+- [Printers: UWP device apps](../devapps/uwp-device-apps-for-printers.md)
+- [Specialized devices: UWP device apps](../devapps/uwp-device-apps-for-specialized-devices.md)

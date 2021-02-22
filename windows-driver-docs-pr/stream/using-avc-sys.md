@@ -1,7 +1,6 @@
 ---
 title: Using Avc.sys
 description: Using Avc.sys
-ms.assetid: 3b4ec139-ff01-40bd-8e29-92f554180585
 keywords:
 - Avc.sys function driver WDK , about Avc.sys function driver
 - AV/C WDK , Avc.sys usage
@@ -22,11 +21,11 @@ Subunit drivers communicate with *Avc.sys* through the standard IRP-based mechan
 
 A subunit driver allocates and initializes IRPs to be processed by *Avc.sys*. A subunit driver sets the IRP's **Parameters.DeviceIoControl.IoControlCode** member to the IOCTL that corresponds to the desired AV/C operation.
 
-*Avc.sys* registers one of two [device interfaces](https://docs.microsoft.com/windows-hardware/drivers/ddi/index), depending upon which subunit driver stack that it was loaded to support (peer or virtual). These interfaces define the functionality that *Avc.sys* exports for subunit drivers, other drivers, and applications to use. *Avc.sys* then changes the interface's state to enabled or disabled according to the driver's PnP state.
+*Avc.sys* registers one of two [device interfaces](/windows-hardware/drivers/ddi/index), depending upon which subunit driver stack that it was loaded to support (peer or virtual). These interfaces define the functionality that *Avc.sys* exports for subunit drivers, other drivers, and applications to use. *Avc.sys* then changes the interface's state to enabled or disabled according to the driver's PnP state.
 
 *Avc.sys* registers a new instance of GUID\_AVC\_CLASS if it was loaded to provide support for external AV/C subunits (the peer stack). This interface supports only the following I/O control (IOCTL) code:
 
--   [**IOCTL\_AVC\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_class)
+-   [**IOCTL\_AVC\_CLASS**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_class)
 
 IOCTL\_AVC\_CLASS in turn supports multiple function codes. Child drivers of instances of *Avc.sys* to support peer subunits are guaranteed to have access to this interface through their parent device object.
 
@@ -34,34 +33,29 @@ The GUID\_AVC\_CLASS interface supports all IOCTL\_AVC\_CLASS function codes, al
 
 *Avc.sys* registers a new instance of GUID\_VIRTUAL\_AVC\_CLASS, if it was loaded, to provide support for virtual AV/C subunits (the virtual stack). This interface supports four I/O control (IOCTL) codes:
 
--   [**IOCTL\_AVC\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_class)
+-   [**IOCTL\_AVC\_CLASS**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_class)
 
--   [**IOCTL\_AVC\_UPDATE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_update_virtual_subunit_info)
+-   [**IOCTL\_AVC\_UPDATE\_VIRTUAL\_SUBUNIT\_INFO**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_update_virtual_subunit_info)
 
--   [**IOCTL\_AVC\_REMOVE\_VIRTUAL\_SUBUNIT\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_remove_virtual_subunit_info)
+-   [**IOCTL\_AVC\_REMOVE\_VIRTUAL\_SUBUNIT\_INFO**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_remove_virtual_subunit_info)
 
--   [**IOCTL\_AVC\_BUS\_RESET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_bus_reset)
+-   [**IOCTL\_AVC\_BUS\_RESET**](/windows-hardware/drivers/ddi/avc/ni-avc-ioctl_avc_bus_reset)
 
 The GUID\_VIRTUAL\_AVC\_CLASS interface does not support every IOCTL\_AVC\_CLASS function code. The reference page for each individual function code specifies whether it is supported for GUID\_VIRTUAL\_AVC\_CLASS instances of *Avc.sys*.
 
-IOCTL\_AVC\_CLASS IRPs are only supported in kernel mode (generally for driver-to-driver communication) through [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-internal-device-control). Therefore, applications cannot directly access the functions provided by the IOCTL\_AVC\_CLASS IOCTL code.
+IOCTL\_AVC\_CLASS IRPs are only supported in kernel mode (generally for driver-to-driver communication) through [**IRP\_MJ\_INTERNAL\_DEVICE\_CONTROL**](../kernel/irp-mj-internal-device-control.md). Therefore, applications cannot directly access the functions provided by the IOCTL\_AVC\_CLASS IOCTL code.
 
-The last three IOCTL codes are supported in both kernel-mode and user-mode through [**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-device-control). This means that applications can send these IOCTLs directly to *Avc.sys*.
+The last three IOCTL codes are supported in both kernel-mode and user-mode through [**IRP\_MJ\_DEVICE\_CONTROL**](../kernel/irp-mj-device-control.md). This means that applications can send these IOCTLs directly to *Avc.sys*.
 
 The IOCTL\_AVC\_CLASS IOCTL code must always be accompanied by an I/O request block (IRB), which further describes the AV/C operation to perform. The IRB header includes a function number, which determines the structure of the rest of the IRB. The IRB structure and size varies according to the function. *Avc.sys* uses two custom IRBs:
 
--   [**AVC\_COMMAND\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb)
+-   [**AVC\_COMMAND\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_command_irb)
 
--   [**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb)
+-   [**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb)
 
-The choice of which IRB a subunit driver must use depends on the desired function. For more information about the IOCTL\_AVC\_CLASS function codes supported by *Avc.sys,* see [AV/C Protocol Driver Function Codes](https://docs.microsoft.com/windows-hardware/drivers/stream/av-c-protocol-driver-function-codes).
+The choice of which IRB a subunit driver must use depends on the desired function. For more information about the IOCTL\_AVC\_CLASS function codes supported by *Avc.sys,* see [AV/C Protocol Driver Function Codes](./av-c-protocol-driver-function-codes.md).
 
-The primary AV/C function used by subunit drivers is [**AVC\_FUNCTION\_COMMAND**](https://docs.microsoft.com/windows-hardware/drivers/stream/avc-function-command), which uses the AVC\_COMMAND\_IRB structure. **AVC\_FUNCTION\_COMMAND** sends AV/C requests and receives the corresponding AV/C responses. Details for building AV/C commands are handled by *Avc.sys*, but the subunit driver must provide the AV/C opcode and operands of each command.
-
- 
+The primary AV/C function used by subunit drivers is [**AVC\_FUNCTION\_COMMAND**](./avc-function-command.md), which uses the AVC\_COMMAND\_IRB structure. **AVC\_FUNCTION\_COMMAND** sends AV/C requests and receives the corresponding AV/C responses. Details for building AV/C commands are handled by *Avc.sys*, but the subunit driver must provide the AV/C opcode and operands of each command.
 
  
-
-
-
 

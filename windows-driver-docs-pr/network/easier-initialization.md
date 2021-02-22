@@ -1,7 +1,6 @@
 ---
 title: Easier Initialization
 description: Easier Initialization
-ms.assetid: 34f939fd-2bcc-482b-b877-42cc57bdf59b
 keywords:
 - NDIS WDK , initializing drivers
 - initializing drivers WDK networking
@@ -33,19 +32,13 @@ NDIS provides a bus-independent function call for reading and writing bus-specif
 
 For more information about driver initialization, see the initialization topics in the following sections:
 
-[Writing NDIS Miniport Drivers](writing-ndis-miniport-drivers.md)
+[Writing NDIS Miniport Drivers](./initializing-a-miniport-driver.md)
 
-[Writing NDIS Protocol Drivers](writing-ndis-protocol-drivers.md)
+[Writing NDIS Protocol Drivers](initializing-a-protocol-driver.md)
 
 [NDIS Filter Drivers](ndis-filter-drivers.md)
 
 [Writing NDIS Intermediate Drivers](writing-ndis-intermediate-drivers.md)
 
  
-
- 
-
-
-
-
 

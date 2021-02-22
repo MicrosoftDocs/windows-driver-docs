@@ -1,7 +1,6 @@
 ---
 title: Distinguishing Fast Startup from Wake-from-Hibernation
 description: Starting with Windows 8, a fast startup mode is available to start a computer in less time than is typically required for a traditional, cold startup.
-ms.assetid: 1768F739-619A-441F-B270-029DD1F72953
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -21,20 +20,17 @@ By default, Windows 8 uses a fast startup in place of a cold startup. Users can
 
 If the driver for a device configures the device differently depending on whether a cold startup or a wake-from-hibernation occurred, this driver should, after a fast startup, configure the device as though a cold startup (instead of a wake-from-hibernation) occurred. For example, the system-supplied NDIS driver disables miniport wake capabilities on a fast startup but not on a wake-from-hibernation.
 
-To distinguish a fast startup from a wake-from-hibernation, a driver can inspect the information in the system set-power ([**IRP\_MN\_SET\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power)) IRP that informs the driver that the computer has entered the S0 (working) state. The driver's [I/O stack location](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in this IRP contains a **Power** member, which is a structure that contains power-related information. Starting with Windows Vista, the **Power** member structure contains a **SystemPowerStateContext** member, which is a [**SYSTEM\_POWER\_STATE\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_system_power_state_context) structure that contains information about the previous system power states. This information is encoded in bit fields in the **SYSTEM\_POWER\_STATE\_CONTEXT** structure.
+To distinguish a fast startup from a wake-from-hibernation, a driver can inspect the information in the system set-power ([**IRP\_MN\_SET\_POWER**](./irp-mn-set-power.md)) IRP that informs the driver that the computer has entered the S0 (working) state. The driver's [I/O stack location](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) in this IRP contains a **Power** member, which is a structure that contains power-related information. Starting with Windows Vista, the **Power** member structure contains a **SystemPowerStateContext** member, which is a [**SYSTEM\_POWER\_STATE\_CONTEXT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_system_power_state_context) structure that contains information about the previous system power states. This information is encoded in bit fields in the **SYSTEM\_POWER\_STATE\_CONTEXT** structure.
 
 Most of the bit fields in the **SYSTEM\_POWER\_STATE\_CONTEXT** structure are reserved for system use and are opaque to drivers. However, this structure contains two bit fields, **TargetSystemState** and **EffectiveSystemState**, that can be read by drivers to determine whether a fast startup or a wake-from-hibernation occurred.
 
-The **TargetSystemState** and **EffectiveSystemState** bit fields are set to [**SYSTEM\_POWER\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) enumeration values. If **TargetSystemState** = **PowerSystemHibernate** and **EffectiveSystemState** = **PowerSystemHibernate**, a wake-from-hibernation occurred. However, if **TargetSystemState** = **PowerSystemHibernate** and **EffectiveSystemState** = **PowerSystemShutdown**, a fast startup occurred.
+The **TargetSystemState** and **EffectiveSystemState** bit fields are set to [**SYSTEM\_POWER\_STATE**](/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state) enumeration values. If **TargetSystemState** = **PowerSystemHibernate** and **EffectiveSystemState** = **PowerSystemHibernate**, a wake-from-hibernation occurred.
+
+However, if **TargetSystemState** = **PowerSystemShutdown** and **EffectiveSystemState** = **PowerSystemHibernate**, a fast startup occurred.
 
 The **TargetSystemState** bit field specifies the last system power state transition for which the driver received a system power IRP before the computer shut down or entered hibernation. The **EffectiveSystemState** bit field indicates the effective previous system power state of the device, as perceived by the user. The **TargetSystemState** and **EffectiveSystemState** values might not match if, for example, the driver received notification of a pending system transition to the hibernation state, but a hybrid shutdown subsequently occurred.
 
-For more information, see [**SYSTEM\_POWER\_STATE\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_system_power_state_context).
+For more information, see [**SYSTEM\_POWER\_STATE\_CONTEXT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_system_power_state_context).
 
  
-
- 
-
-
-
 

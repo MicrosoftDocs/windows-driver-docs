@@ -1,7 +1,6 @@
 ---
 title: Registering as a Source of Error Messages
 description: Registering as a Source of Error Messages
-ms.assetid: 5428950c-9c28-411a-9ec0-b029ad311a00
 keywords: ["source registration WDK errors", "errors WDK kernel", "registering error message sources", "registry WDK error logs"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -21,12 +20,7 @@ A list of error message sources separated by semicolons. If the driver uses stan
 <a href="" id="typessupported--reg-dword-"></a>**TypesSupported** (REG\_DWORD)  
 A bitmask of the possible severity levels that can be logged. Drivers typically set this to 7 to indicate they may log all severity levels.
 
-For a description of how to set these registry keys from the driver's INF file, see [**Registering for Event Logging**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive).
+For a description of how to set these registry keys from the driver's INF file, see [**Registering for Event Logging**](../install/inf-addservice-directive.md).
 
  
-
- 
-
-
-
 

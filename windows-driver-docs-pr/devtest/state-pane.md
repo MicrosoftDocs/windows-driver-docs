@@ -1,7 +1,6 @@
 ---
 title: State Pane
 description: State Pane
-ms.assetid: 20fb016e-249b-4d28-9fa8-5d2dd837109f
 keywords:
 - panes WDK Static Driver Verifier
 - Static Driver Verifier Report WDK , State pane

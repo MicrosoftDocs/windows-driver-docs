@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_SSID_LIST
 description: WDI_TLV_SSID_LIST is an unused TLV.
-ms.assetid: 931EEA38-C380-4647-AAE6-25A7CFE39101
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_SSID_LIST Network Drivers Starting with Windows Vista

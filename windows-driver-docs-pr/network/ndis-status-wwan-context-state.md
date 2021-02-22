@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_CONTEXT_STATE
 description: Miniport drivers use the NDIS_STATUS_WWAN_CONTEXT_STATE notification to send an event notification when the activation state of a particular context changes.
-ms.assetid: 6713f6a3-d1b7-49d0-83e1-50a33e9fff32
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_CONTEXT_STATE Network Drivers Starting with Windows Vista
@@ -15,7 +14,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_CONTEXT\_STATE notification to send
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state) structure.
+This notification uses the [**NDIS\_WWAN\_CONTEXT\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state) structure.
 
 Remarks
 -------
@@ -55,14 +54,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_CONTEXT\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state)
+[**NDIS\_WWAN\_CONTEXT\_STATE**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_context_state)
 
 [OID\_WWAN\_PROVISIONED\_CONTEXTS](oid-wwan-provisioned-contexts.md)
 
  
-
- 
-
-
-
 

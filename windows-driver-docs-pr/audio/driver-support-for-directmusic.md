@@ -1,7 +1,6 @@
 ---
 title: Driver Support for DirectMusic
 description: Driver Support for DirectMusic
-ms.assetid: 48f6245e-0911-46b6-9cf9-ea4db8875021
 keywords:
 - DirectMusic WDK audio
 - audio drivers WDK , DirectMusic

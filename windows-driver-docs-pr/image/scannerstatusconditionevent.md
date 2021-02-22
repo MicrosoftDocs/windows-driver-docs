@@ -1,7 +1,6 @@
 ---
 title: ScannerStatusConditionEvent element
 description: The required ScannerStatusConditionEvent element provides the client with detailed information about a single status change in the scan device.
-ms.assetid: 0a61fe67-ea1e-4143-afb8-edcdf50ee7c4
 keywords: ["ScannerStatusConditionEvent element Imaging Devices"]
 topic_type:
 - apiref
@@ -70,16 +69,16 @@ The following code example shows how the scan device notifies the client about a
 
 ```xml
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-  xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+  xmlns:wse="https://schemas.xmlsoap.org/ws/2004/08/eventing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ScannerStatusConditionEvent
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ScannerStatusConditionEvent
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

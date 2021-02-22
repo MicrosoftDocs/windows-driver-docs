@@ -1,8 +1,8 @@
 ---
 title: C (Windows Debugger Glossary)
 description: Glossary page - C
-ms.assetid: 295b05a3-e27f-4761-a562-7e87e25bfd3b
-ms.date: 11/28/2017
+ms.asseti: 295b05a3-e27f-4761-a562-7e87e25bfd3b
+ms.date: 12/17/2019
 ms.localizationpriority: medium
 ---
 
@@ -24,10 +24,10 @@ Sometimes referred to as the or simply the .
 See event callbacks, input callbacks, and output callbacks.
 
 <span id="checked_build"></span><span id="CHECKED_BUILD"></span>**checked build**  
-Two different builds of each NT-based operating system exist:
 
--   The (or ) of Windows is the end-user version of the operating system. For details, see free build.
--   The (or ) of Windows serves as a testing and debugging aid in the developing of the operating system and kernel-mode drivers. The checked build contains extra error checking, argument verification, and debugging information that is not available in the free build. , making it easier to trace the cause of problems in system software. A checked system or driver can help isolate and track down driver problems that can cause unpredictable behavior, result in memory leaks, or result in improper device configuration.
+Checked builds are no longer provided for Windows. Use tools such as Driver Verifier and GFlags to check driver code.
+
+The checked builds contained extra error checking, argument verification, and debugging information that is not available in free builds.
 
 Although the checked build provides extra protection, it consumes more memory and disk space than the free build. System and driver performance is slower, because additional code paths are executed due to parameter checking and output of diagnostic messages, and some alternate implementations of kernel functions are used.
 

@@ -1,7 +1,6 @@
 ---
 title: Overview of VRAM Capture in AVStream
 description: Overview of VRAM Capture in AVStream
-ms.assetid: b5fd026f-75e3-49e0-a39e-4883dd6cacf2
 keywords:
 - VRAM capture WDK AVStream , about VRAM capture
 ms.date: 04/20/2017

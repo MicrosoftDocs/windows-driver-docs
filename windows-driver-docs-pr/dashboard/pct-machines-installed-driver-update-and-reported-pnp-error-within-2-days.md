@@ -2,7 +2,7 @@
 title: Percent of machines that installed a driver update and reported a PnP error code within two days of install
 description: The measure aggregates telemetry from a 30-day sliding window into a percentage of machines that successfully installed the driver and then Encountered a PNP error within two days of install
 ms.topic: article
-ms.date: 05/20/2019
+ms.date: 05/22/2020
 ms.localizationpriority: medium
 ---
 
@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 
 ## Description
 
-After a successful install, machines can experience post-install PnP errors that can result in a negative user experience; from the device not working as expected to an unexpected reboot. A list of PNP error codes is located on [Device Manager Problem Codes](https://docs.microsoft.com/windows-hardware/drivers/debugger/device-manager-problem-codes) and [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
+After a successful install, machines can experience post-install PnP errors that can result in a negative user experience; from the device not working as expected to an unexpected reboot. A list of PNP error codes is located on [Device Manager Problem Codes](../install/device-manager-error-messages.md) and [Windows Support](https://support.microsoft.com/help/310123/error-codes-in-device-manager-in-windows).
 
 ## Measure attributes
 
@@ -21,7 +21,9 @@ After a successful install, machines can experience post-install PnP errors that
 |**Measurement criteria**|Aggregation of machines|
 |**Minimum population**|100 machines|
 |**Passing criteria**|<=5% machines encounter a post-install PNP error|
-|**Measure ID**|10042784|
+|**Cohort-enabled**|Yes|
+|**Minimum population per cohort**|500 machines|
+|**Measure ID**|26387262|
 
 ## Calculation
 

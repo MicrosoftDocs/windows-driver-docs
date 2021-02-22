@@ -1,7 +1,6 @@
 ---
 title: KSMETHOD\_BDA\_COMMIT\_CHANGES
 description: Clients use KSMETHOD\_BDA\_COMMIT\_CHANGES to commit a list of requested changes.
-ms.assetid: f6572a4e-2328-4157-80f7-110e0fe58a4f
 keywords: ["KSMETHOD_BDA_COMMIT_CHANGES Streaming Media Devices"]
 topic_type:
 - apiref
@@ -55,16 +54,9 @@ Requirements
 ## See also
 
 
-[**BdaCommitChanges**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges)
+[**BdaCommitChanges**](/windows-hardware/drivers/ddi/bdasup/nf-bdasup-bdacommitchanges)
 
-[**KSMETHOD**](https://docs.microsoft.com/previous-versions/ff563398(v=vs.85))
-
- 
+[**KSMETHOD**](/previous-versions/ff563398(v=vs.85))
 
  
-
-
-
-
-
 

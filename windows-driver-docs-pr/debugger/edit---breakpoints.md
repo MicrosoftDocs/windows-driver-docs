@@ -1,7 +1,6 @@
 ---
 title: Edit Breakpoints
 description: Edit Breakpoints
-ms.assetid: ca55ee25-aef3-42b1-b628-0a0e849103eb
 keywords: ["Edit Breakpoints", "breakpoints, Edit Breakpoints"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

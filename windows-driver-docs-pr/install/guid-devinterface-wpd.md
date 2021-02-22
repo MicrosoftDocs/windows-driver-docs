@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_WPD
 description: GUID_DEVINTERFACE_WPD
-ms.assetid: 611d1866-2530-4acb-8c83-77c29bdd128c
 keywords: ["GUID_DEVINTERFACE_WPD Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_WPD
 
 
-The GUID_DEVINTERFACE_WPD [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [Windows Portable Devices](https://go.microsoft.com/fwlink/p/?linkid=106527) (WPD).
+The GUID_DEVINTERFACE_WPD [device interface class](./overview-of-device-interface-classes.md) is defined for [Windows Portable Devices](/previous-versions//ff597729(v=vs.85)) (WPD).
 
 <table>
 <colgroup>
@@ -82,13 +81,4 @@ Requirements
 
 
 [**GUID_DEVINTERFACE_WPD_PRIVATE**](guid-devinterface-wpd-private.md)
-
- 
-
- 
-
-
-
-
-
 

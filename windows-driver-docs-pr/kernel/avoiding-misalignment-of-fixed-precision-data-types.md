@@ -1,7 +1,6 @@
 ---
 title: Avoiding Misalignment of Fixed-Precision Data Types
 description: Avoiding Misalignment of Fixed-Precision Data Types
-ms.assetid: 4e214bd8-b622-447a-b484-bd1d5d239de7
 keywords: ["file system control codes WDK 64-bit", "FSCTL WDK 64-bit", "control codes WDK 64-bit", "I/O control codes WDK kernel , 32-bit I/O in 64-bit drivers", "IOCTLs WDK kernel , 32-bit I/O in 64-bit drivers", "pointer precision WDK 64-bit", "fixed-precision data types WDK 64-bit", "misaligned fixed-precision data types"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -25,7 +24,7 @@ To determine the alignment requirement for a given data type on a particular pla
 
 ### How To Fix the Problem
 
-In the following example, the IOCTL is a METHOD\_NEITHER IOCTL, so the **Irp-&gt;UserBuffer** pointer is passed directly from the user-mode application to the kernel-mode driver. No validation is performed on buffers used in IOCTLs and FSCTLs. Thus a call to [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) is required before the buffer pointer can be safely dereferenced.
+In the following example, the IOCTL is a METHOD\_NEITHER IOCTL, so the **Irp-&gt;UserBuffer** pointer is passed directly from the user-mode application to the kernel-mode driver. No validation is performed on buffers used in IOCTLs and FSCTLs. Thus a call to [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite) is required before the buffer pointer can be safely dereferenced.
 
 Assuming that the 32-bit application has passed a valid value for **Irp-&gt;UserBuffer**, the LARGE\_INTEGER structure pointed to by **p-&gt;DeviceTime** will be aligned on a 4-byte boundary. **ProbeForRead** checks this alignment against the value passed in its *Alignment* parameter, which in this case is **TYPE\_ALIGNMENT** (LARGE\_INTEGER). On x86 platforms, this macro expression returns 4 (bytes). However, on Itanium-based machines, it returns 8, causing **ProbeForRead** to raise a STATUS\_DATATYPE\_MISALIGNMENT exception.
 
@@ -126,7 +125,7 @@ typedef struct _IOCTL_PARAMETERS3 {
             COUNT_FUNCTION, METHOD_BUFFERED, FILE_ANY_ACCESS)
 ```
 
-Like the METHOD\_NEITHER IOCTL and FSCTL buffer pointers described earlier, pointers embedded in buffered I/O requests are also passed directly from the user-mode application to the kernel-mode driver. No validation is performed on these pointers. Thus a call to [**ProbeForRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), enclosed in a **try/except** block, is required before the embedded pointer can be safely dereferenced.
+Like the METHOD\_NEITHER IOCTL and FSCTL buffer pointers described earlier, pointers embedded in buffered I/O requests are also passed directly from the user-mode application to the kernel-mode driver. No validation is performed on these pointers. Thus a call to [**ProbeForRead**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforread) or [**ProbeForWrite**](/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite), enclosed in a **try/except** block, is required before the embedded pointer can be safely dereferenced.
 
 As in the earlier example, assuming that the 32-bit application has passed a valid value for **pDeviceCount**, the LARGE\_INTEGER structure pointed to by **pDeviceCount** will be aligned on a 4-byte boundary. **ProbeForRead** and **ProbeForWrite** check this alignment against the value of the *Alignment* parameter, which in this case is TYPE\_ALIGNMENT (LARGE\_INTEGER). On x86 platforms, this macro expression returns 4 (bytes). However, on Itanium-based machines, it returns 8, causing **ProbeForRead** or **ProbeForWrite** to raise a STATUS\_DATATYPE\_MISALIGNMENT exception.
 
@@ -139,9 +138,4 @@ typedef struct _IOCTL_PARAMETERS3 {
 ```
 
  
-
- 
-
-
-
 

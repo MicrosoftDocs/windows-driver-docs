@@ -1,7 +1,6 @@
 ---
 title: OID_WAN_CO_SET_COMP_INFO
 description: The OID_WAN_CO_SET_COMP_INFO OID notifies the miniport driver of the PPP compression scheme selected by a protocol to which the miniport driver already returned information with a OID_WAN_CO_GET_COMP_INFO query.
-ms.assetid: f3b6b846-fa8c-425b-ba05-45927e744d66
 ms.date: 08/08/2017
 keywords: 
  -OID_WAN_CO_SET_COMP_INFO Network Drivers Starting with Windows Vista
@@ -36,7 +35,7 @@ Specifies a structure containing information about compression capabilities for 
 Remarks
 -------
 
-For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff561202(v=vs.85)).
+For specifics of the NDIS\_WAN\_COMPRESS\_INFO structure, see [OID\_WAN\_GET\_COMP\_INFO](/previous-versions/windows/hardware/network/ff561202(v=vs.85)).
 
 Requirements
 ------------
@@ -62,11 +61,3 @@ Requirements
 
 
 [OID\_WAN\_CO\_GET\_COMP\_INFO](oid-wan-co-get-comp-info.md)
-
-
-
-
-
-
-
-

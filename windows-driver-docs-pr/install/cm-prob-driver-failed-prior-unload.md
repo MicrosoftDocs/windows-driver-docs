@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
 description: CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
-ms.assetid: c7639fd7-738f-4115-9abc-0bafca097b9e
 keywords:
 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
+# Code 38 - CM_PROB_DRIVER_FAILED_PRIOR_UNLOAD
 
-This function is reserved for system use.
-
-The driver could not be loaded because a previous instance is still loaded.
+This Device Manager error message indicates that the driver could not be loaded because a previous instance is still loaded.
 
 ## Error Code
 

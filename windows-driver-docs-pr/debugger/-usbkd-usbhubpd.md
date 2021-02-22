@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbhubpd
 description: The usbkd.usbhubpd command displays information about a USB port.
-ms.assetid: 41D5E65D-76C2-45E0-9AC7-C2B50D806935
 keywords: ["usbkd.usbhubpd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -117,14 +116,7 @@ PortChangelist: !usblist ffffe000021bf1c8, CL [Empty]
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

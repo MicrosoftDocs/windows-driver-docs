@@ -1,7 +1,6 @@
 ---
 title: Making SCSI Port Miniport Drivers Work with Storport
 description: Making SCSI Port Miniport Drivers Work with Storport
-ms.assetid: d2e8daaf-47e2-4a6c-9992-517dc107d4bd
 keywords:
 - Storport drivers WDK , SCSI Port miniport drivers
 - SCSI Port drivers WDK storage , Storport drivers
@@ -25,7 +24,7 @@ The Storport-miniport driver interface is designed to be as similar to the SCSI 
 
 3.  Make certain that all expanded structures are properly initialized.
 
-    The sizes of both the [**HW\_INITIALIZATION\_DATA (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_hw_initialization_data) structure and the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information) structure have changed, so make certain the new members are properly initialized.
+    The sizes of both the [**HW\_INITIALIZATION\_DATA (SCSI)**](/windows-hardware/drivers/ddi/srb/ns-srb-_hw_initialization_data) structure and the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information) structure have changed, so make certain the new members are properly initialized.
 
 The Storport header file, *storport.h,* currently retains both SCSI Port-prefixed commands and StorPort-prefixed commands to facilitate porting from the SCSI Port.
 
@@ -38,9 +37,4 @@ This section provides more detailed instructions for driver writers who wish to 
 [Setting Port Configuration Information with Storport](setting-port-configuration-information-with-storport.md)
 
  
-
- 
-
-
-
 

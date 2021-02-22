@@ -1,7 +1,6 @@
 ---
 title: How to Create a Boot-Time Global Logger Session
 description: How to Create a Boot-Time Global Logger Session
-ms.assetid: ddd9e1b1-d732-4ef1-a0e0-4d8e95660d7c
 keywords:
 - Global Logger trace session WDK , creating
 - boot-time Global Logger trace session WDK , creating
@@ -23,7 +22,7 @@ The easiest way to create a Global Logger trace session that logs kernel events 
 
     For instructions and more information, see [**Tracelog Command Syntax**](tracelog-command-syntax.md) and [Global Logger Trace Session](global-logger-trace-session.md). For an example, see [Example 13: Creating a Global Logger Session](example-13--creating-a-global-logger-session.md).
 
-2.  Add a REG\_BINARY entry named **EnableKernelFlags** to the **HKLM\\System\\CurrentControlSet\\Control\\WMI\\GlobalLogger** subkey. Tracelog creates the **GlobalLogger** registry subkey when you use the **tracelog -start** command. The values that you can use for **EnableKernelFlags** are taken from the values of the **EnableFlags** member of the **EVENT\_TRACE\_PROPERTIES** structure. For a description of the **EnableFlags** values, see [**EVENT\_TRACE\_PROPERTIES**](https://docs.microsoft.com/windows/desktop/ETW/event-trace-properties).
+2.  Add a REG\_BINARY entry named **EnableKernelFlags** to the **HKLM\\System\\CurrentControlSet\\Control\\WMI\\GlobalLogger** subkey. Tracelog creates the **GlobalLogger** registry subkey when you use the **tracelog -start** command. The values that you can use for **EnableKernelFlags** are taken from the values of the **EnableFlags** member of the **EVENT\_TRACE\_PROPERTIES** structure. For a description of the **EnableFlags** values, see [**EVENT\_TRACE\_PROPERTIES**](/windows/desktop/ETW/event-trace-properties).
 
 3.  Restart the system.
 
@@ -44,7 +43,7 @@ For more information about the Tracelog commands, see [**Tracelog Command Syntax
 ## <span id="related_topics"></span>Related topics
 
 
-[**EVENT\_TRACE\_PROPERTIES**](https://docs.microsoft.com/windows/desktop/ETW/event-trace-properties)
+[**EVENT\_TRACE\_PROPERTIES**](/windows/desktop/ETW/event-trace-properties)
 
 [Example 13: Creating a Global Logger Session](example-13--creating-a-global-logger-session.md)
 
@@ -55,11 +54,4 @@ For more information about the Tracelog commands, see [**Tracelog Command Syntax
 [**Tracelog Command Syntax**](tracelog-command-syntax.md)
 
  
-
- 
-
-
-
-
-
 

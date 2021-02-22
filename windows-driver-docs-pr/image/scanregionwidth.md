@@ -1,7 +1,6 @@
 ---
 title: ScanRegionWidth element
 description: The required ScanRegionWidth element specifies the width of the scan region in the fast scan direction.
-ms.assetid: 3fe1933c-f086-453d-a8bd-84903929ed28
 keywords: ["ScanRegionWidth element Imaging Devices"]
 topic_type:
 - apiref

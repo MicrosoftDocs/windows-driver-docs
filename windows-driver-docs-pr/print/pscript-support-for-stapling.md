@@ -1,7 +1,6 @@
 ---
 title: Pscript Support for Stapling
 description: Pscript Support for Stapling
-ms.assetid: 75fc11e1-5cd9-4e95-b062-989fe493fdb5
 keywords:
 - minidrivers WDK Pscript , stapling
 - stapling WDK Pscript

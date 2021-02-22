@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_GET\_WIN32\_MAJOR\_MINOR\_VERSIONS
 description: DEBUG\_REQUEST\_GET\_WIN32\_MAJOR\_MINOR\_VERSIONS
-ms.assetid: 3764add2-a96a-41c8-9747-6a1ef3d8b5af
 keywords: ["DEBUG_REQUEST_GET_WIN32_MAJOR_MINOR_VERSIONS Windows Debugging"]
 topic_type:
 - apiref

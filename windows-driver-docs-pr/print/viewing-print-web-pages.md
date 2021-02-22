@@ -1,7 +1,6 @@
 ---
 title: Viewing Print Web Pages
 description: Viewing Print Web Pages
-ms.assetid: c2cf782c-0f53-47e1-8c5e-1e2aa87613c4
 keywords:
 - Internet printing WDK , viewing print Web pages
 - viewing print Web pages
@@ -29,13 +28,13 @@ For a Windows XP print server to support Web pages, it must be running either Mi
 
 To view a print server page, a user specifies the following URL format:
 
-http://&lt;ServerName&gt;/printers
+https://&lt;ServerName&gt;/printers
 
 where &lt;ServerName&gt; is the server name (either a DNS name for Internet connections or a WINS name for intranet connections). The URL points to an HTML file that generates the print server's page.
 
 The server page provides a link to a print queue page for each print queue available on the server. Shared print queues can be accessed by all users. A user can also reference the print queue pages for shared printers by specifying a URL with the following format:
 
-http://&lt;ServerName&gt;/&lt;ShareName&gt;
+https://&lt;ServerName&gt;/&lt;ShareName&gt;
 
 where &lt;ShareName&gt; is the print queue's share name, as specified in its property sheet.
 

@@ -1,7 +1,6 @@
 ---
 title: WDI message structure
 description: This section describes the structure for WDI command messages
-ms.assetid: 09663C5F-A458-479F-B450-A994486A6C18
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,9 +8,9 @@ ms.localizationpriority: medium
 # WDI message structure
 
 
-All WDI command messages must start with a [**WDI\_MESSAGE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header) structure. The command header is followed by zero or more type-length-value (TLV) structures.
+All WDI command messages must start with a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header) structure. The command header is followed by zero or more type-length-value (TLV) structures.
 
-The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-task-oids), [WDI Property OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-property-oids), and [WDI Status Indications](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-miniport-driver-status-indications).
+The command message IDs defined for messages sent from the host to the Wi-Fi device are documented in [WDI Task OIDs](./oid-wdi-task-change-operation-mode.md), [WDI Property OIDs](./oid-wdi-abort-task.md), and [WDI Status Indications](./ndis-status-wdi-indication-action-frame-received.md).
 
 ## TLVs
 
@@ -33,13 +32,14 @@ There are two types of TLV groupings: statically sized TLV lists, and multi-TLV 
 
 Statically-sized TLV lists contain several statically sized members. They are analogous to standard C-style arrays.
 
-In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-unicast-algorithm-list) is defined as a list of WDI\_ALGO\_PAIRS.
+In this example, [**WDI\_TLV\_UNICAST\_ALGORITHM\_LIST**](./wdi-tlv-unicast-algorithm-list.md) is defined as a list of WDI\_ALGO\_PAIRS.
 
-|        |                                    |
-|--------|------------------------------------|
-| Type   | WDI\_TLV\_UNICAST\_ALGORITHM\_LIST |
-| Length | N \* sizeof(WDI\_ALGO\_PAIRS)      |
-| Value  | WDI\_ALGO\_PAIRS\[N\]              |
+**Type**: WDI\_TLV\_UNICAST\_ALGORITHM\_LIST
+
+**Length**: N \* sizeof(WDI\_ALGO\_PAIRS)
+
+**Value**: WDI\_ALGO\_PAIRS\[N\]
+
 
  
 
@@ -50,7 +50,7 @@ This usage is specified in the TLV reference topics with array notation.
 
 When the size of a given object is not known ahead of time, multi-TLV groups are used. This usage pattern specifies that N different variably sized TLVs are expected within a given buffer. The number of entries (N) is not known ahead of time, and is inferred by the number of matching TLVs in the given buffer.
 
-In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header), which defines the end of the TLV buffer. Note that [**WDI\_TLV\_BSS\_ENTRY**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bss-entry) may be interspersed between other different TLV types in the parent buffer.
+In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header), which defines the end of the TLV buffer. Note that [**WDI\_TLV\_BSS\_ENTRY**](./wdi-tlv-bss-entry.md) may be interspersed between other different TLV types in the parent buffer.
 
 | Offset                         | Field                       | Type                |
 |--------------------------------|-----------------------------|---------------------|
@@ -63,13 +63,5 @@ In this example, the parent buffer is a [**WDI\_MESSAGE\_HEADER**](https://docs.
 
  
 
-For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-connect-parameters).
-
- 
-
- 
-
-
-
-
+For TLVs that contain other TLVs, the TLV reference topics have a *Multiple TLV instances allowed* column. If this column is checked, the specified TLV is allowed to appear multiple times. For an example of this, see [**WDI\_TLV\_CONNECT\_PARAMETERS**](./wdi-tlv-connect-parameters.md).
 

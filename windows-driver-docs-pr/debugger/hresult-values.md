@@ -1,7 +1,6 @@
 ---
 title: HRESULT Values
 description: The following is a list of common return values for functions and methods, and their usual meanings.
-ms.assetid: 713f3ee2-2f5b-415e-9908-90f5ae428b43
 ms.date: 12/07/2017
 keywords: ["HRESULT Values Windows Debugging"]
 topic_type:
@@ -12,7 +11,6 @@ api_location:
 - DbgEng.h
 api_type:
 - HeaderDef
-ms.date: 10/30/2017
 ms.localizationpriority: medium
 ---
 
@@ -55,7 +53,7 @@ The target was not accessible, or the engine was not in a state where the functi
 Not implemented.
 
 <span id="HRESULT_FROM_WIN32_ERROR_ACCESS_DENIED_"></span><span id="hresult_from_win32_error_access_denied_"></span>HRESULT\_FROM\_WIN32(ERROR\_ACCESS\_DENIED)  
-The operation was denied because the debugger is in [Secure Mode](https://docs.microsoft.com/windows-hardware/drivers/debugger/secure-mode).
+The operation was denied because the debugger is in [Secure Mode](./secure-mode.md).
 
 **NT error results.** Other error codes, such as STATUS\_CONTROL\_C\_EXIT and STATUS\_NO\_MORE\_ENTRIES, can sometimes occur. These results are passed to the HRESULT\_FROM\_NT macro that is defined in WinError.h before being returned.
 
@@ -78,10 +76,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

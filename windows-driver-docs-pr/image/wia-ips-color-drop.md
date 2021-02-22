@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_COLOR\_DROP
 description: The WIA\_IPS\_COLOR\_DROP property is used to configure color filtering for the image data acquired from the hardware device. The WIA minidriver creates and maintains this property.
-ms.assetid: A0F14FDF-194D-4948-B9D8-F3E0C2E34618
 keywords: ["WIA_IPS_COLOR_DROP Imaging Devices"]
 topic_type:
 - apiref

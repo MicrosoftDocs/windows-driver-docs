@@ -1,7 +1,6 @@
 ---
 title: Command Execution Order
 description: Command Execution Order
-ms.assetid: 2bf7438c-bfb0-407f-9c80-be3b8a9322f9
 keywords:
 - printer commands WDK Unidrv , execution order
 - sequence numbers WDK Unidrv
@@ -26,19 +25,19 @@ For both of these command types, you must specify the order in which the command
 Command execution order is made up of two components -- a job section name and a sequence order number. The Unidrv driver divides each print job into six sections. For each section, Unidrv sends the printer the commands assigned to the section, in the specified sequence. The following sections are defined:
 
 <a href="" id="job-setup"></a>JOB\_SETUP  
-Commands assigned to the JOB\_SETUP section are sent once per job. They are the first commands sent when a new job begins. These commands are sent from within Unidrv's implementation of the [**DrvStartDoc**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvstartdoc) function.
+Commands assigned to the JOB\_SETUP section are sent once per job. They are the first commands sent when a new job begins. These commands are sent from within Unidrv's implementation of the [**DrvStartDoc**](/windows/win32/api/winddi/nf-winddi-drvstartdoc) function.
 
 <a href="" id="doc-setup"></a>DOC\_SETUP  
 Commands assigned to the DOC\_SETUP section are sent before the first page of a document is sent. The commands are sent from within Unidrv's implementation of the DrvStartDoc function. (These commands are also sent after an application calls the Win32 ResetDC function. Commands in this section must not remove downloaded information, such as soft fonts and patterns.)
 
 <a href="" id="page-setup"></a>PAGE\_SETUP  
-Commands assigned to the PAGE\_SETUP section are sent at the beginning of each new page, before drawing begins. These commands are sent from within Unidrv's implementation of the [**DrvStartPage**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvstartpage) function.
+Commands assigned to the PAGE\_SETUP section are sent at the beginning of each new page, before drawing begins. These commands are sent from within Unidrv's implementation of the [**DrvStartPage**](/windows/win32/api/winddi/nf-winddi-drvstartpage) function.
 
 <a href="" id="page-finish"></a>PAGE\_FINISH  
-Commands assigned to the PAGE\_FINISH section are sent at the end of each page, after drawing is complete. These commands are sent from within Unidrv's implementation of the [*DrvSendPage*](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsendpage) function.
+Commands assigned to the PAGE\_FINISH section are sent at the end of each page, after drawing is complete. These commands are sent from within Unidrv's implementation of the [*DrvSendPage*](/windows/win32/api/winddi/nf-winddi-drvsendpage) function.
 
 <a href="" id="doc-finish"></a>DOC\_FINISH  
-Commands assigned to the DOC\_FINISH section are sent after the last page of a document is sent. The commands are sent from within Unidrv's implementation of the [**DrvEndDoc**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvenddoc) function. (Commands in this section must not remove downloaded information, such as soft fonts and patterns.)
+Commands assigned to the DOC\_FINISH section are sent after the last page of a document is sent. The commands are sent from within Unidrv's implementation of the [**DrvEndDoc**](/windows/win32/api/winddi/nf-winddi-drvenddoc) function. (Commands in this section must not remove downloaded information, such as soft fonts and patterns.)
 
 <a href="" id="job-finish"></a>JOB\_FINISH  
 Commands assigned to the JOB\_FINISH section are sent once per job. They are the last commands sent when a job ends. These commands are sent from within Unidrv's implementation of the DrvEndDoc function.
@@ -98,9 +97,4 @@ Sequence numbers do not have to be consecutive, but each number specified within
 ```
 
  
-
- 
-
-
-
 

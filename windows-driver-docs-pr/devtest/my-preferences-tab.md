@@ -1,7 +1,6 @@
 ---
 title: My Preferences Tab
 description: This topic describes WDF Verifier's My Preferences page. On this page, you can set preferences for some of the control panel’s features.
-ms.assetid: 6f37fd6b-c60c-4d59-94fb-0dc7d3ff6f0f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -15,7 +14,7 @@ At the top of the **My Preferences** tab, you'll find the **User Mode Debugger P
 
 ![screen grab of my preferences tab](images/wdfverifier-tab5.png)
 
-The debuggers listed on this page are part of the **Debugging Tools for Windows**. To download this package, select the **Debugging Tools for Windows** box when you install the [Windows SDK for Windows 8.1](https://go.microsoft.com/fwlink/p/?LinkId=733744). Alternatively, choose a custom (non-Microsoft) debugger by selecting **Use custom**.
+The debuggers listed on this page are part of the **Debugging Tools for Windows**. To download this package, select the **Debugging Tools for Windows** box when you install the [Windows SDK for Windows 8.1](https://developer.microsoft.com/windows/downloads/sdk-archive/). Alternatively, choose a custom (non-Microsoft) debugger by selecting **Use custom**.
 
 Start by clicking the **Select a specific debugger** button and browsing to the user mode debugger you want to use. The **Debugging Tools for Windows** installs by default to C:\\Program Files (x86)\\Windows Kits\\8.1\\Debuggers\\*&lt;x86 | x64&gt;*. The list of debuggers is grayed out if **Path to Debugger** does not specify a valid path.
 
@@ -26,7 +25,7 @@ Your debugger preference is used in two cases:
 
 If you select the **Customized command line** box, WDF Verifier passes the specified string to whatever debugger you have chosen.
 
-The default command line for the Debugging Tools for Windows debuggers bypasses the initial break, attaches to a specific PID, and instructs the debugger to detach from the process and leave it running when you close the debugger. For a complete list of command line options for Microsoft-provided debuggers, see [Command-Line Options](https://docs.microsoft.com/windows-hardware/drivers/debugger/command-line-options).
+The default command line for the Debugging Tools for Windows debuggers bypasses the initial break, attaches to a specific PID, and instructs the debugger to detach from the process and leave it running when you close the debugger. For a complete list of command line options for Microsoft-provided debuggers, see [Command-Line Options](../debugger/command-line-options.md).
 
 You can also change the default settings. For example:
 
@@ -53,10 +52,4 @@ The selections are shown as a guide in case you want to click **No** and perform
 If you select the **Do not ask for permission again...** box, your choice persists unless you change the reboot setting on the My Preferences tab.
 
  
-
- 
-
-
-
-
 

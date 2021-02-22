@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.AbortTransfer
 description: EFI_USBFN_IO_PROTOCOL.AbortTransfer
-ms.assetid: 204998d6-7d8d-482b-8d9c-b96d2e2729bf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: AV/C Streaming Protocol Driver Function Codes
 description: AV/C Streaming Protocol Driver Function Codes
-ms.assetid: c76662fc-8bb9-411a-8672-d00a4533e952
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

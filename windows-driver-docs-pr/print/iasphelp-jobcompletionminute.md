@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: e3dba870-84b4-4959-8ed4-102ac82be14b
 keywords: ["get_JobCompletionMinute method Print Devices", "get_JobCompletionMinute method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_JobCompletionMinute method"]
 topic_type:
 - apiref

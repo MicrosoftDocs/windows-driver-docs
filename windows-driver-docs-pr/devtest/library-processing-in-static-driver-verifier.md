@@ -1,7 +1,6 @@
 ---
 title: Library Processing in Static Driver Verifier
 description: Library Processing in Static Driver Verifier
-ms.assetid: d95ccdc2-aa00-4671-87fb-6f0f77d2ba8d
 keywords:
 - Static Driver Verifier WDK , libraries
 - StaticDV WDK , libraries

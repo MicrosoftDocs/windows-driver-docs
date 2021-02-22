@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_REQUEST_FTM
 description: OID_WDI_TASK_REQUEST_FTM is issued to the LE to initiate Fine Timing Measurement (FTM) procedures with the listed BSS targets.
-ms.assetid: 67E17BD2-9216-43B5-8D1E-C6DF8537D79E
 ms.date: 02/08/2019
 keywords:
  - OID_WDI_TASK_REQUEST_FTM Network Drivers Starting with Windows Vista
@@ -35,8 +34,9 @@ For each target, it is indicated if a Location Configuration Information (LCI) r
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10, version 1903 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Dot11wdi.h |
+**Minimum supported client**: Windows 10, version 1903
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Dot11wdi.h
+

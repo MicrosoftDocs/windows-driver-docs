@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WWAN_SMS_STATUS
 description: Miniport drivers use the NDIS_STATUS_WWAN_SMS_STATUS notification to inform the MB Service about the following events The MB device's message store is full.A new SMS text message has arrived, with the new message corresponding to MessageIndex.Miniport drivers can also send unsolicited events with this notification.This notification uses the NDIS_WWAN_SMS_STATUS structure.
-ms.assetid: 65553a3f-57af-49ef-a3b7-ed35df0a319d
 ms.date: 08/08/2017
 keywords: 
  -NDIS_STATUS_WWAN_SMS_STATUS Network Drivers Starting with Windows Vista
@@ -19,7 +18,7 @@ Miniport drivers use the NDIS\_STATUS\_WWAN\_SMS\_STATUS notification to inform 
 
 Miniport drivers can also send unsolicited events with this notification.
 
-This notification uses the [**NDIS\_WWAN\_SMS\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status) structure.
+This notification uses the [**NDIS\_WWAN\_SMS\_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status) structure.
 
 Remarks
 -------
@@ -51,14 +50,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_WWAN\_SMS\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status)
+[**NDIS\_WWAN\_SMS\_STATUS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_sms_status)
 
 [**NDIS\_STATUS\_WWAN\_SMS\_RECEIVE**](ndis-status-wwan-sms-receive.md)
 
  
-
- 
-
-
-
 

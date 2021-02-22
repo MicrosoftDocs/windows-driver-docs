@@ -1,7 +1,6 @@
 ---
 title: usbkd._ehcisitd
 description: The usbkd._ehcisitd command displays information from a usbehci _HCD_SI_TRANSFER_DESCRIPTOR
-ms.assetid: FA1F61AE-A9D4-429E-97BC-0CCC3A9AF33E
 keywords: ["usbkd._ehcisitd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,14 +37,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

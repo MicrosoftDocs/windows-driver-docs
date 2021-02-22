@@ -1,7 +1,6 @@
 ---
 title: Auto Item
 description: Auto Item
-ms.assetid: 59f9b71b-e4bd-44a3-a4f2-dfea9f1045e2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -21,12 +20,7 @@ If a WIA scanner device supports auto-configured scanning, a WIA application can
 
 The WIA architecture does not permit a scanner device operating in auto-configured scanning mode to automatically select the file format that it uses to transfer image data acquired from an input source. Instead, the application determines the file format--either by explicitly selecting a format or by simply accepting the default format. This restriction prevents the device from transferring scanned image data in a format that the application cannot use.
 
-A WIA minidriver for a scanner device that supports auto-configured scanning should set the AUTO\_SOURCE flag bit in the [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-dps-document-handling-capabilities) property value implemented by the root item in the WIA tree. A WIA application can query this property to determine whether the WIA item tree for the device contains an auto item.
+A WIA minidriver for a scanner device that supports auto-configured scanning should set the AUTO\_SOURCE flag bit in the [**WIA\_DPS\_DOCUMENT\_HANDLING\_CAPABILITIES**](./wia-dps-document-handling-capabilities.md) property value implemented by the root item in the WIA tree. A WIA application can query this property to determine whether the WIA item tree for the device contains an auto item.
 
  
-
- 
-
-
-
 

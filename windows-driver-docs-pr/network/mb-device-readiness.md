@@ -1,7 +1,6 @@
 ---
 title: MB Device Readiness
 description: MB Device Readiness
-ms.assetid: 67a67ff7-dcff-4aec-bea9-7b1be9593649
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -33,21 +32,15 @@ Be aware that the MB Service does not assume that miniport drivers can detect al
 
 Until a miniport driver sends a **WwanReadyStateInitialized** ready-state event notification, the service will not proceed any further with network-related activities until the problem has been identified and corrected. However, the service may still send OIDs to the miniport driver.
 
-Miniport drivers do not need to wait for the SMS subsystem to be ready before reporting the **WwanReadyStateInitialized** ready-state. Instead, miniport drivers should send a separate [OID\_WWAN\_SMS\_CONFIGURATION](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-sms-configuration) notification when the SMS subsystem is ready to send and receive SMS messages.
+Miniport drivers do not need to wait for the SMS subsystem to be ready before reporting the **WwanReadyStateInitialized** ready-state. Instead, miniport drivers should send a separate [OID\_WWAN\_SMS\_CONFIGURATION](./oid-wwan-sms-configuration.md) notification when the SMS subsystem is ready to send and receive SMS messages.
 
 ### Emergency Mode Support
 
-If the miniport driver indicates that it supports emergency call services while processing [OID\_WWAN\_READY\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-ready-info) the miniport driver must set the **EmergencyMode** member of the [**WWAN\_READY\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info) structure to **WwanEmergencyModeOn**. In this case, the miniport driver should continue to send registration notifications to the MB Service, but the service will not invoke any automatic configuration related functionalities.
+If the miniport driver indicates that it supports emergency call services while processing [OID\_WWAN\_READY\_INFO](./oid-wwan-ready-info.md) the miniport driver must set the **EmergencyMode** member of the [**WWAN\_READY\_INFO**](/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info) structure to **WwanEmergencyModeOn**. In this case, the miniport driver should continue to send registration notifications to the MB Service, but the service will not invoke any automatic configuration related functionalities.
 
 Miniport drivers can specify that they support emergency call services even in scenarios where they detect that the SIM is no longer valid, perhaps because the subscription is unpaid, or service has been deactivated because the device has been reported stolen.
 
-For more information about device readiness, see [OID\_WWAN\_READY\_INFO](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-ready-info).
+For more information about device readiness, see [OID\_WWAN\_READY\_INFO](./oid-wwan-ready-info.md).
 
  
-
- 
-
-
-
-
 

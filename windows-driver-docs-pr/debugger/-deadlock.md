@@ -1,7 +1,6 @@
 ---
 title: deadlock
 description: The deadlock extension displays information about deadlocks collected by the Deadlock Detection option of Driver Verifier.
-ms.assetid: c0e6074f-8afe-4526-a30f-427aac67ab99
 keywords: ["Deadlock Detection (Driver Verifier)", "deadlock Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,7 +78,7 @@ Lock B =   dummy!GlobalLock Type 'Spinlock'
 
 This tells you which threads and which locks are involved. However, it is intended to be a summary and may not be enough information to adequately debug the situation.
 
-Use **!deadlock 1** to print out the contents of the call stacks at the time that each lock participating in the deadlock was acquired. Because these are run-time stack traces, they will be more complete if a checked build is being used. On a free build, they may be truncated after as little as one line.
+Use **!deadlock 1** to print out the contents of the call stacks at the time that each lock participating in the deadlock was acquired. Because these are run-time stack traces, they will be more complete if a checked build is being used. Checked builds were available on older versions of Windows before Windows 10, version 1803. On a free build, they may be truncated after as little as one line.
 
 ```dbgcmd
 0:kd> !deadlock 1

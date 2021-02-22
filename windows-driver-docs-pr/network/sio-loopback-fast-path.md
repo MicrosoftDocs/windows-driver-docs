@@ -1,7 +1,6 @@
 ---
 title: SIO_LOOPBACK_FAST_PATH control code
 description: The SIO_LOOPBACK_FAST_PATH socket I/O control code allows a WSK application to configure a TCP socket for faster operations on the loopback interface.
-ms.assetid: 5A5AD945-9EFD-4157-AFA4-F9C3995B7C43
 ms.date: 08/08/2017
 keywords: 
  -SIO_LOOPBACK_FAST_PATH control code Network Drivers Starting with Windows Vista
@@ -17,7 +16,7 @@ ms.localizationpriority: medium
 
 The **SIO\_LOOPBACK\_FAST\_PATH** socket I/O control code allows a WSK application to configure a TCP socket for faster operations on the loopback interface.
 
-To use this IOCTL, a WSK application calls the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
+To use this IOCTL, a WSK application calls the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function with the following parameters.
 
 <table>
 <colgroup>
@@ -93,16 +92,16 @@ Only a subset of the TCP/IP socket options are supported when the **SIO\_LOOPBAC
 -   IPV6\_UNICAST\_HOPS
 -   IPV6\_UNICAST\_IF
 -   IPV6\_V6ONLY
--   [**SO\_CONDITIONAL\_ACCEPT**](https://docs.microsoft.com/windows/desktop/WinSock/so-conditional-accept)
--   [SO\_EXCLUSIVEADDRUSE](https://docs.microsoft.com/windows/desktop/WinSock/so-exclusiveaddruse)
--   [**SO\_PORT\_SCALABILITY**](https://docs.microsoft.com/windows/desktop/WinSock/so-port-scalability)
+-   [**SO\_CONDITIONAL\_ACCEPT**](/windows/desktop/WinSock/so-conditional-accept)
+-   [SO\_EXCLUSIVEADDRUSE](/windows/desktop/WinSock/so-exclusiveaddruse)
+-   [**SO\_PORT\_SCALABILITY**](/windows/desktop/WinSock/so-port-scalability)
 -   SO\_RCVBUF
 -   SO\_REUSEADDR
 -   TCP\_BSDURGENT
 
-A WSK application must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The application must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the application must check the IRP status and release all resources that it had previously allocated for the request.
+A WSK application must specify a pointer to an IRP and a completion routine when calling the [**WskControlSocket**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_socket) function for this type of request. The application must not release the buffer till the WSK subsystem has completed the IRP. When it completes the IRP, the subsystem invokes the completion routine. In the completion routine, the application must check the IRP status and release all resources that it had previously allocated for the request.
 
-For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel Functions](https://docs.microsoft.com/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions).
+For more information about WSK IRP handling, see [Using IRPs with Winsock Kernel Functions](./using-irps-with-winsock-kernel-functions.md).
 
 When completing the IRP, the subsystem will set *Irp-&gt;IoStatus.Status* to **STATUS\_SUCCESS** if the request is successful. Otherwise, *Irp-&gt;IoStatus.Status* will be set to **STATUS\_INVALID\_BUFFER\_SIZE** or **STATUS\_NOT\_SUPPORTED** if the call is not successful.
 
@@ -140,14 +139,9 @@ Requirements
 ## See also
 
 
-[**SIO\_LOOPBACK\_FAST\_PATH (SDK)**](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/jj841212(v=vs.85))
+[**SIO\_LOOPBACK\_FAST\_PATH (SDK)**](/windows/win32/winsock/sio-loopback-fast-path)
 
-[Using IRPs with Winsock Kernel Functions](https://docs.microsoft.com/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions)
-
- 
+[Using IRPs with Winsock Kernel Functions](./using-irps-with-winsock-kernel-functions.md)
 
  
-
-
-
 

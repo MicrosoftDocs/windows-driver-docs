@@ -5,9 +5,10 @@ ms.date: 04/17/2019
 ms.localizationpriority: medium
 ---
 
+# Introduction to Time Travel Debugging objects
+
 ![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
-# Introduction to Time Travel Debugging objects
 This section describes how to use the data model to query time travel traces. This can be a powerful tool to answer questions like these about the code that is captured in a time travel trace.
 * What exceptions are in the trace?
 * At what point in time in the trace did a specific code module load?
@@ -350,7 +351,7 @@ Use this dx command to display all of the events in the trace in grid format (-g
 ==================================================================================================================================================================================================
 ```
 
-Click on any of the columns with a + sign to sort the output.
+Select any of the columns with a + sign to sort the output.
 
 Use this LINQ query to display in grid format, the time position in the trace when threads were created (Type == "ThreadCreated").
 

@@ -1,7 +1,6 @@
 ---
 title: \_RxAllocatePoolWithTag function
 description: \_RxAllocatePoolWithTag allocates memory from a pool with a four-byte tag at the beginning of the block that can be used to help catch instances of memory trashing.
-ms.assetid: 5e999d06-ebcf-433a-a714-f340a1c74be1
 keywords: ["_RxAllocatePoolWithTag function Installable File System Drivers"]
 topic_type:
 - apiref
@@ -49,7 +48,7 @@ Pageable system memory that can only be allocated and accessed at IRQL &lt; DISP
 The size of the memory block, in bytes, to be allocated.
 
 *Tag*   
-The four-byte tag to be used to mark the allocated buffer. For a description of how to use tags, see [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag). The ASCII value of each character in the tag must be between 0 and 127.
+The four-byte tag to be used to mark the allocated buffer. For a description of how to use tags, see [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag). The ASCII value of each character in the tag must be between 0 and 127.
 
 *FileName*   
 A pointer to the source file name where the memory allocation occurred. This parameter is not currently used.
@@ -65,7 +64,7 @@ Return value
 Remarks
 -------
 
-It is recommended that the **RxAllocatePoolWithTag** macro be called instead of using this routine directly. On retail builds, this macro is defined to call [**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag). On checked builds, this macro is defined to call **\_RxAllocatePoolWithTag**.
+It is recommended that the **RxAllocatePoolWithTag** macro be called instead of using this routine directly. On retail builds, this macro is defined to call [**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag). On checked builds, this macro is defined to call **\_RxAllocatePoolWithTag**.
 
 The **\_RxAllocatePoolWithTag** routine calls **ExAllocatePoolWithTagPriority** with the priority (importance of the request) set to LowPoolPriority. The system may fail the request for LowPoolPriority when it runs low on resources. A driver should be prepared to recover from an allocation failure when using this routine.
 
@@ -104,18 +103,11 @@ Requirements
 ## See also
 
 
-[**ExAllocatePoolWithTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
+[**ExAllocatePoolWithTag**](/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag)
 
 [**\_RxCheckMemoryBlock**](-rxcheckmemoryblock.md)
 
 [**\_RxFreePool**](-rxfreepool.md)
 
  
-
- 
-
-
-
-
-
 

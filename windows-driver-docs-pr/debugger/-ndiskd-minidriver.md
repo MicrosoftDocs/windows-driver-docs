@@ -1,9 +1,8 @@
 ---
 title: ndiskd.minidriver
 description: The ndiskd.minidriver command displays information about an NDIS miniport driver. 
-ms.assetid: CD349B10-8363-4D48-A830-CC9EF5EA75BF
 keywords: ["ndiskd.minidriver Windows Debugging"]
-ms.date: 05/23/2017
+ms.date: 06/15/2020
 topic_type:
 - apiref
 api_name:
@@ -15,18 +14,16 @@ ms.localizationpriority: medium
 
 # !ndiskd.minidriver
 
-
 The **!ndiskd.minidriver** command displays information about an NDIS miniport driver. If you run this extension with no parameters, !ndiskd will display a list of NDIS miniport drivers that are active on the system.
 
 ```console
-!ndiskd.minidriver [-handle <x>] [-basic] [-miniports] [-devices] [-handlers] 
+!ndiskd.minidriver [-handle <x>] [-basic] [-miniports] [-devices] [-handlers]
 ```
 
 ## <span id="ddk__devobj_dbg"></span><span id="DDK__DEVOBJ_DBG"></span>Parameters
 
-
 <span id="_______-handle______"></span><span id="_______-HANDLE______"></span> *-handle*   
-Handle of an NDIS miniport driver.
+Optional handle of an NDIS miniport driver.
 
 <span id="_______-basic______"></span><span id="_______-BASIC______"></span> *-basic*   
 Displays basic information about the miniport driver.
@@ -40,13 +37,11 @@ Displays devices associated with this miniport driver.
 <span id="_______-handlers______"></span><span id="_______-HANDLERS______"></span> *-handlers*   
 Displays this driver's miniport handlers.
 
-## <span id="DLL"></span><span id="dll"></span>DLL
-
+## DLL
 
 Ndiskd.dll
 
-Examples
---------
+## Examples
 
 Enter the **!ndiskd.minidriver** command with no parameters to get a list of all NDIS miniport drivers active on the system. In the following example, look for the kdnic adapter's handle, ffffd20d12dec020
 
@@ -77,32 +72,21 @@ MINIPORT DRIVER
 
 MINIPORTS
 
-    Miniport                                                                    
+    Miniport
     ffffd20d12dd71a0 - Microsoft Kernel Debug Network Adapter
 
     Handlers
     Device objects
 ```
 
-## <span id="see_also"></span>See also
+## See also
 
+[Network Driver Design Guide](../network/index.md)
 
-[Network Driver Design Guide](https://docs.microsoft.com/windows-hardware/drivers/network/index)
+[Windows Vista and Later Networking Reference](/windows-hardware/drivers/ddi/_netvista/)
 
-[Windows Vista and Later Networking Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
-
-[Debugging the Network Stack](https://go.microsoft.com/fwlink/p/?linkid=845311)
+[Debugging the Network Stack](https://channel9.msdn.com/Shows/Defrag-Tools/Defrag-Tools-175-Debugging-the-Network-Stack)
 
 [**NDIS extensions (Ndiskd.dll)**](ndis-extensions--ndiskd-dll-.md)
 
 [**!ndiskd.help**](-ndiskd-help.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Cosmetic Lines
 description: Cosmetic Lines
-ms.assetid: eb9651dd-cc77-469f-8441-4bb958bd374d
 keywords:
 - lines WDK GDI , cosmetic
 - GDI WDK Windows 2000 display , lines, cosmetic
@@ -87,15 +86,9 @@ The following graph illustrates the diamond convention for a cosmetic line.
 
 ![diagram illustrating diamond convention for a cosmetic line](images/102-01b.png)
 
-For rendering cosmetic lines, the [**DrvStrokePath**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvstrokepath) function follows the GIQ diamond convention. The [**DrvLineTo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvlineto) function is an optional entry point that a driver can supply as an optimization for application calls to the Microsoft Win32 **LineTo** function. **DrvLineTo** is simpler than **DrvStrokePath** because it supports only integer end-points and solid cosmetic lines.
+For rendering cosmetic lines, the [**DrvStrokePath**](/windows/win32/api/winddi/nf-winddi-drvstrokepath) function follows the GIQ diamond convention. The [**DrvLineTo**](/windows/win32/api/winddi/nf-winddi-drvlineto) function is an optional entry point that a driver can supply as an optimization for application calls to the Microsoft Win32 **LineTo** function. **DrvLineTo** is simpler than **DrvStrokePath** because it supports only integer end-points and solid cosmetic lines.
 
 For raster devices that support the R2\_NOT mix mode, a binary raster operation that changes the destination color to its inverse, the driver must use exact rendering. Rendering should also be exact for devices that require rendering by both GDI and the driver. This includes devices for which GDI draws on some bitmaps and the driver draws on other surfaces (unless the pixels are too small to make any visible difference). This also includes devices that request GDI to handle complex clipping.
 
  
-
- 
-
-
-
-
 

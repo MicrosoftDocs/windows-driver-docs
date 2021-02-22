@@ -1,7 +1,6 @@
 ---
 title: Enhanced Storage Certificate Management Tool
 description: Enhanced Storage Certificate Management Tool
-ms.assetid: 8a016e26-cd42-483c-b04a-3a9b8b0d909e
 keywords:
 - driver testing WDK , Enhanced Storage Certificate Management tool
 - testing drivers WDK , Enhanced Storage Certificate Management tool

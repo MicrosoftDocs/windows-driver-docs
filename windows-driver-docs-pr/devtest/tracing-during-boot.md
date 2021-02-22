@@ -1,7 +1,6 @@
 ---
 title: Tracing During Boot
 description: Tracing During Boot
-ms.assetid: 79594c33-5755-4484-aaf5-ac409b05ddcc
 keywords:
 - software tracing WDK , during boot
 - tracing WDK , during boot
@@ -31,15 +30,9 @@ This section describes the following methods of tracing during boot:
 
 -   **AutoLogger**
 
-    This is the preferred method for tracing the activity of a driver or other trace provider during boot. The provider must be instrumented for tracing. The AutoLogger provides callback notification to the driver. Multiple AutoLoggers can run concurrently. This feature is available in Windows Vista and later versions of Windows. For information about tracing the activity of a driver with the AutoLogger, see [Configuring and Starting an AutoLogger Session](https://go.microsoft.com/fwlink/p/?linkid=89723).
+    This is the preferred method for tracing the activity of a driver or other trace provider during boot. The provider must be instrumented for tracing. The AutoLogger provides callback notification to the driver. Multiple AutoLoggers can run concurrently. This feature is available in Windows Vista and later versions of Windows. For information about tracing the activity of a driver with the AutoLogger, see [Configuring and Starting an AutoLogger Session](/windows/win32/etw/configuring-and-starting-an-autologger-session).
 
 When using the Global Logger trace session, be sure that you are aware of its limitations. For information, see Limitations of the Global Logger trace session.
 
  
-
- 
-
-
-
-
 

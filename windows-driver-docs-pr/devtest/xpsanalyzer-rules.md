@@ -1,7 +1,6 @@
 ---
 title: XpsAnalyzer Rules
 description: XpsAnalyzer Rules
-ms.assetid: 4f617665-4cc4-475d-ae66-abc2f00309fd
 keywords:
 - XpsAnalyzer WDK , rules
 ms.date: 09/17/2018
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 
 # XpsAnalyzer Rules
 
-The following table describes the rules that the XpsAnalysis tool uses to analyze XPS files. These rules are based on the XML Paper Specification (XPS) 1.0 specification. For more information about this specification, doiwnload the [XML Paper Specification](http://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/XPS_1_0.exe).
+The following table describes the rules that the XpsAnalysis tool uses to analyze XPS files. These rules are based on the XML Paper Specification (XPS) 1.0 specification. For more information about this specification, download the [XML Paper Specification](https://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/xps_1_0.zip).
 
 ## Open Packaging Conventions (OPC) Rules
 

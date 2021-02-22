@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_BRIDGE
 description: KSCATEGORY_BRIDGE
-ms.assetid: 7973cac5-2b74-4af1-8912-370e922e5f4d
 keywords: ["KSCATEGORY_BRIDGE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_BRIDGE
 
 
-The KSCATEGORY_BRIDGE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that supports a software interface between the KS subsystem and another software component.
+The KSCATEGORY_BRIDGE [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that supports a software interface between the KS subsystem and another software component.
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for KS audio adapter devices register instances of KSCATEGORY_BRIDGE to indicate to the operating system that the devices support the KSCATEGORY_BRIDGE functional category.
 
-For more information about KSCATEGORY_BRIDGE functional category, see [**KSPROPERTY_TOPOLOGY_CATEGORIES**](https://docs.microsoft.com/windows-hardware/drivers/stream/ksproperty-topology-categories).
+For more information about KSCATEGORY_BRIDGE functional category, see [**KSPROPERTY_TOPOLOGY_CATEGORIES**](../stream/ksproperty-topology-categories.md).
 
 Requirements
 ------------
@@ -69,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

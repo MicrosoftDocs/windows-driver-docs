@@ -1,7 +1,6 @@
 ---
 title: Listening for Connections on a SAN
 description: Listening for Connections on a SAN
-ms.assetid: 7e430bda-74f5-4a1a-90f0-3b2e44fb25a3
 keywords:
 - SAN connection setup WDK , listening for connections
 - listen operations WDK SANs
@@ -28,21 +27,15 @@ When the Windows Sockets switch receives a **WSPListen** call that was initiated
 
 ### Listening for Incoming Connection Requests
 
-After requesting a SAN service provider to create and bind the SAN socket, the switch calls the [**WSPListen**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566297(v=vs.85)) function of the SAN service provider to cause the SAN socket to listen for incoming connections and to specify a limit on the number of incoming connection requests that the SAN service provider can queue.
+After requesting a SAN service provider to create and bind the SAN socket, the switch calls the [**WSPListen**](/previous-versions/windows/hardware/network/ff566297(v=vs.85)) function of the SAN service provider to cause the SAN socket to listen for incoming connections and to specify a limit on the number of incoming connection requests that the SAN service provider can queue.
 
 ### Setting Up to Accept Incoming Connections
 
-The switch accepts incoming connections only in nonblocking mode. The switch calls the SAN service provider's [**WSPEventSelect**](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff566287(v=vs.85)) function to put a socket in nonblocking mode and to request notification of incoming connection events. In this call, the switch passes the FD\_ACCEPT code and the event object to be associated with that code. After the SAN service provider receives a connection request on its socket that was previously established for listening, the SAN service provider calls the Win32 **SetEvent** function to signal the associated event object. The switch listens for incoming connection events in a dedicated thread and accepts or rejects the connection after the event object is signaled. For more information, see [Accepting Connection Requests](accepting-connection-requests.md).
+The switch accepts incoming connections only in nonblocking mode. The switch calls the SAN service provider's [**WSPEventSelect**](/previous-versions/windows/hardware/network/ff566287(v=vs.85)) function to put a socket in nonblocking mode and to request notification of incoming connection events. In this call, the switch passes the FD\_ACCEPT code and the event object to be associated with that code. After the SAN service provider receives a connection request on its socket that was previously established for listening, the SAN service provider calls the Win32 **SetEvent** function to signal the associated event object. The switch listens for incoming connection events in a dedicated thread and accepts or rejects the connection after the event object is signaled. For more information, see [Accepting Connection Requests](accepting-connection-requests.md).
 
 ### Indicating Refusal of a Connection Request to a Remote Peer
 
 If a connection request arrives and the SAN service provider's backlog of connection requests is full, the SAN service provider should immediately indicate to the remote peer that it refuses the connection request. In this case, the SAN service provider does not signal the event object to inform the switch to accept or reject the connection request. The SAN service provider on the remote peer must then fail its connection operation that was initiated by a **WSPConnect** call with the WSAECONNREFUSED error code.
 
  
-
- 
-
-
-
-
 

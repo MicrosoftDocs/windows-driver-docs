@@ -1,7 +1,6 @@
 ---
-title: JobHistory element
+title: JobHistory element (required)
 description: The required JobHistory element contains a list of JobSummary elements that describe the most recently completed jobs in the scan device.
-ms.assetid: d1439e56-b2fe-4db8-b063-56537a3346c6
 keywords: ["JobHistory element Imaging Devices"]
 topic_type:
 - apiref
@@ -9,17 +8,15 @@ api_name:
 - wscn JobHistory
 api_type:
 - Schema
-ms.date: 11/28/2017
+ms.date: 07/06/2020
 ms.localizationpriority: medium
 ---
 
-# JobHistory element
-
+# JobHistory element (required)
 
 The required **JobHistory** element contains a list of [**JobSummary**](jobsummary.md) elements that describe the most recently completed jobs in the scan device.
 
-Usage
------
+## Usage
 
 ```xml
 <wscn:JobHistory>
@@ -27,51 +24,23 @@ Usage
 </wscn:JobHistory>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
 ## Child elements
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="jobsummary.md" data-raw-source="[&lt;strong&gt;JobSummary&lt;/strong&gt;](jobsummary.md)"><strong>JobSummary</strong></a></p></td>
-</tr>
-</tbody>
-</table>
+| Element |
+|--|
+| [**JobSummary**](jobsummary.md) |
 
 ## Parent elements
 
+| Element |
+|--|
+| [**GetJobHistoryResponse**](getjobhistoryresponse.md) |
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="getjobhistoryresponse.md" data-raw-source="[&lt;strong&gt;GetJobHistoryResponse&lt;/strong&gt;](getjobhistoryresponse.md)"><strong>GetJobHistoryResponse</strong></a></p></td>
-</tr>
-</tbody>
-</table>
-
-Remarks
--------
+## Remarks
 
 The **JobHistory** element contains a [**JobSummary**](jobsummary.md) element for every job that the scanner recently completes. **JobHistory** is empty if the WSD Scan Service has no record of recently completed jobs. The Scan Service returns this list from [**GetJobHistoryResponse**](getjobhistoryresponse.md).
 
@@ -79,17 +48,6 @@ The amount of job history that the WSD Scan Service stores and returns is implem
 
 ## See also
 
-
 [**GetJobHistoryResponse**](getjobhistoryresponse.md)
 
 [**JobSummary**](jobsummary.md)
-
- 
-
- 
-
-
-
-
-
-

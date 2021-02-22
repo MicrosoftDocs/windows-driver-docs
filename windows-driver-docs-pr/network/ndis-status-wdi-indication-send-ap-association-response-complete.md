@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE to indicate information about the AP association response sent by OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE.
-ms.assetid: c8bfa3b3-5d22-4831-9355-94c62fed7fd4
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_SEND_AP_ASSOCIATION_RESPONSE_COMPLETE Network Drivers Starting with Windows Vista
@@ -24,10 +23,10 @@ Miniport drivers use NDIS\_STATUS\_WDI\_INDICATION\_SEND\_AP\_ASSOCIATION\_RESPO
 
 | Type | Multiple TLV instances allowed | Optional | Description |
 | --- | --- | --- | --- |
-| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-association-response-result-parameters) |   |   | The association response parameters. |
-| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-association-response-frame) |   |   | The received association response. This does not include the 802.11 MAC header. |
-| [**WDI\_TLV\_BEACON\_IES**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-beacon-ies) |   |   | The beacon IEs from the association. |
-| [**WDI\_TLV\_PHY\_TYPE\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-phy-type-list) |   |   | The list of PHY types. |
+| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_RESULT\_PARAMETERS**](./wdi-tlv-association-response-result-parameters.md) |   |   | The association response parameters. |
+| [**WDI\_TLV\_ASSOCIATION\_RESPONSE\_FRAME**](./wdi-tlv-association-response-frame.md) |   |   | The received association response. This does not include the 802.11 MAC header. |
+| [**WDI\_TLV\_BEACON\_IES**](./wdi-tlv-beacon-ies.md) |   |   | The beacon IEs from the association. |
+| [**WDI\_TLV\_PHY\_TYPE\_LIST**](./wdi-tlv-phy-type-list.md) |   |   | The list of PHY types. |
  
 
 Requirements
@@ -55,9 +54,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

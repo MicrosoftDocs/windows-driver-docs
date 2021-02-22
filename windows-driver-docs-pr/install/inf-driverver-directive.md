@@ -1,7 +1,6 @@
 ---
 title: INF DriverVer Directive
 description: A DriverVer directive specifies version information for drivers installed by this INF.
-ms.assetid: b8c17839-a027-4fb6-b017-8e9a3fd0d694
 keywords:
 - INF DriverVer Directive Device and Driver Installation
 topic_type:
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 A **DriverVer** directive specifies version information for drivers installed by this INF.
 
-```ini
+```inf
 [Version] |
 [DDInstall]
  
@@ -39,11 +38,10 @@ This value specifies a version number.
 
 Each of *w*, *x*, *y*, and *z* must be an integer that is greater than or equal to zero and less than 65535.
 
-For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](how-setup-selects-drivers.md).
+For Windows XP SP1, Windows Server 2003 and later versions of Windows, this value is also *used* by Setup, in combination with the driver rank and date, to select a driver for a device. For more information, see [How Windows Selects Drivers](./how-windows-selects-a-driver-for-a-device.md).
 
-The following points apply to this value for Windows 2000, and Windows XP:
+The following point applies to this value for Windows 2000, and Windows XP:
 
--   This value is used for display purposes only (for example, in Device Manager) and not used to select a driver for a device.
 -   You should consider this value to be required for input drivers (such as mouse or keyboard drivers). If you do not include the version value, input drivers might not update programmatically. Typically, you should specify version information in all [driver packages](driver-packages.md) because the operating system uses version information as a criteria to determine the newest driver.
 
 Remarks
@@ -56,7 +54,7 @@ When the operating system searches for drivers, it selects a driver that has a m
 Examples
 --------
 
-```ini
+```inf
 [Version]
 ...
 DriverVer=09/28/1999,5.00.2136.1
@@ -70,11 +68,4 @@ DriverVer=09/28/1999,5.00.2136.1
 [**Version**](inf-version-section.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x57 XNS_INTERNAL_ERROR
 description: The XNS_INTERNAL_ERROR bug check has a value of 0x00000057.This bug check appears very infrequently.
-ms.assetid: cb39b78a-69c8-4505-b537-c1d0a986685b
 keywords: ["Bug Check 0x57 XNS_INTERNAL_ERROR", "XNS_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: Design billing pages in a mobile broadband app
 description: Design billing pages in a mobile broadband app
-ms.assetid: 44c5a273-1dd4-4ff5-90aa-9d1f4f855439
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -43,17 +42,17 @@ Inappropriate design for the billing page:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   For more information about views and layouts: see [Choosing a layout](https://docs.microsoft.com/previous-versions/windows/apps/hh465327(v=win.10)).
+-   For more information about views and layouts: see [Choosing a layout](/previous-versions/windows/apps/hh465327(v=win.10)).
 
--   For more information about Listviews, see [Quickstart: Adding a ListView](https://docs.microsoft.com/previous-versions/windows/apps/hh465496(v=win.10)).
+-   For more information about Listviews, see [Quickstart: Adding a ListView](/previous-versions/windows/apps/hh465496(v=win.10)).
 
--   For design guidance for error handling, see [Laying out your UI](https://docs.microsoft.com/previous-versions/windows/apps/hh465304(v=win.10)).
+-   For design guidance for error handling, see [Laying out your UI](/previous-versions/windows/apps/hh465304(v=win.10)).
 
--   For accessibility guidance, see [Accessibility in UWP apps using C++, C#, or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh452680(v=win.10)).
+-   For accessibility guidance, see [Accessibility in UWP apps using C++, C#, or Visual Basic](/previous-versions/windows/apps/hh452680(v=win.10)).
 
--   For more information about how to use built-in controls, see [Adding controls and content](https://docs.microsoft.com/previous-versions/windows/apps/hh465393(v=win.10)).
+-   For more information about how to use built-in controls, see [Adding controls and content](/previous-versions/windows/apps/hh465393(v=win.10)).
 
--   For touch input guidelines, see [Quickstart: Touch input](https://docs.microsoft.com/previous-versions/windows/apps/hh465387(v=win.10)).
+-   For touch input guidelines, see [Quickstart: Touch input](/previous-versions/windows/apps/hh465387(v=win.10)).
 
 ## <span id="related_topics"></span>Related topics
 
@@ -61,11 +60,4 @@ Inappropriate design for the billing page:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

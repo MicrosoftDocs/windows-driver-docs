@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x41 MUST_SUCCEED_POOL_EMPTY
 description: The MUST_SUCCEED_POOL_EMPTY bug check has a value of 0x00000041. This indicates that a kernel-mode thread has requested too much must-succeed pool.
-ms.assetid: 10aafcf4-6af0-41b5-803c-578369bdd810
 keywords: ["Bug Check 0x41 MUST_SUCCEED_POOL_EMPTY", "MUST_SUCCEED_POOL_EMPTY"]
 ms.date: 05/23/2017
 topic_type:

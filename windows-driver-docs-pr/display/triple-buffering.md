@@ -1,7 +1,6 @@
 ---
 title: Triple Buffering
 description: Triple Buffering
-ms.assetid: 4651f9d2-09fb-4006-8243-403f564414f5
 keywords:
 - drawing page flips WDK DirectDraw , triple buffering
 - DirectDraw flipping WDK Windows 2000 display , triple buffering

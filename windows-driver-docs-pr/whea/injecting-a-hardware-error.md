@@ -1,7 +1,6 @@
 ---
 title: Injecting a Hardware Error
 description: Injecting a Hardware Error
-ms.assetid: c27c79d9-c0b2-433b-b3f4-7674c361f1aa
 keywords:
 - injecting hardware errors WDK WHEA
 - errors WDK WHEA , injecting, WHEA WDK , injecting
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 # Injecting a Hardware Error
 
 
-A user-mode application can inject a hardware error into the hardware platform by calling the [**WHEAErrorInjectionMethods::InjectError**](https://docs.microsoft.com/windows-hardware/drivers/ddi/_whea/) method. An application injects hardware errors into the hardware platform to test and validate the system's hardware error handling functionality.
+A user-mode application can inject a hardware error into the hardware platform by calling the [**WHEAErrorInjectionMethods::InjectError**](/windows-hardware/drivers/ddi/_whea/) method. An application injects hardware errors into the hardware platform to test and validate the system's hardware error handling functionality.
 
 The following code example shows how to inject a hardware error.
 
@@ -159,9 +158,4 @@ pOutParameters->Release();
 ```
 
  
-
- 
-
-
-
 

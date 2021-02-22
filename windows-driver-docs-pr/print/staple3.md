@@ -1,7 +1,6 @@
 ---
 title: Staple
 description: Staple
-ms.assetid: 71e5bd28-cbf8-4346-884a-88d9f310c378
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Cellular architecture and implementation
 description: The cellular architecture for Windows 10 contains elements from both Windows 8.1 and Windows Phone 8.1.
-ms.assetid: A6F23D12-BCF0-496A-B881-C1F6B35EDA4D
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -39,11 +38,6 @@ For Windows 10 Mobile, the following is required:
 
 ![windows phone 8.1 cellular architecture](images/winphone81-cellular-architecture.png)
 
-
-## Related topics
-
-
-[Mobile Broadband (MB) Design Guide](mobile-broadband--mb--design-guide.md)
 
  
 

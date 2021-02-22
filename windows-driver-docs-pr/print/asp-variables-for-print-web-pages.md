@@ -1,7 +1,6 @@
 ---
 title: ASP Variables for Print Web Pages
 description: ASP Variables for Print Web Pages
-ms.assetid: eab0d5e0-0e20-443c-b714-a2b2327894e4
 keywords:
 - customized print Web pages WDK , ASP variables
 - ASP variables WDK printer
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 Microsoft provides a set of ASP session variables for use by customized print Web pages. The following table lists the session variables. Customized ASP files must not modify these variables. As indicated, some variables are only valid if Microsoft's TCP/IP port monitor is being used for the printer.
 
-Some variables are passed in as session variables, while others are passed in using URL decoration. Session variables can be accessed by using Session("*VariableName*"). Parameters passed in by URL decoration can be accessed by using Request("*VariableName*"). If you wish to automatically refresh the status page, you might find it necessary to redecorate the URL with the variables your page requires. Since Request variables must be passed in the URL, they may require encoding and decoding to translate from ANSI to Unicode representation. A helper object, whose COM ProgID is "OlePrn.OleCvt", has been provided to enable encoding and decoding between the ANSI used in the URL and Unicode. Two methods on this object, [**IOleCvt::EncodeUnicodeName**](https://docs.microsoft.com/windows-hardware/drivers/print/iolecvt-encodeunicodename), and [**IOleCvt::DecodeUnicodeName**](https://docs.microsoft.com/windows-hardware/drivers/print/iolecvt-decodeunicodename), can be used to translate from ANSI to Unicode, and from Unicode to ANSI, respectively. This conversion does not need to be performed for Session variables.
+Some variables are passed in as session variables, while others are passed in using URL decoration. Session variables can be accessed by using Session("*VariableName*"). Parameters passed in by URL decoration can be accessed by using Request("*VariableName*"). If you wish to automatically refresh the status page, you might find it necessary to redecorate the URL with the variables your page requires. Since Request variables must be passed in the URL, they may require encoding and decoding to translate from ANSI to Unicode representation. A helper object, whose COM ProgID is "OlePrn.OleCvt", has been provided to enable encoding and decoding between the ANSI used in the URL and Unicode. Two methods on this object, [**IOleCvt::EncodeUnicodeName**](./iolecvt-encodeunicodename.md), and [**IOleCvt::DecodeUnicodeName**](./iolecvt-decodeunicodename.md), can be used to translate from ANSI to Unicode, and from Unicode to ANSI, respectively. This conversion does not need to be performed for Session variables.
 
 Variable
 Value
@@ -164,9 +163,4 @@ Yes
 The session variables specify properties of the "current" printer, that is, the printer for which an ASP page was invoked. To obtain additional printer properties for the current printer, or to obtain properties of a different printer, see [ActiveX Objects for Print Web Pages](activex-objects-for-print-web-pages.md).
 
  
-
- 
-
-
-
 

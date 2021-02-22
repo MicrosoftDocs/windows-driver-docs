@@ -1,7 +1,6 @@
 ---
 title: Introduction to Driver Notification
 description: Introduction to Driver Notification
-ms.assetid: c0c09480-628a-4f12-b6a3-881cc3e12fd5
 keywords: ["driver notification WDK dynamic hardware partitioning , synchronous", "driver notification WDK dynamic hardware partitioning , asynchronous", "driver notification WDK dynamic hardware partitioning , memory notification"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -52,7 +51,7 @@ The following table identifies the different notification methods and whether th
 
 ## Synchronous Driver Notification
 
-With [Synchronous Driver Notification](synchronous-driver-notification.md), the operating system synchronously notifies device drivers that a new processor has been added to the hardware partition. This is the first notification that a device driver receives about a change to the number of processors.
+With [Synchronous Driver Notification](registering-for-synchronous-driver-notification.md), the operating system synchronously notifies device drivers that a new processor has been added to the hardware partition. This is the first notification that a device driver receives about a change to the number of processors.
 
 When a new processor is added to the hardware partition, the operating system sends this notification to device drivers after the operating system has started the new processor, but before the operating system begins scheduling threads on the processor. When a device driver receives this notification, it can allocate any per processor data structures and assign any other per processor resources to the new processor. This prepares the device driver to run its dispatch routines, interrupt service routines (ISRs), deferred procedure calls (DPCs), and any other driver threads on the new processor.
 
@@ -62,7 +61,7 @@ This notification method is only applicable to processors. There is no synchrono
 
 ## Asynchronous Driver Notification
 
-With [Asynchronous Driver Notification](asynchronous-driver-notification.md), the operating system asynchronously notifies device drivers that a new processor or memory module has been added to the hardware partition. Starting with Windows Server 2008, processors and memory modules are considered Plug and Play (PnP) devices. Therefore, the operating system uses the PnP notification mechanism for asynchronous driver notification.
+With [Asynchronous Driver Notification](registering-for-asynchronous-driver-notification.md), the operating system asynchronously notifies device drivers that a new processor or memory module has been added to the hardware partition. Starting with Windows Server 2008, processors and memory modules are considered Plug and Play (PnP) devices. Therefore, the operating system uses the PnP notification mechanism for asynchronous driver notification.
 
 When a new processor or memory module is added to the hardware partition, the operating system sends this notification to device drivers after the operating system has started the new processor or memory device. In the case of a new processor, the operating system does not send this notification to device drivers until after it has started scheduling threads on the new processor.
 
@@ -97,9 +96,9 @@ This method is only applicable to memory. There is no corresponding notification
 
 ## Resource Rebalance
 
-Starting with Windows Server 2008, when you add a new processor to a hardware partition, the operating system initiates a system-wide resource rebalance. Whether a device will participate in such a resource rebalance is determined by the setting of the [**DEVPKEY\_Device\_DHP\_Rebalance\_Policy**](https://docs.microsoft.com/windows-hardware/drivers/install/devpkey-device-dhp-rebalance-policy) device property for the device. The default behavior for devices in the Network Adapter (Class = Net) [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) is that they will not participate in resource rebalancing when a new processor is dynamically added to the system. The default behavior for devices in all other device setup classes is that they will participate in resource rebalancing when a new processor is dynamically added to the system.
+Starting with Windows Server 2008, when you add a new processor to a hardware partition, the operating system initiates a system-wide resource rebalance. Whether a device will participate in such a resource rebalance is determined by the setting of the [**DEVPKEY\_Device\_DHP\_Rebalance\_Policy**](../install/devpkey-device-dhp-rebalance-policy.md) device property for the device. The default behavior for devices in the Network Adapter (Class = Net) [device setup class](../install/overview-of-device-setup-classes.md) is that they will not participate in resource rebalancing when a new processor is dynamically added to the system. The default behavior for devices in all other device setup classes is that they will participate in resource rebalancing when a new processor is dynamically added to the system.
 
-If a device is a Plug and Play (PnP) device and it participates in such a resource rebalance, the operating system sends [**IRP\_MN\_QUERY\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-stop-device), [**IRP\_MN\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device), and [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) PnP IRPs to the driver for the device during the resource rebalancing operation. These PnP requests notify the driver that a hardware change has occurred in the hardware partition. A device driver should support resource rebalancing by correctly handling the **IRP\_MN\_QUERY\_STOP\_DEVICE** and **IRP\_MN\_STOP\_DEVICE** PnP requests. A device driver should never reject a **IRP\_MN\_QUERY\_STOP\_DEVICE** PnP request.
+If a device is a Plug and Play (PnP) device and it participates in such a resource rebalance, the operating system sends [**IRP\_MN\_QUERY\_STOP\_DEVICE**](./irp-mn-query-stop-device.md), [**IRP\_MN\_STOP\_DEVICE**](./irp-mn-stop-device.md), and [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) PnP IRPs to the driver for the device during the resource rebalancing operation. These PnP requests notify the driver that a hardware change has occurred in the hardware partition. A device driver should support resource rebalancing by correctly handling the **IRP\_MN\_QUERY\_STOP\_DEVICE** and **IRP\_MN\_STOP\_DEVICE** PnP requests. A device driver should never reject a **IRP\_MN\_QUERY\_STOP\_DEVICE** PnP request.
 
 These PnP requests enable a device driver to fully use the new set of active processors in the hardware partition after you add a new processor. Specifically, a device driver that supports resource rebalancing uses the PnP requests that it receives during the resource rebalance to disconnect its interrupt service routines (ISRs) and reconnect them with the updated processor affinity value. This enables the device driver to use all the currently active processors in the hardware partition, including any new processors, for handling interrupt requests.
 

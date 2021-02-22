@@ -1,7 +1,6 @@
 ---
 title: DxApi Miniport Driver Functions For Windows 2000 and Later
 description: DxApi Miniport Driver Functions For Windows 2000 and Later
-ms.assetid: e9a41e27-930c-49a2-b5e3-0b709b873bb3
 keywords:
 - DxApi miniport drivers WDK DirectDraw
 - DxApi miniport drivers WDK DirectDraw , about DxApi miniport drivers
@@ -26,15 +25,9 @@ DxApi interface support is useful for the following operations:
 
 -   Field skipping using an IRQ to support MPEG drivers that can undo the 3:2 pulldown of MPEG data originally sampled from film.
 
--   Bus mastering, so devices can continuously transfer data without having to call [*DdLock*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_lock) / [*DdUnlock*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_surfcb_unlock) for every frame. This is especially useful because the drivers for these devices are WDM drivers.
+-   Bus mastering, so devices can continuously transfer data without having to call [*DdLock*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_lock) / [*DdUnlock*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_surfcb_unlock) for every frame. This is especially useful because the drivers for these devices are WDM drivers.
 
 -   Capturing video and VBI. In the miniport driver, it is easy to capture video that is based on a hardware video port IRQ or graphics IRQ.
 
  
-
- 
-
-
-
-
 

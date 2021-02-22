@@ -1,7 +1,6 @@
 ---
 title: EFI_USB_ENDPOINT_TYPE
 description: EFI_USB_ENDPOINT_TYPE
-ms.assetid: 5cdb0efc-2355-42e2-929b-df19257e35c1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

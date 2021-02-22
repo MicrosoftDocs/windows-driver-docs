@@ -1,7 +1,6 @@
 ---
 title: Minidriver-Supplied Halftoning
 description: Minidriver-Supplied Halftoning
-ms.assetid: 15af499a-c541-4d61-ace3-5a211574674c
 keywords:
 - minidriver-supplied halftoning WDK Unidrv
 - customized halftoning WDK Unidrv
@@ -19,7 +18,7 @@ If a specified color format is one for which the number of bits per pixel used f
 
 To provide customized halftoning capabilities, you must do the following:
 
--   Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method.
+-   Provide a [rendering plug-in](rendering-plug-ins.md) that implements the [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) method.
 
 -   Include a Halftone\*Feature entry in your GPD file and, for each customized halftoning method, include an \*Option entry describing the halftoning method. (Do not use any of the [option attributes for the halftone feature](option-attributes-for-the-halftone-feature.md).)
 
@@ -72,14 +71,9 @@ The following example defines two color formats and four halftoning methods. The
 }
 ```
 
-In the example, both the ColorFormat1 and ColorFormat2 ColorMode options represent color formats that Unidrv can handle, as explained in [Handling Color Formats](handling-color-formats.md). For ColorFormat2, an \***IPCallbackID** attribute is specified. If the printer user selects ColorFormat2 as the color format, Unidrv calls the printer's [**IPrintOemUni::ImageProcessing**](https://docs.microsoft.com/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) COM method to handle halftoning. One of the method's parameters is a pointer to the string name representing the currently selected halftoning method.
+In the example, both the ColorFormat1 and ColorFormat2 ColorMode options represent color formats that Unidrv can handle, as explained in [Handling Color Formats](handling-color-formats.md). For ColorFormat2, an \***IPCallbackID** attribute is specified. If the printer user selects ColorFormat2 as the color format, Unidrv calls the printer's [**IPrintOemUni::ImageProcessing**](/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-imageprocessing) COM method to handle halftoning. One of the method's parameters is a pointer to the string name representing the currently selected halftoning method.
 
 For more information about halftoning, see [Customized Halftoning](customized-halftoning.md).
 
  
-
- 
-
-
-
 

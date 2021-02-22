@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_RCV_LINK_SPEED
 description: As a query, use the OID_GEN_RCV_LINK_SPEED OID to determine the receive link speed of a network interface. Version Information Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
-ms.assetid: d66bdba3-93f4-4a5a-a658-9b1a2e1b9407
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_RCV_LINK_SPEED Network Drivers Starting with Windows Vista
@@ -24,7 +23,7 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
 If the interface provider returns NDIS\_STATUS\_SUCCESS, the result of the query is a ULONG64 value that indicates the receive link speed of the interface, in bits per second.
 
@@ -47,12 +46,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: .shell (Command Shell)
 description: The .shell command launches a shell process and redirects its output to the debugger, or to a specified file.
-ms.assetid: 351cbd54-6e1a-4dc1-b0d8-8e61294b0e86
 keywords: ["Command Shell (.shell) command", "MS-DOS Shell (.shell) command", "DOS Shell (.shell) command", "shell commands, Command Shell (.shell) command", ".shell (Command Shell) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

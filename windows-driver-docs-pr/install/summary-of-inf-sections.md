@@ -1,7 +1,6 @@
 ---
 title: Summary of INF Sections
 description: Summary of INF Sections
-ms.assetid: a9d4691b-4429-456b-a5d2-482ccd0a2845
 keywords:
 - INF files WDK device installations , sections
 - sections WDK INF files
@@ -85,16 +84,16 @@ This section should be included in the INF file of any manually installed non-Pn
 
  
 
-This section is used to create an [override configuration](https://docs.microsoft.com/windows-hardware/drivers/kernel/hardware-resources#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
+This section is used to create an [override configuration](../kernel/hardware-resources.md#logical-configuration-types-for-resource-requirements-lists), which overrides the hardware resource requirements that a Plug and Play device's bus driver reports.
 
 <a href="" id="ddinstall-interfaces-section"></a>[***DDInstall*.Interfaces Section**](inf-ddinstall-interfaces-section.md)  
 If a driver exports the functionality of a device interface class, therefore creating a new instance of the interface class, such as kernel-streaming still-image capture or data decompression, its INF file can have this section.
 
 <a href="" id="interfaceinstall32-section"></a>[**InterfaceInstall32 Section**](inf-interfaceinstall32-section.md)  
-If a to-be-installed component, such as a new class driver, provides one or more new [device interface classes](device-interface-classes.md) to higher-level components, its INF file has this section. In effect, this section bootstraps a set of device interfaces for a new class by setting up whatever is needed to use the functionality that the interface class provides.
+If a to-be-installed component, such as a new class driver, provides one or more new [device interface classes](./overview-of-device-interface-classes.md) to higher-level components, its INF file has this section. In effect, this section bootstraps a set of device interfaces for a new class by setting up whatever is needed to use the functionality that the interface class provides.
 
 <a href="" id="defaultinstall-section"></a>[**DefaultInstall Section**](inf-defaultinstall-section.md)  
-An INF file's **DefaultInstall** section will be accessed if a user selects the "Install" menu item after right-clicking on the INF file name.
+An INF file's **DefaultInstall** section will be accessed if a user selects the "Install" menu item after selecting and holding (or right-clicking) on the INF file name.
 
 <a href="" id="defaultinstall-services-section"></a>[**DefaultInstall.Services Section**](inf-defaultinstall-services-section.md)  
 This section is the same as the [**INF DDInstall.Services section**](inf-ddinstall-services-section.md), and is used in association with an [**INF DefaultInstall section**](inf-defaultinstall-section.md).
@@ -115,10 +114,4 @@ Optional entries and directives within each such section are shown enclosed in u
 The **Provider** entry in a **\[Version\]** section is optional in the sense that it is not a mandatory entry in every INF file.
 
  
-
- 
-
-
-
-
 

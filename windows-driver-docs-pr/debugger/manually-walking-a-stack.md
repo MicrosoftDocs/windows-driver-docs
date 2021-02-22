@@ -1,7 +1,6 @@
 ---
 title: Manually Walking a Stack
 description: Manually Walking a Stack
-ms.assetid: 9235fe4d-3e94-4143-867f-18b696e489d0
 keywords: ["stack trace, walking the stack manually", "walking the stack"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

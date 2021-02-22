@@ -1,5 +1,5 @@
 ---
-Description: Support for WPD infrastructure (WpdServiceSampleDriverSample)
+description: Support for WPD infrastructure (WpdServiceSampleDriverSample)
 title: Support for WPD infrastructure (WpdServiceSampleDriverSample)
 ms.date: 04/20/2017
 ms.localizationpriority: medium

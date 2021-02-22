@@ -35,7 +35,7 @@ The valid values for this property are shown in the following table.
 | WIA_MULTI_FEED_DETECT_ METHOD_LENGTH | The device measures the length of the scanned page with the length of the original page size being scanned. |
 | WIA_MULTI_FEED_DETECT_METHOD_OVERLAP | The device detects overlapped scanned pages. |
 
-The mini-driver can support a different set of [**WIA\_IPS\_MULTI\_FEED\_SENSITIVITY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-multi-feed-sensitivity) property values for each **WIA\_IPS\_MULTI\_FEED\_DETECT\_METHOD** property value. When both **WIA\_IPS\_MULTI\_FEED\_DETECT\_METHOD** and the **WIA\_IPS\_MULTI\_FEED\_SENSITIVITY** properties are supported, the WIA application should first set the **WIA\_IPS\_MULTI\_FEED\_DETECT\_METHOD** property to configure the multi-feed detection method, and then set the **WIA\_IPS\_MULTI\_FEED\_SENSITIVITY** property to configure the desired sensitivity for this detection method.
+The mini-driver can support a different set of [**WIA\_IPS\_MULTI\_FEED\_SENSITIVITY**](./wia-ips-multi-feed-sensitivity.md) property values for each **WIA\_IPS\_MULTI\_FEED\_DETECT\_METHOD** property value. When both **WIA\_IPS\_MULTI\_FEED\_DETECT\_METHOD** and the **WIA\_IPS\_MULTI\_FEED\_SENSITIVITY** properties are supported, the WIA application should first set the **WIA\_IPS\_MULTI\_FEED\_DETECT\_METHOD** property to configure the multi-feed detection method, and then set the **WIA\_IPS\_MULTI\_FEED\_SENSITIVITY** property to configure the desired sensitivity for this detection method.
 
 This property is valid only for the Feeder item (WIA\_CATEGORY\_FEEDER) and is optional. There is no required default value when the property is supported.
 

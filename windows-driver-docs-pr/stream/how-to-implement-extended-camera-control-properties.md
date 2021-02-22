@@ -1,7 +1,6 @@
 ---
 title: How To Implement Extended Camera Control Properties
 description: Implementing extended camera control properties for a camera driver.
-ms.assetid: BF5B2F1F-AC1D-4ED1-B1FC-64E8FA1218DA
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Printing to URLs from Applications
 description: Printing to URLs from Applications
-ms.assetid: bc9aedb4-1d64-4b70-b14b-1392f914a635
 keywords:
 - Internet printing WDK , printing to URLs
 - URL-identified print queue WDK
@@ -27,7 +26,7 @@ Applications generally refer to the print queue by its friendly name, as they do
 
 Applications that refer to print queues by friendly names are generally unaware of whether the print queue is local or on a network, or whether the network protocol is RPC, SMB, or HTTP. However applications can, if necessary, call **OpenPrinter** directly, specifying a URL. When specifying a URL to **OpenPrinter**, the following URL format must be used:
 
-http://&lt;ServerName&gt;/printers/&lt;ShareName&gt;/.printer
+https://&lt;ServerName&gt;/printers/&lt;ShareName&gt;/.printer
 
 where &lt;ServerName&gt; is the server name (either a DNS name for Internet connections, or a WINS name for intranet connections), "printers" represents a virtual directory on the server, and &lt;ShareName&gt; is the print queue's share name, as specified in its property sheet. (Virtual directories are discussed in the Microsoft Windows SDK documentation.)
 

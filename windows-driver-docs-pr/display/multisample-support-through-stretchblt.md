@@ -1,7 +1,6 @@
 ---
 title: Multisample Support through StretchBlt
 description: Multisample Support through StretchBlt
-ms.assetid: c829c612-d09d-4a33-a117-e50b9ed57251
 keywords:
 - DirectX 8.0 release notes WDK Windows 2000 display , multisample rendering, StretchBlt
 - multisample rendering WDK DirectX 8.0 , StretchBlt
@@ -25,13 +24,7 @@ When the driver sets the D3DPRASTERCAPS\_STRETCHBLTMULTISAMPLE bit, it indicates
 
 -   Is nonresponsive to requests from applications to modify samples in a multisample render target. That is, it does not respond to setting the bitmask of the D3DRS\_MULTISAMPLEMASK device render state (D3DRENDERSTATETYPE).
 
-It is important to note that if the driver uses a stretch blt to perform a page flip in fullscreen mode, the driver should specify the supported sample counts in the **wFlipMSTypes** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat)'s **MultiSampleCaps** structure and not the **wBltMSTypes** member as a flip is being performed.
+It is important to note that if the driver uses a stretch blt to perform a page flip in fullscreen mode, the driver should specify the supported sample counts in the **wFlipMSTypes** member of the [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat)'s **MultiSampleCaps** structure and not the **wBltMSTypes** member as a flip is being performed.
 
  
-
- 
-
-
-
-
 

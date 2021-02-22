@@ -1,7 +1,6 @@
 ---
 title: INF Files for WIA Devices
 description: INF Files for WIA Devices
-ms.assetid: 65eac8b5-35d2-4537-8646-a35a1cf9aced
 ms.date: 07/18/2018
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # INF Files for WIA Devices
 
 
-The default class installer for still image devices, *sti\_ci.dll*, recognizes a special set of INF file entries. Within an INF file, these entries must be placed within a device's [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section). The entries are described in the following table.
+The default class installer for still image devices, *sti\_ci.dll*, recognizes a special set of INF file entries. Within an INF file, these entries must be placed within a device's [**INF DDInstall Section**](../install/inf-ddinstall-section.md). The entries are described in the following table.
 
 <table>
 <colgroup>
@@ -88,15 +87,15 @@ The default class installer for still image devices, *sti\_ci.dll*, recognizes a
 <p>A value of Message1 causes a system-supplied message to be displayed, and sets the <strong>CreateFileName</strong> entry value to AUTO.</p>
 <p>Applies to both scanners and cameras that require manual installation.</p></td>
 <td><p>Optional</p>
-<p>Note that for Plug and Play devices, <strong>PortSelect</strong> is ignored, but the device still must have the <strong>CreateFileName</strong> entry value set to AUTO in order for WIA to load the device. Use the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive" data-raw-source="[&lt;strong&gt;INF AddReg Directive&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive)"><strong>INF AddReg Directive</strong></a> to add this entry to the <a href="https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section" data-raw-source="[&lt;strong&gt;INF DDInstall Section&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section)"><strong>INF DDInstall Section</strong></a> of the device's INF file.</p></td>
+<p>Note that for Plug and Play devices, <strong>PortSelect</strong> is ignored, but the device still must have the <strong>CreateFileName</strong> entry value set to AUTO in order for WIA to load the device. Use the <a href="/windows-hardware/drivers/install/inf-addreg-directive" data-raw-source="[&lt;strong&gt;INF AddReg Directive&lt;/strong&gt;](../install/inf-addreg-directive.md)"><strong>INF AddReg Directive</strong></a> to add this entry to the <a href="/windows-hardware/drivers/install/inf-ddinstall-section" data-raw-source="[&lt;strong&gt;INF DDInstall Section&lt;/strong&gt;](../install/inf-ddinstall-section.md)"><strong>INF DDInstall Section</strong></a> of the device's INF file.</p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-**Note**   In order to communicate with a device, a user-mode client (a minidriver) must ask the WIA service for the device's file name and a string that specifies the name of the object to create or open. (The file name does not have to be the name of a disk file.) Responding to such a query, the WIA service obtains the device's file name from the **CreateFileName** registry entry. (The *usbscan.sys* and *scsiscan.sys* kernel-mode drivers create this entry, as does the class installer.) The minidriver receives this file name by calling the [**IStiDeviceControl::GetMyDevicePortName**](https://docs.microsoft.com/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname) method. The minidriver can then use this file name when it calls the [**CreateFile**](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-createfilea) function (described in the Microsoft Windows SDK documentation) to open a handle to the device.
-If the device is installed manually, the class installer creates the **CreateFileName** entry, setting its value to one that depends on the user's selection on the port selection page: COM*X*, LPT*X*, or AUTO. Some devices (network scanners, for example) that are installed manually do not require a port. In such cases, the resulting port selection dialog can confuse users. You can prevent this dialog from appearing by adding the following entry in the [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of your device's INF file:
+**Note**   In order to communicate with a device, a user-mode client (a minidriver) must ask the WIA service for the device's file name and a string that specifies the name of the object to create or open. (The file name does not have to be the name of a disk file.) Responding to such a query, the WIA service obtains the device's file name from the **CreateFileName** registry entry. (The *usbscan.sys* and *scsiscan.sys* kernel-mode drivers create this entry, as does the class installer.) The minidriver receives this file name by calling the [**IStiDeviceControl::GetMyDevicePortName**](/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istidevicecontrol-getmydeviceportname) method. The minidriver can then use this file name when it calls the [**CreateFile**](/windows/win32/api/fileapi/nf-fileapi-createfilea) function (described in the Microsoft Windows SDK documentation) to open a handle to the device.
+If the device is installed manually, the class installer creates the **CreateFileName** entry, setting its value to one that depends on the user's selection on the port selection page: COM*X*, LPT*X*, or AUTO. Some devices (network scanners, for example) that are installed manually do not require a port. In such cases, the resulting port selection dialog can confuse users. You can prevent this dialog from appearing by adding the following entry in the [**INF DDInstall Section**](../install/inf-ddinstall-section.md) of your device's INF file:
 
  
 
@@ -114,7 +113,7 @@ If the device is installed manually, the class installer creates the **CreateFil
 
 ### Additional INF File Entries
 
-The entries in the following table must be placed within the section pointed to by the device's [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive):
+The entries in the following table must be placed within the section pointed to by the device's [**INF AddReg Directive**](../install/inf-addreg-directive.md):
 
 <table>
 <colgroup>
@@ -157,11 +156,11 @@ The entries in the following table must be placed within the section pointed to 
 
  
 
-The default class installer for still image devices supports the standard [**INF CopyFiles Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive).
+The default class installer for still image devices supports the standard [**INF CopyFiles Directive**](../install/inf-copyfiles-directive.md).
 
 The default INF file for still image devices, *sti.inf*, defines two installation sections for each device type, as follows:
 
--   An [**INF DDInstall Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section), which must be referenced within the *DDInstall* section of the vendor-supplied INF file, as shown in the following table.
+-   An [**INF DDInstall Section**](../install/inf-ddinstall-section.md), which must be referenced within the *DDInstall* section of the vendor-supplied INF file, as shown in the following table.
 
     <table>
     <colgroup>
@@ -204,7 +203,7 @@ The default INF file for still image devices, *sti.inf*, defines two installatio
 
 <!-- -->
 
--   An INF DDInstall Services section, which must be referenced within the [**INF DDInstall.Services Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-services-section) of the vendor-supplied INF file, as shown in the following table.
+-   An INF DDInstall Services section, which must be referenced within the [**INF DDInstall.Services Section**](../install/inf-ddinstall-services-section.md) of the vendor-supplied INF file, as shown in the following table.
 
     <table>
     <colgroup>
@@ -299,12 +298,5 @@ The user interface (UI) entries are required only if the vendor supplies a custo
 
 **Remarks**
 
-When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](https://docs.microsoft.com/previous-versions/gg463179(v=msdn.10)) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.
-
- 
-
- 
-
-
-
+When you're developing an INF file for scanners, you can use [Microsoft OS descriptors](/previous-versions/gg463179(v=msdn.10)) to enable compatibility ID functionality. When you do this, you allow one scanner driver to be compatible with multiple scanner models.
 

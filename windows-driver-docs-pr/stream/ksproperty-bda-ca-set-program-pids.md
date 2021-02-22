@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS
 description: Clients use KSPROPERTY\_BDA\_CA\_SET\_PROGRAM\_PIDS to set the list of packet identifiers in a particular program.
-ms.assetid: 5cc049f7-df97-4739-8ec4-22ab646781a6
 keywords: ["KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -79,18 +78,11 @@ Requirements
 ## See also
 
 
-[**BDA\_PROGRAM\_PID\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_program_pid_list)
+[**BDA\_PROGRAM\_PID\_LIST**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_program_pid_list)
 
 [**KSEVENT\_BDA\_PROGRAM\_FLOW\_STATUS\_CHANGED**](ksevent-bda-program-flow-status-changed.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

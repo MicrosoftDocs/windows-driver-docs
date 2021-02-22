@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_THREAD
 description: DEBUG\_REQUEST\_TARGET\_EXCEPTION\_THREAD
-ms.assetid: 09ecd287-a5ef-448b-a5c3-affa559385fc
 keywords: ["DEBUG_REQUEST_TARGET_EXCEPTION_THREAD Windows Debugging"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Unidrv Minidrivers
 description: Unidrv Minidrivers
-ms.assetid: ebf12f61-6194-4033-92a2-2bbccc40a6fd
 keywords:
 - Unidrv, minidrivers
 - minidrivers WDK Unidrv

@@ -1,7 +1,6 @@
 ---
 title: IRP-Based IOCTL and FSCTL Operations
 description: IRP-Based IOCTL and FSCTL Operations
-ms.assetid: 08d6cf89-aaba-4aa1-baff-eb6aece2875f
 keywords:
 - IOCTLs WDK file systems
 - FSCTL WDK file system
@@ -39,14 +38,9 @@ This macro returns one of the following values:
 #define METHOD_NEITHER                  3
 ```
 
-For more information about the CTL\_CODE macro, see [Defining I/O Control Codes](https://docs.microsoft.com/windows-hardware/drivers/kernel/defining-i-o-control-codes).
+For more information about the CTL\_CODE macro, see [Defining I/O Control Codes](../kernel/defining-i-o-control-codes.md).
 
 Note that IRP\_MJ\_DEVICE\_CONTROL can also be a fast I/O operation. When it is a fast I/O operation, it always uses neither buffered nor direct I/O, regardless of the IOCTL's transfer type. For more information about when IRP\_MJ\_DEVICE\_CONTROL can be a fast I/O operation, see [Operations That Can Be IRP-Based or Fast I/O](operations-that-can-be-irp-based-or-fast-i-o.md).
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PM_PROTOCOL_OFFLOAD_REMOVE
 description: WDI_TLV_PM_PROTOCOL_OFFLOAD_REMOVE is a TLV that contains the protocol offload ID to be removed with OID_WDI_SET_REMOVE_PM_PROTOCOL_OFFLOAD.
-ms.assetid: BD74C9F7-6370-41D5-841F-6949D7748E30
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PM_PROTOCOL_OFFLOAD_REMOVE Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE
 
 
-WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE is a TLV that contains the protocol offload ID to be removed with [OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-remove-pm-protocol-offload).
+WDI\_TLV\_PM\_PROTOCOL\_OFFLOAD\_REMOVE is a TLV that contains the protocol offload ID to be removed with [OID\_WDI\_SET\_REMOVE\_PM\_PROTOCOL\_OFFLOAD](./oid-wdi-set-remove-pm-protocol-offload.md).
 
 ## TLV Type
 
@@ -57,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

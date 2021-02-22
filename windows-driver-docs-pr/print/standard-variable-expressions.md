@@ -1,7 +1,6 @@
 ---
 title: Standard Variable Expressions
 description: Standard Variable Expressions
-ms.assetid: b77c6b88-9ef2-4485-b77c-50acb21e13b9
 keywords:
 - printer commands WDK Unidrv , strings
 - command strings WDK Unidrv

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO
 description: WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO is a TLV that contains information about the incoming association request.
-ms.assetid: E36ADD95-1751-4FCE-9032-900968878DEE
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_INCOMING_ASSOCIATION_REQUEST_INFO Network Drivers Starting with Windows Vista

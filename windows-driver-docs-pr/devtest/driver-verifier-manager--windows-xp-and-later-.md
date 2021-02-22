@@ -1,7 +1,6 @@
 ---
 title: Driver Verifier Manager (Windows XP and later)
 description: Driver Verifier Manager (Windows XP and later)
-ms.assetid: 37a7d348-8b55-44f7-86d6-6b195704b9fd
 keywords:
 - Driver Verifier Manager
 - Verifier utility

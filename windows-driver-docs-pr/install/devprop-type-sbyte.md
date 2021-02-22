@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_SBYTE
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_BYTE identifier represents the base-data-type identifier that indicates the data type is a SBYTE-typed signed integer.
-ms.assetid: d2c503aa-4427-4745-b3c2-57b6ebd0e93c
 keywords: ["DEVPROP_TYPE_SBYTE Device and Driver Installation"]
 topic_type:
 - apiref

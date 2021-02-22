@@ -1,7 +1,6 @@
 ---
 title: PortCls Private PEP Context Sharing
 description: Starting with Windows 8, a miniport driver can use IPortClsRuntimePower, a new interface, for private context sharing with the Windows Power Engine Plug-in (PEP).
-ms.assetid: 27A0DD72-8AD0-4F38-B17C-9BDD63C5E7E1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,13 +17,13 @@ The audio port class driver (PortCls) has been updated to expose the new interfa
 
 The miniport driver gains access to its port's IPortClsRuntimePower via the following sequence of events:
 
-1. The miniport driver calls [**PcNewPort**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) and supplies IID\_IPortWaveRT as the REFID.
+1. The miniport driver calls [**PcNewPort**](/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewport) and supplies IID\_IPortWaveRT as the REFID.
 
-2. **PcNewPort** creates a port interface (Pport) of type [IPortWaveRT](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert).
+2. **PcNewPort** creates a port interface (Pport) of type [IPortWaveRT](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert).
 
 3. The miniport driver then calls QueryInterface in the newly created **IPortWaveRT** port interface, and specifies IID\_IPortClsRuntimePower as the interface GUID.
 
-4. The **IPortWaveRT** port interface provides the miniport driver with a pointer to its [**IPortClsRuntimePower**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsruntimepower) interface.
+4. The **IPortWaveRT** port interface provides the miniport driver with a pointer to its [**IPortClsRuntimePower**](/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsruntimepower) interface.
 
 The *Portcls.h* header file defines the GUID for the IPortClsRuntimePower as follows:
 
@@ -37,7 +36,7 @@ DEFINE_GUID(IID_IPortClsRuntimePower,
 ## <span id="Registering_a_callback"></span><span id="registering_a_callback"></span><span id="REGISTERING_A_CALLBACK"></span>Registering a callback
 
 
-The miniport driver uses the [**IPortClsRuntimePower::RegisterPowerControlCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsruntimepower-registerpowercontrolcallback) method to register a callback. This method is invoked either when the PEP initiates a private request, or in response to a private request that is initiated by the miniport driver itself. The callback registration should typically be performed while the driver is handling the IRP\_MN\_START\_DEVICE PNP Irp.
+The miniport driver uses the [**IPortClsRuntimePower::RegisterPowerControlCallback**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsruntimepower-registerpowercontrolcallback) method to register a callback. This method is invoked either when the PEP initiates a private request, or in response to a private request that is initiated by the miniport driver itself. The callback registration should typically be performed while the driver is handling the IRP\_MN\_START\_DEVICE PNP Irp.
 
 Aside from the Context pointer that is supplied in the callback, the other parameters are defined identically to the definitions for the runtime power framework’s PowerControlCallback. Additionally, the miniport’s callback must be of type PCPFNRUNTIME\_POWER\_CONTROL\_CALLBACK, as defined in the following snippet from the *Portcls.h* header file.
 
@@ -57,19 +56,14 @@ _IRQL_requires_max_(DISPATCH_LEVEL)
 );
 ```
 
-When the driver is stopped or removed, it must use the [**IPortClsRuntimePower::UnregisterPowerControlCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsruntimepower-unregisterpowercontrolcallback) method to unregister any registered callbacks.
+When the driver is stopped or removed, it must use the [**IPortClsRuntimePower::UnregisterPowerControlCallback**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsruntimepower-unregisterpowercontrolcallback) method to unregister any registered callbacks.
 
 ## <span id="Sending_private_power_controls"></span><span id="sending_private_power_controls"></span><span id="SENDING_PRIVATE_POWER_CONTROLS"></span>Sending private power controls
 
 
-After the miniport establishes access to an **IPortClsRuntimePower** interface, and uses the interface's **RegisterPowerControlCallback** method to register a callback, it is now ready to send private power controls. When the callback method is invoked, the miniport driver uses the [**IPortClsRuntimePower::SendPowerControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsruntimepower-sendpowercontrol) method to send the private power controls to the Windows PEP.
+After the miniport establishes access to an **IPortClsRuntimePower** interface, and uses the interface's **RegisterPowerControlCallback** method to register a callback, it is now ready to send private power controls. When the callback method is invoked, the miniport driver uses the [**IPortClsRuntimePower::SendPowerControl**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsruntimepower-sendpowercontrol) method to send the private power controls to the Windows PEP.
 
-With the exception of the *DeviceObject* parameter, all other parameters are defined identically to those for the runtime power framework’s [PoFxPowerControl](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxpowercontrol) method.
-
- 
+With the exception of the *DeviceObject* parameter, all other parameters are defined identically to those for the runtime power framework’s [PoFxPowerControl](/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxpowercontrol) method.
 
  
-
-
-
 

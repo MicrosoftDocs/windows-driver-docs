@@ -1,7 +1,6 @@
 ---
 title: Creating a File Object to Handle I/O
 description: Creating a File Object to Handle I/O
-ms.assetid: 3cd826fc-5c67-4ab4-800a-b5aa4bd5244f
 keywords:
 - file object to handle I/O WDK UMDF
 - file object to handle I/O WDK UMDF , creating
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 # Creating a File Object to Handle I/O
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 When an application opens a file handle, the I/O manager creates a file object. The framework in turn creates a framework file object to represent the I/O manager's file object.
 

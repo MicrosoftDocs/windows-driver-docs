@@ -1,8 +1,6 @@
 ---
 title: INF DDInstall.Events Section
-author: andylsn
 description: Each per-Models DDInstall.Events section contains one or more INF AddEventProvider directives that reference additional INF-writer-defined sections in an INF file.
-ms.assetid: 
 keywords:
 - INF DDInstall.Events Section Device and Driver Installation
 topic_type:
@@ -19,7 +17,7 @@ ms.localizationpriority: medium
 
 Each per-Models <em>DDInstall</em>**.Events** section contains one or more [**INF AddEventProvider directives**](inf-addeventprovider-directive.md) that reference additional INF-writer-defined sections in an INF file. This section is supported for Windows 10 version 1809 and later.
 
-```ini
+```inf
 [install-section-name.Events] |
 [install-section-name.nt.Events] |
 [install-section-name.ntx86.Events] |
@@ -33,7 +31,7 @@ AddEventProvider={ProviderGUID},event-provider-install-section
 [Needs=inf-section-name[,inf-section-name]...] 
 ```
 
-You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](https://docs.microsoft.com/windows/desktop/ETW/about-event-tracing) (ETW) providers.
+You can provide a <em>DDInstall</em>**.Events** section with at least one **AddEventProvider** directive to register [Event Tracing for Windows](/windows/desktop/ETW/about-event-tracing) (ETW) providers.
 
 ## Entries
 
@@ -64,7 +62,7 @@ Examples
 
 This example shows the <em>install-section-name</em>**.Events** section and its event-provider-install-sections in the INF file.
 
-```ini
+```inf
 [Device_Inst.NT.Events]
 AddEventProvider={071acb53-ccfb-42e0-9a68-5336b7301507},foo_Event_Provider_Inst
 AddEventProvider={6d3fd9ef-bcbb-42d7-9fbd-1bf2d926b394},bar_Event_Provider_Inst
@@ -87,10 +85,4 @@ AddEventProvider={6d3fd9ef-bcbb-42d7-9fbd-1bf2d926b394},bar_Event_Provider_Inst
 [***DDInstall***](inf-ddinstall-section.md)
 
  
-
- 
-
-
-
-
 

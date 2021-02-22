@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_LAST_CHANGE
 description: As a query, use the OID_GEN_LAST_CHANGE OID to determine the time of the last operational state change of a network interface (ifLastChange from RFC 2863).
-ms.assetid: bd96d1ec-2fd0-491f-acb4-c1594ce6a084
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_LAST_CHANGE Network Drivers Starting with Windows Vista
@@ -24,9 +23,9 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-This OID returns the time, starting from the last computer restart, when the interface entered its current operational state. For more information about the operational state, see [**NDIS\_STATUS\_OPER\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-oper-status) and [OID\_GEN\_OPERATIONAL\_STATUS](oid-gen-operational-status.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex) function.
+This OID returns the time, starting from the last computer restart, when the interface entered its current operational state. For more information about the operational state, see [**NDIS\_STATUS\_OPER\_STATUS**](./ndis-status-oper-status.md) and [OID\_GEN\_OPERATIONAL\_STATUS](oid-gen-operational-status.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex) function.
 
 If the current operational state was entered before the last reinitialization of the interface, this value should be zero. . If the interface provider does not track operational state change time, the value should be zero.
 
@@ -53,16 +52,11 @@ Requirements
 
 [OID\_GEN\_OPERATIONAL\_STATUS](oid-gen-operational-status.md)
 
-[**NDIS\_STATUS\_OPER\_STATUS**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-oper-status)
+[**NDIS\_STATUS\_OPER\_STATUS**](./ndis-status-oper-status.md)
 
-[**NdisGetSystemUpTimeEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex)
+[**NdisGetSystemUpTimeEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex)
 
-[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
-
- 
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
-
-
 

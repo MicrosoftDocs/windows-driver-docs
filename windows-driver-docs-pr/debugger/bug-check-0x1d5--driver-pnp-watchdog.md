@@ -34,7 +34,7 @@ The DRIVER\_PNP\_WATCHDOG bug check has a value of 0x000001D5. This indicates th
 ## Cause
 -----
 
-This indicates that a driver has failed to complete a PnP operation within a specific time.
+This indicates that a driver has failed to complete a PnP operation within a specific time. The [**!analyze**](-analyze.md) debug extension displays information about the bug check and can be helpful in determining the root cause.
 
 
 ## See Also

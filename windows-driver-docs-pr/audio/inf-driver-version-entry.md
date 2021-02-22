@@ -1,7 +1,6 @@
 ---
 title: INF Driver-Version Entry
 description: INF Driver-Version Entry
-ms.assetid: 092cd9ed-8988-4ffd-9958-1267f3c52819
 keywords:
 - version numbers WDK audio
 - INF files WDK audio
@@ -22,7 +21,7 @@ ms.localizationpriority: medium
 
 The INF file in a driver package specifies the driver-version information for the drivers that are installed by the INF. The version information in the file identifies the driver package as a whole, in contrast to the [internal and external version numbers](internal-and-external-version-numbers.md) for the individual driver files within the package.
 
-The file specifies each driver's date and version number in an [**INF DriverVer directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-driverver-directive) with the following format:
+The file specifies each driver's date and version number in an [**INF DriverVer directive**](../install/inf-driverver-directive.md) with the following format:
 
 **DriverVer**= *mm* / *dd* / *yyyy*\[,*x*.*y*.*v*.*z*\]
 
@@ -35,9 +34,4 @@ When the operating system searches for drivers, it chooses a driver with a more 
 In Windows 2000, Windows XP and later, the INF file for a driver package must provide a **DriverVer** directive.
 
  
-
- 
-
-
-
 

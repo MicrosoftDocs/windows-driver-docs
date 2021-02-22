@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED
 description: Miniport drivers use NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED to request parameters for 802.11r roaming.ObjectPort .
-ms.assetid: AB745908-AA7B-416A-9C97-B376293F3DEE
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_WDI_INDICATION_FT_ASSOC_PARAMS_NEEDED Network Drivers Starting with Windows Vista
@@ -28,9 +27,9 @@ For a connection where Initial Mobility Domain is successfully done, the LE shou
 
 | Type                                                                  | Multiple TLV instances allowed | Optional | Description                            |
 |-----------------------------------------------------------------------|--------------------------------|----------|----------------------------------------|
-| [**WDI\_TLV\_BSSID**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-bssid)                         |                                |          | The BSSID of the AP.                   |
-| [**WDI\_TLV\_FT\_AUTH\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ft-auth-request)   |                                |          | The authentication request byte blob.  |
-| [**WDI\_TLV\_FT\_AUTH\_RESPONSE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ft-auth-response) |                                |          | The authentication response byte blob. |
+| [**WDI\_TLV\_BSSID**](./wdi-tlv-bssid.md)                         |                                |          | The BSSID of the AP.                   |
+| [**WDI\_TLV\_FT\_AUTH\_REQUEST**](./wdi-tlv-ft-auth-request.md)   |                                |          | The authentication request byte blob.  |
+| [**WDI\_TLV\_FT\_AUTH\_RESPONSE**](./wdi-tlv-ft-auth-response.md) |                                |          | The authentication response byte blob. |
 
  
 
@@ -64,9 +63,4 @@ Requirements
 [OID\_WDI\_TASK\_ROAM](oid-wdi-task-roam.md)
 
  
-
- 
-
-
-
 

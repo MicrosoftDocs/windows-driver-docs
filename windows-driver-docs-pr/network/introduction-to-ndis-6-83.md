@@ -1,14 +1,13 @@
 ---
 title: Introduction to NDIS 6.83
 description: This section introduces NDIS 6.83 and describes changes from NDIS 6.82. NDIS 6.83 is included in Windows 10, version 1903.
-ms.assetid: FC90E212-6ED6-432C-8729-5239EF5FDD65
 ms.date: 05/03/2019
 ms.localizationpriority: medium
 ---
 
 # Introduction to NDIS 6.83
 
-This topic introduces Network Driver Interface Specification (NDIS) 6.83 and describes its major design additions. NDIS 6.83 is included in Windows 10, version 1903 and Windows Server 2016 and later.
+This topic introduces Network Driver Interface Specification (NDIS) 6.83 and describes its major design additions. NDIS 6.83 is included in Windows 10, version 1903 and Windows Server 2019 and later.
 
 NDIS 6.83 is a minor version update to NDIS 6.82. For more information about porting NDIS 6.x drivers to NDIS 6.83, see [Porting NDIS 6.x drivers to NDIS 6.83](porting-ndis-6-x-drivers-to-ndis-6-83.md).
 
@@ -26,7 +25,7 @@ In addition, an NDIS 6.83 driver must be compliant with the following requiremen
    
    You must update the major and minor NDIS version number in the NDIS_Xxx_DRIVER_CHARACTERISTICS structure to support NDIS 6.83. The MajorNdisVersion member must contain 6 and the MinorNdisVersion member must contain 83. This requirement applies to miniport, protocol, and filter drivers. You must also update the version information for the compiler (see [Compiling an NDIS 6.83 driver](#compiling-an-ndis-683-driver)).
 
-- NDIS 6.83 miniport drivers for Windows 10, version 1903 and Windows Server 2016 and later must use the NDIS 6.83 versions of data structures.
+- NDIS 6.83 miniport drivers for Windows 10, version 1903 and Windows Server 2019 and later must use the NDIS 6.83 versions of data structures.
 
 ## Compiling an NDIS 6.83 driver
 

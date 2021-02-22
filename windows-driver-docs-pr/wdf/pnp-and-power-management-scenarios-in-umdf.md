@@ -1,7 +1,6 @@
 ---
 title: PnP and Power Management Scenarios in UMDF
 description: PnP and Power Management Scenarios in UMDF
-ms.assetid: ca36eee5-482c-4cfe-a515-be9d3743e241
 keywords:
 - Plug and Play WDK UMDF , power management scenarios in UMDF
 - PnP WDK UMDF , power management scenarios in UMDF
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 # PnP and Power Management Scenarios in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The following PnP and power management scenarios show the sequences in which the framework calls a UMDF driver's event callback functions:
 

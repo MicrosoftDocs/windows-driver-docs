@@ -1,7 +1,6 @@
 ---
 title: Enabling Postmortem Debugging
 description: This topic covers how to enable postmortem debugging
-ms.assetid: ae116b60-fed2-4e1d-98a8-9fe83f460c50
 keywords: debugging. debug, Windbg, postmortem debugging, just-in-time debugging, JIT debugging, AeDebug registry key
 ms.date: 09/17/2018
 ms.localizationpriority: medium
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 
 **Exceptions and Breakpoints**
 
-The most common application errors are called exceptions. These include access violations, division-by-zero errors, numerical overflows, CLR exceptions, and many other kinds of errors. Applications can also cause breakpoint interrupts. These occur when Windows is unable to run the application (for example, when a necessary module cannot be loaded) or when a breakpoint is encountered. Breakpoints can be inserted into the code by a debugger, or invoked through a function such as [**DebugBreak**](https://docs.microsoft.com/windows/desktop/api/debugapi/nf-debugapi-debugbreak).
+The most common application errors are called exceptions. These include access violations, division-by-zero errors, numerical overflows, CLR exceptions, and many other kinds of errors. Applications can also cause breakpoint interrupts. These occur when Windows is unable to run the application (for example, when a necessary module cannot be loaded) or when a breakpoint is encountered. Breakpoints can be inserted into the code by a debugger, or invoked through a function such as [**DebugBreak**](/windows/win32/api/debugapi/nf-debugapi-debugbreak).
 
 **Exception Handlers Precedence**
 
@@ -35,7 +34,7 @@ Based on configuration values and which debuggers are active, Windows handles us
 
 4.  If the conditions in steps 1, 2, and 3 do not apply, Windows will activate a debugging tool configured in the AeDebug registry values. Any program can be selected in advance as the tool to use in this situation. The chosen program is referred to as the *postmortem debugger*.
 
-5.  If the conditions in steps 1, 2, and 3 do not apply, and there is no postmortem debugger registered, Windows Error Reporting (WER) displays a message and provides solutions if any are available. WER also writes a memory dump file if the appropriate values are set in the Registry. For more information, see [Using WER](https://go.microsoft.com/fwlink/p?LinkID=257799) and [Collecting User-Mode Dumps](https://go.microsoft.com/fwlink/p?LinkID=257798).
+5.  If the conditions in steps 1, 2, and 3 do not apply, and there is no postmortem debugger registered, Windows Error Reporting (WER) displays a message and provides solutions if any are available. WER also writes a memory dump file if the appropriate values are set in the Registry. For more information, see [Using WER](/windows/win32/wer/using-wer) and [Collecting User-Mode Dumps](/windows/win32/wer/collecting-user-mode-dumps).
 
 **DebugBreak Function**
 
@@ -86,7 +85,7 @@ Debugger = "<Path>\WinDbg -p %ld -e %ld -g"
 Auto = 1
 ```
 
-There is flexibility in how the WER %ld %ld %p parameters can be used. For example. there is no requirement to specify any switches around or between the WER parameters. For example, installing [Windows Sysinternals ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) using `procdump.exe -i` creates the following values with no switches between the WER %ld %ld %p parameters:
+There is flexibility in how the WER %ld %ld %p parameters can be used. For example. there is no requirement to specify any switches around or between the WER parameters. For example, installing [Windows Sysinternals ProcDump](/sysinternals/downloads/procdump) using `procdump.exe -i` creates the following values with no switches between the WER %ld %ld %p parameters:
 
 ```console
 Debugger = "<Path>\procdump.exe" -accepteula -j "c:\Dumps" %ld %ld %p
@@ -217,7 +216,7 @@ If Visual Studio is updated or re-installed, this entry will be re-written, over
 
 ### <span id="Window_Sysinternals_ProcDump"></span><span id="window_sysinternals_procdump"></span><span id="WINDOW_SYSINTERNALS_PROCDUMP"></span>Window Sysinternals ProcDump
 
-The Windows Sysinternals ProcDump utility can also be used for postmortem dump capture. For more information about using and downloading ProcDump, see [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) on TechNet.
+The Windows Sysinternals ProcDump utility can also be used for postmortem dump capture. For more information about using and downloading ProcDump, see [ProcDump](/sysinternals/downloads/procdump).
 
 Like the [**.dump**](-dump--create-dump-file-.md) WinDbg command, ProcDump is able to be capture a dump of the crash non-interactively. The capture may occur in any Windows system session.
 
@@ -327,10 +326,4 @@ This example would allow WER to report the failure after WinDbg captures a dump.
 If you are considering enabling postmortem debugging on a computer that you share with other people, see [Security During Postmortem Debugging](security-during-postmortem-debugging.md).
 
  
-
- 
-
-
-
-
 

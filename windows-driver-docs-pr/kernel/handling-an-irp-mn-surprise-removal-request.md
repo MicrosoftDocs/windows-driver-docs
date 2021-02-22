@@ -1,7 +1,6 @@
 ---
 title: Handling an IRP_MN_SURPRISE_REMOVAL Request
 description: Handling an IRP_MN_SURPRISE_REMOVAL Request
-ms.assetid: 39a90617-40ad-4c10-95d3-2b618d66d70e
 keywords: ["surprise removals WDK PnP", "IRP_MN_SURPRISE_REMOVAL"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -15,21 +14,21 @@ ms.localizationpriority: medium
 
 The Windows 2000 and later PnP manager sends this IRP to notify drivers that a device is no longer available for I/O operations and has probably been unexpectedly removed from the machine ("surprise removal").
 
-The PnP manager sends an [**IRP\_MN\_SURPRISE\_REMOVAL**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-surprise-removal) request for the following reasons:
+The PnP manager sends an [**IRP\_MN\_SURPRISE\_REMOVAL**](./irp-mn-surprise-removal.md) request for the following reasons:
 
--   If the bus has hot-plug notification, it notifies the device's parent bus driver that the device has disappeared. The bus driver calls [**IoInvalidateDeviceRelations**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations). In response, the PnP manager queries the bus driver for its children ([**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-device-relations) for **BusRelations**). The PnP manager determines that the device is not in the new list of children and initiates its surprise-removal operations for the device.
+-   If the bus has hot-plug notification, it notifies the device's parent bus driver that the device has disappeared. The bus driver calls [**IoInvalidateDeviceRelations**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicerelations). In response, the PnP manager queries the bus driver for its children ([**IRP\_MN\_QUERY\_DEVICE\_RELATIONS**](./irp-mn-query-device-relations.md) for **BusRelations**). The PnP manager determines that the device is not in the new list of children and initiates its surprise-removal operations for the device.
 
 -   The bus is enumerated for another reason and the surprise-removed device is not included in the list of children. The PnP manager initiates its surprise removal operations.
 
--   The function driver for the device determines that the device is no longer present (because, for example, its requests repeatedly time out). The bus might be enumerable but it does not have hot-plug notification. In this case, the function driver calls [**IoInvalidateDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate). In response, the PnP manager sends an [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-pnp-device-state) request to the device stack. The function driver sets the PNP\_DEVICE\_FAILED flag in the [**PNP\_DEVICE\_STATE**](#about-pnp_device_state) bitmask indicating that the device has failed.
+-   The function driver for the device determines that the device is no longer present (because, for example, its requests repeatedly time out). The bus might be enumerable but it does not have hot-plug notification. In this case, the function driver calls [**IoInvalidateDeviceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate). In response, the PnP manager sends an [**IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE**](./irp-mn-query-pnp-device-state.md) request to the device stack. The function driver sets the PNP\_DEVICE\_FAILED flag in the [**PNP\_DEVICE\_STATE**](#about-pnp_device_state) bitmask indicating that the device has failed.
 
--   The driver stack successfully completes an [**IRP\_MN\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device) request but then fails a subsequent [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request. In such cases, the device is probably still connected.
+-   The driver stack successfully completes an [**IRP\_MN\_STOP\_DEVICE**](./irp-mn-stop-device.md) request but then fails a subsequent [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request. In such cases, the device is probably still connected.
 
-All PnP drivers must handle this IRP and must set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS. A driver for a PnP device must be prepared to handle **IRP\_MN\_SURPRISE\_REMOVAL** at any time after the driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine is called. Proper handling of the IRP enables the drivers and the PnP manager to:
+All PnP drivers must handle this IRP and must set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS. A driver for a PnP device must be prepared to handle **IRP\_MN\_SURPRISE\_REMOVAL** at any time after the driver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine is called. Proper handling of the IRP enables the drivers and the PnP manager to:
 
 1.  Disable the device, in case it is still connected.
 
-    If the driver stack successfully completed an [**IRP\_MN\_STOP\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-stop-device) request but then, for some reason, failed a subsequent [**IRP\_MN\_START\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-start-device) request, the device must be disabled.
+    If the driver stack successfully completed an [**IRP\_MN\_STOP\_DEVICE**](./irp-mn-stop-device.md) request but then, for some reason, failed a subsequent [**IRP\_MN\_START\_DEVICE**](./irp-mn-start-device.md) request, the device must be disabled.
 
 2.  Release hardware resources assigned to the device and make them available to another device.
 
@@ -53,11 +52,11 @@ In response to **IRP\_MN\_SURPRISE\_REMOVAL**, a driver must do the following, i
 
 2.  Release the device's hardware resources (interrupts, I/O ports, memory registers, and DMA channels).
 
-3.  In a parent bus driver, power down the bus slot if the driver is capable of doing so. Call [**PoSetPowerState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate) to notify the power manager. For additional information, see [Power Management](implementing-power-management.md).
+3.  In a parent bus driver, power down the bus slot if the driver is capable of doing so. Call [**PoSetPowerState**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetpowerstate) to notify the power manager. For additional information, see [Power Management](./introduction-to-power-management.md).
 
 4.  Prevent any new I/O operations on the device.
 
-    A driver should process subsequent [**IRP\_MJ\_CLEANUP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-cleanup), [**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-close), [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power), and [**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) requests, but the driver must prevent any new I/O operations. A driver must fail any subsequent IRPs that the driver would have handled if the device were present, besides close, clean-up, and PnP IRPs.
+    A driver should process subsequent [**IRP\_MJ\_CLEANUP**](./irp-mj-cleanup.md), [**IRP\_MJ\_CLOSE**](./irp-mj-close.md), [**IRP\_MJ\_POWER**](./irp-mj-power.md), and [**IRP\_MJ\_PNP**](./irp-mj-pnp.md) requests, but the driver must prevent any new I/O operations. A driver must fail any subsequent IRPs that the driver would have handled if the device were present, besides close, clean-up, and PnP IRPs.
 
     A driver can set a bit in the device extension to indicate that the device has been surprise-removed. The driver's dispatch routines should check this bit.
 
@@ -65,11 +64,11 @@ In response to **IRP\_MN\_SURPRISE\_REMOVAL**, a driver must do the following, i
 
 6.  Continue to pass down any IRPs that the driver does not handle for the device.
 
-7.  Disable device interfaces with [**IoSetDeviceInterfaceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate).
+7.  Disable device interfaces with [**IoSetDeviceInterfaceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdeviceinterfacestate).
 
 8.  Clean up any device-specific allocations, memory, events, or other system resources.
 
-    A driver could postpone such clean-up until it receives the subsequent [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request, but if a legacy component has an open handle that cannot be closed, the remove IRP will never be sent.
+    A driver could postpone such clean-up until it receives the subsequent [**IRP\_MN\_REMOVE\_DEVICE**](./irp-mn-remove-device.md) request, but if a legacy component has an open handle that cannot be closed, the remove IRP will never be sent.
 
 9.  Leave the device object attached to the device stack.
 
@@ -81,9 +80,9 @@ In response to **IRP\_MN\_SURPRISE\_REMOVAL**, a driver must do the following, i
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) and pass the IRP to the next lower driver with [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
+    -   Set up the next stack location with [**IoSkipCurrentIrpStackLocation**](./mm-bad-pointer.md) and pass the IRP to the next lower driver with [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver).
 
-    -   Propagate the status from **IoCallDriver** as the return status from the [*DispatchPnP*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
+    -   Propagate the status from **IoCallDriver** as the return status from the [*DispatchPnP*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
     -   Do not complete the IRP.
 
@@ -91,11 +90,11 @@ In response to **IRP\_MN\_SURPRISE\_REMOVAL**, a driver must do the following, i
 
     -   Set **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS.
 
-    -   Complete the IRP ([**IoCompleteRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) with IO\_NO\_INCREMENT.
+    -   Complete the IRP ([**IoCompleteRequest**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest)) with IO\_NO\_INCREMENT.
 
     -   Return from the *DispatchPnP* routine.
 
-After this IRP succeeds and all open handles to the device are closed, the PnP manager sends an [**IRP\_MN\_REMOVE\_DEVICE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-remove-device) request to the device stack. In response to the remove IRP, drivers detach their device objects from the stack and delete them. If a legacy component has a handle open to the device and it leaves the handle open despite I/O failures, the PnP manager never sends the remove IRP.
+After this IRP succeeds and all open handles to the device are closed, the PnP manager sends an [**IRP\_MN\_REMOVE\_DEVICE**](./irp-mn-remove-device.md) request to the device stack. In response to the remove IRP, drivers detach their device objects from the stack and delete them. If a legacy component has a handle open to the device and it leaves the handle open despite I/O failures, the PnP manager never sends the remove IRP.
 
 All drivers should handle this IRP and should note that the device has been physically removed from the machine. Some drivers, however, will not cause adverse results if they do not handle the IRP. For example, a device that consumes no system hardware resources and resides on a protocol-based bus, such as USB or 1394, cannot tie up hardware resources because it does not consume any. There is no risk of drivers attempting to access the device after it has been removed because the function and filter drivers access the device only through the parent bus driver. Because the bus supports removal notification, the parent bus driver is notified when the device disappears and the bus driver fails all subsequent attempts to access the device.
 
@@ -105,7 +104,7 @@ On Windows 98/Me, the PnP manager does not send this IRP. If a user removes a de
 
 The GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface enables a driver to request that its device be reenumerated.
 
-To use this interface, send an IRP_MN_QUERY_INTERFACE IRP to your bus driver with InterfaceType = GUID_REENUMERATE_SELF_INTERFACE_STANDARD. The bus driver supplies a pointer to a REENUMERATE_SELF_INTERFACE_STANDARD structure that contains pointers to the individual routines of the interface. A [ReenumerateSelf routine](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-preenumerate_self) requests that a bus driver reenumerate a child device.
+To use this interface, send an IRP_MN_QUERY_INTERFACE IRP to your bus driver with InterfaceType = GUID_REENUMERATE_SELF_INTERFACE_STANDARD. The bus driver supplies a pointer to a REENUMERATE_SELF_INTERFACE_STANDARD structure that contains pointers to the individual routines of the interface. A [ReenumerateSelf routine](/windows-hardware/drivers/ddi/wdm/nc-wdm-preenumerate_self) requests that a bus driver reenumerate a child device.
 
 
 ## About PNP_DEVICE_STATE
@@ -136,7 +135,7 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 </tr>
 <tr class="even">
 <td>PNP_DEVICE_DONT_DISPLAY_IN_UI</td>
-<td><p>Do not display the device in the user interface. Set for a device that is physically present but not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked. (Also see the <strong>NoDisplayInUI</strong> flag in the <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities" data-raw-source="[&lt;strong&gt;DEVICE_CAPABILITIES&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)"><strong>DEVICE_CAPABILITIES</strong></a> structure.)</p></td>
+<td><p>Do not display the device in the user interface. Set for a device that is physically present but not usable in the current configuration, such as a game port on a laptop that is not usable when the laptop is undocked. (Also see the <strong>NoDisplayInUI</strong> flag in the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities" data-raw-source="[&lt;strong&gt;DEVICE_CAPABILITIES&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)"><strong>DEVICE_CAPABILITIES</strong></a> structure.)</p></td>
 </tr>
 <tr class="odd">
 <td>PNP_DEVICE_FAILED</td>
@@ -146,7 +145,7 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 <tr class="even">
 <td>PNP_DEVICE_NOT_DISABLEABLE</td>
 <td><p>The device is required when the computer starts. Such a device must not be disabled.</p>
-<p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path (<a href="irp-mn-device-usage-notification.md" data-raw-source="[&lt;strong&gt;IRP_MN_DEVICE_USAGE_NOTIFICATION&lt;/strong&gt;](irp-mn-device-usage-notification.md)"><strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong></a> for <strong>DeviceUsageTypePaging</strong>), the driver calls <a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate" data-raw-source="[&lt;strong&gt;IoInvalidateDeviceState&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate)"><strong>IoInvalidateDeviceState</strong></a> and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
+<p>A driver sets this bit for a device that is required for proper system operation. For example, if a driver receives notification that a device is in the paging path (<a href="irp-mn-device-usage-notification.md" data-raw-source="[&lt;strong&gt;IRP_MN_DEVICE_USAGE_NOTIFICATION&lt;/strong&gt;](irp-mn-device-usage-notification.md)"><strong>IRP_MN_DEVICE_USAGE_NOTIFICATION</strong></a> for <strong>DeviceUsageTypePaging</strong>), the driver calls <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate" data-raw-source="[&lt;strong&gt;IoInvalidateDeviceState&lt;/strong&gt;](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate)"><strong>IoInvalidateDeviceState</strong></a> and sets this flag in the resulting <strong>IRP_MN_QUERY_PNP_DEVICE_STATE</strong> request.</p>
 <p>If this bit is set for a device, the PnP manager propagates this setting to the device's parent device, its parent's parent device, and so forth.</p>
 <p>If this bit is set for a root-enumerated device, the device cannot be disabled or uninstalled.</p></td>
 </tr>
@@ -172,10 +171,6 @@ The flag bits in a PNP\_DEVICE\_STATE value are defined as follows.
 
 The PnP manager queries a device's PNP\_DEVICE\_STATE right after starting the device by sending an **IRP\_MN\_QUERY\_PNP\_DEVICE\_STATE** request to the device stack. In response to this IRP, the drivers for the device set the appropriate flags in PNP\_DEVICE\_STATE.
 
-If any of the state characteristics change after the initial query, a driver notifies the PnP manager by calling [**IoInvalidateDeviceState**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate). In response to a call to **IoInvalidateDeviceState**, the PnP manager queries the device's PNP\_DEVICE\_STATE again.
+If any of the state characteristics change after the initial query, a driver notifies the PnP manager by calling [**IoInvalidateDeviceState**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioinvalidatedevicestate). In response to a call to **IoInvalidateDeviceState**, the PnP manager queries the device's PNP\_DEVICE\_STATE again.
 
 If a device is marked PNP\_DEVICE\_NOT\_DISABLEABLE, the debugger displays a DNUF\_NOT\_DISABLEABLE user flag for the devnode. The debugger also displays a **DisableableDepends** value that counts the number of reasons why the device cannot be disabled. This value is the sum of X+Y, where X is one if the device cannot be disabled and Y is the count of the device's child devices that cannot be disabled.
-
-
-
-

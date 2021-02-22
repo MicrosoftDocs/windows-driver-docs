@@ -1,7 +1,6 @@
 ---
 title: ks.dumpcircuit
 description: The ks.dumpcircuit extension lists details of the transport circuit associated with the given object.
-ms.assetid: 34e6fa0f-7479-4616-ba7e-f2b12ccc836d
 keywords: ["ks.dumpcircuit Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

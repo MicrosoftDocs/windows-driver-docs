@@ -1,7 +1,6 @@
 ---
 title: ACPI Power Meter Interface
 description: ACPI Power Meter Interface
-ms.assetid: ed39b02d-eb21-47c4-9e6a-d98334232c7b
 keywords:
 - Power Metering and Budgeting WDK , ACPI Power Meter Interface (PMI)
 - ACPI Power Meter Interface WDK

@@ -1,7 +1,6 @@
 ---
 title: WIA Minidriver Interfaces
 description: WIA Minidriver Interfaces
-ms.assetid: 6d069584-f9e1-4312-b8f2-1ef3d518faeb
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-The WIA minidriver is a COM object that implements the standard **IUnknown** COM interface (which is described in the Microsoft Windows SDK documentation) and two additional WIA-specific interfaces: [IStiUSD](istiusd-com-interface.md) and [IWiaMiniDrv](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv).
+The WIA minidriver is a COM object that implements the standard **IUnknown** COM interface (which is described in the Microsoft Windows SDK documentation) and two additional WIA-specific interfaces: [IStiUSD](istiusd-com-interface.md) and [IWiaMiniDrv](/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv).
 
 ### IStiUSD Interface
 
@@ -37,9 +36,4 @@ The **IWiaMiniDrv** interface, which is defined in *Wiamindr.h*, exposes most of
 For more information about these interfaces, see [Developing a WIA Driver: Basic Concepts](developing-a-wia-driver--basic-concepts.md).
 
  
-
- 
-
-
-
 

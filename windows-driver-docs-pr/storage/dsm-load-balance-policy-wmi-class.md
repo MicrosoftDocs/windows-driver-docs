@@ -1,7 +1,6 @@
 ---
 title: DSM\_Load\_Balance\_Policy WMI Class
 description: DSM\_Load\_Balance\_Policy WMI Class
-ms.assetid: 7de58fe6-7c95-412a-9135-3894c07137a7
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -78,13 +77,7 @@ class DSM_Load_Balance_Policy
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_Load\_Balance\_Policy**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_load_balance_policy) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_Load\_Balance\_Policy**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_load_balance_policy) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

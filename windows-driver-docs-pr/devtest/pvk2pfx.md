@@ -1,7 +1,6 @@
 ---
 title: Pvk2Pfx
-description: Pvk2Pfx (Pvk2Pfx.exe) is a command-line tool copies public key and private key information contained in .spc, .cer, and .pvk files to a Personal Information Exchange (.pfx) file.
-ms.assetid: f3fb3703-0e33-4d7f-b2ad-52bc035e01de
+description: Pvk2Pfx (Pvk2Pfx.exe) is a command-line tool that copies public key and private key information contained in .spc, .cer, and .pvk files to a Personal Information Exchange (.pfx) file.
 keywords:
 - Pvk2Pfx Driver Development Tools
 topic_type:
@@ -30,7 +29,7 @@ Pvk2Pfx (Pvk2Pfx.exe) is a command-line tool copies public key and private key i
 Specifies the name of a .pvk file.
 
 <span id="_SPC_SPCFILENAME.EXT"></span>**/spc** *spcfilename.ext*  
-Specifies the name and extension of the [Software Publisher Certificate (SPC)](https://docs.microsoft.com/windows-hardware/drivers/install/software-publisher-certificate) file that contains the certificate. The file can be either a .spc file or a .cer file.
+Specifies the name and extension of the [Software Publisher Certificate (SPC)](../install/software-publisher-certificate.md) file that contains the certificate. The file can be either a .spc file or a .cer file.
 
 <span id="_PFX_PFXFILENAME.PFX"></span>**/pfx** *pfxfilename.pfx*  
 Specifies the name of a .pfx file.
@@ -48,7 +47,7 @@ Configures Pvk2Pfx to overwrite a .pfx file, if one exists that has the same nam
 
 If the **-pfx** *pfxfilename.pfx* switch is not supplied, pvk2pfx ignores the **-po** *password* switch and the **-f** switch, and displays a wizard that prompts the user for the name of the .pfx file and its corresponding password.
 
-In order to use the [**SignTool**](signtool.md) tool to sign drivers using a SPC in a manner that complies with the [kernel-mode code signing policy](https://docs.microsoft.com/windows-hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-), the SPC information must be added to the Personal certificate store on the local computer that signs the drivers. For information about how to add the SPC information to the Personal certificate store, see [Software Publisher Certificate](https://docs.microsoft.com/windows-hardware/drivers/install/software-publisher-certificate).
+In order to use the [**SignTool**](signtool.md) tool to sign drivers using a SPC in a manner that complies with the [kernel-mode code signing policy](../install/kernel-mode-code-signing-policy--windows-vista-and-later-.md), the SPC information must be added to the Personal certificate store on the local computer that signs the drivers. For information about how to add the SPC information to the Personal certificate store, see [Software Publisher Certificate](../install/software-publisher-certificate.md).
 
 A 32-bit version of the Pvk2Pfx tool is located in the bin\\x86 folder of the WDK. A 64-bit version of the tool is located in the bin\\x64 of the WDK. For example, on an x64-based computer running Windows 10, the path is C:\\Program Files (x86)\\Windows Kits\\10\\bin\\x64.
 
@@ -61,10 +60,4 @@ pvk2pfx -pvk mypvkfile.pvk -pi mypassword -spc myspcfile.spc -pfx mypfxfile.pfx 
 ```
 
  
-
- 
-
-
-
-
 

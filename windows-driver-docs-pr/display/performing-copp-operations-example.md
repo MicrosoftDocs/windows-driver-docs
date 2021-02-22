@@ -1,7 +1,6 @@
 ---
 title: Performing COPP Operations Example
 description: An example for performing COPP Operations
-ms.assetid: ba5c98d3-63d1-4e2d-ba11-6054c1623e80
 keywords:
 - copy protection WDK COPP , COPP operation example code
 - video copy protection WDK COPP , COPP operation example code
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 **This section applies only to Windows Server 2003 SP1 and later, and Windows XP SP2 and later.**
 
-Use the following example code to perform operations over the Certified Output Protection Protocol (COPP). The example code implements the [*DdMoCompRender*](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function. The example code only shows how *DdMoCompRender* is used for COPP operations. For an implementation of *DdMoCompRender* that performs ProcAmp control and deinterlacing operations, see [Performing ProcAmp Control and Deinterlacing Operations](performing-procamp-control-and-deinterlacing-operations.md) and [Performing Deinterlacing with Substream Compositing Operations](performing-deinterlacing-with-substream-compositing-operations.md).
+Use the following example code to perform operations over the Certified Output Protection Protocol (COPP). The example code implements the [*DdMoCompRender*](/windows/win32/api/ddrawint/nc-ddrawint-pdd_mocompcb_render) callback function. The **RenderMoComp** member of the [**DD\_MOTIONCOMPCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncompcallbacks) structure points to the callback function. The example code only shows how *DdMoCompRender* is used for COPP operations. For an implementation of *DdMoCompRender* that performs ProcAmp control and deinterlacing operations, see [Performing ProcAmp Control and Deinterlacing Operations](performing-procamp-control-and-deinterlacing-operations.md) and [Performing Deinterlacing with Substream Compositing Operations](performing-deinterlacing-with-substream-compositing-operations.md).
 
 ```cpp
 DWORD APIENTRY
@@ -141,10 +140,4 @@ DWORD APIENTRY
 ```
 
  
-
- 
-
-
-
-
 

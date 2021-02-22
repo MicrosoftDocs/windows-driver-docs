@@ -1,5 +1,5 @@
 ---
-Description: This topic provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration.
+description: This topic provides information about registry settings that configure the way Usbccgp.sys selects a USB configuration.
 title: Configuring Usbccgp.sys to Select a Non-Default USB Configuration
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -24,13 +24,13 @@ However, in Windows Vista and later versions of Windows, you can add the followi
 
  
 
-**Note**  The preceding registry settings are not present, by default. They must be added under the [hardware (aka "device") key](https://docs.microsoft.com/windows-hardware/drivers/install/opening-a-device-s-hardware-key) of the USB device.
+**Note**  The preceding registry settings are not present, by default. They must be added under the [hardware (aka "device") key](../install/opening-a-device-s-hardware-key.md) of the USB device.
 
  
 
 The registry setting allows the CCGP driver to select an alternate configuration.
 
-Registry values described in the preceding table correspond to the USB-defined configuration index, indicated by the **bConfigurationValue** member of the configuration descriptor ([**USB\_CONFIGURATION\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor)) and *not* by the **bConfigurationNum** values reported in the device's configuration descriptor. First, Usbccgp.sys sends a select-configuration request to the parent USB bus driver (Usbhub.sys) by using the USB configuration index specified by OriginalConfigurationValue. If that request fails, Usbccgp.sys attempts to use the value specified in AlternateConfigurationValue. Usbccgp.sys uses default values if AlternateConfigurationValue or OriginalConfigurationValue are invalid.
+Registry values described in the preceding table correspond to the USB-defined configuration index, indicated by the **bConfigurationValue** member of the configuration descriptor ([**USB\_CONFIGURATION\_DESCRIPTOR**](/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor)) and *not* by the **bConfigurationNum** values reported in the device's configuration descriptor. First, Usbccgp.sys sends a select-configuration request to the parent USB bus driver (Usbhub.sys) by using the USB configuration index specified by OriginalConfigurationValue. If that request fails, Usbccgp.sys attempts to use the value specified in AlternateConfigurationValue. Usbccgp.sys uses default values if AlternateConfigurationValue or OriginalConfigurationValue are invalid.
 
 A select-configuration request can fail for many reasons. The most common failure occurs when the device does not respond properly to the request or when the **bMaxPower** value (power required by the requested configuration) exceeds the power value supported by the hub port. For example, **bMaxPower** for a particular configuration (specified by OriginalConfigurationValue) is 100 milliamperes but the hub port is only able to provide 50 milliamperes. When Usbccgp.sys sends a select-configuration request for that configuration, the USB driver stack (specifically, the USB port driver) fails the request. Usbccgp.sys then sends another select-configuration request by specifying the configuration indicated by AltConfigurationValue. If the alternate configuration requires 50 milliamperes or less and no other problems occur, the select-configuration request completes successfully.
 
@@ -40,12 +40,9 @@ Even though a client driver for a function in the composite device is not able t
 
 1.  Validates the received request by using the same criteria used by the USB port driver to validate any select-configuration requests.
 2.  If the request specifies interface or pipe settings that are different from the current settings, Usbccgp.sys issues a select-interface request by sending an URB of the type URB\_FUNCTION\_SELECT\_INTERFACE to change the existing settings to the new interface and pipe settings.
-3.  Copies the cached contents of the [**USBD\_INTERFACE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) and [**USBD\_PIPE\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structures into the URB.
+3.  Copies the cached contents of the [**USBD\_INTERFACE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information) and [**USBD\_PIPE\_INFORMATION**](/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_pipe_information) structures into the URB.
 4.  Completes the URB.
 
 ## Related topics
 [How to Select a Configuration for a USB Device](how-to-select-a-configuration-for-a-usb-device.md)  
-[USB device configuration](configuring-usb-devices.md)  
-
-
-
+[USB device configuration](configuring-usb-devices.md)

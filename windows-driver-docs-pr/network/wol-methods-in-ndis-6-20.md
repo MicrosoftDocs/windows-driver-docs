@@ -1,7 +1,6 @@
 ---
 title: WOL Methods in NDIS 6.20
 description: WOL Methods in NDIS 6.20
-ms.assetid: A46C213D-B356-44A3-8863-D7B183B73C77
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -20,7 +19,7 @@ The power management capabilities that are supported in NDIS 6.20 and later vers
 
 -   Wake device on media connect
 
-For more information about the power management capabilities in previous versions of Windows, see [Power Management (NDIS 6.0 and Later)](https://docs.microsoft.com/windows-hardware/drivers/network/power-management--ndis-6-20-).
+For more information about the power management capabilities in previous versions of Windows, see [Power Management (NDIS 6.0 and Later)](ndis-power-management-overview.md).
 
 The *wake on magic packet* method wakes the computer when the network adapter receives a *magic packet*. A *magic packet* contains 16 contiguous copies of the receiving network adapter's Ethernet address.
 

@@ -1,7 +1,6 @@
 ---
 title: Prefetch Offsets
 description: Prefetch Offsets
-ms.assetid: 92a0163f-29b1-4e15-88ab-67e1097d015e
 keywords:
 - hardware acceleration WDK DirectSound , prefetch offsets
 - prefetch offsets WDK audio
@@ -18,13 +17,13 @@ ms.localizationpriority: medium
 ## <span id="prefetch_offsets"></span><span id="PREFETCH_OFFSETS"></span>
 
 
-A WavePci miniport driver calls the [**IPreFetchOffset::SetPreFetchOffset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) method to specify the prefetch offset of a hardware-accelerated DirectSound output stream. This offset is the number of bytes of data separating the write cursor from the play cursor in the audio device's hardware buffer. The write cursor specifies the buffer position into which a DirectSound application can safely write the next sound sample. The play cursor specifies the buffer position of the sound sample that is currently being played by the audio device.
+A WavePci miniport driver calls the [**IPreFetchOffset::SetPreFetchOffset**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) method to specify the prefetch offset of a hardware-accelerated DirectSound output stream. This offset is the number of bytes of data separating the write cursor from the play cursor in the audio device's hardware buffer. The write cursor specifies the buffer position into which a DirectSound application can safely write the next sound sample. The play cursor specifies the buffer position of the sound sample that is currently being played by the audio device.
 
-DirectSound queries the WavePci port driver for the current positions of the play and write cursors by sending a [**KSPROPERTY\_AUDIO\_POSITION**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-position) property request. In response to this request, the port driver obtains the current play position from the miniport driver by calling [**IMiniportWavePciStream::GetPosition**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition). How the port driver determines the write position depends on whether [**SetPreFetchOffset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) has been called.
+DirectSound queries the WavePci port driver for the current positions of the play and write cursors by sending a [**KSPROPERTY\_AUDIO\_POSITION**](./ksproperty-audio-position.md) property request. In response to this request, the port driver obtains the current play position from the miniport driver by calling [**IMiniportWavePciStream::GetPosition**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-getposition). How the port driver determines the write position depends on whether [**SetPreFetchOffset**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) has been called.
 
-By default, the port driver positions the write cursor in the last mapping requested by the miniport driver. With each call to [**IPortWavePciStream::GetMapping**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-getmapping), the default prefetch offset grows larger. If the WavePci miniport driver acquires a large number of mappings, the default offset can grow very large.
+By default, the port driver positions the write cursor in the last mapping requested by the miniport driver. With each call to [**IPortWavePciStream::GetMapping**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavepcistream-getmapping), the default prefetch offset grows larger. If the WavePci miniport driver acquires a large number of mappings, the default offset can grow very large.
 
-Calling [**SetPreFetchOffset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) overrides the default. Following this call, the port driver calculates the write position by adding the specified prefetch offset to the play position (taking into account the wraparound at the end of the DirectSound buffer).
+Calling [**SetPreFetchOffset**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) overrides the default. Following this call, the port driver calculates the write position by adding the specified prefetch offset to the play position (taking into account the wraparound at the end of the DirectSound buffer).
 
 A miniport driver might allocate a large number of mappings for a couple of reasons. One is to reduce the overhead of audio operations on the system processor. With more mappings, the driver requires fewer interrupts to keep the audio device continuously supplied with data. Another reason is that allocating more mappings decreases the likelihood that audio playback will suffer glitches when badly behaved device drivers tie up the system for short periods.
 
@@ -32,7 +31,7 @@ One problem with a large prefetch offset is that some DirectSound applications c
 
 For example, an application might divide the DirectSound buffer into an upper half and a lower half and then "ping pong" the two halves between the application and the device. When the write cursor first enters the upper or lower half of the buffer, it writes a half buffer's worth of data to that half of the buffer. This scheme assumes that the play cursor is always positioned in the other half of the buffer--the half that is not being written to. Note that this assumption is incorrect if the prefetch offset exceeds half the buffer size. In that case, when the write cursor reaches the end of the DirectSound buffer and wraps around to the beginning of the buffer, it will be in the same half of the buffer as the play cursor. When the application writes a half buffer's worth of data to the new write cursor position, it ends up overwriting the play cursor position and destroying data that has not been played yet.
 
-Although the application itself can certainly be blamed for this type of failure, a WavePci miniport driver can eliminate the failure mode simply by calling [**SetPreFetchOffset**](https://docs.microsoft.com/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) to set the prefetch offset to a smaller value.
+Although the application itself can certainly be blamed for this type of failure, a WavePci miniport driver can eliminate the failure mode simply by calling [**SetPreFetchOffset**](/windows-hardware/drivers/ddi/portcls/nf-portcls-iprefetchoffset-setprefetchoffset) to set the prefetch offset to a smaller value.
 
 Setting the prefetch offset to a smaller value moves the resulting write cursor closer to the play cursor. You should set the prefetch offset to the FIFO size of your hardware. A typical prefetch offset is about 64 samples, depending on the DMA engine's hardware design.
 
@@ -41,9 +40,4 @@ To remain compatible with certain older DirectSound applications, DirectSound cu
 For additional information about managing write cursors and play cursors at the driver level, see [Audio Position Property](audio-position-property.md).
 
  
-
- 
-
-
-
 

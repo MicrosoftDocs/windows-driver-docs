@@ -1,7 +1,6 @@
 ---
 title: FsRtlAllocatePoolWithQuota
 description: Obsolete.
-ms.assetid: 71ef108c-7f51-4f61-b7d2-91059da56df0
 keywords: ["FsRtlAllocatePoolWithQuota Installable File System Drivers"]
 topic_type:
 - apiref
@@ -19,13 +18,7 @@ ms.localizationpriority: medium
 
 
 
-The **FsRtlAllocatePoolWithQuota** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithQuotaTag**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocatepoolwithquotatag) instead.
+The **FsRtlAllocatePoolWithQuota** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAllocatePoolWithQuotaTag**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlallocatepoolwithquotatag) instead.
 
  
-
- 
-
-
-
-
 

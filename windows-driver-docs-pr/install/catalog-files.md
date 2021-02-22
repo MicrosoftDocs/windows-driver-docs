@@ -1,7 +1,6 @@
 ---
 title: Catalog Files and Digital Signatures
 description: Catalog Files and Digital Signatures
-ms.assetid: e5504823-1c7e-4cbf-9d42-49e09aeae9d4
 keywords:
 - thumbprints WDK driver signing
 - signed catalog files WDK driver signing
@@ -23,7 +22,7 @@ A digitally-signed catalog file (*.cat*) can be used as a digital signature for 
 
 Plug and Play (PnP) device installation recognizes the signed catalog file of a [driver package](driver-packages.md) as the [digital signature](digital-signatures.md) for the driver package, where each thumbprint in the catalog file corresponds to a file that is installed by the driver package. Regardless of the intended operating system, cryptographic technology is used to digitally-sign the catalog file.
 
-PnP device installation considers the digital signature of a [driver package](driver-packages.md) to be invalid if any file in the driver package is altered after the driver package was signed. Such files include the INF file, the catalog file, and all files that are copied by [**INF CopyFiles directives**](inf-copyfiles-directive.md). For example, even a single-byte change to correct a misspelling invalidates the digital signature. If the digital signature is invalid, you must either resubmit the driver package to the [Windows Hardware Quality Labs (WHQL)](https://go.microsoft.com/fwlink/p/?linkid=8705) for a new signature or generate a new [Authenticode](authenticode.md) signature for the driver package.
+PnP device installation considers the digital signature of a [driver package](driver-packages.md) to be invalid if any file in the driver package is altered after the driver package was signed. Such files include the INF file, the catalog file, and all files that are copied by [**INF CopyFiles directives**](inf-copyfiles-directive.md). For example, even a single-byte change to correct a misspelling invalidates the digital signature. If the digital signature is invalid, you must either resubmit the driver package to the [Windows Hardware Quality Labs (WHQL)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) for a new signature or generate a new [Authenticode](authenticode.md) signature for the driver package.
 
 Similarly, changes to a device's hardware or firmware require a revised [device ID](device-ids.md) value so that the system can detect the updated device and install the correct driver. Because the revised device ID value must appear in the INF file, you must either resubmit the package to WHQL for a new signature or generate a new [Authenticode](authenticode.md) signature for the driver package. You must do this even if the driver binaries do not change.
 
@@ -36,10 +35,4 @@ Starting with Windows 2000, if the [driver package](driver-packages.md) installs
 If you have more than one driver package, you should create a separate catalog file for each driver package and give each catalog file a unique file name. Two unrelated driver packages cannot share a single catalog file. However, a single driver package that serves multiple devices requires only one catalog file.
 
  
-
- 
-
-
-
-
 

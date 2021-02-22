@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_PHY_DATA_RATE_LIST
 description: WDI_TLV_PHY_DATA_RATE_LIST is a TLV that contains a list of data rates.
-ms.assetid: FFD28866-4983-4C0B-A74D-4EF9A819571E
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_PHY_DATA_RATE_LIST Network Drivers Starting with Windows Vista
@@ -40,7 +39,7 @@ WDI\_DATA\_RATE\_LIST consists of the following elements.
 
 | Type   | Description                                                                                   |
 |--------|-----------------------------------------------------------------------------------------------|
-| UINT8  | The data rate flags as defined in [**WDI\_DATA\_RATE\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_data_rate_flags). |
+| UINT8  | The data rate flags as defined in [**WDI\_DATA\_RATE\_FLAGS**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_data_rate_flags). |
 | UINT16 | The data rate value.                                                                          |
 
  
@@ -70,9 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_Device_Class
 description: DEVPKEY_Device_Class
-ms.assetid: e6fb0925-ff60-430e-aea4-1dd706a60de8
 keywords: ["DEVPKEY_Device_Class Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,13 +17,19 @@ ms.date: 10/17/2018
 # DEVPKEY_Device_Class
 
 
-The DEVPKEY_Device_Class device property represents the name of the [device setup class](https://docs.microsoft.com/windows-hardware/drivers/install/device-setup-classes) that a device instance belongs to.
+The DEVPKEY_Device_Class device property represents the name of the [device setup class](./overview-of-device-setup-classes.md) that a device instance belongs to.
 
 <table>
 <colgroup>
 <col width="50%" />
 <col width="50%" />
 </colgroup>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
 <td align="left"><p><strong>Property key</strong></p></td>
@@ -54,45 +59,25 @@ The DEVPKEY_Device_Class device property represents the name of the [device setu
 Remarks
 -------
 
-The value of the DEVPKEY_Device_Class property is set by the *class-name* value that is supplied by the Class directive in the [**INF Version section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive) of the INF file that installs a device.
+The value of the DEVPKEY_Device_Class property is set by the *class-name* value that is supplied by the Class directive in the [**INF Version section**](./inf-addservice-directive.md) of the INF file that installs a device.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Class.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_Device_Class.
 
-Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Class property key. Instead, you can use the corresponding SPDRP_CLASS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](https://docs.microsoft.com/windows-hardware/drivers/install/accessing-device-instance-spdrp-xxx-properties).
+Windows Server 2003, Windows XP, and Windows 2000 support this property, but do not support the DEVPKEY_Device_Class property key. Instead, you can use the corresponding SPDRP_CLASS identifier to access the value of the property on these earlier versions of Windows. For information about how to access this property value on these earlier versions of Windows, see [Accessing Device Instance SPDRP_Xxx Properties](./accessing-device-instance-spdrp-xxx-properties.md).
 
 Requirements
 ------------
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Available in Windows Vista and later versions of Windows.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Header</p></td>
-<td align="left">Devpkey.h (include Devpkey.h)</td>
-</tr>
-</tbody>
-</table>
+**Version**: Windows Vista and later versions of Windows
+**Header**: Devpkey.h (include Devpkey.h)
+
 
 ## See also
 
 
-[**INF Version Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addservice-directive)
+[**INF Version Section**](./inf-addservice-directive.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
-
- 
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
-
-
-
-
 

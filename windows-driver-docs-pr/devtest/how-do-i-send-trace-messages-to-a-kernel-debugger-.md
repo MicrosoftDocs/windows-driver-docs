@@ -1,7 +1,6 @@
 ---
 title: How do I send trace messages to a kernel debugger
 description: How do I send trace messages to a kernel debugger
-ms.assetid: 867791a7-30a5-4539-be85-61f1716c279a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ You can use several methods to redirect trace messages to a kernel-mode debugger
 
 You can redirect trace messages to KD or to Windbg, whichever is attached. The debugger must be attached through a COM port with a debug (null modem) cable or through the 1394 ("firewire") port with a IEEE 1394 cable. You cannot redirect trace messages to other kernel debuggers, such as NTSD.
 
-To display trace messages in a debugger, wmitrace.dll and traceprt.dll must be in the debugger's search path on the host computer. These DLLs are included in [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=8708) Also, to enable the debugger to find the [trace message format (.tmf) files](trace-message-format-file.md) for the trace messages, the TMF files must be in the debugger's search path on the host computer. To set the debugger's search path, use the !wmitrace.searchpath specialized debugger extension or set the value of the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable.
+To display trace messages in a debugger, wmitrace.dll and traceprt.dll must be in the debugger's search path on the host computer. These DLLs are included in [Debugging Tools for Windows](../debugger/debugger-download-tools.md) Also, to enable the debugger to find the [trace message format (.tmf) files](trace-message-format-file.md) for the trace messages, the TMF files must be in the debugger's search path on the host computer. To set the debugger's search path, use the !wmitrace.searchpath specialized debugger extension or set the value of the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable.
 
 For more information, search for **!wmitrace** in *Debugging Tools for Windows*.
 
@@ -54,10 +53,4 @@ You can redirect trace messages to a kernel debugger when creating a trace sessi
 TraceView is located in the tools\\tracing\\*&lt;Platform&gt;* subdirectory of the WDK, where *&lt;Platform&gt;* is either i386, amd64, or ia64.
 
  
-
- 
-
-
-
-
 

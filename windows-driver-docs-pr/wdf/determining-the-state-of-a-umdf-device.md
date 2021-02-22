@@ -1,7 +1,6 @@
 ---
 title: Determining the State of a UMDF Device
 description: This topic describes how you can use debugger extensions in conjunction with a User-Mode Driver Framework (UMDF) version 1 or 2 driver to determine what state your UMDF device is in.
-ms.assetid: ed1a4429-4f36-44b9-9564-587aa381342f
 keywords:
 - UMDF WDK , UMDF device state
 - UMDF WDK , device state
@@ -73,20 +72,14 @@ To determine device state, use the following steps:
             **!thread &lt;thread-addr&gt;**
 
 2.  In the debugger, use the **.chain** command to see if the wudfext.dll (UMDF 1) or wdfkd.dll (UMDF 2) debugger extension library is loaded.
-3.  If the library you need is not present, use the [**.load**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-load---loadby--load-extension-dll-) command to load the extension DLL into the debugger. Then enter **.reload** to reload symbol information.
-4.  Use [**!wudfext.umdevstacks**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umdevstacks) (UMDF 1) or [**!wdfkd.wdfumdevstacks**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumdevstacks) (UMDF 2) to see all device stacks loaded in the host process.
+3.  If the library you need is not present, use the [**.load**](../debugger/-load---loadby--load-extension-dll-.md) command to load the extension DLL into the debugger. Then enter **.reload** to reload symbol information.
+4.  Use [**!wudfext.umdevstacks**](../debugger/-wudfext-umdevstacks.md) (UMDF 1) or [**!wdfkd.wdfumdevstacks**](../debugger/-wdfkd-wdfumdevstacks.md) (UMDF 2) to see all device stacks loaded in the host process.
 
-    Then use [**!wudfext.umdevstack**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-umdevstack) (UMDF 1) or [**!wdfkd.wdfumdevstack**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfumdevstack) (UMDF 2) to get detailed information about the device stack.
+    Then use [**!wudfext.umdevstack**](../debugger/-wudfext-umdevstack.md) (UMDF 1) or [**!wdfkd.wdfumdevstack**](../debugger/-wdfkd-wdfumdevstack.md) (UMDF 2) to get detailed information about the device stack.
 
-5.  Use [**!wudfext.wudfdevice**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfdevice) (UMDF 1) or [**!wdfkd.wdfdevice**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdevice) (UMDF 2) to obtain information about the Plug and Play (PnP) and power-management state of the device.
+5.  Use [**!wudfext.wudfdevice**](../debugger/-wudfext-wudfdevice.md) (UMDF 1) or [**!wdfkd.wdfdevice**](../debugger/-wdfkd-wdfdevice.md) (UMDF 2) to obtain information about the Plug and Play (PnP) and power-management state of the device.
 
-6.  Use [**!wudfext.wudfdriverinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wudfext-wudfdriverinfo) (UMDF 1) or [**!wdfkd.wdfdriverinfo**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-wdfkd-wdfdriverinfo) (UMDF 2) to display additional information about the driver, including its device tree.
-
- 
+6.  Use [**!wudfext.wudfdriverinfo**](../debugger/-wudfext-wudfdriverinfo.md) (UMDF 1) or [**!wdfkd.wdfdriverinfo**](../debugger/-wdfkd-wdfdriverinfo.md) (UMDF 2) to display additional information about the driver, including its device tree.
 
  
-
-
-
-
 

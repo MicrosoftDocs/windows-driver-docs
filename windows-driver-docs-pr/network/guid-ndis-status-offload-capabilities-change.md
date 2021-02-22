@@ -1,7 +1,6 @@
 ---
 title: GUID_NDIS_STATUS_OFFLOAD_CAPABILITIES_CHANGE
 description: This topic describes the GUID_NDIS_STATUS_OFFLOAD_CAPABILITIES_CHANGE GUID for the NDIS WMI interface.
-ms.assetid: f1daadff-a564-4308-82cd-525a1dae866a
 keywords:
 - GUID_NDIS_STATUS_OFFLOAD_CAPABILITIES_CHANGE, WDK GUID_NDIS_STATUS_OFFLOAD_CAPABILITIES_CHANGE network drivers
 ms.date: 11/22/2017
@@ -16,7 +15,6 @@ Miniport drivers use the [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-t
 
 When a miniport driver indicates a task offload change, NDIS translates the status indication to a WMI GUID_NDIS_STATUS_OFFLOAD_CAPABILITIES_CHANGE event for WMI clients.
 
-The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_wmi_event_header) structure that is followed by an [NDIS_OFFLOAD](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure.
+The data buffer that NDIS provides with the GUID contains an [NDIS_WMI_EVENT_HEADER](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_wmi_event_header) structure that is followed by an [NDIS_OFFLOAD](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload) structure.
 
 For more information about task offload capabilities, see [NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG](ndis-status-task-offload-current-config.md) and [OID_TCP_OFFLOAD_CURRENT_CONFIG](oid-tcp-offload-current-config.md).
-

@@ -1,9 +1,8 @@
 ---
 title: Using PDBCopy
 description: Using PDBCopy
-ms.assetid: f8207b09-5a1b-4ff3-b99d-20daa88cfe10
 keywords: ["PDBCopy, using"]
-ms.date: 09/11/2019
+ms.date: 10/25/2019
 ms.localizationpriority: medium
 ---
 
@@ -33,29 +32,27 @@ After issuing this command, you should move the new file to a new location and r
 
 **Note**  The destination file should not exist before PDBCopy is run. If a file with this name exists, various errors may occur.
 
- 
-
 ### <span id="removing_private_symbols_and_selected_public_symbols"></span><span id="REMOVING_PRIVATE_SYMBOLS_AND_SELECTED_PUBLIC_SYMBOLS"></span>Removing Private Symbols and Selected Public Symbols
 
 If you wish to not only remove the private symbol data, but also reduce the amount of information in the public symbol table, you can use the -f option to specify a list of public symbols that are to be removed.
 
 The following example illustrates this procedure:
 
-1.  Determine the full names, including decorations, of the symbols you wish to remove. If you are not sure of the decorated symbol names, you can use the [DBH](dbh.md) tool to determine them. See Determining the Decorations of a Specific Symbol for details. In this example, let us suppose that the decorated names of the symbols you wish to remove are **\_myGlobal1** and **\_myGlobal2**.
+1. Determine the full names, including decorations, of the symbols you wish to remove. If you are not sure of the decorated symbol names, you can use the [DBH](dbh.md) tool to determine them. See Determining the Decorations of a Specific Symbol for details. In this example, let us suppose that the decorated names of the symbols you wish to remove are **\_myGlobal1** and **\_myGlobal2**.
 
-2.  Create a text file containing a list of the symbols to be removed. Each line in this file should include the name of one symbol, including decorations, but not including module names. In this example, the file would contain the following two lines:
+2. Create a text file containing a list of the symbols to be removed. Each line in this file should include the name of one symbol, including decorations, but not including module names. In this example, the file would contain the following two lines:
 
     ```text
     _myGlobal1
-    _myGlobal2 
+    _myGlobal2
     ```
 
     The file can be given any name you choose. Let us suppose that you name this file listfile.txt and place it in the directory C:\\Temp.
 
-3.  Use the following PDBCopy command line:
+3. Use the following PDBCopy command line:
 
     ```console
-    pdbcopy OldPDB NewPDB-p -f:@TextFile 
+    pdbcopy OldPDB NewPDB -p -f:@TextFile
     ```
 
     where *OldPDB* and *NewPDB* are the original symbol file and the new symbol file, and *TextFile* is the file created in step two. The -f option indicates that certain public symbols are to be removed, and the ampersand ( @ ) indicates that these symbols are listed in the specified text file.
@@ -63,10 +60,10 @@ The following example illustrates this procedure:
     In the current example, the command would look like this:
 
     ```console
-    pdbcopy c:\dir1\mysymbols.pdb c:\dir3\mysymbols.pdb -p -f:@c:\temp\listfile.txt 
+    pdbcopy c:\dir1\mysymbols.pdb c:\dir3\mysymbols.pdb -p -f:@c:\temp\listfile.txt
     ```
 
-    This creates a new symbol file, C:\\dir2\\mysymbols.pdb, which does not contain any private symbols and does not contain the two global variables you listed in listfile.txt.
+    This creates a new symbol file, C:\\dir3\\mysymbols.pdb, which does not contain any private symbols and does not contain the two global variables you listed in listfile.txt.
 
 As shown in this example, PDBCopy's -f option removes a specific list of public symbols. The ampersand ( @ ) indicates that these symbols are listed in a text file. An alternate method is to list all the symbols on the command line, using the -f option without an ampersand. Thus the following command line is equivalent to the example in the procedure above:
 

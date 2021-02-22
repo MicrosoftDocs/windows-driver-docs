@@ -1,7 +1,6 @@
 ---
 title: How do I debug tracing failures
 description: How do I debug tracing failures
-ms.assetid: 9f974482-e19d-4bcc-a884-4425741aa465
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

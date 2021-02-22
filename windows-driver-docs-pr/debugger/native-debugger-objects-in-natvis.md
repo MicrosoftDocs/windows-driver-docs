@@ -22,7 +22,7 @@ Native debugger objects represent various constructs and behaviors of the debugg
 -   State
 -   Settings
 
-You can use the dx command and LINQ to interact with the debugger objects. For more informaton, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md).
+You can use the dx command and LINQ to interact with the debugger objects. For more information, see [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md) and [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md).
 
 You can also work with debugger objects using JavaScript. For more information about that see, 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md).
@@ -33,9 +33,7 @@ This topic describes how you can create custom NatVis visualizers to display deb
 
 Refer to these resources for general information about working with NatVis.
 
-[Create custom views of native objects](https://docs.microsoft.com/visualstudio/debugger/create-custom-views-of-native-objects?view=vs-2015)
-
-[Writing debugger type visualizers for C++ using .natvis files](https://code.msdn.microsoft.com/windowsdesktop/Writing-type-visualizers-2eae77a2)
+[Create custom views of native objects](/visualstudio/debugger/create-custom-views-of-native-objects)
 
 [**.nvload**](-nvload--natvis-load-.md)
 
@@ -45,9 +43,7 @@ Refer to these resources for general information about working with NatVis.
 
 [**.nvunloadall**](-nvunloadall--natvis-unload-all-.md)
 
-
-## <span id="Custom_NatVis_object_example"></span><span id="custom_natvis_object_example"></span><span id="CUSTOM_NATVIS_OBJECT_EXAMPLE"></span>Custom NatVis object example
-
+## Custom NatVis object example
 
 Create a simple C++ application that has an instance of the class **CDog**.
 
@@ -96,21 +92,10 @@ class CDog
 MyDog     : {Age = 8 years. Weight = 30 pounds.} [Type: CDog]
 ```
 
-
-## <span id="see_also"></span>See also
+## See also
 
 [dx (Display Debugger Object Model Expression)](dx--display-visualizer-variables-.md)
 
 [Using LINQ With the debugger objects](using-linq-with-the-debugger-objects.md)
 
 [Native Debugger Objects in JavaScript Extensions](native-objects-in-javascript-extensions.md) 
-
- 
----
- 
-
-
-
-
-
-

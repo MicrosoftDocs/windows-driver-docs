@@ -1,7 +1,6 @@
 ---
 title: INF Models Section
 description: A Models section identifies a device, references its DDInstall section, and specifies a hardware identifier for the device.
-ms.assetid: b870e8fb-21b4-439b-b858-c45bf9be2ec1
 keywords:
 - INF Models Section Device and Driver Installation
 topic_type:
@@ -17,17 +16,20 @@ ms.localizationpriority: medium
 # INF Models Section
 
 
-A per-manufacturer *Models* section identifies at least one device, references the *DDInstall* section of the INF file for that device, and specifies a unique-to-the-model-section [hardware identifier (ID)](hardware-ids.md) for that device.
+A per-manufacturer *Models* section identifies at least one device, references the *DDInstall* section of the INF file for that device, and specifies a unique-to-the-model-section Hardware identifier (ID) for that device.
 
 Any entry in the per-manufacturer *Models* section can also specify one or more additional device IDs for models that are compatible with the device designated by the initial hardware ID and are controlled by the same drivers.
 
-```ini
+```inf
 [models-section-name] |
 [models-section-name.TargetOSVersion]  (Windows XP and later versions of Windows)
 
-device-description=install-section-name[,hw-id][,compatible-id...]
-[device-description=install-section-name[,hw-id][,compatible-id]...] ...
+device-description=install-section-name,[hw-id][,compatible-id...]
+[device-description=install-section-name,[hw-id][,compatible-id]...] ...
 ```
+
+> [!NOTE]
+> INFs are required to specify at least one device ID for each entry in the models section.  This may be either a hardware ID or compatible ID.
 
 ## Entries
 
@@ -39,7 +41,7 @@ Identifies a device to be installed, expressed as any unique combination of visi
 Specifies the undecorated name of the INF install sections to be used for the device (and compatible models of device, if any). For more information, see [**INF *DDInstall* Section**](inf-ddinstall-section.md).
 
 <a href="" id="hw-id"></a>*hw-id*  
-Specifies a vendor-defined [hardware ID](hardware-ids.md) string that identifies a device, which the PnP manager uses to find an INF-file match for this device. Such a hardware ID has one of the following formats:
+Specifies a vendor-defined Hardware ID string that identifies a device, which the PnP manager uses to find an INF-file match for this device. Such a hardware ID has one of the following formats:
 
 <a href="" id="enumerator-enumerator-specific-device-id"></a>*enumerator\\enumerator-specific-device-id*  
 Is the typical format for individual PnP devices reported to the PnP manager by a single enumerator. For example, `USB\VID_045E&PID_00B` identifies the Microsoft HID keyboard device on a USB bus. Depending on the enumerator, such a specification can even include the device's hardware revision number as, for example, `PCI\VEN_1011&DEV_002&SUBSYS_00000000&REV_02`.
@@ -77,7 +79,7 @@ Examples
 
 This example shows a per-manufacturer *Models* section with some representative entries from the system mouse class installer's INF file, defining the [***DDInstall***](inf-ddinstall-section.md) sections for some devices/models.
 
-```ini
+```inf
 [Manufacturer]
 %StdMfg%    =StdMfg         ; (Standard types)
 %MSMfg%     =MSMfg          ; Microsoft
@@ -93,6 +95,7 @@ This example shows a per-manufacturer *Models* section with some representative 
 
 ## See also
 
+[Hardware identifiers (HWIds)](hardware-ids.md)
 
 [**ControlFlags**](inf-controlflags-section.md)
 

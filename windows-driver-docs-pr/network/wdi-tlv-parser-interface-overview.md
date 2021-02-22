@@ -1,7 +1,6 @@
 ---
 title: WDI TLV parser interface overview
 description: This section describes an overview of the WDI TLV parser interface
-ms.assetid: FD204F24-0336-4A54-992C-ACF46565D8D1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 ## Callee allocation model
 
 
-An entry point within the driver receives a message or indication that contains TLVs. After the code extracts the message ID and determines if it is an ID that it wants to handle, it calls the generic parse routine and passes the TLV blob (after advancing past the [**WDI\_MESSAGE\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header)) to parse the TLVs into a C-structure.
+An entry point within the driver receives a message or indication that contains TLVs. After the code extracts the message ID and determines if it is an ID that it wants to handle, it calls the generic parse routine and passes the TLV blob (after advancing past the [**WDI\_MESSAGE\_HEADER**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_message_header)) to parse the TLVs into a C-structure.
 
 ```c
 ndisStatus = Parse(
@@ -104,10 +103,4 @@ The TLV parser generator can return several different NDIS\_STATUS codes. For mo
  
 
  
-
- 
-
-
-
-
 

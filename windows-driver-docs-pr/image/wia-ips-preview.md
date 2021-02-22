@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PREVIEW
 description: The WIA\_IPS\_PREVIEW property indicates the preview mode for a device.
-ms.assetid: 06caadc7-2a65-4c54-8d63-4aa1c17186de
 keywords: ["WIA_IPS_PREVIEW Imaging Devices"]
 topic_type:
 - apiref

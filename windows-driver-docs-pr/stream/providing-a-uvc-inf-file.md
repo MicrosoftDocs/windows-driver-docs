@@ -1,7 +1,6 @@
 ---
 title: Providing a UVC INF File
 description: Providing a UVC INF File
-ms.assetid: 44311eb8-1035-466c-878b-a5d964b34490
 keywords:
 - INF files WDK USB Video Class
 - UVC INF files WDK USB Video Class
@@ -163,7 +162,7 @@ If you are using the UVC driver on Windows Server 2003 and Windows Vista or late
 
 In low frame rate conditions, the EOF bit might report completion faster than the FID bit of the following frame. The EOF bit can be used to reduce latency in the delivery of MPEG-2 frames.
 
-For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive).
+For more information about the positional syntax of AddReg directives, see [**INF AddReg Directive**](../install/inf-addreg-directive.md).
 
 This final section supplies missing definitions for the INF.
 

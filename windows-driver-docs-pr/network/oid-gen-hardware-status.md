@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_HARDWARE_STATUS
 description: As a query, the OID_GEN_HARDWARE_STATUS OID specifies the current hardware status of the underlying NIC.
-ms.assetid: beab6f7a-b064-446f-8008-ef8db9d7c080
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_HARDWARE_STATUS Network Drivers Starting with Windows Vista

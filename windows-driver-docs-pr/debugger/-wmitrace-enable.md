@@ -1,7 +1,6 @@
 ---
 title: wmitrace.enable
 description: The wmitrace.enable extension enables a provider for the specified Event Tracing for Windows (ETW) trace session.
-ms.assetid: 5a27fa00-7d52-43f7-84f4-82c5b5af1c06
 keywords: ["wmitrace.enable Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

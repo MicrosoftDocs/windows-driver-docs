@@ -1,7 +1,6 @@
 ---
 title: SP_MOVEDEV_PARAMS
 description: SP_MOVEDEV_PARAMS
-ms.assetid: 6410cdc3-5ec3-4fe1-8513-c0797b6a2582
 keywords: ["SP_MOVEDEV_PARAMS Device and Driver Installation"]
 topic_type:
 - apiref

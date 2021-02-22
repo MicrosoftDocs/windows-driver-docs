@@ -1,7 +1,6 @@
 ---
 title: NDKPI listeners, connectors, and endpoints
 description: This section describes NDKPI listeners, connectors, and endpoints, and reference counting for connectors and endpoints
-ms.assetid: 956D3550-11C8-48D0-BCF4-9027515C7C0E
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # NDKPI Listeners, Connectors, and Endpoints
 
 
-An NDK consumer connects an NDK connector by calling the *NdkConnect* ([*NDK\_FN\_CONNECT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect)) or *NdkConnectWithSharedEndpoint* ([*NDK\_FN\_CONNECT\_WITH\_SHARED\_ENDPOINT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect_with_shared_endpoint)) function.
+An NDK consumer connects an NDK connector by calling the *NdkConnect* ([*NDK\_FN\_CONNECT*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect)) or *NdkConnectWithSharedEndpoint* ([*NDK\_FN\_CONNECT\_WITH\_SHARED\_ENDPOINT*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect_with_shared_endpoint)) function.
 
 Each connector that is in a connected state also has an underlying endpoint that represents the local end of the established NDK connection:
 
@@ -21,7 +20,7 @@ The NDK provider must keep some sort of reference count for each implicit or exp
 
 ### Reference Counting for (Non-Shared) Endpoints
 
-When the consumer calls the *NdkListen* ([*NDK\_FN\_LISTEN*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_listen)) function, the provider creates an implicit endpoint. For this implicit endpoint, the provider must maintain a reference count as follows:
+When the consumer calls the *NdkListen* ([*NDK\_FN\_LISTEN*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_listen)) function, the provider creates an implicit endpoint. For this implicit endpoint, the provider must maintain a reference count as follows:
 
 -   Add a reference for the listener itself to the endpoint's reference count.
 -   Add a reference for each connector that is accepted over that listener.
@@ -55,14 +54,7 @@ When the consumer calls *NdkConnectWithSharedEndpoint*, the provider creates an 
 ## Related topics
 
 
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
+[Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 
  
-
- 
-
-
-
-
-
 

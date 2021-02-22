@@ -1,7 +1,6 @@
 ---
 title: teb
 description: The teb extension displays a formatted view of the information in the thread environment block (TEB).
-ms.assetid: 4137b54b-f784-412d-bffd-e8a71a54155e
 keywords: ["teb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

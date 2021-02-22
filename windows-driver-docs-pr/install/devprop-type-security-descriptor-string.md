@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING identifier represents the base-data-type identifier that indicates the data type is a NULL-terminated Unicode string that contains a security descriptor in the Security Descriptor Definition Language (SDDL) format.
-ms.assetid: 2d791816-bb0e-4275-953f-1492886e9545
 keywords: ["DEVPROP_TYPE_SECURITY_DESCRIPTOR_STRING Device and Driver Installation"]
 topic_type:
 - apiref

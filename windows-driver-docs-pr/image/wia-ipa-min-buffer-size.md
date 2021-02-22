@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPA\_MIN\_BUFFER\_SIZE
 description: The WIA\_IPA\_MIN\_BUFFER\_SIZE property specifies the minimum buffer size that is used in data transfers.
-ms.assetid: 0d289645-666c-4b67-8971-cdeff3caef3e
 keywords: ["WIA_IPA_MIN_BUFFER_SIZE Imaging Devices"]
 topic_type:
 - apiref

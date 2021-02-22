@@ -1,7 +1,6 @@
 ---
 title: Examples of Graphics Memory Reporting
 description: Examples of Graphics Memory Reporting
-ms.assetid: 3dc0e7ae-db6f-4440-8c9c-7227f409f81f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -17,15 +16,15 @@ The following screen shots show an ATI discrete graphics adapter that has 256 MB
 
 The following screen shot shows a report of available memory through the **Display** application on Windows Vista.
 
-![screen shot of the windows vista display application](images/reportmem1.png)
+![Screenshot that shows the "Display" window with the "Adapter" tab selected.](images/reportmem1.png)
 
 The following screen shot shows a report of available memory through the WinSAT applet on Windows Vista.
 
-![screen shot of the windows vista performance information and tools application](images/reportmem2.png)
+![Screenshot that shows the "Performance Information and Tools" with "Graphics" information displayed.](images/reportmem2.png)
 
 The following screen shot shows a report of available memory through the **Display** application on Windows XP.
 
-![screen shot of the windows xp display application](images/reportmemxp1.png)
+![Screenshot that shows the "Display" app with the "Adapter" tab selected in Windows XP.](images/reportmemxp1.png)
 
 **Note**   The single "Memory Size" number that the preceding screen shot shows is just the dedicated on-board graphics memory, which is not an accurate representation of the total amount of available graphics memory.
 
@@ -57,15 +56,15 @@ The following screen shots show an Intel UMA (Unified Memory Architecture) Mobil
 
 The following screen shot shows a report of available memory through the **Display** application on Windows Vista.
 
-![screen shot of the windows vista display application ](images/reportmemmob3.png)
+![Screenshot that shows the "Display" window with the "Adapter" tab selected and 256 M B of available memory.](images/reportmemmob3.png)
 
 The following screen shot shows a report of available memory through the WinSAT applet on Windows Vista.
 
-![screen shot of the windows vista performance information and tools application](images/reportmemmob4.png)
+![Screenshot that shows the "Performance Information and Tools" within the WinSAT applet, with "Graphics" information displayed.](images/reportmemmob4.png)
 
 The following screen shot shows a report of available memory through the **Display** application on Windows XP.
 
-![screen shot of the windows xp display application](images/reportmemmobxp2.png)
+![Screenshot that shows the "Display" app with the "Adapter" tab selected and 128 M B of memory.](images/reportmemmobxp2.png)
 
  
 

@@ -1,7 +1,6 @@
 ---
 title: Custom Switch Feature Status
 description: Custom Switch Feature Status
-ms.assetid: 2362EE05-9CC9-451D-80D1-C18CC9274BAB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -56,7 +55,7 @@ mofcomp -N:root\virtualization\v2 Fabrikam_CustomSwitchData.mof
 net start vmms
 ```
 
-For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](https://docs.microsoft.com/windows-hardware/drivers/kernel/compiling-a-driver-s-mof-file).
+For more information about how to use the MOF compiler, see [Compiling a Driver's MOF File](../kernel/compiling-a-driver-s-mof-file.md).
 
 The following example shows how you can use the custom switch feature status definition to obtain switch data. In this example, the Fabrikam\_CustomSwitchData MOF class is used to obtain switch status from a switch named “TestSwitch”. The Fabrikam, Inc. extension is enabled on the vSwitch “TestSwitch”, and is returning 123 for the status.
 
@@ -70,10 +69,4 @@ PS C:\> $switchData$customSwitchData.Data.CurrentStatus
 For more information on how extensible switch extensions manage switch feature status information, see [Managing Custom Switch Feature Status Information](managing-custom-switch-feature-status-information.md).
 
  
-
- 
-
-
-
-
 

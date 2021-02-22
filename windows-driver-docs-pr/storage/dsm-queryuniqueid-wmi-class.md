@@ -1,7 +1,6 @@
 ---
 title: DSM\_QueryUniqueId WMI Class
 description: DSM\_QueryUniqueId WMI Class
-ms.assetid: 576e208d-972c-47ba-ab30-a05bf3d0943d
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -36,13 +35,7 @@ class DSM_QueryUniqueId
 };
 ```
 
-When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QueryUniqueId**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_queryuniqueid) data structure. There are no methods associated with this WMI class.
+When this class definition is compiled by the WMI tool suite, it produces the [**DSM\_QueryUniqueId**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsm_queryuniqueid) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

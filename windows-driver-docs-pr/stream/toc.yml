@@ -1,7 +1,21 @@
 - name: "Streaming media devices design guide"
   href: index.md
 - name: "Device firmware update for USB devices without using a co-installer"
-  href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+# Auto-expanded node
+  items: 
+  - name: "Device firmware update for USB devices without using a co-installer"
+    href: device-firmware-update-for-usb-devices-without-using-a-co-installer.md
+- name: "Network camera design guide"
+# Auto-expanded node
+  items: 
+  - name: "Network camera design guide"
+    href: network-camera-design-guide.md
+  - name: "KSPROPERTYSETID_NetworkCameraControl"
+    href: kspropertysetid-networkcameracontrol.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_NTP"
+    href: ksproperty-networkcameracontrol-ntp.md
+  - name: "KSPROPERTY_NETWORKCAMERACONTROL_URI"
+    href: ksproperty-networkcameracontrol-uri.md
 - name: "USB Video Class (UVC) camera implementation guide"
 # Auto-expanded node
   items: 
@@ -25,6 +39,8 @@
     href: infrared-stream-support-in-uvc.md
   - name: "Camera class INF file setting for Universal camera drivers"
     href: camera-driver-inf-file-class-setting.md
+  - name: "Driver support for Camera UVC Control Cache"
+    href: camera-device-uvc-control-cache.md
   - name: "Microsoft extensions to USB Video Class 1.5 specification"
     href: uvc-extensions-1-5.md
 - name: "Windows Hello Camera driver bring up guide"
@@ -917,6 +933,8 @@
       href: ksproperty-pin-interfaces.md
     - name: "KSPROPERTY_PIN_MEDIUMS"
       href: ksproperty-pin-mediums.md
+    - name: "KSPROPERTY_PIN_MODEDATAFORMATS"
+      href: ksproperty-pin-modedataformats.md
     - name: "KSPROPERTY_PIN_NAME"
       href: ksproperty-pin-name.md
     - name: "KSPROPERTY_PIN_NECESSARYINSTANCES"
@@ -1544,6 +1562,8 @@
       href: ksproperty-cameracontrol-extended-photomode2.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE"
       href: ksproperty-cameracontrol-extended-profile.md
+    - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_RELATIVEPANELOPTIMIZATION"
+      href: ksproperty-cameracontrol-extended-relativepaneloptimization.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_CONFIGCAPS"
       href: ksproperty-cameracontrol-extended-roi-configcaps.md
     - name: "KSPROPERTY_CAMERACONTROL_EXTENDED_ROI_ISPCONTROL"

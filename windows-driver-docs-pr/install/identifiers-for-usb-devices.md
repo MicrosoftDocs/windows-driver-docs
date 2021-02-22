@@ -1,7 +1,6 @@
 ---
 title: Identifiers for USB Devices
 description: Identifiers for USB Devices
-ms.assetid: 9597eae3-2aaf-4942-9d03-1b03bd12fcfd
 keywords:
 - device identification strings WDK , USB devices
 - identification strings WDK device , USB devices
@@ -23,7 +22,7 @@ Since the Windows operating system generates special USB identifiers for printer
 
 [Standard USB Identifiers](standard-usb-identifiers.md)
 
-[Special USB Identifiers](special-usb-identifiers.md)
+[Special USB Identifiers](identifiers-generated-by-usbstor-sys.md)
 
 For all USB devices, the USB bus driver generates a standard set of identifiers composed of values retrieved from the USB device and interface descriptors. Standard USB Identifiers are discussed in the first of the two sections indicated above. In addition to the standard USB identifiers, native Windows drivers for mass storage and printer devices generate a separate set of USB identifiers composed of information about special relevance to printers and storage devices. These special USB identifiers are discussed in the second section.
 

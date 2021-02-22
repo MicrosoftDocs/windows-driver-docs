@@ -1,7 +1,6 @@
 ---
 title: \_DXGK\_DMABUFFERCAPS structure
 description: The DXGK\_DMABUFFERCAPS structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 57ccc0e6-eacf-48a2-a9a1-cb7e43850caa
 keywords: ["_DXGK_DMABUFFERCAPS structure Display Devices", "DXGK_DMABUFFERCAPS structure Display Devices"]
 topic_type:
 - apiref

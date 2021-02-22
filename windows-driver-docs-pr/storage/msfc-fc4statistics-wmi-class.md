@@ -1,7 +1,6 @@
 ---
 title: MSFC\_FC4STATISTICS WMI Class
 description: MSFC\_FC4STATISTICS WMI Class
-ms.assetid: 49cd4104-1fe8-46ec-9216-c5c078666c02
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -28,15 +27,9 @@ class MSFC_FC4STATISTICS {
 
 When compiled by the WMI tool suite this class definition produces the following data structure:
 
-[**MSFC\_FC4STATISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics)
+[**MSFC\_FC4STATISTICS**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_fc4statistics)
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

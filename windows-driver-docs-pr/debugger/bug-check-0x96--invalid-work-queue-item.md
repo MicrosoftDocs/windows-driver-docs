@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x96 INVALID_WORK_QUEUE_ITEM
 description: The INVALID_WORK_QUEUE_ITEM bug check has a value of 0x00000096. This bug check indicates that a queue entry was removed that contained a NULL pointer.
-ms.assetid: 18d7d8b2-814c-4207-aac9-e3affc2ccebd
 keywords: ["Bug Check 0x96 INVALID_WORK_QUEUE_ITEM", "INVALID_WORK_QUEUE_ITEM"]
 ms.date: 05/23/2017
 topic_type:

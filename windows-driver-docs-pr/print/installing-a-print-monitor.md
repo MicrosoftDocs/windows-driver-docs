@@ -1,7 +1,6 @@
 ---
 title: Installing a Print Monitor
 description: Installing a Print Monitor
-ms.assetid: 2ab993fd-647b-40aa-981c-1bc270ec79a4
 keywords:
 - print monitors WDK , installing
 - installing print monitors WDK
@@ -18,11 +17,11 @@ ms.localizationpriority: medium
 
 
 
-This section describes the methods that can be used to install print monitors. (You can install a print monitor with the same INF file that you use to install your printer. For more information about INF files, see [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) and [Power Management](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-power-management).)
+This section describes the methods that can be used to install print monitors. (You can install a print monitor with the same INF file that you use to install your printer. For more information about INF files, see [Plug and Play](../kernel/introduction-to-plug-and-play.md) and [Power Management](../kernel/introduction-to-power-management.md).)
 
 ### <a href="" id="ddk-installing-a-language-monitor-gg"></a>Installing a Language Monitor
 
-To install a language monitor, add a LanguageMonitor entry to the [**INF DDInstall section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) of the INF file. In the LanguageMonitor entry, list the displayed name of the language monitor and the name of its DLL, similar to the following INF example. A LanguageMonitor entry must be included for every printer driver that controls a printer requiring the use of the language monitor. For more information, see [Printer INF Files](printer-inf-files.md).
+To install a language monitor, add a LanguageMonitor entry to the [**INF DDInstall section**](../install/inf-ddinstall-section.md) of the INF file. In the LanguageMonitor entry, list the displayed name of the language monitor and the name of its DLL, similar to the following INF example. A LanguageMonitor entry must be included for every printer driver that controls a printer requiring the use of the language monitor. For more information, see [Printer INF Files](printer-inf-files.md).
 
 ```cpp
 [AcmeInst]
@@ -56,7 +55,7 @@ Alternatively, custom installation applications can install language monitors by
 
 ### <a href="" id="ddk-installing-a-port-monitor-gg"></a>Installing a Port Monitor
 
-To install a port monitor, your installation medium must include a printer INF file (that is, an INF file for which Class = Printer) that contains a PortMonitors section. The single entry in this section points to an install section containing two entries: an [**INF CopyFiles directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) that lists all of the files that make up the port monitor, and a PortMonitorDll entry that specifies which DLL in the previous list implements the port monitor interface. The following example code illustrates these points. The PortMonitors section points to an install section named SamplePortMon. In that section, an INF **CopyFiles** directive copies three files that make up the port monitor. Following that, a PortMonitorDll entry identifies the DLL that implements the port monitor interface.
+To install a port monitor, your installation medium must include a printer INF file (that is, an INF file for which Class = Printer) that contains a PortMonitors section. The single entry in this section points to an install section containing two entries: an [**INF CopyFiles directive**](../install/inf-copyfiles-directive.md) that lists all of the files that make up the port monitor, and a PortMonitorDll entry that specifies which DLL in the previous list implements the port monitor interface. The following example code illustrates these points. The PortMonitors section points to an install section named SamplePortMon. In that section, an INF **CopyFiles** directive copies three files that make up the port monitor. Following that, a PortMonitorDll entry identifies the DLL that implements the port monitor interface.
 
 ```cpp
 [PortMonitors]
@@ -69,12 +68,7 @@ PortMonitorDll = file1.dll
 
 To install a port monitor, open the Printers folder in Control Panel. On the Printers folder's **File** menu, select **Server Properties**. On the **File Server Properties** dialog, click the **Ports** tab, and then click the **Add Port...** button. On the **Printer Ports** dialog, click the **New Port Type...** button. Type the path to the INF file in the text input box, and then click **OK**.
 
-Alternatively, a custom installation application can install the port monitor DLL by a call to the **AddMonitor** function as described in [Port Monitors](https://docs.microsoft.com/windows/desktop/printdocs/port-monitors).
+Alternatively, a custom installation application can install the port monitor DLL by a call to the **AddMonitor** function as described in [Port Monitors](/windows/desktop/printdocs/port-monitors).
 
  
-
- 
-
-
-
 

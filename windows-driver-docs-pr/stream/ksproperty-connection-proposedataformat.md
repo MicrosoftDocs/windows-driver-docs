@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT
 description: Clients can use the KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT property to propose a new data format for the connection.
-ms.assetid: f5bc7cd2-0033-4761-962b-33c82925134b
 keywords: ["KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT Streaming Media Devices"]
 topic_type:
 - apiref
@@ -47,8 +46,8 @@ Clients can use the KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT property to propos
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 <td><p>Pin</p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
-<td><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)"><strong>KSPROPERTY</strong></a></p></td>
+<td><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat" data-raw-source="[&lt;strong&gt;KSDATAFORMAT&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)"><strong>KSDATAFORMAT</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -58,11 +57,11 @@ Clients can use the KSPROPERTY\_CONNECTION\_PROPOSEDATAFORMAT property to propos
 Remarks
 -------
 
-This property returns a [**KSDATAFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) specifying the proposed data format.
+This property returns a [**KSDATAFORMAT**](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) specifying the proposed data format.
 
 The KS filter returns STATUS\_SUCCESS if the pin can be reset to the proposed data format, or an error code otherwise. Note that this property request does not change the data format. Clients use [**KSPROPERTY\_CONNECTION\_DATAFORMAT**](ksproperty-connection-dataformat.md) to change the format.
 
-Also see [KS Data Formats and Data Ranges](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-data-formats-and-data-ranges).
+Also see [KS Data Formats and Data Ranges](./ks-data-formats-and-data-ranges.md).
 
 Requirements
 ------------
@@ -85,14 +84,5 @@ Requirements
 
 [**KSPROPERTY\_CONNECTION\_DATAFORMAT**](ksproperty-connection-dataformat.md)
 
-[*AVStrMiniPinSetDataFormat*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdataformat)
-
- 
-
- 
-
-
-
-
-
+[*AVStrMiniPinSetDataFormat*](/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinsetdataformat)
 

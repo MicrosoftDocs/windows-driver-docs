@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbusb2tt
 description: The usbkd.usbusb2tt command displays information from a usbport _TT structure.
-ms.assetid: 0020C59D-EC86-4820-8882-F801C0C7936E
 keywords: ["usbkd.usbusb2tt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -38,14 +37,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

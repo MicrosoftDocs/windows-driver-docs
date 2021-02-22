@@ -1,7 +1,6 @@
 ---
 title: Cases Where Header-Data Split Is Not Used
 description: Cases Where Header-Data Split Is Not Used
-ms.assetid: e5d3071e-a0d1-4a66-b8aa-6823e737f242
 keywords:
 - header-data split WDK , when not used
 - Ethernet frame splitting WDK networking , when not used
@@ -21,7 +20,7 @@ This topic provides an overview of the cases where a header-data split provider 
 
  
 
-All Ethernet frames that are not split must follow the general NDIS rules and requirements. For example, the first MDL in the chain of MDLs in a received [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure must contain either the lookahead part of the frame or the entire Ethernet frame (whichever is smaller) in a virtually contiguous buffer. NDIS sets the size of lookahead with the [OID\_GEN\_CURRENT\_LOOKAHEAD](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-lookahead) OID.
+All Ethernet frames that are not split must follow the general NDIS rules and requirements. For example, the first MDL in the chain of MDLs in a received [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure must contain either the lookahead part of the frame or the entire Ethernet frame (whichever is smaller) in a virtually contiguous buffer. NDIS sets the size of lookahead with the [OID\_GEN\_CURRENT\_LOOKAHEAD](./oid-gen-current-lookahead.md) OID.
 
 Header-data split providers:
 
@@ -38,10 +37,4 @@ Header-data split providers:
 -   Do not split frames that contain TCP options that the NIC does not recognize unless they can be split at the beginning of the TCP header.
 
  
-
- 
-
-
-
-
 

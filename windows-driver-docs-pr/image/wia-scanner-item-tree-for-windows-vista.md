@@ -1,7 +1,6 @@
 ---
 title: WIA Scanner Item Tree for Windows Vista
 description: WIA Scanner Item Tree for Windows Vista
-ms.assetid: 62e0d70a-834f-4fc2-ad15-764211d4bea3
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,5 +1,5 @@
 ---
-Description: A USB function driver supports runtime idle detection by implementing USB selective suspend. 
+description: A USB function driver supports runtime idle detection by implementing USB selective suspend.
 title: Selective suspend in USB drivers (WDF)
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -86,11 +86,8 @@ If the driver is not the PPO, the framework takes no further actions because onl
 
 ## Related topics
 [Windows Driver Frameworks (WDF)](https://go.microsoft.com/fwlink/p/?linkid=53698)  
-[Plug and Play - Architecture and Driver Support](https://go.microsoft.com/fwlink/p/?linkid=320985)  
-[PnP and Power Management in KMDF Drivers](https://go.microsoft.com/fwlink/p/?linkid=320986)  
-[When WDF Drivers Can Use Power-Managed I/O Queues](https://go.microsoft.com/fwlink/p/?linkid=320987)  
-[Writing USB Drivers with WDF](https://go.microsoft.com/fwlink/p/?linkid=320988)  
-[Implementing power management in USB client drivers](https://go.microsoft.com/fwlink/p/?linkid=320989)  
-
-
-
+[Plug and Play - Architecture and Driver Support](/previous-versions/windows/hardware/design/dn614609(v=vs.85))  
+[PnP and Power Management in KMDF Drivers](../wdf/index.md)  
+[When WDF Drivers Can Use Power-Managed I/O Queues](/previous-versions/windows/hardware/design/dn614013(v=vs.85))  
+[Writing USB Drivers with WDF](../wdf/working-with-usb-devices.md)  
+[Overview of implementing power management in USB client drivers](./usb-power-management.md)

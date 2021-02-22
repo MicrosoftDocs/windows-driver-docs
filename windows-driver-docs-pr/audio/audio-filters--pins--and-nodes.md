@@ -1,7 +1,6 @@
 ---
 title: Audio Filters, Pins, and Nodes
 description: Audio Filters, Pins, and Nodes
-ms.assetid: 5f30703c-bf33-49bb-bce2-990ad5b54a9c
 keywords:
 - WDM audio drivers WDK , filters
 - audio drivers WDK , filters
@@ -50,12 +49,7 @@ This section presents the features of filters, pins, and nodes that are specific
 
 [Topology Filters](topology-filters.md)
 
-For a more general discussion of kernel-streaming filters, pins, and nodes, see [KS Minidriver Architecture](https://docs.microsoft.com/windows-hardware/drivers/stream/ks-minidriver-architecture).
+For a more general discussion of kernel-streaming filters, pins, and nodes, see [KS Minidriver Architecture](../stream/ks-minidriver-architecture.md).
 
  
-
- 
-
-
-
 

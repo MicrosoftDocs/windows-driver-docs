@@ -1,7 +1,6 @@
 ---
 title: DeviceConditionCleared element
 description: The required DeviceConditionCleared element contains information about a previously reported DeviceCondition condition that has been cleared.
-ms.assetid: f4ed3d25-cee0-4532-84aa-d1cdd144ce2a
 keywords: ["DeviceConditionCleared element Imaging Devices"]
 topic_type:
 - apiref

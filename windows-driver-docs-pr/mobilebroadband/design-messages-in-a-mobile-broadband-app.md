@@ -1,7 +1,6 @@
 ---
 title: Design messages in a mobile broadband app
 description: Design messages in a mobile broadband app
-ms.assetid: 314fd479-7dcf-4559-a195-26e4c020446c
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,7 +12,7 @@ Your mobile broadband app is a convenient way to communicate with your customers
 
 You should not show user-to-user chat text messaging, promotions, and advertisements in the messages section mixed together with operator notifications and alerts because customers might miss important operator notifications. You can display promotions and advertisements in the layout of your app and display user-to-user chat text messages in a separate section of the user interface.
 
-![message](images/message.png)
+![Screenshot that shows an example of the "Messages" window.](images/message.png)
 
 The following table shows some example operator messages and alerts.
 
@@ -70,9 +69,9 @@ Inappropriate design for showing operator messages:
 ## <span id="Additional_resources"></span><span id="additional_resources"></span><span id="ADDITIONAL_RESOURCES"></span>Additional resources
 
 
--   Use [**ListView**](https://docs.microsoft.com/previous-versions/windows/apps/br211837(v=win.10)) to display messages. For more info, see [Adding List View, Semantic Zoom, and other data controls](https://docs.microsoft.com/previous-versions/windows/apps/hh465409(v=win.10)).
+-   Use [**ListView**](/previous-versions/windows/apps/br211837(v=win.10)) to display messages. For more info, see [Adding List View, Semantic Zoom, and other data controls](/previous-versions/windows/apps/hh465409(v=win.10)).
 
--   Use the app bar control to view and delete messages. For more info, see [Guidelines for app bars](https://docs.microsoft.com/windows/uwp/controls-and-patterns/app-bars).
+-   Use the app bar control to view and delete messages. For more info, see [Guidelines for app bars](/windows/uwp/controls-and-patterns/app-bars).
 
 -   [Integrate a mobile broadband app with other Windows components](integrate-a-mobile-broadband-app-with-other-windows-components.md#tileandtoast)
 
@@ -82,11 +81,4 @@ Inappropriate design for showing operator messages:
 [Designing the user experience of a mobile broadband app](designing-the-user-experience-of-a-mobile-broadband-app.md)
 
  
-
- 
-
-
-
-
-
 

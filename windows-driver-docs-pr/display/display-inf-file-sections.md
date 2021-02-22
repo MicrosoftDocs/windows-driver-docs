@@ -1,7 +1,6 @@
 ---
 title: Display INF File Sections
 description: Display INF File Sections
-ms.assetid: 2075a10f-a504-4bdc-8112-9c583c5084bb
 keywords:
 - sideband addressing WDK Windows 2000 display
 - AGP transfer rates WDK Windows 2000 display
@@ -19,11 +18,11 @@ ms.localizationpriority: medium
 ## <span id="ddk_display_inf_file_sections_gg"></span><span id="DDK_DISPLAY_INF_FILE_SECTIONS_GG"></span>
 
 
-This section tells you how to write the setup information file (INF) sections that specifically apply to a graphics-adapter installation. For more general information about INF files, see [INF File Sections and Directives](https://docs.microsoft.com/windows-hardware/drivers/install/inf-file-sections-and-directives).
+This section tells you how to write the setup information file (INF) sections that specifically apply to a graphics-adapter installation. For more general information about INF files, see [INF File Sections and Directives](../install/index.md).
 
 ### <span id="DDInstall.SoftwareSettings_Section"></span><span id="ddinstall.softwaresettings_section"></span><span id="DDINSTALL.SOFTWARESETTINGS_SECTION"></span>DDInstall.SoftwareSettings Section
 
-A *DDInstall*.**SoftwareSettings** section contains an [**AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive and/or a [**DelReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-delreg-directive) directive. Each directive points to a separate, writer-defined INF section that contains registry entries for the installer to add or delete.
+A *DDInstall*.**SoftwareSettings** section contains an [**AddReg**](../install/inf-addreg-directive.md) directive and/or a [**DelReg**](../install/inf-delreg-directive.md) directive. Each directive points to a separate, writer-defined INF section that contains registry entries for the installer to add or delete.
 
 For example, the following code shows an **AddReg** directive that points to a writer-defined add-registry section named **ACME-1234\_SoftwareDeviceSettings**. The **DelReg** directive points to a delete-registry section named **ACME-1234\_DeleteSWSettings**.
 
@@ -45,7 +44,7 @@ HKR,, VideoDebugLevel, %REG_DWORD%, 2
 
 The preceding code first sets the value of the **InstalledDisplayDrivers** entry to the name of the display driver. The code then sets the value of the **OverRideMonitorPower** entry to 0 (in other words, **FALSE**). This entry, which should be used only by OEM system vendors, controls the power behavior of the monitor device (for example, the LCD, CRT, or TV). When set to 1, **OverRideMonitorPower** limits the possible power states of the monitor device to D0 and D3.
 
-Third, the code sets the value of the **MultiFunctionSupported** entry to 1 (in other words, **TRUE**), which is the required value for an adapter that supports multiple PCI functions. Last, the code sets the value of the **VideoDebugLevel** entry, which controls the global debug level that checked builds use for debug messages. This value ranges from 0 (no debug messages) to 3 (the most verbose messages). For more information about global debug levels, see [**VideoDebugPrint**](https://docs.microsoft.com/previous-versions/ff570170(v=vs.85)).
+Third, the code sets the value of the **MultiFunctionSupported** entry to 1 (in other words, **TRUE**), which is the required value for an adapter that supports multiple PCI functions. Last, the code sets the value of the **VideoDebugLevel** entry, which controls the global debug level that checked builds use for debug messages. This value ranges from 0 (no debug messages) to 3 (the most verbose messages). For more information about global debug levels, see [**VideoDebugPrint**](/previous-versions/ff570170(v=vs.85)).
 
 Most video miniport drivers are not VGA-compatible and require no **VgaCompatible** entry in the registry. If your video miniport driver is VGA-compatible, add the **VgaCompatible** entry to the registry and set its value to 1 (**TRUE**) in the add registry section, as shown here:
 
@@ -65,7 +64,7 @@ HKR,, MemClocking
 HKR,, CapabilityOverride
 ```
 
-The **CapabilityOverride** entry specifies the capabilities that the system turns off for the display driver. For example, even if the display driver implements a [**DrvEscape**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvescape) function, that capability cannot be used if the 0x10 flag is set in the **CapabilityOverride** entry.
+The **CapabilityOverride** entry specifies the capabilities that the system turns off for the display driver. For example, even if the display driver implements a [**DrvEscape**](/windows/win32/api/winddi/nf-winddi-drvescape) function, that capability cannot be used if the 0x10 flag is set in the **CapabilityOverride** entry.
 
 The value of the **CapabilityOverride** registry entry is a bitwise OR of one or more of the flags that are listed in the following table.
 
@@ -91,15 +90,15 @@ The value of the **CapabilityOverride** registry entry is a bitwise OR of one or
 </tr>
 <tr class="odd">
 <td align="left"><p>0x4</p></td>
-<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to <a href="https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo)"><strong>DdGetDriverInfo</strong></a><em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for Direct3D hardware acceleration. Prevents calls to <a href="/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo" data-raw-source="[&lt;strong&gt;DdGetDriverInfo&lt;/strong&gt;](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo)"><strong>DdGetDriverInfo</strong></a><em>,</em> which request Direct3D capability and callback information, from reaching the driver.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>0x8</p></td>
-<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsetpixelformat" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvsetpixelformat)"><strong>DrvSetPixelFormat</strong></a>, <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdescribepixelformat" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdescribepixelformat)"><strong>DrvDescribePixelFormat</strong></a>, and <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvswapbuffers" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvswapbuffers)"><strong>DrvSwapBuffers</strong></a> from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
+<td align="left"><p>Disables all support for the OpenGL installable client driver (ICD) and miniclient driver (MCD). Prevents calls to <a href="/windows/win32/api/winddi/nf-winddi-drvsetpixelformat" data-raw-source="[&lt;strong&gt;DrvSetPixelFormat&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvsetpixelformat)"><strong>DrvSetPixelFormat</strong></a>, <a href="/windows/win32/api/winddi/nf-winddi-drvdescribepixelformat" data-raw-source="[&lt;strong&gt;DrvDescribePixelFormat&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvdescribepixelformat)"><strong>DrvDescribePixelFormat</strong></a>, and <a href="/windows/win32/api/winddi/nf-winddi-drvswapbuffers" data-raw-source="[&lt;strong&gt;DrvSwapBuffers&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvswapbuffers)"><strong>DrvSwapBuffers</strong></a> from reaching the driver. Also prevents OPENGL_GETINFO, OPENGL_CMD and MCDFUNCS escapes from reaching the driver.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>0x10</p></td>
-<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvescape" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvescape)"><strong>DrvEscape</strong></a> and <a href="https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdrawescape" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvdrawescape)"><strong>DrvDrawEscape</strong></a> from reaching the driver.</p></td>
+<td align="left"><p>Disables support for all escapes in the driver. Prevents calls to <a href="/windows/win32/api/winddi/nf-winddi-drvescape" data-raw-source="[&lt;strong&gt;DrvEscape&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvescape)"><strong>DrvEscape</strong></a> and <a href="/windows/win32/api/winddi/nf-winddi-drvdrawescape" data-raw-source="[&lt;strong&gt;DrvDrawEscape&lt;/strong&gt;](/windows/win32/api/winddi/nf-winddi-drvdrawescape)"><strong>DrvDrawEscape</strong></a> from reaching the driver.</p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +111,7 @@ Microsoft Windows XP and earlier operating systems do not delete the **Capabilit
 
 ### <span id="Disabling_AGP_Transfer_Rates_and_Sideband_Addressing"></span><span id="disabling_agp_transfer_rates_and_sideband_addressing"></span><span id="DISABLING_AGP_TRANSFER_RATES_AND_SIDEBAND_ADDRESSING"></span>Disabling AGP Transfer Rates and Sideband Addressing
 
-If necessary, you can modify the INF file for your display adapter to disable certain AGP transfer rates or sideband addressing. Note that a miniport driver can change AGP transfer rates when it calls [**AgpSetRate**](https://docs.microsoft.com/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_set_rate), but such calls are not allowed to change transfer rates that are disabled in an INF file.
+If necessary, you can modify the INF file for your display adapter to disable certain AGP transfer rates or sideband addressing. Note that a miniport driver can change AGP transfer rates when it calls [**AgpSetRate**](/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_set_rate), but such calls are not allowed to change transfer rates that are disabled in an INF file.
 
 The *regstr.h* header file, which is shipped with the Windows Driver Kit (WDK), defines the following set of flags.
 
@@ -172,7 +171,7 @@ You can find the platform-specific entries under "Parameters" in the filter-driv
 HKLM,"SYSTEM\CurrentControlSet\Services\AcmeAGP\Parameters"
 ```
 
-To disable sideband addressing for a device that has a DeviceID of 0x012A (Nuclear3D) and a VendorID of 0x1AD0 on VIA Technologies platforms, add a **Nuclear3D\_Install.HW** section to your INF file. (For more information about this type of INF Install section, see [**INF DDInstall.HW Section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section).) In this section, include an [**AddReg**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) directive similar to the following:
+To disable sideband addressing for a device that has a DeviceID of 0x012A (Nuclear3D) and a VendorID of 0x1AD0 on VIA Technologies platforms, add a **Nuclear3D\_Install.HW** section to your INF file. (For more information about this type of INF Install section, see [**INF DDInstall.HW Section**](../install/inf-ddinstall-hw-section.md).) In this section, include an [**AddReg**](../install/inf-addreg-directive.md) directive similar to the following:
 
 ```inf
 [Nuclear3D_Install.HW] 
@@ -201,12 +200,4 @@ HKLM,"SYSTEM\CurrentControlSet\Control\AGP","1AD0012A",0x00030003,04,00,00,00,00
 ```
 
 The second entry in the preceding code indicates that the subkey identified by the string following HKLM is to be added to the registry, under the HKEY\_LOCAL\_MACHINE root. As in the previous entry, the value name associated with this subkey is a string that is composed of the device's DeviceID and VendorID. The flag value is also the same. The value entry is AGP\_FLAG\_NO\_4X\_RATE, which disables the AGP 4X transfer rate. Notice that, as before, the bytes in this value entry are in the opposite order as those of the flag's value in the preceding table.
-
- 
-
- 
-
-
-
-
 

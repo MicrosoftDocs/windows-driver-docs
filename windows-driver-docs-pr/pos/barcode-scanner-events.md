@@ -1,14 +1,13 @@
 ---
 title: Barcode scanner events
-description: Describes the events that are passed from the device driver to the Point of Service (POS) API layer by using ReadFile.
-ms.assetid: 'f0a7a525-8fea-4bce-a817-25c69cd47ddd'
+description: Learn about the barcode scanner events that are passed from the device driver to the Point of Service (POS) API layer by using ReadFile.
 ms.date: 09/07/2018
 ms.localizationpriority: medium
 ---
 
 # Barcode scanner events
 
-This section describes the events that are passed from the device driver to the Point of Service (POS) API layer by using [ReadFile](https://docs.microsoft.com/windows/desktop/api/fileapi/nf-fileapi-readfile). This section focuses on events that are specific to barcode scanners.
+This section describes the events that are passed from the device driver to the Point of Service (POS) API layer by using [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile). This section focuses on events that are specific to barcode scanners.
 
 ## In this section
 

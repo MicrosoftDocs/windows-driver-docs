@@ -1,7 +1,6 @@
 ---
 title: ScannerStatusSummaryEvent element
 description: The required ScannerStatusSummaryEvent element informs the client that the scan device's status has changed.
-ms.assetid: a1297e25-1136-49ef-8b8e-e7c8c62bec13
 keywords: ["ScannerStatusSummaryEvent element Imaging Devices"]
 topic_type:
 - apiref
@@ -70,16 +69,16 @@ The following code example indicates that the scan device is stopped because of 
 
 ```xml
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-  xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+  xmlns:wse="https://schemas.xmlsoap.org/ws/2004/08/eventing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ScannerStatusSummaryEvent
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ScannerStatusSummaryEvent
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

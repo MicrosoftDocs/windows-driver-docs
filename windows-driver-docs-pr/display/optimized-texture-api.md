@@ -1,7 +1,6 @@
 ---
 title: Optimized Texture API
 description: Optimized Texture API
-ms.assetid: 58d42807-3f52-415e-a06a-2ed408c20fb0
 keywords:
 - texture management WDK Direct3D , optimized textures
 - optimized textures WDK Direct3D

@@ -1,7 +1,6 @@
 ---
 title: Setting Device Object Flags for Power Management
 description: Setting Device Object Flags for Power Management
-ms.assetid: 58d1a3a2-c8ea-446c-b1d6-ed00411d1d75
 keywords: ["DO_POWER_PAGABLE", "DO_POWER_INRUSH", "device object flags WDK power management", "object flags WDK power management", "flags WDK power management"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 
 
 
-In its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, each driver creates a device object (filter device object (DO), functional device object (FDO), or physical device object (PDO)) and sets the DO\_*XXX* flags in the device object to describe the device attributes and driver configuration. The following device object flags pertain to power management.
+In its [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine, each driver creates a device object (filter device object (DO), functional device object (FDO), or physical device object (PDO)) and sets the DO\_*XXX* flags in the device object to describe the device attributes and driver configuration. The following device object flags pertain to power management.
 
 | Flag               | Description                                                                                                                                                                                                                                                                                                |
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -24,18 +23,13 @@ In its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm
 
 The device object flags are typically set by the bus driver when it creates the PDO for the device. However, some function drivers might need to alter the values of these flags as part of their *AddDevice* routines. Starting with Windows Vista, the operating system does not require that all device objects within a device stack have the same power-related flags set. However, in Windows Server 2003, Windows XP, and Windows 2000, all the device objects in a device stack should have the same power-related flags set.
 
-Starting with Windows 2000, drivers of devices that are in the paging path must not set the DO\_POWER\_PAGABLE flag. A driver is in the "paging path" if it participates in I/O operations on the paging file. Drivers that do not set this flag must be callable at IRQL = DISPATCH\_LEVEL. For more information, see [Constraints on Dispatch Routines](https://docs.microsoft.com/windows-hardware/drivers/ifs/constraints-on-dispatch-routines).
+Starting with Windows 2000, drivers of devices that are in the paging path must not set the DO\_POWER\_PAGABLE flag. A driver is in the "paging path" if it participates in I/O operations on the paging file. Drivers that do not set this flag must be callable at IRQL = DISPATCH\_LEVEL. For more information, see [Constraints on Dispatch Routines](../ifs/constraints-on-dispatch-routines.md).
 
-In general, drivers should not alter the bus driver's value for the DO\_POWER\_PAGABLE flag, and a driver must never set this flag if a lower-level driver has cleared it. When handling transitions involving [PnP paging requests](https://docs.microsoft.com/windows-hardware/drivers/storage/handling-pnp-paging-requests) (typically in response to an [**IRP\_MJ\_PNP**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-pnp) with [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-device-usage-notification) request), a storage driver must carefully sequence its setting and clearing of the flag.
+In general, drivers should not alter the bus driver's value for the DO\_POWER\_PAGABLE flag, and a driver must never set this flag if a lower-level driver has cleared it. When handling transitions involving [PnP paging requests](../storage/handling-pnp-paging-requests.md) (typically in response to an [**IRP\_MJ\_PNP**](./irp-mj-pnp.md) with [**IRP\_MN\_DEVICE\_USAGE\_NOTIFICATION**](./irp-mn-device-usage-notification.md) request), a storage driver must carefully sequence its setting and clearing of the flag.
 
 Drivers for devices that require an inrush of power at start-up must set the DO\_POWER\_INRUSH flag in the device object before clearing the DO\_DEVICE\_INITIALIZING flag. Only one driver in the device stack, typically the bus driver (PDO), needs to set the DO\_POWER\_INRUSH flag for the device. The flag notifies the power manager that such devices must be powered up one at a time, in sequence with other such devices, to avoid overloading the power supply. The power manager ensures that only one power inrush IRP is active anywhere in the system at any given time.
 
 Starting with Windows Vista, drivers can set both the DO\_POWER\_PAGABLE flag and the DO\_POWER\_INRUSH flag. In Windows Server 2003, Windows XP, and Windows 2000, drivers cannot set both the DO\_POWER\_PAGABLE flag and the DO\_POWER\_INRUSH flag.
 
  
-
- 
-
-
-
 

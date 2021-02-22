@@ -1,7 +1,6 @@
 ---
 title: SOAP Communications for WIA Scanners
 description: SOAP Communications for WIA Scanners
-ms.assetid: 853350eb-1e42-4a16-a1f4-f4f69f5e80f7
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

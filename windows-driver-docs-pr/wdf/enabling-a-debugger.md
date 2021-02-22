@@ -1,7 +1,6 @@
 ---
 title: How to Enable Debugging of a UMDF Driver
 description: How to Enable Debugging of a UMDF Driver
-ms.assetid: ea37eb7b-09fa-4c8d-aff7-273b07bc0007
 keywords:
 - debuggers WDK UMDF
 - debuggers WDK UMDF , enabling
@@ -17,20 +16,18 @@ ms.localizationpriority: medium
 # How to Enable Debugging of a UMDF Driver
 
 
-You can use the following configurations to debug a User-Mode Driver Framework (UMDF) driver. All configurations involve two machines, a host and a target. You run Microsoft Visual Studio and the Windows Driver Kit (WDK) to build the driver on the host computer, and then install and test your driver on the target machine.
+You can use the following configurations to debug a User-Mode Driver Framework (UMDF) driver during development. All configurations involve two machines, a host and a target. 
 
--   Use Visual Studio to copy ("deploy") the driver to the target and start a user-mode debugging session within Visual Studio on the host.
 -   Manually copy the driver to the target. Perform user-mode debugging on the target. In this scenario, you attach manually to an instance of the driver host process running on the target.
 -   Manually copy the driver to the target and then perform kernel-mode debugging from the host.
 
-You can use the latter two configurations together, running both a user-mode debugger on the target and a kernel-mode debugger on the host.
+We recommend doing all UMDF driver testing and development with a kernel debugger attached.
 
 ## <a href="" id="bp"></a>Best Practices
 
-
 We recommend doing all UMDF driver testing with a kernel debugger attached.
 
-The following are recommended settings. You can set these manually, or use the [WDF Verifier Control Application](https://docs.microsoft.com/windows-hardware/drivers/devtest/wdf-verifier-control-application) (WDFVerifier.exe) tool in the WDK to view or change these settings.
+The following are recommended settings. You can set these manually, or use the [WDF Verifier Control Application](../devtest/wdf-verifier-control-application.md) (WDFVerifier.exe) tool in the WDK to view or change these settings.
 
 -   Enable Application Verifier on WUDFHost.exe:
 
@@ -40,28 +37,13 @@ The following are recommended settings. You can set these manually, or use the [
 
     If exceptions occur, Application Verifier sends diagnostic messages to the debugger and breaks in.
 
--   Enable [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier). Open a **Command Prompt** window (**Run as administrator**). Type verifier to open the Driver Verifier Manager.
--   If you are using a kernel-mode debugging session, set **HostFailKdDebugBreak** so that the reflector breaks into the kernel-mode debugger before terminating the driver host process. This setting is enabled by default starting in UMDF version 1.11.
+-   If you are using a kernel-mode debugging session, set **HostFailKdDebugBreak** so that the reflector breaks into the kernel-mode debugger before terminating the driver host process. This setting is enabled by default starting in Windows 8.
 
 -   Disable pooling by setting **UmdfHostProcessSharing** to **ProcessSharingDisabled**. For info, see [Specifying WDF Directives in INF Files](specifying-wdf-directives-in-inf-files.md).
 -   By default, when a UMDF device fails, the framework attempts to restart it up to five times. You can turn off automatic restart by setting **DebugModeFlags** to 0x01. For more info, see [Registry Values for Debugging WDF Drivers](registry-values-for-debugging-kmdf-drivers.md).
 -   Reboot your computer.
 
-## Using Visual Studio with F5 to attach automatically (user-mode debugging)
-
-
-Before you can use Visual Studio with the WDK to debug a driver on a test computer, you must first set up and configure your test machine. For information on how to do this, see [Deploying a Driver to a Test Computer](https://docs.microsoft.com/windows-hardware/drivers).
-
-After you have configured your test computer, use Visual Studio on the host computer to set breakpoints in your driver. When you press F5, Visual Studio builds the driver, deploys it to the target computer, and starts a user-mode debugging session.
-
-When you deploy a UMDF driver using this technique, Visual Studio turns on *UMDF debug mode* for that driver. By default, debug mode means that:
-
--   The driver starts in its own dedicated host process. [Device pooling](using-device-pooling-in-umdf-drivers.md) is turned off.
--   Devices are not automatically restarted after a driver crash, and error reporting is disabled.
--   The framework does not enforce the timeouts described in [Host Process Timeouts in UMDF](how-umdf-enforces-time-outs.md).
--   If the UMDF host process or the framework verifier detects an invalid operation, UMDF breaks into the user-mode debugger.
-
-You can use debug mode to debug a UMDF driver even if driver installation requires a reboot. You can also debug user-mode drivers that start before the user logs in, for example biometrics, smartcard, or input.
+-   For debugging UMDF driver problems review [Determining Why the Reflector Terminated the Host Process](determining-why-the-reflector-terminated-the-host-process.md) and [Debugging UMDF driver crashes](debugging-umdf-2-0-drivers.md) 
 
 ## Using WinDbg to attach manually (user-mode debugging)
 
@@ -89,8 +71,6 @@ For detailed information about UMDF registry values, see [Registry Values for De
 
 From a remote host, establish a kernel-mode debugging session and then set current process to the instance of Wudfhost that is hosting your driver. If you are debugging from a remote kernel debugger, you can set **HostProcessDbgBreakOnDriverStart** or **HostProcessDbgBreakOnDriverLoad** to 0x80000000 to specify no timeout, but break into the kernel debugger.
 
-In UMDF 1.11 or later, before breaking into the kernel debugger, the reflector automatically switches the process context to that of the host process. As a result, you can use UMDF debugger extension commands immediately, without first issuing the [**.process**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-process--set-process-context-) command to change the process context.
-
 Use these steps:
 
 1. Disable pooling. turn on **DebugModeFlags** and list your driver in **DebugModeBinaries**
@@ -103,10 +83,4 @@ Use these steps:
 5. Depending on the selections you made above, your remote kernel debugger should break in when the driver loads or unloads on the target.
 
  
-
- 
-
-
-
-
 

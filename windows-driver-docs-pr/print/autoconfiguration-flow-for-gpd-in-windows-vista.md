@@ -1,7 +1,6 @@
 ---
 title: Autoconfiguration Flow for GPD in Windows Vista
 description: Autoconfiguration Flow for GPD in Windows Vista
-ms.assetid: 41468218-fa05-4431-a57d-3056449f2e2e
 keywords:
 - GPD files WDK GDL extensions , autoconfiguration flow
 - in-box autoconfiguration support WDK printer , sequence of steps
@@ -16,7 +15,7 @@ Autoconfiguration follows the following sequence:
 
 1.  Port Monitor sends to the spooler a notification that contains any values that formerly were not in the cache or that changed.
 
-2.  The spooler responds to the notification from the port monitor by calling [**DrvPrinterEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent).
+2.  The spooler responds to the notification from the port monitor by calling [**DrvPrinterEvent**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvprinterevent).
 
 3.  Printer\_Event\_Configuration is passed to the driver that contains any and all new values. The driver is notified that the value of an attribute has changed, and the registry is also updated.
 
@@ -29,9 +28,4 @@ Autoconfiguration follows the following sequence:
 7.  Your plug-in will update the driver UI according to the latest configuration.
 
  
-
- 
-
-
-
 

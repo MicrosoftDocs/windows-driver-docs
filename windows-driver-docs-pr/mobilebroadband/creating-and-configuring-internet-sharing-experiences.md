@@ -1,7 +1,6 @@
 ---
 title: Creating and configuring Internet Sharing experiences
 description: Creating and configuring Internet Sharing experiences
-ms.assetid: 11906ee4-68f5-4be6-a3ab-6af3253c8a11
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -78,7 +77,7 @@ Users can also connect to a tethering access point if they have paired their dev
 
 Some mobile network operators (MNOs) or mobile virtual network operators (MVNOs) do not support Internet Sharing on their network, or they require an entitlement check prior to setting up Internet Sharing. Windows provides the necessary controls to ensure that Windows devices comply with network policies. 
 
-To do this in Windows 8, Windows 8.1, or Windows 10 prior to version 1803, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](service-metadata-package-schema-reference.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
+To do this in Windows 8, Windows 8.1, or Windows 10 prior to version 1803, you must author a service metadata package and configure the [AllowTethering](allowtethering.md) element in the schema ([Service metadata package schema reference](mobilebroadbandinfo-xml-schema.md)). For more info about creating a service metadata package, see [Developer guide for creating service metadata](developer-guide-for-creating-service-metadata.md). There are three options:
 
 -   Allow Internet Sharing for all customers. (default value if not specified in the service metadata package)
 
@@ -88,18 +87,18 @@ To do this in Windows 8, Windows 8.1, or Windows 10 prior to version 1803, you m
 
 To do this in Windows 10, version 1803 and later, you must set the [**Hotspot** setting in the COSA database](desktop-cosa-apn-database-settings.md#desktop-cosa-only-settings) to the appropriate value.
 
-If you decide that an entitlement check is not required, no additional information or capabilities are needed. If an entitlement check is required, you must also provide a background notification event handler that is part of your UWP mobile broadband app. In Windows 10, version 1803 and later, use the methods in the [TetheringEntitlementCheckTriggerDetails](https://docs.microsoft.com/uwp/api/windows.networking.networkoperators.tetheringentitlementchecktriggerdetails) class to handle Windows notification events for checking tethering entitlement. For earlier versions of Windows, use the [**NetworkOperatorNotificationEventDetails**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails) class. For more info on creating the background notification event handler, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md).
+If you decide that an entitlement check is not required, no additional information or capabilities are needed. If an entitlement check is required, you must also provide a background notification event handler that is part of your UWP mobile broadband app. In Windows 10, version 1803 and later, use the methods in the [TetheringEntitlementCheckTriggerDetails](/uwp/api/windows.networking.networkoperators.tetheringentitlementchecktriggerdetails) class to handle Windows notification events for checking tethering entitlement. For earlier versions of Windows, use the [**NetworkOperatorNotificationEventDetails**](/uwp/api/Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails) class. For more info on creating the background notification event handler, see [Enabling mobile operator notifications and system events](enabling-mobile-operator-notifications-and-system-events.md).
 
-MOs and MVNOs have different requirements on what PDP context should be used for Internet Sharing. Windows has updated the existing [provisioning XML schema](https://docs.microsoft.com/uwp/schemas/mobilebroadbandschema/schema-for-mobile-broadband-portal) to enable you to provision the system with the correct Internet Sharing PDP context information. For more information about multiple PDP contexts, see [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md).
+MOs and MVNOs have different requirements on what PDP context should be used for Internet Sharing. Windows has updated the existing [provisioning XML schema](/uwp/schemas/mobilebroadbandschema/schema-for-mobile-broadband-portal) to enable you to provision the system with the correct Internet Sharing PDP context information. For more information about multiple PDP contexts, see [Developing apps using multiple PDP contexts](developing-apps-using-multiple-pdp-contexts.md).
 
 You can also configure the maximum number of concurrent connected client devices is 10. You can change this number to anything between 3 and 10 by using [Account provisioning](account-provisioning.md).
 
-To help ensure that your users don’t accidentally run over their data, you can show data usage statistics to your customers for shared and non-shared traffic in your mobile broadband app by using the [**GetNetworkUsageAsync**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectionProfile#Windows_Networking_Connectivity_ConnectionProfile_GetNetworkUsageAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_DataUsageGranularity_Windows_Networking_Connectivity_NetworkUsageStates_) method of the [**ConnectionProfile**](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectionProfile) class.
+To help ensure that your users don’t accidentally run over their data, you can show data usage statistics to your customers for shared and non-shared traffic in your mobile broadband app by using the [**GetNetworkUsageAsync**](/uwp/api/Windows.Networking.Connectivity.ConnectionProfile#Windows_Networking_Connectivity_ConnectionProfile_GetNetworkUsageAsync_Windows_Foundation_DateTime_Windows_Foundation_DateTime_Windows_Networking_Connectivity_DataUsageGranularity_Windows_Networking_Connectivity_NetworkUsageStates_) method of the [**ConnectionProfile**](/uwp/api/Windows.Networking.Connectivity.ConnectionProfile) class.
 
 ## <span id="Create_a_custom_Internet_Sharing_app"></span><span id="create_a_custom_internet_sharing_app"></span><span id="CREATE_A_CUSTOM_INTERNET_SHARING_APP"></span>Create a custom Internet Sharing app
 
 
-For most operators, the Windows user interface will provide the best experience for Internet Sharing. However, in order to create a consistent experience across all their devices and hardware, you may choose to include your own Internet Sharing user experience in your mobile broadband app or other app that has been given privileged access to the mobile broadband device. Windows provides several new APIs in the [**Windows.Networking.NetworkOperators namespace**](https://docs.microsoft.com/uwp/api/Windows.Networking.NetworkOperators) to enable your app to do the following:
+For most operators, the Windows user interface will provide the best experience for Internet Sharing. However, in order to create a consistent experience across all their devices and hardware, you may choose to include your own Internet Sharing user experience in your mobile broadband app or other app that has been given privileged access to the mobile broadband device. Windows provides several new APIs in the [**Windows.Networking.NetworkOperators namespace**](/uwp/api/Windows.Networking.NetworkOperators) to enable your app to do the following:
 
 -   Ensure the system is capable of Internet Sharing
 
@@ -114,10 +113,4 @@ For most operators, the Windows user interface will provide the best experience 
 -   Receive and react to notifications about a change in the Internet Sharing status or number of connected devices
 
  
-
- 
-
-
-
-
 

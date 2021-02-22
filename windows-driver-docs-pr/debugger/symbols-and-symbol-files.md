@@ -1,7 +1,6 @@
 ---
 title: Symbols and Symbol Files
 description: Symbols and Symbol Files
-ms.assetid: b9ace4f0-8363-4dec-806f-798d30983dc1
 keywords: ["symbols, overview"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -39,7 +38,7 @@ Windows keeps its symbols in files with the extension .pdb.
 
 The compiler and the linker control the symbol format. The Visual C++ linker, places all symbols into .pdb files.
 
-The Windows operating system is built in two versions. The *free build* (or *retail build*) has relatively small binaries, and the *checked build* (or *debug build*) has larger binaries, with more debugging symbols in the code itself. Each of these builds has its own symbol files. When debugging a target on Windows, you must use the symbol files that match the build of Windows on the target.
+The Windows operating system was built in two versions. The *free build* (or *retail build*) has relatively small binaries, and the *checked build* (or *debug build*) has larger binaries, with more debugging symbols in the code itself. Checked builds were available on older versions of Windows before Windows 10, version 1803. Each of these builds had its own symbol files. When debugging a target on Windows, you must use the symbol files that match the build of Windows on the target.
 
 The following table lists several of the directories which exist in a standard Windows symbol tree:
 

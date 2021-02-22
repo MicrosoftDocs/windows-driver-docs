@@ -1,7 +1,6 @@
 ---
 title: Error Record Persistence
 description: Error Record Persistence
-ms.assetid: fe43f93a-59bd-4158-ad00-8fef595528cb
 keywords:
 - Windows Hardware Error Architecture WDK , error record persistence
 - WHEA WDK , error record persistence

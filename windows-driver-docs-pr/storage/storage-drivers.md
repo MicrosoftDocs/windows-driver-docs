@@ -1,18 +1,15 @@
 ---
-title: Storage Drivers
+title: About Storage Drivers
 description: Storage Drivers
-ms.assetid: 5512a8f1-20ad-4b78-a60e-7418ac7f2117
 keywords:
 - storage drivers WDK
 ms.date: 10/08/2019
 ms.localizationpriority: medium
 ---
 
-# Storage Drivers
+# About Storage Drivers
 
-## <span id="ddk_storage_drivers_kg"></span><span id="DDK_STORAGE_DRIVERS_KG"></span>
-
-This section contains the following information:
+This section of the Storage Driver Design Guide contains the following information:
 
 [Storage Driver Architecture](storage-driver-architecture.md)
 
@@ -26,13 +23,15 @@ This section contains the following information:
 
 [Device Unique Identifiers for Storage Devices (DUIDs)](device-unique-identifiers--duids--for-storage-devices.md)
 
+[General Storage I/O Control Codes](general-storage-io-control-codes.md)
+
 Subsequent sections contain guidelines for designing the following kinds of Windows kernel-mode storage drivers:
 
 - An operating system-independent miniport driver for a vendor-specific SCSI HBA (see [SCSI Miniport Drivers](scsi-miniport-drivers.md))
 
 - A miniport driver for a non-SCSI storage adapter (see [SCSI Miniport Drivers](scsi-miniport-drivers.md))
 
-- A class driver for a new type of peripheral device (see [Storage Class Drivers](storage-class-drivers.md))
+- A class driver for a new type of peripheral device (see [Storage Class Drivers](introduction-to-storage-class-drivers.md))
 
 - An operating system-independent tape miniclass driver for a vendor-specific tape device (see [Tape Drivers](tape-drivers-overview.md))
 

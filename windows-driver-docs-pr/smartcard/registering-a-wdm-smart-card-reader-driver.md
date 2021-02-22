@@ -1,7 +1,6 @@
 ---
 title: Registering a WDM Smart Card Reader Driver
 description: Registering a WDM Smart Card Reader Driver
-ms.assetid: 0f82c18b-3bbc-4bc6-825a-58e957f4e3aa
 keywords:
 - smart card drivers WDK , registry
 - registry WDK smart card

@@ -1,7 +1,6 @@
 ---
 title: Standardized INF Keywords for NDIS QoS
 description: Standardized INF Keywords for NDIS QoS
-ms.assetid: 7967D633-850F-4707-9577-9262AEB1A597
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -68,7 +67,7 @@ The display text that is associated with each value that appears in the menu.
 
  
 
-When NDIS calls the miniport driver's [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the driver must do the following:
+When NDIS calls the miniport driver's [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the driver must do the following:
 
 -   The miniport driver must register the NDIS QoS hardware capabilities that the network adapter supports.
 
@@ -84,7 +83,7 @@ The miniport driver must follow these guidelines when it registers the current s
 
     For more information on how to register QoS hardware and current capabilities, see [Registering NDIS QoS Capabilities](registering-ndis-qos-capabilities.md).
 
-    **Note**  The miniport driver must always issue [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-qos-operational-parameters-change) and [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-qos-remote-parameters-change) status indications if its NDIS QoS hardware capabilities are currently enabled. Starting with Windows Server 2012, these status indications report on the current operational and remote QoS parameter settings, respectively. These indications allow system administrators to view NDIS QoS and DCB settings regardless of whether the Microsoft DCB server feature is installed. For more information, see [Indicating NDIS QoS Parameter Status](indicating-ndis-qos-parameter-status.md).
+    **Note**  The miniport driver must always issue [**NDIS\_STATUS\_QOS\_OPERATIONAL\_PARAMETERS\_CHANGE**](./ndis-status-qos-operational-parameters-change.md) and [**NDIS\_STATUS\_QOS\_REMOTE\_PARAMETERS\_CHANGE**](./ndis-status-qos-remote-parameters-change.md) status indications if its NDIS QoS hardware capabilities are currently enabled. Starting with Windows Server 2012, these status indications report on the current operational and remote QoS parameter settings, respectively. These indications allow system administrators to view NDIS QoS and DCB settings regardless of whether the Microsoft DCB server feature is installed. For more information, see [Indicating NDIS QoS Parameter Status](indicating-ndis-qos-parameter-status.md).
 
      
 
@@ -170,10 +169,4 @@ For more information about standardized INF keywords, see [Standardized INF Keyw
 For more information on how to register NDIS QoS capabilities, see [Registering NDIS QoS Capabilities](registering-ndis-qos-capabilities.md).
 
  
-
- 
-
-
-
-
 

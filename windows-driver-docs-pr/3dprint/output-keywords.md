@@ -1,7 +1,6 @@
 ---
 title: Output keywords
 description: These keywords are used to describe the actual output processes for a given 3D manufacturing job.
-ms.assetid: FBCE5E9C-8411-46C1-899E-A6C8FE27D947
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

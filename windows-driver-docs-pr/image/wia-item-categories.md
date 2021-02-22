@@ -1,7 +1,6 @@
 ---
 title: WIA Item Categories
 description: WIA Item Categories
-ms.assetid: b201e365-60d8-4c3b-a9cf-4bbaa318337f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 
 This topic applies to Windows Vista and later.
 
-All items in a WIA item tree must support the [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category) property. This property identifies the functional category that an item belongs to. The category determines the set of WIA item flags and WIA properties that are associated with the item.
+All items in a WIA item tree must support the [**WIA\_IPA\_ITEM\_CATEGORY**](./wia-ipa-item-category.md) property. This property identifies the functional category that an item belongs to. The category determines the set of WIA item flags and WIA properties that are associated with the item.
 
 WIA defines the following item categories:
 
@@ -47,12 +46,7 @@ A *finished file item* represents a finished file stored in a folder on a WIA sc
 <a href="" id="wia-category-auto"></a>WIA\_CATEGORY\_AUTO  
 In Windows 7 and later, an [auto item](auto-item.md) represents the automatic configuration settings for a WIA scanner device that supports [auto-configured scanning](auto-configured-scanning.md). This type of device can configure its own scan settings instead of requiring the settings to be configured by a WIA application running on a desktop computer. For example, if the device enables the user to initiate a scanning operation from the device (instead of from the application's user interface) and to select the input source for the operation from the device, the application can use the auto item to offload, to the device, the task of configuring the selected input source. An auto item is a child of the root item. A WIA tree that contains an auto item must also contain one or more of the following: flatbed item, feeder item, or film item. An application can access the auto-configured scanning function of a device through the WIA properties implemented on the root item and on the auto item. For more information, see [WIA Properties Supported by an Auto Item](wia-properties-supported-by-an-auto-item.md).
 
-Each WIA item category has a set of required WIA item flags and WIA properties that an item in the category must support, and, in addition, a set of flags and properties that the item can support as options. For a summary of the flags and properties associated with the various item categories, see [**WIA\_IPA\_ITEM\_CATEGORY**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-category). For a complete list of the WIA item flags, see [**WIA\_IPA\_ITEM\_FLAGS**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ipa-item-flags).
+Each WIA item category has a set of required WIA item flags and WIA properties that an item in the category must support, and, in addition, a set of flags and properties that the item can support as options. For a summary of the flags and properties associated with the various item categories, see [**WIA\_IPA\_ITEM\_CATEGORY**](./wia-ipa-item-category.md). For a complete list of the WIA item flags, see [**WIA\_IPA\_ITEM\_FLAGS**](./wia-ipa-item-flags.md).
 
  
-
- 
-
-
-
 

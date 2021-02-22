@@ -1,7 +1,6 @@
 ---
 title: NDKPI Object Lifetime Requirements
 description: This section describes NDKPI object lifetime requirements
-ms.assetid: 94993523-D0D7-441E-B95C-417800840BAC
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,11 +13,11 @@ ms.localizationpriority: medium
 
 An NDK consumer initiates a create request for an NDK object by calling the NDK provider's create function for that object.
 
-When the consumer calls a create function, it passes an *NdkCreateCompletion* ([*NDK\_FN\_CREATE\_COMPLETION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion)) as a parameter.
+When the consumer calls a create function, it passes an *NdkCreateCompletion* ([*NDK\_FN\_CREATE\_COMPLETION*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion)) as a parameter.
 
-The consumer initiates various requests by calling provider functions in the object's dispatch table, passing an *NdkRequestCompletion* ([*NDK\_FN\_REQUEST\_COMPLETION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion)) completion callback as a parameter.
+The consumer initiates various requests by calling provider functions in the object's dispatch table, passing an *NdkRequestCompletion* ([*NDK\_FN\_REQUEST\_COMPLETION*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion)) completion callback as a parameter.
 
-When an object is no longer needed, the consumer calls the provider's *NdkCloseObject* ([*NDK\_FN\_CLOSE\_OBJECT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_object)) function to initiate a close request for the object, passing an *NdkCloseCompletion* ([*NDK\_FN\_CLOSE\_COMPLETION*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_completion)) callback as a parameter.
+When an object is no longer needed, the consumer calls the provider's *NdkCloseObject* ([*NDK\_FN\_CLOSE\_OBJECT*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_object)) function to initiate a close request for the object, passing an *NdkCloseCompletion* ([*NDK\_FN\_CLOSE\_COMPLETION*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_completion)) callback as a parameter.
 
 For all such functions, the provider calls the consumer's callback function to complete the request. This call indicates to the consumer that the provider has completed the operation (for example, closing the object) and is returning control to the consumer.
 
@@ -53,7 +52,7 @@ To prevent deadlock after initiating a completion request, the provider must eit
 
 Consider the following scenario:
 
-1.  The consumer creates a connector ([**NDK\_CONNECTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_connector)) and then calls *NdkConnect* ([*NDK\_FN\_CONNECT*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect)).
+1.  The consumer creates a connector ([**NDK\_CONNECTOR**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_connector)) and then calls *NdkConnect* ([*NDK\_FN\_CONNECT*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect)).
 2.  The provider processes the connect request, hits a failure, and calls the consumer's completion callback in the context of the *NdkConnect* call (as opposed to returning inline failure due to an internal implementation choice).
 3.  The consumer calls *NdkCloseObject* in the context of this completion callback, even though the *NdkConnect* call has not yet returned to the consumer.
 
@@ -68,9 +67,9 @@ The provider must be prepared for the consumer to call the *NdkCloseObject* func
 -   The consumer will not use the antecedent object after calling *NdkCloseObject* on it, so the provider does not have to add any handling for failing further provider functions on the antecedent object (but it may if it chooses to).
 -   The provider may treat the close request like a simple dereference which has no other side-effect until the last successor object is closed, unless otherwise required (see the NDK listener close case below which has a required side-effect).
 
-The provider must not complete the close request on an antecedent object (including the [**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) close request) before any in-progress close completion callback on any successor object returns to the provider. This is to allow NDK consumers to unload safely.
+The provider must not complete the close request on an antecedent object (including the [**NDK\_ADAPTER**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) close request) before any in-progress close completion callback on any successor object returns to the provider. This is to allow NDK consumers to unload safely.
 
-An NDK consumer will not call *NdkCloseObject* for an [**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) object (which is a blocking call) from inside a consumer callback function.
+An NDK consumer will not call *NdkCloseObject* for an [**NDK\_ADAPTER**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) object (which is a blocking call) from inside a consumer callback function.
 
 ## Closing Adapter Objects
 
@@ -80,11 +79,11 @@ Consider the following scenario:
 1.  The consumer calls *NdkCloseObject* on a completion queue (CQ) object.
 2.  The provider returns STATUS\_PENDING, and later calls the consumer's completion callback.
 3.  Inside this completion callback, the consumer signals an event that it's now OK to close the NDK\_ADAPTER.
-4.  Another thread wakes up upon this signal, and closes the [**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) and proceeds to unload.
-5.  However, the thread in which the consumer's CQ close completion callback was called might still be inside the consumer's callback function (for example, the function [epilog](https://docs.microsoft.com/cpp/build/prolog-and-epilog)), so it's not safe for the consumer driver to unload.
+4.  Another thread wakes up upon this signal, and closes the [**NDK\_ADAPTER**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) and proceeds to unload.
+5.  However, the thread in which the consumer's CQ close completion callback was called might still be inside the consumer's callback function (for example, the function [epilog](/cpp/build/prolog-and-epilog)), so it's not safe for the consumer driver to unload.
 6.  Because the completion callback context is the only context the consumer can signal the event, the consumer driver can't solve the safe-unload issue itself.
 
-There must be a point at which the consumer can be assured that all of its callbacks have returned control. In NDKPI, this point is when the close request on a [**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) returns control. Note that **NDK\_ADAPTER** close request is a blocking call. When an **NDK\_ADAPTER** close request returns, it's guaranteed that all callbacks on all objects that descend from that **NDK\_ADAPTER** object have returned control to the provider.
+There must be a point at which the consumer can be assured that all of its callbacks have returned control. In NDKPI, this point is when the close request on a [**NDK\_ADAPTER**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) returns control. Note that **NDK\_ADAPTER** close request is a blocking call. When an **NDK\_ADAPTER** close request returns, it's guaranteed that all callbacks on all objects that descend from that **NDK\_ADAPTER** object have returned control to the provider.
 
 ## Completing Close Requests
 
@@ -92,25 +91,18 @@ There must be a point at which the consumer can be assured that all of its callb
 The provider must not complete a close request on an object until:
 
 -   All pending asynchronous requests on the object have been completed (in other words, their completion callbacks have returned to the provider).
--   All of the consumer's event callbacks (for example, *NdkCqNotificationCallback* ([*NDK\_FN\_CQ\_NOTIFICATION\_CALLBACK*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_cq_notification_callback)) on a CQ, *NdkConnectEventCallback* ([*NDK\_FN\_CONNECT\_EVENT\_CALLBACK*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect_event_callback)) on a Listener) have returned to the provider.
+-   All of the consumer's event callbacks (for example, *NdkCqNotificationCallback* ([*NDK\_FN\_CQ\_NOTIFICATION\_CALLBACK*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_cq_notification_callback)) on a CQ, *NdkConnectEventCallback* ([*NDK\_FN\_CONNECT\_EVENT\_CALLBACK*](/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect_event_callback)) on a Listener) have returned to the provider.
 
 The provider must guarantee that no more callbacks will happen after the close completion callback is called or after the close request returns STATUS\_SUCCESS. Note that a close request must also initiate any needed flushing or cancellation of pending asynchronous requests.
 
-**Note**  It logically follows from the above that an NDK consumer must not call *NdkCloseObject* for an [**NDK\_ADAPTER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) object (which is a blocking call) from inside a consumer callback function.
+**Note**  It logically follows from the above that an NDK consumer must not call *NdkCloseObject* for an [**NDK\_ADAPTER**](/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter) object (which is a blocking call) from inside a consumer callback function.
 
  
 
 ## Related topics
 
 
-[Network Direct Kernel Provider Interface (NDKPI)](network-direct-kernel-programming-interface--ndkpi-.md)
+[Network Direct Kernel Provider Interface (NDKPI)](./overview-of-network-direct-kernel-provider-interface--ndkpi-.md)
 
  
-
- 
-
-
-
-
-
 

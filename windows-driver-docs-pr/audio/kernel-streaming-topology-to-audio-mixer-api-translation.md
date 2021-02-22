@@ -1,7 +1,6 @@
 ---
 title: Kernel Streaming Topology to Audio Mixer API Translation
 description: Kernel Streaming Topology to Audio Mixer API Translation
-ms.assetid: ee89dc67-c9f3-41cd-8a09-0c46d636fe64
 keywords:
 - mixer API WDK audio
 - kernel streaming WDK audio
@@ -53,7 +52,7 @@ In contrast, the mixer-line terminology is device-centric:
 
 -   A destination mixer line is the destination of a stream that exits the device.
 
-Also, the KS terminology is somewhat inconsistent in the stream-flow direction that it assigns to a pin on a KS filter. The pin descriptor uses a [**KSPIN\_DATAFLOW**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ne-ks-kspin_dataflow) enumeration value to specify the direction:
+Also, the KS terminology is somewhat inconsistent in the stream-flow direction that it assigns to a pin on a KS filter. The pin descriptor uses a [**KSPIN\_DATAFLOW**](/windows-hardware/drivers/ddi/ks/ne-ks-kspin_dataflow) enumeration value to specify the direction:
 
 -   A stream that enters the filter through a sink pin has a direction of KSPIN\_DATAFLOW\_IN.
 
@@ -74,9 +73,4 @@ This section also includes:
 [Exposing Filter Topology](exposing-filter-topology.md)
 
  
-
- 
-
-
-
 

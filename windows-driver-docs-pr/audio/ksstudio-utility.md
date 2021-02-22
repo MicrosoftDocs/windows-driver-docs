@@ -1,7 +1,6 @@
 ---
 title: KsStudio Utility
 description: KsStudio Utility
-ms.assetid: c6420768-2852-4269-91d9-cb5e34e565b5
 keywords:
 - KsStudio utility WDK audio
 - audio filters WDK audio , KsStudio utility

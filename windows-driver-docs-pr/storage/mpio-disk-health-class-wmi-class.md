@@ -1,7 +1,6 @@
 ---
 title: MPIO\_DISK\_HEALTH\_CLASS WMI Class
 description: MPIO\_DISK\_HEALTH\_CLASS WMI Class
-ms.assetid: 4595f74e-586d-4411-acfd-e93e00778b67
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -140,13 +139,7 @@ class MPIO_DISK_HEALTH_CLASS
 };
 ```
 
-When the class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DISK\_HEALTH\_CLASS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_disk_health_class) data structure. There are no methods associated with this WMI class.
+When the class definition is compiled by the WMI tool suite, it produces the [**MPIO\_DISK\_HEALTH\_CLASS**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_disk_health_class) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

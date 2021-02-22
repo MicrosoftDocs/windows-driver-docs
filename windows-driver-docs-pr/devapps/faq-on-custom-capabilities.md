@@ -15,12 +15,11 @@ ms.localizationpriority: medium
 
 ## What's the difference between UWP apps with custom capabilities and Device Companion Apps (DCAs)?
 
-|                           | **DCA**                                                  | **UWP app with custom capabilities**|
+|    **Capability**                  | **DCA**                                                  | **UWP app with custom capabilities**|
 |---------------------------|----------------------------------------------------------|-------------------------------------|
 |Communication|Device Scenario APIS (image capture, scanning, etc.)<br>Device protocol APIs (USB, HID, etc.)<br>Customer driver access|                                                                              
 |Trust Model|Defined at a "container" level<br>The system's OEM must submit apps for internal components|Defined at a system level<br>The system's OEM must submit apps for internal components|
 |Automatic App Acquisition  |Available for peripherals                                  |Available for all hardware          |
 |Deployment Dependencies    |WU: Driver package<br>Store: App|WU: Driver package<br>Store: App                  |
                                                                                                                                                                                                     
-For more information on DCAs, see [Getting started with Microsoft Store device apps](https://docs.microsoft.com/windows-hardware/drivers/devapps/getting-started).
-
+For more information on DCAs, see [Getting started with Microsoft Store device apps](./getting-started.md).

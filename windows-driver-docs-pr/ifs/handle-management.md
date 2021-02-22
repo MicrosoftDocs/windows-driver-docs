@@ -1,7 +1,6 @@
 ---
 title: Handle Management
 description: Handle Management
-ms.assetid: 09d9c836-1754-4a50-92a3-229a3ae05ccb
 keywords:
 - handles WDK file systems
 - security WDK file systems , minimizing threats
@@ -29,7 +28,7 @@ To protect against these issues, a kernel driver must be particularly careful to
 
 For drivers that use handles created by an application program, the use of these handles must be done with extreme care:
 
--   The best practice is to convert the handle to an object pointer by calling [**ObReferenceObjectByHandle**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle), specifying the correct *AccessMode* (usually from Irp-&gt;RequestorMode), *DesiredAccess*, and *ObjectType* parameters, such as IoFileObjectType or ExEventObjectType.
+-   The best practice is to convert the handle to an object pointer by calling [**ObReferenceObjectByHandle**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle), specifying the correct *AccessMode* (usually from Irp-&gt;RequestorMode), *DesiredAccess*, and *ObjectType* parameters, such as IoFileObjectType or ExEventObjectType.
 
 -   If a handle must be used directly within a call, it is best to use the Nt variants of functions rather than the Zw variants of functions. This will enforce parameter checking and handle validation by the operating system since the previous mode will be **UserMode** and hence untrusted. Note that parameters passed to Nt functions that are pointers may fail validation if the previous mode is **UserMode**. The Nt and Zw routines return an *IoStatusBlock* parameterwith error information that you should check for errors.
 
@@ -40,9 +39,4 @@ No driver should ever rely on handles or parameters passed from a user-mode appl
 Note that if the Nt variant is used to open a file, then the Nt variant must also be used to close the file.
 
  
-
- 
-
-
-
 

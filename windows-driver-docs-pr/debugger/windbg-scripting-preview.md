@@ -1,11 +1,11 @@
 ---
 title: WinDbg Preview - Scripting Menu
 description: This section describes how to use scripting in the WinDbg preview debugger.
-ms.date: 04/10/2017
+ms.date: 01/20/2020
 ms.localizationpriority: medium
 ---
 
-# WinDbg Preview - Scripting 
+# WinDbg Preview - Scripting Menu
 
 This section describes how to use the scripting support in the WinDbg Preview.
 
@@ -14,16 +14,15 @@ This section describes how to use the scripting support in the WinDbg Preview.
 The WinDbg Preview script window features basic syntax highlighting, IntelliSense, and error recognition. 
 
 Use the ribbon buttons to:
-- Create a new script 
+- Create a new script
 - Open an existing script
 - Execute a script
 - Save a script 
 - Unlink a script
-- Load the JavaScript Provider
 
 You can also automatically execute scripts by right-clicking in the script window and selecting *Execute Script on Save*. When you successfully load a script, a green check box will appear on the script title bar. If there are errors in the script, a red x will be displayed.
 
-## JavaScript Scripting 
+## JavaScript Scripting
 
 To start using JavaScript, you must first be debugging a target. When you're ready to start working on your JavaScript, click "Load JavaScript Provider". After that you can create a new JavaScript, by picking between these two types of script templates.
 
@@ -58,10 +57,3 @@ For more information about working with NatVis, see [Debugger Objects in NatVis]
 ## See Also
 
 [Debugging Using WinDbg Preview](debugging-using-windbg-preview.md)
-
- 
-
-
-
-
-

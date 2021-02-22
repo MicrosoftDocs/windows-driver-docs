@@ -1,7 +1,6 @@
 ---
 title: DIF_INSTALLDEVICEFILES
 description: DIF_INSTALLDEVICEFILES
-ms.assetid: 544a9a88-156e-494d-9ef0-8070addfa86b
 keywords: ["DIF_INSTALLDEVICEFILES Device and Driver Installation"]
 topic_type:
 - apiref
@@ -22,7 +21,7 @@ A DIF_INSTALLDEVICEFILES request allows an installer to participate in copying t
 
 ### When Sent
 
-The [system-provided device installation components](https://docs.microsoft.com/windows-hardware/drivers/install/system-provided-device-installation-components) send this DIF request for a variety of reasons. Some device installation components send this DIF request before DIF_REGISTER_COINSTALLERS, DIF_INSTALLINTERFACES, and DIF_INSTALL_DEVICE to ensure that all the relevant files can be copied before proceeding with the installation. Some device installation components omit this DIF request and expect the files to be copied during the handling of those three DIF requests. In addition, some device installation components send this DIF request to retrieve the list of the files associated with a device.
+The [system-provided device installation components](./system-provided-device-installation-components.md) send this DIF request for a variety of reasons. Some device installation components send this DIF request before DIF_REGISTER_COINSTALLERS, DIF_INSTALLINTERFACES, and DIF_INSTALL_DEVICE to ensure that all the relevant files can be copied before proceeding with the installation. Some device installation components omit this DIF request and expect the files to be copied during the handling of those three DIF requests. In addition, some device installation components send this DIF request to retrieve the list of the files associated with a device.
 
 ### Who Handles
 
@@ -52,13 +51,13 @@ The [system-provided device installation components](https://docs.microsoft.com/
 ### Installer Input
 
 <a href="" id="deviceinfoset"></a>*DeviceInfoSet*  
-Supplies a handle to the [device information set](https://docs.microsoft.com/windows-hardware/drivers/install/device-information-sets) that contains the device whose supporting files are to be copied.
+Supplies a handle to the [device information set](./device-information-sets.md) that contains the device whose supporting files are to be copied.
 
 <a href="" id="deviceinfodata"></a>*DeviceInfoData*  
-Supplies a pointer to an [**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data) structure that identifies the device in the device information set.
+Supplies a pointer to an [**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data) structure that identifies the device in the device information set.
 
 <a href="" id="device-installation-parameters-"></a>Device Installation Parameters   
-There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)) associated with the *DeviceInfoData*.
+There are device installation parameters ([**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)) associated with the *DeviceInfoData*.
 
 If the DI_NOVCP flag is set, the device installation parameters contain a valid **FileQueue** handle and installers that handle this DIF request add their file operations to this queue and do not commit the queue.
 
@@ -74,7 +73,7 @@ An installer can modify the **FileQueue**, if there is one.
 
 A co-installer can return NO_ERROR, ERROR_DI_POSTPROCESSING_REQUIRED, or a Win32 error code.
 
-If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
+If a class installer successfully handles this request and [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) should subsequently call the default handler, the class installer returns ERROR_DI_DO_DEFAULT.
 
 If the class installer successfully handles this request, including directly calling the default handler, the class installer should return NO_ERROR and **SetupDiCallClassInstaller** will not subsequently call the default handler again.
 
@@ -82,13 +81,13 @@ If the class installer successfully handles this request, including directly cal
 
  
 
-For more information about calling the default handler, see [Calling Default DIF Code Handlers](https://docs.microsoft.com/windows-hardware/drivers/install/calling-the-default-dif-code-handlers).
+For more information about calling the default handler, see [Calling Default DIF Code Handlers](./calling-the-default-dif-code-handlers.md).
 
 If the class installer encounters an error, the installer should return an appropriate Win32 error code and **SetupDiCallClassInstaller** will not subsequently call the default handler.
 
 ### Default DIF Code Handler
 
-[**SetupDiInstallDriverFiles**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldriverfiles)
+[**SetupDiInstallDriverFiles**](/windows/win32/api/setupapi/nf-setupapi-setupdiinstalldriverfiles)
 
 ### Installer Operation
 
@@ -96,9 +95,9 @@ In response to a DIF_INSTALLDEVICEFILES request an installer specifies any neces
 
 If this DIF request is sent during device installation, and the installer returns a Microsoft Win32 error code, Windows stops the installation.
 
-If a [system-provided device installation component](https://docs.microsoft.com/windows-hardware/drivers/install/system-provided-device-installation-components) sends this DIF request to retrieve a list of the files associated with a device, the component retrieves the file queue but does not commit the queue.
+If a [system-provided device installation component](./system-provided-device-installation-components.md) sends this DIF request to retrieve a list of the files associated with a device, the component retrieves the file queue but does not commit the queue.
 
-For more information about DIF codes, see [Handling DIF Codes](https://docs.microsoft.com/windows-hardware/drivers/install/handling-dif-codes).
+For more information about DIF codes, see [Handling DIF Codes](./handling-dif-codes.md).
 
 Requirements
 ------------
@@ -123,18 +122,11 @@ Requirements
 ## See also
 
 
-[**SetupDiInstallDriverFiles**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdiinstalldriverfiles)
+[**SetupDiInstallDriverFiles**](/windows/win32/api/setupapi/nf-setupapi-setupdiinstalldriverfiles)
 
-[**SP_DEVINFO_DATA**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinfo_data)
+[**SP_DEVINFO_DATA**](/windows/win32/api/setupapi/ns-setupapi-sp_devinfo_data)
 
-[**SP_DEVINSTALL_PARAMS**](https://docs.microsoft.com/windows/desktop/api/setupapi/ns-setupapi-_sp_devinstall_params_a)
-
- 
+[**SP_DEVINSTALL_PARAMS**](/windows/win32/api/setupapi/ns-setupapi-sp_devinstall_params_a)
 
  
-
-
-
-
-
 

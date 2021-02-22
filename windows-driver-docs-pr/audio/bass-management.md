@@ -1,7 +1,6 @@
 ---
 title: Bass Management
 description: Bass Management
-ms.assetid: b3fb6fcf-cf86-4627-912e-253b5864ab9e
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Reset to Factory Defaults (Function Index 21)
 description: This function resets the NVDIMM-N back to the settings the vendor pre-configured.
-ms.assetid: 64CEF5C8-FC2A-4C6E-829C-27E18A4EDC26
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -50,8 +49,8 @@ None.
 
  
 
-&gt; \[!Note\]   
-&gt;The platform shall wait three times the maximum save timeout for the factory default operation to finish (For example, if the maximum save timeout is 60 seconds, the platform shall wait 180 seconds). If the operation takes longer than that interval, the platform shall abort the operation and return with the function-specific error code 1(the operation timed out).
+> [!NOTE]
+> The platform shall wait three times the maximum save timeout for the factory default operation to finish (For example, if the maximum save timeout is 60 seconds, the platform shall wait 180 seconds). If the operation takes longer than that interval, the platform shall abort the operation and return with the function-specific error code 1(the operation timed out).
 
  
 

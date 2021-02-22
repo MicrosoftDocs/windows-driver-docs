@@ -1,7 +1,6 @@
 ---
 title: GDL Syntax
 description: GDL Syntax
-ms.assetid: 31f0c2f6-2a6b-4a3c-9da1-6fd586b8ae2a
 keywords:
 - GDL WDK , syntax
 - parsing GDL data WDK

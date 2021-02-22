@@ -1,7 +1,6 @@
 ---
 title: Filter drivers
 description: Filter drivers
-ms.assetid: 626547ba-4c26-4be7-b209-c5e26daf56ab
 keywords:
 - filter drivers WDK networking , architecture
 - NDIS filter drivers WDK , architecture
@@ -25,6 +24,6 @@ A filter driver communicates with NDIS and other NDIS drivers through the NDIS l
 
 ## Related topics
 
-[NDIS Filter Drivers](ndis-filter-drivers2.md)
+[NDIS Filter Drivers](./roadmap-for-developing-ndis-filter-drivers.md)
 
-[NDIS Filter Driver Reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[NDIS Filter Driver Reference](/windows-hardware/drivers/ddi/_netvista/)

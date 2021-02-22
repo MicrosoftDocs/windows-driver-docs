@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_DECIMAL
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT64 identifier represents the base-data-type identifier that indicates that the data type is a DECIMAL-typed value.
-ms.assetid: 3aacffd6-3259-489b-992d-e2771858c1e6
 keywords: ["DEVPROP_TYPE_DECIMAL Device and Driver Installation"]
 topic_type:
 - apiref

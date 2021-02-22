@@ -1,5 +1,4 @@
 ---
-ms.assetid: 7193DA4B-2461-4E00-90B4-C31B93C8E9BD
 title: Deployment Properties for Driver Package Projects
 description: You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project.
 ms.date: 04/20/2017
@@ -8,15 +7,15 @@ ms.localizationpriority: medium
 
 # Deployment Properties for Driver Package Projects
 
-You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project. From the project property pages for your driver, you have additional control over how you want to deploy your driver for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1) and [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md).
+You can configure the automatic deployment of a driver package on a remote test computer in each configuration of your project. From the project property pages for your driver, you have additional control over how you want to deploy your driver for testing. You can choose to deploy the driver automatically whenever you build the driver solution in each configuration. For more information about deployment, see [Provision a computer for driver deployment and testing (WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md) and [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md).
 
 ## <span id="Setting_deployment_properties_for_driver_package_projects"></span><span id="setting_deployment_properties_for_driver_package_projects"></span><span id="SETTING_DEPLOYMENT_PROPERTIES_FOR_DRIVER_PACKAGE_PROJECTS"></span>Setting deployment properties for driver package projects
 
 
-1.  Open the property pages for your driver package. Right-click the driver package project in Solution Explorer and select **Properties**.
+1.  Open the property pages for your driver package. Select and hold (or right-click) the driver package project in Solution Explorer and select **Properties**.
 
     **Note**  If your driver solution does not have a driver package project, you need to add one. See [Creating a Driver Package](creating-a-driver-package.md). The deployment properties are only available if you have a driver package.
-2.  In the property pages for the driver package, click **Configuration Properties**, click **Driver Install**, and then click **Deployment**.
+2.  In the property pages for the driver package, select **Configuration Properties**, select **Driver Install**, and then select **Deployment**.
 3.  Select the **Enable deployment** option. When this option is selected, you can select the test computer to use, and you can configure options for driver installation and deployment.
 
 ## <span id="Project_Configuration_and_Platform"></span><span id="project_configuration_and_platform"></span><span id="PROJECT_CONFIGURATION_AND_PLATFORM"></span>Project Configuration and Platform
@@ -36,14 +35,14 @@ To ensure that you are testing the latest version of the driver, select **Remove
 
 You can choose the target computer to use for deployment and testing. If you have already configured your test computers, you can select one from this list. If you have not configured a test computer, you can configure one using the **Browse** button. For more information about configuring a test computer, see [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md). Make sure that the project configuration and platform match the target architecture of your test system. A common deployment error occurs when you attempt to install an x86 (Win32) driver on a system running an x64 version of Windows. 
 
-For information about working with the debugger, see [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging).
+For information about working with the debugger, see [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md).
 
 ## <span id="Driver_installation_options"></span><span id="driver_installation_options"></span><span id="DRIVER_INSTALLATION_OPTIONS"></span>Driver installation options
 
 
-**Do not install -** This is the default option. You can choose not to install if you are importing the driver package to the [Driver Store](https://docs.microsoft.com/windows-hardware/drivers/install/driver-store) or if you are enabling and setting driver verifier options on the test computer.
+**Do not install -** This is the default option. You can choose not to install if you are importing the driver package to the [Driver Store](../install/driver-store.md) or if you are enabling and setting driver verifier options on the test computer.
 
-**Hardware ID Driver Update -** To deploy a driver for an actual hardware device, use **Install and Verify** instead. To deploy a driver for a root-enumerated driver, you can use either **Hardware ID Driver Update** or **Install and Verify**. If you choose to use Hardware ID Driver Update, you must enter the same hardware ID that appears in your INF file, and that hardware ID must have the form Root\\Xxx. If you choose this option, the files are copied to the %*Systemdrive*%\\drivertest\\drivers folder on the remote computer. The Device Console utility, [Devcon](https://docs.microsoft.com/windows-hardware/drivers/devtest/devcon), installs the driver for that hardware ID and INF file from the package. For example, you can select **Hardware ID Driver Update** and set the HWID to **Root\\**<em>yourprojectname</em>. Make sure to exclude any spaces in your project name.
+**Hardware ID Driver Update -** To deploy a driver for an actual hardware device, use **Install and Verify** instead. To deploy a driver for a root-enumerated driver, you can use either **Hardware ID Driver Update** or **Install and Verify**. If you choose to use Hardware ID Driver Update, you must enter the same hardware ID that appears in your INF file, and that hardware ID must have the form Root\\Xxx. If you choose this option, the files are copied to the %*Systemdrive*%\\drivertest\\drivers folder on the remote computer. The Device Console utility, [Devcon](../devtest/devcon.md), installs the driver for that hardware ID and INF file from the package. For example, you can select **Hardware ID Driver Update** and set the HWID to **Root\\**<em>yourprojectname</em>. Make sure to exclude any spaces in your project name.
 
 **Custom Command Line -** You can choose to run your own custom command scripts upon installation. If you want to run a custom command script, make sure to add the necessary files under the **Additional Files** section. The additional files are copied to the *%Systemdrive%*\\drivertest\\drivers folder on the remote computer.
 
@@ -61,13 +60,6 @@ You can use the **Additional Files** box to specify custom installation scripts 
 
 * [Deploying a Driver to a Test Computer](deploying-a-driver-to-a-test-computer.md)
 * [How to test a driver at runtime using Visual Studio](testing-a-driver-at-runtime.md)
-* [Getting Started with Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
+* [Getting Started with Windows Debugging](../debugger/getting-started-with-windows-debugging.md)
  
-
- 
-
-
-
-
-
 

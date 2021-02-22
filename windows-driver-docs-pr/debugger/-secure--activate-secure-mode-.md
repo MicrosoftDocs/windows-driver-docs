@@ -1,7 +1,6 @@
 ---
 title: .secure (Activate Secure Mode)
 description: The .secure command activates or displays the status of Secure Mode.
-ms.assetid: 58a8936e-898f-4608-b1b0-399d5152f410
 keywords: [".secure (Activate Secure Mode) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

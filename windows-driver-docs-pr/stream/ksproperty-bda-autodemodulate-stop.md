@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_AUTODEMODULATE\_STOP
 description: Clients use KSPROPERTY\_BDA\_AUTODEMODULATE\_STOP to stop demodulating the signal streaming into a demodulator node.
-ms.assetid: 4e937d5c-e43f-44cb-b3bb-fa1f8d496c5e
 keywords: ["KSPROPERTY_BDA_AUTODEMODULATE_STOP Streaming Media Devices"]
 topic_type:
 - apiref
@@ -74,14 +73,7 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

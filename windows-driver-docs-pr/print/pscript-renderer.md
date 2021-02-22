@@ -1,7 +1,6 @@
 ---
 title: Pscript Renderer
 description: Pscript Renderer
-ms.assetid: b1707a83-c5c9-4578-8603-7c19de4960ed
 keywords:
 - PostScript Printer Driver WDK print , renderer
 - Pscript WDK print , renderer

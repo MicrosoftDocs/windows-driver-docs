@@ -1,7 +1,6 @@
 ---
 title: PTP Events
 description: PTP Events
-ms.assetid: 69bbe1e1-46e7-4615-93ff-ecd640e7d56b
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

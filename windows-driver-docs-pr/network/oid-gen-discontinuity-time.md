@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_DISCONTINUITY_TIME
 description: As a query, use the OID_GEN_DISCONTINUITY_TIME OID to determine the discontinuity time of a network interface (ifCounterDiscontinuityTime from RFC 2863).
-ms.assetid: 3eac6818-c346-47f6-b812-f98b808dc36a
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_DISCONTINUITY_TIME Network Drivers Starting with Windows Vista
@@ -24,9 +23,9 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
-This OID returns the time, starting from the last computer restart, when the interface had a discontinuity in maintaining the statistics counters. For example, there was a discontinuity because the interface was disabled or the associated adapter was removed from the computer. For more information about the statistics counters, see [OID\_GEN\_STATISTICS](oid-gen-statistics.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex) function.
+This OID returns the time, starting from the last computer restart, when the interface had a discontinuity in maintaining the statistics counters. For example, there was a discontinuity because the interface was disabled or the associated adapter was removed from the computer. For more information about the statistics counters, see [OID\_GEN\_STATISTICS](oid-gen-statistics.md). To get the current time, an interface provider can call the [**NdisGetSystemUpTimeEx**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetsystemuptimeex) function.
 
 If no such discontinuity occurred since the last re-initialization of the interface this value should be zero. If the interface provider does not track discontinuity time, this value should be zero.
 
@@ -51,12 +50,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
- 
-
-
-
 

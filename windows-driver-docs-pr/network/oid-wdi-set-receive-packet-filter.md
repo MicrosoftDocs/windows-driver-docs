@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_SET_RECEIVE_PACKET_FILTER
 description: OID_WDI_SET_RECEIVE_PACKET_FILTER defines a bitmask filter for data packets to be indicated for a given virtualized port.
-ms.assetid: 180efda5-3ca2-40f8-89d1-098a53f33844
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_SET_RECEIVE_PACKET_FILTER Network Drivers Starting with Windows Vista
@@ -20,14 +19,14 @@ OID\_WDI\_SET\_RECEIVE\_PACKET\_FILTER defines a bitmask filter for data packets
 
  
 
-If set, the port shall only notify the host of packets which match the provided filter. These filters are similar to the required 802.11 filters provided to [OID\_GEN\_CURRENT\_PACKET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-packet-filter).
+If set, the port shall only notify the host of packets which match the provided filter. These filters are similar to the required 802.11 filters provided to [OID\_GEN\_CURRENT\_PACKET\_FILTER](./oid-gen-current-packet-filter.md).
 
 ## Set property parameters
 
 
 | TLV                                                                                   | Multiple TLV instances allowed | Optional | Description                          |
 |---------------------------------------------------------------------------------------|--------------------------------|----------|--------------------------------------|
-| [**WDI\_TLV\_PACKET\_FILTER\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-packet-filter-parameters) |                                |          | The bitmask filter for data packets. |
+| [**WDI\_TLV\_PACKET\_FILTER\_PARAMETERS**](./wdi-tlv-packet-filter-parameters.md) |                                |          | The bitmask filter for data packets. |
 
  
 
@@ -61,9 +60,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

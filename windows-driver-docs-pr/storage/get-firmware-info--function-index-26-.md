@@ -1,7 +1,6 @@
 ---
 title: Get Firmware Info (Function Index 26)
 description: This function retrieves information about a firmware image slot.
-ms.assetid: ABE67651-6351-4D8E-BCFF-0488D2A34DC5
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function retrieves information about a firmware image slot. Call [Get NVDIMM-N Identification (Function Index 1)](get-nvdimm-n-identification--function-index-1-.md) to retrieve the current slot number .
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

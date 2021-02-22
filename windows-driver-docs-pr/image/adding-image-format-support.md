@@ -1,7 +1,6 @@
 ---
 title: Adding Image Format Support
 description: Adding Image Format Support
-ms.assetid: 1ffa7c0d-23ec-402a-a0b5-fb5596a851bf
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,7 +11,7 @@ ms.localizationpriority: medium
 
 
 
-A WIA minidriver reports image formats to the WIA service in the [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo) method.
+A WIA minidriver reports image formats to the WIA service in the [**IWiaMiniDrv::drvGetWiaFormatInfo**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo) method.
 
 ### <a href="" id="implementing-iwiaminidrv-drvgetwiaformatinfo"></a>Implementing IWiaMiniDrv::drvGetWiaFormatInfo
 
@@ -36,7 +35,7 @@ TYMED\_CALLBACK
 
 TYMED\_MULTIPAGE\_CALLBACK
 
-The following example shows an implementation of [**IWiaMiniDrv::drvGetWiaFormatInfo**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo):
+The following example shows an implementation of [**IWiaMiniDrv::drvGetWiaFormatInfo**](/windows-hardware/drivers/ddi/wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvgetwiaformatinfo):
 
 ```cpp
 HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
@@ -86,9 +85,4 @@ HRESULT _stdcall CWIADevice::drvGetWiaFormatInfo(
 ```
 
  
-
- 
-
-
-
 

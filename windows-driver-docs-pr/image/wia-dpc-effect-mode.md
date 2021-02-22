@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_EFFECT\_MODE
 description: The WIA\_DPC\_EFFECT\_MODE property specifies the special image acquisition mode of a camera.
-ms.assetid: a874858d-4400-425f-8423-b41bbeb1a925
 keywords: ["WIA_DPC_EFFECT_MODE Imaging Devices"]
 topic_type:
 - apiref

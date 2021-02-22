@@ -1,7 +1,6 @@
 ---
 title: Querying the System Event Log for Hardware Error Events
 description: Querying the System Event Log for Hardware Error Events
-ms.assetid: e2290a1b-6fde-4843-9c52-17279f93a887
 keywords:
 - events WDK WHEA , querying system event log
 - querying system event log WDK WHEA
@@ -116,14 +115,9 @@ VOID QueryHwErrorEvents(VOID) {
 }
 ```
 
-**Note**  All of the **Evt_Xxx_** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](https://go.microsoft.com/fwlink/p/?linkid=81187) section in the Microsoft Windows SDK documentation.
+**Note**  All of the **Evt_Xxx_** functions and the EVT\_*XXX* data types that were used in the previous examples are documented in the [Windows Event Log](/windows/win32/wes/windows-event-log) section in the Microsoft Windows SDK documentation.
 
  
 
  
-
- 
-
-
-
 

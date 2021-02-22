@@ -1,7 +1,6 @@
 ---
 title: Deinterlace Container Device for ProcAmp Control
 description: Deinterlace Container Device for ProcAmp Control
-ms.assetid: ce179efe-9e92-4407-8e90-896e4b9a2e84
 keywords:
 - container device WDK DirectX VA
 - deinterlacing WDK DirectX VA , ProcAmp control

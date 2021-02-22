@@ -1,7 +1,6 @@
 ---
 title: 4 2 0 Video Pixel Formats
 description: 4 2 0 Video Pixel Formats
-ms.assetid: fb83336b-ff71-4f54-b833-324da60e7f9e
 keywords:
 - uncompressed video pixel formats WDK DirectX VA
 - pixel formats for uncompressed video WDK DirectX VA
@@ -31,4 +30,4 @@ To decode compressed 4:2:0 video, use one of the following uncompressed pixel fo
 | IMC3 | The same as IMC1, except for swapping Cb and Cr. |
 | IMC4 | The same as IMC2, except for swapping Cb and Cr. |
 
-For more information about these formats, see [Recommended 8-Bit YUV Formats for Video Rendering](https://docs.microsoft.com/windows/desktop/medfound/recommended-8-bit-yuv-formats-for-video-rendering) in the Microsoft Media Foundation documentation.
+For more information about these formats, see [Recommended 8-Bit YUV Formats for Video Rendering](/windows/desktop/medfound/recommended-8-bit-yuv-formats-for-video-rendering) in the Microsoft Media Foundation documentation.

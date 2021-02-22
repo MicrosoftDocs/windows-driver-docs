@@ -1,7 +1,6 @@
 ---
 title: Job Management
 description: A job management feature has been introduced in Windows 8.1 and later versions of Windows to provide a live view of the job queue.
-ms.assetid: D1236DD2-D4AD-4615-9036-7EC75D6CADCE
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -18,24 +17,24 @@ This feature also allows a client to cancel a print job. A client can call the a
 
 The following interfaces have been introduced in Windows 8.1 to implement the job management feature.
 
-[**IPrinterQueue2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)
+[**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)
 
-[**IPrinterQueueView**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview)
+[**IPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview)
 
-[**IPrinterQueueViewEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent)
+[**IPrinterQueueViewEvent**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent)
 
-[**IPrintJob**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob)
+[**IPrintJob**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob)
 
-[**IPrintJobCollection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection)
+[**IPrintJobCollection**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection)
 
 ## Initiating a job management session
 
 
-To initiate a job management session you must first specify and request a range of jobs that you want to manage. This range of jobs is called a “view,” and you use the [**IPrinterQueue2::GetPrinterQueueView**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueue2-getprinterqueueview) method to specify it.
+To initiate a job management session you must first specify and request a range of jobs that you want to manage. This range of jobs is called a “view,” and you use the [**IPrinterQueue2::GetPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueue2-getprinterqueueview) method to specify it.
 
-If you want to change the view to monitor a different set of jobs, you can use the [**IPrinterQueueView::SetViewRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueview-setviewrange) method to do that.
+If you want to change the view to monitor a different set of jobs, you can use the [**IPrinterQueueView::SetViewRange**](/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueview-setviewrange) method to do that.
 
-Note that the print queue is a dynamic queue. So each time the status of the print queue changes, an event is fired off and the [**IPrinterQueueViewEvent::OnChanged**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueviewevent-onchanged) method provides an updated snapshot of the view that was requested.
+Note that the print queue is a dynamic queue. So each time the status of the print queue changes, an event is fired off and the [**IPrinterQueueViewEvent::OnChanged**](/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterqueueviewevent-onchanged) method provides an updated snapshot of the view that was requested.
 
 The following C# code snippet illustrates the use of the new interfaces for initiating a job management session.
 
@@ -89,11 +88,8 @@ UIDisplay is used a generic name for the mechanism that you develop for displayi
 And also, note that job enumeration starts when the first event handler is added and it is stopped when the last event handler is removed.
 
 ## Related topics
-[**IPrinterQueue2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)  
-[**IPrinterQueueView**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview)  
-[**IPrinterQueueViewEvent**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent)  
-[**IPrintJob**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob)  
-[**IPrintJobCollection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection)  
-
-
-
+[**IPrinterQueue2**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue2)  
+[**IPrinterQueueView**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueview)  
+[**IPrinterQueueViewEvent**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueueviewevent)  
+[**IPrintJob**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob)  
+[**IPrintJobCollection**](/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection)

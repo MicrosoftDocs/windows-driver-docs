@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS
 description: WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS is a TLV that contains association response parameters for OID_WDI_TASK_SEND_AP_ASSOCIATION_RESPONSE.
-ms.assetid: FB116762-2064-48FA-B630-D5AE54657D10
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_ASSOCIATION_RESPONSE_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS
 
 
-WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS is a TLV that contains association response parameters for [OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-send-ap-association-response).
+WDI\_TLV\_ASSOCIATION\_RESPONSE\_PARAMETERS is a TLV that contains association response parameters for [OID\_WDI\_TASK\_SEND\_AP\_ASSOCIATION\_RESPONSE](./oid-wdi-task-send-ap-association-response.md).
 
 ## TLV Type
 
@@ -77,9 +76,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

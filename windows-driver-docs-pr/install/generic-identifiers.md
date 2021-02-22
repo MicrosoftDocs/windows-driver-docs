@@ -1,7 +1,6 @@
 ---
 title: Generic Identifiers
 description: Generic Identifiers
-ms.assetid: 75dab2fc-e897-4bce-b719-98ad89817fca
 keywords:
 - device identification strings WDK , generic
 - identification strings WDK device , generic
@@ -23,13 +22,7 @@ Most, but not all, identifier strings are bus-specific. The Plug and Play (PnP) 
 
 where d(4) is a 4-digit, hexadecimal type identifier.
 
-In the case of the PCMCIA bus, compatible IDs are formatted in this manner (see the following discussion of the PCMCIA bus). You can find the official list of these identifiers in [Plug and Play Vendor IDs and Device IDs](https://go.microsoft.com/fwlink/p/?linkid=49039) on the Microsoft Download Center. see [Plug and Play ID - PNPID Reqeust](https://docs.microsoft.com/windows-hardware/drivers/install/plug-and-play-id---pnpid-request) for more information. 
+In the case of the PCMCIA bus, compatible IDs are formatted in this manner (see the following discussion of the PCMCIA bus). You can find the official list of these identifiers in [Plug and Play Vendor IDs and Device IDs](https://go.microsoft.com/fwlink/p/?linkid=49039) on the Microsoft Download Center. see [Plug and Play ID - PNPID Reqeust](./plug-and-play-id---pnpid-request.md) for more information. 
 
  
-
- 
-
-
-
-
 

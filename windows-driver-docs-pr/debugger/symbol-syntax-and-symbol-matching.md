@@ -1,7 +1,6 @@
 ---
 title: Symbol Syntax and Symbol Matching
 description: Symbol Syntax and Symbol Matching
-ms.assetid: 7fda24bf-57be-4c7d-9eff-bd688de7cf1b
 keywords: ["symbols, symbol syntax", "symbols, symbol matching", "symbols, symbol suffix", "syntax rules for commands, $ (local symbol identifier)", "$ (local symbol identifier)", "local symbol identifier ( $ )", "local variables, local symbol identifier ( $ )"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

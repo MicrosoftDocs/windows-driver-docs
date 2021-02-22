@@ -1,7 +1,6 @@
 ---
 title: Supporting Nonstandard Display Modes
 description: Supporting Nonstandard Display Modes
-ms.assetid: 33a10aed-dfc9-4b64-97fb-e4b7c744dc0d
 keywords:
 - nonstandard display modes WDK DirectX 9.0
 ms.date: 04/20/2017

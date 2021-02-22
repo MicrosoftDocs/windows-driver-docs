@@ -1,7 +1,6 @@
 ---
 title: Power Management Responsibilities for Drivers
 description: Power Management Responsibilities for Drivers
-ms.assetid: c42a5b95-76f3-4975-b452-4858bbbe532e
 keywords: ["power management WDK kernel , driver responsibilities", "driver power responsibilities WDk kernel", "conserving power WDK kernel", "power management WDK kernel , power states", "power states WDK kernel", "states WDK power management", "system power states WDK kernel , power management", "device power states WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -31,12 +30,7 @@ Drivers that support power management are responsible for:
 
 Not every driver in every device stack performs all of these tasks. Typically, the bus driver reports capabilities, sets flags, and manipulates the physical device, and the device power policy manager (usually the function driver) issues requests to put the device to sleep and to enable wake-up.
 
-With few exceptions, drivers power on and power off their devices, and they enable devices for wake-up in response to power IRPs, that is, IRPs with the major code [**IRP\_MJ\_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-power). Power IRPs can be sent by the power manager and, in some cases, by a driver.
+With few exceptions, drivers power on and power off their devices, and they enable devices for wake-up in response to power IRPs, that is, IRPs with the major code [**IRP\_MJ\_POWER**](./irp-mj-power.md). Power IRPs can be sent by the power manager and, in some cases, by a driver.
 
  
-
- 
-
-
-
 

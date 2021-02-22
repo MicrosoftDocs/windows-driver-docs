@@ -1,7 +1,6 @@
 ---
 title: Using Logger.exe
 description: Using Logger.exe
-ms.assetid: da2ec999-4529-49dc-855e-a7d3b15583f7
 keywords: ["Logger, logger.exe", "logger.exe", "Logger, stand-alone"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -52,13 +51,13 @@ This causes the target application to begin executing.
 
 ### <span id="running_the_target_application"></span><span id="RUNNING_THE_TARGET_APPLICATION"></span>Running the Target Application
 
-Once you have chosen the settings, click **Go**. The dialog box will close and the target application will begin to run.
+Once you have chosen the settings, select **Go**. The dialog box will close and the target application will begin to run.
 
 If you make the target application's window active and press F12, it will break into Logger. This will cause the target application to freeze and the **Change Settings** dialog box to reappear. You can alter the settings if you wish, and then press **Go** to continue execution.
 
 You can let the target application run for as long as you wish. If it terminates normally or due to an error, the logging will stop and cannot be restarted.
 
-When you wish to exit, select **File | Exit** and click **Yes**. If the target application is still running, it will be terminated.
+When you wish to exit, select **File | Exit** and select **Yes**. If the target application is still running, it will be terminated.
 
 ### <span id="limitations_of_logger_exe"></span><span id="LIMITATIONS_OF_LOGGER_EXE"></span>Limitations of Logger.exe
 

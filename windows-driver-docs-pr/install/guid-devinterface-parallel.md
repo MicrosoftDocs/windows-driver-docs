@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVINTERFACE_PARALLEL
 description: GUID_DEVINTERFACE_PARALLEL
-ms.assetid: 3c7c27ba-aad6-4ca5-ba26-fba206f967b9
 keywords: ["GUID_DEVINTERFACE_PARALLEL Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVINTERFACE_PARALLEL
 
 
-The GUID_DEVINTERFACE_PARALLEL [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for [parallel ports](https://docs.microsoft.com/previous-versions/ff544263(v=vs.85)) that support an IEEE 1284-compatible hardware interface.
+The GUID_DEVINTERFACE_PARALLEL [device interface class](./overview-of-device-interface-classes.md) is defined for [parallel ports](/previous-versions/ff544263(v=vs.85)) that support an IEEE 1284-compatible hardware interface.
 
 <table>
 <colgroup>
@@ -52,7 +51,7 @@ Drivers for parallel ports register instances of GUID_DEVINTERFACE_PARALLEL to n
 
 The system-supplied function driver for parallel ports registers an instance of this device class for a parallel port.
 
-For information about parallel devices and drivers, see [Introduction to Parallel Ports and Devices](https://docs.microsoft.com/previous-versions/ff543964(v=vs.85)).
+For information about parallel devices and drivers, see [Introduction to Parallel Ports and Devices](/previous-versions/ff543964(v=vs.85)).
 
 For information about the device interface class for devices that are attached to a parallel port, see [**GUID_DEVINTERFACE_PARCLASS**](guid-devinterface-parclass.md).
 
@@ -86,11 +85,4 @@ Requirements
 [**GUID_PARALLEL_DEVICE**](guid-parallel-device.md)
 
  
-
- 
-
-
-
-
-
 

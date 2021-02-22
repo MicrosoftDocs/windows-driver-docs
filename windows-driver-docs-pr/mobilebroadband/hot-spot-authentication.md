@@ -1,7 +1,6 @@
 ---
 title: Hot spot authentication
 description: Hot spot authentication
-ms.assetid: 6de07795-1ddb-43ff-97d9-b3a938d5a149
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,14 +13,7 @@ You should offload data traffic to Wi-Fi hot spots whenever possible. Windows Co
 ## <span id="related_topics"></span>Related topics
 
 
-[Mobile broadband app scenarios](mobile-broadband-app-scenarios.md)
+[Mobile broadband app scenarios](./account-management.md)
 
  
-
- 
-
-
-
-
-
 

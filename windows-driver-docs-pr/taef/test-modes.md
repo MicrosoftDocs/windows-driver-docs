@@ -1,7 +1,6 @@
 ---
 title: Test Modes
 description: Test Modes
-ms.assetid: 1E9C0198-8C74-4966-A401-329723B5A933
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

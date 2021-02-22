@@ -1,7 +1,6 @@
 ---
 title: Introduction to Printing
 description: Introduction to Printing
-ms.assetid: 8a2e0151-6d40-493d-9757-42350a9e6220
 keywords:
 - printing WDK
 - rendering component WDK print
@@ -22,7 +21,7 @@ When a Microsoft Win32 GDI application prints, it calls GDI functions in the Win
 
 In the XPS print path, printer drivers are based on the XML Paper Specification (XPS). When a Microsoft Win32 XPS application prints, the application calls XPS functions in the XPS Print API. When it prints to queues with [XPSDrv printer drivers](xpsdrv-printer-drivers.md), the spooler passes the XPS spool file straight to the device for rendering and output. When the XPS file is printed to a GDI device, it is converted to an EMF file through the XPS to GDI Conversion Module. It is then sent through the GDI print path in a manner similar to Win32 GDI applications.
 
-Windows Presentation Foundation (WPF) applications call WPF print support functions to spool XPS documents to the spooler in the XPS spool file format. As when printing from Win32 XPS applications, when the spooler prints to print queues with XPSDrv printer drivers, the spooler passes the spooled file in its original format to the XPSDrv printer driver for rendering and output to the printer. When the spooler prints to printers that have GDI-based, version 3 printer drivers, the spooler sends the data in the XPS spool file format to the GDI Conversion Module for conversion to an EMF file. It then sends the data to the GDI-based printer driver for printing. For more information about these data paths, see [Windows Print Path Overview](windows-print-path-overview.md). For more information about XPS, see the [XML Paper Specification Overview](https://docs.microsoft.com/previous-versions/windows/hardware/design/dn641615(v=vs.85)).
+Windows Presentation Foundation (WPF) applications call WPF print support functions to spool XPS documents to the spooler in the XPS spool file format. As when printing from Win32 XPS applications, when the spooler prints to print queues with XPSDrv printer drivers, the spooler passes the spooled file in its original format to the XPSDrv printer driver for rendering and output to the printer. When the spooler prints to printers that have GDI-based, version 3 printer drivers, the spooler sends the data in the XPS spool file format to the GDI Conversion Module for conversion to an EMF file. It then sends the data to the GDI-based printer driver for printing. For more information about these data paths, see [Windows Print Path Overview](windows-print-path-overview.md). For more information about XPS, see the [XML Paper Specification Overview](/previous-versions/windows/hardware/design/dn641615(v=vs.85)).
 
 Spooler and driver components are replaceable, so hardware vendors can easily add support for new hardware. For more information about print spooler and driver components, see the following sections:
 

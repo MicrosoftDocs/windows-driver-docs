@@ -1,7 +1,6 @@
 ---
 title: DsmSetLoadBalancePolicyALUA function
 description: The DsmSetLoadBalancePolicyALUA method is used to set the DSM ALUA load balance policy.
-ms.assetid: f63bdf0a-5b78-475d-b7c5-2af587b6356f
 keywords: ["DsmSetLoadBalancePolicyALUA function Storage Devices"]
 topic_type:
 - apiref
@@ -34,7 +33,7 @@ Parameters
 ----------
 
 *LoadBalancePolicy*   
-A [**DsmSetLoadBalancePolicyALUA\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicyalua_out) structure.
+A [**DsmSetLoadBalancePolicyALUA\_OUT**](/windows-hardware/drivers/ddi/mpiodisk/ns-mpiodisk-_dsmsetloadbalancepolicyalua_out) structure.
 
 *Status*   
 The status of the operation.
@@ -70,10 +69,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

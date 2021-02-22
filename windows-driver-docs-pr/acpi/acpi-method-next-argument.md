@@ -1,7 +1,6 @@
 ---
 title: ACPI_METHOD_NEXT_ARGUMENT macro
 description: The ACPI_METHOD_NEXT_ARGUMENT structure returns a pointer to the next ACPI_METHOD_ARGUMENT structure in an array of ACPI_METHOD_ARGUMENT structures.
-ms.assetid: c723b11b-1657-4a78-a6a1-26bd916604a4
 keywords: 
 - ACPI_METHOD_NEXT_ARGUMENT macro ACPI Devices
 ms.date: 10/12/2018
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # ACPI\_METHOD\_NEXT\_ARGUMENT macro
 
 
-The ACPI\_METHOD\_NEXT\_ARGUMENT structure returns a pointer to the next [**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure in an array of ACPI\_METHOD\_ARGUMENT structures.
+The ACPI\_METHOD\_NEXT\_ARGUMENT structure returns a pointer to the next [**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1) structure in an array of ACPI\_METHOD\_ARGUMENT structures.
 
 Syntax
 ------
@@ -61,4 +60,4 @@ Requirements
 ## See also
 
 
-[**ACPI\_METHOD\_ARGUMENT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)
+[**ACPI\_METHOD\_ARGUMENT**](/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_method_argument_v1)

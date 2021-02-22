@@ -1,7 +1,6 @@
 ---
 title: OID_PM_WOL_PATTERN_LIST
 description: As a query, overlying drivers can use the OID_PM_WOL_PATTERN_LIST OID to enumerate the wake on LAN patterns that are set on an underlying network adapter.
-ms.assetid: 7e5a65d8-39ec-4624-aede-97df945ef5e5
 ms.date: 08/08/2017
 keywords: 
  -OID_PM_WOL_PATTERN_LIST Network Drivers Starting with Windows Vista
@@ -11,18 +10,18 @@ ms.localizationpriority: medium
 # OID\_PM\_WOL\_PATTERN\_LIST
 
 
-As a query, overlying drivers can use the OID\_PM\_WOL\_PATTERN\_LIST OID to enumerate the wake on LAN patterns that are set on an underlying network adapter. After a successful return from the query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a list of [**NDIS\_PM\_WOL\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structures that describe the currently added WOL patterns.
+As a query, overlying drivers can use the OID\_PM\_WOL\_PATTERN\_LIST OID to enumerate the wake on LAN patterns that are set on an underlying network adapter. After a successful return from the query, the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure contains a pointer to a list of [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structures that describe the currently added WOL patterns.
 
 Remarks
 -------
 
 NDIS handles the query for miniport drivers. NDIS drivers can use the OID\_PM\_WOL\_PATTERN\_LIST OID to get a list of wake on LAN patterns that are set on an underlying network adapter.
 
-For each [**NDIS\_PM\_WOL\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure in the list, NDIS sets the **NextWoLPatternOffset** member to the offset from the beginning of the OID information buffer (that is, the beginning of the buffer that the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure points to) to the beginning of the next **NDIS\_PM\_WOL\_PATTERN** structure in the list. The offset in the **NextWoLPatternOffset** member of the last structure in the list is zero.
+For each [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure in the list, NDIS sets the **NextWoLPatternOffset** member to the offset from the beginning of the OID information buffer (that is, the beginning of the buffer that the **InformationBuffer** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure points to) to the beginning of the next **NDIS\_PM\_WOL\_PATTERN** structure in the list. The offset in the **NextWoLPatternOffset** member of the last structure in the list is zero.
 
-For offsets in an [**NDIS\_PM\_WOL\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure other than **NextWoLPatternOffset** (for example, **NameBufferOffset**), NDIS provides offsets that are relative to the beginning of each **NDIS\_PM\_WOL\_PATTERN** structure.
+For offsets in an [**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern) structure other than **NextWoLPatternOffset** (for example, **NameBufferOffset**), NDIS provides offsets that are relative to the beginning of each **NDIS\_PM\_WOL\_PATTERN** structure.
 
-If there are no WOL patterns that are set on the network adapter, NDIS sets the **DATA.QUERY\_INFORMATION.BytesWritten** member of the [**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to zero and returns **NDIS\_STATUS\_SUCCESS** for the request. The data within the **DATA.QUERY\_INFORMATION.InformationBuffer** member is not modified by NDIS.
+If there are no WOL patterns that are set on the network adapter, NDIS sets the **DATA.QUERY\_INFORMATION.BytesWritten** member of the [**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request) structure to zero and returns **NDIS\_STATUS\_SUCCESS** for the request. The data within the **DATA.QUERY\_INFORMATION.InformationBuffer** member is not modified by NDIS.
 
 NDIS returns one of the following status codes for the request:
 
@@ -61,9 +60,9 @@ Requirements
 ## See also
 
 
-[**NDIS\_OID\_REQUEST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
+[**NDIS\_OID\_REQUEST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request)
 
-[**NDIS\_PM\_WOL\_PATTERN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern)
+[**NDIS\_PM\_WOL\_PATTERN**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pm_wol_pattern)
 
 [OID\_PM\_ADD\_WOL\_PATTERN](oid-pm-add-wol-pattern.md)
 
@@ -72,9 +71,4 @@ Requirements
 [OID\_PNP\_WAKE\_UP\_PATTERN\_LIST](oid-pnp-wake-up-pattern-list.md)
 
  
-
- 
-
-
-
 

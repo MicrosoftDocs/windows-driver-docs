@@ -1,7 +1,6 @@
 ---
 title: Driver Rank Information in the SetupAPI Log
 description: Driver Rank Information in the SetupAPI Log
-ms.assetid: 169a1963-3fb3-4254-9634-78034cda2924
 keywords:
 - SetupAPI logging WDK Windows Vista , driver rank information
 - signature indicators WDK device installations

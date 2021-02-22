@@ -1,7 +1,6 @@
 ---
 title: ScanIdentifier element
 description: The required ScanIdentifier element contains a device-specific string that the scanner provides through a ScanAvailableEvent event.
-ms.assetid: 77116871-63dc-4388-9b36-a553219ddcf7
 keywords: ["ScanIdentifier element Imaging Devices"]
 topic_type:
 - apiref

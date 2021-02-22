@@ -1,7 +1,6 @@
 ---
 title: DIF_VALIDATECLASSDRIVERS
 description: DIF_VALIDATECLASSDRIVERS
-ms.assetid: 60a7efac-5d9b-45c2-8156-3581764f5dda
 keywords: ["DIF_VALIDATECLASSDRIVERS Device and Driver Installation"]
 topic_type:
 - apiref

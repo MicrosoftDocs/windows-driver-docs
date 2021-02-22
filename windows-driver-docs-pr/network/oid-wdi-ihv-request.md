@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_IHV_REQUEST
 description: OID_WDI_IHV_REQUEST is used to forward information that an IHV extensibility module has sent to the miniport.
-ms.assetid: d5639def-ddde-4972-b331-46c0f768d155
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_IHV_REQUEST Network Drivers Starting with Windows Vista
@@ -26,7 +25,7 @@ This command is not serialized with any tasks. It is serialized with other prope
 
 | TLV                                                  | Multiple TLV instances allowed | Optional | Description                                        |
 |------------------------------------------------------|--------------------------------|----------|----------------------------------------------------|
-| [**WDI\_TLV\_IHV\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-data) |                                | X        | The information from the IHV extensibility module. |
+| [**WDI\_TLV\_IHV\_DATA**](./wdi-tlv-ihv-data.md) |                                | X        | The information from the IHV extensibility module. |
 
  
 
@@ -35,7 +34,7 @@ This command is not serialized with any tasks. It is serialized with other prope
 
 | TLV                                                  | Multiple TLV instances allowed | Optional | Description                                                                                                                 |
 |------------------------------------------------------|--------------------------------|----------|-----------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_IHV\_DATA**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-ihv-data) |                                | X        | The response to be sent to the IHV extensibility module. The data value is forwarded as-is to the IHV extensibility module. |
+| [**WDI\_TLV\_IHV\_DATA**](./wdi-tlv-ihv-data.md) |                                | X        | The response to be sent to the IHV extensibility module. The data value is forwarded as-is to the IHV extensibility module. |
 
  
 
@@ -64,9 +63,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

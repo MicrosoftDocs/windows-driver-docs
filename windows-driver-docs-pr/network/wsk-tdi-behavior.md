@@ -1,7 +1,6 @@
 ---
 title: WSK_TDI_BEHAVIOR
 description: WSK_TDI_BEHAVIOR
-ms.assetid: 84e4c8c3-2c31-4db5-bb25-309c6bb176ff
 ms.date: 07/18/2017
 keywords:
  - WSK_TDI_BEHAVIOR Network Drivers Starting with Windows Vista
@@ -15,11 +14,11 @@ ms.localizationpriority: medium
 
  
 
-A WSK application uses the WSK\_TDI\_BEHAVIOR client control operation to control whether the WSK subsystem will divert network I/O to [TDI](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff565094(v=vs.85)) transports. A WSK application uses this client control operation only if it needs to override the default behavior of the WSK subsystem.
+A WSK application uses the WSK\_TDI\_BEHAVIOR client control operation to control whether the WSK subsystem will divert network I/O to [TDI](/previous-versions/windows/hardware/network/ff565094(v=vs.85)) transports. A WSK application uses this client control operation only if it needs to override the default behavior of the WSK subsystem.
 
 If a WSK application uses the WSK\_TDI\_BEHAVIOR client control operation, it must do so before it creates any sockets.
 
-To control whether the WSK subsystem will divert network I/O to TDI transports, a WSK application calls the [**WskControlClient**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
+To control whether the WSK subsystem will divert network I/O to TDI transports, a WSK application calls the [**WskControlClient**](/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_control_client) function with the following parameters.
 
 <table>
 <colgroup>
@@ -98,9 +97,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

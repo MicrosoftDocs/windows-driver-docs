@@ -1,7 +1,6 @@
 ---
 title: Introduction to Video Present Networks
 description: Introduction to Video Present Networks
-ms.assetid: 62a92f00-b1da-41c2-99af-eef8140b064e
 keywords:
 - video present networks WDK display , about video present networks
 - VidPN WDK display , about video present networks

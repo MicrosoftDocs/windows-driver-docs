@@ -1,7 +1,6 @@
 ---
 title: Creating a SCO Client Connection to a Remote Device
 description: Creating a SCO Client Connection to a Remote Device
-ms.assetid: e5a4ed14-1fb0-4a5f-b388-5e536d674c23
 keywords:
 - Synchronous Connection-Oriented WDK Bluetooth
 - SCO profile drivers WDK Bluetooth
@@ -17,27 +16,21 @@ A SCO client profile driver is a profile driver that requests Synchronous Connec
 
 Because SCO connections are point-to-point connections between two Bluetooth devices, a SCO client profile driver needs only the Bluetooth address of the remote device to connect to.
 
-To initiate a SCO connection to a remote device, profile drivers should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_OPEN\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536626(v=vs.85)) request.
+To initiate a SCO connection to a remote device, profile drivers should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_OPEN\_CHANNEL**](/previous-versions/ff536626(v=vs.85)) request.
 
 If the remote device accepts the profile driver's SCO connection request, the profile driver can then perform additional BRB commands across the newly connected channel by using IOCTL\_INTERNAL\_BTH\_SUBMIT\_BRB, including:
 
--   [**BRB\_SCO\_GET\_CHANNEL\_INFO**](https://docs.microsoft.com/previous-versions/ff536624(v=vs.85))
+-   [**BRB\_SCO\_GET\_CHANNEL\_INFO**](/previous-versions/ff536624(v=vs.85))
 
--   [**BRB\_SCO\_GET\_SYSTEM\_INFO**](https://docs.microsoft.com/previous-versions/ff536625(v=vs.85))
+-   [**BRB\_SCO\_GET\_SYSTEM\_INFO**](/previous-versions/ff536625(v=vs.85))
 
--   [**BRB\_SCO\_TRANSFER**](https://docs.microsoft.com/previous-versions/ff536629(v=vs.85))
+-   [**BRB\_SCO\_TRANSFER**](/previous-versions/ff536629(v=vs.85))
 
 **Note**  Profile drivers should [build and send](building-and-sending-a-brb.md) a **BRB\_SCO\_GET\_SYSTEM\_INFO** request during initialization to determine if the underlying hardware supports SCO and, if so, what the global SCO settings are.
 
  
 
-When the profile driver no longer requires the SCO connection to the remote device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_CLOSE\_CHANNEL**](https://docs.microsoft.com/previous-versions/ff536622(v=vs.85)) request.
+When the profile driver no longer requires the SCO connection to the remote device, it should [build and send](building-and-sending-a-brb.md) a [**BRB\_SCO\_CLOSE\_CHANNEL**](/previous-versions/ff536622(v=vs.85)) request.
 
  
-
- 
-
-
-
-
 

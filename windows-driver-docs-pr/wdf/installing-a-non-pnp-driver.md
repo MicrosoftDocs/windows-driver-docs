@@ -1,30 +1,31 @@
 ---
 title: Installing a Non-PnP Driver
 description: Installing a Non-PnP Driver
-ms.assetid: 99676d85-feb2-482c-a91b-cfc48be5904c
 keywords:
 - Kernel-Mode Driver Framework WDK , installing drivers
 - framework-based drivers WDK KMDF , installing
 - INF files WDK KMDF , non-PnP drivers
 - non-PnP drivers WDK KMDF
-ms.date: 04/20/2017
+ms.date: 03/12/2020
 ms.localizationpriority: medium
 ---
 
 # Installing a Non-PnP Driver
 
 
-If your driver does not support a Plug and Play (PnP) device, your driver package must include an INF file that contains an INF <em>DDInstall</em>**.CoInstallers** section and INF <em>DDInstall</em>**.WDF** section that are described in [Using the KMDF Co-installer](installing-the-framework-s-co-installer.md).
+If your KMDF driver supports a non-Plug and Play (PnP) device on Windows 10, use the same approach as that shown in the [Non-PnP Driver Sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/general/ioctl/kmdf), but remove references to INF files and co-installers. For example, you do not need the following:
 
-In addition, you must provide an installer that loads your driver and the framework's co-installer. The co-installer provides [**WdfPreDeviceInstall**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinstaller/nf-wdfinstaller-wdfpredeviceinstall), [**WdfPreDeviceInstallEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinstaller/nf-wdfinstaller-wdfpredeviceinstallex), [**WdfPostDeviceInstall**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinstaller/nf-wdfinstaller-wdfpostdeviceinstall), [**WdfPreDeviceRemove**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinstaller/nf-wdfinstaller-wdfpredeviceremove), and [**WdfPostDeviceRemove**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfinstaller/nf-wdfinstaller-wdfpostdeviceremove) functions that the driver's installer must call.
-
-For an example of how to write an installer for a non-PnP driver, see the installer that is included with the [NONPNP](sample-kmdf-drivers.md) sample.
-
+```
+#define NONPNP_INF_FILENAME  L"\\nonpnp.inf"
+#define WDF_SECTION_NAME L"nonpnp.NT.Wdf"
  
-
+LoadWdfCoInstaller
+UnloadWdfCoInstaller
  
+PFN_WDFPREDEVICEINSTALLEX pfnWdfPreDeviceInstallEx;
+PFN_WDFPOSTDEVICEINSTALL   pfnWdfPostDeviceInstall;
+PFN_WDFPREDEVICEREMOVE     pfnWdfPreDeviceRemove;
+PFN_WDFPOSTDEVICEREMOVE   pfnWdfPostDeviceRemove;
+```
 
-
-
-
-
+For a non-PnP KMDF driver, simply call the SCM API to create the service. For more info, see [Installing a Service](/windows/win32/services/installing-a-service).

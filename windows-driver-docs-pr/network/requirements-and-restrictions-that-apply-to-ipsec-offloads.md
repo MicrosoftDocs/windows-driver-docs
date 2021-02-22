@@ -1,7 +1,6 @@
 ---
 title: Requirements and Restrictions That Apply to IPsec Offloads
 description: Requirements and Restrictions That Apply to IPsec Offloads
-ms.assetid: c016d6dd-f760-4340-8d56-9bd69e4fe84e
 keywords:
 - ESP-protected packets WDK IPsec offload , requirements
 - AH-protected packets WDK IPsec offload , requirements
@@ -75,13 +74,7 @@ The following requirements and restrictions apply to Internet protocol security 
 
 -   IPsec tasks are not offloaded for send packets that require IP fragmentation or for receive packets that require reassembly from IP fragmentation.
 
--   IPsec tasks are not offloaded for send and receive packets that pass through a load-balancing miniport driver. For more information about load balancing, see [Load Balancing and Failover](https://docs.microsoft.com/previous-versions/windows/hardware/network/ff549197(v=vs.85)).
+-   IPsec tasks are not offloaded for send and receive packets that pass through a load-balancing miniport driver. For more information about load balancing, see [Load Balancing and Failover](/previous-versions/windows/hardware/network/ff549197(v=vs.85)).
 
  
-
- 
-
-
-
-
 

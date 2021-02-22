@@ -1,7 +1,6 @@
 ---
 title: .ocommand (Expect Commands from Target)
 description: The .ocommand command enables the target application to send commands to the debugger.
-ms.assetid: a4363395-111f-48eb-b1da-c17c0ad9f067
 keywords: ["Expect Commands from Target (.ocommand) command", ".ocommand (Expect Commands from Target) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -60,14 +59,14 @@ Deletes the command prefix string.
 
 ### <span id="Additional_Information"></span><span id="additional_information"></span><span id="ADDITIONAL_INFORMATION"></span>Additional Information
 
-For more information about [**OutputDebugString**](https://docs.microsoft.com/windows/desktop/api/debugapi/nf-debugapi-outputdebugstringw) and other user-mode functions that communicate with a debugger, see the Microsoft Windows SDK documentation.
+For more information about [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) and other user-mode functions that communicate with a debugger, see the Microsoft Windows SDK documentation.
 
 Remarks
 -------
 
 If you use the **.ocommand** command without parameters, the debugger displays the current command prefix string. To clear the existing string, use **.ocommand -d**.
 
-When you have set a command prefix string, any target output (such as the contents of an [**OutputDebugString**](https://docs.microsoft.com/windows/desktop/api/debugapi/nf-debugapi-outputdebugstringw) command) is scanned. If this output begins with the command prefix string, the text of the output that follows the prefix string is treated as a debugger command string and is run. When this text is executed, the command string is not displayed.
+When you have set a command prefix string, any target output (such as the contents of an [**OutputDebugString**](/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw) command) is scanned. If this output begins with the command prefix string, the text of the output that follows the prefix string is treated as a debugger command string and is run. When this text is executed, the command string is not displayed.
 
 The target can include an [**.echo (Echo Comment)**](-echo--echo-comment-.md) command in the output string if you want additional messages. Target output that does not begin with the prefix string is displayed in the typical manner.
 
@@ -102,10 +101,4 @@ There are no commands executed from the preceding example because the command st
  
 
  
-
- 
-
-
-
-
 

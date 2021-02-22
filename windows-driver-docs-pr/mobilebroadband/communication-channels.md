@@ -1,7 +1,6 @@
 ---
 title: Peronal hotspot communication channels
 description: Peronal hotspot communication channels
-ms.assetid: e26e22a2-4cc2-46a2-9d6c-02ab5df35041
 ms.date: 07/05/2019
 ms.localizationpriority: medium
 ---

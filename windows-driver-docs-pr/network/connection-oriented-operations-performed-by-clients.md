@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented Operations Performed by Clients
 description: Connection-Oriented Operations Performed by Clients
-ms.assetid: 342f534e-d203-4823-a4d8-a8a51b7ff0bd
 keywords:
 - connection-oriented clients WDK
 - client operations WDK CoNDIS
@@ -27,7 +26,7 @@ A connection-oriented client:
 
 -   **Adds and deletes PVCs.**
 
-    A connection-oriented client can monitor when an operator manually configures or deconfigures a permanent VC (PVC). In response to such an action, the client can request a call manager or MCM driver to add a PVC to its list of configured PVCs or to delete a PVC from such a list (see [OID\_CO\_ADD\_PVC](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-add-pvc) and [OID\_CO\_DELETE\_PVC](https://docs.microsoft.com/windows-hardware/drivers/network/oid-co-delete-pvc)).
+    A connection-oriented client can monitor when an operator manually configures or deconfigures a permanent VC (PVC). In response to such an action, the client can request a call manager or MCM driver to add a PVC to its list of configured PVCs or to delete a PVC from such a list (see [OID\_CO\_ADD\_PVC](./oid-co-add-pvc.md) and [OID\_CO\_DELETE\_PVC](./oid-co-delete-pvc.md)).
 
 -   **Makes outgoing calls.**
 
@@ -68,10 +67,4 @@ A connection-oriented client:
     A client can input [status indicated by a connection-oriented miniport driver](indicating-miniport-driver-status.md) or an MCM driver.
 
  
-
- 
-
-
-
-
 

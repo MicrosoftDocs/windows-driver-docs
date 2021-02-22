@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_PROCESSOR
 description: GUID_DEVICE_PROCESSOR
-ms.assetid: 47a70d17-5b30-4bae-9f24-f77f3e26e7fc
 keywords: ["GUID_DEVICE_PROCESSOR Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVICE_PROCESSOR
 
 
-The GUID_DEVICE_PROCESSOR [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for Advanced Configuration and Power Interface (ACPI) processor devices.
+The GUID_DEVICE_PROCESSOR [device interface class](./overview-of-device-interface-classes.md) is defined for Advanced Configuration and Power Interface (ACPI) processor devices.
 
 <table>
 <colgroup>
@@ -48,9 +47,9 @@ The GUID_DEVICE_PROCESSOR [device interface class](https://docs.microsoft.com/wi
 Remarks
 -------
 
-The system-supplied [ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver) registers an instance of this device interface class to notify the operating system and applications of the presence of processor devices.
+The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers an instance of this device interface class to notify the operating system and applications of the presence of processor devices.
 
-For information about supplying WDM [function drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers) for ACPI devices, see [Supporting ACPI Devices](https://docs.microsoft.com/windows-hardware/drivers/acpi/supporting-acpi-devices).
+For information about supplying WDM [function drivers](../kernel/function-drivers.md) for ACPI devices, see [Supporting ACPI Devices](../acpi/supporting-acpi-devices.md).
 
 Requirements
 ------------
@@ -69,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

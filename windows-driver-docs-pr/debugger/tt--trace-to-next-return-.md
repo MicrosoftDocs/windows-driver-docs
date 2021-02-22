@@ -1,7 +1,6 @@
 ---
 title: tt (Trace to Next Return)
 description: The tt command executes the program until a return instruction is reached.
-ms.assetid: fbc6627f-62e0-4832-8da5-dd4d3323965a
 keywords: ["tt (Trace to Next Return) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

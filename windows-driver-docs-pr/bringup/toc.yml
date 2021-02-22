@@ -12,7 +12,7 @@
       href: uefi-security.md
     - name: "Unified Extensible Firmware Interface (UEFI)"
       href: unified-extensible-firmware-interface.md
-    - name: "Device Guard and Credential Guard"
+    - name: "Hypervisor-Protected Code Integrity (HVCI)"
       href: device-guard-and-credential-guard.md
     - name: "Fixed ComBuffer and Windows SMM Security Mitigation Table (WSMT)"
       href: fixed-combuffer-and-windows-smm-security-mitigation-table.md
@@ -315,6 +315,8 @@
     items: 
     - name: "ACPI system description tables"
       href: acpi-system-description-tables.md
+    - name: "Debug Port Table 2 (DBG2)"
+      href: acpi-debug-port-table.md
     - name: "Generate ACPI tables by using AcpiGenFx"
       href: generate-acpi-tables-by-using-acpigenfx.md
   - name: "Device management namespace objects"

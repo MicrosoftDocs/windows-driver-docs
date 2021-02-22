@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xC000021A WINLOGON_FATAL_ERROR
 description: The WINLOGON_FATAL_ERROR bug check has a value of 0xC000021A. This means that the Winlogon process terminated unexpectedly.
-ms.assetid: d46e2948-ff18-49e0-a738-7b90ab54d333
 keywords: ["Bug Check 0xC000021A WINLOGON_FATAL_ERROR", "WINLOGON_FATAL_ERROR"]
 ms.date: 09/12/2019
 topic_type:

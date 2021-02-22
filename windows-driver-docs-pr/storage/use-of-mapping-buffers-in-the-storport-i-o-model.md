@@ -1,7 +1,6 @@
 ---
 title: Use of Mapping Buffers in the Storport I/O Model
 description: Use of Mapping Buffers in the Storport I/O Model
-ms.assetid: cd22ec31-ff4d-42d4-a47d-7b8bd85804be
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -12,13 +11,13 @@ ms.localizationpriority: medium
 ## <span id="ddk_use_of_mapping_buffers_in_the_storport_i_o_model_kg"></span><span id="DDK_USE_OF_MAPPING_BUFFERS_IN_THE_STORPORT_I_O_MODEL_KG"></span>
 
 
-In the SCSI Port I/O model, miniport drivers can require the port driver to allocate and map system virtual memory for SRB I/O buffers. Miniport drivers configure the port driver to map I/O buffers by setting the **MapBuffers** member of the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information) structure to **TRUE**.
+In the SCSI Port I/O model, miniport drivers can require the port driver to allocate and map system virtual memory for SRB I/O buffers. Miniport drivers configure the port driver to map I/O buffers by setting the **MapBuffers** member of the [**PORT\_CONFIGURATION\_INFORMATION (SCSI)**](/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information) structure to **TRUE**.
 
 If the port driver is configured with **MapBuffers** set to **TRUE**, the **DataBuffer** member of each SRB that the miniport driver receives will contain a system virtual address of an I/O buffer. This address is valid in the address space of all processes in the system. Also, the miniport driver will be free to directly access the I/O buffer.
 
 On the other hand, if the miniport driver sets **MapBuffers** to **FALSE**, **DataBuffer** will contain a virtual address that belongs to a particular process that is not necessarily valid in the context in which the miniport driver runs. Therefore, the miniport driver will not be able to access the memory area to which **DataBuffer** points.
 
-In the Storport I/O model, miniport drivers are required to support DMA-based I/O. When DMA is used, there should be no need for miniport drivers to access an SRB's I/O buffers indirectly through a system-wide virtual address. With this in view, the Storport I/O model defines a different set of values for the **MapBuffers** member of [**PORT\_CONFIGURATION\_INFORMATION (STORPORT)**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)).
+In the Storport I/O model, miniport drivers are required to support DMA-based I/O. When DMA is used, there should be no need for miniport drivers to access an SRB's I/O buffers indirectly through a system-wide virtual address. With this in view, the Storport I/O model defines a different set of values for the **MapBuffers** member of [**PORT\_CONFIGURATION\_INFORMATION (STORPORT)**](/previous-versions/windows/hardware/drivers/ff563901(v=vs.85)).
 
 <table>
 <colgroup>
@@ -50,9 +49,4 @@ In the Storport I/O model, miniport drivers are required to support DMA-based I/
  
 
  
-
- 
-
-
-
 

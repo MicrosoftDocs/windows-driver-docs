@@ -1,7 +1,6 @@
 ---
 title: Supporting Additional Instruction Slots for Shader 3
 description: Supporting Additional Instruction Slots for Shader 3
-ms.assetid: 8ff00178-cd08-42ce-8dea-127fc0d04733
 keywords:
 - instruction slots WDK DirectX 9.0
 - shaders WDK DirectX 9.0

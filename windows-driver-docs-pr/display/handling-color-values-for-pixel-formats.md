@@ -1,7 +1,6 @@
 ---
 title: Handling Color Values for Pixel Formats
 description: Handling Color Values for Pixel Formats
-ms.assetid: 53ce6be1-14e1-4ee8-ba29-f198dcdacdaa
 keywords:
 - color values for pixel formats WDK DirectX 9.0
 - pixel format color values WDK DirectX 9.0
@@ -19,7 +18,7 @@ ms.localizationpriority: medium
 
 A display driver must convert input color values for the ARGB and YUV classes of color formats because applications request color-fill and clear operations on surfaces with these formats in a uniform way. However, the driver must directly use the color values from other class formats. For example, applications use A8R8G8B8 as the uniform color value for all surfaces that have at most 8 bits for the alpha (A), red (R), green (G), and blue (B) components; the driver must convert the A8R8G8B8 color to the color value that is specific to the actual ARGB format by copying the bits with the highest significance.
 
-The display driver receives color values when it processes the D3DDP2OP\_CLEAR and D3DDP2OP\_COLORFILL operation codes in its [**D3dDrawPrimitives2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function.
+The display driver receives color values when it processes the D3DDP2OP\_CLEAR and D3DDP2OP\_COLORFILL operation codes in its [**D3dDrawPrimitives2**](/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb) function.
 
 The display driver can use the following code to convert color values for the ARGB and YUV class formats:
 
@@ -156,10 +155,4 @@ DWORD CPixel::ConvertFromARGB(D3DCOLOR  InputColor,
 ```
 
  
-
- 
-
-
-
-
 

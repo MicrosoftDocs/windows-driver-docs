@@ -1,7 +1,6 @@
 ---
 title: NDIS Management Information and OIDs
 description: NDIS Management Information and OIDs
-ms.assetid: 5737634e-ee80-44d4-9dc8-c2ef97670809
 keywords:
 - WMI WDK networking , management information base
 - management information base WDK networking
@@ -36,13 +35,7 @@ The *general* and mandatory *media-specific* OIDs are documented in the Network 
 
 Objects are classified as *operational characteristics* (for example, multicast address list) or *statistics* (for example, broadcast packets received), and they are also classified as *mandatory* or *optional*. All operational characteristics objects for general or media-specific classes are mandatory, but only some statistics objects are mandatory. All implementation-specific objects are classified as mandatory.
 
-For more information about OID classifications, see [NDIS OIDs](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+For more information about OID classifications, see [NDIS OIDs](/windows-hardware/drivers/ddi/_netvista/).
 
  
-
- 
-
-
-
-
 

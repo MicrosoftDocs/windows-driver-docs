@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_YSCALING
 description: The WIA\_IPS\_YSCALING property indicates if scaling along the y-axis should be applied to a scan. The WIA minidriver creates and maintains this property.
-ms.assetid: 4466697b-0d8e-477e-8dd0-2b277d4fd6b3
 keywords: ["WIA_IPS_YSCALING Imaging Devices"]
 topic_type:
 - apiref

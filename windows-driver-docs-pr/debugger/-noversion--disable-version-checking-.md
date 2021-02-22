@@ -1,7 +1,6 @@
 ---
 title: .noversion (Disable Version Checking)
 description: The .noversion command disables all version checking of extension DLLs.
-ms.assetid: ce7fbff4-7936-4bef-8236-a13957ada7f4
 keywords: ["Disable Version Checking (.noversion) command", ".noversion (Disable Version Checking) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

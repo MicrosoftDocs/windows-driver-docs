@@ -1,7 +1,6 @@
 ---
 title: ScansCompleted element
 description: The required ScansCompleted element specifies the number of images that are scanned.
-ms.assetid: 71634b6b-1c61-46a0-8cde-01a975c09270
 keywords: ["ScansCompleted element Imaging Devices"]
 topic_type:
 - apiref

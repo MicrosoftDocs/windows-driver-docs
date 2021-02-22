@@ -1,7 +1,6 @@
 ---
 title: Win32 API Support for Print Capabilities
 description: Win32 API Support for Print Capabilities
-ms.assetid: 1b40cc3e-c6f6-460f-b514-4ef3a001f563
 keywords:
 - Print Capabilities WDK , Win32 API support
 - DrvDeviceCapabilities
@@ -17,20 +16,15 @@ The Windows Vista print subsystem provides compatibility support that enables Wi
 
 ![diagram illustrating print capabilities data flows](images/ptpccomp.gif)
 
-Both [XPSDrv print drivers](xpsdrv-printer-drivers.md) and GDI-based, version 3 print drivers support the [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function. When a Win32 application calls **DrvDeviceCapabilities** or the **GetDevCap** function, the print subsystem will call **DrvDeviceCapabilities** to collect the device capability information from the print driver.
+Both [XPSDrv print drivers](xpsdrv-printer-drivers.md) and GDI-based, version 3 print drivers support the [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function. When a Win32 application calls **DrvDeviceCapabilities** or the **GetDevCap** function, the print subsystem will call **DrvDeviceCapabilities** to collect the device capability information from the print driver.
 
 When a WPF application requests a PrintCapabilities document from a print driver, the print subsystem will do one of the following:
 
--   If the print driver supports the [IPrintTicketProvider interface](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff554375(v=vs.85)), the print subsystem will query the print driver for the PrintCapabilities document by using the [**IPrintTicketProvider::GetPrintCapabilities**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff554365(v=vs.85)) method.
+-   If the print driver supports the [IPrintTicketProvider interface](/previous-versions/windows/hardware/drivers/ff554375(v=vs.85)), the print subsystem will query the print driver for the PrintCapabilities document by using the [**IPrintTicketProvider::GetPrintCapabilities**](/previous-versions/windows/hardware/drivers/ff554365(v=vs.85)) method.
 
--   If the print driver does not support the **IPrintTicketProvider** interface, the Print Ticket Manager will query the [**DrvDeviceCapabilities**](https://docs.microsoft.com/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function of the print driver and use the returned information to create a PrintTicket document that is returned to the application.
+-   If the print driver does not support the **IPrintTicketProvider** interface, the Print Ticket Manager will query the [**DrvDeviceCapabilities**](/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicecapabilities) function of the print driver and use the returned information to create a PrintTicket document that is returned to the application.
 
 For more information about how the **IPrintTicketProvider** interface is supported by Microsoft print drivers, see [Printer Driver and Plug-in Interface Design in Windows Vista](printer-driver-and-plug-in-helper-interfaces.md).
 
  
-
- 
-
-
-
 

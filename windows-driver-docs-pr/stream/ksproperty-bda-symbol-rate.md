@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SYMBOL\_RATE
 description: Clients use KSPROPERTY\_BDA\_SYMBOL\_RATE to control the symbol rate of a demodulator node.
-ms.assetid: 11e2e020-3037-4a68-a8d6-c68efd86a518
 keywords: ["KSPROPERTY_BDA_SYMBOL_RATE Streaming Media Devices"]
 topic_type:
 - apiref
@@ -63,14 +62,7 @@ The **NodeId** member of KSP\_NODE specifies the identifier of the demodulator n
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Version Token
 description: Version Token
-ms.assetid: e38ae148-3bb8-41b4-acdd-55bd67c24d48
 ms.date: 01/05/2018
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: Selecting Flags and Levels
 description: Selecting Flags and Levels
-ms.assetid: cde1ef3e-ab1b-4725-b18d-8f7704cc9f5a
 keywords:
 - trace flags WDK
 - flags WDK software tracing

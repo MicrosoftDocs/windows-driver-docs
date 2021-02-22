@@ -1,7 +1,6 @@
 ---
 title: Backing Up the Boot.ini File
 description: When you install or upgrade an NT-based Windows operating system prior to Windows Vista, the Windows installer creates a new Boot.ini file for the computer. The new file retains some, but not all, of the changes you might have made to the file.
-ms.assetid: c4881f5d-3404-4e87-b130-33bc57b45ec9
 keywords:
 - Boot.ini files WDK , backing up
 - back ups WDK boot options

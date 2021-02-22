@@ -1,7 +1,6 @@
 ---
 title: rcdrkd.rcdrsettraceprefix
 description: The rcdrkd.rcdrsettraceprefix extension sets the trace message prefix.
-ms.assetid: BFA987B8-7013-4112-A674-064ED59741C0
 keywords: ["rcdrkd.rcdrsettraceprefix Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -36,7 +35,7 @@ Rcdrkd.dll
 Remarks
 -------
 
-Each message in a recorder log has a prefix that you can control by specifying a trace message prefix string. For more information, see [Trace Message Prefix](https://docs.microsoft.com/windows-hardware/drivers/devtest/trace-message-prefix).
+Each message in a recorder log has a prefix that you can control by specifying a trace message prefix string. For more information, see [Trace Message Prefix](../devtest/trace-message-prefix.md).
 
 Examples
 --------
@@ -75,11 +74,4 @@ Trying to extract TMF information from - C:\ProgramData\dbg\sym\usbxhci.pdb\D4C8
 [RCDRKD Extensions](rcdrkd-extensions.md)
 
  
-
- 
-
-
-
-
-
 

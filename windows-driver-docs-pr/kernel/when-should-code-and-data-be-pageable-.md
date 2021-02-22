@@ -1,7 +1,6 @@
 ---
 title: When Should Code and Data Be Pageable
 description: When Should Code and Data Be Pageable
-ms.assetid: 2804f558-8c8c-43f4-b14e-8deaac9da286
 keywords: ["memory management WDK kernel , pageable drivers", "pageable drivers WDK kernel , when should be pageable", "locked-on-demand code WDK kernel", "spin locks WDK memory", "resident code WDK pageable drivers"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -21,7 +20,7 @@ Driver code that does any of the following must be memory-resident. That is, thi
 
 -   Acquires spin locks.
 
--   Calls any of the kernel's object support routines, such as [**KeReleaseMutex**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasemutex) or [**KeReleaseSemaphore**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasesemaphore), in which the *Wait* parameter is set to **TRUE**. If the kernel is called with *Wait* set to **TRUE**, the call returns with IRQL at DISPATCH\_LEVEL.
+-   Calls any of the kernel's object support routines, such as [**KeReleaseMutex**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasemutex) or [**KeReleaseSemaphore**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasesemaphore), in which the *Wait* parameter is set to **TRUE**. If the kernel is called with *Wait* set to **TRUE**, the call returns with IRQL at DISPATCH\_LEVEL.
 
 Driver code must be running at IRQL &lt; DISPATCH\_LEVEL when the code does anything that might cause a page fault. Code can cause a page fault if it does any of the following:
 
@@ -34,9 +33,4 @@ Driver code must be running at IRQL &lt; DISPATCH\_LEVEL when the code does anyt
 Typically, you should make a section paged if the total amount of all the pageable code (or data) is at least 4 kilobytes (KB). Whenever possible, you should isolate purely pageable code (or data) into a separate section from code (or data) that can sometimes be pageable but must sometimes be locked. For example, combining purely pageable code and locked-on-demand code causes more system space to be locked down for the combined section than is necessary. However, if a driver has less than 4 KB of possibly pageable code (or data), you might combine that code (or data) with locked-on-demand code (or data) into one section, saving system space.
 
  
-
- 
-
-
-
 

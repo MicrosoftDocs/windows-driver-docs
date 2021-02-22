@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_DISCONNECT_PARAMETERS
 description: WDI_TLV_DISCONNECT_PARAMETERS is a TLV that contains parameters for OID_WDI_TASK_DISCONNECT.
-ms.assetid: D0FF83A0-CD3B-47A6-BB08-842927F1D3BC
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_DISCONNECT_PARAMETERS Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_DISCONNECT\_PARAMETERS
 
 
-WDI\_TLV\_DISCONNECT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DISCONNECT](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-task-disconnect).
+WDI\_TLV\_DISCONNECT\_PARAMETERS is a TLV that contains parameters for [OID\_WDI\_TASK\_DISCONNECT](./oid-wdi-task-disconnect.md).
 
 ## TLV Type
 
@@ -28,7 +27,7 @@ The sum (in bytes) of the sizes of all contained elements.
 
 | Type                                              | Description                                                                                                                                                                         |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_MAC\_ADDRESS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address of the peer to disassociate.                                                                                                                                        |
+| [**WDI\_MAC\_ADDRESS**](/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_mac_address) | The MAC address of the peer to disassociate.                                                                                                                                        |
 | UINT16                                            | The reason for the host-triggered disassociation. This value is provided in little endian byte order and should be appropriately copied into the reason code of the outgoing frame. |
 
  
@@ -58,9 +57,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

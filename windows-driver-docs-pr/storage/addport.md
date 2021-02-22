@@ -1,7 +1,6 @@
 ---
 title: AddPort function
 description: The AddPort WMI method configures the WMI provider to inform the WMI client about events that are associated with the indicated port.
-ms.assetid: d20021c8-2326-4fd8-b098-70ab8bf53ed3
 keywords: ["AddPort function Storage Devices"]
 topic_type:
 - apiref
@@ -37,7 +36,7 @@ Parameters
 A worldwide name that indicates the port whose events are to be reported.
 
 *HBAStatus*   
-On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddPort\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_out) structure.
+On return, contains the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**AddPort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_out) structure.
 
 Return value
 ------------
@@ -72,16 +71,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**AddPort\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_in)
+[**AddPort\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_in)
 
-[**AddPort\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_out)
-
- 
+[**AddPort\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_addport_out)
 
  
-
-
-
-
-
 

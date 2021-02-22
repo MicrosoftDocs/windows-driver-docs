@@ -1,7 +1,6 @@
 ---
 title: Debugging Device Installations with the Kernel Debugger (KD)
 description: Debugging Device Installations with the Kernel Debugger (KD)
-ms.assetid: 0967d375-2602-44d2-b4ac-8d1e112afc3f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ For example, by using KD while debugging the user-mode device installation, you 
 
 -   Monitor other user-mode processes without managing multiple debuggers by using the KD extensions !process or .process /p.
 
-For more information about KD and other debugging tools, see [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index).
+For more information about KD and other debugging tools, see [Windows Debugging](../debugger/index.md).
 
 The **DebugInstall** registry value specifies the type of device installation debugging support enabled on the system. For more information about this registry value, see [Enabling Support for Debugging Device Installations](enabling-support-for-debugging-device-installations.md).
 
@@ -69,7 +68,7 @@ kd> .reload
 kd> bp[0x10] /p @$proc kernel32!LoadLibraryExW "gu;$$><Z:\\bpcoinst.txt;g"
 ```
 
-Rather than executing the program on every LoadLibraryEx call within the process (bp\[0x10\]), the developer can restrict it to execute only when class installer and co-installer DLLs are loaded into the process. Because [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) is the routine that invokes class installers and co-installers that are registered for a device, these DLLs will be loaded into the process during that call.
+Rather than executing the program on every LoadLibraryEx call within the process (bp\[0x10\]), the developer can restrict it to execute only when class installer and co-installer DLLs are loaded into the process. Because [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) is the routine that invokes class installers and co-installers that are registered for a device, these DLLs will be loaded into the process during that call.
 
 Because no assumptions should be made about when these DLLs will be unloaded from the *DrvInst.exe* host process, you must make sure the breakpoints can handle locating the DLL entry points during any calls that are made to **SetupDiCallClassInstaller** from the *DrvInst.exe* host process.
 
@@ -79,9 +78,9 @@ kd> bp[0x11] /p @$proc setupapi!SetupDiCallClassInstaller "be[0x10];bp[0x12] /p 
 kd> g
 ```
 
-The breakpoint to execute the debugger command program (bp\[0x10\]) is initially disabled. It is enabled whenever [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) is invoked (bp\[0x11\]), and execution continues. The debugger command program (bp\[0x10\]) is again disabled when **SetupDiCallClassInstaller** returns by setting a breakpoint on the return address of that routine itself (bp\[0x12\]).
+The breakpoint to execute the debugger command program (bp\[0x10\]) is initially disabled. It is enabled whenever [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) is invoked (bp\[0x11\]), and execution continues. The debugger command program (bp\[0x10\]) is again disabled when **SetupDiCallClassInstaller** returns by setting a breakpoint on the return address of that routine itself (bp\[0x12\]).
 
-Be aware that the breakpoint that disables the debugger command program also clears itself and continues execution until [**SetupDiCallClassInstaller**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdicallclassinstaller) is called again or until the installation program completes and all breakpoints are cleared (bp\[0x13\]).
+Be aware that the breakpoint that disables the debugger command program also clears itself and continues execution until [**SetupDiCallClassInstaller**](/windows/win32/api/setupapi/nf-setupapi-setupdicallclassinstaller) is called again or until the installation program completes and all breakpoints are cleared (bp\[0x13\]).
 
 When execution begins after the above breakpoints are set, the process will break on each call to mycoinst!CoInstallerProc. This allows you to debug the execution of the class installer or co-installer DLL during core device installation.
 
@@ -90,10 +89,4 @@ The default time period for an installation process to complete is 5 minutes. If
 The default timeout restriction placed on device installations is still in effect while the process is being debugged through the kernel debugger. Because execution of all programs on the system is stopped while broken into the debugger, the amount of time taken by the installation process is tracked the same as it would be on a system that is not being debugged.
 
  
-
- 
-
-
-
-
 

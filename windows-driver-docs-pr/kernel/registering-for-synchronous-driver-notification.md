@@ -1,7 +1,6 @@
 ---
 title: Registering for Synchronous Driver Notification
 description: Registering for Synchronous Driver Notification
-ms.assetid: 852a2b69-c71f-4127-946e-8179954d504c
 keywords: ["driver notification WDK dynamic hardware partitioning , registering", "synchronous notification WDK dynamic hardware partitioning , registering", "notification WDK dynamic hardware partitioning , registering", "synchronous driver notification WDK dynamic hardware partitioning , registering", "registering for driver notifications WDK dynamic hardware partitioning"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -23,7 +22,7 @@ VOID
     );
 ```
 
-A device driver registers for synchronous driver notification by calling the [**KeRegisterProcessorChangeCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterprocessorchangecallback) function. A device driver typically calls the **KeRegisterProcessorChangeCallback** function from within its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. If the device driver specifies the KE\_PROCESSOR\_CHANGE\_ADD\_EXISTING flag, the callback function is immediately called for each active processor that currently exists in the hardware partition, in addition to being called when a new processor is added to the hardware partition. The following code example shows how to register for the synchronous driver notifications:
+A device driver registers for synchronous driver notification by calling the [**KeRegisterProcessorChangeCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterprocessorchangecallback) function. A device driver typically calls the **KeRegisterProcessorChangeCallback** function from within its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. If the device driver specifies the KE\_PROCESSOR\_CHANGE\_ADD\_EXISTING flag, the callback function is immediately called for each active processor that currently exists in the hardware partition, in addition to being called when a new processor is added to the hardware partition. The following code example shows how to register for the synchronous driver notifications:
 
 ```cpp
 PVOID CallbackRegistrationHandle;
@@ -70,7 +69,7 @@ NTSTATUS  DriverEntry(
 }
 ```
 
-When a device driver must stop receiving synchronous driver notifications, such as when it is being unloaded, it must unregister the callback function by calling the [**KeDeregisterProcessorChangeCallback**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterprocessorchangecallback) function. A device driver typically calls the **KeDeregisterProcessorChangeCallback** function from within its [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function. The following code example shows how to unregister the callback function:
+When a device driver must stop receiving synchronous driver notifications, such as when it is being unloaded, it must unregister the callback function by calling the [**KeDeregisterProcessorChangeCallback**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kederegisterprocessorchangecallback) function. A device driver typically calls the **KeDeregisterProcessorChangeCallback** function from within its [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function. The following code example shows how to unregister the callback function:
 
 ```cpp
 // The driver's Unload routine
@@ -91,9 +90,4 @@ VOID
 ```
 
  
-
- 
-
-
-
 

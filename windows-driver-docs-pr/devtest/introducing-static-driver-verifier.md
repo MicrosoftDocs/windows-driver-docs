@@ -1,7 +1,6 @@
 ---
 title: Introducing Static Driver Verifier
 description: Introducing Static Driver Verifier
-ms.assetid: fa6e8b0f-0d0f-4293-87ec-e67decd6acb7
 keywords:
 - Static Driver Verifier WDK , about Static Driver Verifier
 - StaticDV WDK , about Static Driver Verifier

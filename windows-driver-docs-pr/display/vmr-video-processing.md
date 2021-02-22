@@ -1,7 +1,6 @@
 ---
 title: VMR Video Processing
 description: VMR Video Processing
-ms.assetid: 149f881d-1a6e-46b7-9a37-971c7bb7b79d
 keywords:
 - ProcAmp WDK DirectX VA , VMR
 - VMR WDK DirectX VA
@@ -53,21 +52,15 @@ The following illustration shows the video processing pipelines used by the VMR 
 
 Usually, a video playback application does not request that the VMR perform alpha blending or vertical/horizontal mirroring of the video as it is displayed. The VMR is then able to incorporate all the video processing into a single stage. In this case, the first pipeline is used. If the application requests that the VMR perform alpha blending or vertical/horizontal mirroring of the video image prior to display, the VMR inserts an extra stage to the pipeline. In this case, the second pipeline is used.
 
-The following illustration shows the video pipeline used by the VMR to process *progressive* video when the ProcAmp control hardware cannot perform color space conversion and cannot horizontally resize the video image during a ProcAmp adjustment operation (as indicated by the DXVA\_VideoProcess\_YUV2RGB and DXVA\_VideoProcess\_StretchX enumerators in [**DXVA\_VideoProcessCaps**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_videoprocesscaps)), but does support YUV textures.
+The following illustration shows the video pipeline used by the VMR to process *progressive* video when the ProcAmp control hardware cannot perform color space conversion and cannot horizontally resize the video image during a ProcAmp adjustment operation (as indicated by the DXVA\_VideoProcess\_YUV2RGB and DXVA\_VideoProcess\_StretchX enumerators in [**DXVA\_VideoProcessCaps**](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_videoprocesscaps)), but does support YUV textures.
 
 ![diagram illustrating hardware that cannot perform color space conversion and cannot resize horizontally but can support yuv textures](images/procamp2.png)
 
-The following illustration shows the video pipelines used by the VMR to process *progressive* video when the ProcAmp control hardware cannot perform color space conversion, cannot horizontally resize the video image during a ProcAmp adjustment operation (as indicated by the DXVA\_VideoProcess\_YUV2RGB and DXVA\_VideoProcess\_StretchX enumerators in [**DXVA\_VideoProcessCaps**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_videoprocesscaps)), and does not support YUV textures.
+The following illustration shows the video pipelines used by the VMR to process *progressive* video when the ProcAmp control hardware cannot perform color space conversion, cannot horizontally resize the video image during a ProcAmp adjustment operation (as indicated by the DXVA\_VideoProcess\_YUV2RGB and DXVA\_VideoProcess\_StretchX enumerators in [**DXVA\_VideoProcessCaps**](/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_videoprocesscaps)), and does not support YUV textures.
 
 ![diagram illustrating hardware that cannot perform color space conversion, cannot resize horizontally, and cannot support yuv textures](images/procamp3.png)
 
 The VMR uses the first pipeline if the application does not request any alpha blending or mirroring of the video image. The VMR uses the second pipeline if the application requests either alpha blending or mirroring of the video image.
 
  
-
- 
-
-
-
-
 

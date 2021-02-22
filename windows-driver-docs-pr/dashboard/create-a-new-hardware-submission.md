@@ -1,7 +1,6 @@
 ---
 title: Create a new hardware submission
 description: Create a new hardware submission
-ms.assetid: 3F433F0A-422C-46E5-B59E-8DB4AC537F01
 ms.date: 04/20/2017
 ms.topic: article
 ms.localizationpriority: medium
@@ -13,9 +12,9 @@ To prepare your hardware for the Windows Hardware Compatibility Program for Wind
 
 ## To create a submission file
 
-For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](https://docs.microsoft.com/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
+For information about creating and digitally signing an **.hlkx** file, see the [Windows HLK Getting Started Guide](/windows-hardware/test/hlk/getstarted/windows-hlk-getting-started).
 
-For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](https://go.microsoft.com/fwlink/p/?LinkId=248436).
+For information about creating and digitally signing an **.hckx** file, see the [Windows HCK Getting Started Guide](/previous-versions/windows/hardware/hck/jj123537(v=vs.85)).
 
 ## To submit a file
 
@@ -28,7 +27,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
 
 4. It is at this point that the submission portal determines what Product Type is being submitted. Then, at the Submission page, the portal presents any questionnaire that may be required for a product being submitted for Windows Server certification. For all products submitted for Windows Server certification or signing where the submission portal presents a questionnaire, you must complete the questionnaire. The submission will not complete unless the questionaire is completed.
 
-5. If you wish to test a driver prior to release, you can select the checkbox labled "Perform test-signing for Win10 and above" OR "Perform test-signing for OS below Win10 (legacy)". Test-signed drivers are similar to drivers signed for public release, but do not require HLK testing. They are also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](https://docs.microsoft.com/windows-hardware/drivers/install/whql-test-signature-program) and [How to test-sign a driver package](https://docs.microsoft.com/windows-hardware/drivers/install/how-to-test-sign-a-driver-package).
+5. If you wish to test a driver prior to release, you can select the checkbox labled "Perform test-signing for Win10 and above" OR "Perform test-signing for OS below Win10 (legacy)". Test-signed drivers are similar to drivers signed for public release, but do not require HLK testing. They are also not distributed through Windows Update, but can be downloaded from the hardware submission site. They can be installed on test machines only. For more information about test-signing driver packages, see [WHQL Test Signature Program](../install/whql-test-signature-program.md) and [How to test-sign a driver package](../install/how-to-test-sign-a-driver-package.md).
 
 6. If you wish to flight sign a driver prior to release, you can select the checkbox labled "Perform flight signing only". Flight signed drivers are signed with Microsoft Developer Test certificate used and trusted by all “Insider” builds. Retail systems do NOT have this certificate. Drivers that are Flight signed can only be installed on *Windows 10 Insider Builds*. This means it will not be offered or installable on RETAIL builds of Windows 10. Flight signed drivers work with “Secure Boot” enabled. Flight signing is only applicable to Windows 10 RS2 and above and will not work on lower versions of Windows. _this feature is currently being rolled out gradually and might not yet be visible to everyone. If you do not yet see it, please wait and you will see it in a few more weeks._
 
@@ -62,7 +61,7 @@ For information about creating and digitally signing an **.hckx** file, see the 
    <tr class="odd">
    <td><p>Device metadata category</p></td>
    <td><p>Select an icon for your device from a list of default icons based on your device category. This determines which icon appears in Devices and Printers. If your device should not appear, select "Internal device".</p>
-   <p>For information about delivering a rich experience with Windows Device Stage, see <a href="https://docs.microsoft.com/windows-hardware/drivers/dashboard/" data-raw-source="[Device Metadata](https://docs.microsoft.com/windows-hardware/drivers/dashboard/)">Device Metadata</a>.</p></td>
+   <p>For information about delivering a rich experience with Windows Device Stage, see <a href="/windows-hardware/drivers/dashboard/" data-raw-source="[Device Metadata](./index.yml)">Device Metadata</a>.</p></td>
    </tr>
    <tr class="even">
    <td><p>Device metadata model ID</p></td>

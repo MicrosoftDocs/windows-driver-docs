@@ -1,7 +1,6 @@
 ---
 title: Determining the Vertex Buffer Data Format
 description: Determining the Vertex Buffer Data Format
-ms.assetid: e10604f9-e800-40ff-a0e1-0f9389340e9c
 keywords:
 - vertex format WDK Direct3D
 - flexible vertex format WDK Direct3D
@@ -48,7 +47,7 @@ If projected textures are being used, the D3DTTFF\_PROJECTED flag is set to indi
 
 ### <span id="ddk_fvf_vertex_data_components_gg"></span><span id="DDK_FVF_VERTEX_DATA_COMPONENTS_GG"></span>FVF Vertex Data Components
 
-The driver determines which components are present by analyzing the flags specified in the **dwVertexType** member of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_drawprimitives2data) structure. The following table indicates the bitfields that can be set in **dwVertexType** and the components that they identify:
+The driver determines which components are present by analyzing the flags specified in the **dwVertexType** member of the [**D3DHAL\_DRAWPRIMITIVES2DATA**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_drawprimitives2data) structure. The following table indicates the bitfields that can be set in **dwVertexType** and the components that they identify:
 
 <table>
 <colgroup>

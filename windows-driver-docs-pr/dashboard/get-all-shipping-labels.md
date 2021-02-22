@@ -1,8 +1,6 @@
 ---
 title: Get all shipping labels for a submission
 description: These methods from the Microsoft Hardware APIs get data for shipping labels of hardware products registered to your Hardware dashboard Account.
-author: balapv
-ms.author: balapv
 ms.topic: article
 ms.date: 08/21/2018
 ---
@@ -21,7 +19,7 @@ This method has the following syntax. See the following sections for usage examp
 
 |Method|Request URI|
 |--|--|
-|GET|`https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
+|GET|`https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/{productId}/submissions/{submissionId}/shippingLabels/`|
 
 ### Request header
 
@@ -43,7 +41,7 @@ Do not provide a request body for this method.
 The following example demonstrates how to retrieve information about all products that are registered to your account.
 
 ```cpp
-GET https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/ HTTP/1.1
+GET https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/ HTTP/1.1
 Authorization: Bearer <your access token>
 ```
 ## Response
@@ -85,12 +83,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
+          "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
+          "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606980231",
           "rel": "update_shippinglabel",
           "method": "PATCH"
         }
@@ -113,12 +111,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
+          "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
+          "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978460",
           "rel": "update_shippinglabel",
           "method": "PATCH"
         }
@@ -145,12 +143,12 @@ The following example demonstrates the JSON response body returned by a successf
       },
       "links": [
         {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
+          "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
           "rel": "self",
           "method": "GET"
         },
         {
-          "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
+          "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products/14461751976964157/submissions/1152921504621467613/shippingLabels/1152921504606978538",
           "rel": "update_shippinglabel",
           "method": "PATCH"
         }
@@ -161,7 +159,7 @@ The following example demonstrates the JSON response body returned by a successf
   ],
   "links": [
     {
-      "href": "https://manage.devcenter.microsoft.com/v1.0/my/hardware/products?pageSize=50",
+      "href": "https://manage.devcenter.microsoft.com/v2.0/my/hardware/products?pageSize=50",
       "rel": "self",
       "method": "GET"
     }

@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PLATEN\_COLOR
 description: The WIA\_DPS\_PLATEN\_COLOR property contains the current platen color.
-ms.assetid: d1bc9bc8-ad23-48b8-8456-21aa3556ab69
 keywords: ["WIA_DPS_PLATEN_COLOR Imaging Devices"]
 topic_type:
 - apiref

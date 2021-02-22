@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_DRM_DESCRAMBLE
 description: KSCATEGORY_DRM_DESCRAMBLE
-ms.assetid: 3bb6887f-4fc9-452e-bceb-35fe26844ac5
 keywords: ["KSCATEGORY_DRM_DESCRAMBLE Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_DRM_DESCRAMBLE
 
 
-The KSCATEGORY_DRM_DESCRAMBLE [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category that unscrambles a DRM-protected wave stream.
+The KSCATEGORY_DRM_DESCRAMBLE [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category that unscrambles a DRM-protected wave stream.
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_DRM_DESCRAMBLE to indicate to the operating system that the devices support the KSCATEGORY_DRM_DESCRAMBLE functional category.
 
-For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter).
+For more information about this functional category, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
 Requirements
 ------------
@@ -73,10 +72,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

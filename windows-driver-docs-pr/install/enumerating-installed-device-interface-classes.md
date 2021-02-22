@@ -1,7 +1,6 @@
 ---
 title: Enumerating Installed Device Interfaces
 description: Enumerating Installed Device Interfaces
-ms.assetid: 14A9E6DD-58A9-4af0-B469-7CCF4596BE27
 keywords:
 - enumerating installed device interfaces WDK
 - installed device interfaces WDK
@@ -20,19 +19,13 @@ Use the following guidelines to safely discover the attributes of device interfa
 
 -   User-mode applications should follow these steps:
 
-    1.  Use [**SetupDiGetClassDevs**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsw) or [**SetupDiGetClassDevsEx**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to retrieve the devices that support interfaces for the specified device interface class. You must set the DIGCF_DEVICEINTERFACE flag in the *Flags* parameter, and you must set the *Enumerator* parameter to a specific device instance identifier.
+    1.  Use [**SetupDiGetClassDevs**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) or [**SetupDiGetClassDevsEx**](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsexa) to retrieve the devices that support interfaces for the specified device interface class. You must set the DIGCF_DEVICEINTERFACE flag in the *Flags* parameter, and you must set the *Enumerator* parameter to a specific device instance identifier.
 
         To include only device interfaces that are present in a system, set the DIGCF_PRESENT flag in the *Flags* parameter.
 
-    2.  Use [**SetupDiEnumDeviceInterfaces**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate interfaces that are registered for a device interface class. This interface class is specified through the *InterfaceClassGuid* parameter.
+    2.  Use [**SetupDiEnumDeviceInterfaces**](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) to enumerate interfaces that are registered for a device interface class. This interface class is specified through the *InterfaceClassGuid* parameter.
 
--   Kernel-mode drivers should use [**IoGetDeviceInterfaces**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to enumerate the device interface classes that are installed in the system.
-
- 
+-   Kernel-mode drivers should use [**IoGetDeviceInterfaces**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces) to enumerate the device interface classes that are installed in the system.
 
  
-
-
-
-
 

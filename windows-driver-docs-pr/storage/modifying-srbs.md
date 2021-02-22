@@ -1,7 +1,6 @@
 ---
 title: Modifying SRBs
 description: Modifying SRBs
-ms.assetid: 9077cfab-c17c-4c8e-9740-0895f227fb4b
 keywords:
 - SCSI miniport drivers WDK storage , HwScsiStartIo
 - HwScsiStartIo
@@ -26,7 +25,7 @@ Otherwise, a SCSI miniport driver can write values into SRBs *only* for the foll
 
 - If the miniport driver supports more than eight logical units, to set the **Lun** member to the logical unit number
 
-If the HBA can handle more than eight logical units, as indicated when *HwScsiFindAdapter* sets up the [PORT_CONFIGURATION_INFORMATION](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information), the port driver does not interpret LUN information. The miniport driver is responsible for mapping the 8-bit LUN from an SRB to a SCSI-3 address if necessary.
+If the HBA can handle more than eight logical units, as indicated when *HwScsiFindAdapter* sets up the [PORT_CONFIGURATION_INFORMATION](/windows-hardware/drivers/ddi/srb/ns-srb-_port_configuration_information), the port driver does not interpret LUN information. The miniport driver is responsible for mapping the 8-bit LUN from an SRB to a SCSI-3 address if necessary.
 
 The mapping from the 8-bit LUN to SCSI-3 address is miniport driver-specific. The following tables show the recommended mapping, where *P* is the physical addressing mode, *B* is the bus, and *T* is the target.
 

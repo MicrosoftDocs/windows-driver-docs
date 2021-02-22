@@ -1,7 +1,6 @@
 ---
 title: .effmach (Effective Machine)
 description: The .effmach command displays or changes the processor mode that the debugger uses.
-ms.assetid: bf4dfdc0-2f0b-416a-8bf2-0e7d81339905
 keywords: ["Effective Machine (.effmach) command", ".effmach (Effective Machine) Windows Debugging"]
 ms.date: 01/24/2018
 topic_type:

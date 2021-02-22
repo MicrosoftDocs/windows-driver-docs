@@ -1,7 +1,6 @@
 ---
 title: Identifiers for PCMCIA Devices
 description: Identifiers for PCMCIA Devices
-ms.assetid: 7eaf6372-a9cc-4714-8955-52653ec57141
 keywords:
 - device identification strings WDK , PCMCIA devices
 - identification strings WDK device , PCMCIA devices

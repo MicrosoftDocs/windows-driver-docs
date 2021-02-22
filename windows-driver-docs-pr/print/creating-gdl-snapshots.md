@@ -1,7 +1,6 @@
 ---
 title: Creating GDL Snapshots
 description: Creating GDL Snapshots
-ms.assetid: 20430458-b1e5-490a-90c8-a0abe3892cfe
 keywords:
 - GDL WDK , snapshots
 - snapshots WDK GDL

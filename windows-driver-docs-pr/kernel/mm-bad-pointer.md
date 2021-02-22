@@ -1,7 +1,6 @@
 ---
 title: Windows kernel macros
 description: Windows kernel macros
-ms.assetid: 91366400-3307-4F13-A839-50BA85B7F73E
 ms.localizationpriority: High
 ms.date: 10/17/2018
 ---
@@ -134,7 +133,7 @@ IRQL: Any level
 
 Defined in: Wdm.h
 
-\nThe **IoSkipCurrentIrpStackLocation** macro modifies the system's [**IO_STACK_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) array pointer, so that when the current driver calls the next-lower driver, that driver receives the same **IO_STACK_LOCATION** structure that the current driver received.
+\nThe **IoSkipCurrentIrpStackLocation** macro modifies the system's [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) array pointer, so that when the current driver calls the next-lower driver, that driver receives the same **IO_STACK_LOCATION** structure that the current driver received.
 
 _Irp [in, out]_
 
@@ -146,15 +145,15 @@ A pointer to the IRP.
 
 **VOID**
 
-When your driver sends an IRP to the next-lower driver, your driver can call **IoSkipCurrentIrpStackLocation** if you do not intend to provide an [_IoCompletion_](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine (the address of which is stored in the driver's [**IO_STACK_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure). If you call **IoSkipCurrentIrpStackLocation** before calling [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver), the next-lower driver receives the same **IO_STACK_LOCATION** that your driver received.
+When your driver sends an IRP to the next-lower driver, your driver can call **IoSkipCurrentIrpStackLocation** if you do not intend to provide an [_IoCompletion_](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine) routine (the address of which is stored in the driver's [**IO_STACK_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure). If you call **IoSkipCurrentIrpStackLocation** before calling [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver), the next-lower driver receives the same **IO_STACK_LOCATION** that your driver received.
 
-If you intend to provide an _IoCompletion_ routine for the IRP, your driver should call [**IoCopyCurrentIrpStackLocationToNext**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) instead of **IoSkipCurrentIrpStackLocation**. If a badly written driver makes the mistake of calling **IoSkipCurrentIrpStackLocation** and then setting a completion routine, this driver might overwrite a completion routine set by the driver below it.
+If you intend to provide an _IoCompletion_ routine for the IRP, your driver should call [**IoCopyCurrentIrpStackLocationToNext**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext) instead of **IoSkipCurrentIrpStackLocation**. If a badly written driver makes the mistake of calling **IoSkipCurrentIrpStackLocation** and then setting a completion routine, this driver might overwrite a completion routine set by the driver below it.
 
 If the driver has pended an IRP, the driver should not be calling **IoSkipCurrentIrpStackLocation** before it passes the IRP to the next lower driver. If the driver calls **IoSkipCurrentIrpStackLocation** on a pended IRP before passing it to the next lower driver, the SL_PENDING_RETURNED flag is still set in the **Control** member of the I/O stack location for the next driver. Because the next driver owns that stack location and might modify it, it could potentially clear the pending flag. This situation might cause the operating system to issue a bug check or the processing of the IRP to never be completed.
 
 Instead, a driver that has pended an IRP should call **IoCopyCurrentIrpStackLocationToNext** to set up a new stack location for the next lower driver before it calls **IoCallDriver**.
 
-If your driver calls **IoSkipCurrentIrpStackLocation**, be careful not to modify the **IO_STACK_LOCATION** structure in a way that could unintentionally affect the lower driver or the system's behavior with respect to that driver. Examples include modifying the **IO_STACK_LOCATION** structure's **Parameters** union or calling [**IoMarkIrpPending**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending).
+If your driver calls **IoSkipCurrentIrpStackLocation**, be careful not to modify the **IO_STACK_LOCATION** structure in a way that could unintentionally affect the lower driver or the system's behavior with respect to that driver. Examples include modifying the **IO_STACK_LOCATION** structure's **Parameters** union or calling [**IoMarkIrpPending**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iomarkirppending).
 
 Available starting with Windows 2000.
 
@@ -165,7 +164,7 @@ IRQL: Any level
 
 Defined in: Wdm.h
 
-The **KeInitializeCallbackRecord** macro initializes a [**KBUGCHECK_CALLBACK_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) or [**KBUGCHECK_REASON_CALLBACK_RECORD**](https://docs.microsoft.com/windows-hardware/drivers/kernel/eprocess) structure.
+The **KeInitializeCallbackRecord** macro initializes a [**KBUGCHECK_CALLBACK_RECORD**](./eprocess.md) or [**KBUGCHECK_REASON_CALLBACK_RECORD**](./eprocess.md) structure.
 
 _CallbackRecord [in]_
 
@@ -204,7 +203,7 @@ In fact, **MM_BAD_POINTER** is the base address of an entire page of invalid add
 
 Starting with Windows 8.1, the **MM_BAD_POINTER** macro is defined in the Wdm.h header file. However, driver code that uses this macro definition can run in previous versions of Windows starting with Windows Vista.
 
-Starting with Windows Vista, the [**MmBadPointer**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm64bitphysicaladdress) global variable is available as a pointer to a pointer value that is guaranteed to be an invalid address. However, starting with Windows 8.1, the use of **MmBadPointer** is deprecated, and you should update your drivers to use the **MM_BAD_POINTER** macro instead.
+Starting with Windows Vista, the [**MmBadPointer**](./mm64bitphysicaladdress.md) global variable is available as a pointer to a pointer value that is guaranteed to be an invalid address. However, starting with Windows 8.1, the use of **MmBadPointer** is deprecated, and you should update your drivers to use the **MM_BAD_POINTER** macro instead.
 
 Available starting with Windows 8.1\. Compatible with previous versions of Windows starting with Windows Vista._
 
@@ -219,13 +218,13 @@ _Mdl [in]_
 
 **PMDL**
 
-A pointer to an [**MDL**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) structure that describes the layout of a virtual memory buffer in physical memory. For more information, see [Using MDLs](using-mdls.md).
+A pointer to an [**MDL**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl) structure that describes the layout of a virtual memory buffer in physical memory. For more information, see [Using MDLs](using-mdls.md).
 
 **Return value**
 
 **ULONG**
 
-## **MmGetMdlByteCount** returns the length, in bytes, of the buffer described by _Mdl_.
+**MmGetMdlByteCount** returns the length, in bytes, of the buffer described by _Mdl_.
 
 Callers of **MmGetMdlByteCount** can be running at any IRQL. Usually, callers are running at IRQL <= DISPATCH_LEVEL.
 
@@ -250,7 +249,7 @@ Pointer to an MDL.
 
 **ULONG**
 
-## **MmGetMdlByteOffset** returns the offset in bytes.
+**MmGetMdlByteOffset** returns the offset in bytes.
 
 Callers of **MmGetMdlByteOffset** can be running at any IRQL. Usually, callers are running at IRQL <= DISPATCH_LEVEL.
 
@@ -281,7 +280,7 @@ A pointer to the beginning of the array of physical page numbers associated with
 
 **Note** Changing the contents of the array can cause subtle system problems that are difficult to diagnose. We recommend that you do not read or change the contents of this array.
 
-For pageable memory, the contents of the array are valid only for a buffer locked with [**MmProbeAndLockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages). For nonpaged pool, the contents of the array are valid only for an MDL updated with [**MmBuildMdlForNonPagedPool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool), [**MmAllocatePagesForMdlEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdlex), or [**MmAllocatePagesForMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl).
+For pageable memory, the contents of the array are valid only for a buffer locked with [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages). For nonpaged pool, the contents of the array are valid only for an MDL updated with [**MmBuildMdlForNonPagedPool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool), [**MmAllocatePagesForMdlEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdlex), or [**MmAllocatePagesForMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl).
 
 For more information about MDLs, see [Using MDLs](using-mdls.md).
 
@@ -306,11 +305,11 @@ Pointer to an MDL that describes the buffer for which to return the initial virt
 
 **PVOID**
 
-## **MmGetMdlVirtualAddress** returns the starting virtual address of the MDL.
+**MmGetMdlVirtualAddress** returns the starting virtual address of the MDL.
 
 **MmGetMdlVirtualAddress** returns a virtual address that is not necessarily valid in the current thread context. Lower-level drivers should not attempt to use the returned virtual address to access memory, particularly user memory space.
 
-The returned address, used as an index to a physical address entry in the MDL, can be input to [**MapTransfer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer).
+The returned address, used as an index to a physical address entry in the MDL, can be input to [**MapTransfer**](/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer).
 
 Callers of **MmGetMdlVirtualAddress** can be running at any IRQL. Usually, the caller is running at IRQL = DISPATCH_LEVEL because this routine is commonly called to obtain the _CurrentVa_ parameter to **MapTransfer**.
 
@@ -333,7 +332,7 @@ Pointer to a buffer whose corresponding base virtual address is to be mapped.
 
 _Priority [in]_
 
-## **Mm_PAGE_PRIORITY**
+**MM_PAGE_PRIORITY**
 
 Specifies an **MM_PAGE_PRIORITY** value that indicates the importance of success under low available PTE conditions. Specify a priority value of **LowPagePriority**, **NormalPagePriority**, or **HighPagePriority**. Starting with Windows 8, the specified priority value can be bitwise-ORed with the **MdlMappingNoWrite** or **MdlMappingNoExecute** flags.
 
@@ -357,21 +356,21 @@ This routine maps the physical pages that are described by the specified MDL int
 
 Drivers of programmed-I/O (PIO) devices call this routine to map a user-mode buffer, which is described by the MDL at **Irp->MdlAddress** and which is already mapped to a user-mode virtual address range, to a range in system address space.
 
-On entry to this routine, the specified MDL must describe physical pages that are locked down. A locked-down MDL can be built by using the [**MmProbeAndLockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), [**MmBuildMdlForNonPagedPool**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool), [**IoBuildPartialMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl), or [**MmAllocatePagesForMdlEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdlex) routine.
+On entry to this routine, the specified MDL must describe physical pages that are locked down. A locked-down MDL can be built by using the [**MmProbeAndLockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages), [**MmBuildMdlForNonPagedPool**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmbuildmdlfornonpagedpool), [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl), or [**MmAllocatePagesForMdlEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdlex) routine.
 
 When the system-address-space mapping that is returned by **MmGetSystemAddressForMdlSafe** is no longer needed, it must be released. The steps that are required to release the mapping depend on how the MDL was built. These are the four possible cases:
 
-*   If the MDL was built by a call to the **MmProbeAndLockPages** routine, it is not necessary to explicitly release the system-address-space mapping. Instead, a call to the [**MmUnlockPages**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunlockpages) routine releases the mapping, if one was allocated.
+*   If the MDL was built by a call to the **MmProbeAndLockPages** routine, it is not necessary to explicitly release the system-address-space mapping. Instead, a call to the [**MmUnlockPages**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunlockpages) routine releases the mapping, if one was allocated.
 
 *   If the MDL was built by a call to the **MmBuildMdlForNonPagedPool** routine, **MmGetSystemAddressForMdlSafe** reuses the existing system-address-space mapping instead of creating a new one. In this case, no cleanup is required (that is, unlocking and unmapping are not necessary).
 
-*   If the MDL was built by a call to the **IoBuildPartialMdl** routine, the driver must call either the [**MmPrepareMdlForReuse**](https://docs.microsoft.com/windows-hardware/drivers/kernel/mm-bad-pointer) routine or the [**IoFreeMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreemdl) routine to release the system-address-space mapping.
+*   If the MDL was built by a call to the **IoBuildPartialMdl** routine, the driver must call either the **MmPrepareMdlForReuse** routine or the [**IoFreeMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iofreemdl) routine to release the system-address-space mapping.
 
 *   If the MDL was built by a call to the **MmAllocatePagesForMdlEx** routine, the driver must call the **MmUnmapLockedPages** routine to release the system-address-space mapping. If **MmGetSystemAddressForMdlSafe** is called more than one time for an MDL, subsequent **MmGetSystemAddressForMdlSafe** calls simply return the mapping that was created by the first call. One call to **MmUnmapLockedPages** is sufficient to release this mapping.
 
-Starting with Windows 7 and Windows Server 2008 R2, it is not necessary to explicitly call **MmUnmapLockedPages** for an MDL that was created by **MmAllocatePagesForMdlEx**. Instead, a call to the [**MmFreePagesFromMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreepagesfrommdl) routine releases the system-address-space mapping, if one was allocated.
+Starting with Windows 7 and Windows Server 2008 R2, it is not necessary to explicitly call **MmUnmapLockedPages** for an MDL that was created by **MmAllocatePagesForMdlEx**. Instead, a call to the [**MmFreePagesFromMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmfreepagesfrommdl) routine releases the system-address-space mapping, if one was allocated.
 
-To create a new system-address-space mapping, **MmGetSystemAddressForMdlSafe** calls **MmMapLockedPagesSpecifyCache** with the _CacheType_ parameter set to **MmCached**. A driver that requires a cache type other than **MmCached** should call **MmMapLockedPagesSpecifyCache** directly instead of calling **MmGetSystemAddressForMdlSafe**. For more information about the _CacheType_ parameter, see [**MmMapLockedPagesSpecifyCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpagesspecifycache).
+To create a new system-address-space mapping, **MmGetSystemAddressForMdlSafe** calls **MmMapLockedPagesSpecifyCache** with the _CacheType_ parameter set to **MmCached**. A driver that requires a cache type other than **MmCached** should call **MmMapLockedPagesSpecifyCache** directly instead of calling **MmGetSystemAddressForMdlSafe**. For more information about the _CacheType_ parameter, see [**MmMapLockedPagesSpecifyCache**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpagesspecifycache).
 
 In a call to **MmMapLockedPagesSpecifyCache**, the specified cache type is used only if the pages that are described by the MDL do not already have a cache type associated with them. However, in nearly all cases, the pages already have an associated cache type, and this cache type is used by the new mapping. An exception to this rule is for pages that are allocated by **MmAllocatePagesForMdl**, which sets the cache type to **MmCached** regardless of the original cache type of the pages.
 
@@ -381,9 +380,9 @@ If a driver must split a request into smaller requests, the driver can allocate 
 
 The returned base address has the same offset as the virtual address in the MDL.
 
-Windows 98 does not support **MmGetSystemAddressForMdlSafe**. Use [**MmGetSystemAddressForMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdl) instead.
+Windows 98 does not support **MmGetSystemAddressForMdlSafe**. Use [**MmGetSystemAddressForMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetsystemaddressformdl) instead.
 
-Because this macro calls [**MmMapLockedPagesSpecifyCache**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpagesspecifycache), using it may require linking to NtosKrnl.lib.
+Because this macro calls [**MmMapLockedPagesSpecifyCache**](/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpagesspecifycache), using it may require linking to NtosKrnl.lib.
 
 Available starting with Windows 2000.
 
@@ -441,9 +440,9 @@ A pointer to a partial MDL that is to be prepared for reuse.
 
 **VOID**
 
-This macro is used by drivers that repeatedly use the same allocated MDL for the _TargetMdl_ parameter in calls to the [**IoBuildPartialMdl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) routine. If, in a call to **MmPrepareMdlForReuse**, the specified partial MDL has an associated mapping to system address space, **MmPrepareMdlForReuse** releases the mapping so that the MDL can be reused.
+This macro is used by drivers that repeatedly use the same allocated MDL for the _TargetMdl_ parameter in calls to the [**IoBuildPartialMdl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildpartialmdl) routine. If, in a call to **MmPrepareMdlForReuse**, the specified partial MDL has an associated mapping to system address space, **MmPrepareMdlForReuse** releases the mapping so that the MDL can be reused.
 
-**MmPrepareMdlForReuse** accepts only partial MDLs that are built by **IoBuildPartialMdl**. If **MmPrepareMdlForReuse** receives an MDL that is mapped to the system address space but was not built by **IoBuildPartialMdl**, **MmPrepareMdlForReuse** does not release the mapping, and, in checked builds, causes an assertion to fail.
+**MmPrepareMdlForReuse** accepts only partial MDLs that are built by **IoBuildPartialMdl**. If **MmPrepareMdlForReuse** receives an MDL that is mapped to the system address space but was not built by **IoBuildPartialMdl**, **MmPrepareMdlForReuse** does not release the mapping.
 
 For more information about partial MDLs, see [Using MDLs](using-mdls.md).
 
@@ -468,7 +467,7 @@ Pointer to the virtual address.
 
 **PVOID**
 
-## **PAGE_ALIGN** returns a pointer to the page-aligned virtual address.
+**PAGE_ALIGN** returns a pointer to the page-aligned virtual address.
 
 Available starting with Windows 2000.
 
@@ -489,7 +488,7 @@ If the IRQL > APC_LEVEL, the **PAGED_CODE** macro causes the system to ASSERT.
 
 A call to this macro should be made at the beginning of every driver routine that either contains pageable code or accesses pageable code.
 
-The **PAGED_CODE** macro checks the IRQL only at the point at which the driver code executes the macro. If the code subsequently raises the IRQL, the macro will not detect this change. Driver developers should use [Static Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier) and [Driver Verifier](https://docs.microsoft.com/windows-hardware/drivers/devtest/driver-verifier) to detect when the IRQL is raised improperly during the execution of a driver routine.
+The **PAGED_CODE** macro checks the IRQL only at the point at which the driver code executes the macro. If the code subsequently raises the IRQL, the macro will not detect this change. Driver developers should use [Static Driver Verifier](../devtest/static-driver-verifier.md) and [Driver Verifier](../devtest/driver-verifier.md) to detect when the IRQL is raised improperly during the execution of a driver routine.
 
 The **PAGED_CODE** macro works only in checked builds.
 
@@ -521,15 +520,15 @@ _IdlePointer [in, out]_
 
 **PULONG**
 
-Specifies a non-**NULL** idle pointer that was previously returned by [**PoRegisterDeviceForIdleDetection**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection). Note that **PoRegisterDeviceForIdleDetection** might return a **NULL** pointer. A caller of **PoSetDeviceBusy** must verify that the pointer is non-**NULL** before passing it to **PoSetDeviceBusy**.
+Specifies a non-**NULL** idle pointer that was previously returned by [**PoRegisterDeviceForIdleDetection**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection). Note that **PoRegisterDeviceForIdleDetection** might return a **NULL** pointer. A caller of **PoSetDeviceBusy** must verify that the pointer is non-**NULL** before passing it to **PoSetDeviceBusy**.
 
 **Return value**
 
 **VOID**
 
-**Note** The [**PoSetDeviceBusyEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetdevicebusyex) routine is a direct replacement for the **PoSetDeviceBusy** macro. If you are writing new driver code for Windows Vista with Service Pack 1 (SP1) and later versions of Windows, call **PoSetDeviceBusyEx** instead of **PoSetDeviceBusy**.
+**Note** The [**PoSetDeviceBusyEx**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-posetdevicebusyex) routine is a direct replacement for the **PoSetDeviceBusy** macro. If you are writing new driver code for Windows Vista with Service Pack 1 (SP1) and later versions of Windows, call **PoSetDeviceBusyEx** instead of **PoSetDeviceBusy**.
 
-A driver uses **PoSetDeviceBusy** along with **PoRegisterDeviceForIdleDetection** to enable system idle detection for its device. If a device that is registered for idle detection becomes idle, the power manager sends an [**IRP_MN_SET_POWER**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-set-power) request to put the device in a requested sleep state.
+A driver uses **PoSetDeviceBusy** along with **PoRegisterDeviceForIdleDetection** to enable system idle detection for its device. If a device that is registered for idle detection becomes idle, the power manager sends an [**IRP_MN_SET_POWER**](./irp-mn-set-power.md) request to put the device in a requested sleep state.
 
 **PoSetDeviceBusy** reports that the device is busy, so that the power manager can restart its idle countdown. If the device is not powered up, **PoSetDeviceBusy** does not change its state. That is, it does not cause the system to send a power-on request.
 
@@ -547,6 +546,8 @@ Defined in: Ntddk.h
 Returns a pointer to the process of the current thread.
 
 **Return value**
+
+**PEPROCESS**
 
 A pointer to an opaque process object.
 
@@ -663,7 +664,7 @@ _DestinationString [out]_
 
 **PANSI_STRING**
 
-Pointer to the [**ANSI_STRING**](https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_string) structure to be initialized.
+Pointer to the [**ANSI_STRING**](/windows/win32/api/ntdef/ns-ntdef-string) structure to be initialized.
 
 _Buffer [in]_
 
@@ -689,7 +690,7 @@ The members of the structure that the _DestinationString_ parameter points to ar
 
 *   **Buffer**. _SourceString_.
 
-To initialize a non-empty counted Unicode string, call [**RtlInitAnsiString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitansistring).
+To initialize a non-empty counted Unicode string, call [**RtlInitAnsiString**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitansistring).
 
 Available in Microsoft Windows XP and later versions of Windows.
 
@@ -706,7 +707,7 @@ _DestinationString [out]_
 
 **PUNICODE_STRING**
 
-Pointer to the [**UNICODE_STRING**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
+Pointer to the [**UNICODE_STRING**](/windows-hardware/drivers/ddi/wudfwdm/ns-wudfwdm-_unicode_string) structure to be initialized.
 
 _Buffer [in]_
 
@@ -732,7 +733,7 @@ The members of the structure that the _DestinationString_ parameters points to a
 
 *   **Buffer**. _SourceString_.
 
-To initialize a non-empty counted Unicode string, call [**RtlInitUnicodeString**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitunicodestring).
+To initialize a non-empty counted Unicode string, call [**RtlInitUnicodeString**](/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitunicodestring).
 
 Available starting with Windows XP.
 
@@ -749,7 +750,7 @@ _L1 [in]_
 
 **PLUID**
 
-Specifies the [**LUID**](https://docs.microsoft.com/windows/desktop/api/ntdef/ns-ntdef-_luid) to check.
+Specifies the [**LUID**](/windows/win32/api/ntdef/ns-ntdef-luid) to check.
 
 **Return value**
 
@@ -1046,13 +1047,3 @@ For calls from kernel-mode drivers, the **Nt_Xxx_** and **Zw_Xxx_** versions of 
 All supported operating systems.
 
 IRQL: Any level
-
-
-
-
-
-
-
-
-
-

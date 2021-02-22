@@ -1,7 +1,6 @@
 ---
 title: Writing DbgEng Extensions
 description: Writing DbgEng Extensions
-ms.assetid: 5549b684-8417-415b-ba53-54f90f42e316
 keywords: DbgEng Extensions, debugger extensions 
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -17,13 +16,7 @@ This section includes:
 
 [DbgEng Extension Design Guide](dbgeng-extension-design-guide.md)
 
-[DbgEng Extension Reference](https://docs.microsoft.com/previous-versions/ff540395(v=vs.85))
+[DbgEng Extension Reference](/previous-versions/ff540395(v=vs.85))
 
  
-
- 
-
-
-
-
 

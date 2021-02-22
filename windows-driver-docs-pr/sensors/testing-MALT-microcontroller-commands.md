@@ -1,8 +1,6 @@
 ---
 title: Microcontroller Commands for MALT
-author: windows-driver-content
 description: This topic defines commands between the PC and the microcontroller (Arduino) that is controlling the sensors in the MALT.
-ms.assetid: 38b9c6fc-f13c-4af5-90ab-d9931dc9b7f1
 ms.date: 12/13/2018
 ms.localizationpriority: medium
 ---

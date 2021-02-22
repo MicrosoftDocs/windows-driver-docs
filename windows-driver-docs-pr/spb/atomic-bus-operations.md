@@ -1,7 +1,6 @@
 ---
 title: Atomic Bus Operations
 description: To use certain hardware capabilities of an SPB-connected peripheral device, a client of the SPB controller (that is, a peripheral driver) might need to perform a sequence of data transfers to and from the device as an atomic bus operation.
-ms.assetid: F8CD670F-C817-40BF-AF4B-5F3839E46EFB
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -16,7 +15,7 @@ The typical way for a client to perform a transfer sequence as an atomic bus ope
 ## SPB controller locks
 
 
-A less common way to perform an atomic transfer sequence is to use an SPB controller lock. A client sends an [**IOCTL\_SPB\_LOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450858) request to acquire the lock, and an [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450859) request to release the lock. When a client holds the controller lock, any sequence of simple read and write ([**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read) and [**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write)) requests that the client sends to the device are performed as an atomic operation on the bus.
+A less common way to perform an atomic transfer sequence is to use an SPB controller lock. A client sends an [**IOCTL\_SPB\_LOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450858) request to acquire the lock, and an [**IOCTL\_SPB\_UNLOCK\_CONTROLLER**](https://msdn.microsoft.com/library/windows/hardware/hh450859) request to release the lock. When a client holds the controller lock, any sequence of simple read and write ([**IRP\_MJ\_READ**](../kernel/irp-mj-read.md) and [**IRP\_MJ\_WRITE**](../kernel/irp-mj-write.md)) requests that the client sends to the device are performed as an atomic operation on the bus.
 
 Most SPB-connected peripheral devices do not require controller locks, and most SPB controller drivers do not implement support for these locks. However, a few clients might need to use controller locks to access devices that have unusual features.
 
@@ -31,7 +30,7 @@ After the read operation in the preceding list, the client interprets the data t
 
 However, few SPB-connected devices have features that require controller locks. For most devices that require atomic bus operations, [**IOCTL\_SPB\_EXECUTE\_SEQUENCE**](https://msdn.microsoft.com/library/windows/hardware/hh450857) requests are sufficient.
 
-Do not confuse SPB controller locks with SPB connection locks. In the atypical case in which two clients share access to the same SPB-connected peripheral device, either client can use a connection lock to temporarily obtain exclusive access to the device. For more information, see [SPB Connection Locks](https://docs.microsoft.com/windows-hardware/drivers/spb/spb-connection-locks).
+Do not confuse SPB controller locks with SPB connection locks. In the atypical case in which two clients share access to the same SPB-connected peripheral device, either client can use a connection lock to temporarily obtain exclusive access to the device. For more information, see [SPB Connection Locks](./spb-connection-locks.md).
 
 ## Hardware bus signals
 
@@ -54,7 +53,7 @@ For example, an I²C peripheral device might contain the following two internal 
 
 The I²C peripheral device in this example interprets the first byte written to the device after a start bit to be a function address to load into the function-address register. Any additional bytes transferred to or from the device before the sequence ends (as indicated by the stop bit) are treated by the device as data to be transferred through the data register.
 
-To perform a write operation, the client sends a write ([**IRP\_MJ\_WRITE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-write)) request in which the first byte in the write buffer is the function address, and the remaining bytes in the buffer are data to be written to the function address.
+To perform a write operation, the client sends a write ([**IRP\_MJ\_WRITE**](../kernel/irp-mj-write.md)) request in which the first byte in the write buffer is the function address, and the remaining bytes in the buffer are data to be written to the function address.
 
 Reading from the device is more complicated. Assume that the I²C device in this example supports a "fast read" feature that automatically resets the function-address register to its default value, 0, when a stop bit is detected on the bus. With this feature, the client can read the data from the function address 0 without first having to write to the function-address register. This feature can improve the speed of device read operations, especially if most reads are from function address 0 and are relatively short.
 
@@ -67,12 +66,7 @@ The following list describes the series of I/O requests that a client sends to t
 
 Other patterns of requests might be used instead to perform this read-modify-write operation. For example, the **IRP\_MJ\_WRITE** request in step 2 can be replaced by an **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request that specifies two data transfers, both of which are writes. The first transfer in the sequence loads a byte into the function-address register. The second transfer writes the data bytes to the selected function address. This request, unlike the **IRP\_MJ\_WRITE** request in step 2, does not require the client to combine the function-address byte and data bytes in the same write buffer.
 
-To perform a read-modify-write on function address 0 in this device, the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request in step 1 of the previous list can be replaced by a simple read ([**IRP\_MJ\_READ**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mj-read)) request.
+To perform a read-modify-write on function address 0 in this device, the **IOCTL\_SPB\_EXECUTE\_SEQUENCE** request in step 1 of the previous list can be replaced by a simple read ([**IRP\_MJ\_READ**](../kernel/irp-mj-read.md)) request.
 
  
-
- 
-
-
-
 

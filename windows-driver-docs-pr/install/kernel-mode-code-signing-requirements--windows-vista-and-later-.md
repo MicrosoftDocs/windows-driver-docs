@@ -1,7 +1,6 @@
 ---
 title: Kernel-Mode Code Signing Requirements
 description: Kernel-Mode Code Signing Requirements
-ms.assetid: da02fcb3-d073-42cd-8247-71e2e9e93f65
 keywords:
 - driver signing WDK , kernel-mode code signing requirements
 - signing drivers WDK , kernel-mode code signing requirements
@@ -20,12 +19,12 @@ Starting with Windows Vista, the kernel-mode code signing policy controls wheth
 
 Virtual drivers have the same requirements as actual hardware drivers. In other words, they must comply with the requirements for the OS version for which they are targeted.
 
-For info about signing and dashboard submission, see [Get drivers signed by Microsoft for multiple Windows versions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions).
+For info about signing and dashboard submission, see [Get drivers signed by Microsoft for multiple Windows versions](../dashboard/get-drivers-signed-by-microsoft-for-multiple-windows-versions.md).
 
 ### <a href="" id="kernel-mode-code-signing-requirements-for-public-release-of-a-driver"></a> Kernel-Mode Code Signing Requirements for Public Release of a Driver
 
 > [!NOTE]
-> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Microsoft through the [Hardware Dev Center](https://docs.microsoft.com/windows-hardware/drivers/dashboard/register-for-the-hardware-program).  Valid signatures can be obtained by either [Hardware Certification](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions) or [Attestation](https://docs.microsoft.com/windows-hardware/drivers/dashboard/attestation-signing-a-kernel-driver-for-public-release). 
+> Starting with Windows 10, version 1607, Windows will not load any new kernel mode drivers which are not signed by the Microsoft through the [Hardware Dev Center](../dashboard/register-for-the-hardware-program.md).  Valid signatures can be obtained by either [Hardware Certification](../dashboard/hardware-certification-submissions.md) or [Attestation](../dashboard/attestation-signing-a-kernel-driver-for-public-release.md). 
 
 
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  
@@ -40,14 +39,14 @@ The kernel-mode code signing policy requires that a kernel-mode driver be signed
 <a href="" id="32-bit-versions-of-windows"></a>**32-bit versions of Windows**  
 Windows Vista and later versions of Windows enforce the kernel-mode driver signing policy only for the following drivers:
 
--   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](https://go.microsoft.com/fwlink/p/?linkid=69258)
+-   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](/windows-hardware/test/hlk/)
 
 -   Kernel-mode *boot-start drivers*.
 
 ### <a href="" id="kernel-mode-code-signing-requirements-during-development-and-test"></a> Kernel-Mode Code Signing Requirements during Development and Test
 
 <a href="" id="--------64-bit-versions-of-windows-starting-with-"></a> **64-bit versions of Windows starting with Windows Vista**  
-The kernel-mode code signing policy requires that a kernel-mode driver be [test-signed](test-signing-driver-packages.md) and that test-signing is [enabled](the-testsigning-boot-configuration-option.md). A test signature can be a [WHQL test signature](whql-test-signature-program.md) or generated in-house by a [test certificate](test-certificates.md). Drivers must be test-signed as follows:
+The kernel-mode code signing policy requires that a kernel-mode driver be [test-signed](test-signing-driver-packages.md) and that test-signing is [enabled](the-testsigning-boot-configuration-option.md). A test signature can be a [WHQL test signature](whql-test-signature-program.md) or generated in-house by a [test certificate](./makecert-test-certificate.md). Drivers must be test-signed as follows:
 
 -   A kernel-mode *boot-start driver* must have an embedded test signature. This applies to any type of PnP or non-PnP kernel-mode driver.
 
@@ -56,15 +55,7 @@ The kernel-mode code signing policy requires that a kernel-mode driver be [test-
 <a href="" id="32-bit-versions-of-windows"></a>**32-bit versions of Windows**  
 Windows Vista and later versions of Windows enforce the kernel-mode driver signing policy only for the following drivers:
 
--   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](https://go.microsoft.com/fwlink/p/?linkid=69258)
+-   Drivers that stream protected media. For more information about these requirements, see [Code-signing for Protected Media Components (Windows Vista and Later)](/windows-hardware/test/hlk/)
 
 -   Kernel-mode *boot-start drivers*.
-
- 
-
- 
-
-
-
-
 

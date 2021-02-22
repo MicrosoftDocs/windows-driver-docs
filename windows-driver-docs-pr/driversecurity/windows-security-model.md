@@ -1,7 +1,6 @@
 ---
 title: Windows security model for driver developers
 description: The Windows security model is based primarily on per-object rights, with a small number of system-wide privileges.
-ms.assetid: 3A7ECA7C-1FE6-4ADB-97A9-A61C6FCE9F04
 ms.date: 02/01/2018
 ms.localizationpriority: medium
 ---
@@ -42,16 +41,16 @@ Every process has an access token. The access token describes the complete secur
 
 By default, the system uses the primary access token for a process whenever a thread of the process interacts with a securable object. However, a thread can impersonate a client account. When a thread impersonates, it has an impersonation token in addition to its own primary token. The impersonation token describes the security context of the user account that the thread is impersonating. Impersonation is especially common in Remote Procedure Call (RPC) handling.
 
-An access token that describes a restricted security context for a thread or process is called a restricted token. The SIDs in a *restricted token* can be set only to deny access, not to allow access, to securable objects. In addition, the token can describe a limited set of system-wide privileges. The user’s SID and identity remain the same, but the user’s access rights are limited while the process is using the restricted token. The [CreateRestrictedToken](https://docs.microsoft.com/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) function creates a restricted token.
+An access token that describes a restricted security context for a thread or process is called a restricted token. The SIDs in a *restricted token* can be set only to deny access, not to allow access, to securable objects. In addition, the token can describe a limited set of system-wide privileges. The user’s SID and identity remain the same, but the user’s access rights are limited while the process is using the restricted token. The [CreateRestrictedToken](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) function creates a restricted token.
 
 
 ### Security descriptors
 
 Every named Windows object has a security descriptor; some unnamed objects do, too. The security descriptor describes the owner and group SIDs for the object along with its ACLs.
 
-An object’s security descriptor is usually created by the function that creates the object. When a driver calls the [IoCreateDevice](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) or [IoCreateDeviceSecure](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) routine to create a device object, the system applies a security descriptor to the created device object and sets ACLs for the object. For most devices, ACLs are specified in the device Information (INF) file.
+An object’s security descriptor is usually created by the function that creates the object. When a driver calls the [IoCreateDevice](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) or [IoCreateDeviceSecure](/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiocreatedevicesecure) routine to create a device object, the system applies a security descriptor to the created device object and sets ACLs for the object. For most devices, ACLs are specified in the device Information (INF) file.
 
-For more information [Security Descriptors](https://docs.microsoft.com/windows-hardware/drivers/kernel/security-descriptors) in the kernel driver documentation.
+For more information [Security Descriptors](../kernel/security-descriptors.md) in the kernel driver documentation.
 
 ### Access Control Lists
 
@@ -153,7 +152,7 @@ A privilege is the right for a user to perform a system-related operation on the
 
 Privileges are different from access rights because they apply to system-related tasks and resources rather than objects, and because they are assigned to a user or group by a system administrator, rather than by the operating system.
 
-The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](https://docs.microsoft.com/windows-hardware/drivers/kernel/privileges) in the kernel driver documentation.
+The access token for each process contains a list of the privileges granted to the process. Privileges must be specifically enabled before use. For more information on privilges, see [Privileges](../kernel/privileges.md) in the kernel driver documentation.
 
  
 
@@ -203,15 +202,15 @@ To create a file, a process must have traversal rights to the parent directories
 
 The I/O Manager checks traversal rights when it parses the file name. If the file name is a symbolic link, the I/O Manager resolves it to a full path and then checks traversal rights, starting from the root. For example, assume the symbolic link \\DosDevices\\D maps to the Windows NT device name \\Device\\CDROM0. The process must have traversal rights to the \\Device directory.
 
-For more information, see [Object Handles](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-handles) and [Object Security](https://docs.microsoft.com/windows-hardware/drivers/kernel/object-security).
+For more information, see [Object Handles](../kernel/object-handles.md) and [Object Security](../kernel/access-rights.md).
 
 ### <span id="driver"></span><span id="DRIVER"></span>Security checks in the driver
 
 The operating system kernel treats every driver, in effect, as a file system with its own namespace. Consequently, when a caller attempts to create an object in the device namespace, the I/O Manager checks that the process has traversal rights to the directories in the path. 
 
-With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](https://docs.microsoft.com/windows-hardware/drivers/kernel/controlling-device-namespace-access) and [Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects).
+With WDM drivers, the I/O Manager does not perform security checks against the namespace, unless the Device Object has been created specifying FILE_DEVICE_SECURE_OPEN.  When FILE_DEVICE_SECURE_OPEN is not set, the driver is responsible for ensuring the security of its namespace. For more information, see [Controlling Device Namespace Access](../kernel/controlling-device-namespace-access.md) and [Securing Device Objects](../kernel/controlling-device-access.md).
 
-For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](https://docs.microsoft.com/windows-hardware/drivers/wdf/controlling-device-access-in-kmdf-drivers).
+For WDF drivers, the FILE_DEVICE_SECURE_OPEN flag is always set, so that there will be a check of the device's security descriptor before allowing an application to access any names within the device's namespace. For more information, see [Controlling Device Access in KMDF Drivers](../wdf/controlling-device-access-in-kmdf-drivers.md).
 
 
 
@@ -252,13 +251,6 @@ All inputs coming into the driver from user mode is untrusted and should be vali
 
 ### See Also
 
-[Securing Device Objects](https://docs.microsoft.com/windows-hardware/drivers/kernel/securing-device-objects)
+[Securing Device Objects](../kernel/controlling-device-access.md)
 
 [Driver security checklist](driver-security-checklist.md)
-
-
-
-
-
-
-

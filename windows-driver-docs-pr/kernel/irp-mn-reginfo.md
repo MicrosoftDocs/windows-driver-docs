@@ -2,7 +2,6 @@
 title: IRP_MN_REGINFO
 description: Drivers that support WMI on Microsoft Windows 98 and Microsoft Windows 2000 must handle this IRP.
 ms.date: 08/12/2017
-ms.assetid: db93b64b-a2e4-429d-850e-921fb438467c
 keywords:
  - IRP_MN_REGINFO Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -11,16 +10,17 @@ ms.localizationpriority: medium
 # IRP\_MN\_REGINFO
 
 
-Drivers that support WMI on Microsoft Windows 98 and Microsoft Windows 2000 must handle this IRP. (Drivers that support Windows XP as well must also handle the [**IRP\_MN\_REGINFO\_EX**](irp-mn-reginfo-ex.md) IRP.) A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
+Drivers that support WMI on Microsoft Windows 98 and Microsoft Windows 2000 must handle this IRP. (Drivers that support Windows XP as well must also handle the [**IRP\_MN\_REGINFO\_EX**](irp-mn-reginfo-ex.md) IRP.) A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
 Major Code
 ----------
 
 [**IRP\_MJ\_SYSTEM\_CONTROL**](irp-mj-system-control.md)
+
 When Sent
 ---------
 
-On Windows 98 and Windows 2000, WMI sends this IRP to query or update a driver's registration information after the driver has called [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). On Windows XP and later, WMI sends the **IRP\_MN\_REGINFO\_EX** request instead.
+On Windows 98 and Windows 2000, WMI sends this IRP to query or update a driver's registration information after the driver has called [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). On Windows XP and later, WMI sends the **IRP\_MN\_REGINFO\_EX** request instead.
 
 WMI sends this IRP at IRQL = PASSIVE\_LEVEL in the context of a system thread.
 
@@ -36,21 +36,21 @@ WMI sends this IRP at IRQL = PASSIVE\_LEVEL in the context of a system thread.
 ## Output Parameters
 
 
-If the driver handles WMI IRPs by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI gets registration information for a driver's data blocks by calling its [*DpWmiQueryReginfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_reginfo_callback) routine.
+If the driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI gets registration information for a driver's data blocks by calling its [*DpWmiQueryReginfo*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_reginfo_callback) routine.
 
-Otherwise, the driver fills in a [**WMIREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow) structure at **Parameters.WMI.Buffer** as follows:
+Otherwise, the driver fills in a [**WMIREGINFO**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow) structure at **Parameters.WMI.Buffer** as follows:
 
 -   Sets **BufferSize** to the size in bytes of the **WMIREGINFO** structure plus associated registration data.
 
 -   If the driver handles WMI requests on behalf of another driver, sets **NextWmiRegInfo** to the offset in bytes from the beginning of this **WMIREGINFO** to the beginning of another **WMIREGINFO** structure that contains registration information from the other driver.
 
--   Sets **RegistryPath** to the registry path that was passed to the driver's [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine.
+-   Sets **RegistryPath** to the registry path that was passed to the driver's [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine.
 
 -   If **Parameters.WMI.Datapath** is set to **WMIREGISTER**, sets **MofResourceName** to the offset from the beginning of this **WMIREGINFO** to a counted Unicode string that contains the name of the driver's MOF resource in its image file.
 
 -   Sets **GuidCount** to the number of data blocks and event blocks to register or update.
 
--   Writes an array of [**WMIREGGUID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw) structures, one for each data block or event block exposed by the driver, at **WmiRegGuid**.
+-   Writes an array of [**WMIREGGUID**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw) structures, one for each data block or event block exposed by the driver, at **WmiRegGuid**.
 
 The driver fills in each **WMIREGGUID** structure as follows:
 
@@ -65,7 +65,7 @@ If the block is being registered with static instance names, the driver:
 -   Sets one of the following members to an offset in bytes to static instance name data for the block:
     -   If the driver sets **Flags** with WMIREG\_FLAG\_INSTANCE\_LIST, it sets **InstanceNameList** to an offset to a list of static instance name strings. WMI specifies instances in subsequent requests by index into this list.
     -   If the driver sets **Flags** with WMIREG\_FLAG\_INSTANCE\_BASENAME, it sets **BaseNameOffset** to an offset to a base name string. WMI uses this string to generate static instance names for the block.
-    -   If the driver sets **Flags** with WMIREG\_FLAG\_INSTANCE\_PDO, it sets **Pdo** to an offset to a pointer to the PDO passed to the driver's [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. WMI uses the device instance path of the PDO to generate static instance names for the block.
+    -   If the driver sets **Flags** with WMIREG\_FLAG\_INSTANCE\_PDO, it sets **Pdo** to an offset to a pointer to the PDO passed to the driver's [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine. WMI uses the device instance path of the PDO to generate static instance names for the block.
 -   Writes the instance name strings, the base name string, or a pointer to the PDO at the offset indicated by **InstanceNameList**, **BaseName**, or **Pdo**, respectively.
 
 If the driver handles WMI registration on behalf of another driver (such as a miniclass or miniport driver), it fills in another WMIREGINFO structure with the other driver's registration information and writes it at **NextWmiRegInfo** in the previous structure.
@@ -75,7 +75,7 @@ If the buffer at **Parameters.WMI.Buffer** is too small to receive all of the da
 ## I/O Status Block
 
 
-If the driver handles the IRP by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
+If the driver handles the IRP by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), WMI sets **Irp-&gt;IoStatus.Status** and **Irp-&gt;IoStatus.Information** in the I/O status block.
 
 Otherwise, the driver sets **Irp-&gt;IoStatus.Status** to STATUS\_SUCCESS or to an appropriate error status such as the following:
 
@@ -86,19 +86,19 @@ On success, a driver sets **Irp-&gt;IoStatus.Information** to the number of byte
 Operation
 ---------
 
-A driver can handle WMI IRPs either by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-wmi-requests).
+A driver can handle WMI IRPs either by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol) or by handling the IRP itself, as described in [Handling WMI Requests](./handling-wmi-requests.md).
 
-If a driver handles WMI IRPs by calling [**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), that routine calls the driver's [*DpWmiQueryReginfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_reginfo_callback) routine.
+If a driver handles WMI IRPs by calling [**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol), that routine calls the driver's [*DpWmiQueryReginfo*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_reginfo_callback) routine.
 
-If a driver handles an **IRP\_MN\_REGINFO** request itself, it should do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed to [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next-lower driver.
+If a driver handles an **IRP\_MN\_REGINFO** request itself, it should do so only if **Parameters.WMI.ProviderId** points to the same device object as the pointer that the driver passed to [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol). Otherwise, the driver must forward the request to the next-lower driver.
 
 Before handling the request, the driver must check **Parameters.WMI.DataPath** to determine whether WMI is querying registration information (**WMIREGISTER**) or requesting an update (**WMIUPDATE**).
 
 WMI sends this IRP with WMIREGISTER after a driver calls **IoWMIRegistrationControl** with WMIREG\_ACTION\_REGISTER or WMIREG\_ACTION\_REREGISTER. In response, a driver should fill in the buffer at **Parameters.WMI.Buffer** with the following:
 
--   A [**WMIREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow) structure that indicates the driver's registry path, the name of its MOF resource, and the number of blocks to register.
+-   A [**WMIREGINFO**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow) structure that indicates the driver's registry path, the name of its MOF resource, and the number of blocks to register.
 
--   One[**WMIREGGUID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw) structure for each block to register. If a block is to be registered with static instance names, the driver sets the appropriate WMIREG\_FLAG\_INSTANCE\_*XXX* flag in the **WMIREGGUID** structure for that block.
+-   One[**WMIREGGUID**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw) structure for each block to register. If a block is to be registered with static instance names, the driver sets the appropriate WMIREG\_FLAG\_INSTANCE\_*XXX* flag in the **WMIREGGUID** structure for that block.
 
 -   Any strings WMI needs to generate static instance names.
 
@@ -112,7 +112,7 @@ WMI sends this IRP with **WMIUPDATE** after a driver calls **IoWmiRegistrationCo
 
 A driver can use the same **WMIREGINFO** structures to remove, add, or update blocks as it used initially to register all of its blocks, changing only the flags and data for the blocks to be updated. If a **WMIREGGUID** in such a **WMIREGINFO** structure matches exactly the **WMIREGGUID** passed by the driver when it first registered that block, WMI skips the processing involved in updating the block.
 
-WMI does not send an **IRP\_MN\_REGINFO** request after a driver calls [**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol) with WMIREG\_ACTION\_DEREGISTER, because WMI requires no further information from the driver. A driver typically deregisters its blocks in response to an [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) request.
+WMI does not send an **IRP\_MN\_REGINFO** request after a driver calls [**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol) with WMIREG\_ACTION\_DEREGISTER, because WMI requires no further information from the driver. A driver typically deregisters its blocks in response to an [**IRP\_MN\_REMOVE\_DEVICE**](irp-mn-remove-device.md) request.
 
 Requirements
 ------------
@@ -133,24 +133,19 @@ Requirements
 ## See also
 
 
-[*DpWmiQueryReginfo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_reginfo_callback)
+[*DpWmiQueryReginfo*](/windows-hardware/drivers/ddi/wmilib/nc-wmilib-wmi_query_reginfo_callback)
 
-[**IoWMIRegistrationControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol)
+[**IoWMIRegistrationControl**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiregistrationcontrol)
 
-[**WMILIB\_CONTEXT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context)
+[**WMILIB\_CONTEXT**](/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context)
 
-[**WMIREGGUID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw)
+[**WMIREGGUID**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw)
 
-[**WMIREGINFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow)
+[**WMIREGINFO**](/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmireginfow)
 
-[**WmiSystemControl**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
+[**WmiSystemControl**](/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol)
 
 [**IRP\_MN\_REGINFO\_EX**](irp-mn-reginfo-ex.md)
 
  
-
- 
-
-
-
 

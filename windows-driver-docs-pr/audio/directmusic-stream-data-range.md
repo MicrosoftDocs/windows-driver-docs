@@ -1,7 +1,6 @@
 ---
 title: DirectMusic Stream Data Range
 description: DirectMusic Stream Data Range
-ms.assetid: e3423901-330e-4a86-a921-6678e1c45a97
 keywords:
 - DirectMusic WDK audio , stream data ranges
 ms.date: 04/20/2017
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 ## <span id="directmusic_stream_data_range"></span><span id="DIRECTMUSIC_STREAM_DATA_RANGE"></span>
 
 
-This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a DirectMusic stream.
+This example uses a [**KSDATARANGE\_MUSIC**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music) structure to describe the data range for a DirectMusic stream.
 
 ```cpp
   DataRange.FormatSize  = sizeof(KSDATARANGE_MUSIC);
@@ -31,9 +30,4 @@ This example uses a [**KSDATARANGE\_MUSIC**](https://docs.microsoft.com/windows-
 ```
 
  
-
- 
-
-
-
 

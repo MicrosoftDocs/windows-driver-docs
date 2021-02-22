@@ -1,7 +1,6 @@
 ---
 title: MRxLowIOSubmit\ LOWIO\_OP\_EXCLUSIVELOCK\ routine
 description: The MRxLowIOSubmit\ LOWIO\_OP\_EXCLUSIVELOCK\ routine is called by RDBSS to request that a network mini-redirector open an exclusive lock on a file object.
-ms.assetid: 7f6613d1-63fb-4505-966d-155dc2b80ffe
 keywords: ["MRxLowIOSubmit LOWIO_OP_EXCLUSIVELOCK routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\] routine
 
 
-The *MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\]* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector open an exclusive lock on a file object.
+The *MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\]* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector open an exclusive lock on a file object.
 
 Syntax
 ------
@@ -113,7 +112,7 @@ The **LowIoContext.ParamsFor.Locks.Length** member is set to the value of **IrpS
 
 The **LowIoContext.Operation** member of the RX\_CONTEXT structure specifies the low I/O operation to perform. It is possible for several of the low I/O routines to point to the same routine in a network mini-redirector because this **LowIoContext.Operation** member can be used to differentiate the low I/O operation that is requested. For example, all the I/O calls related to file locks could call the same low I/O routine in the network mini-redirector and that routine could use the **LowIoContext.Operation** member to differentiate between the lock and unlock operation that is requested.
 
-If the *MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\]* routine can take a long time to complete, the network mini-redirector driver should release the FCB structure before initiating the network communication. The FCB structure can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx). While the *MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS.
+If the *MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\]* routine can take a long time to complete, the network mini-redirector driver should release the FCB structure before initiating the network communication. The FCB structure can be released by calling [**RxReleaseFcbResourceForThreadInMRx**](/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx). While the *MRxLowIOSubmit\[LOWIO\_OP\_EXCLUSIVELOCK\]* routine is processing, the **LowIoContext.ResourceThreadId** member of RX\_CONTEXT is guaranteed to indicate the thread of the process that initiated the operation in RDBSS.
 
 The **LowIoContext.ResourceThreadId** member of RX\_CONTEXT can be used to release the FCB structure on behalf of another thread. When an asynchronous routine completes, the FCB structure that was acquired from the initial thread can be released.
 
@@ -156,14 +155,7 @@ Requirements
 
 [**MRxLowIOSubmit\[LOWIO\_OP\_WRITE\]**](mrxlowiosubmit-lowio-op-write-.md)
 
-[**RxReleaseFcbResourceForThreadInMRx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx)
+[**RxReleaseFcbResourceForThreadInMRx**](/windows-hardware/drivers/ddi/mrxfcb/nf-mrxfcb-rxreleasefcbresourceforthreadinmrx)
 
  
-
- 
-
-
-
-
-
 

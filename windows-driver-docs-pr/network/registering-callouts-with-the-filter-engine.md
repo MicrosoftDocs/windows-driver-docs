@@ -1,7 +1,6 @@
 ---
 title: Registering Callouts with the Filter Engine
 description: Registering Callouts with the Filter Engine
-ms.assetid: a5bade33-e3d1-4e1d-8503-51485097046e
 keywords:
 - Windows Filtering Platform callout drivers WDK , initializing
 - callout drivers WDK Windows Filtering Platform , initializing
@@ -14,7 +13,7 @@ ms.localizationpriority: medium
 # Registering Callouts with the Filter Engine
 
 
-After a callout driver has created a device object, it can then register its callouts with the filter engine. A callout driver can register its callouts with the filter engine at any time, even if the filter engine is currently not running. To register a callout with the filter engine, a callout driver calls the [**FwpsCalloutRegister0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function. For example:
+After a callout driver has created a device object, it can then register its callouts with the filter engine. A callout driver can register its callouts with the filter engine at any time, even if the filter engine is currently not running. To register a callout with the filter engine, a callout driver calls the [**FwpsCalloutRegister0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function. For example:
 
 ```C++
 // Prototypes for the callout's callout functions
@@ -79,21 +78,14 @@ NTSTATUS
 }
 ```
 
-If the call to the [**FwpsCalloutRegister0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function is successful, the variable pointed to by the last parameter contains the run-time identifier for the callout. This run-time identifier corresponds to the GUID that was specified for the callout key.
+If the call to the [**FwpsCalloutRegister0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function is successful, the variable pointed to by the last parameter contains the run-time identifier for the callout. This run-time identifier corresponds to the GUID that was specified for the callout key.
 
-A single callout driver can implement more than one callout. If a callout driver implements more than one callout, it calls the [**FwpsCalloutRegister0**](https://docs.microsoft.com/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function one time for each callout that it supports to register each callout with the filter engine.
+A single callout driver can implement more than one callout. If a callout driver implements more than one callout, it calls the [**FwpsCalloutRegister0**](/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0) function one time for each callout that it supports to register each callout with the filter engine.
 
 ## Related topics
 
 
-[classifyFn](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/)
+[classifyFn](/windows-hardware/drivers/ddi/_netvista/)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: CertMgr
 description: CertMgr (Certmgr.exe) is a command-line CryptoAPI tool that manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
-ms.assetid: 860693f5-de64-4ca9-be64-23e2fbb862c5
 keywords:
 - CertMgr Driver Development Tools
 topic_type:
@@ -17,9 +16,9 @@ ms.localizationpriority: medium
 # CertMgr
 
 
-CertMgr (Certmgr.exe) is a command-line [CryptoAPI](https://go.microsoft.com/fwlink/p/?linkid=136391) tool that manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
+CertMgr (Certmgr.exe) is a command-line [CryptoAPI](/windows/win32/seccrypto/cryptography-portal) tool that manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
 
-CertMgr supports a large number of switches, but this section describes only those that are relevant to managing [test certificates](https://docs.microsoft.com/windows-hardware/drivers/install/test-certificates) within a certificate store.
+CertMgr supports a large number of switches, but this section describes only those that are relevant to managing [test certificates](../install/makecert-test-certificate.md) within a certificate store.
 
 ```
     CertMgr [/add|/del|/put] [Switches] [/s [/r RegistryLocation ] ] SourceName [/s [/r RegistryLocation] ] [DestinationName]
@@ -66,7 +65,7 @@ Specifies the registry location HKEY\_LOCAL\_MACHINE.
 
 If the **/r** switch is not specified along with the **/s** switch, *currentUser* is the default.
 
-For more information about these certificate stores, see [Certificate Stores](https://docs.microsoft.com/windows-hardware/drivers/install/certificate-stores).
+For more information about these certificate stores, see [Certificate Stores](../install/certificate-stores.md).
 
 <span id="_v"></span><span id="_V"></span>**/v**  
 Configures CertMgr to display detailed information about certificates, CTLs, and CRLs. If this switch is not specified, CertMgr only displays brief information.
@@ -75,7 +74,7 @@ Configures CertMgr to display detailed information about certificates, CTLs, and
 
 To use CertMgr, the user must be a member of the Administrators group on the system and run the command from an elevated command prompt.
 
-For a complete list of CertMgr parameters, see the [Certificate Manager Tool](https://go.microsoft.com/fwlink/p/?linkid=70233) website.
+For a complete list of CertMgr parameters, see the [Certificate Manager Tool](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) website.
 
 A 32-bit version of the CertMgr tool is located in the *bin\\i386* folder of the WDK. A 64-bit version of the tool is located in the bin\\amd64 and bin\\ia64 folders of the WDK.
 
@@ -89,10 +88,4 @@ CertMgr /add OutputFile.cer /s /r localMachine trustedpublisher
 ```
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Texture Stages
 description: Texture Stages
-ms.assetid: 98149615-ef64-4b0d-9adf-d6b72324e1b4
 keywords:
 - multiple textures WDK Direct3D , texture stages
 - texture stages WDK Direct3D

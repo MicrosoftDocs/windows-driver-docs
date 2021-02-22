@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x15A SDBUS_INTERNAL_ERROR
 description: The SDBUS_INTERNAL_ERROR bug check has a value of 0x0000015A. This indicates that an unrecoverable hardware failure has occurred on an SD-attached device.
-ms.assetid: C5FBE617-DADD-452C-A1BC-A0DE228FF2DE
 keywords: ["Bug Check 0x15A SDBUS_INTERNAL_ERROR", "SDBUS_INTERNAL_ERROR"]
 ms.date: 05/23/2017
 topic_type:

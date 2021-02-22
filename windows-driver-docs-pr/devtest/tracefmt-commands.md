@@ -1,7 +1,6 @@
 ---
 title: Tracefmt Commands
 description: To use Tracefmt, type the commands in a Command Prompt window.
-ms.assetid: 79e56383-ce67-4716-98d6-4266b76a4b0a
 keywords:
 - Tracefmt Commands Driver Development Tools
 topic_type:
@@ -165,7 +164,7 @@ If Tracefmt cannot format a trace message parameter, it raises an exception and 
 *****FormatMessage Header(Header) of EventTrace, parameter 23 raised an exception*****
 ```
 
-If you see a similar exception, review the message definition in the source code, with special attention to any user-specified variable types. For more information, see [**DoTraceMessage**](https://docs.microsoft.com/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
+If you see a similar exception, review the message definition in the source code, with special attention to any user-specified variable types. For more information, see [**DoTraceMessage**](/previous-versions/windows/hardware/previsioning-framework/ff544918(v=vs.85)).
 
 **TMF files with non-GUID file names**
 
@@ -186,12 +185,3 @@ Tracefmt does not format the values of the system performance counter clock (**Q
 **Out-of-sequence trace messages**
 
 If you view a trace message file on a computer running Windows XP, the display might show trace messages that are out of sequence. To correct this problem, you can use the sequence number option when you start the trace session and view the trace using Tracefmt. You can then view the trace with Traceview and sort according to sequence number. You can also view the trace on a computer running Windows Server 2003 or later versions of Windows.
-
-
-
-
-
-
-
-
-

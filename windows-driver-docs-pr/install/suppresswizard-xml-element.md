@@ -1,7 +1,6 @@
 ---
 title: suppressWizard XML Element
 description: The suppressWizard XML element is an empty element that sets the suppressWizard flag to ON, which configures DPInst to suppress the display of wizard pages and other user messages that DPInst generates.
-ms.assetid: fb72ff30-7d93-4531-9115-c299fabec7e7
 keywords: ["suppressWizard XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # suppressWizard XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **suppressWizard** XML element is an empty element that sets the **suppressWizard** flag to ON, which configures DPInst to suppress the display of wizard pages and other user messages that DPInst generates.
 
@@ -79,11 +78,4 @@ The following code example demonstrates a **suppressWizard** element.
 [**dpinst**](dpinst-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

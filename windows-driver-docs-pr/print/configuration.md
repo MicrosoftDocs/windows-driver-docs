@@ -1,7 +1,6 @@
 ---
 title: Configuration
 description: Configuration
-ms.assetid: 8d1d4a80-7ca1-47e3-bd27-ece0c0b38b81
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---

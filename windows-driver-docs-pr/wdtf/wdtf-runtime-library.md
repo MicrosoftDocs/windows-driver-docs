@@ -39,9 +39,9 @@ The WDTF runtime library includes tools to help you triage and run tests.
 
 ## How to install the WDTF runtime library
 
-When you set up a test computer for deployment, the WDTF runtime library is installed on the test computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10 and WDK 8.1)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1)
+When you set up a test computer for deployment, the WDTF runtime library is installed on the test computer. Follow the instructions in [Provision a computer for driver deployment and testing (WDK 10 and WDK 8.1)](../gettingstarted/provision-a-target-computer-wdk-8-1.md)
 
-<!-- [Provision a computer for driver deployment and testing (WDK 8)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8) -->
+<!-- [Provision a computer for driver deployment and testing (WDK 8)](/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8) -->
 
 You can also install the WDTF runtime library manually.
 
@@ -49,7 +49,7 @@ You can also install the WDTF runtime library manually.
 
 1. Install Visual Studio and then install the WDK.
 
-2. Configure a remote computer for testing. In Visual Studio, click the **Driver** menu, point to **Test**, and then click **Configure Computers**.
+2. Configure a remote computer for testing. In Visual Studio, select the **Driver** menu, point to **Test**, and then select **Configure Computers**.
 
 ### Manually installing WDTF on a test computer (alternative method)
 
@@ -96,14 +96,14 @@ You can verify that WDTF was installed correctly by running a command script on 
 
 ## How to uninstall the WDTF runtime library
 
-When you set up a test computer for deployment, following the instructions [Provision a computer for driver deployment and testing (WDK 10)](https://docs.microsoft.com/windows-hardware/drivers/gettingstarted/provision-a-target-computer-wdk-8-1), the WDTF runtime library is installed on the target computer.
+When you set up a test computer for deployment, following the instructions [Provision a computer for driver deployment and testing (WDK 10)](../gettingstarted/provision-a-target-computer-wdk-8-1.md), the WDTF runtime library is installed on the target computer.
 
-You can remove the WDTF runtime library by removing provisioning from the target computer. For more information, see [Removing provisioning from the target computer](https://docs.microsoft.com/windows-hardware/drivers/develop/what-happens-when-you-provision-a-computer--wdk-8-1-#span-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanspan-idremovingprovisioningfromthetargetcomputerspanremoving-provisioning-from-the-target-computer).
+You can remove the WDTF runtime library by removing provisioning from the target computer. For more information, see [Removing provisioning from the target computer](../develop/what-happens-when-you-provision-a-computer--wdk-8-1-.md#removing-provisioning-from-the-target-computer).
 
 You can also uninstall the WDTF runtime library manually.
 
 ## Manually uninstalling WDTF on a test computer
 
-1. On the test computer, go to **Settings** and then click **Apps**.
+1. On the test computer, go to **Settings** and then select **Apps**.
 
-2. In **Programs and Features**, locate the Windows Driver Testing Framework (WDTF) Runtime Libraries, right click, and select **Uninstall**.
+2. In **Programs and Features**, locate the Windows Driver Testing Framework (WDTF) Runtime Libraries, select and hold (or right-click), and select **Uninstall**.

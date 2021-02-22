@@ -1,14 +1,13 @@
 ---
 title: LastModifiedDate
 description: LastModifiedDate
-ms.assetid: e0ef7ca0-0c3d-4e71-af2e-ead90013e561
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # LastModifiedDate
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The LastModifiedDate element specifies the timestamp on which the service metadata package was last changed. Based on this information, the operating system selects and loads the most recent service metadata package version.
 

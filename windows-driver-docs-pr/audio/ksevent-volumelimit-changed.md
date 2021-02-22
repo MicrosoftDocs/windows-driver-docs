@@ -1,7 +1,6 @@
 ---
 title: KSEVENT\_VOLUMELIMIT\_CHANGED
 description: The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stack that the audio volume level limit for the audio device has changed.
-ms.assetid: CC6A6027-03CA-4D2C-8AA2-155E1617E19B
 keywords: ["KSEVENT_VOLUMELIMIT_CHANGED Audio Devices"]
 topic_type:
 - apiref
@@ -36,8 +35,8 @@ The KSEVENT\_VOLUMELIMIT\_CHANGED event indicates to the audio stack that the au
 <tbody>
 <tr class="odd">
 <td align="left"><p>Pin</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff561744(v=vs.85)" data-raw-source="[&lt;strong&gt;KSEVENT&lt;/strong&gt;](/previous-versions/ff561744(v=vs.85))"><strong>KSEVENT</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata" data-raw-source="[&lt;strong&gt;KSEVENTDATA&lt;/strong&gt;](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)"><strong>KSEVENTDATA</strong></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -56,18 +55,9 @@ Note that while KSEVENT\_PINCAPS\_FORMATCHANGE is implemented on the Wave filter
 ## <span id="see_also"></span>See also
 
 
-[**KSEVENT**](https://docs.microsoft.com/previous-versions/ff561744(v=vs.85))
+[**KSEVENT**](/previous-versions/ff561744(v=vs.85))
 
 [**KSEVENT\_PINCAPS\_FORMATCHANGE**](ksevent-pincaps-formatchange.md)
 
-[**KSEVENTDATA**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
-
- 
-
- 
-
-
-
-
-
+[**KSEVENTDATA**](/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata)
 

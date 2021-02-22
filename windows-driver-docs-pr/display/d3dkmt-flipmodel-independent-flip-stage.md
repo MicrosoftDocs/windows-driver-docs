@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_FLIPMODEL\_INDEPENDENT\_FLIP\_STAGE enumeration
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: FF835590-36E0-4F77-80E0-45A3663D20ED
+description: Learn about the D3DKMT\_FLIPMODEL\_INDEPENDENT\_FLIP\_STAGE enumeration, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_FLIPMODEL_INDEPENDENT_FLIP_STAGE enumeration Display Devices"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: MPEG1_A
 description: MPEG1_A
-ms.assetid: 2c4d79b7-3331-49f9-a561-6e5b609543df
 keywords:
 - MPEG1_A restricted profile WDK DirectX VA
 ms.date: 04/20/2017
@@ -18,7 +17,7 @@ The MPEG1\_A restricted profile contains a set of features required for support 
 
 ### <span id="Restrictions_on_DXVA_ConnectMode"></span><span id="restrictions_on_dxva_connectmode"></span><span id="RESTRICTIONS_ON_DXVA_CONNECTMODE"></span>Restrictions on DXVA\_ConnectMode
 
-The following restriction on the [**DXVA\_ConnectMode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_connectmode) structure applies when the *bDXVA\_Func* variable defined in the **dwFunction** member of the [**DXVA\_ConfigPictureDecode**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure is equal to 1.
+The following restriction on the [**DXVA\_ConnectMode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_connectmode) structure applies when the *bDXVA\_Func* variable defined in the **dwFunction** member of the [**DXVA\_ConfigPictureDecode**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode) structure is equal to 1.
 
 <table>
 <colgroup>
@@ -172,10 +171,4 @@ The following restriction on the [**DXVA\_ConnectMode**](https://docs.microsoft.
 The contents of any bitstream buffer must contain data in the MPEG-1 main profile video format.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: GUID_DEVICE_MESSAGE_INDICATOR
 description: GUID_DEVICE_MESSAGE_INDICATOR
-ms.assetid: 6f48dbc7-dca7-4373-b5ff-83ebb5f5c266
 keywords: ["GUID_DEVICE_MESSAGE_INDICATOR Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # GUID_DEVICE_MESSAGE_INDICATOR
 
 
-The GUID_DEVICE_MESSAGE_INDICATOR [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for Advanced Configuration and Power Interface (ACPI) message indicator devices.
+The GUID_DEVICE_MESSAGE_INDICATOR [device interface class](./overview-of-device-interface-classes.md) is defined for Advanced Configuration and Power Interface (ACPI) message indicator devices.
 
 <table>
 <colgroup>
@@ -48,9 +47,9 @@ The GUID_DEVICE_MESSAGE_INDICATOR [device interface class](https://docs.microsof
 Remarks
 -------
 
-The system-supplied [ACPI driver](https://docs.microsoft.com/windows-hardware/drivers/kernel/acpi-driver) registers an instance of this device interface class to notify the operating system and applications of the presence of ACPI message indicator devices.
+The system-supplied [ACPI driver](../kernel/acpi-driver.md) registers an instance of this device interface class to notify the operating system and applications of the presence of ACPI message indicator devices.
 
-For information about supplying WDM [function drivers](https://docs.microsoft.com/windows-hardware/drivers/kernel/function-drivers) for ACPI devices, see [Supporting ACPI Devices](https://docs.microsoft.com/windows-hardware/drivers/acpi/supporting-acpi-devices).
+For information about supplying WDM [function drivers](../kernel/function-drivers.md) for ACPI devices, see [Supporting ACPI Devices](../acpi/supporting-acpi-devices.md).
 
 Requirements
 ------------
@@ -69,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_MODULE\_UI
 description: Clients use KSPROPERTY\_BDA\_CA\_MODULE\_UI to retrieve interface data that a CA plugin can display to users.
-ms.assetid: 192161fe-8059-454b-8085-5565c940fbbb
 keywords: ["KSPROPERTY_BDA_CA_MODULE_UI Streaming Media Devices"]
 topic_type:
 - apiref
@@ -79,18 +78,11 @@ Requirements
 ## See also
 
 
-[**BDA\_CA\_MODULE\_UI**](https://docs.microsoft.com/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_ca_module_ui)
+[**BDA\_CA\_MODULE\_UI**](/windows-hardware/drivers/ddi/bdatypes/ns-bdatypes-_bda_ca_module_ui)
 
 [**KSEVENT\_BDA\_CA\_MODULE\_UI\_REQUESTED**](ksevent-bda-ca-module-ui-requested.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

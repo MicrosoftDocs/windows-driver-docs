@@ -1,7 +1,6 @@
 ---
 title: How Windows Ranks Drivers
 description: How Windows Ranks Drivers
-ms.assetid: 54b6f40a-e5f6-41dd-8876-c9f0fb36ee00
 keywords:
 - ranking drivers WDK device installations
 - driver ranking WDK device installations
@@ -14,6 +13,8 @@ ms.localizationpriority: medium
 
 # How Windows Ranks Drivers
 
+> [!NOTE]
+> This page describes how Windows determines a driver rank value for a given driver that matches on a device.  To understand how driver rank and other factors (including INF date, driver version, etc.) are used to determine which driver Windows selects for a device, see [How Windows Selects Drivers](./overview-of-the-driver-selection-process.md#-how-windows-selects-drivers).
 
 Windows assigns a rank to a driver that matches a device. The rank indicates how well the driver matches the device. A driver rank is represented by an integer that is equal to or greater than zero. The lower the rank, the better a match the driver is for the device.
 

@@ -2,7 +2,6 @@
 title: IRP_MN_POWER_SEQUENCE
 description: This IRP returns the power sequence values for a device.
 ms.date: 08/12/2017
-ms.assetid: f00c0021-a909-4d76-9114-6710e1aa4307
 keywords:
  - IRP_MN_POWER_SEQUENCE Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -17,12 +16,13 @@ Major Code
 ----------
 
 [**IRP\_MJ\_POWER**](irp-mj-power.md)
+
 When Sent
 ---------
 
 A driver sends this IRP as an optimization to determine whether its device actually entered a specific power state. Support for this IRP is optional.
 
-To send this IRP, a driver must call [**IoAllocateIrp**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) to allocate the IRP, specifying the major IRP code [**IRP\_MJ\_POWER**](irp-mj-power.md) and minor IRP code **IRP\_MN\_POWER\_SEQUENCE**. The driver must then call [**IoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) (Windows Vista) or [**PoCallDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver) (Windows Server 2003, Windows XP, and Windows 2000) to pass the IRP to the next lower driver. The power manager cannot send this IRP.
+To send this IRP, a driver must call [**IoAllocateIrp**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateirp) to allocate the IRP, specifying the major IRP code [**IRP\_MJ\_POWER**](irp-mj-power.md) and minor IRP code **IRP\_MN\_POWER\_SEQUENCE**. The driver must then call [**IoCallDriver**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver) (Windows Vista) or [**PoCallDriver**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocalldriver) (Windows Server 2003, Windows XP, and Windows 2000) to pass the IRP to the next lower driver. The power manager cannot send this IRP.
 
 Senders of this IRP must be running at IRQL &lt;= DISPATCH\_LEVEL.
 
@@ -82,9 +82,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Add or Update a code signing certificate
 description: Add or Update a code signing certificate
-ms.assetid: 120AA970-D981-4E7D-A9BD-68125D90A0EE
 ms.topic: article
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ As a Partner Center administrator, you’re responsible for keeping your digital
 
 Partner Center supports multiple certificates associated with a single account.  If you want to add additional certificates using this same process.
 
-If you’re registering your company on dashboard for the first time, see [Establish a new company](https://docs.microsoft.com/windows-hardware/drivers/dashboard/establish-a-new-company).
+If you’re registering your company on dashboard for the first time, see [Get started with the hardware dashboard program](get-started-with-the-hardware-dashboard.md).
 
 > [!IMPORTANT]
 > The certificate uploaded and used for all Partner Center submission packages has changed:
@@ -26,7 +25,7 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 ### Step 1: Renew your code signing certificate if needed  
 
-1. Determine which type of code signing certificate you need (for more information, see [Get a code signing certificate](https://docs.microsoft.com/windows-hardware/drivers/dashboard/get-a-code-signing-certificate)).
+1. Determine which type of code signing certificate you need (for more information, see [Get a code signing certificate](./get-a-code-signing-certificate.md)).
 
 2. Get a new certificate or reuse an existing certificate.
 
@@ -38,9 +37,9 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 2. Once an **Administrator** has signed in, you may use this direct link [Sign and upload your file](https://partner.microsoft.com/dashboard/account/CertificateUpload), or manually navigate to the page following these steps.
 
-3. Click the gear icon in the upper right, then click **Developer settings**, then **Manage Certificates** on the left pane.
+3. Select the gear icon in the upper right, then select **Developer settings**, then **Manage Certificates** on the left pane.
 
-4. Click the **Add a new certificate** button, then click the **Next** button.  
+4. Select the **Add a new certificate** button, then select the **Next** button.  
 
 5. Download the Signablefile.bin and sign it with the new digital certificate for your company using SignTool with the following switch **/fd sha256** and appropriate SHA-2 timestamp.
 
@@ -48,10 +47,10 @@ If you’re registering your company on dashboard for the first time, see [Estab
 
 ## Related topics
 
-* [Before you sign in](https://docs.microsoft.com/windows-hardware/drivers/dashboard/before-you-sign-in)
+* [Before you sign in](./get-started-with-the-hardware-dashboard.md)
 
-* [Establish a new company](https://docs.microsoft.com/windows-hardware/drivers/dashboard/establish-a-new-company)
+* [Get started with the hardware dashboard program](get-started-with-the-hardware-dashboard.md)
 
-* [Hardware certification submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/hardware-certification-submissions)
+* [Hardware certification submissions](./hardware-certification-submissions.md)
 
-* [App certification submissions](https://docs.microsoft.com/windows-hardware/drivers/dashboard/app-certification-submissions)
+* [App certification submissions](https://techcommunity.microsoft.com/t5/windows-hardware-certification/bg-p/WindowsHardwareCertification)

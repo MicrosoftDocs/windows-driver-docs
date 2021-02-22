@@ -1,7 +1,6 @@
 ---
 title: usbkd.usbpdoxls
 description: The usbkd.usbpdoxls command displays information about all physical device objects (PDOs) created by the USB hub driver. For each PDO, this command displays a row of comma-separated values.
-ms.assetid: 10A2F582-3E4F-4248-BB49-40A4C23E5C55
 keywords: ["usbkd.usbpdoxls Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -32,14 +31,7 @@ Usbkd.dll
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

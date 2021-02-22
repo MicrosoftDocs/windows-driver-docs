@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY
 description: WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY is a TLV that contains an ASP2 Service Information Discovery Entry.
-ms.assetid: 67F1CDE2-8003-44D3-B338-FE7C5EA48C29
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_P2P_ASP2_SERVICE_INFORMATION_DISCOVERY_ENTRY Network Drivers Starting with Windows Vista

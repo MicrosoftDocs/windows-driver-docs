@@ -1,7 +1,6 @@
 ---
 title: bcb
 description: The bcb extension displays the specified buffer control block.
-ms.assetid: 4e98e900-5e9d-40a4-9c39-4dc3611d8ea3
 keywords: ["cache manager", "bcb Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

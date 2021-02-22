@@ -1,13 +1,13 @@
 ---
 title: Time Travel Debugging Extension !tt Command 
 description: The !tt time travel debugger extension that allows you to navigate forward and backwards in time.
-ms.date: 09/22/2017
+ms.date: 01/22/2020
 ms.localizationpriority: medium
 ---
 
-![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
+# !tt (time travel)
 
-#  !tt (time travel)
+![Small time travel logo showing clock](images/ttd-time-travel-debugging-logo.png)
 
 The !tt (time travel) debugger extension that allows you to navigate forward and backwards in time.
 
@@ -16,7 +16,7 @@ The !tt (time travel) debugger extension that allows you to navigate forward and
 Use the !tt extension to navigate forward or backwards in time, by traveling to a given position in the trace. 
 
 ```dbgcmd
-!tt [position] 
+!tt [position]
 ```
 
 ## <span id="ddk__analyze_dbg"></span><span id="DDK__ANALYZE_DBG"></span>Parameters
@@ -26,15 +26,15 @@ Use the !tt extension to navigate forward or backwards in time, by traveling to 
 Provide a time position in any of the following formats to travel to that point in time.
            
 - If {position} is a decimal number between 0 and 100, it travels to approximately that percent into the trace. For example:
-    - !ttdext.tt 0                   - Time travel to the beginning of the trace
-    - !ttdext.tt 50                  - Time travel to halfway through the trace
-    - !ttdext.tt 100                 - Time travel to the end of the trace
+    - !tt 0                   - Time travel to the beginning of the trace
+    - !tt 50                  - Time travel to halfway through the trace
+    - !tt 100                 - Time travel to the end of the trace
  
 
 - If {position} is #:#, where # are a hexadecimal numbers, it travels to that position. If the number after : is omitted, it defaults to zero.
-    - !ttdext.tt 1A0:                - Time travel to position 1A0:0
-    - !ttdext.tt 1A0:0               - Time travel to position 1A0:0
-    - !ttdext.tt 1A0:12F             - Time travel to position 1A0:12F
+    - !tt 1A0:                - Time travel to position 1A0:0
+    - !tt 1A0:0               - Time travel to position 1A0:0
+    - !tt 1A0:12F             - Time travel to position 1A0:12F
 
 
    > [!NOTE]
@@ -45,7 +45,6 @@ Provide a time position in any of the following formats to travel to that point 
    > xx- the first element is the sequencing number, which corresponds to a sequencing event.
    >
    > yy - the second element is a step count, which corresponds roughly to the instruction count since the sequencing event.
-
 
 ### <span id="DLL"></span><span id="dll"></span>DLL
 
@@ -58,11 +57,3 @@ This extension only works with time travel traces. For more information about ti
 ## See Also
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-
-
-
-
-

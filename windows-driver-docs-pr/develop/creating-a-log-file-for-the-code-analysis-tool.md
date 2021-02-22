@@ -1,5 +1,4 @@
 ---
-ms.assetid: 4985B206-9E7F-45FE-9067-7CFD15A7AAAD
 title: Creating a log file for the code analysis tool
 description: The Windows Server 2012 Hardware Certification Program requires a Driver Verification Log (DVL) for all applicable driver submissions.
 ms.date: 04/20/2017
@@ -8,13 +7,13 @@ ms.localizationpriority: medium
 
 # Creating a log file for the code analysis tool
 
-The Windows Server 2012 [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run the Code Analysis tool prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
+The Windows Server 2012 [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) requires a Driver Verification Log (DVL) for all applicable driver submissions. You must run the Code Analysis tool prior to creating a DVL for your driver. The DVL contains a summary of the results from the Code Analysis and Static Driver Verifier log files. The log files do not contain source code information.
 
 **To run code analysis on the driver**
 
-1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then right-click to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
-2.  From the **Analyze** or **Build** menu, click **Run Code Analysis on Solution**.
-3.  If errors or warnings are found, use the **Code Analysis Report** window to investigate the cause of the errors. Use the warning messages to fix those problems. For more information about the Code Analysis tool, see [How to run Code Analysis for drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/how-to-run-code-analysis-for-drivers) and [Analyzing C/C++ Code Quality by Using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836).
+1.  In Microsoft Visual Studio Ultimate 2012, select the driver project file and then select and hold (or right-click) to open the project properties. Select **Windows 8 Release** as the **Configuration** and **x64** as the **Platform**.
+2.  From the **Analyze** or **Build** menu, select **Run Code Analysis on Solution**.
+3.  If errors or warnings are found, use the **Code Analysis Report** window to investigate the cause of the errors. Use the warning messages to fix those problems. For more information about the Code Analysis tool, see [How to run Code Analysis for drivers](../devtest/how-to-run-code-analysis-for-drivers.md) and [Analyzing C/C++ Code Quality by Using Code Analysis](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120)).
 
 The Code Analysis tool for drivers writes the results to the file vc.nativecodeanalysis.all.xml in the build configuration and platform sub-directory of your project, for example, \\Windows 8Release\\x64.
 
@@ -49,16 +48,7 @@ For the most up-to-date information about the requirements for the Driver Verifi
 
 * [Creating a driver verification log](creating-a-driver-verification-log.md)
 * [Creating a log file for Static Driver Verifier](creating-a-log-file-for-static-driver-verifier.md)
-* [Code Analysis for Drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/code-analysis-for-drivers)
-* [Hardware Certification Program](https://go.microsoft.com/fwlink/p/?linkid=227016)
-* [Analyzing C/C++ Code Quality by Using Code Analysis](https://go.microsoft.com/fwlink/p/?linkid=226836)
-* [How to run Code Analysis for drivers](https://docs.microsoft.com/windows-hardware/drivers/devtest/how-to-run-code-analysis-for-drivers)
- 
-
- 
-
-
-
-
-
-
+* [Code Analysis for Drivers](../devtest/code-analysis-for-drivers.md)
+* [Hardware Certification Program](/previous-versions/windows/hardware/hck/jj124227(v=vs.85))
+* [Analyzing C/C++ Code Quality by Using Code Analysis](/previous-versions/visualstudio/visual-studio-2013/dd264897(v=vs.120))
+* [How to run Code Analysis for drivers](../devtest/how-to-run-code-analysis-for-drivers.md)

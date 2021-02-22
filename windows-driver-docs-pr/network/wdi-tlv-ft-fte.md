@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_FT_FTE
 description: WDI_TLV_FT_FTE is a TLV that contains a Fast Transition Element.
-ms.assetid: E502508A-FB01-4F1E-9A68-40AA88894C61
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_FT_FTE Network Drivers Starting with Windows Vista

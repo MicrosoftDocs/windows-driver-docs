@@ -1,7 +1,6 @@
 ---
 title: Interpreting Static Driver Verifier Results
 description: Interpreting Static Driver Verifier Results
-ms.assetid: ec7e3b90-5d55-411a-8cfe-a1c9c4029694
 keywords:
 - Static Driver Verifier WDK , display options
 - StaticDV WDK , display options
@@ -50,7 +49,7 @@ If the rule monitors a particular argument in a function call (typically, a poin
 
 If the driver does specify the entry points and it does call the functions that the rule monitors, this result might indicate that SDV did not find or did not correctly interpret the entry point. To confirm that this situation occurred, examine and, if necessary, correct the [Sdv-map.h](sdv-map-h.md) file. For information about this procedure, see [Scanning the Driver](scanning-the-driver.md).
 
-For more information about each rule, see the [Static Driver Verifier Rules](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) reference.
+For more information about each rule, see the [Static Driver Verifier Rules](./static-driver-verifier-rules.md) reference.
 
 To examine the driver further, run a verification using different rules.
 
@@ -60,10 +59,10 @@ SDV stopped verifying the rule because it exceeded its time limit for verifying 
 A timeout is considered to be an inconclusive result. It does not indicate a driver error. If SDV reports a timeout, extend the time permitted for the verification (the **SDV\_SlamConfig\_Timeout** value in the sdv-default.xmlfile) and run the verification again.
 
 <span id="Completed__Property_"></span><span id="completed__property_"></span><span id="COMPLETED__PROPERTY_"></span>**Completed (Property)**  
-SDV ran the driver property rule for the specified driver. A driver property rule checks for driver capabilities or supported features and is a prelude for further analysis. For example, the driver property rule, **CancelRoutine**, checks to see if the WDM driver has registered a [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine. If a *Cancel* routine is not detected, specific WDM rules do not apply. This means that the driver property was not satisfied.
+SDV ran the driver property rule for the specified driver. A driver property rule checks for driver capabilities or supported features and is a prelude for further analysis. For example, the driver property rule, **CancelRoutine**, checks to see if the WDM driver has registered a [*Cancel*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine. If a *Cancel* routine is not detected, specific WDM rules do not apply. This means that the driver property was not satisfied.
 
 <span id="Satisfied__Property_"></span><span id="satisfied__property_"></span><span id="SATISFIED__PROPERTY_"></span>**Satisfied (Property)**  
-SDV ran the driver property rule for the specified driver. A driver property rule checks for driver capabilities or supported features and is a prelude for further analysis. For example, the driver property rule, **CancelRoutine**, checks to see if the WDM driver has registered a [*Cancel*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine. If a *Cancel* routine is detected, specific WDM rules apply. This means that the driver property was satisfied
+SDV ran the driver property rule for the specified driver. A driver property rule checks for driver capabilities or supported features and is a prelude for further analysis. For example, the driver property rule, **CancelRoutine**, checks to see if the WDM driver has registered a [*Cancel*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_cancel) routine. If a *Cancel* routine is detected, specific WDM rules apply. This means that the driver property was satisfied
 
 <span id="Spaceouts"></span><span id="spaceouts"></span><span id="SPACEOUTS"></span>**Spaceouts**  
 The number of rules that SDV stopped verifying because it exceeded the memory limit for verifying the rule. The memory limit is set in the [Static Driver Verifier Options File](static-driver-verifier-options-file.md), sdv-default.xml.
@@ -72,13 +71,5 @@ A spaceout is considered to be an inconclusive result. If SDV reports a spaceout
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Other**  
 
-The number of times that SDV encountered an internal error from which it could not recover.  See the [Static Driver Verifier Error Messages](https://docs.microsoft.com/windows-hardware/drivers/devtest/static-driver-verifier-error-messages) page for more information on errors and debugging.
-
- 
-
- 
-
-
-
-
+The number of times that SDV encountered an internal error from which it could not recover.  See the [Static Driver Verifier Error Messages](./static-driver-verifier-error-messages.md) page for more information on errors and debugging.
 

@@ -1,7 +1,6 @@
 ---
 title: Using the Watch Window
 description: Using the Watch Window
-ms.assetid: 233adbcd-c712-4cbb-abe6-5d4e18fa6c27
 keywords: ["debugging information windows, Watch window", "Watch window", "memory, Watch window"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_AUTH_ALGO_LIST
 description: WDI_TLV_AUTH_ALGO_LIST is a TLV that contains a list of authentication algorithms.
-ms.assetid: 6F5EC21B-C923-45ED-B62E-302D916AABE5
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_AUTH_ALGO_LIST Network Drivers Starting with Windows Vista
@@ -21,14 +20,14 @@ WDI\_TLV\_AUTH\_ALGO\_LIST is a TLV that contains a list of authentication algor
 ## Length
 
 
-The size (in bytes) of the array of [**WDI\_AUTH\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) structures. The array must contain 1 or more elements.
+The size (in bytes) of the array of [**WDI\_AUTH\_ALGORITHM**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm) structures. The array must contain 1 or more elements.
 
 ## Values
 
 
 | Type                                                        | Description                            |
 |-------------------------------------------------------------|----------------------------------------|
-| [**WDI\_AUTH\_ALGORITHM**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm)\[\] | An array of authentication algorithms. |
+| [**WDI\_AUTH\_ALGORITHM**](/windows-hardware/drivers/ddi/wditypes/ne-wditypes-_wdi_auth_algorithm)\[\] | An array of authentication algorithms. |
 
  
 
@@ -57,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

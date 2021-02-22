@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_WILL_BE_REMOVED
 description: CM_PROB_WILL_BE_REMOVED
-ms.assetid: 99712c47-c477-4ab3-aeb7-9925d4d842fe
 keywords:
 - CM_PROB_WILL_BE_REMOVED
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_WILL_BE_REMOVED
+# Code 21 - CM_PROB_WILL_BE_REMOVED
 
-This function is reserved for system use.
-
-The system will remove the device.
+This Device Manager error message indicates that the system will remove the device.
 
 ## Error Code
 

@@ -1,7 +1,6 @@
 ---
 title: Get Energy Source Health Info (Function Index 12)
 description: This function returns information about the health of the Energy Source (ES) module.
-ms.assetid: A2044F2A-79DA-4D3A-93B7-BE9D389DA399
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -11,8 +10,8 @@ ms.date: 10/17/2018
 
 This function returns information about the health of the Energy Source (ES) module. This function may return a failure status if the ES is host-managed and health information is not available.
 
-&gt; \[!Note\]   
-&gt;All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
+> [!NOTE]
+> All registers marked with a star (\*) are registers defined in the Byte Addressable Energy Backed Interface specification.
 
  
 

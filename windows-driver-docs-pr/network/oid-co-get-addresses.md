@@ -1,7 +1,6 @@
 ---
 title: OID_CO_GET_ADDRESSES
 description: This topic describes the OID_CO_GET_ADDRESSES object identifier (OID).
-ms.assetid: 0c30e184-be01-49ab-b9ad-3ccc2fdf9fc5
 keywords:
 - OID_CO_GET_ADDRESSES
 ms.date: 11/03/2017
@@ -50,8 +49,6 @@ The **AddressList** contains network addresses at which the local host can be re
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

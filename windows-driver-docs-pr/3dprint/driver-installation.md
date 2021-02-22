@@ -1,7 +1,6 @@
 ---
 title: Driver installation
 description: The print driver provided in this SDK is an experimental 3D printer device driver still under development.
-ms.assetid: 8A13CD6F-DF82-4353-ADE9-06989F83BC87
 ms.date: 05/15/2018
 ms.localizationpriority: medium
 ---
@@ -21,9 +20,9 @@ To install the printer, use the following installation instructions:
 
 - If the 3D printer is experimental or in development, follow the steps in *Install the driver manually* section below to print to an existing COM port or print G-Code to file.
 
-For information on MS_COMP_3DPRINT, see [Getting started guide - Microsoft Standard Driver for 3D Printers](https://docs.microsoft.com/windows-hardware/drivers/3dprint/microsoft-standard-driver-for-3d-printers-).
+For information on MS_COMP_3DPRINT, see [Getting started guide - Microsoft Standard Driver for 3D Printers](./microsoft-standard-driver-for-3d-printers-.md).
 
-For more information on OS descriptors, see [Microsoft OS Descriptors for USB Devices](https://docs.microsoft.com/windows-hardware/drivers/usbcon/microsoft-defined-usb-descriptors).
+For more information on OS descriptors, see [Microsoft OS Descriptors for USB Devices](../usbcon/microsoft-defined-usb-descriptors.md).
 
 ### Automatic installation of the driver via PnP
 
@@ -91,11 +90,3 @@ For more information on OS descriptors, see [Microsoft OS Descriptors for USB De
     ![type a printer name](images/g-code-10.png)
 
 16. After the installation completes, click **Finish**.
-
-
-
-
-
-
-
-

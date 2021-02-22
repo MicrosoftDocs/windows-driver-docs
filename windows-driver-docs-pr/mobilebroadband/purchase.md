@@ -1,14 +1,13 @@
 ---
 title: Purchase
 description: Purchase
-ms.assetid: e753ba12-650e-4116-bb2e-dc17fc7bddee
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
 # Purchase
 
-[!include[MBAE deprecation warning](mbae-deprecation-warning.md)]
+[!include[MBAE deprecation warning](../includes/mbae-deprecation-warning.md)]
 
 The Purchase element specifies the purchase mobile broadband profile file to use.
 

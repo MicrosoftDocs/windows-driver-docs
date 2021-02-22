@@ -1,7 +1,6 @@
 ---
 title: Miniport Driver Types by Operating System
 description: Miniport Driver Types by Operating System
-ms.assetid: 6ab0e4e4-5118-4df5-ba4e-7da66ce5880d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 # Miniport Driver Types by Operating System
 
 
-When you develop your own audio driver, you must determine whether your driver will work in conjunction with the PortCls system driver (Portcls.sys) or with the AVStream class system driver. If a video stream is not necessary, you will probably want a driver that works with the PortCls system driver. For more information about these two types of system drivers, see the [Introduction to Port Class](introduction-to-port-class.md) and [AVStream Overview](https://docs.microsoft.com/windows-hardware/drivers/stream/avstream-overview) topics.
+When you develop your own audio driver, you must determine whether your driver will work in conjunction with the PortCls system driver (Portcls.sys) or with the AVStream class system driver. If a video stream is not necessary, you will probably want a driver that works with the PortCls system driver. For more information about these two types of system drivers, see the [Introduction to Port Class](introduction-to-port-class.md) and [AVStream Overview](../stream/avstream-overview.md) topics.
 
 The PortCls system driver (Portcls.sys) provides several built-in port drivers to support audio devices that render and capture wave and MIDI streams. Typically, a port driver provides the majority of the functionality for each class of audio subdevice.
 
@@ -84,9 +83,4 @@ Each port driver implements an interface, which it presents to the miniport driv
  
 
  
-
- 
-
-
-
 

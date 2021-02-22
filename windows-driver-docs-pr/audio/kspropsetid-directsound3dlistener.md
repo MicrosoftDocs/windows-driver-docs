@@ -1,7 +1,6 @@
 ---
 title: KSPROPSETID\_DirectSound3DListener
 description: KSPROPSETID\_DirectSound3DListener
-ms.assetid: 37eef2cb-5b45-4ff8-abb9-a685f0b290e3
 keywords: ["KSPROPSETID_DirectSound3DListener"]
 ms.date: 11/28/2017
 ms.localizationpriority: medium

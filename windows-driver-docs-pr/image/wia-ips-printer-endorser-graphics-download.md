@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_DOWNLOAD
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_GRAPHICS\_DOWNLOAD property is used to report whether the Imprinter/Endorser item supports download image (graphic) data transfers. This property is initialized and maintained by the WIA minidriver.
-ms.assetid: AE58548B-CB0A-45FE-A1C6-5C476061B89D
 keywords: ["WIA_IPS_PRINTER_ENDORSER_GRAPHICS_DOWNLOAD Imaging Devices"]
 topic_type:
 - apiref

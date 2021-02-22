@@ -1,7 +1,6 @@
 ---
 title: UEFI display power state protocol
 description: UEFI display power state protocol
-ms.assetid: ab16c548-1402-4819-9fbb-a1d6f55d934a
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

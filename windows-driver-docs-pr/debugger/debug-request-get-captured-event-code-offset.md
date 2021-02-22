@@ -1,7 +1,6 @@
 ---
 title: DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET
 description: DEBUG\_REQUEST\_GET\_CAPTURED\_EVENT\_CODE\_OFFSET
-ms.assetid: cdf05d4f-8a8c-4b52-b36f-9d00575fdb7b
 keywords: ["DEBUG_REQUEST_GET_CAPTURED_EVENT_CODE_OFFSET Windows Debugging"]
 topic_type:
 - apiref
@@ -34,7 +33,7 @@ The method was successful.
 <span id="E_NOINTERFACE"></span><span id="e_nointerface"></span>E\_NOINTERFACE  
 The memory at the instruction pointer for the current event is not valid.
 
-This method may also return error values. See [**Return Values**](https://docs.microsoft.com/windows-hardware/drivers/debugger/hresult-values) for more details.
+This method may also return error values. See [**Return Values**](./hresult-values.md) for more details.
 
 Remarks
 -------
@@ -49,11 +48,4 @@ The memory at the instruction pointer for the current event can be read using th
 [**DEBUG\_REQUEST\_READ\_CAPTURED\_EVENT\_CODE\_STREAM**](debug-request-read-captured-event-code-stream.md)
 
  
-
- 
-
-
-
-
-
 

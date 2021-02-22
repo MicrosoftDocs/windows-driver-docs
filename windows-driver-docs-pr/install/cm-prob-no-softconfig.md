@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_NO_SOFTCONFIG
 description: CM_PROB_NO_SOFTCONFIG
-ms.assetid: 9572de56-6cad-4e20-a1f7-9323f457975a
 keywords:
 - CM_PROB_NO_SOFTCONFIG
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_NO_SOFTCONFIG
+# Code 34 - CM_PROB_NO_SOFTCONFIG
 
-This function is reserved for system use.
-
-The device requires a forced configuration.
+This Device Manager error message indicates that the device requires a forced configuration.
 
 ### Error Code
 

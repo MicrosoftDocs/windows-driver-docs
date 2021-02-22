@@ -1,7 +1,6 @@
 ---
 title: ScannerLocation element
 description: The optional ScannerLocation element specifies the administratively assigned location of the scanner.
-ms.assetid: 564a468d-7a4a-49c6-921a-5d8825c783fb
 keywords: ["ScannerLocation element Imaging Devices"]
 topic_type:
 - apiref

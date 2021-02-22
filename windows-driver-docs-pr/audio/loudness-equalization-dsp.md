@@ -1,7 +1,6 @@
 ---
 title: Loudness Equalization DSP
 description: Loudness Equalization DSP
-ms.assetid: 14b3d8c9-1bfc-4c44-8eba-0bad9e485a19
 ms.date: 11/07/2018
 ms.localizationpriority: medium
 ---

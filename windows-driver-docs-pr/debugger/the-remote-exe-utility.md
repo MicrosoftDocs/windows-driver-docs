@@ -1,7 +1,6 @@
 ---
 title: The Remote.exe Utility
 description: The Remote.exe Utility
-ms.assetid: 3780d632-939e-4adb-82f1-fd7c25706b54
 keywords: ["remote debugging through remote.exe, remote.exe utility"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

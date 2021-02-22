@@ -1,7 +1,6 @@
 ---
 title: UDP-ESP Encapsulation Types
 description: UDP-ESP Encapsulation Types
-ms.assetid: 126d2fd5-778e-43ff-87f6-5b0b54a83bac
 keywords:
 - UDP-encapsulated ESP packets WDK IPsec offload , encapsulation types and subtypes
 - encapsulation WDK UDP-ESP

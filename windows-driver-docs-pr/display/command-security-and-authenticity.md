@@ -1,7 +1,6 @@
 ---
 title: Command Security and Authenticity
 description: Command Security and Authenticity
-ms.assetid: 2a70f974-c34c-4462-a772-d8253f842ed8
 keywords:
 - commands WDK COPP
 - command exchange WDK COPP

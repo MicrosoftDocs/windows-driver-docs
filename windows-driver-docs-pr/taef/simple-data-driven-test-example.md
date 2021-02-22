@@ -1,7 +1,6 @@
 ---
 title: Simple Data Driven Test Example
 description: Simple Data Driven Test Example
-ms.assetid: 59A897C3-C9CD-4e1c-B4BA-F81B3B3E4532
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -76,7 +75,7 @@ If you compare the Managed and Native examples, you will notice that the only di
     24 </Data>
 ```
 
-The parameter types supported in **Native** and **Managed** code, are listed [here](parameter-types-in-table-data-sources.md).
+The parameter types supported in **Native** and **Managed** code, are listed in [Parameter Types in Table Data Sources](parameter-types-in-table-data-sources.md).
 
 If any other data type is specified, the test will throw a warning and consider it to be a String.
 

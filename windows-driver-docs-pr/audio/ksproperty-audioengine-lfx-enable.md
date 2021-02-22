@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIOENGINE\_LFXENABLE
 description: The KSPROPERTY\_AUDIOENGINE\_LFXENABLE property request retrieves or alters the state of the audio engine node, regarding its local effect processing abilities.
-ms.assetid: 60ACA467-6C70-46EE-B307-06CEE140A0AF
 keywords: ["KSPROPERTY_AUDIOENGINE_LFXENABLE Audio Devices"]
 topic_type:
 - apiref

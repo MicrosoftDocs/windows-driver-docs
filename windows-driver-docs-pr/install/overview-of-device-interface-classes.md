@@ -1,7 +1,6 @@
 ---
 title: Overview of Device Interface Classes
 description: Overview of Device Interface Classes
-ms.assetid: e463e3f0-cbc8-490e-a7c4-4837d43c20e3
 keywords:
 - interface classes WDK device installations
 - device interfaces WDK device installations
@@ -31,13 +30,7 @@ Typically, drivers register for only one interface class. However, drivers for d
 
 When a driver registers an instance of a device interface class, the I/O manager associates the device and the device interface class GUID with a symbolic link name. The link name is stored in the registry and persists across system starts. An application that uses the interface can query for instances of the interface and receive a symbolic link name representing a device that supports the interface. The application can then use the symbolic link name as a target for I/O requests.
 
-Do not confuse device interfaces with the interfaces that drivers can export in response to an [**IRP_MN_QUERY_INTERFACE**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-query-interface) request. That IRP is used to pass routine entry points between kernel-mode drivers.
+Do not confuse device interfaces with the interfaces that drivers can export in response to an [**IRP_MN_QUERY_INTERFACE**](../kernel/irp-mn-query-interface.md) request. That IRP is used to pass routine entry points between kernel-mode drivers.
 
  
-
- 
-
-
-
-
 

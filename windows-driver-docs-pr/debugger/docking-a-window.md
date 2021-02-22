@@ -1,7 +1,6 @@
 ---
 title: Docking a Window
 description: Docking a Window
-ms.assetid: e8963a3b-0e86-4f4f-a59e-27cbde6a6ff8
 keywords: ["debugging information windows, docking windows", "docking windows", "window docking"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -17,9 +16,9 @@ To dock a floating window, do one of the following:
 
 -   Double-click the window's title bar.
 
--   Open the shortcut menu by right-clicking the window's title bar or clicking the window's icon in the upper-right corner, and then click **Dock**.
+-   Open the shortcut menu by selecting and holding (or right-clicking) the window's title bar or selecting the window's icon in the upper-right corner, and then select **Dock**.
 
--   In the WinDbg window, on the **Window** menu, click **Dock All**. This command docks all of the windows except those that have the **Always floating** option selected on their individual shortcut menus.
+-   In the WinDbg window, on the **Window** menu, select **Dock All**. This command docks all of the windows except those that have the **Always floating** option selected on their individual shortcut menus.
 
 -   Drag the window to a docking location. This action causes the window to dock unless **Always floating** is selected on the shortcut menu for that window, or unless you press and hold the ALT key as you begin dragging the window.
 
@@ -35,7 +34,7 @@ When you dock a window by dragging it, you can control its destination position.
 
 -   If you drag the mouse pointer to a position that is not inside the WinDbg frame or any other dock and then you release the mouse button, the dragged window remains floating.
 
-All of the preceding rules apply to the mouse pointer location itself. They do not depend on where you originally clicked within the title bar of the window that you are dragging.
+All of the preceding rules apply to the mouse pointer location itself. They do not depend on where you originally selected within the title bar of the window that you are dragging.
 
 ### <span id="re_docking"></span><span id="RE_DOCKING"></span>Re-docking
 

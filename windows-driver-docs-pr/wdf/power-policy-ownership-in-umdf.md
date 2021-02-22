@@ -1,7 +1,6 @@
 ---
 title: Power Policy Ownership in UMDF
 description: Power Policy Ownership in UMDF
-ms.assetid: cf543259-3401-4f3b-a492-53940cea07f3
 keywords:
 - power policy ownership WDK UMDF
 - power policy ownership WDK UMDF , overview
@@ -13,25 +12,25 @@ ms.localizationpriority: medium
 # Power Policy Ownership in UMDF
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
-For each device, one (and only one) of the device's drivers must be the device's *power policy owner*. The power policy owner determines the appropriate [device power state](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-power-states) for a device and sends requests to the device's driver stack whenever the device's power state should change.
+For each device, one (and only one) of the device's drivers must be the device's *power policy owner*. The power policy owner determines the appropriate [device power state](../kernel/device-power-states.md) for a device and sends requests to the device's driver stack whenever the device's power state should change.
 
-Framework-based drivers do not contain code that requests changes in a device's power state, because the framework provides that code. By default, whenever the system enters a [system sleeping state](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-sleeping-states), the framework asks the driver for your device's bus to lower the device power state to D3. (Your driver can change the default behavior so that the framework sets your device's sleep state to D1 or D2, if the device provides wake-up capabilities.) When the system power returns to its [working (S0) state](https://docs.microsoft.com/windows-hardware/drivers/kernel/system-working-state-s0), the framework requests the bus driver to restore your device to its working (D0) state.
+Framework-based drivers do not contain code that requests changes in a device's power state, because the framework provides that code. By default, whenever the system enters a [system sleeping state](../kernel/system-sleeping-states.md), the framework asks the driver for your device's bus to lower the device power state to D3. (Your driver can change the default behavior so that the framework sets your device's sleep state to D1 or D2, if the device provides wake-up capabilities.) When the system power returns to its [working (S0) state](../kernel/system-working-state-s0.md), the framework requests the bus driver to restore your device to its working (D0) state.
 
 The power policy owner is also responsible for enabling and disabling the following device features:
 
--   Your device's ability to enter a [low-power (sleeping) state](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-sleeping-states) when it is idle and the system remains in its working (S0) state
+-   Your device's ability to enter a [low-power (sleeping) state](../kernel/device-sleeping-states.md) when it is idle and the system remains in its working (S0) state
 
 -   Your device's ability to wake itself from a sleeping state when it detects an external event
 
 -   Your device's ability to wake up the entire system from a system sleeping state when it detects an external event
 
-If your device supports these idle power-down and system wake-up capabilities, the power policy owner can also support the framework's [IPowerPolicyCallbackWakeFromS0](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipowerpolicycallbackwakefroms0) and [IPowerPolicyCallbackWakeFromSx](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipowerpolicycallbackwakefromsx) interfaces, which define a set of power policy event callback functions.
+If your device supports these idle power-down and system wake-up capabilities, the power policy owner can also support the framework's [IPowerPolicyCallbackWakeFromS0](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipowerpolicycallbackwakefroms0) and [IPowerPolicyCallbackWakeFromSx](/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-ipowerpolicycallbackwakefromsx) interfaces, which define a set of power policy event callback functions.
 
-By default, UMDF-based drivers are not power policy owners. The device's kernel-mode function driver is the default power policy owner. (If there is no kernel-mode function driver and the bus driver has called [**WdfPdoInitAssignRawDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitassignrawdevice), the bus driver is the power policy owner). If you want your UMDF-based driver to be the power policy owner for a driver stack, the driver must call [**IWDFDeviceInitialize::SetPowerPolicyOwnership**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setpowerpolicyownership), and the kernel-mode default power policy owner must call [**WdfDeviceInitSetPowerPolicyOwnership**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyownership) to disable ownership.
+By default, UMDF-based drivers are not power policy owners. The device's kernel-mode function driver is the default power policy owner. (If there is no kernel-mode function driver and the bus driver has called [**WdfPdoInitAssignRawDevice**](/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitassignrawdevice), the bus driver is the power policy owner). If you want your UMDF-based driver to be the power policy owner for a driver stack, the driver must call [**IWDFDeviceInitialize::SetPowerPolicyOwnership**](/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize-setpowerpolicyownership), and the kernel-mode default power policy owner must call [**WdfDeviceInitSetPowerPolicyOwnership**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetpowerpolicyownership) to disable ownership.
 
-In addition, if you are providing a UMDF-based driver for a USB device, and if you want your driver to be the power policy owner, the driver's INF file must contain an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) that sets the WinUsbPowerPolicyOwnershipDisabled value in the registry. If this REG\_DWORD-sized value is set to any nonzero number, it disables the [WinUSB](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) driver's ability to be the device's power policy owner. The AddReg directive must be in an [**INF DDInstall.HW section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section), as the following example shows.
+In addition, if you are providing a UMDF-based driver for a USB device, and if you want your driver to be the power policy owner, the driver's INF file must contain an [**INF AddReg directive**](../install/inf-addreg-directive.md) that sets the WinUsbPowerPolicyOwnershipDisabled value in the registry. If this REG\_DWORD-sized value is set to any nonzero number, it disables the [WinUSB](../usbcon/winusb.md) driver's ability to be the device's power policy owner. The AddReg directive must be in an [**INF DDInstall.HW section**](../install/inf-ddinstall-hw-section.md), as the following example shows.
 
 ```cpp
 [MyDriver_Install.NT.hw]
@@ -56,12 +55,4 @@ For more information about the power policy owner's responsibilities, see the fo
 -   [Supporting System Wake-Up in UMDF-based Drivers](supporting-system-wake-up-in-umdf-drivers.md)
 
 -   [User Control of Device Idle and Wake Behavior in UMDF](user-control-of-device-idle-and-wake-behavior-in-umdf.md)
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: What is a driver
 description: What is a driver
-ms.assetid: 8a5f51e3-ff5a-4b5d-aa9d-d94b431ee9f7
 keywords:
 - define driver
 - driver definition

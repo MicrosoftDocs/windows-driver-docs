@@ -1,7 +1,6 @@
 ---
 title: EFI_USBFN_IO_PROTOCOL.StartController
 description: EFI_USBFN_IO_PROTOCOL.StartController
-ms.assetid: 431406c3-6b96-4815-a8a0-01100e8a5a5f
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

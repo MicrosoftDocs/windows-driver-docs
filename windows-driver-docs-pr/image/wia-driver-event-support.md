@@ -1,7 +1,6 @@
 ---
 title: WIA Driver Event Support
 description: WIA Driver Event Support
-ms.assetid: 544c756b-4222-4d59-8393-924d3691e0f8
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

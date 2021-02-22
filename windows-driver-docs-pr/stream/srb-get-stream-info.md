@@ -1,7 +1,6 @@
 ---
 title: SRB\_GET\_STREAM\_INFO
 description: SRB\_GET\_STREAM\_INFO
-ms.assetid: ff5412ee-6e4f-43f4-a90d-4a2bdfa5d4ae
 keywords: ["SRB_GET_STREAM_INFO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -33,11 +32,11 @@ Indicates that a hardware failure occurred.
 
 ### Comments
 
-The class driver passes a buffer in *pSrb*-&gt;**CommandData.StreamBuffer** of the size specified by the minidriver in response to the class driver's [**SRB\_INITIALIZE\_DEVICE**](srb-initialize-device.md) request. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. Also see [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_port_configuration_information).
+The class driver passes a buffer in *pSrb*-&gt;**CommandData.StreamBuffer** of the size specified by the minidriver in response to the class driver's [**SRB\_INITIALIZE\_DEVICE**](srb-initialize-device.md) request. The *pSrb* pointer points to a [**HW\_STREAM\_REQUEST\_BLOCK**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_request_block) structure. Also see [**PORT\_CONFIGURATION\_INFORMATION**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_port_configuration_information).
 
-The minidriver fills **CommandData.StreamBuffer** with an [**HW\_STREAM\_DESCRIPTOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_descriptor) that describes the device and the streams it supports. The size of this buffer is indicated by the minidriver in the **StreamDescriptorSize** field in the [**PORT\_CONFIGURATION\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/ns-strmini-_port_configuration_information) structure.
+The minidriver fills **CommandData.StreamBuffer** with an [**HW\_STREAM\_DESCRIPTOR**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_descriptor) that describes the device and the streams it supports. The size of this buffer is indicated by the minidriver in the **StreamDescriptorSize** field in the [**PORT\_CONFIGURATION\_INFORMATION**](/windows-hardware/drivers/ddi/strmini/ns-strmini-_port_configuration_information) structure.
 
-The class driver normally issues this request only once. The minidriver may force the class driver to reissue this request, to update its description of the supported streams, by calling [StreamClassReenumerateStreams](https://docs.microsoft.com/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassreenumeratestreams).
+The class driver normally issues this request only once. The minidriver may force the class driver to reissue this request, to update its description of the supported streams, by calling [StreamClassReenumerateStreams](/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclassreenumeratestreams).
 
 **When the SRB\_GET\_STREAM\_INFO command is received by the minidriver, the minidriver should:**
 

@@ -1,7 +1,6 @@
 ---
 title: Calling ScsiPortXxx from HwScsiFindAdapter
 description: Calling ScsiPortXxx from HwScsiFindAdapter
-ms.assetid: 17cfca31-ff93-4882-872c-ab8af6cdc3cf
 keywords:
 - HwScsiFindAdapter
 - SCSI miniport drivers WDK storage , HwScsiFindAdapter
@@ -15,16 +14,16 @@ ms.localizationpriority: medium
 
 Certain **ScsiPort**_Xxx_ routines can be called *only* from the miniport driver's *HwScsiFindAdapter* routine(s), in particular, the following:
 
-- [**ScsiPortValidateRange**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportvalidaterange) to verify that a miniport driver-supplied, bus-relative access range has not already been claimed in the registry by another driver for its device.
+- [**ScsiPortValidateRange**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportvalidaterange) to verify that a miniport driver-supplied, bus-relative access range has not already been claimed in the registry by another driver for its device.
 
-- [**ScsiPortGetDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetdevicebase) to map the (bus-relative) "physical" address range for an HBA to a system-assigned logical address range that the driver can use to communicate with the HBA by calling the **ScsiPortRead**_Xxx_ and **ScsiPortWrite**_Xxx_ routines with the mapped logical range addresses.
+- [**ScsiPortGetDeviceBase**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetdevicebase) to map the (bus-relative) "physical" address range for an HBA to a system-assigned logical address range that the driver can use to communicate with the HBA by calling the **ScsiPortRead**_Xxx_ and **ScsiPortWrite**_Xxx_ routines with the mapped logical range addresses.
 
-- [**ScsiPortFreeDeviceBase**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportfreedevicebase) to release such a mapped range if *HwScsiFindAdapter* does not find an HBA it can support on a given I/O bus, as indicated by the PORT\_CONFIGURATION\_INFORMATION **SystemIoBusNumber** value.
+- [**ScsiPortFreeDeviceBase**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportfreedevicebase) to release such a mapped range if *HwScsiFindAdapter* does not find an HBA it can support on a given I/O bus, as indicated by the PORT\_CONFIGURATION\_INFORMATION **SystemIoBusNumber** value.
 
-- [**ScsiPortGetUncachedExtension**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetuncachedextension) to allocate a DMA buffer shared between the system and a bus-master HBA.
+- [**ScsiPortGetUncachedExtension**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetuncachedextension) to allocate a DMA buffer shared between the system and a bus-master HBA.
 
 In addition to these four routines, there is one routine that can only be called from the miniport driver's *HwScsiFindAdapter* routine, *or* from *HwScsiAdapterControl* when the control type is **ScsiSetRunningConfig**:
 
-- [**ScsiPortGetBusData**](https://docs.microsoft.com/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetbusdata) to get BUS_DATA_TYPE-specific configuration information, such as bus-relative device memory (access) ranges, interrupt vector or IRQL, and DMA channel or port.
+- [**ScsiPortGetBusData**](/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetbusdata) to get BUS_DATA_TYPE-specific configuration information, such as bus-relative device memory (access) ranges, interrupt vector or IRQL, and DMA channel or port.
 
 For more information about these **ScsiPort**_Xxx_ routines, see [SCSI Port Driver Support Routines](scsi-port-driver-support-routines.md).

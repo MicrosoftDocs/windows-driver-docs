@@ -1,7 +1,6 @@
 ---
 title: Processor power management (PPM) notifications
 description: Each processor power management (PPM) notification that the PEP's AcceptProcessorNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
-ms.assetid: 4BA89D0F-78F0-44DF-BC9B-0F9F3256CD59
 keywords: [AcceptProcessorNotification callback]
 ms.date: 01/17/2018
 ms.localizationpriority: medium
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 
 # Processor power management (PPM) notifications
 
-Each processor power management (PPM) notification that the PEP's [*AcceptProcessorNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm) callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
+Each processor power management (PPM) notification that the PEP's [*AcceptProcessorNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm) callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
 
 In this call, the Notification parameter is set to a PEP_NOTIFY_PPM_XXX constant value that indicates the notification type. The Data parameter points to a PEP_PPM_XXX structure type that is associated with this notification type.
 
@@ -313,7 +312,7 @@ For a PEP_NOTIFY_PPM_PERF_CONSTRAINTS notification, the AcceptProcessorNotificat
  
 This notification informs the PEP that the current operating performance of the processor should be changed.
 
-The following describe parameters to [*AcceptProcessorNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm).
+The following describe parameters to [*AcceptProcessorNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm).
 
 *Handle*
 
@@ -325,7 +324,7 @@ The value **PEP_NOTIFY_PPM_PERF_SET**.
 
 *Data*
 
-A pointer to a [**PEP_PPM_PERF_SET**](https://docs.microsoft.com/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_ppm_perf_set) structure.
+A pointer to a [**PEP_PPM_PERF_SET**](/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_ppm_perf_set) structure.
 
 **Remarks**
 
@@ -881,7 +880,7 @@ DISPATCH_LEVEL
  
 ## PEP_NOTIFY_PPM_PERF_SET_STATE 
 
-The following describe parameters to [*AcceptProcessorNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm).
+The following describe parameters to [*AcceptProcessorNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyppm).
 
 *Handle*
 
@@ -893,7 +892,7 @@ The value **PEP_NOTIFY_PPM_PERF_SET_STATE**.
 
 *Data*
 
-A pointer to a [**PEP_PPM_PERF_SET_STATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_ppm_perf_set_state) structure.
+A pointer to a [**PEP_PPM_PERF_SET_STATE**](/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_ppm_perf_set_state) structure.
 
 **Remarks**
 
@@ -959,6 +958,4 @@ A pointer to a PEP_PPM_RESUME_FROM_SYSTEM_STATE structure.
 **Remarks**
 
  An optional notification that notifies the PEP that the system has just resumed from a system power state. This notification is sent to all processors simultaneously just before processors are released to resume passive level work.  This notification is sent at DISPATCH_LEVEL, with all processors at dispatch. This notification is always executed on the target processor. 
-
- 
 

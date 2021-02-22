@@ -1,7 +1,6 @@
 ---
 title: D3DKMT\_OUTPUTDUPL\_GET\_FRAMEINFO structure
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: e358f8b6-623b-4dd0-82d7-5b46f31b26c7
+description: Learn about the D3DKMT\_OUTPUTDUPL\_GET\_FRAMEINFO structure, which is reserved for system use. Do not use in your driver.
 keywords: ["D3DKMT_OUTPUTDUPL_GET_FRAMEINFO structure Display Devices"]
 topic_type:
 - apiref

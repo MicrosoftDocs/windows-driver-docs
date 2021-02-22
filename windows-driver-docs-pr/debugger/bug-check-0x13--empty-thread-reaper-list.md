@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x13 EMPTY_THREAD_REAPER_LIST
 description: The EMPTY_THREAD_REAPER_LIST bug check has a value of 0x00000013.This bug check appears very infrequently.
-ms.assetid: 069b4d99-2bf5-4238-b80e-52eb6c732175
 keywords: ["Bug Check 0x13 EMPTY_THREAD_REAPER_LIST", "EMPTY_THREAD_REAPER_LIST"]
 ms.date: 05/23/2017
 topic_type:

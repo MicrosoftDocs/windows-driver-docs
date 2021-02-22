@@ -1,7 +1,6 @@
 ---
 title: Log Session Parameter Options
 description: Log Session Parameter Options
-ms.assetid: 5398dfa7-abeb-443b-ab64-73b6599c8e73
 keywords:
 - trace sessions WDK , advanced options
 - trace sessions WDK , log session parameter options
@@ -105,7 +104,7 @@ For more information about trace levels, see the description of the *EnableLevel
 <span id="WinDbg"></span><span id="windbg"></span><span id="WINDBG"></span>**WinDbg**  
 Redirects trace messages to KD or WinDbg, whichever is enabled, in addition to displaying them in the TraceView window. This option also sets the buffer size to 3 KB, the maximum size that is permitted by WinDbg. The value that is displayed for the **Buffer Size** option is ignored.
 
-To display trace messages in a debugger, wmitrace.dll and traceprt.dll must be in the debugger's search path on the host computer. These DLLs are included in [Debugging Tools for Windows](https://go.microsoft.com/fwlink/p/?linkid=8708) Also, to enable the debugger to find the [trace message format (.tmf) files](trace-message-format-file.md) for the trace messages, the TMF files must be in the debugger's search path on the host computer. To set the debugger's search path, use the !wmitrace.searchpath specialized debugger extension or set the value of the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable. For information about WinDbg and WMI Tracing Extensions, see Debugging Tools for Windows.
+To display trace messages in a debugger, wmitrace.dll and traceprt.dll must be in the debugger's search path on the host computer. These DLLs are included in [Debugging Tools for Windows](https://developer.microsoft.com/windows/hardware/) Also, to enable the debugger to find the [trace message format (.tmf) files](trace-message-format-file.md) for the trace messages, the TMF files must be in the debugger's search path on the host computer. To set the debugger's search path, use the !wmitrace.searchpath specialized debugger extension or set the value of the %TRACE\_FORMAT\_SEARCH\_PATH% environment variable. For information about WinDbg and WMI Tracing Extensions, see Debugging Tools for Windows.
 
 <span id="Ignore_TraceView"></span><span id="ignore_traceview"></span><span id="IGNORE_TRACEVIEW"></span>**Ignore TraceView**  
 Suppresses trace messages that result from TraceView operations.

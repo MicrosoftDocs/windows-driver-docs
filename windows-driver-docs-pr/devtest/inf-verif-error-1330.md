@@ -1,7 +1,6 @@
 ---
 title: InfVerif Error 1330
 description: InfVerif (InfVerif.exe) is a tool that you can use to test a driver INF file. In addition to reporting INF syntax problems, the tool reports if the INF file is universal.
-ms.assetid: 6F565E1C-C6FC-4637-B476-FE4E4672CCC3
 ms.date: 03/05/2019
 ms.localizationpriority: medium
 ---
@@ -18,7 +17,7 @@ DesiredFileName1,SourceFile1A ; Used by DDInstallSection A
 DesiredFileName1,SourceFile1B ; Used by DDInstallSection B
 ```
 
-When multiple [DDInstall sections](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) copy different source files to a single destination file using the [CopyFiles](https://docs.microsoft.com/windows-hardware/drivers/install/inf-copyfiles-directive) directive, these **CopyFiles** could conflict if the **DDInstall sections** all get processed on the same system. Examples of this is if two different devices are using the same driver but different install sections, or in some offline driver imaging and deployment scenarios. Because multiple source files from the different **DDInstall sections** get copied to the same exact single destination file, the different source files from different **DDInstall sections** overwrite each other so that the last file copied is the one placed in the destination, which may not be the expected results.
+When multiple [DDInstall sections](../install/inf-ddinstall-section.md) copy different source files to a single destination file using the [CopyFiles](../install/inf-copyfiles-directive.md) directive, these **CopyFiles** could conflict if the **DDInstall sections** all get processed on the same system. Examples of this is if two different devices are using the same driver but different install sections, or in some offline driver imaging and deployment scenarios. Because multiple source files from the different **DDInstall sections** get copied to the same exact single destination file, the different source files from different **DDInstall sections** overwrite each other so that the last file copied is the one placed in the destination, which may not be the expected results.
 
 ## Cases
 
@@ -94,7 +93,7 @@ ServiceBinary  = %12%\ServiceBinaryB
 
 ### Different **DDInstall sections** rename a source file to get copied over to a destination file location accessed by the driver or a User Mode application
 
-In this case, the driver is accessing a fixed file location that is being used as a dynamic file location. To have one dynamic variable that keeps track of multiple source files, you can use an [AddReg](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) HKR entry to store the path which can be retrieved at runtime. This works because **AddReg** HKR entries are stored relative to a device.
+In this case, the driver is accessing a fixed file location that is being used as a dynamic file location. To have one dynamic variable that keeps track of multiple source files, you can use an [AddReg](../install/inf-addreg-directive.md) HKR entry to store the path which can be retrieved at runtime. This works because **AddReg** HKR entries are stored relative to a device.
 
 The **AddReg** HKR entry specifies the file locations for source files instead of choosing a single destination file to copy the source files to:
 
@@ -109,27 +108,27 @@ HKR,, FileName1Path, "%13%\SourceFile1B"
 Rather than access a fixed file location, the location of the target file can be retrieved from a setting on the device. The target file
 location is stored in a registry value by the INF and retrieved through API calls in the driver.
 
-To provision the values through an INF, use the [INF AddReg directive](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-section) or [INF DDInstall.HW section](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-hw-section).
+To provision the values through an INF, use the [INF AddReg directive](../install/inf-addreg-directive.md) using HKR *reg-root* entries in an *add-registry-section* referenced from an [INF DDInstall section](../install/inf-ddinstall-section.md) or [INF DDInstall.HW section](../install/inf-ddinstall-hw-section.md).
 
 Because registry values keep track of the target file instead of a single destination file location, the driver will have to access those
 files differently. To access the target file, the driver now needs to call into one of the following APIs to open the registry value and have it return the location of that source file:
 
 #### WDM
 
-* [**IoOpenDeviceRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey)
+* [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey)
 
 #### WDF
 
-* [**WdfDeviceOpenRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceopenregistrykey)
+* [**WdfDeviceOpenRegistryKey**](/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceopenregistrykey)
 
-* [**WdfFdoInitOpenRegistryKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitopenregistrykey)
+* [**WdfFdoInitOpenRegistryKey**](/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitopenregistrykey)
 
 #### Other User Mode code
 
-* [**CM_Open_DevNode_Key**](https://docs.microsoft.com/windows/desktop/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key)
+* [**CM_Open_DevNode_Key**](/windows/win32/api/cfgmgr32/nf-cfgmgr32-cm_open_devnode_key)
 
 > [!NOTE]
-> In this example, the destination location of the files the INF payloads does not affect the solution.  However, to use best practices, the example uses [DIRID](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids) 13 since it provides faster installs through fewer file copies.  Please see “[Using DIRIDs](https://docs.microsoft.com/windows-hardware/drivers/install/using-dirids)” and “[Run from the driver store](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios#run-from-the-driver-store)” for more information.
+> In this example, the destination location of the files the INF payloads does not affect the solution.  However, to use best practices, the example uses [DIRID](../install/using-dirids.md) 13 since it provides faster installs through fewer file copies.  Please see “[Using DIRIDs](../install/using-dirids.md)” and “[Run from the driver store](../develop/dch-example.md#run-from-the-driver-store)” for more information.
 
 The following example code shows how to update an INF that uses old syntax.
 
@@ -252,7 +251,7 @@ After (Dynamic Filename):
 
 When accessing the target file from User Mode, you won't have the device context that a driver has. In this case you need to add an additional step. Before opening the key handle, find the device that contains the registry value indicating what file to load.
 
-See [Run from the driver store](https://docs.microsoft.com/windows-hardware/drivers/develop/universal-driver-scenarios#run-from-the-driver-store) to learn how to filter a device list to find your device and open the handle to the registry location in user mode, using Dirid 13 for best practices.
+See [Run from the driver store](../develop/dch-example.md#run-from-the-driver-store) to learn how to filter a device list to find your device and open the handle to the registry location in user mode, using Dirid 13 for best practices.
 
 ## Errors 1331 - 1333
 

@@ -1,7 +1,6 @@
 ---
 title: PC cards with incomplete configuration register addresses
 description: Information on supporting PC cards with incomplete configuration register addresses
-ms.assetid: 2a708ca5-a119-4ef5-81ee-d9e40e7a5255
 keywords:
 - incomplete configuration registers WDK multifunction devices
 - system-supplied multifunction bus drivers WDK
@@ -35,11 +34,11 @@ The vendor of such a device must provide the following:
 
     The INF files can be the same files that are used when the functions are packaged as individual devices. The INF files do not need any special multifunction semantics.
 
-The custom INF for such a multifunction device must contain at least one [**INF DDInstall.LogConfigOverride section**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-ddinstall-logconfigoverride-section). The override section must contain an **MfCardConfig** entry for each function, identifying the location of each set of configuration registers.
+The custom INF for such a multifunction device must contain at least one [**INF DDInstall.LogConfigOverride section**](../install/inf-ddinstall-logconfigoverride-section.md). The override section must contain an **MfCardConfig** entry for each function, identifying the location of each set of configuration registers.
 
 The INF must restate all the resource requirements specified by the device because if override configurations are present in the INF, the PnP manager does not use any device resource requirements from the device.
 
-Specify the **MfCardConfig** entries using the syntax described in [**INF LogConfig Directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-logconfig-directive).
+Specify the **MfCardConfig** entries using the syntax described in [**INF LogConfig Directive**](../install/inf-logconfig-directive.md).
 
 For example, consider the following excerpt from a custom INF for a multifunction PC Card device that contains a modem and a network adapter:
 
@@ -81,9 +80,4 @@ Include more than one *DDInstall*.**Override***N* section in the INF to specify 
 If the device uses a memory window that is not based at zero, the *DDInstall*.**Override***N* section(s) must also include a **PcCardConfig** entry. If an override section has both an **MfCardConfig** entry and a **PcCardConfig** entry, the PCMCIA bus driver ignores the *ConfigIndex* value in the **PcCardConfig** entry and just uses the *MemoryCardBaseN* information. See [Supporting PC Cards That Have Incomplete Configuration Registers](supporting-pc-cards-that-have-incomplete-configuration-registers.md) for more information about the **PcCardConfig** entry.
 
  
-
- 
-
-
-
 

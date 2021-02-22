@@ -1,7 +1,6 @@
 ---
 title: RotationValue element
 description: The required RotationValue element specifies a single rotation value supported by the scan device.
-ms.assetid: 89b8527a-309a-4344-bf6e-3155bb056acf
 keywords: ["RotationValue element Imaging Devices"]
 topic_type:
 - apiref

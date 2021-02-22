@@ -1,7 +1,6 @@
 ---
 title: ACPI notifications
 description: Each ACPI notification that the PEP's AcceptAcpiNotification callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter.
-ms.assetid: E4DD4386-8008-463B-B048-DE8E559A7456
 keywords: [AcceptAcpiNotification]
 ms.date: 01/17/2018
 ms.localizationpriority: medium
@@ -9,7 +8,7 @@ ms.localizationpriority: medium
 
 # ACPI notifications
 
-Each ACPI notification that the PEP's [*AcceptAcpiNotification*](https://docs.microsoft.com/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyacpi) callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
+Each ACPI notification that the PEP's [*AcceptAcpiNotification*](/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pepcallbacknotifyacpi) callback routine receives is accompanied by a Notification parameter that indicates the type of notification, and a Data parameter that points to a data structure that contains the information for the specified notification type.
 
 In this call, the Notification parameter is set to a PEP_NOTIFY_ACPI_XXX constant value that indicates the notification type. The Data parameter points to a PEP_ACPI_XXX structure type that is associated with this notification type.
 
@@ -184,6 +183,3 @@ After the PEP calls the RequestWorker routine to request a work item, PoFx respo
 On entry, the PEP should assume that the PEP_WORK structure is uninitialized. To handle this notification, the PEP should set the WorkInformation member to point to a PEP-allocated PEP_WORK_INFORMATION structure that describes the work that is being requested. In addition, the PEP should set the NeedWork member of the PEP_WORK structure to TRUE to confirm that the PEP has handled the PEP_NOTIFY_ACPI_WORK notification and that the WorkInformation member points to a valid PEP_WORK_INFORMATION structure. If the PEP fails to handle the notification or is unable to allocate the PEP_WORK_INFORMATION structure, the PEP should set the WorkInformation member to NULL and set the NeedWork member to FALSE.
 
 For a PEP_NOTIFY_ACPI_WORK notification, the AcceptAcpiNotification routine is always called at IRQL = PASSIVE_LEVEL.
- 
-
-

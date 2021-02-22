@@ -1,7 +1,6 @@
 ---
 title: MPEG and Progressive Content
 description: MPEG and Progressive Content
-ms.assetid: 6973011a-dcee-4411-9382-8c0af2bd85b1
 keywords:
 - MPEG WDK video port extensions
 - progressive content identification WDK video port extensions

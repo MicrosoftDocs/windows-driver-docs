@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_CUR\_INTENT
 description: The WIA\_IPS\_CUR\_INTENT property contains the current settings for an application's intended use of an image. The WIA minidriver creates and maintains this property.
-ms.assetid: 9fa732bb-9281-441e-91b5-ce6eec67ea8f
 keywords: ["WIA_IPS_CUR_INTENT Imaging Devices"]
 topic_type:
 - apiref

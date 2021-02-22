@@ -1,7 +1,6 @@
 ---
 title: .context (Set User-Mode Address Context)
 description: The .context command specifies which page directory of a process will be used for the user-mode address context, or displays the current user-mode address context.
-ms.assetid: f859b9bf-c05a-44cd-b6f0-8ff4561ddd4e
 keywords: ["Set User-Mode Address Context (.context) command", "addresses, Set User-Mode Address Context (.context) command", "context, Set User-Mode Address Context (.context) command", ".context (Set User-Mode Address Context) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -64,7 +63,7 @@ Generally, when you are doing kernel debugging, the only visible user-mode addre
 
 The **.context** command instructs the kernel debugger to use the specified page directory as the *user-mode address context*. After this command is executed, the debugger will have access to this virtual address space. The page tables for this address space will be used to interpret all user-mode memory addresses. This allows you to read and write to this memory.
 
-The [**.process (Set Process Context)**](-process--set-process-context-.md) command has a similar effect. However, the **.context** command sets the user-mode address context to a specific page directory, while the **.process** command sets the *process context* to a specific process. On an x86 processor, these two commands have essentially the same effect. However, on an Itanium processor, a single process may have more than one page directory. In this case, the **.process** command is more powerful, because it will allow access to all the page directories associated with a process. See [Process Context](changing-contexts.md#process-context) for more details.
+The [**.process (Set Process Context)**](-process--set-process-context-.md) command has a similar effect. However, the **.context** command sets the user-mode address context to a specific page directory, while the **.process** command sets the *process context* to a specific process. On an x86 processor, these two commands have essentially the same effect. See [Process Context](changing-contexts.md#process-context) for more details.
 
 If you are doing live debugging, you should issue a [**.cache forcedecodeuser**](-cache--set-cache-size-.md) command in addition to the **.context** command. This forces the debugger to look up the physical addresses of the memory space needed. (This can be slow, because it often means a huge amount of data must be transferred across the debug cable.)
 

@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_PIN_EX2
 description: OID_WWAN_PIN_EX2 accesses a UICC linear fixed or cyclic file, the structure type of which is WwanUiccFileStructureCyclic or WwanUiccFileStructureLinear.
-ms.assetid: F5D0A1B8-4D7E-469A-B738-2965D254868E
 ms.date: 04/10/2019
 keywords: 
 - OID_WWAN_PIN_EX2 Network Drivers Starting with Windows Vista
@@ -13,9 +12,9 @@ ms.custom: 19H1
 
 OID_WWAN_PIN_EX2 sets or returns expanded information related to Personal Identification Numbers (PINs). OID_WWAN_PIN_EX2 is similar to [OID_WWAN_PIN_EX](oid-wwan-pin-ex.md), but extends it to support multi-app UICC cards.
 
-Query payloads contain an [**NDIS_WWAN_PIN_APP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_app) structure specifying the target application ID whose PIN is being queried. Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_PIN_INFO](ndis-status-wwan-pin-info.md) status notification containing an [**NDIS_WWAN_PIN_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure that describes the PIN for the application. 
+Query payloads contain an [**NDIS_WWAN_PIN_APP**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_app) structure specifying the target application ID whose PIN is being queried. Miniport drivers must process Query requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_PIN_INFO](ndis-status-wwan-pin-info.md) status notification containing an [**NDIS_WWAN_PIN_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure that describes the PIN for the application. 
 
-Set payloads contain an [**NDIS_WWAN_SET_PIN_EX2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin_ex2) structure specifying the PIN action to take for the application. Miniport drivers must process Set requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_PIN_INFO](ndis-status-wwan-pin-info.md) status notification containing an [**NDIS_WWAN_PIN_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure that describes the PIN state for the application.
+Set payloads contain an [**NDIS_WWAN_SET_PIN_EX2**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin_ex2) structure specifying the PIN action to take for the application. Miniport drivers must process Set requests asynchronously, initially returning NDIS_STATUS_INDICATION_REQUIRED to the original request before later sending an [NDIS_STATUS_WWAN_PIN_INFO](ndis-status-wwan-pin-info.md) status notification containing an [**NDIS_WWAN_PIN_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info) structure that describes the PIN state for the application.
 
 ## Remarks
 
@@ -27,10 +26,8 @@ For more information about usage of this OID, see [MB UICC application and file 
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Version | Windows 10, version 1903 |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows 10, version 1903
+**Header**: Ntddndis.h (include Ndis.h)
 
 ## See also
 
@@ -38,8 +35,8 @@ For more information about usage of this OID, see [MB UICC application and file 
 
 [NDIS_STATUS_WWAN_PIN_INFO](ndis-status-wwan-pin-info.md)
 
-[**NDIS_WWAN_PIN_APP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_app)
+[**NDIS_WWAN_PIN_APP**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_app)
 
-[**NDIS_WWAN_SET_PIN_EX2**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin_ex2)
+[**NDIS_WWAN_SET_PIN_EX2**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_set_pin_ex2)
 
-[**NDIS_WWAN_PIN_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info)
+[**NDIS_WWAN_PIN_INFO**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_pin_info)

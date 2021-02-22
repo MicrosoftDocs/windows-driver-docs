@@ -1,7 +1,6 @@
 ---
 title: VMQ Interrupt Requirements
 description: VMQ Interrupt Requirements
-ms.assetid: 7ECC9031-D41B-4664-963D-F1C20B297B7C
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -11,15 +10,15 @@ ms.localizationpriority: medium
 
 A miniport driver that supports the virtual machine queue (VMQ) functionality must also support the following interrupt allocation requirements:
 
--   The miniport driver must support MSI-X. The driver must set the **NDIS\_RECEIVE\_FILTER\_MSI\_X\_SUPPORTED** flag in the **SupportedQueueProperties** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
+-   The miniport driver must support MSI-X. The driver must set the **NDIS\_RECEIVE\_FILTER\_MSI\_X\_SUPPORTED** flag in the **SupportedQueueProperties** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure.
 
-    The driver returns this structure in the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure that the driver uses in its call to the [**NdisMSetMiniportAttributes**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
+    The driver returns this structure in the [**NDIS\_MINIPORT\_ADAPTER\_HARDWARE\_ASSIST\_ATTRIBUTES**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes) structure that the driver uses in its call to the [**NdisMSetMiniportAttributes**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes) function.
 
--   The miniport driver must call the [**NdisGetRssProcessorInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetrssprocessorinformation) function to obtain processor information for allocating interrupt vectors. It must not rely on registry keys or information obtained from other sources for interrupt allocation.
+-   The miniport driver must call the [**NdisGetRssProcessorInformation**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetrssprocessorinformation) function to obtain processor information for allocating interrupt vectors. It must not rely on registry keys or information obtained from other sources for interrupt allocation.
 
-    [**NdisGetRssProcessorInformation**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetrssprocessorinformation) returns information about the set of processors that a miniport driver can use for RSS and VMQ. This information is contained in an [**NDIS\_RSS\_PROCESSOR\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
+    [**NdisGetRssProcessorInformation**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetrssprocessorinformation) returns information about the set of processors that a miniport driver can use for RSS and VMQ. This information is contained in an [**NDIS\_RSS\_PROCESSOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
 
--   The miniport driver should allocate only one interrupt vector for each processor that is specified in the [**NDIS\_RSS\_PROCESSOR\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
+-   The miniport driver should allocate only one interrupt vector for each processor that is specified in the [**NDIS\_RSS\_PROCESSOR\_INFO**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_rss_processor_info) structure.
 
     The miniport driver should allocate no more than two interrupt vectors for other events that are not related to send or receive packet operations. For example, the driver could allocate an IDT for link status events.
 
@@ -55,10 +54,4 @@ A miniport driver that supports the virtual machine queue (VMQ) functionality mu
      
 
  
-
- 
-
-
-
-
 

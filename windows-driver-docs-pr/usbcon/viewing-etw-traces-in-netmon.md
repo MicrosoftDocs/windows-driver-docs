@@ -1,5 +1,5 @@
 ---
-Description: You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon.
+description: You can view USB ETW event traces using Microsoft Network Monitor, also referred to as Netmon.
 title: Overview of USB ETW traces in Netmon
 ms.date: 04/20/2017
 ms.localizationpriority: medium

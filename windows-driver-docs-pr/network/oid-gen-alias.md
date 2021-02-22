@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_ALIAS
 description: As a query, use the OID_GEN_ALIAS OID to obtain the alias string for an interface (ifAlias from RFC 2863). Version Information Windows Vista and laterSupported. NDIS 6.0 and later miniport driversNot requested. For NDIS interface providers only.
-ms.assetid: ff5e6494-aa4e-4a0a-b773-64b612236c8c
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_ALIAS Network Drivers Starting with Windows Vista
@@ -24,7 +23,7 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-An [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) provider can assign unique alias strings for its interfaces. If the name should remain associated with the same interface, the provider can make the strings persistent after the computer restarts and reinitializations.
+An [NDIS network interface](./ndis-network-interfaces2.md) provider can assign unique alias strings for its interfaces. If the name should remain associated with the same interface, the provider can make the strings persistent after the computer restarts and reinitializations.
 
 Only NDIS network interface providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
@@ -49,12 +48,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
- 
-
-
-
 

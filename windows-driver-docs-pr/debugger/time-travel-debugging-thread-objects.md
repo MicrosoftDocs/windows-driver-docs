@@ -6,7 +6,9 @@ ms.localizationpriority: medium
 ---
 
 # TTD Thread Objects
+
 ## Description
+
 *TTD Thread* objects are used to give information about threads and their lifetime during a time travel trace.
 
 ## Properties
@@ -78,7 +80,3 @@ ntdll!NtTestAlert+0x14:
 [Time Travel Debugging - Introduction to Time Travel Debugging objects](time-travel-debugging-object-model.md)
 
 [Time Travel Debugging - Overview](time-travel-debugging-overview.md)
-
----
-
-

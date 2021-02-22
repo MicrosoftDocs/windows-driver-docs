@@ -1,7 +1,6 @@
 ---
 title: New Root-Level-Only GPD Attributes for Windows Vista
 description: New Root-Level-Only GPD Attributes for Windows Vista
-ms.assetid: 09f38459-6062-4d2a-9aee-929aa60193cf
 keywords:
 - root-level-only attributes WDK Unidrv
 - general printer attributes WDK Unidrv , root-level-only
@@ -196,7 +195,7 @@ The **UseImageForHatchBrush?** attribute uses the following GPD syntax.
 *Endif: WINNT_60 
 ```
 
-In Microsoft Windows Server 2003 or Windows XP, when Unidrv prints in HP-GL/2 mode, if a hatch brush is received in the [**DrvRealizeBrush**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvrealizebrush) function, Unidrv sends a command so that the printer selects the appropriate hatch brush. Unidrv does not control how the hatch brush is rendered. For example, spacing between the lines is usually controlled by the resolution. On higher resolution, the spacing gets small, while on lower resolution, spacing would be greater. Therefore, a document might print differently if different resolution is used.
+In Microsoft Windows Server 2003 or Windows XP, when Unidrv prints in HP-GL/2 mode, if a hatch brush is received in the [**DrvRealizeBrush**](/windows/win32/api/winddi/nf-winddi-drvrealizebrush) function, Unidrv sends a command so that the printer selects the appropriate hatch brush. Unidrv does not control how the hatch brush is rendered. For example, spacing between the lines is usually controlled by the resolution. On higher resolution, the spacing gets small, while on lower resolution, spacing would be greater. Therefore, a document might print differently if different resolution is used.
 
 In Windows Vista, if the GPD specifies the **UseImageForHatchBrush?** attribute, Unidrv renders the hatch brush onto a bitmap surface and then sends that bitmap to the device. Unidrv, therefore, has some control on how the hatch brush is rendered.
 
@@ -245,9 +244,4 @@ The following code example shows an example of this attribute in a partial GPD f
 ```
 
  
-
- 
-
-
-
 

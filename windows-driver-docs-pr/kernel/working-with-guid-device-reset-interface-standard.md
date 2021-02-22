@@ -14,9 +14,9 @@ Two types of device resets are available through this interface:
 
 - Function-level device reset. In this case, the reset operation is restricted to a specific device, and is not visible to other devices. The device stays connected to the bus throughout the reset and returns to a valid state (initial state) after the reset. This type of reset has the least impact on the system. 
 
-- This type of reset can be implemented either by the bus driver or by ACPI firmware. The bus driver can implement a function-level reset if the bus specification defines an in-band reset mechanism that meets the requirement. ACPI firmware can optionally override a bus driver-defined function-level reset with its own implementation.
+    - This type of reset can be implemented either by the bus driver or by ACPI firmware. The bus driver can implement a function-level reset if the bus specification defines an in-band reset mechanism that meets the requirement. ACPI firmware can optionally override a bus driver-defined function-level reset with its own implementation.
 
-Platform-level device reset. In this case, the reset operation causes the device to be reported as missing from the bus. The reset operation affects a specific device and all other devices that are connected to it via the same power rail or reset line. This type of reset has the most impact on the system. The OS will tear down and rebuild the stacks of all affected devices to ensure that everything restarts from a blank state.
+- Platform-level device reset. In this case, the reset operation causes the device to be reported as missing from the bus. The reset operation affects a specific device and all other devices that are connected to it via the same power rail or reset line. This type of reset has the most impact on the system. The OS will tear down and rebuild the stacks of all affected devices to ensure that everything restarts from a blank state.
 
 Starting in Windows 10, these registry entries under the `HKLM\SYSTEM\CurrentControlSet\Control\Pnp` key configures the reset operation: 
 
@@ -133,7 +133,7 @@ The preceding command generates SSDT.aml.
 4. Enable test signing on the test system. 
 
 ```console
-bcdedit /set GUID_DEVICE_RESET_INTERFACE_STANDARD testsigning on
+bcdedit /set testsigning on
 ```
 
 5. Reboot the test system. 
@@ -166,5 +166,4 @@ ACPI!_DESCRIPTION_HEADER
 
 ## See Also
 
-[_DEVICE_RESET_INTERFACE_STANDARD](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_reset_interface_standard) 
-
+[_DEVICE_RESET_INTERFACE_STANDARD](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_reset_interface_standard)

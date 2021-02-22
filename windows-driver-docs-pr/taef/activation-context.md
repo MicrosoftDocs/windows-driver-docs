@@ -1,7 +1,6 @@
 ---
 title: Activation Context
 description: Activation Context
-ms.assetid: 76584379-2AEF-47e0-B14E-C7698903658F
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -28,7 +27,7 @@ Providing the 'Activation context' enables users to choose a particular version 
 </assembly>
 ```
 
-The manifest file, **'Comctlv6.manifest'**, that is shown above specifies that version 6 of the comctl32.dll is to be used during test execution. To learn more about manifest files, see [Manifest files reference](https://docs.microsoft.com/windows/desktop/SbsCs/manifest-files-reference)
+The manifest file, **'Comctlv6.manifest'**, that is shown above specifies that version 6 of the comctl32.dll is to be used during test execution. To learn more about manifest files, see [Manifest files reference](/windows/desktop/SbsCs/manifest-files-reference)
 
 ## <span id="Specifying_ActivationContext_manifest_at_the_Command_Prompt"></span><span id="specifying_activationcontext_manifest_at_the_command_prompt"></span><span id="SPECIFYING_ACTIVATIONCONTEXT_MANIFEST_AT_THE_COMMAND_PROMPT"></span>Specifying ActivationContext manifest at the Command Prompt
 
@@ -51,12 +50,3 @@ If you intend to run only specific test cases under a given activation context, 
 ```
 
 Note that the 'ActivationContext' property can be set at class and assembly levels like other metadata properties.
-
-
-
-
-
-
-
-
-

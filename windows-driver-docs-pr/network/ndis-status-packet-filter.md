@@ -1,7 +1,6 @@
 ---
 title: NDIS_STATUS_PACKET_FILTER
 description: The NDIS_STATUS_PACKET_FILTER status indicates a packet filter change to overlying drivers.
-ms.assetid: 7633772a-cd3d-4030-b97a-9d503341fdeb
 ms.date: 07/18/2017
 keywords:
  - NDIS_STATUS_PACKET_FILTER Network Drivers Starting with Windows Vista
@@ -20,9 +19,9 @@ NDIS does not guarantee that the packet filter has changed when NDIS generates t
 
 NDIS filter drivers can also generate the NDIS\_STATUS\_PACKET\_FILTER status indication.
 
-NDIS supplies a bitwise OR of the filter type flags in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure. For a list of the filter type flags, see the [OID\_GEN\_CURRENT\_PACKET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-packet-filter) OID. For additional information about packet filters, see [OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-packet-filters).
+NDIS supplies a bitwise OR of the filter type flags in the **StatusBuffer** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure. For a list of the filter type flags, see the [OID\_GEN\_CURRENT\_PACKET\_FILTER](./oid-gen-current-packet-filter.md) OID. For additional information about packet filters, see [OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](./oid-gen-supported-packet-filters.md).
 
-The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(ULONG).
+The **StatusBufferSize** member of the [**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication) structure is set to sizeof(ULONG).
 
 Requirements
 ------------
@@ -47,16 +46,11 @@ Requirements
 ## See also
 
 
-[**NDIS\_STATUS\_INDICATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
+[**NDIS\_STATUS\_INDICATION**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication)
 
-[OID\_GEN\_CURRENT\_PACKET\_FILTER](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-current-packet-filter)
+[OID\_GEN\_CURRENT\_PACKET\_FILTER](./oid-gen-current-packet-filter.md)
 
-[OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-supported-packet-filters)
-
- 
+[OID\_GEN\_SUPPORTED\_PACKET\_FILTERS](./oid-gen-supported-packet-filters.md)
 
  
-
-
-
 

@@ -2,7 +2,6 @@
 title: IRP_MJ_POWER
 description: All drivers must be prepared to service IRP_MJ_POWER requests in a DispatchPower routine.
 ms.date: 08/12/2017
-ms.assetid: ca53ceef-2755-49d3-aab9-0d12a0e51e75
 keywords:
  - IRP_MJ_POWER Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # IRP\_MJ\_POWER
 
 
-All drivers must be prepared to service **IRP\_MJ\_POWER** requests in a [*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
+All drivers must be prepared to service **IRP\_MJ\_POWER** requests in a [*DispatchPower*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch) routine.
 
 When Sent
 ---------
@@ -54,12 +53,7 @@ Requirements
 ## See also
 
 
-[*DispatchPower*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
+[*DispatchPower*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_dispatch)
 
  
-
- 
-
-
-
 

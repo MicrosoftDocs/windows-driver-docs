@@ -1,7 +1,6 @@
 ---
 title: ScanAvailableEvent element
 description: The required ScanAvailableEvent element informs a client that a scan device to which the client is subscribed is ready to scan a job.
-ms.assetid: 82ebfa36-60df-44dd-a928-e751deeea5b0
 keywords: ["ScanAvailableEvent element Imaging Devices"]
 topic_type:
 - apiref
@@ -79,19 +78,19 @@ The following code example shows how a client subscribes to receive ScanAvailabl
 
 ```xml
 <soap:Envelope
-    xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-    xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-    xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
-    xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan>
-    soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+    xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+    xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+    xmlns:wse="https://schemas.xmlsoap.org/ws/2004/08/eventing"
+    xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan>
+    soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
   <soap:Header>
     <wsa:To>AddressofScannerService</wsa:To>
       <wsa:Action>
-         http://schemas.xmlsoap.org/ws/2004/08/eventing/Subscribe
+         https://schemas.xmlsoap.org/ws/2004/08/eventing/Subscribe
       </wsa:Action>
       <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
       <wsa:ReplyTo>
-        <wsa:Address>http://www.example.com/MyEventSink</wsa:Address>
+        <wsa:Address>https://www.example.com/MyEventSink</wsa:Address>
       </wsa:ReplyTo>
   </soap:Header>
   <soap:Body>
@@ -99,12 +98,12 @@ The following code example shows how a client subscribes to receive ScanAvailabl
       <wse:Delivery>
         <wse:NotifyTo>
           <wsa:Address>
-            http://www.example.com/MyEventSink/OnScanAvailableForMe
+            https://www.example.com/MyEventSink/OnScanAvailableForMe
           </wsa:Address>
         </wse:NotifyTo>
       </wse:Delivery>
       <wse:Expires>P0Y0M0DT30H0M0S</wse:Expires>
-      <wse:Filter xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan">
+      <wse:Filter xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan">
         ScanAvailableEvent
       </wse:Filter>
       <wscn:ScanDestinations>
@@ -122,15 +121,15 @@ The following code example shows the WSD Scan Service's response to a client's s
 
 ```xml
 <soap:Envelope
-    xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-    xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-    xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
-    xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan">
-    soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+    xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+    xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+    xmlns:wse="https://schemas.xmlsoap.org/ws/2004/08/eventing"
+    xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan">
+    soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
   <soap:Header>
-    <wsa:To>http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous</wsa:To>
+    <wsa:To>https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous</wsa:To>
     <wsa:Action>
-      http://schemas.xmlsoap.org/ws/2004/08/eventing/SubscribeResponse
+      https://schemas.xmlsoap.org/ws/2004/08/eventing/SubscribeResponse
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheSubscribe</wsa:RelatesTo>
@@ -156,16 +155,16 @@ The following code example shows how the WSD Scan Service sends a ScanAvailableE
 
 ```xml
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing"
-  xmlns:wse="http://schemas.xmlsoap.org/ws/2004/08/eventing"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding'>
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2004/08/addressing"
+  xmlns:wse="https://schemas.xmlsoap.org/ws/2004/08/eventing"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding'>
 
   <soap:Header>
     <wsa:To>AddressofEventSink</wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ScanAvailableEvent
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ScanAvailableEvent
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
   </soap:Header>

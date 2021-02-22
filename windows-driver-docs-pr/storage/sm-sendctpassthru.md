@@ -1,7 +1,6 @@
 ---
 title: SM\_SendCTPassThru function
 description: The SM\_SendCTPassThru WMI method sends a common transport (CT) pass-through command to the indicated port.
-ms.assetid: 437f0c79-78f6-406e-8774-79de4425bfe8
 keywords: ["SM_SendCTPassThru function Storage Devices"]
 topic_type:
 - apiref
@@ -98,16 +97,9 @@ Requirements
 
 [HBA\_STATUS](hba-status.md)
 
-[**SM\_SendCTPassThru\_IN**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_in)
+[**SM\_SendCTPassThru\_IN**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_in)
 
-[**SM\_SendCTPassThru\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_out)
-
- 
+[**SM\_SendCTPassThru\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_sm_sendctpassthru_out)
 
  
-
-
-
-
-
 

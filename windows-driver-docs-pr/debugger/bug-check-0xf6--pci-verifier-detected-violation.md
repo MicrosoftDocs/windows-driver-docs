@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0xF6 PCI_VERIFIER_DETECTED_VIOLATION
 description: The PCI_VERIFIER_DETECTED_VIOLATION bug check has a value of 0x000000F6. This indicates that an error occurred in the BIOS or another device being verified by the PCI driver.
-ms.assetid: 8d2be46d-52fd-41dc-b33c-67fea7e0e501
 keywords: ["Bug Check 0xF6 PCI_VERIFIER_DETECTED_VIOLATION", "PCI_VERIFIER_DETECTED_VIOLATION"]
 ms.date: 05/23/2017
 topic_type:

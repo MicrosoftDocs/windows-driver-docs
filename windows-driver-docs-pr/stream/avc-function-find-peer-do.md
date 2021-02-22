@@ -1,7 +1,6 @@
 ---
 title: AVC\_FUNCTION\_FIND\_PEER\_DO
 description: AVC\_FUNCTION\_FIND\_PEER\_DO
-ms.assetid: a21dde69-f005-4782-97d9-095a57b2b1a5
 keywords: ["AVC_FUNCTION_FIND_PEER_DO Streaming Media Devices"]
 topic_type:
 - apiref
@@ -89,13 +88,7 @@ This function code may be called at IRQL &lt;= DISPATCH\_LEVEL.
 
 ### See Also
 
-[**AVC\_MULTIFUNC\_IRB**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PEER\_DO\_LOCATOR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ns-avc-_avc_peer_do_locator), [**AVC\_FUNCTION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function), [**ObDereferenceObject**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject)
+[**AVC\_MULTIFUNC\_IRB**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb), [**AVC\_PEER\_DO\_LOCATOR**](/windows-hardware/drivers/ddi/avc/ns-avc-_avc_peer_do_locator), [**AVC\_FUNCTION**](/windows-hardware/drivers/ddi/avc/ne-avc-_tagavc_function), [**ObDereferenceObject**](/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject)
 
  
-
- 
-
-
-
-
 

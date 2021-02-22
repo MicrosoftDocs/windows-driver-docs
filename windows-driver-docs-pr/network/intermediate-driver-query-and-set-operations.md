@@ -1,7 +1,6 @@
 ---
 title: Intermediate Driver Query and Set Operations
 description: Intermediate Driver Query and Set Operations
-ms.assetid: 68576241-20c1-4df4-ab2e-20ab89e67763
 keywords:
 - intermediate drivers WDK networking , query operations
 - NDIS intermediate drivers WDK , query operations
@@ -20,9 +19,9 @@ ms.localizationpriority: medium
 
 
 
-After it has successfully bound to an underlying miniport adapter and initialized its virtual miniports, an intermediate driver queries the operating characteristics of the underlying miniport adapter and sets its own internal state. If appropriate, the intermediate driver also negotiates such parameters as lookahead buffer size for the binding with the underlying miniport adapter. Most of the attributes that are associated with an underlying miniport adapter are passed to the intermediate driver at the *BindParameters* parameter of the [*ProtocolBindAdapterEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function. Intermediate drivers should use the values that are passed to *ProtocolBindAdapterEx*, if possible, instead of issuing OID queries. However, an intermediate driver with a connectionless lower edge can issue OID queries by calling [**NdisOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest). An intermediate driver with a connection-oriented lower edge can issue OID queries by calling [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest).
+After it has successfully bound to an underlying miniport adapter and initialized its virtual miniports, an intermediate driver queries the operating characteristics of the underlying miniport adapter and sets its own internal state. If appropriate, the intermediate driver also negotiates such parameters as lookahead buffer size for the binding with the underlying miniport adapter. Most of the attributes that are associated with an underlying miniport adapter are passed to the intermediate driver at the *BindParameters* parameter of the [*ProtocolBindAdapterEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex) function. Intermediate drivers should use the values that are passed to *ProtocolBindAdapterEx*, if possible, instead of issuing OID queries. However, an intermediate driver with a connectionless lower edge can issue OID queries by calling [**NdisOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisoidrequest). An intermediate driver with a connection-oriented lower edge can issue OID queries by calling [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest).
 
-An intermediate driver can also receive query and set requests from higher level drivers through its [*MiniportOidRequest*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function. The driver can either respond to those requests or pass them down to the underlying driver. How an intermediate driver responds to queries and sets depends on the implementation.
+An intermediate driver can also receive query and set requests from higher level drivers through its [*MiniportOidRequest*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request) function. The driver can either respond to those requests or pass them down to the underlying driver. How an intermediate driver responds to queries and sets depends on the implementation.
 
 **Note**  The behavior of intermediate drivers can also be affected by the power state of the virtual miniport and the underlying miniport driver. To learn more about the effects of the power state on query and set operations, see [Handling a Set Power Request](handling-a-set-power-request.md).
 
@@ -37,10 +36,4 @@ The following topics provide additional information about issuing and responding
 [Responding to Sets and Queries in an Intermediate Driver](responding-to-sets-and-queries-in-an-intermediate-driver.md)
 
  
-
- 
-
-
-
-
 

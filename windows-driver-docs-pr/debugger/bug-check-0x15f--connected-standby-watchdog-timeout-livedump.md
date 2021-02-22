@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x15F CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP
 description: The CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP bug check has a value of 0x0000015F. This indicates that a connected standby watchdog timeout has occurred.
-ms.assetid: 4C10AAC1-0B8F-4BBE-B470-55A8ED373687
 keywords: ["Bug Check 0x15F CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP", "CONNECTED_STANDBY_WATCHDOG_TIMEOUT_LIVEDUMP"]
 ms.date: 05/23/2017
 topic_type:

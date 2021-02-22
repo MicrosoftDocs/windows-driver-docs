@@ -1,7 +1,6 @@
 ---
 title: Windows 2000 Kernel Streaming Model Design Guide
 description: Windows 2000 Kernel Streaming Model Design Guide
-ms.assetid: 7cc080ad-ce4a-4a08-917a-d9e4a002f4fa
 keywords:
 - streaming media WDK , Windows 2000 Kernel Streaming Model
 - media streaming WDK , Windows 2000 Kernel Streaming Model
@@ -20,18 +19,13 @@ ms.localizationpriority: medium
 
 The following sections describe the Windows 2000 Kernel Streaming Model:
 
-[Streaming Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index)
+[Streaming Minidrivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [USBCAMD Minidriver Library](usbcamd-minidriver-library.md)
 
-[DVD Decoder Minidrivers](https://docs.microsoft.com/windows-hardware/drivers/ddi/_stream/index)
+[DVD Decoder Minidrivers](/windows-hardware/drivers/ddi/_stream/index)
 
 [Kernel Streaming](kernel-streaming.md)
 
  
-
- 
-
-
-
 

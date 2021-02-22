@@ -1,7 +1,6 @@
 ---
 title: New sensor features and improvements for Windows 8.1
 description: This topic summarizes the new features and improvements for Sensors in WindowsWindows 8.1.
-ms.assetid: F52BC6D1-DF67-4DE7-BEEC-D18C2A90B4CF
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -45,14 +44,11 @@ The new programming guide includes a section that describes driver logic for a s
 ## Sensors Geolocation Driver Sample
 
 
-The geolocation sample driver demonstrates a minimal UMDF driver that emulates a Global Positioning System (GPS) device. This sample driver is described in detail in the new [Programming Guide](programming-guide.md).
+The geolocation sample driver demonstrates a minimal UMDF driver that emulates a Global Positioning System (GPS) device. This sample driver is described in detail in the new [Programming Guide](../gnss/installing-the-sample-driver.md).
 
-The geolocation sample driver also includes code that demonstrates adding support for the Radio Management API. This is described in the [Supporting radio managment](https://docs.microsoft.com/windows-hardware/drivers/gnss/supporting-radio-management) topic.
+The geolocation sample driver also includes code that demonstrates adding support for the Radio Management API. This is described in the [Supporting radio managment](../gnss/supporting-radio-management.md) topic.
 
 ## Related topics
-[Programming Guide](programming-guide.md)  
+
 [Sensor driver logic](driver-logic--pseudo-code-.md)  
-[The Sensor Diagnostic Tool](the-sensor-diagnostic-tool.md)  
-
-
-
+[The Sensor Diagnostic Tool](the-sensor-diagnostic-tool.md)

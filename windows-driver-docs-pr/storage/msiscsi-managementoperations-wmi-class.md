@@ -1,7 +1,6 @@
 ---
 title: MSiSCSI\_ManagementOperations WMI Class
 description: MSiSCSI\_ManagementOperations WMI Class
-ms.assetid: 1037be46-6cae-458d-8549-927c7a053195
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -66,13 +65,7 @@ class MSiSCSI_ManagementOperations
 };
 ```
 
-When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_ManagementOperations](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) data structures.
+When the WMI tool suite compiles the preceding class definition, it produces one of the [MSiSCSI\_ManagementOperations](/windows-hardware/drivers/ddi/index) data structures.
 
  
-
- 
-
-
-
-
 

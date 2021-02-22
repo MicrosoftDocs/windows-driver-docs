@@ -1,7 +1,6 @@
 ---
 title: ValidateScanTicketResponse element
 description: The required ValidateScanTicketResponse operation notifies the client whether a client's submitted ScanTicket is valid.
-ms.assetid: 7eea7d33-45de-45bf-8e89-de06f5710073
 keywords: ["ValidateScanTicketResponse element Imaging Devices"]
 topic_type:
 - apiref
@@ -69,19 +68,19 @@ The following code example shows a response to a client when it has submitted a 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:xop="http://www.w3.org/2003/12/xop/include"
-  xmlns:xop-mime="http://www.w3.org/2003/12/xop/mime"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:xop="https://www.w3.org/2003/12/xop/include"
+  xmlns:xop-mime="https://www.w3.org/2003/12/xop/mime"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
-      http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
+      https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
     </wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheValidateScanTicketRequest</wsa:RelatesTo>
@@ -109,19 +108,19 @@ The following code example shows a response to a client when it has submitted an
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope
-  xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
-  xmlns:wsa="http://schemas.xmlsoap.org/ws/2003/03/addressing"
-  xmlns:xop="http://www.w3.org/2003/12/xop/include"
-  xmlns:xop-mime="http://www.w3.org/2003/12/xop/mime"
-  xmlns:wscn="http://schemas.microsoft.com/windows/2006/01/wdp/scan"
-  soap:encodingStyle='http://www.w3.org/2002/12/soap-encoding' >
+  xmlns:soap="https://www.w3.org/2003/05/soap-envelope"
+  xmlns:wsa="https://schemas.xmlsoap.org/ws/2003/03/addressing"
+  xmlns:xop="https://www.w3.org/2003/12/xop/include"
+  xmlns:xop-mime="https://www.w3.org/2003/12/xop/mime"
+  xmlns:wscn="https://schemas.microsoft.com/windows/2006/01/wdp/scan"
+  soap:encodingStyle='https://www.w3.org/2002/12/soap-encoding' >
 
   <soap:Header>
     <wsa:To>
-      http://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
+      https://schemas.xmlsoap.org/ws/2003/03/addressing/role/anonymous
     </wsa:To>
     <wsa:Action>
-      http://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
+      https://schemas.microsoft.com/windows/2006/01/wdp/scan/ValidateScanTicket
     </wsa:Action>
     <wsa:MessageID>uuid:UniqueMsgId</wsa:MessageID>
     <wsa:RelatesTo>uuid:MsgIdOfTheValidateScanTicketRequest</wsa:RelatesTo>

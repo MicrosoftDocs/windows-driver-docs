@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY
 description: The KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY property ID that is defined in KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY is used to get the per-frame capabilities from the driver.
-ms.assetid: 9EB8AB4C-56C0-4F70-AFFE-76444FAADFF8
 keywords: ["KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_CAPABILITY Streaming Media Devices"]
 topic_type:
 - apiref
@@ -17,23 +16,23 @@ ms.localizationpriority: medium
 
 # KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY
 
-The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_perframesetting_property) is used to get the per-frame capabilities from the driver. This is a GET only control; the driver must fail any SET calls.
+The **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY** property ID that is defined in [**KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_PROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-ksproperty_cameracontrol_perframesetting_property) is used to get the per-frame capabilities from the driver. This is a GET only control; the driver must fail any SET calls.
 
 ## Usage summary
 
 To query per frame setting capability with the driver, the **KSPROPERTY\_CAMERACONTROL\_PERFRAMESETTING\_CAPABILITY** property control is sent to the driver along with a data buffer. In a GET call, the driver fills the per frame setting capability payload in the data buffer provided using the format layout specified below.
 
--   Capability header ([**KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header))
+-   Capability header ([**KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header))
 
--   Item header ([**KSCAMERA\_PERFRAMESETTING\_CAP\_ITEM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header))
+-   Item header ([**KSCAMERA\_PERFRAMESETTING\_CAP\_ITEM\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header))
 
--   Item header ([**KSCAMERA\_PERFRAMESETTING\_CAP\_ITEM\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header))
+-   Item header ([**KSCAMERA\_PERFRAMESETTING\_CAP\_ITEM\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header))
 
--   Item payload ([**KSPROPERTY\_STEPPING\_LONG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) or [**KSPROPERTY\_STEPPING\_LONGLONG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_longlong))
+-   Item payload ([**KSPROPERTY\_STEPPING\_LONG**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) or [**KSPROPERTY\_STEPPING\_LONGLONG**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_longlong))
 
 The capability payload must start with a capability header. Each capability item must start with an item header. If a capability item has a payload, the item header must be followed by a corresponding item payload.
 
-In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire capability payload. In response to the call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required capability buffer size that must be at least the size of [**KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header).
+In a GET call, a zero length buffer is sent to the driver first to find out the required data buffer size to hold the entire capability payload. In response to the call, the driver must return **STATUS\_BUFFER\_OVERFLOW** with the required capability buffer size that must be at least the size of [**KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header).
 
 The following are the descriptions of the **KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER** fields in context of the item types defined in the **KSCAMERA\_PERFRAMESETTING\_ITEM\_TYPE** enumeration. The payload field represents the item payload structures after the **KSCAMERA\_PERFRAMESETTING\_CAP\_ITEM\_HEADER** structure.
 
@@ -65,7 +64,7 @@ If the driver supports manual mode, a range payload must be specified in KSPROPE
 
 **Size**
 
-This is the size of the [**KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header) structure.
+This is the size of the [**KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-kscamera_perframesetting_cap_header) structure.
 
 **Type**
 
@@ -113,7 +112,7 @@ This contains the available flags. This field must contain the flags available b
 
 **Payload**
 
-If a driver supports only auto mode, a payload is not included. Otherwise, a range payload must be specified in a [**KSPROPERTY\_STEPPING\_LONG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) structure. The min and max of EV compensation are absolute EV compensation values and are determined from **KSPROPERTY\_STEPPING\_LONG.Bounds.SignedMinimum** and KSPROPERTY\_STEPPING\_LONG.Bounds.SignedMaximum. The step of EV compensation is determined by the step size of the lowest EVCOMP step flag that corresponds to a float (for example, 1/6 for KSCAMERA\_EXTENDEDPROP\_EVCOMP\_SIXTHSTEP).
+If a driver supports only auto mode, a payload is not included. Otherwise, a range payload must be specified in a [**KSPROPERTY\_STEPPING\_LONG**](/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long) structure. The min and max of EV compensation are absolute EV compensation values and are determined from **KSPROPERTY\_STEPPING\_LONG.Bounds.SignedMinimum** and KSPROPERTY\_STEPPING\_LONG.Bounds.SignedMaximum. The step of EV compensation is determined by the step size of the lowest EVCOMP step flag that corresponds to a float (for example, 1/6 for KSCAMERA\_EXTENDEDPROP\_EVCOMP\_SIXTHSTEP).
 
 **ISO speed item**  
 
@@ -149,7 +148,7 @@ This is the size of the **KSCAMERA\_PERFRAMESETTING\_CAP\_HEADER** structure + t
 
 **Type**
 
-This must be [**KSCAMERA\_PERFRAMESETTING\_ITEM\_TYPE.KSCAMERA\_PERFRAMESETTING\_ITEM\_FOCUS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-kscamera_perframesetting_item_type#kscamera-perframesetting-item-focus).
+This must be [**KSCAMERA\_PERFRAMESETTING\_ITEM\_TYPE.KSCAMERA\_PERFRAMESETTING\_ITEM\_FOCUS**](/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-kscamera_perframesetting_item_type#kscamera-perframesetting-item-focus).
 
 **Flags**
 

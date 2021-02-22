@@ -1,7 +1,6 @@
 ---
 title: wudfext.wudfqueue
 description: The wudfext.wudfqueue extension displays information about an I/O queue.
-ms.assetid: b3ede1af-c85a-42d6-a8e5-e4094dd80d1c
 keywords: ["wudfext.wudfqueue Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

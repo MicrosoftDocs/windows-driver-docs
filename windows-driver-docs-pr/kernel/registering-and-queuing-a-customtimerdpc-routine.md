@@ -1,7 +1,6 @@
 ---
 title: Registering and Queuing a CustomTimerDpc Routine
 description: Registering and Queuing a CustomTimerDpc Routine
-ms.assetid: 884bff8e-8437-44fb-acc0-f535d64ce900
 keywords: ["timer objects WDK kernel , CustomTimerDpc routines", "CustomTimerDpc", "queuing timer objects", "registering timer objects", "KeSetTimer", "KeSetTimerEx", "KeInitializeTimer", "KeInitializeTimerEx", "invoking CustomTimerDpc routine repeatedly", "repeatedly invoke CustomTimerDpc routine", "DueTime values", "timer expirations WDK kernel", "expired timers WDK kernel", "timer objects WDK kernel , queuing", "timer objects WDK kernel , registering", "timer objects WDK kernel , expirations"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -13,13 +12,13 @@ ms.localizationpriority: medium
 
 
 
-A driver can register a [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine by calling the following routines, usually from its [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine:
+A driver can register a [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine by calling the following routines, usually from its [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device) routine:
 
-1.  [**KeInitializeDpc**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc) to register its routine
+1.  [**KeInitializeDpc**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc) to register its routine
 
-2.  [**KeInitializeTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimer) or [**KeInitializeTimerEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimerex) to set up a timer object
+2.  [**KeInitializeTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimer) or [**KeInitializeTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializetimerex) to set up a timer object
 
-Subsequently, the driver can call [**KeSetTimer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer) or [**KeSetTimerEx**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex) to specify an expiration time and to add the timer object to the system's timer queue. When the expiration time is reached, the system dequeues the timer object and calls the *CustomTimerDpc* routine. The following figure illustrates these calls.
+Subsequently, the driver can call [**KeSetTimer**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimer) or [**KeSetTimerEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-kesettimerex) to specify an expiration time and to add the timer object to the system's timer queue. When the expiration time is reached, the system dequeues the timer object and calls the *CustomTimerDpc* routine. The following figure illustrates these calls.
 
 ![diagram illustrating using timer and dpc objects for a customtimerdpc routine](images/3ketmdpc.png)
 
@@ -43,16 +42,11 @@ As shown in the previous figure, the call to **KeSetTimer** or **KeSetTimerEx** 
 
      
 
-The smallest time interval that can be specified to **KeSetTimer** and **KeSetTimerEx** is approximately ten milliseconds, so a driver can use a *CustomTimerDpc* routine when timing smaller intervals than an [*IoTimer*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine, which is run once per second, can handle.
+The smallest time interval that can be specified to **KeSetTimer** and **KeSetTimerEx** is approximately ten milliseconds, so a driver can use a *CustomTimerDpc* routine when timing smaller intervals than an [*IoTimer*](/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine) routine, which is run once per second, can handle.
 
 Only one instantiation of a particular timer object can be queued at any moment. Calling **KeSetTimer** or **KeSetTimerEx** again with the same *Timer* object pointer cancels the queued timer object and resets it.
 
-Setting up a [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine is exactly like setting up a [*CustomDpc*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine) routine, with an additional step to initialize the timer object. In fact, their prototypes are identical, but *CustomTimerDpc* routine cannot use the two *SystemArgument* pointers declared in its prototype.
+Setting up a [*CustomTimerDpc*](https://msdn.microsoft.com/library/windows/hardware/ff542983) routine is exactly like setting up a [*CustomDpc*](/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine) routine, with an additional step to initialize the timer object. In fact, their prototypes are identical, but *CustomTimerDpc* routine cannot use the two *SystemArgument* pointers declared in its prototype.
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SIGNAL\_LOCKED
 description: Clients use KSPROPERTY\_BDA\_SIGNAL\_LOCKED to determine whether a signal can be locked.
-ms.assetid: 98023f83-2e90-4649-8e85-3e7b7f26b01d
 keywords: ["KSPROPERTY_BDA_SIGNAL_LOCKED Streaming Media Devices"]
 topic_type:
 - apiref
@@ -85,16 +84,9 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_QUALITY**](ksproperty-bda-signal-quality.md)
 
  
-
- 
-
-
-
-
-
 

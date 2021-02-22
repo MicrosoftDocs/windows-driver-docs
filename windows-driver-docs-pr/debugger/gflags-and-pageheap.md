@@ -1,7 +1,6 @@
 ---
 title: GFlags and PageHeap
 description: GFlags and PageHeap
-ms.assetid: 9ced92d9-b37c-4db5-b3f9-fa2fe5325e57
 keywords: ["GFlags, GFlags and PageHeap", "PageHeap (pageheap.exe)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

@@ -1,7 +1,6 @@
 ---
 title: The Kernel Network Mini-Redirector Driver
 description: The Kernel Network Mini-Redirector Driver
-ms.assetid: 13236e5f-1261-4cf1-9c3d-3f1a5ccb3323
 keywords:
 - network redirectors WDK , mini-redirector drivers
 - redirector drivers WDK , mini-redirector drivers
@@ -20,11 +19,11 @@ ms.localizationpriority: medium
 
 A kernel network mini-redirector driver implements a number of callback routines that are used by the Redirected Drive Buffering Subsystem (RDBSS) to communicate with the driver. In the remainder of this document, a kernel network mini-redirector driver will be referred to as a network mini-redirector driver.
 
-When a network mini-redirector driver first starts (in its **DriverEntry** routine), the driver calls the RDBSS [**RxRegisterMinirdr**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nf-mrx-rxregisterminirdr) routine to register the network mini-redirector driver with RDBSS. The network mini-redirector driver passes in a MINIRDR\_DISPATCH structure, which includes configuration data along with pointers to the routines that the network mini-redirector driver implements (a dispatch table).
+When a network mini-redirector driver first starts (in its **DriverEntry** routine), the driver calls the RDBSS [**RxRegisterMinirdr**](/windows-hardware/drivers/ddi/mrx/nf-mrx-rxregisterminirdr) routine to register the network mini-redirector driver with RDBSS. The network mini-redirector driver passes in a MINIRDR\_DISPATCH structure, which includes configuration data along with pointers to the routines that the network mini-redirector driver implements (a dispatch table).
 
 A network mini-redirector can choose to implement only some of these routines. Any routine that is not implemented by the network mini-redirector should be set to a **NULL** pointer in the MINIRDR\_DISPATCH structure passed to **RxRegisterMinirdr**. RDBSS will only call routines implemented by the network mini-redirector.
 
-One special category of routines implemented by a network mini-redirector are the low I/O operations that represent the traditional file I/O calls for read, write, and other file operations. All of the low I/O routines can be called asynchronously by RDBSS. A kernel driver for a network mini-redirector must make certain that any low I/O routines that are implemented can be safely called asynchronously. The low I/O routines are passed in as an array of routine pointers as part of the MINIRDR\_DISPATCH structure from the [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. The value of the array entry is the low I/O operation to perform. All of the low I/O routines expect a pointer to an RX\_CONTEXT structure to be passed in as a parameter. The RX\_CONTEXT data structure has a **LowIoContext.Operation** member that also specifies the low I/O operation to perform. It is possible for several of the low I/O routines to point to the same routine in a network mini-redirector driver since this **LowIoContext.Operation** member can be used to specify the low I/O operation requested. For example, all of the low I/O calls related to file locks could call the same low I/O routine in the network mini-redirector and this routine could use the **LowIoContext.Operation** member to specify the lock or unlock operation requested.
+One special category of routines implemented by a network mini-redirector are the low I/O operations that represent the traditional file I/O calls for read, write, and other file operations. All of the low I/O routines can be called asynchronously by RDBSS. A kernel driver for a network mini-redirector must make certain that any low I/O routines that are implemented can be safely called asynchronously. The low I/O routines are passed in as an array of routine pointers as part of the MINIRDR\_DISPATCH structure from the [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) routine. The value of the array entry is the low I/O operation to perform. All of the low I/O routines expect a pointer to an RX\_CONTEXT structure to be passed in as a parameter. The RX\_CONTEXT data structure has a **LowIoContext.Operation** member that also specifies the low I/O operation to perform. It is possible for several of the low I/O routines to point to the same routine in a network mini-redirector driver since this **LowIoContext.Operation** member can be used to specify the low I/O operation requested. For example, all of the low I/O calls related to file locks could call the same low I/O routine in the network mini-redirector and this routine could use the **LowIoContext.Operation** member to specify the lock or unlock operation requested.
 
 RDBSS also assumes asynchronous operation for a few other routines implemented by a network mini-redirector. These routines are used for establishing a connection with a remote resource. Since connection operations can take a considerable amount of time to complete, RDBSS assumes these routines are implemented as asynchronous operations.
 
@@ -94,9 +93,4 @@ The routines implemented by a network mini-redirector can be organized into the 
 [Miscellaneous Network Mini-Redirector Routines](miscellaneous-network-mini-redirector-routines.md)
 
  
-
- 
-
-
-
 

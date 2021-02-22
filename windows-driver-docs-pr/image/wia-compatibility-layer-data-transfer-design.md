@@ -1,7 +1,6 @@
 ---
 title: WIA Compatibility Layer Data Transfer Design
 description: WIA Compatibility Layer Data Transfer Design
-ms.assetid: f3e83be1-603f-4f29-9511-0c5f89506cc1
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

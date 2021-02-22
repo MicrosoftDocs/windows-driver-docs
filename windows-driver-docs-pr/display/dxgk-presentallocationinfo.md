@@ -1,7 +1,6 @@
 ---
 title: DXGK\_PRESENTALLOCATIONINFO structure
 description: The DXGK\_PRESENTALLOCATIONINFO structure is reserved for system use. Do not use it in your driver.
-ms.assetid: 8a7f25cf-c08c-4f65-bbf4-ba129d88ff6a
 keywords: ["DXGK_PRESENTALLOCATIONINFO structure Display Devices"]
 topic_type:
 - apiref

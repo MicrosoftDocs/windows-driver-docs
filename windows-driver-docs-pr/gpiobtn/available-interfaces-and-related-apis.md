@@ -1,7 +1,6 @@
 ---
 title: Available interfaces and related APIs
 description: There are three GPIO interfaces one for each device. Each interface is referenced by a GUID.
-ms.assetid: 87A275B0-825A-47F1-9701-D7E91C493877
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---

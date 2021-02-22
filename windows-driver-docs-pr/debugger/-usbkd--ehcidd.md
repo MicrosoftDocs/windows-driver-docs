@@ -1,7 +1,6 @@
 ---
 title: usbkd._ehcidd
 description: The usbkd._ehcidd command displays information from a usbehci _DEVICE_DATA structure.
-ms.assetid: 8D594564-6506-44A8-A109-A76DA5AE7D89
 keywords: ["usbkd._ehcidd Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:
@@ -79,14 +78,7 @@ AsyncQueueHead ffffd00021cf5000 !_ehciqh ffffd00021cf5000
 
 [USB 2.0 Debugger Extensions](usb-2-0-extensions.md)
 
-[Universal Serial Bus (USB) Drivers](https://go.microsoft.com/fwlink/p?LinkID=227351)
+[Universal Serial Bus (USB) Drivers](../usbcon/index.md)
 
  
-
- 
-
-
-
-
-
 

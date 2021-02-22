@@ -1,7 +1,6 @@
 ---
 title: UMDF Based on COM Subset
 description: UMDF Based on COM Subset
-ms.assetid: 918459a9-a6a2-40b8-8b97-3aabe3e49bfb
 keywords:
 - UMDF objects WDK , COM subset
 - framework objects WDK UMDF , COM subset
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 # UMDF Based on COM Subset
 
 
-[!include[UMDF 1 Deprecation](../umdf-1-deprecation.md)]
+[!include[UMDF 1 Deprecation](../includes/umdf-1-deprecation.md)]
 
 The framework objects and interfaces are based on the Component Object Model (COM) for the following reasons:
 

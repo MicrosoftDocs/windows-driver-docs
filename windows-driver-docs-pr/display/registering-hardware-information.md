@@ -1,7 +1,6 @@
 ---
 title: Registering Hardware Information
 description: Registering Hardware Information
-ms.assetid: 1fec9fcf-3ec7-4926-9ceb-ef1f7f42e963
 keywords:
 - registry WDK display
 - hardware information in registry WDK display
@@ -12,13 +11,13 @@ ms.localizationpriority: medium
 # Registering Hardware Information
 
 
-To display useful information to the user and for assistance in debugging, a display miniport driver must set certain hardware information in the registry. A display miniport driver must set a chip type, digital-to-analog converter (DAC) type, memory size (of the adapter), and a string to identify the adapter. This information is shown by the **Display** application in Control Panel. Typically, the driver sets this information in its [**DxgkDdiAddDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device) function.
+To display useful information to the user and for assistance in debugging, a display miniport driver must set certain hardware information in the registry. A display miniport driver must set a chip type, digital-to-analog converter (DAC) type, memory size (of the adapter), and a string to identify the adapter. This information is shown by the **Display** application in Control Panel. Typically, the driver sets this information in its [**DxgkDdiAddDevice**](/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device) function.
 
 To set this information, the driver:
 
-1.  Calls the **IoOpenDeviceRegistryKey** for storing driver-specific information. In this call, the driver specifies the PLUGPLAY\_REGKEY\_DRIVER flag in the *DevInstKeyType* parameter and the KEY\_SET\_VALUE, KEY\_WRITE, or KEY\_ALL\_ACCESS value in the *DesiredAccess* parameter.
+1.  Calls the [**IoOpenDeviceRegistryKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioopendeviceregistrykey) function to open and obtain a handle to a *software key* for storing driver-specific information. In this call, the driver specifies the PLUGPLAY\_REGKEY\_DRIVER flag in the *DevInstKeyType* parameter and the KEY\_SET\_VALUE, KEY\_WRITE, or KEY\_ALL\_ACCESS value in the *DesiredAccess* parameter.
 
-2.  Calls the [**ZwSetValueKey**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey) function several times to set each type of hardware information. In each call, the driver specifies, in the *KeyHandle* parameter, the software-key handle that was obtained from **IoOpenDeviceRegistryKey**.
+2.  Calls the [**ZwSetValueKey**](/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey) function several times to set each type of hardware information. In each call, the driver specifies, in the *KeyHandle* parameter, the software-key handle that was obtained from **IoOpenDeviceRegistryKey**.
 
     The following table describes the information that the driver must register and provides details for the *ValueName* and *Data* parameters of **ZwSetValueKey**:
 
@@ -65,12 +64,4 @@ To set this information, the driver:
     </table>
 
      
-
- 
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: requestClose element
 description: The optional requestClose element is used to close an event notification message on the client computer.
-ms.assetid: b2f21ab2-9205-483c-9f56-1c877edb7da2
 keywords: ["requestClose element Print Devices"]
 topic_type:
 - apiref
@@ -15,30 +14,31 @@ ms.localizationpriority: medium
 
 # requestClose element
 
-
 The optional **requestClose** element is used to close an event notification message on the client computer.
 
-The **requestClose** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **requestClose** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <requestClose/>
 ```
 
-Attributes
-----------
+## Attributes
 
 There are no attributes.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -60,15 +60,14 @@ There are no child elements.
 </tbody>
 </table>
 
-Examples
---------
+## Examples
 
 The following code example shows how to close an event notification after a button-click on the message box has been captured for the **OK** button.
 
 ```cpp
 <?xml version="1.0" ?>
    <asyncPrintUIResponse
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/response">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/response">
     <v1>
       <requestClose>
         <messageBoxUI>

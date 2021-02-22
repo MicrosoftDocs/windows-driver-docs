@@ -1,7 +1,6 @@
 ---
 title: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
 description: Handling SR-IOV, VMQ, and RSS Standardized INF Keywords
-ms.assetid: EF556563-4097-4388-A563-29FC891AC626
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -25,7 +24,7 @@ The operating system enables the use of the SR-IOV, VMQ, or RSS interfaces in th
 
 When the network adapter is unbound from the TCP/IP stack and the Hyper-V extensible switch driver stack, the miniport driver is halted and then reinitialized. Because of this, it is not possible for such network adapters to switch between RSS, VMQ, and SR-IOV automatically.
 
-When NDIS calls the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the miniport driver follows these steps before it reports its currently enabled SR-IOV, VMQ, or RSS capabilities to NDIS:
+When NDIS calls the [*MiniportInitializeEx*](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize) function, the miniport driver follows these steps before it reports its currently enabled SR-IOV, VMQ, or RSS capabilities to NDIS:
 
 1.  The miniport driver reads the **\*SriovPreferred** keyword before reporting its currently enabled capabilities to NDIS.
 
@@ -43,7 +42,7 @@ When NDIS calls the [*MiniportInitializeEx*](https://docs.microsoft.com/windows-
 
     For more information about the SR-IOV keywords, see [Standardized INF Keywords for SR-IOV](standardized-inf-keywords-for-sr-iov.md).
 
-    **Note**  If the miniport driver is configured for SR-IOV preference, it must not read any of the RSS standardized keywords. However, the driver must read the VMQ **\*VMQVlanFiltering** standardized keyword. This keyword specifies whether the miniport driver is enabled to filter network packets by using the virtual VLAN (VLAN) identifier in the media access control (MAC) header. The miniport driver reports this capability by setting the NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_VLAN\_ID\_SUPPORTED flag in the **SupportedMacHeaderFields** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. For more information on the **\*VMQVlanFiltering** standardized keyword, see [Standardized INF Keywords for VMQ](standardized-inf-keywords-for-vmq.md).
+    **Note**  If the miniport driver is configured for SR-IOV preference, it must not read any of the RSS standardized keywords. However, the driver must read the VMQ **\*VMQVlanFiltering** standardized keyword. This keyword specifies whether the miniport driver is enabled to filter network packets by using the virtual VLAN (VLAN) identifier in the media access control (MAC) header. The miniport driver reports this capability by setting the NDIS\_RECEIVE\_FILTER\_MAC\_HEADER\_VLAN\_ID\_SUPPORTED flag in the **SupportedMacHeaderFields** member of the [**NDIS\_RECEIVE\_FILTER\_CAPABILITIES**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_capabilities) structure. For more information on the **\*VMQVlanFiltering** standardized keyword, see [Standardized INF Keywords for VMQ](standardized-inf-keywords-for-vmq.md).
 
      
 
@@ -157,10 +156,4 @@ The miniport driver must advertise the capabilities of the currently enabled int
  
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: OID_CO_TAPI_LINE_CAPS
 description: This topic describes the OID_CO_TAPI_LINE_CAPS object identifier (OID).
-ms.assetid: 82c2bcb4-fb58-4e14-b1d4-2bcc0c4fcd1d
 keywords:
 - OID_CO_TAPI_LINE_CAPS
 ms.date: 11/03/2017
@@ -47,8 +46,6 @@ The **ulFlags** setting determines how many times the client subsequently querie
 
 ## Requirements
 
-| | |
-| --- | --- |
-| Version | Windows Vista and later |
-| Header | Ntddndis.h (include Ndis.h) |
+**Version**: Windows Vista and later
+**Header**: Ntddndis.h (include Ndis.h)
 

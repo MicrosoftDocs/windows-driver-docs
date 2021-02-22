@@ -1,7 +1,6 @@
 ---
 title: Filter Device Object Attached to a File System
 description: Filter Device Object Attached to a File System
-ms.assetid: 5fb0ec43-a639-4b2a-8057-3313e9dee457
 keywords:
 - filter device objects WDK file system
 - device object I/O requests WDK file system
@@ -23,26 +22,21 @@ To filter an entire file system, a file system filter driver creates a filter de
 
 A filter device object that is attached above a file system can generally expect to receive the following types of I/O requests:
 
-[**IRP\_MJ\_DEVICE\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-device-control)
+[**IRP\_MJ\_DEVICE\_CONTROL**](./irp-mj-device-control.md)
 
-[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-file-system-control)
+[**IRP\_MJ\_FILE\_SYSTEM\_CONTROL**](./irp-mj-file-system-control.md)
 
-[**IRP\_MJ\_SHUTDOWN**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-shutdown)
+[**IRP\_MJ\_SHUTDOWN**](./irp-mj-shutdown.md)
 
 If the file system supports opening handles to its control device object, filters can expect to see the following types of I/O requests as well:
 
-[**IRP\_MJ\_CLEANUP**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-cleanup)
+[**IRP\_MJ\_CLEANUP**](./irp-mj-cleanup.md)
 
-[**IRP\_MJ\_CLOSE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-close)
+[**IRP\_MJ\_CLOSE**](./irp-mj-close.md)
 
-[**IRP\_MJ\_CREATE**](https://docs.microsoft.com/windows-hardware/drivers/ifs/irp-mj-create)
+[**IRP\_MJ\_CREATE**](./irp-mj-create.md)
 
 File system filter device objects attached to file systems are required to pass all unrecognized or unwanted IRPs to the next-lower driver on the driver stack by default.
 
  
-
- 
-
-
-
 

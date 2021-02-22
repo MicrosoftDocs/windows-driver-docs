@@ -1,7 +1,6 @@
 ---
 title: PwrTest DirectedFx Scenario
 description: The PwrTest Directed Power Framework Scenario is designed to test PoFx v3 functionality.
-ms.assetid: edf70fce-4c2a-4747-854f-feb919e01324
 ms.date: 03/27/2019
 ms.custom: 19H1
 ---
@@ -14,7 +13,7 @@ The user provides the instance path of the device(s) to test and optionally a de
 
 If no D-state is specified, the test verifies that the device(s) did not stay in D0.  To find the instance path, examine the device's properties in Device Manager.  Alternately, run the test with no options to get a list of the instance paths of all DFx-capable devices on the system.
 
-This test can be run on any [Modern Standby](https://docs.microsoft.com/windows-hardware/design/device-experiences/modern-standby) system regardless of its network connectivity settings during standby or whether it is on AC or DC power.
+This test can be run on any [Modern Standby](/windows-hardware/design/device-experiences/modern-standby) system regardless of its network connectivity settings during standby or whether it is on AC or DC power.
 
 For the specified device, the test verifies that:
 
@@ -25,7 +24,7 @@ For the specified device, the test verifies that:
 For each cycle, the test shows:
 
 - Time the system was in idle resiliency
-- Time that Directed [Deepest Runtime Idle Platform State (DRIPS)](https://docs.microsoft.com/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby) was disengaged
+- Time that Directed [Deepest Runtime Idle Platform State (DRIPS)](/windows-hardware/design/device-experiences/prepare-hardware-for-modern-standby) was disengaged
     - Time each individual reason was active
 - Individual statistics and an optional fail reason for all test devices
     - `Device {Test Device} failed because device {Failed Device} {Failed Reason}`.
@@ -68,4 +67,3 @@ pwrtest /directedfx
 
 
 [PwrTest Syntax](pwrtest-syntax.md)
-

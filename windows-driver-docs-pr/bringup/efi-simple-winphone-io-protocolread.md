@@ -1,7 +1,6 @@
 ---
 title: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Read
 description: EFI_SIMPLE_WINPHONE_IO_PROTOCOL.Read
-ms.assetid: 9b5525a4-d98c-4328-8ebe-55ede53befca
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

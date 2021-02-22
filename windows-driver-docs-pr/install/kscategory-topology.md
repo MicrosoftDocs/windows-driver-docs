@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_TOPOLOGY
 description: KSCATEGORY_TOPOLOGY
-ms.assetid: 20c4ccf1-81bb-4209-9842-4de295fe3a00
 keywords: ["KSCATEGORY_TOPOLOGY Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_TOPOLOGY
 
 
-The KSCATEGORY_TOPOLOGY [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for the internal topology of an audio device.
+The KSCATEGORY_TOPOLOGY [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for the internal topology of an audio device.
 
 <table>
 <colgroup>
@@ -50,9 +49,9 @@ Remarks
 
 Drivers for KS audio adapter devices register instances of KSCATEGORY_TOPOLOGY to indicate to the operating system that the devices support the KSCATEGORY_TOPOLOGY functional category.
 
-For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](https://docs.microsoft.com/windows-hardware/drivers/audio/installing-device-interfaces-for-an-audio-adapter).
+For information about device interface classes for audio adapters, see [Installing Device Interfaces for an Audio Adapter](../audio/installing-device-interfaces-for-an-audio-adapter.md).
 
-The [AC'97 sample driver](https://go.microsoft.com/fwlink/p/?linkid=256075) that is provided in the WDK enumerates instances of the KSCATEGORY_TOPOLOGY device interface class.
+The [AC'97 sample driver](/samples/browse/) that is provided in the WDK enumerates instances of the KSCATEGORY_TOPOLOGY device interface class.
 
 The sysfx sample in the WDK registers instances of this device interface class. The sysfx sample is located in the *src\\audio\\sysfx directory* of the WDK.
 
@@ -71,12 +70,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

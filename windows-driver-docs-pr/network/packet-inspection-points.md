@@ -1,7 +1,6 @@
 ---
 title: Packet Inspection Points
 description: Packet Inspection Points
-ms.assetid: 9ad1c660-6811-4659-94ad-201a102a9ded
 keywords:
 - packet inspection points WDK Windows Filtering Platform
 ms.date: 04/20/2017

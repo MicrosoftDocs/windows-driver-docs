@@ -2,7 +2,6 @@
 title: IRP_MN_QUERY_ID
 description: Bus drivers must handle requests for BusQueryDeviceID for their child devices (child PDOs). Bus drivers can handle requests for BusQueryHardwareIDs, BusQueryCompatibleIDs, and BusQueryInstanceID for their child devices.
 ms.date: 08/12/2017
-ms.assetid: 3135cb30-a696-4201-8dfc-cdc1a29fe52b
 keywords:
  - IRP_MN_QUERY_ID Kernel-Mode Driver Architecture
 ms.localizationpriority: medium
@@ -15,16 +14,20 @@ Bus drivers must handle requests for **BusQueryDeviceID** for their child device
 
 Beginning with Windows 7, bus drivers must also handle requests for BusQueryContainerID for their child PDOs.
 
-For more information about these identifiers (IDs), see [Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings).
+For more information about these identifiers (IDs), see [Device Identification Strings](../install/device-identification-strings.md).
 
 **Note**  Function drivers and filter drivers do not handle this IRP.
 
- 
+ ## Value
+
+0x13
+
 
 Major Code
 ----------
 
 [**IRP\_MJ\_PNP**](irp-mj-pnp.md)
+
 When Sent
 ---------
 
@@ -35,7 +38,7 @@ The PnP manager and drivers send this IRP at IRQL PASSIVE\_LEVEL in an arbitrary
 ## Input Parameters
 
 
-The **Parameters.QueryId.IdType** member of the [**IO\_STACK\_LOCATION**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure specifies the kind of ID(s) requested. Possible values include BusQueryDeviceID, BusQueryHardwareIDs, BusQueryCompatibleIDs, BusQueryInstanceID, and BusQueryContainerID. The following ID type is reserved: BusQueryDeviceSerialNumber.
+The **Parameters.QueryId.IdType** member of the [**IO\_STACK\_LOCATION**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location) structure specifies the kind of ID(s) requested. Possible values include BusQueryDeviceID, BusQueryHardwareIDs, BusQueryCompatibleIDs, BusQueryInstanceID, and BusQueryContainerID. The following ID type is reserved: BusQueryDeviceSerialNumber.
 
 ## Output Parameters
 
@@ -74,7 +77,7 @@ A driver must conform to the following length restrictions for IDs:
 
 -   The container ID that a driver returns in this IRP must be formatted as a globally unique identifier (GUID), and must be MAX\_GUID\_STRING\_LEN characters, which includes the null terminator.
 
--   If a bus driver supplies globally unique instance IDs for its child devices (that is, the driver sets [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)**.UniqueID** for the devices), then the combination of device ID plus instance ID must be less than (MAX\_DEVICE\_ID\_LEN - 1) characters. The operating system requires the additional character for a path separator.
+-   If a bus driver supplies globally unique instance IDs for its child devices (that is, the driver sets [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities)**.UniqueID** for the devices), then the combination of device ID plus instance ID must be less than (MAX\_DEVICE\_ID\_LEN - 1) characters. The operating system requires the additional character for a path separator.
 
 -   If a bus driver does not supply globally unique instance IDs for its child devices, then the combination of device ID plus instance ID must be less than (MAX\_DEVICE\_ID\_LEN - 28). The value of this equation is currently 172.
 
@@ -102,15 +105,15 @@ When returning more than one *hardware ID* and/or more than one *compatible ID*,
 
 Setup checks the IDs against the IDs listed in INF files for possible matches. Setup first scans the hardware IDs list, then the compatible IDs list. Earlier entries are treated as more specific descriptions of the device, and later entries as more general (and thus less optimal) matches for the device. If no match is found in the list of hardware IDs, Setup might prompt the user for installation media before moving on to the list of compatible IDs.
 
-See [Plug and Play](https://docs.microsoft.com/windows-hardware/drivers/kernel/implementing-plug-and-play) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
+See [Plug and Play](./introduction-to-plug-and-play.md) for the general rules for handling [Plug and Play minor IRPs](plug-and-play-minor-irps.md).
 
 **Specifying BusQueryContainerIDs**
 
-Beginning with Windows 7, a bus driver should supply a string for BusQueryContainerID that contains the [container ID](https://docs.microsoft.com/windows-hardware/drivers/install/container-ids) for the device. The container ID allows the operating system to group all functional devices from a single removable physical device. For example, all functional devices from a removable multifunction device have the same container ID. For more information about reporting container IDs in special cases, such as a volume device that may span multiple disks in multiple containers but does not belong to any container, see [Overview of Container IDs](https://docs.microsoft.com/windows-hardware/drivers/install/overview-of-container-ids).
+Beginning with Windows 7, a bus driver should supply a string for BusQueryContainerID that contains the [container ID](../install/container-ids.md) for the device. The container ID allows the operating system to group all functional devices from a single removable physical device. For example, all functional devices from a removable multifunction device have the same container ID. For more information about reporting container IDs in special cases, such as a volume device that may span multiple disks in multiple containers but does not belong to any container, see [Overview of Container IDs](../install/overview-of-container-ids.md).
 
-A removable physical device is defined as a child device that the bus driver specifies a **Removable** capability of **TRUE** in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) request. For more information about the **Removable** value, see [**DEVICE\_CAPABILITIES**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
+A removable physical device is defined as a child device that the bus driver specifies a **Removable** capability of **TRUE** in response to an [**IRP\_MN\_QUERY\_CAPABILITIES**](irp-mn-query-capabilities.md) request. For more information about the **Removable** value, see [**DEVICE\_CAPABILITIES**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_capabilities).
 
-The bus driver creates a container ID based on a bus-specific unique ID that the device provides. For more information, see [How Container IDs are Generated](https://docs.microsoft.com/windows-hardware/drivers/install/how-container-ids-are-generated).
+The bus driver creates a container ID based on a bus-specific unique ID that the device provides. For more information, see [How Container IDs are Generated](../install/how-container-ids-are-generated.md).
 
 The driver must fail the IRP request and set **IoStatus.Status** to STATUS\_NOT\_SUPPORTED if any of the following are true:
 
@@ -122,17 +125,17 @@ The driver must fail the IRP request and set **IoStatus.Status** to STATUS\_NOT\
 
 Typically, only the PnP manager sends this IRP.
 
-To get the hardware IDs or compatible IDs for a device, call [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) instead of sending this IRP.
+To get the hardware IDs or compatible IDs for a device, call [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) instead of sending this IRP.
 
-A driver might send this IRP to retrieve the instance ID for one of its devices. For example, consider a multifunction PnP ISA device whose functions do not operate independently. The PnP manager enumerates the functions as separate devices, but the driver for such a device might be required to associate one or more of the functions. Because PnP ISA guarantees a unique instance ID, the driver for such a multifunction device can use the instance IDs to locate functions that reside on the same device. The driver for such a device must also get the device's enumerator name by calling [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty), to confirm that the device is a PnP ISA device.
+A driver might send this IRP to retrieve the instance ID for one of its devices. For example, consider a multifunction PnP ISA device whose functions do not operate independently. The PnP manager enumerates the functions as separate devices, but the driver for such a device might be required to associate one or more of the functions. Because PnP ISA guarantees a unique instance ID, the driver for such a multifunction device can use the instance IDs to locate functions that reside on the same device. The driver for such a device must also get the device's enumerator name by calling [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty), to confirm that the device is a PnP ISA device.
 
-See [Handling IRPs](https://docs.microsoft.com/windows-hardware/drivers/kernel/handling-irps) for information about sending IRPs. The following steps apply specifically to this IRP:
+See [Handling IRPs](./handling-irps.md) for information about sending IRPs. The following steps apply specifically to this IRP:
 
 -   Set the values in the next I/O stack location of the IRP: set **MajorFunction** to [**IRP\_MJ\_PNP**](irp-mj-pnp.md), set **MinorFunction** to IRP\_MN\_QUERY\_ID, and set **Parameters.QueryId.IdType** to **BusQueryInstanceID**.
 
 -   Set **IoStatus.Status** to STATUS\_NOT\_SUPPORTED.
 
-In addition to sending the query ID IRP, the driver must call [**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to get the **DevicePropertyEnumeratorName** for the device.
+In addition to sending the query ID IRP, the driver must call [**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty) to get the **DevicePropertyEnumeratorName** for the device.
 
 After the IRP completes and the driver is finished with the ID, the driver must free the ID structure returned by the driver(s) that handled the query IRP.
 
@@ -155,14 +158,9 @@ Requirements
 ## See also
 
 
-[Device Identification Strings](https://docs.microsoft.com/windows-hardware/drivers/install/device-identification-strings)
+[Device Identification Strings](../install/device-identification-strings.md)
 
-[**IoGetDeviceProperty**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty)
-
- 
+[**IoGetDeviceProperty**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceproperty)
 
  
-
-
-
 

@@ -1,0 +1,81 @@
+### YamlMime:Landing
+
+title: Partner Center for Windows Hardware
+summary: Create and manage system and driver submissions. Info for hardware certification and submission, shipping lables, Hardware dashboard API, dashboard administration, and driver distribution through Windows Update. Replaces the legacy (Sysdev) dashboard.
+
+metadata: 
+  author: eliotseattle
+  description: "This section enables you to create and manage your system and driver submissions quickly and easily."
+  ms.author: eliotgra
+  ms.date: 02/14/2020
+  ms.topic: landing-page
+  ms.prod: windows-hardware
+  ms.technology: windows-devices
+  services: wdk
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+# we want 24ish links max
+
+landingContent: 
+  # Card
+  - title: Hardware Submissions
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Create a new driver submission
+            url: create-a-new-hardware-submission.md
+          - text: Manage your hardware submissions
+            url: manage-your-hardware-submissions.md
+          - text: Driver flighting
+            url: driver-flighting.md
+          - text: Create a device metadata experience
+            url: create-a-device-metadata-experience.md
+
+  
+  - title: Driver distribution
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Publish a driver to windows update
+            url: publish-a-driver-to-windows-update.md
+          - text: Share a driver with a partner
+            url: sharing-drivers-with-your-partners.md
+          - text: Working with extension INF files
+            url: submit-dashboard-extension-inf-files.md
+
+
+
+  - title:  Hardware dashboard API
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Manage hardware submissions using APIs
+            url: dashboard-api.md
+          - text: Get product data
+            url: get-product-data.md
+          - text: Manage product submissions
+            url: manage-product-submissions.md
+
+
+  - title: Dashboard administration
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Register for the hardware program
+            url: register-for-the-hardware-program.md
+          - text: Add or remove users
+            url: adding-or-removing-users.md
+          - text: Add a code signing certificate
+            url: update-a-code-signing-certificate.md
+
+
+  - title: Dashboard information
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Getting started with the hardware dashboard
+            url: get-started-with-the-hardware-dashboard.md
+          - text: Hardware dashboard FAQ
+            url: hardware-dashboard-faq.md
+          - text: LSA and UEFI file signing
+            url: lsa-and-uefi-file-signing.md

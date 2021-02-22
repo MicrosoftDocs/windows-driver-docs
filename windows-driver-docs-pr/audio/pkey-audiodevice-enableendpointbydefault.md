@@ -1,13 +1,11 @@
 ---
 title: PKEY\_AudioDevice\_EnableEndpointByDefault
 description: PKEY\_AudioDevice\_EnableEndpointByDefault
-ms.assetid: bde2c06d-9418-4f6d-960a-0ebec83bf397
-ms.date: 11/28/2017
+ms.date: 01/15/2020
 ms.localizationpriority: medium
 ---
 
 # PKEY\_AudioDevice\_EnableEndpointByDefault
-
 
 In Windows 7 and later versions of Windows, the endpoint builder categorizes endpoints into form factors. These form factors are based on the KSNODETYPE GUID of a pin on the kernel streaming (KS) filter to which the endpoint is connected. When the audio endpoint builder enumerates certain endpoints, for example those with form factor types such as UnknownFormFactor, the endpoint builder creates these endpoints as disabled and hidden. So you must use the Sound program in Control Panel to enable such endpoints before you can use them.
 
@@ -69,8 +67,6 @@ The endpoint builder creates endpoints with any of the following KSNODETYPE valu
 </tr>
 </tbody>
 </table>
-
- 
 
 In Windows 7 and later versions of Windows, endpoints with a form factor of LineLevel but with a KSNODETYPE not equal to KSNODETYPE\_LINE\_CONNECTOR are also created as disabled and hidden. The following endpoints fall into this category.
 
@@ -169,8 +165,6 @@ In Windows 7 and later versions of Windows, endpoints with a form factor of Line
 </tbody>
 </table>
 
- 
-
 The following INF file snippet shows how to use **PKEY\_AudioDevice\_EnableEndpointByDefault** to enable or disable an endpoint by default.
 
 ```inf
@@ -184,7 +178,7 @@ ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,”GLOBAL”,USBAudio.Interface
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",USBAudio.Interface
 ...
 
 [USBAudio.Interface]
@@ -198,9 +192,9 @@ HKR,"EP\\n",%PKEY_AudioDevice_EnableEndpointByDefault%,0x00010001,EnableEndpoint
 ...
 
 [Strings]
-KSCATEGORY_AUDIO=” {6994AD04-93EF-11D0-A3CC-00A0C9223196}”
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
 PKEY_AudioEndpoint_Association="{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
-PKEY_AudioDevice_EnableEndpointByDefault="{F3E80BEF-1723-4FF2-BCC4-7F83DC5E46D4},4”
+PKEY_AudioDevice_EnableEndpointByDefault="{F3E80BEF-1723-4FF2-BCC4-7F83DC5E46D4},4"
 ...
 ```
 
@@ -219,7 +213,7 @@ ClassGuid= {4d36e96c-e325-11ce-bfc1-08002be10318}
 ...
 
 [USBAudio.Interfaces]
-AddInterface=%KSCATEGORY_AUDIO%,”GLOBAL”,USBAudio.Interface
+AddInterface=%KSCATEGORY_AUDIO%,"GLOBAL",USBAudio.Interface
 ...
 
 [USBAudio.Interface]
@@ -227,17 +221,17 @@ AddReg=MDVAD.EPProperties.AddReg
 ...
 
 ;; AddReg section is used to set default behavior of endpoint for CD player.
-;; Enable by default for KSNODETYPE_CD_PLAYER 
+;; Enable by default for KSNODETYPE_CD_PLAYER
 [MDVAD.EPProperties.AddReg]
 HKR,"EP\\0",%PKEY_AudioEndpoint_Association%,,%KSNODETYPE_CD_PLAYER%
 HKR,"EP\\0",%PKEY_AudioDevice_EnableEndpointByDefault%,0x00010001,0x00000201
 ...
 
 [Strings]
-KSCATEGORY_AUDIO=” {6994AD04-93EF-11D0-A3CC-00A0C9223196}”
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
 KSNODETYPE_CD_PLAYER="{DFF220E3-F70F-11D0-B917-00A0C9223196}"
 PKEY_AudioEndpoint_Association="{1DA5D803-D492-4EDD-8C23-E0C0FFEE7F0E},2"
-PKEY_AudioDevice_EnableEndpointByDefault="{F3E80BEF-1723-4FF2-BCC4-7F83DC5E46D4},4”
+PKEY_AudioDevice_EnableEndpointByDefault="{F3E80BEF-1723-4FF2-BCC4-7F83DC5E46D4},4"
 …
 ```
 
@@ -273,14 +267,3 @@ In the preceding example, the bitwise OR combination of FLOW\_MASK\_CAPTURE and 
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
-
-
-
-
-

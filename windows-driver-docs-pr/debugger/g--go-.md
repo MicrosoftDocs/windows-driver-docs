@@ -1,7 +1,6 @@
 ---
 title: g (Go)
 description: The g command starts executing the given process or thread. Execution will halt at the end of the program, when BreakAddress is hit, or when another event causes the debugger to stop.
-ms.assetid: 9b6aac94-6c53-40c2-a8de-2ad106678c65
 keywords: ["g (Go) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

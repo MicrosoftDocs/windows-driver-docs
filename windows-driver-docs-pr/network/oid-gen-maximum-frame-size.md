@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_MAXIMUM_FRAME_SIZE
 description: As a query, the OID_GEN_MAXIMUM_FRAME_SIZE OID specifies the maximum network packet size, in bytes, that the NIC supports.
-ms.assetid: 4c81f3a6-6f66-466d-8d22-67841a5a8320
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_MAXIMUM_FRAME_SIZE Network Drivers Starting with Windows Vista

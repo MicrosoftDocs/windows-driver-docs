@@ -1,7 +1,6 @@
 ---
 title: Legacy Audio Device Messages
 description: Legacy Audio Device Messages
-ms.assetid: d8b2807b-e72f-4f72-8a83-5700bc0239dc
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -28,29 +27,23 @@ The following Windows Multimedia functions provide a way for callers to pass mes
 
 Some of these device messages are handled directly by the device driver, and some are handled by the system on behalf of the device.
 
-This section describes only messages that are intercepted by the system and handled without ever being passed to the device driver. For more information, see [System-Intercepted Device Messages](https://docs.microsoft.com/windows-hardware/drivers/audio/system-intercepted-device-messages).
+This section describes only messages that are intercepted by the system and handled without ever being passed to the device driver. For more information, see [System-Intercepted Device Messages](./system-intercepted-device-messages.md).
 
 Each message described in this section is valid for use with one or more of the six *xxx*Message functions in the preceding list.
 
 This section describes the following messages:
 
-[**DRV\_QUERYDEVICEINTERFACE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536363(v=vs.85))
+[**DRV\_QUERYDEVICEINTERFACE**](/previous-versions/windows/hardware/drivers/ff536363(v=vs.85))
 
-[**DRV\_QUERYDEVICEINTERFACESIZE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536364(v=vs.85))
+[**DRV\_QUERYDEVICEINTERFACESIZE**](/previous-versions/windows/hardware/drivers/ff536364(v=vs.85))
 
-[**DRV\_QUERYDEVNODE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536365(v=vs.85))
+[**DRV\_QUERYDEVNODE**](/previous-versions/windows/hardware/drivers/ff536365(v=vs.85))
 
-[**DRV\_QUERYMAPPABLE**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536366(v=vs.85))
+[**DRV\_QUERYMAPPABLE**](/previous-versions/windows/hardware/drivers/ff536366(v=vs.85))
 
-[**DRVM\_MAPPER\_CONSOLEVOICECOM\_GET**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536361(v=vs.85))
+[**DRVM\_MAPPER\_CONSOLEVOICECOM\_GET**](/previous-versions/windows/hardware/drivers/ff536361(v=vs.85))
 
-[**DRVM\_MAPPER\_PREFERRED\_GET**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff536362(v=vs.85))
-
- 
+[**DRVM\_MAPPER\_PREFERRED\_GET**](/previous-versions/windows/hardware/drivers/ff536362(v=vs.85))
 
  
-
-
-
-
 

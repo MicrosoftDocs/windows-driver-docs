@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: a0e12657-c34e-4aff-a068-911a6aa6959d
 keywords: ["OIDFromString method Print Devices", "OIDFromString method Print Devices , ISNMP interface", "ISNMP interface Print Devices , OIDFromString method"]
 topic_type:
 - apiref

@@ -1,7 +1,6 @@
 ---
 title: Minidrivers, Miniport drivers, and driver pairs
 description: A minidriver or a miniport driver acts as half of a driver pair.
-ms.assetid: 33387A72-5278-4637-AED4-C010E4C1616B
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -13,17 +12,17 @@ A minidriver or a miniport driver acts as half of a driver pair. Driver pairs li
 
 Microsoft provides the general driver, and typically an independent hardware vendor provides the specific driver. Before you read this topic, you should understand the ideas presented in [Device nodes and device stacks](device-nodes-and-device-stacks.md) and [I/O request packets](i-o-request-packets.md).
 
-Every kernel-mode driver must implement a function named [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which gets called shortly after the driver is loaded. The **DriverEntry** function fills in certain members of a [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure with pointers to several other functions that the driver implements. For example, the **DriverEntry** function fills in the **Unload** member of the **DRIVER\_OBJECT** structure with a pointer to the driver's [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function, as shown in the following diagram.
+Every kernel-mode driver must implement a function named [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which gets called shortly after the driver is loaded. The **DriverEntry** function fills in certain members of a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure with pointers to several other functions that the driver implements. For example, the **DriverEntry** function fills in the **Unload** member of the **DRIVER\_OBJECT** structure with a pointer to the driver's [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) function, as shown in the following diagram.
 
 ![diagram showing the driver\-object structure with the unload member](images/driverfunctionpointers02.png)
 
-The **MajorFunction** member of the [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure is an array of pointers to functions that handle I/O request packets ([**IRP**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)s), as shown in the following diagram. Typically the driver fills in several members of the **MajorFunction** array with pointers to functions (implemented by the driver) that handle various kinds of IRPs.
+The **MajorFunction** member of the [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure is an array of pointers to functions that handle I/O request packets ([**IRP**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp)s), as shown in the following diagram. Typically the driver fills in several members of the **MajorFunction** array with pointers to functions (implemented by the driver) that handle various kinds of IRPs.
 
 ![diagram showing the driver\-object structure with the majorfunction member](images/driverfunctionpointers03.png)
 
 An IRP can be categorized according to its major function code, which is identified by a constant, such as **IRP\_MJ\_READ**, **IRP\_MJ\_WRITE**, or **IRP\_MJ\_PNP**. The constants that identify major function code serve as indices in the **MajorFunction** array. For example, suppose the driver implements a dispatch function to handle IRPs that have the major function code **IRP\_MJ\_WRITE**. In this case, the driver must fill in the **MajorFunction**\[IRP\_MJ\_WRITE\] element of the array with a pointer to the dispatch function.
 
-Typically the driver fills in some of the elements of the **MajorFunction** array and leaves the remaining elements set to default values provided by the I/O manager. The following example shows how to use the [**!drvobj**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-drvobj) debugger extension to inspect the function pointers for the parport driver.
+Typically the driver fills in some of the elements of the **MajorFunction** array and leaves the remaining elements set to default values provided by the I/O manager. The following example shows how to use the [**!drvobj**](../debugger/-drvobj.md) debugger extension to inspect the function pointers for the parport driver.
 
 ``` syntax
 0: kd> !drvobj parport 2
@@ -65,9 +64,9 @@ Dispatch routines:
 [1b] IRP_MJ_PNP                         fffff880065d4840    parport!PptDispatchPnp
 ```
 
-In the debugger output, you can see that parport.sys implements **GsDriverEntry**, the entry point for the driver. **GsDriverEntry**, which was generated automatically when the driver was built, performs some initialization and then calls [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which was implemented by the driver developer.
+In the debugger output, you can see that parport.sys implements **GsDriverEntry**, the entry point for the driver. **GsDriverEntry**, which was generated automatically when the driver was built, performs some initialization and then calls [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which was implemented by the driver developer.
 
-You can also see that the parport driver (in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function) provides pointers to dispatch functions for these major function codes:
+You can also see that the parport driver (in its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function) provides pointers to dispatch functions for these major function codes:
 
 -   IRP\_MJ\_CREATE
 -   IRP\_MJ\_CLOSE
@@ -84,7 +83,7 @@ You can also see that the parport driver (in its [**DriverEntry**](https://docs.
 
 The remaining elements of the **MajorFunction** array hold pointers to the default dispatch function **nt!IopInvalidDeviceRequest**.
 
-In the debugger output, you can see that the parport driver provided function pointers for [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) and [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device), but did not provide a function pointer for [*StartIo*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio). The *AddDevice* function is unusual because its function pointer is not stored in the [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure. Instead, it is stored in the **AddDevice** member of an extension to the **DRIVER\_OBJECT** structure. The following diagram illustrates the function pointers that the parport driver provided in its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The function pointers provided by parport are shaded.
+In the debugger output, you can see that the parport driver provided function pointers for [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload) and [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device), but did not provide a function pointer for [*StartIo*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio). The *AddDevice* function is unusual because its function pointer is not stored in the [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure. Instead, it is stored in the **AddDevice** member of an extension to the **DRIVER\_OBJECT** structure. The following diagram illustrates the function pointers that the parport driver provided in its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The function pointers provided by parport are shaded.
 
 ![diagram of function pointers in a driver\-object structure](images/driverfunctionpointers01.png)
 
@@ -107,7 +106,7 @@ Suppose that the Proseware and Contoso companies both make a toy robot that requ
 ## <span id="Function_pointers_in_driver_pairs"></span><span id="function_pointers_in_driver_pairs"></span><span id="FUNCTION_POINTERS_IN_DRIVER_PAIRS"></span>Function pointers in driver pairs
 
 
-In a (specific.sys, general.sys) pair, Windows loads specific.sys and calls its [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The **DriverEntry** function of specific.sys receives a pointer to a [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure. Normally you would expect **DriverEntry** to fill in several elements of the **MajorFunction** array with pointers to dispatch functions. Also you would expect **DriverEntry** to fill in the **Unload** member (and possibly the **StartIo** member) of the **DRIVER\_OBJECT** structure and the **AddDevice** member of the driver object extension. However, in a driver pair model, **DriverEntry** does not necessarily do this. Instead the **DriverEntry** function of specific.sys passes the **DRIVER\_OBJECT** structure along to an initialization function implemented by general.sys. The following code example shows how the initialization function might be called in the (ProsewareRobot.sys, GeneralRobot.sys) pair.
+In a (specific.sys, general.sys) pair, Windows loads specific.sys and calls its [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) function. The **DriverEntry** function of specific.sys receives a pointer to a [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure. Normally you would expect **DriverEntry** to fill in several elements of the **MajorFunction** array with pointers to dispatch functions. Also you would expect **DriverEntry** to fill in the **Unload** member (and possibly the **StartIo** member) of the **DRIVER\_OBJECT** structure and the **AddDevice** member of the driver object extension. However, in a driver pair model, **DriverEntry** does not necessarily do this. Instead the **DriverEntry** function of specific.sys passes the **DRIVER\_OBJECT** structure along to an initialization function implemented by general.sys. The following code example shows how the initialization function might be called in the (ProsewareRobot.sys, GeneralRobot.sys) pair.
 
 ```ManagedCPlusPlus
 PVOID g_ProsewareRobottCallbacks[3] = {DeviceControlCallback, PnpCallback, PowerCallback};
@@ -120,9 +119,9 @@ NTSTATUS DriverEntry (DRIVER_OBJECT *DriverObject, PUNICODE_STRING RegistryPath)
 }
 ```
 
-The initialization function in GeneralRobot.sys writes function pointers to the appropriate members of the [**DRIVER\_OBJECT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure (and its extension) and the appropriate elements of the **MajorFunction** array. The idea is that when the I/O manager sends an IRP to the driver pair, the IRP goes first to a dispatch function implemented by GeneralRobot.sys. If GeneralRobot.sys can handle the IRP on its own, then the specific driver, ProsewareRobot.sys, does not have to be involved. If GeneralRobot.sys can handle some, but not all, of the IRP processing, it gets help from one of the callback functions implemented by ProsewareRobot.sys. GeneralRobot.sys receives pointers to the ProsewareRobot callbacks in the GeneralRobotInit call.
+The initialization function in GeneralRobot.sys writes function pointers to the appropriate members of the [**DRIVER\_OBJECT**](/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object) structure (and its extension) and the appropriate elements of the **MajorFunction** array. The idea is that when the I/O manager sends an IRP to the driver pair, the IRP goes first to a dispatch function implemented by GeneralRobot.sys. If GeneralRobot.sys can handle the IRP on its own, then the specific driver, ProsewareRobot.sys, does not have to be involved. If GeneralRobot.sys can handle some, but not all, of the IRP processing, it gets help from one of the callback functions implemented by ProsewareRobot.sys. GeneralRobot.sys receives pointers to the ProsewareRobot callbacks in the GeneralRobotInit call.
 
-At some point after [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) returns, a device stack gets constructed for the Proseware Robot device node. The device stack might look like this.
+At some point after [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize) returns, a device stack gets constructed for the Proseware Robot device node. The device stack might look like this.
 
 ![diagram of the proseware robot device node, showing three device objects in the device stack: afterthought.sys (filter do), prosewarerobot.sys, generalrobot.sys (fdo), and pci.sys (pdo)](images/driverpairs01.png)
 
@@ -133,7 +132,7 @@ Notice that the driver pair occupies only one level in the device stack and is a
 ## <span id="Example_of_a_driver_pair"></span><span id="example_of_a_driver_pair"></span><span id="EXAMPLE_OF_A_DRIVER_PAIR"></span>Example of a driver pair
 
 
-Suppose you have a wireless network card in your laptop computer, and by looking in Device Manager, you determine that netwlv64.sys is the driver for the network card. You can use the [**!drvobj**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-drvobj) debugger extension to inspect the function pointers for netwlv64.sys.
+Suppose you have a wireless network card in your laptop computer, and by looking in Device Manager, you determine that netwlv64.sys is the driver for the network card. You can use the [**!drvobj**](../debugger/-drvobj.md) debugger extension to inspect the function pointers for netwlv64.sys.
 
 ``` syntax
 1: kd> !drvobj netwlv64 2
@@ -174,9 +173,9 @@ Dispatch routines:
 [1b] IRP_MJ_PNP                         fffff8800193e518 ndis!ndisPnPDispatch
 ```
 
-In the debugger output, you can see that netwlv64.sys implements **GsDriverEntry**, the entry point for the driver. **GsDriverEntry**, which was automatically generated when the driver was built, performs some initialization and then calls [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which was written by the driver developer.
+In the debugger output, you can see that netwlv64.sys implements **GsDriverEntry**, the entry point for the driver. **GsDriverEntry**, which was automatically generated when the driver was built, performs some initialization and then calls [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), which was written by the driver developer.
 
-In this example, netwlv64.sys implements [**DriverEntry**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), but ndis.sys implements [*AddDevice*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device), [*Unload*](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload), and several dispatch functions. Netwlv64.sys is called an NDIS miniport driver, and ndis.sys is called the NDIS Library. Together, the two modules form an (NDIS miniport, NDIS Library) pair.
+In this example, netwlv64.sys implements [**DriverEntry**](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_initialize), but ndis.sys implements [*AddDevice*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device), [*Unload*](/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload), and several dispatch functions. Netwlv64.sys is called an NDIS miniport driver, and ndis.sys is called the NDIS Library. Together, the two modules form an (NDIS miniport, NDIS Library) pair.
 
 This diagram shows the device stack for the wireless network card. Notice that the driver pair (netwlv64.sys, ndis.sys) occupies only one level in the device stack and is associated with only one device object: the FDO.
 
@@ -209,11 +208,4 @@ The different technology-specific driver models use a variety of names for the s
 [Driver stacks](driver-stacks.md)
 
  
-
- 
-
-
-
-
-
 

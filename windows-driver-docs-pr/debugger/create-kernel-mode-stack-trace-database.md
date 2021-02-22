@@ -1,7 +1,6 @@
 ---
 title: Create kernel mode stack trace database
 description: Create kernel mode stack trace database
-ms.assetid: 0c1f94c0-ebc7-4e3c-8101-ba3cf830e7f8
 keywords: ["Create kernel mode stack trace database (global flag)"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium
@@ -13,7 +12,7 @@ ms.localizationpriority: medium
 ## <span id="ddk_create_kernel_mode_stack_trace_database_dtools"></span><span id="DDK_CREATE_KERNEL_MODE_STACK_TRACE_DATABASE_DTOOLS"></span>
 
 
-The **Create kernel mode stack trace database** flag creates a run-time stack trace database of kernel operations, such as resource objects and object management operations, and works only when using the checked build of Windows.
+The **Create kernel mode stack trace database** flag creates a run-time stack trace database of kernel operations, such as resource objects and object management operations, and works only when using the checked build of Windows. Checked builds were available on older versions of Windows before Windows 10, version 1803.
 
 <table>
 <colgroup>

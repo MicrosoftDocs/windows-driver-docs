@@ -1,7 +1,6 @@
 ---
 title: KSCATEGORY_QUALITY
 description: KSCATEGORY_QUALITY
-ms.assetid: fc23e069-b514-41a3-b3c2-c65b35b2e431
 keywords: ["KSCATEGORY_QUALITY Device and Driver Installation"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.date: 10/17/2018
 # KSCATEGORY_QUALITY
 
 
-The KSCATEGORY_QUALITY [device interface class](https://docs.microsoft.com/windows-hardware/drivers/install/device-interface-classes) is defined for the [kernel streaming](https://docs.microsoft.com/windows-hardware/drivers/stream/streaming-minidrivers2) (KS) functional category for quality management.
+The KSCATEGORY_QUALITY [device interface class](./overview-of-device-interface-classes.md) is defined for the [kernel streaming](../stream/streaming-minidrivers2.md) (KS) functional category for quality management.
 
 <table>
 <colgroup>
@@ -50,7 +49,7 @@ Remarks
 
 Drivers for KS devices register instances of KSCATEGORY_QUALITY to indicate to the operating system that the devices support the KSCATEGORY_QUALITY functional category.
 
-For more information, see [Quality Management](https://docs.microsoft.com/windows-hardware/drivers/stream/quality-management).
+For more information, see [Quality Management](../stream/quality-management.md).
 
 Requirements
 ------------
@@ -69,10 +68,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
-
 

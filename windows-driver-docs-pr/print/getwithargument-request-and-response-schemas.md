@@ -1,7 +1,6 @@
 ---
 title: GetWithArgument Request and Response Schemas
 description: The GetWithArgument request schema and corresponding response schema definition, and an example of each, are below.
-ms.assetid: F68731BC-2907-4FA2-B5A4-0FAC0A9F663A
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -19,7 +18,7 @@ A GetWithArgument request is used to query the printer for one or more of its cu
 The response to this request is in the following section [GetWithArgument Response Schema](#getwithargument-response-schema).
 
 ```xml
-<bidi:GetWithArgument xmlns:bidi='http://schemas.microsoft.com/windows/2005/03/printing/bidi'>
+<bidi:GetWithArgument xmlns:bidi='https://schemas.microsoft.com/windows/2005/03/printing/bidi'>
   <Query schema='\Printer.Resources:Data'>
     <BIDI_STRING>en-us</BIDI_STRING>
   </Query>
@@ -30,9 +29,9 @@ Formal Definition of the GetWithArgument Request Schema
 
 ```xml
 <?xml version='1.0'?>  
-<schema targetNamespace='http://schemas.microsoft.com/windows/2005/03/printing/bidi'  
-    xmlns:bidi='http://schemas.microsoft.com/windows/2005/03/printing/bidi'   
-    xmlns ='http://www.w3.org/2001/XMLSchema'>  
+<schema targetNamespace='https://schemas.microsoft.com/windows/2005/03/printing/bidi'  
+    xmlns:bidi='https://schemas.microsoft.com/windows/2005/03/printing/bidi'   
+    xmlns ='https://www.w3.org/2001/XMLSchema'>  
     <element name='GetWithArgument'>  
         <complexType>  
             <sequence maxOccurs='unbounded'>  
@@ -73,7 +72,7 @@ Formal Definition of the GetWithArgument Request Schema
 This example is the response to the GetWithArgument request above. For queries that succeed, the result is the value of the particular schema. For queries that fail, the result is an error code.
 
 ```xml
-<bidi:GetWithArgumentResponse xmlns:bidi="http://schemas.microsoft.com/windows/2005/03/printing/bidi">
+<bidi:GetWithArgumentResponse xmlns:bidi="https://schemas.microsoft.com/windows/2005/03/printing/bidi">
   <Query schema="\Printer.Data:GetWithArgument">
     <Schema name="\Printer.Data:GetWithArgument">
       <BIDI_BLOB>Base64 Encoded XML resource file data to be used by Print Config<BIDI_BLOB>
@@ -86,9 +85,9 @@ Formal Definition of the GetWithArgument Response Schema
 
 ```xml
 <?xml version='1.0'?>  
-<schema targetNamespace='http://schemas.microsoft.com/windows/2005/03/printing/bidi'  
-    xmlns:bidi='http://schemas.microsoft.com/windows/2005/03/printing/bidi'   
-    xmlns ='http://www.w3.org/2001/XMLSchema'>  
+<schema targetNamespace='https://schemas.microsoft.com/windows/2005/03/printing/bidi'  
+    xmlns:bidi='https://schemas.microsoft.com/windows/2005/03/printing/bidi'   
+    xmlns ='https://www.w3.org/2001/XMLSchema'>  
     <element name='GetWithArgumentResponse'>  
         <complexType>  
             <sequence maxOccurs='unbounded'>  
@@ -137,6 +136,6 @@ Formal Definition of the GetWithArgument Response Schema
 
 [Bidirectional Communication Schema](bidirectional-communication-schema.md)  
 
-[SendRecvXMLStream](https://docs.microsoft.com/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
+[SendRecvXMLStream](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstream)  
 
-[SendRecvXMLString](https://docs.microsoft.com/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)  
+[SendRecvXMLString](/windows-hardware/drivers/ddi/bidispl/nf-bidispl-ibidispl2-sendrecvxmlstring)

@@ -1,7 +1,6 @@
 ---
 title: DirectX VPE Initialization
 description: DirectX VPE Initialization
-ms.assetid: 1309a302-f9fc-49cf-a6b8-691d0956beab
 keywords:
 - DirectX VPE support WDK DirectDraw , initialization
 - drawing VPEs WDK DirectDraw , initialization
@@ -21,21 +20,15 @@ ms.localizationpriority: medium
 
 To enable VPE functionality, the driver must do the following:
 
--   When [**DrvGetDirectDrawInfo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetdirectdrawinfo) is called, initialize the following members of the [**DDCORECAPS**](https://docs.microsoft.com/windows/desktop/api/ddrawi/ns-ddrawi-_ddcorecaps) structure embedded in the [**DD\_HALINFO**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_halinfo) structure to which the *pHalInfo* parameter points:
+-   When [**DrvGetDirectDrawInfo**](/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo) is called, initialize the following members of the [**DDCORECAPS**](/windows/win32/api/ddrawi/ns-ddrawi-ddcorecaps) structure embedded in the [**DD\_HALINFO**](/windows/win32/api/ddrawint/ns-ddrawint-dd_halinfo) structure to which the *pHalInfo* parameter points:
     -   Set the DDCAPS2\_VIDEOPORT flag in **dwCaps2** to indicate that the display hardware contains a hardware video port. The driver should also set any other hardware video-port-related DDCAPS2\_*Xxx* flags to describe the VPE support that the device is capable of.
     -   Set **dwMaxVideoPorts** to the number of hardware video ports supported by the device.
     -   Initialize **dwCurrVideoPorts** to zero.
--   Implement a [**DdGetDriverInfo**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) function and set the **GetDriverInfo** member of the DD\_HALINFO structure to point to this function when [**DrvGetDirectDrawInfo**](https://docs.microsoft.com/windows/desktop/api/winddi/nf-winddi-drvgetdirectdrawinfo) is called. The driver's **DdGetDriverInfo** function must parse the GUID\_VideoPortCallbacks and GUID\_VideoPortCaps GUIDs.
+-   Implement a [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) function and set the **GetDriverInfo** member of the DD\_HALINFO structure to point to this function when [**DrvGetDirectDrawInfo**](/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo) is called. The driver's **DdGetDriverInfo** function must parse the GUID\_VideoPortCallbacks and GUID\_VideoPortCaps GUIDs.
 
--   When [**DdGetDriverInfo**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) is called with the GUID\_VideoPortCallbacks GUID, fill in a [**DD\_VIDEOPORTCALLBACKS**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-dd_videoportcallbacks) structure with the appropriate driver callbacks and flags set. These callbacks are listed in [VPE Callback Functions](vpe-callback-functions.md). The driver must then copy this initialized structure into the DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_getdriverinfodata) structure points, and return the number of bytes written into the buffer in **dwActualSize**.
+-   When [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) is called with the GUID\_VideoPortCallbacks GUID, fill in a [**DD\_VIDEOPORTCALLBACKS**](/windows/win32/api/ddrawint/ns-ddrawint-dd_videoportcallbacks) structure with the appropriate driver callbacks and flags set. These callbacks are listed in [VPE Callback Functions](vpe-callback-functions.md). The driver must then copy this initialized structure into the DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverinfodata) structure points, and return the number of bytes written into the buffer in **dwActualSize**.
 
--   When [**DdGetDriverInfo**](https://docs.microsoft.com/windows/desktop/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) is called with the GUID\_VideoPortCaps GUID, fill in the array of [**DDVIDEOPORTCAPS**](https://docs.microsoft.com/windows/desktop/api/dvp/ns-dvp-_ddvideoportcaps) structures with the capabilities of each hardware video port. Each hardware video port has an entry in the array, with hardware video port zero specified first, hardware video port one specified next, and so on. If the device supports only one hardware video port, there will only be one DDVIDEOPORTCAPS structure in the array. The driver must then copy this data to the DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](https://docs.microsoft.com/windows/desktop/api/ddrawint/ns-ddrawint-_dd_getdriverinfodata) structure points and return the number of bytes written into the buffer in **dwActualSize**.
-
- 
+-   When [**DdGetDriverInfo**](/windows/win32/api/ddrawint/nc-ddrawint-pdd_getdriverinfo) is called with the GUID\_VideoPortCaps GUID, fill in the array of [**DDVIDEOPORTCAPS**](/windows/win32/api/dvp/ns-dvp-ddvideoportcaps) structures with the capabilities of each hardware video port. Each hardware video port has an entry in the array, with hardware video port zero specified first, hardware video port one specified next, and so on. If the device supports only one hardware video port, there will only be one DDVIDEOPORTCAPS structure in the array. The driver must then copy this data to the DirectDraw-allocated buffer to which the **lpvData** member of the [**DD\_GETDRIVERINFODATA**](/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverinfodata) structure points and return the number of bytes written into the buffer in **dwActualSize**.
 
  
-
-
-
-
 

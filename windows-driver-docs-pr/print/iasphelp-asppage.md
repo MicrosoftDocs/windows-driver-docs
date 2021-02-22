@@ -7,7 +7,6 @@ MS-HAID:
 MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
-ms.assetid: 325c0666-b4c4-48b5-b14f-bdb81e1ee5d2
 keywords: ["get_AspPage method Print Devices", "get_AspPage method Print Devices , Iasphelp interface", "Iasphelp interface Print Devices , get_AspPage method"]
 topic_type:
 - apiref
@@ -81,7 +80,7 @@ This method can return one of these values.
 
 ## VBScript Example
 
-To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](https://docs.microsoft.com/windows-hardware/drivers/print/which-printer-details-page-is-displayed-).
+To determine where to find the page's ASP file, the method uses the algorithm described in [Which Printer Details Page is Displayed?](./which-printer-details-page-is-displayed-.md).
 
 The [**Iasphelp::Open**](iasphelp-open.md) method must be called before the **Iasphelp::AspPage** property can be queried.
 

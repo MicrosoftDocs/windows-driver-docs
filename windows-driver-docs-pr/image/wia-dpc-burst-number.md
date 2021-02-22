@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_BURST\_NUMBER
 description: The WIA\_DPC\_BURST\_NUMBER property contains the number of images that a device attempts to capture during a burst operation.
-ms.assetid: fd97364a-b39c-441f-8482-9ebd6a386f0c
 keywords: ["WIA_DPC_BURST_NUMBER Imaging Devices"]
 topic_type:
 - apiref

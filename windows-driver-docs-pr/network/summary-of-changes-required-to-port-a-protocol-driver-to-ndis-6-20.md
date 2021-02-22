@@ -1,7 +1,6 @@
 ---
 title: Summary of changes to port a protocol driver to NDIS 6.20
 description: Summary of Changes Required to Port a Protocol Driver to NDIS 6.20
-ms.assetid: d47b29a5-3385-4023-b94c-5cfbc225f48a
 keywords:
 - NDIS 6.20 WDK , porting protocol drivers
 - porting protocol drivers to NDIS 6.20 WDK
@@ -39,7 +38,7 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
     For more information about supporting more than 64 processors, see [Support for More than 64 Processors in NDIS 6.20](support-for-more-than-64-processors-in-ndis-6-20.md).
 
 <a href="" id="driver-initialization-------"></a>**Driver Initialization**   
--   Set the NDIS version to 6.20 in the **MajorNdisVersion** and **MinorNdisVersion** members of the [**NDIS\_PROTOCOL\_DRIVER\_CHARACTERISTICS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_driver_characteristics) structure that is passed to the [**NdisRegisterProtocolDriver**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function.
+-   Set the NDIS version to 6.20 in the **MajorNdisVersion** and **MinorNdisVersion** members of the [**NDIS\_PROTOCOL\_DRIVER\_CHARACTERISTICS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_driver_characteristics) structure that is passed to the [**NdisRegisterProtocolDriver**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver) function.
 
 -   Set the protocol driver version in the **MajorDriverVersion** and **MinorDriverVersion** members of the NDIS\_PROTOCOL\_DRIVER\_CHARACTERISTICS structure to an appropriate driver-specific value.
 
@@ -51,21 +50,15 @@ Replace the preprocessor definition NDIS61 or NDIS60 with NDIS620.
     -   Hardware assist (VMQ)
 -   Use the updated versions of these structures:
 
-    -   [**NDIS\_BIND\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
-    -   [**NDIS\_OFFLOAD\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
+    -   [**NDIS\_BIND\_PARAMETERS**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_bind_parameters)
+    -   [**NDIS\_OFFLOAD\_PARAMETERS**](/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_offload_parameters)
 
     For information about NDIS structure version information, see [Specifying NDIS Version Information](specifying-ndis-version-information.md).
 
 <a href="" id="send-and-receive-data-paths-------"></a>**Send and Receive Data Paths**   
--   Use the updated version of the [**NET\_BUFFER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure.
+-   Use the updated version of the [**NET\_BUFFER**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer) structure.
 
 -   Optionally support the virtual machine queue (VMQ) interface. For more information about VMQ, see [Virtual Machine Queue (VMQ) in NDIS 6.20](virtual-machine-queue--vmq--in-ndis-6-20.md).
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_ERROR
 description: The DEVPROP_TYPE_ERROR identifier represents the base-data-type identifier for the Microsoft Win32 error code values that are defined in WINERROR.H.
-ms.assetid: fe8fa3de-a984-4c6f-902f-5eda24402a65
 keywords: ["DEVPROP_TYPE_ERROR Device and Driver Installation"]
 topic_type:
 - apiref
@@ -23,7 +22,7 @@ The DEVPROP_TYPE_ERROR identifier represents the base-data-type identifier for t
 Remarks
 -------
 
-In Windows Vista and later versions of Windows, the [unified device property model](https://docs.microsoft.com/windows-hardware/drivers/install/unified-device-property-model--windows-vista-and-later-) also defines a [**DEVPROP_TYPE_NTSTATUS**](devprop-type-ntstatus.md) base-data-type identifier for NTSTATUS error code values.
+In Windows Vista and later versions of Windows, the [unified device property model](./unified-device-property-model--windows-vista-and-later-.md) also defines a [**DEVPROP_TYPE_NTSTATUS**](devprop-type-ntstatus.md) base-data-type identifier for NTSTATUS error code values.
 
 You can combine DEVPROP_TYPE_ERROR only with the [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md) property-data-type modifier.
 
@@ -41,7 +40,7 @@ To set a property whose base data type is DEVPROP_TYPE_ERROR, call the correspon
 
 ### Retrieving the Descriptive Text for a Win32 Error Code Value
 
-To retrieve the descriptive text that is associated with a Win32 error code, call the [**FormatMessage**](https://docs.microsoft.com/windows/desktop/api/winbase/nf-winbase-formatmessage) function (documented in the Windows SDK) as follows:
+To retrieve the descriptive text that is associated with a Win32 error code, call the [**FormatMessage**](/windows/win32/api/winbase/nf-winbase-formatmessage) function (documented in the Windows SDK) as follows:
 
 -   Include the FORMAT_MESSAGE_FROM_SYSTEM flag in the value of the *dwflags* parameter.
 
@@ -77,11 +76,4 @@ Requirements
 [**DEVPROP_TYPEMOD_ARRAY**](devprop-typemod-array.md)
 
  
-
- 
-
-
-
-
-
 

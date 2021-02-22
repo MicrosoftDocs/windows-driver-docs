@@ -1,30 +1,30 @@
 ---
 title: Virtual Machine Queue (VMQ) Overview
 description: Virtual Machine Queue (VMQ) Overview
-ms.assetid: c502c7d6-bdf1-4656-b5a5-339250910f08
-ms.date: 04/20/2017
+ms.date: 05/29/2020
 ms.localizationpriority: medium
 ---
 
 # Virtual Machine Queue (VMQ) Overview
 
-This section describes the NDIS virtual machine queue (VMQ) interface. The VMQ interface supports Microsoft Hyper-V network performance improvements in NDIS 6.20 and later in Windows Server 2008 R2 and later versions of Windows Server.
+The NDIS Virtual Machine Queue (VMQ) interface supports Microsoft Hyper-V network performance improvements in NDIS 6.20 and later in Windows Server 2008 R2 and later versions of Windows Server.
 
-The [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) documentation describes the high-level concepts of the VMQ architecture. The [Writing VMQ Drivers](writing-vmq-drivers.md) documentation provides the more detailed information about writing NDIS VMQ drivers.
+- [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md) describes the high-level concepts of the VMQ architecture.
 
-**Note**  Be sure to study the [NDIS Virtual Miniport Driver sample](https://go.microsoft.com/fwlink/p/?LinkId=617918), especially the vmq.c and vmq.h source files.
+- [Writing VMQ Drivers](writing-vmq-drivers.md) provides more detailed information about writing NDIS VMQ drivers.
 
- 
+> [!NOTE]
+> Be sure to study the [NDIS Virtual Miniport Driver sample](https://github.com/Microsoft/Windows-driver-samples/tree/master/network/ndis/netvmini/6x), especially the vmq.c and vmq.h source files.
 
 The VMQ interface supports:
 
--   Classification of received packets in network adapter hardware by using the destination media access control (MAC) address to route the packets to different receive queues.
+- Classification of received packets in network adapter hardware by using the destination media access control (MAC) address to route the packets to different receive queues.
 
--   NIC ability to use DMA to transfer packets directly to a virtual machine's shared memory. For more information about shared memory, see [NDIS Memory Management Interface](https://docs.microsoft.com/windows-hardware/drivers/ddi/_netvista/).
+- Shared memory; For more information see [NDIS Memory Management Interface](/windows-hardware/drivers/ddi/_netvista/).
 
--   Scaling to multiple processors by processing packets for different virtual machines on different processors.
+- Scaling to multiple processors by processing packets for different virtual machines on different processors.
 
-This section includes the following topics:
+## Related Topics
 
--   [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md)
--   [Writing VMQ Drivers](writing-vmq-drivers.md)
+- [Virtual Machine Queue Architecture](virtual-machine-queue-architecture.md)
+- [Writing VMQ Drivers](writing-vmq-drivers.md)

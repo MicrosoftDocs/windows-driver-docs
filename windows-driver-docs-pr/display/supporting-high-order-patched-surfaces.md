@@ -1,7 +1,6 @@
 ---
 title: Supporting High-Order Patched Surfaces
 description: Supporting High-Order Patched Surfaces
-ms.assetid: 020fb91c-c8cd-43e8-a180-bbb2ef606be8
 keywords:
 - high-order patched surfaces WDK DirectX 9.0
 - displacement mapping WDK DirectX 9.0
@@ -38,7 +37,7 @@ To indicate the maximum number of N-patch subdivisions that the display device c
 
 The driver returns a D3DCAPS9 structure in response to a **GetDriverInfo2** query similarly to how it returns a D3DCAPS8 structure as described in [Reporting DirectX 8.0 Style Direct3D Capabilities](reporting-directx-8-0-style-direct3d-capabilities.md). Support of this query is described in [Supporting GetDriverInfo2](supporting-getdriverinfo2.md).
 
-The driver specifies the D3DFORMAT\_OP\_DMAP flag in the **dwOperations** member of the [**DDPIXELFORMAT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for a particular surface format to mark the format for displacement-map sampling. When a texture surface is created, the Direct3D runtime sets the DDSCAPS3\_DMAP bit of the **dwCaps3** member of the DDSCAPSEX ([**DDSCAPS2**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff550292(v=vs.85))) structure to indicate that the texture can be sampled in the tessellation unit.
+The driver specifies the D3DFORMAT\_OP\_DMAP flag in the **dwOperations** member of the [**DDPIXELFORMAT**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ddpixelformat) structure for a particular surface format to mark the format for displacement-map sampling. When a texture surface is created, the Direct3D runtime sets the DDSCAPS3\_DMAP bit of the **dwCaps3** member of the DDSCAPSEX ([**DDSCAPS2**](/previous-versions/windows/hardware/drivers/ff550292(v=vs.85))) structure to indicate that the texture can be sampled in the tessellation unit.
 
 Note that DirectX 9.0 and later drivers must turn off the N-patch feature only when the value of the D3DRS\_PATCHSEGMENTS render state is less than 1.0f. DirectX 8.1 and earlier drivers are not required to behave in this manner.
 
@@ -60,15 +59,9 @@ D3DRS\_ENABLEADAPTIVETESSELLATION = **FALSE**
 
 The D3DDMAPSAMPLER sampler, which is also new for DirectX 9.0, is used in the tessellation unit to set a displacement map texture.
 
-**Note**   DirectX 9.0 and later applications can use the D3DSAMP\_DMAPOFFSET value in the D3DSAMPLERSTATETYPE enumeration to control the offset, in vertices, into the presampled displacement map. The runtime maps user-mode sampler states (D3DSAMP\_*Xxx*) to kernel-mode D3DTSS\_*Xxx* values so that DirectX 9.0 and later drivers are not required to process user-mode sampler states. Therefore, drivers must instead process the D3DTSS\_DMAPOFFSET value in the **TSState** member of the [**D3DHAL\_DP2TEXTURESTAGESTATE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_dp2texturestagestate) structure for D3DDP2OP\_TEXTURESTAGESTATE operations. For more information about D3DSAMPLERSTATETYPE and presampled displacement mapping, see the latest DirectX SDK documentation.
+**Note**   DirectX 9.0 and later applications can use the D3DSAMP\_DMAPOFFSET value in the D3DSAMPLERSTATETYPE enumeration to control the offset, in vertices, into the presampled displacement map. The runtime maps user-mode sampler states (D3DSAMP\_*Xxx*) to kernel-mode D3DTSS\_*Xxx* values so that DirectX 9.0 and later drivers are not required to process user-mode sampler states. Therefore, drivers must instead process the D3DTSS\_DMAPOFFSET value in the **TSState** member of the [**D3DHAL\_DP2TEXTURESTAGESTATE**](/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3dhal_dp2texturestagestate) structure for D3DDP2OP\_TEXTURESTAGESTATE operations. For more information about D3DSAMPLERSTATETYPE and presampled displacement mapping, see the latest DirectX SDK documentation.
 
  
 
  
-
- 
-
-
-
-
 

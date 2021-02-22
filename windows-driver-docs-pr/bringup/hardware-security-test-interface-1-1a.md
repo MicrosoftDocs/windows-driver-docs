@@ -22,8 +22,4 @@ Support for HSTI is included in the following versions of Windows:
 
 ## Related resources
 
-[Hardware Security Testability Specification](https://docs.microsoft.com/windows-hardware/test/hlk/testref/hardware-security-testability-specification)
-
-
-
-
+[Hardware Security Testability Specification](/windows-hardware/test/hlk/testref/hardware-security-testability-specification)

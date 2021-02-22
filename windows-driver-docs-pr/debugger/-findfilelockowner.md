@@ -1,7 +1,6 @@
 ---
 title: findfilelockowner
 description: The findfilelockowner extension attempts to find the owner of a file object lock by examining all threads for a thread that is blocked.
-ms.assetid: 0d6eabf4-e7ac-4536-beab-d3027720efa8
 keywords: ["findfilelockowner Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

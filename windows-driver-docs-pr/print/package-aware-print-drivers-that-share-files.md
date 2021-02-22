@@ -1,7 +1,6 @@
 ---
 title: Package-Aware Print Drivers that Share Files
 description: Package-Aware Print Drivers that Share Files
-ms.assetid: dcf4e7b4-f0f4-4644-9f5c-c01c1b6c4221
 keywords:
 - package-aware print drivers WDK
 - core drivers WDK printer

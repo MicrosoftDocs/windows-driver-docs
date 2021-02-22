@@ -1,7 +1,6 @@
 ---
 title: NFP device identifiers
 description: NFP device identifiers
-ms.assetid: B387D3F8-A9A7-47F0-B5E3-8437581947E4
 keywords:
 - NFC
 - near field communications
@@ -34,6 +33,4 @@ If the device is advertised as NFC, the driver MUST populate DEVPKEY\_NFP\_Capab
 
  
 ## Related topics
-[NFC device driver interface (DDI) overview](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-[Near field proximity DDI reference](https://docs.microsoft.com/windows-hardware/drivers/ddi/index)  
-
+[Near field communications (NFC) API reference](/windows-hardware/drivers/ddi/_nfpdrivers/)

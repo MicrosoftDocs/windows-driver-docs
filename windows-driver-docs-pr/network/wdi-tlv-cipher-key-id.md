@@ -1,7 +1,6 @@
 ---
 title: WDI_TLV_CIPHER_KEY_ID
 description: WDI_TLV_CIPHER_KEY_ID is a TLV that contains a cipher key ID for OID_WDI_SET_ADD_CIPHER_KEYS and OID_WDI_SET_DELETE_CIPHER_KEYS.
-ms.assetid: 24076B2A-FAC2-4509-9F1C-7F2AF57883CF
 ms.date: 07/18/2017
 keywords:
  - WDI_TLV_CIPHER_KEY_ID Network Drivers Starting with Windows Vista
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 # WDI\_TLV\_CIPHER\_KEY\_ID
 
 
-WDI\_TLV\_CIPHER\_KEY\_ID is a TLV that contains a cipher key ID for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-add-cipher-keys) and [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wdi-set-delete-cipher-keys).
+WDI\_TLV\_CIPHER\_KEY\_ID is a TLV that contains a cipher key ID for [OID\_WDI\_SET\_ADD\_CIPHER\_KEYS](./oid-wdi-set-add-cipher-keys.md) and [OID\_WDI\_SET\_DELETE\_CIPHER\_KEYS](./oid-wdi-set-delete-cipher-keys.md).
 
 ## TLV Type
 
@@ -57,9 +56,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_AUDIO\_QUALITY
 description: The KSPROPERTY\_AUDIO\_QUALITY property specifies the quality level of a node's output stream. This is a property of an SRC node (KSNODETYPE\_SRC).
-ms.assetid: ef57de3b-f7ac-4ecd-915e-27f34fcc2028
 keywords: ["KSPROPERTY_AUDIO_QUALITY Audio Devices"]
 topic_type:
 - apiref
@@ -47,7 +46,7 @@ The KSPROPERTY\_AUDIO\_QUALITY property specifies the quality level of a node's 
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Pin</p></td>
-<td align="left"><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
+<td align="left"><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty" data-raw-source="[&lt;strong&gt;KSNODEPROPERTY&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)"><strong>KSNODEPROPERTY</strong></a></td>
 <td align="left"><p>ULONG</p></td>
 </tr>
 </tbody>
@@ -76,7 +75,7 @@ A KSPROPERTY\_AUDIO\_QUALITY property request returns STATUS\_SUCCESS to indicat
 Remarks
 -------
 
-For information about the types of sample-rate conversion that the [KMixer system driver](https://docs.microsoft.com/windows-hardware/drivers/audio/kernel-mode-wdm-audio-components#kmixer-system-driver) performs, see [KMixer Driver Sample Rate Conversion and Mixing Policy](https://docs.microsoft.com/windows-hardware/drivers/audio/kmixer-driver-sample-rate-conversion-and-mixing-policy).
+For information about the types of sample-rate conversion that the [KMixer system driver](./kernel-mode-wdm-audio-components.md#kmixer-system-driver) performs, see [KMixer Driver Sample Rate Conversion and Mixing Policy](./index.md).
 
 Requirements
 ------------
@@ -99,14 +98,5 @@ Requirements
 
 [**KSNODETYPE\_SRC**](ksnodetype-src.md)
 
-[**KSNODEPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
-
- 
-
- 
-
-
-
-
-
+[**KSNODEPROPERTY**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksnodeproperty)
 

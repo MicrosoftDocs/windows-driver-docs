@@ -1,7 +1,6 @@
 ---
 title: wdfkd.wdfumirps
 description: The wdfkd.wdfumirps extension displays the list of pending user-mode I/O request packets (UM IRPs) in the implicit process.
-ms.assetid: 1BFFDAC0-AA1F-434A-BB05-6864810F9B98
 keywords: ["wdfkd.wdfumirps Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

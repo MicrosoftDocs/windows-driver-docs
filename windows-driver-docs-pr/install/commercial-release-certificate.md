@@ -1,7 +1,6 @@
 ---
 title: Commercial Release Certificate
 description: Commercial Release Certificate
-ms.assetid: bc3966e6-a7e4-4c5c-8dcf-9b95e61ba9b1
 keywords:
 - commercial release certificates WDK
 - catalog files WDK driver signing , commercial release certificates
@@ -22,13 +21,7 @@ For security reasons, you should not use a digital certificate that is used to r
 
 Follow the instructions that are provided by the CA about how to obtain and install the release certificate on a computer that you will be using to sign a driver.
 
-For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](https://go.microsoft.com/fwlink/p/?linkid=74266) website.
+For more information about how to obtain a digital certificate from a CA, see the [Microsoft Root Certificate Program Members](/previous-versions/ms995347(v=msdn.10)) website.
 
  
-
- 
-
-
-
-
 

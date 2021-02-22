@@ -1,7 +1,6 @@
 ---
 title: DEVPKEY_NAME (Device Instance)
 description: DEVPKEY_NAME (Device Instance)
-ms.assetid: 4968a215-7e22-4d17-938c-4aa5289b2803
 keywords: ["DEVPKEY_NAME (Device Instance) Device and Driver Installation"]
 topic_type:
 - apiref
@@ -54,7 +53,7 @@ The value of DEVPKEY_NAME device should be used to identify a device instance to
 
 The retrieved property value is the same as the value of the [**DEVPKEY_Device_FriendlyName**](devpkey-device-friendlyname.md) device property, if **DEVPKEY_Device_FriendlyName** is set. Otherwise, the value of DEVPKEY_NAME is same as the value of the [**DEVPKEY_Device_DeviceDesc**](devpkey-device-devicedesc.md) device property.
 
-You can call [**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_NAME property.
+You can call [**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw) to retrieve the value of DEVPKEY_NAME property.
 
 Windows Server 2003, Windows XP, and Windows 2000 do not directly support a corresponding name property. However, these earlier versions of Windows do support properties that correspond to DEVPKEY_Device_FriendlyName and DEVPKEY_Device_DeviceDesc.
 
@@ -85,14 +84,7 @@ Requirements
 
 [**DEVPKEY_Device_FriendlyName**](devpkey-device-friendlyname.md)
 
-[**SetupDiGetDeviceProperty**](https://docs.microsoft.com/windows/desktop/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
+[**SetupDiGetDeviceProperty**](/windows/win32/api/setupapi/nf-setupapi-setupdigetdevicepropertyw)
 
  
-
- 
-
-
-
-
-
 

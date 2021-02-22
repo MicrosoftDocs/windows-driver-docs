@@ -1,7 +1,6 @@
 ---
 title: Sample Rendering Plug-Ins
 description: Sample Rendering Plug-Ins
-ms.assetid: 347c5105-345d-4129-8bb2-7ce1770f83a4
 keywords:
 - rendering plug-ins WDK print , samples
 ms.date: 04/20/2017

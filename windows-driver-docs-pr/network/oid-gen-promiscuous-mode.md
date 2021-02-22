@@ -1,7 +1,6 @@
 ---
 title: OID_GEN_PROMISCUOUS_MODE
 description: As a query, use the OID_GEN_PROMISCUOUS_MODE OID to determine whether a network interface is promiscuous or not (ifPromiscuousMode from RFC 2863).
-ms.assetid: c3ba0908-724c-4149-a66f-5c3d41751165
 ms.date: 08/08/2017
 keywords: 
  -OID_GEN_PROMISCUOUS_MODE Network Drivers Starting with Windows Vista
@@ -24,7 +23,7 @@ Not requested. For NDIS interface providers only.
 Remarks
 -------
 
-Only [NDIS network interface](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interfaces2) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
+Only [NDIS network interface](./ndis-network-interfaces2.md) providers, and therefore not miniport drivers or filter drivers, must support this OID as an OID request.
 
 If the interface provider returns NDIS\_STATUS\_SUCCESS and if the interface accepts only packets that are addressed to that interface, the result value should be **FALSE**. This value should be **TRUE** if the interface accepts all network packets.
 
@@ -47,12 +46,7 @@ Requirements
 ## See also
 
 
-[NDIS Network Interface OIDs](https://docs.microsoft.com/windows-hardware/drivers/network/ndis-network-interface-oids)
+[NDIS Network Interface OIDs](./ndis-network-interface-oids.md)
 
  
-
- 
-
-
-
 

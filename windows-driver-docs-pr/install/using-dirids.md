@@ -1,7 +1,6 @@
 ---
 title: Using Dirids
 description: Using Dirids
-ms.assetid: 231bc313-b5c3-48ef-b2e2-c4e287517679
 keywords:
 - dirids WDK
 - INF files WDK device installations , directory identifiers
@@ -96,7 +95,7 @@ The following table shows several commonly used *dirids*, and the directories th
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>13</strong></p></td>
-<td align="left"><p>Driver package's <a href="https://docs.microsoft.com/windows-hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
+<td align="left"><p>Driver package's <a href="/windows-hardware/drivers/install/driver-store">Driver Store</a> directory.</p>
 <p>For Windows 8.1 and later versions of Windows, specifies the path to the Driver Store directory where the driver package was imported.
 
 Don't use <a href="inf-delfiles-directive.md" data-raw-source="[DelFiles](inf-delfiles-directive.md)">DelFiles</a> on a file for which <strong>DestinationDirs</strong> includes <em>dirid</em> 13.
@@ -146,7 +145,7 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 </tr>
 <tr class="odd">
 <td align="left"><p><strong>51</strong></p></td>
-<td align="left"><p>Spool directory (<em>not</em> used for installing printer drivers − see <a href="https://docs.microsoft.com/windows-hardware/drivers/print/printer-dirids">Printer Dirids</a>)</p></td>
+<td align="left"><p>Spool directory (<em>not</em> used for installing printer drivers − see <a href="/windows-hardware/drivers/print/printer-dirids">Printer Dirids</a>)</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>52</strong></p></td>
@@ -247,10 +246,4 @@ Don't use <a href="inf-copyfiles-directive.md" data-raw-source="[CopyFiles](inf-
 In addition to the values in this table that are defined in *Setupapi.h*, you can use any of the CSIDL_*Xxx* values that are defined in *Shlobj.h*. To define a *dirid* value for a folder not listed in this table, add 16384 (0x4000) to the CSIDL_*Xxx* value. For more information about CSIDL_*Xxx* values, see the Windows SDK documentation.
 
  
-
- 
-
-
-
-
 

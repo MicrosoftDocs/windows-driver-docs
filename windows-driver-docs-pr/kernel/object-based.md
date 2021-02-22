@@ -1,7 +1,6 @@
 ---
 title: Object-Based
 description: Object-Based
-ms.assetid: 53024912-5e6e-4738-81b5-dacc59c22c3f
 keywords: ["object-based drivers WDK kernel", "object opacity WDK kernel", "opacity WDK kernel"]
 ms.date: 06/16/2017
 ms.localizationpriority: medium
@@ -44,9 +43,9 @@ Describes what is done to the object.
 *Object*
 Identifies the type of object.
 
-For example, the I/O manager's [**IoCreateDevice**](https://docs.microsoft.com/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) routine creates a device object to represent a physical, logical, or virtual device as the target of I/O requests.
+For example, the I/O manager's [**IoCreateDevice**](/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatedevice) routine creates a device object to represent a physical, logical, or virtual device as the target of I/O requests.
 
-One system component can export routines that call another component's support routines. This can reduce the number of calls that a driver must make. The I/O manager, in particular, exports certain routines that make it easier to develop drivers. For example, **IoConnectInterruptEx**, calls the kernel support routines for *interrupt objects*.
+One system component can export routines that call another component's support routines. This can reduce the number of calls that a driver must make. The I/O manager, in particular, exports certain routines that make it easier to develop drivers. For example, [**IoConnectInterruptEx**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex), which lowest-level drivers call to register their *ISRs*, calls the kernel support routines for *interrupt objects*.
 
 ### <a href="" id="ddk-object-opacity-kg"></a>Object Opacity
 
@@ -55,11 +54,4 @@ Some system-defined objects are *opaque*: only the defining system component is 
 **Note**   To maintain driver portability, drivers must use the system-supplied support routines to manipulate system-defined objects. The defining system component can change the internal structure of its object types at any time.
 
  
-
- 
-
- 
-
-
-
 

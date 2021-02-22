@@ -1,7 +1,6 @@
 ---
 title: Notification Endpoint Descriptor
 description: Notification Endpoint Descriptor
-ms.assetid: de15c698-a4a6-49f9-9faf-b9a64fe8b1c2
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

@@ -1,7 +1,6 @@
 ---
 title: How the DMRC Determines When to Search the WMIS Server
 description: How the DMRC Determines When to Search the WMIS Server
-ms.assetid: dc68045e-85c2-443d-9e4d-099bbd21590d
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -35,7 +34,7 @@ The following table describes the format and value range for the **CheckBackMDNo
 
 | Data type  | Value range         | Default value |
 |------------|---------------------|---------------|
-| [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 5             |
+| [REG_DWORD](/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 5             |
 
  
 
@@ -52,7 +51,7 @@ The following table describes the format and value range for the **CheckBackMDRe
 
 | Data type  | Value range         | Default value |
 |------------|---------------------|---------------|
-| [REG_DWORD](https://docs.microsoft.com/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 8             |
+| [REG_DWORD](/windows/desktop/SysInfo/registry-value-types) | 0 to 256, inclusive | 8             |
 
  
 
@@ -71,10 +70,4 @@ The DMRC follows these steps to determine whether it has to search the WMIS serv
     2.  If the DMRC has not previously downloaded a device metadata package for the device, the DMRC compares the value of the **CheckBackMDNotRetrieved** registry key to the value of today's date minus the **LastCheckedDate** value. If the **CheckBackMDNotRetrieved** value is smaller, the DMRC queries the WMIS server.
 
  
-
- 
-
-
-
-
 

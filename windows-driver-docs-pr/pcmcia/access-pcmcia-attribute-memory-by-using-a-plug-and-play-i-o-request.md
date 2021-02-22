@@ -1,7 +1,6 @@
 ---
 title: Access Memory by Using a PnP I/O Request
 description: Access PCMCIA Attribute Memory by Using a Plug and Play I/O Request
-ms.assetid: ee2f9d9f-9e2b-4ecf-ba6d-4baad3653301
 keywords:
 - attribute memory WDK PCMCIA bus , Plug and Play I/O requests
 - Plug and Play WDK PCMCIA bus
@@ -26,7 +25,7 @@ A driver performs the following sequence of operations:
 
 -   Creates and initializes a new IRP\_MJ\_PNP request.
 
-    The driver specifies either an [**IRP\_MN\_READ\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-read-config) or an [**IRP\_MN\_WRITE\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/kernel/irp-mn-write-config) minor function.
+    The driver specifies either an [**IRP\_MN\_READ\_CONFIG**](../kernel/irp-mn-read-config.md) or an [**IRP\_MN\_WRITE\_CONFIG**](../kernel/irp-mn-write-config.md) minor function.
 
 -   Gets the next stack location.
 
@@ -49,10 +48,4 @@ A driver performs the following sequence of operations:
 -   Sends the request down the device stack.
 
  
-
- 
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Device Instance ID
 description: A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system.
-ms.assetid: 578973f4-463f-4707-8dc3-dff27b3d3052
 ms.date: 04/20/2017
 ms.localizationpriority: High
 ---
@@ -9,7 +8,7 @@ ms.localizationpriority: High
 # Device Instance ID
 
 
-A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system. The Plug and Play (PnP) manager assigns a device instance ID to each device node (*devnode*) in a system's [device tree](https://docs.microsoft.com/windows-hardware/drivers/kernel/device-tree).
+A device instance ID is a system-supplied device identification string that uniquely identifies a device in the system. The Plug and Play (PnP) manager assigns a device instance ID to each device node (*devnode*) in a system's [device tree](../kernel/device-tree.md).
 
 
 
@@ -27,10 +26,4 @@ The following is an example of an instance ID ("1&08") concatenated to a device 
 `PCI\VEN_1000&DEV_0001&SUBSYS_00000000&REV_02\1&08`
 
  
-
- 
-
-
-
-
 

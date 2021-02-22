@@ -1,7 +1,6 @@
 ---
 title: Container IDs for eSATA Devices
 description: Container IDs for eSATA Devices
-ms.assetid: 991836f1-936c-4051-ac3b-ad491a4ca221
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---

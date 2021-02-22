@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPS\_PAGE\_WIDTH
 description: The WIA\_DPS\_PAGE\_WIDTH property contains the width of the currently selected page, in thousandths of an inch (.001).
-ms.assetid: 02787660-3fb3-4e5d-ade8-b11ad29412c1
 keywords: ["WIA_DPS_PAGE_WIDTH Imaging Devices"]
 topic_type:
 - apiref

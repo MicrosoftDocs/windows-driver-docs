@@ -1,7 +1,6 @@
 ---
 title: Executable Images
 description: Executable Images
-ms.assetid: ca279a74-5f30-4413-bf1c-4d5af12d294d
 keywords:
 - security WDK file systems , semantic model checks
 - semantic model checks WDK file systems , executable images

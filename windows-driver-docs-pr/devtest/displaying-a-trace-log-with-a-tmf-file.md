@@ -1,7 +1,6 @@
 ---
 title: Displaying a Trace Log with a TMF File
 description: Displaying a Trace Log with a TMF File
-ms.assetid: 1d592ed3-44d2-4d12-9d31-19b07e6962ea
 keywords:
 - trace message format files WDK
 - TMF files WDK , displaying trace logs

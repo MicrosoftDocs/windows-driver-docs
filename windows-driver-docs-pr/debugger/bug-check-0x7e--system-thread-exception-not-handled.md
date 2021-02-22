@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x7E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED
 description: The SYSTEM_THREAD_EXCEPTION_NOT_HANDLED bug check has a value of 0x0000007E. This bug check indicates that a system thread generated an exception that the error handler did not catch.
-ms.assetid: 2ecea74f-21d6-4436-beed-d8cf8ef6b169
 keywords: ["Bug Check 0x7E SYSTEM_THREAD_EXCEPTION_NOT_HANDLED", "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED"]
 ms.date: 03/15/2019
 topic_type:
@@ -68,7 +67,7 @@ Common exception codes include the following:
 
 - 0xC0000005: STATUS\_ACCESS\_VIOLATION indicates a memory access violation occurred.
 
-For a complete list of exception codes, see [NTSTATUS values](https://docs.microsoft.com/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](https://docs.microsoft.com/windows-hardware/drivers/). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
+For a complete list of exception codes, see [NTSTATUS values](/openspecs/windows_protocols/ms-erref/596a1078-e883-4972-9bbc-49e60bebca55). The exception codes are defined in *ntstatus.h*, a header file provided by the [Windows Driver Kit](../index.yml). (For more info, see [Header files in the Windows Driver Kit](../gettingstarted/header-files-in-the-windows-driver-kit.md)). 
 
 
 Resolution
@@ -80,7 +79,7 @@ If a driver is listed by name within the bug check message, disable or remove th
 
 The [**!analyze**](-analyze.md) debugger extension displays information about the bug check and can be helpful in determining the root cause. 
 
-Additional analysis can be done by using the [**!thread**](https://docs.microsoft.com/windows-hardware/drivers/debugger/-thread) extension, as well as the [**dds**, **dps**, and **dqs** (display words and symbols)](https://docs.microsoft.com/windows-hardware/drivers/debugger/dds--dps--dqs--display-words-and-symbols-) commands. This can be a reasonable technique when WinDbg reports "Probably caused by : ntkrnlmp.exe." 
+Additional analysis can be done by using the [**!thread**](-thread.md) extension, as well as the [**dds**, **dps**, and **dqs** (display words and symbols)](dds--dps--dqs--display-words-and-symbols-.md) commands. This can be a reasonable technique when WinDbg reports "Probably caused by : ntkrnlmp.exe." 
 
 If exception code 0x80000003 occurs, a hard-coded breakpoint or assertion was hit, but the system was started with the **/NODEBUG** switch. This problem should not occur frequently. If it occurs repeatedly, make sure that a kernel debugger is connected and the system is started with the **/DEBUG** switch.
 

@@ -1,7 +1,6 @@
 ---
 title: KSNODETYPE\_DEMUX
 description: KSNODETYPE\_DEMUX
-ms.assetid: 46825735-aea7-4fea-99aa-18d4edcd8715
 keywords: ["KSNODETYPE_DEMUX Audio Devices"]
 topic_type:
 - apiref

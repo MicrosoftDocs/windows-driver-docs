@@ -1,7 +1,6 @@
 ---
 title: Release-Signing Driver Packages
 description: Release-Signing Driver Packages
-ms.assetid: 57125c3b-55f0-4b60-b4d9-1408e26faccb
 keywords:
 - driver signing WDK , driver packages
 - signing drivers WDK , driver packages
@@ -21,9 +20,9 @@ ms.localizationpriority: medium
 
 In this section, a computer that signs drivers for release on Windows Vista and later versions of Windows is referred to as the *signing computer*. The signing computer must be running Windows XP SP2 or later versions of the Windows operating system. For example, a driver intended for release on Windows 7 can be signed on a computer that is running Windows Vista.
 
-In addition, the signing computer must have the [driver signing tools](https://docs.microsoft.com/windows-hardware/drivers/devtest/tools-for-signing-drivers) installed.
+In addition, the signing computer must have the [driver signing tools](../devtest/tools-for-signing-drivers.md) installed.
 
-**Note**  You must use the version of the [**SignTool**](https://docs.microsoft.com/windows-hardware/drivers/devtest/signtool) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of this tool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
+**Note**  You must use the version of the [**SignTool**](../devtest/signtool.md) tool that is provided in the Windows Vista and later versions of the Windows Driver Kit (WDK). Earlier versions of this tool do not support the kernel-mode code signing policy for Windows Vista and later versions of Windows.
 
  
 
@@ -35,7 +34,7 @@ To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-po
 
 ### <a href="" id="pnp-kernel-mode-boot-start-driver"></a> PnP Kernel-Mode Boot-Start Driver
 
-To comply with the kernel-mode code signing policy file as follows:
+To comply with the [kernel-mode code signing policy](kernel-mode-code-signing-policy--windows-vista-and-later-.md) of 64-bit versions of Windows Vista and later versions of Windows, embed a signature in the *boot-start driver* file as follows:
 
 1.  [Release-sign the driver file](release-signing-a-driver-file.md) with a [Software Publisher Certificate (SPC)](software-publisher-certificate.md).
 
@@ -45,7 +44,7 @@ Starting with Windows Vista, embedding a signature in a *boot-start driver* file
 
 To comply with the [PnP device installation signing requirements](pnp-device-installation-signing-requirements--windows-vista-and-later-.md) of Windows Vista and later versions of Windows, you must obtain a signed [catalog file](catalog-files.md) or sign the catalog file of the [driver package](driver-packages.md). If a driver file will also include an embedded signature, embed the signature in the driver file before signing the driver package's catalog file.
 
-If the [Hardware Certification Kit (HCK)](https://go.microsoft.com/fwlink/p/?linkid=227016) has a test program for the driver, obtain a [WHQL Release Signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) as follows:
+If the [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) has a test program for the driver, obtain a [WHQL Release Signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) as follows:
 
 **Signing a catalog file for 64-bit versions**
 
@@ -81,7 +80,7 @@ The kernel-mode code signing policy on 64-bit versions of Windows Vista and late
 
 To comply with the PnP device installation signing requirements, you must obtain a signed catalog file or sign the catalog file of the driver package.
 
-If the Hardware Certification Kit (HCK).
+If the [Hardware Certification Kit (HCK)](/previous-versions/windows/hardware/hck/jj124227(v=vs.85)) has a test program for the driver, obtain a [WHQL release signature](whql-release-signature.md) for the driver package. If the HCK does not have a test program for the driver, [create a catalog file](creating-a-catalog-file-for-a-pnp-driver-package.md) and sign the [catalog file](catalog-files.md) in the same manner as described in this section for signing the catalog file of a PnP kernel-mode *boot-start driver*.
 
 ### <a href="" id="non-pnp-kernel-mode-driver-that-is-not-a-boot-start-driver"></a> Non-PnP Kernel-Mode Driver that is not a Boot-Start Driver
 
@@ -91,7 +90,7 @@ Starting with Windows Vista, embedding a signature in a driver file is optional 
 
 The PnP device installation signing requirements do not apply to non-PnP drivers.
 
-**Note**   Using embedded signatures is generally simpler and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](https://docs.microsoft.com/windows-hardware/drivers/develop/signing-a-driver).
+**Note**   Using embedded signatures is generally simpler and more efficient than by using a signed catalog file. For more information about the advantages and disadvantages of using embedded signatures versus signed catalog files, see [Test Signing a Driver](../develop/signing-a-driver.md).
 
  
 
@@ -110,12 +109,3 @@ To release-sign a catalog file for a non-PnP kernel-mode driver that is not a *b
 3.  [Verify the SPC signature of the catalog file](verifying-the-spc-signature-of-a-catalog-file.md).
 
 If this type of driver has a signed [catalog file](catalog-files.md) instead of an embedded signature, the installation application that installs the driver must install the catalog file in the system component and driver database. For more information, see [Installing a Release-Signed Catalog File for a Non-PnP Driver](installing-a-release-signed-catalog-file-for-a-non-pnp-driver.md).
-
- 
-
- 
-
-
-
-
-

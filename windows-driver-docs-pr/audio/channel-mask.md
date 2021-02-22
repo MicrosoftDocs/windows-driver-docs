@@ -1,7 +1,6 @@
 ---
 title: Channel Mask
 description: Channel Mask
-ms.assetid: 875ed000-ac53-4365-8381-3fe08d45cbcc
 keywords:
 - data formats WDK audio
 - formats WDK audio , data
@@ -31,13 +30,13 @@ ms.localizationpriority: medium
 # Channel Mask
 
 
-In Windows, the [**WAVEFORMATEXTENSIBLE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure defines the data format for a multichannel PCM audio stream. This structure specifies parameters such as the number of bits per PCM sample, the number of channels in the stream, and the channel mask. The channel mask specifies the mapping of channels to speakers. The following figure shows the individual bits in the channel mask.
+In Windows, the [**WAVEFORMATEXTENSIBLE**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible) structure defines the data format for a multichannel PCM audio stream. This structure specifies parameters such as the number of bits per PCM sample, the number of channels in the stream, and the channel mask. The channel mask specifies the mapping of channels to speakers. The following figure shows the individual bits in the channel mask.
 
 ![diagram illustrating the individual bits in the channel mask](images/spkrcfg3.png)
 
 Each bit in the channel mask represents a particular speaker position. If the mask assigns a channel to a particular speaker position, the mask bit that represents that position is set to 1; all mask bits for unassigned speaker positions are set to 0. The WAVEFORMATEXTENSIBLE structure defines additional bits in the channel mask that are not shown in the preceding figure, but these bits have no bearing on the home-theater speaker configurations under discussion and are omitted for simplicity.
 
-The encoding of speaker positions in the channel mask in the preceding figure is similar to that used for the property value of a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/audio/ksproperty-audio-channel-config) property request. For more information, see [**KSAUDIO\_CHANNEL\_CONFIG**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config).
+The encoding of speaker positions in the channel mask in the preceding figure is similar to that used for the property value of a [**KSPROPERTY\_AUDIO\_CHANNEL\_CONFIG**](./ksproperty-audio-channel-config.md) property request. For more information, see [**KSAUDIO\_CHANNEL\_CONFIG**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_channel_config).
 
 The following table shows the meaning of each mask bit in the preceding figure.
 
@@ -126,9 +125,4 @@ The left side of the preceding figure shows the recording of audio content into 
 The right side of the preceding figure shows the same 7.1-channel stream being played back through an eight-speaker surround configuration. In this case, each small, black rectangle represents a speaker. Seven of the speakers are mapped to positions on the grid surrounding the listener. The mapping does not assign a grid position to the LFE speaker (subwoofer); this omission is based on the assumption that these speakers typically produce only low-frequency sounds, which are nondirectional.
 
  
-
- 
-
-
-
 

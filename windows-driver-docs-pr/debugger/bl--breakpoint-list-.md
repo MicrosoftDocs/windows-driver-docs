@@ -1,7 +1,6 @@
 ---
 title: bl (Breakpoint List)
 description: The bl command lists information about existing breakpoints.
-ms.assetid: 3e7c31d4-5c76-4609-91be-c6b0fc1cb292
 keywords: ["bl (Breakpoint List) Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR
 description: The KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR property contains the render and capture endpoints for cellular audio routing.
-ms.assetid: 4F163A65-5572-41D0-80B2-493285E2B87B
 keywords: ["KSPROPERTY_TELEPHONY_ENDPOINTIDPAIR Audio Devices"]
 topic_type:
 - apiref
@@ -44,15 +43,15 @@ The **KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR** property contains the render and c
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Yes</p></td>
 <td align="left"><p>Filter</p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](https://docs.microsoft.com/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
-<td align="left"><p><a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_ENDPOINTIDPAIR&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair)"><strong>KSTOPOLOGY_ENDPOINTIDPAIR</strong></a></p></td>
+<td align="left"><p><a href="/previous-versions/ff564262(v=vs.85)" data-raw-source="[&lt;strong&gt;KSPROPERTY&lt;/strong&gt;](/previous-versions/ff564262(v=vs.85))"><strong>KSPROPERTY</strong></a></p></td>
+<td align="left"><p><a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair" data-raw-source="[&lt;strong&gt;KSTOPOLOGY_ENDPOINTIDPAIR&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair)"><strong>KSTOPOLOGY_ENDPOINTIDPAIR</strong></a></p></td>
 </tr>
 </tbody>
 </table>
 
  
 
-The property value is of type [**KSTOPOLOGY\_ENDPOINTIDPAIR**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair), which specifies the render and capture endpoints.
+The property value is of type [**KSTOPOLOGY\_ENDPOINTIDPAIR**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointidpair), which specifies the render and capture endpoints.
 
 ### <span id="Return_Value"></span><span id="return_value"></span><span id="RETURN_VALUE"></span>Return Value
 
@@ -61,7 +60,7 @@ A **KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR** property request returns the render 
 Remarks
 -------
 
-Cellular routing is controlled by **KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR** property on the topology filter. This property takes a pair of [**KSTOPOLOGY\_ENDPOINTID**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointid) structures for the requested endpoint combination. **KSTOPOLOGY\_ENDPOINTID** contains a reference string for the topology filter of an endpoint and a topology filter pin ID to which the endpoint is connected. The driver provides basic support for this property and returns all of the valid pairs of render and capture endpoints that can be used for cellular audio routing. It is the driver’s responsibility to handle moving both render and capture cellular audio to this new endpoint combination, meeting whatever constraints are necessary for the hardware. This property must be settable even when there is no active phone call in the system.
+Cellular routing is controlled by **KSPROPERTY\_TELEPHONY\_ENDPOINTIDPAIR** property on the topology filter. This property takes a pair of [**KSTOPOLOGY\_ENDPOINTID**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_tagkstopology_endpointid) structures for the requested endpoint combination. **KSTOPOLOGY\_ENDPOINTID** contains a reference string for the topology filter of an endpoint and a topology filter pin ID to which the endpoint is connected. The driver provides basic support for this property and returns all of the valid pairs of render and capture endpoints that can be used for cellular audio routing. It is the driver’s responsibility to handle moving both render and capture cellular audio to this new endpoint combination, meeting whatever constraints are necessary for the hardware. This property must be settable even when there is no active phone call in the system.
 
 Requirements
 ------------
@@ -90,12 +89,4 @@ Requirements
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
-
-
-
 

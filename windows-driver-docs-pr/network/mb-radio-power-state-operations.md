@@ -1,7 +1,6 @@
 ---
 title: MB Radio Power State Operations
 description: MB Radio Power State Operations
-ms.assetid: 9b745ff3-c00b-4a43-9bf3-52f9bf61e062
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -23,13 +22,7 @@ Be aware that the radio power state may change on portable computers (laptops) b
 
 -   The MB Service may send a command to the miniport driver to put the radio into a low power state to conserve power or to avoid radio interference with the environment (such as on an airplane).
 
-For more information about radio power state operations, see [OID\_WWAN\_RADIO\_STATE](https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-radio-state).
+For more information about radio power state operations, see [OID\_WWAN\_RADIO\_STATE](./oid-wwan-radio-state.md).
 
  
-
- 
-
-
-
-
 

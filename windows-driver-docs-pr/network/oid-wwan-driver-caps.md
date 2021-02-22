@@ -1,7 +1,6 @@
 ---
 title: OID_WWAN_DRIVER_CAPS
 description: OID_WWAN_DRIVER_CAPS returns the version of the MB driver model supported by the miniport driver.
-ms.assetid: 2310a341-6899-44ad-8dfb-a13fd0c42dcb
 ms.date: 08/08/2017
 keywords: 
  -OID_WWAN_DRIVER_CAPS Network Drivers Starting with Windows Vista
@@ -15,12 +14,12 @@ OID\_WWAN\_DRIVER\_CAPS returns the version of the MB driver model supported by 
 
 Set requests are not supported.
 
-Miniport drivers process OID\_WWAN\_DRIVER\_CAPS synchronously and should immediately return with the response buffer containing an [**NDIS\_WWAN\_DRIVER\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps) structure that describes the version of the MB driver model implemented by the miniport driver when completing query requests.
+Miniport drivers process OID\_WWAN\_DRIVER\_CAPS synchronously and should immediately return with the response buffer containing an [**NDIS\_WWAN\_DRIVER\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps) structure that describes the version of the MB driver model implemented by the miniport driver when completing query requests.
 
 Remarks
 -------
 
-For more information about using this OID, see [MB Miniport Driver Initialization](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization).
+For more information about using this OID, see [MB Miniport Driver Initialization](./mb-miniport-driver-initialization.md).
 
 Miniport drivers should not access the provider network, or the Subscriber Identity Module (SIM card), when processing query operations.
 
@@ -53,14 +52,9 @@ Requirements
 ## See also
 
 
-[MB Miniport Driver Initialization](https://docs.microsoft.com/windows-hardware/drivers/network/mb-miniport-driver-initialization)
+[MB Miniport Driver Initialization](./mb-miniport-driver-initialization.md)
 
-[**NDIS\_WWAN\_DRIVER\_CAPS**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps)
-
- 
+[**NDIS\_WWAN\_DRIVER\_CAPS**](/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps)
 
  
-
-
-
 

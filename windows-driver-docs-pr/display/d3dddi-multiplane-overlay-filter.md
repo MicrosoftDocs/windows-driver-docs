@@ -1,7 +1,6 @@
 ---
 title: D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER structure
-description: Reserved for system use. Do not use it in your driver.Note  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header. .
-ms.assetid: 56276b78-5550-4d93-8a73-b1183deb54da
+description: Learn about the D3DDDI\_MULTIPLANE\_OVERLAY\_FILTER structure, which is reserved for system use. Do not use it in your driver.
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_FILTER structure Display Devices"]
 topic_type:
 - apiref
@@ -20,8 +19,8 @@ ms.localizationpriority: medium
 
 Reserved for system use. Do not use it in your driver.
 
-&gt; \[!Note\]
-&gt;  This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header.
+> [!NOTE]
+> This structure is available only in the D3dumddi.h header provided with Windows Driver Kit (WDK) Version 8 that shipped with Windows 8. It has been removed from later versions of the header.
 
  
 

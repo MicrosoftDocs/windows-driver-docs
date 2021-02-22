@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_SAMPLE\_TIME
 description: Clients use KSPROPERTY\_BDA\_SAMPLE\_TIME to determine the sample time over which signal level and quality are averaged.
-ms.assetid: 53252e11-2a18-42d5-aed8-99052a2b0f21
 keywords: ["KSPROPERTY_BDA_SAMPLE_TIME Streaming Media Devices"]
 topic_type:
 - apiref
@@ -85,18 +84,11 @@ Requirements
 ## See also
 
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_QUALITY**](ksproperty-bda-signal-quality.md)
 
 [**KSPROPERTY\_BDA\_SIGNAL\_STRENGTH**](ksproperty-bda-signal-strength.md)
 
  
-
- 
-
-
-
-
-
 

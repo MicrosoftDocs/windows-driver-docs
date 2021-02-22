@@ -1,7 +1,6 @@
 ---
 title: MRxSetSdInfo routine
 description: TheMRxSetSdInfo routine is called by RDBSS to request that a network mini-redirector set security descriptor information on a file system object.
-ms.assetid: 2a03dde1-440c-4e59-b989-ca4b58b91f3a
 keywords: ["MRxSetSdInfo routine Installable File System Drivers", "PMRX_CALLDOWN"]
 topic_type:
 - apiref
@@ -18,7 +17,7 @@ ms.localizationpriority: medium
 # MRxSetSdInfo routine
 
 
-The*MRxSetSdInfo* routine is called by [RDBSS](https://docs.microsoft.com/windows-hardware/drivers/ifs/the-rdbss-driver-and-library) to request that a network mini-redirector set security descriptor information on a file system object.
+The*MRxSetSdInfo* routine is called by [RDBSS](./the-rdbss-driver-and-library.md) to request that a network mini-redirector set security descriptor information on a file system object.
 
 Syntax
 ------
@@ -130,7 +129,7 @@ Requirements
 ## See also
 
 
-[**MRxIsValidDirectory**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
+[**MRxIsValidDirectory**](/windows-hardware/drivers/ddi/mrx/nc-mrx-pmrx_chkdir_calldown)
 
 [**MRxQueryDirectory**](mrxquerydirectory.md)
 
@@ -155,11 +154,4 @@ Requirements
 [**MRxSetVolumeInfo**](mrxsetvolumeinfo.md)
 
  
-
- 
-
-
-
-
-
 

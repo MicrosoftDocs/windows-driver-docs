@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM
 description: KSPROPERTY\_CAMERACONTROL\_EXTENDED\_HISTOGRAM is a property ID that will be used to control the histogram metadata produced by the driver. This is a pin level control for the preview pin only.
-ms.assetid: 638AA1AA-F8E5-4FD7-9283-CF1F23266474
 keywords: ["KSPROPERTY_CAMERACONTROL_EXTENDED_HISTOGRAM Streaming Media Devices"]
 topic_type:
 - apiref
@@ -64,7 +63,7 @@ If the driver does not have the capability to produce histogram metadata, the dr
 
 The **SET** call of this control has no effect when the preview pin is in any state higher than the KSSTATE\_STOP state. The driver shall reject the **SET** call received if preview is not in the stop state and returns **STATUS\_INVALID\_DEVICE\_STATE**. In a **GET** call, driver should return the current settings in **Flags** field.
 
-The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
+The following table contains the descriptions and requirements for the [**KSCAMERA\_EXTENDEDPROP\_HEADER**](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_header) structure fields when using the control.
 
 <table>
 <colgroup>
@@ -88,7 +87,7 @@ The following table contains the descriptions and requirements for the [**KSCAME
 </tr>
 <tr class="odd">
 <td><p>Size</p></td>
-<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + sizeof(<a href="https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VALUE&lt;/strong&gt;](https://docs.microsoft.com/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)"><strong>KSCAMERA_EXTENDEDPROP_VALUE</strong></a>).</p></td>
+<td><p>This must be sizeof(<strong>KSCAMERA_EXTENDEDPROP_HEADER</strong>) + sizeof(<a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value" data-raw-source="[&lt;strong&gt;KSCAMERA_EXTENDEDPROP_VALUE&lt;/strong&gt;](/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagkscamera_extendedprop_value)"><strong>KSCAMERA_EXTENDEDPROP_VALUE</strong></a>).</p></td>
 </tr>
 <tr class="even">
 <td><p>Result</p></td>

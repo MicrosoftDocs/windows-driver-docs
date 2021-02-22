@@ -1,7 +1,6 @@
 ---
 title: BinPlace Command-Line Syntax
 description: BinPlace uses the following syntax at the command line
-ms.assetid: 8489b7ae-3e3b-41d5-b9a6-0b69aa92087e
 keywords:
 - BinPlace Command-Line Syntax Driver Development Tools
 topic_type:
@@ -55,7 +54,7 @@ Causes BinPlace to verify the executable file. *LCFile* specifies the localizati
 Causes BinPlace to create hard links instead of copying the file when placing files. This option is only available on the NTFS file system.
 
 <span id="-j"></span><span id="-J"></span>**-j**  
-Causes BinPlace to verify that the proper symbols exist before copying any executable files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.)
+Causes BinPlace to verify that the proper symbols exist before copying any executable files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](../debugger/index.md) for details.)
 
 <span id="-k"></span><span id="-K"></span>**-k**  
 Causes BinPlace to preserve file attributes. By default, BinPlace will turn off the archive attribute.
@@ -112,7 +111,7 @@ Causes BinPlace to use a custom application to validate all executable files. Yo
 Causes BinPlace to only place files whose archive attributes are set.
 
 <span id="-_DBG"></span><span id="-_dbg"></span>**-:DBG**  
-Prevents BinPlace from placing .dbg files. If the **-j** switch is also used, this will prevent BinPlace from placing binaries that point to .dbg files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.)
+Prevents BinPlace from placing .dbg files. If the **-j** switch is also used, this will prevent BinPlace from placing binaries that point to .dbg files. For this option to be used, the SymChk tool must be in your path. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](../debugger/index.md) for details.)
 
 <span id="-_DEST_ClassPath"></span><span id="-_dest_classpath"></span><span id="-_DEST_CLASSPATH"></span>**-:DEST** *ClassPath*  
 Causes BinPlace to ignore the place file and use the specified *ClassPath* as the class subdirectory. See [BinPlace Destination Directories](binplace-destination-directories.md) for details.
@@ -146,12 +145,3 @@ It is possible to pass parameters to BinPlace from a text file. There are two wa
 -   You can specify a file name in the BINPLACE\_OVERRIDE\_FLAGS environment variable. This file will be read and its contents used as parameters whenever BinPlace is run. The parameters in this file will be parsed before the parameters that actually appear on the BinPlace command line.
 
 -   You can specify a file name on the BinPlace command line by prefixing it with an at sign ( **@** ). When BinPlace sees a string beginning with this sign on its command line, it will take the string, remove the at sign, and then look for a file with this name. If it finds this file, it will insert its text into the command line at exactly the place where the original parameter beginning with the at sign had been. Because BinPlace parses parameters from left to right, you can use this technique along with multiple instances of *File* to use BinPlace on several files with different options for each, without having to type all the options each time. (If this file is not found, BinPlace will treat the original string, including the at sign, as a *File* parameter.)
-
-
-
-
-
-
-
-
-

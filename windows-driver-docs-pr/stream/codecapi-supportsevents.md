@@ -1,7 +1,6 @@
 ---
 title: CODECAPI\_SUPPORTSEVENTS
 description: CODECAPI\_SUPPORTSEVENTS
-ms.assetid: feb6d110-9a9c-4e2b-bc19-259f80f3947a
 ms.date: 11/28/2017
 ms.localizationpriority: medium
 ---
@@ -52,13 +51,7 @@ The property value (operation data) is of type BOOL, which specifies whether the
 
 ### See Also
 
-[**KSPROPERTY**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
+[**KSPROPERTY**](/windows-hardware/drivers/ddi/ks/ns-ks-ksidentifier)
 
  
-
- 
-
-
-
-
 

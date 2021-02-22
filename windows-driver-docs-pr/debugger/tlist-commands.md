@@ -1,7 +1,6 @@
 ---
 title: TList Commands
 description: The syntax of the TList command is as follows
-ms.assetid: d1527ffe-ea80-4e02-9a32-b6eccddc1c6a
 keywords: TList Commands, Windows debugging
 ms.date: 05/23/2017
 topic_type:
@@ -82,17 +81,6 @@ In its detailed display of a process (**tlist** *PID* or **tlist** *Pattern*), T
 
 When using the **/e** parameter, valid session identifiers appear in the process list only under the following conditions. Otherwise, the session identifier is zero (0).
 
--   On Windows 2000 and Windows Server 2003, at least one user must be connected to a session other than the console session.
-
 -   On Windows XP, Fast User Switching must be enabled and more than one user must be connected to the non-console session.
 
 -   On Windows Vista, where all processes are associated with two Terminal Services sessions by default, at least one user must be connected to the non-console session.
-
- 
-
- 
-
-
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Installing Windows Multimedia System Support for an Audio Adapter
 description: Installing Windows Multimedia System Support for an Audio Adapter
-ms.assetid: 5846404f-3a6a-4e55-ba83-18404ea7cace
 keywords:
 - audio adapters WDK , multimedia support
 - adapter drivers WDK audio , multimedia support
@@ -20,7 +19,7 @@ ms.localizationpriority: medium
 
 An INF add-registry section creates or modifies driver-specific information in the system registry. The add-registry section for a PortCls audio adapter contains information that makes the adapter accessible to the Windows multimedia system components.
 
-The following example presents the add-registry section, XYZ-Audio-Device.AddReg, that was named in an [**INF AddReg directive**](https://docs.microsoft.com/windows-hardware/drivers/install/inf-addreg-directive) in a previous example (see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md)):
+The following example presents the add-registry section, XYZ-Audio-Device.AddReg, that was named in an [**INF AddReg directive**](../install/inf-addreg-directive.md) in a previous example (see [Installing a Port Class Audio Adapter](installing-a-port-class-audio-adapter.md)):
 
 ```cpp
   [XYZ-Audio-Device.AddReg]
@@ -44,9 +43,4 @@ The add-registry section adds the registry entries that specify the components t
 The **AssociatedFilters** keyword in the example add-registry section indicates that the directive contains the names of one or more auxiliary driver files whose loading is to be deferred until they are needed by the adapter driver. The alternative is to load the auxiliary files at the same time that the device driver is loaded.
 
  
-
- 
-
-
-
 

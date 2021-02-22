@@ -1,7 +1,6 @@
 ---
 title: DEVPROP_TYPE_INT16
 description: In Windows Vista and later versions of Windows, the DEVPROP_TYPE_INT16 identifier represents the base-data-type identifier that indicates the data type is a SHORT-typed signed integer.
-ms.assetid: a126a7c2-744e-4eaf-9b3d-45bd4286de73
 keywords: ["DEVPROP_TYPE_INT16 Device and Driver Installation"]
 topic_type:
 - apiref

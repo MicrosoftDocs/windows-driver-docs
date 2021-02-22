@@ -1,7 +1,6 @@
 ---
 title: GetEventBuffer function
 description: The GetEventBuffer WMI method retrieves the next events in the HBA's event queue.
-ms.assetid: 9eee93e0-2661-4777-8c02-a87c4e1d744c
 keywords: ["GetEventBuffer function Storage Devices"]
 topic_type:
 - apiref
@@ -36,13 +35,13 @@ Parameters
 ----------
 
 *HBAStatus*   
-On return, contains a WMI qualifier value that indicates the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetEventBuffer\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out) structure.
+On return, contains a WMI qualifier value that indicates the status of the operation. For a list of allowed values and their descriptions, see [HBA\_STATUS](hba-status.md). The miniport driver returns this information in the **HBAStatus** member of a [**GetEventBuffer\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out) structure.
 
 *EventCount*   
-On return, indicates the number of events whose information was retrieved. The miniport driver returns this information in the **EventCount** member of a [**GetEventBuffer\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out) structure.
+On return, indicates the number of events whose information was retrieved. The miniport driver returns this information in the **EventCount** member of a [**GetEventBuffer\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out) structure.
 
 *Events\[\]*   
-An array of structures of type [**MSFC\_EventBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_eventbuffer) that contain information about the next events in the HBA event queue. The miniport driver returns this information in the **Events** member of a [**GetEventBuffer\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out) structure.
+An array of structures of type [**MSFC\_EventBuffer**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_eventbuffer) that contain information about the next events in the HBA event queue. The miniport driver returns this information in the **Events** member of a [**GetEventBuffer\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out) structure.
 
 Return value
 ------------
@@ -83,16 +82,9 @@ Requirements
 ## <span id="see_also"></span>See also
 
 
-[**GetEventBuffer\_OUT**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out)
+[**GetEventBuffer\_OUT**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_geteventbuffer_out)
 
-[**MSFC\_EventBuffer**](https://docs.microsoft.com/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_eventbuffer)
-
- 
+[**MSFC\_EventBuffer**](/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_eventbuffer)
 
  
-
-
-
-
-
 

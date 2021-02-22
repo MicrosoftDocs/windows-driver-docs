@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_MODULE\_STATUS
 description: Clients use KSPROPERTY\_BDA\_CA\_MODULE\_STATUS to determine status on the CA module associated with an ECM map node.
-ms.assetid: 4bd8a423-7a76-4702-a769-0de88fcc5772
 keywords: ["KSPROPERTY_BDA_CA_MODULE_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -81,14 +80,7 @@ Requirements
 
 [**KSEVENT\_BDA\_CA\_MODULE\_STATUS\_CHANGED**](ksevent-bda-ca-module-status-changed.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Expression Examples
 description: Expression Examples
-ms.assetid: a4915678-a83f-48f1-8b29-50cf530f9246
 keywords: ["expressions, examples", "MASM expressions, examples", "C++ expressions, examples"]
 ms.date: 05/23/2017
 ms.localizationpriority: medium

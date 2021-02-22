@@ -1,7 +1,6 @@
 ---
 title: WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION
 description: The WIA\_IPS\_PRINTER\_ENDORSER\_CHARACTER\_ROTATION property is used to configure the rotation of the individual characters in the printed or endorsed text.
-ms.assetid: DCEF2CAF-08F3-432B-8688-E04DEAA523E0
 keywords: ["WIA_IPS_PRINTER_ENDORSER_CHARACTER_ROTATION Imaging Devices"]
 topic_type:
 - apiref

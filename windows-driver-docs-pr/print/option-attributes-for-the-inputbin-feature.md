@@ -1,7 +1,6 @@
 ---
 title: Option Attributes for the InputBin Feature
 description: Option Attributes for the InputBin Feature
-ms.assetid: 0ba5e7af-b44d-4aef-ab1b-17b5773a13d1
 keywords:
 - InputBin Feature
 ms.date: 04/20/2017

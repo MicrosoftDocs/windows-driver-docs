@@ -1,7 +1,6 @@
 ---
 title: Porting NDIS 6.x drivers to NDIS 6.81
 description: NDIS 6.81 is substantially the same as NDIS 6.80. For detailed information about new features for NDIS 6.81, see Introduction to NDIS 6.81.
-ms.assetid: 63E345CD-4445-45EA-AA62-824161C8573D
 ms.date: 05/14/2018
 ms.localizationpriority: medium
 ---

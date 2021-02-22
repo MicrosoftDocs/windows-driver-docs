@@ -1,7 +1,6 @@
 ---
 title: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME
 description: OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME is issued to the IHV component to send a Wi-Fi Direct Public Action Frame Request to a peer.
-ms.assetid: 5cb57f20-ef9d-4e79-9b4b-8cf939221d47
 ms.date: 07/18/2017
 keywords:
  - OID_WDI_TASK_P2P_SEND_RESPONSE_ACTION_FRAME Network Drivers Starting with Windows Vista
@@ -52,13 +51,13 @@ The WDI interface itself is unchanged and continues to use units of milliseconds
 
 | TLV                                                                                                               | Multiple TLV instances allowed | Optional | Description                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------|--------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**WDI\_TLV\_P2P\_ACTION\_FRAME\_RESPONSE\_PARAMETERS**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-action-frame-response-parameters)   |                                |          | Parameters such as action frame type, device address of target peer adapter, and dialog token.                                                 |
-| [**WDI\_TLV\_P2P\_GO\_NEGOTIATION\_RESPONSE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-go-negotiation-response-info)           |                                | X        | GO Negotiation Response Parameters. The port shall only examine this structure if wfdRequestFrameType is a GO Negotiation Response.            |
-| [**WDI\_TLV\_P2P\_GO\_NEGOTIATION\_CONFIRMATION\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-go-negotiation-confirmation-info)   |                                | X        | GO Negotiation Confirmation Parameters. The port shall only examine this structure if wfdRequestFrameType is a GO Negotiation Confirmation.    |
-| [**WDI\_TLV\_P2P\_INVITATION\_RESPONSE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-invitation-response-info)                    |                                | X        | Invitation Response Parameters. The port shall only examine this structure if wfdRequestFrameType is an Invitation Response.                   |
-| [**WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-provision-discovery-response-info) |                                | X        | Provision Discovery Response Parameters. The port shall only examine this structure if wfdRequestFrameType is an Provision Discovery Response. |
-| [**WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-p2p-incoming-frame-information)                |                                |          | Information that was indicated from the previously received P2P Action Frame. The received indication is provided back to the port.            |
-| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](https://docs.microsoft.com/windows-hardware/drivers/network/wdi-tlv-vendor-specific-ie)                                         |                                | X        | One or more IEs that must be included in the frame sent by the port.                                                                           |
+| [**WDI\_TLV\_P2P\_ACTION\_FRAME\_RESPONSE\_PARAMETERS**](./wdi-tlv-p2p-action-frame-response-parameters.md)   |                                |          | Parameters such as action frame type, device address of target peer adapter, and dialog token.                                                 |
+| [**WDI\_TLV\_P2P\_GO\_NEGOTIATION\_RESPONSE\_INFO**](./wdi-tlv-p2p-go-negotiation-response-info.md)           |                                | X        | GO Negotiation Response Parameters. The port shall only examine this structure if wfdRequestFrameType is a GO Negotiation Response.            |
+| [**WDI\_TLV\_P2P\_GO\_NEGOTIATION\_CONFIRMATION\_INFO**](./wdi-tlv-p2p-go-negotiation-confirmation-info.md)   |                                | X        | GO Negotiation Confirmation Parameters. The port shall only examine this structure if wfdRequestFrameType is a GO Negotiation Confirmation.    |
+| [**WDI\_TLV\_P2P\_INVITATION\_RESPONSE\_INFO**](./wdi-tlv-p2p-invitation-response-info.md)                    |                                | X        | Invitation Response Parameters. The port shall only examine this structure if wfdRequestFrameType is an Invitation Response.                   |
+| [**WDI\_TLV\_P2P\_PROVISION\_DISCOVERY\_RESPONSE\_INFO**](./wdi-tlv-p2p-provision-discovery-response-info.md) |                                | X        | Provision Discovery Response Parameters. The port shall only examine this structure if wfdRequestFrameType is an Provision Discovery Response. |
+| [**WDI\_TLV\_P2P\_INCOMING\_FRAME\_INFORMATION**](./wdi-tlv-p2p-incoming-frame-information.md)                |                                |          | Information that was indicated from the previously received P2P Action Frame. The received indication is provided back to the port.            |
+| [**WDI\_TLV\_VENDOR\_SPECIFIC\_IE**](./wdi-tlv-vendor-specific-ie.md)                                         |                                | X        | One or more IEs that must be included in the frame sent by the port.                                                                           |
 
  
 
@@ -92,9 +91,4 @@ Requirements
 </table>
 
  
-
- 
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Page Size and Orientation Code Examples
 description: Page Size and Orientation Code Examples
-ms.assetid: 28425df2-131b-4fbc-ae44-043be2fb4813
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -14,9 +13,9 @@ These code examples show the following WIA\_IPS\_PAGE\_SIZE scenarios:
 
 2.  An application sets the WIA\_IPS\_PAGE\_SIZE property to WIA\_PAGE\_LETTER.
 
-3.  An application sets the [**WIA\_IPS\_ORIENTATION**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-orientation) property to LANSCAPE.
+3.  An application sets the [**WIA\_IPS\_ORIENTATION**](./wia-ips-orientation.md) property to LANSCAPE.
 
-4.  An application changes the [**WIA\_IPS\_XEXTENT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-xextent) property to a smaller value.
+4.  An application changes the [**WIA\_IPS\_XEXTENT**](./wia-ips-xextent.md) property to a smaller value.
 
 ### Example 1: The minidriver reports the settings
 
@@ -65,7 +64,7 @@ WIA_IPS_YRES = 100
 
 ### Example 4: An application changes the WIA\_IPS\_XEXTENT property to a smaller value
 
-In the following code example, an application changes the [**WIA\_IPS\_XEXTENT**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-xextent) property to 1000. The minidriver should assume that the new value that is contained in WIA\_IPS\_XEXTENT is no longer valid for the WIA\_IPS\_PAGE\_SIZE property and should thus change WIA\_IPS\_PAGE\_SIZE to WIA\_PAGE\_CUSTOM. The minidriver must also adjust [**WIA\_IPS\_PAGE\_WIDTH**](https://docs.microsoft.com/windows-hardware/drivers/image/wia-ips-page-width).
+In the following code example, an application changes the [**WIA\_IPS\_XEXTENT**](./wia-ips-xextent.md) property to 1000. The minidriver should assume that the new value that is contained in WIA\_IPS\_XEXTENT is no longer valid for the WIA\_IPS\_PAGE\_SIZE property and should thus change WIA\_IPS\_PAGE\_SIZE to WIA\_PAGE\_CUSTOM. The minidriver must also adjust [**WIA\_IPS\_PAGE\_WIDTH**](./wia-ips-page-width.md).
 
 WIA_IPS_PAGE_SIZE = WIA_PAGE_CUSTOM
 WIA_IPS_PAGE_HEIGHT = 10000

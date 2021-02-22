@@ -1,7 +1,6 @@
 ---
 title: Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR
 description: The KERNEL_DATA_INPAGE_ERROR bug check has a value of 0x0000007A. This bug check indicates that the requested page of kernel data from the paging file could not be read into memory.
-ms.assetid: 466d4864-8840-47b2-9a9a-302a125bf095
 keywords: ["Bug Check 0x7A KERNEL_DATA_INPAGE_ERROR", "KERNEL_DATA_INPAGE_ERROR"]
 ms.date: 05/23/2017
 topic_type:

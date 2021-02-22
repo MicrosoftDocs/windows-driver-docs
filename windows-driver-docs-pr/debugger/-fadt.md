@@ -1,7 +1,6 @@
 ---
 title: fadt
 description: The fadt extension displays a Fixed ACPI Description Table (FADT).
-ms.assetid: 700409f8-4f30-438a-a8a8-bad9a25f1d3e
 keywords: ["fadt Windows Debugging"]
 ms.date: 05/23/2017
 topic_type:

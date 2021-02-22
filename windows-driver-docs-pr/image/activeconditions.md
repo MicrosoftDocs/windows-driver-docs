@@ -1,7 +1,6 @@
 ---
 title: ActiveConditions element
 description: The required ActiveConditions element is a collection of all of the currently active conditions or errors on the scan device.
-ms.assetid: e66196af-d794-4ffe-99e5-c0f8ea4ffe74
 keywords: ["ActiveConditions element Imaging Devices"]
 topic_type:
 - apiref

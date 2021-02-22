@@ -1,7 +1,6 @@
 ---
 title: Building WdbgExts Extensions
 description: Building WdbgExts Extensions
-ms.assetid: a3923de6-bed5-40e0-a9cb-99e0f4354448
 keywords: ["Build utility (build.exe), building WdbgExts extensions", "WdbgExts extensions, building", "WdbgExts extensions, compiling"]
 ms.date: 10/22/2018
 ms.localizationpriority: medium

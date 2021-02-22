@@ -1,7 +1,6 @@
 ---
 title: WDI_BAND_ID
 description: This topic describes the WDI_BAND_ID data type for WDI miniport drivers.
-ms.assetid: 28E34D2C-94A5-4035-ACAA-60CECABF3A02
 keywords:
 - WDI_BAND_ID, WDK WDI_BAND_ID network drivers
 ms.date: 11/27/2017
@@ -20,7 +19,7 @@ typedef UINT32 WDI_BAND_ID;
 
 Possible band ID values are as follows:
 
-| Value |   | Description |
+| Name | Value  | Description |
 | --- | --- | --- |
 | WDI_BAND_ID_ANY | 0xFFFFFFFF | All bands |
 | WDI_BAND_ID_2400 | 1 | 2.4 GHz |
@@ -32,9 +31,10 @@ Possible band ID values are as follows:
 
 ## Requirements
 
-|   |   |
-| --- | --- |
-| Minimum supported client | Windows 10 |
-| Minimum supported server | Windows Server 2016 |
-| Header | Wditypes.hpp |
+**Minimum supported client**: Windows 10
+
+**Minimum supported server**: Windows Server 2016
+
+**Header**: Wditypes.hpp
+
 

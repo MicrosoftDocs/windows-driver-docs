@@ -1,7 +1,6 @@
 ---
 title: INF UnregisterDlls Directive
 description: An UnregisterDlls directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
-ms.assetid: 11d29c7f-9bd8-4097-9842-ce7431389241
 keywords:
 - INF UnregisterDlls Directive Device and Driver Installation
 topic_type:
@@ -23,7 +22,7 @@ ms.localizationpriority: medium
 
 An **UnregisterDlls** directive references one or more INF sections used to specify files that are OLE controls and require self-unregistration (self-removal).
 
-```ini
+```inf
 [DDInstall]
   
 UnregisterDlls=unregister-dll-section[,unregister-dll-section]...
@@ -31,7 +30,7 @@ UnregisterDlls=unregister-dll-section[,unregister-dll-section]...
 
 Each INF section referenced by an **UnregisterDlls** directive must have the following entry format:
 
-```ini
+```inf
 [unregister-dll-section] 
   
 dirid,[subdir],filename,registration-flags[,[timeout][,argument]] 
@@ -78,7 +77,7 @@ For more information about OLE controls and self unregistration, see the Windows
 Examples
 --------
 
-```ini
+```inf
 [Dialer]
 RegisterDlls = DialerRegSvr
 

@@ -1,7 +1,6 @@
 ---
 title: Step 6 Submit device metadata for your UWP device app
 description: This topic describes how to submit device metadata for your UWP device app to the Windows Dev Center hardware dashboard.
-ms.assetid: 5A4A371E-42A2-43C8-A496-CC3C38C17182
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
@@ -55,13 +54,7 @@ You can use the **Bulk Package Wizard** to create a bulk submission package that
 
 6.  On the **Prepare bulk package for submission** page, click **Launch Signature Wizard** to start the **Digital Signature Wizard**, which is used to digitally sign your bulk submission package.
 
-For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
+For more info on submitting a device metadata package to the hardware dashboard, see [Device Metadata](../dashboard/index.yml).
 
  
-
- 
-
-
-
-
 

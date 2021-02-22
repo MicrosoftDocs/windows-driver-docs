@@ -1,7 +1,6 @@
 ---
 title: action element
 description: The optional action element describes an action that will be completed when a user clicks a button in the balloon message.
-ms.assetid: dae207ad-072e-4de6-b6a2-f1188ce91065
 keywords: ["action element Print Devices"]
 topic_type:
 - apiref
@@ -15,13 +14,17 @@ ms.localizationpriority: medium
 
 # action element
 
-
 The optional **action** element describes an action that will be completed when a user clicks a button in the balloon message.
 
-The **action** element is defined in the *asyncui* namespace at this URI: http://schemas.microsoft.com/2003/print/asyncui/v1/request. (This resource may not be available in some languages and countries.)
+The **action** element is defined in the *asyncui* namespace at this URI:
 
-Usage
------
+```xml
+https://schemas.microsoft.com/2003/print/asyncui/v1/request
+```
+
+This resource may not be available in some languages and countries.
+
+## Usage
 
 ```xml
 <action
@@ -31,8 +34,7 @@ Usage
 </action>
 ```
 
-Attributes
-----------
+## Attributes
 
 <table>
 <colgroup>
@@ -67,18 +69,15 @@ Attributes
 </tbody>
 </table>
 
-Text value
-----------
+## Text value
 
 Optional string, formatted as CDATA, to be passed to the driver resource DLL.
 
 ## Child elements
 
-
 There are no child elements.
 
 ## Parent elements
-
 
 <table>
 <colgroup>
@@ -100,20 +99,18 @@ There are no child elements.
 </tbody>
 </table>
 
-Remarks
--------
+## Remarks
 
 The **action** element is used with an interactive balloon, which is similar to a regular balloon, but it includes a button for the user to click.
 
-Examples
---------
+## Examples
 
-The following XML code example will run the *IHV.exe* program on the client computer
+The following XML code example will run the *IHV.exe* program on the client computer.
 
 ```xml
 <?xml version="1.0" ?> 
   <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <balloonUI iconID="1" resourceDll="IHV.dll">
@@ -133,7 +130,7 @@ The following code example shows how to use the **action** element to pass data 
 ```xml
 <?xml version="1.0" ?>
    <asyncPrintUIRequest
-    xmlns="http://schemas.microsoft.com/2003/print/asyncui/v1/request">
+    xmlns="https://schemas.microsoft.com/2003/print/asyncui/v1/request">
     <v1>
       <requestOpen>
         <balloonUI iconID="1" resourceDll="IHV.dll">
@@ -153,13 +150,4 @@ The following code example shows how to use the **action** element to pass data 
 
 ## See also
 
-
 [**balloonUI**](balloonui.md)
-
- 
-
- 
-
-
-
-

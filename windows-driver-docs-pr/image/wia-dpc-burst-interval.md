@@ -1,7 +1,6 @@
 ---
 title: WIA\_DPC\_BURST\_INTERVAL
 description: The WIA\_DPC\_BURST\_INTERVAL property contains the time, in milliseconds, between image captures during a burst operation.
-ms.assetid: 224dc203-6dec-4613-9f4b-5641e04720e8
 keywords: ["WIA_DPC_BURST_INTERVAL Imaging Devices"]
 topic_type:
 - apiref

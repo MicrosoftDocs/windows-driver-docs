@@ -1,7 +1,6 @@
 ---
 title: forceIfDriverIsNotBetter XML Element
 description: forceIfDriverIsNotBetter XML Element
-ms.assetid: ba83c8fd-cc8e-44fd-96ed-855bb42c2493
 keywords: ["forceIfDriverIsNotBetter XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # forceIfDriverIsNotBetter XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **forceIfDriverIsNotBetter** XML element is an empty element that sets the **forceIfDriverIsNotBetter** flag to ON, which configures DPInst to install a driver on a device even if the driver that is currently installed on the device is a better match than the new driver.
 
@@ -79,11 +78,4 @@ The following code example demonstrates a **forceIfDriverIsNotBetter** element.
 [**dpinst**](dpinst-xml-element.md)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: MPIO\_DISK\_INFO WMI Class
 description: MPIO\_DISK\_INFO WMI Class
-ms.assetid: 75c66c84-d815-43a5-a70d-1952bf0e8d44
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -40,13 +39,7 @@ class MPIO_DISK_INFO
 };
 ```
 
-When compiled by the WMI tool suite, this class definition produces the [**MPIO\_DISK\_INFO**](https://docs.microsoft.com/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_disk_info) data structure. There are no methods associated with this WMI class.
+When compiled by the WMI tool suite, this class definition produces the [**MPIO\_DISK\_INFO**](/windows-hardware/drivers/ddi/mpiowmi/ns-mpiowmi-_mpio_disk_info) data structure. There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

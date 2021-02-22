@@ -1,5 +1,5 @@
 ---
-Description: A USB device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints. 
+description: A USB device defines its capabilities and features through configurations, interfaces, alternate settings, and endpoints.
 title: USB device layout
 ms.date: 04/20/2017
 ms.localizationpriority: medium
@@ -16,7 +16,7 @@ A configuration can have one or more *USB interfaces* that define the functional
 
 Each interface contains one or more *endpoints*, which are used to transfer data to and from the device. In addition, the interface contains *alternate settings* that define the bandwidth requirements of the function associated with the interface. To sum up, a group of endpoints form an interface, and a set of interfaces constitutes a configuration in the device.
 
-So what does it mean to select an active configuration? During device initialization, the device driver for USB device must select a configuration, one or more or interfaces within that configuration, and an alternate setting for each interface. Most USB devices don't provide multiple interfaces or multiple alternate settings. For example, the OSR USB FX2 Learning Kit device has one interface with one alternate setting and three endpoints. For more information about the learning kit, see [OSR Online](http://www.osronline.com/).
+So what does it mean to select an active configuration? During device initialization, the device driver for USB device must select a configuration, one or more or interfaces within that configuration, and an alternate setting for each interface. Most USB devices don't provide multiple interfaces or multiple alternate settings. For example, the OSR USB FX2 Learning Kit device has one interface with one alternate setting and three endpoints. For more information about the learning kit, see [OSR Online](https://www.osronline.com/).
 
 **Single interface device**
 
@@ -38,12 +38,9 @@ In this example, the diagram shows the default endpoint. Configuration 0 has two
 
 Endpoints can't be shared between two interfaces within a configuration. The device uses the endpoint address to determine the target endpoint for a data transfer or endpoint operation, such as pipe reset. All those operations are initiated by the host.
 
-Before you start using the device, get information about the device layout. [USBView](https://docs.microsoft.com/windows-hardware/drivers/ddi/index) is an application that enables you to browse all USB controllers and the USB devices that are connected to them. For each connected device, you can view the device, configuration, interface, and endpoint descriptors to get an idea about the capability of the device.
+Before you start using the device, get information about the device layout. [USBView](../debugger/usbview.md) is an application that enables you to browse all USB controllers and the USB devices that are connected to them. For each connected device, you can view the device, configuration, interface, and endpoint descriptors to get an idea about the capability of the device.
 
 Next, see [Standard USB descriptors](standard-usb-descriptors.md).
 
 ## Related topics
-[Concepts for all USB developers](usb-concepts-for-all-developers.md)  
-
-
-
+[Concepts for all USB developers](usb-concepts-for-all-developers.md)

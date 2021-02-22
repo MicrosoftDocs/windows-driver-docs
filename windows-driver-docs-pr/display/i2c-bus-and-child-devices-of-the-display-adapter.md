@@ -1,7 +1,6 @@
 ---
 title: I2C Bus and Child Devices of the Display Adapter
 description: I2C Bus and Child Devices of the Display Adapter
-ms.assetid: bfa81f2d-dc35-4430-9117-4706a446058c
 keywords:
 - video miniport drivers WDK Windows 2000 , I2C
 - I2C WDK video miniport
@@ -26,12 +25,12 @@ The I²C bus has only two wires: the serial clock line and the serial data line.
 
 The following functions, implemented by the video miniport driver, read and write individual data bits to the I²C serial clock and data lines:
 
-* [**ReadClockLine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_read_clock_line)
-* [**ReadDataLine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_read_data_line)
-* [**WriteClockLine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_write_clock_line)
-* [**WriteDataLine**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pvideo_write_data_line)
+* [**ReadClockLine**](/windows-hardware/drivers/ddi/video/nc-video-pvideo_read_clock_line)
+* [**ReadDataLine**](/windows-hardware/drivers/ddi/video/nc-video-pvideo_read_data_line)
+* [**WriteClockLine**](/windows-hardware/drivers/ddi/video/nc-video-pvideo_write_clock_line)
+* [**WriteDataLine**](/windows-hardware/drivers/ddi/video/nc-video-pvideo_write_data_line)
 
-The preceding functions must be implemented by any video miniport driver that calls the video port driver's [VideoPortDDCMonitorHelper](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportddcmonitorhelper) function.
+The preceding functions must be implemented by any video miniport driver that calls the video port driver's [VideoPortDDCMonitorHelper](/windows-hardware/drivers/ddi/video/nf-video-videoportddcmonitorhelper) function.
 
 VideoPortDDCMonitorHelper implements the details of reading a monitor's extended display identification data (EDID) according to the I2C specification, but must rely on the following functions, implemented by the video miniport driver, to read and write individual data bits to the I2C serial clock and serial data lines.
 
@@ -41,26 +40,20 @@ The *HwVidGetChildDescriptor* function, implemented by the video miniport driver
 
 The I²C specification defines a protocol for initiating I²C communication, reading and writing bytes over the I²C data line and terminating I²C communication. The system-supplied video port driver provides the following functions that implement that protocol.
 
-* [**I2CStart**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pi2c_start)
-* [**I2CRead**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pi2c_read)
-* [**I2CWrite**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pi2c_write)
-* [**I2CStop**](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nc-video-pi2c_stop)
+* [**I2CStart**](/windows-hardware/drivers/ddi/video/nc-video-pi2c_start)
+* [**I2CRead**](/windows-hardware/drivers/ddi/video/nc-video-pi2c_read)
+* [**I2CWrite**](/windows-hardware/drivers/ddi/video/nc-video-pi2c_write)
+* [**I2CStop**](/windows-hardware/drivers/ddi/video/nc-video-pi2c_stop)
 
-Each of the functions (implemented, but not exported by the video port driver) in the preceding list requires assistance from the video miniport driver. Before the video miniport driver can call the I²C functions, it must obtain function pointers by passing VideoPortServicesI2C to the [VideoPortQueryServices](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/nf-video-videoportqueryservices) function.
+Each of the functions (implemented, but not exported by the video port driver) in the preceding list requires assistance from the video miniport driver. Before the video miniport driver can call the I²C functions, it must obtain function pointers by passing VideoPortServicesI2C to the [VideoPortQueryServices](/windows-hardware/drivers/ddi/video/nf-video-videoportqueryservices) function.
 
 For example, the **I2CRead** function reads a sequence of bytes over the I²C data line, but reading each byte requires reading eight individual bits, a task that only the video miniport driver can do. The **I2CRead** function can obtain assistance from the video miniport driver because it receives pointers (in an *I2CCallbacks* structure) to the four I²C functions implemented by the video miniport driver (*ReadClockLine*, *WriteClockLine*, *ReadDataLine*, and *WriteDataLine*). Similarly, **I2CStart**, **I2CRead**, and **I2CWrite** each receive an *I2CCallbacks* structure that contains pointers to all four of the video miniport driver's I²C functions.
 
 
 For an overview of all video miniport driver functions and how those functions are registered,
- see [Video Miniport Driver Functions](https://docs.microsoft.com/windows-hardware/drivers/ddi/video/).
+ see [Video Miniport Driver Functions](/windows-hardware/drivers/ddi/video/).
 
 For details on the I²C bus, see the I²C Bus Specification published by Philips Semiconductors.
 
  
-
- 
-
-
-
-
 

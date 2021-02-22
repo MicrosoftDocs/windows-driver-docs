@@ -1,7 +1,6 @@
 ---
 title: KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS
 description: Clients use KSPROPERTY\_BDA\_CA\_SMART\_CARD\_STATUS to determine status on the smart card reader associated with an ECM map node.
-ms.assetid: a53cea17-0463-4909-839b-6e8ad67dac82
 keywords: ["KSPROPERTY_BDA_CA_SMART_CARD_STATUS Streaming Media Devices"]
 topic_type:
 - apiref
@@ -81,14 +80,7 @@ Requirements
 
 [**KSEVENT\_BDA\_CA\_SMART\_CARD\_STATUS\_CHANGED**](ksevent-bda-ca-smart-card-status-changed.md)
 
-[**KSP\_NODE**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
+[**KSP\_NODE**](/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node)
 
  
-
- 
-
-
-
-
-
 

@@ -1,7 +1,6 @@
 ---
 title: Select service icon in the Mobile Broadband Metadata Authoring Wizard
 description: Select service icon in the Mobile Broadband Metadata Authoring Wizard
-ms.assetid: 6BD0A5A1-E954-42A8-B216-721AE888157F
 keywords:
 - Select service icon in the Mobile Broadband Metadata Authoring Wizard
 ms.date: 04/20/2017

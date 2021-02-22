@@ -1,7 +1,6 @@
 ---
 title: MSFC\_HbaApiVersion WMI Class
 description: MSFC\_HbaApiVersion WMI Class
-ms.assetid: 642b8313-d1ca-4c07-9c39-b49ef65b4438
 ms.localizationpriority: medium
 ms.date: 10/17/2018
 ---
@@ -24,15 +23,9 @@ class MSFC_HbaApiVersion
 
 When this class definition is compiled by the WMI tool suite, it produces the following data structure:
 
-[**MSFC\_HbaApiVersion**](https://docs.microsoft.com/previous-versions/windows/hardware/drivers/ff562507(v=vs.85))
+[**MSFC\_HbaApiVersion**](/previous-versions/windows/hardware/drivers/ff562507(v=vs.85))
 
 There are no methods associated with this WMI class.
 
  
-
- 
-
-
-
-
 

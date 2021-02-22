@@ -1,7 +1,6 @@
 ---
 title: BinPlace Macros and Environment Variables
 description: BinPlace Macros and Environment Variables
-ms.assetid: f990e132-f6d7-46e1-8c86-6ae3f0483bd5
 keywords:
 - BinPlace WDK , environment variables
 - environment variables WDK BinPlace
@@ -27,7 +26,7 @@ Specifies the path and file name of the log file. All BinPlace actions will be r
 Specifies the path and file name of the message log file. Each time BinPlace is executed, its command line will be recorded in the message log file. If the command line is expanded using files prefixed with an at sign ( **@** ), the expanded command-line text will be stored in the message log. However, parameters originating in the BINPLACE\_OVERRIDE\_FLAGS file will not be recorded in the message log file.
 
 <span id="BINPLACE_EXCLUDE_FILE"></span><span id="binplace_exclude_file"></span>BINPLACE\_EXCLUDE\_FILE  
-Specifies the path and file name of the exclude file. If this is not present, the default is \\tools\\symbad.txt. This file will be used by SymChk as if it were the argument of SymChk's **/ea** switch. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](https://docs.microsoft.com/windows-hardware/drivers/debugger/index) for details.)
+Specifies the path and file name of the exclude file. If this is not present, the default is \\tools\\symbad.txt. This file will be used by SymChk as if it were the argument of SymChk's **/ea** switch. (SymChk is part of the Debugging Tools for Windows package. See [Windows Debugging](../debugger/index.md) for details.)
 
 <span id="TRACE_FORMAT_PATH"></span><span id="trace_format_path"></span>TRACE\_FORMAT\_PATH  
 Specifies the path to be used for trace format files when the **-:TMF** switch is used.
@@ -36,10 +35,4 @@ Specifies the path to be used for trace format files when the **-:TMF** switch i
 Specifies the root destination directory in which all files will be placed if the **-r** switch is not used. For more information, see [BinPlace Destination Directories](binplace-destination-directories.md).
 
  
-
- 
-
-
-
-
 

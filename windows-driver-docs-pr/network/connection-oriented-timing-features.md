@@ -1,7 +1,6 @@
 ---
 title: Connection-Oriented Timing Features
 description: Connection-Oriented Timing Features
-ms.assetid: 73b005c2-39bd-4931-89cd-7ea3db9068ca
 keywords:
 - connection-oriented NDIS WDK , timing features
 - CoNDIS WDK networking , timing features
@@ -24,7 +23,7 @@ Connection-oriented NDIS supports using a NIC's local time for scheduling the tr
 
  
 
-A connection-oriented protocol driver can call [**NdisCoOidRequest**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) to query the local timing capabilities of a connection-oriented miniport driver or an MCM driver with [OID\_GEN\_CO\_GET\_TIME\_CAPS](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-co-get-time-caps). In response to such a query, the miniport driver or MCM driver returns information about:
+A connection-oriented protocol driver can call [**NdisCoOidRequest**](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest) to query the local timing capabilities of a connection-oriented miniport driver or an MCM driver with [OID\_GEN\_CO\_GET\_TIME\_CAPS](./oid-gen-co-get-time-caps.md). In response to such a query, the miniport driver or MCM driver returns information about:
 
 -   Whether there is a readable clock on the NIC.
 
@@ -38,15 +37,9 @@ A connection-oriented protocol driver can call [**NdisCoOidRequest**](https://do
 
 -   Whether the NIC can timestamp transmitted packets with its local time.
 
-To obtain a NIC's local time, a connection-oriented protocol can call **NdisCoOidRequest** to query a connection-oriented miniport driver or MCM driver with [OID\_GEN\_CO\_GET\_NETCARD\_TIME](https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-co-get-netcard-time). The connection-oriented miniport driver or MCM driver synchronously returns its local time, which the connection-oriented protocol can then use to schedule the transmission of packets.
+To obtain a NIC's local time, a connection-oriented protocol can call **NdisCoOidRequest** to query a connection-oriented miniport driver or MCM driver with [OID\_GEN\_CO\_GET\_NETCARD\_TIME](./oid-gen-co-get-netcard-time.md). The connection-oriented miniport driver or MCM driver synchronously returns its local time, which the connection-oriented protocol can then use to schedule the transmission of packets.
 
-Timing information for a send or receive packet is contained in the packet's out-of-band (OOB) data. For more information, see [**NET\_BUFFER\_LIST**](https://docs.microsoft.com/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list).
-
- 
+Timing information for a send or receive packet is contained in the packet's out-of-band (OOB) data. For more information, see [**NET\_BUFFER\_LIST**](/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list).
 
  
-
-
-
-
 

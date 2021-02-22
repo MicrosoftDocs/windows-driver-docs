@@ -1,18 +1,15 @@
 ---
 title: CM_PROB_FAILED_ADD
 description: CM_PROB_FAILED_ADD
-ms.assetid: 3004f9fa-4afb-47a9-8aa1-95086eb4f38d
 keywords:
 - CM_PROB_FAILED_ADD
 ms.date: 04/20/2017
 ms.localizationpriority: medium
 ---
 
-# CM_PROB_FAILED_ADD
+# Code 31 - CM_PROB_FAILED_ADD
 
-This function is reserved for system use.
-
-A driver's attempt to add a device failed.
+This Device Manager error message indicates that a driver's attempt to add a device failed.
 
 ## Error Code
 

@@ -1,7 +1,6 @@
 ---
 title: dpinst XML Element
 description: dpinst XML Element
-ms.assetid: d825afb4-a459-4b69-93cb-db57adab3c80
 keywords: ["dpinst XML Element Device and Driver Installation"]
 topic_type:
 - apiref
@@ -16,7 +15,7 @@ ms.date: 10/17/2018
 # dpinst XML Element
 
 
-\[DIFx is deprecated, for more info, see [DIFx Guidelines](https://docs.microsoft.com/windows-hardware/drivers/install/difx-guidelines).\]
+\[DIFx is deprecated, for more info, see [DIFx Guidelines](./difx-guidelines.md).\]
 
 The **dpinst** XML element is the root XML element in a DPInst descriptor file that contains the child elements that customize driver installation.
 
@@ -122,11 +121,4 @@ The following code example demonstrates an XML declaration element, followed by 
 [**watermarkPath**](watermarkpath-xml-element.md)
 
  
-
- 
-
-
-
-
-
 
