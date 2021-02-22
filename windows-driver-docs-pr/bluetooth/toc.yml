@@ -12,8 +12,12 @@
     href: installing-a-bluetooth-device.md
   - name: "Bluetooth Registry Entries"
     href: bluetooth-registry-entries.md
+  - name: "Bluetooth Profile Driver Functions"
+    href: bluetooth-profile-driver-functions.md
 - name: "Bluetooth Low Energy Overview"
   href: bluetooth-low-energy-overview.md
+- name: "Bluetooth Low Energy Functions"
+  href: bluetooth-low-energy-functions.md
 - name: "Using the Bluetooth Driver Stack"
   items: 
   - name: "How to use the Bluetooth Driver Stack"
